@@ -1097,9 +1097,9 @@ const portraitIdentities = portraitRegistry.entries.map((entry) => {
   if (!person || person.name !== entry.name || issuedIdByName.get(person.name) !== entry.characterId) throw new Error(`E_PORTRAIT_IDENTITY:${entry.personId}`)
   const lineage = lineageByName.get(person.name)
   const clanId = lineage?.base_clan ?? lineage?.clan ?? null
+  const stateFlag = /^S(?:0[1-9]|1[0-6])$/.test(person.state) ? `state-flags/${person.state}.webp` : null
   return { personId: person.id, characterId: entry.characterId, imageSha256: entry.imageSha256,
-    stateFlag: /^S(?:0[1-9]|1[0-6])$/.test(person.state) ? `state-flags/${person.state}.webp` : null,
-    stateName: person.stateName || '무소속', clanId,
+    stateFlag, stateName: stateFlag ? person.stateName : null, clanId,
     clanCrest: clanId ? `clan-crests/${clanId}.svg` : null,
     bongwan: clanId && lineage?.bongwan ? lineage.bongwan : null,
     nobleTitle: null }

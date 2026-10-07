@@ -22,6 +22,8 @@ async function fixture(extra = {}, omit = []) {
     'portraits/person-0001.png': '',
     'regional-terrain-tiles/0-0.bin': '',
     'regional-terrain-tiles/0-0-water.json': '{}',
+    'regional-terrain-tiles/0-1.bin': '',
+    'regional-terrain-tiles/0-1-water.json': '{}',
     'state-flags/S01.webp': '',
     'clan-crests/index.json': '{}',
     'assets/index-AbCd1234.js': '',
@@ -85,6 +87,7 @@ test('a router path without a recorded disposition, or a stale disposition, fail
 test('actual JSON content rejects nested evidence and unknown review fields but retains safe summaries', async () => {
   const safe = { imageSha256: 'a'.repeat(64), ownerVerdict: { verdict: 'pass' }, imageModification: { generationReceiptAvailable: true, inputSha256: 'b'.repeat(64), outputSha256: 'a'.repeat(64) }, imageHashHistory: ['b'.repeat(64)] }
   for (const [file, payload, fails] of [
+    ['portrait-reviews/person-0001.json', { imageSha256: 'a'.repeat(64) }, false],
     ['portrait-reviews/person-0001.json', safe, false],
     ['portrait-reviews/person-0001.json', { ...safe, ownerVerdict: { verdict: 'pass', nested: { generationReceipt: { request: { prompt: 'PRIVATE_SENTINEL' } } } } }, true],
     ['portrait-reviews/person-0001.json', { ...safe, futureEvidence: { body: 'PRIVATE_SENTINEL' } }, true],

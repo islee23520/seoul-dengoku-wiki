@@ -1,0 +1,1982 @@
+{
+  "schema": "admin-city-hierarchy.v1",
+  "approvedBoundarySha256": "c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f",
+  "effectiveDate": "2026-07-01",
+  "proofMethod": "Official municipal hierarchy assertion establishes district membership in city. Independently official same-vintage MOIS records bind those established entities to exact codes. City IDs are taken from their own source records, not computed from district codes.",
+  "vintageNotes": [
+    "MOIS code identities all come from the release effective 2026-07-01, identical to the approved boundary vintage.",
+    "Municipal pages are independently retrieved 2026-10-07; their stated dates are recorded separately and not relabeled as July 1 snapshots. Only city-district membership is bound, not current leaf counts or boundaries.",
+    "Hwaseong membership is additionally established by the official general-district creation notice effective 2026-02-01.",
+    "Bucheon current district membership is additionally established by the official creation notice effective 2024-01-01.",
+    "Municipal pages without a publication/effective date carry null, not an invented date. Code lifecycle dates are official MOIS record dates, not inferred ordinance dates.",
+    "Seongnam administrative area table is dated 2022-12 and current administrative table 2026-10; city-district membership is consistent with the July 1 official identity records."
+  ],
+  "rows": [
+    {
+      "districtId": "41111",
+      "parentCityId": "41110",
+      "districtName": "수원시 장안구",
+      "parentCityName": "수원시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.suwon.go.kr/sw-www/www05/www05-01/www05-01-08.jsp",
+        "exactText": [
+          "수원시 행정구역",
+          "장안구,권선구,팔달구,영통구의 행정구역 현황(행정동, 법정동에 관한 정보를 장안구,권선구,팔달구,영통구의 순으로 안내합니다.)"
+        ],
+        "sourceAsOfOrModified": "2025-09-04",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "ff82a76293230bfddbe8459379ecfa0b9b2349268b62da27a1e074751a45c9ae",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4111100000",
+        "cityCode10": "4111000000",
+        "districtSourceRow": {
+          "row": 1643,
+          "code": "4111100000",
+          "province": "경기도",
+          "name": "수원시 장안구",
+          "dong": "",
+          "created": "19880701",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1642,
+          "code": "4111000000",
+          "province": "경기도",
+          "name": "수원시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1988-07-01",
+      "affectedLeafIds": [
+        "4111156000",
+        "4111156600",
+        "4111157100",
+        "4111157200",
+        "4111157300",
+        "4111158000",
+        "4111159100",
+        "4111159700",
+        "4111159800",
+        "4111160000"
+      ]
+    },
+    {
+      "districtId": "41113",
+      "parentCityId": "41110",
+      "districtName": "수원시 권선구",
+      "parentCityName": "수원시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.suwon.go.kr/sw-www/www05/www05-01/www05-01-08.jsp",
+        "exactText": [
+          "수원시 행정구역",
+          "장안구,권선구,팔달구,영통구의 행정구역 현황(행정동, 법정동에 관한 정보를 장안구,권선구,팔달구,영통구의 순으로 안내합니다.)"
+        ],
+        "sourceAsOfOrModified": "2025-09-04",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "ff82a76293230bfddbe8459379ecfa0b9b2349268b62da27a1e074751a45c9ae",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4111300000",
+        "cityCode10": "4111000000",
+        "districtSourceRow": {
+          "row": 1654,
+          "code": "4111300000",
+          "province": "경기도",
+          "name": "수원시 권선구",
+          "dong": "",
+          "created": "19880701",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1642,
+          "code": "4111000000",
+          "province": "경기도",
+          "name": "수원시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1988-07-01",
+      "affectedLeafIds": [
+        "4111352000",
+        "4111353000",
+        "4111354000",
+        "4111355000",
+        "4111356000",
+        "4111365000",
+        "4111366200",
+        "4111366400",
+        "4111367000",
+        "4111368000",
+        "4111369000",
+        "4111370000"
+      ]
+    },
+    {
+      "districtId": "41115",
+      "parentCityId": "41110",
+      "districtName": "수원시 팔달구",
+      "parentCityName": "수원시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.suwon.go.kr/sw-www/www05/www05-01/www05-01-08.jsp",
+        "exactText": [
+          "수원시 행정구역",
+          "장안구,권선구,팔달구,영통구의 행정구역 현황(행정동, 법정동에 관한 정보를 장안구,권선구,팔달구,영통구의 순으로 안내합니다.)"
+        ],
+        "sourceAsOfOrModified": "2025-09-04",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "ff82a76293230bfddbe8459379ecfa0b9b2349268b62da27a1e074751a45c9ae",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4111500000",
+        "cityCode10": "4111000000",
+        "districtSourceRow": {
+          "row": 1667,
+          "code": "4111500000",
+          "province": "경기도",
+          "name": "수원시 팔달구",
+          "dong": "",
+          "created": "19930115",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1642,
+          "code": "4111000000",
+          "province": "경기도",
+          "name": "수원시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1993-01-15",
+      "affectedLeafIds": [
+        "4111565000",
+        "4111566000",
+        "4111567000",
+        "4111568000",
+        "4111569000",
+        "4111570000",
+        "4111571000",
+        "4111572000",
+        "4111573000",
+        "4111574000"
+      ]
+    },
+    {
+      "districtId": "41117",
+      "parentCityId": "41110",
+      "districtName": "수원시 영통구",
+      "parentCityName": "수원시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.suwon.go.kr/sw-www/www05/www05-01/www05-01-08.jsp",
+        "exactText": [
+          "수원시 행정구역",
+          "장안구,권선구,팔달구,영통구의 행정구역 현황(행정동, 법정동에 관한 정보를 장안구,권선구,팔달구,영통구의 순으로 안내합니다.)"
+        ],
+        "sourceAsOfOrModified": "2025-09-04",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "ff82a76293230bfddbe8459379ecfa0b9b2349268b62da27a1e074751a45c9ae",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4111700000",
+        "cityCode10": "4111000000",
+        "districtSourceRow": {
+          "row": 1678,
+          "code": "4111700000",
+          "province": "경기도",
+          "name": "수원시 영통구",
+          "dong": "",
+          "created": "20031124",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1642,
+          "code": "4111000000",
+          "province": "경기도",
+          "name": "수원시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2003-11-24",
+      "affectedLeafIds": [
+        "4111751000",
+        "4111752000",
+        "4111753000",
+        "4111754000",
+        "4111755000",
+        "4111757000",
+        "4111758000",
+        "4111758500",
+        "4111759300",
+        "4111759600",
+        "4111760000",
+        "4111761000"
+      ]
+    },
+    {
+      "districtId": "41131",
+      "parentCityId": "41130",
+      "districtName": "성남시 수정구",
+      "parentCityName": "성남시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.seongnam.go.kr/cn040104",
+        "exactText": [
+          "면적(행정구역)(Area) : 전국,경기도,성남시,수정구,중원구,분당구로 구성된 표"
+        ],
+        "sourceAsOfOrModified": "2022-12 (area table); 2026-10 (current administrative table)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "8199423af7e20b98f85ea056a731d0e976c87bc9ef7319463c87ce759e962f8d",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4113100000",
+        "cityCode10": "4113000000",
+        "districtSourceRow": {
+          "row": 1692,
+          "code": "4113100000",
+          "province": "경기도",
+          "name": "성남시 수정구",
+          "dong": "",
+          "created": "19890501",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1691,
+          "code": "4113000000",
+          "province": "경기도",
+          "name": "성남시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1989-05-01",
+      "affectedLeafIds": [
+        "4113151000",
+        "4113152000",
+        "4113153000",
+        "4113154000",
+        "4113155000",
+        "4113156000",
+        "4113156100",
+        "4113157000",
+        "4113158000",
+        "4113159000",
+        "4113160000",
+        "4113161000",
+        "4113162000",
+        "4113162500",
+        "4113163000",
+        "4113164000",
+        "4113165000"
+      ]
+    },
+    {
+      "districtId": "41133",
+      "parentCityId": "41130",
+      "districtName": "성남시 중원구",
+      "parentCityName": "성남시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.seongnam.go.kr/cn040104",
+        "exactText": [
+          "면적(행정구역)(Area) : 전국,경기도,성남시,수정구,중원구,분당구로 구성된 표"
+        ],
+        "sourceAsOfOrModified": "2022-12 (area table); 2026-10 (current administrative table)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "8199423af7e20b98f85ea056a731d0e976c87bc9ef7319463c87ce759e962f8d",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4113300000",
+        "cityCode10": "4113000000",
+        "districtSourceRow": {
+          "row": 1710,
+          "code": "4113300000",
+          "province": "경기도",
+          "name": "성남시 중원구",
+          "dong": "",
+          "created": "19890501",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1691,
+          "code": "4113000000",
+          "province": "경기도",
+          "name": "성남시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1989-05-01",
+      "affectedLeafIds": [
+        "4113351000",
+        "4113352500",
+        "4113353000",
+        "4113354000",
+        "4113355000",
+        "4113356000",
+        "4113357000",
+        "4113358000",
+        "4113359000",
+        "4113366000",
+        "4113367000"
+      ]
+    },
+    {
+      "districtId": "41135",
+      "parentCityId": "41130",
+      "districtName": "성남시 분당구",
+      "parentCityName": "성남시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.seongnam.go.kr/cn040104",
+        "exactText": [
+          "면적(행정구역)(Area) : 전국,경기도,성남시,수정구,중원구,분당구로 구성된 표"
+        ],
+        "sourceAsOfOrModified": "2022-12 (area table); 2026-10 (current administrative table)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "8199423af7e20b98f85ea056a731d0e976c87bc9ef7319463c87ce759e962f8d",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4113500000",
+        "cityCode10": "4113000000",
+        "districtSourceRow": {
+          "row": 1722,
+          "code": "4113500000",
+          "province": "경기도",
+          "name": "성남시 분당구",
+          "dong": "",
+          "created": "19910916",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1691,
+          "code": "4113000000",
+          "province": "경기도",
+          "name": "성남시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1991-09-16",
+      "affectedLeafIds": [
+        "4113551000",
+        "4113552000",
+        "4113553000",
+        "4113554000",
+        "4113554500",
+        "4113555000",
+        "4113556000",
+        "4113557000",
+        "4113558000",
+        "4113559000",
+        "4113560000",
+        "4113561000",
+        "4113562000",
+        "4113563000",
+        "4113564000",
+        "4113565000",
+        "4113565500",
+        "4113565700",
+        "4113566200",
+        "4113566500",
+        "4113567000",
+        "4113568000"
+      ]
+    },
+    {
+      "districtId": "41171",
+      "parentCityId": "41170",
+      "districtName": "안양시 만안구",
+      "parentCityName": "안양시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.anyang.go.kr/main/contents.do?key=281",
+        "exactText": [
+          "안양시 행정구역 안내",
+          "안양시의 행정구역을 안내해드립니다.",
+          "만안구",
+          "동안구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "804662d84f5169687a74c05c54ea4e68e4cdf476190a7565494e99fd89088002",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4117100000",
+        "cityCode10": "4117000000",
+        "districtSourceRow": {
+          "row": 1762,
+          "code": "4117100000",
+          "province": "경기도",
+          "name": "안양시 만안구",
+          "dong": "",
+          "created": "19921001",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1761,
+          "code": "4117000000",
+          "province": "경기도",
+          "name": "안양시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1992-10-01",
+      "affectedLeafIds": [
+        "4117151000",
+        "4117152000",
+        "4117153000",
+        "4117154000",
+        "4117155000",
+        "4117156000",
+        "4117157000",
+        "4117158200",
+        "4117158300",
+        "4117159000",
+        "4117160000",
+        "4117161100",
+        "4117164000",
+        "4117165000"
+      ]
+    },
+    {
+      "districtId": "41173",
+      "parentCityId": "41170",
+      "districtName": "안양시 동안구",
+      "parentCityName": "안양시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.anyang.go.kr/main/contents.do?key=281",
+        "exactText": [
+          "안양시 행정구역 안내",
+          "안양시의 행정구역을 안내해드립니다.",
+          "만안구",
+          "동안구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "804662d84f5169687a74c05c54ea4e68e4cdf476190a7565494e99fd89088002",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4117300000",
+        "cityCode10": "4117000000",
+        "districtSourceRow": {
+          "row": 1777,
+          "code": "4117300000",
+          "province": "경기도",
+          "name": "안양시 동안구",
+          "dong": "",
+          "created": "19921001",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1761,
+          "code": "4117000000",
+          "province": "경기도",
+          "name": "안양시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1992-10-01",
+      "affectedLeafIds": [
+        "4117351000",
+        "4117352000",
+        "4117353000",
+        "4117354000",
+        "4117354600",
+        "4117355200",
+        "4117355900",
+        "4117356600",
+        "4117357000",
+        "4117357600",
+        "4117357800",
+        "4117358000",
+        "4117359000",
+        "4117360000",
+        "4117361000",
+        "4117362000",
+        "4117363000"
+      ]
+    },
+    {
+      "districtId": "41271",
+      "parentCityId": "41270",
+      "districtName": "안산시 상록구",
+      "parentCityName": "안산시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://ansan.go.kr/stat/common/cntnts/selectContents.do?cntnts_id=C0001014",
+        "exactText": [
+          "안산시 행정구역 법정동 위치 지도",
+          "상록구",
+          "단원구"
+        ],
+        "sourceAsOfOrModified": "2024-12-31",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "0336e014f71464b1127988d20050641efed72848d7b6f3e9e77cb3c612ea9936",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4127100000",
+        "cityCode10": "4127000000",
+        "districtSourceRow": {
+          "row": 1894,
+          "code": "4127100000",
+          "province": "경기도",
+          "name": "안산시 상록구",
+          "dong": "",
+          "created": "20021101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1893,
+          "code": "4127000000",
+          "province": "경기도",
+          "name": "안산시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2002-11-01",
+      "affectedLeafIds": [
+        "4127151000",
+        "4127151500",
+        "4127152500",
+        "4127153200",
+        "4127153700",
+        "4127154000",
+        "4127155000",
+        "4127156000",
+        "4127157000",
+        "4127158000",
+        "4127159000",
+        "4127160000",
+        "4127161000"
+      ]
+    },
+    {
+      "districtId": "41273",
+      "parentCityId": "41270",
+      "districtName": "안산시 단원구",
+      "parentCityName": "안산시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://ansan.go.kr/stat/common/cntnts/selectContents.do?cntnts_id=C0001014",
+        "exactText": [
+          "안산시 행정구역 법정동 위치 지도",
+          "상록구",
+          "단원구"
+        ],
+        "sourceAsOfOrModified": "2024-12-31",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "0336e014f71464b1127988d20050641efed72848d7b6f3e9e77cb3c612ea9936",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4127300000",
+        "cityCode10": "4127000000",
+        "districtSourceRow": {
+          "row": 1908,
+          "code": "4127300000",
+          "province": "경기도",
+          "name": "안산시 단원구",
+          "dong": "",
+          "created": "20021101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1893,
+          "code": "4127000000",
+          "province": "경기도",
+          "name": "안산시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2002-11-01",
+      "affectedLeafIds": [
+        "4127351000",
+        "4127352500",
+        "4127353200",
+        "4127353500",
+        "4127354500",
+        "4127355500",
+        "4127356500",
+        "4127357000",
+        "4127358000",
+        "4127359000",
+        "4127360000",
+        "4127361000"
+      ]
+    },
+    {
+      "districtId": "41281",
+      "parentCityId": "41280",
+      "districtName": "고양시 덕양구",
+      "parentCityName": "고양시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.goyang.go.kr/www/www05/www05_1/www05_1_8.jsp",
+        "exactText": [
+          "고양시는 2026년 1월 현재 3개구 44개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 덕양구는 2026년 1월 현재 21개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 일산동구는 2026년 1월 현재 12개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 일산서구는 2026년 1월 현재 11개동의 행정구역 체계를 가지고 있습니다."
+        ],
+        "sourceAsOfOrModified": "2026-01; modified 2026-08-05",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "3f6a2cf9912f55b320f64e5584a9a0d5f1eeb664cfc15eb535fdb86108b76f5b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4128100000",
+        "cityCode10": "4128000000",
+        "districtSourceRow": {
+          "row": 1922,
+          "code": "4128100000",
+          "province": "경기도",
+          "name": "고양시 덕양구",
+          "dong": "",
+          "created": "19960301",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1921,
+          "code": "4128000000",
+          "province": "경기도",
+          "name": "고양시",
+          "dong": "",
+          "created": "19920504",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1996-03-01",
+      "affectedLeafIds": [
+        "4128151000",
+        "4128152000",
+        "4128153000",
+        "4128154000",
+        "4128155000",
+        "4128156000",
+        "4128157600",
+        "4128157700",
+        "4128158000",
+        "4128159000",
+        "4128160000",
+        "4128161000",
+        "4128162100",
+        "4128162200",
+        "4128163000",
+        "4128164000",
+        "4128165000",
+        "4128165500",
+        "4128165600",
+        "4128166000",
+        "4128167000"
+      ]
+    },
+    {
+      "districtId": "41285",
+      "parentCityId": "41280",
+      "districtName": "고양시 일산동구",
+      "parentCityName": "고양시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.goyang.go.kr/www/www05/www05_1/www05_1_8.jsp",
+        "exactText": [
+          "고양시는 2026년 1월 현재 3개구 44개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 덕양구는 2026년 1월 현재 21개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 일산동구는 2026년 1월 현재 12개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 일산서구는 2026년 1월 현재 11개동의 행정구역 체계를 가지고 있습니다."
+        ],
+        "sourceAsOfOrModified": "2026-01; modified 2026-08-05",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "3f6a2cf9912f55b320f64e5584a9a0d5f1eeb664cfc15eb535fdb86108b76f5b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4128500000",
+        "cityCode10": "4128000000",
+        "districtSourceRow": {
+          "row": 1944,
+          "code": "4128500000",
+          "province": "경기도",
+          "name": "고양시 일산동구",
+          "dong": "",
+          "created": "20050516",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1921,
+          "code": "4128000000",
+          "province": "경기도",
+          "name": "고양시",
+          "dong": "",
+          "created": "19920504",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2005-05-16",
+      "affectedLeafIds": [
+        "4128551000",
+        "4128552500",
+        "4128552600",
+        "4128553000",
+        "4128554000",
+        "4128555100",
+        "4128555200",
+        "4128556000",
+        "4128557000",
+        "4128558000",
+        "4128559000",
+        "4128560000"
+      ]
+    },
+    {
+      "districtId": "41287",
+      "parentCityId": "41280",
+      "districtName": "고양시 일산서구",
+      "parentCityName": "고양시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.goyang.go.kr/www/www05/www05_1/www05_1_8.jsp",
+        "exactText": [
+          "고양시는 2026년 1월 현재 3개구 44개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 덕양구는 2026년 1월 현재 21개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 일산동구는 2026년 1월 현재 12개동의 행정구역 체계를 가지고 있습니다.",
+          "고양시 일산서구는 2026년 1월 현재 11개동의 행정구역 체계를 가지고 있습니다."
+        ],
+        "sourceAsOfOrModified": "2026-01; modified 2026-08-05",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "3f6a2cf9912f55b320f64e5584a9a0d5f1eeb664cfc15eb535fdb86108b76f5b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4128700000",
+        "cityCode10": "4128000000",
+        "districtSourceRow": {
+          "row": 1957,
+          "code": "4128700000",
+          "province": "경기도",
+          "name": "고양시 일산서구",
+          "dong": "",
+          "created": "20050516",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1921,
+          "code": "4128000000",
+          "province": "경기도",
+          "name": "고양시",
+          "dong": "",
+          "created": "19920504",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2005-05-16",
+      "affectedLeafIds": [
+        "4128751000",
+        "4128752000",
+        "4128753000",
+        "4128754500",
+        "4128754600",
+        "4128755000",
+        "4128756000",
+        "4128757000",
+        "4128758000",
+        "4128760000",
+        "4128761000"
+      ]
+    },
+    {
+      "districtId": "41461",
+      "parentCityId": "41460",
+      "districtName": "용인시 처인구",
+      "parentCityName": "용인시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.yongin.go.kr/home/yiIf/yiIfProd/yiIfProd07.jsp",
+        "exactText": [
+          "용인시의 구, 읍,면,행정동, 관할구역(법정리,등)을 보여주는 표입니다.",
+          "처인구",
+          "기흥구",
+          "수지구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "178ec624eada46db99a7000c735abfd33d3ec40867fbaf258b0e4aafb908d6c8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4146100000",
+        "cityCode10": "4146000000",
+        "districtSourceRow": {
+          "row": 2072,
+          "code": "4146100000",
+          "province": "경기도",
+          "name": "용인시 처인구",
+          "dong": "",
+          "created": "20051031",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2071,
+          "code": "4146000000",
+          "province": "경기도",
+          "name": "용인시",
+          "dong": "",
+          "created": "19960301",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2005-10-31",
+      "affectedLeafIds": [
+        "4146125000",
+        "4146125300",
+        "4146125600",
+        "4146125900",
+        "4146126200",
+        "4146134000",
+        "4146135000",
+        "4146151000",
+        "4146152500",
+        "4146152600",
+        "4146153500",
+        "4146153600",
+        "4146154000"
+      ]
+    },
+    {
+      "districtId": "41463",
+      "parentCityId": "41460",
+      "districtName": "용인시 기흥구",
+      "parentCityName": "용인시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.yongin.go.kr/home/yiIf/yiIfProd/yiIfProd07.jsp",
+        "exactText": [
+          "용인시의 구, 읍,면,행정동, 관할구역(법정리,등)을 보여주는 표입니다.",
+          "처인구",
+          "기흥구",
+          "수지구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "178ec624eada46db99a7000c735abfd33d3ec40867fbaf258b0e4aafb908d6c8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4146300000",
+        "cityCode10": "4146000000",
+        "districtSourceRow": {
+          "row": 2086,
+          "code": "4146300000",
+          "province": "경기도",
+          "name": "용인시 기흥구",
+          "dong": "",
+          "created": "20051031",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2071,
+          "code": "4146000000",
+          "province": "경기도",
+          "name": "용인시",
+          "dong": "",
+          "created": "19960301",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2005-10-31",
+      "affectedLeafIds": [
+        "4146351000",
+        "4146351600",
+        "4146351700",
+        "4146352000",
+        "4146353000",
+        "4146353500",
+        "4146354000",
+        "4146355000",
+        "4146356000",
+        "4146357000",
+        "4146357200",
+        "4146357500",
+        "4146357700",
+        "4146358600",
+        "4146359000"
+      ]
+    },
+    {
+      "districtId": "41465",
+      "parentCityId": "41460",
+      "districtName": "용인시 수지구",
+      "parentCityName": "용인시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.yongin.go.kr/home/yiIf/yiIfProd/yiIfProd07.jsp",
+        "exactText": [
+          "용인시의 구, 읍,면,행정동, 관할구역(법정리,등)을 보여주는 표입니다.",
+          "처인구",
+          "기흥구",
+          "수지구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "178ec624eada46db99a7000c735abfd33d3ec40867fbaf258b0e4aafb908d6c8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4146500000",
+        "cityCode10": "4146000000",
+        "districtSourceRow": {
+          "row": 2102,
+          "code": "4146500000",
+          "province": "경기도",
+          "name": "용인시 수지구",
+          "dong": "",
+          "created": "20051031",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2071,
+          "code": "4146000000",
+          "province": "경기도",
+          "name": "용인시",
+          "dong": "",
+          "created": "19960301",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2005-10-31",
+      "affectedLeafIds": [
+        "4146551000",
+        "4146552000",
+        "4146553000",
+        "4146554000",
+        "4146555000",
+        "4146555500",
+        "4146556000",
+        "4146557000",
+        "4146558000",
+        "4146558500",
+        "4146559000"
+      ]
+    },
+    {
+      "districtId": "41593",
+      "parentCityId": "41590",
+      "districtName": "화성시 효행구",
+      "parentCityName": "화성시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.hscity.go.kr/manse/index.do",
+        "exactText": [
+          "경기도 화성시 만세구 향남읍 향남로 470",
+          "경기도 화성시 효행구 봉담읍 최루백로 165",
+          "경기도 화성시 병점구 병점3로 23",
+          "경기도 화성시 동탄구 동탄역로 122"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "c27ea624405c8f76eead73a7b1a72bbee5ce4fdb6da2e4f0e50ae9d5974cf62e",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=122595",
+        "exactText": [
+          "2026.2.1. 시행 행정기관(행정동) 및 관할구역(법정동) 현황입니다.",
+          "■ 변경대상 : 경기도 화성시 만세구, 효행구, 병점구, 동탄구",
+          "■ 변경내역 : 일반구 신설"
+        ],
+        "effectiveDate": "2026-02-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4159300000",
+        "cityCode10": "4159000000",
+        "districtSourceRow": {
+          "row": 2193,
+          "code": "4159300000",
+          "province": "경기도",
+          "name": "화성시 효행구",
+          "dong": "",
+          "created": "20260201",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2181,
+          "code": "4159000000",
+          "province": "경기도",
+          "name": "화성시",
+          "dong": "",
+          "created": "20010321",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2026-02-01",
+      "affectedLeafIds": [
+        "4159325000",
+        "4159331000",
+        "4159332000",
+        "4159333000",
+        "4159351000"
+      ]
+    },
+    {
+      "districtId": "41591",
+      "parentCityId": "41590",
+      "districtName": "화성시 만세구",
+      "parentCityName": "화성시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.hscity.go.kr/manse/index.do",
+        "exactText": [
+          "경기도 화성시 만세구 향남읍 향남로 470",
+          "경기도 화성시 효행구 봉담읍 최루백로 165",
+          "경기도 화성시 병점구 병점3로 23",
+          "경기도 화성시 동탄구 동탄역로 122"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "c27ea624405c8f76eead73a7b1a72bbee5ce4fdb6da2e4f0e50ae9d5974cf62e",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=122595",
+        "exactText": [
+          "2026.2.1. 시행 행정기관(행정동) 및 관할구역(법정동) 현황입니다.",
+          "■ 변경대상 : 경기도 화성시 만세구, 효행구, 병점구, 동탄구",
+          "■ 변경내역 : 일반구 신설"
+        ],
+        "effectiveDate": "2026-02-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4159100000",
+        "cityCode10": "4159000000",
+        "districtSourceRow": {
+          "row": 2182,
+          "code": "4159100000",
+          "province": "경기도",
+          "name": "화성시 만세구",
+          "dong": "",
+          "created": "20260201",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2181,
+          "code": "4159000000",
+          "province": "경기도",
+          "name": "화성시",
+          "dong": "",
+          "created": "20010321",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2026-02-01",
+      "affectedLeafIds": [
+        "4159125000",
+        "4159125300",
+        "4159125600",
+        "4159131000",
+        "4159132000",
+        "4159133000",
+        "4159134000",
+        "4159135000",
+        "4159136000",
+        "4159151000"
+      ]
+    },
+    {
+      "districtId": "41597",
+      "parentCityId": "41590",
+      "districtName": "화성시 동탄구",
+      "parentCityName": "화성시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.hscity.go.kr/manse/index.do",
+        "exactText": [
+          "경기도 화성시 만세구 향남읍 향남로 470",
+          "경기도 화성시 효행구 봉담읍 최루백로 165",
+          "경기도 화성시 병점구 병점3로 23",
+          "경기도 화성시 동탄구 동탄역로 122"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "c27ea624405c8f76eead73a7b1a72bbee5ce4fdb6da2e4f0e50ae9d5974cf62e",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=122595",
+        "exactText": [
+          "2026.2.1. 시행 행정기관(행정동) 및 관할구역(법정동) 현황입니다.",
+          "■ 변경대상 : 경기도 화성시 만세구, 효행구, 병점구, 동탄구",
+          "■ 변경내역 : 일반구 신설"
+        ],
+        "effectiveDate": "2026-02-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4159700000",
+        "cityCode10": "4159000000",
+        "districtSourceRow": {
+          "row": 2205,
+          "code": "4159700000",
+          "province": "경기도",
+          "name": "화성시 동탄구",
+          "dong": "",
+          "created": "20260201",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2181,
+          "code": "4159000000",
+          "province": "경기도",
+          "name": "화성시",
+          "dong": "",
+          "created": "20010321",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2026-02-01",
+      "affectedLeafIds": [
+        "4159751000",
+        "4159752000",
+        "4159753000",
+        "4159754000",
+        "4159755000",
+        "4159756000",
+        "4159757000",
+        "4159758000",
+        "4159759000"
+      ]
+    },
+    {
+      "districtId": "41595",
+      "parentCityId": "41590",
+      "districtName": "화성시 병점구",
+      "parentCityName": "화성시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.hscity.go.kr/manse/index.do",
+        "exactText": [
+          "경기도 화성시 만세구 향남읍 향남로 470",
+          "경기도 화성시 효행구 봉담읍 최루백로 165",
+          "경기도 화성시 병점구 병점3로 23",
+          "경기도 화성시 동탄구 동탄역로 122"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "c27ea624405c8f76eead73a7b1a72bbee5ce4fdb6da2e4f0e50ae9d5974cf62e",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=122595",
+        "exactText": [
+          "2026.2.1. 시행 행정기관(행정동) 및 관할구역(법정동) 현황입니다.",
+          "■ 변경대상 : 경기도 화성시 만세구, 효행구, 병점구, 동탄구",
+          "■ 변경내역 : 일반구 신설"
+        ],
+        "effectiveDate": "2026-02-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4159500000",
+        "cityCode10": "4159000000",
+        "districtSourceRow": {
+          "row": 2199,
+          "code": "4159500000",
+          "province": "경기도",
+          "name": "화성시 병점구",
+          "dong": "",
+          "created": "20260201",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2181,
+          "code": "4159000000",
+          "province": "경기도",
+          "name": "화성시",
+          "dong": "",
+          "created": "20010321",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2026-02-01",
+      "affectedLeafIds": [
+        "4159551000",
+        "4159552000",
+        "4159553000",
+        "4159554000",
+        "4159555000"
+      ]
+    },
+    {
+      "districtId": "43111",
+      "parentCityId": "43110",
+      "districtName": "청주시 상당구",
+      "parentCityName": "청주시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.cheongju.go.kr/www/contents.do?key=23021",
+        "exactText": [
+          "청주시의 행정구역은 4구 3읍 10면 30동으로 구성되어 있으며, 면적은 941㎢ 규모로 충청북도 면적 7,407㎢의 12.7%에 해당함",
+          "4개구 중 상당구가 404㎢로 가장 넓은 규모이며, 청원구 215㎢, 흥덕구 199㎢, 서원구 122.70㎢ 순으로 나타남"
+        ],
+        "sourceAsOfOrModified": "2025-era page (2024 population; 2025-01 research reference)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "d3a7538e391c93f182953b753917fe59fb12c484904b786a40a6a7b1f3ec32d8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4311100000",
+        "cityCode10": "4311000000",
+        "districtSourceRow": {
+          "row": 2306,
+          "code": "4311100000",
+          "province": "충청북도",
+          "name": "청주시 상당구",
+          "dong": "",
+          "created": "19950101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2305,
+          "code": "4311000000",
+          "province": "충청북도",
+          "name": "청주시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1995-01-01",
+      "affectedLeafIds": [
+        "4311131000",
+        "4311132000",
+        "4311133000",
+        "4311134000",
+        "4311135000",
+        "4311152500",
+        "4311154500",
+        "4311162000",
+        "4311167000",
+        "4311168000",
+        "4311169000",
+        "4311172000",
+        "4311173000"
+      ]
+    },
+    {
+      "districtId": "43112",
+      "parentCityId": "43110",
+      "districtName": "청주시 서원구",
+      "parentCityName": "청주시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.cheongju.go.kr/www/contents.do?key=23021",
+        "exactText": [
+          "청주시의 행정구역은 4구 3읍 10면 30동으로 구성되어 있으며, 면적은 941㎢ 규모로 충청북도 면적 7,407㎢의 12.7%에 해당함",
+          "4개구 중 상당구가 404㎢로 가장 넓은 규모이며, 청원구 215㎢, 흥덕구 199㎢, 서원구 122.70㎢ 순으로 나타남"
+        ],
+        "sourceAsOfOrModified": "2025-era page (2024 population; 2025-01 research reference)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "d3a7538e391c93f182953b753917fe59fb12c484904b786a40a6a7b1f3ec32d8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4311200000",
+        "cityCode10": "4311000000",
+        "districtSourceRow": {
+          "row": 2320,
+          "code": "4311200000",
+          "province": "충청북도",
+          "name": "청주시 서원구",
+          "dong": "",
+          "created": "20140701",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2305,
+          "code": "4311000000",
+          "province": "충청북도",
+          "name": "청주시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2014-07-01",
+      "affectedLeafIds": [
+        "4311231000",
+        "4311232000",
+        "4311251000",
+        "4311252000",
+        "4311253000",
+        "4311254000",
+        "4311255000",
+        "4311256000",
+        "4311257000",
+        "4311258000",
+        "4311259000"
+      ]
+    },
+    {
+      "districtId": "43113",
+      "parentCityId": "43110",
+      "districtName": "청주시 흥덕구",
+      "parentCityName": "청주시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.cheongju.go.kr/www/contents.do?key=23021",
+        "exactText": [
+          "청주시의 행정구역은 4구 3읍 10면 30동으로 구성되어 있으며, 면적은 941㎢ 규모로 충청북도 면적 7,407㎢의 12.7%에 해당함",
+          "4개구 중 상당구가 404㎢로 가장 넓은 규모이며, 청원구 215㎢, 흥덕구 199㎢, 서원구 122.70㎢ 순으로 나타남"
+        ],
+        "sourceAsOfOrModified": "2025-era page (2024 population; 2025-01 research reference)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "d3a7538e391c93f182953b753917fe59fb12c484904b786a40a6a7b1f3ec32d8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4311300000",
+        "cityCode10": "4311000000",
+        "districtSourceRow": {
+          "row": 2332,
+          "code": "4311300000",
+          "province": "충청북도",
+          "name": "청주시 흥덕구",
+          "dong": "",
+          "created": "19950101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2305,
+          "code": "4311000000",
+          "province": "충청북도",
+          "name": "청주시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "1995-01-01",
+      "affectedLeafIds": [
+        "4311325000",
+        "4311331000",
+        "4311332000",
+        "4311370000",
+        "4311374100",
+        "4311374200",
+        "4311374700",
+        "4311375100",
+        "4311375600",
+        "4311376000",
+        "4311377000"
+      ]
+    },
+    {
+      "districtId": "43114",
+      "parentCityId": "43110",
+      "districtName": "청주시 청원구",
+      "parentCityName": "청주시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.cheongju.go.kr/www/contents.do?key=23021",
+        "exactText": [
+          "청주시의 행정구역은 4구 3읍 10면 30동으로 구성되어 있으며, 면적은 941㎢ 규모로 충청북도 면적 7,407㎢의 12.7%에 해당함",
+          "4개구 중 상당구가 404㎢로 가장 넓은 규모이며, 청원구 215㎢, 흥덕구 199㎢, 서원구 122.70㎢ 순으로 나타남"
+        ],
+        "sourceAsOfOrModified": "2025-era page (2024 population; 2025-01 research reference)",
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "d3a7538e391c93f182953b753917fe59fb12c484904b786a40a6a7b1f3ec32d8",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4311400000",
+        "cityCode10": "4311000000",
+        "districtSourceRow": {
+          "row": 2344,
+          "code": "4311400000",
+          "province": "충청북도",
+          "name": "청주시 청원구",
+          "dong": "",
+          "created": "20140701",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2305,
+          "code": "4311000000",
+          "province": "충청북도",
+          "name": "청주시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2014-07-01",
+      "affectedLeafIds": [
+        "4311425000",
+        "4311425300",
+        "4311431000",
+        "4311451000",
+        "4311452000",
+        "4311453000",
+        "4311454000",
+        "4311455000"
+      ]
+    },
+    {
+      "districtId": "44131",
+      "parentCityId": "44130",
+      "districtName": "천안시 동남구",
+      "parentCityName": "천안시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.cheonan.go.kr/stat.do",
+        "exactText": [
+          "천안시 통계",
+          "서북구",
+          "동남구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "42eb84621065946a072fc943b91e6983f8b105df9be3065c2c3507e7a07a607b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4413100000",
+        "cityCode10": "4413000000",
+        "districtSourceRow": {
+          "row": 2478,
+          "code": "4413100000",
+          "province": "충청남도",
+          "name": "천안시 동남구",
+          "dong": "",
+          "created": "20080623",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2477,
+          "code": "4413000000",
+          "province": "충청남도",
+          "name": "천안시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2008-06-23",
+      "affectedLeafIds": [
+        "4413125000",
+        "4413131000",
+        "4413132000",
+        "4413133000",
+        "4413134000",
+        "4413135000",
+        "4413136000",
+        "4413137000",
+        "4413151000",
+        "4413152000",
+        "4413153000",
+        "4413154000",
+        "4413155000",
+        "4413156000",
+        "4413157000",
+        "4413158000",
+        "4413159000"
+      ]
+    },
+    {
+      "districtId": "44133",
+      "parentCityId": "44130",
+      "districtName": "천안시 서북구",
+      "parentCityName": "천안시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://www.cheonan.go.kr/stat.do",
+        "exactText": [
+          "천안시 통계",
+          "서북구",
+          "동남구"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "42eb84621065946a072fc943b91e6983f8b105df9be3065c2c3507e7a07a607b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": null,
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4413300000",
+        "cityCode10": "4413000000",
+        "districtSourceRow": {
+          "row": 2496,
+          "code": "4413300000",
+          "province": "충청남도",
+          "name": "천안시 서북구",
+          "dong": "",
+          "created": "20080623",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 2477,
+          "code": "4413000000",
+          "province": "충청남도",
+          "name": "천안시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2008-06-23",
+      "affectedLeafIds": [
+        "4413325000",
+        "4413325300",
+        "4413325600",
+        "4413331000",
+        "4413351000",
+        "4413352000",
+        "4413353000",
+        "4413354000",
+        "4413355000",
+        "4413356000",
+        "4413356600",
+        "4413356700",
+        "4413358000",
+        "4413359000"
+      ]
+    },
+    {
+      "districtId": "41192",
+      "parentCityId": "41190",
+      "districtName": "부천시 원미구",
+      "parentCityName": "부천시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148009003",
+        "exactText": [
+          "부천시 행정구역 영문 표기 목록 표",
+          "1 원미구 Wonmi-gu Office",
+          "2 소사구 Sosa-gu Office",
+          "3 오정구 Ojeong-gu Office"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "aa5c95e6e5d4b8ed1e6766c1e4d2926d87fb276f6656d142f7c62201faf30b7b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=105833",
+        "exactText": [
+          "○ 시행일자 : 2024.1.1.(월)",
+          "1. 경기도 부천시",
+          "(신설) 부천시 원미구",
+          "부천시 소사구",
+          "부천시 오정구"
+        ],
+        "effectiveDate": "2024-01-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4119200000",
+        "cityCode10": "4119000000",
+        "districtSourceRow": {
+          "row": 1796,
+          "code": "4119200000",
+          "province": "경기도",
+          "name": "부천시 원미구",
+          "dong": "",
+          "created": "20240101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1795,
+          "code": "4119000000",
+          "province": "경기도",
+          "name": "부천시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2024-01-01",
+      "affectedLeafIds": [
+        "4119251000",
+        "4119252000",
+        "4119253000",
+        "4119254000",
+        "4119255000",
+        "4119256000",
+        "4119257000",
+        "4119258000",
+        "4119259000",
+        "4119260000",
+        "4119261000",
+        "4119262000",
+        "4119263000",
+        "4119264000",
+        "4119265000",
+        "4119266000",
+        "4119267000",
+        "4119268000",
+        "4119269000",
+        "4119270000"
+      ]
+    },
+    {
+      "districtId": "41194",
+      "parentCityId": "41190",
+      "districtName": "부천시 소사구",
+      "parentCityName": "부천시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148009003",
+        "exactText": [
+          "부천시 행정구역 영문 표기 목록 표",
+          "1 원미구 Wonmi-gu Office",
+          "2 소사구 Sosa-gu Office",
+          "3 오정구 Ojeong-gu Office"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "aa5c95e6e5d4b8ed1e6766c1e4d2926d87fb276f6656d142f7c62201faf30b7b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=105833",
+        "exactText": [
+          "○ 시행일자 : 2024.1.1.(월)",
+          "1. 경기도 부천시",
+          "(신설) 부천시 원미구",
+          "부천시 소사구",
+          "부천시 오정구"
+        ],
+        "effectiveDate": "2024-01-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4119400000",
+        "cityCode10": "4119000000",
+        "districtSourceRow": {
+          "row": 1817,
+          "code": "4119400000",
+          "province": "경기도",
+          "name": "부천시 소사구",
+          "dong": "",
+          "created": "20240101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1795,
+          "code": "4119000000",
+          "province": "경기도",
+          "name": "부천시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2024-01-01",
+      "affectedLeafIds": [
+        "4119451000",
+        "4119452000",
+        "4119453000",
+        "4119454000",
+        "4119455000",
+        "4119456000",
+        "4119457000",
+        "4119458000",
+        "4119459000",
+        "4119460000"
+      ]
+    },
+    {
+      "districtId": "41196",
+      "parentCityId": "41190",
+      "districtName": "부천시 오정구",
+      "parentCityName": "부천시",
+      "status": "PROVEN_TWO_SOURCE_CHAIN",
+      "municipalSource": {
+        "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148009003",
+        "exactText": [
+          "부천시 행정구역 영문 표기 목록 표",
+          "1 원미구 Wonmi-gu Office",
+          "2 소사구 Sosa-gu Office",
+          "3 오정구 Ojeong-gu Office"
+        ],
+        "sourceAsOfOrModified": null,
+        "retrievedOn": "2026-10-07",
+        "retrievedTextSha256": "aa5c95e6e5d4b8ed1e6766c1e4d2926d87fb276f6656d142f7c62201faf30b7b",
+        "assertionForm": "City-scoped administrative-division table or municipal district-office listing; quoted district row interpreted within quoted city scope"
+      },
+      "establishmentSource": {
+        "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=105833",
+        "exactText": [
+          "○ 시행일자 : 2024.1.1.(월)",
+          "1. 경기도 부천시",
+          "(신설) 부천시 원미구",
+          "부천시 소사구",
+          "부천시 오정구"
+        ],
+        "effectiveDate": "2024-01-01"
+      },
+      "moisIdentity": {
+        "releaseUrl": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039",
+        "attachmentUrl": "https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00146280tlU2Y2B&fileSn=0",
+        "zipSha256": "0b9f143fb6e43657ff72c863ac1412cc4be43e79dce323aac602fb7754663898",
+        "tableName": "jscode20260701/KIKcd_H.20260701.xlsx",
+        "tableSha256": "ec9b45938fb581866c9057646d45e4fef30b01a23339bf1f79d356df48d46083",
+        "effectiveDate": "2026-07-01",
+        "districtCode10": "4119600000",
+        "cityCode10": "4119000000",
+        "districtSourceRow": {
+          "row": 1828,
+          "code": "4119600000",
+          "province": "경기도",
+          "name": "부천시 오정구",
+          "dong": "",
+          "created": "20240101",
+          "abolished": ""
+        },
+        "citySourceRow": {
+          "row": 1795,
+          "code": "4119000000",
+          "province": "경기도",
+          "name": "부천시",
+          "dong": "",
+          "created": "19880423",
+          "abolished": ""
+        }
+      },
+      "districtCodeEffectiveFrom": "2024-01-01",
+      "affectedLeafIds": [
+        "4119651000",
+        "4119652000",
+        "4119653000",
+        "4119654000",
+        "4119655000",
+        "4119656000",
+        "4119657000"
+      ]
+    }
+  ]
+}

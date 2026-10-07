@@ -42,12 +42,15 @@ test('legacy evidence IDs resolve canonically without restoring old paths or ref
   assert.deepEqual(await readdir(join(f.wiki, 'public/portrait-tokens')), ['person-0399.json'])
 })
 
-test('stable portrait artifacts do not require a passing review verdict', async () => {
+test('candidate artifacts import without a human receipt or passing review verdict', async () => {
   const f = await fixture()
   for (const verdict of ['FAIL', undefined]) {
-    const row = { ...f.row, qaVerdict: verdict }
+    const row = { ...f.row, qaVerdict: verdict, ownerReceipt: undefined, approvedGold: false }
     await f.json(join(f.evidence, 'rulers/manifest.json'), { entries: [row] })
-    assert.equal((await preflightPortraitCandidates(f.evidence, f.wiki))[0].personId, 'person-0399')
+    const [candidate] = await preflightPortraitCandidates(f.evidence, f.wiki)
+    assert.equal(candidate.personId, 'person-0399')
+    assert.equal(candidate.token.approval, f.token.approval)
+    assert.equal(candidate.token.approvedGold, f.token.approvedGold)
   }
   await writeFile(join(f.evidence, 'rulers/portrait.png'), Buffer.concat([bytes, Buffer.from([2])]))
   await assert.rejects(preflightPortraitCandidates(f.evidence, f.wiki), /Candidate image hash mismatch/)

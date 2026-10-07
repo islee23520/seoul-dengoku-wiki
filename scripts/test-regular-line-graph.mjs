@@ -31,7 +31,13 @@ test('generated Seoul segments equal the complete mapped official adjacent pairs
     const neighbors = new Set(map.edges.filter((edge) => edge.a === station.id || edge.b === station.id).map((edge) => edge.a === station.id ? edge.b : edge.a))
     assert.equal(station.degree, neighbors.size, station.id)
   }
-  assert.equal(map.stations.filter((entry) => entry.id === '신촌' || entry.id === '신촌(지하)').length, 1)
+  const sinchon = map.stations.find((entry) => entry.id === '신촌')
+  const undergroundSinchon = map.stations.find((entry) => entry.id === '신촌(지하)')
+  assert.ok(sinchon)
+  assert.ok(undergroundSinchon)
+  assert.deepEqual(sinchon.lineIds, ['3-2'])
+  assert.deepEqual(undergroundSinchon.lineIds, [])
+  assert.equal(undergroundSinchon.degree, 0)
   assert.deepEqual(map.stations.find((entry) => entry.id === '양평').lineIds, ['6-5'])
 })
 
