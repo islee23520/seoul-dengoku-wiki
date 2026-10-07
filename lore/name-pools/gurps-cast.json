@@ -63594,16 +63594,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 10,
+          "cp": 0,
           "rule": "card-actions",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/303/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ]
+          "evidence": []
         },
         "HT": {
           "value": 10,
@@ -63625,22 +63619,17 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/302/items/1/ko",
               "quote": "생업: 관문 공개 창구 접수"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/303/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
+        "Will": 10,
+        "Per": 10,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -63648,12 +63637,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
+        "attributes": 0,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 28,
-        "unspent": 47,
+        "spent": 8,
+        "unspent": 67,
         "total": 75
       },
       "band": "일반 인물",
@@ -63986,15 +63975,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/271/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/272/text/ko",
@@ -64025,24 +64009,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/271/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/272/text/ko",
               "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -64050,12 +64029,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -65877,15 +65856,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/314/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/315/text/ko",
@@ -65903,22 +65877,6 @@
       "traits": [],
       "skills": [
         {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/314/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
-        {
           "name": "Area Knowledge (근무 구역)",
           "ko": "지역 지식(전령·전달)",
           "attr": "IQ",
@@ -65932,7 +65890,7 @@
             }
           ],
           "cp": 8,
-          "level": 15
+          "level": 14
         },
         {
           "name": "Mechanic/TL?",
@@ -65948,7 +65906,7 @@
             }
           ],
           "cp": 4,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -65970,8 +65928,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -65979,12 +65937,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 24,
-        "spent": 64,
-        "unspent": 11,
+        "skills": 16,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -66344,15 +66302,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/282/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/283/text/ko",
@@ -66369,22 +66322,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/282/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -66404,7 +66341,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -66426,8 +66363,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -66435,12 +66372,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -68246,15 +68183,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/325/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/326/text/ko",
@@ -68271,22 +68203,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/325/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -68306,7 +68222,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -68328,8 +68244,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -68337,12 +68253,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -68675,15 +68591,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/293/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/294/text/ko",
@@ -68714,17 +68625,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/293/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/294/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Farming/TL?",
@@ -68740,14 +68646,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -68755,12 +68661,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -70651,16 +70557,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 10,
+          "cp": 0,
           "rule": "card-actions",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/336/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ]
+          "evidence": []
         },
         "HT": {
           "value": 10,
@@ -70682,22 +70582,17 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/335/items/1/ko",
               "quote": "생업: 관문 인명 장부 보관"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/336/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
+        "Will": 10,
+        "Per": 10,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -70705,12 +70600,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
+        "attributes": 0,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 28,
-        "unspent": 47,
+        "spent": 8,
+        "unspent": 67,
         "total": 75
       },
       "band": "일반 인물",
@@ -71017,15 +70912,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/304/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/305/text/ko",
@@ -71042,22 +70932,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/304/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -71077,14 +70951,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -71092,12 +70966,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -72936,15 +72810,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/347/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/348/text/ko",
@@ -72961,22 +72830,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/347/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Diplomacy",
           "ko": "교섭·조정",
@@ -72996,7 +72849,7 @@
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -73018,8 +72871,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -73027,12 +72880,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -73376,15 +73229,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/315/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/316/text/ko",
@@ -73401,22 +73249,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/315/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -73436,7 +73268,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -73458,8 +73290,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -73467,12 +73299,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -75293,15 +75125,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/358/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/359/text/ko",
@@ -75318,22 +75145,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/358/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -75353,7 +75164,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -75375,8 +75186,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -75384,12 +75195,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -75723,15 +75534,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/326/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/327/text/ko",
@@ -75762,17 +75568,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/326/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/327/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Farming/TL?",
@@ -75788,14 +75589,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -75803,12 +75604,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -77682,15 +77483,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/369/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/370/text/ko",
@@ -77707,22 +77503,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/369/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Diplomacy",
           "ko": "교섭·조정",
@@ -77742,14 +77522,14 @@
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -77757,12 +77537,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -78069,15 +77849,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/337/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/338/text/ko",
@@ -78108,24 +77883,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/337/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/338/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -78133,12 +77903,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -79914,15 +79684,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/380/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/381/text/ko",
@@ -79939,22 +79704,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/380/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Mechanic/TL?",
           "ko": "기계 정비",
@@ -79974,7 +79723,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Breath Control",
@@ -79996,8 +79745,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -80005,12 +79754,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -80354,15 +80103,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/348/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/349/text/ko",
@@ -80390,15 +80134,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/347/items/2/ko",
               "quote": "생업: 능선 초계·매복 흔적 확인"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/348/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -80419,7 +80158,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -80441,8 +80180,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -80450,12 +80189,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -82235,15 +81974,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/391/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/392/text/ko",
@@ -82271,15 +82005,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/390/items/1/ko",
               "quote": "생업: 출입 경비·명부 재점검"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/391/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -82300,7 +82029,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Mechanic/TL?",
@@ -82316,7 +82045,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -82338,8 +82067,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -82347,12 +82076,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 28,
-        "spent": 68,
-        "unspent": 7,
+        "spent": 48,
+        "unspent": 27,
         "total": 75
       },
       "band": "일반 인물",
@@ -82702,15 +82431,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/359/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/360/text/ko",
@@ -82727,22 +82451,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/359/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -82762,14 +82470,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -82777,12 +82485,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -84667,16 +84375,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 10,
+          "cp": 0,
           "rule": "card-actions",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/402/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ]
+          "evidence": []
         },
         "HT": {
           "value": 10,
@@ -84698,22 +84400,17 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/401/items/1/ko",
               "quote": "생업: 관문 공개 창구 접수"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/402/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
+        "Will": 10,
+        "Per": 10,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -84721,12 +84418,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
+        "attributes": 0,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 28,
-        "unspent": 47,
+        "spent": 8,
+        "unspent": 67,
         "total": 75
       },
       "band": "일반 인물",
@@ -85050,15 +84747,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/370/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/371/text/ko",
@@ -85089,17 +84781,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/370/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/371/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Farming/TL?",
@@ -85115,14 +84802,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -85130,12 +84817,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -86951,15 +86638,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/413/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/414/text/ko",
@@ -86976,22 +86658,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/413/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Mechanic/TL?",
           "ko": "기계 정비",
@@ -87011,7 +86677,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Breath Control",
@@ -87033,8 +86699,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -87042,12 +86708,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -87386,15 +87052,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/381/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/382/text/ko",
@@ -87422,15 +87083,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/380/items/2/ko",
               "quote": "생업: 능선 초계·매복 흔적 확인"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/381/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -87451,7 +87107,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -87473,8 +87129,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -87482,12 +87138,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -89313,15 +88969,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/424/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/425/text/ko",
@@ -89338,22 +88989,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/424/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -89373,7 +89008,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -89395,8 +89030,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -89404,12 +89039,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -89748,15 +89383,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/392/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/393/text/ko",
@@ -89787,24 +89417,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/392/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/393/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -89812,12 +89437,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -91709,15 +91334,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/435/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/436/text/ko",
@@ -91745,15 +91365,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/434/items/1/ko",
               "quote": "생업: 관문 증인 대질·기록"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/435/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Interrogation",
@@ -91774,14 +91389,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -91789,12 +91404,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -92144,15 +91759,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/403/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/404/text/ko",
@@ -92169,22 +91779,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/403/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -92204,14 +91798,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -92219,12 +91813,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -94057,15 +93651,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/446/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/447/text/ko",
@@ -94083,22 +93672,6 @@
       "traits": [],
       "skills": [
         {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/446/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
-        {
           "name": "Area Knowledge (근무 구역)",
           "ko": "지역 지식(전령·전달)",
           "attr": "IQ",
@@ -94112,7 +93685,7 @@
             }
           ],
           "cp": 8,
-          "level": 15
+          "level": 14
         },
         {
           "name": "Mechanic/TL?",
@@ -94128,7 +93701,7 @@
             }
           ],
           "cp": 4,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -94150,8 +93723,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -94159,12 +93732,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 24,
-        "spent": 64,
-        "unspent": 11,
+        "skills": 16,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -94509,15 +94082,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/414/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/415/text/ko",
@@ -94548,17 +94116,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/414/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/415/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -94574,7 +94137,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -94596,8 +94159,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -94605,12 +94168,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -96431,15 +95994,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/457/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/458/text/ko",
@@ -96470,17 +96028,12 @@
             },
             {
               "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/457/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/458/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -96502,8 +96055,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -96511,12 +96064,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 12,
-        "spent": 52,
-        "unspent": 23,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -96849,15 +96402,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/425/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/426/text/ko",
@@ -96888,24 +96436,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/425/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/426/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -96913,12 +96456,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -98804,15 +98347,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/468/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/469/text/ko",
@@ -98829,22 +98367,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/468/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Diplomacy",
           "ko": "교섭·조정",
@@ -98864,14 +98386,14 @@
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -98879,12 +98401,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -99207,15 +98729,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/436/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/437/text/ko",
@@ -99232,22 +98749,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/436/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -99267,14 +98768,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -99282,12 +98783,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -101141,15 +100642,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/479/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/480/text/ko",
@@ -101166,22 +100662,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/479/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Diplomacy",
           "ko": "교섭·조정",
@@ -101201,7 +100681,7 @@
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -101223,8 +100703,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -101232,12 +100712,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -101598,15 +101078,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/447/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/448/text/ko",
@@ -101634,15 +101109,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/446/items/2/ko",
               "quote": "생업: 무장 난입 제지·명부 재검"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/447/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -101663,7 +101133,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -101685,8 +101155,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -101694,12 +101164,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -103541,15 +103011,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/490/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/491/text/ko",
@@ -103577,15 +103042,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/489/items/1/ko",
               "quote": "생업: 출입 경비·명부 재점검"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/490/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -103606,7 +103066,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Mechanic/TL?",
@@ -103622,7 +103082,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -103644,8 +103104,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -103653,12 +103113,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 28,
-        "spent": 68,
-        "unspent": 7,
+        "spent": 48,
+        "unspent": 27,
         "total": 75
       },
       "band": "일반 인물",
@@ -103992,15 +103452,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/458/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/459/text/ko",
@@ -104031,17 +103486,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/458/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/459/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Farming/TL?",
@@ -104057,14 +103507,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -104072,12 +103522,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -105979,15 +105429,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/501/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/502/text/ko",
@@ -106004,22 +105449,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/501/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Diplomacy",
           "ko": "교섭·조정",
@@ -106039,14 +105468,14 @@
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -106054,12 +105483,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -106366,15 +105795,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/469/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/470/text/ko",
@@ -106405,24 +105829,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/469/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/470/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -106430,12 +105849,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -108236,15 +107655,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/512/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/513/text/ko",
@@ -108261,22 +107675,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/512/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Mechanic/TL?",
           "ko": "기계 정비",
@@ -108296,7 +107694,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Breath Control",
@@ -108318,8 +107716,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -108327,12 +107725,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -108676,15 +108074,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/480/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/481/text/ko",
@@ -108712,15 +108105,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/479/items/2/ko",
               "quote": "생업: 능선 초계·매복 흔적 확인"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/480/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -108741,7 +108129,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -108763,8 +108151,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -108772,12 +108160,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -110572,15 +109960,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/523/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/524/text/ko",
@@ -110608,15 +109991,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/522/items/1/ko",
               "quote": "생업: 출입 경비·명부 재점검"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/523/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -110637,7 +110015,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Mechanic/TL?",
@@ -110653,7 +110031,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -110675,8 +110053,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -110684,12 +110062,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 28,
-        "spent": 68,
-        "unspent": 7,
+        "spent": 48,
+        "unspent": 27,
         "total": 75
       },
       "band": "일반 인물",
@@ -111006,15 +110384,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/491/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/492/text/ko",
@@ -111031,22 +110404,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/491/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -111066,14 +110423,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -111081,12 +110438,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -112976,16 +112333,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 10,
+          "cp": 0,
           "rule": "card-actions",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/534/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ]
+          "evidence": []
         },
         "HT": {
           "value": 10,
@@ -113007,22 +112358,17 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/533/items/1/ko",
               "quote": "생업: 관문 공개 창구 접수"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/534/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
+        "Will": 10,
+        "Per": 10,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -113030,12 +112376,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
+        "attributes": 0,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 28,
-        "unspent": 47,
+        "spent": 8,
+        "unspent": 67,
         "total": 75
       },
       "band": "일반 인물",
@@ -113380,15 +112726,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/502/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/503/text/ko",
@@ -113419,24 +112760,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/502/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/503/text/ko",
               "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -113444,12 +112780,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -115281,15 +114617,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/545/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/546/text/ko",
@@ -115306,22 +114637,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/545/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Mechanic/TL?",
           "ko": "기계 정비",
@@ -115341,7 +114656,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Breath Control",
@@ -115363,8 +114678,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -115372,12 +114687,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -115721,15 +115036,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/513/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/514/text/ko",
@@ -115757,15 +115067,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/512/items/2/ko",
               "quote": "생업: 무장 난입 제지·명부 재검"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/513/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -115786,7 +115091,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -115808,8 +115113,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -115817,12 +115122,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -117649,15 +116954,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/556/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/557/text/ko",
@@ -117674,22 +116974,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/556/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -117709,7 +116993,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Cartography/TL?",
@@ -117725,7 +117009,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -117747,8 +117031,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -117756,12 +117040,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 28,
-        "spent": 68,
-        "unspent": 7,
+        "skills": 20,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -118078,15 +117362,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/524/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/525/text/ko",
@@ -118117,24 +117396,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/524/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/525/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -118142,12 +117416,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -120027,15 +119301,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/567/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/568/text/ko",
@@ -120063,15 +119332,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/566/items/1/ko",
               "quote": "생업: 관문 증인 대질·기록"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/567/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Interrogation",
@@ -120092,14 +119356,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -120107,12 +119371,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -120445,15 +119709,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/535/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/536/text/ko",
@@ -120470,22 +119729,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/535/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -120505,14 +119748,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -120520,12 +119763,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -122347,15 +121590,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/578/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/579/text/ko",
@@ -122373,22 +121611,6 @@
       "traits": [],
       "skills": [
         {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/578/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
-        {
           "name": "Area Knowledge (근무 구역)",
           "ko": "지역 지식(전령·전달)",
           "attr": "IQ",
@@ -122402,7 +121624,7 @@
             }
           ],
           "cp": 8,
-          "level": 15
+          "level": 14
         },
         {
           "name": "Mechanic/TL?",
@@ -122418,7 +121640,7 @@
             }
           ],
           "cp": 4,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -122440,8 +121662,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -122449,12 +121671,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 24,
-        "spent": 64,
-        "unspent": 11,
+        "skills": 16,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -122831,15 +122053,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/546/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/547/text/ko",
@@ -122856,22 +122073,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/546/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -122891,7 +122092,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -122913,8 +122114,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -122922,12 +122123,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -124784,15 +123985,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/589/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/590/text/ko",
@@ -124809,22 +124005,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/589/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -124844,7 +124024,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -124866,8 +124046,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -124875,12 +124055,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -125229,15 +124409,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/557/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/558/text/ko",
@@ -125254,22 +124429,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/557/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -125289,14 +124448,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -125304,12 +124463,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -127216,15 +126375,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/600/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/601/text/ko",
@@ -127252,15 +126406,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/599/items/1/ko",
               "quote": "생업: 관문 증인 대질·기록"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/600/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Interrogation",
@@ -127281,14 +126430,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -127296,12 +126445,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -127650,15 +126799,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/568/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/569/text/ko",
@@ -127689,24 +126833,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/568/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/569/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -127714,12 +126853,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -129558,15 +128697,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/611/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/612/text/ko",
@@ -129583,22 +128717,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/611/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Diplomacy",
           "ko": "교섭·조정",
@@ -129618,7 +128736,7 @@
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -129640,8 +128758,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -129649,12 +128767,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -130015,15 +129133,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/579/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/580/text/ko",
@@ -130051,15 +129164,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/578/items/2/ko",
               "quote": "생업: 무장 난입 제지·명부 재검"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/579/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -130080,7 +129188,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -130102,8 +129210,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -130111,12 +129219,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -131937,15 +131045,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/622/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/623/text/ko",
@@ -131962,22 +131065,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/622/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Observation",
           "ko": "관찰(경비·순찰)",
@@ -131997,7 +131084,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Cartography/TL?",
@@ -132013,7 +131100,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -132035,8 +131122,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -132044,12 +131131,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 28,
-        "spent": 68,
-        "unspent": 7,
+        "skills": 20,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -132383,15 +131470,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/590/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/591/text/ko",
@@ -132422,24 +131504,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/590/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/591/text/ko",
               "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -132447,12 +131524,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -134342,16 +133419,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 10,
+          "cp": 0,
           "rule": "card-actions",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/633/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ]
+          "evidence": []
         },
         "HT": {
           "value": 10,
@@ -134373,22 +133444,17 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/632/items/1/ko",
               "quote": "생업: 관문 인명 장부 보관"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/633/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
+        "Will": 10,
+        "Per": 10,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -134396,12 +133462,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
+        "attributes": 0,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 28,
-        "unspent": 47,
+        "spent": 8,
+        "unspent": 67,
         "total": 75
       },
       "band": "일반 인물",
@@ -134745,15 +133811,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/601/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/602/text/ko",
@@ -134784,17 +133845,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/601/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/602/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Farming/TL?",
@@ -134810,14 +133866,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -134825,12 +133881,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -136674,15 +135730,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/644/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/645/text/ko",
@@ -136700,22 +135751,6 @@
       "traits": [],
       "skills": [
         {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/644/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
-        {
           "name": "Area Knowledge (근무 구역)",
           "ko": "지역 지식(전령·전달)",
           "attr": "IQ",
@@ -136729,7 +135764,7 @@
             }
           ],
           "cp": 8,
-          "level": 15
+          "level": 14
         },
         {
           "name": "Mechanic/TL?",
@@ -136745,7 +135780,7 @@
             }
           ],
           "cp": 4,
-          "level": 13
+          "level": 12
         },
         {
           "name": "Breath Control",
@@ -136767,8 +135802,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -136776,12 +135811,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 24,
-        "spent": 64,
-        "unspent": 11,
+        "skills": 16,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -137120,15 +136155,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/612/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/613/text/ko",
@@ -137156,15 +136186,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/611/items/2/ko",
               "quote": "생업: 능선 초계·매복 흔적 확인"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/612/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -137185,7 +136210,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -137207,8 +136232,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -137216,12 +136241,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -139060,15 +138085,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/655/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/656/text/ko",
@@ -139096,15 +138116,10 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/654/items/1/ko",
               "quote": "생업: 출입 경비·명부 재점검"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/655/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -139125,7 +138140,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Mechanic/TL?",
@@ -139141,7 +138156,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -139163,8 +138178,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -139172,12 +138187,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 28,
-        "spent": 68,
-        "unspent": 7,
+        "spent": 48,
+        "unspent": 27,
         "total": 75
       },
       "band": "일반 인물",
@@ -139500,15 +138515,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/623/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/624/text/ko",
@@ -139525,22 +138535,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/623/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Merchant",
           "ko": "거래·경매",
@@ -139560,14 +138554,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -139575,12 +138569,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "skills": 8,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
@@ -141470,16 +140464,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 11,
-          "cp": 20,
+          "value": 10,
+          "cp": 0,
           "rule": "card-actions",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/666/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ]
+          "evidence": []
         },
         "HT": {
           "value": 10,
@@ -141501,22 +140489,17 @@
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/665/items/1/ko",
               "quote": "생업: 관문 공개 창구 접수"
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/666/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 13
+          "level": 12
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 11,
-        "Per": 11,
+        "Will": 10,
+        "Per": 10,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -141524,12 +140507,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 20,
+        "attributes": 0,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 28,
-        "unspent": 47,
+        "spent": 8,
+        "unspent": 67,
         "total": 75
       },
       "band": "일반 인물",
@@ -141836,15 +140819,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/634/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/635/text/ko",
@@ -141875,17 +140853,12 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/634/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/635/text/ko",
               "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Farming/TL?",
@@ -141901,14 +140874,14 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -141916,12 +140889,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 16,
-        "spent": 56,
-        "unspent": 19,
+        "spent": 36,
+        "unspent": 39,
         "total": 75
       },
       "band": "일반 인물",
@@ -143738,15 +142711,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/677/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/678/text/ko",
@@ -143763,22 +142731,6 @@
       },
       "traits": [],
       "skills": [
-        {
-          "name": "Administration",
-          "ko": "행정·기록",
-          "attr": "IQ",
-          "diff": "A",
-          "tier": "B",
-          "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/677/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            }
-          ],
-          "cp": 8,
-          "level": 14
-        },
         {
           "name": "Mechanic/TL?",
           "ko": "기계 정비",
@@ -143798,7 +142750,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Breath Control",
@@ -143820,8 +142772,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -143829,12 +142781,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
-        "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "skills": 12,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -144162,15 +143114,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/645/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/646/text/ko",
@@ -144198,15 +143145,10 @@
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/644/items/2/ko",
               "quote": "생업: 능선 초계·매복 흔적 확인"
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/645/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Observation",
@@ -144227,7 +143169,7 @@
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -144249,8 +143191,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -144258,12 +143200,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 20,
-        "spent": 60,
-        "unspent": 15,
+        "spent": 40,
+        "unspent": 35,
         "total": 75
       },
       "band": "일반 인물",
@@ -146100,15 +145042,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/688/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/689/text/ko",
@@ -146139,17 +145076,12 @@
             },
             {
               "path": "lore/characters/Cast-State-05.json",
-              "pointer": "/content/688/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-05.json",
               "pointer": "/content/689/text/ko",
               "quote": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         },
         {
           "name": "Shield",
@@ -146171,8 +145103,8 @@
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -146180,12 +145112,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 12,
-        "spent": 52,
-        "unspent": 23,
+        "spent": 32,
+        "unspent": 43,
         "total": 75
       },
       "band": "일반 인물",
@@ -146492,15 +145424,10 @@
           "evidence": []
         },
         "IQ": {
-          "value": 12,
-          "cp": 40,
+          "value": 11,
+          "cp": 20,
           "rule": "card-actions",
           "evidence": [
-            {
-              "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/656/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
             {
               "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/657/text/ko",
@@ -146531,24 +145458,19 @@
             },
             {
               "path": "lore/characters/Cast-State-08.json",
-              "pointer": "/content/656/text/ko",
-              "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-            },
-            {
-              "path": "lore/characters/Cast-State-08.json",
               "pointer": "/content/657/text/ko",
               "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
             }
           ],
           "cp": 8,
-          "level": 14
+          "level": 13
         }
       ],
       "languages": [],
       "secondary": {
         "HP": 10,
-        "Will": 12,
-        "Per": 12,
+        "Will": 11,
+        "Per": 11,
         "FP": 10,
         "BasicSpeed": 5,
         "BasicMove": 5,
@@ -146556,12 +145478,12 @@
         "Dodge": 8
       },
       "cp": {
-        "attributes": 40,
+        "attributes": 20,
         "advantages": 0,
         "disadvantages": 0,
         "skills": 8,
-        "spent": 48,
-        "unspent": 27,
+        "spent": 28,
+        "unspent": 47,
         "total": 75
       },
       "band": "일반 인물",
