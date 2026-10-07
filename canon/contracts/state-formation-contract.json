@@ -1,0 +1,58 @@
+{
+  "schema": "state-formation-contract.v1",
+  "contractId": "state-formation-independent-land-acquisition",
+  "scope": "transition-rules-only",
+  "independentAcquisitionCreatesState": true,
+  "grantRequiresPriorMembership": true,
+  "territorialControlIsPersonalHolding": false,
+  "formationPrerequisites": [
+    {
+      "id": "independent-land-acquisition",
+      "status": "confirmed",
+      "source": {
+        "repository": "GDD",
+        "path": "canon/locales/ko-KR/rules/rules-factions-warfare-clauses.json",
+        "pointer": "/blocks/r2.rwarfare-37.body",
+        "sha256": "cd10396fbf6bf4368f043a5efb493f5e743b496f2c0f3b61f19db2b148adfdec"
+      },
+      "approvalRef": "accepted GDD rule r2.rwarfare-37"
+    },
+    {
+      "id": "prior-membership-before-grant",
+      "status": "confirmed",
+      "source": {
+        "repository": "GDD",
+        "path": "canon/locales/ko-KR/rules/rules-factions-warfare-clauses.json",
+        "pointer": "/blocks/r2.rwarfare-37.body",
+        "sha256": "cd10396fbf6bf4368f043a5efb493f5e743b496f2c0f3b61f19db2b148adfdec"
+      },
+      "approvalRef": "accepted GDD rule r2.rwarfare-37"
+    },
+    {
+      "id": "additional-formation-prerequisites",
+      "status": "unresolved",
+      "reason": "No approved source establishes further thresholds, title rights, or prerequisites."
+    }
+  ],
+  "independentLedgers": {
+    "wiki": {
+      "stateRegistry": "lore/factions/Sixteen-States.json",
+      "membershipRegistry": "lore/relations/relations.json",
+      "personalHoldingRegistry": "lore/relations/personal-holdings.json"
+    },
+    "gdd": {
+      "ruleSource": "canon/locales/ko-KR/rules/rules-factions-warfare-clauses.json",
+      "clause": "r2.rwarfare-37"
+    },
+    "storageRelationship": "independent; this contract binds transition semantics and does not merge state, membership, or holding records"
+  },
+  "sourceScope": {
+    "openingStates": {
+      "count": 16,
+      "range": "S01-S16",
+      "approvalRef": "owner-confirmed opening states; GDD r2.rwarfare-37.body"
+    },
+    "wholeKingdomAtOpening": false,
+    "approvalRef": "owner-confirmed opening condition"
+  }
+}
