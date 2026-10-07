@@ -12,6 +12,7 @@
     "id": "doc.Ref-Mechanism-Index",
     "blockIds": [
       "source.b1",
+      "integration.20261006.entry",
       "source.b2",
       "source.b3",
       "source.b4",
@@ -213,6 +214,16 @@
             "text": "[!NOTE]"
           }
         ]
+      ]
+    },
+    {
+      "id": "integration.20261006.entry",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인물 시트·계산·영역별 규칙과 상황은 [인물과 영역 설계 길잡이](../system-design/mechanism-design-index.md)에서 읽는다. 승인 범위와 미채택 대안을 구분하는 설계 제안이다."
+        }
       ]
     },
     {

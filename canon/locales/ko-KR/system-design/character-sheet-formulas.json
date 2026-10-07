@@ -1,0 +1,3960 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "system-design/character-sheet-formulas.md",
+    "lineStart": 1,
+    "lineEnd": 649,
+    "sha256": "8eb9ea087de0374fe86366cb0ff25ae6a0e85038b4ecea2642c67f364d140725"
+  },
+  "document": {
+    "id": "doc.character-sheet-formulas",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b49",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54",
+      "source.b55",
+      "source.b56",
+      "source.b57",
+      "source.b58",
+      "source.b59",
+      "source.b60",
+      "source.b61",
+      "source.b62",
+      "source.b63",
+      "source.b64",
+      "source.b65",
+      "source.b66",
+      "source.b67",
+      "source.b68",
+      "source.b69",
+      "source.b70",
+      "source.b71",
+      "source.b72",
+      "source.b73",
+      "source.b74",
+      "source.b75",
+      "source.b76",
+      "source.b77",
+      "source.b78",
+      "source.b79",
+      "source.b80",
+      "source.b81",
+      "source.b82",
+      "source.b83",
+      "source.b84",
+      "source.b85",
+      "source.b86",
+      "source.b87",
+      "source.b88",
+      "source.b89",
+      "source.b90",
+      "source.b91",
+      "source.b92",
+      "source.b93",
+      "source.b94",
+      "source.b95",
+      "source.b96",
+      "source.b97",
+      "source.b98",
+      "source.b99",
+      "source.b100",
+      "source.b101",
+      "source.b102",
+      "source.b103",
+      "source.b104",
+      "source.b105",
+      "source.b106",
+      "source.b107",
+      "source.b108",
+      "source.b109",
+      "source.b110",
+      "source.b111",
+      "source.b112",
+      "source.b113",
+      "source.b114",
+      "source.b115",
+      "source.b116",
+      "source.b117",
+      "source.b118",
+      "source.b119",
+      "source.b120",
+      "source.b121",
+      "source.b122",
+      "source.b123",
+      "source.b124",
+      "source.b125",
+      "source.b126",
+      "source.b127",
+      "source.b128",
+      "source.b129",
+      "source.b130",
+      "source.b131",
+      "source.b132",
+      "source.b133",
+      "source.b134",
+      "source.b135",
+      "source.b136",
+      "source.b137",
+      "source.b138",
+      "source.b139",
+      "source.b140",
+      "source.b141",
+      "source.b142",
+      "source.b143",
+      "source.b144",
+      "source.b145",
+      "source.b146",
+      "source.b147",
+      "source.b148",
+      "source.b149",
+      "source.b150",
+      "source.b151",
+      "source.b152",
+      "source.b153",
+      "source.b154",
+      "source.b155",
+      "source.b156",
+      "source.b157",
+      "source.b158",
+      "source.b159",
+      "source.b160",
+      "source.b161",
+      "source.b162",
+      "source.b163",
+      "source.b164",
+      "source.b165",
+      "source.b166",
+      "source.b167",
+      "source.b168",
+      "source.b169",
+      "source.b170",
+      "source.b171",
+      "source.b172",
+      "source.b173",
+      "source.b174",
+      "source.b175",
+      "source.b176",
+      "source.b177",
+      "source.b178",
+      "source.b179",
+      "source.b180",
+      "source.b181",
+      "source.b182",
+      "source.b183",
+      "source.b184",
+      "source.b185",
+      "source.b186",
+      "source.b187",
+      "source.b188",
+      "source.b189",
+      "source.b190",
+      "source.b191",
+      "source.b192",
+      "source.b193",
+      "source.b194",
+      "source.b195",
+      "source.b196",
+      "source.b197",
+      "source.b198",
+      "source.b199",
+      "source.b200"
+    ],
+    "terminalLineFeeds": 2
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인물 시트와 도메인 계산 계약"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안. 승인된 규칙, 선택된 정책, 미채택 대안과 미정 수치를 구분한다. 구현 완료를 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[설계 길잡이](mechanism-design-index.md) · [18개 상황](domain-situations.md)"
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 문서는 인물의 기본 기록, 직접 확인한 원작 계산 표기, 서울에서 승인된 상태 규칙을 연결한다. 인물 한 명의 기록을 인구·권한·물류·전투 전체의 계산식으로 확대하지 않는다. 수치와 사례는 해당 입력이 알려진 경우만 계산하며, 미정 입력은 0이 아니라 미정으로 남긴다. 구현 완료나 모든 규칙의 채택을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "근거의 다섯 구분"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "원작 참조: GURPS Basic Set: Characters Fourth Edition, Version 10.0 – March 2024의 20쪽 미리보기에서 직접 읽은 표기다. PDF 18–19쪽은 인쇄 335–336쪽의 빈 인물 시트다. PDF 10–11쪽은 인쇄 8–9쪽의 소개와 일반 관례다. 빈 칸이나 목차·색인은 빠진 규칙 본문을 대신하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "서울 승인: 인구 표현 보존, 반개방 예약, 검증된 도착의 포함 마감, 방향성 신뢰 분류, 항목별 협상 값 구조, 전쟁 점수 끝점, 단일 종결은 이미 승인된 범위만 유지한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택 정책: 화물 분할은 부모 신원을 이력으로 퇴역시키고 물질을 두 자식으로 나누며, 실제 선택된 인수 근거는 수령자 확인 서명이다. 현재 보관 책임자 확인을 추가하는 양측 조건은 아래 사례의 미채택 공학 제안이며, 선택된 정책으로 인증하지 않는다. 협상 재평가가 명시적 권한과 새 판본·상태 스냅샷으로 수행되고 실제 무효화 사건이 기록되면 옛 수락을 무효화한다. 관련 상태 변경이나 요청 대기만으로 무효화된 것으로 보지 않는다. 이 선택은 전체 물류·협상 규칙이나 가격·수락 산식 승인이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "제안: 여기의 정규화된 자료형, 최대값/현재값 명칭, 도메인 시트 구성은 독자적인 기록 모델이다. 원작 양식 그림을 복사하지 않는다. 승인된 상태 의미와 자료형 제안을 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "빠진 규칙: 능력 비용, 기본 파생식, 기능 비용과 기본값, ST 피해표, 기본 방어식, 방호·부상·치명 결과, 전체 거리·명중 위치표, 서울 계수와 국가 제도는 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인물 기록의 독립 칸"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개인 신원"
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 identity; stable ID from D01."
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "characterId: string; 단위 identifier."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "name: string; 단위 text."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "player: string; 단위 text."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "height: number; 단위 unspecified-on-sheet."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "bodyWeight: number; 단위 unspecified-on-sheet."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "sizeModifier: integer; 단위 modifier."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "age: number; 단위 unspecified-on-sheet."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "appearance: string; 단위 text."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "notes: string; 단위 text."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기본 능력"
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 primary attributes."
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "ST: integer; 단위 attribute-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "STCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "DX: integer; 단위 attribute-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "DXCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "IQ: integer; 단위 attribute-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "IQCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "HT: integer; 단위 attribute-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "HTCP: number; 단위 CP."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 건강과 기준"
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D02. 근거: PDF18/B335 HP/FP CURRENT; D02 separation."
+        }
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "HPMaximum: number; 단위 HP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "HPCurrent: number; 단위 HP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "FPMaximum: number; 단위 FP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "FPCurrent: number; 단위 FP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "HPCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "FPCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "WillCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "PerCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Will: integer; 단위 attribute-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Per: integer; 단위 attribute-level."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개인 파생·방어"
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 derived and defense slots."
+        }
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "basicLift: number; 단위 lb-context; BL-specific-unit-unverified."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "thrustDamage: string; 단위 dice-expression."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "swingDamage: string; 단위 dice-expression."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "basicSpeed: number; 단위 unspecified-on-sheet."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "basicSpeedCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "basicMove: number; 단위 unspecified-on-sheet."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "basicMoveCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "encumbranceLevel: integer; 단위 printed-row-0..4."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "dodge: number; 단위 defense-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "parry: number; 단위 defense-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "block: number; 단위 defense-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "DR: number; 단위 DR-rating."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "언어·기술 수준·문화"
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 Languages/TL/Cultural Familiarities."
+        }
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "languages: array[{name:string,spoken:string|null,written:string|null,CP:number|null}]; 단위 text + CP; proficiency vocabulary unspecified."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "TL: integer; 단위 TL-level."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "TLCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "culturalFamiliarities: array[{name:string,CP:number|null}]; 단위 text + CP."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "특성과 반응"
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 traits/reaction modifiers."
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "advantagesPerks: array[{name:string,CP:number|null}]; 단위 text + CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "disadvantagesQuirks: array[{name:string,CP:number|null}]; 단위 text + CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "reactionAppearance: number; 단위 modifier."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "reactionStatus: number; 단위 modifier."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "reactionReputation: number; 단위 modifier."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "reactionOther: array[{name:string,modifier:number|null}]; 단위 modifier."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "학습된 기능"
+        }
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 Skills Level Relative Level."
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "skills: array[{name:string,level:number|null,relativeLevel:string|null,CP:number|null,controllingAttribute:string|null}]; 단위 skill-level + relative-expression + CP; controllingAttribute is original nullable normalization."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "무기 입력"
+        }
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D15. 근거: PDF19/B336 Hand/Ranged Weapons."
+        }
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "handWeapons: array[{weapon:string,damage:string|null,reach:string|null,parry:string|null,notes:string|null,cost:number|null,weight:number|null}]; 단위 damage/reach/parry printed notation; cost $, weight lb context."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rangedWeapons: array[{weapon:string,damage:string|null,Acc:number|null,range:string|null,RoF:string|null,shots:string|null,ST:string|null,bulk:number|null,Rcl:number|null,LC:number|null,notes:string|null,cost:number|null,weight:number|null}]; 단위 mixed printed weapon statistics; detailed units unspecified."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "방호구·소지품"
+        }
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D06. 근거: PDF19/B336 Armor & Possessions Cost Weight Totals."
+        }
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "possessions: array[{item:string,location:string|null,cost:number|null,weight:number|null}]; 단위 cost $; weight lb."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "costTotal: number; 단위 $ reference currency, not Seoul money."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "weightTotal: number; 단위 lb."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "armorCoverage: array[{location:string,DR:number|null,source:string|null}]; 단위 DR-rating; original input, not printed coverage table."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "점수 범주"
+        }
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 근거: PDF18/B335 Point Total/Unspent; PDF19/B336 Points Summary."
+        }
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "pointTotal: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "unspentPoints: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "attributesSecondaryCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "advantagesPerksTLLanguagesCultureCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "disadvantagesQuirksCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "skillsTechniquesCP: number; 단위 CP."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "otherCP: number; 단위 CP."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "HP와 FP의 최대 기준과 현재값은 분리한다. 현재값의 음수 허용·회복·상한 처리는 이 문서가 정하지 않는다. 언어의 말하기와 쓰기는 별도이며 TL·문화 친숙성·물품·미사용 점수를 기능 구매로 옮기지 않는다. 기능의 절대 수준과 상대 수준, 점수는 각각 기록하고, 제어 능력이 확인되지 않으면 null로 남긴다. 장비 비용의 $와 중량 lb는 참조 단위이며 서울 화폐나 운송 속도 단위가 아니다. 배열 자체가 null이면 원본 목록을 모른다는 뜻이고, 확인된 빈 목록은 []로 표현할 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "source.b40",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 독립 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-BL — 기초 들어올리기"
+        }
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 식: `BLraw=ST*ST/5`."
+        }
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원작 확인은 ST×ST/5라는 인쇄된 대수식뿐이다. 양수 ST만 다루는 예제 입력 제한은 제안된 자료형 운반 범위이며 원작의 ST 허용 범위 규칙이 아니다. 음수 ST 사례는 적용 가능성 미정으로 남긴다. 원작의 허용 범위·BL 전용 단위·반올림은 확인되지 않았다."
+        }
+      ]
+    },
+    {
+      "id": "source.b44",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "bl12: 입력 `{\"ST\":12}` → 결과 `{\"BLraw\":28.8}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "bl10: 입력 `{\"ST\":10}` → 결과 `{\"BLraw\":20}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "blUnknown: 입력 `{\"ST\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "blInvalid: 입력 `{\"ST\":-3}` → 결과 `{\"status\":\"unresolved\",\"value\":null,\"reason\":\"original-ST-range-unsupplied\"}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-ENCUMBRANCE — 인쇄 부담 행"
+        }
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 원작 참조. 소유: D06."
+        }
+      ]
+    },
+    {
+      "id": "source.b47",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `rowWeight=multiple*BL; MoveRaw=factor*BM; DodgeAdjusted=DodgeBase+penalty`. 입력: BL, BM and Dodge bases with explicit row. 출력 단위: same respective input units."
+        }
+      ]
+    },
+    {
+      "id": "source.b48",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 행을 직접 지정해야 한다. 무게로 행을 고르는 경계 규칙, 기본 이동·회피식, 최저값과 개별 반올림은 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b49",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "enc0: 입력 `{\"row\":0,\"BL\":25,\"BM\":7,\"DodgeBase\":10}` → 결과 `{\"rowWeight\":25,\"MoveRaw\":7,\"DodgeAdjusted\":10}`. 해당 행의 중량 배수·이동 계수·회피 보정을 각각 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "enc1: 입력 `{\"row\":1,\"BL\":25,\"BM\":7,\"DodgeBase\":10}` → 결과 `{\"rowWeight\":50,\"MoveRaw\":5.6,\"DodgeAdjusted\":9}`. 해당 행의 중량 배수·이동 계수·회피 보정을 각각 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "enc2: 입력 `{\"row\":2,\"BL\":25,\"BM\":7,\"DodgeBase\":10}` → 결과 `{\"rowWeight\":75,\"MoveRaw\":4.2,\"DodgeAdjusted\":8}`. 해당 행의 중량 배수·이동 계수·회피 보정을 각각 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "enc3: 입력 `{\"row\":3,\"BL\":25,\"BM\":7,\"DodgeBase\":10}` → 결과 `{\"rowWeight\":150,\"MoveRaw\":2.8,\"DodgeAdjusted\":7}`. 해당 행의 중량 배수·이동 계수·회피 보정을 각각 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "enc4: 입력 `{\"row\":4,\"BL\":25,\"BM\":7,\"DodgeBase\":10}` → 결과 `{\"rowWeight\":250,\"MoveRaw\":1.4,\"DodgeAdjusted\":6}`. 해당 행의 중량 배수·이동 계수·회피 보정을 각각 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "encUnknown: 입력 `{\"row\":2,\"BL\":25,\"BM\":null,\"DodgeBase\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "encInvalid: 입력 `{\"row\":5}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b50",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-RANGE-SUBSET — 축약 거리 조회"
+        }
+      ]
+    },
+    {
+      "id": "source.b51",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 원작 참조. 소유: D15."
+        }
+      ]
+    },
+    {
+      "id": "source.b52",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `0<=distance<=2 => 0; otherwise lookup only exact printed distance in yd`. 입력: nonnegative distance yd. 출력 단위: modifier."
+        }
+      ]
+    },
+    {
+      "id": "source.b53",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 직접 인쇄된 거리와 2 yd 이하만 조회한다. 중간 행 선택·외삽·속도 합성은 하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b54",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "range50: 입력 `{\"distance\":50}` → 결과 `{\"modifier\":-8}`. 인쇄된 해당 거리 행을 직접 조회한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "range2: 입력 `{\"distance\":2}` → 결과 `{\"modifier\":0}`. 인쇄된 해당 거리 행을 직접 조회한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "range700: 입력 `{\"distance\":700}` → 결과 `{\"modifier\":-15}`. 인쇄된 해당 거리 행을 직접 조회한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "range4: 입력 `{\"distance\":4}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "range701: 입력 `{\"distance\":701}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rangeNegative: 입력 `{\"distance\":-1}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b55",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-HIT-LOCATION-SUBSET — 축약 명중 위치"
+        }
+      ]
+    },
+    {
+      "id": "source.b56",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 원작 참조. 소유: D15."
+        }
+      ]
+    },
+    {
+      "id": "source.b57",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `lookup printed location; vitals -3 and eyes -9 only when Imp or Pi note applies`. 입력: location/type tags. 출력 단위: modifier."
+        }
+      ]
+    },
+    {
+      "id": "source.b58",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 인쇄 위치와 Imp/Pi 조건만 읽는다. 방호 위치·부상 배율·무작위 위치·누락 위치는 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b59",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "hitFace: 입력 `{\"location\":\"Face\",\"attackType\":\"cut\"}` → 결과 `{\"modifier\":-5}`. 해당 위치 행 또는 Imp/Pi 조건부 주석을 직접 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "hitVitals: 입력 `{\"location\":\"vitals\",\"attackType\":\"Imp\"}` → 결과 `{\"modifier\":-3}`. 해당 위치 행 또는 Imp/Pi 조건부 주석을 직접 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "hitEyes: 입력 `{\"location\":\"eyes\",\"attackType\":\"Pi\"}` → 결과 `{\"modifier\":-9}`. 해당 위치 행 또는 Imp/Pi 조건부 주석을 직접 적용한 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "hitCutEyes: 입력 `{\"location\":\"eyes\",\"attackType\":\"cut\"}` → 결과 `{\"status\":\"not-covered\",\"value\":null}`. 이 공격 유형에 해당 표기를 적용할 근거가 없으므로 참조 범위 밖으로 남긴다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "hitUnknown: 입력 `{\"location\":\"vitals\",\"attackType\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b60",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-INTRO-3D — 소개부 3d 판정"
+        }
+      ]
+    },
+    {
+      "id": "source.b61",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D01. 식: `abbreviatedComparison=(d1+d2+d3)<=testedTarget`."
+        }
+      ]
+    },
+    {
+      "id": "source.b62",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "세 d6 합≤표기 목표의 축약 비교만 표시한다. 이 불리언은 실제 성공 판정 결과가 아니다. 18≤20도 비교가 참일 뿐이며 상세 치명 규칙이 없으므로 실제 성공·실패는 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b63",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "rollEqual: 입력 `{\"dice\":[3,4,5],\"target\":12}` → 결과 `{\"sum\":12,\"abbreviatedComparison\":true,\"successRollResult\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rollFail: 입력 `{\"dice\":[4,5,4],\"target\":12}` → 결과 `{\"sum\":13,\"abbreviatedComparison\":false,\"successRollResult\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rollExtreme: 입력 `{\"dice\":[6,6,6],\"target\":20}` → 결과 `{\"sum\":18,\"abbreviatedComparison\":true,\"successRollResult\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rollBad: 입력 `{\"dice\":[0,4,5],\"target\":12}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rollUnknown: 입력 `{\"dice\":[3,4,5],\"target\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b64",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-ROUND-COST — 점수 비용 일반 올림"
+        }
+      ]
+    },
+    {
+      "id": "source.b65",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 원작 참조. 소유: D01."
+        }
+      ]
+    },
+    {
+      "id": "source.b66",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `ceil(x), only with known absence of relevant exception`. 입력: known CP cost and exception status. 출력 단위: CP."
+        }
+      ]
+    },
+    {
+      "id": "source.b67",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 해당 비용과 예외 부재를 아는 경우만 올림한다. 음수 올림은 양의 방향이다. 능력 비용이나 보정 비율을 새로 정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b68",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "costPositive: 입력 `{\"x\":18.75,\"exception\":false}` → 결과 `{\"rounded\":19}`. 입력보다 작지 않은 최소 정수로 올렸다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "costNegative: 입력 `{\"x\":-3.5,\"exception\":false}` → 결과 `{\"rounded\":-3}`. 입력보다 작지 않은 최소 정수로 올렸다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "costUnknown: 입력 `{\"x\":18.75,\"exception\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b69",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "REF-ROUND-FEAT — 행동·전투 결과 일반 내림"
+        }
+      ]
+    },
+    {
+      "id": "source.b70",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 원작 참조. 소유: D15."
+        }
+      ]
+    },
+    {
+      "id": "source.b71",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `floor(x), only with known absence of relevant exception`. 입력: known numeric result and exception status. 출력 단위: same unit."
+        }
+      ]
+    },
+    {
+      "id": "source.b72",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 해당 결과와 예외 부재를 아는 경우만 내림한다. BL·이동·부상별 규칙을 인증하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b73",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "featFraction: 입력 `{\"x\":4.5,\"exception\":false}` → 결과 `{\"rounded\":4}`. 입력보다 크지 않은 최대 정수로 내렸다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "featInteger: 입력 `{\"x\":4,\"exception\":false}` → 결과 `{\"rounded\":4}`. 입력보다 크지 않은 최대 정수로 내렸다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "featUnknown: 입력 `{\"x\":4.5,\"exception\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b74",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-POPULATION — 동일 신원 인구 보존"
+        }
+      ]
+    },
+    {
+      "id": "source.b75",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 서울 승인 범위. 소유: D04."
+        }
+      ]
+    },
+    {
+      "id": "source.b76",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `N=A+I; individualize k => (A-k,I+k); return r => (A+r,I-r)`. 입력: headcounts and eligible IDs. 출력 단위: headcount."
+        }
+      ]
+    },
+    {
+      "id": "source.b77",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 정수 인원과 같은 적격 신원만 이동한다. 별도 인구 사건이 없는 경우에 한하며 생성률·복귀 자격은 미정이다."
+        }
+      ]
+    },
+    {
+      "id": "source.b78",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "popExtract: 입력 `{\"A\":81,\"I\":4,\"k\":7,\"idsDistinct\":true,\"noPopulationEvents\":true}` → 결과 `{\"A\":74,\"I\":11,\"N\":85}`. 집계와 개인 사이의 같은 사람 이동이며 두 인원 합은 보존된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "popReturn: 입력 `{\"A\":74,\"I\":11,\"r\":3,\"idsDistinct\":true,\"noPopulationEvents\":true}` → 결과 `{\"A\":77,\"I\":8,\"N\":85}`. 집계와 개인 사이의 같은 사람 이동이며 두 인원 합은 보존된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "popZero: 입력 `{\"A\":81,\"I\":4,\"k\":0,\"idsDistinct\":true,\"noPopulationEvents\":true}` → 결과 `{\"A\":81,\"I\":4,\"N\":85}`. 집계와 개인 사이의 같은 사람 이동이며 두 인원 합은 보존된다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "popDuplicate: 입력 `{\"A\":81,\"I\":4,\"k\":7,\"idsDistinct\":false,\"noPopulationEvents\":true}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "popEvent: 입력 `{\"A\":81,\"I\":4,\"k\":7,\"idsDistinct\":true,\"noPopulationEvents\":false}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b79",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-RESERVATION — 반개방 예약"
+        }
+      ]
+    },
+    {
+      "id": "source.b80",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D03/D04. 식: `overlap=A.start<B.end AND B.start<A.end`."
+        }
+      ]
+    },
+    {
+      "id": "source.b81",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인된 반개방 점유 경계는 양의 기간 예약끼리의 겹침을 설명한다. 시작<종료라는 자료형 전제는 제안된 양의 구간 기록 제한이며 영시간 행동을 세계에서 금지하는 정책이 아니다. 시작=종료 사례는 이 승인 범위 밖이고 영시간 행동 정책 미정으로 남긴다."
+        }
+      ]
+    },
+    {
+      "id": "source.b82",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "resTouch: 입력 `{\"A\":[11,19],\"B\":[19,27]}` → 결과 `{\"overlap\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resReverse: 입력 `{\"A\":[19,27],\"B\":[11,19]}` → 결과 `{\"overlap\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resOverlap: 입력 `{\"A\":[11,19],\"B\":[18,27]}` → 결과 `{\"overlap\":true}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resMulti: 입력 `{\"existing\":[[11,19],[24,32]],\"requested\":[19,28]}` → 결과 `{\"overlaps\":[false,true],\"refused\":true}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resZero: 입력 `{\"A\":[19,19],\"B\":[19,27]}` → 결과 `{\"status\":\"unresolved\",\"value\":null,\"reason\":\"zero-duration-action-policy-unknown\"}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resUnknown: 입력 `{\"A\":[11,19],\"B\":[null,27]}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b83",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-CARGO-CONSERVATION — 화물 물질 보존"
+        }
+      ]
+    },
+    {
+      "id": "source.b84",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 선택 정책 범위. 소유: D06/D13."
+        }
+      ]
+    },
+    {
+      "id": "source.b85",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `parentAtoms=disjointUnion(child1,child2); qParent=q1+q2; root retired`. 입력: same material units/atoms. 출력 단위: same material quantity."
+        }
+      ]
+    },
+    {
+      "id": "source.b86",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 같은 물질의 분리된 두 자식이 원본을 빠짐없이 덮어야 한다. 분수 분할·손실률·소유 이전·영수 규약은 정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b87",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "cargoSplit: 입력 `{\"parent\":[\"a\",\"b\",\"c\",\"d\",\"e\"],\"children\":[[\"a\",\"b\"],[\"c\",\"d\",\"e\"]]}` → 결과 `{\"childQuantities\":[2,3],\"activeQuantity\":5,\"root\":\"retired\"}`. 자식들의 분리된 물질 합이 원본과 같고 퇴역 부모는 가용 재고에 다시 세지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cargoDuplicate: 입력 `{\"parent\":[\"a\",\"b\",\"c\"],\"children\":[[\"a\",\"b\"],[\"b\",\"c\"]]}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cargoOmitted: 입력 `{\"parent\":[\"a\",\"b\",\"c\"],\"children\":[[\"a\"],[\"b\"]]}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cargoUnknown: 입력 `{\"parent\":null,\"children\":[[\"a\"],[\"b\"]]}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b88",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-CUTOFF — 포함 마감"
+        }
+      ]
+    },
+    {
+      "id": "source.b89",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D06/D05. 식: `temporalEligibility=verifiedArrival AND arrivalAt<=cutoff`."
+        }
+      ]
+    },
+    {
+      "id": "source.b90",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "도착≤마감은 시간상 포함 자격만 판정한다. 최종 가용 재고는 별도 신원·보관·권리 및 적용되는 인수 조건을 요구한다. 이 문서의 양측 확인 사례는 현재 보관 책임자 확인을 추가한 미채택 조건부 제안이다. 같은 시각 도착도 이를 건너뛰지 못한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b91",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "cutEqual: 입력 `{\"arrival\":600,\"cutoff\":600,\"verified\":true}` → 결과 `{\"temporalEligibility\":true,\"finalAvailableStock\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cutBefore: 입력 `{\"arrival\":599,\"cutoff\":600,\"verified\":true}` → 결과 `{\"temporalEligibility\":true,\"finalAvailableStock\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cutLate: 입력 `{\"arrival\":601,\"cutoff\":600,\"verified\":true}` → 결과 `{\"stillExists\":true,\"temporalEligibility\":false,\"finalAvailableStock\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cutFailed: 입력 `{\"arrival\":600,\"cutoff\":600,\"verified\":false}` → 결과 `{\"temporalEligibility\":false,\"finalAvailableStock\":null}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cutUnknown: 입력 `{\"arrival\":600,\"cutoff\":600,\"verified\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cutEqualMissingCustodian: 입력 `{\"arrival\":600,\"cutoff\":600,\"verified\":true,\"currentCustodianConfirmed\":false,\"receiverConfirmed\":true,\"identityCustodyRightsValid\":true}` → 결과 `{\"temporalEligibility\":true,\"receiptComplete\":false,\"finalAvailableStock\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b92",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-RELATION-CLASS — 방향성 신뢰 분류"
+        }
+      ]
+    },
+    {
+      "id": "source.b93",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 서울 승인 범위. 소유: D07."
+        }
+      ]
+    },
+    {
+      "id": "source.b94",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `friend=T>=25;enemy=T<=-25;nemesis=T<=-50`. 입력: directed known T[A,B]. 출력 단위: three independent booleans."
+        }
+      ]
+    },
+    {
+      "id": "source.b95",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 방향성 신뢰가 알려져야 한다. 적과 숙적은 함께 참일 수 있고 배타 표시 우선순위를 만들지 않는다. 증감·감쇠·대칭·권한은 별도다."
+        }
+      ]
+    },
+    {
+      "id": "source.b96",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "trust24: 입력 `{\"T\":24}` → 결과 `{\"friend\":false,\"enemy\":false,\"nemesis\":false}`. 각 포함 문턱을 독립적으로 비교했다. 신뢰 변화나 새 권한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "trust25: 입력 `{\"T\":25}` → 결과 `{\"friend\":true,\"enemy\":false,\"nemesis\":false}`. 각 포함 문턱을 독립적으로 비교했다. 신뢰 변화나 새 권한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "trust-24: 입력 `{\"T\":-24}` → 결과 `{\"friend\":false,\"enemy\":false,\"nemesis\":false}`. 각 포함 문턱을 독립적으로 비교했다. 신뢰 변화나 새 권한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "trust-25: 입력 `{\"T\":-25}` → 결과 `{\"friend\":false,\"enemy\":true,\"nemesis\":false}`. 각 포함 문턱을 독립적으로 비교했다. 신뢰 변화나 새 권한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "trust-49: 입력 `{\"T\":-49}` → 결과 `{\"friend\":false,\"enemy\":true,\"nemesis\":false}`. 각 포함 문턱을 독립적으로 비교했다. 신뢰 변화나 새 권한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "trust-50: 입력 `{\"T\":-50}` → 결과 `{\"friend\":false,\"enemy\":true,\"nemesis\":true}`. 각 포함 문턱을 독립적으로 비교했다. 신뢰 변화나 새 권한이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "trustUnknown: 입력 `{\"T\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b97",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-NEGOTIATION-V — 협상 요구·제공 값"
+        }
+      ]
+    },
+    {
+      "id": "source.b98",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 서울 승인 범위. 소유: D17."
+        }
+      ]
+    },
+    {
+      "id": "source.b99",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `V=sum(demandPrices)-sum(offerPrices)`. 입력: registered same-snapshot prices. 출력 단위: price-score, not W/money."
+        }
+      ]
+    },
+    {
+      "id": "source.b100",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: 모든 가격이 동일 전쟁·안 판본·스냅샷에 등록되어야 한다. 미등록 가격과 수락 계수는 미정이며 V<=W는 자동 수락이 아니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b101",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "vKnown: 입력 `{\"demands\":[17,8],\"offers\":[6],\"registered\":true,\"sameSnapshot\":true}` → 결과 `{\"V\":19,\"acceptance\":null}`. 등록 요구 합에서 제공 합을 뺐다. 알려진 0과 미등록 미정은 다르며 수락은 별도다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "vZero: 입력 `{\"demands\":[17],\"offers\":[17],\"registered\":true,\"sameSnapshot\":true}` → 결과 `{\"V\":0,\"acceptance\":null}`. 등록 요구 합에서 제공 합을 뺐다. 알려진 0과 미등록 미정은 다르며 수락은 별도다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "vUnknown: 입력 `{\"demands\":[17,null],\"offers\":[6],\"registered\":false,\"sameSnapshot\":true}` → 결과 `{\"status\":\"unresolved\",\"value\":null,\"signatureBlocked\":true}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "vStale: 입력 `{\"demands\":[17,8],\"offers\":[6],\"registered\":true,\"sameSnapshot\":false}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b102",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-W-ENDPOINT — 전쟁 점수 끝점"
+        }
+      ]
+    },
+    {
+      "id": "source.b103",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 서울 승인 범위. 소유: D16/D17."
+        }
+      ]
+    },
+    {
+      "id": "source.b104",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "식: `valid cause and beneficiary: abs(W)<100 negotiation eligible; W=100 force victory; W=-100 force defeat`. 입력: known W in -100..100, cause/beneficiary facts. 출력 단위: symbolic mode."
+        }
+      ]
+    },
+    {
+      "id": "source.b105",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "한계: W는 −100..100의 알려진 값이어야 한다. 명분·수혜자 유효성을 먼저 확인한다. 합성·상한 보정·가격·수락·동시 우선순위를 새로 정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b106",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "w99: 입력 `{\"W\":99,\"cause\":true,\"beneficiary\":true}` → 결과 `{\"mode\":\"negotiation-eligible\",\"acceptance\":null}`. 유효성부터 확인한 뒤 정확한 끝점 또는 내부 구간을 구분했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "w100: 입력 `{\"W\":100,\"cause\":true,\"beneficiary\":true}` → 결과 `{\"mode\":\"force-victory\"}`. 유효성부터 확인한 뒤 정확한 끝점 또는 내부 구간을 구분했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "wMinus100: 입력 `{\"W\":-100,\"cause\":true,\"beneficiary\":true}` → 결과 `{\"mode\":\"force-defeat\"}`. 유효성부터 확인한 뒤 정확한 끝점 또는 내부 구간을 구분했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "wInvalidCause: 입력 `{\"W\":100,\"cause\":false,\"beneficiary\":true}` → 결과 `{\"mode\":\"invalidity-first\",\"endpointEffect\":null}`. 유효성부터 확인한 뒤 정확한 끝점 또는 내부 구간을 구분했다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "wOutside: 입력 `{\"W\":101,\"cause\":true,\"beneficiary\":true}` → 결과 `{\"status\":\"invalid-input\",\"value\":null}`. 입력의 형태·범위·보존 조건을 위반하므로 결과를 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "wUnknown: 입력 `{\"W\":null,\"cause\":true,\"beneficiary\":true}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 필수 입력이나 적용 규칙이 없어 결과를 미정으로 유지한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b107",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-SINGLE-RESULT — 단일 종결·결과 ID"
+        }
+      ]
+    },
+    {
+      "id": "source.b108",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유: D18/D17. 식: `Any ResultId is applied at most once; settlementCount changes only for an actual valid war-closure result under current authority/order/version; other results do not close the war`."
+        }
+      ]
+    },
+    {
+      "id": "source.b109",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "새 ResultId 자체는 전쟁 종결 근거가 아니다. 실제로 유효한 전쟁 종결 결과이며 권한·판본·사건 순서가 갖춰진 경우에만 종결 정산 수가 변한다. 일반 결과는 한 번 적용되어도 전쟁을 닫지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b110",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "resultNew: 입력 `{\"id\":\"R-a\",\"applied\":[],\"closed\":false,\"validBoundary\":true,\"actualValidWarClosureResult\":true,\"priorSettlementCount\":0}` → 결과 `{\"effect\":\"apply-once\",\"settlementCount\":1}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resultRepeat: 입력 `{\"id\":\"R-a\",\"applied\":[\"R-a\"],\"closed\":true,\"validBoundary\":true,\"actualValidWarClosureResult\":true,\"priorSettlementCount\":1}` → 결과 `{\"effect\":\"no-new-effect\",\"settlementCount\":1}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resultClosed: 입력 `{\"id\":\"R-b\",\"applied\":[\"R-a\"],\"closed\":true,\"validBoundary\":true,\"actualValidWarClosureResult\":true,\"priorSettlementCount\":1}` → 결과 `{\"effect\":\"no-new-effect\",\"settlementCount\":1}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resultUnknown: 입력 `{\"id\":\"R-a\",\"applied\":[],\"closed\":false,\"validBoundary\":null,\"actualValidWarClosureResult\":true,\"priorSettlementCount\":0}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "resultNonClosure: 입력 `{\"id\":\"R-note\",\"applied\":[],\"closed\":false,\"validBoundary\":true,\"actualValidWarClosureResult\":false,\"priorSettlementCount\":0}` → 결과 `{\"effect\":\"apply-once-nonclosure\",\"settlementCount\":0,\"warClosed\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b111",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "부담 행은 BL 배수 1/2/3/6/10, 이동 계수 1/0.8/0.6/0.4/0.2, 회피 보정 0/−1/−2/−3/−4다. 실제 짐이 어느 행에 속하는지와 구체 반올림·최저 이동은 이 미리보기만으로 결정하지 않는다. 기초 속도·이동·회피의 기본값도 역산하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b112",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "축약 거리 표는 yd 단위로 2:0, 3:-1, 5:-2, 7:-3, 10:-4, 15:-5, 20:-6, 30:-7, 50:-8, 70:-9, 100:-10, 150:-11, 200:-12, 300:-13, 500:-14, 700:-15이다. 첫 행만 2 yd 이하를 명시한다. 중간 거리의 행 선택과 700 yd 이후 값은 전체 표 규칙을 요구한다. 명중 위치는 몸통 0, 팔/다리 −2, 사타구니 −3, 손 −4, 얼굴 −5, 두개골 −7이며 Imp/Pi 공격의 급소 −3·눈 −9는 조건부 표기다. 이 값으로 방호 위치·부상 배율을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b113",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "일반 비용 올림과 행동·전투 내림에는 해당 규칙의 예외가 우선한다. BL이나 실제 이동의 구체 예외를 모르는 상황에서 일반 관례를 적용해 확정 결과를 만들지 않는다. 소개부 3d 비교는 전체 성공·실패 분류가 아니므로 극단 주사위의 치명 결과를 추가하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b114",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인구 보존은 출생·사망·이주·포획이 없는 표현 이동에 한한다. 예약 경계 허용은 같은 사람의 양의 구간 점유만 정하며 영시간 행동 정책은 미정이고 장비·시설 용량도 보장하지 않는다. 마감 포함은 시간상 자격만 정하며 최종 가용 재고는 별도 인수·신원·보관·권리 조건을 요구한다. 양측 확인은 미채택 조건부 제안으로 계산한다. 신뢰 −50은 적과 숙적 조건을 함께 만족하며 배타 표시 우선순위를 새로 정하지 않는다. V와 W는 별도 수이고 가격 미등록은 무료가 아니다. 유효 명분·수혜자를 먼저 확인한 뒤 ±100을 처리하며 같은 시각 사건 종류의 미정 우선순위를 만들어 승자를 결정하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b115",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SEOUL-CARGO-RECEIPT-GUARDS — 화물 인수의 양측 확인 제안(미채택)"
+        }
+      ]
+    },
+    {
+      "id": "source.b116",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미채택 조건부 제안. 소유: D06/D13. 식: `receiptComplete=currentCustodianConfirmed AND receiverConfirmed; finalAvailable requires temporal eligibility AND receiptComplete AND identity/custody/rights AND all other applicable receipt conditions`."
+        }
+      ]
+    },
+    {
+      "id": "source.b117",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "추가 보관자 확인은 미채택 제안이다. 다음 사례는 현재 보관 책임자 확인 AND 수령자 확인을 모두 요구한다고 가정한 미채택 조건부 모델이다. 실제 선택 자료는 수령자 확인 서명만 직접 뒷받침한다. 이를 수령자 확인 하나만으로 최종 재고가 가용해진다는 규칙으로 약화하지도 않는다. 신원·보관·권리 조건과 인증 규약은 별도로 남는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b118",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-false-false: 입력 `{\"currentCustodianConfirmed\":false,\"receiverConfirmed\":false,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-false-true: 입력 `{\"currentCustodianConfirmed\":false,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-true-false: 입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":false,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-true-true: 입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":true,\"finalAvailableStock\":true}`. 이 결과는 위에서 한정한 식·상태 조건의 계산이며 추가 정책을 뜻하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미채택 양측 확인 제안 사례. receipt-rights-missing: 입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":null,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":true,\"finalAvailableStock\":null,\"status\":\"unresolved\"}`. 미정 정책이나 전제는 0·금지·성공으로 대체하지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b119",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D01–D18 소비 지도"
+        }
+      ]
+    },
+    {
+      "id": "source.b120",
+      "kind": "table",
+      "header": [
+        "영역",
+        "시트·식",
+        "상태 계약",
+        "남은 공백"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "D01 인물·능력·특성·시트",
+          "identity, attributes, mobility, languageCulture, traits, skills, CP; REF-BL, REF-INTRO-3D, REF-ROUND-COST",
+          "stable IDs preserve identity; names are search clues, not identity",
+          "Costs, derived bases, skill defaults and CP allocations"
+        ],
+        [
+          "D02 생활·욕구·건강·기분",
+          "health, traits; 수치 식 없음",
+          "current HP/FP separate from maximum; injury does not delete identity",
+          "Injury/shock/recovery, needs and fatigue coefficients"
+        ],
+        [
+          "D03 행동·명령·권한·일정",
+          "identity; SEOUL-RESERVATION",
+          "remote command requires delivery and acceptance; authority and physical feasibility separate",
+          "Delivery durations, acceptance, priority and cancellation rules"
+        ],
+        [
+          "D04 노동·인구·고용·배급",
+          "identity, attributes, health, skills; SEOUL-POPULATION, SEOUL-RESERVATION",
+          "individualization/return preserve same IDs; available workforce excludes individualized people",
+          "Wages/rations/shortage, return eligibility and capacity conversion"
+        ],
+        [
+          "D05 경제·생산·건설·자원",
+          "equipment; SEOUL-CUTOFF, SEOUL-RESERVATION",
+          "completed progress and consumed inputs survive cancellation; unused inputs handled by contract",
+          "Production yields, duration, power and storage timing"
+        ],
+        [
+          "D06 이동·화물·지도·관측",
+          "mobility, equipment, health, skills; REF-BL, REF-ENCUMBRANCE, SEOUL-CARGO-CONSERVATION, SEOUL-CUTOFF, SEOUL-CARGO-RECEIPT-GUARDS",
+          "Selected receiver confirmation is documented; extra current-custodian confirmation is unadopted engineering proposal. Existing cases model both parties conditionally; cutoff alone never supplies final availability or rights.",
+          "World travel time, fatigue, paths, receipt protocol and map aging"
+        ],
+        [
+          "D07 관계·기억·충성·평가",
+          "identity, traits; SEOUL-RELATION-CLASS, SEOUL-SINGLE-RESULT",
+          "unobserved event cannot update observer trust; trust is not authority",
+          "Change/decay/duration and evaluation coefficients"
+        ],
+        [
+          "D08 가문·친족·혼인·양자",
+          "identity; 수치 식 없음",
+          "existing valid marriage/family facts persist; new formation requires applicable institution and evidence",
+          "Country marriage/adoption eligibility, consent effects and shares"
+        ],
+        [
+          "D09 국가·정부·기관·정통성",
+          "identity; 수치 식 없음",
+          "office vacancy stops that office authority only; living personal contracts remain separate",
+          "Country office eligibility/election/regency and legitimacy coefficients"
+        ],
+        [
+          "D10 작위·권리·명분·인준",
+          "identity; SEOUL-W-ENDPOINT",
+          "claim/legal right/effective occupation differ; valid cause and named beneficiary required",
+          "Claim lists, creation cost, recognized institution and persistence effects"
+        ],
+        [
+          "D11 수여·위임·회수·봉신",
+          "identity; 수치 식 없음",
+          "appointment changes office powers, delegation preserves original holder, grant changes specified right",
+          "Country ratification/revocation and contract termination details"
+        ],
+        [
+          "D12 후계·사망·본체 전환",
+          "identity, health; 수치 식 없음",
+          "detention while alive is not death inheritance; body/office/property transitions separate",
+          "Successor eligibility, no-successor continuation and explicit return authority"
+        ],
+        [
+          "D13 자산·채무·상속·인도",
+          "identity, equipment; SEOUL-CARGO-CONSERVATION, SEOUL-SINGLE-RESULT",
+          "signature/legal ownership/custody/physical delivery separate; collateral survives transfer",
+          "Inheritance shares, family laws, debt priority and partial-delivery remedies"
+        ],
+        [
+          "D14 지식, 교육, 기술, 복구",
+          "skills, languageCulture; 수치 식 없음",
+          "record access or inheritance is not learned skill; actual accrued progress survives teacher death",
+          "Study duration/cost, skill-cost progression and qualification conversion"
+        ],
+        [
+          "D15 전투, 지휘, 분대, 정원",
+          "attributes, health, mobility, weapons, equipment, skills; REF-INTRO-3D, REF-ENCUMBRANCE, REF-RANGE-SUBSET, REF-HIT-LOCATION-SUBSET, REF-ROUND-FEAT, SEOUL-POPULATION, SEOUL-RESERVATION",
+          "actual arrival to active battle permits reinforcement; arrival does not grant command rights",
+          "Base defenses, ST damage, DR injury, critical rules, squad losses, capacity and Spear15/16"
+        ],
+        [
+          "D16 외교·전쟁·공성·포로",
+          "identity, health; SEOUL-W-ENDPOINT, SEOUL-SINGLE-RESULT",
+          "cause and beneficiary revalidated before endpoints; occupied land not automatic legal ownership",
+          "Occupation denominator/rate, diplomacy costs, treaty and captive rules"
+        ],
+        [
+          "D17 협상·거래·강화·계약",
+          "identity, equipment; SEOUL-NEGOTIATION-V, SEOUL-W-ENDPOINT, SEOUL-SINGLE-RESULT",
+          "acceptance/signature/settlement/delivery are distinct; pending reevaluation is not performed invalidation; explicit authorized repricing and invalidation event required",
+          "Price and acceptance functions, reservation timing, remedies and simultaneous admission priority"
+        ],
+        [
+          "D18 시간·사건·캠페인·저장",
+          "identity; SEOUL-CUTOFF, SEOUL-SINGLE-RESULT",
+          "save at committed boundary; incompatible/corrupt load is explicit error and preserves live state",
+          "Tick/phase values, simultaneous final order, save-error limit and migration contract"
+        ]
+      ]
+    },
+    {
+      "id": "source.b121",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "비수치 영역의 독립 상태 사례"
+        }
+      ]
+    },
+    {
+      "id": "source.b122",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D01"
+        }
+      ]
+    },
+    {
+      "id": "source.b123",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"nameChanged\":true,\"id\":\"P-a\"}` → 결과 `{\"samePerson\":true}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b124",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D02"
+        }
+      ]
+    },
+    {
+      "id": "source.b125",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"identity\":\"P-a\",\"injured\":true}` → 결과 `{\"identity\":\"P-a\",\"automaticDeletion\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b126",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D03"
+        }
+      ]
+    },
+    {
+      "id": "source.b127",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"remote\":true,\"received\":false}` → 결과 `{\"execution\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b128",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D04"
+        }
+      ]
+    },
+    {
+      "id": "source.b129",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"individualized\":true}` → 결과 `{\"aggregateAvailableLabor\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b130",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D05"
+        }
+      ]
+    },
+    {
+      "id": "source.b131",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"progressCompleted\":true,\"cancelled\":true}` → 결과 `{\"progressPreserved\":true,\"automaticRefund\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b132",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D06"
+        }
+      ]
+    },
+    {
+      "id": "source.b133",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "아래 양측 확인 사례는 미채택 공학 제안의 조건부 결과다. 실제 선택된 수령자 확인 사실과 제안된 추가 보관자 확인을 구분한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b134",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"currentCustodianConfirmed\":false,\"receiverConfirmed\":false,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 양측 확인과 별도 가용 조건을 각각 검사하며 알려지지 않은 조건은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"currentCustodianConfirmed\":false,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 양측 확인과 별도 가용 조건을 각각 검사하며 알려지지 않은 조건은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":false,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":false,\"finalAvailableStock\":false}`. 양측 확인과 별도 가용 조건을 각각 검사하며 알려지지 않은 조건은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":true,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":true,\"finalAvailableStock\":true}`. 양측 확인과 별도 가용 조건을 각각 검사하며 알려지지 않은 조건은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"currentCustodianConfirmed\":true,\"receiverConfirmed\":true,\"temporalEligibility\":true,\"identityCustodyRightsValid\":null,\"otherReceiptConditions\":true}` → 결과 `{\"receiptComplete\":true,\"finalAvailableStock\":null,\"status\":\"unresolved\"}`. 양측 확인과 별도 가용 조건을 각각 검사하며 알려지지 않은 조건은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 양측 확인과 별도 가용 조건을 각각 검사하며 알려지지 않은 조건은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b135",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D07"
+        }
+      ]
+    },
+    {
+      "id": "source.b136",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"eventObserved\":false}` → 결과 `{\"trustUpdatedByEvent\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b137",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D08"
+        }
+      ]
+    },
+    {
+      "id": "source.b138",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"validExistingMarriage\":true,\"newLawInputMissing\":true}` → 결과 `{\"existingMarriagePreserved\":true,\"newMarriageResult\":null}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b139",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D09"
+        }
+      ]
+    },
+    {
+      "id": "source.b140",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"alive\":true,\"officeLost\":true}` → 결과 `{\"officeAuthority\":false,\"automaticPropertyTransfer\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b141",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D10"
+        }
+      ]
+    },
+    {
+      "id": "source.b142",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"claim\":true,\"validCause\":false}` → 결과 `{\"warCreated\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b143",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D11"
+        }
+      ]
+    },
+    {
+      "id": "source.b144",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"delegation\":true}` → 결과 `{\"holderChanged\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b145",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D12"
+        }
+      ]
+    },
+    {
+      "id": "source.b146",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"alive\":true,\"permanentlyDetained\":true}` → 결과 `{\"deathInheritanceOpened\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b147",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D13"
+        }
+      ]
+    },
+    {
+      "id": "source.b148",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"signed\":true,\"physicallyDelivered\":false}` → 결과 `{\"deliveryComplete\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b149",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D14"
+        }
+      ]
+    },
+    {
+      "id": "source.b150",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"documentInherited\":true,\"practiceKnown\":false}` → 결과 `{\"skillLevelDerived\":null}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b151",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D15"
+        }
+      ]
+    },
+    {
+      "id": "source.b152",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"battleActive\":true,\"actuallyArrived\":true,\"commandScope\":false}` → 결과 `{\"reinforcementEligible\":true,\"commandAuthority\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b153",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D16"
+        }
+      ]
+    },
+    {
+      "id": "source.b154",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"W\":100,\"causeValid\":false}` → 결과 `{\"forceVictoryApplied\":false}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b155",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D17"
+        }
+      ]
+    },
+    {
+      "id": "source.b156",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "관련 상태 변경만으로 옛 수락이 자동 무효가 되지는 않는다. 명시적 권한 있는 재평가·가격 재산정과 새 스냅샷/판본 및 실제 무효화 사건이 수행된 경우와 요청 대기 중인 경우를 나눈다."
+        }
+      ]
+    },
+    {
+      "id": "source.b157",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"acceptedOldSnapshot\":true,\"relevantStateChanged\":true,\"explicitAuthorizedRepricingPerformed\":true,\"newSnapshotVersion\":true,\"explicitInvalidationEvent\":true}` → 결과 `{\"reevaluationState\":\"performed\",\"oldAcceptanceValid\":false,\"renewedSettlement\":null}`. 수행된 사건 없는 무효화나 새 정산을 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"acceptedOldSnapshot\":true,\"relevantStateChanged\":true,\"explicitAuthorizedRepricingPerformed\":false,\"newSnapshotVersion\":false,\"explicitInvalidationEvent\":false}` → 결과 `{\"reevaluationState\":\"pending-request\",\"automaticInvalidation\":false,\"oldAcceptanceValidityForChangedState\":null,\"renewedSettlement\":null}`. 수행된 사건 없는 무효화나 새 정산을 만들지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 수행된 사건 없는 무효화나 새 정산을 만들지 않는다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b158",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STATE-D18"
+        }
+      ]
+    },
+    {
+      "id": "source.b159",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"loadCorrupt\":true}` → 결과 `{\"liveStateMutated\":false,\"explicitError\":true}`. 이 영역의 상태 계약에 따라 입력 사실과 별개인 권한·신원·물질·이행 상태를 자동으로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력 `{\"prerequisiteFacts\":null}` → 결과 `{\"status\":\"unresolved\",\"value\":null}`. 전제 사실이 미정이면 새 사실이나 효과를 만들지 않고 기존 유효 상태를 보존한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b160",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "출처와 재사용 범위"
+        }
+      ]
+    },
+    {
+      "id": "source.b161",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원작의 짧은 인용과 PDF 쪽 번호·인쇄 쪽 번호·텍스트 좌표는 formulas.json의 referenceEvidence에 있다. 좌표는 쪽별 pdftotext -layout의 1부터 시작하는 행·열이며 그림 좌표가 아니다. PDF 18쪽의 “BASIC LIFT (ST × ST)/5”, PDF 19쪽의 “For complete table, see p. 550.”, PDF 10쪽의 “If your roll is less than or equal”, PDF 11쪽의 “Exceptions and special cases”를 구분해서 읽는다. 원본 PDF나 시트 그림은 재배포하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b162",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "서울 근거는 인구의 actor-authority-labor.20261003.transitions, 도착의 economy-owner.20261003.arrival, 신뢰의 sp1.b79, 협상의 sp1.b122와 sp1.b124–127, 끝점의 sp1.b119·sp1.b121, 결과 재적용 방지의 sp1.b13·sp1.b93이다. 반개방 예약은 같은 시각 전환을 허용한 명시 응답 범위다. 자료형 모델에 이러한 규칙이 들어 있어도 기획 전체의 미정 수치·국가별 법·실행 구현을 승인하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b163",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "영역별 기록 칸"
+        }
+      ]
+    },
+    {
+      "id": "source.b164",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D01 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b165",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`capabilityRevision`: `string`; 단위 `version`. 소유 D01; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`sourceStatus`: `string`; 단위 `evidence-status`. 소유 D01; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b166",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D02 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b167",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`needs`: `array[{kind:string,fulfillment:number|null}]`; 단위 `fulfillment unit unspecified`. 소유 D02; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`injuries`: `array[{kind:string,state:string}]`; 단위 `state`. 소유 D02; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`mood`: `number`; 단위 `unspecified; not trust`. 소유 D02; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`fatigueEffects`: `object`; 단위 `coefficients unspecified`. 소유 D02; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b168",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D03 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b169",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`commandId`: `string`; 단위 `identifier`. 소유 D03; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`sender`: `string`; 단위 `character-ID`. 소유 D03; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`recipient`: `string`; 단위 `character-ID`. 소유 D03; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`receiptState`: `string`; 단위 `state`. 소유 D03; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`reservationIntervals`: `array[{personId:string,start:number,end:number}]`; 단위 `world-tick`. 소유 D03; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`authorityScope`: `string`; 단위 `scope`. 소유 D03; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b170",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D04 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b171",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`aggregateIds`: `array[string]`; 단위 `person-ID`. 소유 D04; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`individualIds`: `array[string]`; 단위 `person-ID`. 소유 D04; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`aggregateCount`: `integer`; 단위 `persons`. 소유 D04; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`individualCount`: `integer`; 단위 `persons`. 소유 D04; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`laborReservations`: `array[object]`; 단위 `same-person world intervals`. 소유 D04; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`rationsDelivered`: `array[object]`; 단위 `registered item units; quantities unknown`. 소유 D04; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b172",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D05 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b173",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`jobId`: `string`; 단위 `identifier`. 소유 D05; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`completedProgress`: `object`; 단위 `stage-specific units unspecified`. 소유 D05; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`consumedMaterials`: `array[object]`; 단위 `registered material units`. 소유 D05; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`unusedReservedInputs`: `array[object]`; 단위 `registered material units`. 소유 D05; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`storageReservation`: `object`; 단위 `capacity unit unspecified`. 소유 D05; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b174",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D06 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b175",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`cargoId`: `string`; 단위 `identifier`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`originId`: `string`; 단위 `identifier`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`parentState`: `string`; 단위 `active/retired history`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`materialAtoms`: `array[string]`; 단위 `same indivisible material identity`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`quantity`: `number`; 단위 `registered same material unit`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`ownerId`: `string`; 단위 `legal-owner-ID`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`custodianId`: `string`; 단위 `custodian-ID`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`actualLocation`: `string`; 단위 `location-ID`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`verifiedArrivalAt`: `number`; 단위 `world-tick`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`receiverCountersign`: `object|null`; 단위 `confirmation evidence`. 소유 D06; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b176",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`currentCustodianConfirmation`: `object|null`; 수령자 확인과 별개인 추가 보관자 확인 제안 칸이며 미채택이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`identityCustodyRightsValid`: `boolean|null`; 적용되는 신원·보관·권리 검사의 알려진 결과다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`temporalEligibility`: `boolean|null`; 마감 시간상 자격만 표시한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`finalAvailableStock`: `boolean|null`; 모든 인수·보관·권리·시간 조건을 충족했는지 표시하며 미정은 null이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b177",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D07 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b178",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`trust`: `array[{from:string,to:string,value:number|null}]`; 단위 `directed T`. 소유 D07; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`loyalty`: `number`; 단위 `0..100 separate from trust`. 소유 D07; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`memoryEvents`: `array[object]`; 단위 `known events with observation time`. 소유 D07; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`evaluationDelta`: `number`; 단위 `unspecified-not-zero`. 소유 D07; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b179",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D08 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b180",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`existingFamilyFacts`: `array[object]`; 단위 `valid relationship facts`. 소유 D08; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`consentEvidence`: `array[string]`; 단위 `evidence-ID`. 소유 D08; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`applicableInstitution`: `string`; 단위 `institution-version`. 소유 D08; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`newFormationState`: `string`; 단위 `state`. 소유 D08; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b181",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D09 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b182",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`officeId`: `string`; 단위 `identifier`. 소유 D09; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`currentHolder`: `string`; 단위 `person-ID`. 소유 D09; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`officeVacant`: `boolean`; 단위 `state`. 소유 D09; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`officeAuthority`: `array[string]`; 단위 `scope`. 소유 D09; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`countryInstitutionVersion`: `string`; 단위 `version`. 소유 D09; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b183",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D10 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b184",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`claimId`: `string`; 단위 `identifier`. 소유 D10; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`registeredCause`: `string`; 단위 `cause-version-ID`. 소유 D10; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`namedBeneficiary`: `string`; 단위 `person-ID`. 소유 D10; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`legalRight`: `object`; 단위 `state`. 소유 D10; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`effectiveControl`: `object`; 단위 `state`. 소유 D10; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b185",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D11 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b186",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`grantContract`: `string`; 단위 `contract-ID`. 소유 D11; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`delegatedScope`: `array[string]`; 단위 `scope`. 소유 D11; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`originalHolder`: `string`; 단위 `person-ID`. 소유 D11; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`ratificationEvidence`: `array[string]`; 단위 `evidence-ID`. 소유 D11; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`revocationClause`: `object`; 단위 `contract-clause`. 소유 D11; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b187",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D12 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b188",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`alive`: `boolean`; 단위 `state`. 소유 D12; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`detentionState`: `string`; 단위 `state`. 소유 D12; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`designatedSuccessor`: `string`; 단위 `person-ID`. 소유 D12; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`controlledBody`: `string`; 단위 `person-ID; single`. 소유 D12; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`returnHandoffAuthority`: `object`; 단위 `unspecified-authority`. 소유 D12; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b189",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D13 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b190",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`assetId`: `string`; 단위 `identifier`. 소유 D13; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`legalOwner`: `string`; 단위 `owner-ID`. 소유 D13; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`custodian`: `string`; 단위 `custodian-ID`. 소유 D13; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`debtAndCollateral`: `array[object]`; 단위 `registered obligations; amounts unspecified`. 소유 D13; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`inheritanceState`: `string`; 단위 `state`. 소유 D13; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`deliveryState`: `string`; 단위 `state`. 소유 D13; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b191",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D14 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b192",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`recordAccess`: `array[string]`; 단위 `record-ID`. 소유 D14; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`actualLearningProgress`: `object`; 단위 `technology-specific unit unspecified`. 소유 D14; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`teacherId`: `string`; 단위 `person-ID`. 소유 D14; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`requirements`: `array[object]`; 단위 `skill-specific prerequisites`. 소유 D14; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`qualificationState`: `string`; 단위 `state`. 소유 D14; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b193",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D15 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b194",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`battleId`: `string`; 단위 `identifier`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`battleActive`: `boolean`; 단위 `state`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`squadMembers`: `array[string]`; 단위 `person-ID`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`actuallyArrived`: `boolean`; 단위 `state`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`commandScope`: `array[string]`; 단위 `squad-ID`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`capacity`: `integer`; 단위 `persons; formula unspecified`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`compliance`: `string`; 단위 `state`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`performance`: `object`; 단위 `unspecified units`. 소유 D15; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b195",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D16 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b196",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`warId`: `string`; 단위 `identifier`. 소유 D16; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`W`: `number`; 단위 `war-score -100..100`. 소유 D16; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`causeValid`: `boolean`; 단위 `current-state`. 소유 D16; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`beneficiaryValid`: `boolean`; 단위 `current-state`. 소유 D16; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`occupation`: `object`; 단위 `physical-control state`. 소유 D16; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`prisonerCustody`: `array[object]`; 단위 `person custody not goods`. 소유 D16; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b197",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D17 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b198",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`proposalVersion`: `string`; 단위 `version`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`snapshotId`: `string`; 단위 `identifier`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`demandPrices`: `array[number|null]`; 단위 `registered price-score`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`offerPrices`: `array[number|null]`; 단위 `registered price-score`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`priceVersion`: `string`; 단위 `version`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`acceptanceState`: `string`; 단위 `explicit-response-state`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`settlementResultId`: `string`; 단위 `ResultId`. 소유 D17; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b199",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D18 기록"
+        }
+      ]
+    },
+    {
+      "id": "source.b200",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`ruleVersion`: `string`; 단위 `version`. 소유 D18; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`acceptedEventOrder`: `array[string]`; 단위 `event-ID order; rule unspecified`. 소유 D18; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`appliedResultIds`: `array[string]`; 단위 `ResultId`. 소유 D18; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`committedBoundary`: `object`; 단위 `consistent-state-boundary`. 소유 D18; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`loadDiagnostics`: `array[object]`; 단위 `explicit error set`. 소유 D18; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`tickScale`: `number`; 단위 `unspecified-not-zero`. 소유 D18; 해당 영역 상태 계약에 근거한 독자 자료형이며 초기 값은 미정이다."
+          }
+        ]
+      ]
+    }
+  ]
+}
