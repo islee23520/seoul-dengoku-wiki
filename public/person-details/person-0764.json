@@ -382,8 +382,8 @@
         "cp": 0
       },
       "IQ": {
-        "value": 11,
-        "cp": 20
+        "value": 10,
+        "cp": 0
       },
       "HT": {
         "value": 10,
@@ -395,23 +395,23 @@
       {
         "name": "Administration",
         "ko": "행정·기록",
-        "level": 13,
+        "level": 12,
         "cp": 8
       }
     ],
     "cp": {
-      "attributes": 20,
+      "attributes": 0,
       "advantages": 0,
       "disadvantages": 0,
       "skills": 8,
-      "spent": 28,
-      "unspent": 47,
+      "spent": 8,
+      "unspent": 67,
       "total": 75
     },
     "secondary": {
       "HP": 10,
-      "Will": 11,
-      "Per": 11,
+      "Will": 10,
+      "Per": 10,
       "FP": 10,
       "BasicSpeed": 5,
       "BasicMove": 5,

@@ -382,8 +382,8 @@
         "cp": 0
       },
       "IQ": {
-        "value": 12,
-        "cp": 40
+        "value": 11,
+        "cp": 20
       },
       "HT": {
         "value": 10,
@@ -393,15 +393,9 @@
     "traits": [],
     "skills": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
         "name": "Observation",
         "ko": "관찰(경비·순찰)",
-        "level": 14,
+        "level": 13,
         "cp": 8
       },
       {
@@ -412,18 +406,18 @@
       }
     ],
     "cp": {
-      "attributes": 40,
+      "attributes": 20,
       "advantages": 0,
       "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
+      "skills": 12,
+      "spent": 32,
+      "unspent": 43,
       "total": 75
     },
     "secondary": {
       "HP": 10,
-      "Will": 12,
-      "Per": 12,
+      "Will": 11,
+      "Per": 11,
       "FP": 10,
       "BasicSpeed": 5,
       "BasicMove": 5,
