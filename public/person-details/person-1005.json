@@ -102,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정일환",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진양",
+          "clan": "c815-c9c4-c591-912d"
+        },
         "birthDate": "2060-06-17",
         "deathDate": "2112-04-09",
         "status": "authored",
@@ -237,6 +242,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정서영",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진양",
+          "clan": "c815-c9c4-c591-912d"
+        },
         "birthDate": "2030-06-17",
         "deathDate": null,
         "status": "authored",
@@ -271,6 +281,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정서윤",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진양",
+          "clan": "c815-c9c4-c591-912d"
+        },
         "birthDate": "2000-06-17",
         "deathDate": null,
         "status": "authored",
@@ -370,6 +385,7 @@
         "from": "FH-K1005-X정일환-01",
         "to": "FH-EX-JEONG-ILHWAN",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -386,6 +402,7 @@
         "from": "FH-K1005-X정일환-02",
         "to": "FH-K1005-X정일환-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

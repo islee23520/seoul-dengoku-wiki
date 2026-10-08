@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "recursiveAncestorCorrections": [{"edgeId":"FH-K1005-X정일환-01:FH-EX-JEONG-ILHWAN:biological","from":"FH-K1005-X정일환-01","to":"FH-EX-JEONG-ILHWAN","before":null,"after":"father","category":"owner-derived-jeong-recursive-backpropagation","lineage":{"surname":"정","bongwan":"진양","clan":"c815-c9c4-c591-912d"},"sourceRefs":[{"path":"lore/chronology/Century-Annals.json","anchor":"/content/405"},{"path":"lore/chronology/Century-Annals.json","anchor":"/content/409"},{"path":"lore/name-pools/cast-hangnyeol.json","anchor":"/people/1012"}],"basis":"Unique validated Jinyang Jeong descendant through Jeong Ilhwan→K1005; single existing parent, matching surname, no conflicting children/clans; owner-authorized reconstruction, not historical role evidence"},{"edgeId":"FH-K1005-X정일환-02:FH-K1005-X정일환-01:biological","from":"FH-K1005-X정일환-02","to":"FH-K1005-X정일환-01","before":null,"after":"father","category":"owner-derived-jeong-recursive-backpropagation","lineage":{"surname":"정","bongwan":"진양","clan":"c815-c9c4-c591-912d"},"sourceRefs":[{"path":"lore/chronology/Century-Annals.json","anchor":"/content/405"},{"path":"lore/chronology/Century-Annals.json","anchor":"/content/409"},{"path":"lore/name-pools/cast-hangnyeol.json","anchor":"/people/1012"}],"basis":"Unique validated Jinyang Jeong descendant through Jeong Ilhwan→K1005; single existing parent, matching surname, no conflicting children/clans; owner-authorized reconstruction, not historical role evidence"}],
   "sourceBoundRoleCorrections": [
     {
       "edgeId": "FH-EX-SEONG-DOWON:K456:biological",
@@ -42570,22 +42571,6 @@
       "to": "FH-K1022-M-01",
       "parent": "정서현",
       "child": "최서완",
-      "reason": "child historical clan/bongwan absent; no paternal line fabrication"
-    },
-    {
-      "edgeId": "FH-K1005-X정일환-01:FH-EX-JEONG-ILHWAN:biological",
-      "from": "FH-K1005-X정일환-01",
-      "to": "FH-EX-JEONG-ILHWAN",
-      "parent": "정서영",
-      "child": "정일환",
-      "reason": "child historical clan/bongwan absent; no paternal line fabrication"
-    },
-    {
-      "edgeId": "FH-K1005-X정일환-02:FH-K1005-X정일환-01:biological",
-      "from": "FH-K1005-X정일환-02",
-      "to": "FH-K1005-X정일환-01",
-      "parent": "정서윤",
-      "child": "정서영",
       "reason": "child historical clan/bongwan absent; no paternal line fabrication"
     },
     {

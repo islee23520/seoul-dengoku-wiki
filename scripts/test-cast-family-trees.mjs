@@ -12,6 +12,19 @@ import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validat
 
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
 
+test('propagates Jinyang Jeong through two existing single-parent ancestor edges', async () => {
+  const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
+  const hang = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+  const issued = hang.people.find(person => person.name === '정서온')
+  const expected = { surname: issued.surname, bongwan: issued.bongwan, clan: issued.clan }
+  for (const [from, to] of [['FH-K1005-X정일환-01', 'FH-EX-JEONG-ILHWAN'], ['FH-K1005-X정일환-02', 'FH-K1005-X정일환-01']]) {
+    assert.equal(graph.edges.find(edge => edge.from === from && edge.to === to).parentRole, 'father')
+    assert.deepEqual(graph.nodes.find(node => node.id === from).lineage, expected)
+    assert.deepEqual(graph.nodes.find(node => node.id === to).lineage, expected)
+    assert.equal(graph.edges.filter(edge => edge.to === to && edge.type === 'biological').length, 1)
+  }
+})
+
 test.each(['applied-paternal-contract', 'explicit-diaspora-father', 'explicit-annals-father', 'complementary-maternal', 'owner-derived-maternal', 'owner-derived-lee-backpropagation'])('binds corrected %s roles to existing source pointers', async (category) => {
   const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
@@ -36,7 +49,7 @@ test('source-bound corrections preserve all nineteen roles through the real load
     assert.ok(correction.sourceRefs.length)
   }
   assert.equal(graph.edges.filter(edge => edge.type === 'biological').length, 5010)
-  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 3251)
+  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 3253)
 })
 
 
