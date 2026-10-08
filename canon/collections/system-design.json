@@ -4,6 +4,18 @@
   "locale": "ko-KR",
   "documents": [
     {
+      "id": "doc.Original-TRPG-Core",
+      "path": "locales/ko-KR/system-design/original-trpg-core.json",
+      "locale": "ko-KR",
+      "status": "accepted",
+      "source": {
+        "path": "system-design/Original-TRPG-Core.md",
+        "lineStart": 1,
+        "lineEnd": 23,
+        "sha256": "4d966cf48fa9dd244ec1f1c5a598791843711419026002a289398e39cbd46608"
+      }
+    },
+    {
       "id": "doc.Mechanism-D18",
       "path": "locales/ko-KR/system-design/mechanism-d18.json",
       "locale": "ko-KR",
