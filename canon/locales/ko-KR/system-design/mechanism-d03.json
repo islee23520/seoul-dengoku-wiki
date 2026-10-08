@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Mechanism-D03.md",
+    "lineStart": 1,
+    "lineEnd": 595,
+    "sha256": "2964a3fe7ee5786dd534eae5b51f03bad08f4f300ab34a7b2ee5f95ff7ed4044"
+  },
+  "document": {
+    "id": "doc.Mechanism-D03",
+    "blockIds": [
+      "d03.b1",
+      "d03.b2",
+      "d03.b3",
+      "d03.b4",
+      "d03.b5",
+      "d03.b6",
+      "d03.b7",
+      "d03.b8",
+      "d03.b9",
+      "d03.b10",
+      "d03.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "d03.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D03 명령·권한·동의·예약 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "d03.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "명령은 발신자·수신자·범위·채널·유효기간·실제 전달·동의·자원을 각각 확인한다. 권한 철회와 명령 교체는 미소비 예약만 해제하며 완료 진척과 소비를 보존한다. 호의적 반응이나 높은 지휘 기술은 동의를 대신하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d03.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d03.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[도메인 설계](mechanism-design-index-d03.md) · [개인 시트와 계산](character-sheet-formulas.md) · [저장과 판본](../rules/Save-and-Determinism.md) · [싱글플레이 계약](Singleplayer-Design-SP-1-0-0.md)"
+        }
+      ]
+    },
+    {
+      "id": "d03.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "처리 순서와 책임 경계"
+        }
+      ]
+    },
+    {
+      "id": "d03.b6",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "입력 형식·영구 ID·규칙 판본·자원 단위·보존량을 확인한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "원 요청의 정확한 재전송만 기존 영수증을 돌려주며 변경된 중복과 낡은 판본은 거부한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "취소·사망·유효한 철회 시 완료 진척과 소비는 유지하고 미소비 예약만 해제한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전략 전달은 실제 경로·수령, 전투 전달은 등록된 배속과 동일 세계시각 신호를 요구한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실행 시 위임 범위와 start≤now<end, 신체·안전·구금·현장 조건을 재검사한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명시적 동의가 없으면 보류·거절·협상 상태를 기록한다. 장애 해소는 재검사 요청일 뿐 자동 실행이 아니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "이전 명령을 지목하여 실제 전달·승인·수락된 교체만 잔여 예약을 원자적으로 교환한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d03.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정규화된 데이터·공식 계약"
+        }
+      ]
+    },
+    {
+      "id": "d03.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자, 읽기·쓰기 범위, 단위, 스냅샷과 반영 시점을 함께 선언한다. 형식과 보존식의 검증은 실제 원장 발급이나 미정 함수의 채택을 대신하지 않는다. rulesVersion과 연결 정본의 해시는 원천 판본을 식별하며 임의의 새 실행 판본을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d03.b9",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json mechanism-contract",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"domainId\": \"D03\",\n  \"mechanismId\": \"seoul.d03.commands\",\n  \"status\": \"bounded-contract-with-proposal-held\",\n  \"rulesVersion\": \"d03-closure-20261008.1\",\n  \"rulesVersionLinkage\": {\n    \"sourceRulesVersion\": \"d03-closure-20261008.1\",\n    \"contractSHA256\": \"fbe5c6a19c172175740f73cf7edb55db1a2d56cb8478ffc19a92c967c78723db\",\n    \"missingVersionPolicy\": \"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\",\n    \"canonRules\": [\n      {\n        \"documentId\": \"doc.Save-and-Determinism\",\n        \"path\": \"canon/locales/ko-KR/rules/save-and-determinism.json\",\n        \"sha256\": \"510a557e3448efb478d38ded1f21845557ac10c7fc8b56e2c0631ef455a86919\"\n      },\n      {\n        \"documentId\": \"doc.Singleplayer-Design-SP-1-0-0\",\n        \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n        \"sha256\": \"633265f37815e8d581b52426a84eec2bd1a1e987b2e05bd614b8f9752877a9bd\"\n      }\n    ],\n    \"compatibility\": \"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\"\n  },\n  \"dataOwner\": \"D03 command records; no world authority issuer implemented\",\n  \"fields\": [\n    {\n      \"name\": \"IDs\",\n      \"description\": \"nonempty stable order/proposal/event/result/sender/recipient/scope/resource IDs; no alias or renumber\",\n      \"unit\": \"stable identifier\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"actor\",\n      \"description\": \"alive/capable/safe/detained/scheduleConflict booleans; supplied D01/D02 facts, not verified world authority\",\n      \"unit\": \"predicate or record; see description\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"grant\",\n      \"description\": \"issuer=sender, grantee=recipient, exact scope/channel, finite start/end, effective revoked boolean or null unresolved external event order\",\n      \"unit\": \"predicate or record; see description\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"delivery\",\n      \"description\": \"strategic actual physical receipt plus route; battle registered matching sender/recipient/scope assignment and same-time signal\",\n      \"unit\": \"predicate or record; see description\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"consent\",\n      \"description\": \"accept|hold|refuse|negotiate|unknown; explicit recipient choice, never inferred from reaction, role or Leadership\",\n      \"unit\": \"predicate or record; see description\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"time\",\n      \"description\": \"finite world-clock-coordinate, same unit on now/start/end/receipt; no fixed rate, duration or seconds conversion\",\n      \"unit\": \"same world-clock-coordinate\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"resources\",\n      \"description\": \"safe nonnegative integers with unit 1 in same resourceId; verification tokens only, not approved gameplay prices\",\n      \"unit\": \"same-resource verification token\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    },\n    {\n      \"name\": \"null\",\n      \"description\": \"unknown; no zero, false, consent or authority substitution\",\n      \"unit\": \"predicate or record; see description\",\n      \"null\": \"unknown; never substitute zero, false, consent or authority\",\n      \"owner\": \"D03 command records; no world authority issuer implemented\",\n      \"read\": [\n        \"world revision\",\n        \"D01/D02 actor facts\",\n        \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n        \"D06 route/receipt\",\n        \"D15 battle assignment\",\n        \"recipient consent\",\n        \"same-resource ledger\",\n        \"prior result receipts\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"exact supplied world revision\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    }\n  ],\n  \"readSet\": [\n    \"world revision\",\n    \"D01/D02 actor facts\",\n    \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n    \"D06 route/receipt\",\n    \"D15 battle assignment\",\n    \"recipient consent\",\n    \"same-resource ledger\",\n    \"prior result receipts\"\n  ],\n  \"writeSet\": [\n    \"D03 status and receipt append\",\n    \"atomic same-resource reservation candidate\"\n  ],\n  \"snapshot\": {\n    \"policy\": \"exact supplied world revision\",\n    \"conflict\": \"E_REVISION, no silent refresh; distinct explicit proposal/event may retain order lineage\",\n    \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n  },\n  \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\",\n  \"orderedSteps\": [\n    \"Validate exact typed shape, rules version, units, ranges, stable identities and conserved resource ledger.\",\n    \"Reject stale revision before duplicate lookup except exact original event/result/request replay. Exact replay returns prior receipt; conflicting reuse fails without mutation.\",\n    \"Cancel/death preserve completed/consumed and original sender; release only unconsumed reserved quantity.\",\n    \"Effective revocation retains authority-blocked order and releases only unconsumed reservation. Fresh explicit authorization proposal is required to resume.\",\n    \"Strategic broken or unreceived route retains undelivered identity. Recovery is not receipt. Battle receipt requires registered assignment and uses current world time.\",\n    \"At execution recheck exact grant and start<=now<end, hard safety/incapacity/detention and physical feasibility. Same faction, title or office never substitutes for command authority.\",\n    \"Record hold/refuse/negotiate/unknown or schedule conflict without execution. Observed obstacle clearance only requests a full recheck; no periodic or automatic success.\",\n    \"Only explicitly received, authorized and accepted replacement referencing the old order cancels its unexecuted remainder and atomically exchanges unconsumed reservation. No timestamp winner or queue.\",\n    \"Append one status/result receipt. Preserve history and completed work. Do not apply trust, loyalty, damage or performance scores.\"\n  ],\n  \"formulaSheet\": [\n    {\n      \"id\": \"authority\",\n      \"expression\": \"issuer==sender && grantee==recipient && scope==order.scope && channel==order.channel && start<=now && now<end && !effectiveRevoked\",\n      \"unit\": \"boolean\",\n      \"source\": \"GP03 expiry-A and revocation-A\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"reserve\",\n      \"expression\": \"newStock=stock+oldReserved-requested; newReserved=requested\",\n      \"unit\": \"same-resource verification tokens\",\n      \"guard\": \"newStock>=0; oldReserved unconsumed; old active intent must be explicit accepted replacement\",\n      \"source\": \"GP03 superseded-orders-A\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"release\",\n      \"expression\": \"newStock=stock+reserved; newReserved=0; completed'=completed; consumed'=consumed\",\n      \"unit\": \"same-resource verification tokens\",\n      \"source\": \"GP03 revocation-A and SP1 cancellation/death\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"battle-receipt\",\n      \"expression\": \"receivedAt=now\",\n      \"unit\": \"same world clock\",\n      \"source\": \"sp1.b112\",\n      \"boundary\": \"not strategic teleportation\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"reaction-reference\",\n      \"expression\": \"reaction=sum(three explicit d6)+modifier; bands <=0,1..3,4..6,7..9,10..12,13..15,16..18,>=19\",\n      \"unit\": \"reaction score\",\n      \"source\": \"L-reaction,L-reaction-table\",\n      \"status\": \"reference-only-not-adopted-consent\",\n      \"boundary\": \"high favorable; not roll-under; even Excellent never forces acceptance\"\n    }\n  ],\n  \"rng\": {\n    \"scope\": \"none in D03 policy evaluator; explicit dice only in reference calculation, no RNG draw\"\n  },\n  \"time\": {\n    \"cadence\": \"supplied receipt/revocation/cancel/death/observed-obstacle-change events\",\n    \"period\": null,\n    \"dispatcher\": \"D18 supplies ordered facts; simultaneous unresolved effective revocation fails E_EXTERNAL_ORDER\"\n  },\n  \"rounding\": \"none; exact integer fixture conservation\",\n  \"clamps\": \"none; reject out-of-range values\",\n  \"lifecycle\": {\n    \"cancel\": \"release unconsumed only; record cause\",\n    \"death\": \"preserve progress; no automatic successor or grant transfer\",\n    \"load\": \"exact supported rules and valid checkpoint/unique receipts; replay no additional effect; corrupt save explicit typed error\"\n  },\n  \"failure\": \"E_REVISION, no silent refresh; distinct explicit proposal/event may retain order lineage\",\n  \"proposalHeld\": [\n    {\n      \"id\": \"P-AI\",\n      \"fields\": [\n        \"acceptance probability\",\n        \"utility weights\",\n        \"priority tie function\",\n        \"periodic cadence\",\n        \"autonomy action policy\"\n      ],\n      \"reason\": \"T68-NPC-HOLD-REFUSE-NEGOTIATE/T68-AUTO-LOCAL-COMMANDER and D18 supply no exact function\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-EVALUATION\",\n      \"fields\": [\n        \"trust/loyalty deltas\",\n        \"decay\",\n        \"effect lifetime\",\n        \"evaluation classification\"\n      ],\n      \"reason\": \"D08/D18 approve separate knowledge/permission/feasibility/performance records and per-effect drafting only\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-NUMERIC\",\n      \"fields\": [\n        \"time scale\",\n        \"message duration/cost\",\n        \"resource prices\"\n      ],\n      \"reason\": \"D22 chosen B: unit-first drafting, later formula/coefficient approval; fixture 1 is not an adopted gameplay unit\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-PERSONAL\",\n      \"fields\": [\n        \"Leadership bonus\",\n        \"injury modifier\",\n        \"capacity equation\"\n      ],\n      \"reason\": \"D30 separates eligibility and skill correction; no exact table; Leadership never compels obedience\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-GRANT\",\n      \"fields\": [\n        \"actual country/person grant\",\n        \"recall clauses/duration\",\n        \"body-switch command disposition\"\n      ],\n      \"reason\": \"D10/D19 authorize individual drafting, not actual records\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-CARRIER\",\n      \"fields\": [\n        \"production assignment/receipt/outcome carriers\"\n      ],\n      \"reason\": \"C1/C2 not attested; fixed supplied packets only\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-SOURCE\",\n      \"fields\": [\n        \"CK3/Norland native full algorithms\"\n      ],\n      \"reason\": \"documentary limits retained; no adoption\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-GURPS\",\n      \"fields\": [\n        \"reaction-to-consent mapping\",\n        \"new action bonuses\",\n        \"combat execution modifiers\"\n      ],\n      \"reason\": \"public basis structure/reference only; no GURPS 2004 Basic certification\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"P-INTEGRATION\",\n      \"fields\": [\n        \"Task27 canonical CLI\",\n        \"Task28/29 full closure\",\n        \"canonical registration\"\n      ],\n      \"reason\": \"evidence-only scope excludes product edits; full original Task30 closure not claimed\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    }\n  ],\n  \"scope\": {\n    \"numericBalanceReady\": false,\n    \"runtimeImplemented\": false,\n    \"worldFactsIssued\": false,\n    \"executionSchemaReady\": false\n  }\n}"
+    },
+    {
+      "id": "d03.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태·효과·출처의 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "d03.b11",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"decisionIds\": [\n    \"GP-03/delivery-A\",\n    \"GP-03/expiry-A\",\n    \"GP-03/revocation-A\",\n    \"GP-03/stale-snapshot-A\",\n    \"GP-03/superseded-orders-A\",\n    \"GP-03/reevaluation-A\",\n    \"D08\",\n    \"D10\",\n    \"D18\",\n    \"D19\",\n    \"D22\",\n    \"D30\",\n    \"D32\"\n  ],\n  \"authorityBoundary\": \"Sealed decisions approve directions and authoring/review methods, not unspecified formulas, coefficients, units, records or payloads. Prior GP03 six exact choices supply the bounded transition rules below.\",\n  \"sourceClaims\": [\n    {\n      \"id\": \"GP03\",\n      \"path\": \"../owner-gp03-first-three-decisions-20261005/selected-contract.json\",\n      \"scope\": \"six explicit selected policies; historical independent review pending\"\n    },\n    {\n      \"id\": \"sealed\",\n      \"path\": \"../task-26-remaining-decisions-20261008/decision-record.json\",\n      \"pointers\": [\n        \"/decisions/7\",\n        \"/decisions/9\",\n        \"/decisions/17\",\n        \"/decisions/18\",\n        \"/decisions/21\",\n        \"/decisions/29\",\n        \"/decisions/31\"\n      ]\n    },\n    {\n      \"id\": \"CK3-D03\",\n      \"path\": \"../task-24/cells/ck3/D03/verified-input-r2/rows.json\",\n      \"scope\": \"documentary subclaims only; native algorithms not adopted\"\n    },\n    {\n      \"id\": \"N-D03\",\n      \"path\": \"../task-24/cells/norland/D03/verified-input-r1/rows.json\",\n      \"scope\": \"documentary only; hidden native priority/refusal unresolved\"\n    },\n    {\n      \"id\": \"SP1\",\n      \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n      \"anchors\": [\n        \"sp1.b11\",\n        \"sp1.b12\",\n        \"sp1.b13\",\n        \"sp1.b14\",\n        \"sp1.b111\",\n        \"sp1.b112\",\n        \"sp1.b113\",\n        \"sp1.b114\",\n        \"sp1.b115\"\n      ]\n    },\n    {\n      \"id\": \"basis\",\n      \"path\": \"../task-25-gurps-like-basis-20261008/basis.json\",\n      \"anchors\": [\n        \"L-reaction\",\n        \"L-reaction-table\"\n      ],\n      \"scope\": \"public reference arithmetic, never contractual consent or original Basic certification\"\n    },\n    {\n      \"id\": \"basis-worked\",\n      \"path\": \"../task-25-gurps-like-basis-20261008/worked-checks.json\"\n    },\n    {\n      \"id\": \"proposal-contract\",\n      \"path\": \"../design-finalization-20261006/D03/contract.json\",\n      \"scope\": \"proposal retained; eight flags and admission+0 are not gameplay admission\"\n    },\n    {\n      \"id\": \"proposal-sheets\",\n      \"path\": \"../sheet-formula-gdd-integration-20261006/sheets.json\",\n      \"scope\": \"all imported numeric values remain proposals; no value-relabel map supplied at this path\"\n    },\n    {\n      \"id\": \"proposal-formulas\",\n      \"path\": \"../sheet-formula-gdd-integration-20261006/formulas.json\",\n      \"scope\": \"no proposal formula promoted\"\n    },\n    {\n      \"id\": \"correlated\",\n      \"path\": \"../d03-correlated-record-contract-r2/contract.json\",\n      \"scope\": \"fixed packet proof only; C1/C2 real authority/capture gaps remain\"\n    }\n  ],\n  \"state\": {\n    \"statuses\": [\n      \"proposed\",\n      \"undelivered\",\n      \"authority-blocked\",\n      \"held\",\n      \"refused\",\n      \"negotiating\",\n      \"active\",\n      \"cancelled\",\n      \"dead\",\n      \"superseded\"\n    ],\n    \"fields\": [\n      \"orderId\",\n      \"proposalId\",\n      \"originalSenderId\",\n      \"status\",\n      \"completed\",\n      \"consumed\",\n      \"reserved\",\n      \"stock\",\n      \"revision\",\n      \"receipts\"\n    ],\n    \"readSet\": [\n      \"world revision\",\n      \"D01/D02 actor facts\",\n      \"D11 grant issuer/grantee/scope/channel/start/end/effective revocation\",\n      \"D06 route/receipt\",\n      \"D15 battle assignment\",\n      \"recipient consent\",\n      \"same-resource ledger\",\n      \"prior result receipts\"\n    ],\n    \"writeSet\": [\n      \"D03 status and receipt append\",\n      \"atomic same-resource reservation candidate\"\n    ],\n    \"frame\": [\n      \"completed\",\n      \"consumed\",\n      \"originalSenderId\",\n      \"actor identity/location\",\n      \"grant ownership\",\n      \"world time\",\n      \"trust\",\n      \"loyalty\",\n      \"HP\",\n      \"FP\",\n      \"casualties\"\n    ],\n    \"snapshot\": {\n      \"policy\": \"exact supplied world revision\",\n      \"conflict\": \"E_REVISION, no silent refresh; distinct explicit proposal/event may retain order lineage\",\n      \"commitPoint\": \"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\"\n    }\n  },\n  \"effects\": [\n    \"one command-status receipt\",\n    \"atomic same-resource reservation candidate\",\n    \"no action completion, trust, loyalty or injury change\"\n  ],\n  \"events\": [\n    \"undelivered\",\n    \"authority-blocked\",\n    \"held\",\n    \"refused\",\n    \"negotiating\",\n    \"active\",\n    \"cancelled\",\n    \"dead\",\n    \"replacement\"\n  ],\n  \"priorities\": {\n    \"hard\": \"safety, incapacity and detention override acceptance/skill\",\n    \"soft\": \"schedule/needs conflicts allow hold/refuse/negotiate; no utility weights approved\",\n    \"replacement\": \"only explicit accepted replacement; no last-timestamp winner\",\n    \"autonomy\": \"follow/partly-follow/independent is separate from observation and performance; original sender preserved\"\n  }\n}"
+    }
+  ]
+}

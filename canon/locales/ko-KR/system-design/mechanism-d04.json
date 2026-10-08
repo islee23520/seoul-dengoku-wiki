@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Mechanism-D04.md",
+    "lineStart": 1,
+    "lineEnd": 503,
+    "sha256": "51a4d08c9e4a6b7d88b837eac4b04fa8ed6480f86ff7fd0a7c5c39eb138b6e60"
+  },
+  "document": {
+    "id": "doc.Mechanism-D04",
+    "blockIds": [
+      "d04.b1",
+      "d04.b2",
+      "d04.b3",
+      "d04.b4",
+      "d04.b5",
+      "d04.b6",
+      "d04.b7",
+      "d04.b8",
+      "d04.b9",
+      "d04.b10",
+      "d04.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "d04.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D04 인구·노동·고용·배급 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "d04.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "집계 인구의 개인화와 복귀는 기존 토큰·영구 ID의 표현만 바꾼다. 같은 사람의 시간 구간 예약과 실제 배급을 한 원장에서 확인하여 노동·수량을 보존한다. 고용 자격·임금·배급량·주기·건강 생산성 환산은 보류한다."
+        }
+      ]
+    },
+    {
+      "id": "d04.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d04.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[도메인 설계](mechanism-design-index-d04.md) · [개인 시트와 계산](character-sheet-formulas.md) · [저장과 판본](../rules/Save-and-Determinism.md) · [싱글플레이 계약](Singleplayer-Design-SP-1-0-0.md)"
+        }
+      ]
+    },
+    {
+      "id": "d04.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "처리 순서와 책임 경계"
+        }
+      ]
+    },
+    {
+      "id": "d04.b6",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "완전한 체크포인트와 단위를 검사하고 토큰·영구 ID의 일대일 대응 및 생존 인구 분할을 확인한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "모든 역할에 걸쳐 동일 인물의 양의 시간 구간 중첩을 검사한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사건 전체 내용과 판본을 대조하여 정확한 재전송과 변경 중복을 구분한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개인화·복귀는 같은 토큰과 ID를 유지한다. 역할 예약의 실제 자격은 별도 승인 입력이다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 사람·수요·단위의 실제 배급만 중복 제거 후 잔여 수요에서 뺀다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후보 상태의 인구·정체성·예약 보존을 확인한 뒤 하나의 체크포인트와 영수증으로 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d04.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정규화된 데이터·공식 계약"
+        }
+      ]
+    },
+    {
+      "id": "d04.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자, 읽기·쓰기 범위, 단위, 스냅샷과 반영 시점을 함께 선언한다. 형식과 보존식의 검증은 실제 원장 발급이나 미정 함수의 채택을 대신하지 않는다. rulesVersion과 연결 정본의 해시는 원천 판본을 식별하며 임의의 새 실행 판본을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d04.b9",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json mechanism-contract",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"domainId\": \"D04\",\n  \"mechanismId\": \"D04.labor-population-employment-rations\",\n  \"status\": \"bounded-contract-with-proposal-held\",\n  \"rulesVersion\": \"D04-sealed-20261008\",\n  \"rulesVersionLinkage\": {\n    \"sourceRulesVersion\": \"D04-sealed-20261008\",\n    \"contractSHA256\": \"4167ee4aee665740ebebf68086dec5b00f78531fe2e72264c7fb605238e36cc2\",\n    \"missingVersionPolicy\": \"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\",\n    \"canonRules\": [\n      {\n        \"documentId\": \"doc.Save-and-Determinism\",\n        \"path\": \"canon/locales/ko-KR/rules/save-and-determinism.json\",\n        \"sha256\": \"510a557e3448efb478d38ded1f21845557ac10c7fc8b56e2c0631ef455a86919\"\n      },\n      {\n        \"documentId\": \"doc.Singleplayer-Design-SP-1-0-0\",\n        \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n        \"sha256\": \"633265f37815e8d581b52426a84eec2bd1a1e987b2e05bd614b8f9752877a9bd\"\n      }\n    ],\n    \"compatibility\": \"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\"\n  },\n  \"dataOwner\": \"D04 design evidence only\",\n  \"fields\": [\n    {\n      \"name\": \"people\",\n      \"type\": \"Person[]\",\n      \"unit\": \"existing member tokens linked to permanent PersonId\",\n      \"range\": \"unique exact nonempty strings\",\n      \"null\": \"forbidden\",\n      \"owner\": \"D04 design evidence only\",\n      \"read\": [\n        \"complete checkpoint\",\n        \"exact request/event identity\",\n        \"snapshot revision and rulesVersion\",\n        \"source-bound requirements and payment/delivery evidence\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n      \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\"\n    },\n    {\n      \"name\": \"cohortId\",\n      \"type\": \"string\",\n      \"unit\": \"existing cohort identifier\",\n      \"null\": \"forbidden\",\n      \"owner\": \"D04 design evidence only\",\n      \"read\": [\n        \"complete checkpoint\",\n        \"exact request/event identity\",\n        \"snapshot revision and rulesVersion\",\n        \"source-bound requirements and payment/delivery evidence\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n      \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\"\n    },\n    {\n      \"name\": \"start,end\",\n      \"type\": \"safe integer\",\n      \"unit\": \"same world-clock tick; scale not authored\",\n      \"range\": \"0 <= start < end\",\n      \"null\": \"unknown blocks interval calculation\",\n      \"owner\": \"D04 design evidence only\",\n      \"read\": [\n        \"complete checkpoint\",\n        \"exact request/event identity\",\n        \"snapshot revision and rulesVersion\",\n        \"source-bound requirements and payment/delivery evidence\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n      \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\"\n    },\n    {\n      \"name\": \"need,delivered,wageDue,wagePaid\",\n      \"type\": \"safe nonnegative integer\",\n      \"unit\": \"explicit identical contract item/currency unit\",\n      \"null\": \"unknown; never zero/free\",\n      \"owner\": \"D04 design evidence only\",\n      \"read\": [\n        \"complete checkpoint\",\n        \"exact request/event identity\",\n        \"snapshot revision and rulesVersion\",\n        \"source-bound requirements and payment/delivery evidence\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n      \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\"\n    },\n    {\n      \"name\": \"eligibility\",\n      \"type\": \"authored source-bound requirement table\",\n      \"unit\": \"contract predicates\",\n      \"null\": \"held; not substituted by an eligible boolean\",\n      \"owner\": \"D04 design evidence only\",\n      \"read\": [\n        \"complete checkpoint\",\n        \"exact request/event identity\",\n        \"snapshot revision and rulesVersion\",\n        \"source-bound requirements and payment/delivery evidence\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n      \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\"\n    },\n    {\n      \"name\": \"health\",\n      \"type\": \"upstream approved state\",\n      \"unit\": \"upstream HP/FP and separate needs state\",\n      \"null\": \"unknown; no inferred productivity\",\n      \"owner\": \"D04 design evidence only\",\n      \"read\": [\n        \"complete checkpoint\",\n        \"exact request/event identity\",\n        \"snapshot revision and rulesVersion\",\n        \"source-bound requirements and payment/delivery evidence\"\n      ],\n      \"write\": \"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\",\n      \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n      \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\"\n    }\n  ],\n  \"readSet\": [\n    \"complete checkpoint\",\n    \"exact request/event identity\",\n    \"snapshot revision and rulesVersion\",\n    \"source-bound requirements and payment/delivery evidence\"\n  ],\n  \"writeSet\": [\n    \"representation locator only for approved identity demonstration\",\n    \"positive interval reservation append in evidence model\",\n    \"delivery receipt in evidence model\",\n    \"revision and immutable event receipt\"\n  ],\n  \"snapshot\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n  \"commitPoint\": \"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\",\n  \"orderedSteps\": [\n    \"validate exact records and units; reject unsafe encoding without clamp\",\n    \"validate immutable token/PersonId bijection and living partition\",\n    \"validate all active reservations across roles; same-person positive overlap rejects\",\n    \"check rulesVersion; match replay to full payload, then snapshot revision\",\n    \"representation-only: move existing selected IDs, not create IDs; return same ID to retained cohort\",\n    \"reserve: require living individual and existing role; qualification/gameplay approval remains held outside this model\",\n    \"fulfill: bind actual delivery to same person/need/unit; deduplicate event before demand subtraction\",\n    \"validate candidate full state and unchanged identity/name/life frame before commit\"\n  ],\n  \"formulaSheet\": [\n    {\n      \"id\": \"population\",\n      \"expression\": \"N=|living cohort IDs|+|living individual IDs|; extract k: A-k,I+k; return r: A+r,I-r\",\n      \"unit\": \"persons\",\n      \"rounding\": \"none; cardinality only\",\n      \"guard\": \"distinct existing source identities, no separate birth/death/migration event\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"summoned-subset\",\n      \"expression\": \"summoned IDs subset of individual IDs; summoning the already individualized three does not subtract three again\",\n      \"unit\": \"persons\",\n      \"guard\": \"one shared identity/reservation ledger\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"reservation\",\n      \"expression\": \"a.start < b.end AND b.start < a.end\",\n      \"unit\": \"occupied same-person world intervals\",\n      \"boundary\": \"equal end/start is non-overlap; zero-duration world policy remains held\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"remaining-demand\",\n      \"expression\": \"max(0,need-sum(distinct verified deliveries for same person,needId,unit))\",\n      \"unit\": \"explicit identical item quantity\",\n      \"rounding\": \"none; integer carrier only, not approved quota granularity\",\n      \"guard\": \"actual delivered amount, not stock/reservation; duplicate event exact replay no second contribution\",\n      \"status\": \"bounded-symbolic-contract\"\n    },\n    {\n      \"id\": \"wage-arrears\",\n      \"expression\": \"max(0,contractuallyDue-verifiedPaid)\",\n      \"unit\": \"same explicit contract currency\",\n      \"guard\": \"symbolic reconciliation only; wage due generation/cadence unapproved\",\n      \"status\": \"bounded-symbolic-contract\"\n    }\n  ],\n  \"rng\": {\n    \"scope\": \"none in D04 bounded symbolic arithmetic\",\n    \"generatedSkills\": \"D36 seeded candidate approval held, not generated here\"\n  },\n  \"time\": \"event-based illustration; wage/ration periodic rates and clock scale held; no invented daily or hourly rate\",\n  \"rounding\": \"각 공식의 명시된 처리를 따른다. 실제 생산·전략 이동 양자화는 proposal-held다.\",\n  \"clamps\": \"max(0,remaining) is unmet demand/arrears floor only; no truncating population, quantities or excess people\",\n  \"lifecycle\": {\n    \"cancel\": \"release only unconsumed future role reservation according to authored role contract; completed deliveries/payments and representation IDs remain; cancellation policy itself held\",\n    \"death\": \"upstream death event changes living status once; preserve token/ID and records, remove future eligibility, do not revive reservations; timing/release policy held\",\n    \"load\": \"validate full checkpoint, rules version, identities, receipts and intervals; invalid/stale checkpoint typed rejection, never silent migration\",\n    \"return\": \"same token/ID retained; structural representation example only, gameplay trigger/authority/eligibility held\"\n  },\n  \"failure\": \"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\",\n  \"proposalHeld\": [\n    {\n      \"id\": \"D03-rates\",\n      \"rows\": [\n        \"D03\"\n      ],\n      \"scope\": \"per-station/profession wage amount, ration item quantities, currency/item units, cadence, shortage allocation and actual contract instances\",\n      \"numericApproval\": false,\n      \"disposition\": \"proposal; selected contract direction only\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"D16-token-schema\",\n      \"rows\": [\n        \"D16\"\n      ],\n      \"scope\": \"token issuance, save migration and exact serialization; existing tokens preserved\",\n      \"numericApproval\": false,\n      \"disposition\": \"evidence carrier proposal, no new identities authored\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"extraction-return-qualification\",\n      \"rows\": [\n        \"D16\",\n        \"D35\",\n        \"D36\"\n      ],\n      \"scope\": \"trigger, authority, consent, age/health/skill/equipment qualification, roster registration and return eligibility\",\n      \"numericApproval\": false,\n      \"disposition\": \"structural representation tests are conditional; not accepted gameplay qualification\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"D29-D37-health-labor\",\n      \"rows\": [\n        \"D29\",\n        \"D37\"\n      ],\n      \"scope\": \"ration shortage to HP/FP/needs/mood/productivity conversion and once-only effect rates/thresholds\",\n      \"numericApproval\": false,\n      \"disposition\": \"read-only upstream health; no multiplier invented\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"D35-hire-matching\",\n      \"rows\": [\n        \"D35\"\n      ],\n      \"scope\": \"hire price and ability/equipment matching; no CP-derived mercenary price\",\n      \"numericApproval\": false,\n      \"disposition\": \"separate contract price and qualification proposals\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"D36-generated-skills\",\n      \"rows\": [\n        \"D36\"\n      ],\n      \"scope\": \"skill/attribute distributions, seeded candidate parameters and individual approval\",\n      \"numericApproval\": false,\n      \"disposition\": \"no random generation or profession-based skill assignment\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"B-D15-unit-instances\",\n      \"rows\": [\n        \"D15\"\n      ],\n      \"scope\": \"unit-type mapping first; actual units and members separately issued\",\n      \"numericApproval\": false,\n      \"disposition\": \"B selected direction; do not issue units in D04\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"B-D22-normalized-units\",\n      \"rows\": [\n        \"D22\"\n      ],\n      \"scope\": \"common unit dictionary before equations/coefficients; no actual conversion rates supplied\",\n      \"numericApproval\": false,\n      \"disposition\": \"B selected staging; fixture units only\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"B-D26-skill-TL-language\",\n      \"rows\": [\n        \"D26\"\n      ],\n      \"scope\": \"Seoul skill/TL/language authoring and per-instance issuance\",\n      \"numericApproval\": false,\n      \"disposition\": \"upstream proposal, no D04 default qualification\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"D27-D30-capacity\",\n      \"rows\": [\n        \"D27\",\n        \"D30\"\n      ],\n      \"scope\": \"supply/commander/institution functions and injury modifiers; capacity reduction never deletes excess people\",\n      \"numericApproval\": false,\n      \"disposition\": \"cross-domain D15 held equations; no fixed20 cap\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"population-lifecycle-rates\",\n      \"rows\": [\n        \"D16\"\n      ],\n      \"scope\": \"birth/death/migration/capture rates, casualty ordering, lifecycle reservation release and exact cancel/refund policy\",\n      \"numericApproval\": false,\n      \"disposition\": \"separate events, not part of representation conservation\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"carrier-numeric-fixtures\",\n      \"rows\": [],\n      \"scope\": \"500,5,3 and need5/delivery3, interval ticks10/20/30 are independent synthetic verification inputs, not gameplay balances\",\n      \"numericApproval\": false,\n      \"disposition\": \"Seoul illustrative unadopted values per value-relabel; exact types/errors are evidence tooling, not gameplay laws\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    },\n    {\n      \"id\": \"zero-duration-actions\",\n      \"rows\": [],\n      \"scope\": \"zero-duration world action semantics\",\n      \"numericApproval\": false,\n      \"disposition\": \"positive-interval carrier rejects zero; world action policy remains unknown\",\n      \"status\": \"proposal-held\",\n      \"operative\": false\n    }\n  ],\n  \"scope\": {\n    \"numericBalanceReady\": false,\n    \"runtimeImplemented\": false,\n    \"worldFactsIssued\": false,\n    \"executionSchemaReady\": false\n  }\n}"
+    },
+    {
+      "id": "d04.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태·효과·출처의 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "d04.b11",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"decisionIds\": [\n    \"GP-04/population-ration-residual\",\n    \"T68-PF-07/population-generation-policy-residual\",\n    \"GP-04/health-personal-effects\",\n    \"T68-PF-06/unit-numeric-matching\",\n    \"T68-PF-07/generated-attributes-skills\",\n    \"T68-NUMERIC-DESIGN-ASSUMPTIONS/health-derived-assumptions\"\n  ],\n  \"sealedRowIds\": [\n    \"D03\",\n    \"D16\",\n    \"D29\",\n    \"D35\",\n    \"D36\",\n    \"D37\"\n  ],\n  \"heldCrossDomainRowIds\": [\n    \"D15\",\n    \"D22\",\n    \"D26\",\n    \"D27\",\n    \"D30\"\n  ],\n  \"authorityBoundary\": \"Dnn row IDs in decision-record are decision ordinals, not domain IDs. Selected directions do not approve exact formulas, coefficients, instances or qualification tables.\",\n  \"sourceClaims\": [\n    {\n      \"id\": \"SEOUL-POPULATION\",\n      \"source\": \"sheet-formula-gdd-integration-20261006/formulas.json\",\n      \"classification\": \"Seoul-owned symbolic conservation; example numeric values illustrative, unadopted per value-relabel.json\"\n    },\n    {\n      \"id\": \"OWNER-D04-COHORT-IDENTITY-20261005\",\n      \"source\": \"d04-cohort-identity-owner-binding-r1/decision.json\",\n      \"classification\": \"approved identity only\"\n    },\n    {\n      \"id\": \"OWNER-D04-RESERVATION-ENDPOINT-20261005\",\n      \"source\": \"d04-reservation-endpoint-owner-binding-r1/decision.json\",\n      \"classification\": \"approved occupied interval semantics only\"\n    },\n    {\n      \"id\": \"GP-04\",\n      \"source\": \"owner-ration-production-decisions-20261005/decision.json\",\n      \"classification\": \"prior ration-before-purchase selection; corroborated selected symbolic scope in Task26 dossier\"\n    },\n    {\n      \"id\": \"CK3-D04\",\n      \"source\": \"task-24/cells/ck3/D04/verified-input-r2/report.md\",\n      \"classification\": \"documentary comparison only; same-ID cohort return unresolved\"\n    },\n    {\n      \"id\": \"NL-D04\",\n      \"source\": \"task-24/cells/norland/D04/verified-input-r1/report.md\",\n      \"classification\": \"documentary analogue, no native same-ID/no-double-ration proof\"\n    }\n  ],\n  \"gurpsLikeBasis\": {\n    \"source\": \"task-25-gurps-like-basis-20261008/basis.json\",\n    \"worked\": \"task-25-gurps-like-basis-20261008/worked-checks.json\",\n    \"directD04Mechanics\": [],\n    \"meaning\": \"Basis assigns no direct D04 wage/ration/population equation. Conservation cardinality and delivery subtraction are Seoul symbolic arithmetic, not GURPS Basic 2004. HP/FP/skills are read-only upstream fields; no labor multiplier or 3d6 wage calculation is inferred.\"\n  },\n  \"state\": {\n    \"Person\": {\n      \"token\": \"immutable member token\",\n      \"personId\": \"immutable permanent ID, no allocation during extraction\",\n      \"life\": \"living | dead\",\n      \"locator\": \"cohort | individual | none\",\n      \"cohortId\": \"original cohort, retained on individualization\",\n      \"publicName\": \"string | null\"\n    },\n    \"Reservation\": {\n      \"id\": \"unique reservation ID\",\n      \"personId\": \"existing living permanent ID\",\n      \"role\": \"existing role ID\",\n      \"start\": \"world tick\",\n      \"end\": \"world tick\"\n    },\n    \"Delivery\": {\n      \"id\": \"unique fulfillment event ID\",\n      \"personId\": \"existing permanent ID\",\n      \"needId\": \"one contractual need\",\n      \"quantity\": \"nonnegative exact integer\",\n      \"unit\": \"registered item unit\"\n    },\n    \"checkpoint\": [\n      \"rulesVersion\",\n      \"revision\",\n      \"people\",\n      \"reservations\",\n      \"receipts\",\n      \"deliveries\"\n    ],\n    \"derivedOnly\": [\n      \"aggregateCount\",\n      \"individualCount\",\n      \"summonedCount\",\n      \"totalLiving\",\n      \"aggregateLaborAvailable\",\n      \"remainingPurchaseDemand\",\n      \"wageArrears\"\n    ]\n  },\n  \"effectsEventsOutputs\": [\n    \"one immutable receipt per accepted event\",\n    \"derived living population counts\",\n    \"shared-person labor exclusivity\",\n    \"verified fulfillment and remaining-demand result\"\n  ],\n  \"exceptions\": [\n    \"unknown required numeric input E_PROPOSAL_REQUIRED\",\n    \"unit mismatch E_UNIT\",\n    \"duplicate token/person/receipt E_DUPLICATE_ID\",\n    \"positive same-person overlap E_OVERLAP\",\n    \"new stale event E_STALE_SNAPSHOT\",\n    \"unsupported rules E_VERSION\",\n    \"unsafe value E_TYPE\",\n    \"invalid locator or dead active role E_CHECKPOINT\"\n  ]\n}"
+    }
+  ]
+}

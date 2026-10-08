@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Mechanism-D05.md",
+    "lineStart": 1,
+    "lineEnd": 408,
+    "sha256": "e9ee75507ec1ddd5fd7bac60a345b7bc569a2a4125c6e6eff3d9ab26f8876e3c"
+  },
+  "document": {
+    "id": "doc.Mechanism-D05",
+    "blockIds": [
+      "d05.b1",
+      "d05.b2",
+      "d05.b3",
+      "d05.b4",
+      "d05.b5",
+      "d05.b6",
+      "d05.b7",
+      "d05.b8",
+      "d05.b9",
+      "d05.b10",
+      "d05.b11"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "d05.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D05 생산·건설·보관·수리 작동 계약과 공식 시트"
+        }
+      ]
+    },
+    {
+      "id": "d05.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "검증된 도착과 실제 재고, 필수 수요 예약, 승인된 작업과 단계별 소비를 분리한다. 중단 시 분수 진척과 소비·미사용 실물을 보존한다. 산출·저장 단계에 들어가기 전에 해당 목적지의 저장 예약이 확보되어야 하며, 조리법별 수율·속도·복구량은 보류한다."
+        }
+      ]
+    },
+    {
+      "id": "d05.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 범위가 한정된 작동 계약. 공개 Lite의 참조 계산, 서울의 승인된 절차·보존 규칙, 미승인 제안을 구분한다. proposal-held는 실행할 수 없는 보류 항목이며 0이나 승인 수치가 아니다. 이 문서는 전체 도메인 수치 완성이나 런타임 구현을 뜻하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d05.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[도메인 설계](mechanism-design-index-d05.md) · [개인 시트와 계산](character-sheet-formulas.md) · [저장과 판본](../rules/Save-and-Determinism.md) · [싱글플레이 계약](Singleplayer-Design-SP-1-0-0.md)"
+        }
+      ]
+    },
+    {
+      "id": "d05.b5",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "처리 순서와 책임 경계"
+        }
+      ]
+    },
+    {
+      "id": "d05.b6",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "신원·규칙·개정과 기존 결과 ID를 확인하고 누락·충돌을 쓰기 전에 거부한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승인된 신체 상태는 읽기만 하며 동일 신체 개정·효과의 중복 노동 손실을 막는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 시각에는 도착 검증을 먼저 하고 실제 재고에서 필수 소비·계약·보급을 예약한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승인된 작업만 조리법별 인력·입력·동력·시설·보관 조건을 모두 만족할 때 진행한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "소비를 한 번만 적용하고 정확한 분수 진척을 보존한다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "산출·저장 예약이 없으면 이전 완료 단계에서 대기한다. 예약 확보만으로 산출물 정산까지 완료하지 않는다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보존 검사 후 결과와 효과 정산 키·개정을 함께 원자적으로 반영한다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "d05.b7",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정규화된 데이터·공식 계약"
+        }
+      ]
+    },
+    {
+      "id": "d05.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자, 읽기·쓰기 범위, 단위, 스냅샷과 반영 시점을 함께 선언한다. 형식과 보존식의 검증은 실제 원장 발급이나 미정 함수의 채택을 대신하지 않는다. rulesVersion과 연결 정본의 해시는 원천 판본을 식별하며 임의의 새 실행 판본을 만들지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "d05.b9",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json mechanism-contract",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"domainId\": \"D05\",\n  \"mechanismId\": \"seoul.d05.bounded-contract\",\n  \"status\": \"bounded-contract-with-proposal-held\",\n  \"rulesVersion\": null,\n  \"rulesVersionLinkage\": {\n    \"sourceRulesVersion\": null,\n    \"contractSHA256\": \"be385061971813cc7aba01a42a5fe9c928e008730a6b30333e77213465a4fc7b\",\n    \"missingVersionPolicy\": \"원천 계약에 rulesVersion이 없다. 해시는 이 계약의 바이트 판본이며 승인된 게임 규칙 버전을 대신 발급하지 않는다.\",\n    \"canonRules\": [\n      {\n        \"documentId\": \"doc.Save-and-Determinism\",\n        \"path\": \"canon/locales/ko-KR/rules/save-and-determinism.json\",\n        \"sha256\": \"510a557e3448efb478d38ded1f21845557ac10c7fc8b56e2c0631ef455a86919\"\n      },\n      {\n        \"documentId\": \"doc.Singleplayer-Design-SP-1-0-0\",\n        \"path\": \"canon/locales/ko-KR/system-design/singleplayer-design-sp-1-0-0.json\",\n        \"sha256\": \"633265f37815e8d581b52426a84eec2bd1a1e987b2e05bd614b8f9752877a9bd\"\n      },\n      {\n        \"documentId\": \"doc.Rules-EconomyLogistics\",\n        \"path\": \"canon/locales/ko-KR/rules/rules-economy-logistics-clauses.json\",\n        \"sha256\": \"36012dbc48b74498dd9ff445faf33d0b6c8785c8d82cf3ac67dc4cc309d39dab\"\n      }\n    ],\n    \"compatibility\": \"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\"\n  },\n  \"dataOwner\": \"D05 생산·단계·경제 효과 정산; D13 소유권, D02 신체 상태, D18 시간·저장\",\n  \"fields\": [\n    {\n      \"field\": \"recipeId/rulesVersion\",\n      \"type\": \"nonempty string\",\n      \"unit\": \"identity\",\n      \"owner\": \"D05 recipe authority\",\n      \"read\": \"recipe ledger\",\n      \"write\": \"none in this closure\",\n      \"null\": \"blocks operation\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    },\n    {\n      \"field\": \"material quantities\",\n      \"type\": \"nonnegative integer atoms tagged with itemId and unit\",\n      \"unit\": \"item-specific atom\",\n      \"owner\": \"D13 ownership; D05 allocation\",\n      \"read\": \"inventory snapshot\",\n      \"write\": \"atomic committed material event\",\n      \"null\": \"unknown; never zero\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    },\n    {\n      \"field\": \"work/progress\",\n      \"type\": \"nonnegative exact rational\",\n      \"unit\": \"recipe-specific work unit\",\n      \"owner\": \"D05\",\n      \"read\": \"stage snapshot\",\n      \"write\": \"qualified approved work event\",\n      \"null\": \"blocks work\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    },\n    {\n      \"field\": \"rates/power/duration/facility/storage\",\n      \"type\": \"nullable unit-tagged recipe specification\",\n      \"unit\": \"item/work/power per named clock interval; capacity in item atoms\",\n      \"owner\": \"D05; clock D18; skills D14\",\n      \"read\": \"approved recipe snapshot only\",\n      \"write\": \"not issued here\",\n      \"null\": \"explicit proposal hold\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    },\n    {\n      \"field\": \"reservedDemand/consumed/unused\",\n      \"type\": \"nonnegative exact integer\",\n      \"unit\": \"same item atoms\",\n      \"owner\": \"D05 reservation; D13 title\",\n      \"read\": \"inventory and commitment snapshot\",\n      \"write\": \"one event after guards\",\n      \"null\": \"blocks commit\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    },\n    {\n      \"field\": \"resultId/actorId/ownerId/version\",\n      \"type\": \"identity string / nonnegative version integer\",\n      \"unit\": \"identity / revision\",\n      \"owner\": \"event ledger; D03 authority; D13 title\",\n      \"read\": \"exact before snapshot\",\n      \"write\": \"result ledger and revision on successful commit\",\n      \"null\": \"reject\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    },\n    {\n      \"field\": \"arrivalAt/cutoff\",\n      \"type\": \"finite numeric documentary clock coordinate\",\n      \"unit\": \"same supplied world clock unit\",\n      \"owner\": \"D06 delivery / D18 clock\",\n      \"read\": \"verified arrival receipt\",\n      \"write\": \"none by temporal predicate\",\n      \"null\": \"unknown, not false\",\n      \"snapshot\": \"exact before snapshot\",\n      \"commitPoint\": \"after all guards and conservation checks\"\n    }\n  ],\n  \"readSet\": [\n    \"recipe ledger\",\n    \"inventory snapshot\",\n    \"stage snapshot\",\n    \"approved recipe snapshot only\",\n    \"inventory and commitment snapshot\",\n    \"exact before snapshot\",\n    \"verified arrival receipt\"\n  ],\n  \"writeSet\": [\n    \"none in this closure\",\n    \"atomic committed material event\",\n    \"qualified approved work event\",\n    \"not issued here\",\n    \"one event after guards\",\n    \"result ledger and revision on successful commit\",\n    \"none by temporal predicate\"\n  ],\n  \"snapshot\": {\n    \"policy\": \"exact before snapshot\",\n    \"conflict\": \"reject explicit revision/rules mismatch\",\n    \"commitPoint\": \"after all guards and conservation checks\",\n    \"receipt\": \"before/event/after with exact error; failed event leaves before unchanged\"\n  },\n  \"commitPoint\": \"after all guards and conservation checks\",\n  \"orderedSteps\": [\n    \"Read exact identity/rules/revision snapshot and existing result IDs\",\n    \"Reject incompatible version, identity, missing facts or reused result ID before mutations\",\n    \"Read approved body-state snapshot without writing it; check per-effect settlement key before derived labor effects and commit key with effect only once\",\n    \"At equal world time validate arrival first; D06 receiver countersign/rights checks remain separate\",\n    \"Reserve essential consumption, contracts and supply before market work; reject insufficient remaining verified stock\",\n    \"Only approved, qualified orders may run within recipe workforce/input/power/facility/storage constraints\",\n    \"Consume once and preserve exact fractional progress in recipe units; no rounding policy invented\",\n    \"Before output/save stage entry secure the matching save reservation; otherwise wait and preserve the previous completed stage\",\n    \"Check conservation and commit result plus revision atomically\"\n  ],\n  \"formulaSheet\": [\n    {\n      \"id\": \"inclusive-cutoff\",\n      \"expression\": \"verifiedArrival && arrivalAt <= cutoff\",\n      \"result\": \"temporal eligibility only, not available stock\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"authority\": \"T68-CARGO-INCLUSIVE-CUTOFF\",\n      \"status\": \"bounded-symbolic-contract\",\n      \"unit\": \"같은 물자 단위 또는 동일 세계시각 좌표; 식별자 합산 금지\"\n    },\n    {\n      \"id\": \"material-conservation\",\n      \"expression\": \"unusedAfter + consumedAfter = unusedBefore + consumedBefore; progressAfter = progressBefore on interruption\",\n      \"result\": \"no automatic refund or loss\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"authority\": \"T68-STAGED-CONSTRUCTION\",\n      \"status\": \"bounded-symbolic-contract\",\n      \"unit\": \"같은 물자 단위 또는 동일 세계시각 좌표; 식별자 합산 금지\"\n    },\n    {\n      \"id\": \"reservation-limit\",\n      \"expression\": \"sum(reserved same-item atoms) <= verified available same-item atoms\",\n      \"result\": \"preserve current reservation on conflict; no implicit new order\",\n      \"rounding\": \"none\",\n      \"clamp\": \"none\",\n      \"rng\": \"none\",\n      \"authority\": \"T68-DEMAND-RESERVATION-PRODUCTION; prior bounded GP-06\",\n      \"status\": \"bounded-symbolic-contract\",\n      \"unit\": \"같은 물자 단위 또는 동일 세계시각 좌표; 식별자 합산 금지\"\n    }\n  ],\n  \"rng\": \"승인된 보존·마감 계산은 난수를 소비하지 않는다. 새 생산 판정은 보류한다.\",\n  \"time\": \"D18의 동일 세계시각을 읽는다. 실제 주기·달력 기점은 proposal-held다.\",\n  \"rounding\": \"각 공식의 명시된 처리를 따른다. 실제 생산·전략 이동 양자화는 proposal-held다.\",\n  \"clamps\": \"각 식의 명시된 한계만 적용한다. 미정 정책의 임의 클램프는 없다.\",\n  \"lifecycle\": {\n    \"failure\": \"no mutation\",\n    \"cancel\": \"retain completed/partial progress, consumed and physical unused materials; release policy itself held\",\n    \"death\": \"recheck eligibility/reservations; retain quantities and progress; no automatic successor\",\n    \"takeover\": \"retain institution ownership and stored progress; no automatic material refund or title transfer\",\n    \"load\": \"exact identity, rules version, quantities, progress, reservations and applied result IDs; incompatible snapshot is explicit error\"\n  },\n  \"failure\": \"reject explicit revision/rules mismatch\",\n  \"proposalHeld\": [\n    {\n      \"id\": \"recipe-records\",\n      \"authority\": \"GP-05-A / sealed row D04\",\n      \"held\": \"Actual production/construction/repair recipes, inputs, tools, work, qualifications and facility requirements\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"numeric-formulas\",\n      \"authority\": \"D22-B\",\n      \"held\": \"Production formula adoption, rates/yields, penalty coefficients and labor-continuity floor 0.2; legacy canon formula is preserved as proposal pending numeric approval\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"rounding\",\n      \"authority\": \"GP-05 residual / D22-B\",\n      \"held\": \"Whole-item rounding, fractional work quantization and consumption rounding; rational calculator is documentary only\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"clock\",\n      \"authority\": \"prior bounded GP-06\",\n      \"held\": \"Actual shared daily phase value, calendar origin and interval unit; equal-time arrival-before-reservation order retained\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"storage\",\n      \"authority\": \"D22-B / prior GP-06\",\n      \"held\": \"Storage capacities, power/duration units, distribution, spoilage/loss/shortage coefficients and durable storage\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"recovery\",\n      \"authority\": \"GP-05 residual\",\n      \"held\": \"Salvage/repair recovery yields and stages; consumed material never automatically refunded\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"release-and-reassignment\",\n      \"authority\": \"prior D05 proposals\",\n      \"held\": \"Cancel/death reservation release details, performer replacement and reassignment; preservation checks do not authorize these\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"receipt-protocol\",\n      \"authority\": \"prior bounded GP-06; D06/D13 owned\",\n      \"held\": \"Receipt identifiers/authentication and title/custody resolution; temporal inclusion alone never final stock\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"test-values\",\n      \"authority\": \"Task25 value-relabel.json\",\n      \"held\": \"Every chosen arithmetic input, output and test recipe in cases.json is illustrative, not an issued recipe or approved number\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"public-math\",\n      \"authority\": \"Task25 basis L-success/L-margin\",\n      \"held\": \"No economic skill roll or personal target issued; 3d6 reference is not economic adoption\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false\n    },\n    {\n      \"id\": \"rules-version-issuance\",\n      \"status\": \"proposal-held\",\n      \"numericApproval\": false,\n      \"operative\": false,\n      \"scope\": \"원천 팩에 없는 D05 실행 규칙 판본의 실제 발급 및 D18 호환 등록\"\n    }\n  ],\n  \"scope\": {\n    \"numericBalanceReady\": false,\n    \"runtimeImplemented\": false,\n    \"worldFactsIssued\": false,\n    \"executionSchemaReady\": false\n  },\n  \"proposalFormulaSheet\": {\n    \"status\": \"proposal-held\",\n    \"sourceAnchor\": \"rules-economy-logistics-clauses.json#r2.recon-02.formulas\",\n    \"fulfillment\": \"requirement=0 => 1; else clamp(allocation/requirement,0,1); empty input set => 1\",\n    \"production\": \"baseYield * min(laborFulfillment,inputFulfillment,powerFulfillment) * facilityState\",\n    \"shortage\": \"demand=0 => 0; else clamp(1-fulfilled/demand,0,1)\",\n    \"laborContinuity\": \"clamp(1-sum(penaltyCoefficient*shortage),0.2,1); floor 0.2 and penalty coefficients remain proposal, not implemented as approved behavior\",\n    \"units\": \"rates require the same named recipe interval; dimensionless fulfillment and facility fraction; yield in output item units\",\n    \"null\": \"blocks evaluation; absent recipe rates not free production\",\n    \"rounding\": \"exact rational in documentary calculator; gameplay rounding held\",\n    \"rng\": \"none; no production skill roll invented\",\n    \"numericApproval\": false,\n    \"operative\": false\n  }\n}"
+    },
+    {
+      "id": "d05.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태·효과·출처의 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "d05.b11",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"authority\": {\n    \"sealedRowsApplied\": [\n      {\n        \"row\": \"D04\",\n        \"decisionId\": \"GP-05\",\n        \"chosenOption\": \"A\",\n        \"scope\": \"Recipe-specific resource, work and facility specification direction only\"\n      },\n      {\n        \"row\": \"D22\",\n        \"decisionId\": \"T68-NUMERIC-DESIGN-ASSUMPTIONS\",\n        \"chosenOption\": \"B\",\n        \"scope\": \"Normalize input units first; formulas and coefficients await later approval\"\n      },\n      {\n        \"row\": \"D37\",\n        \"decisionId\": \"T68-NUMERIC-DESIGN-ASSUMPTIONS\",\n        \"chosenOption\": \"A\",\n        \"scope\": \"Approved body state read-only input; per-effect one-time settlement, including D05 labor loss. Exact health units/conversion coefficients still require approval.\"\n      }\n    ],\n    \"rowIdsAreNotDomainIds\": true,\n    \"excludedRows\": \"D05/GP-10 belongs to knowledge access D14, not economy; other rows do not adopt D05 numbers\",\n    \"priorAcceptedClauses\": [\n      \"T68-STAGED-CONSTRUCTION\",\n      \"T68-DEMAND-RESERVATION-PRODUCTION\",\n      \"T68-CARGO-INCLUSIVE-CUTOFF\",\n      \"property-and-delivery\",\n      \"identity-version-permission\"\n    ],\n    \"noNewOwnerDecisions\": true\n  },\n  \"healthSettlementBoundary\": {\n    \"authority\": \"sealed D37-A\",\n    \"owner\": \"D02 body-state issuance; D05 effect settlement\",\n    \"read\": \"approved person-bound body-state ID/revision and effect identity in the same rules snapshot\",\n    \"write\": \"D05 settled-effect ledger only; never mutate body state\",\n    \"settlementKey\": \"personId + bodyStateId + bodyRevision + effectId; independent of economic resultId\",\n    \"rule\": \"Apply a supplied approved derived effect at most once. A second economic result referring to the same effect cannot apply the same shortage-related labor loss again.\",\n    \"commitPoint\": \"record effect key atomically with the applied economic effect; preserve keys on load\",\n    \"unknown\": \"unapproved/missing body input blocks settlement; unknown conversion is held, never inferred\",\n    \"numericBoundary\": \"D37-A approves read-only and one-time direction, not exact health values, units, coefficients or conversion functions; documentary oracle settles identity only and invents no labor-loss number\"\n  },\n  \"outputSaveStageBoundary\": {\n    \"authority\": \"prior GP-05 selection, reinforced by sealed D04 recommendation\",\n    \"owner\": \"D05 stage progression; destination reservation authority supplies secured reservation\",\n    \"precondition\": \"Before entering the output/save stage, secure the matching save reservation for this work/stage/output destination in the same snapshot\",\n    \"notSecured\": \"Wait at the previous completed stage; preserve its exact fractional/completed progress, consumed inputs and unused physical materials; do not produce/store output, consume again or roll back\",\n    \"secured\": \"Permit entering the output/save stage only; no numeric recipe adoption or automatic output commit\",\n    \"null\": \"missing reservation proof blocks stage entry\",\n    \"load\": \"restore prior completed stage plus reservation binding; recheck before entering output/save stage\",\n    \"reservationMechanism\": \"capacity, timing and reservation issuance details remain held; general checkpoint/save constraints are not this stage guard\"\n  },\n  \"recipeCoverage\": {\n    \"recipes\": \"per-recipe IDs/inputs/work/facility specification required by GP-05-A; actual records held\",\n    \"rates\": \"held, not source-certified\",\n    \"bottlenecks\": \"explicit conjunctive constraints; numeric formula below is proposal\",\n    \"demand\": \"approved orders and essential reservations only; zero demand cannot create an order\",\n    \"fractionalProgress\": \"must preserve exact supplied progress; quantization held\",\n    \"consumption\": \"one result once, no consumed refund\",\n    \"storage\": \"verified stock separate from in-transit and reservations; capacity/loss/timing held\",\n    \"repair\": \"qualification/input/phase-specific recipe required, held\",\n    \"salvage\": \"no consumed refund; recovery recipe/yield held\"\n  },\n  \"gurpsLikeBasis\": {\n    \"publicAnchors\": [\n      \"L-success\",\n      \"L-margin\"\n    ],\n    \"use\": \"reference-only 3d6 arithmetic cross-check; D05 production is Seoul-original, not a GURPS 2004 economic rule\",\n    \"exampleTarget\": 10,\n    \"exampleClassification\": \"illustrative Seoul-owned test value, unadopted\",\n    \"economyRollAdoption\": false,\n    \"certification\": \"no Basic source or GURPS 2004 completion claim\"\n  }\n}"
+    }
+  ]
+}
