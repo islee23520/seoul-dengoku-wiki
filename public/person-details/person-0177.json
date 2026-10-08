@@ -208,6 +208,7 @@
         "from": "FH-K176-P-01",
         "to": "K176",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -224,6 +225,7 @@
         "from": "FH-K176-P-02",
         "to": "FH-K176-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -240,6 +242,7 @@
         "from": "FH-K176-M-01",
         "to": "K176",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -256,6 +259,7 @@
         "from": "FH-K176-M-02",
         "to": "FH-K176-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

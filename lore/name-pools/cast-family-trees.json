@@ -210029,6 +210029,7 @@
       "from": "FH-K014-P-01",
       "to": "K014",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -210045,6 +210046,7 @@
       "from": "FH-K014-P-02",
       "to": "FH-K014-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -210061,6 +210063,7 @@
       "from": "FH-K014-P-03",
       "to": "FH-K014-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -210077,6 +210080,7 @@
       "from": "FH-K014-M-01",
       "to": "K014",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -210093,6 +210097,7 @@
       "from": "FH-K014-M-02",
       "to": "FH-K014-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -210109,6 +210114,7 @@
       "from": "FH-K014-M-03",
       "to": "FH-K014-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222756,6 +222762,7 @@
       "from": "FH-K169-M-02",
       "to": "FH-K169-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222772,6 +222779,7 @@
       "from": "FH-K170-P-01",
       "to": "K170",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222788,6 +222796,7 @@
       "from": "FH-K170-P-02",
       "to": "FH-K170-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222804,6 +222813,7 @@
       "from": "FH-K170-M-01",
       "to": "K170",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222820,6 +222830,7 @@
       "from": "FH-K170-M-02",
       "to": "FH-K170-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222836,6 +222847,7 @@
       "from": "FH-K171-P-01",
       "to": "K171",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222852,6 +222864,7 @@
       "from": "FH-K171-P-02",
       "to": "FH-K171-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222868,6 +222881,7 @@
       "from": "FH-K171-M-01",
       "to": "K171",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222884,6 +222898,7 @@
       "from": "FH-K171-M-02",
       "to": "FH-K171-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222900,6 +222915,7 @@
       "from": "FH-K172-P-01",
       "to": "K172",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222916,6 +222932,7 @@
       "from": "FH-K172-P-02",
       "to": "FH-K172-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222932,6 +222949,7 @@
       "from": "FH-K172-P-03",
       "to": "FH-K172-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222948,6 +222966,7 @@
       "from": "FH-K172-M-01",
       "to": "K172",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222964,6 +222983,7 @@
       "from": "FH-K172-M-02",
       "to": "FH-K172-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222980,6 +223000,7 @@
       "from": "FH-K172-M-03",
       "to": "FH-K172-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -222996,6 +223017,7 @@
       "from": "FH-K173-P-01",
       "to": "K173",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223012,6 +223034,7 @@
       "from": "FH-K173-P-02",
       "to": "FH-K173-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223028,6 +223051,7 @@
       "from": "FH-K173-M-01",
       "to": "K173",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223044,6 +223068,7 @@
       "from": "FH-K173-M-02",
       "to": "FH-K173-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223060,6 +223085,7 @@
       "from": "FH-K174-P-01",
       "to": "K174",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223076,6 +223102,7 @@
       "from": "FH-K174-P-02",
       "to": "FH-K174-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223092,6 +223119,7 @@
       "from": "FH-K174-P-03",
       "to": "FH-K174-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223108,6 +223136,7 @@
       "from": "FH-K174-M-01",
       "to": "K174",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223124,6 +223153,7 @@
       "from": "FH-K174-M-02",
       "to": "FH-K174-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223140,6 +223170,7 @@
       "from": "FH-K174-M-03",
       "to": "FH-K174-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223156,6 +223187,7 @@
       "from": "FH-K175-P-01",
       "to": "K175",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223172,6 +223204,7 @@
       "from": "FH-K175-P-02",
       "to": "FH-K175-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223188,6 +223221,7 @@
       "from": "FH-K175-P-03",
       "to": "FH-K175-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223204,6 +223238,7 @@
       "from": "FH-K175-M-01",
       "to": "K175",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223220,6 +223255,7 @@
       "from": "FH-K175-M-02",
       "to": "FH-K175-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223236,6 +223272,7 @@
       "from": "FH-K175-M-03",
       "to": "FH-K175-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223252,6 +223289,7 @@
       "from": "FH-K176-P-01",
       "to": "K176",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223268,6 +223306,7 @@
       "from": "FH-K176-P-02",
       "to": "FH-K176-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223284,6 +223323,7 @@
       "from": "FH-K176-M-01",
       "to": "K176",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223300,6 +223340,7 @@
       "from": "FH-K176-M-02",
       "to": "FH-K176-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223316,6 +223357,7 @@
       "from": "FH-K177-P-01",
       "to": "K177",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223332,6 +223374,7 @@
       "from": "FH-K177-P-02",
       "to": "FH-K177-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223348,6 +223391,7 @@
       "from": "FH-K177-P-03",
       "to": "FH-K177-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223364,6 +223408,7 @@
       "from": "FH-K177-M-01",
       "to": "K177",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223380,6 +223425,7 @@
       "from": "FH-K177-M-02",
       "to": "FH-K177-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223396,6 +223442,7 @@
       "from": "FH-K177-M-03",
       "to": "FH-K177-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223412,6 +223459,7 @@
       "from": "FH-K178-P-01",
       "to": "K178",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223428,6 +223476,7 @@
       "from": "FH-K178-P-02",
       "to": "FH-K178-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223444,6 +223493,7 @@
       "from": "FH-K178-M-01",
       "to": "K178",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223460,6 +223510,7 @@
       "from": "FH-K178-M-02",
       "to": "FH-K178-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223476,6 +223527,7 @@
       "from": "FH-K179-P-01",
       "to": "K179",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223492,6 +223544,7 @@
       "from": "FH-K179-P-02",
       "to": "FH-K179-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223508,6 +223561,7 @@
       "from": "FH-K179-P-03",
       "to": "FH-K179-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223524,6 +223578,7 @@
       "from": "FH-K179-M-01",
       "to": "K179",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223540,6 +223595,7 @@
       "from": "FH-K179-M-02",
       "to": "FH-K179-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223556,6 +223612,7 @@
       "from": "FH-K179-M-03",
       "to": "FH-K179-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223572,6 +223629,7 @@
       "from": "FH-K180-P-01",
       "to": "K180",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223588,6 +223646,7 @@
       "from": "FH-K180-P-02",
       "to": "FH-K180-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223604,6 +223663,7 @@
       "from": "FH-K180-M-01",
       "to": "K180",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223620,6 +223680,7 @@
       "from": "FH-K180-M-02",
       "to": "FH-K180-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223636,6 +223697,7 @@
       "from": "FH-K181-P-01",
       "to": "K181",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223652,6 +223714,7 @@
       "from": "FH-K181-P-02",
       "to": "FH-K181-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223668,6 +223731,7 @@
       "from": "FH-K181-M-01",
       "to": "K181",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223684,6 +223748,7 @@
       "from": "FH-K181-M-02",
       "to": "FH-K181-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223700,6 +223765,7 @@
       "from": "FH-K182-P-01",
       "to": "K182",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223716,6 +223782,7 @@
       "from": "FH-K182-P-02",
       "to": "FH-K182-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223732,6 +223799,7 @@
       "from": "FH-K182-M-01",
       "to": "K182",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223748,6 +223816,7 @@
       "from": "FH-K182-M-02",
       "to": "FH-K182-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223764,6 +223833,7 @@
       "from": "FH-K183-P-01",
       "to": "K183",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223780,6 +223850,7 @@
       "from": "FH-K183-P-02",
       "to": "FH-K183-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223796,6 +223867,7 @@
       "from": "FH-K183-M-01",
       "to": "K183",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223812,6 +223884,7 @@
       "from": "FH-K183-M-02",
       "to": "FH-K183-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223828,6 +223901,7 @@
       "from": "FH-K184-P-01",
       "to": "K184",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223844,6 +223918,7 @@
       "from": "FH-K184-P-02",
       "to": "FH-K184-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223860,6 +223935,7 @@
       "from": "FH-K184-M-01",
       "to": "K184",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223876,6 +223952,7 @@
       "from": "FH-K184-M-02",
       "to": "FH-K184-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223892,6 +223969,7 @@
       "from": "FH-K185-P-01",
       "to": "K185",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223908,6 +223986,7 @@
       "from": "FH-K185-P-02",
       "to": "FH-K185-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223924,6 +224003,7 @@
       "from": "FH-K185-P-03",
       "to": "FH-K185-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223940,6 +224020,7 @@
       "from": "FH-K185-M-01",
       "to": "K185",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223956,6 +224037,7 @@
       "from": "FH-K185-M-02",
       "to": "FH-K185-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223972,6 +224054,7 @@
       "from": "FH-K185-M-03",
       "to": "FH-K185-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -223988,6 +224071,7 @@
       "from": "FH-K186-P-01",
       "to": "K186",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224004,6 +224088,7 @@
       "from": "FH-K186-P-02",
       "to": "FH-K186-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224020,6 +224105,7 @@
       "from": "FH-K186-M-01",
       "to": "K186",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224036,6 +224122,7 @@
       "from": "FH-K186-M-02",
       "to": "FH-K186-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224052,6 +224139,7 @@
       "from": "FH-K187-P-01",
       "to": "K187",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224068,6 +224156,7 @@
       "from": "FH-K187-P-02",
       "to": "FH-K187-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224084,6 +224173,7 @@
       "from": "FH-K187-M-01",
       "to": "K187",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224100,6 +224190,7 @@
       "from": "FH-K187-M-02",
       "to": "FH-K187-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224116,6 +224207,7 @@
       "from": "FH-K188-P-01",
       "to": "K188",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224132,6 +224224,7 @@
       "from": "FH-K188-P-02",
       "to": "FH-K188-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224148,6 +224241,7 @@
       "from": "FH-K188-M-01",
       "to": "K188",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224164,6 +224258,7 @@
       "from": "FH-K188-M-02",
       "to": "FH-K188-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224180,6 +224275,7 @@
       "from": "FH-K189-P-01",
       "to": "K189",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224196,6 +224292,7 @@
       "from": "FH-K189-P-02",
       "to": "FH-K189-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224212,6 +224309,7 @@
       "from": "FH-K189-M-01",
       "to": "K189",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224228,6 +224326,7 @@
       "from": "FH-K189-M-02",
       "to": "FH-K189-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224244,6 +224343,7 @@
       "from": "FH-K190-P-01",
       "to": "K190",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224260,6 +224360,7 @@
       "from": "FH-K190-P-02",
       "to": "FH-K190-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224276,6 +224377,7 @@
       "from": "FH-K190-M-01",
       "to": "K190",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224292,6 +224394,7 @@
       "from": "FH-K190-M-02",
       "to": "FH-K190-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224308,6 +224411,7 @@
       "from": "FH-K191-P-01",
       "to": "K191",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224324,6 +224428,7 @@
       "from": "FH-K191-P-02",
       "to": "FH-K191-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224340,6 +224445,7 @@
       "from": "FH-K191-P-03",
       "to": "FH-K191-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224356,6 +224462,7 @@
       "from": "FH-K191-M-01",
       "to": "K191",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224372,6 +224479,7 @@
       "from": "FH-K191-M-02",
       "to": "FH-K191-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224388,6 +224496,7 @@
       "from": "FH-K191-M-03",
       "to": "FH-K191-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224404,6 +224513,7 @@
       "from": "FH-K192-P-01",
       "to": "K192",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224420,6 +224530,7 @@
       "from": "FH-K192-P-02",
       "to": "FH-K192-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224436,6 +224547,7 @@
       "from": "FH-K192-M-01",
       "to": "K192",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224452,6 +224564,7 @@
       "from": "FH-K192-M-02",
       "to": "FH-K192-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224468,6 +224581,7 @@
       "from": "FH-K193-P-01",
       "to": "K193",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224484,6 +224598,7 @@
       "from": "FH-K193-P-02",
       "to": "FH-K193-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224500,6 +224615,7 @@
       "from": "FH-K193-M-01",
       "to": "K193",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224516,6 +224632,7 @@
       "from": "FH-K193-M-02",
       "to": "FH-K193-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224974,6 +225091,7 @@
       "from": "FH-K199-P-01",
       "to": "K199",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -224990,6 +225108,7 @@
       "from": "FH-K199-P-02",
       "to": "FH-K199-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -225006,6 +225125,7 @@
       "from": "FH-K199-M-01",
       "to": "K199",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -225022,6 +225142,7 @@
       "from": "FH-K199-M-02",
       "to": "FH-K199-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -233096,6 +233217,7 @@
       "from": "FH-K296-M-02",
       "to": "FH-K296-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -233112,6 +233234,7 @@
       "from": "FH-K296-M-03",
       "to": "FH-K296-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -244144,6 +244267,7 @@
       "from": "FH-K430-P-01",
       "to": "K430",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -244160,6 +244284,7 @@
       "from": "FH-K430-P-02",
       "to": "FH-K430-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -244176,6 +244301,7 @@
       "from": "FH-K430-M-01",
       "to": "K430",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -244192,6 +244318,7 @@
       "from": "FH-K430-M-02",
       "to": "FH-K430-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -245364,6 +245491,7 @@
       "from": "FH-K446-P-01",
       "to": "K446",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -245380,6 +245508,7 @@
       "from": "FH-K446-P-02",
       "to": "FH-K446-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -245396,6 +245525,7 @@
       "from": "FH-K446-M-01",
       "to": "K446",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -245412,6 +245542,7 @@
       "from": "FH-K446-M-02",
       "to": "FH-K446-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -246703,6 +246834,7 @@
       "from": "FH-K462-P-01",
       "to": "K462",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -246719,6 +246851,7 @@
       "from": "FH-K462-P-02",
       "to": "FH-K462-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -246735,6 +246868,7 @@
       "from": "FH-K462-P-03",
       "to": "FH-K462-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -246751,6 +246885,7 @@
       "from": "FH-K462-M-01",
       "to": "K462",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -246767,6 +246902,7 @@
       "from": "FH-K462-M-02",
       "to": "FH-K462-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -246783,6 +246919,7 @@
       "from": "FH-K462-M-03",
       "to": "FH-K462-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -248091,6 +248228,7 @@
       "from": "FH-K478-P-01",
       "to": "K478",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -248107,6 +248245,7 @@
       "from": "FH-K478-P-02",
       "to": "FH-K478-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -248123,6 +248262,7 @@
       "from": "FH-K478-P-03",
       "to": "FH-K478-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -248139,6 +248279,7 @@
       "from": "FH-K478-M-01",
       "to": "K478",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -248155,6 +248296,7 @@
       "from": "FH-K478-M-02",
       "to": "FH-K478-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -248171,6 +248313,7 @@
       "from": "FH-K478-M-03",
       "to": "FH-K478-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -249411,6 +249554,7 @@
       "from": "FH-K494-P-01",
       "to": "K494",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -249427,6 +249571,7 @@
       "from": "FH-K494-P-02",
       "to": "FH-K494-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -249443,6 +249588,7 @@
       "from": "FH-K494-M-01",
       "to": "K494",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -249459,6 +249605,7 @@
       "from": "FH-K494-M-02",
       "to": "FH-K494-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -250699,6 +250846,7 @@
       "from": "FH-K510-P-01",
       "to": "K510",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -250715,6 +250863,7 @@
       "from": "FH-K510-P-02",
       "to": "FH-K510-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -250731,6 +250880,7 @@
       "from": "FH-K510-M-01",
       "to": "K510",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -250747,6 +250897,7 @@
       "from": "FH-K510-M-02",
       "to": "FH-K510-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -251919,6 +252070,7 @@
       "from": "FH-K526-P-01",
       "to": "K526",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -251935,6 +252087,7 @@
       "from": "FH-K526-P-02",
       "to": "FH-K526-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -251951,6 +252104,7 @@
       "from": "FH-K526-M-01",
       "to": "K526",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -251967,6 +252121,7 @@
       "from": "FH-K526-M-02",
       "to": "FH-K526-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -253173,6 +253328,7 @@
       "from": "FH-K542-P-01",
       "to": "K542",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -253189,6 +253345,7 @@
       "from": "FH-K542-P-02",
       "to": "FH-K542-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -253205,6 +253362,7 @@
       "from": "FH-K542-M-01",
       "to": "K542",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -253221,6 +253379,7 @@
       "from": "FH-K542-M-02",
       "to": "FH-K542-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -254427,6 +254586,7 @@
       "from": "FH-K558-P-01",
       "to": "K558",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -254443,6 +254603,7 @@
       "from": "FH-K558-P-02",
       "to": "FH-K558-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -254459,6 +254620,7 @@
       "from": "FH-K558-M-01",
       "to": "K558",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -254475,6 +254637,7 @@
       "from": "FH-K558-M-02",
       "to": "FH-K558-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -255715,6 +255878,7 @@
       "from": "FH-K574-P-01",
       "to": "K574",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -255731,6 +255895,7 @@
       "from": "FH-K574-P-02",
       "to": "FH-K574-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -255747,6 +255912,7 @@
       "from": "FH-K574-P-03",
       "to": "FH-K574-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -255763,6 +255929,7 @@
       "from": "FH-K574-M-01",
       "to": "K574",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -255779,6 +255946,7 @@
       "from": "FH-K574-M-02",
       "to": "FH-K574-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -255795,6 +255963,7 @@
       "from": "FH-K574-M-03",
       "to": "FH-K574-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -256899,6 +257068,7 @@
       "from": "FH-K590-P-01",
       "to": "K590",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -256915,6 +257085,7 @@
       "from": "FH-K590-P-02",
       "to": "FH-K590-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -256931,6 +257102,7 @@
       "from": "FH-K590-M-01",
       "to": "K590",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -256947,6 +257119,7 @@
       "from": "FH-K590-M-02",
       "to": "FH-K590-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -258187,6 +258360,7 @@
       "from": "FH-K606-P-01",
       "to": "K606",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -258203,6 +258377,7 @@
       "from": "FH-K606-P-02",
       "to": "FH-K606-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -258219,6 +258394,7 @@
       "from": "FH-K606-P-03",
       "to": "FH-K606-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -258235,6 +258411,7 @@
       "from": "FH-K606-M-01",
       "to": "K606",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -258251,6 +258428,7 @@
       "from": "FH-K606-M-02",
       "to": "FH-K606-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -258267,6 +258445,7 @@
       "from": "FH-K606-M-03",
       "to": "FH-K606-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -259405,6 +259584,7 @@
       "from": "FH-K622-P-01",
       "to": "K622",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -259421,6 +259601,7 @@
       "from": "FH-K622-P-02",
       "to": "FH-K622-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -259437,6 +259618,7 @@
       "from": "FH-K622-M-01",
       "to": "K622",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -259453,6 +259635,7 @@
       "from": "FH-K622-M-02",
       "to": "FH-K622-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -260591,6 +260774,7 @@
       "from": "FH-K638-P-01",
       "to": "K638",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -260607,6 +260791,7 @@
       "from": "FH-K638-P-02",
       "to": "FH-K638-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -260623,6 +260808,7 @@
       "from": "FH-K638-P-03",
       "to": "FH-K638-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -260639,6 +260825,7 @@
       "from": "FH-K638-M-01",
       "to": "K638",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -260655,6 +260842,7 @@
       "from": "FH-K638-M-02",
       "to": "FH-K638-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -260671,6 +260859,7 @@
       "from": "FH-K638-M-03",
       "to": "FH-K638-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -261945,6 +262134,7 @@
       "from": "FH-K654-P-01",
       "to": "K654",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -261961,6 +262151,7 @@
       "from": "FH-K654-P-02",
       "to": "FH-K654-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -261977,6 +262168,7 @@
       "from": "FH-K654-M-01",
       "to": "K654",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -261993,6 +262185,7 @@
       "from": "FH-K654-M-02",
       "to": "FH-K654-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -263165,6 +263358,7 @@
       "from": "FH-K670-P-01",
       "to": "K670",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -263181,6 +263375,7 @@
       "from": "FH-K670-P-02",
       "to": "FH-K670-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -263197,6 +263392,7 @@
       "from": "FH-K670-P-03",
       "to": "FH-K670-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -263213,6 +263409,7 @@
       "from": "FH-K670-M-01",
       "to": "K670",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -263229,6 +263426,7 @@
       "from": "FH-K670-M-02",
       "to": "FH-K670-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -263245,6 +263443,7 @@
       "from": "FH-K670-M-03",
       "to": "FH-K670-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -264553,6 +264752,7 @@
       "from": "FH-K686-P-01",
       "to": "K686",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -264569,6 +264769,7 @@
       "from": "FH-K686-P-02",
       "to": "FH-K686-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -264585,6 +264786,7 @@
       "from": "FH-K686-M-01",
       "to": "K686",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -264601,6 +264803,7 @@
       "from": "FH-K686-M-02",
       "to": "FH-K686-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -265773,6 +265976,7 @@
       "from": "FH-K702-P-01",
       "to": "K702",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -265789,6 +265993,7 @@
       "from": "FH-K702-P-02",
       "to": "FH-K702-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -265805,6 +266010,7 @@
       "from": "FH-K702-M-01",
       "to": "K702",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -265821,6 +266027,7 @@
       "from": "FH-K702-M-02",
       "to": "FH-K702-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -267061,6 +267268,7 @@
       "from": "FH-K718-P-01",
       "to": "K718",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -267077,6 +267285,7 @@
       "from": "FH-K718-P-02",
       "to": "FH-K718-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -267093,6 +267302,7 @@
       "from": "FH-K718-M-01",
       "to": "K718",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -267109,6 +267319,7 @@
       "from": "FH-K718-M-02",
       "to": "FH-K718-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -268417,6 +268628,7 @@
       "from": "FH-K734-P-01",
       "to": "K734",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -268433,6 +268645,7 @@
       "from": "FH-K734-P-02",
       "to": "FH-K734-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -268449,6 +268662,7 @@
       "from": "FH-K734-P-03",
       "to": "FH-K734-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -268465,6 +268679,7 @@
       "from": "FH-K734-M-01",
       "to": "K734",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -268481,6 +268696,7 @@
       "from": "FH-K734-M-02",
       "to": "FH-K734-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -268497,6 +268713,7 @@
       "from": "FH-K734-M-03",
       "to": "FH-K734-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -269771,6 +269988,7 @@
       "from": "FH-K750-P-01",
       "to": "K750",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -269787,6 +270005,7 @@
       "from": "FH-K750-P-02",
       "to": "FH-K750-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -269803,6 +270022,7 @@
       "from": "FH-K750-P-03",
       "to": "FH-K750-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -269819,6 +270039,7 @@
       "from": "FH-K750-M-01",
       "to": "K750",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -269835,6 +270056,7 @@
       "from": "FH-K750-M-02",
       "to": "FH-K750-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -269851,6 +270073,7 @@
       "from": "FH-K750-M-03",
       "to": "FH-K750-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -271125,6 +271348,7 @@
       "from": "FH-K766-P-01",
       "to": "K766",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -271141,6 +271365,7 @@
       "from": "FH-K766-P-02",
       "to": "FH-K766-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -271157,6 +271382,7 @@
       "from": "FH-K766-M-01",
       "to": "K766",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -271173,6 +271399,7 @@
       "from": "FH-K766-M-02",
       "to": "FH-K766-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -272515,6 +272742,7 @@
       "from": "FH-K782-P-01",
       "to": "K782",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -272531,6 +272759,7 @@
       "from": "FH-K782-P-02",
       "to": "FH-K782-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -272547,6 +272776,7 @@
       "from": "FH-K782-M-01",
       "to": "K782",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -272563,6 +272793,7 @@
       "from": "FH-K782-M-02",
       "to": "FH-K782-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -273871,6 +274102,7 @@
       "from": "FH-K798-P-01",
       "to": "K798",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -273887,6 +274119,7 @@
       "from": "FH-K798-P-02",
       "to": "FH-K798-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -273903,6 +274136,7 @@
       "from": "FH-K798-P-03",
       "to": "FH-K798-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -273919,6 +274153,7 @@
       "from": "FH-K798-M-01",
       "to": "K798",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -273935,6 +274170,7 @@
       "from": "FH-K798-M-02",
       "to": "FH-K798-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -273951,6 +274187,7 @@
       "from": "FH-K798-M-03",
       "to": "FH-K798-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -275191,6 +275428,7 @@
       "from": "FH-K814-P-01",
       "to": "K814",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -275207,6 +275445,7 @@
       "from": "FH-K814-P-02",
       "to": "FH-K814-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -275223,6 +275462,7 @@
       "from": "FH-K814-P-03",
       "to": "FH-K814-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -275239,6 +275479,7 @@
       "from": "FH-K814-M-01",
       "to": "K814",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -275255,6 +275496,7 @@
       "from": "FH-K814-M-02",
       "to": "FH-K814-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -275271,6 +275513,7 @@
       "from": "FH-K814-M-03",
       "to": "FH-K814-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -276545,6 +276788,7 @@
       "from": "FH-K830-P-01",
       "to": "K830",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -276561,6 +276805,7 @@
       "from": "FH-K830-P-02",
       "to": "FH-K830-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -276577,6 +276822,7 @@
       "from": "FH-K830-M-01",
       "to": "K830",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -276593,6 +276839,7 @@
       "from": "FH-K830-M-02",
       "to": "FH-K830-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -277799,6 +278046,7 @@
       "from": "FH-K846-P-01",
       "to": "K846",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -277815,6 +278063,7 @@
       "from": "FH-K846-P-02",
       "to": "FH-K846-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -277831,6 +278080,7 @@
       "from": "FH-K846-M-01",
       "to": "K846",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -277847,6 +278097,7 @@
       "from": "FH-K846-M-02",
       "to": "FH-K846-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -279155,6 +279406,7 @@
       "from": "FH-K862-P-01",
       "to": "K862",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -279171,6 +279423,7 @@
       "from": "FH-K862-P-02",
       "to": "FH-K862-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -279187,6 +279440,7 @@
       "from": "FH-K862-P-03",
       "to": "FH-K862-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -279203,6 +279457,7 @@
       "from": "FH-K862-M-01",
       "to": "K862",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -279219,6 +279474,7 @@
       "from": "FH-K862-M-02",
       "to": "FH-K862-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -279235,6 +279491,7 @@
       "from": "FH-K862-M-03",
       "to": "FH-K862-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -280373,6 +280630,7 @@
       "from": "FH-K878-P-01",
       "to": "K878",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -280389,6 +280647,7 @@
       "from": "FH-K878-P-02",
       "to": "FH-K878-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -280405,6 +280664,7 @@
       "from": "FH-K878-M-01",
       "to": "K878",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -280421,6 +280681,7 @@
       "from": "FH-K878-M-02",
       "to": "FH-K878-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -281695,6 +281956,7 @@
       "from": "FH-K894-P-01",
       "to": "K894",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -281711,6 +281973,7 @@
       "from": "FH-K894-P-02",
       "to": "FH-K894-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -281727,6 +281990,7 @@
       "from": "FH-K894-P-03",
       "to": "FH-K894-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -281743,6 +282007,7 @@
       "from": "FH-K894-M-01",
       "to": "K894",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -281759,6 +282024,7 @@
       "from": "FH-K894-M-02",
       "to": "FH-K894-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -281775,6 +282041,7 @@
       "from": "FH-K894-M-03",
       "to": "FH-K894-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -283083,6 +283350,7 @@
       "from": "FH-K910-P-01",
       "to": "K910",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -283099,6 +283367,7 @@
       "from": "FH-K910-P-02",
       "to": "FH-K910-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -283115,6 +283384,7 @@
       "from": "FH-K910-M-01",
       "to": "K910",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -283131,6 +283401,7 @@
       "from": "FH-K910-M-02",
       "to": "FH-K910-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -284371,6 +284642,7 @@
       "from": "FH-K926-P-01",
       "to": "K926",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -284387,6 +284659,7 @@
       "from": "FH-K926-P-02",
       "to": "FH-K926-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -284403,6 +284676,7 @@
       "from": "FH-K926-M-01",
       "to": "K926",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -284419,6 +284693,7 @@
       "from": "FH-K926-M-02",
       "to": "FH-K926-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -285693,6 +285968,7 @@
       "from": "FH-K942-P-01",
       "to": "K942",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -285709,6 +285985,7 @@
       "from": "FH-K942-P-02",
       "to": "FH-K942-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -285725,6 +286002,7 @@
       "from": "FH-K942-P-03",
       "to": "FH-K942-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -285741,6 +286019,7 @@
       "from": "FH-K942-M-01",
       "to": "K942",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -285757,6 +286036,7 @@
       "from": "FH-K942-M-02",
       "to": "FH-K942-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -285773,6 +286053,7 @@
       "from": "FH-K942-M-03",
       "to": "FH-K942-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -286945,6 +287226,7 @@
       "from": "FH-K958-P-01",
       "to": "K958",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -286961,6 +287243,7 @@
       "from": "FH-K958-P-02",
       "to": "FH-K958-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -286977,6 +287260,7 @@
       "from": "FH-K958-M-01",
       "to": "K958",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -286993,6 +287277,7 @@
       "from": "FH-K958-M-02",
       "to": "FH-K958-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -288335,6 +288620,7 @@
       "from": "FH-K974-P-01",
       "to": "K974",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -288351,6 +288637,7 @@
       "from": "FH-K974-P-02",
       "to": "FH-K974-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -288367,6 +288654,7 @@
       "from": "FH-K974-M-01",
       "to": "K974",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -288383,6 +288671,7 @@
       "from": "FH-K974-M-02",
       "to": "FH-K974-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289657,6 +289946,7 @@
       "from": "FH-K990-P-01",
       "to": "K990",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289673,6 +289963,7 @@
       "from": "FH-K990-P-02",
       "to": "FH-K990-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289689,6 +289980,7 @@
       "from": "FH-K990-P-03",
       "to": "FH-K990-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289705,6 +289997,7 @@
       "from": "FH-K990-M-01",
       "to": "K990",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289721,6 +290014,7 @@
       "from": "FH-K990-M-02",
       "to": "FH-K990-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289737,6 +290031,7 @@
       "from": "FH-K990-M-03",
       "to": "FH-K990-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291229,6 +291524,7 @@
       "from": "FH-K1011-P-01",
       "to": "K1011",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291245,6 +291541,7 @@
       "from": "FH-K1011-P-02",
       "to": "FH-K1011-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291261,6 +291558,7 @@
       "from": "FH-K1011-M-01",
       "to": "K1011",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291294,6 +291592,7 @@
       "from": "FH-K1013-P-01",
       "to": "K1013",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291327,6 +291626,7 @@
       "from": "FH-K1013-M-01",
       "to": "K1013",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291411,6 +291711,7 @@
       "from": "FH-K1014-M-02",
       "to": "FH-K1014-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291427,6 +291728,7 @@
       "from": "FH-K1015-P-01",
       "to": "K1015",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291443,6 +291745,7 @@
       "from": "FH-K1015-P-02",
       "to": "FH-K1015-P-01",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -291459,6 +291762,7 @@
       "from": "FH-K1015-M-01",
       "to": "K1015",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292045,6 +292349,7 @@
       "from": "FH-K182-P-03",
       "to": "FH-K182-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292058,6 +292363,7 @@
       "from": "FH-K182-M-03",
       "to": "FH-K182-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292071,6 +292377,7 @@
       "from": "FH-K183-P-03",
       "to": "FH-K183-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292084,6 +292391,7 @@
       "from": "FH-K183-M-03",
       "to": "FH-K183-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292097,6 +292405,7 @@
       "from": "FH-K171-P-03",
       "to": "FH-K171-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292110,6 +292419,7 @@
       "from": "FH-K171-M-03",
       "to": "FH-K171-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292123,6 +292433,7 @@
       "from": "FH-K173-P-03",
       "to": "FH-K173-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292136,6 +292447,7 @@
       "from": "FH-K173-M-03",
       "to": "FH-K173-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292149,6 +292461,7 @@
       "from": "FH-K175-P-04",
       "to": "FH-K175-P-03",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292162,6 +292475,7 @@
       "from": "FH-K175-M-04",
       "to": "FH-K175-M-03",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292189,6 +292503,7 @@
       "from": "FH-K169-M-03",
       "to": "FH-K169-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292202,6 +292517,7 @@
       "from": "FH-K178-P-03",
       "to": "FH-K178-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292215,6 +292531,7 @@
       "from": "FH-K178-M-03",
       "to": "FH-K178-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292228,6 +292545,7 @@
       "from": "FH-K181-P-03",
       "to": "FH-K181-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292241,6 +292559,7 @@
       "from": "FH-K181-M-03",
       "to": "FH-K181-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292254,6 +292573,7 @@
       "from": "FH-K184-P-03",
       "to": "FH-K184-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292267,6 +292587,7 @@
       "from": "FH-K184-M-03",
       "to": "FH-K184-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292280,6 +292601,7 @@
       "from": "FH-K187-P-03",
       "to": "FH-K187-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292293,6 +292615,7 @@
       "from": "FH-K187-M-03",
       "to": "FH-K187-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292306,6 +292629,7 @@
       "from": "FH-K189-P-03",
       "to": "FH-K189-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292319,6 +292643,7 @@
       "from": "FH-K189-M-03",
       "to": "FH-K189-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292332,6 +292657,7 @@
       "from": "FH-K190-P-03",
       "to": "FH-K190-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292345,6 +292671,7 @@
       "from": "FH-K190-M-03",
       "to": "FH-K190-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292358,6 +292685,7 @@
       "from": "FH-K430-P-03",
       "to": "FH-K430-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292371,6 +292699,7 @@
       "from": "FH-K430-M-03",
       "to": "FH-K430-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292384,6 +292713,7 @@
       "from": "FH-K446-P-03",
       "to": "FH-K446-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292397,6 +292727,7 @@
       "from": "FH-K446-M-03",
       "to": "FH-K446-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292410,6 +292741,7 @@
       "from": "FH-K510-P-03",
       "to": "FH-K510-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292423,6 +292755,7 @@
       "from": "FH-K510-M-03",
       "to": "FH-K510-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292436,6 +292769,7 @@
       "from": "FH-K526-P-03",
       "to": "FH-K526-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292449,6 +292783,7 @@
       "from": "FH-K526-M-03",
       "to": "FH-K526-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292462,6 +292797,7 @@
       "from": "FH-K542-P-03",
       "to": "FH-K542-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292475,6 +292811,7 @@
       "from": "FH-K542-M-03",
       "to": "FH-K542-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292488,6 +292825,7 @@
       "from": "FH-K574-P-04",
       "to": "FH-K574-P-03",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292501,6 +292839,7 @@
       "from": "FH-K574-M-04",
       "to": "FH-K574-M-03",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292514,6 +292853,7 @@
       "from": "FH-K590-P-03",
       "to": "FH-K590-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292527,6 +292867,7 @@
       "from": "FH-K590-M-03",
       "to": "FH-K590-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292540,6 +292881,7 @@
       "from": "FH-K606-P-04",
       "to": "FH-K606-P-03",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292553,6 +292895,7 @@
       "from": "FH-K606-M-04",
       "to": "FH-K606-M-03",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292566,6 +292909,7 @@
       "from": "FH-K622-P-03",
       "to": "FH-K622-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292579,6 +292923,7 @@
       "from": "FH-K622-M-03",
       "to": "FH-K622-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292592,6 +292937,7 @@
       "from": "FH-K638-P-04",
       "to": "FH-K638-P-03",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292605,6 +292951,7 @@
       "from": "FH-K638-M-04",
       "to": "FH-K638-M-03",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292618,6 +292965,7 @@
       "from": "FH-K654-P-03",
       "to": "FH-K654-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292631,6 +292979,7 @@
       "from": "FH-K654-M-03",
       "to": "FH-K654-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292644,6 +292993,7 @@
       "from": "FH-K686-P-03",
       "to": "FH-K686-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292657,6 +293007,7 @@
       "from": "FH-K686-M-03",
       "to": "FH-K686-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292670,6 +293021,7 @@
       "from": "FH-K702-P-03",
       "to": "FH-K702-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292683,6 +293035,7 @@
       "from": "FH-K702-M-03",
       "to": "FH-K702-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292696,6 +293049,7 @@
       "from": "FH-K718-P-03",
       "to": "FH-K718-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292709,6 +293063,7 @@
       "from": "FH-K718-M-03",
       "to": "FH-K718-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292722,6 +293077,7 @@
       "from": "FH-K766-P-03",
       "to": "FH-K766-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292735,6 +293091,7 @@
       "from": "FH-K766-M-03",
       "to": "FH-K766-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292748,6 +293105,7 @@
       "from": "FH-K782-P-03",
       "to": "FH-K782-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292761,6 +293119,7 @@
       "from": "FH-K782-M-03",
       "to": "FH-K782-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292774,6 +293133,7 @@
       "from": "FH-K830-P-03",
       "to": "FH-K830-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292787,6 +293147,7 @@
       "from": "FH-K830-M-03",
       "to": "FH-K830-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292800,6 +293161,7 @@
       "from": "FH-K846-P-03",
       "to": "FH-K846-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292813,6 +293175,7 @@
       "from": "FH-K846-M-03",
       "to": "FH-K846-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292826,6 +293189,7 @@
       "from": "FH-K878-P-03",
       "to": "FH-K878-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292839,6 +293203,7 @@
       "from": "FH-K878-M-03",
       "to": "FH-K878-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292852,6 +293217,7 @@
       "from": "FH-K894-P-04",
       "to": "FH-K894-P-03",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292865,6 +293231,7 @@
       "from": "FH-K894-M-04",
       "to": "FH-K894-M-03",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292878,6 +293245,7 @@
       "from": "FH-K910-P-03",
       "to": "FH-K910-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292891,6 +293259,7 @@
       "from": "FH-K910-M-03",
       "to": "FH-K910-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292904,6 +293273,7 @@
       "from": "FH-K926-P-03",
       "to": "FH-K926-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292917,6 +293287,7 @@
       "from": "FH-K926-M-03",
       "to": "FH-K926-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292930,6 +293301,7 @@
       "from": "FH-K958-P-03",
       "to": "FH-K958-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292943,6 +293315,7 @@
       "from": "FH-K958-M-03",
       "to": "FH-K958-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292956,6 +293329,7 @@
       "from": "FH-K974-P-03",
       "to": "FH-K974-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292969,6 +293343,7 @@
       "from": "FH-K974-M-03",
       "to": "FH-K974-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292982,6 +293357,7 @@
       "from": "FH-K193-P-03",
       "to": "FH-K193-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -292995,6 +293371,7 @@
       "from": "FH-K193-M-03",
       "to": "FH-K193-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293008,6 +293385,7 @@
       "from": "FH-K199-P-03",
       "to": "FH-K199-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293021,6 +293399,7 @@
       "from": "FH-K199-M-03",
       "to": "FH-K199-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293034,6 +293413,7 @@
       "from": "FH-K1011-P-03",
       "to": "FH-K1011-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293061,6 +293441,7 @@
       "from": "FH-K1012-M-02",
       "to": "FH-K1012-M-01",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293074,6 +293455,7 @@
       "from": "FH-K1012-M-03",
       "to": "FH-K1012-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293087,6 +293469,7 @@
       "from": "FH-K1013-P-03",
       "to": "FH-K1013-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293128,6 +293511,7 @@
       "from": "FH-K1014-M-03",
       "to": "FH-K1014-M-02",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -293141,6 +293525,7 @@
       "from": "FH-K1015-P-03",
       "to": "FH-K1015-P-02",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {

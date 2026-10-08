@@ -12,6 +12,21 @@ import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validat
 
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
 
+test('all final foreign lane decisions preserve named endpoints and distinguish authoring from source proof', async () => {
+  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
+  assert.equal(decisions.finalOwnerAuthoredRoles.length, 385)
+  for (const mapping of decisions.finalOwnerAuthoredRoles) {
+    const edge = graph.edges.find(edge => edge.id === mapping.edgeId)
+    assert.deepEqual([edge.from, edge.to, edge.type, edge.parentRole], [mapping.from, mapping.to, 'biological', mapping.parentRole])
+    assert.equal(mapping.decisionKind, 'owner-authored')
+    assert.ok(mapping.selectionRef)
+  }
+  assert.equal(graph.edges.filter(edge => edge.type === 'biological' && !edge.parentRole).length, 0)
+  assert.equal(decisions.unresolved.length, 0)
+})
+
+
 test('applies all approved external ancestors without changing dates or given names', async () => {
   const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
@@ -100,7 +115,7 @@ test('source-bound corrections preserve all nineteen roles through the real load
     assert.ok(correction.sourceRefs.length)
   }
   assert.equal(graph.edges.filter(edge => edge.type === 'biological').length, 5010)
-  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 4625)
+  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 5010)
 })
 
 
