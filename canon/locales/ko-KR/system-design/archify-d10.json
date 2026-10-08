@@ -1,0 +1,262 @@
+{
+ "schemaVersion": 1,
+ "locale": "ko-KR",
+ "status": "accepted",
+ "source": {
+  "path": "system-design/Archify-D10.md",
+  "lineStart": 1,
+  "lineEnd": 75,
+  "sha256": "943645854713e09098f73528d8fc9391b15dccea73d8d00b04bb7bb0bb95b862"
+ },
+ "document": {
+  "id": "doc.Archify-D10",
+  "blockIds": [
+   "archify.b1",
+   "archify.b2",
+   "archify.b3",
+   "archify.b4",
+   "archify.b5",
+   "archify.b6",
+   "archify.b7",
+   "archify.b8",
+   "archify.b9",
+   "archify.b10",
+   "archify.b11",
+   "archify.b12",
+   "archify.b13",
+   "archify.b14",
+   "archify.b15",
+   "archify.b16",
+   "archify.b17"
+  ]
+ },
+ "blocks": [
+  {
+   "id": "archify.b1",
+   "kind": "heading",
+   "level": 1,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D10 아치파이 — 작위·권리·명분·인준 전체 논리"
+    }
+   ]
+  },
+  {
+   "id": "archify.b2",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b3",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "기계 입력과 검증 흐름"
+    }
+   ]
+  },
+  {
+   "id": "archify.b4",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "archify",
+   "text": "{\"domainId\":\"D10\",\"diagramId\":\"d10-flow\",\"moduleTitle\":\"D10 운용 흐름\"}"
+  },
+  {
+   "id": "archify.b5",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "소비자 계약(authority-with-optional-forgery-performance-contest): Same right/title/basis persists through suspension; authority/consent/ratification separate. Forgery performance win creates no recognized right or war authority."
+    }
+   ]
+  },
+  {
+   "id": "archify.b6",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "계산과 출력"
+    }
+   ]
+  },
+  {
+   "id": "archify.b7",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "text",
+   "text": "legal-holder [] holders(titleId) = beneficiaries of active rights recognized as holding rights for exact titleId\npressability [] pressable = right.status == active AND exact title exists AND beneficiary alive AND actor has separate war authority AND registered CB binds actor, beneficiary, title, target and effects\ntransfer [] same rightId/titleId/basisId, new beneficiary only after exact consent, authority, required ratification and one atomic commit\ninheritance-recognition [] recognized successor only when a recorded current title-specific eligibility record names the successor; transferability alone is insufficient\neligibility-loss [] active -> suspended for the same rightId/titleId/basisId; no deletion, reassignment or fabricated expiry\nfabrication-mandate [] one exact authorized worker + one exact mandateEventId + one exact target title/beneficiary; mandate is consumed once and creates no right without separate completion/recognition event\ncb-beneficiary-survival [] beneficiary death invalidates the frozen beneficiary CB unless a separately authored CB replacement rule exists; attacker never silently becomes beneficiary\nduplicate-basis [] different rightId values with the same beneficiaryId/titleId may coexist when basisId differs; no merge, overwrite or exclusive inference\nsame-title-restoration [] a suspended title-invalid right may restore only to active with the same rightId and exact same titleId after explicit restored-title version evidence\nD10-F1 [후보·승인 전] pressable=right.active && exactTitleExists && beneficiaryAlive && separateWarAuthority && registeredCBBindsAllRequiredIds\nD10-F2 [후보·승인 전] eligibilityLoss: same rightId/titleId/basisId -> suspended; restoration requires exact same titleId and evidence; transfer changes beneficiary only after consent/authority/ratification\n"
+  },
+  {
+   "id": "archify.b8",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b9",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "상태 필드와 보존 경계"
+    }
+   ]
+  },
+  {
+   "id": "archify.b10",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "title — TitleRecord (stable title identity and registered territory set)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "right — RightInstance (one person-title-basis legal relation)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "control — ControlRecord | null (effective control of a registered title/territory scope)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "officeTier — string | null (D09 office classification)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "event — typed D10 event (immutable event identity at exact revision/rules version)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "ratification — RatificationEvidence[] (registered institution, scope and evidence identifiers)"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b11",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "자료 소유자는 D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+    }
+   ]
+  },
+  {
+   "id": "archify.b12",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "오류·보류 코드"
+    }
+   ]
+  },
+  {
+   "id": "archify.b13",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "후보 오류: E_POLICY, E_AUTHORITY, E_CONSENT, E_REVISION"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "기존 평가기 오류: E_TYPE, E_FIELDS, E_DUPLICATE_ID, E_TITLE, E_VERSION, E_REPLAY_CONFLICT, E_STALE_SNAPSHOT, E_CONSENT, E_AUTHORITY, E_RATIFICATION"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b14",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "차용 제거와 적용 범위"
+    }
+   ]
+  },
+  {
+   "id": "archify.b15",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+    }
+   ]
+  },
+  {
+   "id": "archify.b16",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b17",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D10-right-state-and-mandate(TOOL/tools/mechanisms/original-trpg/right-state-and-mandate.mjs, TOOL/tools/mechanisms/original-trpg/right-state-and-mandate.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+    }
+   ]
+  }
+ ]
+}

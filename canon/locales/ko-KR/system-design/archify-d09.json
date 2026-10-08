@@ -1,0 +1,301 @@
+{
+ "schemaVersion": 1,
+ "locale": "ko-KR",
+ "status": "accepted",
+ "source": {
+  "path": "system-design/Archify-D09.md",
+  "lineStart": 1,
+  "lineEnd": 80,
+  "sha256": "8c85f0907271ec7b2a31d49043bed023270017340f89b64011f7294e75784d48"
+ },
+ "document": {
+  "id": "doc.Archify-D09",
+  "blockIds": [
+   "archify.b1",
+   "archify.b2",
+   "archify.b3",
+   "archify.b4",
+   "archify.b5",
+   "archify.b6",
+   "archify.b7",
+   "archify.b8",
+   "archify.b9",
+   "archify.b10",
+   "archify.b11",
+   "archify.b12",
+   "archify.b13",
+   "archify.b14",
+   "archify.b15",
+   "archify.b16",
+   "archify.b17"
+  ]
+ },
+ "blocks": [
+  {
+   "id": "archify.b1",
+   "kind": "heading",
+   "level": 1,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D09 아치파이 — 국가·정부·기관·직위 전체 논리"
+    }
+   ]
+  },
+  {
+   "id": "archify.b2",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 페이지는 국가·정부·기관·직위 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b3",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "기계 입력과 검증 흐름"
+    }
+   ]
+  },
+  {
+   "id": "archify.b4",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "archify",
+   "text": "{\"domainId\":\"D09\",\"diagramId\":\"d09-flow\",\"moduleTitle\":\"D09 운용 흐름\"}"
+  },
+  {
+   "id": "archify.b5",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "소비자 계약(authority-and-counting-no-roll): Unique valid ballots and eligible voters; registered tie resolver or vacant, never d10 tie-break or highest-rating appointment."
+    }
+   ]
+  },
+  {
+   "id": "archify.b6",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "계산과 출력"
+    }
+   ]
+  },
+  {
+   "id": "archify.b7",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "text",
+   "text": "D09-CANDIDATE-FILTER [approved-structure-payload-values-per-state] eligible = candidates where eligible=true and, when exam.required, examScore is known in exam.scoreUnit and examScore >= exam.minimumScore\nD09-QUORUM [approved-structure-payload-values-per-state] participatingVoters = count(unique valid voter IDs with one valid ballot); met = mode=count ? participatingVoters >= requiredCount : participatingVoters == eligibleVoterCount\nD09-VOTE-TALLY [approved-structure] tally[candidateId] = count(valid ballots for candidateId); leaders = eligible candidates with maximal tally\nD09-TIE [approved-structure-payload-values-per-state] resolver-order selects the first tied candidate in orderedCandidateIds; remain-vacant selects nobody\nD09-LEGITIMACY-STATUS [approved-categorical-only] lawful when approved matching procedure completes selection and every required appointment/ratification condition; otherwise selection-pending|no-candidate|quorum-unmet|tie-unresolved|appointment-blocked\nD09-LEGITIMACY-SCORE [proposal-held] null\nGURPS-LIKE-REFERENCE [not-used-by-D09-resolution] No 3d6 roll, margin or contest is invoked unless a future per-state payload explicitly and separately approves one.\nD09-F1 [후보·승인 전] eligible=explicitEligible && (!examRequired || knownScore>=registeredMinimum); quorum=count(uniqueValidVoters)>=requiredCount OR all mode equality; tally=count(validBallots per candidate)\nD09-F2 [후보·승인 전] unique top tally wins selection; tie uses registered resolver order or remains vacant; lawful only after required appointment and ratification\n"
+  },
+  {
+   "id": "archify.b8",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D09의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b9",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "상태 필드와 보존 경계"
+    }
+   ]
+  },
+  {
+   "id": "archify.b10",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "eventId — stableId (identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "stateId — stableId (identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "institutionId,officeId — stableId (identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "holderId — stable person ID|null (identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "treasury — integer (explicit treasuryUnit)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "selector — vote|appointment|exam-then-vote|exam-then-appointment (enum)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "candidates — array of {personId,eligible,examScore|null} (person/score-unit)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "voters,votes — stable-ID arrays (person/ballot)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "quorum — {mode:count,requiredCount}|{mode:all-eligible} (voter-count)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "tieRule — {mode:resolver-order,orderedCandidateIds}|{mode:remain-vacant} (identity-order)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "examRule — {required,minimumScore,scoreUnit} (declared scoreUnit)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "appointmentRule — {appointingActorId,ratifierId|null,ratificationRequired} (identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "actingRule — {actorId,allowedActions[]}|null (identity/action-id)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "snapshotRevision,procedureRevision,rulesVersion — revision (version)"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b11",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "자료 소유자는 D09 owns country, government, institution, office-procedure, acting-scope, legitimacy-status and continuity records; D01 owns person identity/life; D08 owns family and marriage; D10 owns titles/claims; D11 owns grants and physical handover; D12 owns body succession; D17 owns negotiated terms; D18 owns time/save boundaries, 유지 계약은 D09-CANDIDATE-FILTER·D09-QUORUM·D09-VOTE-TALLY·D09-TIE·D09-LEGITIMACY-STATUS·GURPS-LIKE-REFERENCE다. 상태 소유 경계는 institution+office IDs,procedure revision,eligible candidates/voters,ballots,quorum,tie rule,appointment/ratification,acting scope. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+    }
+   ]
+  },
+  {
+   "id": "archify.b12",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "오류·보류 코드"
+    }
+   ]
+  },
+  {
+   "id": "archify.b13",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "후보 오류: E_POLICY, E_AUTHORITY, E_UNIT, E_EVENT_CONFLICT"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "기존 평가기 오류: E_INPUT, E_UNIT, E_STALE, E_DUPLICATE, E_PROPOSAL, E_ELIGIBILITY, E_QUORUM, E_TIE, E_AUTHORITY"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b14",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "차용 제거와 적용 범위"
+    }
+   ]
+  },
+  {
+   "id": "archify.b15",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+    }
+   ]
+  },
+  {
+   "id": "archify.b16",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b17",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D09-office-procedure-resolution(TOOL/tools/mechanisms/original-trpg/office-procedure-resolution.mjs, TOOL/tools/mechanisms/original-trpg/office-procedure-resolution.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+    }
+   ]
+  }
+ ]
+}

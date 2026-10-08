@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "node scripts/generate-catalog.mjs",
+    "generate": "node scripts/generate-catalog.mjs && node scripts/prepare-archify.mjs",
+    "prepare:archify": "node scripts/prepare-archify.mjs",
     "build": "npm run generate && tsc --noEmit -p tsconfig.json && vite build",
     "preview": "vite preview",
     "test": "vitest run"

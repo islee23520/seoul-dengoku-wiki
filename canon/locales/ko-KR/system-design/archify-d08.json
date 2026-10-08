@@ -1,0 +1,289 @@
+{
+ "schemaVersion": 1,
+ "locale": "ko-KR",
+ "status": "accepted",
+ "source": {
+  "path": "system-design/Archify-D08.md",
+  "lineStart": 1,
+  "lineEnd": 80,
+  "sha256": "901155ababd671e79115789c2968acf9dc7e42d047ba82b8e0f16681ea82f423"
+ },
+ "document": {
+  "id": "doc.Archify-D08",
+  "blockIds": [
+   "archify.b1",
+   "archify.b2",
+   "archify.b3",
+   "archify.b4",
+   "archify.b5",
+   "archify.b6",
+   "archify.b7",
+   "archify.b8",
+   "archify.b9",
+   "archify.b10",
+   "archify.b11",
+   "archify.b12",
+   "archify.b13",
+   "archify.b14",
+   "archify.b15",
+   "archify.b16",
+   "archify.b17"
+  ]
+ },
+ "blocks": [
+  {
+   "id": "archify.b1",
+   "kind": "heading",
+   "level": 1,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D08 아치파이 — 가문·친족·혼인·양자 전체 논리"
+    }
+   ]
+  },
+  {
+   "id": "archify.b2",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 페이지는 가문·친족·혼인·양자 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b3",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "기계 입력과 검증 흐름"
+    }
+   ]
+  },
+  {
+   "id": "archify.b4",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "archify",
+   "text": "{\"domainId\":\"D08\",\"diagramId\":\"d08-flow\",\"moduleTitle\":\"D08 운용 흐름\"}"
+  },
+  {
+   "id": "archify.b5",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "소비자 계약(authority-no-roll): Registered forum plus individual required consents. Joint signer set exactly equals current owner set; persons not transferable property."
+    }
+   ]
+  },
+  {
+   "id": "archify.b6",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "계산과 출력"
+    }
+   ]
+  },
+  {
+   "id": "archify.b7",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "text",
+   "text": "forum-gate [owner-selected-symbolic-contract] mayAdjudicate = forumLaw.registered AND forumLaw.authorized; routeEligible = mayAdjudicate AND forumLaw.routePermitted\nmarriage-record-state [approved-record-shape] bothDirectConsents = consent[A] AND consent[B]; recordsPresent = bothDirectConsents OR ratificationRecordExists\nmarriage-formation [approved-bounded-state-transition] if forum unknown => undetermined-law; if explicit scenario unformed => unformed-explicit; if authorized forum adjudication returns formed => formed; otherwise records-present\nformed-marriage-claim-boundary [approved-Seoul-bounded] formation = formed AND cause = marriageFormation => newClaimCount = 0 AND territoryTransferCount = 0\neffect-lifecycle [approved-Seoul-bounded] for each effect independently: next = owningContract(effect, trigger, current); no bulk close\njoint-property-signature [owner-selected-symbolic-contract] contractEligible = exactSet(signers) = exactSet(currentOwners)\nadoption-record-state [owner-selected-symbolic-contract-with-held-procedure] participantConsents = adoptiveParentConsent AND adopteeConsent; if procedureRegistered != true => undetermined-procedure\nsynthetic-person-property-guard [approved-Seoul-bounded] syntheticPersonRecognized = true => transferableAsset = false\nseparate-cause-ledgers [approved-Seoul-bounded] marriageResult writes no affiliation, location, office, title or property field without a separately attributed owning-domain event\nD08-F1 [후보·승인 전] formation=registeredAuthorizedForumAdjudication(records); formedMarriage by itself => claimDelta=0,territoryDelta=0\nD08-F2 [후보·승인 전] jointContractEligible=exactSet(signers)==exactSet(currentOwners); adoption requires participant consents and registered procedure; recognized person is not transferable asset\n"
+  },
+  {
+   "id": "archify.b8",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D08의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b9",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "상태 필드와 보존 경계"
+    }
+   ]
+  },
+  {
+   "id": "archify.b10",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "actionId/resultId/personIdA/personIdB/familyId/forumLawId/assetId/effectId — nonempty stable identity string (identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "rulesVersion/snapshotVersion — nonempty string / nonnegative safe integer (revision)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "forumLaw.registered/forumLaw.authorized/forumLaw.routePermitted — boolean or null (predicate)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "consents — map personId -> true (attributed record)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "ratifications — array of attributed authority records (record identity)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "formation — no-record|records-present|formed|unformed-explicit|undetermined-law (symbolic state)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "effects — alliance/property/ratification/heir -> none|active|kept|ended|reratification-required|undetermined (per-effect state)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "jointPropertySignatures — unique current-owner IDs (attributed record)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "adoptionParticipants — named adoptive parent and adoptee (identity pair)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "procedureRegistered — boolean or null (predicate)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "alive/detained/officeEffective/syntheticPersonRecognized — boolean or null (predicate)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "claimIds/propertyIds/officeIds/locationId/affiliationId — stable IDs (identity)"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b11",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "자료 소유자는 D08 가문·친족·동의·성립 기록; D13 재산, D09 관할 기관, D18 판본, 유지 계약은 forum-gate·marriage-record-state·marriage-formation·formed-marriage-claim-boundary·effect-lifecycle·joint-property-signature·adoption-record-state·synthetic-person-property-guard·separate-cause-ledgers다. 상태 소유 경계는 participants,forum law version,individual consents,ratification,formation,adoption,independent effect refs,current owners/signers. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+    }
+   ]
+  },
+  {
+   "id": "archify.b12",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "오류·보류 코드"
+    }
+   ]
+  },
+  {
+   "id": "archify.b13",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "후보 오류: E_POLICY, E_CONSENT, E_AUTHORITY"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "기존 평가기 오류: E_TYPE, E_DUPLICATE_ID, E_FORUM_AUTHORITY, E_FORUM_UNREGISTERED, E_ROUTE_INELIGIBLE, E_CARDINALITY, E_ATTRIBUTION, E_MISSING_CONSENT, E_EFFECT_WITHOUT_FORMATION, E_OWNER_SIGNATURES"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b14",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "차용 제거와 적용 범위"
+    }
+   ]
+  },
+  {
+   "id": "archify.b15",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+    }
+   ]
+  },
+  {
+   "id": "archify.b16",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b17",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D08-forum-family-adjudication(TOOL/tools/mechanisms/original-trpg/forum-family-adjudication.mjs, TOOL/tools/mechanisms/original-trpg/forum-family-adjudication.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+    }
+   ]
+  }
+ ]
+}
