@@ -31,7 +31,7 @@ export function importDiasporaFamilies(document) {
       nodes.push({ id: member.key, personId: member.personId ?? null, kind: member.personId ? 'person' : 'historical',
         name: member.name.ko, birthDate: member.birthDate, deathDate: member.deathDate ?? null,
         status: 'preserved', sourceRefs, timeline: member.events.map((event) => ({ year: event.year, ...(event.date ? { date: event.date } : {}), summary, sourceRefs })) })
-      for (const parent of member.parentKeys) edges.push({ id: `${parent}:${member.key}:biological`, from: parent, to: member.key, type: 'biological', status: 'preserved', sourceRefs })
+      for (const parent of member.parentKeys) edges.push({ id: `${parent}:${member.key}:biological`, from: parent, to: member.key, type: 'biological', ...(member.parentRoles?.[parent] ? { parentRole: member.parentRoles[parent] } : {}), status: 'preserved', sourceRefs })
     }
   }
   return { nodes, edges }

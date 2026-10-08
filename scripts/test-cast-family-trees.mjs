@@ -12,6 +12,34 @@ import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validat
 
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
 
+test.each(['applied-paternal-contract', 'explicit-diaspora-father', 'explicit-annals-father', 'complementary-maternal', 'owner-derived-maternal', 'owner-derived-lee-backpropagation'])('binds corrected %s roles to existing source pointers', async (category) => {
+  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
+  const corrections = decisions.sourceBoundRoleCorrections.filter(row => row.category === category)
+  assert.ok(corrections.length)
+  for (const correction of corrections) {
+    assert.equal(graph.edges.find(edge => edge.id === correction.edgeId)?.parentRole, correction.after)
+    for (const ref of correction.sourceRefs.filter(ref => ref.anchor.startsWith('/'))) {
+      const document = JSON.parse(await readFile(new URL('../' + ref.path, import.meta.url), 'utf8'))
+      const value = ref.anchor.slice(1).split('/').reduce((current, part) => current?.[part], document)
+      assert.notEqual(value, undefined, correction.edgeId + ':' + ref.anchor)
+    }
+  }
+})
+
+
+test('source-bound corrections preserve all nineteen roles through the real loader', async () => {
+  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
+  for (const correction of decisions.sourceBoundRoleCorrections) {
+    assert.equal(graph.edges.find(edge => edge.id === correction.edgeId)?.parentRole, correction.after, correction.edgeId)
+    assert.ok(correction.sourceRefs.length)
+  }
+  assert.equal(graph.edges.filter(edge => edge.type === 'biological').length, 5010)
+  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 3251)
+})
+
+
 test('rejects conflicting paternal clan across a historical generation', () => {
   const ledger = fixture()
   const line = { surname: '신', bongwan: '고령', clan: 'goryeong-shin' }

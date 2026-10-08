@@ -1,5 +1,360 @@
 {
   "schemaVersion": 1,
+  "sourceBoundRoleCorrections": [
+    {
+      "edgeId": "FH-EX-SEONG-DOWON:K456:biological",
+      "from": "FH-EX-SEONG-DOWON",
+      "to": "K456",
+      "before": null,
+      "after": "father",
+      "category": "applied-paternal-contract",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/성수현"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ]
+    },
+    {
+      "edgeId": "FH-EX-SEONG-DOWON:K536:biological",
+      "from": "FH-EX-SEONG-DOWON",
+      "to": "K536",
+      "before": null,
+      "after": "father",
+      "category": "applied-paternal-contract",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/성사현"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ]
+    },
+    {
+      "edgeId": "FH-EX-SEONG-CHANGRIP:FH-EX-SEONG-DOWON:biological",
+      "from": "FH-EX-SEONG-CHANGRIP",
+      "to": "FH-EX-SEONG-DOWON",
+      "before": null,
+      "after": "father",
+      "category": "applied-paternal-contract",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/성도원"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ]
+    },
+    {
+      "edgeId": "FH-EX-LEE-SANGGYE:K998:biological",
+      "from": "FH-EX-LEE-SANGGYE",
+      "to": "K998",
+      "before": null,
+      "after": "father",
+      "category": "applied-paternal-contract",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이일섭"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ]
+    },
+    {
+      "edgeId": "FH-EX-LEE-HOGYE:FH-EX-LEE-SANGGYE:biological",
+      "from": "FH-EX-LEE-HOGYE",
+      "to": "FH-EX-LEE-SANGGYE",
+      "before": null,
+      "after": "father",
+      "category": "applied-paternal-contract",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이상계"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ]
+    },
+    {
+      "edgeId": "DF-PHAM-01:DF-PHAM-02:biological",
+      "from": "DF-PHAM-01",
+      "to": "DF-PHAM-02",
+      "before": null,
+      "after": "father",
+      "category": "explicit-diaspora-father",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/0/members/1/narrative/ko"
+        }
+      ]
+    },
+    {
+      "edgeId": "DF-PHAM-02:DF-PHAM-03:biological",
+      "from": "DF-PHAM-02",
+      "to": "DF-PHAM-03",
+      "before": null,
+      "after": "father",
+      "category": "explicit-diaspora-father",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/0/members/2/narrative/ko"
+        }
+      ]
+    },
+    {
+      "edgeId": "DF-PHAM-03:K1012:biological",
+      "from": "DF-PHAM-03",
+      "to": "K1012",
+      "before": null,
+      "after": "father",
+      "category": "explicit-diaspora-father",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/0/members/3/narrative/ko"
+        }
+      ]
+    },
+    {
+      "edgeId": "DF-CHOI-01:DF-CHOI-02:biological",
+      "from": "DF-CHOI-01",
+      "to": "DF-CHOI-02",
+      "before": null,
+      "after": "father",
+      "category": "explicit-diaspora-father",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/1/members/1/narrative/ko"
+        }
+      ]
+    },
+    {
+      "edgeId": "DF-CHOI-02:DF-CHOI-03:biological",
+      "from": "DF-CHOI-02",
+      "to": "DF-CHOI-03",
+      "before": null,
+      "after": "father",
+      "category": "explicit-diaspora-father",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/1/members/2/narrative/ko"
+        }
+      ]
+    },
+    {
+      "edgeId": "DF-CHOI-03:K1016:biological",
+      "from": "DF-CHOI-03",
+      "to": "K1016",
+      "before": null,
+      "after": "father",
+      "category": "explicit-diaspora-father",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/1/members/3/narrative/ko"
+        }
+      ]
+    },
+    {
+      "edgeId": "FH-EX-JEONG-ILHWAN:K1005:biological",
+      "from": "FH-EX-JEONG-ILHWAN",
+      "to": "K1005",
+      "before": null,
+      "after": "father",
+      "category": "explicit-annals-father",
+      "sourceRefs": [
+        {
+          "path": "lore/chronology/Century-Annals.json",
+          "anchor": "/content/409"
+        },
+        {
+          "path": "lore/chronology/Century-Annals.json",
+          "anchor": "/content/405"
+        }
+      ]
+    },
+    {
+      "edgeId": "FH-K1012-M-01:K1012:biological",
+      "from": "FH-K1012-M-01",
+      "to": "K1012",
+      "before": null,
+      "after": "mother",
+      "category": "complementary-maternal",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/0/members/3/narrative/ko"
+        }
+      ],
+      "basis": "Exactly two existing biological parents; complementary role after source-established father, no identity inference"
+    },
+    {
+      "edgeId": "FH-K1016-M-01:K1016:biological",
+      "from": "FH-K1016-M-01",
+      "to": "K1016",
+      "before": null,
+      "after": "mother",
+      "category": "complementary-maternal",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "/lineages/1/members/3/narrative/ko"
+        }
+      ],
+      "basis": "Exactly two existing biological parents; complementary role after source-established father, no identity inference"
+    },
+    {
+      "edgeId": "FH-K456-M-01:K456:biological",
+      "from": "FH-K456-M-01",
+      "to": "K456",
+      "before": null,
+      "after": "mother",
+      "category": "owner-derived-maternal",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/성수현"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ],
+      "basis": "Exactly two existing biological parents; complementary role after source-established father, no identity inference"
+    },
+    {
+      "edgeId": "FH-K536-M-01:K536:biological",
+      "from": "FH-K536-M-01",
+      "to": "K536",
+      "before": null,
+      "after": "mother",
+      "category": "owner-derived-maternal",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/성사현"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ],
+      "basis": "Exactly two existing biological parents; complementary role after source-established father, no identity inference"
+    },
+    {
+      "edgeId": "FH-K998-M-01:K998:biological",
+      "from": "FH-K998-M-01",
+      "to": "K998",
+      "before": null,
+      "after": "mother",
+      "category": "owner-derived-maternal",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이일섭"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan"
+        },
+        {
+          "path": "lore/name-pools/hangnyeol-schema.md",
+          "anchor": "cast-hangnyeol.json"
+        }
+      ],
+      "basis": "Exactly two existing biological parents; complementary role after source-established father, no identity inference"
+    },
+    {
+      "edgeId": "FH-K1005-M-01:K1005:biological",
+      "from": "FH-K1005-M-01",
+      "to": "K1005",
+      "before": null,
+      "after": "mother",
+      "category": "owner-derived-maternal",
+      "sourceRefs": [
+        {
+          "path": "lore/chronology/Century-Annals.json",
+          "anchor": "/content/409"
+        },
+        {
+          "path": "lore/chronology/Century-Annals.json",
+          "anchor": "/content/405"
+        }
+      ],
+      "basis": "Exactly two existing biological parents; complementary role after source-established father, no identity inference"
+    },
+    {
+      "edgeId": "FH-K998-X이호계-01:FH-EX-LEE-HOGYE:biological",
+      "from": "FH-K998-X이호계-01",
+      "to": "FH-EX-LEE-HOGYE",
+      "before": null,
+      "after": "father",
+      "category": "owner-derived-lee-backpropagation",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이일섭"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이상계"
+        },
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/person_clan/이일섭"
+        }
+      ],
+      "basis": "Unique Jeonui Lee descendant triple via both source-established father links; new owner-authorized reconstruction"
+    }
+  ],
   "authorization": "Owner 2026-10-08: 부계 기준 정리; 어머니 성씨 교정. Historical P/M adopted as derived authoring choice only after validated child surname match, never historical proof.",
   "maternalCorrections": [
     {
@@ -36098,14 +36453,6 @@
       "reason": "child historical clan/bongwan absent; no paternal line fabrication"
     },
     {
-      "edgeId": "FH-K456-M-01:K456:biological",
-      "from": "FH-K456-M-01",
-      "to": "K456",
-      "parent": "박태민",
-      "child": "성수현",
-      "reason": "no validated paternal surname match / source role absent"
-    },
-    {
       "edgeId": "FH-K456-M-02:FH-K456-M-01:biological",
       "from": "FH-K456-M-02",
       "to": "FH-K456-M-01",
@@ -36960,14 +37307,6 @@
       "parent": "송태경",
       "child": "오태재",
       "reason": "child historical clan/bongwan absent; no paternal line fabrication"
-    },
-    {
-      "edgeId": "FH-K536-M-01:K536:biological",
-      "from": "FH-K536-M-01",
-      "to": "K536",
-      "parent": "오태찬",
-      "child": "성사현",
-      "reason": "no validated paternal surname match / source role absent"
     },
     {
       "edgeId": "FH-K536-M-02:FH-K536-M-01:biological",
@@ -41810,14 +42149,6 @@
       "reason": "child historical clan/bongwan absent; no paternal line fabrication"
     },
     {
-      "edgeId": "FH-K998-M-01:K998:biological",
-      "from": "FH-K998-M-01",
-      "to": "K998",
-      "parent": "최서연",
-      "child": "이일섭",
-      "reason": "no validated paternal surname match / source role absent"
-    },
-    {
       "edgeId": "FH-K998-M-02:FH-K998-M-01:biological",
       "from": "FH-K998-M-02",
       "to": "FH-K998-M-01",
@@ -41896,14 +42227,6 @@
       "parent": "송민범",
       "child": "오민나",
       "reason": "child historical clan/bongwan absent; no paternal line fabrication"
-    },
-    {
-      "edgeId": "FH-K1005-M-01:K1005:biological",
-      "from": "FH-K1005-M-01",
-      "to": "K1005",
-      "parent": "송민재",
-      "child": "정서온",
-      "reason": "no validated paternal surname match / source role absent"
     },
     {
       "edgeId": "FH-K1005-M-02:FH-K1005-M-01:biological",
@@ -42247,14 +42570,6 @@
       "to": "FH-K1022-M-01",
       "parent": "정서현",
       "child": "최서완",
-      "reason": "child historical clan/bongwan absent; no paternal line fabrication"
-    },
-    {
-      "edgeId": "FH-K998-X이호계-01:FH-EX-LEE-HOGYE:biological",
-      "from": "FH-K998-X이호계-01",
-      "to": "FH-EX-LEE-HOGYE",
-      "parent": "이서아",
-      "child": "이호계",
       "reason": "child historical clan/bongwan absent; no paternal line fabrication"
     },
     {

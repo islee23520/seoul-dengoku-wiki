@@ -31747,6 +31747,7 @@
       "personId": null,
       "kind": "historical",
       "name": "성도원",
+      "lineage": {"surname":"성","bongwan":"창녕","clan":"cangnyeong-seong-yeolcha"},
       "birthDate": "2036-04-09",
       "deathDate": null,
       "status": "authored",
@@ -31779,6 +31780,7 @@
       "personId": null,
       "kind": "historical",
       "name": "성창립",
+      "lineage": {"surname":"성","bongwan":"창녕","clan":"cangnyeong-seong-yeolcha"},
       "birthDate": "2006-04-09",
       "deathDate": null,
       "status": "authored",
@@ -31820,6 +31822,7 @@
       "personId": null,
       "kind": "historical",
       "name": "이상계",
+      "lineage": {"surname":"이","bongwan":"전의","clan":"c774-c804-c758-674e"},
       "birthDate": "2062-04-14",
       "deathDate": null,
       "status": "authored",
@@ -31852,6 +31855,7 @@
       "personId": null,
       "kind": "historical",
       "name": "이호계",
+      "lineage": {"surname":"이","bongwan":"전의","clan":"c774-c804-c758-674e"},
       "birthDate": "2032-04-14",
       "deathDate": null,
       "status": "authored",
@@ -205980,6 +205984,7 @@
       "personId": null,
       "kind": "historical",
       "name": "이서아",
+      "lineage": {"surname":"이","bongwan":"전의","clan":"c774-c804-c758-674e"},
       "birthDate": "2002-04-14",
       "deathDate": null,
       "status": "authored",
@@ -208730,6 +208735,7 @@
       "from": "FH-EX-SEONG-DOWON",
       "to": "K456",
       "type": "biological",
+      "parentRole": "father",
       "status": "preserved",
       "sourceRefs": [
         {
@@ -208743,6 +208749,7 @@
       "from": "FH-EX-SEONG-DOWON",
       "to": "K536",
       "type": "biological",
+      "parentRole": "father",
       "status": "preserved",
       "sourceRefs": [
         {
@@ -208756,6 +208763,7 @@
       "from": "FH-EX-SEONG-CHANGRIP",
       "to": "FH-EX-SEONG-DOWON",
       "type": "biological",
+      "parentRole": "father",
       "status": "preserved",
       "sourceRefs": [
         {
@@ -208769,6 +208777,7 @@
       "from": "FH-EX-LEE-SANGGYE",
       "to": "K998",
       "type": "biological",
+      "parentRole": "father",
       "status": "preserved",
       "sourceRefs": [
         {
@@ -208782,6 +208791,7 @@
       "from": "FH-EX-LEE-HOGYE",
       "to": "FH-EX-LEE-SANGGYE",
       "type": "biological",
+      "parentRole": "father",
       "status": "preserved",
       "sourceRefs": [
         {
@@ -208809,6 +208819,7 @@
       "from": "FH-EX-JEONG-ILHWAN",
       "to": "K1005",
       "type": "biological",
+      "parentRole": "father",
       "status": "preserved",
       "sourceRefs": [
         {
@@ -245562,6 +245573,7 @@
       "from": "FH-K456-M-01",
       "to": "K456",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -251975,6 +251987,7 @@
       "from": "FH-K536-M-01",
       "to": "K536",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -288867,6 +288880,7 @@
       "from": "FH-K998-M-01",
       "to": "K998",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -289397,6 +289411,7 @@
       "from": "FH-K1005-M-01",
       "to": "K1005",
       "type": "biological",
+      "parentRole": "mother",
       "status": "authored",
       "sourceRefs": [
         {
@@ -290560,6 +290575,7 @@
       "from": "FH-K998-X이호계-01",
       "to": "FH-EX-LEE-HOGYE",
       "type": "biological",
+      "parentRole": "father",
       "status": "authored",
       "sourceRefs": [
         {
