@@ -3,7 +3,9 @@ import { Navigate, Route, Routes, useLocation, useNavigate, useParams, useSearch
 import ReactMarkdown, { type ExtraProps } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { remarkCjkStrong } from './remarkCjkStrong'
-import { DocumentContent, MermaidDiagram, type DocumentNode } from '@seoul-dengoku/document-renderer'
+import { MermaidDiagram, type DocumentNode } from '@seoul-dengoku/document-renderer'
+import { ArchifyDiagram, GddDocumentContent } from './ArchifyDiagram'
+import type { ArchifyManifest } from './archify-contract.mjs'
 import {
   Breadcrumbs, CategoryTree, DocumentList, PageHeader, QueryControl, SectionHeading,
   ServiceCard, SiteShell, StateNotice, TableOfContents, TableViewport,
@@ -157,11 +159,13 @@ const markdownComponents = {
   h2: ({ children }: { children?: React.ReactNode }) => <h2 id={slugify(headingTextOf(children))}>{children}</h2>,
   h3: ({ children }: { children?: React.ReactNode }) => <h3 id={slugify(headingTextOf(children))}>{children}</h3>,
   table: ({ children }: { children?: React.ReactNode }) => <TableViewport label="문서 표"><table>{children}</table></TableViewport>,
-  pre: ({ children, node }: { children?: React.ReactNode } & ExtraProps) => {
+  pre: ({ children, node, manifest }: { children?: React.ReactNode; manifest?: ArchifyManifest } & ExtraProps) => {
     const code = node?.children[0]
     const classes = code?.type === 'element' ? code.properties.className : undefined
-    if (code?.type !== 'element' || !Array.isArray(classes) || !classes.includes('language-mermaid')) return <pre>{children}</pre>
+    if (code?.type !== 'element' || !Array.isArray(classes)) return <pre>{children}</pre>
     const source = code.children.map((child) => (child.type === 'text' ? child.value : '')).join('').replace(/\n$/, '')
+    if (classes.includes('language-archify')) return <ArchifyDiagram source={source} manifest={manifest} />
+    if (!classes.includes('language-mermaid')) return <pre>{children}</pre>
     return <MermaidDiagram id={`diagram-${node?.position?.start.line ?? 0}`} source={source} load={loadMermaid} />
   },
 }
@@ -170,8 +174,8 @@ interface TocEntry { depth: number; anchor: string; text: string }
 
 const jsonTextOf = (value: string | readonly { text: string }[]) => (typeof value === 'string' ? value : value.map((run) => run.text).join(''))
 
-export function MarkdownBody({ markdown }: { markdown: string }) {
-  return <ReactMarkdown remarkPlugins={[remarkGfm, remarkCjkStrong]} components={markdownComponents}>{markdown}</ReactMarkdown>
+export function MarkdownBody({ markdown, manifest }: { markdown: string; manifest?: ArchifyManifest }) {
+  return <ReactMarkdown remarkPlugins={[remarkGfm, remarkCjkStrong]} components={{ ...markdownComponents, pre: (props) => markdownComponents.pre({ ...props, manifest }) }}>{markdown}</ReactMarkdown>
 }
 
 function DocumentPage() {
@@ -211,7 +215,7 @@ function DocumentPage() {
       <div className="gdd-article-layout">
         <div className="gdd-article-body">
           {sharedContent
-            ? <DocumentContent content={sharedContent.filter((node) => node.kind !== 'heading' || node.depth !== 1)} locale="ko" loadMermaid={loadMermaid} />
+            ? <GddDocumentContent content={sharedContent.filter((node) => node.kind !== 'heading' || node.depth !== 1)} locale="ko" loadMermaid={loadMermaid} />
             : markdown
               ? <MarkdownBody markdown={markdown} />
               : <StateNotice state="loading" message="문서를 불러오고 있습니다." />}
