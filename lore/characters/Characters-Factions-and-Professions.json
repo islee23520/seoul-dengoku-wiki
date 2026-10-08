@@ -19,7 +19,9 @@
       "English SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33; translated from Korean during the JSON migration (no committed EN existed).",
       "KO from the sweep-w1 WEB working tree (dirty). EN needs human review.",
       "2026-10-08 owner direction: clothing hierarchy is station depth, then workload and occupational protection at the same depth, then individual comfort; male lighter-layer tendency applies underground only. Existing named outfits and identities are preserved.",
-      "2026-10-08 owner clarification: organize clothing as surface, intermediate underground, and deep underground, with occupational and individual variation inside each tier. No separate shallow tier."
+      "2026-10-08 owner clarification: organize clothing as surface, intermediate underground, and deep underground, with occupational and individual variation inside each tier. No separate shallow tier.",
+      "2026-10-08 regional scope correction: the numeric temperature and clothing examples use Seoul only; regional winter conditions change insulation without changing the three-tier structure or occupational identity.",
+      "2026-10-08 final regional direction supersedes the temporary Seoul-only restriction: surface references use seventeen selected KMA stations on 2021-01-08; underground uses shared fictional baseline ranges with smaller regional differences. Coat insulation must also be visible in garment volume, not just accessories."
     ]
   },
   "source": {
@@ -97,8 +99,8 @@
       "kind": "paragraph",
       "anchor": "옷차림을-가르는-순서",
       "text": {
-        "ko": "사람들의 옷차림은 먼저 지상, 중간 깊이 지하, 깊은 지하의 세 생활 환경에 따라 달라진다. 지상에서 지하로 내려가고 더 깊은 곳으로 향할수록 보온을 위한 겹이 줄며, 같은 깊이에 머무는 사람들 사이에서는 활동량과 작업 환경이 차이를 만든다. 옷의 형태와 주머니·장구 배치는 생업을 드러내고, 두께와 소재, 덧입는 겹이 그 사람이 지내는 온도에 맞춰 바뀐다.",
-        "en": "Clothing varies first between three living environments: the surface, intermediate underground, and deep underground. Insulating layers become lighter below the surface and farther down, while workload and working conditions distinguish people staying at the same depth. Garment cuts, pockets, and equipment reflect their trades; fabric, thickness, and removable layers adapt to their surroundings."
+        "ko": "사람들의 옷차림은 먼저 지상, 중간 깊이 지하, 깊은 지하의 세 생활 환경에 따라 달라진다. 지상에서 지하로 내려가고 더 깊은 곳으로 향할수록 보온을 위한 겹이 줄며, 같은 깊이에 머무는 사람들 사이에서는 활동량과 작업 환경이 차이를 만든다. 옷의 형태와 주머니·장구 배치는 생업을 드러내고, 두께와 소재, 덧입는 겹이 그 사람이 지내는 온도에 맞춰 바뀐다. 특히 지상에서는 시·도별 겨울 기온이 외투의 두께를 크게 바꾸지만, 지하의 지역별 기온 차이는 지상보다 작다.",
+        "en": "Clothing varies first between three living environments: the surface, intermediate underground, and deep underground. Insulating layers become lighter below the surface and farther down, while workload and working conditions distinguish people staying at the same depth. Garment cuts, pockets, and equipment reflect their trades; fabric, thickness, and removable layers adapt to their surroundings. Regional winter temperatures strongly affect coat thickness above ground, while regional temperature differences are smaller underground."
       }
     },
     {
@@ -116,6 +118,14 @@
       "text": {
         "ko": "서울 지상에서는 −18.6℃의 혹한을 견딜 방한복을 갖춘다. 전령과 운반자는 익숙한 작업 재킷의 형태를 유지하면서 바람을 막는 겉감과 보온 내피를 더하고, 장갑과 목을 감싸는 옷으로 노출을 줄인다. 밖에서 오래 서 있는 경비와 매대 상인은 움직이는 사람보다 보온 겹을 더하며, 운반자도 짐을 내려놓고 쉴 때에는 풀어 두었던 옷깃과 여밈을 닫는다.",
         "en": "On the surface in Seoul, people dress for severe cold of −18.6°C. Couriers and porters retain the familiar cut of their work jackets while adding wind-resistant fabric and insulating liners, gloves, and neck coverings. Guards standing watch and merchants at outdoor stalls add more insulation than people on the move. Porters close loosened collars and fastenings when they set down their loads to rest."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역별-전령의-외투",
+      "text": {
+        "ko": "같은 여성 전령이라도 강원도의 지상 기온 기준인 −21.9℃에서는 두꺼운 보온 내피로 재킷의 몸통과 소매가 부풀고, 옷깃과 소맷단에도 두께가 드러난다. 제주도의 −2.7℃ 지상에서는 같은 재킷의 주머니와 장구 배치를 유지하면서 얇은 안감으로 부피를 줄여, 좁은 소매와 유연한 주름이 나타난다. 제주에서도 영하의 바람을 막는 겉감과 장갑, 다리를 덮는 보온 겹은 남는다. 지역 차이는 목도리 같은 소품뿐 아니라 외투 자체의 부피와 소재에 드러난다.",
+        "en": "Even for the same female courier, the Gangwon surface reference of −21.9°C calls for a thick insulating liner that fills out the jacket torso and sleeves, with visible thickness at the collar and cuffs. At Jeju’s −2.7°C surface reference, the same pocket and equipment layout remains, while thinner lining reduces bulk, producing narrower sleeves and more flexible folds. Wind-resistant outer fabric, gloves, and insulating leg coverings remain necessary in Jeju’s subzero setting. Regional differences appear in the coat’s volume and fabric as well as accessories such as scarves."
       }
     },
     {
@@ -139,8 +149,8 @@
       "kind": "paragraph",
       "anchor": "중간-깊이-이동과-정주",
       "text": {
-        "ko": "8~18℃의 중간 깊이 지하는 지상 가까운 지하 공간까지 아우르며 지상보다 따뜻하다. 전령과 운반자는 보온 내의 위에 움직임이 편한 작업 재킷을 입고, 더 따뜻한 곳에서 계속 움직일 때에는 덧옷을 벗어 가방에 묶는다. 같은 층에서 오래 앉아 일하는 기록원과 상담 담당자는 울 내의나 조끼·가디건을 더하며, 순찰하던 경비도 한곳에 서서 문을 지킬 때에는 보온 겹을 다시 입는다.",
-        "en": "Intermediate underground quarters range from 8 to 18°C, include spaces close to the surface, and are warmer than the surface. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch."
+        "ko": "기본 기온이 8~18℃인 중간 깊이 지하는 지상 가까운 지하 공간까지 아우르며 지상보다 따뜻하다. 전령과 운반자는 보온 내의 위에 움직임이 편한 작업 재킷을 입고, 더 따뜻한 곳에서 계속 움직일 때에는 덧옷을 벗어 가방에 묶는다. 같은 층에서 오래 앉아 일하는 기록원과 상담 담당자는 울 내의나 조끼·가디건을 더하며, 순찰하던 경비도 한곳에 서서 문을 지킬 때에는 보온 겹을 다시 입는다.",
+        "en": "Intermediate underground quarters have a baseline range of 8–18°C, include spaces close to the surface, and are warmer than the surface. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch."
       }
     },
     {
@@ -164,8 +174,8 @@
       "kind": "paragraph",
       "anchor": "깊은-지하-직업별-차이",
       "text": {
-        "ko": "18~22℃의 깊은 지하 생활권에서는 활동량이 많은 전령과 운반자가 얇은 셔츠를 입고, 작업에 지장이 없을 때에는 소매를 걷거나 반소매를 고른다. 같은 구역에서 앉아 일하는 기록원이나 추위를 타는 상인은 얇은 긴소매와 가벼운 덧옷을 유지한다. 더 깊이 내려왔다고 모든 사람이 피부를 드러내거나 같은 수의 겹을 입지는 않는다.",
-        "en": "In deep underground quarters at 18–22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers."
+        "ko": "기본 기온이 18~22℃인 깊은 지하 생활권에서는 활동량이 많은 전령과 운반자가 얇은 셔츠를 입고, 작업에 지장이 없을 때에는 소매를 걷거나 반소매를 고른다. 같은 구역에서 앉아 일하는 기록원이나 추위를 타는 상인은 얇은 긴소매와 가벼운 덧옷을 유지한다. 더 깊이 내려왔다고 모든 사람이 피부를 드러내거나 같은 수의 겹을 입지는 않는다.",
+        "en": "In deep underground quarters with a baseline of 18–22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers."
       }
     },
     {
@@ -215,6 +225,28 @@
       "kind": "list",
       "anchor": "출처-list1",
       "items": [
+        {
+          "ko": [
+            {
+              "text": "시·도별 지상 기온과 대표 관측소",
+              "link": {
+                "domain": "places",
+                "slug": "World-and-Subway-Layers",
+                "anchor": "시도별-지상-기온"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Regional surface references and selected weather stations",
+              "link": {
+                "domain": "places",
+                "slug": "World-and-Subway-Layers",
+                "anchor": "시도별-지상-기온"
+              }
+            }
+          ]
+        },
         {
           "ko": [
             {
