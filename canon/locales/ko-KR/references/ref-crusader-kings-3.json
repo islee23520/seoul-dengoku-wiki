@@ -195,7 +195,7 @@
         [
           {
             "kind": "text",
-            "text": "자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`crusader-kings-3.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다."
+            "text": "자동 생성 문서입니다. 원본은 저장소 내부 조사 문서에서 파생했으며, 작품명과 원문 식별자는 공개 본문에서 빼고 내부 조사 원장에 둔다."
           }
         ]
       ]
@@ -2941,22 +2941,22 @@
         ],
         [
           "S19·S20·S21",
-          "[Beginner's guide](https://ck3.paradoxwikis.com/Beginner%27s_guide), [Character](https://ck3.paradoxwikis.com/Character), [Attributes](https://ck3.paradoxwikis.com/Attributes)",
+          "입문·인물·기량 문서",
           "**선행 문서 경유.** 이번 원문 재조회 없음. 상세 수치 확인으로 확장하지 않음."
         ],
         [
           "S23·S27·S28",
-          "지도 개발일지 공식 공지, [Council](https://ck3.paradoxwikis.com/Council), [Schemes](https://ck3.paradoxwikis.com/Schemes)",
+          "지도 개발일지 공식 공지, 자문회 문서, 계책 문서",
           "**선행 문서 경유.** 지도 기능 주제, 기량-과업 연결, 계책 구조. 최신 과업·계책 수치 근거 아님."
         ],
         [
           "S25",
-          "[Event modding](https://ck3.paradoxwikis.com/Event_modding)",
+          "이벤트 작성 문서",
           "**선행 문서 경유.** 옵션 수 비고정, 조건부·숨은 효과, AI 선택 가중치의 의미."
         ],
         [
           "S29·S30·S31",
-          "[PC Gamer](https://www.pcgamer.com/crusader-kings-3-review/), [IGN](https://www.ign.com/articles/crusader-kings-3-review), [RPS](https://www.rockpapershotgun.com/crusader-kings-3-review)",
+          "출시 리뷰 3건",
           "**선행 문서 경유.** 인물·스트레스·중첩 툴팁·출시 화면·간접 전투. 현재 버전 실증 아님."
         ],
         [
@@ -2966,27 +2966,27 @@
         ],
         [
           "원천-M02",
-          "[Succession API](https://ck3.paradoxwikis.com/api.php?action=parse&page=Succession&prop=wikitext&format=json)",
+          "계승 문서 조회",
           "**요청 실패 기록.** HTTP 응답이 HTML 검증 페이지라 JSON 파싱 불가. 계승 배분·법별 의견 수치의 증거 없음."
         ],
         [
           "원천-M03",
-          "[Warfare API](https://ck3.paradoxwikis.com/api.php?action=parse&page=Warfare&prop=wikitext&format=json)",
+          "전투 문서 조회",
           "**요청 실패 기록.** 전투 계수·상성·공성·CB 세부의 증거 없음."
         ],
         [
           "원천-M04",
-          "[Religion API](https://ck3.paradoxwikis.com/api.php?action=parse&page=Religion&prop=wikitext&format=json)",
+          "신앙 문서 조회",
           "**요청 실패 기록.** 신앙 창설·개혁·교리 수치의 증거 없음. 상위 페이지가 모든 하위 규칙을 포함한다고 가정하지 않음."
         ],
         [
           "원천-M05",
-          "[Culture API](https://ck3.paradoxwikis.com/api.php?action=parse&page=Culture&prop=wikitext&format=json)",
+          "문화 문서 조회",
           "**요청 실패 기록.** 문화·전통·혼합·분화·혁신 수치의 증거 없음."
         ],
         [
           "원천-M06",
-          "[Dynasties API](https://ck3.paradoxwikis.com/api.php?action=parse&page=Dynasties&prop=wikitext&format=json)",
+          "왕조 문서 조회",
           "**요청 실패 기록.** 왕조 명성·유산 25단계의 정확한 현행 효과를 입증하지 못함."
         ]
       ]
@@ -2997,7 +2997,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "원문 응답과 조회 상태는 `.omo/evidence/gameplay-rubric-6d3fe97/ui-reference/ck3-mechanics-raw/`에 보관한다. `.json` 확장자의 다섯 원응답 파일은 **유효 JSON이 아니라 반환된 HTML**이며, `fetch-status.json`만 구조화된 조회 기록이다. 출처 레지스트리는 같은 상위 디렉터리의 `sources.json`에 추가했다."
+          "text": "원문 응답과 조회 상태는 내부 조사 원장에 보관한다. 확장자가 JSON인 다섯 원응답 파일은 유효한 JSON이 아니라 반환된 HTML이며, 조회 상태 파일만 구조화된 조회 기록이다. 출처 목록은 같은 원장에 추가했다."
         }
       ]
     },
