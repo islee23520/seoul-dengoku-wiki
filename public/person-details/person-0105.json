@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승연",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2050-03-04",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승정",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2020-03-04",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K104-P-01",
         "to": "K104",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K104-P-02",
         "to": "FH-K104-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K104-M-01",
         "to": "K104",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

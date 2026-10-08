@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "나승수",
+        "lineage": {
+          "surname": "나",
+          "bongwan": "나주",
+          "clan": "b098-b098-c8fc-7f85"
+        },
         "birthDate": "2037-03-27",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "나승은",
+        "lineage": {
+          "surname": "나",
+          "bongwan": "나주",
+          "clan": "b098-b098-c8fc-7f85"
+        },
         "birthDate": "2007-03-27",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K203-P-01",
         "to": "K203",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K203-P-02",
         "to": "FH-K203-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K203-M-01",
         "to": "K203",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

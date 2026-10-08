@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "우승리",
+        "lineage": {
+          "surname": "우",
+          "bongwan": "단양",
+          "clan": "c6b0-b2e8-c591-agreed-bbfc-second"
+        },
         "birthDate": "2057-03-05",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "우승나",
+        "lineage": {
+          "surname": "우",
+          "bongwan": "단양",
+          "clan": "c6b0-b2e8-c591-agreed-bbfc-second"
+        },
         "birthDate": "2027-03-05",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "우승온",
+        "lineage": {
+          "surname": "우",
+          "bongwan": "단양",
+          "clan": "c6b0-b2e8-c591-agreed-bbfc-second"
+        },
         "birthDate": "1997-03-05",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K891-P-01",
         "to": "K891",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K891-P-02",
         "to": "FH-K891-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K891-P-03",
         "to": "FH-K891-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K891-M-01",
         "to": "K891",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

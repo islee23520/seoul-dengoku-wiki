@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승호",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2059-11-08",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승민",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2029-11-08",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승원",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "1999-11-08",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K326-P-01",
         "to": "K326",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K326-P-02",
         "to": "FH-K326-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K326-P-03",
         "to": "FH-K326-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K326-M-01",
         "to": "K326",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

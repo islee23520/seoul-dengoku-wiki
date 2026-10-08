@@ -11,6 +11,42 @@ import FamiliesPage from '../src/pages/FamiliesPage.tsx'
 const detail = async (id) => JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
 const render = (tree) => new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null, createElement(FamilyTree, { tree })))).window.document
 
+test('renders father and mother roles on pair edges and the ledger without changing identities', async () => {
+  const source = (await detail('person-0014')).familyTree
+  const tree = structuredClone(source)
+  const pair = tree.edges.filter((entry) => entry.to === 'K014' && entry.type === 'biological')
+  pair[0].parentRole = 'father'
+  pair[1].parentRole = 'mother'
+  const doc = render(tree)
+  for (const [index, label] of ['부', '모'].entries()) {
+    const line = [...doc.querySelectorAll('[data-family-edge-id]')].find((node) => node.dataset.familyEdgeId === pair[index].id)
+    assert.equal(line.querySelector('text').textContent, label)
+    assert.equal(line.dataset.familyParentRole, pair[index].parentRole)
+    const row = [...doc.querySelectorAll('[data-family-table-edge]')].find((node) => node.dataset.familyTableEdge === pair[index].id)
+    assert.ok(row.textContent.endsWith(' · ' + label))
+  }
+  assert.equal(doc.querySelectorAll('[data-family-node]').length, source.nodes.length)
+  assert.equal(doc.querySelectorAll('[data-family-edge-id]').length, source.edges.length)
+})
+
+test('renders sourced Shin father while leaving every other unrecorded edge unlabeled by role', async () => {
+  const tree = (await detail('person-1010')).familyTree
+  const doc = render(tree)
+  const father = doc.querySelector('[data-family-from="K1009"][data-family-to="K1010"]')
+  assert.equal(father.dataset.familyParentRole, 'father')
+  assert.equal(father.querySelector('text').textContent, '부')
+  for (const edge of tree.edges.filter((entry) => entry.type === 'biological' && !entry.parentRole)) {
+    const line = [...doc.querySelectorAll('[data-family-edge-id]')].find((node) => node.dataset.familyEdgeId === edge.id)
+    assert.equal(line.dataset.familyParentRole, undefined)
+    assert.equal(line.querySelector('text').textContent, '친생 · 역할 미기록')
+  }
+  assert.ok(tree.edges.filter((entry) => entry.type === 'biological' && entry.parentRole).every((edge) => {
+    const line = [...doc.querySelectorAll('[data-family-edge-id]')].find((node) => node.dataset.familyEdgeId === edge.id)
+    return line.querySelector('text').textContent === (edge.parentRole === 'father' ? '부' : '모')
+  }))
+})
+
+
 test('actual Brooks ancestry renders every canonical edge as a line and places four generations', async () => {
   const tree = (await detail('person-0014')).familyTree
   const doc = render(tree)

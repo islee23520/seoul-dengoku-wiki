@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배현민",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "분성",
+          "clan": "bc30-bd84-c131-88f5-agreed-bbfc-second"
+        },
         "birthDate": "2043-09-20",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배현원",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "분성",
+          "clan": "bc30-bd84-c131-88f5-agreed-bbfc-second"
+        },
         "birthDate": "2013-09-20",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K916-P-01",
         "to": "K916",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K916-P-02",
         "to": "FH-K916-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K916-M-01",
         "to": "K916",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

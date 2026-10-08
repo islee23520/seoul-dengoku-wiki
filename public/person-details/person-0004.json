@@ -65,6 +65,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박승석",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2065-07-05",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박승준",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2035-07-05",
         "deathDate": null,
         "status": "authored",
@@ -133,6 +143,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박승호",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2005-07-05",
         "deathDate": null,
         "status": "authored",
@@ -271,6 +286,7 @@
         "from": "FH-K004-P-01",
         "to": "K004",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -287,6 +303,7 @@
         "from": "FH-K004-P-02",
         "to": "FH-K004-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -303,6 +320,7 @@
         "from": "FH-K004-P-03",
         "to": "FH-K004-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -319,6 +337,7 @@
         "from": "FH-K004-M-01",
         "to": "K004",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

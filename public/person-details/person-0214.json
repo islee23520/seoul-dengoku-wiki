@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "평승호",
+        "lineage": {
+          "surname": "평",
+          "bongwan": "충주",
+          "clan": "d3c9-cda9-c8fc"
+        },
         "birthDate": "2072-11-10",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "평승민",
+        "lineage": {
+          "surname": "평",
+          "bongwan": "충주",
+          "clan": "d3c9-cda9-c8fc"
+        },
         "birthDate": "2042-11-10",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "평승원",
+        "lineage": {
+          "surname": "평",
+          "bongwan": "충주",
+          "clan": "d3c9-cda9-c8fc"
+        },
         "birthDate": "2012-11-10",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K213-P-01",
         "to": "K213",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K213-P-02",
         "to": "FH-K213-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K213-P-03",
         "to": "FH-K213-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K213-M-01",
         "to": "K213",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정도정",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "해주",
+          "clan": "c815-d574-c8fc-912d"
+        },
         "birthDate": "2068-11-02",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정도아",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "해주",
+          "clan": "c815-d574-c8fc-912d"
+        },
         "birthDate": "2038-11-02",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정도희",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "해주",
+          "clan": "c815-d574-c8fc-912d"
+        },
         "birthDate": "2008-11-02",
         "deathDate": null,
         "status": "authored",
@@ -163,7 +178,12 @@
         "id": "FH-K783-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "정도규",
+        "name": "동도규",
+        "lineage": {
+          "surname": "동",
+          "bongwan": "광천",
+          "clan": "b3d9-ad11-cc9c"
+        },
         "birthDate": "2068-11-02",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2106,
-            "summary": "정도규는 암사 경비 초소에서 무장 난입 제지·명부 재검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "동도규는 암사 경비 초소에서 무장 난입 제지·명부 재검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -268,6 +288,7 @@
         "from": "FH-K783-P-01",
         "to": "K783",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +305,7 @@
         "from": "FH-K783-P-02",
         "to": "FH-K783-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +322,7 @@
         "from": "FH-K783-P-03",
         "to": "FH-K783-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +339,7 @@
         "from": "FH-K783-M-01",
         "to": "K783",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

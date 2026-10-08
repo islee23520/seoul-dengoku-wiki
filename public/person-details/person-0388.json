@@ -65,6 +65,11 @@
         "personId": null,
         "kind": "historical",
         "name": "천승경",
+        "lineage": {
+          "surname": "천",
+          "bongwan": "영양",
+          "clan": "cc9c-c601-c591"
+        },
         "birthDate": "2060-03-28",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "천승수",
+        "lineage": {
+          "surname": "천",
+          "bongwan": "영양",
+          "clan": "cc9c-c601-c591"
+        },
         "birthDate": "2030-03-28",
         "deathDate": null,
         "status": "authored",
@@ -133,6 +143,11 @@
         "personId": null,
         "kind": "historical",
         "name": "천승은",
+        "lineage": {
+          "surname": "천",
+          "bongwan": "영양",
+          "clan": "cc9c-c601-c591"
+        },
         "birthDate": "2000-03-28",
         "deathDate": null,
         "status": "authored",
@@ -271,6 +286,7 @@
         "from": "FH-K387-P-01",
         "to": "K387",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -287,6 +303,7 @@
         "from": "FH-K387-P-02",
         "to": "FH-K387-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -303,6 +320,7 @@
         "from": "FH-K387-P-03",
         "to": "FH-K387-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -319,6 +337,7 @@
         "from": "FH-K387-M-01",
         "to": "K387",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

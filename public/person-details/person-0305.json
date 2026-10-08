@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "국승영",
+        "lineage": {
+          "surname": "국",
+          "bongwan": "담양",
+          "clan": "ad6d-b2f4-c591"
+        },
         "birthDate": "2041-08-05",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "국승윤",
+        "lineage": {
+          "surname": "국",
+          "bongwan": "담양",
+          "clan": "ad6d-b2f4-c591"
+        },
         "birthDate": "2011-08-05",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K304-P-01",
         "to": "K304",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K304-P-02",
         "to": "FH-K304-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K304-M-01",
         "to": "K304",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

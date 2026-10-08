@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "곽승리",
+        "lineage": {
+          "surname": "곽",
+          "bongwan": "현풍",
+          "clan": "acfd-d604-d48d-agreed-d638-second"
+        },
         "birthDate": "2041-10-16",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "곽승나",
+        "lineage": {
+          "surname": "곽",
+          "bongwan": "현풍",
+          "clan": "acfd-d604-d48d-agreed-d638-second"
+        },
         "birthDate": "2011-10-16",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K810-P-01",
         "to": "K810",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K810-P-02",
         "to": "FH-K810-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K810-M-01",
         "to": "K810",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

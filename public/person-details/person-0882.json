@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승미",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989-agreed-c601-second"
+        },
         "birthDate": "2042-07-11",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승도",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989-agreed-c601-second"
+        },
         "birthDate": "2012-07-11",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K882-P-01",
         "to": "K882",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K882-P-02",
         "to": "FH-K882-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K882-M-01",
         "to": "K882",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

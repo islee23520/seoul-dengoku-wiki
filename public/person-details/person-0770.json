@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승욱",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc-agreed-c740-second"
+        },
         "birthDate": "2064-01-27",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승란",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc-agreed-c740-second"
+        },
         "birthDate": "2034-01-27",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승리",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc-agreed-c740-second"
+        },
         "birthDate": "2004-01-27",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K770-P-01",
         "to": "K770",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K770-P-02",
         "to": "FH-K770-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K770-P-03",
         "to": "FH-K770-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K770-M-01",
         "to": "K770",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

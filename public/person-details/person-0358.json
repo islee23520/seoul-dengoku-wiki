@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "판승민",
+        "lineage": {
+          "surname": "판",
+          "bongwan": "해주",
+          "clan": "d310-d574-c8fc"
+        },
         "birthDate": "2034-02-08",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "판승원",
+        "lineage": {
+          "surname": "판",
+          "bongwan": "해주",
+          "clan": "d310-d574-c8fc"
+        },
         "birthDate": "2004-02-08",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K357-P-01",
         "to": "K357",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K357-P-02",
         "to": "FH-K357-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K357-M-01",
         "to": "K357",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

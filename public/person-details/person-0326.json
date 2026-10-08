@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "라승석",
+        "lineage": {
+          "surname": "라",
+          "bongwan": "금성",
+          "clan": "b77c-ae08-c131-7f85"
+        },
         "birthDate": "2053-09-06",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "라승준",
+        "lineage": {
+          "surname": "라",
+          "bongwan": "금성",
+          "clan": "b77c-ae08-c131-7f85"
+        },
         "birthDate": "2023-09-06",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K325-P-01",
         "to": "K325",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K325-P-02",
         "to": "FH-K325-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K325-M-01",
         "to": "K325",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

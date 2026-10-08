@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "백승정",
+        "lineage": {
+          "surname": "백",
+          "bongwan": "수원",
+          "clan": "bc31-c218-c6d0-agreed-b798-second"
+        },
         "birthDate": "2066-05-10",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "백승아",
+        "lineage": {
+          "surname": "백",
+          "bongwan": "수원",
+          "clan": "bc31-c218-c6d0-agreed-b798-second"
+        },
         "birthDate": "2036-05-10",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "백승희",
+        "lineage": {
+          "surname": "백",
+          "bongwan": "수원",
+          "clan": "bc31-c218-c6d0-agreed-b798-second"
+        },
         "birthDate": "2006-05-10",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K608-P-01",
         "to": "K608",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K608-P-02",
         "to": "FH-K608-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K608-P-03",
         "to": "FH-K608-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K608-M-01",
         "to": "K608",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

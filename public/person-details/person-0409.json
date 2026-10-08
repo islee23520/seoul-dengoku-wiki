@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "판승경",
+        "lineage": {
+          "surname": "판",
+          "bongwan": "해주",
+          "clan": "d310-d574-c8fc"
+        },
         "birthDate": "2067-10-08",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "판승수",
+        "lineage": {
+          "surname": "판",
+          "bongwan": "해주",
+          "clan": "d310-d574-c8fc"
+        },
         "birthDate": "2037-10-08",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "판승은",
+        "lineage": {
+          "surname": "판",
+          "bongwan": "해주",
+          "clan": "d310-d574-c8fc"
+        },
         "birthDate": "2007-10-08",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K408-P-01",
         "to": "K408",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K408-P-02",
         "to": "FH-K408-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K408-P-03",
         "to": "FH-K408-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K408-M-01",
         "to": "K408",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

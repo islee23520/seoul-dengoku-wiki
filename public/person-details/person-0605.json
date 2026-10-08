@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "양승문",
+        "lineage": {
+          "surname": "양",
+          "bongwan": "청주",
+          "clan": "c591-ccad-c8fc-agreed-d0dc-second"
+        },
         "birthDate": "2069-06-16",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "양승섭",
+        "lineage": {
+          "surname": "양",
+          "bongwan": "청주",
+          "clan": "c591-ccad-c8fc-agreed-d0dc-second"
+        },
         "birthDate": "2039-06-16",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "양승성",
+        "lineage": {
+          "surname": "양",
+          "bongwan": "청주",
+          "clan": "c591-ccad-c8fc-agreed-d0dc-second"
+        },
         "birthDate": "2009-06-16",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K605-P-01",
         "to": "K605",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K605-P-02",
         "to": "FH-K605-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K605-P-03",
         "to": "FH-K605-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K605-M-01",
         "to": "K605",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

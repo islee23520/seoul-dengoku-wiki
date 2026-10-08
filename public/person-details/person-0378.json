@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승윤",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2050-02-16",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승우",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2020-02-16",
         "deathDate": null,
         "status": "authored",
@@ -202,6 +212,7 @@
         "from": "FH-K377-P-01",
         "to": "K377",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -218,6 +229,7 @@
         "from": "FH-K377-P-02",
         "to": "FH-K377-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -234,6 +246,7 @@
         "from": "FH-K377-M-01",
         "to": "K377",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

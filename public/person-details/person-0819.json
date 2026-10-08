@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이도욱",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "전의",
+          "clan": "c774-c804-c758-674e"
+        },
         "birthDate": "2055-01-03",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이도란",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "전의",
+          "clan": "c774-c804-c758-674e"
+        },
         "birthDate": "2025-01-03",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K819-P-01",
         "to": "K819",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K819-P-02",
         "to": "FH-K819-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K819-M-01",
         "to": "K819",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

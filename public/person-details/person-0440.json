@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송준찬",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "진천",
+          "clan": "c1a1-c9c4-cc9c-5b8b"
+        },
         "birthDate": "2037-11-14",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송준혁",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "진천",
+          "clan": "c1a1-c9c4-cc9c-5b8b"
+        },
         "birthDate": "2007-11-14",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K440-P-01",
         "to": "K440",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K440-P-02",
         "to": "FH-K440-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K440-M-01",
         "to": "K440",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

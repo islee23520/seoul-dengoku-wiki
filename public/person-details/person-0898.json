@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최민훈",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "전주",
+          "clan": "cd5c-c804-c8fc-5d14-agreed-c544-second"
+        },
         "birthDate": "2062-01-30",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최민범",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "전주",
+          "clan": "cd5c-c804-c8fc-5d14-agreed-c544-second"
+        },
         "birthDate": "2032-01-30",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최민재",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "전주",
+          "clan": "cd5c-c804-c8fc-5d14-agreed-c544-second"
+        },
         "birthDate": "2002-01-30",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K898-P-01",
         "to": "K898",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K898-P-02",
         "to": "FH-K898-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K898-P-03",
         "to": "FH-K898-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K898-M-01",
         "to": "K898",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

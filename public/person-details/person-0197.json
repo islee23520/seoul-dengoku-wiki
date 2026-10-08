@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "윤현윤",
+        "lineage": {
+          "surname": "윤",
+          "bongwan": "파평",
+          "clan": "c724-d30c-d3c9-agreed-c11c-first"
+        },
         "birthDate": "2058-05-10",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "윤현우",
+        "lineage": {
+          "surname": "윤",
+          "bongwan": "파평",
+          "clan": "c724-d30c-d3c9-agreed-c11c-first"
+        },
         "birthDate": "2028-05-10",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "윤현경",
+        "lineage": {
+          "surname": "윤",
+          "bongwan": "파평",
+          "clan": "c724-d30c-d3c9-agreed-c11c-first"
+        },
         "birthDate": "1998-05-10",
         "deathDate": null,
         "status": "authored",
@@ -161,7 +176,12 @@
         "id": "FH-K196-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "윤현수",
+        "name": "곽현수",
+        "lineage": {
+          "surname": "곽",
+          "bongwan": "현풍",
+          "clan": "acfd-d604-d48d"
+        },
         "birthDate": "2058-05-10",
         "deathDate": null,
         "status": "authored",
@@ -177,7 +197,7 @@
         "timeline": [
           {
             "year": 2096,
-            "summary": "윤현수는 노량진 선창에서 경매 시작가·낙찰가 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "곽현수는 노량진 선창에서 경매 시작가·낙찰가 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -266,6 +286,7 @@
         "from": "FH-K196-P-01",
         "to": "K196",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +303,7 @@
         "from": "FH-K196-P-02",
         "to": "FH-K196-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +320,7 @@
         "from": "FH-K196-P-03",
         "to": "FH-K196-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +337,7 @@
         "from": "FH-K196-M-01",
         "to": "K196",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

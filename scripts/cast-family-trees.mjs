@@ -37,7 +37,7 @@ export function importDiasporaFamilies(document) {
   return { nodes, edges }
 }
 
-export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, preservedEdges = [], resolveRegisteredPeople = false } = {}) {
+export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, preservedEdges = [], resolveRegisteredPeople = false, lineages = new Map(), roleDecisions } = {}) {
   if (!record(ledger) || ledger.schemaVersion !== 1 || ledger.collapseYear !== 2026 || ledger.referenceDate !== '2126-12-31' || !Array.isArray(ledger.nodes) || !Array.isArray(ledger.edges) || !Array.isArray(ledger.imports)) fail('E_FAMILY_SCHEMA')
   metadata(ledger, 'ledger')
   let nodes = [...ledger.nodes]
@@ -103,10 +103,17 @@ export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, p
   if (missing.length) fail('E_FAMILY_COVERAGE', missing.join(','))
   const edgeIds = new Set()
   const edgeKeys = new Set()
+  const parentRoles = new Set()
   const parents = new Map(nodes.map((node) => [node.id, []]))
   for (const edge of edges) {
     if (!record(edge) || !text(edge.id) || !types.includes(edge.type) || !byId.has(edge.from) || !byId.has(edge.to)) fail('E_FAMILY_EDGE', edge?.id)
     metadata(edge, edge.id)
+    if (edge.parentRole !== undefined) {
+      if (edge.type !== 'biological' || !['father', 'mother'].includes(edge.parentRole)) fail('E_FAMILY_PARENT_ROLE', edge.id)
+      const roleKey = `${edge.to}:${edge.parentRole}`
+      if (parentRoles.has(roleKey)) fail('E_FAMILY_DUPLICATE_PARENT_ROLE', edge.id)
+      parentRoles.add(roleKey)
+    }
     const key = `${edge.from}:${edge.to}:${edge.type}`
     if (edgeIds.has(edge.id) || edgeKeys.has(key)) fail('E_FAMILY_DUPLICATE_EDGE', edge.id)
     edgeIds.add(edge.id)
@@ -115,12 +122,28 @@ export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, p
     const parent = byId.get(edge.from)
     const child = byId.get(edge.to)
     if (edge.type === 'biological' && child.kind === 'synthetic') fail('E_FAMILY_SYNTHETIC_PARENT', edge.to)
+    const childLine = child.lineage ?? lineages.get(child.name)
+    if (edge.parentRole === 'father' && parent.lineage && childLine &&
+      ['surname', 'bongwan', 'clan'].some((field) => parent.lineage[field] !== childLine[field])) fail('E_FAMILY_PATERNAL_LINE', edge.id)
     // Thirty years is an authoring baseline, not a minimum gap for preserved dates.
     if (['biological', 'adoptive'].includes(edge.type) && parent.birthDate >= child.birthDate) fail('E_FAMILY_PARENT_BIRTH', edge.id)
     parents.get(edge.to).push(edge.from)
   }
   for (const edge of requiredEdges) if (!edgeKeys.has(`${edge.from}:${edge.to}:${edge.type}`)) fail('E_FAMILY_PRESERVED_EDGE', edge.id ?? edge.to)
   const visiting = new Set()
+  if (roleDecisions) {
+    for (const decision of roleDecisions.derivedParentRoles) {
+      const edge = edges.find((entry) => entry.id === decision.edgeId)
+      if (!edge || edge.from !== decision.from || edge.to !== decision.to || edge.type !== 'biological' || edge.parentRole !== decision.parentRole) fail('E_FAMILY_ROLE_DECISION', decision.edgeId)
+      if (decision.parentRole === 'father' && ['surname', 'bongwan', 'clan'].some((field) => byId.get(edge.from).lineage?.[field] !== decision.lineage[field])) fail('E_FAMILY_PATERNAL_LINE', edge.id)
+    }
+    for (const correction of roleDecisions.maternalCorrections) {
+      const mother = byId.get(correction.motherId)
+      const father = byId.get(correction.fatherId)
+      if (!mother || !father || mother.lineage?.surname === father.lineage?.surname) fail('E_FAMILY_SAME_SURNAME', correction.childId)
+      if (mother.name !== correction.afterMother.name || ['surname', 'bongwan', 'clan'].some((field) => mother.lineage?.[field] !== correction.afterMother[field])) fail('E_FAMILY_MATERNAL_CORRECTION', correction.motherId)
+    }
+  }
   const complete = new Set()
   const reachesCollapse = new Map()
   const visit = (id) => {
@@ -146,7 +169,13 @@ export async function loadCastFamilyTrees(loreRoot, roster, options = {}) {
   const diaspora = ledger.imports?.some((entry) => entry.path === diasporaPath)
     ? JSON.parse(await readFile(resolve(loreRoot, 'name-pools/diaspora-family-lineages.json'), 'utf8')) : undefined
   const birthdays = options.birthdays ?? await loadCastBirthdays(loreRoot, roster)
-  return validateCastFamilyTrees(ledger, roster, { ...options, diaspora, birthdays, resolveRegisteredPeople: true })
+  const hangnyeol = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-hangnyeol.json'), 'utf8'))
+  const roleDecisions = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/cast-family-role-decisions.json'), 'utf8'))
+  const clans = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/clan-hangnyeol-tables.json'), 'utf8')).clans
+  for (const node of ledger.nodes.filter((entry) => entry.lineage)) {
+    if (!clans.some((clan) => clan.id === node.lineage.clan && clan.surname === node.lineage.surname && clan.bongwan === node.lineage.bongwan)) fail('E_FAMILY_CLAN', node.id)
+  }
+  return validateCastFamilyTrees(ledger, roster, { ...options, diaspora, birthdays, lineages: new Map(hangnyeol.people.map((person) => [person.name, person])), roleDecisions, resolveRegisteredPeople: true })
 }
 
 export function projectFamilyTree(graph, personId, detailRoutes) {

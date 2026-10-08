@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승호",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2041-06-23",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승민",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2011-06-23",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K236-P-01",
         "to": "K236",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K236-P-02",
         "to": "FH-K236-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K236-M-01",
         "to": "K236",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

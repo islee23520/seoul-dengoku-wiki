@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승경",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2057-05-21",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승수",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2027-05-21",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승은",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "1997-05-21",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K100-P-01",
         "to": "K100",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K100-P-02",
         "to": "FH-K100-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K100-P-03",
         "to": "FH-K100-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K100-M-01",
         "to": "K100",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

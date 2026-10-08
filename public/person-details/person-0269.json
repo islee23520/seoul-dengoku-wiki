@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "순승현",
+        "lineage": {
+          "surname": "순",
+          "bongwan": "홍산",
+          "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
+        },
         "birthDate": "2044-05-13",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "순승영",
+        "lineage": {
+          "surname": "순",
+          "bongwan": "홍산",
+          "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
+        },
         "birthDate": "2014-05-13",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K268-P-01",
         "to": "K268",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K268-P-02",
         "to": "FH-K268-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K268-M-01",
         "to": "K268",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

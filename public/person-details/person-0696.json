@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "차승나",
+        "lineage": {
+          "surname": "차",
+          "bongwan": "연안",
+          "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+        },
         "birthDate": "2040-08-19",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "차승온",
+        "lineage": {
+          "surname": "차",
+          "bongwan": "연안",
+          "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+        },
         "birthDate": "2010-08-19",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K696-P-01",
         "to": "K696",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K696-P-02",
         "to": "FH-K696-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K696-M-01",
         "to": "K696",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

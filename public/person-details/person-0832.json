@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "권승나",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9-agreed-c724-second"
+        },
         "birthDate": "2053-05-13",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "권승온",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9-agreed-c724-second"
+        },
         "birthDate": "2023-05-13",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K832-P-01",
         "to": "K832",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K832-P-02",
         "to": "FH-K832-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K832-M-01",
         "to": "K832",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

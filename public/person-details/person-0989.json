@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "문현영",
+        "lineage": {
+          "surname": "문",
+          "bongwan": "남평",
+          "clan": "bb38-b0a8-d3c9-6587-agreed-c740-second"
+        },
         "birthDate": "2065-11-28",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "문현윤",
+        "lineage": {
+          "surname": "문",
+          "bongwan": "남평",
+          "clan": "bb38-b0a8-d3c9-6587-agreed-c740-second"
+        },
         "birthDate": "2035-11-28",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "문현우",
+        "lineage": {
+          "surname": "문",
+          "bongwan": "남평",
+          "clan": "bb38-b0a8-d3c9-6587-agreed-c740-second"
+        },
         "birthDate": "2005-11-28",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K989-P-01",
         "to": "K989",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K989-P-02",
         "to": "FH-K989-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K989-P-03",
         "to": "FH-K989-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K989-M-01",
         "to": "K989",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

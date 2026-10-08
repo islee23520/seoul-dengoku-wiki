@@ -68,6 +68,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오준찬",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc"
+        },
         "birthDate": "2074-08-22",
         "deathDate": null,
         "status": "authored",
@@ -102,6 +107,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오준혁",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc"
+        },
         "birthDate": "2044-08-22",
         "deathDate": null,
         "status": "authored",
@@ -136,6 +146,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오준문",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc"
+        },
         "birthDate": "2014-08-22",
         "deathDate": null,
         "status": "authored",
@@ -274,6 +289,7 @@
         "from": "FH-K423-P-01",
         "to": "K423",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -290,6 +306,7 @@
         "from": "FH-K423-P-02",
         "to": "FH-K423-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -306,6 +323,7 @@
         "from": "FH-K423-P-03",
         "to": "FH-K423-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -322,6 +340,7 @@
         "from": "FH-K423-M-01",
         "to": "K423",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -65,6 +65,11 @@
         "personId": null,
         "kind": "historical",
         "name": "동승수",
+        "lineage": {
+          "surname": "동",
+          "bongwan": "광천",
+          "clan": "b3d9-ad11-cc9c-agreed-c194-second"
+        },
         "birthDate": "2056-03-12",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "동승은",
+        "lineage": {
+          "surname": "동",
+          "bongwan": "광천",
+          "clan": "b3d9-ad11-cc9c-agreed-c194-second"
+        },
         "birthDate": "2026-03-12",
         "deathDate": null,
         "status": "authored",
@@ -203,6 +213,7 @@
         "from": "FH-K388-P-01",
         "to": "K388",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -219,6 +230,7 @@
         "from": "FH-K388-P-02",
         "to": "FH-K388-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -235,6 +247,7 @@
         "from": "FH-K388-M-01",
         "to": "K388",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

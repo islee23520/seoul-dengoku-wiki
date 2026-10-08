@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "황승란",
+        "lineage": {
+          "surname": "황",
+          "bongwan": "창원",
+          "clan": "d669-cc3d-c6d0-agreed-bc14-first"
+        },
         "birthDate": "2034-04-20",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "황승리",
+        "lineage": {
+          "surname": "황",
+          "bongwan": "창원",
+          "clan": "d669-cc3d-c6d0-agreed-bc14-first"
+        },
         "birthDate": "2004-04-20",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K717-P-01",
         "to": "K717",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K717-P-02",
         "to": "FH-K717-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K717-M-01",
         "to": "K717",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "섭승수",
+        "lineage": {
+          "surname": "섭",
+          "bongwan": "경주",
+          "clan": "c12d-acbd-c8fc"
+        },
         "birthDate": "2034-11-25",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "섭승은",
+        "lineage": {
+          "surname": "섭",
+          "bongwan": "경주",
+          "clan": "c12d-acbd-c8fc"
+        },
         "birthDate": "2004-11-25",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K292-P-01",
         "to": "K292",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K292-P-02",
         "to": "FH-K292-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K292-M-01",
         "to": "K292",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박민솔",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591-agreed-c740-second"
+        },
         "birthDate": "2065-04-22",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박민미",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591-agreed-c740-second"
+        },
         "birthDate": "2035-04-22",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박민도",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591-agreed-c740-second"
+        },
         "birthDate": "2005-04-22",
         "deathDate": null,
         "status": "authored",
@@ -163,7 +178,12 @@
         "id": "FH-K972-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "박서석",
+        "name": "매서석",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2065-04-22",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2103,
-            "summary": "박서석은 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "매서석은 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-05.json",
@@ -268,6 +288,7 @@
         "from": "FH-K972-P-01",
         "to": "K972",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +305,7 @@
         "from": "FH-K972-P-02",
         "to": "FH-K972-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +322,7 @@
         "from": "FH-K972-P-03",
         "to": "FH-K972-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +339,7 @@
         "from": "FH-K972-M-01",
         "to": "K972",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

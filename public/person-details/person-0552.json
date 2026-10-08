@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임태재",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "조양",
+          "clan": "c784-c870-c591-6797"
+        },
         "birthDate": "2065-04-08",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임태찬",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "조양",
+          "clan": "c784-c870-c591-6797"
+        },
         "birthDate": "2035-04-08",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임태혁",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "조양",
+          "clan": "c784-c870-c591-6797"
+        },
         "birthDate": "2005-04-08",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K552-P-01",
         "to": "K552",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K552-P-02",
         "to": "FH-K552-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K552-P-03",
         "to": "FH-K552-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K552-M-01",
         "to": "K552",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

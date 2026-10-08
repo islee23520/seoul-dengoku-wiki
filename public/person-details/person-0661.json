@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "민승수",
+        "lineage": {
+          "surname": "민",
+          "bongwan": "여흥",
+          "clan": "bbfc-c5ec-d765-9594-agreed-c6b0-second"
+        },
         "birthDate": "2040-10-28",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "민승은",
+        "lineage": {
+          "surname": "민",
+          "bongwan": "여흥",
+          "clan": "bbfc-c5ec-d765-9594-agreed-c6b0-second"
+        },
         "birthDate": "2010-10-28",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K661-P-01",
         "to": "K661",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K661-P-02",
         "to": "FH-K661-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K661-M-01",
         "to": "K661",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

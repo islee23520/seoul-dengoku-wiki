@@ -113,6 +113,11 @@
         "personId": null,
         "kind": "historical",
         "name": "신현영",
+        "lineage": {
+          "surname": "신",
+          "bongwan": "고령",
+          "clan": "goryeong-shin"
+        },
         "birthDate": "2057-09-18",
         "deathDate": null,
         "status": "authored",
@@ -147,6 +152,11 @@
         "personId": null,
         "kind": "historical",
         "name": "신현윤",
+        "lineage": {
+          "surname": "신",
+          "bongwan": "고령",
+          "clan": "goryeong-shin"
+        },
         "birthDate": "2027-09-18",
         "deathDate": null,
         "status": "authored",
@@ -181,6 +191,11 @@
         "personId": null,
         "kind": "historical",
         "name": "신현우",
+        "lineage": {
+          "surname": "신",
+          "bongwan": "고령",
+          "clan": "goryeong-shin"
+        },
         "birthDate": "1997-09-18",
         "deathDate": null,
         "status": "authored",
@@ -319,11 +334,12 @@
         "from": "K1009",
         "to": "K1010",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
             "path": "lore/characters/Core-Characters.json",
-            "anchor": "/content/181"
+            "anchor": "신준-p2"
           }
         ]
       },
@@ -332,6 +348,7 @@
         "from": "FH-K1009-P-01",
         "to": "K1009",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -348,6 +365,7 @@
         "from": "FH-K1009-P-02",
         "to": "FH-K1009-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -364,6 +382,7 @@
         "from": "FH-K1009-P-03",
         "to": "FH-K1009-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -380,6 +399,7 @@
         "from": "FH-K1009-M-01",
         "to": "K1009",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

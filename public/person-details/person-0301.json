@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승석",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc"
+        },
         "birthDate": "2065-03-17",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승준",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc"
+        },
         "birthDate": "2035-03-17",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승호",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc"
+        },
         "birthDate": "2005-03-17",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K300-P-01",
         "to": "K300",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K300-P-02",
         "to": "FH-K300-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K300-P-03",
         "to": "FH-K300-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K300-M-01",
         "to": "K300",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "전승호",
+        "lineage": {
+          "surname": "전",
+          "bongwan": "천안",
+          "clan": "c804-cc9c-c548"
+        },
         "birthDate": "2063-01-07",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "전승민",
+        "lineage": {
+          "surname": "전",
+          "bongwan": "천안",
+          "clan": "c804-cc9c-c548"
+        },
         "birthDate": "2033-01-07",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "전승원",
+        "lineage": {
+          "surname": "전",
+          "bongwan": "천안",
+          "clan": "c804-cc9c-c548"
+        },
         "birthDate": "2003-01-07",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K327-P-01",
         "to": "K327",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K327-P-02",
         "to": "FH-K327-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K327-P-03",
         "to": "FH-K327-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K327-M-01",
         "to": "K327",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

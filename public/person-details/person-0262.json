@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "봉승영",
+        "lineage": {
+          "surname": "봉",
+          "bongwan": "하음",
+          "clan": "bd09-d558-c74c"
+        },
         "birthDate": "2056-08-16",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "봉승윤",
+        "lineage": {
+          "surname": "봉",
+          "bongwan": "하음",
+          "clan": "bd09-d558-c74c"
+        },
         "birthDate": "2026-08-16",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K261-P-01",
         "to": "K261",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K261-P-02",
         "to": "FH-K261-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K261-M-01",
         "to": "K261",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

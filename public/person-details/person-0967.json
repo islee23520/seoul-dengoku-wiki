@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구현윤",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "능성",
+          "clan": "ad6c-b2a5-c131-agreed-d76c-second"
+        },
         "birthDate": "2065-06-13",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구현우",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "능성",
+          "clan": "ad6c-b2a5-c131-agreed-d76c-second"
+        },
         "birthDate": "2035-06-13",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구현경",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "능성",
+          "clan": "ad6c-b2a5-c131-agreed-d76c-second"
+        },
         "birthDate": "2005-06-13",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K967-P-01",
         "to": "K967",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K967-P-02",
         "to": "FH-K967-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K967-P-03",
         "to": "FH-K967-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K967-M-01",
         "to": "K967",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

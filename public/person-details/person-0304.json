@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "복승우",
+        "lineage": {
+          "surname": "복",
+          "bongwan": "면천",
+          "clan": "bcf5-ba74-cc9c"
+        },
         "birthDate": "2041-11-24",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "복승경",
+        "lineage": {
+          "surname": "복",
+          "bongwan": "면천",
+          "clan": "bcf5-ba74-cc9c"
+        },
         "birthDate": "2011-11-24",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K303-P-01",
         "to": "K303",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K303-P-02",
         "to": "FH-K303-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K303-M-01",
         "to": "K303",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

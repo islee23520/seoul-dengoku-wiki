@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승진",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2053-02-13",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승현",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2023-02-13",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K046-P-01",
         "to": "K046",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K046-P-02",
         "to": "FH-K046-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K046-M-01",
         "to": "K046",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

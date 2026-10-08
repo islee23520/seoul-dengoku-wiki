@@ -20,6 +20,7 @@ type FamilyEdge = {
   readonly from: string
   readonly to: string
   readonly type: 'biological' | 'adoptive' | 'custodial' | 'creation' | 'household'
+  readonly parentRole?: 'father' | 'mother'
   readonly status: Status
   readonly sourceRefs: readonly SourceRef[]
 }
@@ -30,6 +31,10 @@ export type FamilyTreeData = {
   readonly edges: readonly FamilyEdge[]
 }
 const relationLabels = { biological: '친생', adoptive: '입양', custodial: '보호', creation: '제작', household: '가구 계승' } as const
+const parentRoleLabels = { father: '부', mother: '모' } as const
+const edgeLabel = (edge: FamilyEdge): string => edge.type === 'biological'
+  ? edge.parentRole ? parentRoleLabels[edge.parentRole] : '친생 · 역할 미기록'
+  : relationLabels[edge.type]
 
 export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Element {
   if (!tree.nodes.length || !tree.nodes.some((node) => node.id === tree.personId)) return <section className="person-family-tree" data-family-person-id={tree.personId}><h2>가계도</h2><p role="status">기록된 가계도 데이터가 없습니다.</p></section>
@@ -109,7 +114,6 @@ export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Ele
             const centerX = (left.x + right.x) / 2
             return <g key={pair.childId} data-family-parent-pair={pair.childId} data-family-pair-parents={pair.parents.map((edge) => edge.from).join(' ')}>
               <path data-family-shared-descent={pair.childId} d={`M ${centerX} ${jointY} V ${child.y - 24} H ${child.x} V ${child.y}`} fill="none" stroke="var(--wiki-text)" strokeWidth={2} />
-              <text x={centerX} y={jointY - 8} textAnchor="middle">친생 부모</text>
             </g>
           })}
           {tree.edges.map((edge) => {
@@ -125,10 +129,10 @@ export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Ele
             const jointY = pairPoints ? Math.max(...pairPoints.map((point) => point.y)) + 118 : laneY
             const pairCenter = pairPoints ? (pairPoints[0].x + pairPoints[1].x) / 2 : targetX
             const unknown = edge.type === 'biological' && unknownParents.some((entry) => entry.childId === edge.to)
-            return <g key={edge.id} data-family-edge={edge.type} data-family-edge-id={edge.id} data-family-from={edge.from} data-family-to={edge.to}>
-              <title>{byId.get(edge.from)?.name} → {byId.get(edge.to)?.name} · {relationLabels[edge.type]}</title>
+            return <g key={edge.id} data-family-edge={edge.type} data-family-edge-id={edge.id} data-family-from={edge.from} data-family-to={edge.to} data-family-parent-role={edge.parentRole}>
+              <title>{byId.get(edge.from)?.name} → {byId.get(edge.to)?.name} · {edgeLabel(edge)}</title>
               <path d={unknown ? `M ${from.x} ${from.y + 80} V ${from.y + 118}` : pair ? `M ${from.x} ${from.y + 80} V ${jointY} H ${pairCenter}` : `M ${from.x} ${from.y + 80} V ${laneY} H ${targetX} V ${to.y}`} fill="none" stroke="var(--wiki-text)" strokeWidth={2} strokeDasharray={edge.type === 'biological' ? undefined : '6 4'} />
-              {!pair && <text x={from.x + 8} y={from.y + 103}>{relationLabels[edge.type]}</text>}
+              <text x={from.x + 8} y={from.y + 103}>{edgeLabel(edge)}</text>
             </g>
           })}
         </svg>
@@ -144,7 +148,7 @@ export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Ele
     <details><summary>계보 원장과 생애 기록</summary><div className="wiki-table-wrap"><table className="person-data-table"><thead><tr><th scope="col">인물</th><th scope="col">생년월일</th><th scope="col">계보</th></tr></thead><tbody>
       {tree.nodes.map((node) => <tr key={node.id}><th scope="row">{name(node)}</th><td>{node.birthDate}</td><td>{tree.edges.filter((edge) => edge.to === node.id).map((edge) => {
         const parent = byId.get(edge.from)
-        return <div key={edge.id}>{parent && name(parent)} · {relationLabels[edge.type]}</div>
+        return <div key={edge.id} data-family-table-edge={edge.id} data-family-parent-role={edge.parentRole}>{parent && name(parent)} · {edgeLabel(edge)}</div>
       })}</td></tr>)}
     </tbody></table></div>
     <ol className="family-tree-timeline">{tree.nodes.flatMap((node) => node.timeline.map((event, index) => ({ node, event, index }))).sort((a, b) => a.event.year - b.event.year).map(({ node, event, index }) =>

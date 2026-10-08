@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "수승현",
+        "lineage": {
+          "surname": "수",
+          "bongwan": "한양",
+          "clan": "c218-d55c-c591"
+        },
         "birthDate": "2053-10-12",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "수승영",
+        "lineage": {
+          "surname": "수",
+          "bongwan": "한양",
+          "clan": "c218-d55c-c591"
+        },
         "birthDate": "2023-10-12",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K361-P-01",
         "to": "K361",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K361-P-02",
         "to": "FH-K361-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K361-M-01",
         "to": "K361",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

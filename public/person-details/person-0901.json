@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조민진",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "함안",
+          "clan": "c870-d568-c548-8d99-agreed-c900-second"
+        },
         "birthDate": "2068-03-22",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조민현",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "함안",
+          "clan": "c870-d568-c548-8d99-agreed-c900-second"
+        },
         "birthDate": "2038-03-22",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조민영",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "함안",
+          "clan": "c870-d568-c548-8d99-agreed-c900-second"
+        },
         "birthDate": "2008-03-22",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K901-P-01",
         "to": "K901",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K901-P-02",
         "to": "FH-K901-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K901-P-03",
         "to": "FH-K901-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K901-M-01",
         "to": "K901",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

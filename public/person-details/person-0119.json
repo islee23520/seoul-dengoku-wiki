@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "장승경",
+        "lineage": {
+          "surname": "장",
+          "bongwan": "흥덕",
+          "clan": "c7a5-d765-b355"
+        },
         "birthDate": "2065-09-18",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "장승수",
+        "lineage": {
+          "surname": "장",
+          "bongwan": "흥덕",
+          "clan": "c7a5-d765-b355"
+        },
         "birthDate": "2035-09-18",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "장승은",
+        "lineage": {
+          "surname": "장",
+          "bongwan": "흥덕",
+          "clan": "c7a5-d765-b355"
+        },
         "birthDate": "2005-09-18",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K118-P-01",
         "to": "K118",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K118-P-02",
         "to": "FH-K118-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K118-P-03",
         "to": "FH-K118-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K118-M-01",
         "to": "K118",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

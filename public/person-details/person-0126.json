@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "주승석",
+        "lineage": {
+          "surname": "주",
+          "bongwan": "신안",
+          "clan": "c8fc-c2e0-c548"
+        },
         "birthDate": "2054-08-26",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "주승준",
+        "lineage": {
+          "surname": "주",
+          "bongwan": "신안",
+          "clan": "c8fc-c2e0-c548"
+        },
         "birthDate": "2024-08-26",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K125-P-01",
         "to": "K125",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K125-P-02",
         "to": "FH-K125-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K125-M-01",
         "to": "K125",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정태연",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "경주",
+          "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+        },
         "birthDate": "2066-05-19",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정태정",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "경주",
+          "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+        },
         "birthDate": "2036-05-19",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정태아",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "경주",
+          "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+        },
         "birthDate": "2006-05-19",
         "deathDate": null,
         "status": "authored",
@@ -163,7 +178,12 @@
         "id": "FH-K507-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "정태희",
+        "name": "권태희",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9"
+        },
         "birthDate": "2066-05-19",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2104,
-            "summary": "정태희는 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "권태희는 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-04.json",
@@ -268,6 +288,7 @@
         "from": "FH-K507-P-01",
         "to": "K507",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +305,7 @@
         "from": "FH-K507-P-02",
         "to": "FH-K507-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +322,7 @@
         "from": "FH-K507-P-03",
         "to": "FH-K507-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +339,7 @@
         "from": "FH-K507-M-01",
         "to": "K507",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

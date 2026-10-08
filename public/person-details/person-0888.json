@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "성승찬",
+        "lineage": {
+          "surname": "성",
+          "bongwan": "창녕",
+          "clan": "cangnyeong-seong-yeolcha-agreed-d604-second"
+        },
         "birthDate": "2061-06-19",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "성승혁",
+        "lineage": {
+          "surname": "성",
+          "bongwan": "창녕",
+          "clan": "cangnyeong-seong-yeolcha-agreed-d604-second"
+        },
         "birthDate": "2031-06-19",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "성승문",
+        "lineage": {
+          "surname": "성",
+          "bongwan": "창녕",
+          "clan": "cangnyeong-seong-yeolcha-agreed-d604-second"
+        },
         "birthDate": "2001-06-19",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K888-P-01",
         "to": "K888",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K888-P-02",
         "to": "FH-K888-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K888-P-03",
         "to": "FH-K888-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K888-M-01",
         "to": "K888",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

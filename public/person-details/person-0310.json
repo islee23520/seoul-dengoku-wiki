@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승연",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2066-10-09",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승정",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2036-10-09",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승아",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2006-10-09",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K309-P-01",
         "to": "K309",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K309-P-02",
         "to": "FH-K309-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K309-P-03",
         "to": "FH-K309-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K309-M-01",
         "to": "K309",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

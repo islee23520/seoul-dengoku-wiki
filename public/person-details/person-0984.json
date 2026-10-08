@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "안현영",
+        "lineage": {
+          "surname": "안",
+          "bongwan": "순흥",
+          "clan": "c548-c21c-d765-agreed-bbfc-second"
+        },
         "birthDate": "2037-11-11",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "안현윤",
+        "lineage": {
+          "surname": "안",
+          "bongwan": "순흥",
+          "clan": "c548-c21c-d765-agreed-bbfc-second"
+        },
         "birthDate": "2007-11-11",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K984-P-01",
         "to": "K984",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K984-P-02",
         "to": "FH-K984-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K984-M-01",
         "to": "K984",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

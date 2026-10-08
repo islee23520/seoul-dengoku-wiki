@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "지승수",
+        "lineage": {
+          "surname": "지",
+          "bongwan": "충주",
+          "clan": "c9c0-cda9-c8fc"
+        },
         "birthDate": "2061-09-11",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "지승은",
+        "lineage": {
+          "surname": "지",
+          "bongwan": "충주",
+          "clan": "c9c0-cda9-c8fc"
+        },
         "birthDate": "2031-09-11",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "지승연",
+        "lineage": {
+          "surname": "지",
+          "bongwan": "충주",
+          "clan": "c9c0-cda9-c8fc"
+        },
         "birthDate": "2001-09-11",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K200-P-01",
         "to": "K200",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K200-P-02",
         "to": "FH-K200-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K200-P-03",
         "to": "FH-K200-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K200-M-01",
         "to": "K200",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

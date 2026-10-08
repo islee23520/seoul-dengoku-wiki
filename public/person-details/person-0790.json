@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오도아",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc-agreed-c11c-second"
+        },
         "birthDate": "2040-08-09",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오도희",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc-agreed-c11c-second"
+        },
         "birthDate": "2010-08-09",
         "deathDate": null,
         "status": "authored",
@@ -201,6 +211,7 @@
         "from": "FH-K790-P-01",
         "to": "K790",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -217,6 +228,7 @@
         "from": "FH-K790-P-02",
         "to": "FH-K790-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -233,6 +245,7 @@
         "from": "FH-K790-M-01",
         "to": "K790",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

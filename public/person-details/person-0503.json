@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김태우",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "강릉",
+          "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+        },
         "birthDate": "2040-02-12",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김태경",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "강릉",
+          "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+        },
         "birthDate": "2010-02-12",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K503-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "김태수",
+        "name": "구태수",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "능성",
+          "clan": "ad6c-b2a5-c131"
+        },
         "birthDate": "2040-02-12",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2078,
-            "summary": "김태수는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "구태수는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-16.json",
@@ -200,6 +215,7 @@
         "from": "FH-K503-P-01",
         "to": "K503",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +232,7 @@
         "from": "FH-K503-P-02",
         "to": "FH-K503-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +249,7 @@
         "from": "FH-K503-M-01",
         "to": "K503",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

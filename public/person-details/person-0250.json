@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "윤현찬",
+        "lineage": {
+          "surname": "윤",
+          "bongwan": "파평",
+          "clan": "c724-d30c-d3c9"
+        },
         "birthDate": "2054-04-17",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "윤현혁",
+        "lineage": {
+          "surname": "윤",
+          "bongwan": "파평",
+          "clan": "c724-d30c-d3c9"
+        },
         "birthDate": "2024-04-17",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K249-P-01",
         "to": "K249",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K249-P-02",
         "to": "FH-K249-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K249-M-01",
         "to": "K249",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

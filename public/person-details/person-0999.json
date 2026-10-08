@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노현석",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "장연",
+          "clan": "b178-c7a5-c5f0-76e7"
+        },
         "birthDate": "2055-10-20",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노현준",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "장연",
+          "clan": "b178-c7a5-c5f0-76e7"
+        },
         "birthDate": "2025-10-20",
         "deathDate": null,
         "status": "authored",
@@ -201,6 +211,7 @@
         "from": "FH-K999-P-01",
         "to": "K999",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -217,6 +228,7 @@
         "from": "FH-K999-P-02",
         "to": "FH-K999-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -233,6 +245,7 @@
         "from": "FH-K999-M-01",
         "to": "K999",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

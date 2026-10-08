@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허현준",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "하양",
+          "clan": "d5c8-d558-c591-8a31-agreed-c11c-second"
+        },
         "birthDate": "2044-12-03",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허현호",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "하양",
+          "clan": "d5c8-d558-c591-8a31-agreed-c11c-second"
+        },
         "birthDate": "2014-12-03",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K881-P-01",
         "to": "K881",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K881-P-02",
         "to": "FH-K881-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K881-M-01",
         "to": "K881",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

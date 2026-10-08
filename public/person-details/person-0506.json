@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최태문",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "전주",
+          "clan": "cd5c-c804-c8fc-5d14-agreed-c544-second"
+        },
         "birthDate": "2050-06-06",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최태섭",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "전주",
+          "clan": "cd5c-c804-c8fc-5d14-agreed-c544-second"
+        },
         "birthDate": "2020-06-06",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K506-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "최태성",
+        "name": "국태성",
+        "lineage": {
+          "surname": "국",
+          "bongwan": "담양",
+          "clan": "ad6d-b2f4-c591"
+        },
         "birthDate": "2050-06-06",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2088,
-            "summary": "최태성은 신내 환승 당직에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "국태성은 신내 환승 당직에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-03.json",
@@ -200,6 +215,7 @@
         "from": "FH-K506-P-01",
         "to": "K506",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +232,7 @@
         "from": "FH-K506-P-02",
         "to": "FH-K506-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +249,7 @@
         "from": "FH-K506-M-01",
         "to": "K506",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

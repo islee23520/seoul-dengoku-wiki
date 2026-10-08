@@ -65,6 +65,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김민솔",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "경주",
+          "clan": "ae40-acbd-c8fc-91d1"
+        },
         "birthDate": "2066-05-23",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김민미",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "경주",
+          "clan": "ae40-acbd-c8fc-91d1"
+        },
         "birthDate": "2036-05-23",
         "deathDate": null,
         "status": "authored",
@@ -133,6 +143,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김민도",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "경주",
+          "clan": "ae40-acbd-c8fc-91d1"
+        },
         "birthDate": "2006-05-23",
         "deathDate": null,
         "status": "authored",
@@ -166,7 +181,12 @@
         "id": "FH-K1007-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "김서석",
+        "name": "강서석",
+        "lineage": {
+          "surname": "강",
+          "bongwan": "진주",
+          "clan": "ac15-c9c4-c8fc"
+        },
         "birthDate": "2066-05-23",
         "deathDate": null,
         "status": "authored",
@@ -182,7 +202,7 @@
         "timeline": [
           {
             "year": 2104,
-            "summary": "김서석은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+            "summary": "강서석은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Core-Characters.json",
@@ -271,6 +291,7 @@
         "from": "FH-K1007-P-01",
         "to": "K1007",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -287,6 +308,7 @@
         "from": "FH-K1007-P-02",
         "to": "FH-K1007-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -303,6 +325,7 @@
         "from": "FH-K1007-P-03",
         "to": "FH-K1007-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -319,6 +342,7 @@
         "from": "FH-K1007-M-01",
         "to": "K1007",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "우승찬",
+        "lineage": {
+          "surname": "우",
+          "bongwan": "단양",
+          "clan": "c6b0-b2e8-c591-agreed-c9c4-second"
+        },
         "birthDate": "2042-03-24",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "우승혁",
+        "lineage": {
+          "surname": "우",
+          "bongwan": "단양",
+          "clan": "c6b0-b2e8-c591-agreed-c9c4-second"
+        },
         "birthDate": "2012-03-24",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K737-P-01",
         "to": "K737",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K737-P-02",
         "to": "FH-K737-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K737-M-01",
         "to": "K737",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

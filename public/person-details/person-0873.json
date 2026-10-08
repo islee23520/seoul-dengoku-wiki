@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송도섭",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "여산",
+          "clan": "c1a1-c5ec-c0b0-agreed-b2e4-first"
+        },
         "birthDate": "2037-10-21",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송도성",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "여산",
+          "clan": "c1a1-c5ec-c0b0-agreed-b2e4-first"
+        },
         "birthDate": "2007-10-21",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K873-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "송도욱",
+        "name": "두도욱",
+        "lineage": {
+          "surname": "두",
+          "bongwan": "두릉",
+          "clan": "b450-b450-b989"
+        },
         "birthDate": "2037-10-21",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2075,
-            "summary": "송도욱은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "두도욱은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-02.json",
@@ -200,6 +215,7 @@
         "from": "FH-K873-P-01",
         "to": "K873",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +232,7 @@
         "from": "FH-K873-P-02",
         "to": "FH-K873-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +249,7 @@
         "from": "FH-K873-M-01",
         "to": "K873",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

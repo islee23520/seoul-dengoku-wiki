@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "엄승현",
+        "lineage": {
+          "surname": "엄",
+          "bongwan": "영월",
+          "clan": "c5c4-c601-c6d4"
+        },
         "birthDate": "2047-03-11",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "엄승영",
+        "lineage": {
+          "surname": "엄",
+          "bongwan": "영월",
+          "clan": "c5c4-c601-c6d4"
+        },
         "birthDate": "2017-03-11",
         "deathDate": null,
         "status": "authored",
@@ -202,6 +212,7 @@
         "from": "FH-K082-P-01",
         "to": "K082",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -218,6 +229,7 @@
         "from": "FH-K082-P-02",
         "to": "FH-K082-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -234,6 +246,7 @@
         "from": "FH-K082-M-01",
         "to": "K082",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

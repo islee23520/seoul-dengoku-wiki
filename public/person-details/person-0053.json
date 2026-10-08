@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류승민",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3"
+        },
         "birthDate": "2069-03-16",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류승원",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3"
+        },
         "birthDate": "2039-03-16",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류승진",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3"
+        },
         "birthDate": "2009-03-16",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K053-P-01",
         "to": "K053",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K053-P-02",
         "to": "FH-K053-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K053-P-03",
         "to": "FH-K053-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K053-M-01",
         "to": "K053",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

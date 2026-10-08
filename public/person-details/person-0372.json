@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "석승진",
+        "lineage": {
+          "surname": "석",
+          "bongwan": "충주",
+          "clan": "c11d-cda9-c8fc"
+        },
         "birthDate": "2072-06-04",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "석승현",
+        "lineage": {
+          "surname": "석",
+          "bongwan": "충주",
+          "clan": "c11d-cda9-c8fc"
+        },
         "birthDate": "2042-06-04",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "석승영",
+        "lineage": {
+          "surname": "석",
+          "bongwan": "충주",
+          "clan": "c11d-cda9-c8fc"
+        },
         "birthDate": "2012-06-04",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K371-P-01",
         "to": "K371",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K371-P-02",
         "to": "FH-K371-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K371-P-03",
         "to": "FH-K371-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K371-M-01",
         "to": "K371",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

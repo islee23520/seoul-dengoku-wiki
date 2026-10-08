@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이민범",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "성주",
+          "clan": "c774-c131-c8fc-674e-agreed-bbfc-second"
+        },
         "birthDate": "2063-02-08",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이민재",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "성주",
+          "clan": "c774-c131-c8fc-674e-agreed-bbfc-second"
+        },
         "birthDate": "2033-02-08",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이민찬",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "성주",
+          "clan": "c774-c131-c8fc-674e-agreed-bbfc-second"
+        },
         "birthDate": "2003-02-08",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K933-P-01",
         "to": "K933",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K933-P-02",
         "to": "FH-K933-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K933-P-03",
         "to": "FH-K933-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K933-M-01",
         "to": "K933",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

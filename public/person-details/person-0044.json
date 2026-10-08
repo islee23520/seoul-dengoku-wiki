@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "제승민",
+        "lineage": {
+          "surname": "제",
+          "bongwan": "칠원",
+          "clan": "c81c-ce60-c6d0-agreed-c628-second"
+        },
         "birthDate": "2065-09-03",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "제승원",
+        "lineage": {
+          "surname": "제",
+          "bongwan": "칠원",
+          "clan": "c81c-ce60-c6d0-agreed-c628-second"
+        },
         "birthDate": "2035-09-03",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "제승진",
+        "lineage": {
+          "surname": "제",
+          "bongwan": "칠원",
+          "clan": "c81c-ce60-c6d0-agreed-c628-second"
+        },
         "birthDate": "2005-09-03",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K044-P-01",
         "to": "K044",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K044-P-02",
         "to": "FH-K044-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K044-P-03",
         "to": "FH-K044-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K044-M-01",
         "to": "K044",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

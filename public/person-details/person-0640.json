@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송태미",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "연안",
+          "clan": "c1a1-c5f0-c548-5b8b"
+        },
         "birthDate": "2036-09-14",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송태도",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "연안",
+          "clan": "c1a1-c5f0-c548-5b8b"
+        },
         "birthDate": "2006-09-14",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K640-P-01",
         "to": "K640",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K640-P-02",
         "to": "FH-K640-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K640-M-01",
         "to": "K640",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승윤",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989-agreed-c601-second"
+        },
         "birthDate": "2062-07-24",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승우",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989-agreed-c601-second"
+        },
         "birthDate": "2032-07-24",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승경",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989-agreed-c601-second"
+        },
         "birthDate": "2002-07-24",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K450-P-01",
         "to": "K450",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K450-P-02",
         "to": "FH-K450-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K450-P-03",
         "to": "FH-K450-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K450-M-01",
         "to": "K450",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한준도",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc-agreed-c6b0-second"
+        },
         "birthDate": "2068-07-28",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한태석",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc-agreed-c6b0-second"
+        },
         "birthDate": "2038-07-28",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한태준",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc-agreed-c6b0-second"
+        },
         "birthDate": "2008-07-28",
         "deathDate": null,
         "status": "authored",
@@ -163,7 +178,12 @@
         "id": "FH-K473-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "한태호",
+        "name": "고태호",
+        "lineage": {
+          "surname": "고",
+          "bongwan": "한양",
+          "clan": "ace0-d55c-c591"
+        },
         "birthDate": "2068-07-28",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2106,
-            "summary": "한태호는 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "고태호는 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-02.json",
@@ -268,6 +288,7 @@
         "from": "FH-K473-P-01",
         "to": "K473",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +305,7 @@
         "from": "FH-K473-P-02",
         "to": "FH-K473-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +322,7 @@
         "from": "FH-K473-P-03",
         "to": "FH-K473-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +339,7 @@
         "from": "FH-K473-M-01",
         "to": "K473",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

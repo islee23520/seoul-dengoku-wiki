@@ -65,6 +65,11 @@
         "personId": null,
         "kind": "historical",
         "name": "민승온",
+        "lineage": {
+          "surname": "민",
+          "bongwan": "여흥",
+          "clan": "bbfc-c5ec-d765-9594"
+        },
         "birthDate": "2064-10-08",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "민승빈",
+        "lineage": {
+          "surname": "민",
+          "bongwan": "여흥",
+          "clan": "bbfc-c5ec-d765-9594"
+        },
         "birthDate": "2034-10-08",
         "deathDate": null,
         "status": "authored",
@@ -133,6 +143,11 @@
         "personId": null,
         "kind": "historical",
         "name": "민승솔",
+        "lineage": {
+          "surname": "민",
+          "bongwan": "여흥",
+          "clan": "bbfc-c5ec-d765-9594"
+        },
         "birthDate": "2004-10-08",
         "deathDate": null,
         "status": "authored",
@@ -271,6 +286,7 @@
         "from": "FH-K1008-P-01",
         "to": "K1008",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -287,6 +303,7 @@
         "from": "FH-K1008-P-02",
         "to": "FH-K1008-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -303,6 +320,7 @@
         "from": "FH-K1008-P-03",
         "to": "FH-K1008-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -319,6 +337,7 @@
         "from": "FH-K1008-M-01",
         "to": "K1008",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "종승호",
+        "lineage": {
+          "surname": "종",
+          "bongwan": "영암",
+          "clan": "c885-c601-c554"
+        },
         "birthDate": "2050-06-06",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "종승민",
+        "lineage": {
+          "surname": "종",
+          "bongwan": "영암",
+          "clan": "c885-c601-c554"
+        },
         "birthDate": "2020-06-06",
         "deathDate": null,
         "status": "authored",
@@ -202,6 +212,7 @@
         "from": "FH-K108-P-01",
         "to": "K108",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -218,6 +229,7 @@
         "from": "FH-K108-P-02",
         "to": "FH-K108-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -234,6 +246,7 @@
         "from": "FH-K108-M-01",
         "to": "K108",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

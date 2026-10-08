@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임승도",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "나주",
+          "clan": "c784-b098-c8fc"
+        },
         "birthDate": "2051-05-28",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임현석",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "나주",
+          "clan": "c784-b098-c8fc"
+        },
         "birthDate": "2021-05-28",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K122-P-01",
         "to": "K122",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K122-P-02",
         "to": "FH-K122-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K122-M-01",
         "to": "K122",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "영승원",
+        "lineage": {
+          "surname": "영",
+          "bongwan": "선천",
+          "clan": "c601-c120-cc9c-5f71"
+        },
         "birthDate": "2049-07-19",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "영승진",
+        "lineage": {
+          "surname": "영",
+          "bongwan": "선천",
+          "clan": "c601-c120-cc9c-5f71"
+        },
         "birthDate": "2019-07-19",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K364-P-01",
         "to": "K364",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K364-P-02",
         "to": "FH-K364-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K364-M-01",
         "to": "K364",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

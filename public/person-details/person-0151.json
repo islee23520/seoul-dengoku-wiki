@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "지승호",
+        "lineage": {
+          "surname": "지",
+          "bongwan": "충주",
+          "clan": "c9c0-cda9-c8fc"
+        },
         "birthDate": "2066-09-19",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "지승민",
+        "lineage": {
+          "surname": "지",
+          "bongwan": "충주",
+          "clan": "c9c0-cda9-c8fc"
+        },
         "birthDate": "2036-09-19",
         "deathDate": null,
         "status": "authored",
@@ -131,6 +141,11 @@
         "personId": null,
         "kind": "historical",
         "name": "지승원",
+        "lineage": {
+          "surname": "지",
+          "bongwan": "충주",
+          "clan": "c9c0-cda9-c8fc"
+        },
         "birthDate": "2006-09-19",
         "deathDate": null,
         "status": "authored",
@@ -269,6 +284,7 @@
         "from": "FH-K150-P-01",
         "to": "K150",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -285,6 +301,7 @@
         "from": "FH-K150-P-02",
         "to": "FH-K150-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -301,6 +318,7 @@
         "from": "FH-K150-P-03",
         "to": "FH-K150-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -317,6 +335,7 @@
         "from": "FH-K150-M-01",
         "to": "K150",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

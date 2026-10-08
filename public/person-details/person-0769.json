@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노승범",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "교하",
+          "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+        },
         "birthDate": "2068-01-15",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노승재",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "교하",
+          "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+        },
         "birthDate": "2038-01-15",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노승찬",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "교하",
+          "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+        },
         "birthDate": "2008-01-15",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K769-P-01",
         "to": "K769",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K769-P-02",
         "to": "FH-K769-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K769-P-03",
         "to": "FH-K769-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K769-M-01",
         "to": "K769",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

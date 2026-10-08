@@ -11,6 +11,26 @@ import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validateCastFamilyTrees } from './cast-family-trees.mjs'
 
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
+
+test('rejects conflicting paternal clan across a historical generation', () => {
+  const ledger = fixture()
+  const line = { surname: '신', bongwan: '고령', clan: 'goryeong-shin' }
+  ledger.nodes.find((entry) => entry.id === id('신종목')).lineage = line
+  ledger.nodes.find((entry) => entry.id === id('신준')).lineage = { ...line, bongwan: '다른 본관' }
+  ledger.edges.find((entry) => entry.to === id('신준')).parentRole = 'father'
+  assert.throws(() => validateCastFamilyTrees(ledger, roster), /E_FAMILY_PATERNAL_LINE/)
+})
+
+test('rejects reintroduced same surname on an owner-corrected derived pair', async () => {
+  const authored = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-trees.json', import.meta.url), 'utf8'))
+  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const diaspora = JSON.parse(await readFile(new URL('../lore/name-pools/diaspora-family-lineages.json', import.meta.url), 'utf8'))
+  const hang = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
+  const pair = decisions.maternalCorrections[0]
+  authored.nodes.find((entry) => entry.id === pair.motherId).lineage.surname = pair.fatherLine.surname
+  assert.throws(() => validateCastFamilyTrees(authored, registry, { diaspora, roleDecisions: decisions, lineages: new Map(hang.people.map((person) => [person.name, person])) }), /E_FAMILY_SAME_SURNAME/)
+})
+
 const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
 const roster = registry.filter((person) => ['신종목', '신준', '임하준', '임초원', '이연'].includes(person.name))
 const id = (name) => roster.find((person) => person.name === name).id
@@ -22,6 +42,36 @@ const fixture = () => ({ schemaVersion: 1, referenceDate: '2126-12-31', collapse
     ['신종목', '임하준'].includes(person.name) ? '2080-01-01' : '2110-01-01', person.name === '이연' ? 'synthetic' : 'person'))],
   edges: [edge('H-test', id('신종목')), edge('H-test', id('임하준')), edge('H-test', id('이연'), 'custodial'),
     edge(id('신종목'), id('신준')), edge(id('임하준'), id('임초원'), 'adoptive')] })
+
+test.each(['father', 'mother'])('rejects duplicate %s roles for one child', (parentRole) => {
+  const ledger = fixture()
+  ledger.edges.find((entry) => entry.to === id('신준')).parentRole = parentRole
+  ledger.edges.push({ ...edge('H-test', id('신준')), parentRole })
+  assert.throws(() => validateCastFamilyTrees(ledger, roster), /E_FAMILY_DUPLICATE_PARENT_ROLE/)
+})
+
+test.each([
+  ['invalid value', 'biological', 'parent'],
+  ['adoption', 'adoptive', 'father'],
+  ['custody', 'custodial', 'mother'],
+  ['household', 'household', 'father'],
+])('rejects parent roles on %s', (_label, type, parentRole) => {
+  const ledger = fixture()
+  ledger.edges.push({ ...edge('H-test', id('신준'), type), parentRole })
+  assert.throws(() => validateCastFamilyTrees(ledger, roster), /E_FAMILY_PARENT_ROLE/)
+})
+
+test('preserves explicit and unrecorded roles through validation and projection', () => {
+  const ledger = fixture()
+  ledger.edges.find((entry) => entry.to === id('신준')).parentRole = 'father'
+  const graph = validateCastFamilyTrees(ledger, roster)
+  const projected = projectFamilyTree(graph, id('신준'), new Map())
+  assert.equal(projected.edges.find((entry) => entry.to === id('신준')).parentRole, 'father')
+  assert.ok(projected.edges.filter((entry) => entry.to !== id('신준')).every((entry) => !('parentRole' in entry)))
+  assert.deepEqual(graph.nodes, ledger.nodes)
+  assert.deepEqual(graph.edges, ledger.edges)
+})
+
 
 test('preserves explicit biological and adoption edges without imposing numerical age gaps', () => {
   const ledger = fixture()
@@ -70,6 +120,9 @@ test('authoritative registered name and birth edits resolve through the real loa
   const root = await mkdtemp(join(tmpdir(), 'family-authority-'))
   try {
     await mkdir(join(root, 'name-pools'))
+    await writeFile(join(root, 'name-pools/cast-hangnyeol.json'), JSON.stringify({ people: [] }))
+    await writeFile(join(root, 'name-pools/clan-hangnyeol-tables.json'), JSON.stringify({ clans: [] }))
+    await writeFile(join(root, 'name-pools/cast-family-role-decisions.json'), JSON.stringify({ derivedParentRoles: [], maternalCorrections: [] }))
     const ledger = fixture()
     const canonicalBirths = JSON.parse(await readFile(new URL('../lore/name-pools/cast-birthdays.json', import.meta.url), 'utf8')).people
     for (const node of ledger.nodes) if (node.personId) node.birthDate = canonicalBirths.find((entry) => entry.id === node.personId).birthDate

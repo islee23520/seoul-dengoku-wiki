@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김승솔",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "경주",
+          "clan": "ae40-acbd-c8fc-91d1"
+        },
         "birthDate": "2052-07-17",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김승미",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "경주",
+          "clan": "ae40-acbd-c8fc-91d1"
+        },
         "birthDate": "2022-07-17",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K116-P-01",
         "to": "K116",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K116-P-02",
         "to": "FH-K116-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K116-M-01",
         "to": "K116",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

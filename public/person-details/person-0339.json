@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승민",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "남양",
+          "clan": "bc29-b0a8-c591-623f"
+        },
         "birthDate": "2054-01-16",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승원",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "남양",
+          "clan": "bc29-b0a8-c591-623f"
+        },
         "birthDate": "2024-01-16",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K338-P-01",
         "to": "K338",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K338-P-02",
         "to": "FH-K338-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K338-M-01",
         "to": "K338",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

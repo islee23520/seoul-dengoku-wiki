@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한승윤",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc"
+        },
         "birthDate": "2063-01-23",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한승우",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc"
+        },
         "birthDate": "2033-01-23",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한승경",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc"
+        },
         "birthDate": "2003-01-23",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K037-P-01",
         "to": "K037",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K037-P-02",
         "to": "FH-K037-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K037-P-03",
         "to": "FH-K037-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K037-M-01",
         "to": "K037",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

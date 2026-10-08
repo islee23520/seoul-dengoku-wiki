@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "매승윤",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2060-04-05",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "매승우",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2030-04-05",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "매승경",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2000-04-05",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K417-P-01",
         "to": "K417",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K417-P-02",
         "to": "FH-K417-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K417-P-03",
         "to": "FH-K417-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K417-M-01",
         "to": "K417",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정승완",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진주",
+          "clan": "c815-c9c4-c8fc-912d-agreed-c900-second"
+        },
         "birthDate": "2071-05-14",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정승훈",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진주",
+          "clan": "c815-c9c4-c8fc-912d-agreed-c900-second"
+        },
         "birthDate": "2041-05-14",
         "deathDate": null,
         "status": "authored",
@@ -132,6 +142,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정승범",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진주",
+          "clan": "c815-c9c4-c8fc-912d-agreed-c900-second"
+        },
         "birthDate": "2011-05-14",
         "deathDate": null,
         "status": "authored",
@@ -270,6 +285,7 @@
         "from": "FH-K057-P-01",
         "to": "K057",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -286,6 +302,7 @@
         "from": "FH-K057-P-02",
         "to": "FH-K057-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -302,6 +319,7 @@
         "from": "FH-K057-P-03",
         "to": "FH-K057-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -318,6 +336,7 @@
         "from": "FH-K057-M-01",
         "to": "K057",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

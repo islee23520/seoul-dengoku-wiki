@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "창승수",
+        "lineage": {
+          "surname": "창",
+          "bongwan": "아산",
+          "clan": "cc3d-c544-c0b0-5009"
+        },
         "birthDate": "2034-08-01",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "창승은",
+        "lineage": {
+          "surname": "창",
+          "bongwan": "아산",
+          "clan": "cc3d-c544-c0b0-5009"
+        },
         "birthDate": "2004-08-01",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K420-P-01",
         "to": "K420",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K420-P-02",
         "to": "FH-K420-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K420-M-01",
         "to": "K420",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

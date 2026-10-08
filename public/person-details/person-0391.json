@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "흥승진",
+        "lineage": {
+          "surname": "흥",
+          "bongwan": "수색",
+          "clan": "creative-d765-c218-c0c9"
+        },
         "birthDate": "2047-02-07",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "흥승현",
+        "lineage": {
+          "surname": "흥",
+          "bongwan": "수색",
+          "clan": "creative-d765-c218-c0c9"
+        },
         "birthDate": "2017-02-07",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K390-P-01",
         "to": "K390",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K390-P-02",
         "to": "FH-K390-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K390-M-01",
         "to": "K390",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

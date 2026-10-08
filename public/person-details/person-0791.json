@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "서승리",
+        "lineage": {
+          "surname": "서",
+          "bongwan": "달성",
+          "clan": "c11c-b2ec-c131-agreed-c11c-second"
+        },
         "birthDate": "2062-08-31",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "서승나",
+        "lineage": {
+          "surname": "서",
+          "bongwan": "달성",
+          "clan": "c11c-b2ec-c131-agreed-c11c-second"
+        },
         "birthDate": "2032-08-31",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "서승온",
+        "lineage": {
+          "surname": "서",
+          "bongwan": "달성",
+          "clan": "c11c-b2ec-c131-agreed-c11c-second"
+        },
         "birthDate": "2002-08-31",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K791-P-01",
         "to": "K791",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K791-P-02",
         "to": "FH-K791-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K791-P-03",
         "to": "FH-K791-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K791-M-01",
         "to": "K791",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

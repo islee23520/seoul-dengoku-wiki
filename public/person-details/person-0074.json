@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승우",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "양천",
+          "clan": "d5c8-c591-cc9c"
+        },
         "birthDate": "2071-04-04",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승경",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "양천",
+          "clan": "d5c8-c591-cc9c"
+        },
         "birthDate": "2041-04-04",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승수",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "양천",
+          "clan": "d5c8-c591-cc9c"
+        },
         "birthDate": "2011-04-04",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K074-P-01",
         "to": "K074",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K074-P-02",
         "to": "FH-K074-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K074-P-03",
         "to": "FH-K074-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K074-M-01",
         "to": "K074",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

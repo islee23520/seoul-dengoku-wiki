@@ -67,6 +67,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박현연",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2041-01-09",
         "deathDate": null,
         "status": "authored",
@@ -103,6 +108,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박현정",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2011-01-09",
         "deathDate": null,
         "status": "authored",
@@ -211,6 +221,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박도헌",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "nameEn": "Park Doheon",
         "birthDate": "1981-01-09",
         "deathDate": null,
@@ -273,6 +288,7 @@
         "from": "FH-K169-P-01",
         "to": "K169",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -289,6 +305,7 @@
         "from": "FH-K169-P-02",
         "to": "FH-K169-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -305,6 +322,7 @@
         "from": "FH-K169-M-01",
         "to": "K169",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -337,6 +355,7 @@
         "from": "FH-K169-P-03",
         "to": "FH-K169-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "석승석",
+        "lineage": {
+          "surname": "석",
+          "bongwan": "충주",
+          "clan": "c11d-cda9-c8fc"
+        },
         "birthDate": "2042-08-07",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "석승준",
+        "lineage": {
+          "surname": "석",
+          "bongwan": "충주",
+          "clan": "c11d-cda9-c8fc"
+        },
         "birthDate": "2012-08-07",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K318-P-01",
         "to": "K318",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K318-P-02",
         "to": "FH-K318-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K318-M-01",
         "to": "K318",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

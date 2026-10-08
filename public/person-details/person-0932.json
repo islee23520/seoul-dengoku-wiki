@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김민수",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "상락",
+          "clan": "ae40-c0c1-b77d-91d1"
+        },
         "birthDate": "2057-08-06",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김민은",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "상락",
+          "clan": "ae40-c0c1-b77d-91d1"
+        },
         "birthDate": "2027-08-06",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김민연",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "상락",
+          "clan": "ae40-c0c1-b77d-91d1"
+        },
         "birthDate": "1997-08-06",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K932-P-01",
         "to": "K932",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K932-P-02",
         "to": "FH-K932-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K932-P-03",
         "to": "FH-K932-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K932-M-01",
         "to": "K932",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

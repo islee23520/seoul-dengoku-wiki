@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송민아",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "신평",
+          "clan": "c1a1-c2e0-d3c9-5b8b"
+        },
         "birthDate": "2072-07-18",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송민희",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "신평",
+          "clan": "c1a1-c2e0-d3c9-5b8b"
+        },
         "birthDate": "2042-07-18",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송민규",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "신평",
+          "clan": "c1a1-c2e0-d3c9-5b8b"
+        },
         "birthDate": "2012-07-18",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K985-P-01",
         "to": "K985",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K985-P-02",
         "to": "FH-K985-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K985-P-03",
         "to": "FH-K985-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K985-M-01",
         "to": "K985",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

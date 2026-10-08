@@ -68,6 +68,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한승석",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc"
+        },
         "birthDate": "2039-06-17",
         "deathDate": null,
         "status": "authored",
@@ -102,6 +107,11 @@
         "personId": null,
         "kind": "historical",
         "name": "한승준",
+        "lineage": {
+          "surname": "한",
+          "bongwan": "청주",
+          "clan": "d55c-ccad-c8fc"
+        },
         "birthDate": "2009-06-17",
         "deathDate": null,
         "status": "authored",
@@ -206,6 +216,7 @@
         "from": "FH-K001-P-01",
         "to": "K001",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -222,6 +233,7 @@
         "from": "FH-K001-P-02",
         "to": "FH-K001-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -238,6 +250,7 @@
         "from": "FH-K001-M-01",
         "to": "K001",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "창승석",
+        "lineage": {
+          "surname": "창",
+          "bongwan": "거창",
+          "clan": "cc3d-ac70-cc3d"
+        },
         "birthDate": "2066-01-24",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "창승준",
+        "lineage": {
+          "surname": "창",
+          "bongwan": "거창",
+          "clan": "cc3d-ac70-cc3d"
+        },
         "birthDate": "2036-01-24",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "창승호",
+        "lineage": {
+          "surname": "창",
+          "bongwan": "거창",
+          "clan": "cc3d-ac70-cc3d"
+        },
         "birthDate": "2006-01-24",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K316-P-01",
         "to": "K316",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K316-P-02",
         "to": "FH-K316-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K316-P-03",
         "to": "FH-K316-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K316-M-01",
         "to": "K316",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

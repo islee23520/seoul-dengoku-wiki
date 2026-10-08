@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오승성",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc"
+        },
         "birthDate": "2037-11-29",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오승욱",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc"
+        },
         "birthDate": "2007-11-29",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K148-P-01",
         "to": "K148",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K148-P-02",
         "to": "FH-K148-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K148-M-01",
         "to": "K148",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

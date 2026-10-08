@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박현석",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2044-01-22",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박현준",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2014-01-22",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K120-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "박현호",
+        "name": "감현호",
+        "lineage": {
+          "surname": "감",
+          "bongwan": "창원",
+          "clan": "ac10-cc3d-c6d0"
+        },
         "birthDate": "2044-01-22",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2082,
-            "summary": "박현호는 신정 차량기지에서 열차 출고·부품 규격 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "감현호는 신정 차량기지에서 열차 출고·부품 규격 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-05.json",
@@ -200,6 +215,7 @@
         "from": "FH-K120-P-01",
         "to": "K120",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +232,7 @@
         "from": "FH-K120-P-02",
         "to": "FH-K120-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +249,7 @@
         "from": "FH-K120-M-01",
         "to": "K120",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

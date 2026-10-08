@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승은",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "능성",
+          "clan": "ad6c-b2a5-c131-agreed-acb0-second"
+        },
         "birthDate": "2047-08-27",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승연",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "능성",
+          "clan": "ad6c-b2a5-c131-agreed-acb0-second"
+        },
         "birthDate": "2017-08-27",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K460-P-01",
         "to": "K460",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K460-P-02",
         "to": "FH-K460-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K460-M-01",
         "to": "K460",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

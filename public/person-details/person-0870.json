@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "권승빈",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9-agreed-b9b0-second"
+        },
         "birthDate": "2068-06-03",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "권승솔",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9-agreed-b9b0-second"
+        },
         "birthDate": "2038-06-03",
         "deathDate": null,
         "status": "authored",
@@ -131,6 +141,11 @@
         "personId": null,
         "kind": "historical",
         "name": "권승미",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9-agreed-b9b0-second"
+        },
         "birthDate": "2008-06-03",
         "deathDate": null,
         "status": "authored",
@@ -269,6 +284,7 @@
         "from": "FH-K870-P-01",
         "to": "K870",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -285,6 +301,7 @@
         "from": "FH-K870-P-02",
         "to": "FH-K870-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -301,6 +318,7 @@
         "from": "FH-K870-P-03",
         "to": "FH-K870-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -317,6 +335,7 @@
         "from": "FH-K870-M-01",
         "to": "K870",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

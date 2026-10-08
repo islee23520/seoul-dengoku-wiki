@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "장승진",
+        "lineage": {
+          "surname": "장",
+          "bongwan": "단양",
+          "clan": "c7a5-b2e8-c591-5f35"
+        },
         "birthDate": "2070-08-03",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "장승현",
+        "lineage": {
+          "surname": "장",
+          "bongwan": "단양",
+          "clan": "c7a5-b2e8-c591-5f35"
+        },
         "birthDate": "2040-08-03",
         "deathDate": null,
         "status": "authored",
@@ -132,6 +142,11 @@
         "personId": null,
         "kind": "historical",
         "name": "장승영",
+        "lineage": {
+          "surname": "장",
+          "bongwan": "단양",
+          "clan": "c7a5-b2e8-c591-5f35"
+        },
         "birthDate": "2010-08-03",
         "deathDate": null,
         "status": "authored",
@@ -270,6 +285,7 @@
         "from": "FH-K064-P-01",
         "to": "K064",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -286,6 +302,7 @@
         "from": "FH-K064-P-02",
         "to": "FH-K064-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -302,6 +319,7 @@
         "from": "FH-K064-P-03",
         "to": "FH-K064-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -318,6 +336,7 @@
         "from": "FH-K064-M-01",
         "to": "K064",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

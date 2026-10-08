@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배승아",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "성주",
+          "clan": "bc30-c131-c8fc-agreed-c6d0-second"
+        },
         "birthDate": "2044-01-02",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배승희",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "성주",
+          "clan": "bc30-c131-c8fc-agreed-c6d0-second"
+        },
         "birthDate": "2014-01-02",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K487-P-01",
         "to": "K487",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K487-P-02",
         "to": "FH-K487-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K487-M-01",
         "to": "K487",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

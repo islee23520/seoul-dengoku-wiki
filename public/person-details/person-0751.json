@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오도민",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc-agreed-d638-second"
+        },
         "birthDate": "2050-04-04",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오도원",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc-agreed-d638-second"
+        },
         "birthDate": "2020-04-04",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K751-P-01",
         "to": "K751",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K751-P-02",
         "to": "FH-K751-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K751-M-01",
         "to": "K751",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

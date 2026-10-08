@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승민",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc"
+        },
         "birthDate": "2069-11-21",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승원",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc"
+        },
         "birthDate": "2039-11-21",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승진",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc"
+        },
         "birthDate": "2009-11-21",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K351-P-01",
         "to": "K351",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K351-P-02",
         "to": "FH-K351-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K351-P-03",
         "to": "FH-K351-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K351-M-01",
         "to": "K351",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

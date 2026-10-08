@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임태연",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "나주",
+          "clan": "c784-b098-c8fc"
+        },
         "birthDate": "2038-12-02",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임태정",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "나주",
+          "clan": "c784-b098-c8fc"
+        },
         "birthDate": "2008-12-02",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K512-P-01",
         "to": "K512",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K512-P-02",
         "to": "FH-K512-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K512-M-01",
         "to": "K512",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승민",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2046-01-01",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "표승원",
+        "lineage": {
+          "surname": "표",
+          "bongwan": "신창",
+          "clan": "d45c-c2e0-cc3d"
+        },
         "birthDate": "2016-01-01",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K042-P-01",
         "to": "K042",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K042-P-02",
         "to": "FH-K042-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K042-M-01",
         "to": "K042",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

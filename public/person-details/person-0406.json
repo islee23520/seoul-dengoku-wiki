@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "선승우",
+        "lineage": {
+          "surname": "선",
+          "bongwan": "보성",
+          "clan": "c120-bcf4-c131"
+        },
         "birthDate": "2071-08-31",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "선승경",
+        "lineage": {
+          "surname": "선",
+          "bongwan": "보성",
+          "clan": "c120-bcf4-c131"
+        },
         "birthDate": "2041-08-31",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "선승수",
+        "lineage": {
+          "surname": "선",
+          "bongwan": "보성",
+          "clan": "c120-bcf4-c131"
+        },
         "birthDate": "2011-08-31",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K405-P-01",
         "to": "K405",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K405-P-02",
         "to": "FH-K405-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K405-P-03",
         "to": "FH-K405-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K405-M-01",
         "to": "K405",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
