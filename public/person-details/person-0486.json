@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "손승호",
+        "lineage": {
+          "surname": "손",
+          "bongwan": "밀양",
+          "clan": "c190-bc00-c591-agreed-c5f0-second"
+        },
         "birthDate": "2070-04-26",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "손승민",
+        "lineage": {
+          "surname": "손",
+          "bongwan": "밀양",
+          "clan": "c190-bc00-c591-agreed-c5f0-second"
+        },
         "birthDate": "2040-04-26",
         "deathDate": null,
         "status": "authored",
@@ -131,6 +141,11 @@
         "personId": null,
         "kind": "historical",
         "name": "손승원",
+        "lineage": {
+          "surname": "손",
+          "bongwan": "밀양",
+          "clan": "c190-bc00-c591-agreed-c5f0-second"
+        },
         "birthDate": "2010-04-26",
         "deathDate": null,
         "status": "authored",
@@ -269,6 +284,7 @@
         "from": "FH-K486-P-01",
         "to": "K486",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -285,6 +301,7 @@
         "from": "FH-K486-P-02",
         "to": "FH-K486-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -301,6 +318,7 @@
         "from": "FH-K486-P-03",
         "to": "FH-K486-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -317,6 +335,7 @@
         "from": "FH-K486-M-01",
         "to": "K486",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -333,6 +352,7 @@
         "from": "FH-K486-M-02",
         "to": "FH-K486-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -349,6 +369,7 @@
         "from": "FH-K486-M-03",
         "to": "FH-K486-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승나",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc-agreed-c7ac-second"
+        },
         "birthDate": "2049-03-08",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "하승온",
+        "lineage": {
+          "surname": "하",
+          "bongwan": "진주",
+          "clan": "d558-c9c4-c8fc-agreed-c7ac-second"
+        },
         "birthDate": "2019-03-08",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K809-P-01",
         "to": "K809",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K809-P-02",
         "to": "FH-K809-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K809-M-01",
         "to": "K809",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K809-M-02",
         "to": "FH-K809-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "흥승석",
+        "lineage": {
+          "surname": "흥",
+          "bongwan": "수색",
+          "clan": "creative-d765-c218-c0c9"
+        },
         "birthDate": "2059-03-20",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "흥승준",
+        "lineage": {
+          "surname": "흥",
+          "bongwan": "수색",
+          "clan": "creative-d765-c218-c0c9"
+        },
         "birthDate": "2029-03-20",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "흥승호",
+        "lineage": {
+          "surname": "흥",
+          "bongwan": "수색",
+          "clan": "creative-d765-c218-c0c9"
+        },
         "birthDate": "1999-03-20",
         "deathDate": null,
         "status": "authored",
@@ -271,6 +286,7 @@
         "from": "FH-K320-P-01",
         "to": "K320",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -287,6 +303,7 @@
         "from": "FH-K320-P-02",
         "to": "FH-K320-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -303,6 +320,7 @@
         "from": "FH-K320-P-03",
         "to": "FH-K320-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -319,6 +337,7 @@
         "from": "FH-K320-M-01",
         "to": "K320",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -335,6 +354,7 @@
         "from": "FH-K320-M-02",
         "to": "FH-K320-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -351,6 +371,7 @@
         "from": "FH-K320-M-03",
         "to": "FH-K320-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

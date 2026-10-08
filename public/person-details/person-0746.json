@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조재도",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "평양",
+          "clan": "c870-d3c9-c591-8d99-agreed-c900-second"
+        },
         "birthDate": "2036-10-21",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조도석",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "평양",
+          "clan": "c870-d3c9-c591-8d99-agreed-c900-second"
+        },
         "birthDate": "2006-10-21",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K746-P-01",
         "to": "K746",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K746-P-02",
         "to": "FH-K746-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K746-M-01",
         "to": "K746",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K746-M-02",
         "to": "FH-K746-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

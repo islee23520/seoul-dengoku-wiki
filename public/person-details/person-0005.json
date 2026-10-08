@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최승호",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "강릉",
+          "clan": "cd5c-ac15-b989-5d14"
+        },
         "birthDate": "2060-08-12",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최승민",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "강릉",
+          "clan": "cd5c-ac15-b989-5d14"
+        },
         "birthDate": "2030-08-12",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최승원",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "강릉",
+          "clan": "cd5c-ac15-b989-5d14"
+        },
         "birthDate": "2000-08-12",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K005-P-01",
         "to": "K005",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K005-P-02",
         "to": "FH-K005-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K005-P-03",
         "to": "FH-K005-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K005-M-01",
         "to": "K005",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -332,6 +351,7 @@
         "from": "FH-K005-M-02",
         "to": "FH-K005-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -348,6 +368,7 @@
         "from": "FH-K005-M-03",
         "to": "FH-K005-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

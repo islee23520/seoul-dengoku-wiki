@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승진",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "온양",
+          "clan": "bc29-c628-c591"
+        },
         "birthDate": "2072-03-19",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승현",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "온양",
+          "clan": "bc29-c628-c591"
+        },
         "birthDate": "2042-03-19",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승영",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "온양",
+          "clan": "bc29-c628-c591"
+        },
         "birthDate": "2012-03-19",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K360-P-01",
         "to": "K360",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K360-P-02",
         "to": "FH-K360-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K360-P-03",
         "to": "FH-K360-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K360-M-01",
         "to": "K360",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -331,6 +350,7 @@
         "from": "FH-K360-M-02",
         "to": "FH-K360-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -347,6 +367,7 @@
         "from": "FH-K360-M-03",
         "to": "FH-K360-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

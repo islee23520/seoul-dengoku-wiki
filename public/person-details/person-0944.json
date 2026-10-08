@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "서현호",
+        "lineage": {
+          "surname": "서",
+          "bongwan": "달성",
+          "clan": "c11c-b2ec-c131-agreed-c740-second"
+        },
         "birthDate": "2045-05-27",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "서현민",
+        "lineage": {
+          "surname": "서",
+          "bongwan": "달성",
+          "clan": "c11c-b2ec-c131-agreed-c740-second"
+        },
         "birthDate": "2015-05-27",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K944-P-01",
         "to": "K944",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K944-P-02",
         "to": "FH-K944-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K944-M-01",
         "to": "K944",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K944-M-02",
         "to": "FH-K944-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

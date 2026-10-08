@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "단승호",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "대흥",
+          "clan": "b2e8-b300-d765-6bb5"
+        },
         "birthDate": "2042-03-15",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "단승민",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "대흥",
+          "clan": "b2e8-b300-d765-6bb5"
+        },
         "birthDate": "2012-03-15",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K214-P-01",
         "to": "K214",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K214-P-02",
         "to": "FH-K214-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K214-M-01",
         "to": "K214",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K214-M-02",
         "to": "FH-K214-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

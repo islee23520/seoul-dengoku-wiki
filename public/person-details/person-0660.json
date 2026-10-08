@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승찬",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "평해",
+          "clan": "ad6c-d3c9-d574-4e18"
+        },
         "birthDate": "2064-12-21",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승혁",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "평해",
+          "clan": "ad6c-d3c9-d574-4e18"
+        },
         "birthDate": "2034-12-21",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승문",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "평해",
+          "clan": "ad6c-d3c9-d574-4e18"
+        },
         "birthDate": "2004-12-21",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K660-P-01",
         "to": "K660",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K660-P-02",
         "to": "FH-K660-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K660-P-03",
         "to": "FH-K660-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K660-M-01",
         "to": "K660",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -332,6 +351,7 @@
         "from": "FH-K660-M-02",
         "to": "FH-K660-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -348,6 +368,7 @@
         "from": "FH-K660-M-03",
         "to": "FH-K660-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

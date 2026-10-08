@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "두승호",
+        "lineage": {
+          "surname": "두",
+          "bongwan": "두릉",
+          "clan": "b450-b450-b989"
+        },
         "birthDate": "2065-01-28",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "두승민",
+        "lineage": {
+          "surname": "두",
+          "bongwan": "두릉",
+          "clan": "b450-b450-b989"
+        },
         "birthDate": "2035-01-28",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "두승원",
+        "lineage": {
+          "surname": "두",
+          "bongwan": "두릉",
+          "clan": "b450-b450-b989"
+        },
         "birthDate": "2005-01-28",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K233-P-01",
         "to": "K233",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K233-P-02",
         "to": "FH-K233-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K233-P-03",
         "to": "FH-K233-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K233-M-01",
         "to": "K233",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -331,6 +350,7 @@
         "from": "FH-K233-M-02",
         "to": "FH-K233-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -347,6 +367,7 @@
         "from": "FH-K233-M-03",
         "to": "FH-K233-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

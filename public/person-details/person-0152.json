@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "마승민",
+        "lineage": {
+          "surname": "마",
+          "bongwan": "장흥",
+          "clan": "b9c8-c7a5-d765"
+        },
         "birthDate": "2041-07-30",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "마승원",
+        "lineage": {
+          "surname": "마",
+          "bongwan": "장흥",
+          "clan": "b9c8-c7a5-d765"
+        },
         "birthDate": "2011-07-30",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K151-P-01",
         "to": "K151",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K151-P-02",
         "to": "FH-K151-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K151-M-01",
         "to": "K151",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K151-M-02",
         "to": "FH-K151-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

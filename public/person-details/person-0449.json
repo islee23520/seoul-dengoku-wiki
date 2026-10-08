@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승아",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "김해",
+          "clan": "d5c8-ae40-d574-8a31"
+        },
         "birthDate": "2040-03-29",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승희",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "김해",
+          "clan": "d5c8-ae40-d574-8a31"
+        },
         "birthDate": "2010-03-29",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K449-P-01",
         "to": "K449",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K449-P-02",
         "to": "FH-K449-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K449-M-01",
         "to": "K449",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K449-M-02",
         "to": "FH-K449-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

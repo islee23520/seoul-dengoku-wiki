@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "채승연",
+        "lineage": {
+          "surname": "채",
+          "bongwan": "평강",
+          "clan": "cc44-d3c9-ac15"
+        },
         "birthDate": "2043-11-14",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "채승정",
+        "lineage": {
+          "surname": "채",
+          "bongwan": "평강",
+          "clan": "cc44-d3c9-ac15"
+        },
         "birthDate": "2013-11-14",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K099-P-01",
         "to": "K099",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K099-P-02",
         "to": "FH-K099-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K099-M-01",
         "to": "K099",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K099-M-02",
         "to": "FH-K099-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

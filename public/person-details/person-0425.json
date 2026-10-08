@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박준나",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591-agreed-c724-second"
+        },
         "birthDate": "2052-07-05",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박준온",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591-agreed-c724-second"
+        },
         "birthDate": "2022-07-05",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K425-P-01",
         "to": "K425",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K425-P-02",
         "to": "FH-K425-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K425-M-01",
         "to": "K425",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K425-M-02",
         "to": "FH-K425-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

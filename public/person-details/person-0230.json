@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "소승석",
+        "lineage": {
+          "surname": "소",
+          "bongwan": "진주",
+          "clan": "c18c-c9c4-c8fc"
+        },
         "birthDate": "2046-06-12",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "소승준",
+        "lineage": {
+          "surname": "소",
+          "bongwan": "진주",
+          "clan": "c18c-c9c4-c8fc"
+        },
         "birthDate": "2016-06-12",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K229-P-01",
         "to": "K229",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K229-P-02",
         "to": "FH-K229-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K229-M-01",
         "to": "K229",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K229-M-02",
         "to": "FH-K229-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

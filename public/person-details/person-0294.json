@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "평승수",
+        "lineage": {
+          "surname": "평",
+          "bongwan": "충주",
+          "clan": "d3c9-cda9-c8fc"
+        },
         "birthDate": "2050-10-12",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "평승은",
+        "lineage": {
+          "surname": "평",
+          "bongwan": "충주",
+          "clan": "d3c9-cda9-c8fc"
+        },
         "birthDate": "2020-10-12",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K293-P-01",
         "to": "K293",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K293-P-02",
         "to": "FH-K293-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K293-M-01",
         "to": "K293",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K293-M-02",
         "to": "FH-K293-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

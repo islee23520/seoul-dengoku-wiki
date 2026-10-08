@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "란승경",
+        "lineage": {
+          "surname": "란",
+          "bongwan": "도봉",
+          "clan": "creative-b780-b3c4-bd09"
+        },
         "birthDate": "2037-10-25",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "란승수",
+        "lineage": {
+          "surname": "란",
+          "bongwan": "도봉",
+          "clan": "creative-b780-b3c4-bd09"
+        },
         "birthDate": "2007-10-25",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K291-P-01",
         "to": "K291",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K291-P-02",
         "to": "FH-K291-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K291-M-01",
         "to": "K291",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K291-M-02",
         "to": "FH-K291-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

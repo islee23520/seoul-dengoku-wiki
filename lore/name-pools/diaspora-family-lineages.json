@@ -31,6 +31,7 @@
         },
         {
           "key": "DF-PHAM-02",
+          "parentRoles": {"DF-PHAM-01":"father"},
           "generation": 2,
           "name": { "ko": "팜반뚜언", "en": "Phạm Văn Tuấn" },
           "birthDate": "2029-04-17",
@@ -47,6 +48,7 @@
         },
         {
           "key": "DF-PHAM-03",
+          "parentRoles": {"DF-PHAM-02":"father"},
           "generation": 3,
           "name": { "ko": "팜반록", "en": "Phạm Văn Lộc" },
           "birthDate": "2059-04-17",
@@ -62,6 +64,7 @@
         },
         {
           "key": "K1012",
+          "parentRoles": {"DF-PHAM-03":"father","FH-K1012-M-01":"mother"},
           "generation": 4,
           "personId": "K1012",
           "name": {
@@ -116,6 +119,7 @@
         },
         {
           "key": "DF-CHOI-02",
+          "parentRoles": {"DF-CHOI-01":"father"},
           "generation": 2,
           "name": { "ko": "최문재", "en": "Choi Munjae" },
           "birthDate": "2027-09-03",
@@ -132,6 +136,7 @@
         },
         {
           "key": "DF-CHOI-03",
+          "parentRoles": {"DF-CHOI-02":"father"},
           "generation": 3,
           "name": { "ko": "최태윤", "en": "Choi Taeyun" },
           "birthDate": "2057-09-03",
@@ -148,6 +153,7 @@
         },
         {
           "key": "K1016",
+          "parentRoles": {"DF-CHOI-03":"father","FH-K1016-M-01":"mother"},
           "generation": 4,
           "personId": "K1016",
           "name": {

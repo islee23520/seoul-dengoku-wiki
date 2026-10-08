@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "여승영",
+        "lineage": {
+          "surname": "여",
+          "bongwan": "의령",
+          "clan": "c5ec-c758-b839-4f59"
+        },
         "birthDate": "2041-01-17",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "여승윤",
+        "lineage": {
+          "surname": "여",
+          "bongwan": "의령",
+          "clan": "c5ec-c758-b839-4f59"
+        },
         "birthDate": "2011-01-17",
         "deathDate": null,
         "status": "authored",
@@ -201,6 +211,7 @@
         "from": "FH-K113-P-01",
         "to": "K113",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -217,6 +228,7 @@
         "from": "FH-K113-P-02",
         "to": "FH-K113-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -233,6 +245,7 @@
         "from": "FH-K113-M-01",
         "to": "K113",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -249,6 +262,7 @@
         "from": "FH-K113-M-02",
         "to": "FH-K113-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

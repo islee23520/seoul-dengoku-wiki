@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조도훈",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "옥천",
+          "clan": "c870-c625-cc9c-8d99-agreed-c6d0-second"
+        },
         "birthDate": "2055-03-08",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "조도범",
+        "lineage": {
+          "surname": "조",
+          "bongwan": "옥천",
+          "clan": "c870-c625-cc9c-8d99-agreed-c6d0-second"
+        },
         "birthDate": "2025-03-08",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K824-P-01",
         "to": "K824",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K824-P-02",
         "to": "FH-K824-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K824-M-01",
         "to": "K824",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K824-M-02",
         "to": "FH-K824-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

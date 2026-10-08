@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승솔",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "평해",
+          "clan": "ad6c-d3c9-d574-4e18-agreed-acb0-second"
+        },
         "birthDate": "2049-06-06",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "구승미",
+        "lineage": {
+          "surname": "구",
+          "bongwan": "평해",
+          "clan": "ad6c-d3c9-d574-4e18-agreed-acb0-second"
+        },
         "birthDate": "2019-06-06",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K815-P-01",
         "to": "K815",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K815-P-02",
         "to": "FH-K815-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K815-M-01",
         "to": "K815",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K815-M-02",
         "to": "FH-K815-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

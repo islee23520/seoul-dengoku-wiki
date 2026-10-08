@@ -66,6 +66,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이현빈",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "경주",
+          "clan": "c774-acbd-c8fc-674e"
+        },
         "birthDate": "2037-05-03",
         "deathDate": null,
         "status": "authored",
@@ -100,6 +105,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이현솔",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "경주",
+          "clan": "c774-acbd-c8fc-674e"
+        },
         "birthDate": "2007-05-03",
         "deathDate": null,
         "status": "authored",
@@ -204,6 +214,7 @@
         "from": "FH-K271-P-01",
         "to": "K271",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -220,6 +231,7 @@
         "from": "FH-K271-P-02",
         "to": "FH-K271-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -236,6 +248,7 @@
         "from": "FH-K271-M-01",
         "to": "K271",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -252,6 +265,7 @@
         "from": "FH-K271-M-02",
         "to": "FH-K271-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

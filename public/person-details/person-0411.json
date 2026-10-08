@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "동승연",
+        "lineage": {
+          "surname": "동",
+          "bongwan": "광천",
+          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
+        },
         "birthDate": "2045-09-09",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "동승정",
+        "lineage": {
+          "surname": "동",
+          "bongwan": "광천",
+          "clan": "b3d9-ad11-cc9c-agreed-c0c8-first"
+        },
         "birthDate": "2015-09-09",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K410-P-01",
         "to": "K410",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K410-P-02",
         "to": "FH-K410-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K410-M-01",
         "to": "K410",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K410-M-02",
         "to": "FH-K410-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

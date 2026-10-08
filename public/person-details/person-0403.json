@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "은승진",
+        "lineage": {
+          "surname": "은",
+          "bongwan": "행주",
+          "clan": "c740-d589-c8fc"
+        },
         "birthDate": "2036-03-28",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "은승현",
+        "lineage": {
+          "surname": "은",
+          "bongwan": "행주",
+          "clan": "c740-d589-c8fc"
+        },
         "birthDate": "2006-03-28",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K402-P-01",
         "to": "K402",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K402-P-02",
         "to": "FH-K402-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K402-M-01",
         "to": "K402",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K402-M-02",
         "to": "FH-K402-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

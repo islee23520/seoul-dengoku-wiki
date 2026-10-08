@@ -66,6 +66,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승진",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2061-05-02",
         "deathDate": null,
         "status": "authored",
@@ -100,6 +105,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승현",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2031-05-02",
         "deathDate": null,
         "status": "authored",
@@ -134,6 +144,11 @@
         "personId": null,
         "kind": "historical",
         "name": "남승영",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2001-05-02",
         "deathDate": null,
         "status": "authored",
@@ -272,6 +287,7 @@
         "from": "FH-K373-P-01",
         "to": "K373",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -288,6 +304,7 @@
         "from": "FH-K373-P-02",
         "to": "FH-K373-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -304,6 +321,7 @@
         "from": "FH-K373-P-03",
         "to": "FH-K373-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -320,6 +338,7 @@
         "from": "FH-K373-M-01",
         "to": "K373",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -336,6 +355,7 @@
         "from": "FH-K373-M-02",
         "to": "FH-K373-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -352,6 +372,7 @@
         "from": "FH-K373-M-03",
         "to": "FH-K373-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

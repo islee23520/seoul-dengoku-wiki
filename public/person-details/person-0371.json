@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "초승호",
+        "lineage": {
+          "surname": "초",
+          "bongwan": "마산",
+          "clan": "cd08-b9c8-c0b0-521d"
+        },
         "birthDate": "2071-06-13",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "초승민",
+        "lineage": {
+          "surname": "초",
+          "bongwan": "마산",
+          "clan": "cd08-b9c8-c0b0-521d"
+        },
         "birthDate": "2041-06-13",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "초승원",
+        "lineage": {
+          "surname": "초",
+          "bongwan": "마산",
+          "clan": "cd08-b9c8-c0b0-521d"
+        },
         "birthDate": "2011-06-13",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K370-P-01",
         "to": "K370",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K370-P-02",
         "to": "FH-K370-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K370-P-03",
         "to": "FH-K370-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K370-M-01",
         "to": "K370",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -331,6 +350,7 @@
         "from": "FH-K370-M-02",
         "to": "FH-K370-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -347,6 +367,7 @@
         "from": "FH-K370-M-03",
         "to": "FH-K370-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

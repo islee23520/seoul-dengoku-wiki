@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승경",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2067-10-19",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승수",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2037-10-19",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "용승은",
+        "lineage": {
+          "surname": "용",
+          "bongwan": "홍천",
+          "clan": "c6a9-d64d-cc9c"
+        },
         "birthDate": "2007-10-19",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K288-P-01",
         "to": "K288",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K288-P-02",
         "to": "FH-K288-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K288-P-03",
         "to": "FH-K288-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K288-M-01",
         "to": "K288",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -330,6 +349,7 @@
         "from": "FH-K288-M-02",
         "to": "FH-K288-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -346,6 +366,7 @@
         "from": "FH-K288-M-03",
         "to": "FH-K288-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

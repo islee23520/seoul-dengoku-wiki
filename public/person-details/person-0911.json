@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류현우",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3-agreed-d604-second"
+        },
         "birthDate": "2068-01-07",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류현경",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3-agreed-d604-second"
+        },
         "birthDate": "2038-01-07",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류현수",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3-agreed-d604-second"
+        },
         "birthDate": "2008-01-07",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K911-P-01",
         "to": "K911",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K911-P-02",
         "to": "FH-K911-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K911-P-03",
         "to": "FH-K911-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K911-M-01",
         "to": "K911",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -332,6 +351,7 @@
         "from": "FH-K911-M-02",
         "to": "FH-K911-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -348,6 +368,7 @@
         "from": "FH-K911-M-03",
         "to": "FH-K911-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

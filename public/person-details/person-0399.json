@@ -98,6 +98,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정일환",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진양",
+          "clan": "c815-c9c4-c591-912d"
+        },
         "birthDate": "2060-06-17",
         "deathDate": "2112-04-09",
         "status": "authored",
@@ -131,6 +136,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정준완",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진주",
+          "clan": "c815-c9c4-c8fc-912d"
+        },
         "birthDate": "2060-01-26",
         "deathDate": null,
         "status": "authored",
@@ -165,6 +175,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정준훈",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진주",
+          "clan": "c815-c9c4-c8fc-912d"
+        },
         "birthDate": "2030-01-26",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +214,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정준범",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진주",
+          "clan": "c815-c9c4-c8fc-912d"
+        },
         "birthDate": "2000-01-26",
         "deathDate": null,
         "status": "authored",
@@ -437,6 +457,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정서영",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진양",
+          "clan": "c815-c9c4-c591-912d"
+        },
         "birthDate": "2030-06-17",
         "deathDate": null,
         "status": "authored",
@@ -471,6 +496,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정서윤",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "진양",
+          "clan": "c815-c9c4-c591-912d"
+        },
         "birthDate": "2000-06-17",
         "deathDate": null,
         "status": "authored",
@@ -507,6 +537,7 @@
         "from": "FH-EX-JEONG-ILHWAN",
         "to": "K1005",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
@@ -520,6 +551,7 @@
         "from": "FH-K398-P-01",
         "to": "K398",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -536,6 +568,7 @@
         "from": "FH-K398-P-02",
         "to": "FH-K398-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -552,6 +585,7 @@
         "from": "FH-K398-P-03",
         "to": "FH-K398-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -568,6 +602,7 @@
         "from": "FH-K398-M-01",
         "to": "K398",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -584,6 +619,7 @@
         "from": "FH-K398-M-02",
         "to": "FH-K398-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -600,6 +636,7 @@
         "from": "FH-K398-M-03",
         "to": "FH-K398-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -616,6 +653,7 @@
         "from": "FH-K1005-M-01",
         "to": "K1005",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -632,6 +670,7 @@
         "from": "FH-K1005-M-02",
         "to": "FH-K1005-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -648,6 +687,7 @@
         "from": "FH-K1005-M-03",
         "to": "FH-K1005-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -664,6 +704,7 @@
         "from": "FH-K1005-X정일환-01",
         "to": "FH-EX-JEONG-ILHWAN",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -680,6 +721,7 @@
         "from": "FH-K1005-X정일환-02",
         "to": "FH-K1005-X정일환-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "심승아",
+        "lineage": {
+          "surname": "심",
+          "bongwan": "청송",
+          "clan": "c2ec-ccad-c1a1-agreed-d604-second"
+        },
         "birthDate": "2046-07-09",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "심승희",
+        "lineage": {
+          "surname": "심",
+          "bongwan": "청송",
+          "clan": "c2ec-ccad-c1a1-agreed-d604-second"
+        },
         "birthDate": "2016-07-09",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K572-P-01",
         "to": "K572",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K572-P-02",
         "to": "FH-K572-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K572-M-01",
         "to": "K572",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K572-M-02",
         "to": "FH-K572-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

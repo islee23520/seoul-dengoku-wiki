@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "감승수",
+        "lineage": {
+          "surname": "감",
+          "bongwan": "창원",
+          "clan": "ac10-cc3d-c6d0"
+        },
         "birthDate": "2048-01-22",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "감승은",
+        "lineage": {
+          "surname": "감",
+          "bongwan": "창원",
+          "clan": "ac10-cc3d-c6d0"
+        },
         "birthDate": "2018-01-22",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K313-P-01",
         "to": "K313",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K313-P-02",
         "to": "FH-K313-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K313-M-01",
         "to": "K313",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K313-M-02",
         "to": "FH-K313-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "매승호",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2063-02-01",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "매승민",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2033-02-01",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "매승원",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2003-02-01",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K366-P-01",
         "to": "K366",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K366-P-02",
         "to": "FH-K366-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K366-P-03",
         "to": "FH-K366-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K366-M-01",
         "to": "K366",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -330,6 +349,7 @@
         "from": "FH-K366-M-02",
         "to": "FH-K366-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -346,6 +366,7 @@
         "from": "FH-K366-M-03",
         "to": "FH-K366-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

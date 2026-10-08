@@ -140,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임승섭",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "조양",
+          "clan": "c784-c870-c591-6797"
+        },
         "birthDate": "2042-12-03",
         "deathDate": null,
         "status": "authored",
@@ -174,6 +179,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임승성",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "조양",
+          "clan": "c784-c870-c591-6797"
+        },
         "birthDate": "2012-12-03",
         "deathDate": null,
         "status": "authored",
@@ -288,6 +298,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박승성",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2063-07-25",
         "deathDate": null,
         "status": "authored",
@@ -322,6 +337,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박승욱",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2033-07-25",
         "deathDate": null,
         "status": "authored",
@@ -356,6 +376,11 @@
         "personId": null,
         "kind": "historical",
         "name": "박승란",
+        "lineage": {
+          "surname": "박",
+          "bongwan": "밀양",
+          "clan": "bc15-bc00-c591"
+        },
         "birthDate": "2003-07-25",
         "deathDate": null,
         "status": "authored",
@@ -507,6 +532,7 @@
         "from": "FH-K086-P-01",
         "to": "K086",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -523,6 +549,7 @@
         "from": "FH-K086-P-02",
         "to": "FH-K086-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -539,6 +566,7 @@
         "from": "FH-K086-M-01",
         "to": "K086",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -555,6 +583,7 @@
         "from": "FH-K086-M-02",
         "to": "FH-K086-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -571,6 +600,7 @@
         "from": "FH-K089-P-01",
         "to": "K089",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -587,6 +617,7 @@
         "from": "FH-K089-P-02",
         "to": "FH-K089-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -603,6 +634,7 @@
         "from": "FH-K089-P-03",
         "to": "FH-K089-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -619,6 +651,7 @@
         "from": "FH-K089-M-01",
         "to": "K089",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -635,6 +668,7 @@
         "from": "FH-K089-M-02",
         "to": "FH-K089-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -651,6 +685,7 @@
         "from": "FH-K089-M-03",
         "to": "FH-K089-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "주승원",
+        "lineage": {
+          "surname": "주",
+          "bongwan": "신안",
+          "clan": "c8fc-c2e0-c548"
+        },
         "birthDate": "2048-07-29",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "주승진",
+        "lineage": {
+          "surname": "주",
+          "bongwan": "신안",
+          "clan": "c8fc-c2e0-c548"
+        },
         "birthDate": "2018-07-29",
         "deathDate": null,
         "status": "authored",
@@ -202,6 +212,7 @@
         "from": "FH-K155-P-01",
         "to": "K155",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -218,6 +229,7 @@
         "from": "FH-K155-P-02",
         "to": "FH-K155-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -234,6 +246,7 @@
         "from": "FH-K155-M-01",
         "to": "K155",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -250,6 +263,7 @@
         "from": "FH-K155-M-02",
         "to": "FH-K155-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

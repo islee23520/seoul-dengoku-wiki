@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "원승호",
+        "lineage": {
+          "surname": "원",
+          "bongwan": "원주",
+          "clan": "c6d0-c6d0-c8fc"
+        },
         "birthDate": "2044-04-29",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "원승민",
+        "lineage": {
+          "surname": "원",
+          "bongwan": "원주",
+          "clan": "c6d0-c6d0-c8fc"
+        },
         "birthDate": "2014-04-29",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K355-P-01",
         "to": "K355",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K355-P-02",
         "to": "FH-K355-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K355-M-01",
         "to": "K355",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K355-M-02",
         "to": "FH-K355-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

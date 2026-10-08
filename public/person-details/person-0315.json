@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "탁승석",
+        "lineage": {
+          "surname": "탁",
+          "bongwan": "광산",
+          "clan": "d0c1-ad11-c0b0"
+        },
         "birthDate": "2036-09-11",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "탁승준",
+        "lineage": {
+          "surname": "탁",
+          "bongwan": "광산",
+          "clan": "d0c1-ad11-c0b0"
+        },
         "birthDate": "2006-09-11",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K314-P-01",
         "to": "K314",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K314-P-02",
         "to": "FH-K314-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K314-M-01",
         "to": "K314",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K314-M-02",
         "to": "FH-K314-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노승원",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "함평",
+          "clan": "b178-d568-d3c9-9b6f"
+        },
         "birthDate": "2041-10-30",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "노승진",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "함평",
+          "clan": "b178-d568-d3c9-9b6f"
+        },
         "birthDate": "2011-10-30",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K493-P-01",
         "to": "K493",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K493-P-02",
         "to": "FH-K493-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K493-M-01",
         "to": "K493",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K493-M-02",
         "to": "FH-K493-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

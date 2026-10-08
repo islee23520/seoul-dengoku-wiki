@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임준욱",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "부안",
+          "clan": "c784-bd80-c548-6797-agreed-b098-second"
+        },
         "birthDate": "2052-02-06",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임준란",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "부안",
+          "clan": "c784-bd80-c548-6797-agreed-b098-second"
+        },
         "birthDate": "2022-02-06",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K432-P-01",
         "to": "K432",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K432-P-02",
         "to": "FH-K432-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K432-M-01",
         "to": "K432",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K432-M-02",
         "to": "FH-K432-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

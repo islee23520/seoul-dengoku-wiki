@@ -209,6 +209,7 @@
         "from": "FH-K558-P-01",
         "to": "K558",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -225,6 +226,7 @@
         "from": "FH-K558-P-02",
         "to": "FH-K558-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -241,6 +243,7 @@
         "from": "FH-K558-M-01",
         "to": "K558",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -257,6 +260,7 @@
         "from": "FH-K558-M-02",
         "to": "FH-K558-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

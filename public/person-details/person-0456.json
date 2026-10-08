@@ -105,6 +105,11 @@
         "personId": null,
         "kind": "historical",
         "name": "성도원",
+        "lineage": {
+          "surname": "성",
+          "bongwan": "창녕",
+          "clan": "cangnyeong-seong-yeolcha"
+        },
         "birthDate": "2036-04-09",
         "deathDate": null,
         "status": "authored",
@@ -138,6 +143,11 @@
         "personId": null,
         "kind": "historical",
         "name": "성창립",
+        "lineage": {
+          "surname": "성",
+          "bongwan": "창녕",
+          "clan": "cangnyeong-seong-yeolcha"
+        },
         "birthDate": "2006-04-09",
         "deathDate": null,
         "status": "authored",
@@ -284,6 +294,7 @@
         "from": "FH-EX-SEONG-DOWON",
         "to": "K456",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
@@ -297,6 +308,7 @@
         "from": "FH-EX-SEONG-DOWON",
         "to": "K536",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
@@ -310,6 +322,7 @@
         "from": "FH-EX-SEONG-CHANGRIP",
         "to": "FH-EX-SEONG-DOWON",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
@@ -323,6 +336,7 @@
         "from": "FH-K456-M-01",
         "to": "K456",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -339,6 +353,7 @@
         "from": "FH-K456-M-02",
         "to": "FH-K456-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -355,6 +370,7 @@
         "from": "FH-K456-M-03",
         "to": "FH-K456-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

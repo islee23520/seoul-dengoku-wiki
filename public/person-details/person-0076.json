@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "진승경",
+        "lineage": {
+          "surname": "진",
+          "bongwan": "남원",
+          "clan": "c9c4-b0a8-c6d0-664b"
+        },
         "birthDate": "2060-03-15",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "진승수",
+        "lineage": {
+          "surname": "진",
+          "bongwan": "남원",
+          "clan": "c9c4-b0a8-c6d0-664b"
+        },
         "birthDate": "2030-03-15",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "진승은",
+        "lineage": {
+          "surname": "진",
+          "bongwan": "남원",
+          "clan": "c9c4-b0a8-c6d0-664b"
+        },
         "birthDate": "2000-03-15",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K076-P-01",
         "to": "K076",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K076-P-02",
         "to": "FH-K076-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K076-P-03",
         "to": "FH-K076-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K076-M-01",
         "to": "K076",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -331,6 +350,7 @@
         "from": "FH-K076-M-02",
         "to": "FH-K076-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -347,6 +367,7 @@
         "from": "FH-K076-M-03",
         "to": "FH-K076-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

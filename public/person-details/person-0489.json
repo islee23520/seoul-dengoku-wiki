@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승규",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "하양",
+          "clan": "d5c8-d558-c591-8a31-agreed-c6b0-second"
+        },
         "birthDate": "2052-02-21",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "허승완",
+        "lineage": {
+          "surname": "허",
+          "bongwan": "하양",
+          "clan": "d5c8-d558-c591-8a31-agreed-c6b0-second"
+        },
         "birthDate": "2022-02-21",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K489-P-01",
         "to": "K489",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K489-P-02",
         "to": "FH-K489-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K489-M-01",
         "to": "K489",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K489-M-02",
         "to": "FH-K489-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

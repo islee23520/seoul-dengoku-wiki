@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정재영",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "연일",
+          "clan": "c815-c5f0-c77c-912d-agreed-c900-second"
+        },
         "birthDate": "2056-03-07",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정재윤",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "연일",
+          "clan": "c815-c5f0-c77c-912d-agreed-c900-second"
+        },
         "birthDate": "2026-03-07",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K627-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "정재우",
+        "name": "노재우",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "광주",
+          "clan": "b178-ad11-c8fc"
+        },
         "birthDate": "2056-03-07",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2094,
-            "summary": "정재우는 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "노재우는 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-12.json",
@@ -163,7 +178,12 @@
         "id": "FH-K627-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "윤재원",
+        "name": "노재원",
+        "lineage": {
+          "surname": "노",
+          "bongwan": "광주",
+          "clan": "b178-ad11-c8fc"
+        },
         "birthDate": "2026-03-07",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "윤재원은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+            "summary": "노재원은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-12.json",
@@ -200,6 +220,7 @@
         "from": "FH-K627-P-01",
         "to": "K627",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +237,7 @@
         "from": "FH-K627-P-02",
         "to": "FH-K627-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +254,7 @@
         "from": "FH-K627-M-01",
         "to": "K627",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +271,7 @@
         "from": "FH-K627-M-02",
         "to": "FH-K627-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

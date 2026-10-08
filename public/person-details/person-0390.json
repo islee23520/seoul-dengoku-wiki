@@ -65,6 +65,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승수",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "남양",
+          "clan": "bc29-b0a8-c591-623f"
+        },
         "birthDate": "2034-08-06",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "방승은",
+        "lineage": {
+          "surname": "방",
+          "bongwan": "남양",
+          "clan": "bc29-b0a8-c591-623f"
+        },
         "birthDate": "2004-08-06",
         "deathDate": null,
         "status": "authored",
@@ -203,6 +213,7 @@
         "from": "FH-K389-P-01",
         "to": "K389",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -219,6 +230,7 @@
         "from": "FH-K389-P-02",
         "to": "FH-K389-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -235,6 +247,7 @@
         "from": "FH-K389-M-01",
         "to": "K389",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -251,6 +264,7 @@
         "from": "FH-K389-M-02",
         "to": "FH-K389-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

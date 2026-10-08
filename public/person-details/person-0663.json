@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재은",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "의성",
+          "clan": "ae40-c758-c131-91d1-agreed-d638-second"
+        },
         "birthDate": "2051-04-29",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재연",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "의성",
+          "clan": "ae40-c758-c131-91d1-agreed-d638-second"
+        },
         "birthDate": "2021-04-29",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K663-P-01",
         "to": "K663",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K663-P-02",
         "to": "FH-K663-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K663-M-01",
         "to": "K663",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K663-M-02",
         "to": "FH-K663-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

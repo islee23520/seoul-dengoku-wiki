@@ -66,6 +66,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배승호",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "분성",
+          "clan": "bc30-bd84-c131-88f5"
+        },
         "birthDate": "2041-01-08",
         "deathDate": null,
         "status": "authored",
@@ -100,6 +105,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배승민",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "분성",
+          "clan": "bc30-bd84-c131-88f5"
+        },
         "birthDate": "2011-01-08",
         "deathDate": null,
         "status": "authored",
@@ -204,6 +214,7 @@
         "from": "FH-K052-P-01",
         "to": "K052",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -220,6 +231,7 @@
         "from": "FH-K052-P-02",
         "to": "FH-K052-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -236,6 +248,7 @@
         "from": "FH-K052-M-01",
         "to": "K052",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -252,6 +265,7 @@
         "from": "FH-K052-M-02",
         "to": "FH-K052-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

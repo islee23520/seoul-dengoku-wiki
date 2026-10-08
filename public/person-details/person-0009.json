@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승석",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989"
+        },
         "birthDate": "2066-06-24",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승준",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989"
+        },
         "birthDate": "2036-06-24",
         "deathDate": null,
         "status": "authored",
@@ -129,6 +139,11 @@
         "personId": null,
         "kind": "historical",
         "name": "유승호",
+        "lineage": {
+          "surname": "유",
+          "bongwan": "강릉",
+          "clan": "c720-ac15-b989"
+        },
         "birthDate": "2006-06-24",
         "deathDate": null,
         "status": "authored",
@@ -267,6 +282,7 @@
         "from": "FH-K009-P-01",
         "to": "K009",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-K009-P-02",
         "to": "FH-K009-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -299,6 +316,7 @@
         "from": "FH-K009-P-03",
         "to": "FH-K009-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -315,6 +333,7 @@
         "from": "FH-K009-M-01",
         "to": "K009",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -331,6 +350,7 @@
         "from": "FH-K009-M-02",
         "to": "FH-K009-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -347,6 +367,7 @@
         "from": "FH-K009-M-03",
         "to": "FH-K009-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

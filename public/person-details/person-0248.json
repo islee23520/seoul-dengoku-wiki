@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "황승현",
+        "lineage": {
+          "surname": "황",
+          "bongwan": "우주",
+          "clan": "d669-c6b0-c8fc-9ec3"
+        },
         "birthDate": "2046-02-07",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "황승영",
+        "lineage": {
+          "surname": "황",
+          "bongwan": "우주",
+          "clan": "d669-c6b0-c8fc-9ec3"
+        },
         "birthDate": "2016-02-07",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K247-P-01",
         "to": "K247",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K247-P-02",
         "to": "FH-K247-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K247-M-01",
         "to": "K247",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K247-M-02",
         "to": "FH-K247-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

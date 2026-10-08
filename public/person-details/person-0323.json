@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류승정",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3"
+        },
         "birthDate": "2040-09-16",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "류승아",
+        "lineage": {
+          "surname": "류",
+          "bongwan": "문화",
+          "clan": "b958-bb38-d654-67f3"
+        },
         "birthDate": "2010-09-16",
         "deathDate": null,
         "status": "authored",
@@ -202,6 +212,7 @@
         "from": "FH-K322-P-01",
         "to": "K322",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -218,6 +229,7 @@
         "from": "FH-K322-P-02",
         "to": "FH-K322-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -234,6 +246,7 @@
         "from": "FH-K322-M-01",
         "to": "K322",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -250,6 +263,7 @@
         "from": "FH-K322-M-02",
         "to": "FH-K322-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

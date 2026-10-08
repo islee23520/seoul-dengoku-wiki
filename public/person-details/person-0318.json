@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "초승석",
+        "lineage": {
+          "surname": "초",
+          "bongwan": "성주",
+          "clan": "cd08-c131-c8fc"
+        },
         "birthDate": "2042-11-03",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "초승준",
+        "lineage": {
+          "surname": "초",
+          "bongwan": "성주",
+          "clan": "cd08-c131-c8fc"
+        },
         "birthDate": "2012-11-03",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K317-P-01",
         "to": "K317",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K317-P-02",
         "to": "FH-K317-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K317-M-01",
         "to": "K317",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K317-M-02",
         "to": "FH-K317-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "진승온",
+        "lineage": {
+          "surname": "진",
+          "bongwan": "풍기",
+          "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+        },
         "birthDate": "2034-11-16",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "진승빈",
+        "lineage": {
+          "surname": "진",
+          "bongwan": "풍기",
+          "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+        },
         "birthDate": "2004-11-16",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K701-P-01",
         "to": "K701",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K701-P-02",
         "to": "FH-K701-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K701-M-01",
         "to": "K701",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K701-M-02",
         "to": "FH-K701-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

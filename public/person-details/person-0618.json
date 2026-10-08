@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "주승혁",
+        "lineage": {
+          "surname": "주",
+          "bongwan": "상주",
+          "clan": "c8fc-c0c1-c8fc-5468-agreed-c778-second"
+        },
         "birthDate": "2034-02-24",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "주승문",
+        "lineage": {
+          "surname": "주",
+          "bongwan": "상주",
+          "clan": "c8fc-c0c1-c8fc-5468-agreed-c778-second"
+        },
         "birthDate": "2004-02-24",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K618-P-01",
         "to": "K618",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K618-P-02",
         "to": "FH-K618-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K618-M-01",
         "to": "K618",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K618-M-02",
         "to": "FH-K618-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

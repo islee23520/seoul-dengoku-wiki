@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "홍승경",
+        "lineage": {
+          "surname": "홍",
+          "bongwan": "남양",
+          "clan": "d64d-b0a8-c591"
+        },
         "birthDate": "2040-09-17",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "홍승수",
+        "lineage": {
+          "surname": "홍",
+          "bongwan": "남양",
+          "clan": "d64d-b0a8-c591"
+        },
         "birthDate": "2010-09-17",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K269-P-01",
         "to": "K269",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K269-P-02",
         "to": "FH-K269-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K269-M-01",
         "to": "K269",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K269-M-02",
         "to": "FH-K269-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

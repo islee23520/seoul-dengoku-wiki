@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "모승현",
+        "lineage": {
+          "surname": "모",
+          "bongwan": "함평",
+          "clan": "baa8-d568-d3c9"
+        },
         "birthDate": "2051-07-20",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "모승영",
+        "lineage": {
+          "surname": "모",
+          "bongwan": "함평",
+          "clan": "baa8-d568-d3c9"
+        },
         "birthDate": "2021-07-20",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K252-P-01",
         "to": "K252",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K252-P-02",
         "to": "FH-K252-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K252-M-01",
         "to": "K252",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K252-M-02",
         "to": "FH-K252-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

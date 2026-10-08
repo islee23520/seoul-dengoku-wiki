@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송현수",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "홍주",
+          "clan": "c1a1-d64d-c8fc-5b8b"
+        },
         "birthDate": "2052-10-09",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송현은",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "홍주",
+          "clan": "c1a1-d64d-c8fc-5b8b"
+        },
         "birthDate": "2022-10-09",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K222-P-01",
         "to": "K222",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K222-P-02",
         "to": "FH-K222-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K222-M-01",
         "to": "K222",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K222-M-02",
         "to": "FH-K222-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

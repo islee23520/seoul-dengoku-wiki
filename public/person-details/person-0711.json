@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임재섭",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "풍천",
+          "clan": "c784-d48d-cc9c-4efb"
+        },
         "birthDate": "2047-04-18",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "임재성",
+        "lineage": {
+          "surname": "임",
+          "bongwan": "풍천",
+          "clan": "c784-d48d-cc9c-4efb"
+        },
         "birthDate": "2017-04-18",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K711-P-01",
         "to": "K711",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K711-P-02",
         "to": "FH-K711-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K711-M-01",
         "to": "K711",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K711-M-02",
         "to": "FH-K711-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이준온",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "연안",
+          "clan": "c774-c5f0-c548-674e-agreed-c11d-second"
+        },
         "birthDate": "2037-05-08",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이준빈",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "연안",
+          "clan": "c774-c5f0-c548-674e-agreed-c11d-second"
+        },
         "birthDate": "2007-05-08",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K424-P-01",
         "to": "K424",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K424-P-02",
         "to": "FH-K424-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K424-M-01",
         "to": "K424",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K424-M-02",
         "to": "FH-K424-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배승석",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "경주",
+          "clan": "bc30-acbd-c8fc-88f5"
+        },
         "birthDate": "2035-11-19",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "배승준",
+        "lineage": {
+          "surname": "배",
+          "bongwan": "경주",
+          "clan": "bc30-acbd-c8fc-88f5"
+        },
         "birthDate": "2005-11-19",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K023-P-01",
         "to": "K023",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K023-P-02",
         "to": "FH-K023-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K023-M-01",
         "to": "K023",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K023-M-02",
         "to": "FH-K023-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

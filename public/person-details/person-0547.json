@@ -61,6 +61,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정태혁",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "동래",
+          "clan": "c815-b3d9-b798"
+        },
         "birthDate": "2036-12-01",
         "deathDate": null,
         "status": "authored",
@@ -95,6 +100,11 @@
         "personId": null,
         "kind": "historical",
         "name": "정태문",
+        "lineage": {
+          "surname": "정",
+          "bongwan": "동래",
+          "clan": "c815-b3d9-b798"
+        },
         "birthDate": "2006-12-01",
         "deathDate": null,
         "status": "authored",
@@ -199,6 +209,7 @@
         "from": "FH-K547-P-01",
         "to": "K547",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -215,6 +226,7 @@
         "from": "FH-K547-P-02",
         "to": "FH-K547-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -231,6 +243,7 @@
         "from": "FH-K547-M-01",
         "to": "K547",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -247,6 +260,7 @@
         "from": "FH-K547-M-02",
         "to": "FH-K547-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

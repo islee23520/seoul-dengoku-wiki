@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "천승연",
+        "lineage": {
+          "surname": "천",
+          "bongwan": "영양",
+          "clan": "cc9c-c601-c591-agreed-b298-first"
+        },
         "birthDate": "2069-06-04",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "천승정",
+        "lineage": {
+          "surname": "천",
+          "bongwan": "영양",
+          "clan": "cc9c-c601-c591-agreed-b298-first"
+        },
         "birthDate": "2039-06-04",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "천승아",
+        "lineage": {
+          "surname": "천",
+          "bongwan": "영양",
+          "clan": "cc9c-c601-c591-agreed-b298-first"
+        },
         "birthDate": "2009-06-04",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K409-P-01",
         "to": "K409",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K409-P-02",
         "to": "FH-K409-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K409-P-03",
         "to": "FH-K409-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K409-M-01",
         "to": "K409",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -330,6 +349,7 @@
         "from": "FH-K409-M-02",
         "to": "FH-K409-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -346,6 +366,7 @@
         "from": "FH-K409-M-03",
         "to": "FH-K409-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재민",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "청풍",
+          "clan": "ae40-ccad-d48d-91d1"
+        },
         "birthDate": "2036-10-11",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재원",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "청풍",
+          "clan": "ae40-ccad-d48d-91d1"
+        },
         "birthDate": "2006-10-11",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K623-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "김재진",
+        "name": "기재진",
+        "lineage": {
+          "surname": "기",
+          "bongwan": "행주",
+          "clan": "ae30-d589-c8fc"
+        },
         "birthDate": "2036-10-11",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2074,
-            "summary": "김재진은 노량진 선창에서 경매 저울 교체·공동 계량 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "기재진은 노량진 선창에서 경매 저울 교체·공동 계량 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -163,7 +178,12 @@
         "id": "FH-K623-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "박재수",
+        "name": "기재수",
+        "lineage": {
+          "surname": "기",
+          "bongwan": "행주",
+          "clan": "ae30-d589-c8fc"
+        },
         "birthDate": "2006-10-11",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "박재수는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "summary": "기재수는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -200,6 +220,7 @@
         "from": "FH-K623-P-01",
         "to": "K623",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +237,7 @@
         "from": "FH-K623-P-02",
         "to": "FH-K623-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +254,7 @@
         "from": "FH-K623-M-01",
         "to": "K623",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +271,7 @@
         "from": "FH-K623-M-02",
         "to": "FH-K623-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

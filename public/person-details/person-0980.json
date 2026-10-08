@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오민혁",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc-agreed-d638-second"
+        },
         "birthDate": "2043-04-01",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "오민문",
+        "lineage": {
+          "surname": "오",
+          "bongwan": "해주",
+          "clan": "c624-d574-c8fc-agreed-d638-second"
+        },
         "birthDate": "2013-04-01",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K980-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "오민섭",
+        "name": "명민섭",
+        "lineage": {
+          "surname": "명",
+          "bongwan": "연안",
+          "clan": "ba85-c5f0-c548"
+        },
         "birthDate": "2043-04-01",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2081,
-            "summary": "오민섭은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "명민섭은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-13.json",
@@ -163,7 +178,12 @@
         "id": "FH-K980-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "송민연",
+        "name": "명민연",
+        "lineage": {
+          "surname": "명",
+          "bongwan": "연안",
+          "clan": "ba85-c5f0-c548"
+        },
         "birthDate": "2013-04-01",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "송민연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "summary": "명민연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-13.json",
@@ -200,6 +220,7 @@
         "from": "FH-K980-P-01",
         "to": "K980",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +237,7 @@
         "from": "FH-K980-P-02",
         "to": "FH-K980-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +254,7 @@
         "from": "FH-K980-M-01",
         "to": "K980",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +271,7 @@
         "from": "FH-K980-M-02",
         "to": "FH-K980-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

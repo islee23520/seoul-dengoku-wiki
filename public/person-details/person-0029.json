@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "강승현",
+        "lineage": {
+          "surname": "강",
+          "bongwan": "진주",
+          "clan": "ac15-c9c4-c8fc"
+        },
         "birthDate": "2036-10-03",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "강승영",
+        "lineage": {
+          "surname": "강",
+          "bongwan": "진주",
+          "clan": "ac15-c9c4-c8fc"
+        },
         "birthDate": "2006-10-03",
         "deathDate": null,
         "status": "authored",
@@ -202,6 +212,7 @@
         "from": "FH-K029-P-01",
         "to": "K029",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -218,6 +229,7 @@
         "from": "FH-K029-P-02",
         "to": "FH-K029-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -234,6 +246,7 @@
         "from": "FH-K029-M-01",
         "to": "K029",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -250,6 +263,7 @@
         "from": "FH-K029-M-02",
         "to": "FH-K029-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

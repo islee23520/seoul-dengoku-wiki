@@ -64,6 +64,11 @@
         "personId": null,
         "kind": "historical",
         "name": "고승연",
+        "lineage": {
+          "surname": "고",
+          "bongwan": "한양",
+          "clan": "ace0-d55c-c591"
+        },
         "birthDate": "2069-07-06",
         "deathDate": null,
         "status": "authored",
@@ -98,6 +103,11 @@
         "personId": null,
         "kind": "historical",
         "name": "고승정",
+        "lineage": {
+          "surname": "고",
+          "bongwan": "한양",
+          "clan": "ace0-d55c-c591"
+        },
         "birthDate": "2039-07-06",
         "deathDate": null,
         "status": "authored",
@@ -132,6 +142,11 @@
         "personId": null,
         "kind": "historical",
         "name": "고승아",
+        "lineage": {
+          "surname": "고",
+          "bongwan": "한양",
+          "clan": "ace0-d55c-c591"
+        },
         "birthDate": "2009-07-06",
         "deathDate": null,
         "status": "authored",
@@ -270,6 +285,7 @@
         "from": "FH-K348-P-01",
         "to": "K348",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -286,6 +302,7 @@
         "from": "FH-K348-P-02",
         "to": "FH-K348-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -302,6 +319,7 @@
         "from": "FH-K348-P-03",
         "to": "FH-K348-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -318,6 +336,7 @@
         "from": "FH-K348-M-01",
         "to": "K348",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -334,6 +353,7 @@
         "from": "FH-K348-M-02",
         "to": "FH-K348-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -350,6 +370,7 @@
         "from": "FH-K348-M-03",
         "to": "FH-K348-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

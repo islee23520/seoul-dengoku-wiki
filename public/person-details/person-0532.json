@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "심승은",
+        "lineage": {
+          "surname": "심",
+          "bongwan": "청송",
+          "clan": "c2ec-ccad-c1a1-agreed-c591-second"
+        },
         "birthDate": "2059-05-01",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "심승연",
+        "lineage": {
+          "surname": "심",
+          "bongwan": "청송",
+          "clan": "c2ec-ccad-c1a1-agreed-c591-second"
+        },
         "birthDate": "2029-05-01",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "심승정",
+        "lineage": {
+          "surname": "심",
+          "bongwan": "청송",
+          "clan": "c2ec-ccad-c1a1-agreed-c591-second"
+        },
         "birthDate": "1999-05-01",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K532-P-01",
         "to": "K532",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K532-P-02",
         "to": "FH-K532-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K532-P-03",
         "to": "FH-K532-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K532-M-01",
         "to": "K532",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -332,6 +351,7 @@
         "from": "FH-K532-M-02",
         "to": "FH-K532-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -348,6 +368,7 @@
         "from": "FH-K532-M-03",
         "to": "FH-K532-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

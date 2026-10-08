@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최재규",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "경주",
+          "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+        },
         "birthDate": "2051-05-24",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "최재완",
+        "lineage": {
+          "surname": "최",
+          "bongwan": "경주",
+          "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+        },
         "birthDate": "2021-05-24",
         "deathDate": null,
         "status": "authored",
@@ -129,7 +139,12 @@
         "id": "FH-K626-M-01",
         "personId": null,
         "kind": "historical",
-        "name": "최재훈",
+        "name": "남재훈",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2051-05-24",
         "deathDate": null,
         "status": "authored",
@@ -145,7 +160,7 @@
         "timeline": [
           {
             "year": 2089,
-            "summary": "최재훈은 신내 환승 당직에서 강남역 호송 기록·열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+            "summary": "남재훈은 신내 환승 당직에서 강남역 호송 기록·열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -163,7 +178,12 @@
         "id": "FH-K626-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "정재현",
+        "name": "남재현",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2021-05-24",
         "deathDate": null,
         "status": "authored",
@@ -179,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "정재현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "summary": "남재현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -200,6 +220,7 @@
         "from": "FH-K626-P-01",
         "to": "K626",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +237,7 @@
         "from": "FH-K626-P-02",
         "to": "FH-K626-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +254,7 @@
         "from": "FH-K626-M-01",
         "to": "K626",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +271,7 @@
         "from": "FH-K626-M-02",
         "to": "FH-K626-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

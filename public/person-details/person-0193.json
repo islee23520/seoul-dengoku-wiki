@@ -207,6 +207,7 @@
         "from": "FH-K192-P-01",
         "to": "K192",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -223,6 +224,7 @@
         "from": "FH-K192-P-02",
         "to": "FH-K192-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -239,6 +241,7 @@
         "from": "FH-K192-M-01",
         "to": "K192",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -255,6 +258,7 @@
         "from": "FH-K192-M-02",
         "to": "FH-K192-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

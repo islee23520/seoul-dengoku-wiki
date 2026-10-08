@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송태아",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "연안",
+          "clan": "c1a1-c5f0-c548-5b8b-agreed-c9c0-second"
+        },
         "birthDate": "2048-08-04",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "송태희",
+        "lineage": {
+          "surname": "송",
+          "bongwan": "연안",
+          "clan": "c1a1-c5f0-c548-5b8b-agreed-c9c0-second"
+        },
         "birthDate": "2018-08-04",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K560-P-01",
         "to": "K560",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K560-P-02",
         "to": "FH-K560-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K560-M-01",
         "to": "K560",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K560-M-02",
         "to": "FH-K560-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

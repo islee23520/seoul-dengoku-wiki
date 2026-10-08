@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "범승석",
+        "lineage": {
+          "surname": "범",
+          "bongwan": "금성",
+          "clan": "bc94-ae08-c131"
+        },
         "birthDate": "2039-09-07",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "범승준",
+        "lineage": {
+          "surname": "범",
+          "bongwan": "금성",
+          "clan": "bc94-ae08-c131"
+        },
         "birthDate": "2009-09-07",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K315-P-01",
         "to": "K315",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K315-P-02",
         "to": "FH-K315-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K315-M-01",
         "to": "K315",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K315-M-02",
         "to": "FH-K315-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

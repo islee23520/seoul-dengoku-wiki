@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "선승영",
+        "lineage": {
+          "surname": "선",
+          "bongwan": "보성",
+          "clan": "c120-bcf4-c131-agreed-c19c-second"
+        },
         "birthDate": "2045-03-03",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "선승윤",
+        "lineage": {
+          "surname": "선",
+          "bongwan": "보성",
+          "clan": "c120-bcf4-c131-agreed-c19c-second"
+        },
         "birthDate": "2015-03-03",
         "deathDate": null,
         "status": "authored",
@@ -201,6 +211,7 @@
         "from": "FH-K383-P-01",
         "to": "K383",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -217,6 +228,7 @@
         "from": "FH-K383-P-02",
         "to": "FH-K383-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -233,6 +245,7 @@
         "from": "FH-K383-M-01",
         "to": "K383",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -249,6 +262,7 @@
         "from": "FH-K383-M-02",
         "to": "FH-K383-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

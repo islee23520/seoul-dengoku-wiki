@@ -66,6 +66,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이상계",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "전의",
+          "clan": "c774-c804-c758-674e"
+        },
         "birthDate": "2062-04-14",
         "deathDate": null,
         "status": "authored",
@@ -99,6 +104,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이호계",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "전의",
+          "clan": "c774-c804-c758-674e"
+        },
         "birthDate": "2032-04-14",
         "deathDate": null,
         "status": "authored",
@@ -234,6 +244,11 @@
         "personId": null,
         "kind": "historical",
         "name": "이서아",
+        "lineage": {
+          "surname": "이",
+          "bongwan": "전의",
+          "clan": "c774-c804-c758-674e"
+        },
         "birthDate": "2002-04-14",
         "deathDate": null,
         "status": "authored",
@@ -270,6 +285,7 @@
         "from": "FH-EX-LEE-SANGGYE",
         "to": "K998",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
@@ -283,6 +299,7 @@
         "from": "FH-EX-LEE-HOGYE",
         "to": "FH-EX-LEE-SANGGYE",
         "type": "biological",
+        "parentRole": "father",
         "status": "preserved",
         "sourceRefs": [
           {
@@ -296,6 +313,7 @@
         "from": "FH-K998-M-01",
         "to": "K998",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -312,6 +330,7 @@
         "from": "FH-K998-M-02",
         "to": "FH-K998-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -328,6 +347,7 @@
         "from": "FH-K998-M-03",
         "to": "FH-K998-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -344,6 +364,7 @@
         "from": "FH-K998-X이호계-01",
         "to": "FH-EX-LEE-HOGYE",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

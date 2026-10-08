@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "고승혁",
+        "lineage": {
+          "surname": "고",
+          "bongwan": "한양",
+          "clan": "ace0-d55c-c591-agreed-d638-second"
+        },
         "birthDate": "2047-08-23",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "고승문",
+        "lineage": {
+          "surname": "고",
+          "bongwan": "한양",
+          "clan": "ace0-d55c-c591-agreed-d638-second"
+        },
         "birthDate": "2017-08-23",
         "deathDate": null,
         "status": "authored",
@@ -200,6 +210,7 @@
         "from": "FH-K563-P-01",
         "to": "K563",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -216,6 +227,7 @@
         "from": "FH-K563-P-02",
         "to": "FH-K563-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -232,6 +244,7 @@
         "from": "FH-K563-M-01",
         "to": "K563",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -248,6 +261,7 @@
         "from": "FH-K563-M-02",
         "to": "FH-K563-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

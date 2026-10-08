@@ -62,6 +62,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재리",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "상락",
+          "clan": "ae40-c0c1-b77d-91d1"
+        },
         "birthDate": "2061-09-20",
         "deathDate": null,
         "status": "authored",
@@ -96,6 +101,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재나",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "상락",
+          "clan": "ae40-c0c1-b77d-91d1"
+        },
         "birthDate": "2031-09-20",
         "deathDate": null,
         "status": "authored",
@@ -130,6 +140,11 @@
         "personId": null,
         "kind": "historical",
         "name": "김재온",
+        "lineage": {
+          "surname": "김",
+          "bongwan": "상락",
+          "clan": "ae40-c0c1-b77d-91d1"
+        },
         "birthDate": "2001-09-20",
         "deathDate": null,
         "status": "authored",
@@ -268,6 +283,7 @@
         "from": "FH-K741-P-01",
         "to": "K741",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -284,6 +300,7 @@
         "from": "FH-K741-P-02",
         "to": "FH-K741-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -300,6 +317,7 @@
         "from": "FH-K741-P-03",
         "to": "FH-K741-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -316,6 +334,7 @@
         "from": "FH-K741-M-01",
         "to": "K741",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -332,6 +351,7 @@
         "from": "FH-K741-M-02",
         "to": "FH-K741-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -348,6 +368,7 @@
         "from": "FH-K741-M-03",
         "to": "FH-K741-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

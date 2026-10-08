@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "차승호",
+        "lineage": {
+          "surname": "차",
+          "bongwan": "연안",
+          "clan": "cc28-c5f0-c548"
+        },
         "birthDate": "2054-07-01",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "차승민",
+        "lineage": {
+          "surname": "차",
+          "bongwan": "연안",
+          "clan": "cc28-c5f0-c548"
+        },
         "birthDate": "2024-07-01",
         "deathDate": null,
         "status": "authored",
@@ -198,6 +208,7 @@
         "from": "FH-K134-P-01",
         "to": "K134",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -214,6 +225,7 @@
         "from": "FH-K134-P-02",
         "to": "FH-K134-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -230,6 +242,7 @@
         "from": "FH-K134-M-01",
         "to": "K134",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -246,6 +259,7 @@
         "from": "FH-K134-M-02",
         "to": "FH-K134-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

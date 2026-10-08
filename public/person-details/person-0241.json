@@ -60,6 +60,11 @@
         "personId": null,
         "kind": "historical",
         "name": "단승원",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "서촉",
+          "clan": "b2e8-c11c-cd09-6bb5"
+        },
         "birthDate": "2068-10-24",
         "deathDate": null,
         "status": "authored",
@@ -94,6 +99,11 @@
         "personId": null,
         "kind": "historical",
         "name": "단승진",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "서촉",
+          "clan": "b2e8-c11c-cd09-6bb5"
+        },
         "birthDate": "2038-10-24",
         "deathDate": null,
         "status": "authored",
@@ -128,6 +138,11 @@
         "personId": null,
         "kind": "historical",
         "name": "단승현",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "서촉",
+          "clan": "b2e8-c11c-cd09-6bb5"
+        },
         "birthDate": "2008-10-24",
         "deathDate": null,
         "status": "authored",
@@ -266,6 +281,7 @@
         "from": "FH-K240-P-01",
         "to": "K240",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -282,6 +298,7 @@
         "from": "FH-K240-P-02",
         "to": "FH-K240-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -298,6 +315,7 @@
         "from": "FH-K240-P-03",
         "to": "FH-K240-P-02",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -314,6 +332,7 @@
         "from": "FH-K240-M-01",
         "to": "K240",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -330,6 +349,7 @@
         "from": "FH-K240-M-02",
         "to": "FH-K240-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -346,6 +366,7 @@
         "from": "FH-K240-M-03",
         "to": "FH-K240-M-02",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {

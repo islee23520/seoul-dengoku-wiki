@@ -63,6 +63,11 @@
         "personId": null,
         "kind": "historical",
         "name": "문승진",
+        "lineage": {
+          "surname": "문",
+          "bongwan": "남평",
+          "clan": "bb38-b0a8-d3c9-6587"
+        },
         "birthDate": "2037-01-31",
         "deathDate": null,
         "status": "authored",
@@ -97,6 +102,11 @@
         "personId": null,
         "kind": "historical",
         "name": "문승현",
+        "lineage": {
+          "surname": "문",
+          "bongwan": "남평",
+          "clan": "bb38-b0a8-d3c9-6587"
+        },
         "birthDate": "2007-01-31",
         "deathDate": null,
         "status": "authored",
@@ -201,6 +211,7 @@
         "from": "FH-K378-P-01",
         "to": "K378",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -217,6 +228,7 @@
         "from": "FH-K378-P-02",
         "to": "FH-K378-P-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -233,6 +245,7 @@
         "from": "FH-K378-M-01",
         "to": "K378",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
@@ -249,6 +262,7 @@
         "from": "FH-K378-M-02",
         "to": "FH-K378-M-01",
         "type": "biological",
+        "parentRole": "mother",
         "status": "authored",
         "sourceRefs": [
           {
