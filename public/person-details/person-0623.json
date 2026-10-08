@@ -178,7 +178,12 @@
         "id": "FH-K623-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "박재수",
+        "name": "기재수",
+        "lineage": {
+          "surname": "기",
+          "bongwan": "행주",
+          "clan": "ae30-d589-c8fc"
+        },
         "birthDate": "2006-10-11",
         "deathDate": null,
         "status": "authored",
@@ -194,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "박재수는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+            "summary": "기재수는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -266,6 +271,7 @@
         "from": "FH-K623-M-02",
         "to": "FH-K623-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

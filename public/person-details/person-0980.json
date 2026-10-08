@@ -178,7 +178,12 @@
         "id": "FH-K980-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "송민연",
+        "name": "명민연",
+        "lineage": {
+          "surname": "명",
+          "bongwan": "연안",
+          "clan": "ba85-c5f0-c548"
+        },
         "birthDate": "2013-04-01",
         "deathDate": null,
         "status": "authored",
@@ -194,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "송민연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+            "summary": "명민연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-13.json",
@@ -266,6 +271,7 @@
         "from": "FH-K980-M-02",
         "to": "FH-K980-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

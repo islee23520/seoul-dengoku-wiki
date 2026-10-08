@@ -12,12 +12,54 @@ import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validat
 
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
 
+test('applies all approved external ancestors without changing dates or given names', async () => {
+  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
+  for (const approved of decisions.approvedExternalMaternalAncestors) {
+    const node = graph.nodes.find(node => node.id === approved.nodeId)
+    assert.equal(node.name, approved.proposedAfter.name)
+    assert.equal(node.birthDate, approved.birthDate)
+    assert.equal(node.deathDate, approved.deathDate)
+    assert.equal(node.name.slice(approved.proposedAfter.surname.length), approved.givenName)
+    assert.equal(graph.edges.find(edge => edge.id === approved.edgeId).parentRole, 'father')
+    assert.deepEqual(node.lineage, { surname: approved.proposedAfter.surname, bongwan: approved.proposedAfter.bongwan, clan: approved.proposedAfter.clan })
+  }
+  for (const approved of decisions.approvedConfirmedFatherRoles) assert.equal(graph.edges.find(edge => edge.from === approved.from && edge.to === approved.to).parentRole, 'father')
+})
+
+
+test('distinct historical IDs preserve namesakes and dates through projection and real rendering', () => {
+  const ledger = fixture()
+  const first = ledger.nodes[0]
+  const second = { ...node('H-namesake', first.name, '1990-02-03', 'historical'), deathDate: '2027-01-01' }
+  ledger.nodes.push(second)
+  ledger.edges.push(edge(second.id, id('신준')))
+  const graph = validateCastFamilyTrees(ledger, roster)
+  const projected = projectFamilyTree(graph, id('신준'), new Map())
+  assert.deepEqual(projected.nodes.filter(entry => entry.name === first.name).map(entry => [entry.id, entry.birthDate]), [[first.id, first.birthDate], [second.id, second.birthDate]])
+  const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(FamilyTree, { tree: projected })))
+  for (const parent of [first, second]) {
+    assert.ok(html.includes('data-family-node="' + parent.id + '"'))
+    assert.ok(html.includes(parent.birthDate))
+  }
+  assert.ok(projected.edges.some(entry => entry.from === second.id && entry.to === id('신준')))
+})
+
+test('rejects conflicting identities sharing the same stable node ID', () => {
+  const ledger = fixture()
+  ledger.nodes.push({ ...ledger.nodes[0], name: 'different identity', birthDate: '1990-02-03' })
+  assert.throws(() => validateCastFamilyTrees(ledger, roster), /E_FAMILY_DUPLICATE_NODE/)
+})
+
+
 test('preserves role-only mappings without inventing historical clans', async () => {
   const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   for (const mapping of decisions.ownerAuthoredRoleOnly) {
     assert.equal(graph.edges.find(edge => edge.id === mapping.edgeId).parentRole, mapping.parentRole)
-    assert.equal(graph.nodes.find(node => node.id === mapping.from).lineage, undefined)
+    const external = decisions.approvedExternalMaternalAncestors?.find(node => node.nodeId === mapping.from)
+    if (external) assert.deepEqual(graph.nodes.find(node => node.id === mapping.from).lineage, { surname: external.proposedAfter.surname, bongwan: external.proposedAfter.bongwan, clan: external.proposedAfter.clan })
+    else assert.equal(graph.nodes.find(node => node.id === mapping.from).lineage, undefined)
   }
 })
 
@@ -58,7 +100,7 @@ test('source-bound corrections preserve all nineteen roles through the real load
     assert.ok(correction.sourceRefs.length)
   }
   assert.equal(graph.edges.filter(edge => edge.type === 'biological').length, 5010)
-  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 4606)
+  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 4625)
 })
 
 
@@ -78,6 +120,8 @@ test('rejects reintroduced same surname on an owner-corrected derived pair', asy
   const hang = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
   const pair = decisions.maternalCorrections[0]
   authored.nodes.find((entry) => entry.id === pair.motherId).lineage.surname = pair.fatherLine.surname
+  // Keep the newly authored maternal paternal chain consistent so this fixture isolates co-parent surname rejection.
+  for (const ancestor of decisions.approvedExternalMaternalAncestors.filter(entry => entry.motherId === pair.motherId)) authored.nodes.find(entry => entry.id === ancestor.nodeId).lineage.surname = pair.fatherLine.surname
   assert.throws(() => validateCastFamilyTrees(authored, registry, { diaspora, roleDecisions: decisions, lineages: new Map(hang.people.map((person) => [person.name, person])) }), /E_FAMILY_SAME_SURNAME/)
 })
 
@@ -134,7 +178,7 @@ test('preserves explicit biological and adoption edges without imposing numerica
 test.each([
   ['coverage', (ledger) => ledger.nodes.pop(), /E_FAMILY_COVERAGE/],
   ['duplicate nodes', (ledger) => ledger.nodes.push(ledger.nodes[0]), /E_FAMILY_DUPLICATE_NODE/],
-  ['duplicate historical name', (ledger) => { ledger.nodes[0].name = ledger.nodes[1].name }, /E_FAMILY_DUPLICATE_NAME/],
+  ['registered identity name mismatch', (ledger) => { ledger.nodes[1].name = ledger.nodes[2].name }, /E_FAMILY_ROSTER_IDENTITY/],
   ['self parent', (ledger) => ledger.edges.push(edge('H-test', 'H-test')), /E_FAMILY_SELF_PARENT/],
   ['cycle', (ledger) => ledger.edges.push(edge(id('신준'), 'H-test', 'household')), /E_FAMILY_CYCLE/],
   ['parent birth', (ledger) => { ledger.nodes.find((n) => n.id === id('신준')).birthDate = '2070-01-01' }, /E_FAMILY_PARENT_BIRTH/],

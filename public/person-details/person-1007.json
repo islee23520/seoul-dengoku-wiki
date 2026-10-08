@@ -220,7 +220,12 @@
         "id": "FH-K1007-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "박서현",
+        "name": "강서현",
+        "lineage": {
+          "surname": "강",
+          "bongwan": "진주",
+          "clan": "ac15-c9c4-c8fc"
+        },
         "birthDate": "2036-05-23",
         "deathDate": null,
         "status": "authored",
@@ -236,7 +241,7 @@
         "timeline": [
           {
             "year": 2074,
-            "summary": "박서현은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "summary": "강서현은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Core-Characters.json",
@@ -254,7 +259,12 @@
         "id": "FH-K1007-M-03",
         "personId": null,
         "kind": "historical",
-        "name": "이서우",
+        "name": "강서우",
+        "lineage": {
+          "surname": "강",
+          "bongwan": "진주",
+          "clan": "ac15-c9c4-c8fc"
+        },
         "birthDate": "2006-05-23",
         "deathDate": null,
         "status": "authored",
@@ -270,7 +280,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "이서우는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+            "summary": "강서우는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Core-Characters.json",
@@ -359,6 +369,7 @@
         "from": "FH-K1007-M-02",
         "to": "FH-K1007-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -375,7 +386,7 @@
         "from": "FH-K1007-M-03",
         "to": "FH-K1007-M-02",
         "type": "biological",
-        "parentRole": "mother",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

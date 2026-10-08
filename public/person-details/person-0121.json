@@ -178,7 +178,12 @@
         "id": "FH-K120-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "이현석",
+        "name": "감현석",
+        "lineage": {
+          "surname": "감",
+          "bongwan": "창원",
+          "clan": "ac10-cc3d-c6d0"
+        },
         "birthDate": "2014-01-22",
         "deathDate": null,
         "status": "authored",
@@ -194,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "이현석은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "summary": "감현석은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-05.json",
@@ -266,6 +271,7 @@
         "from": "FH-K120-M-02",
         "to": "FH-K120-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

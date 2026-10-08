@@ -217,7 +217,12 @@
         "id": "FH-K972-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "이민도",
+        "name": "매민도",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2035-04-22",
         "deathDate": null,
         "status": "authored",
@@ -233,7 +238,7 @@
         "timeline": [
           {
             "year": 2073,
-            "summary": "이민도는 영등포 정수 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+            "summary": "매민도는 영등포 정수 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-05.json",
@@ -251,7 +256,12 @@
         "id": "FH-K972-M-03",
         "personId": null,
         "kind": "historical",
-        "name": "최서진",
+        "name": "매서진",
+        "lineage": {
+          "surname": "매",
+          "bongwan": "충주",
+          "clan": "b9e4-cda9-c8fc"
+        },
         "birthDate": "2005-04-22",
         "deathDate": null,
         "status": "authored",
@@ -267,7 +277,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "최서진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+            "summary": "매서진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-05.json",
@@ -356,6 +366,7 @@
         "from": "FH-K972-M-02",
         "to": "FH-K972-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -372,7 +383,7 @@
         "from": "FH-K972-M-03",
         "to": "FH-K972-M-02",
         "type": "biological",
-        "parentRole": "mother",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

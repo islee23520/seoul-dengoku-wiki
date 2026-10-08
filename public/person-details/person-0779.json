@@ -217,7 +217,12 @@
         "id": "FH-K779-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "박도아",
+        "name": "단도아",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "강음",
+          "clan": "b2e8-ac15-c74c"
+        },
         "birthDate": "2028-06-16",
         "deathDate": null,
         "status": "authored",
@@ -233,7 +238,7 @@
         "timeline": [
           {
             "year": 2066,
-            "summary": "박도아는 신내 환승 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+            "summary": "단도아는 신내 환승 당직에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-04.json",
@@ -251,7 +256,12 @@
         "id": "FH-K779-M-03",
         "personId": null,
         "kind": "historical",
-        "name": "이도아",
+        "name": "단도아",
+        "lineage": {
+          "surname": "단",
+          "bongwan": "강음",
+          "clan": "b2e8-ac15-c74c"
+        },
         "birthDate": "1998-06-16",
         "deathDate": null,
         "status": "authored",
@@ -267,7 +277,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "이도아는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+            "summary": "단도아는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-04.json",
@@ -356,6 +366,7 @@
         "from": "FH-K779-M-02",
         "to": "FH-K779-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -372,7 +383,7 @@
         "from": "FH-K779-M-03",
         "to": "FH-K779-M-02",
         "type": "biological",
-        "parentRole": "mother",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

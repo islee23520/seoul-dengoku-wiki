@@ -217,7 +217,12 @@
         "id": "FH-K507-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "윤태경",
+        "name": "권태경",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9"
+        },
         "birthDate": "2036-05-19",
         "deathDate": null,
         "status": "authored",
@@ -233,7 +238,7 @@
         "timeline": [
           {
             "year": 2074,
-            "summary": "윤태경은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "summary": "권태경은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-04.json",
@@ -251,7 +256,12 @@
         "id": "FH-K507-M-03",
         "personId": null,
         "kind": "historical",
-        "name": "한태우",
+        "name": "권태우",
+        "lineage": {
+          "surname": "권",
+          "bongwan": "안동",
+          "clan": "ad8c-c548-b3d9"
+        },
         "birthDate": "2006-05-19",
         "deathDate": null,
         "status": "authored",
@@ -267,7 +277,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "한태우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+            "summary": "권태우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-04.json",
@@ -356,6 +366,7 @@
         "from": "FH-K507-M-02",
         "to": "FH-K507-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -372,7 +383,7 @@
         "from": "FH-K507-M-03",
         "to": "FH-K507-M-02",
         "type": "biological",
-        "parentRole": "mother",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

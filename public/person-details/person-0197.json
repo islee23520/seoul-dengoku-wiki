@@ -215,7 +215,12 @@
         "id": "FH-K196-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "한현경",
+        "name": "곽현경",
+        "lineage": {
+          "surname": "곽",
+          "bongwan": "현풍",
+          "clan": "acfd-d604-d48d"
+        },
         "birthDate": "2028-05-10",
         "deathDate": null,
         "status": "authored",
@@ -231,7 +236,7 @@
         "timeline": [
           {
             "year": 2066,
-            "summary": "한현경은 노량진 선창에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "summary": "곽현경은 노량진 선창에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -249,7 +254,12 @@
         "id": "FH-K196-M-03",
         "personId": null,
         "kind": "historical",
-        "name": "강현수",
+        "name": "곽현수",
+        "lineage": {
+          "surname": "곽",
+          "bongwan": "현풍",
+          "clan": "acfd-d604-d48d"
+        },
         "birthDate": "1998-05-10",
         "deathDate": null,
         "status": "authored",
@@ -265,7 +275,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "강현수는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+            "summary": "곽현수는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-08.json",
@@ -354,6 +364,7 @@
         "from": "FH-K196-M-02",
         "to": "FH-K196-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
@@ -370,7 +381,7 @@
         "from": "FH-K196-M-03",
         "to": "FH-K196-M-02",
         "type": "biological",
-        "parentRole": "mother",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {

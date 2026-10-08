@@ -65,12 +65,9 @@ export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, p
   }
   const byId = new Map()
   const byPersonId = new Map()
-  const names = new Set()
   for (const node of nodes) {
     if (!record(node) || !text(node.id) || !text(node.name) || !['person', 'historical', 'synthetic'].includes(node.kind) || !Array.isArray(node.timeline) || !node.timeline.length) fail('E_FAMILY_NODE', node?.id)
     if (byId.has(node.id)) fail('E_FAMILY_DUPLICATE_NODE', node.id)
-    if (names.has(node.name)) fail('E_FAMILY_DUPLICATE_NAME', node.id)
-    names.add(node.name)
     metadata(node, node.id)
     ageInYears(node.birthDate, ledger.referenceDate)
     if (node.deathDate !== null) ageInYears(node.birthDate, node.deathDate)

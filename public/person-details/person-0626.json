@@ -178,7 +178,12 @@
         "id": "FH-K626-M-02",
         "personId": null,
         "kind": "historical",
-        "name": "정재현",
+        "name": "남재현",
+        "lineage": {
+          "surname": "남",
+          "bongwan": "의령",
+          "clan": "b0a8-c758-b839"
+        },
         "birthDate": "2021-05-24",
         "deathDate": null,
         "status": "authored",
@@ -194,7 +199,7 @@
         "timeline": [
           {
             "year": 2026,
-            "summary": "정재현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+            "summary": "남재현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -266,6 +271,7 @@
         "from": "FH-K626-M-02",
         "to": "FH-K626-M-01",
         "type": "biological",
+        "parentRole": "father",
         "status": "authored",
         "sourceRefs": [
           {
