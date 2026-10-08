@@ -1,0 +1,352 @@
+{
+ "schemaVersion": 1,
+ "locale": "ko-KR",
+ "status": "accepted",
+ "source": {
+  "path": "system-design/Archify-D13.md",
+  "lineStart": 1,
+  "lineEnd": 85,
+  "sha256": "dc0fdaf16769259a74ffd3167106e5fd8d93873493995ce9fb53948e40523509"
+ },
+ "document": {
+  "id": "doc.Archify-D13",
+  "blockIds": [
+   "archify.b1",
+   "archify.b2",
+   "archify.b3",
+   "archify.b4",
+   "archify.b5",
+   "archify.b6",
+   "archify.b7",
+   "archify.b8",
+   "archify.b9",
+   "archify.b10",
+   "archify.b11",
+   "archify.b12",
+   "archify.b13",
+   "archify.b14",
+   "archify.b15",
+   "archify.b16",
+   "archify.b17"
+  ]
+ },
+ "blocks": [
+  {
+   "id": "archify.b1",
+   "kind": "heading",
+   "level": 1,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D13 아치파이 — 자산·유산·운송 전체 논리"
+    }
+   ]
+  },
+  {
+   "id": "archify.b2",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 페이지는 자산·유산·운송 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b3",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "기계 입력과 검증 흐름"
+    }
+   ]
+  },
+  {
+   "id": "archify.b4",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "archify",
+   "text": "{\"domainId\":\"D13\",\"diagramId\":\"d13-flow\",\"moduleTitle\":\"D13 운용 흐름\"}"
+  },
+  {
+   "id": "archify.b5",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "소비자 계약(conservation-no-roll): Parent atoms equal disjoint union children, retire parent once; separate legal award, physical custody/location, actual arrival and availability. No automatic equal inheritance/debt transfer."
+    }
+   ]
+  },
+  {
+   "id": "archify.b6",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "계산과 출력"
+    }
+   ]
+  },
+  {
+   "id": "archify.b7",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "text",
+   "text": "D13-F-CONSERVATION [] atoms(parent)=disjointUnion(atoms(child1),atoms(child2)); Qparent=Q1+Q2; active parent count=0\nD13-F-ESTATE [] personalEstate=assignedWholeAssets disjointUnion heldAssets; institutions excluded; Qbefore=Qafter\nD13-F-CUTOFF [] eligibleAtCutoff = completedReceipt AND arrival<=cutoff; finalAvailable additionally requires unreserved/usable rights and applicable stock conditions\nD13-F-VALUATION [] V=sum(demanded prices)-sum(offered prices) on same war/proposal snapshot\nD13-F1 [후보·승인 전] parentAtoms=disjointUnion(childAtoms); Qparent=sum(Qchildren); parent retired after successful split\nD13-F2 [후보·승인 전] personalEstate=authorizedWholeAwards disjointUnion heldAssets; institutions/persons excluded; stockAvailable requires actualReceipt && arrival<=cutoff && separateRightsAndReservationGuards\n"
+  },
+  {
+   "id": "archify.b8",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D13의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b9",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "상태 필드와 보존 경계"
+    }
+   ]
+  },
+  {
+   "id": "archify.b10",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "assetId — nonempty string (identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "kind — enum personal/institution/person (asset-kind)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "atoms — unique array<string> (material atom identifiers)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "unit — nonempty string (same material unit across partition)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "indivisible — boolean (predicate)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "owner — nonempty string (legal subject identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "custodian — nonempty string|null (physical subject identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "location — nonempty string|null (D06 location identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "route — nonempty string|null (D06 route identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "useRight — array<string>|null (contract identifiers)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "reservation — string|null (reservation identifier; null absent only when explicitly known)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "lien — array<string>|null (encumbrance identifiers; null unknown)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "inDelivery — boolean|null (predicate)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "dispute — boolean|null (predicate)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "revision — nonnegative safe integer (snapshot revision; verifier fixture carrier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "causeEventId — nonempty string (event identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "arrival — finite number|null (fixture-clock unit shared with cutoff; product scale held)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "cutoff — finite number|null (same fixture-clock unit as arrival)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "debt.obligor — nonempty string (subject identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "debt.attachment — enum personal/office/institution (legal attachment)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "debt.amount — nonnegative number|null (explicit same currency unit; never CP)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "beneficiary — string|null (legal subject identifier; null held)"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b11",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "자료 소유자는 D13 campaign asset/obligation ledger; GDD owns semantics, WIKI owns authored facts, runtime projection not implemented, 유지 계약은 D13-F-CONSERVATION·D13-F-ESTATE·D13-F-CUTOFF·D13-F-VALUATION다. 상태 소유 경계는 asset atoms,parent retired,legal owner,custodian,location,rights,lien,reservation,whole estate awards,transport/cutoff receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+    }
+   ]
+  },
+  {
+   "id": "archify.b12",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "오류·보류 코드"
+    }
+   ]
+  },
+  {
+   "id": "archify.b13",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "후보 오류: E_CONSERVATION, E_POLICY, E_AUTHORITY, E_UNIT"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "기존 평가기 오류: E_HELD_INPUT, E_TYPE, E_ASSET_DUPLICATE, E_UNIT, E_INDIVISIBLE, E_MATERIAL_DUPLICATE, E_DEBT_DUPLICATE, E_RULES_VERSION, E_EVENT_DUPLICATE, E_STALE_SNAPSHOT"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b14",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "차용 제거와 적용 범위"
+    }
+   ]
+  },
+  {
+   "id": "archify.b15",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+    }
+   ]
+  },
+  {
+   "id": "archify.b16",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "BigInt bottleneck min/floor/residual only, required channels selected by caller, no resources/recipe mutation"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b17",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D13-asset-atoms-custody-receipt(TOOL/tools/mechanisms/original-trpg/asset-atoms-custody-receipt.mjs, TOOL/tools/mechanisms/original-trpg/asset-atoms-custody-receipt.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+    }
+   ]
+  }
+ ]
+}

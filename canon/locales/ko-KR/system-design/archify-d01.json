@@ -1,0 +1,316 @@
+{
+ "schemaVersion": 1,
+ "locale": "ko-KR",
+ "status": "accepted",
+ "source": {
+  "path": "system-design/Archify-D01.md",
+  "lineStart": 1,
+  "lineEnd": 88,
+  "sha256": "e2ef4a7dd3e2bea97de637c18e7daf30632bc56b08ca12f567b3cb4a1925d988"
+ },
+ "document": {
+  "id": "doc.Archify-D01",
+  "blockIds": [
+   "archify.b1",
+   "archify.b2",
+   "archify.b3",
+   "archify.b4",
+   "archify.b5",
+   "archify.b6",
+   "archify.b7",
+   "archify.b8",
+   "archify.b9",
+   "archify.b10",
+   "archify.b11",
+   "archify.b12",
+   "archify.b13",
+   "archify.b14",
+   "archify.b15",
+   "archify.b16",
+   "archify.b17"
+  ]
+ },
+ "blocks": [
+  {
+   "id": "archify.b1",
+   "kind": "heading",
+   "level": 1,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D01 아치파이 — 인물·능력·특성·시트 전체 논리"
+    }
+   ]
+  },
+  {
+   "id": "archify.b2",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "이 페이지는 인물·능력·특성·시트 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b3",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "기계 입력과 검증 흐름"
+    }
+   ]
+  },
+  {
+   "id": "archify.b4",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "archify",
+   "text": "{\"domainId\":\"D01\",\"diagramId\":\"d01-flow\",\"moduleTitle\":\"D01 운용 흐름\"}"
+  },
+  {
+   "id": "archify.b5",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "소비자 계약(kernel): Lookup immutable legacy; no CP or attribute conversion. Missing new rating => held."
+    }
+   ]
+  },
+  {
+   "id": "archify.b6",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "계산과 출력"
+    }
+   ]
+  },
+  {
+   "id": "archify.b7",
+   "kind": "codeFence",
+   "fence": "```",
+   "info": "text",
+   "text": "L-attributes [참조 전용·비운용] baseline10; ST/HT10 CP per level, DX/IQ20 CP per level\nL-secondary [참조 전용·비운용] unmodified HP=ST, FP=HT, Will=Per=IQ, Speed=(DX+HT)/4; Move=floor(Speed); Dodge=floor(Speed+3)\nL-lift [참조 전용·비운용] ST squared/5 lb; nearest whole lb only if raw>=10\nL-cost [참조 전용·비운용] E/A/H only:1,2,4,then4 CP per extra level\nL-default [참조 전용·비운용] reference E/A/H defaults -4/-5/-6, attribute cap20; entry exceptions must be explicit\nL-points [참조 전용·비운용] budget is a design choice, not universal\nL-native [참조 전용·비운용] native language0 CP where applicable, not a purchased skill\nCP-balance [approved-procedure] budget=attributes+traits+skills+other+unspent\nD01-F1 [후보·승인 전] actionOutcome=selectedKernel(approved-or-fixture candidate inputs); no implicit LegacyValue cast\nD01-F2 [후보·승인 전] z=a0+(x-l)*(a1-a0)/(h-l), h>l and l<=x<=h; otherwise error; z never overwrites x and is not an issued integer rating\n"
+  },
+  {
+   "id": "archify.b8",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "D01의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "archify.b9",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "상태 필드와 보존 경계"
+    }
+   ]
+  },
+  {
+   "id": "archify.b10",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "identity — stable-id (identifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "attributes — four positive integers ST/DX/IQ/HT (attribute-level)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "budget,traitCP,skillCP,otherCP,unspentCP — integer (CP)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "skills — entry-specific difficulty/control/TL/default/evidence/CP (skill-level and CP)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "TL,languages — explicit technology context and proficiency records (TL-level and language-proficiency)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "traits — separate individually reviewed traits (trait-id and CP)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "temporaryModifiers — effect-id,target,delta,start/end event,source,settled-event (target-specific level modifier)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "roleEligibility — authority proof plus state and equipment/access proofs (permission)"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "snapshotRevision,rulesVersion,eventId — revision/version/stable-event-id (revision,version,identifier)"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b11",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "자료 소유자는 D01, 유지 계약은 CP-balance다. 상태 소유 경계는 variantRef,subjectId,legacy fields,originalRatings assignments,review receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+    }
+   ]
+  },
+  {
+   "id": "archify.b12",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "오류·보류 코드"
+    }
+   ]
+  },
+  {
+   "id": "archify.b13",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "후보 오류: E_POLICY, E_INPUT, E_UNIT, E_REVISION"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "기존 평가기 오류: E_SHAPE, E_UNIT, E_RANGE, E_NULL, E_APPROVAL, E_STALE, E_VERSION, E_DUPLICATE, E_DEAD, E_BUDGET"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b14",
+   "kind": "heading",
+   "level": 2,
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "차용 제거와 적용 범위"
+    }
+   ]
+  },
+  {
+   "id": "archify.b15",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "제거 대상 차용 산식: L-attributes, L-secondary, L-lift, L-cost, L-default, L-native, L-points. Remove call/dependency from original operative consumer, not original records/historical references/tests."
+    }
+   ]
+  },
+  {
+   "id": "archify.b16",
+   "kind": "list",
+   "ordered": false,
+   "items": [
+    [
+     {
+      "kind": "text",
+      "text": "deep-cloned full people records and equality, no raw lexical-number parser"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "two explicit historical revision IDs, no default, cloned record only"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "approved range validator only; kernel does not invoke it"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "9 logical/8 visual categories and visible allowlist tokens, no complete closed schema/actual assignments"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "signed side assembly, exact cause/effect duplicate/unit/range checks, no effects source resolver"
+     }
+    ],
+    [
+     {
+      "kind": "text",
+      "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "archify.b17",
+   "kind": "paragraph",
+   "inlines": [
+    {
+     "kind": "text",
+     "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D01-revision-bound-rating-sheet(TOOL/tools/mechanisms/original-trpg/revision-bound-rating-sheet.mjs, TOOL/tools/mechanisms/original-trpg/revision-bound-rating-sheet.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+    }
+   ]
+  }
+ ]
+}
