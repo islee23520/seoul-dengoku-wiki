@@ -18,7 +18,8 @@
       "Korean lore/characters/Characters-Factions-and-Professions.md SHA-256 ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3.",
       "English SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33; translated from Korean during the JSON migration (no committed EN existed).",
       "KO from the sweep-w1 WEB working tree (dirty). EN needs human review.",
-      "2026-10-08 owner direction: clothing hierarchy is station depth, then workload and occupational protection at the same depth, then individual comfort; male lighter-layer tendency applies underground only. Existing named outfits and identities are preserved."
+      "2026-10-08 owner direction: clothing hierarchy is station depth, then workload and occupational protection at the same depth, then individual comfort; male lighter-layer tendency applies underground only. Existing named outfits and identities are preserved.",
+      "2026-10-08 owner clarification: organize clothing as surface, intermediate underground, and deep underground, with occupational and individual variation inside each tier. No separate shallow tier."
     ]
   },
   "source": {
@@ -96,33 +97,33 @@
       "kind": "paragraph",
       "anchor": "옷차림을-가르는-순서",
       "text": {
-        "ko": "지하 생활권의 옷차림은 먼저 역사의 깊이에 따라 달라진다. 얕은 곳에서 깊은 곳으로 내려갈수록 보온을 위한 겹이 줄고, 같은 깊이에 머무는 사람들 사이에서는 활동량과 작업 환경이 차이를 만든다. 옷의 형태와 주머니·장구 배치는 생업을 드러내며, 두께와 소재, 덧입는 겹이 그 사람이 지내는 온도에 맞춰 바뀐다.",
-        "en": "Underground clothing varies first with station depth. Insulating layers become lighter from shallow to deep areas, while workload and working conditions distinguish people staying at the same depth. Garment cuts, pockets, and equipment reflect their trades; fabric, thickness, and removable layers adapt to their surroundings."
+        "ko": "사람들의 옷차림은 먼저 지상, 중간 깊이 지하, 깊은 지하의 세 생활 환경에 따라 달라진다. 지상에서 지하로 내려가고 더 깊은 곳으로 향할수록 보온을 위한 겹이 줄며, 같은 깊이에 머무는 사람들 사이에서는 활동량과 작업 환경이 차이를 만든다. 옷의 형태와 주머니·장구 배치는 생업을 드러내고, 두께와 소재, 덧입는 겹이 그 사람이 지내는 온도에 맞춰 바뀐다.",
+        "en": "Clothing varies first between three living environments: the surface, intermediate underground, and deep underground. Insulating layers become lighter below the surface and farther down, while workload and working conditions distinguish people staying at the same depth. Garment cuts, pockets, and equipment reflect their trades; fabric, thickness, and removable layers adapt to their surroundings."
       }
     },
     {
       "kind": "heading",
-      "anchor": "얕은-지하의-복장",
+      "anchor": "지상의-복장",
       "depth": 3,
       "text": {
-        "ko": "얕은 지하 생활권",
-        "en": "Shallow Underground Quarters"
+        "ko": "지상 생활권",
+        "en": "Surface Quarters"
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "얕은-지하-이동과-기록",
+      "anchor": "지상-이동과-정지",
       "text": {
-        "ko": "18℃ 쪽에 가까운 얕은 생활권에서 전령과 운반자는 움직임이 편한 얇은 속옷 위에 짧은 작업 재킷을 걸친다. 같은 층에서 오래 앉아 장부를 쓰는 기록원과 창구 담당자는 긴소매 안에 얇은 울 내의를 입거나 조끼를 덧입는다. 쉬는 동안 추위를 느끼는 운반자도 벗어 둔 겉옷을 다시 입는다.",
-        "en": "Near the 18°C end of the shallow living areas, couriers and porters wear short work jackets over light base layers that allow easy movement. Clerks and counter staff sitting for long periods on the same level add a thin wool base layer or a vest. Porters who feel cold while resting also put their outer layer back on."
+        "ko": "서울 지상에서는 −18.6℃의 혹한을 견딜 방한복을 갖춘다. 전령과 운반자는 익숙한 작업 재킷의 형태를 유지하면서 바람을 막는 겉감과 보온 내피를 더하고, 장갑과 목을 감싸는 옷으로 노출을 줄인다. 밖에서 오래 서 있는 경비와 매대 상인은 움직이는 사람보다 보온 겹을 더하며, 운반자도 짐을 내려놓고 쉴 때에는 풀어 두었던 옷깃과 여밈을 닫는다.",
+        "en": "On the surface in Seoul, people dress for severe cold of −18.6°C. Couriers and porters retain the familiar cut of their work jackets while adding wind-resistant fabric and insulating liners, gloves, and neck coverings. Guards standing watch and merchants at outdoor stalls add more insulation than people on the move. Porters close loosened collars and fastenings when they set down their loads to rest."
       }
     },
     {
       "kind": "paragraph",
-      "anchor": "얕은-지하-보호복",
+      "anchor": "지상-보호복",
       "text": {
-        "ko": "같은 깊이의 정비공은 안감을 얇게 하더라도 긴 보호 소매와 작업 장갑을 유지한다. 물을 다루는 정수 담당자는 물이 스미지 않는 앞치마와 장화를 갖추고, 그 안의 보온 겹으로 추위를 조절한다. 온도가 같아도 움직임과 물기, 작업 중 닿는 재료가 다르므로 서로 같은 복장으로 맞추지 않는다.",
-        "en": "Mechanics at the same depth retain protective long sleeves and work gloves even when their lining is thin. Water-treatment workers keep water-resistant aprons and boots, adjusting the insulating layers beneath them. Equal air temperatures do not produce identical clothing when movement, wet work, and contact materials differ."
+        "ko": "지상에서 일하는 정비공은 팔과 손을 보호하는 작업복에 방한 안감을 더한다. 물을 다루는 사람은 물이 스미지 않는 앞치마와 장화 안쪽에도 보온 겹을 갖춘다. 작업 도구를 다루는 손의 움직임과 필요한 보호 기능을 살리면서 두께와 소재를 고르며, 남녀 모두 비슷한 수준의 방한을 갖춘다.",
+        "en": "Mechanics working above ground add insulating lining to clothing that protects their arms and hands. People handling water also insulate beneath water-resistant aprons and inside boots. Fabric and thickness preserve the hand movement and protection their work requires, while men and women maintain similar levels of protection from the cold."
       }
     },
     {
@@ -138,16 +139,16 @@
       "kind": "paragraph",
       "anchor": "중간-깊이-이동과-정주",
       "text": {
-        "ko": "18~22℃ 범위의 중간에 놓인 생활권에서는 전령과 운반자가 작업 재킷을 벗어 가방에 묶거나 가벼운 셔츠 차림으로 움직인다. 같은 층의 기록원과 상담 담당자는 얇은 조끼나 가디건을 고르고, 매대 안에 오래 서 있는 상인은 활동량에 맞춰 가벼운 겉옷을 걸친다. 순찰하던 경비도 한곳에 서서 문을 지킬 때에는 보온 겹을 다시 더할 수 있다.",
-        "en": "In living areas toward the middle of the 18–22°C range, couriers and porters tie their work jackets to their bags or move in light shirts. Clerks and advisers on the same level choose thin vests or cardigans, while merchants standing behind stalls use light outerwear suited to their activity. A guard who stops patrolling to stand watch can add a layer again."
+        "ko": "8~18℃의 중간 깊이 지하는 지상 가까운 지하 공간까지 아우르며 지상보다 따뜻하다. 전령과 운반자는 보온 내의 위에 움직임이 편한 작업 재킷을 입고, 더 따뜻한 곳에서 계속 움직일 때에는 덧옷을 벗어 가방에 묶는다. 같은 층에서 오래 앉아 일하는 기록원과 상담 담당자는 울 내의나 조끼·가디건을 더하며, 순찰하던 경비도 한곳에 서서 문을 지킬 때에는 보온 겹을 다시 입는다.",
+        "en": "Intermediate underground quarters range from 8 to 18°C, include spaces close to the surface, and are warmer than the surface. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "중간-깊이-작업-소재",
       "text": {
-        "ko": "정비공과 공방 노동자는 열이 차는 안감을 줄이고 몸의 움직임을 방해하지 않는 작업복을 입는다. 의료 담당자는 세탁하기 쉬운 얇은 긴소매와 업무에 필요한 보호구를 갖추며, 정수 담당자는 물을 막는 겉감 안쪽의 옷을 조절한다. 보호 기능은 생업을 따르고 보온의 두께가 깊이에 맞춰 달라진다.",
-        "en": "Mechanics and workshop workers reduce heat-trapping lining and wear clothing that permits movement. Medical workers use washable thin long sleeves with the protection their tasks require, while water-treatment workers adjust what they wear beneath water-resistant outer layers. Protective functions follow the trade; insulation changes with depth."
+        "ko": "같은 깊이의 정비공과 공방 노동자는 활동량에 맞춰 안감의 두께를 고르되 긴 보호 소매와 작업 장갑을 유지한다. 의료 담당자는 세탁하기 쉬운 긴소매와 업무에 필요한 보호구를 갖추고, 정수 담당자는 물을 막는 앞치마와 장화 안쪽의 보온을 조절한다. 기온이 같아도 움직임과 물기, 작업 중 닿는 재료가 다르므로 입는 겹과 소재가 달라진다.",
+        "en": "Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; water-treatment workers adjust insulation beneath water-resistant aprons and inside boots. Equal air temperatures still produce different layers and fabrics when movement, wet work, and contact materials differ."
       }
     },
     {
@@ -163,8 +164,8 @@
       "kind": "paragraph",
       "anchor": "깊은-지하-직업별-차이",
       "text": {
-        "ko": "22℃ 쪽에 가까운 깊은 생활권에서는 활동량이 많은 전령과 운반자가 얇은 셔츠를 입고, 작업에 지장이 없을 때에는 소매를 걷거나 반소매를 고른다. 같은 구역에서 앉아 일하는 기록원이나 추위를 타는 상인은 얇은 긴소매와 가벼운 덧옷을 유지한다. 더 깊이 내려왔다고 모든 사람이 피부를 드러내거나 같은 수의 겹을 입지는 않는다.",
-        "en": "Near the 22°C end of deep living quarters, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers."
+        "ko": "18~22℃의 깊은 지하 생활권에서는 활동량이 많은 전령과 운반자가 얇은 셔츠를 입고, 작업에 지장이 없을 때에는 소매를 걷거나 반소매를 고른다. 같은 구역에서 앉아 일하는 기록원이나 추위를 타는 상인은 얇은 긴소매와 가벼운 덧옷을 유지한다. 더 깊이 내려왔다고 모든 사람이 피부를 드러내거나 같은 수의 겹을 입지는 않는다.",
+        "en": "In deep underground quarters at 18–22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers."
       }
     },
     {

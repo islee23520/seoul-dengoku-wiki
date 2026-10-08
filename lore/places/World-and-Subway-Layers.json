@@ -17,7 +17,7 @@
     "history": [
       "Korean lore/places/World-and-Subway-Layers.md SHA-256 7672631e4bcc7fdd52b6419721a7d32e4b8a1162f204251dcf676449dac7cdc6.",
       "English lore/places/World-and-Subway-Layers.en.md SHA-256 716dc11fb6c7476e8ba63682b0f04827c9fa9182bc8715260557e9296b556c11; copied verbatim, no translation written.",
-      "2026-10-08 owner direction: perpetual winter; Seoul surface cold reference −18.6°C; sheltered underground range 18–22°C organized by depth, followed by trade and individual comfort. Fictional temperatures, not station measurements."
+      "2026-10-08 owner clarification: three clothing environments only: surface (Seoul cold reference −18.6°C), intermediate underground (8–18°C), and deep underground (18–22°C). Underground is warmer than the surface; no separate shallow tier. Fictional temperatures, not station measurements; no meter boundaries assigned."
     ]
   },
   "source": {
@@ -114,8 +114,8 @@
       "kind": "paragraph",
       "anchor": "깊이별-지하-생활권",
       "text": {
-        "ko": "외풍을 막은 지하 생활권의 기온은 18~22℃ 범위에 놓인다. 얕은 구역은 18℃ 쪽에 가깝고, 깊은 구역으로 내려갈수록 22℃ 쪽에 가까워진다. 사람들은 먼저 머무는 구역의 깊이에 맞춰 보온 겹을 고르고, 같은 깊이 안에서 하는 일과 개인의 추위 민감도에 따라 옷을 더하거나 덜어 낸다.",
-        "en": "Sheltered underground living quarters range from 18 to 22°C. Shallower areas lie nearer 18°C, and deeper areas approach 22°C. People first choose insulating layers for the depth of the area they occupy, then add or remove layers according to their work and individual sensitivity to cold."
+        "ko": "생활 환경은 지상, 중간 깊이 지하, 깊은 지하의 세 단계로 나뉜다. 지상 가까운 지하도 지상보다는 따뜻하며, 중간 깊이 지하 생활권에 속한다. 중간 깊이 지하는 8~18℃, 깊은 지하는 18~22℃ 범위에 놓인다. 사람들은 먼저 머무는 단계의 기온에 맞춰 보온 겹을 고르고, 같은 깊이 안에서 하는 일과 개인의 추위 민감도에 따라 옷을 더하거나 덜어 낸다.",
+        "en": "Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even underground spaces close to the surface are warmer than the surface and belong to the intermediate tier. Intermediate underground quarters range from 8 to 18°C, and deep quarters from 18 to 22°C. People first choose insulating layers for their tier, then add or remove layers according to their work and individual sensitivity to cold at the same depth."
       }
     },
     {
