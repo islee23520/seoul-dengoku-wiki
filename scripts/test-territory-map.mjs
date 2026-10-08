@@ -184,7 +184,7 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.equal(data.states.length, 16)
   const expectedStates = {
     S01: '수문국', S02: '규격맹', S03: '태욱그룹', S04: '명부교회',
-    S05: '동방사', S06: '대한민국정부', S07: '환적국', S08: '중앙기술보존원',
+    S05: '동방사', S06: '대한민국정부', S07: '환적국', S08: '중앙정보부',
     S09: '여의도출자연합회', S10: '안국총림', S11: '성하그룹', S12: '신내운수',
     S13: '흰십자단', S14: '아관사', S15: '명동대교구', S16: '정동노총',
   }
@@ -397,7 +397,7 @@ test('government relations come from the canon table and use only defined terms 
   const relations = new Map(canon.content.find((block) => block.anchor === 'table-gov-relations').rows.map((row) => [row[0].ko, row[1].ko]))
   for (const state of data.states) {
     assert.ok(state.relation === null || ['복속', '보좌', '독립'].includes(state.relation), state.id)
-    assert.equal(state.relation, relations.get(state.name) ?? null, state.id)
+    assert.equal(state.relation, relations.get(state.historicalName) ?? null, state.id)
   }
 })
 
@@ -417,7 +417,7 @@ test('all map states project founding, government, foreign relations and dated a
     assert.equal(state.foreignRelations, row[8].ko, state.id)
     assert.ok(state.chronology.length > 0, state.id)
     for (const event of state.chronology) {
-      assert.ok(event.text.includes(state.name), state.id)
+      assert.ok(event.text.includes(state.historicalName) || event.text.includes(state.name), state.id)
       assert.ok(prose.has(event.text), state.id)
       assert.equal(event.sourceRoute, `/world/Century-Annals#${event.year}년`, state.id)
     }

@@ -19,7 +19,8 @@ for (const state of stateCatalog) {
   const tier = tierOf(state.power)
   stateRows.push([
     { text: state.name, link: stateRoute(state.slug) },
-    state.capital || state.origin,
+    state.currentHegemon.name,
+    state.currentBase.name,
     state.government,
     { text: tier, badge: tierBadge[tier] },
     state.ruler,
@@ -47,7 +48,7 @@ export default function StatesPage() {
         <h1 className="text-2xl font-extrabold text-gray-800">서울 십육국 <span className="wiki-canon-badge">정본</span></h1>
         <p className="mt-1 text-sm text-gray-500">국명을 누르면 해당 국가의 기원·정부형태·국력·수장·형성 인과로 이동합니다.</p>
       </div>
-      <div className="mt-4 min-w-0"><h2 className="mb-2 border-b-2 border-gray-200 pb-1.5 text-lg font-bold text-gray-700">십육국 표</h2><SortableTable headers={['국명', '중심역', '형태', '강국', '수장']} rows={stateRows} /></div>
+      <div className="mt-4 min-w-0"><h2 className="mb-2 border-b-2 border-gray-200 pb-1.5 text-lg font-bold text-gray-700">십육국 표</h2><SortableTable headers={['전신국·봉신', '현재 종주 소속', '현재 거점', '형태', '강국', '수장']} rows={stateRows} /></div>
       <NavBox {...navBox} />
     </div>
   )

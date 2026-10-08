@@ -58,6 +58,22 @@
     },
     {
       "kind": "paragraph",
+      "anchor": "current-affiliation",
+      "text": {
+        "ko": "현재 규격맹에는 규격맹·태욱그룹·중앙정보부·성하그룹·신내운수·흰십자단이 속한다. 대한민국정부에는 대한민국정부·수문국·동방사·환적국·여의도출자연합회·아관사·정동노총이 속한다. 명부교회·안국총림·명동대교구는 종교 연합을 이룬다.",
+        "en": "The Gauge comprises the Gauge, Taeuk Group, Central Intelligence Department, Seongha Group, Sinnae Transport, and White Cross. The Government of the Republic of Korea comprises the Government, Sluice, Eastern Command, Junction, Yeouido Investors’ Association, Achasan Gate, and Jeongdong Federation. The Myeongbu Church, Anguk Order, and Myeongdong Archdiocese form the religious union."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "current-s08",
+      "text": {
+        "ko": "중앙기술보존원에서 이어진 중앙정보부는 남산타워에 거점을 둔 작은 AI 기술 봉건국이다. AI 아바타 오해린이 봉건 수장을 맡는다. 기존 관할 36개 동과 23개 역은 규격맹에 속하며, 흑석 수도 보유와 각 지역·역의 직접 보유자는 이어진다.",
+        "en": "The Central Intelligence Department continues the Central Technology Preservation Office as a small AI-technology feudal vassal based at Namsan Tower. Its feudal head is the AI avatar O Haerin. Its former jurisdiction of 36 districts and 23 stations belongs to the Gauge, while the Heukseok capital holding and the immediate local and station holders continue."
+      }
+    },
+    {
+      "kind": "paragraph",
       "anchor": "p-2",
       "text": {
         "en": "The Sluice made Yangpyeong Station its capital, the Gauge made Guro Station its capital, and the Taeuk Group made Yangjae Station its capital.",
@@ -892,8 +908,8 @@
           "ko": "성하그룹(S11)은 강남 본사 하나를 지키며 속국도 독립 무력도 없다."
         },
         {
-          "en": "The Central Technology Preservation Office (S08) kept the one copying seat at Heukseok and had neither vassals nor an independent force.",
-          "ko": "중앙기술보존원(S08)은 흑석 필사 하나를 지키며 속국도 독립 무력도 없다."
+          "en": "The Central Intelligence Department (S08) is a small AI-technology feudal vassal of the Gauge based at Namsan Tower, headed by the AI avatar O Haerin.",
+          "ko": "중앙정보부(S08)는 남산타워를 거점으로 AI 기술을 사용하는 작은 봉건국이며 규격맹에 속한다. 오해린이 AI 아바타 수장으로 다스린다."
         },
         {
         "en": "The Jeongdong Federation (S16) kept its capital and strike roll at City Hall Station. The Government Complex Seoul guard took priority for security and passage there. The station was shared by S06 and S16, while the surrounding dong remained under S06. S16 had neither vassals nor an independent force.",
@@ -2289,6 +2305,224 @@
     }
   ],
   "data": {
+    "currentAffiliation": {
+      "hegemons": [
+        {
+          "kind": "state",
+          "stateId": "S02",
+          "name": "규격맹",
+          "memberStateIds": [
+            "S02",
+            "S03",
+            "S08",
+            "S11",
+            "S12",
+            "S13"
+          ]
+        },
+        {
+          "kind": "state",
+          "stateId": "S06",
+          "name": "대한민국정부",
+          "memberStateIds": [
+            "S01",
+            "S05",
+            "S06",
+            "S07",
+            "S09",
+            "S14",
+            "S16"
+          ]
+        },
+        {
+          "kind": "union",
+          "name": "종교 연합",
+          "memberStateIds": [
+            "S04",
+            "S10",
+            "S15"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "stateId": "S01",
+          "historicalName": "수문국",
+          "currentName": "수문국",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "양평",
+            "name": "양평"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S02",
+          "historicalName": "규격맹",
+          "currentName": "규격맹",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "Guro",
+            "name": "구로"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S03",
+          "historicalName": "태욱그룹",
+          "currentName": "태욱그룹",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "양재",
+            "name": "양재"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S04",
+          "historicalName": "명부교회",
+          "currentName": "명부교회",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "삼성",
+            "name": "삼성"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S05",
+          "historicalName": "동방사",
+          "currentName": "동방사",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "암사",
+            "name": "암사"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S06",
+          "historicalName": "대한민국정부",
+          "currentName": "대한민국정부",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "광화문",
+            "name": "광화문"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S07",
+          "historicalName": "환적국",
+          "currentName": "환적국",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "용산",
+            "name": "용산"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S08",
+          "historicalName": "중앙기술보존원",
+          "currentName": "중앙정보부",
+          "currentBase": {
+            "kind": "facility",
+            "landmarkId": "n-seoul-tower",
+            "name": "남산타워"
+          },
+          "currentExclusiveDistricts": "none"
+        },
+        {
+          "stateId": "S09",
+          "historicalName": "여의도출자연합회",
+          "currentName": "여의도출자연합회",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "여의도",
+            "name": "여의도"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S10",
+          "historicalName": "안국총림",
+          "currentName": "안국총림",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "안국",
+            "name": "안국"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S11",
+          "historicalName": "성하그룹",
+          "currentName": "성하그룹",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "강남",
+            "name": "강남"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S12",
+          "historicalName": "신내운수",
+          "currentName": "신내운수",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "신내",
+            "name": "신내"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S13",
+          "historicalName": "흰십자단",
+          "currentName": "흰십자단",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "제기동",
+            "name": "제기동"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S14",
+          "historicalName": "아관사",
+          "currentName": "아관사",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "구의",
+            "name": "구의"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S15",
+          "historicalName": "명동대교구",
+          "currentName": "명동대교구",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "명동",
+            "name": "명동"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        },
+        {
+          "stateId": "S16",
+          "historicalName": "정동노총",
+          "currentName": "정동노총",
+          "currentBase": {
+            "kind": "station",
+            "stationId": "수서",
+            "name": "수서"
+          },
+          "currentExclusiveDistricts": "immediate-holdings"
+        }
+      ]
+    },
     "governance": "영지 획득 가능 행정 권역: 2026-07-01 행정동 경계 adm_cd2의 sido 11(서울), 41(경기), 51(강원), 43(충북), 44(충남), 30(대전), 36(세종). 기준: lore/regions/sources/selection.json의 admdongkor-20260701-7360288, SHA-256 c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f. 획득 가능 범위는 2126 점유·개인 소유·역 연결과 별개다. 무소속 인물의 독립 취득은 새 국가 성립이며 기존 국가의 영지 수여에는 선행 국가 소속이 필요하다. 개막 S01–S16을 보존하고 이후 국가의 세이브별 영구 식별자는 저장·불러오기 동안 유지하며 국명·성립 순서와 구분한다."
   }
 }

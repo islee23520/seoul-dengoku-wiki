@@ -18,6 +18,168 @@
         "data": {
           "type": "object",
           "properties": {
+            "currentAffiliation": {
+              "type": "object",
+              "required": [
+                "hegemons",
+                "states"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "hegemons": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "required": [
+                          "kind",
+                          "stateId",
+                          "name",
+                          "memberStateIds"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "kind": {
+                            "const": "state"
+                          },
+                          "stateId": {
+                            "type": "string",
+                            "pattern": "^S(?:0[1-9]|1[0-6])$"
+                          },
+                          "name": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "memberStateIds": {
+                            "type": "array",
+                            "minItems": 1,
+                            "uniqueItems": true,
+                            "items": {
+                              "type": "string",
+                              "pattern": "^S(?:0[1-9]|1[0-6])$"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "required": [
+                          "kind",
+                          "name",
+                          "memberStateIds"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "kind": {
+                            "const": "union"
+                          },
+                          "name": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "memberStateIds": {
+                            "type": "array",
+                            "minItems": 1,
+                            "uniqueItems": true,
+                            "items": {
+                              "type": "string",
+                              "pattern": "^S(?:0[1-9]|1[0-6])$"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "states": {
+                  "type": "array",
+                  "minItems": 16,
+                  "maxItems": 16,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "stateId",
+                      "historicalName",
+                      "currentName",
+                      "currentBase",
+                      "currentExclusiveDistricts"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "stateId": {
+                        "type": "string",
+                        "pattern": "^S(?:0[1-9]|1[0-6])$"
+                      },
+                      "historicalName": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "currentName": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "currentExclusiveDistricts": {
+                        "enum": [
+                          "none",
+                          "immediate-holdings"
+                        ]
+                      },
+                      "currentBase": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "required": [
+                              "kind",
+                              "stationId",
+                              "name"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                              "kind": {
+                                "const": "station"
+                              },
+                              "stationId": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "name": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "required": [
+                              "kind",
+                              "landmarkId",
+                              "name"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                              "kind": {
+                                "const": "facility"
+                              },
+                              "landmarkId": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "name": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "governance": {
               "type": "string",
               "minLength": 1
