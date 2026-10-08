@@ -12,6 +12,15 @@ import { importDiasporaFamilies, loadCastFamilyTrees, projectFamilyTree, validat
 
 const sourceRefs = [{ path: 'lore/characters/Core-Characters.json' }]
 
+test('preserves role-only mappings without inventing historical clans', async () => {
+  const decisions = JSON.parse(await readFile(new URL('../lore/name-pools/cast-family-role-decisions.json', import.meta.url), 'utf8'))
+  const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
+  for (const mapping of decisions.ownerAuthoredRoleOnly) {
+    assert.equal(graph.edges.find(edge => edge.id === mapping.edgeId).parentRole, mapping.parentRole)
+    assert.equal(graph.nodes.find(node => node.id === mapping.from).lineage, undefined)
+  }
+})
+
 test('propagates Jinyang Jeong through two existing single-parent ancestor edges', async () => {
   const graph = await loadCastFamilyTrees(new URL('../lore/', import.meta.url).pathname, registry)
   const hang = JSON.parse(await readFile(new URL('../lore/name-pools/cast-hangnyeol.json', import.meta.url), 'utf8'))
@@ -49,7 +58,7 @@ test('source-bound corrections preserve all nineteen roles through the real load
     assert.ok(correction.sourceRefs.length)
   }
   assert.equal(graph.edges.filter(edge => edge.type === 'biological').length, 5010)
-  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 3253)
+  assert.equal(graph.edges.filter(edge => edge.parentRole).length, 4606)
 })
 
 
