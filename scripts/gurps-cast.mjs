@@ -276,7 +276,6 @@ export const LEADER_REVIEW = {
   K219: { q: 'L09', choice: 'C', add: [{ quote: '북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다.', skill: 'electronicsOp', tier: 'C' }] },
   K245: { q: 'L10', choice: 'B', add: [
     { quote: '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 신도 명부 줄로 옮겼다.', skill: 'administration' },
-    { quote: '행렬이 보국문에 닿기 전, 백온은 명부함을 열어 빈 칸을 시민권 줄로 옮겼다.', skill: 'administration' },
   ] },
   K271: { q: 'L11', choice: 'B', add: [
     { quote: '원로 사제.', skill: 'breathControl', tier: 'B', ability: false },
