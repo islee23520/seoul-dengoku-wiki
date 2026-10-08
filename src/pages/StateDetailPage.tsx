@@ -3,7 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { stateCatalog } from '../generated/stateCatalog'
 import { worldRegionMapRoute } from '../wikiRouting'
 
-type StateDetails = { id: string; relation: string | null; religion: string; vassals: string; founded: string; foreignRelations: string; chronology: Array<{ year: number; text: string; sourceRoute: string }> }
+type StateDetails = { currentExclusiveDistrictCount: number; id: string; relation: string | null; religion: string; vassals: string; founded: string; foreignRelations: string; chronology: Array<{ year: number; text: string; sourceRoute: string }> }
 type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string }
 type Territory = { states: StateDetails[]; vassals: Vassal[]; regions: Array<{ polities: string[] }> }
 
@@ -40,10 +40,13 @@ export default function StateDetailPage() {
       <dl className="state-detail-grid">
         <div><dt>수장</dt><dd>{state.ruler}</dd></div>
         <div><dt>기원</dt><dd>{state.origin}</dd></div>
-        <div><dt>중심역</dt><dd>{state.capitalName}</dd></div>
+        <div><dt>역사적 국명</dt><dd>{state.historicalName}</dd></div>
+        <div><dt>현재 종주 소속</dt><dd>{state.currentHegemon.name}</dd></div>
+        <div><dt>현재 거점</dt><dd>{state.currentBase.name}</dd></div>
+        <div><dt>역사적 수도 보유</dt><dd>{state.capitalName}</dd></div>
         <div><dt>정부 형태</dt><dd>{state.government}</dd></div>
         <div><dt>국력</dt><dd>{state.power}</dd></div>
-        {details && <><div><dt>국호를 정한 해</dt><dd>{details.founded}</dd></div><div><dt>정부와의 관계</dt><dd>{details.relation ?? '해당 없음'}</dd></div><div><dt>국교</dt><dd>{details.religion}</dd></div><div><dt>서울 지표 권역</dt><dd>{seoulRegions}개 동</dd></div></>}
+        {details && <><div><dt>국호를 정한 해</dt><dd>{details.founded}</dd></div><div><dt>정부와의 관계</dt><dd>{details.relation ?? '해당 없음'}</dd></div><div><dt>국교</dt><dd>{details.religion}</dd></div><div><dt>역사적·직접 관할</dt><dd>{seoulRegions}개 동</dd></div></>}
       </dl>
       <section className="wiki-prose">
         <h2 id="형성-인과">형성 인과</h2>
@@ -51,6 +54,7 @@ export default function StateDetailPage() {
         {failed && <p role="alert">국가 영토와 연대기 자료를 불러오지 못했습니다.</p>}
         {!failed && !details && <p role="status">국가 영토와 연대기를 불러오고 있습니다.</p>}
         {details && <>
+          <h2>현재 소속과 관할</h2><p>{state.name}의 종주 소속은 {state.currentHegemon.name}이다. 현재 독점 관할은 {details.currentExclusiveDistrictCount}개 동이다.</p>
           <h2>국가 간 관계</h2><p>{details.foreignRelations}</p>
           <h2>서울 밖 속국</h2>
           {vassals.length ? <ul>{vassals.map((vassal) => <li key={vassal.name}>{vassal.name} · {vassal.city} · {vassal.founded} · {vassal.duty}</li>)}</ul> : <p>등록된 속국 없음</p>}

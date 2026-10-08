@@ -1028,10 +1028,6 @@
           "route": "/world/Century-Annals"
         },
         {
-          "title": "서울 십육국",
-          "route": "/world/Sixteen-States"
-        },
-        {
           "title": "신앙과 문화의 분열",
           "route": "/world/Faith-Culture-Schism"
         },
@@ -2079,6 +2075,20 @@
       "id": "S01",
       "name": "수문국",
       "slug": "s01",
+      "historicalName": "수문국",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "양평",
+        "name": "양평",
+        "x": 347.21,
+        "y": 629.33
+      },
+      "currentExclusiveDistrictCount": 34,
       "origin": "급수계약정",
       "government": "물 계약 가문 계약 회의의 선출 군주, 수문가 최다 당선",
       "power": "강국",
@@ -2197,6 +2207,20 @@
       "id": "S02",
       "name": "규격맹",
       "slug": "s02",
+      "historicalName": "규격맹",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "규격맹",
+        "stateId": "S02"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "Guro",
+        "name": "구로",
+        "x": 336.35,
+        "y": 709.12
+      },
+      "currentExclusiveDistrictCount": 26,
       "origin": "규격동맹",
       "government": "공방 장인 길드 평의회, 스승에서 제자로 잇는 도제 계승",
       "power": "강국",
@@ -2300,6 +2324,20 @@
       "id": "S03",
       "name": "태욱그룹",
       "slug": "s03",
+      "historicalName": "태욱그룹",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "규격맹",
+        "stateId": "S02"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "양재",
+        "name": "양재",
+        "x": 770.78,
+        "y": 780.19
+      },
+      "currentExclusiveDistrictCount": 22,
       "origin": "양재기공주식회사",
       "government": "정씨 회장가 세습, 회장 정서온",
       "power": "강국",
@@ -2383,6 +2421,19 @@
       "id": "S04",
       "name": "명부교회",
       "slug": "s04",
+      "historicalName": "명부교회",
+      "currentHegemon": {
+        "kind": "union",
+        "name": "종교 연합"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "삼성",
+        "name": "삼성",
+        "x": 854.35,
+        "y": 692.61
+      },
+      "currentExclusiveDistrictCount": 20,
       "origin": "설교명부정",
       "government": "당회장 목사직 부자 세습, 오씨",
       "power": "소국",
@@ -2431,6 +2482,20 @@
       "id": "S05",
       "name": "동방사",
       "slug": "s05",
+      "historicalName": "동방사",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "암사",
+        "name": "암사",
+        "x": 1039.55,
+        "y": 544.86
+      },
+      "currentExclusiveDistrictCount": 19,
       "origin": "호위보호정",
       "government": "군벌 가문 배씨 세습 사령관",
       "power": "강국",
@@ -2539,6 +2604,20 @@
       "id": "S06",
       "name": "대한민국정부",
       "slug": "s06",
+      "historicalName": "대한민국정부",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "광화문",
+        "name": "광화문",
+        "x": 608.35,
+        "y": 465.38
+      },
+      "currentExclusiveDistrictCount": 35,
       "origin": "대한민국정부",
       "government": "정부서울청사 당직 가문들의 선거 의례로 뽑는 대통령",
       "power": "강국",
@@ -2632,6 +2711,20 @@
       "id": "S07",
       "name": "환적국",
       "slug": "s07",
+      "historicalName": "환적국",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "용산",
+        "name": "용산",
+        "x": 572.91,
+        "y": 615.16
+      },
+      "currentExclusiveDistrictCount": 16,
       "origin": "선로후계정",
       "government": "선로 가문 박씨 장자 세습 봉건국",
       "power": "강국",
@@ -2718,8 +2811,22 @@
     },
     {
       "id": "S08",
-      "name": "중앙기술보존원",
+      "name": "중앙정보부",
       "slug": "s08",
+      "historicalName": "중앙기술보존원",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "규격맹",
+        "stateId": "S02"
+      },
+      "currentBase": {
+        "kind": "facility",
+        "landmarkId": "n-seoul-tower",
+        "name": "남산타워",
+        "x": 640.59,
+        "y": 538.8
+      },
+      "currentExclusiveDistrictCount": 0,
       "origin": "교헌필사정",
       "government": "시험으로 선출하는 원장",
       "power": "소국",
@@ -2730,8 +2837,8 @@
       "vassals": "없음",
       "religion": "없음",
       "foreignRelations": "장경종에 겉으로만 기대며 국교를 두지 않음",
-      "labelX": 524.21,
-      "labelY": 891.15,
+      "labelX": 640.59,
+      "labelY": 538.8,
       "capitalStationId": "흑석",
       "capitalRegionId": "region:1159060500",
       "capitalX": 569.95,
@@ -2783,6 +2890,20 @@
       "id": "S09",
       "name": "여의도출자연합회",
       "slug": "s09",
+      "historicalName": "여의도출자연합회",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "여의도",
+        "name": "여의도",
+        "x": 456.58,
+        "y": 644.29
+      },
+      "currentExclusiveDistrictCount": 26,
       "origin": "여의도출자연합회",
       "government": "출자 가문 평의회, 의장 선출, 공용 화폐 발행",
       "power": "약국",
@@ -2856,6 +2977,19 @@
       "id": "S10",
       "name": "안국총림",
       "slug": "s10",
+      "historicalName": "안국총림",
+      "currentHegemon": {
+        "kind": "union",
+        "name": "종교 연합"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "안국",
+        "name": "안국",
+        "x": 635.01,
+        "y": 446.76
+      },
+      "currentExclusiveDistrictCount": 52,
       "origin": "승가구휼정",
       "government": "산중총회 추대 방장",
       "power": "소국",
@@ -2924,6 +3058,20 @@
       "id": "S11",
       "name": "성하그룹",
       "slug": "s11",
+      "historicalName": "성하그룹",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "규격맹",
+        "stateId": "S02"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "강남",
+        "name": "강남",
+        "x": 752.13,
+        "y": 731.32
+      },
+      "currentExclusiveDistrictCount": 36,
       "origin": "서초전산그룹",
       "government": "이씨 가문 세습 회장",
       "power": "소국",
@@ -2987,6 +3135,20 @@
       "id": "S12",
       "name": "신내운수",
       "slug": "s12",
+      "historicalName": "신내운수",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "규격맹",
+        "stateId": "S02"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "신내",
+        "name": "신내",
+        "x": 973.31,
+        "y": 319.81
+      },
+      "currentExclusiveDistrictCount": 16,
       "origin": "중립호송시",
       "government": "사장 가문 세습, 중립 가훈",
       "power": "약국",
@@ -3070,6 +3232,20 @@
       "id": "S13",
       "name": "흰십자단",
       "slug": "s13",
+      "historicalName": "흰십자단",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "규격맹",
+        "stateId": "S02"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "제기동",
+        "name": "제기동",
+        "x": 773.37,
+        "y": 441.9
+      },
+      "currentExclusiveDistrictCount": 15,
       "origin": "의약중립맹",
       "government": "의사 서열 도제, 스승이 후계 지명",
       "power": "약국",
@@ -3138,6 +3314,20 @@
       "id": "S14",
       "name": "아관사",
       "slug": "s14",
+      "historicalName": "아관사",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "구의",
+        "name": "구의",
+        "x": 920.96,
+        "y": 590.94
+      },
+      "currentExclusiveDistrictCount": 15,
       "origin": "관문군정",
       "government": "관문사령관과 구의수비대장 이원 체제",
       "power": "약국",
@@ -3221,6 +3411,19 @@
       "id": "S15",
       "name": "명동대교구",
       "slug": "s15",
+      "historicalName": "명동대교구",
+      "currentHegemon": {
+        "kind": "union",
+        "name": "종교 연합"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "명동",
+        "name": "명동",
+        "x": 635.28,
+        "y": 504.11
+      },
+      "currentExclusiveDistrictCount": 27,
       "origin": "본당인준정",
       "government": "사제단 비밀 선출 대주교",
       "power": "소국",
@@ -3289,6 +3492,20 @@
       "id": "S16",
       "name": "정동노총",
       "slug": "s16",
+      "historicalName": "정동노총",
+      "currentHegemon": {
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
+      },
+      "currentBase": {
+        "kind": "station",
+        "stationId": "수서",
+        "name": "수서",
+        "x": 964.96,
+        "y": 770.22
+      },
+      "currentExclusiveDistrictCount": 32,
       "origin": "정동노동총연맹",
       "government": "조합원 직선 위원장",
       "power": "소국",

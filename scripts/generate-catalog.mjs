@@ -29,6 +29,7 @@ import { loadCastBirthdays } from './cast-birthdays.mjs'
 import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './cast-household-relations.mjs'
 import { loadCastFamilyTrees, projectFamilyTree } from './cast-family-trees.mjs'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
+import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
@@ -338,6 +339,7 @@ if (!stateSource || !officesSource) throw new Error('E_STATE_OR_OFFICE_PAGE_MISS
 if (!pagesBySlug.get('Sixteen-States')?.value.source?.refs?.includes('lore/factions/Sixteen-States.md')) throw new Error('E_STATE_CANON_PROVENANCE')
 const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
 const stateRows = parseStateRows(stateSource)
+const affiliations = currentAffiliations(pagesBySlug.get('Sixteen-States').value.data.currentAffiliation, stateRows)
 const coreCharacters = renderedBySlug.get('Core-Characters')
 const stateIdByName = new Map(stateRows.flatMap((row) => [[row.name, row.id], [row.origin, row.id]]))
 const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
@@ -347,7 +349,11 @@ if (tiersByState.size !== 16) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByS
 const stateCatalog = stateRows.map((row) => ({
   slug: row.id.toLowerCase(),
   id: row.id,
-  name: row.name,
+  name: affiliations.get(row.id).currentName,
+  historicalName: row.name,
+  currentHegemon: affiliations.get(row.id).currentHegemon,
+  currentBase: affiliations.get(row.id).currentBase,
+  currentExclusiveDistricts: affiliations.get(row.id).currentExclusiveDistricts,
   origin: row.origin,
   government: row.government,
   power: row.power,
@@ -358,7 +364,7 @@ const stateCatalog = stateRows.map((row) => ({
   capital: row.capital,
   capitalName: row.capital,
 }))
-await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type StateRecord = { slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
+await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { historicalName: string; currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
@@ -542,6 +548,7 @@ const mapStations = sourceMapStations.filter((station) => canonicalStationId(sta
     },
   }
 })
+for (const station of mapStations) station.control.currentHegemons = hegemonsForHolders(station.control.polityIds, affiliations)
 const regionalBindings = JSON.parse(await readFile(resolve(loreRoot, 'places/regional-station-bindings.json'), 'utf8'))
 const officialRegionalGraph = regionalLineGraph(regularLineSource, regionalBindings, mapStations)
 await writeFile(resolve(publicRoot, 'regular-regional-connections.json'), JSON.stringify({
@@ -584,7 +591,7 @@ const projectedEdges = regularGraph.edges.map((edge) => ({ a: edge.a, b: edge.b,
 const mapEdges = projectedEdges.filter((edge, index) => edge.a !== edge.b && projectedEdges.findIndex((other) => other.a === edge.a && other.b === edge.b && other.lineIds.join(',') === edge.lineIds.join(',')) === index).map((edge) => {
   const id = `segment:${edge.a}~${edge.b}`
   const control = segmentControl(id, stationControlById.get(edge.a), stationControlById.get(edge.b))
-  return { ...edge, id, control, passage2126: passage2126(edge, control) }
+  return { ...edge, id, control: { ...control, currentHegemons: hegemonsForHolders(control.polityIds, affiliations) }, passage2126: passage2126(edge, control) }
 })
 for (const segmentId of segmentControlOverrides.keys()) if (!mapEdges.some((edge) => edge.id === segmentId)) throw new Error(`E_SEGMENT_CONTROL_UNKNOWN_SEGMENT:${segmentId}`)
 for (const segmentId of passageDecisions.keys()) if (!mapEdges.some((edge) => edge.id === segmentId && crossesHan(edge.a, edge.b))) throw new Error(`E_PASSAGE_DECISION_NOT_HAN_CROSSING:${segmentId}`)
@@ -608,20 +615,32 @@ const polygonMetrics = (points) => {
     y: Number((weightedY / (3 * twiceArea)).toFixed(2)),
   }
 }
+const landmarkLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/landmark-roles.json'), 'utf8'))
+const projectedLandmarks = landmarkLedger.sites.map((site) => {
+  const region = regionAtlas.regions.find((entry) => entry.id === site.regionId)
+  if (!region || !stateNameById.has(site.holderId)) throw new Error(`E_LANDMARK_OWNER:${site.id}`)
+  const regionControl = surfaceHolders(regionContentById.get(region.id))
+  const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [site.lon, site.lat])
+  const [x, y] = mapPoint([east, north])
+  if (!pointInPolygon([x, y], simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint))) throw new Error(`E_LANDMARK_REGION:${site.id}`)
+  if (site.connectionStationId && !mapStations.some((station) => station.id === site.connectionStationId)) throw new Error(`E_LANDMARK_STATION:${site.id}`)
+  return { ...site, x, y, surfaceHolderId: regionControl[0], isEnclave: regionControl[0] !== site.holderId }
+})
+if (new Set(projectedLandmarks.map((site) => site.id)).size !== projectedLandmarks.length) throw new Error('E_LANDMARK_DUPLICATE')
 const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([id, name]) => {
   const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
   const details = stateDetails.get(id)
-  if (!details || details.name !== name) throw new Error(`E_STATE_DETAIL_IDENTITY:${id}`)
+  if (!details || details.name !== state.historicalName) throw new Error(`E_STATE_DETAIL_IDENTITY:${id}`)
+  const currentBase = currentBasePoint(state.currentBase, mapStations, projectedLandmarks)
   const candidates = regionAtlas.regions
-    .filter((region) => surfaceHolders(region.content).length === 1 && surfaceHolders(region.content)[0] === id)
+    .filter((region) => state.currentExclusiveDistricts !== 'none' && surfaceHolders(regionContentById.get(region.id)).length === 1 && surfaceHolders(regionContentById.get(region.id))[0] === id)
     .map((region) => {
       const points = simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint)
       return { id: region.id, ...polygonMetrics(points) }
     })
     .sort((left, right) => right.area - left.area || left.id.localeCompare(right.id))
-  const label = candidates[0]
-  if (!label) throw new Error(`E_TERRITORY_LABEL_NOT_FOUND:${id}:${name}`)
+  const label = territoryLabel(candidates, currentBase)
   const capitalStationId = stationIdByName.get(capitalNameByState.get(id))
   const capital = mapStations.find((station) => station.id === capitalStationId)
   if (!capital) throw new Error(`E_CAPITAL_STATION_COORDINATE:${id}`)
@@ -631,10 +650,14 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     id,
     name,
     slug: state.slug,
+    historicalName: state.historicalName,
+    currentHegemon: state.currentHegemon,
+    currentBase,
+    currentExclusiveDistrictCount: candidates.length,
     origin: state.origin,
     government: state.government,
     power: state.power,
-    relation: relationByStateName.get(name) ?? null,
+    relation: relationByStateName.get(state.historicalName) ?? null,
     ruler: state.ruler,
     cause: state.cause,
     founded: details.founded,
@@ -723,18 +746,6 @@ const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
 })
 if (vassals.length !== 13 || vassals.some((vassal) => !vassal.anchor || !officialLineData.lines[vassal.lineId])) throw new Error('E_VASSAL_LINE_ANCHOR')
 
-const landmarkLedger = JSON.parse(await readFile(resolve(loreRoot, 'places/landmark-roles.json'), 'utf8'))
-const projectedLandmarks = landmarkLedger.sites.map((site) => {
-  const region = regionAtlas.regions.find((entry) => entry.id === site.regionId)
-  if (!region || !stateNameById.has(site.holderId)) throw new Error(`E_LANDMARK_OWNER:${site.id}`)
-  const regionControl = surfaceHolders(regionContentById.get(region.id))
-  const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [site.lon, site.lat])
-  const [x, y] = mapPoint([east, north])
-  if (!pointInPolygon([x, y], simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint))) throw new Error(`E_LANDMARK_REGION:${site.id}`)
-  if (site.connectionStationId && !mapStations.some((station) => station.id === site.connectionStationId)) throw new Error(`E_LANDMARK_STATION:${site.id}`)
-  return { ...site, x, y, surfaceHolderId: regionControl[0], isEnclave: regionControl[0] !== site.holderId }
-})
-if (new Set(projectedLandmarks.map((site) => site.id)).size !== projectedLandmarks.length) throw new Error('E_LANDMARK_DUPLICATE')
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
   epoch: regionAtlas.fictional_epoch,
@@ -760,6 +771,7 @@ const openingTerritories = {
       district: region.district_name,
       path: geometryPath(region.map_geometry),
       polities,
+      currentHegemons: hegemonsForHolders(polities, affiliations),
       status: content.territory?.status ?? (polities.length === 0 ? 'vacant' : polities.length === 1 ? 'held' : 'contested'),
       openingState: normalizePublicNames(content.opening_state),
       summary: normalizePublicNames(content.summary),
@@ -800,7 +812,7 @@ for (const block of centuryAnnalsDocument.content) {
   if (eventYear === null || block.kind !== 'paragraph') continue
   const text = koText(block.text.ko)
   for (const state of territoryStates) {
-    if (text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
+    if (text.includes(state.historicalName) || text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
   }
 }
 for (const state of territoryStates) {
