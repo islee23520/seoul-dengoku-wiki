@@ -124,7 +124,6 @@ npm run build
 
 ## task20 원천에서 옮긴 집필 지시
 
-- 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.
 - `XT-DATED-01` (`/data/atlas/theaters/0/opening_event/timeline_placement/ko`): 2126년 당일의 세 번째 급수계약과 병행하도록 제안하는 창작 사건이다.
 - `XT-DATED-04` (`/data/atlas/theaters/1/opening_event/timeline_placement/ko`): 2126년 당일의 세 번째 급수계약과 병행하도록 제안하는 창작 사건이다.
 - `XT-DATED-08` (`/data/atlas/theaters/2/explicit_unknowns/0/ko`): 부산의 연안 운항, 제주와 남해안의 간접 교역, 2118~2119년 대마도 항구 한 곳의 원정은 창작 역사로 둔다. 세 갈래 중계와 각 항구의 일대일 대응·정확한 해로·운항 시간은 미정이다.
