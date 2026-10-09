@@ -1,0 +1,508 @@
+{
+  "clanId": "c5ec-c758-b839-4f59",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K113",
+      "personId": "K113",
+      "kind": "person",
+      "name": "여민우",
+      "birthDate": "2071-01-17",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K113"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 암호화 정비일지 발견 증인 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-여민우-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0114",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K142",
+      "personId": "K142",
+      "kind": "person",
+      "name": "여서하",
+      "birthDate": "2071-01-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K142"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 검은 배차표 조사 서기 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-여서하-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0143",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K113-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "여승영",
+      "lineage": {
+        "surname": "여",
+        "bongwan": "의령",
+        "clan": "c5ec-c758-b839-4f59"
+      },
+      "birthDate": "2041-01-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "여승영은 신정 차량기지에서 정비일지 봉인·발견 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-여민우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K113-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "여승윤",
+      "lineage": {
+        "surname": "여",
+        "bongwan": "의령",
+        "clan": "c5ec-c758-b839-4f59"
+      },
+      "birthDate": "2011-01-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "여승윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-여민우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K113-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한승욱",
+      "birthDate": "2041-01-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "한승욱은 신정 차량기지에서 정비일지 봉인·발견 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-여민우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K113-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승섭",
+      "birthDate": "2011-01-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강승섭은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-여민우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K142-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "여승우",
+      "lineage": {
+        "surname": "여",
+        "bongwan": "의령",
+        "clan": "c5ec-c758-b839-4f59"
+      },
+      "birthDate": "2041-01-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "여승우는 신내 환승 당직에서 배차 조사 일지·증언 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-여서하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K142-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "여승경",
+      "lineage": {
+        "surname": "여",
+        "bongwan": "의령",
+        "clan": "c5ec-c758-b839-4f59"
+      },
+      "birthDate": "2011-01-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "여승경은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-여서하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K142-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조승욱",
+      "birthDate": "2041-01-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "조승욱은 신내 환승 당직에서 배차 조사 일지·증언 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-여서하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K142-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김현진",
+      "birthDate": "2011-01-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김현진은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-여서하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K113-P-01:K113:biological",
+      "from": "FH-K113-P-01",
+      "to": "K113",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K113-P-02:FH-K113-P-01:biological",
+      "from": "FH-K113-P-02",
+      "to": "FH-K113-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K113-M-01:K113:biological",
+      "from": "FH-K113-M-01",
+      "to": "K113",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K113-M-02:FH-K113-M-01:biological",
+      "from": "FH-K113-M-02",
+      "to": "FH-K113-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-여민우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K142-P-01:K142:biological",
+      "from": "FH-K142-P-01",
+      "to": "K142",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K142-P-02:FH-K142-P-01:biological",
+      "from": "FH-K142-P-02",
+      "to": "FH-K142-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K142-M-01:K142:biological",
+      "from": "FH-K142-M-01",
+      "to": "K142",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K142-M-02:FH-K142-M-01:biological",
+      "from": "FH-K142-M-02",
+      "to": "FH-K142-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-여서하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

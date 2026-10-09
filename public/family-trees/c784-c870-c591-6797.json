@@ -1,0 +1,1347 @@
+{
+  "clanId": "c784-c870-c591-6797",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K036",
+      "personId": "K036",
+      "kind": "person",
+      "name": "임채원",
+      "birthDate": "2096-11-16",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K036"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0036",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K086",
+      "personId": "K086",
+      "kind": "person",
+      "name": "임하준",
+      "birthDate": "2072-12-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K086"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0086",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K087",
+      "personId": "K087",
+      "kind": "person",
+      "name": "임초원",
+      "birthDate": "2100-06-11",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K087"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임초원-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준이 망치의 반을 넘긴 것은 당회 후계가 아니라 기술 전수였다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임초원-p2"
+            }
+          ]
+        }
+      ],
+      "generationException": {
+        "reason": "확정 생년월일과 기존 임하준→임초원 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "/content/40"
+          }
+        ]
+      },
+      "detailRoute": "/people/person-0087",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K089",
+      "personId": "K089",
+      "kind": "person",
+      "name": "박세린",
+      "birthDate": "2093-07-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K089"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0090",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K552",
+      "personId": "K552",
+      "kind": "person",
+      "name": "임서나",
+      "birthDate": "2095-04-08",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K552"
+        },
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0552",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K941",
+      "personId": "K941",
+      "kind": "person",
+      "name": "임돌우",
+      "birthDate": "2067-09-06",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K941"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생업: 위조 사본 폐기·원본 보관",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-임돌우-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0941",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K036-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승수",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2066-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "임승수는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K036-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승은",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2036-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "임승은은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K036-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승연",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2006-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임승연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K036-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승정",
+      "birthDate": "2066-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "박승정은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K036-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이승우",
+      "birthDate": "2036-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "이승우는 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K036-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최승정",
+      "birthDate": "2006-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최승정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-임채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승섭",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2042-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "임승섭은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승성",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2012-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임승성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최승온",
+      "birthDate": "2042-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "최승온은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승리",
+      "birthDate": "2012-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정승리는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "generationException": {
+        "reason": "명시된 친족 관계의 두 가계를 연결하되 각 가계의 확정 생일에서 파생된 날짜를 보존한다. 공동 조상의 생일은 더 이른 자녀를 기준으로 30년 앞서 저작한다.",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "관계-원장-table3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K552-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임태재",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2065-04-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "임태재는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K552-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임태찬",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2035-04-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "임태찬은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K552-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "임태혁",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2005-04-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임태혁은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K552-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태온",
+      "birthDate": "2065-04-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "박태온은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K552-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이태온",
+      "birthDate": "2035-04-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "이태온은 대합실 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K552-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재석",
+      "birthDate": "2005-04-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최재석은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-임서나-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K941-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임민수",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2037-09-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "임민수는 서울역 등기소에서 위조 사본 폐기·원본 보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-임돌우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K941-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임민은",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2007-09-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임민은은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-임돌우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K941-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한민연",
+      "birthDate": "2037-09-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "한민연은 서울역 등기소에서 위조 사본 폐기·원본 보관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-임돌우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K941-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민정",
+      "birthDate": "2007-09-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강민정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-임돌우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "K086:K087:adoptive",
+      "from": "K086",
+      "to": "K087",
+      "type": "adoptive",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "/content/40"
+        }
+      ]
+    },
+    {
+      "id": "FH-K036-P-01:K036:biological",
+      "from": "FH-K036-P-01",
+      "to": "K036",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K036-P-02:FH-K036-P-01:biological",
+      "from": "FH-K036-P-02",
+      "to": "FH-K036-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K036-P-03:FH-K036-P-02:biological",
+      "from": "FH-K036-P-03",
+      "to": "FH-K036-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K036-M-01:K036:biological",
+      "from": "FH-K036-M-01",
+      "to": "K036",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K036-M-02:FH-K036-M-01:biological",
+      "from": "FH-K036-M-02",
+      "to": "FH-K036-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K036-M-03:FH-K036-M-02:biological",
+      "from": "FH-K036-M-03",
+      "to": "FH-K036-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-임채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-P-01:K086:biological",
+      "from": "FH-K086-P-01",
+      "to": "K086",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-P-02:FH-K086-P-01:biological",
+      "from": "FH-K086-P-02",
+      "to": "FH-K086-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-M-01:K086:biological",
+      "from": "FH-K086-M-01",
+      "to": "K086",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-M-02:FH-K086-M-01:biological",
+      "from": "FH-K086-M-02",
+      "to": "FH-K086-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K552-P-01:K552:biological",
+      "from": "FH-K552-P-01",
+      "to": "K552",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K552-P-02:FH-K552-P-01:biological",
+      "from": "FH-K552-P-02",
+      "to": "FH-K552-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K552-P-03:FH-K552-P-02:biological",
+      "from": "FH-K552-P-03",
+      "to": "FH-K552-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K552-M-01:K552:biological",
+      "from": "FH-K552-M-01",
+      "to": "K552",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K552-M-02:FH-K552-M-01:biological",
+      "from": "FH-K552-M-02",
+      "to": "FH-K552-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K552-M-03:FH-K552-M-02:biological",
+      "from": "FH-K552-M-03",
+      "to": "FH-K552-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-임서나-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K941-P-01:K941:biological",
+      "from": "FH-K941-P-01",
+      "to": "K941",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K941-P-02:FH-K941-P-01:biological",
+      "from": "FH-K941-P-02",
+      "to": "FH-K941-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K941-M-01:K941:biological",
+      "from": "FH-K941-M-01",
+      "to": "K941",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K941-M-02:FH-K941-M-01:biological",
+      "from": "FH-K941-M-02",
+      "to": "FH-K941-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-임돌우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "K086:K089:household",
+      "from": "K086",
+      "to": "K089",
+      "type": "household",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Relations.json",
+          "anchor": "관계-원장-table3"
+        }
+      ]
+    }
+  ]
+}

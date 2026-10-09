@@ -141,3 +141,109 @@ test('family selector uses stable public IDs from the actual catalog', () => {
   assert.equal(doc.querySelector('option[selected]').value, 'person-0014')
   assert.equal(doc.querySelector('option[selected]').textContent, '대니얼 브룩스')
 })
+
+test('clan tree renders every node with the current-affiliation flag or honest fallback marker', async () => {
+  const tree = JSON.parse(await readFile(new URL('../public/family-trees/ae40-ac15-b989-91d1.json', import.meta.url), 'utf8'))
+  const doc = render(tree)
+  assert.equal(tree.personId, null)
+  assert.equal(doc.querySelector('.person-family-tree').getAttribute('data-family-person-id'), null)
+  assert.equal(doc.querySelectorAll('.family-tree-current').length, 0)
+  assert.equal(doc.querySelectorAll('[data-family-node]').length, tree.nodes.length)
+  assert.equal(doc.querySelectorAll('[data-family-edge-id]').length, tree.edges.length)
+  for (const node of tree.nodes) {
+    const cell = doc.querySelector(`[data-family-node="${node.id}"] strong`)
+    if (!node.affiliation) {
+      assert.equal(cell.querySelector('img, .family-tree-affiliation'), null, node.id)
+      continue
+    }
+    if (node.affiliation.kind === 'state') {
+      const flag = cell.querySelector('img.state-flag')
+      assert.ok(flag, node.id)
+      assert.equal(flag.getAttribute('alt'), node.affiliation.name)
+      assert.equal(flag.getAttribute('title'), node.affiliation.name)
+      assert.ok(flag.getAttribute('src').includes(`state-flags/${node.affiliation.stateId}.webp`), node.id)
+      assert.equal(cell.querySelector('.family-tree-affiliation'), null, node.id)
+    } else {
+      const marker = cell.querySelector('.family-tree-affiliation')
+      assert.ok(marker, node.id)
+      assert.equal(marker.getAttribute('data-family-affiliation'), node.affiliation.kind)
+      assert.equal(marker.textContent, node.affiliation.name)
+      assert.equal(cell.querySelector('img'), null, node.id)
+    }
+    assert.ok(cell.textContent.includes(node.name))
+  }
+})
+
+test('unaffiliated clan members keep the accessible 무소속 marker', async () => {
+  const tree = JSON.parse(await readFile(new URL('../public/family-trees/c9c0-cda9-c8fc.json', import.meta.url), 'utf8'))
+  const doc = render(tree)
+  const marker = doc.querySelector('[data-family-affiliation="unaffiliated"]')
+  assert.ok(marker)
+  assert.equal(marker.textContent, '무소속')
+  const node = tree.nodes.find((entry) => entry.affiliation?.kind === 'unaffiliated')
+  assert.ok(doc.querySelector(`[data-family-node="${node.id}"] strong`).textContent.includes(node.name))
+})
+
+test('person selector tree enriches current affiliation without touching person-detail bytes', async () => {
+  const { enrichFamilyTreeAffiliations, resolveAffiliation } = await import('../src/familyAffiliation.ts')
+  const peopleText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const people = JSON.parse(peopleText.slice(peopleText.indexOf('= [') + 2, peopleText.lastIndexOf(']') + 1))
+  const statesText = await readFile(new URL('../src/generated/stateCatalog.ts', import.meta.url), 'utf8')
+  const states = JSON.parse(statesText.slice(statesText.indexOf('= [') + 2, statesText.lastIndexOf(']') + 1))
+
+  const raw = (await detail('person-0014')).familyTree
+  assert.ok(raw.nodes.every((node) => node.affiliation === undefined), 'person-detail bytes must stay affiliation-free')
+  const enriched = enrichFamilyTreeAffiliations(raw, people, states)
+  const brooks = enriched.nodes.find((node) => node.personId === 'K014')
+  const brooksPerson = people.find((person) => person.id === 'person-0014')
+  assert.deepEqual(brooks.affiliation, resolveAffiliation(brooksPerson, states))
+  assert.ok(brooks.affiliation && brooks.affiliation.name.length > 0)
+  for (const node of enriched.nodes.filter((entry) => !entry.personId)) assert.equal(node.affiliation, undefined)
+  const doc = render(enriched)
+  const flag = doc.querySelector('[data-family-node="K014"] strong img.state-flag')
+  assert.ok(flag, 'issued person in the selector tree must show the current-affiliation flag')
+  assert.equal(flag.getAttribute('alt'), brooks.affiliation.name)
+})
+
+test('selector-tree enrichment covers unaffiliated and no-clan people with the honest marker', async () => {
+  const { enrichFamilyTreeAffiliations } = await import('../src/familyAffiliation.ts')
+  const peopleText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const people = JSON.parse(peopleText.slice(peopleText.indexOf('= [') + 2, peopleText.lastIndexOf(']') + 1))
+  const statesText = await readFile(new URL('../src/generated/stateCatalog.ts', import.meta.url), 'utf8')
+  const states = JSON.parse(statesText.slice(statesText.indexOf('= [') + 2, statesText.lastIndexOf(']') + 1))
+
+  for (const [personId, issuedId] of [['person-1003', 'K1003'], ['person-1004', 'K1004']]) {
+    const raw = (await detail(personId)).familyTree
+    const enriched = enrichFamilyTreeAffiliations(raw, people, states)
+    const node = enriched.nodes.find((entry) => entry.personId === issuedId)
+    assert.deepEqual(node.affiliation, { kind: 'unaffiliated', name: '무소속' }, personId)
+    const doc = render(enriched)
+    const marker = doc.querySelector(`[data-family-node="${issuedId}"] strong .family-tree-affiliation`)
+    assert.equal(marker.getAttribute('data-family-affiliation'), 'unaffiliated')
+    assert.equal(marker.textContent, '무소속')
+    for (const historical of enriched.nodes.filter((entry) => !entry.personId)) assert.equal(historical.affiliation, undefined)
+  }
+})
+
+test('person detail links to the clan tree instead of embedding a genealogy', async () => {
+  const { PersonDetailContent } = await import('../src/pages/PersonDetailPage.tsx')
+  const renderPerson = async (id) => new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(PersonDetailContent, { detail: await detail(id), personId: id })))).window.document
+
+  const clanPerson = await renderPerson('person-0895')
+  assert.ok(!clanPerson.querySelector('.person-family-tree'))
+  const clanLink = clanPerson.querySelector('[data-person-clan-id="ae40-ac15-b989-91d1"] a')
+  assert.equal(clanLink.getAttribute('href'), '/families/ae40-ac15-b989-91d1')
+  assert.equal(clanLink.textContent, '강릉 김씨 가계도')
+
+  const noClan = await renderPerson('person-1004')
+  assert.ok(!noClan.querySelector('.person-family-tree'))
+  const state = noClan.querySelector('[data-person-no-clan="true"]')
+  assert.ok(state.textContent.includes('본관 없음'))
+  assert.equal(state.querySelector('a'), null)
+
+  const nonKorean = await renderPerson('person-0014')
+  const linked = nonKorean.querySelector('[data-person-no-clan="non-korean-family"]')
+  assert.ok(linked.textContent.includes('본관 없음'))
+  assert.equal(linked.querySelector('a').getAttribute('href'), '/families#non-korean-families')
+})

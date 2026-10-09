@@ -1,13 +1,21 @@
 import { Link } from 'react-router-dom'
+import { StateFlag } from './StateFlag'
 import './FamilyTree.css'
 
 type SourceRef = { readonly path: string; readonly anchor?: string }
 type Status = 'authored' | 'preserved' | 'reviewed'
+// Current political affiliation derived from the state contract at generation time:
+// a hegemon state shows that state's flag asset; unions, neutral polities and unaffiliated
+// people get an honest accessible text marker because no existing flag asset represents them.
+type FamilyAffiliation =
+  | { readonly kind: 'state'; readonly stateId: string; readonly name: string }
+  | { readonly kind: 'union' | 'neutral' | 'unaffiliated'; readonly name: string }
 type FamilyNode = {
   readonly id: string
   readonly personId: string | null
   readonly kind: 'person' | 'historical' | 'synthetic'
   readonly name: string
+  readonly affiliation?: FamilyAffiliation
   readonly birthDate: string
   readonly deathDate: string | null
   readonly detailRoute: string | null
@@ -25,7 +33,7 @@ type FamilyEdge = {
   readonly sourceRefs: readonly SourceRef[]
 }
 export type FamilyTreeData = {
-  readonly personId: string
+  readonly personId: string | null
   readonly parentStatus?: 'biological-parents-unrecorded' | 'maternal-parent-unrecorded' | null
   readonly nodes: readonly FamilyNode[]
   readonly edges: readonly FamilyEdge[]
@@ -37,7 +45,7 @@ const edgeLabel = (edge: FamilyEdge): string => edge.type === 'biological'
   : relationLabels[edge.type]
 
 export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Element {
-  if (!tree.nodes.length || !tree.nodes.some((node) => node.id === tree.personId)) return <section className="person-family-tree" data-family-person-id={tree.personId}><h2>가계도</h2><p role="status">기록된 가계도 데이터가 없습니다.</p></section>
+  if (!tree.nodes.length || (tree.personId !== null && !tree.nodes.some((node) => node.id === tree.personId))) return <section className="person-family-tree"><h2>가계도</h2><p role="status">기록된 가계도 데이터가 없습니다.</p></section>
   const byId = new Map(tree.nodes.map((node) => [node.id, node]))
   const levels = new Map<string, number>()
   const level = (id: string): number => {
@@ -74,6 +82,13 @@ export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Ele
     rows.set(depth, ordered)
   }
   const name = (node: FamilyNode) => node.detailRoute ? <Link to={node.detailRoute}>{node.name}</Link> : <span>{node.name}</span>
+  const affiliation = (node: FamilyNode) => {
+    const current = node.affiliation
+    if (!current) return null
+    if (current.kind === 'state' && /^S(?:0[1-9]|1[0-6])$/u.test(current.stateId)) return <StateFlag stateId={current.stateId} title={current.name} />
+    return <span className="family-tree-affiliation" data-family-affiliation={current.kind}>{current.name}</span>
+  }
+  const named = (node: FamilyNode) => <>{affiliation(node)}{name(node)}</>
   const width = Math.max(640, ...[...rows.values()].map((nodes) => (nodes.length + nodes.filter((node) => unknownParents.some((entry) => entry.parentId === node.id)).length) * 220 + 80))
   const height = rows.size * 180 + 24
   const positions = new Map(tree.nodes.map((node) => {
@@ -84,7 +99,7 @@ export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Ele
     const index = preceding.length + preceding.filter((peer) => unknownParents.some((entry) => entry.parentId === peer.id)).length
     return [node.id, { x: 80 + (width - 80 - slots * 220) / 2 + (index + 0.5) * 220, y: depth * 180 + 32 }]
   }))
-  return <section className="person-family-tree" data-family-person-id={tree.personId}>
+  return <section className="person-family-tree" data-family-person-id={tree.personId ?? undefined}>
     <h2>가계도</h2>
     <p className="family-tree-legend">위에서 아래로 기록된 세대 · 실선: 친생 · 점선: 입양·보호·제작·가구 계승</p>
     <p className="family-tree-legend">배우자 관계는 이 가계 원장에 기록되지 않았습니다. 부모가 함께 표시돼도 혼인 관계를 뜻하지 않습니다.</p>
@@ -140,19 +155,19 @@ export function FamilyTree({ tree }: { readonly tree: FamilyTreeData }): JSX.Ele
           const point = positions.get(node.id)
           if (!point) return null
           return <div key={node.id} data-family-node={node.id} data-family-generation={level(node.id) + 1} className={`family-tree-node${node.id === tree.personId ? ' family-tree-current' : ''}`} style={{ left: point.x - 90, top: point.y }}>
-            <strong>{name(node)}</strong><small>{node.birthDate}{node.deathDate ? ` – ${node.deathDate}` : ''}</small>
+            <strong>{named(node)}</strong><small>{node.birthDate}{node.deathDate ? ` – ${node.deathDate}` : ''}</small>
           </div>
         })}
       </div>
     </div>
     <details><summary>계보 원장과 생애 기록</summary><div className="wiki-table-wrap"><table className="person-data-table"><thead><tr><th scope="col">인물</th><th scope="col">생년월일</th><th scope="col">계보</th></tr></thead><tbody>
-      {tree.nodes.map((node) => <tr key={node.id}><th scope="row">{name(node)}</th><td>{node.birthDate}</td><td>{tree.edges.filter((edge) => edge.to === node.id).map((edge) => {
+      {tree.nodes.map((node) => <tr key={node.id}><th scope="row">{named(node)}</th><td>{node.birthDate}</td><td>{tree.edges.filter((edge) => edge.to === node.id).map((edge) => {
         const parent = byId.get(edge.from)
-        return <div key={edge.id} data-family-table-edge={edge.id} data-family-parent-role={edge.parentRole}>{parent && name(parent)} · {edgeLabel(edge)}</div>
+        return <div key={edge.id} data-family-table-edge={edge.id} data-family-parent-role={edge.parentRole}>{parent && named(parent)} · {edgeLabel(edge)}</div>
       })}</td></tr>)}
     </tbody></table></div>
     <ol className="family-tree-timeline">{tree.nodes.flatMap((node) => node.timeline.map((event, index) => ({ node, event, index }))).sort((a, b) => a.event.year - b.event.year).map(({ node, event, index }) =>
-      <li key={`${node.id}:${index}`} data-family-event-year={event.year}><time>{event.year}</time> <strong>{name(node)}</strong> {event.summary}</li>)}</ol>
+      <li key={`${node.id}:${index}`} data-family-event-year={event.year}><time>{event.year}</time> <strong>{named(node)}</strong> {event.summary}</li>)}</ol>
     </details>
   </section>
 }

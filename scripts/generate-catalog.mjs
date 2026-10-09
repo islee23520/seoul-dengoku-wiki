@@ -27,7 +27,7 @@ import { regionalLineGraph } from './regional-line-graph.mjs'
 import { parsePersonRightsPermissions } from './person-rights-permissions.mjs'
 import { loadCastBirthdays } from './cast-birthdays.mjs'
 import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './cast-household-relations.mjs'
-import { loadCastFamilyTrees, projectFamilyTree } from './cast-family-trees.mjs'
+import { loadCastFamilyTrees, projectFamilyTree, projectClanFamilyTree } from './cast-family-trees.mjs'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
 import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
@@ -1180,6 +1180,38 @@ const clanFamilyCatalogOut = clanFamilyCatalog.sort((a, b) =>
   a.bongwan.localeCompare(b.bongwan, 'ko') || a.surname.localeCompare(b.surname, 'ko')
 )
 await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const clanFamilyCatalog = ${JSON.stringify(clanFamilyCatalogOut, null, 2)} as const\n`)
+
+// Each clan detail page owns the complete genealogy of its issued members: one lazily fetched JSON per clan.
+const clanTreeRoot = resolve(publicRoot, 'family-trees')
+await rm(clanTreeRoot, { recursive: true, force: true })
+await mkdir(clanTreeRoot, { recursive: true })
+const personByIssuedId = new Map(peopleCatalog.map((person) => [issuedIdByName.get(person.name), person]))
+// Affiliation derives from the current state contract (currentHegemon), never a hard-coded state-to-hegemon list.
+const affiliationFor = (person) => {
+  if (person.state === 'S00') return { kind: 'unaffiliated', name: '무소속' }
+  if (person.state === 'polity:daejeon') return { kind: 'neutral', name: person.stateName }
+  const hegemon = stateCatalog.find((entry) => entry.id === person.state)?.currentHegemon
+  if (!hegemon) throw new Error(`E_CLAN_TREE_AFFILIATION:${person.state}`)
+  if (hegemon.kind === 'state') return { kind: 'state', stateId: hegemon.stateId, name: hegemon.name }
+  if (hegemon.kind === 'union') return { kind: 'union', name: hegemon.name }
+  return { kind: 'neutral', name: person.stateName }
+}
+for (const family of clanFamilyCatalogOut) {
+  if (!family.members.length) continue
+  const seedIds = family.members.map((member) => {
+    const issuedId = issuedIdByName.get(member.name)
+    if (!issuedId) throw new Error(`E_CLAN_TREE_SEED:${family.id}:${member.name}`)
+    return issuedId
+  })
+  const tree = projectClanFamilyTree(familyGraph, seedIds, familyDetailRoutes)
+  const nodes = tree.nodes.map((node) => {
+    if (!node.personId) return node
+    const person = personByIssuedId.get(node.personId)
+    if (!person) throw new Error(`E_CLAN_TREE_PERSON:${family.id}:${node.personId}`)
+    return { ...node, affiliation: affiliationFor(person) }
+  })
+  await writeFile(resolve(clanTreeRoot, `${family.id}.json`), `${JSON.stringify({ clanId: family.id, personId: null, nodes, edges: tree.edges }, null, 2)}\n`)
+}
 
 await writeFile(resolve(generatedRoot, 'nonKoreanFamilyCatalog.ts'), `export const nonKoreanFamilyCatalog = ${JSON.stringify(projectNonKoreanFamilies(peopleCatalog, lineageByName), null, 2)} as const\n`)
 

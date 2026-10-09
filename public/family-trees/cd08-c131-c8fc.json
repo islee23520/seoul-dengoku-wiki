@@ -1,0 +1,509 @@
+{
+  "clanId": "cd08-c131-c8fc",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K317",
+      "personId": "K317",
+      "kind": "person",
+      "name": "초나루",
+      "birthDate": "2072-11-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K317"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 중립 호송 약정 서명 서기 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-초나루-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0318",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K395",
+      "personId": "K395",
+      "kind": "person",
+      "name": "초시람",
+      "birthDate": "2086-12-13",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K395"
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 선거 증인 부제 일을 맡았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-초시람-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0396",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K317-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "초승석",
+      "lineage": {
+        "surname": "초",
+        "bongwan": "성주",
+        "clan": "cd08-c131-c8fc"
+      },
+      "birthDate": "2042-11-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "초승석은 제기동 의무소에서 중립 호송 서명·증인 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-초나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K317-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "초승준",
+      "lineage": {
+        "surname": "초",
+        "bongwan": "성주",
+        "clan": "cd08-c131-c8fc"
+      },
+      "birthDate": "2012-11-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "초승준은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-초나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K317-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한준석",
+      "birthDate": "2042-11-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "한준석은 제기동 의무소에서 중립 호송 서명·증인 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-초나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K317-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준호",
+      "birthDate": "2012-11-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강준호는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-초나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K395-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "초승진",
+      "lineage": {
+        "surname": "초",
+        "bongwan": "성주",
+        "clan": "cd08-c131-c8fc"
+      },
+      "birthDate": "2056-12-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "초승진은 노량진 선창에서 선거 증언·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-초시람-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K395-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "초승현",
+      "lineage": {
+        "surname": "초",
+        "bongwan": "성주",
+        "clan": "cd08-c131-c8fc"
+      },
+      "birthDate": "2026-12-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "초승현은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-초시람-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K395-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김준재",
+      "birthDate": "2056-12-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "김준재는 노량진 선창에서 선거 증언·보좌 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-초시람-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K395-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박준찬",
+      "birthDate": "2026-12-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박준찬은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-초시람-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K317-P-01:K317:biological",
+      "from": "FH-K317-P-01",
+      "to": "K317",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K317-P-02:FH-K317-P-01:biological",
+      "from": "FH-K317-P-02",
+      "to": "FH-K317-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K317-M-01:K317:biological",
+      "from": "FH-K317-M-01",
+      "to": "K317",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K317-M-02:FH-K317-M-01:biological",
+      "from": "FH-K317-M-02",
+      "to": "FH-K317-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-초나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K395-P-01:K395:biological",
+      "from": "FH-K395-P-01",
+      "to": "K395",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K395-P-02:FH-K395-P-01:biological",
+      "from": "FH-K395-P-02",
+      "to": "FH-K395-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K395-M-01:K395:biological",
+      "from": "FH-K395-M-01",
+      "to": "K395",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K395-M-02:FH-K395-M-01:biological",
+      "from": "FH-K395-M-02",
+      "to": "FH-K395-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-초시람-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

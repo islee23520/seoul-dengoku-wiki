@@ -1,0 +1,866 @@
+{
+  "clanId": "bc30-acbd-c8fc-88f5",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K023",
+      "personId": "K023",
+      "kind": "person",
+      "name": "배초담",
+      "birthDate": "2065-11-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K023"
+        },
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 만료 협상 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-배초담-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0023",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K607",
+      "personId": "K607",
+      "kind": "person",
+      "name": "배바원",
+      "birthDate": "2066-03-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K607"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-배바원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0607",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K647",
+      "personId": "K647",
+      "kind": "person",
+      "name": "배사민",
+      "birthDate": "2094-01-31",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K647"
+        },
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0647",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K023-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승석",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2035-11-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "배승석은 영등포 정수 당직에서 계약 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-배초담-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K023-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승준",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2005-11-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "배승준은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-배초담-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K023-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김승영",
+      "birthDate": "2035-11-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "김승영은 영등포 정수 당직에서 계약 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-배초담-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K023-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승영",
+      "birthDate": "2005-11-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박승영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-배초담-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K607-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승재",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2036-03-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "배승재는 노량진 선창에서 밀수 호스 접수·관로 대장 작성 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-배바원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K607-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승찬",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2006-03-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "배승찬은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-배바원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K607-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임재호",
+      "birthDate": "2036-03-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "임재호는 노량진 선창에서 밀수 호스 접수·관로 대장 작성 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-배바원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K607-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오재원",
+      "birthDate": "2006-03-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오재원은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-배바원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K647-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승혁",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2064-01-31",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "배승혁은 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K647-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승문",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2034-01-31",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "배승문은 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K647-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "배승섭",
+      "lineage": {
+        "surname": "배",
+        "bongwan": "경주",
+        "clan": "bc30-acbd-c8fc-88f5"
+      },
+      "birthDate": "2004-01-31",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "배승섭은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K647-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김재우",
+      "birthDate": "2064-01-31",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "김재우는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K647-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재완",
+      "birthDate": "2034-01-31",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "박재완은 서울역 등기소에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K647-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "이재아",
+      "birthDate": "2004-01-31",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이재아는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-배사민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K023-P-01:K023:biological",
+      "from": "FH-K023-P-01",
+      "to": "K023",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K023-P-02:FH-K023-P-01:biological",
+      "from": "FH-K023-P-02",
+      "to": "FH-K023-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K023-M-01:K023:biological",
+      "from": "FH-K023-M-01",
+      "to": "K023",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K023-M-02:FH-K023-M-01:biological",
+      "from": "FH-K023-M-02",
+      "to": "FH-K023-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-배초담-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K607-P-01:K607:biological",
+      "from": "FH-K607-P-01",
+      "to": "K607",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K607-P-02:FH-K607-P-01:biological",
+      "from": "FH-K607-P-02",
+      "to": "FH-K607-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K607-M-01:K607:biological",
+      "from": "FH-K607-M-01",
+      "to": "K607",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K607-M-02:FH-K607-M-01:biological",
+      "from": "FH-K607-M-02",
+      "to": "FH-K607-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-배바원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K647-P-01:K647:biological",
+      "from": "FH-K647-P-01",
+      "to": "K647",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K647-P-02:FH-K647-P-01:biological",
+      "from": "FH-K647-P-02",
+      "to": "FH-K647-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K647-P-03:FH-K647-P-02:biological",
+      "from": "FH-K647-P-03",
+      "to": "FH-K647-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K647-M-01:K647:biological",
+      "from": "FH-K647-M-01",
+      "to": "K647",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K647-M-02:FH-K647-M-01:biological",
+      "from": "FH-K647-M-02",
+      "to": "FH-K647-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K647-M-03:FH-K647-M-02:biological",
+      "from": "FH-K647-M-03",
+      "to": "FH-K647-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-배사민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

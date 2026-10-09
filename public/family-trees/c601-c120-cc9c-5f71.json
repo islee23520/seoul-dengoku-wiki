@@ -1,0 +1,508 @@
+{
+  "clanId": "c601-c120-cc9c-5f71",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K356",
+      "personId": "K356",
+      "kind": "person",
+      "name": "영석온",
+      "birthDate": "2071-04-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K356"
+        },
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 능선·교량 당직 의무원 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영석온-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0357",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K364",
+      "personId": "K364",
+      "kind": "person",
+      "name": "영한뫼",
+      "birthDate": "2079-07-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K364"
+        },
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 교량 의무소 거점장 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영한뫼-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0365",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K356-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "영승호",
+      "lineage": {
+        "surname": "영",
+        "bongwan": "선천",
+        "clan": "c601-c120-cc9c-5f71"
+      },
+      "birthDate": "2041-04-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "영승호는 암사 경비 초소에서 중증도 표·급수 시간 게시·전쟁명령 결재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영석온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K356-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "영승민",
+      "lineage": {
+        "surname": "영",
+        "bongwan": "선천",
+        "clan": "c601-c120-cc9c-5f71"
+      },
+      "birthDate": "2011-04-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "영승민은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영석온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K356-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오준우",
+      "birthDate": "2041-04-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "오준우는 암사 경비 초소에서 중증도 표·급수 시간 게시·전쟁명령 결재 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영석온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K356-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송준원",
+      "birthDate": "2011-04-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송준원은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영석온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K364-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "영승원",
+      "lineage": {
+        "surname": "영",
+        "bongwan": "선천",
+        "clan": "c601-c120-cc9c-5f71"
+      },
+      "birthDate": "2049-07-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2087,
+          "summary": "영승원은 암사 경비 초소에서 중증도 표·급수 시간 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영한뫼-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K364-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "영승진",
+      "lineage": {
+        "surname": "영",
+        "bongwan": "선천",
+        "clan": "c601-c120-cc9c-5f71"
+      },
+      "birthDate": "2019-07-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "영승진은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영한뫼-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K364-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤준희",
+      "birthDate": "2049-07-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2087,
+          "summary": "윤준희는 암사 경비 초소에서 중증도 표·급수 시간 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영한뫼-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K364-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한준경",
+      "birthDate": "2019-07-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한준경은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-영한뫼-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K356-P-01:K356:biological",
+      "from": "FH-K356-P-01",
+      "to": "K356",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K356-P-02:FH-K356-P-01:biological",
+      "from": "FH-K356-P-02",
+      "to": "FH-K356-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K356-M-01:K356:biological",
+      "from": "FH-K356-M-01",
+      "to": "K356",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K356-M-02:FH-K356-M-01:biological",
+      "from": "FH-K356-M-02",
+      "to": "FH-K356-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영석온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K364-P-01:K364:biological",
+      "from": "FH-K364-P-01",
+      "to": "K364",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K364-P-02:FH-K364-P-01:biological",
+      "from": "FH-K364-P-02",
+      "to": "FH-K364-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K364-M-01:K364:biological",
+      "from": "FH-K364-M-01",
+      "to": "K364",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K364-M-02:FH-K364-M-01:biological",
+      "from": "FH-K364-M-02",
+      "to": "FH-K364-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-영한뫼-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

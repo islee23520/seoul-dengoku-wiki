@@ -1,0 +1,1323 @@
+{
+  "clanId": "c774-c804-c758-674e",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K091",
+      "personId": "K091",
+      "kind": "person",
+      "name": "이준택",
+      "birthDate": "2090-02-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K091"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 군자기지 차량정비장 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0092",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K742",
+      "personId": "K742",
+      "kind": "person",
+      "name": "이나민",
+      "birthDate": "2102-01-02",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K742"
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0742",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K819",
+      "personId": "K819",
+      "kind": "person",
+      "name": "이북민",
+      "birthDate": "2085-01-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K819"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-이북민-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0819",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K998",
+      "personId": "K998",
+      "kind": "person",
+      "name": "이일섭",
+      "birthDate": "2092-04-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K998"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생애. 천안·아산 제1분공방을 다스리는 이씨 가문의 후계다. 2121년 1호선 남단 차량기지 옆에 밭을 일구었다. 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 규격맹 평의회에 제안하였다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0998",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "FH-EX-LEE-SANGGYE",
+      "personId": null,
+      "kind": "historical",
+      "name": "이상계",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2062-04-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "이상계는 자녀에게 생활 기록을 건네며 가계의 이름을 이어 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-EX-LEE-HOGYE",
+      "personId": null,
+      "kind": "historical",
+      "name": "이호계",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2032-04-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2062,
+          "summary": "이호계는 자녀에게 생활 기록을 건네며 가계의 이름을 이어 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K091-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이승섭",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2060-02-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "이승섭은 신정 차량기지에서 차량 제동 시험·정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K091-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이승성",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2030-02-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "이승성은 신정 차량기지에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K091-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "이승욱",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2000-02-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이승욱은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K091-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승리",
+      "birthDate": "2060-02-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "임승리는 신정 차량기지에서 차량 제동 시험·정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K091-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승아",
+      "birthDate": "2030-02-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "오승아는 신정 차량기지에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K091-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승훈",
+      "birthDate": "2000-02-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송승훈은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-이준택-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K742-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도진",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2072-01-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2110,
+          "summary": "이도진은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K742-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도현",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2042-01-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "이도현은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K742-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도영",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2012-01-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이도영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K742-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조재미",
+      "birthDate": "2072-01-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2110,
+          "summary": "조재미는 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K742-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김재솔",
+      "birthDate": "2042-01-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "김재솔은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K742-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도진",
+      "birthDate": "2012-01-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박도진은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-이나민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K819-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도욱",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2055-01-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2093,
+          "summary": "이도욱은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-이북민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K819-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도란",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2025-01-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이도란은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-이북민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K819-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도섭",
+      "birthDate": "2055-01-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2093,
+          "summary": "정도섭은 대합실 당직에서 대기열 탐사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-이북민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K819-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤도훈",
+      "birthDate": "2025-01-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤도훈은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-이북민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K998-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최서연",
+      "birthDate": "2062-04-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2100,
+          "summary": "최서연은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K998-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정서호",
+      "birthDate": "2032-04-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2070,
+          "summary": "정서호는 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K998-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤민성",
+      "birthDate": "2002-04-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤민성은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K998-X이호계-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이서아",
+      "lineage": {
+        "surname": "이",
+        "bongwan": "전의",
+        "clan": "c774-c804-c758-674e"
+      },
+      "birthDate": "2002-04-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이서아는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-이일섭-p3"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-EX-LEE-SANGGYE:K998:biological",
+      "from": "FH-EX-LEE-SANGGYE",
+      "to": "K998",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이일섭"
+        }
+      ]
+    },
+    {
+      "id": "FH-EX-LEE-HOGYE:FH-EX-LEE-SANGGYE:biological",
+      "from": "FH-EX-LEE-HOGYE",
+      "to": "FH-EX-LEE-SANGGYE",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-hangnyeol.json",
+          "anchor": "/lineage/parents/이상계"
+        }
+      ]
+    },
+    {
+      "id": "FH-K091-P-01:K091:biological",
+      "from": "FH-K091-P-01",
+      "to": "K091",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K091-P-02:FH-K091-P-01:biological",
+      "from": "FH-K091-P-02",
+      "to": "FH-K091-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K091-P-03:FH-K091-P-02:biological",
+      "from": "FH-K091-P-03",
+      "to": "FH-K091-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K091-M-01:K091:biological",
+      "from": "FH-K091-M-01",
+      "to": "K091",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K091-M-02:FH-K091-M-01:biological",
+      "from": "FH-K091-M-02",
+      "to": "FH-K091-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K091-M-03:FH-K091-M-02:biological",
+      "from": "FH-K091-M-03",
+      "to": "FH-K091-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-이준택-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K742-P-01:K742:biological",
+      "from": "FH-K742-P-01",
+      "to": "K742",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K742-P-02:FH-K742-P-01:biological",
+      "from": "FH-K742-P-02",
+      "to": "FH-K742-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K742-P-03:FH-K742-P-02:biological",
+      "from": "FH-K742-P-03",
+      "to": "FH-K742-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K742-M-01:K742:biological",
+      "from": "FH-K742-M-01",
+      "to": "K742",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K742-M-02:FH-K742-M-01:biological",
+      "from": "FH-K742-M-02",
+      "to": "FH-K742-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K742-M-03:FH-K742-M-02:biological",
+      "from": "FH-K742-M-03",
+      "to": "FH-K742-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-이나민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K819-P-01:K819:biological",
+      "from": "FH-K819-P-01",
+      "to": "K819",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K819-P-02:FH-K819-P-01:biological",
+      "from": "FH-K819-P-02",
+      "to": "FH-K819-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K819-M-01:K819:biological",
+      "from": "FH-K819-M-01",
+      "to": "K819",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K819-M-02:FH-K819-M-01:biological",
+      "from": "FH-K819-M-02",
+      "to": "FH-K819-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-이북민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K998-M-01:K998:biological",
+      "from": "FH-K998-M-01",
+      "to": "K998",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K998-M-02:FH-K998-M-01:biological",
+      "from": "FH-K998-M-02",
+      "to": "FH-K998-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K998-M-03:FH-K998-M-02:biological",
+      "from": "FH-K998-M-03",
+      "to": "FH-K998-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K998-X이호계-01:FH-EX-LEE-HOGYE:biological",
+      "from": "FH-K998-X이호계-01",
+      "to": "FH-EX-LEE-HOGYE",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-이일섭-p3"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "clanId": "d669-d3c9-d574-9ec3",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K794",
+      "personId": "K794",
+      "kind": "person",
+      "name": "황은아",
+      "birthDate": "2087-01-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K794"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0794",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K871",
+      "personId": "K871",
+      "kind": "person",
+      "name": "황돌아",
+      "birthDate": "2075-04-09",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K871"
+        },
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 공동구 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-황돌아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0871",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K794-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "황승빈",
+      "lineage": {
+        "surname": "황",
+        "bongwan": "평해",
+        "clan": "d669-d3c9-d574-9ec3-agreed-c544-second"
+      },
+      "birthDate": "2057-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2095,
+          "summary": "황승빈은 신내 환승 당직에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K794-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "황승솔",
+      "lineage": {
+        "surname": "황",
+        "bongwan": "평해",
+        "clan": "d669-d3c9-d574-9ec3-agreed-c544-second"
+      },
+      "birthDate": "2027-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2065,
+          "summary": "황승솔은 신내 환승 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K794-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "황승미",
+      "lineage": {
+        "surname": "황",
+        "bongwan": "평해",
+        "clan": "d669-d3c9-d574-9ec3-agreed-c544-second"
+      },
+      "birthDate": "1997-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "황승미는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K794-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최도란",
+      "birthDate": "2057-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2095,
+          "summary": "최도란은 신내 환승 당직에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K794-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도완",
+      "birthDate": "2027-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2065,
+          "summary": "정도완은 신내 환승 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K794-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤도은",
+      "birthDate": "1997-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤도은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-황은아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K871-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "황현준",
+      "lineage": {
+        "surname": "황",
+        "bongwan": "평해",
+        "clan": "d669-d3c9-d574-9ec3-agreed-c544-second"
+      },
+      "birthDate": "2045-04-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2083,
+          "summary": "황현준은 대합실 당직에서 공동구 당직 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-황돌아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K871-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "황현호",
+      "lineage": {
+        "surname": "황",
+        "bongwan": "평해",
+        "clan": "d669-d3c9-d574-9ec3-agreed-c544-second"
+      },
+      "birthDate": "2015-04-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "황현호는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-황돌아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K871-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임도빈",
+      "birthDate": "2045-04-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2083,
+          "summary": "임도빈은 대합실 당직에서 공동구 당직 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-황돌아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K871-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오민석",
+      "birthDate": "2015-04-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오민석은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-황돌아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K794-P-01:K794:biological",
+      "from": "FH-K794-P-01",
+      "to": "K794",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K794-P-02:FH-K794-P-01:biological",
+      "from": "FH-K794-P-02",
+      "to": "FH-K794-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K794-P-03:FH-K794-P-02:biological",
+      "from": "FH-K794-P-03",
+      "to": "FH-K794-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K794-M-01:K794:biological",
+      "from": "FH-K794-M-01",
+      "to": "K794",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K794-M-02:FH-K794-M-01:biological",
+      "from": "FH-K794-M-02",
+      "to": "FH-K794-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K794-M-03:FH-K794-M-02:biological",
+      "from": "FH-K794-M-03",
+      "to": "FH-K794-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-황은아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K871-P-01:K871:biological",
+      "from": "FH-K871-P-01",
+      "to": "K871",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K871-P-02:FH-K871-P-01:biological",
+      "from": "FH-K871-P-02",
+      "to": "FH-K871-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K871-M-01:K871:biological",
+      "from": "FH-K871-M-01",
+      "to": "K871",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K871-M-02:FH-K871-M-01:biological",
+      "from": "FH-K871-M-02",
+      "to": "FH-K871-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-황돌아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

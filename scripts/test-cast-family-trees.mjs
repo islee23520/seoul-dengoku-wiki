@@ -315,13 +315,14 @@ test('projects linked relatives and renders typed edges, birthdays and ancestor 
   assert.ok(html.includes(tree.nodes[0].birthDate))
 })
 
-test('renders the projected graph through the actual person detail component', async () => {
+test('person detail surfaces the genealogy through the clan tree link, not an embedded graph', async () => {
   const graph = validateCastFamilyTrees(fixture(), roster)
   const routes = new Map(roster.map((person) => [person.id, `/people/test-${person.id}`]))
   const familyTree = projectFamilyTree(graph, id('신준'), routes)
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-0001.json', import.meta.url), 'utf8'))
   const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(PersonDetailContent, { detail: { ...detail, familyTree }, personId: detail.id })))
-  assert.ok(html.includes(`data-family-person-id="${id('신준')}"`))
-  for (const node of familyTree.nodes) assert.ok(html.includes(`data-family-node="${node.id}"`))
-  assert.ok(html.includes('data-family-event-year="2030"'))
+  assert.ok(!html.includes('person-family-tree'))
+  for (const node of familyTree.nodes) assert.ok(!html.includes(`data-family-node="${node.id}"`))
+  assert.ok(html.includes(`href="/families/${detail.clan.id}"`))
+  assert.ok(html.includes(`${detail.clan.name} 가계도`))
 })

@@ -26,6 +26,7 @@ async function fixture(extra = {}, omit = []) {
     'regional-terrain-tiles/0-1-water.json': '{}',
     'state-flags/S01.webp': '',
     'clan-crests/index.json': '{}',
+    'family-trees/ae40-ac15-b989-91d1.json': '{}',
     'assets/index-AbCd1234.js': '',
     'assets/index-AbCd1234.css': '',
     'assets/FamilyTree-AbCd1234.js': '',
