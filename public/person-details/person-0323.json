@@ -3,6 +3,7 @@
   "name": "류은비",
   "title": "단장",
   "position": "흰십자단 단장",
+  "characterId": "K322",
   "rank": "단장",
   "commonTier": "T1",
   "occupation": "의료단 단장",
@@ -282,66 +283,420 @@
   },
   "gurps": {
     "id": "K322",
-    "personId": "person-0323",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0323"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K322",
+            "name": "류은비",
+            "url": "/people/person-0323",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "의료단 단장",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/2/items/0/ko",
+                  "quote": "생업: 의료단 단장"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/3/text/ko",
+                    "quote": "류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/2/items/0/ko",
+                    "quote": "생업: 의료단 단장"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/3/text/ko",
+                    "quote": "류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/2/items/0/ko",
+                    "quote": "생업: 의료단 단장"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "중단된 공사장",
+              "camp": {
+                "name": "류은비 공사장 야영지",
+                "type": "야영지",
+                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K322",
+            "name": "류은비",
+            "url": "/people/person-0323",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "의료단 단장",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/2/items/0/ko",
+                  "quote": "생업: 의료단 단장"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/3/text/ko",
+                    "quote": "류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/2/items/0/ko",
+                    "quote": "생업: 의료단 단장"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/3/text/ko",
+                    "quote": "류은비는 전문의의 진료와 수련의 도제 수련을 지휘하며 환자의 소속과 재산이 아닌 중증도로 병상을 배정한다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/2/items/0/ko",
+                    "quote": "생업: 의료단 단장"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "생업 별명은 의료단 단장."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "가짜 약 상자가 경매에 오른 날, 류은비는 오해린의 봉인 전에 거래를 끊었다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "중단된 공사장",
+              "camp": {
+                "name": "류은비 공사장 야영지",
+                "type": "야영지",
+                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Leadership",
-        "ko": "지휘",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 13,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [
     {

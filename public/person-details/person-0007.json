@@ -3,6 +3,7 @@
   "name": "장필규",
   "title": "급수계약 감사관",
   "position": "급수계약 감사관",
+  "characterId": "K007",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "계약 기록·감수",
@@ -369,66 +370,380 @@
   },
   "gurps": {
     "id": "K007",
-    "personId": "person-0007",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0007"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K007",
+            "name": "장필규",
+            "url": "/people/person-0007",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "계약 기록·감수",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/116/items/1/ko",
+                  "quote": "생업: 계약 기록·감수"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/116/items/1/ko",
+                    "quote": "생업: 계약 기록·감수"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/116/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "인계동",
+              "type": "초소 영지",
+              "station": "인계동",
+              "state": "S01",
+              "settlement": {
+                "name": "인계동 정착지",
+                "type": "정착지",
+                "description": "인계동 일대 고정 거점"
+              },
+              "note": "S01 인계동 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K007",
+            "name": "장필규",
+            "url": "/people/person-0007",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "계약 기록·감수",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/116/items/1/ko",
+                  "quote": "생업: 계약 기록·감수"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/116/items/1/ko",
+                    "quote": "생업: 계약 기록·감수"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "숫자는 공개하되 해석은 자기 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "계약 사본을 배급구역과 기록청에 동시에 보내지만, 단수 발동 조항의 최종 해석은 감사관 날인을 요구한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/116/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "인계동",
+              "type": "초소 영지",
+              "station": "인계동",
+              "state": "S01",
+              "settlement": {
+                "name": "인계동 정착지",
+                "type": "정착지",
+                "description": "인계동 일대 고정 거점"
+              },
+              "note": "S01 인계동 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Diplomacy",
-        "ko": "교섭·조정",
-        "level": 13,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 76,
-      "unspent": 0,
-      "total": 76
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

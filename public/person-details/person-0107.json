@@ -3,6 +3,7 @@
   "name": "제바름",
   "title": "성동 골목의무소 원장",
   "position": "성동 골목의무소 원장",
+  "characterId": "K106",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "골목 진료·처방 배분",
@@ -370,66 +371,360 @@
   },
   "gurps": {
     "id": "K106",
-    "personId": "person-0107",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0107"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K106",
+            "name": "제바름",
+            "url": "/people/person-0107",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "골목 진료·처방 배분",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/214/items/1/ko",
+                  "quote": "생업: 골목 진료·처방 배분"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/215/text/ko",
+                    "quote": "골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/214/items/1/ko",
+                    "quote": "생업: 골목 진료·처방 배분"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/214/items/1/ko",
+                    "quote": "생업: 골목 진료·처방 배분"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/215/text/ko",
+                    "quote": "골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "성수",
+              "type": "초소 영지",
+              "station": "성수",
+              "state": "S04",
+              "settlement": {
+                "name": "성수 정착지",
+                "type": "정착지",
+                "description": "성수 일대 고정 거점"
+              },
+              "note": "S04 성수 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K106",
+            "name": "제바름",
+            "url": "/people/person-0107",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "골목 진료·처방 배분",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/214/items/1/ko",
+                  "quote": "생업: 골목 진료·처방 배분"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/215/text/ko",
+                    "quote": "골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/214/items/1/ko",
+                    "quote": "생업: 골목 진료·처방 배분"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/214/items/1/ko",
+                    "quote": "생업: 골목 진료·처방 배분"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/215/text/ko",
+                    "quote": "골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "성수",
+              "type": "초소 영지",
+              "station": "성수",
+              "state": "S04",
+              "settlement": {
+                "name": "성수 정착지",
+                "type": "정착지",
+                "description": "성수 일대 고정 거점"
+              },
+              "note": "S04 성수 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Leadership",
-        "ko": "지휘",
-        "level": 14,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 64,
-      "unspent": 11,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

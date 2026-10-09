@@ -3,6 +3,7 @@
   "name": "강민서",
   "title": "위원장",
   "position": "규격맹 위원장",
+  "characterId": "K029",
   "rank": "위원장",
   "commonTier": "T1",
   "occupation": "공방 제작 조정",
@@ -272,66 +273,420 @@
   },
   "gurps": {
     "id": "K029",
-    "personId": "person-0029",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0029"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K029",
+            "name": "강민서",
+            "url": "/people/person-0029",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공방 제작 조정",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/2/items/1/ko",
+                  "quote": "생업: 공방 제작 조정"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/2/items/1/ko",
+                    "quote": "생업: 공방 제작 조정"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "생업 별명은 제작평의회 중재자."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/12/text/ko",
+                    "quote": "생업 별명은 제작평의회 중재자."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/11/text/ko",
+                    "quote": "동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/14/text/ko",
+                    "quote": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "단철공."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/13/text/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "중단된 공사장",
+              "camp": {
+                "name": "강민서 공사장 야영지",
+                "type": "야영지",
+                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K029",
+            "name": "강민서",
+            "url": "/people/person-0029",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공방 제작 조정",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/2/items/1/ko",
+                  "quote": "생업: 공방 제작 조정"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/2/items/1/ko",
+                    "quote": "생업: 공방 제작 조정"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "생업 별명은 제작평의회 중재자."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/12/text/ko",
+                    "quote": "생업 별명은 제작평의회 중재자."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/11/text/ko",
+                    "quote": "동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/14/text/ko",
+                    "quote": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "단철공."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/13/text/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "중단된 공사장",
+              "camp": {
+                "name": "강민서 공사장 야영지",
+                "type": "야영지",
+                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Diplomacy",
-        "ko": "교섭·조정",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [
     {

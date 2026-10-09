@@ -3,6 +3,7 @@
   "name": "수효은",
   "title": "약재 건조·냉장 비상발전 운전장",
   "position": "약재 보관 수련의",
+  "characterId": "K339",
   "rank": "수련의",
   "commonTier": "T3",
   "occupation": "약재 보관 출력 일지·봉인",
@@ -368,72 +369,402 @@
   },
   "gurps": {
     "id": "K339",
-    "personId": "person-0340",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0340"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K339",
+            "name": "수효은",
+            "url": "/people/person-0340",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "약재 보관 출력 일지·봉인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/193/items/0/ko",
+                  "quote": "생업: 약재 보관 출력 일지·봉인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/192/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 천다움에게 보내고, 최저 출력 이하면 외부 독촉이 있어도 경매 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "선매 장부가 사라진 주 정전이 겹치자 수효은은 비상 발전을 건조실과 진료소에 잠그고 경매 조명을 껐다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 약재 보관 출력 일지·봉인"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 천다움에게 보내고, 최저 출력 이하면 외부 독촉이 있어도 경매 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "선매 장부가 사라진 주 정전이 겹치자 수효은은 비상 발전을 건조실과 진료소에 잠그고 경매 조명을 껐다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/192/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 약재 보관 출력 일지·봉인"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 32,
+              "spent": 92,
+              "unspent": 0,
+              "total": 92
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "도농",
+              "type": "초소 영지",
+              "station": "도농",
+              "state": "S13",
+              "settlement": {
+                "name": "도농 정착지",
+                "type": "정착지",
+                "description": "도농 일대 고정 거점"
+              },
+              "note": "S13 도농 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K339",
+            "name": "수효은",
+            "url": "/people/person-0340",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "약재 보관 출력 일지·봉인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/193/items/0/ko",
+                  "quote": "생업: 약재 보관 출력 일지·봉인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/192/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 천다움에게 보내고, 최저 출력 이하면 외부 독촉이 있어도 경매 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "선매 장부가 사라진 주 정전이 겹치자 수효은은 비상 발전을 건조실과 진료소에 잠그고 경매 조명을 껐다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 약재 보관 출력 일지·봉인"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 천다움에게 보내고, 최저 출력 이하면 외부 독촉이 있어도 경매 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "선매 장부가 사라진 주 정전이 겹치자 수효은은 비상 발전을 건조실과 진료소에 잠그고 경매 조명을 껐다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/192/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 약재 보관 출력 일지·봉인"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 32,
+              "spent": 92,
+              "unspent": 0,
+              "total": 92
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "도농",
+              "type": "초소 영지",
+              "station": "도농",
+              "state": "S13",
+              "settlement": {
+                "name": "도농 정착지",
+                "type": "정착지",
+                "description": "도농 일대 고정 거점"
+              },
+              "note": "S13 도농 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Electrician/TL?",
-        "ko": "전력 설비",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Pharmacy/TL? (Herbal)",
-        "ko": "약재",
-        "level": 14,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 32,
-      "spent": 92,
-      "unspent": 0,
-      "total": 92
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

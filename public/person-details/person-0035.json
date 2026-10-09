@@ -3,6 +3,7 @@
   "name": "장우석",
   "title": "수리규격 감사기록관",
   "position": "수리규격 감사기록관",
+  "characterId": "K035",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "규격 기록·감사",
@@ -268,66 +269,370 @@
   },
   "gurps": {
     "id": "K035",
-    "personId": "person-0035",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0035"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K035",
+            "name": "장우석",
+            "url": "/people/person-0035",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "규격 기록·감사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/115/items/1/ko",
+                  "quote": "생업: 규격 기록·감사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배포하고, 비상 개정도 사흘 안의 재측정 없이는 무효라고 못 박는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "장우석은 사흘 기한을 적은 감사 문구를 붙여 규격 사본을 길드 평의회와 공방에 동시에 다시 내고, 정시우의 계측 도장부터 대조한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/115/items/1/ko",
+                    "quote": "생업: 규격 기록·감사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "장우석은 사흘 기한을 적은 감사 문구를 붙여 규격 사본을 길드 평의회와 공방에 동시에 다시 내고, 정시우의 계측 도장부터 대조한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배포하고, 비상 개정도 사흘 안의 재측정 없이는 무효라고 못 박는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/115/items/1/ko",
+                    "quote": "생업: 규격 기록·감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "지하 보도",
+              "camp": {
+                "name": "장우석 지하도 야영지",
+                "type": "야영지",
+                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K035",
+            "name": "장우석",
+            "url": "/people/person-0035",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "규격 기록·감사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/115/items/1/ko",
+                  "quote": "생업: 규격 기록·감사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배포하고, 비상 개정도 사흘 안의 재측정 없이는 무효라고 못 박는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "장우석은 사흘 기한을 적은 감사 문구를 붙여 규격 사본을 길드 평의회와 공방에 동시에 다시 내고, 정시우의 계측 도장부터 대조한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/115/items/1/ko",
+                    "quote": "생업: 규격 기록·감사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "장우석은 사흘 기한을 적은 감사 문구를 붙여 규격 사본을 길드 평의회와 공방에 동시에 다시 내고, 정시우의 계측 도장부터 대조한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/116/text/ko",
+                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배포하고, 비상 개정도 사흘 안의 재측정 없이는 무효라고 못 박는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/115/items/1/ko",
+                    "quote": "생업: 규격 기록·감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "지하 보도",
+              "camp": {
+                "name": "장우석 지하도 야영지",
+                "type": "야영지",
+                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Accounting",
-        "ko": "회계·감사",
-        "level": 13,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 64,
-      "unspent": 11,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

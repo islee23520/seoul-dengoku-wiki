@@ -3,6 +3,7 @@
   "name": "박성수",
   "title": "사본 관리인",
   "position": "사본 관리인 — 여러 권역의 사본을 맞추고 개정 요청을 모아 김연규에게 전한다.",
+  "characterId": "K1019",
   "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 통신선 정비 / 부 기록 보관",
@@ -386,60 +387,374 @@
   },
   "gurps": {
     "id": "K1019",
-    "personId": "person-1019",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 13,
-        "cp": 60
-      },
-      "IQ": {
-        "value": 19,
-        "cp": 180
-      },
-      "HT": {
-        "value": 13,
-        "cp": 30
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-1019"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1019",
+            "name": "박성수",
+            "url": "/people/person-1019",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 통신선 정비 / 부 기록 보관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/28/items/4/ko",
+                  "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 19,
+                "cp": 180,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "정비하러 다니는 그 길로 사본을 나른다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/31/text/ko",
+                    "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/28/items/4/ko",
+                    "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "정비하러 다니는 그 길로 사본을 나른다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/28/items/4/ko",
+                    "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/31/text/ko",
+                    "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/28/items/3/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 19,
+              "Per": 19,
+              "FP": 13,
+              "BasicSpeed": 6.5,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 270,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 282,
+              "unspent": 23,
+              "total": 305
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "외곽 순회 야영지",
+              "camp": {
+                "name": "박성수 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1019",
+            "name": "박성수",
+            "url": "/people/person-1019",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 통신선 정비 / 부 기록 보관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/28/items/4/ko",
+                  "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 19,
+                "cp": 180,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "정비하러 다니는 그 길로 사본을 나른다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/31/text/ko",
+                    "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/28/items/4/ko",
+                    "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "정비하러 다니는 그 길로 사본을 나른다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/28/items/4/ko",
+                    "quote": "생업: 주 통신선 정비 / 부 기록 보관"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/31/text/ko",
+                    "quote": "박성수는 권역마다 사본의 문구를 맞대어 보고, 다른 글자마다 번호를 매겨 대조표에 적는다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/28/items/3/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 19,
+              "Per": 19,
+              "FP": 13,
+              "BasicSpeed": 6.5,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 270,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 282,
+              "unspent": 23,
+              "total": 305
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "외곽 순회 야영지",
+              "camp": {
+                "name": "박성수 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 270,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 282,
-      "unspent": 23,
-      "total": 305
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 19,
-      "Per": 19,
-      "FP": 13,
-      "BasicSpeed": 6.5,
-      "BasicMove": 6,
-      "BasicLift": 20,
-      "Dodge": 9
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

@@ -3,6 +3,7 @@
   "name": "조은우",
   "title": "전파추적조 반장",
   "position": "위조 화폐 추적조 반장",
+  "characterId": "K224",
   "rank": "서기",
   "commonTier": "T5",
   "occupation": "위조 화폐 추적 로그·금고 접근 확인",
@@ -269,60 +270,348 @@
   },
   "gurps": {
     "id": "K224",
-    "personId": "person-0225",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0225"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K224",
+            "name": "조은우",
+            "url": "/people/person-0225",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "위조 화폐 추적 로그·금고 접근 확인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/50/items/0/ko",
+                  "quote": "생업: 위조 화폐 추적 로그·금고 접근 확인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/51/text/ko",
+                    "quote": "추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/52/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/50/items/0/ko",
+                    "quote": "생업: 위조 화폐 추적 로그·금고 접근 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/51/text/ko",
+                    "quote": "추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Forgery/TL?",
+                "ko": "위조 감별",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/50/items/0/ko",
+                    "quote": "생업: 위조 화폐 추적 로그·금고 접근 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/52/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "조은우 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Forgery/TL?",
-        "ko": "위조 감별",
-        "level": 13,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K224",
+            "name": "조은우",
+            "url": "/people/person-0225",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "위조 화폐 추적 로그·금고 접근 확인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/50/items/0/ko",
+                  "quote": "생업: 위조 화폐 추적 로그·금고 접근 확인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/51/text/ko",
+                    "quote": "추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/52/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/50/items/0/ko",
+                    "quote": "생업: 위조 화폐 추적 로그·금고 접근 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/51/text/ko",
+                    "quote": "추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Forgery/TL?",
+                "ko": "위조 감별",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/50/items/0/ko",
+                    "quote": "생업: 위조 화폐 추적 로그·금고 접근 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/52/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "조은우 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

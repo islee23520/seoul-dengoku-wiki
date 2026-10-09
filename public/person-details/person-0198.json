@@ -3,6 +3,7 @@
   "name": "신태산",
   "title": "호송 반장",
   "position": "호송 반장",
+  "characterId": "K197",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "호송 경로·도착 중량 대조",
@@ -269,60 +270,306 @@
   },
   "gurps": {
     "id": "K197",
-    "personId": "person-0198",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0198"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K197",
+            "name": "신태산",
+            "url": "/people/person-0198",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "호송 경로·도착 중량 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/72/items/2/ko",
+                  "quote": "생업: 호송 경로·도착 중량 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/72/items/2/ko",
+                    "quote": "생업: 호송 경로·도착 중량 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/72/items/2/ko",
+                    "quote": "생업: 호송 경로·도착 중량 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 16,
+              "unspent": 59,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "외곽 산지",
+              "camp": {
+                "name": "신태산 산림 야영지",
+                "type": "야영지",
+                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 12,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K197",
+            "name": "신태산",
+            "url": "/people/person-0198",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "호송 경로·도착 중량 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/72/items/2/ko",
+                  "quote": "생업: 호송 경로·도착 중량 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/72/items/2/ko",
+                    "quote": "생업: 호송 경로·도착 중량 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/72/items/2/ko",
+                    "quote": "생업: 호송 경로·도착 중량 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 16,
+              "unspent": 59,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "외곽 산지",
+              "camp": {
+                "name": "신태산 산림 야영지",
+                "type": "야영지",
+                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 16,
-      "unspent": 59,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

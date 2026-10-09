@@ -3,6 +3,7 @@
   "name": "차진아",
   "title": "결제권 원장 기록관",
   "position": "결제권 원장 기록관",
+  "characterId": "K206",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "결제권 발행 사본·재고 대조",
@@ -270,60 +271,338 @@
   },
   "gurps": {
     "id": "K206",
-    "personId": "person-0207",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0207"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K206",
+            "name": "차진아",
+            "url": "/people/person-0207",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "결제권 발행 사본·재고 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/160/items/2/ko",
+                  "quote": "생업: 결제권 발행 사본·재고 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/161/text/ko",
+                    "quote": "발행 사본을 경매판과 상회정에 동시에 붙이고, 앞당긴 발행도 사흘 안의 재고 확인 없이는 무효라고 못 박는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/160/items/2/ko",
+                    "quote": "생업: 결제권 발행 사본·재고 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/161/text/ko",
+                    "quote": "발행 사본을 경매판과 상회정에 동시에 붙이고, 앞당긴 발행도 사흘 안의 재고 확인 없이는 무효라고 못 박는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/160/items/2/ko",
+                    "quote": "생업: 결제권 발행 사본·재고 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "약수",
+              "type": "초소 영지",
+              "station": "약수",
+              "state": "S08",
+              "settlement": {
+                "name": "약수 정착지",
+                "type": "정착지",
+                "description": "약수 일대 고정 거점"
+              },
+              "note": "S08 약수 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Accounting",
-        "ko": "회계·감사",
-        "level": 13,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K206",
+            "name": "차진아",
+            "url": "/people/person-0207",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "결제권 발행 사본·재고 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/160/items/2/ko",
+                  "quote": "생업: 결제권 발행 사본·재고 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/161/text/ko",
+                    "quote": "발행 사본을 경매판과 상회정에 동시에 붙이고, 앞당긴 발행도 사흘 안의 재고 확인 없이는 무효라고 못 박는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/160/items/2/ko",
+                    "quote": "생업: 결제권 발행 사본·재고 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/161/text/ko",
+                    "quote": "발행 사본을 경매판과 상회정에 동시에 붙이고, 앞당긴 발행도 사흘 안의 재고 확인 없이는 무효라고 못 박는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/160/items/2/ko",
+                    "quote": "생업: 결제권 발행 사본·재고 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "약수",
+              "type": "초소 영지",
+              "station": "약수",
+              "state": "S08",
+              "settlement": {
+                "name": "약수 정착지",
+                "type": "정착지",
+                "description": "약수 일대 고정 거점"
+              },
+              "note": "S08 약수 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

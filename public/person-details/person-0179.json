@@ -3,6 +3,7 @@
   "name": "마커스 윌슨",
   "title": "선로 봉쇄 순찰대 조장",
   "position": "선로 봉쇄 순찰대 조장",
+  "characterId": "K178",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "선로 봉쇄 순찰·전환기 열쇠 확인",
@@ -364,66 +365,390 @@
   },
   "gurps": {
     "id": "K178",
-    "personId": "person-0179",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0179"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K178",
+            "name": "마커스 윌슨",
+            "url": "/people/person-0179",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "선로 봉쇄 순찰·전환기 열쇠 확인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/116/items/2/ko",
+                  "quote": "생업: 선로 봉쇄 순찰·전환기 열쇠 확인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/116/items/2/ko",
+                    "quote": "생업: 선로 봉쇄 순찰·전환기 열쇠 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/116/items/2/ko",
+                    "quote": "생업: 선로 봉쇄 순찰·전환기 열쇠 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/116/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "평촌",
+              "type": "초소 영지",
+              "station": "평촌",
+              "state": "S07",
+              "settlement": {
+                "name": "평촌 정착지",
+                "type": "정착지",
+                "description": "평촌 일대 고정 거점"
+              },
+              "note": "S07 평촌 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K178",
+            "name": "마커스 윌슨",
+            "url": "/people/person-0179",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "선로 봉쇄 순찰·전환기 열쇠 확인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/116/items/2/ko",
+                  "quote": "생업: 선로 봉쇄 순찰·전환기 열쇠 확인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/116/items/2/ko",
+                    "quote": "생업: 선로 봉쇄 순찰·전환기 열쇠 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/117/text/ko",
+                    "quote": "순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/116/items/2/ko",
+                    "quote": "생업: 선로 봉쇄 순찰·전환기 열쇠 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/115/text/ko",
+                    "quote": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/118/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/116/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "평촌",
+              "type": "초소 영지",
+              "station": "평촌",
+              "state": "S07",
+              "settlement": {
+                "name": "평촌 정착지",
+                "type": "정착지",
+                "description": "평촌 일대 고정 거점"
+              },
+              "note": "S07 평촌 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Shield",
-        "ko": "방패술",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 80,
-      "unspent": 0,
-      "total": 80
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

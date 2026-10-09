@@ -3,6 +3,7 @@
   "name": "방한울",
   "title": "중증도 진료 의무원, 은채윤의 실무 담당자",
   "position": "중증도 진료 수련의",
+  "characterId": "K330",
   "rank": "수련의",
   "commonTier": "T3",
   "occupation": "중증도 표·진료 소견 게시",
@@ -370,66 +371,380 @@
   },
   "gurps": {
     "id": "K330",
-    "personId": "person-0331",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0331"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K330",
+            "name": "방한울",
+            "url": "/people/person-0331",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "중증도 표·진료 소견 게시",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/127/items/0/ko",
+                  "quote": "생업: 중증도 표·진료 소견 게시"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 중증도 표·진료 소견 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 중증도 표·진료 소견 게시"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "First Aid/TL?",
+                "ko": "응급 처치·환자 이송",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 중증도 표·진료 소견 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "한강 둔치",
+              "camp": {
+                "name": "방한울 한강변 야영지",
+                "type": "야영지",
+                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K330",
+            "name": "방한울",
+            "url": "/people/person-0331",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "중증도 표·진료 소견 게시",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/127/items/0/ko",
+                  "quote": "생업: 중증도 표·진료 소견 게시"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 중증도 표·진료 소견 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 중증도 표·진료 소견 게시"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "First Aid/TL?",
+                "ko": "응급 처치·환자 이송",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 중증도 표·진료 소견 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "한강 둔치",
+              "camp": {
+                "name": "방한울 한강변 야영지",
+                "type": "야영지",
+                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "First Aid/TL?",
-        "ko": "응급 처치·환자 이송",
-        "level": 15,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 64,
-      "unspent": 11,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

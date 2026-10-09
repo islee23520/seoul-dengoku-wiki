@@ -3,6 +3,7 @@
   "name": "이연",
   "title": "수행 전령",
   "position": "수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명",
+  "characterId": "K1004",
   "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 전령 / 부 순찰대",
@@ -220,67 +221,408 @@
   },
   "gurps": {
     "id": "K1004",
-    "personId": "person-1004",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 16,
-        "cp": 120
-      },
-      "IQ": {
-        "value": 14,
-        "cp": 80
-      },
-      "HT": {
-        "value": 13,
-        "cp": 30
-      }
-    },
-    "traits": [
+    "personId": "person-1004"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Appearance (Transcendent) — 탈클래스 외모 부스팅; 일반 반응 +2, 해당 성에 매력을 느끼는 상대 +8 (+2 대체, +10 아님). 외모를 인식할 수 있는 상대에게만 적용하며 성별만으로 매력 대상을 정하지 않는다. Very Beautiful과 중복 구매하지 않고 Charisma·Voice·Smooth Operator를 추가하지 않는다. IQ·Observation에 가산하지 않으며 자동 복종·교섭 성공·시민권·전투 효과가 아니다.",
-        "kind": "advantage",
-        "cp": 24,
-        "rule": "appearance-transcendent"
-      }
-    ],
-    "skills": [
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 14,
-        "cp": 12
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1004",
+            "name": "이연",
+            "url": "/people/person-1004",
+            "state": "S00",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 전령 / 부 순찰대",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/6/items/4/ko",
+                  "quote": "생업: 주 전령 / 부 순찰대"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 16,
+                "cp": 120,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 14,
+                "cp": 80,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/6/ko",
+                    "quote": "수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [
+              {
+                "name": "Appearance (Transcendent) — 탈클래스 외모 부스팅; 일반 반응 +2, 해당 성에 매력을 느끼는 상대 +8 (+2 대체, +10 아님). 외모를 인식할 수 있는 상대에게만 적용하며 성별만으로 매력 대상을 정하지 않는다. Very Beautiful과 중복 구매하지 않고 Charisma·Voice·Smooth Operator를 추가하지 않는다. IQ·Observation에 가산하지 않으며 자동 복종·교섭 성공·시민권·전투 효과가 아니다.",
+                "kind": "advantage",
+                "rule": "appearance-transcendent",
+                "cp": 24,
+                "page": "B21",
+                "reaction": {
+                  "ordinaryObservers": 2,
+                  "observersAttractedToHerSex": 8,
+                  "application": "외모를 인식할 수 있는 해당 상대에게만. 성별만으로 매력을 느끼는 대상을 자동 확정하지 않는다."
+                },
+                "applicationBoundaries": [
+                  "매력 대상에게 적용되는 +8은 +2에 더하는 +10이 아니라 대체값이다.",
+                  "Appearance를 Very Beautiful [16]와 중복 구매하지 않는다. 종전 rest-options의 16 CP 제안은 발행 시트가 아니므로 차액 8이 아니라 현재 발행 시트 0에서 24 CP를 추가한다.",
+                  "Charisma·Voice·Smooth Operator 등 새 장점은 넣지 않아 같은 행적을 이중 가산하지 않는다. IQ·Observation에는 외모 보너스를 더하지 않는다.",
+                  "반응 보정은 자동 복종·교섭 성공·시민권·전투 효과가 아니다. 최고 Appearance 위에 새 등급을 만들지 않는다."
+                ],
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/14/ko",
+                    "line": 226,
+                    "quote": "외형: 세계관에서 가장 아름다운 여성. 생물학적 특성을 지닌 합성 휴머노이드다. 성인 고딕 여성으로 와인색 장발, 창백한 안색, 루비색 눈, 검은·와인색 고딕 의상을 입는다. 왼쪽 머리의 두 원형이 이어진 무한대(∞) 형상 기계 머리장식이 한눈에 가르는 표지다."
+                  }
+                ]
+              }
+            ],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "A",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/4/ko",
+                    "quote": "생업: 주 전령 / 부 순찰대"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/6/ko",
+                    "quote": "직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명"
+                  }
+                ],
+                "cp": 12,
+                "level": 14
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/4/ko",
+                    "quote": "생업: 주 전령 / 부 순찰대"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/3/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 14,
+              "Per": 14,
+              "FP": 13,
+              "BasicSpeed": 7.25,
+              "BasicMove": 7,
+              "BasicLift": 20,
+              "Dodge": 10
+            },
+            "cp": {
+              "attributes": 230,
+              "advantages": 24,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 274,
+              "unspent": 35,
+              "total": 309
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "외곽 순회 야영지",
+              "camp": {
+                "name": "이연 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 14,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1004",
+            "name": "이연",
+            "url": "/people/person-1004",
+            "state": "S00",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 전령 / 부 순찰대",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/6/items/4/ko",
+                  "quote": "생업: 주 전령 / 부 순찰대"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 16,
+                "cp": 120,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 14,
+                "cp": 80,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/6/ko",
+                    "quote": "수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [
+              {
+                "name": "Appearance (Transcendent) — 탈클래스 외모 부스팅; 일반 반응 +2, 해당 성에 매력을 느끼는 상대 +8 (+2 대체, +10 아님). 외모를 인식할 수 있는 상대에게만 적용하며 성별만으로 매력 대상을 정하지 않는다. Very Beautiful과 중복 구매하지 않고 Charisma·Voice·Smooth Operator를 추가하지 않는다. IQ·Observation에 가산하지 않으며 자동 복종·교섭 성공·시민권·전투 효과가 아니다.",
+                "kind": "advantage",
+                "rule": "appearance-transcendent",
+                "cp": 24,
+                "page": "B21",
+                "reaction": {
+                  "ordinaryObservers": 2,
+                  "observersAttractedToHerSex": 8,
+                  "application": "외모를 인식할 수 있는 해당 상대에게만. 성별만으로 매력을 느끼는 대상을 자동 확정하지 않는다."
+                },
+                "applicationBoundaries": [
+                  "매력 대상에게 적용되는 +8은 +2에 더하는 +10이 아니라 대체값이다.",
+                  "Appearance를 Very Beautiful [16]와 중복 구매하지 않는다. 종전 rest-options의 16 CP 제안은 발행 시트가 아니므로 차액 8이 아니라 현재 발행 시트 0에서 24 CP를 추가한다.",
+                  "Charisma·Voice·Smooth Operator 등 새 장점은 넣지 않아 같은 행적을 이중 가산하지 않는다. IQ·Observation에는 외모 보너스를 더하지 않는다.",
+                  "반응 보정은 자동 복종·교섭 성공·시민권·전투 효과가 아니다. 최고 Appearance 위에 새 등급을 만들지 않는다."
+                ],
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/14/ko",
+                    "line": 226,
+                    "quote": "외형: 세계관에서 가장 아름다운 여성. 생물학적 특성을 지닌 합성 휴머노이드다. 성인 고딕 여성으로 와인색 장발, 창백한 안색, 루비색 눈, 검은·와인색 고딕 의상을 입는다. 왼쪽 머리의 두 원형이 이어진 무한대(∞) 형상 기계 머리장식이 한눈에 가르는 표지다."
+                  }
+                ]
+              }
+            ],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "A",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/4/ko",
+                    "quote": "생업: 주 전령 / 부 순찰대"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/6/ko",
+                    "quote": "직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명"
+                  }
+                ],
+                "cp": 12,
+                "level": 14
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/4/ko",
+                    "quote": "생업: 주 전령 / 부 순찰대"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/6/items/3/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 14,
+              "Per": 14,
+              "FP": 13,
+              "BasicSpeed": 7.25,
+              "BasicMove": 7,
+              "BasicLift": 20,
+              "Dodge": 10
+            },
+            "cp": {
+              "attributes": 230,
+              "advantages": 24,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 274,
+              "unspent": 35,
+              "total": 309
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "외곽 순회 야영지",
+              "camp": {
+                "name": "이연 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 230,
-      "advantages": 24,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 274,
-      "unspent": 35,
-      "total": 309
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 14,
-      "Per": 14,
-      "FP": 13,
-      "BasicSpeed": 7.25,
-      "BasicMove": 7,
-      "BasicLift": 20,
-      "Dodge": 10
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

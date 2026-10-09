@@ -1,12 +1,13 @@
-// 겁스 4판 인물 수치 검사기 시험 (node --test).
-// (a) 커밋된 gurps-cast.json이 검사를 통과하고 카드에서 다시 파생한 결과와 바이트 단위로 같은지,
-// (b) 승인 견본 두 사람과 K001–K1019 순서가 그대로인지, (c) 변이마다 검사가 실패하는지 본다.
+// Preserved legacy records are checked against independent sealed hashes, not formulas.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { test } from 'vitest'
 import * as G from './gurps-cast.mjs'
-import { ABILITY_CAP, BANDS, OUT, ROOT, TIERS, bandFor, build, serialize, stepFor, verify } from './gurps-cast.mjs'
+import { OUT, ROOT, build as buildSelected, verify as verifySelected } from './gurps-cast.mjs'
+const REVISION = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
+const build = () => buildSelected(ROOT, REVISION)
+const verify = (value) => verifySelected(value, ROOT, REVISION)
 
 const raw = readFileSync(join(ROOT, OUT), 'utf8')
 const doc = JSON.parse(raw)
@@ -35,7 +36,7 @@ for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
     const block = source.content[Number(pointer.split('/')[2])]
     assert.ok(actor.timeline[0].sourceRefs.some((ref) => ref.path === path && ref.anchor === block.anchor))
     assert.ok(block.text.ko[1].text.includes(name))
-    const derived = G.derivePerson(ROOT, find(doc, id), new Set(doc.people.map((p) => p.name)))
+    const derived = find(build().doc, id)
     for (const person of [derived, find(doc, id)]) {
       const evidence = [...Object.values(person.attributes).flatMap((at) => at.evidence), ...person.skills.flatMap((skill) => skill.evidence)]
       assert.ok(!evidence.some((e) => e.path === path && e.pointer === pointer))
@@ -48,22 +49,22 @@ for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
   test(`${id}: generated detail renders the surviving descendant allocation`, async () => {
     const { createElement } = await import('react')
     const { renderToStaticMarkup } = await import('react-dom/server')
-    const { GurpsSheet } = await import('../src/pages/PersonDetailPage.tsx')
+    const { GurpsSheet, selectPreservedSheet } = await import('../src/pages/PersonDetailPage.tsx')
     const sheet = find(doc, id)
     const routeId = sheet.url.split('/').pop()
     const detail = JSON.parse(readFileSync(join(ROOT, 'public/person-details', routeId + '.json'), 'utf8'))
-    assert.equal(detail.gurps.id, id)
-    assert.deepEqual(detail.gurps.attributes, Object.fromEntries(Object.entries(sheet.attributes).map(([key, { value, cp }]) => [key, { value, cp }])))
-    assert.deepEqual(detail.gurps.cp, sheet.cp)
-    assert.deepEqual(detail.gurps.skills, sheet.skills.map(({ name, ko, level, cp }) => ({ name, ko, level, cp })))
-    const html = renderToStaticMarkup(createElement(GurpsSheet, { gurps: detail.gurps }))
-    const administration = detail.gurps.skills.find((skill) => skill.name === G.SKILLS.administration.name)
+    const selected = selectPreservedSheet(detail.personSheet, { id, personId: routeId, name: sheet.name, state: sheet.state }, REVISION)
+    assert.equal(selected.ok, true)
+    assert.deepEqual(selected.record, sheet)
+    assert.deepEqual(selected.sheet.cp, sheet.cp)
+    const html = renderToStaticMarkup(createElement(GurpsSheet, { gurps: selected.sheet }))
+    const administration = selected.sheet.skills.find((skill) => skill.name === 'Administration')
     assert.ok(administration)
     const label = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, administration.ko || administration.name))
     assert.ok(html.includes(label))
     if (id === 'K320') {
-      assert.ok(!detail.gurps.skills.some((skill) => skill.name === G.SKILLS.leadership.name))
-      const leadershipLabel = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, G.SKILLS.leadership.ko || G.SKILLS.leadership.name))
+      assert.ok(!selected.sheet.skills.some((skill) => skill.name === 'Leadership'))
+      const leadershipLabel = renderToStaticMarkup(createElement('span', { className: 'skill-name' }, '지휘'))
       assert.ok(!html.includes(leadershipLabel))
     }
   })
@@ -79,9 +80,8 @@ for (const [id, actorId, name, birthDate, path, pointer] of ancestors) {
       const target = field === 'ability' ? person.attributes.IQ : person.skills[0]
       target.evidence[0] = citation
       const errors = verify(mutant)
-      assert.equal(errors.length, 1)
-      assert.ok(errors[0].startsWith(receiver + ' ') && errors[0].includes('선대 행위'))
-      assert.ok(errors[0].includes(path + '#' + pointer))
+      assert.ok(errors.some((error) => error.startsWith(receiver + ' ') && error.includes('선대 행위') && error.includes(path + '#' + pointer)))
+      assert.ok(errors.some((error) => error.startsWith('E_PERSON_PRESERVATION')))
     })
   }
 }
@@ -90,8 +90,12 @@ test('커밋된 파일이 모든 검사를 통과한다', () => {
   assert.deepEqual(verify(doc), [])
 })
 
-test('카드에서 다시 파생한 결과가 커밋된 파일과 바이트 단위로 같다', () => {
-  assert.equal(serialize(build().doc), raw)
+test('발급은 1,022명의 전체 레코드와 30,439개 수치를 그대로 보존한다', () => {
+  const fresh = build().doc
+  assert.deepEqual(fresh.people, doc.people)
+  assert.deepEqual(G.numericFields(fresh.people), G.numericFields(doc.people))
+  assert.equal(G.numericFields(fresh.people).length, 30439)
+  assert.deepEqual(verify(fresh), [])
 })
 
 test('family history does not grant ancestor training to current diaspora people', () => {
@@ -142,41 +146,45 @@ test('근거 없는 사람은 네 능력 10과 빈 근거 목록만 가지고, 7
   }
 })
 
-test('규칙표: B170 투자 단계, 등급표, 구간 경계', () => {
-  assert.deepEqual([1, 2, 4, 8, 12, 16].map(stepFor), [0, 1, 2, 3, 4, 5])
-  assert.equal(stepFor(3), null)
-  assert.deepEqual(TIERS, { A: 12, B: 8, C: 4, D: 2 })
-  assert.equal(ABILITY_CAP, 3)
-  assert.deepEqual([75, 124, 125, 199, 200, 300].map((n) => bandFor(n)[0]), ['일반 인물', '일반 인물', '숙련자', '숙련자', '주역·강자', '주역·강자'])
-  assert.deepEqual(bandFor(74), [])
-  assert.deepEqual(bandFor(301), [])
-  assert.equal(BANDS.length, 3)
+test('explicit revision is mandatory and legacy values are not original ratings', () => {
+  assert.throws(() => buildSelected(), /E_EXPLICIT_REVISION/)
+  assert.throws(() => verifySelected(doc), /E_EXPLICIT_REVISION/)
+  assert.throws(() => buildSelected(ROOT, G.REVISIONS[0]), /E_SOURCE_HASH/)
+  const fresh = build().doc
+  assert.deepEqual(fresh.rules, { rulesVersion: 'seoul.opposed-d10.v1', resolution: 'opposed-d10', sourceRevision: REVISION, numericAdoption: false, legacyValues: 'immutable-not-d10-ratings', originalRatings: null })
+  assert.equal(fresh.legacy.operative, false)
+  assert.deepEqual(fresh.legacy.metadata.rules, doc.rules)
+  assert.equal(G.stepFor, undefined)
+  assert.equal(G.derivePerson, undefined)
+  for (const change of [
+    (d) => { d.rules.numericAdoption = true },
+    (d) => { d.rules.sourceRevision = G.REVISIONS[0] },
+    (d) => { d.rules.originalRatings = { K001: 12 } },
+    (d) => { d.legacy.operative = true },
+    (d) => { d.legacy.metadata.people = d.people },
+  ]) {
+    const mutant = structuredClone(fresh)
+    change(mutant)
+    assert.ok(verify(mutant).length)
+  }
 })
 
 // 소유자 결정 2026-09-28(G2 Q2 B·Q6 C·Q8 C).
-const spentOf = (p) => p.cp.attributes + p.cp.advantages + p.cp.disadvantages + p.cp.skills
-
-test('Q2 B: 75 CP 미만인 사람이 없고, 모자란 만큼만 미사용 점수로 채운다', () => {
+test('legacy CP allocations and unspent balances are preserved, not recalculated', () => {
+  const fresh = build().doc
   for (const p of doc.people) {
-    assert.ok(p.cp.total >= 75, `${p.id} 총점 ${p.cp.total} < 75`)
-    assert.equal(p.cp.spent, spentOf(p), `${p.id} spent`)
-    if (G.APPROVED_EXCEPTIONS[p.id]) assert.equal(p.cp.total, G.APPROVED_EXCEPTIONS[p.id].total)
-    else assert.equal(p.cp.unspent, Math.max(0, 75 - p.cp.spent), `${p.id} unspent`)
-    assert.equal(p.cp.total, p.cp.spent + p.cp.unspent, `${p.id} total`)
-    assert.notEqual(p.band, '근거 미달', `${p.id} 근거 미달`)
-  }
-  assert.ok(doc.people.filter((p) => p.cp.unspent > 0).length > 900)
-})
-
-test('Q2 B: 미사용 점수는 기술이 되지 않는다(기술 CP 합계는 기술 목록과 같고, 기술표 밖 이름이 없다)', () => {
-  for (const p of doc.people) {
-    assert.equal(p.cp.skills, p.skills.reduce((n, s) => n + s.cp, 0), `${p.id} 기술 합계`)
-    for (const s of p.skills) {
-      assert.doesNotMatch(s.name, /unspent|미사용/iu, `${p.id} ${s.name}`)
-      if (G.APPROVED_EXCEPTIONS[p.id] && !s.tier) assert.ok(Number.isInteger(s.level), `${p.id} ${s.name} 보존 수준 없음`)
-      else assert.ok(s.evidence.length > 0, `${p.id} ${s.name} 근거 없음`)
+    const issued = find(fresh, p.id)
+    assert.deepEqual(issued.cp, p.cp, p.id)
+    assert.deepEqual(issued.skills, p.skills, p.id)
+    assert.deepEqual(issued.secondary, p.secondary, p.id)
+    assert.equal(issued.band, p.band, p.id)
+    for (const s of issued.skills) {
+      assert.doesNotMatch(s.name, /unspent|미사용/iu)
+      if (G.APPROVED_EXCEPTIONS[p.id] && !s.tier) assert.ok(Number.isInteger(s.level))
+      else assert.ok(s.evidence.length > 0)
     }
   }
+  assert.equal(fresh.people.filter((p) => p.cp.unspent > 0).length, 960)
 })
 
 test('Q6 C: 이연 Observation은 A(12 CP)이고 소유자가 정한 직위 줄을 인용한다. 민웅기는 그대로 B', () => {
@@ -294,7 +302,7 @@ function setIQ(p, evidence) {
   p.cp.spent += delta * 20
   p.cp.unspent = Math.max(0, 75 - p.cp.spent)
   p.cp.total = p.cp.spent + p.cp.unspent
-  p.band = bandFor(p.cp.total)[0]
+  p.band = p.cp.total < 125 ? '일반 인물' : p.cp.total < 200 ? '숙련자' : '주역·강자'
 }
 
 const MUTATIONS = [
@@ -323,6 +331,9 @@ const MUTATIONS = [
   ['단점 발급', (d) => { const p = d.people[sampleIndex]; p.traits.push({ name: 'Sense of Duty', kind: 'disadvantage', rule: 'reputation', level: -1, people: 1, frequency: 1, cp: -5, evidence: p.skills[0].evidence }); p.cp.disadvantages -= 5; p.cp.total -= 5 }],
   ['Dodge 보조 특성 +1', (d) => { d.people[sampleIndex].secondary.Dodge += 1 }],
   ['baseline 표시를 거짓으로', (d) => { d.people[sampleIndex].baseline = true }],
+  ['숫자 필드 누락', (d) => { delete d.people[0].secondary.BasicLift }],
+  ['인물 중복', (d) => { d.people[1] = structuredClone(d.people[0]) }],
+  ['유효한 다른 인물 인용 도용', (d) => { d.people[sampleIndex].skills[0].evidence[0] = structuredClone(d.people[0].skills[0].evidence[0]) }],
   ['두 사람 순서 교환', (d) => { const t = d.people[0]; d.people[0] = d.people[1]; d.people[1] = t }],
   ['한 사람 누락', (d) => { d.people.splice(500, 1); d.count -= 1 }],
   ['URL 변경', (d) => { d.people[sampleIndex].url = '/people/person-9999' }],

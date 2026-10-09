@@ -3,6 +3,7 @@
   "name": "마은결",
   "title": "종로 공증사본 시장 경매사",
   "position": "종로 공증사본 시장 경매사",
+  "characterId": "K159",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "공증사본 인장 확인·경매",
@@ -268,60 +269,358 @@
   },
   "gurps": {
     "id": "K159",
-    "personId": "person-0160",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0160"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K159",
+            "name": "마은결",
+            "url": "/people/person-0160",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공증사본 인장 확인·경매",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-06.json",
+                  "pointer": "/content/171/items/0/ko",
+                  "quote": "생업: 공증사본 인장 확인·경매"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "사본 시세를 강바람보다 빨리 읽고, 빈 철제를 고가에 올리려는 상인을 아침 추첨에서 즉시 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "경매 시작 전 인장 스티커를 확인하고, 증인란이 빈 사본은 낙찰이 되어도 반출시키지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "마은결은 그 이름을 추첨에서 빼고, 오서율의 공증 날인을 경매 전에 확인한 사본만 마도한의 운송 순번에 싣는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/171/items/0/ko",
+                    "quote": "생업: 공증사본 인장 확인·경매"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "마은결은 그 이름을 추첨에서 빼고, 오서율의 공증 날인을 경매 전에 확인한 사본만 마도한의 운송 순번에 싣는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/171/items/0/ko",
+                    "quote": "생업: 공증사본 인장 확인·경매"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "사본 시세를 강바람보다 빨리 읽고, 빈 철제를 고가에 올리려는 상인을 아침 추첨에서 즉시 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "경매 시작 전 인장 스티커를 확인하고, 증인란이 빈 사본은 낙찰이 되어도 반출시키지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "명동",
+              "type": "초소 영지",
+              "station": "명동",
+              "state": "S06",
+              "settlement": {
+                "name": "명동 정착지",
+                "type": "정착지",
+                "description": "명동 일대 고정 거점"
+              },
+              "note": "S06 명동 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 15,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K159",
+            "name": "마은결",
+            "url": "/people/person-0160",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공증사본 인장 확인·경매",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-06.json",
+                  "pointer": "/content/171/items/0/ko",
+                  "quote": "생업: 공증사본 인장 확인·경매"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "사본 시세를 강바람보다 빨리 읽고, 빈 철제를 고가에 올리려는 상인을 아침 추첨에서 즉시 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "경매 시작 전 인장 스티커를 확인하고, 증인란이 빈 사본은 낙찰이 되어도 반출시키지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "마은결은 그 이름을 추첨에서 빼고, 오서율의 공증 날인을 경매 전에 확인한 사본만 마도한의 운송 순번에 싣는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/171/items/0/ko",
+                    "quote": "생업: 공증사본 인장 확인·경매"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "마은결은 그 이름을 추첨에서 빼고, 오서율의 공증 날인을 경매 전에 확인한 사본만 마도한의 운송 순번에 싣는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/171/items/0/ko",
+                    "quote": "생업: 공증사본 인장 확인·경매"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "사본 시세를 강바람보다 빨리 읽고, 빈 철제를 고가에 올리려는 상인을 아침 추첨에서 즉시 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "경매 시작 전 인장 스티커를 확인하고, 증인란이 빈 사본은 낙찰이 되어도 반출시키지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "명동",
+              "type": "초소 영지",
+              "station": "명동",
+              "state": "S06",
+              "settlement": {
+                "name": "명동 정착지",
+                "type": "정착지",
+                "description": "명동 일대 고정 거점"
+              },
+              "note": "S06 명동 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 76,
-      "unspent": 0,
-      "total": 76
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

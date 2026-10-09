@@ -3,6 +3,7 @@
   "name": "고예진",
   "title": "권역 간 계약 자문가",
   "position": "권역 간 계약 자문가",
+  "characterId": "K1018",
   "rank": "해당 없음 — 어느 나라의 관직도 맡지 않는다.",
   "commonTier": "T5",
   "occupation": "주 물류상 / 부 기록관",
@@ -271,66 +272,312 @@
   },
   "gurps": {
     "id": "K1018",
-    "personId": "person-1018",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-1018"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1018",
+            "name": "고예진",
+            "url": "/people/person-1018",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 물류상 / 부 기록관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/18/items/5/ko",
+                  "quote": "생업: 주 물류상 / 부 기록관"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/23/text/ko",
+                    "quote": "방호 교육과 반복 사격으로 권총을 익혔으며 개인 소유 권총을 사용한다."
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 25,
+                "cp": 300,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/18/items/5/ko",
+                    "quote": "생업: 주 물류상 / 부 기록관"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Guns/TL? (Pistol)",
+                "ko": "권총 사격",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/23/text/ko",
+                    "quote": "방호 교육과 반복 사격으로 권총을 익혔으며 개인 소유 권총을 사용한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/18/items/5/ko",
+                    "quote": "생업: 주 물류상 / 부 기록관"
+                  }
+                ],
+                "cp": 4,
+                "level": 11
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/18/items/4/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 25,
+              "Per": 25,
+              "FP": 13,
+              "BasicSpeed": 6.5,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 390,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 410,
+              "unspent": 35,
+              "total": 445
+            },
+            "band": "주역·강자",
+            "baseline": false
+          }
+        }
       },
-      "DX": {
-        "value": 13,
-        "cp": 60
-      },
-      "IQ": {
-        "value": 25,
-        "cp": 300
-      },
-      "HT": {
-        "value": 13,
-        "cp": 30
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1018",
+            "name": "고예진",
+            "url": "/people/person-1018",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 물류상 / 부 기록관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/18/items/5/ko",
+                  "quote": "생업: 주 물류상 / 부 기록관"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/23/text/ko",
+                    "quote": "방호 교육과 반복 사격으로 권총을 익혔으며 개인 소유 권총을 사용한다."
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 25,
+                "cp": 300,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/18/items/5/ko",
+                    "quote": "생업: 주 물류상 / 부 기록관"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Guns/TL? (Pistol)",
+                "ko": "권총 사격",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/23/text/ko",
+                    "quote": "방호 교육과 반복 사격으로 권총을 익혔으며 개인 소유 권총을 사용한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/18/items/5/ko",
+                    "quote": "생업: 주 물류상 / 부 기록관"
+                  }
+                ],
+                "cp": 4,
+                "level": 11
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/18/items/4/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 25,
+              "Per": 25,
+              "FP": 13,
+              "BasicSpeed": 6.5,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 390,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 410,
+              "unspent": 35,
+              "total": 445
+            },
+            "band": "주역·강자",
+            "baseline": false
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 12,
-        "cp": 8
-      },
-      {
-        "name": "Guns/TL? (Pistol)",
-        "ko": "권총 사격",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 11,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 390,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 410,
-      "unspent": 35,
-      "total": 445
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 25,
-      "Per": 25,
-      "FP": 13,
-      "BasicSpeed": 6.5,
-      "BasicMove": 6,
-      "BasicLift": 20,
-      "Dodge": 9
-    }
+    ]
   },
   "confirmedHoldings": [],
   "clan": null,

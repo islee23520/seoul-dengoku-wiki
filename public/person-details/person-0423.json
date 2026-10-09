@@ -3,6 +3,7 @@
   "name": "노세람",
   "title": "계약 감사 서기",
   "position": "계약 감사 서기",
+  "characterId": "K422",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "계약 감사 기록·당직 열쇠 인계",
@@ -279,60 +280,296 @@
   },
   "gurps": {
     "id": "K422",
-    "personId": "person-0423",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0423"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K422",
+            "name": "노세람",
+            "url": "/people/person-0423",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "계약 감사 기록·당직 열쇠 인계",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/655/items/0/ko",
+                  "quote": "생업: 계약 감사 기록·당직 열쇠 인계"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 계약 감사 기록·당직 열쇠 인계"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 계약 감사 기록·당직 열쇠 인계"
+                  }
+                ],
+                "cp": 8,
+                "level": 11
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 16,
+              "unspent": 59,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "을지로입구",
+              "type": "초소 영지",
+              "station": "을지로입구",
+              "state": "S16",
+              "settlement": {
+                "name": "을지로입구 정착지",
+                "type": "정착지",
+                "description": "을지로입구 일대 고정 거점"
+              },
+              "note": "S16 을지로입구 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Accounting",
-        "ko": "회계·감사",
-        "level": 11,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K422",
+            "name": "노세람",
+            "url": "/people/person-0423",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "계약 감사 기록·당직 열쇠 인계",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/655/items/0/ko",
+                  "quote": "생업: 계약 감사 기록·당직 열쇠 인계"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 계약 감사 기록·당직 열쇠 인계"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 계약 감사 기록·당직 열쇠 인계"
+                  }
+                ],
+                "cp": 8,
+                "level": 11
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 16,
+              "unspent": 59,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "을지로입구",
+              "type": "초소 영지",
+              "station": "을지로입구",
+              "state": "S16",
+              "settlement": {
+                "name": "을지로입구 정착지",
+                "type": "정착지",
+                "description": "을지로입구 일대 고정 거점"
+              },
+              "note": "S16 을지로입구 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 16,
-      "unspent": 59,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

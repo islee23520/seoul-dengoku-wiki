@@ -3,6 +3,7 @@
   "name": "곽태산",
   "title": "의료열차 수비대장",
   "position": "의료열차 수비대장",
+  "characterId": "K301",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "의료열차 칸 열쇠·무기함 봉인 관리",
@@ -270,66 +271,370 @@
   },
   "gurps": {
     "id": "K301",
-    "personId": "person-0302",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0302"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K301",
+            "name": "곽태산",
+            "url": "/people/person-0302",
+            "state": "S12",
+            "method": "card-lexicon",
+            "role": {
+              "display": "의료열차 칸 열쇠·무기함 봉인 관리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-12.json",
+                  "pointer": "/content/94/items/0/ko",
+                  "quote": "생업: 의료열차 칸 열쇠·무기함 봉인 관리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/95/text/ko",
+                    "quote": "칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/96/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/94/items/0/ko",
+                    "quote": "생업: 의료열차 칸 열쇠·무기함 봉인 관리"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/95/text/ko",
+                    "quote": "칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/96/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/94/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 신내운수 규모",
+              "faction_scale": {
+                "state": "S12",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐컨테이너 적치장",
+              "camp": {
+                "name": "곽태산 컨테이너 야영지",
+                "type": "야영지",
+                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K301",
+            "name": "곽태산",
+            "url": "/people/person-0302",
+            "state": "S12",
+            "method": "card-lexicon",
+            "role": {
+              "display": "의료열차 칸 열쇠·무기함 봉인 관리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-12.json",
+                  "pointer": "/content/94/items/0/ko",
+                  "quote": "생업: 의료열차 칸 열쇠·무기함 봉인 관리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/95/text/ko",
+                    "quote": "칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/96/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/94/items/0/ko",
+                    "quote": "생업: 의료열차 칸 열쇠·무기함 봉인 관리"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/95/text/ko",
+                    "quote": "칸 열쇠와 무기함 봉인을 분리해 보관하고, 수색은 통행 심사관 입회 아래에서만 한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/96/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/94/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 신내운수 규모",
+              "faction_scale": {
+                "state": "S12",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐컨테이너 적치장",
+              "camp": {
+                "name": "곽태산 컨테이너 야영지",
+                "type": "야영지",
+                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 13,
-        "cp": 4
-      },
-      {
-        "name": "Shield",
-        "ko": "방패술",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

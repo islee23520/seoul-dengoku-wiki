@@ -3,6 +3,7 @@
   "name": "원미루",
   "title": "원산지·위조약 탐사원",
   "position": "위조약 감별 수련의",
+  "characterId": "K333",
   "rank": "수련의",
   "commonTier": "T3",
   "occupation": "위조약 감별·산지 기록",
@@ -269,78 +270,414 @@
   },
   "gurps": {
     "id": "K333",
-    "personId": "person-0334",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0334"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K333",
+            "name": "원미루",
+            "url": "/people/person-0334",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "위조약 감별·산지 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/160/items/0/ko",
+                  "quote": "생업: 위조약 감별·산지 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/162/text/ko",
+                    "quote": "가짜 해열제 캡슐이 강국 보호창고 인장과 같다는 증언이 들어오자 원미루는 청량리 후문을 단독 측량했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/160/items/0/ko",
+                    "quote": "생업: 위조약 감별·산지 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/160/items/0/ko",
+                    "quote": "생업: 위조약 감별·산지 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Forgery/TL?",
+                "ko": "위조 감별",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/160/items/0/ko",
+                    "quote": "생업: 위조약 감별·산지 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Cartography/TL?",
+                "ko": "실측·지도",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/162/text/ko",
+                    "quote": "가짜 해열제 캡슐이 강국 보호창고 인장과 같다는 증언이 들어오자 원미루는 청량리 후문을 단독 측량했다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 36,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "회기",
+              "type": "초소 영지",
+              "station": "회기",
+              "state": "S13",
+              "settlement": {
+                "name": "회기 정착지",
+                "type": "정착지",
+                "description": "회기 일대 고정 거점"
+              },
+              "note": "S13 회기 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K333",
+            "name": "원미루",
+            "url": "/people/person-0334",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "위조약 감별·산지 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/160/items/0/ko",
+                  "quote": "생업: 위조약 감별·산지 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/162/text/ko",
+                    "quote": "가짜 해열제 캡슐이 강국 보호창고 인장과 같다는 증언이 들어오자 원미루는 청량리 후문을 단독 측량했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/160/items/0/ko",
+                    "quote": "생업: 위조약 감별·산지 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/159/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/160/items/0/ko",
+                    "quote": "생업: 위조약 감별·산지 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Forgery/TL?",
+                "ko": "위조 감별",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/160/items/0/ko",
+                    "quote": "생업: 위조약 감별·산지 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Cartography/TL?",
+                "ko": "실측·지도",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/162/text/ko",
+                    "quote": "가짜 해열제 캡슐이 강국 보호창고 인장과 같다는 증언이 들어오자 원미루는 청량리 후문을 단독 측량했다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 36,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "회기",
+              "type": "초소 영지",
+              "station": "회기",
+              "state": "S13",
+              "settlement": {
+                "name": "회기 정착지",
+                "type": "정착지",
+                "description": "회기 일대 고정 거점"
+              },
+              "note": "S13 회기 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Pharmacy/TL? (Herbal)",
-        "ko": "약재",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Forgery/TL?",
-        "ko": "위조 감별",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Cartography/TL?",
-        "ko": "실측·지도",
-        "level": 13,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 36,
-      "spent": 76,
-      "unspent": 0,
-      "total": 76
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

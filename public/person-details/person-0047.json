@@ -3,6 +3,7 @@
   "name": "명다해",
   "title": "금천 배급솥 시장 중개인",
   "position": "금천 배급솥 시장 중개인",
+  "characterId": "K047",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "배급솥 운영",
@@ -368,60 +369,318 @@
   },
   "gurps": {
     "id": "K047",
-    "personId": "person-0047",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0047"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Cooking",
-        "ko": "배급솥",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K047",
+            "name": "명다해",
+            "url": "/people/person-0047",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "배급솥 운영",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/203/items/1/ko",
+                  "quote": "생업: 배급솥 운영"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/204/text/ko",
+                    "quote": "뚜껑 번호가 없는 솥은 불을 피우지 않고, 외곽 수레는 국자가 기둥에서 풀린 뒤에만 보낸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Cooking",
+                "ko": "배급솥",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/203/items/1/ko",
+                    "quote": "생업: 배급솥 운영"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/204/text/ko",
+                    "quote": "뚜껑 번호가 없는 솥은 불을 피우지 않고, 외곽 수레는 국자가 기둥에서 풀린 뒤에만 보낸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/203/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 32,
+              "unspent": 43,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "갈산",
+              "type": "초소 영지",
+              "station": "갈산",
+              "state": "S02",
+              "settlement": {
+                "name": "갈산 정착지",
+                "type": "정착지",
+                "description": "갈산 일대 고정 거점"
+              },
+              "note": "S02 갈산 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K047",
+            "name": "명다해",
+            "url": "/people/person-0047",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "배급솥 운영",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/203/items/1/ko",
+                  "quote": "생업: 배급솥 운영"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/204/text/ko",
+                    "quote": "뚜껑 번호가 없는 솥은 불을 피우지 않고, 외곽 수레는 국자가 기둥에서 풀린 뒤에만 보낸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Cooking",
+                "ko": "배급솥",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/203/items/1/ko",
+                    "quote": "생업: 배급솥 운영"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/204/text/ko",
+                    "quote": "뚜껑 번호가 없는 솥은 불을 피우지 않고, 외곽 수레는 국자가 기둥에서 풀린 뒤에만 보낸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/203/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 32,
+              "unspent": 43,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "갈산",
+              "type": "초소 영지",
+              "station": "갈산",
+              "state": "S02",
+              "settlement": {
+                "name": "갈산 정착지",
+                "type": "정착지",
+                "description": "갈산 일대 고정 거점"
+              },
+              "note": "S02 갈산 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 32,
-      "unspent": 43,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

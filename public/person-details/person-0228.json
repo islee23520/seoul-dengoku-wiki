@@ -3,6 +3,7 @@
   "name": "봉소",
   "title": "송신조 당직 의무원",
   "position": "금고 당직 의무원",
+  "characterId": "K227",
   "rank": "서기",
   "commonTier": "T5",
   "occupation": "금고 당직 진료·각성제 사용 기록",
@@ -369,60 +370,328 @@
   },
   "gurps": {
     "id": "K227",
-    "personId": "person-0228",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0228"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K227",
+            "name": "봉소",
+            "url": "/people/person-0228",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "금고 당직 진료·각성제 사용 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/83/items/0/ko",
+                  "quote": "생업: 금고 당직 진료·각성제 사용 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/84/text/ko",
+                    "quote": "당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/83/items/0/ko",
+                    "quote": "생업: 금고 당직 진료·각성제 사용 기록"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/84/text/ko",
+                    "quote": "당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/83/items/0/ko",
+                    "quote": "생업: 금고 당직 진료·각성제 사용 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "중단된 공사장",
+              "camp": {
+                "name": "봉소 공사장 야영지",
+                "type": "야영지",
+                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 12,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K227",
+            "name": "봉소",
+            "url": "/people/person-0228",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "금고 당직 진료·각성제 사용 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/83/items/0/ko",
+                  "quote": "생업: 금고 당직 진료·각성제 사용 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/84/text/ko",
+                    "quote": "당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/83/items/0/ko",
+                    "quote": "생업: 금고 당직 진료·각성제 사용 기록"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/84/text/ko",
+                    "quote": "당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/83/items/0/ko",
+                    "quote": "생업: 금고 당직 진료·각성제 사용 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "중단된 공사장",
+              "camp": {
+                "name": "봉소 공사장 야영지",
+                "type": "야영지",
+                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 36,
-      "unspent": 39,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

@@ -1,93 +1,141 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { URL } from 'node:url'
+import { createHash } from 'node:crypto'
 import { test } from 'vitest'
-import React from 'react'
+import { JSDOM } from 'jsdom'
+import React, { act } from 'react'
+import { createRoot } from 'react-dom/client'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { GurpsSheet, parseGurpsSheet } from '../src/pages/PersonDetailPage.tsx'
-import { build } from './gurps-cast.mjs'
+import { GurpsSheet, parseGurpsSheet, PreservedPersonSheet, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
+import { build, REVISIONS, numericFields } from './gurps-cast.mjs'
+import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
 
-const issued = JSON.parse(readFileSync(new URL('../lore/name-pools/gurps-cast.json', import.meta.url), 'utf8')).people
-const produced = build().doc.people
-const issuedBy = (id) => issued.find((entry) => entry.id === id)
-const routeId = (entry) => entry.url.split('/').pop()
-const markup = (sheet) => renderToStaticMarkup(React.createElement(GurpsSheet, { gurps: sheet }))
-const parseOrThrow = (payload, id) => {
-  const result = parseGurpsSheet(payload, id)
-  assert.ok(result.ok, `${id}: ${JSON.stringify(result)}`)
+const roots = JSON.parse(process.env.WIKI_PERSON_SHEET_SOURCES ?? 'null')
+const versions = loadPreservedPersonSheets(roots)
+const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+const source = new Map(REVISIONS.map(revision => {
+  const bytes = readFileSync(roots[revision].ledgerPath)
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), baseline.revisions[revision].ledgerSha256)
+  return [revision, JSON.parse(bytes).people]
+}))
+const identity = record => ({ id: record.id, name: record.name, state: record.state, personId: record.url.split('/').pop(), url: record.url })
+const sheetFor = record => projectPreservedPersonSheet(versions, identity(record))
+const parse = record => {
+  const result = parseGurpsSheet(record, identity(record).personId)
+  assert.ok(result.ok, JSON.stringify(result))
   return result.sheet
 }
+const markup = sheet => renderToStaticMarkup(React.createElement(GurpsSheet, { gurps: sheet }))
+const dom = html => new JSDOM(html).window.document.body
 
-const assertRenderedSecondary = (html, secondary) => {
-  for (const [label, key] of [['HP 체력', 'HP'], ['FP 피로', 'FP'], ['Will 의지', 'Will'], ['Per 지각', 'Per'], ['Speed', 'BasicSpeed'], ['Dodge 회피', 'Dodge']]) {
-    assert.ok(html.includes(`<span>${label}</span><span>${secondary[key]}</span>`))
-  }
+test('explicit source bindings reject omission, aliases, missing variants and swapped sealed ledgers', () => {
+  assert.throws(() => build(), /E_EXPLICIT_REVISION/)
+  for (const input of [undefined, {}, { latest: roots[REVISIONS[0]] }, { [REVISIONS[0]]: roots[REVISIONS[0]] }])
+    assert.throws(() => loadPreservedPersonSheets(input), /E_PERSON_SHEET_BINDING/)
+  assert.throws(() => loadPreservedPersonSheets({ [REVISIONS[0]]: roots[REVISIONS[1]], [REVISIONS[1]]: roots[REVISIONS[0]] }), /E_SOURCE_HASH/)
+})
+
+for (const revision of REVISIONS) {
+  test(revision + ': actual generated catalog preserves every immutable person field and number', () => {
+    const expected = source.get(revision)
+    const produced = build(roots[revision].root, revision, roots[revision].ledgerPath).doc.people
+    assert.deepEqual(produced, expected)
+    const actual = expected.map(record => {
+      const ident = identity(record)
+      const detail = JSON.parse(readFileSync(new URL('../public/person-details/' + ident.personId + '.json', import.meta.url), 'utf8'))
+      assert.deepEqual(detail.gurps, { id: record.id, personId: ident.personId })
+      assert.equal(detail.id, ident.personId)
+      assert.equal(detail.characterId, ident.id)
+      assert.equal(detail.name, ident.name)
+      const selected = selectPreservedSheet(detail.personSheet, ident, revision)
+      assert.ok(selected.ok, record.id + ':' + JSON.stringify(selected))
+      assert.deepEqual(selected.record, record)
+      assert.deepEqual(selected.sheet.secondary, record.secondary)
+      assert.deepEqual(selected.sheet.cp, record.cp)
+      return selected.record
+    })
+    assert.equal(actual.length, 1022)
+    assert.deepEqual(numericFields(actual), numericFields(expected))
+    assert.equal(numericFields(actual).length, baseline.revisions[revision].numericFieldCount)
+  })
 }
 
-test('발급된 Speed·Dodge·특성·미사용 CP를 값 그대로 그린다', () => {
-  for (const id of ['K1003', 'K1009']) {
-    const record = issuedBy(id)
-    const sheet = parseOrThrow(record, routeId(record))
-    assert.deepEqual(sheet.secondary, Object.fromEntries(['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'Dodge']
-      .filter((key) => typeof record.secondary[key] === 'number').map((key) => [key, record.secondary[key]])))
-    const html = markup(sheet)
-    assertRenderedSecondary(html, record.secondary)
-  }
-  const jo = markup(parseOrThrow(issuedBy('K1003'), 'person-1003'))
-  const baselineRecord = produced.find((entry) => entry.baseline)
-  const baseline = markup(parseOrThrow(baselineRecord, routeId(baselineRecord)))
-  assert.match(jo, /Combat Reflexes/u)
-  assert.match(baseline, /<span>미사용<\/span><span>75 CP<\/span>/u)
+test('projection snapshots input and guards K ID, name, state and stable route independently', () => {
+  const record = source.get(REVISIONS[0]).find(p => p.id === 'K088')
+  const ident = identity(record)
+  assert.equal(ident.personId, 'person-0089')
+  for (const mutant of [{ id: 'K089' }, { name: 'wrong' }, { state: 'S99' }, { url: '/people/person-0088' }, { personId: 'person-0088' }])
+    assert.throws(() => projectPreservedPersonSheet(versions, { ...ident, ...mutant }), /E_PERSON_SHEET_(IDENTITY|ROUTE)/)
+  const projected = sheetFor(record)
+  projected.variants[0].legacy.record.secondary.BasicMove = -100
+  assert.deepEqual(sheetFor(record).variants[0].legacy.record, record)
 })
 
-test('Speed와 Dodge는 능력치 공식 대신 발급된 값을 보존한다', () => {
-  const record = { ...issuedBy('K1003'), secondary: { ...issuedBy('K1003').secondary, BasicSpeed: 4.25, Dodge: 8 } }
-  const sheet = parseOrThrow(record, routeId(record))
-  assert.equal(sheet.secondary.BasicSpeed, 4.25)
-  assert.equal(sheet.secondary.Dodge, 8)
-  const html = markup(sheet)
-  assert.match(html, /<span>Speed<\/span><span>4\.25<\/span>/u)
-  assert.match(html, /<span>Dodge 회피<\/span><span>8<\/span>/u)
-  assertRenderedSecondary(html, record.secondary)
-  for (const key of ['BasicSpeed', 'Dodge']) {
-    const wrong = { ...sheet, secondary: { ...sheet.secondary, [key]: issuedBy('K1003').secondary[key] } }
-    assert.throws(() => assertRenderedSecondary(markup(wrong), record.secondary), assert.AssertionError)
-  }
-})
-
-test('경계는 잘못된 traits와 다른 인물 응답을 명시적으로 거부한다', () => {
-  const malformed = parseGurpsSheet({ ...issuedBy('K1003'), traits: { kind: 'advantage' } }, 'person-1003')
-  assert.equal(malformed.ok, false)
-  assert.equal(parseGurpsSheet(issuedBy('K1009'), 'person-1003').ok, false)
-  assert.equal(parseGurpsSheet(null, 'person-1003').ok, false)
-  assert.ok(parseGurpsSheet(issuedBy('K088'), 'person-0089').ok)
-  assert.ok(parseGurpsSheet({ ...issuedBy('K088'), personId: 'person-0089' }, 'person-0089').ok)
-})
-
-test('실제 API가 발급한 전체 레코드가 경계 계약을 통과한다', () => {
-  for (const record of issued) {
-    const result = parseGurpsSheet(record, routeId(record))
-    assert.ok(result.ok, `${record.id}: ${JSON.stringify(result)}`)
+test('runtime selector rejects wrong identities, ambiguous revisions and operative adoption', () => {
+  const record = source.get(REVISIONS[0]).find(p => p.id === 'K088')
+  const ident = identity(record)
+  for (const revision of ['', 'latest', 'unknown']) assert.equal(selectPreservedSheet(sheetFor(record), ident, revision).ok, false)
+  for (const change of [
+    p => { p.variants.pop() }, p => { p.variants[1] = p.variants[0] },
+    p => { p.variants[0].ledgerSha256 = '0'.repeat(64) },
+    p => { p.variants[0].legacy.operative = true },
+    p => { p.variants[0].rules.originalRatings = { ST: 11 } },
+    p => { p.variants[0].rules.numericAdoption = true },
+    p => { p.variants[0].rules.sourceRevision = REVISIONS[1] },
+    ...['id', 'name', 'state', 'url', 'personId'].map(key => p => { p.variants[0].legacy.record[key] = 'wrong' }),
+  ]) {
+    const payload = sheetFor(record)
+    change(payload)
+    assert.equal(selectPreservedSheet(payload, ident, REVISIONS[1]).ok, false)
   }
 })
 
-test('경계는 프로듀서가 내지 않는 값을 만들지 않는다', () => {
-  const sparse = markup(parseOrThrow({ url: '/people/person-1003', attributes: {}, skills: [], traits: [], cp: {}, secondary: {} }, 'person-1003'))
-  assert.doesNotMatch(sparse, /class="cp-note"|class="gurps-advantages"|class="gurps-disadvantages"/u)
-  assert.match(sparse, /<span>Speed<\/span><span>—<\/span>/u)
-  assert.match(sparse, /<span>Dodge 회피<\/span><span>—<\/span>/u)
-  assert.match(sparse, /<span>미사용<\/span><span>— CP<\/span>/u)
+test('readable summary renders issued secondary and CP values without recalculation', () => {
+  const record = source.get(REVISIONS[1]).find(p => p.id === 'K1003')
+  const changed = { ...record, secondary: { ...record.secondary, BasicSpeed: 4.25, Dodge: 8, BasicMove: 3, BasicLift: 17.2 }, cp: { ...record.cp, spent: 219 } }
+  const host = dom(markup(parse(changed)))
+  for (const [key, value] of Object.entries(changed.secondary))
+    assert.equal(host.querySelector('[data-legacy-field="secondary.' + key + '"] span:nth-child(2)').textContent, String(value))
+  assert.equal(host.querySelector('[data-legacy-field="cp.spent"] span:nth-child(2)').textContent, '219 CP')
+  assert.equal(parseGurpsSheet({ ...record, traits: {} }, identity(record).personId).ok, false)
+  assert.equal(parseGurpsSheet({ ...record, personId: 'wrong' }, identity(record).personId).ok, false)
+  assert.equal(parseGurpsSheet(null, identity(record).personId).ok, false)
+  const sparse = parse({ url: record.url, attributes: {}, traits: [], skills: [], cp: {}, secondary: {} })
+  assert.deepEqual(sparse.secondary, {})
+  assert.deepEqual(sparse.cp, {})
 })
 
-test('발급 레코드의 부대·영지·정착지 증강 필드는 시트에 노출되지 않는다', () => {
-  const record = issuedBy('K1003')
-  assert.equal(typeof record.unit?.note, 'string')
-  const augmented = { ...record, settlement: { id: 'ST-PROBE', name: '정착지-프로브' }, territory: 'T-PROBE' }
-  const sheet = parseOrThrow(augmented, 'person-1003')
-  const html = markup(sheet)
-  assert.ok(!html.includes(record.unit.note))
-  assert.ok(!html.includes('ST-PROBE') && !html.includes('정착지-프로브') && !html.includes('T-PROBE'))
-  const effect = issuedBy('K1008').skills.find((skill) => typeof skill.effect === 'string')?.effect
-  assert.equal(typeof effect, 'string')
-  assert.ok(!markup(parseOrThrow(issuedBy('K1008'), 'person-1008')).includes(effect))
-  assert.deepEqual(Object.keys(sheet).sort(), ['attributes', 'band', 'cp', 'secondary', 'skills', 'traits'])
+test('mounted person selector starts unselected and exposes both complete source records without assigning ratings', async () => {
+  const browser = new JSDOM('<!doctype html><html><body></body></html>')
+  const previousWindow = globalThis.window, previousDocument = globalThis.document
+  globalThis.window = browser.window
+  globalThis.document = browser.window.document
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const record = source.get(REVISIONS[0]).find(p => p.id === 'K1008')
+  const ident = identity(record), payload = sheetFor(record)
+  const host = document.createElement('div'), reactRoot = createRoot(host)
+  try {
+    await act(async () => { reactRoot.render(React.createElement(PreservedPersonSheet, { payload, identity: ident })) })
+    const select = host.querySelector('select')
+    assert.equal(select.value, '')
+    assert.equal(host.querySelector('[data-selected-revision]'), null)
+    assert.deepEqual([...select.options].map(option => option.value), ['', ...REVISIONS])
+    for (const revision of REVISIONS) {
+      await act(async () => { select.value = revision; select.dispatchEvent(new browser.window.Event('change', { bubbles: true })) })
+      assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, revision)
+      assert.equal(host.querySelector('[data-legacy-operative]').dataset.legacyOperative, 'false')
+      assert.deepEqual(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), source.get(revision).find(p => p.id === record.id))
+      assert.equal(host.querySelector('[data-original-ratings]').dataset.originalRatings, 'unassigned')
+      assert.equal(host.querySelector('input'), null)
+    }
+    await act(async () => { select.value = ''; select.dispatchEvent(new browser.window.Event('change', { bubbles: true })) })
+    assert.equal(host.querySelector('[data-selected-revision]'), null)
+  } finally {
+    await act(async () => reactRoot.unmount())
+    globalThis.window = previousWindow
+    globalThis.document = previousDocument
+    browser.window.close()
+  }
 })

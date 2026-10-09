@@ -2,13 +2,15 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { test } from 'vitest'
-import { APPROVED_EXCEPTIONS, ROOT, OUT, build, verify, bandFor } from './gurps-cast.mjs'
+import { APPROVED_EXCEPTIONS, ROOT, OUT, build as buildSelected, verify as verifySelected } from './gurps-cast.mjs'
 
 const issued = JSON.parse(readFileSync(join(ROOT, OUT), 'utf8'))
-const fresh = build().doc
+const revision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
+const fresh = buildSelected(ROOT, revision).doc
+const verify = (doc) => verifySelected(doc, ROOT, revision)
 const numericErrors = (doc) => verify(doc).filter((error) => !error.includes('인용 불일치'))
 
-test('nine approved exceptions preserve allocations and use approved arithmetic', () => {
+test('nine approved exceptions preserve exact sealed allocations without arithmetic', () => {
   assert.equal(Object.keys(APPROVED_EXCEPTIONS).length, 9)
   for (const [id, approval] of Object.entries(APPROVED_EXCEPTIONS)) {
     const before = issued.people.find((p) => p.id === id)
@@ -16,15 +18,14 @@ test('nine approved exceptions preserve allocations and use approved arithmetic'
     assert.deepEqual(after.skills, before.skills)
     assert.deepEqual(after.traits, before.traits)
     assert.equal(after.cp.total, approval.total)
-    assert.equal(after.cp.total, after.cp.spent + after.cp.unspent)
+    assert.deepEqual(after, before)
     assert.ok(approval.ownerRef)
   }
   assert.deepEqual(numericErrors(issued), [])
-  assert.deepEqual(bandFor(301), [])
   assert.ok(fresh.people.find((p) => p.id === 'K1008').skills.some((s) => s.name === '장검'))
 })
 
-test('approved allocation mutations and default cap violations remain rejected', () => {
+test('approved allocation mutations and ordinary legacy changes remain rejected', () => {
   const mutations = [
     (d) => { d.people.find((p) => p.id === 'K1008').skills[0].level += 1 },
     (d) => { d.people.find((p) => p.id === 'K1003').attributes.ST.value += 1 },

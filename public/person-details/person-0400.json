@@ -3,6 +3,7 @@
   "name": "하서진",
   "title": "계약 서기",
   "position": "계약 서기",
+  "characterId": "K399",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "조약 초안 종료일·감사 조항 기재·면제 칸 확인",
@@ -269,66 +270,370 @@
   },
   "gurps": {
     "id": "K399",
-    "personId": "person-0400",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0400"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K399",
+            "name": "하서진",
+            "url": "/people/person-0400",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "조약 초안 종료일·감사 조항 기재·면제 칸 확인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/39/items/0/ko",
+                  "quote": "생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/39/items/0/ko",
+                    "quote": "생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/39/items/0/ko",
+                    "quote": "생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "하서진 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S16 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K399",
+            "name": "하서진",
+            "url": "/people/person-0400",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "조약 초안 종료일·감사 조항 기재·면제 칸 확인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/39/items/0/ko",
+                  "quote": "생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/39/items/0/ko",
+                    "quote": "생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/39/items/0/ko",
+                    "quote": "생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "하서진 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S16 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Accounting",
-        "ko": "회계·감사",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Pharmacy/TL? (Herbal)",
-        "ko": "약재",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

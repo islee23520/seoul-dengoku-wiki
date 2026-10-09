@@ -3,6 +3,7 @@
   "name": "임건우",
   "title": "배급구역 서기",
   "position": "배급구역 서기",
+  "characterId": "K472",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "급수 배분 당직",
@@ -369,72 +370,392 @@
   },
   "gurps": {
     "id": "K472",
-    "personId": "person-0472",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0472"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K472",
+            "name": "임건우",
+            "url": "/people/person-0472",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "급수 배분 당직",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/336/items/1/ko",
+                  "quote": "생업: 급수 배분 당직"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/337/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/336/items/1/ko",
+                    "quote": "생업: 급수 배분 당직"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/337/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/336/items/1/ko",
+                    "quote": "생업: 급수 배분 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/336/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "망포",
+              "type": "초소 영지",
+              "station": "망포",
+              "state": "S01",
+              "settlement": {
+                "name": "망포 정착지",
+                "type": "정착지",
+                "description": "망포 일대 고정 거점"
+              },
+              "note": "S01 망포 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K472",
+            "name": "임건우",
+            "url": "/people/person-0472",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "급수 배분 당직",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/336/items/1/ko",
+                  "quote": "생업: 급수 배분 당직"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/337/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/336/items/1/ko",
+                    "quote": "생업: 급수 배분 당직"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/337/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/336/items/1/ko",
+                    "quote": "생업: 급수 배분 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/336/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "망포",
+              "type": "초소 영지",
+              "station": "망포",
+              "state": "S01",
+              "settlement": {
+                "name": "망포 정착지",
+                "type": "정착지",
+                "description": "망포 일대 고정 거점"
+              },
+              "note": "S01 망포 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Diplomacy",
-        "ko": "교섭·조정",
-        "level": 12,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 64,
-      "unspent": 11,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

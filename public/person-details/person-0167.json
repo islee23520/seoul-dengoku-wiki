@@ -3,6 +3,7 @@
   "name": "섭도윤",
   "title": "약소국 회의 기록 전령",
   "position": "대한민국정부 회의 기록 전령",
+  "characterId": "K166",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "회의 전갈·증언 확인 전달",
@@ -369,60 +370,296 @@
   },
   "gurps": {
     "id": "K166",
-    "personId": "person-0167",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0167"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K166",
+            "name": "섭도윤",
+            "url": "/people/person-0167",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "회의 전갈·증언 확인 전달",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-06.json",
+                  "pointer": "/content/237/items/0/ko",
+                  "quote": "생업: 회의 전갈·증언 확인 전달"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/237/items/0/ko",
+                    "quote": "생업: 회의 전갈·증언 확인 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/237/items/0/ko",
+                    "quote": "생업: 회의 전갈·증언 확인 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 16,
+              "unspent": 59,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "광화문",
+              "type": "초소 영지",
+              "station": "광화문",
+              "state": "S06",
+              "settlement": {
+                "name": "광화문 정착지",
+                "type": "정착지",
+                "description": "광화문 일대 고정 거점"
+              },
+              "note": "S06 광화문 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 13,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K166",
+            "name": "섭도윤",
+            "url": "/people/person-0167",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "회의 전갈·증언 확인 전달",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-06.json",
+                  "pointer": "/content/237/items/0/ko",
+                  "quote": "생업: 회의 전갈·증언 확인 전달"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/237/items/0/ko",
+                    "quote": "생업: 회의 전갈·증언 확인 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/237/items/0/ko",
+                    "quote": "생업: 회의 전갈·증언 확인 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 16,
+              "unspent": 59,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "광화문",
+              "type": "초소 영지",
+              "station": "광화문",
+              "state": "S06",
+              "settlement": {
+                "name": "광화문 정착지",
+                "type": "정착지",
+                "description": "광화문 일대 고정 거점"
+              },
+              "note": "S06 광화문 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 16,
-      "unspent": 59,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

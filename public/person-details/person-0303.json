@@ -3,6 +3,7 @@
   "name": "소두감",
   "title": "유치선 정비사, 안도한의 실무 담당자",
   "position": "유치선 정비사, 안도한의 실무 담당자",
+  "characterId": "K302",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "유치선 배차표·정비 일지 대조",
@@ -369,66 +370,380 @@
   },
   "gurps": {
     "id": "K302",
-    "personId": "person-0303",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0303"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K302",
+            "name": "소두감",
+            "url": "/people/person-0303",
+            "state": "S12",
+            "method": "card-lexicon",
+            "role": {
+              "display": "유치선 배차표·정비 일지 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-12.json",
+                  "pointer": "/content/105/items/0/ko",
+                  "quote": "생업: 유치선 배차표·정비 일지 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/107/text/ko",
+                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/105/items/0/ko",
+                    "quote": "생업: 유치선 배차표·정비 일지 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/107/text/ko",
+                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/105/items/0/ko",
+                    "quote": "생업: 유치선 배차표·정비 일지 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/105/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 신내운수 규모",
+              "faction_scale": {
+                "state": "S12",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐건물 옥상",
+              "camp": {
+                "name": "소두감 옥상 야영지",
+                "type": "야영지",
+                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K302",
+            "name": "소두감",
+            "url": "/people/person-0303",
+            "state": "S12",
+            "method": "card-lexicon",
+            "role": {
+              "display": "유치선 배차표·정비 일지 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-12.json",
+                  "pointer": "/content/105/items/0/ko",
+                  "quote": "생업: 유치선 배차표·정비 일지 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/107/text/ko",
+                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/105/items/0/ko",
+                    "quote": "생업: 유치선 배차표·정비 일지 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "배차표와 정비 일지를 같은 칠판에 붙이고, 의료열차 우선권은 장세화의 부서 날인과 정비 서명이 함께 있을 때만 인정한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/107/text/ko",
+                    "quote": "의료열차에서 암사제 무기가 나오자 유치선 정비창을 봉쇄하고 출고 스위치를 잠갔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/105/items/0/ko",
+                    "quote": "생업: 유치선 배차표·정비 일지 대조"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/105/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 신내운수 규모",
+              "faction_scale": {
+                "state": "S12",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐건물 옥상",
+              "camp": {
+                "name": "소두감 옥상 야영지",
+                "type": "야영지",
+                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

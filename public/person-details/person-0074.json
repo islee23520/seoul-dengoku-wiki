@@ -3,6 +3,7 @@
   "name": "허미리",
   "title": "방화기지 유치 실무장",
   "position": "방화기지 유치 실무장",
+  "characterId": "K074",
   "rank": "부장",
   "commonTier": "T4",
   "occupation": "유치선 화물 구분·배차",
@@ -368,66 +369,380 @@
   },
   "gurps": {
     "id": "K074",
-    "personId": "person-0074",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0074"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K074",
+            "name": "허미리",
+            "url": "/people/person-0074",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "유치선 화물 구분·배차",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/38/items/1/ko",
+                  "quote": "생업: 유치선 화물 구분·배차"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/37/text/ko",
+                    "quote": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/39/text/ko",
+                    "quote": "분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/38/items/1/ko",
+                    "quote": "생업: 유치선 화물 구분·배차"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/39/text/ko",
+                    "quote": "분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/37/text/ko",
+                    "quote": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/38/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "공릉",
+              "type": "초소 영지",
+              "station": "공릉",
+              "state": "S03",
+              "settlement": {
+                "name": "공릉 정착지",
+                "type": "정착지",
+                "description": "공릉 일대 고정 거점"
+              },
+              "note": "S03 공릉 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K074",
+            "name": "허미리",
+            "url": "/people/person-0074",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "유치선 화물 구분·배차",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/38/items/1/ko",
+                  "quote": "생업: 유치선 화물 구분·배차"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/37/text/ko",
+                    "quote": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/39/text/ko",
+                    "quote": "분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/38/items/1/ko",
+                    "quote": "생업: 유치선 화물 구분·배차"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/39/text/ko",
+                    "quote": "분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/40/text/ko",
+                    "quote": "서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/37/text/ko",
+                    "quote": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/38/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "공릉",
+              "type": "초소 영지",
+              "station": "공릉",
+              "state": "S03",
+              "settlement": {
+                "name": "공릉 정착지",
+                "type": "정착지",
+                "description": "공릉 일대 고정 거점"
+              },
+              "note": "S03 공릉 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 80,
-      "unspent": 0,
-      "total": 80
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

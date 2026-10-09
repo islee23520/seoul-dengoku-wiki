@@ -3,6 +3,7 @@
   "name": "조재표",
   "title": "유명 낭인 지휘자",
   "position": "유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명",
+  "characterId": "K1003",
   "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 탐사원 / 부 순찰대",
@@ -389,103 +390,750 @@
   },
   "gurps": {
     "id": "K1003",
-    "personId": "person-1003",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 17,
-        "cp": 70
+    "personId": "person-1003"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1003",
+            "name": "조재표",
+            "url": "/people/person-1003",
+            "state": "S00",
+            "method": "pilot-approved",
+            "role": {
+              "display": "주 탐사원 / 부 순찰대",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/3/items/4/ko",
+                  "quote": "생업: 주 탐사원 / 부 순찰대"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 17,
+                "cp": 70,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  }
+                ]
+              },
+              "DX": {
+                "value": 14,
+                "cp": 80,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/7/ko",
+                    "quote": "사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 14,
+                "cp": 40,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  },
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ]
+              }
+            },
+            "traits": [
+              {
+                "name": "Reputation +2 (유능한 호위 지휘자; 서울 역·회랑의 호위 의뢰인과 통행자 — 큰 집단 ×1/2; 항상 ×1)",
+                "kind": "advantage",
+                "rule": "reputation",
+                "level": 2,
+                "people": 0.5,
+                "frequency": 1,
+                "cp": 5,
+                "page": "B26–27",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/9/ko",
+                    "quote": "공포: 유명세가 일행을 현상금·징집·정치 선전의 표적으로 만드는 것"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "Reputation은 카드가 유명세를 적은 사람에게만 둔다."
+                  }
+                ]
+              },
+              {
+                "name": "Combat Reflexes",
+                "kind": "advantage",
+                "rule": "combat-reflexes",
+                "cp": 15,
+                "page": "B43",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "조재표와 신종목에게 Combat Reflexes [15]를 둔다."
+                  }
+                ]
+              }
+            ],
+            "skills": [
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "A",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/7/ko",
+                    "quote": "사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다"
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/80/text/ko",
+                    "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
+                  }
+                ],
+                "cp": 12,
+                "level": 16
+              },
+              {
+                "name": "Tactics",
+                "ko": "전술(호위 대열 편성·철수 판단)",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "A",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/4/text/ko",
+                    "quote": "호위 대열. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/79/text/ko",
+                    "quote": "분류: 지휘·편성"
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/80/text/ko",
+                    "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "조재표와 신종목은 높은 전투력의 주역·강자 구간에서 먼저 검토한다."
+                  }
+                ],
+                "cp": 12,
+                "level": 15
+              },
+              {
+                "name": "Navigation/TL? (Land)",
+                "ko": "길찾기(지상)",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/4/ko",
+                    "quote": "생업: 주 탐사원 / 부 순찰대"
+                  },
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Area Knowledge (서울 역·회랑)",
+                "ko": "지역 지식",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 16
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭(호위 계약)",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/10/ko",
+                    "quote": "통치 방식: 위험·대가·철수 조건을 먼저 공개하고 계약한다."
+                  },
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Teaching",
+                "ko": "교습(호위 대열)",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/4/text/ko",
+                    "quote": "호위 대열. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/80/text/ko",
+                    "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/4/ko",
+                    "quote": "생업: 주 탐사원 / 부 순찰대"
+                  }
+                ],
+                "cp": 4,
+                "level": 14
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/3/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 17,
+              "Will": 13,
+              "Per": 13,
+              "FP": 14,
+              "BasicSpeed": 7,
+              "BasicMove": 7,
+              "BasicLift": 58,
+              "Dodge": 11
+            },
+            "cp": {
+              "attributes": 250,
+              "advantages": 20,
+              "disadvantages": 0,
+              "skills": 60,
+              "spent": 330,
+              "unspent": 0,
+              "total": 330
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "낭인 부대",
+              "size": 20,
+              "quality": "정예",
+              "composition": [
+                "낭인 전사"
+              ],
+              "note": "조재표 낭인단 — 유동 소규모 전투 집단",
+              "faction_scale": {
+                "state": "R01",
+                "tier": "개인",
+                "factor": 0.5
+              }
+            },
+            "territory": null,
+            "wandering_force": {
+              "type": "낭인 부대",
+              "size": 20,
+              "current_location": "남부 유동 야영지",
+              "camp": {
+                "name": "조재표 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "낭인 — 야영지를 옮기며 활동"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 14,
-        "cp": 80
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 14,
-        "cp": 40
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1003",
+            "name": "조재표",
+            "url": "/people/person-1003",
+            "state": "S00",
+            "method": "pilot-approved",
+            "role": {
+              "display": "주 탐사원 / 부 순찰대",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/3/items/4/ko",
+                  "quote": "생업: 주 탐사원 / 부 순찰대"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 17,
+                "cp": 70,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  }
+                ]
+              },
+              "DX": {
+                "value": 14,
+                "cp": 80,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/7/ko",
+                    "quote": "사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 14,
+                "cp": 40,
+                "rule": "pilot-approved",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
+                  },
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ]
+              }
+            },
+            "traits": [
+              {
+                "name": "Reputation +2 (유능한 호위 지휘자; 서울 역·회랑의 호위 의뢰인과 통행자 — 큰 집단 ×1/2; 항상 ×1)",
+                "kind": "advantage",
+                "rule": "reputation",
+                "level": 2,
+                "people": 0.5,
+                "frequency": 1,
+                "cp": 5,
+                "page": "B26–27",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/9/ko",
+                    "quote": "공포: 유명세가 일행을 현상금·징집·정치 선전의 표적으로 만드는 것"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "Reputation은 카드가 유명세를 적은 사람에게만 둔다."
+                  }
+                ]
+              },
+              {
+                "name": "Combat Reflexes",
+                "kind": "advantage",
+                "rule": "combat-reflexes",
+                "cp": 15,
+                "page": "B43",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "조재표와 신종목에게 Combat Reflexes [15]를 둔다."
+                  }
+                ]
+              }
+            ],
+            "skills": [
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "A",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/7/ko",
+                    "quote": "사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다"
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/80/text/ko",
+                    "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
+                  }
+                ],
+                "cp": 12,
+                "level": 16
+              },
+              {
+                "name": "Tactics",
+                "ko": "전술(호위 대열 편성·철수 판단)",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "A",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/4/text/ko",
+                    "quote": "호위 대열. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/79/text/ko",
+                    "quote": "분류: 지휘·편성"
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/80/text/ko",
+                    "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-Profile-Contract.md",
+                    "quote": "조재표와 신종목은 높은 전투력의 주역·강자 구간에서 먼저 검토한다."
+                  }
+                ],
+                "cp": 12,
+                "level": 15
+              },
+              {
+                "name": "Navigation/TL? (Land)",
+                "ko": "길찾기(지상)",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/4/ko",
+                    "quote": "생업: 주 탐사원 / 부 순찰대"
+                  },
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Area Knowledge (서울 역·회랑)",
+                "ko": "지역 지식",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 16
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭(호위 계약)",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/6/ko",
+                    "quote": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명"
+                  },
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/10/ko",
+                    "quote": "통치 방식: 위험·대가·철수 조건을 먼저 공개하고 계약한다."
+                  },
+                  {
+                    "path": "lore/chronology/Century-Annals.json",
+                    "pointer": "/content/511/text/ko",
+                    "quote": "2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Teaching",
+                "ko": "교습(호위 대열)",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/4/text/ko",
+                    "quote": "호위 대열. 좁은 상륙 지점에서 민간인 철수로를 지키며 일행과 함께 물러나는 진형을 가르친다."
+                  },
+                  {
+                    "path": "lore/culture/Martial-Paths.json",
+                    "pointer": "/content/80/text/ko",
+                    "quote": "조재표는 일행에게 호위 대열의 편성 절차를 가르친다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/4/ko",
+                    "quote": "생업: 주 탐사원 / 부 순찰대"
+                  }
+                ],
+                "cp": 4,
+                "level": 14
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/3/items/3/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 17,
+              "Will": 13,
+              "Per": 13,
+              "FP": 14,
+              "BasicSpeed": 7,
+              "BasicMove": 7,
+              "BasicLift": 58,
+              "Dodge": 11
+            },
+            "cp": {
+              "attributes": 250,
+              "advantages": 20,
+              "disadvantages": 0,
+              "skills": 60,
+              "spent": 330,
+              "unspent": 0,
+              "total": 330
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "낭인 부대",
+              "size": 20,
+              "quality": "정예",
+              "composition": [
+                "낭인 전사"
+              ],
+              "note": "조재표 낭인단 — 유동 소규모 전투 집단",
+              "faction_scale": {
+                "state": "R01",
+                "tier": "개인",
+                "factor": 0.5
+              }
+            },
+            "territory": null,
+            "wandering_force": {
+              "type": "낭인 부대",
+              "size": 20,
+              "current_location": "남부 유동 야영지",
+              "camp": {
+                "name": "조재표 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "낭인 — 야영지를 옮기며 활동"
+            }
+          }
+        }
       }
-    },
-    "traits": [
-      {
-        "name": "Reputation +2 (유능한 호위 지휘자; 서울 역·회랑의 호위 의뢰인과 통행자 — 큰 집단 ×1/2; 항상 ×1)",
-        "kind": "advantage",
-        "cp": 5,
-        "rule": "reputation"
-      },
-      {
-        "name": "Combat Reflexes",
-        "kind": "advantage",
-        "cp": 15,
-        "rule": "combat-reflexes"
-      }
-    ],
-    "skills": [
-      {
-        "name": "Leadership",
-        "ko": "지휘",
-        "level": 16,
-        "cp": 12
-      },
-      {
-        "name": "Tactics",
-        "ko": "전술(호위 대열 편성·철수 판단)",
-        "level": 15,
-        "cp": 12
-      },
-      {
-        "name": "Navigation/TL? (Land)",
-        "ko": "길찾기(지상)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Area Knowledge (서울 역·회랑)",
-        "ko": "지역 지식",
-        "level": 16,
-        "cp": 8
-      },
-      {
-        "name": "Diplomacy",
-        "ko": "교섭(호위 계약)",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Teaching",
-        "ko": "교습(호위 대열)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰",
-        "level": 14,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 250,
-      "advantages": 20,
-      "disadvantages": 0,
-      "skills": 60,
-      "spent": 330,
-      "unspent": 0,
-      "total": 330
-    },
-    "secondary": {
-      "HP": 17,
-      "Will": 13,
-      "Per": 13,
-      "FP": 14,
-      "BasicSpeed": 7,
-      "BasicMove": 7,
-      "BasicLift": 58,
-      "Dodge": 11
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

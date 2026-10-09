@@ -3,6 +3,7 @@
   "name": "엘레나 모로조바",
   "title": "약소국 회의 열차 안내인",
   "position": "환적국 회의 열차 안내인",
+  "characterId": "K191",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "회의 열차 사절 대기표·호송 칸 안내",
@@ -383,72 +384,412 @@
   },
   "gurps": {
     "id": "K191",
-    "personId": "person-0192",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0192"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K191",
+            "name": "엘레나 모로조바",
+            "url": "/people/person-0192",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "회의 열차 사절 대기표·호송 칸 안내",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/237/items/2/ko",
+                  "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/236/text/ko",
+                    "quote": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/236/text/ko",
+                    "quote": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                  }
+                ],
+                "cp": 8,
+                "level": 16
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 28,
+              "spent": 88,
+              "unspent": 0,
+              "total": 88
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "구로",
+              "type": "초소 영지",
+              "station": "구로",
+              "state": "S07",
+              "settlement": {
+                "name": "구로 정착지",
+                "type": "정착지",
+                "description": "구로 일대 고정 거점"
+              },
+              "note": "S07 구로 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K191",
+            "name": "엘레나 모로조바",
+            "url": "/people/person-0192",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "회의 열차 사절 대기표·호송 칸 안내",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/237/items/2/ko",
+                  "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/236/text/ko",
+                    "quote": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/236/text/ko",
+                    "quote": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 회의 열차 사절 대기표·호송 칸 안내"
+                  }
+                ],
+                "cp": 8,
+                "level": 16
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 28,
+              "spent": 88,
+              "unspent": 0,
+              "total": 88
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "구로",
+              "type": "초소 영지",
+              "station": "구로",
+              "state": "S07",
+              "settlement": {
+                "name": "구로 정착지",
+                "type": "정착지",
+                "description": "구로 일대 고정 거점"
+              },
+              "note": "S07 구로 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 16,
-        "cp": 8
-      },
-      {
-        "name": "Pharmacy/TL? (Herbal)",
-        "ko": "약재",
-        "level": 13,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 28,
-      "spent": 88,
-      "unspent": 0,
-      "total": 88
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

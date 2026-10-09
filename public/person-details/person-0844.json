@@ -3,6 +3,7 @@
   "name": "유솔훈",
   "title": "상수 호위 순찰대",
   "position": "동부 순찰대",
+  "characterId": "K844",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "야간 순찰·경비 암호패 교체",
@@ -270,66 +271,339 @@
   },
   "gurps": {
     "id": "K844",
-    "personId": "person-0844",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0844"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K844",
+            "name": "유솔훈",
+            "url": "/people/person-0844",
+            "state": "S05",
+            "method": "card-lexicon",
+            "role": {
+              "display": "야간 순찰·경비 암호패 교체",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-05.json",
+                  "pointer": "/content/588/items/1/ko",
+                  "quote": "생업: 야간 순찰·경비 암호패 교체"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/590/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/588/items/1/ko",
+                    "quote": "생업: 야간 순찰·경비 암호패 교체"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/590/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/588/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 32,
+              "unspent": 43,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 동방사 규모",
+              "faction_scale": {
+                "state": "S05",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "중동",
+              "type": "초소 영지",
+              "station": "중동",
+              "state": "S05",
+              "settlement": {
+                "name": "중동 정착지",
+                "type": "정착지",
+                "description": "중동 일대 고정 거점"
+              },
+              "note": "S05 중동 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K844",
+            "name": "유솔훈",
+            "url": "/people/person-0844",
+            "state": "S05",
+            "method": "card-lexicon",
+            "role": {
+              "display": "야간 순찰·경비 암호패 교체",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-05.json",
+                  "pointer": "/content/588/items/1/ko",
+                  "quote": "생업: 야간 순찰·경비 암호패 교체"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/589/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/590/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/589/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/588/items/1/ko",
+                    "quote": "생업: 야간 순찰·경비 암호패 교체"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/590/text/ko",
+                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/588/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 동방사 규모",
+              "faction_scale": {
+                "state": "S05",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "중동",
+              "type": "초소 영지",
+              "station": "중동",
+              "state": "S05",
+              "settlement": {
+                "name": "중동 정착지",
+                "type": "정착지",
+                "description": "중동 일대 고정 거점"
+              },
+              "note": "S05 중동 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Shield",
-        "ko": "방패술",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

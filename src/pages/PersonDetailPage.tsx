@@ -9,6 +9,7 @@ import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
 import { FamilyTree, type FamilyTreeData } from '../components/FamilyTree'
+import preservationBaseline from '../../scripts/issued-preservation-baseline.json'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ConfirmedHolding = {
@@ -28,7 +29,8 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   proseContacts?: readonly { readonly recipientId: string; readonly recipientName: string; readonly basis: string; readonly sourceRef: { readonly path: string; readonly anchor: string } }[]
   rightsPermissions?: PersonRightsPermissions
   confirmedHoldings?: readonly ConfirmedHolding[]
-  gurps: GurpsSheetData & { id: string; personId: string }
+  gurps: { readonly id: string; readonly personId: string }
+  personSheet: unknown
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
   territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
   wandering_force?: { type: string; size: number; current_location: string; camp: { name: string; type: string; description: string; facilities: string[]; pack_up_time: string }; note: string } | null
@@ -100,8 +102,8 @@ export function PersonPermissions({ permissions }: { readonly permissions?: Pers
 type SheetAttr = { value?: number; cp?: number }
 type SheetTrait = { name: string; kind: string; cp?: number; rule?: string }
 type SheetSkill = { name?: string; ko?: string; level?: number; cp?: number }
-type SheetCp = { total?: number; attributes?: number; advantages?: number; disadvantages?: number; skills?: number; unspent?: number }
-type SheetSecondary = { HP?: number; FP?: number; Will?: number; Per?: number; BasicSpeed?: number; Dodge?: number }
+type SheetCp = { total?: number; attributes?: number; advantages?: number; disadvantages?: number; skills?: number; spent?: number; unspent?: number }
+type SheetSecondary = { HP?: number; FP?: number; Will?: number; Per?: number; BasicSpeed?: number; BasicMove?: number; BasicLift?: number; Dodge?: number }
 
 export type GurpsSheetData = {
   band: string | null
@@ -133,7 +135,7 @@ function pickNumbers(label: string, raw: unknown, keys: readonly string[]): Reco
 export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseResult {
   const reject = (error: string): GurpsParseResult => ({ ok: false, error })
   if (!isRecord(payload)) return reject('시트 응답이 객체가 아니다')
-  if (payload.personId !== personId && payload.url !== '/people/' + personId) return reject('시트 신원이 요청한 인물과 다르다')
+  if (payload.url !== '/people/' + personId || (payload.personId !== undefined && payload.personId !== personId)) return reject('시트 신원이 요청한 인물과 다르다')
 
   const band = payload.band === undefined || payload.band === null ? null : typeof payload.band === 'string' ? payload.band : undefined
   if (band === undefined) return reject('band가 문자열이 아니다')
@@ -186,9 +188,9 @@ export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseR
     }
   }
 
-  const cp = pickNumbers('cp', payload.cp, ['total', 'attributes', 'advantages', 'disadvantages', 'skills', 'unspent'])
+  const cp = pickNumbers('cp', payload.cp, ['total', 'attributes', 'advantages', 'disadvantages', 'skills', 'spent', 'unspent'])
   if (typeof cp === 'string') return reject(cp)
-  const secondary = pickNumbers('secondary', payload.secondary, ['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'Dodge'])
+  const secondary = pickNumbers('secondary', payload.secondary, ['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'BasicMove', 'BasicLift', 'Dodge'])
   if (typeof secondary === 'string') return reject(secondary)
 
   return { ok: true, sheet: { band, attributes, traits, skills, cp: cp as SheetCp, secondary: secondary as SheetSecondary } }
@@ -196,12 +198,6 @@ export function parseGurpsSheet(payload: unknown, personId: string): GurpsParseR
 
 export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
   const attrs = gurps.attributes
-  const attrExplain: Record<string, { icon: string; desc: string }> = {
-    ST: { icon: '💪', desc: '힘 · 기본 HP와 운반력의 기준' },
-    DX: { icon: '🏃', desc: '민첩 · 기본 Speed의 기준' },
-    IQ: { icon: '🧠', desc: '지능 · 기본 Will과 Per의 기준' },
-    HT: { icon: '❤️', desc: '건강 · 기본 FP와 Speed의 기준' },
-  }
 
   const cp = gurps.cp
   const skills = gurps.skills
@@ -212,18 +208,20 @@ export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
 
   return (
     <section className="gurps-sheet">
-      <h2>겁스 능력치</h2>
+      <h3>역사 시트 · 읽기 전용</h3>
+      <p>ST·DX·IQ·HT·CP는 보존된 옛 필드명입니다. 아래 값은 새 규칙의 등급이나 계산식이 아닙니다.</p>
       <div className="gurps-cp-total">
         <span className="cp-number">{cp.total ?? '—'}</span>
         <span className="cp-label">CP</span>
         {band && <span className="cp-note">{band}</span>}
       </div>
       <div className="gurps-cp-breakdown">
-        <h4>CP 계산 내역</h4>
+        <h4>기록된 CP 내역</h4>
         <div className="cp-row"><span>능력치</span><span>{cp.attributes ?? '—'} CP</span></div>
         <div className="cp-row"><span>장점</span><span>{cp.advantages ?? '—'} CP</span></div>
         <div className="cp-row"><span>단점</span><span>{cp.disadvantages ?? '—'} CP</span></div>
         <div className="cp-row"><span>기술</span><span>{cp.skills ?? '—'} CP</span></div>
+        <div className="cp-row" data-legacy-field="cp.spent"><span>사용</span><span>{cp.spent ?? '—'} CP</span></div>
         <div className="cp-row"><span>미사용</span><span>{cp.unspent ?? '—'} CP</span></div>
         <div className="cp-row cp-sum"><span>합계</span><span>{cp.total ?? '—'} CP</span></div>
       </div>
@@ -253,25 +251,18 @@ export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
         {(['ST', 'DX', 'IQ', 'HT'] as const).map(key => {
           const a = attrs[key]
           if (!a) return null
-          const ex = attrExplain[key]
           return (
-            <div key={key} className="gurps-attr" title={ex.desc}>
-              <span className="attr-icon">{ex.icon}</span>
+            <div key={key} className="gurps-attr">
               <span className="attr-key">{key}</span>
               <span className="attr-value">{a.value ?? '—'}{a?.cp != null ? <small className="attr-cp"> ({a.cp} CP)</small> : null}</span>
-              <span className="attr-desc">{ex.desc}</span>
             </div>
           )
         })}
       </div>
       <div className="gurps-derived">
-        <h3>파생 수치</h3>
-        <div className="derived-row"><span>HP 체력</span><span>{secondary.HP ?? '—'}</span><span>기본값: ST</span></div>
-        <div className="derived-row"><span>FP 피로</span><span>{secondary.FP ?? '—'}</span><span>기본값: HT</span></div>
-        <div className="derived-row"><span>Will 의지</span><span>{secondary.Will ?? '—'}</span><span>기본값: IQ</span></div>
-        <div className="derived-row"><span>Per 지각</span><span>{secondary.Per ?? '—'}</span><span>기본값: IQ</span></div>
-        <div className="derived-row"><span>Speed</span><span>{secondary.BasicSpeed ?? '—'}</span><span>기본값: (DX+HT)÷4</span></div>
-        <div className="derived-row"><span>Dodge 회피</span><span>{secondary.Dodge ?? '—'}</span><span>기본값: ⌊Speed⌋+3{advantages.some((trait) => trait.rule === 'combat-reflexes') ? ', Combat Reflexes +1' : ''}</span></div>
+        <h3>기록된 보조 수치</h3>
+        {(['HP', 'FP', 'Will', 'Per', 'BasicSpeed', 'BasicMove', 'BasicLift', 'Dodge'] as const).map(key =>
+          <div className="derived-row" key={key} data-legacy-field={'secondary.' + key}><span>{key}</span><span>{secondary[key] ?? '—'}</span></div>)}
       </div>
       {skills.length > 0 && (
         <div className="gurps-skills">
@@ -286,6 +277,58 @@ export function GurpsSheet({ gurps }: { gurps: GurpsSheetData }): JSX.Element {
       )}
     </section>
   )
+}
+
+type SheetIdentity = { readonly id: string; readonly personId: string; readonly name: string; readonly state: string }
+type PreservedSelection = { readonly ok: true; readonly sheet: GurpsSheetData; readonly record: Readonly<Record<string, unknown>>; readonly revision: string }
+  | { readonly ok: false; readonly error: string }
+const sheetRevisions = Object.entries(preservationBaseline.revisions)
+
+export function selectPreservedSheet(payload: unknown, identity: SheetIdentity, revision: string): PreservedSelection {
+  const reject = (error: string): PreservedSelection => ({ ok: false, error })
+  if (!sheetRevisions.some(([key]) => key === revision)) return reject('E_EXPLICIT_REVISION')
+  if (!isRecord(payload) || payload.schema !== 'wiki-person-sheet.v1' || !Array.isArray(payload.variants) || payload.variants.length !== sheetRevisions.length) return reject('E_PERSON_SHEET_REVISIONS')
+  let selected: PreservedSelection = reject('E_PERSON_SHEET_REVISIONS')
+  for (const [key, seal] of sheetRevisions) {
+    const variants = payload.variants.filter((value: unknown) => isRecord(value) && value.revision === key)
+    if (variants.length !== 1) return reject('E_PERSON_SHEET_REVISIONS')
+    const variant: unknown = variants[0]
+    if (!isRecord(variant) || variant.ledgerSha256 !== seal.ledgerSha256 || !isRecord(variant.legacy) || variant.legacy.operative !== false || !isRecord(variant.legacy.record)) return reject('E_PERSON_SHEET_LEGACY')
+    const rules = variant.rules
+    if (!isRecord(rules) || rules.sourceRevision !== key || rules.rulesVersion !== 'seoul.opposed-d10.v1' || rules.resolution !== 'opposed-d10' || rules.numericAdoption !== false || rules.originalRatings !== null || rules.legacyValues !== 'immutable-not-d10-ratings') return reject('E_PERSON_SHEET_RULES')
+    const record = variant.legacy.record
+    if (record.id !== identity.id || record.name !== identity.name || record.state !== identity.state || record.url !== '/people/' + identity.personId || (record.personId !== undefined && record.personId !== identity.personId)) return reject('E_PERSON_SHEET_IDENTITY')
+    const parsed = parseGurpsSheet(record, identity.personId)
+    if (!parsed.ok) return reject(parsed.error)
+    if (key === revision) selected = { ok: true, sheet: parsed.sheet, record, revision }
+  }
+  return selected
+}
+
+export function PreservedPersonSheet({ payload, identity }: { readonly payload: unknown; readonly identity: SheetIdentity }): JSX.Element {
+  const [revision, setRevision] = useState('')
+  const selected = revision ? selectPreservedSheet(payload, identity, revision) : null
+  return <section className="person-data-section" data-person-sheet>
+    <h2>인물 시트</h2>
+    <p data-original-ratings="unassigned">새 규칙은 d10 대항 판정, 등급 0–12, 합산 보정 −4–+4입니다. 이 인물의 새 등급과 보정은 미배정입니다.</p>
+    <div className="people-filters">
+      <label htmlFor={'sheet-revision-' + identity.personId}>역사 시트 리비전</label>
+      <select id={'sheet-revision-' + identity.personId} value={revision} onChange={event => setRevision(event.currentTarget.value)}>
+        <option value="">리비전을 선택하세요</option>
+        {sheetRevisions.map(([key]) => <option key={key} value={key}>{key.slice(0, 8)}</option>)}
+      </select>
+    </div>
+    {!selected && <p role="status">열람할 원본 리비전을 직접 선택하세요.</p>}
+    {selected && !selected.ok && <p role="alert">시트를 표시할 수 없습니다. 원본 결속을 확인하세요. ({selected.error})</p>}
+    {selected?.ok && <div data-selected-revision={selected.revision} data-legacy-operative="false">
+      <p>원본 리비전: <code>{selected.revision}</code></p>
+      <GurpsSheet gurps={selected.sheet} />
+      <details key={selected.revision} data-legacy-record>
+        <summary>역사 기록 전체 · 모든 필드와 근거</summary>
+        <pre>{JSON.stringify(selected.record, null, 2)}</pre>
+      </details>
+    </div>}
+  </section>
 }
 
 function ValuesDesireSection({ detail }: { detail: any }): JSX.Element | null {
@@ -378,7 +421,12 @@ export default function PersonDetailPage() {
         if (!response.ok) throw new Error(`${response.status}`)
         return response.json() as Promise<PersonDetail>
       })
-      .then((person) => { if (active) setDetail(person) })
+      .then((person) => {
+        if (person.id !== summary.id || person.name !== summary.name || person.state !== summary.state ||
+            person.characterId !== summary.characterId || person.detailRoute !== summary.detailRoute ||
+            person.gurps?.id !== summary.characterId || person.gurps?.personId !== summary.id) throw new Error('E_PERSON_DETAIL_IDENTITY')
+        if (active) setDetail(person)
+      })
       .catch(() => { if (active) setFailed(true) })
     return () => { active = false }
   }, [summary])
@@ -397,7 +445,6 @@ export default function PersonDetailPage() {
 
 export function PersonDetailContent({ detail, personId, feedback = null, feedbackBound = false, proseRef = { current: null }, setFeedbackBound = () => {} }: { detail: PersonDetail; personId: string; feedback?: import('../feedbackSelection').FeedbackDocument | null; feedbackBound?: boolean; proseRef?: React.RefObject<HTMLDivElement>; setFeedbackBound?: (bound: boolean) => void }): JSX.Element {
   const person: any = detail
-  const sheet = parseGurpsSheet(detail.gurps, personId)
   const basicRows: Array<Array<string | number | null>> = [
     ['이름', person.name], ['국가', person.stateName || '무소속'], ['국가 ID', person.state],
     ...(detail.birthDate ? [['생년월일', detail.birthDate], ['만 나이', detail.age ?? null], ['나이 기준일', detail.ageAsOf ?? null]] : []),
@@ -459,7 +506,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           <h2>정본 상세</h2>
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
-          {sheet.ok && <GurpsSheet gurps={sheet.sheet} />}
+          <PreservedPersonSheet key={personId} payload={detail.personSheet} identity={{ id: detail.characterId, personId, name: detail.name, state: detail.state }} />
           {detail.familyTree && <FamilyTree tree={detail.familyTree} />}
           {detail.unit && <section className="gurps-unit">
             <h2>부대</h2>

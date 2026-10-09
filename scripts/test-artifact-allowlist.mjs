@@ -26,6 +26,8 @@ async function fixture(extra = {}, omit = []) {
     'clan-crests/index.json': '{}',
     'assets/index-AbCd1234.js': '',
     'assets/index-AbCd1234.css': '',
+    'assets/FamilyTree-AbCd1234.js': '',
+    'assets/FamilyTree-AbCd1234.css': '',
     'assets/Ailments-Zz9_Yx-8.js': '',
     'assets/lib/mermaid.core-AbCd1234.js': '',
     ...extra,

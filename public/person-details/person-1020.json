@@ -3,6 +3,7 @@
   "name": "한서경",
   "title": "계약 검토 담당",
   "position": "계약 검토 담당",
+  "characterId": "K1020",
   "rank": "해당 없음 — 국가 관직을 맡지 않는다.",
   "commonTier": "T5",
   "occupation": "주 기록관 / 부 물류상",
@@ -268,60 +269,242 @@
   },
   "gurps": {
     "id": "K1020",
-    "personId": "person-1020",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-1020"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1020",
+            "name": "한서경",
+            "url": "/people/person-1020",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 기록관 / 부 물류상",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/36/items/5/ko",
+                  "quote": "생업: 주 기록관 / 부 물류상"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/36/items/5/ko",
+                    "quote": "생업: 주 기록관 / 부 물류상"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/36/items/5/ko",
+                    "quote": "생업: 주 기록관 / 부 물류상"
+                  }
+                ],
+                "cp": 4,
+                "level": 11
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 12,
+              "unspent": 63,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false
+          }
+        }
       },
       {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 11,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1020",
+            "name": "한서경",
+            "url": "/people/person-1020",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 기록관 / 부 물류상",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/36/items/5/ko",
+                  "quote": "생업: 주 기록관 / 부 물류상"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/36/items/5/ko",
+                    "quote": "생업: 주 기록관 / 부 물류상"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/36/items/5/ko",
+                    "quote": "생업: 주 기록관 / 부 물류상"
+                  }
+                ],
+                "cp": 4,
+                "level": 11
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 12,
+              "unspent": 63,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 12,
-      "unspent": 63,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "clan": null,

@@ -3,6 +3,7 @@
   "name": "국용",
   "title": "환승 당직 의무원, 전미리의 실무 담당자",
   "position": "환승 당직 의무원, 전미리의 실무 담당자",
+  "characterId": "K304",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "환승 환자 중증도·이송 시각 기록",
@@ -268,60 +269,328 @@
   },
   "gurps": {
     "id": "K304",
-    "personId": "person-0305",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0305"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K304",
+            "name": "국용",
+            "url": "/people/person-0305",
+            "state": "S12",
+            "method": "card-lexicon",
+            "role": {
+              "display": "환승 환자 중증도·이송 시각 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-12.json",
+                  "pointer": "/content/127/items/0/ko",
+                  "quote": "생업: 환승 환자 중증도·이송 시각 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 환승 환자 중증도·이송 시각 기록"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "First Aid/TL?",
+                "ko": "응급 처치·환자 이송",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 환승 환자 중증도·이송 시각 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 신내운수 규모",
+              "faction_scale": {
+                "state": "S12",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "운행 중단 역사",
+              "camp": {
+                "name": "국용 폐역 야영지",
+                "type": "야영지",
+                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "First Aid/TL?",
-        "ko": "응급 처치·환자 이송",
-        "level": 14,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K304",
+            "name": "국용",
+            "url": "/people/person-0305",
+            "state": "S12",
+            "method": "card-lexicon",
+            "role": {
+              "display": "환승 환자 중증도·이송 시각 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-12.json",
+                  "pointer": "/content/127/items/0/ko",
+                  "quote": "생업: 환승 환자 중증도·이송 시각 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 환승 환자 중증도·이송 시각 기록"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/128/text/ko",
+                    "quote": "중증도 표와 이송 시각을 당직실에 붙이고, 무기 적재 의심 칸은 심사관 입회 없이 열지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "First Aid/TL?",
+                "ko": "응급 처치·환자 이송",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-12.json",
+                    "pointer": "/content/127/items/0/ko",
+                    "quote": "생업: 환승 환자 중증도·이송 시각 기록"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 신내운수 규모",
+              "faction_scale": {
+                "state": "S12",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "운행 중단 역사",
+              "camp": {
+                "name": "국용 폐역 야영지",
+                "type": "야영지",
+                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 36,
-      "unspent": 39,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

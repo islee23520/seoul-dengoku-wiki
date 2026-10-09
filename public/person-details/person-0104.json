@@ -3,6 +3,7 @@
   "name": "변오름",
   "title": "성수 대합실 역장",
   "position": "성수 대합실 역장",
+  "characterId": "K103",
   "rank": "집사",
   "commonTier": "T4",
   "occupation": "대합실 급수 창구 당직",
@@ -370,66 +371,340 @@
   },
   "gurps": {
     "id": "K103",
-    "personId": "person-0104",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0104"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K103",
+            "name": "변오름",
+            "url": "/people/person-0104",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 급수 창구 당직",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/49/items/1/ko",
+                  "quote": "생업: 대합실 급수 창구 당직"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/50/text/ko",
+                    "quote": "골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/49/items/1/ko",
+                    "quote": "생업: 대합실 급수 창구 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/49/items/1/ko",
+                    "quote": "생업: 대합실 급수 창구 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/50/text/ko",
+                    "quote": "골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 44,
+              "unspent": 31,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "회기",
+              "type": "초소 영지",
+              "station": "회기",
+              "state": "S04",
+              "settlement": {
+                "name": "회기 정착지",
+                "type": "정착지",
+                "description": "회기 일대 고정 거점"
+              },
+              "note": "S04 회기 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K103",
+            "name": "변오름",
+            "url": "/people/person-0104",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 급수 창구 당직",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/49/items/1/ko",
+                  "quote": "생업: 대합실 급수 창구 당직"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/50/text/ko",
+                    "quote": "골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/49/items/1/ko",
+                    "quote": "생업: 대합실 급수 창구 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/49/items/1/ko",
+                    "quote": "생업: 대합실 급수 창구 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/50/text/ko",
+                    "quote": "골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 44,
+              "unspent": 31,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "회기",
+              "type": "초소 영지",
+              "station": "회기",
+              "state": "S04",
+              "settlement": {
+                "name": "회기 정착지",
+                "type": "정착지",
+                "description": "회기 일대 고정 거점"
+              },
+              "note": "S04 회기 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Leadership",
-        "ko": "지휘",
-        "level": 13,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 44,
-      "unspent": 31,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

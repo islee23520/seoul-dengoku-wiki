@@ -3,6 +3,7 @@
   "name": "임하준",
   "title": "펌프기술 총관, 현재 실종",
   "position": "전 명부교회 당회장",
+  "characterId": "K086",
   "rank": "당회장",
   "commonTier": "T1",
   "occupation": "펌프기술 총관",
@@ -395,66 +396,380 @@
   },
   "gurps": {
     "id": "K086",
-    "personId": "person-0086",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0086"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K086",
+            "name": "임하준",
+            "url": "/people/person-0086",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "펌프기술 총관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Core-Characters.json",
+                  "pointer": "/content/36/text/ko",
+                  "quote": "생업 별명은 펌프기술 총관."
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/38/text/ko",
+                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/36/text/ko",
+                    "quote": "생업 별명은 펌프기술 총관."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/38/text/ko",
+                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
+                  }
+                ],
+                "cp": 4,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/37/text/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "성수",
+              "type": "초소 영지",
+              "station": "성수",
+              "state": "S04",
+              "settlement": {
+                "name": "성수 정착지",
+                "type": "정착지",
+                "description": "성수 일대 고정 거점"
+              },
+              "note": "S04 성수 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K086",
+            "name": "임하준",
+            "url": "/people/person-0086",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "펌프기술 총관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Core-Characters.json",
+                  "pointer": "/content/36/text/ko",
+                  "quote": "생업 별명은 펌프기술 총관."
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/38/text/ko",
+                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/36/text/ko",
+                    "quote": "생업 별명은 펌프기술 총관."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/35/text/ko",
+                    "quote": "실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/38/text/ko",
+                    "quote": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다."
+                  }
+                ],
+                "cp": 4,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/37/text/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 76,
+              "unspent": 0,
+              "total": 76
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "성수",
+              "type": "초소 영지",
+              "station": "성수",
+              "state": "S04",
+              "settlement": {
+                "name": "성수 정착지",
+                "type": "정착지",
+                "description": "성수 일대 고정 거점"
+              },
+              "note": "S04 성수 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 76,
-      "unspent": 0,
-      "total": 76
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

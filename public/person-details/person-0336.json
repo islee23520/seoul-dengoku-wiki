@@ -3,6 +3,7 @@
   "name": "판한들",
   "title": "청량리역 대합실 거점장",
   "position": "청량리 대합실 진료 전문의",
+  "characterId": "K335",
   "rank": "전문의",
   "commonTier": "T2",
   "occupation": "대합실 의무 대기표·약재 하역 순서 게시",
@@ -368,66 +369,370 @@
   },
   "gurps": {
     "id": "K335",
-    "personId": "person-0336",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0336"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K335",
+            "name": "판한들",
+            "url": "/people/person-0336",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 의무 대기표·약재 하역 순서 게시",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/28/items/0/ko",
+                  "quote": "생업: 대합실 의무 대기표·약재 하역 순서 게시"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/27/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "대합실 의무 대기표와 약재 하역 순서를 매일 공개하고, 군수 화차는 의무호송이 떠난 뒤에만 승강장에 붙인다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 대합실 의무 대기표·약재 하역 순서 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/27/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 대합실 의무 대기표·약재 하역 순서 게시"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "대합실 의무 대기표와 약재 하역 순서를 매일 공개하고, 군수 화차는 의무호송이 떠난 뒤에만 승강장에 붙인다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "운행 중단 역사",
+              "camp": {
+                "name": "판한들 폐역 야영지",
+                "type": "야영지",
+                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K335",
+            "name": "판한들",
+            "url": "/people/person-0336",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 의무 대기표·약재 하역 순서 게시",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/28/items/0/ko",
+                  "quote": "생업: 대합실 의무 대기표·약재 하역 순서 게시"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/27/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "대합실 의무 대기표와 약재 하역 순서를 매일 공개하고, 군수 화차는 의무호송이 떠난 뒤에만 승강장에 붙인다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 대합실 의무 대기표·약재 하역 순서 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/27/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 대합실 의무 대기표·약재 하역 순서 게시"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "대합실 의무 대기표와 약재 하역 순서를 매일 공개하고, 군수 화차는 의무호송이 떠난 뒤에만 승강장에 붙인다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "운행 중단 역사",
+              "camp": {
+                "name": "판한들 폐역 야영지",
+                "type": "야영지",
+                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Pharmacy/TL? (Herbal)",
-        "ko": "약재",
-        "level": 13,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 64,
-      "unspent": 11,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {
