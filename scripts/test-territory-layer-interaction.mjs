@@ -15,7 +15,7 @@ vi.mock('three', async (importOriginal) => {
   } }
 })
 
-test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'])('selected segment interaction: %s', async (scenario) => {
+test.each(['island partial occupation', 'three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'])('selected segment interaction: %s', async (scenario) => {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
   const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:동묘앞~신설동'].includes(edge.id))
   const duplicateStation = { ...data.stations.find((station) => station.id === '신촌'), id: 'fixture-overlap', name: '겹침 검증역', memberIds: ['fixture-overlap'] }
@@ -23,10 +23,14 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
   edges.push(overlapEdge)
   const stationIds = new Set(edges.flatMap((edge) => [edge.a, edge.b]))
   stationIds.add('Yeongdeungpo')
-  const surface = ['three hegemon surface', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'].includes(scenario)
+  const surface = ['island partial occupation', 'three hegemon surface', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'].includes(scenario)
   const mapData = surface ? data : { ...data, hegemons: scenario === 'label fallback' ? data.hegemons : [], edges, stations: [...data.stations.filter((station) => stationIds.has(station.id)), duplicateStation], states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
   const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [data.projection.minEast, data.projection.minNorth, data.projection.maxEast, data.projection.maxNorth] }], farWaterFile: 'water.json', attribution: '' }
   const assets = { 'opening-territories.json': mapData, 'regional-terrain.json': terrain, 'regional-boundaries.json': [], 'outside-admin-units.json': { units: [] }, 'outside-control-2126.json': { assignments: [] }, 'water.json': { features: [] } }
+  if (scenario === 'island partial occupation') {
+    assets['outside-admin-units.json'] = JSON.parse(await readFile('public/outside-admin-units.json', 'utf8'))
+    assets['outside-control-2126.json'] = JSON.parse(await readFile('public/outside-control-2126.json', 'utf8'))
+  }
   assets['confirmed-person-holdings.json'] = JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8'))
   const host = document.createElement('div')
   document.body.appendChild(host)
@@ -41,6 +45,20 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
     // Mock only graphics and offline asset transport; selection handlers and React
     // state transitions are the actual component behavior under test.
     await act(async () => { root.render(React.createElement(MemoryRouter, null, React.createElement(OpeningTerritoryMap))) })
+    if (scenario === 'island partial occupation') {
+      const frame = [...host.querySelectorAll('button')].find(button => button.textContent === '한반도 보기')
+      await act(async () => frame.click())
+      const components = [...host.querySelectorAll('[data-outside-unit="2872031000"]')]
+      assert.equal(components.length, 12)
+      assert.equal(components.filter(part => part.dataset.controlStatus === 'held').length, 3)
+      const jangbong = host.querySelector('[data-island-component="2872031000:11"]')
+      assert.equal(jangbong.dataset.controlStatus, 'unassigned')
+      assert.notEqual(jangbong.getAttribute('fill'), host.querySelector('[data-island-component="2872031000:7"]').getAttribute('fill'))
+      await act(async () => jangbong.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })))
+      assert.equal(host.querySelector('[data-island-detail="2872031000:11"] td:last-child').textContent, '미배정')
+      assert.equal(host.querySelector('[data-island-detail="2872031000:7"] td:last-child').textContent, '대한민국정부')
+      return
+    }
     if (scenario === 'label fallback') {
       assert.equal(host.querySelector('[data-hegemon-label-fallback]').textContent, data.hegemons.map(item => item.name).join(' · '))
       return

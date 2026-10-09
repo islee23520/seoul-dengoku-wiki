@@ -30,6 +30,8 @@ import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './
 import { loadCastFamilyTrees, projectFamilyTree, projectClanFamilyTree } from './cast-family-trees.mjs'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
 import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
+import { projectOutsideOccupation } from './outside-occupation.mjs'
+import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -776,8 +778,8 @@ await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringi
 
 const outsideGeometry = JSON.parse(await readFile(resolve(publicRoot, 'outside-admin-units.json'), 'utf8'))
 const outsideControl = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-control-2126.json'), 'utf8'))
-if (outsideControl.assignments.length !== outsideGeometry.units.length || new Set(outsideControl.assignments.map(row => row.unitId)).size !== outsideGeometry.units.length || outsideControl.assignments.some(row => !outsideGeometry.units.some(unit => unit.id === row.unitId))) throw new Error('E_OUTSIDE_CONTROL_COVERAGE')
-await writeFile(resolve(publicRoot, 'outside-control-2126.json'), JSON.stringify({ schema: outsideControl.schema, assignments: outsideControl.assignments }, null, 2) + '\n')
+const outsideIslands = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-island-occupation.json'), 'utf8'))
+await writeFile(resolve(publicRoot, 'outside-control-2126.json'), JSON.stringify(projectOutsideOccupation(outsideControl, outsideGeometry, outsideIslands), null, 2) + '\n')
 
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
@@ -880,6 +882,7 @@ if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
 await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify({ hegemons: sixteenStatesLore.data.currentAffiliation.hegemons, daejeon: daejeonPolities[0] }, null, 2) + ' as const\n')
 const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
+await writeFile(resolve(publicRoot, 'admin-territorial-scale.json'), JSON.stringify(buildAdminTerritorialScale(outsideGeometry.units, openingTerritories.regions, territorialScale)) + '\n')
 const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
 for (const holding of personalHoldings.holdings) {
   const rulerState = territoryStates.find(state => state.id === holding.stateId && state.ruler === issuedById.get(holding.holderPersonId)?.name)

@@ -5,6 +5,7 @@ import { presentationStations, stationAliases } from '../src/components/stationP
 import { validatedDensities } from './region-density.mjs'
 import { segmentPointerChoices } from '../src/components/segmentPointerSelection.ts'
 import { regularLineGraph } from './regular-line-graph.mjs'
+import { projectOutsideOccupation } from './outside-occupation.mjs'
 
 test('baked hegemons preserve canonical membership exactly once for every holder', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
@@ -104,10 +105,11 @@ test('outside administrative units keep observed boundaries distinct from 2126 c
   assert.ok(outside.units.every((unit) => unit.path.startsWith('M') && unit.holder2126 === null))
   const source = JSON.parse(await readFile(new URL('../lore/regions/outside-control-2126.json', import.meta.url), 'utf8'))
   const projected = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))
-  assert.deepEqual(projected, { schema: source.schema, assignments: source.assignments })
+  const islands = JSON.parse(await readFile(new URL('../lore/regions/outside-island-occupation.json', import.meta.url), 'utf8'))
+  assert.deepEqual(projected, projectOutsideOccupation(source, outside, islands))
   assert.equal(source.assignments.length, 1415)
-  const counts = Object.fromEntries(['대한민국정부', '규격맹', '종교 연합', '대전'].map(name => [name, source.assignments.filter(row => row.authority.name === name).length]))
-  assert.deepEqual(counts, { 대한민국정부: 153, 규격맹: 667, '종교 연합': 513, 대전: 82 })
+  const counts = Object.fromEntries(['대한민국정부', '규격맹', '종교 연합', '대전'].map(name => [name, source.assignments.filter(row => row.authority?.name === name).length]))
+  assert.deepEqual(counts, { 대한민국정부: 502, 규격맹: 495, '종교 연합': 325, 대전: 82 })
   assert.equal(new Set(source.assignments.map(row => row.unitId)).size, 1415)
   assert.ok(source.assignments.every(({ unitId }) => outside.units.some(unit => unit.id === unitId)))
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
@@ -323,11 +325,8 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
   assert.equal(data.vassals.length, 13)
   assert.deepEqual(data.vassals.map((vassal) => vassal.name).sort(), canonVassals.sort())
   const stateIds = new Set(data.states.map((state) => state.id))
-  const expectedVassalSuzerains = {
-    '경기도': 'S06', '제일수문': 'union:religious', '제이수문': 'union:religious', '제1분공방': 'S02', '제2분공방': 'S02',
-    '제1종착': 'S02', '제2종착': 'S06', '제1경비지구': 'union:religious', '제2경비지구': 'S06', '제3경비지구': 'S06',
-    '태욱중공업 성남사업장': 'union:religious', '태욱중공업 수원사업장': 'S02', '영종지점': 'S02',
-  }
+  const approved = JSON.parse(await readFile(new URL('./fixtures/approved-political-partition.json', import.meta.url), 'utf8'))
+  const expectedVassalSuzerains = Object.fromEntries(approved.externalDestinations.map(row => [row.name, row.suzerain]))
   assert.deepEqual(Object.fromEntries(data.vassals.map((vassal) => [vassal.name, vassal.suzerain])), expectedVassalSuzerains)
   for (const vassal of data.vassals) {
     assert.ok(stateIds.has(vassal.suzerain) || vassal.suzerain === 'union:religious', `suzerain must be a state id: ${vassal.name}:${vassal.suzerain}`)
