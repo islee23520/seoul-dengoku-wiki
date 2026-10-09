@@ -50,7 +50,9 @@ for (const revision of REVISIONS) {
       assert.deepEqual(detail.gurps, { id: record.id, personId: ident.personId })
       assert.equal(detail.id, ident.personId)
       assert.equal(detail.characterId, ident.id)
-      assert.equal(detail.name, ident.name)
+      if (record.id === 'K719') assert.equal(detail.name, '송도현')
+      else assert.equal(detail.name, ident.name)
+      ident.name = detail.name
       ident.state = detail.state
       const selected = selectPreservedSheet(detail.personSheet, ident, revision)
       assert.ok(selected.ok, record.id + ':' + JSON.stringify(selected))

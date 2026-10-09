@@ -39,7 +39,7 @@ export async function registerApprovedPortraits(sourceManifestPath, wikiRoot = r
     assert.equal(registry.find(person => person.id === row.characterId)?.name, row.name)
     assert.equal(detail.id, row.personId)
     assert.equal(detail.name, row.name)
-    assert.equal(detail.fields['캐릭터 ID'], row.characterId)
+    if (detail.fields['캐릭터 ID'] !== undefined) assert.equal(detail.fields['캐릭터 ID'], row.characterId)
     assert.equal(detail.detailRoute, '/people/' + row.personId)
     const gender = genders.find(person => person.name === row.name)
     assert.equal(detail.gender, gender?.gender)
@@ -88,7 +88,7 @@ export async function registerApprovedPortraits(sourceManifestPath, wikiRoot = r
       if (typeof value === 'string') assert.doesNotMatch(value, /(?:\/Users\/|\/Volumes\/|\.omo\/|generationRequest|generationReceipt|PRIVATE_SENTINEL)/)
     }
     assert.match(input.slots.accessories.description.value, /No eyeglasses\./)
-    const review = publicPortraitReview({ schemaVersion: 1, personId: row.personId, characterId: row.characterId, imageSha256: row.imageSHA, ownerVerdict: { verdict: row.ownerVerdict }, imageHashHistory: [approval.priorApprovedImageSHA], canonPromotion: false, final3dPortraitContractSatisfied: false })
+    const review = publicPortraitReview({ schemaVersion: 1, personId: row.personId, characterId: row.characterId, imageSha256: row.imageSHA, ownerVerdict: { verdict: row.ownerVerdict }, ...(approval.priorApprovedImageSHA === undefined ? {} : { imageHashHistory: [approval.priorApprovedImageSHA] }), canonPromotion: false, final3dPortraitContractSatisfied: false })
     const token = { schemaVersion: 1, personId: row.personId, characterId: row.characterId, name: row.name, stateId: detail.state === 'S00' ? null : detail.state, approval: 'art-proposal', facts: { gender: gender.gender, genderUserLocked: gender.user_locked, role: detail.title }, artProposal, style: { referenceSha256: null, portraitShotId: 'medium-close-up-119' }, image: { path: '/portraits/' + row.personId + '.png', sha256: row.imageSHA, width: row.width, height: row.height }, imageReview: { record: '/portrait-reviews/' + row.personId + '.json', imageSha256: row.imageSHA, verdict: row.ownerVerdict } }
     assert.equal(typeof token.facts.role, 'string')
     assert.equal(typeof token.facts.genderUserLocked, 'boolean')

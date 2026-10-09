@@ -42,7 +42,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
         const data: unknown = await res.json()
         if (!data || typeof data !== 'object' || !('id' in data) || data.id !== selectedCharId || !('name' in data) || data.name !== expected?.name) throw new Error('인물 정보의 ID와 이름이 일치하지 않습니다.')
         const legacy = legacyStore ? legacyStore.read(legacyRevision(revision), selectedCharId) : projectedDraftLegacy(data, revision)
-        if (legacy.person.name !== expected?.name) throw new Error('원본과 인물 목록의 이름이 일치하지 않습니다.')
+        if (legacyStore && legacy.person.name !== expected?.name) throw new Error('원본과 인물 목록의 이름이 일치하지 않습니다.')
         const personal = draftPersonalContext(data)
         if (controller.signal.aborted) return
         setSheet({ ...emptyCharacterDraft(), ...personal, legacy })

@@ -1,3 +1,4 @@
+import nameChanges from '../../scripts/person-sheet-name-changes.json'
 import { LEGACY_REVISIONS, ORIGINAL_CAPABILITIES, ORIGINAL_PROFILE_ID, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
 
 export type Json = null | boolean | number | string | readonly Json[] | { readonly [key: string]: Json }
@@ -107,7 +108,9 @@ export function projectedDraftLegacy(detail: unknown, revision: string): LegacyS
         rules.resolution !== 'opposed-d10' || rules.numericAdoption !== false || rules.originalRatings !== null ||
         rules.legacyValues !== 'immutable-not-d10-ratings') throw new DraftContractError('E_PERSON_SHEET_RULES')
     const person = variant.legacy.record
-    if (person.id !== detail.characterId || person.name !== detail.name || person.url !== `/people/${detail.id}` || (person.personId !== undefined && person.personId !== detail.id)) throw new DraftContractError('E_PERSON_SHEET_IDENTITY')
+    const nameChange = (nameChanges as Record<string, { personId: string; historicalName: string; currentName: string }>)[detail.characterId]
+    const nameMatches = person.name === detail.name || (nameChange?.personId === detail.id && nameChange.historicalName === person.name && nameChange.currentName === detail.name)
+    if (person.id !== detail.characterId || !nameMatches || person.url !== `/people/${detail.id}` || (person.personId !== undefined && person.personId !== detail.id)) throw new DraftContractError('E_PERSON_SHEET_IDENTITY')
     if (typeof person.state !== 'string' || variant.historicalState !== person.state) throw new DraftContractError('E_PERSON_SHEET_HISTORICAL_STATE')
     if (seal.revision === selected) result = freezeJson(structuredClone({ revision: selected, ledgerSha256: seal.sha256,
       sourceFile: 'lore/name-pools/gurps-cast.json' as const, projection: variant, person }))

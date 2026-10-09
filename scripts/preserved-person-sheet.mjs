@@ -2,6 +2,7 @@ import { build, ROOT, REVISIONS } from './gurps-cast.mjs'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
+const nameChanges = JSON.parse(readFileSync(new URL('./person-sheet-name-changes.json', import.meta.url), 'utf8'))
 const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
 
 // Both inputs ship with the repository. No environment, Git history or network is
@@ -41,7 +42,9 @@ export function projectPreservedPersonSheet(versions, identity) {
     const record = version.people.get(identity.id)
     // Affiliation is time-dependent. Only issued IDs, names and stable routes
     // identify the same person across the independently sealed historical sheets.
-    if (!record || record.id !== identity.id || record.name !== identity.name ||
+    const nameChange = nameChanges[identity.id]
+    const nameMatches = record?.name === identity.name || (nameChange?.personId === identity.personId && nameChange.historicalName === record?.name && nameChange.currentName === identity.name)
+    if (!record || record.id !== identity.id || !nameMatches ||
         record.url !== identity.url || (record.personId !== undefined && record.personId !== identity.personId)) {
       throw new Error('E_PERSON_SHEET_IDENTITY:' + identity.id + ':' + identity.personId)
     }

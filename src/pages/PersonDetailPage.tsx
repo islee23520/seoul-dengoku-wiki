@@ -9,6 +9,7 @@ import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
 import { FamilyTree, type FamilyTreeData } from '../components/FamilyTree'
+import nameChanges from '../../scripts/person-sheet-name-changes.json'
 import preservationBaseline from '../../scripts/issued-preservation-baseline.json'
 
 type Relation = { from: string; type: string; to: string; basis: string }
@@ -300,7 +301,9 @@ export function selectPreservedSheet(payload: unknown, identity: SheetIdentity, 
     const rules = variant.rules
     if (!isRecord(rules) || rules.sourceRevision !== key || rules.rulesVersion !== 'seoul.opposed-d10.v1' || rules.resolution !== 'opposed-d10' || rules.numericAdoption !== false || rules.originalRatings !== null || rules.legacyValues !== 'immutable-not-d10-ratings') return reject('E_PERSON_SHEET_RULES')
     const record = variant.legacy.record
-    if (record.id !== identity.id || record.name !== identity.name || record.url !== '/people/' + identity.personId || (record.personId !== undefined && record.personId !== identity.personId)) return reject('E_PERSON_SHEET_IDENTITY')
+    const nameChange = (nameChanges as Record<string, { personId: string; historicalName: string; currentName: string }>)[identity.id]
+    const nameMatches = record.name === identity.name || (nameChange?.personId === identity.personId && nameChange.historicalName === record.name && nameChange.currentName === identity.name)
+    if (record.id !== identity.id || !nameMatches || record.url !== '/people/' + identity.personId || (record.personId !== undefined && record.personId !== identity.personId)) return reject('E_PERSON_SHEET_IDENTITY')
     if (typeof record.state !== 'string' || variant.historicalState !== record.state) return reject('E_PERSON_SHEET_HISTORICAL_STATE')
     const parsed = parseGurpsSheet(record, identity.personId)
     if (!parsed.ok) return reject(parsed.error)

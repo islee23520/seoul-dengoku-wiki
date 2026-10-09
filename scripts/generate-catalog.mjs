@@ -820,15 +820,20 @@ await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify
 
 const personCards = new Map()
 const addPersonCards = (text, file, pattern) => {
-  const headings = [...text.matchAll(pattern)]
+  // Heading aliases belong to the following heading, not the preceding card.
+  const headings = [...text.matchAll(pattern)].map((heading) => ({
+    heading,
+    start: text.slice(0, heading.index).match(/(?:\n<a id="[\p{L}\p{N}_-]+"><\/a>\n*)+$/u)?.index ?? heading.index,
+  }))
   for (let index = 0; index < headings.length; index += 1) {
-    const name = headings[index][1].trim()
+    const { heading } = headings[index]
+    const name = heading[1].trim()
     if (name === '부록 — 가치관 숫자' || name === '인물 카드') continue
-    const nextPerson = headings[index + 1]?.index ?? -1
-    const nextSection = file === 'Cast-Unaffiliated.md' ? text.indexOf('\n## ', headings[index].index + headings[index][0].length) : -1
+    const nextPerson = headings[index + 1]?.start ?? -1
+    const nextSection = file === 'Cast-Unaffiliated.md' ? text.indexOf('\n## ', heading.index + heading[0].length) : -1
     const boundaries = [nextPerson, nextSection].filter((position) => position >= 0)
     const nextHeading = boundaries.length ? Math.min(...boundaries) : -1
-    const body = text.slice(headings[index].index + headings[index][0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
+    const body = text.slice(heading.index + heading[0].length, nextHeading >= 0 ? nextHeading : text.length).trim()
     const cards = personCards.get(name) ?? []
     const slug = file.replace('.md', '')
     cards.push({ file: slug, body, primary: pagesBySlug.get(slug)?.value.data?.primary_detail_names?.includes(name) ?? false })
