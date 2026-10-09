@@ -20,8 +20,8 @@ const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
 // tasks57-67의 승인된 국가명·대전 소속 변경에서 재계산한 입력 해시. 발급 인물과 능력 배분은 보존한다.
 export const APPROVED_HASHES = {
-  [VALUES]: '7a0182a8cca414848c55ef9ab1e142aafebad7552c0cb6da7a67cb26caf95597',
-  [REGISTRY]: '51f52b4e6cd6ca369f78bcb90990f63196c436bd9f0c4f7d7d6fc3b2768976eb',
+  [VALUES]: 'fa52d710f6d5c5324d9cdd38c818f9958e61cb1c77c4e0d968d4fb7a0dc51961',
+  [REGISTRY]: '57e6a03ebf298b2822dd2e02ce012d42057e12897c1b489682e07e0d414ff1a2',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),

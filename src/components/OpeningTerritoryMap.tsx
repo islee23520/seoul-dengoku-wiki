@@ -149,7 +149,8 @@ export default function OpeningTerritoryMap() {
   const [showVassals, setShowVassals] = useState(true)
   const [detailOpen, setDetailOpen] = useState(false)
   const [failed, setFailed] = useState(false)
-  const start = useRef<{ x: number; y: number; box: Box; moved: boolean } | null>(null)
+  const start = useRef<{ pointerId: number; x: number; y: number; box: Box; moved: boolean } | null>(null)
+  const activePointers = useRef(new Set<number>())
   const dragged = useRef(false)
   const mapRef = useRef<SVGSVGElement>(null)
   const textMeshRef = useRef<HTMLDivElement>(null)
@@ -167,6 +168,15 @@ export default function OpeningTerritoryMap() {
   }, [box])
 
   useEffect(() => () => cancelAnimationFrame(frameRequest.current), [])
+  useEffect(() => {
+    const finishPointer = (event: globalThis.PointerEvent) => {
+      activePointers.current.delete(event.pointerId)
+      start.current = null
+    }
+    window.addEventListener('pointerup', finishPointer)
+    window.addEventListener('pointercancel', finishPointer)
+    return () => { window.removeEventListener('pointerup', finishPointer); window.removeEventListener('pointercancel', finishPointer) }
+  }, [])
 
   useEffect(() => {
     if (!data || !water || !textMeshRef.current) return
@@ -493,17 +503,22 @@ export default function OpeningTerritoryMap() {
       pendingBox.current = null
     })
   }
-  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => { dragged.current = false; start.current = { x: event.clientX, y: event.clientY, box, moved: false } }
+  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
+    activePointers.current.add(event.pointerId)
+    if (activePointers.current.size > 1) { start.current = null; pendingBox.current = null; return }
+    dragged.current = false
+    start.current = { pointerId: event.pointerId, x: event.clientX, y: event.clientY, box, moved: false }
+  }
   const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
     const gesture = start.current
-    if (!gesture) return
+    if (!gesture || gesture.pointerId !== event.pointerId || activePointers.current.size !== 1) return
     const rect = event.currentTarget.getBoundingClientRect()
     const dx = (event.clientX - gesture.x) / rect.width * gesture.box.width
     const dy = (event.clientY - gesture.y) / rect.height * gesture.box.height
     if (Math.hypot(event.clientX - gesture.x, event.clientY - gesture.y) > 5) { gesture.moved = true; dragged.current = true }
     scheduleBox({ ...gesture.box, x: gesture.box.x - dx, y: gesture.box.y - dy })
   }
-  const onPointerUp = () => { start.current = null }
+  const onPointerUp = (event: PointerEvent<SVGSVGElement>) => { activePointers.current.delete(event.pointerId); start.current = null }
   const zoom = (factor: number) => { const width = Math.max(100, Math.min(pr - px, box.width * factor)); const height = box.height * width / box.width; setBox({ x: box.x + (box.width - width) / 2, y: box.y + (box.height - height) / 2, width, height }) }
   const selected = data.regions.find((region) => region.id === selectedId)
   const selectedState = states.get(stateFilter)
@@ -567,7 +582,7 @@ export default function OpeningTerritoryMap() {
     {layer === 'underground' && <div className="territory-underground-legend" aria-label="지하 구간 지배 범례"><span><span className="territory-underground-swatch" data-control-status="held" />점유 {segmentCounts('held')}</span><span><span className="territory-underground-swatch" data-control-status="contested" style={{ backgroundColor: contestedColor }} />분쟁 {segmentCounts('contested')}</span><span><span className="territory-underground-swatch" data-control-status="unassigned" style={{ backgroundColor: unassignedColor }} />미배정 {segmentCounts('unassigned')}</span><span className="territory-tier-note">구간 지배는 양 끝 역 지배가 같으면 그 국가, 다르면 분쟁으로 정합니다.</span></div>}
     <div className="territory-map-layout"><div className="territory-map-canvas territory-map-flat" data-flat-territory-map data-territory-layer={layer}>
       <div className="territory-flat-controls" role="group" aria-label="지도 범위"><button type="button" onClick={frameSeoul} aria-pressed={frame === 'seoul'}>서울 전체</button><button type="button" onClick={framePeninsula} aria-pressed={frame === 'peninsula'}>한반도 보기</button><button type="button" onClick={() => zoom(0.8)} aria-label="지도 확대">+</button><button type="button" onClick={() => zoom(1.25)} aria-label="지도 축소">-</button><button type="button" onClick={frame === 'seoul' ? frameSeoul : framePeninsula}>초기화</button></div>
-      <svg ref={mapRef} className="territory-flat-svg" viewBox={`${box.x} ${box.y} ${box.width} ${box.height}`} role="img" aria-label={layer === 'surface' ? '서울 국가 경계와 강줄기, 서울 밖 행정구역과 속국 소재지' : '서울 지하 역 구역과 역 사이 구간의 지배'} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp}>
+      <svg ref={mapRef} className="territory-flat-svg" viewBox={`${box.x} ${box.y} ${box.width} ${box.height}`} role="img" aria-label={layer === 'surface' ? '서울 국가 경계와 강줄기, 서울 밖 행정구역과 속국 소재지' : '서울 지하 역 구역과 역 사이 구간의 지배'} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}>
         <g onKeyDownCapture={(event) => {
           if ((event.key === 'Enter' || event.key === ' ') && event.target instanceof SVGElement && event.target.hasAttribute('data-underground-segment')) setSegmentChoices([])
         }} onClickCapture={(event) => {

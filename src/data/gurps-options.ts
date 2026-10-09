@@ -65,7 +65,7 @@ export const BACKGROUNDS = [
   { id: 'guard-remnant', ko: '경비 잔존 출신', state: 'S05 동방사', desc: '치안 제식 경비였다. 방패와 간격의 감각이 몸에 박혀 있다.' },
   { id: 'govt-clerk', ko: '정부 당직 출신', state: 'S06 대한민국정부', desc: '광화문 청사에서 서류를 다뤘다. 직인과 명부의 무게를 안다.' },
   { id: 'cargo-handler', ko: '환적 당직 출신', state: 'S07 환적국', desc: '용산에서 화물을 환적했다. 무거운 것을 나르고 부피를 계산한다.' },
-  { id: 'tech-archivist', ko: '기술 보존 관계자', state: 'S08 중앙기술보존원', desc: '흑석역 간판 아래에서 잃어버린 기술을 보존했다.' },
+  { id: 'tech-archivist', ko: '기술 보존 관계자', state: 'S08 중앙정보부', desc: '중앙정보부에서 기술 자료를 점검하고 보존했다.' },
   { id: 'investor-family', ko: '출자 가문 출신', state: 'S09 여의도출자연합회', desc: '여의대로 금고의 지분을 쥔 가문에서 왔다. 돈의 흐름을 읽는다.' },
   { id: 'temple-monk', ko: '종단 승려 출신', state: 'S10 안국총림', desc: '조계사 총무원에서 위패와 사원 대장을 관리했다.' },
   { id: 'corp-employee', ko: '재벌 사원 출신', state: 'S11 성하그룹', desc: '강남 사옥에서 냉각 키와 차단문을 관리했다.' },

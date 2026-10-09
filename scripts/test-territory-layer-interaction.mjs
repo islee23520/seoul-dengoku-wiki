@@ -15,7 +15,7 @@ vi.mock('three', async (importOriginal) => {
   } }
 })
 
-test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID', 'overlay-only zoom'])('selected segment interaction: %s', async (scenario) => {
+test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'])('selected segment interaction: %s', async (scenario) => {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
   const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:동묘앞~신설동'].includes(edge.id))
   const duplicateStation = { ...data.stations.find((station) => station.id === '신촌'), id: 'fixture-overlap', name: '겹침 검증역', memberIds: ['fixture-overlap'] }
@@ -23,9 +23,9 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
   edges.push(overlapEdge)
   const stationIds = new Set(edges.flatMap((edge) => [edge.a, edge.b]))
   stationIds.add('Yeongdeungpo')
-  const surface = scenario === 'three hegemon surface' || scenario === 'overlay-only zoom'
+  const surface = ['three hegemon surface', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'].includes(scenario)
   const mapData = surface ? data : { ...data, hegemons: scenario === 'label fallback' ? data.hegemons : [], edges, stations: [...data.stations.filter((station) => stationIds.has(station.id)), duplicateStation], states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
-  const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [0, 0, 1, 1] }], farWaterFile: 'water.json', attribution: '' }
+  const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [data.projection.minEast, data.projection.minNorth, data.projection.maxEast, data.projection.maxNorth] }], farWaterFile: 'water.json', attribution: '' }
   const assets = { 'opening-territories.json': mapData, 'regional-terrain.json': terrain, 'regional-boundaries.json': [], 'outside-admin-units.json': { units: [] }, 'outside-control-2126.json': { assignments: [] }, 'water.json': { features: [] } }
   assets['confirmed-person-holdings.json'] = JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8'))
   const host = document.createElement('div')
@@ -45,6 +45,34 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
       assert.equal(host.querySelector('[data-hegemon-label-fallback]').textContent, data.hegemons.map(item => item.name).join(' · '))
       return
     }
+    if (scenario === 'pointer drag' || scenario === 'pointer cancel' || scenario === 'touch pinch') {
+      const svg = host.querySelector('.territory-flat-svg')
+      svg.getBoundingClientRect = () => ({ x: 0, y: 0, left: 0, top: 0, width: 1200, height: 980, right: 1200, bottom: 980 })
+      const frames = []
+      vi.stubGlobal('requestAnimationFrame', callback => { frames.push(callback); return frames.length })
+      const pointer = (type, id, x, y) => {
+        const event = new MouseEvent(type, { bubbles: true, clientX: x, clientY: y })
+        Object.defineProperties(event, { pointerId: { value: id }, pointerType: { value: 'touch' } })
+        svg.dispatchEvent(event)
+      }
+      const initial = svg.getAttribute('viewBox').split(' ').map(Number)
+      await act(async () => {
+        pointer('pointerdown', 1, 400, 400)
+        if (scenario === 'touch pinch') { pointer('pointermove', 1, 350, 400); pointer('pointerdown', 2, 600, 400) }
+        pointer('pointermove', 1, 300, 450)
+        if (scenario === 'touch pinch') pointer('pointermove', 2, 700, 350)
+        while (frames.length) frames.shift()(0)
+        const release = new MouseEvent(scenario === 'pointer cancel' ? 'pointercancel' : 'pointerup', { bubbles: true }); Object.defineProperty(release, 'pointerId', { value: 1 }); window.dispatchEvent(release)
+        if (scenario === 'touch pinch') pointer('pointerup', 2, 700, 350)
+      })
+      const changed = svg.getAttribute('viewBox').split(' ').map(Number)
+      assert.deepEqual(changed.slice(2), initial.slice(2))
+      if (scenario !== 'touch pinch') assert.notDeepEqual(changed.slice(0, 2), initial.slice(0, 2))
+      else assert.deepEqual(changed, initial)
+      await act(async () => { pointer('pointermove', 1, 900, 900); while (frames.length) frames.shift()(0) })
+      assert.deepEqual(svg.getAttribute('viewBox').split(' ').map(Number), changed)
+      return
+    }
     if (scenario === 'overlay-only zoom') {
       const svg = host.querySelector('.territory-flat-svg')
       const initial = svg.getAttribute('viewBox')
@@ -54,6 +82,9 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
       }
       await act(async () => host.querySelector('[aria-label="지도 확대"]').click())
       assert.notEqual(svg.getAttribute('viewBox'), initial)
+      const enlarged = svg.getAttribute('viewBox')
+      await act(async () => host.querySelector('[aria-label="지도 축소"]').click())
+      assert.notEqual(svg.getAttribute('viewBox'), enlarged)
       await act(async () => [...host.querySelectorAll('button')].find(button => button.textContent === '초기화').click())
       assert.equal(svg.getAttribute('viewBox'), initial)
       return

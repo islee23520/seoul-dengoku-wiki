@@ -867,6 +867,9 @@ if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join(';
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
 const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
 const openingDispositions = validateOpeningDispositions(personalHoldings, courtDataset.people)
+const daejeonPolities = personalHoldings.polities.filter(polity => polity.id === 'polity:daejeon')
+if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
+await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify({ hegemons: sixteenStatesLore.data.currentAffiliation.hegemons, daejeon: daejeonPolities[0] }, null, 2) + ' as const\n')
 const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
 const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
@@ -1174,5 +1177,16 @@ await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const cl
 
 await writeFile(resolve(generatedRoot, 'nonKoreanFamilyCatalog.ts'), `export const nonKoreanFamilyCatalog = ${JSON.stringify(projectNonKoreanFamilies(peopleCatalog, lineageByName), null, 2)} as const\n`)
 
+// Portrait appearance and exact image approvals remain immutable; roles follow current canon.
+for (const file of await readdir(resolve(publicRoot, 'portrait-tokens'))) {
+  if (!file.endsWith('.json')) continue
+  const path = resolve(publicRoot, 'portrait-tokens', file)
+  const token = JSON.parse(await readFile(path, 'utf8'))
+  const person = peopleCatalog.find(person => person.id === token.personId)
+  if (!person || person.name !== token.name) throw new Error('E_PORTRAIT_CANON_IDENTITY:' + file)
+  if (typeof person.position !== 'string' || !person.position.trim()) throw new Error('E_PORTRAIT_CANON_ROLE:' + file)
+  token.facts.role = person.position
+  await writeFile(path, JSON.stringify(token, null, 2) + '\n')
+}
 console.log(`
 WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)

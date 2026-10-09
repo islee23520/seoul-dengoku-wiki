@@ -3,8 +3,8 @@
   "status": "proposal",
   "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
   "invariants": {
-    "lore/name-pools/values-cast.json": "7a0182a8cca414848c55ef9ab1e142aafebad7552c0cb6da7a67cb26caf95597",
-    "lore/name-pools/person-id-registry.json": "51f52b4e6cd6ca369f78bcb90990f63196c436bd9f0c4f7d7d6fc3b2768976eb"
+    "lore/name-pools/values-cast.json": "fa52d710f6d5c5324d9cdd38c818f9958e61cb1c77c4e0d968d4fb7a0dc51961",
+    "lore/name-pools/person-id-registry.json": "57e6a03ebf298b2822dd2e02ce012d42057e12897c1b489682e07e0d414ff1a2"
   },
   "rules": {
     "edition": "GURPS Basic Set: Characters, 4th ed. (SJG 2004)",

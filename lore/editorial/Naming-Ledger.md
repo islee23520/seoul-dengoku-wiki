@@ -1,6 +1,6 @@
 # 표기·명명 원장
 
-비게시 집필 자료. 현재 국명은 2126년 표기이며 기원 표기는 개칭 전 시기의 역사적 이름이다. 이름이 정해진 해 이전의 연표 서술에는 기원 표기를 쓸 수 있다. `Naming-Ledger.json`은 이 표의 검증용 자료다.
+비게시 집필 자료. 국가의 정식명은 `Naming-Ledger.json`을 따른다. 현재 이름을 창설 시점부터 사용하며 옛 이름·별칭·검색 동의어를 보존하지 않는다.
 
 ## 표기 원칙
 
@@ -10,26 +10,24 @@
 
 ## 십육국
 
-| ID | 승인 국명 | 기원 표기 | 이름을 정한 해 | 정본 |
-|---|---|---|---:|---|
-| S06 | 대한민국정부 | 대한민국정부 | 2026 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2026년) |
-| S01 | 수문국 | 급수계약정 | 2091 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2091년) |
-| S02 | 규격맹 | 규격동맹 | 2092 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2092년) |
-| S07 | 환적국 | 선로후계정 | 2092 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2092년) |
-| S05 | 동방사 | 호위보호정 | 2093 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2093년) |
-| S03 | 태욱그룹 | 양재기공주식회사 | 2095 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2095년) |
-| S09 | 여의도출자연합회 | 여의도출자연합회 | 2053 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2053년) |
-| S13 | 흰십자단 | 의약중립맹 | 2096 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2096년) |
-| S14 | 아관사 | 관문군정 | 2093 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2093년) |
-| S12 | 신내운수 | 중립호송시 | 2096 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2096년) |
-| S04 | 명부교회 | 설교명부정 | 2096 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2096년) |
-| S15 | 명동대교구 | 본당인준정 | 2096 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2096년) |
-| S10 | 안국총림 | 승가구휼정 | 2096 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2096년) |
-| S11 | 성하그룹 | 서초전산그룹 | 2095 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2095년) |
-| S08 | 중앙기술보존원 | 교헌필사정 | 2079 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2079년) |
-| S16 | 정동노총 | 정동노동총연맹 | 2096 | [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2096년) |
-
-대한민국정부는 국호를 유지했다. 여의도출자연합회는 2053년 3월 14일 명칭을 게시했다. 2093년 동방사·아관사의 긴 이름은 연표의 군사 조직 명칭 대목을 따른다. 근거: [연표](../chronology/Century-Annals.md#2093년), [국가](../factions/Sixteen-States.md#유지와-개명과-신설).
+| ID | 승인 국명 | 정본 |
+|---|---|---|
+| S06 | 대한민국정부 | [국가](../factions/Sixteen-States.json) |
+| S01 | 수문국 | [국가](../factions/Sixteen-States.json) |
+| S02 | 규격맹 | [국가](../factions/Sixteen-States.json) |
+| S07 | 환적국 | [국가](../factions/Sixteen-States.json) |
+| S05 | 동방사 | [국가](../factions/Sixteen-States.json) |
+| S03 | 태욱그룹 | [국가](../factions/Sixteen-States.json) |
+| S09 | 여의도출자연합회 | [국가](../factions/Sixteen-States.json) |
+| S13 | 흰십자단 | [국가](../factions/Sixteen-States.json) |
+| S14 | 아관사 | [국가](../factions/Sixteen-States.json) |
+| S12 | 신내운수 | [국가](../factions/Sixteen-States.json) |
+| S04 | 명부교회 | [국가](../factions/Sixteen-States.json) |
+| S15 | 명동대교구 | [국가](../factions/Sixteen-States.json) |
+| S10 | 안국총림 | [국가](../factions/Sixteen-States.json) |
+| S11 | 성하그룹 | [국가](../factions/Sixteen-States.json) |
+| S08 | 중앙정보부 | [국가](../factions/Sixteen-States.json) |
+| S16 | 정동노총 | [국가](../factions/Sixteen-States.json) |
 
 ## 무공
 
@@ -58,7 +56,7 @@
 | 명부교회 | 당회장 | 장로 | 권사 | 집사 | 교사 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
 | 명동대교구 | 대주교 | 신부 | 수사 | 부제 | 교우 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
 | 안국총림 | 방장 | 총무원장 | 주지·수좌 | 스님 | 신도·행자 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
-| 중앙기술보존원 | 원장 | 심사관 | 보존관·수석기사 | 기술원·기사 | 출입자·교도 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
+| 중앙정보부 | 원장 | 심사관 | 보존관·수석기사 | 기술원·기사 | 출입자·교도 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
 | 여의도출자연합회 | 의장 | 부회장 | 전무 | 부장·평의원 | 직원·서기 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
 | 성하그룹 | 회장 | 사장 | 전무·상무 | 부장 | 대리·사원 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
 | 태욱그룹 | 회장 | 사장 | 전무 | 부장 | 대리 | [관직](../offices/Offices-and-Ranks.md#국가별-관직표) |
@@ -74,9 +72,9 @@
 | 《서울:전국》 | [로어 목차](../README.md) |
 | Seoul Subway States | [연표](../chronology/Century-Annals.json) |
 
-## 역사 표기와 폐기 표기
+## 폐기 표기
 
-국가 표의 기원 표기는 역사 서술에만 쓴다. 개칭 이후 현행 국명 대신 쓰는 것은 폐기 표기다. 게이트는 원본 공개 문서에서 `급수계약정`의 현행 사용을 검사한다. 연표·국가 기원 표와 이를 포함하는 묶음 자산은 역사 기록을 담으므로 제외한다. 근거: [국가](../factions/Sixteen-States.md#16국-기원), [연표](../chronology/Century-Annals.md#2091년).
+국가의 옛 이름은 공개·비공개 집필 자료와 생성물에 남기지 않는다.
 
 | 공개 현행 표기에서 제외 | 승인형·사유 | 정본 |
 |---|---|---|

@@ -3,10 +3,9 @@ import NavBox from '../components/NavBox'
 import SortableTable from '../components/SortableTable'
 import { stateCatalog } from '../generated/stateCatalog'
 import { stateRoute } from '../wikiRouting'
-import source from '../../lore/factions/Sixteen-States.json'
-import holdings from '../../lore/relations/personal-holdings.json'
+import { politicalCatalog } from '../generated/politicalCatalog'
 
-const hegemons = source.data.currentAffiliation.hegemons
+const hegemons = politicalCatalog.hegemons
 const territories: Record<string, string> = {
   규격맹: '서울 서부·동작·관악, 경기 서남부, 인천·충청남도·세종',
   대한민국정부: '서울 북부·도심·용산, 경기 북부',
@@ -14,7 +13,7 @@ const territories: Record<string, string> = {
 }
 
 export default function StatesPage() {
-  const daejeon = holdings.polities[0]
+  const daejeon = politicalCatalog.daejeon
   return <article className="wiki-article" data-wiki-shell="react-official">
     <nav className="wiki-breadcrumbs" aria-label="현재 위치"><Link to="/">대문</Link><span aria-hidden="true">›</span><strong>국가와 영지</strong></nav>
     <header className="wiki-article-header"><div><p className="wiki-domain-label">2126년 정치 지도</p><h1>삼국과 중립 영지</h1></div></header>

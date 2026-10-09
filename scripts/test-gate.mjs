@@ -197,14 +197,14 @@ test('retired public forms fail on published text surfaces', () => {
   for (const source of ['src/generated/world/fixture.json', 'public/person-details/person-0001.json', 'dist/assets/index.js']) {
     assert.ok(retiredFormFailures('Seoul Sengoku', source).some((failure) => failure.includes(source)))
   }
-  assert.ok(retiredFormFailures('급수계약정', 'src/generated/world/Current-State.json').length > 0)
+  assert.ok(retiredFormFailures('Seoul Sengoku', 'src/generated/world/Current-State.json').length > 0)
 })
 
 test('retired precursor fails in state pages and chronicles', () => {
   for (const source of ['src/generated/world/Century-Annals.json', 'src/generated/world/Sixteen-States.json']) {
-    assert.ok(retiredFormFailures('2090년 급수계약정 기록', source).length > 0)
+    assert.ok(retiredFormFailures('2090년 Seoul Sengoku 기록', source).length > 0)
   }
-  assert.ok(retiredFormFailures('급수계약정', 'dist/assets/fixture.js').length > 0)
+  assert.ok(retiredFormFailures('Seoul Sengoku', 'dist/assets/fixture.js').length > 0)
 })
 
 test('injected Ravelen references fail the public catalog exclusion rule', () => {

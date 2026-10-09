@@ -312,7 +312,8 @@ test('person pages project the current state name from the S-ID', async () => {
   assert.equal(s01?.stateName, '수문국')
   assert.equal(s06?.stateName, '대한민국정부')
   assert.ok(people.filter((person) => person.state === 'S01').every((person) => person.stateName === '수문국'))
-  assert.equal(people.filter((person) => person.stateName === '급수계약정').length, 0)
+  const states = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8')).states
+  for (const person of people.filter(person => states.some(state => state.id === person.state))) assert.equal(person.stateName, states.find(state => state.id === person.state).name)
 })
 
 test('thirteen vassals point at valid suzerains outside the sixteen', async () => {
