@@ -3,6 +3,7 @@
   "name": "범채온",
   "title": "군량 징발 인파 대표",
   "position": "명동역 구휼 담당 신부",
+  "characterId": "K393",
   "rank": "신부",
   "commonTier": "T2",
   "occupation": "구휼 배분·사제단 투표 기록 보관",
@@ -285,54 +286,309 @@
   },
   "gurps": {
     "id": "K393",
-    "personId": "person-0394",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0394"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S15",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S15",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K393",
+            "name": "범채온",
+            "url": "/people/person-0394",
+            "state": "S15",
+            "method": "card-lexicon",
+            "role": {
+              "display": "구휼 배분·사제단 투표 기록 보관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-15.json",
+                  "pointer": "/content/17/items/0/ko",
+                  "quote": "생업: 구휼 배분·사제단 투표 기록 보관"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/18/text/ko",
+                    "quote": "사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/19/text/ko",
+                    "quote": "범채온은 선매 요청을 돌려보내고, 개표 기록과 교황 인준 부재에 대한 이의를 한데 보관한 뒤 라진우의 재고 원장과 구휼 인파의 줄을 맞춘다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/17/items/0/ko",
+                    "quote": "생업: 구휼 배분·사제단 투표 기록 보관"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/18/text/ko",
+                    "quote": "사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/19/text/ko",
+                    "quote": "범채온은 선매 요청을 돌려보내고, 개표 기록과 교황 인준 부재에 대한 이의를 한데 보관한 뒤 라진우의 재고 원장과 구휼 인파의 줄을 맞춘다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 48,
+              "unspent": 27,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
+              "faction_scale": {
+                "state": "S15",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "약수",
+              "type": "초소 영지",
+              "station": "약수",
+              "state": "S15",
+              "settlement": {
+                "name": "약수 정착지",
+                "type": "정착지",
+                "description": "약수 일대 고정 거점"
+              },
+              "note": "S15 약수 일대 관할 영지"
+            }
+          }
+        }
+      },
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S15",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K393",
+            "name": "범채온",
+            "url": "/people/person-0394",
+            "state": "S15",
+            "method": "card-lexicon",
+            "role": {
+              "display": "구휼 배분·사제단 투표 기록 보관",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-15.json",
+                  "pointer": "/content/17/items/0/ko",
+                  "quote": "생업: 구휼 배분·사제단 투표 기록 보관"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/18/text/ko",
+                    "quote": "사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/19/text/ko",
+                    "quote": "범채온은 선매 요청을 돌려보내고, 개표 기록과 교황 인준 부재에 대한 이의를 한데 보관한 뒤 라진우의 재고 원장과 구휼 인파의 줄을 맞춘다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/17/items/0/ko",
+                    "quote": "생업: 구휼 배분·사제단 투표 기록 보관"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/18/text/ko",
+                    "quote": "사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/19/text/ko",
+                    "quote": "범채온은 선매 요청을 돌려보내고, 개표 기록과 교황 인준 부재에 대한 이의를 한데 보관한 뒤 라진우의 재고 원장과 구휼 인파의 줄을 맞춘다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 48,
+              "unspent": 27,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
+              "faction_scale": {
+                "state": "S15",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "약수",
+              "type": "초소 영지",
+              "station": "약수",
+              "state": "S15",
+              "settlement": {
+                "name": "약수 정착지",
+                "type": "정착지",
+                "description": "약수 일대 고정 거점"
+              },
+              "note": "S15 약수 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 8,
-      "spent": 48,
-      "unspent": 27,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

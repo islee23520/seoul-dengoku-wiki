@@ -3,6 +3,7 @@
   "name": "노아 데이비스",
   "title": "용산창 이동의무차 반장",
   "position": "용산창 이동의무차 반장",
+  "characterId": "K185",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "이동의무차 화상·동상 진료 운영",
@@ -389,54 +390,309 @@
   },
   "gurps": {
     "id": "K185",
-    "personId": "person-0186",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0186"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S07",
+    "variants": [
       {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S07",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K185",
+            "name": "노아 데이비스",
+            "url": "/people/person-0186",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "이동의무차 화상·동상 진료 운영",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/171/items/2/ko",
+                  "quote": "생업: 이동의무차 화상·동상 진료 운영"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/171/items/2/ko",
+                    "quote": "생업: 이동의무차 화상·동상 진료 운영"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 48,
+              "unspent": 27,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "석수",
+              "type": "초소 영지",
+              "station": "석수",
+              "state": "S07",
+              "settlement": {
+                "name": "석수 정착지",
+                "type": "정착지",
+                "description": "석수 일대 고정 거점"
+              },
+              "note": "S07 석수 일대 관할 영지"
+            }
+          }
+        }
+      },
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S07",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K185",
+            "name": "노아 데이비스",
+            "url": "/people/person-0186",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "이동의무차 화상·동상 진료 운영",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/171/items/2/ko",
+                  "quote": "생업: 이동의무차 화상·동상 진료 운영"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/171/items/2/ko",
+                    "quote": "생업: 이동의무차 화상·동상 진료 운영"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 48,
+              "unspent": 27,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "석수",
+              "type": "초소 영지",
+              "station": "석수",
+              "state": "S07",
+              "settlement": {
+                "name": "석수 정착지",
+                "type": "정착지",
+                "description": "석수 일대 고정 거점"
+              },
+              "note": "S07 석수 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 8,
-      "spent": 48,
-      "unspent": 27,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

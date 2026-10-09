@@ -3,6 +3,7 @@
   "name": "권미래",
   "title": "송신 기사",
   "position": "금고 기사",
+  "characterId": "K220",
   "rank": "평의원",
   "commonTier": "T4",
   "occupation": "금고 예비 전원 점검·배분",
@@ -284,72 +285,405 @@
   },
   "gurps": {
     "id": "K220",
-    "personId": "person-0221",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0221"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S09",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S09",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K220",
+            "name": "권미래",
+            "url": "/people/person-0221",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "금고 예비 전원 점검·배분",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/6/items/0/ko",
+                  "quote": "생업: 금고 예비 전원 점검·배분"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/7/text/ko",
+                    "quote": "예비 전원을 세 곳으로 나누고, 금고 단독 개방은 출자 평의회의 승인 없이 막는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/8/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/6/items/0/ko",
+                    "quote": "생업: 금고 예비 전원 점검·배분"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/6/items/0/ko",
+                    "quote": "생업: 금고 예비 전원 점검·배분"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/6/items/0/ko",
+                    "quote": "생업: 금고 예비 전원 점검·배분"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/7/text/ko",
+                    "quote": "예비 전원을 세 곳으로 나누고, 금고 단독 개방은 출자 평의회의 승인 없이 막는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Forgery/TL?",
+                "ko": "위조 감별",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/8/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 28,
+              "spent": 68,
+              "unspent": 7,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐컨테이너 적치장",
+              "camp": {
+                "name": "권미래 컨테이너 야영지",
+                "type": "야영지",
+                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S09",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K220",
+            "name": "권미래",
+            "url": "/people/person-0221",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "금고 예비 전원 점검·배분",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/6/items/0/ko",
+                  "quote": "생업: 금고 예비 전원 점검·배분"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/7/text/ko",
+                    "quote": "예비 전원을 세 곳으로 나누고, 금고 단독 개방은 출자 평의회의 승인 없이 막는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/8/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/6/items/0/ko",
+                    "quote": "생업: 금고 예비 전원 점검·배분"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/6/items/0/ko",
+                    "quote": "생업: 금고 예비 전원 점검·배분"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/6/items/0/ko",
+                    "quote": "생업: 금고 예비 전원 점검·배분"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/7/text/ko",
+                    "quote": "예비 전원을 세 곳으로 나누고, 금고 단독 개방은 출자 평의회의 승인 없이 막는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Forgery/TL?",
+                "ko": "위조 감별",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/8/text/ko",
+                    "quote": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 28,
+              "spent": 68,
+              "unspent": 7,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐컨테이너 적치장",
+              "camp": {
+                "name": "권미래 컨테이너 야영지",
+                "type": "야영지",
+                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Electrician/TL?",
-        "ko": "전력 설비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Forgery/TL?",
-        "ko": "위조 감별",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 28,
-      "spent": 68,
-      "unspent": 7,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

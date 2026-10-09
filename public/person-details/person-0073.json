@@ -3,6 +3,7 @@
   "name": "변태온",
   "title": "마곡 대합실 역장",
   "position": "마곡 대합실 역장",
+  "characterId": "K073",
   "rank": "부장",
   "commonTier": "T4",
   "occupation": "대합실 당직",
@@ -390,60 +391,311 @@
   },
   "gurps": {
     "id": "K073",
-    "personId": "person-0073",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0073"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S03",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S03",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K073",
+            "name": "변태온",
+            "url": "/people/person-0073",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 당직",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/27/items/1/ko",
+                  "quote": "생업: 대합실 당직"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/27/items/1/ko",
+                    "quote": "생업: 대합실 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "하계",
+              "type": "초소 영지",
+              "station": "하계",
+              "state": "S03",
+              "settlement": {
+                "name": "하계 정착지",
+                "type": "정착지",
+                "description": "하계 일대 고정 거점"
+              },
+              "note": "S03 하계 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 13,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S03",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K073",
+            "name": "변태온",
+            "url": "/people/person-0073",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 당직",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/27/items/1/ko",
+                  "quote": "생업: 대합실 당직"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/27/items/1/ko",
+                    "quote": "생업: 대합실 당직"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "하계",
+              "type": "초소 영지",
+              "station": "하계",
+              "state": "S03",
+              "settlement": {
+                "name": "하계 정착지",
+                "type": "정착지",
+                "description": "하계 일대 고정 거점"
+              },
+              "note": "S03 하계 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 36,
-      "unspent": 39,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

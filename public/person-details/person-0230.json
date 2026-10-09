@@ -3,6 +3,7 @@
   "name": "소감",
   "title": "편성 전령, 오하늘의 실무 담당자",
   "position": "출자 전령, 오하늘의 실무 담당자",
+  "characterId": "K229",
   "rank": "서기",
   "commonTier": "T5",
   "occupation": "평의회 순번 통지·증언 이송",
@@ -282,60 +283,341 @@
   },
   "gurps": {
     "id": "K229",
-    "personId": "person-0230",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0230"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S09",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S09",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K229",
+            "name": "소감",
+            "url": "/people/person-0230",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "평의회 순번 통지·증언 이송",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/105/items/0/ko",
+                  "quote": "생업: 평의회 순번 통지·증언 이송"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/104/text/ko",
+                    "quote": "시간을 분 단위로 기억하고, 한 출자 가문이 발언 시간을 넘기면 쪽지를 의장 앞에 밀어 넣는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/105/items/0/ko",
+                    "quote": "생업: 평의회 순번 통지·증언 이송"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/104/text/ko",
+                    "quote": "시간을 분 단위로 기억하고, 한 출자 가문이 발언 시간을 넘기면 쪽지를 의장 앞에 밀어 넣는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐건물 옥상",
+              "camp": {
+                "name": "소감 옥상 야영지",
+                "type": "야영지",
+                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Leadership",
-        "ko": "지휘",
-        "level": 14,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S09",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K229",
+            "name": "소감",
+            "url": "/people/person-0230",
+            "state": "S09",
+            "method": "card-lexicon",
+            "role": {
+              "display": "평의회 순번 통지·증언 이송",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-09.json",
+                  "pointer": "/content/105/items/0/ko",
+                  "quote": "생업: 평의회 순번 통지·증언 이송"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/104/text/ko",
+                    "quote": "시간을 분 단위로 기억하고, 한 출자 가문이 발언 시간을 넘기면 쪽지를 의장 앞에 밀어 넣는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/105/items/0/ko",
+                    "quote": "생업: 평의회 순번 통지·증언 이송"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/106/text/ko",
+                    "quote": "순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Leadership",
+                "ko": "지휘",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-09.json",
+                    "pointer": "/content/104/text/ko",
+                    "quote": "시간을 분 단위로 기억하고, 한 출자 가문이 발언 시간을 넘기면 쪽지를 의장 앞에 밀어 넣는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
+              "faction_scale": {
+                "state": "S09",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "폐건물 옥상",
+              "camp": {
+                "name": "소감 옥상 야영지",
+                "type": "야영지",
+                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

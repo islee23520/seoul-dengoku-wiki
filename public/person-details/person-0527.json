@@ -3,6 +3,7 @@
   "name": "배동민",
   "title": "경매 서기",
   "position": "경매 서기",
+  "characterId": "K527",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "밀수 호스 접수·관로 대장 작성",
@@ -284,54 +285,299 @@
   },
   "gurps": {
     "id": "K527",
-    "personId": "person-0527",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0527"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S08",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S08",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K527",
+            "name": "배동민",
+            "url": "/people/person-0527",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "밀수 호스 접수·관로 대장 작성",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/336/items/2/ko",
+                  "quote": "생업: 밀수 호스 접수·관로 대장 작성"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/336/items/2/ko",
+                    "quote": "생업: 밀수 호스 접수·관로 대장 작성"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 28,
+              "unspent": 47,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "금호",
+              "type": "초소 영지",
+              "station": "금호",
+              "state": "S08",
+              "settlement": {
+                "name": "금호 정착지",
+                "type": "정착지",
+                "description": "금호 일대 고정 거점"
+              },
+              "note": "S08 금호 일대 관할 영지"
+            }
+          }
+        }
+      },
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S08",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K527",
+            "name": "배동민",
+            "url": "/people/person-0527",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "밀수 호스 접수·관로 대장 작성",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/336/items/2/ko",
+                  "quote": "생업: 밀수 호스 접수·관로 대장 작성"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/337/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/336/items/2/ko",
+                    "quote": "생업: 밀수 호스 접수·관로 대장 작성"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/337/text/ko",
+                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/338/text/ko",
+                    "quote": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 48,
+              "unspent": 27,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "금호",
+              "type": "초소 영지",
+              "station": "금호",
+              "state": "S08",
+              "settlement": {
+                "name": "금호 정착지",
+                "type": "정착지",
+                "description": "금호 일대 고정 거점"
+              },
+              "note": "S08 금호 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 8,
-      "spent": 28,
-      "unspent": 47,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

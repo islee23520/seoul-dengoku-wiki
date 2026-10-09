@@ -3,6 +3,7 @@
   "name": "린샤오메이",
   "title": "대림 이중장부 중개",
   "position": "대림 이중장부 중개",
+  "characterId": "K1011",
   "rank": "없음",
   "commonTier": "T5",
   "occupation": "물류상 (주), 전령 (부)",
@@ -388,60 +389,359 @@
   },
   "gurps": {
     "id": "K1011",
-    "personId": "person-1011",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-1011"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S02",
+    "variants": [
       {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1011",
+            "name": "린샤오메이",
+            "url": "/people/person-1011",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "물류상 (주), 전령 (부)",
+              "evidence": [
+                {
+                  "path": "lore/factions/Diaspora-Corridors.json",
+                  "pointer": "/content/6/items/9/ko",
+                  "quote": "생업: 물류상 (주), 전령 (부)"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/9/ko",
+                    "quote": "생업: 물류상 (주), 전령 (부)"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/9/ko",
+                    "quote": "생업: 물류상 (주), 전령 (부)"
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [
+              {
+                "name": "북경 관화",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/8/ko",
+                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
+                  }
+                ]
+              },
+              {
+                "name": "한국어",
+                "level": null,
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/8/ko",
+                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 12,
+              "unspent": 63,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "남부 유동 야영지",
+              "camp": {
+                "name": "린샤오메이 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 12,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1011",
+            "name": "린샤오메이",
+            "url": "/people/person-1011",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "물류상 (주), 전령 (부)",
+              "evidence": [
+                {
+                  "path": "lore/factions/Diaspora-Corridors.json",
+                  "pointer": "/content/6/items/9/ko",
+                  "quote": "생업: 물류상 (주), 전령 (부)"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/9/ko",
+                    "quote": "생업: 물류상 (주), 전령 (부)"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/9/ko",
+                    "quote": "생업: 물류상 (주), 전령 (부)"
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [
+              {
+                "name": "북경 관화",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/8/ko",
+                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
+                  }
+                ]
+              },
+              {
+                "name": "한국어",
+                "level": null,
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/6/items/8/ko",
+                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 12,
+              "unspent": 63,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "남부 유동 야영지",
+              "camp": {
+                "name": "린샤오메이 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 12,
-      "unspent": 63,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

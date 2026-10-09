@@ -3,6 +3,7 @@
   "name": "기서진",
   "title": "비군사 공동조사 전령",
   "position": "비군사 공동조사 전령",
+  "characterId": "K084",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "조사 문서 전달",
@@ -390,66 +391,353 @@
   },
   "gurps": {
     "id": "K084",
-    "personId": "person-0084",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0084"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S03",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S03",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K084",
+            "name": "기서진",
+            "url": "/people/person-0084",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "조사 문서 전달",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/291/items/1/ko",
+                  "quote": "생업: 조사 문서 전달"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/292/text/ko",
+                    "quote": "조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/291/items/1/ko",
+                    "quote": "생업: 조사 문서 전달"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/292/text/ko",
+                    "quote": "조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/291/items/1/ko",
+                    "quote": "생업: 조사 문서 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Cartography/TL?",
+                "ko": "실측·지도",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/291/items/1/ko",
+                    "quote": "생업: 조사 문서 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 44,
+              "unspent": 31,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "공릉",
+              "type": "초소 영지",
+              "station": "공릉",
+              "state": "S03",
+              "settlement": {
+                "name": "공릉 정착지",
+                "type": "정착지",
+                "description": "공릉 일대 고정 거점"
+              },
+              "note": "S03 공릉 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S03",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K084",
+            "name": "기서진",
+            "url": "/people/person-0084",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "조사 문서 전달",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/291/items/1/ko",
+                  "quote": "생업: 조사 문서 전달"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/292/text/ko",
+                    "quote": "조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/291/items/1/ko",
+                    "quote": "생업: 조사 문서 전달"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/292/text/ko",
+                    "quote": "조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/291/items/1/ko",
+                    "quote": "생업: 조사 문서 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Cartography/TL?",
+                "ko": "실측·지도",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/291/items/1/ko",
+                    "quote": "생업: 조사 문서 전달"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 44,
+              "unspent": 31,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "공릉",
+              "type": "초소 영지",
+              "station": "공릉",
+              "state": "S03",
+              "settlement": {
+                "name": "공릉 정착지",
+                "type": "정착지",
+                "description": "공릉 일대 고정 거점"
+              },
+              "note": "S03 공릉 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Cartography/TL?",
-        "ko": "실측·지도",
-        "level": 13,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 44,
-      "unspent": 31,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {
