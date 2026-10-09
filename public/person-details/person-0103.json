@@ -3,6 +3,7 @@
   "name": "제하율",
   "title": "공방 조립기록 실무관",
   "position": "공방 조립기록 실무관",
+  "characterId": "K102",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "공방 조립기록 작성",
@@ -285,60 +286,321 @@
   },
   "gurps": {
     "id": "K102",
-    "personId": "person-0103",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0103"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S04",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S04",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K102",
+            "name": "제하율",
+            "url": "/people/person-0103",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공방 조립기록 작성",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/192/items/1/ko",
+                  "quote": "생업: 공방 조립기록 작성"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/193/text/ko",
+                    "quote": "핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/192/items/1/ko",
+                    "quote": "생업: 공방 조립기록 작성"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/193/text/ko",
+                    "quote": "핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/192/items/1/ko",
+                    "quote": "생업: 공방 조립기록 작성"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "동대문역사문화공원",
+              "type": "초소 영지",
+              "station": "동대문역사문화공원",
+              "state": "S04",
+              "settlement": {
+                "name": "동대문역사문화공원 정착지",
+                "type": "정착지",
+                "description": "동대문역사문화공원 일대 고정 거점"
+              },
+              "note": "S04 동대문역사문화공원 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 13,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S04",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K102",
+            "name": "제하율",
+            "url": "/people/person-0103",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공방 조립기록 작성",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/192/items/1/ko",
+                  "quote": "생업: 공방 조립기록 작성"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/193/text/ko",
+                    "quote": "핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/192/items/1/ko",
+                    "quote": "생업: 공방 조립기록 작성"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/193/text/ko",
+                    "quote": "핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/192/items/1/ko",
+                    "quote": "생업: 공방 조립기록 작성"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 36,
+              "unspent": 39,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "동대문역사문화공원",
+              "type": "초소 영지",
+              "station": "동대문역사문화공원",
+              "state": "S04",
+              "settlement": {
+                "name": "동대문역사문화공원 정착지",
+                "type": "정착지",
+                "description": "동대문역사문화공원 일대 고정 거점"
+              },
+              "note": "S04 동대문역사문화공원 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 36,
-      "unspent": 39,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

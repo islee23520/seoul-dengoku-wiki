@@ -3,6 +3,7 @@
   "name": "종마루",
   "title": "가짜 펌프 부품 피해자 대표",
   "position": "가짜 펌프 부품 피해자 대표",
+  "characterId": "K050",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "펌프 정비",
@@ -283,66 +284,363 @@
   },
   "gurps": {
     "id": "K050",
-    "personId": "person-0050",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0050"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S02",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K050",
+            "name": "종마루",
+            "url": "/people/person-0050",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "펌프 정비",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/225/items/1/ko",
+                  "quote": "생업: 펌프 정비"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/224/text/ko",
+                    "quote": "불량 차륜의 진동을 손끝으로 읽고, 규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/227/text/ko",
+                    "quote": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/224/text/ko",
+                    "quote": "불량 차륜의 진동을 손끝으로 읽고, 규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/225/items/1/ko",
+                    "quote": "생업: 펌프 정비"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/227/text/ko",
+                    "quote": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/225/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "동인천",
+              "type": "초소 영지",
+              "station": "동인천",
+              "state": "S02",
+              "settlement": {
+                "name": "동인천 정착지",
+                "type": "정착지",
+                "description": "동인천 일대 고정 거점"
+              },
+              "note": "S02 동인천 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K050",
+            "name": "종마루",
+            "url": "/people/person-0050",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "펌프 정비",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/225/items/1/ko",
+                  "quote": "생업: 펌프 정비"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/224/text/ko",
+                    "quote": "불량 차륜의 진동을 손끝으로 읽고, 규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/227/text/ko",
+                    "quote": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/224/text/ko",
+                    "quote": "불량 차륜의 진동을 손끝으로 읽고, 규격 도장을 산 가격으로 부르는 상인을 용서하지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/225/items/1/ko",
+                    "quote": "생업: 펌프 정비"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/227/text/ko",
+                    "quote": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/225/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "동인천",
+              "type": "초소 영지",
+              "station": "동인천",
+              "state": "S02",
+              "settlement": {
+                "name": "동인천 정착지",
+                "type": "정착지",
+                "description": "동인천 일대 고정 거점"
+              },
+              "note": "S02 동인천 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

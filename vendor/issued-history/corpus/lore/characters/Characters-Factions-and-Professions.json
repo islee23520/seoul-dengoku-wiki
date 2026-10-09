@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "domain": "characters",
+  "id": "DOC:Characters-Factions-and-Professions",
+  "slug": "characters-factions-and-professions",
+  "categories": [
+    "characters"
+  ],
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "lore/characters/Characters-Factions-and-Professions.md",
+    "original_hash": "ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3",
+    "history": [
+      "Korean lore/characters/Characters-Factions-and-Professions.md SHA-256 ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3.",
+      "English SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (dirty). EN needs human review."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/characters/Characters-Factions-and-Professions.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Characters, Factions, and Trades",
+      "summary": "A wiki diagram from 2026-09-07.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "인물·세력·생업",
+      "summary": "2026-09-07 위키 도표.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "인물세력생업",
+      "depth": 1,
+      "text": {
+        "en": "Characters, Factions, and Trades",
+        "ko": "인물·세력·생업"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물",
+      "depth": 2,
+      "text": {
+        "en": "Characters",
+        "ko": "인물"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-p1",
+      "text": {
+        "en": "A named character has abilities, a trade, injuries, an affiliation, a post, beliefs, and memories of major events. The game does not store the relationship of every pair of characters; it keeps only the relationships that change decisions, such as kinship, master and disciple, command, contract, cooperation, and grudge.",
+        "ko": "2126년 십육국에는 대통령·군주·역장·사령관·회장·방장·의장·위원장 등의 직위가 있다. 수장은 각국의 장부와 시설을 관리한다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "생업",
+      "depth": 2,
+      "text": {
+        "en": "Trades",
+        "ko": "생업"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "생업-p1",
+      "text": {
+        "en": "A trade is the work a character does in the world. Before combat is joined, it decides what the character adds to a unit's orders and state. The table supports those seven hands.",
+        "ko": "정수장·차량기지·병원·공방·교구에서는 서로 다른 직능의 사람이 당직을 맡았다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "십육국과-핵심-인물",
+      "depth": 2,
+      "text": {
+        "en": "The Sixteen States and Core Characters",
+        "ko": "십육국과 인물"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "출처",
+      "depth": 2,
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "출처-list1",
+      "items": [
+        {
+          "ko": [
+            {
+              "text": "세력과 외교, 전쟁과 공성 규칙",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Rules-FactionsWarfare"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Factions, Diplomacy, War and Siege Rules",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Rules-FactionsWarfare"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "회랑 인물 총람",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Corridors-Index"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Corridor Cast Index",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Corridors-Index"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "인물 총람",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Index"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Cast Compendium",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Index"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "관계 원장",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Relations"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Relation Ledger",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Relations"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "등장인물",
+              "link": {
+                "domain": "characters",
+                "slug": "Core-Characters"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Characters",
+              "link": {
+                "domain": "characters",
+                "slug": "Core-Characters"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "시나리오 타임라인",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Scenario Timeline",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "가치관과 정책 척도",
+              "link": {
+                "domain": "culture",
+                "slug": "Values-and-Policy-Scales"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Values and Policy Scales",
+              "link": {
+                "domain": "culture",
+                "slug": "Values-and-Policy-Scales"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "재벌 가문과 세기 파벌",
+              "link": {
+                "domain": "factions",
+                "slug": "Chaebol-Houses-and-Century-Factions"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Chaebol Houses and the Century Factions",
+              "link": {
+                "domain": "factions",
+                "slug": "Chaebol-Houses-and-Century-Factions"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "이주민 회랑",
+              "link": {
+                "domain": "factions",
+                "slug": "Diaspora-Corridors"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "Diaspora Corridors",
+              "link": {
+                "domain": "factions",
+                "slug": "Diaspora-Corridors"
+              }
+            }
+          ]
+        },
+        {
+          "ko": [
+            {
+              "text": "서울 십육국",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ],
+          "en": [
+            {
+              "text": "The Sixteen States of Seoul",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {}
+}

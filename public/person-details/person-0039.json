@@ -3,6 +3,7 @@
   "name": "구찬솔",
   "title": "구로 공구시장 물류상",
   "position": "구로 공구시장 물류상",
+  "characterId": "K039",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "공구 물류 거래",
@@ -283,66 +284,373 @@
   },
   "gurps": {
     "id": "K039",
-    "personId": "person-0039",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0039"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "polity:daejeon",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K039",
+            "name": "구찬솔",
+            "url": "/people/person-0039",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공구 물류 거래",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/137/items/1/ko",
+                  "quote": "생업: 공구 물류 거래"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/136/text/ko",
+                    "quote": "상자 무게로 속임수를 읽고, 숙련 점수를 숨기는 반장의 화물은 선석이 아니라 골목에 내려 놓는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/138/text/ko",
+                    "quote": "출고 상자를 노동조합 칠판에 공개하고, 시민권 미등록 운송은 길드 평의회 안건으로 올리지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/138/text/ko",
+                    "quote": "출고 상자를 노동조합 칠판에 공개하고, 시민권 미등록 운송은 길드 평의회 안건으로 올리지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/136/text/ko",
+                    "quote": "상자 무게로 속임수를 읽고, 숙련 점수를 숨기는 반장의 화물은 선석이 아니라 골목에 내려 놓는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/137/items/1/ko",
+                    "quote": "생업: 공구 물류 거래"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 84,
+              "unspent": 0,
+              "total": 84
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "주안",
+              "type": "초소 영지",
+              "station": "주안",
+              "state": "S02",
+              "settlement": {
+                "name": "주안 정착지",
+                "type": "정착지",
+                "description": "주안 일대 고정 거점"
+              },
+              "note": "S02 주안 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K039",
+            "name": "구찬솔",
+            "url": "/people/person-0039",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "공구 물류 거래",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/137/items/1/ko",
+                  "quote": "생업: 공구 물류 거래"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/136/text/ko",
+                    "quote": "상자 무게로 속임수를 읽고, 숙련 점수를 숨기는 반장의 화물은 선석이 아니라 골목에 내려 놓는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/138/text/ko",
+                    "quote": "출고 상자를 노동조합 칠판에 공개하고, 시민권 미등록 운송은 길드 평의회 안건으로 올리지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/138/text/ko",
+                    "quote": "출고 상자를 노동조합 칠판에 공개하고, 시민권 미등록 운송은 길드 평의회 안건으로 올리지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/136/text/ko",
+                    "quote": "상자 무게로 속임수를 읽고, 숙련 점수를 숨기는 반장의 화물은 선석이 아니라 골목에 내려 놓는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-02.json",
+                    "pointer": "/content/137/items/1/ko",
+                    "quote": "생업: 공구 물류 거래"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 84,
+              "unspent": 0,
+              "total": 84
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 규격맹 규모",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "주안",
+              "type": "초소 영지",
+              "station": "주안",
+              "state": "S02",
+              "settlement": {
+                "name": "주안 정착지",
+                "type": "정착지",
+                "description": "주안 일대 고정 거점"
+              },
+              "note": "S02 주안 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 15,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 84,
-      "unspent": 0,
-      "total": 84
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [
     {

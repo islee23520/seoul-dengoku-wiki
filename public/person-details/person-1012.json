@@ -3,6 +3,7 @@
   "name": "팜반득",
   "title": "야간 정비 조장",
   "position": "차단문 안쪽 야간 정비 조장",
+  "characterId": "K1012",
   "rank": "없음",
   "commonTier": "T5",
   "occupation": "정비사",
@@ -382,54 +383,351 @@
   },
   "gurps": {
     "id": "K1012",
-    "personId": "person-1012",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-1012"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S02",
+    "variants": [
       {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1012",
+            "name": "팜반득",
+            "url": "/people/person-1012",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "정비사",
+              "evidence": [
+                {
+                  "path": "lore/factions/Diaspora-Corridors.json",
+                  "pointer": "/content/8/items/10/ko",
+                  "quote": "생업: 정비사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/10/ko",
+                    "quote": "생업: 정비사"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              }
+            ],
+            "languages": [
+              {
+                "name": "베트남어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/9/ko",
+                    "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+                  }
+                ]
+              },
+              {
+                "name": "한국어",
+                "level": null,
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/9/ko",
+                    "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+                  }
+                ]
+              },
+              {
+                "name": "중국어",
+                "level": null,
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/9/ko",
+                    "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 8,
+              "unspent": 67,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "남부 유동 야영지",
+              "camp": {
+                "name": "팜반득 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
+      },
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1012",
+            "name": "팜반득",
+            "url": "/people/person-1012",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "정비사",
+              "evidence": [
+                {
+                  "path": "lore/factions/Diaspora-Corridors.json",
+                  "pointer": "/content/8/items/10/ko",
+                  "quote": "생업: 정비사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/10/ko",
+                    "quote": "생업: 정비사"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              }
+            ],
+            "languages": [
+              {
+                "name": "베트남어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/9/ko",
+                    "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+                  }
+                ]
+              },
+              {
+                "name": "한국어",
+                "level": null,
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/9/ko",
+                    "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+                  }
+                ]
+              },
+              {
+                "name": "중국어",
+                "level": null,
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/8/items/9/ko",
+                    "quote": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 8,
+              "unspent": 67,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "남부 유동 야영지",
+              "camp": {
+                "name": "팜반득 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 8,
-      "spent": 8,
-      "unspent": 67,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

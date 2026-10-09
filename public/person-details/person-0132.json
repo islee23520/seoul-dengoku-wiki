@@ -3,6 +3,7 @@
   "name": "나효원",
   "title": "암사역 대합실 역장",
   "position": "암사역 대합실 역장",
+  "characterId": "K131",
   "rank": "중대장",
   "commonTier": "T4",
   "occupation": "대합실 급수 창구·대기표 관리",
@@ -390,60 +391,331 @@
   },
   "gurps": {
     "id": "K131",
-    "personId": "person-0132",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0132"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S05",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S05",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K131",
+            "name": "나효원",
+            "url": "/people/person-0132",
+            "state": "S05",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 급수 창구·대기표 관리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-05.json",
+                  "pointer": "/content/27/items/1/ko",
+                  "quote": "생업: 대합실 급수 창구·대기표 관리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/27/items/1/ko",
+                    "quote": "생업: 대합실 급수 창구·대기표 관리"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Interrogation",
+                "ko": "증인 대질",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 52,
+              "unspent": 23,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 동방사 규모",
+              "faction_scale": {
+                "state": "S05",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "오류동",
+              "type": "초소 영지",
+              "station": "오류동",
+              "state": "S05",
+              "settlement": {
+                "name": "오류동 정착지",
+                "type": "정착지",
+                "description": "오류동 일대 고정 거점"
+              },
+              "note": "S05 오류동 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Interrogation",
-        "ko": "증인 대질",
-        "level": 13,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S05",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K131",
+            "name": "나효원",
+            "url": "/people/person-0132",
+            "state": "S05",
+            "method": "card-lexicon",
+            "role": {
+              "display": "대합실 급수 창구·대기표 관리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-05.json",
+                  "pointer": "/content/27/items/1/ko",
+                  "quote": "생업: 대합실 급수 창구·대기표 관리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/27/items/1/ko",
+                    "quote": "생업: 대합실 급수 창구·대기표 관리"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/28/text/ko",
+                    "quote": "급수 컵 줄이 창구를 한 바퀴 돌기 전에는 군수 칸 호각을 울리지 않고, 대기 쪽지는 스탬프가 찍힌 것만 칠판에 남긴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Interrogation",
+                "ko": "증인 대질",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 52,
+              "unspent": 23,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 동방사 규모",
+              "faction_scale": {
+                "state": "S05",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "오류동",
+              "type": "초소 영지",
+              "station": "오류동",
+              "state": "S05",
+              "settlement": {
+                "name": "오류동 정착지",
+                "type": "정착지",
+                "description": "오류동 일대 고정 거점"
+              },
+              "note": "S05 오류동 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 52,
-      "unspent": 23,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {
