@@ -3,6 +3,7 @@
   "name": "하아은",
   "title": "경매 서기",
   "position": "명동역 선거 기록 서기",
+  "characterId": "K886",
   "rank": "교우",
   "commonTier": "T5",
   "occupation": "선거 기록·인수인계 기록",
@@ -285,60 +286,351 @@
   },
   "gurps": {
     "id": "K886",
-    "personId": "person-0886",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0886"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S15",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S15",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K886",
+            "name": "하아은",
+            "url": "/people/person-0886",
+            "state": "S15",
+            "method": "card-lexicon",
+            "role": {
+              "display": "선거 기록·인수인계 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-15.json",
+                  "pointer": "/content/567/items/0/ko",
+                  "quote": "생업: 선거 기록·인수인계 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/568/text/ko",
+                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/567/items/0/ko",
+                    "quote": "생업: 선거 기록·인수인계 기록"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/568/text/ko",
+                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
+                  }
+                ],
+                "cp": 4,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 72,
+              "unspent": 3,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
+              "faction_scale": {
+                "state": "S15",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "봉래문",
+              "type": "초소 영지",
+              "station": "봉래문",
+              "state": "S15",
+              "settlement": {
+                "name": "봉래문 정착지",
+                "type": "정착지",
+                "description": "봉래문 일대 고정 거점"
+              },
+              "note": "S15 봉래문 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 14,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S15",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K886",
+            "name": "하아은",
+            "url": "/people/person-0886",
+            "state": "S15",
+            "method": "card-lexicon",
+            "role": {
+              "display": "선거 기록·인수인계 기록",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-15.json",
+                  "pointer": "/content/567/items/0/ko",
+                  "quote": "생업: 선거 기록·인수인계 기록"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/568/text/ko",
+                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/567/items/0/ko",
+                    "quote": "생업: 선거 기록·인수인계 기록"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/568/text/ko",
+                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "명동역 선거 기록 서기의 기록에 당시의 증언을 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/569/text/ko",
+                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
+                  }
+                ],
+                "cp": 4,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 72,
+              "unspent": 3,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
+              "faction_scale": {
+                "state": "S15",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "봉래문",
+              "type": "초소 영지",
+              "station": "봉래문",
+              "state": "S15",
+              "settlement": {
+                "name": "봉래문 정착지",
+                "type": "정착지",
+                "description": "봉래문 일대 고정 거점"
+              },
+              "note": "S15 봉래문 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 72,
-      "unspent": 3,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

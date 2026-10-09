@@ -3,6 +3,7 @@
   "name": "이일섭",
   "title": "제1분공방 이씨 가문 후계",
   "position": "제1분공방 이씨 가문 후계",
+  "characterId": "K998",
   "rank": "이사",
   "commonTier": "T3",
   "occupation": "제1분공방 차량기지 밭 경작·곡물 재고 관리",
@@ -404,113 +405,577 @@
   },
   "gurps": {
     "id": "K998",
-    "personId": "person-0998",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 11,
-        "cp": 10
+    "personId": "person-0998"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S02",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K998",
+            "name": "이일섭",
+            "url": "/people/person-0998",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "제1분공방 차량기지 밭 경작·곡물 재고 관리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/709/items/3/ko",
+                  "quote": "생업: 제1분공방 차량기지 밭 경작·곡물 재고 관리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 11,
+                "cp": 10,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "삼영걸 대비 분석 — 인내·생존·정치 프로파일"
+                  }
+                ]
+              },
+              "DX": {
+                "value": 12,
+                "cp": 40,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "장기 생존·끈기 기반 배분"
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 15,
+                "cp": 100,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "정치·전략 역량 기반 배분"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 14,
+                "cp": 40,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "생존력·건강 기반 배분"
+                  }
+                ]
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "전략",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "상",
+                "cp": 8,
+                "effect": "부대 전체 행동 보정. 전장 선택"
+              },
+              {
+                "name": "정치",
+                "attr": "IQ",
+                "level": 17,
+                "difficulty": "상",
+                "cp": 16,
+                "effect": "권력 획득·유지"
+              },
+              {
+                "name": "외교",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "상",
+                "cp": 4,
+                "effect": "협상 성공률"
+              },
+              {
+                "name": "지휘",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "부대 사기·통제"
+              },
+              {
+                "name": "처세",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "사회적 상황 대응"
+              },
+              {
+                "name": "전술",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "소부대 교전 보정"
+              },
+              {
+                "name": "생존",
+                "attr": "HT",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "야영지 운영·야외 활동"
+              },
+              {
+                "name": "경제",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "곡물 재고·자산 관리"
+              },
+              {
+                "name": "농업",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "경작·수확 관리"
+              },
+              {
+                "name": "회계",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "재고 장부·배급 계산"
+              },
+              {
+                "name": "지역지식",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "천안·아산 지리"
+              },
+              {
+                "name": "가족 지식",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 16,
+                "effect": "가문 내부 사정"
+              },
+              {
+                "name": "소소한 생활 기술",
+                "attr": "IQ",
+                "level": 12,
+                "difficulty": "하",
+                "cp": 10,
+                "effect": "생활 전반 잡기술"
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 11,
+              "Will": 15,
+              "Per": 15,
+              "FP": 14,
+              "BasicSpeed": 6.5,
+              "BasicMove": 6,
+              "BasicLift": 24,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 190,
+              "advantages": 80,
+              "disadvantages": -20,
+              "skills": 102,
+              "spent": 352,
+              "unspent": 0,
+              "total": 352
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "규격맹 호위대",
+              "size": 40,
+              "quality": "정예",
+              "composition": [
+                "호위병",
+                "검수병",
+                "경비병"
+              ],
+              "note": "규격맹 이사 직속 호위부대",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "작전",
+              "type": "거점",
+              "station": "작전",
+              "state": "S02",
+              "settlement": {
+                "name": "작전 정착지",
+                "type": "정착지",
+                "description": "작전 일대 고정 거점"
+              },
+              "note": "S02 작전 일대 관할 영지"
+            },
+            "advantages": [
+              {
+                "name": "Strong Will +2",
+                "cp": 10,
+                "effect": "의지 판정 +2 — 공포·정신 저항"
+              },
+              {
+                "name": "Fit",
+                "cp": 5,
+                "effect": "피로 회복 빠름"
+              },
+              {
+                "name": "Longevity",
+                "cp": 5,
+                "effect": "노화 지연"
+              },
+              {
+                "name": "Contacts (Extensive)",
+                "cp": 20,
+                "effect": "광범위 인맥 — 정보·지원 획득"
+              },
+              {
+                "name": "Wealth (Comfortable)",
+                "cp": 10,
+                "effect": "여유 자산"
+              },
+              {
+                "name": "Patience (Extended)",
+                "cp": 10,
+                "effect": "장기 계획 인내"
+              },
+              {
+                "name": "Strong Will 추가 +2",
+                "cp": 20,
+                "effect": "의지 총 +4 수준"
+              }
+            ],
+            "disadvantages": [
+              {
+                "name": "Code of Honor (가문)",
+                "cp": -10,
+                "effect": "가문 명예 수칙 준수 의무"
+              },
+              {
+                "name": "Sense of Duty (가문)",
+                "cp": -10,
+                "effect": "가문 수호 의무"
+              }
+            ]
+          }
+        }
       },
-      "DX": {
-        "value": 12,
-        "cp": 40
-      },
-      "IQ": {
-        "value": 15,
-        "cp": 100
-      },
-      "HT": {
-        "value": 14,
-        "cp": 40
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K998",
+            "name": "이일섭",
+            "url": "/people/person-0998",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "제1분공방 차량기지 밭 경작·곡물 재고 관리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-02.json",
+                  "pointer": "/content/709/items/3/ko",
+                  "quote": "생업: 제1분공방 차량기지 밭 경작·곡물 재고 관리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 11,
+                "cp": 10,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "삼영걸 대비 분석 — 인내·생존·정치 프로파일"
+                  }
+                ]
+              },
+              "DX": {
+                "value": 12,
+                "cp": 40,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "장기 생존·끈기 기반 배분"
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 15,
+                "cp": 100,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "정치·전략 역량 기반 배분"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 14,
+                "cp": 40,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "생존력·건강 기반 배분"
+                  }
+                ]
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "전략",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "상",
+                "cp": 8,
+                "effect": "부대 전체 행동 보정. 전장 선택"
+              },
+              {
+                "name": "정치",
+                "attr": "IQ",
+                "level": 17,
+                "difficulty": "상",
+                "cp": 16,
+                "effect": "권력 획득·유지"
+              },
+              {
+                "name": "외교",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "상",
+                "cp": 4,
+                "effect": "협상 성공률"
+              },
+              {
+                "name": "지휘",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "부대 사기·통제"
+              },
+              {
+                "name": "처세",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "사회적 상황 대응"
+              },
+              {
+                "name": "전술",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "소부대 교전 보정"
+              },
+              {
+                "name": "생존",
+                "attr": "HT",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "야영지 운영·야외 활동"
+              },
+              {
+                "name": "경제",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "곡물 재고·자산 관리"
+              },
+              {
+                "name": "농업",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "경작·수확 관리"
+              },
+              {
+                "name": "회계",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "재고 장부·배급 계산"
+              },
+              {
+                "name": "지역지식",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "천안·아산 지리"
+              },
+              {
+                "name": "가족 지식",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 16,
+                "effect": "가문 내부 사정"
+              },
+              {
+                "name": "소소한 생활 기술",
+                "attr": "IQ",
+                "level": 12,
+                "difficulty": "하",
+                "cp": 10,
+                "effect": "생활 전반 잡기술"
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 11,
+              "Will": 15,
+              "Per": 15,
+              "FP": 14,
+              "BasicSpeed": 6.5,
+              "BasicMove": 6,
+              "BasicLift": 24,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 190,
+              "advantages": 80,
+              "disadvantages": -20,
+              "skills": 102,
+              "spent": 352,
+              "unspent": 0,
+              "total": 352
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "규격맹 호위대",
+              "size": 40,
+              "quality": "정예",
+              "composition": [
+                "호위병",
+                "검수병",
+                "경비병"
+              ],
+              "note": "규격맹 이사 직속 호위부대",
+              "faction_scale": {
+                "state": "S02",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "작전",
+              "type": "거점",
+              "station": "작전",
+              "state": "S02",
+              "settlement": {
+                "name": "작전 정착지",
+                "type": "정착지",
+                "description": "작전 일대 고정 거점"
+              },
+              "note": "S02 작전 일대 관할 영지"
+            },
+            "advantages": [
+              {
+                "name": "Strong Will +2",
+                "cp": 10,
+                "effect": "의지 판정 +2 — 공포·정신 저항"
+              },
+              {
+                "name": "Fit",
+                "cp": 5,
+                "effect": "피로 회복 빠름"
+              },
+              {
+                "name": "Longevity",
+                "cp": 5,
+                "effect": "노화 지연"
+              },
+              {
+                "name": "Contacts (Extensive)",
+                "cp": 20,
+                "effect": "광범위 인맥 — 정보·지원 획득"
+              },
+              {
+                "name": "Wealth (Comfortable)",
+                "cp": 10,
+                "effect": "여유 자산"
+              },
+              {
+                "name": "Patience (Extended)",
+                "cp": 10,
+                "effect": "장기 계획 인내"
+              },
+              {
+                "name": "Strong Will 추가 +2",
+                "cp": 20,
+                "effect": "의지 총 +4 수준"
+              }
+            ],
+            "disadvantages": [
+              {
+                "name": "Code of Honor (가문)",
+                "cp": -10,
+                "effect": "가문 명예 수칙 준수 의무"
+              },
+              {
+                "name": "Sense of Duty (가문)",
+                "cp": -10,
+                "effect": "가문 수호 의무"
+              }
+            ]
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "전략",
-        "level": 16,
-        "cp": 8
-      },
-      {
-        "name": "정치",
-        "level": 17,
-        "cp": 16
-      },
-      {
-        "name": "외교",
-        "level": 15,
-        "cp": 4
-      },
-      {
-        "name": "지휘",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "처세",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "전술",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "생존",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "경제",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "농업",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "회계",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "지역지식",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "가족 지식",
-        "level": 16,
-        "cp": 16
-      },
-      {
-        "name": "소소한 생활 기술",
-        "level": 12,
-        "cp": 10
-      }
-    ],
-    "cp": {
-      "attributes": 190,
-      "advantages": 80,
-      "disadvantages": -20,
-      "skills": 102,
-      "spent": 352,
-      "unspent": 0,
-      "total": 352
-    },
-    "secondary": {
-      "HP": 11,
-      "Will": 15,
-      "Per": 15,
-      "FP": 14,
-      "BasicSpeed": 6.5,
-      "BasicMove": 6,
-      "BasicLift": 24,
-      "Dodge": 9
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

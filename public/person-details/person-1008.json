@@ -3,6 +3,7 @@
   "name": "민웅기",
   "title": "대전 군주",
   "position": "대전 군주. 작위는 대전선이며 등급은 왕격이다",
+  "characterId": "K1008",
   "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 통신 정비사 / 부 고물·철물 수리",
@@ -411,98 +412,523 @@
   },
   "gurps": {
     "id": "K1008",
-    "personId": "person-1008",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-1008"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "polity:daejeon",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1008",
+            "name": "민웅기",
+            "url": "/people/person-1008",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 통신 정비사 / 부 고물·철물 수리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/9/items/6/ko",
+                  "quote": "생업: 주 통신 정비사 / 부 고물·철물 수리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "삼영걸 대비 분석 — 사회 상승·유연성 프로파일"
+                  }
+                ]
+              },
+              "DX": {
+                "value": 14,
+                "cp": 80,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "민첩·적응력 기반 배분"
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 20,
+                "cp": 200,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전략·정치 역량 기반 배분"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 11,
+                "cp": 10,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "평균 건강 기반 배분"
+                  }
+                ]
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "전략",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "상",
+                "cp": 8,
+                "effect": "부대 전체 행동 보정"
+              },
+              {
+                "name": "정치",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "상",
+                "cp": 4,
+                "effect": "권력 획득·유지"
+              },
+              {
+                "name": "외교",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "상",
+                "cp": 2,
+                "effect": "협상 성공률"
+              },
+              {
+                "name": "지휘",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "부대 사기·통제"
+              },
+              {
+                "name": "전술",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "소부대 교전 보정"
+              },
+              {
+                "name": "처세",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "사회적 상황 대응"
+              },
+              {
+                "name": "장검",
+                "attr": "DX",
+                "level": 13,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "도검 베기·찌르기"
+              },
+              {
+                "name": "차량 운전",
+                "attr": "DX",
+                "level": 13,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "차량·이동 수단 조종"
+              },
+              {
+                "name": "정비",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "통신·기계 수리"
+              },
+              {
+                "name": "생활·사회 잡기술",
+                "attr": "IQ",
+                "level": 13,
+                "difficulty": "하",
+                "cp": 45,
+                "effect": "광범위 생존·사회 기술 묶음"
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/9/items/5/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 20,
+              "Per": 20,
+              "FP": 11,
+              "BasicSpeed": 6.25,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 10
+            },
+            "cp": {
+              "attributes": 290,
+              "advantages": 69,
+              "disadvantages": -25,
+              "skills": 95,
+              "spent": 429,
+              "unspent": 0,
+              "total": 429
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": null,
+            "wandering_force": null,
+            "territory": null,
+            "advantages": [
+              {
+                "name": "Charisma +2",
+                "cp": 10,
+                "effect": "설득·지휘 +2 반응 보정"
+              },
+              {
+                "name": "Strong Will +2",
+                "cp": 10,
+                "effect": "의지 판정 +2"
+              },
+              {
+                "name": "Contacts (Variety)",
+                "cp": 15,
+                "effect": "다방면 인맥"
+              },
+              {
+                "name": "Wealth (Comfortable)",
+                "cp": 10,
+                "effect": "여유 자산"
+              },
+              {
+                "name": "Social Chameleon",
+                "cp": 5,
+                "effect": "계층 이동 적응"
+              },
+              {
+                "name": "Combat Reflexes",
+                "cp": 15,
+                "effect": "전투 반응 +1"
+              },
+              {
+                "name": "Fearlessness +2",
+                "cp": 4,
+                "effect": "공포 판정 +2"
+              }
+            ],
+            "disadvantages": [
+              {
+                "name": "Social Stigma (출신)",
+                "cp": -10,
+                "effect": "낮은 출신 편견"
+              },
+              {
+                "name": "Overconfidence",
+                "cp": -5,
+                "effect": "과신"
+              },
+              {
+                "name": "Duty (상관)",
+                "cp": -5,
+                "effect": "상관 명령 의무"
+              },
+              {
+                "name": "Reputation (야망가)",
+                "cp": -5,
+                "effect": "평판 페널티"
+              }
+            ]
+          }
+        }
       },
-      "DX": {
-        "value": 14,
-        "cp": 80
-      },
-      "IQ": {
-        "value": 20,
-        "cp": 200
-      },
-      "HT": {
-        "value": 11,
-        "cp": 10
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S02",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1008",
+            "name": "민웅기",
+            "url": "/people/person-1008",
+            "state": "S02",
+            "method": "card-lexicon",
+            "role": {
+              "display": "주 통신 정비사 / 부 고물·철물 수리",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/9/items/6/ko",
+                  "quote": "생업: 주 통신 정비사 / 부 고물·철물 수리"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "삼영걸 대비 분석 — 사회 상승·유연성 프로파일"
+                  }
+                ]
+              },
+              "DX": {
+                "value": 14,
+                "cp": 80,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "민첩·적응력 기반 배분"
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 20,
+                "cp": 200,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전략·정치 역량 기반 배분"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 11,
+                "cp": 10,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "평균 건강 기반 배분"
+                  }
+                ]
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "전략",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "상",
+                "cp": 8,
+                "effect": "부대 전체 행동 보정"
+              },
+              {
+                "name": "정치",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "상",
+                "cp": 4,
+                "effect": "권력 획득·유지"
+              },
+              {
+                "name": "외교",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "상",
+                "cp": 2,
+                "effect": "협상 성공률"
+              },
+              {
+                "name": "지휘",
+                "attr": "IQ",
+                "level": 15,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "부대 사기·통제"
+              },
+              {
+                "name": "전술",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "소부대 교전 보정"
+              },
+              {
+                "name": "처세",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "사회적 상황 대응"
+              },
+              {
+                "name": "장검",
+                "attr": "DX",
+                "level": 13,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "도검 베기·찌르기"
+              },
+              {
+                "name": "차량 운전",
+                "attr": "DX",
+                "level": 13,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "차량·이동 수단 조종"
+              },
+              {
+                "name": "정비",
+                "attr": "IQ",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 4,
+                "effect": "통신·기계 수리"
+              },
+              {
+                "name": "생활·사회 잡기술",
+                "attr": "IQ",
+                "level": 13,
+                "difficulty": "하",
+                "cp": 45,
+                "effect": "광범위 생존·사회 기술 묶음"
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/9/items/5/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 20,
+              "Per": 20,
+              "FP": 11,
+              "BasicSpeed": 6.25,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 10
+            },
+            "cp": {
+              "attributes": 290,
+              "advantages": 69,
+              "disadvantages": -25,
+              "skills": 95,
+              "spent": 429,
+              "unspent": 0,
+              "total": 429
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": null,
+            "wandering_force": null,
+            "territory": null,
+            "advantages": [
+              {
+                "name": "Charisma +2",
+                "cp": 10,
+                "effect": "설득·지휘 +2 반응 보정"
+              },
+              {
+                "name": "Strong Will +2",
+                "cp": 10,
+                "effect": "의지 판정 +2"
+              },
+              {
+                "name": "Contacts (Variety)",
+                "cp": 15,
+                "effect": "다방면 인맥"
+              },
+              {
+                "name": "Wealth (Comfortable)",
+                "cp": 10,
+                "effect": "여유 자산"
+              },
+              {
+                "name": "Social Chameleon",
+                "cp": 5,
+                "effect": "계층 이동 적응"
+              },
+              {
+                "name": "Combat Reflexes",
+                "cp": 15,
+                "effect": "전투 반응 +1"
+              },
+              {
+                "name": "Fearlessness +2",
+                "cp": 4,
+                "effect": "공포 판정 +2"
+              }
+            ],
+            "disadvantages": [
+              {
+                "name": "Social Stigma (출신)",
+                "cp": -10,
+                "effect": "낮은 출신 편견"
+              },
+              {
+                "name": "Overconfidence",
+                "cp": -5,
+                "effect": "과신"
+              },
+              {
+                "name": "Duty (상관)",
+                "cp": -5,
+                "effect": "상관 명령 의무"
+              },
+              {
+                "name": "Reputation (야망가)",
+                "cp": -5,
+                "effect": "평판 페널티"
+              }
+            ]
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "전략",
-        "level": 16,
-        "cp": 8
-      },
-      {
-        "name": "정치",
-        "level": 15,
-        "cp": 4
-      },
-      {
-        "name": "외교",
-        "level": 14,
-        "cp": 2
-      },
-      {
-        "name": "지휘",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "전술",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "처세",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "장검",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "차량 운전",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "정비",
-        "level": 14,
-        "cp": 4
-      },
-      {
-        "name": "생활·사회 잡기술",
-        "level": 13,
-        "cp": 45
-      }
-    ],
-    "cp": {
-      "attributes": 290,
-      "advantages": 69,
-      "disadvantages": -25,
-      "skills": 95,
-      "spent": 429,
-      "unspent": 0,
-      "total": 429
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 20,
-      "Per": 20,
-      "FP": 11,
-      "BasicSpeed": 6.25,
-      "BasicMove": 6,
-      "BasicLift": 20,
-      "Dodge": 10
-    }
+    ]
   },
   "confirmedHoldings": [
     {
