@@ -638,6 +638,7 @@
 
 .territory-title-chip[data-title-unassigned] {
   background: #2a3a44;
+  color: var(--wiki-paper);
 }
 
 /* Confirmed holding selection uses the existing map geometry and click handlers. */
