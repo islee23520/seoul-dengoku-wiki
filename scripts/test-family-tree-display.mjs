@@ -184,6 +184,47 @@ test('unaffiliated clan members keep the accessible 무소속 marker', async () 
   assert.ok(doc.querySelector(`[data-family-node="${node.id}"] strong`).textContent.includes(node.name))
 })
 
+test('person selector tree enriches current affiliation without touching person-detail bytes', async () => {
+  const { enrichFamilyTreeAffiliations, resolveAffiliation } = await import('../src/familyAffiliation.ts')
+  const peopleText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const people = JSON.parse(peopleText.slice(peopleText.indexOf('= [') + 2, peopleText.lastIndexOf(']') + 1))
+  const statesText = await readFile(new URL('../src/generated/stateCatalog.ts', import.meta.url), 'utf8')
+  const states = JSON.parse(statesText.slice(statesText.indexOf('= [') + 2, statesText.lastIndexOf(']') + 1))
+
+  const raw = (await detail('person-0014')).familyTree
+  assert.ok(raw.nodes.every((node) => node.affiliation === undefined), 'person-detail bytes must stay affiliation-free')
+  const enriched = enrichFamilyTreeAffiliations(raw, people, states)
+  const brooks = enriched.nodes.find((node) => node.personId === 'K014')
+  const brooksPerson = people.find((person) => person.id === 'person-0014')
+  assert.deepEqual(brooks.affiliation, resolveAffiliation(brooksPerson, states))
+  assert.ok(brooks.affiliation && brooks.affiliation.name.length > 0)
+  for (const node of enriched.nodes.filter((entry) => !entry.personId)) assert.equal(node.affiliation, undefined)
+  const doc = render(enriched)
+  const flag = doc.querySelector('[data-family-node="K014"] strong img.state-flag')
+  assert.ok(flag, 'issued person in the selector tree must show the current-affiliation flag')
+  assert.equal(flag.getAttribute('alt'), brooks.affiliation.name)
+})
+
+test('selector-tree enrichment covers unaffiliated and no-clan people with the honest marker', async () => {
+  const { enrichFamilyTreeAffiliations } = await import('../src/familyAffiliation.ts')
+  const peopleText = await readFile(new URL('../src/generated/peopleCatalog.ts', import.meta.url), 'utf8')
+  const people = JSON.parse(peopleText.slice(peopleText.indexOf('= [') + 2, peopleText.lastIndexOf(']') + 1))
+  const statesText = await readFile(new URL('../src/generated/stateCatalog.ts', import.meta.url), 'utf8')
+  const states = JSON.parse(statesText.slice(statesText.indexOf('= [') + 2, statesText.lastIndexOf(']') + 1))
+
+  for (const [personId, issuedId] of [['person-1003', 'K1003'], ['person-1004', 'K1004']]) {
+    const raw = (await detail(personId)).familyTree
+    const enriched = enrichFamilyTreeAffiliations(raw, people, states)
+    const node = enriched.nodes.find((entry) => entry.personId === issuedId)
+    assert.deepEqual(node.affiliation, { kind: 'unaffiliated', name: '무소속' }, personId)
+    const doc = render(enriched)
+    const marker = doc.querySelector(`[data-family-node="${issuedId}"] strong .family-tree-affiliation`)
+    assert.equal(marker.getAttribute('data-family-affiliation'), 'unaffiliated')
+    assert.equal(marker.textContent, '무소속')
+    for (const historical of enriched.nodes.filter((entry) => !entry.personId)) assert.equal(historical.affiliation, undefined)
+  }
+})
+
 test('person detail links to the clan tree instead of embedding a genealogy', async () => {
   const { PersonDetailContent } = await import('../src/pages/PersonDetailPage.tsx')
   const renderPerson = async (id) => new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
