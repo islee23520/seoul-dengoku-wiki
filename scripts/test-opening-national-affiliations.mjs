@@ -8,7 +8,7 @@ import { test } from 'vitest'
 import PeoplePage from '../src/pages/PeoplePage.tsx'
 import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
 import { peopleCatalog } from '../src/generated/peopleCatalog.ts'
-const expected = [["K1008","민웅기","S02","규격맹"],["K1009","신종목","S14","아관사"],["K1010","신준","S14","아관사"],["K1011","린샤오메이","S02","규격맹"],["K1012","팜반득","S02","규격맹"],["K1013","아미라 카심","S07","환적국"],["K1014","조엘 박","S07","환적국"],["K1015","나르기즈 유수포바","S10","안국총림"],["K1016","최일석","S06","대한민국정부"],["K1018","고예진","S16","정동노총"],["K1019","박성수","S06","대한민국정부"],["K1020","한서경","S16","정동노총"],["K1022","문도현","S07","환적국"]]
+const expected = [["K1008","민웅기","polity:daejeon","대전"],["K1009","신종목","S14","아관사"],["K1010","신준","S14","아관사"],["K1011","린샤오메이","S02","규격맹"],["K1012","팜반득","S02","규격맹"],["K1013","아미라 카심","S07","환적국"],["K1014","조엘 박","S07","환적국"],["K1015","나르기즈 유수포바","S10","안국총림"],["K1016","최일석","S06","대한민국정부"],["K1018","고예진","S16","정동노총"],["K1019","박성수","S06","대한민국정부"],["K1020","한서경","S16","정동노총"],["K1022","문도현","S07","환적국"]]
 const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
 test('approved opening countries retain issued identity and actual Aside state', async () => {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true

@@ -20,7 +20,7 @@ test('the producer rejects both self and other registered lieges on capital stat
   const map = read('../public/opening-territories.json')
   const registry = read('../lore/name-pools/person-id-registry.json')
   const original = holdings.holdings.find(holding => holding.stationRef)
-  const context = (holding) => ({ personalHoldings: { holdings: [holding] }, territoryStates: map.states, openingTerritories: map, issuedById: new Map(registry.persons.map(person => [person.id, person])) })
+  const context = (holding) => ({ personalHoldings: { holdings: [holding], polities: holdings.polities }, territoryStates: map.states, openingTerritories: map, issuedById: new Map(registry.persons.map(person => [person.id, person])) })
   assert.doesNotThrow(() => runInNewContext(producer, context(original)))
   for (const liege of [original.holderPersonId, 'K029']) {
     assert.throws(() => runInNewContext(producer, context({ ...original, directLiegePersonId: liege })), /E_CAPITAL_HOLDING/)
@@ -41,8 +41,8 @@ test('every opening ruler holds the exact capital station without a fabricated l
   const map = read('../public/opening-territories.json')
   const holdings = read('../public/confirmed-person-holdings.json').holdings
   const people = read('../lore/name-pools/person-id-registry.json').persons
-  assert.equal(holdings.filter(holding => holding.stationRef).length, 16)
-  for (const state of map.states) {
+  assert.equal(holdings.filter(holding => holding.stationRef).length, 15)
+  for (const state of map.states.filter(state => state.id !== 'S08')) {
     const holding = holdings.find(holding => holding.stationRef && holding.stateId === state.id)
     assert.ok(holding, state.id)
     assert.equal(people.find(person => person.id === holding.holderPersonId).name, state.ruler)

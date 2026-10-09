@@ -18,7 +18,7 @@ export function currentAffiliations(contract, stateRows) {
   const states = new Map()
   for (const state of contract.states) {
     const historical = stateRows.find(row => row.id === state.stateId)
-    if (!historical || states.has(state.stateId) || historical.name !== state.historicalName || !state.currentName) throw new Error('E_AFFILIATION_IDENTITY:' + state.stateId)
+    if (!historical || states.has(state.stateId) || historical.name !== state.currentName || !state.currentName) throw new Error('E_AFFILIATION_IDENTITY:' + state.stateId)
     if (!['none', 'immediate-holdings'].includes(state.currentExclusiveDistricts)) throw new Error('E_AFFILIATION_FOOTPRINT:' + state.stateId)
     const base = state.currentBase
     if (!base?.name || !(base.kind === 'station' && base.stationId || base.kind === 'facility' && base.landmarkId)) throw new Error('E_AFFILIATION_BASE:' + state.stateId)

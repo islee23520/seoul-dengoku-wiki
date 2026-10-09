@@ -52,7 +52,15 @@
       "range": "S01-S16",
       "approvalRef": "owner-confirmed opening states; GDD r2.rwarfare-37.body"
     },
-    "wholeKingdomAtOpening": false,
-    "approvalRef": "owner-confirmed opening condition"
+    "wholeKingdomAtOpening": true,
+    "approvalRef": "owner:tasks57-67:2026-10-09 대전은 민웅기의 중립 왕국급 강역",
+    "openingIndependentPolities": [
+      {
+        "id": "polity:daejeon",
+        "name": "대전",
+        "sovereignPersonId": "K1008",
+        "approvalRef": "owner:tasks57-67:2026-10-09"
+      }
+    ]
   }
 }

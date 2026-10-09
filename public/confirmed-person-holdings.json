@@ -141,19 +141,20 @@
     {
       "id": "holding:capital-s08",
       "name": {
-        "ko": "흑석역 직영지"
+        "ko": "서울타워 직영지",
+        "en": "Seoul Tower holding"
       },
       "holderPersonId": "K194",
       "directLiegePersonId": null,
       "stateId": "S08",
-      "stationRef": {
-        "stationId": "흑석",
-        "stationName": "흑석"
-      },
       "adminRefs": [],
       "geometrySource": null,
       "territorialScale": null,
-      "formalTitleRank": null
+      "formalTitleRank": null,
+      "landmarkRef": {
+        "landmarkId": "n-seoul-tower",
+        "sourcePath": "lore/places/landmark-roles.json"
+      }
     },
     {
       "id": "holding:capital-s09",
@@ -454,6 +455,448 @@
       "geometrySource": null,
       "territorialScale": null,
       "formalTitleRank": null
+    },
+    {
+      "id": "holding:daejeon-dong",
+      "name": {
+        "ko": "대전 동구 영지"
+      },
+      "holderPersonId": "K1008",
+      "directLiegePersonId": null,
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3011051500",
+          "name": "대전광역시 동구 중앙동"
+        },
+        {
+          "id": "3011053000",
+          "name": "대전광역시 동구 효동"
+        },
+        {
+          "id": "3011054500",
+          "name": "대전광역시 동구 신인동"
+        },
+        {
+          "id": "3011055100",
+          "name": "대전광역시 동구 판암1동"
+        },
+        {
+          "id": "3011055200",
+          "name": "대전광역시 동구 판암2동"
+        },
+        {
+          "id": "3011056000",
+          "name": "대전광역시 동구 용운동"
+        },
+        {
+          "id": "3011058500",
+          "name": "대전광역시 동구 대동"
+        },
+        {
+          "id": "3011059000",
+          "name": "대전광역시 동구 자양동"
+        },
+        {
+          "id": "3011062000",
+          "name": "대전광역시 동구 가양1동"
+        },
+        {
+          "id": "3011063000",
+          "name": "대전광역시 동구 가양2동"
+        },
+        {
+          "id": "3011064000",
+          "name": "대전광역시 동구 용전동"
+        },
+        {
+          "id": "3011066500",
+          "name": "대전광역시 동구 성남동"
+        },
+        {
+          "id": "3011067000",
+          "name": "대전광역시 동구 홍도동"
+        },
+        {
+          "id": "3011069500",
+          "name": "대전광역시 동구 삼성동"
+        },
+        {
+          "id": "3011072500",
+          "name": "대전광역시 동구 대청동"
+        },
+        {
+          "id": "3011074000",
+          "name": "대전광역시 동구 산내동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:daejeon-yuseong",
+      "name": {
+        "ko": "대전 유성구 영지"
+      },
+      "holderPersonId": "K1008",
+      "directLiegePersonId": null,
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3020052000",
+          "name": "대전광역시 유성구 진잠동"
+        },
+        {
+          "id": "3020052600",
+          "name": "대전광역시 유성구 학하동"
+        },
+        {
+          "id": "3020052700",
+          "name": "대전광역시 유성구 상대동"
+        },
+        {
+          "id": "3020053000",
+          "name": "대전광역시 유성구 온천1동"
+        },
+        {
+          "id": "3020054000",
+          "name": "대전광역시 유성구 온천2동"
+        },
+        {
+          "id": "3020054600",
+          "name": "대전광역시 유성구 노은1동"
+        },
+        {
+          "id": "3020054700",
+          "name": "대전광역시 유성구 노은2동"
+        },
+        {
+          "id": "3020054800",
+          "name": "대전광역시 유성구 노은3동"
+        },
+        {
+          "id": "3020055000",
+          "name": "대전광역시 유성구 신성동"
+        },
+        {
+          "id": "3020057000",
+          "name": "대전광역시 유성구 전민동"
+        },
+        {
+          "id": "3020058000",
+          "name": "대전광역시 유성구 구즉동"
+        },
+        {
+          "id": "3020060000",
+          "name": "대전광역시 유성구 관평동"
+        },
+        {
+          "id": "3020061000",
+          "name": "대전광역시 유성구 원신흥동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:daejeon-jung",
+      "name": {
+        "ko": "대전 중구 영지"
+      },
+      "holderPersonId": "K035",
+      "directLiegePersonId": "K1008",
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3014053500",
+          "name": "대전광역시 중구 은행선화동"
+        },
+        {
+          "id": "3014055000",
+          "name": "대전광역시 중구 목동"
+        },
+        {
+          "id": "3014056000",
+          "name": "대전광역시 중구 중촌동"
+        },
+        {
+          "id": "3014057500",
+          "name": "대전광역시 중구 대흥동"
+        },
+        {
+          "id": "3014060500",
+          "name": "대전광역시 중구 문창동"
+        },
+        {
+          "id": "3014062000",
+          "name": "대전광역시 중구 석교동"
+        },
+        {
+          "id": "3014063000",
+          "name": "대전광역시 중구 대사동"
+        },
+        {
+          "id": "3014064000",
+          "name": "대전광역시 중구 부사동"
+        },
+        {
+          "id": "3014065500",
+          "name": "대전광역시 중구 용두동"
+        },
+        {
+          "id": "3014067000",
+          "name": "대전광역시 중구 오류동"
+        },
+        {
+          "id": "3014068000",
+          "name": "대전광역시 중구 태평1동"
+        },
+        {
+          "id": "3014069000",
+          "name": "대전광역시 중구 태평2동"
+        },
+        {
+          "id": "3014070000",
+          "name": "대전광역시 중구 유천1동"
+        },
+        {
+          "id": "3014071000",
+          "name": "대전광역시 중구 유천2동"
+        },
+        {
+          "id": "3014072000",
+          "name": "대전광역시 중구 문화1동"
+        },
+        {
+          "id": "3014073000",
+          "name": "대전광역시 중구 문화2동"
+        },
+        {
+          "id": "3014074000",
+          "name": "대전광역시 중구 산성동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:daejeon-seo",
+      "name": {
+        "ko": "대전 서구 영지"
+      },
+      "holderPersonId": "K039",
+      "directLiegePersonId": "K1008",
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3017051000",
+          "name": "대전광역시 서구 복수동"
+        },
+        {
+          "id": "3017052000",
+          "name": "대전광역시 서구 도마1동"
+        },
+        {
+          "id": "3017053000",
+          "name": "대전광역시 서구 도마2동"
+        },
+        {
+          "id": "3017053500",
+          "name": "대전광역시 서구 정림동"
+        },
+        {
+          "id": "3017054000",
+          "name": "대전광역시 서구 변동"
+        },
+        {
+          "id": "3017055000",
+          "name": "대전광역시 서구 용문동"
+        },
+        {
+          "id": "3017055500",
+          "name": "대전광역시 서구 탄방동"
+        },
+        {
+          "id": "3017056000",
+          "name": "대전광역시 서구 괴정동"
+        },
+        {
+          "id": "3017057000",
+          "name": "대전광역시 서구 가장동"
+        },
+        {
+          "id": "3017057500",
+          "name": "대전광역시 서구 내동"
+        },
+        {
+          "id": "3017058100",
+          "name": "대전광역시 서구 갈마1동"
+        },
+        {
+          "id": "3017058200",
+          "name": "대전광역시 서구 갈마2동"
+        },
+        {
+          "id": "3017058600",
+          "name": "대전광역시 서구 월평1동"
+        },
+        {
+          "id": "3017058700",
+          "name": "대전광역시 서구 월평2동"
+        },
+        {
+          "id": "3017058800",
+          "name": "대전광역시 서구 월평3동"
+        },
+        {
+          "id": "3017059000",
+          "name": "대전광역시 서구 가수원동"
+        },
+        {
+          "id": "3017059300",
+          "name": "대전광역시 서구 도안동"
+        },
+        {
+          "id": "3017059600",
+          "name": "대전광역시 서구 관저1동"
+        },
+        {
+          "id": "3017059700",
+          "name": "대전광역시 서구 관저2동"
+        },
+        {
+          "id": "3017060000",
+          "name": "대전광역시 서구 기성동"
+        },
+        {
+          "id": "3017063000",
+          "name": "대전광역시 서구 둔산1동"
+        },
+        {
+          "id": "3017064000",
+          "name": "대전광역시 서구 둔산2동"
+        },
+        {
+          "id": "3017065000",
+          "name": "대전광역시 서구 만년동"
+        },
+        {
+          "id": "3017066000",
+          "name": "대전광역시 서구 둔산3동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null
+    },
+    {
+      "id": "holding:daejeon-daedeok",
+      "name": {
+        "ko": "대전 대덕구 영지"
+      },
+      "holderPersonId": "K038",
+      "directLiegePersonId": "K1008",
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3023051000",
+          "name": "대전광역시 대덕구 오정동"
+        },
+        {
+          "id": "3023052000",
+          "name": "대전광역시 대덕구 대화동"
+        },
+        {
+          "id": "3023052500",
+          "name": "대전광역시 대덕구 회덕동"
+        },
+        {
+          "id": "3023053300",
+          "name": "대전광역시 대덕구 비래동"
+        },
+        {
+          "id": "3023054300",
+          "name": "대전광역시 대덕구 송촌동"
+        },
+        {
+          "id": "3023054600",
+          "name": "대전광역시 대덕구 중리동"
+        },
+        {
+          "id": "3023055000",
+          "name": "대전광역시 대덕구 신탄진동"
+        },
+        {
+          "id": "3023056000",
+          "name": "대전광역시 대덕구 석봉동"
+        },
+        {
+          "id": "3023057000",
+          "name": "대전광역시 대덕구 덕암동"
+        },
+        {
+          "id": "3023058000",
+          "name": "대전광역시 대덕구 목상동"
+        },
+        {
+          "id": "3023060000",
+          "name": "대전광역시 대덕구 법1동"
+        },
+        {
+          "id": "3023061000",
+          "name": "대전광역시 대덕구 법2동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null
+    }
+  ],
+  "polities": [
+    {
+      "id": "polity:daejeon",
+      "name": {
+        "ko": "대전",
+        "en": "Daejeon"
+      },
+      "sovereignPersonId": "K1008",
+      "territorialScale": "kingdom",
+      "formalTitle": "대전선",
+      "formalTitleRank": "왕격",
+      "office": "대전 군주",
+      "authority": {
+        "kind": "neutral",
+        "name": "대전"
+      }
+    }
+  ],
+  "retinueGroups": [
+    {
+      "id": "retinue:K1008:humanoids",
+      "name": {
+        "ko": "민웅기의 휴머노이드 가신단",
+        "en": "Min Woonggi’s humanoid retinue"
+      },
+      "courtId": "court:K1008",
+      "liegePersonId": "K1008",
+      "count": 24,
+      "duties": [
+        "농업",
+        "지역 통신",
+        "보급",
+        "정비"
+      ],
+      "personhoodReview": "individual",
+      "technicalLimits": [
+        "지역망",
+        "배터리",
+        "부품"
+      ],
+      "holdingIds": [],
+      "formalTitle": null
     }
   ]
 }

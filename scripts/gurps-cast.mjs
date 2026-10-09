@@ -18,10 +18,10 @@ export const SCHEMA = 'wiki-gurps-cast.v1'
 const CONTRACT = 'lore/characters/Cast-Profile-Contract.md'
 const REGISTRY = 'lore/name-pools/person-id-registry.json'
 const VALUES = 'lore/name-pools/values-cast.json'
-// 입력 해시(person-id-registry approvalRef, 2026-09-28 K1019 발급 소유자 승인). 두 파일은 이 작업에서 바뀌면 안 된다.
+// tasks57-67의 승인된 국가명·대전 소속 변경에서 재계산한 입력 해시. 발급 인물과 능력 배분은 보존한다.
 export const APPROVED_HASHES = {
-  [VALUES]: 'c9f8ccb8768c1423285cfbc0672256416456aec17e5dc782a20eb8a02e4f3446',
-  [REGISTRY]: '50e8eddc6a68d06590c20aed0f6cf3be588e5bffef9f8890fa818a4fee644d3f',
+  [VALUES]: 'fa52d710f6d5c5324d9cdd38c818f9958e61cb1c77c4e0d968d4fb7a0dc51961',
+  [REGISTRY]: '57e6a03ebf298b2822dd2e02ce012d42057e12897c1b489682e07e0d414ff1a2',
 }
 const CARD_FILES = [
   ...Array.from({ length: 16 }, (_, i) => `lore/characters/Cast-State-${String(i + 1).padStart(2, '0')}.json`),

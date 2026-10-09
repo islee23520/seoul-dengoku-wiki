@@ -29,7 +29,10 @@
                 "neutralStateIds": {
                   "type": "array",
                   "uniqueItems": true,
-                  "items": { "type": "string", "pattern": "^S(?:0[1-9]|1[0-6])$" }
+                  "items": {
+                    "type": "string",
+                    "pattern": "^S(?:0[1-9]|1[0-6])$"
+                  }
                 },
                 "hegemons": {
                   "type": "array",
@@ -43,7 +46,9 @@
                           "kind",
                           "stateId",
                           "name",
-                          "memberStateIds"
+                          "memberStateIds",
+                          "aiPosition",
+                          "color"
                         ],
                         "additionalProperties": false,
                         "properties": {
@@ -66,6 +71,14 @@
                               "type": "string",
                               "pattern": "^S(?:0[1-9]|1[0-6])$"
                             }
+                          },
+                          "aiPosition": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "color": {
+                            "type": "string",
+                            "pattern": "^#[0-9a-f]{6}$"
                           }
                         }
                       },
@@ -74,7 +87,9 @@
                         "required": [
                           "kind",
                           "name",
-                          "memberStateIds"
+                          "memberStateIds",
+                          "aiPosition",
+                          "color"
                         ],
                         "additionalProperties": false,
                         "properties": {
@@ -93,6 +108,14 @@
                               "type": "string",
                               "pattern": "^S(?:0[1-9]|1[0-6])$"
                             }
+                          },
+                          "aiPosition": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "color": {
+                            "type": "string",
+                            "pattern": "^#[0-9a-f]{6}$"
                           }
                         }
                       }
@@ -107,7 +130,6 @@
                     "type": "object",
                     "required": [
                       "stateId",
-                      "historicalName",
                       "currentName",
                       "currentBase",
                       "currentExclusiveDistricts"
@@ -117,10 +139,6 @@
                       "stateId": {
                         "type": "string",
                         "pattern": "^S(?:0[1-9]|1[0-6])$"
-                      },
-                      "historicalName": {
-                        "type": "string",
-                        "minLength": 1
                       },
                       "currentName": {
                         "type": "string",
@@ -194,6 +212,23 @@
         }
       }
     },
-    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["governance"]}}}}
+    {
+      "if": {
+        "properties": {
+          "id": {
+            "pattern": "^(?:DOC:|__EXAMPLE__)"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "data": {
+            "required": [
+              "governance"
+            ]
+          }
+        }
+      }
+    }
   ]
 }

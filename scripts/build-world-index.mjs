@@ -47,12 +47,8 @@ export function buildWorldIndex({ loreRoot }) {
       : { '국명': cells[0] ?? '', '기원': cells[1] ?? '', '형태': cells[2] ?? '', '강국': cells[3] ?? '' }
     if (!row['국명'] || row['국명'] === '국명') return null
     const name = publicStateName(row['국명'])
-    const originNames = [...row['국명'].matchAll(/기원 표기 ([^,)]+)/gu)].map((match) => match[1].trim())
-    const origin = cell(row, '기원') || cell(row, '출신')
-    const institution = origin.split(/[.]/u)[0].trim()
-    const names = [...new Set([name, ...originNames, institution].filter((candidate) => candidate.length >= 2))]
-    const embedded = (origin.match(/중심\s*([^|()]+?)역/u) ?? origin.match(/([가-힣]{2,8})역/u) ?? [])[1] ?? ''
-    const capital = (cell(row, '수도역') || cell(row, '중심역')).replace(/역$/u, '').trim() || embedded.trim() || (names.includes('대한민국정부') ? '광화문' : '')
+    const names = [name]
+    const capital = (cell(row, '수도역') || cell(row, '중심역')).replace(/역$/u, '').trim()
     const ranked = leaderSections
       .map(([person, section]) => {
         const intro = section.split('\n', 1)[0]

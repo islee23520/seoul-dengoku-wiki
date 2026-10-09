@@ -44,7 +44,6 @@ const normalizeTitle = (markdown, fallback) =>
   markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
 
 const publicStateName = (cell) => cell.replace(/\([^)]*\)/gu, '').trim()
-const namingStates = JSON.parse(await readFile(resolve(repoRoot, 'lore/editorial/Naming-Ledger.json'), 'utf8')).states
 
 const splitCells = (line) => line.split('|').slice(1, -1).map((cell) => cell.trim())
 
@@ -72,26 +71,19 @@ const parseStateRows = (markdown) => {
   const rows = tableRows(markdown).map((row) => {
     const idCell = row.ID ?? row['식별자'] ?? ''
     const id = idCell.match(/S(?:0[1-9]|1[0-6])/u)?.[0]
-    const originCell = rowCell(row, '기원') || rowCell(row, '출신')
-    const embedded = (originCell.match(/중심\s*([^|()]+?)역/u) ?? originCell.match(/([가-힣]{2,8})역/u) ?? [])[1] ?? ''
-    const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim() || embedded.trim()
+    const capital = (rowCell(row, '수도역') || rowCell(row, '중심역')).replace(/역$/u, '').trim()
     const rawName = row['국명']
-    const origin = namingStates.find((state) => state.id === id)?.precursor
     return {
       id,
       name: publicStateName(rawName),
-      names: [...new Set([
-        publicStateName(rawName), origin,
-        (originCell.split(/[.]/u)[0] ?? '').trim(),
-      ].filter((candidate) => candidate.length >= 2))],
-      origin,
+      names: [publicStateName(rawName)],
       government: rowCell(row, '정부') || rowCell(row, '형태'),
       power: (rowCell(row, '등급') || rowCell(row, '강국')).split(',')[0].trim(),
       cause: rowCell(row, '주요 관계') || rowCell(row, '원인') || rowCell(row, '인과') || rowCell(row, '유래'),
       capital,
     }
   })
-  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id || !row.origin) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
+  if (rows.length !== 16 || rows.some((row) => !row.name || !row.id) || new Set(rows.map((row) => row.id)).size !== 16) throw new Error(`E_STATE_TABLE:${rows.length}`)
   if (rows.some((row) => !row.capital)) throw new Error(`E_STATE_CAPITAL:${rows.filter((row) => !row.capital).map((row) => row.name).join(',')}`)
   return rows
 }
@@ -341,7 +333,7 @@ const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## 
 const stateRows = parseStateRows(stateSource)
 const affiliations = currentAffiliations(pagesBySlug.get('Sixteen-States').value.data.currentAffiliation, stateRows)
 const coreCharacters = renderedBySlug.get('Core-Characters')
-const stateIdByName = new Map(stateRows.flatMap((row) => [[row.name, row.id], [row.origin, row.id]]))
+const stateIdByName = new Map(stateRows.map((row) => [row.name, row.id]))
 const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .filter((match) => match[1].trim() !== '국가')
   .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((cell) => cell.split('·').map((rank) => rank.trim()))]))
@@ -350,11 +342,9 @@ const stateCatalog = stateRows.map((row) => ({
   slug: row.id.toLowerCase(),
   id: row.id,
   name: affiliations.get(row.id).currentName,
-  historicalName: row.name,
   currentHegemon: affiliations.get(row.id).currentHegemon,
   currentBase: affiliations.get(row.id).currentBase,
   currentExclusiveDistricts: affiliations.get(row.id).currentExclusiveDistricts,
-  origin: row.origin,
   government: row.government,
   power: row.power,
   cause: row.cause,
@@ -364,7 +354,7 @@ const stateCatalog = stateRows.map((row) => ({
   capital: row.capital,
   capitalName: row.capital,
 }))
-await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { historicalName: string; currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
+await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
@@ -381,10 +371,9 @@ const stateTable = sixteenStatesLore.content.find((block) => block.anchor === 't
 if (!stateTable || stateTable.kind !== 'table' || stateTable.rows.length !== 16) throw new Error('E_STATE_DETAIL_TABLE')
 const stateDetails = new Map(stateTable.rows.map((row) => [row[0].ko, {
   name: row[1].ko,
-  founded: row[5].ko,
-  vassals: row[6].ko,
-  religion: row[7].ko,
-  foreignRelations: row[8].ko,
+  vassals: row[5].ko,
+  religion: row[6].ko,
+  foreignRelations: row[7].ko,
 }]))
 const relationTable = sixteenStatesLore.content.find((block) => block.anchor === 'table-gov-relations')
 if (!relationTable || relationTable.kind !== 'table') throw new Error('E_GOV_RELATIONS_TABLE_MISSING')
@@ -631,7 +620,7 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
   const state = stateCatalog.find((candidate) => candidate.slug === id.toLowerCase())
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
   const details = stateDetails.get(id)
-  if (!details || details.name !== state.historicalName) throw new Error(`E_STATE_DETAIL_IDENTITY:${id}`)
+  if (!details || details.name !== state.name) throw new Error(`E_STATE_DETAIL_IDENTITY:${id}`)
   const currentBase = currentBasePoint(state.currentBase, mapStations, projectedLandmarks)
   const candidates = regionAtlas.regions
     .filter((region) => state.currentExclusiveDistricts !== 'none' && surfaceHolders(regionContentById.get(region.id)).length === 1 && surfaceHolders(regionContentById.get(region.id))[0] === id)
@@ -650,17 +639,14 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     id,
     name,
     slug: state.slug,
-    historicalName: state.historicalName,
     currentHegemon: state.currentHegemon,
     currentBase,
     currentExclusiveDistrictCount: candidates.length,
-    origin: state.origin,
     government: state.government,
     power: state.power,
-    relation: relationByStateName.get(state.historicalName) ?? null,
+    relation: relationByStateName.get(state.name) ?? null,
     ruler: state.ruler,
     cause: state.cause,
-    founded: details.founded,
     vassals: details.vassals,
     religion: details.religion,
     foreignRelations: details.foreignRelations,
@@ -724,7 +710,7 @@ const mapVassalName = (rawName) => {
 }
 
 const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
-  const suzerainId = stateIdByName.get(suzerainName)
+  const suzerainId = stateIdByName.get(suzerainName) ?? (suzerainName === '종교 연합' ? 'union:religious' : null)
   if (!suzerainId) throw new Error(`E_VASSAL_SUZERAIN_NOT_FOUND:${suzerainName}`)
   const city = cityRules[rawName] || rawName
   const boundary = boundaryByCity.get(city)
@@ -734,6 +720,7 @@ const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
     name: mapVassalName(rawName),
     city,
     suzerain: suzerainId,
+    authorityName: suzerainName,
     founded,
     duty,
     anchor: anchorRules[rawName],
@@ -772,7 +759,7 @@ const openingTerritories = {
       district: region.district_name,
       path: geometryPath(region.map_geometry),
       polities,
-      currentHegemons: hegemonsForHolders(polities, affiliations),
+      currentHegemons: content.territory.authority ? [content.territory.authority] : hegemonsForHolders(polities, affiliations),
       status: content.territory?.status ?? (polities.length === 0 ? 'vacant' : polities.length === 1 ? 'held' : 'contested'),
       openingState: normalizePublicNames(content.opening_state),
       summary: normalizePublicNames(content.summary),
@@ -783,6 +770,11 @@ const openingTerritories = {
   }),
 }
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
+
+const outsideGeometry = JSON.parse(await readFile(resolve(publicRoot, 'outside-admin-units.json'), 'utf8'))
+const outsideControl = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-control-2126.json'), 'utf8'))
+if (outsideControl.assignments.length !== outsideGeometry.units.length || new Set(outsideControl.assignments.map(row => row.unitId)).size !== outsideGeometry.units.length || outsideControl.assignments.some(row => !outsideGeometry.units.some(unit => unit.id === row.unitId))) throw new Error('E_OUTSIDE_CONTROL_COVERAGE')
+await writeFile(resolve(publicRoot, 'outside-control-2126.json'), JSON.stringify({ schema: outsideControl.schema, assignments: outsideControl.assignments }, null, 2) + '\n')
 
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
@@ -813,7 +805,7 @@ for (const block of centuryAnnalsDocument.content) {
   if (eventYear === null || block.kind !== 'paragraph') continue
   const text = koText(block.text.ko)
   for (const state of territoryStates) {
-    if (text.includes(state.historicalName) || text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
+    if (text.includes(state.name)) stateEvents.get(state.name).push({ year: eventYear, text, sourceRoute: `/world/Century-Annals#${eventYear}년` })
   }
 }
 for (const state of territoryStates) {
@@ -875,15 +867,23 @@ if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join(';
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
 const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
 const openingDispositions = validateOpeningDispositions(personalHoldings, courtDataset.people)
+const daejeonPolities = personalHoldings.polities.filter(polity => polity.id === 'polity:daejeon')
+if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
+await writeFile(resolve(generatedRoot, 'politicalCatalog.ts'), 'export const politicalCatalog = ' + JSON.stringify({ hegemons: sixteenStatesLore.data.currentAffiliation.hegemons, daejeon: daejeonPolities[0] }, null, 2) + ' as const\n')
 const territorialScale = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8')).data.territorialScale
 await writeFile(resolve(publicRoot, 'territorial-scale.json'), JSON.stringify(territorialScale, null, 2) + String.fromCharCode(10))
 const stationInteriors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
 for (const holding of personalHoldings.holdings) {
   const rulerState = territoryStates.find(state => state.id === holding.stateId && state.ruler === issuedById.get(holding.holderPersonId)?.name)
-  if (!issuedById.has(holding.holderPersonId) || (holding.directLiegePersonId === null ? !rulerState : !issuedById.has(holding.directLiegePersonId)) || (!holding.stationRef && !holding.facilityRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
+  const independentPolity = personalHoldings.polities.find(polity => polity.id === holding.stateId && polity.sovereignPersonId === holding.holderPersonId)
+  if (!issuedById.has(holding.holderPersonId) || (holding.directLiegePersonId === null ? !rulerState && !independentPolity : !issuedById.has(holding.directLiegePersonId)) || (!holding.stationRef && !holding.facilityRef && !holding.landmarkRef && !holding.adminRefs.length)) throw new Error('E_PERSON_HOLDING:' + holding.id)
   if (holding.stationRef) {
     const station = openingTerritories.stations.find(station => station.id === holding.stationRef.stationId)
     if (!rulerState || holding.directLiegePersonId !== null || rulerState.capitalStationId !== holding.stationRef.stationId || station?.name !== holding.stationRef.stationName || !station.control.polityIds.includes(holding.stateId) || holding.adminRefs.length || holding.facilityRef || holding.geometrySource !== null || holding.territorialScale !== null || holding.formalTitleRank !== null) throw new Error('E_CAPITAL_HOLDING:' + holding.id)
+  }
+  if (holding.landmarkRef) {
+    const landmark = projectedLandmarks.find(site => site.id === holding.landmarkRef.landmarkId)
+    if (!landmark || landmark.holderId !== holding.stateId || holding.landmarkRef.sourcePath !== 'lore/places/landmark-roles.json' || holding.stationRef || holding.facilityRef || holding.adminRefs.length) throw new Error('E_HOLDING_LANDMARK:' + holding.id)
   }
   if (holding.facilityRef) {
     await validateHoldingFacility(holding, stationInteriors, repoRoot)
@@ -892,7 +892,7 @@ for (const holding of personalHoldings.holdings) {
     if (!station || station.nameKo !== ref.stationName || station.district !== ref.stationIdentity.district || Number(station.lat.toFixed(5)) !== ref.stationIdentity.lat || Number(station.lon.toFixed(5)) !== ref.stationIdentity.lon) throw new Error('E_HOLDING_STATION_ID:' + holding.id)
   }
   for (const ref of holding.adminRefs) {
-    const region = openingTerritories.regions.find(region => region.id === ref.id)
+    const region = (holding.geometrySource === 'outside-admin-units.units' ? outsideGeometry.units : openingTerritories.regions).find(region => region.id === ref.id)
     if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
   }
 }
@@ -980,7 +980,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
-  const commonTier = person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
+  const commonTier = person.state === 'polity:daejeon' || person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,
@@ -1019,6 +1019,7 @@ for (const row of graphOwnerLieges) {
   graphIds.add(row.liegePersonId)
 }
 const retainerGraph = {
+  groups: personalHoldings.retinueGroups,
   nodes: [...graphIds].map(graphPerson),
   edges: [
     ...graphRetainers.map(({ personId, liegePersonId, courtId }) =>
@@ -1062,6 +1063,8 @@ for (const person of peopleCatalog) {
       secondary: sheet.secondary,
     },
     confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
+    ...(personalHoldings.polities.some(polity => polity.sovereignPersonId === issuedId) ? { sovereignTitle: personalHoldings.polities.find(polity => polity.sovereignPersonId === issuedId) } : {}),
+    ...(personalHoldings.retinueGroups.some(group => group.liegePersonId === issuedId) ? { retinueGroups: personalHoldings.retinueGroups.filter(group => group.liegePersonId === issuedId) } : {}),
     ...(openingDispositions.has(issuedId) ? { openingDisposition: openingDispositions.get(issuedId) } : {}),
     unit: sheet.unit,
     territory: sheet.territory,
@@ -1174,5 +1177,16 @@ await writeFile(resolve(generatedRoot, 'clanFamilyCatalog.ts'), `export const cl
 
 await writeFile(resolve(generatedRoot, 'nonKoreanFamilyCatalog.ts'), `export const nonKoreanFamilyCatalog = ${JSON.stringify(projectNonKoreanFamilies(peopleCatalog, lineageByName), null, 2)} as const\n`)
 
+// Portrait appearance and exact image approvals remain immutable; roles follow current canon.
+for (const file of await readdir(resolve(publicRoot, 'portrait-tokens'))) {
+  if (!file.endsWith('.json')) continue
+  const path = resolve(publicRoot, 'portrait-tokens', file)
+  const token = JSON.parse(await readFile(path, 'utf8'))
+  const person = peopleCatalog.find(person => person.id === token.personId)
+  if (!person || person.name !== token.name) throw new Error('E_PORTRAIT_CANON_IDENTITY:' + file)
+  if (typeof person.position !== 'string' || !person.position.trim()) throw new Error('E_PORTRAIT_CANON_ROLE:' + file)
+  token.facts.role = person.position
+  await writeFile(path, JSON.stringify(token, null, 2) + '\n')
+}
 console.log(`
 WIKI_CATALOG_GENERATED: ${documents.length} documents at ${relative(repoRoot, worldJsonRoot)}`)

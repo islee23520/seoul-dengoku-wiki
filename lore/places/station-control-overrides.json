@@ -7,7 +7,9 @@
       "id": "SEOUL-2126-OPENING",
       "stationId": "서울역",
       "status": "held",
-      "polityIds": ["S06"],
+      "polityIds": [
+        "S06"
+      ],
       "primary": "S06",
       "decision": "소유자 결정: 통합 서울역은 대한민국정부 점유. 기존 지표 소유 기록은 별도 보존."
     },
@@ -65,6 +67,246 @@
       "primary": "S16",
       "regionalAuthority": "강남구 권역 책임자",
       "stationManager": "대치역장"
+    },
+    {
+      "id": "S08-TRANSFER-2126-관악산",
+      "stationId": "관악산",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-낙성대",
+      "stationId": "낙성대",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-남성",
+      "stationId": "남성",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-노들",
+      "stationId": "노들",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-노량진",
+      "stationId": "노량진",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-당곡",
+      "stationId": "당곡",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-동작",
+      "stationId": "동작",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-보라매공원",
+      "stationId": "보라매공원",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-보라매병원",
+      "stationId": "보라매병원",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-봉천",
+      "stationId": "봉천",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-사당",
+      "stationId": "사당",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-상도",
+      "stationId": "상도",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-서울대벤처타운",
+      "stationId": "서울대벤처타운",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-서울대입구",
+      "stationId": "서울대입구",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-서울지방병무청",
+      "stationId": "서울지방병무청",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-서원",
+      "stationId": "서원",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-숭실대입구",
+      "stationId": "숭실대입구",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-신대방",
+      "stationId": "신대방",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-신대방삼거리",
+      "stationId": "신대방삼거리",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-신림",
+      "stationId": "신림",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-장승배기",
+      "stationId": "장승배기",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-총신대입구(이수)",
+      "stationId": "총신대입구(이수)",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-TRANSFER-2126-흑석",
+      "stationId": "흑석",
+      "status": "held",
+      "polityIds": [
+        "S02"
+      ],
+      "primary": "S02",
+      "decision": "소유자 결정: 기존 중앙정보부 관할 역을 규격맹에 이관한다."
+    },
+    {
+      "id": "S08-NAMSAN-CAPITAL-2126",
+      "stationId": "녹사평",
+      "status": "held",
+      "polityIds": [
+        "S08"
+      ],
+      "primary": "S08",
+      "decision": "소유자 결정: 중앙정보부 수도역은 녹사평이다."
     }
   ],
   "passageDecisions": [
