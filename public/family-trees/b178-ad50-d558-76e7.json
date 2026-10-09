@@ -1,0 +1,1081 @@
+{
+  "clanId": "b178-ad50-d558-76e7",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K573",
+      "personId": "K573",
+      "kind": "person",
+      "name": "노사호",
+      "birthDate": "2095-12-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K573"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0573",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K769",
+      "personId": "K769",
+      "kind": "person",
+      "name": "노금호",
+      "birthDate": "2098-01-15",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K769"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0769",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K885",
+      "personId": "K885",
+      "kind": "person",
+      "name": "노마호",
+      "birthDate": "2092-06-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K885"
+        },
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0885",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K573-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승윤",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2065-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "노승윤은 대합실 당직에서 공개 창구 청탁 접수·회송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K573-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승우",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2035-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "노승우는 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K573-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승경",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2005-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "노승경은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K573-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송태범",
+      "birthDate": "2065-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "송태범은 대합실 당직에서 공개 창구 청탁 접수·회송 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K573-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태섭",
+      "birthDate": "2035-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "조태섭은 대합실 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K573-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김태욱",
+      "birthDate": "2005-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김태욱은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-노사호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K769-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승범",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2068-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "노승범은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K769-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승재",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2038-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "노승재는 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K769-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승찬",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2008-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "노승찬은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K769-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도정",
+      "birthDate": "2068-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "이도정은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K769-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최도범",
+      "birthDate": "2038-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "최도범은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K769-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도경",
+      "birthDate": "2008-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정도경은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-노금호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K885-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승욱",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2062-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2100,
+          "summary": "노승욱은 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K885-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승란",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2032-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2070,
+          "summary": "노승란은 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K885-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "노승리",
+      "lineage": {
+        "surname": "노",
+        "bongwan": "교하",
+        "clan": "b178-ad50-d558-76e7-agreed-d638-second"
+      },
+      "birthDate": "2002-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "노승리는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K885-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도나",
+      "birthDate": "2062-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2100,
+          "summary": "송도나는 대합실 당직에서 검역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K885-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민준",
+      "birthDate": "2032-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2070,
+          "summary": "조민준은 대합실 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K885-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김도미",
+      "birthDate": "2002-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김도미는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-노마호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K573-P-01:K573:biological",
+      "from": "FH-K573-P-01",
+      "to": "K573",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K573-P-02:FH-K573-P-01:biological",
+      "from": "FH-K573-P-02",
+      "to": "FH-K573-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K573-P-03:FH-K573-P-02:biological",
+      "from": "FH-K573-P-03",
+      "to": "FH-K573-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K573-M-01:K573:biological",
+      "from": "FH-K573-M-01",
+      "to": "K573",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K573-M-02:FH-K573-M-01:biological",
+      "from": "FH-K573-M-02",
+      "to": "FH-K573-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K573-M-03:FH-K573-M-02:biological",
+      "from": "FH-K573-M-03",
+      "to": "FH-K573-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-노사호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K769-P-01:K769:biological",
+      "from": "FH-K769-P-01",
+      "to": "K769",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K769-P-02:FH-K769-P-01:biological",
+      "from": "FH-K769-P-02",
+      "to": "FH-K769-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K769-P-03:FH-K769-P-02:biological",
+      "from": "FH-K769-P-03",
+      "to": "FH-K769-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K769-M-01:K769:biological",
+      "from": "FH-K769-M-01",
+      "to": "K769",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K769-M-02:FH-K769-M-01:biological",
+      "from": "FH-K769-M-02",
+      "to": "FH-K769-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K769-M-03:FH-K769-M-02:biological",
+      "from": "FH-K769-M-03",
+      "to": "FH-K769-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-노금호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K885-P-01:K885:biological",
+      "from": "FH-K885-P-01",
+      "to": "K885",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K885-P-02:FH-K885-P-01:biological",
+      "from": "FH-K885-P-02",
+      "to": "FH-K885-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K885-P-03:FH-K885-P-02:biological",
+      "from": "FH-K885-P-03",
+      "to": "FH-K885-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K885-M-01:K885:biological",
+      "from": "FH-K885-M-01",
+      "to": "K885",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K885-M-02:FH-K885-M-01:biological",
+      "from": "FH-K885-M-02",
+      "to": "FH-K885-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K885-M-03:FH-K885-M-02:biological",
+      "from": "FH-K885-M-03",
+      "to": "FH-K885-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-노마호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3909 @@
+{
+  "clanId": "c9c4-d48d-ae30",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K012",
+      "personId": "K012",
+      "kind": "person",
+      "name": "진하겸",
+      "birthDate": "2088-10-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K012"
+        },
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 여의도 수문의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0012",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K020",
+      "personId": "K020",
+      "kind": "person",
+      "name": "진세빈",
+      "birthDate": "2093-10-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K020"
+        },
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 양천 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0020",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K040",
+      "personId": "K040",
+      "kind": "person",
+      "name": "진우람",
+      "birthDate": "2078-09-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K040"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-진우람-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0040",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K068",
+      "personId": "K068",
+      "kind": "person",
+      "name": "진채온",
+      "birthDate": "2078-09-23",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K068"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 실험동 안전의무원 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진채온-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0068",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K098",
+      "personId": "K098",
+      "kind": "person",
+      "name": "진모래",
+      "birthDate": "2096-08-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K098"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프실 의무원 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0099",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K502",
+      "personId": "K502",
+      "kind": "person",
+      "name": "진준혁",
+      "birthDate": "2098-12-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K502"
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 선거 기록 서기 일을 맡았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0502",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K582",
+      "personId": "K582",
+      "kind": "person",
+      "name": "진돌린",
+      "birthDate": "2085-04-15",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K582"
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진돌린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0582",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K662",
+      "personId": "K662",
+      "kind": "person",
+      "name": "진금린",
+      "birthDate": "2087-04-02",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K662"
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 명동역 구휼 물자 당직 일을 맡았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0662",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K701",
+      "personId": "K701",
+      "kind": "person",
+      "name": "진솔린",
+      "birthDate": "2064-11-16",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K701"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-진솔린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0701",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K740",
+      "personId": "K740",
+      "kind": "person",
+      "name": "진숲혁",
+      "birthDate": "2077-06-06",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K740"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 방역 수련의 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-진숲혁-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0740",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K778",
+      "personId": "K778",
+      "kind": "person",
+      "name": "진마린",
+      "birthDate": "2068-10-30",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K778"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진마린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0778",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K817",
+      "personId": "K817",
+      "kind": "person",
+      "name": "진하린",
+      "birthDate": "2102-08-07",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K817"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0817",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K931",
+      "personId": "K931",
+      "kind": "person",
+      "name": "진라린",
+      "birthDate": "2077-04-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K931"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생업: 의무호송 기록·당직 열쇠 인계",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-진라린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0931",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K012-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승석",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2058-10-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2096,
+          "summary": "진승석은 영등포 정수 당직에서 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K012-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승준",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2028-10-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2066,
+          "summary": "진승준은 영등포 정수 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K012-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승호",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "1998-10-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승호는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K012-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승진",
+      "birthDate": "2058-10-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2096,
+          "summary": "박승진은 영등포 정수 당직에서 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K012-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이승민",
+      "birthDate": "2028-10-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2066,
+          "summary": "이승민은 영등포 정수 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K012-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최승진",
+      "birthDate": "1998-10-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진하겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K020-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승민",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2063-10-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "진승민은 제기동 의무소에서 이동 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K020-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승원",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2033-10-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "진승원은 제기동 의무소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K020-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승진",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2003-10-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승진은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K020-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승민",
+      "birthDate": "2063-10-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "오승민은 제기동 의무소에서 이동 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K020-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승민",
+      "birthDate": "2033-10-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "송승민은 제기동 의무소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K020-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조승민",
+      "birthDate": "2003-10-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조승민은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-진세빈-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K040-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승현",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2048-09-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "진승현은 제기동 의무소에서 공방 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-진우람-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K040-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승영",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2018-09-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승영은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-진우람-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K040-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤승윤",
+      "birthDate": "2048-09-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "윤승윤은 제기동 의무소에서 공방 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-진우람-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K040-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한승수",
+      "birthDate": "2018-09-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한승수는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-진우람-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K068-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승윤",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2048-09-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "진승윤은 제기동 의무소에서 실험동 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진채온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K068-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승우",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2018-09-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승우는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진채온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K068-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승은",
+      "birthDate": "2048-09-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "오승은은 제기동 의무소에서 실험동 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진채온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K068-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승연",
+      "birthDate": "2018-09-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송승연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진채온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K098-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승연",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2066-08-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "진승연은 신정 차량기지에서 차륜 결함 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K098-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승정",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2036-08-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "진승정은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K098-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승아",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30"
+      },
+      "birthDate": "2006-08-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승아는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K098-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현석",
+      "birthDate": "2066-08-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "최현석은 신정 차량기지에서 차륜 결함 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K098-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승빈",
+      "birthDate": "2036-08-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "정승빈은 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K098-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤승완",
+      "birthDate": "2006-08-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤승완은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-진모래-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K502-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승훈",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-d601-second"
+      },
+      "birthDate": "2068-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "진승훈은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K502-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승범",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-d601-second"
+      },
+      "birthDate": "2038-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "진승범은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K502-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승재",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-d601-second"
+      },
+      "birthDate": "2008-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승재는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K502-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태영",
+      "birthDate": "2068-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "조태영은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K502-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김태윤",
+      "birthDate": "2038-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "김태윤은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K502-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태희",
+      "birthDate": "2008-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박태희는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진준혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K582-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승문",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2055-04-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2093,
+          "summary": "진승문은 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진돌린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K582-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승섭",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2025-04-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승섭은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진돌린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K582-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태성",
+      "birthDate": "2055-04-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2093,
+          "summary": "강태성은 대합실 당직에서 인준 명부 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진돌린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K582-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임태리",
+      "birthDate": "2025-04-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임태리는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진돌린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K662-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승란",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2057-04-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2095,
+          "summary": "진승란은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K662-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승리",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2027-04-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2065,
+          "summary": "진승리는 노량진 선창에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K662-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승나",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "1997-04-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승나는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K662-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재욱",
+      "birthDate": "2057-04-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2095,
+          "summary": "최재욱은 노량진 선창에서 구휼 물자 인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K662-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정재정",
+      "birthDate": "2027-04-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2065,
+          "summary": "정재정은 노량진 선창에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K662-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤재연",
+      "birthDate": "1997-04-02",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤재연은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-진금린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K701-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승온",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2034-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "진승온은 서울역 등기소에서 젖은 인준 문서 건조·필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-진솔린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K701-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승빈",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2004-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승빈은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-진솔린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K701-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한재혁",
+      "birthDate": "2034-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "한재혁은 서울역 등기소에서 젖은 인준 문서 건조·필사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-진솔린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K701-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재범",
+      "birthDate": "2004-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강재범은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-진솔린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K740-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승솔",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-d601-second"
+      },
+      "birthDate": "2047-06-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2085,
+          "summary": "진승솔은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-진숲혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K740-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승미",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-d601-second"
+      },
+      "birthDate": "2017-06-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진승미는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-진숲혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K740-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오도준",
+      "birthDate": "2047-06-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2085,
+          "summary": "오도준은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-진숲혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K740-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송재욱",
+      "birthDate": "2017-06-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송재욱은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-진숲혁-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K778-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진승도",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2038-10-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "진승도는 대합실 당직에서 당직 기록 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진마린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K778-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진현석",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2008-10-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진현석은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진마린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K778-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조도윤",
+      "birthDate": "2038-10-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "조도윤은 대합실 당직에서 당직 기록 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진마린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K778-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김도원",
+      "birthDate": "2008-10-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김도원은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-진마린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K817-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진현준",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2072-08-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2110,
+          "summary": "진현준은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K817-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진현호",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2042-08-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "진현호는 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K817-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "진현민",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2012-08-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진현민은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K817-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도성",
+      "birthDate": "2072-08-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2110,
+          "summary": "이도성은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K817-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최도빈",
+      "birthDate": "2042-08-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "최도빈은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K817-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도혁",
+      "birthDate": "2012-08-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정도혁은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-진하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K931-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "진현우",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2047-04-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2085,
+          "summary": "진현우는 서울역 등기소에서 의무호송 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-진라린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K931-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "진현경",
+      "lineage": {
+        "surname": "진",
+        "bongwan": "풍기",
+        "clan": "c9c4-d48d-ae30-agreed-b9b0-second"
+      },
+      "birthDate": "2017-04-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "진현경은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-진라린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K931-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임민경",
+      "birthDate": "2047-04-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2085,
+          "summary": "임민경은 서울역 등기소에서 의무호송 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-진라린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K931-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오민수",
+      "birthDate": "2017-04-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오민수는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-진라린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K012-P-01:K012:biological",
+      "from": "FH-K012-P-01",
+      "to": "K012",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K012-P-02:FH-K012-P-01:biological",
+      "from": "FH-K012-P-02",
+      "to": "FH-K012-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K012-P-03:FH-K012-P-02:biological",
+      "from": "FH-K012-P-03",
+      "to": "FH-K012-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K012-M-01:K012:biological",
+      "from": "FH-K012-M-01",
+      "to": "K012",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K012-M-02:FH-K012-M-01:biological",
+      "from": "FH-K012-M-02",
+      "to": "FH-K012-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K012-M-03:FH-K012-M-02:biological",
+      "from": "FH-K012-M-03",
+      "to": "FH-K012-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진하겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K020-P-01:K020:biological",
+      "from": "FH-K020-P-01",
+      "to": "K020",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K020-P-02:FH-K020-P-01:biological",
+      "from": "FH-K020-P-02",
+      "to": "FH-K020-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K020-P-03:FH-K020-P-02:biological",
+      "from": "FH-K020-P-03",
+      "to": "FH-K020-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K020-M-01:K020:biological",
+      "from": "FH-K020-M-01",
+      "to": "K020",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K020-M-02:FH-K020-M-01:biological",
+      "from": "FH-K020-M-02",
+      "to": "FH-K020-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K020-M-03:FH-K020-M-02:biological",
+      "from": "FH-K020-M-03",
+      "to": "FH-K020-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-진세빈-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K040-P-01:K040:biological",
+      "from": "FH-K040-P-01",
+      "to": "K040",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K040-P-02:FH-K040-P-01:biological",
+      "from": "FH-K040-P-02",
+      "to": "FH-K040-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K040-M-01:K040:biological",
+      "from": "FH-K040-M-01",
+      "to": "K040",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K040-M-02:FH-K040-M-01:biological",
+      "from": "FH-K040-M-02",
+      "to": "FH-K040-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-진우람-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K068-P-01:K068:biological",
+      "from": "FH-K068-P-01",
+      "to": "K068",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K068-P-02:FH-K068-P-01:biological",
+      "from": "FH-K068-P-02",
+      "to": "FH-K068-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K068-M-01:K068:biological",
+      "from": "FH-K068-M-01",
+      "to": "K068",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K068-M-02:FH-K068-M-01:biological",
+      "from": "FH-K068-M-02",
+      "to": "FH-K068-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진채온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K098-P-01:K098:biological",
+      "from": "FH-K098-P-01",
+      "to": "K098",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K098-P-02:FH-K098-P-01:biological",
+      "from": "FH-K098-P-02",
+      "to": "FH-K098-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K098-P-03:FH-K098-P-02:biological",
+      "from": "FH-K098-P-03",
+      "to": "FH-K098-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K098-M-01:K098:biological",
+      "from": "FH-K098-M-01",
+      "to": "K098",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K098-M-02:FH-K098-M-01:biological",
+      "from": "FH-K098-M-02",
+      "to": "FH-K098-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K098-M-03:FH-K098-M-02:biological",
+      "from": "FH-K098-M-03",
+      "to": "FH-K098-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-진모래-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K502-P-01:K502:biological",
+      "from": "FH-K502-P-01",
+      "to": "K502",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K502-P-02:FH-K502-P-01:biological",
+      "from": "FH-K502-P-02",
+      "to": "FH-K502-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K502-P-03:FH-K502-P-02:biological",
+      "from": "FH-K502-P-03",
+      "to": "FH-K502-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K502-M-01:K502:biological",
+      "from": "FH-K502-M-01",
+      "to": "K502",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K502-M-02:FH-K502-M-01:biological",
+      "from": "FH-K502-M-02",
+      "to": "FH-K502-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K502-M-03:FH-K502-M-02:biological",
+      "from": "FH-K502-M-03",
+      "to": "FH-K502-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진준혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K582-P-01:K582:biological",
+      "from": "FH-K582-P-01",
+      "to": "K582",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K582-P-02:FH-K582-P-01:biological",
+      "from": "FH-K582-P-02",
+      "to": "FH-K582-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K582-M-01:K582:biological",
+      "from": "FH-K582-M-01",
+      "to": "K582",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K582-M-02:FH-K582-M-01:biological",
+      "from": "FH-K582-M-02",
+      "to": "FH-K582-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진돌린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K662-P-01:K662:biological",
+      "from": "FH-K662-P-01",
+      "to": "K662",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K662-P-02:FH-K662-P-01:biological",
+      "from": "FH-K662-P-02",
+      "to": "FH-K662-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K662-P-03:FH-K662-P-02:biological",
+      "from": "FH-K662-P-03",
+      "to": "FH-K662-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K662-M-01:K662:biological",
+      "from": "FH-K662-M-01",
+      "to": "K662",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K662-M-02:FH-K662-M-01:biological",
+      "from": "FH-K662-M-02",
+      "to": "FH-K662-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K662-M-03:FH-K662-M-02:biological",
+      "from": "FH-K662-M-03",
+      "to": "FH-K662-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-진금린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K701-P-01:K701:biological",
+      "from": "FH-K701-P-01",
+      "to": "K701",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K701-P-02:FH-K701-P-01:biological",
+      "from": "FH-K701-P-02",
+      "to": "FH-K701-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K701-M-01:K701:biological",
+      "from": "FH-K701-M-01",
+      "to": "K701",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K701-M-02:FH-K701-M-01:biological",
+      "from": "FH-K701-M-02",
+      "to": "FH-K701-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-진솔린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K740-P-01:K740:biological",
+      "from": "FH-K740-P-01",
+      "to": "K740",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K740-P-02:FH-K740-P-01:biological",
+      "from": "FH-K740-P-02",
+      "to": "FH-K740-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K740-M-01:K740:biological",
+      "from": "FH-K740-M-01",
+      "to": "K740",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K740-M-02:FH-K740-M-01:biological",
+      "from": "FH-K740-M-02",
+      "to": "FH-K740-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-진숲혁-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K778-P-01:K778:biological",
+      "from": "FH-K778-P-01",
+      "to": "K778",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K778-P-02:FH-K778-P-01:biological",
+      "from": "FH-K778-P-02",
+      "to": "FH-K778-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K778-M-01:K778:biological",
+      "from": "FH-K778-M-01",
+      "to": "K778",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K778-M-02:FH-K778-M-01:biological",
+      "from": "FH-K778-M-02",
+      "to": "FH-K778-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-진마린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K817-P-01:K817:biological",
+      "from": "FH-K817-P-01",
+      "to": "K817",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K817-P-02:FH-K817-P-01:biological",
+      "from": "FH-K817-P-02",
+      "to": "FH-K817-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K817-P-03:FH-K817-P-02:biological",
+      "from": "FH-K817-P-03",
+      "to": "FH-K817-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K817-M-01:K817:biological",
+      "from": "FH-K817-M-01",
+      "to": "K817",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K817-M-02:FH-K817-M-01:biological",
+      "from": "FH-K817-M-02",
+      "to": "FH-K817-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K817-M-03:FH-K817-M-02:biological",
+      "from": "FH-K817-M-03",
+      "to": "FH-K817-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-진하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K931-P-01:K931:biological",
+      "from": "FH-K931-P-01",
+      "to": "K931",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K931-P-02:FH-K931-P-01:biological",
+      "from": "FH-K931-P-02",
+      "to": "FH-K931-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K931-M-01:K931:biological",
+      "from": "FH-K931-M-01",
+      "to": "K931",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K931-M-02:FH-K931-M-01:biological",
+      "from": "FH-K931-M-02",
+      "to": "FH-K931-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-진라린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

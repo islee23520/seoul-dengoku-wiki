@@ -1,0 +1,346 @@
+{
+  "clanId": "ce74-c2ec-c774-d0dc-c6d0",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K1013",
+      "personId": "K1013",
+      "kind": "person",
+      "name": "아미라 카심",
+      "birthDate": "2084-03-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1013"
+        },
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+            }
+          ]
+        }
+      ],
+      "nameEn": "Amira Qasim",
+      "detailRoute": "/people/person-1013",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K1013-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "유수프 카심",
+      "birthDate": "2054-03-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "유수프 카심은 2054년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2072년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Yusuf Qasim was born in 2054 and grew up reading family and work records. From 2072, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Yusuf Qasim",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1013-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "하산 카심",
+      "birthDate": "2024-03-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2042,
+          "summary": "하산 카심은 2024년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2042년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Hassan Qasim was born in 2024 and grew up reading family and work records. From 2042, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Hassan Qasim",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1013-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "라일라 하다드",
+      "birthDate": "2054-03-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "라일라 하다드는 2054년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2072년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Layla Haddad was born in 2054 and grew up reading family and work records. From 2072, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Layla Haddad",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1013-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "마리암 하다드",
+      "birthDate": "2024-03-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2042,
+          "summary": "마리암 하다드는 2024년에 태어났다. 이태원의 가족 기록과 작업 사본을 읽으며 자랐고, 2042년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Mariam Haddad was born in 2024 and grew up reading family and work records. From 2042, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Mariam Haddad",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1013-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "할리드 카심",
+      "nameEn": "Khalid Qasim",
+      "birthDate": "1994-03-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1013-P-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "할리드 카심은 2030년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Khalid Qasim was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1013-P-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1013-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "나디아 하다드",
+      "nameEn": "Nadia Haddad",
+      "birthDate": "1994-03-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1013-M-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "나디아 하다드는 2030년 대정전 당시 이태원 생활권에서 이태원 민간 통역·숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Nadia Haddad was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1013-M-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K1013-P-01:K1013:biological",
+      "from": "FH-K1013-P-01",
+      "to": "K1013",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1013-P-02:FH-K1013-P-01:biological",
+      "from": "FH-K1013-P-02",
+      "to": "FH-K1013-P-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1013-M-01:K1013:biological",
+      "from": "FH-K1013-M-01",
+      "to": "K1013",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1013-M-02:FH-K1013-M-01:biological",
+      "from": "FH-K1013-M-02",
+      "to": "FH-K1013-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-아미라-카심-amira-qasim-아미라-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1013-P-03:FH-K1013-P-02:biological",
+      "from": "FH-K1013-P-03",
+      "to": "FH-K1013-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1013-P-03"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1013-M-03:FH-K1013-M-02:biological",
+      "from": "FH-K1013-M-03",
+      "to": "FH-K1013-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1013-M-03"
+        }
+      ]
+    }
+  ]
+}

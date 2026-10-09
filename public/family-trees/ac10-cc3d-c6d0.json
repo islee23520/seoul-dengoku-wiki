@@ -1,0 +1,1584 @@
+{
+  "clanId": "ac10-cc3d-c6d0",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K232",
+      "personId": "K232",
+      "kind": "person",
+      "name": "감봉",
+      "birthDate": "2095-12-30",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K232"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0233",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K258",
+      "personId": "K258",
+      "kind": "person",
+      "name": "감용",
+      "birthDate": "2091-01-12",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K258"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 자리는 고아 명부 줄로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0259",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K284",
+      "personId": "K284",
+      "kind": "person",
+      "name": "감두",
+      "birthDate": "2093-02-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K284"
+        },
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 사택 당직장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0285",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K305",
+      "personId": "K305",
+      "kind": "person",
+      "name": "감국",
+      "birthDate": "2082-07-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K305"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감국-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0306",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K313",
+      "personId": "K313",
+      "kind": "person",
+      "name": "감모",
+      "birthDate": "2078-01-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K313"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 의료조 당직실 거점장 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감모-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0314",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K232-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승석",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2065-12-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "감승석은 여의도 금고 당직에서 금고 당직 교대·풍속 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K232-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승준",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2035-12-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "감승준은 여의도 금고 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K232-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승호",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2005-12-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "감승호는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K232-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현훈",
+      "birthDate": "2065-12-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "윤현훈은 여의도 금고 당직에서 금고 당직 교대·풍속 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K232-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한현완",
+      "birthDate": "2035-12-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "한현완은 여의도 금고 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K232-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현훈",
+      "birthDate": "2005-12-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강현훈은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-감봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K258-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승민",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2061-01-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2099,
+          "summary": "감승민은 보국문 피난 막사에서 숙영 명부·출입 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K258-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승원",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2031-01-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2069,
+          "summary": "감승원은 보국문 피난 막사에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K258-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승진",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2001-01-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "감승진은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K258-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현란",
+      "birthDate": "2061-01-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2099,
+          "summary": "강현란은 보국문 피난 막사에서 숙영 명부·출입 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K258-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임현리",
+      "birthDate": "2031-01-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2069,
+          "summary": "임현리는 보국문 피난 막사에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K258-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현섭",
+      "birthDate": "2001-01-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오현섭은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-감용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K284-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승현",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2063-02-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "감승현은 강남역 차량기지에서 사택 당직·출고 시각 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K284-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승영",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2033-02-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "감승영은 강남역 차량기지에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K284-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승윤",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2003-02-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "감승윤은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K284-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현빈",
+      "birthDate": "2063-02-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "오현빈은 강남역 차량기지에서 사택 당직·출고 시각 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K284-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송현성",
+      "birthDate": "2033-02-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "송현성은 강남역 차량기지에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K284-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현란",
+      "birthDate": "2003-02-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조현란은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-감두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K305-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승우",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2052-07-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "감승우는 암사 경비 초소에서 외곽 호송 인원·발포 권한 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감국-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K305-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승경",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2022-07-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "감승경은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감국-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K305-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한현미",
+      "birthDate": "2052-07-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "한현미는 암사 경비 초소에서 외곽 호송 인원·발포 권한 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감국-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K305-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현도",
+      "birthDate": "2022-07-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강현도는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감국-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K313-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승수",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2048-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "감승수는 제기동 의무소에서 의료조 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K313-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "감승은",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2018-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "감승은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K313-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이준영",
+      "birthDate": "2048-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "이준영은 제기동 의무소에서 의료조 중증도·이송 시각 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K313-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최준정",
+      "birthDate": "2018-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최준정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-감모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K232-P-01:K232:biological",
+      "from": "FH-K232-P-01",
+      "to": "K232",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K232-P-02:FH-K232-P-01:biological",
+      "from": "FH-K232-P-02",
+      "to": "FH-K232-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K232-P-03:FH-K232-P-02:biological",
+      "from": "FH-K232-P-03",
+      "to": "FH-K232-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K232-M-01:K232:biological",
+      "from": "FH-K232-M-01",
+      "to": "K232",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K232-M-02:FH-K232-M-01:biological",
+      "from": "FH-K232-M-02",
+      "to": "FH-K232-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K232-M-03:FH-K232-M-02:biological",
+      "from": "FH-K232-M-03",
+      "to": "FH-K232-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-감봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K258-P-01:K258:biological",
+      "from": "FH-K258-P-01",
+      "to": "K258",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K258-P-02:FH-K258-P-01:biological",
+      "from": "FH-K258-P-02",
+      "to": "FH-K258-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K258-P-03:FH-K258-P-02:biological",
+      "from": "FH-K258-P-03",
+      "to": "FH-K258-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K258-M-01:K258:biological",
+      "from": "FH-K258-M-01",
+      "to": "K258",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K258-M-02:FH-K258-M-01:biological",
+      "from": "FH-K258-M-02",
+      "to": "FH-K258-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K258-M-03:FH-K258-M-02:biological",
+      "from": "FH-K258-M-03",
+      "to": "FH-K258-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-감용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K284-P-01:K284:biological",
+      "from": "FH-K284-P-01",
+      "to": "K284",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K284-P-02:FH-K284-P-01:biological",
+      "from": "FH-K284-P-02",
+      "to": "FH-K284-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K284-P-03:FH-K284-P-02:biological",
+      "from": "FH-K284-P-03",
+      "to": "FH-K284-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K284-M-01:K284:biological",
+      "from": "FH-K284-M-01",
+      "to": "K284",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K284-M-02:FH-K284-M-01:biological",
+      "from": "FH-K284-M-02",
+      "to": "FH-K284-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K284-M-03:FH-K284-M-02:biological",
+      "from": "FH-K284-M-03",
+      "to": "FH-K284-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-감두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K305-P-01:K305:biological",
+      "from": "FH-K305-P-01",
+      "to": "K305",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K305-P-02:FH-K305-P-01:biological",
+      "from": "FH-K305-P-02",
+      "to": "FH-K305-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K305-M-01:K305:biological",
+      "from": "FH-K305-M-01",
+      "to": "K305",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K305-M-02:FH-K305-M-01:biological",
+      "from": "FH-K305-M-02",
+      "to": "FH-K305-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감국-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K313-P-01:K313:biological",
+      "from": "FH-K313-P-01",
+      "to": "K313",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K313-P-02:FH-K313-P-01:biological",
+      "from": "FH-K313-P-02",
+      "to": "FH-K313-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K313-M-01:K313:biological",
+      "from": "FH-K313-M-01",
+      "to": "K313",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K313-M-02:FH-K313-M-01:biological",
+      "from": "FH-K313-M-02",
+      "to": "FH-K313-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-감모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

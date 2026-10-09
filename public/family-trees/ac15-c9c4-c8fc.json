@@ -1,0 +1,4804 @@
+{
+  "clanId": "ac15-c9c4-c8fc",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K029",
+      "personId": "K029",
+      "kind": "person",
+      "name": "강민서",
+      "birthDate": "2066-10-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K029"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 단철공의 사제는 규격 없는 개조를 내치는 원로였다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강민서-p1"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0029",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K145",
+      "personId": "K145",
+      "kind": "person",
+      "name": "강예준",
+      "birthDate": "2070-05-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K145"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 인준 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강예준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0146",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K248",
+      "personId": "K248",
+      "kind": "person",
+      "name": "강태산",
+      "birthDate": "2077-12-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K248"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-강태산-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0249",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K428",
+      "personId": "K428",
+      "kind": "person",
+      "name": "강지유",
+      "birthDate": "2084-03-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K428"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강지유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0428",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K468",
+      "personId": "K468",
+      "kind": "person",
+      "name": "강달유",
+      "birthDate": "2084-05-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K468"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강달유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0468",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K508",
+      "personId": "K508",
+      "kind": "person",
+      "name": "강하준",
+      "birthDate": "2074-05-23",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K508"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강하준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0508",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K548",
+      "personId": "K548",
+      "kind": "person",
+      "name": "강바유",
+      "birthDate": "2102-03-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K548"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 방역 수련의 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0548",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K588",
+      "personId": "K588",
+      "kind": "person",
+      "name": "강금유",
+      "birthDate": "2080-10-27",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K588"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강금유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0588",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K628",
+      "personId": "K628",
+      "kind": "person",
+      "name": "강솔준",
+      "birthDate": "2080-08-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K628"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 처방 수련의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강솔준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0628",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K668",
+      "personId": "K668",
+      "kind": "person",
+      "name": "강숲유",
+      "birthDate": "2086-05-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K668"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강숲유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0668",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K707",
+      "personId": "K707",
+      "kind": "person",
+      "name": "강마유",
+      "birthDate": "2068-10-09",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K707"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-강마유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0707",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K784",
+      "personId": "K784",
+      "kind": "person",
+      "name": "강별유",
+      "birthDate": "2089-11-09",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K784"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 금고 당직 자리는 정전 사흘 금고 유지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0784",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K823",
+      "personId": "K823",
+      "kind": "person",
+      "name": "강다유",
+      "birthDate": "2097-11-30",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K823"
+        },
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 공동구 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0823",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K861",
+      "personId": "K861",
+      "kind": "person",
+      "name": "강라준",
+      "birthDate": "2070-10-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K861"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강라준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0861",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K900",
+      "personId": "K900",
+      "kind": "person",
+      "name": "강파유",
+      "birthDate": "2098-04-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K900"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0900",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K937",
+      "personId": "K937",
+      "kind": "person",
+      "name": "강늘유",
+      "birthDate": "2082-02-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K937"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "소속: 규격맹",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강늘유-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0937",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K975",
+      "personId": "K975",
+      "kind": "person",
+      "name": "강바준",
+      "birthDate": "2091-01-27",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K975"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "소속: 중앙정보부",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0975",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "FH-K029-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승현",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc"
+      },
+      "birthDate": "2036-10-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "강승현은 구로·금천 공단 조합에서 제작평의회 중재자 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강민서-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K029-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승영",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc"
+      },
+      "birthDate": "2006-10-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강승영은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강민서-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K029-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한승영",
+      "birthDate": "2036-10-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "한승영은 구로·금천 공단 조합에서 제작평의회 중재자 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강민서-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K029-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승윤",
+      "birthDate": "2006-10-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강승윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강민서-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K145-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승빈",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2040-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "강승빈은 서울역 등기소에서 유언장 필적 대조·인준 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강예준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K145-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승솔",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2010-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강승솔은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강예준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K145-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이현현",
+      "birthDate": "2040-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "이현현은 서울역 등기소에서 유언장 필적 대조·인준 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강예준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K145-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현경",
+      "birthDate": "2010-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최현경은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강예준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K248-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현문",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc"
+      },
+      "birthDate": "2047-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2085,
+          "summary": "강현문은 대합실 당직에서 회랑 정찰 보고·통행 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-강태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K248-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현섭",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc"
+      },
+      "birthDate": "2017-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강현섭은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-강태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K248-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현재",
+      "birthDate": "2047-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2085,
+          "summary": "오현재는 대합실 당직에서 회랑 정찰 보고·통행 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-강태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K248-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송현규",
+      "birthDate": "2017-12-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송현규는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-강태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K428-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준문",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2054-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "강준문은 대합실 당직에서 관문 공개 창구 접수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강지유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K428-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준섭",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2024-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강준섭은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강지유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K428-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오준성",
+      "birthDate": "2054-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "오준성은 대합실 당직에서 관문 공개 창구 접수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강지유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K428-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송준훈",
+      "birthDate": "2024-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송준훈은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강지유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K468-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준솔",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2054-05-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "강준솔은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강달유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K468-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준미",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2024-05-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강준미는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강달유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K468-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태우",
+      "birthDate": "2054-05-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "박태우는 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강달유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K468-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이태윤",
+      "birthDate": "2024-05-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이태윤은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강달유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K508-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태현",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2044-05-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2082,
+          "summary": "강태현은 암사 경비 초소에서 야간 순찰·경비 암호패 교체 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K508-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태영",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2014-05-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강태영은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K508-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤태수",
+      "birthDate": "2044-05-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2082,
+          "summary": "윤태수는 암사 경비 초소에서 야간 순찰·경비 암호패 교체 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K508-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한태경",
+      "birthDate": "2014-05-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한태경은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K548-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태완",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2072-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2110,
+          "summary": "강태완은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K548-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태훈",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2042-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "강태훈은 서울역 등기소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K548-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태범",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2012-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강태범은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K548-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오태문",
+      "birthDate": "2072-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2110,
+          "summary": "오태문은 서울역 등기소에서 방역 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K548-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송태연",
+      "birthDate": "2042-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "송태연은 서울역 등기소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K548-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태규",
+      "birthDate": "2012-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조태규는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강바유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K588-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태욱",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2050-10-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2088,
+          "summary": "강태욱은 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강금유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K588-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태란",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2020-10-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강태란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강금유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K588-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재진",
+      "birthDate": "2050-10-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2088,
+          "summary": "박재진은 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강금유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K588-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이재민",
+      "birthDate": "2020-10-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이재민은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강금유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K628-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재석",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2050-08-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2088,
+          "summary": "강재석은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강솔준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K628-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재준",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2020-08-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강재준은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강솔준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K628-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤재진",
+      "birthDate": "2050-08-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2088,
+          "summary": "윤재진은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강솔준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K628-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한재원",
+      "birthDate": "2020-08-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한재원은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강솔준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K668-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재은",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2056-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "강재은은 대합실 당직에서 관문 교대 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강숲유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K668-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재연",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2026-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강재연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강숲유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K668-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오재완",
+      "birthDate": "2056-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "오재완은 대합실 당직에서 관문 교대 조정 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강숲유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K668-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송재진",
+      "birthDate": "2026-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송재진은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-강숲유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K707-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재찬",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2038-10-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "강재찬은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-강마유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K707-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재혁",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2008-10-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강재혁은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-강마유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K707-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김재문",
+      "birthDate": "2038-10-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "김재문은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-강마유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K707-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재도",
+      "birthDate": "2008-10-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박재도는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-강마유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K784-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도진",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2059-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2097,
+          "summary": "강도진은 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K784-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도현",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2029-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2067,
+          "summary": "강도현은 여의도 금고 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K784-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도영",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "1999-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도영은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K784-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤도우",
+      "birthDate": "2059-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2097,
+          "summary": "윤도우는 여의도 금고 당직에서 금고 당직 교대·기록 인수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K784-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한도경",
+      "birthDate": "2029-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2067,
+          "summary": "한도경은 여의도 금고 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K784-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도윤",
+      "birthDate": "1999-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도윤은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-강별유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K823-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도완",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2067-11-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2105,
+          "summary": "강도완은 대합실 당직에서 공동구 당직 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K823-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도훈",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2037-11-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "강도훈은 대합실 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K823-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도범",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2007-11-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도범은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K823-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임도완",
+      "birthDate": "2067-11-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2105,
+          "summary": "임도완은 대합실 당직에서 공동구 당직 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K823-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오도찬",
+      "birthDate": "2037-11-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "오도찬은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K823-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도은",
+      "birthDate": "2007-11-30",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송도은은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-강다유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K861-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도욱",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2040-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "강도욱은 대합실 당직에서 증인 공개 대질·증언 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강라준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K861-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도란",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2010-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도란은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강라준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K861-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도혁",
+      "birthDate": "2040-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "송도혁은 대합실 당직에서 증인 공개 대질·증언 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강라준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K861-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조도란",
+      "birthDate": "2010-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조도란은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-강라준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K900-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민석",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2068-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "강민석은 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K900-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민준",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2038-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "강민준은 제기동 의무소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K900-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민호",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2008-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강민호는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K900-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민희",
+      "birthDate": "2068-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "박민희는 제기동 의무소에서 약재 관리 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K900-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이민연",
+      "birthDate": "2038-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "이민연은 제기동 의무소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K900-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민찬",
+      "birthDate": "2008-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최민찬은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-강파유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K937-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민수",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2052-02-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "강민수는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강늘유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K937-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민은",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c720-second"
+      },
+      "birthDate": "2022-02-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강민은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강늘유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K937-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이민문",
+      "birthDate": "2052-02-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "이민문은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강늘유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K937-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민솔",
+      "birthDate": "2022-02-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최민솔은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-강늘유-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K975-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민재",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2061-01-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2099,
+          "summary": "강민재는 암사 경비 초소에서 능선 초계·매복 흔적 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K975-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민찬",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2031-01-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2069,
+          "summary": "강민찬은 암사 경비 초소에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K975-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민혁",
+      "lineage": {
+        "surname": "강",
+        "bongwan": "진주",
+        "clan": "ac15-c9c4-c8fc-agreed-c900-second"
+      },
+      "birthDate": "2001-01-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강민혁은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K975-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정민솔",
+      "birthDate": "2061-01-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2099,
+          "summary": "정민솔은 암사 경비 초소에서 능선 초계·매복 흔적 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K975-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤민훈",
+      "birthDate": "2031-01-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2069,
+          "summary": "윤민훈은 암사 경비 초소에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K975-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "한민재",
+      "birthDate": "2001-01-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한민재는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-강바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K029-P-01:K029:biological",
+      "from": "FH-K029-P-01",
+      "to": "K029",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K029-P-02:FH-K029-P-01:biological",
+      "from": "FH-K029-P-02",
+      "to": "FH-K029-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K029-M-01:K029:biological",
+      "from": "FH-K029-M-01",
+      "to": "K029",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K029-M-02:FH-K029-M-01:biological",
+      "from": "FH-K029-M-02",
+      "to": "FH-K029-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강민서-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K145-P-01:K145:biological",
+      "from": "FH-K145-P-01",
+      "to": "K145",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K145-P-02:FH-K145-P-01:biological",
+      "from": "FH-K145-P-02",
+      "to": "FH-K145-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K145-M-01:K145:biological",
+      "from": "FH-K145-M-01",
+      "to": "K145",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K145-M-02:FH-K145-M-01:biological",
+      "from": "FH-K145-M-02",
+      "to": "FH-K145-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K248-P-01:K248:biological",
+      "from": "FH-K248-P-01",
+      "to": "K248",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K248-P-02:FH-K248-P-01:biological",
+      "from": "FH-K248-P-02",
+      "to": "FH-K248-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K248-M-01:K248:biological",
+      "from": "FH-K248-M-01",
+      "to": "K248",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K248-M-02:FH-K248-M-01:biological",
+      "from": "FH-K248-M-02",
+      "to": "FH-K248-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-강태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K428-P-01:K428:biological",
+      "from": "FH-K428-P-01",
+      "to": "K428",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K428-P-02:FH-K428-P-01:biological",
+      "from": "FH-K428-P-02",
+      "to": "FH-K428-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K428-M-01:K428:biological",
+      "from": "FH-K428-M-01",
+      "to": "K428",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K428-M-02:FH-K428-M-01:biological",
+      "from": "FH-K428-M-02",
+      "to": "FH-K428-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강지유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K468-P-01:K468:biological",
+      "from": "FH-K468-P-01",
+      "to": "K468",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K468-P-02:FH-K468-P-01:biological",
+      "from": "FH-K468-P-02",
+      "to": "FH-K468-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K468-M-01:K468:biological",
+      "from": "FH-K468-M-01",
+      "to": "K468",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K468-M-02:FH-K468-M-01:biological",
+      "from": "FH-K468-M-02",
+      "to": "FH-K468-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강달유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K508-P-01:K508:biological",
+      "from": "FH-K508-P-01",
+      "to": "K508",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K508-P-02:FH-K508-P-01:biological",
+      "from": "FH-K508-P-02",
+      "to": "FH-K508-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K508-M-01:K508:biological",
+      "from": "FH-K508-M-01",
+      "to": "K508",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K508-M-02:FH-K508-M-01:biological",
+      "from": "FH-K508-M-02",
+      "to": "FH-K508-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K548-P-01:K548:biological",
+      "from": "FH-K548-P-01",
+      "to": "K548",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K548-P-02:FH-K548-P-01:biological",
+      "from": "FH-K548-P-02",
+      "to": "FH-K548-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K548-P-03:FH-K548-P-02:biological",
+      "from": "FH-K548-P-03",
+      "to": "FH-K548-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K548-M-01:K548:biological",
+      "from": "FH-K548-M-01",
+      "to": "K548",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K548-M-02:FH-K548-M-01:biological",
+      "from": "FH-K548-M-02",
+      "to": "FH-K548-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K548-M-03:FH-K548-M-02:biological",
+      "from": "FH-K548-M-03",
+      "to": "FH-K548-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강바유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K588-P-01:K588:biological",
+      "from": "FH-K588-P-01",
+      "to": "K588",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K588-P-02:FH-K588-P-01:biological",
+      "from": "FH-K588-P-02",
+      "to": "FH-K588-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K588-M-01:K588:biological",
+      "from": "FH-K588-M-01",
+      "to": "K588",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K588-M-02:FH-K588-M-01:biological",
+      "from": "FH-K588-M-02",
+      "to": "FH-K588-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강금유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K628-P-01:K628:biological",
+      "from": "FH-K628-P-01",
+      "to": "K628",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K628-P-02:FH-K628-P-01:biological",
+      "from": "FH-K628-P-02",
+      "to": "FH-K628-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K628-M-01:K628:biological",
+      "from": "FH-K628-M-01",
+      "to": "K628",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K628-M-02:FH-K628-M-01:biological",
+      "from": "FH-K628-M-02",
+      "to": "FH-K628-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강솔준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K668-P-01:K668:biological",
+      "from": "FH-K668-P-01",
+      "to": "K668",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K668-P-02:FH-K668-P-01:biological",
+      "from": "FH-K668-P-02",
+      "to": "FH-K668-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K668-M-01:K668:biological",
+      "from": "FH-K668-M-01",
+      "to": "K668",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K668-M-02:FH-K668-M-01:biological",
+      "from": "FH-K668-M-02",
+      "to": "FH-K668-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-강숲유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K707-P-01:K707:biological",
+      "from": "FH-K707-P-01",
+      "to": "K707",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K707-P-02:FH-K707-P-01:biological",
+      "from": "FH-K707-P-02",
+      "to": "FH-K707-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K707-M-01:K707:biological",
+      "from": "FH-K707-M-01",
+      "to": "K707",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K707-M-02:FH-K707-M-01:biological",
+      "from": "FH-K707-M-02",
+      "to": "FH-K707-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-강마유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K784-P-01:K784:biological",
+      "from": "FH-K784-P-01",
+      "to": "K784",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K784-P-02:FH-K784-P-01:biological",
+      "from": "FH-K784-P-02",
+      "to": "FH-K784-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K784-P-03:FH-K784-P-02:biological",
+      "from": "FH-K784-P-03",
+      "to": "FH-K784-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K784-M-01:K784:biological",
+      "from": "FH-K784-M-01",
+      "to": "K784",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K784-M-02:FH-K784-M-01:biological",
+      "from": "FH-K784-M-02",
+      "to": "FH-K784-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K784-M-03:FH-K784-M-02:biological",
+      "from": "FH-K784-M-03",
+      "to": "FH-K784-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-강별유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K823-P-01:K823:biological",
+      "from": "FH-K823-P-01",
+      "to": "K823",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K823-P-02:FH-K823-P-01:biological",
+      "from": "FH-K823-P-02",
+      "to": "FH-K823-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K823-P-03:FH-K823-P-02:biological",
+      "from": "FH-K823-P-03",
+      "to": "FH-K823-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K823-M-01:K823:biological",
+      "from": "FH-K823-M-01",
+      "to": "K823",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K823-M-02:FH-K823-M-01:biological",
+      "from": "FH-K823-M-02",
+      "to": "FH-K823-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K823-M-03:FH-K823-M-02:biological",
+      "from": "FH-K823-M-03",
+      "to": "FH-K823-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-강다유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K861-P-01:K861:biological",
+      "from": "FH-K861-P-01",
+      "to": "K861",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K861-P-02:FH-K861-P-01:biological",
+      "from": "FH-K861-P-02",
+      "to": "FH-K861-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K861-M-01:K861:biological",
+      "from": "FH-K861-M-01",
+      "to": "K861",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K861-M-02:FH-K861-M-01:biological",
+      "from": "FH-K861-M-02",
+      "to": "FH-K861-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강라준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K900-P-01:K900:biological",
+      "from": "FH-K900-P-01",
+      "to": "K900",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K900-P-02:FH-K900-P-01:biological",
+      "from": "FH-K900-P-02",
+      "to": "FH-K900-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K900-P-03:FH-K900-P-02:biological",
+      "from": "FH-K900-P-03",
+      "to": "FH-K900-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K900-M-01:K900:biological",
+      "from": "FH-K900-M-01",
+      "to": "K900",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K900-M-02:FH-K900-M-01:biological",
+      "from": "FH-K900-M-02",
+      "to": "FH-K900-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K900-M-03:FH-K900-M-02:biological",
+      "from": "FH-K900-M-03",
+      "to": "FH-K900-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-강파유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K937-P-01:K937:biological",
+      "from": "FH-K937-P-01",
+      "to": "K937",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K937-P-02:FH-K937-P-01:biological",
+      "from": "FH-K937-P-02",
+      "to": "FH-K937-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K937-M-01:K937:biological",
+      "from": "FH-K937-M-01",
+      "to": "K937",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K937-M-02:FH-K937-M-01:biological",
+      "from": "FH-K937-M-02",
+      "to": "FH-K937-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-강늘유-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K975-P-01:K975:biological",
+      "from": "FH-K975-P-01",
+      "to": "K975",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K975-P-02:FH-K975-P-01:biological",
+      "from": "FH-K975-P-02",
+      "to": "FH-K975-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K975-P-03:FH-K975-P-02:biological",
+      "from": "FH-K975-P-03",
+      "to": "FH-K975-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K975-M-01:K975:biological",
+      "from": "FH-K975-M-01",
+      "to": "K975",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K975-M-02:FH-K975-M-01:biological",
+      "from": "FH-K975-M-02",
+      "to": "FH-K975-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K975-M-03:FH-K975-M-02:biological",
+      "from": "FH-K975-M-03",
+      "to": "FH-K975-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-강바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

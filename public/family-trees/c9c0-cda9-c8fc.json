@@ -1,0 +1,2045 @@
+{
+  "clanId": "c9c0-cda9-c8fc",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K128",
+      "personId": "K128",
+      "kind": "person",
+      "name": "지목현",
+      "birthDate": "2078-07-15",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K128"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-지목현-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0129",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K150",
+      "personId": "K150",
+      "kind": "person",
+      "name": "지서윤",
+      "birthDate": "2096-09-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K150"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 서울역 문서고 제습 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0151",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K158",
+      "personId": "K158",
+      "kind": "person",
+      "name": "지한솔",
+      "birthDate": "2095-02-05",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K158"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0159",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K200",
+      "personId": "K200",
+      "kind": "person",
+      "name": "지윤재",
+      "birthDate": "2091-09-11",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K200"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0201",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K208",
+      "personId": "K208",
+      "kind": "person",
+      "name": "지마루",
+      "birthDate": "2090-03-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K208"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0209",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K1017",
+      "personId": "K1017",
+      "kind": "person",
+      "name": "지연희",
+      "birthDate": "2100-03-17",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1017"
+        },
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "성명: 지연희 (Ji Yeonhee)",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-1017",
+      "affiliation": {
+        "kind": "unaffiliated",
+        "name": "무소속"
+      }
+    },
+    {
+      "id": "FH-K128-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승석",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2048-07-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "지승석은 암사 경비 초소에서 행정·군사 전갈 봉함 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-지목현-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K128-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승준",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2018-07-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "지승준은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-지목현-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K128-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승찬",
+      "birthDate": "2048-07-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "오승찬은 암사 경비 초소에서 행정·군사 전갈 봉함 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-지목현-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K128-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승욱",
+      "birthDate": "2018-07-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송승욱은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-지목현-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K150-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승호",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2066-09-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "지승호는 신정 차량기지에서 문서고 제습기 습도·필터 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K150-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승민",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2036-09-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "지승민은 신정 차량기지에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K150-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승원",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2006-09-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "지승원은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K150-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승도",
+      "birthDate": "2066-09-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "강승도는 신정 차량기지에서 문서고 제습기 습도·필터 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K150-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임현진",
+      "birthDate": "2036-09-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "임현진은 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K150-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승란",
+      "birthDate": "2006-09-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오승란은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지서윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K158-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승진",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2065-02-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "지승진은 신정 차량기지에서 서고 함 온도·열쇠 교대 감독 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K158-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승현",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2035-02-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "지승현은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K158-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승영",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2005-02-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "지승영은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K158-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현정",
+      "birthDate": "2065-02-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "최현정은 신정 차량기지에서 서고 함 온도·열쇠 교대 감독 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K158-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현윤",
+      "birthDate": "2035-02-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "정현윤은 신정 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K158-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤승도",
+      "birthDate": "2005-02-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤승도는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-지한솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K200-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승수",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2061-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2099,
+          "summary": "지승수는 신정 차량기지에서 제빙기 압축 온도·부품 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K200-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승은",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2031-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2069,
+          "summary": "지승은은 신정 차량기지에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K200-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승연",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2001-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "지승연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K200-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현우",
+      "birthDate": "2061-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2099,
+          "summary": "오현우는 신정 차량기지에서 제빙기 압축 온도·부품 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K200-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송현현",
+      "birthDate": "2031-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2069,
+          "summary": "송현현은 신정 차량기지에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K200-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현우",
+      "birthDate": "2001-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조현우는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지윤재-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K208-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승정",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2060-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "지승정은 신정 차량기지에서 냉동기지 전력 배분·충전 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K208-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승아",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2030-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "지승아는 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K208-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승희",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2000-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "지승희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K208-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현연",
+      "birthDate": "2060-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "윤현연은 신정 차량기지에서 냉동기지 전력 배분·충전 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K208-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한현은",
+      "birthDate": "2030-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "한현은은 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K208-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현정",
+      "birthDate": "2000-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강현정은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-지마루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1017-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승규",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2070-03-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2108,
+          "summary": "지승규는 2119년 겨울 서울 외곽에서 피난해 왔다에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1017-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승완",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2040-03-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "지승완은 2119년 겨울 서울 외곽에서 피난해 왔다에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1017-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "지승훈",
+      "lineage": {
+        "surname": "지",
+        "bongwan": "충주",
+        "clan": "c9c0-cda9-c8fc"
+      },
+      "birthDate": "2010-03-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "지승훈은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1017-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송민찬",
+      "birthDate": "2070-03-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2108,
+          "summary": "송민찬은 2119년 겨울 서울 외곽에서 피난해 왔다에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1017-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조서준",
+      "birthDate": "2040-03-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "조서준은 2119년 겨울 서울 외곽에서 피난해 왔다에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1017-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김서준",
+      "birthDate": "2010-03-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김서준은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-지연희-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K128-P-01:K128:biological",
+      "from": "FH-K128-P-01",
+      "to": "K128",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K128-P-02:FH-K128-P-01:biological",
+      "from": "FH-K128-P-02",
+      "to": "FH-K128-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K128-M-01:K128:biological",
+      "from": "FH-K128-M-01",
+      "to": "K128",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K128-M-02:FH-K128-M-01:biological",
+      "from": "FH-K128-M-02",
+      "to": "FH-K128-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-지목현-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K150-P-01:K150:biological",
+      "from": "FH-K150-P-01",
+      "to": "K150",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K150-P-02:FH-K150-P-01:biological",
+      "from": "FH-K150-P-02",
+      "to": "FH-K150-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K150-P-03:FH-K150-P-02:biological",
+      "from": "FH-K150-P-03",
+      "to": "FH-K150-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K150-M-01:K150:biological",
+      "from": "FH-K150-M-01",
+      "to": "K150",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K150-M-02:FH-K150-M-01:biological",
+      "from": "FH-K150-M-02",
+      "to": "FH-K150-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K150-M-03:FH-K150-M-02:biological",
+      "from": "FH-K150-M-03",
+      "to": "FH-K150-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지서윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K158-P-01:K158:biological",
+      "from": "FH-K158-P-01",
+      "to": "K158",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K158-P-02:FH-K158-P-01:biological",
+      "from": "FH-K158-P-02",
+      "to": "FH-K158-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K158-P-03:FH-K158-P-02:biological",
+      "from": "FH-K158-P-03",
+      "to": "FH-K158-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K158-M-01:K158:biological",
+      "from": "FH-K158-M-01",
+      "to": "K158",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K158-M-02:FH-K158-M-01:biological",
+      "from": "FH-K158-M-02",
+      "to": "FH-K158-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K158-M-03:FH-K158-M-02:biological",
+      "from": "FH-K158-M-03",
+      "to": "FH-K158-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-지한솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K200-P-01:K200:biological",
+      "from": "FH-K200-P-01",
+      "to": "K200",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K200-P-02:FH-K200-P-01:biological",
+      "from": "FH-K200-P-02",
+      "to": "FH-K200-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K200-P-03:FH-K200-P-02:biological",
+      "from": "FH-K200-P-03",
+      "to": "FH-K200-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K200-M-01:K200:biological",
+      "from": "FH-K200-M-01",
+      "to": "K200",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K200-M-02:FH-K200-M-01:biological",
+      "from": "FH-K200-M-02",
+      "to": "FH-K200-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K200-M-03:FH-K200-M-02:biological",
+      "from": "FH-K200-M-03",
+      "to": "FH-K200-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지윤재-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K208-P-01:K208:biological",
+      "from": "FH-K208-P-01",
+      "to": "K208",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K208-P-02:FH-K208-P-01:biological",
+      "from": "FH-K208-P-02",
+      "to": "FH-K208-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K208-P-03:FH-K208-P-02:biological",
+      "from": "FH-K208-P-03",
+      "to": "FH-K208-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K208-M-01:K208:biological",
+      "from": "FH-K208-M-01",
+      "to": "K208",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K208-M-02:FH-K208-M-01:biological",
+      "from": "FH-K208-M-02",
+      "to": "FH-K208-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K208-M-03:FH-K208-M-02:biological",
+      "from": "FH-K208-M-03",
+      "to": "FH-K208-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-지마루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1017-P-01:K1017:biological",
+      "from": "FH-K1017-P-01",
+      "to": "K1017",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1017-P-02:FH-K1017-P-01:biological",
+      "from": "FH-K1017-P-02",
+      "to": "FH-K1017-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1017-P-03:FH-K1017-P-02:biological",
+      "from": "FH-K1017-P-03",
+      "to": "FH-K1017-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1017-M-01:K1017:biological",
+      "from": "FH-K1017-M-01",
+      "to": "K1017",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1017-M-02:FH-K1017-M-01:biological",
+      "from": "FH-K1017-M-02",
+      "to": "FH-K1017-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1017-M-03:FH-K1017-M-02:biological",
+      "from": "FH-K1017-M-03",
+      "to": "FH-K1017-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-지연희-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

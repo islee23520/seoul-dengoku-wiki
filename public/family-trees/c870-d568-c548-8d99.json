@@ -1,0 +1,616 @@
+{
+  "clanId": "c870-d568-c548-8d99",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K785",
+      "personId": "K785",
+      "kind": "person",
+      "name": "조빛준",
+      "birthDate": "2075-01-29",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K785"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-조빛준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0785",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K901",
+      "personId": "K901",
+      "kind": "person",
+      "name": "조은준",
+      "birthDate": "2098-03-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K901"
+        },
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생업: 초소 전령 기록·당직 열쇠 인계",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0901",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K785-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조도우",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "함안",
+        "clan": "c870-d568-c548-8d99-agreed-c900-second"
+      },
+      "birthDate": "2045-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2083,
+          "summary": "조도우는 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-조빛준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K785-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조도경",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "함안",
+        "clan": "c870-d568-c548-8d99-agreed-c900-second"
+      },
+      "birthDate": "2015-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조도경은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-조빛준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K785-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한도수",
+      "birthDate": "2045-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2083,
+          "summary": "한도수는 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-조빛준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K785-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도우",
+      "birthDate": "2015-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도우는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-조빛준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K901-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민진",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "함안",
+        "clan": "c870-d568-c548-8d99-agreed-c900-second"
+      },
+      "birthDate": "2068-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "조민진은 신내 환승 당직에서 초소 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K901-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민현",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "함안",
+        "clan": "c870-d568-c548-8d99-agreed-c900-second"
+      },
+      "birthDate": "2038-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "조민현은 신내 환승 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K901-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민영",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "함안",
+        "clan": "c870-d568-c548-8d99-agreed-c900-second"
+      },
+      "birthDate": "2008-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조민영은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K901-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이민정",
+      "birthDate": "2068-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "이민정은 신내 환승 당직에서 초소 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K901-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민혁",
+      "birthDate": "2038-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "최민혁은 신내 환승 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K901-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정민은",
+      "birthDate": "2008-03-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정민은은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조은준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K785-P-01:K785:biological",
+      "from": "FH-K785-P-01",
+      "to": "K785",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K785-P-02:FH-K785-P-01:biological",
+      "from": "FH-K785-P-02",
+      "to": "FH-K785-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K785-M-01:K785:biological",
+      "from": "FH-K785-M-01",
+      "to": "K785",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K785-M-02:FH-K785-M-01:biological",
+      "from": "FH-K785-M-02",
+      "to": "FH-K785-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-조빛준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K901-P-01:K901:biological",
+      "from": "FH-K901-P-01",
+      "to": "K901",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K901-P-02:FH-K901-P-01:biological",
+      "from": "FH-K901-P-02",
+      "to": "FH-K901-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K901-P-03:FH-K901-P-02:biological",
+      "from": "FH-K901-P-03",
+      "to": "FH-K901-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K901-M-01:K901:biological",
+      "from": "FH-K901-M-01",
+      "to": "K901",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K901-M-02:FH-K901-M-01:biological",
+      "from": "FH-K901-M-02",
+      "to": "FH-K901-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K901-M-03:FH-K901-M-02:biological",
+      "from": "FH-K901-M-03",
+      "to": "FH-K901-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조은준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

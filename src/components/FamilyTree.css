@@ -5,6 +5,11 @@
 .family-tree-legend { color: var(--wiki-muted); font-size: 13px; margin-block: 8px; }
 .person-family-tree { min-width: 0; max-width: 100%; }
 .family-tree-node { position: absolute; width: 180px; min-height: 80px; padding: 12px; box-sizing: border-box; border: 1px solid var(--wiki-line); background: var(--wiki-paper); text-align: center; }
+.family-tree-node strong { display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+.person-family-tree .state-flag { inline-size: 1.6rem; }
+.person-data-table .state-flag { inline-size: 1.4rem; vertical-align: middle; }
+.family-tree-neutral { font-size: 11px; line-height: 1.4; color: var(--wiki-muted); border: 1px solid var(--wiki-line); border-radius: 999px; padding: 0 8px; white-space: nowrap; }
+.family-tree-affiliation { font-size: 11px; line-height: 1.4; color: var(--wiki-muted); border: 1px solid var(--wiki-line); border-radius: 999px; padding: 0 8px; white-space: nowrap; }
 .family-tree-node small { display: block; color: var(--wiki-muted); font-size: 12px; margin-top: 4px; }
 .family-tree-current { border: 2px solid var(--wiki-accent); }
 .family-tree-timeline { padding-left: 24px; }

@@ -62,7 +62,7 @@ export default function FamiliesPage() {
           rows={rows}
         />
       </section>
-      <section className="wiki-content mt-8">
+      <section className="wiki-content mt-8" id="non-korean-families">
         <h2>본관을 적용하지 않는 가계</h2>
         <p>기존 가계 이름과 식별자를 유지한다. 인물 링크에서 기록된 가족 관계를 살펴본다.</p>
         <SortableTable

@@ -1,0 +1,1490 @@
+{
+  "clanId": "c815-acbd-c8fc-912d",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K030",
+      "personId": "K030",
+      "kind": "person",
+      "name": "정시우",
+      "birthDate": "2069-05-17",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K030"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 제작원로 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정시우-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0030",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K058",
+      "personId": "K058",
+      "kind": "person",
+      "name": "정하린",
+      "birthDate": "2072-11-16",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K058"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 생명안전 심사관 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-정하린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0058",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K507",
+      "personId": "K507",
+      "kind": "person",
+      "name": "정바준",
+      "birthDate": "2096-05-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K507"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0507",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K667",
+      "personId": "K667",
+      "kind": "person",
+      "name": "정강은",
+      "birthDate": "2070-05-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K667"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정강은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0667",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K745",
+      "personId": "K745",
+      "kind": "person",
+      "name": "정카준",
+      "birthDate": "2093-01-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K745"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0745",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "FH-K030-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승경",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d"
+      },
+      "birthDate": "2039-05-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "정승경은 신정 차량기지에서 펌프 정비·계측 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정시우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K030-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승수",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d"
+      },
+      "birthDate": "2009-05-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정승수는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정시우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K030-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승우",
+      "birthDate": "2039-05-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "강승우는 신정 차량기지에서 펌프 정비·계측 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정시우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K030-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승우",
+      "birthDate": "2009-05-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임승우는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정시우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K058-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승재",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d"
+      },
+      "birthDate": "2042-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "정승재는 대합실 당직에서 안전 표본 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-정하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K058-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승찬",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d"
+      },
+      "birthDate": "2012-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정승찬은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-정하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K058-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조승연",
+      "birthDate": "2042-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "조승연은 대합실 당직에서 안전 표본 심사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-정하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K058-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김승규",
+      "birthDate": "2012-11-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김승규는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-정하린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K507-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정태연",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+      },
+      "birthDate": "2066-05-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "정태연은 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K507-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정태정",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+      },
+      "birthDate": "2036-05-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "정태정은 신정 차량기지에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K507-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정태아",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+      },
+      "birthDate": "2006-05-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정태아는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K507-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "권태희",
+      "lineage": {
+        "surname": "권",
+        "bongwan": "안동",
+        "clan": "ad8c-c548-b3d9"
+      },
+      "birthDate": "2066-05-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "권태희는 신정 차량기지에서 차륜·펌프 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K507-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "권태경",
+      "lineage": {
+        "surname": "권",
+        "bongwan": "안동",
+        "clan": "ad8c-c548-b3d9"
+      },
+      "birthDate": "2036-05-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "권태경은 신정 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K507-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "권태우",
+      "lineage": {
+        "surname": "권",
+        "bongwan": "안동",
+        "clan": "ad8c-c548-b3d9"
+      },
+      "birthDate": "2006-05-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "권태우는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정바준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K667-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정재희",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d"
+      },
+      "birthDate": "2040-05-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "정재희는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정강은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K667-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정재규",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d"
+      },
+      "birthDate": "2010-05-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정재규는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정강은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K667-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임재희",
+      "birthDate": "2040-05-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "임재희는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정강은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K667-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오재규",
+      "birthDate": "2010-05-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오재규는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-정강은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K745-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도준",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+      },
+      "birthDate": "2063-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "정도준은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K745-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도호",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+      },
+      "birthDate": "2033-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "정도호는 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K745-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도민",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "경주",
+        "clan": "c815-acbd-c8fc-912d-agreed-c900-second"
+      },
+      "birthDate": "2003-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정도민은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K745-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도우",
+      "birthDate": "2063-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "이도우는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K745-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최도아",
+      "birthDate": "2033-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "최도아는 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K745-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도원",
+      "birthDate": "2003-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정도원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-정카준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K030-P-01:K030:biological",
+      "from": "FH-K030-P-01",
+      "to": "K030",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K030-P-02:FH-K030-P-01:biological",
+      "from": "FH-K030-P-02",
+      "to": "FH-K030-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K030-M-01:K030:biological",
+      "from": "FH-K030-M-01",
+      "to": "K030",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K030-M-02:FH-K030-M-01:biological",
+      "from": "FH-K030-M-02",
+      "to": "FH-K030-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정시우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K058-P-01:K058:biological",
+      "from": "FH-K058-P-01",
+      "to": "K058",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K058-P-02:FH-K058-P-01:biological",
+      "from": "FH-K058-P-02",
+      "to": "FH-K058-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K058-M-01:K058:biological",
+      "from": "FH-K058-M-01",
+      "to": "K058",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K058-M-02:FH-K058-M-01:biological",
+      "from": "FH-K058-M-02",
+      "to": "FH-K058-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-정하린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K507-P-01:K507:biological",
+      "from": "FH-K507-P-01",
+      "to": "K507",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K507-P-02:FH-K507-P-01:biological",
+      "from": "FH-K507-P-02",
+      "to": "FH-K507-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K507-P-03:FH-K507-P-02:biological",
+      "from": "FH-K507-P-03",
+      "to": "FH-K507-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K507-M-01:K507:biological",
+      "from": "FH-K507-M-01",
+      "to": "K507",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K507-M-02:FH-K507-M-01:biological",
+      "from": "FH-K507-M-02",
+      "to": "FH-K507-M-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K507-M-03:FH-K507-M-02:biological",
+      "from": "FH-K507-M-03",
+      "to": "FH-K507-M-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정바준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K667-P-01:K667:biological",
+      "from": "FH-K667-P-01",
+      "to": "K667",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K667-P-02:FH-K667-P-01:biological",
+      "from": "FH-K667-P-02",
+      "to": "FH-K667-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K667-M-01:K667:biological",
+      "from": "FH-K667-M-01",
+      "to": "K667",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K667-M-02:FH-K667-M-01:biological",
+      "from": "FH-K667-M-02",
+      "to": "FH-K667-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-정강은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K745-P-01:K745:biological",
+      "from": "FH-K745-P-01",
+      "to": "K745",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K745-P-02:FH-K745-P-01:biological",
+      "from": "FH-K745-P-02",
+      "to": "FH-K745-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K745-P-03:FH-K745-P-02:biological",
+      "from": "FH-K745-P-03",
+      "to": "FH-K745-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K745-M-01:K745:biological",
+      "from": "FH-K745-M-01",
+      "to": "K745",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K745-M-02:FH-K745-M-01:biological",
+      "from": "FH-K745-M-02",
+      "to": "FH-K745-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K745-M-03:FH-K745-M-02:biological",
+      "from": "FH-K745-M-03",
+      "to": "FH-K745-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-정카준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

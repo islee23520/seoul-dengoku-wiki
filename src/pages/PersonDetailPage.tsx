@@ -8,7 +8,8 @@ import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
 import type { PersonRightsPermissions, PermissionStatus } from '../personRightsPermissions'
-import { FamilyTree, type FamilyTreeData } from '../components/FamilyTree'
+import type { FamilyTreeData } from '../components/FamilyTree'
+import { nonKoreanFamilyCatalog } from '../generated/nonKoreanFamilyCatalog'
 
 type Relation = { from: string; type: string; to: string; basis: string }
 type ConfirmedHolding = {
@@ -432,11 +433,15 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           <p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p>
           <h1>{detail.name}</h1>
           <p>{detail.stateName || '무소속'} · {detail.title}</p>
-          {detail.clan && (
-            <p className="person-clan-line">
+          {detail.clan ? (
+            <p className="person-clan-line" data-person-clan-id={detail.clan.id}>
               <img src={`${import.meta.env.BASE_URL}${detail.clan.crest.startsWith('/') ? '' : '/'}${detail.clan.crest}`} alt={`${detail.clan.name} 문장`} width="64" height="64" loading="lazy" />
-              <Link to={`/families/${detail.clan.id}`} className="wiki-link">{detail.clan.name}</Link>
+              <Link to={`/families/${detail.clan.id}`} className="wiki-link">{detail.clan.name} 가계도</Link>
             </p>
+          ) : nonKoreanFamilyCatalog.some((family) => family.members.some((member) => member.id === detail.id)) ? (
+            <p className="person-clan-line" data-person-no-clan="non-korean-family">본관 없음 · <Link to="/families#non-korean-families" className="wiki-link">본관을 적용하지 않는 가계</Link></p>
+          ) : (
+            <p className="person-clan-line" data-person-no-clan="true">본관 없음</p>
           )}
         </div>
         <span className="wiki-canon-badge">정본</span>
@@ -462,7 +467,6 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
           {sheet.ok && <GurpsSheet gurps={sheet.sheet} />}
-          {detail.familyTree && <FamilyTree tree={detail.familyTree} />}
           {detail.unit && <section className="gurps-unit">
             <h2>부대</h2>
             <p>{detail.unit.type} · {detail.unit.size}명 · {detail.unit.quality}</p>

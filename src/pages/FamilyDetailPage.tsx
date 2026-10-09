@@ -1,7 +1,27 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { clanFamilyCatalog } from '../generated/clanFamilyCatalog'
 import SortableTable from '../components/SortableTable'
+import { FamilyTree, type FamilyTreeData } from '../components/FamilyTree'
+
+function ClanFamilyTree({ clanId }: { readonly clanId: string }): JSX.Element {
+  const [result, setResult] = useState<{ id: string; tree: FamilyTreeData | null } | null>(null)
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(`${import.meta.env.BASE_URL}family-trees/${encodeURIComponent(clanId)}.json`, { signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) throw new Error('missing clan family tree')
+        const tree = await response.json()
+        if (tree.clanId !== clanId) throw new Error('clan family tree identity mismatch')
+        setResult({ id: clanId, tree })
+      })
+      .catch(() => { if (!controller.signal.aborted) setResult({ id: clanId, tree: null }) })
+    return () => controller.abort()
+  }, [clanId])
+  if (result?.id !== clanId) return <p role="status">가계도를 불러오고 있습니다.</p>
+  if (!result.tree || !result.tree.nodes.length) return <p role="status">기록된 가계도 데이터가 없습니다.</p>
+  return <FamilyTree tree={result.tree} />
+}
 
 export default function FamilyDetailPage() {
   const { clanId } = useParams()
@@ -51,6 +71,10 @@ export default function FamilyDetailPage() {
           headers={['이름', ...(showBranches ? ['가계'] : []), '국가', '생업']}
           rows={rows}
         />
+      </section>
+
+      <section className="wiki-content mt-8" aria-label="가문 가계도">
+        <ClanFamilyTree clanId={family.id} />
       </section>
     </article>
   )

@@ -1,0 +1,1226 @@
+{
+  "clanId": "creative-b780-b3c4-bd09",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K165",
+      "personId": "K165",
+      "kind": "person",
+      "name": "란지호",
+      "birthDate": "2095-07-21",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K165"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 공신 보상 명부 당사자 자리는 고아 명부 시민권 줄로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0166",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K237",
+      "personId": "K237",
+      "kind": "person",
+      "name": "란세온",
+      "birthDate": "2069-06-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K237"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 내부 제보자 자리는 정전 사흘 금고 유지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-란세온-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0238",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K264",
+      "personId": "K264",
+      "kind": "person",
+      "name": "란민준",
+      "birthDate": "2095-05-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K264"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 복무 서명 거부 행자 자리는 고아 명부 줄로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0265",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K291",
+      "personId": "K291",
+      "kind": "person",
+      "name": "란진아",
+      "birthDate": "2067-10-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K291"
+        },
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 의료열차 북문 정비원 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-란진아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0292",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K165-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승석",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2065-07-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "란승석은 보국문 피난 막사에서 공신 보상 사본·배급표 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K165-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승준",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2035-07-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "란승준은 보국문 피난 막사에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K165-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승호",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2005-07-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "란승호는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K165-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승미",
+      "birthDate": "2065-07-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "송승미는 보국문 피난 막사에서 공신 보상 사본·배급표 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K165-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조승솔",
+      "birthDate": "2035-07-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "조승솔은 보국문 피난 막사에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K165-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김현경",
+      "birthDate": "2005-07-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김현경은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-란지호-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K237-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승진",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2039-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "란승진은 여의도 금고 당직에서 위조 화폐 내부 기록·증언 교차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-란세온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K237-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승현",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2009-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "란승현은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-란세온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K237-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송현희",
+      "birthDate": "2039-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "송현희는 여의도 금고 당직에서 위조 화폐 내부 기록·증언 교차 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-란세온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K237-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현완",
+      "birthDate": "2009-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조현완은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-란세온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K264-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승영",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2065-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "란승영은 보국문 피난 막사에서 복무계약 서명 확인·문중 표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K264-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승윤",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2035-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "란승윤은 보국문 피난 막사에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K264-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승우",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2005-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "란승우는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K264-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현솔",
+      "birthDate": "2065-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "박현솔은 보국문 피난 막사에서 복무계약 서명 확인·문중 표 게시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K264-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이현나",
+      "birthDate": "2035-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "이현나는 보국문 피난 막사에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K264-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최준준",
+      "birthDate": "2005-05-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최준준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-란민준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K291-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승경",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2037-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "란승경은 강남역 차량기지에서 의료열차 출격 전 정비 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-란진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K291-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "란승수",
+      "lineage": {
+        "surname": "란",
+        "bongwan": "도봉",
+        "clan": "creative-b780-b3c4-bd09"
+      },
+      "birthDate": "2007-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "란승수는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-란진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K291-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현미",
+      "birthDate": "2037-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "정현미는 강남역 차량기지에서 의료열차 출격 전 정비 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-란진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K291-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현도",
+      "birthDate": "2007-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤현도는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-란진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K165-P-01:K165:biological",
+      "from": "FH-K165-P-01",
+      "to": "K165",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K165-P-02:FH-K165-P-01:biological",
+      "from": "FH-K165-P-02",
+      "to": "FH-K165-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K165-P-03:FH-K165-P-02:biological",
+      "from": "FH-K165-P-03",
+      "to": "FH-K165-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K165-M-01:K165:biological",
+      "from": "FH-K165-M-01",
+      "to": "K165",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K165-M-02:FH-K165-M-01:biological",
+      "from": "FH-K165-M-02",
+      "to": "FH-K165-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K165-M-03:FH-K165-M-02:biological",
+      "from": "FH-K165-M-03",
+      "to": "FH-K165-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-란지호-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K237-P-01:K237:biological",
+      "from": "FH-K237-P-01",
+      "to": "K237",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K237-P-02:FH-K237-P-01:biological",
+      "from": "FH-K237-P-02",
+      "to": "FH-K237-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K237-M-01:K237:biological",
+      "from": "FH-K237-M-01",
+      "to": "K237",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K237-M-02:FH-K237-M-01:biological",
+      "from": "FH-K237-M-02",
+      "to": "FH-K237-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-란세온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K264-P-01:K264:biological",
+      "from": "FH-K264-P-01",
+      "to": "K264",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K264-P-02:FH-K264-P-01:biological",
+      "from": "FH-K264-P-02",
+      "to": "FH-K264-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K264-P-03:FH-K264-P-02:biological",
+      "from": "FH-K264-P-03",
+      "to": "FH-K264-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K264-M-01:K264:biological",
+      "from": "FH-K264-M-01",
+      "to": "K264",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K264-M-02:FH-K264-M-01:biological",
+      "from": "FH-K264-M-02",
+      "to": "FH-K264-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K264-M-03:FH-K264-M-02:biological",
+      "from": "FH-K264-M-03",
+      "to": "FH-K264-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-란민준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K291-P-01:K291:biological",
+      "from": "FH-K291-P-01",
+      "to": "K291",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K291-P-02:FH-K291-P-01:biological",
+      "from": "FH-K291-P-02",
+      "to": "FH-K291-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K291-M-01:K291:biological",
+      "from": "FH-K291-M-01",
+      "to": "K291",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K291-M-02:FH-K291-M-01:biological",
+      "from": "FH-K291-M-02",
+      "to": "FH-K291-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-란진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}
