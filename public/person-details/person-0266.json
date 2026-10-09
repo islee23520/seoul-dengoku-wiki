@@ -3,6 +3,7 @@
   "name": "섭서연",
   "title": "가짜 약 배급 피해자",
   "position": "가짜 약 배급 행자",
+  "characterId": "K265",
   "rank": "행자",
   "commonTier": "T5",
   "occupation": "약품 상자 봉인·투약 명부 검사",
@@ -390,72 +391,395 @@
   },
   "gurps": {
     "id": "K265",
-    "personId": "person-0266",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0266"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S10",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S10",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K265",
+            "name": "섭서연",
+            "url": "/people/person-0266",
+            "state": "S10",
+            "method": "card-lexicon",
+            "role": {
+              "display": "약품 상자 봉인·투약 명부 검사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-10.json",
+                  "pointer": "/content/215/items/0/ko",
+                  "quote": "생업: 약품 상자 봉인·투약 명부 검사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "투약 명부와 상자 봉인을 같은 벽에 붙이고, 봉인 없는 상자는 즉시 격리한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/217/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/215/items/0/ko",
+                    "quote": "생업: 약품 상자 봉인·투약 명부 검사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "투약 명부와 상자 봉인을 같은 벽에 붙이고, 봉인 없는 상자는 즉시 격리한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/215/items/0/ko",
+                    "quote": "생업: 약품 상자 봉인·투약 명부 검사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/217/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/215/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 안국총림 규모",
+              "faction_scale": {
+                "state": "S10",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "창신",
+              "type": "초소 영지",
+              "station": "창신",
+              "state": "S10",
+              "settlement": {
+                "name": "창신 정착지",
+                "type": "정착지",
+                "description": "창신 일대 고정 거점"
+              },
+              "note": "S10 창신 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S10",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K265",
+            "name": "섭서연",
+            "url": "/people/person-0266",
+            "state": "S10",
+            "method": "card-lexicon",
+            "role": {
+              "display": "약품 상자 봉인·투약 명부 검사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-10.json",
+                  "pointer": "/content/215/items/0/ko",
+                  "quote": "생업: 약품 상자 봉인·투약 명부 검사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "투약 명부와 상자 봉인을 같은 벽에 붙이고, 봉인 없는 상자는 즉시 격리한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/217/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/215/items/0/ko",
+                    "quote": "생업: 약품 상자 봉인·투약 명부 검사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/216/text/ko",
+                    "quote": "투약 명부와 상자 봉인을 같은 벽에 붙이고, 봉인 없는 상자는 즉시 격리한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Pharmacy/TL? (Herbal)",
+                "ko": "약재",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/215/items/0/ko",
+                    "quote": "생업: 약품 상자 봉인·투약 명부 검사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/217/text/ko",
+                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/215/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 64,
+              "unspent": 11,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 안국총림 규모",
+              "faction_scale": {
+                "state": "S10",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "창신",
+              "type": "초소 영지",
+              "station": "창신",
+              "state": "S10",
+              "settlement": {
+                "name": "창신 정착지",
+                "type": "정착지",
+                "description": "창신 일대 고정 거점"
+              },
+              "note": "S10 창신 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Pharmacy/TL? (Herbal)",
-        "ko": "약재",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Diplomacy",
-        "ko": "교섭·조정",
-        "level": 12,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 64,
-      "unspent": 11,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

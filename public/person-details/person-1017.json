@@ -3,6 +3,7 @@
   "name": "지연희",
   "title": "독립 전령",
   "position": "독립 전령",
+  "characterId": "K1017",
   "rank": "미등록",
   "commonTier": "T5",
   "occupation": "전령",
@@ -394,54 +395,303 @@
   },
   "gurps": {
     "id": "K1017",
-    "personId": "person-1017",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 12,
-        "cp": 40
-      },
-      "IQ": {
-        "value": 18,
-        "cp": 160
-      },
-      "HT": {
-        "value": 13,
-        "cp": 30
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-1017"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S00",
+    "variants": [
       {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S00",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1017",
+            "name": "지연희",
+            "url": "/people/person-1017",
+            "state": "S00",
+            "method": "card-lexicon",
+            "role": {
+              "display": "전령",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/13/items/5/ko",
+                  "quote": "생업: 전령"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 18,
+                "cp": 160,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/13/items/5/ko",
+                    "quote": "생업: 전령"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/13/items/4/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 18,
+              "Per": 18,
+              "FP": 13,
+              "BasicSpeed": 6.25,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 230,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 238,
+              "unspent": 67,
+              "total": 305
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "한강변 야영지",
+              "camp": {
+                "name": "지연희 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
+      },
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S00",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1017",
+            "name": "지연희",
+            "url": "/people/person-1017",
+            "state": "S00",
+            "method": "card-lexicon",
+            "role": {
+              "display": "전령",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-Unaffiliated.json",
+                  "pointer": "/content/13/items/5/ko",
+                  "quote": "생업: 전령"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 18,
+                "cp": 160,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 13,
+                "cp": 30,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/13/items/5/ko",
+                    "quote": "생업: 전령"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-Unaffiliated.json",
+                    "pointer": "/content/13/items/4/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 18,
+              "Per": 18,
+              "FP": 13,
+              "BasicSpeed": 6.25,
+              "BasicMove": 6,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 230,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 8,
+              "spent": 238,
+              "unspent": 67,
+              "total": 305
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "한강변 야영지",
+              "camp": {
+                "name": "지연희 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 230,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 8,
-      "spent": 238,
-      "unspent": 67,
-      "total": 305
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 18,
-      "Per": 18,
-      "FP": 13,
-      "BasicSpeed": 6.25,
-      "BasicMove": 6,
-      "BasicLift": 20,
-      "Dodge": 9
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

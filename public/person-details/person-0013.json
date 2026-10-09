@@ -3,6 +3,7 @@
   "name": "채온결",
   "title": "영등포 관로 순찰대 조장",
   "position": "영등포 관로 순찰대 조장",
+  "characterId": "K013",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "관로 순찰",
@@ -390,66 +391,383 @@
   },
   "gurps": {
     "id": "K013",
-    "personId": "person-0013",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0013"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S01",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S01",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K013",
+            "name": "채온결",
+            "url": "/people/person-0013",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "관로 순찰",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/171/items/1/ko",
+                  "quote": "생업: 관로 순찰"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/171/items/1/ko",
+                    "quote": "생업: 관로 순찰"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/171/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "영통",
+              "type": "초소 영지",
+              "station": "영통",
+              "state": "S01",
+              "settlement": {
+                "name": "영통 정착지",
+                "type": "정착지",
+                "description": "영통 일대 고정 거점"
+              },
+              "note": "S01 영통 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S01",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K013",
+            "name": "채온결",
+            "url": "/people/person-0013",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "관로 순찰",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/171/items/1/ko",
+                  "quote": "생업: 관로 순찰"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/172/text/ko",
+                    "quote": "순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/171/items/1/ko",
+                    "quote": "생업: 관로 순찰"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/170/text/ko",
+                    "quote": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/173/text/ko",
+                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/171/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "영통",
+              "type": "초소 영지",
+              "station": "영통",
+              "state": "S01",
+              "settlement": {
+                "name": "영통 정착지",
+                "type": "정착지",
+                "description": "영통 일대 고정 거점"
+              },
+              "note": "S01 영통 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Shield",
-        "ko": "방패술",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 80,
-      "unspent": 0,
-      "total": 80
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

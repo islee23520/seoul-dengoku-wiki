@@ -1,378 +1,154 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { stateCatalog } from '../generated/stateCatalog'
 import { peopleCatalog } from '../generated/peopleCatalog'
-import { characterDraftExport } from './characterDraftExport'
-import gurpsCast from '../../lore/name-pools/gurps-cast.json'
+import { LEGACY_REVISIONS, ORIGINAL_CAPABILITIES, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
+import { characterDraftExport, draftPersonalContext, draftProblems, emptyCharacterDraft, legacyRevision, projectedDraftLegacy } from './characterDraftExport'
+import type { Assessment, LegacyStore, PersonalKey } from './characterDraftExport'
 import './CharacterDraftPage.css'
-import { ADVANTAGES, DISADVANTAGES, QUIRKS, BACKGROUNDS, APPEARANCES, AMBITIONS } from '../data/gurps-options'
 
-type Attr = 'ST' | 'DX' | 'IQ' | 'HT'
-type GurpsEntry = { name: string; url: string; attributes: Record<Attr, { value: number }>; cp: { total: number } }
-const gurpsPeople = (gurpsCast as { people: GurpsEntry[] }).people
-
-interface GurmpsSheet {
-  name: string; state: string; position: string; rank: string; occupation: string
-  gender: string; birth: string; bongwan: string
-  attributes: Record<Attr, number>
-  cp: number; tier: string
-  sourceGurps: GurpsEntry | null
-  selectedAdvantages: string[]; selectedDisadvantages: string[]
-  selectedQuirks: string[]; selectedBackground: string
-  selectedAppearance: string; selectedAmbition: string
-  aiKey: string; aiModel: string; aiGenerating: boolean; aiMessage: string
-}
-
-const DEFAULT: GurmpsSheet = {
-  name: '', state: '', position: '', rank: '', occupation: '', gender: '', birth: '', bongwan: '',
-  attributes: { ST: 10, DX: 10, IQ: 10, HT: 10 },
-  cp: 100, tier: '일반', sourceGurps: null,
-  selectedAdvantages: [], selectedDisadvantages: [], selectedQuirks: [],
-  selectedBackground: '', selectedAppearance: '', selectedAmbition: '',
-  aiKey: '', aiModel: 'gpt-4o-mini', aiGenerating: false, aiMessage: ''
-}
-
-const CP_COST: Record<number, number> = { 7: -70, 8: -50, 9: -30, 10: 0, 11: 10, 12: 20, 13: 30, 14: 45, 15: 60, 16: 80, 17: 100, 18: 125, 19: 150, 20: 175 }
-
-function toggleItem(list: string[], id: string): string[] {
-  return list.includes(id) ? list.filter(x => x !== id) : [...list, id]
-}
-const STATE_OPTIONS = [...stateCatalog.map(({ id, name }) => ({ id, name })), { id: '', name: '무소속' } ]
-
-const STATE_POSITIONS: Record<string, string[]> = {
-  S01: ['군주', '본부장', '구역장', '당직장', '주사'],
-  S02: ['위원장', '상임이사', '이사', '감사', '조합원'],
-  S03: ['회장', '사장', '전무', '부장', '대리'],
-  S04: ['당회장', '장로', '권사', '집사', '교사'],
-  S05: ['사령관', '참모장', '대대장', '중대장', '병장'],
-  S06: ['대통령', '장관', '차관', '국장', '주사'],
-  S07: ['역장', '본부장', '구역장', '당직장', '주사'],
-  S08: ['원장', '심사관', '보존관', '기술원', '출입자'],
-  S09: ['의장', '부회장', '전무', '부장', '직원'],
-  S10: ['방장', '총무원장', '주지', '스님', '신도'],
-  S11: ['회장', '사장', '전무', '부장', '대리'],
-  S12: ['사장', '배차장', '반장', '서기', '호송원'],
-  S13: ['단장', '전문의', '수련의', '의무원', '회원'],
-  S14: ['사령관', '참모장', '대대장', '중대장', '병장'],
-  S15: ['대주교', '신부', '수사', '부제', '교우'],
-  S16: ['위원장', '부위원장', '본부장', '지부장', '조합원'],
-  '': ['무소속'],
-}
-
-const OCCUPATION_OPTIONS = [
-  '정수 당직', '갑문 당직', '차량 정비', '장비 수리', '궤도 관리',
-  '물 계약', '배급 서기', '경비 당직', '호송 인원', '의료 진료',
-  '약재 조제', '명부 관리', '기록 관리', '교육 담당', '통행 관리',
-  '수문 조작', '설비 점검', '규격 검사', '창고 관리', '연락 당직',
-  '경작', '사냥', '채집', '제조', '운송', '무역', '정보 수집',
-]
-
-
-export default function CharacterDraftPage() {
+export default function CharacterDraftPage({ legacyStore }: { readonly legacyStore?: LegacyStore } = {}) {
   const [searchParams] = useSearchParams()
-  const [sheet, setSheet] = useState<GurmpsSheet>(DEFAULT)
-
-  const characterList = peopleCatalog.map(person => ({ id: person.id, name: person.name, state: person.stateName }))
-  const [searchQuery, setSearchQuery] = useState('')
+  const [sheet, setSheet] = useState(emptyCharacterDraft)
+  const [revision, setRevision] = useState('')
   const [selectedCharId, setSelectedCharId] = useState('')
-  const [loadingChar, setLoadingChar] = useState(false)
-  const [loadedCharId, setLoadedCharId] = useState('')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [loadedSelection, setLoadedSelection] = useState('')
+  const [loading, setLoading] = useState(false)
   const [loadError, setLoadError] = useState('')
-  const canExport = !loadingChar && loadedCharId === selectedCharId
-
-
-  
-
-  const filteredCharacters = useMemo(() => {
-    if (!searchQuery.trim()) return characterList
+  const [exportError, setExportError] = useState('')
+  const selectionKey = `${revision}:${selectedCharId}`
+  const problems = draftProblems(sheet)
+  const canExport = Boolean(revision) && !loading && (!selectedCharId || loadedSelection === selectionKey) && problems.length === 0
+  const characters = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
-    return characterList.filter(c =>
-      c.name.toLowerCase().includes(q) || c.state?.toLowerCase().includes(q)
-    )
-  }, [characterList, searchQuery])
+    return peopleCatalog.filter(person => !q || person.name.toLowerCase().includes(q) || person.stateName.toLowerCase().includes(q))
+  }, [searchQuery])
 
   useEffect(() => {
-    const id = selectedCharId
-    const controller = new AbortController()
-    setLoadedCharId('')
-    setLoadError('')
-    setSheet(DEFAULT)
-    if (!id) { setLoadingChar(false); return }
-    setLoadingChar(true)
-    void (async () => {
-    try {
-      const res = await fetch(`${import.meta.env.BASE_URL}person-details/${encodeURIComponent(id)}.json`, { signal: controller.signal })
-      if (!res.ok) throw new Error('인물 정보를 불러오지 못했습니다.')
-      const data = await res.json()
-      if (controller.signal.aborted) return
-      const expected = peopleCatalog.find(person => person.id === id)
-      if (data.id !== id || data.name !== expected?.name) throw new Error('인물 정보의 ID와 이름이 일치하지 않습니다.')
-      const gurps = gurpsPeople.find(person => person.url === `/people/${id}` && person.name === data.name)
-      // Populate the form with loaded data
-      setSheet(prev => ({
-        ...prev,
-        sourceGurps: gurps ?? null,
-        name: data.name || '',
-        state: data.state || '',
-        position: data.role?.display || data.position || '',
-        rank: data.rank || '',
-        gender: data.gender || '',
-        occupation: data.occupation || '',
-        selectedAdvantages: [],
-        selectedDisadvantages: [],
-        selectedQuirks: [],
-        selectedBackground: '',
-        selectedAppearance: '',
-        selectedAmbition: '',
-      }))
-      // Set attributes if available
-      if (gurps) {
-        setSheet(prev => ({
-          ...prev,
-          attributes: {
-            ST: gurps.attributes.ST.value,
-            DX: gurps.attributes.DX.value,
-            IQ: gurps.attributes.IQ.value,
-            HT: gurps.attributes.HT.value,
-          },
-          cp: gurps.cp.total,
-        }))
-      }
-      setLoadedCharId(id)
-    } catch (e) {
-      if (!controller.signal.aborted) setLoadError(e instanceof Error ? e.message : '인물 조회 실패')
-    } finally {
-      if (!controller.signal.aborted) setLoadingChar(false)
-    }
-    })()
-    return () => controller.abort()
-  }, [selectedCharId])
-
-  useEffect(() => {
-    const id = searchParams.get('person')
-    if (id && peopleCatalog.some(person => person.id === id)) {
-      setSelectedCharId(id)
-    }
+    const person = searchParams.get('person')
+    if (person && peopleCatalog.some(item => item.id === person)) setSelectedCharId(person)
   }, [searchParams])
 
-  const attrCP = useMemo(() => Object.values(sheet.attributes).reduce((s, v) => s + (CP_COST[v] || 0), 0), [sheet.attributes])
-  const advCP = useMemo(() => sheet.selectedAdvantages.reduce((s, id) => s + (ADVANTAGES.find(a => a.id === id)?.cp || 0), 0), [sheet.selectedAdvantages])
-  const disCP = useMemo(() => sheet.selectedDisadvantages.reduce((s, id) => s + (DISADVANTAGES.find(d => d.id === id)?.cp || 0), 0), [sheet.selectedDisadvantages])
-  const totalCP = attrCP + advCP + disCP
+  useEffect(() => {
+    const controller = new AbortController()
+    setLoadedSelection(''); setLoadError(''); setExportError(''); setSheet(emptyCharacterDraft())
+    if (!selectedCharId || !revision) { setLoading(false); return () => controller.abort() }
+    setLoading(true)
+    void (async () => {
+      try {
+        const expected = peopleCatalog.find(person => person.id === selectedCharId)
+        const res = await fetch(`${import.meta.env.BASE_URL}person-details/${encodeURIComponent(selectedCharId)}.json`, { signal: controller.signal })
+        if (!res.ok) throw new Error('인물 정보를 불러오지 못했습니다.')
+        const data: unknown = await res.json()
+        if (!data || typeof data !== 'object' || !('id' in data) || data.id !== selectedCharId || !('name' in data) || data.name !== expected?.name) throw new Error('인물 정보의 ID와 이름이 일치하지 않습니다.')
+        const legacy = legacyStore ? legacyStore.read(legacyRevision(revision), selectedCharId) : projectedDraftLegacy(data, revision)
+        if (legacy.person.name !== expected?.name) throw new Error('원본과 인물 목록의 이름이 일치하지 않습니다.')
+        const personal = draftPersonalContext(data)
+        if (controller.signal.aborted) return
+        setSheet({ ...emptyCharacterDraft(), ...personal, legacy })
+        setLoadedSelection(selectionKey)
+      } catch (error) {
+        if (!controller.signal.aborted) setLoadError(error instanceof Error ? error.message : '인물 조회 실패')
+      } finally {
+        if (!controller.signal.aborted) setLoading(false)
+      }
+    })()
+    return () => controller.abort()
+  }, [selectedCharId, revision, legacyStore, selectionKey])
 
-  const set = useCallback((key: string, value: unknown) => {
-    setSheet(prev => ({ ...prev, [key]: value }) as GurmpsSheet)
-  }, [])
-
-  const setAttr = useCallback((attr: Attr, value: number) => {
-    setSheet(prev => ({ ...prev, attributes: { ...prev.attributes, [attr]: value } }))
-  }, [])
-
-  const aiGenerate = useCallback(async () => {
+  function setPersonal(key: PersonalKey, value: string) {
+    setSheet(previous => ({ ...previous, [key]: value }))
+  }
+  function setRating(index: number, patch: Partial<Omit<Assessment, 'capabilityId' | 'reviewState'>>) {
+    setSheet(previous => ({ ...previous, originalRatings: previous.originalRatings.map((item, i) => i === index ? { ...item, ...patch } : item) }))
+  }
+  function download() {
     if (!canExport) return
-    const prompt = `다음 조건에 맞는 겁스 4판 캐릭터를 만들어주세요. JSON으로만 답하세요.
-이름: ${sheet.name || '자유'}
-국가: ${sheet.state || '자유'}
-능력치: ST=${sheet.attributes.ST} DX=${sheet.attributes.DX} IQ=${sheet.attributes.IQ} HT=${sheet.attributes.HT}
+    try {
+      const exported = characterDraftExport(sheet, { personId: selectedCharId, revision })
+      const url = URL.createObjectURL(new Blob([JSON.stringify(exported, null, 2)], { type: 'application/json' }))
+      const link = document.createElement('a')
+      link.href = url; link.download = 'character-original-draft.json'; link.click()
+      URL.revokeObjectURL(url)
+      setExportError('')
+    } catch (error) { setExportError(error instanceof Error ? error.message : '내보내기 실패') }
+  }
 
-장점 목록에서 2-3개 선택: ${ADVANTAGES.map(a => a.ko).join(', ')}
-단점 목록에서 2-3개 선택: ${DISADVANTAGES.map(d => d.ko).join(', ')}
-버릇 목록에서 1개 선택: ${QUIRKS.map(q => q.ko).join(', ')}
-배경 목록에서 1개 선택: ${BACKGROUNDS.map(b => b.ko).join(', ')}
-외형 목록에서 1개 선택: ${APPEARANCES.map(a => a.ko).join(', ')}
-야망 목록에서 1개 선택: ${AMBITIONS.map(a => a.ko).join(', ')}
+  return <main className="wiki-prose">
+    <h1>오리지널 TRPG 캐릭터 초안</h1>
+    <p className="draft-hint">검토 제안입니다. 저장하여도 정본은 바뀌지 않았습니다. 인물 선택은 새 평가의 승인이 아닙니다.</p>
+    <p>규칙 {ORIGINAL_RULES_VERSION} · 대항 d10 · 평가 0–12 · 합산 보정 −4–4</p>
+    {selectedCharId && <p><Link to={`/tools/character-art?person=${encodeURIComponent(selectedCharId)}`}>선택 인물의 아트 작업 도구</Link></p>}
 
-형식: {"advantages": ["한글이름"], "disadvantages": ["한글이름"], "quirk": "한글이름", "background": "한글이름", "appearance": "한글이름", "ambition": "한글이름"}`
+    <section className="draft-charselect">
+      <h2>기존 인물과 원본 개정</h2>
+      <label>원본 개정
+        <select aria-label="원본 개정" value={revision} onChange={event => setRevision(event.target.value)}>
+          <option value="">— 개정을 명시적으로 선택 —</option>
+          {LEGACY_REVISIONS.map(item => <option key={item.revision} value={item.revision}>{item.label} · {item.revision}</option>)}
+        </select>
+      </label>
+      <p>기준 원본 ce173686… / 추가 기록 원본 5f34d92d…는 서로 다른 기록입니다.</p>
+      <div className="charselect-row">
+        <input aria-label="인물 검색" placeholder="이름 또는 국가로 검색..." value={searchQuery} onChange={event => setSearchQuery(event.target.value)} className="charselect-search" />
+        <select aria-label="기존 인물" value={selectedCharId} onChange={event => setSelectedCharId(event.target.value)} className="charselect-dropdown">
+          <option value="">— 새 초안 —</option>
+          {characters.map(person => <option key={person.id} value={person.id}>{person.name} ({person.stateName || '무소속'})</option>)}
+        </select>
+        {loading && <span role="status">불러오는 중...</span>}
+      </div>
+      {loadError && <p role="alert">{loadError}</p>}
+      {revision && <p>선택 개정: <code>{revision}</code></p>}
+    </section>
 
-    const url = URL.createObjectURL(new Blob([JSON.stringify({ schemaVersion: 1, personId: selectedCharId || null, approval: 'art-proposal', prompt }, null, 2)], { type: 'application/json' }))
-    const link = document.createElement('a')
-    link.href = url
-    link.download = 'character-sheet-ai-request.json'
-    link.click()
-    URL.revokeObjectURL(url)
-  }, [sheet, selectedCharId, canExport])
+    {sheet.legacy && <details>
+      <summary>원본 전체 기록 · 읽기 전용 · 새 평가로 환산하지 않음</summary>
+      <pre>{JSON.stringify(sheet.legacy, null, 2)}</pre>
+    </details>}
 
-  const Chip = ({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) => (
-    <button type="button" className={active ? 'chip active' : 'chip'} onClick={onClick}>{label}</button>
-  )
-
-  return (
-    <main className="wiki-prose">
-      <h1>겁스 캐릭터 시트 생성기</h1>
-      {selectedCharId && <p><Link to={`/tools/character-art?person=${encodeURIComponent(selectedCharId)}`}>선택 인물의 아트 작업 도구</Link></p>}
-      <p className="draft-hint">저장하여도 정본은 바뀌지 않았습니다. 정본 반영은 별도 승인이 필요합니다.</p>
-      {sheet.sourceGurps && <details><summary>원본 겁스 시트</summary><pre>{JSON.stringify(sheet.sourceGurps, null, 2)}</pre></details>}
-
-      
-      <section className="draft-charselect">
-        <h2>기존 인물 선택</h2>
-        <div className="charselect-row">
-          <input
-            type="text"
-            placeholder="이름 또는 국가로 검색..."
-            value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
-            className="charselect-search"
-          />
-          <select
-            value={selectedCharId}
-            onChange={e => {
-              setSelectedCharId(e.target.value)
-            }}
-            className="charselect-dropdown"
-          >
-            <option value="">— 인물 선택 —</option>
-            {filteredCharacters.map(c => (
-              <option key={c.id} value={c.id}>
-                {c.name} ({c.state || '무소속'})
-              </option>
-            ))}
-          </select>
-          {loadingChar && <span className="charselect-loading">불러오는 중...</span>}
-          {loadError && <p role="alert">{loadError}</p>}
-        </div>
-        {selectedCharId && (
-          <p className="charselect-info">
-            선택: <strong>{characterList.find(c => c.id === selectedCharId)?.name}</strong>
-            {' '}| 능력치와 기본 정보가 로드됩니다. 수정 후 초안 내보내기 하세요.
-          </p>
-        )}
-      </section>
-
-<section className="draft-ai">
-        <h2>사용자 AI 도구에 전달</h2>
-        <p className="ai-hint">현재 시트의 작성 조건을 내보내 사용자 AI 도구에서 검토합니다. 인증과 실행은 사용자 장치에서 진행합니다.</p>
-        <div className="ai-row">
-          <button onClick={aiGenerate} disabled={!canExport}>시트 AI 요청 내보내기</button>
-        </div>
-      </section>
-
+    <fieldset disabled={loading || Boolean(selectedCharId && loadedSelection !== selectionKey)}>
       <section className="draft-basic">
-        <h2>기본 정보</h2>
+        <h2>개인 문맥</h2>
         <div className="form-grid">
-          <label>이름
-            <input type="text" value={sheet.name} onChange={e => set('name', e.target.value)} placeholder="이름 입력" list="name-list" />
-            <datalist id="name-list">
-              {characterList.map((c: { id: string; name: string }) => <option key={c.id} value={c.name} />)}
-            </datalist>
-          </label>
-          <label>국가
-            <select value={sheet.state} onChange={e => { set('state', e.target.value); set('position', '') }}>
-              <option value="">— 선택 —</option>
-              {STATE_OPTIONS.map((s: { id: string; name: string }) => <option key={s.id} value={s.id}>{s.id} {s.name}</option>)}
-            </select>
-          </label>
-          <label>직위
-            <select value={sheet.position} onChange={e => set('position', e.target.value)}>
-              <option value="">— 선택 —</option>
-              {(STATE_POSITIONS[sheet.state] || []).map((p: string) => <option key={p} value={p}>{p}</option>)}
-            </select>
-          </label>
-          <label>생업
-            <select value={sheet.occupation} onChange={e => set('occupation', e.target.value)}>
-              <option value="">— 선택 —</option>
-              {OCCUPATION_OPTIONS.map((o: string) => <option key={o} value={o}>{o}</option>)}
-            </select>
-          </label>
+          {PERSONAL_FIELDS.map(({ key, label }) => <label key={key}>{label}
+            <input type="text" aria-label={label} placeholder={key === 'name' ? '이름 입력' : undefined} value={sheet[key]} onChange={event => setPersonal(key, event.target.value)} />
+          </label>)}
         </div>
       </section>
 
       <section className="draft-attrs">
-        <h2>능력치</h2>
-        <div className="attr-grid">
-          {(['ST', 'DX', 'IQ', 'HT'] as Attr[]).map(attr => (
-            <div key={attr} className="attr-card">
-              <span className="attr-code">{attr}</span>
-              <input type="range" min="7" max="20" value={sheet.attributes[attr]} onChange={e => setAttr(attr, parseInt(e.target.value))} />
-              <span className="attr-value">{sheet.attributes[attr]}</span>
-              <span className="attr-cost">CP {CP_COST[sheet.attributes[attr]] ?? 0}</span>
-            </div>
-          ))}
-        </div>
-        <div className="cp-summary">
-          <span>능력치: <strong>{attrCP}</strong></span>
-          <span>장점: <strong>{advCP}</strong></span>
-          <span>단점: <strong>{disCP}</strong></span>
-          <span>편집 배분 CP: <strong>{totalCP}</strong></span>
-          <span>원장 CP 예산: <strong>{sheet.cp}</strong></span>
+        <h2>새 기량 평가 · 미승인 제안</h2>
+        <p>미설정은 0이 아닙니다. 아래 7개 분야는 보편 능력치가 아니며, 값을 입력할 때 세부 분야·평가 기준 버전·근거가 모두 필요합니다.</p>
+        {sheet.originalRatings.map((item, index) => <fieldset key={item.capabilityId}>
+          <legend>{ORIGINAL_CAPABILITIES.find(option => option.id === item.capabilityId)?.label} · {item.capabilityId}</legend>
+          <div className="form-grid">
+            <label>세부 분야<input aria-label={`${item.capabilityId} 세부 분야`} value={item.subdomain} onChange={event => setRating(index, { subdomain: event.target.value })} /></label>
+            <label>평가 (0–12)<input type="number" min="0" max="12" step="1" aria-label={`${item.capabilityId} 평가`} value={item.value ?? ''} placeholder="미설정" onChange={event => setRating(index, { value: event.target.value === '' ? null : event.target.valueAsNumber })} /></label>
+            <label>평가 기준 버전<input aria-label={`${item.capabilityId} 기준`} value={item.rubricVersion} onChange={event => setRating(index, { rubricVersion: event.target.value })} /></label>
+            <label>근거 참조<input aria-label={`${item.capabilityId} 근거`} value={item.evidenceRef} onChange={event => setRating(index, { evidenceRef: event.target.value })} /></label>
+          </div>
+        </fieldset>)}
+        <div className="form-grid">
+          <label>합산 보정 (−4–4)<input aria-label="합산 보정" type="number" min="-4" max="4" step="1" placeholder="미설정" value={sheet.combinedModifier ?? ''} onChange={event => setSheet(previous => ({ ...previous, combinedModifier: event.target.value === '' ? null : event.target.valueAsNumber }))} /></label>
+          <label>보정 근거 참조<input aria-label="보정 근거" value={sheet.modifierEvidenceRef} onChange={event => setSheet(previous => ({ ...previous, modifierEvidenceRef: event.target.value }))} /></label>
         </div>
       </section>
 
-      <section className="draft-select">
-        <h2>장점</h2>
-        <div className="chip-grid">
-          {ADVANTAGES.map(a => (
-            <Chip key={a.id} label={`${a.ko} (${a.cp}CP)`} active={sheet.selectedAdvantages.includes(a.id)}
-              onClick={() => set('selectedAdvantages', toggleItem(sheet.selectedAdvantages, a.id))} />
-          ))}
-        </div>
-      </section>
-
-      <section className="draft-select">
-        <h2>단점</h2>
-        <div className="chip-grid">
-          {DISADVANTAGES.map(d => (
-            <Chip key={d.id} label={`${d.ko} (${d.cp}CP)`} active={sheet.selectedDisadvantages.includes(d.id)}
-              onClick={() => set('selectedDisadvantages', toggleItem(sheet.selectedDisadvantages, d.id))} />
-          ))}
-        </div>
-      </section>
-
-      <section className="draft-select">
-        <h2>버릇</h2>
-        <div className="chip-grid">
-          {QUIRKS.map(q => (
-            <Chip key={q.id} label={q.ko} active={sheet.selectedQuirks.includes(q.id)}
-              onClick={() => set('selectedQuirks', toggleItem(sheet.selectedQuirks, q.id))} />
-          ))}
-        </div>
-      </section>
-
-      <section className="draft-select">
-        <h2>배경</h2>
-        <div className="option-list">
-          {BACKGROUNDS.map(b => (
-            <button key={b.id} type="button"
-              className={sheet.selectedBackground === b.id ? 'option-card selected' : 'option-card'}
-              onClick={() => set('selectedBackground', b.id)}>
-              <span className="option-title">{b.ko}</span>
-              <span className="option-state">{b.state}</span>
-              <span className="option-desc">{b.desc}</span>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="draft-select">
-        <h2>외형</h2>
-        <div className="chip-grid">
-          {APPEARANCES.map(a => (
-            <Chip key={a.id} label={a.ko} active={sheet.selectedAppearance === a.id}
-              onClick={() => set('selectedAppearance', a.id)} />
-          ))}
-        </div>
-      </section>
-
-      <section className="draft-select">
-        <h2>개막 야망</h2>
-        <div className="chip-grid">
-          {AMBITIONS.map(a => (
-            <Chip key={a.id} label={a.ko} active={sheet.selectedAmbition === a.id}
-              onClick={() => set('selectedAmbition', a.id)} />
-          ))}
-        </div>
-      </section>
-
-      <section className="draft-actions">
-        <button disabled={!canExport} onClick={() => {
-          if (!canExport) return
-          const blob = new Blob([JSON.stringify(characterDraftExport(sheet, selectedCharId), null, 2)], { type: 'application/json' })
-          const url = URL.createObjectURL(blob)
-          const a = document.createElement('a'); a.href = url; a.download = 'character-gurps.json'; a.click()
-          URL.revokeObjectURL(url)
-        }}>초안 내보내기</button>
-        <Link to="/people"><button type="button">인물 목록으로</button></Link>
-      </section>
-    </main>
-  )
+      {TRAIT_FIELDS.map(({ key, label }) => <section key={key} className="draft-select">
+        <h2>{label} · 서술과 근거</h2>
+        {sheet[key].map((item, index) => <div className="form-grid" key={index}>
+          <label>서술<input aria-label={`${label} ${index + 1} 서술`} value={item.description} onChange={event => setSheet(previous => ({ ...previous, [key]: previous[key].map((row, i) => i === index ? { ...row, description: event.target.value } : row) }))} /></label>
+          <label>참조<input aria-label={`${label} ${index + 1} 참조`} value={item.reference} onChange={event => setSheet(previous => ({ ...previous, [key]: previous[key].map((row, i) => i === index ? { ...row, reference: event.target.value } : row) }))} /></label>
+          <button type="button" aria-label={`${label} ${index + 1} 삭제`} onClick={() => setSheet(previous => ({ ...previous, [key]: previous[key].filter((_, i) => i !== index) }))}>삭제</button>
+        </div>)}
+        <button type="button" onClick={() => setSheet(previous => ({ ...previous, [key]: [...previous[key], { description: '', reference: '' }] }))}>{label} 추가</button>
+      </section>)}
+    </fieldset>
+    {problems.length > 0 && <p role="alert">평가 범위와 세부 분야·기준 버전·근거, 특성 서술·참조를 확인하세요. {problems.join(', ')}</p>}
+    {exportError && <p role="alert">{exportError}</p>}
+    <section className="draft-actions">
+      <button type="button" disabled={!canExport} onClick={download}>초안 내보내기</button>
+      <Link to="/people">인물 목록으로</Link>
+    </section>
+  </main>
 }

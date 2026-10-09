@@ -3,6 +3,7 @@
   "name": "조이록",
   "title": "기록 공증 감사관",
   "position": "기록 공증 감사관",
+  "characterId": "K168",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "원본 해시 확인·사본 공증 감사",
@@ -399,60 +400,341 @@
   },
   "gurps": {
     "id": "K168",
-    "personId": "person-0169",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0169"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S06",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S06",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K168",
+            "name": "조이록",
+            "url": "/people/person-0169",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "원본 해시 확인·사본 공증 감사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-06.json",
+                  "pointer": "/content/655/items/0/ko",
+                  "quote": "생업: 원본 해시 확인·사본 공증 감사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/656/text/ko",
+                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/657/text/ko",
+                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/656/text/ko",
+                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/657/text/ko",
+                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "회현",
+              "type": "초소 영지",
+              "station": "회현",
+              "state": "S06",
+              "settlement": {
+                "name": "회현 정착지",
+                "type": "정착지",
+                "description": "회현 일대 고정 거점"
+              },
+              "note": "S06 회현 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Accounting",
-        "ko": "회계·감사",
-        "level": 13,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S06",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K168",
+            "name": "조이록",
+            "url": "/people/person-0169",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "원본 해시 확인·사본 공증 감사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-06.json",
+                  "pointer": "/content/655/items/0/ko",
+                  "quote": "생업: 원본 해시 확인·사본 공증 감사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/656/text/ko",
+                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/657/text/ko",
+                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/656/text/ko",
+                    "quote": "사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/657/text/ko",
+                    "quote": "조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-06.json",
+                    "pointer": "/content/655/items/0/ko",
+                    "quote": "생업: 원본 해시 확인·사본 공증 감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "회현",
+              "type": "초소 영지",
+              "station": "회현",
+              "state": "S06",
+              "settlement": {
+                "name": "회현 정착지",
+                "type": "정착지",
+                "description": "회현 일대 고정 거점"
+              },
+              "note": "S06 회현 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

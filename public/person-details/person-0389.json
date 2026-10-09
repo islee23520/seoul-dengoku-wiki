@@ -3,6 +3,7 @@
   "name": "동예솔",
   "title": "청과동 시장 거점장, 남시윤의 실무 담당자",
   "position": "교구 선거 봉인 수사",
+  "characterId": "K388",
   "rank": "수사",
   "commonTier": "T3",
   "occupation": "선거함 봉인·선거 보좌",
@@ -287,60 +288,331 @@
   },
   "gurps": {
     "id": "K388",
-    "personId": "person-0389",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0389"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S15",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S15",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K388",
+            "name": "동예솔",
+            "url": "/people/person-0389",
+            "state": "S15",
+            "method": "card-lexicon",
+            "role": {
+              "display": "선거함 봉인·선거 보좌",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-15.json",
+                  "pointer": "/content/39/items/0/ko",
+                  "quote": "생업: 선거함 봉인·선거 보좌"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "교구 선거 봉인 수사의 기록에 당시의 증언을 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/39/items/0/ko",
+                    "quote": "생업: 선거함 봉인·선거 보좌"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "교구 선거 봉인 수사의 기록에 당시의 증언을 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 52,
+              "unspent": 23,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
+              "faction_scale": {
+                "state": "S15",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "서울역",
+              "type": "초소 영지",
+              "station": "서울역",
+              "state": "S15",
+              "settlement": {
+                "name": "서울역 정착지",
+                "type": "정착지",
+                "description": "서울역 일대 고정 거점"
+              },
+              "note": "S15 서울역 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 13,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S15",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K388",
+            "name": "동예솔",
+            "url": "/people/person-0389",
+            "state": "S15",
+            "method": "card-lexicon",
+            "role": {
+              "display": "선거함 봉인·선거 보좌",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-15.json",
+                  "pointer": "/content/39/items/0/ko",
+                  "quote": "생업: 선거함 봉인·선거 보좌"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "교구 선거 봉인 수사의 기록에 당시의 증언을 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/39/items/0/ko",
+                    "quote": "생업: 선거함 봉인·선거 보좌"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "교구 선거 봉인 수사의 기록에 당시의 증언을 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-15.json",
+                    "pointer": "/content/41/text/ko",
+                    "quote": "흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 52,
+              "unspent": 23,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
+              "faction_scale": {
+                "state": "S15",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "서울역",
+              "type": "초소 영지",
+              "station": "서울역",
+              "state": "S15",
+              "settlement": {
+                "name": "서울역 정착지",
+                "type": "정착지",
+                "description": "서울역 일대 고정 거점"
+              },
+              "note": "S15 서울역 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 52,
-      "unspent": 23,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {
