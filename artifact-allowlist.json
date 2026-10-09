@@ -1,5 +1,6 @@
 {
   "rootFiles": [
+    "admin-territorial-scale.json",
     "confirmed-person-holdings.json",
     "portrait-style-original-c3a7e481.json",
     "local-art-bridge.mjs",
@@ -27,6 +28,7 @@
     "portraits": "^person-[0-9]{4}\\.png$",
     "clan-crests": "^(?:[a-z0-9-]+\\.svg|index\\.json)$",
     "regional-terrain-tiles": "^[0-9]+-[0-9]+(?:-water\\.json|\\.bin)$",
+    "family-trees": "^[a-z0-9-]+\\.json$",
     "state-flags": "^(?:S(?:0[1-9]|1[0-6])|concept-sheet)\\.webp$"
   },
   "assets": {
@@ -40,6 +42,11 @@
       "FamiliesPage",
       "FamilyDetailPage",
       "FamilyTree",
+      "FamilyDetailPage",
+      "FamilyTree",
+      "nonKoreanFamilyCatalog",
+      "person-sheet-name-changes",
+      "StateFlag",
       "FeedbackPage",
       "LicensePage",
       "OpeningTerritoryMap",

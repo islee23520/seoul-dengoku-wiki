@@ -1,0 +1,7304 @@
+{
+  "clanId": "bc15-bc00-c591",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K004",
+      "personId": "K004",
+      "kind": "person",
+      "name": "박누리",
+      "birthDate": "2095-07-05",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K004"
+        },
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0004",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K033",
+      "personId": "K033",
+      "kind": "person",
+      "name": "박소언",
+      "birthDate": "2098-09-12",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K033"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 구로 건물조합 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0033",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K063",
+      "personId": "K063",
+      "kind": "person",
+      "name": "박진솔",
+      "birthDate": "2067-11-09",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K063"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 종자보존고 책임자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박진솔-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0063",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K086",
+      "personId": "K086",
+      "kind": "person",
+      "name": "임하준",
+      "birthDate": "2072-12-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K086"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0086",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K087",
+      "personId": "K087",
+      "kind": "person",
+      "name": "임초원",
+      "birthDate": "2100-06-11",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K087"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임초원-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준이 망치의 반을 넘긴 것은 당회 후계가 아니라 기술 전수였다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임초원-p2"
+            }
+          ]
+        }
+      ],
+      "generationException": {
+        "reason": "확정 생년월일과 기존 임하준→임초원 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "/content/40"
+          }
+        ]
+      },
+      "detailRoute": "/people/person-0087",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K089",
+      "personId": "K089",
+      "kind": "person",
+      "name": "박세린",
+      "birthDate": "2093-07-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K089"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0090",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K120",
+      "personId": "K120",
+      "kind": "person",
+      "name": "박하율",
+      "birthDate": "2074-01-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K120"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 열차정비장 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박하율-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0121",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K169",
+      "personId": "K169",
+      "kind": "person",
+      "name": "박태겸",
+      "birthDate": "2071-01-09",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K169"
+        },
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 용산 철도 환적과 주둔지 울타리 용역의 손. 비상 호송이 열리면 선로가 나라보다 먼저 움직인다. 박태겸은 그 순서를 후국회의에 남기려 용산호송가의 배차표를 지켰다. 용산선로문의 유치선 당직은 장세화의 것이다. 두 손이 계절마다 자리를 바꾸면 나라가 둘로 보인다. 이태원 통역은 이 나라 안의 호다. 그래서 후국회의를 연다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-07.json",
+              "anchor": "인물-박태겸-p1"
+            }
+          ]
+        }
+      ],
+      "nameEn": "Park Taegyeom",
+      "detailRoute": "/people/person-0170",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K425",
+      "personId": "K425",
+      "kind": "person",
+      "name": "박도윤",
+      "birthDate": "2082-07-05",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K425"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박도윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0425",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K465",
+      "personId": "K465",
+      "kind": "person",
+      "name": "박은윤",
+      "birthDate": "2092-12-23",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K465"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0465",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K505",
+      "personId": "K505",
+      "kind": "person",
+      "name": "박하은",
+      "birthDate": "2084-06-01",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K505"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박하은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0505",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K545",
+      "personId": "K545",
+      "kind": "person",
+      "name": "박돌윤",
+      "birthDate": "2076-02-29",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K545"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박돌윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0545",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K585",
+      "personId": "K585",
+      "kind": "person",
+      "name": "박바윤",
+      "birthDate": "2073-07-17",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K585"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박바윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0585",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K625",
+      "personId": "K625",
+      "kind": "person",
+      "name": "박금은",
+      "birthDate": "2084-05-08",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K625"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박금은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0625",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K665",
+      "personId": "K665",
+      "kind": "person",
+      "name": "박솔윤",
+      "birthDate": "2082-02-09",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K665"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박솔윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0665",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K704",
+      "personId": "K704",
+      "kind": "person",
+      "name": "박숲윤",
+      "birthDate": "2079-02-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K704"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-박숲윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0704",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K743",
+      "personId": "K743",
+      "kind": "person",
+      "name": "박마은",
+      "birthDate": "2086-10-21",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K743"
+        },
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-박마은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0743",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K781",
+      "personId": "K781",
+      "kind": "person",
+      "name": "박하윤",
+      "birthDate": "2069-06-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K781"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 사본 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-박하윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0781",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K820",
+      "personId": "K820",
+      "kind": "person",
+      "name": "박별윤",
+      "birthDate": "2094-06-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K820"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 처방 수련의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0820",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K858",
+      "personId": "K858",
+      "kind": "person",
+      "name": "박다은",
+      "birthDate": "2101-04-11",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K858"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0858",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K897",
+      "personId": "K897",
+      "kind": "person",
+      "name": "박라윤",
+      "birthDate": "2070-10-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K897"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박라윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0897",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K934",
+      "personId": "K934",
+      "kind": "person",
+      "name": "박파윤",
+      "birthDate": "2090-09-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K934"
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생업: 선거 기록·인수인계 기록",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0934",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K972",
+      "personId": "K972",
+      "kind": "person",
+      "name": "박늘은",
+      "birthDate": "2095-04-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K972"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "소속: 동방사",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0972",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K1014",
+      "personId": "K1014",
+      "kind": "person",
+      "name": "조엘 박",
+      "birthDate": "2082-05-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1014"
+        },
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "성명: 조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-조엘-박-joel-park-list1"
+            }
+          ]
+        }
+      ],
+      "nameEn": "Joel Park",
+      "detailRoute": "/people/person-1014",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K1019",
+      "personId": "K1019",
+      "kind": "person",
+      "name": "박성수",
+      "birthDate": "2095-03-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1019"
+        },
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "성명: 박성수 (Park Seongsu)",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-1019",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K004-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승석",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2065-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "박승석은 영등포 정수 당직에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K004-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승준",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2035-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "박승준은 영등포 정수 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K004-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승호",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2005-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박승호는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K004-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤승준",
+      "birthDate": "2065-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "윤승준은 영등포 정수 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K004-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한승호",
+      "birthDate": "2035-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "한승호는 영등포 정수 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K004-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승석",
+      "birthDate": "2005-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강승석은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-박누리-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K033-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승우",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2068-09-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "박승우는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K033-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승경",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2038-09-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "박승경은 대합실 당직에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K033-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승수",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2008-09-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박승수는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K033-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승영",
+      "birthDate": "2068-09-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "송승영은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K033-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조승현",
+      "birthDate": "2038-09-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "조승현은 대합실 당직에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K033-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김승수",
+      "birthDate": "2008-09-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김승수는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박소언-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K063-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승훈",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2037-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "박승훈은 대합실 당직에서 종자 보존·온습도 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박진솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K063-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승범",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2007-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박승범은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박진솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K063-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승섭",
+      "birthDate": "2037-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "정승섭은 대합실 당직에서 종자 보존·온습도 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박진솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K063-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤승은",
+      "birthDate": "2007-11-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤승은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박진솔-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승섭",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2042-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "임승섭은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승성",
+      "lineage": {
+        "surname": "임",
+        "bongwan": "조양",
+        "clan": "c784-c870-c591-6797"
+      },
+      "birthDate": "2012-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임승성은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최승온",
+      "birthDate": "2042-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "최승온은 생활권의 공동 거처에서 펌프기술 총관 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K086-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승리",
+      "birthDate": "2012-12-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정승리는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "임하준-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "generationException": {
+        "reason": "명시된 친족 관계의 두 가계를 연결하되 각 가계의 확정 생일에서 파생된 날짜를 보존한다. 공동 조상의 생일은 더 이른 자녀를 기준으로 30년 앞서 저작한다.",
+        "sourceRefs": [
+          {
+            "path": "lore/characters/Cast-Relations.json",
+            "anchor": "관계-원장-table3"
+          },
+          {
+            "path": "lore/name-pools/cast-family-trees.json"
+          }
+        ]
+      },
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K089-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승성",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2063-07-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "박승성은 신정 차량기지에서 펌프 부품 보관·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K089-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승욱",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2033-07-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "박승욱은 신정 차량기지에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K089-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박승란",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2003-07-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박승란은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K089-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한승혁",
+      "birthDate": "2063-07-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "한승혁은 신정 차량기지에서 펌프 부품 보관·출고 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K089-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승범",
+      "birthDate": "2033-07-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "강승범은 신정 차량기지에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K089-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승욱",
+      "birthDate": "2003-07-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임승욱은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-박세린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K120-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현석",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2044-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2082,
+          "summary": "박현석은 신정 차량기지에서 열차 출고·부품 규격 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박하율-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K120-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현준",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2014-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박현준은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박하율-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K120-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "감현호",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2044-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2082,
+          "summary": "감현호는 신정 차량기지에서 열차 출고·부품 규격 점검 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박하율-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K120-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "감현석",
+      "lineage": {
+        "surname": "감",
+        "bongwan": "창원",
+        "clan": "ac10-cc3d-c6d0"
+      },
+      "birthDate": "2014-01-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "감현석은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박하율-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K169-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현연",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2041-01-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "박현연은 2041년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2059년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-07.json",
+              "anchor": "인물-박태겸-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Park Hyeonyeon was born in 2041 and grew up reading family and work records. From 2059, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Park Hyeonyeon",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K169-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현정",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2011-01-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2029,
+          "summary": "박현정은 2011년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2029년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-07.json",
+              "anchor": "인물-박태겸-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Park Hyeonjeong was born in 2011 and grew up reading family and work records. From 2029, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Park Hyeonjeong",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K169-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "메리 월시",
+      "birthDate": "2041-01-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "메리 월시는 2041년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2059년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-07.json",
+              "anchor": "인물-박태겸-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Mary Walsh was born in 2041 and grew up reading family and work records. From 2059, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Mary Walsh",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K169-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "브리짓 월시",
+      "birthDate": "2011-01-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2029,
+          "summary": "브리짓 월시는 2011년에 태어났다. 용산호송가의 가족 기록과 작업 사본을 읽으며 자랐고, 2029년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-07.json",
+              "anchor": "인물-박태겸-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Brigid Walsh was born in 2011 and grew up reading family and work records. From 2029, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Brigid Walsh",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K425-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박준나",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2052-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "박준나는 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K425-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박준온",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2022-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박준온은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K425-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한준혁",
+      "birthDate": "2052-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "한준혁은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K425-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준찬",
+      "birthDate": "2022-07-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강준찬은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K465-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태원",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2062-12-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2100,
+          "summary": "박태원은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K465-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태진",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2032-12-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2070,
+          "summary": "박태진은 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K465-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태현",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2002-12-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박태현은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K465-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송준리",
+      "birthDate": "2062-12-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2100,
+          "summary": "송준리는 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K465-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조준미",
+      "birthDate": "2032-12-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2070,
+          "summary": "조준미는 노량진 선창에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K465-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김태준",
+      "birthDate": "2002-12-23",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김태준은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박은윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K505-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태훈",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2054-06-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "박태훈은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K505-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태범",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2024-06-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박태범은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K505-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이태범",
+      "birthDate": "2054-06-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "이태범은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K505-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최태혁",
+      "birthDate": "2024-06-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최태혁은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K545-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태란",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2046-02-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2084,
+          "summary": "박태란은 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박돌윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K545-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박태리",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2016-02-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박태리는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박돌윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K545-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한태범",
+      "birthDate": "2046-02-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2084,
+          "summary": "한태범은 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박돌윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K545-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태희",
+      "birthDate": "2016-02-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강태희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박돌윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K585-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재호",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2043-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2081,
+          "summary": "박재호는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박바윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K585-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재민",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2013-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박재민은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박바윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K585-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송태찬",
+      "birthDate": "2043-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2081,
+          "summary": "송태찬은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박바윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K585-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태욱",
+      "birthDate": "2013-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조태욱은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박바윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K625-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재연",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2054-05-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "박재연은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박금은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K625-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재정",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2024-05-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박재정은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박금은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K625-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이재은",
+      "birthDate": "2054-05-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "이재은은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박금은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K625-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재희",
+      "birthDate": "2024-05-08",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최재희는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박금은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K665-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재찬",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2052-02-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "박재찬은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박솔윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K665-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재혁",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2022-02-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박재혁은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박솔윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K665-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한재정",
+      "birthDate": "2052-02-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "한재정은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박솔윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K665-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강재경",
+      "birthDate": "2022-02-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강재경은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-박솔윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K704-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재빈",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2049-02-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2087,
+          "summary": "박재빈은 신정 차량기지에서 금고 설비 점검·정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-박숲윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K704-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재솔",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2019-02-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박재솔은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-박숲윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K704-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오재란",
+      "birthDate": "2049-02-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2087,
+          "summary": "오재란은 신정 차량기지에서 금고 설비 점검·정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-박숲윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K704-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송재희",
+      "birthDate": "2019-02-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송재희는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-박숲윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K743-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도현",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2056-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "박도현은 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-박마은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K743-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도영",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2026-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박도영은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-박마은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K743-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김재미",
+      "birthDate": "2056-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "김재미는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-박마은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K743-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도우",
+      "birthDate": "2026-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박도우는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-박마은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K781-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도규",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2039-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "박도규는 신내 환승 당직에서 호송 인명 장부 보호 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-박하윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K781-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도완",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2009-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박도완은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-박하윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K781-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이도훈",
+      "birthDate": "2039-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "이도훈은 신내 환승 당직에서 호송 인명 장부 보호 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-박하윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K781-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최도찬",
+      "birthDate": "2009-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최도찬은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-박하윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K820-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도성",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2064-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "박도성은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K820-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도욱",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2034-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "박도욱은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K820-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도란",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2004-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박도란은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K820-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤도범",
+      "birthDate": "2064-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "윤도범은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K820-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한도훈",
+      "birthDate": "2034-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "한도훈은 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K820-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도아",
+      "birthDate": "2004-06-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도아는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-박별윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K858-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민호",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2071-04-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "박민호는 서울역 등기소에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K858-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민민",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2041-04-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "박민민은 서울역 등기소에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K858-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민원",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2011-04-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박민원은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K858-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도성",
+      "birthDate": "2071-04-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "강도성은 서울역 등기소에서 기록·열쇠 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K858-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임도욱",
+      "birthDate": "2041-04-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "임도욱은 서울역 등기소에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K858-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "오도나",
+      "birthDate": "2011-04-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오도나는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-박다은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K897-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민은",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2040-10-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "박민은은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박라윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K897-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민연",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2010-10-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박민연은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박라윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K897-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도솔",
+      "birthDate": "2040-10-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "송도솔은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박라윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K897-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민민",
+      "birthDate": "2010-10-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조민민은 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-박라윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K934-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민찬",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2060-09-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "박민찬은 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K934-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민혁",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2030-09-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "박민혁은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K934-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민문",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c724-second"
+      },
+      "birthDate": "2000-09-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박민문은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K934-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민아",
+      "birthDate": "2060-09-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "조민아는 노량진 선창에서 선거 기록·인수인계 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K934-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민아",
+      "birthDate": "2030-09-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "김민아는 노량진 선창에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K934-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민섭",
+      "birthDate": "2000-09-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박민섭은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-15.json",
+              "anchor": "인물-박파윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K972-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민솔",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2065-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "박민솔은 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K972-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민미",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2035-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "박민미는 영등포 정수 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K972-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민도",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591-agreed-c740-second"
+      },
+      "birthDate": "2005-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박민도는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K972-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "매서석",
+      "lineage": {
+        "surname": "매",
+        "bongwan": "충주",
+        "clan": "b9e4-cda9-c8fc"
+      },
+      "birthDate": "2065-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "매서석은 영등포 정수 당직에서 관로 누수 점검·표시 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K972-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "매민도",
+      "lineage": {
+        "surname": "매",
+        "bongwan": "충주",
+        "clan": "b9e4-cda9-c8fc"
+      },
+      "birthDate": "2035-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "매민도는 영등포 정수 당직에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K972-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "매서진",
+      "lineage": {
+        "surname": "매",
+        "bongwan": "충주",
+        "clan": "b9e4-cda9-c8fc"
+      },
+      "birthDate": "2005-04-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "매서진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-박늘은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1014-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박서윤",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2052-05-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "박서윤은 2052년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2070년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-조엘-박-joel-park-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Park Seoyun was born in 2052 and grew up reading family and work records. From 2070, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Park Seoyun",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1014-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박서우",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2022-05-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2040,
+          "summary": "박서우는 2022년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2040년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-조엘-박-joel-park-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Park Seou was born in 2022 and grew up reading family and work records. From 2040, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Park Seou",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1014-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "에디스 카터",
+      "birthDate": "2052-05-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "에디스 카터는 2052년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2070년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-조엘-박-joel-park-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Edith Carter was born in 2052 and grew up reading family and work records. From 2070, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Edith Carter",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1014-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "머틀 카터",
+      "birthDate": "2022-05-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2040,
+          "summary": "머틀 카터는 2022년에 태어났다. 용산 울타리 용역의 가족 기록과 작업 사본을 읽으며 자랐고, 2040년부터 이웃과 물품 인계 내역을 대조했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/factions/Diaspora-Corridors.json",
+              "anchor": "인물-조엘-박-joel-park-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ],
+          "summaryEn": "Myrtle Carter was born in 2022 and grew up reading family and work records. From 2040, this ancestor compared goods-transfer records with neighbors."
+        }
+      ],
+      "nameEn": "Myrtle Carter",
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1019-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박서경",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2065-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "박서경은 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1019-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박서수",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2035-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "박서수는 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1019-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박서은",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "birthDate": "2005-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박서은은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1019-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김서원",
+      "birthDate": "2065-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2103,
+          "summary": "김서원은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1019-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박서연",
+      "birthDate": "2035-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "박서연은 생활권의 공동 거처에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1019-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "이서은",
+      "birthDate": "2005-03-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이서은은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-박성수-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K169-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박도헌",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "nameEn": "Park Doheon",
+      "birthDate": "1981-01-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K169-P-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박도헌는 2030년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Park Doheon was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K169-P-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K169-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "브로나 월시",
+      "nameEn": "Bróna Walsh",
+      "birthDate": "1981-01-09",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K169-M-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "브로나 월시는 2030년 대정전 당시 용산호송가 생활권에서 용산 철도 민간 용역과 이태원 민간 숙박 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Bróna Walsh was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K169-M-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1014-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박윤석",
+      "lineage": {
+        "surname": "박",
+        "bongwan": "밀양",
+        "clan": "bc15-bc00-c591"
+      },
+      "nameEn": "Park Yunseok",
+      "birthDate": "1992-05-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1014-P-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박윤석은 2030년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Park Yunseok was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1014-P-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1014-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "로레인 카터",
+      "nameEn": "Lorraine Carter",
+      "birthDate": "1992-05-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1014-M-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "로레인 카터는 2030년 대정전 당시 용산 울타리 용역 생활권에서 용산 주둔지의 민간 하청 통역을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Lorraine Carter was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1014-M-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "K086:K087:adoptive",
+      "from": "K086",
+      "to": "K087",
+      "type": "adoptive",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "/content/40"
+        }
+      ]
+    },
+    {
+      "id": "FH-K004-P-01:K004:biological",
+      "from": "FH-K004-P-01",
+      "to": "K004",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K004-P-02:FH-K004-P-01:biological",
+      "from": "FH-K004-P-02",
+      "to": "FH-K004-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K004-P-03:FH-K004-P-02:biological",
+      "from": "FH-K004-P-03",
+      "to": "FH-K004-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K004-M-01:K004:biological",
+      "from": "FH-K004-M-01",
+      "to": "K004",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K004-M-02:FH-K004-M-01:biological",
+      "from": "FH-K004-M-02",
+      "to": "FH-K004-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K004-M-03:FH-K004-M-02:biological",
+      "from": "FH-K004-M-03",
+      "to": "FH-K004-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-박누리-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K033-P-01:K033:biological",
+      "from": "FH-K033-P-01",
+      "to": "K033",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K033-P-02:FH-K033-P-01:biological",
+      "from": "FH-K033-P-02",
+      "to": "FH-K033-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K033-P-03:FH-K033-P-02:biological",
+      "from": "FH-K033-P-03",
+      "to": "FH-K033-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K033-M-01:K033:biological",
+      "from": "FH-K033-M-01",
+      "to": "K033",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K033-M-02:FH-K033-M-01:biological",
+      "from": "FH-K033-M-02",
+      "to": "FH-K033-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K033-M-03:FH-K033-M-02:biological",
+      "from": "FH-K033-M-03",
+      "to": "FH-K033-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박소언-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K063-P-01:K063:biological",
+      "from": "FH-K063-P-01",
+      "to": "K063",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K063-P-02:FH-K063-P-01:biological",
+      "from": "FH-K063-P-02",
+      "to": "FH-K063-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K063-M-01:K063:biological",
+      "from": "FH-K063-M-01",
+      "to": "K063",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K063-M-02:FH-K063-M-01:biological",
+      "from": "FH-K063-M-02",
+      "to": "FH-K063-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박진솔-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-P-01:K086:biological",
+      "from": "FH-K086-P-01",
+      "to": "K086",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-P-02:FH-K086-P-01:biological",
+      "from": "FH-K086-P-02",
+      "to": "FH-K086-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-M-01:K086:biological",
+      "from": "FH-K086-M-01",
+      "to": "K086",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K086-M-02:FH-K086-M-01:biological",
+      "from": "FH-K086-M-02",
+      "to": "FH-K086-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "임하준-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K089-P-01:K089:biological",
+      "from": "FH-K089-P-01",
+      "to": "K089",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K089-P-02:FH-K089-P-01:biological",
+      "from": "FH-K089-P-02",
+      "to": "FH-K089-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K089-P-03:FH-K089-P-02:biological",
+      "from": "FH-K089-P-03",
+      "to": "FH-K089-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K089-M-01:K089:biological",
+      "from": "FH-K089-M-01",
+      "to": "K089",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K089-M-02:FH-K089-M-01:biological",
+      "from": "FH-K089-M-02",
+      "to": "FH-K089-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K089-M-03:FH-K089-M-02:biological",
+      "from": "FH-K089-M-03",
+      "to": "FH-K089-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-박세린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K120-P-01:K120:biological",
+      "from": "FH-K120-P-01",
+      "to": "K120",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K120-P-02:FH-K120-P-01:biological",
+      "from": "FH-K120-P-02",
+      "to": "FH-K120-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K120-M-01:K120:biological",
+      "from": "FH-K120-M-01",
+      "to": "K120",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K120-M-02:FH-K120-M-01:biological",
+      "from": "FH-K120-M-02",
+      "to": "FH-K120-M-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박하율-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K169-P-01:K169:biological",
+      "from": "FH-K169-P-01",
+      "to": "K169",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K169-P-02:FH-K169-P-01:biological",
+      "from": "FH-K169-P-02",
+      "to": "FH-K169-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K169-M-01:K169:biological",
+      "from": "FH-K169-M-01",
+      "to": "K169",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K169-M-02:FH-K169-M-01:biological",
+      "from": "FH-K169-M-02",
+      "to": "FH-K169-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-07.json",
+          "anchor": "인물-박태겸-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K425-P-01:K425:biological",
+      "from": "FH-K425-P-01",
+      "to": "K425",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K425-P-02:FH-K425-P-01:biological",
+      "from": "FH-K425-P-02",
+      "to": "FH-K425-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K425-M-01:K425:biological",
+      "from": "FH-K425-M-01",
+      "to": "K425",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K425-M-02:FH-K425-M-01:biological",
+      "from": "FH-K425-M-02",
+      "to": "FH-K425-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K465-P-01:K465:biological",
+      "from": "FH-K465-P-01",
+      "to": "K465",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K465-P-02:FH-K465-P-01:biological",
+      "from": "FH-K465-P-02",
+      "to": "FH-K465-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K465-P-03:FH-K465-P-02:biological",
+      "from": "FH-K465-P-03",
+      "to": "FH-K465-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K465-M-01:K465:biological",
+      "from": "FH-K465-M-01",
+      "to": "K465",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K465-M-02:FH-K465-M-01:biological",
+      "from": "FH-K465-M-02",
+      "to": "FH-K465-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K465-M-03:FH-K465-M-02:biological",
+      "from": "FH-K465-M-03",
+      "to": "FH-K465-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박은윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K505-P-01:K505:biological",
+      "from": "FH-K505-P-01",
+      "to": "K505",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K505-P-02:FH-K505-P-01:biological",
+      "from": "FH-K505-P-02",
+      "to": "FH-K505-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K505-M-01:K505:biological",
+      "from": "FH-K505-M-01",
+      "to": "K505",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K505-M-02:FH-K505-M-01:biological",
+      "from": "FH-K505-M-02",
+      "to": "FH-K505-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K545-P-01:K545:biological",
+      "from": "FH-K545-P-01",
+      "to": "K545",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K545-P-02:FH-K545-P-01:biological",
+      "from": "FH-K545-P-02",
+      "to": "FH-K545-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K545-M-01:K545:biological",
+      "from": "FH-K545-M-01",
+      "to": "K545",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K545-M-02:FH-K545-M-01:biological",
+      "from": "FH-K545-M-02",
+      "to": "FH-K545-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박돌윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K585-P-01:K585:biological",
+      "from": "FH-K585-P-01",
+      "to": "K585",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K585-P-02:FH-K585-P-01:biological",
+      "from": "FH-K585-P-02",
+      "to": "FH-K585-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K585-M-01:K585:biological",
+      "from": "FH-K585-M-01",
+      "to": "K585",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K585-M-02:FH-K585-M-01:biological",
+      "from": "FH-K585-M-02",
+      "to": "FH-K585-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박바윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K625-P-01:K625:biological",
+      "from": "FH-K625-P-01",
+      "to": "K625",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K625-P-02:FH-K625-P-01:biological",
+      "from": "FH-K625-P-02",
+      "to": "FH-K625-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K625-M-01:K625:biological",
+      "from": "FH-K625-M-01",
+      "to": "K625",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K625-M-02:FH-K625-M-01:biological",
+      "from": "FH-K625-M-02",
+      "to": "FH-K625-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박금은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K665-P-01:K665:biological",
+      "from": "FH-K665-P-01",
+      "to": "K665",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K665-P-02:FH-K665-P-01:biological",
+      "from": "FH-K665-P-02",
+      "to": "FH-K665-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K665-M-01:K665:biological",
+      "from": "FH-K665-M-01",
+      "to": "K665",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K665-M-02:FH-K665-M-01:biological",
+      "from": "FH-K665-M-02",
+      "to": "FH-K665-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-박솔윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K704-P-01:K704:biological",
+      "from": "FH-K704-P-01",
+      "to": "K704",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K704-P-02:FH-K704-P-01:biological",
+      "from": "FH-K704-P-02",
+      "to": "FH-K704-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K704-M-01:K704:biological",
+      "from": "FH-K704-M-01",
+      "to": "K704",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K704-M-02:FH-K704-M-01:biological",
+      "from": "FH-K704-M-02",
+      "to": "FH-K704-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-박숲윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K743-P-01:K743:biological",
+      "from": "FH-K743-P-01",
+      "to": "K743",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K743-P-02:FH-K743-P-01:biological",
+      "from": "FH-K743-P-02",
+      "to": "FH-K743-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K743-M-01:K743:biological",
+      "from": "FH-K743-M-01",
+      "to": "K743",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K743-M-02:FH-K743-M-01:biological",
+      "from": "FH-K743-M-02",
+      "to": "FH-K743-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-박마은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K781-P-01:K781:biological",
+      "from": "FH-K781-P-01",
+      "to": "K781",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K781-P-02:FH-K781-P-01:biological",
+      "from": "FH-K781-P-02",
+      "to": "FH-K781-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K781-M-01:K781:biological",
+      "from": "FH-K781-M-01",
+      "to": "K781",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K781-M-02:FH-K781-M-01:biological",
+      "from": "FH-K781-M-02",
+      "to": "FH-K781-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-박하윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K820-P-01:K820:biological",
+      "from": "FH-K820-P-01",
+      "to": "K820",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K820-P-02:FH-K820-P-01:biological",
+      "from": "FH-K820-P-02",
+      "to": "FH-K820-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K820-P-03:FH-K820-P-02:biological",
+      "from": "FH-K820-P-03",
+      "to": "FH-K820-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K820-M-01:K820:biological",
+      "from": "FH-K820-M-01",
+      "to": "K820",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K820-M-02:FH-K820-M-01:biological",
+      "from": "FH-K820-M-02",
+      "to": "FH-K820-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K820-M-03:FH-K820-M-02:biological",
+      "from": "FH-K820-M-03",
+      "to": "FH-K820-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-박별윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K858-P-01:K858:biological",
+      "from": "FH-K858-P-01",
+      "to": "K858",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K858-P-02:FH-K858-P-01:biological",
+      "from": "FH-K858-P-02",
+      "to": "FH-K858-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K858-P-03:FH-K858-P-02:biological",
+      "from": "FH-K858-P-03",
+      "to": "FH-K858-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K858-M-01:K858:biological",
+      "from": "FH-K858-M-01",
+      "to": "K858",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K858-M-02:FH-K858-M-01:biological",
+      "from": "FH-K858-M-02",
+      "to": "FH-K858-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K858-M-03:FH-K858-M-02:biological",
+      "from": "FH-K858-M-03",
+      "to": "FH-K858-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-박다은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K897-P-01:K897:biological",
+      "from": "FH-K897-P-01",
+      "to": "K897",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K897-P-02:FH-K897-P-01:biological",
+      "from": "FH-K897-P-02",
+      "to": "FH-K897-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K897-M-01:K897:biological",
+      "from": "FH-K897-M-01",
+      "to": "K897",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K897-M-02:FH-K897-M-01:biological",
+      "from": "FH-K897-M-02",
+      "to": "FH-K897-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-박라윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K934-P-01:K934:biological",
+      "from": "FH-K934-P-01",
+      "to": "K934",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K934-P-02:FH-K934-P-01:biological",
+      "from": "FH-K934-P-02",
+      "to": "FH-K934-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K934-P-03:FH-K934-P-02:biological",
+      "from": "FH-K934-P-03",
+      "to": "FH-K934-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K934-M-01:K934:biological",
+      "from": "FH-K934-M-01",
+      "to": "K934",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K934-M-02:FH-K934-M-01:biological",
+      "from": "FH-K934-M-02",
+      "to": "FH-K934-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K934-M-03:FH-K934-M-02:biological",
+      "from": "FH-K934-M-03",
+      "to": "FH-K934-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-박파윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K972-P-01:K972:biological",
+      "from": "FH-K972-P-01",
+      "to": "K972",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K972-P-02:FH-K972-P-01:biological",
+      "from": "FH-K972-P-02",
+      "to": "FH-K972-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K972-P-03:FH-K972-P-02:biological",
+      "from": "FH-K972-P-03",
+      "to": "FH-K972-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K972-M-01:K972:biological",
+      "from": "FH-K972-M-01",
+      "to": "K972",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K972-M-02:FH-K972-M-01:biological",
+      "from": "FH-K972-M-02",
+      "to": "FH-K972-M-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K972-M-03:FH-K972-M-02:biological",
+      "from": "FH-K972-M-03",
+      "to": "FH-K972-M-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-박늘은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1014-P-01:K1014:biological",
+      "from": "FH-K1014-P-01",
+      "to": "K1014",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1014-P-02:FH-K1014-P-01:biological",
+      "from": "FH-K1014-P-02",
+      "to": "FH-K1014-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1014-M-01:K1014:biological",
+      "from": "FH-K1014-M-01",
+      "to": "K1014",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1014-M-02:FH-K1014-M-01:biological",
+      "from": "FH-K1014-M-02",
+      "to": "FH-K1014-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/factions/Diaspora-Corridors.json",
+          "anchor": "인물-조엘-박-joel-park-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1019-P-01:K1019:biological",
+      "from": "FH-K1019-P-01",
+      "to": "K1019",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1019-P-02:FH-K1019-P-01:biological",
+      "from": "FH-K1019-P-02",
+      "to": "FH-K1019-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1019-P-03:FH-K1019-P-02:biological",
+      "from": "FH-K1019-P-03",
+      "to": "FH-K1019-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1019-M-01:K1019:biological",
+      "from": "FH-K1019-M-01",
+      "to": "K1019",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1019-M-02:FH-K1019-M-01:biological",
+      "from": "FH-K1019-M-02",
+      "to": "FH-K1019-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1019-M-03:FH-K1019-M-02:biological",
+      "from": "FH-K1019-M-03",
+      "to": "FH-K1019-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-박성수-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "K086:K089:household",
+      "from": "K086",
+      "to": "K089",
+      "type": "household",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Relations.json",
+          "anchor": "관계-원장-table3"
+        }
+      ]
+    },
+    {
+      "id": "FH-K169-P-03:FH-K169-P-02:biological",
+      "from": "FH-K169-P-03",
+      "to": "FH-K169-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K169-P-03"
+        }
+      ]
+    },
+    {
+      "id": "FH-K169-M-03:FH-K169-M-02:biological",
+      "from": "FH-K169-M-03",
+      "to": "FH-K169-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K169-M-03"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1014-P-03:FH-K1014-P-02:biological",
+      "from": "FH-K1014-P-03",
+      "to": "FH-K1014-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1014-P-03"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1014-M-03:FH-K1014-M-02:biological",
+      "from": "FH-K1014-M-03",
+      "to": "FH-K1014-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1014-M-03"
+        }
+      ]
+    }
+  ]
+}

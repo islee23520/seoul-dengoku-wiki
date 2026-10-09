@@ -1,0 +1,427 @@
+{
+  "clanId": "goryeong-shin",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K1009",
+      "personId": "K1009",
+      "kind": "person",
+      "name": "신종목",
+      "birthDate": "2087-09-18",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1009"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생애. 2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-1009",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K1010",
+      "personId": "K1010",
+      "kind": "person",
+      "name": "신준",
+      "birthDate": "2114-01-01",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1010"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신준-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생애. 신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신준-p2"
+            }
+          ]
+        }
+      ],
+      "generationException": {
+        "reason": "확정 생년월일과 기존 신종목→신준 관계를 보존한다. 30년 간격을 맞추기 위해 관계나 날짜를 바꾸지 않는다.",
+        "sourceRefs": [
+          {
+            "path": "lore/name-pools/cast-birthdays.json"
+          },
+          {
+            "path": "lore/characters/Core-Characters.json",
+            "anchor": "/content/181"
+          }
+        ]
+      },
+      "detailRoute": "/people/person-1010",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K1009-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "신현영",
+      "lineage": {
+        "surname": "신",
+        "bongwan": "고령",
+        "clan": "goryeong-shin"
+      },
+      "birthDate": "2057-09-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2095,
+          "summary": "신현영은 생활권의 공동 거처에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1009-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "신현윤",
+      "lineage": {
+        "surname": "신",
+        "bongwan": "고령",
+        "clan": "goryeong-shin"
+      },
+      "birthDate": "2027-09-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2065,
+          "summary": "신현윤은 생활권의 공동 거처에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1009-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "신현우",
+      "lineage": {
+        "surname": "신",
+        "bongwan": "고령",
+        "clan": "goryeong-shin"
+      },
+      "birthDate": "1997-09-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "신현우는 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1009-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이서수",
+      "birthDate": "2057-09-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2095,
+          "summary": "이서수는 생활권의 공동 거처에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1009-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최서희",
+      "birthDate": "2027-09-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2065,
+          "summary": "최서희는 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1009-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정서원",
+      "birthDate": "1997-09-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정서원은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "신종목-p2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "K1009:K1010:biological",
+      "from": "K1009",
+      "to": "K1010",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신준-p2"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1009-P-01:K1009:biological",
+      "from": "FH-K1009-P-01",
+      "to": "K1009",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1009-P-02:FH-K1009-P-01:biological",
+      "from": "FH-K1009-P-02",
+      "to": "FH-K1009-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1009-P-03:FH-K1009-P-02:biological",
+      "from": "FH-K1009-P-03",
+      "to": "FH-K1009-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1009-M-01:K1009:biological",
+      "from": "FH-K1009-M-01",
+      "to": "K1009",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1009-M-02:FH-K1009-M-01:biological",
+      "from": "FH-K1009-M-02",
+      "to": "FH-K1009-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1009-M-03:FH-K1009-M-02:biological",
+      "from": "FH-K1009-M-03",
+      "to": "FH-K1009-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "신종목-p2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}
