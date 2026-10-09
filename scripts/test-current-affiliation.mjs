@@ -11,14 +11,15 @@ const affiliations = currentAffiliations(contract, historicalRows)
 const territory = json('../public/opening-territories.json')
 
 test('current hegemons cover the sixteen immediate polities without inventing a union head', () => {
-  const expected = { S02: ['S02', 'S03', 'S08', 'S11', 'S12', 'S13'], S06: ['S01', 'S05', 'S06', 'S07', 'S09', 'S14', 'S16'] }
+  const expected = { S02: ['S02', 'S03', 'S11', 'S12', 'S13'], S06: ['S01', 'S05', 'S06', 'S07', 'S09', 'S14', 'S16'] }
   for (const [head, members] of Object.entries(expected)) {
     assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.stateId === head).map(([id]) => id).sort(), members)
   }
   assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.kind === 'union').map(([id]) => id).sort(), ['S04', 'S10', 'S15'])
   assert.equal(Object.hasOwn(affiliations.get('S04').currentHegemon, 'stateId'), false)
   assert.equal(hegemonsForHolders(['S04', 'S10', 'S15'], affiliations).length, 1)
-  assert.deepEqual(hegemonsForHolders(['S08', 'S02', 'S06'], affiliations).map(item => item.stateId), ['S02', 'S06'])
+  assert.deepEqual(affiliations.get('S08').currentHegemon, { kind: 'neutral', name: '중립' })
+  assert.deepEqual(hegemonsForHolders(['S08', 'S02', 'S06'], affiliations).map(item => item.kind), ['neutral', 'state', 'state'])
 })
 
 test('invalid missing duplicate and unknown affiliation memberships are rejected', () => {

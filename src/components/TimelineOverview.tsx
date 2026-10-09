@@ -7,8 +7,8 @@ type TimelineYear = { year: number; summary: string; pressure: string; decision:
 type TimelineOverviewData = { schema: string; years: TimelineYear[] }
 
 const periods = [
-  { id: 'all', label: '전체 연도', start: 2026, end: 2126 },
-  { id: 'survival', label: '생존 당직 2026–2039', start: 2026, end: 2039 },
+  { id: 'all', label: '전체 연도', start: 2030, end: 2126 },
+  { id: 'survival', label: '1세대 방공호 2030–2039', start: 2030, end: 2039 },
   { id: 'water', label: '생활권 장부 2040–2054', start: 2040, end: 2054 },
   { id: 'flags', label: '열여섯 깃발 2055–2069', start: 2055, end: 2069 },
   { id: 'succession', label: '세습 인준 2070–2084', start: 2070, end: 2084 },
@@ -43,7 +43,7 @@ export default function TimelineOverview() {
   return (
     <section className="timeline-overview" aria-labelledby="timeline-overview-title">
       <header>
-        <p className="wiki-domain-label"><Link to="/world/Century-Annals">서울전국 연표 2026–2126</Link></p>
+        <p className="wiki-domain-label"><Link to="/world/Century-Annals">서울전국 연표 2030–2126</Link></p>
         <h2 id="timeline-overview-title">전체 {data.years.length}개 연도 줄거리</h2>
       </header>
       <div className="timeline-periods" aria-label="연표 시대 필터">

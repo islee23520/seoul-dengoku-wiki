@@ -10,6 +10,10 @@ export function currentAffiliations(contract, stateRows) {
       byState.set(id, { kind: hegemon.kind, name: hegemon.name, ...(hegemon.kind === 'state' ? { stateId: hegemon.stateId } : {}) })
     }
   }
+  for (const id of contract.neutralStateIds ?? []) {
+    if (!ids.has(id) || byState.has(id)) throw new Error('E_HEGEMON_MEMBERSHIP:' + id)
+    byState.set(id, { kind: 'neutral', name: '중립' })
+  }
   if (byState.size !== ids.size || contract.states.length !== ids.size) throw new Error('E_HEGEMON_COVERAGE')
   const states = new Map()
   for (const state of contract.states) {

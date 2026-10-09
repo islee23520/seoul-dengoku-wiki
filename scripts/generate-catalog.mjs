@@ -364,7 +364,7 @@ const stateCatalog = stateRows.map((row) => ({
   capital: row.capital,
   capitalName: row.capital,
 }))
-await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { historicalName: string; currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
+await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentHegemon = { readonly kind: 'state'; readonly stateId: string; readonly name: string } | { readonly kind: 'union'; readonly name: string } | { readonly kind: 'neutral'; readonly name: string }\nexport type CurrentBase = { readonly kind: 'station'; readonly stationId: string; readonly name: string } | { readonly kind: 'facility'; readonly landmarkId: string; readonly name: string }\nexport type StateRecord = { historicalName: string; currentHegemon: CurrentHegemon; currentBase: CurrentBase; currentExclusiveDistricts: 'none' | 'immediate-holdings'; slug: string; id: string; name: string; origin: string; government: string; power: string; cause: string; ruler: string; capital: string; capitalName: string }\n\nexport const stateCatalog: readonly StateRecord[] = ${JSON.stringify(stateCatalog, null, 2)}\n`)
 
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
@@ -788,7 +788,7 @@ const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
 const centuryAnnalsDocument = pagesBySlug.get('Century-Annals')?.value
 const relatedTimelineDocuments = (text, hasTheaterChronicle = false) => {
-  const related = [{ title: '서울전국 연표 2026–2126', route: '/world/Century-Annals' }]
+  const related = [{ title: '서울전국 연표 2030–2126', route: '/world/Century-Annals' }]
   const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
   if (territoryStates.some((state) => text.includes(state.id) || text.includes(state.name)) || /열여섯|십육국|국호/u.test(text)) add('서울 십육국', '/world/Sixteen-States')
   if (/HC\d{2}|HP\d{2}|가문|총수|본관|항렬|법인 후계/u.test(text)) add('가문', '/world/Chaebol-Houses-and-Century-Factions')
@@ -800,7 +800,7 @@ const relatedTimelineDocuments = (text, hasTheaterChronicle = false) => {
 }
 const timelineYears = buildTimelineYears(centuryAnnalsDocument?.content ?? [], relatedTimelineDocuments)
 const emptyYears = timelineYears.filter((entry) => entry.summary.length === 0).map((entry) => entry.year)
-if (timelineYears.length === 0 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
+if (timelineYears.length === 0 || timelineYears[0]?.year !== 2030 || timelineYears.at(-1)?.year > 2126 || emptyYears.length > 0) {
   throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}:${timelineYears[0]?.year}:${timelineYears.at(-1)?.year}:${emptyYears.join(',')}`)
 }
 const stateEvents = new Map(territoryStates.map((state) => [state.name, []]))
