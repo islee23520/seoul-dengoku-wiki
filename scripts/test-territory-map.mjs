@@ -106,8 +106,12 @@ test('outside administrative units keep observed boundaries distinct from 2126 c
   const projected = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))
   assert.deepEqual(projected, { schema: source.schema, assignments: source.assignments })
   assert.equal(source.assignments.length, 1415)
-  const counts = Object.fromEntries(['대한민국정부', '규격맹', '종교 연합', '대전'].map(name => [name, source.assignments.filter(row => row.authority.name === name).length]))
-  assert.deepEqual(counts, { 대한민국정부: 153, 규격맹: 667, '종교 연합': 513, 대전: 82 })
+  if (source.schema === 'outside-control-2126.v2') {
+    const counts = Object.fromEntries(['대한민국정부', '규격맹', '종교 연합', '대전'].map(name => [name, source.assignments.filter(row => row.authority?.name === name).length]))
+    assert.deepEqual(counts, { 대한민국정부: 153, 규격맹: 667, '종교 연합': 513, 대전: 82 })
+  } else {
+    for (const row of source.assignments) assert.ok(row.authority === null || ['대한민국정부', '규격맹', '종교 연합', '대전'].includes(row.authority.name))
+  }
   assert.equal(new Set(source.assignments.map(row => row.unitId)).size, 1415)
   assert.ok(source.assignments.every(({ unitId }) => outside.units.some(unit => unit.id === unitId)))
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
@@ -627,25 +631,33 @@ test('outside units render with Seoul parity in every frame from the three-state
   const outsideLine = map.split('\n').find((line) => line.includes('data-outside-unit={unit.id}'))
   assert.ok(outsideLine)
   assert.match(outsideLine, /stroke=\{selectedOutsideUnit === unit\.id \? '#ffe18c' : '#35434b'\}/u)
-  assert.match(outsideLine, /matched \? 0\.72 : 0\.24/u)
+  assert.ok(map.split('\n').some((line) => line.includes('const fillOpacity = selectedOutsideUnit === unit.id ? 0.95')))
+  assert.match(map, /holderName \? matched \? 0\.72 : 0\.24 : 0\.1/u)
+  assert.match(outsideLine, /data-island-component=\{component\.id\}/u)
+  assert.match(outsideLine, /data-control-status=\{component\.status\}/u)
   assert.match(outsideLine, /role="button" tabIndex=\{0\}/u)
   assert.match(outsideLine, /event\.key === 'Enter' \|\| event\.key === ' '/u)
 })
 
-test('approved v2 control keeps Daejeon neutral with evidence-bound personal holdings', async () => {
+test('approved control ledger keeps Daejeon neutral with evidence-bound personal holdings', async () => {
   const units = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
   const control = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))
   const holdings = JSON.parse(await readFile(new URL('../public/confirmed-person-holdings.json', import.meta.url), 'utf8'))
   const states = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8')).states
-  assert.equal(control.schema, 'outside-control-2126.v2')
+  assert.match(control.schema, /^outside-control-2126\.v[23]$/u)
   // 배정 원장은 행정단위마다 정확히 한 줄이고 권역 종류와 국가 식별은 정본 생성물을 그대로 따른다.
   const unitById = new Map(units.units.map((unit) => [unit.id, unit]))
   assert.equal(control.assignments.length, units.units.length)
   assert.equal(new Set(control.assignments.map((row) => row.unitId)).size, units.units.length)
   for (const row of control.assignments) {
     assert.ok(unitById.has(row.unitId), row.unitId)
-    assert.ok(['state', 'union', 'neutral'].includes(row.authority.kind), row.unitId)
-    if (row.authority.kind === 'state') assert.ok(states.some((state) => state.id === row.authority.stateId), row.unitId)
+    if (row.authority === null) {
+      assert.ok(row.components?.length || row.status === 'unassigned', row.unitId)
+      for (const component of row.components ?? []) assert.ok(component.status === 'held' ? component.authority : component.authority === null, component.id)
+    } else {
+      assert.ok(['state', 'union', 'neutral'].includes(row.authority.kind), row.unitId)
+      if (row.authority.kind === 'state') assert.ok(states.some((state) => state.id === row.authority.stateId), row.unitId)
+    }
   }
   // 대전은 중립 강역이다: 도내 모든 단위가 neutral·대전이고 영주·봉신 네 사람만 개인 배정을 받는다.
   const daejeonUnits = units.units.filter((unit) => unit.province === '대전광역시')
