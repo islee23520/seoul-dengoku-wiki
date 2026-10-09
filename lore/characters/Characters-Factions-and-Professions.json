@@ -17,24 +17,26 @@
     "history": [
       "Korean lore/characters/Characters-Factions-and-Professions.md SHA-256 ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3.",
       "English SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33; translated from Korean during the JSON migration (no committed EN existed).",
-      "KO from the sweep-w1 WEB working tree (dirty). EN needs human review."
+      "KO from the sweep-w1 WEB working tree (dirty). EN needs human review.",
+      "2026-10-09 user-authorized remediation of PR #544: retain regional temperature, three environmental levels, occupational protection and individual variation; reconcile clothing with the accepted GDD WW2 silhouette, thinner higher-tier clothing and surface-exposure rules (GDD PR #63). Preserve existing identities, individual outfits and portraits; update the introductory political wording to current three-state canon."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/characters/Characters-Factions-and-Professions.md"
+      "lore/characters/Characters-Factions-and-Professions.md",
+      "https://github.com/islee23520/seoul-dengoku-gdd/blob/ec4d7f983fbe2ac733ce869a20441b21326872eb/canon/locales/ko-KR/art/character-art-direction.json"
     ]
   },
   "locales": {
     "en": {
       "title": "Characters, Factions, and Trades",
-      "summary": "A wiki diagram from 2026-09-07.",
+      "summary": "People, their trades, and clothing suited to winter exposure and station depth.",
       "tense": "present"
     },
     "ko": {
       "title": "인물·세력·생업",
-      "summary": "2026-09-07 위키 도표.",
+      "summary": "생업과 지상 노출도, 역사의 깊이에 따라 달라지는 사람들의 옷차림.",
       "tense": "present"
     }
   },
@@ -61,8 +63,8 @@
       "kind": "paragraph",
       "anchor": "인물-p1",
       "text": {
-        "en": "A named character has abilities, a trade, injuries, an affiliation, a post, beliefs, and memories of major events. The game does not store the relationship of every pair of characters; it keeps only the relationships that change decisions, such as kinship, master and disciple, command, contract, cooperation, and grudge.",
-        "ko": "2126년 십육국에는 대통령·군주·역장·사령관·회장·방장·의장·위원장 등의 직위가 있다. 수장은 각국의 장부와 시설을 관리한다."
+        "en": "At the opening in 2126, the three states and their vassals hold land and maintain their own registers and facilities.",
+        "ko": "2126년 개막에는 세 국가와 봉신이 영토를 보유하며 각자의 장부와 시설을 관리한다."
       }
     },
     {
@@ -84,11 +86,124 @@
     },
     {
       "kind": "heading",
+      "anchor": "깊이와-생업에-따른-옷차림",
+      "depth": 2,
+      "text": {
+        "ko": "깊이와 생업에 따른 옷차림",
+        "en": "Clothing by Depth and Trade"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "겨울-복식의-기본형",
+      "text": {
+        "ko": "옷의 기본 형태는 제2차 세계대전 시기인 1940년대 복장을 따른다. 티어가 높은 인물일수록 얇게 입으며, 지상에 자주 나가거나 추위에 오래 노출되는 사람일수록 두꺼운 겨울옷을 갖춘다. 가벼운 차림으로 지하에 머물던 사람도 지상 야외로 나갈 때에는 그 지역의 추위에 맞는 외투를 입는다.",
+        "en": "Clothing follows the basic silhouettes of the 1940s, during the Second World War. Higher-tier characters wear thinner clothing, while people who go above ground often or spend longer exposed to cold wear thicker winter clothes. Someone dressed lightly underground still puts on outerwear suited to the local cold before going outdoors."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "옷차림을-가르는-순서",
+      "text": {
+        "ko": "사람들의 옷차림은 지상, 중간 깊이 지하, 깊은 지하의 세 생활 환경에 따라 달라진다. 지상에서 지하로 내려가고 더 깊은 곳으로 향할수록 보온을 위한 겹이 줄며, 같은 깊이에 머무는 사람들 사이에서는 활동량과 작업 환경이 차이를 만든다. 옷의 형태와 주머니·장구 배치는 생업을 드러내고, 두께와 소재, 덧입는 겹이 그 사람이 지내는 온도에 맞춰 바뀐다. 특히 지상에서는 시·도별 겨울 기온이 외투의 두께를 크게 바꾸지만, 지하의 지역별 기온 차이는 지상보다 작다.",
+        "en": "Clothing varies between three living environments: the surface, intermediate underground, and deep underground. Insulating layers become lighter below the surface and farther down, while workload and working conditions distinguish people staying at the same depth. Garment cuts, pockets, and equipment reflect their trades; fabric, thickness, and removable layers adapt to their surroundings. Regional winter temperatures strongly affect coat thickness above ground, while regional temperature differences are smaller underground."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "지상의-복장",
+      "depth": 3,
+      "text": { "ko": "지상 생활권", "en": "Surface Quarters" }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지상-이동과-정지",
+      "text": {
+        "ko": "서울 지상에서는 −18.6℃의 혹한을 견딜 방한복을 갖춘다. 전령과 운반자는 익숙한 작업 재킷의 형태를 유지하면서 바람을 막는 겉감과 보온 내피를 더하고, 장갑과 목을 감싸는 옷으로 노출을 줄인다. 밖에서 오래 서 있는 경비와 매대 상인은 움직이는 사람보다 보온 겹을 더하며, 운반자도 짐을 내려놓고 쉴 때에는 풀어 두었던 옷깃과 여밈을 닫는다.",
+        "en": "On the surface in Seoul, people dress for severe cold of −18.6°C. Couriers and porters retain the familiar cut of their work jackets while adding wind-resistant fabric and insulating liners, gloves, and neck coverings. Guards standing watch and merchants at outdoor stalls add more insulation than people on the move. Porters close loosened collars and fastenings when they set down their loads to rest."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역별-전령의-외투",
+      "text": {
+        "ko": "같은 여성 전령이라도 강원도의 지상 기온 기준인 −21.9℃에서는 두꺼운 보온 내피로 재킷의 몸통과 소매가 부풀고, 옷깃과 소맷단에도 두께가 드러난다. 제주도의 −2.7℃ 지상에서는 같은 재킷의 주머니와 장구 배치를 유지하면서 얇은 안감으로 부피를 줄여, 좁은 소매와 유연한 주름이 나타난다. 제주에서도 영하의 바람을 막는 겉감과 장갑, 다리를 덮는 보온 겹은 남는다. 지역 차이는 목도리 같은 소품뿐 아니라 외투 자체의 부피와 소재에 드러난다.",
+        "en": "Even for the same female courier, the Gangwon surface reference of −21.9°C calls for a thick insulating liner that fills out the jacket torso and sleeves, with visible thickness at the collar and cuffs. At Jeju’s −2.7°C surface reference, the same pocket and equipment layout remains, while thinner lining reduces bulk, producing narrower sleeves and more flexible folds. Wind-resistant outer fabric, gloves, and insulating leg coverings remain necessary in Jeju’s subzero setting. Regional differences appear in the coat’s volume and fabric as well as accessories such as scarves."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지상-보호복",
+      "text": {
+        "ko": "지상에서 일하는 정비공은 팔과 손을 보호하는 작업복에 방한 안감을 더한다. 물을 다루는 사람은 물이 스미지 않는 앞치마와 장화 안쪽에도 보온 겹을 갖춘다. 작업 도구를 다루는 손의 움직임과 필요한 보호 기능을 살리면서 두께와 소재를 고르며, 남녀 모두 비슷한 수준의 방한을 갖춘다.",
+        "en": "Mechanics working above ground add insulating lining to clothing that protects their arms and hands. People handling water also insulate beneath water-resistant aprons and inside boots. Fabric and thickness preserve the hand movement and protection their work requires, while men and women maintain similar levels of protection from the cold."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "중간-깊이의-복장",
+      "depth": 3,
+      "text": { "ko": "중간 깊이의 지하 생활권", "en": "Intermediate Underground Quarters" }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "중간-깊이-이동과-정주",
+      "text": {
+        "ko": "기본 기온이 8~18℃인 중간 깊이 지하는 지상 가까운 지하 공간까지 아우르며 지상보다 따뜻하다. 전령과 운반자는 보온 내의 위에 움직임이 편한 작업 재킷을 입고, 더 따뜻한 곳에서 계속 움직일 때에는 덧옷을 벗어 가방에 묶는다. 같은 층에서 오래 앉아 일하는 기록원과 상담 담당자는 울 내의나 조끼·가디건을 더하며, 순찰하던 경비도 한곳에 서서 문을 지킬 때에는 보온 겹을 다시 입는다.",
+        "en": "Intermediate underground quarters have a baseline range of 8–18°C, include spaces close to the surface, and are warmer than the surface. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "중간-깊이-작업-소재",
+      "text": {
+        "ko": "같은 깊이의 정비공과 공방 노동자는 활동량에 맞춰 안감의 두께를 고르되 긴 보호 소매와 작업 장갑을 유지한다. 의료 담당자는 세탁하기 쉬운 긴소매와 업무에 필요한 보호구를 갖추고, 정수 담당자는 물을 막는 앞치마와 장화 안쪽의 보온을 조절한다. 기온이 같아도 움직임과 물기, 작업 중 닿는 재료가 다르므로 입는 겹과 소재가 달라진다.",
+        "en": "Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; water-treatment workers adjust insulation beneath water-resistant aprons and inside boots. At the same air temperature, people still need different layers and fabrics because their movement, exposure to water, and contact with materials differ."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "깊은-지하의-복장",
+      "depth": 3,
+      "text": { "ko": "깊은 지하 생활권", "en": "Deep Underground Quarters" }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "깊은-지하-직업별-차이",
+      "text": {
+        "ko": "기본 기온이 18~22℃인 깊은 지하 생활권에서는 활동량이 많은 전령과 운반자가 얇은 셔츠를 입고, 작업에 지장이 없을 때에는 소매를 걷거나 반소매를 고른다. 같은 구역에서 앉아 일하는 기록원이나 추위를 타는 상인은 얇은 긴소매와 가벼운 덧옷을 유지한다. 더 깊이 내려왔다고 모든 사람이 피부를 드러내거나 같은 수의 겹을 입지는 않는다.",
+        "en": "In deep underground quarters with a baseline of 18–22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "깊은-지하-보호와-귀환",
+      "text": {
+        "ko": "깊은 구역에서도 정비공은 손과 팔을 덮는 작업복을 유지하고, 물을 다루는 사람은 앞치마와 장화를 벗지 않는다. 지상 야외에 나갈 예정인 전령과 호위는 두꺼운 방한 외투를 휴대한다. 지하에서 입지 않는 옷도 이동 경로에 따라 필요한 짐으로 남는다.",
+        "en": "Even in deep areas, mechanics keep clothing that covers their hands and arms, and workers handling water retain their aprons and boots. Couriers and escorts expecting to go outdoors above ground carry insulated outerwear. A garment unnecessary underground remains part of their load when the route requires it."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "같은-깊이의-개인차",
+      "depth": 3,
+      "text": { "ko": "같은 깊이에서 드러나는 개인차", "en": "Individual Differences at the Same Depth" }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "성별보다-앞서는-일과-체감",
+      "text": {
+        "ko": "지하에서는 같은 일을 하는 남성이 여성보다 가볍게 입는 경향이 있으나, 이 차이는 하는 일과 개인의 체감보다 앞서지 않는다. 추위를 타는 남성 기록원은 조끼를 입을 수 있고, 바쁘게 움직이는 여성 전령은 재킷을 벗을 수 있다. 지상에 나서면 남녀 모두 비슷한 수준의 방한복을 갖추며, 지하에서의 가벼운 옷차림을 그대로 이어 가지 않는다.",
+        "en": "Underground, men doing comparable work tend to dress more lightly than women, but that tendency does not override their tasks or individual comfort. A male clerk sensitive to cold may wear a vest, while a busy female courier may remove her jacket. Above ground, both use a comparable level of cold-weather protection rather than keeping their light underground clothing."
+      }
+    },
+    {
+      "kind": "heading",
       "anchor": "십육국과-핵심-인물",
       "depth": 2,
       "text": {
-        "en": "The Sixteen States and Core Characters",
-        "ko": "십육국과 인물"
+        "en": "The Three States and Their Vassals",
+        "ko": "세 국가와 봉신"
       }
     },
     {
@@ -105,204 +220,62 @@
       "anchor": "출처-list1",
       "items": [
         {
+          "ko": [{ "text": "시·도별 지상 기온과 대표 관측소", "link": { "domain": "places", "slug": "World-and-Subway-Layers", "anchor": "시도별-지상-기온" } }],
+          "en": [{ "text": "Regional surface references and selected weather stations", "link": { "domain": "places", "slug": "World-and-Subway-Layers", "anchor": "시도별-지상-기온" } }]
+        },
+        {
+          "ko": [{ "text": "역사의 깊이와 겨울 생활 환경", "link": { "domain": "places", "slug": "World-and-Subway-Layers", "anchor": "겨울과-역사의-깊이" } }],
+          "en": [{ "text": "Station depth and winter living conditions", "link": { "domain": "places", "slug": "World-and-Subway-Layers", "anchor": "겨울과-역사의-깊이" } }]
+        },
+        {
           "ko": [
             {
               "text": "세력과 외교, 전쟁과 공성 규칙",
-              "link": {
-                "domain": "gdd",
-                "slug": "rules/Rules-FactionsWarfare"
-              }
+              "link": { "domain": "gdd", "slug": "rules/Rules-FactionsWarfare" }
             }
           ],
           "en": [
             {
               "text": "Factions, Diplomacy, War and Siege Rules",
-              "link": {
-                "domain": "gdd",
-                "slug": "rules/Rules-FactionsWarfare"
-              }
+              "link": { "domain": "gdd", "slug": "rules/Rules-FactionsWarfare" }
             }
           ]
         },
         {
-          "ko": [
-            {
-              "text": "회랑 인물 총람",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Corridors-Index"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Corridor Cast Index",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Corridors-Index"
-              }
-            }
-          ]
+          "ko": [{ "text": "회랑 인물 총람", "link": { "domain": "characters", "slug": "Cast-Corridors-Index" } }],
+          "en": [{ "text": "Corridor Cast Index", "link": { "domain": "characters", "slug": "Cast-Corridors-Index" } }]
         },
         {
-          "ko": [
-            {
-              "text": "인물 총람",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Index"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Cast Compendium",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Index"
-              }
-            }
-          ]
+          "ko": [{ "text": "인물 총람", "link": { "domain": "characters", "slug": "Cast-Index" } }],
+          "en": [{ "text": "Cast Compendium", "link": { "domain": "characters", "slug": "Cast-Index" } }]
         },
         {
-          "ko": [
-            {
-              "text": "관계 원장",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Relations"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Relation Ledger",
-              "link": {
-                "domain": "characters",
-                "slug": "Cast-Relations"
-              }
-            }
-          ]
+          "ko": [{ "text": "관계 원장", "link": { "domain": "characters", "slug": "Cast-Relations" } }],
+          "en": [{ "text": "Relation Ledger", "link": { "domain": "characters", "slug": "Cast-Relations" } }]
         },
         {
-          "ko": [
-            {
-              "text": "등장인물",
-              "link": {
-                "domain": "characters",
-                "slug": "Core-Characters"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Characters",
-              "link": {
-                "domain": "characters",
-                "slug": "Core-Characters"
-              }
-            }
-          ]
+          "ko": [{ "text": "등장인물", "link": { "domain": "characters", "slug": "Core-Characters" } }],
+          "en": [{ "text": "Characters", "link": { "domain": "characters", "slug": "Core-Characters" } }]
         },
         {
-          "ko": [
-            {
-              "text": "시나리오 타임라인",
-              "link": {
-                "domain": "chronology",
-                "slug": "Scenario-Timeline"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Scenario Timeline",
-              "link": {
-                "domain": "chronology",
-                "slug": "Scenario-Timeline"
-              }
-            }
-          ]
+          "ko": [{ "text": "시나리오 타임라인", "link": { "domain": "chronology", "slug": "Scenario-Timeline" } }],
+          "en": [{ "text": "Scenario Timeline", "link": { "domain": "chronology", "slug": "Scenario-Timeline" } }]
         },
         {
-          "ko": [
-            {
-              "text": "가치관과 정책 척도",
-              "link": {
-                "domain": "culture",
-                "slug": "Values-and-Policy-Scales"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Values and Policy Scales",
-              "link": {
-                "domain": "culture",
-                "slug": "Values-and-Policy-Scales"
-              }
-            }
-          ]
+          "ko": [{ "text": "가치관과 정책 척도", "link": { "domain": "culture", "slug": "Values-and-Policy-Scales" } }],
+          "en": [{ "text": "Values and Policy Scales", "link": { "domain": "culture", "slug": "Values-and-Policy-Scales" } }]
         },
         {
-          "ko": [
-            {
-              "text": "재벌 가문과 세기 파벌",
-              "link": {
-                "domain": "factions",
-                "slug": "Chaebol-Houses-and-Century-Factions"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Chaebol Houses and the Century Factions",
-              "link": {
-                "domain": "factions",
-                "slug": "Chaebol-Houses-and-Century-Factions"
-              }
-            }
-          ]
+          "ko": [{ "text": "재벌 가문과 세기 파벌", "link": { "domain": "factions", "slug": "Chaebol-Houses-and-Century-Factions" } }],
+          "en": [{ "text": "Chaebol Houses and the Century Factions", "link": { "domain": "factions", "slug": "Chaebol-Houses-and-Century-Factions" } }]
         },
         {
-          "ko": [
-            {
-              "text": "이주민 회랑",
-              "link": {
-                "domain": "factions",
-                "slug": "Diaspora-Corridors"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Diaspora Corridors",
-              "link": {
-                "domain": "factions",
-                "slug": "Diaspora-Corridors"
-              }
-            }
-          ]
+          "ko": [{ "text": "이주민 회랑", "link": { "domain": "factions", "slug": "Diaspora-Corridors" } }],
+          "en": [{ "text": "Diaspora Corridors", "link": { "domain": "factions", "slug": "Diaspora-Corridors" } }]
         },
         {
-          "ko": [
-            {
-              "text": "서울 십육국",
-              "link": {
-                "domain": "factions",
-                "slug": "Sixteen-States"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "The Sixteen States of Seoul",
-              "link": {
-                "domain": "factions",
-                "slug": "Sixteen-States"
-              }
-            }
-          ]
+          "ko": [{ "text": "세 국가와 봉신", "link": { "domain": "factions", "slug": "Sixteen-States" } }],
+          "en": [{ "text": "The Three States and Their Vassals", "link": { "domain": "factions", "slug": "Sixteen-States" } }]
         }
       ]
     }
