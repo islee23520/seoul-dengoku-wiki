@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0719",
+  "characterId": "K719",
+  "name": "송도현",
+  "stateId": "S08",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "경매 서기"
+  },
+  "artProposal": {
+    "face": "흰 피부와 밝은 갈색 눈, 곧은 콧대와 또렷한 턱선. 차분하고 서늘한 눈매 아래에 옅은 음영이 남아 있다.",
+    "hair": "자연스럽게 가르마를 탄 검은 머리와 이마로 내려온 앞머리.",
+    "upper": "밝은 셔츠 위에 짙은 회색 작업 재킷을 걸쳤다.",
+    "lower": null,
+    "footwear": null
+  },
+  "style": {
+    "referenceSha256": "c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9",
+    "portraitShotId": "medium-close-up-119",
+    "styleId": "seoul-original-style-c3a7e481",
+    "referenceRole": "style-only"
+  },
+  "image": {
+    "path": "/portraits/person-0719.png",
+    "sha256": "2b5d7f4af901243956b78328c93bce963caa34363f492da2c02f8005d5536675",
+    "width": 1145,
+    "height": 1374
+  },
+  "imageReview": {
+    "record": "/portrait-reviews/person-0719.json",
+    "imageSha256": "2b5d7f4af901243956b78328c93bce963caa34363f492da2c02f8005d5536675",
+    "verdict": "pass"
+  }
+}

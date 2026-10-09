@@ -38,9 +38,9 @@ export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
   approvedAt: "2026-10-09",
-  ownerRef: "task57-67-implementation-brief: 승인된 대전 소속·현재 국가명 변경에서 재계산한 입력; 발급 인물 보존",
-  inputSha256: "fa52d710f6d5c5324d9cdd38c818f9958e61cb1c77c4e0d968d4fb7a0dc51961",
-  candidatesSha256: "48708dd9202e1178013784303aed4bbd6d791a3bc666f1358e900e4f2fb2b44b",
+  ownerRef: "2026-10-09 승인된 대전 소속·현재 국가명 변경과 K719 송도현 개명을 병합; 기존 송(宋)·은진(恩津) 및 발급 인물 보존",
+  inputSha256: "1bc77ccc7d261ee2dade3c1433d26ea5ae1054c5f7fa9e1f6a0f34e9348d929a",
+  candidatesSha256: "e208daf90927feeb9a04ac096190987a16903ab809e2265545fef9b968e30034",
 };
 export const FROZEN = { existingK: 422, issued: 600, total: 1022 };
 

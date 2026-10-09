@@ -2,14 +2,23 @@
   "schemaVersion": 1,
   "personId": "person-0195",
   "characterId": "K194",
-  "imageSha256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0",
+  "imageSha256": "51d2d5bc8bc9731ab68a5360a661b8158de9715d373dee3085a067b3386be401",
   "canonPromotion": false,
   "final3dPortraitContractSatisfied": false,
   "technology": "2d-image",
   "ownerVerdict": {
     "verdict": "pass"
   },
+  "imageModification": {
+    "operation": "body-improvement",
+    "inputSha256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0",
+    "outputSha256": "51d2d5bc8bc9731ab68a5360a661b8158de9715d373dee3085a067b3386be401",
+    "generationReceiptAvailable": true,
+    "originalRgbPreserved": false,
+    "exactReductionMeasured": false
+  },
   "imageHashHistory": [
+    "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0",
     "e0bee2bf81e8aab8cddaa6545ad80523befb244dcb8a24463887763fa95af5c0",
     "d0e57199b6a18fad72495d9ad46a3d303762d6a186d6f73d4f057fe3c4603a28"
   ]

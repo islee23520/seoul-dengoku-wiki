@@ -11,12 +11,12 @@
     "role": "중앙정보부 원장"
   },
   "artProposal": {
-    "description": "A woman who directs technical preservation; proposed dark hair tied low, keen restrained gaze, plain warm taupe work jacket, no tools or keys.",
+    "description": "A 48-year-old woman with dark hair tied low, a keen restrained gaze, subtly reduced cheek fullness and a warm complexion; plain warm taupe work jacket, no tools or keys.",
     "approvedAppearance": null,
     "approvedOutfit": null,
     "approvedEquipmentIds": [],
     "approvalNote": "Every visible appearance and clothing choice in this image is an unapproved art proposal, not WIKI canon. No equipment approval is inferred.",
-    "face": "예리하지만 절제된 시선",
+    "face": "예리하지만 절제된 시선과 은은하게 패인 볼 윤곽",
     "hair": "낮게 묶은 짙은 머리",
     "upper": "도구나 열쇠 없는 따뜻한 회갈색 작업 재킷",
     "lower": null,
@@ -34,13 +34,13 @@
   },
   "image": {
     "path": "/portraits/person-0195.png",
-    "sha256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0",
-    "width": 1152,
+    "sha256": "51d2d5bc8bc9731ab68a5360a661b8158de9715d373dee3085a067b3386be401",
+    "width": 1151,
     "height": 1366
   },
   "imageReview": {
     "record": "/portrait-reviews/person-0195.json",
-    "imageSha256": "6a5fd7eda79fac68ceef757d6a135ae8775f302fa1f84ac1e6b8d1cb354c9aa0",
+    "imageSha256": "51d2d5bc8bc9731ab68a5360a661b8158de9715d373dee3085a067b3386be401",
     "verdict": "pass",
     "scope": "exact approved transparent PNG only"
   },
@@ -63,7 +63,7 @@
   "slots": {
     "face": {
       "description": {
-        "value": "예리하지만 절제된 시선",
+        "value": "예리하지만 절제된 시선과 은은하게 패인 볼 윤곽",
         "status": "art-proposal",
         "source": "portrait-tokens/person-0195.json"
       },

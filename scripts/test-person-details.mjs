@@ -54,13 +54,14 @@ const selectedCard = async (name) => {
   for (const slug of cardSources) {
     if (!sourcePages.has(slug)) {
       const document = JSON.parse(await readFile(new URL(`../lore/characters/${slug}.json`, import.meta.url), 'utf8'))
-      sourcePages.set(slug, { markdown: renderLoreMarkdown(document, 'ko'), primary: document.data?.primary_detail_names ?? [] })
+      sourcePages.set(slug, { document, primary: document.data?.primary_detail_names ?? [] })
     }
     const source = sourcePages.get(slug)
-    const heading = slug === 'Core-Characters' ? `## ${name}` : `### 인물 ${name}`
-    const start = source.markdown.indexOf(`${heading}\n`)
+    const heading = slug === 'Core-Characters' ? name : `인물 ${name}`
+    const start = source.document.content.findIndex(node => node.kind === 'heading' && node.text.ko === heading)
     if (start < 0) continue
-    const body = source.markdown.slice(start + heading.length).split(/\n#{2,3} /u, 1)[0]
+    const next = source.document.content.findIndex((node, index) => index > start && node.kind === 'heading' && node.depth <= 3)
+    const body = renderLoreMarkdown({ ...source.document, content: source.document.content.slice(start + 1, next < 0 ? undefined : next) }, 'ko')
     candidates.push({ slug, body, primary: source.primary.includes(name) })
   }
   assert.ok(candidates.length > 0, name)

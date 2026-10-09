@@ -30,6 +30,7 @@ test('portrait properties and immutable images follow the registered portrait ca
   const selectedIds = new Set(selection.records.map(row => row.personId))
   const properties = JSON.parse(await readFile(new URL('../portrait-properties.json', import.meta.url), 'utf8'))
   const genders = JSON.parse(await readFile(new URL('../lore/name-pools/gender-cast.json', import.meta.url), 'utf8')).people
+  const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8')).persons
   assert.ok(catalog.entries.length > 0)
   assert.equal(new Set(catalog.entries.map(entry => entry.personId)).size, catalog.entries.length)
   const iyen = catalog.entries.find(entry => entry.characterId === 'K1004')
@@ -47,7 +48,8 @@ test('portrait properties and immutable images follow the registered portrait ca
     assert.equal(token.facts.role, detail.position, entry.personId + ' current canonical role')
     assert.equal(token.stateId, entry.stateId, entry.personId + ' catalog/token state')
     if (selection.records.find(row => row.personId === entry.personId)?.operation === 'register-approved') {
-      assert.equal(entry.characterId, detail.fields['캐릭터 ID'])
+      assert.equal(registry.find(person => person.id === entry.characterId)?.name, detail.name)
+      if (detail.fields['캐릭터 ID'] !== undefined) assert.equal(entry.characterId, detail.fields['캐릭터 ID'])
       assert.equal(entry.stateId, detail.state === 'S00' ? null : detail.state, entry.personId + ' registered state')
     }
     assert.equal(token.approval, 'art-proposal')

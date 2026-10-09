@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto'
 
 // Owner approved the numeric bands. This candidate pins their derived assignment
 // snapshot; its byte hash is computed evidence, not a separate human hash approval.
-const approvedCohortSha256 = '55c6c45e23a2b91abf7cea9f8470e45cac259f08226d86735f5c70df0ea4c758'
+const approvedCohortSha256 = '228400355890c3ea7a2364bd9b7032ed036fd3373d85e90699678a2ddcb2d06c'
 const cohortText = await readFile(new URL('../lore/name-pools/cast-birth-cohorts.json', import.meta.url), 'utf8')
 export function assertBirthCohortContract(text) {
   if (createHash('sha256').update(text).digest('hex') !== approvedCohortSha256) throw new Error('E_BIRTH_COHORT_APPROVAL')
