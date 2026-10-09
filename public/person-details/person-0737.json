@@ -3,6 +3,7 @@
   "name": "우솔진",
   "title": "가족 전령",
   "position": "총회 전령 행자",
+  "characterId": "K737",
   "rank": "행자",
   "commonTier": "T5",
   "occupation": "총회 전령·필사본 인계",
@@ -284,60 +285,333 @@
   },
   "gurps": {
     "id": "K737",
-    "personId": "person-0737",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 11,
-        "cp": 10
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0737"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S10",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S10",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K737",
+            "name": "우솔진",
+            "url": "/people/person-0737",
+            "state": "S10",
+            "method": "card-lexicon",
+            "role": {
+              "display": "총회 전령·필사본 인계",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-10.json",
+                  "pointer": "/content/479/items/0/ko",
+                  "quote": "생업: 총회 전령·필사본 인계"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 11,
+                "cp": 10,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/481/text/ko",
+                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
+                  }
+                ]
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/480/text/ko",
+                    "quote": "자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/479/items/0/ko",
+                    "quote": "생업: 총회 전령·필사본 인계"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/480/text/ko",
+                    "quote": "자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/479/items/0/ko",
+                    "quote": "생업: 총회 전령·필사본 인계"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 11,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 24,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 30,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 46,
+              "unspent": 29,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 안국총림 규모",
+              "faction_scale": {
+                "state": "S10",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "동묘앞",
+              "type": "초소 영지",
+              "station": "동묘앞",
+              "state": "S10",
+              "settlement": {
+                "name": "동묘앞 정착지",
+                "type": "정착지",
+                "description": "동묘앞 일대 고정 거점"
+              },
+              "note": "S10 동묘앞 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 14,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S10",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K737",
+            "name": "우솔진",
+            "url": "/people/person-0737",
+            "state": "S10",
+            "method": "card-lexicon",
+            "role": {
+              "display": "총회 전령·필사본 인계",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-10.json",
+                  "pointer": "/content/479/items/0/ko",
+                  "quote": "생업: 총회 전령·필사본 인계"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 11,
+                "cp": 10,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/481/text/ko",
+                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
+                  }
+                ]
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/480/text/ko",
+                    "quote": "자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/479/items/0/ko",
+                    "quote": "생업: 총회 전령·필사본 인계"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/480/text/ko",
+                    "quote": "자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-10.json",
+                    "pointer": "/content/479/items/0/ko",
+                    "quote": "생업: 총회 전령·필사본 인계"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 11,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 24,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 30,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 46,
+              "unspent": 29,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 안국총림 규모",
+              "faction_scale": {
+                "state": "S10",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "동묘앞",
+              "type": "초소 영지",
+              "station": "동묘앞",
+              "state": "S10",
+              "settlement": {
+                "name": "동묘앞 정착지",
+                "type": "정착지",
+                "description": "동묘앞 일대 고정 거점"
+              },
+              "note": "S10 동묘앞 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 30,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 46,
-      "unspent": 29,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 11,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 24,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

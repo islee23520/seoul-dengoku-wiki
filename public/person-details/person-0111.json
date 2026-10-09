@@ -3,6 +3,7 @@
   "name": "배나경",
   "title": "급수계약 만료 협상 서기",
   "position": "급수계약 만료 협상 서기",
+  "characterId": "K110",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "급수계약 사본 대조",
@@ -284,66 +285,363 @@
   },
   "gurps": {
     "id": "K110",
-    "personId": "person-0111",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0111"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S04",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S04",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K110",
+            "name": "배나경",
+            "url": "/people/person-0111",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "급수계약 사본 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/247/items/1/ko",
+                  "quote": "생업: 급수계약 사본 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/248/text/ko",
+                    "quote": "뚝섬 쪽 사본과 여의도 쪽 사본의 잉크 색을 다르게 두고, 한쪽만 날인된 연장은 철하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/247/items/1/ko",
+                    "quote": "생업: 급수계약 사본 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/248/text/ko",
+                    "quote": "뚝섬 쪽 사본과 여의도 쪽 사본의 잉크 색을 다르게 두고, 한쪽만 날인된 연장은 철하지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/247/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "장안동",
+              "type": "초소 영지",
+              "station": "장안동",
+              "state": "S04",
+              "settlement": {
+                "name": "장안동 정착지",
+                "type": "정착지",
+                "description": "장안동 일대 고정 거점"
+              },
+              "note": "S04 장안동 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S04",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K110",
+            "name": "배나경",
+            "url": "/people/person-0111",
+            "state": "S04",
+            "method": "card-lexicon",
+            "role": {
+              "display": "급수계약 사본 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-04.json",
+                  "pointer": "/content/247/items/1/ko",
+                  "quote": "생업: 급수계약 사본 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/248/text/ko",
+                    "quote": "뚝섬 쪽 사본과 여의도 쪽 사본의 잉크 색을 다르게 두고, 한쪽만 날인된 연장은 철하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/247/items/1/ko",
+                    "quote": "생업: 급수계약 사본 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/248/text/ko",
+                    "quote": "뚝섬 쪽 사본과 여의도 쪽 사본의 잉크 색을 다르게 두고, 한쪽만 날인된 연장은 철하지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-04.json",
+                    "pointer": "/content/247/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 명부교회 규모",
+              "faction_scale": {
+                "state": "S04",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "장안동",
+              "type": "초소 영지",
+              "station": "장안동",
+              "state": "S04",
+              "settlement": {
+                "name": "장안동 정착지",
+                "type": "정착지",
+                "description": "장안동 일대 고정 거점"
+              },
+              "note": "S04 장안동 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 13,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

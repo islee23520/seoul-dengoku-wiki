@@ -3,6 +3,7 @@
   "name": "추지훈",
   "title": "차륜 정비 불량 폭로자",
   "position": "성하전자 차륜 정비 불량 폭로자",
+  "characterId": "K289",
   "rank": "사원",
   "commonTier": "T5",
   "occupation": "차륜 정비 일지·불량 부품 표본 공개",
@@ -391,66 +392,373 @@
   },
   "gurps": {
     "id": "K289",
-    "personId": "person-0290",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0290"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S11",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S11",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K289",
+            "name": "추지훈",
+            "url": "/people/person-0290",
+            "state": "S11",
+            "method": "card-lexicon",
+            "role": {
+              "display": "차륜 정비 일지·불량 부품 표본 공개",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-11.json",
+                  "pointer": "/content/193/items/0/ko",
+                  "quote": "생업: 차륜 정비 일지·불량 부품 표본 공개"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 추지훈은 같은 로트의 깎인 베어링을 기지 정문에 걸어 폭로했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 공개"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 공개"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 추지훈은 같은 로트의 깎인 베어링을 기지 정문에 걸어 폭로했다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/193/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
+              "faction_scale": {
+                "state": "S11",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "길동",
+              "type": "초소 영지",
+              "station": "길동",
+              "state": "S11",
+              "settlement": {
+                "name": "길동 정착지",
+                "type": "정착지",
+                "description": "길동 일대 고정 거점"
+              },
+              "note": "S11 길동 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S11",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K289",
+            "name": "추지훈",
+            "url": "/people/person-0290",
+            "state": "S11",
+            "method": "card-lexicon",
+            "role": {
+              "display": "차륜 정비 일지·불량 부품 표본 공개",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-11.json",
+                  "pointer": "/content/193/items/0/ko",
+                  "quote": "생업: 차륜 정비 일지·불량 부품 표본 공개"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 추지훈은 같은 로트의 깎인 베어링을 기지 정문에 걸어 폭로했다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 공개"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/194/text/ko",
+                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/193/items/0/ko",
+                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 공개"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/195/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 추지훈은 같은 로트의 깎인 베어링을 기지 정문에 걸어 폭로했다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-11.json",
+                    "pointer": "/content/193/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
+              "faction_scale": {
+                "state": "S11",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "길동",
+              "type": "초소 영지",
+              "station": "길동",
+              "state": "S11",
+              "settlement": {
+                "name": "길동 정착지",
+                "type": "정착지",
+                "description": "길동 일대 고정 거점"
+              },
+              "note": "S11 길동 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

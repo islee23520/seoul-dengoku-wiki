@@ -3,6 +3,7 @@
   "name": "올렉산드르 셰우첸코",
   "title": "후계시험 부품 고발 보조",
   "position": "후계시험 부품 고발 보조",
+  "characterId": "K192",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "후계시험 부품 표본·환적 로트 봉인",
@@ -281,66 +282,383 @@
   },
   "gurps": {
     "id": "K192",
-    "personId": "person-0193",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0193"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S07",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S07",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K192",
+            "name": "올렉산드르 셰우첸코",
+            "url": "/people/person-0193",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "후계시험 부품 표본·환적 로트 봉인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/248/items/2/ko",
+                  "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/248/items/2/ko",
+                    "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/248/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "가산디지털단지",
+              "type": "초소 영지",
+              "station": "가산디지털단지",
+              "state": "S07",
+              "settlement": {
+                "name": "가산디지털단지 정착지",
+                "type": "정착지",
+                "description": "가산디지털단지 일대 고정 거점"
+              },
+              "note": "S07 가산디지털단지 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S07",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K192",
+            "name": "올렉산드르 셰우첸코",
+            "url": "/people/person-0193",
+            "state": "S07",
+            "method": "card-lexicon",
+            "role": {
+              "display": "후계시험 부품 표본·환적 로트 봉인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-07.json",
+                  "pointer": "/content/248/items/2/ko",
+                  "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/248/items/2/ko",
+                    "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-07.json",
+                    "pointer": "/content/248/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 80,
+              "unspent": 0,
+              "total": 80
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 환적국 규모",
+              "faction_scale": {
+                "state": "S07",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "가산디지털단지",
+              "type": "초소 영지",
+              "station": "가산디지털단지",
+              "state": "S07",
+              "settlement": {
+                "name": "가산디지털단지 정착지",
+                "type": "정착지",
+                "description": "가산디지털단지 일대 고정 거점"
+              },
+              "note": "S07 가산디지털단지 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 80,
-      "unspent": 0,
-      "total": 80
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

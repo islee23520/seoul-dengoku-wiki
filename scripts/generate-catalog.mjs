@@ -30,9 +30,12 @@ import { loadHouseholdSourceDocuments, validateCastHouseholdRelations } from './
 import { loadCastFamilyTrees, projectFamilyTree } from './cast-family-trees.mjs'
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
 import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
+import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
+// Fail before touching generated output when either revision is unbound or invalid.
+const preservedSheets = loadPreservedPersonSheets()
 const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
 const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
 const generatedRoot = resolve(projectRoot, 'src/generated')
@@ -991,6 +994,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
     name: person.name,
     title: person.title,
     position,
+    characterId: issuedIdByName.get(person.name),
     rank,
     commonTier,
     occupation,
@@ -1057,16 +1061,10 @@ for (const person of peopleCatalog) {
     proseContacts: proseContactsById.get(issuedId) ?? [],
     household: householdsById.get(issuedId),
     ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
-    gurps: {
-      id: issuedId,
-      personId: person.id,
-      band: sheet.band,
-      attributes: Object.fromEntries(Object.entries(sheet.attributes).map(([key, { value, cp }]) => [key, { value, cp }])),
-      traits: sheet.traits.map(({ name, kind, cp, rule }) => ({ name, kind, cp, rule })),
-      skills: sheet.skills.map(({ name, ko, level, cp }) => ({ name, ko, level, cp })),
-      cp: sheet.cp,
-      secondary: sheet.secondary,
-    },
+    gurps: { id: issuedId, personId: person.id },
+    personSheet: projectPreservedPersonSheet(preservedSheets, {
+      id: issuedId, personId: person.id, name: person.name, state: person.state, url: person.detailRoute,
+    }),
     confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
     ...(personalHoldings.polities.some(polity => polity.sovereignPersonId === issuedId) ? { sovereignTitle: personalHoldings.polities.find(polity => polity.sovereignPersonId === issuedId) } : {}),
     ...(personalHoldings.retinueGroups.some(group => group.liegePersonId === issuedId) ? { retinueGroups: personalHoldings.retinueGroups.filter(group => group.liegePersonId === issuedId) } : {}),

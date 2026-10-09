@@ -3,6 +3,7 @@
   "name": "허은찬",
   "title": "신정기지 유치선 전력감독",
   "position": "신정기지 유치선 전력감독",
+  "characterId": "K018",
   "rank": "당직장",
   "commonTier": "T4",
   "occupation": "전력 설비 운전",
@@ -283,66 +284,363 @@
   },
   "gurps": {
     "id": "K018",
-    "personId": "person-0018",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0018"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S01",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S01",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K018",
+            "name": "허은찬",
+            "url": "/people/person-0018",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "전력 설비 운전",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/61/items/1/ko",
+                  "quote": "생업: 전력 설비 운전"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/62/text/ko",
+                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/63/text/ko",
+                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/61/items/1/ko",
+                    "quote": "생업: 전력 설비 운전"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/62/text/ko",
+                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/63/text/ko",
+                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/61/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "오천",
+              "type": "초소 영지",
+              "station": "오천",
+              "state": "S01",
+              "settlement": {
+                "name": "오천 정착지",
+                "type": "정착지",
+                "description": "오천 일대 고정 거점"
+              },
+              "note": "S01 오천 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S01",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K018",
+            "name": "허은찬",
+            "url": "/people/person-0018",
+            "state": "S01",
+            "method": "card-lexicon",
+            "role": {
+              "display": "전력 설비 운전",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-01.json",
+                  "pointer": "/content/61/items/1/ko",
+                  "quote": "생업: 전력 설비 운전"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/62/text/ko",
+                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/63/text/ko",
+                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/61/items/1/ko",
+                    "quote": "생업: 전력 설비 운전"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/62/text/ko",
+                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Mechanic/TL?",
+                "ko": "기계 정비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/63/text/ko",
+                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
+                  }
+                ],
+                "cp": 4,
+                "level": 13
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-01.json",
+                    "pointer": "/content/61/items/3/ko",
+                    "quote": "단철공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 수문국 규모",
+              "faction_scale": {
+                "state": "S01",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "오천",
+              "type": "초소 영지",
+              "station": "오천",
+              "state": "S01",
+              "settlement": {
+                "name": "오천 정착지",
+                "type": "정착지",
+                "description": "오천 일대 고정 거점"
+              },
+              "note": "S01 오천 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Electrician/TL?",
-        "ko": "전력 설비",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Mechanic/TL?",
-        "ko": "기계 정비",
-        "level": 13,
-        "cp": 4
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

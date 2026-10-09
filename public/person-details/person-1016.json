@@ -3,6 +3,7 @@
   "name": "최일석",
   "title": "동원 명부 서기",
   "position": "동원 명부 서기",
+  "characterId": "K1016",
   "rank": "없음",
   "commonTier": "T5",
   "occupation": "순찰대 (주). 기록관 (부, 명부)",
@@ -384,60 +385,335 @@
   },
   "gurps": {
     "id": "K1016",
-    "personId": "person-1016",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 10,
-        "cp": 0
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-1016"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S06",
+    "variants": [
       {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 12,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S06",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1016",
+            "name": "최일석",
+            "url": "/people/person-1016",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "순찰대 (주). 기록관 (부, 명부)",
+              "evidence": [
+                {
+                  "path": "lore/factions/Diaspora-Corridors.json",
+                  "pointer": "/content/18/items/10/ko",
+                  "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/18/items/10/ko",
+                    "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/18/items/10/ko",
+                    "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
+                  }
+                ],
+                "cp": 4,
+                "level": 11
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/18/items/9/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 12,
+              "unspent": 63,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "고가도로 야영지",
+              "camp": {
+                "name": "최일석 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 11,
-        "cp": 4
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S06",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1016",
+            "name": "최일석",
+            "url": "/people/person-1016",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "순찰대 (주). 기록관 (부, 명부)",
+              "evidence": [
+                {
+                  "path": "lore/factions/Diaspora-Corridors.json",
+                  "pointer": "/content/18/items/10/ko",
+                  "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/18/items/10/ko",
+                    "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/18/items/10/ko",
+                    "quote": "생업: 순찰대 (주). 기록관 (부, 명부)"
+                  }
+                ],
+                "cp": 4,
+                "level": 11
+              }
+            ],
+            "languages": [
+              {
+                "name": "한국어",
+                "level": "Native",
+                "cp": 0,
+                "evidence": [
+                  {
+                    "path": "lore/factions/Diaspora-Corridors.json",
+                    "pointer": "/content/18/items/9/ko",
+                    "quote": "언어: 한국어"
+                  }
+                ]
+              }
+            ],
+            "secondary": {
+              "HP": 10,
+              "Will": 10,
+              "Per": 10,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 0,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 12,
+              "spent": 12,
+              "unspent": 63,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 2,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 소세력 S00 규모",
+              "faction_scale": {
+                "state": "S00",
+                "tier": "소세력",
+                "factor": 0.7
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 2,
+              "current_location": "고가도로 야영지",
+              "camp": {
+                "name": "최일석 야영지",
+                "type": "야영지",
+                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 0,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 12,
-      "spent": 12,
-      "unspent": 63,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 10,
-      "Per": 10,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

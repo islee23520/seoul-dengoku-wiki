@@ -3,6 +3,7 @@
   "name": "배우진",
   "title": "사령관",
   "position": "동방사 사령관",
+  "characterId": "K115",
   "rank": "사령관",
   "commonTier": "T1",
   "occupation": "복구복무 명부·부품 대가 조정",
@@ -295,66 +296,403 @@
   },
   "gurps": {
     "id": "K115",
-    "personId": "person-0116",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0116"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S05",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S05",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K115",
+            "name": "배우진",
+            "url": "/people/person-0116",
+            "state": "S05",
+            "method": "card-lexicon",
+            "role": {
+              "display": "복구복무 명부·부품 대가 조정",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-05.json",
+                  "pointer": "/content/2/items/1/ko",
+                  "quote": "생업: 복구복무 명부·부품 대가 조정"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/43/text/ko",
+                    "quote": "배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/2/items/1/ko",
+                    "quote": "생업: 복구복무 명부·부품 대가 조정"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/46/text/ko",
+                    "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/2/items/1/ko",
+                    "quote": "생업: 복구복무 명부·부품 대가 조정"
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/43/text/ko",
+                    "quote": "배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "수벽술."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/45/text/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 동방사 규모",
+              "faction_scale": {
+                "state": "S05",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "외곽 산지",
+              "camp": {
+                "name": "배우진 산림 야영지",
+                "type": "야영지",
+                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S05",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K115",
+            "name": "배우진",
+            "url": "/people/person-0116",
+            "state": "S05",
+            "method": "card-lexicon",
+            "role": {
+              "display": "복구복무 명부·부품 대가 조정",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-05.json",
+                  "pointer": "/content/2/items/1/ko",
+                  "quote": "생업: 복구복무 명부·부품 대가 조정"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/43/text/ko",
+                    "quote": "배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/2/items/1/ko",
+                    "quote": "생업: 복구복무 명부·부품 대가 조정"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/46/text/ko",
+                    "quote": "강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Diplomacy",
+                "ko": "교섭·조정",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/2/items/1/ko",
+                    "quote": "생업: 복구복무 명부·부품 대가 조정"
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/43/text/ko",
+                    "quote": "배우진은 병조를 통해 부품 대가로 복구복무자 등록을 요구했으며 창동방호가의 서명은 받지 않았다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-05.json",
+                    "pointer": "/content/1/text/ko",
+                    "quote": "수벽술."
+                  },
+                  {
+                    "path": "lore/characters/Core-Characters.json",
+                    "pointer": "/content/45/text/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 동방사 규모",
+              "faction_scale": {
+                "state": "S05",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "외곽 산지",
+              "camp": {
+                "name": "배우진 산림 야영지",
+                "type": "야영지",
+                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Diplomacy",
-        "ko": "교섭·조정",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Shield",
-        "ko": "방패술",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [
     {

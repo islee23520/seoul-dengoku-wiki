@@ -3,6 +3,7 @@
   "name": "나태경",
   "title": "시장 자경 순찰대 조장",
   "position": "시장 자경 순찰대 조장",
+  "characterId": "K203",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "시장 순찰·화물 검사",
@@ -283,66 +284,383 @@
   },
   "gurps": {
     "id": "K203",
-    "personId": "person-0204",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0204"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S08",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S08",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K203",
+            "name": "나태경",
+            "url": "/people/person-0204",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "시장 순찰·화물 검사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/127/items/2/ko",
+                  "quote": "생업: 시장 순찰·화물 검사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/129/text/ko",
+                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/127/items/2/ko",
+                    "quote": "생업: 시장 순찰·화물 검사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/129/text/ko",
+                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/127/items/2/ko",
+                    "quote": "생업: 시장 순찰·화물 검사"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/127/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "나태경 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S08",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K203",
+            "name": "나태경",
+            "url": "/people/person-0204",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "시장 순찰·화물 검사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/127/items/2/ko",
+                  "quote": "생업: 시장 순찰·화물 검사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/129/text/ko",
+                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Observation",
+                "ko": "관찰(경비·순찰)",
+                "attr": "Per",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/127/items/2/ko",
+                    "quote": "생업: 시장 순찰·화물 검사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/126/text/ko",
+                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/129/text/ko",
+                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/127/items/2/ko",
+                    "quote": "생업: 시장 순찰·화물 검사"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Shield",
+                "ko": "방패술",
+                "attr": "DX",
+                "diff": "E",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/127/items/3/ko",
+                    "quote": "수벽술."
+                  }
+                ],
+                "cp": 4,
+                "level": 12
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "나태경 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Observation",
-        "ko": "관찰(경비·순찰)",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Shield",
-        "ko": "방패술",
-        "level": 12,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

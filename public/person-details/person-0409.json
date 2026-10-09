@@ -3,6 +3,7 @@
   "name": "판지솔",
   "title": "이중 의회 전령, 안태경의 실무 담당자",
   "position": "조합원 총회 전령, 안태경의 실무 담당자",
+  "characterId": "K408",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "투표 명부·비준 투표 전갈 배달",
@@ -389,60 +390,351 @@
   },
   "gurps": {
     "id": "K408",
-    "personId": "person-0409",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0409"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S16",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S16",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K408",
+            "name": "판지솔",
+            "url": "/people/person-0409",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "투표 명부·비준 투표 전갈 배달",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/138/items/0/ko",
+                  "quote": "생업: 투표 명부·비준 투표 전갈 배달"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "투표 명부와 출석을 광장과 서고에 동시에 붙이고, 비준 투표 전갈은 하서진의 표준 서식과 곽은재의 감사표가 도착한 뒤에만 달린다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/140/text/ko",
+                    "quote": "대외 교섭안 세 건이 동시에 비준 안건으로 올라오고 투표 명부에 강국 호적 번호가 섞이자 판지솔은 비준 전갈을 가방에 잠갔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/138/items/0/ko",
+                    "quote": "생업: 투표 명부·비준 투표 전갈 배달"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "투표 명부와 출석을 광장과 서고에 동시에 붙이고, 비준 투표 전갈은 하서진의 표준 서식과 곽은재의 감사표가 도착한 뒤에만 달린다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/140/text/ko",
+                    "quote": "대외 교섭안 세 건이 동시에 비준 안건으로 올라오고 투표 명부에 강국 호적 번호가 섞이자 판지솔은 비준 전갈을 가방에 잠갔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/138/items/0/ko",
+                    "quote": "생업: 투표 명부·비준 투표 전갈 배달"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "지하 보도",
+              "camp": {
+                "name": "판지솔 지하도 야영지",
+                "type": "야영지",
+                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S16 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
       {
-        "name": "Area Knowledge (근무 구역)",
-        "ko": "지역 지식(전령·전달)",
-        "level": 15,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S16",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K408",
+            "name": "판지솔",
+            "url": "/people/person-0409",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "투표 명부·비준 투표 전갈 배달",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/138/items/0/ko",
+                  "quote": "생업: 투표 명부·비준 투표 전갈 배달"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "투표 명부와 출석을 광장과 서고에 동시에 붙이고, 비준 투표 전갈은 하서진의 표준 서식과 곽은재의 감사표가 도착한 뒤에만 달린다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/140/text/ko",
+                    "quote": "대외 교섭안 세 건이 동시에 비준 안건으로 올라오고 투표 명부에 강국 호적 번호가 섞이자 판지솔은 비준 전갈을 가방에 잠갔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/138/items/0/ko",
+                    "quote": "생업: 투표 명부·비준 투표 전갈 배달"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/139/text/ko",
+                    "quote": "투표 명부와 출석을 광장과 서고에 동시에 붙이고, 비준 투표 전갈은 하서진의 표준 서식과 곽은재의 감사표가 도착한 뒤에만 달린다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/140/text/ko",
+                    "quote": "대외 교섭안 세 건이 동시에 비준 안건으로 올라오고 투표 명부에 강국 호적 번호가 섞이자 판지솔은 비준 전갈을 가방에 잠갔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Area Knowledge (근무 구역)",
+                "ko": "지역 지식(전령·전달)",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/138/items/0/ko",
+                    "quote": "생업: 투표 명부·비준 투표 전갈 배달"
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "지하 보도",
+              "camp": {
+                "name": "판지솔 지하도 야영지",
+                "type": "야영지",
+                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S16 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

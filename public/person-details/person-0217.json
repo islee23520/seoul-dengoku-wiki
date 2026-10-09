@@ -3,6 +3,7 @@
   "name": "홍지훈",
   "title": "급수 시세 폭등 상인",
   "position": "급수 시세 폭등 상인",
+  "characterId": "K216",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "급수 시작가·실재고 대조",
@@ -389,66 +390,373 @@
   },
   "gurps": {
     "id": "K216",
-    "personId": "person-0217",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0217"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S08",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S08",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K216",
+            "name": "홍지훈",
+            "url": "/people/person-0217",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "급수 시작가·실재고 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/237/items/2/ko",
+                  "quote": "생업: 급수 시작가·실재고 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 급수 시작가·실재고 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 급수 시작가·실재고 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/237/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "약수",
+              "type": "초소 영지",
+              "station": "약수",
+              "state": "S08",
+              "settlement": {
+                "name": "약수 정착지",
+                "type": "정착지",
+                "description": "약수 일대 고정 거점"
+              },
+              "note": "S08 약수 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S08",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K216",
+            "name": "홍지훈",
+            "url": "/people/person-0217",
+            "state": "S08",
+            "method": "card-lexicon",
+            "role": {
+              "display": "급수 시작가·실재고 대조",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-08.json",
+                  "pointer": "/content/237/items/2/ko",
+                  "quote": "생업: 급수 시작가·실재고 대조"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 급수 시작가·실재고 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/239/text/ko",
+                    "quote": "홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Merchant",
+                "ko": "거래·경매",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/237/items/2/ko",
+                    "quote": "생업: 급수 시작가·실재고 대조"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/238/text/ko",
+                    "quote": "시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Breath Control",
+                "ko": "호흡 수련(심법)",
+                "attr": "HT",
+                "diff": "H",
+                "tier": "C",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-08.json",
+                    "pointer": "/content/237/items/3/ko",
+                    "quote": "한류공."
+                  }
+                ],
+                "cp": 4,
+                "level": 10
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 20,
+              "spent": 60,
+              "unspent": 15,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+              "faction_scale": {
+                "state": "S08",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "약수",
+              "type": "초소 영지",
+              "station": "약수",
+              "state": "S08",
+              "settlement": {
+                "name": "약수 정착지",
+                "type": "정착지",
+                "description": "약수 일대 고정 거점"
+              },
+              "note": "S08 약수 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Merchant",
-        "ko": "거래·경매",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "Breath Control",
-        "ko": "호흡 수련(심법)",
-        "level": 10,
-        "cp": 4
-      }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 20,
-      "spent": 60,
-      "unspent": 15,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

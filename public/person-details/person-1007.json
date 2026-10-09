@@ -3,6 +3,7 @@
   "name": "김연규",
   "title": "온민의 수장",
   "position": "온민의 수장",
+  "characterId": "K1007",
   "rank": "장관",
   "commonTier": "T2",
   "occupation": "기록 당직·문서 등재",
@@ -426,78 +427,481 @@
   },
   "gurps": {
     "id": "K1007",
-    "personId": "person-1007",
-    "band": "주역·강자",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-1007"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S06",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S06",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1007",
+            "name": "김연규",
+            "url": "/people/person-1007",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "기록 당직·문서 등재",
+              "evidence": [
+                {
+                  "path": "lore/characters/Core-Characters.json",
+                  "pointer": "/content/166/text/ko",
+                  "quote": "생업 별명은 기록 당직·문서 등재."
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "삼영걸 대비 분석 — 혁신·공격성 프로파일"
+                  }
+                ]
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전투·혁신 역량 기반 배분"
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 20,
+                "cp": 200,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전략 혁신 역량 기반 배분"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 11,
+                "cp": 10,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전사 경험 기반 배분"
+                  }
+                ]
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "전략",
+                "attr": "IQ",
+                "level": 17,
+                "difficulty": "상",
+                "cp": 16,
+                "effect": "부대 전체 행동 보정"
+              },
+              {
+                "name": "전술",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 32,
+                "effect": "소부대 교전 보정"
+              },
+              {
+                "name": "협박",
+                "attr": "Will",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "공포 부여·복종 유도"
+              },
+              {
+                "name": "지휘",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 16,
+                "effect": "부대 사기·통제"
+              },
+              {
+                "name": "창술",
+                "attr": "DX",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "장창 찌르기"
+              },
+              {
+                "name": "역사",
+                "attr": "IQ",
+                "level": 13,
+                "difficulty": "중",
+                "cp": 3,
+                "effect": "세계관 지식"
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 20,
+              "Per": 20,
+              "FP": 11,
+              "BasicSpeed": 5.25,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 210,
+              "advantages": 75,
+              "disadvantages": -30,
+              "skills": 83,
+              "spent": 338,
+              "unspent": 0,
+              "total": 338
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "size": 45,
+              "quality": "정예",
+              "composition": [
+                "친위병",
+                "경비병"
+              ],
+              "note": "온민 수장 직속 친위부대",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "서울역",
+              "type": "거점",
+              "station": "서울역",
+              "state": "S06",
+              "settlement": {
+                "name": "서울역 정착지",
+                "type": "정착지",
+                "description": "서울역 일대 고정 거점"
+              },
+              "note": "S06 서울역 일대 관할 영지"
+            },
+            "advantages": [
+              {
+                "name": "Combat Reflexes",
+                "cp": 15,
+                "effect": "전투 반응 +1, 선제 행동"
+              },
+              {
+                "name": "Fearlessness +3",
+                "cp": 6,
+                "effect": "공포 판정 +3"
+              },
+              {
+                "name": "Strong Will +3",
+                "cp": 15,
+                "effect": "의지 판정 +3"
+              },
+              {
+                "name": "High Pain Threshold",
+                "cp": 10,
+                "effect": "통증 페널티 무시"
+              },
+              {
+                "name": "Ambidexterity",
+                "cp": 5,
+                "effect": "양손 사용 가능"
+              },
+              {
+                "name": "Contacts (Extensive)",
+                "cp": 20,
+                "effect": "광범위 인맥"
+              },
+              {
+                "name": "Leadership 보정",
+                "cp": 4,
+                "effect": "지휘력 우수"
+              }
+            ],
+            "disadvantages": [
+              {
+                "name": "Bad Temper",
+                "cp": -10,
+                "effect": "화내기 쉬움 — 자제 판정"
+              },
+              {
+                "name": "Bloodlust",
+                "cp": -10,
+                "effect": "적을 죽이려는 충동"
+              },
+              {
+                "name": "Overconfidence",
+                "cp": -5,
+                "effect": "과신 — 위험 감수"
+              },
+              {
+                "name": "Enemies (경쟁 세력)",
+                "cp": -5,
+                "effect": "적대 세력 존재"
+              }
+            ]
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 20,
-        "cp": 200
-      },
-      "HT": {
-        "value": 11,
-        "cp": 10
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S06",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K1007",
+            "name": "김연규",
+            "url": "/people/person-1007",
+            "state": "S06",
+            "method": "card-lexicon",
+            "role": {
+              "display": "기록 당직·문서 등재",
+              "evidence": [
+                {
+                  "path": "lore/characters/Core-Characters.json",
+                  "pointer": "/content/166/text/ko",
+                  "quote": "생업 별명은 기록 당직·문서 등재."
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "삼영걸 대비 분석 — 혁신·공격성 프로파일"
+                  }
+                ]
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전투·혁신 역량 기반 배분"
+                  }
+                ]
+              },
+              "IQ": {
+                "value": 20,
+                "cp": 200,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전략 혁신 역량 기반 배분"
+                  }
+                ]
+              },
+              "HT": {
+                "value": 11,
+                "cp": 10,
+                "rule": "samyeonggeol-profile",
+                "evidence": [
+                  {
+                    "note": "전사 경험 기반 배분"
+                  }
+                ]
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "전략",
+                "attr": "IQ",
+                "level": 17,
+                "difficulty": "상",
+                "cp": 16,
+                "effect": "부대 전체 행동 보정"
+              },
+              {
+                "name": "전술",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 32,
+                "effect": "소부대 교전 보정"
+              },
+              {
+                "name": "협박",
+                "attr": "Will",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "공포 부여·복종 유도"
+              },
+              {
+                "name": "지휘",
+                "attr": "IQ",
+                "level": 16,
+                "difficulty": "중",
+                "cp": 16,
+                "effect": "부대 사기·통제"
+              },
+              {
+                "name": "창술",
+                "attr": "DX",
+                "level": 14,
+                "difficulty": "중",
+                "cp": 8,
+                "effect": "장창 찌르기"
+              },
+              {
+                "name": "역사",
+                "attr": "IQ",
+                "level": 13,
+                "difficulty": "중",
+                "cp": 3,
+                "effect": "세계관 지식"
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 20,
+              "Per": 20,
+              "FP": 11,
+              "BasicSpeed": 5.25,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 9
+            },
+            "cp": {
+              "attributes": 210,
+              "advantages": 75,
+              "disadvantages": -30,
+              "skills": 83,
+              "spent": 338,
+              "unspent": 0,
+              "total": 338
+            },
+            "band": "주역·강자",
+            "baseline": false,
+            "unit": {
+              "size": 45,
+              "quality": "정예",
+              "composition": [
+                "친위병",
+                "경비병"
+              ],
+              "note": "온민 수장 직속 친위부대",
+              "faction_scale": {
+                "state": "S06",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "서울역",
+              "type": "거점",
+              "station": "서울역",
+              "state": "S06",
+              "settlement": {
+                "name": "서울역 정착지",
+                "type": "정착지",
+                "description": "서울역 일대 고정 거점"
+              },
+              "note": "S06 서울역 일대 관할 영지"
+            },
+            "advantages": [
+              {
+                "name": "Combat Reflexes",
+                "cp": 15,
+                "effect": "전투 반응 +1, 선제 행동"
+              },
+              {
+                "name": "Fearlessness +3",
+                "cp": 6,
+                "effect": "공포 판정 +3"
+              },
+              {
+                "name": "Strong Will +3",
+                "cp": 15,
+                "effect": "의지 판정 +3"
+              },
+              {
+                "name": "High Pain Threshold",
+                "cp": 10,
+                "effect": "통증 페널티 무시"
+              },
+              {
+                "name": "Ambidexterity",
+                "cp": 5,
+                "effect": "양손 사용 가능"
+              },
+              {
+                "name": "Contacts (Extensive)",
+                "cp": 20,
+                "effect": "광범위 인맥"
+              },
+              {
+                "name": "Leadership 보정",
+                "cp": 4,
+                "effect": "지휘력 우수"
+              }
+            ],
+            "disadvantages": [
+              {
+                "name": "Bad Temper",
+                "cp": -10,
+                "effect": "화내기 쉬움 — 자제 판정"
+              },
+              {
+                "name": "Bloodlust",
+                "cp": -10,
+                "effect": "적을 죽이려는 충동"
+              },
+              {
+                "name": "Overconfidence",
+                "cp": -5,
+                "effect": "과신 — 위험 감수"
+              },
+              {
+                "name": "Enemies (경쟁 세력)",
+                "cp": -5,
+                "effect": "적대 세력 존재"
+              }
+            ]
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "전략",
-        "level": 17,
-        "cp": 16
-      },
-      {
-        "name": "전술",
-        "level": 16,
-        "cp": 32
-      },
-      {
-        "name": "협박",
-        "level": 16,
-        "cp": 8
-      },
-      {
-        "name": "지휘",
-        "level": 16,
-        "cp": 16
-      },
-      {
-        "name": "창술",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "역사",
-        "level": 13,
-        "cp": 3
-      }
-    ],
-    "cp": {
-      "attributes": 210,
-      "advantages": 75,
-      "disadvantages": -30,
-      "skills": 83,
-      "spent": 338,
-      "unspent": 0,
-      "total": 338
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 20,
-      "Per": 20,
-      "FP": 11,
-      "BasicSpeed": 5.25,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 9
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

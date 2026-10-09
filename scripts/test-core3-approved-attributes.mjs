@@ -1,10 +1,13 @@
+import { preservedSheetSources } from './preserved-person-sheet.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
+import { join } from 'node:path'
 import { test } from 'vitest'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
-import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
+import { GurpsSheet, PersonDetailContent, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
 
 const approved = [
   ['person-0998', [11, 12, 15, 14], 190, 352],
@@ -12,7 +15,13 @@ const approved = [
   ['person-1008', [10, 14, 20, 11], 290, 429],
 ]
 
-const issued = JSON.parse(await readFile(new URL('../lore/name-pools/gurps-cast.json', import.meta.url), 'utf8')).people
+const revision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
+const roots = preservedSheetSources
+const baseline = JSON.parse(await readFile(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
+assert.deepEqual(Object.keys(roots ?? {}).sort(), Object.keys(baseline.revisions).sort())
+const bytes = await readFile(roots[revision].ledgerPath)
+assert.equal(createHash('sha256').update(bytes).digest('hex'), baseline.revisions[revision].ledgerSha256)
+const issued = JSON.parse(bytes).people
 
 const assertProjectedCP = (cp, record, total) => {
   assert.equal(cp.total, total)
@@ -25,14 +34,21 @@ for (const [id, values, attributeCP, total] of approved) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
     const record = issued.find((entry) => entry.url === `/people/${id}`)
     assert.ok(record)
-    const attributes = ['ST', 'DX', 'IQ', 'HT'].map((name) => detail.gurps.attributes[name])
+    assert.deepEqual(detail.gurps, { id: record.id, personId: id })
+    const selected = selectPreservedSheet(detail.personSheet, { id: detail.characterId, personId: id, name: detail.name, state: detail.state }, revision)
+    assert.ok(selected.ok, JSON.stringify(selected))
+    assert.equal(selected.revision, revision)
+    assert.deepEqual(selected.record, record)
+    const attributes = ['ST', 'DX', 'IQ', 'HT'].map((name) => selected.sheet.attributes[name])
     assert.deepEqual(attributes.map(({ value }) => value), values)
     assert.deepEqual(attributes.map(({ cp }) => cp), values.map((value, index) => (value - 10) * ([0, 3].includes(index) ? 10 : 20)))
-    assert.equal(detail.gurps.cp.attributes, attributeCP)
-    assertProjectedCP(detail.gurps.cp, record, total)
-    const html = renderToStaticMarkup(createElement(MemoryRouter, null,
+    assert.equal(selected.sheet.cp.attributes, attributeCP)
+    assertProjectedCP(selected.sheet.cp, record, total)
+    const page = renderToStaticMarkup(createElement(MemoryRouter, null,
       createElement(PersonDetailContent, { detail, personId: id })))
-    assert.ok(html.includes(`data-person-id="${id}"`))
+    assert.ok(page.includes(`data-person-id="${id}"`))
+    assert.ok(!page.includes('class="gurps-sheet"'))
+    const html = renderToStaticMarkup(createElement(GurpsSheet, { gurps: selected.sheet }))
     assert.ok(html.includes(`<span class="cp-number">${total}</span>`))
     assert.ok(html.includes(`<span>합계</span><span>${total} CP</span>`))
     for (const value of values) assert.ok(html.includes(String(value)))
