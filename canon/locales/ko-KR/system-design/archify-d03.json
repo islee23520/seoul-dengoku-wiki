@@ -451,7 +451,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -462,2012 +462,2012 @@
       ],
       "rows": [
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.schemaVersion",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.domainId",
           "\"D03\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.mechanismId",
           "\"seoul.d03.commands\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersion",
           "\"d03-closure-20261008.1\"​"
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"d03-closure-20261008.1\"​"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.contractSHA256",
           "\"fbe5c6a19c172175740f73c​f7edb55db1a2d56cb8478ffc​19a92c967c78723db\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.rulesVersionLinka​ge.missingVersionPolicy",
           "\"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.dataOwner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].name",
           "\"IDs\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].descrip​tion",
           "\"nonempty stable order/proposal/event/res​ult/sender/recipient/sco​pe/resource IDs; no alias or renumber\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].unit",
           "\"stable identifier\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.fields[0].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[0].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[0].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[0].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].name",
           "\"actor\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].descrip​tion",
           "\"alive/capable/safe/deta​ined/scheduleConflict booleans; supplied D01/D02 facts, not verified world authority\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].unit",
           "\"predicate or record; see description\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.fields[1].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[1].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[1].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[1].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].name",
           "\"grant\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].descrip​tion",
           "\"issuer=sender, grantee=recipient, exact scope/channel, finite start/end, effective revoked boolean or null unresolved external event order\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].unit",
           "\"predicate or record; see description\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[2].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[2].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[2].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[2].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].name",
           "\"delivery\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].descrip​tion",
           "\"strategic actual physical receipt plus route; battle registered matching sender/recipient/scope assignment and same-time signal\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].unit",
           "\"predicate or record; see description\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 전략·전투 전달 분기",
           "d03.b9.fields[3].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[3].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[3].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[3].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].name",
           "\"consent\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].descrip​tion",
           "\"accept&#124;hold&#124;r​efuse&#124;negotiate&#12​4;unknown; explicit recipient choice, never inferred from reaction, role or Leadership\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].unit",
           "\"predicate or record; see description\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b9.fields[4].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[4].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[4].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[4].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].name",
           "\"time\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].descrip​tion",
           "\"finite world-clock-coordinate, same unit on now/start/end/receipt; no fixed rate, duration or seconds conversion\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].unit",
           "\"same world-clock-coordinate\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.fields[5].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[5].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[5].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[5].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].name",
           "\"resources\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].descrip​tion",
           "\"safe nonnegative integers with unit 1 in same resourceId; verification tokens only, not approved gameplay prices\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].unit",
           "\"same-resource verification token\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 자원·재승인 검사",
           "d03.b9.fields[6].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[6].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[6].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[6].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].name",
           "\"null\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].descrip​tion",
           "\"unknown; no zero, false, consent or authority substitution\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].unit",
           "\"predicate or record; see description\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].null",
           "\"unknown; never substitute zero, false, consent or authority\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].owner",
           "\"D03 command records; no world authority issuer implemented\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 인과·정책 미결 보류",
           "d03.b9.fields[7].read[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[7].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.fields[7].snapsho​t",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.fields[7].commitP​oint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[0]",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[1]",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[2]",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[3]",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[4]",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[5]",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[6]",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.readSet[7]",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.writeSet[0]",
           "\"D03 status and receipt append\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.writeSet[1]",
           "\"atomic same-resource reservation candidate\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.snapshot.policy",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.snapshot.conflict​",
           "\"E_REVISION, no silent refresh; distinct explicit proposal/event may retain order lineage\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.snapshot.commitPo​int",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.commitPoint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b9.orderedSteps[0]",
           "\"Validate exact typed shape, rules version, units, ranges, stable identities and conserved resource ledger.\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.orderedSteps[1]",
           "\"Reject stale revision before duplicate lookup except exact original event/result/request replay. Exact replay returns prior receipt; conflicting reuse fails without mutation.\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.orderedSteps[2]",
           "\"Cancel/death preserve completed/consumed and original sender; release only unconsumed reserved quantity.\""
         ],
         [
-          "운용",
+          "운용 — 요청 종류 분기",
           "d03.b9.orderedSteps[3]",
           "\"Effective revocation retains authority-blocked order and releases only unconsumed reservation. Fresh explicit authorization proposal is required to resume.\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.orderedSteps[4]",
           "\"Strategic broken or unreceived route retains undelivered identity. Recovery is not receipt. Battle receipt requires registered assignment and uses current world time.\""
         ],
         [
-          "운용",
+          "운용 — 실제 경로·물리 수령",
           "d03.b9.orderedSteps[5]",
           "\"At execution recheck exact grant and start<=now<end, hard safety/incapacity/detent​ion and physical feasibility. Same faction, title or office never substitutes for command authority.\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b9.orderedSteps[6]",
           "\"Record hold/refuse/negotiate/un​known or schedule conflict without execution. Observed obstacle clearance only requests a full recheck; no periodic or automatic success.\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.orderedSteps[7]",
           "\"Only explicitly received, authorized and accepted replacement referencing the old order cancels its unexecuted remainder and atomically exchanges unconsumed reservation. No timestamp winner or queue.\""
         ],
         [
-          "운용",
+          "운용 — 미전달 명령 유지",
           "d03.b9.orderedSteps[8]",
           "\"Append one status/result receipt. Preserve history and completed work. Do not apply trust, loyalty, damage or performance scores.\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.formulaSheet[0].i​d",
           "\"authority\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.formulaSheet[0].e​xpression",
           "\"issuer==sender && grantee==recipient && scope==order.scope && channel==order.channel && start<=now && now<end && !effectiveRevoked\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.formulaSheet[0].u​nit",
           "\"boolean\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.formulaSheet[0].s​ource",
           "\"GP03 expiry-A and revocation-A\""
         ],
         [
-          "운용",
+          "운용 — 정확 위임·현재 유효기간",
           "d03.b9.formulaSheet[0].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b9.formulaSheet[1].i​d",
           "\"reserve\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b9.formulaSheet[1].e​xpression",
           "\"newStock=stock+oldReser​ved-requested; newReserved=requested\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b9.formulaSheet[1].u​nit",
           "\"same-resource verification tokens\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b9.formulaSheet[1].g​uard",
           "\"newStock>=0; oldReserved unconsumed; old active intent must be explicit accepted replacement\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b9.formulaSheet[1].s​ource",
           "\"GP03 superseded-orders-A\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b9.formulaSheet[1].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.formulaSheet[2].i​d",
           "\"release\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.formulaSheet[2].e​xpression",
           "\"newStock=stock+reserved​; newReserved=0; completed'=completed; consumed'=consumed\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.formulaSheet[2].u​nit",
           "\"same-resource verification tokens\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.formulaSheet[2].s​ource",
           "\"GP03 revocation-A and SP1 cancellation/death\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.formulaSheet[2].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 전투 등록 배속 검사",
           "d03.b9.formulaSheet[3].i​d",
           "\"battle-receipt\""
         ],
         [
-          "운용",
+          "운용 — 전투 등록 배속 검사",
           "d03.b9.formulaSheet[3].e​xpression",
           "\"receivedAt=now\""
         ],
         [
-          "운용",
+          "운용 — 전투 등록 배속 검사",
           "d03.b9.formulaSheet[3].u​nit",
           "\"same world clock\""
         ],
         [
-          "운용",
+          "운용 — 전투 등록 배속 검사",
           "d03.b9.formulaSheet[3].s​ource",
           "\"sp1.b112\""
         ],
         [
-          "운용",
+          "운용 — 전투 등록 배속 검사",
           "d03.b9.formulaSheet[3].b​oundary",
           "\"not strategic teleportation\""
         ],
         [
-          "운용",
+          "운용 — 전투 등록 배속 검사",
           "d03.b9.formulaSheet[3].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.formulaSheet[4].i​d",
           "\"reaction-reference\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.formulaSheet[4].e​xpression",
           "\"reaction=sum(three explicit d6)+modifier; bands <=0,1..3,4..6,7..9,10..1​2,13..15,16..18,>=19\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.formulaSheet[4].u​nit",
           "\"reaction score\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.formulaSheet[4].s​ource",
           "\"L-reaction,L-reaction-t​able\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.formulaSheet[4].s​tatus",
           "\"reference-only-not-adop​ted-consent\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b9.formulaSheet[4].b​oundary",
           "\"high favorable; not roll-under; even Excellent never forces acceptance\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.rng.scope",
           "\"none in D03 policy evaluator; explicit dice only in reference calculation, no RNG draw\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.time.cadence",
           "\"supplied receipt/revocation/cance​l/death/observed-obstacl​e-change events\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.time.period",
           "null"
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.time.dispatcher",
           "\"D18 supplies ordered facts; simultaneous unresolved effective revocation fails E_EXTERNAL_ORDER\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.rounding",
           "\"none; exact integer fixture conservation\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위·원장 검사",
           "d03.b9.clamps",
           "\"none; reject out-of-range values\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.lifecycle.cancel",
           "\"release unconsumed only; record cause\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b9.lifecycle.death",
           "\"preserve progress; no automatic successor or grant transfer\""
         ],
         [
-          "운용",
+          "운용 — 정확 재생과 새 요청",
           "d03.b9.lifecycle.load",
           "\"exact supported rules and valid checkpoint/unique receipts; replay no additional effect; corrupt save explicit typed error\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b9.failure",
           "\"E_REVISION, no silent refresh; distinct explicit proposal/event may retain order lineage\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].i​d",
           "\"P-AI\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].f​ields[0]",
           "\"acceptance probability\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].f​ields[1]",
           "\"utility weights\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].f​ields[2]",
           "\"priority tie function\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].f​ields[3]",
           "\"periodic cadence\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].f​ields[4]",
           "\"autonomy action policy\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].r​eason",
           "\"T68-NPC-HOLD-REFUSE-NEG​OTIATE/T68-AUTO-LOCAL-CO​MMANDER and D18 supply no exact function\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].i​d",
           "\"P-EVALUATION\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].f​ields[0]",
           "\"trust/loyalty deltas\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].f​ields[1]",
           "\"decay\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].f​ields[2]",
           "\"effect lifetime\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].f​ields[3]",
           "\"evaluation classification\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].r​eason",
           "\"D08/D18 approve separate knowledge/permission/fea​sibility/performance records and per-effect drafting only\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].i​d",
           "\"P-NUMERIC\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].f​ields[0]",
           "\"time scale\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].f​ields[1]",
           "\"message duration/cost\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].f​ields[2]",
           "\"resource prices\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].r​eason",
           "\"D22 chosen B: unit-first drafting, later formula/coefficient approval; fixture 1 is not an adopted gameplay unit\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].i​d",
           "\"P-PERSONAL\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].f​ields[0]",
           "\"Leadership bonus\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].f​ields[1]",
           "\"injury modifier\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].f​ields[2]",
           "\"capacity equation\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].r​eason",
           "\"D30 separates eligibility and skill correction; no exact table; Leadership never compels obedience\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].i​d",
           "\"P-GRANT\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].f​ields[0]",
           "\"actual country/person grant\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].f​ields[1]",
           "\"recall clauses/duration\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].f​ields[2]",
           "\"body-switch command disposition\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].r​eason",
           "\"D10/D19 authorize individual drafting, not actual records\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[5].i​d",
           "\"P-CARRIER\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[5].f​ields[0]",
           "\"production assignment/receipt/outco​me carriers\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[5].r​eason",
           "\"C1/C2 not attested; fixed supplied packets only\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[6].i​d",
           "\"P-SOURCE\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[6].f​ields[0]",
           "\"CK3/Norland native full algorithms\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[6].r​eason",
           "\"documentary limits retained; no adoption\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].i​d",
           "\"P-GURPS\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].f​ields[0]",
           "\"reaction-to-consent mapping\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].f​ields[1]",
           "\"new action bonuses\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].f​ields[2]",
           "\"combat execution modifiers\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].r​eason",
           "\"public basis structure/reference only; no GURPS 2004 Basic certification\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].i​d",
           "\"P-INTEGRATION\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].f​ields[0]",
           "\"Task27 canonical CLI\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].f​ields[1]",
           "\"Task28/29 full closure\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].f​ields[2]",
           "\"canonical registration\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].r​eason",
           "\"evidence-only scope excludes product edits; full original Task30 closure not claimed\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d03.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[0]",
           "\"GP-03/delivery-A\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[1]",
           "\"GP-03/expiry-A\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[2]",
           "\"GP-03/revocation-A\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[3]",
           "\"GP-03/stale-snapshot-A\"​"
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[4]",
           "\"GP-03/superseded-orders​-A\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[5]",
           "\"GP-03/reevaluation-A\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[6]",
           "\"D08\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[7]",
           "\"D10\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[8]",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[9]",
           "\"D19\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[10]",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[11]",
           "\"D30\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.decisionIds[12]",
           "\"D32\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.authorityBoundar​y",
           "\"Sealed decisions approve directions and authoring/review methods, not unspecified formulas, coefficients, units, records or payloads. Prior GP03 six exact choices supply the bounded transition rules below.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[0].​id",
           "\"GP03\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[0].​path",
           "\"../owner-gp03-first-thr​ee-decisions-20261005/se​lected-contract.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[0].​scope",
           "\"six explicit selected policies; historical independent review pending\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​id",
           "\"sealed\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​path",
           "\"../task-26-remaining-de​cisions-20261008/decisio​n-record.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[0]",
           "\"/decisions/7\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[1]",
           "\"/decisions/9\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[2]",
           "\"/decisions/17\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[3]",
           "\"/decisions/18\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[4]",
           "\"/decisions/21\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[5]",
           "\"/decisions/29\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[1].​pointers[6]",
           "\"/decisions/31\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[2].​id",
           "\"CK3-D03\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[2].​path",
           "\"../task-24/cells/ck3/D0​3/verified-input-r2/rows​.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[2].​scope",
           "\"documentary subclaims only; native algorithms not adopted\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[3].​id",
           "\"N-D03\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[3].​path",
           "\"../task-24/cells/norlan​d/D03/verified-input-r1/​rows.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[3].​scope",
           "\"documentary only; hidden native priority/refusal unresolved\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​id",
           "\"SP1\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[0]",
           "\"sp1.b11\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[1]",
           "\"sp1.b12\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[2]",
           "\"sp1.b13\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[3]",
           "\"sp1.b14\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[4]",
           "\"sp1.b111\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[5]",
           "\"sp1.b112\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[6]",
           "\"sp1.b113\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[7]",
           "\"sp1.b114\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[4].​anchors[8]",
           "\"sp1.b115\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[5].​id",
           "\"basis\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[5].​path",
           "\"../task-25-gurps-like-b​asis-20261008/basis.json​\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[5].​anchors[0]",
           "\"L-reaction\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[5].​anchors[1]",
           "\"L-reaction-table\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[5].​scope",
           "\"public reference arithmetic, never contractual consent or original Basic certification\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[6].​id",
           "\"basis-worked\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[6].​path",
           "\"../task-25-gurps-like-b​asis-20261008/worked-che​cks.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[7].​id",
           "\"proposal-contract\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[7].​path",
           "\"../design-finalization-​20261006/D03/contract.js​on\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[7].​scope",
           "\"proposal retained; eight flags and admission+0 are not gameplay admission\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[8].​id",
           "\"proposal-sheets\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[8].​path",
           "\"../sheet-formula-gdd-in​tegration-20261006/sheet​s.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[8].​scope",
           "\"all imported numeric values remain proposals; no value-relabel map supplied at this path\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[9].​id",
           "\"proposal-formulas\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[9].​path",
           "\"../sheet-formula-gdd-in​tegration-20261006/formu​las.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[9].​scope",
           "\"no proposal formula promoted\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[10]​.id",
           "\"correlated\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[10]​.path",
           "\"../d03-correlated-recor​d-contract-r2/contract.j​son\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d03.b11.sourceClaims[10]​.scope",
           "\"fixed packet proof only; C1/C2 real authority/capture gaps remain\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.statuses[0​]",
           "\"proposed\""
         ],
         [
-          "운용",
+          "운용 — 미전달 명령 유지",
           "d03.b11.state.statuses[1​]",
           "\"undelivered\""
         ],
         [
-          "운용",
+          "운용 — 권한 차단 상태",
           "d03.b11.state.statuses[2​]",
           "\"authority-blocked\""
         ],
         [
-          "운용",
+          "운용 — 보류·미확인·일정 충돌",
           "d03.b11.state.statuses[3​]",
           "\"held\""
         ],
         [
-          "운용",
+          "운용 — 거절 상태",
           "d03.b11.state.statuses[4​]",
           "\"refused\""
         ],
         [
-          "운용",
+          "운용 — 협상 상태",
           "d03.b11.state.statuses[5​]",
           "\"negotiating\""
         ],
         [
-          "운용",
+          "운용 — 활성 의도 기록",
           "d03.b11.state.statuses[6​]",
           "\"active\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.statuses[7​]",
           "\"cancelled\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.statuses[8​]",
           "\"dead\""
         ],
         [
-          "운용",
+          "운용 — 명시 수락 교체 검사",
           "d03.b11.state.statuses[9​]",
           "\"superseded\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[0]",
           "\"orderId\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[1]",
           "\"proposalId\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[2]",
           "\"originalSenderId\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[3]",
           "\"status\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[4]",
           "\"completed\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[5]",
           "\"consumed\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[6]",
           "\"reserved\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[7]",
           "\"stock\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[8]",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.fields[9]",
           "\"receipts\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[0]​",
           "\"world revision\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[1]​",
           "\"D01/D02 actor facts\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[2]​",
           "\"D11 grant issuer/grantee/scope/cha​nnel/start/end/effective​ revocation\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[3]​",
           "\"D06 route/receipt\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[4]​",
           "\"D15 battle assignment\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[5]​",
           "\"recipient consent\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[6]​",
           "\"same-resource ledger\""
         ],
         [
-          "운용",
+          "운용 — 명령·제안·사건 요청",
           "d03.b11.state.readSet[7]​",
           "\"prior result receipts\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.state.writeSet[0​]",
           "\"D03 status and receipt append\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.state.writeSet[1​]",
           "\"atomic same-resource reservation candidate\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[0]",
           "\"completed\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[1]",
           "\"consumed\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[2]",
           "\"originalSenderId\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[3]",
           "\"actor identity/location\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[4]",
           "\"grant ownership\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[5]",
           "\"world time\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[6]",
           "\"trust\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[7]",
           "\"loyalty\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[8]",
           "\"HP\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[9]",
           "\"FP\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.state.frame[10]",
           "\"casualties\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b11.state.snapshot.p​olicy",
           "\"exact supplied world revision\""
         ],
         [
-          "운용",
+          "운용 — 새 요청 개정·생애 상태",
           "d03.b11.state.snapshot.c​onflict",
           "\"E_REVISION, no silent refresh; distinct explicit proposal/event may retain order lineage\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.state.snapshot.c​ommitPoint",
           "\"after all typed identity, snapshot, authority, delivery, eligibility, consent and resource checks; one atomic candidate\""
         ],
         [
-          "운용",
+          "운용 — 상태·예약·영수증 반영",
           "d03.b11.effects[0]",
           "\"one command-status receipt\""
         ],
         [
-          "운용",
+          "운용 — 원자 예약 교환",
           "d03.b11.effects[1]",
           "\"atomic same-resource reservation candidate\""
         ],
         [
-          "운용",
+          "운용 — 활성 의도 기록",
           "d03.b11.effects[2]",
           "\"no action completion, trust, loyalty or injury change\""
         ],
         [
-          "운용",
+          "운용 — 미전달 명령 유지",
           "d03.b11.events[0]",
           "\"undelivered\""
         ],
         [
-          "운용",
+          "운용 — 권한 차단 상태",
           "d03.b11.events[1]",
           "\"authority-blocked\""
         ],
         [
-          "운용",
+          "운용 — 보류·미확인·일정 충돌",
           "d03.b11.events[2]",
           "\"held\""
         ],
         [
-          "운용",
+          "운용 — 거절 상태",
           "d03.b11.events[3]",
           "\"refused\""
         ],
         [
-          "운용",
+          "운용 — 협상 상태",
           "d03.b11.events[4]",
           "\"negotiating\""
         ],
         [
-          "운용",
+          "운용 — 활성 의도 기록",
           "d03.b11.events[5]",
           "\"active\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.events[6]",
           "\"cancelled\""
         ],
         [
-          "운용",
+          "운용 — 미소비 예약만 반환",
           "d03.b11.events[7]",
           "\"dead\""
         ],
         [
-          "운용",
+          "운용 — 명시 수락 교체 검사",
           "d03.b11.events[8]",
           "\"replacement\""
         ],
         [
-          "운용",
+          "운용 — 실행 시 안전·가능성",
           "d03.b11.priorities.hard",
           "\"safety, incapacity and detention override acceptance/skill\""
         ],
         [
-          "운용",
+          "운용 — 수신자 선택·일정",
           "d03.b11.priorities.soft",
           "\"schedule/needs conflicts allow hold/refuse/negotiate; no utility weights approved\""
         ],
         [
-          "운용",
+          "운용 — 명시 수락 교체 검사",
           "d03.b11.priorities.repla​cement",
           "\"only explicit accepted replacement; no last-timestamp winner\""
         ],
         [
-          "운용",
+          "운용 — 활성 의도 기록",
           "d03.b11.priorities.auton​omy",
           "\"follow/partly-follow/in​dependent is separate from observation and performance; original sender preserved\""
         ]

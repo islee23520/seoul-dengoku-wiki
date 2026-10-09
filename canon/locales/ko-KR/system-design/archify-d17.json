@@ -439,7 +439,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -450,2732 +450,2732 @@
       ],
       "rows": [
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.schemaVersion",
           "1"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.domainId",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.mechanismId",
           "\"seoul.d17.bounded-contr​act\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d17.b9.rulesVersion",
           "\"SP-1.0.0 plus sealed Task26 selections 2026-10-08\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"SP-1.0.0 plus sealed Task26 selections 2026-10-08\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.contractSHA256",
           "\"6de01de8076ca6fc922c110​60b1e89c5b99ea323985cd7f​a0332d7a9764a4bf0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.sourceArtifacts[0].pa​th",
           "\"contract.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.sourceArtifacts[0].sh​a256",
           "\"6de01de8076ca6fc922c110​60b1e89c5b99ea323985cd7f​a0332d7a9764a4bf0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.sourceArtifacts[1].pa​th",
           "\"proposals.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.sourceArtifacts[1].sh​a256",
           "\"16205b01a4ba197e6e928c8​0721a725663bc29e0a51f7cb​17d9f76b18dfd4643\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.decisionRecordSHA256",
           "\"e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
           "\"doc.Rules-FactionsWarfa​re\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[2].path",
           "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[2].sha256",
           "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[3].documen​tId",
           "\"doc.Rules-EconomyLogist​ics\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[3].path",
           "\"canon/locales/ko-KR/rul​es/rules-economy-logisti​cs-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.canonRules[3].sha256",
           "\"36012dbc48b74498dd9ff44​5faf33d0b6c8785c8d82cf3a​c67dc4cc309d39dab\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.dataOwner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].name",
           "\"version\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].type",
           "\"safe nonnegative integer\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].unit",
           "\"ledger revision\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].read",
           "\"snapshot and expectedVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].write",
           "\"one accepted event increments once\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[0].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].name",
           "\"war\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].type",
           "\"WarSnapshot\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].unit",
           "\"war ID/score/casus-belli/end​point status\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].read",
           "\"D16-owned immutable facts\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].write",
           "\"none before supplied settlement result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].foreign​Owner",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[1].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].name",
           "\"proposal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].type",
           "\"Proposal &#124; null\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].unit",
           "\"stable proposal ID and revision\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].read",
           "\"authorities, parties, beneficiary, terms, acceptance receipts, expiry\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].write",
           "\"draft/counter/reprice/a​ccept/sign/expire state\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[2].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].name",
           "\"terms\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].type",
           "\"Term[]\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].unit",
           "\"one demand or offer per stable term ID\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].read",
           "\"side, kind, subject, beneficiary, quantity, unit, price record, force scope, consent, feasibility\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].write",
           "\"term state and remaining obligation only\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[3].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].name",
           "\"rights\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].type",
           "\"RightSnapshot[]\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].unit",
           "\"stable right/asset/person/oblig​ation ID\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].read",
           "\"owner, disposer, third-party holders, reservations, custody, location\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].write",
           "\"reservation and supplied legal settlement only\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].foreign​Owner",
           "\"D09/D10/D11/D13/D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[4].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].name",
           "\"contracts\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].type",
           "\"DeliveryContract[]\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].unit",
           "\"signed term obligation\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].read",
           "\"legal effect, delivered, remaining, breach, custody and route\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].write",
           "\"delivered/remaining/bre​ach receipt; completed delivery never rewound\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[5].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].name",
           "\"history\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].type",
           "\"event ID -> payload digest and receipt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].unit",
           "\"event identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].read",
           "\"idempotency\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].write",
           "\"same atomic commit as result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].owner",
           "\"D17 negotiation and settlement ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].snapsho​t",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d17.b9.fields[6].commitP​oint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[0]",
           "\"snapshot and expectedVersion\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[1]",
           "\"D16-owned immutable facts\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[2]",
           "\"authorities, parties, beneficiary, terms, acceptance receipts, expiry\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[3]",
           "\"side, kind, subject, beneficiary, quantity, unit, price record, force scope, consent, feasibility\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[4]",
           "\"owner, disposer, third-party holders, reservations, custody, location\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[5]",
           "\"legal effect, delivered, remaining, breach, custody and route\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.readSet[6]",
           "\"idempotency\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[0]",
           "\"one accepted event increments once\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[1]",
           "\"none before supplied settlement result\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[2]",
           "\"draft/counter/reprice/a​ccept/sign/expire state\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[3]",
           "\"term state and remaining obligation only\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[4]",
           "\"reservation and supplied legal settlement only\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[5]",
           "\"delivered/remaining/bre​ach receipt; completed delivery never rewound\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d17.b9.writeSet[6]",
           "\"same atomic commit as result\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d17.b9.snapshot",
           "\"Immutable proposal revision plus exact war, authority, beneficiary, right, custody, reservation, and feasibility revisions. Acceptance receipts bind this snapshot digest and proposal revision.\""
         ],
         [
-          "운용",
+          "운용 — 서명 시 재검사",
           "d17.b9.commitPoint",
           "\"After strict parse, event identity, expected ledger revision, proposal revision, endpoint, term eligibility, authority, consent, price-version, reservation, and feasibility checks. Replace ledger and append one receipt atomically. Rejection changes nothing.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[0]",
           "\"parse typed ledger and event\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[1]",
           "\"return matching prior receipt or reject reused event ID with a different payload\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[2]",
           "\"check expected ledger revision and proposal revision\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[3]",
           "\"read D16 endpoint and invalidate open negotiation when &#124;W&#124; reaches 100 before signature\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[4]",
           "\"validate signer and disposer authority separately\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[5]",
           "\"validate each term identity, side, beneficiary, force scope, third-party rights, explicit consent, feasibility, and unique subject pledge\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[6]",
           "\"resolve the registered price record for every term at the proposal snapshot\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[7]",
           "\"compute demand and offer sums in one declared price unit; never substitute missing price with zero\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[8]",
           "\"record response as accept, reject, or counteroffer without deriving it from V<=W\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[9]",
           "\"on changed relevant state require explicit reprice, new snapshot digest, and new acceptance receipts\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[10]",
           "\"at signature atomically acquire supplied valid reservations and create one settlement plus per-term delivery obligations\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[11]",
           "\"during delivery preserve completed quantities, update remaining quantities, and record supplied breach state without inventing remedy\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.orderedSteps[12]",
           "\"append one result and event receipt\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.formulaSheet[0].i​d",
           "\"demandSum\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[0].e​xpression",
           "\"sum(term.price.amount for eligible demand terms)\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[0].u​nit",
           "\"price-unit is an exact declared ledger unit; quantities retain each term's declared unit and are never combined across unlike units\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[0].n​ull",
           "\"unknown price, authority, consent, right, feasibility, expiry, or remedy remains unresolved and blocks the dependent transition; never zero, false, free, or waived\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[0].c​lamp",
           "\"none; war score range belongs to D16 and invalid supplied values are rejected\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[0].r​ounding",
           "\"none; D17 accepts exact safe integer prices and quantities only until a separately approved rounding contract exists\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[0].r​ng",
           "\"none; acceptance, tie handling, counteroffers, reservation conflicts, and event order are not randomized\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.formulaSheet[1].i​d",
           "\"offerSum\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[1].e​xpression",
           "\"sum(term.price.amount for eligible offer terms)\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[1].u​nit",
           "\"price-unit is an exact declared ledger unit; quantities retain each term's declared unit and are never combined across unlike units\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[1].n​ull",
           "\"unknown price, authority, consent, right, feasibility, expiry, or remedy remains unresolved and blocks the dependent transition; never zero, false, free, or waived\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[1].c​lamp",
           "\"none; war score range belongs to D16 and invalid supplied values are rejected\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[1].r​ounding",
           "\"none; D17 accepts exact safe integer prices and quantities only until a separately approved rounding contract exists\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[1].r​ng",
           "\"none; acceptance, tie handling, counteroffers, reservation conflicts, and event order are not randomized\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.formulaSheet[2].i​d",
           "\"proposalValue\""
         ],
         [
-          "운용",
+          "운용 — 요구합－제공합",
           "d17.b9.formulaSheet[2].e​xpression",
           "\"V=demandSum-offerSum\""
         ],
         [
-          "운용",
+          "운용 — 요구합－제공합",
           "d17.b9.formulaSheet[2].u​nit",
           "\"price-unit is an exact declared ledger unit; quantities retain each term's declared unit and are never combined across unlike units\""
         ],
         [
-          "운용",
+          "운용 — 요구합－제공합",
           "d17.b9.formulaSheet[2].n​ull",
           "\"unknown price, authority, consent, right, feasibility, expiry, or remedy remains unresolved and blocks the dependent transition; never zero, false, free, or waived\""
         ],
         [
-          "운용",
+          "운용 — 요구합－제공합",
           "d17.b9.formulaSheet[2].c​lamp",
           "\"none; war score range belongs to D16 and invalid supplied values are rejected\""
         ],
         [
-          "운용",
+          "운용 — 요구합－제공합",
           "d17.b9.formulaSheet[2].r​ounding",
           "\"none; D17 accepts exact safe integer prices and quantities only until a separately approved rounding contract exists\""
         ],
         [
-          "운용",
+          "운용 — 요구합－제공합",
           "d17.b9.formulaSheet[2].r​ng",
           "\"none; acceptance, tie handling, counteroffers, reservation conflicts, and event order are not randomized\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.formulaSheet[3].i​d",
           "\"quantityConservation\""
         ],
         [
-          "운용",
+          "운용 — 부분 이행 보존",
           "d17.b9.formulaSheet[3].e​xpression",
           "\"delivered_after + remaining_after = delivered_before + remaining_before for each signed term unless a separately supplied lawful quantity-changing event exists\""
         ],
         [
-          "운용",
+          "운용 — 부분 이행 보존",
           "d17.b9.formulaSheet[3].u​nit",
           "\"price-unit is an exact declared ledger unit; quantities retain each term's declared unit and are never combined across unlike units\""
         ],
         [
-          "운용",
+          "운용 — 부분 이행 보존",
           "d17.b9.formulaSheet[3].n​ull",
           "\"unknown price, authority, consent, right, feasibility, expiry, or remedy remains unresolved and blocks the dependent transition; never zero, false, free, or waived\""
         ],
         [
-          "운용",
+          "운용 — 부분 이행 보존",
           "d17.b9.formulaSheet[3].c​lamp",
           "\"none; war score range belongs to D16 and invalid supplied values are rejected\""
         ],
         [
-          "운용",
+          "운용 — 부분 이행 보존",
           "d17.b9.formulaSheet[3].r​ounding",
           "\"none; D17 accepts exact safe integer prices and quantities only until a separately approved rounding contract exists\""
         ],
         [
-          "운용",
+          "운용 — 부분 이행 보존",
           "d17.b9.formulaSheet[3].r​ng",
           "\"none; acceptance, tie handling, counteroffers, reservation conflicts, and event order are not randomized\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b9.formulaSheet[4].i​d",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[4].e​xpression",
           "\"accepted new event: ledger version +1; duplicate/reject: unchanged\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[4].u​nit",
           "\"price-unit is an exact declared ledger unit; quantities retain each term's declared unit and are never combined across unlike units\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[4].n​ull",
           "\"unknown price, authority, consent, right, feasibility, expiry, or remedy remains unresolved and blocks the dependent transition; never zero, false, free, or waived\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[4].c​lamp",
           "\"none; war score range belongs to D16 and invalid supplied values are rejected\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[4].r​ounding",
           "\"none; D17 accepts exact safe integer prices and quantities only until a separately approved rounding contract exists\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.formulaSheet[4].r​ng",
           "\"none; acceptance, tie handling, counteroffers, reservation conflicts, and event order are not randomized\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.rng",
           "\"none; acceptance, tie handling, counteroffers, reservation conflicts, and event order are not randomized\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.time",
           "\"사건은 D18의 승인된 세계 시각과 순서를 읽는다. 미정 기간·기한·동시 사건 순서는 발급하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.rounding",
           "\"none; D17 accepts exact safe integer prices and quantities only until a separately approved rounding contract exists\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.clamps",
           "\"none; war score range belongs to D16 and invalid supplied values are rejected\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d17.b9.lifecycle.failure​",
           "\"typed rejection before commit with state preservation\""
         ],
         [
-          "운용",
+          "운용 — 권한 있는 취소",
           "d17.b9.lifecycle.cancel",
           "\"open proposal may be cancelled by supplied authority; signed contract cancellation follows its supplied clause and cannot rewind completed delivery\""
         ],
         [
-          "운용",
+          "운용 — 서명자 상실 재검사",
           "d17.b9.lifecycle.death",
           "\"signer death or authority loss invalidates old acceptance and requires per-contract revalidation; it does not erase completed delivery or automatically terminate every obligation\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.lifecycle.load",
           "\"schemaVersion must equal 1; revisions, snapshot digests, reservations, contracts, and history are preserved; corrupt or unsupported state is rejected without repair\""
         ],
         [
-          "운용",
+          "운용 — 등록 기한만 만료",
           "d17.b9.lifecycle.expiry",
           "\"only supplied approved deadline or invalidator may expire a proposal; no default duration\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.lifecycle.breach",
           "\"breach fact may be recorded from supplied contract conditions; remedy, trust delta, compensation, and termination effect remain proposal inputs\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d17.b9.failure",
           "\"typed rejection before commit with state preservation\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].i​d",
           "\"P-PRICE\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].d​ecisionBoundary",
           "\"D12/T68-D17-PRICE-ACCEP​TANCE:A + D22/T68-NUMERIC-DESIGN-A​SSUMPTIONS:B\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].d​etail",
           "\"Term price tables, signs, state modifiers, allowed negative/zero prices, refresh triggers, and future rounding. Structural requirement for a registered exact-unit record is approved; actual values are not.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].i​d",
           "\"P-ACCEPT\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].d​ecisionBoundary",
           "\"D12/T68-D17-PRICE-ACCEP​TANCE:A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].d​etail",
           "\"Acceptance inputs, coefficients, thresholds, ties, and counteroffer construction. Explicit consent receipts and separation from V are approved; no scoring function is.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].i​d",
           "\"P-RESERVE\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].d​ecisionBoundary",
           "\"D06/GP-13:A + D19/T68-D11-CONTRACT-REC​ALL:A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].d​etail",
           "\"Reservation start, exclusivity, conflict priority, expiry, and release order. Duplicate pledge rejection inside one proposal is approved; cross-proposal acquisition policy is supplied fixture input.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].i​d",
           "\"P-EXPIRY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].d​ecisionBoundary",
           "\"D12/T68-D17-PRICE-ACCEP​TANCE:A + D19/T68-D11-CONTRACT-REC​ALL:A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].d​etail",
           "\"Deadlines and exact relevant-state invalidators. Explicit reprice invalidates old acceptance; no default proposal duration.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].i​d",
           "\"P-BREACH\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].d​ecisionBoundary",
           "\"D06/GP-13:A + D19/T68-D11-CONTRACT-REC​ALL:A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].d​etail",
           "\"Delivery duration, installment schedule, breach detection clauses, restitution, compensation, trust effects, termination, and retry order. Completed delivery preservation is approved.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].i​d",
           "\"P-INSTITUTION\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].d​ecisionBoundary",
           "\"D06/GP-13:A + D17/GP-07:B\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].d​etail",
           "\"Actual CB, truce, reparations, captive, title, superior-contract, ratification, acquisition, stabilization, and country procedure records. Option B authorizes authoring proposals, not adopting them.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].i​d",
           "\"P-RIGHTS\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].d​ecisionBoundary",
           "\"D17/GP-07:B + D19/T68-D11-CONTRACT-REC​ALL:A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].d​etail",
           "\"Item-specific third-party interests, disposer authority, beneficiaries, recall/death clauses, and legal-effect events beyond existing SP1 boundaries.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].i​d",
           "\"P-EVENT-ORDER\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].d​ecisionBoundary",
           "\"D12/T68-D17-PRICE-ACCEP​TANCE:A; owner remains D18\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].d​etail",
           "\"Same-boundary ordering among acceptance, signature, &#124;W&#124;=100, death, authority change, and expiry. D17 rejects stale versions but does not choose a global priority.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].i​d",
           "\"P-FAMILY-ESTATE\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].d​ecisionBoundary",
           "\"D19/T68-D11-CONTRACT-RE​CALL:A; owner remains D08/D13\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].d​etail",
           "\"Marriage, estate, joint property, shares, collateral priority, creditor competition, and lawful beneficiary records.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].i​d",
           "\"P-PEOPLE-CONSENT\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].d​ecisionBoundary",
           "\"D12/T68-D17-PRICE-ACCEP​TANCE:A; owner remains D01/D03/D08/D16\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].d​etail",
           "\"Concrete consent requirements for release, repatriation, assignment, service, marriage, or other person-affecting terms. The mechanism forbids treating persons as assets but does not create individual consent facts.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].s​ourceStatus",
           "\"proposal\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.proposalHeld[9].o​perative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[0].id",
           "\"U-REJECT\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[0].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[0].detail",
           "\"A first-class reject transition, rejection receipt payload, and persistence/replay semantics are described by SP1 but are not executed by validator.mjs.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[0].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[0].numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[1].id",
           "\"U-COUNTEROFFER\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[1].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[1].detail",
           "\"Counteroffer identity, parent proposal linkage, term replacement rules, and acceptance invalidation are not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[1].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[1].numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[2].id",
           "\"U-CANCEL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[2].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[2].detail",
           "\"Open-proposal and signed-contract cancellation authority, reservation release, and remaining-obligation handling are not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[2].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[2].numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[3].id",
           "\"U-DEATH\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[3].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[3].detail",
           "\"Signer death and authority-loss event ingestion, per-contract revalidation, and preservation of completed delivery are specified but not executed as a transition.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[3].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[3].numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[4].id",
           "\"U-EXPIRY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[4].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[4].detail",
           "\"Deadline/invalidator-dr​iven expiry and reservation release are not executed because actual expiry inputs remain proposals.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[4].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[4].numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[5].id",
           "\"U-FORGERY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[5].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[5].detail",
           "\"Forged signatures, forged authority evidence, and cryptographic/authentici​ty proof are not modeled beyond stable event/payload collision checks.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[5].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[5].numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[6].id",
           "\"U-REPRICE-ITEM-REVALIDA​TION\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[6].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[6].detail",
           "\"Reprice executes new revision/snapshot and acceptance invalidation, but it does not rerun item authority, third-party rights, consent, feasibility, or reservation validation until a later accept/sign event.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[6].operative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b9.heldStructuralSco​pes[6].numericApproval",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.schemaVersion",
           "1"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.task",
           "45"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.domain",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.title",
           "\"협상·거래·강화·계약\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.status",
           "\"approved-structural-con​tract-with-explicit-prop​osal-inputs\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d17.b11.rulesVersion",
           "\"SP-1.0.0 plus sealed Task26 selections 2026-10-08\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[0]",
           "\"sp1.b11-sp1.b14\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[1]",
           "\"sp1.b24-sp1.b35\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[2]",
           "\"sp1.b61-sp1.b67\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[3]",
           "\"sp1.b82-sp1.b90\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[4]",
           "\"sp1.b93\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[5]",
           "\"sp1.b117-sp1.b128\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[6]",
           "\"rules-factions-warfare-​clauses.json#war-score-o​wner.20261003.rules\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.canoni​calAnchors[7]",
           "\"rules-factions-warfare-​clauses.json#sp1.2026100​3.peace-extension\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[0].row",
           "\"D06\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[0].decisionId​",
           "\"GP-13\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[0].chosenOpti​on",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[0].applicatio​n",
           "\"Treaty indivisible clauses, legal-effect events, and physical-handoff events are distinct. Concrete CB, truce, reparation, captive, and superior-contract entries remain authored inputs rather than invented defaults.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[1].row",
           "\"D12\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[1].decisionId​",
           "\"T68-D17-PRICE-ACCEPTANC​E\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[1].chosenOpti​on",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[1].applicatio​n",
           "\"Asset value, action cost, and actor-specific acceptance are separate. A missing registered price blocks final signature; V<=W is never automatic consent. Relevant state changes require explicit reevaluation on a new snapshot and invalidate old acceptance.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[2].row",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[2].decisionId​",
           "\"GP-07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[2].chosenOpti​on",
           "\"B\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[2].applicatio​n",
           "\"Unassigned title and superior-contract records may be authored as proposals for item-by-item approval. The mechanism may validate supplied ratification records but cannot create holders, periods, or procedures.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[3].row",
           "\"D19\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[3].decisionId​",
           "\"T68-D11-CONTRACT-RECALL​\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[3].chosenOpti​on",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[3].applicatio​n",
           "\"Each contract supplies authority, duration, duties, breach, ratification, expiry/death, conflict, and physical handoff clauses. No unconditional recall or automatic return is inferred.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[4].row",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[4].decisionId​",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[4].chosenOpti​on",
           "\"B\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.sealed​Selections[4].applicatio​n",
           "\"Common units are explicit before formula coefficients. D17 accepts exact integer price-unit inputs only; coefficients and tables remain separately approved versioned inputs.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.select​ionRule",
           "\"All 37 decision rows were read through their consequences. D06, D12, D17, D19, and D22 directly constrain D17. Every other row is recorded in proposals.json as deferred-with-trace rather than called irrelevant.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.resear​chLimit",
           "\"Prior CK3/Norland D17 dossiers and the 2026-10-06 D17 proposal sheet are comparison evidence, not Seoul numeric authority. No external price, acceptance threshold, term duration, reservation priority, or breach coefficient is adopted.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.gurpsL​ike.basis",
           "\"task-25-gurps-like-basi​s-20261008/basis.json\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.gurpsL​ike.workedChecks",
           "\"task-25-gurps-like-basi​s-20261008/worked-checks​.json\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.gurpsL​ike.D17NumericApplicabil​ity",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.authority.gurpsL​ike.reason",
           "\"Negotiation consent and legal feasibility are not reaction rolls or quick contests. The public Lite reaction structure explicitly does not force contractual consent. D17 uses no 3d6, CP, skill, damage, or derived-character formula.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[0].id​",
           "\"ELIGIBILITY\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[0].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 당사자·항목 조건",
           "d17.b11.mechanisms[0].al​gorithm",
           "\"Below the D16 endpoint, an authorized actor may submit itemized demands/offers. Finalization requires distinct signer/disposer authority, stable subject and beneficiary IDs, no unauthorized third-party right, explicit required consent, actual feasibility, and one pledge per subject within the proposal.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[1].id​",
           "\"VALUATION\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[1].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 등록 가격·동일 단위",
           "d17.b11.mechanisms[1].al​gorithm",
           "\"Every final term carries a registered price record with version, snapshot digest, exact integer amount, and one common price unit. V=sum(demands)-sum(offer​s). Missing or stale price makes valuation unresolved and blocks acceptance/signature; it is never free.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[2].id​",
           "\"RESPONSE\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[2].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 명시 응답",
           "d17.b11.mechanisms[2].al​gorithm",
           "\"Acceptance is an explicit receipt by an authorized party bound to proposal revision and snapshot digest. Rejection and counteroffer are explicit branches. V<=W, positive reaction, high trust, or favorable relationship never creates consent.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[3].id​",
           "\"REPRICE\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[3].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 명시 재가격",
           "d17.b11.mechanisms[3].al​gorithm",
           "\"A relevant state change preserves proposal identity only through an explicit reprice event that creates a new revision/snapshot, invalidates all old acceptance receipts, revalidates terms, and requires renewed acceptance before signature.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[4].id​",
           "\"ENDPOINT\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[4].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 협상 가능한 경계",
           "d17.b11.mechanisms[4].al​gorithm",
           "\"If D16 supplies &#124;W&#124;=100 before signature, discard the open proposal and consume only the valid casus-belli endpoint result. Out-of-goal terms, third-party rights, and voluntary extras are not forced. Same-boundary priority remains D18 input rather than a D17 invention.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[5].id​",
           "\"SIGN\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[5].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 정산 ID 하나",
           "d17.b11.mechanisms[5].al​gorithm",
           "\"On a valid accepted snapshot, atomically verify and acquire supplied reservations, emit exactly one settlement ID, apply supplied legal effects, and create per-term delivery obligations. Signature does not teleport or duplicate property or people.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[6].id​",
           "\"DELIVERY\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[6].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 잔여 의무 재검사",
           "d17.b11.mechanisms[6].al​gorithm",
           "\"Delivery advances exact delivered and remaining quantities under custody/route facts. Partial completion survives interruption, death, cancellation, and breach. Only remaining obligation is revalidated; remedy and timing require supplied contract clauses.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.mechanisms[7].id​",
           "\"IDEMPOTENCY\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[7].ap​proved",
           "true"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.mechanisms[7].al​gorithm",
           "\"A repeated event ID with the same canonical payload returns its stored receipt; a different payload under the same ID is rejected. A completed settlement/result ID is never applied twice.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[0].id",
           "\"U-REJECT\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[0].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[0].detail",
           "\"A first-class reject transition, rejection receipt payload, and persistence/replay semantics are described by SP1 but are not executed by validator.mjs.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[1].id",
           "\"U-COUNTEROFFER\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[1].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[1].detail",
           "\"Counteroffer identity, parent proposal linkage, term replacement rules, and acceptance invalidation are not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[2].id",
           "\"U-CANCEL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[2].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[2].detail",
           "\"Open-proposal and signed-contract cancellation authority, reservation release, and remaining-obligation handling are not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[3].id",
           "\"U-DEATH\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[3].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[3].detail",
           "\"Signer death and authority-loss event ingestion, per-contract revalidation, and preservation of completed delivery are specified but not executed as a transition.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[4].id",
           "\"U-EXPIRY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[4].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[4].detail",
           "\"Deadline/invalidator-dr​iven expiry and reservation release are not executed because actual expiry inputs remain proposals.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[5].id",
           "\"U-FORGERY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[5].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[5].detail",
           "\"Forged signatures, forged authority evidence, and cryptographic/authentici​ty proof are not modeled beyond stable event/payload collision checks.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[6].id",
           "\"U-REPRICE-ITEM-REVALIDA​TION\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[6].status",
           "\"UNVERIFIED\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.unverifiedStruct​uralScope[6].detail",
           "\"Reprice executes new revision/snapshot and acceptance invalidation, but it does not rerun item authority, third-party rights, consent, feasibility, or reservation validation until a later accept/sign event.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.scope.evidenceOn​ly",
           "true"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.scope.productEdi​ted",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.scope.canonAdopt​ed",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.scope.runtimeImp​lemented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.scope.fullNumeri​cDomainClosure",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.scope.proposalPo​licy",
           "\"Fixture prices, quantities, IDs, deadlines, authorities, and remedies are illustrative oracle data only, not approved Seoul values or world records.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.scope.integratio​nDeferral",
           "\"Canonical GDD mechanism-d17.json, collection registration, rendered lock, materialization, product verify --domain D17, and commits belong to the separate later integration wave.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.sourceEvidenceSt​atus",
           "\"approved-structural-con​tract-with-explicit-prop​osal-inputs\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[0].row",
           "\"D01\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[0].decisionId",
           "\"GP-01\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[0].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[0].reason",
           "\"Opening-candidate detention/location records may affect a person term, but D17 consumes supplied current status only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[1].row",
           "\"D02\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[1].decisionId",
           "\"GP-02\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[1].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[1].reason",
           "\"Route observation and replan state may affect delivery feasibility; D06 owns it.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[2].row",
           "\"D03\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[2].decisionId",
           "\"GP-04\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[2].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[2].reason",
           "\"Ration/wage performance may become a contract term; D04/D02 own quantities and effects.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[3].row",
           "\"D04\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[3].decisionId",
           "\"GP-05\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[3].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[3].reason",
           "\"Recipe resources and work stages may be exchanged, but D05 owns production values.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[4].row",
           "\"D05\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[4].decisionId",
           "\"GP-10\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[4].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[4].reason",
           "\"Knowledge access can be a term; D14 owns requirements and progress.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[5].row",
           "\"D06\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[5].decisionId",
           "\"GP-13\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[5].disposition",
           "\"applied\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[5].reason",
           "\"Directly governs treaties, truce, reparations, captives, rights, legal effect, and physical handoff.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[6].row",
           "\"D07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[6].decisionId",
           "\"T68-D01-ISSUANCE\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[6].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[6].reason",
           "\"Person issuance ledger can identify parties; D01 owns individual approval.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[7].row",
           "\"D08\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[7].decisionId",
           "\"T68-D07-EVALUATION-DECA​Y\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[7].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[7].reason",
           "\"Late reports and evaluation lifecycle may inform response, but no D17 acceptance coefficient is inferred.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[8].row",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[8].decisionId",
           "\"T68-D09-COUNTRY-LAWS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[8].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[8].reason",
           "\"Country quorum/resolver/ratifica​tion records are upstream authority facts consumed when supplied.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[9].row",
           "\"D10\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[9].decisionId",
           "\"T68-D12-PERMANENT-DETEN​TION\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[9].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[9].reason",
           "\"Detention and return facts affect person terms; D12 owns control transitions.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[10].row",
           "\"D11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[10].decisionId",
           "\"T68-D16-ORGANIZATION-LI​FECYCLE\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[10].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[10].reason",
           "\"Organization survival and representative authority are upstream D16 facts.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[11].row",
           "\"D12\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[11].decisionId",
           "\"T68-D17-PRICE-ACCEPTANC​E\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[11].disposition",
           "\"applied\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[11].reason",
           "\"Direct D17 price, acceptance, snapshot, reprice, and renewed-consent boundary.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[12].row",
           "\"D13\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[12].decisionId",
           "\"T68-PF-03\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[12].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[12].reason",
           "\"Cast field corrections do not authorize negotiation values or parties.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[13].row",
           "\"D14\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[13].decisionId",
           "\"T68-PF-05\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[13].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[13].reason",
           "\"Identity mapping approval is separate from payload approval; D17 never treats mapping as current authority.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[14].row",
           "\"D15\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[14].decisionId",
           "\"T68-PF-06\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[14].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[14].reason",
           "\"Unit type mapping and instance issuance are D15 inputs, not D17 terms by default.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[15].row",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[15].decisionId",
           "\"T68-PF-07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[15].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[15].reason",
           "\"Population token identity may underlie labor terms; D04 owns conservation.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[16].row",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[16].decisionId",
           "\"GP-07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[16].disposition",
           "\"applied\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[16].reason",
           "\"Title and superior-contract proposal authoring and ratification boundaries affect D17 terms directly.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[17].row",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[17].decisionId",
           "\"GP-11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[17].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[17].reason",
           "\"Command evaluation records may affect an actor's judgment, but D17 consumes attributed facts without making a score.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[18].row",
           "\"D19\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[18].decisionId",
           "\"T68-D11-CONTRACT-RECALL​\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[18].disposition",
           "\"applied\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[18].reason",
           "\"Direct contract authority, duration, duty, breach, ratification, conflict, death, and handoff boundary.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[19].row",
           "\"D20\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[19].decisionId",
           "\"T68-PF-01\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[19].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[19].reason",
           "\"Character values are not negotiation prices or acceptance coefficients.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[20].row",
           "\"D21\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[20].decisionId",
           "\"T68-PF-02\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[20].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[20].reason",
           "\"Organization values/policies require field-level approval before D17 can consume them.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[21].row",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[21].decisionId",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[21].disposition",
           "\"applied\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[21].reason",
           "\"D17 declares price and quantity units first; formula coefficients remain held.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[22].row",
           "\"D23\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[22].decisionId",
           "\"T68-TRAINING-SKILL-SPEC​IFIC\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[22].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[22].reason",
           "\"Training conversion/cost is D14-owned and cannot become a D17 price automatically.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[23].row",
           "\"D24\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[23].decisionId",
           "\"T68-COMBAT-THREE-DIMENS​IONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[23].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[23].reason",
           "\"Combat aggregation/loss ledger can affect war facts, but D16 supplies the settlement snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[24].row",
           "\"D25\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[24].decisionId",
           "\"G1\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[24].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[24].reason",
           "\"Pilot Spear intent and CP arithmetic have no D17 formula role.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[25].row",
           "\"D26\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[25].decisionId",
           "\"G2\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[25].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[25].reason",
           "\"Skills/TL/language issuance cannot supply acceptance or price without separate approval.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[26].row",
           "\"D27\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[26].decisionId",
           "\"T68-VARIABLE-CAPACITY\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[26].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[26].reason",
           "\"Capacity may constrain feasibility; D15 supplies the approved state.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[27].row",
           "\"D28\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[27].decisionId",
           "\"GP-02\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[27].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[27].reason",
           "\"Movement/load facts can constrain delivery, but D06 owns conversions and route state.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[28].row",
           "\"D29\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[28].decisionId",
           "\"GP-04\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[28].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[28].reason",
           "\"Health/needs/labor effects may constrain action feasibility; D02/D04 own them.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[29].row",
           "\"D30\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[29].decisionId",
           "\"GP-08\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[29].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[29].reason",
           "\"Command eligibility and injury modifiers may constrain authority/feasibility; D15 owns them.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[30].row",
           "\"D31\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[30].decisionId",
           "\"GP-10\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[30].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[30].reason",
           "\"Skill training definitions and rates are D14 inputs, not D17 values.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[31].row",
           "\"D32\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[31].decisionId",
           "\"GP-11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[31].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[31].reason",
           "\"Combat roll structure and realtime timing do not become negotiation acceptance mechanics.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[32].row",
           "\"D33\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[32].decisionId",
           "\"T68-D01-ISSUANCE\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[32].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[32].reason",
           "\"Individual CP/abilities require person-by-person approval and are not D17 price inputs by default.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[33].row",
           "\"D34\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[33].decisionId",
           "\"T68-PF-04\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[33].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[33].reason",
           "\"Corpus value reclassification is not negotiation authority.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[34].row",
           "\"D35\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[34].decisionId",
           "\"T68-PF-06\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[34].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[34].reason",
           "\"Employment contract price and capability/equipment eligibility are separate D04/D15 records; D17 may consume only approved records.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[35].row",
           "\"D36\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[35].decisionId",
           "\"T68-PF-07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[35].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[35].reason",
           "\"Generated attributes/skills remain candidate data and cannot determine terms without approval.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[36].row",
           "\"D37\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[36].decisionId",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[36].disposition",
           "\"defer-with-trace\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d17.b11.decisionDisposit​ion[36].reason",
           "\"Health-derived one-time settlement prevents duplicated losses upstream; D17 consumes the resulting approved state only.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​policy",
           "\"Every held value remains a proposal and is traced to an owner-decision boundary. Every sealed row was checked through consequences; non-D17 rows are deferred-with-trace, not declared irrelevant.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[0].​id",
           "\"U-REJECT\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[0].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[0].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[0].​detail",
           "\"Reject transition and durable receipt not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[1].​id",
           "\"U-COUNTEROFFER\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[1].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[1].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[1].​detail",
           "\"Counteroffer transition and lineage not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[2].​id",
           "\"U-CANCEL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[2].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[2].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[2].​detail",
           "\"Cancellation and reservation-release transitions not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[3].​id",
           "\"U-DEATH\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[3].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[3].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[3].​detail",
           "\"Death/authority-loss revalidation transition not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[4].​id",
           "\"U-EXPIRY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[4].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[4].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[4].​detail",
           "\"Expiry transition not executed.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[5].​id",
           "\"U-FORGERY\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[5].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[5].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[5].​detail",
           "\"Signature/authority forgery detection not executed beyond event collision.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[6].​id",
           "\"U-REPRICE-ITEM-REVALIDA​TION\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[6].​status",
           "\"UNVERIFIED-STRUCTURAL\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[6].​separateFromProposal",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d17.b11.proposalContext.​unverifiedScopeHolds[6].​detail",
           "\"Reprice does not itself execute item-level authority/right/consent/​feasibility revalidation.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.proposalContext.​integrationDeferrals[0]",
           "\"Author GDD/canon/locales/ko-KR/​system-design/mechanism-​d17.json in the separate canonical integration wave.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.proposalContext.​integrationDeferrals[1]",
           "\"Register doc.Mechanism-D17 in GDD/canon/collections/sy​stem-design.json and update GDD/canon/rendered.lock.​json in that same later increment.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.proposalContext.​integrationDeferrals[2]",
           "\"Materialize and inspect Mechanism-D17.md, then run TOOL/tools/mechanisms/ve​rify.mjs --domain D17 against canonical cases after integration.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.proposalContext.​integrationDeferrals[3]",
           "\"Create the canonical docs commit only in the later integration wave; this evidence task creates no commit.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.landingDispositi​on.documentRegistration",
           "\"bounded canonical contract only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.landingDispositi​on.runtimeAndNumericAdop​tion",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.landingDispositi​on.commonExecutableVerif​ier",
           "\"not run; executionSchemaReady:fal​se\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d17.b11.landingDispositi​on.sourceDeferrals",
           "\"historical document-registration and commit deferrals are satisfied by this landing; cross-domain/runtime/exe​cutable work remains unclaimed\""
         ]

@@ -445,7 +445,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -456,1407 +456,1407 @@
       ],
       "rows": [
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.schemaVersion",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.domainId",
           "\"D05\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.mechanismId",
           "\"seoul.d05.bounded-contr​act\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersion",
           "null"
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "null"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.contractSHA256",
           "\"be385061971813cc7aba01a​42a5fe9c928e008730a6b303​33e77213465a4fc7b\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.rulesVersionLinka​ge.missingVersionPolicy",
           "\"원천 계약에 rulesVersion이 없다. 해시는 이 계약의 바이트 판본이며 승인된 게임 규칙 버전을 대신 발급하지 않는다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
           "\"doc.Rules-EconomyLogist​ics\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[2].path",
           "\"canon/locales/ko-KR/rul​es/rules-economy-logisti​cs-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b9.rulesVersionLinka​ge.canonRules[2].sha256",
           "\"36012dbc48b74498dd9ff44​5faf33d0b6c8785c8d82cf3a​c67dc4cc309d39dab\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.dataOwner",
           "\"D05 생산·단계·경제 효과 정산; D13 소유권, D02 신체 상태, D18 시간·저장\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].field",
           "\"recipeId/rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].type",
           "\"nonempty string\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].owner",
           "\"D05 recipe authority\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].read",
           "\"recipe ledger\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[0].write",
           "\"none in this closure\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].null",
           "\"blocks operation\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[0].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[0].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.fields[1].field",
           "\"material quantities\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.fields[1].type",
           "\"nonnegative integer atoms tagged with itemId and unit\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.fields[1].unit",
           "\"item-specific atom\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.fields[1].owner",
           "\"D13 ownership; D05 allocation\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.fields[1].read",
           "\"inventory snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[1].write",
           "\"atomic committed material event\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.fields[1].null",
           "\"unknown; never zero\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[1].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[1].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.fields[2].field",
           "\"work/progress\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.fields[2].type",
           "\"nonnegative exact rational\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.fields[2].unit",
           "\"recipe-specific work unit\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.fields[2].owner",
           "\"D05\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.fields[2].read",
           "\"stage snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[2].write",
           "\"qualified approved work event\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.fields[2].null",
           "\"blocks work\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[2].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[2].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b9.fields[3].field",
           "\"rates/power/duration/fa​cility/storage\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b9.fields[3].type",
           "\"nullable unit-tagged recipe specification\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b9.fields[3].unit",
           "\"item/work/power per named clock interval; capacity in item atoms\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b9.fields[3].owner",
           "\"D05; clock D18; skills D14\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b9.fields[3].read",
           "\"approved recipe snapshot only\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[3].write",
           "\"not issued here\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b9.fields[3].null",
           "\"explicit proposal hold\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[3].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[3].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.fields[4].field",
           "\"reservedDemand/consumed​/unused\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.fields[4].type",
           "\"nonnegative exact integer\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.fields[4].unit",
           "\"same item atoms\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.fields[4].owner",
           "\"D05 reservation; D13 title\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.fields[4].read",
           "\"inventory and commitment snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[4].write",
           "\"one event after guards\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.fields[4].null",
           "\"blocks commit\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[4].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[4].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].field",
           "\"resultId/actorId/ownerI​d/version\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].type",
           "\"identity string / nonnegative version integer\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].unit",
           "\"identity / revision\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].owner",
           "\"event ledger; D03 authority; D13 title\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].read",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[5].write",
           "\"result ledger and revision on successful commit\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[5].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[5].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.fields[6].field",
           "\"arrivalAt/cutoff\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.fields[6].type",
           "\"finite numeric documentary clock coordinate\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.fields[6].unit",
           "\"same supplied world clock unit\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.fields[6].owner",
           "\"D06 delivery / D18 clock\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.fields[6].read",
           "\"verified arrival receipt\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[6].write",
           "\"none by temporal predicate\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.fields[6].null",
           "\"unknown, not false\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.fields[6].snapsho​t",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.fields[6].commitP​oint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[0]",
           "\"recipe ledger\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[1]",
           "\"inventory snapshot\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[2]",
           "\"stage snapshot\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[3]",
           "\"approved recipe snapshot only\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[4]",
           "\"inventory and commitment snapshot\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[5]",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.readSet[6]",
           "\"verified arrival receipt\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[0]",
           "\"none in this closure\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[1]",
           "\"atomic committed material event\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[2]",
           "\"qualified approved work event\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[3]",
           "\"not issued here\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[4]",
           "\"one event after guards\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[5]",
           "\"result ledger and revision on successful commit\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.writeSet[6]",
           "\"none by temporal predicate\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.snapshot.policy",
           "\"exact before snapshot\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.snapshot.conflict​",
           "\"reject explicit revision/rules mismatch\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.snapshot.commitPo​int",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.snapshot.receipt",
           "\"before/event/after with exact error; failed event leaves before unchanged\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 원자 반영",
           "d05.b9.commitPoint",
           "\"after all guards and conservation checks\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.orderedSteps[0]",
           "\"Read exact identity/rules/revision snapshot and existing result IDs\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.orderedSteps[1]",
           "\"Reject incompatible version, identity, missing facts or reused result ID before mutations\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.orderedSteps[2]",
           "\"Read approved body-state snapshot without writing it; check per-effect settlement key before derived labor effects and commit key with effect only once\""
         ],
         [
-          "운용",
+          "운용 — 검증된 실제 도착",
           "d05.b9.orderedSteps[3]",
           "\"At equal world time validate arrival first; D06 receiver countersign/rights checks remain separate\""
         ],
         [
-          "운용",
+          "운용 — 입력·재생·보존 충돌",
           "d05.b9.orderedSteps[4]",
           "\"Reserve essential consumption, contracts and supply before market work; reject insufficient remaining verified stock\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.orderedSteps[5]",
           "\"Only approved, qualified orders may run within recipe workforce/input/power/fa​cility/storage constraints\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.orderedSteps[6]",
           "\"Consume once and preserve exact fractional progress in recipe units; no rounding policy invented\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b9.orderedSteps[7]",
           "\"Before output/save stage entry secure the matching save reservation; otherwise wait and preserve the previous completed stage\""
         ],
         [
-          "운용",
+          "운용 — 입력·재생·보존 충돌",
           "d05.b9.orderedSteps[8]",
           "\"Check conservation and commit result plus revision atomically\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].i​d",
           "\"inclusive-cutoff\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].e​xpression",
           "\"verifiedArrival && arrivalAt <= cutoff\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].r​esult",
           "\"temporal eligibility only, not available stock\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].a​uthority",
           "\"T68-CARGO-INCLUSIVE-CUT​OFF\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — arrivalAt≤cutoff",
           "d05.b9.formulaSheet[0].u​nit",
           "\"같은 물자 단위 또는 동일 세계시각 좌표; 식별자 합산 금지\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].i​d",
           "\"material-conservation\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].e​xpression",
           "\"unusedAfter + consumedAfter = unusedBefore + consumedBefore; progressAfter = progressBefore on interruption\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].r​esult",
           "\"no automatic refund or loss\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].a​uthority",
           "\"T68-STAGED-CONSTRUCTION​\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b9.formulaSheet[1].u​nit",
           "\"같은 물자 단위 또는 동일 세계시각 좌표; 식별자 합산 금지\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].i​d",
           "\"reservation-limit\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].e​xpression",
           "\"sum(reserved same-item atoms) <= verified available same-item atoms\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].r​esult",
           "\"preserve current reservation on conflict; no implicit new order\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].a​uthority",
           "\"T68-DEMAND-RESERVATION-​PRODUCTION; prior bounded GP-06\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b9.formulaSheet[2].u​nit",
           "\"같은 물자 단위 또는 동일 세계시각 좌표; 식별자 합산 금지\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.rng",
           "\"승인된 보존·마감 계산은 난수를 소비하지 않는다. 새 생산 판정은 보류한다.\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.time",
           "\"D18의 동일 세계시각을 읽는다. 실제 주기·달력 기점은 proposal-held다.\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.rounding",
           "\"각 공식의 명시된 처리를 따른다. 실제 생산·전략 이동 양자화는 proposal-held다.\""
         ],
         [
-          "운용",
+          "운용 — 생산·작업 요청",
           "d05.b9.clamps",
           "\"각 식의 명시된 한계만 적용한다. 미정 정책의 임의 클램프는 없다.\""
         ],
         [
-          "운용",
+          "운용 — 입력·재생·보존 충돌",
           "d05.b9.lifecycle.failure​",
           "\"no mutation\""
         ],
         [
-          "운용",
+          "운용 — 진척·소비·기관 소유 유지",
           "d05.b9.lifecycle.cancel",
           "\"retain completed/partial progress, consumed and physical unused materials; release policy itself held\""
         ],
         [
-          "운용",
+          "운용 — 진척·소비·기관 소유 유지",
           "d05.b9.lifecycle.death",
           "\"recheck eligibility/reservations​; retain quantities and progress; no automatic successor\""
         ],
         [
-          "운용",
+          "운용 — 진척·소비·기관 소유 유지",
           "d05.b9.lifecycle.takeove​r",
           "\"retain institution ownership and stored progress; no automatic material refund or title transfer\""
         ],
         [
-          "운용",
+          "운용 — 정확 저장·예약 복원",
           "d05.b9.lifecycle.load",
           "\"exact identity, rules version, quantities, progress, reservations and applied result IDs; incompatible snapshot is explicit error\""
         ],
         [
-          "운용",
+          "운용 — 필수값·판본·결과 검사",
           "d05.b9.failure",
           "\"reject explicit revision/rules mismatch\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[0].i​d",
           "\"recipe-records\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[0].a​uthority",
           "\"GP-05-A / sealed row D04\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[0].h​eld",
           "\"Actual production/construction/​repair recipes, inputs, tools, work, qualifications and facility requirements\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[1].i​d",
           "\"numeric-formulas\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[1].a​uthority",
           "\"D22-B\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[1].h​eld",
           "\"Production formula adoption, rates/yields, penalty coefficients and labor-continuity floor 0.2; legacy canon formula is preserved as proposal pending numeric approval\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[2].i​d",
           "\"rounding\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[2].a​uthority",
           "\"GP-05 residual / D22-B\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[2].h​eld",
           "\"Whole-item rounding, fractional work quantization and consumption rounding; rational calculator is documentary only\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[3].i​d",
           "\"clock\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[3].a​uthority",
           "\"prior bounded GP-06\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[3].h​eld",
           "\"Actual shared daily phase value, calendar origin and interval unit; equal-time arrival-before-reservati​on order retained\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[4].i​d",
           "\"storage\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[4].a​uthority",
           "\"D22-B / prior GP-06\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[4].h​eld",
           "\"Storage capacities, power/duration units, distribution, spoilage/loss/shortage coefficients and durable storage\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[5].i​d",
           "\"recovery\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[5].a​uthority",
           "\"GP-05 residual\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[5].h​eld",
           "\"Salvage/repair recovery yields and stages; consumed material never automatically refunded\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[6].i​d",
           "\"release-and-reassignmen​t\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[6].a​uthority",
           "\"prior D05 proposals\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[6].h​eld",
           "\"Cancel/death reservation release details, performer replacement and reassignment; preservation checks do not authorize these\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[7].i​d",
           "\"receipt-protocol\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[7].a​uthority",
           "\"prior bounded GP-06; D06/D13 owned\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[7].h​eld",
           "\"Receipt identifiers/authenticati​on and title/custody resolution; temporal inclusion alone never final stock\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[8].i​d",
           "\"test-values\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[8].a​uthority",
           "\"Task25 value-relabel.json\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[8].h​eld",
           "\"Every chosen arithmetic input, output and test recipe in cases.json is illustrative, not an issued recipe or approved number\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[9].i​d",
           "\"public-math\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[9].a​uthority",
           "\"Task25 basis L-success/L-margin\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[9].h​eld",
           "\"No economic skill roll or personal target issued; 3d6 reference is not economic adoption\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[9].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[9].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[9].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[10].​id",
           "\"rules-version-issuance\"​"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[10].​status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[10].​numericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[10].​operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d05.b9.proposalHeld[10].​scope",
           "\"원천 팩에 없는 D05 실행 규칙 판본의 실제 발급 및 D18 호환 등록\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.status",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.sourceAnchor",
           "\"rules-economy-logistics​-clauses.json#r2.recon-0​2.formulas\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.fulfillment",
           "\"requirement=0 => 1; else clamp(allocation/require​ment,0,1); empty input set => 1\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.production",
           "\"baseYield * min(laborFulfillment,inp​utFulfillment,powerFulfi​llment) * facilityState\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.shortage",
           "\"demand=0 => 0; else clamp(1-fulfilled/demand​,0,1)\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.laborContinuity",
           "\"clamp(1-sum(penaltyCoef​ficient*shortage),0.2,1)​; floor 0.2 and penalty coefficients remain proposal, not implemented as approved behavior\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.units",
           "\"rates require the same named recipe interval; dimensionless fulfillment and facility fraction; yield in output item units\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.null",
           "\"blocks evaluation; absent recipe rates not free production\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.rounding",
           "\"exact rational in documentary calculator; gameplay rounding held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.rng",
           "\"none; no production skill roll invented\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.numericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d05.b9.proposalFormulaSh​eet.operative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[0].row",
           "\"D04\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[0].decisionI​d",
           "\"GP-05\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[0].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[0].scope",
           "\"Recipe-specific resource, work and facility specification direction only\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[1].row",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[1].decisionI​d",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[1].chosenOpt​ion",
           "\"B\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[1].scope",
           "\"Normalize input units first; formulas and coefficients await later approval\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[2].row",
           "\"D37\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[2].decisionI​d",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[2].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.sealed​RowsApplied[2].scope",
           "\"Approved body state read-only input; per-effect one-time settlement, including D05 labor loss. Exact health units/conversion coefficients still require approval.\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.rowIds​AreNotDomainIds",
           "true"
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.exclud​edRows",
           "\"D05/GP-10 belongs to knowledge access D14, not economy; other rows do not adopt D05 numbers\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.priorA​cceptedClauses[0]",
           "\"T68-STAGED-CONSTRUCTION​\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.priorA​cceptedClauses[1]",
           "\"T68-DEMAND-RESERVATION-​PRODUCTION\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.priorA​cceptedClauses[2]",
           "\"T68-CARGO-INCLUSIVE-CUT​OFF\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.priorA​cceptedClauses[3]",
           "\"property-and-delivery\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.priorA​cceptedClauses[4]",
           "\"identity-version-permis​sion\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.authority.noNewO​wnerDecisions",
           "true"
         ],
         [
-          "운용",
+          "운용 — 승인 신체 상태 읽기",
           "d05.b11.healthSettlement​Boundary.authority",
           "\"sealed D37-A\""
         ],
         [
-          "운용",
+          "운용 — 승인 신체 상태 읽기",
           "d05.b11.healthSettlement​Boundary.owner",
           "\"D02 body-state issuance; D05 effect settlement\""
         ],
         [
-          "운용",
+          "운용 — 승인 신체 상태 읽기",
           "d05.b11.healthSettlement​Boundary.read",
           "\"approved person-bound body-state ID/revision and effect identity in the same rules snapshot\""
         ],
         [
-          "운용",
+          "운용 — 효과·키 원자 기록",
           "d05.b11.healthSettlement​Boundary.write",
           "\"D05 settled-effect ledger only; never mutate body state\""
         ],
         [
-          "운용",
+          "운용 — 효과 단회 정산 키",
           "d05.b11.healthSettlement​Boundary.settlementKey",
           "\"personId + bodyStateId + bodyRevision + effectId; independent of economic resultId\""
         ],
         [
-          "운용",
+          "운용 — 효과 단회 정산 키",
           "d05.b11.healthSettlement​Boundary.rule",
           "\"Apply a supplied approved derived effect at most once. A second economic result referring to the same effect cannot apply the same shortage-related labor loss again.\""
         ],
         [
-          "운용",
+          "운용 — 효과·키 원자 기록",
           "d05.b11.healthSettlement​Boundary.commitPoint",
           "\"record effect key atomically with the applied economic effect; preserve keys on load\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.healthSettlement​Boundary.unknown",
           "\"unapproved/missing body input blocks settlement; unknown conversion is held, never inferred\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.healthSettlement​Boundary.numericBoundary​",
           "\"D37-A approves read-only and one-time direction, not exact health values, units, coefficients or conversion functions; documentary oracle settles identity only and invents no labor-loss number\""
         ],
         [
-          "운용",
+          "운용 — 목적지 저장 예약",
           "d05.b11.outputSaveStageB​oundary.authority",
           "\"prior GP-05 selection, reinforced by sealed D04 recommendation\""
         ],
         [
-          "운용",
+          "운용 — 목적지 저장 예약",
           "d05.b11.outputSaveStageB​oundary.owner",
           "\"D05 stage progression; destination reservation authority supplies secured reservation\""
         ],
         [
-          "운용",
+          "운용 — 목적지 저장 예약",
           "d05.b11.outputSaveStageB​oundary.precondition",
           "\"Before entering the output/save stage, secure the matching save reservation for this work/stage/output destination in the same snapshot\""
         ],
         [
-          "운용",
+          "운용 — 이전 완료 단계 대기",
           "d05.b11.outputSaveStageB​oundary.notSecured",
           "\"Wait at the previous completed stage; preserve its exact fractional/completed progress, consumed inputs and unused physical materials; do not produce/store output, consume again or roll back\""
         ],
         [
-          "운용",
+          "운용 — 산출·저장 단계 진입",
           "d05.b11.outputSaveStageB​oundary.secured",
           "\"Permit entering the output/save stage only; no numeric recipe adoption or automatic output commit\""
         ],
         [
-          "운용",
+          "운용 — 이전 완료 단계 대기",
           "d05.b11.outputSaveStageB​oundary.null",
           "\"missing reservation proof blocks stage entry\""
         ],
         [
-          "운용",
+          "운용 — 정확 저장·예약 복원",
           "d05.b11.outputSaveStageB​oundary.load",
           "\"restore prior completed stage plus reservation binding; recheck before entering output/save stage\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.outputSaveStageB​oundary.reservationMecha​nism",
           "\"capacity, timing and reservation issuance details remain held; general checkpoint/save constraints are not this stage guard\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b11.recipeCoverage.r​ecipes",
           "\"per-recipe IDs/inputs/work/facility​ specification required by GP-05-A; actual records held\""
         ],
         [
-          "운용",
+          "운용 — 조리법·환산·해제 보류",
           "d05.b11.recipeCoverage.r​ates",
           "\"held, not source-certified\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b11.recipeCoverage.b​ottlenecks",
           "\"explicit conjunctive constraints; numeric formula below is proposal\""
         ],
         [
-          "운용",
+          "운용 — 필수 수요 먼저 예약",
           "d05.b11.recipeCoverage.d​emand",
           "\"approved orders and essential reservations only; zero demand cannot create an order\""
         ],
         [
-          "운용",
+          "운용 — 소비 한 번·분수 진척",
           "d05.b11.recipeCoverage.f​ractionalProgress",
           "\"must preserve exact supplied progress; quantization held\""
         ],
         [
-          "운용",
+          "운용 — 물질·진척 보존 검사",
           "d05.b11.recipeCoverage.c​onsumption",
           "\"one result once, no consumed refund\""
         ],
         [
-          "운용",
+          "운용 — 목적지 저장 예약",
           "d05.b11.recipeCoverage.s​torage",
           "\"verified stock separate from in-transit and reservations; capacity/loss/timing held\""
         ],
         [
-          "운용",
+          "운용 — 승인 주문·조리법 모든 제약",
           "d05.b11.recipeCoverage.r​epair",
           "\"qualification/input/pha​se-specific recipe required, held\""
         ],
         [
-          "운용",
+          "운용 — 진척·소비·기관 소유 유지",
           "d05.b11.recipeCoverage.s​alvage",
           "\"no consumed refund; recovery recipe/yield held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.p​ublicAnchors[0]",
           "\"L-success\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.p​ublicAnchors[1]",
           "\"L-margin\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.u​se",
           "\"reference-only 3d6 arithmetic cross-check; D05 production is Seoul-original, not a GURPS 2004 economic rule\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.e​xampleTarget",
           "10"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.e​xampleClassification",
           "\"illustrative Seoul-owned test value, unadopted\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.e​conomyRollAdoption",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d05.b11.gurpsLikeBasis.c​ertification",
           "\"no Basic source or GURPS 2004 completion claim\""
         ]

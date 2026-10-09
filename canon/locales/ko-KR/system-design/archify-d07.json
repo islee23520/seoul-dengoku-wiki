@@ -445,7 +445,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -456,1532 +456,1532 @@
       ],
       "rows": [
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.schemaVersion",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.domainId",
           "\"D07\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.mechanismId",
           "\"seoul.d07.bounded-contr​act\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersion",
           "\"D07-owner-directions-20​261008-v1\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"D07-owner-directions-20​261008-v1\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.contractSHA256",
           "\"fd5ceb18d5cc2a7298b2d42​ac173a0c37fd71e8754840d3​eb723532109701491\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
           "\"doc.Rules-FactionsWarfa​re\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[2].path",
           "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b9.rulesVersionLinka​ge.canonRules[2].sha256",
           "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.dataOwner",
           "\"D07 owns directed trust, personal awareness-memory, loyalty state, and command compliance/performance evaluation records; D03 owns command authority/delivery, D06 observation/report arrival, D08 relationship facts, D09 institutions, D12 succession/body transition, D15 combat results, and D18 event identity/version/commit boundaries.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].name",
           "\"observerId,actorId,targ​etId,senderId,heirId\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].type",
           "\"stableId\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].range",
           "\"nonempty; never name-derived\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].owner",
           "\"D01/D12\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[0].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[0].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[0].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].name",
           "\"eventId,resultId,orderI​d,effectId\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].type",
           "\"stableId\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].range",
           "\"permanent and unique in owning scope\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].owner",
           "\"origin/D18\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[1].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[1].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[1].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].name",
           "\"T[observer,target]\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].type",
           "\"finite number&#124;null\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].unit",
           "\"trust-point\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].range",
           "\"no approved clamp\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].null",
           "\"unknown; never neutral zero\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].owner",
           "\"D07\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b9.fields[2].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[2].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[2].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[2].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].name",
           "\"loyalty\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].type",
           "\"integer&#124;null\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].unit",
           "\"loyalty-point\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].range",
           "\"0..100\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].null",
           "\"unknown; monarch self resolves to 100\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].owner",
           "\"D07\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b9.fields[3].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[3].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[3].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[3].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].name",
           "\"awareness\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].type",
           "\"direct&#124;report&#124​;unknown&#124;none\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].unit",
           "\"knowledge-state\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].range",
           "\"must identify acquisition time and basis for direct/report\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].null",
           "\"unknown\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].owner",
           "\"D06 input / D07 personal knowledge\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.fields[4].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[4].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[4].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[4].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].name",
           "\"effectDefinition\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].type",
           "\"effect kind with apply event, end event, decay function status, target state and approved value status\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].unit",
           "\"typed lifecycle\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].range",
           "\"each field explicit; proposal is not executable\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].null",
           "\"unknown lifecycle cannot change numeric state\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].owner",
           "\"D07\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.fields[5].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[5].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[5].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[5].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].name",
           "\"authority,feasibility,a​ctualAction,performanceO​bserved\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].type",
           "\"separate attributed records\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].unit",
           "\"typed state\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].range",
           "\"unknown is distinct from false/failure\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].null",
           "\"unknown\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].owner",
           "\"D03/D15 inputs; D07 evaluation\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.fields[6].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[6].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[6].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[6].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].name",
           "\"snapshotRevision,rulesV​ersion,worldTime\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].type",
           "\"revision/version/time\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].unit",
           "\"revision/version/world-​time\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].range",
           "\"same accepted boundary\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].owner",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].read",
           "\"D01 stable person identities; D03 authority/order receipt and feasibility context; D06 observation/report acquisition record; D08 relationship facts; D09 applicable institution facts; D12 predecessor/heir identity transition; D15 attributed combat action/performance/loss result; D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[7].write",
           "\"D07 observer-specific awareness and memory references; D07 directed trust only under an exactly approved effect function; D07 separate loyalty only under an exactly approved loyalty function; D07 compliance and performance evaluation records; D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.fields[7].snapsho​t",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.fields[7].commitP​oint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[0]",
           "\"D01 stable person identities\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[1]",
           "\"D03 authority/order receipt and feasibility context\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[2]",
           "\"D06 observation/report acquisition record\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[3]",
           "\"D08 relationship facts\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[4]",
           "\"D09 applicable institution facts\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[5]",
           "\"D12 predecessor/heir identity transition\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[6]",
           "\"D15 attributed combat action/performance/loss result\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.readSet[7]",
           "\"D18 current revision, rules version, event/result ledger and world time\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.writeSet[0]",
           "\"D07 observer-specific awareness and memory references\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.writeSet[1]",
           "\"D07 directed trust only under an exactly approved effect function\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.writeSet[2]",
           "\"D07 separate loyalty only under an exactly approved loyalty function\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.writeSet[3]",
           "\"D07 compliance and performance evaluation records\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.writeSet[4]",
           "\"D07 settled ResultId references\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.snapshot",
           "\"All identities, awareness basis, order receipt, action/performance evidence, effect definition, world time and rules revision belong to one accepted snapshot. A later report is a new awareness event, not permission to rewrite the old snapshot.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b9.commitPoint",
           "\"After identity/version/awarene​ss/ownership guards and exact effect or evaluation classification succeed, commit one D18 result containing the D07 record and settled ResultId. Numeric state remains unchanged when its function is proposal-only.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.orderedSteps[0]",
           "\"Resolve permanent identities and exact rules/snapshot revision.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.orderedSteps[1]",
           "\"Reject duplicate ResultId before any evaluation or state mutation.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.orderedSteps[2]",
           "\"Separate world fact, observer awareness, authority, feasibility, actual action and observed performance.\""
         ],
         [
-          "운용",
+          "운용 — 독립 평가 종류",
           "d07.b9.orderedSteps[3]",
           "\"For relation events, require direct observation or received report for this observer; unknown/none awareness cannot change this observer's memory or trust.\""
         ],
         [
-          "운용",
+          "운용 — 허용된 인지·기억 기록",
           "d07.b9.orderedSteps[4]",
           "\"Select the effect kind's own approved application, termination and decay definition. If any required value/function is proposal-only, record awareness/memory fact as allowed but return E_PROPOSAL for numeric trust/loyalty change.\""
         ],
         [
-          "운용",
+          "운용 — 독립 평가 종류",
           "d07.b9.orderedSteps[5]",
           "\"For command results, classify impossible or sender-death-invalidated​ orders as execution-failure; otherwise classify compliance from actual action independently from performance.\""
         ],
         [
-          "운용",
+          "운용 — 독립 평가 종류",
           "d07.b9.orderedSteps[6]",
           "\"Derive trust bands and loyalty predicates from known stored values without inventing deltas, clamps, persistence or revolt cadence.\""
         ],
         [
-          "운용",
+          "운용 — 승계·취소·복원",
           "d07.b9.orderedSteps[7]",
           "\"On succession, retain the heir's own existing T and never copy predecessor personal T.\""
         ],
         [
-          "운용",
+          "운용 — 정확 승인 효과 후보",
           "d07.b9.orderedSteps[8]",
           "\"Commit one attributed result and settled ResultId; preserve contracts, relationship facts and prior decisions.\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].i​d",
           "\"SEOUL-TRUST-BANDS\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].s​tatus",
           "\"approved\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].e​xpression",
           "\"friend=(T>=25); enemy=(T<=-25); nemesis=(T<=-50)\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].u​nit",
           "\"three independent booleans\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].n​ull",
           "\"unknown T returns E_UNKNOWN\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b9.formulaSheet[0].c​lamp",
           "\"none approved\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b9.formulaSheet[1].i​d",
           "\"SEOUL-LOYALTY-PREDICATE​S\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b9.formulaSheet[1].s​tatus",
           "\"approved-bounded\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b9.formulaSheet[1].e​xpression",
           "\"selfLoyalty=100; belowThreshold=(L<25)\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b9.formulaSheet[1].u​nit",
           "\"loyalty-point and boolean\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b9.formulaSheet[1].r​ange",
           "\"0..100\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b9.formulaSheet[1].l​imits",
           "\"No daily delta, persistence duration, revolt probability or path-opening function approved.\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.formulaSheet[2].i​d",
           "\"SEOUL-AWARENESS-GATE\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.formulaSheet[2].s​tatus",
           "\"approved\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.formulaSheet[2].e​xpression",
           "\"mayEvaluate=(awareness in {direct,report}) AND acquisitionTime known AND basis attributed\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.formulaSheet[2].u​nit",
           "\"boolean\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b9.formulaSheet[2].l​imits",
           "\"Credibility weights and trust deltas remain proposals.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.formulaSheet[3].i​d",
           "\"SEOUL-RESULT-IDEMPOTENC​E\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.formulaSheet[3].s​tatus",
           "\"approved\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.formulaSheet[3].e​xpression",
           "\"apply(resultId)=0 additional effects when resultId already settled\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.formulaSheet[3].u​nit",
           "\"effect-count\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.formulaSheet[3].r​ounding",
           "\"exact integer 0/1\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.formulaSheet[4].i​d",
           "\"SEOUL-EFFECT-LIFECYCLE\"​"
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.formulaSheet[4].s​tatus",
           "\"approved-schema-proposa​l-values\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.formulaSheet[4].e​xpression",
           "\"effectKind -> {applicationEvent,termin​ationEvent,decayFunction​,status}\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.formulaSheet[4].u​nit",
           "\"typed lifecycle\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b9.formulaSheet[4].l​imits",
           "\"D08-A approves per-kind separation, not the missing function/value.\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.formulaSheet[5].i​d",
           "\"SEOUL-COMMAND-EVALUATIO​N\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.formulaSheet[5].s​tatus",
           "\"approved-classification​-proposal-numerics\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.formulaSheet[5].e​xpression",
           "\"complianceClass=f(feasi​bility,validity,actualAc​tion); performanceClass=g(obser​vedOutcome)\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.formulaSheet[5].u​nit",
           "\"symbolic classifications\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b9.formulaSheet[5].l​imits",
           "\"f classification branches are fixed for the covered cases; g score, trust delta, promotion/discipline and casualty math remain proposals.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.rng",
           "\"No RNG is consumed by band classification, awareness gate, idempotence, succession non-copy or covered command classification. Any future stochastic credibility, loyalty or evaluation rule requires a separately approved D18 person-purpose stream protocol.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.time",
           "\"Event-triggered awareness/evaluation and effect-specific lifecycle. No universal daily trust tick. Loyalty is readable daily only where an owning approved cadence exists; exact change and persistence remain proposals.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.rounding",
           "\"No rounding in fixed D07 predicates. Loyalty validates 0..100. Trust has no approved clamp. Never import CK3 +/-100 or Norland ranges as Seoul bounds.\""
         ],
         [
-          "운용",
+          "운용 — 관계·인지·평가 요청",
           "d07.b9.clamps",
           "\"No rounding in fixed D07 predicates. Loyalty validates 0..100. Trust has no approved clamp. Never import CK3 +/-100 or Norland ranges as Seoul bounds.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b9.lifecycle.cancel",
           "\"Discard uncommitted evaluation; preserve prior awareness, trust, loyalty, contracts, performed action and settled results.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b9.lifecycle.death",
           "\"Preserve historical records. Sender death may invalidate an unexecuted order and classify execution failure; it does not turn failure into disobedience. Do not copy deceased personal T to heir.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b9.lifecycle.load",
           "\"Restore exact awareness/effect/result histories and current directed T/loyalty under compatible rules. Duplicate results remain settled; no silent migration or decay replay.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b9.failure",
           "\"Reject stale rules/snapshot, duplicate ResultId, direction reversal, mixed observer identity, missing attribution, unknown required evidence, or an attempt to execute a proposal function. No partial write.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[0].i​d",
           "\"P01\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[0].s​cope",
           "\"Event-kind trust deltas, beneficial/harmful asymmetry, direct-versus-report credibility and chained-report attribution\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[0].r​eason",
           "\"D08-A chooses separate lifecycle authoring but selectionEffect withholds exact functions and coefficients.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[1].i​d",
           "\"P02\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[1].s​cope",
           "\"Memory duration, decay curve, termination events, rereport behavior and reconciliation/recovery functions for every effect kind\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[1].r​eason",
           "\"Only the schema separation is approved; CK3/Norland durations are comparative values, not Seoul adoption.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[2].i​d",
           "\"P03\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[2].s​cope",
           "\"Trust range/clamp, display precedence when enemy and nemesis both hold, and any additional relationship bands\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[2].r​eason",
           "\"Only thresholds 25/-25/-50 and overlap are approved.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[3].i​d",
           "\"P04\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[3].s​cope",
           "\"Loyalty daily delta, persistence duration below25, recovery conditions, risk-action thresholds and rebellion/departure path opening\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[3].r​eason",
           "\"Range/self-value/below2​5 predicate are approved; cadence and path function are not.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[4].i​d",
           "\"P05\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[4].s​cope",
           "\"Command performance score, trust/loyalty consequences, promotion/discipline conditions, aggregation window and UI presentation timing\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[4].r​eason",
           "\"D18-A separates evidence stages; it does not approve a utility or consequence formula.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].i​d",
           "\"P06\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].s​cope",
           "\"Country/institution-spe​cific relationship establishment and termination inputs\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].r​eason",
           "\"D09-A approves per-country authoring and registered authority/basis review, but no actual country procedure or relation-establishment payload is supplied here.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].s​ealedTrace.row",
           "\"D09\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].s​ealedTrace.chosenOption",
           "\"A\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].s​ealedTrace.disposition",
           "\"deferred-with-trace\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].i​d",
           "\"P07A\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].s​cope",
           "\"Actual person trust/loyalty/memory payloads and cast value-axis use\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].r​eason",
           "\"D20-A approves identity-first person-by-person and axis-by-axis review while preserving locked values; it does not approve additional payload bytes or using those axes in D07 formulas.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].s​ealedTrace.row",
           "\"D20\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].s​ealedTrace.chosenOption",
           "\"A\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].s​ealedTrace.disposition",
           "\"deferred-with-trace\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].i​d",
           "\"P07B\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].s​cope",
           "\"Actual organization value/policy payloads and organization-to-person D07 effects\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].r​eason",
           "\"D21-A approves organization-by-organiza​tion field/source disposition; it does not approve actual organization payloads or automatic trust/loyalty effects.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].s​ealedTrace.row",
           "\"D21\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].s​ealedTrace.chosenOption",
           "\"A\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].s​ealedTrace.disposition",
           "\"deferred-with-trace\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[8].i​d",
           "\"P08\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[8].s​cope",
           "\"Exact persisted schema keys, event priority among simultaneous writes, clock encoding and any person-stream RNG protocol\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[8].r​eason",
           "\"Validator carrier choices are engineering evidence, not gameplay policy.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d07.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisionIds[0]",
           "\"D08\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisionIds[1]",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisionIds[2]",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisionIds[3]",
           "\"D20\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisionIds[4]",
           "\"D21\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b11.decisions[0].row​",
           "\"D08\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b11.decisions[0].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b11.decisions[0].app​lied",
           "\"Each effect kind declares its application event, termination event, and decay function independently. A later report cannot extend a world-event expiry unless that effect's approved lifecycle says so. Exact effect values and functions remain proposals.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[1].row​",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[1].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[1].app​lied",
           "\"Institution-specific relationship inputs must be authored per country with explicit electors/quorum/resolver​/ratification/acting authority where relevant. D07 may preserve existing valid facts and read verified inputs, but cannot invent a universal institution or establish a new relation when the applicable institution/basis is missing.\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b11.decisions[2].row​",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b11.decisions[2].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b11.decisions[2].app​lied",
           "\"Record decision-time awareness, authority and feasibility separately from later action and performance. Unknown observation is not success or failure; compliance and performance remain distinct.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[3].row​",
           "\"D20\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[3].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[3].app​lied",
           "\"Preserve the locked person-value set and begin with identity reconciliation; any remaining person trust/loyalty/memory or value-axis payload is reviewed per person and per axis. This row approves the review method, not actual payload values or value-axis use in D07 formulas.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[4].row​",
           "\"D21\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[4].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.decisions[4].app​lied",
           "\"Organization values and policies require field-by-field source evidence and separate disposition per organization. This row approves the review method, not organization payloads or an automatic organization-policy-to-p​erson-trust/loyalty conversion.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.approvalBoundary​",
           "\"Sealed choices approve effect-specific lifecycle authoring, institution-input authoring boundaries, decision-time versus later-performance separation, and field-by-field review methods for person/organization payloads. They do not approve unspecified trust deltas, credibility weights, decay functions, loyalty cadence, persistence duration, actual person/country values, or source-game coefficients.\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b11.approvedExisting​Rules[0]",
           "\"T[A,B] is directional and does not imply T[B,A].\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b11.approvedExisting​Rules[1]",
           "\"friend iff T>=25; enemy iff T<=-25; nemesis iff T<=-50, with nemesis also enemy.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.approvedExisting​Rules[2]",
           "\"Trust is not authority, consent, property, passage, relationship fact, mood, or loyalty.\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b11.approvedExisting​Rules[3]",
           "\"An observer updates only that observer's memory and trust after direct observation or receipt of a report.\""
         ],
         [
-          "운용",
+          "운용 — 허용된 인지·기억 기록",
           "d07.b11.approvedExisting​Rules[4]",
           "\"Hidden world facts and personal knowledge are separate; late discovery does not rewrite earlier decisions.\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b11.approvedExisting​Rules[5]",
           "\"Loyalty is a separate 0..100 state toward the hero's monarch; monarch self-loyalty is 100; exactly 25 is not below 25.\""
         ],
         [
-          "운용",
+          "운용 — 신원·판본·중복 결과",
           "d07.b11.approvedExisting​Rules[6]",
           "\"The same ResultId is applied at most once; retransmission is not a new evaluation.\""
         ],
         [
-          "운용",
+          "운용 — 준수 분류 유지",
           "d07.b11.approvedExisting​Rules[7]",
           "\"Compliance and performance are separate records; good independent action may be noncompliant and successful.\""
         ],
         [
-          "운용",
+          "운용 — 실행 실패 분류",
           "d07.b11.approvedExisting​Rules[8]",
           "\"Impossible orders and orders invalidated by sender death are execution failures, not deliberate disobedience.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.approvedExisting​Rules[9]",
           "\"A deceased person's personal T is not copied to an heir; the heir retains their own existing directed relations.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.approvedExisting​Rules[10]",
           "\"Trust change alone does not terminate contracts or relationship facts.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​source",
           "\"design-finalization-202​61006/D07/contract.json\"​"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​status",
           "\"existing-approved-bound​ed-rules-plus-historical​-proposals\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​used[0]",
           "\"directional trust bands\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​used[1]",
           "\"awareness gate\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​used[2]",
           "\"distinct loyalty\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​used[3]",
           "\"idempotent results\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​used[4]",
           "\"compliance/performance separation\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​used[5]",
           "\"succession non-copy\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[0].​limit",
           "\"Historical pending labels are superseded only where sealed D08/D09/D18/D20/D21 authoring boundaries apply; no payload or coefficient is promoted.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[1].​source",
           "\"task-24/cells/ck3/D07/v​erified-input-r1/report.​md\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[1].​status",
           "\"comparative-documentary​-only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[1].​limit",
           "\"CK3 opinion, memory and successor values are not Seoul coefficients.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[2].​source",
           "\"task-24/cells/norland/D​07/verified-input-r1/rep​ort.md\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[2].​status",
           "\"comparative-documentary​-only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[2].​limit",
           "\"Norland mood, loyalty, relation and cadence values are not Seoul coefficients.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[3].​source",
           "\"task-25-gurps-like-basi​s-20261008/basis.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[3].​status",
           "\"no-D07-numeric-adoption​\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d07.b11.sourceClaims[3].​limit",
           "\"Public Lite anchors do not define Seoul trust, loyalty, memory, credibility, command evaluation or decay. No GURPS 2004 claim is made.\""
         ],
         [
-          "운용",
+          "운용 — 알려진 방향 신뢰 입력",
           "d07.b11.stateSheet.direc​tedTrust",
           "\"Store T[A,B] independently from T[B,A]. Derive three independent band flags only from a known finite T; do not clamp or infer reciprocity.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.stateSheet.relat​ionshipFacts",
           "\"Family, marriage, lover, mentor/student, contract, debt, oath and command are facts, not T. D07 may read them but cannot create or terminate them from trust alone.\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b11.stateSheet.perso​nalKnowledge",
           "\"Store hidden world fact separately from each person's awareness record. Only direct observation or received report creates personal awareness at acquisitionTime.\""
         ],
         [
-          "운용",
+          "운용 — 효과별 적용·종료·감쇠",
           "d07.b11.stateSheet.memor​yEffect",
           "\"An effect record names kind, application result, application time, termination event, decay-function status and settled ResultIds. D08-A requires separate lifecycles; it does not supply values/functions.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.stateSheet.insti​tutionInputs",
           "\"D09-A requires country-specific institution records and actual authority/basis evidence. Existing valid relation facts survive missing inputs; unsupported new establishment remains unresolved rather than globally rejected or invented.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.stateSheet.perso​nPayloadReview",
           "\"D20-A preserves locked person values and requires identity-first, person-by-person and axis-by-axis disposition. An unreviewed person payload cannot enter D07 state or formulas.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.stateSheet.organ​izationPayloadReview",
           "\"D21-A requires organization-by-organiza​tion, field-by-field source and disposition. Organization policy does not automatically write an individual's trust or loyalty.\""
         ],
         [
-          "운용",
+          "운용 — 충성·자기 군주 검사",
           "d07.b11.stateSheet.loyal​ty",
           "\"Separate hero-to-own-monarch state in 0..100. Monarch self is 100. Below25 is a predicate; path opening requires an approved persistence/risk rule and is otherwise withheld.\""
         ],
         [
-          "운용",
+          "운용 — 명령 당시 증거 분리",
           "d07.b11.stateSheet.comma​ndEvaluation",
           "\"One order evaluation contains immutable receipt context, decision-time awareness/authority/feas​ibility, actual action, separately observed performance, compliance classification, performance classification and result identity.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.stateSheet.succe​ssion",
           "\"Do not copy predecessor personal trust or memory into heir. Preserve public history, institutional duties and contracts only through their owning succession policies.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.stateSheet.prese​rvation",
           "\"Load/body change does not reset permanent event IDs, awareness history, current trust or settled results. Trust changes do not silently alter contracts, property, consent or authority.\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b11.outputs[0]",
           "\"directed trust band flags\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b11.outputs[1]",
           "\"observer-specific awareness/memory receipt\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b11.outputs[2]",
           "\"separate loyalty predicate without invented path opening\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b11.outputs[3]",
           "\"compliance and performance classifications\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b11.outputs[4]",
           "\"typed E_UNKNOWN/E_UNIT/E_RANGE​/E_STALE/E_DUPLICATE/E_D​IRECTION/E_ATTRIBUTION/E​_PROPOSAL errors\""
         ],
         [
-          "운용",
+          "운용 — 귀속 결과·정산 ID 반영",
           "d07.b11.outputs[5]",
           "\"settled ResultId receipt\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.exceptions[0]",
           "\"Unknown is not zero or neutral.\""
         ],
         [
-          "운용",
+          "운용 — 관찰자 직접 관측·수령 보고",
           "d07.b11.exceptions[1]",
           "\"Awareness of a hidden fact is not global.\""
         ],
         [
-          "운용",
+          "운용 — 독립 세 구간 계산",
           "d07.b11.exceptions[2]",
           "\"Nemesis also satisfies enemy.\""
         ],
         [
-          "운용",
+          "운용 — 낮은 충성 술어",
           "d07.b11.exceptions[3]",
           "\"Exactly 25 loyalty is not below25.\""
         ],
         [
-          "운용",
+          "운용 — 준수 분류 유지",
           "d07.b11.exceptions[4]",
           "\"Good performance does not erase noncompliance.\""
         ],
         [
-          "운용",
+          "운용 — 실행 실패 분류",
           "d07.b11.exceptions[5]",
           "\"Impossibility is not disobedience.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.exceptions[6]",
           "\"Trust does not grant authority or terminate contracts.\""
         ],
         [
-          "운용",
+          "운용 — 개인 신뢰 비승계·기록 보존",
           "d07.b11.exceptions[7]",
           "\"Heir identity does not inherit predecessor personal trust.\""
         ],
         [
-          "운용",
+          "운용 — 인지·효과 정책 미결",
           "d07.b11.validatorScope",
           "\"Evidence-carrier verification of approved predicates, state separation, lifecycle withholding and named normal/boundary/failure/​adversarial oracles. Fixture numbers identify scenarios only and are not new balance values.\""
         ]

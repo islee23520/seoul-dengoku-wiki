@@ -481,7 +481,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -492,2752 +492,2752 @@
       ],
       "rows": [
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.schemaVersion",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.domainId",
           "\"D06\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.mechanismId",
           "\"seoul.d06.bounded-contr​act\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersion",
           "\"2026-10-08.d06-closure.​1\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"2026-10-08.d06-closure.​1\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.contractSHA256",
           "\"473f0aae54e4a8a3fc1cf4e​a30e4de72439772a1354e621​8322debb44a44a2d3\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.rulesVersionLinka​ge.missingVersionPolicy",
           "\"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.dataOwner",
           "\"D06 이동·화물 운송·관측 지식; D13 권리·보관, D18 시간·저장\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].field",
           "\"routeId/segmentId/mover​Id/cargoLotId/reportId/r​esultId\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].type",
           "\"nonempty stable identity string\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].owner",
           "\"D06 ledger; cargo title remains D13\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].null",
           "\"reject required operation\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.fields[0].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[0].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[0].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[0].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].field",
           "\"rulesVersion/snapshotVe​rsion\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].type",
           "\"nonempty string / nonnegative safe integer\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].unit",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].owner",
           "\"D18 save/version authority\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[1].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[1].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[1].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].field",
           "\"segmentDistance\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].type",
           "\"finite nonnegative number\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].unit",
           "\"route-defined distance unit\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].owner",
           "\"approved route record\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].null",
           "\"unknown; blocks strategic ETA\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 승인 이동량·단위 검사",
           "d06.b9.fields[2].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[2].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[2].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[2].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].field",
           "\"baseMove\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].type",
           "\"positive finite number\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].unit",
           "\"yd/s for personal Lite-derived calculation only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].owner",
           "\"D01 approved personal sheet\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].null",
           "\"unknown; blocks personal move\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[5]​",
           "\"battle state\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[3].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].field",
           "\"basicLift/loadWeight\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].type",
           "\"positive/nonnegative finite number\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].unit",
           "\"lb\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].owner",
           "\"D01 approved personal sheet / D13 cargo facts\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].null",
           "\"unknown; blocks encumbrance\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[5]​",
           "\"battle state\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[4].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].field",
           "\"encumbranceLevel\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].type",
           "\"integer 0..4\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].unit",
           "\"Lite row index\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].owner",
           "\"D06 derived from known BL and load\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].null",
           "\"unknown; blocks personal move\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[5]​",
           "\"battle state\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.fields[5].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].field",
           "\"strategicSpeed/fatigueC​ost/terrainFactor\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].type",
           "\"nullable unit-tagged number\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].unit",
           "\"must be issued by a future Seoul movement table\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].owner",
           "\"D06\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].null",
           "\"explicit proposal hold; never zero\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.fields[6].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[6].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[6].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[6].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].field",
           "\"remainingDistance/segme​ntProgress\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].type",
           "\"nonnegative exact rational or finite number\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].unit",
           "\"same segment distance unit\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].owner",
           "\"D06\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].null",
           "\"blocks resume\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.fields[7].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[7].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[7].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[7].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].field",
           "\"arrivalAt/cutoffAt/obse​rvedAt/asOf\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].type",
           "\"finite number on one named world clock\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].unit",
           "\"same D18 clock coordinate\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].owner",
           "\"D18 clock; D06 observation/arrival\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].null",
           "\"unknown, not false\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착 신원·위치",
           "d06.b9.fields[8].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[8].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[8].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[8].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].field",
           "\"verifiedArrival/receive​rCountersigned/routeConn​ected/passageAuthorized/​segmentPassable\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].type",
           "\"boolean or null\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].unit",
           "\"predicate\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].owner",
           "\"named authority receipt\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].null",
           "\"unresolved; do not coerce false\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[0]​",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[1]​",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[2]​",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[3]​",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[4]​",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[5]​",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.fields[9].read[6]​",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[9].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[9].snapsho​t",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[9].commitP​oint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].field",
           "\"cargoAtoms\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].type",
           "\"array of unique stable atom identifiers\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].unit",
           "\"material identity\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].owner",
           "\"D13 title/custody, D06 transit\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].null",
           "\"unknown; blocks split or receipt\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[0​]",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[1​]",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[2​]",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[3​]",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[4​]",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[5​]",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.fields[10].read[6​]",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[10].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[10].snapsh​ot",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[10].commit​Point",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].field",
           "\"knowledgeRecord\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].type",
           "\"subjectId, sourceId, observedAt, asOf and status\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].unit",
           "\"identity + clock + enum\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].owner",
           "\"D06 observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].null",
           "\"missing source/time rejects update\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[0​]",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[1​]",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[2​]",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[3​]",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[4​]",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[5​]",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 출처·관측·기준시각 검사",
           "d06.b9.fields[11].read[6​]",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[11].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.fields[11].snapsh​ot",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.fields[11].commit​Point",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[0]",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[1]",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[2]",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[3]",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[4]",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[5]",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.readSet[6]",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.writeSet[0]",
           "\"segment progress/location after legal traversal\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.writeSet[1]",
           "\"cargo parent/child transit records\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.writeSet[2]",
           "\"receiver-confirmed arrival state\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.writeSet[3]",
           "\"observer knowledge record\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.writeSet[4]",
           "\"arrival/reinforcement receipt\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.writeSet[5]",
           "\"revision and result ledger\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.snapshot.policy",
           "\"exact before snapshot with stable identities and named units\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​0]",
           "\"route graph and access record\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​1]",
           "\"mover location and personal sheet\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​2]",
           "\"cargo identity/title/custody\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​3]",
           "\"arrival and receipt evidence\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​4]",
           "\"observer knowledge\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​5]",
           "\"battle state\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.snapshot.readSet[​6]",
           "\"applied result IDs\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.writeSet​[0]",
           "\"segment progress/location after legal traversal\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.writeSet​[1]",
           "\"cargo parent/child transit records\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.writeSet​[2]",
           "\"receiver-confirmed arrival state\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.writeSet​[3]",
           "\"observer knowledge record\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.writeSet​[4]",
           "\"arrival/reinforcement receipt\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.writeSet​[5]",
           "\"revision and result ledger\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.snapshot.conflict​",
           "\"typed reject on stale revision, incompatible rules, changed duplicate result or conflicting cargo identity\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.snapshot.commitPo​int",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.snapshot.replay",
           "\"same result and identical request is idempotent; changed duplicate is E_EVENT_CONFLICT\""
         ],
         [
-          "운용",
+          "운용 — 결과·개정 단회 반영",
           "d06.b9.commitPoint",
           "\"after all guards, conservation checks and expected after-state calculations\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.orderedSteps[0]",
           "\"Read exact route, mover, cargo, observation, clock, rules and snapshot identities.\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.orderedSteps[1]",
           "\"Reject reused result identity with changed payload, stale snapshot, rule mismatch, duplicate cargo atom or unit mismatch before mutation.\""
         ],
         [
-          "운용",
+          "운용 — 독립 작업 종류",
           "d06.b9.orderedSteps[2]",
           "\"Resolve physical route candidate; require confirmed adjacency, passage authority and current segment passability. Unknown is unresolved, not false or legal.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.orderedSteps[3]",
           "\"For a personal movement reference, derive BL, BasicMove and encumbrance only from approved personal attributes and known load. Do not use these values as strategic route coefficients.\""
         ],
         [
-          "운용",
+          "운용 — 불일치·불가능 거부",
           "d06.b9.orderedSteps[4]",
           "\"Advance only an externally approved traversed distance; preserve exact remaining distance. A blockage stops further advance and triggers replanning without teleporting or erasing completed distance.\""
         ],
         [
-          "운용",
+          "운용 — 독립 작업 종류",
           "d06.b9.orderedSteps[5]",
           "\"For cargo split, retire the parent only after children form a complete disjoint union. Preserve ownership, custody and provenance as separate fields.\""
         ],
         [
-          "운용",
+          "운용 — 독립 작업 종류",
           "d06.b9.orderedSteps[6]",
           "\"At arrival, verify location and identity first. For a cutoff, compare arrivalAt <= cutoffAt; at equal time process arrival verification before reservation, production and consumption.\""
         ],
         [
-          "운용",
+          "운용 — 불일치·불가능 거부",
           "d06.b9.orderedSteps[7]",
           "\"Require receiver countersign and every separately approved custody/right guard before final available stock; the unapproved custodian-conjunction proposal is not applied.\""
         ],
         [
-          "운용",
+          "운용 — 독립 작업 종류",
           "d06.b9.orderedSteps[8]",
           "\"Update only the observer knowledge record from a sourced report, preserving observedAt and sourceAsOf; do not overwrite the world state.\""
         ],
         [
-          "운용",
+          "운용 — 독립 작업 종류",
           "d06.b9.orderedSteps[9]",
           "\"If a unit arrives while battle is ongoing it may join; an ended battle rejects retrospective participation.\""
         ],
         [
-          "운용",
+          "운용 — 위치·진척 후보",
           "d06.b9.orderedSteps[10]",
           "\"Commit one result receipt and revision atomically. Failed or unresolved operations leave the prior state unchanged.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].i​d",
           "\"basic-lift-reference\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].e​xpression",
           "\"BLraw = ST^2 / 5 lb; if BLraw >= 10 lb, round to nearest whole lb for the rounded display value\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].s​tatus",
           "\"public-Lite-derived-str​ucture\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].a​uthority",
           "\"L-lift\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].r​ounding",
           "\"nearest whole only when raw >= 10; preserve raw separately\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].c​lamp",
           "\"none\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].r​ng",
           "\"none\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[0].u​nit",
           "\"lb\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].i​d",
           "\"personal-basic-move-ref​erence\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].e​xpression",
           "\"BasicSpeed = (DX + HT) / 4; BasicMove = floor(BasicSpeed)\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].s​tatus",
           "\"public-Lite-derived-str​ucture\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].a​uthority",
           "\"L-secondary\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].r​ounding",
           "\"floor BasicMove; retain exact BasicSpeed\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].c​lamp",
           "\"none\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].r​ng",
           "\"none\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[1].u​nit",
           "\"BasicSpeed value; personal BasicMove yd/s\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].i​d",
           "\"personal-encumbrance-re​ference\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].e​xpression",
           "\"thresholds = BL*[1,2,3,6,10]; choose the first inclusive threshold containing load; Move = max(1,floor(BasicMove*[1​,.8,.6,.4,.2][level]))\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].s​tatus",
           "\"public-Lite-derived-str​ucture\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].a​uthority",
           "\"L-encumbrance\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].r​ounding",
           "\"discard Move fractions after multiplying\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].c​lamp",
           "\"minimum Move 1\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].r​ng",
           "\"none\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].l​imits",
           "\"Personal reference only; never becomes squad cargo capacity or strategic tunnel speed.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b9.formulaSheet[2].u​nit",
           "\"load thresholds lb; personal Move yd/s\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].i​d",
           "\"route-legality\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].e​xpression",
           "\"legal = routeConnected AND passageAuthorized AND segmentPassable\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].s​tatus",
           "\"approved-Seoul-bounded\"​"
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].a​uthority",
           "\"GP-02-A direction plus existing physical-adjacency and no-teleport locks\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].l​imits",
           "\"Unknown predicate produces unresolved. A map line, same-name station or surface adjacency cannot substitute for any guard.\""
         ],
         [
-          "운용",
+          "운용 — 연결·통행·통과 가능",
           "d06.b9.formulaSheet[3].u​nit",
           "\"boolean &#124; unresolved\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].i​d",
           "\"segment-residual\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].e​xpression",
           "\"remainingAfter = max(0, remainingBefore - traversedDistance); arrived = legal AND remainingAfter = 0\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].s​tatus",
           "\"approved-conservation-s​hape-with-held-rate\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].a​uthority",
           "\"actual-movement lock and sealed GP-02-A blocked-segment replanning direction\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].r​ounding",
           "\"none in documentary exact arithmetic\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].c​lamp",
           "\"lower bound 0 only\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].l​imits",
           "\"traversedDistance must be externally established by an approved rate/table. This formula does not approve strategic speed, fatigue or terrain coefficients.\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구간 계산",
           "d06.b9.formulaSheet[4].u​nit",
           "\"same route-defined distance unit; arrived boolean\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].i​d",
           "\"cargo-split-conservatio​n\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].e​xpression",
           "\"parentAtoms = disjointUnion(childAtoms​); active parent retires; active child quantity sum equals parent quantity\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].s​tatus",
           "\"approved-Seoul-bounded\"​"
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].a​uthority",
           "\"selected split-provenance policy and material conservation\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].r​ounding",
           "\"none; atom identities are indivisible in this proof\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 원자 완전·서로소 분할",
           "d06.b9.formulaSheet[5].u​nit",
           "\"stable material atom identifiers and same-item cardinality\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].i​d",
           "\"inclusive-cutoff\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].e​xpression",
           "\"temporalEligibility = verifiedArrival AND arrivalAt <= cutoffAt\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].s​tatus",
           "\"approved-Seoul-bounded\"​"
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].a​uthority",
           "\"T68-CARGO-INCLUSIVE-CUT​OFF\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].l​imits",
           "\"Temporal eligibility only. Receiver countersign and all separately applicable custody/rights guards remain required for final stock.\""
         ],
         [
-          "운용",
+          "운용 — 마감시각 포함 비교",
           "d06.b9.formulaSheet[6].u​nit",
           "\"same D18 clock coordinate compared to boolean eligibility\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].i​d",
           "\"observation-record\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].e​xpression",
           "\"knowledge.status = reported; knowledge.observedAt = receiptTime; knowledge.asOf = sourceAsOf; currentWorldFact remains unchanged\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].s​tatus",
           "\"approved-Seoul-bounded\"​"
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].a​uthority",
           "\"sealed GP-02-A observation freshness direction and existing report/world separation\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].l​imits",
           "\"No universal TTL or decay coefficient is approved.\""
         ],
         [
-          "운용",
+          "운용 — 관측자 지식만 갱신",
           "d06.b9.formulaSheet[7].u​nit",
           "\"stable subject/source identifiers; named world-clock coordinates; status enum\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].i​d",
           "\"reinforcement-arrival-b​oundary\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].e​xpression",
           "\"mayJoin = arrivalVerified AND battleState = ongoing; battleState = ended => false\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].s​tatus",
           "\"approved-owner-rule\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].a​uthority",
           "\"OWNER-REINFORCEMENT-202​61004\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].l​imits",
           "\"No origin, rank, initial-roster or invented arrival-window filter. Entry geometry, command transfer and capacity remain proposals.\""
         ],
         [
-          "운용",
+          "운용 — 실제 도착·현재 전투 상태",
           "d06.b9.formulaSheet[8].u​nit",
           "\"boolean\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.streams[0]",
           "\"movement\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.streams[1]",
           "\"encounter\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.streams[2]",
           "\"observation\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.separatedFrom​[0]",
           "\"combat\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.separatedFrom​[1]",
           "\"world-event\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.separatedFrom​[2]",
           "\"character\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.useInApproved​Formulas",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.rng.held",
           "\"algorithm, seed encoding, draw order and consumption protocol\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.time",
           "\"D18의 동일 세계시각을 읽는다. 실제 주기·달력 기점은 proposal-held다.\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.rounding",
           "\"각 공식의 명시된 처리를 따른다. 실제 생산·전략 이동 양자화는 proposal-held다.\""
         ],
         [
-          "운용",
+          "운용 — 이동·화물·보고 요청",
           "d06.b9.clamps",
           "\"각 식의 명시된 한계만 적용한다. 미정 정책의 임의 클램프는 없다.\""
         ],
         [
-          "운용",
+          "운용 — 불일치·불가능 거부",
           "d06.b9.lifecycle.noPath",
           "\"E_NO_PATH; no movement or location mutation\""
         ],
         [
-          "운용",
+          "운용 — 불일치·불가능 거부",
           "d06.b9.lifecycle.zeroSpe​ed",
           "\"E_ZERO_SPEED for a required approved speed; no division and no movement\""
         ],
         [
-          "운용",
+          "운용 — 구간 차단·재계획",
           "d06.b9.lifecycle.blocked​Segment",
           "\"retain completed distance and current location/progress, mark replanning required; exact strategic rate remains held\""
         ],
         [
-          "운용",
+          "운용 — 진척·화물·지식 보존",
           "d06.b9.lifecycle.cancel",
           "\"retain completed progress and consumed resources; untraversed remainder remains\""
         ],
         [
-          "운용",
+          "운용 — 진척·화물·지식 보존",
           "d06.b9.lifecycle.death",
           "\"retain location, cargo and completed travel facts; authority/continuation is rechecked by owning domains\""
         ],
         [
-          "운용",
+          "운용 — 진척·화물·지식 보존",
           "d06.b9.lifecycle.load",
           "\"restore exact route segment, remaining distance, cargo provenance, knowledge times, result IDs and versions; incompatible data is explicit error\""
         ],
         [
-          "운용",
+          "운용 — 이번 마감만 제외",
           "d06.b9.lifecycle.lateArr​ival",
           "\"exclude only from the named cutoff; cargo remains existent for later applicable processing\""
         ],
         [
-          "운용",
+          "운용 — 끝난 전투 참가 불가",
           "d06.b9.lifecycle.endedBa​ttle",
           "\"arrival does not join that ended encounter\""
         ],
         [
-          "운용",
+          "운용 — 판본·단위·원자·재생 검사",
           "d06.b9.failure",
           "\"typed reject on stale revision, incompatible rules, changed duplicate result or conflicting cargo identity\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].i​d",
           "\"route-resolution-policy​\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].a​uthority",
           "\"sealed D02/GP-02-A gives segment observation and blocked-segment replanning direction\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].h​eld",
           "\"Whether to prevalidate the full route, advance to the first blockage, or approve each segment and request rerouting; blockage state authority and automatic reroute selection.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].r​eason",
           "\"Chosen Option A does not select one of the older GP-02 path-resolution alternatives or create actual route records.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].s​afeContract",
           "\"Confirmed physical adjacency, passage authority and current passability are all required; unknown never becomes legal.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].i​d",
           "\"strategic-distance-spee​d-time\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].a​uthority",
           "\"sealed D28/GP-02-A and Task25 public Lite anchors\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].h​eld",
           "\"Seoul distance unit and conversion, surface/tunnel/vehicle base speeds, route ETA, minimum speed and strategic tick cadence.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].r​eason",
           "\"Lite Basic Move and encumbrance are personal reference structures, not strategic Seoul coefficients.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].s​afeContract",
           "\"Actual movement and exact remaining distance are conserved; validator raises E_PROPOSAL_REQUIRED without an approved strategic speed/table.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].i​d",
           "\"load-fatigue-terrain-mo​difiers\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].a​uthority",
           "\"sealed D28/GP-02-A\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].h​eld",
           "\"Cargo-to-speed coupling, fatigue accumulation/recovery, terrain and tunnel factors, ordering and rounding.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].r​eason",
           "\"No sealed number or complete algorithm exists; foreign-game values and old proposal examples remain non-adopted.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].s​afeContract",
           "\"Known personal load may select a Lite reference row only; it cannot set squad capacity or strategic travel time.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].i​d",
           "\"information-freshness-d​ecay\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].a​uthority",
           "\"sealed D02/GP-02-A\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].h​eld",
           "\"Universal TTL, confidence decay, expiry bands, refresh cost and authority precedence between conflicting reports.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].r​eason",
           "\"The sealed choice requires event-based freshness and observation times but gives no duration or coefficient.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].s​afeContract",
           "\"Store sourceAsOf and observedAt; report updates knowledge only and never overwrites current world fact.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].i​d",
           "\"cargo-receipt-identity-​authentication\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].a​uthority",
           "\"prior selected cargo policies plus decision-record boundaries\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].h​eld",
           "\"Receipt ID construction, authentication law, current-custodian conjunction, error tolerance, quarantine release and retry protocol.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].r​eason",
           "\"Receiver countersign is selected; the stronger current-custodian AND receiver proposal is explicitly unadopted and no new owner decision may be invented.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].s​afeContract",
           "\"Cutoff gives temporal eligibility only; final availability also requires receiver countersign and every separately applicable approved custody/right guard.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].i​d",
           "\"shared-daily-phase-valu​es\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].a​uthority",
           "\"selected common daily phase and ingress order\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].h​eld",
           "\"Clock unit, actual phase time, calendar origin, precision, same-time total order after the approved special orders.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].r​eason",
           "\"The policy shape is selected but no numeric clock or complete total order is sealed.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].s​afeContract",
           "\"At equality, arrival verification precedes reservation, production and consumption; other same-time conflicts remain held.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].i​d",
           "\"strategic-message-proto​col\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].a​uthority",
           "\"existing path/receive/accept requirement\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].h​eld",
           "\"Message travel time, cost, failure probability, duplicate ordering, expiry and delegation conflict policy.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].r​eason",
           "\"D06 has no sealed exact message formula or conflict resolver.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].s​afeContract",
           "\"No path, receipt or acceptance means no execution; battle immediate signal is a separate contract.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].i​d",
           "\"reinforcement-entry-pro​cedure\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].a​uthority",
           "\"OWNER-REINFORCEMENT-202​61004\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].h​eld",
           "\"Entry cadence, spawn/entry geometry, command transfer timing and capacity handling.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].r​eason",
           "\"Owner approval grants universal ongoing-arrival eligibility but explicitly supplies no cadence, geometry, transfer or capacity values.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].s​afeContract",
           "\"No origin, rank, initial-roster or invented time-window filter; ended battles reject retrospective participation.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].i​d",
           "\"movement-rng-protocol\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].a​uthority",
           "\"existing separated-purpose RNG rule\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].h​eld",
           "\"Generator algorithm, seed encoding, draw order, consumption and save/replay representation.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].r​eason",
           "\"Only purpose separation is approved.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].s​afeContract",
           "\"Approved D06 formulas in this closure consume no RNG.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].i​d",
           "\"actual-world-records\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].a​uthority",
           "\"decision-record selectionEffect and no-world-fact-invention guard\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].h​eld",
           "\"Specific route lengths, passage rights, current blockages, vehicle parameters, cargo lots, station links, report values and battle arrivals.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].r​eason",
           "\"Task34 closes the mechanism contract, not LORE/campaign instances. No record is owner-approved by a direction-only row.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].s​afeContract",
           "\"Every actual record must carry source, identity, unit, version and owning authority before evaluation.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[9].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​id",
           "\"foreign-game-values\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​authority",
           "\"Task24 CK3/Norland D06 dossiers\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​held",
           "\"All CK3/Norland numeric parameters and hidden/native algorithm inferences as Seoul values.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​reason",
           "\"Research rows are version-bounded comparison evidence, often native-unresolved, and never Seoul adoption.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​safeContract",
           "\"No foreign value appears as a Seoul coefficient in validator behavior.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​numericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[10].​operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​id",
           "\"illustrative-case-value​s\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​authority",
           "\"Task25 value-relabel.json\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​held",
           "\"Chosen ST/DX/HT, load, clock and atom values in worked cases as actual balance or world facts.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​reason",
           "\"The overlay classifies example inputs/outputs as Seoul-owned illustrative values without numeric approval.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​safeContract",
           "\"Cases prove arithmetic and guards only.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​numericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d06.b9.proposalHeld[11].​operative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.title",
           "\"이동·화물·지도·관측 작동 계약\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[0].row",
           "\"D02\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[0].decisionI​d",
           "\"GP-02\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[0].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[0].scope",
           "\"구간별 관측 시점, 사건 기반 정보 신선도, 차단 구간 재계획의 방향\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[1].row",
           "\"D28\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[1].decisionI​d",
           "\"GP-02\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[1].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.sealed​RowsApplied[1].scope",
           "\"개인 이동은 Lite Move/짐 구조를 참고하고 야외·터널 보정은 서울 별도표로 분리\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.rowIds​AreNotDomainIds",
           "true"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[0]",
           "\"actual movement; no strategic teleport\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[1]",
           "\"stable identity and explicit version conflicts\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[2]",
           "\"cargo material conservation and provenance-linked split\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[3]",
           "\"verified arrival at or before cutoff is temporally eligible\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[4]",
           "\"same-time arrival verification precedes reservation, production and consumption\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[5]",
           "\"receiver countersign is required by the selected cargo policy\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[6]",
           "\"any unit actually arriving while battle is ongoing may reinforce\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[7]",
           "\"map marks and reports do not become current world fact\""
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.priorA​pprovedRules[8]",
           "\"movement/encounter/obse​rvation RNG is separated from other purposes\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.authority.gurpsL​ikeBasis.classification",
           "\"public-Lite-derived-str​ucture-plus-Seoul-owned-​values\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.authority.gurpsL​ikeBasis.anchors[0]",
           "\"L-lift\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.authority.gurpsL​ikeBasis.anchors[1]",
           "\"L-secondary\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.authority.gurpsL​ikeBasis.anchors[2]",
           "\"L-encumbrance\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.authority.gurpsL​ikeBasis.adoptionBoundar​y",
           "\"Lite supplies personal Basic Lift, Basic Move and encumbrance row structure only. It does not supply Seoul route distance, strategic time, fatigue, tunnel modifiers, cargo receipt law or information freshness duration.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.authority.gurpsL​ikeBasis.noGurps2004Clai​m",
           "true"
         ],
         [
-          "운용",
+          "운용 — 입력·속도·인과 미결",
           "d06.b11.authority.noNewO​wnerDecisions",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].id",
           "\"personal-load-boundary\"​"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].kind",
           "\"normal-boundary\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].input.ST",
           "10"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].input.DX",
           "12"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].input.HT",
           "12"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].input.loadLb",
           "40"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].work",
           "\"BL=10^2/5=20 lb; BasicSpeed=(12+12)/4=6; BasicMove=6; load=2*BL selects level1; floor(6*0.8)=4.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].expected.BLraw",
           "20"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].expected.BLrounded",
           "20"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].expected.basicSpeed",
           "6"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].expected.basicMove",
           "6"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].expected.encumbranceLe​vel",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].expected.personalMove",
           "4"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].authority[0]",
           "\"L-lift\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].authority[1]",
           "\"L-secondary\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].authority[2]",
           "\"L-encumbrance\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[0​].valueStatus",
           "\"illustrative Seoul-owned inputs; coefficients are public Lite reference structure\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].id",
           "\"exact-cutoff-delivery\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].kind",
           "\"boundary\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].input.arrivalAt",
           "600"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].input.cutoffAt",
           "600"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].input.verifiedArrival",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].input.receiverCounters​igned",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].input.otherApplicableG​uards",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].work",
           "\"600 <= 600, so temporal eligibility is true. Receiver countersign and supplied other guards make this fixture available; cutoff alone would not.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].expected.temporalEligi​bility",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].expected.finalAvailabl​e",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].authority[0]",
           "\"T68-CARGO-INCLUSIVE-CUT​OFF\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].authority[1]",
           "\"selected receiver-countersign policy\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[1​].valueStatus",
           "\"illustrative clock coordinates, not an approved day length\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].id",
           "\"split-cargo\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].kind",
           "\"normal\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.parent[0]",
           "\"a\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.parent[1]",
           "\"b\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.parent[2]",
           "\"c\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.parent[3]",
           "\"d\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.parent[4]",
           "\"e\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.children[0][0]",
           "\"a\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.children[0][1]",
           "\"b\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.children[1][0]",
           "\"c\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.children[1][1]",
           "\"d\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].input.children[1][2]",
           "\"e\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].work",
           "\"Child sets are disjoint and union to the parent; 2+3=5, then parent retires.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].expected.childQuantiti​es[0]",
           "2"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].expected.childQuantiti​es[1]",
           "3"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].expected.activeQuantit​y",
           "5"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].expected.parentStatus",
           "\"retired\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].authority[0]",
           "\"selected split-provenance policy\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].authority[1]",
           "\"material conservation\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[2​].valueStatus",
           "\"illustrative atom identities\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].id",
           "\"stale-control-report\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].kind",
           "\"adversarial\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].input.worldControl",
           "\"blocked\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].input.reportControl",
           "\"open\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].input.observedAt",
           "700"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].input.sourceAsOf",
           "650"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].work",
           "\"The report updates observer knowledge as-of 650 at receipt 700; it does not overwrite current blocked world state.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].expected.worldControl",
           "\"blocked\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].expected.knowledge.sta​tus",
           "\"open\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].expected.knowledge.obs​ervedAt",
           "700"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].expected.knowledge.asO​f",
           "650"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].authority[0]",
           "\"sealed GP-02-A\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].authority[1]",
           "\"report is not world fact\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[3​].valueStatus",
           "\"illustrative clock coordinates\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].id",
           "\"legal-layer-connection\"​"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].kind",
           "\"failure-adversarial\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].input.mapMark",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].input.routeConnected",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].input.passageAuthorize​d",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].input.segmentPassable",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].work",
           "\"A visible map mark and physical connection do not replace passage authority; conjunction is false.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].expected.legal",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].expected.error",
           "\"E_ROUTE_AUTHORITY\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].authority[0]",
           "\"GP-02-A direction\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].authority[1]",
           "\"no invented movement edges\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[4​].valueStatus",
           "\"predicate fixture\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].id",
           "\"ongoing-versus-ended-re​inforcement\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].kind",
           "\"boundary\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].input.arrivalVerified",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].input.ongoing",
           "\"ongoing\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].input.ended",
           "\"ended\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].work",
           "\"Verified arrival joins an ongoing battle and cannot join an ended battle.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].expected.ongoingMayJoi​n",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].expected.endedMayJoin",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].authority[0]",
           "\"OWNER-REINFORCEMENT-202​61004\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.workedExamples[5​].valueStatus",
           "\"symbolic battle states\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.sourceComparison​s.ck3",
           "\"Documentary parameters and fragments remain comparison evidence. Exact coordinate units, general native distance/speed/load/fati​gue/residual/freshness algorithms and same-tick cutoff ordering are not verified or adopted.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d06.b11.sourceComparison​s.norland",
           "\"Road and status modifiers are mixed historical revisions. Distance, load and residual segment algorithms remain unresolved; no historical value becomes a Seoul coefficient.\""
         ]

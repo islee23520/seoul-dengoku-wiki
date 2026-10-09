@@ -424,7 +424,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -435,1627 +435,1627 @@
       ],
       "rows": [
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.schemaVersion",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.domainId",
           "\"D04\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.mechanismId",
           "\"D04.labor-population-em​ployment-rations\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersion",
           "\"D04-sealed-20261008\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"D04-sealed-20261008\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.contractSHA256",
           "\"4167ee4aee665740ebebf68​086dec5b00f78531fe2e7226​4c7fb605238e36cc2\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.rulesVersionLinka​ge.missingVersionPolicy",
           "\"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.dataOwner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].name",
           "\"people\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].type",
           "\"Person[]\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].unit",
           "\"existing member tokens linked to permanent PersonId\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].range",
           "\"unique exact nonempty strings\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].null",
           "\"forbidden\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].owner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].read[0]​",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].read[1]​",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].read[2]​",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[0].read[3]​",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[0].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.fields[0].snapsho​t",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[0].commitP​oint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].name",
           "\"cohortId\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].type",
           "\"string\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].unit",
           "\"existing cohort identifier\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].null",
           "\"forbidden\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].owner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].read[0]​",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].read[1]​",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].read[2]​",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.fields[1].read[3]​",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[1].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.fields[1].snapsho​t",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[1].commitP​oint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].name",
           "\"start,end\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].type",
           "\"safe integer\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].unit",
           "\"same world-clock tick; scale not authored\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].range",
           "\"0 <= start < end\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].null",
           "\"unknown blocks interval calculation\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].owner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].read[0]​",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].read[1]​",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].read[2]​",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.fields[2].read[3]​",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[2].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.fields[2].snapsho​t",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[2].commitP​oint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].name",
           "\"need,delivered,wageDue,​wagePaid\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].type",
           "\"safe nonnegative integer\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].unit",
           "\"explicit identical contract item/currency unit\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].null",
           "\"unknown; never zero/free\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].owner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].read[0]​",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].read[1]​",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].read[2]​",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b9.fields[3].read[3]​",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[3].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.fields[3].snapsho​t",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[3].commitP​oint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].name",
           "\"eligibility\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].type",
           "\"authored source-bound requirement table\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].unit",
           "\"contract predicates\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].null",
           "\"held; not substituted by an eligible boolean\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].owner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].read[0]​",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].read[1]​",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].read[2]​",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b9.fields[4].read[3]​",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[4].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.fields[4].snapsho​t",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[4].commitP​oint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].name",
           "\"health\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].type",
           "\"upstream approved state\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].unit",
           "\"upstream HP/FP and separate needs state\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].null",
           "\"unknown; no inferred productivity\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].owner",
           "\"D04 design evidence only\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].read[0]​",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].read[1]​",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].read[2]​",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.fields[5].read[3]​",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[5].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.fields[5].snapsho​t",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.fields[5].commitP​oint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.readSet[0]",
           "\"complete checkpoint\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.readSet[1]",
           "\"exact request/event identity\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.readSet[2]",
           "\"snapshot revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.readSet[3]",
           "\"source-bound requirements and payment/delivery evidence\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.writeSet[0]",
           "\"representation locator only for approved identity demonstration\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.writeSet[1]",
           "\"positive interval reservation append in evidence model\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.writeSet[2]",
           "\"delivery receipt in evidence model\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.writeSet[3]",
           "\"revision and immutable event receipt\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.snapshot",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b9.commitPoint",
           "\"construct candidate, validate IDs/frame/counts/shared intervals, then publish one checkpoint with receipt; any failure leaves input bytes logically unchanged\""
         ],
         [
-          "운용",
+          "운용 — 인구·예약 요청",
           "d04.b9.orderedSteps[0]",
           "\"validate exact records and units; reject unsafe encoding without clamp\""
         ],
         [
-          "운용",
+          "운용 — 형식·단위 검사",
           "d04.b9.orderedSteps[1]",
           "\"validate immutable token/PersonId bijection and living partition\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b9.orderedSteps[2]",
           "\"validate all active reservations across roles; same-person positive overlap rejects\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.orderedSteps[3]",
           "\"check rulesVersion; match replay to full payload, then snapshot revision\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.orderedSteps[4]",
           "\"representation-only: move existing selected IDs, not create IDs; return same ID to retained cohort\""
         ],
         [
-          "운용",
+          "운용 — 추출·복귀·예약 분기",
           "d04.b9.orderedSteps[5]",
           "\"reserve: require living individual and existing role; qualification/gameplay approval remains held outside this model\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.orderedSteps[6]",
           "\"fulfill: bind actual delivery to same person/need/unit; deduplicate event before demand subtraction\""
         ],
         [
-          "운용",
+          "운용 — 후보 전체 불변 검사",
           "d04.b9.orderedSteps[7]",
           "\"validate candidate full state and unchanged identity/name/life frame before commit\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[0].i​d",
           "\"population\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[0].e​xpression",
           "\"N=&#124;living cohort IDs&#124;+&#124;living individual IDs&#124;; extract k: A-k,I+k; return r: A+r,I-r\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[0].u​nit",
           "\"persons\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[0].r​ounding",
           "\"none; cardinality only\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[0].g​uard",
           "\"distinct existing source identities, no separate birth/death/migration event\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[0].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[1].i​d",
           "\"summoned-subset\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[1].e​xpression",
           "\"summoned IDs subset of individual IDs; summoning the already individualized three does not subtract three again\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[1].u​nit",
           "\"persons\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[1].g​uard",
           "\"one shared identity/reservation ledger\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b9.formulaSheet[1].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.formulaSheet[2].i​d",
           "\"reservation\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.formulaSheet[2].e​xpression",
           "\"a.start < b.end AND b.start < a.end\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.formulaSheet[2].u​nit",
           "\"occupied same-person world intervals\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.formulaSheet[2].b​oundary",
           "\"equal end/start is non-overlap; zero-duration world policy remains held\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b9.formulaSheet[2].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b9.formulaSheet[3].i​d",
           "\"remaining-demand\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b9.formulaSheet[3].e​xpression",
           "\"max(0,need-sum(distinct​ verified deliveries for same person,needId,unit))\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b9.formulaSheet[3].u​nit",
           "\"explicit identical item quantity\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b9.formulaSheet[3].r​ounding",
           "\"none; integer carrier only, not approved quota granularity\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b9.formulaSheet[3].g​uard",
           "\"actual delivered amount, not stock/reservation; duplicate event exact replay no second contribution\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b9.formulaSheet[3].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 체불액 대조",
           "d04.b9.formulaSheet[4].i​d",
           "\"wage-arrears\""
         ],
         [
-          "운용",
+          "운용 — 체불액 대조",
           "d04.b9.formulaSheet[4].e​xpression",
           "\"max(0,contractuallyDue-​verifiedPaid)\""
         ],
         [
-          "운용",
+          "운용 — 체불액 대조",
           "d04.b9.formulaSheet[4].u​nit",
           "\"same explicit contract currency\""
         ],
         [
-          "운용",
+          "운용 — 체불액 대조",
           "d04.b9.formulaSheet[4].g​uard",
           "\"symbolic reconciliation only; wage due generation/cadence unapproved\""
         ],
         [
-          "운용",
+          "운용 — 체불액 대조",
           "d04.b9.formulaSheet[4].s​tatus",
           "\"bounded-symbolic-contra​ct\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.rng.scope",
           "\"none in D04 bounded symbolic arithmetic\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.rng.generatedSkil​ls",
           "\"D36 seeded candidate approval held, not generated here\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.time",
           "\"event-based illustration; wage/ration periodic rates and clock scale held; no invented daily or hourly rate\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.rounding",
           "\"각 공식의 명시된 처리를 따른다. 실제 생산·전략 이동 양자화는 proposal-held다.\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.clamps",
           "\"max(0,remaining) is unmet demand/arrears floor only; no truncating population, quantities or excess people\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.lifecycle.cancel",
           "\"release only unconsumed future role reservation according to authored role contract; completed deliveries/payments and representation IDs remain; cancellation policy itself held\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.lifecycle.death",
           "\"upstream death event changes living status once; preserve token/ID and records, remove future eligibility, do not revive reservations; timing/release policy held\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.lifecycle.load",
           "\"validate full checkpoint, rules version, identities, receipts and intervals; invalid/stale checkpoint typed rejection, never silent migration\""
         ],
         [
-          "운용",
+          "운용 — 개인→원 집계 복귀",
           "d04.b9.lifecycle.return",
           "\"same token/ID retained; structural representation example only, gameplay trigger/authority/eligib​ility held\""
         ],
         [
-          "운용",
+          "운용 — 규칙·요청 재생 대조",
           "d04.b9.failure",
           "\"validate full state before replay; same event and identical request replays receipt; changed payload E_EVENT_CONFLICT; new request requires exact revision and rulesVersion\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].i​d",
           "\"D03-rates\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].r​ows[0]",
           "\"D03\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].s​cope",
           "\"per-station/profession wage amount, ration item quantities, currency/item units, cadence, shortage allocation and actual contract instances\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].d​isposition",
           "\"proposal; selected contract direction only\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].i​d",
           "\"D16-token-schema\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].r​ows[0]",
           "\"D16\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].s​cope",
           "\"token issuance, save migration and exact serialization; existing tokens preserved\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].d​isposition",
           "\"evidence carrier proposal, no new identities authored\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].i​d",
           "\"extraction-return-quali​fication\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].r​ows[0]",
           "\"D16\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].r​ows[1]",
           "\"D35\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].r​ows[2]",
           "\"D36\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].s​cope",
           "\"trigger, authority, consent, age/health/skill/equipme​nt qualification, roster registration and return eligibility\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].d​isposition",
           "\"structural representation tests are conditional; not accepted gameplay qualification\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].i​d",
           "\"D29-D37-health-labor\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].r​ows[0]",
           "\"D29\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].r​ows[1]",
           "\"D37\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].s​cope",
           "\"ration shortage to HP/FP/needs/mood/product​ivity conversion and once-only effect rates/thresholds\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].d​isposition",
           "\"read-only upstream health; no multiplier invented\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].i​d",
           "\"D35-hire-matching\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].r​ows[0]",
           "\"D35\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].s​cope",
           "\"hire price and ability/equipment matching; no CP-derived mercenary price\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].d​isposition",
           "\"separate contract price and qualification proposals\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].i​d",
           "\"D36-generated-skills\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].r​ows[0]",
           "\"D36\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].s​cope",
           "\"skill/attribute distributions, seeded candidate parameters and individual approval\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].d​isposition",
           "\"no random generation or profession-based skill assignment\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].i​d",
           "\"B-D15-unit-instances\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].r​ows[0]",
           "\"D15\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].s​cope",
           "\"unit-type mapping first; actual units and members separately issued\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].d​isposition",
           "\"B selected direction; do not issue units in D04\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].i​d",
           "\"B-D22-normalized-units\"​"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].r​ows[0]",
           "\"D22\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].s​cope",
           "\"common unit dictionary before equations/coefficients; no actual conversion rates supplied\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].d​isposition",
           "\"B selected staging; fixture units only\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].i​d",
           "\"B-D26-skill-TL-language​\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].r​ows[0]",
           "\"D26\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].s​cope",
           "\"Seoul skill/TL/language authoring and per-instance issuance\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].d​isposition",
           "\"upstream proposal, no D04 default qualification\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].i​d",
           "\"D27-D30-capacity\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].r​ows[0]",
           "\"D27\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].r​ows[1]",
           "\"D30\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].s​cope",
           "\"supply/commander/instit​ution functions and injury modifiers; capacity reduction never deletes excess people\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].d​isposition",
           "\"cross-domain D15 held equations; no fixed20 cap\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[9].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​id",
           "\"population-lifecycle-ra​tes\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​rows[0]",
           "\"D16\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​scope",
           "\"birth/death/migration/c​apture rates, casualty ordering, lifecycle reservation release and exact cancel/refund policy\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​numericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​disposition",
           "\"separate events, not part of representation conservation\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[10].​operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​id",
           "\"carrier-numeric-fixture​s\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​rows",
           "[]"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​scope",
           "\"500,5,3 and need5/delivery3, interval ticks10/20/30 are independent synthetic verification inputs, not gameplay balances\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​numericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​disposition",
           "\"Seoul illustrative unadopted values per value-relabel; exact types/errors are evidence tooling, not gameplay laws\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[11].​operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​id",
           "\"zero-duration-actions\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​rows",
           "[]"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​scope",
           "\"zero-duration world action semantics\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​numericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​disposition",
           "\"positive-interval carrier rejects zero; world action policy remains unknown\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d04.b9.proposalHeld[12].​operative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.decisionIds[0]",
           "\"GP-04/population-ration​-residual\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.decisionIds[1]",
           "\"T68-PF-07/population-ge​neration-policy-residual​\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.decisionIds[2]",
           "\"GP-04/health-personal-e​ffects\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.decisionIds[3]",
           "\"T68-PF-06/unit-numeric-​matching\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.decisionIds[4]",
           "\"T68-PF-07/generated-att​ributes-skills\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.decisionIds[5]",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS/health-derived-a​ssumptions\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.sealedRowIds[0]",
           "\"D03\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.sealedRowIds[1]",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.sealedRowIds[2]",
           "\"D29\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.sealedRowIds[3]",
           "\"D35\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.sealedRowIds[4]",
           "\"D36\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.sealedRowIds[5]",
           "\"D37\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.heldCrossDomainR​owIds[0]",
           "\"D15\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.heldCrossDomainR​owIds[1]",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.heldCrossDomainR​owIds[2]",
           "\"D26\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.heldCrossDomainR​owIds[3]",
           "\"D27\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.heldCrossDomainR​owIds[4]",
           "\"D30\""
         ],
         [
-          "운용",
+          "운용 — 자격·해제 정책 미결",
           "d04.b11.authorityBoundar​y",
           "\"Dnn row IDs in decision-record are decision ordinals, not domain IDs. Selected directions do not approve exact formulas, coefficients, instances or qualification tables.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[0].​id",
           "\"SEOUL-POPULATION\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[0].​source",
           "\"sheet-formula-gdd-integ​ration-20261006/formulas​.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[0].​classification",
           "\"Seoul-owned symbolic conservation; example numeric values illustrative, unadopted per value-relabel.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[1].​id",
           "\"OWNER-D04-COHORT-IDENTI​TY-20261005\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[1].​source",
           "\"d04-cohort-identity-own​er-binding-r1/decision.j​son\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[1].​classification",
           "\"approved identity only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[2].​id",
           "\"OWNER-D04-RESERVATION-E​NDPOINT-20261005\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[2].​source",
           "\"d04-reservation-endpoin​t-owner-binding-r1/decis​ion.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[2].​classification",
           "\"approved occupied interval semantics only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[3].​id",
           "\"GP-04\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[3].​source",
           "\"owner-ration-production​-decisions-20261005/deci​sion.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[3].​classification",
           "\"prior ration-before-purchase selection; corroborated selected symbolic scope in Task26 dossier\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[4].​id",
           "\"CK3-D04\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[4].​source",
           "\"task-24/cells/ck3/D04/v​erified-input-r2/report.​md\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[4].​classification",
           "\"documentary comparison only; same-ID cohort return unresolved\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[5].​id",
           "\"NL-D04\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[5].​source",
           "\"task-24/cells/norland/D​04/verified-input-r1/rep​ort.md\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.sourceClaims[5].​classification",
           "\"documentary analogue, no native same-ID/no-double-ration​ proof\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.gurpsLikeBasis.s​ource",
           "\"task-25-gurps-like-basi​s-20261008/basis.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.gurpsLikeBasis.w​orked",
           "\"task-25-gurps-like-basi​s-20261008/worked-checks​.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.gurpsLikeBasis.d​irectD04Mechanics",
           "[]"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d04.b11.gurpsLikeBasis.m​eaning",
           "\"Basis assigns no direct D04 wage/ration/population equation. Conservation cardinality and delivery subtraction are Seoul symbolic arithmetic, not GURPS Basic 2004. HP/FP/skills are read-only upstream fields; no labor multiplier or 3d6 wage calculation is inferred.\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b11.state.Person.tok​en",
           "\"immutable member token\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b11.state.Person.per​sonId",
           "\"immutable permanent ID, no allocation during extraction\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b11.state.Person.lif​e",
           "\"living &#124; dead\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b11.state.Person.loc​ator",
           "\"cohort &#124; individual &#124; none\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b11.state.Person.coh​ortId",
           "\"original cohort, retained on individualization\""
         ],
         [
-          "운용",
+          "운용 — 토큰·인물 분할 검사",
           "d04.b11.state.Person.pub​licName",
           "\"string &#124; null\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b11.state.Reservatio​n.id",
           "\"unique reservation ID\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b11.state.Reservatio​n.personId",
           "\"existing living permanent ID\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b11.state.Reservatio​n.role",
           "\"existing role ID\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b11.state.Reservatio​n.start",
           "\"world tick\""
         ],
         [
-          "운용",
+          "운용 — 생존 개인·기존 역할 예약",
           "d04.b11.state.Reservatio​n.end",
           "\"world tick\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b11.state.Delivery.i​d",
           "\"unique fulfillment event ID\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b11.state.Delivery.p​ersonId",
           "\"existing permanent ID\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b11.state.Delivery.n​eedId",
           "\"one contractual need\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b11.state.Delivery.q​uantity",
           "\"nonnegative exact integer\""
         ],
         [
-          "운용",
+          "운용 — 실제 배급 기록",
           "d04.b11.state.Delivery.u​nit",
           "\"registered item unit\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.state.checkpoint​[0]",
           "\"rulesVersion\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.state.checkpoint​[1]",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.state.checkpoint​[2]",
           "\"people\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.state.checkpoint​[3]",
           "\"reservations\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.state.checkpoint​[4]",
           "\"receipts\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.state.checkpoint​[5]",
           "\"deliveries\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b11.state.derivedOnl​y[0]",
           "\"aggregateCount\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b11.state.derivedOnl​y[1]",
           "\"individualCount\""
         ],
         [
-          "운용",
+          "운용 — 집계→개인 표현 이동",
           "d04.b11.state.derivedOnl​y[2]",
           "\"summonedCount\""
         ],
         [
-          "운용",
+          "운용 — 후보 전체 불변 검사",
           "d04.b11.state.derivedOnl​y[3]",
           "\"totalLiving\""
         ],
         [
-          "운용",
+          "운용 — 모든 역할 구간 검사",
           "d04.b11.state.derivedOnl​y[4]",
           "\"aggregateLaborAvailable​\""
         ],
         [
-          "운용",
+          "운용 — 잔여 구매 요구",
           "d04.b11.state.derivedOnl​y[5]",
           "\"remainingPurchaseDemand​\""
         ],
         [
-          "운용",
+          "운용 — 체불액 대조",
           "d04.b11.state.derivedOnl​y[6]",
           "\"wageArrears\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.effectsEventsOut​puts[0]",
           "\"one immutable receipt per accepted event\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.effectsEventsOut​puts[1]",
           "\"derived living population counts\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.effectsEventsOut​puts[2]",
           "\"shared-person labor exclusivity\""
         ],
         [
-          "운용",
+          "운용 — 체크포인트·영수증 반영",
           "d04.b11.effectsEventsOut​puts[3]",
           "\"verified fulfillment and remaining-demand result\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[0]",
           "\"unknown required numeric input E_PROPOSAL_REQUIRED\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[1]",
           "\"unit mismatch E_UNIT\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[2]",
           "\"duplicate token/person/receipt E_DUPLICATE_ID\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[3]",
           "\"positive same-person overlap E_OVERLAP\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[4]",
           "\"new stale event E_STALE_SNAPSHOT\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[5]",
           "\"unsupported rules E_VERSION\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[6]",
           "\"unsafe value E_TYPE\""
         ],
         [
-          "운용",
+          "운용 — ID·중첩·개정 거부",
           "d04.b11.exceptions[7]",
           "\"invalid locator or dead active role E_CHECKPOINT\""
         ]

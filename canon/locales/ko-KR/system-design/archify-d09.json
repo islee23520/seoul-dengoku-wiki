@@ -490,7 +490,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -501,2352 +501,2352 @@
       ],
       "rows": [
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.schemaVersion",
           "1"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.domainId",
           "\"D09\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.mechanismId",
           "\"seoul.d09.bounded-contr​act\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersion",
           "\"D09-owner-directions-20​261008-v1\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"D09-owner-directions-20​261008-v1\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.contractSHA256",
           "\"402c24ec0c55db0be020e1e​29144381347a24e295ee02f0​396278b26b115483f\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
           "\"doc.Rules-FactionsWarfa​re\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[2].path",
           "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.rulesVersionLinka​ge.canonRules[2].sha256",
           "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.dataOwner",
           "\"D09 owns country, government, institution, office-procedure, acting-scope, legitimacy-status and continuity records; D01 owns person identity/life; D08 owns family and marriage; D10 owns titles/claims; D11 owns grants and physical handover; D12 owns body succession; D17 owns negotiated terms; D18 owns time/save boundaries\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].name",
           "\"eventId\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].type",
           "\"stableId\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].owner",
           "\"originating domain\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.fields[0].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[0].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[0].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[0].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].name",
           "\"stateId\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].type",
           "\"stableId\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].owner",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].rule",
           "\"must match procedure and institution\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[1].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[1].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[1].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].name",
           "\"institutionId,officeId\"​"
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].type",
           "\"stableId\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].owner",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[2].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[2].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[2].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].name",
           "\"holderId\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].type",
           "\"stable person ID&#124;null\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].null",
           "\"only a real vacancy; never generated\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].owner",
           "\"D09 reads D01 identity\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b9.fields[3].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[3].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[3].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[3].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].name",
           "\"treasury\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].type",
           "\"integer\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].unit",
           "\"explicit treasuryUnit\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].range",
           "\"nonnegative; no cross-unit arithmetic\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].owner",
           "\"institution ledger\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[4].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[4].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.fields[5].name",
           "\"selector\""
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.fields[5].type",
           "\"vote&#124;appointment&#​124;exam-then-vote&#124;​exam-then-appointment\""
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.fields[5].unit",
           "\"enum\""
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.fields[5].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.fields[5].owner",
           "\"per-state procedure payload\""
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.fields[5].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[5].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[5].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[5].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].name",
           "\"candidates\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].type",
           "\"array of {personId,eligible,examS​core&#124;null}\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].unit",
           "\"person/score-unit\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].null",
           "\"missing required score is E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].owner",
           "\"D09 procedure input; eligibility sources remain their domains\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.fields[6].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[6].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[6].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[6].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].name",
           "\"voters,votes\""
         ],
         [
-          "운용",
+          "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].type",
           "\"stable-ID arrays\""
         ],
         [
-          "운용",
+          "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].unit",
           "\"person/ballot\""
         ],
         [
-          "운용",
+          "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].null",
           "\"missing when vote selector is E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].owner",
           "\"per-state procedure payload/event\""
         ],
         [
-          "운용",
+          "운용 — 고유 유권자·유효 한 표",
           "d09.b9.fields[7].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[7].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[7].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[7].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.fields[8].name",
           "\"quorum\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.fields[8].type",
           "\"{mode:count,requiredCou​nt}&#124;{mode:all-eligi​ble}\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.fields[8].unit",
           "\"voter-count\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.fields[8].null",
           "\"unregistered is E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.fields[8].owner",
           "\"per-state procedure payload\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.fields[8].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[8].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[8].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[8].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].name",
           "\"tieRule\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].type",
           "\"{mode:resolver-order,or​deredCandidateIds}&#124;​{mode:remain-vacant}\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].unit",
           "\"identity-order\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].null",
           "\"unregistered is E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].owner",
           "\"per-state procedure payload\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.fields[9].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[9].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[9].snapsho​t",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[9].commitP​oint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].name",
           "\"examRule\""
         ],
         [
-          "운용",
+          "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].type",
           "\"{required,minimumScore,​scoreUnit}\""
         ],
         [
-          "운용",
+          "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].unit",
           "\"declared scoreUnit\""
         ],
         [
-          "운용",
+          "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].null",
           "\"required threshold absent is E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].owner",
           "\"per-state procedure payload\""
         ],
         [
-          "운용",
+          "운용 — 시험 점수·단위·기준",
           "d09.b9.fields[10].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[10].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[10].snapsh​ot",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[10].commit​Point",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].name",
           "\"appointmentRule\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].type",
           "\"{appointingActorId,rati​fierId&#124;null,ratific​ationRequired}\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].null",
           "\"required actor/ratifier absent is E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].owner",
           "\"per-state procedure payload\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.fields[11].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[11].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[11].snapsh​ot",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[11].commit​Point",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].name",
           "\"actingRule\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].type",
           "\"{actorId,allowedActions​[]}&#124;null\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].unit",
           "\"identity/action-id\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].null",
           "\"means no acting authority, not universal authority\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].owner",
           "\"per-state procedure payload\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b9.fields[12].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[12].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[12].snapsh​ot",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[12].commit​Point",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].name",
           "\"snapshotRevision,proced​ureRevision,rulesVersion​\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].type",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].unit",
           "\"version\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].null",
           "false"
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].owner",
           "\"D18/D09\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].read",
           "\"one institution snapshot; one target office and unrelated-office preservation fingerprint; one matching approved per-state procedure revision; candidate/voter/exam/app​ointment/ratification event records; prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[13].write",
           "\"target office holder/effective/vacant;​ target office acting record; procedure attempt status; categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.fields[13].snapsh​ot",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.fields[13].commit​Point",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.readSet[0]",
           "\"one institution snapshot\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.readSet[1]",
           "\"one target office and unrelated-office preservation fingerprint\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.readSet[2]",
           "\"one matching approved per-state procedure revision\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.readSet[3]",
           "\"candidate/voter/exam/ap​pointment/ratification event records\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.readSet[4]",
           "\"prior event receipts and categorical legitimacy record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.writeSet[0]",
           "\"target office holder/effective/vacant\"​"
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.writeSet[1]",
           "\"target office acting record\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.writeSet[2]",
           "\"procedure attempt status\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.writeSet[3]",
           "\"categorical legitimacy status and event receipt\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.snapshot",
           "\"All records use one exact checkpoint. State, office, institution and procedure revisions must match the invocation; mixed or stale revisions reject before calculation.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.commitPoint",
           "\"After candidate filtering, exam filtering, selector resolution, quorum, tally/tie resolution and appointment/ratification​ all complete. Vacancy/dispute receipts may commit without filling the office; no partial holder or treasury write is allowed.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.orderedSteps[0]",
           "\"Resolve stable IDs, exact rules version, state, institution, office and procedure revision; reject any mismatch or duplicate event.\""
         ],
         [
-          "운용",
+          "운용 — 직위 사건 종류",
           "d09.b9.orderedSteps[1]",
           "\"For office loss or holder death supplied by the owning lifecycle event, clear only the target office; preserve institution, treasury and unrelated offices; emit selection-pending; generate no replacement.\""
         ],
         [
-          "운용",
+          "운용 — 직위 사건 종류",
           "d09.b9.orderedSteps[2]",
           "\"For a procedure attempt, require approvalStatus=approved and every field required by that state/office selector. Proposal or missing payload returns E_PROPOSAL with the full before state unchanged.\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b9.orderedSteps[3]",
           "\"Filter candidate records by explicit eligible=true. If the selector requires an examination, require declared score unit and retain candidates whose score is at least the registered threshold. No candidate leaves a vacancy with no-candidate status.\""
         ],
         [
-          "운용",
+          "운용 — 후보 집합 공백",
           "d09.b9.orderedSteps[4]",
           "\"For vote selectors, validate unique eligible voters and unique ballots, then test the registered quorum exactly. Unmet quorum leaves the vacancy and records quorum-unmet.\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.orderedSteps[5]",
           "\"Count one valid ballot per eligible voter. Select the unique highest tally. On a top tie, apply only the registered tie rule: exact resolver order selects the first tied ID present; remain-vacant records tie-unresolved.\""
         ],
         [
-          "운용",
+          "운용 — 투표·임명 경로",
           "d09.b9.orderedSteps[6]",
           "\"For appointment selectors, require the registered appointing actor. For every selector, require the registered ratifier only when ratificationRequired=tru​e. A missing or wrong actor leaves the office unchanged and fails explicitly.\""
         ],
         [
-          "운용",
+          "운용 — 임명자·필수 인준자",
           "d09.b9.orderedSteps[7]",
           "\"Commit holder/effective/vacant and categorical legitimacy together. Preserve treasury and institution fields byte-for-byte; record no numeric legitimacy value.\""
         ],
         [
-          "운용",
+          "운용 — 직위 사건 종류",
           "d09.b9.orderedSteps[8]",
           "\"For an acting request, require an exact actor and action listed in actingRule. Set only the scoped acting receipt; never fill the office or grant unlisted actions.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b9.orderedSteps[9]",
           "\"On load, restore receipts and revisions without rerunning selection. On cancel/death during an uncommitted attempt, keep the vacancy and discard no prior institution or treasury history.\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].i​d",
           "\"D09-CANDIDATE-FILTER\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].s​tatus",
           "\"approved-structure-payl​oad-values-per-state\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].e​xpression",
           "\"eligible = candidates where eligible=true and, when exam.required, examScore is known in exam.scoreUnit and examScore >= exam.minimumScore\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].u​nit",
           "\"person set\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].n​ull",
           "\"required unknown score or threshold => E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 고유 명시 적격 후보",
           "d09.b9.formulaSheet[0].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].i​d",
           "\"D09-QUORUM\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].s​tatus",
           "\"approved-structure-payl​oad-values-per-state\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].e​xpression",
           "\"participatingVoters = count(unique valid voter IDs with one valid ballot); met = mode=count ? participatingVoters >= requiredCount : participatingVoters == eligibleVoterCount\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].u​nit",
           "\"voter-count\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].n​ull",
           "\"missing mode/value => E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 등록 정족수",
           "d09.b9.formulaSheet[1].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].i​d",
           "\"D09-VOTE-TALLY\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].s​tatus",
           "\"approved-structure\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].e​xpression",
           "\"tally[candidateId] = count(valid ballots for candidateId); leaders = eligible candidates with maximal tally\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].u​nit",
           "\"ballot-count\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].n​ull",
           "\"no eligible candidate => no-candidate\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 후보별 득표·최대 집합",
           "d09.b9.formulaSheet[2].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].i​d",
           "\"D09-TIE\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].s​tatus",
           "\"approved-structure-payl​oad-values-per-state\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].e​xpression",
           "\"resolver-order selects the first tied candidate in orderedCandidateIds; remain-vacant selects nobody\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].u​nit",
           "\"identity order\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].n​ull",
           "\"missing registered rule => E_PROPOSAL\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 등록 동률 규칙",
           "d09.b9.formulaSheet[3].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].i​d",
           "\"D09-LEGITIMACY-STATUS\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].s​tatus",
           "\"approved-categorical-on​ly\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].e​xpression",
           "\"lawful when approved matching procedure completes selection and every required appointment/ratification​ condition; otherwise selection-pending&#124;n​o-candidate&#124;quorum-​unmet&#124;tie-unresolve​d&#124;appointment-block​ed\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].u​nit",
           "\"enum\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].n​ull",
           "\"numeric legitimacy remains withheld\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b9.formulaSheet[4].r​ng",
           "\"none\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].i​d",
           "\"D09-LEGITIMACY-SCORE\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].e​xpression",
           "null"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].u​nit",
           "null"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].n​ull",
           "\"E_PROPOSAL; never default zero\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].r​eason",
           "\"D22-B approves unit normalization first, not formula/coefficient/clam​p adoption.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.formulaSheet[5].o​perative",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].i​d",
           "\"GURPS-LIKE-REFERENCE\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].s​tatus",
           "\"not-used-by-D09-resolut​ion\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].a​nchors[0]",
           "\"L-success\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].a​nchors[1]",
           "\"L-critical\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].a​nchors[2]",
           "\"L-margin\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].a​nchors[3]",
           "\"L-contest\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].e​xpression",
           "\"No 3d6 roll, margin or contest is invoked unless a future per-state payload explicitly and separately approves one.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].u​nit",
           "\"none\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b9.formulaSheet[6].r​eason",
           "\"Public GURPS-like arithmetic is not an election or legitimacy rule.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.rng",
           "\"None in the approved D09 structure. Random tie breakers, generated candidates and hidden legitimacy rolls are prohibited unless a later state-specific approved payload defines stream, draw count and receipt.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.time",
           "\"Event-driven under D18 checkpoint time. No daily/monthly turn, deadline, campaign pause, speed control or auto-election cadence is invented.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.rounding",
           "\"Counts and scores use exact integers in their declared units. No percentage conversion, rounding or legitimacy clamp is approved.\""
         ],
         [
-          "운용",
+          "운용 — 직위·절차·대행 요청",
           "d09.b9.clamps",
           "\"Counts and scores use exact integers in their declared units. No percentage conversion, rounding or legitimacy clamp is approved.\""
         ],
         [
-          "운용",
+          "운용 — 공석·기관·이력 유지",
           "d09.b9.lifecycle.cancel",
           "\"Before commit, retain vacancy, institution, treasury, unrelated offices and prior receipts. Cancellation does not appoint the current leader.\""
         ],
         [
-          "운용",
+          "운용 — 공석·기관·이력 유지",
           "d09.b9.lifecycle.death",
           "\"A supplied holder-death event follows target-office vacancy. Candidate, voter, appointing actor or ratifier death invalidates only the affected uncommitted attempt and requires a fresh snapshot; no automatic replacement.\""
         ],
         [
-          "운용",
+          "운용 — 공석·기관·이력 유지",
           "d09.b9.lifecycle.load",
           "\"Restore exact procedure and receipt revision. Do not rerun completed appointment or acting authorization. Unsupported/mixed version fails explicitly.\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b9.failure",
           "\"Duplicate event, duplicate ballot, vote by an ineligible voter, vote for an ineligible candidate, mismatched state/office, stale revision, absent required per-state field, incompatible unit or concurrent revision rejects atomically.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].i​d",
           "\"P01\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].s​cope",
           "\"Sixteen state/office procedure payloads\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[0]",
           "\"selector\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[1]",
           "\"candidateRule and actual eligibility records\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[2]",
           "\"voterRule and actual elector roster\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[3]",
           "\"quorum mode/value\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[4]",
           "\"tie resolver/order\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[5]",
           "\"exam requirement/threshold/un​it\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[6]",
           "\"appointing actor\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[7]",
           "\"ratifier\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].f​ields[8]",
           "\"acting actor/action scope\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].d​isposition",
           "\"proposal-per-state-and-​office\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].b​lockingBehavior",
           "\"E_PROPOSAL; no appointment or acting authority\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].r​eason",
           "\"D09-A approves separate explicit records, not their missing facts or numbers.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].i​d",
           "\"P02\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].s​cope",
           "\"Opening and current world payloads\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[0]",
           "\"actual office holders\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[1]",
           "\"vacancies\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[2]",
           "\"dual-office instances\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[3]",
           "\"treasury values/units\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[4]",
           "\"custodians\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[5]",
           "\"liabilities\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].f​ields[6]",
           "\"institution lineage and dissolution clauses\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].d​isposition",
           "\"proposal-or-unread-worl​d-record\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].b​lockingBehavior",
           "\"No fabricated record; continuity only applies to supplied state\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].r​eason",
           "\"World facts and per-organization disposition were not provided.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].i​d",
           "\"P03\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].s​cope",
           "\"Numeric legitimacy\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[0]",
           "\"score unit\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[1]",
           "\"formula\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[2]",
           "\"weights\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[3]",
           "\"decay\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[4]",
           "\"clamps\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[5]",
           "\"thresholds\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].f​ields[6]",
           "\"consumer effects\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].d​isposition",
           "\"proposal\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].b​lockingBehavior",
           "\"E_PROPOSAL; categorical status remains available\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].r​eason",
           "\"D22-B normalizes units first and explicitly leaves formula/coefficient adoption later.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].i​d",
           "\"P04\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].s​cope",
           "\"Procedure timing, resources and randomness\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[0]",
           "\"duration\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[1]",
           "\"deadline\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[2]",
           "\"retry cadence\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[3]",
           "\"cost\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[4]",
           "\"RNG stream\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[5]",
           "\"draw count\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].f​ields[6]",
           "\"random tie break\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].d​isposition",
           "\"proposal\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].b​lockingBehavior",
           "\"No hidden time advancement, payment or random draw\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].r​eason",
           "\"No Seoul approval; CK3/Norland timings and probabilities are documentary non-equivalents.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].i​d",
           "\"P05\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].s​cope",
           "\"Dissolution and custody transfer\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].f​ields[0]",
           "\"institution dissolution predicate\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].f​ields[1]",
           "\"treasury spending authority\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].f​ields[2]",
           "\"custody transfer\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].f​ields[3]",
           "\"debt priority\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].f​ields[4]",
           "\"physical key/document handover\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].d​isposition",
           "\"proposal-owned-across-D​09-D11-D17-D18\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].b​lockingBehavior",
           "\"Vacancy preserves institution and treasury; transfer requires separate approved receipt\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].r​eason",
           "\"D11-A requires organization-specific clauses; vacancy does not establish them.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].i​d",
           "\"P06\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].s​cope",
           "\"GURPS-like mapping\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].f​ields[0]",
           "\"3d6 success target\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].f​ields[1]",
           "\"quick contest\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].f​ields[2]",
           "\"critical result\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].f​ields[3]",
           "\"reaction modifier\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].d​isposition",
           "\"not-adopted\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].b​lockingBehavior",
           "\"No roll is consumed by D09\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].r​eason",
           "\"Public anchors support general arithmetic only and do not define elections, appointment or legitimacy.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisionIds[0]",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisionIds[1]",
           "\"D11\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisionIds[2]",
           "\"D21\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisionIds[3]",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.decisions[0].row​",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.decisions[0].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.decisions[0].app​lied",
           "\"Each state must register its own selector, candidates, voters, quorum, tie resolver, examination, appointment/ratification​ and acting-scope payload. A registered resolver is not itself an appointment and no universal chair table is inferred.\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.decisions[1].row​",
           "\"D11\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.decisions[1].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.decisions[1].app​lied",
           "\"An institution persists through territorial or office-holder loss only under its own lawful representative, custodian and dissolution clauses; liabilities, property and lineage are not deleted by vacancy.\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[2].row​",
           "\"D21\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[2].cho​senOption",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[2].app​lied",
           "\"Organization values and policies require field-by-field source and disposition. No charter average or functional modifier becomes a country fact here.\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[3].row​",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[3].cho​senOption",
           "\"B\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.decisions[3].app​lied",
           "\"Normalize units and field meanings first. Exact legitimacy formula, coefficient, clamp and consumer values remain later approvals.\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.approvalBoundary​",
           "\"Sealed D09 Option A approves a separate explicit procedure record for each of the sixteen states. It does not approve one universal elector list, quorum, tie resolver, examination threshold, appointing authority, ratifier, acting scope, legitimacy coefficient, office holder or state-specific payload. Missing payloads remain proposals and block appointment atomically.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​source",
           "\"task-26-remaining-decis​ions-20261008/decision-r​ecord.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​sha256",
           "\"e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​anchors[0]",
           "\"D09\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​anchors[1]",
           "\"D11\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​anchors[2]",
           "\"D21\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​anchors[3]",
           "\"D22\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[0].​status",
           "\"sealed-owner-directions​\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​source",
           "\"glm-remaining-wave-1/it​em-13/sheet/d09-mechanis​m-sheet.proposal.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​sha256",
           "\"f7c259572344981ff5201e8​7b8b743de7cbe23736371de5​188f144c794e81de4\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​status",
           "\"historical-proposal-reu​sed-only-where-source-bo​und\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​retained[0]",
           "\"vacancy clears only the target office\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​retained[1]",
           "\"treasury and institution survive vacancy\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​retained[2]",
           "\"dual office is independent\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​retained[3]",
           "\"no automatic ruler generation\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​rejected[0]",
           "\"proposal status as approval\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​rejected[1]",
           "\"universal candidate cap\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​rejected[2]",
           "\"universal world step cadence\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[1].​rejected[3]",
           "\"universal acting person\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[2].​source",
           "\"design-finalization-202​61006/D09/contract.json\"​"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[2].​sha256",
           "\"17b148eda8bac786a6b5163​4d9f5c6e24412150ffaafb39​a2e6a819089294923\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[2].​status",
           "\"bounded-reader-history-​not-closure\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[3].​source",
           "\"task-24/cells/ck3/D09/c​urrent-route-consumer-r3​/DoneClaim.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[3].​sha256",
           "\"525259f73fdec983b9f482f​66b11015187136c1c9edda79​0a4d801794cbfc70f\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[3].​status",
           "\"documentary-comparison-​only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[3].​limit",
           "\"No native universal quorum, tie, treasury or ruler-generation rule imported.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[4].​source",
           "\"task-24/cells/norland/D​09/verified-input-r1/Don​eClaim.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[4].​sha256",
           "\"6660c352e059dd5f98406a8​fa3db668288bf3b194145108​b69e987fe01bc859b\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[4].​status",
           "\"documentary-comparison-​only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[4].​limit",
           "\"No Norland rank probability, politics threshold, lord generation or turn/day conversion imported.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​source",
           "\"task-25-gurps-like-basi​s-20261008/basis.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​sha256",
           "\"5d39843deba40e876bd8f0e​361a2596ace8a7311fc3ec48​c38242928628450b2\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​anchors[0]",
           "\"L-success\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​anchors[1]",
           "\"L-critical\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​anchors[2]",
           "\"L-margin\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​anchors[3]",
           "\"L-contest\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​status",
           "\"public-Lite-calculation​-reference-only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[5].​limit",
           "\"No GURPS 2004 claim and no election, legitimacy or office rule is attributed to the public basis.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[6].​source",
           "\"task-25-gurps-like-basi​s-20261008/value-relabel​.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[6].​sha256",
           "\"f38c3efe4c0cca62375151d​29bcb39e4e684a6911a493b3​3f856e548e30aae0b\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[6].​status",
           "\"numeric-classification-​overlay\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d09.b11.sourceClaims[6].​limit",
           "\"Proposal examples remain Seoul design fixtures and numericApproval false.\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.required[0]",
           "\"institutionId\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.required[1]",
           "\"stateId\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.required[2]",
           "\"alive\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.required[3]",
           "\"treasury\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.required[4]",
           "\"treasuryUnit\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.required[5]",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.owner",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.inst​itution.invariant",
           "\"Vacancy does not mutate treasury, liabilities, institution identity or lineage; dissolution requires its separately registered clause.\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.required[0]",
           "\"officeId\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.required[1]",
           "\"institutionId\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.required[2]",
           "\"holderId\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.required[3]",
           "\"effective\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.required[4]",
           "\"vacant\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.required[5]",
           "\"acting\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.owner",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.recordTypes.offi​ce.invariant",
           "\"One event changes only its target office. Other offices held by the same person are not inferred lost.\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[0]",
           "\"stateId\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[1]",
           "\"officeId\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[2]",
           "\"selector\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[3]",
           "\"candidateRule\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[4]",
           "\"voterRule\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[5]",
           "\"quorum\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[6]",
           "\"tieRule\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[7]",
           "\"examRule\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[8]",
           "\"appointmentRule\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[9]",
           "\"actingRule\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[10]",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.required[11]",
           "\"approvalStatus\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.owner",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.recordTypes.proc​edure.invariant",
           "\"Exactly one state/office payload and revision governs one attempt; payload absence or proposal status cannot appoint.\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.recordTypes.legi​timacy.required[0]",
           "\"status\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.recordTypes.legi​timacy.required[1]",
           "\"basisEventId\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.recordTypes.legi​timacy.required[2]",
           "\"procedureRevision\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.recordTypes.legi​timacy.owner",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.recordTypes.legi​timacy.invariant",
           "\"Categorical status records lawful completion/dispute only. Numeric score is withheld until separately approved.\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.stateSheet.occup​ied",
           "\"A holder exists and the target office is effective. Office status does not imply control of the body, property, title, another office or institution treasury.\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.stateSheet.vacan​t",
           "\"holderId=null, effective=false, vacant=true. Institution, treasury, liabilities, lineage and unrelated offices remain unchanged.\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.stateSheet.selec​tionPending",
           "\"A vacancy exists but no approved, complete, matching per-state payload has completed. No person is generated or silently inherited.\""
         ],
         [
-          "운용",
+          "운용 — 동률 미결 공석",
           "d09.b11.stateSheet.dispu​ted",
           "\"No candidate, unmet quorum or unresolved tie leaves the office vacant and writes a categorical legitimacy status only.\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b11.stateSheet.actin​g",
           "\"A registered actor may perform only listed actions. Acting authority does not fill the office, transfer treasury ownership or create legitimacy score.\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.stateSheet.appoi​nted",
           "\"A uniquely selected candidate and every required appointment/ratification​ condition complete atomically; then and only then holder/effective/vacant and categorical legitimacy commit together.\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.stateSheet.disso​lved",
           "\"Not produced by vacancy. Requires a separate institution-specific approved dissolution clause; otherwise E_PROPOSAL.\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.outputs[0]",
           "\"target office transition\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.outputs[1]",
           "\"preserved institution and treasury fingerprint\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.outputs[2]",
           "\"procedure result status\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.outputs[3]",
           "\"categorical legitimacy status\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.outputs[4]",
           "\"scoped acting receipt\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.outputs[5]",
           "\"typed E_INPUT/E_UNIT/E_STALE/E​_DUPLICATE/E_PROPOSAL/E_​ELIGIBILITY/E_QUORUM/E_T​IE/E_AUTHORITY errors\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.exceptions[0]",
           "\"Office is not body control\""
         ],
         [
-          "운용",
+          "운용 — 같은 국가·직위·판본",
           "d09.b11.exceptions[1]",
           "\"Office tier is not title rank\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.exceptions[2]",
           "\"Vacancy is not institutional dissolution\""
         ],
         [
-          "운용",
+          "운용 — 정확 대행자·행위 범위",
           "d09.b11.exceptions[3]",
           "\"Acting authority is not office ownership\""
         ],
         [
-          "운용",
+          "운용 — 대상 결과·영수증 반영",
           "d09.b11.exceptions[4]",
           "\"Treasury custody is not personal property\""
         ],
         [
-          "운용",
+          "운용 — 승인된 국가·직위 절차",
           "d09.b11.exceptions[5]",
           "\"Registered resolver is not a universal chair\""
         ],
         [
-          "운용",
+          "운용 — 후보 없음·공석 유지",
           "d09.b11.exceptions[6]",
           "\"No candidate or tie does not generate a ruler\""
         ],
         [
-          "운용",
+          "운용 — 대상 직위만 공석",
           "d09.b11.exceptions[7]",
           "\"A second office survives unless its own event removes it\""
         ],
         [
-          "운용",
+          "운용 — 직위·범주 적법성 후보",
           "d09.b11.exceptions[8]",
           "\"Categorical legitimacy is not a numeric score\""
         ],
         [
-          "운용",
+          "운용 — 절차·점수·수치 정책 미결",
           "d09.b11.validatorScope",
           "\"Typed evidence-carrier validation of the approved structural algorithm. Every concrete person, threshold, count, score, treasury and action in cases.json is an oracle fixture, not an adopted Seoul world value.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].id",
           "\"P01\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].scope",
           "\"The sixteen state/office procedure payloads: selectors, eligible classes/records, voter rosters, quorum values, tie orders, examination thresholds/units, appointing actors, ratifiers and acting actions\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].reason",
           "\"D09-A requires individual records but does not contain their facts or numbers.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].numericApproval​",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[0].operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[1].id",
           "\"P02\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[1].scope",
           "\"Actual opening holders, vacancies, dual-office instances, treasuries, custodians, liabilities and organization lineage payloads\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[1].reason",
           "\"No world records may be invented; D11/D21 require organization-specific evidence and disposition.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[1].status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[1].numericApproval​",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[1].operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[2].id",
           "\"P03\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[2].scope",
           "\"Numeric legitimacy score, coefficients, weights, decay, clamp, thresholds and consumer effects\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[2].reason",
           "\"D22-B explicitly leaves formulas and coefficients for later approval.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[2].status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[2].numericApproval​",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[2].operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[3].id",
           "\"P04\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[3].scope",
           "\"Election/exam/appointme​nt duration, deadline, retry cadence, costs and RNG\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[3].reason",
           "\"No supplied Seoul decision approves these values; original-game timing/probabilities are non-equivalent.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[3].status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[3].numericApproval​",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[3].operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[4].id",
           "\"P05\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[4].scope",
           "\"Institution-specific dissolution, treasury spending/custody transfer, debt priority and physical handover\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[4].reason",
           "\"Vacancy continuity is approved, but D11/D17/D18 own separate clauses and receipts.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[4].status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[4].numericApproval​",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[4].operative",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].id",
           "\"P06\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].scope",
           "\"Any GURPS-like success roll, quick contest, critical result or reaction modifier in government procedure\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].reason",
           "\"Public basis supplies general arithmetic only; D09 has no approved mapping to it.\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].status",
           "\"proposal-held\""
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].numericApproval​",
           "false"
         ],
         [
-          "미결",
+          "미결 — 운용 경로 제외",
           "d09.b11.intentionallyPro​posal[5].operative",
           "false"
         ]

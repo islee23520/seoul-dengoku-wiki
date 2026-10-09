@@ -493,7 +493,7 @@
       "id": "archify.detail.table",
       "kind": "table",
       "header": [
-        "적용 구분",
+        "적용 구분과 대응 노드",
         "원문 위치",
         "계약 값"
       ],
@@ -504,3587 +504,3587 @@
       ],
       "rows": [
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.schemaVersion",
           "1"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.domainId",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.mechanismId",
           "\"seoul.d16.bounded-contr​act\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.status",
           "\"bounded-contract-with-p​roposal-held\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.rulesVersion",
           "\"D16-CLOSURE-EVIDENCE-20​26-10-08\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.sourceRulesVersion",
           "\"D16-CLOSURE-EVIDENCE-20​26-10-08\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.contractSHA256",
           "\"b6e9b86825e7f4d46f25885​3761faffb03549457f23d06a​d0f7bcd358d9bf54d\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.sourceArtifacts[0].pa​th",
           "\"contract.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.sourceArtifacts[0].sh​a256",
           "\"b6e9b86825e7f4d46f25885​3761faffb03549457f23d06a​d0f7bcd358d9bf54d\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.sourceArtifacts[1].pa​th",
           "\"proposals.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.sourceArtifacts[1].sh​a256",
           "\"661003c56502a4285447b4c​93b8d855417f159569cf9835​a501226c9ef29a364\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.decisionRecordSHA256",
           "\"e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
           "\"doc.Save-and-Determinis​m\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[0].path",
           "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[0].sha256",
           "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
           "\"doc.Singleplayer-Design​-SP-1-0-0\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[1].path",
           "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[1].sha256",
           "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
           "\"doc.Rules-FactionsWarfa​re\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[2].path",
           "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[2].sha256",
           "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[3].documen​tId",
           "\"doc.Rules-EconomyLogist​ics\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[3].path",
           "\"canon/locales/ko-KR/rul​es/rules-economy-logisti​cs-clauses.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.canonRules[3].sha256",
           "\"36012dbc48b74498dd9ff44​5faf33d0b6c8785c8d82cf3a​c67dc4cc309d39dab\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.rulesVersionLinka​ge.compatibility",
           "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.dataOwner.rules",
           "\"GDD D16 integration wave\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.dataOwner.worldFa​cts",
           "\"WIKI/LORE authoring owners\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.dataOwner.rightsA​ndTitles",
           "\"D10/D11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.dataOwner.battleR​esults",
           "\"D15\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.dataOwner.pricesA​ndSignatures",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.dataOwner.sameBou​ndaryOrdering",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].field",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].type",
           "\"nonempty string\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].owner",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[0].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].field",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].type",
           "\"stable entity identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].owner",
           "\"D16 consumes D01/D09/D10\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[1].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].field",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].type",
           "\"integer\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].unit",
           "\"war-score point\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].range[0​]",
           "-100"
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].range[1​]",
           "100"
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].owner",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[2].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].field",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].type",
           "\"nonempty stable identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].owner",
           "\"shared event ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[3].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].field",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].type",
           "\"battle&#124;enemyLeader​Captured&#124;primaryHei​rCaptured&#124;secondHei​rCaptured&#124;thirdHeir​Captured&#124;enemyCapit​alOccupied\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].unit",
           "\"enum\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].owner",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[4].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].field",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].type",
           "\"integer when kind=battle\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].unit",
           "\"war-score point\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].range[0​]",
           "-50"
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].range[1​]",
           "50"
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].null",
           "\"reject for battle\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].owner",
           "\"D16 consumes D15 result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[5].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].field",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].type",
           "\"integer\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].unit",
           "\"war-score point\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].range[0​]",
           "-50"
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].range[1​]",
           "50"
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].null",
           "\"reject\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].owner",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[6].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].field",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].type",
           "\"boolean with current revision evidence\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].unit",
           "\"predicate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].null",
           "\"unresolved and blocks\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].owner",
           "\"D10/D09 then D16\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[7].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].field",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].type",
           "\"ongoing&#124;ended and ordered clock coordinates\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].unit",
           "\"D18 supplied world-clock coordinate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].null",
           "\"unresolved and blocks admission\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].owner",
           "\"D15/D18\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[8].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].field",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].type",
           "\"registered clause identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].null",
           "\"hold; never delete organization\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].owner",
           "\"D09 organization authoring\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[0]​",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[1]​",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[2]​",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[3]​",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[4]​",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[5]​",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[6]​",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[7]​",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[8]​",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[9]​",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[10​]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].read[11​]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].write[0​]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].snapsho​t.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].snapsho​t.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].snapsho​t.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].snapsho​t.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[9].commitP​oint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].field",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].type",
           "\"separate identities\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].unit",
           "\"identity\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].null",
           "\"stage remains incomplete\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].owner",
           "\"D16/D17/D13\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[0​]",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[1​]",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[2​]",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[3​]",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[4​]",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[5​]",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[6​]",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[7​]",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[8​]",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[9​]",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[1​0]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].read[1​1]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].write[​0]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].snapsh​ot.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].snapsh​ot.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].snapsh​ot.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].snapsh​ot.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[10].commit​Point",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].field",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].type",
           "\"approved identity and revision\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].unit",
           "\"identity/revision\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].null",
           "\"blocks derived settlement\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].owner",
           "\"D02 read-only; D16 effect ledger\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[0​]",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[1​]",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[2​]",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[3​]",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[4​]",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[5​]",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[6​]",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[7​]",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[8​]",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[9​]",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[1​0]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].read[1​1]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].write[​0]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].snapsh​ot.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].snapsh​ot.conflict",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].snapsh​ot.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].snapsh​ot.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 정확 입력·단위",
           "d16.b9.fields[11].commit​Point",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[0]",
           "\"warId/casusBelliId/rule​sVersion\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[1]",
           "\"attackerId/defenderId/b​eneficiaryId\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[2]",
           "\"scoreAttacker\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[3]",
           "\"eventId/resultId\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[4]",
           "\"scoreEvent.kind\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[5]",
           "\"battleDelta\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[6]",
           "\"battleChannelTotal\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[7]",
           "\"casusBelliValid/declara​tionAuthority\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[8]",
           "\"battleStatus/arrivalAt/​battleEndedAt\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[9]",
           "\"organizationLifecycleCl​auseId\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[10]",
           "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.readSet[11]",
           "\"bodyStateId/bodyRevisio​n/effectId\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d16.b9.writeSet[0]",
           "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.snapshot.policy",
           "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.snapshot.conflict​",
           "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.snapshot.commitPo​int",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.snapshot.load",
           "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 선택 결과 원자 검증",
           "d16.b9.commitPoint",
           "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
         ],
         [
-          "운용",
+          "운용 — 전쟁·당사자 판본",
           "d16.b9.orderedSteps.decl​areWar[0]",
           "\"Read exact identities, revisions and registered casus belli\""
         ],
         [
-          "운용",
+          "운용 — 전쟁·당사자 판본",
           "d16.b9.orderedSteps.decl​areWar[1]",
           "\"Reject missing target or stale rules/version\""
         ],
         [
-          "운용",
+          "운용 — 전쟁·당사자 판본",
           "d16.b9.orderedSteps.decl​areWar[2]",
           "\"Require current casus belli validity\""
         ],
         [
-          "운용",
+          "운용 — 전쟁·당사자 판본",
           "d16.b9.orderedSteps.decl​areWar[3]",
           "\"Require separate declaration authority\""
         ],
         [
-          "운용",
+          "운용 — 전쟁·당사자 판본",
           "d16.b9.orderedSteps.decl​areWar[4]",
           "\"Lock target, beneficiary, goal and four terminal effects\""
         ],
         [
-          "운용",
+          "운용 — 전쟁·당사자 판본",
           "d16.b9.orderedSteps.decl​areWar[5]",
           "\"Create one declared war receipt\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[0]",
           "\"Read exact war snapshot\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[1]",
           "\"Reject terminal, invalidated, stale or duplicate event/result\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[2]",
           "\"Require approved event kind and actual role correspondence\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[3]",
           "\"For battle, require supplied D15 result and preserve cumulative battle cap\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[4]",
           "\"Add signed contribution and clamp W to [-100,100]\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[5]",
           "\"Record score receipt once\""
         ],
         [
-          "운용",
+          "운용 — 점수 사건 확인",
           "d16.b9.orderedSteps.appl​yScoreEvent[6]",
           "\"If abs(W)=100 lock terminal and revalidate casus belli before any effect\""
         ],
         [
-          "운용",
+          "운용 — 입력·요구 잠금",
           "d16.b9.orderedSteps.sett​leEndpoint[0]",
           "\"Freeze input snapshot and stop accumulating score/demands\""
         ],
         [
-          "운용",
+          "운용 — 고정 수혜자 재검사",
           "d16.b9.orderedSteps.sett​leEndpoint[1]",
           "\"Revalidate casus belli and beneficiary\""
         ],
         [
-          "운용",
+          "운용 — 승리 없는 무효화",
           "d16.b9.orderedSteps.sett​leEndpoint[2]",
           "\"If invalid apply invalidation effect without victory\""
         ],
         [
-          "운용",
+          "운용 — 고정 승리·패배 효과",
           "d16.b9.orderedSteps.sett​leEndpoint[3]",
           "\"Otherwise apply only fixed victory/defeat effect\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.orderedSteps.sett​leEndpoint[4]",
           "\"Keep occupation, rights, ratification, restoration, prisoners and handover in their separate ledgers\""
         ],
         [
-          "운용",
+          "운용 — 종결 결과 하나",
           "d16.b9.orderedSteps.sett​leEndpoint[5]",
           "\"Commit one terminal ResultId\""
         ],
         [
-          "운용",
+          "운용 — 실제 증원 참가",
           "d16.b9.orderedSteps.rein​forceBattle[0]",
           "\"Read actual D06 arrival receipt and current D15 battle status\""
         ],
         [
-          "운용",
+          "운용 — 실제 증원 참가",
           "d16.b9.orderedSteps.rein​forceBattle[1]",
           "\"If ongoing admit participation from that point\""
         ],
         [
-          "운용",
+          "운용 — 실제 증원 참가",
           "d16.b9.orderedSteps.rein​forceBattle[2]",
           "\"If ended reject entry to that battle\""
         ],
         [
-          "운용",
+          "운용 — 실제 증원 참가",
           "d16.b9.orderedSteps.rein​forceBattle[3]",
           "\"Do not infer command, siege, custody or score\""
         ],
         [
-          "운용",
+          "운용 — 조약 단계별 영수증",
           "d16.b9.orderedSteps.trea​tyExecution[0]",
           "\"Validate itemized clauses and current authority\""
         ],
         [
-          "운용",
+          "운용 — 조약 단계별 영수증",
           "d16.b9.orderedSteps.trea​tyExecution[1]",
           "\"Record acceptance and signature separately\""
         ],
         [
-          "운용",
+          "운용 — 조약 단계별 영수증",
           "d16.b9.orderedSteps.trea​tyExecution[2]",
           "\"Apply registered legal-effect event\""
         ],
         [
-          "운용",
+          "운용 — 조약 단계별 영수증",
           "d16.b9.orderedSteps.trea​tyExecution[3]",
           "\"Reserve and perform physical handovers separately\""
         ],
         [
-          "운용",
+          "운용 — 조약 단계별 영수증",
           "d16.b9.orderedSteps.trea​tyExecution[4]",
           "\"Mark fulfilled only when indivisible required clauses have matching receipts\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[0].i​d",
           "\"score-contribution\""
         ],
         [
-          "운용",
+          "운용 — 전투 누적 ±50",
           "d16.b9.formulaSheet[0].e​xpression",
           "\"battle: supplied signed delta subject to cumulative battle channel [-50,50]; enemy leader +100; primary/second/third designated heir +50/+25/+10; enemy capital +10\""
         ],
         [
-          "운용",
+          "운용 — 전투 누적 ±50",
           "d16.b9.formulaSheet[0].r​ounding",
           "\"none; integers only\""
         ],
         [
-          "운용",
+          "운용 — 전투 누적 ±50",
           "d16.b9.formulaSheet[0].c​lamp",
           "\"final W to [-100,100]\""
         ],
         [
-          "운용",
+          "운용 — 전투 누적 ±50",
           "d16.b9.formulaSheet[0].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 전투 누적 ±50",
           "d16.b9.formulaSheet[0].a​uthority",
           "\"SP1 and war-score-owner accepted clauses\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[1].i​d",
           "\"score-symmetry\""
         ],
         [
-          "운용",
+          "운용 — 전체 점수·대칭",
           "d16.b9.formulaSheet[1].e​xpression",
           "\"W_defender = -W_attacker\""
         ],
         [
-          "운용",
+          "운용 — 전체 점수·대칭",
           "d16.b9.formulaSheet[1].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 전체 점수·대칭",
           "d16.b9.formulaSheet[1].c​lamp",
           "\"same bounded score\""
         ],
         [
-          "운용",
+          "운용 — 전체 점수·대칭",
           "d16.b9.formulaSheet[1].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 전체 점수·대칭",
           "d16.b9.formulaSheet[1].a​uthority",
           "\"SP1 signed score\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[2].i​d",
           "\"score-deduplication\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[2].e​xpression",
           "\"unique(warId,eventId,re​sultId); duplicate tuple is rejected before mutation\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[2].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[2].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[2].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[2].a​uthority",
           "\"SP1 one-result contract\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[3].i​d",
           "\"endpoint\""
         ],
         [
-          "운용",
+          "운용 — 정확 ±100 잠금",
           "d16.b9.formulaSheet[3].e​xpression",
           "\"abs(W)=100 => terminal lock; revalidate casus belli; settle exactly one fixed terminal effect or invalidate without victory\""
         ],
         [
-          "운용",
+          "운용 — 정확 ±100 잠금",
           "d16.b9.formulaSheet[3].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 정확 ±100 잠금",
           "d16.b9.formulaSheet[3].c​lamp",
           "\"exact endpoint\""
         ],
         [
-          "운용",
+          "운용 — 정확 ±100 잠금",
           "d16.b9.formulaSheet[3].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 정확 ±100 잠금",
           "d16.b9.formulaSheet[3].a​uthority",
           "\"SP1 exact endpoint and validity clauses\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[4].i​d",
           "\"reinforcement-admission​\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[4].e​xpression",
           "\"arrived && battleStatus=ongoing => mayJoin; battleStatus=ended => cannotJoin\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[4].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[4].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[4].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[4].a​uthority",
           "\"OWNER-REINFORCEMENT-202​61004\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[5].i​d",
           "\"single-loss-settlement\"​"
         ],
         [
-          "운용",
+          "운용 — 건강 손실 일회",
           "d16.b9.formulaSheet[5].e​xpression",
           "\"settlementKey=warId+sou​rceResultId+lossIdentity​; apply at most once\""
         ],
         [
-          "운용",
+          "운용 — 건강 손실 일회",
           "d16.b9.formulaSheet[5].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 건강 손실 일회",
           "d16.b9.formulaSheet[5].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 건강 손실 일회",
           "d16.b9.formulaSheet[5].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 건강 손실 일회",
           "d16.b9.formulaSheet[5].a​uthority",
           "\"sealed D24-A and D37-A\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b9.formulaSheet[6].i​d",
           "\"treaty-stage-separation​\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[6].e​xpression",
           "\"legalEffectReceipt != handoverReceipt; fulfillment requires all indivisible required clauses and their stage receipts\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[6].r​ounding",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[6].c​lamp",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[6].r​ng",
           "\"none\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.formulaSheet[6].a​uthority",
           "\"sealed D06-A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.rng",
           "\"none in approved discrete score and receipt invariants\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.time",
           "\"사건은 D18의 승인된 세계 시각과 순서를 읽는다. 미정 기간·기한·동시 사건 순서는 발급하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.rounding",
           "\"공식별 rounding을 따른다. 미정 비율·기간·수량을 만들지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.clamps",
           "\"공식별 clamp만 적용한다. 승인되지 않은 전역 제한은 추가하지 않는다.\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.lifecycle.failure​",
           "\"No mutation; retain exact typed cause.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.lifecycle.cancel",
           "\"A proposal or pending handover may cancel only per its contract; completed legal effects, consumed resources and finished progress do not rewind.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.lifecycle.death",
           "\"Revalidate authority, beneficiary, casus belli, organization representative and pending treaty stages; death alone does not delete a war or organization.\""
         ],
         [
-          "운용",
+          "운용 — 단일 포로 신원",
           "d16.b9.lifecycle.captivi​ty",
           "\"One person identity and one physical custody state are invariant; exact release, recapture, escape, ransom and multiwar subscriber transitions remain held.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.lifecycle.rulesMi​smatch",
           "\"Explicit error; do not mix rule versions or start a new campaign silently.\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b9.failure",
           "\"No mutation; retain exact typed cause.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[0].i​d",
           "\"occupation-score\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[0].d​ecisionBoundary",
           "\"D06-A and D22-B\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[0].h​eld",
           "\"denominator, weighting, cadence, tick, partial fraction, target recovery/reset and rounding\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[0].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[0].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[0].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[1].i​d",
           "\"siege-state-and-formula​s\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[1].d​ecisionBoundary",
           "\"D06-A, D22-B, D24-A, D32-A, D37-A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[1].h​eld",
           "\"stages, supply, progress, breach, damage, assault loss, surrender, repair, interruption and health conversion\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[1].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[1].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[1].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[2].i​d",
           "\"captivity-lifecycle\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[2].d​ecisionBoundary",
           "\"D06-A, D12-A and D18-A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[2].h​eld",
           "\"release, recapture, escape, ransom, transport, multiwar references and same-boundary ordering\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[2].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[2].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[2].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].i​d",
           "\"casus-belli-catalog\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].d​ecisionBoundary",
           "\"D17-B\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].h​eld",
           "\"actual entries, issuers, targets, beneficiaries, invalidators, costs, truces, reparations and country/title payloads\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[3].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[4].i​d",
           "\"peace-pricing-acceptanc​e\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[4].d​ecisionBoundary",
           "\"D12-A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[4].h​eld",
           "\"prices, modifiers, units, signs, clamps, rounding, acceptance, repricing, expiry, reservation, breach and delivery\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[4].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[4].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[4].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[5].i​d",
           "\"same-boundary-order\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[5].d​ecisionBoundary",
           "\"D18-A does not choose total order\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[5].h​eld",
           "\"priority among death, casus belli invalidation, proposal acceptance, exact endpoint and terminal settlement\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[5].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[5].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[5].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[6].i​d",
           "\"organization-records\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[6].d​ecisionBoundary",
           "\"D11-A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[6].h​eld",
           "\"organization-specific representative, administrator, vacancy, surviving obligation and dissolution clauses\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[6].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[6].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[6].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[7].i​d",
           "\"titles-ratification-rec​ords\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[7].d​ecisionBoundary",
           "\"D17-B\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[7].h​eld",
           "\"actual title IDs, territorial extents, holders, superior contracts, ratifiers and stabilization periods\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[7].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[7].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[7].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[8].i​d",
           "\"reinforcement-details\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[8].d​ecisionBoundary",
           "\"OWNER-REINFORCEMENT-202​61004 limits\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[8].h​eld",
           "\"entry geometry, initial stance, command reassignment, arrival cadence and simultaneous battle-end ordering\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[8].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[8].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[8].o​perative",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[9].i​d",
           "\"health-and-combat-conve​rsion\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[9].d​ecisionBoundary",
           "\"D24-A, D32-A, D37-A\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[9].h​eld",
           "\"personal formulas, coefficients, time conversion, casualty allocation beyond one identity and any direct conversion to war score\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[9].s​tatus",
           "\"proposal-held\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[9].n​umericApproval",
           "false"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b9.proposalHeld[9].o​perative",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.scope.numericBala​nceReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.scope.runtimeImpl​emented",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.scope.worldFactsI​ssued",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b9.scope.executionSc​hemaReady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.schemaVersion",
           "1"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.task",
           "44"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.mechanismId",
           "\"seoul.d16.war-contract.​v1\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.domainId",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.title",
           "\"외교·전쟁·공성·포로 작동 계약과 공식 시트\""
         ],
         [
-          "운용",
+          "운용 — 동일 사건 내용 비교",
           "d16.b11.rulesVersion",
           "\"D16-CLOSURE-EVIDENCE-20​26-10-08\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.status",
           "\"approved-bounded-contra​ct-with-held-required-in​puts\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.runtimeClaim",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.canonAdopted",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[0].row",
           "\"D06\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[0].decisionI​d",
           "\"GP-13\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[0].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[0].effect",
           "\"Treaty indivisible clauses, legal-effect events and physical handover events are distinct.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[1].row",
           "\"D11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[1].decisionI​d",
           "\"T68-D16-ORGANIZATION-LI​FECYCLE\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[1].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 조직 존속",
           "d16.b11.authority.sealed​RowsApplied[1].effect",
           "\"Organization persistence requires its registered representative, administrator and dissolution clauses; territorial loss or leader death alone never deletes it.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[2].row",
           "\"D12\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[2].decisionI​d",
           "\"T68-D17-PRICE-ACCEPTANC​E\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[2].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[2].effect",
           "\"Asset value, action cost and party acceptance remain separate; D16 never converts war score into price or consent.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[3].row",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[3].decisionI​d",
           "\"GP-07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[3].chosenOpt​ion",
           "\"B\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[3].effect",
           "\"Missing title/extent/ratifier records are explicit proposals for later item approval, never active records.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[4].row",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[4].decisionI​d",
           "\"GP-11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[4].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[4].effect",
           "\"Command evaluation stores knowledge, authority and feasibility at decision time separately from later outcome.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[5].row",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[5].decisionI​d",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[5].chosenOpt​ion",
           "\"B\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[5].effect",
           "\"Normalize common units first; no new coefficient or formula is approved by this row.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[6].row",
           "\"D24\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[6].decisionI​d",
           "\"T68-COMBAT-THREE-DIMENS​IONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[6].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[6].effect",
           "\"Personal results aggregate through situation to unit channels with one casualty/loss ledger identity.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[7].row",
           "\"D32\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[7].decisionI​d",
           "\"GP-11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[7].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[7].effect",
           "\"Public Lite combat structure stays separate from Seoul real-time execution; combat numbers do not directly become war score.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[8].row",
           "\"D37\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[8].decisionI​d",
           "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[8].chosenOpt​ion",
           "\"A\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.sealed​RowsApplied[8].effect",
           "\"Approved body state is read-only and each derived effect is settled once; no health coefficient is invented.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.extern​alOwnerDecision.decision​Id",
           "\"OWNER-REINFORCEMENT-202​61004\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.extern​alOwnerDecision.rule",
           "\"Any unit actually arriving while a battle is ongoing may join that battle.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.extern​alOwnerDecision.limits[0​]",
           "\"No origin, rank, initial-roster or invented time-window restriction\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.extern​alOwnerDecision.limits[1​]",
           "\"Arrival does not transfer command, enter a siege, process prisoners or add war score\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.extern​alOwnerDecision.limits[2​]",
           "\"Arrival after battle end cannot enter that ended battle\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[0]",
           "\"valid registered casus belli plus separate declaration authority\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[1]",
           "\"fixed target, goal, beneficiary and terminal effects\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[2]",
           "\"signed symmetric score bounded -100..100\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[3]",
           "\"approved score events only with event/result deduplication\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[4]",
           "\"exact endpoint forces only the still-valid casus belli effect\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[5]",
           "\"occupation, legal right, ratification, settlement operation and restoration are separate ledgers\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[6]",
           "\"below absolute 100 itemized peace proposals are allowed but never automatically accepted\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.priorA​cceptedClauses[7]",
           "\"stable identity, explicit rules version and no silent migration\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.noNewO​wnerDecision",
           "true"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.authority.rowIds​AreNotDomainIds",
           "true"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.separation.LORE",
           "\"Read-only authored country, title, office, person and place facts; this evidence pack creates none.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.separation.GDD",
           "\"Bounded mechanism evidence for later canonical integration; mechanism-d16.json is intentionally deferred.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.separation.runti​me",
           "\"The validator is a documentary oracle, not product or gameplay implementation.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.quantifiedFieldU​nits.scoreAttacker",
           "\"war-score point\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.quantifiedFieldU​nits.battleDelta",
           "\"war-score point\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.quantifiedFieldU​nits.battleChannelTotal",
           "\"war-score point\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.quantifiedFieldU​nits.arrivalAt",
           "\"D18 supplied world-clock coordinate\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.quantifiedFieldU​nits.battleEndedAt",
           "\"D18 supplied world-clock coordinate\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.quantifiedFieldU​nits.bodyRevision",
           "\"revision\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[0]",
           "\"proposed\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[1]",
           "\"validated\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[2]",
           "\"declared\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[3]",
           "\"ongoing\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[4]",
           "\"terminal-locked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[5]",
           "\"settled\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.wa​r[6]",
           "\"invalidated\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[0]",
           "\"draft\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[1]",
           "\"accepted\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[2]",
           "\"signed\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[3]",
           "\"legally-effective\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[4]",
           "\"handover-pending\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[5]",
           "\"fulfilled\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.tr​eaty[6]",
           "\"breached\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.or​ganization[0]",
           "\"active\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.or​ganization[1]",
           "\"territory-lost\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.or​ganization[2]",
           "\"representative-vacant\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.or​ganization[3]",
           "\"administered\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.or​ganization[4]",
           "\"dissolution-pending\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.or​ganization[5]",
           "\"dissolved\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[0]",
           "\"free\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[1]",
           "\"capture-reported\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[2]",
           "\"transporting\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[3]",
           "\"detained\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[4]",
           "\"release-pending\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[5]",
           "\"released\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.stateMachines.ca​ptivity[6]",
           "\"dead\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[0]",
           "\"occupation denominator, weights, cadence, fractional policy, target-control tick and recovery/reset formula\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[1]",
           "\"siege stages, duration, supply, breach, assault loss, surrender, repair and interruption numerics\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[2]",
           "\"concrete casus belli catalog, costs, truce lengths, reparations and country/title records\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[3]",
           "\"captivity release, recapture, escape, ransom and multiwar subscriber transitions\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[4]",
           "\"prisoner/peace item prices, acceptance, repricing, reservation, signature and breach rules\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[5]",
           "\"same-boundary total order for death, invalidation, acceptance and exact endpoint\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[6]",
           "\"organization-specific representative, administrator and dissolution records\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[7]",
           "\"reinforcement spawn/entry geometry, initial stance and command reassignment\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.requiredHeldInpu​ts[8]",
           "\"health/fatigue coefficients and combat-to-score conversion beyond approved discrete score events\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.sourceClaims.CK3​",
           "\"Comparison evidence only; version and formula conflicts remain bounded and no source literal is adopted.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.sourceClaims.Nor​land",
           "\"Comparison evidence only; does not provide Seoul continuous war score, casus belli registration or atomic custody policy.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.sourceClaims.GUR​PS_LIKE",
           "\"Lite combat structure may inform D15 only; it supplies no D16 war-score, siege, treaty or prisoner formula.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.status",
           "\"explicit-deferred-to-se​parate-wave\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.items[0]",
           "\"GDD/canon/locales/ko-KR​/system-design/mechanism​-d16.json\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.items[1]",
           "\"GDD collection registration\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.items[2]",
           "\"rendered lock\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.items[3]",
           "\"product TOOL mechanism validator integration\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.items[4]",
           "\"canonical commits\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.integrationDefer​ral.reason",
           "\"User explicitly scoped this task to ignored evidence pack only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.domainClosure.re​ady",
           "false"
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.domainClosure.ve​rdict",
           "\"FAIL_REQUIRED_INPUTS_HE​LD\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.domainClosure.re​ason",
           "\"Sealed choices approve authoring and separation directions, not the exact required occupation, siege, custody, pricing, truce, country/title and event-order records. This pack closes the approved bounded invariants without inventing those values.\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.sourceEvidenceSt​atus",
           "\"approved-bounded-contra​ct-with-held-required-in​puts\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[0].row",
           "\"D01\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[0].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[0].reason",
           "\"Opening character custody/location scope does not define D16 war, siege or prisoner transitions.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[1].row",
           "\"D02\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[1].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[1].reason",
           "\"Route freshness is consumed through D06 arrival receipts; no D16 formula follows.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[2].row",
           "\"D03\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[2].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[2].reason",
           "\"Ration/wage records do not define D16 score or siege values.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[3].row",
           "\"D04\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[3].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[3].reason",
           "\"Recipe records are D05-owned; siege repair numerics remain separately held.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[4].row",
           "\"D05\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[4].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[4].reason",
           "\"Knowledge prerequisites do not approve D16 values.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[5].row",
           "\"D06\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[5].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[5].boundary",
           "\"Separate indivisible treaty clauses, legal-effect events and physical handover events; exact clause records and values remain held.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[6].row",
           "\"D07\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[6].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[6].reason",
           "\"Personal payload issuance is D01-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[7].row",
           "\"D08\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[7].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[7].reason",
           "\"Evaluation decay touches D15/D07; D16 only stores evidence references, no decay function.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[8].row",
           "\"D09\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[8].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[8].reason",
           "\"Country institutions supply authority facts later; no actual country record is approved here.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[9].row",
           "\"D10\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[9].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[9].reason",
           "\"Body-switch contract is D12/D13-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[10].row",
           "\"D11\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[10].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[10].boundary",
           "\"Use organization-specific representative, administrator and dissolution clauses; their actual records are still proposals.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[11].row",
           "\"D12\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[11].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[11].boundary",
           "\"Keep asset value, action cost and acceptance separate; no price, modifier or acceptance coefficient adopted.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[12].row",
           "\"D13\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[12].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[12].reason",
           "\"Cast field corrections are unrelated to D16 mechanism values.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[13].row",
           "\"D14\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[13].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[13].reason",
           "\"Identity mapping does not approve war participants or payloads.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[14].row",
           "\"D15\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[14].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[14].reason",
           "\"Unit type mapping is D15-owned and does not instantiate a D16 army or score event.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[15].row",
           "\"D16\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[15].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[15].reason",
           "\"Population token lineage is D04/D15-owned; D16 consumes stable identities only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[16].row",
           "\"D17\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[16].classification",
           "\"apply-as-proposal-bound​ary\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[16].boundary",
           "\"Author missing title, extent and ratifier records only as itemized proposals; no holder or world fact changes before later approval.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[17].row",
           "\"D18\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[17].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[17].boundary",
           "\"Store knowledge/authority/feas​ibility at decision time separately from outcome; no evaluation score or penalty invented.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[18].row",
           "\"D19\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[18].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[18].reason",
           "\"Grant/recall contract is D10/D11/D13-owned; treaty handover consumes its receipts only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[19].row",
           "\"D20\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[19].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[19].reason",
           "\"Cast values do not define D16.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[20].row",
           "\"D21\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[20].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[20].reason",
           "\"Organization values are D07/D09-owned; D16 does not infer lifecycle from axes.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[21].row",
           "\"D22\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[21].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[21].boundary",
           "\"Normalize unit-tagged inputs first; every coefficient and cross-index conversion remains held.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[22].row",
           "\"D23\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[22].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[22].reason",
           "\"Training conversion is D14-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[23].row",
           "\"D24\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[23].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[23].boundary",
           "\"Personal combat results aggregate through situation to unit with one loss identity; no combat-to-score conversion except registered D16 score events.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[24].row",
           "\"D25\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[24].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[24].reason",
           "\"Spear specimen disposition is D01-only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[25].row",
           "\"D26\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[25].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[25].reason",
           "\"Skill/TL/language issuance is D01-only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[26].row",
           "\"D27\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[26].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[26].reason",
           "\"Capacity reduction cannot delete people or restrict approved ongoing-battle arrival, but exact capacity is D15-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[27].row",
           "\"D28\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[27].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[27].reason",
           "\"Movement numerics are D06-owned; D16 consumes verified actual arrival only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[28].row",
           "\"D29\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[28].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[28].reason",
           "\"Health/labor transitions are D02/D04-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[29].row",
           "\"D30\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[29].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[29].reason",
           "\"Command eligibility/capacity is D15-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[30].row",
           "\"D31\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[30].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[30].reason",
           "\"Skill source classification is D01/D14-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[31].row",
           "\"D32\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[31].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[31].boundary",
           "\"Keep Lite hit/defense/DR/injury structure separate from Seoul real-time execution; no D16 score coefficient or siege formula follows.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[32].row",
           "\"D33\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[32].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[32].reason",
           "\"Individual CP issuance is D01-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[33].row",
           "\"D34\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[33].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[33].reason",
           "\"GURPS corpus classification is D01/D14/D15-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[34].row",
           "\"D35\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[34].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[34].reason",
           "\"Mercenary price and unit eligibility are D04/D15-owned; D16 receives actual party and authority receipts only.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[35].row",
           "\"D36\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[35].classification",
           "\"defer-checked\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[35].reason",
           "\"Generated attributes/skills are D01/D04/D15-owned.\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[36].row",
           "\"D37\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[36].classification",
           "\"apply\""
         ],
         [
-          "운용",
+          "운용 — 현재 판본·행위 선택",
           "d16.b11.decisionDisposit​ion[36].boundary",
           "\"Read approved body state without mutation and settle each supplied derived effect once; exact health/fatigue conversion remains held.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​task",
           "44"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​allHeldValuesRemainPropo​sals",
           "true"
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​externalDecisionTrace[0]​.decisionId",
           "\"OWNER-REINFORCEMENT-202​61004\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​externalDecisionTrace[0]​.classification",
           "\"apply\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​externalDecisionTrace[0]​.boundary",
           "\"Any actual arrival during an ongoing battle may join; ended battle excludes; no command, siege, custody, score, cadence, spawn or capacity inference.\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​canonicalIntegration.sta​tus",
           "\"deferred\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​canonicalIntegration.wav​e",
           "\"separate later canonical GDD landing and commit wave\""
         ],
         [
-          "보류",
+          "보류 — 운용 경로 제외",
           "d16.b11.proposalContext.​canonicalIntegration.not​Omission",
           "true"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.landingDispositi​on.documentRegistration",
           "\"bounded canonical contract only\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.landingDispositi​on.runtimeAndNumericAdop​tion",
           "false"
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.landingDispositi​on.commonExecutableVerif​ier",
           "\"not run; executionSchemaReady:fal​se\""
         ],
         [
-          "역사 참조",
+          "역사 참조 — 운용 경로 제외",
           "d16.b11.landingDispositi​on.sourceDeferrals",
           "\"historical document-registration and commit deferrals are satisfied by this landing; cross-domain/runtime/exe​cutable work remains unclaimed\""
         ]
