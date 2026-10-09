@@ -37,10 +37,10 @@ const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
-  approvedAt: "2026-10-05",
-  ownerRef: "call_5INYDiaosJZZcxYeDJuq1FdW: 지역 이름 개정·기존 소속 보존 새 입력 해시 승인",
-  inputSha256: "c9f8ccb8768c1423285cfbc0672256416456aec17e5dc782a20eb8a02e4f3446",
-  candidatesSha256: "eee822a2685e7d223662457f62e63e144a6121461cc6a77d9797c1f3f9e32de2",
+  approvedAt: "2026-10-09",
+  ownerRef: "2026-10-09 소유자 요청: K719 송라지를 송도현으로 바꾸고 기존 송(宋)·은진(恩津)을 보존",
+  inputSha256: "0e8d8a82ca25a71ad1a623a3f093175f426f2d9ea970170d03d888441043a911",
+  candidatesSha256: "bd42e8df89bd8666b1c813fd9372ca5ef7b970dc901d597966f6755c32593cb3",
 };
 export const FROZEN = { existingK: 422, issued: 600, total: 1022 };
 
