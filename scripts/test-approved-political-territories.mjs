@@ -10,7 +10,7 @@ test('approved Seoul sovereignty covers 427 unchanged dong including all five en
   assert.equal(new Set(map.regions.map(row => row.id)).size, 427)
   assert.deepEqual(map.regions.map(row => [row.id, row.polities[0]]).sort(), expectedHolders)
   assert.ok(map.regions.every(row => row.polities.length === 1 && row.currentHegemons.length === 1))
-  assert.deepEqual(Object.fromEntries(['규격맹', '대한민국정부', '종교 연합', '중립'].map(name => [name, map.regions.filter(region => region.currentHegemons.some(hegemon => hegemon.name === name)).length])), { 규격맹: 142, 대한민국정부: 164, '종교 연합': 118, 중립: 3 })
+  assert.deepEqual(Object.fromEntries(['규격맹', '대한민국정부', '종교 연합', '중립'].map(name => [name, map.regions.filter(region => region.currentHegemons.some(hegemon => hegemon.name === name)).length])), { 규격맹: 142, 대한민국정부: 198, '종교 연합': 84, 중립: 3 })
   for (const code of ['1165052000','1165065100','1165051000','1165053000','1165053100']) assert.deepEqual(map.regions.find(region => region.id === 'region:' + code).currentHegemons, [{kind:'union',name:'종교 연합'}])
   assert.deepEqual(map.regions.filter(region => region.polities.includes('S08')).map(region => region.id).sort(), ['1117051000','1117052000','1117066000'].map(code => 'region:' + code))
   assert.equal(map.landmarks.find(site => site.id === 'n-seoul-tower').holderId, 'S08')
@@ -50,14 +50,16 @@ test('outside authority matches the complete owner-approved city partition rathe
   const units = json('public/outside-admin-units.json').units
   const assignments = json('public/outside-control-2126.json').assignments
   const cities = Object.values(approved.gyeonggiCities).flat()
+  const islandUnits = new Set(json(approved.source.correction.islandSource).units.map(unit => unit.unitId))
   assert.equal(new Set(cities).size, 31)
   const expected = units.map(unit => {
+    if (islandUnits.has(unit.id)) return [unit.id, null]
     if (unit.province !== '경기도') return [unit.id, approved.otherProvinces[unit.province]]
     const matches = Object.entries(approved.gyeonggiCities).filter(([, names]) => names.some(name => unit.district.startsWith(name)))
     assert.equal(matches.length, 1, unit.name)
     return [unit.id, matches[0][0]]
   }).sort()
-  assert.deepEqual(assignments.map(row => [row.unitId, row.authority.name]).sort(), expected)
+  assert.deepEqual(assignments.map(row => [row.unitId, row.authority?.name ?? null]).sort(), expected)
   const representedCities = cities.filter(city => units.some(unit => unit.province === '경기도' && unit.district.startsWith(city)))
   assert.deepEqual(representedCities.sort(), cities.sort())
 })
@@ -70,13 +72,13 @@ test('the exact baseline S08 region and station sets transfer completely to S02'
   assert.deepEqual(map.stations.filter(row => approved.oldS08.stationIds.includes(row.id)).map(row => [row.id, row.control.polityIds]).sort(), approved.oldS08.stationIds.map(id => [id, ['S02']]).sort())
 })
 
-test('only the six conflicting external links change sovereign authority', () => {
+test('external organizations retain identity while approved city corrections change their authority', () => {
   const map = json('public/opening-territories.json')
   const approvedMembership = new Map(Object.entries(approved.approvedStateMembership).flatMap(([name, ids]) => ids.map(id => [id, name])))
   assert.equal(approved.priorVassals.length, 13)
   assert.ok(approved.priorVassals.every(row => approvedMembership.has(row.suzerain)))
   assert.deepEqual(map.vassals.map(row => row.name).sort(), approved.priorVassals.map(row => row.name).sort())
-  assert.equal(new Set(approved.conflictingExternalLinks).size, 6)
+  assert.equal(new Set(approved.conflictingExternalLinks).size, approved.conflictingExternalLinks.length)
   assert.deepEqual(map.vassals.map(row => [row.name, row.authorityName, row.suzerain]).sort(), approved.externalDestinations.map(row => [row.name, row.authority, row.suzerain]).sort())
   const changed = approved.priorVassals.filter(previous => {
     const current = map.vassals.find(row => row.name === previous.name)

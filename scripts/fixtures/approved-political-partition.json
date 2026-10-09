@@ -3,7 +3,14 @@
     "kind": "owner-approved-city-lists",
     "researchTask": "st_01a11fe1",
     "approvedBundle": "tasks57-67",
-    "baseline": "6db6c29194545f837de0f78604e473599c1cad02"
+    "baseline": "6db6c29194545f837de0f78604e473599c1cad02",
+    "correction": {
+      "date": "2026-10-09",
+      "authority": "owner",
+      "reference": "PR554 owner decisions in thread 01a120cc: S05/S14 Government; no official state religion; Incheon/Gimpo/Gangwon Government; verified mainland-connected islands held, unbridged unknown/unassigned/no title",
+      "supersedes": "tasks57-67 current membership and Incheon/Gimpo/Gangwon partition only",
+      "islandSource": "lore/regions/outside-island-occupation.json"
+    }
   },
   "gyeonggiCities": {
     "대한민국정부": [
@@ -16,10 +23,10 @@
       "포천",
       "가평",
       "남양주",
-      "구리"
+      "구리",
+      "김포"
     ],
     "규격맹": [
-      "김포",
       "부천",
       "광명",
       "시흥",
@@ -45,10 +52,10 @@
     ]
   },
   "otherProvinces": {
-    "인천광역시": "규격맹",
+    "인천광역시": "대한민국정부",
     "충청남도": "규격맹",
     "세종특별자치시": "규격맹",
-    "강원특별자치도": "종교 연합",
+    "강원특별자치도": "대한민국정부",
     "충청북도": "종교 연합",
     "대전광역시": "대전"
   },
@@ -236,10 +243,9 @@
   "conflictingExternalLinks": [
     "제일수문",
     "제이수문",
-    "제1종착",
-    "제2경비지구",
-    "제3경비지구",
-    "태욱중공업 성남사업장"
+    "제1경비지구",
+    "태욱중공업 성남사업장",
+    "영종지점"
   ],
   "approvedStateMembership": {
     "규격맹": [
@@ -249,17 +255,17 @@
       "S09"
     ],
     "대한민국정부": [
+      "S05",
       "S06",
       "S07",
       "S10",
       "S11",
       "S12",
-      "S13"
+      "S13",
+      "S14"
     ],
     "종교 연합": [
       "S04",
-      "S05",
-      "S14",
       "S15",
       "S16"
     ]
@@ -2000,8 +2006,8 @@
     },
     {
       "name": "제이수문",
-      "authority": "종교 연합",
-      "suzerain": "union:religious"
+      "authority": "대한민국정부",
+      "suzerain": "S06"
     },
     {
       "name": "제1분공방",
@@ -2015,8 +2021,8 @@
     },
     {
       "name": "제1종착",
-      "authority": "규격맹",
-      "suzerain": "S02"
+      "authority": "대한민국정부",
+      "suzerain": "S06"
     },
     {
       "name": "제2종착",
@@ -2050,8 +2056,8 @@
     },
     {
       "name": "영종지점",
-      "authority": "규격맹",
-      "suzerain": "S02"
+      "authority": "대한민국정부",
+      "suzerain": "S06"
     }
   ]
 }

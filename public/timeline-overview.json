@@ -2089,7 +2089,7 @@
       "relation": "독립",
       "ruler": "강민서",
       "cause": "장경종 블록, 태욱그룹에 규격을 넘김",
-      "vassals": "제1분공방(천안·아산, 이씨)·제2분공방(시흥)·제1종착(인천)·태욱중공업 수원사업장·영종지점(영종)",
+      "vassals": "제1분공방(천안·아산, 이씨)·제2분공방(시흥)·태욱중공업 수원사업장",
       "religion": "장경종",
       "foreignRelations": "장경종 블록, 태욱그룹에 규격을 넘김",
       "labelX": 524.21,
@@ -2328,8 +2328,9 @@
       "name": "동방사",
       "slug": "s05",
       "currentHegemon": {
-        "kind": "union",
-        "name": "종교 연합"
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
       },
       "currentBase": {
         "kind": "station",
@@ -2341,11 +2342,11 @@
       "currentExclusiveDistrictCount": 19,
       "government": "군벌 가문 배씨 세습 사령관",
       "power": "강국",
-      "relation": "독립",
+      "relation": "복속",
       "ruler": "배우진",
       "cause": "성전총회 블록, 무속 박해",
       "vassals": "없음",
-      "religion": "성전총회",
+      "religion": "없음",
       "foreignRelations": "성전총회 블록, 무속 박해",
       "labelX": 1141,
       "labelY": 491.02,
@@ -2458,7 +2459,7 @@
       "relation": null,
       "ruler": "윤서린",
       "cause": "질서 계열 일곱이 승계와 조약을 기록청에 등록",
-      "vassals": "경기도(고양)·제2종착(파주)·제2경비지구(남양주)·제3경비지구(의정부·연천)",
+      "vassals": "경기도(고양)·제2종착(파주)·제2경비지구(남양주)·제3경비지구(의정부·연천)·제이수문(춘천)·제1종착(인천)·영종지점(영종)",
       "religion": "없음",
       "foreignRelations": "질서 계열 일곱이 승계와 조약을 기록청에 등록",
       "labelX": 587.36,
@@ -3107,8 +3108,9 @@
       "name": "아관사",
       "slug": "s14",
       "currentHegemon": {
-        "kind": "union",
-        "name": "종교 연합"
+        "kind": "state",
+        "name": "대한민국정부",
+        "stateId": "S06"
       },
       "currentBase": {
         "kind": "station",
@@ -3120,11 +3122,11 @@
       "currentExclusiveDistrictCount": 15,
       "government": "관문사령관과 구의수비대장 이원 체제",
       "power": "약국",
-      "relation": "독립",
+      "relation": "복속",
       "ruler": "고서준",
       "cause": "성전총회 블록, 구의 수문",
       "vassals": "없음",
-      "religion": "성전총회",
+      "religion": "없음",
       "foreignRelations": "성전총회 블록, 구의 수문",
       "labelX": 974.58,
       "labelY": 551.18,
