@@ -225,6 +225,39 @@ async function fileSnapshot(directory, prefix = '') {
   return files
 }
 
+test('first portrait for a state-ledger character uses registry identity without a prior approved image', async () => {
+  const f = await registrationFixture()
+  try {
+    const detailPath = join(f.wiki, 'public/person-details/' + f.row.personId + '.json')
+    const detail = JSON.parse(await readFile(detailPath))
+    detail.state = 'S08'
+    delete detail.fields['캐릭터 ID']
+    await writeFile(detailPath, JSON.stringify(detail))
+    delete f.approval.priorApprovedImageSHA
+    await writeFile(join(f.source, 'approval.json'), JSON.stringify(f.approval))
+    assert.equal(await registerApprovedPortraits(f.registrationPath, f.wiki), 1)
+    const token = JSON.parse(await readFile(join(f.wiki, 'public/portrait-tokens/' + f.row.personId + '.json')))
+    const review = JSON.parse(await readFile(join(f.wiki, 'public/portrait-reviews/' + f.row.personId + '.json')))
+    assert.equal(token.characterId, f.row.characterId)
+    assert.equal(token.stateId, 'S08')
+    assert.equal(review.imageHashHistory, undefined)
+  } finally { await rm(f.root, { recursive: true, force: true }) }
+})
+
+test('state-ledger registration still rejects a conflicting explicit character ID before writing', async () => {
+  const f = await registrationFixture()
+  try {
+    const detailPath = join(f.wiki, 'public/person-details/' + f.row.personId + '.json')
+    const detail = JSON.parse(await readFile(detailPath))
+    detail.state = 'S08'
+    detail.fields['캐릭터 ID'] = 'K1020'
+    await writeFile(detailPath, JSON.stringify(detail))
+    const before = await fileSnapshot(f.wiki)
+    await assert.rejects(registerApprovedPortraits(f.registrationPath, f.wiki))
+    assert.deepEqual(await fileSnapshot(f.wiki), before)
+  } finally { await rm(f.root, { recursive: true, force: true }) }
+})
+
 test('explicit new registration projects actual input values and archives complete private bytes', async () => {
   const f = await registrationFixture()
   try {
