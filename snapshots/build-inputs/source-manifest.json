@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "producer": {
+    "tools": {
+      "repository": "local/seoul-dengoku-tools",
+      "commit": "8fb514f6a87e96ad6109eb1ad3adb4e0ada55dfd",
+      "path": "tools/regions/data/atlas-data.js"
+    },
+    "game": {
+      "repository": "islee23520/seoul-dengoku",
+      "commit": "1a473c831c17fa227dc936bf2f98c752d4241d7b",
+      "path": "GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json"
+    }
+  },
+  "generatorVersion": "repo-split-483",
+  "files": [
+    {
+      "path": "SeoulWorldGraph.json",
+      "sha256": "46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d"
+    },
+    {
+      "path": "atlas-data.js",
+      "sha256": "89d559fc31ce0644e331c6a54b8cfc997bf482b05f7c940694ea68f4f304fdf1"
+    }
+  ]
+}

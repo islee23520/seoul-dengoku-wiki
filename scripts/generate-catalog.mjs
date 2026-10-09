@@ -153,9 +153,10 @@ const firstExisting = async (candidates) => {
   throw new Error(`E_SOURCE_MISSING:${candidates.join('|')}`)
 }
 
-const outsideRoots = [process.env.SEOUL_KENSHI_ROOT, resolve(repoRoot, '..'), resolve(repoRoot, '../..')].filter(Boolean)
+const snapshotRoot = process.env.WIKI_SNAPSHOT_ROOT ?? resolve(repoRoot, 'snapshots/build-inputs')
+const outsideRoots = process.env.SEOUL_KENSHI_ROOT ? [process.env.SEOUL_KENSHI_ROOT] : []
 const resolveOutside = (relativePath) => firstExisting([
-  resolve(repoRoot, relativePath),
+  resolve(snapshotRoot, relativePath.split('/').pop()),
   ...outsideRoots.map((root) => resolve(root, relativePath)),
 ])
 
