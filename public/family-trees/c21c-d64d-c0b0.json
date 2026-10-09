@@ -1,0 +1,760 @@
+{
+  "clanId": "c21c-d64d-c0b0",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K215",
+      "personId": "K215",
+      "kind": "person",
+      "name": "순재민",
+      "birthDate": "2069-06-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K215"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 호송칸 봉인 상자 증인 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-순재민-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0216",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K268",
+      "personId": "K268",
+      "kind": "person",
+      "name": "순지민",
+      "birthDate": "2074-05-13",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K268"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-순지민-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0269",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K295",
+      "personId": "K295",
+      "kind": "person",
+      "name": "순하준",
+      "birthDate": "2064-03-06",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K295"
+        },
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-순하준-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0296",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K215-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "순승호",
+      "lineage": {
+        "surname": "순",
+        "bongwan": "홍산",
+        "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
+      },
+      "birthDate": "2039-06-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "순승호는 신내 환승 당직에서 호송칸 봉인·중량 재검색 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-순재민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K215-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "순승민",
+      "lineage": {
+        "surname": "순",
+        "bongwan": "홍산",
+        "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
+      },
+      "birthDate": "2009-06-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "순승민은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-순재민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K215-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김현찬",
+      "birthDate": "2039-06-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "김현찬은 신내 환승 당직에서 호송칸 봉인·중량 재검색 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-순재민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K215-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현재",
+      "birthDate": "2009-06-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박현재는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-순재민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K268-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "순승현",
+      "lineage": {
+        "surname": "순",
+        "bongwan": "홍산",
+        "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
+      },
+      "birthDate": "2044-05-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2082,
+          "summary": "순승현은 대합실 당직에서 강제등록 이탈 기록·교대 분리 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-순지민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K268-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "순승영",
+      "lineage": {
+        "surname": "순",
+        "bongwan": "홍산",
+        "clan": "c21c-d64d-c0b0-agreed-bbfc-second"
+      },
+      "birthDate": "2014-05-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "순승영은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-순지민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K268-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현란",
+      "birthDate": "2044-05-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2082,
+          "summary": "윤현란은 대합실 당직에서 강제등록 이탈 기록·교대 분리 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-순지민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K268-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한현성",
+      "birthDate": "2014-05-13",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한현성은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-순지민-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K295-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "순승윤",
+      "lineage": {
+        "surname": "순",
+        "bongwan": "홍산",
+        "clan": "c21c-d64d-c0b0"
+      },
+      "birthDate": "2034-03-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "순승윤은 영등포 정수 당직에서 차륜 입고 중량·출고 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-순하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K295-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "순승우",
+      "lineage": {
+        "surname": "순",
+        "bongwan": "홍산",
+        "clan": "c21c-d64d-c0b0"
+      },
+      "birthDate": "2004-03-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "순승우는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-순하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K295-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임준석",
+      "birthDate": "2034-03-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "임준석은 영등포 정수 당직에서 차륜 입고 중량·출고 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-순하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K295-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현솔",
+      "birthDate": "2004-03-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오현솔은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-순하준-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K215-P-01:K215:biological",
+      "from": "FH-K215-P-01",
+      "to": "K215",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K215-P-02:FH-K215-P-01:biological",
+      "from": "FH-K215-P-02",
+      "to": "FH-K215-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K215-M-01:K215:biological",
+      "from": "FH-K215-M-01",
+      "to": "K215",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K215-M-02:FH-K215-M-01:biological",
+      "from": "FH-K215-M-02",
+      "to": "FH-K215-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-순재민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K268-P-01:K268:biological",
+      "from": "FH-K268-P-01",
+      "to": "K268",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K268-P-02:FH-K268-P-01:biological",
+      "from": "FH-K268-P-02",
+      "to": "FH-K268-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K268-M-01:K268:biological",
+      "from": "FH-K268-M-01",
+      "to": "K268",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K268-M-02:FH-K268-M-01:biological",
+      "from": "FH-K268-M-02",
+      "to": "FH-K268-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-순지민-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K295-P-01:K295:biological",
+      "from": "FH-K295-P-01",
+      "to": "K295",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K295-P-02:FH-K295-P-01:biological",
+      "from": "FH-K295-P-02",
+      "to": "FH-K295-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K295-M-01:K295:biological",
+      "from": "FH-K295-M-01",
+      "to": "K295",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K295-M-02:FH-K295-M-01:biological",
+      "from": "FH-K295-M-02",
+      "to": "FH-K295-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-순하준-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

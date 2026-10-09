@@ -1,0 +1,4911 @@
+{
+  "clanId": "cc28-c5f0-c548",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K126",
+      "personId": "K126",
+      "kind": "person",
+      "name": "차나루",
+      "birthDate": "2076-02-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K126"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 암사 정수 의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차나루-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0127",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K134",
+      "personId": "K134",
+      "kind": "person",
+      "name": "차윤목",
+      "birthDate": "2084-07-01",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K134"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 제기동 의무소에서 자랐다. 동부 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차윤목-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0135",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K156",
+      "personId": "K156",
+      "kind": "person",
+      "name": "차세온",
+      "birthDate": "2101-04-05",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K156"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 유언 필적 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0157",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K206",
+      "personId": "K206",
+      "kind": "person",
+      "name": "차진아",
+      "birthDate": "2076-03-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K206"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 결제권 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차진아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0207",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K457",
+      "personId": "K457",
+      "kind": "person",
+      "name": "차예원",
+      "birthDate": "2098-10-29",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K457"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0457",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K497",
+      "personId": "K497",
+      "kind": "person",
+      "name": "차지환",
+      "birthDate": "2090-04-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K497"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0497",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K537",
+      "personId": "K537",
+      "kind": "person",
+      "name": "차차환",
+      "birthDate": "2097-05-15",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K537"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0537",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K577",
+      "personId": "K577",
+      "kind": "person",
+      "name": "차남원",
+      "birthDate": "2068-04-18",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K577"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차남원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0577",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K617",
+      "personId": "K617",
+      "kind": "person",
+      "name": "차름환",
+      "birthDate": "2066-01-15",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K617"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차름환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0617",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K657",
+      "personId": "K657",
+      "kind": "person",
+      "name": "차새환",
+      "birthDate": "2071-08-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K657"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 짐 장부 행자 자리는 저울 재점검 공개로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차새환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0657",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K696",
+      "personId": "K696",
+      "kind": "person",
+      "name": "차자원",
+      "birthDate": "2070-08-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K696"
+        },
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-차자원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0696",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K735",
+      "personId": "K735",
+      "kind": "person",
+      "name": "차서환",
+      "birthDate": "2072-09-11",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K735"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차서환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0735",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K773",
+      "personId": "K773",
+      "kind": "person",
+      "name": "차구환",
+      "birthDate": "2079-05-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K773"
+        },
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 아관사 능선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-차구환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0773",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K812",
+      "personId": "K812",
+      "kind": "person",
+      "name": "차람원",
+      "birthDate": "2070-10-21",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K812"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 관문 당직 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차람원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0812",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K851",
+      "personId": "K851",
+      "kind": "person",
+      "name": "차아환",
+      "birthDate": "2083-06-16",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K851"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-차아환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0851",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K889",
+      "personId": "K889",
+      "kind": "person",
+      "name": "차동환",
+      "birthDate": "2098-06-05",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K889"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0889",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K964",
+      "personId": "K964",
+      "kind": "person",
+      "name": "차바환",
+      "birthDate": "2098-01-04",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K964"
+        },
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생업: 처방 기록·당직 열쇠 인계",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0964",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K126-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승석",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548"
+      },
+      "birthDate": "2046-02-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2084,
+          "summary": "차승석은 영등포 정수 당직에서 정수구역 진료·시약 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K126-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승준",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548"
+      },
+      "birthDate": "2016-02-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승준은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K126-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승리",
+      "birthDate": "2046-02-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2084,
+          "summary": "강승리는 영등포 정수 당직에서 정수구역 진료·시약 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K126-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임현준",
+      "birthDate": "2016-02-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임현준은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차나루-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K134-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승호",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548"
+      },
+      "birthDate": "2054-07-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "차승호는 제기동 의무소에서 이동의무차 골목 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차윤목-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K134-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승민",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548"
+      },
+      "birthDate": "2024-07-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승민은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차윤목-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K134-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현윤",
+      "birthDate": "2054-07-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "최현윤은 제기동 의무소에서 이동의무차 골목 진료 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차윤목-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K134-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현원",
+      "birthDate": "2024-07-01",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정현원은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차윤목-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K156-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승원",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c628-second"
+      },
+      "birthDate": "2071-04-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "차승원은 서울역 등기소에서 유언 필적·증언 대조 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K156-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승진",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c628-second"
+      },
+      "birthDate": "2041-04-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "차승진은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K156-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승현",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c628-second"
+      },
+      "birthDate": "2011-04-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승현은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K156-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현우",
+      "birthDate": "2071-04-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "박현우는 서울역 등기소에서 유언 필적·증언 대조 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K156-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이현영",
+      "birthDate": "2041-04-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "이현영은 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K156-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현은",
+      "birthDate": "2011-04-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최현은은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-차세온-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K206-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승연",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548"
+      },
+      "birthDate": "2046-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2084,
+          "summary": "차승연은 서울역 등기소에서 결제권 발행 사본·재고 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K206-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승정",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548"
+      },
+      "birthDate": "2016-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승정은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K206-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현혁",
+      "birthDate": "2046-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2084,
+          "summary": "최현혁은 서울역 등기소에서 결제권 발행 사본·재고 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K206-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현규",
+      "birthDate": "2016-03-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정현규는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차진아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K457-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승아",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2068-10-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "차승아는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K457-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승희",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2038-10-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "차승희는 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K457-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승규",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2008-10-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승규는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K457-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이태민",
+      "birthDate": "2068-10-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "이태민은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K457-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최태수",
+      "birthDate": "2038-10-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "최태수는 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K457-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정준도",
+      "birthDate": "2008-10-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정준도는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차예원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K497-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승완",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2060-04-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "차승완은 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K497-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승훈",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2030-04-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "차승훈은 신내 환승 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K497-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승범",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2000-04-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승범은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K497-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한태윤",
+      "birthDate": "2060-04-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "한태윤은 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K497-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태원",
+      "birthDate": "2030-04-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "강태원은 신내 환승 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K497-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "임태영",
+      "birthDate": "2000-04-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임태영은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차지환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K537-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승재",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2067-05-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2105,
+          "summary": "차승재는 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K537-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승찬",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2037-05-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "차승찬은 암사 경비 초소에서 글을 읽지 못하는 이웃이 부탁해 오자 생활 기록을 소리 내어 읽어 주고 자녀도 기록의 뜻을 확인하게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K537-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승혁",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2007-05-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승혁은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K537-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송태은",
+      "birthDate": "2067-05-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2105,
+          "summary": "송태은은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K537-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태아",
+      "birthDate": "2037-05-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "조태아는 암사 경비 초소에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K537-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김태희",
+      "birthDate": "2007-05-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김태희는 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차차환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K577-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승문",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2038-04-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "차승문은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차남원"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K577-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승섭",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2008-04-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승섭은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차남원"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K577-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이재석",
+      "birthDate": "2038-04-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "이재석은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차남원"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K577-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재현",
+      "birthDate": "2008-04-18",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최재현은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차남원"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K617-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승성",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2036-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "차승성은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차름환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K617-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승욱",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2006-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승욱은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차름환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K617-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한재민",
+      "birthDate": "2036-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "한재민은 신내 환승 당직에서 환승 전갈 전달 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차름환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K617-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강태미",
+      "birthDate": "2006-01-15",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강태미는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차름환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K657-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승란",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2041-08-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "차승란은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차새환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K657-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승리",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2011-08-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승리는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차새환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K657-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송재원",
+      "birthDate": "2041-08-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "송재원은 노량진 선창에서 짐 장부·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차새환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K657-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조재수",
+      "birthDate": "2011-08-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조재수는 대정전 뒤 말로만 전하던 살림 약속을 적어 공동 거처의 생활을 다시 맞춘다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-차새환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K696-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승나",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2040-08-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "차승나는 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-차자원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K696-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승온",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2010-08-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승온은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-차자원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K696-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박재온",
+      "birthDate": "2040-08-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "박재온은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-차자원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K696-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이재란",
+      "birthDate": "2010-08-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이재란은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-01.json",
+              "anchor": "인물-차자원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K735-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승빈",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2042-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "차승빈은 암사 경비 초소에서 능선 초계·매복 흔적 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차서환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K735-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승솔",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2012-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승솔은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차서환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K735-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정도석",
+      "birthDate": "2042-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2080,
+          "summary": "정도석은 암사 경비 초소에서 능선 초계·매복 흔적 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차서환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K735-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤재솔",
+      "birthDate": "2012-09-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤재솔은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-차서환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K773-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승미",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2049-05-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2087,
+          "summary": "차승미는 암사 경비 초소에서 능선 순찰 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-차구환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K773-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차승도",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2019-05-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차승도는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-차구환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K773-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한도윤",
+      "birthDate": "2049-05-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2087,
+          "summary": "한도윤은 암사 경비 초소에서 능선 순찰 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-차구환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K773-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강도민",
+      "birthDate": "2019-05-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강도민은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-차구환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K812-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현석",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2040-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "차현석은 대합실 당직에서 관문 증인 대질·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차람원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K812-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현준",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-c6d0-second"
+      },
+      "birthDate": "2010-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차현준은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차람원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K812-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오도재",
+      "birthDate": "2040-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "오도재는 대합실 당직에서 관문 증인 대질·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차람원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K812-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도경",
+      "birthDate": "2010-10-21",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송도경은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-차람원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K851-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현호",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2053-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2091,
+          "summary": "차현호는 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-차아환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K851-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현민",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2023-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차현민은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-차아환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K851-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김도욱",
+      "birthDate": "2053-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2091,
+          "summary": "김도욱은 신내 환승 당직에서 배차 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-차아환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K851-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박민석",
+      "birthDate": "2023-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박민석은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-차아환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K889-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현원",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2068-06-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "차현원은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K889-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현진",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2038-06-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "차현진은 서울역 등기소에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K889-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현현",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2008-06-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차현현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K889-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이민경",
+      "birthDate": "2068-06-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "이민경은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K889-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민규",
+      "birthDate": "2038-06-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "최민규는 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K889-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정민영",
+      "birthDate": "2008-06-05",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정민영은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-차동환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K964-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현우",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2068-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "차현우는 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K964-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현경",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2038-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "차현경은 대합실 당직에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K964-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "차현수",
+      "lineage": {
+        "surname": "차",
+        "bongwan": "연안",
+        "clan": "cc28-c5f0-c548-agreed-d658-second"
+      },
+      "birthDate": "2008-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "차현수는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K964-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤민완",
+      "birthDate": "2068-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2106,
+          "summary": "윤민완은 대합실 당직에서 처방 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K964-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한민훈",
+      "birthDate": "2038-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2076,
+          "summary": "한민훈은 대합실 당직에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K964-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강민완",
+      "birthDate": "2008-01-04",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강민완은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-13.json",
+              "anchor": "인물-차바환-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K126-P-01:K126:biological",
+      "from": "FH-K126-P-01",
+      "to": "K126",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K126-P-02:FH-K126-P-01:biological",
+      "from": "FH-K126-P-02",
+      "to": "FH-K126-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K126-M-01:K126:biological",
+      "from": "FH-K126-M-01",
+      "to": "K126",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K126-M-02:FH-K126-M-01:biological",
+      "from": "FH-K126-M-02",
+      "to": "FH-K126-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차나루-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K134-P-01:K134:biological",
+      "from": "FH-K134-P-01",
+      "to": "K134",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K134-P-02:FH-K134-P-01:biological",
+      "from": "FH-K134-P-02",
+      "to": "FH-K134-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K134-M-01:K134:biological",
+      "from": "FH-K134-M-01",
+      "to": "K134",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K134-M-02:FH-K134-M-01:biological",
+      "from": "FH-K134-M-02",
+      "to": "FH-K134-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차윤목-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K156-P-01:K156:biological",
+      "from": "FH-K156-P-01",
+      "to": "K156",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K156-P-02:FH-K156-P-01:biological",
+      "from": "FH-K156-P-02",
+      "to": "FH-K156-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K156-P-03:FH-K156-P-02:biological",
+      "from": "FH-K156-P-03",
+      "to": "FH-K156-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K156-M-01:K156:biological",
+      "from": "FH-K156-M-01",
+      "to": "K156",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K156-M-02:FH-K156-M-01:biological",
+      "from": "FH-K156-M-02",
+      "to": "FH-K156-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K156-M-03:FH-K156-M-02:biological",
+      "from": "FH-K156-M-03",
+      "to": "FH-K156-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-차세온-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K206-P-01:K206:biological",
+      "from": "FH-K206-P-01",
+      "to": "K206",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K206-P-02:FH-K206-P-01:biological",
+      "from": "FH-K206-P-02",
+      "to": "FH-K206-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K206-M-01:K206:biological",
+      "from": "FH-K206-M-01",
+      "to": "K206",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K206-M-02:FH-K206-M-01:biological",
+      "from": "FH-K206-M-02",
+      "to": "FH-K206-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차진아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K457-P-01:K457:biological",
+      "from": "FH-K457-P-01",
+      "to": "K457",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K457-P-02:FH-K457-P-01:biological",
+      "from": "FH-K457-P-02",
+      "to": "FH-K457-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K457-P-03:FH-K457-P-02:biological",
+      "from": "FH-K457-P-03",
+      "to": "FH-K457-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K457-M-01:K457:biological",
+      "from": "FH-K457-M-01",
+      "to": "K457",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K457-M-02:FH-K457-M-01:biological",
+      "from": "FH-K457-M-02",
+      "to": "FH-K457-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K457-M-03:FH-K457-M-02:biological",
+      "from": "FH-K457-M-03",
+      "to": "FH-K457-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차예원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K497-P-01:K497:biological",
+      "from": "FH-K497-P-01",
+      "to": "K497",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K497-P-02:FH-K497-P-01:biological",
+      "from": "FH-K497-P-02",
+      "to": "FH-K497-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K497-P-03:FH-K497-P-02:biological",
+      "from": "FH-K497-P-03",
+      "to": "FH-K497-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K497-M-01:K497:biological",
+      "from": "FH-K497-M-01",
+      "to": "K497",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K497-M-02:FH-K497-M-01:biological",
+      "from": "FH-K497-M-02",
+      "to": "FH-K497-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K497-M-03:FH-K497-M-02:biological",
+      "from": "FH-K497-M-03",
+      "to": "FH-K497-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차지환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K537-P-01:K537:biological",
+      "from": "FH-K537-P-01",
+      "to": "K537",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K537-P-02:FH-K537-P-01:biological",
+      "from": "FH-K537-P-02",
+      "to": "FH-K537-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K537-P-03:FH-K537-P-02:biological",
+      "from": "FH-K537-P-03",
+      "to": "FH-K537-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K537-M-01:K537:biological",
+      "from": "FH-K537-M-01",
+      "to": "K537",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K537-M-02:FH-K537-M-01:biological",
+      "from": "FH-K537-M-02",
+      "to": "FH-K537-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K537-M-03:FH-K537-M-02:biological",
+      "from": "FH-K537-M-03",
+      "to": "FH-K537-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차차환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K577-P-01:K577:biological",
+      "from": "FH-K577-P-01",
+      "to": "K577",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K577-P-02:FH-K577-P-01:biological",
+      "from": "FH-K577-P-02",
+      "to": "FH-K577-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K577-M-01:K577:biological",
+      "from": "FH-K577-M-01",
+      "to": "K577",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K577-M-02:FH-K577-M-01:biological",
+      "from": "FH-K577-M-02",
+      "to": "FH-K577-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차남원"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K617-P-01:K617:biological",
+      "from": "FH-K617-P-01",
+      "to": "K617",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K617-P-02:FH-K617-P-01:biological",
+      "from": "FH-K617-P-02",
+      "to": "FH-K617-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K617-M-01:K617:biological",
+      "from": "FH-K617-M-01",
+      "to": "K617",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K617-M-02:FH-K617-M-01:biological",
+      "from": "FH-K617-M-02",
+      "to": "FH-K617-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차름환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K657-P-01:K657:biological",
+      "from": "FH-K657-P-01",
+      "to": "K657",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K657-P-02:FH-K657-P-01:biological",
+      "from": "FH-K657-P-02",
+      "to": "FH-K657-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K657-M-01:K657:biological",
+      "from": "FH-K657-M-01",
+      "to": "K657",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K657-M-02:FH-K657-M-01:biological",
+      "from": "FH-K657-M-02",
+      "to": "FH-K657-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-차새환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K696-P-01:K696:biological",
+      "from": "FH-K696-P-01",
+      "to": "K696",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K696-P-02:FH-K696-P-01:biological",
+      "from": "FH-K696-P-02",
+      "to": "FH-K696-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K696-M-01:K696:biological",
+      "from": "FH-K696-M-01",
+      "to": "K696",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K696-M-02:FH-K696-M-01:biological",
+      "from": "FH-K696-M-02",
+      "to": "FH-K696-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-01.json",
+          "anchor": "인물-차자원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K735-P-01:K735:biological",
+      "from": "FH-K735-P-01",
+      "to": "K735",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K735-P-02:FH-K735-P-01:biological",
+      "from": "FH-K735-P-02",
+      "to": "FH-K735-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K735-M-01:K735:biological",
+      "from": "FH-K735-M-01",
+      "to": "K735",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K735-M-02:FH-K735-M-01:biological",
+      "from": "FH-K735-M-02",
+      "to": "FH-K735-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-차서환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K773-P-01:K773:biological",
+      "from": "FH-K773-P-01",
+      "to": "K773",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K773-P-02:FH-K773-P-01:biological",
+      "from": "FH-K773-P-02",
+      "to": "FH-K773-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K773-M-01:K773:biological",
+      "from": "FH-K773-M-01",
+      "to": "K773",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K773-M-02:FH-K773-M-01:biological",
+      "from": "FH-K773-M-02",
+      "to": "FH-K773-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-차구환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K812-P-01:K812:biological",
+      "from": "FH-K812-P-01",
+      "to": "K812",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K812-P-02:FH-K812-P-01:biological",
+      "from": "FH-K812-P-02",
+      "to": "FH-K812-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K812-M-01:K812:biological",
+      "from": "FH-K812-M-01",
+      "to": "K812",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K812-M-02:FH-K812-M-01:biological",
+      "from": "FH-K812-M-02",
+      "to": "FH-K812-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-차람원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K851-P-01:K851:biological",
+      "from": "FH-K851-P-01",
+      "to": "K851",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K851-P-02:FH-K851-P-01:biological",
+      "from": "FH-K851-P-02",
+      "to": "FH-K851-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K851-M-01:K851:biological",
+      "from": "FH-K851-M-01",
+      "to": "K851",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K851-M-02:FH-K851-M-01:biological",
+      "from": "FH-K851-M-02",
+      "to": "FH-K851-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-차아환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K889-P-01:K889:biological",
+      "from": "FH-K889-P-01",
+      "to": "K889",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K889-P-02:FH-K889-P-01:biological",
+      "from": "FH-K889-P-02",
+      "to": "FH-K889-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K889-P-03:FH-K889-P-02:biological",
+      "from": "FH-K889-P-03",
+      "to": "FH-K889-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K889-M-01:K889:biological",
+      "from": "FH-K889-M-01",
+      "to": "K889",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K889-M-02:FH-K889-M-01:biological",
+      "from": "FH-K889-M-02",
+      "to": "FH-K889-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K889-M-03:FH-K889-M-02:biological",
+      "from": "FH-K889-M-03",
+      "to": "FH-K889-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-차동환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K964-P-01:K964:biological",
+      "from": "FH-K964-P-01",
+      "to": "K964",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K964-P-02:FH-K964-P-01:biological",
+      "from": "FH-K964-P-02",
+      "to": "FH-K964-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K964-P-03:FH-K964-P-02:biological",
+      "from": "FH-K964-P-03",
+      "to": "FH-K964-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K964-M-01:K964:biological",
+      "from": "FH-K964-M-01",
+      "to": "K964",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K964-M-02:FH-K964-M-01:biological",
+      "from": "FH-K964-M-02",
+      "to": "FH-K964-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K964-M-03:FH-K964-M-02:biological",
+      "from": "FH-K964-M-03",
+      "to": "FH-K964-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-13.json",
+          "anchor": "인물-차바환-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

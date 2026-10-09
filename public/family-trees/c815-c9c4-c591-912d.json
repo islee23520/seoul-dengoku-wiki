@@ -1,0 +1,411 @@
+{
+  "clanId": "c815-c9c4-c591-912d",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K398",
+      "personId": "K398",
+      "kind": "person",
+      "name": "정유라",
+      "birthDate": "2090-01-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K398"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정유라-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 중구 정동길 3 경향신문사 자리의 계약 감사. 기록 위조는 금지된다. 정동 사무실의 조합원 명부가 비상 소집이 되었다. 공장이 멈추자 파업권이 통행권으로 바뀌었다. 정유라가 위원장이 된 것은 수서건설가의 보호 표준 도면을 끊기지 않게 지킨 뒤였다. 수서 기지는 임자 없는 무주지로 남는다. 시청역 총연맹이 나라 행세를 한다. 세 강국이 서로 다른 급수계약을 약소국에 동시에 내민 철, 정유라는 종료조건과 감사권을 한 장에 넣었다. 그 장이 협의의 뼈대가 되었다. 장세화의 호송이 그 장을 싣는다. 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정유라-p2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0399",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K1005",
+      "personId": "K1005",
+      "kind": "person",
+      "name": "정서온",
+      "birthDate": "2090-06-17",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1005"
+        },
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "생애. 2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-1005",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "FH-EX-JEONG-ILHWAN",
+      "personId": null,
+      "kind": "historical",
+      "name": "정일환",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "진양",
+        "clan": "c815-c9c4-c591-912d"
+      },
+      "birthDate": "2060-06-17",
+      "deathDate": "2112-04-09",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/chronology/Century-Annals.json"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2112,
+          "summary": "정일환은 가문의 후계 인준 갈등 속에 외동딸 정서온을 남기고 사망한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1005-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "송민재",
+      "birthDate": "2060-06-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "송민재는 생활권의 공동 거처에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1005-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민도",
+      "birthDate": "2030-06-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "조민도는 생활권의 공동 거처에서 다른 집과 물자를 나눌 때 말이 엇갈리자 빚과 교환 물품을 구분해 적고 자녀에게 대조하는 습관을 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1005-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민온",
+      "birthDate": "2000-06-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김민온은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1005-X정일환-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정서영",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "진양",
+        "clan": "c815-c9c4-c591-912d"
+      },
+      "birthDate": "2030-06-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "정서영은 생활권의 공동 거처에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1005-X정일환-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정서윤",
+      "lineage": {
+        "surname": "정",
+        "bongwan": "진양",
+        "clan": "c815-c9c4-c591-912d"
+      },
+      "birthDate": "2000-06-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정서윤은 대정전으로 일상의 연락이 끊기자 가족의 거처와 안부를 기록하여 흩어진 식구의 소식을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Core-Characters.json",
+              "anchor": "정서온-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-EX-JEONG-ILHWAN:K1005:biological",
+      "from": "FH-EX-JEONG-ILHWAN",
+      "to": "K1005",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/chronology/Century-Annals.json",
+          "anchor": "/content/405"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1005-M-01:K1005:biological",
+      "from": "FH-K1005-M-01",
+      "to": "K1005",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1005-M-02:FH-K1005-M-01:biological",
+      "from": "FH-K1005-M-02",
+      "to": "FH-K1005-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1005-M-03:FH-K1005-M-02:biological",
+      "from": "FH-K1005-M-03",
+      "to": "FH-K1005-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1005-X정일환-01:FH-EX-JEONG-ILHWAN:biological",
+      "from": "FH-K1005-X정일환-01",
+      "to": "FH-EX-JEONG-ILHWAN",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1005-X정일환-02:FH-K1005-X정일환-01:biological",
+      "from": "FH-K1005-X정일환-02",
+      "to": "FH-K1005-X정일환-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Core-Characters.json",
+          "anchor": "정서온-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "K1005:K398:household",
+      "from": "K1005",
+      "to": "K398",
+      "type": "household",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Relations.json",
+          "anchor": "관계-원장-table3"
+        }
+      ]
+    }
+  ]
+}

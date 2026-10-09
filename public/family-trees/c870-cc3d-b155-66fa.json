@@ -1,0 +1,1224 @@
+{
+  "clanId": "c870-cc3d-b155-66fa",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K168",
+      "personId": "K168",
+      "kind": "person",
+      "name": "조이록",
+      "birthDate": "2099-08-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K168"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0169",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K224",
+      "personId": "K224",
+      "kind": "person",
+      "name": "조은우",
+      "birthDate": "2084-08-06",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K224"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-조은우-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0225",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K469",
+      "personId": "K469",
+      "kind": "person",
+      "name": "조채원",
+      "birthDate": "2086-10-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K469"
+        },
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 아관사 초소 전령 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조채원-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0469",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K1003",
+      "personId": "K1003",
+      "kind": "person",
+      "name": "조재표",
+      "birthDate": "2089-07-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K1003"
+        },
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "성명: 조재표 (Jaepyo Jo). 별칭 없음",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-1003",
+      "affiliation": {
+        "kind": "unaffiliated",
+        "name": "무소속"
+      }
+    },
+    {
+      "id": "FH-K168-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조승도",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2069-08-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2107,
+          "summary": "조승도는 서울역 등기소에서 원본 해시 확인·사본 공증 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K168-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현석",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2039-08-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "조현석은 서울역 등기소에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K168-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현준",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2009-08-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조현준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K168-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현은",
+      "birthDate": "2069-08-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2107,
+          "summary": "박현은은 서울역 등기소에서 원본 해시 확인·사본 공증 감사 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K168-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이현우",
+      "birthDate": "2039-08-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "이현우는 서울역 등기소에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K168-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현아",
+      "birthDate": "2009-08-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최현아는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-조이록-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K224-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현정",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2054-08-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "조현정은 여의도 금고 당직에서 위조 화폐 추적 로그·금고 접근 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-조은우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K224-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조현아",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2024-08-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조현아는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-조은우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K224-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현희",
+      "birthDate": "2054-08-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "오현희는 여의도 금고 당직에서 위조 화폐 추적 로그·금고 접근 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-조은우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K224-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송현연",
+      "birthDate": "2024-08-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송현연은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-조은우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K469-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태석",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2056-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "조태석은 신내 환승 당직에서 초소 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K469-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조태준",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2026-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조태준은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K469-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이태우",
+      "birthDate": "2056-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2094,
+          "summary": "이태우는 신내 환승 당직에서 초소 전령 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K469-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최태희",
+      "birthDate": "2026-10-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최태희는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-14.json",
+              "anchor": "인물-조채원-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1003-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민빈",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2059-07-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2097,
+          "summary": "조민빈은 생활권의 공동 거처에서 주 탐사원 / 부 순찰대 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1003-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민솔",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "2029-07-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2067,
+          "summary": "조민솔은 생활권의 공동 거처에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1003-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민미",
+      "lineage": {
+        "surname": "조",
+        "bongwan": "창녕",
+        "clan": "c870-cc3d-b155-66fa"
+      },
+      "birthDate": "1999-07-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "조민미는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1003-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임민욱",
+      "birthDate": "2059-07-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2097,
+          "summary": "임민욱은 생활권의 공동 거처에서 주 탐사원 / 부 순찰대 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1003-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오민나",
+      "birthDate": "2029-07-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2067,
+          "summary": "오민나는 생활권의 공동 거처에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1003-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "송민범",
+      "birthDate": "1999-07-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송민범은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-Unaffiliated.json",
+              "anchor": "인물-조재표-list1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K168-P-01:K168:biological",
+      "from": "FH-K168-P-01",
+      "to": "K168",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K168-P-02:FH-K168-P-01:biological",
+      "from": "FH-K168-P-02",
+      "to": "FH-K168-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K168-P-03:FH-K168-P-02:biological",
+      "from": "FH-K168-P-03",
+      "to": "FH-K168-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K168-M-01:K168:biological",
+      "from": "FH-K168-M-01",
+      "to": "K168",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K168-M-02:FH-K168-M-01:biological",
+      "from": "FH-K168-M-02",
+      "to": "FH-K168-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K168-M-03:FH-K168-M-02:biological",
+      "from": "FH-K168-M-03",
+      "to": "FH-K168-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-조이록-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K224-P-01:K224:biological",
+      "from": "FH-K224-P-01",
+      "to": "K224",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K224-P-02:FH-K224-P-01:biological",
+      "from": "FH-K224-P-02",
+      "to": "FH-K224-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K224-M-01:K224:biological",
+      "from": "FH-K224-M-01",
+      "to": "K224",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K224-M-02:FH-K224-M-01:biological",
+      "from": "FH-K224-M-02",
+      "to": "FH-K224-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-조은우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K469-P-01:K469:biological",
+      "from": "FH-K469-P-01",
+      "to": "K469",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K469-P-02:FH-K469-P-01:biological",
+      "from": "FH-K469-P-02",
+      "to": "FH-K469-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K469-M-01:K469:biological",
+      "from": "FH-K469-M-01",
+      "to": "K469",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K469-M-02:FH-K469-M-01:biological",
+      "from": "FH-K469-M-02",
+      "to": "FH-K469-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-14.json",
+          "anchor": "인물-조채원-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1003-P-01:K1003:biological",
+      "from": "FH-K1003-P-01",
+      "to": "K1003",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1003-P-02:FH-K1003-P-01:biological",
+      "from": "FH-K1003-P-02",
+      "to": "FH-K1003-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1003-P-03:FH-K1003-P-02:biological",
+      "from": "FH-K1003-P-03",
+      "to": "FH-K1003-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1003-M-01:K1003:biological",
+      "from": "FH-K1003-M-01",
+      "to": "K1003",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1003-M-02:FH-K1003-M-01:biological",
+      "from": "FH-K1003-M-02",
+      "to": "FH-K1003-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1003-M-03:FH-K1003-M-02:biological",
+      "from": "FH-K1003-M-03",
+      "to": "FH-K1003-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-Unaffiliated.json",
+          "anchor": "인물-조재표-list1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

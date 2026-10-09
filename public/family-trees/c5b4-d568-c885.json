@@ -1,0 +1,1225 @@
+{
+  "clanId": "c5b4-d568-c885",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K164",
+      "personId": "K164",
+      "kind": "person",
+      "name": "어태산",
+      "birthDate": "2084-08-24",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K164"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 각국 인준 보관인 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-어태산-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0165",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K218",
+      "personId": "K218",
+      "kind": "person",
+      "name": "어도윤",
+      "birthDate": "2096-06-20",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K218"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 첫 급수협약 시장 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0219",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K263",
+      "personId": "K263",
+      "kind": "person",
+      "name": "어하은",
+      "birthDate": "2065-12-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K263"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 명부 사고 행자 자리는 고아 명부 줄로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-어하은-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0264",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K290",
+      "personId": "K290",
+      "kind": "person",
+      "name": "어예린",
+      "birthDate": "2094-05-06",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K290"
+        },
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0291",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K164-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승석",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2054-08-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "어승석은 서울역 등기소에서 각국 인준일·사후 추인 증인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-어태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K164-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승준",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2024-08-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "어승준은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-어태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K164-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승솔",
+      "birthDate": "2054-08-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "오승솔은 서울역 등기소에서 각국 인준일·사후 추인 증인 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-어태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K164-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "송승솔",
+      "birthDate": "2024-08-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송승솔은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-어태산-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K218-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승진",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2066-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "어승진은 영등포 정수 당직에서 급수협약 교환 품목·무게 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K218-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승현",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2036-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "어승현은 영등포 정수 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K218-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승영",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2006-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "어승영은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K218-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현성",
+      "birthDate": "2066-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2104,
+          "summary": "최현성은 영등포 정수 당직에서 급수협약 교환 품목·무게 증언 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K218-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현훈",
+      "birthDate": "2036-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "정현훈은 영등포 정수 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K218-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현정",
+      "birthDate": "2006-06-20",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤현정은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-어도윤-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K263-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승윤",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2035-12-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "어승윤은 보국문 피난 막사에서 신도 명부 누락 조사·배급 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-어하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K263-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승우",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2005-12-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "어승우는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-어하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K263-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김현나",
+      "birthDate": "2035-12-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2073,
+          "summary": "김현나는 보국문 피난 막사에서 신도 명부 누락 조사·배급 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-어하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K263-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박현빈",
+      "birthDate": "2005-12-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박현빈은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-어하은-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K290-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승경",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2064-05-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "어승경은 강남역 차량기지에서 시험 차륜 결함 표본·사고 서명 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K290-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승수",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2034-05-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "어승수는 강남역 차량기지에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K290-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "어승은",
+      "lineage": {
+        "surname": "어",
+        "bongwan": "함종",
+        "clan": "c5b4-d568-c885"
+      },
+      "birthDate": "2004-05-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "어승은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K290-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최준우",
+      "birthDate": "2064-05-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "최준우는 강남역 차량기지에서 시험 차륜 결함 표본·사고 서명 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K290-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현솔",
+      "birthDate": "2034-05-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "정현솔은 강남역 차량기지에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K290-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현미",
+      "birthDate": "2004-05-06",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤현미는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-어예린-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K164-P-01:K164:biological",
+      "from": "FH-K164-P-01",
+      "to": "K164",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K164-P-02:FH-K164-P-01:biological",
+      "from": "FH-K164-P-02",
+      "to": "FH-K164-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K164-M-01:K164:biological",
+      "from": "FH-K164-M-01",
+      "to": "K164",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K164-M-02:FH-K164-M-01:biological",
+      "from": "FH-K164-M-02",
+      "to": "FH-K164-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-어태산-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K218-P-01:K218:biological",
+      "from": "FH-K218-P-01",
+      "to": "K218",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K218-P-02:FH-K218-P-01:biological",
+      "from": "FH-K218-P-02",
+      "to": "FH-K218-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K218-P-03:FH-K218-P-02:biological",
+      "from": "FH-K218-P-03",
+      "to": "FH-K218-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K218-M-01:K218:biological",
+      "from": "FH-K218-M-01",
+      "to": "K218",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K218-M-02:FH-K218-M-01:biological",
+      "from": "FH-K218-M-02",
+      "to": "FH-K218-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K218-M-03:FH-K218-M-02:biological",
+      "from": "FH-K218-M-03",
+      "to": "FH-K218-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-어도윤-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K263-P-01:K263:biological",
+      "from": "FH-K263-P-01",
+      "to": "K263",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K263-P-02:FH-K263-P-01:biological",
+      "from": "FH-K263-P-02",
+      "to": "FH-K263-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K263-M-01:K263:biological",
+      "from": "FH-K263-M-01",
+      "to": "K263",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K263-M-02:FH-K263-M-01:biological",
+      "from": "FH-K263-M-02",
+      "to": "FH-K263-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-어하은-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K290-P-01:K290:biological",
+      "from": "FH-K290-P-01",
+      "to": "K290",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K290-P-02:FH-K290-P-01:biological",
+      "from": "FH-K290-P-02",
+      "to": "FH-K290-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K290-P-03:FH-K290-P-02:biological",
+      "from": "FH-K290-P-03",
+      "to": "FH-K290-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K290-M-01:K290:biological",
+      "from": "FH-K290-M-01",
+      "to": "K290",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K290-M-02:FH-K290-M-01:biological",
+      "from": "FH-K290-M-02",
+      "to": "FH-K290-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K290-M-03:FH-K290-M-02:biological",
+      "from": "FH-K290-M-03",
+      "to": "FH-K290-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-어예린-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

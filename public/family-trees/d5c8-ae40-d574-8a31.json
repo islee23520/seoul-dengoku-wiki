@@ -1,0 +1,1012 @@
+{
+  "clanId": "d5c8-ae40-d574-8a31",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K066",
+      "personId": "K066",
+      "kind": "person",
+      "name": "허서겸",
+      "birthDate": "2067-01-29",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K066"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 방화기지 연구차량 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-허서겸-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0066",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K449",
+      "personId": "K449",
+      "kind": "person",
+      "name": "허진우",
+      "birthDate": "2070-03-29",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K449"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 행자 자리는 무표 출발 열차 저지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허진우-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0449",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K529",
+      "personId": "K529",
+      "kind": "person",
+      "name": "허은서",
+      "birthDate": "2070-01-11",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K529"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허은서-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0529",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K649",
+      "personId": "K649",
+      "kind": "person",
+      "name": "허파서",
+      "birthDate": "2066-06-16",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K649"
+        },
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-허파서-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0649",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "FH-K066-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승영",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31"
+      },
+      "birthDate": "2037-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "허승영은 신정 차량기지에서 연구차량 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-허서겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K066-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승윤",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31"
+      },
+      "birthDate": "2007-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "허승윤은 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-허서겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K066-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강승희",
+      "birthDate": "2037-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "강승희는 신정 차량기지에서 연구차량 정비 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-허서겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K066-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임승재",
+      "birthDate": "2007-01-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "임승재는 대정전 뒤 멀리 떠나는 식구에게 거처의 약도를 건네 다음 연락을 준비한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-허서겸-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K449-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승아",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31"
+      },
+      "birthDate": "2040-03-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "허승아는 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허진우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K449-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승희",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31"
+      },
+      "birthDate": "2010-03-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "허승희는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허진우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K449-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "한준나",
+      "birthDate": "2040-03-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "한준나는 신내 환승 당직에서 총회 전령·필사본 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허진우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K449-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "강준리",
+      "birthDate": "2010-03-29",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강준리는 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허진우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K529-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승훈",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31-agreed-c11c-second"
+      },
+      "birthDate": "2040-01-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "허승훈은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허은서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K529-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승범",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31-agreed-c11c-second"
+      },
+      "birthDate": "2010-01-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "허승범은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허은서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K529-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이태문",
+      "birthDate": "2040-01-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "이태문은 서울역 등기소에서 장경 필사본·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허은서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K529-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최태나",
+      "birthDate": "2010-01-11",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최태나는 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-허은서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K649-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승섭",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31-agreed-c11c-second"
+      },
+      "birthDate": "2036-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "허승섭은 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-허파서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K649-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "허승성",
+      "lineage": {
+        "surname": "허",
+        "bongwan": "김해",
+        "clan": "d5c8-ae40-d574-8a31-agreed-c11c-second"
+      },
+      "birthDate": "2006-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "허승성은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-허파서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K649-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이재규",
+      "birthDate": "2036-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "이재규는 서울역 등기소에서 등기·기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-허파서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K649-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재혁",
+      "birthDate": "2006-06-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최재혁은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-02.json",
+              "anchor": "인물-허파서-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K066-P-01:K066:biological",
+      "from": "FH-K066-P-01",
+      "to": "K066",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K066-P-02:FH-K066-P-01:biological",
+      "from": "FH-K066-P-02",
+      "to": "FH-K066-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K066-M-01:K066:biological",
+      "from": "FH-K066-M-01",
+      "to": "K066",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K066-M-02:FH-K066-M-01:biological",
+      "from": "FH-K066-M-02",
+      "to": "FH-K066-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-허서겸-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K449-P-01:K449:biological",
+      "from": "FH-K449-P-01",
+      "to": "K449",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K449-P-02:FH-K449-P-01:biological",
+      "from": "FH-K449-P-02",
+      "to": "FH-K449-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K449-M-01:K449:biological",
+      "from": "FH-K449-M-01",
+      "to": "K449",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K449-M-02:FH-K449-M-01:biological",
+      "from": "FH-K449-M-02",
+      "to": "FH-K449-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허진우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K529-P-01:K529:biological",
+      "from": "FH-K529-P-01",
+      "to": "K529",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K529-P-02:FH-K529-P-01:biological",
+      "from": "FH-K529-P-02",
+      "to": "FH-K529-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K529-M-01:K529:biological",
+      "from": "FH-K529-M-01",
+      "to": "K529",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K529-M-02:FH-K529-M-01:biological",
+      "from": "FH-K529-M-02",
+      "to": "FH-K529-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-허은서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K649-P-01:K649:biological",
+      "from": "FH-K649-P-01",
+      "to": "K649",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K649-P-02:FH-K649-P-01:biological",
+      "from": "FH-K649-P-02",
+      "to": "FH-K649-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K649-M-01:K649:biological",
+      "from": "FH-K649-M-01",
+      "to": "K649",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K649-M-02:FH-K649-M-01:biological",
+      "from": "FH-K649-M-02",
+      "to": "FH-K649-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-02.json",
+          "anchor": "인물-허파서-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

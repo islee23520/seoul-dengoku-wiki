@@ -1,0 +1,1326 @@
+{
+  "clanId": "cd5c-acbd-c8fc",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K219",
+      "personId": "K219",
+      "kind": "person",
+      "name": "최지우",
+      "birthDate": "2099-01-28",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K219"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 여의대로 24 여의도 회관 송신 당직의 손. 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 최지우가 의장이 된 것은 마곡종자가의 송신 당직과 그 출자 장부를 끊기지 않게 지킨 뒤였다. 디지털미디어시티신탁가의 당직은 최은재의 것이다. 거짓 속보는 형조가 아니라 채널 길드가 먼저 자른다. 여의도출자연합회는 약국이다. 공용 화폐와 여의도 금고는 이 회가 쥐고, 속국은 영종지점 하나다. 윤서린의 도장보다 목소리가 빠르면, 인준은 사본이 된다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0220",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K626",
+      "personId": "K626",
+      "kind": "person",
+      "name": "최서아",
+      "birthDate": "2081-05-24",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K626"
+        },
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-최서아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0626",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K859",
+      "personId": "K859",
+      "kind": "person",
+      "name": "최바아",
+      "birthDate": "2093-04-25",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K859"
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0859",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "FH-K219-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현욱",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc"
+      },
+      "birthDate": "2069-01-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2107,
+          "summary": "최현욱은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K219-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현란",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc"
+      },
+      "birthDate": "2039-01-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "최현란은 생활권의 공동 거처에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K219-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현리",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc"
+      },
+      "birthDate": "2009-01-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최현리는 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K219-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현범",
+      "birthDate": "2069-01-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2107,
+          "summary": "정현범은 생활권의 공동 거처에서 생활 물자 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K219-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현아",
+      "birthDate": "2039-01-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2077,
+          "summary": "윤현아는 생활권의 공동 거처에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K219-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "한현정",
+      "birthDate": "2009-01-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "한현정은 대정전 뒤 공동 거처에서 잠자리 순서를 정해 남은 침구를 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-최지우-p1"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K626-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재규",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+      },
+      "birthDate": "2051-05-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2089,
+          "summary": "최재규는 신내 환승 당직에서 강남역 호송 기록·열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-최서아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K626-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최재완",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+      },
+      "birthDate": "2021-05-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최재완은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-최서아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K626-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "남재훈",
+      "lineage": {
+        "surname": "남",
+        "bongwan": "의령",
+        "clan": "b0a8-c758-b839"
+      },
+      "birthDate": "2051-05-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2089,
+          "summary": "남재훈은 신내 환승 당직에서 강남역 호송 기록·열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-최서아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K626-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "남재현",
+      "lineage": {
+        "surname": "남",
+        "bongwan": "의령",
+        "clan": "b0a8-c758-b839"
+      },
+      "birthDate": "2021-05-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "남재현은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-최서아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K859-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민윤",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+      },
+      "birthDate": "2063-04-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "최민윤은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K859-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민우",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+      },
+      "birthDate": "2033-04-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "최민우는 암사 경비 초소에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K859-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최민경",
+      "lineage": {
+        "surname": "최",
+        "bongwan": "경주",
+        "clan": "cd5c-acbd-c8fc-agreed-c544-second"
+      },
+      "birthDate": "2003-04-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최민경은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K859-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임도란",
+      "birthDate": "2063-04-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2101,
+          "summary": "임도란은 암사 경비 초소에서 경비·순찰 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K859-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오도온",
+      "birthDate": "2033-04-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2071,
+          "summary": "오도온은 암사 경비 초소에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K859-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도재",
+      "birthDate": "2003-04-25",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송도재는 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-04.json",
+              "anchor": "인물-최바아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1016-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김명자",
+      "nameEn": "Kim Myeongja",
+      "birthDate": "2057-09-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1016-M-01"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "김명자은 2057년에 태어났다. 구로·금천의 가족 기록과 작업 사본을 읽으며 자랐고, 2075년부터 이웃과 물품 인계 내역을 대조했다.",
+          "summaryEn": "Kim Myeongja was born in 2057 and grew up reading family and work records. From 2075, this ancestor compared goods-transfer records with neighbors.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1016-M-01"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1016-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "이정희",
+      "nameEn": "Lee Jeonghui",
+      "birthDate": "2027-09-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1016-M-02"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2045,
+          "summary": "이정희는 2027년에 태어났다. 구로·금천의 가족 기록과 작업 사본을 읽으며 자랐고, 2045년부터 이웃과 물품 인계 내역을 대조했다.",
+          "summaryEn": "Lee Jeonghui was born in 2027 and grew up reading family and work records. From 2045, this ancestor compared goods-transfer records with neighbors.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1016-M-02"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K1016-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "박미영",
+      "nameEn": "Park Miyeong",
+      "birthDate": "1997-09-03",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1016-M-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "박미영은 2030년 대정전 당시 구로·금천 생활권에서 구로 지역 피난·예비군 명부 관리 일을 했다. 연락이 끊긴 뒤 가족이 만날 거처와 물품 인계 내역을 종이에 남겼다.",
+          "summaryEn": "Park Miyeong was in the family's local community when communications failed in 2030. As a civilian, this ancestor recorded where the family could reunite and the transfer of household supplies.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/cast-family-trees.json",
+              "anchor": "FH-K1016-M-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "DF-CHOI-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최경섭",
+      "birthDate": "1997-09-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/DF-CHOI-01"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "date": "2030-10-14",
+          "summary": "2030년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/DF-CHOI-01"
+            }
+          ]
+        },
+        {
+          "year": 2044,
+          "summary": "2030년 10월 14일 예비군 중대 명부를 들고 나오고, 2044년부터 아들 최문재에게 원본과 사본 대조를 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/DF-CHOI-01"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "DF-CHOI-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최문재",
+      "birthDate": "2027-09-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/DF-CHOI-02"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2044,
+          "summary": "2044년부터 옛 피난 명단과 현재 당번표를 나누어 기록하고, 2074년부터 아들 최태윤에게 대조 업무를 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/DF-CHOI-02"
+            }
+          ]
+        },
+        {
+          "year": 2074,
+          "summary": "2044년부터 옛 피난 명단과 현재 당번표를 나누어 기록하고, 2074년부터 아들 최태윤에게 대조 업무를 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/DF-CHOI-02"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "DF-CHOI-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "최태윤",
+      "birthDate": "2057-09-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/DF-CHOI-03"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2074,
+          "summary": "2074년부터 공동체 교대 명부를 대조하고, 복무를 마친 아들 최일석과 2110년부터 실제 복무·반납 기록을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/DF-CHOI-03"
+            }
+          ]
+        },
+        {
+          "year": 2110,
+          "summary": "2074년부터 공동체 교대 명부를 대조하고, 복무를 마친 아들 최일석과 2110년부터 실제 복무·반납 기록을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/DF-CHOI-03"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "K1016",
+      "personId": "K1016",
+      "kind": "person",
+      "name": "최일석",
+      "birthDate": "2087-09-03",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/K1016"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/K1016"
+            }
+          ]
+        },
+        {
+          "year": 2110,
+          "summary": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/K1016"
+            }
+          ]
+        },
+        {
+          "year": 2126,
+          "summary": "구로에서 태어난 최일석은 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온다. 이후 기록 담당자들과 명부를 대조하는 일을 거쳐 구로·금천 축 동원 명부 서기를 맡는다. 2126년 팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사하며, 탈영 소대가 명부를 사병 조직의 근거로 삼는 것을 경계한다. 열쇠와 명부를 따로 보관하는 것은 자신이 맡은 일을 지키기 위한 선택이다. 최일석은 2087년 구로에서 태어났다. 당대 동원잔존에서 병으로 복무하고 2109년 만기로 돌아온 뒤 아버지 최태윤과 교대 명부를 대조했다. 구로·금천 축의 동원 명부 서기로 실제 복무와 반납 기록을 확인하며, 명부가 사병 조직의 근거로 쓰이는 일을 경계한다. 1997년생 증조부 최경섭은 2030년 예비군 중대의 명부를 들고 나와 연락 가능한 사람과 피난한 사람을 구분했다. 아들 최문재는 옛 피난 명단과 현재 당번표를 나누었고, 손자 최태윤은 교대 명부를 대조했다. 최일석은 2109년 복무를 마친 뒤 아버지와 실제 복무·반납 기록을 함께 확인했다.",
+          "sourceRefs": [
+            {
+              "path": "lore/name-pools/diaspora-family-lineages.json",
+              "anchor": "guro-choi-family/K1016"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-1016",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K219-P-01:K219:biological",
+      "from": "FH-K219-P-01",
+      "to": "K219",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K219-P-02:FH-K219-P-01:biological",
+      "from": "FH-K219-P-02",
+      "to": "FH-K219-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K219-P-03:FH-K219-P-02:biological",
+      "from": "FH-K219-P-03",
+      "to": "FH-K219-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K219-M-01:K219:biological",
+      "from": "FH-K219-M-01",
+      "to": "K219",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K219-M-02:FH-K219-M-01:biological",
+      "from": "FH-K219-M-02",
+      "to": "FH-K219-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K219-M-03:FH-K219-M-02:biological",
+      "from": "FH-K219-M-03",
+      "to": "FH-K219-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-최지우-p1"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K626-P-01:K626:biological",
+      "from": "FH-K626-P-01",
+      "to": "K626",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K626-P-02:FH-K626-P-01:biological",
+      "from": "FH-K626-P-02",
+      "to": "FH-K626-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K626-M-01:K626:biological",
+      "from": "FH-K626-M-01",
+      "to": "K626",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K626-M-02:FH-K626-M-01:biological",
+      "from": "FH-K626-M-02",
+      "to": "FH-K626-M-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-최서아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K859-P-01:K859:biological",
+      "from": "FH-K859-P-01",
+      "to": "K859",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K859-P-02:FH-K859-P-01:biological",
+      "from": "FH-K859-P-02",
+      "to": "FH-K859-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K859-P-03:FH-K859-P-02:biological",
+      "from": "FH-K859-P-03",
+      "to": "FH-K859-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K859-M-01:K859:biological",
+      "from": "FH-K859-M-01",
+      "to": "K859",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K859-M-02:FH-K859-M-01:biological",
+      "from": "FH-K859-M-02",
+      "to": "FH-K859-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K859-M-03:FH-K859-M-02:biological",
+      "from": "FH-K859-M-03",
+      "to": "FH-K859-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-최바아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1016-M-02:FH-K1016-M-01:biological",
+      "from": "FH-K1016-M-02",
+      "to": "FH-K1016-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1016-M-02"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1016-M-03:FH-K1016-M-02:biological",
+      "from": "FH-K1016-M-03",
+      "to": "FH-K1016-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-family-trees.json",
+          "anchor": "FH-K1016-M-03"
+        }
+      ]
+    },
+    {
+      "id": "DF-CHOI-01:DF-CHOI-02:biological",
+      "from": "DF-CHOI-01",
+      "to": "DF-CHOI-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/DF-CHOI-02"
+        }
+      ]
+    },
+    {
+      "id": "DF-CHOI-02:DF-CHOI-03:biological",
+      "from": "DF-CHOI-02",
+      "to": "DF-CHOI-03",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/DF-CHOI-03"
+        }
+      ]
+    },
+    {
+      "id": "DF-CHOI-03:K1016:biological",
+      "from": "DF-CHOI-03",
+      "to": "K1016",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/K1016"
+        }
+      ]
+    },
+    {
+      "id": "FH-K1016-M-01:K1016:biological",
+      "from": "FH-K1016-M-01",
+      "to": "K1016",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/diaspora-family-lineages.json",
+          "anchor": "guro-choi-family/K1016"
+        }
+      ]
+    }
+  ]
+}

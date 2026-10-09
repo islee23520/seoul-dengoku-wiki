@@ -1,0 +1,1942 @@
+{
+  "clanId": "bcf5-ba74-cc9c",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K230",
+      "personId": "K230",
+      "kind": "person",
+      "name": "복두모",
+      "birthDate": "2090-10-16",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K230"
+        },
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 환전로 갱신 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0231",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K256",
+      "personId": "K256",
+      "kind": "person",
+      "name": "복모",
+      "birthDate": "2101-06-19",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K256"
+        },
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 보국문 피난 막사에서 자랐다. 우회로 실측 주지 자리는 고아 명부 줄로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0257",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K282",
+      "personId": "K282",
+      "kind": "person",
+      "name": "복두",
+      "birthDate": "2090-05-22",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K282"
+        },
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "** 2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0283",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K303",
+      "personId": "K303",
+      "kind": "person",
+      "name": "복봉",
+      "birthDate": "2071-11-24",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K303"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 상암 송신실에서 자랐다. 환승 중계 물류상 자리는 정전 사흘 송신 유지로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복봉-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0304",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K307",
+      "personId": "K307",
+      "kind": "person",
+      "name": "복감",
+      "birthDate": "2078-02-12",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K307"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 동북 외곽로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복감-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0308",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K311",
+      "personId": "K311",
+      "kind": "person",
+      "name": "복용",
+      "birthDate": "2090-10-28",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K311"
+        },
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 북동부 중립시장 거점장 자리는 저울 재점검 공개로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0312",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "FH-K230-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승석",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2060-10-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "복승석은 대합실 당직에서 환전로 실측 좌표·갱신 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K230-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승준",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2030-10-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "복승준은 대합실 당직에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K230-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승호",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2000-10-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "복승호는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K230-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현온",
+      "birthDate": "2060-10-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "최현온은 대합실 당직에서 환전로 실측 좌표·갱신 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K230-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현재",
+      "birthDate": "2030-10-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "정현재는 대합실 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K230-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현규",
+      "birthDate": "2000-10-16",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤현규는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-09.json",
+              "anchor": "인물-복두모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K256-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승민",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2071-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "복승민은 보국문 피난 막사에서 우회로 실측·고지 좌표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K256-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승원",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2041-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "복승원은 보국문 피난 막사에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K256-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승진",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2011-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "복승진은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K256-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현섭",
+      "birthDate": "2071-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2109,
+          "summary": "윤현섭은 보국문 피난 막사에서 우회로 실측·고지 좌표 관리 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K256-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "한현혁",
+      "birthDate": "2041-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "한현혁은 보국문 피난 막사에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K256-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현성",
+      "birthDate": "2011-06-19",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "강현성은 대정전 뒤 젖은 생활 기록을 말려 남겨 두고 자녀에게 그 기록의 뜻을 설명한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-10.json",
+              "anchor": "인물-복모-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K282-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승현",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2060-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "복승현은 대합실 당직에서 바깥 선로 실측·목격 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K282-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승영",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2030-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "복승영은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K282-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승윤",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2000-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "복승윤은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K282-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "강현빈",
+      "birthDate": "2060-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "강현빈은 대합실 당직에서 바깥 선로 실측·목격 대조 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K282-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "임현솔",
+      "birthDate": "2030-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "임현솔은 대합실 당직에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K282-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현나",
+      "birthDate": "2000-05-22",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오현나는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-11.json",
+              "anchor": "인물-복두-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K303-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승우",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2041-11-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "복승우는 상암 송신실에서 환승 화물 입고 중량·송장 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K303-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승경",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2011-11-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "복승경은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K303-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정준석",
+      "birthDate": "2041-11-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2079,
+          "summary": "정준석은 상암 송신실에서 환승 화물 입고 중량·송장 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K303-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤준호",
+      "birthDate": "2011-11-24",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤준호는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복봉-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K307-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승수",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2048-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "복승수는 대합실 당직에서 동북 외곽로 실측 선·검색 영장 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복감-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K307-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승은",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2018-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "복승은은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복감-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K307-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임준호",
+      "birthDate": "2048-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "임준호는 대합실 당직에서 동북 외곽로 실측 선·검색 영장 기록 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복감-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K307-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오현도",
+      "birthDate": "2018-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오현도는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복감-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K311-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승연",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2060-10-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "복승연은 노량진 선창에서 시장 시세·재고 게시·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K311-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승정",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2030-10-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "복승정은 노량진 선창에서 공동 거처에 새 가족이 들어오자 쓰지 않던 침구를 손질해 내주고 자녀와 살림을 다시 배치한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K311-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "복승아",
+      "lineage": {
+        "surname": "복",
+        "bongwan": "면천",
+        "clan": "bcf5-ba74-cc9c"
+      },
+      "birthDate": "2000-10-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "복승아는 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K311-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김준원",
+      "birthDate": "2060-10-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2098,
+          "summary": "김준원은 노량진 선창에서 시장 시세·재고 게시·출고 확인 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K311-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "박준현",
+      "birthDate": "2030-10-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2068,
+          "summary": "박준현은 노량진 선창에서 일을 맡은 사람과 쉬는 사람의 몫이 섞이자 교대 시간을 기록해 가족 사이의 부담을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K311-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "이준진",
+      "birthDate": "2000-10-28",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "이준진은 대정전 뒤 사용할 수 있는 살림 도구를 골라 공동 거처의 수선을 시작한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-12.json",
+              "anchor": "인물-복용-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K230-P-01:K230:biological",
+      "from": "FH-K230-P-01",
+      "to": "K230",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K230-P-02:FH-K230-P-01:biological",
+      "from": "FH-K230-P-02",
+      "to": "FH-K230-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K230-P-03:FH-K230-P-02:biological",
+      "from": "FH-K230-P-03",
+      "to": "FH-K230-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K230-M-01:K230:biological",
+      "from": "FH-K230-M-01",
+      "to": "K230",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K230-M-02:FH-K230-M-01:biological",
+      "from": "FH-K230-M-02",
+      "to": "FH-K230-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K230-M-03:FH-K230-M-02:biological",
+      "from": "FH-K230-M-03",
+      "to": "FH-K230-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-09.json",
+          "anchor": "인물-복두모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K256-P-01:K256:biological",
+      "from": "FH-K256-P-01",
+      "to": "K256",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K256-P-02:FH-K256-P-01:biological",
+      "from": "FH-K256-P-02",
+      "to": "FH-K256-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K256-P-03:FH-K256-P-02:biological",
+      "from": "FH-K256-P-03",
+      "to": "FH-K256-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K256-M-01:K256:biological",
+      "from": "FH-K256-M-01",
+      "to": "K256",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K256-M-02:FH-K256-M-01:biological",
+      "from": "FH-K256-M-02",
+      "to": "FH-K256-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K256-M-03:FH-K256-M-02:biological",
+      "from": "FH-K256-M-03",
+      "to": "FH-K256-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-10.json",
+          "anchor": "인물-복모-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K282-P-01:K282:biological",
+      "from": "FH-K282-P-01",
+      "to": "K282",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K282-P-02:FH-K282-P-01:biological",
+      "from": "FH-K282-P-02",
+      "to": "FH-K282-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K282-P-03:FH-K282-P-02:biological",
+      "from": "FH-K282-P-03",
+      "to": "FH-K282-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K282-M-01:K282:biological",
+      "from": "FH-K282-M-01",
+      "to": "K282",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K282-M-02:FH-K282-M-01:biological",
+      "from": "FH-K282-M-02",
+      "to": "FH-K282-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K282-M-03:FH-K282-M-02:biological",
+      "from": "FH-K282-M-03",
+      "to": "FH-K282-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-11.json",
+          "anchor": "인물-복두-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K303-P-01:K303:biological",
+      "from": "FH-K303-P-01",
+      "to": "K303",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K303-P-02:FH-K303-P-01:biological",
+      "from": "FH-K303-P-02",
+      "to": "FH-K303-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K303-M-01:K303:biological",
+      "from": "FH-K303-M-01",
+      "to": "K303",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K303-M-02:FH-K303-M-01:biological",
+      "from": "FH-K303-M-02",
+      "to": "FH-K303-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복봉-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K307-P-01:K307:biological",
+      "from": "FH-K307-P-01",
+      "to": "K307",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K307-P-02:FH-K307-P-01:biological",
+      "from": "FH-K307-P-02",
+      "to": "FH-K307-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K307-M-01:K307:biological",
+      "from": "FH-K307-M-01",
+      "to": "K307",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K307-M-02:FH-K307-M-01:biological",
+      "from": "FH-K307-M-02",
+      "to": "FH-K307-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복감-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K311-P-01:K311:biological",
+      "from": "FH-K311-P-01",
+      "to": "K311",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K311-P-02:FH-K311-P-01:biological",
+      "from": "FH-K311-P-02",
+      "to": "FH-K311-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K311-P-03:FH-K311-P-02:biological",
+      "from": "FH-K311-P-03",
+      "to": "FH-K311-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K311-M-01:K311:biological",
+      "from": "FH-K311-M-01",
+      "to": "K311",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K311-M-02:FH-K311-M-01:biological",
+      "from": "FH-K311-M-02",
+      "to": "FH-K311-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K311-M-03:FH-K311-M-02:biological",
+      "from": "FH-K311-M-03",
+      "to": "FH-K311-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-12.json",
+          "anchor": "인물-복용-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

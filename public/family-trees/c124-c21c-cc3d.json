@@ -1,0 +1,1009 @@
+{
+  "clanId": "c124-c21c-cc3d",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K127",
+      "personId": "K127",
+      "kind": "person",
+      "name": "설강우",
+      "birthDate": "2078-11-10",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K127"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 암사 급수구역 순찰대 조장 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설강우-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0128",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K135",
+      "personId": "K135",
+      "kind": "person",
+      "name": "설봄이",
+      "birthDate": "2082-11-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K135"
+        },
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설봄이-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0136",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K157",
+      "personId": "K157",
+      "kind": "person",
+      "name": "설다흰",
+      "birthDate": "2083-12-14",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K157"
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-설다흰-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0158",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S06",
+        "name": "대한민국정부"
+      }
+    },
+    {
+      "id": "K207",
+      "personId": "K207",
+      "kind": "person",
+      "name": "설초아",
+      "birthDate": "2084-07-17",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K207"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 노량진역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-설초아-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0208",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "FH-K127-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승석",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d-agreed-c6b0-second"
+      },
+      "birthDate": "2048-11-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "설승석은 영등포 정수 당직에서 급수구역 순찰·우회 급수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설강우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K127-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승준",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d-agreed-c6b0-second"
+      },
+      "birthDate": "2018-11-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "설승준은 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설강우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K127-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임현호",
+      "birthDate": "2048-11-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2086,
+          "summary": "임현호는 영등포 정수 당직에서 급수구역 순찰·우회 급수 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설강우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K127-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오승재",
+      "birthDate": "2018-11-10",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "오승재는 대정전 뒤 함께 쓰는 물건의 주인을 기록하여 물품을 나눌 때의 다툼을 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설강우-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K135-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승호",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d"
+      },
+      "birthDate": "2052-11-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "설승호는 신정 차량기지에서 비상발전 연료·출력 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설봄이-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K135-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승민",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d"
+      },
+      "birthDate": "2022-11-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "설승민은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설봄이-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K135-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현진",
+      "birthDate": "2052-11-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2090,
+          "summary": "정현진은 신정 차량기지에서 비상발전 연료·출력 운전 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설봄이-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K135-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤승섭",
+      "birthDate": "2022-11-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤승섭은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-05.json",
+              "anchor": "인물-설봄이-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K157-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승원",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d"
+      },
+      "birthDate": "2053-12-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2091,
+          "summary": "설승원은 대합실 당직에서 대합실 의무 대기표·공증 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-설다흰-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K157-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승진",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d"
+      },
+      "birthDate": "2023-12-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "설승진은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-설다흰-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K157-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이현윤",
+      "birthDate": "2053-12-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2091,
+          "summary": "이현윤은 대합실 당직에서 대합실 의무 대기표·공증 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-설다흰-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K157-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최현연",
+      "birthDate": "2023-12-14",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "최현연은 대정전 뒤 흩어진 식구가 다시 만날 장소를 종이에 적어 이웃에게 맡긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-06.json",
+              "anchor": "인물-설다흰-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K207-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승경",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d"
+      },
+      "birthDate": "2054-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "설승경은 대합실 당직에서 대합실 경매 대기표·의무 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-설초아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K207-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "설승수",
+      "lineage": {
+        "surname": "설",
+        "bongwan": "순창",
+        "clan": "c124-c21c-cc3d"
+      },
+      "birthDate": "2024-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "설승수는 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-설초아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K207-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "정현완",
+      "birthDate": "2054-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2092,
+          "summary": "정현완은 대합실 당직에서 대합실 경매 대기표·의무 창구 운영 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-설초아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K207-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "윤현은",
+      "birthDate": "2024-07-17",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "윤현은은 대정전 뒤 몸이 불편한 이웃의 식량 몫을 대신 옮기고 돌봄을 이어 갈 사람을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-설초아-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K127-P-01:K127:biological",
+      "from": "FH-K127-P-01",
+      "to": "K127",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K127-P-02:FH-K127-P-01:biological",
+      "from": "FH-K127-P-02",
+      "to": "FH-K127-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K127-M-01:K127:biological",
+      "from": "FH-K127-M-01",
+      "to": "K127",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K127-M-02:FH-K127-M-01:biological",
+      "from": "FH-K127-M-02",
+      "to": "FH-K127-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설강우-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K135-P-01:K135:biological",
+      "from": "FH-K135-P-01",
+      "to": "K135",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K135-P-02:FH-K135-P-01:biological",
+      "from": "FH-K135-P-02",
+      "to": "FH-K135-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K135-M-01:K135:biological",
+      "from": "FH-K135-M-01",
+      "to": "K135",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K135-M-02:FH-K135-M-01:biological",
+      "from": "FH-K135-M-02",
+      "to": "FH-K135-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-05.json",
+          "anchor": "인물-설봄이-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K157-P-01:K157:biological",
+      "from": "FH-K157-P-01",
+      "to": "K157",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K157-P-02:FH-K157-P-01:biological",
+      "from": "FH-K157-P-02",
+      "to": "FH-K157-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K157-M-01:K157:biological",
+      "from": "FH-K157-M-01",
+      "to": "K157",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K157-M-02:FH-K157-M-01:biological",
+      "from": "FH-K157-M-02",
+      "to": "FH-K157-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-설다흰-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K207-P-01:K207:biological",
+      "from": "FH-K207-P-01",
+      "to": "K207",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K207-P-02:FH-K207-P-01:biological",
+      "from": "FH-K207-P-02",
+      "to": "FH-K207-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K207-M-01:K207:biological",
+      "from": "FH-K207-M-01",
+      "to": "K207",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K207-M-02:FH-K207-M-01:biological",
+      "from": "FH-K207-M-02",
+      "to": "FH-K207-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-설초아-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1234 @@
+{
+  "clanId": "ae40-ac15-b989-91d1",
+  "personId": null,
+  "nodes": [
+    {
+      "id": "K061",
+      "personId": "K061",
+      "kind": "person",
+      "name": "김도하",
+      "birthDate": "2097-04-07",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K061"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 대합실 당직에서 자랐다. 마곡·방화 주민대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0061",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "K503",
+      "personId": "K503",
+      "kind": "person",
+      "name": "김준호",
+      "birthDate": "2070-02-12",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K503"
+        },
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-김준호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0503",
+      "affiliation": {
+        "kind": "union",
+        "name": "종교 연합"
+      }
+    },
+    {
+      "id": "K895",
+      "personId": "K895",
+      "kind": "person",
+      "name": "김바호",
+      "birthDate": "2094-12-26",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K895"
+        },
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0895",
+      "affiliation": {
+        "kind": "neutral",
+        "name": "중앙정보부"
+      }
+    },
+    {
+      "id": "K970",
+      "personId": "K970",
+      "kind": "person",
+      "name": "김은호",
+      "birthDate": "2080-07-27",
+      "deathDate": null,
+      "status": "preserved",
+      "sourceRefs": [
+        {
+          "path": "lore/name-pools/cast-birthdays.json",
+          "anchor": "K970"
+        },
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2126,
+          "summary": "소속: 태욱그룹",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김은호-list2"
+            }
+          ]
+        }
+      ],
+      "detailRoute": "/people/person-0970",
+      "affiliation": {
+        "kind": "state",
+        "stateId": "S02",
+        "name": "규격맹"
+      }
+    },
+    {
+      "id": "FH-K061-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김승훈",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1"
+      },
+      "birthDate": "2067-04-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2105,
+          "summary": "김승훈은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K061-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김승범",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1"
+      },
+      "birthDate": "2037-04-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "김승범은 대합실 당직에서 거처를 자주 옮겨야 했으므로 잠자리와 식량 몫을 따로 적어 자녀가 낯선 곳에서도 살림을 꾸리게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K061-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김승재",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1"
+      },
+      "birthDate": "2007-04-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김승재는 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K061-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "이승훈",
+      "birthDate": "2067-04-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2105,
+          "summary": "이승훈은 대합실 당직에서 대합실 당직 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K061-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "최승문",
+      "birthDate": "2037-04-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2075,
+          "summary": "최승문은 대합실 당직에서 낯선 이웃과 한 거처를 나누게 되자 서로의 생활 방식을 듣고 가족의 약속을 고쳐 적는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K061-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "정승혁",
+      "birthDate": "2007-04-07",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "정승혁은 대정전 뒤 서로 다른 말로 적힌 물품 이름을 대조하여 교환 때 생기는 오해를 줄인다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김도하-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K503-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김태우",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2040-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "김태우는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-김준호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K503-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김태경",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2010-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김태경은 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-김준호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K503-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "구태수",
+      "lineage": {
+        "surname": "구",
+        "bongwan": "능성",
+        "clan": "ad6c-b2a5-c131"
+      },
+      "birthDate": "2040-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2078,
+          "summary": "구태수는 서울역 등기소에서 감사 기록·당직 열쇠 인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-김준호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K503-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "구태규",
+      "lineage": {
+        "surname": "구",
+        "bongwan": "능성",
+        "clan": "ad6c-b2a5-c131"
+      },
+      "birthDate": "2010-02-12",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "구태규는 대정전 뒤 거처에 남은 식량을 세어 가족과 이웃의 첫 배급 몫을 나눈다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-16.json",
+              "anchor": "인물-김준호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K895-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민준",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2064-12-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "김민준은 노량진 선창에서 비상배급표 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K895-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민호",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2034-12-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "김민호는 노량진 선창에서 가족이 떨어져 살게 되자 안부를 전할 장소와 날짜를 정해 연락이 끊기지 않게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K895-P-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민민",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2004-12-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김민민은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K895-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "임민석",
+      "birthDate": "2064-12-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2102,
+          "summary": "임민석은 노량진 선창에서 비상배급표 공개 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K895-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "오민진",
+      "birthDate": "2034-12-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2072,
+          "summary": "오민진은 노량진 선창에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K895-M-03",
+      "personId": null,
+      "kind": "historical",
+      "name": "송도온",
+      "birthDate": "2004-12-26",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "송도온은 대정전 뒤 가족의 짐을 가볍게 줄여 이웃과 함께 새로운 거처로 옮긴다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-08.json",
+              "anchor": "인물-김바호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K970-P-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민혁",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2050-07-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2088,
+          "summary": "김민혁은 대합실 당직에서 당직 기록 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김은호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K970-P-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민문",
+      "lineage": {
+        "surname": "김",
+        "bongwan": "강릉",
+        "clan": "ae40-ac15-b989-91d1-agreed-d638-second"
+      },
+      "birthDate": "2020-07-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김민문은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김은호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K970-M-01",
+      "personId": null,
+      "kind": "historical",
+      "name": "조민섭",
+      "birthDate": "2050-07-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2088,
+          "summary": "조민섭은 대합실 당직에서 당직 기록 인수인계 일을 가까이 접한 자녀와 생활 기록을 대조하며, 맡은 일과 가족의 살림을 구분하도록 가르친다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김은호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    },
+    {
+      "id": "FH-K970-M-02",
+      "personId": null,
+      "kind": "historical",
+      "name": "김민섭",
+      "birthDate": "2020-07-27",
+      "deathDate": null,
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2030,
+          "summary": "김민섭은 대정전 뒤 끊긴 연락을 대신할 안부 기록을 남겨 가족이 서로의 거처를 찾게 한다.",
+          "sourceRefs": [
+            {
+              "path": "lore/characters/Cast-State-03.json",
+              "anchor": "인물-김은호-list2"
+            },
+            {
+              "path": "lore/name-pools/cast-family-trees.json"
+            }
+          ]
+        }
+      ],
+      "detailRoute": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "FH-K061-P-01:K061:biological",
+      "from": "FH-K061-P-01",
+      "to": "K061",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K061-P-02:FH-K061-P-01:biological",
+      "from": "FH-K061-P-02",
+      "to": "FH-K061-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K061-P-03:FH-K061-P-02:biological",
+      "from": "FH-K061-P-03",
+      "to": "FH-K061-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K061-M-01:K061:biological",
+      "from": "FH-K061-M-01",
+      "to": "K061",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K061-M-02:FH-K061-M-01:biological",
+      "from": "FH-K061-M-02",
+      "to": "FH-K061-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K061-M-03:FH-K061-M-02:biological",
+      "from": "FH-K061-M-03",
+      "to": "FH-K061-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김도하-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K503-P-01:K503:biological",
+      "from": "FH-K503-P-01",
+      "to": "K503",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K503-P-02:FH-K503-P-01:biological",
+      "from": "FH-K503-P-02",
+      "to": "FH-K503-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K503-M-01:K503:biological",
+      "from": "FH-K503-M-01",
+      "to": "K503",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K503-M-02:FH-K503-M-01:biological",
+      "from": "FH-K503-M-02",
+      "to": "FH-K503-M-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-16.json",
+          "anchor": "인물-김준호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K895-P-01:K895:biological",
+      "from": "FH-K895-P-01",
+      "to": "K895",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K895-P-02:FH-K895-P-01:biological",
+      "from": "FH-K895-P-02",
+      "to": "FH-K895-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K895-P-03:FH-K895-P-02:biological",
+      "from": "FH-K895-P-03",
+      "to": "FH-K895-P-02",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K895-M-01:K895:biological",
+      "from": "FH-K895-M-01",
+      "to": "K895",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K895-M-02:FH-K895-M-01:biological",
+      "from": "FH-K895-M-02",
+      "to": "FH-K895-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K895-M-03:FH-K895-M-02:biological",
+      "from": "FH-K895-M-03",
+      "to": "FH-K895-M-02",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-08.json",
+          "anchor": "인물-김바호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K970-P-01:K970:biological",
+      "from": "FH-K970-P-01",
+      "to": "K970",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K970-P-02:FH-K970-P-01:biological",
+      "from": "FH-K970-P-02",
+      "to": "FH-K970-P-01",
+      "type": "biological",
+      "parentRole": "father",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K970-M-01:K970:biological",
+      "from": "FH-K970-M-01",
+      "to": "K970",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    },
+    {
+      "id": "FH-K970-M-02:FH-K970-M-01:biological",
+      "from": "FH-K970-M-02",
+      "to": "FH-K970-M-01",
+      "type": "biological",
+      "parentRole": "mother",
+      "status": "authored",
+      "sourceRefs": [
+        {
+          "path": "lore/characters/Cast-State-03.json",
+          "anchor": "인물-김은호-list2"
+        },
+        {
+          "path": "lore/name-pools/cast-family-trees.json"
+        }
+      ]
+    }
+  ]
+}

@@ -188,3 +188,17 @@ export function projectFamilyTree(graph, personId, detailRoutes) {
   return { personId, nodes: graph.nodes.filter((node) => included.has(node.id)).map((node) => ({ ...node, detailRoute: node.personId ? detailRoutes.get(node.personId) ?? null : null })),
     edges: graph.edges.filter((edge) => included.has(edge.from) && included.has(edge.to)) }
 }
+
+// A clan projection seeds every issued member at once; the closure equals the union of the members' person projections.
+export function projectClanFamilyTree(graph, personIds, detailRoutes) {
+  const included = new Set(personIds)
+  let changed = true
+  while (changed) {
+    changed = false
+    for (const edge of graph.edges) if (included.has(edge.to) && !included.has(edge.from)) { included.add(edge.from); changed = true }
+  }
+  const ancestors = new Set(included)
+  for (const edge of graph.edges) if (ancestors.has(edge.from)) included.add(edge.to)
+  return { personId: null, nodes: graph.nodes.filter((node) => included.has(node.id)).map((node) => ({ ...node, detailRoute: node.personId ? detailRoutes.get(node.personId) ?? null : null })),
+    edges: graph.edges.filter((edge) => included.has(edge.from) && included.has(edge.to)) }
+}
