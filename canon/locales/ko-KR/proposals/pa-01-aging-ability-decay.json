@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/pa-01-aging-ability-decay.md",
+    "lineStart": 1,
+    "lineEnd": 46,
+    "sha256": "c4df73486a61bb7c261c54b4aa5b496a53e3cb2770bc802da66137d610a684dc"
+  },
+  "document": {
+    "id": "doc.pa-01-aging-ability-decay",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "PA-01 노화 능력 감퇴 — 사양서 (상태: 「제안」, GDD PR 대기)"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드: `src/engine/aging.ts`(순수 식) · `src/engine/sim.ts applyAging`(생일 적용). 테스트: `tests/specs.test.ts`."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "1. GDD가 비운 것"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D02(생활·욕구·건강·기분)·`character-sheet-formulas.json`은 건강 0 규칙은 두지만 「나이가 들수록 누적되는 패널티」의 식·시작 나이·대상 능력을 정하지 않는다. 이 사양은 그 빈칸을 채우는 제안이다. GDD 정본이 아니다."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2. 규칙"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "매 **생일(나이가 오르는 날)** 나이 a ≥ 50이면 한 번 판정한다."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "1. 풀 P(a): a∈[50,59] → {ST, DX}; a≥60 → {ST, DX, IQ}."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2. 실패 확률 `p(a,HT) = clamp( base + perYear×(a−50) − htRelief×(HT−htRef), minP, maxP )`."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3. 굴림 u1∈[0,1) 이 p보다 작으면 **실패**. 대상 능력은 `P[ floor(u2×|P|) ]`."
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4. 실패하고 그 능력의 현재값 > 하한(8)이면 그 능력 −1(누적, `run.flags.aging_ST|DX|IQ`), 건강 −2(게임측). 하한 이하면 변화 없음(「하한에 막힘」)."
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5. u1,u2 는 `hash32(seed|aging1|cid|a)`, `hash32(seed|aging2|cid|a)` / 2³²(난수 스트림을 소비하지 않아 다른 결과를 흔들지 않는다)."
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "6. 위키 시트 원본(캐시)은 바꾸지 않는다. 표시 능력치 = 위키 값 − 누적 감퇴."
+        }
+      ],
+      "id": "source.b12"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "7. 파생치(HP=ST 등)는 GDD 파생식에 따라 다시 계산한다. 파생식이 미정인 값은 미정 표시를 유지한다."
+        }
+      ],
+      "id": "source.b13"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3. 매개변수 표"
+        }
+      ],
+      "id": "source.b14"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| 이름 | 값 | 범위(조정 허용) | 의미 |"
+        }
+      ],
+      "id": "source.b15"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "|---|---|---|---|"
+        }
+      ],
+      "id": "source.b16"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| startPhysical | 50 | 45–60 | ST·DX 판정 시작 나이 |"
+        }
+      ],
+      "id": "source.b17"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| startMental | 60 | 55–70 | IQ가 풀에 들어오는 나이 |"
+        }
+      ],
+      "id": "source.b18"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| base | 0.15 | 0.05–0.30 | 시작 나이의 기본 실패 확률 |"
+        }
+      ],
+      "id": "source.b19"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| perYear | 0.03 | 0.01–0.05 | 나이 1살당 증가 |"
+        }
+      ],
+      "id": "source.b20"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| htRelief | 0.02 | 0–0.04 | HT 1점당 감소 |"
+        }
+      ],
+      "id": "source.b21"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| htRef | 10 | 고정 | 기준 HT |"
+        }
+      ],
+      "id": "source.b22"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| minP / maxP | 0.05 / 0.95 | — | 확률 클램프 |"
+        }
+      ],
+      "id": "source.b23"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| floor | 8 | 6–10 | 능력 하한 |"
+        }
+      ],
+      "id": "source.b24"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| healthPerLoss | 2 | 0–5 | 감퇴 시 건강 차감(게임측) |"
+        }
+      ],
+      "id": "source.b25"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4. 예제"
+        }
+      ],
+      "id": "source.b26"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 50세, HT 10: p = 0.15. u1=0.10 → 실패, u2=0.3 → 풀{ST,DX}[0]=ST −1."
+        }
+      ],
+      "id": "source.b27"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 60세, HT 10: p = 0.15+0.03×10 = 0.45. u1=0.40 → 실패, u2=0.99 → IQ −1."
+        }
+      ],
+      "id": "source.b28"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 70세, HT 14: p = 0.15+0.60−0.08 = 0.67."
+        }
+      ],
+      "id": "source.b29"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 50세, HT 30: p = clamp(0.15−0.40)=0.05(최저)."
+        }
+      ],
+      "id": "source.b30"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 60세, ST 이미 8, u1=0.1, u2=0 → 실패하나 「하한에 막힘」, 변화 없음."
+        }
+      ],
+      "id": "source.b31"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기대 감퇴(HT10, 50→80세 30번 판정): Σp ≈ 0.15…1.02 클램프 → 약 17회, 능력 합계 약 −17(세 능력에 분산)."
+        }
+      ],
+      "id": "source.b32"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5. 테스트 케이스 (tests/specs.test.ts)"
+        }
+      ],
+      "id": "source.b33"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "49세 p=0 · 50/60/70세 예제 값 · 클램프 · 풀 구성 · 능력 선택(u2) · 하한 막힘. 엔진 결정론: 같은 시드의 생애 기록은 동일(tests/engine.test.ts)."
+        }
+      ],
+      "id": "source.b34"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "6. 장르 근거·균형"
+        }
+      ],
+      "id": "source.b35"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3는 나이 대별 노쇠 특성, GURPS는 50세부터 매년 HT 판정(능력 감퇴). 평균 수명 70대 유지가 목표이며 감퇴는 생애 후반의 계승 압박을 만든다. 대안: 연속 곡선(HP 최대 감소)."
+        }
+      ],
+      "id": "source.b36"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "7. GDD PR 초안"
+        }
+      ],
+      "id": "source.b37"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제목: `D02: 노화에 따른 능력 감퇴 판정 추가(제안)`"
+        }
+      ],
+      "id": "source.b38"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "본문: 「D02 생활·욕구·건강·기분」에 다음 절을 추가한다. 「나이 a가 50 이상인 인물은 생일마다 한 번 노화 판정을 한다. 실패 확률은 p = clamp(0.15 + 0.03×(a−50) − 0.02×(HT−10), 0.05, 0.95). 실패하면 풀({ST, DX}, 60세부터 {ST, DX, IQ}) 중 하나를 골라 1점 잃는다(하한 8). 판정 난수는 인물 스트림이 아닌 결정 해시를 쓴다.」 매개변수는 소유자 조정 대상으로 표에 둔다. 근거: character-sheet-formulas.json 의 HT, 건강 0 규칙. 상태: 제안."
+        }
+      ],
+      "id": "source.b39"
+    }
+  ]
+}
