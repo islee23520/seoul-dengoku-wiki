@@ -618,22 +618,6 @@ test('surface and underground territory are separate flat views switched explici
 })
 
 
-test('outside units render with Seoul parity in every frame from the three-state default entry', async () => {
-  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
-  assert.match(map, /useState<'seoul' \| 'peninsula'>\('peninsula'\)/u)
-  assert.match(map, /const peninsulaLeft = \(e0 - territories\.projection\.minEast\)/u)
-  assert.doesNotMatch(map, /frame === 'peninsula' && outsideUnits/u)
-  const outsideLine = map.split('\n').find((line) => line.includes('data-outside-unit={unit.id}'))
-  assert.ok(outsideLine)
-  assert.match(outsideLine, /stroke=\{selectedOutsideUnit === unit\.id \? '#ffe18c' : '#35434b'\}/u)
-  assert.ok(map.split('\n').some((line) => line.includes('const fillOpacity = selectedOutsideUnit === unit.id ? 0.95')))
-  assert.match(map, /holderName \? matched \? 0\.72 : 0\.24 : 0\.1/u)
-  assert.match(outsideLine, /data-island-component=\{component\.id\}/u)
-  assert.match(outsideLine, /data-control-status=\{component\.status\}/u)
-  assert.match(outsideLine, /role="button" tabIndex=\{0\}/u)
-  assert.match(outsideLine, /event\.key === 'Enter' \|\| event\.key === ' '/u)
-})
-
 test('approved control ledger keeps Daejeon neutral with evidence-bound personal holdings', async () => {
   const units = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
   const control = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))

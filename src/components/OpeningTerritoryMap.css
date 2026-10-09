@@ -636,6 +636,10 @@
 .territory-rail-toggle { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 700; }
 .territory-map-flat .territory-detail { max-block-size: 85%; }
 
+.territory-title-chip[data-title-unassigned] {
+  background: #2a3a44;
+}
+
 /* Confirmed holding selection uses the existing map geometry and click handlers. */
 .territory-map-flat > .territory-detail { inset-block-start: auto; inset-block-end: 0.75rem; inset-inline-start: 0.75rem; inset-inline-end: auto; border: 1px solid var(--wiki-line); box-shadow: none; }
 .campaign-holding { word-break: keep-all; overflow-wrap: anywhere; }
