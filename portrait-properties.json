@@ -2163,7 +2163,7 @@
       }
     },
     "person-0195": {
-      "face": "예리하지만 절제된 시선",
+      "face": "예리하지만 절제된 시선과 은은하게 패인 볼 윤곽",
       "hair": "낮게 묶은 짙은 머리",
       "upper": "도구나 열쇠 없는 따뜻한 회갈색 작업 재킷",
       "identity": {
@@ -2185,7 +2185,7 @@
       "slots": {
         "face": {
           "description": {
-            "value": "예리하지만 절제된 시선",
+            "value": "예리하지만 절제된 시선과 은은하게 패인 볼 윤곽",
             "status": "art-proposal",
             "source": "portrait-tokens/person-0195.json"
           },
@@ -3971,6 +3971,11 @@
       "face": "Preserve the supplied individual facial proportions in a complete 2D redraw. Broad rounded oval face, soft full cheeks and jaw, narrow almond eyes with gently lowered outer corners, straight low-set eyebrows, moderate nose bridge with a broad softly rounded tip, closed neutral mouth with a fuller lower lip. No glasses.",
       "hair": "Short dense black hair, softly parted front fringe, rounded natural crown. Preserve individual hair design without copying photographic texture.",
       "upper": "Plain charcoal-gray collarless cloth jacket over a muted cream round-neck shirt. Simple front opening, no uniform insignia, logos, armor, embroidery or dangling tools."
+    },
+    "person-0719": {
+      "face": "흰 피부와 밝은 갈색 눈, 곧은 콧대와 또렷한 턱선. 차분하고 서늘한 눈매 아래에 옅은 음영이 남아 있다.",
+      "hair": "자연스럽게 가르마를 탄 검은 머리와 이마로 내려온 앞머리.",
+      "upper": "밝은 셔츠 위에 짙은 회색 작업 재킷을 걸쳤다."
     }
   }
 }
