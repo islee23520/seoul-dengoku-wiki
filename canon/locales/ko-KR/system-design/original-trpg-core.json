@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Original-TRPG-Core.md",
+    "lineStart": 1,
+    "lineEnd": 23,
+    "sha256": "4d966cf48fa9dd244ec1f1c5a598791843711419026002a289398e39cbd46608"
+  },
+  "document": {
+    "id": "doc.Original-TRPG-Core",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "독자 TRPG 핵심 규칙 체계"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "《서울:전국》은 외부 규칙표의 작동 차용 없이 자체 판정 체계로 인물·부대·국가를 해결한다. 2026-10-08 소유자 결정으로 판정 핵심과 숫자 범위, 기존 수치의 보존 방식을 확정했다. 이 문서는 그 계약을 정리한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대항 d10 판정"
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "불확실한 행위 경쟁은 대항 d10로 해결한다. 행위측과 저항측이 각자 공정한 d10 한 개를 굴리고 마진=(rA−rB)+(aA−aB)+c를 계산한다. 양수는 행위측 성과, 0은 교착, 음수는 저항측 성과다. 동등 조건의 분포는 100순서쌍에서 승리 45·교착 10·패배 45이고 기량 2점 우위에서는 64·8·28이다. 이 분포는 2026-10-08 전수 열거 검증으로 확인했다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기량은 정수 0–12, 원인별 상황 보정의 합은 −4–+4까지다(프로필 seoul-opposed-d10-0-12-c4-v1, 소유자 결정 2026-10-08). 범위 밖 조합은 거부하고 자동 성공·대실패 면은 없다. 주사위는 동의·소유권·도착·치료·사망을 만들지 않는다. 교착은 무료 재굴림 없이 새로운 실제 행위와 자원을 요구한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기존 수치 보존"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기존 1,022명의 인물 수치 54,467개는 변경 없이 봉인했다. 능력치·기술·CP·보조 수치는 역사적 설정값으로 읽기 전용 보존하며 새 기량으로 자동 환산하지 않는다. 두 역사 판본(부모 핀 ce173686, 작업본 5f34d92d)을 모두 유지하고 발급·화면·API는 명시적 판본 선택을 요구한다. 자동 최신 선택은 없다."
+        }
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "특성·능력·아이콘"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "특성은 아홉 논리 범주(수행 기량·학습 이력·성격·신체 조건·부상·욕구·관계·지식·권한)로 등록하고 여덟 원안 시각 범주로 표시한다. 아이콘은 서울 자체 문법으로만 제작하며 외부 게임의 그림·문장·색 규약을 복제하지 않는다. 성격·학습 이력·권한은 판정 보정 통로를 갖지 않는다. 관측 권한이 없는 특성은 항목 자체를 표시하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산 시트와 계약"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "보존 원장, 인물·판본 선택 시트, 대항 d10 계산 시트, 열여덟 영역 시스템 시트를 엑셀로 운용하고 실제 스프레드시트 엔진의 재계산으로 검증했다. 순수 계약 모듈은 TOOL/tools/mechanisms/original-trpg에서 타입 계약과 함께 관리한다."
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "개별 인물의 새 기량 배정, 생리·피해·성장 수치표, 국가별 제도 표는 별도 저작과 승인 대상이다. 이 문서는 배정 완료가 아니라 계약 확정을 기록한다."
+        }
+      ]
+    }
+  ]
+}

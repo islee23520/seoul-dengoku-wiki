@@ -1,0 +1,7 @@
+.gdd-archify { margin-block: var(--sui-space-24); border: 1px solid var(--sui-color-line); border-radius: var(--sui-radius-sm); background: var(--sui-color-surface); overflow: hidden; }
+.gdd-archify-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sui-space-12); padding: var(--sui-space-12); }
+.gdd-archify-toolbar > div { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sui-space-12); }
+.gdd-archify-toolbar button { padding: var(--sui-space-4) var(--sui-space-8); border: 1px solid var(--sui-color-line); border-radius: var(--sui-radius-sm); background: var(--sui-color-canvas); color: var(--sui-color-ink); font: inherit; cursor: pointer; }
+.gdd-archify-toolbar :is(button, a):focus-visible { outline: 2px solid var(--sui-color-focus); outline-offset: 2px; }
+.gdd-archify-viewport { min-height: 24rem; resize: vertical; overflow: auto; border-block-start: 1px solid var(--sui-color-line); }
+.gdd-archify-viewport iframe { display: block; width: 100%; height: 100%; border: 0; }

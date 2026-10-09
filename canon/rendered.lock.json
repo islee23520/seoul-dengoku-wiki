@@ -41,7 +41,7 @@
   },
   {
     "path": "Open-Decisions.md",
-    "sha256": "8bfa80469a60ee4811061d2bbe7c3dad3492dc4696abc14f5b54bb7ea6e84dc8"
+    "sha256": "8780972ea12dee87268b968f21ee528c9f3012f6449305043dc924cb11d89e12"
   },
   {
     "path": "Research-Sources.md",
@@ -129,11 +129,11 @@
   },
   {
     "path": "rules/Campaign-Progression.md",
-    "sha256": "9e3055dd9efa54ddfe826250ab1a09fa951e08e611aeda3c9a8bc1169c552108"
+    "sha256": "94db1d7cddbe0ff9da57570cdc2b207df69af97358211e39fdc6d882058f27a4"
   },
   {
     "path": "rules/Hero-Squads-and-Simultaneous-Turns.md",
-    "sha256": "77966527227a46ea4e4f1478bd9616fd6aee396ca19d770fc9a1f5b2506fe2b9"
+    "sha256": "82acf1b9b5d6a3ab335b14de5ecdb32b3c79723a7e33637d4f9c5e09dd83d9af"
   },
   {
     "path": "rules/Realtime-Formation-Card-Battle.md",
@@ -141,7 +141,7 @@
   },
   {
     "path": "rules/Rules-Battle.md",
-    "sha256": "784a6eca501d10b09dbb199a1a75ba19d01719386492b215008961eeeb33f82f"
+    "sha256": "22500a386e285a18c01bd9c2f830e00441c30d7c3deedc651e566a43f76e07f9"
   },
   {
     "path": "rules/Rules-CampaignLoop.md",
@@ -182,6 +182,78 @@
   {
     "path": "rules/Warfare-and-Sieges.md",
     "sha256": "948892e92035cd7722efb057c43a6c3dc6d7ea2f78f8011b47628faaae222ce7"
+  },
+  {
+    "path": "system-design/Archify-D01.md",
+    "sha256": "c607cc28515dbc46bee29c4a43b6ef308ee640026599afe8219133074bbfb298"
+  },
+  {
+    "path": "system-design/Archify-D02.md",
+    "sha256": "576718c094a4709d910f38788f1ca51e39128ba5d593221949e8787c861c4d55"
+  },
+  {
+    "path": "system-design/Archify-D03.md",
+    "sha256": "e10889bd181104ee9d4d2810bd2de99780ca8d76afebaf0706027048a04ab9d1"
+  },
+  {
+    "path": "system-design/Archify-D04.md",
+    "sha256": "9f1094496b6ebbe96ce40dc5189949d78c19aec627eb192aada8373f1af150cb"
+  },
+  {
+    "path": "system-design/Archify-D05.md",
+    "sha256": "9d45ef8d204ee15fefdc5fb9a31147698088cac1542a2bd23a83feceb0ae0393"
+  },
+  {
+    "path": "system-design/Archify-D06.md",
+    "sha256": "153054a0b980381e19bb9518a62a2716c786f4cea2c4fb754397e35dd5acc8dc"
+  },
+  {
+    "path": "system-design/Archify-D07.md",
+    "sha256": "235eafe0a37791eb8c04a4a34259e233bd2273ab8f2a432deb920ac9f820de6a"
+  },
+  {
+    "path": "system-design/Archify-D08.md",
+    "sha256": "06bf575a8868b4c358475187b8814b3a7d784c45c9777ad1f5d3899127e2bd42"
+  },
+  {
+    "path": "system-design/Archify-D09.md",
+    "sha256": "dc8d50f67558178c1807a0a3fa12b4e7ba1383eafc34872ceec63b6988f189f9"
+  },
+  {
+    "path": "system-design/Archify-D10.md",
+    "sha256": "7f5ba63d835bc4b0b0dcc4e9e9da199cc99bd82b26ae8b886f283dde1b69a003"
+  },
+  {
+    "path": "system-design/Archify-D11.md",
+    "sha256": "04f3c6e94eb1160b739987500e278eb22e5123d96b7f7eb601bfd64415d5b37b"
+  },
+  {
+    "path": "system-design/Archify-D12.md",
+    "sha256": "e568bbacf4bc1286cad3d32a18119c68d656621b763365903e0fe2db555039ef"
+  },
+  {
+    "path": "system-design/Archify-D13.md",
+    "sha256": "2d6fd429df4ad642ceed3201bfaba56fa2ab2265c10ec6d617613a1b34bbcf9c"
+  },
+  {
+    "path": "system-design/Archify-D14.md",
+    "sha256": "cd621959d93ad4f2a1a26549d28cd0092b5254c7ab8da8ee4fce3a82524e0fea"
+  },
+  {
+    "path": "system-design/Archify-D15.md",
+    "sha256": "3a40b07832d6ac1a08af8f5a3d9f24daef5c36af69eebac9a9537ea8be6f1bd1"
+  },
+  {
+    "path": "system-design/Archify-D16.md",
+    "sha256": "e3ffa5533daa03585c0e6a430b2680465edc84a65eb475ca2aebb6982f0162cb"
+  },
+  {
+    "path": "system-design/Archify-D17.md",
+    "sha256": "e06c3c086c3557204133ce0825bc1e9263a4054cde03e8ac3b2daba192c5c6fd"
+  },
+  {
+    "path": "system-design/Archify-D18.md",
+    "sha256": "a41b35f2812b70d0b576a09936776401c91bdd441b08d45bbadacc078db86208"
   },
   {
     "path": "system-design/Mechanism-D01.md",
@@ -254,6 +326,10 @@
   {
     "path": "system-design/Mechanism-D18.md",
     "sha256": "06694ff4e60cda9b06db98ce15182a24ff37943d6666bfe2abd1ce343d0113d1"
+  },
+  {
+    "path": "system-design/Original-TRPG-Core.md",
+    "sha256": "4d966cf48fa9dd244ec1f1c5a598791843711419026002a289398e39cbd46608"
   },
   {
     "path": "system-design/Singleplayer-Design-SP-1-0-0.md",
