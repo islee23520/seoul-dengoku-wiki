@@ -5,17 +5,18 @@ import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLab
 
 const json = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 const source = json('../lore/factions/Sixteen-States.json')
+const approved = json('./fixtures/approved-political-partition.json')
 const contract = source.data.currentAffiliation
 const historicalRows = source.content.find(block => block.anchor === 'table').rows.map(row => ({ id: row[0].ko, name: row[1].ko }))
 const affiliations = currentAffiliations(contract, historicalRows)
 const territory = json('../public/opening-territories.json')
 
 test('current hegemons cover the sixteen immediate polities without inventing a union head', () => {
-  const expected = { S02: ['S01', 'S02', 'S03', 'S09'], S06: ['S05', 'S06', 'S07', 'S10', 'S11', 'S12', 'S13', 'S14'] }
+  const expected = Object.fromEntries(contract.hegemons.filter(head => head.kind === 'state').map(head => [head.stateId, approved.approvedStateMembership[head.name]]))
   for (const [head, members] of Object.entries(expected)) {
     assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.stateId === head).map(([id]) => id).sort(), members)
   }
-  assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.kind === 'union').map(([id]) => id).sort(), ['S04', 'S15', 'S16'])
+  assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.kind === 'union').map(([id]) => id).sort(), approved.approvedStateMembership['종교 연합'])
   assert.equal(Object.hasOwn(affiliations.get('S04').currentHegemon, 'stateId'), false)
   assert.equal(hegemonsForHolders(['S04', 'S05', 'S14', 'S15', 'S16'], affiliations).length, 2)
   const rows = source.content.find(block => block.anchor === 'table-gov-relations').rows

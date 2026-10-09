@@ -21,6 +21,7 @@ export function projectOutsideOccupation(control, geometry, islands) {
     }
     assert.equal(row.authority, null, 'E_ISLAND_WHOLE_AUTHORITY')
     assert.ok(!row.holderPersonId && !row.directLiegePersonId && !row.formalTitle, 'E_ISLAND_WHOLE_TITLE')
+    assert.ok(!row.vassal && !row.station, 'E_ISLAND_WHOLE_GRANT')
     assert.equal(createHash('sha256').update(unit.path).digest('hex'), split.pathSha256, 'E_ISLAND_GEOMETRY_HASH')
     const paths = unit.path.match(/M[^Z]+Z/g)
     assert.ok(paths, 'E_ISLAND_GEOMETRY')
@@ -30,7 +31,10 @@ export function projectOutsideOccupation(control, geometry, islands) {
       assert.ok(['mainland-bridge', 'no-mainland-bridge', 'unknown'].includes(part.connection), 'E_ISLAND_CONNECTION')
       assert.ok(!part.holderPersonId && !part.directLiegePersonId && !part.formalTitle, 'E_ISLAND_TITLE')
       if (part.connection === 'mainland-bridge') assert.deepEqual(part.authority, { kind: 'state', stateId: 'S06', name: '대한민국정부' }, 'E_ISLAND_BRIDGE_AUTHORITY')
-      else assert.equal(part.authority, null, 'E_ISLAND_UNASSIGNED')
+      else {
+        assert.equal(part.authority, null, 'E_ISLAND_UNASSIGNED')
+        assert.ok(!part.vassal && !part.station, 'E_ISLAND_UNASSIGNED_GRANT')
+      }
       return { ...part, id: `${row.unitId}:${part.componentIndex}`, path: paths[part.componentIndex], status: part.authority ? 'held' : 'unassigned' }
     })
     return { ...row, status: components.some(part => part.authority) ? 'partial' : 'unassigned', components }

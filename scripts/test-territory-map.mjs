@@ -325,11 +325,8 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
   assert.equal(data.vassals.length, 13)
   assert.deepEqual(data.vassals.map((vassal) => vassal.name).sort(), canonVassals.sort())
   const stateIds = new Set(data.states.map((state) => state.id))
-  const expectedVassalSuzerains = {
-    '경기도': 'S06', '제일수문': 'union:religious', '제이수문': 'S06', '제1분공방': 'S02', '제2분공방': 'S02',
-    '제1종착': 'S06', '제2종착': 'S06', '제1경비지구': 'union:religious', '제2경비지구': 'S06', '제3경비지구': 'S06',
-    '태욱중공업 성남사업장': 'union:religious', '태욱중공업 수원사업장': 'S02', '영종지점': 'S06',
-  }
+  const approved = JSON.parse(await readFile(new URL('./fixtures/approved-political-partition.json', import.meta.url), 'utf8'))
+  const expectedVassalSuzerains = Object.fromEntries(approved.externalDestinations.map(row => [row.name, row.suzerain]))
   assert.deepEqual(Object.fromEntries(data.vassals.map((vassal) => [vassal.name, vassal.suzerain])), expectedVassalSuzerains)
   for (const vassal of data.vassals) {
     assert.ok(stateIds.has(vassal.suzerain) || vassal.suzerain === 'union:religious', `suzerain must be a state id: ${vassal.name}:${vassal.suzerain}`)

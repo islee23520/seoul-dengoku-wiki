@@ -17,10 +17,11 @@ test('mixed units project every island independently without assigning their who
   assert.deepEqual(bukdo.components.filter(part => part.authority).map(part => part.name).sort(), ['모도', '시도', '신도'])
   assert.equal(bukdo.components.find(part => part.name === '장봉도').authority, null)
   for (const row of projected.assignments.filter(row => row.components)) {
+    assert.ok(!row.vassal && !row.station && !row.holderPersonId && !row.directLiegePersonId && !row.formalTitle)
     assert.deepEqual(row.components.map(part => part.path).join(' '), geometry.units.find(unit => unit.id === row.unitId).path)
     for (const part of row.components.filter(part => !part.authority)) {
       assert.equal(part.status, 'unassigned')
-      assert.ok(!part.holderPersonId && !part.formalTitle)
+      assert.ok(!part.vassal && !part.station && !part.holderPersonId && !part.directLiegePersonId && !part.formalTitle)
     }
   }
 })
@@ -33,6 +34,12 @@ test('whole unit takeover, missing components, stale geometry and unbridged gran
     (_, split) => { split.units[0].pathSha256 = 'bad' },
     (_, split) => { split.units[0].components[0].authority = { kind: 'state', stateId: 'S06', name: '대한민국정부' } },
     (_, split) => { split.units[0].components[0].formalTitle = 'invented' },
+    (ledger, split) => { ledger.assignments.find(row => row.unitId === split.units[0].unitId).vassal = 'invented' },
+    (ledger, split) => { ledger.assignments.find(row => row.unitId === split.units[0].unitId).station = 'invented' },
+    (_, split) => { split.units[0].components[0].vassal = 'invented' },
+    (_, split) => { split.units[0].components[0].station = 'invented' },
+    (_, split) => { split.units[0].components[0].holderPersonId = 'K001' },
+    (_, split) => { split.units[0].components[0].directLiegePersonId = 'K001' },
   ]) {
     const ledger = structuredClone(control), split = structuredClone(islands)
     mutate(ledger, split)

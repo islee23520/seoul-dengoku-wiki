@@ -50,10 +50,10 @@ test('outside authority matches the complete owner-approved city partition rathe
   const units = json('public/outside-admin-units.json').units
   const assignments = json('public/outside-control-2126.json').assignments
   const cities = Object.values(approved.gyeonggiCities).flat()
+  const islandUnits = new Set(json(approved.source.correction.islandSource).units.map(unit => unit.unitId))
   assert.equal(new Set(cities).size, 31)
   const expected = units.map(unit => {
-    if (unit.province === '인천광역시') return [unit.id, ['2815551000','2815556000','2871041000','2871042000','2872031000','2872033000','2872034000','2872035000','2872036000','2872037000','2872038000'].includes(unit.id) ? null : '대한민국정부']
-    if (unit.province === '강원특별자치도' || unit.district === '김포시') return [unit.id, '대한민국정부']
+    if (islandUnits.has(unit.id)) return [unit.id, null]
     if (unit.province !== '경기도') return [unit.id, approved.otherProvinces[unit.province]]
     const matches = Object.entries(approved.gyeonggiCities).filter(([, names]) => names.some(name => unit.district.startsWith(name)))
     assert.equal(matches.length, 1, unit.name)
@@ -78,12 +78,12 @@ test('external organizations retain identity while approved city corrections cha
   assert.equal(approved.priorVassals.length, 13)
   assert.ok(approved.priorVassals.every(row => approvedMembership.has(row.suzerain)))
   assert.deepEqual(map.vassals.map(row => row.name).sort(), approved.priorVassals.map(row => row.name).sort())
-  assert.equal(new Set(approved.conflictingExternalLinks).size, 6)
-  assert.deepEqual(map.vassals.map(row => [row.name, row.authorityName, row.suzerain]).sort(), approved.externalDestinations.map(row => ['제이수문','제1종착','영종지점'].includes(row.name) ? [row.name, '대한민국정부', 'S06'] : [row.name, row.authority, row.suzerain]).sort())
+  assert.equal(new Set(approved.conflictingExternalLinks).size, approved.conflictingExternalLinks.length)
+  assert.deepEqual(map.vassals.map(row => [row.name, row.authorityName, row.suzerain]).sort(), approved.externalDestinations.map(row => [row.name, row.authority, row.suzerain]).sort())
   const changed = approved.priorVassals.filter(previous => {
     const current = map.vassals.find(row => row.name === previous.name)
     assert.ok(current, previous.name)
     return approvedMembership.get(previous.suzerain) !== current.authorityName
   }).map(row => row.name).sort()
-  assert.deepEqual(changed, [...approved.conflictingExternalLinks.filter(name => name !== '제1종착'), '영종지점'].sort())
+  assert.deepEqual(changed, [...approved.conflictingExternalLinks].sort())
 })
