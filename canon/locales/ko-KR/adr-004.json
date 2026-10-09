@@ -126,7 +126,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "루트 설정 파일 허용 목록: `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`. 2026-09-21 현재 main에 이미 추적된 진단 유틸리티 `test-regex.mjs`, `update_states.py`는 별도 정리 전까지 legacy root utility로 허용한다. 신규 루트 유틸리티의 추가 권한은 아니다."
+          "text": "루트 설정 파일 허용 목록: `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`. 2026-09-21 현재 main에 이미 추적된 진단 유틸리티 `test-regex.mjs`, `update_states.py`는 별도 정리 전까지 legacy root utility로 허용한다. 신규 루트 유틸리티의 추가 권한은 아니다. `LICENSE`를 루트 파일로 허용한다. `WIKI`, `GDD`, `TOOL/unity-remote`, `TOOL/document-renderer`는 색인 mode 160000 서브모듈 gitlink일 때만 루트 검사에서 예외로 취급하며, 같은 이름의 일반 파일·디렉터리는 별도 허용하지 않는다. 이전 WEB 경로와 LICENSE.md는 현행 허용 목록으로 복원하지 않는다."
         }
       ]
     },
