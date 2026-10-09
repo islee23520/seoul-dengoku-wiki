@@ -356,6 +356,7 @@ test('v3 control rows: null authority and island-level components render honestl
       { id: '9000000001', name: '테스트군 섬일면', province: '테스트도', district: '섬일면', path: 'M0,0 L30,0 L30,20 L0,20 Z', holder2126: null },
       { id: '9000000002', name: '테스트도 무주면', province: '테스트도', district: '무주면', path: 'M40,0 L70,0 L70,20 L40,20 Z', holder2126: null },
       { id: '9000000003', name: '테스트도 유주면', province: '테스트도', district: '유주면', path: 'M80,0 L110,0 L110,20 L80,20 Z', holder2126: null },
+      { id: '9000000004', name: '테스트도 유주면', province: '테스트도', district: '유주면', path: 'M120,0 L150,0 L150,20 L120,20 Z', holder2126: null },
     ] },
     'outside-control-2126.json': { schema: 'outside-control-2126.v3', assignments: [
       { unitId: '9000000001', authority: null, status: 'partial', components: [
@@ -364,6 +365,7 @@ test('v3 control rows: null authority and island-level components render honestl
       ] },
       { unitId: '9000000002', authority: null, status: 'unassigned' },
       { unitId: '9000000003', authority: { kind: 'union', name: '종교 연합' }, status: 'held' },
+      { unitId: '9000000004', authority: { kind: 'state', stateId: 'S06', name: '대한민국정부' }, status: 'held', vassal: '경기도' },
     ] },
     'water.json': { features: [] },
     'confirmed-person-holdings.json': JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8')),
@@ -407,6 +409,22 @@ test('v3 control rows: null authority and island-level components render honestl
     const nullPanel = host.querySelector('#territory-detail-panel')
     const nullEstate = [...nullPanel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '2126 지배')
     assert.match(nullEstate.textContent, /미배정/u)
+    const heldPath = host.querySelector('[data-island-component="9000000003"]')
+    assert.equal(heldPath.getAttribute('aria-label'), '테스트도 유주면 · 종교 연합')
+    const vassalPath = host.querySelector('[data-island-component="9000000004"]')
+    assert.ok(vassalPath)
+    assert.match(vassalPath.getAttribute('aria-label'), /^테스트도 유주면 · 경기도 \/ 대한민국정부$/u)
+    assert.equal((vassalPath.getAttribute('aria-label').match(/테스트도 유주면/gu) ?? []).length, 1)
+    assert.equal(bridges[0].getAttribute('aria-label'), '테스트군 섬일면 · 다리섬 · 대한민국정부')
+    assert.equal(outer[0].getAttribute('aria-label'), '테스트군 섬일면 · 외딴섬 · 섬별 부분 점유')
+    await act(async () => { bridges[0].dispatchEvent(new MouseEvent('click', { bubbles: true })) })
+    for (const island of [bridges[0], outer[0]]) {
+      assert.equal(island.getAttribute('stroke'), '#ffe18c')
+      assert.equal(island.getAttribute('stroke-width'), '1.8')
+      assert.equal(Number(island.getAttribute('fill-opacity')), 0.95)
+    }
+    assert.equal(outer[0].getAttribute('fill'), '#8a969b')
+    assert.equal(outer[0].getAttribute('data-control-status'), 'unassigned')
     await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '작위·영주 지도').click() })
     assert.equal(host.querySelectorAll('[data-island-component="9000000001:0"]')[0].getAttribute('data-title-relation'), 'state')
     assert.equal(host.querySelectorAll('[data-island-component="9000000001:1"]')[0].getAttribute('data-title-relation'), 'unassigned')
