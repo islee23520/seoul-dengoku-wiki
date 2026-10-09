@@ -11,13 +11,15 @@ const affiliations = currentAffiliations(contract, historicalRows)
 const territory = json('../public/opening-territories.json')
 
 test('current hegemons cover the sixteen immediate polities without inventing a union head', () => {
-  const expected = { S02: ['S01', 'S02', 'S03', 'S09'], S06: ['S06', 'S07', 'S10', 'S11', 'S12', 'S13'] }
+  const expected = { S02: ['S01', 'S02', 'S03', 'S09'], S06: ['S05', 'S06', 'S07', 'S10', 'S11', 'S12', 'S13', 'S14'] }
   for (const [head, members] of Object.entries(expected)) {
     assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.stateId === head).map(([id]) => id).sort(), members)
   }
-  assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.kind === 'union').map(([id]) => id).sort(), ['S04', 'S05', 'S14', 'S15', 'S16'])
+  assert.deepEqual([...affiliations].filter(([, state]) => state.currentHegemon.kind === 'union').map(([id]) => id).sort(), ['S04', 'S15', 'S16'])
   assert.equal(Object.hasOwn(affiliations.get('S04').currentHegemon, 'stateId'), false)
-  assert.equal(hegemonsForHolders(['S04', 'S05', 'S14', 'S15', 'S16'], affiliations).length, 1)
+  assert.equal(hegemonsForHolders(['S04', 'S05', 'S14', 'S15', 'S16'], affiliations).length, 2)
+  const rows = source.content.find(block => block.anchor === 'table-gov-relations').rows
+  for (const name of ['동방사', '아관사']) assert.equal(rows.find(row => row[0].ko === name)[1].ko, '복속')
   assert.deepEqual(affiliations.get('S08').currentHegemon, { kind: 'neutral', name: '중립' })
   assert.deepEqual(hegemonsForHolders(['S08', 'S02', 'S06'], affiliations).map(item => item.kind), ['neutral', 'state', 'state'])
 })
