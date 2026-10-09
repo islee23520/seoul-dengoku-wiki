@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/pw-01-war-declaration-threshold.md",
+    "lineStart": 1,
+    "lineEnd": 39,
+    "sha256": "0f5940a3edb3236877a0290ac152a9cd7fdc7b6f5e5bd4e3fba86779e470c594"
+  },
+  "document": {
+    "id": "doc.pw-01-war-declaration-threshold",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "PW-01 전쟁 선포 문턱 — 사양서 (상태: 「제안」, GDD PR 대기)"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드: `src/engine/warrules.ts`(순수 식) · `src/engine/world.ts`(TUNE, worldWeek가 사용). 설정 전환: 「기획서 구현 현황」 탭(평온/격동/냉전)."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "1. GDD가 비운 것"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "`rules/rules-warfare-clauses.json`은 전쟁이 병력 비교가 아니라는 것(-19), 정통성 L(0~100)·전력 S(0~100)의 범위, 독단 공격이 국가 전쟁을 열지 않는 것(-35)을 정하지만 **긴장이 어느 값에서 선전이 되는지, 동원 기간, 휴전 문턱**은 없다."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2. 규칙 (주간 정산, 상태 ID 순)"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "**긴장** 쌍(a,b)마다 매주: `Δ = borderPush×min(5, 접경칸)/5 + goalPush×(확장 야망인 쪽 수) − tensionCool − (동맹 allyCalm) − (봉신쌍 1)`; 긴장 = clamp(긴장+Δ, 0, 100). 확장 야망 = {promotion, land, revenge}."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "**선전 가능**(a가 b에게) = 모두 참: ① 긴장 ≥ declareTension ② S_a ≥ minStrengthRatio×S_b ③ L_a ≥ minLegitimacy ④ 진행 중 전쟁 < maxWars ⑤ 둘 다 다른 전쟁 중 아님 ⑥ 동맹 아님 ⑦ 봉신쌍 아님 ⑧ a의 야망이 확장 ⑨ 쌍·각 나라 쿨다운 없음."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "**후보 점수** = 긴장 + 5×청구칸 + (복수 야망이면 5). 주당 선전은 최고 점수 1쌍(동점만 `world` 스트림 난수)."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "**종결 후** 쌍 쿨다운 = peaceCooldown주, 두 나라 휴식 = stateRest주, 쌍 긴장 = 10."
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "3. 매개변수 표 (프리셋)"
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| 이름 | 평온(기본) | 격동 | 냉전 | 의미 |"
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "|---|---|---|---|---|"
+        }
+      ],
+      "id": "source.b12"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| declareTension | 70 | 60 | 85 | 선전 문턱 |"
+        }
+      ],
+      "id": "source.b13"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| maxWars | 2 | 3 | 1 | 동시 전쟁 상한 |"
+        }
+      ],
+      "id": "source.b14"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| peaceCooldown | 156주 | 78주 | 260주 | 같은 쌍 재전 금지(주) |"
+        }
+      ],
+      "id": "source.b15"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| stateRest | 156주 | (동일) | (동일) | 종전 후 나라 휴식 |"
+        }
+      ],
+      "id": "source.b16"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| minStrengthRatio | 0.6 | | | 약한 쪽이 강한 쪽의 60% 미만이면 선전 불가 |"
+        }
+      ],
+      "id": "source.b17"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| minLegitimacy | 25 | | | 정통성 하한 |"
+        }
+      ],
+      "id": "source.b18"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "| borderPush / goalPush / tensionCool / allyCalm | 0.8 / 0.3 / 0.6 / 1.5 | | | 긴장 계수 |"
+        }
+      ],
+      "id": "source.b19"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "4. 예제"
+        }
+      ],
+      "id": "source.b20"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 접경 3칸, 한쪽만 확장 야망: Δ = 0.8×3/5 + 0.3 − 0.6 = **0.18**/주 → 70까지 약 390주(7.5년). 접경 9칸·양쪽 확장: 0.8+0.6−0.6 = **0.8**/주 → 약 88주."
+        }
+      ],
+      "id": "source.b21"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 동맹이면 Δ −1.5 → 긴장이 줄어든다."
+        }
+      ],
+      "id": "source.b22"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 긴장 75, S_a 80 S_b 60, L_a 50, 전쟁 0건, 확장 야망 → 선전 가능. 긴장 69이면 `tension`으로 막힘. S_a 35·S_b 60 → `strength`."
+        }
+      ],
+      "id": "source.b23"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "- 후보 점수 72, 청구 3칸, 복수 → 92."
+        }
+      ],
+      "id": "source.b24"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시뮬 리포트(`npm run world-report`): 평온 프리셋 세기당 전쟁 약 100건 목표."
+        }
+      ],
+      "id": "source.b25"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "5. 테스트 (tests/specs.test.ts, tests/world.test.ts)"
+        }
+      ],
+      "id": "source.b26"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "조건별 막힘 · 긴장 Δ 예제 3개 · 후보 점수 · 불변식(칸당 보유자 하나, 동시 전쟁 상한) · 같은 시드 같은 원장."
+        }
+      ],
+      "id": "source.b27"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "6. 장르 근거·균형"
+        }
+      ],
+      "id": "source.b28"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CK3는 명분(casus belli)이 있어야 선전하고 전쟁 점수로 종결한다. 이 사양의 명분은 「청구·국경 충돌·국경 긴장」이며 긴장은 CK3의 의견(opinion)·불만 누적에 해당. 평온은 세기당 전쟁 약 100건."
+        }
+      ],
+      "id": "source.b29"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "7. GDD PR 초안"
+        }
+      ],
+      "id": "source.b30"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제목: `rules-warfare: 긴장·선전 문턱과 동시 전쟁 상한 추가(제안)`"
+        }
+      ],
+      "id": "source.b31"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "본문: 「전쟁 선포 조건」 절을 추가한다. 국가 쌍의 긴장은 매주 위 식으로 갱신하고, 선전은 §2의 아홉 조건을 모두 만족할 때 점수가 가장 높은 한 쌍이 한다. 기본값 평온(70/2/156)과 선택 프리셋을 표로 둔다. 독단 공격(-35)은 이 절을 거치지 않는다. 근거: -19(전쟁은 병력 비교가 아님), -20(S 0~100), 정통성 L 0~100. 상태: 제안."
+        }
+      ],
+      "id": "source.b32"
+    }
+  ]
+}
