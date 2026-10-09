@@ -15,7 +15,7 @@ vi.mock('three', async (importOriginal) => {
   } }
 })
 
-test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID'])('selected segment interaction: %s', async (scenario) => {
+test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID', 'overlay-only zoom'])('selected segment interaction: %s', async (scenario) => {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
   const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:동묘앞~신설동'].includes(edge.id))
   const duplicateStation = { ...data.stations.find((station) => station.id === '신촌'), id: 'fixture-overlap', name: '겹침 검증역', memberIds: ['fixture-overlap'] }
@@ -23,7 +23,7 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
   edges.push(overlapEdge)
   const stationIds = new Set(edges.flatMap((edge) => [edge.a, edge.b]))
   stationIds.add('Yeongdeungpo')
-  const surface = scenario === 'three hegemon surface'
+  const surface = scenario === 'three hegemon surface' || scenario === 'overlay-only zoom'
   const mapData = surface ? data : { ...data, hegemons: scenario === 'label fallback' ? data.hegemons : [], edges, stations: [...data.stations.filter((station) => stationIds.has(station.id)), duplicateStation], states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
   const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [0, 0, 1, 1] }], farWaterFile: 'water.json', attribution: '' }
   const assets = { 'opening-territories.json': mapData, 'regional-terrain.json': terrain, 'regional-boundaries.json': [], 'outside-admin-units.json': { units: [] }, 'outside-control-2126.json': { assignments: [] }, 'water.json': { features: [] } }
@@ -45,13 +45,26 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
       assert.equal(host.querySelector('[data-hegemon-label-fallback]').textContent, data.hegemons.map(item => item.name).join(' · '))
       return
     }
+    if (scenario === 'overlay-only zoom') {
+      const svg = host.querySelector('.territory-flat-svg')
+      const initial = svg.getAttribute('viewBox')
+      for (const ctrlKey of [false, true]) {
+        await act(async () => svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, deltaY: -200, ctrlKey })))
+        assert.equal(svg.getAttribute('viewBox'), initial)
+      }
+      await act(async () => host.querySelector('[aria-label="지도 확대"]').click())
+      assert.notEqual(svg.getAttribute('viewBox'), initial)
+      await act(async () => [...host.querySelectorAll('button')].find(button => button.textContent === '초기화').click())
+      assert.equal(svg.getAttribute('viewBox'), initial)
+      return
+    }
     if (surface) {
       const regions = [...host.querySelectorAll('[data-region-id]')]
       assert.equal(regions.length, 427)
-      assert.equal(new Set(regions.map(region => region.getAttribute('fill'))).size, 3)
+      assert.equal(new Set(regions.map(region => region.getAttribute('fill'))).size, 4)
       for (const region of regions) {
-        const hegemon = data.hegemons.find(item => item.memberStateIds.includes(region.getAttribute('data-state-id')))
-        assert.equal(region.getAttribute('data-hegemon'), hegemon.name)
+        const source = data.regions.find(item => item.id === region.getAttribute('data-region-id'))
+        assert.equal(region.getAttribute('data-hegemon'), source.currentHegemons[0].name)
       }
       assert.deepEqual(new Set(host.querySelector('[data-hegemon-labels]').dataset.hegemonLabels.split('|')), new Set(data.hegemons.map(item => item.name)))
       assert.ok(host.querySelector('.territory-national-borders').getAttribute('d'))
@@ -60,7 +73,7 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
       assert.equal(select.querySelectorAll('optgroup').length, 3)
       for (const hegemon of data.hegemons) {
         await act(async () => { select.value = 'hegemon:' + hegemon.name; select.dispatchEvent(new Event('change', { bubbles: true })) })
-        for (const region of host.querySelectorAll('[data-region-id]')) assert.equal(Number(region.getAttribute('fill-opacity')), hegemon.memberStateIds.includes(region.getAttribute('data-state-id')) ? 0.72 : 0.24)
+        for (const region of host.querySelectorAll('[data-region-id]')) assert.equal(Number(region.getAttribute('fill-opacity')), region.getAttribute('data-hegemon') === hegemon.name ? 0.72 : 0.24)
       }
       await act(async () => { select.value = 'S01'; select.dispatchEvent(new Event('change', { bubbles: true })) })
       const capitalRegionId = data.states.find(state => state.id === 'S01').capitalRegionId

@@ -1,10 +1,19 @@
 {
   "schema": "seoul-dengoku.household-humanoid-policy.v1",
-  "approvalRef": "owner household decisions 2026-10-02",
+  "approvalRef": "owner tasks57-67 2026-10-09",
   "sourceRefs": [
-    { "path": "lore/culture/Faith-Culture-Schism.json", "anchor": "가문과-휴머노이드-가신-p1" },
-    { "path": "lore/culture/Faith-Culture-Schism.json", "anchor": "가문과-휴머노이드-가신-p2" },
-    { "path": "lore/culture/Faith-Culture-Schism.json", "anchor": "가문과-휴머노이드-가신-p3" }
+    {
+      "path": "lore/culture/Faith-Culture-Schism.json",
+      "anchor": "가문과-휴머노이드-가신-p1"
+    },
+    {
+      "path": "lore/culture/Faith-Culture-Schism.json",
+      "anchor": "가문과-휴머노이드-가신-p2"
+    },
+    {
+      "path": "lore/culture/Faith-Culture-Schism.json",
+      "anchor": "가문과-휴머노이드-가신-p3"
+    }
   ],
   "counts": "existing-courts-and-direct-retainers-only",
   "tierQuotas": null,
@@ -15,13 +24,11 @@
   ],
   "faithEvidence": "Exact person or house sourceRefs; state residence and institutional sponsorship alone do not establish personal faith.",
   "priority": [
-    "christian-household-exclusion",
-    "faith-evidence",
+    "political-allegiance",
+    "individual-personhood-review",
     "preserve-existing-identity-and-assignment",
     "orientation-preference"
   ],
-  "christianHousehold": "excluded",
-  "unknownFaith": "unresolved",
   "unknownOrientation": "explicit-unknown",
   "knownOrientations": [
     "이성",
@@ -34,5 +41,12 @@
   "existingGender": "preserve",
   "facilityCustody": "not-household; preserve without authorizing new household service",
   "seedKey": "household-humanoid-gender:v1 + supplied seed + permanent owner K ID + stable role key",
-  "sexualRelationship": "not implied by household labor or gender preference"
+  "sexualRelationship": "not implied by household labor or gender preference",
+  "politicalPositions": {
+    "S02": "partnership",
+    "S06": "control",
+    "union:religious": "enemy",
+    "polity:daejeon": "individual-review",
+    "S08": "individual-review"
+  }
 }

@@ -3,8 +3,8 @@
   "status": "proposal",
   "note": "겁스 4판(Basic Set 2004) 인물 수치. 규칙은 lore/characters/Cast-Profile-Contract.md §겁스 4판을 따른다. 카드 산문은 바꾸지 않았고, 모든 비기본 수치에 카드 인용을 붙였다. 조재표(K1003)·신종목(K1009)은 G1 승인 견본값이다. 75 CP 미만인 사람은 모자란 만큼 cp.unspent(미사용 점수)로 채웠고, 미사용 점수는 기술·능력으로 쓰지 않았다(G2 Q2 B). 이연 Observation A는 사용자 확정 직위 줄에 따른다(G2 Q6 C). 언어는 카드에 적힌 것만 0 CP로 싣는다(G2 Q8 C). 두 카드에 다른 문장으로 실린 같은 사건은 능력 근거로 한 번만 센다(G2 Q9 L0 B). 16국 수장에는 수장별 검토의 선택지를 적용한다(G2 Q9 L01–L16). 최지우(K219)는 Core-Characters 판본을 따른다(L09 C). 모두 소유자 결정 2026-09-28이다. scripts/gurps-cast.mjs --check가 인용·계산·순서·해시를 검사한다.",
   "invariants": {
-    "lore/name-pools/values-cast.json": "c9f8ccb8768c1423285cfbc0672256416456aec17e5dc782a20eb8a02e4f3446",
-    "lore/name-pools/person-id-registry.json": "50e8eddc6a68d06590c20aed0f6cf3be588e5bffef9f8890fa818a4fee644d3f"
+    "lore/name-pools/values-cast.json": "7a0182a8cca414848c55ef9ab1e142aafebad7552c0cb6da7a67cb26caf95597",
+    "lore/name-pools/person-id-registry.json": "51f52b4e6cd6ca369f78bcb90990f63196c436bd9f0c4f7d7d6fc3b2768976eb"
   },
   "rules": {
     "edition": "GURPS Basic Set: Characters, 4th ed. (SJG 2004)",
@@ -5485,7 +5485,7 @@
       "id": "K035",
       "name": "장우석",
       "url": "/people/person-0035",
-      "state": "S02",
+      "state": "polity:daejeon",
       "method": "card-lexicon",
       "role": {
         "display": "규격 기록·감사",
@@ -5956,7 +5956,7 @@
       "id": "K038",
       "name": "허다온",
       "url": "/people/person-0038",
-      "state": "S02",
+      "state": "polity:daejeon",
       "method": "card-lexicon",
       "role": {
         "display": "차륜 정비",
@@ -6119,7 +6119,7 @@
       "id": "K039",
       "name": "구찬솔",
       "url": "/people/person-0039",
-      "state": "S02",
+      "state": "polity:daejeon",
       "method": "card-lexicon",
       "role": {
         "display": "공구 물류 거래",
@@ -28992,7 +28992,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29130,7 +29130,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29273,7 +29273,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29405,7 +29405,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29521,7 +29521,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29648,7 +29648,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29812,7 +29812,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -29960,7 +29960,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -30124,7 +30124,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -30293,7 +30293,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -30457,7 +30457,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -30611,7 +30611,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -30764,7 +30764,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -30902,7 +30902,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31082,7 +31082,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31240,7 +31240,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31388,7 +31388,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31526,7 +31526,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31658,7 +31658,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31822,7 +31822,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -31975,7 +31975,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -32102,7 +32102,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -32266,7 +32266,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -32425,7 +32425,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -32563,7 +32563,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -52255,7 +52255,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/7/text/ko",
-              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행은 아차산관문사령부와 구의수비대의 이중 날인을 요구한다."
+              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행은 아관사와 구의수비대의 이중 날인을 요구한다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -52288,7 +52288,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/7/text/ko",
-              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행은 아차산관문사령부와 구의수비대의 이중 날인을 요구한다."
+              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행은 아관사와 구의수비대의 이중 날인을 요구한다."
             }
           ],
           "cp": 8,
@@ -52546,7 +52546,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/84/text/ko",
-              "quote": "급수 시간과 잔압을 게시판에 붙이고, 아차산관문사령부의 단독 개폐는 구의수비대의 결재와 공동 승인 절차로 막는다."
+              "quote": "급수 시간과 잔압을 게시판에 붙이고, 아관사의 단독 개폐는 구의수비대의 결재와 공동 승인 절차로 막는다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -52579,7 +52579,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/84/text/ko",
-              "quote": "급수 시간과 잔압을 게시판에 붙이고, 아차산관문사령부의 단독 개폐는 구의수비대의 결재와 공동 승인 절차로 막는다."
+              "quote": "급수 시간과 잔압을 게시판에 붙이고, 아관사의 단독 개폐는 구의수비대의 결재와 공동 승인 절차로 막는다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -52863,7 +52863,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/106/text/ko",
-              "quote": "마모표와 패킹 날을 벽에 걸고, 아차산관문사령부의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다."
+              "quote": "마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -52917,7 +52917,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/106/text/ko",
-              "quote": "마모표와 패킹 날을 벽에 걸고, 아차산관문사령부의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다."
+              "quote": "마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다."
             }
           ],
           "cp": 8,
@@ -53032,7 +53032,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/117/text/ko",
-              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행 송장은 아차산관문사령부와 구의수비대의 이중 날인이 있기 전에는 싣지 않는다."
+              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행 송장은 아관사와 구의수비대의 이중 날인이 있기 전에는 싣지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -53065,7 +53065,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/117/text/ko",
-              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행 송장은 아차산관문사령부와 구의수비대의 이중 날인이 있기 전에는 싣지 않는다."
+              "quote": "교각 균열과 통행 무게를 매일 공개하고, 군 통행 송장은 아관사와 구의수비대의 이중 날인이 있기 전에는 싣지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -55124,7 +55124,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/227/text/ko",
-              "quote": "징발 쪽지와 실제 통행 인원을 저녁마다 대조하고, 아차산관문사령부와 구의수비대의 공동 승인이 내려오기 전에는 인파를 해산시키지 않는다."
+              "quote": "징발 쪽지와 실제 통행 인원을 저녁마다 대조하고, 아관사와 구의수비대의 공동 승인이 내려오기 전에는 인파를 해산시키지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -55157,7 +55157,7 @@
             {
               "path": "lore/characters/Cast-State-14.json",
               "pointer": "/content/227/text/ko",
-              "quote": "징발 쪽지와 실제 통행 인원을 저녁마다 대조하고, 아차산관문사령부와 구의수비대의 공동 승인이 내려오기 전에는 인파를 해산시키지 않는다."
+              "quote": "징발 쪽지와 실제 통행 인원을 저녁마다 대조하고, 아관사와 구의수비대의 공동 승인이 내려오기 전에는 인파를 해산시키지 않는다."
             },
             {
               "path": "lore/characters/Cast-State-14.json",
@@ -64041,7 +64041,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -66384,7 +66384,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -68673,7 +68673,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -70978,7 +70978,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -73311,7 +73311,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -75616,7 +75616,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -77915,7 +77915,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -80201,7 +80201,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -82497,7 +82497,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -84829,7 +84829,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -87150,7 +87150,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -89449,7 +89449,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -91825,7 +91825,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -94180,7 +94180,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -96468,7 +96468,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -98795,7 +98795,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -101176,7 +101176,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -103534,7 +103534,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -105861,7 +105861,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -108172,7 +108172,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -110450,7 +110450,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -112792,7 +112792,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -115134,7 +115134,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -117428,7 +117428,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -119775,7 +119775,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -122135,7 +122135,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -124475,7 +124475,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -126865,7 +126865,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -129231,7 +129231,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -131536,7 +131536,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -133893,7 +133893,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -136253,7 +136253,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -138581,7 +138581,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -140901,7 +140901,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -143212,7 +143212,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -145490,7 +145490,7 @@
         "composition": [
           "수행원"
         ],
-        "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
+        "note": "개인 수행 요원 — 강세력 중앙정보부 규모",
         "faction_scale": {
           "state": "S08",
           "tier": "강세력",
@@ -148315,7 +148315,7 @@
       "id": "K1008",
       "name": "민웅기",
       "url": "/people/person-1008",
-      "state": "S02",
+      "state": "polity:daejeon",
       "method": "card-lexicon",
       "role": {
         "display": "주 통신 정비사 / 부 고물·철물 수리",

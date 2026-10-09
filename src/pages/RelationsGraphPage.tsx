@@ -120,6 +120,7 @@ export function RelationsGraphPage() {
             stroke="var(--wiki-line)" strokeWidth={active ? 1.5 : 0.5}
             opacity={visibleIds.has(from.id) && active ? 0.65 : 0.1} />
         })}
+        {retainerGraph.groups.map(group => { const owner = nodesById.get(group.liegePersonId); if (!owner) throw new Error('E_RETAINER_GROUP_OWNER'); return <g key={group.id} data-retinue-group={group.id}><line data-group-command={group.id} x1={owner.x} y1={owner.y} x2={owner.x} y2={owner.y + 250} stroke="var(--wiki-line)" /><rect x={owner.x - 15} y={owner.y + 230} width="180" height="45" fill="var(--wiki-toc)" stroke="var(--wiki-line)" /><text x={owner.x - 5} y={owner.y + 247} fontSize="11" fill="var(--wiki-text)">휴머노이드 가신단 {group.count}기</text><text x={owner.x - 5} y={owner.y + 263} fontSize="9" fill="var(--wiki-text)">{group.duties.join(' · ')}</text></g> })}
         {filteredNodes.map((node) => <g
           key={node.id}
           data-person-id={node.id}

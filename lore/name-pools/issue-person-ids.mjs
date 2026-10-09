@@ -37,10 +37,10 @@ const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
 export const SCHEMA = "wiki-person-id-registry.v1";
 export const APPROVED = {
   approvedBy: "owner",
-  approvedAt: "2026-10-05",
-  ownerRef: "call_5INYDiaosJZZcxYeDJuq1FdW: 지역 이름 개정·기존 소속 보존 새 입력 해시 승인",
-  inputSha256: "c9f8ccb8768c1423285cfbc0672256416456aec17e5dc782a20eb8a02e4f3446",
-  candidatesSha256: "eee822a2685e7d223662457f62e63e144a6121461cc6a77d9797c1f3f9e32de2",
+  approvedAt: "2026-10-09",
+  ownerRef: "task57-67-implementation-brief: 승인된 대전 소속·현재 국가명 변경에서 재계산한 입력; 발급 인물 보존",
+  inputSha256: "7a0182a8cca414848c55ef9ab1e142aafebad7552c0cb6da7a67cb26caf95597",
+  candidatesSha256: "c8c25334385b5a72b4d97dfb2264f497c101ab0250d4aa3041947cf6e4368d0b",
 };
 export const FROZEN = { existingK: 422, issued: 600, total: 1022 };
 

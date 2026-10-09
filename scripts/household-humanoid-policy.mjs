@@ -5,7 +5,7 @@ export const householdHumanoidPolicy = JSON.parse(readFileSync(new URL('../lore/
 
 /** @typedef {{path: string, anchor?: string}} SourceRef */
 /** @typedef {{status: 'christian'|'non-christian'|'unknown', sourceRefs: SourceRef[]}} Faith */
-/** @typedef {{ownerPersonId: string, ownerGender: '남성'|'여성', orientation: string|null, personFaith: Faith, houseFaith?: Faith, scope: 'household'|'facility-maintenance', existing: boolean, existingGender: '남성'|'여성'|null, seed: string, roleKey: string}} Request */
+/** @typedef {{ownerPersonId: string, ownerGender: '남성'|'여성', orientation: string|null, personFaith: Faith, houseFaith?: Faith, politicalAuthority?: string, scope: 'household'|'facility-maintenance', existing: boolean, existingGender: '남성'|'여성'|null, seed: string, roleKey: string}} Request */
 
 function validateFaith(faith, label) {
   if (!faith || !householdHumanoidPolicy.faithStates.includes(faith.status) || !Array.isArray(faith.sourceRefs)) throw new Error('E_HOUSEHOLD_FAITH:' + label)
@@ -21,16 +21,16 @@ export function evaluateHouseholdHumanoid(request) {
   validateFaith(request.personFaith, 'person')
   if (request.houseFaith !== undefined) validateFaith(request.houseFaith, 'house')
   if (request.orientation !== null && request.orientation !== '미확인' && !householdHumanoidPolicy.knownOrientations.includes(request.orientation)) throw new Error('E_HOUSEHOLD_ORIENTATION')
-  const faiths = [request.personFaith, request.houseFaith ?? { status: 'unknown', sourceRefs: [] }]
+  const position = householdHumanoidPolicy.politicalPositions[request.politicalAuthority]
   if (request.scope === 'facility-maintenance') return { eligibility: 'not-applicable', reason: 'facility-maintenance-not-household', preference: 'not-applicable', preferredGender: null, existingGender: request.existingGender, assignmentAction: 'preserve' }
-  if (faiths.some(faith => faith.status === 'christian')) return { eligibility: 'excluded', reason: 'christian-household', preference: 'not-applicable', preferredGender: null, existingGender: request.existingGender, assignmentAction: request.existing ? 'report-conflict' : 'do-not-assign' }
-  if (faiths.some(faith => faith.status === 'unknown')) return { eligibility: 'unresolved', reason: 'faith-unknown', preference: 'not-evaluated', preferredGender: null, existingGender: request.existingGender, assignmentAction: request.existing ? 'preserve-pending-review' : 'defer' }
-  if (request.existing) return { eligibility: 'eligible', reason: 'evidenced-non-christian', preference: 'preserved', preferredGender: null, existingGender: request.existingGender, assignmentAction: 'preserve' }
-  if (request.orientation === null || request.orientation === '미확인') return { eligibility: 'eligible', reason: 'evidenced-non-christian', preference: 'unknown', preferredGender: null, existingGender: null, assignmentAction: 'defer-preference' }
+  if (position === 'enemy') return { eligibility: 'excluded', reason: 'hostile-political-authority', preference: 'not-applicable', preferredGender: null, existingGender: request.existingGender, assignmentAction: request.existing ? 'report-conflict' : 'do-not-assign' }
+  if (!position) return { eligibility: 'unresolved', reason: 'political-authority-unknown', preference: 'not-evaluated', preferredGender: null, existingGender: request.existingGender, assignmentAction: request.existing ? 'preserve-pending-review' : 'defer' }
+  if (request.existing) return { eligibility: 'eligible', reason: position, preference: 'preserved', preferredGender: null, existingGender: request.existingGender, assignmentAction: 'preserve' }
+  if (request.orientation === null || request.orientation === '미확인') return { eligibility: 'eligible', reason: position, preference: 'unknown', preferredGender: null, existingGender: null, assignmentAction: 'defer-preference' }
   const preferredGender = request.orientation === '이성'
     ? request.ownerGender === '남성' ? '여성' : '남성'
     : ['남성', '여성'][createHash('sha256').update(JSON.stringify(['household-humanoid-gender:v1', request.seed, request.ownerPersonId, request.roleKey])).digest()[0] % 2]
-  return { eligibility: 'eligible', reason: 'evidenced-non-christian', preference: request.orientation === '이성' ? 'opposite-gender' : 'seeded-random', preferredGender, existingGender: null, assignmentAction: 'proposal-only' }
+  return { eligibility: 'eligible', reason: position, preference: request.orientation === '이성' ? 'opposite-gender' : 'seeded-random', preferredGender, existingGender: null, assignmentAction: 'proposal-only' }
 }
 
 /** Existing authored assignments, not tier quotas, are the quantity contract.

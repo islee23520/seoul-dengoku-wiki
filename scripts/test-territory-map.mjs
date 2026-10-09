@@ -105,13 +105,11 @@ test('outside administrative units keep observed boundaries distinct from 2126 c
   const source = JSON.parse(await readFile(new URL('../lore/regions/outside-control-2126.json', import.meta.url), 'utf8'))
   const projected = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))
   assert.deepEqual(projected, { schema: source.schema, assignments: source.assignments })
-  assert.deepEqual(source.assignments.map(({ unitId, vassal, suzerain, station }) => [unitId, vassal, suzerain, station]), [
-    ['4128757000', '경기도', 'S06', '대화'],
-    ['4183039500', '제일수문', 'S01', '지평'],
-    ['5111057000', '제이수문', 'S01', '춘천'],
-  ])
-  const knownStates = new Set(JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8')).states.map((state) => state.id))
-  assert.ok(source.assignments.every(({ unitId, suzerain }) => outside.units.some((unit) => unit.id === unitId) && knownStates.has(suzerain)))
+  assert.equal(source.assignments.length, 1415)
+  const counts = Object.fromEntries(['대한민국정부', '규격맹', '종교 연합', '대전'].map(name => [name, source.assignments.filter(row => row.authority.name === name).length]))
+  assert.deepEqual(counts, { 대한민국정부: 153, 규격맹: 667, '종교 연합': 513, 대전: 82 })
+  assert.equal(new Set(source.assignments.map(row => row.unitId)).size, 1415)
+  assert.ok(source.assignments.every(({ unitId }) => outside.units.some(unit => unit.id === unitId)))
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
   assert.match(map, /data-outside-unit=\{unit\.id\}/u)
   assert.match(map, /chooseOutsideUnit\(unit\)/u)
@@ -228,7 +226,8 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.ok(data.edges.every((edge) => Array.isArray(edge.lineIds)))
   assert.ok(data.stations.every((station) => ['derived-from-surface', 'outside-surface-atlas', 'control-delta'].includes(station.control?.source)))
   assert.ok(data.stations.every((station) => Object.hasOwn(station.control, 'deltaId')))
-  assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').length > 300)
+  const overrideIds = new Set(JSON.parse(await readFile(new URL('../lore/places/station-control-overrides.json', import.meta.url), 'utf8')).overrides.map(row => row.stationId))
+  assert.deepEqual(data.stations.filter(station => station.control.source === 'control-delta').map(station => station.id).sort(), data.stations.filter(station => overrideIds.has(station.id)).map(station => station.id).sort())
   assert.ok(data.stations.filter((station) => station.control?.source === 'outside-surface-atlas').every((station) => station.control.status === 'unknown'))
   assert.ok(data.stations.every((station) => station.control?.hierarchy?.stationManager.endsWith('역장')))
   assert.ok(data.stations.filter((station) => station.control?.source === 'derived-from-surface').every((station) => station.control?.hierarchy?.regionalAuthority === null ? station.control.memberSurfaces?.length > 1 : station.control?.hierarchy?.regionalAuthority.includes('권역 책임자')))
@@ -292,7 +291,7 @@ test('sixteen states carry the chronicle capitals and tier grades', async () => 
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const expectedCapitals = {
     S01: '양평', S02: '구로', S03: '양재', S04: '삼성', S05: '암사', S06: '광화문',
-    S07: '용산', S08: '흑석', S09: '여의도', S10: '안국', S11: '강남', S12: '신내',
+    S07: '용산', S08: '녹사평', S09: '여의도', S10: '안국', S11: '강남', S12: '신내',
     S13: '제기동', S14: '구의', S15: '명동', S16: '수서',
   }
   const stationById = new Map(data.stations.map((station) => [station.id, station]))
@@ -324,14 +323,14 @@ test('thirteen vassals point at valid suzerains outside the sixteen', async () =
   assert.deepEqual(data.vassals.map((vassal) => vassal.name).sort(), canonVassals.sort())
   const stateIds = new Set(data.states.map((state) => state.id))
   const expectedVassalSuzerains = {
-    '경기도': 'S06', '제일수문': 'S01', '제이수문': 'S01', '제1분공방': 'S02', '제2분공방': 'S02',
-    '제1종착': 'S07', '제2종착': 'S07', '제1경비지구': 'S05', '제2경비지구': 'S05', '제3경비지구': 'S05',
-    '태욱중공업 성남사업장': 'S03', '태욱중공업 수원사업장': 'S03', '영종지점': 'S09',
+    '경기도': 'S06', '제일수문': 'union:religious', '제이수문': 'union:religious', '제1분공방': 'S02', '제2분공방': 'S02',
+    '제1종착': 'S02', '제2종착': 'S06', '제1경비지구': 'union:religious', '제2경비지구': 'S06', '제3경비지구': 'S06',
+    '태욱중공업 성남사업장': 'union:religious', '태욱중공업 수원사업장': 'S02', '영종지점': 'S02',
   }
   assert.deepEqual(Object.fromEntries(data.vassals.map((vassal) => [vassal.name, vassal.suzerain])), expectedVassalSuzerains)
   for (const vassal of data.vassals) {
-    assert.ok(stateIds.has(vassal.suzerain), `suzerain must be a state id: ${vassal.name}:${vassal.suzerain}`)
-    assert.ok(['S01', 'S02', 'S03', 'S05', 'S06', 'S07', 'S09'].includes(vassal.suzerain), `suzerain must hold vassals: ${vassal.name}:${vassal.suzerain}`)
+    assert.ok(stateIds.has(vassal.suzerain) || vassal.suzerain === 'union:religious', `suzerain must be a state id: ${vassal.name}:${vassal.suzerain}`)
+    assert.ok(['S02', 'S06', 'union:religious'].includes(vassal.suzerain), `suzerain must hold vassals: ${vassal.name}:${vassal.suzerain}`)
     assert.ok(vassal.city.length > 0, `city: ${vassal.name}`)
     assert.match(vassal.founded, /^2\d{3}\.\s*\d+\./u, `founded: ${vassal.name}`)
     assert.ok(vassal.duty.length > 0, `duty: ${vassal.name}`)
@@ -350,7 +349,7 @@ test('vassal locality boundaries stay separate from unverified area control', as
   assert.deepEqual(new Set(boundaries.map(({ city }) => city)), new Set(data.vassals.map(({ city }) => city)))
   assert.match(map, /data-vassal-boundary=\{boundary\.city\} d=\{trace\(boundary\.geometry, toMap\)\} fill="none"/u)
   assert.match(map, /data-vassal-marker=\{vassal\.city\} role="button" tabIndex=\{0\}/u)
-  assert.match(map, /setFrame\('peninsula'\); setBox\(\{ x: x - width \/ 2, y: y - height \/ 2, width, height \}\); setSelectedVassal\(vassal\.name\)/u)
+  assert.match(map, /setFrame\('peninsula'\); setBox\(\{ \.\.\.box, x: x - box\.width \/ 2, y: y - box\.height \/ 2 \}\); setSelectedVassal\(vassal\.name\)/u)
 })
 
 test('committed terrain covers Seoul and all surveyed vassal centroids with source attribution', async () => {
@@ -408,7 +407,7 @@ test('government relations come from the canon table and use only defined terms 
   const relations = new Map(canon.content.find((block) => block.anchor === 'table-gov-relations').rows.map((row) => [row[0].ko, row[1].ko]))
   for (const state of data.states) {
     assert.ok(state.relation === null || ['복속', '보좌', '독립'].includes(state.relation), state.id)
-    assert.equal(state.relation, relations.get(state.historicalName) ?? null, state.id)
+    assert.equal(state.relation, relations.get(state.name) ?? null, state.id)
   }
 })
 
@@ -421,14 +420,15 @@ test('all map states project founding, government, foreign relations and dated a
   for (const state of data.states) {
     const row = rows.get(state.id)
     assert.ok(row, state.id)
-    assert.equal(state.founded, row[5].ko, state.id)
+    assert.equal(Object.hasOwn(state, 'origin'), false)
+    assert.equal(Object.hasOwn(state, 'historicalName'), false)
     assert.equal(state.government, row[4].ko, state.id)
-    assert.equal(state.vassals, row[6].ko, state.id)
-    assert.equal(state.religion, row[7].ko, state.id)
-    assert.equal(state.foreignRelations, row[8].ko, state.id)
+    assert.equal(state.vassals, row[5].ko, state.id)
+    assert.equal(state.religion, row[6].ko, state.id)
+    assert.equal(state.foreignRelations, row[7].ko, state.id)
     assert.ok(state.chronology.length > 0, state.id)
     for (const event of state.chronology) {
-      assert.ok(event.text.includes(state.historicalName) || event.text.includes(state.name), state.id)
+      assert.ok(event.text.includes(state.name) || event.text.includes(state.name), state.id)
       assert.ok(prose.has(event.text), state.id)
       assert.equal(event.sourceRoute, `/world/Century-Annals#${event.year}년`, state.id)
     }
@@ -491,7 +491,7 @@ test('selecting a state also selects its capital region and shows state informat
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
 
   assert.ok(data.states.every((state) => typeof state.capitalRegionId === 'string' && state.capitalRegionId.length > 0))
-  assert.ok(data.states.every((state) => state.origin.length > 0 && state.government.length > 0 && state.ruler.length > 0 && state.cause.length > 0))
+  assert.ok(data.states.every((state) => state.government.length > 0 && state.ruler.length > 0 && state.cause.length > 0))
   assert.match(map, /chooseState/)
   assert.match(map, /setSelectedId\(state\.capitalRegionId\)/)
   assert.match(map, /territory-detail-panel/)
@@ -504,7 +504,7 @@ test('selecting a state also selects its capital region and shows state informat
 test('flat map pans and zooms without orbit controls', async () => {
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
   assert.match(map, /onPointerMove/)
-  assert.match(map, /onWheel/)
+  assert.doesNotMatch(map, /onWheel/)
   assert.doesNotMatch(map, /OrbitControls|오빗/)
 })
 

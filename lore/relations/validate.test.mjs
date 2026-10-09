@@ -79,6 +79,7 @@ test("approved owner lieges preserve eight existing edges and add five approved 
     { personId: "K032", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
     { personId: "K037", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
     { personId: "K033", liegePersonId: "K029", relationKind: "direct-liege", ownerTerm: "직속 주군" },
+    ...["K035", "K039", "K038"].map(personId => ({ personId, liegePersonId: "K1008", relationKind: "direct-vassal", ownerTerm: "직속 가신" })),
   ]);
   const sourceQuotes = ownerLieges.sourceBasis.map((basis) => basis.quote);
   assert.ok(sourceQuotes.some((quote) => quote.includes("군주를 뽑고") && quote.includes("군주 자리에 앉았다")));
@@ -113,11 +114,13 @@ test("explicit S01 memberships reuse one immediate liege and preserve K003's own
     { personId: "K003", courtId: "court:K001" },
     { personId: "K004", courtId: "court:K001" },
     { personId: "K005", courtId: "court:K009" },
+    ...["K035", "K039", "K038"].map(personId => ({ personId, courtId: "court:K1008" })),
   ]);
   assert.deepEqual(courts.slice(10), [
     { id: "court:K001", ownerPersonId: "K001", stateId: "S01" },
     { id: "court:K009", ownerPersonId: "K009", stateId: "S01" },
     { id: "court:K998", ownerPersonId: "K998", stateId: "S02" },
+    { id: "court:K1008", ownerPersonId: "K1008", stateId: "polity:daejeon" },
   ]);
   for (const personId of ["K003", "K004", "K005"]) {
     assert.equal(ownerLieges.edges.filter(row => row.personId === personId).length, 1);

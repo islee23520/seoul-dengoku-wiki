@@ -45,7 +45,7 @@ export function loadDataset() {
   const stateByName = new Map(states.map((row) => [row.name, row.id]));
   const vassals = table(stateSource, "table-2").rows.map((row, index) => ({
     id: `V${String(index + 1).padStart(2, "0")}`,
-    name: ko(row[0]), parentStateId: stateByName.get(ko(row[1])),
+    name: ko(row[0]), parentStateId: stateByName.get(ko(row[1])) ?? (ko(row[1]) === "종교 연합" ? "union:religious" : undefined),
     sourceAnchor: "table-2", sourceRow: index,
   }));
   const people = [...registry.persons, ...config.provisionalPeople];
@@ -80,6 +80,7 @@ export function validate(dataset) {
     return ids;
   };
   const stateIds = unique(states, "states");
+  const polityIds = new Set([...stateIds, "union:religious", ...source("relations/personal-holdings.json").polities.map(polity => polity.id)]);
   const personIds = unique(people, "people");
   const peopleById = new Map(people.map((person) => [person.id, person]));
   const stateByPersonId = new Map(sources.registry.persons.map((person, index) => [person.id, sources.values.people[index]?.state]));
@@ -99,7 +100,7 @@ export function validate(dataset) {
   for (const state of states) fk(state.sourceAnchor, stateAnchors, "state anchor");
   if (vassals.length !== 13) errors.push("vassals: expected 13");
   for (const row of vassals) {
-    fk(row.parentStateId, stateIds, row.id);
+    fk(row.parentStateId, polityIds, row.id);
     fk(row.sourceAnchor, stateAnchors, row.id);
   }
   if (sources.registry.totalPeople !== 1022 || sources.registry.persons.length !== 1022 ||
@@ -129,7 +130,7 @@ export function validate(dataset) {
   const courtById = new Map(courts.map((court) => [court.id, court]));
   for (const court of courts) {
     fk(court.ownerPersonId, personIds, `${court.id}.ownerPersonId`);
-    fk(court.stateId, stateIds, `${court.id}.stateId`);
+    fk(court.stateId, polityIds, `${court.id}.stateId`);
     if (court.id !== `court:${court.ownerPersonId}`) errors.push(`${court.id}: invalid owner-linked court ID`);
     if (stateByPersonId.get(court.ownerPersonId) !== court.stateId) errors.push(`${court.id}: foreign nation owner`);
   }

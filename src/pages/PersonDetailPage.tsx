@@ -28,6 +28,8 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   proseContacts?: readonly { readonly recipientId: string; readonly recipientName: string; readonly basis: string; readonly sourceRef: { readonly path: string; readonly anchor: string } }[]
   rightsPermissions?: PersonRightsPermissions
   confirmedHoldings?: readonly ConfirmedHolding[]
+  sovereignTitle?: { formalTitle: string; formalTitleRank: string; office: string } | null
+  retinueGroups?: readonly { id: string; name: { ko: string }; count: number; duties: readonly string[] }[]
   gurps: GurpsSheetData & { id: string; personId: string }
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
   territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
@@ -451,7 +453,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           {detail.household && <DataTable title="가정과 신앙" rows={[
             ['개인 신앙', ({ unknown: '미확인', christian: '기독교', 'non-christian': '비기독교' })[detail.household.personFaith]],
             ['가문 신앙', ({ unknown: '미확인', christian: '기독교', 'non-christian': '비기독교' })[detail.household.houseFaith]],
-            ['휴머노이드 가정 반입', detail.household.humanoidAdmission === 'excluded' ? '기독교계 집안 반입 제외' : '미정'],
+            ['휴머노이드 가정 반입', detail.household.humanoidAdmission === 'excluded' ? '소속 정치 세력의 반입 배제' : '개별 심사'],
           ]} />}
           <DataTable title="관계" rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />
         </aside>
@@ -467,6 +469,8 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <p>편성: {detail.unit.composition.join(', ')}</p>
             <p>{detail.unit.note}</p>
           </section>}
+          {detail.sovereignTitle && <DataTable title="작위와 직위" rows={[["작위", detail.sovereignTitle.formalTitle], ["등급", detail.sovereignTitle.formalTitleRank], ["직위", detail.sovereignTitle.office]]} />}
+          {detail.retinueGroups?.map(group => <section key={group.id} data-retinue-group={group.id}><h2>{group.name.ko}</h2><p>{group.count}기 · 민웅기 직속</p><p>{group.duties.join(' · ')}</p></section>)}
           {!!detail.confirmedHoldings?.length && <section className="gurps-territory-confirmed" data-confirmed-holdings>
             <h2>보유 영지와 시설</h2>
             {detail.confirmedHoldings.map((holding) => <section key={holding.id} data-holding-id={holding.id}>

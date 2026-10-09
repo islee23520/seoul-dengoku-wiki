@@ -186,7 +186,7 @@ test('martial table and ledger reject malformed identities while ignoring displa
   assertMartialLedger(reworded, ledger)
 })
 
-test('sixteen canonical state names and historical precursors match the private ledger', () => {
+test('sixteen canonical state names match the private ledger', () => {
   const table = canon('lore/factions/Sixteen-States.json').content.find((block) => block.kind === 'table' && block.columns[0].ko === 'ID')
   assert.ok(table)
   assert.equal(table.rows.length, 16)
@@ -200,9 +200,9 @@ test('retired public forms fail on published text surfaces', () => {
   assert.ok(retiredFormFailures('급수계약정', 'src/generated/world/Current-State.json').length > 0)
 })
 
-test('historical precursor remains valid in the state origin and chronicle', () => {
+test('retired precursor fails in state pages and chronicles', () => {
   for (const source of ['src/generated/world/Century-Annals.json', 'src/generated/world/Sixteen-States.json']) {
-    assert.deepEqual(retiredFormFailures('2090년 급수계약정 기록', source), [])
+    assert.ok(retiredFormFailures('2090년 급수계약정 기록', source).length > 0)
   }
   assert.ok(retiredFormFailures('급수계약정', 'dist/assets/fixture.js').length > 0)
 })

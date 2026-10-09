@@ -50,7 +50,8 @@ test('the independent WIKI ledgers bind the exact accepted GDD formation clause'
   assert.ok(Array.isArray(holdings.holdings))
   assert.equal(contract.sourceScope.openingStates.count, 16)
   assert.equal(contract.sourceScope.openingStates.range, 'S01-S16')
-  assert.equal(contract.sourceScope.wholeKingdomAtOpening, false)
+  assert.deepEqual(contract.sourceScope.openingIndependentPolities.map(polity => [polity.id, polity.sovereignPersonId]), [['polity:daejeon', 'K1008']])
+  assert.equal(contract.sourceScope.wholeKingdomAtOpening, true)
 })
 
 test('normal and blocked transitions are distinct and unknown prerequisites remain held', () => {
