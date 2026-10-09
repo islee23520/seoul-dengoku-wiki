@@ -36,8 +36,8 @@ test('rendered links keep WIKI routes, hub routes, and fragments', async () => {
 
 test('rendered heading and year anchors retain timeline destinations', async () => {
   const html = render(await blocks('Century-Annals.json'))
-  assert.match(html, /<h3 id="2026년">2026년<\/h3>/)
-  assert.equal((html.match(/id="2026년"/g) ?? []).length, 1)
+  assert.match(html, /<h3 id="2030년">2030년<\/h3>/)
+  assert.equal((html.match(/id="2030년"/g) ?? []).length, 1)
   assert.match(render([
     { type: 'paragraph', children: [{ type: 'text', value: '2126년 시작' }] },
     { type: 'paragraph', children: [{ type: 'text', value: '2126년 반복' }] },

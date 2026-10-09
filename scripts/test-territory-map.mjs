@@ -10,7 +10,7 @@ test('baked hegemons preserve canonical membership exactly once for every holder
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
   assert.deepEqual(data.hegemons, source.data.currentAffiliation.hegemons)
-  const members = data.hegemons.flatMap(hegemon => hegemon.memberStateIds)
+  const members = [...data.hegemons.flatMap(hegemon => hegemon.memberStateIds), ...source.data.currentAffiliation.neutralStateIds]
   assert.equal(data.hegemons.length, 3)
   assert.equal(members.length, 16)
   assert.equal(new Set(members).size, 16)

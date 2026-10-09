@@ -38,7 +38,7 @@ export function importDiasporaFamilies(document) {
 }
 
 export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, preservedEdges = [], resolveRegisteredPeople = false, lineages = new Map(), roleDecisions } = {}) {
-  if (!record(ledger) || ledger.schemaVersion !== 1 || ledger.collapseYear !== 2026 || ledger.referenceDate !== '2126-12-31' || !Array.isArray(ledger.nodes) || !Array.isArray(ledger.edges) || !Array.isArray(ledger.imports)) fail('E_FAMILY_SCHEMA')
+  if (!record(ledger) || ledger.schemaVersion !== 1 || ledger.collapseYear !== 2030 || ledger.referenceDate !== '2126-12-31' || !Array.isArray(ledger.nodes) || !Array.isArray(ledger.edges) || !Array.isArray(ledger.imports)) fail('E_FAMILY_SCHEMA')
   metadata(ledger, 'ledger')
   let nodes = [...ledger.nodes]
   let edges = [...ledger.edges]
@@ -148,8 +148,8 @@ export function validateCastFamilyTrees(ledger, roster, { diaspora, birthdays, p
     if (complete.has(id)) return reachesCollapse.get(id)
     visiting.add(id)
     const node = byId.get(id)
-    // An unknown death date is not evidence of living for a century: an explicit 2026 event is required.
-    let reaches = node.birthDate <= '2026-12-31' && (node.deathDate ? node.deathDate >= '2026-01-01' : node.timeline.some((event) => event.year === 2026))
+    // An unknown death date is not evidence of living for a century: an explicit collapse-year event is required.
+    let reaches = node.birthDate <= '2030-12-31' && (node.deathDate ? node.deathDate >= '2030-01-01' : node.timeline.some((event) => event.year === ledger.collapseYear))
     for (const parent of parents.get(id)) reaches = visit(parent) || reaches
     visiting.delete(id)
     complete.add(id)

@@ -26,6 +26,11 @@
               ],
               "additionalProperties": false,
               "properties": {
+                "neutralStateIds": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": { "type": "string", "pattern": "^S(?:0[1-9]|1[0-6])$" }
+                },
                 "hegemons": {
                   "type": "array",
                   "minItems": 3,

@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "The Stories",
-      "summary": "After the blackout of October 14, 2026, the Yeongdeungpo waterworks log and Yeouido vault inventory recorded water and parts exchanges.",
+      "summary": "After the blackout of October 14, 2030, the Yeongdeungpo waterworks log and Yeouido vault inventory recorded water and parts exchanges.",
       "tense": "past"
     },
     "ko": {
       "title": "이야기",
-      "summary": "2026년 10월 14일 대정전 뒤 영등포 정수센터의 운전일지와 여의도 금고층 목록에 물과 부품 거래가 남았다.",
+      "summary": "2030년 10월 14일 대정전 뒤 영등포 정수센터의 운전일지와 여의도 금고층 목록에 물과 부품 거래가 남았다.",
       "tense": "past"
     }
   },
@@ -65,8 +65,8 @@
       "kind": "paragraph",
       "anchor": "이야기-p1",
       "text": {
-        "en": "At about 21:47 on October 14, 2026, remote control failed at the Yeongdeungpo waterworks. Duty officer Han Jeonghun operated the valves manually and entered the failure in the first line of a paper operations log.",
-        "ko": "2026년 10월 14일 21:47경 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 밸브를 수동으로 조작하였다. 야간 당직 책임자 한정훈은 종이 운전일지 첫 줄에 원격 제어 두절을 기재하였다."
+        "en": "At about 21:47 on October 14, 2030, remote control failed at the Yeongdeungpo waterworks. Duty officer Han Jeonghun operated the valves manually and entered the failure in the first line of a paper operations log.",
+        "ko": "2030년 10월 14일 21:47경 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 밸브를 수동으로 조작하였다. 야간 당직 책임자 한정훈은 종이 운전일지 첫 줄에 원격 제어 두절을 기재하였다."
       }
     },
     {
@@ -74,8 +74,8 @@
       "anchor": "2026년-10월-14일-대정전",
       "depth": 2,
       "text": {
-        "en": "The Blackout of October 14, 2026",
-        "ko": "2026년 10월 14일 대정전"
+        "en": "The Blackout of October 14, 2030",
+        "ko": "2030년 10월 14일 대정전"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind": "paragraph",
       "anchor": "대정전의-밤-p1",
       "text": {
-        "en": "At about 21:47 on October 14, 2026, district indicators went dark in sequence at the Blue House crisis center. Night officer Yun Taesik tried to report to the National Security Office and Joint Chiefs, but the lines did not connect.",
-        "ko": "2026년 10월 14일 21:47경 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 야간 당직관 윤태식은 국가안보실장과 합동참모본부 등에 보고를 시도했으나 회선이 연결되지 않았다."
+        "en": "At about 21:47 on October 14, 2030, district indicators went dark in sequence at the Blue House crisis center. Night officer Yun Taesik tried to report to the National Security Office and Joint Chiefs, but the lines did not connect.",
+        "ko": "2030년 10월 14일 21:47경 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 야간 당직관 윤태식은 국가안보실장과 합동참모본부 등에 보고를 시도했으나 회선이 연결되지 않았다."
       }
     },
     {
@@ -116,14 +116,16 @@
       "kind": "paragraph",
       "anchor": "대정전의-밤-p2",
       "text": {
-        "en": "On October 15, 2026, the president wrote and signed an emergency order under Article 76 of the constitution. The prime minister countersigned it. Designated facility emergency officers received on-site authority during the communications outage.",
-        "ko": "2026년 10월 15일 대통령은 헌법 제76조에 따른 긴급명령을 작성하고 서명하였다. 국무총리가 부서하였다. 통신 두절 기간에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하도록 하였다."
+        "en": "On October 15, 2030, the president wrote and signed an emergency order under Article 76 of the constitution. The prime minister countersigned it. Designated facility emergency officers received on-site authority during the communications outage.",
+        "ko": "2030년 10월 15일 대통령은 헌법 제76조에 따른 긴급명령을 작성하고 서명하였다. 국무총리가 부서하였다. 통신 두절 기간에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하도록 하였다."
       }
     },
     {
       "kind": "heading",
       "anchor": "2026년-물과-부품-거래",
-      "publicAnchors": ["the-2026-water-and-parts-exchange"],
+      "publicAnchors": [
+        "the-2026-water-and-parts-exchange"
+      ],
       "depth": 2,
       "text": {
         "en": "The 2026 Water and Parts Exchange",
@@ -175,7 +177,9 @@
     {
       "kind": "heading",
       "anchor": "2053년-영등포-급수-협약",
-      "publicAnchors": ["the-2053-yeongdeungpo-water-agreement"],
+      "publicAnchors": [
+        "the-2053-yeongdeungpo-water-agreement"
+      ],
       "depth": 2,
       "text": {
         "en": "The 2053 Yeongdeungpo Water Agreement",

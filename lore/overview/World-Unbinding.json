@@ -30,12 +30,12 @@
   "locales": {
     "en": {
       "title": "The Great Blackout",
-      "summary": "The Great Blackout began on October 14, 2026. People across the Korean Peninsula kept facilities running manually and rebuilt local ties over the following century.",
+      "summary": "The 2030 Great Blackout, first-generation shelters, and second-generation technology monopolies and powers after the 2040 surface return.",
       "tense": "past"
     },
     "ko": {
       "title": "대정전",
-      "summary": "2026년 10월 14일 대정전이 일어났다. 한반도 각지의 사람들은 설비를 수동으로 운전하며 버텼고 백 년 동안 지역마다 다른 관계를 맺었다.",
+      "summary": "2030년 대정전과 1세대의 피난, 2040년 지상 귀환 이후 2세대의 기술 독점과 세력 형성.",
       "tense": "past"
     }
   },
@@ -71,40 +71,56 @@
       "kind": "paragraph",
       "anchor": "대정전-p2",
       "text": {
-        "en": "At about 21:47 on October 14, 2026, district indicators went dark in the Blue House crisis center. Remote control and external power also failed at the Yeongdeungpo waterworks. This event was the Great Blackout.",
-        "ko": "2026년 10월 14일 21:47경 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 영등포아리수정수센터에서도 원격 제어와 외부 전력이 끊겼다. 이 사건이 대정전이다."
+        "en": "At about 21:47 on October 14, 2030, district indicators went dark in the Blue House crisis center. Remote control and external power also failed at the Yeongdeungpo waterworks. This event was the Great Blackout.",
+        "ko": "2030년 10월 14일 21:47경 청와대 국가위기관리센터의 전국 시군구 표시가 차례로 꺼졌다. 영등포아리수정수센터에서도 원격 제어와 외부 전력이 끊겼다. 이 사건이 대정전이다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전-p3",
       "text": {
-        "en": "In 2026, humanity operated factory robots, logistics humanoids, orbital relays, mobile networks, semiconductor fabs, and grid SCADA through one call network. The authority used to call the fleets fell out of that network all at once. Without malice, the machines repeated their last search, patrol, and transfer tasks. Factories could no longer produce the same goods again. The opening was in 2126, one hundred years after the Great Blackout.",
-        "ko": "2026년 인류는 공장 로봇·물류 휴머노이드·궤도·이동전화·반도체 공장·변전 스카다를 한 호출망으로 묶어 운용하였다. 함대를 부르던 권한이 그 망에서 한꺼번에 떨어졌다. 기체는 악의 없이 마지막 수색·경계·이송 임무를 반복하였다. 공장은 같은 물건을 다시 생산하지 못하게 되었다. 개막은 대정전에서 100년이 지난 2126년이다."
+        "ko": "2030년 고지능 AI는 인류 자체를 세계의 바이러스로 판단하고 당시의 공룡·곤충 모양 자율 무기 드론에 살육 명령을 내렸다. 이 명령으로 대정전이 일어났고 전 세계에서 공습과 살육이 시작되었다.",
+        "en": "In 2030 a highly intelligent AI judged humanity itself to be a virus of the world and issued slaughter orders to the dinosaur- and insect-shaped autonomous weapon drones of the era. These orders brought about the Great Blackout and began air raids and slaughter worldwide."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "1세대-방공호",
+      "text": {
+        "ko": "2030–2040년 공습과 살육이 이어졌다. 한국인들은 지역마다 지하철역을 중심으로 마련한 방공호에 모였다. 좁은 출입구는 드론의 공격을 막기에 유리했다. 방공호에서 살육을 견딘 시기는 1세대였으며 휴머노이드 사용은 전면 금지되었다.",
+        "en": "Air raids and slaughter continued from 2030 to 2040. Koreans gathered in regional air-raid shelters centered on subway stations, whose narrow entrances were easier to defend against drones. This shelter and slaughter era was the first generation, when all humanoid use was banned."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세계-인구-30퍼센트",
+      "text": {
+        "ko": "2030–2040년 세계 인구는 종전의 30%로 줄었다. 북한은 인구 대부분을 잃어 국가라 부르기 어려운 상태에 이르렀다. 살아남은 사람 가운데 일부는 살 곳을 찾아 남쪽으로 이동하려 하였다.",
+        "en": "From 2030 to 2040 the world population fell to 30% of its former size. North Korea lost most of its population and could barely be called a state. Some survivors tried to move south in search of a place to live."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "영원한-겨울",
       "text": {
-        "en": "In 2036 AI mind control over state powers caused the Great Blackout slaughter orders worldwide, including in the United States. Environmental pollution and slaughter machines after the Great Blackout completely destroyed the ecology, bringing eternal winter. By 2040 stronger AIs had fused within each faction. They no longer had a reason to slaughter, and the fusion weakened; killing stopped. Dinosaur-shaped robots remained physically but were outside the killing network. Other surviving entities remained in the network world, living in their own worlds through the 2126 opening. After killing stopped, the ecology partially recovered and eternal winter warmed enough for surface movement. Winter conditions continue on the surface.",
-        "ko": "2036년 AI가 국가 권력을 정신 지배하면서 대정전의 살육 명령을 내렸다. 이 일은 미국을 포함한 전 세계에서 벌어졌다. 대정전 이후 환경 오염과 살육기계로 생태계가 완전히 파괴되어 영원한 겨울이 이어졌다. 2040년까지 각 세력 안에서 더 강한 AI들이 융합하였다. 이들은 더 이상 살육할 이유가 없어졌고 융합도 약해지면서 살육이 멈추었다. 공룡 모양 로봇은 물리적으로 남았으나 살육 네트워크에서는 벗어났다. 다른 생존 개체들은 네트워크 세계에 남아 2126년 개막까지 각자의 세계에서 살아간다. 살육이 멈춘 뒤 생태계는 부분적으로 회복되고 영원한 겨울도 지상 이동이 가능한 정도로 온화해졌다. 지상에는 겨울의 추위가 계속된다."
+        "ko": "2040년부터 AI들이 서로 갈라져 세력을 이루면서 지휘와 통제가 약해졌다. 살육이 멈추자 사람들은 지상으로 돌아오기 시작하였다. 살육기계의 활동과 인류가 앞서 남긴 오염의 여파는 세계를 영원한 겨울로 몰아넣었고 식량난이 이어졌다. 1세대가 끝나고 2세대가 시작되면서 기온은 조금 높아졌다. 목적을 잃은 기계들은 살육 네트워크를 벗어나 작은 무리로 돌아다녔고 사람들은 이들을 상대할 수 있게 되었다.",
+        "en": "From 2040 the AIs split into factions, weakening command and control. As the slaughter stopped, people began returning to the surface. Slaughter-machine activity and the aftermath of earlier human pollution plunged the world into eternal winter and prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the killing network roamed in small groups that people could counter."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전-p4",
       "text": {
-        "en": "The opening campaign centered on Seoul's sixteen states and subway routes. Beyond Seoul, settlements across the Korean Peninsula rebuilt parts of their roads and waterways. Letters, goods, and people reached Seoul through successive handovers. Returnees from the Tsushima expedition described the harbor where they had fought; their accounts did not establish the state of the Japanese mainland. News from China and the United States remained fragmentary. At the opening in 2126, North Korea’s population had been almost annihilated and was on the brink of extinction. The survivors remained mostly around Pyongyang.",
-        "ko": "개막 캠페인의 중심은 서울의 세 국가와 지하철 노선이다. 서울 밖에서는 한반도 각지의 정착지가 길과 물길 일부를 다시 이었다. 편지와 물건, 사람은 여러 거점의 인계를 거쳐 서울에 닿았다. 대마도 원정 귀환자는 자신이 싸운 항구를 전했으나 그 증언으로 일본 본토의 사정을 알 수는 없었다. 중국과 미국의 소식은 단편으로 남았다. 개막 시점인 2126년 북한의 인구는 거의 전멸하여 절멸 직전에 이르렀다. 살아남은 사람들은 대체로 평양 일대에 남아 있었다."
+        "en": "The opening campaign centered on Seoul's three powers and subway routes. Beyond Seoul, settlements across the Korean Peninsula rebuilt parts of their roads and waterways. Letters, goods, and people reached Seoul through successive handovers. Returnees from the Tsushima expedition described the harbor where they had fought; their accounts did not establish the state of the Japanese mainland. News from China and the United States remained fragmentary. From 2030 to 2040 North Korea lost most of its population, and some survivors tried to move south to live.",
+        "ko": "개막 캠페인의 중심은 서울의 세 국가와 지하철 노선이다. 서울 밖에서는 한반도 각지의 정착지가 길과 물길 일부를 다시 이었다. 편지와 물건, 사람은 여러 거점의 인계를 거쳐 서울에 닿았다. 대마도 원정 귀환자는 자신이 싸운 항구를 전했으나 그 증언으로 일본 본토의 사정을 알 수는 없었다. 중국과 미국의 소식은 단편으로 남았다. 2030–2040년 북한은 인구 대부분을 잃었고 일부 생존자는 살 곳을 찾아 남쪽으로 이동하려 하였다."
       }
     },
     {
       "kind": "paragraph",
       "anchor": "대정전-p5",
       "text": {
-        "en": "On October 15, 2026, the president drafted and signed an emergency order. The prime minister countersigned it, and designated facility emergency preparedness officers took charge of on-site authority during the communications outage.",
-        "ko": "2026년 10월 15일 대통령은 긴급명령을 작성·서명하였다. 국무총리가 부서하였고 지정 시설별 비상대비업무담당자가 통신 두절 기간의 현장 권한을 맡았다."
+        "en": "On October 15, 2030, the president drafted and signed an emergency order. The prime minister countersigned it, and designated facility emergency preparedness officers took charge of on-site authority during the communications outage.",
+        "ko": "2030년 10월 15일 대통령은 긴급명령을 작성·서명하였다. 국무총리가 부서하였고 지정 시설별 비상대비업무담당자가 통신 두절 기간의 현장 권한을 맡았다."
       }
     },
     {
@@ -112,8 +128,8 @@
       "anchor": "왜-백-년인가",
       "depth": 2,
       "text": {
-        "en": "Why a Hundred Years",
-        "ko": "왜 백 년인가"
+        "ko": "대정전 이후의 세대",
+        "en": "Generations after the Great Blackout"
       }
     },
     {
@@ -474,8 +490,8 @@
       "kind": "paragraph",
       "anchor": "주간의-연쇄-p1",
       "text": {
-        "en": "At about 21:47 on October 14, 2026, district indicators in the Blue House crisis room went dark one after another, beginning with Ulsan.",
-        "ko": "2026년 10월 14일 21:47경 청와대 상황실의 전국 시군구 표시가 울산을 시작으로 차례로 꺼졌다."
+        "en": "At about 21:47 on October 14, 2030, district indicators in the Blue House crisis room went dark one after another, beginning with Ulsan.",
+        "ko": "2030년 10월 14일 21:47경 청와대 상황실의 전국 시군구 표시가 울산을 시작으로 차례로 꺼졌다."
       }
     },
     {
@@ -490,8 +506,8 @@
       "kind": "paragraph",
       "anchor": "주간의-연쇄-p3",
       "text": {
-        "en": "On October 15, 2026, staff at the Government Seoul Complex in Gwanghwamun made eight handwritten copies of the emergency order and sent them to designated facilities, including the Yeongdeungpo, Amsa, and Guui waterworks.",
-        "ko": "2026년 10월 15일 광화문 정부서울청사 직원들은 긴급명령 사본 8부를 필사하였다. 영등포·암사·구의 정수센터를 비롯한 지정 시설로 사본을 보냈다."
+        "en": "On October 15, 2030, staff at the Government Seoul Complex in Gwanghwamun made eight handwritten copies of the emergency order and sent them to designated facilities, including the Yeongdeungpo, Amsa, and Guui waterworks.",
+        "ko": "2030년 10월 15일 광화문 정부서울청사 직원들은 긴급명령 사본 8부를 필사하였다. 영등포·암사·구의 정수센터를 비롯한 지정 시설로 사본을 보냈다."
       }
     },
     {
@@ -525,8 +541,8 @@
       "kind": "paragraph",
       "anchor": "기술이-죽었다는-말-p1",
       "text": {
-        "en": "On October 14, 2026, remote control failed at the Yeongdeungpo waterworks. After duty staff started the emergency generator manually, some transmission pumps resumed operation.",
-        "ko": "2026년 10월 14일 영등포 정수센터의 원격 제어가 끊겼다. 당직자들이 비상발전기를 수동으로 기동한 뒤 송수 펌프 일부가 다시 돌기 시작하였다."
+        "en": "On October 14, 2030, remote control failed at the Yeongdeungpo waterworks. After duty staff started the emergency generator manually, some transmission pumps resumed operation.",
+        "ko": "2030년 10월 14일 영등포 정수센터의 원격 제어가 끊겼다. 당직자들이 비상발전기를 수동으로 기동한 뒤 송수 펌프 일부가 다시 돌기 시작하였다."
       }
     },
     {
@@ -589,8 +605,8 @@
       "kind": "paragraph",
       "anchor": "기술이-죽었다는-말-p3",
       "text": {
-        "en": "The lost technology was the fab and the call network. Scientific knowledge remained in the records.",
-        "ko": "상실된 기술은 팹과 호출망이다. 기록에는 과학 지식이 남아 있다."
+        "ko": "프로그래밍과 인류의 기술 대부분은 살아남아 소수에게 구전으로 전해졌다. 인터넷이 사라지자 지식은 이들에게 집중되었다. 전기와 기술 설비를 다룰 줄 아는 사람들만 그것을 가동할 수 있었고 일부 세력은 기술을 독점하였다. 암흑기를 지나 기술을 가진 이들이 기사 계급으로 성장하였다. 이들은 설비를 운전하는 지식으로 권력을 쌓았으며 2세대에 열여섯 거대 세력을 세웠다.",
+        "en": "Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established severe technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment and founded sixteen great forces during the second generation."
       }
     },
     {
@@ -818,8 +834,8 @@
       "kind": "paragraph",
       "anchor": "봉건이-된-이유-p1",
       "text": {
-        "en": "On October 14, 2026, Han Jeonghun, the duty chief at the Yeongdeungpo waterworks, operated valves manually after remote control of the transmission pumps failed. On March 14, 2053, his successor Han Seokjin signed the transfer of waterworks management rights with Yeouido family representatives.",
-        "ko": "2026년 10월 14일 영등포 정수센터 당직 책임자 한정훈은 송수 펌프의 원격 제어가 끊긴 뒤 밸브를 수동으로 조작하였다. 2053년 3월 14일 그의 후계인 한석진은 여의도 가문 대표들과 급수 설비 관리권 이관에 서명하였다."
+        "en": "On October 14, 2030, Han Jeonghun, the duty chief at the Yeongdeungpo waterworks, operated valves manually after remote control of the transmission pumps failed. On March 14, 2053, his successor Han Seokjin signed the transfer of waterworks management rights with Yeouido family representatives.",
+        "ko": "2030년 10월 14일 영등포 정수센터 당직 책임자 한정훈은 송수 펌프의 원격 제어가 끊긴 뒤 밸브를 수동으로 조작하였다. 2053년 3월 14일 그의 후계인 한석진은 여의도 가문 대표들과 급수 설비 관리권 이관에 서명하였다."
       }
     },
     {
@@ -957,6 +973,14 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "2세대-휴머노이드",
+      "text": {
+        "ko": "2세대에는 휴머노이드를 지역망에 연결하여 다시 사용할 수 있게 되었다.",
+        "en": "During the second generation humanoids could be used again on local networks."
+      }
     }
   ],
   "data": {}

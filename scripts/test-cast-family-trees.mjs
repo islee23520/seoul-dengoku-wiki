@@ -46,7 +46,7 @@ test('applies all approved external ancestors without changing dates or given na
 test('distinct historical IDs preserve namesakes and dates through projection and real rendering', () => {
   const ledger = fixture()
   const first = ledger.nodes[0]
-  const second = { ...node('H-namesake', first.name, '1990-02-03', 'historical'), deathDate: '2027-01-01' }
+  const second = { ...node('H-namesake', first.name, '1990-02-03', 'historical'), deathDate: '2031-01-01' }
   ledger.nodes.push(second)
   ledger.edges.push(edge(second.id, id('신준')))
   const graph = validateCastFamilyTrees(ledger, roster)
@@ -144,9 +144,9 @@ const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id
 const roster = registry.filter((person) => ['신종목', '신준', '임하준', '임초원', '이연'].includes(person.name))
 const id = (name) => roster.find((person) => person.name === name).id
 const node = (id, name, birthDate, kind = 'person') => ({ id, personId: kind === 'historical' ? null : id, name, kind, birthDate, deathDate: null, status: 'preserved', sourceRefs,
-  timeline: [{ year: kind === 'historical' ? 2026 : 2126, summary: `history-${id}`, sourceRefs }] })
+  timeline: [{ year: kind === 'historical' ? 2030 : 2126, summary: `history-${id}`, sourceRefs }] })
 const edge = (from, to, type = 'biological') => ({ id: `${from}:${to}:${type}`, from, to, type, status: 'preserved', sourceRefs })
-const fixture = () => ({ schemaVersion: 1, referenceDate: '2126-12-31', collapseYear: 2026, status: 'authored', sourceRefs, imports: [],
+const fixture = () => ({ schemaVersion: 1, referenceDate: '2126-12-31', collapseYear: 2030, status: 'authored', sourceRefs, imports: [],
   nodes: [node('H-test', 'ancestor', '2000-01-01', 'historical'), ...roster.map((person) => node(person.id, person.name,
     ['신종목', '임하준'].includes(person.name) ? '2080-01-01' : '2110-01-01', person.name === '이연' ? 'synthetic' : 'person'))],
   edges: [edge('H-test', id('신종목')), edge('H-test', id('임하준')), edge('H-test', id('이연'), 'custodial'),
@@ -200,9 +200,9 @@ test.each([
   ['invalid calendar date', (ledger) => { ledger.nodes[0].birthDate = '2001-02-29' }, /E_BIRTH_DATE/],
   ['event before birth', (ledger) => { ledger.nodes[0].timeline[0].year = 1999 }, /E_FAMILY_EVENT_LIFETIME/],
   ['event after death', (ledger) => { ledger.nodes[0].deathDate = '2025-01-01' }, /E_FAMILY_EVENT_LIFETIME/],
-  ['date after death', (ledger) => { ledger.nodes[0].deathDate = '2026-01-01'; ledger.nodes[0].timeline[0].date = '2026-10-14' }, /E_FAMILY_EVENT_DATE/],
+  ['date after death', (ledger) => { ledger.nodes[0].deathDate = '2030-01-01'; ledger.nodes[0].timeline[0].date = '2030-10-14' }, /E_FAMILY_EVENT_DATE/],
   ['source metadata', (ledger) => { ledger.nodes[0].sourceRefs = [] }, /E_FAMILY_SOURCE_REFS/],
-  ['no collapse witness', (ledger) => { ledger.nodes[0].timeline[0].year = 2027 }, /E_FAMILY_COLLAPSE_REACH/],
+  ['no collapse witness', (ledger) => { ledger.nodes[0].timeline[0].year = 2031 }, /E_FAMILY_COLLAPSE_REACH/],
   ['synthetic biological parent', (ledger) => ledger.edges.push(edge('H-test', id('이연'))), /E_FAMILY_SYNTHETIC_PARENT/],
   ['synthetic kind erased', (ledger) => { ledger.nodes.find((n) => n.id === id('이연')).kind = 'person' }, /E_FAMILY_SYNTHETIC_IDENTITY/],
   ['adoption erased', (ledger) => { ledger.edges = ledger.edges.filter((e) => e.type !== 'adoptive') }, /E_FAMILY_PRESERVED_EDGE/],
@@ -289,7 +289,7 @@ test('imports both diaspora families from their single canonical ledger and reje
       added = true
     }
   }
-  const ledger = { schemaVersion: 1, referenceDate: '2126-12-31', collapseYear: 2026, status: 'authored', sourceRefs,
+  const ledger = { schemaVersion: 1, referenceDate: '2126-12-31', collapseYear: 2030, status: 'authored', sourceRefs,
     imports: [{ path: 'lore/name-pools/diaspora-family-lineages.json' }],
     nodes: authored.nodes.filter(node => requiredAncestors.has(node.id)),
     edges: authored.edges.filter(edge => requiredAncestors.has(edge.from) && requiredAncestors.has(edge.to)) }
@@ -309,7 +309,7 @@ test('projects linked relatives and renders typed edges, birthdays and ancestor 
   assert.equal(tree.nodes.find((n) => n.id === id('신종목')).detailRoute, routes.get(id('신종목')))
   const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(FamilyTree, { tree })))
   assert.match(html, /data-family-edge="biological"/)
-  assert.match(html, /data-family-event-year="2026"/)
+  assert.match(html, /data-family-event-year="2030"/)
   assert.ok(html.includes(`data-family-node="${id('신준')}"`))
   assert.ok(html.includes(`href="${routes.get(id('신종목'))}"`))
   assert.ok(html.includes(tree.nodes[0].birthDate))
@@ -323,5 +323,5 @@ test('renders the projected graph through the actual person detail component', a
   const html = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(PersonDetailContent, { detail: { ...detail, familyTree }, personId: detail.id })))
   assert.ok(html.includes(`data-family-person-id="${id('신준')}"`))
   for (const node of familyTree.nodes) assert.ok(html.includes(`data-family-node="${node.id}"`))
-  assert.ok(html.includes('data-family-event-year="2026"'))
+  assert.ok(html.includes('data-family-event-year="2030"'))
 })
