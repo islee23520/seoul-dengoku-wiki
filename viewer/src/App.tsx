@@ -172,6 +172,23 @@ const markdownComponents = {
 
 interface TocEntry { depth: number; anchor: string; text: string }
 
+export function DomainDocumentLinks({ documentId }: { documentId: string }) {
+  const match = /^(?:doc\.Archify-D|doc\.Mechanism-D|doc\.mechanism-design-index-d)(\d{2})$/.exec(documentId)
+  if (!match) return null
+  const number = match[1]
+  const destinations = [
+    { id: `doc.mechanism-design-index-d${number}`, label: '도메인 기획서 보기' },
+    { id: `doc.Mechanism-D${number}`, label: '작동 계약·공식 보기' },
+    { id: `doc.Archify-D${number}`, label: 'Archify 보기' },
+  ]
+  return <nav className="gdd-category-tabs" aria-label="도메인 문서 바로가기">
+    {destinations.map(({ id, label }) => {
+      const target = manifestDocuments.find((candidate) => candidate.id === id)
+      return target ? <a key={id} href={toPublicHref(target.route)} aria-current={id === documentId ? 'page' : undefined}>{label}</a> : null
+    })}
+  </nav>
+}
+
 const jsonTextOf = (value: string | readonly { text: string }[]) => (typeof value === 'string' ? value : value.map((run) => run.text).join(''))
 
 export function MarkdownBody({ markdown, manifest }: { markdown: string; manifest?: ArchifyManifest }) {
@@ -212,6 +229,7 @@ function DocumentPage() {
     <article>
       <Breadcrumbs label="현재 위치" items={[{ title: 'GDD', href: '/' }, { title: label, href: `/documents?category=${categoryId}` }, { title: document.title }]} resolveHref={toPublicHref} />
       <PageHeader kicker={label} title={document.title} badge={<><span>{proposalRoutes.has(route) ? '설계 제안 · ' : ''}</span><code className="gdd-source">{document.source}</code></>} />
+      <DomainDocumentLinks documentId={document.id} />
       <div className="gdd-article-layout">
         <div className="gdd-article-body">
           {sharedContent
