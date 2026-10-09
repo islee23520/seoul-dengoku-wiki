@@ -10,6 +10,11 @@
       "repository": "islee23520/seoul-dengoku",
       "commit": "1a473c831c17fa227dc936bf2f98c752d4241d7b",
       "path": "GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json"
+    },
+    "research": {
+      "repository": "islee23520/seoul-dengoku",
+      "commit": "1a473c831c17fa227dc936bf2f98c752d4241d7b",
+      "path": "RESEARCH/verification/creative-name-normalization.json"
     }
   },
   "generatorVersion": "repo-split-483",
@@ -21,6 +26,10 @@
     {
       "path": "atlas-data.js",
       "sha256": "89d559fc31ce0644e331c6a54b8cfc997bf482b05f7c940694ea68f4f304fdf1"
+    },
+    {
+      "path": "creative-name-normalization.json",
+      "sha256": "b7402b77a4c881679e964e8aafceb9117806ccfb1095ba4cd1c4df1b6b2a1324"
     }
   ]
 }
