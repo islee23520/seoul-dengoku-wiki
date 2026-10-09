@@ -6,6 +6,17 @@ import { validatedDensities } from './region-density.mjs'
 import { segmentPointerChoices } from '../src/components/segmentPointerSelection.ts'
 import { regularLineGraph } from './regular-line-graph.mjs'
 
+test('baked hegemons preserve canonical membership exactly once for every holder', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../lore/factions/Sixteen-States.json', import.meta.url), 'utf8'))
+  assert.deepEqual(data.hegemons, source.data.currentAffiliation.hegemons)
+  const members = data.hegemons.flatMap(hegemon => hegemon.memberStateIds)
+  assert.equal(data.hegemons.length, 3)
+  assert.equal(members.length, 16)
+  assert.equal(new Set(members).size, 16)
+  assert.deepEqual([...members].sort(), data.states.map(state => state.id).sort())
+})
+
 test('movement edges equal official physical hops and never surface adjacency', async () => {
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../lore/places/regular-line-adjacency.json', import.meta.url), 'utf8'))

@@ -747,6 +747,7 @@ const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
 if (vassals.length !== 13 || vassals.some((vassal) => !vassal.anchor || !officialLineData.lines[vassal.lineId])) throw new Error('E_VASSAL_LINE_ANCHOR')
 
 const openingTerritories = {
+  hegemons: pagesBySlug.get('Sixteen-States').value.data.currentAffiliation.hegemons,
   schema: 'seoul-opening-territories.v1',
   epoch: regionAtlas.fictional_epoch,
   width: mapWidth,

@@ -15,7 +15,7 @@ vi.mock('three', async (importOriginal) => {
   } }
 })
 
-test.each(['switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID'])('selected segment interaction: %s', async (scenario) => {
+test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID'])('selected segment interaction: %s', async (scenario) => {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
   const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:동묘앞~신설동'].includes(edge.id))
   const duplicateStation = { ...data.stations.find((station) => station.id === '신촌'), id: 'fixture-overlap', name: '겹침 검증역', memberIds: ['fixture-overlap'] }
@@ -23,7 +23,8 @@ test.each(['switch layers', 'keep active layer', 'choose ShinCHON', 'choose Shin
   edges.push(overlapEdge)
   const stationIds = new Set(edges.flatMap((edge) => [edge.a, edge.b]))
   stationIds.add('Yeongdeungpo')
-  const mapData = { ...data, edges, stations: [...data.stations.filter((station) => stationIds.has(station.id)), duplicateStation], states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
+  const surface = scenario === 'three hegemon surface'
+  const mapData = surface ? data : { ...data, hegemons: scenario === 'label fallback' ? data.hegemons : [], edges, stations: [...data.stations.filter((station) => stationIds.has(station.id)), duplicateStation], states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
   const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [0, 0, 1, 1] }], farWaterFile: 'water.json', attribution: '' }
   const assets = { 'opening-territories.json': mapData, 'regional-terrain.json': terrain, 'regional-boundaries.json': [], 'outside-admin-units.json': { units: [] }, 'outside-control-2126.json': { assignments: [] }, 'water.json': { features: [] } }
   assets['confirmed-person-holdings.json'] = JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8'))
@@ -40,6 +41,39 @@ test.each(['switch layers', 'keep active layer', 'choose ShinCHON', 'choose Shin
     // Mock only graphics and offline asset transport; selection handlers and React
     // state transitions are the actual component behavior under test.
     await act(async () => { root.render(React.createElement(MemoryRouter, null, React.createElement(OpeningTerritoryMap))) })
+    if (scenario === 'label fallback') {
+      assert.equal(host.querySelector('[data-hegemon-label-fallback]').textContent, data.hegemons.map(item => item.name).join(' · '))
+      return
+    }
+    if (surface) {
+      const regions = [...host.querySelectorAll('[data-region-id]')]
+      assert.equal(regions.length, 427)
+      assert.equal(new Set(regions.map(region => region.getAttribute('fill'))).size, 3)
+      for (const region of regions) {
+        const hegemon = data.hegemons.find(item => item.memberStateIds.includes(region.getAttribute('data-state-id')))
+        assert.equal(region.getAttribute('data-hegemon'), hegemon.name)
+      }
+      assert.deepEqual(new Set(host.querySelector('[data-hegemon-labels]').dataset.hegemonLabels.split('|')), new Set(data.hegemons.map(item => item.name)))
+      assert.ok(host.querySelector('.territory-national-borders').getAttribute('d'))
+      assert.ok(host.querySelector('.territory-subordinate-borders').getAttribute('d'))
+      const select = [...host.querySelectorAll('select')].find(element => element.querySelector('optgroup'))
+      assert.equal(select.querySelectorAll('optgroup').length, 3)
+      for (const hegemon of data.hegemons) {
+        await act(async () => { select.value = 'hegemon:' + hegemon.name; select.dispatchEvent(new Event('change', { bubbles: true })) })
+        for (const region of host.querySelectorAll('[data-region-id]')) assert.equal(Number(region.getAttribute('fill-opacity')), hegemon.memberStateIds.includes(region.getAttribute('data-state-id')) ? 0.72 : 0.24)
+      }
+      await act(async () => { select.value = 'S01'; select.dispatchEvent(new Event('change', { bubbles: true })) })
+      const capitalRegionId = data.states.find(state => state.id === 'S01').capitalRegionId
+      for (const region of host.querySelectorAll('[data-region-id]')) assert.equal(Number(region.getAttribute('fill-opacity')), region.getAttribute('data-region-id') === capitalRegionId ? 0.95 : region.getAttribute('data-state-id') === 'S01' ? 0.72 : 0.24)
+      const region = host.querySelector('[data-state-id="S01"]')
+      await act(async () => { region.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+      const detail = [...host.querySelectorAll('#territory-detail-panel dl')].find(element => element.querySelector('dt')?.textContent === '직속 보유')
+      assert.ok(detail.textContent.includes('S01 ' + data.states.find(state => state.id === 'S01').name))
+      assert.ok(detail.textContent.includes(data.hegemons.find(item => item.memberStateIds.includes('S01')).name))
+      assert.equal(host.querySelectorAll('.territory-flat-capital').length, 16)
+      assert.equal(host.querySelectorAll('[data-vassal-marker]').length, 13)
+      return
+    }
     if (scenario === 'select facility by stable station ID') {
       const select = [...host.querySelectorAll('select')].find(element => [...element.options].some(option => option.value === 'holding:yeongdeungpo-concourse'))
       await act(async () => {
