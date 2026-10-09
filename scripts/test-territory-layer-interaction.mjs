@@ -180,3 +180,160 @@ test.each(['three hegemon surface', 'label fallback', 'switch layers', 'keep act
     vi.unstubAllGlobals()
   }
 })
+
+
+async function mountFullMap() {
+  const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
+  const assets = {
+    'opening-territories.json': data,
+    'regional-terrain.json': { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [data.projection.minEast - 40000, data.projection.minNorth - 30000, data.projection.maxEast + 40000, data.projection.maxNorth + 30000] }], farWaterFile: 'water.json', attribution: '' },
+    'regional-boundaries.json': [],
+    'outside-admin-units.json': JSON.parse(await readFile('public/outside-admin-units.json', 'utf8')),
+    'outside-control-2126.json': JSON.parse(await readFile('public/outside-control-2126.json', 'utf8')),
+    'water.json': { features: [] },
+    'confirmed-person-holdings.json': JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8')),
+  }
+  const host = document.createElement('div')
+  document.body.appendChild(host)
+  const root = createRoot(host)
+  const canvasContext = { createImageData: () => ({ data: new Uint8ClampedArray(4) }), putImageData() {}, measureText: () => ({ width: 1 }), strokeText() {}, fillText() {}, getImageData: () => ({ data: new Uint8ClampedArray(4) }) }
+  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
+  vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} })
+  vi.stubGlobal('fetch', async (url) => ({ ok: true, json: async () => assets[String(url).split('/').at(-1)], arrayBuffer: async () => new Uint16Array([500, 0]).buffer }))
+  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(canvasContext)
+  vi.spyOn(HTMLCanvasElement.prototype, 'toDataURL').mockReturnValue('data:image/png;base64,')
+  await act(async () => { root.render(React.createElement(MemoryRouter, null, React.createElement(OpeningTerritoryMap))) })
+  await act(async () => { })
+  const unmount = async () => { await act(async () => root.unmount()); host.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals() }
+  return { assets, host, unmount }
+}
+
+function expectedTitleModel(assets) {
+  const controlByUnit = new Map(assets['outside-control-2126.json'].assignments.map((row) => [row.unitId, row]))
+  const holdingByRef = new Map(assets['confirmed-person-holdings.json'].holdings.flatMap((holding) => holding.adminRefs.map((ref) => [ref.id, holding])))
+  const relationOf = (id) => {
+    const holding = holdingByRef.get(id)
+    if (holding) return holding.directLiegePersonId === null ? 'direct' : 'vassal'
+    return controlByUnit.has(id) ? 'state' : 'unassigned'
+  }
+  const regionRelationOf = (id) => {
+    const holding = holdingByRef.get(id)
+    if (holding) return holding.directLiegePersonId === null ? 'direct' : 'vassal'
+    return 'state'
+  }
+  const outside = { direct: 0, vassal: 0, state: 0, unassigned: 0 }
+  for (const unit of assets['outside-admin-units.json'].units) outside[relationOf(unit.id)] += 1
+  const regions = { direct: 0, vassal: 0, state: 0, unassigned: 0 }
+  for (const region of assets['opening-territories.json'].regions) regions[regionRelationOf(region.id)] += 1
+  const markers = assets['confirmed-person-holdings.json'].holdings.filter((holding) => holding.stationRef || holding.facilityRef || holding.landmarkRef).length
+  const domainCounts = (root) => {
+    const entries = assets['confirmed-person-holdings.json'].holdings.filter((holding) => (holding.directLiegePersonId ?? holding.holderPersonId) === root)
+    return { direct: entries.filter((holding) => holding.directLiegePersonId === null).reduce((sum, holding) => sum + holding.adminRefs.length, 0), vassal: entries.filter((holding) => holding.directLiegePersonId !== null).reduce((sum, holding) => sum + holding.adminRefs.length, 0) }
+  }
+  return { controlByUnit, holdingByRef, relationOf, outside, regions, markers, domainCounts }
+}
+
+test('three-state default entry renders every outside unit with Seoul parity', async () => {
+  const { assets, host, unmount } = await mountFullMap()
+  try {
+    const data = assets['opening-territories.json']
+    const model = expectedTitleModel(assets)
+    const controls = [...host.querySelectorAll('.territory-flat-controls button')]
+    assert.equal(controls.find((button) => button.textContent === '한반도 보기')?.getAttribute('aria-pressed'), 'true')
+    assert.equal(controls.find((button) => button.textContent === '서울 전체')?.getAttribute('aria-pressed'), 'false')
+    assert.equal([...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '정치 지도')?.getAttribute('aria-pressed'), 'true')
+    const svg = host.querySelector('.territory-flat-svg')
+    const spanEast = data.projection.maxEast - data.projection.minEast
+    const spanNorth = data.projection.maxNorth - data.projection.minNorth
+    const expected = [-40000 / spanEast * data.width, -30000 / spanNorth * data.height, data.width + 80000 / spanEast * data.width, data.height + 60000 / spanNorth * data.height]
+    const viewBox = svg.getAttribute('viewBox').split(' ').map(Number)
+    assert.ok(viewBox.every((value, index) => Math.abs(value - expected[index]) < 1e-6), viewBox.join(' '))
+    const outsidePaths = [...host.querySelectorAll('[data-outside-unit]')]
+    assert.equal(outsidePaths.length, assets['outside-admin-units.json'].units.length)
+    const hegemonColor = new Map(data.hegemons.map((hegemon) => [hegemon.name, hegemon.color]))
+    for (const path of outsidePaths) {
+      const row = model.controlByUnit.get(path.getAttribute('data-outside-unit'))
+      const expectedFill = row ? hegemonColor.get(row.authority.name) ?? '#8a969b' : '#8a969b'
+      assert.equal(path.getAttribute('fill'), expectedFill, path.getAttribute('data-outside-unit'))
+      const expectedOpacity = row ? 0.72 : 0.1
+      assert.equal(Number(path.getAttribute('fill-opacity')), expectedOpacity, path.getAttribute('data-outside-unit'))
+      assert.equal(path.getAttribute('stroke'), '#35434b')
+    }
+    const select = [...host.querySelectorAll('select')].find((element) => element.querySelector('optgroup'))
+    const hegemon = data.hegemons[0]
+    await act(async () => { select.value = 'hegemon:' + hegemon.name; select.dispatchEvent(new Event('change', { bubbles: true })) })
+    for (const path of outsidePaths) {
+      const row = model.controlByUnit.get(path.getAttribute('data-outside-unit'))
+      assert.equal(Number(path.getAttribute('fill-opacity')), row && row.authority.name === hegemon.name ? 0.72 : row ? 0.24 : 0.1, path.getAttribute('data-outside-unit'))
+    }
+    await act(async () => { select.value = 'all'; select.dispatchEvent(new Event('change', { bubbles: true })) })
+    const daejeonUnit = outsidePaths.find((path) => path.getAttribute('data-outside-unit') === '3011051500')
+    await act(async () => { daejeonUnit.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    assert.ok([...host.querySelectorAll('#territory-detail-panel h3')].some((heading) => heading.textContent === '대전광역시 동구 중앙동'))
+    assert.ok(host.querySelector('[data-selected-holding="holding:daejeon-dong"]'))
+    assert.ok(host.querySelector('[data-selected-holding="holding:daejeon-dong"] a[href="/people/person-1008"]'))
+  } finally { await unmount() }
+})
+
+test('titles mode shows evidence-backed lords and never invents missing ones', async () => {
+  const { assets, host, unmount } = await mountFullMap()
+  try {
+    const model = expectedTitleModel(assets)
+    await act(async () => { })
+    assert.equal(host.querySelector('[data-title-legend]'), null)
+    await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '작위·영주 지도').click() })
+    assert.equal([...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '작위·영주 지도')?.getAttribute('aria-pressed'), 'true')
+    const outsidePaths = [...host.querySelectorAll('[data-outside-unit]')]
+    const relationPath = (id) => outsidePaths.find((path) => path.getAttribute('data-outside-unit') === id)
+    for (const relation of ['direct', 'vassal', 'state', 'unassigned']) {
+      assert.equal(outsidePaths.filter((path) => path.getAttribute('data-title-relation') === relation).length, model.outside[relation], 'outside ' + relation)
+    }
+    const regionPaths = [...host.querySelectorAll('[data-region-id]')]
+    for (const relation of ['direct', 'vassal', 'state', 'unassigned']) {
+      assert.equal(regionPaths.filter((path) => path.getAttribute('data-title-relation') === relation).length, model.regions[relation], 'region ' + relation)
+    }
+    const directDaejeon = relationPath('3011051500')
+    const vassalJung = relationPath('3014053500')
+    const islandBaengnyeong = relationPath('2872033000')
+    assert.equal(directDaejeon.getAttribute('data-title-relation'), 'direct')
+    assert.equal(Number(directDaejeon.getAttribute('fill-opacity')), 0.72)
+    assert.equal(directDaejeon.getAttribute('stroke-dasharray'), null)
+    assert.equal(vassalJung.getAttribute('data-title-relation'), 'vassal')
+    assert.equal(Number(vassalJung.getAttribute('fill-opacity')), 0.45)
+    assert.equal(vassalJung.getAttribute('stroke-dasharray'), '3 2')
+    assert.equal(directDaejeon.getAttribute('fill'), vassalJung.getAttribute('fill'))
+    assert.notEqual(directDaejeon.getAttribute('fill'), '#8a969b')
+    const islandRelation = model.relationOf('2872033000')
+    assert.equal(islandBaengnyeong.getAttribute('data-title-relation'), islandRelation)
+    assert.equal(Number(islandBaengnyeong.getAttribute('fill-opacity')), islandRelation === 'unassigned' ? 0.1 : islandRelation === 'state' ? 0.18 : islandRelation === 'vassal' ? 0.45 : 0.72)
+    const polityChip = host.querySelector('[data-title-polity="polity:daejeon"]')
+    assert.match(polityChip.textContent, /대전/u)
+    assert.match(polityChip.textContent, /대전선\(왕격\)/u)
+    assert.match(polityChip.textContent, /대전 군주/u)
+    assert.match(polityChip.textContent, /민웅기/u)
+    const daejeonDomain = model.domainCounts('K1008')
+    assert.match(host.querySelector('[data-title-domain="K1008"]').textContent, new RegExp('직영 ' + daejeonDomain.direct + ' · 봉신 ' + daejeonDomain.vassal))
+    const seoulDomain = model.domainCounts('K001')
+    assert.match(host.querySelector('[data-title-domain="K001"]').textContent, new RegExp('직영 ' + seoulDomain.direct + ' · 봉신 ' + seoulDomain.vassal))
+    assert.ok(host.querySelector('[data-title-state-direct]'))
+    assert.equal(host.querySelectorAll('[data-title-holding-marker]').length, model.markers)
+    await act(async () => { vassalJung.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    const panel = host.querySelector('#territory-detail-panel')
+    const estateRow = [...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '개인 영지')
+    assert.match(estateRow.textContent, /대전 중구 영지 · 장우석 · 직속 민웅기/u)
+    assert.equal([...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '작위')?.querySelector('td').textContent, '대전선')
+    assert.equal([...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '작위 등급')?.querySelector('td').textContent, '왕격')
+    assert.ok(panel.querySelector('a[href="/people/person-1008"]'))
+    await act(async () => { islandBaengnyeong.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    const islandPanel = host.querySelector('#territory-detail-panel')
+    const islandEstate = [...islandPanel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '개인 영지')
+    const islandRow = model.controlByUnit.get('2872033000')
+    const expectedEstate = islandRow ? '기록 없음 · ' + islandRow.authority.name + ' 직할' : '기록 없음'
+    assert.equal(islandEstate.querySelector('td').textContent, expectedEstate)
+    assert.equal([...islandPanel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '작위'), undefined)
+    const svg = host.querySelector('.territory-flat-svg')
+    const before = svg.getAttribute('viewBox')
+    await act(async () => { svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, deltaY: -200 })) })
+    assert.equal(svg.getAttribute('viewBox'), before)
+  } finally { await unmount() }
+})

@@ -16,9 +16,10 @@ export type ConfirmedHolding = {
   adminRefs: Array<{ id: string; name: string }>
   facilityRef?: { sourcePath: string; stationName: string; stationId?: string; layerId: string; layerName?: string; siteAnchor?: string; stationIdentity?: { district: string; lat: number; lon: number } }
 }
-export type ConfirmedHoldings = { schema: 'confirmed-person-holdings.v1'; openingYear: number; holdings: ConfirmedHolding[] }
+export type HoldingPolity = { id: string; name: { ko: string; en?: string }; sovereignPersonId: string | null; territorialScale: string | null; formalTitle: string | null; formalTitleRank: string | null; office: string | null; authority: { kind: string; name: string } }
+export type ConfirmedHoldings = { schema: 'confirmed-person-holdings.v1'; openingYear: number; holdings: ConfirmedHolding[]; polities: HoldingPolity[] }
 
-function personById(id: string): { name: string; detailRoute: string; stateName: string; position: string; rank: string; commonTier: string } | undefined {
+export function personById(id: string): { name: string; detailRoute: string; stateName: string; position: string; rank: string; commonTier: string } | undefined {
   const node = retainerGraph.nodes.find(person => person.id === id)
   return node && peopleCatalog.find(person => person.detailRoute === node.detailRoute)
 }
