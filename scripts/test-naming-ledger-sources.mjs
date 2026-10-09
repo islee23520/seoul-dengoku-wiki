@@ -42,7 +42,6 @@ function ledgerSources() {
     [ledger.martialBranch.source, [ledger.martialBranch.name]],
     ...ledger.offices.map(({ state, tiers, source }) => [source, [state, ...tiers]]),
     ...ledger.seriesTitles.map(({ form, source }) => [source, [form]]),
-    ...ledger.historicalOnlyForms.map(({ form, source }) => [source, [form]]),
     ...ledger.retiredPublicForms.map(({ form, source }) => [source, [form]]),
   ]
 }
@@ -53,7 +52,6 @@ function sourceEntryCount() {
     + 1
     + ledger.offices.length
     + ledger.seriesTitles.length
-    + ledger.historicalOnlyForms.length
     + ledger.retiredPublicForms.length
 }
 

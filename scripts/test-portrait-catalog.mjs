@@ -44,6 +44,7 @@ test('portrait properties and immutable images follow the registered portrait ca
     assert.equal(token.personId, detail.id)
     assert.equal(token.characterId, entry.characterId)
     assert.equal(token.name, entry.name)
+    assert.equal(token.facts.role, detail.position, entry.personId + ' current canonical role')
     assert.equal(token.stateId, entry.stateId, entry.personId + ' catalog/token state')
     if (selection.records.find(row => row.personId === entry.personId)?.operation === 'register-approved') {
       assert.equal(entry.characterId, detail.fields['캐릭터 ID'])

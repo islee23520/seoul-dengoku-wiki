@@ -152,8 +152,9 @@ test('actual graph retains all nodes and edges and frames isolated holders', () 
     assert.ok(node.x - 8 >= x && node.x + 10 + node.name.length * 11 <= x + width, node.id)
     assert.ok(node.y - 8 >= y && node.y + 8 <= y + height, node.id)
   }
-  assert.deepEqual([...doc.querySelectorAll('line')].map((line) => [line.dataset.from, line.dataset.to]),
+  assert.deepEqual([...doc.querySelectorAll('line[data-from]')].map((line) => [line.dataset.from, line.dataset.to]),
     retainerGraph.edges.map((edge) => [edge.fromPersonId, edge.toPersonId]))
+  assert.equal(doc.querySelectorAll('[data-group-command]').length, retainerGraph.groups.length)
 })
 
 test('invalid and duplicate IDs and missing owner-liege endpoints remain errors', () => {

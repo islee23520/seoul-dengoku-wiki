@@ -65,8 +65,8 @@ export function validateCastHouseholdRelations(ledger, documents) {
       if (!['unknown', 'christian', 'non-christian'].includes(faith.status) || !Array.isArray(faith.sourceRefs) || (faith.status !== 'unknown' && !faith.sourceRefs.length)) fail('E_HOUSEHOLD_FAITH', person.personId)
       faith.sourceRefs.forEach(ref => resolveRef(ref, documents))
     }
-    const christian = [person.household.personFaith, person.household.houseFaith].some(faith => faith.status === 'christian')
-    if (person.household.humanoidAdmission !== (christian ? 'excluded' : 'deferred') || person.household.genderPreference !== (christian ? 'not-applicable' : 'unknown-faith')) fail('E_HOUSEHOLD_ADMISSION', person.personId)
+    const hostile = person.household.politicalPosition === 'enemy'
+    if (person.household.humanoidAdmission !== (hostile ? 'excluded' : 'deferred') || person.household.genderPreference !== (hostile ? 'not-applicable' : 'individual-review')) fail('E_HOUSEHOLD_ADMISSION', person.personId)
     for (const link of person.links) {
       if (!nonempty(link.id) || seenLinks.has(link.id) || !nonempty(link.role) || !nonempty(link.basis) || !['preserved', 'owner-authored'].includes(link.status) || !link.sourceRefs.length) fail('E_HOUSEHOLD_LINK', link.id)
       seenLinks.add(link.id)

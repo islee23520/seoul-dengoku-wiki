@@ -114,7 +114,7 @@ test('atlas ID spellings, relation kinds, closed objects and exclusions fail ind
   try {
     const validRecords = (document) => {
       document.data.atlas.humans.push({ id: 'K1003', name: { en: 'Example', ko: '예시' }, role: { en: 'Example', ko: '예시' }, stage: '주요', state_id: '__EXAMPLE__:state', state_name: { en: 'Example', ko: '예시' }, source_anchor: '__EXAMPLE__:source' })
-      document.data.atlas.states.push({ id: '__EXAMPLE__:state', display_name: { en: 'Example', ko: '예시' }, capital_station: { en: 'Example', ko: '예시' }, region: { en: 'Example', ko: '예시' }, government: { en: 'Example', ko: '예시' }, offices: [], power: { en: 'Example', ko: '예시' }, power_basis: [], corridors: [], origin: { en: 'Example', ko: '예시' } })
+      document.data.atlas.states.push({ id: '__EXAMPLE__:state', display_name: { en: 'Example', ko: '예시' }, capital_station: { en: 'Example', ko: '예시' }, region: { en: 'Example', ko: '예시' }, government: { en: 'Example', ko: '예시' }, offices: [], power: { en: 'Example', ko: '예시' }, power_basis: [], corridors: [] })
       document.data.atlas.arcs.push({ id: 'ARC-S-H', title: { en: 'Example', ko: '예시' }, house_ids: [], theater_ids: [], synthetic_classes: ['H'], group_ids: [], acts: [{ act: 1, summary: { en: 'Example', ko: '예시' } }], owner: '__EXAMPLE__:owner', source_kind: 'original-fiction', source_anchors: ['__EXAMPLE__:source'] })
       document.data.atlas.relations.push({ from: 'K1003', kind: 'custodied_by', to: '__EXAMPLE__:state', reason: { en: 'Example', ko: '예시' } })
     }

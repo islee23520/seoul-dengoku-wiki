@@ -204,11 +204,11 @@ test('S02/S03 court projection retains exact approved direct lieges and owner me
   assert.equal(expectedMembers.size, 11)
   assert.equal(expectedOwners.size, 8)
   assert.equal(details.size, 1022)
-  const s03OwnerLieges = new Set(['K058', 'K060', 'K061', 'K062', 'K233', 'K032', 'K037', 'K033'])
+  const s03OwnerLieges = new Set(['K058', 'K060', 'K061', 'K062', 'K233', 'K032', 'K037', 'K033', 'K035', 'K039', 'K038'])
   for (const detail of details.values()) {
     if (detail.state !== 'S01' && !expectedMembers.has(detail.id) && !s03OwnerLieges.has(detail.gurps.id))
       assert.equal(detail.directLiege, undefined, detail.id)
-    if (detail.state !== 'S01' && !expectedOwners.has(detail.id)) assert.equal(detail.court, undefined, detail.id)
+    if (detail.state !== 'S01' && detail.gurps.id !== 'K1008' && !expectedOwners.has(detail.id)) assert.equal(detail.court, undefined, detail.id)
   }
   const omitted = new Map(details)
   omitted.set(person('K041').id, { ...person('K041'), directLiege: undefined })

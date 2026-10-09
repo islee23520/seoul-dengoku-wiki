@@ -4,11 +4,11 @@ import { readFileSync } from 'node:fs'
 import { evaluateHouseholdHumanoid, householdHumanoidPolicy, validateExistingHouseholdCounts, validateExistingHumanoidAssignments } from './household-humanoid-policy.mjs'
 
 const known = status => ({ status, sourceRefs: [{ path: 'lore/characters/Core-Characters.json', anchor: 'person-faith' }] })
-const request = changes => ({ ownerPersonId: 'K998', ownerGender: '남성', orientation: '이성', personFaith: known('non-christian'), houseFaith: known('non-christian'), scope: 'household', existing: false, existingGender: null, seed: 'owner-approved-seed', roleKey: 'grain-store', ...changes })
+const request = changes => ({ ownerPersonId: 'K998', politicalAuthority: 'S02', ownerGender: '남성', orientation: '이성', personFaith: known('non-christian'), houseFaith: known('non-christian'), scope: 'household', existing: false, existingGender: null, seed: 'owner-approved-seed', roleKey: 'grain-store', ...changes })
 
-test('Christian person or house exclusion outranks opposite gender and unknown faith', () => {
+test('hostile political authority excludes service regardless of personal faith', () => {
   for (const changes of [{ personFaith: known('christian') }, { houseFaith: known('christian'), personFaith: { status: 'unknown', sourceRefs: [] } }]) {
-    const result = evaluateHouseholdHumanoid(request(changes))
+    const result = evaluateHouseholdHumanoid(request({ ...changes, politicalAuthority: 'union:religious' }))
     assert.equal(result.eligibility, 'excluded')
     assert.equal(result.preferredGender, null)
     assert.equal(result.assignmentAction, 'do-not-assign')
@@ -42,17 +42,17 @@ test('null and explicitly unknown orientation do not default to heterosexual', (
   }
 })
 
-test('unknown faith cannot produce an exemption and known faith needs evidence', () => {
-  assert.equal(evaluateHouseholdHumanoid(request({ houseFaith: undefined })).eligibility, 'unresolved')
-  assert.equal(evaluateHouseholdHumanoid(request({ personFaith: { status: 'unknown', sourceRefs: [] } })).eligibility, 'unresolved')
-  assert.equal(evaluateHouseholdHumanoid(request({ houseFaith: { status: 'unknown', sourceRefs: [] } })).eligibility, 'unresolved')
+test('unknown political authority stays unresolved and faith evidence remains separate', () => {
+  assert.equal(evaluateHouseholdHumanoid(request({ politicalAuthority: undefined, houseFaith: undefined })).eligibility, 'unresolved')
+  assert.equal(evaluateHouseholdHumanoid(request({ politicalAuthority: undefined, personFaith: { status: 'unknown', sourceRefs: [] } })).eligibility, 'unresolved')
+  assert.equal(evaluateHouseholdHumanoid(request({ politicalAuthority: undefined, houseFaith: { status: 'unknown', sourceRefs: [] } })).eligibility, 'unresolved')
   assert.throws(() => evaluateHouseholdHumanoid(request({ personFaith: { status: 'non-christian', sourceRefs: [] } })), /E_HOUSEHOLD_FAITH_SOURCE/)
   assert.throws(() => evaluateHouseholdHumanoid(request({ ownerPersonId: 'H02' })), /E_HOUSEHOLD_REQUEST/)
   assert.throws(() => evaluateHouseholdHumanoid(request({ orientation: 'heterosexual-default' })), /E_HOUSEHOLD_ORIENTATION/)
 })
 
 test('facility custody remains distinct and existing household conflicts are reported without reassignment', () => {
-  const input = request({ personFaith: known('christian'), existing: true, existingGender: '남성' })
+  const input = request({ politicalAuthority: 'union:religious', personFaith: known('christian'), existing: true, existingGender: '남성' })
   const before = structuredClone(input)
   assert.equal(evaluateHouseholdHumanoid(input).assignmentAction, 'report-conflict')
   assert.equal(evaluateHouseholdHumanoid(input).existingGender, '남성')

@@ -4,24 +4,49 @@
   "title": "Naming ledger",
   "description": "Private naming ledger. Every source is a lore file path; a JSON source carries a JSON pointer (RFC 6901) to the block that states the entry. Retired and historical forms may point to their own ledger record when no independent canon document retains the obsolete form.",
   "type": "object",
-  "required": ["version", "states", "martialSchools", "martialBranch", "offices", "seriesTitles", "historicalOnlyForms", "retiredPublicForms"],
+  "required": [
+    "version",
+    "states",
+    "martialSchools",
+    "martialBranch",
+    "offices",
+    "seriesTitles",
+    "retiredPublicForms"
+  ],
   "additionalProperties": false,
   "properties": {
-    "version": { "const": 1 },
+    "version": {
+      "const": 1
+    },
     "states": {
       "type": "array",
       "minItems": 16,
       "items": {
         "type": "object",
-        "required": ["id", "name", "precursor", "namingYear", "sources"],
+        "required": [
+          "id",
+          "name",
+          "sources"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^S(?:0[1-9]|1[0-6])$" },
-          "name": { "$ref": "#/$defs/form" },
-          "precursor": { "$ref": "#/$defs/form" },
-          "namingYear": { "type": "integer" },
-          "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source" } },
-          "rightsStatus": { "$ref": "#/$defs/rightsStatus" }
+          "id": {
+            "type": "string",
+            "pattern": "^S(?:0[1-9]|1[0-6])$"
+          },
+          "name": {
+            "$ref": "#/$defs/form"
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/source"
+            }
+          },
+          "rightsStatus": {
+            "$ref": "#/$defs/rightsStatus"
+          }
         }
       }
     },
@@ -30,26 +55,61 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["formalName", "hanja", "alias", "source"],
+        "required": [
+          "formalName",
+          "hanja",
+          "alias",
+          "source"
+        ],
         "additionalProperties": false,
         "properties": {
-          "formalName": { "$ref": "#/$defs/form" },
-          "hanja": { "type": ["string", "null"] },
-          "alias": { "type": ["string", "null"] },
-          "source": { "$ref": "#/$defs/source" },
-          "rightsStatus": { "$ref": "#/$defs/rightsStatus" }
+          "formalName": {
+            "$ref": "#/$defs/form"
+          },
+          "hanja": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "alias": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "rightsStatus": {
+            "$ref": "#/$defs/rightsStatus"
+          }
         }
       }
     },
     "martialBranch": {
       "type": "object",
-      "required": ["name", "formalName", "source", "rightsStatus"],
+      "required": [
+        "name",
+        "formalName",
+        "source",
+        "rightsStatus"
+      ],
       "additionalProperties": false,
       "properties": {
-        "name": { "$ref": "#/$defs/form" },
-        "formalName": { "type": "null" },
-        "source": { "type": "string", "pattern": "^lore/editorial/[A-Za-z0-9._/-]+\\.json#(?:/[^/#]+)+$" },
-        "rightsStatus": { "const": "retired" }
+        "name": {
+          "$ref": "#/$defs/form"
+        },
+        "formalName": {
+          "type": "null"
+        },
+        "source": {
+          "type": "string",
+          "pattern": "^lore/editorial/[A-Za-z0-9._/-]+\\.json#(?:/[^/#]+)+$"
+        },
+        "rightsStatus": {
+          "const": "retired"
+        }
       }
     },
     "offices": {
@@ -57,49 +117,75 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["state", "tiers", "source"],
+        "required": [
+          "state",
+          "tiers",
+          "source"
+        ],
         "additionalProperties": false,
         "properties": {
-          "state": { "$ref": "#/$defs/form" },
-          "tiers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/form" } },
-          "source": { "$ref": "#/$defs/source" },
-          "rightsStatus": { "$ref": "#/$defs/rightsStatus" }
+          "state": {
+            "$ref": "#/$defs/form"
+          },
+          "tiers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/form"
+            }
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "rightsStatus": {
+            "$ref": "#/$defs/rightsStatus"
+          }
         }
       }
     },
-    "seriesTitles": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/formEntry" } },
-    "historicalOnlyForms": {
+    "seriesTitles": {
       "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "object",
-        "required": ["form", "state", "untilYear", "source"],
-        "additionalProperties": false,
-        "properties": {
-          "form": { "$ref": "#/$defs/form" },
-          "state": { "type": "string", "pattern": "^S(?:0[1-9]|1[0-6])$" },
-          "untilYear": { "type": "integer" },
-          "source": { "$ref": "#/$defs/source" },
-          "rightsStatus": { "$ref": "#/$defs/rightsStatus" }
-        }
+        "$ref": "#/$defs/formEntry"
       }
     },
     "retiredPublicForms": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["form", "source"],
+        "required": [
+          "form",
+          "source"
+        ],
         "additionalProperties": false,
         "properties": {
-          "form": { "$ref": "#/$defs/form" },
-          "source": { "$ref": "#/$defs/source" },
-          "rightsStatus": { "$ref": "#/$defs/rightsStatus" },
-          "exceptSources": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+          "form": {
+            "$ref": "#/$defs/form"
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "rightsStatus": {
+            "$ref": "#/$defs/rightsStatus"
+          },
+          "exceptSources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         }
       }
     }
   },
   "$defs": {
-    "form": { "type": "string", "minLength": 1 },
+    "form": {
+      "type": "string",
+      "minLength": 1
+    },
     "source": {
       "description": "Repository-relative lore path. A JSON path may add '#' and a JSON pointer; Markdown paths carry no fragment.",
       "type": "string",
@@ -107,16 +193,31 @@
     },
     "rightsStatus": {
       "description": "Set only where canon already states the status; absent otherwise.",
-      "enum": ["real-name", "trademark", "original", "review-needed", "retired"]
+      "enum": [
+        "real-name",
+        "trademark",
+        "original",
+        "review-needed",
+        "retired"
+      ]
     },
     "formEntry": {
       "type": "object",
-      "required": ["form", "source"],
+      "required": [
+        "form",
+        "source"
+      ],
       "additionalProperties": false,
       "properties": {
-        "form": { "$ref": "#/$defs/form" },
-        "source": { "$ref": "#/$defs/source" },
-        "rightsStatus": { "$ref": "#/$defs/rightsStatus" }
+        "form": {
+          "$ref": "#/$defs/form"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "rightsStatus": {
+          "$ref": "#/$defs/rightsStatus"
+        }
       }
     }
   }

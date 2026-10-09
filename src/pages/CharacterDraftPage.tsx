@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { stateCatalog } from '../generated/stateCatalog'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import { characterDraftExport } from './characterDraftExport'
 import gurpsCast from '../../lore/name-pools/gurps-cast.json'
@@ -36,17 +37,7 @@ const CP_COST: Record<number, number> = { 7: -70, 8: -50, 9: -30, 10: 0, 11: 10,
 function toggleItem(list: string[], id: string): string[] {
   return list.includes(id) ? list.filter(x => x !== id) : [...list, id]
 }
-const STATE_OPTIONS = [
-  { id: 'S01', name: '수문국' }, { id: 'S02', name: '규격맹' },
-  { id: 'S03', name: '태욱그룹' }, { id: 'S04', name: '명부교회' },
-  { id: 'S05', name: '동방사' }, { id: 'S06', name: '대한민국정부' },
-  { id: 'S07', name: '환적국' }, { id: 'S08', name: '중앙기술보존원' },
-  { id: 'S09', name: '여의도출자연합회' }, { id: 'S10', name: '안국총림' },
-  { id: 'S11', name: '성하그룹' }, { id: 'S12', name: '신내운수' },
-  { id: 'S13', name: '흰십자단' }, { id: 'S14', name: '아관사' },
-  { id: 'S15', name: '명동대교구' }, { id: 'S16', name: '정동노총' },
-  { id: '', name: '무소속' },
-]
+const STATE_OPTIONS = [...stateCatalog.map(({ id, name }) => ({ id, name })), { id: '', name: '무소속' } ]
 
 const STATE_POSITIONS: Record<string, string[]> = {
   S01: ['군주', '본부장', '구역장', '당직장', '주사'],

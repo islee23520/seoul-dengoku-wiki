@@ -59,7 +59,7 @@ test('Byeon Goun holds only the sourced Yeongdeungpo concourse under the existin
 test('Saetgang concourse holding preserves the exact facility and direct liege without geographic grants', () => {
   const ledger = read('../lore/relations/personal-holdings.json')
   const holding = ledger.holdings.find(row => row.holderPersonId === 'K233')
-  assert.equal(ledger.holdings.length, 20)
+  assert.equal(ledger.holdings.length, 25)
   assert.deepEqual(holding, {
     id: 'holding:saetgang-concourse', name: { ko: '샛강 대합실' },
     holderPersonId: 'K233', directLiegePersonId: 'K222', stateId: 'S09',
@@ -101,7 +101,7 @@ test('confirmed Yangcheon holding joins exact admin geometry and stays separate 
     assert.deepEqual(detail.confirmedHoldings, ledger.holdings.filter(row => row.holderPersonId === person.id))
   }
   const edges = read('../lore/relations/relations.json').ownerLieges.edges
-  assert.equal(edges.length, 13)
+  assert.equal(edges.length, 16)
   for (const edge of edges) {
     const person = source.find(row => row.id === edge.personId)
     const detail = read('../public/person-details/' + person.url.split('/').at(-1) + '.json')

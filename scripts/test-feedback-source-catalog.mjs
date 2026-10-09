@@ -143,7 +143,7 @@ test('actual generated article and person leaves match renderer HTML surfaces an
 test('actual publication transforms and person surfaces exactly match current generated readers', async () => {
   const catalog=JSON.parse(await readFile(resolve('src/generated-private/feedback-selectable-views.ko.json'),'utf8'))
   const states=catalog.documents['DOC:Sixteen-States'],statesLeaves=states.revisions[states.currentRevision].leaves
-  assert.equal(statesLeaves.find((leaf)=>leaf.leafId==='table:cell:15:5').text,'2079. 10. 간판 게시')
+  const stateSource=JSON.parse(await readFile(resolve('lore/factions/Sixteen-States.json'),'utf8'));assert.equal(statesLeaves.find((leaf)=>leaf.leafId==='table:cell:15:5').text,stateSource.content.find(block=>block.anchor==='table').rows[14][5].ko)
   const houses=catalog.documents['DOC:Operating-Houses'],houseLeaves=houses.revisions[houses.currentRevision].leaves
   assert.equal(houseLeaves.some((leaf)=>leaf.text.includes('출처층: original-fiction')),false)
   assert.equal(catalog.documents['DOC:Glossary'],undefined)
@@ -217,7 +217,7 @@ test('actual generated private catalog validates through the confirmed U3 HTTP p
   const submit = async (value, key) => fetch(`${base}/api/feedback/submissions`, { method: 'POST', headers: { cookie, 'x-csrf-token': authBody.csrfToken, 'idempotency-key': key, 'content-type': 'application/json' }, body: JSON.stringify({ anchor: value, body: 'catalog integration', reason: '기타' }) })
   assert.equal((await submit(anchor, 'catalog-valid')).status, 201)
   const states=catalog.documents['DOC:Sixteen-States'],statesLeaf=states.revisions[states.currentRevision].leaves.find((value)=>value.leafId==='table:cell:15:5');const statesAnchor={schemaVersion:'feedback-anchor.v1',documentId:states.documentId,route:states.route,locale:'ko',sourceRevision:states.currentRevision,selections:[{blockAnchor:statesLeaf.blockAnchor,blockKind:statesLeaf.blockKind,leafId:statesLeaf.leafId,exactQuote:statesLeaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(statesLeaf.text).length,unit:'unicode-code-point'},sourceSpans:statesLeaf.sourceSegments.map(({path,start,end,unit})=>({path,start,end,unit}))}]};assert.equal((await submit(statesAnchor,'catalog-states-date')).status,201)
-  const changed=JSON.parse(await readFile(resolve('lore/factions/Sixteen-States.json'),'utf8'));changed.content[7].rows[14][5].ko+=' 변경';const staleFromMutation=structuredClone(statesAnchor);staleFromMutation.sourceRevision=canonicalRevision(changed);const changedResponse=await submit(staleFromMutation,'catalog-source-mutated');assert.equal(changedResponse.status,422);assert.equal((await changedResponse.json()).error.code,'source-changed')
+  const changed=JSON.parse(await readFile(resolve('lore/factions/Sixteen-States.json'),'utf8'));changed.content.find(block=>block.anchor==='table').rows[14][5].ko+=' 변경';const staleFromMutation=structuredClone(statesAnchor);staleFromMutation.sourceRevision=canonicalRevision(changed);const changedResponse=await submit(staleFromMutation,'catalog-source-mutated');assert.equal(changedResponse.status,422);assert.equal((await changedResponse.json()).error.code,'source-changed')
   const wrong = structuredClone(anchor); wrong.selections[0].sourceSpans[0].end += 1
   assert.equal((await submit(wrong, 'catalog-wrong')).status, 422)
   const stale = structuredClone(anchor); stale.sourceRevision = 'f'.repeat(64)

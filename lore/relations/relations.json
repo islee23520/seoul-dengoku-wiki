@@ -105,6 +105,24 @@
         "liegePersonId": "K029",
         "relationKind": "direct-liege",
         "ownerTerm": "직속 주군"
+      },
+      {
+        "personId": "K035",
+        "liegePersonId": "K1008",
+        "relationKind": "direct-vassal",
+        "ownerTerm": "직속 가신"
+      },
+      {
+        "personId": "K039",
+        "liegePersonId": "K1008",
+        "relationKind": "direct-vassal",
+        "ownerTerm": "직속 가신"
+      },
+      {
+        "personId": "K038",
+        "liegePersonId": "K1008",
+        "relationKind": "direct-vassal",
+        "ownerTerm": "직속 가신"
       }
     ]
   },
@@ -137,6 +155,21 @@
         "personId": "K005",
         "courtId": "court:K009",
         "approvalRef": "call_xT2PIiWmuvFB9tX6B8NIhFC3"
+      },
+      {
+        "personId": "K035",
+        "courtId": "court:K1008",
+        "approvalRef": "owner:tasks57-67:2026-10-09"
+      },
+      {
+        "personId": "K039",
+        "courtId": "court:K1008",
+        "approvalRef": "owner:tasks57-67:2026-10-09"
+      },
+      {
+        "personId": "K038",
+        "courtId": "court:K1008",
+        "approvalRef": "owner:tasks57-67:2026-10-09"
       }
     ]
   },
@@ -205,6 +238,11 @@
       "id": "court:K998",
       "ownerPersonId": "K998",
       "stateId": "S02"
+    },
+    {
+      "id": "court:K1008",
+      "ownerPersonId": "K1008",
+      "stateId": "polity:daejeon"
     }
   ],
   "directRetainers": [

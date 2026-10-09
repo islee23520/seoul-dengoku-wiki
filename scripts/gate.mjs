@@ -407,21 +407,13 @@ function main() {
   failures.push(...coinedPhraseFailures(visibleText(shell), 'dist/index.html'))
   failures.push(...editorialMarkerFailures(visibleText(shell), 'dist/index.html'))
   failures.push(...retiredFormFailures(visibleText(shell), 'dist/index.html'))
-  const historicalForm = '급수계약정'
-  const historicalPage = JSON.parse(readFileSync(join(contentDir, 'Sixteen-States.json'), 'utf8'))
-  const historicalPageCount = (JSON.stringify(historicalPage.blocks).match(/급수계약정/gu) ?? []).length
-  const historicalOriginCount = (readFileSync(join(wikiRoot, 'src/generated/stateCatalog.ts'), 'utf8').match(/"origin": "급수계약정"/gu) ?? []).length
-  if (historicalPageCount !== 0 || historicalOriginCount !== 1) failures.push('FAIL retired-form: historical origin baseline changed')
-  let historicalBundleCount = 0
   for (const file of listFiles(join(distDir, 'assets')).filter((file) => file.endsWith('.js'))) {
     const source = readFileSync(file, 'utf8')
     const rel = posixRel(wikiRoot, file)
     failures.push(...coinedPhraseFailures(source, rel))
-    historicalBundleCount += (source.match(/급수계약정/gu) ?? []).length
-    failures.push(...retiredFormFailures(source.replaceAll(historicalForm, ''), rel))
+    failures.push(...retiredFormFailures(source, rel))
     failures.push(...ravelenExclusionFailures(source, rel))
   }
-  if (historicalBundleCount !== historicalPageCount * 2 + historicalOriginCount) failures.push(`FAIL retired-form: dist/assets/ contains ${historicalBundleCount} historical-origin forms; expected ${historicalPageCount * 2 + historicalOriginCount}`)
   for (const file of listFiles(join(wikiRoot, 'public')).filter((file) => file.endsWith('.json'))) {
     const rel = posixRel(wikiRoot, file)
     if (rel.startsWith('public/person-details/')) {
@@ -454,9 +446,9 @@ function main() {
     for (const field of ['title', 'category', 'status', 'source']) failures.push(...visibleFieldFailures(update[field], `data/update-history.json#/updates/${index}/${field}`))
   })
   for (const [index, state] of readGeneratedArray('src/generated/stateCatalog.ts', 'stateCatalog').entries()) {
-    for (const field of ['name', 'origin', 'government', 'power', 'cause', 'ruler', 'capital', 'capitalName']) {
+    for (const field of ['name', 'government', 'power', 'cause', 'ruler', 'capital', 'capitalName']) {
       const path = `src/generated/stateCatalog.ts#/states/${index}/${field}`
-      failures.push(...visibleFieldFailures(state[field], path, { retiredSource: field === 'origin' && state.id === 'S01' ? 'Sixteen-States.json' : path }))
+      failures.push(...visibleFieldFailures(state[field], path))
     }
   }
   for (const [index, family] of readGeneratedArray('src/generated/clanFamilyCatalog.ts', 'clanFamilyCatalog').entries()) {
@@ -468,9 +460,9 @@ function main() {
   }
   const territories = JSON.parse(readFileSync(join(wikiRoot, 'public/opening-territories.json'), 'utf8'))
   for (const [index, state] of territories.states.entries()) {
-    for (const field of ['name', 'origin', 'government', 'power', 'cause', 'ruler', 'founded', 'relation', 'religion', 'foreignRelations', 'vassals']) if (state[field] != null) {
+    for (const field of ['name', 'government', 'power', 'cause', 'ruler', 'founded', 'relation', 'religion', 'foreignRelations', 'vassals']) if (state[field] != null) {
       const path = `public/opening-territories.json#/states/${index}/${field}`
-      failures.push(...visibleFieldFailures(state[field], path, { retiredSource: field === 'origin' && state.id === 'S01' ? 'Sixteen-States.json' : path }))
+      failures.push(...visibleFieldFailures(state[field], path))
     }
     state.chronology.forEach((event, eventIndex) => failures.push(...visibleFieldFailures(event.text, `public/opening-territories.json#/states/${index}/chronology/${eventIndex}/text`)))
   }

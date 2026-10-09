@@ -26,7 +26,7 @@ export function verifyAtlasPeople(atlas, { registry, candidates, people, routes 
   if (person.character_id !== (entry?.aliases?.[0] ?? entry?.id)) failures.push('E_ADDITIONAL_CHARACTER_ID:' + id)
   if (!route || route.name !== entry?.name || person.detail_route !== route.detailRoute) failures.push('E_ADDITIONAL_ROUTE:' + id)
   const country = value?.state === 'S00' ? null : value?.state
-  if (!value || person.national_state_id !== country || (country !== null && !stateIds.includes(country))) failures.push('E_ADDITIONAL_COUNTRY:' + id)
+  if (!value || person.national_state_id !== country || (country !== null && ![...stateIds, 'polity:daejeon'].includes(country))) failures.push('E_ADDITIONAL_COUNTRY:' + id)
  }
  for (const entry of expected) if (!collection[entry.id]) failures.push('E_ADDITIONAL_MISSING:' + entry.id)
  const additionalCount = Object.keys(collection).length, total = atlas.humans.length + additionalCount
