@@ -5,7 +5,7 @@ import { StateFlag } from './StateFlag'
 import { presentationStations } from './stationPresentation'
 import { resolveRegionSelection } from '../wikiRouting'
 import { segmentPointerChoices } from './segmentPointerSelection'
-import HoldingSelectionPanel, { type ConfirmedHoldings } from './HoldingSelectionPanel'
+import HoldingSelectionPanel, { type ConfirmedHoldings, personById as holdingPersonById } from './HoldingSelectionPanel'
 import gtxProjects from '../../lore/places/gtx-project-connections.json'
 import { correctedRailStations } from './railStationCorrections'
 import type { CurrentHegemon, CurrentBase } from '../generated/stateCatalog'
@@ -41,6 +41,15 @@ const colors = ['#b54b4b', '#9b6a34', '#7360a7', '#347b74', '#735377', '#426f99'
 const tierColors: Record<string, string> = { 강국: '#b54b4b', 약국: '#956f28', 소국: '#64708a' }
 const contestedColor = '#f0c05a'
 const unassignedColor = '#8a969b'
+const titleDomainPalette = ['#7a4f9e', '#9e6a2f', '#3d7d8c', '#8c3d5c', '#5a7d2f', '#2f5d7d']
+const titleRootOf = (holding: ConfirmedHoldings['holdings'][number]) => holding.directLiegePersonId ?? holding.holderPersonId
+const assignmentMatchesFilter = (authority: CurrentHegemon | null | undefined, stateFilter: string, filterHegemonName?: string) => {
+  if (!authority) return false
+  if (stateFilter === 'all') return true
+  if (filterHegemonName) return authority.name === filterHegemonName
+  return authority.kind === 'state' && authority.stateId === stateFilter
+}
+const territorialScaleLabel = (scale: string | null) => scale === 'kingdom' ? '왕국령 규모' : scale === 'duchy' ? '공작령 규모' : scale === 'barony' ? '남작령 규모' : scale ?? '규모 기록 없음'
 const gtxStationIds: Readonly<Record<string, string>> = { 신도림: 'Sindorim', 가산: '가산디지털단지', DMC: '디지털미디어시티' }
 const projectStatusLabel = (status: string) => {
   switch (status) {
@@ -127,8 +136,9 @@ export default function OpeningTerritoryMap() {
   const [regularConnections, setRegularConnections] = useState<RegionalConnections | null>(null)
   const [northern, setNorthern] = useState<NorthernRail | null>(null)
   const [underground, setUnderground] = useState<Underground | null>(null)
-  const [frame, setFrame] = useState<'seoul' | 'peninsula'>('seoul')
+  const [frame, setFrame] = useState<'seoul' | 'peninsula'>('peninsula')
   const [layer, setLayer] = useState<'surface' | 'underground'>('surface')
+  const [mode, setMode] = useState<'political' | 'titles'>('political')
   const [selectedSegmentId, setSelectedSegmentId] = useState<string | null>(null)
   const [segmentChoices, setSegmentChoices] = useState<string[]>([])
   const [box, setBox] = useState<Box | null>(null)
@@ -299,7 +309,15 @@ export default function OpeningTerritoryMap() {
         setOutsideUnits(outside)
         setOutsideControl(control)
         setRelief(reliefImage(bytes, layer))
-        setBox({ x: 0, y: 0, width: territories.width, height: territories.height })
+        // 기본 화면은 삼국 정치 지도: 한반도 전체 범위에서 시작한다.
+        const [e0, n0, e1, n1] = layer.bboxEPSG5179
+        const spanEast = territories.projection.maxEast - territories.projection.minEast
+        const spanNorth = territories.projection.maxNorth - territories.projection.minNorth
+        const peninsulaLeft = (e0 - territories.projection.minEast) / spanEast * territories.width
+        const peninsulaRight = (e1 - territories.projection.minEast) / spanEast * territories.width
+        const peninsulaTop = (territories.projection.maxNorth - n1) / spanNorth * territories.height
+        const peninsulaBottom = (territories.projection.maxNorth - n0) / spanNorth * territories.height
+        setBox({ x: peninsulaLeft, y: peninsulaTop, width: peninsulaRight - peninsulaLeft, height: peninsulaBottom - peninsulaTop })
         return asset<Water>(meta.farWaterFile)
       }).then(setWater).catch((error) => { if (error.name !== 'AbortError') setFailed(true) })
     return () => controller.abort()
@@ -359,6 +377,24 @@ export default function OpeningTerritoryMap() {
     return stationId ? selectedStation?.memberIds.includes(stationId) : holding.landmarkRef ? holding.landmarkRef.landmarkId === selectedLandmark : holding.adminRefs.some(ref => ref.id === (selectedOutsideUnit ?? selectedId))
   }), [holdings, selectedId, selectedStation, selectedOutsideUnit, selectedLandmark])
   const selectedHoldingRegions = useMemo(() => new Set(selectedHolding?.adminRefs.map(ref => ref.id) ?? []), [selectedHolding])
+  const holdingsByAdminRef = useMemo(() => {
+    const index = new Map<string, ConfirmedHoldings['holdings'][number]>()
+    for (const holding of holdings?.holdings ?? []) for (const ref of holding.adminRefs) if (!index.has(ref.id)) index.set(ref.id, holding)
+    return index
+  }, [holdings])
+  const titleDomains = useMemo(() => {
+    const domains = new Map<string, { color: string; direct: number; vassal: number }>()
+    for (const holding of holdings?.holdings ?? []) {
+      if (!holding.adminRefs.length) continue
+      const root = titleRootOf(holding)
+      const entry = domains.get(root) ?? { color: '', direct: 0, vassal: 0 }
+      if (holding.directLiegePersonId === null) entry.direct += holding.adminRefs.length
+      else entry.vassal += holding.adminRefs.length
+      domains.set(root, entry)
+    }
+    [...domains.keys()].sort().forEach((root, index) => { domains.get(root)!.color = titleDomainPalette[index % titleDomainPalette.length] })
+    return domains
+  }, [holdings])
   const stations = useMemo(() => presentationStations(data?.stations ?? []), [data])
   const seoulStationNames = useMemo(() => new Set(stations.flatMap((station) => station.memberIds.concat(station.names))), [stations])
   const hegemonByHolder = useMemo(() => new Map(data?.hegemons.flatMap(hegemon => hegemon.memberStateIds.map(id => [id, hegemon] as const)) ?? []), [data])
@@ -432,24 +468,39 @@ export default function OpeningTerritoryMap() {
     })))
     return <>
         <image href={relief} x={px} y={py} width={pr - px} height={pb - py} preserveAspectRatio="none" imageRendering="auto" />
-        {layer === 'surface' && frame === 'peninsula' && outsideUnits?.units.flatMap((unit) => {
+        {layer === 'surface' && outsideUnits?.units.flatMap((unit) => {
           const assignment = outsideAssignments.get(unit.id)
-          const components = assignment?.components ?? [{ id: unit.id, name: unit.name, path: unit.path, authority: assignment?.authority ?? null, status: assignment?.status ?? 'unassigned' }]
-          return components.map(component => {
-            const holder = component.authority?.name
-            const title = `${unit.name} · ${component.name ?? '해안 섬'} · ${holder ?? '미배정'}`
-            return <path key={component.id} d={component.path} data-outside-unit={unit.id} data-island-component={component.id} data-control-status={component.status} role="button" tabIndex={0} aria-label={title} className="territory-outside-unit" fill={hegemonColors.get(holder ?? '') ?? unassignedColor} fillOpacity={holder ? 0.55 : 0.1} stroke="#8a969b" strokeOpacity="0.55" strokeWidth="0.65" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseOutsideUnit(unit) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseOutsideUnit(unit) } }}><title>{title}</title></path>
+          const holding = holdingsByAdminRef.get(unit.id)
+          const domain = holding ? titleDomains.get(titleRootOf(holding)) : undefined
+          const components = assignment?.components ?? [{ id: unit.id, name: unit.name, componentIndex: 0, path: unit.path, authority: assignment?.authority ?? null, status: assignment?.status ?? 'unassigned' }]
+          return components.map((component) => {
+            const holderName = component.authority?.name
+            const politicalFill = hegemonColors.get(holderName ?? '') ?? unassignedColor
+            const titlesFill = domain?.color ?? politicalFill
+            const matched = assignmentMatchesFilter(component.authority, stateFilter, filterHegemon?.name)
+            const componentName = assignment?.components ? component.name ?? '해안 섬' : null
+            const statusText = mode === 'titles'
+              ? holding ? `${holding.name.ko} · ${holdingPersonById(holding.holderPersonId)?.name ?? holding.holderPersonId}${holding.directLiegePersonId ? ` · 직속 ${holdingPersonById(holding.directLiegePersonId)?.name ?? holding.directLiegePersonId}` : ' · 직영'}` : holderName ? `${holderName} 직할` : '지배 기록 없음'
+              : assignment?.vassal && holderName ? `${assignment.vassal} / ${holderName}` : holderName ?? (assignment?.status === 'partial' ? '섬별 부분 점유' : '2126 지배 기록 없음')
+            const title = [unit.name, componentName, statusText].filter(Boolean).join(' · ')
+            const fill = mode === 'titles' && !holding ? politicalFill : mode === 'titles' ? titlesFill : politicalFill
+            const fillOpacity = selectedOutsideUnit === unit.id ? 0.95
+              : mode === 'titles' ? holding ? holding.directLiegePersonId === null ? 0.72 : 0.45 : holderName ? 0.18 : 0.1
+              : selectedHoldingRegions.has(unit.id) ? 0.86
+              : holderName ? matched ? 0.72 : 0.24 : 0.1
+            const titleRelation = mode === 'titles' ? holding ? holding.directLiegePersonId === null ? 'direct' : 'vassal' : holderName ? 'state' : 'unassigned' : undefined
+            return <path key={component.id} d={component.path} data-outside-unit={unit.id} data-island-component={component.id} data-control-status={component.status} data-title-relation={titleRelation} data-title-root={mode === 'titles' && holding ? titleRootOf(holding) : undefined} role="button" tabIndex={0} aria-label={title} className="territory-outside-unit" fill={fill} fillOpacity={fillOpacity} stroke={selectedOutsideUnit === unit.id ? '#ffe18c' : '#35434b'} strokeWidth={selectedOutsideUnit === unit.id ? '1.8' : '0.6'} strokeDasharray={mode === 'titles' && holding && holding.directLiegePersonId !== null ? '3 2' : undefined} vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseOutsideUnit(unit) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseOutsideUnit(unit) } }}><title>{title}</title></path>
           })
         })}
         {layer === 'surface' && showVassals && boundaries.map((boundary) => { const vassal = data.vassals.find((item) => item.city === boundary.city); return <path key={boundary.city} data-vassal-boundary={boundary.city} d={trace(boundary.geometry, toMap)} fill="none" stroke={vassal ? hegemonColors.get(vassal.authorityName) : 'none'} strokeOpacity={selectedVassal === vassal?.name ? 1 : 0.8} strokeWidth={selectedVassal === vassal?.name ? '3' : '1.5'} strokeDasharray="5 4" vectorEffect="non-scaling-stroke" pointerEvents="none"><title>{boundary.city} 행정 경계 · 속국 소재지</title></path> })}
         {layer === 'underground' && data.regions.map((region) => <path key={region.id} d={region.path} className="territory-underground-ground" fill="#27343a" fillOpacity="0.6" stroke="#3c4a51" strokeWidth="0.5" vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
-        {layer === 'surface' && data.regions.map((region) => <path key={region.id} d={region.path} className="territory-flat-region" data-region-id={region.id} data-state-id={region.polities[0]} role="button" tabIndex={0} aria-label={`${region.district} ${region.name} · ${states.get(region.polities[0])?.name ?? '영토'} 보기`} data-hegemon={region.currentHegemons[0]?.name} fill={hegemonColors.get(region.currentHegemons[0]?.name ?? '') ?? unassignedColor} fillOpacity={selectedId === region.id ? 0.95 : selectedHoldingRegions.has(region.id) ? 0.86 : stateFilter === 'all' || region.polities.includes(stateFilter) || region.currentHegemons.some(hegemon => hegemon.name === filterHegemon?.name) ? 0.72 : 0.24} stroke="#35434b" strokeWidth="0.6" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseRegion(region) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseRegion(region) } }} />)}
+        {layer === 'surface' && data.regions.map((region) => { const holding = holdingsByAdminRef.get(region.id); const domain = holding ? titleDomains.get(titleRootOf(holding)) : undefined; return <path key={region.id} d={region.path} className="territory-flat-region" data-region-id={region.id} data-state-id={region.polities[0]} role="button" tabIndex={0} aria-label={`${region.district} ${region.name} · ${states.get(region.polities[0])?.name ?? '영토'} 보기`} data-hegemon={region.currentHegemons[0]?.name} data-title-relation={mode === 'titles' ? holding ? holding.directLiegePersonId === null ? 'direct' : 'vassal' : 'state' : undefined} data-title-root={mode === 'titles' && holding ? titleRootOf(holding) : undefined} fill={mode === 'titles' && domain ? domain.color : hegemonColors.get(region.currentHegemons[0]?.name ?? '') ?? unassignedColor} fillOpacity={selectedId === region.id ? 0.95 : mode === 'titles' ? holding ? holding.directLiegePersonId === null ? 0.72 : 0.45 : 0.18 : selectedHoldingRegions.has(region.id) ? 0.86 : stateFilter === 'all' || region.polities.includes(stateFilter) || region.currentHegemons.some(hegemon => hegemon.name === filterHegemon?.name) ? 0.72 : 0.24} stroke="#35434b" strokeWidth="0.6" strokeDasharray={mode === 'titles' && holding && holding.directLiegePersonId !== null ? '3 2' : undefined} vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.chooseRegion(region) }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handlers.current?.chooseRegion(region) } }} /> })}
         {layer === 'surface' && selectedHolding && data.regions.filter(region => selectedHoldingRegions.has(region.id)).map(region => <path key={`holding-${region.id}`} data-holding-region={region.id} data-holding-id={selectedHolding.id} d={region.path} fill="none" stroke="var(--wiki-accent)" strokeWidth="3" vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
         {layer === 'surface' && <path d={subordinateBorders} className="territory-subordinate-borders" fill="none" stroke="#35434b" strokeWidth="1.2" strokeDasharray="4 3" vectorEffect="non-scaling-stroke" pointerEvents="none" />}
         {layer === 'surface' && <path d={borders} className="territory-national-borders" fill="none" stroke="#18252d" strokeWidth="3.6" vectorEffect="non-scaling-stroke" pointerEvents="none" />}
         {layer === 'surface' && showRail && projectSegments.map(({ project, a, b, key }) => <line key={key} data-gtx-project-segment={project.id} data-project-status={project.status} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="var(--wiki-accent)" strokeWidth="3" strokeDasharray="7 5" vectorEffect="non-scaling-stroke" pointerEvents="none"><title>{project.id} · {a.name}–{b.name} · {projectStatusLabel(project.status)} · 사업 연결 도식</title></line>)}
         {layer === 'surface' && showRail && regularConnections?.edges.filter((edge) => selectedLine === 'all' || edge.lineId === selectedLine).map((edge) => { const a = endpointPoint(edge.a), b = endpointPoint(edge.b); return <line key={edge.id} data-regular-regional-segment={edge.id} x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke={data.lines[edge.lineId]?.color ?? 'var(--wiki-muted)'} strokeWidth="1.5" vectorEffect="non-scaling-stroke" pointerEvents="none"><title>{data.lines[edge.lineId]?.name ?? edge.lineId} · {edge.a.name}–{edge.b.name} · 일반 인접 연결 도식</title></line> })}
-        {riverPaths.map((feature) => <polyline key={feature.id} className="territory-flat-river" points={(feature.coordinates as number[][]).map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke="#36a8c4" strokeWidth="2.4" vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
+        {riverPaths.map((feature) => <polyline key={feature.id} className="territory-flat-river" points={(feature.coordinates as number[][]).map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke="#36a8c4" strokeWidth="2.4" pointerEvents="none" />)}
         {layer === 'surface' && showRail && displayedRail.map((path, index) => <polyline key={`metro-${index}`} className="territory-metro-line" data-line-id={path.lineId} points={path.points.map(([east, north]) => toMap(east, north).join(',')).join(' ')} fill="none" stroke={data.lines[path.lineId]?.color ?? '#d5e5e8'} strokeWidth={selectedLine === 'all' ? '2.8' : '4'} vectorEffect="non-scaling-stroke" pointerEvents="none" />)}
         {layer === 'surface' && showRail && frame === 'peninsula' && northern && <path d={northern.paths.map((path) => path.points.map(([east, north], index) => `${index ? 'L' : 'M'}${toMap(east, north).join(',')}`).join(' ')).join(' ')} fill="none" stroke="#e7d397" strokeWidth="1.2" strokeDasharray="5 5" vectorEffect="non-scaling-stroke" pointerEvents="none" />}
         {layer === 'surface' && showRail && !rail && data.edges.flatMap((edge, index) => edge.lineIds.filter((id) => selectedLine === 'all' || selectedLine === id).map((id) => { const a = data.stations.find((station) => station.id === edge.a), b = data.stations.find((station) => station.id === edge.b); return a && b ? <line key={`seoul-${index}-${id}`} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={data.lines[id]?.color ?? '#eee'} strokeWidth="3.2" vectorEffect="non-scaling-stroke" pointerEvents="none" /> : null }))}
@@ -462,8 +513,18 @@ export default function OpeningTerritoryMap() {
         {layer === 'underground' && showStations && stations.filter((station) => selectedLine === 'all' || station.lineIds.includes(selectedLine)).map((station) => <circle key={station.id} className="territory-station-area" data-station-area={station.id} data-control-status={station.control.status} cx={station.x} cy={station.y} r={station.lineIds.length > 1 ? 5.5 : 3.8} fill={segmentColor(station.control)} stroke="#f4fbff" strokeWidth="1.6" vectorEffect="non-scaling-stroke" onClick={() => { if (!dragged.current) handlers.current?.selectStation(station) }}><title>{station.names.join(' · ')} 역 구역 · {controlLabel(station.control.status)}</title></circle>)}
         {data.states.map((state) => <g key={state.id} className="territory-flat-capital" data-capital-station-id={state.capitalStationId} onClick={() => handlers.current?.chooseState(state)}><circle cx={state.capitalX} cy={state.capitalY} r="7" fill={states.get(state.id)?.color} stroke="#fff" strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{state.id} {state.name} · 수도역 {state.capitalStationId}</title></g>)}
         {showStations && stations.filter((station) => (station.lineIds.length > 1 || station.memberIds.length > 1 || data.majorStationIds.includes(station.id)) && (selectedLine === 'all' || station.lineIds.includes(selectedLine))).map((station) => <g key={station.id} className="territory-flat-station" data-station-id={station.id} onClick={() => handlers.current?.selectStation(station)}><circle cx={station.x} cy={station.y} r={station.lineIds.length > 1 ? 6 : 4} fill="#fff" stroke={data.lines[station.lineIds[0]]?.color ?? '#264655'} strokeWidth="2" vectorEffect="non-scaling-stroke" /><title>{station.names.join(' · ')} · {station.lineIds.map((id) => data.lines[id]?.name).join(' · ')}</title></g>)}
+        {layer === 'surface' && mode === 'titles' && holdings && holdings.holdings.filter((holding) => holding.stationRef || holding.facilityRef || holding.landmarkRef).map((holding) => {
+          const station = holding.stationRef ? stations.find((entry) => entry.memberIds.includes(holding.stationRef!.stationId) || entry.id === holding.stationRef!.stationId) : holding.facilityRef ? stations.find((entry) => entry.names.includes(holding.facilityRef!.stationName) || entry.memberIds.includes(holding.facilityRef!.stationName)) : null
+          const landmark = holding.landmarkRef ? data.landmarks.find((site) => site.id === holding.landmarkRef!.landmarkId) : null
+          const x = station?.x ?? landmark?.x
+          const y = station?.y ?? landmark?.y
+          if (x == null || y == null) return null
+          const holder = holdingPersonById(holding.holderPersonId)
+          const liege = holding.directLiegePersonId === null ? null : holdingPersonById(holding.directLiegePersonId)
+          return <circle key={holding.id} className="territory-title-holding-marker" data-title-holding-marker={holding.id} data-title-relation={holding.directLiegePersonId === null ? 'direct' : 'vassal'} cx={x} cy={y} r="6.5" stroke="#fff6de" strokeWidth="2" vectorEffect="non-scaling-stroke" onClick={() => { if (dragged.current) return; if (station) handlers.current?.selectStation(station); else if (landmark) { setSelectedLandmark(landmark.id); setSelectedStation(null); setSelectedId(null); setSelectedOutsideUnit(null); setSelectedVassal(null); setRegionalStation(null); setSelectedSegmentId(null); setStateFilter('all'); setDetailOpen(true) } }}><title>{holding.name.ko} · {holder?.name ?? holding.holderPersonId}{liege ? ` · 직속 ${liege.name ?? holding.directLiegePersonId}` : ''}</title></circle>
+        })}
     </>
-  }, [selectedHolding, selectedHoldingRegions, data, terrain, relief, water, projectToMap, boundaries, outsideUnits, outsideAssignments, selectedOutsideUnit, states, stations, seoulStationNames, stationPoints, borders, subordinateBorders, hegemonByHolder, hegemonColors, filterHegemon, rail, regularConnections, northern, frame, layer, selectedSegmentId, selectedVassal, showRail, showStations, showLandmarks, showVassals, selectedLine, selectedId, stateFilter])
+  }, [selectedHolding, selectedHoldingRegions, data, terrain, relief, water, projectToMap, boundaries, outsideUnits, outsideAssignments, selectedOutsideUnit, states, stations, seoulStationNames, stationPoints, borders, subordinateBorders, hegemonByHolder, hegemonColors, filterHegemon, rail, regularConnections, northern, frame, layer, mode, holdings, holdingsByAdminRef, titleDomains, selectedSegmentId, selectedVassal, showRail, showStations, showLandmarks, showVassals, selectedLine, selectedId, stateFilter])
   if (failed) return <p className="wiki-domain-label">영토 지도를 불러오지 못했습니다. 새로고침해 주세요.</p>
   if (!data || !terrain || !relief || !water || !box) return <div className="wiki-loading">서울 영토와 강줄기를 불러오고 있습니다.</div>
 
@@ -491,6 +552,21 @@ export default function OpeningTerritoryMap() {
   const chooseLayer = (next: 'surface' | 'underground') => {
     if (next === layer) return
     setLayer(next)
+    if (next === 'underground') setMode('political')
+    setSelectedOutsideUnit(null)
+    setSelectedSegmentId(null)
+    setSelectedId(null)
+    setSelectedStation(null)
+    setStateFilter('all')
+    setRegionalStation(null)
+    setSelectedVassal(null)
+    setSelectedLandmark(null)
+    setDetailOpen(false)
+  }
+  const chooseMode = (next: 'political' | 'titles') => {
+    if (next === mode) return
+    if (next === 'titles' && layer === 'underground') setLayer('surface')
+    setMode(next)
     setSelectedOutsideUnit(null)
     setSelectedSegmentId(null)
     setSelectedId(null)
@@ -534,6 +610,8 @@ export default function OpeningTerritoryMap() {
   const selectedVassalData = data.vassals.find((vassal) => vassal.name === selectedVassal)
   const selectedOutsideUnitData = outsideUnits?.units.find((unit) => unit.id === selectedOutsideUnit)
   const selectedOutsideAssignment = selectedOutsideUnit ? outsideAssignments.get(selectedOutsideUnit) : undefined
+  const selectedOutsideHolding = selectedOutsideUnit ? holdingsByAdminRef.get(selectedOutsideUnit) : undefined
+  const selectedOutsidePolity = holdings?.polities.find(polity => polity.sovereignPersonId && polity.name.ko === selectedOutsideAssignment?.authority?.name)
   const selectedLandmarkData = data.landmarks.find((landmark) => landmark.id === selectedLandmark)
   const selectedRegionalHolder = regionalStation && boundaries.find((boundary) => insideBoundary([regionalStation.east, regionalStation.north], boundary.geometry))
   const mapScale = Math.min(mapSize.width / box.width, mapSize.height / box.height)
@@ -547,7 +625,7 @@ export default function OpeningTerritoryMap() {
   const segmentCounts = (status: string) => data.edges.filter((edge) => status === 'unassigned' ? !['held', 'contested', 'vacant'].includes(edge.control.status) : edge.control.status === status).length
 
   return <section className="territory-map-section" aria-labelledby="opening-territory-title">
-    <header><p className="wiki-domain-label">한반도 지형 · 삼국 체제(2116~) · 2126 시점</p><h2 id="opening-territory-title">2126 시점 영토 지도</h2><p>서울 427개 동의 국가 권역과 강줄기를 봅니다. 한반도 보기에서는 서울 밖 행정 경계와 속국 소재지도 확인할 수 있습니다.</p></header>
+    <header><p className="wiki-domain-label">한반도 지형 · 삼국 체제(2116~) · 2126 시점</p><h2 id="opening-territory-title">2126 시점 영토 지도</h2><p>개막 삼국 체제의 정치 지도로 시작합니다. 서울 427개 동과 서울 밖 1,415개 행정구역의 2126년 관할, 강줄기, 속국 소재지를 함께 봅니다.</p></header>
     <details className="territory-project-connections">
       <summary>GTX 건설·계획 연결</summary>
       <p>공식 사업 자료의 경로입니다. 사업 단계와 자료 시점은 현재 운행 및 2126년 영토·통행 정보와 구분합니다.</p>
@@ -559,8 +637,9 @@ export default function OpeningTerritoryMap() {
       </section>)}
     </details>
     <div className="territory-toolbar">
+      <div className="territory-mode-toggle" role="group" aria-label="지도 종류"><button type="button" onClick={() => chooseMode('political')} aria-pressed={mode === 'political'}>정치 지도</button><button type="button" onClick={() => chooseMode('titles')} aria-pressed={mode === 'titles'}>작위·영주 지도</button></div>
       <div className="territory-layer-toggle" role="group" aria-label="영토 층"><button type="button" onClick={() => chooseLayer('surface')} aria-pressed={layer === 'surface'}>지상 영토</button><button type="button" onClick={() => chooseLayer('underground')} aria-pressed={layer === 'underground'}>지하 영토</button></div>
-      <p className="wiki-domain-label">{layer === 'surface' ? '색은 삼국의 영토, 굵은 선은 국가 경계, 가는 점선은 직속 보유자의 경계입니다.' : '지하의 역과 구간 색은 직속 보유자를 나타냅니다.'}</p>
+      <p className="wiki-domain-label">{mode === 'titles' ? '색은 확인된 개인 영지의 작위 소속, 점선 테두리는 봉신 보유입니다.' : layer === 'surface' ? '색은 삼국의 영토, 굵은 선은 국가 경계, 가는 점선은 직속 보유자의 경계입니다.' : '지하의 역과 구간 색은 직속 보유자를 나타냅니다.'}</p>
       <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => { const state = states.get(event.target.value); if (state) chooseState(state); else { setStateFilter(event.target.value); setSelectedId(null); setDetailOpen(false) } }}><option value="all">3국 전체</option>{data.hegemons.map(hegemon => <optgroup key={hegemon.name} label={hegemon.name}><option value={`hegemon:${hegemon.name}`}>{hegemon.name} 전체</option>{hegemon.memberStateIds.map(id => { const state = states.get(id); return state && <option key={id} value={id}>{id} · {state.name}</option> })}</optgroup>)}</select></label>
       <label className="territory-filter"><span>노선 필터</span><select value={selectedLine} onChange={(event) => setSelectedLine(event.target.value)}><option value="all">전체 노선</option>{Object.entries(data.lines).map(([id, line]) => <option key={id} value={id}>{line.name}</option>)}</select></label>
       {layer === 'surface' && <label className="territory-rail-toggle"><input type="checkbox" checked={showRail} onChange={(event) => setShowRail(event.target.checked)} />지하철 노선 표시</label>}
@@ -587,11 +666,12 @@ export default function OpeningTerritoryMap() {
       <fieldset className="territory-marker-filters"><legend>지도 표시</legend><label><input type="checkbox" checked={showStations} onChange={(event) => setShowStations(event.target.checked)} />역</label>{layer === 'surface' && <><label><input type="checkbox" checked={showLandmarks} onChange={(event) => setShowLandmarks(event.target.checked)} />시설</label><label><input type="checkbox" checked={showVassals} onChange={(event) => setShowVassals(event.target.checked)} />속국</label></>}</fieldset>
       <span className="territory-controls-help">드래그 이동 · + / - 버튼 확대·축소</span>
     </div>
-    <div className="territory-tier-legend" aria-label="국력 등급 범례">{(['강국', '약국', '소국'] as const).map((tier) => <span key={tier} className="territory-tier-chip" data-tier={tier}><span className="territory-tier-dot" style={{ backgroundColor: tierColors[tier] }} />{tier} {data.states.filter((state) => state.power === tier).length}</span>)}<span className="territory-tier-note">{layer === 'surface' ? '굵은 선: 삼국 국가 경계 · 가는 점선: 직속 보유 경계 · 색칠된 서울 밖 행정구역: 확정 지배 · 회색: 중립 · 점선: 속국 소재지 · 색상 선: 전철 노선' : '점: 역 구역 · 선: 역 사이 구간 · 색: 지배 국가'}</span></div>
+    <div className="territory-tier-legend" aria-label="국력 등급 범례">{(['강국', '약국', '소국'] as const).map((tier) => <span key={tier} className="territory-tier-chip" data-tier={tier}><span className="territory-tier-dot" style={{ backgroundColor: tierColors[tier] }} />{tier} {data.states.filter((state) => state.power === tier).length}</span>)}<span className="territory-tier-note">{mode === 'titles' ? '실선 채움: 직영 · 점선 테두리: 봉신 보유 · 연한 색: 국가·연합 직할 · 점: 역·시설 보유' : layer === 'surface' ? '굵은 선: 삼국 국가 경계 · 가는 점선: 직속 보유 경계 · 색칠된 서울 밖 행정구역: 확정 지배 · 회색: 중립 또는 지배 기록 없음 · 섬 단위 표시: 도서별 지배 · 점선: 속국 소재지 · 색상 선: 전철 노선' : '점: 역 구역 · 선: 역 사이 구간 · 색: 지배 국가'}</span></div>
+    {mode === 'titles' && layer === 'surface' && holdings && <div className="territory-title-legend" aria-label="작위·영주 범례" data-title-legend>{holdings.polities.filter(polity => polity.sovereignPersonId).map(polity => { const sovereign = holdingPersonById(polity.sovereignPersonId!); return <span key={polity.id} className="territory-title-chip" data-title-polity={polity.id}>{polity.name.ko} · {territorialScaleLabel(polity.territorialScale)} · 수장 {sovereign?.name ?? polity.sovereignPersonId}{polity.formalTitle ? ` · ${polity.formalTitle}(${polity.formalTitleRank ?? '등급 기록 없음'})` : ''}{polity.office ? ` · ${polity.office}` : ''}</span> })}{[...titleDomains.entries()].filter(([, domain]) => domain.direct + domain.vassal > 0).sort(([, left], [, right]) => (right.direct + right.vassal) - (left.direct + left.vassal)).map(([root, domain]) => { const person = holdingPersonById(root); return <span key={root} className="territory-title-chip" data-title-domain={root}><span className="territory-tier-dot" style={{ backgroundColor: domain.color }} />{person?.name ?? root} 직영 {domain.direct} · 봉신 {domain.vassal}</span> })}<span className="territory-title-chip" data-title-point-holdings><span className="territory-tier-dot" style={{ backgroundColor: 'var(--wiki-accent)' }} />역·시설 보유 {holdings.holdings.filter((holding) => holding.stationRef || holding.facilityRef || holding.landmarkRef).length}곳</span><span className="territory-title-chip" data-title-state-direct><span className="territory-title-swatch state-direct" />국가·연합 직할</span><span className="territory-title-chip" data-title-unassigned><span className="territory-title-swatch unassigned" />미배정 (97개 경로)</span><span className="territory-tier-note">색칠된 땅은 확인된 개인 영지, 국가·연합 직할, 또는 미배정(기록 없음)입니다. 작위와 영주는 기록된 사실만 보여 줍니다.</span></div>}
     {layer === 'underground' && <div className="territory-underground-legend" aria-label="지하 구간 지배 범례"><span><span className="territory-underground-swatch" data-control-status="held" />점유 {segmentCounts('held')}</span><span><span className="territory-underground-swatch" data-control-status="contested" style={{ backgroundColor: contestedColor }} />분쟁 {segmentCounts('contested')}</span><span><span className="territory-underground-swatch" data-control-status="unassigned" style={{ backgroundColor: unassignedColor }} />미배정 {segmentCounts('unassigned')}</span><span className="territory-tier-note">구간 지배는 양 끝 역 지배가 같으면 그 국가, 다르면 분쟁으로 정합니다.</span></div>}
     <div className="territory-map-layout"><div className="territory-map-canvas territory-map-flat" data-flat-territory-map data-territory-layer={layer}>
       <div className="territory-flat-controls" role="group" aria-label="지도 범위"><button type="button" onClick={frameSeoul} aria-pressed={frame === 'seoul'}>서울 전체</button><button type="button" onClick={framePeninsula} aria-pressed={frame === 'peninsula'}>한반도 보기</button><button type="button" onClick={() => zoom(0.8)} aria-label="지도 확대">+</button><button type="button" onClick={() => zoom(1.25)} aria-label="지도 축소">-</button><button type="button" onClick={frame === 'seoul' ? frameSeoul : framePeninsula}>초기화</button></div>
-      <svg ref={mapRef} className="territory-flat-svg" viewBox={`${box.x} ${box.y} ${box.width} ${box.height}`} role="img" aria-label={layer === 'surface' ? '서울 국가 경계와 강줄기, 서울 밖 행정구역과 속국 소재지' : '서울 지하 역 구역과 역 사이 구간의 지배'} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}>
+      <svg ref={mapRef} className="territory-flat-svg" viewBox={`${box.x} ${box.y} ${box.width} ${box.height}`} role="img" aria-label={mode === 'titles' ? '삼국 정치 관할 위에 확인된 개인 영지와 작위 소속' : layer === 'surface' ? '삼국 국가 경계와 강줄기, 서울 밖 행정구역과 속국 소재지' : '서울 지하 역 구역과 역 사이 구간의 지배'} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}>
         <g onKeyDownCapture={(event) => {
           if ((event.key === 'Enter' || event.key === ' ') && event.target instanceof SVGElement && event.target.hasAttribute('data-underground-segment')) setSegmentChoices([])
         }} onClickCapture={(event) => {
@@ -646,7 +726,7 @@ export default function OpeningTerritoryMap() {
         {selectedSegment && <section><p className="wiki-domain-label">지하 역 사이 구간</p><h3>{stationPoints.get(selectedSegment.a)?.name ?? selectedSegment.a}–{stationPoints.get(selectedSegment.b)?.name ?? selectedSegment.b}</h3><table className="person-data-table"><tbody><tr><th>노선</th><td>{selectedSegment.lineIds.map((id) => data.lines[id]?.name ?? id).join(' · ') || '기록 없음'}</td></tr><tr><th>구간 상태</th><td>{segmentStatusLabel(selectedSegment.control.status)}</td></tr><tr><th>관여 국가</th><td>{selectedSegment.control.polityIds.map((id) => states.get(id)?.name ?? id).join(' · ') || '미배정'}</td></tr><tr><th>현재 종주 소속</th><td>{selectedSegment.control.currentHegemons.map(hegemon => hegemon.name).join(' · ')}</td></tr><tr><th>지배 근거</th><td>{selectedSegment.control.source === 'control-delta' ? '구간 원장' : '양 끝 역 지배'}</td></tr><tr><th>2126 통행</th><td>{passageLabel(selectedSegment.passage2126)}</td></tr></tbody></table></section>}
         {regionalStation && <section><p className="wiki-domain-label">광역철도 역 정보</p><h3>{regionalStation.name}</h3><table className="person-data-table"><tbody><tr><th>노선·환승</th><td>{regionalStation.lineIds.map((id) => data.lines[id]?.name ?? id).join(' · ')}</td></tr><tr><th>지표 권역</th><td>{selectedRegionalHolder?.city ?? '서울 외 지도 권역'}</td></tr>{selectedSuzerain && <tr><th>속국·본국</th><td>{selectedSuzerain.name} · {selectedSuzerain.authorityName}</td></tr>}</tbody></table><p>현행 철도 위치 자료의 역이다. 국가 통제는 별도 역 점령 원장으로 확인한다.</p></section>}
         {selectedVassalData && <section><p className="wiki-domain-label">선택된 속국 · {selectedVassalData.city}</p><h3>{selectedVassalData.name}</h3><table className="person-data-table"><tbody><tr><th>본국</th><td>{selectedVassalData.authorityName}</td></tr><tr><th>성립</th><td>{selectedVassalData.founded}</td></tr><tr><th>하는 일</th><td>{selectedVassalData.duty}</td></tr><tr><th>선로 방향</th><td>{selectedVassalData.anchor}</td></tr></tbody></table><p>점선은 {selectedVassalData.city} 행정 경계입니다. 정치 관할은 {selectedVassalData.authorityName}입니다.</p><p className="wiki-domain-label">경계: {selectedVassalData.coordinateSource}</p></section>}
-        {selectedOutsideUnitData && <section><p className="wiki-domain-label">서울 밖 행정구역 · {selectedOutsideUnitData.province}</p><h3>{selectedOutsideUnitData.name}</h3><table className="person-data-table"><tbody><tr><th>행정 단위</th><td>{selectedOutsideUnitData.district} · {selectedOutsideUnitData.id}</td></tr><tr><th>2126 지배</th><td>{selectedOutsideAssignment?.vassal && `${selectedOutsideAssignment.vassal} · `}{selectedOutsideAssignment?.authority?.name ?? (selectedOutsideAssignment?.status === 'partial' ? '섬별 부분 점유' : '미배정')}</td></tr>{selectedOutsideAssignment?.station && <tr><th>중심역</th><td>{selectedOutsideAssignment.station}</td></tr>}</tbody></table>{selectedOutsideAssignment?.components && <table className="person-data-table"><thead><tr><th>섬</th><th>2126 지배</th></tr></thead><tbody>{selectedOutsideAssignment.components.map(component => <tr key={component.id} data-island-detail={component.id}><td>{component.name ?? `해안 섬 ${component.componentIndex + 1}`}</td><td>{component.authority?.name ?? '미배정'}</td></tr>)}</tbody></table>}<p>표시된 경계는 2026년 행정 경계입니다.</p><p className="wiki-domain-label">경계: {outsideUnits?.source} · SHA-256 {outsideUnits?.sourceSha256}</p></section>}
+        {selectedOutsideUnitData && <section><p className="wiki-domain-label">서울 밖 행정구역 · {selectedOutsideUnitData.province}</p><h3>{selectedOutsideUnitData.name}</h3><table className="person-data-table"><tbody><tr><th>행정 단위</th><td>{selectedOutsideUnitData.district} · {selectedOutsideUnitData.id}</td></tr><tr><th>2126 지배</th><td>{selectedOutsideAssignment ? `${selectedOutsideAssignment.vassal ? selectedOutsideAssignment.vassal + ' · ' : ''}${selectedOutsideAssignment.authority?.name ?? (selectedOutsideAssignment.status === 'partial' ? '섬별 부분 점유' : '미배정')}` : '기록 없음'}</td></tr>{mode === 'titles' && <tr><th>개인 영지</th><td>{selectedOutsideHolding ? `${selectedOutsideHolding.name.ko} · ${holdingPersonById(selectedOutsideHolding.holderPersonId)?.name ?? selectedOutsideHolding.holderPersonId}${selectedOutsideHolding.directLiegePersonId ? ` · 직속 ${holdingPersonById(selectedOutsideHolding.directLiegePersonId)?.name ?? selectedOutsideHolding.directLiegePersonId}` : ' · 직영'}` : selectedOutsideAssignment?.authority ? `기록 없음 · ${selectedOutsideAssignment.authority.name} 직할` : '기록 없음'}</td></tr>}{mode === 'titles' && selectedOutsidePolity && selectedOutsidePolity.sovereignPersonId && <><tr><th>작위</th><td>{selectedOutsidePolity.formalTitle ?? '기록 없음'}</td></tr><tr><th>작위 등급</th><td>{selectedOutsidePolity.formalTitleRank ?? '기록 없음'}</td></tr><tr><th>직위</th><td>{selectedOutsidePolity.office ?? '기록 없음'}</td></tr><tr><th>수장</th><td>{(() => { const sovereign = holdingPersonById(selectedOutsidePolity.sovereignPersonId!); return sovereign ? <Link to={sovereign.detailRoute}>{sovereign.name} · {selectedOutsidePolity.sovereignPersonId}</Link> : selectedOutsidePolity.sovereignPersonId })()}</td></tr></>}{selectedOutsideAssignment?.station && <tr><th>중심역</th><td>{selectedOutsideAssignment.station}</td></tr>}</tbody></table>{selectedOutsideAssignment?.components && <table className="person-data-table"><thead><tr><th>섬</th><th>2126 지배</th></tr></thead><tbody>{selectedOutsideAssignment.components.map((component) => <tr key={component.id} data-island-detail={component.id}><td>{component.name ?? `해안 섬 ${component.componentIndex + 1}`}</td><td>{component.authority?.name ?? '미배정'}</td></tr>)}</tbody></table>}<p>표시된 경계는 2026년 행정 경계입니다. {!selectedOutsideAssignment && '속국 소재지와 해당 읍·면·동 전체의 지배는 별개의 사실입니다.'}</p><p className="wiki-domain-label">경계: {outsideUnits?.source} · SHA-256 {outsideUnits?.sourceSha256}</p></section>}
         {selectedLandmarkData && <section><p className="wiki-domain-label">주요 시설</p><h3>{selectedLandmarkData.name}</h3><p>{selectedLandmarkData.role}</p><p>{selectedLandmarkData.detail}</p></section>}
       </aside>}
     </div></div>

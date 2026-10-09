@@ -616,3 +616,53 @@ test('surface and underground territory are separate flat views switched explici
   assert.doesNotMatch(css, /territory-underground-levels/)
   assert.doesNotMatch(map, /OrbitControls|data-three-territory-map|undergroundGroup/)
 })
+
+
+test('approved control ledger keeps Daejeon neutral with evidence-bound personal holdings', async () => {
+  const units = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
+  const control = JSON.parse(await readFile(new URL('../public/outside-control-2126.json', import.meta.url), 'utf8'))
+  const holdings = JSON.parse(await readFile(new URL('../public/confirmed-person-holdings.json', import.meta.url), 'utf8'))
+  const states = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8')).states
+  assert.match(control.schema, /^outside-control-2126\.v[23]$/u)
+  // 배정 원장은 행정단위마다 정확히 한 줄이고 권역 종류와 국가 식별은 정본 생성물을 그대로 따른다.
+  const unitById = new Map(units.units.map((unit) => [unit.id, unit]))
+  assert.equal(control.assignments.length, units.units.length)
+  assert.equal(new Set(control.assignments.map((row) => row.unitId)).size, units.units.length)
+  for (const row of control.assignments) {
+    assert.ok(unitById.has(row.unitId), row.unitId)
+    if (row.authority === null) {
+      assert.ok(row.components?.length || row.status === 'unassigned', row.unitId)
+      for (const component of row.components ?? []) assert.ok(component.status === 'held' ? component.authority : component.authority === null, component.id)
+    } else {
+      assert.ok(['state', 'union', 'neutral'].includes(row.authority.kind), row.unitId)
+      if (row.authority.kind === 'state') assert.ok(states.some((state) => state.id === row.authority.stateId), row.unitId)
+    }
+  }
+  // 대전은 중립 강역이다: 도내 모든 단위가 neutral·대전이고 영주·봉신 네 사람만 개인 배정을 받는다.
+  const daejeonUnits = units.units.filter((unit) => unit.province === '대전광역시')
+  assert.ok(daejeonUnits.length > 0)
+  const daejeonAssignments = daejeonUnits.map((unit) => control.assignments.find((row) => row.unitId === unit.id))
+  assert.ok(daejeonAssignments.every((row) => row.authority.kind === 'neutral' && row.authority.name === '대전' && ['K1008', 'K035', 'K038', 'K039'].includes(row.holderPersonId)))
+  for (const row of control.assignments) {
+    if (row.authority?.kind === 'neutral') assert.equal(unitById.get(row.unitId).province, '대전광역시')
+    if (row.directLiegePersonId) assert.equal(row.directLiegePersonId, 'K1008')
+  }
+  const daejeonRefs = new Set(holdings.holdings.filter((holding) => holding.stateId === 'polity:daejeon').flatMap((holding) => holding.adminRefs.map((ref) => ref.id)))
+  assert.equal(daejeonRefs.size, daejeonUnits.length)
+  for (const unit of daejeonUnits) assert.ok(daejeonRefs.has(unit.id), unit.id)
+  // 섬 지역(옹진군)은 교량 연결 여부와 무관하게 개인 영지로 주어지지 않는다.
+  const personalRefs = new Set(holdings.holdings.flatMap((holding) => holding.adminRefs.map((ref) => ref.id)))
+  const islandUnits = units.units.filter((unit) => unit.name.includes('옹진군') || unit.name.endsWith('대부동'))
+  assert.ok(islandUnits.length >= 8)
+  for (const unit of islandUnits) {
+    assert.equal(personalRefs.has(unit.id), false, unit.id)
+    assert.equal(control.assignments.find((row) => row.unitId === unit.id)?.holderPersonId, undefined, unit.id)
+  }
+  assert.deepEqual(holdings.polities.map((polity) => [polity.id, polity.sovereignPersonId, polity.formalTitle, polity.formalTitleRank, polity.office, polity.territorialScale]), [['polity:daejeon', 'K1008', '대전선', '왕격', '대전 군주', 'kingdom']])
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+  assert.match(map, /territory-mode-toggle/u)
+  assert.match(map, /aria-label="작위·영주 범례"/u)
+  assert.match(map, /data-title-relation=/u)
+  assert.match(map, /data-title-holding-marker=\{holding\.id\}/u)
+  assert.match(map, /국가·연합 직할/u)
+})
