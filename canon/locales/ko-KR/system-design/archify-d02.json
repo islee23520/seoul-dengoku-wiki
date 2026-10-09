@@ -1,280 +1,1835 @@
 {
- "schemaVersion": 1,
- "locale": "ko-KR",
- "status": "accepted",
- "source": {
-  "path": "system-design/Archify-D02.md",
-  "lineStart": 1,
-  "lineEnd": 80,
-  "sha256": "6584562df649d0416768eec90e372e8ae630c88e292c934379dd18c8aaa053da"
- },
- "document": {
-  "id": "doc.Archify-D02",
-  "blockIds": [
-   "archify.b1",
-   "archify.b2",
-   "archify.b3",
-   "archify.b4",
-   "archify.b5",
-   "archify.b6",
-   "archify.b7",
-   "archify.b8",
-   "archify.b9",
-   "archify.b10",
-   "archify.b11",
-   "archify.b12",
-   "archify.b13",
-   "archify.b14",
-   "archify.b15",
-   "archify.b16",
-   "archify.b17"
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Archify-D02.md",
+    "lineStart": 1,
+    "lineEnd": 80,
+    "sha256": "6584562df649d0416768eec90e372e8ae630c88e292c934379dd18c8aaa053da"
+  },
+  "document": {
+    "id": "doc.Archify-D02",
+    "blockIds": [
+      "archify.b1",
+      "archify.b2",
+      "archify.b3",
+      "archify.b4",
+      "archify.b5",
+      "archify.b6",
+      "archify.b7",
+      "archify.b8",
+      "archify.b9",
+      "archify.b10",
+      "archify.b11",
+      "archify.b12",
+      "archify.b13",
+      "archify.b14",
+      "archify.b15",
+      "archify.b16",
+      "archify.b17",
+      "archify.flow-detail.heading",
+      "archify.flow-detail.table",
+      "archify.detail.heading",
+      "archify.detail.table"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "archify.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D02 아치파이 — 건강·욕구·부상·치료 전체 논리"
+        }
+      ]
+    },
+    {
+      "id": "archify.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 페이지는 건강·욕구·부상·치료 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기계 입력과 검증 흐름"
+        }
+      ]
+    },
+    {
+      "id": "archify.b4",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "archify",
+      "text": "{\"domainId\":\"D02\",\"diagramId\":\"d02-flow\",\"moduleTitle\":\"D02 운용 흐름\"}"
+    },
+    {
+      "id": "archify.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소비자 계약(conservation-with-optional-admitted-treatment-contest): burdenAfter=before+new-recovery; recovery<=before+new. Only physiology policy transitions; treatment win is performance evidence, never recovery/death itself."
+        }
+      ]
+    },
+    {
+      "id": "archify.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 출력"
+        }
+      ]
+    },
+    {
+      "id": "archify.b7",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "REF-HP-FP [public-reference-not-person-allocation] defaultMaxHP=ST; defaultMaxFP=HT\nREF-INJURY [public-reference-not-runtime-dispatch] penetration=max(0,basic-DR); injury=penetration==0 ? 0 : max(1,floor(penetration*typeMultiplier))\nSEOUL-HEALTH-EFFECTS [proposal-held] null\nD02-F1 [후보·승인 전] burdenAfter=burden+newBurden-recovery; transition=transitionPolicy(burdenAfter,capacity,physiology,evidence); no HP-from-attribute formula\nD02-F2 [후보·승인 전] unmetNeed=max(0,need-sum(unique actual fulfillment))\nD02-F3 [후보·승인 전] mood=clamp(base+sum(unique effect impact*max(0,1-age/lifetime)),lo,hi); each cause/effect settles once\n"
+    },
+    {
+      "id": "archify.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D02의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 필드와 보존 경계"
+        }
+      ]
+    },
+    {
+      "id": "archify.b10",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "personId — stableId (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "currentHP,maxHP — integer|null (HP)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "currentFP,maxFP — integer|null (FP)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "food,water — quantity|null (explicit resource-specific unitId)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "needs,mood — separate state records|null (axis-specific pending dictionary)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "eventId,causeId,effectId — stableId (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "snapshotRevision,rulesVersion — revision (version)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "treatment — provider/place/consent/resource/progress record (progress unit explicitly approved per method)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 소유자는 D02 health and life state; D01 owns approved personal maxima; D04 owns fulfillment/labor; D15 owns attack resolution; D18 owns world time and save boundary, 유지 계약은 —다. 상태 소유 경계는 physiologyRef,burden,capacity,need fulfillments,thought effects,settled cause/effect keys,health revision. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+        }
+      ]
+    },
+    {
+      "id": "archify.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오류·보류 코드"
+        }
+      ]
+    },
+    {
+      "id": "archify.b13",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "후보 오류: E_POLICY, E_INPUT, E_CONSENT, E_CONSERVATION"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 평가기 오류: E_INPUT, E_UNKNOWN, E_UNIT, E_STALE, E_DUPLICATE, E_PROPOSAL"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 제거와 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "archify.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제거 대상 차용 산식: REF-HP-FP, REF-INJURY. Remove call/dependency from original operative consumer, not original records/historical references/tests."
+        }
+      ]
+    },
+    {
+      "id": "archify.b16",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D02-health-cause-settlement(TOOL/tools/mechanisms/original-trpg/health-cause-settlement.mjs, TOOL/tools/mechanisms/original-trpg/health-cause-settlement.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "흐름 노드별 처리와 원문 단계"
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.table",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "건강·치료 사건 — 인물·규칙·스냅샷·원인·효과와 실제 이행·치료 입력. (원문: d02.b9.orderedSteps[0])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "영구 신원·저장 경계 — 동일 저장 경계의 원장 개정·규칙을 요구한다. (원문: d02.b9.orderedSteps[0]; d02.b9.orderedSteps[1])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "생리·안전·권한·동의 — 생존·생리·구금·안전이 욕구·일정보다 우선한다. 실제 장소·전달·자원·예약·동의를 각각 확인한다. 내부 전체 순서는 미정. (원문: d02.b9.orderedSteps[1]; d02.b9.orderedSteps[2])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "식량·물 실제 이행 — 식량과 물을 별도 단위로 읽고 구매 잔여 요구 전에 실제 배급을 확인한다. (원문: d02.b9.orderedSteps[2]; d02.b9.orderedSteps[3])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "최초 원인·정산 키 검사 — person/cause/effect 중복을 소비 도메인 전체에서 확인한다. 개인·집계 손실을 중복 정산하지 않는다. (원문: d02.b9.orderedSteps[3]; d02.b9.orderedSteps[4])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정확한 전이 정책 승인 — 치료 방법·소모·회복률·임계값과 효과 함수의 정확한 승인이 필요하다. (원문: d02.b9.orderedSteps[4]; d02.b9.orderedSteps[5])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승인 전이 후보만 작성 — 신체·욕구·기분은 독립 상태다. 신체→욕구→기분의 세밀한 갱신 전체 순서는 제안이므로 실행하지 않는다. (원문: d02.b9.orderedSteps[5]; d02.b9.orderedSteps[6])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "읽기 전용 신체 참조 — 다른 소비자가 읽는 신체와 가능성·결과 증거를 분리하고 같은 노동 손실 재적용 금지. (원문: d02.b9.orderedSteps[6]; d02.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "상태·정산 참조 동시 반영 — D18의 동일 수락 경계에 승인 상태 변화와 원인·효과 참조를 한 번 기록한다. (원문: d02.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미정 생리·치료 전이 보류 — E_PROPOSAL. 방법·율·임계값 미정은 0효과 성공·추정 회복·추정 사망이 아니다. (원문: d02.b9.orderedSteps[1]; d02.b9.orderedSteps[4])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "오류·중복·충돌 거부 — 불일치 판본·단위·필수 형식·중복 정산·손실 소유 충돌은 무부분반영. (원문: d02.b9.orderedSteps[0]; d02.b9.orderedSteps[1]; d02.b9.orderedSteps[3])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "중단·사망·복원 — 취소·사망·저장 불러오기 사건을 받는다. (원문: d02.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수행 진척·소비 보존 — 수행·소비는 유지. 미사용 예약 해제는 D03/D04. 공급된 사망 뒤 치료·회복 금지. (원문: d02.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정산 참조·중단 진척 복원 — 호환 저장 경계로 복원하며 load를 취소·사망으로 취급하지 않는다. (원문: d02.b9.orderedSteps[7]; d02.b9.orderedSteps[0])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "완료 효과 재실행 없음 — 정산 이력과 영구 신원을 유지한다. (원문: d02.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "오류·중복·충돌 거부 — 불일치 판본·단위·필수 형식·중복 정산·손실 소유 충돌은 무부분반영. (원문: d02.b9.orderedSteps[0]; d02.b9.orderedSteps[1]; d02.b9.orderedSteps[3])"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 항목별 원문과 적용 구분"
+        }
+      ]
+    },
+    {
+      "id": "archify.detail.table",
+      "kind": "table",
+      "header": [
+        "적용 구분",
+        "원문 위치",
+        "계약 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "역사 참조",
+          "d02.b9.schemaVersion",
+          "1"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.domainId",
+          "\"D02\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.mechanismId",
+          "\"SEOUL-D02-CLOSURE\""
+        ],
+        [
+          "운용",
+          "d02.b9.status",
+          "\"bounded-contract-with-p​roposal-held\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersion",
+          "\"D02-owner-directions-20​261008-v1\""
+        ],
+        [
+          "운용",
+          "d02.b9.rulesVersionLinka​ge.sourceRulesVersion",
+          "\"D02-owner-directions-20​261008-v1\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.contractSHA256",
+          "\"95e92abe51d873ce475de7e​3b1aa2f0b3cc2478894e3efd​421d8cd1b9574619a\""
+        ],
+        [
+          "운용",
+          "d02.b9.rulesVersionLinka​ge.missingVersionPolicy",
+          "\"원천 계약 판본을 보존한다. 게임 규칙 채택 및 저장 호환 승인과 구분한다.\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
+          "\"doc.Save-and-Determinis​m\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.canonRules[0].path",
+          "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.canonRules[0].sha256",
+          "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
+          "\"doc.Singleplayer-Design​-SP-1-0-0\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.canonRules[1].path",
+          "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rulesVersionLinka​ge.canonRules[1].sha256",
+          "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
+        ],
+        [
+          "운용",
+          "d02.b9.rulesVersionLinka​ge.compatibility",
+          "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.dataOwner",
+          "\"D02 health and life state; D01 owns approved personal maxima; D04 owns fulfillment/labor; D15 owns attack resolution; D18 owns world time and save boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].name",
+          "\"personId\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].type",
+          "\"stableId\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].null",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].range",
+          "\"nonempty; never name-derived\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].owner",
+          "\"D01\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[0].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].name",
+          "\"currentHP,maxHP\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].type",
+          "\"integer&#124;null\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].unit",
+          "\"HP\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].null",
+          "\"unknown; not zero\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].range",
+          "\"max positive; current may be negative; no invented death floor\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].owner",
+          "\"D01 maximum / D02 current\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[1].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].name",
+          "\"currentFP,maxFP\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].type",
+          "\"integer&#124;null\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].unit",
+          "\"FP\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].null",
+          "\"unknown; not zero\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].range",
+          "\"max positive; lower-bound policy remains proposal\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].owner",
+          "\"D01 maximum / D02 current\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[2].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].name",
+          "\"food,water\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].type",
+          "\"quantity&#124;null\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].unit",
+          "\"explicit resource-specific unitId\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].null",
+          "\"unknown not absent\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].range",
+          "\"nonnegative; unlike units not summed\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].owner",
+          "\"D04 fulfillment / D02 consumption\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[3].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].name",
+          "\"needs,mood\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].type",
+          "\"separate state records&#124;null\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].unit",
+          "\"axis-specific pending dictionary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].null",
+          "\"unknown; no zero mood default\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].range",
+          "\"pending exact approval\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].owner",
+          "\"D02\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[4].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].name",
+          "\"eventId,causeId,effectI​d\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].type",
+          "\"stableId\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].null",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].range",
+          "\"unique settlement identity; shared cause across consumers\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].owner",
+          "\"originating domain\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[5].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].name",
+          "\"snapshotRevision,rulesV​ersion\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].type",
+          "\"revision\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].unit",
+          "\"version\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].null",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].range",
+          "\"exact saved/current match\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].owner",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[6].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].name",
+          "\"treatment\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].type",
+          "\"provider/place/consent/​resource/progress record\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].unit",
+          "\"progress unit explicitly approved per method\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].null",
+          "\"method unknown cannot execute\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].range",
+          "\"no guessed skill, dosage, duration or recovery rate\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].owner",
+          "\"D02 with D03 action reservation\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].read[0]​",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].read[1]​",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].read[2]​",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].read[3]​",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].read[4]​",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].write",
+          "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].snapsho​t",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.fields[7].commitP​oint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.readSet[0]",
+          "\"approved D01 bodily snapshot\""
+        ],
+        [
+          "운용",
+          "d02.b9.readSet[1]",
+          "\"D04 actual fulfillment records\""
+        ],
+        [
+          "운용",
+          "d02.b9.readSet[2]",
+          "\"D03 treatment feasibility and reservations\""
+        ],
+        [
+          "운용",
+          "d02.b9.readSet[3]",
+          "\"D15 unique injury result\""
+        ],
+        [
+          "운용",
+          "d02.b9.readSet[4]",
+          "\"D18 revision/time boundary\""
+        ],
+        [
+          "운용",
+          "d02.b9.writeSet[0]",
+          "\"D02 bodily/needs/mood state only for exactly approved transition\""
+        ],
+        [
+          "운용",
+          "d02.b9.writeSet[1]",
+          "\"D02 treatment actual progress\""
+        ],
+        [
+          "운용",
+          "d02.b9.writeSet[2]",
+          "\"D02 cause/effect settlement references\""
+        ],
+        [
+          "운용",
+          "d02.b9.snapshot",
+          "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.commitPoint",
+          "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[0]",
+          "\"Resolve stable identity and exact rules/snapshot revisions.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[1]",
+          "\"Inspect existence, survival/physiology/cust​ody, permission, actual place/delivery, resources/reservations and consent. Safety/physiology/custod​y precede needs/schedule; their internal total order is not invented.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[2]",
+          "\"Read actual ration fulfillment before remaining purchase demand; retain food and water separately.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[3]",
+          "\"Bind bodily injury/fatigue effects to the original personal cause; check prior settlement across producer domains.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[4]",
+          "\"For any depletion/recovery, consumption, treatment completion or incapacity transition requiring an unapproved method/rate/threshold, return E_PROPOSAL atomically.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[5]",
+          "\"For approved transitions only, update bodily state, then distinct needs, then distinct mood/effect records under their approved functions. This finer update order is a proposal until approved.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[6]",
+          "\"Publish read-only bodily references and separate feasibility/result evidence; never apply a second labor loss for the same cause/effect.\""
+        ],
+        [
+          "운용",
+          "d02.b9.orderedSteps[7]",
+          "\"Commit at the owning consistent boundary with no fabricated RNG draw or world cadence.\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].i​d",
+          "\"REF-HP-FP\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].s​tatus",
+          "\"public-reference-not-pe​rson-allocation\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].a​nchors[0]",
+          "\"L-secondary\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].e​xpression",
+          "\"defaultMaxHP=ST; defaultMaxFP=HT\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].u​nit",
+          "\"HP/FP\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].n​ull",
+          "\"withhold when source attribute unknown\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[0].r​ounding",
+          "\"integer source attributes; no extra rounding\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].i​d",
+          "\"REF-INJURY\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].s​tatus",
+          "\"public-reference-not-ru​ntime-dispatch\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].a​nchors[0]",
+          "\"L-damage\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].a​nchors[1]",
+          "\"L-injury\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].e​xpression",
+          "\"penetration=max(0,basic​-DR); injury=penetration==0 ? 0 : max(1,floor(penetration*​typeMultiplier))\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].u​nit",
+          "\"HP\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].m​ultipliers.pi-",
+          "0.5"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].m​ultipliers.cr",
+          "1"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].m​ultipliers.pi",
+          "1"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].m​ultipliers.cut",
+          "1.5"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].m​ultipliers.pi+",
+          "1.5"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].m​ultipliers.imp",
+          "2"
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].n​ull",
+          "\"withhold any unknown operand\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.formulaSheet[1].l​imits",
+          "\"No armor divisor, location or omitted exception claim; upstream attack owns basic damage.\""
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].i​d",
+          "\"SEOUL-HEALTH-EFFECTS\""
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].e​xpression",
+          "null"
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].u​nit",
+          "null"
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].n​ull",
+          "\"E_PROPOSAL not zero-effect success\""
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].r​eason",
+          "\"D22-B and selectionEffect retain exact function/coefficients approval boundary.\""
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.formulaSheet[2].o​perative",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.rng",
+          "\"Reference injury arithmetic consumes no RNG. Attack dice belong to D15; recovery randomness and scope are proposals, not implicit draws.\""
+        ],
+        [
+          "운용",
+          "d02.b9.time",
+          "\"D18 continuous world boundary; no fixed tick or daily depletion cadence supplied by this task.\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.rounding",
+          "\"Only REF-INJURY floor and positive-penetration minimum1 are public anchors. No currentHP clamp to zero and no invented HP death/FP exhaustion threshold.\""
+        ],
+        [
+          "역사 참조",
+          "d02.b9.clamps",
+          "\"Only REF-INJURY floor and positive-penetration minimum1 are public anchors. No currentHP clamp to zero and no invented HP death/FP exhaustion threshold.\""
+        ],
+        [
+          "운용",
+          "d02.b9.lifecycle.cancel",
+          "\"Preserve already performed work and consumed materials; unused reservation release is owned by D03/D04, not invented here.\""
+        ],
+        [
+          "운용",
+          "d02.b9.lifecycle.death",
+          "\"Reinspect remaining work; retain stable ID and historical results; do not heal or execute treatment after a supplied death event.\""
+        ],
+        [
+          "운용",
+          "d02.b9.lifecycle.load",
+          "\"Restore consistent boundary, including settlement references and interrupted progress; load is not cancel/death and does not rerun completed effects. Unsupported version produces explicit error.\""
+        ],
+        [
+          "운용",
+          "d02.b9.failure",
+          "\"No partial commit on unknown required input, duplicate event, disputed loss ownership or version conflict. No auto-renumber or silent migration.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[0].i​d",
+          "\"P01\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[0].s​cope",
+          "\"Depletion/recovery rates, periods, food/water quantities and unit dictionary\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[0].r​eason",
+          "\"D03-A gives ledger direction, not exact table; D22-B expressly retains later approval.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[0].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[0].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[0].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[1].i​d",
+          "\"P02\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[1].s​cope",
+          "\"Treatment method/provider selection, consent/information procedure, dosage, progress unit, interruption/restart and healing calculation\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[1].r​eason",
+          "\"Neither sealed D29 nor basis supplies exact Seoul treatment contract.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[1].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[1].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[1].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[2].i​d",
+          "\"P03\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[2].s​cope",
+          "\"HP/FP incapacity/death/recover​y thresholds and equality transitions\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[2].r​eason",
+          "\"L-secondary establishes maxima structure; no relevant threshold body is certified in supplied basis.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[2].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[3].i​d",
+          "\"P04\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[3].s​cope",
+          "\"Need axes, mood changes/decay/clamps, labor-loss coefficients and cross-effect composition\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[3].r​eason",
+          "\"D29-A separates states; D37-A prevents duplicate settlement without supplying effect magnitude.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[3].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[3].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[3].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[4].i​d",
+          "\"P05\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[4].s​cope",
+          "\"Fine update order, exact commit schema/key encoding and clock/RNG recovery scheduling\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[4].r​eason",
+          "\"Carrier design is a validator proposal, not approved world algorithm.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[4].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[4].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[4].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[5].i​d",
+          "\"P06\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[5].s​cope",
+          "\"Actual personal maxima/allocation, country payment records and situation/aggregate combat mappings\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[5].r​eason",
+          "\"D18/D24/D32 directions do not approve payloads; no character sampling or new records.\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[5].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[5].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d02.b9.proposalHeld[5].o​perative",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.scope.numericBala​nceReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.scope.runtimeImpl​emented",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.scope.worldFactsI​ssued",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b9.scope.executionSc​hemaReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d02.b11.approvalBoundary​",
+          "\"Sealed choices approve directions and authoring methods, not unspecified functions, units, coefficients or actual records. This evidence pack does not manufacture numeric approval or original Basic certification.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[0]",
+          "\"D03\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[1]",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[2]",
+          "\"D22\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[3]",
+          "\"D24\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[4]",
+          "\"D29\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[5]",
+          "\"D32\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisionIds[6]",
+          "\"D37\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[0].row​",
+          "\"D03\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[0].cho​senOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[0].app​lied",
+          "\"Separate settlement/occupation payment contract and actual fulfillment ledger. Delivery is not a request or reservation.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[1].row​",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[1].cho​senOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[1].app​lied",
+          "\"Decision-time knowledge, authority and feasibility remain separate from observed later performance. Unknown observation is not failure.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[2].row​",
+          "\"D22\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[2].cho​senOption",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[2].app​lied",
+          "\"Normalize input units first; formulas, coefficients and resulting consumer values remain proposals until exactly approved.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[3].row​",
+          "\"D24\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[3].cho​senOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[3].app​lied",
+          "\"Personal context-adjusted injury result and aggregate loss refer to one loss ledger; aggregate loss cannot apply the same injury again.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[4].row​",
+          "\"D29\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[4].cho​senOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[4].app​lied",
+          "\"Current/max HP and FP are bodily state; needs, mood and labor effects are separate states linked by cause.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[5].row​",
+          "\"D32\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[5].cho​senOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[5].app​lied",
+          "\"Public Lite damage/DR/injury structure is a reference calculation. Seoul real-time execution and modifiers are separate; no turn, pause, speed control or order queue introduced.\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[6].row​",
+          "\"D37\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[6].cho​senOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d02.b11.decisions[6].app​lied",
+          "\"Consumers read approved bodily state without writing it; each cause/effect is settled once, not once per producer domain.\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[0].​source",
+          "\"task-25-gurps-like-basi​s-20261008/basis.json\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[0].​anchors[0]",
+          "\"L-secondary\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[0].​anchors[1]",
+          "\"L-damage\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[0].​anchors[2]",
+          "\"L-injury\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[0].​status",
+          "\"public-Lite-derived-str​ucture-only\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[0].​originalBasicRuleVerifie​d",
+          "false"
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[1].​source",
+          "\"design-finalization-202​61006/D02/contract.json\"​"
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[1].​anchors[0]",
+          "\"acceptedClauses\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[1].​status",
+          "\"existing-accepted-scope​\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[1].​limit",
+          "\"Prior proposal parts and obsolete Basic dependency wording are not adopted.\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[2].​source",
+          "\"task-24/cell-verificati​on/d02-norland-d03-ck3/r​eport.md\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[2].​status",
+          "\"historical-source-audit​-not-current-readiness\""
+        ],
+        [
+          "역사 참조",
+          "d02.b11.sourceClaims[2].​limit",
+          "\"Conflicting historical hunger/inspiration/faith​/pain claims are not Seoul numeric rules.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.bodil​y",
+          "\"Separate currentHP/maxHP/currentF​P/maxFP and injury records; an injury does not delete identity.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.needs​",
+          "\"Food deficiency and water deficiency are independent; food sufficient does not establish hydration.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.treat​ment",
+          "\"Requested is not performed. Completion requires actual provider, place, resources, consent and applicable method. Interrupted work preserves performed progress and consumed materials.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.incap​acity",
+          "\"Injury changes action conditions; do not transform any injury into universal action prohibition. Exact thresholds and recovery guards remain proposals.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.mood",
+          "\"Cause-linked independent record; no automatic HP-to-mood or ration-to-mood coefficient.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.evalu​ation",
+          "\"Decision-time feasibility evidence and later result remain distinct; read only observed fields.\""
+        ],
+        [
+          "운용",
+          "d02.b11.stateSheet.termi​nal",
+          "\"Death is supplied by the owning lifecycle decision, never inferred from an invented HP threshold. Keep permanent identity and consumed/history records.\""
+        ],
+        [
+          "운용",
+          "d02.b11.outputs[0]",
+          "\"cause-linked distinct state references\""
+        ],
+        [
+          "운용",
+          "d02.b11.outputs[1]",
+          "\"actual treatment progress\""
+        ],
+        [
+          "운용",
+          "d02.b11.outputs[2]",
+          "\"typed E_PROPOSAL/E_UNKNOWN/E_S​TALE/E_DUPLICATE/E_UNIT errors\""
+        ],
+        [
+          "운용",
+          "d02.b11.outputs[3]",
+          "\"reference-only worked arithmetic\""
+        ],
+        [
+          "운용",
+          "d02.b11.exceptions[0]",
+          "\"Unknown is not zero\""
+        ],
+        [
+          "운용",
+          "d02.b11.exceptions[1]",
+          "\"Food is not water\""
+        ],
+        [
+          "운용",
+          "d02.b11.exceptions[2]",
+          "\"Request is not treatment\""
+        ],
+        [
+          "운용",
+          "d02.b11.exceptions[3]",
+          "\"HP is not mood\""
+        ],
+        [
+          "운용",
+          "d02.b11.exceptions[4]",
+          "\"One injury is not two aggregate/person losses\""
+        ],
+        [
+          "운용",
+          "d02.b11.exceptions[5]",
+          "\"One shortage may have distinct effects, but identical cause/effect cannot settle twice\""
+        ]
+      ]
+    }
   ]
- },
- "blocks": [
-  {
-   "id": "archify.b1",
-   "kind": "heading",
-   "level": 1,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D02 아치파이 — 건강·욕구·부상·치료 전체 논리"
-    }
-   ]
-  },
-  {
-   "id": "archify.b2",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 페이지는 건강·욕구·부상·치료 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b3",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "기계 입력과 검증 흐름"
-    }
-   ]
-  },
-  {
-   "id": "archify.b4",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "archify",
-   "text": "{\"domainId\":\"D02\",\"diagramId\":\"d02-flow\",\"moduleTitle\":\"D02 운용 흐름\"}"
-  },
-  {
-   "id": "archify.b5",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "소비자 계약(conservation-with-optional-admitted-treatment-contest): burdenAfter=before+new-recovery; recovery<=before+new. Only physiology policy transitions; treatment win is performance evidence, never recovery/death itself."
-    }
-   ]
-  },
-  {
-   "id": "archify.b6",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "계산과 출력"
-    }
-   ]
-  },
-  {
-   "id": "archify.b7",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "text",
-   "text": "REF-HP-FP [public-reference-not-person-allocation] defaultMaxHP=ST; defaultMaxFP=HT\nREF-INJURY [public-reference-not-runtime-dispatch] penetration=max(0,basic-DR); injury=penetration==0 ? 0 : max(1,floor(penetration*typeMultiplier))\nSEOUL-HEALTH-EFFECTS [proposal-held] null\nD02-F1 [후보·승인 전] burdenAfter=burden+newBurden-recovery; transition=transitionPolicy(burdenAfter,capacity,physiology,evidence); no HP-from-attribute formula\nD02-F2 [후보·승인 전] unmetNeed=max(0,need-sum(unique actual fulfillment))\nD02-F3 [후보·승인 전] mood=clamp(base+sum(unique effect impact*max(0,1-age/lifetime)),lo,hi); each cause/effect settles once\n"
-  },
-  {
-   "id": "archify.b8",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D02의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b9",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "상태 필드와 보존 경계"
-    }
-   ]
-  },
-  {
-   "id": "archify.b10",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "personId — stableId (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "currentHP,maxHP — integer|null (HP)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "currentFP,maxFP — integer|null (FP)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "food,water — quantity|null (explicit resource-specific unitId)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "needs,mood — separate state records|null (axis-specific pending dictionary)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "eventId,causeId,effectId — stableId (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "snapshotRevision,rulesVersion — revision (version)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "treatment — provider/place/consent/resource/progress record (progress unit explicitly approved per method)"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b11",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "자료 소유자는 D02 health and life state; D01 owns approved personal maxima; D04 owns fulfillment/labor; D15 owns attack resolution; D18 owns world time and save boundary, 유지 계약은 —다. 상태 소유 경계는 physiologyRef,burden,capacity,need fulfillments,thought effects,settled cause/effect keys,health revision. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
-    }
-   ]
-  },
-  {
-   "id": "archify.b12",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "오류·보류 코드"
-    }
-   ]
-  },
-  {
-   "id": "archify.b13",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "후보 오류: E_POLICY, E_INPUT, E_CONSENT, E_CONSERVATION"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "기존 평가기 오류: E_INPUT, E_UNKNOWN, E_UNIT, E_STALE, E_DUPLICATE, E_PROPOSAL"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b14",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "차용 제거와 적용 범위"
-    }
-   ]
-  },
-  {
-   "id": "archify.b15",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "제거 대상 차용 산식: REF-HP-FP, REF-INJURY. Remove call/dependency from original operative consumer, not original records/historical references/tests."
-    }
-   ]
-  },
-  {
-   "id": "archify.b16",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b17",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D02-health-cause-settlement(TOOL/tools/mechanisms/original-trpg/health-cause-settlement.mjs, TOOL/tools/mechanisms/original-trpg/health-cause-settlement.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
-    }
-   ]
-  }
- ]
 }

@@ -1,298 +1,4094 @@
 {
- "schemaVersion": 1,
- "locale": "ko-KR",
- "status": "accepted",
- "source": {
-  "path": "system-design/Archify-D16.md",
-  "lineStart": 1,
-  "lineEnd": 82,
-  "sha256": "3201e3897202cee850a33d9c0faddde0c91335ee478747fe0e577fa0b272b37f"
- },
- "document": {
-  "id": "doc.Archify-D16",
-  "blockIds": [
-   "archify.b1",
-   "archify.b2",
-   "archify.b3",
-   "archify.b4",
-   "archify.b5",
-   "archify.b6",
-   "archify.b7",
-   "archify.b8",
-   "archify.b9",
-   "archify.b10",
-   "archify.b11",
-   "archify.b12",
-   "archify.b13",
-   "archify.b14",
-   "archify.b15",
-   "archify.b16",
-   "archify.b17"
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Archify-D16.md",
+    "lineStart": 1,
+    "lineEnd": 82,
+    "sha256": "3201e3897202cee850a33d9c0faddde0c91335ee478747fe0e577fa0b272b37f"
+  },
+  "document": {
+    "id": "doc.Archify-D16",
+    "blockIds": [
+      "archify.b1",
+      "archify.b2",
+      "archify.b3",
+      "archify.b4",
+      "archify.b5",
+      "archify.b6",
+      "archify.b7",
+      "archify.b8",
+      "archify.b9",
+      "archify.b10",
+      "archify.b11",
+      "archify.b12",
+      "archify.b13",
+      "archify.b14",
+      "archify.b15",
+      "archify.b16",
+      "archify.b17",
+      "archify.flow-detail.heading",
+      "archify.flow-detail.table",
+      "archify.detail.heading",
+      "archify.detail.table"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "archify.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D16 아치파이 — 외교·전쟁·공성·포로 전체 논리"
+        }
+      ]
+    },
+    {
+      "id": "archify.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 페이지는 외교·전쟁·공성·포로 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기계 입력과 검증 흐름"
+        }
+      ]
+    },
+    {
+      "id": "archify.b4",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "archify",
+      "text": "{\"domainId\":\"D16\",\"diagramId\":\"d16-flow\",\"moduleTitle\":\"D16 운용 흐름\"}"
+    },
+    {
+      "id": "archify.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소비자 계약(ledger-with-optional-siege-or-escape-performance-contest): Preserve registered war-score channel caps and existing event weights; no d10 conversion. Supply/work and stage policies govern siege; 100 score or progress 1 never directly transfers property or creates casualties. Custody transition requires actual event/authority."
+        }
+      ]
+    },
+    {
+      "id": "archify.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 출력"
+        }
+      ]
+    },
+    {
+      "id": "archify.b7",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "score-contribution [] battle: supplied signed delta subject to cumulative battle channel [-50,50]; enemy leader +100; primary/second/third designated heir +50/+25/+10; enemy capital +10\nscore-symmetry [] W_defender = -W_attacker\nscore-deduplication [] unique(warId,eventId,resultId); duplicate tuple is rejected before mutation\nendpoint [] abs(W)=100 => terminal lock; revalidate casus belli; settle exactly one fixed terminal effect or invalidate without victory\nreinforcement-admission [] arrived && battleStatus=ongoing => mayJoin; battleStatus=ended => cannotJoin\nsingle-loss-settlement [] settlementKey=warId+sourceResultId+lossIdentity; apply at most once\ntreaty-stage-separation [] legalEffectReceipt != handoverReceipt; fulfillment requires all indivisible required clauses and their stage receipts\nD16-F1 [후보·승인 전] battleAfter=clamp(battleBefore+suppliedBattleDelta,-50,50); effectiveBattleDelta=battleAfter-battleBefore; registered other deltas leader100,designatedHeirs50/25/10,capital10; Wafter=clamp(Wbefore+effectiveDelta,-100,100); opponent=-Wafter; abs(Wafter)==100 locks terminal then revalidates CB/beneficiary\nD16-F2 [후보·승인 전] siegeProgressAfter=clamp(progress+siegeWork/requiredWork-repair,0,1); each stage requires independent policy and actual supply/access; reaching1 requests registered stage transition, not automatic casualties or ownership\nD16-F3 [후보·승인 전] custodyAfter=registeredTransition(captiveEvent,actualLocation,currentCustodian,authority,requiredConsent); release/escape/transport never inferred from war score alone\n"
+    },
+    {
+      "id": "archify.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D16의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 필드와 보존 경계"
+        }
+      ]
+    },
+    {
+      "id": "archify.b10",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "warId/casusBelliId/rulesVersion — nonempty string (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "attackerId/defenderId/beneficiaryId — stable entity identity (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "scoreAttacker — integer (war-score point)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "eventId/resultId — nonempty stable identity (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "scoreEvent.kind — battle|enemyLeaderCaptured|primaryHeirCaptured|secondHeirCaptured|thirdHeirCaptured|enemyCapitalOccupied (enum)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "battleDelta — integer when kind=battle (war-score point)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "battleChannelTotal — integer (war-score point)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "casusBelliValid/declarationAuthority — boolean with current revision evidence (predicate)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "battleStatus/arrivalAt/battleEndedAt — ongoing|ended and ordered clock coordinates (D18 supplied world-clock coordinate)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "organizationLifecycleClauseId — registered clause identity (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "treatyClauseId/legalEffectReceipt/handoverReceipt — separate identities (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "bodyStateId/bodyRevision/effectId — approved identity and revision (identity/revision)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 소유자는 [object Object], 유지 계약은 score-contribution·score-symmetry·score-deduplication·endpoint·reinforcement-admission·single-loss-settlement·treaty-stage-separation다. 상태 소유 경계는 war/CB/fixed beneficiary,score W,battle channel,processed tuple,terminal receipt,siege stages/work/supply,actual captive location/custodian. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+        }
+      ]
+    },
+    {
+      "id": "archify.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오류·보류 코드"
+        }
+      ]
+    },
+    {
+      "id": "archify.b13",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "후보 오류: E_POLICY, E_AUTHORITY, E_EXTERNAL_ORDER, E_EVENT_CONFLICT"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 평가기 오류: E_UNIT, E_SCORE, E_FIELDS, E_REPLAY, E_BATTLE_CAP, E_EVENT_KIND, E_ENDPOINT, E_UNKNOWN, E_HELD_INPUT, E_CUSTODY_POLICY_HELD"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 제거와 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "archify.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+        }
+      ]
+    },
+    {
+      "id": "archify.b16",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D16-war-score-siege-custody(TOOL/tools/mechanisms/original-trpg/war-score-siege-custody.mjs, TOOL/tools/mechanisms/original-trpg/war-score-siege-custody.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "흐름 노드별 처리와 원문 단계"
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.table",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "전쟁·당사자 판본 — [개전·고정 목적] 정확한 전쟁·개전 사유·공격자·방어자·수혜자·규칙 판본을 읽고 누락 대상·낡은 판본은 거부한다. (원문: d16.b9.orderedSteps.decl​areWar[0]; d16.b9.orderedSteps.decl​areWar[1]; d16.b9.orderedSteps.decl​areWar[2]; d16.b9.orderedSteps.decl​areWar[3]; d16.b9.orderedSteps.decl​areWar[4]; d16.b9.orderedSteps.decl​areWar[5])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사유와 선언권 — [개전·고정 목적] 현재 유효한 등록 CB와 독립 선언 권한을 모두 요구한다. 명분 보유만으로 군대·선전 권한을 얻지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "목표·수혜자·종결 고정 — [개전·고정 목적] 대상·목표·수혜자와 네 종결 효과를 고정한 뒤 개전 영수증 하나를 만든다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "점수 사건 확인 — [전쟁 점수 채널] 종결·무효·낡은 판본·중복 event/result를 거부하고 사건 종류와 실제 역할 대응을 확인한다. (원문: d16.b9.orderedSteps.appl​yScoreEvent[0]; d16.b9.orderedSteps.appl​yScoreEvent[1]; d16.b9.orderedSteps.appl​yScoreEvent[2]; d16.b9.orderedSteps.appl​yScoreEvent[3]; d16.b9.orderedSteps.appl​yScoreEvent[4]; d16.b9.orderedSteps.appl​yScoreEvent[5]; d16.b9.orderedSteps.appl​yScoreEvent[6])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전투 누적 ±50 — [전쟁 점수 채널] D15 실제 결과를 읽는다. 기존 평가기는 누적 전투 채널의 절댓값이 50을 넘으면 E_BATTLE_CAP으로 거부한다. 행렬 포화 계산과 충돌은 별도 미결로 남긴다. (원문: d16.b9.formulaSheet[0].e​xpression; d16.b9.formulaSheet[0].r​ounding; d16.b9.formulaSheet[0].c​lamp; d16.b9.formulaSheet[0].r​ng; d16.b9.formulaSheet[0].a​uthority)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고정 사건 점수 — [전쟁 점수 채널] 적 지도자 포로 +100, 지정 후계자 1/2/3순위 +50/+25/+10, 적 수도 점령 +10이다. 이 기존 상수를 d10 결과로 재계산하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "전체 점수·대칭 — [전쟁 점수 채널] 허용 기여를 더한 전체 W만 [-100,100]으로 제한한다. 방어자 점수는 공격자 점수의 음수다. (원문: d16.b9.formulaSheet[1].e​xpression; d16.b9.formulaSheet[1].r​ounding; d16.b9.formulaSheet[1].c​lamp; d16.b9.formulaSheet[1].r​ng; d16.b9.formulaSheet[1].a​uthority)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정확 ±100 잠금 — [전쟁 점수 채널] 절댓값이 정확히 100이면 종결 잠금을 걸고 사유·수혜자를 재검사한다. 더 점수를 누적하거나 요구를 늘리지 않는다. (원문: d16.b9.formulaSheet[3].e​xpression; d16.b9.formulaSheet[3].r​ounding; d16.b9.formulaSheet[3].c​lamp; d16.b9.formulaSheet[3].r​ng; d16.b9.formulaSheet[3].a​uthority)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "입력·요구 잠금 — [종결 재검증] 종결 입력을 고정하고 점수·새 요구 누적을 중지한다. (원문: d16.b9.orderedSteps.sett​leEndpoint[0])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고정 수혜자 재검사 — [종결 재검증] 개전 시 고정한 사유·수혜자와 현재 적격을 다시 확인한다. (원문: d16.b9.orderedSteps.sett​leEndpoint[1])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승리 없는 무효화 — [종결 재검증] 사유가 무효면 등록 무효화 효과만 처리한다. 공격자 자동 수혜·근거 없는 권리 생성은 없다. (원문: d16.b9.orderedSteps.sett​leEndpoint[2])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고정 승리·패배 효과 — [종결 재검증] 사유가 계속 유효할 때만 고정된 목적 범위의 승리·패배 효과를 요청한다. (원문: d16.b9.orderedSteps.sett​leEndpoint[3])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "종결 결과 하나 — [종결 재검증] 점유·권리·인준·복구·포로·인계를 서로 다른 원장에 남긴 뒤 종결 ResultId 하나를 반영한다. (원문: d16.b9.orderedSteps.sett​leEndpoint[5])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조약 단계별 영수증 — [조약·포로·조직·증원] 수락·서명·법적 효력·실물 인계가 별개다. 모든 불가분 필수 조항의 단계 영수증이 있어야 fulfilled이다. (원문: d16.b9.orderedSteps.trea​tyExecution[0]; d16.b9.orderedSteps.trea​tyExecution[1]; d16.b9.orderedSteps.trea​tyExecution[2]; d16.b9.orderedSteps.trea​tyExecution[3]; d16.b9.orderedSteps.trea​tyExecution[4])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실제 증원 참가 — [조약·포로·조직·증원] ongoing 전투 실제 도착이면 현재부터 참가하며 ended면 거부한다. 참가로 지휘·공성·포로·점수를 만들지 않는다. (원문: d16.b9.orderedSteps.rein​forceBattle[0]; d16.b9.orderedSteps.rein​forceBattle[1]; d16.b9.orderedSteps.rein​forceBattle[2]; d16.b9.orderedSteps.rein​forceBattle[3])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "단일 포로 신원 — [조약·포로·조직·증원] 사람 하나의 신원과 실제 보관 상태 하나를 유지한다. 석방·재포획·탈출·몸값·다중 전쟁 연계의 정확한 전이는 미정이다. (원문: d16.b9.lifecycle.captivi​ty)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "조직 존속 — [조약·포로·조직·증원] 영토나 지도자 상실만으로 조직·재산·채무를 삭제하지 않는다. 실제 대표·관리자·해산 조항을 별도 입력으로 요구한다. (원문: d16.b11.authority.sealed​RowsApplied[1].effect)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "건강 손실 일회 — [조약·포로·조직·증원] warId+sourceResultId+los​sIdentity가 같은 파생 손실을 두 번 정산하지 않는다. 전투 피해를 전쟁 점수로 자동 전환하지 않는다. (원문: d16.b9.formulaSheet[5].e​xpression; d16.b9.formulaSheet[5].r​ounding; d16.b9.formulaSheet[5].c​lamp; d16.b9.formulaSheet[5].r​ng; d16.b9.formulaSheet[5].a​uthority)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정확 입력·단위 — 필수 키·타입·영구 ID·단위를 검증한다. 미확인 입력과 잘못된 형식을 구분한다. (원문: d16.b9.fields[0].field; d16.b9.fields[0].type; d16.b9.fields[0].unit; d16.b9.fields[0].null; d16.b9.fields[0].owner; d16.b9.fields[0].read[0]​; d16.b9.fields[0].read[1]​; d16.b9.fields[0].read[2]​; d16.b9.fields[0].read[3]​; d16.b9.fields[0].read[4]​; d16.b9.fields[0].read[5]​; d16.b9.fields[0].read[6]​; d16.b9.fields[0].read[7]​; d16.b9.fields[0].read[8]​; d16.b9.fields[0].read[9]​; d16.b9.fields[0].read[10​]; d16.b9.fields[0].read[11​]; d16.b9.fields[0].write[0​]; d16.b9.fields[0].snapsho​t.policy; d16.b9.fields[0].snapsho​t.conflict; d16.b9.fields[0].snapsho​t.commitPoint; d16.b9.fields[0].snapsho​t.load; d16.b9.fields[0].commitP​oint; d16.b9.fields[1].field; d16.b9.fields[1].type; d16.b9.fields[1].unit; d16.b9.fields[1].null; d16.b9.fields[1].owner; d16.b9.fields[1].read[0]​; d16.b9.fields[1].read[1]​; d16.b9.fields[1].read[2]​; d16.b9.fields[1].read[3]​; d16.b9.fields[1].read[4]​; d16.b9.fields[1].read[5]​; d16.b9.fields[1].read[6]​; d16.b9.fields[1].read[7]​; d16.b9.fields[1].read[8]​; d16.b9.fields[1].read[9]​; d16.b9.fields[1].read[10​]; d16.b9.fields[1].read[11​]; d16.b9.fields[1].write[0​]; d16.b9.fields[1].snapsho​t.policy; d16.b9.fields[1].snapsho​t.conflict; d16.b9.fields[1].snapsho​t.commitPoint; d16.b9.fields[1].snapsho​t.load; d16.b9.fields[1].commitP​oint; d16.b9.fields[2].field; d16.b9.fields[2].type; d16.b9.fields[2].unit; d16.b9.fields[2].range[0​]; d16.b9.fields[2].range[1​]; d16.b9.fields[2].null; d16.b9.fields[2].owner; d16.b9.fields[2].read[0]​; d16.b9.fields[2].read[1]​; d16.b9.fields[2].read[2]​; d16.b9.fields[2].read[3]​; d16.b9.fields[2].read[4]​; d16.b9.fields[2].read[5]​; d16.b9.fields[2].read[6]​; d16.b9.fields[2].read[7]​; d16.b9.fields[2].read[8]​; d16.b9.fields[2].read[9]​; d16.b9.fields[2].read[10​]; d16.b9.fields[2].read[11​]; d16.b9.fields[2].write[0​]; d16.b9.fields[2].snapsho​t.policy; d16.b9.fields[2].snapsho​t.conflict; d16.b9.fields[2].snapsho​t.commitPoint; d16.b9.fields[2].snapsho​t.load; d16.b9.fields[2].commitP​oint; d16.b9.fields[3].field; d16.b9.fields[3].type; d16.b9.fields[3].unit; d16.b9.fields[3].null; d16.b9.fields[3].owner; d16.b9.fields[3].read[0]​; d16.b9.fields[3].read[1]​; d16.b9.fields[3].read[2]​; d16.b9.fields[3].read[3]​; d16.b9.fields[3].read[4]​; d16.b9.fields[3].read[5]​; d16.b9.fields[3].read[6]​; d16.b9.fields[3].read[7]​; d16.b9.fields[3].read[8]​; d16.b9.fields[3].read[9]​; d16.b9.fields[3].read[10​]; d16.b9.fields[3].read[11​]; d16.b9.fields[3].write[0​]; d16.b9.fields[3].snapsho​t.policy; d16.b9.fields[3].snapsho​t.conflict; d16.b9.fields[3].snapsho​t.commitPoint; d16.b9.fields[3].snapsho​t.load; d16.b9.fields[3].commitP​oint; d16.b9.fields[4].field; d16.b9.fields[4].type; d16.b9.fields[4].unit; d16.b9.fields[4].null; d16.b9.fields[4].owner; d16.b9.fields[4].read[0]​; d16.b9.fields[4].read[1]​; d16.b9.fields[4].read[2]​; d16.b9.fields[4].read[3]​; d16.b9.fields[4].read[4]​; d16.b9.fields[4].read[5]​; d16.b9.fields[4].read[6]​; d16.b9.fields[4].read[7]​; d16.b9.fields[4].read[8]​; d16.b9.fields[4].read[9]​; d16.b9.fields[4].read[10​]; d16.b9.fields[4].read[11​]; d16.b9.fields[4].write[0​]; d16.b9.fields[4].snapsho​t.policy; d16.b9.fields[4].snapsho​t.conflict; d16.b9.fields[4].snapsho​t.commitPoint; d16.b9.fields[4].snapsho​t.load; d16.b9.fields[4].commitP​oint; d16.b9.fields[5].field; d16.b9.fields[5].type; d16.b9.fields[5].unit; d16.b9.fields[5].range[0​]; d16.b9.fields[5].range[1​]; d16.b9.fields[5].null; d16.b9.fields[5].owner; d16.b9.fields[5].read[0]​; d16.b9.fields[5].read[1]​; d16.b9.fields[5].read[2]​; d16.b9.fields[5].read[3]​; d16.b9.fields[5].read[4]​; d16.b9.fields[5].read[5]​; d16.b9.fields[5].read[6]​; d16.b9.fields[5].read[7]​; d16.b9.fields[5].read[8]​; d16.b9.fields[5].read[9]​; d16.b9.fields[5].read[10​]; d16.b9.fields[5].read[11​]; d16.b9.fields[5].write[0​]; d16.b9.fields[5].snapsho​t.policy; d16.b9.fields[5].snapsho​t.conflict; d16.b9.fields[5].snapsho​t.commitPoint; d16.b9.fields[5].snapsho​t.load; d16.b9.fields[5].commitP​oint; d16.b9.fields[6].field; d16.b9.fields[6].type; d16.b9.fields[6].unit; d16.b9.fields[6].range[0​]; d16.b9.fields[6].range[1​]; d16.b9.fields[6].null; d16.b9.fields[6].owner; d16.b9.fields[6].read[0]​; d16.b9.fields[6].read[1]​; d16.b9.fields[6].read[2]​; d16.b9.fields[6].read[3]​; d16.b9.fields[6].read[4]​; d16.b9.fields[6].read[5]​; d16.b9.fields[6].read[6]​; d16.b9.fields[6].read[7]​; d16.b9.fields[6].read[8]​; d16.b9.fields[6].read[9]​; d16.b9.fields[6].read[10​]; d16.b9.fields[6].read[11​]; d16.b9.fields[6].write[0​]; d16.b9.fields[6].snapsho​t.policy; d16.b9.fields[6].snapsho​t.conflict; d16.b9.fields[6].snapsho​t.commitPoint; d16.b9.fields[6].snapsho​t.load; d16.b9.fields[6].commitP​oint; d16.b9.fields[7].field; d16.b9.fields[7].type; d16.b9.fields[7].unit; d16.b9.fields[7].null; d16.b9.fields[7].owner; d16.b9.fields[7].read[0]​; d16.b9.fields[7].read[1]​; d16.b9.fields[7].read[2]​; d16.b9.fields[7].read[3]​; d16.b9.fields[7].read[4]​; d16.b9.fields[7].read[5]​; d16.b9.fields[7].read[6]​; d16.b9.fields[7].read[7]​; d16.b9.fields[7].read[8]​; d16.b9.fields[7].read[9]​; d16.b9.fields[7].read[10​]; d16.b9.fields[7].read[11​]; d16.b9.fields[7].write[0​]; d16.b9.fields[7].snapsho​t.policy; d16.b9.fields[7].snapsho​t.conflict; d16.b9.fields[7].snapsho​t.commitPoint; d16.b9.fields[7].snapsho​t.load; d16.b9.fields[7].commitP​oint; d16.b9.fields[8].field; d16.b9.fields[8].type; d16.b9.fields[8].unit; d16.b9.fields[8].null; d16.b9.fields[8].owner; d16.b9.fields[8].read[0]​; d16.b9.fields[8].read[1]​; d16.b9.fields[8].read[2]​; d16.b9.fields[8].read[3]​; d16.b9.fields[8].read[4]​; d16.b9.fields[8].read[5]​; d16.b9.fields[8].read[6]​; d16.b9.fields[8].read[7]​; d16.b9.fields[8].read[8]​; d16.b9.fields[8].read[9]​; d16.b9.fields[8].read[10​]; d16.b9.fields[8].read[11​]; d16.b9.fields[8].write[0​]; d16.b9.fields[8].snapsho​t.policy; d16.b9.fields[8].snapsho​t.conflict; d16.b9.fields[8].snapsho​t.commitPoint; d16.b9.fields[8].snapsho​t.load; d16.b9.fields[8].commitP​oint; d16.b9.fields[9].field; d16.b9.fields[9].type; d16.b9.fields[9].unit; d16.b9.fields[9].null; d16.b9.fields[9].owner; d16.b9.fields[9].read[0]​; d16.b9.fields[9].read[1]​; d16.b9.fields[9].read[2]​; d16.b9.fields[9].read[3]​; d16.b9.fields[9].read[4]​; d16.b9.fields[9].read[5]​; d16.b9.fields[9].read[6]​; d16.b9.fields[9].read[7]​; d16.b9.fields[9].read[8]​; d16.b9.fields[9].read[9]​; d16.b9.fields[9].read[10​]; d16.b9.fields[9].read[11​]; d16.b9.fields[9].write[0​]; d16.b9.fields[9].snapsho​t.policy; d16.b9.fields[9].snapsho​t.conflict; d16.b9.fields[9].snapsho​t.commitPoint; d16.b9.fields[9].snapsho​t.load; d16.b9.fields[9].commitP​oint; d16.b9.fields[10].field;​ d16.b9.fields[10].type; d16.b9.fields[10].unit; d16.b9.fields[10].null; d16.b9.fields[10].owner;​ d16.b9.fields[10].read[0​]; d16.b9.fields[10].read[1​]; d16.b9.fields[10].read[2​]; d16.b9.fields[10].read[3​]; d16.b9.fields[10].read[4​]; d16.b9.fields[10].read[5​]; d16.b9.fields[10].read[6​]; d16.b9.fields[10].read[7​]; d16.b9.fields[10].read[8​]; d16.b9.fields[10].read[9​]; d16.b9.fields[10].read[1​0]; d16.b9.fields[10].read[1​1]; d16.b9.fields[10].write[​0]; d16.b9.fields[10].snapsh​ot.policy; d16.b9.fields[10].snapsh​ot.conflict; d16.b9.fields[10].snapsh​ot.commitPoint; d16.b9.fields[10].snapsh​ot.load; d16.b9.fields[10].commit​Point; d16.b9.fields[11].field;​ d16.b9.fields[11].type; d16.b9.fields[11].unit; d16.b9.fields[11].null; d16.b9.fields[11].owner;​ d16.b9.fields[11].read[0​]; d16.b9.fields[11].read[1​]; d16.b9.fields[11].read[2​]; d16.b9.fields[11].read[3​]; d16.b9.fields[11].read[4​]; d16.b9.fields[11].read[5​]; d16.b9.fields[11].read[6​]; d16.b9.fields[11].read[7​]; d16.b9.fields[11].read[8​]; d16.b9.fields[11].read[9​]; d16.b9.fields[11].read[1​0]; d16.b9.fields[11].read[1​1]; d16.b9.fields[11].write[​0]; d16.b9.fields[11].snapsh​ot.policy; d16.b9.fields[11].snapsh​ot.conflict; d16.b9.fields[11].snapsh​ot.commitPoint; d16.b9.fields[11].snapsh​ot.load; d16.b9.fields[11].commit​Point)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 사건 내용 비교 — 일반 변환 어댑터에서 이미 수락한 동일 신원·payload는 재생한다. 바뀐 내용은 거부하고 새 사건은 현재 판본을 확인한다. 원본 평가기의 중복 거부와 동일한 것으로 간주하지 않는다. (원문: d16.b9.rulesVersion; d16.b9.snapshot.policy; d16.b9.snapshot.conflict​; d16.b9.snapshot.commitPo​int; d16.b9.snapshot.load; d16.b9.lifecycle.failure​; d16.b9.failure; d16.b11.rulesVersion)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 판본·행위 선택 — 정확한 현재 개정·규칙을 확인한 뒤 요청된 독립 행위로 분기한다. 다른 논리 단위의 선후관계를 만들지 않는다. (원문: d16.b9.schemaVersion; d16.b9.domainId; d16.b9.mechanismId; d16.b9.status; d16.b9.dataOwner.rules; d16.b9.dataOwner.worldFa​cts; d16.b9.dataOwner.rightsA​ndTitles; d16.b9.dataOwner.battleR​esults; d16.b9.dataOwner.pricesA​ndSignatures; d16.b9.dataOwner.sameBou​ndaryOrdering; d16.b9.readSet[0]; d16.b9.readSet[1]; d16.b9.readSet[2]; d16.b9.readSet[3]; d16.b9.readSet[4]; d16.b9.readSet[5]; d16.b9.readSet[6]; d16.b9.readSet[7]; d16.b9.readSet[8]; d16.b9.readSet[9]; d16.b9.readSet[10]; d16.b9.readSet[11]; d16.b9.orderedSteps.sett​leEndpoint[4]; d16.b9.formulaSheet[2].e​xpression; d16.b9.formulaSheet[2].r​ounding; d16.b9.formulaSheet[2].c​lamp; d16.b9.formulaSheet[2].r​ng; d16.b9.formulaSheet[2].a​uthority; d16.b9.formulaSheet[4].e​xpression; d16.b9.formulaSheet[4].r​ounding; d16.b9.formulaSheet[4].c​lamp; d16.b9.formulaSheet[4].r​ng; d16.b9.formulaSheet[4].a​uthority; d16.b9.formulaSheet[6].e​xpression; d16.b9.formulaSheet[6].r​ounding; d16.b9.formulaSheet[6].c​lamp; d16.b9.formulaSheet[6].r​ng; d16.b9.formulaSheet[6].a​uthority; d16.b9.rng; d16.b9.time; d16.b9.rounding; d16.b9.clamps; d16.b9.lifecycle.cancel;​ d16.b9.lifecycle.death; d16.b9.lifecycle.rulesMi​smatch; d16.b9.scope.numericBala​nceReady; d16.b9.scope.runtimeImpl​emented; d16.b9.scope.worldFactsI​ssued; d16.b9.scope.executionSc​hemaReady; d16.b11.schemaVersion; d16.b11.task; d16.b11.mechanismId; d16.b11.domainId; d16.b11.title; d16.b11.status; d16.b11.runtimeClaim; d16.b11.canonAdopted; d16.b11.authority.sealed​RowsApplied[0].row; d16.b11.authority.sealed​RowsApplied[0].decisionI​d; d16.b11.authority.sealed​RowsApplied[0].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[0].effect; d16.b11.authority.sealed​RowsApplied[1].row; d16.b11.authority.sealed​RowsApplied[1].decisionI​d; d16.b11.authority.sealed​RowsApplied[1].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[2].row; d16.b11.authority.sealed​RowsApplied[2].decisionI​d; d16.b11.authority.sealed​RowsApplied[2].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[2].effect; d16.b11.authority.sealed​RowsApplied[3].row; d16.b11.authority.sealed​RowsApplied[3].decisionI​d; d16.b11.authority.sealed​RowsApplied[3].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[3].effect; d16.b11.authority.sealed​RowsApplied[4].row; d16.b11.authority.sealed​RowsApplied[4].decisionI​d; d16.b11.authority.sealed​RowsApplied[4].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[4].effect; d16.b11.authority.sealed​RowsApplied[5].row; d16.b11.authority.sealed​RowsApplied[5].decisionI​d; d16.b11.authority.sealed​RowsApplied[5].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[5].effect; d16.b11.authority.sealed​RowsApplied[6].row; d16.b11.authority.sealed​RowsApplied[6].decisionI​d; d16.b11.authority.sealed​RowsApplied[6].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[6].effect; d16.b11.authority.sealed​RowsApplied[7].row; d16.b11.authority.sealed​RowsApplied[7].decisionI​d; d16.b11.authority.sealed​RowsApplied[7].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[7].effect; d16.b11.authority.sealed​RowsApplied[8].row; d16.b11.authority.sealed​RowsApplied[8].decisionI​d; d16.b11.authority.sealed​RowsApplied[8].chosenOpt​ion; d16.b11.authority.sealed​RowsApplied[8].effect; d16.b11.authority.extern​alOwnerDecision.decision​Id; d16.b11.authority.extern​alOwnerDecision.rule; d16.b11.authority.extern​alOwnerDecision.limits[0​]; d16.b11.authority.extern​alOwnerDecision.limits[1​]; d16.b11.authority.extern​alOwnerDecision.limits[2​]; d16.b11.authority.priorA​cceptedClauses[0]; d16.b11.authority.priorA​cceptedClauses[1]; d16.b11.authority.priorA​cceptedClauses[2]; d16.b11.authority.priorA​cceptedClauses[3]; d16.b11.authority.priorA​cceptedClauses[4]; d16.b11.authority.priorA​cceptedClauses[5]; d16.b11.authority.priorA​cceptedClauses[6]; d16.b11.authority.priorA​cceptedClauses[7]; d16.b11.authority.noNewO​wnerDecision; d16.b11.authority.rowIds​AreNotDomainIds; d16.b11.separation.LORE;​ d16.b11.separation.GDD; d16.b11.separation.runti​me; d16.b11.quantifiedFieldU​nits.scoreAttacker; d16.b11.quantifiedFieldU​nits.battleDelta; d16.b11.quantifiedFieldU​nits.battleChannelTotal;​ d16.b11.quantifiedFieldU​nits.arrivalAt; d16.b11.quantifiedFieldU​nits.battleEndedAt; d16.b11.quantifiedFieldU​nits.bodyRevision; d16.b11.stateMachines.wa​r[0]; d16.b11.stateMachines.wa​r[1]; d16.b11.stateMachines.wa​r[2]; d16.b11.stateMachines.wa​r[3]; d16.b11.stateMachines.wa​r[4]; d16.b11.stateMachines.wa​r[5]; d16.b11.stateMachines.wa​r[6]; d16.b11.stateMachines.tr​eaty[0]; d16.b11.stateMachines.tr​eaty[1]; d16.b11.stateMachines.tr​eaty[2]; d16.b11.stateMachines.tr​eaty[3]; d16.b11.stateMachines.tr​eaty[4]; d16.b11.stateMachines.tr​eaty[5]; d16.b11.stateMachines.tr​eaty[6]; d16.b11.stateMachines.or​ganization[0]; d16.b11.stateMachines.or​ganization[1]; d16.b11.stateMachines.or​ganization[2]; d16.b11.stateMachines.or​ganization[3]; d16.b11.stateMachines.or​ganization[4]; d16.b11.stateMachines.or​ganization[5]; d16.b11.stateMachines.ca​ptivity[0]; d16.b11.stateMachines.ca​ptivity[1]; d16.b11.stateMachines.ca​ptivity[2]; d16.b11.stateMachines.ca​ptivity[3]; d16.b11.stateMachines.ca​ptivity[4]; d16.b11.stateMachines.ca​ptivity[5]; d16.b11.stateMachines.ca​ptivity[6]; d16.b11.domainClosure.re​ady; d16.b11.domainClosure.ve​rdict; d16.b11.domainClosure.re​ason; d16.b11.decisionDisposit​ion[0].row; d16.b11.decisionDisposit​ion[0].classification; d16.b11.decisionDisposit​ion[0].reason; d16.b11.decisionDisposit​ion[1].row; d16.b11.decisionDisposit​ion[1].classification; d16.b11.decisionDisposit​ion[1].reason; d16.b11.decisionDisposit​ion[2].row; d16.b11.decisionDisposit​ion[2].classification; d16.b11.decisionDisposit​ion[2].reason; d16.b11.decisionDisposit​ion[3].row; d16.b11.decisionDisposit​ion[3].classification; d16.b11.decisionDisposit​ion[3].reason; d16.b11.decisionDisposit​ion[4].row; d16.b11.decisionDisposit​ion[4].classification; d16.b11.decisionDisposit​ion[4].reason; d16.b11.decisionDisposit​ion[5].row; d16.b11.decisionDisposit​ion[5].classification; d16.b11.decisionDisposit​ion[5].boundary; d16.b11.decisionDisposit​ion[6].row; d16.b11.decisionDisposit​ion[6].classification; d16.b11.decisionDisposit​ion[6].reason; d16.b11.decisionDisposit​ion[7].row; d16.b11.decisionDisposit​ion[7].classification; d16.b11.decisionDisposit​ion[7].reason; d16.b11.decisionDisposit​ion[8].row; d16.b11.decisionDisposit​ion[8].classification; d16.b11.decisionDisposit​ion[8].reason; d16.b11.decisionDisposit​ion[9].row; d16.b11.decisionDisposit​ion[9].classification; d16.b11.decisionDisposit​ion[9].reason; d16.b11.decisionDisposit​ion[10].row; d16.b11.decisionDisposit​ion[10].classification; d16.b11.decisionDisposit​ion[10].boundary; d16.b11.decisionDisposit​ion[11].row; d16.b11.decisionDisposit​ion[11].classification; d16.b11.decisionDisposit​ion[11].boundary; d16.b11.decisionDisposit​ion[12].row; d16.b11.decisionDisposit​ion[12].classification; d16.b11.decisionDisposit​ion[12].reason; d16.b11.decisionDisposit​ion[13].row; d16.b11.decisionDisposit​ion[13].classification; d16.b11.decisionDisposit​ion[13].reason; d16.b11.decisionDisposit​ion[14].row; d16.b11.decisionDisposit​ion[14].classification; d16.b11.decisionDisposit​ion[14].reason; d16.b11.decisionDisposit​ion[15].row; d16.b11.decisionDisposit​ion[15].classification; d16.b11.decisionDisposit​ion[15].reason; d16.b11.decisionDisposit​ion[16].row; d16.b11.decisionDisposit​ion[16].classification; d16.b11.decisionDisposit​ion[16].boundary; d16.b11.decisionDisposit​ion[17].row; d16.b11.decisionDisposit​ion[17].classification; d16.b11.decisionDisposit​ion[17].boundary; d16.b11.decisionDisposit​ion[18].row; d16.b11.decisionDisposit​ion[18].classification; d16.b11.decisionDisposit​ion[18].reason; d16.b11.decisionDisposit​ion[19].row; d16.b11.decisionDisposit​ion[19].classification; d16.b11.decisionDisposit​ion[19].reason; d16.b11.decisionDisposit​ion[20].row; d16.b11.decisionDisposit​ion[20].classification; d16.b11.decisionDisposit​ion[20].reason; d16.b11.decisionDisposit​ion[21].row; d16.b11.decisionDisposit​ion[21].classification; d16.b11.decisionDisposit​ion[21].boundary; d16.b11.decisionDisposit​ion[22].row; d16.b11.decisionDisposit​ion[22].classification; d16.b11.decisionDisposit​ion[22].reason; d16.b11.decisionDisposit​ion[23].row; d16.b11.decisionDisposit​ion[23].classification; d16.b11.decisionDisposit​ion[23].boundary; d16.b11.decisionDisposit​ion[24].row; d16.b11.decisionDisposit​ion[24].classification; d16.b11.decisionDisposit​ion[24].reason; d16.b11.decisionDisposit​ion[25].row; d16.b11.decisionDisposit​ion[25].classification; d16.b11.decisionDisposit​ion[25].reason; d16.b11.decisionDisposit​ion[26].row; d16.b11.decisionDisposit​ion[26].classification; d16.b11.decisionDisposit​ion[26].reason; d16.b11.decisionDisposit​ion[27].row; d16.b11.decisionDisposit​ion[27].classification; d16.b11.decisionDisposit​ion[27].reason; d16.b11.decisionDisposit​ion[28].row; d16.b11.decisionDisposit​ion[28].classification; d16.b11.decisionDisposit​ion[28].reason; d16.b11.decisionDisposit​ion[29].row; d16.b11.decisionDisposit​ion[29].classification; d16.b11.decisionDisposit​ion[29].reason; d16.b11.decisionDisposit​ion[30].row; d16.b11.decisionDisposit​ion[30].classification; d16.b11.decisionDisposit​ion[30].reason; d16.b11.decisionDisposit​ion[31].row; d16.b11.decisionDisposit​ion[31].classification; d16.b11.decisionDisposit​ion[31].boundary; d16.b11.decisionDisposit​ion[32].row; d16.b11.decisionDisposit​ion[32].classification; d16.b11.decisionDisposit​ion[32].reason; d16.b11.decisionDisposit​ion[33].row; d16.b11.decisionDisposit​ion[33].classification; d16.b11.decisionDisposit​ion[33].reason; d16.b11.decisionDisposit​ion[34].row; d16.b11.decisionDisposit​ion[34].classification; d16.b11.decisionDisposit​ion[34].reason; d16.b11.decisionDisposit​ion[35].row; d16.b11.decisionDisposit​ion[35].classification; d16.b11.decisionDisposit​ion[35].reason; d16.b11.decisionDisposit​ion[36].row; d16.b11.decisionDisposit​ion[36].classification; d16.b11.decisionDisposit​ion[36].boundary)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보류·원상 보존 — 미확인·미승인 입력 때문에 해당 의존 행위만 보류한다. 세계는 정지하지 않으며 소비·완료 진척은 보존한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명시 오류·원상 보존 — 형식·단위·판본·권한·동의·실행 가능성·보존 오류를 명시 거부한다. 상태·예약·난수·수락 영수증을 새로 반영하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "저장 결과 재생 — 일반 어댑터의 동일 수락 신원·동일 내용은 기존 결과를 반환한다. 추가 효과·난수 소비·개정은 없다. 기존 평가기별 중복 오류를 임의 없애지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택 결과 원자 검증 — 해당 행위가 허용한 신원·수량·권한·완료 소비의 보존을 검증한 후 결과·개정·영수증을 원자 반영한다. (원문: d16.b9.writeSet[0]; d16.b9.commitPoint)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결과·허용 투영 반환 — 해당 행위의 기록된 결과 또는 읽기 전용 결과를 반환한다. 관측자 지식·접근권을 넘어 숨겨진 사실을 표시하거나 구현 완료를 주장하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 상태 유지 — 미확정 미리보기·비구속 제안·명시 거절은 기존 상태를 유지한다. 완료된 소비·진척을 되감지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 항목별 원문과 적용 구분"
+        }
+      ]
+    },
+    {
+      "id": "archify.detail.table",
+      "kind": "table",
+      "header": [
+        "적용 구분",
+        "원문 위치",
+        "계약 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "운용",
+          "d16.b9.schemaVersion",
+          "1"
+        ],
+        [
+          "운용",
+          "d16.b9.domainId",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b9.mechanismId",
+          "\"seoul.d16.bounded-contr​act\""
+        ],
+        [
+          "운용",
+          "d16.b9.status",
+          "\"bounded-contract-with-p​roposal-held\""
+        ],
+        [
+          "운용",
+          "d16.b9.rulesVersion",
+          "\"D16-CLOSURE-EVIDENCE-20​26-10-08\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.sourceRulesVersion",
+          "\"D16-CLOSURE-EVIDENCE-20​26-10-08\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.contractSHA256",
+          "\"b6e9b86825e7f4d46f25885​3761faffb03549457f23d06a​d0f7bcd358d9bf54d\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.sourceArtifacts[0].pa​th",
+          "\"contract.json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.sourceArtifacts[0].sh​a256",
+          "\"b6e9b86825e7f4d46f25885​3761faffb03549457f23d06a​d0f7bcd358d9bf54d\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.sourceArtifacts[1].pa​th",
+          "\"proposals.json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.sourceArtifacts[1].sh​a256",
+          "\"661003c56502a4285447b4c​93b8d855417f159569cf9835​a501226c9ef29a364\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.decisionRecordSHA256",
+          "\"e531c6240930c5812305a7f​1d614484b78b36c7b66e0edc​a12cc9c9c90a4c8f0\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
+          "\"doc.Save-and-Determinis​m\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[0].path",
+          "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[0].sha256",
+          "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
+          "\"doc.Singleplayer-Design​-SP-1-0-0\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[1].path",
+          "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[1].sha256",
+          "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
+          "\"doc.Rules-FactionsWarfa​re\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[2].path",
+          "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[2].sha256",
+          "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[3].documen​tId",
+          "\"doc.Rules-EconomyLogist​ics\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[3].path",
+          "\"canon/locales/ko-KR/rul​es/rules-economy-logisti​cs-clauses.json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.canonRules[3].sha256",
+          "\"36012dbc48b74498dd9ff44​5faf33d0b6c8785c8d82cf3a​c67dc4cc309d39dab\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.rulesVersionLinka​ge.compatibility",
+          "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d16.b9.dataOwner.rules",
+          "\"GDD D16 integration wave\""
+        ],
+        [
+          "운용",
+          "d16.b9.dataOwner.worldFa​cts",
+          "\"WIKI/LORE authoring owners\""
+        ],
+        [
+          "운용",
+          "d16.b9.dataOwner.rightsA​ndTitles",
+          "\"D10/D11\""
+        ],
+        [
+          "운용",
+          "d16.b9.dataOwner.battleR​esults",
+          "\"D15\""
+        ],
+        [
+          "운용",
+          "d16.b9.dataOwner.pricesA​ndSignatures",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d16.b9.dataOwner.sameBou​ndaryOrdering",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].field",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].type",
+          "\"nonempty string\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].owner",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[0].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].field",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].type",
+          "\"stable entity identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].owner",
+          "\"D16 consumes D01/D09/D10\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[1].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].field",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].type",
+          "\"integer\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].unit",
+          "\"war-score point\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].range[0​]",
+          "-100"
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].range[1​]",
+          "100"
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].owner",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[2].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].field",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].type",
+          "\"nonempty stable identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].owner",
+          "\"shared event ledger\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[3].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].field",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].type",
+          "\"battle&#124;enemyLeader​Captured&#124;primaryHei​rCaptured&#124;secondHei​rCaptured&#124;thirdHeir​Captured&#124;enemyCapit​alOccupied\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].unit",
+          "\"enum\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].owner",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[4].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].field",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].type",
+          "\"integer when kind=battle\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].unit",
+          "\"war-score point\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].range[0​]",
+          "-50"
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].range[1​]",
+          "50"
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].null",
+          "\"reject for battle\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].owner",
+          "\"D16 consumes D15 result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[5].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].field",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].type",
+          "\"integer\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].unit",
+          "\"war-score point\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].range[0​]",
+          "-50"
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].range[1​]",
+          "50"
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].owner",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[6].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].field",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].type",
+          "\"boolean with current revision evidence\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].unit",
+          "\"predicate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].null",
+          "\"unresolved and blocks\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].owner",
+          "\"D10/D09 then D16\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[7].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].field",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].type",
+          "\"ongoing&#124;ended and ordered clock coordinates\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].unit",
+          "\"D18 supplied world-clock coordinate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].null",
+          "\"unresolved and blocks admission\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].owner",
+          "\"D15/D18\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[8].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].field",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].type",
+          "\"registered clause identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].null",
+          "\"hold; never delete organization\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].owner",
+          "\"D09 organization authoring\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[0]​",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[1]​",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[2]​",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[3]​",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[4]​",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[5]​",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[6]​",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[7]​",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[8]​",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[9]​",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[10​]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].read[11​]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].write[0​]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].snapsho​t.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].snapsho​t.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].snapsho​t.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].snapsho​t.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[9].commitP​oint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].field",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].type",
+          "\"separate identities\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].null",
+          "\"stage remains incomplete\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].owner",
+          "\"D16/D17/D13\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[0​]",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[1​]",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[2​]",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[3​]",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[4​]",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[5​]",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[6​]",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[7​]",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[8​]",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[9​]",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[1​0]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].read[1​1]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].write[​0]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].snapsh​ot.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].snapsh​ot.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].snapsh​ot.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].snapsh​ot.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[10].commit​Point",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].field",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].type",
+          "\"approved identity and revision\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].unit",
+          "\"identity/revision\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].null",
+          "\"blocks derived settlement\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].owner",
+          "\"D02 read-only; D16 effect ledger\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[0​]",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[1​]",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[2​]",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[3​]",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[4​]",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[5​]",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[6​]",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[7​]",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[8​]",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[9​]",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[1​0]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].read[1​1]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].write[​0]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].snapsh​ot.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].snapsh​ot.conflict",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].snapsh​ot.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].snapsh​ot.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.fields[11].commit​Point",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[0]",
+          "\"warId/casusBelliId/rule​sVersion\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[1]",
+          "\"attackerId/defenderId/b​eneficiaryId\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[2]",
+          "\"scoreAttacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[3]",
+          "\"eventId/resultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[4]",
+          "\"scoreEvent.kind\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[5]",
+          "\"battleDelta\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[6]",
+          "\"battleChannelTotal\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[7]",
+          "\"casusBelliValid/declara​tionAuthority\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[8]",
+          "\"battleStatus/arrivalAt/​battleEndedAt\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[9]",
+          "\"organizationLifecycleCl​auseId\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[10]",
+          "\"treatyClauseId/legalEff​ectReceipt/handoverRecei​pt\""
+        ],
+        [
+          "운용",
+          "d16.b9.readSet[11]",
+          "\"bodyStateId/bodyRevisio​n/effectId\""
+        ],
+        [
+          "운용",
+          "d16.b9.writeSet[0]",
+          "\"D16 score channels, event/result receipts, terminal lock and treaty stages; D15/D18 facts and D10/D11 rights remain separate\""
+        ],
+        [
+          "운용",
+          "d16.b9.snapshot.policy",
+          "\"exact before snapshot with stable identities, rulesVersion and ledger revisions\""
+        ],
+        [
+          "운용",
+          "d16.b9.snapshot.conflict​",
+          "\"typed reject on stale revision, incompatible rules, reused event/result or second terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.snapshot.commitPo​int",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.snapshot.load",
+          "\"restore score channels, processed tuples, terminal lock, treaty stages, organization/custody references and effect-settlement keys; no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b9.commitPoint",
+          "\"after all guards; score event, dedup key and revision commit atomically; endpoint settlement commits one terminal result\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.decl​areWar[0]",
+          "\"Read exact identities, revisions and registered casus belli\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.decl​areWar[1]",
+          "\"Reject missing target or stale rules/version\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.decl​areWar[2]",
+          "\"Require current casus belli validity\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.decl​areWar[3]",
+          "\"Require separate declaration authority\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.decl​areWar[4]",
+          "\"Lock target, beneficiary, goal and four terminal effects\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.decl​areWar[5]",
+          "\"Create one declared war receipt\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[0]",
+          "\"Read exact war snapshot\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[1]",
+          "\"Reject terminal, invalidated, stale or duplicate event/result\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[2]",
+          "\"Require approved event kind and actual role correspondence\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[3]",
+          "\"For battle, require supplied D15 result and preserve cumulative battle cap\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[4]",
+          "\"Add signed contribution and clamp W to [-100,100]\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[5]",
+          "\"Record score receipt once\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.appl​yScoreEvent[6]",
+          "\"If abs(W)=100 lock terminal and revalidate casus belli before any effect\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.sett​leEndpoint[0]",
+          "\"Freeze input snapshot and stop accumulating score/demands\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.sett​leEndpoint[1]",
+          "\"Revalidate casus belli and beneficiary\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.sett​leEndpoint[2]",
+          "\"If invalid apply invalidation effect without victory\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.sett​leEndpoint[3]",
+          "\"Otherwise apply only fixed victory/defeat effect\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.sett​leEndpoint[4]",
+          "\"Keep occupation, rights, ratification, restoration, prisoners and handover in their separate ledgers\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.sett​leEndpoint[5]",
+          "\"Commit one terminal ResultId\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.rein​forceBattle[0]",
+          "\"Read actual D06 arrival receipt and current D15 battle status\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.rein​forceBattle[1]",
+          "\"If ongoing admit participation from that point\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.rein​forceBattle[2]",
+          "\"If ended reject entry to that battle\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.rein​forceBattle[3]",
+          "\"Do not infer command, siege, custody or score\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.trea​tyExecution[0]",
+          "\"Validate itemized clauses and current authority\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.trea​tyExecution[1]",
+          "\"Record acceptance and signature separately\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.trea​tyExecution[2]",
+          "\"Apply registered legal-effect event\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.trea​tyExecution[3]",
+          "\"Reserve and perform physical handovers separately\""
+        ],
+        [
+          "운용",
+          "d16.b9.orderedSteps.trea​tyExecution[4]",
+          "\"Mark fulfilled only when indivisible required clauses have matching receipts\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[0].i​d",
+          "\"score-contribution\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[0].e​xpression",
+          "\"battle: supplied signed delta subject to cumulative battle channel [-50,50]; enemy leader +100; primary/second/third designated heir +50/+25/+10; enemy capital +10\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[0].r​ounding",
+          "\"none; integers only\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[0].c​lamp",
+          "\"final W to [-100,100]\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[0].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[0].a​uthority",
+          "\"SP1 and war-score-owner accepted clauses\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[1].i​d",
+          "\"score-symmetry\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[1].e​xpression",
+          "\"W_defender = -W_attacker\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[1].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[1].c​lamp",
+          "\"same bounded score\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[1].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[1].a​uthority",
+          "\"SP1 signed score\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[2].i​d",
+          "\"score-deduplication\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[2].e​xpression",
+          "\"unique(warId,eventId,re​sultId); duplicate tuple is rejected before mutation\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[2].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[2].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[2].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[2].a​uthority",
+          "\"SP1 one-result contract\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[3].i​d",
+          "\"endpoint\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[3].e​xpression",
+          "\"abs(W)=100 => terminal lock; revalidate casus belli; settle exactly one fixed terminal effect or invalidate without victory\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[3].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[3].c​lamp",
+          "\"exact endpoint\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[3].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[3].a​uthority",
+          "\"SP1 exact endpoint and validity clauses\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[4].i​d",
+          "\"reinforcement-admission​\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[4].e​xpression",
+          "\"arrived && battleStatus=ongoing => mayJoin; battleStatus=ended => cannotJoin\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[4].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[4].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[4].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[4].a​uthority",
+          "\"OWNER-REINFORCEMENT-202​61004\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[5].i​d",
+          "\"single-loss-settlement\"​"
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[5].e​xpression",
+          "\"settlementKey=warId+sou​rceResultId+lossIdentity​; apply at most once\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[5].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[5].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[5].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[5].a​uthority",
+          "\"sealed D24-A and D37-A\""
+        ],
+        [
+          "역사 참조",
+          "d16.b9.formulaSheet[6].i​d",
+          "\"treaty-stage-separation​\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[6].e​xpression",
+          "\"legalEffectReceipt != handoverReceipt; fulfillment requires all indivisible required clauses and their stage receipts\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[6].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[6].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[6].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d16.b9.formulaSheet[6].a​uthority",
+          "\"sealed D06-A\""
+        ],
+        [
+          "운용",
+          "d16.b9.rng",
+          "\"none in approved discrete score and receipt invariants\""
+        ],
+        [
+          "운용",
+          "d16.b9.time",
+          "\"사건은 D18의 승인된 세계 시각과 순서를 읽는다. 미정 기간·기한·동시 사건 순서는 발급하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d16.b9.rounding",
+          "\"공식별 rounding을 따른다. 미정 비율·기간·수량을 만들지 않는다.\""
+        ],
+        [
+          "운용",
+          "d16.b9.clamps",
+          "\"공식별 clamp만 적용한다. 승인되지 않은 전역 제한은 추가하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d16.b9.lifecycle.failure​",
+          "\"No mutation; retain exact typed cause.\""
+        ],
+        [
+          "운용",
+          "d16.b9.lifecycle.cancel",
+          "\"A proposal or pending handover may cancel only per its contract; completed legal effects, consumed resources and finished progress do not rewind.\""
+        ],
+        [
+          "운용",
+          "d16.b9.lifecycle.death",
+          "\"Revalidate authority, beneficiary, casus belli, organization representative and pending treaty stages; death alone does not delete a war or organization.\""
+        ],
+        [
+          "운용",
+          "d16.b9.lifecycle.captivi​ty",
+          "\"One person identity and one physical custody state are invariant; exact release, recapture, escape, ransom and multiwar subscriber transitions remain held.\""
+        ],
+        [
+          "운용",
+          "d16.b9.lifecycle.rulesMi​smatch",
+          "\"Explicit error; do not mix rule versions or start a new campaign silently.\""
+        ],
+        [
+          "운용",
+          "d16.b9.failure",
+          "\"No mutation; retain exact typed cause.\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[0].i​d",
+          "\"occupation-score\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[0].d​ecisionBoundary",
+          "\"D06-A and D22-B\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[0].h​eld",
+          "\"denominator, weighting, cadence, tick, partial fraction, target recovery/reset and rounding\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[0].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[0].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[0].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[1].i​d",
+          "\"siege-state-and-formula​s\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[1].d​ecisionBoundary",
+          "\"D06-A, D22-B, D24-A, D32-A, D37-A\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[1].h​eld",
+          "\"stages, supply, progress, breach, damage, assault loss, surrender, repair, interruption and health conversion\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[1].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[1].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[1].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[2].i​d",
+          "\"captivity-lifecycle\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[2].d​ecisionBoundary",
+          "\"D06-A, D12-A and D18-A\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[2].h​eld",
+          "\"release, recapture, escape, ransom, transport, multiwar references and same-boundary ordering\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[2].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[3].i​d",
+          "\"casus-belli-catalog\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[3].d​ecisionBoundary",
+          "\"D17-B\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[3].h​eld",
+          "\"actual entries, issuers, targets, beneficiaries, invalidators, costs, truces, reparations and country/title payloads\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[3].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[3].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[3].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[4].i​d",
+          "\"peace-pricing-acceptanc​e\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[4].d​ecisionBoundary",
+          "\"D12-A\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[4].h​eld",
+          "\"prices, modifiers, units, signs, clamps, rounding, acceptance, repricing, expiry, reservation, breach and delivery\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[4].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[4].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[4].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[5].i​d",
+          "\"same-boundary-order\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[5].d​ecisionBoundary",
+          "\"D18-A does not choose total order\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[5].h​eld",
+          "\"priority among death, casus belli invalidation, proposal acceptance, exact endpoint and terminal settlement\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[5].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[5].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[5].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[6].i​d",
+          "\"organization-records\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[6].d​ecisionBoundary",
+          "\"D11-A\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[6].h​eld",
+          "\"organization-specific representative, administrator, vacancy, surviving obligation and dissolution clauses\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[6].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[6].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[6].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[7].i​d",
+          "\"titles-ratification-rec​ords\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[7].d​ecisionBoundary",
+          "\"D17-B\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[7].h​eld",
+          "\"actual title IDs, territorial extents, holders, superior contracts, ratifiers and stabilization periods\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[7].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[7].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[7].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[8].i​d",
+          "\"reinforcement-details\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[8].d​ecisionBoundary",
+          "\"OWNER-REINFORCEMENT-202​61004 limits\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[8].h​eld",
+          "\"entry geometry, initial stance, command reassignment, arrival cadence and simultaneous battle-end ordering\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[8].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[8].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[8].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[9].i​d",
+          "\"health-and-combat-conve​rsion\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[9].d​ecisionBoundary",
+          "\"D24-A, D32-A, D37-A\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[9].h​eld",
+          "\"personal formulas, coefficients, time conversion, casualty allocation beyond one identity and any direct conversion to war score\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[9].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[9].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d16.b9.proposalHeld[9].o​perative",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b9.scope.numericBala​nceReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b9.scope.runtimeImpl​emented",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b9.scope.worldFactsI​ssued",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b9.scope.executionSc​hemaReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b11.schemaVersion",
+          "1"
+        ],
+        [
+          "운용",
+          "d16.b11.task",
+          "44"
+        ],
+        [
+          "운용",
+          "d16.b11.mechanismId",
+          "\"seoul.d16.war-contract.​v1\""
+        ],
+        [
+          "운용",
+          "d16.b11.domainId",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b11.title",
+          "\"외교·전쟁·공성·포로 작동 계약과 공식 시트\""
+        ],
+        [
+          "운용",
+          "d16.b11.rulesVersion",
+          "\"D16-CLOSURE-EVIDENCE-20​26-10-08\""
+        ],
+        [
+          "운용",
+          "d16.b11.status",
+          "\"approved-bounded-contra​ct-with-held-required-in​puts\""
+        ],
+        [
+          "운용",
+          "d16.b11.runtimeClaim",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b11.canonAdopted",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[0].row",
+          "\"D06\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[0].decisionI​d",
+          "\"GP-13\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[0].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[0].effect",
+          "\"Treaty indivisible clauses, legal-effect events and physical handover events are distinct.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[1].row",
+          "\"D11\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[1].decisionI​d",
+          "\"T68-D16-ORGANIZATION-LI​FECYCLE\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[1].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[1].effect",
+          "\"Organization persistence requires its registered representative, administrator and dissolution clauses; territorial loss or leader death alone never deletes it.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[2].row",
+          "\"D12\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[2].decisionI​d",
+          "\"T68-D17-PRICE-ACCEPTANC​E\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[2].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[2].effect",
+          "\"Asset value, action cost and party acceptance remain separate; D16 never converts war score into price or consent.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[3].row",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[3].decisionI​d",
+          "\"GP-07\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[3].chosenOpt​ion",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[3].effect",
+          "\"Missing title/extent/ratifier records are explicit proposals for later item approval, never active records.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[4].row",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[4].decisionI​d",
+          "\"GP-11\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[4].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[4].effect",
+          "\"Command evaluation stores knowledge, authority and feasibility at decision time separately from later outcome.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[5].row",
+          "\"D22\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[5].decisionI​d",
+          "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[5].chosenOpt​ion",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[5].effect",
+          "\"Normalize common units first; no new coefficient or formula is approved by this row.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[6].row",
+          "\"D24\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[6].decisionI​d",
+          "\"T68-COMBAT-THREE-DIMENS​IONS\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[6].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[6].effect",
+          "\"Personal results aggregate through situation to unit channels with one casualty/loss ledger identity.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[7].row",
+          "\"D32\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[7].decisionI​d",
+          "\"GP-11\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[7].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[7].effect",
+          "\"Public Lite combat structure stays separate from Seoul real-time execution; combat numbers do not directly become war score.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[8].row",
+          "\"D37\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[8].decisionI​d",
+          "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[8].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.sealed​RowsApplied[8].effect",
+          "\"Approved body state is read-only and each derived effect is settled once; no health coefficient is invented.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.extern​alOwnerDecision.decision​Id",
+          "\"OWNER-REINFORCEMENT-202​61004\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.extern​alOwnerDecision.rule",
+          "\"Any unit actually arriving while a battle is ongoing may join that battle.\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.extern​alOwnerDecision.limits[0​]",
+          "\"No origin, rank, initial-roster or invented time-window restriction\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.extern​alOwnerDecision.limits[1​]",
+          "\"Arrival does not transfer command, enter a siege, process prisoners or add war score\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.extern​alOwnerDecision.limits[2​]",
+          "\"Arrival after battle end cannot enter that ended battle\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[0]",
+          "\"valid registered casus belli plus separate declaration authority\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[1]",
+          "\"fixed target, goal, beneficiary and terminal effects\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[2]",
+          "\"signed symmetric score bounded -100..100\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[3]",
+          "\"approved score events only with event/result deduplication\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[4]",
+          "\"exact endpoint forces only the still-valid casus belli effect\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[5]",
+          "\"occupation, legal right, ratification, settlement operation and restoration are separate ledgers\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[6]",
+          "\"below absolute 100 itemized peace proposals are allowed but never automatically accepted\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.priorA​cceptedClauses[7]",
+          "\"stable identity, explicit rules version and no silent migration\""
+        ],
+        [
+          "운용",
+          "d16.b11.authority.noNewO​wnerDecision",
+          "true"
+        ],
+        [
+          "운용",
+          "d16.b11.authority.rowIds​AreNotDomainIds",
+          "true"
+        ],
+        [
+          "운용",
+          "d16.b11.separation.LORE",
+          "\"Read-only authored country, title, office, person and place facts; this evidence pack creates none.\""
+        ],
+        [
+          "운용",
+          "d16.b11.separation.GDD",
+          "\"Bounded mechanism evidence for later canonical integration; mechanism-d16.json is intentionally deferred.\""
+        ],
+        [
+          "운용",
+          "d16.b11.separation.runti​me",
+          "\"The validator is a documentary oracle, not product or gameplay implementation.\""
+        ],
+        [
+          "운용",
+          "d16.b11.quantifiedFieldU​nits.scoreAttacker",
+          "\"war-score point\""
+        ],
+        [
+          "운용",
+          "d16.b11.quantifiedFieldU​nits.battleDelta",
+          "\"war-score point\""
+        ],
+        [
+          "운용",
+          "d16.b11.quantifiedFieldU​nits.battleChannelTotal",
+          "\"war-score point\""
+        ],
+        [
+          "운용",
+          "d16.b11.quantifiedFieldU​nits.arrivalAt",
+          "\"D18 supplied world-clock coordinate\""
+        ],
+        [
+          "운용",
+          "d16.b11.quantifiedFieldU​nits.battleEndedAt",
+          "\"D18 supplied world-clock coordinate\""
+        ],
+        [
+          "운용",
+          "d16.b11.quantifiedFieldU​nits.bodyRevision",
+          "\"revision\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[0]",
+          "\"proposed\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[1]",
+          "\"validated\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[2]",
+          "\"declared\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[3]",
+          "\"ongoing\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[4]",
+          "\"terminal-locked\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[5]",
+          "\"settled\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.wa​r[6]",
+          "\"invalidated\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[0]",
+          "\"draft\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[1]",
+          "\"accepted\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[2]",
+          "\"signed\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[3]",
+          "\"legally-effective\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[4]",
+          "\"handover-pending\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[5]",
+          "\"fulfilled\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.tr​eaty[6]",
+          "\"breached\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.or​ganization[0]",
+          "\"active\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.or​ganization[1]",
+          "\"territory-lost\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.or​ganization[2]",
+          "\"representative-vacant\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.or​ganization[3]",
+          "\"administered\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.or​ganization[4]",
+          "\"dissolution-pending\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.or​ganization[5]",
+          "\"dissolved\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[0]",
+          "\"free\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[1]",
+          "\"capture-reported\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[2]",
+          "\"transporting\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[3]",
+          "\"detained\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[4]",
+          "\"release-pending\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[5]",
+          "\"released\""
+        ],
+        [
+          "운용",
+          "d16.b11.stateMachines.ca​ptivity[6]",
+          "\"dead\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[0]",
+          "\"occupation denominator, weights, cadence, fractional policy, target-control tick and recovery/reset formula\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[1]",
+          "\"siege stages, duration, supply, breach, assault loss, surrender, repair and interruption numerics\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[2]",
+          "\"concrete casus belli catalog, costs, truce lengths, reparations and country/title records\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[3]",
+          "\"captivity release, recapture, escape, ransom and multiwar subscriber transitions\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[4]",
+          "\"prisoner/peace item prices, acceptance, repricing, reservation, signature and breach rules\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[5]",
+          "\"same-boundary total order for death, invalidation, acceptance and exact endpoint\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[6]",
+          "\"organization-specific representative, administrator and dissolution records\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[7]",
+          "\"reinforcement spawn/entry geometry, initial stance and command reassignment\""
+        ],
+        [
+          "보류",
+          "d16.b11.requiredHeldInpu​ts[8]",
+          "\"health/fatigue coefficients and combat-to-score conversion beyond approved discrete score events\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.sourceClaims.CK3​",
+          "\"Comparison evidence only; version and formula conflicts remain bounded and no source literal is adopted.\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.sourceClaims.Nor​land",
+          "\"Comparison evidence only; does not provide Seoul continuous war score, casus belli registration or atomic custody policy.\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.sourceClaims.GUR​PS_LIKE",
+          "\"Lite combat structure may inform D15 only; it supplies no D16 war-score, siege, treaty or prisoner formula.\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.status",
+          "\"explicit-deferred-to-se​parate-wave\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.items[0]",
+          "\"GDD/canon/locales/ko-KR​/system-design/mechanism​-d16.json\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.items[1]",
+          "\"GDD collection registration\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.items[2]",
+          "\"rendered lock\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.items[3]",
+          "\"product TOOL mechanism validator integration\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.items[4]",
+          "\"canonical commits\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.integrationDefer​ral.reason",
+          "\"User explicitly scoped this task to ignored evidence pack only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.domainClosure.re​ady",
+          "false"
+        ],
+        [
+          "운용",
+          "d16.b11.domainClosure.ve​rdict",
+          "\"FAIL_REQUIRED_INPUTS_HE​LD\""
+        ],
+        [
+          "운용",
+          "d16.b11.domainClosure.re​ason",
+          "\"Sealed choices approve authoring and separation directions, not the exact required occupation, siege, custody, pricing, truce, country/title and event-order records. This pack closes the approved bounded invariants without inventing those values.\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.sourceEvidenceSt​atus",
+          "\"approved-bounded-contra​ct-with-held-required-in​puts\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[0].row",
+          "\"D01\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[0].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[0].reason",
+          "\"Opening character custody/location scope does not define D16 war, siege or prisoner transitions.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[1].row",
+          "\"D02\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[1].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[1].reason",
+          "\"Route freshness is consumed through D06 arrival receipts; no D16 formula follows.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[2].row",
+          "\"D03\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[2].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[2].reason",
+          "\"Ration/wage records do not define D16 score or siege values.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[3].row",
+          "\"D04\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[3].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[3].reason",
+          "\"Recipe records are D05-owned; siege repair numerics remain separately held.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[4].row",
+          "\"D05\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[4].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[4].reason",
+          "\"Knowledge prerequisites do not approve D16 values.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[5].row",
+          "\"D06\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[5].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[5].boundary",
+          "\"Separate indivisible treaty clauses, legal-effect events and physical handover events; exact clause records and values remain held.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[6].row",
+          "\"D07\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[6].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[6].reason",
+          "\"Personal payload issuance is D01-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[7].row",
+          "\"D08\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[7].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[7].reason",
+          "\"Evaluation decay touches D15/D07; D16 only stores evidence references, no decay function.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[8].row",
+          "\"D09\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[8].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[8].reason",
+          "\"Country institutions supply authority facts later; no actual country record is approved here.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[9].row",
+          "\"D10\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[9].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[9].reason",
+          "\"Body-switch contract is D12/D13-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[10].row",
+          "\"D11\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[10].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[10].boundary",
+          "\"Use organization-specific representative, administrator and dissolution clauses; their actual records are still proposals.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[11].row",
+          "\"D12\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[11].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[11].boundary",
+          "\"Keep asset value, action cost and acceptance separate; no price, modifier or acceptance coefficient adopted.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[12].row",
+          "\"D13\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[12].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[12].reason",
+          "\"Cast field corrections are unrelated to D16 mechanism values.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[13].row",
+          "\"D14\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[13].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[13].reason",
+          "\"Identity mapping does not approve war participants or payloads.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[14].row",
+          "\"D15\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[14].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[14].reason",
+          "\"Unit type mapping is D15-owned and does not instantiate a D16 army or score event.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[15].row",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[15].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[15].reason",
+          "\"Population token lineage is D04/D15-owned; D16 consumes stable identities only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[16].row",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[16].classification",
+          "\"apply-as-proposal-bound​ary\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[16].boundary",
+          "\"Author missing title, extent and ratifier records only as itemized proposals; no holder or world fact changes before later approval.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[17].row",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[17].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[17].boundary",
+          "\"Store knowledge/authority/feas​ibility at decision time separately from outcome; no evaluation score or penalty invented.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[18].row",
+          "\"D19\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[18].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[18].reason",
+          "\"Grant/recall contract is D10/D11/D13-owned; treaty handover consumes its receipts only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[19].row",
+          "\"D20\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[19].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[19].reason",
+          "\"Cast values do not define D16.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[20].row",
+          "\"D21\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[20].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[20].reason",
+          "\"Organization values are D07/D09-owned; D16 does not infer lifecycle from axes.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[21].row",
+          "\"D22\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[21].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[21].boundary",
+          "\"Normalize unit-tagged inputs first; every coefficient and cross-index conversion remains held.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[22].row",
+          "\"D23\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[22].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[22].reason",
+          "\"Training conversion is D14-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[23].row",
+          "\"D24\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[23].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[23].boundary",
+          "\"Personal combat results aggregate through situation to unit with one loss identity; no combat-to-score conversion except registered D16 score events.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[24].row",
+          "\"D25\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[24].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[24].reason",
+          "\"Spear specimen disposition is D01-only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[25].row",
+          "\"D26\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[25].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[25].reason",
+          "\"Skill/TL/language issuance is D01-only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[26].row",
+          "\"D27\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[26].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[26].reason",
+          "\"Capacity reduction cannot delete people or restrict approved ongoing-battle arrival, but exact capacity is D15-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[27].row",
+          "\"D28\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[27].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[27].reason",
+          "\"Movement numerics are D06-owned; D16 consumes verified actual arrival only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[28].row",
+          "\"D29\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[28].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[28].reason",
+          "\"Health/labor transitions are D02/D04-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[29].row",
+          "\"D30\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[29].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[29].reason",
+          "\"Command eligibility/capacity is D15-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[30].row",
+          "\"D31\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[30].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[30].reason",
+          "\"Skill source classification is D01/D14-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[31].row",
+          "\"D32\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[31].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[31].boundary",
+          "\"Keep Lite hit/defense/DR/injury structure separate from Seoul real-time execution; no D16 score coefficient or siege formula follows.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[32].row",
+          "\"D33\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[32].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[32].reason",
+          "\"Individual CP issuance is D01-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[33].row",
+          "\"D34\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[33].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[33].reason",
+          "\"GURPS corpus classification is D01/D14/D15-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[34].row",
+          "\"D35\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[34].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[34].reason",
+          "\"Mercenary price and unit eligibility are D04/D15-owned; D16 receives actual party and authority receipts only.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[35].row",
+          "\"D36\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[35].classification",
+          "\"defer-checked\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[35].reason",
+          "\"Generated attributes/skills are D01/D04/D15-owned.\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[36].row",
+          "\"D37\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[36].classification",
+          "\"apply\""
+        ],
+        [
+          "운용",
+          "d16.b11.decisionDisposit​ion[36].boundary",
+          "\"Read approved body state without mutation and settle each supplied derived effect once; exact health/fatigue conversion remains held.\""
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​task",
+          "44"
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​allHeldValuesRemainPropo​sals",
+          "true"
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​externalDecisionTrace[0]​.decisionId",
+          "\"OWNER-REINFORCEMENT-202​61004\""
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​externalDecisionTrace[0]​.classification",
+          "\"apply\""
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​externalDecisionTrace[0]​.boundary",
+          "\"Any actual arrival during an ongoing battle may join; ended battle excludes; no command, siege, custody, score, cadence, spawn or capacity inference.\""
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​canonicalIntegration.sta​tus",
+          "\"deferred\""
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​canonicalIntegration.wav​e",
+          "\"separate later canonical GDD landing and commit wave\""
+        ],
+        [
+          "보류",
+          "d16.b11.proposalContext.​canonicalIntegration.not​Omission",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d16.b11.landingDispositi​on.documentRegistration",
+          "\"bounded canonical contract only\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.landingDispositi​on.runtimeAndNumericAdop​tion",
+          "false"
+        ],
+        [
+          "역사 참조",
+          "d16.b11.landingDispositi​on.commonExecutableVerif​ier",
+          "\"not run; executionSchemaReady:fal​se\""
+        ],
+        [
+          "역사 참조",
+          "d16.b11.landingDispositi​on.sourceDeferrals",
+          "\"historical document-registration and commit deferrals are satisfied by this landing; cross-domain/runtime/exe​cutable work remains unclaimed\""
+        ]
+      ]
+    }
   ]
- },
- "blocks": [
-  {
-   "id": "archify.b1",
-   "kind": "heading",
-   "level": 1,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D16 아치파이 — 외교·전쟁·공성·포로 전체 논리"
-    }
-   ]
-  },
-  {
-   "id": "archify.b2",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 페이지는 외교·전쟁·공성·포로 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b3",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "기계 입력과 검증 흐름"
-    }
-   ]
-  },
-  {
-   "id": "archify.b4",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "archify",
-   "text": "{\"domainId\":\"D16\",\"diagramId\":\"d16-flow\",\"moduleTitle\":\"D16 운용 흐름\"}"
-  },
-  {
-   "id": "archify.b5",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "소비자 계약(ledger-with-optional-siege-or-escape-performance-contest): Preserve registered war-score channel caps and existing event weights; no d10 conversion. Supply/work and stage policies govern siege; 100 score or progress 1 never directly transfers property or creates casualties. Custody transition requires actual event/authority."
-    }
-   ]
-  },
-  {
-   "id": "archify.b6",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "계산과 출력"
-    }
-   ]
-  },
-  {
-   "id": "archify.b7",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "text",
-   "text": "score-contribution [] battle: supplied signed delta subject to cumulative battle channel [-50,50]; enemy leader +100; primary/second/third designated heir +50/+25/+10; enemy capital +10\nscore-symmetry [] W_defender = -W_attacker\nscore-deduplication [] unique(warId,eventId,resultId); duplicate tuple is rejected before mutation\nendpoint [] abs(W)=100 => terminal lock; revalidate casus belli; settle exactly one fixed terminal effect or invalidate without victory\nreinforcement-admission [] arrived && battleStatus=ongoing => mayJoin; battleStatus=ended => cannotJoin\nsingle-loss-settlement [] settlementKey=warId+sourceResultId+lossIdentity; apply at most once\ntreaty-stage-separation [] legalEffectReceipt != handoverReceipt; fulfillment requires all indivisible required clauses and their stage receipts\nD16-F1 [후보·승인 전] battleAfter=clamp(battleBefore+suppliedBattleDelta,-50,50); effectiveBattleDelta=battleAfter-battleBefore; registered other deltas leader100,designatedHeirs50/25/10,capital10; Wafter=clamp(Wbefore+effectiveDelta,-100,100); opponent=-Wafter; abs(Wafter)==100 locks terminal then revalidates CB/beneficiary\nD16-F2 [후보·승인 전] siegeProgressAfter=clamp(progress+siegeWork/requiredWork-repair,0,1); each stage requires independent policy and actual supply/access; reaching1 requests registered stage transition, not automatic casualties or ownership\nD16-F3 [후보·승인 전] custodyAfter=registeredTransition(captiveEvent,actualLocation,currentCustodian,authority,requiredConsent); release/escape/transport never inferred from war score alone\n"
-  },
-  {
-   "id": "archify.b8",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D16의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b9",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "상태 필드와 보존 경계"
-    }
-   ]
-  },
-  {
-   "id": "archify.b10",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "warId/casusBelliId/rulesVersion — nonempty string (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "attackerId/defenderId/beneficiaryId — stable entity identity (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "scoreAttacker — integer (war-score point)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "eventId/resultId — nonempty stable identity (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "scoreEvent.kind — battle|enemyLeaderCaptured|primaryHeirCaptured|secondHeirCaptured|thirdHeirCaptured|enemyCapitalOccupied (enum)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "battleDelta — integer when kind=battle (war-score point)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "battleChannelTotal — integer (war-score point)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "casusBelliValid/declarationAuthority — boolean with current revision evidence (predicate)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "battleStatus/arrivalAt/battleEndedAt — ongoing|ended and ordered clock coordinates (D18 supplied world-clock coordinate)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "organizationLifecycleClauseId — registered clause identity (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "treatyClauseId/legalEffectReceipt/handoverReceipt — separate identities (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "bodyStateId/bodyRevision/effectId — approved identity and revision (identity/revision)"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b11",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "자료 소유자는 [object Object], 유지 계약은 score-contribution·score-symmetry·score-deduplication·endpoint·reinforcement-admission·single-loss-settlement·treaty-stage-separation다. 상태 소유 경계는 war/CB/fixed beneficiary,score W,battle channel,processed tuple,terminal receipt,siege stages/work/supply,actual captive location/custodian. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
-    }
-   ]
-  },
-  {
-   "id": "archify.b12",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "오류·보류 코드"
-    }
-   ]
-  },
-  {
-   "id": "archify.b13",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "후보 오류: E_POLICY, E_AUTHORITY, E_EXTERNAL_ORDER, E_EVENT_CONFLICT"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "기존 평가기 오류: E_UNIT, E_SCORE, E_FIELDS, E_REPLAY, E_BATTLE_CAP, E_EVENT_KIND, E_ENDPOINT, E_UNKNOWN, E_HELD_INPUT, E_CUSTODY_POLICY_HELD"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b14",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "차용 제거와 적용 범위"
-    }
-   ]
-  },
-  {
-   "id": "archify.b15",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
-    }
-   ]
-  },
-  {
-   "id": "archify.b16",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b17",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D16-war-score-siege-custody(TOOL/tools/mechanisms/original-trpg/war-score-siege-custody.mjs, TOOL/tools/mechanisms/original-trpg/war-score-siege-custody.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
-    }
-   ]
-  }
- ]
 }

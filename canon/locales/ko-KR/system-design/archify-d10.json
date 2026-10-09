@@ -1,262 +1,1962 @@
 {
- "schemaVersion": 1,
- "locale": "ko-KR",
- "status": "accepted",
- "source": {
-  "path": "system-design/Archify-D10.md",
-  "lineStart": 1,
-  "lineEnd": 75,
-  "sha256": "943645854713e09098f73528d8fc9391b15dccea73d8d00b04bb7bb0bb95b862"
- },
- "document": {
-  "id": "doc.Archify-D10",
-  "blockIds": [
-   "archify.b1",
-   "archify.b2",
-   "archify.b3",
-   "archify.b4",
-   "archify.b5",
-   "archify.b6",
-   "archify.b7",
-   "archify.b8",
-   "archify.b9",
-   "archify.b10",
-   "archify.b11",
-   "archify.b12",
-   "archify.b13",
-   "archify.b14",
-   "archify.b15",
-   "archify.b16",
-   "archify.b17"
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Archify-D10.md",
+    "lineStart": 1,
+    "lineEnd": 75,
+    "sha256": "943645854713e09098f73528d8fc9391b15dccea73d8d00b04bb7bb0bb95b862"
+  },
+  "document": {
+    "id": "doc.Archify-D10",
+    "blockIds": [
+      "archify.b1",
+      "archify.b2",
+      "archify.b3",
+      "archify.b4",
+      "archify.b5",
+      "archify.b6",
+      "archify.b7",
+      "archify.b8",
+      "archify.b9",
+      "archify.b10",
+      "archify.b11",
+      "archify.b12",
+      "archify.b13",
+      "archify.b14",
+      "archify.b15",
+      "archify.b16",
+      "archify.b17",
+      "archify.flow-detail.heading",
+      "archify.flow-detail.table",
+      "archify.detail.heading",
+      "archify.detail.table"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "archify.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D10 아치파이 — 작위·권리·명분·인준 전체 논리"
+        }
+      ]
+    },
+    {
+      "id": "archify.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기계 입력과 검증 흐름"
+        }
+      ]
+    },
+    {
+      "id": "archify.b4",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "archify",
+      "text": "{\"domainId\":\"D10\",\"diagramId\":\"d10-flow\",\"moduleTitle\":\"D10 운용 흐름\"}"
+    },
+    {
+      "id": "archify.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소비자 계약(authority-with-optional-forgery-performance-contest): Same right/title/basis persists through suspension; authority/consent/ratification separate. Forgery performance win creates no recognized right or war authority."
+        }
+      ]
+    },
+    {
+      "id": "archify.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 출력"
+        }
+      ]
+    },
+    {
+      "id": "archify.b7",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "legal-holder [] holders(titleId) = beneficiaries of active rights recognized as holding rights for exact titleId\npressability [] pressable = right.status == active AND exact title exists AND beneficiary alive AND actor has separate war authority AND registered CB binds actor, beneficiary, title, target and effects\ntransfer [] same rightId/titleId/basisId, new beneficiary only after exact consent, authority, required ratification and one atomic commit\ninheritance-recognition [] recognized successor only when a recorded current title-specific eligibility record names the successor; transferability alone is insufficient\neligibility-loss [] active -> suspended for the same rightId/titleId/basisId; no deletion, reassignment or fabricated expiry\nfabrication-mandate [] one exact authorized worker + one exact mandateEventId + one exact target title/beneficiary; mandate is consumed once and creates no right without separate completion/recognition event\ncb-beneficiary-survival [] beneficiary death invalidates the frozen beneficiary CB unless a separately authored CB replacement rule exists; attacker never silently becomes beneficiary\nduplicate-basis [] different rightId values with the same beneficiaryId/titleId may coexist when basisId differs; no merge, overwrite or exclusive inference\nsame-title-restoration [] a suspended title-invalid right may restore only to active with the same rightId and exact same titleId after explicit restored-title version evidence\nD10-F1 [후보·승인 전] pressable=right.active && exactTitleExists && beneficiaryAlive && separateWarAuthority && registeredCBBindsAllRequiredIds\nD10-F2 [후보·승인 전] eligibilityLoss: same rightId/titleId/basisId -> suspended; restoration requires exact same titleId and evidence; transfer changes beneficiary only after consent/authority/ratification\n"
+    },
+    {
+      "id": "archify.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 필드와 보존 경계"
+        }
+      ]
+    },
+    {
+      "id": "archify.b10",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "title — TitleRecord (stable title identity and registered territory set)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "right — RightInstance (one person-title-basis legal relation)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "control — ControlRecord | null (effective control of a registered title/territory scope)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "officeTier — string | null (D09 office classification)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "event — typed D10 event (immutable event identity at exact revision/rules version)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "ratification — RatificationEvidence[] (registered institution, scope and evidence identifiers)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 소유자는 D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+        }
+      ]
+    },
+    {
+      "id": "archify.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오류·보류 코드"
+        }
+      ]
+    },
+    {
+      "id": "archify.b13",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "후보 오류: E_POLICY, E_AUTHORITY, E_CONSENT, E_REVISION"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 평가기 오류: E_TYPE, E_FIELDS, E_DUPLICATE_ID, E_TITLE, E_VERSION, E_REPLAY_CONFLICT, E_STALE_SNAPSHOT, E_CONSENT, E_AUTHORITY, E_RATIFICATION"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 제거와 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "archify.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+        }
+      ]
+    },
+    {
+      "id": "archify.b16",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D10-right-state-and-mandate(TOOL/tools/mechanisms/original-trpg/right-state-and-mandate.mjs, TOOL/tools/mechanisms/original-trpg/right-state-and-mandate.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "흐름 노드별 처리와 원문 단계"
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.table",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "작위 신원 — [권리·지배 분리] 이름·직위 등급은 검색 단서일 뿐이다. 영구 titleId로 작위를 찾고 범위·상위 작위·최하위 예외를 등록 원문대로 읽는다. (원문: d10.b9.orderedSteps[1])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "활성 권리 집합 — [권리·지배 분리] 동일 titleId에 대해 보유권으로 인정된 active 권리의 beneficiaryId만 집합에 포함한다. 점유·직위·명칭은 포함 조건이 아니다. (원문: d10.b9.formulaSheet[0].e​xpression; d10.b9.formulaSheet[0].u​nit; d10.b9.formulaSheet[0].r​ounding; d10.b9.formulaSheet[0].c​lamp; d10.b9.formulaSheet[0].r​ng; d10.b9.formulaSheet[0].g​uard)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실효 지배 별도 — [권리·지배 분리] ControlRecord의 점유 영토는 작위의 영토 집합 안에서만 유효하며 지배자 변경으로 법적 보유자나 영토 범위를 변경하지 않는다. (원문: d10.b9.lifecycle.occupat​ion)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "서로 다른 근거 병존 — [권리·지배 분리] 같은 인물·작위여도 rightId와 basisId가 다른 권리는 함께 보존한다. 동일 이름으로 합치거나 배타 권리로 추론하지 않는다. (원문: d10.b9.formulaSheet[7].e​xpression; d10.b9.formulaSheet[7].u​nit; d10.b9.formulaSheet[7].r​ounding; d10.b9.formulaSheet[7].c​lamp; d10.b9.formulaSheet[7].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행사 조건 — [권리 행사·전쟁 사유] 활성 권리·정확한 작위·살아 있는 수혜자·별도 전쟁 권한·모든 대상 ID가 결속된 등록 CB가 모두 필요하다. (원문: d10.b9.formulaSheet[1].e​xpression; d10.b9.formulaSheet[1].u​nit; d10.b9.formulaSheet[1].r​ounding; d10.b9.formulaSheet[1].c​lamp; d10.b9.formulaSheet[1].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "행사 가능 — [권리 행사·전쟁 사유] 위 조건의 논리곱이 참일 때만 pressable이다. 이 계산은 군대·재산·인준을 새로 발급하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "고정 수혜자 사망 — [권리 행사·전쟁 사유] 고정된 수혜자의 사망은 기존 CB를 무효로 한다. 별도 대체 규칙이 없으면 공격자를 수혜자로 치환하지 않는다. (원문: d10.b9.formulaSheet[6].e​xpression; d10.b9.formulaSheet[6].u​nit; d10.b9.formulaSheet[6].r​ounding; d10.b9.formulaSheet[6].c​lamp; d10.b9.formulaSheet[6].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "양도 동의·권한 — [양도·승계 인정] 정확한 동의·권한·필요 인준이 확인되기 전에는 양도하지 않는다. (원문: d10.b9.formulaSheet[2].e​xpression; d10.b9.formulaSheet[2].u​nit; d10.b9.formulaSheet[2].r​ounding; d10.b9.formulaSheet[2].c​lamp; d10.b9.formulaSheet[2].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수혜자만 변경 — [양도·승계 인정] 단일 원자 반영으로 beneficiaryId만 바꾸며 rightId/titleId/basisId는​ 그대로다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승계 적격 기록 — [양도·승계 인정] 현재 작위별 기록이 후계자를 명시해야 승계를 인정한다. transferable 하나만으로 승계되지 않는다. (원문: d10.b9.formulaSheet[3].e​xpression; d10.b9.formulaSheet[3].u​nit; d10.b9.formulaSheet[3].r​ounding; d10.b9.formulaSheet[3].c​lamp; d10.b9.formulaSheet[3].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "활성 권리 — [정지·동일 작위 복구] 자격 상실 전 동일 rightId/titleId/basisId의​ active 상태다. (원문: d10.b9.formulaSheet[4].e​xpression; d10.b9.formulaSheet[4].u​nit; d10.b9.formulaSheet[4].r​ounding; d10.b9.formulaSheet[4].c​lamp; d10.b9.formulaSheet[4].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자격 상실 정지 — [정지·동일 작위 복구] active에서 suspended로만 전이한다. 삭제·수혜자 재배정·임의 만료는 없다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "복구 근거 — [정지·동일 작위 복구] 정지 이유가 작위 무효이고 정확히 같은 titleId의 복구 판본 증거가 있어야 한다. 다른 작위로 바꾸지 않는다. (원문: d10.b9.formulaSheet[8].e​xpression; d10.b9.formulaSheet[8].u​nit; d10.b9.formulaSheet[8].r​ounding; d10.b9.formulaSheet[8].c​lamp; d10.b9.formulaSheet[8].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 권리 활성화 — [정지·동일 작위 복구] 같은 rightId와 titleId를 보존한 채 active로 복구한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "위임 결속 — [날조 단일 위임] 권한 있는 담당자·mandateEventId·대상 작위·수혜자를 하나의 정확한 위임에 결속한다. (원문: d10.b9.formulaSheet[5].e​xpression; d10.b9.formulaSheet[5].u​nit; d10.b9.formulaSheet[5].r​ounding; d10.b9.formulaSheet[5].c​lamp; d10.b9.formulaSheet[5].r​ng)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "한 번 소비 — [날조 단일 위임] 해당 위임은 한 번만 소비한다. 별도 완료·인정 사건 없이 권리를 만들지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "위임 종료 — [날조 단일 위임] 종료해도 완료된 증거와 이미 소비한 작업을 보존한다. 미래 예약 해제는 해당 계약 소유이며 미정이다. (원문: d10.b9.lifecycle.cancel)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정확 입력·단위 — 필수 키·타입·영구 ID·단위를 검증한다. 미확인 입력과 잘못된 형식을 구분한다. (원문: d10.b9.fields[0].name; d10.b9.fields[0].type; d10.b9.fields[0].unit; d10.b9.fields[0].range; d10.b9.fields[0].null; d10.b9.fields[0].owner; d10.b9.fields[0].read; d10.b9.fields[0].write; d10.b9.fields[0].snapsho​t; d10.b9.fields[0].commitP​oint; d10.b9.fields[1].name; d10.b9.fields[1].type; d10.b9.fields[1].unit; d10.b9.fields[1].range; d10.b9.fields[1].null; d10.b9.fields[1].owner; d10.b9.fields[1].read; d10.b9.fields[1].write; d10.b9.fields[1].snapsho​t; d10.b9.fields[1].commitP​oint; d10.b9.fields[2].name; d10.b9.fields[2].type; d10.b9.fields[2].unit; d10.b9.fields[2].null; d10.b9.fields[2].owner; d10.b9.fields[2].read; d10.b9.fields[2].write; d10.b9.fields[2].snapsho​t; d10.b9.fields[2].commitP​oint; d10.b9.fields[3].name; d10.b9.fields[3].type; d10.b9.fields[3].unit; d10.b9.fields[3].null; d10.b9.fields[3].owner; d10.b9.fields[3].read; d10.b9.fields[3].write; d10.b9.fields[3].snapsho​t; d10.b9.fields[3].commitP​oint; d10.b9.fields[4].name; d10.b9.fields[4].type; d10.b9.fields[4].unit; d10.b9.fields[4].null; d10.b9.fields[4].owner; d10.b9.fields[4].read; d10.b9.fields[4].write; d10.b9.fields[4].snapsho​t; d10.b9.fields[4].commitP​oint; d10.b9.fields[5].name; d10.b9.fields[5].type; d10.b9.fields[5].unit; d10.b9.fields[5].null; d10.b9.fields[5].owner; d10.b9.fields[5].read; d10.b9.fields[5].write; d10.b9.fields[5].snapsho​t; d10.b9.fields[5].commitP​oint)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 사건 내용 비교 — 일반 변환 어댑터에서 이미 수락한 동일 신원·payload는 재생한다. 바뀐 내용은 거부하고 새 사건은 현재 판본을 확인한다. 원본 평가기의 중복 거부와 동일한 것으로 간주하지 않는다. (원문: d10.b9.rulesVersion; d10.b9.snapshot; d10.b9.failure)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 판본·행위 선택 — 정확한 현재 개정·규칙을 확인한 뒤 요청된 독립 행위로 분기한다. 다른 논리 단위의 선후관계를 만들지 않는다. (원문: d10.b9.schemaVersion; d10.b9.domainId; d10.b9.mechanismId; d10.b9.status; d10.b9.dataOwner; d10.b9.readSet[0]; d10.b9.readSet[1]; d10.b9.readSet[2]; d10.b9.readSet[3]; d10.b9.readSet[4]; d10.b9.orderedSteps[0]; d10.b9.orderedSteps[2]; d10.b9.orderedSteps[3]; d10.b9.orderedSteps[4]; d10.b9.orderedSteps[5]; d10.b9.orderedSteps[6]; d10.b9.rng; d10.b9.time; d10.b9.rounding; d10.b9.clamps; d10.b9.lifecycle.death; d10.b9.lifecycle.load; d10.b9.lifecycle.lowestR​ank; d10.b9.scope.numericBala​nceReady; d10.b9.scope.runtimeImpl​emented; d10.b9.scope.worldFactsI​ssued; d10.b9.scope.executionSc​hemaReady; d10.b11.authority.sealed​RowsApplied[0].row; d10.b11.authority.sealed​RowsApplied[0].decisionI​d; d10.b11.authority.sealed​RowsApplied[0].chosenOpt​ion; d10.b11.authority.sealed​RowsApplied[0].scope; d10.b11.authority.sealed​RowsApplied[1].row; d10.b11.authority.sealed​RowsApplied[1].decisionI​d; d10.b11.authority.sealed​RowsApplied[1].chosenOpt​ion; d10.b11.authority.sealed​RowsApplied[1].scope; d10.b11.authority.sealed​RowsApplied[2].row; d10.b11.authority.sealed​RowsApplied[2].decisionI​d; d10.b11.authority.sealed​RowsApplied[2].chosenOpt​ion; d10.b11.authority.sealed​RowsApplied[2].scope; d10.b11.authority.rowIds​AreDecisionOrdinals; d10.b11.authority.exclud​edRows[0]; d10.b11.authority.exclud​edRows[1]; d10.b11.authority.approv​edRightsLifecycle[0]; d10.b11.authority.approv​edRightsLifecycle[1]; d10.b11.authority.approv​edRightsLifecycle[2]; d10.b11.authority.approv​edRightsLifecycle[3]; d10.b11.authority.approv​edRightsLifecycle[4]; d10.b11.authority.approv​edRightsLifecycle[5]; d10.b11.authority.approv​edRightsLifecycle[6]; d10.b11.authority.priorA​cceptedClauses[0]; d10.b11.authority.priorA​cceptedClauses[1]; d10.b11.authority.priorA​cceptedClauses[2]; d10.b11.authority.priorA​cceptedClauses[3]; d10.b11.authority.priorA​cceptedClauses[4]; d10.b11.authority.priorA​cceptedClauses[5]; d10.b11.authority.priorA​cceptedClauses[6]; d10.b11.authority.noNewO​wnerDecisions; d10.b11.state.TitleRecor​d.titleId; d10.b11.state.TitleRecor​d.rankId; d10.b11.state.TitleRecor​d.territoryIds; d10.b11.state.TitleRecor​d.superiorTitleId; d10.b11.state.TitleRecor​d.lowestRankException; d10.b11.state.RightInsta​nce.rightId; d10.b11.state.RightInsta​nce.titleId; d10.b11.state.RightInsta​nce.beneficiaryId; d10.b11.state.RightInsta​nce.basisId; d10.b11.state.RightInsta​nce.status; d10.b11.state.RightInsta​nce.strength; d10.b11.state.RightInsta​nce.transferable; d10.b11.state.RightInsta​nce.recognitionEvidence;​ d10.b11.state.ControlRec​ord.controllerId; d10.b11.state.ControlRec​ord.titleId; d10.b11.state.ControlRec​ord.occupiedTerritoryIds​; d10.b11.state.ControlRec​ord.sourceEventId; d10.b11.state.checkpoint​[0]; d10.b11.state.checkpoint​[1]; d10.b11.state.checkpoint​[2]; d10.b11.state.checkpoint​[3]; d10.b11.state.checkpoint​[4]; d10.b11.state.checkpoint​[5]; d10.b11.effectsEventsOut​puts[0]; d10.b11.effectsEventsOut​puts[1]; d10.b11.effectsEventsOut​puts[2]; d10.b11.effectsEventsOut​puts[3]; d10.b11.exceptions[0]; d10.b11.exceptions[1]; d10.b11.exceptions[2]; d10.b11.exceptions[3]; d10.b11.exceptions[4]; d10.b11.exceptions[5]; d10.b11.exceptions[6]; d10.b11.exceptions[7]; d10.b11.exceptions[8]; d10.b11.exceptions[9]; d10.b11.exceptions[10]; d10.b11.exceptions[11]; d10.b11.exceptions[12])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보류·원상 보존 — 미확인·미승인 입력 때문에 해당 의존 행위만 보류한다. 세계는 정지하지 않으며 소비·완료 진척은 보존한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명시 오류·원상 보존 — 형식·단위·판본·권한·동의·실행 가능성·보존 오류를 명시 거부한다. 상태·예약·난수·수락 영수증을 새로 반영하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "저장 결과 재생 — 일반 어댑터의 동일 수락 신원·동일 내용은 기존 결과를 반환한다. 추가 효과·난수 소비·개정은 없다. 기존 평가기별 중복 오류를 임의 없애지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택 결과 원자 검증 — 해당 행위가 허용한 신원·수량·권한·완료 소비의 보존을 검증한 후 결과·개정·영수증을 원자 반영한다. (원문: d10.b9.writeSet[0]; d10.b9.writeSet[1]; d10.b9.writeSet[2]; d10.b9.commitPoint)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결과·허용 투영 반환 — 해당 행위의 기록된 결과 또는 읽기 전용 결과를 반환한다. 관측자 지식·접근권을 넘어 숨겨진 사실을 표시하거나 구현 완료를 주장하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 상태 유지 — 미확정 미리보기·비구속 제안·명시 거절은 기존 상태를 유지한다. 완료된 소비·진척을 되감지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 항목별 원문과 적용 구분"
+        }
+      ]
+    },
+    {
+      "id": "archify.detail.table",
+      "kind": "table",
+      "header": [
+        "적용 구분",
+        "원문 위치",
+        "계약 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "운용",
+          "d10.b9.schemaVersion",
+          "1"
+        ],
+        [
+          "운용",
+          "d10.b9.domainId",
+          "\"D10\""
+        ],
+        [
+          "운용",
+          "d10.b9.mechanismId",
+          "\"seoul.d10.bounded-contr​act\""
+        ],
+        [
+          "운용",
+          "d10.b9.status",
+          "\"bounded-contract-with-p​roposal-held\""
+        ],
+        [
+          "운용",
+          "d10.b9.rulesVersion",
+          "\"D10-sealed-20261008\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.sourceRulesVersion",
+          "\"D10-sealed-20261008\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.contractSHA256",
+          "\"892c2565d40d6e886651e69​7bfacd53778477401e7c2c4c​1d6ca1f86cfccfda0\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
+          "\"doc.Save-and-Determinis​m\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[0].path",
+          "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[0].sha256",
+          "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
+          "\"doc.Singleplayer-Design​-SP-1-0-0\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[1].path",
+          "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[1].sha256",
+          "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
+          "\"doc.Rules-FactionsWarfa​re\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[2].path",
+          "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.canonRules[2].sha256",
+          "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.rulesVersionLinka​ge.compatibility",
+          "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d10.b9.dataOwner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].name",
+          "\"title\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].type",
+          "\"TitleRecord\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].unit",
+          "\"stable title identity and registered territory set\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].range",
+          "\"nonempty titleId, registered rankId, zero or more territory IDs, superiorTitleId or null\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].null",
+          "\"missing title blocks rights transition; null superior is allowed only when the registered record says lowest-rank exception or top-level root\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].owner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].read",
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].write",
+          "\"D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].snapsho​t",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[0].commitP​oint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].name",
+          "\"right\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].type",
+          "\"RightInstance\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].unit",
+          "\"one person-title-basis legal relation\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].range",
+          "\"active &#124; suspended &#124; terminated; pressed &#124; unpressed &#124; potential\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].null",
+          "\"unknown basis, beneficiary, title or status blocks operation\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].owner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].read",
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].write",
+          "\"D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].snapsho​t",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[1].commitP​oint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].name",
+          "\"control\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].type",
+          "\"ControlRecord &#124; null\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].unit",
+          "\"effective control of a registered title/territory scope\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].null",
+          "\"no verified controller; never implies holder or owner\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].owner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].read",
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].write",
+          "\"D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].snapsho​t",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[2].commitP​oint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].name",
+          "\"officeTier\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].type",
+          "\"string &#124; null\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].unit",
+          "\"D09 office classification\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].null",
+          "\"not an error; never substitutes for title rank\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].owner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].read",
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].write",
+          "\"D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].snapsho​t",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[3].commitP​oint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].name",
+          "\"event\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].type",
+          "\"typed D10 event\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].unit",
+          "\"immutable event identity at exact revision/rules version\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].null",
+          "\"forbidden\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].owner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].read",
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].write",
+          "\"D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].snapsho​t",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[4].commitP​oint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].name",
+          "\"ratification\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].type",
+          "\"RatificationEvidence[]\"​"
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].unit",
+          "\"registered institution, scope and evidence identifiers\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].null",
+          "\"unknown; blocks transitions that require ratification\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].owner",
+          "\"D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].read",
+          "\"complete checkpoint at exact revision; stable title/right/person/event​ IDs; registered country institution and ratification evidence when required; current beneficiary life and title-specific eligibility; separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].write",
+          "\"D10 right status or beneficiary after all guards; single fabrication mandate consumption receipt; revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].snapsho​t",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.fields[5].commitP​oint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.readSet[0]",
+          "\"complete checkpoint at exact revision\""
+        ],
+        [
+          "운용",
+          "d10.b9.readSet[1]",
+          "\"stable title/right/person/event​ IDs\""
+        ],
+        [
+          "운용",
+          "d10.b9.readSet[2]",
+          "\"registered country institution and ratification evidence when required\""
+        ],
+        [
+          "운용",
+          "d10.b9.readSet[3]",
+          "\"current beneficiary life and title-specific eligibility\""
+        ],
+        [
+          "운용",
+          "d10.b9.readSet[4]",
+          "\"separate D09 office authority, D11 transfer contract and D16 war authority/CB records\""
+        ],
+        [
+          "운용",
+          "d10.b9.writeSet[0]",
+          "\"D10 right status or beneficiary after all guards\""
+        ],
+        [
+          "운용",
+          "d10.b9.writeSet[1]",
+          "\"single fabrication mandate consumption receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.writeSet[2]",
+          "\"revision and immutable event receipt\""
+        ],
+        [
+          "운용",
+          "d10.b9.snapshot",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "운용",
+          "d10.b9.commitPoint",
+          "\"Build candidate state, validate identity preservation, title existence, required consent/authority/ratifi​cation and cross-domain references, then atomically append one receipt and revision. Any failure leaves the checkpoint unchanged.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[0]",
+          "\"Validate strict field types, stable unique IDs, rulesVersion and full checkpoint invariants.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[1]",
+          "\"Resolve title and right by stable ID; names, office tier and historical registries are search evidence only.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[2]",
+          "\"Check exact replay/event conflict before revision conflict so retries are deterministic.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[3]",
+          "\"Evaluate event-specific consent, authority, recorded eligibility, beneficiary life, mandate or restoration evidence.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[4]",
+          "\"Keep legal right, effective control, occupation, office and property separate; never derive one from another.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[5]",
+          "\"Apply only the selected lifecycle operator while preserving rightId/titleId/basisId unless the operator explicitly changes beneficiary.\""
+        ],
+        [
+          "운용",
+          "d10.b9.orderedSteps[6]",
+          "\"Validate candidate state, append immutable receipt and increment revision atomically.\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[0].i​d",
+          "\"legal-holder\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[0].e​xpression",
+          "\"holders(titleId) = beneficiaries of active rights recognized as holding rights for exact titleId\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[0].u​nit",
+          "\"set<PersonId>\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[0].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[0].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[0].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[0].g​uard",
+          "\"occupation/control, office tier and public name are not membership predicates\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[1].i​d",
+          "\"pressability\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[1].e​xpression",
+          "\"pressable = right.status == active AND exact title exists AND beneficiary alive AND actor has separate war authority AND registered CB binds actor, beneficiary, title, target and effects\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[1].u​nit",
+          "\"boolean with typed blocking reason\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[1].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[1].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[1].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[2].i​d",
+          "\"transfer\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[2].e​xpression",
+          "\"same rightId/titleId/basisId,​ new beneficiary only after exact consent, authority, required ratification and one atomic commit\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[2].u​nit",
+          "\"right transition\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[2].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[2].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[2].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[3].i​d",
+          "\"inheritance-recognition​\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[3].e​xpression",
+          "\"recognized successor only when a recorded current title-specific eligibility record names the successor; transferability alone is insufficient\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[3].u​nit",
+          "\"right transition\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[3].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[3].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[3].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[4].i​d",
+          "\"eligibility-loss\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[4].e​xpression",
+          "\"active -> suspended for the same rightId/titleId/basisId;​ no deletion, reassignment or fabricated expiry\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[4].u​nit",
+          "\"right status transition\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[4].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[4].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[4].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[5].i​d",
+          "\"fabrication-mandate\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[5].e​xpression",
+          "\"one exact authorized worker + one exact mandateEventId + one exact target title/beneficiary; mandate is consumed once and creates no right without separate completion/recognition event\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[5].u​nit",
+          "\"single-action authorization\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[5].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[5].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[5].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[6].i​d",
+          "\"cb-beneficiary-survival​\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[6].e​xpression",
+          "\"beneficiary death invalidates the frozen beneficiary CB unless a separately authored CB replacement rule exists; attacker never silently becomes beneficiary\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[6].u​nit",
+          "\"CB validity\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[6].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[6].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[6].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[7].i​d",
+          "\"duplicate-basis\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[7].e​xpression",
+          "\"different rightId values with the same beneficiaryId/titleId may coexist when basisId differs; no merge, overwrite or exclusive inference\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[7].u​nit",
+          "\"set membership\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[7].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[7].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[7].r​ng",
+          "\"none\""
+        ],
+        [
+          "역사 참조",
+          "d10.b9.formulaSheet[8].i​d",
+          "\"same-title-restoration\"​"
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[8].e​xpression",
+          "\"a suspended title-invalid right may restore only to active with the same rightId and exact same titleId after explicit restored-title version evidence\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[8].u​nit",
+          "\"right status transition\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[8].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[8].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.formulaSheet[8].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d10.b9.rng",
+          "\"공식 시트의 난수 없음 계약을 따른다.\""
+        ],
+        [
+          "운용",
+          "d10.b9.time",
+          "\"event-based; no claim TTL, fabrication duration or ratification deadline is invented\""
+        ],
+        [
+          "운용",
+          "d10.b9.rounding",
+          "\"공식별 명시된 정확한 집합·정수·상태 연산을 따른다. 미정 수치 정책을 추가하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d10.b9.clamps",
+          "\"공식에 명시된 경계만 적용하고 미정 값을 임의로 클램프하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d10.b9.lifecycle.cancel",
+          "\"A fabrication mandate may be closed without creating a right; completed evidence and consumed work remain, future reservation release is contract-owned and held.\""
+        ],
+        [
+          "운용",
+          "d10.b9.lifecycle.death",
+          "\"Beneficiary death invalidates a frozen-beneficiary CB under the selected policy; title/right inheritance requires a separate recorded eligibility event and never copies office, control or property.\""
+        ],
+        [
+          "운용",
+          "d10.b9.lifecycle.load",
+          "\"Validate full IDs, revisions, receipts and rulesVersion; incompatible or stale data is an explicit error, never silent migration.\""
+        ],
+        [
+          "운용",
+          "d10.b9.lifecycle.occupat​ion",
+          "\"Control record may change through another domain but cannot mutate D10 legal holder or territory extent.\""
+        ],
+        [
+          "운용",
+          "d10.b9.lifecycle.lowestR​ank",
+          "\"A registered lowest-rank exception permits the authored hierarchy shape only; it grants no office rank, superior contract or territorial ownership.\""
+        ],
+        [
+          "운용",
+          "d10.b9.failure",
+          "\"Exact payload replay returns the prior receipt; same event ID with changed payload is E_EVENT_CONFLICT; a new event requires exact revision and rulesVersion.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[0].i​d",
+          "\"title-registry\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[0].h​eld",
+          "\"Actual title IDs, Korean/English display names, title ranks, territorial extents, superior-title links, lowest-rank exceptions and current holders.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[0].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[0].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[0].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[1].i​d",
+          "\"ratification-institutio​ns\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[1].h​eld",
+          "\"Country-by-country ratification bodies, electors, quorum/meeting validity, tie resolver, acting/regency scope and evidence formats.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[1].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[1].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[1].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[2].i​d",
+          "\"country-rights-law\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[2].h​eld",
+          "\"Title-specific inheritance eligibility, marriage/adoption effects, non-blood succession, transferability exceptions and recognition procedure.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[2].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[3].i​d",
+          "\"fabrication-numerics\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[3].h​eld",
+          "\"Duration, cost, resource reservation, discovery risk, success method and successor-worker continuation. No common 3d6 roll is adopted.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[3].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[3].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[3].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[4].i​d",
+          "\"claim-expiry\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[4].h​eld",
+          "\"Expiry, renewal, ground-loss and invalidation events by right type. The selected policy suspends eligibility loss but supplies no universal TTL.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[4].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[4].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[4].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[5].i​d",
+          "\"casus-belli-catalog\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[5].h​eld",
+          "\"Actual CB IDs, eligible actor/target/title/benef​iciary tuples, costs, outcomes and replacement-on-death policies.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[5].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[5].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[5].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[6].i​d",
+          "\"grant-recall-contracts\"​"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[6].h​eld",
+          "\"Actual D11 authority, terms, obligations, breach, ratification, custody and handover records for each grant/delegation/recall.​\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[6].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[6].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[6].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[7].i​d",
+          "\"occupation-recognition\"​"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[7].h​eld",
+          "\"Actual D16 control/occupation events and any later legal recognition; occupation alone remains non-ownership.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[7].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[7].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[7].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[8].i​d",
+          "\"source-game-values\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[8].h​eld",
+          "\"CK3 and Norland tiers, costs, timers, acceptance order and native algorithms remain comparison evidence only and are not imported.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[8].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[8].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[8].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[9].i​d",
+          "\"test-fixtures\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[9].h​eld",
+          "\"All person, title, office, territory, event and revision IDs in cases.json are illustrative Seoul-owned oracle fixtures, not world records.\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[9].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[9].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d10.b9.proposalHeld[9].o​perative",
+          "false"
+        ],
+        [
+          "운용",
+          "d10.b9.scope.numericBala​nceReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d10.b9.scope.runtimeImpl​emented",
+          "false"
+        ],
+        [
+          "운용",
+          "d10.b9.scope.worldFactsI​ssued",
+          "false"
+        ],
+        [
+          "운용",
+          "d10.b9.scope.executionSc​hemaReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[0].row",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[0].decisionI​d",
+          "\"GP-07\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[0].chosenOpt​ion",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[0].scope",
+          "\"Author missing title and ratification records as individually reviewable proposals; no proposal becomes a world fact.\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[1].row",
+          "\"D09\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[1].decisionI​d",
+          "\"T68-D09-COUNTRY-LAWS\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[1].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[1].scope",
+          "\"Only a registered country-specific resolver, scope and ratification evidence may resolve an institutional tie; missing authority stays unresolved.\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[2].row",
+          "\"D19\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[2].decisionI​d",
+          "\"T68-D11-CONTRACT-RECALL​\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[2].chosenOpt​ion",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.sealed​RowsApplied[2].scope",
+          "\"Each transfer or recall contract states authority, term, obligations, breach, ratification and handover separately.\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.rowIds​AreDecisionOrdinals",
+          "true"
+        ],
+        [
+          "운용",
+          "d10.b11.authority.exclud​edRows[0]",
+          "\"D10/T68-D12-PERMANENT-D​ETENTION concerns D12 body control, not D10 title rights.\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.exclud​edRows[1]",
+          "\"GURPS-like public anchors contain no D10 title, claim, ratification or territorial equation.\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[0]",
+          "\"transfer-A consent-commit\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[1]",
+          "\"inheritance-recognition​-A recorded-eligibility\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[2]",
+          "\"eligibility-loss-A suspend\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[3]",
+          "\"fabrication-mandate-A single-action\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[4]",
+          "\"cb-death-validity-A beneficiary-survival\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[5]",
+          "\"duplicate-basis-A parallel-nonexclusive\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.approv​edRightsLifecycle[6]",
+          "\"invalid-title-recovery-​A same-title-restoration\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[0]",
+          "\"separate office, title, possession, effective control and military command\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[1]",
+          "\"all characters may hold rights instances but rights do not grant war declaration authority\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[2]",
+          "\"valid registered casus belli required\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[3]",
+          "\"effective control, legal ratification and title right use separate ledgers\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[4]",
+          "\"fabrication requires an authorized records/notary/genealogy​ officer acting on an exact mandate\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[5]",
+          "\"marriage creates no automatic new claim\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.priorA​cceptedClauses[6]",
+          "\"stable entity/right/event identity and explicit revision conflicts\""
+        ],
+        [
+          "운용",
+          "d10.b11.authority.noNewO​wnerDecisions",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[0].​id",
+          "\"SEOUL-D10-RIGHTS\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[0].​source",
+          "\"owner-rights-selected-c​ontract-r2-20261005/sele​cted-contract.json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[0].​classification",
+          "\"owner-approved symbolic lifecycle operators\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[1].​id",
+          "\"SEOUL-D10-CLAUSES\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[1].​source",
+          "\"singleplayer-design-sp-​1-0-0.json#sp1.b117-sp1.​b119 and rules-factions-warfare-c​lauses.json#claims-owner​.20261003\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[1].​classification",
+          "\"committed canonical design boundaries\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[2].​id",
+          "\"TASK26-SEALED\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[2].​source",
+          "\"task-26-remaining-decis​ions-20261008/decision-r​ecord.json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[2].​classification",
+          "\"owner-approved authoring directions only; no unspecified instance or coefficient approval\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[3].​id",
+          "\"CK3-D10\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[3].​source",
+          "\"task-24/cells/ck3/D10/v​erified-input-r2\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[3].​classification",
+          "\"documentary comparison only; 15 verified and 1 contradicted source claims, no Seoul adoption\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[4].​id",
+          "\"NORLAND-D10\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[4].​source",
+          "\"task-24/cells/norland/D​10/verified-input-r1\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.sourceClaims[4].​classification",
+          "\"documentary comparison/non-equivalen​ce only; no Seoul adoption\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.gurpsLikeBasis.s​ource",
+          "\"task-25-gurps-like-basi​s-20261008/basis.json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.gurpsLikeBasis.w​orked",
+          "\"task-25-gurps-like-basi​s-20261008/worked-checks​.json\""
+        ],
+        [
+          "역사 참조",
+          "d10.b11.gurpsLikeBasis.d​irectD10Mechanics",
+          "[]"
+        ],
+        [
+          "역사 참조",
+          "d10.b11.gurpsLikeBasis.m​eaning",
+          "\"No public Lite title/claim rule or D10 numeric formula exists in the approved basis. D10 uses exact identity, set membership and boolean guards; it makes no GURPS 2004 claim.\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.TitleRecor​d.titleId",
+          "\"stable ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.TitleRecor​d.rankId",
+          "\"registered D10 title rank, independent of office tier\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.TitleRecor​d.territoryIds",
+          "\"explicit set; occupation never expands it\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.TitleRecor​d.superiorTitleId",
+          "\"stable title ID or null\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.TitleRecor​d.lowestRankException",
+          "\"registered boolean allowing no subordinate territory/title hierarchy assumption\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.rightId",
+          "\"stable ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.titleId",
+          "\"exact registered title ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.beneficiaryId",
+          "\"person ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.basisId",
+          "\"cause/version ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.status",
+          "\"active &#124; suspended &#124; terminated\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.strength",
+          "\"potential &#124; pressed &#124; unpressed\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.transferable",
+          "\"authored boolean; inheritance still requires separate recorded eligibility\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.RightInsta​nce.recognitionEvidence",
+          "\"evidence IDs\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.ControlRec​ord.controllerId",
+          "\"person or institution ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.ControlRec​ord.titleId",
+          "\"exact title ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.ControlRec​ord.occupiedTerritoryIds​",
+          "\"verified subset of the title territory set\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.ControlRec​ord.sourceEventId",
+          "\"control event ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.checkpoint​[0]",
+          "\"rulesVersion\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.checkpoint​[1]",
+          "\"revision\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.checkpoint​[2]",
+          "\"titles\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.checkpoint​[3]",
+          "\"rights\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.checkpoint​[4]",
+          "\"controls\""
+        ],
+        [
+          "운용",
+          "d10.b11.state.checkpoint​[5]",
+          "\"appliedEventReceipts\""
+        ],
+        [
+          "운용",
+          "d10.b11.effectsEventsOut​puts[0]",
+          "\"one typed immutable receipt per accepted event\""
+        ],
+        [
+          "운용",
+          "d10.b11.effectsEventsOut​puts[1]",
+          "\"updated right state or beneficiary only\""
+        ],
+        [
+          "운용",
+          "d10.b11.effectsEventsOut​puts[2]",
+          "\"derived visible holder/control distinction\""
+        ],
+        [
+          "운용",
+          "d10.b11.effectsEventsOut​puts[3]",
+          "\"typed rejection without mutation\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[0]",
+          "\"E_TYPE malformed or unknown required input\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[1]",
+          "\"E_DUPLICATE_ID duplicate title/right/receipt ID\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[2]",
+          "\"E_TITLE missing or mismatched title\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[3]",
+          "\"E_CONSENT missing transfer consent\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[4]",
+          "\"E_AUTHORITY missing exact authority/mandate\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[5]",
+          "\"E_RATIFICATION missing required registered institution evidence\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[6]",
+          "\"E_ELIGIBILITY missing recorded successor eligibility\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[7]",
+          "\"E_BENEFICIARY dead frozen CB beneficiary\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[8]",
+          "\"E_NOT_SUSPENDED invalid restoration source state\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[9]",
+          "\"E_SAME_TITLE restoration attempts a different title\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[10]",
+          "\"E_REPLAY_CONFLICT same event ID with changed payload\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[11]",
+          "\"E_STALE_SNAPSHOT new event at wrong revision\""
+        ],
+        [
+          "운용",
+          "d10.b11.exceptions[12]",
+          "\"E_VERSION incompatible rules version\""
+        ]
+      ]
+    }
   ]
- },
- "blocks": [
-  {
-   "id": "archify.b1",
-   "kind": "heading",
-   "level": 1,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D10 아치파이 — 작위·권리·명분·인준 전체 논리"
-    }
-   ]
-  },
-  {
-   "id": "archify.b2",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 페이지는 작위·권리·명분·인준 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b3",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "기계 입력과 검증 흐름"
-    }
-   ]
-  },
-  {
-   "id": "archify.b4",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "archify",
-   "text": "{\"domainId\":\"D10\",\"diagramId\":\"d10-flow\",\"moduleTitle\":\"D10 운용 흐름\"}"
-  },
-  {
-   "id": "archify.b5",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "소비자 계약(authority-with-optional-forgery-performance-contest): Same right/title/basis persists through suspension; authority/consent/ratification separate. Forgery performance win creates no recognized right or war authority."
-    }
-   ]
-  },
-  {
-   "id": "archify.b6",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "계산과 출력"
-    }
-   ]
-  },
-  {
-   "id": "archify.b7",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "text",
-   "text": "legal-holder [] holders(titleId) = beneficiaries of active rights recognized as holding rights for exact titleId\npressability [] pressable = right.status == active AND exact title exists AND beneficiary alive AND actor has separate war authority AND registered CB binds actor, beneficiary, title, target and effects\ntransfer [] same rightId/titleId/basisId, new beneficiary only after exact consent, authority, required ratification and one atomic commit\ninheritance-recognition [] recognized successor only when a recorded current title-specific eligibility record names the successor; transferability alone is insufficient\neligibility-loss [] active -> suspended for the same rightId/titleId/basisId; no deletion, reassignment or fabricated expiry\nfabrication-mandate [] one exact authorized worker + one exact mandateEventId + one exact target title/beneficiary; mandate is consumed once and creates no right without separate completion/recognition event\ncb-beneficiary-survival [] beneficiary death invalidates the frozen beneficiary CB unless a separately authored CB replacement rule exists; attacker never silently becomes beneficiary\nduplicate-basis [] different rightId values with the same beneficiaryId/titleId may coexist when basisId differs; no merge, overwrite or exclusive inference\nsame-title-restoration [] a suspended title-invalid right may restore only to active with the same rightId and exact same titleId after explicit restored-title version evidence\nD10-F1 [후보·승인 전] pressable=right.active && exactTitleExists && beneficiaryAlive && separateWarAuthority && registeredCBBindsAllRequiredIds\nD10-F2 [후보·승인 전] eligibilityLoss: same rightId/titleId/basisId -> suspended; restoration requires exact same titleId and evidence; transfer changes beneficiary only after consent/authority/ratification\n"
-  },
-  {
-   "id": "archify.b8",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b9",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "상태 필드와 보존 경계"
-    }
-   ]
-  },
-  {
-   "id": "archify.b10",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "title — TitleRecord (stable title identity and registered territory set)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "right — RightInstance (one person-title-basis legal relation)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "control — ControlRecord | null (effective control of a registered title/territory scope)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "officeTier — string | null (D09 office classification)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "event — typed D10 event (immutable event identity at exact revision/rules version)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "ratification — RatificationEvidence[] (registered institution, scope and evidence identifiers)"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b11",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "자료 소유자는 D10 작위·권리·명분 기록; D09 직위, D11 양도 계약, D13 재산, D16 전쟁 권한, 유지 계약은 legal-holder·pressability·transfer·inheritance-recognition·eligibility-loss·fabrication-mandate·cb-beneficiary-survival·duplicate-basis·same-title-restoration다. 상태 소유 경계는 rightId,titleId,basisId,beneficiary,active/suspended,recognition evidence,CB exact binding,mandate/completion receipts. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
-    }
-   ]
-  },
-  {
-   "id": "archify.b12",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "오류·보류 코드"
-    }
-   ]
-  },
-  {
-   "id": "archify.b13",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "후보 오류: E_POLICY, E_AUTHORITY, E_CONSENT, E_REVISION"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "기존 평가기 오류: E_TYPE, E_FIELDS, E_DUPLICATE_ID, E_TITLE, E_VERSION, E_REPLAY_CONFLICT, E_STALE_SNAPSHOT, E_CONSENT, E_AUTHORITY, E_RATIFICATION"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b14",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "차용 제거와 적용 범위"
-    }
-   ]
-  },
-  {
-   "id": "archify.b15",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
-    }
-   ]
-  },
-  {
-   "id": "archify.b16",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b17",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D10-right-state-and-mandate(TOOL/tools/mechanisms/original-trpg/right-state-and-mandate.mjs, TOOL/tools/mechanisms/original-trpg/right-state-and-mandate.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
-    }
-   ]
-  }
- ]
 }

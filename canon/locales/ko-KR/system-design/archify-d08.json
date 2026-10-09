@@ -1,289 +1,2875 @@
 {
- "schemaVersion": 1,
- "locale": "ko-KR",
- "status": "accepted",
- "source": {
-  "path": "system-design/Archify-D08.md",
-  "lineStart": 1,
-  "lineEnd": 80,
-  "sha256": "901155ababd671e79115789c2968acf9dc7e42d047ba82b8e0f16681ea82f423"
- },
- "document": {
-  "id": "doc.Archify-D08",
-  "blockIds": [
-   "archify.b1",
-   "archify.b2",
-   "archify.b3",
-   "archify.b4",
-   "archify.b5",
-   "archify.b6",
-   "archify.b7",
-   "archify.b8",
-   "archify.b9",
-   "archify.b10",
-   "archify.b11",
-   "archify.b12",
-   "archify.b13",
-   "archify.b14",
-   "archify.b15",
-   "archify.b16",
-   "archify.b17"
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Archify-D08.md",
+    "lineStart": 1,
+    "lineEnd": 80,
+    "sha256": "901155ababd671e79115789c2968acf9dc7e42d047ba82b8e0f16681ea82f423"
+  },
+  "document": {
+    "id": "doc.Archify-D08",
+    "blockIds": [
+      "archify.b1",
+      "archify.b2",
+      "archify.b3",
+      "archify.b4",
+      "archify.b5",
+      "archify.b6",
+      "archify.b7",
+      "archify.b8",
+      "archify.b9",
+      "archify.b10",
+      "archify.b11",
+      "archify.b12",
+      "archify.b13",
+      "archify.b14",
+      "archify.b15",
+      "archify.b16",
+      "archify.b17",
+      "archify.flow-detail.heading",
+      "archify.flow-detail.table",
+      "archify.detail.heading",
+      "archify.detail.table"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "archify.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D08 아치파이 — 가문·친족·혼인·양자 전체 논리"
+        }
+      ]
+    },
+    {
+      "id": "archify.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 페이지는 가문·친족·혼인·양자 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기계 입력과 검증 흐름"
+        }
+      ]
+    },
+    {
+      "id": "archify.b4",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "archify",
+      "text": "{\"domainId\":\"D08\",\"diagramId\":\"d08-flow\",\"moduleTitle\":\"D08 운용 흐름\"}"
+    },
+    {
+      "id": "archify.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소비자 계약(authority-no-roll): Registered forum plus individual required consents. Joint signer set exactly equals current owner set; persons not transferable property."
+        }
+      ]
+    },
+    {
+      "id": "archify.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 출력"
+        }
+      ]
+    },
+    {
+      "id": "archify.b7",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "forum-gate [owner-selected-symbolic-contract] mayAdjudicate = forumLaw.registered AND forumLaw.authorized; routeEligible = mayAdjudicate AND forumLaw.routePermitted\nmarriage-record-state [approved-record-shape] bothDirectConsents = consent[A] AND consent[B]; recordsPresent = bothDirectConsents OR ratificationRecordExists\nmarriage-formation [approved-bounded-state-transition] if forum unknown => undetermined-law; if explicit scenario unformed => unformed-explicit; if authorized forum adjudication returns formed => formed; otherwise records-present\nformed-marriage-claim-boundary [approved-Seoul-bounded] formation = formed AND cause = marriageFormation => newClaimCount = 0 AND territoryTransferCount = 0\neffect-lifecycle [approved-Seoul-bounded] for each effect independently: next = owningContract(effect, trigger, current); no bulk close\njoint-property-signature [owner-selected-symbolic-contract] contractEligible = exactSet(signers) = exactSet(currentOwners)\nadoption-record-state [owner-selected-symbolic-contract-with-held-procedure] participantConsents = adoptiveParentConsent AND adopteeConsent; if procedureRegistered != true => undetermined-procedure\nsynthetic-person-property-guard [approved-Seoul-bounded] syntheticPersonRecognized = true => transferableAsset = false\nseparate-cause-ledgers [approved-Seoul-bounded] marriageResult writes no affiliation, location, office, title or property field without a separately attributed owning-domain event\nD08-F1 [후보·승인 전] formation=registeredAuthorizedForumAdjudication(records); formedMarriage by itself => claimDelta=0,territoryDelta=0\nD08-F2 [후보·승인 전] jointContractEligible=exactSet(signers)==exactSet(currentOwners); adoption requires participant consents and registered procedure; recognized person is not transferable asset\n"
+    },
+    {
+      "id": "archify.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D08의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 필드와 보존 경계"
+        }
+      ]
+    },
+    {
+      "id": "archify.b10",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "actionId/resultId/personIdA/personIdB/familyId/forumLawId/assetId/effectId — nonempty stable identity string (identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "rulesVersion/snapshotVersion — nonempty string / nonnegative safe integer (revision)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "forumLaw.registered/forumLaw.authorized/forumLaw.routePermitted — boolean or null (predicate)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "consents — map personId -> true (attributed record)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "ratifications — array of attributed authority records (record identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "formation — no-record|records-present|formed|unformed-explicit|undetermined-law (symbolic state)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "effects — alliance/property/ratification/heir -> none|active|kept|ended|reratification-required|undetermined (per-effect state)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "jointPropertySignatures — unique current-owner IDs (attributed record)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "adoptionParticipants — named adoptive parent and adoptee (identity pair)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "procedureRegistered — boolean or null (predicate)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "alive/detained/officeEffective/syntheticPersonRecognized — boolean or null (predicate)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "claimIds/propertyIds/officeIds/locationId/affiliationId — stable IDs (identity)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 소유자는 D08 가문·친족·동의·성립 기록; D13 재산, D09 관할 기관, D18 판본, 유지 계약은 forum-gate·marriage-record-state·marriage-formation·formed-marriage-claim-boundary·effect-lifecycle·joint-property-signature·adoption-record-state·synthetic-person-property-guard·separate-cause-ledgers다. 상태 소유 경계는 participants,forum law version,individual consents,ratification,formation,adoption,independent effect refs,current owners/signers. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+        }
+      ]
+    },
+    {
+      "id": "archify.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오류·보류 코드"
+        }
+      ]
+    },
+    {
+      "id": "archify.b13",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "후보 오류: E_POLICY, E_CONSENT, E_AUTHORITY"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 평가기 오류: E_TYPE, E_DUPLICATE_ID, E_FORUM_AUTHORITY, E_FORUM_UNREGISTERED, E_ROUTE_INELIGIBLE, E_CARDINALITY, E_ATTRIBUTION, E_MISSING_CONSENT, E_EFFECT_WITHOUT_FORMATION, E_OWNER_SIGNATURES"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 제거와 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "archify.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+        }
+      ]
+    },
+    {
+      "id": "archify.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D08-forum-family-adjudication(TOOL/tools/mechanisms/original-trpg/forum-family-adjudication.mjs, TOOL/tools/mechanisms/original-trpg/forum-family-adjudication.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "흐름 노드별 처리와 원문 단계"
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.table",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "가족·재산 절차 요청 — action/result·참여자·관할·규칙·​개정·귀속 기록. (원문: d08.b9.orderedSteps[0])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "ID·판본·기록 유일성 — 형식·중복 귀속 기록·stale·변경 결과·다른 도메인 쓰기 거부. (원문: d08.b9.orderedSteps[0]; d08.b9.orderedSteps[1])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "독립 가족 작업 — 혼인·양자·공동재산·효과·인격 검사를 분리한다. (원문: d08.b9.orderedSteps[1]; d08.b9.orderedSteps[2]; d08.b9.orderedSteps[8]; d08.b9.orderedSteps[10])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "등록 관할·권한·경로 — 등록·권한·허용 경로를 정확 조회. 당사자 국적 fallback 없음. (원문: d08.b9.orderedSteps[2]; d08.b9.orderedSteps[3]; d08.b9.orderedSteps[9])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "관할 미결 기록 보존 — undetermined-law 또는 undetermined-procedure. formed/unformed·명분 0·영토 0을 추정하지 않는다. (원문: d08.b9.orderedSteps[2]; d08.b9.orderedSteps[10])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동의·인준 개별 기록 — 직접 당사자 동의와 인준은 별도 귀속. 한 기록이 다른 기록을 대신하지 않음. (원문: d08.b9.orderedSteps[3]; d08.b9.orderedSteps[4])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "귀속된 성립 판정 — 관할 formed/unformed 판정은 외부 귀속 입력. 기록만으로 성립하지 않는다. (원문: d08.b9.orderedSteps[4])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기록만·명시 미성립 — no-record/records-presen​t/unformed-explicit을 구분. 명시 미성립이면 종료할 혼인 효과 없음. (원문: d08.b9.orderedSteps[4]; d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "혼인 성립 — 유효 관할·필요한 직접 동의·귀속 formed 결과. (원문: d08.b9.orderedSteps[4]; d08.b9.orderedSteps[5])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "혼인 원인 명분·영토 0 — formed AND cause=marriageFormation일​ 때 새 명분·영토 이전 각 0. 기존 권리·자녀 상속·별도 명분은 유지. (원문: d08.b9.orderedSteps[5]; d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "사망·구금·직위 상실 — 성립한 혼인과 개별 effect의 소유 계약 입력. (원문: d08.b9.orderedSteps[6])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동맹·재산·인준·후계 분리 — 각 effect의 소유 계약을 별도 평가. 하나 미결이라고 나머지 전체 종료하지 않는다. (원문: d08.b9.orderedSteps[6]; d08.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "독립 효과 결과 보존 — 각각 kept/ended/reratificatio​n-required/undetermined.​ 살아 있는 직위 상실은 해당 서명·지휘·운영만 정지. (원문: d08.b9.orderedSteps[6]; d08.b9.orderedSteps[7]; d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직위 상실 권한 제한 — 혼인 해소·후계 임명·재산 이전·권한 흡수 없음. (원문: d08.b9.orderedSteps[7])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 소유자·서명 집합 — unique currentOwners와 signers가 exactSet으로 같아야 한다. (원문: d08.b9.orderedSteps[8])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "D13 계약 자격만 — 전원 서명은 eligibility 영수증이지 명의 이전 아님. 지분·잔여·채권 우선순위 미결. (원문: d08.b9.orderedSteps[8]; d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "양부모·양자 직접 동의 — 서로 다른 영구 ID,당사자 직접 동의. 외부 동의 귀속·동일 ID 오류 거부. (원문: d08.b9.orderedSteps[9])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "승인 등록 양자 절차 — 동의만으로 불충분. 관할 procedure와 귀속 최종 판정 필요. (원문: d08.b9.orderedSteps[9])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동의 보존·절차 미결 — 절차 없으면 undetermined-procedure,기​록은 유지. (원문: d08.b9.orderedSteps[9])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "양자 귀속 결과 — 등록 절차가 주는 formed/unformed/기록 상태만 보존. 생년·친족 점수·후계 순서 창작 없음. (원문: d08.b9.orderedSteps[9]; d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "합성 인격 인정 검사 — 인격 인정된 합성 인물은 양도 자산이 아니다. unknown이면 재산 여부 미결. (원문: d08.b9.orderedSteps[10])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "인격자 재산 양도 거부 — E_PERSON_NOT_PROPERTY. 가족 어느 분기에서도 인격자를 재산으로 넘기지 않는다. (원문: d08.b9.orderedSteps[10])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "자산 절차 후보 — 인격 guard 통과만으로 명의 이전이 아니라 D13 소유 계약 후보. (원문: d08.b9.orderedSteps[10];​ d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "형식·권한·귀속·서명 오류 — 판본·ID·중복·잘못된 귀속·명시 불가 관할·누락 동의·서명 불일치·cross-domain write 거부. (원문: d08.b9.orderedSteps[1]; d08.b9.orderedSteps[2]; d08.b9.orderedSteps[4]; d08.b9.orderedSteps[8]; d08.b9.orderedSteps[9])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "귀속 기록·개정 단회 반영 — 승인된 D08 기록·효과 포인터만 원자 기록. 소속·위치·직위·명의·재산은 별도 소유 사건 없으면 불변. (원문: d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "취소·호환 복원 — 미반영 심사와 기존 역사 기록을 분리한다. (원문: d08.b9.orderedSteps[11])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 동의·상태·이력 유지 — 취소는 미반영 심사만. 기록 철회는 별도 규칙. load는 ID·효과·결과·판본을 정확 복원. (원문: d08.b9.orderedSteps[11])"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 항목별 원문과 적용 구분"
+        }
+      ]
+    },
+    {
+      "id": "archify.detail.table",
+      "kind": "table",
+      "header": [
+        "적용 구분",
+        "원문 위치",
+        "계약 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "역사 참조",
+          "d08.b9.schemaVersion",
+          "1"
+        ],
+        [
+          "역사 참조",
+          "d08.b9.domainId",
+          "\"D08\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.mechanismId",
+          "\"seoul.d08.bounded-contr​act\""
+        ],
+        [
+          "운용",
+          "d08.b9.status",
+          "\"bounded-contract-with-p​roposal-held\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersion",
+          "\"2026-10-08.d08-closure.​1\""
+        ],
+        [
+          "운용",
+          "d08.b9.rulesVersionLinka​ge.sourceRulesVersion",
+          "\"2026-10-08.d08-closure.​1\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.contractSHA256",
+          "\"e33824a9bcad7ec9334242c​85e340e53eb2b7b2cb1882d7​10fd702faee2bf5eb\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
+          "\"doc.Save-and-Determinis​m\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[0].path",
+          "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[0].sha256",
+          "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
+          "\"doc.Singleplayer-Design​-SP-1-0-0\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[1].path",
+          "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[1].sha256",
+          "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
+          "\"doc.Rules-FactionsWarfa​re\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[2].path",
+          "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
+        ],
+        [
+          "역사 참조",
+          "d08.b9.rulesVersionLinka​ge.canonRules[2].sha256",
+          "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
+        ],
+        [
+          "운용",
+          "d08.b9.rulesVersionLinka​ge.compatibility",
+          "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d08.b9.dataOwner",
+          "\"D08 가문·친족·동의·성립 기록; D13 재산, D09 관할 기관, D18 판본\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].field",
+          "\"actionId/resultId/perso​nIdA/personIdB/familyId/​forumLawId/assetId/effec​tId\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].type",
+          "\"nonempty stable identity string\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].owner",
+          "\"D08 ledger; asset title remains D13\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].null",
+          "\"reject when required by operation\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[0].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].field",
+          "\"rulesVersion/snapshotVe​rsion\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].type",
+          "\"nonempty string / nonnegative safe integer\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].unit",
+          "\"revision\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].owner",
+          "\"D18 save/version authority\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].null",
+          "\"reject\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[1].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].field",
+          "\"forumLaw.registered/for​umLaw.authorized/forumLa​w.routePermitted\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].type",
+          "\"boolean or null\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].unit",
+          "\"predicate\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].owner",
+          "\"country institution record\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].null",
+          "\"unresolved, never false\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[2].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].field",
+          "\"consents\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].type",
+          "\"map personId -> true\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].unit",
+          "\"attributed record\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].owner",
+          "\"named participant\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].null",
+          "\"missing record, not refusal\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[3].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].field",
+          "\"ratifications\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].type",
+          "\"array of attributed authority records\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].unit",
+          "\"record identity\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].owner",
+          "\"forum-law authority\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].null",
+          "\"missing record, not automatic rejection\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[4].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].field",
+          "\"formation\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].type",
+          "\"no-record&#124;records-​present&#124;formed&#124​;unformed-explicit&#124;​undetermined-law\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].unit",
+          "\"symbolic state\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].owner",
+          "\"D08 adjudication under forum law\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].null",
+          "\"reject state representation\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[5].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].field",
+          "\"effects\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].type",
+          "\"alliance/property/ratif​ication/heir -> none&#124;active&#124;ke​pt&#124;ended&#124;rerat​ification-required&#124;​undetermined\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].unit",
+          "\"per-effect state\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].owner",
+          "\"owning cross-domain contract\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].null",
+          "\"unresolved, never bulk default\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[6].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].field",
+          "\"jointPropertySignatures​\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].type",
+          "\"unique current-owner IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].unit",
+          "\"attributed record\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].owner",
+          "\"D13 title owners\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].null",
+          "\"unresolved\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[7].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].field",
+          "\"adoptionParticipants\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].type",
+          "\"named adoptive parent and adoptee\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].unit",
+          "\"identity pair\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].owner",
+          "\"D08\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].null",
+          "\"reject operation\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[8].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].field",
+          "\"procedureRegistered\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].type",
+          "\"boolean or null\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].unit",
+          "\"predicate\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].owner",
+          "\"forum law\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].null",
+          "\"undetermined, not false\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].snapsho​t",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[9].commitP​oint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].field",
+          "\"alive/detained/officeEf​fective/syntheticPersonR​ecognized\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].type",
+          "\"boolean or null\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].unit",
+          "\"predicate\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].owner",
+          "\"D01/D09/D12 world state\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].null",
+          "\"unresolved where consumed\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].snapsh​ot",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[10].commit​Point",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].field",
+          "\"claimIds/propertyIds/of​ficeIds/locationId/affil​iationId\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].type",
+          "\"stable IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].unit",
+          "\"identity\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].owner",
+          "\"D10/D13/D09/D06/D09\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].null",
+          "\"unchanged unless owning event supplied\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].read",
+          "\"participant life and identity; forum registration and authority; consent and ratification records; marriage/adoption formation state; per-effect owning contracts; asset owner set; office state; applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].write",
+          "\"D08 consent/ratification/for​mation records; per-effect D08 pointers and outcomes; adoption record state; joint-property eligibility receipt; revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].snapsh​ot",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.fields[11].commit​Point",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[0]",
+          "\"participant life and identity\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[1]",
+          "\"forum registration and authority\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[2]",
+          "\"consent and ratification records\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[3]",
+          "\"marriage/adoption formation state\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[4]",
+          "\"per-effect owning contracts\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[5]",
+          "\"asset owner set\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[6]",
+          "\"office state\""
+        ],
+        [
+          "운용",
+          "d08.b9.readSet[7]",
+          "\"applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.writeSet[0]",
+          "\"D08 consent/ratification/for​mation records\""
+        ],
+        [
+          "운용",
+          "d08.b9.writeSet[1]",
+          "\"per-effect D08 pointers and outcomes\""
+        ],
+        [
+          "운용",
+          "d08.b9.writeSet[2]",
+          "\"adoption record state\""
+        ],
+        [
+          "운용",
+          "d08.b9.writeSet[3]",
+          "\"joint-property eligibility receipt\""
+        ],
+        [
+          "운용",
+          "d08.b9.writeSet[4]",
+          "\"revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.policy",
+          "\"exact before snapshot with stable identities, attributed records and symbolic states\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​0]",
+          "\"participant life and identity\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​1]",
+          "\"forum registration and authority\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​2]",
+          "\"consent and ratification records\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​3]",
+          "\"marriage/adoption formation state\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​4]",
+          "\"per-effect owning contracts\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​5]",
+          "\"asset owner set\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​6]",
+          "\"office state\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.readSet[​7]",
+          "\"applied result IDs\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.writeSet​[0]",
+          "\"D08 consent/ratification/for​mation records\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.writeSet​[1]",
+          "\"per-effect D08 pointers and outcomes\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.writeSet​[2]",
+          "\"adoption record state\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.writeSet​[3]",
+          "\"joint-property eligibility receipt\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.writeSet​[4]",
+          "\"revision and result ledger\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.conflict​",
+          "\"typed reject on stale revision, incompatible rules, changed duplicate result, duplicate attributed record or cross-domain write attempt\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.commitPo​int",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.snapshot.replay",
+          "\"same result with identical payload digest is idempotent; changed duplicate is E_EVENT_CONFLICT\""
+        ],
+        [
+          "운용",
+          "d08.b9.commitPoint",
+          "\"after all identity, forum, attribution and separation guards and expected after-state calculations\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[0]",
+          "\"Read stable action, result, participant, forum-law, rules-version and snapshot identities.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[1]",
+          "\"Reject malformed IDs, duplicate attributed records, stale snapshot, incompatible rules version or changed duplicate result before mutation.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[2]",
+          "\"Resolve the explicitly registered forum law. Unknown registration, authority or route permission yields unresolved; never select a party's country by fallback.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[3]",
+          "\"Record each direct participant consent and each ratification as separate attributed facts. A record never substitutes for another record.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[4]",
+          "\"For marriage, ask the registered forum adjudicator for an attributed formation result. Without it, preserve records and return undetermined-law or records-present as applicable.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[5]",
+          "\"If formation is confirmed, write zero new claims and zero territory transfers for marriage formation itself while preserving existing rights and other claim routes.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[6]",
+          "\"On death, detention or office loss, evaluate alliance, property, ratification and heir effects independently through their owning contracts. Unknown outcomes remain undetermined and no bulk close occurs.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[7]",
+          "\"On living office loss, stop only that office's signature, command and operation. Do not dissolve marriage, appoint an heir, transfer property or absorb authority.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[8]",
+          "\"For joint property, compare the exact signer set with the exact current-owner set; if equal, emit only a D13 contract-eligible receipt, not a title transfer.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[9]",
+          "\"For adoption, require named participant consents, then require an approved registered procedure. Without the procedure, preserve records and return undetermined-procedure.\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[10]",
+          "\"Reject any attempt to list a recognized synthetic person as transferable property.\""
+        ],
+        [
+          "운용",
+          "d08.b9.orderedSteps[11]",
+          "\"Commit one result, record and revision atomically. Failed or unresolved operations preserve the prior world state except for explicitly allowed record-only writes.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].i​d",
+          "\"forum-gate\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].e​xpression",
+          "\"mayAdjudicate = forumLaw.registered AND forumLaw.authorized; routeEligible = mayAdjudicate AND forumLaw.routePermitted\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].s​tatus",
+          "\"owner-selected-symbolic​-contract\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].a​uthority",
+          "\"GP-09 country-law-A plus marriage-consent-A/adopt​ion-consent-A\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[0].l​imits",
+          "\"Unknown predicate yields unresolved. The formula does not choose a country law or invent its eligibility contents.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].i​d",
+          "\"marriage-record-state\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].e​xpression",
+          "\"bothDirectConsents = consent[A] AND consent[B]; recordsPresent = bothDirectConsents OR ratificationRecordExists​\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].s​tatus",
+          "\"approved-record-shape\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].a​uthority",
+          "\"T68-MARRIAGE-EFFECTS and marriage-consent-A\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[1].l​imits",
+          "\"Records do not establish formation. Missing consent record is not coerced into refusal.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].i​d",
+          "\"marriage-formation\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].e​xpression",
+          "\"if forum unknown => undetermined-law; if explicit scenario unformed => unformed-explicit; if authorized forum adjudication returns formed => formed; otherwise records-present\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].s​tatus",
+          "\"approved-bounded-state-​transition\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].a​uthority",
+          "\"T68-MARRIAGE-EFFECTS and country-law-A\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[2].l​imits",
+          "\"The forum adjudication result must be an attributed external input. D08 supplies no eligibility threshold or probability.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].i​d",
+          "\"formed-marriage-claim-b​oundary\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].e​xpression",
+          "\"formation = formed AND cause = marriageFormation => newClaimCount = 0 AND territoryTransferCount = 0\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].s​tatus",
+          "\"approved-Seoul-bounded\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].a​uthority",
+          "\"T68-MARRIAGE-EFFECTS\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].r​ounding",
+          "\"exact integer zero for this cause only\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[3].l​imits",
+          "\"Does not erase pre-existing spouse claims, child inheritance or separately fabricated claims. Formation undetermined does not assert zero.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].i​d",
+          "\"effect-lifecycle\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].e​xpression",
+          "\"for each effect independently: next = owningContract(effect, trigger, current); no bulk close\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].s​tatus",
+          "\"approved-Seoul-bounded\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].a​uthority",
+          "\"T68-MARRIAGE-EFFECTS\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[4].l​imits",
+          "\"Owning-contract outcomes are attributed inputs. Missing outcome remains undetermined. Office loss alone never dissolves marriage.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].i​d",
+          "\"joint-property-signatur​e\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].e​xpression",
+          "\"contractEligible = exactSet(signers) = exactSet(currentOwners)\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].s​tatus",
+          "\"owner-selected-symbolic​-contract\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].a​uthority",
+          "\"joint-property-A\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[5].l​imits",
+          "\"Eligibility does not transfer title; D13 must commit the asset contract. Shares, residue and creditor priority remain held.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].i​d",
+          "\"adoption-record-state\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].e​xpression",
+          "\"participantConsents = adoptiveParentConsent AND adopteeConsent; if procedureRegistered != true => undetermined-procedure\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].s​tatus",
+          "\"owner-selected-symbolic​-contract-with-held-proc​edure\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].a​uthority",
+          "\"adoption-consent-A\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[6].l​imits",
+          "\"Participant consent is necessary under the selected direction but never sufficient without an approved forum procedure.\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].i​d",
+          "\"synthetic-person-proper​ty-guard\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].e​xpression",
+          "\"syntheticPersonRecogniz​ed = true => transferableAsset = false\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].s​tatus",
+          "\"approved-Seoul-bounded\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].a​uthority",
+          "\"singleplayer-one-body / sp1.b61\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[7].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].i​d",
+          "\"separate-cause-ledgers\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].e​xpression",
+          "\"marriageResult writes no affiliation, location, office, title or property field without a separately attributed owning-domain event\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].s​tatus",
+          "\"approved-Seoul-bounded\"​"
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].a​uthority",
+          "\"identity-version-permis​sion and succession-and-body-chan​ge\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].r​ounding",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].c​lamp",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.formulaSheet[8].r​ng",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.rng.streams",
+          "[]"
+        ],
+        [
+          "운용",
+          "d08.b9.rng.useInApproved​Formulas",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d08.b9.rng.statement",
+          "\"D08 approved closure is deterministic. Any future stochastic eligibility or social evaluation requires a new approved rule and purpose stream.\""
+        ],
+        [
+          "운용",
+          "d08.b9.time",
+          "\"사건과 귀속된 결과를 기준으로 처리한다. 실제 기간·기한·동시 사건 순서는 소유 도메인의 승인 기록을 요구하며 미정 값을 발급하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d08.b9.rounding",
+          "\"공식별 명시된 정확한 집합·정수·상태 연산을 따른다. 미정 수치 정책을 추가하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d08.b9.clamps",
+          "\"공식에 명시된 경계만 적용하고 미정 값을 임의로 클램프하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.cancel",
+          "\"uncommitted adjudication writes nothing; already attributed consent records remain historical facts unless a separate withdrawal rule exists\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.death",
+          "\"stop the deceased person's new actions; do not form marriage or bulk-close effects; run separate effect checks only for a formed marriage\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.detenti​on",
+          "\"does not itself decide formation or dissolve marriage; effect contracts decide separately\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.officeL​oss",
+          "\"stop only that office authority; marriage and personal life are not automatically ended\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.load",
+          "\"restore stable IDs, exact records, symbolic states, effect pointers, revisions and result IDs; incompatible data is explicit error\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.unforme​dExplicit",
+          "\"no marriage effects exist to end for that scenario\""
+        ],
+        [
+          "운용",
+          "d08.b9.lifecycle.unknown​Forum",
+          "\"preserve records and return undetermined-law; do not assert formed, unformed, no-effects, no-claim or territory\""
+        ],
+        [
+          "운용",
+          "d08.b9.failure",
+          "\"typed reject on stale revision, incompatible rules, changed duplicate result, duplicate attributed record or cross-domain write attempt\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].i​d",
+          "\"actual-forum-law\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].s​cope",
+          "\"Which registered country or institution law applies to each family action, its authority, conflicts and route eligibility.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].r​eason",
+          "\"country-law-A selects a forum operator but supplies no actual law record.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].e​ffect",
+          "\"Unknown forum returns undetermined-law or undetermined-procedure.\"​"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[0].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].i​d",
+          "\"marriage-eligibility\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].s​cope",
+          "\"Age gates, existing-marriage constraints, kin prohibitions, detention constraints, candidate ordering and any exception list.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].r​eason",
+          "\"No owner-approved substantive country law.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].e​ffect",
+          "\"Validator consumes only an externally attributed forum adjudication.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[1].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].i​d",
+          "\"consent-sufficiency\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].s​cope",
+          "\"Withdrawal, coercion, incapacity,代理/위임, guardian or institutional substitute rules.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].r​eason",
+          "\"Direct consent direction is selected, but sufficiency details are not.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].e​ffect",
+          "\"Missing consent record is not treated as refusal; no proxy path is invented.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[2].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].i​d",
+          "\"ratification-authority-​and-time\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].s​cope",
+          "\"Who ratifies, whether ratification is required, processing time, expiry and re-ratification timing.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].r​eason",
+          "\"D09 country procedures remain separate.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].e​ffect",
+          "\"Ratification is stored only as an attributed record; no duration or automatic authority.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[3].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].i​d",
+          "\"adoption-full-procedure​\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].s​cope",
+          "\"Age and eligibility, maximum adoptees, ordering, ratifier, required documents, duration, cancellation and final formation rule.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].r​eason",
+          "\"adoption-consent-A approves participant consent direction only.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].e​ffect",
+          "\"Consent without procedure yields undetermined-procedure.\"​"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[4].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].i​d",
+          "\"lineage-and-kinship-dis​tance\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].s​cope",
+          "\"Biological/adoptive lineage precedence, household membership, kinship distance and candidate effects.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].r​eason",
+          "\"No approved metric or hierarchy.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].e​ffect",
+          "\"No kin score or automatic eligibility is calculated.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[5].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].i​d",
+          "\"effect-contract-details​\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].s​cope",
+          "\"Alliance, property, ratification and heir keep/end/re-ratify rules for death, detention and office loss.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].r​eason",
+          "\"Only separate evaluation and no bulk close are approved.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].e​ffect",
+          "\"Each missing owning-domain result remains undetermined.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[6].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].i​d",
+          "\"joint-property-shares\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].s​cope",
+          "\"Shares, residue, creditor priority, collateral, competing dispositions and settlement ordering.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].r​eason",
+          "\"joint-property-A approves all-current-owner signatures per asset only.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].e​ffect",
+          "\"D08 emits contract eligibility and never transfers title.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[7].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].i​d",
+          "\"inheritance-candidate-a​nd-order\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].s​cope",
+          "\"Heir eligibility, order, representation, renunciation and disputed succession.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].r​eason",
+          "\"Owned by D12/D09 and not supplied by D08 closure.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].e​ffect",
+          "\"Marriage never selects an heir.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[8].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].i​d",
+          "\"organization-survival\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].s​cope",
+          "\"Whether a landless family or organization survives and its dissolution procedure.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].r​eason",
+          "\"T68-D16-ORGANIZATION-LI​FECYCLE remains cross-domain.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].e​ffect",
+          "\"Ruler or spouse death never deletes an institution by fallback.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].n​umericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[9].o​perative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​id",
+          "\"candidate-identity-payl​oads\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​status",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​scope",
+          "\"Unreviewed candidate identities, family memberships, marriages, adoptions and actual country assignments.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​reason",
+          "\"T68-PF-05 remains a proposal and world facts cannot be invented.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​effect",
+          "\"No actual person is enrolled by this closure.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​numericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[10].​operative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​id",
+          "\"information-disclosure-​ui\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​status",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​scope",
+          "\"Which consent, ratification, formation, effect and forum facts a protagonist may see.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​reason",
+          "\"World state and character knowledge are separate; D18 disclosure policy is incomplete.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​effect",
+          "\"Validator models world records only and claims no omniscient UI.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​numericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[11].​operative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​id",
+          "\"numeric-values-and-dura​tions\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​status",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​scope",
+          "\"All ages, counts, thresholds, costs, times, durations, relationship changes and probabilities.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​reason",
+          "\"No D08 numeric owner approval or GURPS-LIKE calculation exists.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​effect",
+          "\"No numeric gameplay coefficient appears in the approved formula sheet.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​numericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[12].​operative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​id",
+          "\"rng-protocol\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​status",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​scope",
+          "\"Any future stochastic family eligibility, fertility, social response or AI choice algorithm, seed and draw order.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​reason",
+          "\"Approved D08 closure is deterministic and no RNG use was selected.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​effect",
+          "\"No random stream is consumed.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​numericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[13].​operative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​id",
+          "\"external-game-values\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​status",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​scope",
+          "\"CK3 prestige/piety/fertility​ values and Norland relationship/gold/timer/​age values.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​reason",
+          "\"Comparison evidence is not Seoul authority and historical Norland thresholds conflict.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​effect",
+          "\"No foreign value is used by validator or cases.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​numericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[14].​operative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​id",
+          "\"canonical-and-runtime-a​doption\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​status",
+          "\"proposal-held\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​scope",
+          "\"Landing this evidence in canonical GDD, product runtime, saves, UI or services.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​reason",
+          "\"User limited this task to evidence directory and prohibited product/plan edits.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​effect",
+          "\"DoneClaim closes Task37 evidence only.\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​numericApproval",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​operative",
+          "false"
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.canon​icalDocument",
+          "\"등록된 범위 한정 작동 계약\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.still​Held[0]",
+          "\"실행 스키마 채택\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.still​Held[1]",
+          "\"제품 런타임\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.still​Held[2]",
+          "\"저장 구현\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.still​Held[3]",
+          "\"UI\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.still​Held[4]",
+          "\"서비스\""
+        ],
+        [
+          "미결",
+          "d08.b9.proposalHeld[15].​landingDisposition.sourc​eScope",
+          "\"원천 팩의 증거 전용 작업 제한을 보존한 기록이며 이 문서의 등록 미완료를 뜻하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d08.b9.scope.numericBala​nceReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d08.b9.scope.runtimeImpl​emented",
+          "false"
+        ],
+        [
+          "운용",
+          "d08.b9.scope.worldFactsI​ssued",
+          "false"
+        ],
+        [
+          "운용",
+          "d08.b9.scope.executionSc​hemaReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsApplied",
+          "[]"
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[0].row",
+          "\"D08\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[0].decisionId",
+          "\"T68-D07-EVALUATION-DECA​Y\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[0].reason",
+          "\"Decision-record row D08 is a D07 relation-evaluation subdecision; its domain and consequences do not touch D08 family formation or effect lifecycle.\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[1].row",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[1].decisionId",
+          "\"GP-07\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[1].reason",
+          "\"Title ratification authorship is owned by D10/D09 and does not choose a D08 marriage or adoption rule.\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[2].row",
+          "\"D21\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[2].decisionId",
+          "\"T68-PF-02\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.sealed​RowsReviewedButNotApplie​d[2].reason",
+          "\"Organization values do not define D08 eligibility, consent, formation or lineage.\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[0]",
+          "\"registered and authorized forum law handles a family action\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[1]",
+          "\"marriage consent is recorded directly by the parties when the forum law permits that route\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[2]",
+          "\"adoption requires valid consent from the named adoptive parent and adoptee, while the full procedure remains held\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[3]",
+          "\"joint property requires a separate signed contract from every current owner for each asset\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[4]",
+          "\"consent, ratification and effect attribution are separate ledger records and do not themselves form a marriage\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[5]",
+          "\"formed marriage alone creates neither a new claim nor territory\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[6]",
+          "\"alliance, property, ratification and heir effects are evaluated separately on death, detention or office loss\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[7]",
+          "\"body, office, title and property succession are separate events\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[8]",
+          "\"a recognized synthetic person is not transferable property\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[9]",
+          "\"affiliation, relationship, movement and office ratification require separate cause events\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.priorA​pprovedRules[10]",
+          "\"stable IDs, explicit revision conflicts and at-most-once result application\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.path",
+          "\"/Volumes/gameWorkspace/​worktrees/seoul-kenshi/s​eoul-domain-source-falsi​fication-20261004/.omo/e​vidence/mechanisms/owner​-family-selected-contrac​t-20261005/selected-cont​ract.json\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.verific​ationVerdict",
+          "\"confirmedFamilyEstateOw​nerSelectedContractOnly\"​"
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.selecti​onsUsed[0]",
+          "\"country-law-A\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.selecti​onsUsed[1]",
+          "\"marriage-consent-A\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.selecti​onsUsed[2]",
+          "\"adoption-consent-A\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.selecti​onsUsed[3]",
+          "\"joint-property-A\""
+        ],
+        [
+          "운용",
+          "d08.b11.authority.symbol​icFamilyContract.boundar​y",
+          "\"These selections approve symbolic operators only. Actual country laws, ages, eligibility, adoption procedure, shares, durations and coefficients remain proposals.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.authority.gurpsL​ikeBasis.classification",
+          "\"not-applicable-to-D08-c​alculation\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.authority.gurpsL​ikeBasis.anchors",
+          "[]"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.authority.gurpsL​ikeBasis.statement",
+          "\"D08 has no GURPS-LIKE numeric calculation. The public Lite basis is reviewed only to confirm no personal-roll or CP mechanic is imported into family formation.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.authority.gurpsL​ikeBasis.noGurps2004Clai​m",
+          "true"
+        ],
+        [
+          "운용",
+          "d08.b11.authority.noNewO​wnerDecisions",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.sourceComparison​s.ck3",
+          "\"Guarded prestige/piety/fertility​ expressions and betrothal writers are documentary comparison only. No cost, threshold, immediate execution or procedure is adopted.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.sourceComparison​s.norland",
+          "\"Documented relationship guards, migration/gold/relations​hip effects and historical timers are comparison only. Conflicting historical thresholds and native timing remain non-Seoul values.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].id",
+          "\"cross-state-records-unk​nown-forum\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].kind",
+          "\"normal-boundary\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.participants[0]",
+          "\"A\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.participants[1]",
+          "\"B\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.consents[0]",
+          "\"A\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.consents[1]",
+          "\"B\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.ratifications[0]​",
+          "\"R1\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.forum.registered​",
+          "null"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.forum.authorized​",
+          "null"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].input.forum.routePermi​tted",
+          "null"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].work",
+          "\"Two consent records plus one ratification record give three attributed records. Unknown forum prevents adjudication; no claim/territory conclusion is written.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].expected.recordCount",
+          "3"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].expected.formation",
+          "\"undetermined-law\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].expected.newClaimCount​",
+          "null"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].expected.territoryTran​sferCount",
+          "null"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[0​].valueStatus",
+          "\"illustrative identities; no balance values\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].id",
+          "\"formed-marriage-no-auto​matic-right\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].kind",
+          "\"normal\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].input.forum.registered​",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].input.forum.authorized​",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].input.forum.routePermi​tted",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].input.adjudication",
+          "\"formed\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].input.preexistingClaim​s[0]",
+          "\"C-old\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].work",
+          "\"Attributed forum result forms the marriage. Marriage formation writes zero new claims and zero territory transfers while retaining C-old.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].expected.formation",
+          "\"formed\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].expected.claims[0]",
+          "\"C-old\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].expected.newClaimCount​",
+          "0"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].expected.territoryTran​sferCount",
+          "0"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[1​].valueStatus",
+          "\"zero is a cause-specific approved invariant, not a balance coefficient\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].id",
+          "\"office-loss-effect-spli​t\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].kind",
+          "\"boundary\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.formation",
+          "\"formed\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.trigger",
+          "\"office-loss\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.officeEffective",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.effectOutcomes.a​lliance",
+          "\"kept\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.effectOutcomes.p​roperty",
+          "\"undetermined\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.effectOutcomes.r​atification",
+          "\"reratification-required​\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].input.effectOutcomes.h​eir",
+          "\"kept\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].work",
+          "\"Office authority stops. Four effect outcomes remain separate; unknown property does not erase the other outcomes or dissolve the marriage.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].expected.officeEffecti​ve",
+          "false"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].expected.marriageForma​tion",
+          "\"formed\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].expected.effects.allia​nce",
+          "\"kept\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].expected.effects.prope​rty",
+          "\"undetermined\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].expected.effects.ratif​ication",
+          "\"reratification-required​\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].expected.effects.heir",
+          "\"kept\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[2​].valueStatus",
+          "\"symbolic effect fixture\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].id",
+          "\"adoption-consent-withou​t-procedure\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].kind",
+          "\"failure-boundary\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].input.adoptiveParent",
+          "\"P\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].input.adoptee",
+          "\"C\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].input.consents[0]",
+          "\"P\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].input.consents[1]",
+          "\"C\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].input.procedureRegiste​red",
+          "false"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].work",
+          "\"Both named participant consents satisfy the selected consent direction, but no approved procedure exists; records remain and formation is undetermined.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].expected.recordCount",
+          "2"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].expected.adoption",
+          "\"undetermined-procedure\"​"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[3​].valueStatus",
+          "\"illustrative identities\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].id",
+          "\"synthetic-person-proper​ty-rejection\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].kind",
+          "\"failure\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].input.assetId",
+          "\"SYN-1\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].input.syntheticPersonR​ecognized",
+          "true"
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].work",
+          "\"Recognized personhood excludes the entity from transferable assets in every family branch.\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].expected.error",
+          "\"E_PERSON_NOT_PROPERTY\""
+        ],
+        [
+          "역사 참조",
+          "d08.b11.workedExamples[4​].valueStatus",
+          "\"predicate fixture\""
+        ]
+      ]
+    }
   ]
- },
- "blocks": [
-  {
-   "id": "archify.b1",
-   "kind": "heading",
-   "level": 1,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D08 아치파이 — 가문·친족·혼인·양자 전체 논리"
-    }
-   ]
-  },
-  {
-   "id": "archify.b2",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 페이지는 가문·친족·혼인·양자 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b3",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "기계 입력과 검증 흐름"
-    }
-   ]
-  },
-  {
-   "id": "archify.b4",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "archify",
-   "text": "{\"domainId\":\"D08\",\"diagramId\":\"d08-flow\",\"moduleTitle\":\"D08 운용 흐름\"}"
-  },
-  {
-   "id": "archify.b5",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "소비자 계약(authority-no-roll): Registered forum plus individual required consents. Joint signer set exactly equals current owner set; persons not transferable property."
-    }
-   ]
-  },
-  {
-   "id": "archify.b6",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "계산과 출력"
-    }
-   ]
-  },
-  {
-   "id": "archify.b7",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "text",
-   "text": "forum-gate [owner-selected-symbolic-contract] mayAdjudicate = forumLaw.registered AND forumLaw.authorized; routeEligible = mayAdjudicate AND forumLaw.routePermitted\nmarriage-record-state [approved-record-shape] bothDirectConsents = consent[A] AND consent[B]; recordsPresent = bothDirectConsents OR ratificationRecordExists\nmarriage-formation [approved-bounded-state-transition] if forum unknown => undetermined-law; if explicit scenario unformed => unformed-explicit; if authorized forum adjudication returns formed => formed; otherwise records-present\nformed-marriage-claim-boundary [approved-Seoul-bounded] formation = formed AND cause = marriageFormation => newClaimCount = 0 AND territoryTransferCount = 0\neffect-lifecycle [approved-Seoul-bounded] for each effect independently: next = owningContract(effect, trigger, current); no bulk close\njoint-property-signature [owner-selected-symbolic-contract] contractEligible = exactSet(signers) = exactSet(currentOwners)\nadoption-record-state [owner-selected-symbolic-contract-with-held-procedure] participantConsents = adoptiveParentConsent AND adopteeConsent; if procedureRegistered != true => undetermined-procedure\nsynthetic-person-property-guard [approved-Seoul-bounded] syntheticPersonRecognized = true => transferableAsset = false\nseparate-cause-ledgers [approved-Seoul-bounded] marriageResult writes no affiliation, location, office, title or property field without a separately attributed owning-domain event\nD08-F1 [후보·승인 전] formation=registeredAuthorizedForumAdjudication(records); formedMarriage by itself => claimDelta=0,territoryDelta=0\nD08-F2 [후보·승인 전] jointContractEligible=exactSet(signers)==exactSet(currentOwners); adoption requires participant consents and registered procedure; recognized person is not transferable asset\n"
-  },
-  {
-   "id": "archify.b8",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D08의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b9",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "상태 필드와 보존 경계"
-    }
-   ]
-  },
-  {
-   "id": "archify.b10",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "actionId/resultId/personIdA/personIdB/familyId/forumLawId/assetId/effectId — nonempty stable identity string (identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "rulesVersion/snapshotVersion — nonempty string / nonnegative safe integer (revision)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "forumLaw.registered/forumLaw.authorized/forumLaw.routePermitted — boolean or null (predicate)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "consents — map personId -> true (attributed record)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "ratifications — array of attributed authority records (record identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "formation — no-record|records-present|formed|unformed-explicit|undetermined-law (symbolic state)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "effects — alliance/property/ratification/heir -> none|active|kept|ended|reratification-required|undetermined (per-effect state)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "jointPropertySignatures — unique current-owner IDs (attributed record)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "adoptionParticipants — named adoptive parent and adoptee (identity pair)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "procedureRegistered — boolean or null (predicate)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "alive/detained/officeEffective/syntheticPersonRecognized — boolean or null (predicate)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "claimIds/propertyIds/officeIds/locationId/affiliationId — stable IDs (identity)"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b11",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "자료 소유자는 D08 가문·친족·동의·성립 기록; D13 재산, D09 관할 기관, D18 판본, 유지 계약은 forum-gate·marriage-record-state·marriage-formation·formed-marriage-claim-boundary·effect-lifecycle·joint-property-signature·adoption-record-state·synthetic-person-property-guard·separate-cause-ledgers다. 상태 소유 경계는 participants,forum law version,individual consents,ratification,formation,adoption,independent effect refs,current owners/signers. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
-    }
-   ]
-  },
-  {
-   "id": "archify.b12",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "오류·보류 코드"
-    }
-   ]
-  },
-  {
-   "id": "archify.b13",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "후보 오류: E_POLICY, E_CONSENT, E_AUTHORITY"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "기존 평가기 오류: E_TYPE, E_DUPLICATE_ID, E_FORUM_AUTHORITY, E_FORUM_UNREGISTERED, E_ROUTE_INELIGIBLE, E_CARDINALITY, E_ATTRIBUTION, E_MISSING_CONSENT, E_EFFECT_WITHOUT_FORMATION, E_OWNER_SIGNATURES"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b14",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "차용 제거와 적용 범위"
-    }
-   ]
-  },
-  {
-   "id": "archify.b15",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
-    }
-   ]
-  },
-  {
-   "id": "archify.b16",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b17",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D08-forum-family-adjudication(TOOL/tools/mechanisms/original-trpg/forum-family-adjudication.mjs, TOOL/tools/mechanisms/original-trpg/forum-family-adjudication.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
-    }
-   ]
-  }
- ]
 }

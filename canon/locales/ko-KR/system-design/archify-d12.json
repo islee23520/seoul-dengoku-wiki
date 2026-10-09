@@ -1,277 +1,4159 @@
 {
- "schemaVersion": 1,
- "locale": "ko-KR",
- "status": "accepted",
- "source": {
-  "path": "system-design/Archify-D12.md",
-  "lineStart": 1,
-  "lineEnd": 73,
-  "sha256": "a8740d2db0e11a77f9bf195d161027fc28abed9c3fbab39ca594a3fab76157cd"
- },
- "document": {
-  "id": "doc.Archify-D12",
-  "blockIds": [
-   "archify.b1",
-   "archify.b2",
-   "archify.b3",
-   "archify.b4",
-   "archify.b5",
-   "archify.b6",
-   "archify.b7",
-   "archify.b8",
-   "archify.b9",
-   "archify.b10",
-   "archify.b11",
-   "archify.b12",
-   "archify.b13",
-   "archify.b14",
-   "archify.b15",
-   "archify.b16",
-   "archify.b17"
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "system-design/Archify-D12.md",
+    "lineStart": 1,
+    "lineEnd": 73,
+    "sha256": "a8740d2db0e11a77f9bf195d161027fc28abed9c3fbab39ca594a3fab76157cd"
+  },
+  "document": {
+    "id": "doc.Archify-D12",
+    "blockIds": [
+      "archify.b1",
+      "archify.b2",
+      "archify.b3",
+      "archify.b4",
+      "archify.b5",
+      "archify.b6",
+      "archify.b7",
+      "archify.b8",
+      "archify.b9",
+      "archify.b10",
+      "archify.b11",
+      "archify.b12",
+      "archify.b13",
+      "archify.b14",
+      "archify.b15",
+      "archify.b16",
+      "archify.b17",
+      "archify.flow-detail.heading",
+      "archify.flow-detail.table",
+      "archify.detail.heading",
+      "archify.detail.table"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "archify.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D12 아치파이 — 후계·사망·본체 전환 전체 논리"
+        }
+      ]
+    },
+    {
+      "id": "archify.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 페이지는 후계·사망·본체 전환 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b3",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기계 입력과 검증 흐름"
+        }
+      ]
+    },
+    {
+      "id": "archify.b4",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "archify",
+      "text": "{\"domainId\":\"D12\",\"diagramId\":\"d12-flow\",\"moduleTitle\":\"D12 운용 흐름\"}"
+    },
+    {
+      "id": "archify.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소비자 계약(conservation-and-lifecycle-no-roll): At most one controlled body; quantity/consumed/progress conserved. Death trigger comes from D02 fact, not margin. Detention/release do not auto-switch control or copy predecessor abilities."
+        }
+      ]
+    },
+    {
+      "id": "archify.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계산과 출력"
+        }
+      ]
+    },
+    {
+      "id": "archify.b7",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "controlCount [] body=null ? 0 : 1\nassetConservation [] sum(quantity before) = sum(quantity after)\npendingResource [] spent_after=spent_before; progress_after=progress_before\nrevision [] accepted new event: v_after=v_before+1; duplicate/reject: v_after=v_before\nD12-F1 [후보·승인 전] controlCount=(body==null?0:1); sum(assetQuantityBefore)=sum(assetQuantityAfter); consumedAfter=consumedBefore; progressAfter=progressBefore\nD12-F2 [후보·승인 전] new accepted event revision+1; exact replay/reject unchanged; office/title/property succession independently resolved\n"
+    },
+    {
+      "id": "archify.b8",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b9",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태 필드와 보존 경계"
+        }
+      ]
+    },
+    {
+      "id": "archify.b10",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "version — safe nonnegative integer (ledger revision)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "body — person ID | null (one controlled person)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "people — Person[] (permanent identity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "designation — eligible registered person ID | null (person ID)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "order — registered eligible person ID[] | null (institutional ordered candidates)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "offices — Office[] (office ID/holder/institution)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "assets — Asset[] (asset ID/exact integer quantity)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "commands — Command[] (command ID)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "wars — War[] (war ID)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "history — event ID -> payload/receipt (event identity)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 소유자는 D12 event/control ledger, 유지 계약은 controlCount·assetConservation·pendingResource·revision다. 상태 소유 경계는 controlled body 0..1,confirmed D02 death/detention,designation/registered order,office/right/estate awards,commands and consumed progress. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+        }
+      ]
+    },
+    {
+      "id": "archify.b12",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "오류·보류 코드"
+        }
+      ]
+    },
+    {
+      "id": "archify.b13",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "후보 오류: E_POLICY, E_CONSERVATION, E_EXTERNAL_ORDER"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 평가기 오류: E_TYPE, E_ID, E_VERSION, E_EVENT_COLLISION, E_FACT, E_AUTHORITY, E_CONSERVATION, E_SCHEMA"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "차용 제거와 적용 범위"
+        }
+      ]
+    },
+    {
+      "id": "archify.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
+        }
+      ]
+    },
+    {
+      "id": "archify.b16",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
+        }
+      ]
+    },
+    {
+      "id": "archify.b17",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D12-independent-succession-settlement(TOOL/tools/mechanisms/original-trpg/independent-succession-settlement.mjs, TOOL/tools/mechanisms/original-trpg/independent-succession-settlement.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "흐름 노드별 처리와 원문 단계"
+        }
+      ]
+    },
+    {
+      "id": "archify.flow-detail.table",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "확인된 사실 집합 — [사망·구금과 본체 선택] 사망 또는 영구 구금은 확인된 사실 입력이다. 같은 경계 사망 ID 집합 전체를 먼저 읽고 입력 배열 순서로 생존을 판단하지 않는다. (원문: d12.b9.orderedSteps[3])"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "적격 지정자 우선 — [사망·구금과 본체 선택] 현재 조작 인물이 영향을 받았으면 같은 경계 사망자를 제외한 적격 생존 지정자를 먼저 사용한다. (원문: d12.b11.mechanisms[0].al​gorithm)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "등록 순서 확인 — [사망·구금과 본체 선택] 적격 지정자가 없을 때 등록된 제도 순서의 첫 적격 생존자를 읽는다. 맏이 우선 같은 새 규칙을 만들지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미확인 순서 보류 — [사망·구금과 본체 선택] 순서 null은 미확인이다. 본체 선택을 보류하며 새로운 후계자를 만들지 않는다. (원문: d12.b9.fields[4].null)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "후계 경로 종료 — [사망·구금과 본체 선택] 등록 순서가 알려졌고 적격 생존자가 없으면 조작 경로를 종료한다. 조작권 수는 body=null이면 0, 아니면 1이다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실제 위치로 시점 전환 — [사망·구금과 본체 선택] 선택한 사람의 실제 위치로 시점을 옮긴다. 선대 권리·숙련·신뢰·지식·미수락 명령은 복사하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "구금 해제만 — [석방·명시 복귀] 석방은 detained만 해제하고 현재 조작권을 바꾸지 않는다. (원문: d12.b9.lifecycle.release​)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 본체 요청 — [석방·명시 복귀] 현재 조작 인물이 요청해야 한다. 원래 인물의 동일 ID·생존·석방·적법 상태·실제 위치를 확인한다. (원문: d12.b11.mechanisms[1].al​gorithm)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "적법 사실 미확인 — [석방·명시 복귀] 필요한 적법 사실이 없으면 복귀만 보류한다. false는 거부이며 동일하지 않다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "단일 포인터 전환 — [석방·명시 복귀] 조건 충족 시 조작 포인터 하나만 원래 인물로 바꾼다. 두 본체나 순간이동을 만들지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "직위 공석·인준 — [직위·유산·약속 독립 정산] 사망자의 직위만 비운다. 후보 지명만으로 채우지 않고 국가별 적격·인준된 결과만 적용한다. 기관과 금고는 유지한다. (원문: d12.b11.mechanisms[2].al​gorithm)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "개별 전체 자산 배정 — [직위·유산·약속 독립 정산] 사망은 유산 검토를 열지만 구금은 열지 않는다. 승인된 전체 자산 명의만 바꾸고 담보·예약·보관·위치·경로는 유지한다. (원문: d12.b11.mechanisms[3].al​gorithm)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "미완 명령 재검사 — [직위·유산·약속 독립 정산] 사망 영향 명령과 개인·직위 약속을 항목별 재검사한다. 소비량·진척은 그대로이며 일괄 취소나 전쟁 종료를 추론하지 않는다. (원문: d12.b11.mechanisms[4].al​gorithm)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "수혜자 적격 후보 — [직위·유산·약속 독립 정산] 사유·법적 대상·수혜자 적격·지원·동의를 먼저 확인한 수혜자는 승리권 후보일 뿐이다. 공격자로 바꾸거나 종료 결과를 선택하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "정확 입력·단위 — 필수 키·타입·영구 ID·단위를 검증한다. 미확인 입력과 잘못된 형식을 구분한다. (원문: d12.b9.fields[0].name; d12.b9.fields[0].type; d12.b9.fields[0].unit; d12.b9.fields[0].read; d12.b9.fields[0].write; d12.b9.fields[0].owner; d12.b9.fields[0].snapsho​t; d12.b9.fields[0].commitP​oint; d12.b9.fields[1].name; d12.b9.fields[1].type; d12.b9.fields[1].unit; d12.b9.fields[1].read; d12.b9.fields[1].write; d12.b9.fields[1].null; d12.b9.fields[1].owner; d12.b9.fields[1].snapsho​t; d12.b9.fields[1].commitP​oint; d12.b9.fields[2].name; d12.b9.fields[2].type; d12.b9.fields[2].unit; d12.b9.fields[2].read; d12.b9.fields[2].write; d12.b9.fields[2].foreign​Owner; d12.b9.fields[2].owner; d12.b9.fields[2].snapsho​t; d12.b9.fields[2].commitP​oint; d12.b9.fields[3].name; d12.b9.fields[3].type; d12.b9.fields[3].unit; d12.b9.fields[3].read; d12.b9.fields[3].write; d12.b9.fields[3].owner; d12.b9.fields[3].snapsho​t; d12.b9.fields[3].commitP​oint; d12.b9.fields[4].name; d12.b9.fields[4].type; d12.b9.fields[4].unit; d12.b9.fields[4].read; d12.b9.fields[4].write; d12.b9.fields[4].owner; d12.b9.fields[4].snapsho​t; d12.b9.fields[4].commitP​oint; d12.b9.fields[5].name; d12.b9.fields[5].type; d12.b9.fields[5].unit; d12.b9.fields[5].read; d12.b9.fields[5].write; d12.b9.fields[5].foreign​Owner; d12.b9.fields[5].owner; d12.b9.fields[5].snapsho​t; d12.b9.fields[5].commitP​oint; d12.b9.fields[6].name; d12.b9.fields[6].type; d12.b9.fields[6].unit; d12.b9.fields[6].read; d12.b9.fields[6].write; d12.b9.fields[6].foreign​Owner; d12.b9.fields[6].owner; d12.b9.fields[6].snapsho​t; d12.b9.fields[6].commitP​oint; d12.b9.fields[7].name; d12.b9.fields[7].type; d12.b9.fields[7].unit; d12.b9.fields[7].read; d12.b9.fields[7].write; d12.b9.fields[7].foreign​Owner; d12.b9.fields[7].owner; d12.b9.fields[7].snapsho​t; d12.b9.fields[7].commitP​oint; d12.b9.fields[8].name; d12.b9.fields[8].type; d12.b9.fields[8].unit; d12.b9.fields[8].read; d12.b9.fields[8].write; d12.b9.fields[8].foreign​Owner; d12.b9.fields[8].owner; d12.b9.fields[8].snapsho​t; d12.b9.fields[8].commitP​oint; d12.b9.fields[9].name; d12.b9.fields[9].type; d12.b9.fields[9].unit; d12.b9.fields[9].read; d12.b9.fields[9].write; d12.b9.fields[9].owner; d12.b9.fields[9].snapsho​t; d12.b9.fields[9].commitP​oint)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "동일 사건 내용 비교 — 일반 변환 어댑터에서 이미 수락한 동일 신원·payload는 재생한다. 바뀐 내용은 거부하고 새 사건은 현재 판본을 확인한다. 원본 평가기의 중복 거부와 동일한 것으로 간주하지 않는다. (원문: d12.b9.rulesVersion; d12.b9.snapshot; d12.b9.lifecycle.failure​; d12.b9.failure)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "현재 판본·행위 선택 — 정확한 현재 개정·규칙을 확인한 뒤 요청된 독립 행위로 분기한다. 다른 논리 단위의 선후관계를 만들지 않는다. (원문: d12.b9.schemaVersion; d12.b9.domainId; d12.b9.mechanismId; d12.b9.status; d12.b9.dataOwner; d12.b9.readSet[0]; d12.b9.readSet[1]; d12.b9.readSet[2]; d12.b9.readSet[3]; d12.b9.readSet[4]; d12.b9.readSet[5]; d12.b9.readSet[6]; d12.b9.readSet[7]; d12.b9.readSet[8]; d12.b9.readSet[9]; d12.b9.orderedSteps[0]; d12.b9.orderedSteps[1]; d12.b9.orderedSteps[2]; d12.b9.orderedSteps[4]; d12.b9.orderedSteps[5]; d12.b9.orderedSteps[6]; d12.b9.orderedSteps[7]; d12.b9.orderedSteps[8]; d12.b9.orderedSteps[9]; d12.b9.orderedSteps[10];​ d12.b9.orderedSteps[11];​ d12.b9.formulaSheet[0].e​xpression; d12.b9.formulaSheet[0].u​nit; d12.b9.formulaSheet[0].r​ounding; d12.b9.formulaSheet[0].c​lamp; d12.b9.formulaSheet[0].r​ng; d12.b9.formulaSheet[1].e​xpression; d12.b9.formulaSheet[1].u​nit; d12.b9.formulaSheet[1].r​ounding; d12.b9.formulaSheet[1].c​lamp; d12.b9.formulaSheet[1].r​ng; d12.b9.formulaSheet[2].e​xpression; d12.b9.formulaSheet[2].u​nit; d12.b9.formulaSheet[2].r​ounding; d12.b9.formulaSheet[2].c​lamp; d12.b9.formulaSheet[2].r​ng; d12.b9.formulaSheet[3].e​xpression; d12.b9.formulaSheet[3].u​nit; d12.b9.formulaSheet[3].r​ounding; d12.b9.formulaSheet[3].c​lamp; d12.b9.formulaSheet[3].r​ng; d12.b9.rng; d12.b9.time; d12.b9.rounding; d12.b9.clamps; d12.b9.lifecycle.cancel;​ d12.b9.lifecycle.death; d12.b9.lifecycle.detenti​on; d12.b9.lifecycle.return;​ d12.b9.lifecycle.load; d12.b9.scope.numericBala​nceReady; d12.b9.scope.runtimeImpl​emented; d12.b9.scope.worldFactsI​ssued; d12.b9.scope.executionSc​hemaReady; d12.b11.authority.canoni​calAnchors[0]; d12.b11.authority.canoni​calAnchors[1]; d12.b11.authority.canoni​calAnchors[2]; d12.b11.authority.canoni​calAnchors[3]; d12.b11.authority.canoni​calAnchors[4]; d12.b11.authority.canoni​calAnchors[5]; d12.b11.authority.canoni​calAnchors[6]; d12.b11.authority.canoni​calAnchors[7]; d12.b11.authority.canoni​calAnchors[8]; d12.b11.authority.canoni​calAnchors[9]; d12.b11.authority.sealed​Selections[0].row; d12.b11.authority.sealed​Selections[0].decisionId​; d12.b11.authority.sealed​Selections[0].chosenOpti​on; d12.b11.authority.sealed​Selections[0].applicatio​n; d12.b11.authority.sealed​Selections[1].row; d12.b11.authority.sealed​Selections[1].decisionId​; d12.b11.authority.sealed​Selections[1].chosenOpti​on; d12.b11.authority.sealed​Selections[1].applicatio​n; d12.b11.authority.sealed​Selections[2].row; d12.b11.authority.sealed​Selections[2].decisionId​; d12.b11.authority.sealed​Selections[2].chosenOpti​on; d12.b11.authority.sealed​Selections[2].applicatio​n; d12.b11.authority.sealed​Selections[3].row; d12.b11.authority.sealed​Selections[3].decisionId​; d12.b11.authority.sealed​Selections[3].chosenOpti​on; d12.b11.authority.sealed​Selections[3].applicatio​n; d12.b11.authority.sealed​Selections[4].row; d12.b11.authority.sealed​Selections[4].decisionId​; d12.b11.authority.sealed​Selections[4].chosenOpti​on; d12.b11.authority.sealed​Selections[4].applicatio​n; d12.b11.authority.sealed​Selections[5].row; d12.b11.authority.sealed​Selections[5].decisionId​; d12.b11.authority.sealed​Selections[5].chosenOpti​on; d12.b11.authority.sealed​Selections[5].applicatio​n; d12.b11.authority.sealed​Selections[5].execution;​ d12.b11.authority.sealed​Selections[6].row; d12.b11.authority.sealed​Selections[6].decisionId​; d12.b11.authority.sealed​Selections[6].chosenOpti​on; d12.b11.authority.sealed​Selections[6].applicatio​n; d12.b11.authority.sealed​Selections[6].execution;​ d12.b11.authority.sealed​Selections[7].row; d12.b11.authority.sealed​Selections[7].decisionId​; d12.b11.authority.sealed​Selections[7].chosenOpti​on; d12.b11.authority.sealed​Selections[7].applicatio​n; d12.b11.authority.sealed​Selections[7].execution;​ d12.b11.authority.sealed​Selections[8].row; d12.b11.authority.sealed​Selections[8].decisionId​; d12.b11.authority.sealed​Selections[8].chosenOpti​on; d12.b11.authority.sealed​Selections[8].applicatio​n; d12.b11.authority.sealed​Selections[8].execution;​ d12.b11.authority.sealed​Selections[9].row; d12.b11.authority.sealed​Selections[9].decisionId​; d12.b11.authority.sealed​Selections[9].chosenOpti​on; d12.b11.authority.sealed​Selections[9].applicatio​n; d12.b11.authority.sealed​Selections[9].execution;​ d12.b11.authority.select​ionRule; d12.b11.authority.resear​chLimit; d12.b11.authority.gurpsL​ike.basis; d12.b11.authority.gurpsL​ike.workedChecks; d12.b11.authority.gurpsL​ike.relabel; d12.b11.authority.gurpsL​ike.D12NumericApplicabil​ity; d12.b11.authority.gurpsL​ike.reason; d12.b11.decisionDisposit​ion[0].row; d12.b11.decisionDisposit​ion[0].decisionId; d12.b11.decisionDisposit​ion[0].subdecisionKey; d12.b11.decisionDisposit​ion[0].chosenOption; d12.b11.decisionDisposit​ion[0].selectedLabel; d12.b11.decisionDisposit​ion[0].disposition; d12.b11.decisionDisposit​ion[0].boundary; d12.b11.decisionDisposit​ion[0].scope; d12.b11.decisionDisposit​ion[1].row; d12.b11.decisionDisposit​ion[1].decisionId; d12.b11.decisionDisposit​ion[1].subdecisionKey; d12.b11.decisionDisposit​ion[1].chosenOption; d12.b11.decisionDisposit​ion[1].selectedLabel; d12.b11.decisionDisposit​ion[1].disposition; d12.b11.decisionDisposit​ion[1].boundary; d12.b11.decisionDisposit​ion[1].scope; d12.b11.decisionDisposit​ion[2].row; d12.b11.decisionDisposit​ion[2].decisionId; d12.b11.decisionDisposit​ion[2].subdecisionKey; d12.b11.decisionDisposit​ion[2].chosenOption; d12.b11.decisionDisposit​ion[2].selectedLabel; d12.b11.decisionDisposit​ion[2].disposition; d12.b11.decisionDisposit​ion[2].boundary; d12.b11.decisionDisposit​ion[2].scope; d12.b11.decisionDisposit​ion[3].row; d12.b11.decisionDisposit​ion[3].decisionId; d12.b11.decisionDisposit​ion[3].subdecisionKey; d12.b11.decisionDisposit​ion[3].chosenOption; d12.b11.decisionDisposit​ion[3].selectedLabel; d12.b11.decisionDisposit​ion[3].disposition; d12.b11.decisionDisposit​ion[3].boundary; d12.b11.decisionDisposit​ion[3].scope; d12.b11.decisionDisposit​ion[4].row; d12.b11.decisionDisposit​ion[4].decisionId; d12.b11.decisionDisposit​ion[4].subdecisionKey; d12.b11.decisionDisposit​ion[4].chosenOption; d12.b11.decisionDisposit​ion[4].selectedLabel; d12.b11.decisionDisposit​ion[4].disposition; d12.b11.decisionDisposit​ion[4].boundary; d12.b11.decisionDisposit​ion[4].scope; d12.b11.decisionDisposit​ion[5].row; d12.b11.decisionDisposit​ion[5].decisionId; d12.b11.decisionDisposit​ion[5].subdecisionKey; d12.b11.decisionDisposit​ion[5].chosenOption; d12.b11.decisionDisposit​ion[5].selectedLabel; d12.b11.decisionDisposit​ion[5].disposition; d12.b11.decisionDisposit​ion[5].boundary; d12.b11.decisionDisposit​ion[5].scope; d12.b11.decisionDisposit​ion[6].row; d12.b11.decisionDisposit​ion[6].decisionId; d12.b11.decisionDisposit​ion[6].subdecisionKey; d12.b11.decisionDisposit​ion[6].chosenOption; d12.b11.decisionDisposit​ion[6].selectedLabel; d12.b11.decisionDisposit​ion[6].disposition; d12.b11.decisionDisposit​ion[6].boundary; d12.b11.decisionDisposit​ion[6].scope; d12.b11.decisionDisposit​ion[7].row; d12.b11.decisionDisposit​ion[7].decisionId; d12.b11.decisionDisposit​ion[7].subdecisionKey; d12.b11.decisionDisposit​ion[7].chosenOption; d12.b11.decisionDisposit​ion[7].selectedLabel; d12.b11.decisionDisposit​ion[7].disposition; d12.b11.decisionDisposit​ion[7].boundary; d12.b11.decisionDisposit​ion[7].scope; d12.b11.decisionDisposit​ion[8].row; d12.b11.decisionDisposit​ion[8].decisionId; d12.b11.decisionDisposit​ion[8].subdecisionKey; d12.b11.decisionDisposit​ion[8].chosenOption; d12.b11.decisionDisposit​ion[8].selectedLabel; d12.b11.decisionDisposit​ion[8].disposition; d12.b11.decisionDisposit​ion[8].boundary; d12.b11.decisionDisposit​ion[8].scope; d12.b11.decisionDisposit​ion[9].row; d12.b11.decisionDisposit​ion[9].decisionId; d12.b11.decisionDisposit​ion[9].subdecisionKey; d12.b11.decisionDisposit​ion[9].chosenOption; d12.b11.decisionDisposit​ion[9].selectedLabel; d12.b11.decisionDisposit​ion[9].disposition; d12.b11.decisionDisposit​ion[9].boundary; d12.b11.decisionDisposit​ion[9].scope; d12.b11.decisionDisposit​ion[10].row; d12.b11.decisionDisposit​ion[10].decisionId; d12.b11.decisionDisposit​ion[10].subdecisionKey; d12.b11.decisionDisposit​ion[10].chosenOption; d12.b11.decisionDisposit​ion[10].selectedLabel; d12.b11.decisionDisposit​ion[10].disposition; d12.b11.decisionDisposit​ion[10].boundary; d12.b11.decisionDisposit​ion[10].scope; d12.b11.decisionDisposit​ion[11].row; d12.b11.decisionDisposit​ion[11].decisionId; d12.b11.decisionDisposit​ion[11].subdecisionKey; d12.b11.decisionDisposit​ion[11].chosenOption; d12.b11.decisionDisposit​ion[11].selectedLabel; d12.b11.decisionDisposit​ion[11].disposition; d12.b11.decisionDisposit​ion[11].boundary; d12.b11.decisionDisposit​ion[11].scope; d12.b11.decisionDisposit​ion[12].row; d12.b11.decisionDisposit​ion[12].decisionId; d12.b11.decisionDisposit​ion[12].subdecisionKey; d12.b11.decisionDisposit​ion[12].chosenOption; d12.b11.decisionDisposit​ion[12].selectedLabel; d12.b11.decisionDisposit​ion[12].disposition; d12.b11.decisionDisposit​ion[12].boundary; d12.b11.decisionDisposit​ion[12].scope; d12.b11.decisionDisposit​ion[13].row; d12.b11.decisionDisposit​ion[13].decisionId; d12.b11.decisionDisposit​ion[13].subdecisionKey; d12.b11.decisionDisposit​ion[13].chosenOption; d12.b11.decisionDisposit​ion[13].selectedLabel; d12.b11.decisionDisposit​ion[13].disposition; d12.b11.decisionDisposit​ion[13].boundary; d12.b11.decisionDisposit​ion[13].scope; d12.b11.decisionDisposit​ion[14].row; d12.b11.decisionDisposit​ion[14].decisionId; d12.b11.decisionDisposit​ion[14].subdecisionKey; d12.b11.decisionDisposit​ion[14].chosenOption; d12.b11.decisionDisposit​ion[14].selectedLabel; d12.b11.decisionDisposit​ion[14].disposition; d12.b11.decisionDisposit​ion[14].boundary; d12.b11.decisionDisposit​ion[14].scope; d12.b11.decisionDisposit​ion[15].row; d12.b11.decisionDisposit​ion[15].decisionId; d12.b11.decisionDisposit​ion[15].subdecisionKey; d12.b11.decisionDisposit​ion[15].chosenOption; d12.b11.decisionDisposit​ion[15].selectedLabel; d12.b11.decisionDisposit​ion[15].disposition; d12.b11.decisionDisposit​ion[15].boundary; d12.b11.decisionDisposit​ion[15].scope; d12.b11.decisionDisposit​ion[16].row; d12.b11.decisionDisposit​ion[16].decisionId; d12.b11.decisionDisposit​ion[16].subdecisionKey; d12.b11.decisionDisposit​ion[16].chosenOption; d12.b11.decisionDisposit​ion[16].selectedLabel; d12.b11.decisionDisposit​ion[16].disposition; d12.b11.decisionDisposit​ion[16].boundary; d12.b11.decisionDisposit​ion[16].scope; d12.b11.decisionDisposit​ion[17].row; d12.b11.decisionDisposit​ion[17].decisionId; d12.b11.decisionDisposit​ion[17].subdecisionKey; d12.b11.decisionDisposit​ion[17].chosenOption; d12.b11.decisionDisposit​ion[17].selectedLabel; d12.b11.decisionDisposit​ion[17].disposition; d12.b11.decisionDisposit​ion[17].boundary; d12.b11.decisionDisposit​ion[17].scope; d12.b11.decisionDisposit​ion[18].row; d12.b11.decisionDisposit​ion[18].decisionId; d12.b11.decisionDisposit​ion[18].subdecisionKey; d12.b11.decisionDisposit​ion[18].chosenOption; d12.b11.decisionDisposit​ion[18].selectedLabel; d12.b11.decisionDisposit​ion[18].disposition; d12.b11.decisionDisposit​ion[18].boundary; d12.b11.decisionDisposit​ion[18].scope; d12.b11.decisionDisposit​ion[19].row; d12.b11.decisionDisposit​ion[19].decisionId; d12.b11.decisionDisposit​ion[19].subdecisionKey; d12.b11.decisionDisposit​ion[19].chosenOption; d12.b11.decisionDisposit​ion[19].selectedLabel; d12.b11.decisionDisposit​ion[19].disposition; d12.b11.decisionDisposit​ion[19].boundary; d12.b11.decisionDisposit​ion[19].scope; d12.b11.decisionDisposit​ion[20].row; d12.b11.decisionDisposit​ion[20].decisionId; d12.b11.decisionDisposit​ion[20].subdecisionKey; d12.b11.decisionDisposit​ion[20].chosenOption; d12.b11.decisionDisposit​ion[20].selectedLabel; d12.b11.decisionDisposit​ion[20].disposition; d12.b11.decisionDisposit​ion[20].boundary; d12.b11.decisionDisposit​ion[20].scope; d12.b11.decisionDisposit​ion[21].row; d12.b11.decisionDisposit​ion[21].decisionId; d12.b11.decisionDisposit​ion[21].subdecisionKey; d12.b11.decisionDisposit​ion[21].chosenOption; d12.b11.decisionDisposit​ion[21].selectedLabel; d12.b11.decisionDisposit​ion[21].disposition; d12.b11.decisionDisposit​ion[21].boundary; d12.b11.decisionDisposit​ion[21].scope; d12.b11.decisionDisposit​ion[22].row; d12.b11.decisionDisposit​ion[22].decisionId; d12.b11.decisionDisposit​ion[22].subdecisionKey; d12.b11.decisionDisposit​ion[22].chosenOption; d12.b11.decisionDisposit​ion[22].selectedLabel; d12.b11.decisionDisposit​ion[22].disposition; d12.b11.decisionDisposit​ion[22].boundary; d12.b11.decisionDisposit​ion[22].scope; d12.b11.decisionDisposit​ion[23].row; d12.b11.decisionDisposit​ion[23].decisionId; d12.b11.decisionDisposit​ion[23].subdecisionKey; d12.b11.decisionDisposit​ion[23].chosenOption; d12.b11.decisionDisposit​ion[23].selectedLabel; d12.b11.decisionDisposit​ion[23].disposition; d12.b11.decisionDisposit​ion[23].boundary; d12.b11.decisionDisposit​ion[23].scope; d12.b11.decisionDisposit​ion[24].row; d12.b11.decisionDisposit​ion[24].decisionId; d12.b11.decisionDisposit​ion[24].subdecisionKey; d12.b11.decisionDisposit​ion[24].chosenOption; d12.b11.decisionDisposit​ion[24].selectedLabel; d12.b11.decisionDisposit​ion[24].disposition; d12.b11.decisionDisposit​ion[24].boundary; d12.b11.decisionDisposit​ion[24].scope; d12.b11.decisionDisposit​ion[25].row; d12.b11.decisionDisposit​ion[25].decisionId; d12.b11.decisionDisposit​ion[25].subdecisionKey; d12.b11.decisionDisposit​ion[25].chosenOption; d12.b11.decisionDisposit​ion[25].selectedLabel; d12.b11.decisionDisposit​ion[25].disposition; d12.b11.decisionDisposit​ion[25].boundary; d12.b11.decisionDisposit​ion[25].scope; d12.b11.decisionDisposit​ion[26].row; d12.b11.decisionDisposit​ion[26].decisionId; d12.b11.decisionDisposit​ion[26].subdecisionKey; d12.b11.decisionDisposit​ion[26].chosenOption; d12.b11.decisionDisposit​ion[26].selectedLabel; d12.b11.decisionDisposit​ion[26].disposition; d12.b11.decisionDisposit​ion[26].boundary; d12.b11.decisionDisposit​ion[26].scope; d12.b11.decisionDisposit​ion[27].row; d12.b11.decisionDisposit​ion[27].decisionId; d12.b11.decisionDisposit​ion[27].subdecisionKey; d12.b11.decisionDisposit​ion[27].chosenOption; d12.b11.decisionDisposit​ion[27].selectedLabel; d12.b11.decisionDisposit​ion[27].disposition; d12.b11.decisionDisposit​ion[27].boundary; d12.b11.decisionDisposit​ion[27].scope; d12.b11.decisionDisposit​ion[28].row; d12.b11.decisionDisposit​ion[28].decisionId; d12.b11.decisionDisposit​ion[28].subdecisionKey; d12.b11.decisionDisposit​ion[28].chosenOption; d12.b11.decisionDisposit​ion[28].selectedLabel; d12.b11.decisionDisposit​ion[28].disposition; d12.b11.decisionDisposit​ion[28].boundary; d12.b11.decisionDisposit​ion[28].scope; d12.b11.decisionDisposit​ion[29].row; d12.b11.decisionDisposit​ion[29].decisionId; d12.b11.decisionDisposit​ion[29].subdecisionKey; d12.b11.decisionDisposit​ion[29].chosenOption; d12.b11.decisionDisposit​ion[29].selectedLabel; d12.b11.decisionDisposit​ion[29].disposition; d12.b11.decisionDisposit​ion[29].boundary; d12.b11.decisionDisposit​ion[29].scope; d12.b11.decisionDisposit​ion[30].row; d12.b11.decisionDisposit​ion[30].decisionId; d12.b11.decisionDisposit​ion[30].subdecisionKey; d12.b11.decisionDisposit​ion[30].chosenOption; d12.b11.decisionDisposit​ion[30].selectedLabel; d12.b11.decisionDisposit​ion[30].disposition; d12.b11.decisionDisposit​ion[30].boundary; d12.b11.decisionDisposit​ion[30].scope; d12.b11.decisionDisposit​ion[31].row; d12.b11.decisionDisposit​ion[31].decisionId; d12.b11.decisionDisposit​ion[31].subdecisionKey; d12.b11.decisionDisposit​ion[31].chosenOption; d12.b11.decisionDisposit​ion[31].selectedLabel; d12.b11.decisionDisposit​ion[31].disposition; d12.b11.decisionDisposit​ion[31].boundary; d12.b11.decisionDisposit​ion[31].scope; d12.b11.decisionDisposit​ion[32].row; d12.b11.decisionDisposit​ion[32].decisionId; d12.b11.decisionDisposit​ion[32].subdecisionKey; d12.b11.decisionDisposit​ion[32].chosenOption; d12.b11.decisionDisposit​ion[32].selectedLabel; d12.b11.decisionDisposit​ion[32].disposition; d12.b11.decisionDisposit​ion[32].boundary; d12.b11.decisionDisposit​ion[32].scope; d12.b11.decisionDisposit​ion[33].row; d12.b11.decisionDisposit​ion[33].decisionId; d12.b11.decisionDisposit​ion[33].subdecisionKey; d12.b11.decisionDisposit​ion[33].chosenOption; d12.b11.decisionDisposit​ion[33].selectedLabel; d12.b11.decisionDisposit​ion[33].disposition; d12.b11.decisionDisposit​ion[33].boundary; d12.b11.decisionDisposit​ion[33].scope; d12.b11.decisionDisposit​ion[34].row; d12.b11.decisionDisposit​ion[34].decisionId; d12.b11.decisionDisposit​ion[34].subdecisionKey; d12.b11.decisionDisposit​ion[34].chosenOption; d12.b11.decisionDisposit​ion[34].selectedLabel; d12.b11.decisionDisposit​ion[34].disposition; d12.b11.decisionDisposit​ion[34].boundary; d12.b11.decisionDisposit​ion[34].scope; d12.b11.decisionDisposit​ion[35].row; d12.b11.decisionDisposit​ion[35].decisionId; d12.b11.decisionDisposit​ion[35].subdecisionKey; d12.b11.decisionDisposit​ion[35].chosenOption; d12.b11.decisionDisposit​ion[35].selectedLabel; d12.b11.decisionDisposit​ion[35].disposition; d12.b11.decisionDisposit​ion[35].boundary; d12.b11.decisionDisposit​ion[35].scope; d12.b11.decisionDisposit​ion[36].row; d12.b11.decisionDisposit​ion[36].decisionId; d12.b11.decisionDisposit​ion[36].subdecisionKey; d12.b11.decisionDisposit​ion[36].chosenOption; d12.b11.decisionDisposit​ion[36].selectedLabel; d12.b11.decisionDisposit​ion[36].disposition; d12.b11.decisionDisposit​ion[36].boundary; d12.b11.decisionDisposit​ion[36].scope; d12.b11.mechanisms[0].ap​proved; d12.b11.mechanisms[0].ap​provalMeaning; d12.b11.mechanisms[0].ex​ecutionCoverage; d12.b11.mechanisms[1].ap​proved; d12.b11.mechanisms[1].ap​provalMeaning; d12.b11.mechanisms[1].ex​ecutionCoverage; d12.b11.mechanisms[2].ap​proved; d12.b11.mechanisms[2].ap​provalMeaning; d12.b11.mechanisms[2].ex​ecutionCoverage; d12.b11.mechanisms[3].ap​proved; d12.b11.mechanisms[3].ap​provalMeaning; d12.b11.mechanisms[3].ex​ecutionCoverage; d12.b11.mechanisms[4].ap​proved; d12.b11.mechanisms[4].ap​provalMeaning; d12.b11.mechanisms[4].ex​ecutionCoverage; d12.b11.mechanisms[5].ap​proved; d12.b11.mechanisms[5].al​gorithm; d12.b11.mechanisms[5].ap​provalMeaning; d12.b11.mechanisms[5].ex​ecutionCoverage; d12.b11.mechanisms[6].ap​proved; d12.b11.mechanisms[6].al​gorithm; d12.b11.mechanisms[6].ap​provalMeaning; d12.b11.mechanisms[6].ex​ecutionCoverage)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "보류·원상 보존 — 미확인·미승인 입력 때문에 해당 의존 행위만 보류한다. 세계는 정지하지 않으며 소비·완료 진척은 보존한다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "명시 오류·원상 보존 — 형식·단위·판본·권한·동의·실행 가능성·보존 오류를 명시 거부한다. 상태·예약·난수·수락 영수증을 새로 반영하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "저장 결과 재생 — 일반 어댑터의 동일 수락 신원·동일 내용은 기존 결과를 반환한다. 추가 효과·난수 소비·개정은 없다. 기존 평가기별 중복 오류를 임의 없애지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "선택 결과 원자 검증 — 해당 행위가 허용한 신원·수량·권한·완료 소비의 보존을 검증한 후 결과·개정·영수증을 원자 반영한다. (원문: d12.b9.writeSet[0]; d12.b9.writeSet[1]; d12.b9.writeSet[2]; d12.b9.writeSet[3]; d12.b9.writeSet[4]; d12.b9.writeSet[5]; d12.b9.writeSet[6]; d12.b9.writeSet[7]; d12.b9.writeSet[8]; d12.b9.writeSet[9]; d12.b9.commitPoint)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "결과·허용 투영 반환 — 해당 행위의 기록된 결과 또는 읽기 전용 결과를 반환한다. 관측자 지식·접근권을 넘어 숨겨진 사실을 표시하거나 구현 완료를 주장하지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "기존 상태 유지 — 미확정 미리보기·비구속 제안·명시 거절은 기존 상태를 유지한다. 완료된 소비·진척을 되감지 않는다. (원문: 도메인 계약 흐름과 상세 항목 참조)"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "archify.detail.heading",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 항목별 원문과 적용 구분"
+        }
+      ]
+    },
+    {
+      "id": "archify.detail.table",
+      "kind": "table",
+      "header": [
+        "적용 구분",
+        "원문 위치",
+        "계약 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "운용",
+          "d12.b9.schemaVersion",
+          "1"
+        ],
+        [
+          "운용",
+          "d12.b9.domainId",
+          "\"D12\""
+        ],
+        [
+          "운용",
+          "d12.b9.mechanismId",
+          "\"seoul.d12.bounded-contr​act\""
+        ],
+        [
+          "운용",
+          "d12.b9.status",
+          "\"bounded-contract-with-p​roposal-held\""
+        ],
+        [
+          "운용",
+          "d12.b9.rulesVersion",
+          "\"SP-1.0.0 plus sealed Task26 selections 2026-10-08\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.sourceRulesVersion",
+          "\"SP-1.0.0 plus sealed Task26 selections 2026-10-08\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.contractSHA256",
+          "\"509deadd90d806bcf549479​130391d5f2a9d65bcfb3a306​c9201feb314bad5fc\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[0].documen​tId",
+          "\"doc.Save-and-Determinis​m\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[0].path",
+          "\"canon/locales/ko-KR/rul​es/save-and-determinism.​json\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[0].sha256",
+          "\"510a557e3448efb478d38de​d1f21845557ac10c7fc8b56e​2c0631ef455a86919\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[1].documen​tId",
+          "\"doc.Singleplayer-Design​-SP-1-0-0\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[1].path",
+          "\"canon/locales/ko-KR/sys​tem-design/singleplayer-​design-sp-1-0-0.json\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[1].sha256",
+          "\"633265f37815e8d581b5242​6a84eec2bd1a1e987b2e05bd​614b8f9752877a9bd\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[2].documen​tId",
+          "\"doc.Rules-FactionsWarfa​re\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[2].path",
+          "\"canon/locales/ko-KR/rul​es/rules-factions-warfar​e-clauses.json\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.canonRules[2].sha256",
+          "\"cd10396fbf6bf4368f043a5​efb493f5e743b496f2c0f3b6​1f19db2b148adfdec\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.rulesVersionLinka​ge.compatibility",
+          "\"규칙과 콘텐츠 판본은 저장 경계에서 각각 확인한다. 충돌은 명시적 오류이며 자동 이전하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d12.b9.dataOwner",
+          "\"D12 event/control ledger\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].name",
+          "\"version\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].type",
+          "\"safe nonnegative integer\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].unit",
+          "\"ledger revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].read",
+          "\"snapshot and expectedVersion\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].write",
+          "\"one accepted event increments once\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].owner",
+          "\"D12 event/control ledger\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[0].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].name",
+          "\"body\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].type",
+          "\"person ID &#124; null\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].unit",
+          "\"one controlled person\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].read",
+          "\"current control\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].write",
+          "\"death/detention/authori​zed-return\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].null",
+          "\"character path ended, not a fabricated successor\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].owner",
+          "\"D12 event/control ledger\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[1].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].name",
+          "\"people\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].type",
+          "\"Person[]\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].unit",
+          "\"permanent identity\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].read",
+          "\"alive, detention, actual location, skills, directional trust\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].write",
+          "\"dead/detained subject only\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].foreign​Owner",
+          "\"D01/D02/D07; illustrative engine stores snapshot only\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].owner",
+          "\"D01/D02/D07; illustrative engine stores snapshot only\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[2].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].name",
+          "\"designation\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].type",
+          "\"eligible registered person ID &#124; null\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].unit",
+          "\"person ID\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].read",
+          "\"snapshot designation\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].write",
+          "\"separate authorized event, not death\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].owner",
+          "\"D12 event/control ledger\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[3].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].name",
+          "\"order\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].type",
+          "\"registered eligible person ID[] &#124; null\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].unit",
+          "\"institutional ordered candidates\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].read",
+          "\"first live candidate excluding same-boundary death set\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].write",
+          "\"D08 adjudication only\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].null",
+          "\"unknown order; hold body selection if no eligible designation; [] is known empty\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].owner",
+          "\"D12 event/control ledger\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[4].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].name",
+          "\"offices\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].type",
+          "\"Office[]\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].unit",
+          "\"office ID/holder/institution\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].read",
+          "\"ratified eligible resolver result\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].write",
+          "\"vacancy or supplied ratified holder\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].foreign​Owner",
+          "\"D09; no generic election formula\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].owner",
+          "\"D09; no generic election formula\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[5].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].name",
+          "\"assets\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].type",
+          "\"Asset[]\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].unit",
+          "\"asset ID/exact integer quantity\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].read",
+          "\"owner, lien, reservation, custodian, actual location, route\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].write",
+          "\"ownership only on supplied valid whole-asset award\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].foreign​Owner",
+          "\"D13; shares never inferred\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].owner",
+          "\"D13; shares never inferred\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[6].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].name",
+          "\"commands\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].type",
+          "\"Command[]\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].unit",
+          "\"command ID\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].read",
+          "\"actor, accepted flag, spent, progress\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].write",
+          "\"pending recheck marker; spent/progress unchanged\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].foreign​Owner",
+          "\"D03/D15; death is not blanket cancellation\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].owner",
+          "\"D03/D15; death is not blanket cancellation\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[7].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].name",
+          "\"wars\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].type",
+          "\"War[]\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].unit",
+          "\"war ID\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].read",
+          "\"claimant, beneficiary, cause, target, eligibility, promises\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].write",
+          "\"recheck marker and beneficiary-qualified victory-right candidate\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].foreign​Owner",
+          "\"D16; ending remains upstream\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].owner",
+          "\"D16; ending remains upstream\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[8].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].name",
+          "\"history\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].type",
+          "\"event ID -> payload/receipt\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].unit",
+          "\"event identity\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].read",
+          "\"idempotency\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].write",
+          "\"same atomic commit as result\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].owner",
+          "\"D12 event/control ledger\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].snapsho​t",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.fields[9].commitP​oint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[0]",
+          "\"snapshot and expectedVersion\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[1]",
+          "\"current control\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[2]",
+          "\"alive, detention, actual location, skills, directional trust\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[3]",
+          "\"snapshot designation\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[4]",
+          "\"first live candidate excluding same-boundary death set\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[5]",
+          "\"ratified eligible resolver result\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[6]",
+          "\"owner, lien, reservation, custodian, actual location, route\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[7]",
+          "\"actor, accepted flag, spent, progress\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[8]",
+          "\"claimant, beneficiary, cause, target, eligibility, promises\""
+        ],
+        [
+          "운용",
+          "d12.b9.readSet[9]",
+          "\"idempotency\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[0]",
+          "\"one accepted event increments once\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[1]",
+          "\"death/detention/authori​zed-return\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[2]",
+          "\"dead/detained subject only\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[3]",
+          "\"separate authorized event, not death\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[4]",
+          "\"D08 adjudication only\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[5]",
+          "\"vacancy or supplied ratified holder\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[6]",
+          "\"ownership only on supplied valid whole-asset award\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[7]",
+          "\"pending recheck marker; spent/progress unchanged\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[8]",
+          "\"recheck marker and beneficiary-qualified victory-right candidate\""
+        ],
+        [
+          "운용",
+          "d12.b9.writeSet[9]",
+          "\"same atomic commit as result\""
+        ],
+        [
+          "운용",
+          "d12.b9.snapshot",
+          "\"Immutable whole input revision, including per-item adjudication and same-boundary death set. All eligibility reads use that death set, never input list order.\""
+        ],
+        [
+          "운용",
+          "d12.b9.commitPoint",
+          "\"After complete boundary parse, identity/version checks and staged branch results, replace ledger and append receipt together. A rejected event changes nothing.\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[0]",
+          "\"parse typed snapshot and event\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[1]",
+          "\"return matching prior receipt or reject reused ID with different payload\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[2]",
+          "\"check ledger revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[3]",
+          "\"validate factual trigger and same-boundary death set\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[4]",
+          "\"stop dead subjects' new personal actions\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[5]",
+          "\"snapshot office/title/property/co​ntract records\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[6]",
+          "\"resolve body independently\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[7]",
+          "\"read per-office institution and candidate qualification\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[8]",
+          "\"consume ratification separately from nomination\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[9]",
+          "\"consume authorized asset award without delivery\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[10]",
+          "\"mark commands/war promises for per-item recheck\""
+        ],
+        [
+          "운용",
+          "d12.b9.orderedSteps[11]",
+          "\"commit one result and event receipt\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.formulaSheet[0].i​d",
+          "\"controlCount\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[0].e​xpression",
+          "\"body=null ? 0 : 1\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[0].u​nit",
+          "\"IDs, Boolean state, exact integer quantities, ledger revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[0].r​ounding",
+          "\"none; no partition executed\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[0].c​lamp",
+          "\"none; invalid quantity rejected\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[0].r​ng",
+          "\"none; no tie-break or election randomization invented\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.formulaSheet[1].i​d",
+          "\"assetConservation\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[1].e​xpression",
+          "\"sum(quantity before) = sum(quantity after)\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[1].u​nit",
+          "\"IDs, Boolean state, exact integer quantities, ledger revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[1].r​ounding",
+          "\"none; no partition executed\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[1].c​lamp",
+          "\"none; invalid quantity rejected\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[1].r​ng",
+          "\"none; no tie-break or election randomization invented\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.formulaSheet[2].i​d",
+          "\"pendingResource\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[2].e​xpression",
+          "\"spent_after=spent_befor​e; progress_after=progress_​before\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[2].u​nit",
+          "\"IDs, Boolean state, exact integer quantities, ledger revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[2].r​ounding",
+          "\"none; no partition executed\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[2].c​lamp",
+          "\"none; invalid quantity rejected\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[2].r​ng",
+          "\"none; no tie-break or election randomization invented\""
+        ],
+        [
+          "역사 참조",
+          "d12.b9.formulaSheet[3].i​d",
+          "\"revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[3].e​xpression",
+          "\"accepted new event: v_after=v_before+1; duplicate/reject: v_after=v_before\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[3].u​nit",
+          "\"IDs, Boolean state, exact integer quantities, ledger revision\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[3].r​ounding",
+          "\"none; no partition executed\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[3].c​lamp",
+          "\"none; invalid quantity rejected\""
+        ],
+        [
+          "운용",
+          "d12.b9.formulaSheet[3].r​ng",
+          "\"none; no tie-break or election randomization invented\""
+        ],
+        [
+          "운용",
+          "d12.b9.rng",
+          "\"none; no tie-break or election randomization invented\""
+        ],
+        [
+          "운용",
+          "d12.b9.time",
+          "\"사건과 귀속된 결과를 기준으로 처리한다. 실제 기간·기한·동시 사건 순서는 소유 도메인의 승인 기록을 요구하며 미정 값을 발급하지 않는다.\""
+        ],
+        [
+          "운용",
+          "d12.b9.rounding",
+          "\"none; no partition executed\""
+        ],
+        [
+          "운용",
+          "d12.b9.clamps",
+          "\"none; invalid quantity rejected\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.failure​",
+          "\"typed rejection before commit; preserve input\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.cancel",
+          "\"per-command cancellation supplied by D03, not blanket death cancellation\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.death",
+          "\"death opens personal estate review, independently selects body and office procedure\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.detenti​on",
+          "\"alive stays alive; no estate opening and no automatic office vacancy\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.release​",
+          "\"clears detention only; control unchanged\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.return",
+          "\"current-body request plus lawful verified original person; one control pointer changes\""
+        ],
+        [
+          "운용",
+          "d12.b9.lifecycle.load",
+          "\"schemaVersion must equal 1; ledger/history preserved; invalid/corrupt state rejected; no silent repair\""
+        ],
+        [
+          "운용",
+          "d12.b9.failure",
+          "\"typed rejection before commit; preserve input\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[0].i​d",
+          "\"P-DETENTION\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[0].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[0].o​wner",
+          "\"D02/D12\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[0].d​etail",
+          "\"Legal permanent-detention criterion/duration; validator consumes confirmed adjudication, not an invented threshold.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[0].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[0].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[1].i​d",
+          "\"P-ORDER\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[1].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[1].o​wner",
+          "\"D08\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[1].d​etail",
+          "\"Actual family successor order/eligibility and designation procedure; no generic eldest-first policy.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[1].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[1].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[2].i​d",
+          "\"P-COUNTRIES\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[2].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[2].o​wner",
+          "\"D09\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[2].d​etail",
+          "\"Actual 16-country electors, quorum, ties, resolver, ratification and acting grants; sealed choice authorizes separate records, not values.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[2].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[2].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[3].i​d",
+          "\"P-RIGHTS\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[3].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[3].o​wner",
+          "\"D10/D11\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[3].d​etail",
+          "\"Item-specific right lifetimes and recall/death clauses beyond accepted claim/delegation boundaries.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[3].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[3].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[4].i​d",
+          "\"P-PARTITION\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[4].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[4].o​wner",
+          "\"D13\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[4].d​etail",
+          "\"Forum law, shares, residue, beneficiary qualification and creditor priority. Whole-asset test awards are illustrative supplied decisions, not canon approvals.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[4].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[4].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[5].i​d",
+          "\"P-WAR-END\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[5].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[5].o​wner",
+          "\"D16/D17\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[5].d​etail",
+          "\"Actual treaty indivisible clauses and death-dependent ending resolver. Recheck does not select continuation/victory/whi​te peace.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[5].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[5].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[6].i​d",
+          "\"P-SQUAD\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[6].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[6].o​wner",
+          "\"D15\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[6].d​etail",
+          "\"Temporary leader selection, weakening amount and squad capacity coefficients.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[6].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[6].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[7].i​d",
+          "\"P-TIME\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[7].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[7].o​wner",
+          "\"D18\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[7].d​etail",
+          "\"Global same-timestamp ordering, deadlines and will effective-time rule. Validator consumes supplied expected revision and death batch; invents no global priority.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[7].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[7].o​perative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[8].i​d",
+          "\"P-RETURN-FACT\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[8].s​tatus",
+          "\"proposal-held\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[8].o​wner",
+          "\"D12/D09\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[8].d​etail",
+          "\"Concrete original-body lawful eligibility record; approved request authority is current body, but no individual release/legal permission is fabricated.\""
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[8].n​umericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.proposalHeld[8].o​perative",
+          "false"
+        ],
+        [
+          "운용",
+          "d12.b9.scope.numericBala​nceReady",
+          "false"
+        ],
+        [
+          "운용",
+          "d12.b9.scope.runtimeImpl​emented",
+          "false"
+        ],
+        [
+          "운용",
+          "d12.b9.scope.worldFactsI​ssued",
+          "false"
+        ],
+        [
+          "운용",
+          "d12.b9.scope.executionSc​hemaReady",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].id",
+          "\"U-CLAIM\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].status",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].mechanisms[0]",
+          "\"CLAIM\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].missing",
+          "\"No typed claim/child/title record or pressed-to-unpressed transition/oracle.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].owner",
+          "\"D10/D08 integration wave\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].decisionRows[0]",
+          "\"D17\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].proposalOverlap[0​]",
+          "\"P-RIGHTS\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].proposalOverlap[1​]",
+          "\"P-ORDER\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].releaseEvidence",
+          "\"Typed eligibility/parent links and before/event/after pressed claim transfer, unpressed non-transfer, spouse exclusion, conflicting ratification in normal/boundary/failure/​adversarial cases.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].operative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[0].numericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].id",
+          "\"U-SQUAD\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].status",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].mechanisms[0]",
+          "\"SQUAD\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].missing",
+          "\"No squad/soldier token/temporary leader/command eligibility/capacity record or transition; no remote delivery/acceptance transition.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].owner",
+          "\"D15/D03/D04/D06 integration wave\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[0]",
+          "\"D02\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[1]",
+          "\"D15\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[2]",
+          "\"D16\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[3]",
+          "\"D27\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[4]",
+          "\"D30\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[5]",
+          "\"D35\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].decisionRows[6]",
+          "\"D36\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].proposalOverlap[0​]",
+          "\"P-SQUAD\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].releaseEvidence",
+          "\"Typed member identities, leader loss/election, supply/command/instituti​on split, injury qualification and remote receipt/acceptance transitions; normal/boundary/failure/​adversarial oracles; no person deletion when capacity falls.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].operative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[1].numericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].id",
+          "\"U-DEATH-CLAUSES\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].status",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].mechanisms[0]",
+          "\"WAR-COMMAND\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].mechanisms[1]",
+          "\"OFFICE\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].mechanisms[2]",
+          "\"ESTATE\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].missing",
+          "\"No typed per-clause personal/office/marriage​/delegation/upper-contra​ct effect record or keep/end/re-ratify transition; only command recheck IDs and war beneficiary candidates are executed.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].owner",
+          "\"D03/D08/D11/D16/D17 integration wave\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].decisionRows[0]",
+          "\"D06\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].decisionRows[1]",
+          "\"D12\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].decisionRows[2]",
+          "\"D17\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].decisionRows[3]",
+          "\"D18\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].decisionRows[4]",
+          "\"D19\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].proposalOverlap[0​]",
+          "\"P-RIGHTS\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].proposalOverlap[1​]",
+          "\"P-WAR-END\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].releaseEvidence",
+          "\"Clause ID, parties, scope, death/expiry trigger, ratification, obligations and physical handoff states; independent per-clause normal/boundary/failure/​adversarial outcomes including delegation holder-right survival and marriage no bulk ending.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].operative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[2].numericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].id",
+          "\"U-ORGANIZATION\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].status",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].mechanisms[0]",
+          "\"OFFICE\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].missing",
+          "\"No typed organization lifecycle, lawful representative/manager, dissolution or debt/lineage record; only office vacancy and institutional asset owner preservation tested.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].owner",
+          "\"D09/D16 integration wave\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].decisionRows[0]",
+          "\"D11\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].decisionRows[1]",
+          "\"D21\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].proposalOverlap[0​]",
+          "\"P-COUNTRIES\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].releaseEvidence",
+          "\"Typed organization survives holder death with separate registered representative/manager vacancy, obligations and dissolution clause adjudication; four oracle classes.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].operative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[3].numericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].id",
+          "\"U-RELATION-EFFECTS\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].status",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].mechanisms[0]",
+          "\"BODY\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].missing",
+          "\"No mourning, relationship-effect identity/lifetime, late report or responsibility reassessment transition; only trust/skills/location non-copying verified.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].owner",
+          "\"D07 integration wave\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].decisionRows[0]",
+          "\"D08\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].decisionRows[1]",
+          "\"D18\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].proposalOverlap",
+          "[]"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].releaseEvidence",
+          "\"Typed effect start/end and observer knowledge/event identity, late-report and death effects with four oracle classes.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].operative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[4].numericApproval",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].id",
+          "\"U-COMMON-UNITS\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].status",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].mechanisms",
+          "[]"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].missing",
+          "\"Local integer/ID/Boolean types do not validate a shared approved unit dictionary or conversion across domain producers.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].owner",
+          "\"Task26 common-unit and Task27/46 integration boundary\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].decisionRows[0]",
+          "\"D22\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].proposalOverlap",
+          "[]"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].releaseEvidence",
+          "\"Approved normalized unit registry plus typed producer/consumer dimensional checks; reject incompatible units and unapproved coefficients; four oracle classes.\""
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].operative",
+          "false"
+        ],
+        [
+          "보류",
+          "d12.b9.heldStructuralSco​pes[5].numericApproval",
+          "false"
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[0]",
+          "\"sp1.b47\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[1]",
+          "\"sp1.b48\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[2]",
+          "\"sp1.b49\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[3]",
+          "\"sp1.b51\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[4]",
+          "\"sp1.b52\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[5]",
+          "\"sp1.b55\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[6]",
+          "\"sp1.b57\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[7]",
+          "\"sp1.b58\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[8]",
+          "\"sp1.b64-sp1.b67\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.canoni​calAnchors[9]",
+          "\"sp1.b85-sp1.b88\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[0].row",
+          "\"D06\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[0].decisionId​",
+          "\"GP-13\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[0].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[0].applicatio​n",
+          "\"Per-treaty indivisible clauses, legal-effect event and physical-handoff event remain separate; no concrete termination invented.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[1].row",
+          "\"D09\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[1].decisionId​",
+          "\"T68-D09-COUNTRY-LAWS\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[1].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[1].applicatio​n",
+          "\"Each of 16 countries supplies its own electors, quorum, resolver, ratification and acting scope; selecting the authoring policy does not fill these records.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[2].row",
+          "\"D10\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[2].decisionId​",
+          "\"T68-D12-PERMANENT-DETEN​TION\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[2].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[2].applicatio​n",
+          "\"Return requires a request from the currently controlled person, lawful original-body state, identity/location verification and one atomic control handoff; release alone never changes control.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[3].row",
+          "\"D19\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[3].decisionId​",
+          "\"T68-D11-CONTRACT-RECALL​\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[3].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[3].applicatio​n",
+          "\"Death-sensitive pending contracts read per-contract authority, term, duty, breach, ratification and handoff; no unconditional recall.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[4].row",
+          "\"D37\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[4].decisionId​",
+          "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[4].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[4].applicatio​n",
+          "\"Health/death adjudication is a read-only upstream state input; D12 never manufactures an HP death threshold.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[5].row",
+          "\"D11\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[5].decisionId​",
+          "\"T68-D16-ORGANIZATION-LI​FECYCLE\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[5].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[5].applicatio​n",
+          "\"D09/D16 organizational representatives/managers​/dissolution; OFFICE survival only and U-ORGANIZATION\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[5].execution",
+          "\"DEFER_WITH_TRACE; see heldStructuralScopes, not covered by 26 passing oracles\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[6].row",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[6].decisionId​",
+          "\"GP-07\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[6].chosenOpti​on",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[6].applicatio​n",
+          "\"D10/D11 title and upper-contract new-record proposals require item approval; U-CLAIM/U-DEATH-CLAUSES/​P-RIGHTS\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[6].execution",
+          "\"DEFER_WITH_TRACE; see heldStructuralScopes, not covered by 26 passing oracles\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[7].row",
+          "\"D22\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[7].decisionId​",
+          "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[7].chosenOpti​on",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[7].applicatio​n",
+          "\"Common unit dictionary approval before formula coefficients; sheet local IDs/Boolean/exact quantities/revisions not common-unit certification; U-COMMON-UNITS\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[7].execution",
+          "\"DEFER_WITH_TRACE; see heldStructuralScopes, not covered by 26 passing oracles\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[8].row",
+          "\"D27\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[8].decisionId​",
+          "\"T68-VARIABLE-CAPACITY\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[8].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[8].applicatio​n",
+          "\"D15 available people supply separate from command/institution modifiers; capacity decrease must not delete people or block reinforcement entry; U-SQUAD/P-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[8].execution",
+          "\"DEFER_WITH_TRACE; see heldStructuralScopes, not covered by 26 passing oracles\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[9].row",
+          "\"D30\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[9].decisionId​",
+          "\"GP-08\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[9].chosenOpti​on",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[9].applicatio​n",
+          "\"D15 command-capable state separate from skill and state-specific injury correction; leadership not obedience or capacity formula; U-SQUAD/P-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.sealed​Selections[9].execution",
+          "\"DEFER_WITH_TRACE; see heldStructuralScopes, not covered by 26 passing oracles\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.select​ionRule",
+          "\"All 37 sealed rows have explicit decisionDisposition entries preserving selected options and upstream boundaries. Decision row IDs are not domain IDs. Related negotiation, organization, unit and squad interfaces are deferred with trace, not declared irrelevant.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.resear​chLimit",
+          "\"Prior D12 comparison dossier is evidence, not Seoul authority. CK3 simultaneous-death order, partition rounding and candidate ties remain unverified; Norland pain 50 and ring inheritance are not Seoul rules.\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.gurpsL​ike.basis",
+          "\"task-25-gurps-like-basi​s-20261008/basis.json\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.gurpsL​ike.workedChecks",
+          "\"task-25-gurps-like-basi​s-20261008/worked-checks​.json\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.gurpsL​ike.relabel",
+          "\"task-25-gurps-like-basi​s-20261008/value-relabel​.json\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.gurpsL​ike.D12NumericApplicabil​ity",
+          "\"none\""
+        ],
+        [
+          "운용",
+          "d12.b11.authority.gurpsL​ike.reason",
+          "\"Death, detention and institutional adjudication are upstream facts, not a skill roll. No succession dice, critical-death shortcut or GURPS 2004 certification is asserted. Conservation arithmetic is Seoul-owned, coefficient-free.\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].row",
+          "\"D01\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].decisionId",
+          "\"GP-01\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].subdecisionKey",
+          "\"opening-policy-residual​\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].selectedLabel",
+          "\"연령·직위 제한 없이 구금은 상태로 표시하고 장소별 별도 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].boundary",
+          "\"D01/D03 opening eligibility and location; P-DETENTION/P-RETURN-FAC​T\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[0].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[0].recordPointer",
+          "\"/decisions/0\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].row",
+          "\"D02\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].decisionId",
+          "\"GP-02\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].subdecisionKey",
+          "\"routes-information-resi​dual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].selectedLabel",
+          "\"구간별 관측 시점과 사건 기반 신선도, 차단 구간에서 재계획\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].boundary",
+          "\"D06 observed routes/contact delivery; SQUAD and U-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[1].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[1].recordPointer",
+          "\"/decisions/1\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].row",
+          "\"D03\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].decisionId",
+          "\"GP-04\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].subdecisionKey",
+          "\"population-ration-resid​ual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].selectedLabel",
+          "\"거점·직능별 지급 계약과 실제 이행량 원장\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].boundary",
+          "\"D04/D02 ration and health input; no D12 ration settlement\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[2].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[2].recordPointer",
+          "\"/decisions/2\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].row",
+          "\"D04\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].decisionId",
+          "\"GP-05\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].subdecisionKey",
+          "\"production-construction​-residual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].selectedLabel",
+          "\"레시피별 자원·작업량·시설 조건을 명시\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].boundary",
+          "\"D05 production stages; pendingResource conservation only\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[3].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[3].recordPointer",
+          "\"/decisions/3\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].row",
+          "\"D05\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].decisionId",
+          "\"GP-10\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].subdecisionKey",
+          "\"knowledge-access-residu​al\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].selectedLabel",
+          "\"기술별 독립 요건표와 실제 접근 증거\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].boundary",
+          "\"D14 access requirements; BODY no copied skills/access\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[4].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[4].recordPointer",
+          "\"/decisions/4\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].row",
+          "\"D06\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].decisionId",
+          "\"GP-13\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].subdecisionKey",
+          "\"war-diplomacy-contract-​residual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].selectedLabel",
+          "\"조약별 불가분 조항·효력 사건·물리 인계 사건을 따로 명시\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].disposition",
+          "\"APPLIED_BOUNDED_WITH_UP​STREAM_DEFER\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].boundary",
+          "\"D16/D17 treaty clauses; P-WAR-END and U-DEATH-CLAUSES\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[5].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[5].recordPointer",
+          "\"/decisions/5\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].row",
+          "\"D07\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].decisionId",
+          "\"T68-D01-ISSUANCE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].subdecisionKey",
+          "\"issuance-provenance-res​idual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].selectedLabel",
+          "\"기존 승인·잠금 인물부터 사람별 승인·거절·보류\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].boundary",
+          "\"D01 individual issuance ledger; BODY registered IDs only\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[6].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[6].recordPointer",
+          "\"/decisions/6\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].row",
+          "\"D08\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].decisionId",
+          "\"T68-D07-EVALUATION-DECA​Y\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].subdecisionKey",
+          "\"relation-evaluation-res​idual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].selectedLabel",
+          "\"효과 종류별 적용 사건·종료 사건·감쇠 함수를 따로 작성\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].boundary",
+          "\"D07 relation effect lifecycle/late reports; U-RELATION-EFFECTS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[7].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[7].recordPointer",
+          "\"/decisions/7\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].row",
+          "\"D09\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].decisionId",
+          "\"T68-D09-COUNTRY-LAWS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].subdecisionKey",
+          "\"country-institutions-re​sidual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].selectedLabel",
+          "\"16국 각각 선거인·정족수·해결자·인준·대행을 명시\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].disposition",
+          "\"APPLIED_BOUNDED_WITH_UP​STREAM_DEFER\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].boundary",
+          "\"D09 country-specific procedure; OFFICE/P-COUNTRIES\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[8].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[8].recordPointer",
+          "\"/decisions/8\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].row",
+          "\"D10\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].decisionId",
+          "\"T68-D12-PERMANENT-DETEN​TION\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].subdecisionKey",
+          "\"detention-return-residu​al\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].selectedLabel",
+          "\"현재 조작 인물의 요청과 원래 몸의 적법 상태를 확인한 단일 전환\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].disposition",
+          "\"APPLIED_BOUNDED_WITH_UP​STREAM_DEFER\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].boundary",
+          "\"D12 requester-based RETURN; P-DETENTION/P-RETURN-FAC​T\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[9].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[9].recordPointer",
+          "\"/decisions/9\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].row",
+          "\"D11\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].decisionId",
+          "\"T68-D16-ORGANIZATION-LI​FECYCLE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].subdecisionKey",
+          "\"organization-persistenc​e-residual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].selectedLabel",
+          "\"기존 조직별 적법 대표·관리자·해산 조항을 명시\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].boundary",
+          "\"D09/D16 organizational representatives/managers​/dissolution; OFFICE survival only and U-ORGANIZATION\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[10].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[10].recordPointer",
+          "\"/decisions/10\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].row",
+          "\"D12\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].decisionId",
+          "\"T68-D17-PRICE-ACCEPTANC​E\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].subdecisionKey",
+          "\"negotiation-contract-re​sidual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].selectedLabel",
+          "\"자산 가치·행위 비용·개별 수락 조건을 분리\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].boundary",
+          "\"D17 price/action cost/acceptance separated; reacceptance snapshot held in U-DEATH-CLAUSES/P-WAR-EN​D\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[11].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[11].recordPointer",
+          "\"/decisions/11\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].row",
+          "\"D13\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].decisionId",
+          "\"T68-PF-03\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].subdecisionKey",
+          "\"cast-backfill-residual\"​"
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].selectedLabel",
+          "\"필드별 원문·수정값·영구 ID를 묶어 개별 처분\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].boundary",
+          "\"D01 field-specific person source/approval; no actual person edits\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[12].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[12].recordPointer",
+          "\"/decisions/12\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].row",
+          "\"D14\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].decisionId",
+          "\"T68-PF-05\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].subdecisionKey",
+          "\"candidate-roster-residu​al\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].chosenOption",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].selectedLabel",
+          "\"신원 매핑을 먼저 승인하고 payload는 후속 개별 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].boundary",
+          "\"D01 identity mapping before payload approval; fixture IDs not issuance\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[13].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[13].recordPointer",
+          "\"/decisions/13\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].row",
+          "\"D15\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].decisionId",
+          "\"T68-PF-06\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].subdecisionKey",
+          "\"unit-identity-policy-re​sidual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].chosenOption",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].selectedLabel",
+          "\"유형 매핑을 먼저 승인하고 인스턴스를 별도 발급\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].boundary",
+          "\"D15 type mapping before instance issuance; U-SQUAD no automatic hero creation\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[14].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[14].recordPointer",
+          "\"/decisions/14\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].row",
+          "\"D16\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].decisionId",
+          "\"T68-PF-07\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].subdecisionKey",
+          "\"population-generation-p​olicy-residual\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].selectedLabel",
+          "\"집계 구성원 토큰을 고정하고 개인화 시 같은 토큰을 영구 ID로 연결\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].boundary",
+          "\"D04 fixed member-token identity/extraction/retu​rn; U-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[15].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[15].recordPointer",
+          "\"/decisions/15\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].row",
+          "\"D17\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].decisionId",
+          "\"GP-07\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].subdecisionKey",
+          "\"titles-ratification\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].chosenOption",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].selectedLabel",
+          "\"미배정 레코드까지 새 설정안으로 작성해 항목별 승인받는다\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].boundary",
+          "\"D10/D11 title and upper-contract new-record proposals require item approval; U-CLAIM/U-DEATH-CLAUSES/​P-RIGHTS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[16].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[16].recordPointer",
+          "\"/decisions/16\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].row",
+          "\"D18\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].decisionId",
+          "\"GP-11\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].subdecisionKey",
+          "\"command-evaluation-inte​rface\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].selectedLabel",
+          "\"결정 당시 인지·권한·실행 가능성과 사후 성과를 각각 기록\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].boundary",
+          "\"D03/D07 decision-time knowledge/authority versus later performance; U-DEATH-CLAUSES command responsibility\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[17].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[17].recordPointer",
+          "\"/decisions/17\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].row",
+          "\"D19\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].decisionId",
+          "\"T68-D11-CONTRACT-RECALL​\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].subdecisionKey",
+          "\"grant-recall\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].selectedLabel",
+          "\"계약별 권한·기간·의무·위반·인준·인계를 명시\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].disposition",
+          "\"APPLIED_BOUNDED_WITH_UP​STREAM_DEFER\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].boundary",
+          "\"D11 per-contract terms/death/ratification​/handoff; U-DEATH-CLAUSES/P-RIGHTS​\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[18].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[18].recordPointer",
+          "\"/decisions/18\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].row",
+          "\"D20\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].decisionId",
+          "\"T68-PF-01\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].subdecisionKey",
+          "\"cast-values\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].selectedLabel",
+          "\"18 잠금 보존·신원 대조부터 시작해 나머지 사람별/축별 검토\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].boundary",
+          "\"D01/D02 preserve locked values and approve per axis; BODY non-transfer only\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[19].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[19].recordPointer",
+          "\"/decisions/19\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].row",
+          "\"D21\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].decisionId",
+          "\"T68-PF-02\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].subdecisionKey",
+          "\"organization-values\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].selectedLabel",
+          "\"조직별 필드·정책마다 원문 근거와 별도 처분\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].boundary",
+          "\"D09 organization field/source/policy approvals; U-ORGANIZATION\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[20].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[20].recordPointer",
+          "\"/decisions/20\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].row",
+          "\"D22\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].decisionId",
+          "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].subdecisionKey",
+          "\"seoul-assumptions\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].chosenOption",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].selectedLabel",
+          "\"먼저 정규화된 공통 입력 단위를 승인하고 공식·계수는 후속 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].boundary",
+          "\"Common unit dictionary approval before formula coefficients; sheet local IDs/Boolean/exact quantities/revisions not common-unit certification; U-COMMON-UNITS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[21].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[21].recordPointer",
+          "\"/decisions/21\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].row",
+          "\"D23\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].decisionId",
+          "\"T68-TRAINING-SKILL-SPEC​IFIC\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].subdecisionKey",
+          "\"training-numeric-conver​sion\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].selectedLabel",
+          "\"기술별 검증된 연습량→미사용 성장점→명시 사용\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].boundary",
+          "\"D14 practice -> unspent growth points -> explicit spending; BODY no skill copying\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[22].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[22].recordPointer",
+          "\"/decisions/22\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].row",
+          "\"D24\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].decisionId",
+          "\"T68-COMBAT-THREE-DIMENS​IONS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].subdecisionKey",
+          "\"three-scope-calculation​\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].selectedLabel",
+          "\"개인 결과를 상황 보정 후 부대에 집계하며 손실 원장을 하나로 결속\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].boundary",
+          "\"D15 three-scope casualty single ledger; confirmed deathSet input only, upstream loss aggregation deferred\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[23].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[23].recordPointer",
+          "\"/decisions/23\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].row",
+          "\"D25\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].decisionId",
+          "\"G1\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].subdecisionKey",
+          "\"two-pilot-source-certif​ication\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].selectedLabel",
+          "\"의도15를 보존하고 점수·파생값 재조정안을 별도 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].boundary",
+          "\"D01 pilot Spear/CP readjustment separately approved; no D12 Spear input\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[24].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[24].recordPointer",
+          "\"/decisions/24\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].row",
+          "\"D26\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].decisionId",
+          "\"G2\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].subdecisionKey",
+          "\"issuance-source-certifi​cation\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].chosenOption",
+          "\"B\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].selectedLabel",
+          "\"서울 독자 기술·TL·언어 계약을 작성해 개별 승인 후 발급\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].boundary",
+          "\"D01 Seoul skills/TL/language individually approved; BODY no skill copying\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[25].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[25].recordPointer",
+          "\"/decisions/25\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].row",
+          "\"D27\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].decisionId",
+          "\"T68-VARIABLE-CAPACITY\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].subdecisionKey",
+          "\"capacity-numeric-input\"​"
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].selectedLabel",
+          "\"공급 가능한 인원을 기반으로 지휘·기관 보정을 분리\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].boundary",
+          "\"D15 available people supply separate from command/institution modifiers; capacity decrease must not delete people or block reinforcement entry; U-SQUAD/P-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[26].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[26].recordPointer",
+          "\"/decisions/26\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].row",
+          "\"D28\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].decisionId",
+          "\"GP-02\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].subdecisionKey",
+          "\"personal-movement\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].selectedLabel",
+          "\"Lite Move/짐 구조를 참고하고 야외·터널 보정을 서울 별도표로 작성\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].boundary",
+          "\"D06 public Move/load structure plus separately approved terrain modifiers; actual location consumed, no movement computed\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[27].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[27].recordPointer",
+          "\"/decisions/27\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].row",
+          "\"D29\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].decisionId",
+          "\"GP-04\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].subdecisionKey",
+          "\"health-personal-effects​\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].selectedLabel",
+          "\"HP/FP 신체 상태와 욕구·기분·노동 효과를 별도 상태로 연결\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].boundary",
+          "\"D02 HP/FP separate from needs/mood/labor; upstream death fact consumed, no death threshold invented\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[28].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[28].recordPointer",
+          "\"/decisions/28\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].row",
+          "\"D30\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].decisionId",
+          "\"GP-08\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].subdecisionKey",
+          "\"capacity-personal-input​s\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].selectedLabel",
+          "\"지휘 가능한 상태와 기술 보정을 분리하고 부상은 상태별 보정\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].boundary",
+          "\"D15 command-capable state separate from skill and state-specific injury correction; leadership not obedience or capacity formula; U-SQUAD/P-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[29].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[29].recordPointer",
+          "\"/decisions/29\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].row",
+          "\"D31\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].decisionId",
+          "\"GP-10\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].subdecisionKey",
+          "\"skill-training\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].selectedLabel",
+          "\"Lite 해당 항목은 직접 근거, 누락/VH/Teaching은 서울 독자 항목으로 작성\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].boundary",
+          "\"D14 direct public Lite items versus separately approved omitted/VH/Teaching values; no learning computation\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[30].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[30].recordPointer",
+          "\"/decisions/30\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].row",
+          "\"D32\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].decisionId",
+          "\"GP-11\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].subdecisionKey",
+          "\"combat-calculation\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].selectedLabel",
+          "\"Lite 3d6·방어·DR/부상 구조와 서울 실시간 실행·보정표를 분리\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].boundary",
+          "\"D15 public roll/defense/DR separate from Seoul realtime intervals/modifiers; confirmed death input and P-TIME only\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[31].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[31].recordPointer",
+          "\"/decisions/31\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].row",
+          "\"D33\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].decisionId",
+          "\"T68-D01-ISSUANCE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].subdecisionKey",
+          "\"issuance-numerics\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].selectedLabel",
+          "\"인물별 예산·근거·파생값을 명세로 개별 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].boundary",
+          "\"D01 person-specific budgets/derived values need individual approval; fixture values not approved\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[32].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[32].recordPointer",
+          "\"/decisions/32\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].row",
+          "\"D34\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].decisionId",
+          "\"T68-PF-04\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].subdecisionKey",
+          "\"gurps-corpus\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].selectedLabel",
+          "\"원값·잠금·판정을 보존하고 출처 재분류 후 항목별 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].boundary",
+          "\"D01 numeric source reclassification preserves locks/verdicts; no existing values altered\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[33].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[33].recordPointer",
+          "\"/decisions/33\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].row",
+          "\"D35\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].decisionId",
+          "\"T68-PF-06\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].subdecisionKey",
+          "\"unit-numeric-matching\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].selectedLabel",
+          "\"고용 계약 가격과 능력·장비 적격을 분리\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].boundary",
+          "\"D15 hiring contract price separate from capability/equipment eligibility; U-SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[34].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[34].recordPointer",
+          "\"/decisions/34\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].row",
+          "\"D36\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].decisionId",
+          "\"T68-PF-07\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].subdecisionKey",
+          "\"generated-attributes-sk​ills\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].selectedLabel",
+          "\"개인 행동·수련 근거 우선, 부족 항목만 시드 기반 후보 후 승인\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].disposition",
+          "\"DEFER_WITH_TRACE\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].boundary",
+          "\"D04/D01 personal action/training evidence then seeded proposals with approval; U-SQUAD no generated leader attributes\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[35].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[35].recordPointer",
+          "\"/decisions/35\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].row",
+          "\"D37\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].decisionId",
+          "\"T68-NUMERIC-DESIGN-ASSU​MPTIONS\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].subdecisionKey",
+          "\"health-derived-assumpti​ons\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].chosenOption",
+          "\"A\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].selectedLabel",
+          "\"승인 신체 상태를 읽기 전용 입력으로 쓰고 효과별 일회 정산\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].disposition",
+          "\"APPLIED_BOUNDED_WITH_UP​STREAM_DEFER\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].boundary",
+          "\"D02 read-only approved health input and once-per-effect settlement; confirmed fact and event replay only\""
+        ],
+        [
+          "운용",
+          "d12.b11.decisionDisposit​ion[36].scope",
+          "\"Preserve selected direction; no new concrete values/records approved.\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.decisionDisposit​ion[36].recordPointer",
+          "\"/decisions/36\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[0].id​",
+          "\"BODY\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[0].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[0].al​gorithm",
+          "\"On adjudicated death/permanent detention of controlled subject, use eligible live designation else first eligible live institution-order person; known empty candidates ends path; unknown order holds selection. All same-boundary dead IDs excluded. Move viewpoint to successor actual location, never copy rights, skills, trust, knowledge or unaccepted commands.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[0].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[0].ex​ecutionCoverage",
+          "\"BOUNDED_BODY_STATE_ONLY​\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[1].id​",
+          "\"RETURN\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[1].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[1].al​gorithm",
+          "\"Release does not switch. Explicit return accepts requestFrom=current body and registered original-body ID, alive/released/lawful identity and location facts; missing lawful fact holds, false rejects. No second body and no body teleport.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[1].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[1].ex​ecutionCoverage",
+          "\"BOUNDED_BODY_STATE_ONLY​\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[2].id​",
+          "\"OFFICE\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[2].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[2].al​gorithm",
+          "\"Death vacates that subject's offices; consume only ratified eligible country-resolver result; nomination alone leaves vacancy. Institution/treasury survives; missing procedure stays pending; no anonymous holder.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[2].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[2].ex​ecutionCoverage",
+          "\"BOUNDED_VACANCY_AND_SUP​PLIED_AWARD_ONLY\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[3].id​",
+          "\"ESTATE\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[3].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[3].al​gorithm",
+          "\"Death opens review; consume valid authorized whole-asset assignment only; retain encumbrance, reservation, custody, location and route. No legal result means held estate, not equal split. Institutional assets remain institutional. Detention opens no inheritance.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[3].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[3].ex​ecutionCoverage",
+          "\"BOUNDED_WHOLE_ASSET_AWA​RD_ONLY\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[4].id​",
+          "\"WAR-COMMAND\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[4].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[4].al​gorithm",
+          "\"Death rechecks registered cause, legal target, qualified beneficiary and support/consent before responsible person. Eligible beneficiary is victory-right candidate, not attacker. Personal/office promises judged per clause; pending death-affected commands rechecked, completed progress and spent supplies remain. Ending choice remains proposal.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[4].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[4].ex​ecutionCoverage",
+          "\"BOUNDED_RECHECK_ONLY\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[5].id​",
+          "\"CLAIM\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[5].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[5].al​gorithm",
+          "\"Pressed claim becomes unpressed for each eligible child through the D10 adjudication; unpressed claim not inherited by this path; spouse/title/office eligibility never interchangeable.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[5].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[5].ex​ecutionCoverage",
+          "\"UNVERIFIED\""
+        ],
+        [
+          "역사 참조",
+          "d12.b11.mechanisms[6].id​",
+          "\"SQUAD\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[6].ap​proved",
+          "true"
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[6].al​gorithm",
+          "\"Remaining soldiers select temporary soldier leader; same order class, weaker effect, no automatic hero class/campaign role. Selection procedure and weakening magnitude remain proposal. New body remote orders additionally require actual command relation, same-faction valid contract, contact/delivery, receipt and acceptance.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[6].ap​provalMeaning",
+          "\"Rule authority only; approved does not mean execution verified.\""
+        ],
+        [
+          "운용",
+          "d12.b11.mechanisms[6].ex​ecutionCoverage",
+          "\"UNVERIFIED\""
+        ]
+      ]
+    }
   ]
- },
- "blocks": [
-  {
-   "id": "archify.b1",
-   "kind": "heading",
-   "level": 1,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D12 아치파이 — 후계·사망·본체 전환 전체 논리"
-    }
-   ]
-  },
-  {
-   "id": "archify.b2",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 페이지는 후계·사망·본체 전환 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b3",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "기계 입력과 검증 흐름"
-    }
-   ]
-  },
-  {
-   "id": "archify.b4",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "archify",
-   "text": "{\"domainId\":\"D12\",\"diagramId\":\"d12-flow\",\"moduleTitle\":\"D12 운용 흐름\"}"
-  },
-  {
-   "id": "archify.b5",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "소비자 계약(conservation-and-lifecycle-no-roll): At most one controlled body; quantity/consumed/progress conserved. Death trigger comes from D02 fact, not margin. Detention/release do not auto-switch control or copy predecessor abilities."
-    }
-   ]
-  },
-  {
-   "id": "archify.b6",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "계산과 출력"
-    }
-   ]
-  },
-  {
-   "id": "archify.b7",
-   "kind": "codeFence",
-   "fence": "```",
-   "info": "text",
-   "text": "controlCount [] body=null ? 0 : 1\nassetConservation [] sum(quantity before) = sum(quantity after)\npendingResource [] spent_after=spent_before; progress_after=progress_before\nrevision [] accepted new event: v_after=v_before+1; duplicate/reject: v_after=v_before\nD12-F1 [후보·승인 전] controlCount=(body==null?0:1); sum(assetQuantityBefore)=sum(assetQuantityAfter); consumedAfter=consumedBefore; progressAfter=progressBefore\nD12-F2 [후보·승인 전] new accepted event revision+1; exact replay/reject unchanged; office/title/property succession independently resolved\n"
-  },
-  {
-   "id": "archify.b8",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "D12의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 보존한다. 역사 참조식과 미결 값은 운용 간선에 넣지 않는다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b9",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "상태 필드와 보존 경계"
-    }
-   ]
-  },
-  {
-   "id": "archify.b10",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "version — safe nonnegative integer (ledger revision)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "body — person ID | null (one controlled person)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "people — Person[] (permanent identity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "designation — eligible registered person ID | null (person ID)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "order — registered eligible person ID[] | null (institutional ordered candidates)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "offices — Office[] (office ID/holder/institution)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "assets — Asset[] (asset ID/exact integer quantity)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "commands — Command[] (command ID)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "wars — War[] (war ID)"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "history — event ID -> payload/receipt (event identity)"
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b11",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "자료 소유자는 D12 event/control ledger, 유지 계약은 controlCount·assetConservation·pendingResource·revision다. 상태 소유 경계는 controlled body 0..1,confirmed D02 death/detention,designation/registered order,office/right/estate awards,commands and consumed progress. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
-    }
-   ]
-  },
-  {
-   "id": "archify.b12",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "오류·보류 코드"
-    }
-   ]
-  },
-  {
-   "id": "archify.b13",
-   "kind": "list",
-   "ordered": false,
-   "items": [
-    [
-     {
-      "kind": "text",
-      "text": "후보 오류: E_POLICY, E_CONSERVATION, E_EXTERNAL_ORDER"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "기존 평가기 오류: E_TYPE, E_ID, E_VERSION, E_EVENT_COLLISION, E_FACT, E_AUTHORITY, E_CONSERVATION, E_SCHEMA"
-     }
-    ],
-    [
-     {
-      "kind": "text",
-      "text": "어댑터 결합 규칙: tagged unresolved -> Held E_UNRESOLVED; malformed missing required key -> Rejected E_INPUT; stale -> E_REVISION; unit -> E_UNIT; conservation -> E_CONSERVATION. Authority/consent/feasibility privately distinct."
-     }
-    ]
-   ]
-  },
-  {
-   "id": "archify.b14",
-   "kind": "heading",
-   "level": 2,
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "차용 제거와 적용 범위"
-    }
-   ]
-  },
-  {
-   "id": "archify.b15",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "제거 대상 차용 산식: —. No confirmed GURPS arithmetic in inspected formulaSheet/evaluator; retain ordinary counts, sets, sums and policy locks. D09 reference explicitly invokes no contest."
-    }
-   ]
-  },
-  {
-   "id": "archify.b16",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "이 도메인에는 아직 기록된 신규 모듈 적용 항목이 없다."
-    }
-   ]
-  },
-  {
-   "id": "archify.b17",
-   "kind": "paragraph",
-   "inlines": [
-    {
-     "kind": "text",
-     "text": "현재 범위 한계: No domain-specific new original-trpg module. Reuse existing original bounded contracts; do not mark everything undecided. 다음 구현 단위는 U-D12-independent-succession-settlement(TOOL/tools/mechanisms/original-trpg/independent-succession-settlement.mjs, TOOL/tools/mechanisms/original-trpg/independent-succession-settlement.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
-    }
-   ]
-  }
- ]
 }
