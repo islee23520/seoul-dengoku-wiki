@@ -3,76 +3,178 @@
   "domain": "places",
   "id": "DOC:World-and-Subway-Layers",
   "slug": "world-and-subway-layers",
-  "categories": [
-    "places"
-  ],
+  "categories": ["places"],
   "status": "draft",
-  "tense": {
-    "en": "past",
-    "ko": "past"
-  },
+  "tense": {"en": "past", "ko": "past"},
   "provenance": {
     "original_anchor": "lore/places/World-and-Subway-Layers.md",
     "original_hash": "7672631e4bcc7fdd52b6419721a7d32e4b8a1162f204251dcf676449dac7cdc6",
     "history": [
       "Korean lore/places/World-and-Subway-Layers.md SHA-256 7672631e4bcc7fdd52b6419721a7d32e4b8a1162f204251dcf676449dac7cdc6.",
-      "English lore/places/World-and-Subway-Layers.en.md SHA-256 716dc11fb6c7476e8ba63682b0f04827c9fa9182bc8715260557e9296b556c11; copied verbatim, no translation written."
+      "English lore/places/World-and-Subway-Layers.en.md SHA-256 716dc11fb6c7476e8ba63682b0f04827c9fa9182bc8715260557e9296b556c11; copied verbatim, no translation written.",
+      "2026-10-09 remediation of PR #544 head 342c7e332acd86bcc9b40d3c6f42756e746e0eb7 onto main 1c74267c0954b7148d5dd937e33fb5b14c4ce7c0: preserve the three-state map description; import the independently verified 2021-01-08 selected-station minima and fictional intermediate/deep underground ranges. The user authorized this integration without changing territory, person identities or portraits."
     ]
   },
   "source": {
     "kind": "original-fiction",
-    "refs": [
-      "lore/places/World-and-Subway-Layers.md",
-      "lore/places/World-and-Subway-Layers.en.md"
-    ]
+    "refs": ["lore/places/World-and-Subway-Layers.md", "lore/places/World-and-Subway-Layers.en.md", "lore/places/sources/Winter-Climate-20210108.json"]
   },
   "locales": {
-    "en": {
-      "title": "World Map",
-      "summary": "Seoul's opening-day territory map.",
-      "tense": "past"
-    },
-    "ko": {
-      "title": "세계 지도",
-      "summary": "개막일 서울의 영토 지도.",
-      "tense": "past"
-    }
+    "en": {"title": "World Map", "summary": "Opening-day holdings, rail locations, and living conditions at different station depths in perpetual winter.", "tense": "past"},
+    "ko": {"title": "세계 지도", "summary": "개막일 영토와 철도 위치, 영원한 겨울 속 역사의 깊이에 따른 생활 환경.", "tense": "past"}
   },
   "content": [
+    {"kind": "heading", "anchor": "서울과-지하철-레이어", "depth": 1, "text": {"en": "World Map", "ko": "세계 지도"}},
     {
-      "kind": "heading",
-      "anchor": "서울과-지하철-레이어",
-      "depth": 1,
-      "text": {
-        "en": "World Map",
-        "ko": "세계 지도"
-      }
-    },
-    {
-      "kind": "paragraph",
-      "anchor": "지도-표시-범위",
+      "kind": "paragraph", "anchor": "지도-표시-범위",
       "text": {
         "en": "The map shows opening-day surface holdings alongside mapped rail locations. A rail line on the map does not establish passage at the opening.",
         "ko": "지도에는 개막일의 지상 점유지와 철도 위치가 함께 표시된다. 선로 표시는 개막일 통행 가능 여부를 뜻하지 않는다."
       }
     },
     {
-      "kind": "table",
-      "anchor": "지도-표시-항목",
-      "columns": [
-        { "en": "Map layer", "ko": "표시 항목" },
-        { "en": "Coverage", "ko": "범위" }
-      ],
+      "kind": "table", "anchor": "지도-표시-항목",
+      "columns": [{"en": "Map layer", "ko": "표시 항목"}, {"en": "Coverage", "ko": "범위"}],
+      "rows": [
+        [{"en": "Surface holdings", "ko": "지상 점유"}, {"en": "The three states and their vassals at the opening", "ko": "개막일 세 국가와 봉신"}],
+        [{"en": "Rail locations", "ko": "철도 위치"}, {"en": "Mapped stations and tracks", "ko": "지도에 기록된 역과 선로"}]
+      ]
+    },
+    {"kind": "heading", "anchor": "겨울과-역사의-깊이", "depth": 2, "text": {"ko": "겨울과 역사의 깊이", "en": "Winter and Station Depth"}},
+    {
+      "kind": "paragraph", "anchor": "지상과-지하의-겨울",
+      "text": {
+        "ko": "계절은 영원한 겨울에 머물지만 지역마다 지상의 추위는 다르다. 지상의 기온은 2021년 1월 8일 각 시·도 대표 관측소의 일최저기온을 기준으로 한다. 서울 지상과 지상 승강장은 −18.6℃에 맞춰 방한하며, 다른 지역은 아래 표의 해당 시·도 기온에 따라 옷의 두께와 소재가 달라진다. 지하철뿐 아니라 광역전철·고속철도·일반철도 등 철로가 놓인 역에서도 지상에 노출된 곳과 지하 생활권을 구분한다.",
+        "en": "The season remains an unending winter, but surface cold varies by region. Surface temperatures use the daily minimum recorded at each region's representative weather station on 8 January 2021. Seoul's surface and exposed platforms use −18.6°C; clothing elsewhere varies in thickness and fabric with the matching regional value below. Stations with railway tracks, including metro, regional, high-speed, and conventional railways, distinguish exposed areas from underground living quarters."
+      }
+    },
+    {
+      "kind": "paragraph", "anchor": "깊이별-지하-생활권",
+      "text": {
+        "ko": "생활 환경은 지상, 중간 깊이 지하, 깊은 지하의 세 단계로 나뉜다. 지상 가까운 지하도 그 지역의 지상보다는 따뜻하며, 중간 깊이 지하 생활권에 속한다. 지하 생활권의 기본 기온은 중간 깊이 8–18℃, 깊은 지하 18–22℃다. 지하의 지역별 온도 차이는 지상보다 작으며, 지상의 기온 차이가 지하에 같은 폭으로 이어지지는 않는다. 사람들은 먼저 머무는 단계의 기온에 맞춰 보온 겹을 고르고, 같은 깊이 안에서 하는 일과 개인의 추위 민감도에 따라 옷을 더하거나 덜어 낸다. 지하 기온 범위는 이 세계의 생활 환경을 나타내는 설정값이며 실제 역의 관측값은 아니다.",
+        "en": "Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the fictional living environment, not measured station temperatures."
+      }
+    },
+    {"kind": "heading", "anchor": "시도별-지상-기온", "depth": 3, "text": {"ko": "시·도별 지상 기온", "en": "Regional Surface Temperatures"}},
+    {
+      "kind": "paragraph", "anchor": "시도-기온의-관측-기준",
+      "text": {
+        "ko": "표는 2021년 당시의 17개 시·도 명칭을 사용한다. 대표 관측소는 각 시·도의 기준으로 사용할 기상청 관측소 한 곳을 선정한 것이다. 각 값은 그 관측소에서 측정한 그날의 일최저기온으로, 세계의 시·도별 지상 기온 기준으로 삼는다. 시·도 전체의 평균이나 가장 낮은 관측값, 철도 승강장의 실측값을 뜻하지 않는다. 대표 관측소 이름을 누르면 해당 월의 기상청 원자료에서 8일 기록을 확인할 수 있다.",
+        "en": "The table uses the names of the seventeen first-level regions in 2021. One Korea Meteorological Administration station is selected to represent each region. Each value is that station’s daily minimum, adopted as the fictional surface reference for that region. It is neither a region-wide mean or minimum nor a rail-platform measurement. Each station name links to the official monthly source containing the record for the eighth day."
+      }
+    },
+    {
+      "kind": "table", "anchor": "시도별-지상-기온표",
+      "columns": [{"ko": "시·도", "en": "Region"}, {"ko": "대표 관측소", "en": "Representative station"}, {"ko": "지상 기온 기준", "en": "Surface reference"}],
       "rows": [
         [
-          { "en": "Surface holdings", "ko": "지상 점유" },
-          { "en": "The three states and their vassals at the opening", "ko": "개막일 세 국가와 봉신" }
+          {"ko": "서울특별시", "en": "Seoul"},
+          {"ko": [{"text": "서울 (108)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=108&yy=2021&mm=1&obs=1"}], "en": [{"text": "Seoul (108)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=108&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−18.6℃", "en": "−18.6°C"}
         ],
         [
-          { "en": "Rail locations", "ko": "철도 위치" },
-          { "en": "Mapped stations and tracks", "ko": "지도에 기록된 역과 선로" }
+          {"ko": "부산광역시", "en": "Busan"},
+          {"ko": [{"text": "부산 (159)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=159&yy=2021&mm=1&obs=1"}], "en": [{"text": "Busan (159)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=159&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−12.2℃", "en": "−12.2°C"}
+        ],
+        [
+          {"ko": "대구광역시", "en": "Daegu"},
+          {"ko": [{"text": "대구 (143)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=143&yy=2021&mm=1&obs=1"}], "en": [{"text": "Daegu (143)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=143&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−13.6℃", "en": "−13.6°C"}
+        ],
+        [
+          {"ko": "인천광역시", "en": "Incheon"},
+          {"ko": [{"text": "인천 (112)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2021&mm=1&obs=1"}], "en": [{"text": "Incheon (112)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=112&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−17.5℃", "en": "−17.5°C"}
+        ],
+        [
+          {"ko": "광주광역시", "en": "Gwangju"},
+          {"ko": [{"text": "광주 (156)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=156&yy=2021&mm=1&obs=1"}], "en": [{"text": "Gwangju (156)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=156&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−13.5℃", "en": "−13.5°C"}
+        ],
+        [
+          {"ko": "대전광역시", "en": "Daejeon"},
+          {"ko": [{"text": "대전 (133)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=133&yy=2021&mm=1&obs=1"}], "en": [{"text": "Daejeon (133)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=133&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−17.5℃", "en": "−17.5°C"}
+        ],
+        [
+          {"ko": "울산광역시", "en": "Ulsan"},
+          {"ko": [{"text": "울산 (152)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=152&yy=2021&mm=1&obs=1"}], "en": [{"text": "Ulsan (152)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=152&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−12.2℃", "en": "−12.2°C"}
+        ],
+        [
+          {"ko": "세종특별자치시", "en": "Sejong"},
+          {"ko": [{"text": "세종 (239)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=239&yy=2021&mm=1&obs=1"}], "en": [{"text": "Sejong (239)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=239&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−17.9℃", "en": "−17.9°C"}
+        ],
+        [
+          {"ko": "경기도", "en": "Gyeonggi-do"},
+          {"ko": [{"text": "수원 (119)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=119&yy=2021&mm=1&obs=1"}], "en": [{"text": "Suwon (119)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=119&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−18.4℃", "en": "−18.4°C"}
+        ],
+        [
+          {"ko": "강원도", "en": "Gangwon-do"},
+          {"ko": [{"text": "춘천 (101)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=101&yy=2021&mm=1&obs=1"}], "en": [{"text": "Chuncheon (101)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=101&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−21.9℃", "en": "−21.9°C"}
+        ],
+        [
+          {"ko": "충청북도", "en": "Chungcheongbuk-do"},
+          {"ko": [{"text": "청주 (131)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=131&yy=2021&mm=1&obs=1"}], "en": [{"text": "Cheongju (131)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=131&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−16.3℃", "en": "−16.3°C"}
+        ],
+        [
+          {"ko": "충청남도", "en": "Chungcheongnam-do"},
+          {"ko": [{"text": "홍성 (177)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=177&yy=2021&mm=1&obs=1"}], "en": [{"text": "Hongseong (177)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=177&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−17.6℃", "en": "−17.6°C"}
+        ],
+        [
+          {"ko": "전라북도", "en": "Jeollabuk-do"},
+          {"ko": [{"text": "전주 (146)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=146&yy=2021&mm=1&obs=1"}], "en": [{"text": "Jeonju (146)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=146&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−16.5℃", "en": "−16.5°C"}
+        ],
+        [
+          {"ko": "전라남도", "en": "Jeollanam-do"},
+          {"ko": [{"text": "목포 (165)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=165&yy=2021&mm=1&obs=1"}], "en": [{"text": "Mokpo (165)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=165&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−12.8℃", "en": "−12.8°C"}
+        ],
+        [
+          {"ko": "경상북도", "en": "Gyeongsangbuk-do"},
+          {"ko": [{"text": "안동 (136)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=136&yy=2021&mm=1&obs=1"}], "en": [{"text": "Andong (136)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=136&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−15.7℃", "en": "−15.7°C"}
+        ],
+        [
+          {"ko": "경상남도", "en": "Gyeongsangnam-do"},
+          {"ko": [{"text": "창원 (155)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=155&yy=2021&mm=1&obs=1"}], "en": [{"text": "Changwon (155)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=155&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−14℃", "en": "−14°C"}
+        ],
+        [
+          {"ko": "제주특별자치도", "en": "Jeju"},
+          {"ko": [{"text": "제주 (184)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=184&yy=2021&mm=1&obs=1"}], "en": [{"text": "Jeju (184)", "href": "https://www.weather.go.kr/w/weather/land/past-obs/obs-by-day.do?stn=184&yy=2021&mm=1&obs=1"}]},
+          {"ko": "−2.7℃", "en": "−2.7°C"}
         ]
       ]
+    },
+    {
+      "kind": "paragraph", "anchor": "환승역의-깊이와-이동",
+      "text": {
+        "ko": "환승역의 여러 승강장은 같은 역 이름 아래 있어도 서로 다른 깊이에 놓인다. 대합실과 통로를 오가는 사람의 옷차림도 실제로 머무는 층을 따른다. 지상 야외로 나서는 전령과 호위는 지하에서 벗어 둔 방한 외투를 다시 챙긴다. 지상층 입구까지만 다녀오고 야외로 나가지 않는다면, 그곳의 실내 기온에 맞춰 입는다.",
+        "en": "Platforms at an interchange can lie at different depths despite sharing a station name. Clothing follows the level where a person actually stays, including concourses and passages. Couriers and escorts heading outdoors retrieve the insulated outerwear they removed below. A trip only to an indoor ground-level entrance calls for clothing suited to the indoor temperature, not an outdoor coat by default."
+      }
+    },
+    {
+      "kind": "paragraph", "anchor": "깊이와-생업의-복식-연결",
+      "text": {
+        "ko": [
+          {"text": "같은 깊이에서도 생업에 따라 달라지는 옷차림은 "},
+          {"text": "인물·세력·생업", "link": {"domain": "characters", "slug": "Characters-Factions-and-Professions", "anchor": "깊이와-생업에-따른-옷차림"}},
+          {"text": "에서 살펴볼 수 있다."}
+        ],
+        "en": [
+          {"text": "For clothing differences between trades at the same depth, see "},
+          {"text": "Characters, Factions, and Trades", "link": {"domain": "characters", "slug": "Characters-Factions-and-Professions", "anchor": "깊이와-생업에-따른-옷차림"}},
+          {"text": "."}
+        ]
+      }
     }
   ],
   "data": {}
