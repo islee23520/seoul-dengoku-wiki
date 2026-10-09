@@ -373,7 +373,7 @@ function gateProbe(fixture) {
             const entry = node.initializer.elements[fixture.tsProperty.entry];
             target = entry.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast).replaceAll('"', '') === fixture.tsProperty.property)?.initializer;
           }
-          if (fixture.tsProperty.map === 'attrExplain' && ts.isVariableDeclaration(node) && node.name.getText(ast) === 'attrExplain' && ts.isObjectLiteralExpression(node.initializer)) {
+          if (fixture.tsProperty.map === 'valueMeta' && ts.isVariableDeclaration(node) && node.name.getText(ast) === 'valueMeta' && ts.isObjectLiteralExpression(node.initializer)) {
             const entry = node.initializer.properties[fixture.tsProperty.entry];
             target = entry.initializer.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast) === fixture.tsProperty.property)?.initializer;
           }
@@ -431,31 +431,31 @@ test('production gate excludes unused tooltip and private person metadata but ca
   assert.equal(privatePerson.status, 0, privatePerson.output)
   const unused = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateMetadata = {'approval': '사용자 확정'}\n" })
   assert.equal(unused.status, 0, unused.output)
-  const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' } })
+  const consumed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsProperty: { map: 'valueMeta', entry: 0, property: 'plus', value: '사용자 확정' } })
   assert.equal(consumed.status, 1, consumed.output)
-  assert.match(consumed.output, /tooltips/u)
+  assert.match(consumed.output, /editorial-marker: src\/pages\/PersonDetailPage.tsx#\/tooltips\/valueMeta\/0\/plus/u)
   // 무관 객체의 skillExplain 속성 키는 소비가 아니다: 게이트는 통과해야 한다.
   const propertyKey = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', append: "\nconst privateDiagnostics = { skillExplain: 'private-only' };\n" })
   assert.equal(propertyKey.status, 0, propertyKey.output)
   // 실제 소비 맵의 표지는 미사용 같은이름 지역 선언이 가리지 못한다: 여전히 실패해야 한다.
   const shadow = gateProbe({
     file: 'src/pages/PersonDetailPage.tsx',
-    tsProperty: { map: 'attrExplain', entry: 0, property: 'desc', value: '사용자 확정' },
-    append: '\nfunction neverRenderedProbe() {\n  const attrExplain = { ST: { icon: "x", desc: "normal" } };\n  return 0;\n}\n',
+    tsProperty: { map: 'valueMeta', entry: 0, property: 'plus', value: '사용자 확정' },
+    append: '\nfunction neverRenderedProbe() {\n  const valueMeta = { "권위": { icon: "x", plus: "normal", minus: "normal" } };\n  return 0;\n}\n',
   })
   assert.equal(shadow.status, 1, shadow.output)
-  assert.match(shadow.output, /tooltips/u)
+  assert.match(shadow.output, /editorial-marker: src\/pages\/PersonDetailPage.tsx#\/tooltips\/valueMeta\/0\/plus/u)
   // 선언 이름만 바뀐 실제 참조(미해결)는 무관 같은이름 미사용 선언이 있어도 실패한다.
-  const renamed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsRename: { from: 'attrExplain', to: 'attrExplainUnused' } })
+  const renamed = gateProbe({ file: 'src/pages/PersonDetailPage.tsx', tsRename: { from: 'valueMeta', to: 'valueMetaUnused' } })
   assert.equal(renamed.status, 1, renamed.output)
-  assert.match(renamed.output, /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  assert.match(renamed.output, /E_UI_TOOLTIP_FIELDS:valueMeta/u)
   const renamedShadow = gateProbe({
     file: 'src/pages/PersonDetailPage.tsx',
-    tsRename: { from: 'attrExplain', to: 'attrExplainUnused' },
-    append: '\nfunction neverRenderedProbe() {\n  const attrExplain = { ST: { icon: "x", desc: "normal" } };\n  return 0;\n}\n',
+    tsRename: { from: 'valueMeta', to: 'valueMetaUnused' },
+    append: '\nfunction neverRenderedProbe() {\n  const valueMeta = { "권위": { icon: "x", plus: "normal", minus: "normal" } };\n  return 0;\n}\n',
   })
   assert.equal(renamedShadow.status, 1, renamedShadow.output)
-  assert.match(renamedShadow.output, /E_UI_TOOLTIP_FIELDS:attrExplain/u)
+  assert.match(renamedShadow.output, /E_UI_TOOLTIP_FIELDS:valueMeta/u)
   const hiddenSkill = gateProbe({ file: 'lore/name-pools/gurps-cast.json', path: ['people', 0, 'skills', 0, 'name'], value: '사용자 확정' })
   assert.equal(hiddenSkill.status, 0, hiddenSkill.output)
 })

@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "domain": "characters",
+  "id": "DOC:Cast-Index-S4",
+  "slug": "cast-index-s4",
+  "categories": [
+    "characters"
+  ],
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "lore/characters/Cast-Index-S4.md",
+    "original_hash": "ca4a9a13177a6744971ee4a6d4b7c55614c34b428fb20d27298dad9342eda14c",
+    "history": [
+      "Korean lore/characters/Cast-Index-S4.md SHA-256 ca4a9a13177a6744971ee4a6d4b7c55614c34b428fb20d27298dad9342eda14c.",
+      "English SHA-256 fbf0caf78e18feff8013d862749f7d2ebda1b4bd1939ba505dd409003926be8b; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (clean). EN needs human review."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/characters/Cast-Index-S4.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Local Duty Roster",
+      "summary": "A roster of people on local duty.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "생활권 당직 명부",
+      "summary": "생활권 당직 인물 명부.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "재건기-s4-당직-명부",
+      "depth": 1,
+      "text": {
+        "en": "Local Duty Roster",
+        "ko": "생활권 당직 명부"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "state-names",
+      "columns": [
+        {
+          "ko": "국가 ID",
+          "en": "State ID"
+        },
+        {
+          "ko": "국명",
+          "en": "State"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "ko": "S01",
+            "en": "S01"
+          },
+          {
+            "ko": "수문국",
+            "en": "The Sluice"
+          }
+        ],
+        [
+          {
+            "ko": "S02",
+            "en": "S02"
+          },
+          {
+            "ko": "규격맹",
+            "en": "The Gauge"
+          }
+        ],
+        [
+          {
+            "ko": "S03",
+            "en": "S03"
+          },
+          {
+            "ko": "태욱그룹",
+            "en": "Taeuk Group"
+          }
+        ],
+        [
+          {
+            "ko": "S04",
+            "en": "S04"
+          },
+          {
+            "ko": "명부교회",
+            "en": "Myeongbu Church"
+          }
+        ],
+        [
+          {
+            "ko": "S05",
+            "en": "S05"
+          },
+          {
+            "ko": "동방사",
+            "en": "Eastern Command"
+          }
+        ],
+        [
+          {
+            "ko": "S06",
+            "en": "S06"
+          },
+          {
+            "ko": "대한민국정부",
+            "en": "Government of the Republic of Korea"
+          }
+        ],
+        [
+          {
+            "ko": "S07",
+            "en": "S07"
+          },
+          {
+            "ko": "환적국",
+            "en": "The Junction"
+          }
+        ],
+        [
+          {
+            "ko": "S08",
+            "en": "S08"
+          },
+          {
+            "ko": "중앙기술보존원",
+            "en": "Central Technology Preservation Office"
+          }
+        ],
+        [
+          {
+            "ko": "S09",
+            "en": "S09"
+          },
+          {
+            "ko": "여의도출자연합회",
+            "en": "Yeouido Investors' Association"
+          }
+        ],
+        [
+          {
+            "ko": "S10",
+            "en": "S10"
+          },
+          {
+            "ko": "안국총림",
+            "en": "Anguk Order"
+          }
+        ],
+        [
+          {
+            "ko": "S11",
+            "en": "S11"
+          },
+          {
+            "ko": "성하그룹",
+            "en": "Seongha Group"
+          }
+        ],
+        [
+          {
+            "ko": "S12",
+            "en": "S12"
+          },
+          {
+            "ko": "신내운수",
+            "en": "Sinnae Transport"
+          }
+        ],
+        [
+          {
+            "ko": "S13",
+            "en": "S13"
+          },
+          {
+            "ko": "흰십자단",
+            "en": "White Cross"
+          }
+        ],
+        [
+          {
+            "ko": "S14",
+            "en": "S14"
+          },
+          {
+            "ko": "아관사",
+            "en": "Achasan Gate"
+          }
+        ],
+        [
+          {
+            "ko": "S15",
+            "en": "S15"
+          },
+          {
+            "ko": "명동대교구",
+            "en": "Myeongdong Archdiocese"
+          }
+        ],
+        [
+          {
+            "ko": "S16",
+            "en": "S16"
+          },
+          {
+            "ko": "정동노총",
+            "en": "Jeongdong Federation"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "재건기-s4-당직-명부-p2",
+      "text": {
+        "en": "Offices fill the empty seats of a living sphere, as in rationing, maintenance, record-keeping, courier work, patrol, and watch duty.",
+        "ko": "직위는 배급·정비·기록·전령·순찰·당직처럼 생활권 빈 칸을 메운다."
+      }
+    }
+  ],
+  "data": {}
+}

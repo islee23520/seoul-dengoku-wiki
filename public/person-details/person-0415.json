@@ -3,6 +3,7 @@
   "name": "천늘샘",
   "title": "서고·의회 비상발전 운전장",
   "position": "서고·의회 비상발전 운전장",
+  "characterId": "K414",
   "rank": "지부장",
   "commonTier": "T4",
   "occupation": "비상발전 연료·출력 일지 봉인",
@@ -389,60 +390,341 @@
   },
   "gurps": {
     "id": "K414",
-    "personId": "person-0415",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
-      },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 12,
-        "cp": 40
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
-      }
-    },
-    "traits": [],
-    "skills": [
+    "personId": "person-0415"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S16",
+    "variants": [
       {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 14,
-        "cp": 8
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S16",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K414",
+            "name": "천늘샘",
+            "url": "/people/person-0415",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "비상발전 연료·출력 일지 봉인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/28/items/0/ko",
+                  "quote": "생업: 비상발전 연료·출력 일지 봉인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 선한솜에게 보내고, 최저 출력 이하면 숙련심사위원의 독촉이 있어도 의회 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "세 초안 도착과 정전이 겹치자 천늘샘은 비상 발전을 서고와 투표 광장에 잠그고 조합원 총회 조명을 껐다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 비상발전 연료·출력 일지 봉인"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 비상발전 연료·출력 일지 봉인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 선한솜에게 보내고, 최저 출력 이하면 숙련심사위원의 독촉이 있어도 의회 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "세 초안 도착과 정전이 겹치자 천늘샘은 비상 발전을 서고와 투표 광장에 잠그고 조합원 총회 조명을 껐다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "을지로4가",
+              "type": "초소 영지",
+              "station": "을지로4가",
+              "state": "S16",
+              "settlement": {
+                "name": "을지로4가 정착지",
+                "type": "정착지",
+                "description": "을지로4가 일대 고정 거점"
+              },
+              "note": "S16 을지로4가 일대 관할 영지"
+            }
+          }
+        }
       },
       {
-        "name": "Electrician/TL?",
-        "ko": "전력 설비",
-        "level": 14,
-        "cp": 8
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S16",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K414",
+            "name": "천늘샘",
+            "url": "/people/person-0415",
+            "state": "S16",
+            "method": "card-lexicon",
+            "role": {
+              "display": "비상발전 연료·출력 일지 봉인",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-16.json",
+                  "pointer": "/content/28/items/0/ko",
+                  "quote": "생업: 비상발전 연료·출력 일지 봉인"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 12,
+                "cp": 40,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 선한솜에게 보내고, 최저 출력 이하면 숙련심사위원의 독촉이 있어도 의회 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "세 초안 도착과 정전이 겹치자 천늘샘은 비상 발전을 서고와 투표 광장에 잠그고 조합원 총회 조명을 껐다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 비상발전 연료·출력 일지 봉인"
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "Electrician/TL?",
+                "ko": "전력 설비",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/28/items/0/ko",
+                    "quote": "생업: 비상발전 연료·출력 일지 봉인"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/29/text/ko",
+                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 선한솜에게 보내고, 최저 출력 이하면 숙련심사위원의 독촉이 있어도 의회 배전을 끊는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-16.json",
+                    "pointer": "/content/30/text/ko",
+                    "quote": "세 초안 도착과 정전이 겹치자 천늘샘은 비상 발전을 서고와 투표 광장에 잠그고 조합원 총회 조명을 껐다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 12,
+              "Per": 12,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 40,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 16,
+              "spent": 56,
+              "unspent": 19,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 정동노총 규모",
+              "faction_scale": {
+                "state": "S16",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "을지로4가",
+              "type": "초소 영지",
+              "station": "을지로4가",
+              "state": "S16",
+              "settlement": {
+                "name": "을지로4가 정착지",
+                "type": "정착지",
+                "description": "을지로4가 일대 고정 거점"
+              },
+              "note": "S16 을지로4가 일대 관할 영지"
+            }
+          }
+        }
       }
-    ],
-    "cp": {
-      "attributes": 40,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 16,
-      "spent": 56,
-      "unspent": 19,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 12,
-      "Per": 12,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

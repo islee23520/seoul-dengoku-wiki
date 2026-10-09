@@ -3,6 +3,7 @@
   "name": "임시온",
   "title": "연구기록·통신서고 감사관",
   "position": "연구기록·통신서고 감사관",
+  "characterId": "K065",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "연구기록 감사",
@@ -283,66 +284,363 @@
   },
   "gurps": {
     "id": "K065",
-    "personId": "person-0065",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0065"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S03",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S03",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K065",
+            "name": "임시온",
+            "url": "/people/person-0065",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "연구기록 감사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/104/items/1/ko",
+                  "quote": "생업: 연구기록 감사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/105/text/ko",
+                    "quote": "열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/104/items/1/ko",
+                    "quote": "생업: 연구기록 감사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/105/text/ko",
+                    "quote": "열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/104/items/1/ko",
+                    "quote": "생업: 연구기록 감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Research/TL?",
+                "ko": "연구 기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/104/items/1/ko",
+                    "quote": "생업: 연구기록 감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 44,
+              "unspent": 31,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "임시온 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 11,
-        "cp": 20
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S03",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K065",
+            "name": "임시온",
+            "url": "/people/person-0065",
+            "state": "S03",
+            "method": "card-lexicon",
+            "role": {
+              "display": "연구기록 감사",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-03.json",
+                  "pointer": "/content/104/items/1/ko",
+                  "quote": "생업: 연구기록 감사"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 11,
+                "cp": 20,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/105/text/ko",
+                    "quote": "열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/104/items/1/ko",
+                    "quote": "생업: 연구기록 감사"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/105/text/ko",
+                    "quote": "열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다."
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              },
+              {
+                "name": "Accounting",
+                "ko": "회계·감사",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/104/items/1/ko",
+                    "quote": "생업: 연구기록 감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 12
+              },
+              {
+                "name": "Research/TL?",
+                "ko": "연구 기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-03.json",
+                    "pointer": "/content/104/items/1/ko",
+                    "quote": "생업: 연구기록 감사"
+                  }
+                ],
+                "cp": 8,
+                "level": 13
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 11,
+              "Per": 11,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 20,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 44,
+              "unspent": 31,
+              "total": 75
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
+              "faction_scale": {
+                "state": "S03",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": {
+              "type": "무소속 유랑 부대",
+              "size": 4,
+              "current_location": "고가도로 밑",
+              "camp": {
+                "name": "임시온 고가도로 하부 야영지",
+                "type": "야영지",
+                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
+                "facilities": [
+                  "야전 숙소",
+                  "취사 시설",
+                  "무기 보관소"
+                ],
+                "pack_up_time": "반나절"
+              },
+              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
+            },
+            "territory": null
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 13,
-        "cp": 8
-      },
-      {
-        "name": "Accounting",
-        "ko": "회계·감사",
-        "level": 12,
-        "cp": 8
-      },
-      {
-        "name": "Research/TL?",
-        "ko": "연구 기록",
-        "level": 13,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 20,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 44,
-      "unspent": 31,
-      "total": 75
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 11,
-      "Per": 11,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {

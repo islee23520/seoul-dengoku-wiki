@@ -3,6 +3,7 @@
   "name": "석라온",
   "title": "남하 피난 환자 대표",
   "position": "피난 환자 진료 수련의",
+  "characterId": "K344",
   "rank": "수련의",
   "commonTier": "T3",
   "occupation": "피난 환자 중증도 게시",
@@ -389,66 +390,383 @@
   },
   "gurps": {
     "id": "K344",
-    "personId": "person-0345",
-    "band": "일반 인물",
-    "attributes": {
-      "ST": {
-        "value": 10,
-        "cp": 0
+    "personId": "person-0345"
+  },
+  "personSheet": {
+    "schema": "wiki-person-sheet.v1",
+    "currentState": "S13",
+    "variants": [
+      {
+        "revision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+        "ledgerSha256": "bd6cf5638033a85c8e5970518e3f89db5a46a28c1b95c762bc083858e2275331",
+        "historicalState": "S13",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "ce173686bcba220cd2a7dedfb5c78b941bf3c151",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K344",
+            "name": "석라온",
+            "url": "/people/person-0345",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "피난 환자 중증도 게시",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/248/items/0/ko",
+                  "quote": "생업: 피난 환자 중증도 게시"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/248/items/0/ko",
+                    "quote": "생업: 피난 환자 중증도 게시"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "First Aid/TL?",
+                "ko": "응급 처치·환자 이송",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/248/items/0/ko",
+                    "quote": "생업: 피난 환자 중증도 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 16
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 84,
+              "unspent": 0,
+              "total": 84
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "중랑",
+              "type": "초소 영지",
+              "station": "중랑",
+              "state": "S13",
+              "settlement": {
+                "name": "중랑 정착지",
+                "type": "정착지",
+                "description": "중랑 일대 고정 거점"
+              },
+              "note": "S13 중랑 일대 관할 영지"
+            }
+          }
+        }
       },
-      "DX": {
-        "value": 10,
-        "cp": 0
-      },
-      "IQ": {
-        "value": 13,
-        "cp": 60
-      },
-      "HT": {
-        "value": 10,
-        "cp": 0
+      {
+        "revision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+        "ledgerSha256": "3e5afa93853160f4549fcda8b40f2e5c4701fada97a5b8dc9c685ee125c84b97",
+        "historicalState": "S13",
+        "rules": {
+          "rulesVersion": "seoul.opposed-d10.v1",
+          "resolution": "opposed-d10",
+          "sourceRevision": "5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4",
+          "numericAdoption": false,
+          "legacyValues": "immutable-not-d10-ratings",
+          "originalRatings": null
+        },
+        "legacy": {
+          "operative": false,
+          "record": {
+            "id": "K344",
+            "name": "석라온",
+            "url": "/people/person-0345",
+            "state": "S13",
+            "method": "card-lexicon",
+            "role": {
+              "display": "피난 환자 중증도 게시",
+              "evidence": [
+                {
+                  "path": "lore/characters/Cast-State-13.json",
+                  "pointer": "/content/248/items/0/ko",
+                  "quote": "생업: 피난 환자 중증도 게시"
+                }
+              ]
+            },
+            "attributes": {
+              "ST": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "DX": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              },
+              "IQ": {
+                "value": 13,
+                "cp": 60,
+                "rule": "card-actions",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다."
+                  }
+                ]
+              },
+              "HT": {
+                "value": 10,
+                "cp": 0,
+                "rule": "card-actions",
+                "evidence": []
+              }
+            },
+            "traits": [],
+            "skills": [
+              {
+                "name": "Administration",
+                "ko": "행정·기록",
+                "attr": "IQ",
+                "diff": "A",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/248/items/0/ko",
+                    "quote": "생업: 피난 환자 중증도 게시"
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/249/text/ko",
+                    "quote": "피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다."
+                  }
+                ],
+                "cp": 8,
+                "level": 15
+              },
+              {
+                "name": "Physician/TL?",
+                "ko": "진료",
+                "attr": "IQ",
+                "diff": "H",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/247/text/ko",
+                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
+                  },
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/250/text/ko",
+                    "quote": "가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다."
+                  }
+                ],
+                "cp": 8,
+                "level": 14
+              },
+              {
+                "name": "First Aid/TL?",
+                "ko": "응급 처치·환자 이송",
+                "attr": "IQ",
+                "diff": "E",
+                "tier": "B",
+                "evidence": [
+                  {
+                    "path": "lore/characters/Cast-State-13.json",
+                    "pointer": "/content/248/items/0/ko",
+                    "quote": "생업: 피난 환자 중증도 게시"
+                  }
+                ],
+                "cp": 8,
+                "level": 16
+              }
+            ],
+            "languages": [],
+            "secondary": {
+              "HP": 10,
+              "Will": 13,
+              "Per": 13,
+              "FP": 10,
+              "BasicSpeed": 5,
+              "BasicMove": 5,
+              "BasicLift": 20,
+              "Dodge": 8
+            },
+            "cp": {
+              "attributes": 60,
+              "advantages": 0,
+              "disadvantages": 0,
+              "skills": 24,
+              "spent": 84,
+              "unspent": 0,
+              "total": 84
+            },
+            "band": "일반 인물",
+            "baseline": false,
+            "unit": {
+              "type": "수행원",
+              "size": 4,
+              "quality": "일반",
+              "composition": [
+                "수행원"
+              ],
+              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
+              "faction_scale": {
+                "state": "S13",
+                "tier": "강세력",
+                "factor": 1.2
+              }
+            },
+            "wandering_force": null,
+            "territory": {
+              "fief_name": "중랑",
+              "type": "초소 영지",
+              "station": "중랑",
+              "state": "S13",
+              "settlement": {
+                "name": "중랑 정착지",
+                "type": "정착지",
+                "description": "중랑 일대 고정 거점"
+              },
+              "note": "S13 중랑 일대 관할 영지"
+            }
+          }
+        }
       }
-    },
-    "traits": [],
-    "skills": [
-      {
-        "name": "Administration",
-        "ko": "행정·기록",
-        "level": 15,
-        "cp": 8
-      },
-      {
-        "name": "Physician/TL?",
-        "ko": "진료",
-        "level": 14,
-        "cp": 8
-      },
-      {
-        "name": "First Aid/TL?",
-        "ko": "응급 처치·환자 이송",
-        "level": 16,
-        "cp": 8
-      }
-    ],
-    "cp": {
-      "attributes": 60,
-      "advantages": 0,
-      "disadvantages": 0,
-      "skills": 24,
-      "spent": 84,
-      "unspent": 0,
-      "total": 84
-    },
-    "secondary": {
-      "HP": 10,
-      "Will": 13,
-      "Per": 13,
-      "FP": 10,
-      "BasicSpeed": 5,
-      "BasicMove": 5,
-      "BasicLift": 20,
-      "Dodge": 8
-    }
+    ]
   },
   "confirmedHoldings": [],
   "unit": {
