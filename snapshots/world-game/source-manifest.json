@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "producer": {
+    "wiki": {
+      "repository": "islee23520/seoul-dengoku-wiki",
+      "commit": "51740c07ed2a6162b41d567b3dd58a2e0988dc02"
+    },
+    "game": {
+      "repository": "islee23520/seoul-dengoku",
+      "commit": "1a473c831c17fa227dc936bf2f98c752d4241d7b",
+      "path": "GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json"
+    }
+  },
+  "packageVersion": "snapshot-483",
+  "generator": "repo-split-483",
+  "githubRoot": "https://github.com/islee23520/seoul-dengoku-gdd/blob/main/",
+  "files": [
+    {
+      "path": "SeoulWorldGraph.json",
+      "sha256": "46985afccc2d3f2b5e4e3152254d30bc023d0688d63745a951a9be0f6ebf097d"
+    },
+    {
+      "path": "lore/name-pools/AGENTS.md",
+      "sha256": "8224eea22e658e7abfc11adca0cd4dc826c4d963289a0e9af6c4e0540e0b125e"
+    },
+    {
+      "path": "lore/name-pools/authoring.example.json",
+      "sha256": "95d4682ab04df0fc7c78ca89415db1a739790c74a985dfea1cc158b853a91d16"
+    },
+    {
+      "path": "lore/name-pools/authoring.schema.json",
+      "sha256": "84a024b9036f7abba568082574ff8bf0780bfda4efc695f7dd942eaa774ef100"
+    },
+    {
+      "path": "lore/name-pools/cast-backfill-draft.json",
+      "sha256": "039d99ad38ad1a12dbf456e8cf20db3639f246b48ed8bbb0f5628f5aeb228ed5"
+    },
+    {
+      "path": "lore/name-pools/cast-backfill-draft.md",
+      "sha256": "8b8d505a571bf9b3a9d036fdb47f2dec26c26c6867cfde430f3ed6a4e951fddb"
+    },
+    {
+      "path": "lore/name-pools/cast-birth-cohorts.json",
+      "sha256": "228400355890c3ea7a2364bd9b7032ed036fd3373d85e90699678a2ddcb2d06c"
+    },
+    {
+      "path": "lore/name-pools/cast-birthdays.json",
+      "sha256": "b573acc6b6d7433ab27fe7797e16020b1f07c6a913f6e8eed76d2315f2263167"
+    },
+    {
+      "path": "lore/name-pools/cast-family-parent-status.json",
+      "sha256": "b299315cb68ab697b48339102ddd0e1c513c7b4c75bf07c4ef615077e4ac4781"
+    },
+    {
+      "path": "lore/name-pools/cast-family-role-decisions.json",
+      "sha256": "ca3cce2a0ace5457cfa2f77e07e7e190c6afe226910f9127c8820511053a23f1"
+    },
+    {
+      "path": "lore/name-pools/cast-family-trees.json",
+      "sha256": "42dca47399a27f48363fa53a5bcec6a326e2514bfb3bb81de829252be2e226f0"
+    },
+    {
+      "path": "lore/name-pools/cast-hangnyeol.json",
+      "sha256": "516b3e94cd52f4789021f5e59ef2c0212bce8dbfd1f70ccb944cbaa12a11f9dd"
+    },
+    {
+      "path": "lore/name-pools/cast-household-relations.json",
+      "sha256": "8458fa3023ade5617343827b199ae46248cb4a6bbeb77830d127562016f59135"
+    },
+    {
+      "path": "lore/name-pools/cast-prose-contacts.json",
+      "sha256": "89d02defa5ac6be3e7f1d44aaed42b68f2c526d8cfaf7ba5060eba0f9a3b4ff4"
+    },
+    {
+      "path": "lore/name-pools/clan-hangnyeol-tables.json",
+      "sha256": "668299aad9e8b6d4ddf851c31ce668e27b3cd3e8081413b9519d4c7e3869aaa4"
+    },
+    {
+      "path": "lore/name-pools/clans-hangnyeol.json",
+      "sha256": "64c372a16084680766d56055479fcf6e7724997782e13654ff055dafcc1cdc1d"
+    },
+    {
+      "path": "lore/name-pools/diaspora-family-lineages.json",
+      "sha256": "365d183f4cc29fa1e9cafdce08aaf85f5d489ccfc42a96264167528ed2d7f313"
+    },
+    {
+      "path": "lore/name-pools/existing-names.json",
+      "sha256": "4ea54a577652484c317f675eda9d6f7a5a74cae6126b3b81ba4f3ff8c372603e"
+    },
+    {
+      "path": "lore/name-pools/gender-cast.json",
+      "sha256": "80c3e84f1d6617201ffd108a4119a831f2fecc7c2be2f9ae03e9ca36dd0afca1"
+    },
+    {
+      "path": "lore/name-pools/given-female.json",
+      "sha256": "166816701731fc8adc02e3395f1b39b479b07c86e921197c768496f19c4a2da2"
+    },
+    {
+      "path": "lore/name-pools/given-male.json",
+      "sha256": "1ffe9ae66b62d74aa13103386aab6f7985059a29529c2d36636736cb6b00ccee"
+    },
+    {
+      "path": "lore/name-pools/gurps-cast.json",
+      "sha256": "6592ec41df1b5e353e9099763e7992ab6b852f90b6551d7d2cde53f82e2aaec2"
+    },
+    {
+      "path": "lore/name-pools/hangnyeol-schema.md",
+      "sha256": "a3ea2e60bc21dca2139b0d16ab10defbec788657ee707c500d6210bec442981e"
+    },
+    {
+      "path": "lore/name-pools/hangnyeol-systems.json",
+      "sha256": "71b2cb43be5fcfa2923315f18be536df00fb6a5d9f403dc164152a70e2b2ac73"
+    },
+    {
+      "path": "lore/name-pools/household-humanoid-policy.json",
+      "sha256": "35d9e139cf7ea405a20bf4b1451186694146541b4ca15d52cabb46b50fcdcb00"
+    },
+    {
+      "path": "lore/name-pools/issue-person-ids.mjs",
+      "sha256": "823ddd506e15b3bd70ee1b1343f0980b38fab756c0567ca4ebb76eb861124c80"
+    },
+    {
+      "path": "lore/name-pools/person-id-candidates.json",
+      "sha256": "e208daf90927feeb9a04ac096190987a16903ab809e2265545fef9b968e30034"
+    },
+    {
+      "path": "lore/name-pools/person-id-registry.json",
+      "sha256": "c02b435da25b09a2c388b694a656242e150de9d169da9fb59c21f6880ac4a63a"
+    },
+    {
+      "path": "lore/name-pools/roster-100.json",
+      "sha256": "626557f44360fca3473bafcf54af6d65142aa96accb8912041aabb1b2e35e4a4"
+    },
+    {
+      "path": "lore/name-pools/settlement-npc-generator.json",
+      "sha256": "ec846d1abd93137ee6c6ccdde6675c24a4b3ebf00af9bbdc6cf71201d56ece8d"
+    },
+    {
+      "path": "lore/name-pools/surnames-bongwan.json",
+      "sha256": "0ceaaba8a590f4c8ddb24631f08c26064bdb41fa0ea416527bfd5c5a36762bb8"
+    },
+    {
+      "path": "lore/name-pools/surnames.json",
+      "sha256": "b7085da1ece4793f867a93e26dafde007d167328a97f718c32344f8ff27d9792"
+    },
+    {
+      "path": "lore/name-pools/unit-roster.json",
+      "sha256": "fc44dbfe15d1c33b30a8ef986b780bb88aa83ad85b655f4421aaf9a2d35b011f"
+    },
+    {
+      "path": "lore/name-pools/values-cast.json",
+      "sha256": "1bc77ccc7d261ee2dade3c1433d26ea5ae1054c5f7fa9e1f6a0f34e9348d929a"
+    },
+    {
+      "path": "lore/name-pools/values-orgs.json",
+      "sha256": "2a2b66a4a4f7bc170c9a6bbb0b09e9168acbff2351bc6249d3fe34533d854232"
+    },
+    {
+      "path": "lore/name-pools/verify-person-id-candidates.mjs",
+      "sha256": "85731c28ac33b80a886ef19d5a51340941c119005161040fb15caba8eca7dfc4"
+    },
+    {
+      "path": "lore/name-pools/verify-person-id-registry.mjs",
+      "sha256": "7b573accfe4bf772533302396bfd7feb64e7de0b436b66de0452a8feadf8843e"
+    },
+    {
+      "path": "lore/places/AGENTS.md",
+      "sha256": "2afa703d10244c0fa1be16edf9c8c819f6fa21e4052f642b91c5a9e56c44d84b"
+    },
+    {
+      "path": "lore/places/Building-Reuse-Geography.json",
+      "sha256": "27226c203549ea84f6c6fe4993c77df681c1d515efc9ce04ab0eef3950d85d83"
+    },
+    {
+      "path": "lore/places/Seoul-Station-Catalog.json",
+      "sha256": "f0d0d5206c943d93254b8c5fe94817b33b7d80b59a1691bcd81ff6e56aab8872"
+    },
+    {
+      "path": "lore/places/Station-Alias-Candidates.json",
+      "sha256": "7e0d170bd092074c4e01fc521ffe3dca9b8108a452cc73f8a59cffc60ca1fb58"
+    },
+    {
+      "path": "lore/places/Station-Alias-Candidates.md",
+      "sha256": "8e1cd768f6669db6dd537240430279364c90b2c091933f7679197dc2a467d469"
+    },
+    {
+      "path": "lore/places/Station-Interior-Construction.json",
+      "sha256": "41fb503f993f76111b8da1f3cd39b100604e919737bc541c2f2de901d8b6b05d"
+    },
+    {
+      "path": "lore/places/World-Map-Construction.json",
+      "sha256": "cc669db0c905cbb1c1a53213c3cc1851f6a78a4ddb4bec1fc25c1f99f9325595"
+    },
+    {
+      "path": "lore/places/World-and-Subway-Layers.json",
+      "sha256": "c51334d40ac751359937d21fd7cc717312d9b9313edca808f4e611468566cdd9"
+    },
+    {
+      "path": "lore/places/authoring.example.json",
+      "sha256": "f08810661659c2def3fc06c40e3665f40b3b1e73a36a0f45e42890cba7b7ef07"
+    },
+    {
+      "path": "lore/places/authoring.schema.json",
+      "sha256": "64937989f06622960df401cf969eb6636e64d5ebc7f8618edc31189810ed8b60"
+    },
+    {
+      "path": "lore/places/connected-rail-stations.json",
+      "sha256": "c0f1e2fb5b24dfc0e64469c64c268dfd5a2ab3af4dc9c46925509fc4df68fd0d"
+    },
+    {
+      "path": "lore/places/gtx-project-connections.json",
+      "sha256": "4964f7f22eac9cf718d816f606ac133f857c074e76fc1e364764b6c5fe307594"
+    },
+    {
+      "path": "lore/places/landmark-roles.json",
+      "sha256": "2323b04f84beef700e86f40fc77024599a0d88e5d47f3580808b20aae0510512"
+    },
+    {
+      "path": "lore/places/rail-station-corrections.json",
+      "sha256": "d6b997fc4ee6849dce192afc0c3bc5e85725bfbd7d2573d6d7a936b0479d2d64"
+    },
+    {
+      "path": "lore/places/rail-station-identities.json",
+      "sha256": "80246952f3385e90da2df610cdceda19433f7dcb60d8f5653e6dbe4d0a609c9c"
+    },
+    {
+      "path": "lore/places/regional-station-bindings.json",
+      "sha256": "8c6347ee1e4dd63d59b8176b03183ddd55bd6f119913ccffa86ba264153f4d5f"
+    },
+    {
+      "path": "lore/places/regular-line-adjacency.json",
+      "sha256": "6b9e1bec6987875ed5f5e6b2df508d3716208628f1749b03f5b80cf1a2af9b7a"
+    },
+    {
+      "path": "lore/places/sources/Winter-Climate-20210108.json",
+      "sha256": "b14406547f96905e384cbe7631f44cf3d2edb10da2fe7c6047296b080b0d2618"
+    },
+    {
+      "path": "lore/places/station-control-overrides.json",
+      "sha256": "b072095e8f82c41df438dac3f1bd78fdb9034eac0d44efbb4dca1e2ea1d3528b"
+    },
+    {
+      "path": "lore/places/test-station-alias-candidates.mjs",
+      "sha256": "41188fb951fff5c33300392b4569a8368947b557788b0ff6a3794698c32bc555"
+    },
+    {
+      "path": "lore/regions/AGENTS.md",
+      "sha256": "e14cd6f0d5114d3116b29271a321a47f82f1f27af1e4f5ded139568a7cd8a639"
+    },
+    {
+      "path": "lore/regions/README.md",
+      "sha256": "927a4ad8b99aa163ed5cb5ac4bcfd476482389940609781b387ef3ba1f09d756"
+    },
+    {
+      "path": "lore/regions/authoring.example.json",
+      "sha256": "21a38b0581c8cb7d4ab83689eb14cb290d4c1adbc02ea2304bb79fd02420ffca"
+    },
+    {
+      "path": "lore/regions/authoring.schema.json",
+      "sha256": "e0d0efd123367cf5e88011d58852f412abd43a89078cca1116174999e68cadfa"
+    },
+    {
+      "path": "lore/regions/content/11110.json",
+      "sha256": "9a5cf2ac5a93767812d3361805c64df4430f917c7e645f38b76218c5af6e1695"
+    },
+    {
+      "path": "lore/regions/content/11140.json",
+      "sha256": "42de07c4fdd76dc5b3f06bd9256bb9618e344fba2834465553a015860c0bf264"
+    },
+    {
+      "path": "lore/regions/content/11170.json",
+      "sha256": "4bc8363abf152a69083058050d87a50ced6fae6f776ed8d0ab0f04404450a6fc"
+    },
+    {
+      "path": "lore/regions/content/11200.json",
+      "sha256": "acda82e1cf757bf7a7bda688e02dce3601d948a76079f6bfa647a8be79fe22f5"
+    },
+    {
+      "path": "lore/regions/content/11215.json",
+      "sha256": "3860752b639221ec834a911ee103112bda7e1995a7cc39a26ebd0bf165102fb9"
+    },
+    {
+      "path": "lore/regions/content/11230.json",
+      "sha256": "37daa81ecb74887199c1a8213549fb3a44adf09078cbf171e4bf7308ee935214"
+    },
+    {
+      "path": "lore/regions/content/11260.json",
+      "sha256": "6de8843fc77c0e1ba2e022f4ae7228b22014a067eea1dd9649de0ac7bb5922cc"
+    },
+    {
+      "path": "lore/regions/content/11290.json",
+      "sha256": "207e9c5f7026bd6d7644b5c5bcecc971a0dbbdda1f1bb0fde06568ea66377340"
+    },
+    {
+      "path": "lore/regions/content/11305.json",
+      "sha256": "f68e0906488a59b07b100e1d6db351f750c48b481c515c809e5768a99740d5f2"
+    },
+    {
+      "path": "lore/regions/content/11320.json",
+      "sha256": "95e26ff69e71ed90f4e4faf22119dca323f78772e2a86d30f855072eed0c1a4b"
+    },
+    {
+      "path": "lore/regions/content/11350.json",
+      "sha256": "3b9e47b28cc859475034c3120ef019655b7cf4bf3cd0143ff4297f1c112f56ef"
+    },
+    {
+      "path": "lore/regions/content/11380.json",
+      "sha256": "dc8cfa0f7cb9c2dc06d6f78710f59ddf522eb67d02a1c626e3076a44bbb9907c"
+    },
+    {
+      "path": "lore/regions/content/11410.json",
+      "sha256": "116c8ede2cae93f91733e6ea29586926ea70d5d4c47f7a3a66c45d9fc6643da3"
+    },
+    {
+      "path": "lore/regions/content/11440.json",
+      "sha256": "d6ea7267549992c2fdfad7645408fe202ed660ee32bed08ee0c6623fb3ca06b2"
+    },
+    {
+      "path": "lore/regions/content/11470.json",
+      "sha256": "928c55410940295e185303e71bafae29f0607e186dd170450cfa562577f7a0bb"
+    },
+    {
+      "path": "lore/regions/content/11500.json",
+      "sha256": "702331d0986997e12a4113f9c9975ffff0bed067f161503da274a4c5eb9ec76b"
+    },
+    {
+      "path": "lore/regions/content/11530.json",
+      "sha256": "bcef615f8abcadb88e9affd00a86321a541330f4daf92f6534cddcfb86cc64e3"
+    },
+    {
+      "path": "lore/regions/content/11545.json",
+      "sha256": "a4d8573c0bfdf5ca3eaf7f74f080bc0cccef99a37b24c61a07f7145def2ebcae"
+    },
+    {
+      "path": "lore/regions/content/11560.json",
+      "sha256": "d000ef6e72f4173f15d56818aa701d4cd0290bba7623288ac7793b6b217d5dac"
+    },
+    {
+      "path": "lore/regions/content/11590.json",
+      "sha256": "11c9f79553c36adeb9574cf8a24746428c59a51b434400475ac34119cd22c390"
+    },
+    {
+      "path": "lore/regions/content/11620.json",
+      "sha256": "4af778512ad34e065a5c90c0513ab654eff03bf6bd97ef0267dad624b4c9fc2b"
+    },
+    {
+      "path": "lore/regions/content/11650.json",
+      "sha256": "cb4434afbbe86474e63b077104674f249aa33949b7e1bedd00017fd75e02e72c"
+    },
+    {
+      "path": "lore/regions/content/11680.json",
+      "sha256": "de87c63bec68e9c33b619d0d50d4062c1db8a19cd0ca54028dc83f946a707a33"
+    },
+    {
+      "path": "lore/regions/content/11710.json",
+      "sha256": "cb238f6b1321e6e04abb5f83886e26363c2f98f0c3ba29783af512e8708bba12"
+    },
+    {
+      "path": "lore/regions/content/11740.json",
+      "sha256": "9946f786a7575b0531cd1bf40293b2e83cee68c1cf5a3261666130ec4c0bfa4f"
+    },
+    {
+      "path": "lore/regions/outside-control-2126.json",
+      "sha256": "1730b9d63528b02b963d69d0c376ec53fad01a351deeaf4665c1a00486b38707"
+    },
+    {
+      "path": "lore/regions/outside-island-occupation.json",
+      "sha256": "5bd9dbac6f567eaecf936bda2f4a4e69eda6e15c45d91913a5e6df273d4bd70f"
+    },
+    {
+      "path": "lore/regions/sources/.gitignore",
+      "sha256": "08c5b9e6f9a15b693799f81eb8520845a96df13ea79f1078d20cc817963f60c7"
+    },
+    {
+      "path": "lore/regions/sources/boundary-comparison.json",
+      "sha256": "e1da70f294f1e610bc3e0c864d6f356de385a527551977a798c0297f2e6445af"
+    },
+    {
+      "path": "lore/regions/sources/observed-levels-join.md",
+      "sha256": "48f4d8787ceeca25040f87cc1438b5ab42b30ead70d7d5f0d9d19424a29b4967"
+    },
+    {
+      "path": "lore/regions/sources/population-2026-08.json",
+      "sha256": "28f36b6106d8550b609eea500afb0a369ab03e76a9658567cefd08eddc20a561"
+    },
+    {
+      "path": "lore/regions/sources/selection.json",
+      "sha256": "3e2d52fc20d101e9fff281f85608d5eaf3f4dce30e23bd1938ad668d0b61ff53"
+    },
+    {
+      "path": "lore/regions/sources/seoul-metro-station-architecture-20250310.csv",
+      "sha256": "597479f330f6044527b8edc3cd28bfea57d21175066898074f73b2c3ca5f42c4"
+    },
+    {
+      "path": "lore/regions/station-interiors.json",
+      "sha256": "f9cc33e7b78aac3c72eaed79b2279f07081a598dc2b601ee57929511f076bffb"
+    }
+  ]
+}

@@ -12,15 +12,18 @@ const contentRoot = resolve(projectRoot, 'src/content')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const sharedContentRoot = resolve(generatedRoot, 'shared-content')
 const gddRoot = process.env.GDD_ROOT ?? resolve(projectRoot, '..')
-// Dataset summaries read the parent repository that hosts GDD: the hub checkout keeps lore at WIKI/lore,
-// a standalone GDD checkout reads the sibling LORE/ directory that GDD links point at.
-const repoRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(gddRoot, '..')
-const loreRoot = process.env.LORE_ROOT ?? [resolve(repoRoot, 'WIKI/lore'), resolve(repoRoot, 'LORE')].find((path) => existsSync(path))
-if (!loreRoot) throw new Error(`E_LORE_ROOT_MISSING: neither WIKI/lore nor LORE exists under ${repoRoot}; set LORE_ROOT`)
+// Clean builds read only the declared snapshot. SEOUL_KENSHI_ROOT remains a local override and is not a CI default.
+const snapshotRoot = process.env.GDD_SNAPSHOT_ROOT ?? resolve(gddRoot, 'snapshots/world-game')
+const repoRoot = process.env.SEOUL_KENSHI_ROOT ?? snapshotRoot
+const loreRoot = process.env.LORE_ROOT ?? [resolve(snapshotRoot, 'lore'), resolve(repoRoot, 'WIKI/lore'), resolve(repoRoot, 'LORE')].find((path) => existsSync(path))
+if (!loreRoot) throw new Error(`E_LORE_ROOT_MISSING: declared snapshot has no lore at ${snapshotRoot}; set GDD_SNAPSHOT_ROOT`)
 // Rendered page path -> the GDD file that owns it: the JSON canon document, or the exempt Markdown file itself.
 const sources = await loadGddSources(gddRoot)
 const canonPathByPage = new Map([...sources].map(([page, { source }]) => [page, source]))
-const githubRoot = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
+const sourceManifest = existsSync(resolve(snapshotRoot, 'source-manifest.json'))
+  ? JSON.parse(await readFile(resolve(snapshotRoot, 'source-manifest.json'), 'utf8'))
+  : null
+const githubRoot = sourceManifest?.githubRoot ?? 'https://github.com/islee23520/seoul-dengoku-gdd/blob/main/'
 
 const titleOf = (markdown, fallback) => markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
 const sourceKey = async (path) => {
@@ -90,7 +93,7 @@ for (const document of documents) {
 const valuesCast = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8'))
 const genders = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8'))
 const valuesOrgs = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-orgs.json'), 'utf8'))
-const graph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+const graph = JSON.parse(await readFile(resolve(snapshotRoot, 'SeoulWorldGraph.json'), 'utf8'))
 const control = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
 const interiors = JSON.parse(await readFile(resolve(loreRoot, 'regions/station-interiors.json'), 'utf8'))
 let regions = 0
