@@ -12,7 +12,8 @@
     "history": [
       "Korean lore/places/World-and-Subway-Layers.md SHA-256 7672631e4bcc7fdd52b6419721a7d32e4b8a1162f204251dcf676449dac7cdc6.",
       "English lore/places/World-and-Subway-Layers.en.md SHA-256 716dc11fb6c7476e8ba63682b0f04827c9fa9182bc8715260557e9296b556c11; copied verbatim, no translation written.",
-      "2026-10-09 remediation of PR #544 head 342c7e332acd86bcc9b40d3c6f42756e746e0eb7 onto main 1c74267c0954b7148d5dd937e33fb5b14c4ce7c0: preserve the three-state map description; import the independently verified 2021-01-08 selected-station minima and fictional intermediate/deep underground ranges. The user authorized this integration without changing territory, person identities or portraits."
+      "2026-10-09 remediation of PR #544 head 342c7e332acd86bcc9b40d3c6f42756e746e0eb7 onto main 1c74267c0954b7148d5dd937e33fb5b14c4ce7c0: preserve the three-state map description; import the independently verified 2021-01-08 selected-station minima and fictional intermediate/deep underground ranges. The user authorized this integration without changing territory, person identities or portraits.",
+      "2026-10-10 user-authorized clothing-rule completion: use B1–B3 and B4-or-deeper defaults only where those floors exist; prioritize actual indoor heating and temperature; allow intermediate spaces below 8°C with outside-air exposure while retaining the warmer-than-local-surface boundary. No station floor counts, facilities, temperatures or correction formulas are invented."
     ]
   },
   "source": {
@@ -53,6 +54,30 @@
       "text": {
         "ko": "생활 환경은 지상, 중간 깊이 지하, 깊은 지하의 세 단계로 나뉜다. 지상 가까운 지하도 그 지역의 지상보다는 따뜻하며, 중간 깊이 지하 생활권에 속한다. 지하 생활권의 기본 기온은 중간 깊이 8–18℃, 깊은 지하 18–22℃다. 지하의 지역별 온도 차이는 지상보다 작으며, 지상의 기온 차이가 지하에 같은 폭으로 이어지지는 않는다. 사람들은 먼저 머무는 단계의 기온에 맞춰 보온 겹을 고르고, 같은 깊이 안에서 하는 일과 개인의 추위 민감도에 따라 옷을 더하거나 덜어 낸다. 지하 기온 범위는 이 세계의 생활 환경을 나타내는 설정값이며 실제 역의 관측값은 아니다.",
         "en": "Living environments fall into three tiers: the surface, intermediate underground, and deep underground. Even spaces close to the surface are warmer than the surface in that region and belong to the intermediate tier. The baseline underground ranges are 8–18°C at intermediate depth and 18–22°C deep underground. Regional temperature differences are smaller underground, so a surface temperature difference is not transferred below ground at the same magnitude. People first choose insulating layers for their surroundings, then adjust them for work and individual sensitivity to cold at the same depth. These underground ranges describe the fictional living environment, not measured station temperatures."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "층별-생활권의-구분",
+      "text": {
+        "ko": "지하의 기본 분류는 층을 따른다. 지하 1층부터 3층까지는 중간 깊이, 지하 4층 이하는 깊은 지하 생활권으로 구분한다. 이는 생활 환경을 나누는 기준이며, 모든 역의 같은 층이 같은 미터 깊이에 있다는 뜻은 아니다. 지상 공간만 있는 역과 중간 깊이 지하까지만 있는 역에는 없는 깊은 생활권을 덧붙이지 않는다. 환승역에서도 실제로 있는 층과 인물이 머무는 대합실·승강장·통로를 구별한다.",
+        "en": "The default underground classification follows floors: B1 through B3 are intermediate, and B4 and below are deep underground. This groups living environments; it does not mean that matching floor numbers lie at the same depth in metres at every station. Stations with only surface spaces or intermediate underground levels have no additional deep tier. Even at interchanges, the floors that exist and the concourse, platform, or passage a person occupies remain distinct."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "난방과-실내-기온",
+      "text": {
+        "ko": "옷차림은 층별 기본 기온보다 머무는 공간의 실제 실내 기온과 난방 상태를 먼저 따른다. 난방되는 지상 실내와 지하의 따뜻한 방에서는 야외와 같은 방한 겹을 계속 입을 필요가 없다. 전기가 생산되는 지역이라도 모든 역사와 통로가 늘 난방되는 것은 아니므로, 전력 공급만으로 실내 전체를 따뜻한 공간으로 보지는 않는다. 실내 환경이 알려지지 않은 공간에는 층별 기본 기온을 적용한다.",
+        "en": "Clothing follows the actual indoor temperature and heating conditions before the default for a floor. Heated surface interiors and warm underground rooms do not require all the insulation worn outdoors. Electricity production does not mean every station and passage is continuously heated, so power supply alone does not establish a warm interior. Where indoor conditions are unknown, the floor-based temperature default applies."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역별-외기-유입",
+      "text": {
+        "ko": "같은 지하층이라도 해당 지역의 지상 기온과 출입구에서 들어오는 공기의 양에 따라 추위가 달라진다. 찬 공기가 많이 드는 중간 깊이 통로는 기본 범위보다 낮은 8℃ 미만이 될 수 있지만, 그 지역의 지상보다는 따뜻하다. 깊은 생활권에서는 외기의 영향이 더 작고 기본 기온의 변화도 작다. 지상의 기온 차이를 지하에 그대로 더하거나 빼지는 않으며, 실제 머무는 공간의 난방과 외기 유입을 함께 살핀다.",
+        "en": "At the same underground level, cold varies with the regional surface temperature and the amount of air entering from outside. Intermediate passages admitting much cold air can fall below the baseline to less than 8°C, while remaining warmer than the local surface. Deep quarters are less affected by outside air and their baseline varies less. Surface differences are not simply added to or subtracted from underground temperatures; heating and outside-air exposure are considered together for the occupied space."
       }
     },
     {"kind": "heading", "anchor": "시도별-지상-기온", "depth": 3, "text": {"ko": "시·도별 지상 기온", "en": "Regional Surface Temperatures"}},
@@ -157,8 +182,8 @@
     {
       "kind": "paragraph", "anchor": "환승역의-깊이와-이동",
       "text": {
-        "ko": "환승역의 여러 승강장은 같은 역 이름 아래 있어도 서로 다른 깊이에 놓인다. 대합실과 통로를 오가는 사람의 옷차림도 실제로 머무는 층을 따른다. 지상 야외로 나서는 전령과 호위는 지하에서 벗어 둔 방한 외투를 다시 챙긴다. 지상층 입구까지만 다녀오고 야외로 나가지 않는다면, 그곳의 실내 기온에 맞춰 입는다.",
-        "en": "Platforms at an interchange can lie at different depths despite sharing a station name. Clothing follows the level where a person actually stays, including concourses and passages. Couriers and escorts heading outdoors retrieve the insulated outerwear they removed below. A trip only to an indoor ground-level entrance calls for clothing suited to the indoor temperature, not an outdoor coat by default."
+        "ko": "환승역의 여러 승강장은 같은 역 이름 아래 있어도 서로 다른 깊이에 놓인다. 대합실과 통로를 오가는 사람의 옷차림도 실제로 머무는 층과 그 공간의 실내 환경을 따른다. 전령과 호위뿐 아니라 평소 지하에서 일하던 사람도 지상 야외로 나설 때에는 해당 지역의 방한 외투를 입는다. 지상층 입구까지만 다녀오고 야외로 나가지 않는다면, 그곳의 실내 기온에 맞춰 입는다.",
+        "en": "Platforms at an interchange can lie at different depths despite sharing a station name. Clothing follows the occupied level and its indoor conditions, including concourses and passages. Anyone heading outdoors, including people who normally work underground as well as couriers and escorts, puts on outerwear suited to the region. A trip only to an indoor ground-level entrance calls for clothing suited to the indoor temperature, not an outdoor coat by default."
       }
     },
     {
