@@ -112,7 +112,7 @@ test('readable summary renders issued secondary and CP values without recalculat
   assert.deepEqual(sparse.cp, {})
 })
 
-test('mounted person selector starts unselected and exposes both complete source records without assigning ratings', async () => {
+test('mounted person selector shows preserved stats immediately and keeps both complete revisions without assigning ratings', async () => {
   const browser = new JSDOM('<!doctype html><html><body></body></html>')
   const previousWindow = globalThis.window, previousDocument = globalThis.document
   globalThis.window = browser.window
@@ -124,9 +124,10 @@ test('mounted person selector starts unselected and exposes both complete source
   try {
     await act(async () => { reactRoot.render(React.createElement(PreservedPersonSheet, { payload, identity: ident })) })
     const select = host.querySelector('select')
-    assert.equal(select.value, '')
-    assert.equal(host.querySelector('[data-selected-revision]'), null)
-    assert.deepEqual([...select.options].map(option => option.value), ['', ...REVISIONS])
+    assert.equal(select.value, REVISIONS.at(-1))
+    assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, REVISIONS.at(-1))
+    assert.ok(host.querySelector('.gurps-sheet'))
+    assert.deepEqual([...select.options].map(option => option.value), REVISIONS)
     for (const revision of REVISIONS) {
       await act(async () => { select.value = revision; select.dispatchEvent(new browser.window.Event('change', { bubbles: true })) })
       assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, revision)
@@ -135,8 +136,6 @@ test('mounted person selector starts unselected and exposes both complete source
       assert.equal(host.querySelector('[data-original-ratings]').dataset.originalRatings, 'unassigned')
       assert.equal(host.querySelector('input'), null)
     }
-    await act(async () => { select.value = ''; select.dispatchEvent(new browser.window.Event('change', { bubbles: true })) })
-    assert.equal(host.querySelector('[data-selected-revision]'), null)
   } finally {
     await act(async () => reactRoot.unmount())
     globalThis.window = previousWindow

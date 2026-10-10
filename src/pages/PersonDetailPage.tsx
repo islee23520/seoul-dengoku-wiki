@@ -287,6 +287,7 @@ type SheetIdentity = { readonly id: string; readonly personId: string; readonly 
 type PreservedSelection = { readonly ok: true; readonly sheet: GurpsSheetData; readonly record: Readonly<Record<string, unknown>>; readonly revision: string }
   | { readonly ok: false; readonly error: string }
 const sheetRevisions = Object.entries(preservationBaseline.revisions)
+const defaultSheetRevision = '5f34d92d54ca56b1f6c8f117cc6cbe8eda0067e4'
 
 export function selectPreservedSheet(payload: unknown, identity: SheetIdentity, revision: string): PreservedSelection {
   const reject = (error: string): PreservedSelection => ({ ok: false, error })
@@ -314,19 +315,17 @@ export function selectPreservedSheet(payload: unknown, identity: SheetIdentity, 
 }
 
 export function PreservedPersonSheet({ payload, identity }: { readonly payload: unknown; readonly identity: SheetIdentity }): JSX.Element {
-  const [revision, setRevision] = useState('')
-  const selected = revision ? selectPreservedSheet(payload, identity, revision) : null
+  const [revision, setRevision] = useState(defaultSheetRevision)
+  const selected = selectPreservedSheet(payload, identity, revision)
   return <section className="person-data-section" data-person-sheet>
     <h2>인물 시트</h2>
     <p data-original-ratings="unassigned">새 규칙은 d10 대항 판정, 등급 0–12, 합산 보정 −4–+4입니다. 이 인물의 새 등급과 보정은 미배정입니다.</p>
     <div className="people-filters">
       <label htmlFor={'sheet-revision-' + identity.personId}>역사 시트 리비전</label>
       <select id={'sheet-revision-' + identity.personId} value={revision} onChange={event => setRevision(event.currentTarget.value)}>
-        <option value="">리비전을 선택하세요</option>
         {sheetRevisions.map(([key]) => <option key={key} value={key}>{key.slice(0, 8)}</option>)}
       </select>
     </div>
-    {!selected && <p role="status">열람할 원본 리비전을 직접 선택하세요.</p>}
     {selected && !selected.ok && <p role="alert">시트를 표시할 수 없습니다. 원본 결속을 확인하세요. ({selected.error})</p>}
     {selected?.ok && <div data-selected-revision={selected.revision} data-legacy-operative="false">
       <p>원본 리비전: <code>{selected.revision}</code></p>
