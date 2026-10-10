@@ -26,7 +26,7 @@ test('all 334 source station IDs select exactly the 314 distinct displayed facil
   const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
   const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url), 'utf8'))
   const displayIds = new Set(data.stations.map(({ id }) => id))
-  const source = JSON.parse(await readFile(resolve(process.env.SEOUL_KENSHI_ROOT ?? new URL('../../GAME/', import.meta.url).pathname, 'Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+  const source = JSON.parse(await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url), 'utf8'))
   const members = new Map(data.stations.flatMap((station) => (station.memberIds ?? [station.id]).map((id) => [id, station.id])))
   const gameIds = new Set(source.stations.map(({ id }) => id))
   assert.deepEqual(new Set(members.keys()), gameIds)

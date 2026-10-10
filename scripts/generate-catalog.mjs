@@ -153,9 +153,10 @@ const firstExisting = async (candidates) => {
   throw new Error(`E_SOURCE_MISSING:${candidates.join('|')}`)
 }
 
-const outsideRoots = [process.env.SEOUL_KENSHI_ROOT, resolve(repoRoot, '..'), resolve(repoRoot, '../..')].filter(Boolean)
+const snapshotRoot = process.env.WIKI_SNAPSHOT_ROOT ?? resolve(repoRoot, 'snapshots/build-inputs')
+const outsideRoots = process.env.SEOUL_KENSHI_ROOT ? [process.env.SEOUL_KENSHI_ROOT] : []
 const resolveOutside = (relativePath) => firstExisting([
-  resolve(repoRoot, relativePath),
+  resolve(snapshotRoot, relativePath.split('/').pop()),
   ...outsideRoots.map((root) => resolve(root, relativePath)),
 ])
 
@@ -364,7 +365,7 @@ await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export type CurrentH
 const genderSource = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
 const stateNameById = new Map(stateCatalog.map((state) => [state.slug.toUpperCase(), state.name]))
-const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH ?? await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
+const regionAtlasSource = await readFile(process.env.WIKI_REGION_ATLAS_PATH || await resolveOutside('TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const populationSource = JSON.parse(await readFile(resolve(loreRoot, 'regions/sources/population-2026-08.json'), 'utf8'))
 const densityByDong = validatedDensities(regionAtlas.regions, populationSource)
