@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/owner-approved-defaults-on-c.md",
+    "lineStart": 1,
+    "lineEnd": 31,
+    "sha256": "812e686eaa5458b492b20ffc7bb553906a655f1ec761dea4f88798e53b8d5615"
+  },
+  "document": {
+    "id": "doc.owner-approved-defaults-on-c",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인된 제안 묶음 C — 켬(PRC-01·STR-01·SCH-01)"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자가 2026-10-10에 기본값 켬으로 승인한 제안이다. 정본 반영 전이라 제안 문서로만 올린다. 스트레스 구간 0–99/100–199/200–299/300+ 는 참고서 검증값이고 나머지 수치는 임시다."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "PRC-01 시장 가격 승수(희소·격리·수입 의존)"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 켬 — GDD 계수 0.35는 그대로이고 희소 항만 제안."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: RECON-07은 가격 승수에 희소 항을 더한다고만 하고 희소 항의 식이 없다. (근거 rules-economy-logistics-clauses.json RECON-07·08)"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 구매 단가 = 1.0 × (1 + 희소 + 0.35×격리도×수입 의존도). 희소 = clamp(1 − 재고/(3일 필요), 0, 1)×0.5. 격리도 = 1−K. 수입 의존도: 농업 직능 0(자급 역은 감점 없음), 그 밖 0.5. 가격은 재고를 만들지 않는다. 기존 고정 1.1 대체."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3·Nowland 모두 희소·봉쇄가 물가에 반영된다."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 봉쇄 때 식량 구매 단가가 최대 약 1.7배. 평소 부족일은 1.0~1.5배."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/sim.ts marketPrice / src/engine/cargo.ts"
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "STR-01 스트레스(성격에 역행하는 선택의 비용)"
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 켬 — 구간 경계는 검증된 값이고 나머지는 작다."
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: CK3 참고서의 스트레스 구간(0–99/100/200/300+)은 검증됨이나 트리거·붕괴 재발 대기는 미확인이다. (근거 references/ref-crusader-kings-3.json §10.1·10.2)"
+        }
+      ],
+      "id": "source.b12"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 위협=공동·원칙, 보상=물질, 계책=원칙·공개 가치관이 20을 넘으면 (초과/5, 최대 14)×2 스트레스. 주 −2 회복. 구간 1·2·3은 매주 기분 −구간, 구간 2↑ 건강 −(구간−1). 붕괴 사건은 구간 1↑에서 8주 대기 뒤에만(100 도달마다 즉시 반복 없음): 관계 −3×구간, 스트레스 −40."
+        }
+      ],
+      "id": "source.b13"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3 스트레스는 선택을 금으로 환산하지 못하게 하는 장치."
+        }
+      ],
+      "id": "source.b14"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 가치관이 강한 인물이 어긋나는 선택을 반복하면 몇 주 안에 구간 1."
+        }
+      ],
+      "id": "source.b15"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/intrigue.ts"
+        }
+      ],
+      "id": "source.b16"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SCH-01 계책(대상·요구·성공과 발각 분리)"
+        }
+      ],
+      "id": "source.b17"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 켬 — 효과가 작고 세계 판도에 닿지 않는다."
+        }
+      ],
+      "id": "source.b18"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: 계책의 구조만 참고되고 수치는 미확인이다. (근거 references/ref-crusader-kings-3.json §8.3)"
+        }
+      ],
+      "id": "source.b19"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 원한·경쟁 관계의 상대에게 자금 5, 4주 계책. 성공 = clamp(0.3+0.06×기록 기술, 0.1, 0.85), 발각 = clamp(0.35−0.03×기록 기술, 0.05, 0.5)를 서로 다른 해시로 판정. 성공: 상대 기분 −6·충성 −4. 발각: 평판 −3·관계 −4. 스트레스 가산."
+        }
+      ],
+      "id": "source.b20"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3 계책은 성공과 발각이 구별되는 변수."
+        }
+      ],
+      "id": "source.b21"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 기록 기술 3이면 성공 48%·발각 26%."
+        }
+      ],
+      "id": "source.b22"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/intrigue.ts"
+        }
+      ],
+      "id": "source.b23"
+    }
+  ]
+}
