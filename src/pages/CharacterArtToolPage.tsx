@@ -150,6 +150,7 @@ export default function CharacterArtToolPage() {
         <p>인물 기록을 자신의 컴퓨터에서 사용하는 아트 도구에 전달합니다. 생성 결과는 정본에 반영되지 않습니다.</p>
         <details><summary>인물 원본 기록</summary><pre>{JSON.stringify(packet, null, 2)}</pre></details>
         <p><a href={`${import.meta.env.BASE_URL}local-art-bridge.mjs`} download>로컬 연결 도구 받기</a> · 다운로드한 폴더에서 <code>node local-art-bridge.mjs --origin {window.location.origin} --port 17201</code> 실행</p>
+          <p>연결 도구와 초상 생성 파이프라인의 원본 저장소는 <a href="https://github.com/islee23520/seoul-dengoku-tools" rel="external">islee23520/seoul-dengoku-tools</a>(TOOL/avatar-gen)입니다.</p>
         <p>Codex 로그인과 이미지 생성 도구는 사용자의 컴퓨터에서 설정합니다. 기능이 없으면 작업은 실패합니다.</p>
         <div className="person-art-connection">
           <label>로컬 포트<input inputMode="numeric" value={port} onChange={(event) => setPort(event.target.value)} placeholder="연결 도구에 표시된 포트" /></label>
