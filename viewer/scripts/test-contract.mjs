@@ -16,8 +16,7 @@ test('GDD catalog exposes canonical documents and current data summaries', async
   // Word-anchored so it matches Ref-Ravelen / ravelen-chronicles but not "TravelEncounters".
   assert.ok(contract.documents.every((document) => !/\bravelen/i.test(`${document.route} ${document.sourcePath}`)), 'retired Ravelen reference must not be in the GDD catalog')
   assert.equal(contract.documents.filter((document) => /^\/rules\/Rules-/.test(document.route)).length, 7, 'the seven migrated Rules-* clause pages are published under rules')
-  const repoRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(gddRoot, '..')
-  const loreRoot = process.env.LORE_ROOT ?? resolve(repoRoot, 'WIKI/lore')
+  const loreRoot = process.env.LORE_ROOT ?? resolve(gddRoot, 'snapshots/world-game/lore')
   const stationControl = JSON.parse(await readFile(resolve(loreRoot, 'places/station-control-overrides.json'), 'utf8'))
   assert.ok(stationControl.overrides.length > 0)
   assert.equal(new Set(stationControl.overrides.map(({ stationId }) => stationId)).size, stationControl.overrides.length)
