@@ -106,8 +106,7 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
 
 test('all approved subtitles project one node without losing observed lines or movement neighbors', () => {
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
-  const gameRoot = process.env.SEOUL_KENSHI_ROOT ?? resolve(places, '../../../GAME')
-  const original = JSON.parse(readFileSync(resolve(gameRoot, 'Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+  const original = JSON.parse(readFileSync(resolve(places, '../../snapshots/build-inputs/SeoulWorldGraph.json'), 'utf8'))
   const physicalSource = JSON.parse(readFileSync(resolve(places, 'regular-line-adjacency.json'), 'utf8'))
   const physical = regularLineGraph(physicalSource, original.stations.map((station) => canonicalId.get(station.id) ?? station.id))
   const projectedEdges = new Set(projected.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
