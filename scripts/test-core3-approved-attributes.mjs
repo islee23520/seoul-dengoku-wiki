@@ -47,7 +47,8 @@ for (const [id, values, attributeCP, total] of approved) {
     const page = renderToStaticMarkup(createElement(MemoryRouter, null,
       createElement(PersonDetailContent, { detail, personId: id })))
     assert.ok(page.includes(`data-person-id="${id}"`))
-    assert.ok(!page.includes('class="gurps-sheet"'))
+    assert.ok(page.includes('class="gurps-sheet"'))
+    assert.ok(page.includes(`<span class="cp-number">${total}</span>`))
     const html = renderToStaticMarkup(createElement(GurpsSheet, { gurps: selected.sheet }))
     assert.ok(html.includes(`<span class="cp-number">${total}</span>`))
     assert.ok(html.includes(`<span>합계</span><span>${total} CP</span>`))

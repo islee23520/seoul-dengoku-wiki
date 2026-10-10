@@ -9,7 +9,7 @@ import { createRoot } from 'react-dom/client'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { JSDOM } from 'jsdom'
-import { PersonDetailContent, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
+import { PersonDetailContent, PreservedPersonSheet, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
 
 const read = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 const issued = read('../lore/name-pools/gurps-cast.json').people
@@ -41,10 +41,10 @@ async function withSelectedDetail(detail, check) {
     assert.equal(host.querySelector('[data-person-id]').dataset.personId, detail.id)
     const select = host.querySelector('[data-person-sheet] select')
     assert.ok(select)
-    assert.equal(select.value, '')
-    assert.equal(host.querySelector('.gurps-sheet'), null)
-    assert.equal(host.querySelector('[data-selected-revision]'), null)
-    assert.deepEqual([...select.options].map((option) => option.value), ['', ...Object.keys(baseline.revisions)])
+    assert.equal(select.value, revision)
+    assert.ok(host.querySelector('.gurps-sheet'))
+    assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, revision)
+    assert.deepEqual([...select.options].map((option) => option.value), Object.keys(baseline.revisions))
     await act(async () => {
       select.value = revision
       select.dispatchEvent(new browser.window.Event('change', { bubbles: true }))
@@ -93,6 +93,18 @@ test('generated person sheets preserve every issued identity and numeric field w
     assert.equal(detail.detailRoute, row.url, row.id)
     assert.equal(detail.characterId, row.id, row.id)
     assert.deepEqual(detail.gurps, { id: row.id, personId: row.url.split('/').pop() }, row.id)
+    const initialSheet = new JSDOM(renderToStaticMarkup(createElement(PreservedPersonSheet, {
+      payload: detail.personSheet,
+      identity: { id: detail.characterId, personId: detail.id, name: detail.name, state: detail.state },
+    })))
+    try {
+      assert.equal(initialSheet.window.document.querySelector('[data-selected-revision]')?.dataset.selectedRevision, revision, row.id)
+      const preserved = sources.get(revision).find((record) => record.id === row.id)
+      for (const key of ['ST', 'DX', 'IQ', 'HT']) {
+        const attr = [...initialSheet.window.document.querySelectorAll('.gurps-attr')].find((node) => node.querySelector('.attr-key').textContent === key)
+        assert.equal(attr?.querySelector('.attr-value').firstChild.textContent, String(preserved.attributes[key].value), `${row.id}:${key}`)
+      }
+    } finally { initialSheet.window.close() }
     for (const [key, records] of sources) {
       const selected = selectPreservedSheet(detail.personSheet, { id: detail.characterId, personId: detail.id, name: detail.name, state: detail.state }, key)
       assert.ok(selected.ok, `${row.id}:${key}:${JSON.stringify(selected)}`)
