@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/owner-approved-defaults-off-keep.md",
+    "lineStart": 1,
+    "lineEnd": 40,
+    "sha256": "d5316356416cfb15520f7ce1739c7a64b7fe21aae95bee883a92ad3afc34ddf0"
+  },
+  "document": {
+    "id": "doc.owner-approved-defaults-off-keep",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인된 제안 묶음 B — 끔·현재 값 유지(BET-01 끔 · LD-01 · SV-01 3건/8주 · TR-01)"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자가 2026-10-10에 BET-01은 기본 끔, LD-01·SV-01(3건/8주)·TR-01은 현재 값 유지로 승인했다. 정본 반영 전 제안 문서다."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "BET-01 배신의 세 조건(NPC 세력)"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 끔 — 세계 판도를 크게 바꾸므로 소유자가 켜기로 정한 뒤 시뮬레이션 평균을 다시 맞춘다."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: 조약·맹세를 위반하는 행동이 없다. (근거 rules-factions-warfare-clauses.json RWARFARE-34)"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 동맹이 있고(위반할 조약) 이름 있는 수장이 실행하며 그 수장이 알던 촉발 사건(동맹국의 최근 8주 내 패배)과 동기(야망 land/revenge/promotion & 전력 우세 1.3배)가 있을 때, 주당 4% 확률로 동맹을 깨고 긴장 +40, 정통성 −8. 셋 중 하나라도 없으면 배신이 아니다."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3는 동맹 파기에 명분·평판 대가를 두고 NPC 군주의 야망이 동기가 된다."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 세계 판도 변화가 커져 같은 시드의 NPC 역사가 달라진다."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/world.ts betrayalWeek"
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "LD-01 물류 부하 실패·붕괴 결정의 효과 크기"
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 현재 값 유지 — 시뮬 평균 수명에 영향이 작다."
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: 실패(75~99) 다섯 결정과 붕괴(100) 다섯 결말의 효과 크기를 정본이 정하지 않았다. (근거 rules-economy-logistics-clauses.json RECON-20)"
+        }
+      ],
+      "id": "source.b12"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 후퇴 −25·유기(자금 −15%, −15)·조달(−12, 평판 −3)·분할(−14, 관계 −4)·속행(건강 −3), 좌초 90·항복 60(평판 −10)·해산 60(식구 −1)·구조 60(자금 −30%)·최후 조우 85(충돌 열림)."
+        }
+      ],
+      "id": "source.b13"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: Nowland의 위기 선택은 자원·사기 비용을 서로 맞바꾼다."
+        }
+      ],
+      "id": "source.b14"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 한 번의 결정이 약 1~3주 분량의 손실."
+        }
+      ],
+      "id": "source.b15"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/crisis.ts loadResolve"
+        }
+      ],
+      "id": "source.b16"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SV-01 미시 줄 승격 임계"
+        }
+      ],
+      "id": "source.b17"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 3건/8주 유지 — 세계 원장이 지나치게 늘지 않는다."
+        }
+      ],
+      "id": "source.b18"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: 인물 미시 줄이 세계 사건이 되는 임계가 없다. (근거 rules-save-determinism-clauses.json RSAVE-08)"
+        }
+      ],
+      "id": "source.b19"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 같은 인물·같은 종류 3건/8주에서 세계 사건 하나로 승격(이미 올린 줄은 다시 세지 않음). 「후계 지지」 줄은 발생 행동이 아직 없다."
+        }
+      ],
+      "id": "source.b20"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3는 관계 이벤트 누적이 임계를 넘을 때 연쇄 사건을 낸다."
+        }
+      ],
+      "id": "source.b21"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 3건은 평정 두 번과 면담으로 도달."
+        }
+      ],
+      "id": "source.b22"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/micro.ts MICRO"
+        }
+      ],
+      "id": "source.b23"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "TR-01 전략맵 이동 비용 계수"
+        }
+      ],
+      "id": "source.b24"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 현재 값 유지 — 비용을 실제 시간·자원에 연결할 때 다시 정한다."
+        }
+      ],
+      "id": "source.b25"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본이 비운 것: 구간 기본 비용과 조건 가산 계수가 없다(조우 확률도). (근거 rules-travel-encounters-clauses.json RTRAVEL-05~10)"
+        }
+      ],
+      "id": "source.b26"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 층 전환 1, 부상 0.25·통증 0.15·피로 0.2·과적 0.3, 어둠 15%·침수 30%·잔해 20%·화재 50%, 적대 통제 40%·통행권 없음 +60%, 파티 +10%/인, 은밀 +20%, 호위 +25%. 조우 기본 20%+소음 5%/단계."
+        }
+      ],
+      "id": "source.b27"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: Nowland·CK3 이동은 지형·계절 가산을 곱셈으로 쌓는다."
+        }
+      ],
+      "id": "source.b28"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 이동 비용이 표시용이라 아직 경제에 닿지 않는다."
+        }
+      ],
+      "id": "source.b29"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/travel.ts TRAVEL_PLACEHOLDER"
+        }
+      ],
+      "id": "source.b30"
+    }
+  ]
+}
