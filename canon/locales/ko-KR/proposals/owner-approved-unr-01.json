@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/owner-approved-unr-01.md",
+    "lineStart": 1,
+    "lineEnd": 17,
+    "sha256": "d57f67c8651fb506e87f65657056f7a192000a2842575dca6fa84a8c6779d5cf"
+  },
+  "document": {
+    "id": "doc.owner-approved-unr-01",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인된 제안 — UNR-01 집단 압력(불만·결속·지렛대 사상)"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자가 2026-10-10에 기본값 켬으로 승인한 제안이다. 정본 반영 전이라 제안 문서로만 올린다. 압력 식·문턱은 RWARFARE-09·13 그대로이고, 거점 측정값→G·C·V 사상만 제안(임시)이다."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "UNR-01 집단 압력(불만·결속·지렛대 사상)"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전). 권장 기본값: 켬."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: RWARFARE-09·13은 압력 식과 문턱(40/70, 지렛대 0.75, 2주 연속)을 정하지만 거점 측정값에서 불만 G·결속 C·지렛대 V를 읽는 사상이 없다. — 근거 경로: rules-factions-warfare-clauses.json RWARFARE-06·08·09·13"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: G = 100×(0.6×부족 S + 0.4×(1−L/100)), C = 협력 L, V = clamp(0.5×(1−K)+0.4×S+(곡물<60 ? 0.2:0), 0, 1). 압력은 GDD 식 그대로, 강제 요구(파업·봉쇄·분리)는 압력≥70·V≥0.75가 2주 연속일 때만 연다. 열리면 상황 coercive-demand → 선택 사건(받아들임·협상·진압). 신뢰 T 갱신은 사건영향×신빙성(= 내 이행 신뢰도 Rel)을 −25~25로 자른다: 수여 수락 +8·불만 −4·반란 위험 −10."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3 가신 불만·파벌 압력이 문턱을 넘으면 최후통첩 사건이 열린다."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 곡물 부족과 고립이 겹쳐야 열려 평시에는 거의 나오지 않는다."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: src/engine/unrest.ts measure"
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 난수 사건."
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장)(기본) / 끔(GDD 원문대로)"
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현: src/engine/unrest.ts"
+        }
+      ],
+      "id": "source.b12"
+    }
+  ]
+}
