@@ -54,6 +54,23 @@
     "label": "세 번째 급수계약 개막일",
     "absolute_date": null
   },
+  "extended_coverage": {
+    "source_id": "admdongkor-20260701-7360288",
+    "sha256": "c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f",
+    "retrieved_on": "2026-10-10",
+    "filter": "properties.sidonm in the six named regions below",
+    "regions": [
+      {"sidonm": "서울특별시", "sido": "11", "districts": 25, "dong": 427},
+      {"sidonm": "경기도", "sido": "41", "districts": 47, "dong": 602},
+      {"sidonm": "충청북도", "sido": "43", "districts": 14, "dong": 153},
+      {"sidonm": "충청남도", "sido": "44", "districts": 16, "dong": 208},
+      {"sidonm": "대전광역시", "sido": "30", "districts": 5, "dong": 82},
+      {"sidonm": "세종특별자치시", "sido": "36", "districts": 1, "dong": 24},
+      {"sidonm": "강원특별자치도", "sido": "51", "districts": 18, "dong": 188}
+    ],
+    "dong_total": 1684,
+    "policy": "The same pinned boundary file covers these regions. Counts are observed from that file on 2026-10-10. Authored region content outside Seoul is not claimed here."
+  },
   "decision_kind": "implementation default for full-area regional content, not legal boundary certification",
   "reason": "Named dated 427 dongs provide finer local identity than 25 gu or anonymous grid. Original district mask has a large measured discrepancy and includes external stations. New union is explicitly selected and both versions remain traceable."
 }
