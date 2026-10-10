@@ -15,7 +15,7 @@
 
 같은 경계 파일은 서울 밖도 담는다. 2026-10-10에 그 파일에서 센 범위는 경기도 602동(47개 시군구), 충청북도 153동(14), 충청남도 208동(16), 대전광역시 82동(5), 세종특별자치시 24동(1), 강원특별자치도 188동(18)이다. 서울 427동과 합하면 1684동이다. 코드와 수는 `sources/selection.json`의 `extended_coverage`에 고정했다. 이 범위의 창작 지역 내용은 아직 쓰지 않았다.
 
-OSM 자료는 `© OpenStreetMap contributors`, ODbL 1.0 조건을 유지한다. 지형은 Mapzen·USGS 및 해당하는 NOAA 출처표시를 보존한다. 원본 지리 번들은 저장소의 형제 디렉터리 `seoul-kenshi-data/seoul-geography-20260830`에 있다. 원본 PBF는 Unity Assets에 복사하지 않는다.
+OSM 자료는 `© OpenStreetMap contributors`, ODbL 1.0 조건을 유지한다. 지형은 Mapzen·USGS 및 해당하는 NOAA 출처표시를 보존한다. 원본 지리 번들은 위키 저장소의 [`data/geography/`](../../data/geography/README.md)에 보관한다. 서울 기존 번들, 요청 권역을 포함하는 대한민국 OSM 원본, 선택 행정동 실제 도형과 고도 타일을 함께 유지한다. 파일별 출처·크기·SHA-256은 그 디렉터리의 `manifest.json`을 따른다. 원본 PBF는 Unity Assets에 복사하지 않는다.
 
 ## 파일 구조
 
