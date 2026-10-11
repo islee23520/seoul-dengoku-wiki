@@ -148,6 +148,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
     {exportError && <p role="alert">{exportError}</p>}
     <section className="draft-actions">
       <button type="button" disabled={!canExport} onClick={download}>초안 내보내기</button>
+      <p>초안 작성과 검증 도구의 원본 저장소는 <a href="https://github.com/islee23520/seoul-dengoku-tools" rel="external">islee23520/seoul-dengoku-tools</a>입니다.</p>
       <Link to="/people">인물 목록으로</Link>
     </section>
   </main>
