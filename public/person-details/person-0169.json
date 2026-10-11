@@ -2,10 +2,10 @@
   "id": "person-0169",
   "name": "조이록",
   "title": "기록 공증 감사관",
-  "position": "기록 공증 감사관",
+  "position": "기록 공증 감사관 · 고성군 영주",
   "characterId": "K168",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "원본 해시 확인·사본 공증 감사",
   "gender": "여성",
   "stage": "S2",
@@ -736,7 +736,67 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51820-S06",
+      "name": {
+        "ko": "고성군 공작령 직영지"
+      },
+      "holderPersonId": "K168",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5182025000",
+          "name": "강원특별자치도 고성군 간성읍"
+        },
+        {
+          "id": "5182025300",
+          "name": "강원특별자치도 고성군 거진읍"
+        },
+        {
+          "id": "5182031000",
+          "name": "강원특별자치도 고성군 현내면"
+        },
+        {
+          "id": "5182032000",
+          "name": "강원특별자치도 고성군 죽왕면"
+        },
+        {
+          "id": "5182033000",
+          "name": "강원특별자치도 고성군 토성면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51820-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51820-S06",
+      "name": "고성군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K168",
+      "basis": "개막 행정 규모 그룹 51820(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5182025000",
+        "5182025300",
+        "5182031000",
+        "5182032000",
+        "5182033000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

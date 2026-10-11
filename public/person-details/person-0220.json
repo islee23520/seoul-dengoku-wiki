@@ -788,6 +788,50 @@
       "geometrySource": null,
       "territorialScale": null,
       "formalTitleRank": null
+    },
+    {
+      "id": "holding:opening-duchy-gu-11560-S09",
+      "name": {
+        "ko": "영등포구 여의도출자연합회 공작령 직영지"
+      },
+      "holderPersonId": "K219",
+      "directLiegePersonId": "K029",
+      "stateId": "S09",
+      "adminRefs": [
+        {
+          "id": "region:1156053500",
+          "name": "영등포동"
+        },
+        {
+          "id": "region:1156054000",
+          "name": "여의동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11560-S09",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11560-S09",
+      "name": "영등포구 여의도출자연합회 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K219",
+      "basis": "개막 행정 규모 그룹 gu:11560(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S09",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1156053500",
+        "region:1156054000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
     }
   ],
   "unit": {

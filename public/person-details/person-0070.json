@@ -2,10 +2,10 @@
   "id": "person-0070",
   "name": "표지안",
   "title": "공동기술원장 전령",
-  "position": "태욱그룹 회장 전령",
+  "position": "태욱그룹 회장 전령 · 서초구 영주",
   "characterId": "K070",
-  "rank": "대리",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "봉함 문서 전달",
   "gender": "여성",
   "stage": "S2",
@@ -726,7 +726,52 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11650-S03",
+      "name": {
+        "ko": "서초구 태욱그룹 공작령 직영지"
+      },
+      "holderPersonId": "K070",
+      "directLiegePersonId": "K029",
+      "stateId": "S03",
+      "adminRefs": [
+        {
+          "id": "region:1165052000",
+          "name": "서초2동"
+        },
+        {
+          "id": "region:1165065100",
+          "name": "양재1동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11650-S03",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11650-S03",
+      "name": "서초구 태욱그룹 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K070",
+      "basis": "개막 행정 규모 그룹 gu:11650(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S03",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1165052000",
+        "region:1165065100"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

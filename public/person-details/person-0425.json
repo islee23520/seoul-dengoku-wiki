@@ -2,10 +2,10 @@
   "id": "person-0425",
   "name": "박도윤",
   "title": "작업반 전령",
-  "position": "작업반 전령",
+  "position": "작업반 전령 · 태안군 영주",
   "characterId": "K425",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "환승 전갈 전달",
   "gender": "남성",
   "stage": "S4",
@@ -591,7 +591,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44825-S02",
+      "name": {
+        "ko": "태안군 공작령 직영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4482525000",
+          "name": "충청남도 태안군 태안읍"
+        },
+        {
+          "id": "4482525300",
+          "name": "충청남도 태안군 안면읍"
+        },
+        {
+          "id": "4482531000",
+          "name": "충청남도 태안군 고남면"
+        },
+        {
+          "id": "4482532000",
+          "name": "충청남도 태안군 남면"
+        },
+        {
+          "id": "4482533000",
+          "name": "충청남도 태안군 근흥면"
+        },
+        {
+          "id": "4482534000",
+          "name": "충청남도 태안군 소원면"
+        },
+        {
+          "id": "4482535000",
+          "name": "충청남도 태안군 원북면"
+        },
+        {
+          "id": "4482536000",
+          "name": "충청남도 태안군 이원면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44825-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44825-S02",
+      "name": "태안군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K425",
+      "basis": "개막 행정 규모 그룹 44825(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4482525000",
+        "4482525300",
+        "4482531000",
+        "4482532000",
+        "4482533000",
+        "4482534000",
+        "4482535000",
+        "4482536000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

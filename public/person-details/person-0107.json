@@ -2,10 +2,10 @@
   "id": "person-0107",
   "name": "제바름",
   "title": "성동 골목의무소 원장",
-  "position": "성동 골목의무소 원장",
+  "position": "성동 골목의무소 원장 · 여주시 영주",
   "characterId": "K106",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "골목 진료·처방 배분",
   "gender": "여성",
   "stage": "S2",
@@ -750,7 +750,102 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41670-S04",
+      "name": {
+        "ko": "여주시 공작령 직영지"
+      },
+      "holderPersonId": "K106",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4167025000",
+          "name": "경기도 여주시 가남읍"
+        },
+        {
+          "id": "4167031000",
+          "name": "경기도 여주시 점동면"
+        },
+        {
+          "id": "4167032000",
+          "name": "경기도 여주시 흥천면"
+        },
+        {
+          "id": "4167033000",
+          "name": "경기도 여주시 금사면"
+        },
+        {
+          "id": "4167034500",
+          "name": "경기도 여주시 세종대왕면"
+        },
+        {
+          "id": "4167035000",
+          "name": "경기도 여주시 대신면"
+        },
+        {
+          "id": "4167036000",
+          "name": "경기도 여주시 북내면"
+        },
+        {
+          "id": "4167037000",
+          "name": "경기도 여주시 강천면"
+        },
+        {
+          "id": "4167038000",
+          "name": "경기도 여주시 산북면"
+        },
+        {
+          "id": "4167051000",
+          "name": "경기도 여주시 여흥동"
+        },
+        {
+          "id": "4167052000",
+          "name": "경기도 여주시 중앙동"
+        },
+        {
+          "id": "4167053000",
+          "name": "경기도 여주시 오학동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41670-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41670-S04",
+      "name": "여주시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K106",
+      "basis": "개막 행정 규모 그룹 41670(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4167025000",
+        "4167031000",
+        "4167032000",
+        "4167033000",
+        "4167034500",
+        "4167035000",
+        "4167036000",
+        "4167037000",
+        "4167038000",
+        "4167051000",
+        "4167052000",
+        "4167053000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

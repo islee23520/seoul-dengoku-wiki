@@ -2,10 +2,10 @@
   "id": "person-0056",
   "name": "기필호",
   "title": "패권전 제작 병참",
-  "position": "제작 병참",
+  "position": "제작 병참 · 청양군 영주",
   "characterId": "K056",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "대합실 당직",
   "gender": "남성",
   "stage": "S3",
@@ -716,7 +716,92 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44790-S02",
+      "name": {
+        "ko": "청양군 공작령 직영지"
+      },
+      "holderPersonId": "K056",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4479025000",
+          "name": "충청남도 청양군 청양읍"
+        },
+        {
+          "id": "4479031000",
+          "name": "충청남도 청양군 운곡면"
+        },
+        {
+          "id": "4479032000",
+          "name": "충청남도 청양군 대치면"
+        },
+        {
+          "id": "4479033000",
+          "name": "충청남도 청양군 정산면"
+        },
+        {
+          "id": "4479034000",
+          "name": "충청남도 청양군 목면"
+        },
+        {
+          "id": "4479035000",
+          "name": "충청남도 청양군 청남면"
+        },
+        {
+          "id": "4479036000",
+          "name": "충청남도 청양군 장평면"
+        },
+        {
+          "id": "4479037000",
+          "name": "충청남도 청양군 남양면"
+        },
+        {
+          "id": "4479038000",
+          "name": "충청남도 청양군 화성면"
+        },
+        {
+          "id": "4479039000",
+          "name": "충청남도 청양군 비봉면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44790-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44790-S02",
+      "name": "청양군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K056",
+      "basis": "개막 행정 규모 그룹 44790(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4479025000",
+        "4479031000",
+        "4479032000",
+        "4479033000",
+        "4479034000",
+        "4479035000",
+        "4479036000",
+        "4479037000",
+        "4479038000",
+        "4479039000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -707,7 +707,142 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11500-S03",
+      "name": {
+        "ko": "강서구 공작령 직영지"
+      },
+      "holderPersonId": "K061",
+      "directLiegePersonId": "K029",
+      "stateId": "S03",
+      "adminRefs": [
+        {
+          "id": "region:1150051000",
+          "name": "염창동"
+        },
+        {
+          "id": "region:1150052000",
+          "name": "등촌1동"
+        },
+        {
+          "id": "region:1150053000",
+          "name": "등촌2동"
+        },
+        {
+          "id": "region:1150053500",
+          "name": "등촌3동"
+        },
+        {
+          "id": "region:1150054000",
+          "name": "화곡1동"
+        },
+        {
+          "id": "region:1150055000",
+          "name": "화곡2동"
+        },
+        {
+          "id": "region:1150056000",
+          "name": "화곡3동"
+        },
+        {
+          "id": "region:1150057000",
+          "name": "화곡4동"
+        },
+        {
+          "id": "region:1150059000",
+          "name": "화곡본동"
+        },
+        {
+          "id": "region:1150059100",
+          "name": "화곡6동"
+        },
+        {
+          "id": "region:1150059300",
+          "name": "화곡8동"
+        },
+        {
+          "id": "region:1150060300",
+          "name": "가양1동"
+        },
+        {
+          "id": "region:1150060400",
+          "name": "가양2동"
+        },
+        {
+          "id": "region:1150060500",
+          "name": "가양3동"
+        },
+        {
+          "id": "region:1150061100",
+          "name": "발산1동"
+        },
+        {
+          "id": "region:1150061500",
+          "name": "우장산동"
+        },
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        },
+        {
+          "id": "region:1150063000",
+          "name": "방화1동"
+        },
+        {
+          "id": "region:1150064000",
+          "name": "방화2동"
+        },
+        {
+          "id": "region:1150064100",
+          "name": "방화3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11500-S03",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11500-S03",
+      "name": "강서구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K061",
+      "basis": "개막 행정 규모 그룹 gu:11500(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S03",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1150051000",
+        "region:1150052000",
+        "region:1150053000",
+        "region:1150053500",
+        "region:1150054000",
+        "region:1150055000",
+        "region:1150056000",
+        "region:1150057000",
+        "region:1150059000",
+        "region:1150059100",
+        "region:1150059300",
+        "region:1150060300",
+        "region:1150060400",
+        "region:1150060500",
+        "region:1150061100",
+        "region:1150061500",
+        "region:1150062000",
+        "region:1150063000",
+        "region:1150064000",
+        "region:1150064100"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

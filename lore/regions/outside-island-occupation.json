@@ -2,6 +2,15 @@
   "schema": "outside-island-occupation.v1",
   "geometrySource": "public/outside-admin-units.json",
   "geometrySourceSha256": "c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f",
+  "openingDecision": {
+    "authority": { "kind": "state", "stateId": "S06", "name": "대한민국정부" },
+    "namedIslandApprovalRefs": [
+      "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:northwest_named_islands",
+      "owner:call_M9laK9tNaQJ4r1j5y9FFQnVL:southwest_named_islands"
+    ],
+    "anonymousComponentApprovalRef": "owner:call_rLKPdKojQL4JDT3Umo5fl3qL:anonymous_islet_allocation",
+    "policy": "기존 이름 있는 섬과 익명 요소를 해당 섬군의 정부 해상 봉신 관할로 배치한다. 연결 다리·지명·좌표·도형은 기존 관측 원천을 보존하며, 개인 영지는 별도 배분 원장이 정한다."
+  },
   "units": [
     {
       "unitId": "2815551000",

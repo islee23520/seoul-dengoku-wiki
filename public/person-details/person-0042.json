@@ -2,10 +2,10 @@
   "id": "person-0042",
   "name": "표강호",
   "title": "제작규격 전령",
-  "position": "제작규격 전령",
+  "position": "제작규격 전령 · 공주시 영주",
   "characterId": "K042",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "규격 문서 전달",
   "gender": "여성",
   "stage": "S2",
@@ -632,7 +632,122 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44150-S02",
+      "name": {
+        "ko": "공주시 공작령 직영지"
+      },
+      "holderPersonId": "K042",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4415025000",
+          "name": "충청남도 공주시 유구읍"
+        },
+        {
+          "id": "4415031000",
+          "name": "충청남도 공주시 이인면"
+        },
+        {
+          "id": "4415032000",
+          "name": "충청남도 공주시 탄천면"
+        },
+        {
+          "id": "4415033000",
+          "name": "충청남도 공주시 계룡면"
+        },
+        {
+          "id": "4415034000",
+          "name": "충청남도 공주시 반포면"
+        },
+        {
+          "id": "4415036000",
+          "name": "충청남도 공주시 의당면"
+        },
+        {
+          "id": "4415037000",
+          "name": "충청남도 공주시 정안면"
+        },
+        {
+          "id": "4415038000",
+          "name": "충청남도 공주시 우성면"
+        },
+        {
+          "id": "4415039000",
+          "name": "충청남도 공주시 사곡면"
+        },
+        {
+          "id": "4415040000",
+          "name": "충청남도 공주시 신풍면"
+        },
+        {
+          "id": "4415051000",
+          "name": "충청남도 공주시 중학동"
+        },
+        {
+          "id": "4415054000",
+          "name": "충청남도 공주시 웅진동"
+        },
+        {
+          "id": "4415055000",
+          "name": "충청남도 공주시 금학동"
+        },
+        {
+          "id": "4415056000",
+          "name": "충청남도 공주시 옥룡동"
+        },
+        {
+          "id": "4415057000",
+          "name": "충청남도 공주시 신관동"
+        },
+        {
+          "id": "4415059000",
+          "name": "충청남도 공주시 월송동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44150-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44150-S02",
+      "name": "공주시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K042",
+      "basis": "개막 행정 규모 그룹 44150(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4415025000",
+        "4415031000",
+        "4415032000",
+        "4415033000",
+        "4415034000",
+        "4415036000",
+        "4415037000",
+        "4415038000",
+        "4415039000",
+        "4415040000",
+        "4415051000",
+        "4415054000",
+        "4415055000",
+        "4415056000",
+        "4415057000",
+        "4415059000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

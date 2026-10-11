@@ -2,10 +2,10 @@
   "id": "person-0699",
   "name": "구서결",
   "title": "부품 물류상",
-  "position": "부품 물류상",
+  "position": "부품 물류상 · 괴산군 영주",
   "characterId": "K699",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "부품 출고 검사",
   "gender": "여성",
   "stage": "S4",
@@ -643,7 +643,97 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-43760-S04",
+      "name": {
+        "ko": "괴산군 공작령 직영지"
+      },
+      "holderPersonId": "K699",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4376025000",
+          "name": "충청북도 괴산군 괴산읍"
+        },
+        {
+          "id": "4376031000",
+          "name": "충청북도 괴산군 감물면"
+        },
+        {
+          "id": "4376032000",
+          "name": "충청북도 괴산군 장연면"
+        },
+        {
+          "id": "4376033000",
+          "name": "충청북도 괴산군 연풍면"
+        },
+        {
+          "id": "4376034000",
+          "name": "충청북도 괴산군 칠성면"
+        },
+        {
+          "id": "4376035000",
+          "name": "충청북도 괴산군 문광면"
+        },
+        {
+          "id": "4376036000",
+          "name": "충청북도 괴산군 청천면"
+        },
+        {
+          "id": "4376037000",
+          "name": "충청북도 괴산군 청안면"
+        },
+        {
+          "id": "4376039000",
+          "name": "충청북도 괴산군 사리면"
+        },
+        {
+          "id": "4376040000",
+          "name": "충청북도 괴산군 소수면"
+        },
+        {
+          "id": "4376041000",
+          "name": "충청북도 괴산군 불정면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-43760-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-43760-S04",
+      "name": "괴산군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K699",
+      "basis": "개막 행정 규모 그룹 43760(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4376025000",
+        "4376031000",
+        "4376032000",
+        "4376033000",
+        "4376034000",
+        "4376035000",
+        "4376036000",
+        "4376037000",
+        "4376039000",
+        "4376040000",
+        "4376041000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -2,10 +2,10 @@
   "id": "person-0048",
   "name": "제문석",
   "title": "구로 분진진료소 의무장",
-  "position": "구로 분진진료소 의무장",
+  "position": "구로 분진진료소 의무장 · 논산시 영주",
   "characterId": "K048",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "분진 진료",
   "gender": "남성",
   "stage": "S2",
@@ -717,7 +717,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44230-S02",
+      "name": {
+        "ko": "논산시 공작령 직영지"
+      },
+      "holderPersonId": "K048",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4423025000",
+          "name": "충청남도 논산시 강경읍"
+        },
+        {
+          "id": "4423025300",
+          "name": "충청남도 논산시 연무읍"
+        },
+        {
+          "id": "4423031000",
+          "name": "충청남도 논산시 성동면"
+        },
+        {
+          "id": "4423032000",
+          "name": "충청남도 논산시 광석면"
+        },
+        {
+          "id": "4423033000",
+          "name": "충청남도 논산시 노성면"
+        },
+        {
+          "id": "4423034000",
+          "name": "충청남도 논산시 상월면"
+        },
+        {
+          "id": "4423035000",
+          "name": "충청남도 논산시 부적면"
+        },
+        {
+          "id": "4423036000",
+          "name": "충청남도 논산시 연산면"
+        },
+        {
+          "id": "4423038000",
+          "name": "충청남도 논산시 벌곡면"
+        },
+        {
+          "id": "4423039000",
+          "name": "충청남도 논산시 양촌면"
+        },
+        {
+          "id": "4423040000",
+          "name": "충청남도 논산시 가야곡면"
+        },
+        {
+          "id": "4423041000",
+          "name": "충청남도 논산시 은진면"
+        },
+        {
+          "id": "4423042000",
+          "name": "충청남도 논산시 채운면"
+        },
+        {
+          "id": "4423051000",
+          "name": "충청남도 논산시 취암동"
+        },
+        {
+          "id": "4423052000",
+          "name": "충청남도 논산시 부창동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44230-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44230-S02",
+      "name": "논산시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K048",
+      "basis": "개막 행정 규모 그룹 44230(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4423025000",
+        "4423025300",
+        "4423031000",
+        "4423032000",
+        "4423033000",
+        "4423034000",
+        "4423035000",
+        "4423036000",
+        "4423038000",
+        "4423039000",
+        "4423040000",
+        "4423041000",
+        "4423042000",
+        "4423051000",
+        "4423052000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

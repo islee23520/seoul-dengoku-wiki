@@ -31,6 +31,7 @@ import { loadCastFamilyTrees, projectFamilyTree, projectClanFamilyTree } from '.
 import { projectNonKoreanFamilies } from './non-korean-family-catalog.mjs'
 import { currentAffiliations, hegemonsForHolders, currentBasePoint, territoryLabel } from './current-affiliation.mjs'
 import { projectOutsideOccupation } from './outside-occupation.mjs'
+import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
 
@@ -780,7 +781,8 @@ await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringi
 const outsideGeometry = JSON.parse(await readFile(resolve(publicRoot, 'outside-admin-units.json'), 'utf8'))
 const outsideControl = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-control-2126.json'), 'utf8'))
 const outsideIslands = JSON.parse(await readFile(resolve(loreRoot, 'regions/outside-island-occupation.json'), 'utf8'))
-await writeFile(resolve(publicRoot, 'outside-control-2126.json'), JSON.stringify(projectOutsideOccupation(outsideControl, outsideGeometry, outsideIslands), null, 2) + '\n')
+const projectedOutsideControl = projectOutsideOccupation(outsideControl, outsideGeometry, outsideIslands)
+await writeFile(resolve(publicRoot, 'outside-control-2126.json'), JSON.stringify(projectedOutsideControl, null, 2) + '\n')
 
 const centuryAnnalsSource = renderedBySlug.get('Century-Annals')
 if (!centuryAnnalsSource) throw new Error('E_CENTURY_ANNALS_MISSING')
@@ -876,7 +878,7 @@ const courtDataset = loadDataset()
 const courtErrors = validateRelations(courtDataset)
 if (courtErrors.length) throw new Error(`E_COURT_RELATIONS:${courtErrors.join('; ')}`)
 const issuedById = new Map(courtDataset.people.map((person) => [person.id, person]))
-const personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
+let personalHoldings = JSON.parse(await readFile(resolve(loreRoot, 'relations/personal-holdings.json'), 'utf8'))
 const openingDispositions = validateOpeningDispositions(personalHoldings, courtDataset.people)
 const daejeonPolities = personalHoldings.polities.filter(polity => polity.id === 'polity:daejeon')
 if (daejeonPolities.length !== 1) throw new Error('E_DAEJEON_POLITY_ID')
@@ -908,6 +910,15 @@ for (const holding of personalHoldings.holdings) {
     if (!region || region.name !== ref.name) throw new Error('E_HOLDING_ADMIN_REF:' + holding.id + ':' + ref.id)
   }
 }
+const openingAllocation = JSON.parse(await readFile(resolve(loreRoot, 'relations/opening-feudal-allocation.json'), 'utf8'))
+personalHoldings = projectOpeningFeudalAllocation({
+  allocation: openingAllocation, existing: personalHoldings,
+  people: peopleSource.map(person => ({ id: courtDataset.people.find(issued => issued.name === person.name)?.id, name: person.name, state: person.state })),
+  seoul: openingTerritories,
+  outside: { ...outsideGeometry, islands: projectedOutsideControl.assignments.filter(unit => unit.components).map(unit => ({ unitId: unit.unitId, components: unit.components })) },
+  control: projectedOutsideControl, affiliation: sixteenStatesLore.data.currentAffiliation,
+  scale: buildAdminTerritorialScale(outsideGeometry.units, openingTerritories.regions, territorialScale),
+})
 await writeFile(resolve(publicRoot, 'confirmed-person-holdings.json'), JSON.stringify(personalHoldings, null, 2) + String.fromCharCode(10))
 const issuedIdByName = new Map(courtDataset.people.map((person) => [person.name, person.id]))
 const birthdayRoster = courtDataset.sources.registry.persons
@@ -958,6 +969,12 @@ const membershipsById = new Map(courtDataset.config.courtMemberships.memberships
 const courtMembersByOwner = new Map(courtDataset.config.courts.map((court) => [court.ownerPersonId,
   [...courtDataset.config.directRetainers, ...courtDataset.config.courtMemberships.memberships].filter((row) => row.courtId === court.id)]))
 const ownerLiegeByPerson = new Map(courtDataset.config.ownerLieges?.edges?.map((row) => [row.personId, row]) ?? [])
+const officeAppointmentSource = JSON.parse(await readFile(resolve(loreRoot, 'relations/opening-office-appointments.json'), 'utf8'))
+const officeAppointments = new Map()
+for (const row of officeAppointmentSource.appointments) {
+  if (officeAppointments.has(row.personId) || !issuedById.has(row.personId) || !/^T[1-5]$/u.test(row.commonTier) || !row.position?.ko || !row.position?.en || !row.rank?.ko || !row.rank?.en || !row.approvalRef) throw new Error('E_OPENING_OFFICE:' + row.personId)
+  officeAppointments.set(row.personId, row)
+}
 const parseCardSections = (body) => {
   const sections = {}
   const matches = [...body.matchAll(/\*\*([^*]+?)\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*#{2,3}\s|\n\s*:::|$)/g)]
@@ -987,12 +1004,14 @@ const peopleCatalog = peopleSource.map((person, index) => {
     ? heading.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-')
     : heading
   const office = sections['관직'] ?? ''
-  const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
-  const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
+  const appointment = officeAppointments.get(issuedIdByName.get(person.name))
+  if (appointment && appointment.stateId !== person.state) throw new Error('E_OPENING_OFFICE_STATE:' + appointment.personId)
+  const position = appointment?.position.ko ?? fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
+  const rank = appointment?.rank.ko ?? fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const occupation = fields['생업'] ?? cards.map((card) => parseCardFields(card.body)['생업']).find(Boolean) ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.findIndex((ranks) => ranks.includes(rank)) ?? -1
-  const commonTier = person.state === 'polity:daejeon' || person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : ''
+  const commonTier = appointment?.commonTier ?? (person.state === 'polity:daejeon' || person.state === 'S00' || source === 'Cast-Unaffiliated' || source === 'Diaspora-Corridors' || /^품계 없음\./u.test(office) ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : '')
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,
@@ -1070,6 +1089,11 @@ for (const person of peopleCatalog) {
       id: issuedId, personId: person.id, name: person.name, state: person.state, url: person.detailRoute,
     }),
     confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
+    ...(personalHoldings.titles.some(title => title.holderPersonId === issuedId) ? {
+      openingTitles: personalHoldings.titles.filter(title => title.holderPersonId === issuedId).map(title => ({ ...title,
+        parentTitle: title.parentTitleId ? (() => { const parent = personalHoldings.titles.find(parent => parent.id === title.parentTitleId); return { id: parent.id, name: parent.name, holderPersonId: parent.holderPersonId } })() : null,
+      })),
+    } : {}),
     ...(personalHoldings.polities.some(polity => polity.sovereignPersonId === issuedId) ? { sovereignTitle: personalHoldings.polities.find(polity => polity.sovereignPersonId === issuedId) } : {}),
     ...(personalHoldings.retinueGroups.some(group => group.liegePersonId === issuedId) ? { retinueGroups: personalHoldings.retinueGroups.filter(group => group.liegePersonId === issuedId) } : {}),
     ...(openingDispositions.has(issuedId) ? { openingDisposition: openingDispositions.get(issuedId) } : {}),

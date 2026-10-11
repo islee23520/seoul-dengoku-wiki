@@ -17,7 +17,7 @@ test('projects independent confirmed scales from exact catalog parents without o
   assert.equal(rows.size, result.rows.length)
   assert.deepEqual(deriveParentIds('1111051500'), { provinceId: '11', catalogParentId: '11110' })
   assert.equal(rows.get('1111051500').parentAdminId, 'gu:11110')
-  for (const id of ['11', '30', '36', '41', '43', '44', '51']) {
+  for (const id of ['11', '28', '30', '36', '41', '43', '44', '51']) {
     assert.equal(rows.get(id).comparisonScale, 'kingdom')
     assert.equal(rows.get(id).status, 'projected')
   }
@@ -25,11 +25,11 @@ test('projects independent confirmed scales from exact catalog parents without o
   for (const entry of adminCatalog.units) {
     const row = rows.get(entry.adminId)
     assert.ok(row)
-    if (['11', '30', '36'].includes(entry.provinceId)) {
+    if (['11', '28', '30', '36'].includes(entry.provinceId)) {
       assert.equal(row.status, 'projected')
       assert.equal(row.comparisonScale, 'barony')
       assert.equal(row.componentOnly, false)
-      assert.equal(row.parentAdminId, entry.provinceId === '36' ? '36' : 'gu:' + entry.parentId)
+      assert.equal(row.parentAdminId, entry.provinceId === '36' ? '36' : entry.parentName.endsWith('구') ? 'gu:' + entry.parentId : entry.parentId)
     } else if (['41', '43', '44', '51'].includes(entry.provinceId)) {
       assert.equal(row.comparisonScale, entry.parentName.endsWith('구') ? 'component' : 'barony')
       assert.equal(row.componentOnly, entry.parentName.endsWith('구'))
@@ -71,8 +71,8 @@ test('projects independent confirmed scales from exact catalog parents without o
   assert.equal(adminCatalog.units.filter(row => row.provinceId === '28').length, 158)
   for (const row of result.rows) {
     if (row.parentAdminId !== null) assert.ok(rows.has(row.parentAdminId))
-    if (row.status === 'HOLD') assert.ok(row.context.startsWith('인천광역시'))
   }
+  assert.equal(result.held.length, 0)
   assert.equal(result.rows.some(row => 'holderPersonId' in row || 'owner' in row || 'titleHolder' in row), false)
 })
 

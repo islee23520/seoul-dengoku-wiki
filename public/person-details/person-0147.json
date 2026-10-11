@@ -2,10 +2,10 @@
   "id": "person-0147",
   "name": "조하린",
   "title": "문서고 사서",
-  "position": "문서고 사서",
+  "position": "문서고 사서 · 가평군 영주",
   "characterId": "K146",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "문서고 열쇠·열람 기록 관리",
   "gender": "여성",
   "stage": "S1",
@@ -684,7 +684,72 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41820-S06",
+      "name": {
+        "ko": "가평군 공작령 직영지"
+      },
+      "holderPersonId": "K146",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "4182025000",
+          "name": "경기도 가평군 가평읍"
+        },
+        {
+          "id": "4182031000",
+          "name": "경기도 가평군 설악면"
+        },
+        {
+          "id": "4182032500",
+          "name": "경기도 가평군 청평면"
+        },
+        {
+          "id": "4182033000",
+          "name": "경기도 가평군 상면"
+        },
+        {
+          "id": "4182034500",
+          "name": "경기도 가평군 조종면"
+        },
+        {
+          "id": "4182035000",
+          "name": "경기도 가평군 북면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41820-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41820-S06",
+      "name": "가평군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K146",
+      "basis": "개막 행정 규모 그룹 41820(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "4182025000",
+        "4182031000",
+        "4182032500",
+        "4182033000",
+        "4182034500",
+        "4182035000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

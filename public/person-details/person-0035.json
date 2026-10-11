@@ -2,10 +2,10 @@
   "id": "person-0035",
   "name": "장우석",
   "title": "수리규격 감사기록관",
-  "position": "수리규격 감사기록관",
+  "position": "대전 중구 영주",
   "characterId": "K035",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "규격 기록·감사",
   "gender": "여성",
   "stage": "S1",
@@ -732,7 +732,43 @@
       ],
       "geometrySource": "outside-admin-units.units",
       "territorialScale": "duchy",
-      "formalTitleRank": null
+      "formalTitleRank": null,
+      "titleId": "title:duchy-gu-30140-polity-daejeon"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-30140-polity-daejeon",
+      "name": "중구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K035",
+      "basis": "기존 보유 권리 결속: holding:daejeon-jung",
+      "stateId": "polity:daejeon",
+      "parentTitleId": "title:kingdom-daejeon",
+      "jurisdictionRefs": [
+        "3014053500",
+        "3014055000",
+        "3014056000",
+        "3014057500",
+        "3014060500",
+        "3014062000",
+        "3014063000",
+        "3014064000",
+        "3014065500",
+        "3014067000",
+        "3014068000",
+        "3014069000",
+        "3014070000",
+        "3014071000",
+        "3014072000",
+        "3014073000",
+        "3014074000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-daejeon",
+        "name": "대전선",
+        "holderPersonId": "K1008"
+      }
     }
   ],
   "unit": {

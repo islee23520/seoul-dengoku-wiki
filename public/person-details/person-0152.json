@@ -2,10 +2,10 @@
   "id": "person-0152",
   "name": "마도한",
   "title": "서울역 공증사본 물류상",
-  "position": "서울역 공증사본 물류상",
+  "position": "강화 외곽·백령대청 해상 영주",
   "characterId": "K151",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "해상 영주",
+  "commonTier": "T3",
   "occupation": "공증사본 계량·반출 관리",
   "gender": "남성",
   "stage": "S2",
@@ -577,7 +577,268 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-28710-S06",
+      "name": {
+        "ko": "강화군 공작령 직영지"
+      },
+      "holderPersonId": "K151",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "2871025000",
+          "name": "인천광역시 강화군 강화읍"
+        },
+        {
+          "id": "2871031000",
+          "name": "인천광역시 강화군 선원면"
+        },
+        {
+          "id": "2871032000",
+          "name": "인천광역시 강화군 불은면"
+        },
+        {
+          "id": "2871033000",
+          "name": "인천광역시 강화군 길상면"
+        },
+        {
+          "id": "2871034000",
+          "name": "인천광역시 강화군 화도면"
+        },
+        {
+          "id": "2871035000",
+          "name": "인천광역시 강화군 양도면"
+        },
+        {
+          "id": "2871036000",
+          "name": "인천광역시 강화군 내가면"
+        },
+        {
+          "id": "2871037000",
+          "name": "인천광역시 강화군 하점면"
+        },
+        {
+          "id": "2871038000",
+          "name": "인천광역시 강화군 양사면"
+        },
+        {
+          "id": "2871039000",
+          "name": "인천광역시 강화군 송해면"
+        },
+        {
+          "id": "2871040000",
+          "name": "인천광역시 강화군 교동면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-28710-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    },
+    {
+      "id": "holding:sea-K151",
+      "name": {
+        "ko": "강화 외곽·백령대청 해상 직영지"
+      },
+      "holderPersonId": "K151",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [],
+      "componentRefs": [
+        {
+          "unitId": "2815551000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2815551000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2815556000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2871041000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2871042000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2872033000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872034000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872034000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2872034000",
+          "componentIndex": 2
+        }
+      ],
+      "titleId": "title:barony-K151-sea",
+      "geometrySource": "lore/regions/outside-island-occupation.json",
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:barony-K151-sea",
+      "name": "강화 외곽·백령대청 해상 남작령",
+      "rank": "barony",
+      "holderPersonId": "K151",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [],
+      "basis": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments 승인 (분할 단위는 componentRef로만 수여)",
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    },
+    {
+      "id": "title:duchy-28710-S06",
+      "name": "강화군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K151",
+      "basis": "개막 행정 규모 그룹 28710(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "2871025000",
+        "2871031000",
+        "2871032000",
+        "2871033000",
+        "2871034000",
+        "2871035000",
+        "2871036000",
+        "2871037000",
+        "2871038000",
+        "2871039000",
+        "2871040000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

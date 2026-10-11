@@ -2,10 +2,10 @@
   "id": "person-0457",
   "name": "차예원",
   "title": "복구복무 기록관",
-  "position": "복구복무 기록관",
+  "position": "복구복무 기록관 · 관악구 영주",
   "characterId": "K457",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "등기·기록",
   "gender": "남성",
   "stage": "S4",
@@ -675,7 +675,147 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11620-S02",
+      "name": {
+        "ko": "관악구 공작령 직영지"
+      },
+      "holderPersonId": "K457",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "region:1162052500",
+          "name": "보라매동"
+        },
+        {
+          "id": "region:1162054500",
+          "name": "청림동"
+        },
+        {
+          "id": "region:1162056500",
+          "name": "성현동"
+        },
+        {
+          "id": "region:1162057500",
+          "name": "행운동"
+        },
+        {
+          "id": "region:1162058500",
+          "name": "낙성대동"
+        },
+        {
+          "id": "region:1162059500",
+          "name": "청룡동"
+        },
+        {
+          "id": "region:1162060500",
+          "name": "은천동"
+        },
+        {
+          "id": "region:1162061500",
+          "name": "중앙동"
+        },
+        {
+          "id": "region:1162062500",
+          "name": "인헌동"
+        },
+        {
+          "id": "region:1162063000",
+          "name": "남현동"
+        },
+        {
+          "id": "region:1162064500",
+          "name": "서원동"
+        },
+        {
+          "id": "region:1162065500",
+          "name": "신원동"
+        },
+        {
+          "id": "region:1162066500",
+          "name": "서림동"
+        },
+        {
+          "id": "region:1162068500",
+          "name": "신사동"
+        },
+        {
+          "id": "region:1162069500",
+          "name": "신림동"
+        },
+        {
+          "id": "region:1162071500",
+          "name": "난향동"
+        },
+        {
+          "id": "region:1162072500",
+          "name": "조원동"
+        },
+        {
+          "id": "region:1162073500",
+          "name": "대학동"
+        },
+        {
+          "id": "region:1162074500",
+          "name": "삼성동"
+        },
+        {
+          "id": "region:1162076500",
+          "name": "미성동"
+        },
+        {
+          "id": "region:1162077500",
+          "name": "난곡동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11620-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11620-S02",
+      "name": "관악구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K457",
+      "basis": "개막 행정 규모 그룹 gu:11620(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1162052500",
+        "region:1162054500",
+        "region:1162056500",
+        "region:1162057500",
+        "region:1162058500",
+        "region:1162059500",
+        "region:1162060500",
+        "region:1162061500",
+        "region:1162062500",
+        "region:1162063000",
+        "region:1162064500",
+        "region:1162065500",
+        "region:1162066500",
+        "region:1162068500",
+        "region:1162069500",
+        "region:1162071500",
+        "region:1162072500",
+        "region:1162073500",
+        "region:1162074500",
+        "region:1162076500",
+        "region:1162077500"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

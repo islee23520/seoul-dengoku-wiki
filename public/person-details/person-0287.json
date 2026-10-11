@@ -2,10 +2,10 @@
   "id": "person-0287",
   "name": "모복",
   "title": "주거 쉘 급수 거점장, 서진아의 실무 담당자",
-  "position": "강남역 사택 급수 거점장, 서진아의 실무 담당자",
+  "position": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
   "characterId": "K286",
-  "rank": "사원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "사택 급수 수위 확인·개폐 조정",
   "gender": "남성",
   "stage": "S2",
@@ -718,7 +718,57 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11650-S11",
+      "name": {
+        "ko": "서초구 성하그룹 공작령 직영지"
+      },
+      "holderPersonId": "K286",
+      "directLiegePersonId": "K144",
+      "stateId": "S11",
+      "adminRefs": [
+        {
+          "id": "region:1165051000",
+          "name": "서초1동"
+        },
+        {
+          "id": "region:1165053000",
+          "name": "서초3동"
+        },
+        {
+          "id": "region:1165053100",
+          "name": "서초4동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11650-S11",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11650-S11",
+      "name": "서초구 성하그룹 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K286",
+      "basis": "개막 행정 규모 그룹 gu:11650(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S11",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1165051000",
+        "region:1165053000",
+        "region:1165053100"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

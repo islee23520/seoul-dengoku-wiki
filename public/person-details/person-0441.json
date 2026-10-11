@@ -2,10 +2,10 @@
   "id": "person-0441",
   "name": "류동현",
   "title": "전력장치 순찰대",
-  "position": "전력장치 순찰대",
+  "position": "전력장치 순찰대 · 동작구 영주",
   "characterId": "K441",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "경비·순찰",
   "gender": "여성",
   "stage": "S4",
@@ -643,7 +643,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11590-S02",
+      "name": {
+        "ko": "동작구 공작령 직영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "region:1159051000",
+          "name": "노량진1동"
+        },
+        {
+          "id": "region:1159052000",
+          "name": "노량진2동"
+        },
+        {
+          "id": "region:1159053000",
+          "name": "상도1동"
+        },
+        {
+          "id": "region:1159054000",
+          "name": "상도2동"
+        },
+        {
+          "id": "region:1159055000",
+          "name": "상도3동"
+        },
+        {
+          "id": "region:1159056000",
+          "name": "상도4동"
+        },
+        {
+          "id": "region:1159060500",
+          "name": "흑석동"
+        },
+        {
+          "id": "region:1159062000",
+          "name": "사당1동"
+        },
+        {
+          "id": "region:1159063000",
+          "name": "사당2동"
+        },
+        {
+          "id": "region:1159064000",
+          "name": "사당3동"
+        },
+        {
+          "id": "region:1159065000",
+          "name": "사당4동"
+        },
+        {
+          "id": "region:1159065100",
+          "name": "사당5동"
+        },
+        {
+          "id": "region:1159066000",
+          "name": "대방동"
+        },
+        {
+          "id": "region:1159067000",
+          "name": "신대방1동"
+        },
+        {
+          "id": "region:1159068000",
+          "name": "신대방2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11590-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11590-S02",
+      "name": "동작구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K441",
+      "basis": "개막 행정 규모 그룹 gu:11590(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1159051000",
+        "region:1159052000",
+        "region:1159053000",
+        "region:1159054000",
+        "region:1159055000",
+        "region:1159056000",
+        "region:1159060500",
+        "region:1159062000",
+        "region:1159063000",
+        "region:1159064000",
+        "region:1159065000",
+        "region:1159065100",
+        "region:1159066000",
+        "region:1159067000",
+        "region:1159068000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

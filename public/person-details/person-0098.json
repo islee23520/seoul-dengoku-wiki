@@ -2,10 +2,10 @@
   "id": "person-0098",
   "name": "구도영",
   "title": "성수 패킹운송 물류상",
-  "position": "성수 패킹운송 물류상",
+  "position": "성수 패킹운송 물류상 · 양평군 영주",
   "characterId": "K097",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "패킹 수상 운송",
   "gender": "남성",
   "stage": "S2",
@@ -599,7 +599,102 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41830-S04",
+      "name": {
+        "ko": "양평군 공작령 직영지"
+      },
+      "holderPersonId": "K097",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4183025000",
+          "name": "경기도 양평군 양평읍"
+        },
+        {
+          "id": "4183031000",
+          "name": "경기도 양평군 강상면"
+        },
+        {
+          "id": "4183032000",
+          "name": "경기도 양평군 강하면"
+        },
+        {
+          "id": "4183033000",
+          "name": "경기도 양평군 양서면"
+        },
+        {
+          "id": "4183034000",
+          "name": "경기도 양평군 옥천면"
+        },
+        {
+          "id": "4183035000",
+          "name": "경기도 양평군 서종면"
+        },
+        {
+          "id": "4183036000",
+          "name": "경기도 양평군 단월면"
+        },
+        {
+          "id": "4183037000",
+          "name": "경기도 양평군 청운면"
+        },
+        {
+          "id": "4183038000",
+          "name": "경기도 양평군 양동면"
+        },
+        {
+          "id": "4183039500",
+          "name": "경기도 양평군 지평면"
+        },
+        {
+          "id": "4183040000",
+          "name": "경기도 양평군 용문면"
+        },
+        {
+          "id": "4183041000",
+          "name": "경기도 양평군 개군면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41830-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41830-S04",
+      "name": "양평군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K097",
+      "basis": "개막 행정 규모 그룹 41830(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4183025000",
+        "4183031000",
+        "4183032000",
+        "4183033000",
+        "4183034000",
+        "4183035000",
+        "4183036000",
+        "4183037000",
+        "4183038000",
+        "4183039500",
+        "4183040000",
+        "4183041000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

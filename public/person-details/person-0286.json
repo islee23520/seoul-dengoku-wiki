@@ -2,10 +2,10 @@
   "id": "person-0286",
   "name": "두국",
   "title": "북문 호송 거점장",
-  "position": "강남역 북문 호송 거점장",
+  "position": "강남역 북문 호송 거점장 · 노원구 영주",
   "characterId": "K285",
-  "rank": "사원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "북문 호송 인원·차륜 점검표 게시",
   "gender": "여성",
   "stage": "S2",
@@ -631,7 +631,137 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11350-S11",
+      "name": {
+        "ko": "노원구 공작령 직영지"
+      },
+      "holderPersonId": "K285",
+      "directLiegePersonId": "K144",
+      "stateId": "S11",
+      "adminRefs": [
+        {
+          "id": "region:1135056000",
+          "name": "월계1동"
+        },
+        {
+          "id": "region:1135057000",
+          "name": "월계2동"
+        },
+        {
+          "id": "region:1135058000",
+          "name": "월계3동"
+        },
+        {
+          "id": "region:1135059500",
+          "name": "공릉1동"
+        },
+        {
+          "id": "region:1135060000",
+          "name": "공릉2동"
+        },
+        {
+          "id": "region:1135061100",
+          "name": "하계1동"
+        },
+        {
+          "id": "region:1135061200",
+          "name": "하계2동"
+        },
+        {
+          "id": "region:1135061900",
+          "name": "중계본동"
+        },
+        {
+          "id": "region:1135062100",
+          "name": "중계1동"
+        },
+        {
+          "id": "region:1135062400",
+          "name": "중계4동"
+        },
+        {
+          "id": "region:1135062500",
+          "name": "중계2·3동"
+        },
+        {
+          "id": "region:1135063000",
+          "name": "상계1동"
+        },
+        {
+          "id": "region:1135064000",
+          "name": "상계2동"
+        },
+        {
+          "id": "region:1135066500",
+          "name": "상계3·4동"
+        },
+        {
+          "id": "region:1135067000",
+          "name": "상계5동"
+        },
+        {
+          "id": "region:1135069500",
+          "name": "상계6·7동"
+        },
+        {
+          "id": "region:1135070000",
+          "name": "상계8동"
+        },
+        {
+          "id": "region:1135071000",
+          "name": "상계9동"
+        },
+        {
+          "id": "region:1135072000",
+          "name": "상계10동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11350-S11",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11350-S11",
+      "name": "노원구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K285",
+      "basis": "개막 행정 규모 그룹 gu:11350(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S11",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1135056000",
+        "region:1135057000",
+        "region:1135058000",
+        "region:1135059500",
+        "region:1135060000",
+        "region:1135061100",
+        "region:1135061200",
+        "region:1135061900",
+        "region:1135062100",
+        "region:1135062400",
+        "region:1135062500",
+        "region:1135063000",
+        "region:1135064000",
+        "region:1135066500",
+        "region:1135067000",
+        "region:1135069500",
+        "region:1135070000",
+        "region:1135071000",
+        "region:1135072000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

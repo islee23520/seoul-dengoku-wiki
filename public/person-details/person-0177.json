@@ -2,10 +2,10 @@
   "id": "person-0177",
   "name": "나탈리야 소콜로바",
   "title": "환적창고 물류상",
-  "position": "환적창고 물류상",
+  "position": "연평·장봉·덕적 해상 영주",
   "characterId": "K176",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "해상 영주",
+  "commonTier": "T3",
   "occupation": "창고 온도·재고 확인과 손실 장부 공개",
   "gender": "여성",
   "stage": "S2",
@@ -597,7 +597,221 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:sea-K176",
+      "name": {
+        "ko": "연평·장봉·덕적 해상 직영지"
+      },
+      "holderPersonId": "K176",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [],
+      "componentRefs": [
+        {
+          "unitId": "2872031000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 8
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 9
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 10
+        },
+        {
+          "unitId": "2872031000",
+          "componentIndex": 11
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 8
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 9
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 10
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 11
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 12
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 13
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 14
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 15
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 16
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 17
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 18
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 19
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 20
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 21
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 22
+        },
+        {
+          "unitId": "2872035000",
+          "componentIndex": 23
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2872038000",
+          "componentIndex": 8
+        }
+      ],
+      "titleId": "title:barony-K176-sea",
+      "geometrySource": "lore/regions/outside-island-occupation.json",
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:barony-K176-sea",
+      "name": "연평·장봉·덕적 해상 남작령",
+      "rank": "barony",
+      "holderPersonId": "K176",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [],
+      "basis": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments 승인 (분할 단위는 componentRef로만 수여)",
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

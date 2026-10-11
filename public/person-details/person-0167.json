@@ -2,10 +2,10 @@
   "id": "person-0167",
   "name": "섭도윤",
   "title": "약소국 회의 기록 전령",
-  "position": "대한민국정부 회의 기록 전령",
+  "position": "대한민국정부 회의 기록 전령 · 인제군 영주",
   "characterId": "K166",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "회의 전갈·증언 확인 전달",
   "gender": "여성",
   "stage": "S3",
@@ -685,7 +685,72 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51810-S06",
+      "name": {
+        "ko": "인제군 공작령 직영지"
+      },
+      "holderPersonId": "K166",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5181025000",
+          "name": "강원특별자치도 인제군 인제읍"
+        },
+        {
+          "id": "5181031000",
+          "name": "강원특별자치도 인제군 남면"
+        },
+        {
+          "id": "5181032000",
+          "name": "강원특별자치도 인제군 북면"
+        },
+        {
+          "id": "5181033000",
+          "name": "강원특별자치도 인제군 기린면"
+        },
+        {
+          "id": "5181034000",
+          "name": "강원특별자치도 인제군 서화면"
+        },
+        {
+          "id": "5181035000",
+          "name": "강원특별자치도 인제군 상남면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51810-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51810-S06",
+      "name": "인제군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K166",
+      "basis": "개막 행정 규모 그룹 51810(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5181025000",
+        "5181031000",
+        "5181032000",
+        "5181033000",
+        "5181034000",
+        "5181035000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

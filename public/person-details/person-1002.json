@@ -2,10 +2,10 @@
   "id": "person-1002",
   "name": "성라현",
   "title": "작업반 전령",
-  "position": "작업반 전령",
+  "position": "작업반 전령 · 홍성군 영주",
   "characterId": "K1002",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "환승 전갈 전달",
   "gender": "여성",
   "stage": "S4",
@@ -698,7 +698,97 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44800-S02",
+      "name": {
+        "ko": "홍성군 공작령 직영지"
+      },
+      "holderPersonId": "K1002",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4480025000",
+          "name": "충청남도 홍성군 홍성읍"
+        },
+        {
+          "id": "4480025300",
+          "name": "충청남도 홍성군 광천읍"
+        },
+        {
+          "id": "4480025600",
+          "name": "충청남도 홍성군 홍북읍"
+        },
+        {
+          "id": "4480032000",
+          "name": "충청남도 홍성군 금마면"
+        },
+        {
+          "id": "4480033000",
+          "name": "충청남도 홍성군 홍동면"
+        },
+        {
+          "id": "4480034000",
+          "name": "충청남도 홍성군 장곡면"
+        },
+        {
+          "id": "4480035000",
+          "name": "충청남도 홍성군 은하면"
+        },
+        {
+          "id": "4480036000",
+          "name": "충청남도 홍성군 결성면"
+        },
+        {
+          "id": "4480037000",
+          "name": "충청남도 홍성군 서부면"
+        },
+        {
+          "id": "4480038000",
+          "name": "충청남도 홍성군 갈산면"
+        },
+        {
+          "id": "4480039000",
+          "name": "충청남도 홍성군 구항면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44800-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44800-S02",
+      "name": "홍성군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K1002",
+      "basis": "개막 행정 규모 그룹 44800(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4480025000",
+        "4480025300",
+        "4480025600",
+        "4480032000",
+        "4480033000",
+        "4480034000",
+        "4480035000",
+        "4480036000",
+        "4480037000",
+        "4480038000",
+        "4480039000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

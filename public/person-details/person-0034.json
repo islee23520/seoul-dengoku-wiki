@@ -2,10 +2,10 @@
   "id": "person-0034",
   "name": "최다인",
   "title": "공병 작업반장",
-  "position": "공병 작업반장",
+  "position": "공병 작업반장 · 의왕시 영주",
   "characterId": "K034",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "대합실 당직",
   "gender": "남성",
   "stage": "S1",
@@ -708,7 +708,72 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41430-S02",
+      "name": {
+        "ko": "의왕시 공작령 직영지"
+      },
+      "holderPersonId": "K034",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4143051000",
+          "name": "경기도 의왕시 고천동"
+        },
+        {
+          "id": "4143052000",
+          "name": "경기도 의왕시 부곡동"
+        },
+        {
+          "id": "4143053000",
+          "name": "경기도 의왕시 오전동"
+        },
+        {
+          "id": "4143054000",
+          "name": "경기도 의왕시 내손1동"
+        },
+        {
+          "id": "4143055000",
+          "name": "경기도 의왕시 내손2동"
+        },
+        {
+          "id": "4143056000",
+          "name": "경기도 의왕시 청계동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41430-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41430-S02",
+      "name": "의왕시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K034",
+      "basis": "개막 행정 규모 그룹 41430(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4143051000",
+        "4143052000",
+        "4143053000",
+        "4143054000",
+        "4143055000",
+        "4143056000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -631,7 +631,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41370-S02",
+      "name": {
+        "ko": "오산시 공작령 직영지"
+      },
+      "holderPersonId": "K030",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4137051000",
+          "name": "경기도 오산시 중앙동"
+        },
+        {
+          "id": "4137052300",
+          "name": "경기도 오산시 대원1동"
+        },
+        {
+          "id": "4137052600",
+          "name": "경기도 오산시 대원2동"
+        },
+        {
+          "id": "4137053000",
+          "name": "경기도 오산시 남촌동"
+        },
+        {
+          "id": "4137054300",
+          "name": "경기도 오산시 신장1동"
+        },
+        {
+          "id": "4137054600",
+          "name": "경기도 오산시 신장2동"
+        },
+        {
+          "id": "4137055000",
+          "name": "경기도 오산시 세마동"
+        },
+        {
+          "id": "4137056000",
+          "name": "경기도 오산시 초평동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41370-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41370-S02",
+      "name": "오산시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K030",
+      "basis": "개막 행정 규모 그룹 41370(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4137051000",
+        "4137052300",
+        "4137052600",
+        "4137053000",
+        "4137054300",
+        "4137054600",
+        "4137055000",
+        "4137056000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

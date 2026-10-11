@@ -2,10 +2,10 @@
   "id": "person-0461",
   "name": "민시현",
   "title": "인준 기록관",
-  "position": "인준 기록관",
+  "position": "인준 기록관 · 서대문구 영주",
   "characterId": "K461",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "이중 지급 장부 대조·정정",
   "gender": "남성",
   "stage": "S4",
@@ -621,7 +621,57 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11410-S06",
+      "name": {
+        "ko": "서대문구 대한민국정부 공작령 직영지"
+      },
+      "holderPersonId": "K461",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "region:1141052000",
+          "name": "천연동"
+        },
+        {
+          "id": "region:1141055500",
+          "name": "북아현동"
+        },
+        {
+          "id": "region:1141056500",
+          "name": "충현동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11410-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11410-S06",
+      "name": "서대문구 대한민국정부 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K461",
+      "basis": "개막 행정 규모 그룹 gu:11410(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1141052000",
+        "region:1141055500",
+        "region:1141056500"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

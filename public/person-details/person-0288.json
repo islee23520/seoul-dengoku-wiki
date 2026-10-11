@@ -589,7 +589,112 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11320-S11",
+      "name": {
+        "ko": "도봉구 공작령 직영지"
+      },
+      "holderPersonId": "K287",
+      "directLiegePersonId": "K144",
+      "stateId": "S11",
+      "adminRefs": [
+        {
+          "id": "region:1132051100",
+          "name": "창1동"
+        },
+        {
+          "id": "region:1132051200",
+          "name": "창2동"
+        },
+        {
+          "id": "region:1132051300",
+          "name": "창3동"
+        },
+        {
+          "id": "region:1132051400",
+          "name": "창4동"
+        },
+        {
+          "id": "region:1132051500",
+          "name": "창5동"
+        },
+        {
+          "id": "region:1132052100",
+          "name": "도봉1동"
+        },
+        {
+          "id": "region:1132052200",
+          "name": "도봉2동"
+        },
+        {
+          "id": "region:1132066000",
+          "name": "쌍문1동"
+        },
+        {
+          "id": "region:1132067000",
+          "name": "쌍문2동"
+        },
+        {
+          "id": "region:1132068000",
+          "name": "쌍문3동"
+        },
+        {
+          "id": "region:1132068100",
+          "name": "쌍문4동"
+        },
+        {
+          "id": "region:1132069000",
+          "name": "방학1동"
+        },
+        {
+          "id": "region:1132070000",
+          "name": "방학2동"
+        },
+        {
+          "id": "region:1132071000",
+          "name": "방학3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11320-S11",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11320-S11",
+      "name": "도봉구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K287",
+      "basis": "개막 행정 규모 그룹 gu:11320(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S11",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1132051100",
+        "region:1132051200",
+        "region:1132051300",
+        "region:1132051400",
+        "region:1132051500",
+        "region:1132052100",
+        "region:1132052200",
+        "region:1132066000",
+        "region:1132067000",
+        "region:1132068000",
+        "region:1132068100",
+        "region:1132069000",
+        "region:1132070000",
+        "region:1132071000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

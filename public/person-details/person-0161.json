@@ -2,10 +2,10 @@
   "id": "person-0161",
   "name": "연태솔",
   "title": "중앙 재난의료 조정 실무관",
-  "position": "중앙 재난의료 조정 실무관",
+  "position": "중앙 재난의료 조정 실무관 · 평창군 영주",
   "characterId": "K160",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "재난의료 중증도 배차·약재 조정",
   "gender": "여성",
   "stage": "S2",
@@ -814,7 +814,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51760-S06",
+      "name": {
+        "ko": "평창군 공작령 직영지"
+      },
+      "holderPersonId": "K160",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5176025000",
+          "name": "강원특별자치도 평창군 평창읍"
+        },
+        {
+          "id": "5176031000",
+          "name": "강원특별자치도 평창군 미탄면"
+        },
+        {
+          "id": "5176032000",
+          "name": "강원특별자치도 평창군 방림면"
+        },
+        {
+          "id": "5176033000",
+          "name": "강원특별자치도 평창군 대화면"
+        },
+        {
+          "id": "5176034000",
+          "name": "강원특별자치도 평창군 봉평면"
+        },
+        {
+          "id": "5176035000",
+          "name": "강원특별자치도 평창군 용평면"
+        },
+        {
+          "id": "5176036000",
+          "name": "강원특별자치도 평창군 진부면"
+        },
+        {
+          "id": "5176038000",
+          "name": "강원특별자치도 평창군 대관령면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51760-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51760-S06",
+      "name": "평창군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K160",
+      "basis": "개막 행정 규모 그룹 51760(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5176025000",
+        "5176031000",
+        "5176032000",
+        "5176033000",
+        "5176034000",
+        "5176035000",
+        "5176036000",
+        "5176038000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

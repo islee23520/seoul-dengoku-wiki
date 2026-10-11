@@ -2,10 +2,10 @@
   "id": "person-0445",
   "name": "양서현",
   "title": "사본 전령",
-  "position": "사본 전령",
+  "position": "사본 전령 · 중구 영주",
   "characterId": "K445",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "침수 구간 붕괴 보고·폐쇄",
   "gender": "여성",
   "stage": "S4",
@@ -569,7 +569,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11140-S06",
+      "name": {
+        "ko": "중구 공작령 직영지"
+      },
+      "holderPersonId": "K445",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "region:1114052000",
+          "name": "소공동"
+        },
+        {
+          "id": "region:1114054000",
+          "name": "회현동"
+        },
+        {
+          "id": "region:1114055000",
+          "name": "명동"
+        },
+        {
+          "id": "region:1114057000",
+          "name": "필동"
+        },
+        {
+          "id": "region:1114058000",
+          "name": "장충동"
+        },
+        {
+          "id": "region:1114059000",
+          "name": "광희동"
+        },
+        {
+          "id": "region:1114060500",
+          "name": "을지로동"
+        },
+        {
+          "id": "region:1114061500",
+          "name": "신당동"
+        },
+        {
+          "id": "region:1114062500",
+          "name": "다산동"
+        },
+        {
+          "id": "region:1114063500",
+          "name": "약수동"
+        },
+        {
+          "id": "region:1114064500",
+          "name": "청구동"
+        },
+        {
+          "id": "region:1114065000",
+          "name": "신당5동"
+        },
+        {
+          "id": "region:1114066500",
+          "name": "동화동"
+        },
+        {
+          "id": "region:1114067000",
+          "name": "황학동"
+        },
+        {
+          "id": "region:1114068000",
+          "name": "중림동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11140-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11140-S06",
+      "name": "중구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K445",
+      "basis": "개막 행정 규모 그룹 gu:11140(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1114052000",
+        "region:1114054000",
+        "region:1114055000",
+        "region:1114057000",
+        "region:1114058000",
+        "region:1114059000",
+        "region:1114060500",
+        "region:1114061500",
+        "region:1114062500",
+        "region:1114063500",
+        "region:1114064500",
+        "region:1114065000",
+        "region:1114066500",
+        "region:1114067000",
+        "region:1114068000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

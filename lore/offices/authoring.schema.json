@@ -171,11 +171,23 @@
                 "dong"
               ],
               "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": { "const": "인천광역시" },
+                "englishName": { "const": "Incheon Metropolitan City" },
+                "city": { "const": "kingdom" },
+                "district": { "const": "duchy" },
+                "dong": { "const": "barony" }
+              },
+              "required": ["name", "englishName", "city", "district", "dong"],
+              "additionalProperties": false
             }
           ],
           "items": false,
-          "minItems": 2,
-          "maxItems": 2
+          "minItems": 3,
+          "maxItems": 3
         },
         "scaleImpliesPersonalOwnership": {
           "const": false

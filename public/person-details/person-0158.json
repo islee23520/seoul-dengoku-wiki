@@ -568,7 +568,87 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51730-S06",
+      "name": {
+        "ko": "횡성군 공작령 직영지"
+      },
+      "holderPersonId": "K157",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5173025000",
+          "name": "강원특별자치도 횡성군 횡성읍"
+        },
+        {
+          "id": "5173031000",
+          "name": "강원특별자치도 횡성군 우천면"
+        },
+        {
+          "id": "5173032000",
+          "name": "강원특별자치도 횡성군 안흥면"
+        },
+        {
+          "id": "5173033000",
+          "name": "강원특별자치도 횡성군 둔내면"
+        },
+        {
+          "id": "5173034000",
+          "name": "강원특별자치도 횡성군 갑천면"
+        },
+        {
+          "id": "5173035000",
+          "name": "강원특별자치도 횡성군 청일면"
+        },
+        {
+          "id": "5173036000",
+          "name": "강원특별자치도 횡성군 공근면"
+        },
+        {
+          "id": "5173037000",
+          "name": "강원특별자치도 횡성군 서원면"
+        },
+        {
+          "id": "5173038000",
+          "name": "강원특별자치도 횡성군 강림면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51730-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51730-S06",
+      "name": "횡성군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K157",
+      "basis": "개막 행정 규모 그룹 51730(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5173025000",
+        "5173031000",
+        "5173032000",
+        "5173033000",
+        "5173034000",
+        "5173035000",
+        "5173036000",
+        "5173037000",
+        "5173038000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

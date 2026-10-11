@@ -646,7 +646,112 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41500-S04",
+      "name": {
+        "ko": "이천시 공작령 직영지"
+      },
+      "holderPersonId": "K088",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4150025000",
+          "name": "경기도 이천시 장호원읍"
+        },
+        {
+          "id": "4150025300",
+          "name": "경기도 이천시 부발읍"
+        },
+        {
+          "id": "4150031000",
+          "name": "경기도 이천시 신둔면"
+        },
+        {
+          "id": "4150032000",
+          "name": "경기도 이천시 백사면"
+        },
+        {
+          "id": "4150033000",
+          "name": "경기도 이천시 호법면"
+        },
+        {
+          "id": "4150034000",
+          "name": "경기도 이천시 마장면"
+        },
+        {
+          "id": "4150035000",
+          "name": "경기도 이천시 대월면"
+        },
+        {
+          "id": "4150036000",
+          "name": "경기도 이천시 모가면"
+        },
+        {
+          "id": "4150037000",
+          "name": "경기도 이천시 설성면"
+        },
+        {
+          "id": "4150038000",
+          "name": "경기도 이천시 율면"
+        },
+        {
+          "id": "4150051000",
+          "name": "경기도 이천시 창전동"
+        },
+        {
+          "id": "4150051500",
+          "name": "경기도 이천시 증포동"
+        },
+        {
+          "id": "4150052000",
+          "name": "경기도 이천시 중리동"
+        },
+        {
+          "id": "4150053000",
+          "name": "경기도 이천시 관고동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41500-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41500-S04",
+      "name": "이천시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K088",
+      "basis": "개막 행정 규모 그룹 41500(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4150025000",
+        "4150025300",
+        "4150031000",
+        "4150032000",
+        "4150033000",
+        "4150034000",
+        "4150035000",
+        "4150036000",
+        "4150037000",
+        "4150038000",
+        "4150051000",
+        "4150051500",
+        "4150052000",
+        "4150053000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

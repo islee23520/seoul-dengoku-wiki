@@ -2,10 +2,10 @@
   "id": "person-0589",
   "name": "조서원",
   "title": "사본 전령",
-  "position": "사본 전령",
+  "position": "사본 전령 · 계양구 영주",
   "characterId": "K589",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "침수 구간 붕괴 보고·폐쇄",
   "gender": "남성",
   "stage": "S4",
@@ -569,7 +569,102 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-28245-S06",
+      "name": {
+        "ko": "계양구 공작령 직영지"
+      },
+      "holderPersonId": "K589",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "2824560100",
+          "name": "인천광역시 계양구 효성1동"
+        },
+        {
+          "id": "2824560200",
+          "name": "인천광역시 계양구 효성2동"
+        },
+        {
+          "id": "2824561100",
+          "name": "인천광역시 계양구 계산1동"
+        },
+        {
+          "id": "2824561200",
+          "name": "인천광역시 계양구 계산2동"
+        },
+        {
+          "id": "2824561300",
+          "name": "인천광역시 계양구 계산3동"
+        },
+        {
+          "id": "2824561400",
+          "name": "인천광역시 계양구 계산4동"
+        },
+        {
+          "id": "2824562100",
+          "name": "인천광역시 계양구 작전1동"
+        },
+        {
+          "id": "2824562200",
+          "name": "인천광역시 계양구 작전2동"
+        },
+        {
+          "id": "2824564000",
+          "name": "인천광역시 계양구 작전서운동"
+        },
+        {
+          "id": "2824571000",
+          "name": "인천광역시 계양구 계양1동"
+        },
+        {
+          "id": "2824572000",
+          "name": "인천광역시 계양구 계양2동"
+        },
+        {
+          "id": "2824573000",
+          "name": "인천광역시 계양구 계양3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-28245-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-28245-S06",
+      "name": "계양구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K589",
+      "basis": "개막 행정 규모 그룹 gu:28245(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "2824560100",
+        "2824560200",
+        "2824561100",
+        "2824561200",
+        "2824561300",
+        "2824561400",
+        "2824562100",
+        "2824562200",
+        "2824564000",
+        "2824571000",
+        "2824572000",
+        "2824573000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

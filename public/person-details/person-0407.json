@@ -2,10 +2,10 @@
   "id": "person-0407",
   "name": "원새울",
   "title": "협약 회의 의무소 거점 의무원",
-  "position": "협약 회의 의무소 거점 의무원",
+  "position": "협약 회의 의무소 거점 의무원 · 서초구 영주",
   "characterId": "K406",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "중증도 표 게시·회의 진료 조정",
   "gender": "남성",
   "stage": "S2",
@@ -780,7 +780,107 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11650-S16",
+      "name": {
+        "ko": "서초구 정동노총 공작령 직영지"
+      },
+      "holderPersonId": "K406",
+      "directLiegePersonId": "K423",
+      "stateId": "S16",
+      "adminRefs": [
+        {
+          "id": "region:1165054000",
+          "name": "잠원동"
+        },
+        {
+          "id": "region:1165055000",
+          "name": "반포본동"
+        },
+        {
+          "id": "region:1165056000",
+          "name": "반포1동"
+        },
+        {
+          "id": "region:1165057000",
+          "name": "반포2동"
+        },
+        {
+          "id": "region:1165058000",
+          "name": "반포3동"
+        },
+        {
+          "id": "region:1165058100",
+          "name": "반포4동"
+        },
+        {
+          "id": "region:1165059000",
+          "name": "방배본동"
+        },
+        {
+          "id": "region:1165060000",
+          "name": "방배1동"
+        },
+        {
+          "id": "region:1165061000",
+          "name": "방배2동"
+        },
+        {
+          "id": "region:1165062000",
+          "name": "방배3동"
+        },
+        {
+          "id": "region:1165062100",
+          "name": "방배4동"
+        },
+        {
+          "id": "region:1165065200",
+          "name": "양재2동"
+        },
+        {
+          "id": "region:1165066000",
+          "name": "내곡동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11650-S16",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11650-S16",
+      "name": "서초구 정동노총 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K406",
+      "basis": "개막 행정 규모 그룹 gu:11650(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S16",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "region:1165054000",
+        "region:1165055000",
+        "region:1165056000",
+        "region:1165057000",
+        "region:1165058000",
+        "region:1165058100",
+        "region:1165059000",
+        "region:1165060000",
+        "region:1165061000",
+        "region:1165062000",
+        "region:1165062100",
+        "region:1165065200",
+        "region:1165066000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,
