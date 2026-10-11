@@ -33,6 +33,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   proseContacts?: readonly { readonly recipientId: string; readonly recipientName: string; readonly basis: string; readonly sourceRef: { readonly path: string; readonly anchor: string } }[]
   rightsPermissions?: PersonRightsPermissions
   confirmedHoldings?: readonly ConfirmedHolding[]
+  subordinateHoldings?: readonly (ConfirmedHolding & { holderName: string; holderRoute: string })[]
   openingTitles?: readonly { id: string; name: string; rank: string; parentTitle: { name: string; holderPersonId: string } | null }[]
   sovereignTitle?: { formalTitle: string; formalTitleRank: string; office: string } | null
   retinueGroups?: readonly { id: string; name: { ko: string }; count: number; duties: readonly string[] }[]
@@ -532,7 +533,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           {!!detail.openingTitles?.length && <section data-opening-titles><h2>개막 영토 작위와 상위 관할</h2>{detail.confirmedHoldings?.some(holding => holding.liegeRelationshipKind === 'preserved-personal-service') && <p>기존 인적 봉사 주군 관계와 영토 작위의 상위 관할은 별개입니다. 기존 인적 관계는 그대로 보존합니다.</p>}{detail.openingTitles.map(title => <DataTable key={title.id} title={title.name} rows={[["작위 등급", title.rank], ["상위 작위", title.parentTitle?.name ?? '독립'], ["영토 작위 상위 보유자", title.parentTitle?.holderPersonId ?? '없음']]} />)}</section>}
           {detail.retinueGroups?.map(group => <section key={group.id} data-retinue-group={group.id}><h2>{group.name.ko}</h2><p>{group.count}기 · 민웅기 직속</p><p>{group.duties.join(' · ')}</p></section>)}
           {!!detail.confirmedHoldings?.length && <section className="gurps-territory-confirmed" data-confirmed-holdings>
-            <h2>보유 영지와 시설</h2>
+            <h2>직접 보유 영지와 시설</h2>
             {detail.confirmedHoldings.map((holding) => <section key={holding.id} data-holding-id={holding.id}>
               <h3>{holding.name.ko}</h3>
               {holding.stationRef && <p data-owned-station={holding.stationRef.stationId}>{holding.stationRef.stationName}역</p>}
@@ -541,6 +542,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
               {holding.facilityRef && <p data-facility-layer={holding.facilityRef.layerId}>{holding.facilityRef.stationName} · {holding.facilityRef.layerName}</p>}
             </section>)}
           </section>}
+          {!!detail.subordinateHoldings?.length && <section data-subordinate-holdings><h2>공작령 내 봉신 보유 영지</h2>{detail.subordinateHoldings.map(holding => <section key={holding.id}><h3>{holding.name.ko}</h3><p>보유 영주: <Link to={holding.holderRoute}>{holding.holderName}</Link></p><ul>{holding.adminRefs.map(ref => <li key={ref.id}>{ref.name}</li>)}</ul></section>)}</section>}
           {!detail.confirmedHoldings?.length && detail.territory && <section className="gurps-territory">
             <h2>영지</h2>
             <p>{detail.territory.fief_name} · {detail.territory.type}</p>

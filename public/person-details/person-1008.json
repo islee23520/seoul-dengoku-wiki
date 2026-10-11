@@ -1078,6 +1078,271 @@
       "titleId": "title:duchy-gu-30200-polity-daejeon"
     }
   ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:daejeon-jung",
+      "name": {
+        "ko": "대전 중구 영지"
+      },
+      "holderPersonId": "K035",
+      "directLiegePersonId": "K1008",
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3014053500",
+          "name": "대전광역시 중구 은행선화동"
+        },
+        {
+          "id": "3014055000",
+          "name": "대전광역시 중구 목동"
+        },
+        {
+          "id": "3014056000",
+          "name": "대전광역시 중구 중촌동"
+        },
+        {
+          "id": "3014057500",
+          "name": "대전광역시 중구 대흥동"
+        },
+        {
+          "id": "3014060500",
+          "name": "대전광역시 중구 문창동"
+        },
+        {
+          "id": "3014062000",
+          "name": "대전광역시 중구 석교동"
+        },
+        {
+          "id": "3014063000",
+          "name": "대전광역시 중구 대사동"
+        },
+        {
+          "id": "3014064000",
+          "name": "대전광역시 중구 부사동"
+        },
+        {
+          "id": "3014065500",
+          "name": "대전광역시 중구 용두동"
+        },
+        {
+          "id": "3014067000",
+          "name": "대전광역시 중구 오류동"
+        },
+        {
+          "id": "3014068000",
+          "name": "대전광역시 중구 태평1동"
+        },
+        {
+          "id": "3014069000",
+          "name": "대전광역시 중구 태평2동"
+        },
+        {
+          "id": "3014070000",
+          "name": "대전광역시 중구 유천1동"
+        },
+        {
+          "id": "3014071000",
+          "name": "대전광역시 중구 유천2동"
+        },
+        {
+          "id": "3014072000",
+          "name": "대전광역시 중구 문화1동"
+        },
+        {
+          "id": "3014073000",
+          "name": "대전광역시 중구 문화2동"
+        },
+        {
+          "id": "3014074000",
+          "name": "대전광역시 중구 산성동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null,
+      "titleId": "title:duchy-gu-30140-polity-daejeon",
+      "holderName": "장우석",
+      "holderRoute": "/people/person-0035"
+    },
+    {
+      "id": "holding:daejeon-seo",
+      "name": {
+        "ko": "대전 서구 영지"
+      },
+      "holderPersonId": "K039",
+      "directLiegePersonId": "K1008",
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3017051000",
+          "name": "대전광역시 서구 복수동"
+        },
+        {
+          "id": "3017052000",
+          "name": "대전광역시 서구 도마1동"
+        },
+        {
+          "id": "3017053000",
+          "name": "대전광역시 서구 도마2동"
+        },
+        {
+          "id": "3017053500",
+          "name": "대전광역시 서구 정림동"
+        },
+        {
+          "id": "3017054000",
+          "name": "대전광역시 서구 변동"
+        },
+        {
+          "id": "3017055000",
+          "name": "대전광역시 서구 용문동"
+        },
+        {
+          "id": "3017055500",
+          "name": "대전광역시 서구 탄방동"
+        },
+        {
+          "id": "3017056000",
+          "name": "대전광역시 서구 괴정동"
+        },
+        {
+          "id": "3017057000",
+          "name": "대전광역시 서구 가장동"
+        },
+        {
+          "id": "3017057500",
+          "name": "대전광역시 서구 내동"
+        },
+        {
+          "id": "3017058100",
+          "name": "대전광역시 서구 갈마1동"
+        },
+        {
+          "id": "3017058200",
+          "name": "대전광역시 서구 갈마2동"
+        },
+        {
+          "id": "3017058600",
+          "name": "대전광역시 서구 월평1동"
+        },
+        {
+          "id": "3017058700",
+          "name": "대전광역시 서구 월평2동"
+        },
+        {
+          "id": "3017058800",
+          "name": "대전광역시 서구 월평3동"
+        },
+        {
+          "id": "3017059000",
+          "name": "대전광역시 서구 가수원동"
+        },
+        {
+          "id": "3017059300",
+          "name": "대전광역시 서구 도안동"
+        },
+        {
+          "id": "3017059600",
+          "name": "대전광역시 서구 관저1동"
+        },
+        {
+          "id": "3017059700",
+          "name": "대전광역시 서구 관저2동"
+        },
+        {
+          "id": "3017060000",
+          "name": "대전광역시 서구 기성동"
+        },
+        {
+          "id": "3017063000",
+          "name": "대전광역시 서구 둔산1동"
+        },
+        {
+          "id": "3017064000",
+          "name": "대전광역시 서구 둔산2동"
+        },
+        {
+          "id": "3017065000",
+          "name": "대전광역시 서구 만년동"
+        },
+        {
+          "id": "3017066000",
+          "name": "대전광역시 서구 둔산3동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null,
+      "titleId": "title:duchy-gu-30170-polity-daejeon",
+      "holderName": "구찬솔",
+      "holderRoute": "/people/person-0039"
+    },
+    {
+      "id": "holding:daejeon-daedeok",
+      "name": {
+        "ko": "대전 대덕구 영지"
+      },
+      "holderPersonId": "K038",
+      "directLiegePersonId": "K1008",
+      "stateId": "polity:daejeon",
+      "adminRefs": [
+        {
+          "id": "3023051000",
+          "name": "대전광역시 대덕구 오정동"
+        },
+        {
+          "id": "3023052000",
+          "name": "대전광역시 대덕구 대화동"
+        },
+        {
+          "id": "3023052500",
+          "name": "대전광역시 대덕구 회덕동"
+        },
+        {
+          "id": "3023053300",
+          "name": "대전광역시 대덕구 비래동"
+        },
+        {
+          "id": "3023054300",
+          "name": "대전광역시 대덕구 송촌동"
+        },
+        {
+          "id": "3023054600",
+          "name": "대전광역시 대덕구 중리동"
+        },
+        {
+          "id": "3023055000",
+          "name": "대전광역시 대덕구 신탄진동"
+        },
+        {
+          "id": "3023056000",
+          "name": "대전광역시 대덕구 석봉동"
+        },
+        {
+          "id": "3023057000",
+          "name": "대전광역시 대덕구 덕암동"
+        },
+        {
+          "id": "3023058000",
+          "name": "대전광역시 대덕구 목상동"
+        },
+        {
+          "id": "3023060000",
+          "name": "대전광역시 대덕구 법1동"
+        },
+        {
+          "id": "3023061000",
+          "name": "대전광역시 대덕구 법2동"
+        }
+      ],
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "duchy",
+      "formalTitleRank": null,
+      "titleId": "title:duchy-gu-30230-polity-daejeon",
+      "holderName": "허다온",
+      "holderRoute": "/people/person-0038"
+    }
+  ],
   "openingTitles": [
     {
       "id": "title:duchy-gu-30110-polity-daejeon",

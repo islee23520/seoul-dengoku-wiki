@@ -804,6 +804,2091 @@
       "formalTitleRank": "duchy"
     }
   ],
+  "subordinateHoldings": [
+    {
+      "id": "holding:yangcheon",
+      "name": {
+        "ko": "양천구 영지",
+        "en": "Yangcheon District Holding"
+      },
+      "holderPersonId": "K002",
+      "directLiegePersonId": "K001",
+      "stateId": "S01",
+      "designation": {
+        "ko": "양천구 영주",
+        "en": "Lord of Yangcheon District"
+      },
+      "territorialScale": "duchy",
+      "formalTitleRank": null,
+      "adminRefs": [
+        {
+          "id": "region:1147051000",
+          "name": "목1동"
+        },
+        {
+          "id": "region:1147052000",
+          "name": "목2동"
+        },
+        {
+          "id": "region:1147053000",
+          "name": "목3동"
+        },
+        {
+          "id": "region:1147054000",
+          "name": "목4동"
+        },
+        {
+          "id": "region:1147055000",
+          "name": "목5동"
+        },
+        {
+          "id": "region:1147056000",
+          "name": "신월1동"
+        },
+        {
+          "id": "region:1147057000",
+          "name": "신월2동"
+        },
+        {
+          "id": "region:1147058000",
+          "name": "신월3동"
+        },
+        {
+          "id": "region:1147059000",
+          "name": "신월4동"
+        },
+        {
+          "id": "region:1147060000",
+          "name": "신월5동"
+        },
+        {
+          "id": "region:1147061000",
+          "name": "신월6동"
+        },
+        {
+          "id": "region:1147061100",
+          "name": "신월7동"
+        },
+        {
+          "id": "region:1147062000",
+          "name": "신정1동"
+        },
+        {
+          "id": "region:1147063000",
+          "name": "신정2동"
+        },
+        {
+          "id": "region:1147064000",
+          "name": "신정3동"
+        },
+        {
+          "id": "region:1147065000",
+          "name": "신정4동"
+        },
+        {
+          "id": "region:1147067000",
+          "name": "신정6동"
+        },
+        {
+          "id": "region:1147068000",
+          "name": "신정7동"
+        }
+      ],
+      "geometrySource": "opening-territories.regions",
+      "parentGeography": "서울특별시",
+      "wholeSeoulControl": false,
+      "titleId": "title:duchy-gu-11470-S01",
+      "liegeRelationshipKind": "preserved-personal-service",
+      "holderName": "이서담",
+      "holderRoute": "/people/person-0002"
+    },
+    {
+      "id": "holding:opening-duchy-41210-S02",
+      "name": {
+        "ko": "광명시 공작령 직영지"
+      },
+      "holderPersonId": "K044",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4121051000",
+          "name": "경기도 광명시 광명1동"
+        },
+        {
+          "id": "4121052000",
+          "name": "경기도 광명시 광명2동"
+        },
+        {
+          "id": "4121054000",
+          "name": "경기도 광명시 광명3동"
+        },
+        {
+          "id": "4121055000",
+          "name": "경기도 광명시 광명4동"
+        },
+        {
+          "id": "4121056000",
+          "name": "경기도 광명시 광명5동"
+        },
+        {
+          "id": "4121057000",
+          "name": "경기도 광명시 광명6동"
+        },
+        {
+          "id": "4121058000",
+          "name": "경기도 광명시 광명7동"
+        },
+        {
+          "id": "4121059000",
+          "name": "경기도 광명시 철산1동"
+        },
+        {
+          "id": "4121060000",
+          "name": "경기도 광명시 철산2동"
+        },
+        {
+          "id": "4121061000",
+          "name": "경기도 광명시 철산3동"
+        },
+        {
+          "id": "4121062000",
+          "name": "경기도 광명시 철산4동"
+        },
+        {
+          "id": "4121063100",
+          "name": "경기도 광명시 하안1동"
+        },
+        {
+          "id": "4121063200",
+          "name": "경기도 광명시 하안2동"
+        },
+        {
+          "id": "4121063300",
+          "name": "경기도 광명시 하안3동"
+        },
+        {
+          "id": "4121063400",
+          "name": "경기도 광명시 하안4동"
+        },
+        {
+          "id": "4121064000",
+          "name": "경기도 광명시 소하1동"
+        },
+        {
+          "id": "4121065000",
+          "name": "경기도 광명시 소하2동"
+        },
+        {
+          "id": "4121065500",
+          "name": "경기도 광명시 일직동"
+        },
+        {
+          "id": "4121066000",
+          "name": "경기도 광명시 학온동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41210-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "제하온",
+      "holderRoute": "/people/person-0044"
+    },
+    {
+      "id": "holding:opening-duchy-41220-S02",
+      "name": {
+        "ko": "평택시 공작령 직영지"
+      },
+      "holderPersonId": "K050",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4122025000",
+          "name": "경기도 평택시 팽성읍"
+        },
+        {
+          "id": "4122025300",
+          "name": "경기도 평택시 안중읍"
+        },
+        {
+          "id": "4122025600",
+          "name": "경기도 평택시 포승읍"
+        },
+        {
+          "id": "4122025900",
+          "name": "경기도 평택시 청북읍"
+        },
+        {
+          "id": "4122031000",
+          "name": "경기도 평택시 진위면"
+        },
+        {
+          "id": "4122032000",
+          "name": "경기도 평택시 서탄면"
+        },
+        {
+          "id": "4122033000",
+          "name": "경기도 평택시 고덕면"
+        },
+        {
+          "id": "4122034000",
+          "name": "경기도 평택시 오성면"
+        },
+        {
+          "id": "4122037000",
+          "name": "경기도 평택시 현덕면"
+        },
+        {
+          "id": "4122051000",
+          "name": "경기도 평택시 중앙동"
+        },
+        {
+          "id": "4122052000",
+          "name": "경기도 평택시 서정동"
+        },
+        {
+          "id": "4122053500",
+          "name": "경기도 평택시 송탄동"
+        },
+        {
+          "id": "4122055000",
+          "name": "경기도 평택시 지산동"
+        },
+        {
+          "id": "4122056000",
+          "name": "경기도 평택시 송북동"
+        },
+        {
+          "id": "4122057000",
+          "name": "경기도 평택시 신장1동"
+        },
+        {
+          "id": "4122058000",
+          "name": "경기도 평택시 신장2동"
+        },
+        {
+          "id": "4122059000",
+          "name": "경기도 평택시 신평동"
+        },
+        {
+          "id": "4122060000",
+          "name": "경기도 평택시 원평동"
+        },
+        {
+          "id": "4122061000",
+          "name": "경기도 평택시 통복동"
+        },
+        {
+          "id": "4122062000",
+          "name": "경기도 평택시 비전1동"
+        },
+        {
+          "id": "4122063000",
+          "name": "경기도 평택시 비전2동"
+        },
+        {
+          "id": "4122063500",
+          "name": "경기도 평택시 용이동"
+        },
+        {
+          "id": "4122064000",
+          "name": "경기도 평택시 세교동"
+        },
+        {
+          "id": "4122065000",
+          "name": "경기도 평택시 동삭동"
+        },
+        {
+          "id": "4122066000",
+          "name": "경기도 평택시 고덕동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41220-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "종마루",
+      "holderRoute": "/people/person-0050"
+    },
+    {
+      "id": "holding:opening-duchy-41290-S02",
+      "name": {
+        "ko": "과천시 공작령 직영지"
+      },
+      "holderPersonId": "K1011",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4129051000",
+          "name": "경기도 과천시 중앙동"
+        },
+        {
+          "id": "4129051500",
+          "name": "경기도 과천시 원문동"
+        },
+        {
+          "id": "4129052000",
+          "name": "경기도 과천시 갈현동"
+        },
+        {
+          "id": "4129053000",
+          "name": "경기도 과천시 별양동"
+        },
+        {
+          "id": "4129054000",
+          "name": "경기도 과천시 부림동"
+        },
+        {
+          "id": "4129055000",
+          "name": "경기도 과천시 과천동"
+        },
+        {
+          "id": "4129056000",
+          "name": "경기도 과천시 문원동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41290-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "린샤오메이",
+      "holderRoute": "/people/person-1011"
+    },
+    {
+      "id": "holding:opening-duchy-41370-S02",
+      "name": {
+        "ko": "오산시 공작령 직영지"
+      },
+      "holderPersonId": "K030",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4137051000",
+          "name": "경기도 오산시 중앙동"
+        },
+        {
+          "id": "4137052300",
+          "name": "경기도 오산시 대원1동"
+        },
+        {
+          "id": "4137052600",
+          "name": "경기도 오산시 대원2동"
+        },
+        {
+          "id": "4137053000",
+          "name": "경기도 오산시 남촌동"
+        },
+        {
+          "id": "4137054300",
+          "name": "경기도 오산시 신장1동"
+        },
+        {
+          "id": "4137054600",
+          "name": "경기도 오산시 신장2동"
+        },
+        {
+          "id": "4137055000",
+          "name": "경기도 오산시 세마동"
+        },
+        {
+          "id": "4137056000",
+          "name": "경기도 오산시 초평동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41370-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "정시우",
+      "holderRoute": "/people/person-0030"
+    },
+    {
+      "id": "holding:opening-duchy-41390-S02",
+      "name": {
+        "ko": "시흥시 공작령 직영지"
+      },
+      "holderPersonId": "K031",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4139051000",
+          "name": "경기도 시흥시 대야동"
+        },
+        {
+          "id": "4139052000",
+          "name": "경기도 시흥시 신천동"
+        },
+        {
+          "id": "4139053100",
+          "name": "경기도 시흥시 신현동"
+        },
+        {
+          "id": "4139054000",
+          "name": "경기도 시흥시 은행동"
+        },
+        {
+          "id": "4139055000",
+          "name": "경기도 시흥시 매화동"
+        },
+        {
+          "id": "4139057000",
+          "name": "경기도 시흥시 목감동"
+        },
+        {
+          "id": "4139058100",
+          "name": "경기도 시흥시 군자동"
+        },
+        {
+          "id": "4139058200",
+          "name": "경기도 시흥시 월곶동"
+        },
+        {
+          "id": "4139058900",
+          "name": "경기도 시흥시 정왕본동"
+        },
+        {
+          "id": "4139059100",
+          "name": "경기도 시흥시 정왕1동"
+        },
+        {
+          "id": "4139059200",
+          "name": "경기도 시흥시 정왕2동"
+        },
+        {
+          "id": "4139059300",
+          "name": "경기도 시흥시 정왕3동"
+        },
+        {
+          "id": "4139059400",
+          "name": "경기도 시흥시 정왕4동"
+        },
+        {
+          "id": "4139059600",
+          "name": "경기도 시흥시 배곧1동"
+        },
+        {
+          "id": "4139059700",
+          "name": "경기도 시흥시 배곧2동"
+        },
+        {
+          "id": "4139062100",
+          "name": "경기도 시흥시 과림동"
+        },
+        {
+          "id": "4139063000",
+          "name": "경기도 시흥시 연성동"
+        },
+        {
+          "id": "4139063100",
+          "name": "경기도 시흥시 장곡동"
+        },
+        {
+          "id": "4139064000",
+          "name": "경기도 시흥시 능곡동"
+        },
+        {
+          "id": "4139065000",
+          "name": "경기도 시흥시 거북섬동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41390-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "김나율",
+      "holderRoute": "/people/person-0031"
+    },
+    {
+      "id": "holding:opening-duchy-41410-S02",
+      "name": {
+        "ko": "군포시 공작령 직영지"
+      },
+      "holderPersonId": "K032",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4141051000",
+          "name": "경기도 군포시 군포1동"
+        },
+        {
+          "id": "4141052000",
+          "name": "경기도 군포시 군포2동"
+        },
+        {
+          "id": "4141054000",
+          "name": "경기도 군포시 산본1동"
+        },
+        {
+          "id": "4141055000",
+          "name": "경기도 군포시 산본2동"
+        },
+        {
+          "id": "4141056000",
+          "name": "경기도 군포시 금정동"
+        },
+        {
+          "id": "4141057000",
+          "name": "경기도 군포시 재궁동"
+        },
+        {
+          "id": "4141058000",
+          "name": "경기도 군포시 오금동"
+        },
+        {
+          "id": "4141059000",
+          "name": "경기도 군포시 수리동"
+        },
+        {
+          "id": "4141060000",
+          "name": "경기도 군포시 궁내동"
+        },
+        {
+          "id": "4141061000",
+          "name": "경기도 군포시 대야동"
+        },
+        {
+          "id": "4141062000",
+          "name": "경기도 군포시 광정동"
+        },
+        {
+          "id": "4141063000",
+          "name": "경기도 군포시 송부동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41410-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "이강묵",
+      "holderRoute": "/people/person-0032"
+    },
+    {
+      "id": "holding:opening-duchy-41430-S02",
+      "name": {
+        "ko": "의왕시 공작령 직영지"
+      },
+      "holderPersonId": "K034",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4143051000",
+          "name": "경기도 의왕시 고천동"
+        },
+        {
+          "id": "4143052000",
+          "name": "경기도 의왕시 부곡동"
+        },
+        {
+          "id": "4143053000",
+          "name": "경기도 의왕시 오전동"
+        },
+        {
+          "id": "4143054000",
+          "name": "경기도 의왕시 내손1동"
+        },
+        {
+          "id": "4143055000",
+          "name": "경기도 의왕시 내손2동"
+        },
+        {
+          "id": "4143056000",
+          "name": "경기도 의왕시 청계동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41430-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "최다인",
+      "holderRoute": "/people/person-0034"
+    },
+    {
+      "id": "holding:opening-duchy-44150-S02",
+      "name": {
+        "ko": "공주시 공작령 직영지"
+      },
+      "holderPersonId": "K042",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4415025000",
+          "name": "충청남도 공주시 유구읍"
+        },
+        {
+          "id": "4415031000",
+          "name": "충청남도 공주시 이인면"
+        },
+        {
+          "id": "4415032000",
+          "name": "충청남도 공주시 탄천면"
+        },
+        {
+          "id": "4415033000",
+          "name": "충청남도 공주시 계룡면"
+        },
+        {
+          "id": "4415034000",
+          "name": "충청남도 공주시 반포면"
+        },
+        {
+          "id": "4415036000",
+          "name": "충청남도 공주시 의당면"
+        },
+        {
+          "id": "4415037000",
+          "name": "충청남도 공주시 정안면"
+        },
+        {
+          "id": "4415038000",
+          "name": "충청남도 공주시 우성면"
+        },
+        {
+          "id": "4415039000",
+          "name": "충청남도 공주시 사곡면"
+        },
+        {
+          "id": "4415040000",
+          "name": "충청남도 공주시 신풍면"
+        },
+        {
+          "id": "4415051000",
+          "name": "충청남도 공주시 중학동"
+        },
+        {
+          "id": "4415054000",
+          "name": "충청남도 공주시 웅진동"
+        },
+        {
+          "id": "4415055000",
+          "name": "충청남도 공주시 금학동"
+        },
+        {
+          "id": "4415056000",
+          "name": "충청남도 공주시 옥룡동"
+        },
+        {
+          "id": "4415057000",
+          "name": "충청남도 공주시 신관동"
+        },
+        {
+          "id": "4415059000",
+          "name": "충청남도 공주시 월송동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44150-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "표강호",
+      "holderRoute": "/people/person-0042"
+    },
+    {
+      "id": "holding:opening-duchy-44180-S02",
+      "name": {
+        "ko": "보령시 공작령 직영지"
+      },
+      "holderPersonId": "K043",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4418025000",
+          "name": "충청남도 보령시 웅천읍"
+        },
+        {
+          "id": "4418031000",
+          "name": "충청남도 보령시 주포면"
+        },
+        {
+          "id": "4418032000",
+          "name": "충청남도 보령시 오천면"
+        },
+        {
+          "id": "4418033000",
+          "name": "충청남도 보령시 천북면"
+        },
+        {
+          "id": "4418034000",
+          "name": "충청남도 보령시 청소면"
+        },
+        {
+          "id": "4418035000",
+          "name": "충청남도 보령시 청라면"
+        },
+        {
+          "id": "4418036000",
+          "name": "충청남도 보령시 남포면"
+        },
+        {
+          "id": "4418038000",
+          "name": "충청남도 보령시 주산면"
+        },
+        {
+          "id": "4418039000",
+          "name": "충청남도 보령시 미산면"
+        },
+        {
+          "id": "4418040000",
+          "name": "충청남도 보령시 성주면"
+        },
+        {
+          "id": "4418041000",
+          "name": "충청남도 보령시 주교면"
+        },
+        {
+          "id": "4418051500",
+          "name": "충청남도 보령시 대천1동"
+        },
+        {
+          "id": "4418052500",
+          "name": "충청남도 보령시 대천2동"
+        },
+        {
+          "id": "4418053500",
+          "name": "충청남도 보령시 대천3동"
+        },
+        {
+          "id": "4418054500",
+          "name": "충청남도 보령시 대천4동"
+        },
+        {
+          "id": "4418056500",
+          "name": "충청남도 보령시 대천5동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44180-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "명소이",
+      "holderRoute": "/people/person-0043"
+    },
+    {
+      "id": "holding:opening-duchy-44210-S02",
+      "name": {
+        "ko": "서산시 공작령 직영지"
+      },
+      "holderPersonId": "K046",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4421025000",
+          "name": "충청남도 서산시 대산읍"
+        },
+        {
+          "id": "4421031000",
+          "name": "충청남도 서산시 인지면"
+        },
+        {
+          "id": "4421032000",
+          "name": "충청남도 서산시 부석면"
+        },
+        {
+          "id": "4421033000",
+          "name": "충청남도 서산시 팔봉면"
+        },
+        {
+          "id": "4421034000",
+          "name": "충청남도 서산시 지곡면"
+        },
+        {
+          "id": "4421036000",
+          "name": "충청남도 서산시 성연면"
+        },
+        {
+          "id": "4421037000",
+          "name": "충청남도 서산시 음암면"
+        },
+        {
+          "id": "4421038000",
+          "name": "충청남도 서산시 운산면"
+        },
+        {
+          "id": "4421039000",
+          "name": "충청남도 서산시 해미면"
+        },
+        {
+          "id": "4421040000",
+          "name": "충청남도 서산시 고북면"
+        },
+        {
+          "id": "4421051000",
+          "name": "충청남도 서산시 부춘동"
+        },
+        {
+          "id": "4421052500",
+          "name": "충청남도 서산시 동문1동"
+        },
+        {
+          "id": "4421053500",
+          "name": "충청남도 서산시 동문2동"
+        },
+        {
+          "id": "4421054000",
+          "name": "충청남도 서산시 수석동"
+        },
+        {
+          "id": "4421055000",
+          "name": "충청남도 서산시 석남동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44210-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "표예담",
+      "holderRoute": "/people/person-0046"
+    },
+    {
+      "id": "holding:opening-duchy-44230-S02",
+      "name": {
+        "ko": "논산시 공작령 직영지"
+      },
+      "holderPersonId": "K048",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4423025000",
+          "name": "충청남도 논산시 강경읍"
+        },
+        {
+          "id": "4423025300",
+          "name": "충청남도 논산시 연무읍"
+        },
+        {
+          "id": "4423031000",
+          "name": "충청남도 논산시 성동면"
+        },
+        {
+          "id": "4423032000",
+          "name": "충청남도 논산시 광석면"
+        },
+        {
+          "id": "4423033000",
+          "name": "충청남도 논산시 노성면"
+        },
+        {
+          "id": "4423034000",
+          "name": "충청남도 논산시 상월면"
+        },
+        {
+          "id": "4423035000",
+          "name": "충청남도 논산시 부적면"
+        },
+        {
+          "id": "4423036000",
+          "name": "충청남도 논산시 연산면"
+        },
+        {
+          "id": "4423038000",
+          "name": "충청남도 논산시 벌곡면"
+        },
+        {
+          "id": "4423039000",
+          "name": "충청남도 논산시 양촌면"
+        },
+        {
+          "id": "4423040000",
+          "name": "충청남도 논산시 가야곡면"
+        },
+        {
+          "id": "4423041000",
+          "name": "충청남도 논산시 은진면"
+        },
+        {
+          "id": "4423042000",
+          "name": "충청남도 논산시 채운면"
+        },
+        {
+          "id": "4423051000",
+          "name": "충청남도 논산시 취암동"
+        },
+        {
+          "id": "4423052000",
+          "name": "충청남도 논산시 부창동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44230-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "제문석",
+      "holderRoute": "/people/person-0048"
+    },
+    {
+      "id": "holding:opening-duchy-44250-S02",
+      "name": {
+        "ko": "계룡시 공작령 직영지"
+      },
+      "holderPersonId": "K049",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4425031000",
+          "name": "충청남도 계룡시 두마면"
+        },
+        {
+          "id": "4425031500",
+          "name": "충청남도 계룡시 엄사면"
+        },
+        {
+          "id": "4425033000",
+          "name": "충청남도 계룡시 신도안면"
+        },
+        {
+          "id": "4425051000",
+          "name": "충청남도 계룡시 금암동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44250-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "변주아",
+      "holderRoute": "/people/person-0049"
+    },
+    {
+      "id": "holding:opening-duchy-44270-S02",
+      "name": {
+        "ko": "당진시 공작령 직영지"
+      },
+      "holderPersonId": "K051",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4427025000",
+          "name": "충청남도 당진시 합덕읍"
+        },
+        {
+          "id": "4427025300",
+          "name": "충청남도 당진시 송악읍"
+        },
+        {
+          "id": "4427031000",
+          "name": "충청남도 당진시 고대면"
+        },
+        {
+          "id": "4427032000",
+          "name": "충청남도 당진시 석문면"
+        },
+        {
+          "id": "4427033000",
+          "name": "충청남도 당진시 대호지면"
+        },
+        {
+          "id": "4427034000",
+          "name": "충청남도 당진시 정미면"
+        },
+        {
+          "id": "4427035000",
+          "name": "충청남도 당진시 면천면"
+        },
+        {
+          "id": "4427036000",
+          "name": "충청남도 당진시 순성면"
+        },
+        {
+          "id": "4427037000",
+          "name": "충청남도 당진시 우강면"
+        },
+        {
+          "id": "4427038000",
+          "name": "충청남도 당진시 신평면"
+        },
+        {
+          "id": "4427039000",
+          "name": "충청남도 당진시 송산면"
+        },
+        {
+          "id": "4427051000",
+          "name": "충청남도 당진시 당진1동"
+        },
+        {
+          "id": "4427052000",
+          "name": "충청남도 당진시 당진2동"
+        },
+        {
+          "id": "4427053000",
+          "name": "충청남도 당진시 당진3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44270-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "고모래",
+      "holderRoute": "/people/person-0051"
+    },
+    {
+      "id": "holding:opening-duchy-44710-S02",
+      "name": {
+        "ko": "금산군 공작령 직영지"
+      },
+      "holderPersonId": "K053",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4471025000",
+          "name": "충청남도 금산군 금산읍"
+        },
+        {
+          "id": "4471031000",
+          "name": "충청남도 금산군 금성면"
+        },
+        {
+          "id": "4471032000",
+          "name": "충청남도 금산군 제원면"
+        },
+        {
+          "id": "4471033000",
+          "name": "충청남도 금산군 부리면"
+        },
+        {
+          "id": "4471034000",
+          "name": "충청남도 금산군 군북면"
+        },
+        {
+          "id": "4471035000",
+          "name": "충청남도 금산군 남일면"
+        },
+        {
+          "id": "4471036000",
+          "name": "충청남도 금산군 남이면"
+        },
+        {
+          "id": "4471037000",
+          "name": "충청남도 금산군 진산면"
+        },
+        {
+          "id": "4471038000",
+          "name": "충청남도 금산군 복수면"
+        },
+        {
+          "id": "4471039000",
+          "name": "충청남도 금산군 추부면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44710-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "류겨레",
+      "holderRoute": "/people/person-0053"
+    },
+    {
+      "id": "holding:opening-duchy-44760-S02",
+      "name": {
+        "ko": "부여군 공작령 직영지"
+      },
+      "holderPersonId": "K054",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4476025000",
+          "name": "충청남도 부여군 부여읍"
+        },
+        {
+          "id": "4476031000",
+          "name": "충청남도 부여군 규암면"
+        },
+        {
+          "id": "4476032000",
+          "name": "충청남도 부여군 은산면"
+        },
+        {
+          "id": "4476033000",
+          "name": "충청남도 부여군 외산면"
+        },
+        {
+          "id": "4476034000",
+          "name": "충청남도 부여군 내산면"
+        },
+        {
+          "id": "4476035000",
+          "name": "충청남도 부여군 구룡면"
+        },
+        {
+          "id": "4476036000",
+          "name": "충청남도 부여군 홍산면"
+        },
+        {
+          "id": "4476037000",
+          "name": "충청남도 부여군 옥산면"
+        },
+        {
+          "id": "4476038000",
+          "name": "충청남도 부여군 남면"
+        },
+        {
+          "id": "4476039000",
+          "name": "충청남도 부여군 충화면"
+        },
+        {
+          "id": "4476040000",
+          "name": "충청남도 부여군 양화면"
+        },
+        {
+          "id": "4476041000",
+          "name": "충청남도 부여군 임천면"
+        },
+        {
+          "id": "4476042000",
+          "name": "충청남도 부여군 장암면"
+        },
+        {
+          "id": "4476043000",
+          "name": "충청남도 부여군 세도면"
+        },
+        {
+          "id": "4476044000",
+          "name": "충청남도 부여군 석성면"
+        },
+        {
+          "id": "4476045000",
+          "name": "충청남도 부여군 초촌면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44760-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "엄누리",
+      "holderRoute": "/people/person-0054"
+    },
+    {
+      "id": "holding:opening-duchy-44770-S02",
+      "name": {
+        "ko": "서천군 공작령 직영지"
+      },
+      "holderPersonId": "K055",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4477025000",
+          "name": "충청남도 서천군 장항읍"
+        },
+        {
+          "id": "4477025300",
+          "name": "충청남도 서천군 서천읍"
+        },
+        {
+          "id": "4477031000",
+          "name": "충청남도 서천군 마서면"
+        },
+        {
+          "id": "4477032000",
+          "name": "충청남도 서천군 화양면"
+        },
+        {
+          "id": "4477033000",
+          "name": "충청남도 서천군 기산면"
+        },
+        {
+          "id": "4477034000",
+          "name": "충청남도 서천군 한산면"
+        },
+        {
+          "id": "4477035000",
+          "name": "충청남도 서천군 마산면"
+        },
+        {
+          "id": "4477036000",
+          "name": "충청남도 서천군 시초면"
+        },
+        {
+          "id": "4477037000",
+          "name": "충청남도 서천군 문산면"
+        },
+        {
+          "id": "4477038000",
+          "name": "충청남도 서천군 판교면"
+        },
+        {
+          "id": "4477039000",
+          "name": "충청남도 서천군 종천면"
+        },
+        {
+          "id": "4477040000",
+          "name": "충청남도 서천군 비인면"
+        },
+        {
+          "id": "4477041000",
+          "name": "충청남도 서천군 서면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44770-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "여시온",
+      "holderRoute": "/people/person-0055"
+    },
+    {
+      "id": "holding:opening-duchy-44790-S02",
+      "name": {
+        "ko": "청양군 공작령 직영지"
+      },
+      "holderPersonId": "K056",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4479025000",
+          "name": "충청남도 청양군 청양읍"
+        },
+        {
+          "id": "4479031000",
+          "name": "충청남도 청양군 운곡면"
+        },
+        {
+          "id": "4479032000",
+          "name": "충청남도 청양군 대치면"
+        },
+        {
+          "id": "4479033000",
+          "name": "충청남도 청양군 정산면"
+        },
+        {
+          "id": "4479034000",
+          "name": "충청남도 청양군 목면"
+        },
+        {
+          "id": "4479035000",
+          "name": "충청남도 청양군 청남면"
+        },
+        {
+          "id": "4479036000",
+          "name": "충청남도 청양군 장평면"
+        },
+        {
+          "id": "4479037000",
+          "name": "충청남도 청양군 남양면"
+        },
+        {
+          "id": "4479038000",
+          "name": "충청남도 청양군 화성면"
+        },
+        {
+          "id": "4479039000",
+          "name": "충청남도 청양군 비봉면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44790-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "기필호",
+      "holderRoute": "/people/person-0056"
+    },
+    {
+      "id": "holding:opening-duchy-44800-S02",
+      "name": {
+        "ko": "홍성군 공작령 직영지"
+      },
+      "holderPersonId": "K1002",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4480025000",
+          "name": "충청남도 홍성군 홍성읍"
+        },
+        {
+          "id": "4480025300",
+          "name": "충청남도 홍성군 광천읍"
+        },
+        {
+          "id": "4480025600",
+          "name": "충청남도 홍성군 홍북읍"
+        },
+        {
+          "id": "4480032000",
+          "name": "충청남도 홍성군 금마면"
+        },
+        {
+          "id": "4480033000",
+          "name": "충청남도 홍성군 홍동면"
+        },
+        {
+          "id": "4480034000",
+          "name": "충청남도 홍성군 장곡면"
+        },
+        {
+          "id": "4480035000",
+          "name": "충청남도 홍성군 은하면"
+        },
+        {
+          "id": "4480036000",
+          "name": "충청남도 홍성군 결성면"
+        },
+        {
+          "id": "4480037000",
+          "name": "충청남도 홍성군 서부면"
+        },
+        {
+          "id": "4480038000",
+          "name": "충청남도 홍성군 갈산면"
+        },
+        {
+          "id": "4480039000",
+          "name": "충청남도 홍성군 구항면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44800-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "성라현",
+      "holderRoute": "/people/person-1002"
+    },
+    {
+      "id": "holding:opening-duchy-44810-S02",
+      "name": {
+        "ko": "예산군 공작령 직영지"
+      },
+      "holderPersonId": "K1012",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4481025000",
+          "name": "충청남도 예산군 예산읍"
+        },
+        {
+          "id": "4481025300",
+          "name": "충청남도 예산군 삽교읍"
+        },
+        {
+          "id": "4481031000",
+          "name": "충청남도 예산군 대술면"
+        },
+        {
+          "id": "4481032000",
+          "name": "충청남도 예산군 신양면"
+        },
+        {
+          "id": "4481033000",
+          "name": "충청남도 예산군 광시면"
+        },
+        {
+          "id": "4481034000",
+          "name": "충청남도 예산군 대흥면"
+        },
+        {
+          "id": "4481035000",
+          "name": "충청남도 예산군 응봉면"
+        },
+        {
+          "id": "4481036000",
+          "name": "충청남도 예산군 덕산면"
+        },
+        {
+          "id": "4481037000",
+          "name": "충청남도 예산군 봉산면"
+        },
+        {
+          "id": "4481038000",
+          "name": "충청남도 예산군 고덕면"
+        },
+        {
+          "id": "4481039000",
+          "name": "충청남도 예산군 신암면"
+        },
+        {
+          "id": "4481040000",
+          "name": "충청남도 예산군 오가면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44810-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "팜반득",
+      "holderRoute": "/people/person-1012"
+    },
+    {
+      "id": "holding:opening-duchy-44825-S02",
+      "name": {
+        "ko": "태안군 공작령 직영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4482525000",
+          "name": "충청남도 태안군 태안읍"
+        },
+        {
+          "id": "4482525300",
+          "name": "충청남도 태안군 안면읍"
+        },
+        {
+          "id": "4482531000",
+          "name": "충청남도 태안군 고남면"
+        },
+        {
+          "id": "4482532000",
+          "name": "충청남도 태안군 남면"
+        },
+        {
+          "id": "4482533000",
+          "name": "충청남도 태안군 근흥면"
+        },
+        {
+          "id": "4482534000",
+          "name": "충청남도 태안군 소원면"
+        },
+        {
+          "id": "4482535000",
+          "name": "충청남도 태안군 원북면"
+        },
+        {
+          "id": "4482536000",
+          "name": "충청남도 태안군 이원면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44825-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "박도윤",
+      "holderRoute": "/people/person-0425"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11410-S09",
+      "name": {
+        "ko": "서대문구 여의도출자연합회 공작령 직영지"
+      },
+      "holderPersonId": "K234",
+      "directLiegePersonId": "K029",
+      "stateId": "S09",
+      "adminRefs": [
+        {
+          "id": "region:1141058500",
+          "name": "신촌동"
+        },
+        {
+          "id": "region:1141061500",
+          "name": "연희동"
+        },
+        {
+          "id": "region:1141062000",
+          "name": "홍제1동"
+        },
+        {
+          "id": "region:1141064000",
+          "name": "홍제3동"
+        },
+        {
+          "id": "region:1141069000",
+          "name": "남가좌1동"
+        },
+        {
+          "id": "region:1141070000",
+          "name": "남가좌2동"
+        },
+        {
+          "id": "region:1141071000",
+          "name": "북가좌1동"
+        },
+        {
+          "id": "region:1141072000",
+          "name": "북가좌2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11410-S09",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "모국",
+      "holderRoute": "/people/person-0235"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11440-S09",
+      "name": {
+        "ko": "마포구 공작령 직영지"
+      },
+      "holderPersonId": "K235",
+      "directLiegePersonId": "K029",
+      "stateId": "S09",
+      "adminRefs": [
+        {
+          "id": "region:1144055500",
+          "name": "아현동"
+        },
+        {
+          "id": "region:1144056500",
+          "name": "공덕동"
+        },
+        {
+          "id": "region:1144058500",
+          "name": "도화동"
+        },
+        {
+          "id": "region:1144059000",
+          "name": "용강동"
+        },
+        {
+          "id": "region:1144060000",
+          "name": "대흥동"
+        },
+        {
+          "id": "region:1144061000",
+          "name": "염리동"
+        },
+        {
+          "id": "region:1144063000",
+          "name": "신수동"
+        },
+        {
+          "id": "region:1144065500",
+          "name": "서강동"
+        },
+        {
+          "id": "region:1144066000",
+          "name": "서교동"
+        },
+        {
+          "id": "region:1144068000",
+          "name": "합정동"
+        },
+        {
+          "id": "region:1144069000",
+          "name": "망원1동"
+        },
+        {
+          "id": "region:1144070000",
+          "name": "망원2동"
+        },
+        {
+          "id": "region:1144071000",
+          "name": "연남동"
+        },
+        {
+          "id": "region:1144072000",
+          "name": "성산1동"
+        },
+        {
+          "id": "region:1144073000",
+          "name": "성산2동"
+        },
+        {
+          "id": "region:1144074000",
+          "name": "상암동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11440-S09",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "봉용",
+      "holderRoute": "/people/person-0236"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11500-S03",
+      "name": {
+        "ko": "강서구 공작령 직영지"
+      },
+      "holderPersonId": "K061",
+      "directLiegePersonId": "K029",
+      "stateId": "S03",
+      "adminRefs": [
+        {
+          "id": "region:1150051000",
+          "name": "염창동"
+        },
+        {
+          "id": "region:1150052000",
+          "name": "등촌1동"
+        },
+        {
+          "id": "region:1150053000",
+          "name": "등촌2동"
+        },
+        {
+          "id": "region:1150053500",
+          "name": "등촌3동"
+        },
+        {
+          "id": "region:1150054000",
+          "name": "화곡1동"
+        },
+        {
+          "id": "region:1150055000",
+          "name": "화곡2동"
+        },
+        {
+          "id": "region:1150056000",
+          "name": "화곡3동"
+        },
+        {
+          "id": "region:1150057000",
+          "name": "화곡4동"
+        },
+        {
+          "id": "region:1150059000",
+          "name": "화곡본동"
+        },
+        {
+          "id": "region:1150059100",
+          "name": "화곡6동"
+        },
+        {
+          "id": "region:1150059300",
+          "name": "화곡8동"
+        },
+        {
+          "id": "region:1150060300",
+          "name": "가양1동"
+        },
+        {
+          "id": "region:1150060400",
+          "name": "가양2동"
+        },
+        {
+          "id": "region:1150060500",
+          "name": "가양3동"
+        },
+        {
+          "id": "region:1150061100",
+          "name": "발산1동"
+        },
+        {
+          "id": "region:1150061500",
+          "name": "우장산동"
+        },
+        {
+          "id": "region:1150062000",
+          "name": "공항동"
+        },
+        {
+          "id": "region:1150063000",
+          "name": "방화1동"
+        },
+        {
+          "id": "region:1150064000",
+          "name": "방화2동"
+        },
+        {
+          "id": "region:1150064100",
+          "name": "방화3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11500-S03",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "김도하",
+      "holderRoute": "/people/person-0061"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11545-S02",
+      "name": {
+        "ko": "금천구 공작령 직영지"
+      },
+      "holderPersonId": "K037",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "region:1154551000",
+          "name": "가산동"
+        },
+        {
+          "id": "region:1154561000",
+          "name": "독산1동"
+        },
+        {
+          "id": "region:1154562000",
+          "name": "독산2동"
+        },
+        {
+          "id": "region:1154563000",
+          "name": "독산3동"
+        },
+        {
+          "id": "region:1154564000",
+          "name": "독산4동"
+        },
+        {
+          "id": "region:1154567000",
+          "name": "시흥1동"
+        },
+        {
+          "id": "region:1154568000",
+          "name": "시흥2동"
+        },
+        {
+          "id": "region:1154569000",
+          "name": "시흥3동"
+        },
+        {
+          "id": "region:1154570000",
+          "name": "시흥4동"
+        },
+        {
+          "id": "region:1154571000",
+          "name": "시흥5동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11545-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "한지온",
+      "holderRoute": "/people/person-0037"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11560-S01",
+      "name": {
+        "ko": "영등포구 수문국 공작령 직영지"
+      },
+      "holderPersonId": "K001",
+      "directLiegePersonId": "K029",
+      "stateId": "S01",
+      "adminRefs": [
+        {
+          "id": "region:1156051500",
+          "name": "영등포본동"
+        },
+        {
+          "id": "region:1156055000",
+          "name": "당산1동"
+        },
+        {
+          "id": "region:1156056000",
+          "name": "당산2동"
+        },
+        {
+          "id": "region:1156058500",
+          "name": "도림동"
+        },
+        {
+          "id": "region:1156060500",
+          "name": "문래동"
+        },
+        {
+          "id": "region:1156061000",
+          "name": "양평1동"
+        },
+        {
+          "id": "region:1156063000",
+          "name": "신길1동"
+        },
+        {
+          "id": "region:1156065000",
+          "name": "신길3동"
+        },
+        {
+          "id": "region:1156066000",
+          "name": "신길4동"
+        },
+        {
+          "id": "region:1156067000",
+          "name": "신길5동"
+        },
+        {
+          "id": "region:1156068000",
+          "name": "신길6동"
+        },
+        {
+          "id": "region:1156069000",
+          "name": "신길7동"
+        },
+        {
+          "id": "region:1156070000",
+          "name": "대림1동"
+        },
+        {
+          "id": "region:1156071000",
+          "name": "대림2동"
+        },
+        {
+          "id": "region:1156072000",
+          "name": "대림3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11560-S01",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "한재목",
+      "holderRoute": "/people/person-0001"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11560-S09",
+      "name": {
+        "ko": "영등포구 여의도출자연합회 공작령 직영지"
+      },
+      "holderPersonId": "K219",
+      "directLiegePersonId": "K029",
+      "stateId": "S09",
+      "adminRefs": [
+        {
+          "id": "region:1156053500",
+          "name": "영등포동"
+        },
+        {
+          "id": "region:1156054000",
+          "name": "여의동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11560-S09",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "최지우",
+      "holderRoute": "/people/person-0220"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11590-S02",
+      "name": {
+        "ko": "동작구 공작령 직영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "region:1159051000",
+          "name": "노량진1동"
+        },
+        {
+          "id": "region:1159052000",
+          "name": "노량진2동"
+        },
+        {
+          "id": "region:1159053000",
+          "name": "상도1동"
+        },
+        {
+          "id": "region:1159054000",
+          "name": "상도2동"
+        },
+        {
+          "id": "region:1159055000",
+          "name": "상도3동"
+        },
+        {
+          "id": "region:1159056000",
+          "name": "상도4동"
+        },
+        {
+          "id": "region:1159060500",
+          "name": "흑석동"
+        },
+        {
+          "id": "region:1159062000",
+          "name": "사당1동"
+        },
+        {
+          "id": "region:1159063000",
+          "name": "사당2동"
+        },
+        {
+          "id": "region:1159064000",
+          "name": "사당3동"
+        },
+        {
+          "id": "region:1159065000",
+          "name": "사당4동"
+        },
+        {
+          "id": "region:1159065100",
+          "name": "사당5동"
+        },
+        {
+          "id": "region:1159066000",
+          "name": "대방동"
+        },
+        {
+          "id": "region:1159067000",
+          "name": "신대방1동"
+        },
+        {
+          "id": "region:1159068000",
+          "name": "신대방2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11590-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "류동현",
+      "holderRoute": "/people/person-0441"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11620-S02",
+      "name": {
+        "ko": "관악구 공작령 직영지"
+      },
+      "holderPersonId": "K457",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "region:1162052500",
+          "name": "보라매동"
+        },
+        {
+          "id": "region:1162054500",
+          "name": "청림동"
+        },
+        {
+          "id": "region:1162056500",
+          "name": "성현동"
+        },
+        {
+          "id": "region:1162057500",
+          "name": "행운동"
+        },
+        {
+          "id": "region:1162058500",
+          "name": "낙성대동"
+        },
+        {
+          "id": "region:1162059500",
+          "name": "청룡동"
+        },
+        {
+          "id": "region:1162060500",
+          "name": "은천동"
+        },
+        {
+          "id": "region:1162061500",
+          "name": "중앙동"
+        },
+        {
+          "id": "region:1162062500",
+          "name": "인헌동"
+        },
+        {
+          "id": "region:1162063000",
+          "name": "남현동"
+        },
+        {
+          "id": "region:1162064500",
+          "name": "서원동"
+        },
+        {
+          "id": "region:1162065500",
+          "name": "신원동"
+        },
+        {
+          "id": "region:1162066500",
+          "name": "서림동"
+        },
+        {
+          "id": "region:1162068500",
+          "name": "신사동"
+        },
+        {
+          "id": "region:1162069500",
+          "name": "신림동"
+        },
+        {
+          "id": "region:1162071500",
+          "name": "난향동"
+        },
+        {
+          "id": "region:1162072500",
+          "name": "조원동"
+        },
+        {
+          "id": "region:1162073500",
+          "name": "대학동"
+        },
+        {
+          "id": "region:1162074500",
+          "name": "삼성동"
+        },
+        {
+          "id": "region:1162076500",
+          "name": "미성동"
+        },
+        {
+          "id": "region:1162077500",
+          "name": "난곡동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11620-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "차예원",
+      "holderRoute": "/people/person-0457"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11650-S03",
+      "name": {
+        "ko": "서초구 태욱그룹 공작령 직영지"
+      },
+      "holderPersonId": "K070",
+      "directLiegePersonId": "K029",
+      "stateId": "S03",
+      "adminRefs": [
+        {
+          "id": "region:1165052000",
+          "name": "서초2동"
+        },
+        {
+          "id": "region:1165065100",
+          "name": "양재1동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11650-S03",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy",
+      "holderName": "표지안",
+      "holderRoute": "/people/person-0070"
+    }
+  ],
   "openingTitles": [
     {
       "id": "title:duchy-gu-11530-S02",

@@ -2,7 +2,7 @@
   "id": "person-0441",
   "name": "류동현",
   "title": "전력장치 순찰대",
-  "position": "전력장치 순찰대 · 동작구 영주",
+  "position": "전력장치 순찰대 · 동작구 영주 · 아산 하위 영지 영주",
   "characterId": "K441",
   "rank": "영주",
   "commonTier": "T3",
@@ -719,8 +719,329 @@
       "geometrySource": null,
       "territorialScale": null,
       "formalTitleRank": "duchy"
+    },
+    {
+      "id": "holding:chungcheong-4420025000",
+      "name": {
+        "ko": "충청남도 아산시 염치읍 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420025000",
+          "name": "충청남도 아산시 염치읍"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420025000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420025300",
+      "name": {
+        "ko": "충청남도 아산시 배방읍 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420025300",
+          "name": "충청남도 아산시 배방읍"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420025300",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420031000",
+      "name": {
+        "ko": "충청남도 아산시 송악면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420031000",
+          "name": "충청남도 아산시 송악면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420031000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420035000",
+      "name": {
+        "ko": "충청남도 아산시 음봉면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420035000",
+          "name": "충청남도 아산시 음봉면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420035000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420036000",
+      "name": {
+        "ko": "충청남도 아산시 둔포면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420036000",
+          "name": "충청남도 아산시 둔포면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420036000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420037000",
+      "name": {
+        "ko": "충청남도 아산시 영인면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420037000",
+          "name": "충청남도 아산시 영인면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420037000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420038000",
+      "name": {
+        "ko": "충청남도 아산시 인주면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420038000",
+          "name": "충청남도 아산시 인주면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420038000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420039000",
+      "name": {
+        "ko": "충청남도 아산시 선장면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420039000",
+          "name": "충청남도 아산시 선장면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420039000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420040000",
+      "name": {
+        "ko": "충청남도 아산시 도고면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420040000",
+          "name": "충청남도 아산시 도고면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420040000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420041000",
+      "name": {
+        "ko": "충청남도 아산시 신창면 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420041000",
+          "name": "충청남도 아산시 신창면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420041000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420057000",
+      "name": {
+        "ko": "충청남도 아산시 온양1동 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420057000",
+          "name": "충청남도 아산시 온양1동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420057000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420058000",
+      "name": {
+        "ko": "충청남도 아산시 온양2동 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420058000",
+          "name": "충청남도 아산시 온양2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420058000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420059000",
+      "name": {
+        "ko": "충청남도 아산시 온양3동 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420059000",
+          "name": "충청남도 아산시 온양3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420059000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420060000",
+      "name": {
+        "ko": "충청남도 아산시 온양4동 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420060000",
+          "name": "충청남도 아산시 온양4동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420060000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420061000",
+      "name": {
+        "ko": "충청남도 아산시 온양5동 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420061000",
+          "name": "충청남도 아산시 온양5동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420061000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-4420062000",
+      "name": {
+        "ko": "충청남도 아산시 온양6동 봉신 영지"
+      },
+      "holderPersonId": "K441",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4420062000",
+          "name": "충청남도 아산시 온양6동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-4420062000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
     }
   ],
+  "subordinateHoldings": [],
   "openingTitles": [
     {
       "id": "title:duchy-gu-11590-S02",
@@ -751,6 +1072,278 @@
         "id": "title:kingdom-s02",
         "name": "규격맹 왕국",
         "holderPersonId": "K029"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420025000",
+      "name": "충청남도 아산시 염치읍 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420025000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420025300",
+      "name": "충청남도 아산시 배방읍 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420025300"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420031000",
+      "name": "충청남도 아산시 송악면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420031000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420035000",
+      "name": "충청남도 아산시 음봉면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420035000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420036000",
+      "name": "충청남도 아산시 둔포면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420036000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420037000",
+      "name": "충청남도 아산시 영인면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420037000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420038000",
+      "name": "충청남도 아산시 인주면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420038000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420039000",
+      "name": "충청남도 아산시 선장면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420039000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420040000",
+      "name": "충청남도 아산시 도고면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420040000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420041000",
+      "name": "충청남도 아산시 신창면 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420041000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420057000",
+      "name": "충청남도 아산시 온양1동 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420057000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420058000",
+      "name": "충청남도 아산시 온양2동 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420058000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420059000",
+      "name": "충청남도 아산시 온양3동 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420059000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420060000",
+      "name": "충청남도 아산시 온양4동 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420060000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420061000",
+      "name": "충청남도 아산시 온양5동 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420061000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-4420062000",
+      "name": "충청남도 아산시 온양6동 영지",
+      "rank": "barony",
+      "holderPersonId": "K441",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4420062000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
       }
     }
   ],

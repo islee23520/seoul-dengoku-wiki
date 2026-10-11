@@ -622,6 +622,196 @@
     ]
   },
   "confirmedHoldings": [],
+  "subordinateHoldings": [
+    {
+      "id": "holding:opening-barony-gu-41591-S02",
+      "name": {
+        "ko": "만세구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159125000",
+          "name": "경기도 화성시만세구 우정읍"
+        },
+        {
+          "id": "4159125300",
+          "name": "경기도 화성시만세구 향남읍"
+        },
+        {
+          "id": "4159125600",
+          "name": "경기도 화성시만세구 남양읍"
+        },
+        {
+          "id": "4159131000",
+          "name": "경기도 화성시만세구 마도면"
+        },
+        {
+          "id": "4159132000",
+          "name": "경기도 화성시만세구 송산면"
+        },
+        {
+          "id": "4159133000",
+          "name": "경기도 화성시만세구 서신면"
+        },
+        {
+          "id": "4159134000",
+          "name": "경기도 화성시만세구 팔탄면"
+        },
+        {
+          "id": "4159135000",
+          "name": "경기도 화성시만세구 장안면"
+        },
+        {
+          "id": "4159136000",
+          "name": "경기도 화성시만세구 양감면"
+        },
+        {
+          "id": "4159151000",
+          "name": "경기도 화성시만세구 새솔동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41591-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41593-S02",
+      "name": {
+        "ko": "효행구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159325000",
+          "name": "경기도 화성시효행구 봉담읍"
+        },
+        {
+          "id": "4159331000",
+          "name": "경기도 화성시효행구 매송면"
+        },
+        {
+          "id": "4159332000",
+          "name": "경기도 화성시효행구 비봉면"
+        },
+        {
+          "id": "4159333000",
+          "name": "경기도 화성시효행구 정남면"
+        },
+        {
+          "id": "4159351000",
+          "name": "경기도 화성시효행구 기배동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41593-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41595-S02",
+      "name": {
+        "ko": "병점구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159551000",
+          "name": "경기도 화성시병점구 진안동"
+        },
+        {
+          "id": "4159552000",
+          "name": "경기도 화성시병점구 병점1동"
+        },
+        {
+          "id": "4159553000",
+          "name": "경기도 화성시병점구 병점2동"
+        },
+        {
+          "id": "4159554000",
+          "name": "경기도 화성시병점구 반월동"
+        },
+        {
+          "id": "4159555000",
+          "name": "경기도 화성시병점구 화산동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41595-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41597-S02",
+      "name": {
+        "ko": "동탄구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159751000",
+          "name": "경기도 화성시동탄구 동탄1동"
+        },
+        {
+          "id": "4159752000",
+          "name": "경기도 화성시동탄구 동탄2동"
+        },
+        {
+          "id": "4159753000",
+          "name": "경기도 화성시동탄구 동탄3동"
+        },
+        {
+          "id": "4159754000",
+          "name": "경기도 화성시동탄구 동탄4동"
+        },
+        {
+          "id": "4159755000",
+          "name": "경기도 화성시동탄구 동탄5동"
+        },
+        {
+          "id": "4159756000",
+          "name": "경기도 화성시동탄구 동탄6동"
+        },
+        {
+          "id": "4159757000",
+          "name": "경기도 화성시동탄구 동탄7동"
+        },
+        {
+          "id": "4159758000",
+          "name": "경기도 화성시동탄구 동탄8동"
+        },
+        {
+          "id": "4159759000",
+          "name": "경기도 화성시동탄구 동탄9동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41597-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    }
+  ],
   "openingTitles": [
     {
       "id": "title:duchy-41590-S02",

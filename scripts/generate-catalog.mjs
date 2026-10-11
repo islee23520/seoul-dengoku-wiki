@@ -1089,6 +1089,12 @@ for (const person of peopleCatalog) {
       id: issuedId, personId: person.id, name: person.name, state: person.state, url: person.detailRoute,
     }),
     confirmedHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId === issuedId),
+    ...(personalHoldings.titles.some(title => title.holderPersonId === issuedId && title.rank === 'duchy') ? {
+      subordinateHoldings: personalHoldings.holdings.filter(holding => holding.holderPersonId !== issuedId && personalHoldings.titles.some(title => title.id === holding.titleId && personalHoldings.titles.some(parent => parent.id === title.parentTitleId && parent.holderPersonId === issuedId))).map(holding => ({ ...holding,
+        holderName: issuedById.get(holding.holderPersonId).name,
+        holderRoute: `/people/person-${String(peopleSource.findIndex(person => person.name === issuedById.get(holding.holderPersonId).name) + 1).padStart(4, '0')}`,
+      })),
+    } : {}),
     ...(personalHoldings.titles.some(title => title.holderPersonId === issuedId) ? {
       openingTitles: personalHoldings.titles.filter(title => title.holderPersonId === issuedId).map(title => ({ ...title,
         parentTitle: title.parentTitleId ? (() => { const parent = personalHoldings.titles.find(parent => parent.id === title.parentTitleId); return { id: parent.id, name: parent.name, holderPersonId: parent.holderPersonId } })() : null,

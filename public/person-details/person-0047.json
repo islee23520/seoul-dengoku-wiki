@@ -707,6 +707,256 @@
     ]
   },
   "confirmedHoldings": [],
+  "subordinateHoldings": [
+    {
+      "id": "holding:opening-barony-gu-41111-S02",
+      "name": {
+        "ko": "장안구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111156000",
+          "name": "경기도 수원시장안구 파장동"
+        },
+        {
+          "id": "4111156600",
+          "name": "경기도 수원시장안구 율천동"
+        },
+        {
+          "id": "4111157100",
+          "name": "경기도 수원시장안구 정자1동"
+        },
+        {
+          "id": "4111157200",
+          "name": "경기도 수원시장안구 정자2동"
+        },
+        {
+          "id": "4111157300",
+          "name": "경기도 수원시장안구 정자3동"
+        },
+        {
+          "id": "4111158000",
+          "name": "경기도 수원시장안구 영화동"
+        },
+        {
+          "id": "4111159100",
+          "name": "경기도 수원시장안구 송죽동"
+        },
+        {
+          "id": "4111159700",
+          "name": "경기도 수원시장안구 조원1동"
+        },
+        {
+          "id": "4111159800",
+          "name": "경기도 수원시장안구 조원2동"
+        },
+        {
+          "id": "4111160000",
+          "name": "경기도 수원시장안구 연무동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41111-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41113-S02",
+      "name": {
+        "ko": "권선구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111352000",
+          "name": "경기도 수원시권선구 세류1동"
+        },
+        {
+          "id": "4111353000",
+          "name": "경기도 수원시권선구 세류2동"
+        },
+        {
+          "id": "4111354000",
+          "name": "경기도 수원시권선구 세류3동"
+        },
+        {
+          "id": "4111355000",
+          "name": "경기도 수원시권선구 평동"
+        },
+        {
+          "id": "4111356000",
+          "name": "경기도 수원시권선구 서둔동"
+        },
+        {
+          "id": "4111365000",
+          "name": "경기도 수원시권선구 구운동"
+        },
+        {
+          "id": "4111366200",
+          "name": "경기도 수원시권선구 금곡동"
+        },
+        {
+          "id": "4111366400",
+          "name": "경기도 수원시권선구 호매실동"
+        },
+        {
+          "id": "4111367000",
+          "name": "경기도 수원시권선구 권선1동"
+        },
+        {
+          "id": "4111368000",
+          "name": "경기도 수원시권선구 권선2동"
+        },
+        {
+          "id": "4111369000",
+          "name": "경기도 수원시권선구 곡선동"
+        },
+        {
+          "id": "4111370000",
+          "name": "경기도 수원시권선구 입북동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41113-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41115-S02",
+      "name": {
+        "ko": "팔달구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111565000",
+          "name": "경기도 수원시팔달구 매교동"
+        },
+        {
+          "id": "4111566000",
+          "name": "경기도 수원시팔달구 매산동"
+        },
+        {
+          "id": "4111567000",
+          "name": "경기도 수원시팔달구 고등동"
+        },
+        {
+          "id": "4111568000",
+          "name": "경기도 수원시팔달구 화서1동"
+        },
+        {
+          "id": "4111569000",
+          "name": "경기도 수원시팔달구 화서2동"
+        },
+        {
+          "id": "4111570000",
+          "name": "경기도 수원시팔달구 지동"
+        },
+        {
+          "id": "4111571000",
+          "name": "경기도 수원시팔달구 우만1동"
+        },
+        {
+          "id": "4111572000",
+          "name": "경기도 수원시팔달구 우만2동"
+        },
+        {
+          "id": "4111573000",
+          "name": "경기도 수원시팔달구 인계동"
+        },
+        {
+          "id": "4111574000",
+          "name": "경기도 수원시팔달구 행궁동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41115-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41117-S02",
+      "name": {
+        "ko": "영통구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111751000",
+          "name": "경기도 수원시영통구 매탄1동"
+        },
+        {
+          "id": "4111752000",
+          "name": "경기도 수원시영통구 매탄2동"
+        },
+        {
+          "id": "4111753000",
+          "name": "경기도 수원시영통구 매탄3동"
+        },
+        {
+          "id": "4111754000",
+          "name": "경기도 수원시영통구 매탄4동"
+        },
+        {
+          "id": "4111755000",
+          "name": "경기도 수원시영통구 원천동"
+        },
+        {
+          "id": "4111757000",
+          "name": "경기도 수원시영통구 영통1동"
+        },
+        {
+          "id": "4111758000",
+          "name": "경기도 수원시영통구 영통2동"
+        },
+        {
+          "id": "4111758500",
+          "name": "경기도 수원시영통구 영통3동"
+        },
+        {
+          "id": "4111759300",
+          "name": "경기도 수원시영통구 망포1동"
+        },
+        {
+          "id": "4111759600",
+          "name": "경기도 수원시영통구 망포2동"
+        },
+        {
+          "id": "4111760000",
+          "name": "경기도 수원시영통구 광교1동"
+        },
+        {
+          "id": "4111761000",
+          "name": "경기도 수원시영통구 광교2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41117-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    }
+  ],
   "openingTitles": [
     {
       "id": "title:duchy-41110-S02",
