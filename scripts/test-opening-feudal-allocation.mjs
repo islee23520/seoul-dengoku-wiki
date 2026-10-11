@@ -34,7 +34,17 @@ test('owner-directed Chungcheong duchy belongs to K998 across all three cities',
   assert.equal(title.jurisdictionRefs.length, 72)
   const prefixes = new Set(title.jurisdictionRefs.map(id => id.slice(0, 5)))
   assert.deepEqual([...prefixes].sort(), ['36110', '44131', '44133', '44200'])
-  for (const grant of allocation.grants.filter(row => row.titleId === title.id)) assert.equal(grant.holderPersonId, 'K998')
+  const children = allocation.titles.filter(row => row.parentTitleId === title.id)
+  assert.equal(children.length, 43)
+  assert.ok(children.every(child => child.rank === 'barony'))
+  const childIds = new Set(children.map(child => child.id))
+  const grants = allocation.grants.filter(row => childIds.has(row.titleId))
+  const direct = grants.filter(grant => grant.holderPersonId === 'K998')
+  const vassals = grants.filter(grant => grant.holderPersonId !== 'K998')
+  assert.deepEqual(direct.flatMap(grant => grant.adminRefs.map(ref => ref.id)).sort(), ['3611025000', '4420033000'])
+  assert.equal(vassals.flatMap(grant => grant.adminRefs).length, 70)
+  assert.ok(vassals.every(grant => grant.directLiegePersonId === 'K998'))
+  assert.equal(new Set(grants.flatMap(grant => grant.adminRefs.map(ref => ref.id))).size, 72)
 })
 
 const heldAuthority = { kind: 'state', stateId: 'S01', name: '한강왕국' }

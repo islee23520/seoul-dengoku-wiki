@@ -2,7 +2,7 @@
   "id": "person-0425",
   "name": "박도윤",
   "title": "작업반 전령",
-  "position": "작업반 전령 · 태안군 영주",
+  "position": "작업반 전령 · 태안군 영주 · 세종 하위 영지 영주",
   "characterId": "K425",
   "rank": "영주",
   "commonTier": "T3",
@@ -639,8 +639,469 @@
       "geometrySource": null,
       "territorialScale": null,
       "formalTitleRank": "duchy"
+    },
+    {
+      "id": "holding:chungcheong-3611031000",
+      "name": {
+        "ko": "세종특별자치시 세종시 연기면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611031000",
+          "name": "세종특별자치시 세종시 연기면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611031000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611032000",
+      "name": {
+        "ko": "세종특별자치시 세종시 연동면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611032000",
+          "name": "세종특별자치시 세종시 연동면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611032000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611033000",
+      "name": {
+        "ko": "세종특별자치시 세종시 부강면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611033000",
+          "name": "세종특별자치시 세종시 부강면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611033000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611034000",
+      "name": {
+        "ko": "세종특별자치시 세종시 금남면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611034000",
+          "name": "세종특별자치시 세종시 금남면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611034000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611035000",
+      "name": {
+        "ko": "세종특별자치시 세종시 장군면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611035000",
+          "name": "세종특별자치시 세종시 장군면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611035000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611036000",
+      "name": {
+        "ko": "세종특별자치시 세종시 연서면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611036000",
+          "name": "세종특별자치시 세종시 연서면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611036000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611037000",
+      "name": {
+        "ko": "세종특별자치시 세종시 전의면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611037000",
+          "name": "세종특별자치시 세종시 전의면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611037000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611038000",
+      "name": {
+        "ko": "세종특별자치시 세종시 전동면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611038000",
+          "name": "세종특별자치시 세종시 전동면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611038000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611039000",
+      "name": {
+        "ko": "세종특별자치시 세종시 소정면 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611039000",
+          "name": "세종특별자치시 세종시 소정면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611039000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611051000",
+      "name": {
+        "ko": "세종특별자치시 세종시 한솔동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611051000",
+          "name": "세종특별자치시 세종시 한솔동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611051000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611051500",
+      "name": {
+        "ko": "세종특별자치시 세종시 새롬동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611051500",
+          "name": "세종특별자치시 세종시 새롬동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611051500",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611051800",
+      "name": {
+        "ko": "세종특별자치시 세종시 나성동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611051800",
+          "name": "세종특별자치시 세종시 나성동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611051800",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611052000",
+      "name": {
+        "ko": "세종특별자치시 세종시 도담동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611052000",
+          "name": "세종특별자치시 세종시 도담동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611052000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611052300",
+      "name": {
+        "ko": "세종특별자치시 세종시 어진동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611052300",
+          "name": "세종특별자치시 세종시 어진동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611052300",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611052500",
+      "name": {
+        "ko": "세종특별자치시 세종시 해밀동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611052500",
+          "name": "세종특별자치시 세종시 해밀동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611052500",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611053000",
+      "name": {
+        "ko": "세종특별자치시 세종시 아름동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611053000",
+          "name": "세종특별자치시 세종시 아름동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611053000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611054000",
+      "name": {
+        "ko": "세종특별자치시 세종시 종촌동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611054000",
+          "name": "세종특별자치시 세종시 종촌동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611054000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611055000",
+      "name": {
+        "ko": "세종특별자치시 세종시 고운동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611055000",
+          "name": "세종특별자치시 세종시 고운동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611055000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611055500",
+      "name": {
+        "ko": "세종특별자치시 세종시 소담동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611055500",
+          "name": "세종특별자치시 세종시 소담동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611055500",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611055600",
+      "name": {
+        "ko": "세종특별자치시 세종시 반곡동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611055600",
+          "name": "세종특별자치시 세종시 반곡동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611055600",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611056000",
+      "name": {
+        "ko": "세종특별자치시 세종시 보람동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611056000",
+          "name": "세종특별자치시 세종시 보람동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611056000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611057000",
+      "name": {
+        "ko": "세종특별자치시 세종시 대평동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611057000",
+          "name": "세종특별자치시 세종시 대평동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611057000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:chungcheong-3611058000",
+      "name": {
+        "ko": "세종특별자치시 세종시 다정동 봉신 영지"
+      },
+      "holderPersonId": "K425",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "3611058000",
+          "name": "세종특별자치시 세종시 다정동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-chungcheong-3611058000",
+      "geometrySource": "outside-admin-units.units",
+      "territorialScale": "barony",
+      "formalTitleRank": "barony"
     }
   ],
+  "subordinateHoldings": [],
   "openingTitles": [
     {
       "id": "title:duchy-44825-S02",
@@ -664,6 +1125,397 @@
         "id": "title:kingdom-s02",
         "name": "규격맹 왕국",
         "holderPersonId": "K029"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611031000",
+      "name": "세종특별자치시 세종시 연기면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611031000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611032000",
+      "name": "세종특별자치시 세종시 연동면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611032000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611033000",
+      "name": "세종특별자치시 세종시 부강면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611033000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611034000",
+      "name": "세종특별자치시 세종시 금남면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611034000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611035000",
+      "name": "세종특별자치시 세종시 장군면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611035000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611036000",
+      "name": "세종특별자치시 세종시 연서면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611036000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611037000",
+      "name": "세종특별자치시 세종시 전의면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611037000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611038000",
+      "name": "세종특별자치시 세종시 전동면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611038000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611039000",
+      "name": "세종특별자치시 세종시 소정면 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611039000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611051000",
+      "name": "세종특별자치시 세종시 한솔동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611051000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611051500",
+      "name": "세종특별자치시 세종시 새롬동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611051500"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611051800",
+      "name": "세종특별자치시 세종시 나성동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611051800"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611052000",
+      "name": "세종특별자치시 세종시 도담동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611052000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611052300",
+      "name": "세종특별자치시 세종시 어진동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611052300"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611052500",
+      "name": "세종특별자치시 세종시 해밀동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611052500"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611053000",
+      "name": "세종특별자치시 세종시 아름동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611053000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611054000",
+      "name": "세종특별자치시 세종시 종촌동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611054000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611055000",
+      "name": "세종특별자치시 세종시 고운동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611055000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611055500",
+      "name": "세종특별자치시 세종시 소담동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611055500"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611055600",
+      "name": "세종특별자치시 세종시 반곡동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611055600"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611056000",
+      "name": "세종특별자치시 세종시 보람동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611056000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611057000",
+      "name": "세종특별자치시 세종시 대평동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611057000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-chungcheong-3611058000",
+      "name": "세종특별자치시 세종시 다정동 영지",
+      "rank": "barony",
+      "holderPersonId": "K425",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "3611058000"
+      ],
+      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
       }
     }
   ],

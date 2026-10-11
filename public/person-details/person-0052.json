@@ -616,6 +616,144 @@
     ]
   },
   "confirmedHoldings": [],
+  "subordinateHoldings": [
+    {
+      "id": "holding:opening-barony-gu-41271-S02",
+      "name": {
+        "ko": "상록구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K052",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4127151000",
+          "name": "경기도 안산시상록구 일동"
+        },
+        {
+          "id": "4127151500",
+          "name": "경기도 안산시상록구 이동"
+        },
+        {
+          "id": "4127152500",
+          "name": "경기도 안산시상록구 사동"
+        },
+        {
+          "id": "4127153200",
+          "name": "경기도 안산시상록구 사이동"
+        },
+        {
+          "id": "4127153700",
+          "name": "경기도 안산시상록구 해양동"
+        },
+        {
+          "id": "4127154000",
+          "name": "경기도 안산시상록구 본오1동"
+        },
+        {
+          "id": "4127155000",
+          "name": "경기도 안산시상록구 본오2동"
+        },
+        {
+          "id": "4127156000",
+          "name": "경기도 안산시상록구 본오3동"
+        },
+        {
+          "id": "4127157000",
+          "name": "경기도 안산시상록구 부곡동"
+        },
+        {
+          "id": "4127158000",
+          "name": "경기도 안산시상록구 월피동"
+        },
+        {
+          "id": "4127159000",
+          "name": "경기도 안산시상록구 성포동"
+        },
+        {
+          "id": "4127160000",
+          "name": "경기도 안산시상록구 반월동"
+        },
+        {
+          "id": "4127161000",
+          "name": "경기도 안산시상록구 안산동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41271-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    },
+    {
+      "id": "holding:opening-barony-gu-41273-S02",
+      "name": {
+        "ko": "단원구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K052",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4127351000",
+          "name": "경기도 안산시단원구 와동"
+        },
+        {
+          "id": "4127352500",
+          "name": "경기도 안산시단원구 고잔동"
+        },
+        {
+          "id": "4127353200",
+          "name": "경기도 안산시단원구 중앙동"
+        },
+        {
+          "id": "4127353500",
+          "name": "경기도 안산시단원구 호수동"
+        },
+        {
+          "id": "4127354500",
+          "name": "경기도 안산시단원구 원곡동"
+        },
+        {
+          "id": "4127355500",
+          "name": "경기도 안산시단원구 백운동"
+        },
+        {
+          "id": "4127356500",
+          "name": "경기도 안산시단원구 신길동"
+        },
+        {
+          "id": "4127357000",
+          "name": "경기도 안산시단원구 초지동"
+        },
+        {
+          "id": "4127358000",
+          "name": "경기도 안산시단원구 선부1동"
+        },
+        {
+          "id": "4127359000",
+          "name": "경기도 안산시단원구 선부2동"
+        },
+        {
+          "id": "4127360000",
+          "name": "경기도 안산시단원구 선부3동"
+        },
+        {
+          "id": "4127361000",
+          "name": "경기도 안산시단원구 대부동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41273-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "한현우",
+      "holderRoute": "/people/person-0473"
+    }
+  ],
   "openingTitles": [
     {
       "id": "title:duchy-41270-S02",

@@ -658,6 +658,252 @@
     ]
   },
   "confirmedHoldings": [],
+  "subordinateHoldings": [
+    {
+      "id": "holding:opening-barony-gu-43111-S04",
+      "name": {
+        "ko": "상당구 남작령 직영지"
+      },
+      "holderPersonId": "K795",
+      "directLiegePersonId": "K108",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4311131000",
+          "name": "충청북도 청주시상당구 낭성면"
+        },
+        {
+          "id": "4311132000",
+          "name": "충청북도 청주시상당구 미원면"
+        },
+        {
+          "id": "4311133000",
+          "name": "충청북도 청주시상당구 가덕면"
+        },
+        {
+          "id": "4311134000",
+          "name": "충청북도 청주시상당구 남일면"
+        },
+        {
+          "id": "4311135000",
+          "name": "충청북도 청주시상당구 문의면"
+        },
+        {
+          "id": "4311152500",
+          "name": "충청북도 청주시상당구 중앙동"
+        },
+        {
+          "id": "4311154500",
+          "name": "충청북도 청주시상당구 성안동"
+        },
+        {
+          "id": "4311162000",
+          "name": "충청북도 청주시상당구 탑·대성동"
+        },
+        {
+          "id": "4311167000",
+          "name": "충청북도 청주시상당구 영운동"
+        },
+        {
+          "id": "4311168000",
+          "name": "충청북도 청주시상당구 금천동"
+        },
+        {
+          "id": "4311169000",
+          "name": "충청북도 청주시상당구 용담·명암·산성동"
+        },
+        {
+          "id": "4311172000",
+          "name": "충청북도 청주시상당구 용암1동"
+        },
+        {
+          "id": "4311173000",
+          "name": "충청북도 청주시상당구 용암2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-43111-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "안남늘",
+      "holderRoute": "/people/person-0795"
+    },
+    {
+      "id": "holding:opening-barony-gu-43112-S04",
+      "name": {
+        "ko": "서원구 남작령 직영지"
+      },
+      "holderPersonId": "K795",
+      "directLiegePersonId": "K108",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4311231000",
+          "name": "충청북도 청주시서원구 남이면"
+        },
+        {
+          "id": "4311232000",
+          "name": "충청북도 청주시서원구 현도면"
+        },
+        {
+          "id": "4311251000",
+          "name": "충청북도 청주시서원구 사직1동"
+        },
+        {
+          "id": "4311252000",
+          "name": "충청북도 청주시서원구 사직2동"
+        },
+        {
+          "id": "4311253000",
+          "name": "충청북도 청주시서원구 사창동"
+        },
+        {
+          "id": "4311254000",
+          "name": "충청북도 청주시서원구 모충동"
+        },
+        {
+          "id": "4311255000",
+          "name": "충청북도 청주시서원구 산남동"
+        },
+        {
+          "id": "4311256000",
+          "name": "충청북도 청주시서원구 분평동"
+        },
+        {
+          "id": "4311257000",
+          "name": "충청북도 청주시서원구 수곡1동"
+        },
+        {
+          "id": "4311258000",
+          "name": "충청북도 청주시서원구 수곡2동"
+        },
+        {
+          "id": "4311259000",
+          "name": "충청북도 청주시서원구 성화·개신·죽림동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-43112-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "안남늘",
+      "holderRoute": "/people/person-0795"
+    },
+    {
+      "id": "holding:opening-barony-gu-43113-S04",
+      "name": {
+        "ko": "흥덕구 남작령 직영지"
+      },
+      "holderPersonId": "K795",
+      "directLiegePersonId": "K108",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4311325000",
+          "name": "충청북도 청주시흥덕구 오송읍"
+        },
+        {
+          "id": "4311331000",
+          "name": "충청북도 청주시흥덕구 강내면"
+        },
+        {
+          "id": "4311332000",
+          "name": "충청북도 청주시흥덕구 옥산면"
+        },
+        {
+          "id": "4311370000",
+          "name": "충청북도 청주시흥덕구 운천·신봉동"
+        },
+        {
+          "id": "4311374100",
+          "name": "충청북도 청주시흥덕구 복대1동"
+        },
+        {
+          "id": "4311374200",
+          "name": "충청북도 청주시흥덕구 복대2동"
+        },
+        {
+          "id": "4311374700",
+          "name": "충청북도 청주시흥덕구 가경동"
+        },
+        {
+          "id": "4311375100",
+          "name": "충청북도 청주시흥덕구 봉명1동"
+        },
+        {
+          "id": "4311375600",
+          "name": "충청북도 청주시흥덕구 봉명2·송정동"
+        },
+        {
+          "id": "4311376000",
+          "name": "충청북도 청주시흥덕구 강서1동"
+        },
+        {
+          "id": "4311377000",
+          "name": "충청북도 청주시흥덕구 강서2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-43113-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "안남늘",
+      "holderRoute": "/people/person-0795"
+    },
+    {
+      "id": "holding:opening-barony-gu-43114-S04",
+      "name": {
+        "ko": "청원구 남작령 직영지"
+      },
+      "holderPersonId": "K795",
+      "directLiegePersonId": "K108",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4311425000",
+          "name": "충청북도 청주시청원구 내수읍"
+        },
+        {
+          "id": "4311425300",
+          "name": "충청북도 청주시청원구 오창읍"
+        },
+        {
+          "id": "4311431000",
+          "name": "충청북도 청주시청원구 북이면"
+        },
+        {
+          "id": "4311451000",
+          "name": "충청북도 청주시청원구 우암동"
+        },
+        {
+          "id": "4311452000",
+          "name": "충청북도 청주시청원구 내덕1동"
+        },
+        {
+          "id": "4311453000",
+          "name": "충청북도 청주시청원구 내덕2동"
+        },
+        {
+          "id": "4311454000",
+          "name": "충청북도 청주시청원구 율량·사천동"
+        },
+        {
+          "id": "4311455000",
+          "name": "충청북도 청주시청원구 오근장동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-43114-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony",
+      "holderName": "안남늘",
+      "holderRoute": "/people/person-0795"
+    }
+  ],
   "openingTitles": [
     {
       "id": "title:duchy-43110-S04",
