@@ -2,10 +2,10 @@
   "id": "person-0176",
   "name": "미콜라 본다렌코",
   "title": "용산창 제동 정비사",
-  "position": "용산창 제동 정비사",
+  "position": "용산창 제동 정비사 · 용산구 영주",
   "characterId": "K175",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "출고 전 제동 두께 점검·부품 검수",
   "gender": "남성",
   "stage": "S2",
@@ -844,7 +844,107 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11170-S07",
+      "name": {
+        "ko": "용산구 공작령 직영지"
+      },
+      "holderPersonId": "K175",
+      "directLiegePersonId": "K144",
+      "stateId": "S07",
+      "adminRefs": [
+        {
+          "id": "region:1117053000",
+          "name": "남영동"
+        },
+        {
+          "id": "region:1117055500",
+          "name": "청파동"
+        },
+        {
+          "id": "region:1117056000",
+          "name": "원효로1동"
+        },
+        {
+          "id": "region:1117057000",
+          "name": "원효로2동"
+        },
+        {
+          "id": "region:1117058000",
+          "name": "효창동"
+        },
+        {
+          "id": "region:1117059000",
+          "name": "용문동"
+        },
+        {
+          "id": "region:1117062500",
+          "name": "한강로동"
+        },
+        {
+          "id": "region:1117063000",
+          "name": "이촌1동"
+        },
+        {
+          "id": "region:1117064000",
+          "name": "이촌2동"
+        },
+        {
+          "id": "region:1117065000",
+          "name": "이태원1동"
+        },
+        {
+          "id": "region:1117068500",
+          "name": "한남동"
+        },
+        {
+          "id": "region:1117069000",
+          "name": "서빙고동"
+        },
+        {
+          "id": "region:1117070000",
+          "name": "보광동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11170-S07",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11170-S07",
+      "name": "용산구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K175",
+      "basis": "개막 행정 규모 그룹 gu:11170(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S07",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1117053000",
+        "region:1117055500",
+        "region:1117056000",
+        "region:1117057000",
+        "region:1117058000",
+        "region:1117059000",
+        "region:1117062500",
+        "region:1117063000",
+        "region:1117064000",
+        "region:1117065000",
+        "region:1117068500",
+        "region:1117069000",
+        "region:1117070000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -2,10 +2,10 @@
   "id": "person-0055",
   "name": "여시온",
   "title": "제작헌장 전령",
-  "position": "제작헌장 전령",
+  "position": "제작헌장 전령 · 서천군 영주",
   "characterId": "K055",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "헌장 사본 전달",
   "gender": "여성",
   "stage": "S3",
@@ -590,7 +590,107 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44770-S02",
+      "name": {
+        "ko": "서천군 공작령 직영지"
+      },
+      "holderPersonId": "K055",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4477025000",
+          "name": "충청남도 서천군 장항읍"
+        },
+        {
+          "id": "4477025300",
+          "name": "충청남도 서천군 서천읍"
+        },
+        {
+          "id": "4477031000",
+          "name": "충청남도 서천군 마서면"
+        },
+        {
+          "id": "4477032000",
+          "name": "충청남도 서천군 화양면"
+        },
+        {
+          "id": "4477033000",
+          "name": "충청남도 서천군 기산면"
+        },
+        {
+          "id": "4477034000",
+          "name": "충청남도 서천군 한산면"
+        },
+        {
+          "id": "4477035000",
+          "name": "충청남도 서천군 마산면"
+        },
+        {
+          "id": "4477036000",
+          "name": "충청남도 서천군 시초면"
+        },
+        {
+          "id": "4477037000",
+          "name": "충청남도 서천군 문산면"
+        },
+        {
+          "id": "4477038000",
+          "name": "충청남도 서천군 판교면"
+        },
+        {
+          "id": "4477039000",
+          "name": "충청남도 서천군 종천면"
+        },
+        {
+          "id": "4477040000",
+          "name": "충청남도 서천군 비인면"
+        },
+        {
+          "id": "4477041000",
+          "name": "충청남도 서천군 서면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44770-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44770-S02",
+      "name": "서천군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K055",
+      "basis": "개막 행정 규모 그룹 44770(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4477025000",
+        "4477025300",
+        "4477031000",
+        "4477032000",
+        "4477033000",
+        "4477034000",
+        "4477035000",
+        "4477036000",
+        "4477037000",
+        "4477038000",
+        "4477039000",
+        "4477040000",
+        "4477041000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

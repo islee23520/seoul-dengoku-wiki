@@ -2,10 +2,10 @@
   "id": "person-0525",
   "name": "양카태",
   "title": "증언 탐사원",
-  "position": "증언 탐사원",
+  "position": "증언 탐사원 · 연수구 영주",
   "characterId": "K525",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "인명 장부 구조·보관",
   "gender": "남성",
   "stage": "S4",
@@ -569,7 +569,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-28185-S06",
+      "name": {
+        "ko": "연수구 공작령 직영지"
+      },
+      "holderPersonId": "K525",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "2818563000",
+          "name": "인천광역시 연수구 옥련1동"
+        },
+        {
+          "id": "2818564000",
+          "name": "인천광역시 연수구 옥련2동"
+        },
+        {
+          "id": "2818575000",
+          "name": "인천광역시 연수구 선학동"
+        },
+        {
+          "id": "2818576100",
+          "name": "인천광역시 연수구 연수1동"
+        },
+        {
+          "id": "2818576200",
+          "name": "인천광역시 연수구 연수2동"
+        },
+        {
+          "id": "2818576300",
+          "name": "인천광역시 연수구 연수3동"
+        },
+        {
+          "id": "2818576600",
+          "name": "인천광역시 연수구 청학동"
+        },
+        {
+          "id": "2818578000",
+          "name": "인천광역시 연수구 동춘1동"
+        },
+        {
+          "id": "2818579000",
+          "name": "인천광역시 연수구 동춘2동"
+        },
+        {
+          "id": "2818579500",
+          "name": "인천광역시 연수구 동춘3동"
+        },
+        {
+          "id": "2818582000",
+          "name": "인천광역시 연수구 송도1동"
+        },
+        {
+          "id": "2818583000",
+          "name": "인천광역시 연수구 송도2동"
+        },
+        {
+          "id": "2818584000",
+          "name": "인천광역시 연수구 송도3동"
+        },
+        {
+          "id": "2818585000",
+          "name": "인천광역시 연수구 송도4동"
+        },
+        {
+          "id": "2818586000",
+          "name": "인천광역시 연수구 송도5동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-28185-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-28185-S06",
+      "name": "연수구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K525",
+      "basis": "개막 행정 규모 그룹 gu:28185(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "2818563000",
+        "2818564000",
+        "2818575000",
+        "2818576100",
+        "2818576200",
+        "2818576300",
+        "2818576600",
+        "2818578000",
+        "2818579000",
+        "2818579500",
+        "2818582000",
+        "2818583000",
+        "2818584000",
+        "2818585000",
+        "2818586000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

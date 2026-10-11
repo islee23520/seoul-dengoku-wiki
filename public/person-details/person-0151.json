@@ -2,10 +2,10 @@
   "id": "person-0151",
   "name": "지서윤",
   "title": "서울역 문서고 제습 정비사",
-  "position": "서울역 문서고 제습 정비사",
+  "position": "서울역 문서고 제습 정비사 · 동해시 영주",
   "characterId": "K150",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "문서고 제습기 습도·필터 정비",
   "gender": "여성",
   "stage": "S2",
@@ -771,7 +771,92 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51170-S06",
+      "name": {
+        "ko": "동해시 공작령 직영지"
+      },
+      "holderPersonId": "K150",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5117051000",
+          "name": "강원특별자치도 동해시 천곡동"
+        },
+        {
+          "id": "5117052000",
+          "name": "강원특별자치도 동해시 송정동"
+        },
+        {
+          "id": "5117053000",
+          "name": "강원특별자치도 동해시 북삼동"
+        },
+        {
+          "id": "5117054000",
+          "name": "강원특별자치도 동해시 부곡동"
+        },
+        {
+          "id": "5117055000",
+          "name": "강원특별자치도 동해시 동호동"
+        },
+        {
+          "id": "5117057000",
+          "name": "강원특별자치도 동해시 발한동"
+        },
+        {
+          "id": "5117059000",
+          "name": "강원특별자치도 동해시 묵호동"
+        },
+        {
+          "id": "5117060000",
+          "name": "강원특별자치도 동해시 북평동"
+        },
+        {
+          "id": "5117063000",
+          "name": "강원특별자치도 동해시 망상동"
+        },
+        {
+          "id": "5117065000",
+          "name": "강원특별자치도 동해시 삼화동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51170-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51170-S06",
+      "name": "동해시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K150",
+      "basis": "개막 행정 규모 그룹 51170(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5117051000",
+        "5117052000",
+        "5117053000",
+        "5117054000",
+        "5117055000",
+        "5117057000",
+        "5117059000",
+        "5117060000",
+        "5117063000",
+        "5117065000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

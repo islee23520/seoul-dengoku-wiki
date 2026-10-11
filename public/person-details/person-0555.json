@@ -2,10 +2,10 @@
   "id": "person-0555",
   "name": "서구서",
   "title": "부품 물류상",
-  "position": "부품 물류상",
+  "position": "부품 물류상 · 영동군 영주",
   "characterId": "K555",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "차륜·펌프 정비",
   "gender": "남성",
   "stage": "S4",
@@ -655,7 +655,97 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-43740-S04",
+      "name": {
+        "ko": "영동군 공작령 직영지"
+      },
+      "holderPersonId": "K555",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4374025000",
+          "name": "충청북도 영동군 영동읍"
+        },
+        {
+          "id": "4374031000",
+          "name": "충청북도 영동군 용산면"
+        },
+        {
+          "id": "4374032000",
+          "name": "충청북도 영동군 황간면"
+        },
+        {
+          "id": "4374033500",
+          "name": "충청북도 영동군 추풍령면"
+        },
+        {
+          "id": "4374034000",
+          "name": "충청북도 영동군 매곡면"
+        },
+        {
+          "id": "4374035000",
+          "name": "충청북도 영동군 상촌면"
+        },
+        {
+          "id": "4374036000",
+          "name": "충청북도 영동군 양강면"
+        },
+        {
+          "id": "4374037000",
+          "name": "충청북도 영동군 용화면"
+        },
+        {
+          "id": "4374038000",
+          "name": "충청북도 영동군 학산면"
+        },
+        {
+          "id": "4374039000",
+          "name": "충청북도 영동군 양산면"
+        },
+        {
+          "id": "4374040000",
+          "name": "충청북도 영동군 심천면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-43740-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-43740-S04",
+      "name": "영동군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K555",
+      "basis": "개막 행정 규모 그룹 43740(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4374025000",
+        "4374031000",
+        "4374032000",
+        "4374033500",
+        "4374034000",
+        "4374035000",
+        "4374036000",
+        "4374037000",
+        "4374038000",
+        "4374039000",
+        "4374040000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

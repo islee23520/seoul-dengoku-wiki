@@ -2,10 +2,10 @@
   "id": "person-0235",
   "name": "모국",
   "title": "서북 관문 중계 거점장",
-  "position": "영종지점 환전 거점장",
+  "position": "영종지점 환전 거점장 · 서대문구 영주",
   "characterId": "K234",
-  "rank": "서기",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "영종지점 환전 로그·통행 명부 기록",
   "gender": "여성",
   "stage": "S2",
@@ -706,7 +706,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11410-S09",
+      "name": {
+        "ko": "서대문구 여의도출자연합회 공작령 직영지"
+      },
+      "holderPersonId": "K234",
+      "directLiegePersonId": "K029",
+      "stateId": "S09",
+      "adminRefs": [
+        {
+          "id": "region:1141058500",
+          "name": "신촌동"
+        },
+        {
+          "id": "region:1141061500",
+          "name": "연희동"
+        },
+        {
+          "id": "region:1141062000",
+          "name": "홍제1동"
+        },
+        {
+          "id": "region:1141064000",
+          "name": "홍제3동"
+        },
+        {
+          "id": "region:1141069000",
+          "name": "남가좌1동"
+        },
+        {
+          "id": "region:1141070000",
+          "name": "남가좌2동"
+        },
+        {
+          "id": "region:1141071000",
+          "name": "북가좌1동"
+        },
+        {
+          "id": "region:1141072000",
+          "name": "북가좌2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11410-S09",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11410-S09",
+      "name": "서대문구 여의도출자연합회 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K234",
+      "basis": "개막 행정 규모 그룹 gu:11410(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S09",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1141058500",
+        "region:1141061500",
+        "region:1141062000",
+        "region:1141064000",
+        "region:1141069000",
+        "region:1141070000",
+        "region:1141071000",
+        "region:1141072000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -2,10 +2,10 @@
   "id": "person-0032",
   "name": "이강묵",
   "title": "금천 경비대장",
-  "position": "금천 경비대장",
+  "position": "금천 경비대장 · 군포시 영주",
   "characterId": "K032",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "경비·순찰",
   "gender": "남성",
   "stage": "S1",
@@ -652,7 +652,102 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41410-S02",
+      "name": {
+        "ko": "군포시 공작령 직영지"
+      },
+      "holderPersonId": "K032",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4141051000",
+          "name": "경기도 군포시 군포1동"
+        },
+        {
+          "id": "4141052000",
+          "name": "경기도 군포시 군포2동"
+        },
+        {
+          "id": "4141054000",
+          "name": "경기도 군포시 산본1동"
+        },
+        {
+          "id": "4141055000",
+          "name": "경기도 군포시 산본2동"
+        },
+        {
+          "id": "4141056000",
+          "name": "경기도 군포시 금정동"
+        },
+        {
+          "id": "4141057000",
+          "name": "경기도 군포시 재궁동"
+        },
+        {
+          "id": "4141058000",
+          "name": "경기도 군포시 오금동"
+        },
+        {
+          "id": "4141059000",
+          "name": "경기도 군포시 수리동"
+        },
+        {
+          "id": "4141060000",
+          "name": "경기도 군포시 궁내동"
+        },
+        {
+          "id": "4141061000",
+          "name": "경기도 군포시 대야동"
+        },
+        {
+          "id": "4141062000",
+          "name": "경기도 군포시 광정동"
+        },
+        {
+          "id": "4141063000",
+          "name": "경기도 군포시 송부동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41410-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41410-S02",
+      "name": "군포시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K032",
+      "basis": "개막 행정 규모 그룹 41410(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4141051000",
+        "4141052000",
+        "4141054000",
+        "4141055000",
+        "4141056000",
+        "4141057000",
+        "4141058000",
+        "4141059000",
+        "4141060000",
+        "4141061000",
+        "4141062000",
+        "4141063000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -2,10 +2,10 @@
   "id": "person-0507",
   "name": "정바준",
   "title": "부품 물류상",
-  "position": "부품 물류상",
+  "position": "부품 물류상 · 옥천군 영주",
   "characterId": "K507",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "차륜·펌프 정비",
   "gender": "여성",
   "stage": "S4",
@@ -765,7 +765,87 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-43730-S04",
+      "name": {
+        "ko": "옥천군 공작령 직영지"
+      },
+      "holderPersonId": "K507",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4373025000",
+          "name": "충청북도 옥천군 옥천읍"
+        },
+        {
+          "id": "4373031000",
+          "name": "충청북도 옥천군 동이면"
+        },
+        {
+          "id": "4373032000",
+          "name": "충청북도 옥천군 안남면"
+        },
+        {
+          "id": "4373033000",
+          "name": "충청북도 옥천군 안내면"
+        },
+        {
+          "id": "4373034000",
+          "name": "충청북도 옥천군 청성면"
+        },
+        {
+          "id": "4373035000",
+          "name": "충청북도 옥천군 청산면"
+        },
+        {
+          "id": "4373036000",
+          "name": "충청북도 옥천군 이원면"
+        },
+        {
+          "id": "4373037000",
+          "name": "충청북도 옥천군 군서면"
+        },
+        {
+          "id": "4373038000",
+          "name": "충청북도 옥천군 군북면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-43730-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-43730-S04",
+      "name": "옥천군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K507",
+      "basis": "개막 행정 규모 그룹 43730(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4373025000",
+        "4373031000",
+        "4373032000",
+        "4373033000",
+        "4373034000",
+        "4373035000",
+        "4373036000",
+        "4373037000",
+        "4373038000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

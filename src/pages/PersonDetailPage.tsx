@@ -18,6 +18,8 @@ type ConfirmedHolding = {
   readonly id: string
   readonly name: { readonly ko: string }
   readonly adminRefs: readonly { readonly id: string; readonly name: string }[]
+  readonly componentRefs?: readonly { readonly unitId: string; readonly componentIndex: number; readonly name?: string }[]
+  readonly liegeRelationshipKind?: 'preserved-personal-service'
   readonly stationRef?: { readonly stationId: string; readonly stationName: string }
   readonly facilityRef?: { readonly stationName: string; readonly layerId: string; readonly layerName: string }
 }
@@ -31,6 +33,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   proseContacts?: readonly { readonly recipientId: string; readonly recipientName: string; readonly basis: string; readonly sourceRef: { readonly path: string; readonly anchor: string } }[]
   rightsPermissions?: PersonRightsPermissions
   confirmedHoldings?: readonly ConfirmedHolding[]
+  openingTitles?: readonly { id: string; name: string; rank: string; parentTitle: { name: string; holderPersonId: string } | null }[]
   sovereignTitle?: { formalTitle: string; formalTitleRank: string; office: string } | null
   retinueGroups?: readonly { id: string; name: { ko: string }; count: number; duties: readonly string[] }[]
   gurps: { readonly id: string; readonly personId: string }
@@ -526,6 +529,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
             <p>{detail.unit.note}</p>
           </section>}
           {detail.sovereignTitle && <DataTable title="작위와 직위" rows={[["작위", detail.sovereignTitle.formalTitle], ["등급", detail.sovereignTitle.formalTitleRank], ["직위", detail.sovereignTitle.office]]} />}
+          {!!detail.openingTitles?.length && <section data-opening-titles><h2>개막 영토 작위와 상위 관할</h2>{detail.confirmedHoldings?.some(holding => holding.liegeRelationshipKind === 'preserved-personal-service') && <p>기존 인적 봉사 주군 관계와 영토 작위의 상위 관할은 별개입니다. 기존 인적 관계는 그대로 보존합니다.</p>}{detail.openingTitles.map(title => <DataTable key={title.id} title={title.name} rows={[["작위 등급", title.rank], ["상위 작위", title.parentTitle?.name ?? '독립'], ["영토 작위 상위 보유자", title.parentTitle?.holderPersonId ?? '없음']]} />)}</section>}
           {detail.retinueGroups?.map(group => <section key={group.id} data-retinue-group={group.id}><h2>{group.name.ko}</h2><p>{group.count}기 · 민웅기 직속</p><p>{group.duties.join(' · ')}</p></section>)}
           {!!detail.confirmedHoldings?.length && <section className="gurps-territory-confirmed" data-confirmed-holdings>
             <h2>보유 영지와 시설</h2>
@@ -533,6 +537,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
               <h3>{holding.name.ko}</h3>
               {holding.stationRef && <p data-owned-station={holding.stationRef.stationId}>{holding.stationRef.stationName}역</p>}
               {holding.adminRefs.length > 0 && <ul>{holding.adminRefs.map((region) => <li key={region.id} data-admin-ref={region.id}>{region.name}</li>)}</ul>}
+              {!!holding.componentRefs?.length && <ul>{holding.componentRefs.map(ref => <li key={`${ref.unitId}:${ref.componentIndex}`} data-component-ref={`${ref.unitId}:${ref.componentIndex}`}>{ref.name ?? `${ref.unitId}:${ref.componentIndex}`}</li>)}</ul>}
               {holding.facilityRef && <p data-facility-layer={holding.facilityRef.layerId}>{holding.facilityRef.stationName} · {holding.facilityRef.layerName}</p>}
             </section>)}
           </section>}

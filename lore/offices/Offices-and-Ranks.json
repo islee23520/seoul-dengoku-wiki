@@ -1587,6 +1587,14 @@
       }
     },
     {
+      "kind": "paragraph",
+      "anchor": "영토의-규모와-행정단위-인천",
+      "text": {
+        "ko": "인천광역시 전체는 왕국 크기의 영역이며, 그 안의 구와 군은 공국 크기, 직접 속한 읍·면·동은 남작령 크기이다. 이 비교 규모는 개막 점유나 개인 소유를 자동으로 정하지 않는다. 섬의 보유 범위는 같은 행정구역 안에서도 섬별로 기록한다.",
+        "en": "Incheon Metropolitan City is a kingdom-sized area. Its districts and counties are duchy-sized, and their directly subordinate eup, myeon, and dong are barony-sized. These comparative scales do not automatically establish opening control or personal ownership. Island holdings are recorded separately even within the same administrative unit."
+      }
+    },
+    {
       "kind": "heading",
       "anchor": "계승",
       "depth": 2,
@@ -1686,6 +1694,13 @@
         {
           "name": "대전광역시",
           "englishName": "Daejeon Metropolitan City",
+          "city": "kingdom",
+          "district": "duchy",
+          "dong": "barony"
+        },
+        {
+          "name": "인천광역시",
+          "englishName": "Incheon Metropolitan City",
           "city": "kingdom",
           "district": "duchy",
           "dong": "barony"

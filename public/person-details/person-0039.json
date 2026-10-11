@@ -2,10 +2,10 @@
   "id": "person-0039",
   "name": "구찬솔",
   "title": "구로 공구시장 물류상",
-  "position": "구로 공구시장 물류상",
+  "position": "대전 서구 영주",
   "characterId": "K039",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "공구 물류 거래",
   "gender": "남성",
   "stage": "S2",
@@ -761,7 +761,50 @@
       ],
       "geometrySource": "outside-admin-units.units",
       "territorialScale": "duchy",
-      "formalTitleRank": null
+      "formalTitleRank": null,
+      "titleId": "title:duchy-gu-30170-polity-daejeon"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-30170-polity-daejeon",
+      "name": "서구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K039",
+      "basis": "기존 보유 권리 결속: holding:daejeon-seo",
+      "stateId": "polity:daejeon",
+      "parentTitleId": "title:kingdom-daejeon",
+      "jurisdictionRefs": [
+        "3017051000",
+        "3017052000",
+        "3017053000",
+        "3017053500",
+        "3017054000",
+        "3017055000",
+        "3017055500",
+        "3017056000",
+        "3017057000",
+        "3017057500",
+        "3017058100",
+        "3017058200",
+        "3017058600",
+        "3017058700",
+        "3017058800",
+        "3017059000",
+        "3017059300",
+        "3017059600",
+        "3017059700",
+        "3017060000",
+        "3017063000",
+        "3017064000",
+        "3017065000",
+        "3017066000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-daejeon",
+        "name": "대전선",
+        "holderPersonId": "K1008"
+      }
     }
   ],
   "unit": {

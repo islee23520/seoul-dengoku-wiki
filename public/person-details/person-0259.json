@@ -674,7 +674,142 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11290-S10",
+      "name": {
+        "ko": "성북구 공작령 직영지"
+      },
+      "holderPersonId": "K258",
+      "directLiegePersonId": "K144",
+      "stateId": "S10",
+      "adminRefs": [
+        {
+          "id": "region:1129052500",
+          "name": "성북동"
+        },
+        {
+          "id": "region:1129055500",
+          "name": "삼선동"
+        },
+        {
+          "id": "region:1129057500",
+          "name": "동선동"
+        },
+        {
+          "id": "region:1129058000",
+          "name": "돈암1동"
+        },
+        {
+          "id": "region:1129059000",
+          "name": "돈암2동"
+        },
+        {
+          "id": "region:1129060000",
+          "name": "안암동"
+        },
+        {
+          "id": "region:1129061000",
+          "name": "보문동"
+        },
+        {
+          "id": "region:1129062000",
+          "name": "정릉1동"
+        },
+        {
+          "id": "region:1129063000",
+          "name": "정릉2동"
+        },
+        {
+          "id": "region:1129064000",
+          "name": "정릉3동"
+        },
+        {
+          "id": "region:1129065000",
+          "name": "정릉4동"
+        },
+        {
+          "id": "region:1129066000",
+          "name": "길음1동"
+        },
+        {
+          "id": "region:1129068500",
+          "name": "길음2동"
+        },
+        {
+          "id": "region:1129070500",
+          "name": "종암동"
+        },
+        {
+          "id": "region:1129071500",
+          "name": "월곡1동"
+        },
+        {
+          "id": "region:1129072500",
+          "name": "월곡2동"
+        },
+        {
+          "id": "region:1129076000",
+          "name": "장위1동"
+        },
+        {
+          "id": "region:1129077000",
+          "name": "장위2동"
+        },
+        {
+          "id": "region:1129078000",
+          "name": "장위3동"
+        },
+        {
+          "id": "region:1129081000",
+          "name": "석관동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11290-S10",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11290-S10",
+      "name": "성북구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K258",
+      "basis": "개막 행정 규모 그룹 gu:11290(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S10",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1129052500",
+        "region:1129055500",
+        "region:1129057500",
+        "region:1129058000",
+        "region:1129059000",
+        "region:1129060000",
+        "region:1129061000",
+        "region:1129062000",
+        "region:1129063000",
+        "region:1129064000",
+        "region:1129065000",
+        "region:1129066000",
+        "region:1129068500",
+        "region:1129070500",
+        "region:1129071500",
+        "region:1129072500",
+        "region:1129076000",
+        "region:1129077000",
+        "region:1129078000",
+        "region:1129081000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -780,7 +780,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11230-S13",
+      "name": {
+        "ko": "동대문구 공작령 직영지"
+      },
+      "holderPersonId": "K337",
+      "directLiegePersonId": "K144",
+      "stateId": "S13",
+      "adminRefs": [
+        {
+          "id": "region:1123051500",
+          "name": "신설동"
+        },
+        {
+          "id": "region:1123053300",
+          "name": "용두동"
+        },
+        {
+          "id": "region:1123054500",
+          "name": "제기동"
+        },
+        {
+          "id": "region:1123056000",
+          "name": "전농1동"
+        },
+        {
+          "id": "region:1123057000",
+          "name": "전농2동"
+        },
+        {
+          "id": "region:1123060000",
+          "name": "답십리1동"
+        },
+        {
+          "id": "region:1123061000",
+          "name": "답십리2동"
+        },
+        {
+          "id": "region:1123065000",
+          "name": "장안1동"
+        },
+        {
+          "id": "region:1123066000",
+          "name": "장안2동"
+        },
+        {
+          "id": "region:1123070500",
+          "name": "청량리동"
+        },
+        {
+          "id": "region:1123071000",
+          "name": "회기동"
+        },
+        {
+          "id": "region:1123072000",
+          "name": "휘경1동"
+        },
+        {
+          "id": "region:1123073000",
+          "name": "휘경2동"
+        },
+        {
+          "id": "region:1123074000",
+          "name": "이문1동"
+        },
+        {
+          "id": "region:1123075000",
+          "name": "이문2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11230-S13",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11230-S13",
+      "name": "동대문구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K337",
+      "basis": "개막 행정 규모 그룹 gu:11230(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S13",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1123051500",
+        "region:1123053300",
+        "region:1123054500",
+        "region:1123056000",
+        "region:1123057000",
+        "region:1123060000",
+        "region:1123061000",
+        "region:1123065000",
+        "region:1123066000",
+        "region:1123070500",
+        "region:1123071000",
+        "region:1123072000",
+        "region:1123073000",
+        "region:1123074000",
+        "region:1123075000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

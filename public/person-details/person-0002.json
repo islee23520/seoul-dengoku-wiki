@@ -756,7 +756,45 @@
       ],
       "geometrySource": "opening-territories.regions",
       "parentGeography": "서울특별시",
-      "wholeSeoulControl": false
+      "wholeSeoulControl": false,
+      "titleId": "title:duchy-gu-11470-S01",
+      "liegeRelationshipKind": "preserved-personal-service"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11470-S01",
+      "name": "양천구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K002",
+      "basis": "기존 보유 권리 결속: holding:yangcheon",
+      "stateId": "S01",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1147051000",
+        "region:1147052000",
+        "region:1147053000",
+        "region:1147054000",
+        "region:1147055000",
+        "region:1147056000",
+        "region:1147057000",
+        "region:1147058000",
+        "region:1147059000",
+        "region:1147060000",
+        "region:1147061000",
+        "region:1147061100",
+        "region:1147062000",
+        "region:1147063000",
+        "region:1147064000",
+        "region:1147065000",
+        "region:1147067000",
+        "region:1147068000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
     }
   ],
   "unit": {

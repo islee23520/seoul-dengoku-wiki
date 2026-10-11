@@ -727,7 +727,92 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11545-S02",
+      "name": {
+        "ko": "금천구 공작령 직영지"
+      },
+      "holderPersonId": "K037",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "region:1154551000",
+          "name": "가산동"
+        },
+        {
+          "id": "region:1154561000",
+          "name": "독산1동"
+        },
+        {
+          "id": "region:1154562000",
+          "name": "독산2동"
+        },
+        {
+          "id": "region:1154563000",
+          "name": "독산3동"
+        },
+        {
+          "id": "region:1154564000",
+          "name": "독산4동"
+        },
+        {
+          "id": "region:1154567000",
+          "name": "시흥1동"
+        },
+        {
+          "id": "region:1154568000",
+          "name": "시흥2동"
+        },
+        {
+          "id": "region:1154569000",
+          "name": "시흥3동"
+        },
+        {
+          "id": "region:1154570000",
+          "name": "시흥4동"
+        },
+        {
+          "id": "region:1154571000",
+          "name": "시흥5동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11545-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11545-S02",
+      "name": "금천구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K037",
+      "basis": "개막 행정 규모 그룹 gu:11545(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1154551000",
+        "region:1154561000",
+        "region:1154562000",
+        "region:1154563000",
+        "region:1154564000",
+        "region:1154567000",
+        "region:1154568000",
+        "region:1154569000",
+        "region:1154570000",
+        "region:1154571000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -2,10 +2,10 @@
   "id": "person-0154",
   "name": "나선재",
   "title": "문서고 수비 순찰대 조장",
-  "position": "문서고 수비 순찰대 조장",
+  "position": "문서고 수비 순찰대 조장 · 의정부시 영주",
   "characterId": "K153",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "문서고 열쇠 확인·수비 순찰",
   "gender": "남성",
   "stage": "S2",
@@ -737,7 +737,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41150-S06",
+      "name": {
+        "ko": "의정부시 공작령 직영지"
+      },
+      "holderPersonId": "K153",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "4115051000",
+          "name": "경기도 의정부시 의정부1동"
+        },
+        {
+          "id": "4115052000",
+          "name": "경기도 의정부시 의정부2동"
+        },
+        {
+          "id": "4115054500",
+          "name": "경기도 의정부시 호원1동"
+        },
+        {
+          "id": "4115055500",
+          "name": "경기도 의정부시 호원2동"
+        },
+        {
+          "id": "4115056100",
+          "name": "경기도 의정부시 장암동"
+        },
+        {
+          "id": "4115056700",
+          "name": "경기도 의정부시 신곡1동"
+        },
+        {
+          "id": "4115056800",
+          "name": "경기도 의정부시 신곡2동"
+        },
+        {
+          "id": "4115057300",
+          "name": "경기도 의정부시 송산1동"
+        },
+        {
+          "id": "4115057600",
+          "name": "경기도 의정부시 송산2동"
+        },
+        {
+          "id": "4115057800",
+          "name": "경기도 의정부시 송산3동"
+        },
+        {
+          "id": "4115058000",
+          "name": "경기도 의정부시 자금동"
+        },
+        {
+          "id": "4115059500",
+          "name": "경기도 의정부시 가능동"
+        },
+        {
+          "id": "4115061500",
+          "name": "경기도 의정부시 흥선동"
+        },
+        {
+          "id": "4115062000",
+          "name": "경기도 의정부시 녹양동"
+        },
+        {
+          "id": "4115063000",
+          "name": "경기도 의정부시 고산동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41150-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41150-S06",
+      "name": "의정부시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K153",
+      "basis": "개막 행정 규모 그룹 41150(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "4115051000",
+        "4115052000",
+        "4115054500",
+        "4115055500",
+        "4115056100",
+        "4115056700",
+        "4115056800",
+        "4115057300",
+        "4115057600",
+        "4115057800",
+        "4115058000",
+        "4115059500",
+        "4115061500",
+        "4115062000",
+        "4115063000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

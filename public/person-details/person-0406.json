@@ -2,10 +2,10 @@
   "id": "person-0406",
   "name": "선초별",
   "title": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
-  "position": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자",
+  "position": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 · 강남구 영주",
   "characterId": "K405",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "조약 초안 확인·면제 칸 인장 확인",
   "gender": "남성",
   "stage": "S2",
@@ -684,7 +684,137 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11680-S16",
+      "name": {
+        "ko": "강남구 정동노총 공작령 직영지"
+      },
+      "holderPersonId": "K405",
+      "directLiegePersonId": "K423",
+      "stateId": "S16",
+      "adminRefs": [
+        {
+          "id": "region:1168053100",
+          "name": "논현2동"
+        },
+        {
+          "id": "region:1168054500",
+          "name": "압구정동"
+        },
+        {
+          "id": "region:1168056500",
+          "name": "청담동"
+        },
+        {
+          "id": "region:1168058000",
+          "name": "삼성1동"
+        },
+        {
+          "id": "region:1168059000",
+          "name": "삼성2동"
+        },
+        {
+          "id": "region:1168060000",
+          "name": "대치1동"
+        },
+        {
+          "id": "region:1168063000",
+          "name": "대치4동"
+        },
+        {
+          "id": "region:1168064000",
+          "name": "역삼1동"
+        },
+        {
+          "id": "region:1168065000",
+          "name": "역삼2동"
+        },
+        {
+          "id": "region:1168065500",
+          "name": "도곡1동"
+        },
+        {
+          "id": "region:1168065600",
+          "name": "도곡2동"
+        },
+        {
+          "id": "region:1168066000",
+          "name": "개포1동"
+        },
+        {
+          "id": "region:1168067000",
+          "name": "개포2동"
+        },
+        {
+          "id": "region:1168067500",
+          "name": "개포3동"
+        },
+        {
+          "id": "region:1168069000",
+          "name": "개포4동"
+        },
+        {
+          "id": "region:1168070000",
+          "name": "세곡동"
+        },
+        {
+          "id": "region:1168072000",
+          "name": "일원본동"
+        },
+        {
+          "id": "region:1168073000",
+          "name": "일원1동"
+        },
+        {
+          "id": "region:1168075000",
+          "name": "수서동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11680-S16",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11680-S16",
+      "name": "강남구 정동노총 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K405",
+      "basis": "개막 행정 규모 그룹 gu:11680(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S16",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "region:1168053100",
+        "region:1168054500",
+        "region:1168056500",
+        "region:1168058000",
+        "region:1168059000",
+        "region:1168060000",
+        "region:1168063000",
+        "region:1168064000",
+        "region:1168065000",
+        "region:1168065500",
+        "region:1168065600",
+        "region:1168066000",
+        "region:1168067000",
+        "region:1168067500",
+        "region:1168069000",
+        "region:1168070000",
+        "region:1168072000",
+        "region:1168073000",
+        "region:1168075000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

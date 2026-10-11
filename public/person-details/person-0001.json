@@ -735,7 +735,135 @@
       ],
       "geometrySource": "opening-territories.regions",
       "territorialScale": "barony",
-      "formalTitleRank": null
+      "formalTitleRank": null,
+      "titleId": "title:barony-holding-yangpyeong2-S01"
+    },
+    {
+      "id": "holding:opening-duchy-gu-11560-S01",
+      "name": {
+        "ko": "영등포구 수문국 공작령 직영지"
+      },
+      "holderPersonId": "K001",
+      "directLiegePersonId": "K029",
+      "stateId": "S01",
+      "adminRefs": [
+        {
+          "id": "region:1156051500",
+          "name": "영등포본동"
+        },
+        {
+          "id": "region:1156055000",
+          "name": "당산1동"
+        },
+        {
+          "id": "region:1156056000",
+          "name": "당산2동"
+        },
+        {
+          "id": "region:1156058500",
+          "name": "도림동"
+        },
+        {
+          "id": "region:1156060500",
+          "name": "문래동"
+        },
+        {
+          "id": "region:1156061000",
+          "name": "양평1동"
+        },
+        {
+          "id": "region:1156063000",
+          "name": "신길1동"
+        },
+        {
+          "id": "region:1156065000",
+          "name": "신길3동"
+        },
+        {
+          "id": "region:1156066000",
+          "name": "신길4동"
+        },
+        {
+          "id": "region:1156067000",
+          "name": "신길5동"
+        },
+        {
+          "id": "region:1156068000",
+          "name": "신길6동"
+        },
+        {
+          "id": "region:1156069000",
+          "name": "신길7동"
+        },
+        {
+          "id": "region:1156070000",
+          "name": "대림1동"
+        },
+        {
+          "id": "region:1156071000",
+          "name": "대림2동"
+        },
+        {
+          "id": "region:1156072000",
+          "name": "대림3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11560-S01",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:barony-holding-yangpyeong2-S01",
+      "name": "양평2동 남작령",
+      "rank": "barony",
+      "holderPersonId": "K001",
+      "stateId": "S01",
+      "parentTitleId": "title:duchy-gu-11560-S01",
+      "jurisdictionRefs": [
+        "region:1156062000"
+      ],
+      "basis": "기존 보유 권리 결속(부분): holding:yangpyeong2",
+      "parentTitle": {
+        "id": "title:duchy-gu-11560-S01",
+        "name": "영등포구 수문국 공작령",
+        "holderPersonId": "K001"
+      }
+    },
+    {
+      "id": "title:duchy-gu-11560-S01",
+      "name": "영등포구 수문국 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K001",
+      "basis": "개막 수도 직할 공작 결정(왕급 직속 최대 둘 중 하나)",
+      "stateId": "S01",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "region:1156051500",
+        "region:1156055000",
+        "region:1156056000",
+        "region:1156058500",
+        "region:1156060500",
+        "region:1156061000",
+        "region:1156062000",
+        "region:1156063000",
+        "region:1156065000",
+        "region:1156066000",
+        "region:1156067000",
+        "region:1156068000",
+        "region:1156069000",
+        "region:1156070000",
+        "region:1156071000",
+        "region:1156072000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
     }
   ],
   "unit": {

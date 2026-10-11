@@ -2,10 +2,10 @@
   "id": "person-0356",
   "name": "원예나",
   "title": "교량 통과 물류상",
-  "position": "양군 교량 통과 물류상",
+  "position": "자월·측도 해상 영주",
   "characterId": "K355",
-  "rank": "공동실무원",
-  "commonTier": "T5",
+  "rank": "해상 영주",
+  "commonTier": "T3",
   "occupation": "교각 균열·통행 송장 이중 날인 확인",
   "gender": "남성",
   "stage": "S2",
@@ -629,7 +629,153 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:sea-K355",
+      "name": {
+        "ko": "자월·영흥·측도 해상 직영지"
+      },
+      "holderPersonId": "K355",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [],
+      "componentRefs": [
+        {
+          "unitId": "2872036000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 8
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 9
+        },
+        {
+          "unitId": "2872036000",
+          "componentIndex": 10
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 0
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 1
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 2
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 3
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 4
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 5
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 6
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 7
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 8
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 9
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 10
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 11
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 12
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 13
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 14
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 15
+        },
+        {
+          "unitId": "2872037000",
+          "componentIndex": 16
+        }
+      ],
+      "titleId": "title:barony-K355-sea",
+      "geometrySource": "lore/regions/outside-island-occupation.json",
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:barony-K355-sea",
+      "name": "자월·영흥·측도 해상 남작령",
+      "rank": "barony",
+      "holderPersonId": "K355",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [],
+      "basis": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments 승인 (분할 단위는 componentRef로만 수여)",
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

@@ -642,7 +642,122 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11380-S10",
+      "name": {
+        "ko": "은평구 공작령 직영지"
+      },
+      "holderPersonId": "K260",
+      "directLiegePersonId": "K144",
+      "stateId": "S10",
+      "adminRefs": [
+        {
+          "id": "region:1138051000",
+          "name": "녹번동"
+        },
+        {
+          "id": "region:1138052000",
+          "name": "불광1동"
+        },
+        {
+          "id": "region:1138053000",
+          "name": "불광2동"
+        },
+        {
+          "id": "region:1138055100",
+          "name": "갈현1동"
+        },
+        {
+          "id": "region:1138055200",
+          "name": "갈현2동"
+        },
+        {
+          "id": "region:1138056000",
+          "name": "구산동"
+        },
+        {
+          "id": "region:1138057000",
+          "name": "대조동"
+        },
+        {
+          "id": "region:1138058000",
+          "name": "응암1동"
+        },
+        {
+          "id": "region:1138059000",
+          "name": "응암2동"
+        },
+        {
+          "id": "region:1138060000",
+          "name": "응암3동"
+        },
+        {
+          "id": "region:1138062500",
+          "name": "역촌동"
+        },
+        {
+          "id": "region:1138063100",
+          "name": "신사1동"
+        },
+        {
+          "id": "region:1138063200",
+          "name": "신사2동"
+        },
+        {
+          "id": "region:1138064000",
+          "name": "증산동"
+        },
+        {
+          "id": "region:1138065000",
+          "name": "수색동"
+        },
+        {
+          "id": "region:1138069000",
+          "name": "진관동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11380-S10",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11380-S10",
+      "name": "은평구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K260",
+      "basis": "개막 행정 규모 그룹 gu:11380(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S10",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1138051000",
+        "region:1138052000",
+        "region:1138053000",
+        "region:1138055100",
+        "region:1138055200",
+        "region:1138056000",
+        "region:1138057000",
+        "region:1138058000",
+        "region:1138059000",
+        "region:1138060000",
+        "region:1138062500",
+        "region:1138063100",
+        "region:1138063200",
+        "region:1138064000",
+        "region:1138065000",
+        "region:1138069000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

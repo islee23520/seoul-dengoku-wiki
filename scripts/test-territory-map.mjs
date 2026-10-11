@@ -650,13 +650,17 @@ test('approved control ledger keeps Daejeon neutral with evidence-bound personal
   const daejeonRefs = new Set(holdings.holdings.filter((holding) => holding.stateId === 'polity:daejeon').flatMap((holding) => holding.adminRefs.map((ref) => ref.id)))
   assert.equal(daejeonRefs.size, daejeonUnits.length)
   for (const unit of daejeonUnits) assert.ok(daejeonRefs.has(unit.id), unit.id)
-  // 섬 지역(옹진군)은 교량 연결 여부와 무관하게 개인 영지로 주어지지 않는다.
+  // 인터뷰로 확정한 분할 섬은 전체 행정구역이 아닌 구성 요소별로만 수여한다.
   const personalRefs = new Set(holdings.holdings.flatMap((holding) => holding.adminRefs.map((ref) => ref.id)))
-  const islandUnits = units.units.filter((unit) => unit.name.includes('옹진군') || unit.name.endsWith('대부동'))
+  const islandUnits = control.assignments.filter(unit => unit.components)
   assert.ok(islandUnits.length >= 8)
   for (const unit of islandUnits) {
-    assert.equal(personalRefs.has(unit.id), false, unit.id)
-    assert.equal(control.assignments.find((row) => row.unitId === unit.id)?.holderPersonId, undefined, unit.id)
+    assert.equal(personalRefs.has(unit.unitId), false, unit.unitId)
+    for (const component of unit.components) {
+      const grants = holdings.holdings.filter(holding => holding.componentRefs?.some(ref => ref.unitId === unit.unitId && ref.componentIndex === component.componentIndex))
+      assert.equal(grants.length, 1, component.id)
+      assert.ok(['K151', 'K176', 'K355'].includes(grants[0].holderPersonId))
+    }
   }
   assert.deepEqual(holdings.polities.map((polity) => [polity.id, polity.sovereignPersonId, polity.formalTitle, polity.formalTitleRank, polity.office, polity.territorialScale]), [['polity:daejeon', 'K1008', '대전선', '왕격', '대전 군주', 'kingdom']])
   const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')

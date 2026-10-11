@@ -2,10 +2,10 @@
   "id": "person-1011",
   "name": "린샤오메이",
   "title": "대림 이중장부 중개",
-  "position": "대림 이중장부 중개",
+  "position": "대림 이중장부 중개 · 과천시 영주",
   "characterId": "K1011",
-  "rank": "없음",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "물류상 (주), 전령 (부)",
   "gender": "여성",
   "stage": "S4",
@@ -743,7 +743,77 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41290-S02",
+      "name": {
+        "ko": "과천시 공작령 직영지"
+      },
+      "holderPersonId": "K1011",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4129051000",
+          "name": "경기도 과천시 중앙동"
+        },
+        {
+          "id": "4129051500",
+          "name": "경기도 과천시 원문동"
+        },
+        {
+          "id": "4129052000",
+          "name": "경기도 과천시 갈현동"
+        },
+        {
+          "id": "4129053000",
+          "name": "경기도 과천시 별양동"
+        },
+        {
+          "id": "4129054000",
+          "name": "경기도 과천시 부림동"
+        },
+        {
+          "id": "4129055000",
+          "name": "경기도 과천시 과천동"
+        },
+        {
+          "id": "4129056000",
+          "name": "경기도 과천시 문원동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41290-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41290-S02",
+      "name": "과천시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K1011",
+      "basis": "개막 행정 규모 그룹 41290(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4129051000",
+        "4129051500",
+        "4129052000",
+        "4129053000",
+        "4129054000",
+        "4129055000",
+        "4129056000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 2,

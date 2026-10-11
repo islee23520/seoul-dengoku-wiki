@@ -2,10 +2,10 @@
   "id": "person-0473",
   "name": "한현우",
   "title": "작업반 전령",
-  "position": "작업반 전령",
+  "position": "작업반 전령 · 장안구 영주",
   "characterId": "K473",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "환승 전갈 전달",
   "gender": "여성",
   "stage": "S4",
@@ -713,7 +713,1539 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-barony-gu-41111-S02",
+      "name": {
+        "ko": "장안구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111156000",
+          "name": "경기도 수원시장안구 파장동"
+        },
+        {
+          "id": "4111156600",
+          "name": "경기도 수원시장안구 율천동"
+        },
+        {
+          "id": "4111157100",
+          "name": "경기도 수원시장안구 정자1동"
+        },
+        {
+          "id": "4111157200",
+          "name": "경기도 수원시장안구 정자2동"
+        },
+        {
+          "id": "4111157300",
+          "name": "경기도 수원시장안구 정자3동"
+        },
+        {
+          "id": "4111158000",
+          "name": "경기도 수원시장안구 영화동"
+        },
+        {
+          "id": "4111159100",
+          "name": "경기도 수원시장안구 송죽동"
+        },
+        {
+          "id": "4111159700",
+          "name": "경기도 수원시장안구 조원1동"
+        },
+        {
+          "id": "4111159800",
+          "name": "경기도 수원시장안구 조원2동"
+        },
+        {
+          "id": "4111160000",
+          "name": "경기도 수원시장안구 연무동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41111-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41113-S02",
+      "name": {
+        "ko": "권선구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111352000",
+          "name": "경기도 수원시권선구 세류1동"
+        },
+        {
+          "id": "4111353000",
+          "name": "경기도 수원시권선구 세류2동"
+        },
+        {
+          "id": "4111354000",
+          "name": "경기도 수원시권선구 세류3동"
+        },
+        {
+          "id": "4111355000",
+          "name": "경기도 수원시권선구 평동"
+        },
+        {
+          "id": "4111356000",
+          "name": "경기도 수원시권선구 서둔동"
+        },
+        {
+          "id": "4111365000",
+          "name": "경기도 수원시권선구 구운동"
+        },
+        {
+          "id": "4111366200",
+          "name": "경기도 수원시권선구 금곡동"
+        },
+        {
+          "id": "4111366400",
+          "name": "경기도 수원시권선구 호매실동"
+        },
+        {
+          "id": "4111367000",
+          "name": "경기도 수원시권선구 권선1동"
+        },
+        {
+          "id": "4111368000",
+          "name": "경기도 수원시권선구 권선2동"
+        },
+        {
+          "id": "4111369000",
+          "name": "경기도 수원시권선구 곡선동"
+        },
+        {
+          "id": "4111370000",
+          "name": "경기도 수원시권선구 입북동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41113-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41115-S02",
+      "name": {
+        "ko": "팔달구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111565000",
+          "name": "경기도 수원시팔달구 매교동"
+        },
+        {
+          "id": "4111566000",
+          "name": "경기도 수원시팔달구 매산동"
+        },
+        {
+          "id": "4111567000",
+          "name": "경기도 수원시팔달구 고등동"
+        },
+        {
+          "id": "4111568000",
+          "name": "경기도 수원시팔달구 화서1동"
+        },
+        {
+          "id": "4111569000",
+          "name": "경기도 수원시팔달구 화서2동"
+        },
+        {
+          "id": "4111570000",
+          "name": "경기도 수원시팔달구 지동"
+        },
+        {
+          "id": "4111571000",
+          "name": "경기도 수원시팔달구 우만1동"
+        },
+        {
+          "id": "4111572000",
+          "name": "경기도 수원시팔달구 우만2동"
+        },
+        {
+          "id": "4111573000",
+          "name": "경기도 수원시팔달구 인계동"
+        },
+        {
+          "id": "4111574000",
+          "name": "경기도 수원시팔달구 행궁동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41115-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41117-S02",
+      "name": {
+        "ko": "영통구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K047",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4111751000",
+          "name": "경기도 수원시영통구 매탄1동"
+        },
+        {
+          "id": "4111752000",
+          "name": "경기도 수원시영통구 매탄2동"
+        },
+        {
+          "id": "4111753000",
+          "name": "경기도 수원시영통구 매탄3동"
+        },
+        {
+          "id": "4111754000",
+          "name": "경기도 수원시영통구 매탄4동"
+        },
+        {
+          "id": "4111755000",
+          "name": "경기도 수원시영통구 원천동"
+        },
+        {
+          "id": "4111757000",
+          "name": "경기도 수원시영통구 영통1동"
+        },
+        {
+          "id": "4111758000",
+          "name": "경기도 수원시영통구 영통2동"
+        },
+        {
+          "id": "4111758500",
+          "name": "경기도 수원시영통구 영통3동"
+        },
+        {
+          "id": "4111759300",
+          "name": "경기도 수원시영통구 망포1동"
+        },
+        {
+          "id": "4111759600",
+          "name": "경기도 수원시영통구 망포2동"
+        },
+        {
+          "id": "4111760000",
+          "name": "경기도 수원시영통구 광교1동"
+        },
+        {
+          "id": "4111761000",
+          "name": "경기도 수원시영통구 광교2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41117-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41171-S02",
+      "name": {
+        "ko": "만안구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K033",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4117151000",
+          "name": "경기도 안양시만안구 안양1동"
+        },
+        {
+          "id": "4117152000",
+          "name": "경기도 안양시만안구 안양2동"
+        },
+        {
+          "id": "4117153000",
+          "name": "경기도 안양시만안구 안양3동"
+        },
+        {
+          "id": "4117154000",
+          "name": "경기도 안양시만안구 안양4동"
+        },
+        {
+          "id": "4117155000",
+          "name": "경기도 안양시만안구 안양5동"
+        },
+        {
+          "id": "4117156000",
+          "name": "경기도 안양시만안구 안양6동"
+        },
+        {
+          "id": "4117157000",
+          "name": "경기도 안양시만안구 안양7동"
+        },
+        {
+          "id": "4117158200",
+          "name": "경기도 안양시만안구 명학동"
+        },
+        {
+          "id": "4117158300",
+          "name": "경기도 안양시만안구 병목안동"
+        },
+        {
+          "id": "4117159000",
+          "name": "경기도 안양시만안구 석수1동"
+        },
+        {
+          "id": "4117160000",
+          "name": "경기도 안양시만안구 석수2동"
+        },
+        {
+          "id": "4117161100",
+          "name": "경기도 안양시만안구 충훈동"
+        },
+        {
+          "id": "4117164000",
+          "name": "경기도 안양시만안구 박달동"
+        },
+        {
+          "id": "4117165000",
+          "name": "경기도 안양시만안구 호현동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41171-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41173-S02",
+      "name": {
+        "ko": "동안구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K033",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4117351000",
+          "name": "경기도 안양시동안구 비산1동"
+        },
+        {
+          "id": "4117352000",
+          "name": "경기도 안양시동안구 비산2동"
+        },
+        {
+          "id": "4117353000",
+          "name": "경기도 안양시동안구 비산3동"
+        },
+        {
+          "id": "4117354000",
+          "name": "경기도 안양시동안구 부흥동"
+        },
+        {
+          "id": "4117354600",
+          "name": "경기도 안양시동안구 달안동"
+        },
+        {
+          "id": "4117355200",
+          "name": "경기도 안양시동안구 관양동"
+        },
+        {
+          "id": "4117355900",
+          "name": "경기도 안양시동안구 인덕원동"
+        },
+        {
+          "id": "4117356600",
+          "name": "경기도 안양시동안구 부림동"
+        },
+        {
+          "id": "4117357000",
+          "name": "경기도 안양시동안구 평촌동"
+        },
+        {
+          "id": "4117357600",
+          "name": "경기도 안양시동안구 평안동"
+        },
+        {
+          "id": "4117357800",
+          "name": "경기도 안양시동안구 귀인동"
+        },
+        {
+          "id": "4117358000",
+          "name": "경기도 안양시동안구 호계1동"
+        },
+        {
+          "id": "4117359000",
+          "name": "경기도 안양시동안구 호계2동"
+        },
+        {
+          "id": "4117360000",
+          "name": "경기도 안양시동안구 호계3동"
+        },
+        {
+          "id": "4117361000",
+          "name": "경기도 안양시동안구 범계동"
+        },
+        {
+          "id": "4117362000",
+          "name": "경기도 안양시동안구 신촌동"
+        },
+        {
+          "id": "4117363000",
+          "name": "경기도 안양시동안구 갈산동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41173-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41192-S02",
+      "name": {
+        "ko": "원미구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K036",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4119251000",
+          "name": "경기도 부천시원미구 심곡1동"
+        },
+        {
+          "id": "4119252000",
+          "name": "경기도 부천시원미구 심곡2동"
+        },
+        {
+          "id": "4119253000",
+          "name": "경기도 부천시원미구 심곡3동"
+        },
+        {
+          "id": "4119254000",
+          "name": "경기도 부천시원미구 원미1동"
+        },
+        {
+          "id": "4119255000",
+          "name": "경기도 부천시원미구 원미2동"
+        },
+        {
+          "id": "4119256000",
+          "name": "경기도 부천시원미구 소사동"
+        },
+        {
+          "id": "4119257000",
+          "name": "경기도 부천시원미구 역곡1동"
+        },
+        {
+          "id": "4119258000",
+          "name": "경기도 부천시원미구 역곡2동"
+        },
+        {
+          "id": "4119259000",
+          "name": "경기도 부천시원미구 춘의동"
+        },
+        {
+          "id": "4119260000",
+          "name": "경기도 부천시원미구 도당동"
+        },
+        {
+          "id": "4119261000",
+          "name": "경기도 부천시원미구 약대동"
+        },
+        {
+          "id": "4119262000",
+          "name": "경기도 부천시원미구 중동"
+        },
+        {
+          "id": "4119263000",
+          "name": "경기도 부천시원미구 중1동"
+        },
+        {
+          "id": "4119264000",
+          "name": "경기도 부천시원미구 중2동"
+        },
+        {
+          "id": "4119265000",
+          "name": "경기도 부천시원미구 중3동"
+        },
+        {
+          "id": "4119266000",
+          "name": "경기도 부천시원미구 중4동"
+        },
+        {
+          "id": "4119267000",
+          "name": "경기도 부천시원미구 상동"
+        },
+        {
+          "id": "4119268000",
+          "name": "경기도 부천시원미구 상1동"
+        },
+        {
+          "id": "4119269000",
+          "name": "경기도 부천시원미구 상2동"
+        },
+        {
+          "id": "4119270000",
+          "name": "경기도 부천시원미구 상3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41192-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41194-S02",
+      "name": {
+        "ko": "소사구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K036",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4119451000",
+          "name": "경기도 부천시소사구 심곡본1동"
+        },
+        {
+          "id": "4119452000",
+          "name": "경기도 부천시소사구 심곡본동"
+        },
+        {
+          "id": "4119453000",
+          "name": "경기도 부천시소사구 소사본동"
+        },
+        {
+          "id": "4119454000",
+          "name": "경기도 부천시소사구 소사본1동"
+        },
+        {
+          "id": "4119455000",
+          "name": "경기도 부천시소사구 범박동"
+        },
+        {
+          "id": "4119456000",
+          "name": "경기도 부천시소사구 옥길동"
+        },
+        {
+          "id": "4119457000",
+          "name": "경기도 부천시소사구 괴안동"
+        },
+        {
+          "id": "4119458000",
+          "name": "경기도 부천시소사구 역곡3동"
+        },
+        {
+          "id": "4119459000",
+          "name": "경기도 부천시소사구 송내1동"
+        },
+        {
+          "id": "4119460000",
+          "name": "경기도 부천시소사구 송내2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41194-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41196-S02",
+      "name": {
+        "ko": "오정구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K036",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4119651000",
+          "name": "경기도 부천시오정구 성곡동"
+        },
+        {
+          "id": "4119652000",
+          "name": "경기도 부천시오정구 원종1동"
+        },
+        {
+          "id": "4119653000",
+          "name": "경기도 부천시오정구 원종2동"
+        },
+        {
+          "id": "4119654000",
+          "name": "경기도 부천시오정구 고강본동"
+        },
+        {
+          "id": "4119655000",
+          "name": "경기도 부천시오정구 고강1동"
+        },
+        {
+          "id": "4119656000",
+          "name": "경기도 부천시오정구 오정동"
+        },
+        {
+          "id": "4119657000",
+          "name": "경기도 부천시오정구 신흥동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41196-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41271-S02",
+      "name": {
+        "ko": "상록구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K052",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4127151000",
+          "name": "경기도 안산시상록구 일동"
+        },
+        {
+          "id": "4127151500",
+          "name": "경기도 안산시상록구 이동"
+        },
+        {
+          "id": "4127152500",
+          "name": "경기도 안산시상록구 사동"
+        },
+        {
+          "id": "4127153200",
+          "name": "경기도 안산시상록구 사이동"
+        },
+        {
+          "id": "4127153700",
+          "name": "경기도 안산시상록구 해양동"
+        },
+        {
+          "id": "4127154000",
+          "name": "경기도 안산시상록구 본오1동"
+        },
+        {
+          "id": "4127155000",
+          "name": "경기도 안산시상록구 본오2동"
+        },
+        {
+          "id": "4127156000",
+          "name": "경기도 안산시상록구 본오3동"
+        },
+        {
+          "id": "4127157000",
+          "name": "경기도 안산시상록구 부곡동"
+        },
+        {
+          "id": "4127158000",
+          "name": "경기도 안산시상록구 월피동"
+        },
+        {
+          "id": "4127159000",
+          "name": "경기도 안산시상록구 성포동"
+        },
+        {
+          "id": "4127160000",
+          "name": "경기도 안산시상록구 반월동"
+        },
+        {
+          "id": "4127161000",
+          "name": "경기도 안산시상록구 안산동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41271-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41273-S02",
+      "name": {
+        "ko": "단원구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K052",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4127351000",
+          "name": "경기도 안산시단원구 와동"
+        },
+        {
+          "id": "4127352500",
+          "name": "경기도 안산시단원구 고잔동"
+        },
+        {
+          "id": "4127353200",
+          "name": "경기도 안산시단원구 중앙동"
+        },
+        {
+          "id": "4127353500",
+          "name": "경기도 안산시단원구 호수동"
+        },
+        {
+          "id": "4127354500",
+          "name": "경기도 안산시단원구 원곡동"
+        },
+        {
+          "id": "4127355500",
+          "name": "경기도 안산시단원구 백운동"
+        },
+        {
+          "id": "4127356500",
+          "name": "경기도 안산시단원구 신길동"
+        },
+        {
+          "id": "4127357000",
+          "name": "경기도 안산시단원구 초지동"
+        },
+        {
+          "id": "4127358000",
+          "name": "경기도 안산시단원구 선부1동"
+        },
+        {
+          "id": "4127359000",
+          "name": "경기도 안산시단원구 선부2동"
+        },
+        {
+          "id": "4127360000",
+          "name": "경기도 안산시단원구 선부3동"
+        },
+        {
+          "id": "4127361000",
+          "name": "경기도 안산시단원구 대부동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41273-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41591-S02",
+      "name": {
+        "ko": "만세구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159125000",
+          "name": "경기도 화성시만세구 우정읍"
+        },
+        {
+          "id": "4159125300",
+          "name": "경기도 화성시만세구 향남읍"
+        },
+        {
+          "id": "4159125600",
+          "name": "경기도 화성시만세구 남양읍"
+        },
+        {
+          "id": "4159131000",
+          "name": "경기도 화성시만세구 마도면"
+        },
+        {
+          "id": "4159132000",
+          "name": "경기도 화성시만세구 송산면"
+        },
+        {
+          "id": "4159133000",
+          "name": "경기도 화성시만세구 서신면"
+        },
+        {
+          "id": "4159134000",
+          "name": "경기도 화성시만세구 팔탄면"
+        },
+        {
+          "id": "4159135000",
+          "name": "경기도 화성시만세구 장안면"
+        },
+        {
+          "id": "4159136000",
+          "name": "경기도 화성시만세구 양감면"
+        },
+        {
+          "id": "4159151000",
+          "name": "경기도 화성시만세구 새솔동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41591-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41593-S02",
+      "name": {
+        "ko": "효행구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159325000",
+          "name": "경기도 화성시효행구 봉담읍"
+        },
+        {
+          "id": "4159331000",
+          "name": "경기도 화성시효행구 매송면"
+        },
+        {
+          "id": "4159332000",
+          "name": "경기도 화성시효행구 비봉면"
+        },
+        {
+          "id": "4159333000",
+          "name": "경기도 화성시효행구 정남면"
+        },
+        {
+          "id": "4159351000",
+          "name": "경기도 화성시효행구 기배동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41593-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41595-S02",
+      "name": {
+        "ko": "병점구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159551000",
+          "name": "경기도 화성시병점구 진안동"
+        },
+        {
+          "id": "4159552000",
+          "name": "경기도 화성시병점구 병점1동"
+        },
+        {
+          "id": "4159553000",
+          "name": "경기도 화성시병점구 병점2동"
+        },
+        {
+          "id": "4159554000",
+          "name": "경기도 화성시병점구 반월동"
+        },
+        {
+          "id": "4159555000",
+          "name": "경기도 화성시병점구 화산동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41595-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-41597-S02",
+      "name": {
+        "ko": "동탄구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K040",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4159751000",
+          "name": "경기도 화성시동탄구 동탄1동"
+        },
+        {
+          "id": "4159752000",
+          "name": "경기도 화성시동탄구 동탄2동"
+        },
+        {
+          "id": "4159753000",
+          "name": "경기도 화성시동탄구 동탄3동"
+        },
+        {
+          "id": "4159754000",
+          "name": "경기도 화성시동탄구 동탄4동"
+        },
+        {
+          "id": "4159755000",
+          "name": "경기도 화성시동탄구 동탄5동"
+        },
+        {
+          "id": "4159756000",
+          "name": "경기도 화성시동탄구 동탄6동"
+        },
+        {
+          "id": "4159757000",
+          "name": "경기도 화성시동탄구 동탄7동"
+        },
+        {
+          "id": "4159758000",
+          "name": "경기도 화성시동탄구 동탄8동"
+        },
+        {
+          "id": "4159759000",
+          "name": "경기도 화성시동탄구 동탄9동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-41597-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-44131-S02",
+      "name": {
+        "ko": "동남구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4413125000",
+          "name": "충청남도 천안시동남구 목천읍"
+        },
+        {
+          "id": "4413131000",
+          "name": "충청남도 천안시동남구 풍세면"
+        },
+        {
+          "id": "4413132000",
+          "name": "충청남도 천안시동남구 광덕면"
+        },
+        {
+          "id": "4413133000",
+          "name": "충청남도 천안시동남구 북면"
+        },
+        {
+          "id": "4413134000",
+          "name": "충청남도 천안시동남구 성남면"
+        },
+        {
+          "id": "4413135000",
+          "name": "충청남도 천안시동남구 수신면"
+        },
+        {
+          "id": "4413136000",
+          "name": "충청남도 천안시동남구 병천면"
+        },
+        {
+          "id": "4413137000",
+          "name": "충청남도 천안시동남구 동면"
+        },
+        {
+          "id": "4413151000",
+          "name": "충청남도 천안시동남구 중앙동"
+        },
+        {
+          "id": "4413152000",
+          "name": "충청남도 천안시동남구 문성동"
+        },
+        {
+          "id": "4413153000",
+          "name": "충청남도 천안시동남구 원성1동"
+        },
+        {
+          "id": "4413154000",
+          "name": "충청남도 천안시동남구 원성2동"
+        },
+        {
+          "id": "4413155000",
+          "name": "충청남도 천안시동남구 봉명동"
+        },
+        {
+          "id": "4413156000",
+          "name": "충청남도 천안시동남구 일봉동"
+        },
+        {
+          "id": "4413157000",
+          "name": "충청남도 천안시동남구 신방동"
+        },
+        {
+          "id": "4413158000",
+          "name": "충청남도 천안시동남구 청룡동"
+        },
+        {
+          "id": "4413159000",
+          "name": "충청남도 천안시동남구 신안동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-44131-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    },
+    {
+      "id": "holding:opening-barony-gu-44133-S02",
+      "name": {
+        "ko": "서북구 남작령 직영지"
+      },
+      "holderPersonId": "K473",
+      "directLiegePersonId": "K998",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4413325000",
+          "name": "충청남도 천안시서북구 성환읍"
+        },
+        {
+          "id": "4413325300",
+          "name": "충청남도 천안시서북구 성거읍"
+        },
+        {
+          "id": "4413325600",
+          "name": "충청남도 천안시서북구 직산읍"
+        },
+        {
+          "id": "4413331000",
+          "name": "충청남도 천안시서북구 입장면"
+        },
+        {
+          "id": "4413351000",
+          "name": "충청남도 천안시서북구 성정1동"
+        },
+        {
+          "id": "4413352000",
+          "name": "충청남도 천안시서북구 성정2동"
+        },
+        {
+          "id": "4413353000",
+          "name": "충청남도 천안시서북구 쌍용1동"
+        },
+        {
+          "id": "4413354000",
+          "name": "충청남도 천안시서북구 쌍용2동"
+        },
+        {
+          "id": "4413355000",
+          "name": "충청남도 천안시서북구 쌍용3동"
+        },
+        {
+          "id": "4413356000",
+          "name": "충청남도 천안시서북구 백석동"
+        },
+        {
+          "id": "4413356600",
+          "name": "충청남도 천안시서북구 불당1동"
+        },
+        {
+          "id": "4413356700",
+          "name": "충청남도 천안시서북구 불당2동"
+        },
+        {
+          "id": "4413358000",
+          "name": "충청남도 천안시서북구 부성1동"
+        },
+        {
+          "id": "4413359000",
+          "name": "충청남도 천안시서북구 부성2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:barony-gu-44133-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "barony"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:barony-gu-41111-S02",
+      "name": "장안구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41111(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41110-S02",
+      "jurisdictionRefs": [
+        "4111156000",
+        "4111156600",
+        "4111157100",
+        "4111157200",
+        "4111157300",
+        "4111158000",
+        "4111159100",
+        "4111159700",
+        "4111159800",
+        "4111160000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41110-S02",
+        "name": "수원시 공작령",
+        "holderPersonId": "K047"
+      }
+    },
+    {
+      "id": "title:barony-gu-41113-S02",
+      "name": "권선구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41113(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41110-S02",
+      "jurisdictionRefs": [
+        "4111352000",
+        "4111353000",
+        "4111354000",
+        "4111355000",
+        "4111356000",
+        "4111365000",
+        "4111366200",
+        "4111366400",
+        "4111367000",
+        "4111368000",
+        "4111369000",
+        "4111370000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41110-S02",
+        "name": "수원시 공작령",
+        "holderPersonId": "K047"
+      }
+    },
+    {
+      "id": "title:barony-gu-41115-S02",
+      "name": "팔달구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41115(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41110-S02",
+      "jurisdictionRefs": [
+        "4111565000",
+        "4111566000",
+        "4111567000",
+        "4111568000",
+        "4111569000",
+        "4111570000",
+        "4111571000",
+        "4111572000",
+        "4111573000",
+        "4111574000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41110-S02",
+        "name": "수원시 공작령",
+        "holderPersonId": "K047"
+      }
+    },
+    {
+      "id": "title:barony-gu-41117-S02",
+      "name": "영통구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41117(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41110-S02",
+      "jurisdictionRefs": [
+        "4111751000",
+        "4111752000",
+        "4111753000",
+        "4111754000",
+        "4111755000",
+        "4111757000",
+        "4111758000",
+        "4111758500",
+        "4111759300",
+        "4111759600",
+        "4111760000",
+        "4111761000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41110-S02",
+        "name": "수원시 공작령",
+        "holderPersonId": "K047"
+      }
+    },
+    {
+      "id": "title:barony-gu-41171-S02",
+      "name": "만안구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41171(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41170-S02",
+      "jurisdictionRefs": [
+        "4117151000",
+        "4117152000",
+        "4117153000",
+        "4117154000",
+        "4117155000",
+        "4117156000",
+        "4117157000",
+        "4117158200",
+        "4117158300",
+        "4117159000",
+        "4117160000",
+        "4117161100",
+        "4117164000",
+        "4117165000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41170-S02",
+        "name": "안양시 공작령",
+        "holderPersonId": "K033"
+      }
+    },
+    {
+      "id": "title:barony-gu-41173-S02",
+      "name": "동안구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41173(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41170-S02",
+      "jurisdictionRefs": [
+        "4117351000",
+        "4117352000",
+        "4117353000",
+        "4117354000",
+        "4117354600",
+        "4117355200",
+        "4117355900",
+        "4117356600",
+        "4117357000",
+        "4117357600",
+        "4117357800",
+        "4117358000",
+        "4117359000",
+        "4117360000",
+        "4117361000",
+        "4117362000",
+        "4117363000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41170-S02",
+        "name": "안양시 공작령",
+        "holderPersonId": "K033"
+      }
+    },
+    {
+      "id": "title:barony-gu-41192-S02",
+      "name": "원미구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41192(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41190-S02",
+      "jurisdictionRefs": [
+        "4119251000",
+        "4119252000",
+        "4119253000",
+        "4119254000",
+        "4119255000",
+        "4119256000",
+        "4119257000",
+        "4119258000",
+        "4119259000",
+        "4119260000",
+        "4119261000",
+        "4119262000",
+        "4119263000",
+        "4119264000",
+        "4119265000",
+        "4119266000",
+        "4119267000",
+        "4119268000",
+        "4119269000",
+        "4119270000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41190-S02",
+        "name": "부천시 공작령",
+        "holderPersonId": "K036"
+      }
+    },
+    {
+      "id": "title:barony-gu-41194-S02",
+      "name": "소사구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41194(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41190-S02",
+      "jurisdictionRefs": [
+        "4119451000",
+        "4119452000",
+        "4119453000",
+        "4119454000",
+        "4119455000",
+        "4119456000",
+        "4119457000",
+        "4119458000",
+        "4119459000",
+        "4119460000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41190-S02",
+        "name": "부천시 공작령",
+        "holderPersonId": "K036"
+      }
+    },
+    {
+      "id": "title:barony-gu-41196-S02",
+      "name": "오정구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41196(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41190-S02",
+      "jurisdictionRefs": [
+        "4119651000",
+        "4119652000",
+        "4119653000",
+        "4119654000",
+        "4119655000",
+        "4119656000",
+        "4119657000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41190-S02",
+        "name": "부천시 공작령",
+        "holderPersonId": "K036"
+      }
+    },
+    {
+      "id": "title:barony-gu-41271-S02",
+      "name": "상록구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41271(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41270-S02",
+      "jurisdictionRefs": [
+        "4127151000",
+        "4127151500",
+        "4127152500",
+        "4127153200",
+        "4127153700",
+        "4127154000",
+        "4127155000",
+        "4127156000",
+        "4127157000",
+        "4127158000",
+        "4127159000",
+        "4127160000",
+        "4127161000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41270-S02",
+        "name": "안산시 공작령",
+        "holderPersonId": "K052"
+      }
+    },
+    {
+      "id": "title:barony-gu-41273-S02",
+      "name": "단원구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41273(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41270-S02",
+      "jurisdictionRefs": [
+        "4127351000",
+        "4127352500",
+        "4127353200",
+        "4127353500",
+        "4127354500",
+        "4127355500",
+        "4127356500",
+        "4127357000",
+        "4127358000",
+        "4127359000",
+        "4127360000",
+        "4127361000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41270-S02",
+        "name": "안산시 공작령",
+        "holderPersonId": "K052"
+      }
+    },
+    {
+      "id": "title:barony-gu-41591-S02",
+      "name": "만세구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41591(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41590-S02",
+      "jurisdictionRefs": [
+        "4159125000",
+        "4159125300",
+        "4159125600",
+        "4159131000",
+        "4159132000",
+        "4159133000",
+        "4159134000",
+        "4159135000",
+        "4159136000",
+        "4159151000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41590-S02",
+        "name": "화성시 공작령",
+        "holderPersonId": "K040"
+      }
+    },
+    {
+      "id": "title:barony-gu-41593-S02",
+      "name": "효행구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41593(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41590-S02",
+      "jurisdictionRefs": [
+        "4159325000",
+        "4159331000",
+        "4159332000",
+        "4159333000",
+        "4159351000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41590-S02",
+        "name": "화성시 공작령",
+        "holderPersonId": "K040"
+      }
+    },
+    {
+      "id": "title:barony-gu-41595-S02",
+      "name": "병점구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41595(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41590-S02",
+      "jurisdictionRefs": [
+        "4159551000",
+        "4159552000",
+        "4159553000",
+        "4159554000",
+        "4159555000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41590-S02",
+        "name": "화성시 공작령",
+        "holderPersonId": "K040"
+      }
+    },
+    {
+      "id": "title:barony-gu-41597-S02",
+      "name": "동탄구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:41597(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-41590-S02",
+      "jurisdictionRefs": [
+        "4159751000",
+        "4159752000",
+        "4159753000",
+        "4159754000",
+        "4159755000",
+        "4159756000",
+        "4159757000",
+        "4159758000",
+        "4159759000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-41590-S02",
+        "name": "화성시 공작령",
+        "holderPersonId": "K040"
+      }
+    },
+    {
+      "id": "title:barony-gu-44131-S02",
+      "name": "동남구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:44131(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4413125000",
+        "4413131000",
+        "4413132000",
+        "4413133000",
+        "4413134000",
+        "4413135000",
+        "4413136000",
+        "4413137000",
+        "4413151000",
+        "4413152000",
+        "4413153000",
+        "4413154000",
+        "4413155000",
+        "4413156000",
+        "4413157000",
+        "4413158000",
+        "4413159000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    },
+    {
+      "id": "title:barony-gu-44133-S02",
+      "name": "서북구 남작령",
+      "rank": "barony",
+      "holderPersonId": "K473",
+      "basis": "개막 행정 규모 그룹 gu:44133(barony) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:duchy-chungcheong-k998",
+      "jurisdictionRefs": [
+        "4413325000",
+        "4413325300",
+        "4413325600",
+        "4413331000",
+        "4413351000",
+        "4413352000",
+        "4413353000",
+        "4413354000",
+        "4413355000",
+        "4413356000",
+        "4413356600",
+        "4413356700",
+        "4413358000",
+        "4413359000"
+      ],
+      "parentTitle": {
+        "id": "title:duchy-chungcheong-k998",
+        "name": "충청권 공작령",
+        "holderPersonId": "K998"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

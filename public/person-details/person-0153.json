@@ -2,10 +2,10 @@
   "id": "person-0153",
   "name": "연지우",
   "title": "서울역 의무실 의무원",
-  "position": "서울역 의무실 의무원",
+  "position": "서울역 의무실 의무원 · 태백시 영주",
   "characterId": "K152",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "의무실 침상 배정·약재 배분",
   "gender": "여성",
   "stage": "S2",
@@ -652,7 +652,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51190-S06",
+      "name": {
+        "ko": "태백시 공작령 직영지"
+      },
+      "holderPersonId": "K152",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5119051500",
+          "name": "강원특별자치도 태백시 황지동"
+        },
+        {
+          "id": "5119052500",
+          "name": "강원특별자치도 태백시 황연동"
+        },
+        {
+          "id": "5119053500",
+          "name": "강원특별자치도 태백시 삼수동"
+        },
+        {
+          "id": "5119054000",
+          "name": "강원특별자치도 태백시 상장동"
+        },
+        {
+          "id": "5119058500",
+          "name": "강원특별자치도 태백시 문곡소도동"
+        },
+        {
+          "id": "5119059500",
+          "name": "강원특별자치도 태백시 장성동"
+        },
+        {
+          "id": "5119060500",
+          "name": "강원특별자치도 태백시 구문소동"
+        },
+        {
+          "id": "5119061500",
+          "name": "강원특별자치도 태백시 철암동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51190-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51190-S06",
+      "name": "태백시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K152",
+      "basis": "개막 행정 규모 그룹 51190(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5119051500",
+        "5119052500",
+        "5119053500",
+        "5119054000",
+        "5119058500",
+        "5119059500",
+        "5119060500",
+        "5119061500"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

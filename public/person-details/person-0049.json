@@ -694,7 +694,62 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44250-S02",
+      "name": {
+        "ko": "계룡시 공작령 직영지"
+      },
+      "holderPersonId": "K049",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4425031000",
+          "name": "충청남도 계룡시 두마면"
+        },
+        {
+          "id": "4425031500",
+          "name": "충청남도 계룡시 엄사면"
+        },
+        {
+          "id": "4425033000",
+          "name": "충청남도 계룡시 신도안면"
+        },
+        {
+          "id": "4425051000",
+          "name": "충청남도 계룡시 금암동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44250-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44250-S02",
+      "name": "계룡시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K049",
+      "basis": "개막 행정 규모 그룹 44250(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4425031000",
+        "4425031500",
+        "4425033000",
+        "4425051000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

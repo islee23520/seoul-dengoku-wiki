@@ -2,10 +2,10 @@
   "id": "person-0779",
   "name": "김아호",
   "title": "공방 전령",
-  "position": "공방 전령",
+  "position": "공방 전령 · 단양군 영주",
   "characterId": "K779",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "호송·인명 장부 관리",
   "gender": "남성",
   "stage": "S4",
@@ -723,7 +723,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-43800-S04",
+      "name": {
+        "ko": "단양군 공작령 직영지"
+      },
+      "holderPersonId": "K779",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4380025000",
+          "name": "충청북도 단양군 단양읍"
+        },
+        {
+          "id": "4380025300",
+          "name": "충청북도 단양군 매포읍"
+        },
+        {
+          "id": "4380031000",
+          "name": "충청북도 단양군 대강면"
+        },
+        {
+          "id": "4380032000",
+          "name": "충청북도 단양군 가곡면"
+        },
+        {
+          "id": "4380033000",
+          "name": "충청북도 단양군 영춘면"
+        },
+        {
+          "id": "4380034000",
+          "name": "충청북도 단양군 어상천면"
+        },
+        {
+          "id": "4380035000",
+          "name": "충청북도 단양군 적성면"
+        },
+        {
+          "id": "4380036000",
+          "name": "충청북도 단양군 단성면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-43800-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-43800-S04",
+      "name": "단양군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K779",
+      "basis": "개막 행정 규모 그룹 43800(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4380025000",
+        "4380025300",
+        "4380031000",
+        "4380032000",
+        "4380033000",
+        "4380034000",
+        "4380035000",
+        "4380036000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

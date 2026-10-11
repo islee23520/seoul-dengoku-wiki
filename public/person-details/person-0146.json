@@ -2,10 +2,10 @@
   "id": "person-0146",
   "name": "강예준",
   "title": "인준 심사관",
-  "position": "인준 심사관",
+  "position": "인준 심사관 · 연천군 영주",
   "characterId": "K145",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "유언장 필적 대조·인준 심사",
   "gender": "남성",
   "stage": "S1",
@@ -587,7 +587,92 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41800-S06",
+      "name": {
+        "ko": "연천군 공작령 직영지"
+      },
+      "holderPersonId": "K145",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "4180025000",
+          "name": "경기도 연천군 연천읍"
+        },
+        {
+          "id": "4180025300",
+          "name": "경기도 연천군 전곡읍"
+        },
+        {
+          "id": "4180031000",
+          "name": "경기도 연천군 군남면"
+        },
+        {
+          "id": "4180032000",
+          "name": "경기도 연천군 청산면"
+        },
+        {
+          "id": "4180033000",
+          "name": "경기도 연천군 백학면"
+        },
+        {
+          "id": "4180034000",
+          "name": "경기도 연천군 미산면"
+        },
+        {
+          "id": "4180035000",
+          "name": "경기도 연천군 왕징면"
+        },
+        {
+          "id": "4180036000",
+          "name": "경기도 연천군 신서면"
+        },
+        {
+          "id": "4180037000",
+          "name": "경기도 연천군 중면"
+        },
+        {
+          "id": "4180038000",
+          "name": "경기도 연천군 장남면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41800-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41800-S06",
+      "name": "연천군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K145",
+      "basis": "개막 행정 규모 그룹 41800(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "4180025000",
+        "4180025300",
+        "4180031000",
+        "4180032000",
+        "4180033000",
+        "4180034000",
+        "4180035000",
+        "4180036000",
+        "4180037000",
+        "4180038000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

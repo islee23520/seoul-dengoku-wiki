@@ -2,10 +2,10 @@
   "id": "person-0038",
   "name": "허다온",
   "title": "천왕기지 차륜 정비사",
-  "position": "천왕기지 차륜 정비사",
+  "position": "대전 대덕구 영주",
   "characterId": "K038",
-  "rank": "조합원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "차륜 정비",
   "gender": "남성",
   "stage": "S2",
@@ -712,7 +712,38 @@
       ],
       "geometrySource": "outside-admin-units.units",
       "territorialScale": "duchy",
-      "formalTitleRank": null
+      "formalTitleRank": null,
+      "titleId": "title:duchy-gu-30230-polity-daejeon"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-30230-polity-daejeon",
+      "name": "대덕구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K038",
+      "basis": "기존 보유 권리 결속: holding:daejeon-daedeok",
+      "stateId": "polity:daejeon",
+      "parentTitleId": "title:kingdom-daejeon",
+      "jurisdictionRefs": [
+        "3023051000",
+        "3023052000",
+        "3023052500",
+        "3023053300",
+        "3023054300",
+        "3023054600",
+        "3023055000",
+        "3023056000",
+        "3023057000",
+        "3023058000",
+        "3023060000",
+        "3023061000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-daejeon",
+        "name": "대전선",
+        "holderPersonId": "K1008"
+      }
     }
   ],
   "unit": {

@@ -2,10 +2,10 @@
   "id": "person-0459",
   "name": "우경민",
   "title": "부품 물류상",
-  "position": "부품 물류상",
+  "position": "부품 물류상 · 보은군 영주",
   "characterId": "K459",
-  "rank": "교사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "차륜·펌프 정비",
   "gender": "남성",
   "stage": "S4",
@@ -750,7 +750,97 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-43720-S04",
+      "name": {
+        "ko": "보은군 공작령 직영지"
+      },
+      "holderPersonId": "K459",
+      "directLiegePersonId": "K423",
+      "stateId": "S04",
+      "adminRefs": [
+        {
+          "id": "4372025000",
+          "name": "충청북도 보은군 보은읍"
+        },
+        {
+          "id": "4372031500",
+          "name": "충청북도 보은군 속리산면"
+        },
+        {
+          "id": "4372032500",
+          "name": "충청북도 보은군 장안면"
+        },
+        {
+          "id": "4372033000",
+          "name": "충청북도 보은군 마로면"
+        },
+        {
+          "id": "4372034000",
+          "name": "충청북도 보은군 탄부면"
+        },
+        {
+          "id": "4372035000",
+          "name": "충청북도 보은군 삼승면"
+        },
+        {
+          "id": "4372036000",
+          "name": "충청북도 보은군 수한면"
+        },
+        {
+          "id": "4372037000",
+          "name": "충청북도 보은군 회남면"
+        },
+        {
+          "id": "4372038500",
+          "name": "충청북도 보은군 회인면"
+        },
+        {
+          "id": "4372039000",
+          "name": "충청북도 보은군 내북면"
+        },
+        {
+          "id": "4372040000",
+          "name": "충청북도 보은군 산외면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-43720-S04",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-43720-S04",
+      "name": "보은군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K459",
+      "basis": "개막 행정 규모 그룹 43720(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S04",
+      "parentTitleId": "title:kingdom-s04",
+      "jurisdictionRefs": [
+        "4372025000",
+        "4372031500",
+        "4372032500",
+        "4372033000",
+        "4372034000",
+        "4372035000",
+        "4372036000",
+        "4372037000",
+        "4372038500",
+        "4372039000",
+        "4372040000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "holderPersonId": "K423"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

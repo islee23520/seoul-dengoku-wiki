@@ -14,8 +14,8 @@ test('mixed units project every island independently without assigning their who
   const bukdo = projected.assignments.find(row => row.unitId === '2872031000')
   assert.equal(bukdo.authority, null)
   assert.equal(bukdo.status, 'partial')
-  assert.deepEqual(bukdo.components.filter(part => part.authority).map(part => part.name).sort(), ['모도', '시도', '신도'])
-  assert.equal(bukdo.components.find(part => part.name === '장봉도').authority, null)
+  assert.ok(bukdo.components.every(part => part.authority?.stateId === 'S06'))
+  assert.equal(bukdo.components.find(part => part.name === '장봉도').authority.stateId, 'S06')
   for (const row of projected.assignments.filter(row => row.components)) {
     assert.ok(!row.vassal && !row.station && !row.holderPersonId && !row.directLiegePersonId && !row.formalTitle)
     assert.deepEqual(row.components.map(part => part.path).join(' '), geometry.units.find(unit => unit.id === row.unitId).path)
@@ -24,6 +24,19 @@ test('mixed units project every island independently without assigning their who
       assert.ok(!part.vassal && !part.station && !part.holderPersonId && !part.directLiegePersonId && !part.formalTitle)
     }
   }
+})
+
+test('owner opening decision changes control without rewriting island geography and requires approval', () => {
+  const projected = projectOutsideOccupation(control, geometry, islands)
+  const parts = projected.assignments.flatMap(row => row.components ?? [])
+  assert.equal(parts.length, 108)
+  assert.ok(parts.every(part => part.authority?.stateId === 'S06' && part.openingApprovalRefs.length > 0))
+  const observation = islands.units.flatMap(unit => unit.components).find(part => part.name === '백령도')
+  assert.equal(observation.connection, 'no-mainland-bridge')
+  assert.equal(observation.authority, null)
+  const invalid = structuredClone(islands)
+  invalid.openingDecision.anonymousComponentApprovalRef = ''
+  assert.throws(() => projectOutsideOccupation(control, geometry, invalid), /E_ISLAND_DECISION_APPROVAL/)
 })
 
 test('whole unit takeover, missing components, stale geometry and unbridged grants are rejected', () => {

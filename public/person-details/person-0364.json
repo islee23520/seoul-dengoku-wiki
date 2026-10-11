@@ -2,10 +2,10 @@
   "id": "person-0364",
   "name": "원다결",
   "title": "관문 통과 시장 거점장",
-  "position": "양군 관문 통과 시장 거점장",
+  "position": "양군 관문 통과 시장 거점장 · 광진구 영주",
   "characterId": "K363",
-  "rank": "공동실무원",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "시장 시세·통과 품목 게시·출고 확인",
   "gender": "남성",
   "stage": "S2",
@@ -619,7 +619,117 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-gu-11215-S14",
+      "name": {
+        "ko": "광진구 공작령 직영지"
+      },
+      "holderPersonId": "K363",
+      "directLiegePersonId": "K144",
+      "stateId": "S14",
+      "adminRefs": [
+        {
+          "id": "region:1121571000",
+          "name": "화양동"
+        },
+        {
+          "id": "region:1121573000",
+          "name": "군자동"
+        },
+        {
+          "id": "region:1121574000",
+          "name": "중곡1동"
+        },
+        {
+          "id": "region:1121575000",
+          "name": "중곡2동"
+        },
+        {
+          "id": "region:1121576000",
+          "name": "중곡3동"
+        },
+        {
+          "id": "region:1121577000",
+          "name": "중곡4동"
+        },
+        {
+          "id": "region:1121578000",
+          "name": "능동"
+        },
+        {
+          "id": "region:1121581000",
+          "name": "광장동"
+        },
+        {
+          "id": "region:1121582000",
+          "name": "자양1동"
+        },
+        {
+          "id": "region:1121583000",
+          "name": "자양2동"
+        },
+        {
+          "id": "region:1121584000",
+          "name": "자양3동"
+        },
+        {
+          "id": "region:1121584700",
+          "name": "자양4동"
+        },
+        {
+          "id": "region:1121585000",
+          "name": "구의1동"
+        },
+        {
+          "id": "region:1121586000",
+          "name": "구의2동"
+        },
+        {
+          "id": "region:1121587000",
+          "name": "구의3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-gu-11215-S14",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-gu-11215-S14",
+      "name": "광진구 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K363",
+      "basis": "개막 행정 규모 그룹 gu:11215(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S14",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "region:1121571000",
+        "region:1121573000",
+        "region:1121574000",
+        "region:1121575000",
+        "region:1121576000",
+        "region:1121577000",
+        "region:1121578000",
+        "region:1121581000",
+        "region:1121582000",
+        "region:1121583000",
+        "region:1121584000",
+        "region:1121584700",
+        "region:1121585000",
+        "region:1121586000",
+        "region:1121587000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

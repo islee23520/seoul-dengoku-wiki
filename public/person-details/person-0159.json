@@ -749,7 +749,87 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51750-S06",
+      "name": {
+        "ko": "영월군 공작령 직영지"
+      },
+      "holderPersonId": "K158",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5175025000",
+          "name": "강원특별자치도 영월군 영월읍"
+        },
+        {
+          "id": "5175025300",
+          "name": "강원특별자치도 영월군 상동읍"
+        },
+        {
+          "id": "5175031200",
+          "name": "강원특별자치도 영월군 산솔면"
+        },
+        {
+          "id": "5175032500",
+          "name": "강원특별자치도 영월군 김삿갓면"
+        },
+        {
+          "id": "5175033000",
+          "name": "강원특별자치도 영월군 북면"
+        },
+        {
+          "id": "5175034000",
+          "name": "강원특별자치도 영월군 남면"
+        },
+        {
+          "id": "5175035500",
+          "name": "강원특별자치도 영월군 한반도면"
+        },
+        {
+          "id": "5175036000",
+          "name": "강원특별자치도 영월군 주천면"
+        },
+        {
+          "id": "5175038000",
+          "name": "강원특별자치도 영월군 무릉도원면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51750-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51750-S06",
+      "name": "영월군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K158",
+      "basis": "개막 행정 규모 그룹 51750(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5175025000",
+        "5175025300",
+        "5175031200",
+        "5175032500",
+        "5175033000",
+        "5175034000",
+        "5175035500",
+        "5175036000",
+        "5175038000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

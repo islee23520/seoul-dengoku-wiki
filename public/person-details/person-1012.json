@@ -2,10 +2,10 @@
   "id": "person-1012",
   "name": "팜반득",
   "title": "야간 정비 조장",
-  "position": "차단문 안쪽 야간 정비 조장",
+  "position": "차단문 안쪽 야간 정비 조장 · 예산군 영주",
   "characterId": "K1012",
-  "rank": "없음",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "정비사",
   "gender": "남성",
   "stage": "S4",
@@ -729,7 +729,102 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-44810-S02",
+      "name": {
+        "ko": "예산군 공작령 직영지"
+      },
+      "holderPersonId": "K1012",
+      "directLiegePersonId": "K029",
+      "stateId": "S02",
+      "adminRefs": [
+        {
+          "id": "4481025000",
+          "name": "충청남도 예산군 예산읍"
+        },
+        {
+          "id": "4481025300",
+          "name": "충청남도 예산군 삽교읍"
+        },
+        {
+          "id": "4481031000",
+          "name": "충청남도 예산군 대술면"
+        },
+        {
+          "id": "4481032000",
+          "name": "충청남도 예산군 신양면"
+        },
+        {
+          "id": "4481033000",
+          "name": "충청남도 예산군 광시면"
+        },
+        {
+          "id": "4481034000",
+          "name": "충청남도 예산군 대흥면"
+        },
+        {
+          "id": "4481035000",
+          "name": "충청남도 예산군 응봉면"
+        },
+        {
+          "id": "4481036000",
+          "name": "충청남도 예산군 덕산면"
+        },
+        {
+          "id": "4481037000",
+          "name": "충청남도 예산군 봉산면"
+        },
+        {
+          "id": "4481038000",
+          "name": "충청남도 예산군 고덕면"
+        },
+        {
+          "id": "4481039000",
+          "name": "충청남도 예산군 신암면"
+        },
+        {
+          "id": "4481040000",
+          "name": "충청남도 예산군 오가면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-44810-S02",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-44810-S02",
+      "name": "예산군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K1012",
+      "basis": "개막 행정 규모 그룹 44810(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S02",
+      "parentTitleId": "title:kingdom-s02",
+      "jurisdictionRefs": [
+        "4481025000",
+        "4481025300",
+        "4481031000",
+        "4481032000",
+        "4481033000",
+        "4481034000",
+        "4481035000",
+        "4481036000",
+        "4481037000",
+        "4481038000",
+        "4481039000",
+        "4481040000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "holderPersonId": "K029"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 2,

@@ -2,10 +2,10 @@
   "id": "person-0157",
   "name": "차세온",
   "title": "유언 필적 기록관",
-  "position": "유언 필적 기록관",
+  "position": "유언 필적 기록관 · 홍천군 영주",
   "characterId": "K156",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "유언 필적·증언 대조 기록",
   "gender": "여성",
   "stage": "S2",
@@ -728,7 +728,92 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-51720-S06",
+      "name": {
+        "ko": "홍천군 공작령 직영지"
+      },
+      "holderPersonId": "K156",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "5172025000",
+          "name": "강원특별자치도 홍천군 홍천읍"
+        },
+        {
+          "id": "5172031000",
+          "name": "강원특별자치도 홍천군 화촌면"
+        },
+        {
+          "id": "5172032000",
+          "name": "강원특별자치도 홍천군 두촌면"
+        },
+        {
+          "id": "5172033000",
+          "name": "강원특별자치도 홍천군 내촌면"
+        },
+        {
+          "id": "5172034000",
+          "name": "강원특별자치도 홍천군 서석면"
+        },
+        {
+          "id": "5172035200",
+          "name": "강원특별자치도 홍천군 영귀미면"
+        },
+        {
+          "id": "5172036000",
+          "name": "강원특별자치도 홍천군 남면"
+        },
+        {
+          "id": "5172037000",
+          "name": "강원특별자치도 홍천군 서면"
+        },
+        {
+          "id": "5172038000",
+          "name": "강원특별자치도 홍천군 북방면"
+        },
+        {
+          "id": "5172039000",
+          "name": "강원특별자치도 홍천군 내면"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-51720-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-51720-S06",
+      "name": "홍천군 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K156",
+      "basis": "개막 행정 규모 그룹 51720(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "5172025000",
+        "5172031000",
+        "5172032000",
+        "5172033000",
+        "5172034000",
+        "5172035200",
+        "5172036000",
+        "5172037000",
+        "5172038000",
+        "5172039000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

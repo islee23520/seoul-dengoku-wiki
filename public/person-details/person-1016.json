@@ -2,10 +2,10 @@
   "id": "person-1016",
   "name": "최일석",
   "title": "동원 명부 서기",
-  "position": "동원 명부 서기",
+  "position": "동원 명부 서기 · 양주시 영주",
   "characterId": "K1016",
-  "rank": "없음",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "순찰대 (주). 기록관 (부, 명부)",
   "gender": "남성",
   "stage": "S4",
@@ -715,7 +715,102 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41630-S06",
+      "name": {
+        "ko": "양주시 공작령 직영지"
+      },
+      "holderPersonId": "K1016",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "4163025000",
+          "name": "경기도 양주시 백석읍"
+        },
+        {
+          "id": "4163031000",
+          "name": "경기도 양주시 은현면"
+        },
+        {
+          "id": "4163032000",
+          "name": "경기도 양주시 남면"
+        },
+        {
+          "id": "4163033000",
+          "name": "경기도 양주시 광적면"
+        },
+        {
+          "id": "4163034000",
+          "name": "경기도 양주시 장흥면"
+        },
+        {
+          "id": "4163051000",
+          "name": "경기도 양주시 양주1동"
+        },
+        {
+          "id": "4163052000",
+          "name": "경기도 양주시 양주2동"
+        },
+        {
+          "id": "4163053000",
+          "name": "경기도 양주시 회천1동"
+        },
+        {
+          "id": "4163054000",
+          "name": "경기도 양주시 회천2동"
+        },
+        {
+          "id": "4163055000",
+          "name": "경기도 양주시 회천3동"
+        },
+        {
+          "id": "4163057000",
+          "name": "경기도 양주시 옥정1동"
+        },
+        {
+          "id": "4163058000",
+          "name": "경기도 양주시 옥정2동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41630-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41630-S06",
+      "name": "양주시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K1016",
+      "basis": "개막 행정 규모 그룹 41630(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "4163025000",
+        "4163031000",
+        "4163032000",
+        "4163033000",
+        "4163034000",
+        "4163051000",
+        "4163052000",
+        "4163053000",
+        "4163054000",
+        "4163055000",
+        "4163057000",
+        "4163058000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 2,

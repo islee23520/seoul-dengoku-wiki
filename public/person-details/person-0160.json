@@ -2,10 +2,10 @@
   "id": "person-0160",
   "name": "마은결",
   "title": "종로 공증사본 시장 경매사",
-  "position": "종로 공증사본 시장 경매사",
+  "position": "종로 공증사본 시장 경매사 · 구리시 영주",
   "characterId": "K159",
-  "rank": "주사",
-  "commonTier": "T5",
+  "rank": "영주",
+  "commonTier": "T3",
   "occupation": "공증사본 인장 확인·경매",
   "gender": "남성",
   "stage": "S2",
@@ -639,7 +639,82 @@
       }
     ]
   },
-  "confirmedHoldings": [],
+  "confirmedHoldings": [
+    {
+      "id": "holding:opening-duchy-41310-S06",
+      "name": {
+        "ko": "구리시 공작령 직영지"
+      },
+      "holderPersonId": "K159",
+      "directLiegePersonId": "K144",
+      "stateId": "S06",
+      "adminRefs": [
+        {
+          "id": "4131051000",
+          "name": "경기도 구리시 갈매동"
+        },
+        {
+          "id": "4131052000",
+          "name": "경기도 구리시 동구동"
+        },
+        {
+          "id": "4131053000",
+          "name": "경기도 구리시 인창동"
+        },
+        {
+          "id": "4131054100",
+          "name": "경기도 구리시 교문1동"
+        },
+        {
+          "id": "4131054200",
+          "name": "경기도 구리시 교문2동"
+        },
+        {
+          "id": "4131057000",
+          "name": "경기도 구리시 수택1동"
+        },
+        {
+          "id": "4131058000",
+          "name": "경기도 구리시 수택2동"
+        },
+        {
+          "id": "4131059000",
+          "name": "경기도 구리시 수택3동"
+        }
+      ],
+      "componentRefs": [],
+      "titleId": "title:duchy-41310-S06",
+      "geometrySource": null,
+      "territorialScale": null,
+      "formalTitleRank": "duchy"
+    }
+  ],
+  "openingTitles": [
+    {
+      "id": "title:duchy-41310-S06",
+      "name": "구리시 공작령",
+      "rank": "duchy",
+      "holderPersonId": "K159",
+      "basis": "개막 행정 규모 그룹 41310(duchy) 배분 · 결정적 후보 선정",
+      "stateId": "S06",
+      "parentTitleId": "title:kingdom-s06",
+      "jurisdictionRefs": [
+        "4131051000",
+        "4131052000",
+        "4131053000",
+        "4131054100",
+        "4131054200",
+        "4131057000",
+        "4131058000",
+        "4131059000"
+      ],
+      "parentTitle": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "holderPersonId": "K144"
+      }
+    }
+  ],
   "unit": {
     "type": "수행원",
     "size": 4,

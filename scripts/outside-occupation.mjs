@@ -5,6 +5,11 @@ export function projectOutsideOccupation(control, geometry, islands) {
   assert.equal(control.schema, 'outside-control-2126.v3', 'E_OUTSIDE_CONTROL_SCHEMA')
   assert.equal(islands.schema, 'outside-island-occupation.v1', 'E_ISLAND_SCHEMA')
   assert.equal(islands.geometrySourceSha256, geometry.sourceSha256, 'E_ISLAND_SOURCE')
+  const decision = islands.openingDecision
+  if (decision) {
+    assert.deepEqual(decision.authority, { kind: 'state', stateId: 'S06', name: '대한민국정부' }, 'E_ISLAND_DECISION_AUTHORITY')
+    assert.ok(decision.namedIslandApprovalRefs?.length === 2 && decision.namedIslandApprovalRefs.every(ref => typeof ref === 'string' && ref.startsWith('owner:')) && typeof decision.anonymousComponentApprovalRef === 'string' && decision.anonymousComponentApprovalRef.startsWith('owner:'), 'E_ISLAND_DECISION_APPROVAL')
+  }
   const units = new Map(geometry.units.map(unit => [unit.id, unit]))
   const splits = new Map(islands.units.map(unit => [unit.unitId, unit]))
   assert.equal(splits.size, islands.units.length, 'E_ISLAND_DUPLICATE_UNIT')
@@ -35,7 +40,8 @@ export function projectOutsideOccupation(control, geometry, islands) {
         assert.equal(part.authority, null, 'E_ISLAND_UNASSIGNED')
         assert.ok(!part.vassal && !part.station, 'E_ISLAND_UNASSIGNED_GRANT')
       }
-      return { ...part, id: `${row.unitId}:${part.componentIndex}`, path: paths[part.componentIndex], status: part.authority ? 'held' : 'unassigned' }
+      const authority = decision?.authority ?? part.authority
+      return { ...part, authority, ...(decision ? { openingApprovalRefs: part.name ? decision.namedIslandApprovalRefs : [decision.anonymousComponentApprovalRef] } : {}), id: `${row.unitId}:${part.componentIndex}`, path: paths[part.componentIndex], status: authority ? 'held' : 'unassigned' }
     })
     return { ...row, status: components.some(part => part.authority) ? 'partial' : 'unassigned', components }
   })

@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
-import { createElement } from 'react'
+import { act, createElement } from 'react'
+import { createRoot } from 'react-dom/client'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { JSDOM } from 'jsdom'
@@ -56,3 +57,143 @@ for (const id of ['holding:yangcheon', 'holding:saetgang-concourse']) {
     } finally { dom.window.close() }
   })
 }
+
+const baseHolding = JSON.parse(readFileSync(new URL('../lore/relations/personal-holdings.json', import.meta.url), 'utf8')).holdings.find(row => row.id === 'holding:yangcheon')
+
+const componentOnlyHolding = {
+  id: 'fixture:component-islands',
+  name: { ko: '서울 밖 도서 구성 영지' },
+  holderPersonId: baseHolding.holderPersonId,
+  directLiegePersonId: baseHolding.directLiegePersonId,
+  stateId: baseHolding.stateId,
+  territorialScale: null,
+  formalTitleRank: null,
+  adminRefs: [],
+  componentRefs: [
+    { unitId: 'unit:test-a', componentIndex: 0 },
+    { unitId: 'unit:test-b', componentIndex: 3, name: '테스트 구성 명칭' },
+  ],
+}
+
+test('component-only holding renders counted components with real or unitId:index labels', () => {
+  const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(HoldingSelectionPanel, { holding: componentOnlyHolding, openingYear: ledger.openingYear, selectedRegionId: 'unit:test-a', onSelectRegion() {} }))))
+  try {
+    const document = dom.window.document
+    assert.equal(document.querySelector('[data-selected-holding]')?.getAttribute('data-selected-holding'), componentOnlyHolding.id)
+    assert.equal(document.querySelector('[role="alert"]'), null)
+    const text = document.body.textContent
+    assert.match(text, /2개 구성 요소/u)
+    assert.ok(text.includes('보유 구성 요소'))
+    assert.ok(!text.includes('보유 행정구역'))
+    const buttons = [...document.querySelectorAll('.campaign-holding-regions button')]
+    assert.deepEqual(buttons.map(node => node.textContent), ['unit:test-a:0', '테스트 구성 명칭'])
+    assert.deepEqual(buttons.map(node => node.getAttribute('aria-pressed')), ['true', 'false'])
+  } finally { dom.window.close() }
+})
+
+test('component buttons forward unitId to onSelectRegion', async () => {
+  const dom = new JSDOM('<!doctype html><html><body><div id="root"></div></body></html>', { url: 'https://holding-panel.test/' })
+  globalThis.window = dom.window
+  globalThis.document = dom.window.document
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const calls = []
+  const root = createRoot(dom.window.document.getElementById('root'))
+  try {
+    await act(async () => {
+      root.render(createElement(MemoryRouter, null,
+        createElement(HoldingSelectionPanel, { holding: componentOnlyHolding, openingYear: ledger.openingYear, selectedRegionId: '', onSelectRegion: id => calls.push(id) })))
+    })
+    const buttons = [...dom.window.document.querySelectorAll('.campaign-holding-regions button')]
+    assert.equal(buttons.length, 2)
+    await act(async () => { buttons[0].dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true })) })
+    assert.deepEqual(calls, ['unit:test-a'])
+    await act(async () => { buttons[1].dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true })) })
+    assert.deepEqual(calls, ['unit:test-a', 'unit:test-b'])
+  } finally {
+    await act(async () => { root.unmount() })
+    dom.window.close()
+    delete globalThis.window
+    delete globalThis.document
+    delete globalThis.IS_REACT_ACT_ENVIRONMENT
+  }
+})
+
+test('component selection preserves the exact index within one administrative unit', async () => {
+  const dom = new JSDOM('<!doctype html><html><body><div id="root"></div></body></html>', { url: 'https://holding-panel.test/' })
+  globalThis.window = dom.window
+  globalThis.document = dom.window.document
+  globalThis.IS_REACT_ACT_ENVIRONMENT = true
+  const calls = []
+  const root = createRoot(dom.window.document.getElementById('root'))
+  const holding = { ...componentOnlyHolding, componentRefs: [{ unitId: 'unit:test-a', componentIndex: 0 }, { unitId: 'unit:test-a', componentIndex: 3 }] }
+  try {
+    await act(async () => {
+      root.render(createElement(MemoryRouter, null, createElement(HoldingSelectionPanel, {
+        holding, openingYear: ledger.openingYear, selectedRegionId: 'unit:test-a', selectedComponentIndex: 3,
+        onSelectRegion() { assert.fail('component selection must preserve the index') },
+        onSelectComponent: (unitId, index) => calls.push([unitId, index]),
+      })))
+    })
+    const buttons = [...dom.window.document.querySelectorAll('.campaign-holding-regions button')]
+    assert.deepEqual(buttons.map(button => button.getAttribute('aria-pressed')), ['false', 'true'])
+    await act(async () => { buttons[1].dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true })) })
+    assert.deepEqual(calls, [['unit:test-a', 3]])
+  } finally {
+    await act(async () => { root.unmount() })
+    dom.window.close()
+    delete globalThis.window
+    delete globalThis.document
+    delete globalThis.IS_REACT_ACT_ENVIRONMENT
+  }
+})
+
+const fixtureTitles = [
+  { id: 'title:fixture-duke', name: '테스트 공작', rank: '공작' },
+  { id: 'title:fixture-count', name: '테스트 백작', rank: '백작', holderPersonId: baseHolding.holderPersonId, stateId: baseHolding.stateId, parentTitleId: 'title:fixture-duke', jurisdictionRefs: ['unit:test-a'] },
+]
+const titledHolding = { ...componentOnlyHolding, id: 'fixture:titled', titleId: 'title:fixture-count' }
+
+test('titleId resolves through optional titles prop showing name, rank and parent', () => {
+  const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(HoldingSelectionPanel, { holding: titledHolding, openingYear: ledger.openingYear, selectedRegionId: '', onSelectRegion() {}, titles: fixtureTitles }))))
+  try {
+    const document = dom.window.document
+    assert.equal(document.querySelector('[role="alert"]'), null)
+    const dts = [...document.querySelectorAll('dt')].map(node => node.textContent)
+    assert.ok(dts.includes('작위'))
+    assert.ok(dts.includes('상위 작위'))
+    const text = document.body.textContent
+    assert.ok(text.includes('테스트 백작 · 백작'))
+    assert.ok(text.includes('테스트 공작'))
+  } finally { dom.window.close() }
+})
+
+test('titleId without titles prop degrades silently to the legacy layout', () => {
+  const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(HoldingSelectionPanel, { holding: titledHolding, openingYear: ledger.openingYear, selectedRegionId: '', onSelectRegion() {} }))))
+  try {
+    const document = dom.window.document
+    assert.equal(document.querySelector('[role="alert"]'), null)
+    const dts = [...document.querySelectorAll('dt')].map(node => node.textContent)
+    assert.ok(!dts.includes('작위'))
+    assert.ok(!dts.includes('상위 작위'))
+    assert.ok(!document.body.textContent.includes('테스트 백작'))
+  } finally { dom.window.close() }
+})
+
+test('existing ledger holdings without any metadata keep the 행정구역 labels and gain no title rows', () => {
+  const dom = new JSDOM(renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(HoldingSelectionPanel, { holding: baseHolding, openingYear: ledger.openingYear, selectedRegionId: '', onSelectRegion() {} }))))
+  try {
+    const document = dom.window.document
+    assert.equal(document.querySelector('[role="alert"]'), null)
+    const text = document.body.textContent
+    assert.ok(text.includes(`${baseHolding.adminRefs.length}개 행정구역`))
+    assert.ok(text.includes('보유 행정구역'))
+    assert.ok(!text.includes('개 동'))
+    assert.ok(!text.includes('보유 구성 요소'))
+    assert.ok(!text.includes('작위 등급'))
+    assert.ok(!text.includes('상위 작위'))
+  } finally { dom.window.close() }
+})
