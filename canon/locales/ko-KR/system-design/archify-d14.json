@@ -13,6 +13,7 @@
     "blockIds": [
       "archify.b1",
       "archify.b2",
+      "archify.current-model",
       "archify.b3",
       "archify.b4",
       "archify.b5",
@@ -53,6 +54,16 @@
         {
           "kind": "text",
           "text": "이 페이지는 지식·교육·기술 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.current-model",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-12 현재 인물 계약: 통솔·전략·교섭·운영·통찰·학습·기량·체력은 기본 정수 0–20, 최종 정수 0–100이다. 기본 10은 해당 분야 숙련자이며 특성·아이템·상태를 모두 적용한 최종값은 절대 100을 넘지 않는다. 서사 근거가 있는 개막 효과는 최종 20 초과를 허용한다. 행동 숙련은 역량과 별도 0–99.9이며 기량과 중복 계상하지 않는다. 특성은 수행·행동·스트레스·관계에 영향을 주고 사건·행동으로 획득한다. 신체는 왼팔·오른팔·왼다리·오른다리·머리·몸통의 손상 정도와 기능 상태, 별도 질병 진행을 기록하며 전투·역병이 같은 신체 기록을 사용한다. 판정식·효과 합성·숙련 성장식·개별 효과량·특성 목록·손상 및 기능 어휘는 미확정이다. 아래 GURPS CP·ST/DX/IQ/HT·HP/FP·비용표와 2026-10-08 대항 d10·0–12 기량·특성 범주·검증 사례는 명시적 과거/연구 판본에만 적용하며 새 profile의 필수 입력·산식·구현 증거가 아니다. 자동 환산과 미확인 값의 0 채움은 없다. 공개 profile은 승인된 공개 필드만 선택하고 비공개 모티브와 배정 원장을 포함하지 않는다."
         }
       ]
     },
@@ -100,7 +111,7 @@
       "kind": "codeFence",
       "fence": "```",
       "info": "text",
-      "text": "F-unused [] reserved-consumed\nF-preserve [] progressAfter=progressBefore; skillAfter=skillBefore on interruption/inheritance\nREF-EAH-COST [] first CP=1 at offsets E0/A-1/H-2; next offset +1 costs2; next +2 costs4; subsequent +1 adds4\nF-growth [proposal-held] null\nF-qualification [proposal-held] null\nD14-F1 [후보·승인 전] practiceAfter=practiceBefore+sum(unique actualPractice dt*attention*teachingFactor); ratingCandidate=reviewRubric(practiceEvidence,performanceEvidence); no automatic level or CP purchase\nD14-F2 [후보·승인 전] teacherDeath: unused=reserved-consumed; requestRelease=unused; consumed and earned progress unchanged; other interruption policies require their own contract\n"
+      "text": "F-unused [] reserved-consumed\nF-preserve [] progressAfter=progressBefore; skillAfter=skillBefore on interruption/inheritance\nREF-EAH-COST [과거·연구 참조 전용] first CP=1 at offsets E0/A-1/H-2; next offset +1 costs2; next +2 costs4; subsequent +1 adds4\nF-growth [현재 독립 숙련 성장식 미정·과거 CP 환산 적용 금지] null\nF-qualification [proposal-held] null\nD14-F1 [후보·승인 전] practiceAfter=practiceBefore+sum(unique actualPractice dt*attention*teachingFactor); ratingCandidate=reviewRubric(practiceEvidence,performanceEvidence); no automatic level or CP purchase\nD14-F2 [후보·승인 전] teacherDeath: unused=reserved-consumed; requestRelease=unused; consumed and earned progress unchanged; other interruption policies require their own contract\n"
     },
     {
       "id": "archify.b8",
@@ -143,7 +154,7 @@
         [
           {
             "kind": "text",
-            "text": "completedStages,progress,proficiency,unspentCP,reserved,consumed — safe nonnegative integer (completed-stage-count / skill-specific-evidence-unit / skill-level / CP / fixture-resource-unit)"
+            "text": "[과거 필드·검증 fixture 전용; 현재 숙련 0–99.9와 별도] completedStages,progress,proficiency,unspentCP,reserved,consumed — safe nonnegative integer (completed-stage-count / skill-specific-evidence-unit / skill-level / CP / fixture-resource-unit)"
           }
         ],
         [
@@ -155,7 +166,7 @@
         [
           {
             "kind": "text",
-            "text": "studyDuration,cost,practiceToCPRate,teacherEffect,recognitionCriteria,qualificationProcedure — null or separately approved value envelope (held-by-decision)"
+            "text": "[과거 필드·검증 fixture 전용; 현재 숙련 0–99.9와 별도] studyDuration,cost,practiceToCPRate,teacherEffect,recognitionCriteria,qualificationProcedure — null or separately approved value envelope (held-by-decision)"
           }
         ]
       ]
@@ -166,7 +177,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "자료 소유자는 [object Object], 유지 계약은 F-unused·F-preserve다. 상태 소유 경계는 access,understanding,practice intervals,earned progress,teaching factor,qualification,teacher/tool/place refs,reserved/consumed. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+          "text": "자료 소유자는 D14의 접근·이해·연습 근거·진척 원장과 D01의 숙련 승인이다. F-unused·F-preserve는 실제 예약 단위와 획득 진척·소비 보존 계약이다. 현재 행동 숙련은 별도 0–99.9이며 성장 산식은 미정이다. CP 구매·지출은 과거 계약에만 한정한다. 동의·권한·사건 ID·원천 개정·현재 예약과 중단/재개 경계는 보존하며 교사 사망 이외의 해제 조건은 승인 전 보류한다."
         }
       ]
     },
@@ -235,25 +246,25 @@
         [
           {
             "kind": "text",
-            "text": "approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "9 logical/8 visual categories and visible allowlist tokens, no complete closed schema/actual assignments"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] 9 logical/8 visual categories and visible allowlist tokens, no complete closed schema/actual assignments"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
           }
         ]
       ]
@@ -264,7 +275,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D14-practice-evidence-assessment(TOOL/tools/mechanisms/original-trpg/practice-evidence-assessment.mjs, TOOL/tools/mechanisms/original-trpg/practice-evidence-assessment.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+          "text": "현재 범위 한계: 아래 과거 모듈과 검증 fixture는 당시 계약의 증거다. 현재 8역량·0–99.9 숙련·여섯 신체 부위 체계의 구현 완료를 뜻하지 않는다. 판정·성장·피해·효과 산식 및 실제 인물 배정은 미확정이며 원천·승인·사건·보존 경계만 구분한다."
         }
       ]
     },
@@ -579,7 +590,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d14.b9.dataOwner.growthL​edger",
-          "\"D14 with D01 explicit spend consumer\""
+          "\"D14 evidence and growth ledger; current numeric growth unresolved; D01 proficiency authority; explicit CP spend belongs to historical contract only\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -644,7 +655,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[0].owner.g​rowthLedger",
-          "\"D14 with D01 explicit spend consumer\""
+          "\"D14 evidence and growth ledger; current numeric growth unresolved; D01 proficiency authority; explicit CP spend belongs to historical contract only\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -749,7 +760,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[0].write[4​]",
-          "\"D01 explicit-spend request only, not competing proficiency writer\""
+          "\"D01 proficiency review request only; historical explicit CP spend is not current growth policy\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -774,7 +785,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[0].snapsho​t.crossWriter",
-          "\"D03/D05 owns actual release; D01 owns skill spend; cross-domain atomic integration deferred\""
+          "\"D03/D05 owns actual release; D01 owns proficiency; current growth and cross-domain atomic integration remain unresolved; CP spend is historical only\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -814,7 +825,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[1].owner.g​rowthLedger",
-          "\"D14 with D01 explicit spend consumer\""
+          "\"D14 evidence and growth ledger; current numeric growth unresolved; D01 proficiency authority; explicit CP spend belongs to historical contract only\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -919,7 +930,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[1].write[4​]",
-          "\"D01 explicit-spend request only, not competing proficiency writer\""
+          "\"D01 proficiency review request only; historical explicit CP spend is not current growth policy\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -944,7 +955,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[1].snapsho​t.crossWriter",
-          "\"D03/D05 owns actual release; D01 owns skill spend; cross-domain atomic integration deferred\""
+          "\"D03/D05 owns actual release; D01 owns proficiency; current growth and cross-domain atomic integration remain unresolved; CP spend is historical only\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -952,172 +963,172 @@
           "\"atomic domain result plus event receipt; resource ledger release request identified by same cause, not second independent debit\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].name",
           "\"completedStages,progres​s,proficiency,unspentCP,​reserved,consumed\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].type",
           "\"safe nonnegative integer\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].unit",
           "\"completed-stage-count / skill-specific-evidence-​unit / skill-level / CP / fixture-resource-unit\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].range",
           "\"consumed<=reserved; fixture values are not adopted policy\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.k​nowledge",
           "\"D14\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.p​roficiency",
           "\"D01\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.g​rowthLedger",
-          "\"D14 with D01 explicit spend consumer\""
+          "\"D14 evidence and growth ledger; current numeric growth unresolved; D01 proficiency authority; explicit CP spend belongs to historical contract only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.r​eservations",
           "\"D03/D05 exclusive resource ledger\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.h​ealth",
           "\"D02 read-only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.i​nstitution",
           "\"D09 read-only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.a​ccessRights",
           "\"D11 read-only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.m​ediaOwnership",
           "\"D13 read-only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].owner.c​lock",
           "\"D18 read-only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[0]​",
           "\"D18 event identity/clock/rulesVers​ion\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[1]​",
           "\"D01 person capability revision\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[2]​",
           "\"D02 availability and injury status\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[3]​",
           "\"D03 action authority and consent\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[4]​",
           "\"D05 resources and facility reservation receipts\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[5]​",
           "\"D07 recognition/evaluation evidence\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[6]​",
           "\"D09 certifying institution\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[7]​",
           "\"D11 read/disclosure rights\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[8]​",
           "\"D13 medium ownership\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].read[9]​",
           "\"D06 actual place/delivery\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].write[0​]",
           "\"D14 access/understanding/evi​dence/history\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].write[1​]",
           "\"D14 interrupted status\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].write[2​]",
           "\"D14 growth receipt only after exact conversion approved\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].write[3​]",
           "\"D03/D05 release-request effect, not independent inventory debit\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].write[4​]",
-          "\"D01 explicit-spend request only, not competing proficiency writer\""
+          "\"D01 proficiency review request only; historical explicit CP spend is not current growth policy\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].snapsho​t.readAt",
           "\"event evaluation on continuing world time\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].snapsho​t.conflict",
           "\"E_STALE_SNAPSHOT before effect; no stale teacher/rights/facility binding\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].snapsho​t.duplicate",
           "\"same event and exact payload replay -> same state/no second effect; changed payload -> E_EVENT_CONFLICT\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].snapsho​t.commitPoint",
           "\"atomic domain result plus event receipt; resource ledger release request identified by same cause, not second independent debit\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].snapsho​t.crossWriter",
-          "\"D03/D05 owns actual release; D01 owns skill spend; cross-domain atomic integration deferred\""
+          "\"D03/D05 owns actual release; D01 owns proficiency; current growth and cross-domain atomic integration remain unresolved; CP spend is historical only\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[2].commitP​oint",
           "\"atomic domain result plus event receipt; resource ledger release request identified by same cause, not second independent debit\""
         ],
@@ -1154,7 +1165,7 @@
         [
           "운용 — 기술별 독립 요건",
           "d14.b9.fields[3].owner.g​rowthLedger",
-          "\"D14 with D01 explicit spend consumer\""
+          "\"D14 evidence and growth ledger; current numeric growth unresolved; D01 proficiency authority; explicit CP spend belongs to historical contract only\""
         ],
         [
           "운용 — 기술별 독립 요건",
@@ -1259,7 +1270,7 @@
         [
           "운용 — 기술별 독립 요건",
           "d14.b9.fields[3].write[4​]",
-          "\"D01 explicit-spend request only, not competing proficiency writer\""
+          "\"D01 proficiency review request only; historical explicit CP spend is not current growth policy\""
         ],
         [
           "운용 — 기술별 독립 요건",
@@ -1284,7 +1295,7 @@
         [
           "운용 — 기술별 독립 요건",
           "d14.b9.fields[3].snapsho​t.crossWriter",
-          "\"D03/D05 owns actual release; D01 owns skill spend; cross-domain atomic integration deferred\""
+          "\"D03/D05 owns actual release; D01 owns proficiency; current growth and cross-domain atomic integration remain unresolved; CP spend is historical only\""
         ],
         [
           "운용 — 기술별 독립 요건",
@@ -1292,7 +1303,7 @@
           "\"atomic domain result plus event receipt; resource ledger release request identified by same cause, not second independent debit\""
         ],
         [
-          "운용 — 정확 입력·단위",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.fields[4].name",
           "\"studyDuration,cost,prac​ticeToCPRate,teacherEffe​ct,recognitionCriteria,q​ualificationProcedure\""
         ],
@@ -1324,7 +1335,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[4].owner.g​rowthLedger",
-          "\"D14 with D01 explicit spend consumer\""
+          "\"D14 evidence and growth ledger; current numeric growth unresolved; D01 proficiency authority; explicit CP spend belongs to historical contract only\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -1429,7 +1440,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[4].write[4​]",
-          "\"D01 explicit-spend request only, not competing proficiency writer\""
+          "\"D01 proficiency review request only; historical explicit CP spend is not current growth policy\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -1454,7 +1465,7 @@
         [
           "운용 — 정확 입력·단위",
           "d14.b9.fields[4].snapsho​t.crossWriter",
-          "\"D03/D05 owns actual release; D01 owns skill spend; cross-domain atomic integration deferred\""
+          "\"D03/D05 owns actual release; D01 owns proficiency; current growth and cross-domain atomic integration remain unresolved; CP spend is historical only\""
         ],
         [
           "운용 — 정확 입력·단위",
@@ -1534,7 +1545,7 @@
         [
           "운용 — 선택 결과 원자 검증",
           "d14.b9.writeSet[4]",
-          "\"D01 explicit-spend request only, not competing proficiency writer\""
+          "\"D01 proficiency review request only; no new-model CP purchase\""
         ],
         [
           "운용 — 동일 사건 내용 비교",
@@ -1559,7 +1570,7 @@
         [
           "운용 — 동일 사건 내용 비교",
           "d14.b9.snapshot.crossWri​ter",
-          "\"D03/D05 owns actual release; D01 owns skill spend; cross-domain atomic integration deferred\""
+          "\"D03/D05 owns actual release; D01 owns proficiency; current growth and cross-domain atomic integration remain unresolved; CP spend is historical only\""
         ],
         [
           "운용 — 선택 결과 원자 검증",
@@ -1622,9 +1633,9 @@
           "6"
         ],
         [
-          "운용 — 현재 판본·행위 선택",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.orderedSteps[5].s​tep",
-          "\"Only exact approved spend can consume unspent points and ask D01 to change purchased level; currently held.\""
+          "\"Current independent 0–99.9 proficiency growth is unresolved; do not derive proficiency from CP. Explicit approved spend belongs only to the historical CP contract and remains held.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -1754,7 +1765,7 @@
         [
           "보류 — 운용 경로 제외",
           "d14.b9.formulaSheet[3].r​ole",
-          "\"No time-to-CP coefficient supplied; no artificial zero progress formula\""
+          "\"Current independent skill-growth formula unresolved; historical time-to-CP is not a replacement; never fabricate zero or automatic promotion\""
         ],
         [
           "보류 — 운용 경로 제외",
@@ -1854,7 +1865,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d14.b9.clamps",
-          "\"공식별 clamp만 적용한다. 승인되지 않은 전역 제한은 추가하지 않는다.\""
+          "\"Current proficiency range is 0–99.9; base abilities integer 0–20 and effective abilities integer 0–100 hard cap. Growth rounding and effect composition remain unresolved. Historical fixture clamps retain their original scope.\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -2417,7 +2428,7 @@
           "false"
         ],
         [
-          "보류 — 운용 경로 제외",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.proposalHeld[7].f​ield",
           "\"practiceToCPRate\""
         ],
@@ -2472,7 +2483,7 @@
           "\"Separate later exact authored-value disposition; no new owner decision requested by this task\""
         ],
         [
-          "보류 — 운용 경로 제외",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b9.proposalHeld[7].i​d",
           "\"practiceToCPRate\""
         ],
@@ -4042,7 +4053,7 @@
           "\"L-cost\""
         ],
         [
-          "역사 참조 — 운용 경로 제외",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b11.sourceLedger.ref​erenceMechanics[0].algor​ithm",
           "\"E/A/H purchased levels relative to controlling attribute: first1CP at offsets0/-1/-2; then2CP +1,4CP +2, each subsequent+1 adds4CP. No VH certification.\""
         ],
@@ -4234,12 +4245,12 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d14.b11.state.guards[5]",
-          "\"Verified practice evidence alone cannot assign numeric CP while rate held\""
+          "\"[Historical CP procedure only; current independent growth unresolved] Verified practice evidence alone cannot assign numeric CP while rate held\""
         ],
         [
-          "운용 — 현재 판본·행위 선택",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d14.b11.state.guards[6]",
-          "\"Growth points do not change skill until explicit approved spend\""
+          "\"[Historical CP procedure only; current independent growth unresolved] Growth points do not change skill until explicit approved spend\""
         ],
         [
           "운용 — 현재 판본·행위 선택",
@@ -4439,7 +4450,7 @@
         [
           "운용 — 현재 판본·행위 선택",
           "d14.b11.state.transition​s[6].result",
-          "\"E_HELD_VALUE until source-classified skill definition and exact spend specification approved\""
+          "\"Historical CP spend: E_HELD_VALUE until exact definition and spend approval; current independent 0–99.9 skill growth remains unresolved and cannot use this conversion\""
         ],
         [
           "운용 — 재개 세 조건",
@@ -8230,6 +8241,271 @@
           "운용 — 현재 판본·행위 선택",
           "d14.b11.executionBoundar​y.validatorSHA256",
           "\"6dd1c6baf87805d11b55a7d​aff7d303f03bfbf2c7d81201​b9b0f5dd4686ae20f\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.fields[2].scope",
+          "\"Historical integer/CP validation fixture only; current proficiency is separate 0–99.9, no CP conversion\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.fields[4].scope",
+          "\"Historical CP-rate proposal; current independent skill-growth formula unresolved\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.formulaSheet[2].scope",
+          "\"historical/reference-only; never current skill-growth formula\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[0]",
+          "\"통솔\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[1]",
+          "\"전략\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[2]",
+          "\"교섭\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[3]",
+          "\"운영\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[4]",
+          "\"통찰\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[5]",
+          "\"학습\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[6]",
+          "\"기량\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.abilities[7]",
+          "\"체력\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.base.minimum",
+          "0"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.base.maximum",
+          "20"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.base.integer",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.base.reference",
+          "10"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.base.referenceMeaning",
+          "\"해당 분야 숙련자\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.effective.minimum",
+          "0"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.effective.maximum",
+          "100"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.effective.integer",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.effective.capAfterAllEffects",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.skillScale.minimum",
+          "0"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.skillScale.maximum",
+          "99.9"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.skillScale.separateFromAbilities",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.growthFormula",
+          "null"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.effectCompositionFormula",
+          "null"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.resolutionFormula",
+          "null"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.legacyConversion",
+          "\"none\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b9.currentModel.runtimeImplemented",
+          "false"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[0]",
+          "\"통솔\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[1]",
+          "\"전략\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[2]",
+          "\"교섭\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[3]",
+          "\"운영\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[4]",
+          "\"통찰\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[5]",
+          "\"학습\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[6]",
+          "\"기량\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.abilities[7]",
+          "\"체력\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.base.minimum",
+          "0"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.base.maximum",
+          "20"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.base.integer",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.base.reference",
+          "10"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.base.referenceMeaning",
+          "\"해당 분야 숙련자\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.effective.minimum",
+          "0"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.effective.maximum",
+          "100"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.effective.integer",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.effective.capAfterAllEffects",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.skillScale.minimum",
+          "0"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.skillScale.maximum",
+          "99.9"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.skillScale.separateFromAbilities",
+          "true"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.growthFormula",
+          "null"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.effectCompositionFormula",
+          "null"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.resolutionFormula",
+          "null"
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.legacyConversion",
+          "\"none\""
+        ],
+        [
+          "현재 승인 범위·미정 산식 구분",
+          "d14.b11.currentModel.runtimeImplemented",
+          "false"
         ]
       ]
     }
