@@ -6,7 +6,7 @@ import { resolve, dirname, relative } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
-import { BASELINE_SHA256, baselineDocuments, sha256, validateSeoulScope } from './seoul-scope.mjs'
+import { BASELINE_SHA256, STAGING_GEOGRAPHY_PATH, STAGING_GEOGRAPHY_SCHEMA, STAGING_SOURCES, baselineDocuments, sha256, validateSeoulScope } from './seoul-scope.mjs'
 
 const json = async path => JSON.parse(await readFile(path, 'utf8'))
 const hashFile = async path => {
@@ -47,7 +47,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false }) {
     for (const entry of await readdir(resolve(root, directory), { withFileTypes: true })) {
       const path = `${directory}/${entry.name}`
       if (entry.isDirectory()) await discover(path)
-      else if (entry.isFile() && !documentPaths.includes(path) && path !== 'lore/editorial/Seoul-Scope-Contract.json') documentPaths.push(path)
+      else if (entry.isFile() && !documentPaths.includes(path) && !['lore/editorial/Seoul-Scope-Contract.json', STAGING_GEOGRAPHY_PATH].includes(path)) documentPaths.push(path)
     }
   }
   for (const directory of ['lore', 'docs', 'scripts/data', 'snapshots/build-inputs', 'vendor/issued-history']) await discover(directory)
@@ -72,6 +72,25 @@ export async function loadScopeInput({ root, baselinePath, fixture = false }) {
     }
     context = { ...context, ...staged }
   } catch (error) { if (error.code !== 'ENOENT') throw error }
+  let geographyBytes
+  try { geographyBytes = await readFile(resolve(root, STAGING_GEOGRAPHY_PATH), 'utf8') }
+  catch (error) { if (error.code !== 'ENOENT') throw error }
+  if (geographyBytes !== undefined) {
+    // Metadata is excluded from authored-document discovery only through this strict
+    // consumer. Private context cannot replace independent facts or bypass this file.
+    if (context.geography !== null || context.facts !== null) return { error: inputError('/staging/geography') }
+    const sources = {}
+    for (const [kind, source] of Object.entries(STAGING_SOURCES)) {
+      const path = kind === 'membership' ? resolve(root, source.path)
+        : resolve(dirname(baselinePath), 'task-2-source-audit', source.path.split('/').at(-1))
+      const body = await readFile(path, 'utf8')
+      if (sha256(body) !== source.sha256) return { error: { ok: false, errors: [{ code: 'E_SLOT_EDITION', path: source.path, id: kind }] } }
+      sources[kind] = { ...source, body }
+    }
+    context.geography = JSON.parse(geographyBytes)
+    if (context.geography.schema !== STAGING_GEOGRAPHY_SCHEMA) return { error: inputError('/staging/geography/schema') }
+    context.facts = { schema: STAGING_GEOGRAPHY_SCHEMA, sources }
+  }
   const rights = [...holdings.holdings, ...allocation.grants].map(row => ({
     id: row.id, holderPersonId: row.holderPersonId, slotStatus: row.slotStatus ?? null,
   }))

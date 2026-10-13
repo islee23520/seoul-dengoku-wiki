@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawn } from 'node:child_process'
 import { test } from 'vitest'
-import { ENTITY_SETS, baselineDocuments, canonicalProposal, proposalHash, sha256, validateSeoulScope } from './seoul-scope.mjs'
+import { ENTITY_SETS, STAGING_GEOGRAPHY_SCHEMA, baselineDocuments, canonicalProposal, proposalHash, sha256, stagingGeography, validateSeoulScope } from './seoul-scope.mjs'
 
 const sourcePath = 'lore/current.json'
 const sealedPath = 'vendor/issued-history/old.json'
@@ -78,6 +78,113 @@ function fixture() {
   bindBatch(input)
   return input
 }
+
+function stagingFixture() {
+  const input = fixture()
+  const source = { id: 'official-membership', sha256: sha256('independent fixture membership'), role: 'statutory-electoral-membership' }
+  const membership = {
+    schema: 'seoul-constituency-membership.v1', geometryVerified: false,
+    sources: [source, { id: 'candidate', sha256: boundary.sha256, role: 'candidate-only', officialAuthority: false }],
+    editions: { electoral: { id: 'election', sourceRefs: [source.id] }, currentLaw: { id: 'law', sourceRefs: [source.id] },
+      currentCorrespondence: { id: 'current', codeAndNameSourceRef: 'candidate' } },
+    gu: [{ guId: 'gu:A', name: 'A', electoralDongCount: 1, currentCorrespondenceCount: 1, sourceRefs: [source.id] },
+      { guId: 'gu:B', name: 'B', electoralDongCount: 1, currentCorrespondenceCount: 1, sourceRefs: [source.id] }],
+    constituencies: [{ constituencyId: 'twoGu', name: 'Two gu county', jurisdictionGuRefs: ['gu:A', 'gu:B'], sourceEdition: 'election', sourceRefs: [source.id],
+      membershipConfidence: 'primary-confirmed', geometryVerified: false,
+      electoralDongs: ['A', 'B'].map((gu, i) => ({ guId: `gu:${gu}`, sourceName: `Dong ${i}`, electoralDongId: `electoral:${i}`, fragmentId: null,
+        currentCorrespondences: [{ candidateAdminId: `${i}`, candidateName: `Dong ${i}`, sourceEdition: 'current', geometryVerified: false,
+          codeConfidence: 'dated-candidate-name-code-match', membershipSourceRefs: [source.id] }] })) }],
+  }
+  // Independent two-gu/two-dong denominator; never read it back from geography slots.
+  const census = { schema: 'task-2-seoul-correspondence-census.v1',
+    guCounts: [{ gu: 'A', guId: 'gu:A', electoralVintageDongs: 1, geometryRows: 1 }, { gu: 'B', guId: 'gu:B', electoralVintageDongs: 1, geometryRows: 1 }],
+    constituencies: [{ name: 'Two gu county', correspondences: [
+      { gu: 'A', officialDong: 'Dong 0', fragmentId: null, candidateAdminIds: ['0'], candidateNames: ['Dong 0'] },
+      { gu: 'B', officialDong: 'Dong 1', fragmentId: null, candidateAdminIds: ['1'], candidateNames: ['Dong 1'] },
+    ] }],
+  }
+  const right = (id, dong, pointer) => {
+    const original = { id, adminRefs: [{ id: `region:${dong}` }] }
+    return { original, source: { path: sourcePath, pointer, recordSha256: sha256(JSON.stringify(original)) }, audit: { category: 'direct-admin-property' } }
+  }
+  const rights = { schema: 'task-2-existing-rights-audit.v1', sources: [{ path: sourcePath, sha256: sha256(sourceBody) }],
+    titles: [{ original: { id: 'title:old' } }], bindings: [{ original: { holdingId: 'old', titleId: 'old' } }],
+    holdings: [right('holding:old', '0', '/holdings/0')], grants: [right('grant:old', '1', '/grants/0')],
+    counties: [{ name: 'Two gu county', jurisdictionGuRefs: ['gu:A', 'gu:B'], dongs: [
+      { dongId: 'region:0', officialElectoralDong: 'Dong 0', fragmentId: null, holdingRefs: ['holding:old'] },
+      { dongId: 'region:1', officialElectoralDong: 'Dong 1', fragmentId: null, holdingRefs: ['grant:old'] },
+    ] }],
+  }
+  const binding = JSON.stringify(['old', 'old'])
+  input.baseline.currentEntitySets.bindings = [binding]
+  input.baseline.identitySetHashes.bindings = sha256(JSON.stringify([binding]))
+  input.current.entitySets.bindings = [binding]
+  Object.assign(input.contract.dispositions.find(row => row.set === 'bindings'), { id: binding, targetIds: [binding] })
+  input.baselineSha256 = input.contract.baselineSha256 = sha256(JSON.stringify(input.baseline))
+  input.facts = { schema: STAGING_GEOGRAPHY_SCHEMA, sources: Object.fromEntries(Object.entries({ membership, census, rights }).map(([kind, data]) => {
+    const body = JSON.stringify(data)
+    return [kind, { path: `fixture:${kind}`, sha256: sha256(body), body }]
+  })) }
+  input.refs.push(...['region:0', 'region:1'].map(id => ({ id, kind: 'region', inside: true, boundarySha256: boundary.sha256 })))
+  const geography = stagingGeography(input.facts, input.baseline, input.boundary)
+  input.geography = geography
+  bindBatch(input)
+  return { ...input, geography }
+}
+
+test('staged two-gu county keeps independent membership, pending feudal parents and historical rights; only inspection admits it', () => {
+  const input = stagingFixture()
+  const before = clone(input)
+  assert.deepEqual(validateSeoulScope(input, { mode: 'inspection' }), { ok: true, errors: [] })
+  const county = input.geography.titles.find(t => t.rank === 'county')
+  assert.deepEqual(county.jurisdictionRefs, ['gu:A', 'gu:B'])
+  assert.equal(county.feudalParentTitleId, null)
+  assert.equal(input.geography.titles.filter(t => t.rank === 'kingdom').length, 0)
+  assert.equal(input.geography.countySlots[0].slots.length, 2)
+  assert.equal(code(validateSeoulScope(input)), 'E_SCOPE_PENDING')
+  assert.equal(code(validateSeoulScope(input, { mode: 'migration', batchId: 'batch:a' })), 'E_SCOPE_PENDING')
+  assert.deepEqual(input, before)
+  for (const row of input.contract.entities.filter(row => row.kind === 'holding')) Object.assign(row, { status: 'pending', batchId: null, basis: null })
+  for (const row of input.contract.dispositions.filter(row => ['holdings', 'grants'].includes(row.set))) Object.assign(row, { status: 'pending', batchId: null, basis: null, targetIds: [] })
+  input.current.rights = []
+  bindBatch(input)
+  assert.equal(validateSeoulScope(input, { mode: 'inspection' }).ok, true)
+})
+
+for (const [name, mutate, expected] of [
+  ['invented empire superior', i => { i.geography.titles.at(-1).feudalParentTitleId = 'geography:empire:seoul' }, 'E_SLOT_EDITION'],
+  ['invented chosen duchy', i => { i.geography.titles.at(-1).feudalParentTitleId = 'geography:duchy:gu:A' }, 'E_SLOT_EDITION'],
+  ['missing geographic gu', i => { i.geography.titles.at(-1).jurisdictionRefs.pop() }, 'E_SLOT_COVERAGE'],
+  ['invented kingdom proposal', i => { i.geography.kingdomStatus = 'proposed' }, 'E_SLOT_EDITION'],
+  ['claimed official extent', i => { i.geography.officialExtentStatus = 'verified' }, 'E_SLOT_EDITION'],
+  ['claimed geometry verification', i => { i.geography.countySlots[0].slots[0].geometryVerified = true }, 'E_SLOT_EDITION'],
+  ['candidate promoted to geometry', i => { i.geography.countySlots[0].slots[0].geometryRefs = ['region:0'] }, 'E_SLOT_COVERAGE'],
+  ['historical promoted to holding', i => { i.geography.countySlots[0].slots[0].holdingRefs = ['holding:old'] }, 'E_SLOT_COVERAGE'],
+  ['invented holder', i => { i.geography.countySlots[0].slots[0].holderPersonId = 'K001' }, 'E_SLOT_EDITION'],
+  ['unknown historical right', i => { i.geography.countySlots[0].slots[0].historicalHoldingRefs[0].id = 'missing' }, 'E_SLOT_EDITION'],
+  ['stale historical hash', i => { i.geography.countySlots[0].slots[0].historicalHoldingRefs[0].recordSha256 = sha256('stale') }, 'E_SLOT_EDITION'],
+  ['unknown membership source', i => { i.geography.titles.at(-1).sourceRefs[0] = 'missing' }, 'E_SLOT_EDITION'],
+  ['unknown edition', i => { i.geography.countySlots[0].slots[0].sourceEdition = 'missing' }, 'E_SLOT_EDITION'],
+  ['wrong source pointer', i => { i.geography.countySlots[0].slots[0].sourcePointer = '/missing' }, 'E_SLOT_EDITION'],
+  ['untyped metadata', i => { i.geography.approved = true }, 'E_SCOPE_SHAPE'],
+  ['stale independent input', i => { i.facts.sources.census.body += ' ' }, 'E_SLOT_EDITION'],
+  ['missing independent right', i => { i.baseline.currentEntitySets.holdings = []; i.baseline.identitySetHashes.holdings = sha256('[]') }, 'E_CENSUS_RIGHT'],
+  ['missing candidate reference', i => { i.refs = i.refs.filter(r => r.id !== 'region:0') }, 'E_SCOPE_REF'],
+]) test(`staging rejects ${name}`, () => {
+  const input = stagingFixture()
+  mutate(input)
+  bindBatch(input)
+  assert.equal(code(validateSeoulScope(input, { mode: 'inspection' })), expected)
+})
+
+test('staging checks membership against the independently retained census, not its own slot assignments', () => {
+  const input = stagingFixture()
+  const source = input.facts.sources.membership
+  const changed = JSON.parse(source.body)
+  changed.constituencies[0].electoralDongs[0].currentCorrespondences[0].candidateAdminId = 'invented'
+  source.body = JSON.stringify(changed); source.sha256 = sha256(source.body)
+  assert.equal(code(validateSeoulScope(input, { mode: 'inspection' })), 'E_SLOT_COVERAGE')
+})
 
 test('complete independent Seoul fixture validates without mutation; seven source dongs yield seven slots', () => {
   const input = fixture()
@@ -290,6 +397,13 @@ test('real CLI fixture-root commands return exact exit codes and machine errors;
     const all = await runCli(['--fixture-root', root])
     assert.equal(all.status, 1)
     assert.equal(code(JSON.parse(all.stdout)), 'E_SCOPE_PENDING')
+    await writeFixture(root, stagingFixture())
+    for (const [args, status] of [[['--inspection'], 0], [[], 1], [['--migration-batch', 'batch:a'], 1]]) {
+      const result = await runCli(['--fixture-root', root, ...args])
+      assert.equal(result.status, status, result.stdout)
+      assert.equal(code(JSON.parse(result.stdout)), status ? 'E_SCOPE_PENDING' : undefined)
+      console.log(`CLI staged ${args.join(' ') || 'publication'} exit=${status}`)
+    }
     for (const [name, mutate, args, expected] of [
       ['pending-source', input => { Object.assign(input.contract.documents[0], { status: 'pending', batchId: 'batch:b', basis: null, reviewReceipt: null }) }, ['--migration-batch', 'batch:a'], 'E_SCOPE_PENDING'],
       ['unknown-right', input => { Object.assign(input.geography.countySlots[0].slots[0], { status: 'direct', holderPersonId: 'K001', holdingRefs: ['unknown:right'] }) }, [], 'E_SCOPE_REF'],
