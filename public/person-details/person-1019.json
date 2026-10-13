@@ -410,6 +410,126 @@
     "id": "K1019",
     "personId": "person-1019"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 13,
+        "effective": 13
+      },
+      "insight": {
+        "base": 14,
+        "effective": 14
+      },
+      "learning": {
+        "base": 13,
+        "effective": 13
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k1019-copy-collation",
+        "name": {
+          "ko": "사본 대조",
+          "en": "Copy collation"
+        },
+        "rating": 75
+      },
+      {
+        "id": "k1019-line-repair",
+        "name": {
+          "ko": "통신선 정비",
+          "en": "Communication-line repair"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1019-trait-1",
+        "name": {
+          "ko": "차이마다 번호",
+          "en": "A number for each difference"
+        },
+        "description": {
+          "ko": "문구 차이를 번호와 대조표로 남긴다.",
+          "en": "Records wording differences with numbers and comparison tables."
+        },
+        "behavior": {
+          "ko": "문구 차이를 번호와 대조표로 남긴다.",
+          "en": "Records wording differences with numbers and comparison tables."
+        },
+        "stress": {
+          "ko": "사본이 갈라질 때 승인 없는 수정으로 덮지 않는다.",
+          "en": "Does not cover divergent copies with unauthorized edits."
+        },
+        "relationship": {
+          "ko": "김연규의 승인을 받아 같은 개정을 모든 사본에 반영한다.",
+          "en": "Applies identical revisions to all copies after Kim Yeonggyu approves."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "역 사이의 유선과 중계기를 고치는 길에 사본을 나른다. 다른 글자마다 번호를 붙이고 개정 요청을 김연규에게 전하며 승인된 내용만 모든 사본에 같게 옮긴다.",
+      "en": "He carries document copies along the routes where he repairs station wiring and relays. He numbers each differing character, forwards revision requests to Kim Yeonggyu, and applies only approved changes equally to all copies."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",

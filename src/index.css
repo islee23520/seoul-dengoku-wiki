@@ -552,6 +552,12 @@ summary:focus-visible {
 .axis-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
 .axis-value { font-weight: bold; font-size: 0.85rem; min-width: 3rem; text-align: right; color: var(--wiki-accent); }
 .axis-desc { font-size: 0.72rem; color: var(--wiki-muted); min-width: 8rem; }
+@media (max-width: 40rem) {
+  .values-block, .desire-block { min-inline-size: 0; }
+  .axis-row { flex-wrap: wrap; }
+  .axis-bar { min-width: 0; }
+  .axis-desc { flex-basis: 100%; min-width: 0; }
+}
 .desire-extras { margin-block-start: 0.8rem; display: flex; gap: 1.5rem; }
 .desire-extras p { font-size: 0.9rem; color: var(--wiki-text); }
 .gurps-unit, .gurps-territory, .gurps-wandering { margin-block-start: 1rem; }

@@ -374,6 +374,142 @@
     "id": "K766",
     "personId": "person-0766"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "casualty-delay-report",
+        "name": {
+          "ko": "부상자 지연 보고",
+          "en": "Casualty delay reporting"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k766-disposition",
+        "name": {
+          "ko": "지연에도 환자 우선",
+          "en": "Patients first despite delays"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: dispatch clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Lorenzo Conti reports injured people moved first through a blocked passage and dispatch delays to Gabriel Johnson. Gabriel checks patient records and prescriptions so late arrivals are not omitted from care."
+        },
+        "effects": []
+      },
+      {
+        "id": "k766-choice",
+        "name": {
+          "ko": "인원까지 인계",
+          "en": "Handing over counts too"
+        },
+        "description": {
+          "ko": "일화. 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he broke open the snow-blocked transfer passage and moved the injured first. By this deed the signature of the dispatch clerk post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Lorenzo Conti reports injured people moved first through a blocked passage and dispatch delays to Gabriel Johnson. Gabriel checks patient records and prescriptions so late arrivals are not omitted from care."
+        },
+        "stress": {
+          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Lorenzo Conti reports injured people moved first through a blocked passage and dispatch delays to Gabriel Johnson. Gabriel checks patient records and prescriptions so late arrivals are not omitted from care."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "눈길에서 먼저 옮긴 부상자와 지연을 가브리엘에게 전한다. 늦은 환자를 잇는 실무이며 처방 확인은 의무원의 일이다.",
+      "en": "Reports casualties moved first and their delay to Gabriel. Connects late patients without claiming prescription review."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -753,7 +889,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 로렌초 콘티는 2081년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 안토니오 콘티는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 로렌초 콘티의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.",
@@ -761,7 +896,7 @@
     "공포": "배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 로렌초 콘티는 2081년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 안토니오 콘티는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 로렌초 콘티의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −10 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −15 | 자격 25 | 분산 5 | 변혁 0\n- 욕망: 갈망 5 | 독점 30 | 위험 0 | 과시 20 | 지속 30 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 로렌초 콘티는 2081년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 안토니오 콘티는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 로렌초 콘티의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 로렌초 콘티는 막힌 통로에서 먼저 옮긴 부상자와 배차 지연을 가브리엘 존슨에게 전한다. 가브리엘 존슨은 환자 명부와 처방을 확인해 늦게 도착한 환자가 진료에서 빠지지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −10 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −15 | 자격 25 | 분산 5 | 변혁 0\n- 욕망: 갈망 5 | 독점 30 | 위험 0 | 과시 20 | 지속 30 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

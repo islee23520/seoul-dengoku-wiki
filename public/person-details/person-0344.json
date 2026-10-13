@@ -392,6 +392,142 @@
     "id": "K343",
     "personId": "person-0344"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "charter-clause-comparison",
+        "name": {
+          "ko": "헌장 조항 대조",
+          "en": "Charter clause comparison"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "군호로 바꾸지 않는 문안",
+          "en": "Text that will not become a military code"
+        },
+        "description": {
+          "ko": "치료 우선권 문구를 헌장과 호송 조항 번호에 맞춰 가려냈다. 문서 대조와 중립 문안 보존에 강점이 있다.",
+          "en": "They identified an inserted treatment priority phrase by comparing charter wording and transport clause numbers. Document comparison and preservation of neutral wording are supported."
+        },
+        "behavior": {
+          "ko": "적과 아군을 가리지 않는 문장을 먼저 정서하고, 우선 치료 조항을 군호로 바꾸라는 사신을 문 앞에 세운다. 숨이 차도 사본은 두 장이다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He drafted first the clause that did not separate friend from foe, and stood at the door any envoy who told him to turn the priority care clause into a military seal. Short of breath or not, he carried two copies."
+        },
+        "stress": {
+          "ko": "공포. 위조 치료 우선권이 정서본에 섞여 자신이 헌장 위반의 손이 되는 것.",
+          "en": "Fear. That a forged care-priority clause would mix into the fair copy and he would become the hand of a charter violation."
+        },
+        "relationship": {
+          "ko": "관계. 류은비의 의료헌장 문안을 정서하고, 초나루의 호송 조항과 번호를 맞춘다. 정유라의 공동교섭 서식만 받친다.",
+          "en": "Relations. Drafted Ryu Eunbi's medical charter wording and matched numbers with Cho Naru's convoy articles. Backed only Jeong Yura's joint negotiation forms."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 의료헌장 서기 수련의. 서명 시각과 단장 날인을 같은 줄에 적고, 담당 전문의와 단장의 인장이 없으면 함을 잠근다.",
+          "en": "Office. Rank: member. Title: medical charter treaty signing clerk. He wrote the signing hour and the guild stamps on one line and locked the box with fewer than three seals."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 의료헌장 서기 수련의. 서명 시각과 단장 날인을 같은 줄에 적고, 담당 전문의와 단장의 인장이 없으면 함을 잠근다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: medical charter treaty signing clerk. He wrote the signing hour and the guild stamps on one line and locked the box with fewer than three seals."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 위조 치료 우선권이 정서본에 섞여 자신이 헌장 위반의 손이 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That a forged care-priority clause would mix into the fair copy and he would become the hand of a charter violation."
+        },
+        "relationship": {
+          "ko": "관계. 류은비의 의료헌장 문안을 정서하고, 초나루의 호송 조항과 번호를 맞춘다. 정유라의 공동교섭 서식만 받친다.",
+          "en": "Relations. Drafted Ryu Eunbi's medical charter wording and matched numbers with Cho Naru's convoy articles. Backed only Jeong Yura's joint negotiation forms."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "치료 우선권 문구를 헌장과 호송 조항 번호에 맞춰 가려냈다. 문서 대조와 중립 문안 보존에 강점이 있다.",
+      "en": "They identified an inserted treatment priority phrase by comparing charter wording and transport clause numbers. Document comparison and preservation of neutral wording are supported."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -798,7 +934,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의료헌장 서기 수련의 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 의료헌장 서기 수련의. 서명 시각과 단장 날인을 같은 줄에 적고, 담당 전문의와 단장의 인장이 없으면 함을 잠근다.",
     "일화": "우선 치료 조항을 군호로 바꿔 달라는 사신이 의료헌장 정서본을 들고 흰십자단 서기실에 온다. 창해온은 사신을 문 앞에 세워 두고, 류은비의 헌장 문안과 초나루의 호송 조항 번호를 맞춰 정서본에 섞인 치료 우선권 문구를 가려낸다.",
     "관계": "류은비의 의료헌장 문안을 정서하고, 초나루의 호송 조항과 번호를 맞춘다. 정유라의 공동교섭 서식만 받친다.",
@@ -806,7 +941,7 @@
     "공포": "위조 치료 우선권이 정서본에 섞여 자신이 헌장 위반의 손이 되는 것.",
     "개입": "함 아래 쪽지를 꺼내 폭로하거나, 서명 증인을 호송해 헌장을 지킬 수 있다."
   },
-  "biography": "적과 아군을 가리지 않는 문장을 먼저 정서하고, 우선 치료 조항을 군호로 바꾸라는 사신을 문 앞에 세운다. 숨이 차도 사본은 두 장이다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의료헌장 서명·인장 대조\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의료헌장 서기 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료헌장 서기 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 의료헌장 서기 수련의. 서명 시각과 단장 날인을 같은 줄에 적고, 담당 전문의와 단장의 인장이 없으면 함을 잠근다.\n\n**일화.** 우선 치료 조항을 군호로 바꿔 달라는 사신이 의료헌장 정서본을 들고 흰십자단 서기실에 온다. 창해온은 사신을 문 앞에 세워 두고, 류은비의 헌장 문안과 초나루의 호송 조항 번호를 맞춰 정서본에 섞인 치료 우선권 문구를 가려낸다.\n\n**관계.** 류은비의 의료헌장 문안을 정서하고, 초나루의 호송 조항과 번호를 맞춘다. 정유라의 공동교섭 서식만 받친다.\n\n**야망.** 의약 중립 조항을 제기동 서기 원장에만 유효하게 해 강국 독점 구매가 서명란을 쪼개지 못하게 한다.\n\n**공포.** 위조 치료 우선권이 정서본에 섞여 자신이 헌장 위반의 손이 되는 것.\n\n**개입.** 함 아래 쪽지를 꺼내 폭로하거나, 서명 증인을 호송해 헌장을 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −60 | 물질 −20 | 공동 25 | 원칙 35 | 공개 20 | 자격 15 | 분산 25 | 변혁 −5\n- 욕망: 갈망 20 | 독점 15 | 위험 10 | 과시 −20 | 지속 5 | 지향 이성 | 결합 없음\n:::",
+  "biography": "적과 아군을 가리지 않는 문장을 먼저 정서하고, 우선 치료 조항을 군호로 바꾸라는 사신을 문 앞에 세운다. 숨이 차도 사본은 두 장이다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의료헌장 서명·인장 대조\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의료헌장 서기 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료헌장 서기 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 의료헌장 서기 수련의. 서명 시각과 단장 날인을 같은 줄에 적고, 담당 전문의와 단장의 인장이 없으면 함을 잠근다.\n\n**일화.** 우선 치료 조항을 군호로 바꿔 달라는 사신이 의료헌장 정서본을 들고 흰십자단 서기실에 온다. 창해온은 사신을 문 앞에 세워 두고, 류은비의 헌장 문안과 초나루의 호송 조항 번호를 맞춰 정서본에 섞인 치료 우선권 문구를 가려낸다.\n\n**관계.** 류은비의 의료헌장 문안을 정서하고, 초나루의 호송 조항과 번호를 맞춘다. 정유라의 공동교섭 서식만 받친다.\n\n**야망.** 의약 중립 조항을 제기동 서기 원장에만 유효하게 해 강국 독점 구매가 서명란을 쪼개지 못하게 한다.\n\n**공포.** 위조 치료 우선권이 정서본에 섞여 자신이 헌장 위반의 손이 되는 것.\n\n**개입.** 함 아래 쪽지를 꺼내 폭로하거나, 서명 증인을 호송해 헌장을 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −60 | 물질 −20 | 공동 25 | 원칙 35 | 공개 20 | 자격 15 | 분산 25 | 변혁 −5\n- 욕망: 갈망 20 | 독점 15 | 위험 10 | 과시 −20 | 지속 5 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

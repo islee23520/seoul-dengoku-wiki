@@ -285,6 +285,142 @@
     "id": "K424",
     "personId": "person-0424"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k424-water-level-log",
+        "name": {
+          "ko": "교대 수위 기록",
+          "en": "Shift water-level logging"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k424-action-priority",
+        "name": {
+          "ko": "교대마다 수위",
+          "en": "Levels each shift"
+        },
+        "description": {
+          "ko": "양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다. 이서담이 선출 군주 앞에서 목소리를 높일 근거가 그 기록 한 묶음이어서, 이민석은 당직 열쇠에 그 기록을 얹어 이서담에게 넘긴다.",
+          "en": "On the day the water level in the Yangcheon alley reservoirs drops, I Minseok copies the level into the water-distribution duty record at every shift change. That bundle of records is the ground I Seodam will carry before the elected monarch, so I Minseok lays it on the duty key and hands both to I Seodam."
+        },
+        "behavior": {
+          "ko": "양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다. 이서담이 선출 군주 앞에서 목소리를 높일 근거가 그 기록 한 묶음이어서, 이민석은 당직 열쇠에 그 기록을 얹어 이서담에게 넘긴다.",
+          "en": "On the day the water level in the Yangcheon alley reservoirs drops, I Minseok copies the level into the water-distribution duty record at every shift change. That bundle of records is the ground I Seodam will carry before the elected monarch, so I Minseok lays it on the duty key and hands both to I Seodam."
+        },
+        "stress": {
+          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
+          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
+          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
+        },
+        "effects": []
+      },
+      {
+        "id": "k424-bounded-handover",
+        "name": {
+          "ko": "기록으로 잇는 당직",
+          "en": "Duty linked by records"
+        },
+        "description": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "behavior": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "stress": {
+          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
+          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
+          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다. 이서담이 선출 군주 앞에서 목소리를 높일 근거가 그 기록 한 묶음이어서, 이민석은 당직 열쇠에 그 기록을 얹어 이서담에게 넘긴다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
+      "en": "On the day the water level in the Yangcheon alley reservoirs drops, I Minseok copies the level into the water-distribution duty record at every shift change. That bundle of records is the ground I Seodam will carry before the elected monarch, so I Minseok lays it on the duty key and hands both to I Seodam. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -718,7 +854,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다. 이서담이 선출 군주 앞에서 목소리를 높일 근거가 그 기록 한 묶음이어서, 이민석은 당직 열쇠에 그 기록을 얹어 이서담에게 넘긴다.",
     "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
@@ -726,7 +861,7 @@
     "공포": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다. 이서담이 선출 군주 앞에서 목소리를 높일 근거가 그 기록 한 묶음이어서, 이민석은 당직 열쇠에 그 기록을 얹어 이서담에게 넘긴다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 20 | 물질 60 | 공동 15 | 원칙 5 | 공개 20 | 자격 0 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 35 | 독점 10 | 위험 35 | 과시 30 | 지속 15 | 지향 유동 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 양천 골목 저수조의 수위가 내려간 날, 이민석은 급수 배분 당직 기록에 수위를 교대 시각마다 옮겨 적는다. 이서담이 선출 군주 앞에서 목소리를 높일 근거가 그 기록 한 묶음이어서, 이민석은 당직 열쇠에 그 기록을 얹어 이서담에게 넘긴다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 20 | 물질 60 | 공동 15 | 원칙 5 | 공개 20 | 자격 0 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 35 | 독점 10 | 위험 35 | 과시 30 | 지속 15 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-01"
   ],

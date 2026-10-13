@@ -393,6 +393,142 @@
     "id": "K044",
     "personId": "person-0044"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k044-skill-register-crosscheck",
+        "name": {
+          "ko": "숙련 원장 교차검증",
+          "en": "Skill-ledger crosscheck"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k044-preserve-original",
+        "name": {
+          "ko": "원본 칸을 지킨다",
+          "en": "Protect the original entry"
+        },
+        "description": {
+          "ko": "위조 도장 일화에서 사본을 불사르고 원본 칸을 지킨다.",
+          "en": "In the forged-seal anecdote burns copies while preserving the original entry."
+        },
+        "behavior": {
+          "ko": "위조 도장 일화에서 사본을 불사르고 원본 칸을 지킨다.",
+          "en": "In the forged-seal anecdote burns copies while preserving the original entry."
+        },
+        "stress": {
+          "ko": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
+          "en": "That the guards would pen strike workshops in and use the union roster as a military registry."
+        },
+        "relationship": {
+          "ko": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
+          "en": "A contract fixing Kim Nayul's clerk roster in the ledger, cross-verifying Jang Wooseok's standards stamps and proficiency scores, and backing Baek On's refugee citizenship demand with records."
+        },
+        "effects": []
+      },
+      {
+        "id": "k044-civilian-ledger",
+        "name": {
+          "ko": "시민권과 숙련의 원장",
+          "en": "Citizenship and skill ledger"
+        },
+        "description": {
+          "ko": "서기 명부를 기록에 옮기고 난민 시민권 요구를 지지한다.",
+          "en": "Transfers clerical registers into records and supports refugee citizenship."
+        },
+        "behavior": {
+          "ko": "서기 명부를 기록에 옮기고 난민 시민권 요구를 지지한다.",
+          "en": "Transfers clerical registers into records and supports refugee citizenship."
+        },
+        "stress": {
+          "ko": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
+          "en": "That the guards would pen strike workshops in and use the union roster as a military registry."
+        },
+        "relationship": {
+          "ko": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
+          "en": "A contract fixing Kim Nayul's clerk roster in the ledger, cross-verifying Jang Wooseok's standards stamps and proficiency scores, and backing Baek On's refugee citizenship demand with records."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "원장 대조와 위조 도장 일화가 근거다. 위조를 자신이 발견했는지는 문장이 모호해 탐지 숙련은 발급하지 않았다.",
+      "en": "Ledger comparison and a forged-seal anecdote are evidence. The wording does not establish who discovered the forgery, so detection skill is not issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -851,7 +987,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
@@ -859,7 +994,7 @@
     "공포": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
     "개입": "숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다."
   },
-  "biography": "원칙적이고 문장의 빈칸을 증오한다. 태업 명단을 밤새 대조하는 서기의 숫자를 원장 밖으로 밀어내지 않는다.\n\n- 소속: 규격맹\n- 생업: 숙련점수 기록\n- 품계: 조합원\n- 직함: 숙련점수 원장 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.\n\n**야망.** 복구복무자의 시민권과 숙련 점수를 같은 원장에 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30\n- 욕망: 갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "원칙적이고 문장의 빈칸을 증오한다. 태업 명단을 밤새 대조하는 서기의 숫자를 원장 밖으로 밀어내지 않는다.\n\n- 소속: 규격맹\n- 생업: 숙련점수 기록\n- 품계: 조합원\n- 직함: 숙련점수 원장 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.\n\n**야망.** 복구복무자의 시민권과 숙련 점수를 같은 원장에 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30\n- 욕망: 갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

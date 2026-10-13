@@ -395,6 +395,142 @@
     "id": "K124",
     "personId": "person-0125"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k124-wheel-thickness",
+        "name": {
+          "ko": "차륜 두께 측정",
+          "en": "Wheel thickness measurement"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k124-choice",
+        "name": {
+          "ko": "측정 없이 사용하지 않음",
+          "en": "No use without measurement"
+        },
+        "description": {
+          "ko": "차륜 마모 무늬로 야간 운행 거리를 읽고, 공구를 바닥에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.",
+          "en": "He read night-run distance from wheel wear patterns and struck from the rotation any assistant who left tools on the floor. Few of words, he answered with trial-run noise."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 고덕기지 차륜 정비사 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Godeok depot wheel mechanic post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 서남 밀봉재가 끊긴 날 차륜이 헛돌고, 그 공백을 복무 등록으로 메우라는 명령이 떨어지는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That on the day the southwest sealing stock ran out the wheels would spin empty, and an order would arrive to fill that gap with service registration. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 박하율의 출고 순서를 현장에서 집행하는 사제이고, 한보라의 순찰열차에만 예비 차륜을 붙이며, 강민서의 부품 공급을 고덕 창구에서 검수한다.",
+          "en": "Relations. An apprentice executing Park Hayul's release order in the field, attaching spare wheels only to Han Bora's patrol trains, and inspecting Gang Minseo's parts supply at the Godeok window."
+        },
+        "effects": []
+      },
+      {
+        "id": "k124-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 고덕기지 차륜 정비사. 출고 전 차륜 두께를 칠판에 쓰고, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.",
+          "en": "Office. Rank: sergeant. Title: Godeok depot wheel mechanic. He wrote wheel thickness on the chalkboard before release and used no screw without the The Gauge's stamp, separately measured."
+        },
+        "behavior": {
+          "ko": "관직. 품계 병장. 직함은 고덕기지 차륜 정비사. 출고 전 차륜 두께를 칠판에 쓰고, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.",
+          "en": "Office. Rank: sergeant. Title: Godeok depot wheel mechanic. He wrote wheel thickness on the chalkboard before release and used no screw without the The Gauge's stamp, separately measured."
+        },
+        "stress": {
+          "ko": "공포. 서남 밀봉재가 끊긴 날 차륜이 헛돌고, 그 공백을 복무 등록으로 메우라는 명령이 떨어지는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That on the day the southwest sealing stock ran out the wheels would spin empty, and an order would arrive to fill that gap with service registration. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 박하율의 출고 순서를 현장에서 집행하는 사제이고, 한보라의 순찰열차에만 예비 차륜을 붙이며, 강민서의 부품 공급을 고덕 창구에서 검수한다.",
+          "en": "Relations. An apprentice executing Park Hayul's release order in the field, attaching spare wheels only to Han Bora's patrol trains, and inspecting Gang Minseo's parts supply at the Godeok window."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 고덕기지 차륜 정비사 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Godeok depot wheel mechanic post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -831,7 +967,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 병장. 직함은 고덕기지 차륜 정비사. 출고 전 차륜 두께를 칠판에 쓰고, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 고덕기지 차륜 정비사 자리의 서명이 장부에 올랐다.",
     "관계": "박하율의 출고 순서를 현장에서 집행하는 사제이고, 한보라의 순찰열차에만 예비 차륜을 붙이며, 강민서의 부품 공급을 고덕 창구에서 검수한다.",
@@ -839,7 +974,7 @@
     "공포": "서남 밀봉재가 끊긴 날 차륜이 헛돌고, 그 공백을 복무 등록으로 메우라는 명령이 떨어지는 것.",
     "개입": "대체 차륜을 밀반입해 정비를 살리거나, 도장 없는 나사의 발주자를 밝혀 정비사를 흔들 수 있다."
   },
-  "biography": "차륜 마모 무늬로 야간 운행 거리를 읽고, 공구를 바닥에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 동방사\n- 생업: 차륜 두께 측정·부품 검수\n- 품계: 병장\n- 직함: 고덕기지 차륜 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 병장. 직함은 고덕기지 차륜 정비사. 출고 전 차륜 두께를 칠판에 쓰고, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 고덕기지 차륜 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 박하율의 출고 순서를 현장에서 집행하는 사제이고, 한보라의 순찰열차에만 예비 차륜을 붙이며, 강민서의 부품 공급을 고덕 창구에서 검수한다.\n\n**야망.** 고덕 유치선의 차륜 주기를 동부 공개 정비표로 묶어 순찰열차가 암사 없이 외곽으로 나가지 못하게 한다.\n\n**공포.** 서남 밀봉재가 끊긴 날 차륜이 헛돌고, 그 공백을 복무 등록으로 메우라는 명령이 떨어지는 것.\n\n**개입.** 대체 차륜을 밀반입해 정비를 살리거나, 도장 없는 나사의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −40 | 무력 50 | 물질 25 | 공동 35 | 원칙 −30 | 공개 −40 | 자격 5 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 30 | 독점 −5 | 위험 −5 | 과시 5 | 지속 20 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "차륜 마모 무늬로 야간 운행 거리를 읽고, 공구를 바닥에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 동방사\n- 생업: 차륜 두께 측정·부품 검수\n- 품계: 병장\n- 직함: 고덕기지 차륜 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 병장. 직함은 고덕기지 차륜 정비사. 출고 전 차륜 두께를 칠판에 쓰고, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 고덕기지 차륜 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 박하율의 출고 순서를 현장에서 집행하는 사제이고, 한보라의 순찰열차에만 예비 차륜을 붙이며, 강민서의 부품 공급을 고덕 창구에서 검수한다.\n\n**야망.** 고덕 유치선의 차륜 주기를 동부 공개 정비표로 묶어 순찰열차가 암사 없이 외곽으로 나가지 못하게 한다.\n\n**공포.** 서남 밀봉재가 끊긴 날 차륜이 헛돌고, 그 공백을 복무 등록으로 메우라는 명령이 떨어지는 것.\n\n**개입.** 대체 차륜을 밀반입해 정비를 살리거나, 도장 없는 나사의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −40 | 무력 50 | 물질 25 | 공동 35 | 원칙 −30 | 공개 −40 | 자격 5 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 30 | 독점 −5 | 위험 −5 | 과시 5 | 지속 20 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-05"
   ],

@@ -297,6 +297,142 @@
     "id": "K120",
     "personId": "person-0121"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k120-wheel-inspection",
+        "name": {
+          "ko": "차륜 결함 검사",
+          "en": "Wheel defect inspection"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k120-choice",
+        "name": {
+          "ko": "출고 전 검증",
+          "en": "Verifies before release"
+        },
+        "description": {
+          "ko": "과묵하고 차륜의 마모로 노선의 거짓을 읽는다. 정비 창구를 보호비 창구로 바꾸라는 명령을 수치로 여긴다.",
+          "en": "Taciturn, he read a route's lie from wheel wear. He took as disgrace the order to turn the maintenance window into a protection-money window."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 열차정비장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he felt out a wheel defect just short of a siding derailment and stopped the train. By this deed the signature of the Godeok depot train maintenance chief post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 부품 봉쇄가 겹치면 순찰열차가 정차한 채 외곽 진입로만 내주는 빈 보호권이 되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That when the parts blockade overlapped, the patrol trains would stand still and only the outer approach roads would be given away — an empty protection zone. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 이준택의 군자 정비 표준과 동부 규격을 놓고 경쟁하고, 강민서를 필요한 부품 공급자로 보며, 김우찬의 비밀 배차를 정비 창구에서 마지막에야 승인한다.",
+          "en": "Relations. Competing with Lee Juntaek's Gunja maintenance standards over the eastern specs, seeing Gang Minseo as the needed parts supplier, and approving Kim Woochan's secret dispatches at the maintenance window only at the last."
+        },
+        "effects": []
+      },
+      {
+        "id": "k120-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 고덕기지 열차정비장. 출고 순서를 복구·순찰·군수 공개판에 올리되, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.",
+          "en": "Office. Rank: sergeant. Title: Godeok depot train maintenance chief. He put the release order on the public board for restoration, patrol, and munitions, and used no screw without the The Gauge's stamp, separately measured."
+        },
+        "behavior": {
+          "ko": "관직. 품계 병장. 직함은 고덕기지 열차정비장. 출고 순서를 복구·순찰·군수 공개판에 올리되, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.",
+          "en": "Office. Rank: sergeant. Title: Godeok depot train maintenance chief. He put the release order on the public board for restoration, patrol, and munitions, and used no screw without the The Gauge's stamp, separately measured."
+        },
+        "stress": {
+          "ko": "공포. 부품 봉쇄가 겹치면 순찰열차가 정차한 채 외곽 진입로만 내주는 빈 보호권이 되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That when the parts blockade overlapped, the patrol trains would stand still and only the outer approach roads would be given away — an empty protection zone. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 이준택의 군자 정비 표준과 동부 규격을 놓고 경쟁하고, 강민서를 필요한 부품 공급자로 보며, 김우찬의 비밀 배차를 정비 창구에서 마지막에야 승인한다.",
+          "en": "Relations. Competing with Lee Juntaek's Gunja maintenance standards over the eastern specs, seeing Gang Minseo as the needed parts supplier, and approving Kim Woochan's secret dispatches at the maintenance window only at the last."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 열차정비장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125 he felt out a wheel defect just short of a siding derailment and stopped the train. By this deed the signature of the Godeok depot train maintenance chief post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -713,7 +849,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 열차정비장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 병장. 직함은 고덕기지 열차정비장. 출고 순서를 복구·순찰·군수 공개판에 올리되, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 열차정비장 자리의 서명이 장부에 올랐다.",
     "관계": "이준택의 군자 정비 표준과 동부 규격을 놓고 경쟁하고, 강민서를 필요한 부품 공급자로 보며, 김우찬의 비밀 배차를 정비 창구에서 마지막에야 승인한다.",
@@ -721,7 +856,7 @@
     "공포": "부품 봉쇄가 겹치면 순찰열차가 정차한 채 외곽 진입로만 내주는 빈 보호권이 되는 것.",
     "개입": "대체 차륜을 밀반입해 정비를 살리거나, 비밀 배차의 군수 개조를 폭로해 정비장을 교체하게 할 수 있다."
   },
-  "biography": "과묵하고 차륜의 마모로 노선의 거짓을 읽는다. 정비 창구를 보호비 창구로 바꾸라는 명령을 수치로 여긴다.\n\n- 소속: 동방사\n- 생업: 열차 출고·부품 규격 점검\n- 품계: 병장\n- 직함: 고덕기지 열차정비장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 열차정비장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 병장. 직함은 고덕기지 열차정비장. 출고 순서를 복구·순찰·군수 공개판에 올리되, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 열차정비장 자리의 서명이 장부에 올랐다.\n\n**관계.** 이준택의 군자 정비 표준과 동부 규격을 놓고 경쟁하고, 강민서를 필요한 부품 공급자로 보며, 김우찬의 비밀 배차를 정비 창구에서 마지막에야 승인한다.\n\n**야망.** 고덕 유치선의 순찰열차와 정비 용량을 동부 표준으로 고정해, 군자·창동 규격이 암사 없이 돌아가지 않게 한다.\n\n**공포.** 부품 봉쇄가 겹치면 순찰열차가 정차한 채 외곽 진입로만 내주는 빈 보호권이 되는 것.\n\n**개입.** 대체 차륜을 밀반입해 정비를 살리거나, 비밀 배차의 군수 개조를 폭로해 정비장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −40 | 무력 65 | 물질 15 | 공동 40 | 원칙 −30 | 공개 −45 | 자격 0 | 분산 −50 | 변혁 −35\n- 욕망: 갈망 10 | 독점 30 | 위험 −15 | 과시 −25 | 지속 15 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "과묵하고 차륜의 마모로 노선의 거짓을 읽는다. 정비 창구를 보호비 창구로 바꾸라는 명령을 수치로 여긴다.\n\n- 소속: 동방사\n- 생업: 열차 출고·부품 규격 점검\n- 품계: 병장\n- 직함: 고덕기지 열차정비장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 열차정비장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 병장. 직함은 고덕기지 열차정비장. 출고 순서를 복구·순찰·군수 공개판에 올리되, 규격맹 도장 없는 나사는 별도 측정 없이 쓰지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 열차정비장 자리의 서명이 장부에 올랐다.\n\n**관계.** 이준택의 군자 정비 표준과 동부 규격을 놓고 경쟁하고, 강민서를 필요한 부품 공급자로 보며, 김우찬의 비밀 배차를 정비 창구에서 마지막에야 승인한다.\n\n**야망.** 고덕 유치선의 순찰열차와 정비 용량을 동부 표준으로 고정해, 군자·창동 규격이 암사 없이 돌아가지 않게 한다.\n\n**공포.** 부품 봉쇄가 겹치면 순찰열차가 정차한 채 외곽 진입로만 내주는 빈 보호권이 되는 것.\n\n**개입.** 대체 차륜을 밀반입해 정비를 살리거나, 비밀 배차의 군수 개조를 폭로해 정비장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −40 | 무력 65 | 물질 15 | 공동 40 | 원칙 −30 | 공개 −45 | 자격 0 | 분산 −50 | 변혁 −35\n- 욕망: 갈망 10 | 독점 30 | 위험 −15 | 과시 −25 | 지속 15 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-05"
   ],

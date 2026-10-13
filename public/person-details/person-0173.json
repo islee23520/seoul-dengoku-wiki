@@ -391,6 +391,150 @@
     "id": "K172",
     "personId": "person-0173"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "rail-maintenance-training",
+        "name": {
+          "ko": "선로 정비 수련",
+          "en": "Rail maintenance training"
+        },
+        "rating": 45
+      },
+      {
+        "id": "maintenance-logs",
+        "name": {
+          "ko": "정비 일지 작성",
+          "en": "Maintenance logging"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k172-disposition",
+        "name": {
+          "ko": "숙련으로 증명함",
+          "en": "Proving oneself through craft"
+        },
+        "description": {
+          "ko": "침착하고 손끝이 정확하지만 가문 앞에서 목소리가 작아진다. 숙련으로 자리를 증명해야 한다는 강박이 있다.",
+          "en": "Calm and precise of hand, he went quiet before the house. He carried a compulsion to prove his place by skill."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.",
+          "en": "Office. Rank: registrar. Title: track apprentice. He published the maintenance logs and took the house elders' verbal orders down again as sentences."
+        },
+        "stress": {
+          "ko": "공포. 자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.",
+          "en": "Fear. That he would be consumed as the bait apprentice meant to draw in Im Chowon."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.",
+          "en": "Relations. Park Taegyeom's apprentice, he passed through the Changdong exchange training with I Hongwon. Shared brake parts with Song Hayul and took Alexander Miller's ration pressure."
+        },
+        "effects": []
+      },
+      {
+        "id": "k172-choice",
+        "name": {
+          "ko": "구두 명령을 기록함",
+          "en": "Recording oral orders"
+        },
+        "description": {
+          "ko": "일화. 임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.",
+          "en": "Anecdote. Orders fell at once — to entrust the detained train's brake inspection to the apprentice, and the house command not to touch it."
+        },
+        "behavior": {
+          "ko": "관계. 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.",
+          "en": "Relations. Park Taegyeom's apprentice, he passed through the Changdong exchange training with I Hongwon. Shared brake parts with Song Hayul and took Alexander Miller's ration pressure."
+        },
+        "stress": {
+          "ko": "공포. 자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.",
+          "en": "Fear. That he would be consumed as the bait apprentice meant to draw in Im Chowon."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.",
+          "en": "Relations. Park Taegyeom's apprentice, he passed through the Changdong exchange training with I Hongwon. Shared brake parts with Song Hayul and took Alexander Miller's ration pressure."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "교환 수련을 거쳐 일지를 공개하고 원로의 지시를 문장으로 받는다. 상반된 제동 명령 뒤 실제 작업 결과는 없으므로 숙련을 제한했다.",
+      "en": "He completed exchange training, publishes logs and writes down elders’ orders. No repair result follows the conflicting brake orders, limiting the skill estimate."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -783,7 +927,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다. 아이작 워커는 2095년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 도제 업무를 맡는다. 새뮤얼 워커는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아이작 워커의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.",
     "일화": "임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.",
     "관계": "박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.",
@@ -791,7 +934,7 @@
     "공포": "자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.",
     "개입": "도제의 정비 권한을 증언하거나, 그를 창동으로 빼내 가문 회의를 흔들 수 있다."
   },
-  "biography": "침착하고 손끝이 정확하지만 가문 앞에서 목소리가 작아진다. 숙련으로 자리를 증명해야 한다는 강박이 있다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 정비 일지·제동 점검\n- 직함: 선로 도제\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다. 아이작 워커는 2095년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 도제 업무를 맡는다. 새뮤얼 워커는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아이작 워커의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.\n\n**일화.** 임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.\n\n**관계.** 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.\n\n**야망.** 박태겸의 양자 기술자 경로로 후계가 되어 혈연 선로가문의 거부권을 배차표에서 지운다.\n\n**공포.** 자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.\n\n**개입.** 도제의 정비 권한을 증언하거나, 그를 창동으로 빼내 가문 회의를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 60 | 분산 5 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 −10 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
+  "biography": "침착하고 손끝이 정확하지만 가문 앞에서 목소리가 작아진다. 숙련으로 자리를 증명해야 한다는 강박이 있다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 정비 일지·제동 점검\n- 직함: 선로 도제\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 선로 도제 자리는 교대 무단 결근 대체 당직으로 열렸다. 아이작 워커는 2095년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 도제 업무를 맡는다. 새뮤얼 워커는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 아이작 워커의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 선로 도제. 정비 일지를 공개하고 가문 원로의 구두 지시를 문장으로 다시 받아 적는다.\n\n**일화.** 임초원 억류 열차의 제동 점검을 도제에게 맡기라는 명령과 손대지 말라는 가문 명령이 동시에 떨어졌다.\n\n**관계.** 박태겸의 도제이며 이홍원과 교환된 창동 수련을 거쳤다. 송하율과 제동 부품을 나누고, 알렉산더 밀러의 배급 압박을 받는다.\n\n**야망.** 박태겸의 양자 기술자 경로로 후계가 되어 혈연 선로가문의 거부권을 배차표에서 지운다.\n\n**공포.** 자신이 임초원을 끌어들이기 위한 미끼 도제로 소비되는 것.\n\n**개입.** 도제의 정비 권한을 증언하거나, 그를 창동으로 빼내 가문 회의를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 60 | 분산 5 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 −10 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],

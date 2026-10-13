@@ -184,12 +184,19 @@ export function personVisibleFields(person, rel) {
   if (typeof person.name !== 'string') throw new Error(`E_VISIBLE_FIELD:${rel}#/name`)
   const fields = ['name', 'stateName', 'title', 'position', 'commonTier', 'rank', 'occupation', 'gender', 'stage', 'generation', 'biography']
   const out = fields.flatMap((field) => person[field] == null ? [] : [[`${rel}#/${field}`, person[field]]])
+  if (person.characterProfile) {
+    out.push([`${rel}#/characterProfile/narrative/ko`, person.characterProfile.narrative.ko])
+    person.characterProfile.skills.forEach((skill, index) => out.push([`${rel}#/characterProfile/skills/${index}/name/ko`, skill.name.ko]))
+    person.characterProfile.traits.forEach((trait, index) => {
+      for (const key of ['name', 'description', 'behavior', 'stress', 'relationship']) out.push([`${rel}#/characterProfile/traits/${index}/${key}/ko`, trait[key].ko])
+    })
+  }
   for (const field of ['fields', 'sections']) {
     if (person[field] == null) continue
     if (typeof person[field] !== 'object' || Array.isArray(person[field])) throw new Error(`E_VISIBLE_FIELD:${rel}#/${field}`)
     for (const [key, value] of Object.entries(person[field])) {
       if (field === 'fields' && ['가치관', '욕망', '직위', '소속'].includes(key)) continue
-      if (field === 'sections' && !['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입'].includes(key)) continue
+      if (field === 'sections' && !['생애', '관직', '훈련', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입'].includes(key)) continue
       if (field === 'fields') out.push([`${rel}#/fields/${key}/label`, key])
       out.push([`${rel}#/${field}/${key}`, value])
     }

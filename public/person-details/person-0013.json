@@ -393,6 +393,150 @@
     "id": "K013",
     "personId": "person-0013"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 11,
+        "effective": 11
+      },
+      "endurance": {
+        "base": 11,
+        "effective": 11
+      }
+    },
+    "skills": [
+      {
+        "id": "k013-intruder-restraint",
+        "name": {
+          "ko": "난입자 저지",
+          "en": "Intruder restraint"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k013-patrol-redeployment",
+        "name": {
+          "ko": "순찰 재배치",
+          "en": "Patrol redeployment"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k013-vulnerable-lanes",
+        "name": {
+          "ko": "단수 골목 우선",
+          "en": "Cutoff neighborhoods first"
+        },
+        "description": {
+          "ko": "단수 골목을 먼저 지키고 부하 대신 습지를 걷는다.",
+          "en": "Protects cutoff lanes first and walks wetlands ahead of subordinates."
+        },
+        "behavior": {
+          "ko": "단수 골목을 먼저 지키고 부하 대신 습지를 걷는다.",
+          "en": "Protects cutoff lanes first and walks wetlands ahead of subordinates."
+        },
+        "stress": {
+          "ko": "관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.",
+          "en": "That one pipeline would be blown, the purification would backflow, and an outside protection force would fill the gap."
+        },
+        "relationship": {
+          "ko": "김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.",
+          "en": "Executing Kim Taeun's water-gate command in the field, re-deploying patrols to the hour Heo Dodam's pump trials ended, and guarding Im Bada's cutoff alleys first."
+        },
+        "effects": []
+      },
+      {
+        "id": "k013-night-challenge",
+        "name": {
+          "ko": "야간 검문",
+          "en": "Night challenge"
+        },
+        "description": {
+          "ko": "무단 도하를 고의로 보고 암호패를 요구한다.",
+          "en": "Treats unauthorized crossings as intentional and demands passcodes."
+        },
+        "behavior": {
+          "ko": "무단 도하를 고의로 보고 암호패를 요구한다.",
+          "en": "Treats unauthorized crossings as intentional and demands passcodes."
+        },
+        "stress": {
+          "ko": "관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.",
+          "en": "That one pipeline would be blown, the purification would backflow, and an outside protection force would fill the gap."
+        },
+        "relationship": {
+          "ko": "김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.",
+          "en": "Executing Kim Taeun's water-gate command in the field, re-deploying patrols to the hour Heo Dodam's pump trials ended, and guarding Im Bada's cutoff alleys first."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "난입자 저지는 개인 수행, 순찰 재배치는 집단 운영의 직접 근거다. 국가 장군 경력이나 사법 권한은 추가하지 않는다.",
+      "en": "Intruder restraint supports personal performance; patrol redeployment supports group operations. National generalship and judicial authority are not added."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -836,7 +980,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 영등포 관로 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 주사. 직함은 영등포 관로 순찰대 조장. 순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다.",
     "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 영등포 관로 순찰대 조장 자리의 서명이 장부에 올랐다.",
     "관계": "김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.",
@@ -844,7 +987,7 @@
     "공포": "관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.",
     "개입": "관로 폭파 위협의 진원을 밝혀 사격선을 거두거나, 암호패 유출을 넘겨 조장을 교체하게 할 수 있다."
   },
-  "biography": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다. 부하의 급수표가 밀리면 자신이 습지를 먼저 걷는다.\n\n- 소속: 수문국\n- 생업: 관로 순찰\n- 품계: 주사\n- 직함: 영등포 관로 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 영등포 관로 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 주사. 직함은 영등포 관로 순찰대 조장. 순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 영등포 관로 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.\n\n**야망.** 영등포 관로와 교량 밑 순찰을 수문경비 단일 암호패로 묶어 물 계약의 야간 뼈대가 된다.\n\n**공포.** 관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.\n\n**개입.** 관로 폭파 위협의 진원을 밝혀 사격선을 거두거나, 암호패 유출을 넘겨 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −25 | 무력 25 | 물질 35 | 공동 25 | 원칙 20 | 공개 5 | 자격 0 | 분산 −40 | 변혁 −15\n- 욕망: 갈망 40 | 독점 −25 | 위험 25 | 과시 5 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "발소리보다 관로 쇠망치 소리를 먼저 듣고, 야간 무단 도하를 사고보다 고의로 본다. 부하의 급수표가 밀리면 자신이 습지를 먼저 걷는다.\n\n- 소속: 수문국\n- 생업: 관로 순찰\n- 품계: 주사\n- 직함: 영등포 관로 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 영등포 관로 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 주사. 직함은 영등포 관로 순찰대 조장. 순찰 시각을 공개 칠판에 쓰되, 야간 교량 밑은 김태운의 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 영등포 관로 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김태운의 수문 지휘를 현장에서 집행하고, 허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며, 임바다의 단수 골목을 우선 지킨다.\n\n**야망.** 영등포 관로와 교량 밑 순찰을 수문경비 단일 암호패로 묶어 물 계약의 야간 뼈대가 된다.\n\n**공포.** 관로 한 곳이 폭파되어 정수가 역류하고, 그 공백을 외부 보호군이 메우는 것.\n\n**개입.** 관로 폭파 위협의 진원을 밝혀 사격선을 거두거나, 암호패 유출을 넘겨 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −25 | 무력 25 | 물질 35 | 공동 25 | 원칙 20 | 공개 5 | 자격 0 | 분산 −40 | 변혁 −15\n- 욕망: 갈망 40 | 독점 −25 | 위험 25 | 과시 5 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-01"
   ],

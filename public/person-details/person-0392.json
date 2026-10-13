@@ -394,6 +394,142 @@
     "id": "K391",
     "personId": "person-0392"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "stock-inspection",
+        "name": {
+          "ko": "재고 검수",
+          "en": "Stock inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "이상 재고 보류",
+          "en": "Holds questionable stock"
+        },
+        "description": {
+          "ko": "녹기 시작한 냉동재고 경매를 유찰시키고 열쇠를 보관했다. 오염 약과 식량 상자가 섞이는 것을 경계한다.",
+          "en": "Stops an auction of thawing frozen stock and retains the key. Watches against mixing contaminated medicines with food boxes."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 이상 재고 보류을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "부패 징후 때 유통을 멈추는 쪽으로 기울 수 있다.",
+          "en": "May suspend circulation when spoilage appears."
+        },
+        "relationship": {
+          "ko": "동예솔과 냉동 칸을 나누고 오해린 방송은 제한적으로 참고한다.",
+          "en": "Shares frozen compartments with Dong Yesol and uses O Haerin’s broadcasts selectively."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "동예솔과 냉동 칸을 나누고 오해린 방송은 제한적으로 참고한다.",
+          "en": "Shares frozen compartments with Dong Yesol and uses O Haerin’s broadcasts selectively."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "녹기 시작한 냉동재고 경매를 유찰시키고 열쇠를 보관했다. 오염 약과 식량 상자가 섞이는 것을 경계한다.",
+      "en": "Stops an auction of thawing frozen stock and retains the key. Watches against mixing contaminated medicines with food boxes."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -807,7 +943,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 물자 검수 부제 일을 맡았다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 부제. 직함은 교구 물자 검수 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
     "일화": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 교구 물자 검수 부제의 기록에 당시의 증언을 남겼다.",
     "관계": "동예솔의 청과 저울과 냉동 칸을 나누고, 매하루의 오염 약 명단이 가락 상자에 섞이지 않기를 바란다. 오해린의 시장 방송을 경매 시간에만 참고한다.",
@@ -815,7 +950,7 @@
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "매리울은 교구 물자 검수 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 교구 물자 검수·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 교구 물자 검수 부제\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 물자 검수 부제 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 부제. 직함은 교구 물자 검수 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 교구 물자 검수 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 동예솔의 청과 저울과 냉동 칸을 나누고, 매하루의 오염 약 명단이 가락 상자에 섞이지 않기를 바란다. 오해린의 시장 방송을 경매 시간에만 참고한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −15 | 물질 60 | 공동 −30 | 원칙 −50 | 공개 −15 | 자격 −10 | 분산 5 | 변혁 0\n- 욕망: 갈망 45 | 독점 20 | 위험 −35 | 과시 30 | 지속 −20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "매리울은 교구 물자 검수 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 교구 물자 검수·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 교구 물자 검수 부제\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 물자 검수 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 교구 물자 검수 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 교구 물자 검수 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 동예솔의 청과 저울과 냉동 칸을 나누고, 매하루의 오염 약 명단이 가락 상자에 섞이지 않기를 바란다. 오해린의 시장 방송을 경매 시간에만 참고한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −15 | 물질 60 | 공동 −30 | 원칙 −50 | 공개 −15 | 자격 −10 | 분산 5 | 변혁 0\n- 욕망: 갈망 45 | 독점 20 | 위험 −35 | 과시 30 | 지속 −20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-15"
   ],

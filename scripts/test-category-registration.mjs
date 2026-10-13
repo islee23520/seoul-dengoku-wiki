@@ -20,7 +20,7 @@ test('canonical entities retain source identities and omit faith and candidate e
   const documents = [...pages.map((page) => ({ slug: page.slug, route: `/world/${page.slug}` })), ...Array.from({ length: 26 }, (_, i) => ({ slug: `Hostile-Group-G${String(i + 1).padStart(2, '0')}`, route: `/world/Hostile-Group-G${String(i + 1).padStart(2, '0')}` }))]
   const entities = categoryEntities(pages, documents)
   assert.equal(entities.filter((item) => item.category === 'bestiary').length, 250)
-  assert.equal(entities.filter((item) => item.category === 'culture').length, 75)
+  assert.equal(entities.filter((item) => item.category === 'culture').length, 0)
   assert.ok(entities.some((item) => item.id === 'G01E01' && item.route.endsWith('#g01e01')))
   assert.ok(entities.filter((item) => /^G(?:07|08|09|10|11|12)E/.test(item.id)).every((item) => item.path[0].id === 'bestiary-human'))
   assert.ok(entities.filter((item) => /^G(?:19|20|21|22|23|24)E/.test(item.id)).every((item) => item.path[0].id === 'bestiary-infected'))

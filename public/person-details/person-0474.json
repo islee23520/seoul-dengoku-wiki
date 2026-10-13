@@ -394,6 +394,150 @@
     "id": "K474",
     "personId": "person-0474"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 45
+      },
+      {
+        "id": "accounts",
+        "name": {
+          "ko": "지급 장부 대조",
+          "en": "Payment ledger reconciliation"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "preserve-original-fields",
+        "name": {
+          "ko": "원본 칸 보존",
+          "en": "Preserve Original Fields"
+        },
+        "description": {
+          "ko": "오바서는 위조가 드러난 사본보다 원본의 기록 칸을 보존하는 태도를 보인다.",
+          "en": "O Baseo shows a preference for preserving original record fields over copies exposed as forged."
+        },
+        "behavior": {
+          "ko": "위조 도장이 드러난 뒤 사본을 불사르고 원본 칸을 지켰다.",
+          "en": "After a forged stamp was exposed, O Baseo burned the copies and protected the original fields."
+        },
+        "stress": {
+          "ko": "기록 훼손이 태욱그룹의 통행을 위협하면 원본 칸의 보존을 우선할 수 있다.",
+          "en": "If record damage threatens Taeuk Group's passage, O Baseo may prioritize preserving original fields."
+        },
+        "relationship": {
+          "ko": "선배 당직자와 기록을 넘길 때도 위조 사본보다 보존된 원본 칸을 신뢰의 기준으로 삼을 수 있다.",
+          "en": "During record handovers with senior duty staff, O Baseo may treat preserved original fields rather than forged copies as the basis for trust."
+        },
+        "effects": []
+      },
+      {
+        "id": "authority-boundaries",
+        "name": {
+          "ko": "권한 경계",
+          "en": "Authority Boundaries"
+        },
+        "description": {
+          "ko": "오바서는 자기 직위에 없는 권한을 만들지 않는 경계를 중시한다.",
+          "en": "O Baseo values staying within the authority actually assigned to the position."
+        },
+        "behavior": {
+          "ko": "인수인계에서 자기 직위의 열쇠와 기록만 넘기고 없는 권한은 만들지 않는다.",
+          "en": "O Baseo hands over only the position's keys and records without inventing additional authority."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 위협해도 권한을 임의로 늘리기보다 맡은 기록의 연속성을 지키려 할 수 있다.",
+          "en": "Even if a duty gap threatens passage, O Baseo may favor maintaining assigned records rather than unilaterally expanding authority."
+        },
+        "relationship": {
+          "ko": "선배 당직자와는 권한 확대보다 자기 몫의 열쇠와 기록을 정확히 넘기는 방식으로 협력할 수 있다.",
+          "en": "O Baseo may cooperate with senior duty staff through precise handovers of assigned keys and records rather than expanded powers."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "위조 도장이 드러난 뒤 사본을 불사르고 원본 칸을 지켰다. 사건의 책임이 모호해 위조 탐지의 전문성은 단정하지 않는다.",
+      "en": "He burned a copy after a forged seal was exposed and protected the original slot. Ambiguous responsibility prevents assuming expert detection."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -743,7 +887,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -751,7 +894,7 @@
     "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −30 | 물질 20 | 공동 −10 | 원칙 75 | 공개 40 | 자격 45 | 분산 15 | 변혁 10\n- 욕망: 갈망 20 | 독점 25 | 위험 −40 | 과시 −5 | 지속 15 | 지향 유동 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −30 | 물질 20 | 공동 −10 | 원칙 75 | 공개 40 | 자격 45 | 분산 15 | 변혁 10\n- 욕망: 갈망 20 | 독점 25 | 위험 −40 | 과시 −5 | 지속 15 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

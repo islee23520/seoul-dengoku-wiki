@@ -392,6 +392,142 @@
     "id": "K478",
     "personId": "person-0478"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "departure-record-handoff",
+        "name": {
+          "ko": "출발 기록 인계",
+          "en": "Departure record handoff"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k478-disposition",
+        "name": {
+          "ko": "완료 기록을 경계함",
+          "en": "Caution about completion records"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: dispatch clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Benjamin Clark gives Léa Martin dispatch records missing departure signatures. Léa checks posted copies and slot-occupation records so unverified departures are not retained as complete in the next dispatch."
+        },
+        "effects": []
+      },
+      {
+        "id": "k478-choice",
+        "name": {
+          "ko": "누락을 넘겨 확인함",
+          "en": "Referring omissions for checking"
+        },
+        "description": {
+          "ko": "일화. 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he stopped a dispatch-sheetless train and blocked an unsigned departure. By this deed the signature of the dispatch clerk post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Benjamin Clark gives Léa Martin dispatch records missing departure signatures. Léa checks posted copies and slot-occupation records so unverified departures are not retained as complete in the next dispatch."
+        },
+        "stress": {
+          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Benjamin Clark gives Léa Martin dispatch records missing departure signatures. Léa checks posted copies and slot-occupation records so unverified departures are not retained as complete in the next dispatch."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "서명 없는 출발을 막고 레아에게 기록을 넘긴다. 후속 기록의 오류를 경계하지만 사본 검증 성과는 레아에게 남긴다.",
+      "en": "Blocks an unsigned departure and passes its record to Lea. Guards against downstream errors without claiming Lea’s copy review."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -737,7 +873,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 벤저민 클라크는 2095년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 에드워드 클라크는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 벤저민 클라크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.",
@@ -745,7 +880,7 @@
     "공포": "배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 벤저민 클라크는 2095년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 에드워드 클라크는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 벤저민 클라크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 20 | 공동 −15 | 원칙 5 | 공개 −10 | 자격 30 | 분산 5 | 변혁 10\n- 욕망: 갈망 35 | 독점 35 | 위험 5 | 과시 10 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 벤저민 클라크는 2095년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 에드워드 클라크는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 벤저민 클라크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 벤저민 클라크는 출발 서명이 빠진 배차 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시 사본과 창 점유 기록을 확인해 미확인 출발이 다음 배차에 완료로 남지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 20 | 공동 −15 | 원칙 5 | 공개 −10 | 자격 30 | 분산 5 | 변혁 10\n- 욕망: 갈망 35 | 독점 35 | 위험 5 | 과시 10 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],

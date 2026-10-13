@@ -393,6 +393,142 @@
     "id": "K227",
     "personId": "person-0228"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "duty-care",
+        "name": {
+          "ko": "당직자 진료",
+          "en": "Duty-worker care"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "duty-care-disposition",
+        "name": {
+          "ko": "국적보다 환자",
+          "en": "Patient before nationality"
+        },
+        "description": {
+          "ko": "손떨림을 먼저 보고 약 봉투에 국적을 쓰지 않는다.",
+          "en": "Notices trembling first and refuses nationality on medicine packets."
+        },
+        "behavior": {
+          "ko": "손떨림을 먼저 보고 약 봉투에 국적을 쓰지 않는다.",
+          "en": "Notices trembling first and refuses nationality on medicine packets."
+        },
+        "stress": {
+          "ko": "가짜 각성제 확산을 두려워한다.",
+          "en": "Fears counterfeit stimulant spread."
+        },
+        "relationship": {
+          "ko": "권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.",
+          "en": "Treats Gwon Mirae’s overnight crew, stands by for Hwang Eunseol and owes Ryu Eunbi for fever herbs."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "보호를 위한 침묵",
+          "en": "Protective silence"
+        },
+        "description": {
+          "ko": "환자를 살리기 위해 감정 요청을 미룬다.",
+          "en": "Delays appraisal requests to protect patients."
+        },
+        "behavior": {
+          "ko": "환자를 살리기 위해 감정 요청을 미룬다.",
+          "en": "Delays appraisal requests to protect patients."
+        },
+        "stress": {
+          "ko": "가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.",
+          "en": "Fears counterfeit stimulant spread."
+        },
+        "relationship": {
+          "ko": "권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.",
+          "en": "Treats Gwon Mirae’s overnight crew, stands by for Hwang Eunseol and owes Ryu Eunbi for fever herbs."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "밤샘 조를 진료하고 각성제를 공동 서명에 묶는다. 보호를 위해 감정 요청도 미룬다.",
+      "en": "Treats overnight crews, requires joint stimulant signatures and delays appraisal for patient protection."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -789,7 +925,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 금고 당직 의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 금고 당직 의무원. 당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다.",
     "일화": "편집 공백이 발견된 밤에 당직 두 명이 쓰러지고 각성제 봉인이 한 줄 빠져 있었다.",
     "관계": "권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.",
@@ -797,7 +932,7 @@
     "공포": "가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.",
     "개입": "빠진 봉인을 추적하거나, 의무실 열쇠를 출자 평의회와 나눠 쥐게 할 수 있다."
   },
-  "biography": "밤샘하는 기사의 손떨림을 먼저 보고, 약 봉투에 국적을 적는 일을 거부한다. 침묵으로 환자를 살릴 때는 감정 요청도 미룬다.\n\n- 생업: 금고 당직 진료·각성제 사용 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금고 당직 의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 금고 당직 의무원. 당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다.\n\n**일화.** 편집 공백이 발견된 밤에 당직 두 명이 쓰러지고 각성제 봉인이 한 줄 빠져 있었다.\n\n**관계.** 권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.\n\n**야망.** 여의도 금고와 장부 저장소에 독립 의무실을 두어, 감정 교대가 쓰러져도 공용 화폐의 발행이 멈추지 않게 한다.\n\n**공포.** 가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.\n\n**개입.** 빠진 봉인을 추적하거나, 의무실 열쇠를 출자 평의회와 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −60 | 물질 −5 | 공동 10 | 원칙 20 | 공개 55 | 자격 5 | 분산 20 | 변혁 −5\n- 욕망: 갈망 50 | 독점 −10 | 위험 −5 | 과시 5 | 지속 30 | 지향 무성향 | 결합 없음",
+  "biography": "밤샘하는 기사의 손떨림을 먼저 보고, 약 봉투에 국적을 적는 일을 거부한다. 침묵으로 환자를 살릴 때는 감정 요청도 미룬다.\n\n- 생업: 금고 당직 진료·각성제 사용 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 당직 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금고 당직 의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 서기. 직함은 금고 당직 의무원. 당직 활력 기록을 의무실 문에 붙이고, 각성제 사용은 두 의무원의 서명 없이 금지한다.\n\n**일화.** 편집 공백이 발견된 밤에 당직 두 명이 쓰러지고 각성제 봉인이 한 줄 빠져 있었다.\n\n**관계.** 권미래의 밤샘 조를 진료하고, 황은설의 보류 감정 밤에 대기한다. 류은비에게 해열 약재 배정을 빚졌다.\n\n**야망.** 여의도 금고와 장부 저장소에 독립 의무실을 두어, 감정 교대가 쓰러져도 공용 화폐의 발행이 멈추지 않게 한다.\n\n**공포.** 가짜 각성제가 당직 줄에 퍼져 위조 화폐가 그대로 나가는 것.\n\n**개입.** 빠진 봉인을 추적하거나, 의무실 열쇠를 출자 평의회와 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −60 | 물질 −5 | 공동 10 | 원칙 20 | 공개 55 | 자격 5 | 분산 20 | 변혁 −5\n- 욕망: 갈망 50 | 독점 −10 | 위험 −5 | 과시 5 | 지속 30 | 지향 무성향 | 결합 없음",
   "sources": [
     "Cast-State-09"
   ],

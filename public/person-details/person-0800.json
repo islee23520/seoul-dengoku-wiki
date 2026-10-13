@@ -394,6 +394,142 @@
     "id": "K800",
     "personId": "person-0800"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "wheel-check",
+        "name": {
+          "ko": "차륜 결함 확인",
+          "en": "Wheel-defect checking"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "wheel-check-disposition",
+        "name": {
+          "ko": "손으로 확인하는 결함",
+          "en": "Checks defects by touch"
+        },
+        "description": {
+          "ko": "촉각으로 드러난 결함 앞에서 운행을 중지한다.",
+          "en": "Halts operation over a defect found by touch."
+        },
+        "behavior": {
+          "ko": "촉각으로 드러난 결함 앞에서 운행을 중지한다.",
+          "en": "Halts operation over a defect found by touch."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행과 기록을 강국에 의존하게 할 것을 경계한다.",
+          "en": "Fears vacant duty making passage and records dependent on great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Maintains handover ties with senior duty workers of the same living area."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-handover",
+        "name": {
+          "ko": "경계를 지키는 인계",
+          "en": "Bounded handover"
+        },
+        "description": {
+          "ko": "당직을 잇되 없는 권한을 만들지 않는다.",
+          "en": "Keeps duty continuous without inventing authority."
+        },
+        "behavior": {
+          "ko": "자기 열쇠와 기록만 넘긴다.",
+          "en": "Hands over only duty keys and records."
+        },
+        "stress": {
+          "ko": "당직 공백이 외부 의존으로 번질 것을 경계한다.",
+          "en": "Fears vacant duty becoming dependence."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인수인계로 연결된다.",
+          "en": "Maintains handover ties with senior duty workers of the same living area."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "탈선 직전 바퀴 결함을 찾아 열차를 멈췄다. 짧은 일화와 인계만으로 전문 지휘·전투·제도 성립을 추정하지 않는다.",
+      "en": "Detected a wheel defect and halted the train before derailment. The short anecdote and handover do not establish expert command, combat or institutional success."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -817,7 +953,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 서기. 직함은 금고 정비사. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 금고 정비사 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -825,7 +960,7 @@
     "공포": "금고 정비사 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 금고 설비 점검·정비\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 서기. 직함은 금고 정비사. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 금고 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 금고 정비사 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 금고 정비사 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −40 | 물질 0 | 공동 −10 | 원칙 30 | 공개 45 | 자격 20 | 분산 30 | 변혁 0\n- 욕망: 갈망 5 | 독점 10 | 위험 5 | 과시 20 | 지속 0 | 지향 유동 | 결합 다자",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 금고 설비 점검·정비\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 서기. 직함은 금고 정비사. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 금고 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 금고 정비사 자리에서 여의도출자연합회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 금고 정비사 당직이 비면 여의도출자연합회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −40 | 물질 0 | 공동 −10 | 원칙 30 | 공개 45 | 자격 20 | 분산 30 | 변혁 0\n- 욕망: 갈망 5 | 독점 10 | 위험 5 | 과시 20 | 지속 0 | 지향 유동 | 결합 다자",
   "sources": [
     "Cast-State-09"
   ],

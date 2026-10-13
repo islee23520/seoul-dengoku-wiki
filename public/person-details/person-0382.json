@@ -394,6 +394,142 @@
     "id": "K381",
     "personId": "person-0382"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "bed-allocation",
+        "name": {
+          "ko": "침상 배분",
+          "en": "Bed allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "돌봄 창구 유지",
+          "en": "Keeps care accessible"
+        },
+        "description": {
+          "ko": "진료 중단 요구에도 의무막을 유지하고 임시 침상을 준다. 확인된 것은 지원과 물자 조정이지 전문 진단 성과가 아니다.",
+          "en": "Keeps the medical tent open despite suspension demands and provides temporary beds. Evidence supports aid and supply coordination, not diagnostic mastery."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 돌봄 창구 유지을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "중단 요구가 오면 기존 침상을 지키는 데 집중할 수 있다.",
+          "en": "May focus on preserving existing beds under suspension demands."
+        },
+        "relationship": {
+          "ko": "전나경과 침상을 나누고 선다솜의 의료 물자를 맞춘다.",
+          "en": "Coordinates beds with Jeon Nagyeong and medical supplies with Seon Dasom."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "전나경과 침상을 나누고 선다솜의 의료 물자를 맞춘다.",
+          "en": "Coordinates beds with Jeon Nagyeong and medical supplies with Seon Dasom."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "진료 중단 요구에도 의무막을 유지하고 임시 침상을 준다. 확인된 것은 지원과 물자 조정이지 전문 진단 성과가 아니다.",
+      "en": "Keeps the medical tent open despite suspension demands and provides temporary beds. Evidence supports aid and supply coordination, not diagnostic mastery."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -758,7 +894,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 명동역 교구청에서 명동역 구휼 의무 부제 일을 맡았다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 부제. 직함은 명동역 구휼 의무 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
     "일화": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우자 상인회의가 진료 중단을 요구했고 방늘재는 광장 의무막을 내리지 않았다. 명동역 구휼 의무 부제의 기록에 당시의 증언을 남겼다.",
     "관계": "전나경의 비상 배급줄과 침상을 나누고, 선다솜의 의료 거점과 물자를 맞춘다. 백온의 남하 가족에게 임시 침상을 준다.",
@@ -766,7 +901,7 @@
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "방늘재는 명동역 구휼 의무 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 구휼 의무 지원·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 의무 부제\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 명동역 교구청에서 명동역 구휼 의무 부제 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 의무 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우자 상인회의가 진료 중단을 요구했고 방늘재는 광장 의무막을 내리지 않았다. 명동역 구휼 의무 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 전나경의 비상 배급줄과 침상을 나누고, 선다솜의 의료 거점과 물자를 맞춘다. 백온의 남하 가족에게 임시 침상을 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 40 | 무력 −30 | 물질 40 | 공동 −15 | 원칙 −30 | 공개 −20 | 자격 −5 | 분산 5 | 변혁 5\n- 욕망: 갈망 −5 | 독점 10 | 위험 −25 | 과시 −15 | 지속 5 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "방늘재는 명동역 구휼 의무 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 구휼 의무 지원·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 의무 부제\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 명동역 교구청에서 명동역 구휼 의무 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 의무 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우자 상인회의가 진료 중단을 요구했고 방늘재는 광장 의무막을 내리지 않았다. 명동역 구휼 의무 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 전나경의 비상 배급줄과 침상을 나누고, 선다솜의 의료 거점과 물자를 맞춘다. 백온의 남하 가족에게 임시 침상을 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 40 | 무력 −30 | 물질 40 | 공동 −15 | 원칙 −30 | 공개 −20 | 자격 −5 | 분산 5 | 변혁 5\n- 욕망: 갈망 −5 | 독점 10 | 위험 −25 | 과시 −15 | 지속 5 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-15"
   ],

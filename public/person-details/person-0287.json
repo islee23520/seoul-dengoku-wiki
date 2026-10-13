@@ -47,7 +47,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.",
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -393,6 +393,142 @@
   "gurps": {
     "id": "K286",
     "personId": "person-0287"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k286-level-and-valve-recording",
+        "name": {
+          "ko": "수위·밸브 기록",
+          "en": "Level and valve recording"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k286-priority",
+        "name": {
+          "ko": "실제 수위 우선",
+          "en": "Actual water level first"
+        },
+        "description": {
+          "ko": "모복은 압력 저하 통지에 줄을 둘로 나누되 시험 연기를 적지 않았다. 통지와 실제 수위를 함께 읽는 현장 판단이다.",
+          "en": "Mobok split the queue after a pressure notice without posting trial postponement, judging the notice alongside actual water levels."
+        },
+        "behavior": {
+          "ko": "수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
+          "en": "Office. Rank: assistant manager. Title: residential shell water-supply outpost chief, duty officer of Seo Jina. When the water-level rod touched the lowest graduation, he split the bucket queue in two and allowed the next open-close only after the handle's paint dried."
+        },
+        "stress": {
+          "ko": "거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
+          "en": "Fear. That the outpost valve would be bound to the technology-trial schedule and the handle would come off with the paint before the residential kettles cooled."
+        },
+        "relationship": {
+          "ko": "서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
+          "en": "Relations. Under command to execute Seo Jina's housing audit at the outpost handle, he hung So Bong's courier paper and the water-level rod on the same nail. Moved Han Jaemok's water-talk hours onto the rod from the shell side."
+        },
+        "effects": []
+      },
+      {
+        "id": "k286-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
+          "en": "Office. Rank: assistant manager. Title: residential shell water-supply outpost chief, duty officer of Seo Jina. When the water-level rod touched the lowest graduation, he split the bucket queue in two and allowed the next open-close only after the handle's paint dried."
+        },
+        "stress": {
+          "ko": "공포. 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
+          "en": "Fear. That the outpost valve would be bound to the technology-trial schedule and the handle would come off with the paint before the residential kettles cooled."
+        },
+        "relationship": {
+          "ko": "관계. 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
+          "en": "Relations. Under command to execute Seo Jina's housing audit at the outpost handle, he hung So Bong's courier paper and the water-level rod on the same nail. Moved Han Jaemok's water-talk hours onto the rod from the shell side."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "모복은 압력 저하 통지에 줄을 둘로 나누되 시험 연기를 적지 않았다. 통지와 실제 수위를 함께 읽는 현장 판단이다.",
+      "en": "Mobok split the queue after a pressure notice without posting trial postponement, judging the notice alongside actual water levels."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -836,7 +972,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
     "일화": "북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.",
     "관계": "서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
@@ -844,7 +979,7 @@
     "공포": "거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
     "개입": "대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다."
   },
-  "biography": "양동 줄의 길이로 밤 수위를 읽고, 기술 탓에 주전자가 비는 순간을 거점의 실패로 적는다. 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n- 생업: 사택 급수 수위 확인·개폐 조정\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 급수 거점장, 서진아의 실무 담당자\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.\n\n**일화.** 북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.\n\n**관계.** 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.\n\n**야망.** 양동 줄이 흩어지기 전에 거점 밸브를 회장실 게시와 같은 시각에만 돌린다.\n\n**공포.** 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.\n\n**개입.** 대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −15 | 물질 25 | 공동 20 | 원칙 0 | 공개 0 | 자격 60 | 분산 15 | 변혁 −30\n- 욕망: 갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "양동 줄의 길이로 밤 수위를 읽고, 기술 탓에 주전자가 비는 순간을 거점의 실패로 적는다. 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n- 생업: 사택 급수 수위 확인·개폐 조정\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 급수 거점장, 서진아의 실무 담당자\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.\n\n**일화.** 북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.\n\n**관계.** 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.\n\n**야망.** 양동 줄이 흩어지기 전에 거점 밸브를 회장실 게시와 같은 시각에만 돌린다.\n\n**공포.** 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.\n\n**개입.** 대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −15 | 물질 25 | 공동 20 | 원칙 0 | 공개 0 | 자격 60 | 분산 15 | 변혁 −30\n- 욕망: 갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

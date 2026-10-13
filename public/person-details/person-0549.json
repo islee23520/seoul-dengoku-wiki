@@ -394,6 +394,142 @@
     "id": "K549",
     "personId": "person-0549"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "public-desk-referral",
+        "name": {
+          "ko": "창구 안내",
+          "en": "Public desk referral"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "청탁 대신 공개 접수",
+          "en": "Public intake instead of private requests"
+        },
+        "description": {
+          "ko": "사적 청탁을 공개 창구로 돌렸다. 절차를 택한 행동은 확인되지만 검역 기술은 직함 외 근거가 없다.",
+          "en": "A private request was redirected to public intake. The procedure is recorded; quarantine technique has no evidence beyond title."
+        },
+        "behavior": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "stress": {
+          "ko": "공포. 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.",
+          "en": "Fear. That the quarantine clerk duty post would stand empty and the Government's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.",
+          "en": "Office. Rank: sergeant. Title: quarantine clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: quarantine clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the quarantine clerk duty post would stand empty and the Government's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "사적 청탁을 공개 창구로 돌렸다. 절차를 택한 행동은 확인되지만 검역 기술은 직함 외 근거가 없다.",
+      "en": "A private request was redirected to public intake. The procedure is recorded; quarantine technique has no evidence beyond title."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -775,7 +911,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -783,7 +918,7 @@
     "공포": "검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 검역 기록·당직 열쇠 인계\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 검역 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −20 | 무력 45 | 물질 5 | 공동 20 | 원칙 5 | 공개 −20 | 자격 −10 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 20 | 독점 −20 | 위험 15 | 과시 −20 | 지속 20 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 검역 기록·당직 열쇠 인계\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 검역 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −20 | 무력 45 | 물질 5 | 공동 20 | 원칙 5 | 공개 −20 | 자격 −10 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 20 | 독점 −20 | 위험 15 | 과시 −20 | 지속 20 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-14"
   ],

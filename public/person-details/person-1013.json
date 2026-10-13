@@ -382,6 +382,118 @@
     "id": "K1013",
     "personId": "person-1013"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 13,
+        "effective": 13
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k1013-pass-reading",
+        "name": {
+          "ko": "다국어 통행증 판독",
+          "en": "Multilingual-pass reading"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1013-trait-1",
+        "name": {
+          "ko": "진영보다 도착 층",
+          "en": "Arrival floor before faction"
+        },
+        "description": {
+          "ko": "실제 환승 조건부터 묻는다.",
+          "en": "Asks about practical transfer conditions first."
+        },
+        "behavior": {
+          "ko": "실제 환승 조건부터 묻는다.",
+          "en": "Asks about practical transfer conditions first."
+        },
+        "stress": {
+          "ko": "외국어 금지에도 한 언어 통행증에는 승강기를 열지 않는다.",
+          "en": "Still refuses lift access for one-language passes under foreign-language bans."
+        },
+        "relationship": {
+          "ko": "박태겸과 계약하고 조엘 박과 통행을 협력한다.",
+          "en": "Contracts with Park Taegyeom and cooperates on access with Joel Park."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "진영 이름보다 열차가 서는 층을 먼저 묻고 다국어 통행증을 대조한다. 한 언어 통행증에는 승강기를 열지 않는다. 환적을 잇는 언어 실무가 무장이나 국가 통제권을 주지는 않는다.",
+      "en": "He asks which floor a train stops on before asking its faction and compares multilingual passes. He will not open the lift for a single-language pass. Language work connecting transfers confers neither arms nor state control."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",

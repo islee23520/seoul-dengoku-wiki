@@ -393,6 +393,150 @@
     "id": "K008",
     "personId": "person-0008"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 12,
+        "effective": 12
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k008-release-negotiation",
+        "name": {
+          "ko": "방류량 협의",
+          "en": "Release negotiation"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k008-ration-queue-posting",
+        "name": {
+          "ko": "대기표 게시",
+          "en": "Ration-queue posting"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k008-family-minimum",
+        "name": {
+          "ko": "가족의 식수선",
+          "en": "Family water minimum"
+        },
+        "description": {
+          "ko": "가족 배급이 끊기면 효율을 이유로 한 타협을 멈춘다.",
+          "en": "Stops compromising when family water rations are cut."
+        },
+        "behavior": {
+          "ko": "가족 배급이 끊기면 효율을 이유로 한 타협을 멈춘다.",
+          "en": "Stops compromising when family water rations are cut."
+        },
+        "stress": {
+          "ko": "골목 하나를 희생하자는 말을 모욕으로 받아들인다.",
+          "en": "Takes proposals to sacrifice a neighborhood as an insult."
+        },
+        "relationship": {
+          "ko": "백온의 이동 급수권과 이서담의 거부권을 따른다.",
+          "en": "Works with Baek On’s mobile water rights and Lee Seodam’s veto."
+        },
+        "effects": []
+      },
+      {
+        "id": "k008-public-waiting-order",
+        "name": {
+          "ko": "공개 대기표",
+          "en": "Public waiting order"
+        },
+        "description": {
+          "ko": "단수 예고에 대표 연서를 모아 개방을 요구한다.",
+          "en": "Demands reservoir access through joint signatures after cutoff notices."
+        },
+        "behavior": {
+          "ko": "단수 예고에 대표 연서를 모아 개방을 요구한다.",
+          "en": "Demands reservoir access through joint signatures after cutoff notices."
+        },
+        "stress": {
+          "ko": "주민이 난민 명부로 떠밀릴 상황을 두려워한다.",
+          "en": "Fears residents being pushed onto refugee registers."
+        },
+        "relationship": {
+          "ko": "한재목의 집단 단수에는 깊은 원한을 남긴다.",
+          "en": "Retains deep resentment toward Han Jaemok’s collective cutoffs."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "가뭄 방류량 협의와 대기표 공개는 실제 실무다. 식수 최저선을 계약에 남기려 하지만 협상 성과와 전투 경력은 확인되지 않았다.",
+      "en": "Drought-release discussions and public waiting lists establish practical experience. The contractual water minimum remains an ambition; negotiation outcomes and combat experience are unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -863,7 +1007,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.",
     "일화": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 서부 급수권 시민대표 자리의 서명이 장부에 올랐다.",
     "관계": "백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.",
@@ -871,7 +1014,7 @@
     "공포": "재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.",
     "개입": "단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다."
   },
-  "biography": "온화하나 가족 단위 배급이 끊기는 순간 타협을 멈춘다. 효율을 이유로 한 골목을 희생하자는 말을 모욕으로 듣는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 구역장\n- 직함: 서부 급수권 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.\n\n**일화.** 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 서부 급수권 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.\n\n**야망.** 집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.\n\n**개입.** 단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "온화하나 가족 단위 배급이 끊기는 순간 타협을 멈춘다. 효율을 이유로 한 골목을 희생하자는 말을 모욕으로 듣는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 구역장\n- 직함: 서부 급수권 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.\n\n**일화.** 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 서부 급수권 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.\n\n**야망.** 집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.\n\n**개입.** 단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

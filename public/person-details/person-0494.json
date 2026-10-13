@@ -286,6 +286,142 @@
     "id": "K494",
     "personId": "person-0494"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "dual-watch-check",
+        "name": {
+          "ko": "당직 이중 확인",
+          "en": "Dual-watch verification"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k494-disposition",
+        "name": {
+          "ko": "혼자 확인하지 않음",
+          "en": "Not checking alone"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: relay duty. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the relay duty duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. David Fischer gives Sofia Rossi records of transmission-editing gaps checked by two duty workers. Sofia checks meeting-message transmission and receipt times to distinguish missing delivery from the absence of a notice."
+        },
+        "effects": []
+      },
+      {
+        "id": "k494-choice",
+        "name": {
+          "ko": "공백을 통지함",
+          "en": "Reporting gaps"
+        },
+        "description": {
+          "ko": "일화. 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. On the night an editing gap was found in 2125, he stood up two duty hands and made a double check. By this deed the signature of the relay duty post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. David Fischer gives Sofia Rossi records of transmission-editing gaps checked by two duty workers. Sofia checks meeting-message transmission and receipt times to distinguish missing delivery from the absence of a notice."
+        },
+        "stress": {
+          "ko": "공포. 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the relay duty duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. David Fischer gives Sofia Rossi records of transmission-editing gaps checked by two duty workers. Sofia checks meeting-message transmission and receipt times to distinguish missing delivery from the absence of a notice."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "편집 공백에 두 당직을 세우고 소피아에게 기록을 전한다. 좁은 인력 배치의 근거는 있으나 조직 전체 지휘는 없다.",
+      "en": "Assigns two watchkeepers to an editing gap and sends the record to Sofia. Supports limited task allocation, not organization-wide command."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -705,7 +841,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 다비트 피셔는 2067년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 한스 피셔는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 다비트 피셔의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.",
@@ -713,7 +848,7 @@
     "공포": "중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 송신 편집 공백 이중 확인\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 다비트 피셔는 2067년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 한스 피셔는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 다비트 피셔의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 10 | 무력 −5 | 물질 10 | 공동 0 | 원칙 −5 | 공개 −10 | 자격 30 | 분산 5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 10 | 위험 −25 | 과시 −25 | 지속 20 | 지향 양성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 송신 편집 공백 이중 확인\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 다비트 피셔는 2067년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 한스 피셔는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 다비트 피셔의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 다비트 피셔는 송신 편집의 빈 시각을 두 당직이 확인한 기록으로 소피아 로시에게 전한다. 소피아 로시는 회의 전갈의 송신·인수 시각을 확인해 소식 누락과 실제 통지 부재를 구분한다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 10 | 무력 −5 | 물질 10 | 공동 0 | 원칙 −5 | 공개 −10 | 자격 30 | 분산 5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 10 | 위험 −25 | 과시 −25 | 지속 20 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],

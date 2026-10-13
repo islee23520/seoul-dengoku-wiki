@@ -285,6 +285,142 @@
     "id": "K077",
     "personId": "person-0077"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "generator",
+        "name": {
+          "ko": "비상 발전·전압 확인",
+          "en": "Emergency generation and voltage checks"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "minimum-voltage",
+        "name": {
+          "ko": "전압 최저선",
+          "en": "Minimum Voltage"
+        },
+        "description": {
+          "ko": "채무진은 종자 보존에 필요한 전압 최저선을 타협하기 어려운 운전 기준으로 여긴다.",
+          "en": "Chae Mujin treats the minimum voltage needed for seed preservation as a firm operating threshold."
+        },
+        "behavior": {
+          "ko": "전압이 최저선 아래면 반출 스위치를 빼고 비상 발전을 냉온고에 우선 배정한다.",
+          "en": "Chae Mujin removes the release switch below the voltage threshold and prioritizes emergency power for temperature-controlled storage."
+        },
+        "stress": {
+          "ko": "연료 고갈로 보존고가 약탈에 노출될 우려가 커지면 전압표와 발전 우선순위를 더욱 중시할 수 있다.",
+          "en": "If fuel depletion threatens to expose the seed store to looting, Chae Mujin may emphasize voltage records and power priorities more strongly."
+        },
+        "relationship": {
+          "ko": "박진솔의 봉인 시각에 발전을 맞추되 정하린의 잠금이 내려가면 반출 스위치를 빼는 조건을 지키려 할 수 있다.",
+          "en": "Chae Mujin may coordinate power with Park Jinsol's sealing schedule while maintaining switch removal when Jeong Harin imposes a lock."
+        },
+        "effects": []
+      },
+      {
+        "id": "no-seeds-as-collateral",
+        "name": {
+          "ko": "씨앗 담보 거부",
+          "en": "No Seeds as Collateral"
+        },
+        "description": {
+          "ko": "채무진은 보존할 씨앗을 군량 담보나 시세 거래의 대상으로 삼는 데 반대한다.",
+          "en": "Chae Mujin opposes treating preserved seeds as military-ration collateral or speculative goods."
+        },
+        "behavior": {
+          "ko": "씨앗을 군량 담보로 부르는 말을 끊고 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.",
+          "en": "Chae Mujin cuts off talk of seeds as military collateral and locks the fuel door when Nam Yungyeong quotes seed prices."
+        },
+        "stress": {
+          "ko": "연료를 끊겠다는 압박이 씨앗 보존을 흔들면 거래 요구보다 보존 설비의 통제를 우선할 수 있다.",
+          "en": "If threats to cut fuel endanger seed preservation, Chae Mujin may prioritize control of preservation equipment over trading demands."
+        },
+        "relationship": {
+          "ko": "남윤경과의 접촉에서는 씨앗 시세를 근거로 보존고 자원에 접근하는 것을 경계할 수 있다.",
+          "en": "In dealings with Nam Yungyeong, Chae Mujin may resist access to storage resources justified by seed prices."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "발전을 냉온고에 우선 배정하고 전압표를 공개했다. 발전 운전의 반복 징후 확인이 근거이며 발명가 경력은 추가하지 않는다.",
+      "en": "He prioritizes cold storage for power and posts voltage readings. Repeated operational checks support generation work, not an inventor’s career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -654,7 +790,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 종자보존고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자보존고 비상발전 운전장. 교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다.",
     "일화": "흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다.",
     "관계": "박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약이고, 정하린의 잠금이 내려가면 스위치를 뽑는다. 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.",
@@ -662,7 +797,7 @@
     "공포": "연료가 마른 밤에 전압이 죽어 보존고 문이 약탈 손잡이로만 남는 것.",
     "개입": "연료 눈금이 흔들린 밤에 스위치를 뽑거나, 담에 닿은 입찰 전령보다 먼저 전압표를 문에 남길 수 있다."
   },
-  "biography": "연료 눈금의 흔들림을 빈칸보다 먼저 고치고, 씨앗을 군량 담보로 부르는 목소리를 발전기 곁에서 끊는다. 전압 일지의 숫자를 깎아 달라는 쪽지를 태운다.\n\n- 소속: 태욱그룹\n- 생업: 비상 발전 운전\n- 품계: 대리\n- 직함: 종자보존고 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 종자보존고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자보존고 비상발전 운전장. 교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다.\n\n**일화.** 흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다.\n\n**관계.** 박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약이고, 정하린의 잠금이 내려가면 스위치를 뽑는다. 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.\n\n**야망.** 전압표를 보존고 문에 공개해, 연료를 끊는 협박이 한 해 씨앗을 흔들지 못하게 한다.\n\n**공포.** 연료가 마른 밤에 전압이 죽어 보존고 문이 약탈 손잡이로만 남는 것.\n\n**개입.** 연료 눈금이 흔들린 밤에 스위치를 뽑거나, 담에 닿은 입찰 전령보다 먼저 전압표를 문에 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −25 | 물질 15 | 공동 0 | 원칙 50 | 공개 35 | 자격 30 | 분산 5 | 변혁 20\n- 욕망: 갈망 30 | 독점 10 | 위험 5 | 과시 30 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "연료 눈금의 흔들림을 빈칸보다 먼저 고치고, 씨앗을 군량 담보로 부르는 목소리를 발전기 곁에서 끊는다. 전압 일지의 숫자를 깎아 달라는 쪽지를 태운다.\n\n- 소속: 태욱그룹\n- 생업: 비상 발전 운전\n- 품계: 대리\n- 직함: 종자보존고 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 종자보존고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자보존고 비상발전 운전장. 교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다.\n\n**일화.** 흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다.\n\n**관계.** 박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약이고, 정하린의 잠금이 내려가면 스위치를 뽑는다. 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.\n\n**야망.** 전압표를 보존고 문에 공개해, 연료를 끊는 협박이 한 해 씨앗을 흔들지 못하게 한다.\n\n**공포.** 연료가 마른 밤에 전압이 죽어 보존고 문이 약탈 손잡이로만 남는 것.\n\n**개입.** 연료 눈금이 흔들린 밤에 스위치를 뽑거나, 담에 닿은 입찰 전령보다 먼저 전압표를 문에 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −25 | 물질 15 | 공동 0 | 원칙 50 | 공개 35 | 자격 30 | 분산 5 | 변혁 20\n- 욕망: 갈망 30 | 독점 10 | 위험 5 | 과시 30 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

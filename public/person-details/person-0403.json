@@ -286,6 +286,142 @@
     "id": "K402",
     "personId": "person-0403"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "recommendation-posting",
+        "name": {
+          "ko": "추천 근거 게시",
+          "en": "Recommendation evidence posting"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "혈연 청탁 거절",
+          "en": "Rejects kinship lobbying"
+        },
+        "description": {
+          "ko": "추천 사유와 점수를 함께 게시하고 사적 청탁을 공개 창구로 보냈다. 시험과 추인으로 파견 독점을 막으려 한다.",
+          "en": "Posts recommendation reasons with scores and directs private requests to the public window. Seeks to prevent dispatch monopolies through tests and ratification."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 혈연 청탁 거절을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "비공개 추천 앞에서 공개 추인을 요구할 수 있다.",
+          "en": "May demand public ratification for private recommendations."
+        },
+        "relationship": {
+          "ko": "임초원을 파견 후보가 아니라 공동 심사관으로 부르려 한다.",
+          "en": "Seeks to recognize Im Chowon as a joint examiner rather than a dispatch candidate."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "시청역 조합 차량정비소 전문 인력 추천을 공개 숙련 시험으로 바꿔 조합원 총회에서 파벌의 독점 추천을 깨뜨린다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "숙련심사위원이 강국에 기술자를 넘기는 인질 창구가 되는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "임초원을 파견 후보가 아니라 공동 심사관으로 부르려 한다.",
+          "en": "Seeks to recognize Im Chowon as a joint examiner rather than a dispatch candidate."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "추천 사유와 점수를 함께 게시하고 사적 청탁을 공개 창구로 보냈다. 시험과 추인으로 파견 독점을 막으려 한다.",
+      "en": "Posts recommendation reasons with scores and directs private requests to the public window. Seeks to prevent dispatch monopolies through tests and ratification."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -650,7 +786,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 조합 숙련심사위원 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 조합 숙련심사위원 서기. 추천 사유와 시험 점수를 같은 게시판에 붙이고, 비공개 파견은 조합원 직접투표 추인 없이 무효로 한다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 조합 숙련심사위원 서기 자리의 서명이 장부에 올랐다.",
     "관계": "정호준의 공동기술원장 구상을 추천 규칙에 반영하고, 정유라의 공개 계약을 인력 조항에 넣으며, 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.",
@@ -658,7 +793,7 @@
     "공포": "숙련심사위원이 강국에 기술자를 넘기는 인질 창구가 되는 것.",
     "개입": "비공개 명단을 게시판에 붙이거나, 특정 기술자를 인질 교환에서 빼낼 수 있다."
   },
-  "biography": "능력 명부를 문벌 명부보다 위에 두고, 추천을 혈연 청탁으로 바꾸는 사람을 오래 기억한다.\n\n- 생업: 추천 사유·시험 점수 게시·파견 추인 확인\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 조합 숙련심사위원 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 조합 숙련심사위원 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 조합 숙련심사위원 서기. 추천 사유와 시험 점수를 같은 게시판에 붙이고, 비공개 파견은 조합원 직접투표 추인 없이 무효로 한다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 조합 숙련심사위원 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공동기술원장 구상을 추천 규칙에 반영하고, 정유라의 공개 계약을 인력 조항에 넣으며, 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.\n\n**야망.** 시청역 조합 차량정비소 전문 인력 추천을 공개 숙련 시험으로 바꿔 조합원 총회에서 파벌의 독점 추천을 깨뜨린다.\n\n**공포.** 숙련심사위원이 강국에 기술자를 넘기는 인질 창구가 되는 것.\n\n**개입.** 비공개 명단을 게시판에 붙이거나, 특정 기술자를 인질 교환에서 빼낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −30 | 물질 −5 | 공동 20 | 원칙 35 | 공개 35 | 자격 50 | 분산 45 | 변혁 10\n- 욕망: 갈망 35 | 독점 −35 | 위험 −25 | 과시 0 | 지속 20 | 지향 이성 | 결합 다자\n:::",
+  "biography": "능력 명부를 문벌 명부보다 위에 두고, 추천을 혈연 청탁으로 바꾸는 사람을 오래 기억한다.\n\n- 생업: 추천 사유·시험 점수 게시·파견 추인 확인\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 조합 숙련심사위원 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 조합 숙련심사위원 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 조합 숙련심사위원 서기. 추천 사유와 시험 점수를 같은 게시판에 붙이고, 비공개 파견은 조합원 직접투표 추인 없이 무효로 한다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 조합 숙련심사위원 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공동기술원장 구상을 추천 규칙에 반영하고, 정유라의 공개 계약을 인력 조항에 넣으며, 임초원을 파견 후보가 아닌 공동 심사관으로 부르려 한다.\n\n**야망.** 시청역 조합 차량정비소 전문 인력 추천을 공개 숙련 시험으로 바꿔 조합원 총회에서 파벌의 독점 추천을 깨뜨린다.\n\n**공포.** 숙련심사위원이 강국에 기술자를 넘기는 인질 창구가 되는 것.\n\n**개입.** 비공개 명단을 게시판에 붙이거나, 특정 기술자를 인질 교환에서 빼낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −30 | 물질 −5 | 공동 20 | 원칙 35 | 공개 35 | 자격 50 | 분산 45 | 변혁 10\n- 욕망: 갈망 35 | 독점 −35 | 위험 −25 | 과시 0 | 지속 20 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-16"
   ],

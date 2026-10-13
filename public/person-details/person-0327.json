@@ -393,6 +393,142 @@
     "id": "K326",
     "personId": "person-0327"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "medical-transport-coordination",
+        "name": {
+          "ko": "의무호송 조정",
+          "en": "Medical transport coordination"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "목적지를 늦게 밝힌다",
+          "en": "Late destination disclosure"
+        },
+        "description": {
+          "ko": "구간 교대와 교량 허가를 매번 맞추며 목적지를 늦게 공개한다. 경로 기밀과 환자 배분은 전투 수행을 증명하지 않는다.",
+          "en": "Section changes and bridge permissions are coordinated each time, with destinations disclosed late. Route confidentiality and patient allocation do not prove combat performance."
+        },
+        "behavior": {
+          "ko": "신의가 강하지만 호송 경로를 미리 말하지 않는다. 무장 호위를 치료 칸에 들이는 것을 거부한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "His faith was strong, but he did not announce convoy routes in advance. He refused armed escort inside the care cars."
+        },
+        "stress": {
+          "ko": "공포. 호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.",
+          "en": "Fear. That a convoy train would be mistaken for a munitions train and stopped on the Guui bridge."
+        },
+        "relationship": {
+          "ko": "관계. 장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.",
+          "en": "Relations. Split medical convoys with Jang Sehwa, exchanged section rotations with Ha Seon, and took Go Seojun's bridge passage permit fresh each time."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.",
+          "en": "Office. Rank: member. Title: medical convoy leader. He wrote only patient counts and herb weights on the convoy pass and published the destination's state name just before arrival."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: medical convoy leader. He wrote only patient counts and herb weights on the convoy pass and published the destination's state name just before arrival."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That a convoy train would be mistaken for a munitions train and stopped on the Guui bridge."
+        },
+        "relationship": {
+          "ko": "관계. 장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.",
+          "en": "Relations. Split medical convoys with Jang Sehwa, exchanged section rotations with Ha Seon, and took Go Seojun's bridge passage permit fresh each time."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "구간 교대와 교량 허가를 매번 맞추며 목적지를 늦게 공개한다. 경로 기밀과 환자 배분은 전투 수행을 증명하지 않는다.",
+      "en": "Section changes and bridge permissions are coordinated each time, with destinations disclosed late. Route confidentiality and patient allocation do not prove combat performance."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -868,7 +1004,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의무호송 전문의 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의무호송 전문의 자리의 서명이 장부에 올랐다.",
     "관계": "장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.",
@@ -876,7 +1011,7 @@
     "공포": "호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.",
     "개입": "오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다."
   },
-  "biography": "신의가 강하지만 호송 경로를 미리 말하지 않는다. 무장 호위를 치료 칸에 들이는 것을 거부한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 의무호송 전문의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무호송 전문의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의무호송 전문의 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송을 공동호송조약의 첫 조항으로 못 박는다.\n\n**공포.** 호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.\n\n**개입.** 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 50 | 무력 −65 | 물질 −25 | 공동 15 | 원칙 60 | 공개 25 | 자격 25 | 분산 20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 −5 | 위험 15 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 없음\n:::",
+  "biography": "신의가 강하지만 호송 경로를 미리 말하지 않는다. 무장 호위를 치료 칸에 들이는 것을 거부한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 의무호송 전문의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무호송 전문의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의무호송 전문의 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송을 공동호송조약의 첫 조항으로 못 박는다.\n\n**공포.** 호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.\n\n**개입.** 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 50 | 무력 −65 | 물질 −25 | 공동 15 | 원칙 60 | 공개 25 | 자격 25 | 분산 20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 −5 | 위험 15 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

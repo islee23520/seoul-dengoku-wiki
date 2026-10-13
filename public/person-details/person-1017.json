@@ -397,6 +397,118 @@
     "id": "K1017",
     "personId": "person-1017"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 14,
+        "effective": 14
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k1017-handoff-contact",
+        "name": {
+          "ko": "인계 연락",
+          "en": "Handoff coordination"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1017-trait-1",
+        "name": {
+          "ko": "친절 뒤의 계약",
+          "en": "A contract behind kindness"
+        },
+        "description": {
+          "ko": "친절로 경계를 풀되 자신의 자유 목표는 숨긴다.",
+          "en": "Lowers defenses with kindness while hiding her wish for freedom."
+        },
+        "behavior": {
+          "ko": "친절로 경계를 풀되 자신의 자유 목표는 숨긴다.",
+          "en": "Lowers defenses with kindness while hiding her wish for freedom."
+        },
+        "stress": {
+          "ko": "빚이 끝나지 않을 두려움 때문에 조직의 조건을 버리기 어렵다.",
+          "en": "Fear of endless debt makes the organization’s condition hard to abandon."
+        },
+        "relationship": {
+          "ko": "문도현과 인계 연락을 나누지만 길목사무소 계약에 묶여 있다.",
+          "en": "Shares handoff contacts with Mun Dohyeon while bound to the Waypoint Office."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "친절로 경계를 풀고 정보와 교섭으로 일을 성사시키지만 길목사무소의 빚과 계약에 묶여 있다. 비밀 명단의 인물을 죽이면 계약을 끝내 준다는 조건을 받아들였으나 그 행위의 완료는 기록되지 않았다.",
+      "en": "She uses kindness, information, and negotiation to get things done while bound by debt to the Waypoint Office. She accepted a condition promising release for killing a person on a secret list, but completion of that act is not recorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S00",

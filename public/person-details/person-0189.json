@@ -286,6 +286,150 @@
     "id": "K188",
     "personId": "person-0189"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "evidence-logging",
+        "name": {
+          "ko": "목격 기록",
+          "en": "Witness logging"
+        },
+        "rating": 60
+      },
+      {
+        "id": "compartment-sealing",
+        "name": {
+          "ko": "칸 봉쇄",
+          "en": "Compartment sealing"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k188-disposition",
+        "name": {
+          "ko": "진술을 줄이지 않음",
+          "en": "Uncut testimony"
+        },
+        "description": {
+          "ko": "붕대 냄새 사이에서 기름종이를 알아채고, 본 것을 줄이라는 장교의 눈짓을 모욕으로 듣는다. 온화하나 증언 한 줄은 깎지 않는다.",
+          "en": "He recognized oil paper among the smell of bandages and heard as an insult an officer's glance telling him to shorten what he had seen. Mild in manner, he shaved no line of testimony."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.",
+          "en": "Office. Rank: registrar. Title: medical train weapons witness. He wrote the discovery hour and car number in the medical log first and raised no armament on the same chalkboard as the patient roster."
+        },
+        "stress": {
+          "ko": "공포. 목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.",
+          "en": "Fear. That the witness statement would be clipped into an after-the-fact approval clause and he would become the coup's silent witness."
+        },
+        "relationship": {
+          "ko": "관계. 장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.",
+          "en": "Relations. Backed Jang Sehwa's medical convoy neutrality with testimony, matched the discovery with Gabriel Johnson's warehouse care lockdown hours, and pressed whether Bae Woojin's officer network had moved the train."
+        },
+        "effects": []
+      },
+      {
+        "id": "k188-choice",
+        "name": {
+          "ko": "현장을 떠나지 않음",
+          "en": "Staying at the scene"
+        },
+        "description": {
+          "ko": "일화. 겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 스테판 페트로프는 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.",
+          "en": "Anecdote. During the winter black dispatch sheet, when Amsa-made weapons were found on the medical train, Stefan Petrov locked the car door and did not step out until the Post-State Council opened."
+        },
+        "behavior": {
+          "ko": "관계. 장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.",
+          "en": "Relations. Backed Jang Sehwa's medical convoy neutrality with testimony, matched the discovery with Gabriel Johnson's warehouse care lockdown hours, and pressed whether Bae Woojin's officer network had moved the train."
+        },
+        "stress": {
+          "ko": "공포. 목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.",
+          "en": "Fear. That the witness statement would be clipped into an after-the-fact approval clause and he would become the coup's silent witness."
+        },
+        "relationship": {
+          "ko": "관계. 장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.",
+          "en": "Relations. Backed Jang Sehwa's medical convoy neutrality with testimony, matched the discovery with Gabriel Johnson's warehouse care lockdown hours, and pressed whether Bae Woojin's officer network had moved the train."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "무기를 발견한 칸을 잠그고 회의까지 남았다. 발견 시각과 진료 봉쇄를 대조하지만 무기 운용이나 종교 정체성은 부여하지 않는다.",
+      "en": "He locked the compartment where weapons appeared and stayed until the council. He compares discovery and clinic closure times; weapon handling and religious identity are not granted."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -631,7 +775,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다. 스테판 페트로프는 2065년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 의료열차 무기 목격자 업무를 맡는다. 게오르기 페트로프는 2030년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 스테판 페트로프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.",
     "일화": "겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 스테판 페트로프는 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.",
     "관계": "장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.",
@@ -639,7 +782,7 @@
     "공포": "목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.",
     "개입": "목격자를 기록청까지 호송하거나, 진술을 사후 승인 문장으로 바꾸려는 쪽지를 폭로할 수 있다."
   },
-  "biography": "붕대 냄새 사이에서 기름종이를 알아채고, 본 것을 줄이라는 장교의 눈짓을 모욕으로 듣는다. 온화하나 증언 한 줄은 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 의료열차 무기 발견 시각·칸 기록\n- 직함: 의료열차 무기 목격자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다. 스테판 페트로프는 2065년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 의료열차 무기 목격자 업무를 맡는다. 게오르기 페트로프는 2030년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 스테판 페트로프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.\n\n**일화.** 겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 스테판 페트로프는 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.\n\n**관계.** 장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.\n\n**야망.** 의료칸에서 나온 암사제 봉인을 공동호송의 공개 증거로 남겨 용산이 보호전쟁의 입구가 되지 않게 한다.\n\n**공포.** 목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.\n\n**개입.** 목격자를 기록청까지 호송하거나, 진술을 사후 승인 문장으로 바꾸려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 15 | 독점 −15 | 위험 −35 | 과시 −25 | 지속 20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "붕대 냄새 사이에서 기름종이를 알아채고, 본 것을 줄이라는 장교의 눈짓을 모욕으로 듣는다. 온화하나 증언 한 줄은 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 의료열차 무기 발견 시각·칸 기록\n- 직함: 의료열차 무기 목격자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료열차 무기 목격자 자리는 가짜 약 봉인으로 열렸다. 스테판 페트로프는 2065년에 태어났다. 불가리아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 의료열차 무기 목격자 업무를 맡는다. 게오르기 페트로프는 2030년 동대문·용산에서 동대문 야간 공임과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 스테판 페트로프의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 불가리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 의료열차 무기 목격자. 발견 시각과 칸 번호를 의무 일지에 먼저 적고, 무장을 환자 명부와 같은 칠판에 올리지 않는다.\n\n**일화.** 겨울의 검은 배차표 동안 의료열차에서 암사제 무기가 발견되자 스테판 페트로프는 칸 문을 잠그고 후국회가 열릴 때까지 나가지 않았다.\n\n**관계.** 장세화의 의료호송 중립을 증언으로 받치고, 가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며, 배우진의 장교망이 열차를 움직였는지 따진다.\n\n**야망.** 의료칸에서 나온 암사제 봉인을 공동호송의 공개 증거로 남겨 용산이 보호전쟁의 입구가 되지 않게 한다.\n\n**공포.** 목격 진술이 사후 승인 문장으로 잘려 자신이 쿠데타의 침묵 증인이 되는 것.\n\n**개입.** 목격자를 기록청까지 호송하거나, 진술을 사후 승인 문장으로 바꾸려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 15 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −10 | 공개 −20 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 15 | 독점 −15 | 위험 −35 | 과시 −25 | 지속 20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],

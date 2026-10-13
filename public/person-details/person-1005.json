@@ -443,6 +443,109 @@
     "id": "K1005",
     "personId": "person-1005"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [],
+    "traits": [
+      {
+        "id": "k1005-trait-1",
+        "name": {
+          "ko": "무응답 속의 취임",
+          "en": "Taking office amid silence"
+        },
+        "description": {
+          "ko": "인준 무응답과 회장 취임이 함께 남아 있다.",
+          "en": "Council silence and taking the chair coexist."
+        },
+        "behavior": {
+          "ko": "인준 무응답과 회장 취임이 함께 남아 있다.",
+          "en": "Council silence and taking the chair coexist."
+        },
+        "stress": {
+          "ko": "분가의 남성 후계론을 마주했으나 구체적 대응은 제한적으로 기록됐다.",
+          "en": "Faces a male-heir proposal, though her specific response is sparsely recorded."
+        },
+        "relationship": {
+          "ko": "정호준을 연구책임자로 두고 정유라와 먼 친족 관계다.",
+          "en": "Shares the group with research director Jeong Hojun and is distantly related to Jeong Yura."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "남성 후계론과 정통회의 무응답 속에서 회장 자리에 앉았다. 회장 직무와 정호준의 연구 책임은 구분된다. 확인된 선택은 제한적이며 세습과 친족관계만으로 연구·군사 숙련을 부여하지 않는다.",
+      "en": "She took the chair amid a male-heir challenge and silence from the legitimacy council. Her chairmanship remains distinct from Jeong Hojun’s research remit. Evidence of personal choices is limited; heredity and kinship do not confer research or military skills."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -783,12 +886,11 @@
   "sections": {
     "생애": "2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.",
     "관직": "품계 회장. 직함은 태욱그룹 회장. 생업 별명은 회장 직무·검증 인준.",
-    "무공": "없음. 생업만.",
     "일화": "회장 인준이 열렸을 때, 분가는 남성 후계를 올렸다. 정통회는 답을 하지 않았다. 정서온은 회장 자리에 앉았다. 정호준은 생명안전 연구책임자로 남았다.",
     "가문": "정씨 회장가. 마곡생명가(HC03)의 관리인이 아니다.",
     "관계": "정호준은 같은 그룹의 연구책임자다. 정유라는 먼 친척이다. 남윤경의 정통회가 후계 인준을 보류한다. 박태겸의 혼인 제안은 답을 받지 못한 채 남아 있다."
   },
-  "biography": "태욱그룹 회장. 정씨 회장가의 외동딸.\n\n**생애.** 2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.\n\n**관직.** 품계 회장. 직함은 태욱그룹 회장. 생업 별명은 회장 직무·검증 인준.\n\n**무공.** 없음. 생업만.\n\n**일화.** 회장 인준이 열렸을 때, 분가는 남성 후계를 올렸다. 정통회는 답을 하지 않았다. 정서온은 회장 자리에 앉았다. 정호준은 생명안전 연구책임자로 남았다.\n\n**가문.** 정씨 회장가. 마곡생명가(HC03)의 관리인이 아니다.\n\n**관계.** 정호준은 같은 그룹의 연구책임자다. 정유라는 먼 친척이다. 남윤경의 정통회가 후계 인준을 보류한다. 박태겸의 혼인 제안은 답을 받지 못한 채 남아 있다.",
+  "biography": "태욱그룹 회장. 정씨 회장가의 외동딸.\n\n**생애.** 2126년 세대. 정일환의 외동딸이다. 문중 족보에는 항렬자 없이 올라 있다. 분가의 남성 후계론이 이어졌다. 정통회는 후계 인준에 답을 하지 않았다. 그 무응답이 가문 안의 부담으로 남았다. 정유라는 정씨 분가의 일원이다. 정서온과는 먼 친척이다.\n\n**관직.** 품계 회장. 직함은 태욱그룹 회장. 생업 별명은 회장 직무·검증 인준.\n\n**일화.** 회장 인준이 열렸을 때, 분가는 남성 후계를 올렸다. 정통회는 답을 하지 않았다. 정서온은 회장 자리에 앉았다. 정호준은 생명안전 연구책임자로 남았다.\n\n**가문.** 정씨 회장가. 마곡생명가(HC03)의 관리인이 아니다.\n\n**관계.** 정호준은 같은 그룹의 연구책임자다. 정유라는 먼 친척이다. 남윤경의 정통회가 후계 인준을 보류한다. 박태겸의 혼인 제안은 답을 받지 못한 채 남아 있다.",
   "sources": [
     "Core-Characters"
   ],

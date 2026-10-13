@@ -394,6 +394,150 @@
     "id": "K205",
     "personId": "person-0206"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "water-sampling",
+        "name": {
+          "ko": "채수",
+          "en": "Water sampling"
+        },
+        "rating": 60
+      },
+      {
+        "id": "work-shift-negotiation",
+        "name": {
+          "ko": "작업 교대 교섭",
+          "en": "Work-shift negotiation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k205-disposition",
+        "name": {
+          "ko": "보고 지연 거부",
+          "en": "Rejecting delayed reports"
+        },
+        "description": {
+          "ko": "취수구 수온으로 시간을 읽고, 지도에 없는 취수 우회를 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.",
+          "en": "She read time from the intake's water temperature and took no pride in an intake bypass missing from the map. She counted a late report a fault."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.",
+          "en": "Office. Rank: lay instructor. Title: Han River intake surveyor. He left intake and turbidity in the same ledger and marked a collapsed section only when Seo Nayeon and O Haerin signed together."
+        },
+        "stress": {
+          "ko": "공포. 탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.",
+          "en": "Fear. That the survey routes would be sealed as military secrets and the intake would be sold as the lock of the water-gate protection zone."
+        },
+        "relationship": {
+          "ko": "관계. 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.",
+          "en": "Relations. An apprentice gauging Seo Nayeon's ice-making raw water in the field, he disliked Han Jaemok's waterway toll and split bridge underside intake and bypass dotted lines with Ma Gilsang by contract."
+        },
+        "effects": []
+      },
+      {
+        "id": "k205-choice",
+        "name": {
+          "ko": "조건을 나눠 교대 열기",
+          "en": "Opening shifts through agreed terms"
+        },
+        "description": {
+          "ko": "일화. 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he shared terms with a slowdown work squad through the night and opened the next shift. By this deed the signature of the Han River intake surveyor post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.",
+          "en": "Relations. An apprentice gauging Seo Nayeon's ice-making raw water in the field, he disliked Han Jaemok's waterway toll and split bridge underside intake and bypass dotted lines with Ma Gilsang by contract."
+        },
+        "stress": {
+          "ko": "공포. 탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.",
+          "en": "Fear. That the survey routes would be sealed as military secrets and the intake would be sold as the lock of the water-gate protection zone."
+        },
+        "relationship": {
+          "ko": "관계. 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.",
+          "en": "Relations. An apprentice gauging Seo Nayeon's ice-making raw water in the field, he disliked Han Jaemok's waterway toll and split bridge underside intake and bypass dotted lines with Ma Gilsang by contract."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "태업 작업반과 밤새 조건을 나눠 다음 교대를 열고 채수·탁도를 기록한다. 협상과 탐사는 확인되나 미완성 해도를 성과로 삼지 않는다.",
+      "en": "Negotiates overnight with a refusing crew to reopen the next shift and records samples and turbidity. The public chart is not yet an achievement."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -812,7 +956,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.",
@@ -820,7 +963,7 @@
     "공포": "탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.",
     "개입": "취수 호위를 맡아 우회를 성사시키거나, 비밀 잠금 표시를 폭로할 수 있다."
   },
-  "biography": "취수구 수온으로 시간을 읽고, 지도에 없는 취수 우회를 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 한강 채수·탁도 기록\n- 직함: 한강 취수 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.\n\n**야망.** 노량진 취수와 제빙 원수를 한 장의 공개 해도로 그려 전력이 흔들려도 얼음 원장이 하루를 버티게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.\n\n**개입.** 취수 호위를 맡아 우회를 성사시키거나, 비밀 잠금 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 60 | 공동 −15 | 원칙 −20 | 공개 15 | 자격 5 | 분산 10 | 변혁 25\n- 욕망: 갈망 40 | 독점 30 | 위험 40 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자\n:::",
+  "biography": "취수구 수온으로 시간을 읽고, 지도에 없는 취수 우회를 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 한강 채수·탁도 기록\n- 직함: 한강 취수 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.\n\n**야망.** 노량진 취수와 제빙 원수를 한 장의 공개 해도로 그려 전력이 흔들려도 얼음 원장이 하루를 버티게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.\n\n**개입.** 취수 호위를 맡아 우회를 성사시키거나, 비밀 잠금 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 60 | 공동 −15 | 원칙 −20 | 공개 15 | 자격 5 | 분산 10 | 변혁 25\n- 욕망: 갈망 40 | 독점 30 | 위험 40 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

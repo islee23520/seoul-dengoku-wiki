@@ -42,15 +42,6 @@ export function categoryEntities(pages, documents) {
         ] })
       }
     }
-    if (page.slug === 'Martial-Paths') {
-      const table = source.content.find((node) => node.kind === 'table' && node.columns.map(ko).join('|') === '분류|2026 기원|기본|한자|상승|한자')
-      for (const [index, row] of table.rows.entries()) for (const column of [2, 4]) {
-        const title = ko(row[column])
-        if (title === '—') continue
-        const label = ko(row[0])
-        entities.push({ category: 'culture', id: `${source.id}#${table.anchor}:${title}`, title, route: `${route}#${headingId('무공 체계')}`, source: `${page.path}#${table.anchor}`, path: [{ id: 'martial', label: '무공' }, { id: `martial-${headingId(label)}`, label }] })
-      }
-    }
     if (!['technology', 'goods', 'structures', 'people-and-machines', 'ailments'].includes(source.domain)) continue
     let heading = null
     let religious = false

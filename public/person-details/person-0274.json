@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.",
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -284,6 +284,142 @@
   "gurps": {
     "id": "K273",
     "personId": "person-0274"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k273-work-crew-allocation",
+        "name": {
+          "ko": "작업 조 배치",
+          "en": "Work crew allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k273-priority",
+        "name": {
+          "ko": "숙련 증명 요구",
+          "en": "Demands demonstrated competence"
+        },
+        "description": {
+          "ko": "조우찬은 작업 조를 순환시키고 반장과 도제에게 사고 책임을 함께 묻는다. 기술 승인 우선이 사택 불안과 충돌한다.",
+          "en": "Jo Uchan rotates work crews and requires shared accident accountability from foremen and apprentices. Technical approval comes into conflict with residential anxiety."
+        },
+        "behavior": {
+          "ko": "작업 조를 순환 배치하고, 사고 한 건에 반장과 도제의 서명을 함께 요구한다.",
+          "en": "Office. Rank: assistant manager. Title: work squad leader. He rotated the work squads through stations and demanded the squad leader's and the apprentice's signatures together for every accident."
+        },
+        "stress": {
+          "ko": "인구 많은 사택 대표가 급수 불안을 구실로 기지를 점거하는 것.",
+          "en": "Fear. That populous residents' representatives would seize the base on the pretext of water anxiety."
+        },
+        "relationship": {
+          "ko": "이홍원의 지휘로 차륜 공정을 나누고 강민서의 수리 규격을 현장 적용한다. 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다.",
+          "en": "Relations. Divided the wheel process under I Hongwon's command and applied Gang Minseo's repair standards in the field. Held the suspicion that the trial wheels had leaked to Gang Daeun."
+        },
+        "effects": []
+      },
+      {
+        "id": "k273-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 성하전자 작업 반장. 작업 조를 순환 배치하고, 사고 한 건에 반장과 도제의 서명을 함께 요구한다.",
+          "en": "Office. Rank: assistant manager. Title: work squad leader. He rotated the work squads through stations and demanded the squad leader's and the apprentice's signatures together for every accident."
+        },
+        "stress": {
+          "ko": "공포. 인구 많은 사택 대표가 급수 불안을 구실로 기지를 점거하는 것.",
+          "en": "Fear. That populous residents' representatives would seize the base on the pretext of water anxiety."
+        },
+        "relationship": {
+          "ko": "관계. 이홍원의 지휘로 차륜 공정을 나누고 강민서의 수리 규격을 현장 적용한다. 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다.",
+          "en": "Relations. Divided the wheel process under I Hongwon's command and applied Gang Minseo's repair standards in the field. Held the suspicion that the trial wheels had leaked to Gang Daeun."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "조우찬은 작업 조를 순환시키고 반장과 도제에게 사고 책임을 함께 묻는다. 기술 승인 우선이 사택 불안과 충돌한다.",
+      "en": "Jo Uchan rotates work crews and requires shared accident accountability from foremen and apprentices. Technical approval comes into conflict with residential anxiety."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -671,7 +807,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 사원. 직함은 성하전자 작업 반장. 작업 조를 순환 배치하고, 사고 한 건에 반장과 도제의 서명을 함께 요구한다.",
     "일화": "시험 부품 결함 소문이 강남역 사택에 퍼지자 대표들이 기지 정문을 배급 창구로 쓰자고 주장했다.",
     "관계": "이홍원의 지휘로 차륜 공정을 나누고 강민서의 수리 규격을 현장 적용한다. 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다.",
@@ -679,7 +814,7 @@
     "공포": "인구 많은 사택 대표가 급수 불안을 구실로 기지를 점거하는 것.",
     "개입": "작업장을 봉인해 시험을 진행하거나, 사택 대표와 반장의 교섭을 중재할 수 있다."
   },
-  "biography": "숙련을 증명하지 못한 사람에게 차갑고, 사고 책임을 날짜까지 기억한다. 회의보다 차륜 아래에서 결정을 내린다.\n\n- 생업: 작업 조 순환·사고 서명 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 작업 반장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 사원. 직함은 성하전자 작업 반장. 작업 조를 순환 배치하고, 사고 한 건에 반장과 도제의 서명을 함께 요구한다.\n\n**일화.** 시험 부품 결함 소문이 강남역 사택에 퍼지자 대표들이 기지 정문을 배급 창구로 쓰자고 주장했다.\n\n**관계.** 이홍원의 지휘로 차륜 공정을 나누고 강민서의 수리 규격을 현장 적용한다. 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다.\n\n**야망.** 기술자 회장실가 사택 청원보다 먼저 기지 가동을 승인하게 만들어 성하전자 강남역 거점을 지킨다.\n\n**공포.** 인구 많은 사택 대표가 급수 불안을 구실로 기지를 점거하는 것.\n\n**개입.** 작업장을 봉인해 시험을 진행하거나, 사택 대표와 반장의 교섭을 중재할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −20 | 무력 −20 | 물질 35 | 공동 15 | 원칙 5 | 공개 5 | 자격 65 | 분산 10 | 변혁 −25\n- 욕망: 갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 10 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "숙련을 증명하지 못한 사람에게 차갑고, 사고 책임을 날짜까지 기억한다. 회의보다 차륜 아래에서 결정을 내린다.\n\n- 생업: 작업 조 순환·사고 서명 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 작업 반장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 사원. 직함은 성하전자 작업 반장. 작업 조를 순환 배치하고, 사고 한 건에 반장과 도제의 서명을 함께 요구한다.\n\n**일화.** 시험 부품 결함 소문이 강남역 사택에 퍼지자 대표들이 기지 정문을 배급 창구로 쓰자고 주장했다.\n\n**관계.** 이홍원의 지휘로 차륜 공정을 나누고 강민서의 수리 규격을 현장 적용한다. 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다.\n\n**야망.** 기술자 회장실가 사택 청원보다 먼저 기지 가동을 승인하게 만들어 성하전자 강남역 거점을 지킨다.\n\n**공포.** 인구 많은 사택 대표가 급수 불안을 구실로 기지를 점거하는 것.\n\n**개입.** 작업장을 봉인해 시험을 진행하거나, 사택 대표와 반장의 교섭을 중재할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −20 | 무력 −20 | 물질 35 | 공동 15 | 원칙 5 | 공개 5 | 자격 65 | 분산 10 | 변혁 −25\n- 욕망: 갈망 −5 | 독점 5 | 위험 −10 | 과시 5 | 지속 10 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-11"
   ],

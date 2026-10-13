@@ -476,6 +476,171 @@
     "id": "K1009",
     "personId": "person-1009"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 18,
+        "effective": 18
+      },
+      "strategy": {
+        "base": 18,
+        "effective": 18
+      },
+      "negotiation": {
+        "base": 14,
+        "effective": 14
+      },
+      "management": {
+        "base": 14,
+        "effective": 14
+      },
+      "insight": {
+        "base": 20,
+        "effective": 25
+      },
+      "learning": {
+        "base": 17,
+        "effective": 17
+      },
+      "prowess": {
+        "base": 19,
+        "effective": 19
+      },
+      "endurance": {
+        "base": 17,
+        "effective": 17
+      }
+    },
+    "skills": [
+      {
+        "id": "k1009-skill-1",
+        "name": {
+          "ko": "정찰",
+          "en": "Reconnaissance"
+        },
+        "rating": 95
+      },
+      {
+        "id": "k1009-skill-2",
+        "name": {
+          "ko": "호위",
+          "en": "Escort"
+        },
+        "rating": 90
+      },
+      {
+        "id": "k1009-skill-3",
+        "name": {
+          "ko": "총검 훈련",
+          "en": "Bayonet training"
+        },
+        "rating": 85
+      },
+      {
+        "id": "k1009-skill-4",
+        "name": {
+          "ko": "무전 운용",
+          "en": "Radio operation"
+        },
+        "rating": 80
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1009-trait-1",
+        "name": {
+          "ko": "정보 판단에 능함",
+          "en": "Skilled information judgment"
+        },
+        "description": {
+          "ko": "응답과 현장 조건을 대조해 판단한다.",
+          "en": "Judges by comparing responses and field conditions."
+        },
+        "behavior": {
+          "ko": "응답과 현장 조건을 대조해 판단한다.",
+          "en": "Judges by comparing responses and field conditions."
+        },
+        "stress": {
+          "ko": "미귀환 연락에도 주민 기록을 동방사 지휘 아래 넘기지 않는다.",
+          "en": "Does not surrender resident records to Dongbangsa command while seeking missing contacts."
+        },
+        "relationship": {
+          "ko": "현장 회수와 주민 동의를 맡고 신준의 반응을 별도로 대조한다.",
+          "en": "Handles field recovery and consent, and checks Shin Jun’s reactions separately."
+        },
+        "effects": [
+          {
+            "ability": "insight",
+            "delta": 5
+          }
+        ]
+      },
+      {
+        "id": "k1009-trait-2",
+        "name": {
+          "ko": "민간인 보호",
+          "en": "Civilian protection"
+        },
+        "description": {
+          "ko": "명부 밖 사람도 데리고 귀환한다.",
+          "en": "Brings back people outside the roster too."
+        },
+        "behavior": {
+          "ko": "명부 밖 사람도 데리고 귀환한다.",
+          "en": "Brings back people outside the roster too."
+        },
+        "stress": {
+          "ko": "아들의 동의·휴식을 해치는 일에는 그를 데려가지 않는다.",
+          "en": "Does not take his son into work compromising consent or rest."
+        },
+        "relationship": {
+          "ko": "주민·의무원·보호자와 응답과 돌봄을 나눈다.",
+          "en": "Shares responses and care with residents, medics, and guardians."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "명부 밖 피난민을 데리고 귀환한 뒤 특수회수반에서 물러났다. 호위·탐사와 무전을 이어 가면서 중계기 도입 때 현장 회수와 주민 동의를 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 동행시키지 않는다.",
+      "en": "He returned with unrostered refugees and later left the special recovery unit. He continues escort, exploration, and radio work, handling recovery and resident consent for new relays. He does not take Shin Jun into work that compromises his consent or rest."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -1395,12 +1560,12 @@
   "sections": {
     "생애": "2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.",
     "관직": "품계 없음. 귀환망의 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업 별명은 호위·탐사 계약·무전 송신. 호출부호는 백야다.",
-    "무공": "총검술.",
+    "훈련": "총검술.",
     "일화": "수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다.",
     "관계": "아들 신준을 돌본다. 배우진의 동방사에서 물러났고 민웅기와 귀환합성국의 현장 운용을 나누었다. 민웅기는 개막에 대전으로 옮겼다.",
     "야망": "개막에 신종목은 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 동방사의 지휘 아래로 주민의 연락 기록과 중계기를 넘기지 않고, 새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 그를 데려가지 않는다."
   },
-  "biography": "소속: 아관사(S14). 귀환망의 사람. 호출부호는 백야다. 동방사 특수회수반의 선임 공작원이었다.\n\n**생애.** 2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.\n\n**관직.** 품계 없음. 귀환망의 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업 별명은 호위·탐사 계약·무전 송신. 호출부호는 백야다.\n\n**무공.** 총검술.\n\n**일화.** 수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다.\n\n**관계.** 아들 신준을 돌본다. 배우진의 동방사에서 물러났고 민웅기와 귀환합성국의 현장 운용을 나누었다. 민웅기는 개막에 대전으로 옮겼다.\n\n**야망.** 개막에 신종목은 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 동방사의 지휘 아래로 주민의 연락 기록과 중계기를 넘기지 않고, 새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 그를 데려가지 않는다.",
+  "biography": "소속: 아관사(S14). 귀환망의 사람. 호출부호는 백야다. 동방사 특수회수반의 선임 공작원이었다.\n\n**생애.** 2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.\n\n**관직.** 품계 없음. 귀환망의 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업 별명은 호위·탐사 계약·무전 송신. 호출부호는 백야다.\n\n**훈련.** 총검술.\n\n**일화.** 수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다.\n\n**관계.** 아들 신준을 돌본다. 배우진의 동방사에서 물러났고 민웅기와 귀환합성국의 현장 운용을 나누었다. 민웅기는 개막에 대전으로 옮겼다.\n\n**야망.** 개막에 신종목은 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 동방사의 지휘 아래로 주민의 연락 기록과 중계기를 넘기지 않고, 새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 그를 데려가지 않는다.",
   "sources": [
     "Core-Characters"
   ],

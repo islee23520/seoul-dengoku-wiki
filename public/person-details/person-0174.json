@@ -372,6 +372,150 @@
     "id": "K173",
     "personId": "person-0174"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "cold-stock-checks",
+        "name": {
+          "ko": "냉동 재고 점검",
+          "en": "Cold stock inspection"
+        },
+        "rating": 65
+      },
+      {
+        "id": "transshipment-scheduling",
+        "name": {
+          "ko": "환적 순서 조정",
+          "en": "Transfer scheduling"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k173-disposition",
+        "name": {
+          "ko": "열쇠를 놓지 않음",
+          "en": "Keeping the keys close"
+        },
+        "description": {
+          "ko": "사교적이지만 창고 열쇠는 몸에서 떼지 않는다. 빈 상자를 가득 찬 것처럼 적는 사람을 원수로 본다.",
+          "en": "Sociable, but he never took the warehouse key off his body. He saw anyone who recorded an empty box as full as an enemy."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.",
+          "en": "Office. Rank: registrar. Title: transshipment dispatcher. He read the warehouse temperature aloud every two hours and sealed any house column caught with false inventory."
+        },
+        "stress": {
+          "ko": "공포. 전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.",
+          "en": "Fear. That on a power-less night the cold freight would melt and the post-state's relay credit would fall in one day."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.",
+          "en": "Relations. Reported the warehouse lease ledger to Park Taegyeom and transshipped Seo Nayeon's ice bricks. Matched convoy arrival hours with Sin Taesan."
+        },
+        "effects": []
+      },
+      {
+        "id": "k173-choice",
+        "name": {
+          "ko": "허위 재고 불관용",
+          "en": "Intolerance of false stock"
+        },
+        "description": {
+          "ko": "일화. 노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.",
+          "en": "Anecdote. When the Noryangjin blackout rumor reached Yongsan, the cold-column tenants began pulling their freight out through the night."
+        },
+        "behavior": {
+          "ko": "관계. 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.",
+          "en": "Relations. Reported the warehouse lease ledger to Park Taegyeom and transshipped Seo Nayeon's ice bricks. Matched convoy arrival hours with Sin Taesan."
+        },
+        "stress": {
+          "ko": "공포. 전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.",
+          "en": "Fear. That on a power-less night the cold freight would melt and the post-state's relay credit would fall in one day."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.",
+          "en": "Relations. Reported the warehouse lease ledger to Park Taegyeom and transshipped Seo Nayeon's ice bricks. Matched convoy arrival hours with Sin Taesan."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "온도 공개와 허위 칸 봉쇄를 반복하고 호송 시각을 맞춘다. 임차인의 야간 반출은 그의 성취가 아니며 독립 신용 원장은 야망이다.",
+      "en": "He routinely publishes temperatures, blocks false stock bays and coordinates arrivals. Tenants’ night removals are not his achievement; independent credit remains an ambition."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -732,7 +876,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다. 루카스 슈나이더는 2071년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 환적 배차원 업무를 맡는다. 카를 슈나이더는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 루카스 슈나이더의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.",
     "일화": "노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.",
     "관계": "박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.",
@@ -740,7 +883,7 @@
     "공포": "전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.",
     "개입": "얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다."
   },
-  "biography": "사교적이지만 창고 열쇠는 몸에서 떼지 않는다. 빈 상자를 가득 찬 것처럼 적는 사람을 원수로 본다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환적창고 온도·재고 검증\n- 직함: 환적 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다. 루카스 슈나이더는 2071년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 환적 배차원 업무를 맡는다. 카를 슈나이더는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 루카스 슈나이더의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.\n\n**관계.** 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 만든다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 20 | 분산 5 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 40 | 과시 5 | 지속 5 | 지향 동성 | 결합 단혼\n:::",
+  "biography": "사교적이지만 창고 열쇠는 몸에서 떼지 않는다. 빈 상자를 가득 찬 것처럼 적는 사람을 원수로 본다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환적창고 온도·재고 검증\n- 직함: 환적 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환적 배차원 자리는 무표 출발 열차 저지로 열렸다. 루카스 슈나이더는 2071년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 환적 배차원 업무를 맡는다. 카를 슈나이더는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 루카스 슈나이더의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 환적 배차원. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 노량진 정전 소문이 용산에 닿자 냉동 칸 임차인들이 화물을 밤사이에 빼내기 시작했다.\n\n**관계.** 박태겸에게 창고 임대 장부를 보고하고 서나연의 얼음 벽돌을 환적한다. 신태산과는 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 만든다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 후국의 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 20 | 공동 0 | 원칙 −5 | 공개 −20 | 자격 20 | 분산 5 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 40 | 과시 5 | 지속 5 | 지향 동성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

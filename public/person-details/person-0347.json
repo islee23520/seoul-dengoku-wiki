@@ -285,6 +285,142 @@
     "id": "K346",
     "personId": "person-0347"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "attendance-reconciliation",
+        "name": {
+          "ko": "출입 인원 대조",
+          "en": "Attendance reconciliation"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "징발을 거부하는 조정자",
+          "en": "Organizer who rejects requisition"
+        },
+        "description": {
+          "ko": "변조된 징발 쪽지를 찢고 호송과 인파를 나누어 다시 센다. 인원 운영의 강점은 이 현장 대응에 한정한다.",
+          "en": "Tearing up an altered requisition, they separate escort and crowd lines and recount arrivals. The management strength is confined to this response."
+        },
+        "behavior": {
+          "ko": "방역대를 징발 병력으로 부르라는 방송을 모욕으로 듣고, 약재 칸을 군량으로 적는 쪽지를 찢는다. 줄이 길어질수록 목소리는 낮아진다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He heard as an insult any broadcast that called the quarantine squad a requisition force, and tore up any note that wrote the herb column as military rations. The longer the line grew, the lower his voice fell."
+        },
+        "stress": {
+          "ko": "공포. 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.",
+          "en": "Fear. That his own name, once he stepped out as representative, would top the protection force's medical draft."
+        },
+        "relationship": {
+          "ko": "관계. 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.",
+          "en": "Relations. Split the crowd queue with Nam Hoseong's medical convoy and matched the wording with Seok Bomwoo's Sinnae refusal clause. Sent Bae Woojin's water-protection requisition back as a grudge."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
+          "en": "Office. Rank: section chief. Title:  reconstruction-era requisition crowd representative. He checked requisition notes against actual entry numbers every evening and did not disperse the crowd before Ryu Eunbi's neutrality declaration came down."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: section chief. Title:  reconstruction-era requisition crowd representative. He checked requisition notes against actual entry numbers every evening and did not disperse the crowd before Ryu Eunbi's neutrality declaration came down."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That his own name, once he stepped out as representative, would top the protection force's medical draft."
+        },
+        "relationship": {
+          "ko": "관계. 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.",
+          "en": "Relations. Split the crowd queue with Nam Hoseong's medical convoy and matched the wording with Seok Bomwoo's Sinnae refusal clause. Sent Bae Woojin's water-protection requisition back as a grudge."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "변조된 징발 쪽지를 찢고 호송과 인파를 나누어 다시 센다. 인원 운영의 강점은 이 현장 대응에 한정한다.",
+      "en": "Tearing up an altered requisition, they separate escort and crowd lines and recount arrivals. The management strength is confined to this response."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -691,7 +827,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 방역·의무동원 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
     "일화": "약재 칸을 군량으로 고쳐 적은 징발 쪽지가 제기동 방역대에 붙는다. 흥다온은 쪽지를 찢고 저녁 대조로 실제 출입 인원을 다시 세며, 류은비의 중립 선언이 내려올 때까지 남호성의 의무호송 줄과 인파를 나누어 세워 둔다.",
     "관계": "남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.",
@@ -699,7 +834,7 @@
     "공포": "현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.",
     "개입": "거부 원장을 회의에 올리거나, 인파를 해산시켜 징발 마차를 통과시킬 수 있다."
   },
-  "biography": "방역대를 징발 병력으로 부르라는 방송을 모욕으로 듣고, 약재 칸을 군량으로 적는 쪽지를 찢는다. 줄이 길어질수록 목소리는 낮아진다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 징발 쪽지·출입 인원 대조\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 방역·의무동원 전문의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 방역·의무동원 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.\n\n**일화.** 약재 칸을 군량으로 고쳐 적은 징발 쪽지가 제기동 방역대에 붙는다. 흥다온은 쪽지를 찢고 저녁 대조로 실제 출입 인원을 다시 세며, 류은비의 중립 선언이 내려올 때까지 남호성의 의무호송 줄과 인파를 나누어 세워 둔다.\n\n**관계.** 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.\n\n**야망.** 의약 인파의 징발 명단을 공개 거부 원장으로 묶어 치료 중립이 동원 창구로 바뀌지 않게 한다.\n\n**공포.** 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.\n\n**개입.** 거부 원장을 회의에 올리거나, 인파를 해산시켜 징발 마차를 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 20 | 무력 −40 | 물질 −25 | 공동 15 | 원칙 35 | 공개 10 | 자격 10 | 분산 30 | 변혁 −20\n- 욕망: 갈망 15 | 독점 35 | 위험 −40 | 과시 −25 | 지속 0 | 지향 양성 | 결합 없음\n:::",
+  "biography": "방역대를 징발 병력으로 부르라는 방송을 모욕으로 듣고, 약재 칸을 군량으로 적는 쪽지를 찢는다. 줄이 길어질수록 목소리는 낮아진다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 징발 쪽지·출입 인원 대조\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 방역·의무동원 전문의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 방역·의무동원 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 전문의. 직함은 방역·의무동원 전문의. 징발 쪽지와 실제 출입 인원을 저녁마다 대조하고, 류은비의 중립 선언이 내려오기 전에는 인파를 해산시키지 않는다.\n\n**일화.** 약재 칸을 군량으로 고쳐 적은 징발 쪽지가 제기동 방역대에 붙는다. 흥다온은 쪽지를 찢고 저녁 대조로 실제 출입 인원을 다시 세며, 류은비의 중립 선언이 내려올 때까지 남호성의 의무호송 줄과 인파를 나누어 세워 둔다.\n\n**관계.** 남호성의 의무호송과 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 상수보호 징발을 원한으로 돌려보낸다.\n\n**야망.** 의약 인파의 징발 명단을 공개 거부 원장으로 묶어 치료 중립이 동원 창구로 바뀌지 않게 한다.\n\n**공포.** 현장에 나선 자신의 이름이 보호군 의무 선발의 맨 위가 되는 것.\n\n**개입.** 거부 원장을 회의에 올리거나, 인파를 해산시켜 징발 마차를 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 20 | 무력 −40 | 물질 −25 | 공동 15 | 원칙 35 | 공개 10 | 자격 10 | 분산 30 | 변혁 −20\n- 욕망: 갈망 15 | 독점 35 | 위험 −40 | 과시 −25 | 지속 0 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

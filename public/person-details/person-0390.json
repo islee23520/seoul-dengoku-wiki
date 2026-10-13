@@ -290,6 +290,142 @@
     "id": "K389",
     "personId": "person-0390"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "power-allocation",
+        "name": {
+          "ko": "전력 배분",
+          "en": "Power allocation"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "은폐 배전 거부",
+          "en": "Rejects concealed power allocation"
+        },
+        "description": {
+          "ko": "정전 때 시민 배급 칸에 발전을 배정하고 군량 조명을 껐다. 출력을 조정해 왔으나 은폐 배전은 거부했다.",
+          "en": "Assigns emergency power to civilian rations and shuts off military lighting during a blackout. Coordinates output but refuses concealed distribution."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 은폐 배전 거부을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "정전과 봉쇄가 겹치면 공급 우선순위를 좁힐 수 있다.",
+          "en": "May narrow supply priorities when blockade and blackout coincide."
+        },
+        "relationship": {
+          "ko": "판효담의 기지와 천솔빛의 광장 사이에서 출력을 나눈다.",
+          "en": "Divides output between Pan Hyodam’s base and Cheon Solbit’s square."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "판효담의 기지와 천솔빛의 광장 사이에서 출력을 나눈다.",
+          "en": "Divides output between Pan Hyodam’s base and Cheon Solbit’s square."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정전 때 시민 배급 칸에 발전을 배정하고 군량 조명을 껐다. 출력을 조정해 왔으나 은폐 배전은 거부했다.",
+      "en": "Assigns emergency power to civilian rations and shuts off military lighting during a blackout. Coordinates output but refuses concealed distribution."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -745,7 +881,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 제대 설비 수사 일을 맡았다.",
-    "무공": "단철공.",
     "관직": "품계 수사. 직함은 명동역 제대 설비 수사. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
     "일화": "창고 봉쇄와 정전이 겹치자 방석담은 비상 발전을 시민 배급 칸에 잠그고 군량 조명을 껐다. 명동역 제대 설비 수사의 기록에 당시의 증언을 남겼다.",
     "관계": "판효담의 창고 기지에 출력을 맞추고, 천솔빛의 광장 조명과 전력을 나눈다. 남윤경의 공개 경매에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
@@ -753,7 +888,7 @@
     "공포": "사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "방석담은 명동역 제대 설비 수사 일을 맡는다. 사제단 소집 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 제대 설비 점검·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 명동역 제대 설비 수사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 제대 설비 수사 일을 맡았다.\n**무공.** 단철공.\n\n**관직.** 품계 수사. 직함은 명동역 제대 설비 수사. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 창고 봉쇄와 정전이 겹치자 방석담은 비상 발전을 시민 배급 칸에 잠그고 군량 조명을 껐다. 명동역 제대 설비 수사의 기록에 당시의 증언을 남겼다.\n\n**관계.** 판효담의 창고 기지에 출력을 맞추고, 천솔빛의 광장 조명과 전력을 나눈다. 남윤경의 공개 경매에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 0 | 물질 45 | 공동 −15 | 원칙 −40 | 공개 −25 | 자격 −5 | 분산 10 | 변혁 5\n- 욕망: 갈망 −5 | 독점 0 | 위험 −30 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
+  "biography": "방석담은 명동역 제대 설비 수사 일을 맡는다. 사제단 소집 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 제대 설비 점검·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 수사\n- 직함: 명동역 제대 설비 수사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 제대 설비 수사 일을 맡았다.\n\n**관직.** 품계 수사. 직함은 명동역 제대 설비 수사. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 창고 봉쇄와 정전이 겹치자 방석담은 비상 발전을 시민 배급 칸에 잠그고 군량 조명을 껐다. 명동역 제대 설비 수사의 기록에 당시의 증언을 남겼다.\n\n**관계.** 판효담의 창고 기지에 출력을 맞추고, 천솔빛의 광장 조명과 전력을 나눈다. 남윤경의 공개 경매에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 사제단 소집 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 사제단 소집 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 사제단 소집 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 0 | 물질 45 | 공동 −15 | 원칙 −40 | 공개 −25 | 자격 −5 | 분산 10 | 변혁 5\n- 욕망: 갈망 −5 | 독점 0 | 위험 −30 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-15"
   ],

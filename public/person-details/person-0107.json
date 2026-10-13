@@ -394,6 +394,150 @@
     "id": "K106",
     "personId": "person-0107"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "dose",
+        "name": {
+          "ko": "부족 약재 배분",
+          "en": "Scarce-medicine allocation"
+        },
+        "rating": 60
+      },
+      {
+        "id": "water-board",
+        "name": {
+          "ko": "급수 게시판 운영",
+          "en": "Water-supply notice management"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "dehydrated-patients-first",
+        "name": {
+          "ko": "탈수 환자 먼저",
+          "en": "Dehydrated Patients First"
+        },
+        "description": {
+          "ko": "제바름은 후계 논의보다 골목의 탈수 환자 수를 먼저 확인하는 돌봄 우선 성향을 보인다.",
+          "en": "Je Bareum prioritizes care by checking alley dehydration counts before succession discussions."
+        },
+        "behavior": {
+          "ko": "골목별 탈수 게시판을 운영하고 수도꼭지가 마르면 공방 회의보다 환자 상황을 먼저 묻는다.",
+          "en": "They maintain alley dehydration boards and ask about patients before workshop meetings when taps run dry."
+        },
+        "stress": {
+          "ko": "계약 만료가 집단 단수로 번질 조짐이 있으면 후계 논의보다 탈수 현황과 시민 급수를 더 앞세울 수 있다.",
+          "en": "If contract expiry threatens widespread water cuts, they may put dehydration conditions and civilian water access ahead of succession debate."
+        },
+        "relationship": {
+          "ko": "장민재와 임바다에게는 급수권이 진료 현장에서 실제로 보장되는 협력을 기대할 수 있다.",
+          "en": "They may expect Jang Minjae and Im Bada to help make water rights effective in clinical care."
+        },
+        "effects": []
+      },
+      {
+        "id": "minimum-medical-care",
+        "name": {
+          "ko": "의료 최저선",
+          "en": "Minimum Medical Care"
+        },
+        "description": {
+          "ko": "제바름은 후계 공백이나 물자 부족에도 모두에게 최소한의 의료 공급이 남아야 한다고 여긴다.",
+          "en": "Je Bareum believes minimum medical supplies should remain available to everyone despite succession gaps or shortages."
+        },
+        "behavior": {
+          "ko": "약재 부족 때 처방량을 반으로 나눠 모두에게 배분했고 펌프가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.",
+          "en": "They halved prescription quantities to distribute scarce medicine to everyone and convene the council by citizen countersignatures if pumps go only to military or family stores."
+        },
+        "stress": {
+          "ko": "집단 단수로 노동자들이 밀려날 우려가 커지면 의료 최저선을 헌장에 명시하려는 요구를 강화할 수 있다.",
+          "en": "If mass water cuts threaten to displace workers, they may press harder to place a medical minimum in the charter."
+        },
+        "relationship": {
+          "ko": "임바다와 최저선 문구를 함께 다듬으며 협력자에게도 가문이나 군수보다 시민의 최소 공급을 지지하길 기대할 수 있다.",
+          "en": "They may refine minimum-guarantee wording with Im Bada and expect collaborators to support basic civilian supplies over family or military claims."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "골목 진료와 부족 약재 배분, 탈수 게시를 수행한다. 의료 공급 운영을 평가하며 면허나 전염병 특수 치료를 새로 만들지 않는다.",
+      "en": "She provides neighborhood care, shares scarce medicine, and posts dehydration counts. Medical-supply management is supported, not invented licenses or specialist epidemic treatment."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -913,7 +1057,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 성동 골목의무소 원장 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 성동 골목의무소 원장. 골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 성동 골목의무소 원장 자리의 서명이 장부에 올랐다.",
     "관계": "장민재의 급수 시민권을 진료에서 집행하고, 진모래의 펌프실 부상을 골목으로 받으며, 임바다의 시민 급수권과 최저선 문구를 나눈다.",
@@ -921,7 +1064,7 @@
     "공포": "총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.",
     "개입": "수압 실측표와 시약을 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 원장 연서를 무효로 만들 수 있다."
   },
-  "biography": "골목 수도꼭지가 마르면 공방 회의를 사치로 여기고, 후계자 이름보다 탈수 환자 숫자를 먼저 묻는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 명부교회\n- 생업: 골목 진료·처방 배분\n- 품계: 교사\n- 직함: 성동 골목의무소 원장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 성동 골목의무소 원장 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 성동 골목의무소 원장. 골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 성동 골목의무소 원장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장민재의 급수 시민권을 진료에서 집행하고, 진모래의 펌프실 부상을 골목으로 받으며, 임바다의 시민 급수권과 최저선 문구를 나눈다.\n\n**야망.** 후계가 공백이어도 성동 급수의 의료 최저선을 공방헌장에 못 박아 중앙권역 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.\n\n**개입.** 수압 실측표와 시약을 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 원장 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −50 | 물질 25 | 공동 40 | 원칙 40 | 공개 −20 | 자격 20 | 분산 10 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −30 | 위험 0 | 과시 −15 | 지속 −10 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "골목 수도꼭지가 마르면 공방 회의를 사치로 여기고, 후계자 이름보다 탈수 환자 숫자를 먼저 묻는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 명부교회\n- 생업: 골목 진료·처방 배분\n- 품계: 교사\n- 직함: 성동 골목의무소 원장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 성동 골목의무소 원장 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 교사. 직함은 성동 골목의무소 원장. 골목별 탈수 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 성동 골목의무소 원장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장민재의 급수 시민권을 진료에서 집행하고, 진모래의 펌프실 부상을 골목으로 받으며, 임바다의 시민 급수권과 최저선 문구를 나눈다.\n\n**야망.** 후계가 공백이어도 성동 급수의 의료 최저선을 공방헌장에 못 박아 중앙권역 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.\n\n**개입.** 수압 실측표와 시약을 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 원장 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −50 | 물질 25 | 공동 40 | 원칙 40 | 공개 −20 | 자격 20 | 분산 10 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −30 | 위험 0 | 과시 −15 | 지속 −10 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

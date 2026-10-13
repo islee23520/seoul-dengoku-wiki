@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 사택 의무원 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 강남역 사택 의무원 자리는 탈선 직전 결함 보고로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -391,6 +391,142 @@
   "gurps": {
     "id": "K279",
     "personId": "person-0280"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k279-injury-care",
+        "name": {
+          "ko": "부상자 진료",
+          "en": "Injury care"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k279-priority",
+        "name": {
+          "ko": "부상 먼저",
+          "en": "Injury before nationality"
+        },
+        "description": {
+          "ko": "봉복은 작업 조와 순찰 교대의 부상을 돌보고 사고 활력을 게시한다. 하룻밤 넘긴 당직은 체력 근거지만 신체 건강 판정은 아니다.",
+          "en": "Bongbok treats crew and patrol injuries and posts accident vital signs. Extended overnight duty supports endurance, not an assessment of bodily health."
+        },
+        "behavior": {
+          "ko": "사고 활력 기록을 의무실 문에 붙이고, 야간 수술은 반장과 도제의 서명이 함께 있어야 시작한다.",
+          "en": "Office. Rank: assistant manager. Title: base medic. He pasted accident vital records on the infirmary door and started night surgery only with the squad leader's and the apprentice's signatures together."
+        },
+        "stress": {
+          "ko": "제동 불량 부상자가 사택 민병 병상으로 옮겨져 기지 사고가 인구 분쟁으로 바뀌는 것.",
+          "en": "Fear. That a casualty of bad brakes would be moved to a residential militia sickbed and a base accident would turn into a population dispute."
+        },
+        "relationship": {
+          "ko": "조우찬의 작업 조 부상을 맡고, 권도하의 북문 순찰 교대를 진료한다. 전미리의 의료열차가 강남역에 설 때 병상을 비워 둔다.",
+          "en": "Relations. Took Jo Woochan's work-squad injuries and treated Gwon Doha's north gate patrol rotations. Emptied sickbeds whenever Jeon Miri's medical train stopped at Changdong."
+        },
+        "effects": []
+      },
+      {
+        "id": "k279-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 사택 의무원. 사고 활력 기록을 의무실 문에 붙이고, 야간 수술은 반장과 도제의 서명이 함께 있어야 시작한다.",
+          "en": "Office. Rank: assistant manager. Title: base medic. He pasted accident vital records on the infirmary door and started night surgery only with the squad leader's and the apprentice's signatures together."
+        },
+        "stress": {
+          "ko": "공포. 제동 불량 부상자가 사택 민병 병상으로 옮겨져 기지 사고가 인구 분쟁으로 바뀌는 것.",
+          "en": "Fear. That a casualty of bad brakes would be moved to a residential militia sickbed and a base accident would turn into a population dispute."
+        },
+        "relationship": {
+          "ko": "관계. 조우찬의 작업 조 부상을 맡고, 권도하의 북문 순찰 교대를 진료한다. 전미리의 의료열차가 강남역에 설 때 병상을 비워 둔다.",
+          "en": "Relations. Took Jo Woochan's work-squad injuries and treated Gwon Doha's north gate patrol rotations. Emptied sickbeds whenever Jeon Miri's medical train stopped at Changdong."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "봉복은 작업 조와 순찰 교대의 부상을 돌보고 사고 활력을 게시한다. 하룻밤 넘긴 당직은 체력 근거지만 신체 건강 판정은 아니다.",
+      "en": "Bongbok treats crew and patrol injuries and posts accident vital signs. Extended overnight duty supports endurance, not an assessment of bodily health."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -820,7 +956,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 강남역 차량기지에서 자랐다. 강남역 사택 의무원 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 사원. 직함은 강남역 사택 의무원. 사고 활력 기록을 의무실 문에 붙이고, 야간 수술은 반장과 도제의 서명이 함께 있어야 시작한다.",
     "일화": "시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 의무실 당직이 하룻밤 넘었다.",
     "관계": "조우찬의 작업 조 부상을 맡고, 권도하의 북문 순찰 교대를 진료한다. 전미리의 의료열차가 강남역에 설 때 병상을 비워 둔다.",
@@ -828,7 +963,7 @@
     "공포": "제동 불량 부상자가 사택 민병 병상으로 옮겨져 기지 사고가 인구 분쟁으로 바뀌는 것.",
     "개입": "부상 기록을 회장실에 올리거나, 각성제 봉인을 의무실과 반장이 나눠 쥐게 할 수 있다."
   },
-  "biography": "차륜 아래 끼인 손부터 보고 국적을 나중에 본다. 시험 기간의 각성제를 숙련의 증명으로 포장하는 말을 거부한다.\n\n- 생업: 사택 사고 활력 기록·야간 수술 서명 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 의무원\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 사택 의무원 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 사원. 직함은 강남역 사택 의무원. 사고 활력 기록을 의무실 문에 붙이고, 야간 수술은 반장과 도제의 서명이 함께 있어야 시작한다.\n\n**일화.** 시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 의무실 당직이 하룻밤 넘었다.\n\n**관계.** 조우찬의 작업 조 부상을 맡고, 권도하의 북문 순찰 교대를 진료한다. 전미리의 의료열차가 강남역에 설 때 병상을 비워 둔다.\n\n**야망.** 강남역 사택 의무실을 회장실와 사택 감사가 함께 여는 거점으로 남겨, 사고 은폐가 시험 점수가 되지 않게 한다.\n\n**공포.** 제동 불량 부상자가 사택 민병 병상으로 옮겨져 기지 사고가 인구 분쟁으로 바뀌는 것.\n\n**개입.** 부상 기록을 회장실에 올리거나, 각성제 봉인을 의무실과 반장이 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 5 | 무력 −40 | 물질 40 | 공동 25 | 원칙 10 | 공개 0 | 자격 60 | 분산 5 | 변혁 −20\n- 욕망: 갈망 45 | 독점 −35 | 위험 −10 | 과시 −10 | 지속 10 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "차륜 아래 끼인 손부터 보고 국적을 나중에 본다. 시험 기간의 각성제를 숙련의 증명으로 포장하는 말을 거부한다.\n\n- 생업: 사택 사고 활력 기록·야간 수술 서명 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 의무원\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 사택 의무원 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 사택 의무원. 사고 활력 기록을 의무실 문에 붙이고, 야간 수술은 반장과 도제의 서명이 함께 있어야 시작한다.\n\n**일화.** 시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 의무실 당직이 하룻밤 넘었다.\n\n**관계.** 조우찬의 작업 조 부상을 맡고, 권도하의 북문 순찰 교대를 진료한다. 전미리의 의료열차가 강남역에 설 때 병상을 비워 둔다.\n\n**야망.** 강남역 사택 의무실을 회장실와 사택 감사가 함께 여는 거점으로 남겨, 사고 은폐가 시험 점수가 되지 않게 한다.\n\n**공포.** 제동 불량 부상자가 사택 민병 병상으로 옮겨져 기지 사고가 인구 분쟁으로 바뀌는 것.\n\n**개입.** 부상 기록을 회장실에 올리거나, 각성제 봉인을 의무실과 반장이 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 5 | 무력 −40 | 물질 40 | 공동 25 | 원칙 10 | 공개 0 | 자격 60 | 분산 5 | 변혁 −20\n- 욕망: 갈망 45 | 독점 −35 | 위험 −10 | 과시 −10 | 지속 10 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

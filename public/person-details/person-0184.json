@@ -373,6 +373,150 @@
     "id": "K183",
     "personId": "person-0184"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "power-allocation",
+        "name": {
+          "ko": "전력 배분",
+          "en": "Power allocation"
+        },
+        "rating": 70
+      },
+      {
+        "id": "overload-inspection",
+        "name": {
+          "ko": "과부하 점검",
+          "en": "Overload inspection"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k183-disposition",
+        "name": {
+          "ko": "군수보다 안전",
+          "en": "Safety before military charging"
+        },
+        "description": {
+          "ko": "변압기 진동으로 과부하를 읽고, 환적보다 군수 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.",
+          "en": "He read overload from the transformer's vibration and burned any note telling him to give a column to military charging over transshipment. Taciturn, he shaved no rotation log."
+        },
+        "behavior": {
+          "ko": "관직. 품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.",
+          "en": "Office. Rank: duty chief. Title: Yongsan warehouse siding supervisor. He left the power distribution on the public gauge board and allowed military charging only while warehouse temperature stayed below the danger line."
+        },
+        "stress": {
+          "ko": "공포. 한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.",
+          "en": "Fear. That one over-discharge would kill the cold columns, and the Noryangjin merchants would use that blackout as settlement-right pressure."
+        },
+        "relationship": {
+          "ko": "관계. 루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
+          "en": "Relations. Under command to power Lukas Schneider's warehouse temperature, he matched output to Mykola Bondarenko's brake trials and carried a debt for refusing O Haerin's cold-storage charging request."
+        },
+        "effects": []
+      },
+      {
+        "id": "k183-choice",
+        "name": {
+          "ko": "일지를 깎지 않음",
+          "en": "Unabridged shift logs"
+        },
+        "description": {
+          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In the 2125 station fire he carried out the roster of lives first. By this deed the signature of the Yongsan warehouse siding supervisor post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
+          "en": "Relations. Under command to power Lukas Schneider's warehouse temperature, he matched output to Mykola Bondarenko's brake trials and carried a debt for refusing O Haerin's cold-storage charging request."
+        },
+        "stress": {
+          "ko": "공포. 한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.",
+          "en": "Fear. That one over-discharge would kill the cold columns, and the Noryangjin merchants would use that blackout as settlement-right pressure."
+        },
+        "relationship": {
+          "ko": "관계. 루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
+          "en": "Relations. Under command to power Lukas Schneider's warehouse temperature, he matched output to Mykola Bondarenko's brake trials and carried a debt for refusing O Haerin's cold-storage charging request."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "진동으로 과부하를 읽고 창고 온도와 시운전에 출력을 맞춘다. 화재 때 인명 장부를 먼저 구했으며 발전기 발명 경력은 없다.",
+      "en": "He reads overload through vibration and matches output to warehouse temperatures and trials. He saved the people ledger during a fire; invention is not established."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -750,7 +894,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다. 앙드레 뒤부아는 2074년에 태어났다. 프랑스계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산창 유치선 감독 업무를 맡는다. 루이 뒤부아는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 앙드레 뒤부아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 프랑스어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.",
     "관계": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
@@ -758,7 +901,7 @@
     "공포": "한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.",
     "개입": "대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다."
   },
-  "biography": "변압기 진동으로 과부하를 읽고, 환적보다 군수 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 당직장\n- 생업: 유치선 전력 배분·충전 통제\n- 직함: 용산창 유치선 감독\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다. 앙드레 뒤부아는 2074년에 태어났다. 프랑스계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산창 유치선 감독 업무를 맡는다. 루이 뒤부아는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 앙드레 뒤부아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 프랑스어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 용산 유치선의 비상 전력을 급수·환적 열차 전용으로 고정해 중계국의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −15 | 물질 20 | 공동 −10 | 원칙 −10 | 공개 −10 | 자격 25 | 분산 −10 | 변혁 0\n- 욕망: 갈망 45 | 독점 35 | 위험 −5 | 과시 −25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
+  "biography": "변압기 진동으로 과부하를 읽고, 환적보다 군수 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 환적국\n- 품계: 당직장\n- 생업: 유치선 전력 배분·충전 통제\n- 직함: 용산창 유치선 감독\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 용산창 유치선 감독 자리는 교대 무단 결근 대체 당직으로 열렸다. 앙드레 뒤부아는 2074년에 태어났다. 프랑스계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산창 유치선 감독 업무를 맡는다. 루이 뒤부아는 2030년 용산·이태원에서 용산의 민간 창고·전기 수선 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 앙드레 뒤부아의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 프랑스어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 당직장. 직함은 용산창 유치선 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 창고 온도가 위험선 아래일 때만 허용한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 용산창 유치선 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고, 미콜라 본다렌코의 제동 시운전에 출력을 맞추며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 용산 유치선의 비상 전력을 급수·환적 열차 전용으로 고정해 중계국의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 냉동 칸이 죽고, 그 정전을 노량진 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −15 | 물질 20 | 공동 −10 | 원칙 −10 | 공개 −10 | 자격 25 | 분산 −10 | 변혁 0\n- 욕망: 갈망 45 | 독점 35 | 위험 −5 | 과시 −25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],

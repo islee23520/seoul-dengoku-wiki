@@ -286,6 +286,142 @@
     "id": "K298",
     "personId": "person-0299"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k298-prescription-allocation",
+        "name": {
+          "ko": "처방량 배분",
+          "en": "Prescription allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k298-priority",
+        "name": {
+          "ko": "중증도 우선",
+          "en": "Severity first"
+        },
+        "description": {
+          "ko": "전미리는 부족한 처방량을 나눠 모두에게 배분했다. 활력 안정 뒤에 배차 요구를 받으며 국적보다 들것 순서를 둔다.",
+          "en": "Jeon Miri divided scarce prescriptions among everyone. She accepts dispatch requests after vital stabilization and puts stretcher order before nationality."
+        },
+        "behavior": {
+          "ko": "중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.",
+          "en": "Office. Rank: convoy hand. Title: medical assistant. She pasted the severity table and transfer hours in the medical crew's duty room and took the dispatch crew's empty-slot demands only after the patients' vitals were stable."
+        },
+        "stress": {
+          "ko": "환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
+          "en": "Fear. That the patient cars would be mistaken for munitions cars and the whole convoy squad would be disarmed."
+        },
+        "relationship": {
+          "ko": "장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.",
+          "en": "Relations. Executed the medical alliance of Jang Sehwa and Ryu Eunbi in the field, checked An Dohan's dispatch solo runs, and borrowed sickbeds from Eun Chaeyun in Jegi-dong."
+        },
+        "effects": []
+      },
+      {
+        "id": "k298-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.",
+          "en": "Office. Rank: convoy hand. Title: medical assistant. She pasted the severity table and transfer hours in the medical crew's duty room and took the dispatch crew's empty-slot demands only after the patients' vitals were stable."
+        },
+        "stress": {
+          "ko": "공포. 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
+          "en": "Fear. That the patient cars would be mistaken for munitions cars and the whole convoy squad would be disarmed."
+        },
+        "relationship": {
+          "ko": "관계. 장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.",
+          "en": "Relations. Executed the medical alliance of Jang Sehwa and Ryu Eunbi in the field, checked An Dohan's dispatch solo runs, and borrowed sickbeds from Eun Chaeyun in Jegi-dong."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "전미리는 부족한 처방량을 나눠 모두에게 배분했다. 활력 안정 뒤에 배차 요구를 받으며 국적보다 들것 순서를 둔다.",
+      "en": "Jeon Miri divided scarce prescriptions among everyone. She accepts dispatch requests after vital stabilization and puts stretcher order before nationality."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -724,7 +860,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의료 조원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의료 조원 자리의 서명이 장부에 올랐다.",
     "관계": "장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.",
@@ -732,7 +867,7 @@
     "공포": "환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.",
     "개입": "환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 제기동까지 운반할 수 있다."
   },
-  "biography": "부상 등급을 먼저 보고 국적을 나중에 본다. 중립 문구보다 들것 순서를 믿는다.\n\n- 생업: 환자 중증도·이송 시각 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 의료 조원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료 조원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의료 조원 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.\n\n**야망.** 중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 만든다.\n\n**공포.** 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 제기동까지 운반할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 50 | 무력 −30 | 물질 0 | 공동 25 | 원칙 20 | 공개 15 | 자격 20 | 분산 40 | 변혁 −5\n- 욕망: 갈망 25 | 독점 −20 | 위험 −10 | 과시 −15 | 지속 10 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "부상 등급을 먼저 보고 국적을 나중에 본다. 중립 문구보다 들것 순서를 믿는다.\n\n- 생업: 환자 중증도·이송 시각 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 의료 조원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료 조원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 호송원. 직함은 의료 조원. 중증도 표와 이송 시각을 의료조 당직실에 붙이고, 배차조의 빈 슬롯 요구는 환자 활력이 안정된 뒤에만 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의료 조원 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며, 은채윤에게 제기동 수용 병상을 빌려 쓴다.\n\n**야망.** 중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 만든다.\n\n**공포.** 환자 칸이 군수 칸으로 오인되어 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 환자 명부와 무기 적재 기록을 대조하거나, 의료 호송증 초안을 제기동까지 운반할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 50 | 무력 −30 | 물질 0 | 공동 25 | 원칙 20 | 공개 15 | 자격 20 | 분산 40 | 변혁 −5\n- 욕망: 갈망 25 | 독점 −20 | 위험 −10 | 과시 −15 | 지속 10 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-12"
   ],

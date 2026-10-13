@@ -393,6 +393,150 @@
     "id": "K179",
     "personId": "person-0180"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "sealed-dispatch-delivery",
+        "name": {
+          "ko": "봉인 전갈 전달",
+          "en": "Sealed dispatch delivery"
+        },
+        "rating": 65
+      },
+      {
+        "id": "closure-notification",
+        "name": {
+          "ko": "폐쇄 통지",
+          "en": "Closure notification"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k179-disposition",
+        "name": {
+          "ko": "두 서명 확인",
+          "en": "Checking both signatures"
+        },
+        "description": {
+          "ko": "봉인 끈이 느슨하면 출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 원로를 위반자로 부른다. 숨이 차도 사본 두 장을 한 손에 쥔다.",
+          "en": "She refused departure whenever a seal cord sat loose and called any elder who kept verbal dispatch refusals off the ledger a violator. Short of breath or not, she held two copies in one hand."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.",
+          "en": "Office. Rank: registrar. Title: Post-State Council courier. She sent the dispatches to the Coordinator's office and the house council at once, and a detention notice ran only with both Eva Nováková's dispatch stamp and Park Taegyeom's joint signature."
+        },
+        "stress": {
+          "ko": "공포. 위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.",
+          "en": "Fear. That one forged council dispatch would void the adopted-child succession and the courier network would become the house's horn."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.",
+          "en": "Relations. Under command to carry Park Taegyeom's succession proposal only under seal, held a contract delivering Eva Nováková's dispatch changes, and matched timing with Yang Haeon's ratification dispatches."
+        },
+        "effects": []
+      },
+      {
+        "id": "k179-choice",
+        "name": {
+          "ko": "구두 거부 기록 요구",
+          "en": "Demanding recorded refusals"
+        },
+        "description": {
+          "ko": "일화. 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 she did not sit on the collapse report of a flooded section and closed it on the spot. By this deed the signature of the Post-State Council courier post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.",
+          "en": "Relations. Under command to carry Park Taegyeom's succession proposal only under seal, held a contract delivering Eva Nováková's dispatch changes, and matched timing with Yang Haeon's ratification dispatches."
+        },
+        "stress": {
+          "ko": "공포. 위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.",
+          "en": "Fear. That one forged council dispatch would void the adopted-child succession and the courier network would become the house's horn."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.",
+          "en": "Relations. Under command to carry Park Taegyeom's succession proposal only under seal, held a contract delivering Eva Nováková's dispatch changes, and matched timing with Yang Haeon's ratification dispatches."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "붕괴 구간을 즉시 닫고 연서와 배차 날인이 모두 있는 전갈만 전달한다. 전달 책임과 전령 원장 독점의 야망을 함께 남겼다.",
+      "en": "She immediately closed a collapsed section and delivers notices bearing both signatures. Reliable delivery coexists with an ambition to monopolize notice validity."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -785,7 +929,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다. 소피아 로시는 2093년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 후국회의 전령 업무를 맡는다. 안토니오 로시는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 소피아 로시의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.",
     "관계": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.",
@@ -793,7 +936,7 @@
     "공포": "위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 가문회의에 펼칠 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 원로를 위반자로 부른다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후국회의 전갈·억류 통지 전달\n- 직함: 후국회의 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다. 소피아 로시는 2093년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 후국회의 전령 업무를 맡는다. 안토니오 로시는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 소피아 로시의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.\n\n**야망.** 도제 승계와 선로 봉쇄 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 가문회의에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 0 | 물질 10 | 공동 −15 | 원칙 10 | 공개 0 | 자격 20 | 분산 0 | 변혁 −10\n- 욕망: 갈망 45 | 독점 5 | 위험 25 | 과시 20 | 지속 5 | 지향 유동 | 결합 다자\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 원로를 위반자로 부른다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후국회의 전갈·억류 통지 전달\n- 직함: 후국회의 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 후국회의 전령 자리는 무표 출발 열차 저지로 열렸다. 소피아 로시는 2093년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 후국회의 전령 업무를 맡는다. 안토니오 로시는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 소피아 로시의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 후국회의 전령. 전갈을 조정관실과 가문 회의에 동시에 보내고, 억류 통지는 에바 노바코바의 배차 날인과 박태겸의 연서가 둘 다 있어야 달린다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 후국회의 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고, 에바 노바코바의 배차 변경을 배달하는 계약이며, 양해온의 인준 전갈과 시점을 맞춘다.\n\n**야망.** 도제 승계와 선로 봉쇄 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 가문회의에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 30 | 무력 0 | 물질 10 | 공동 −15 | 원칙 10 | 공개 0 | 자격 20 | 분산 0 | 변혁 −10\n- 욕망: 갈망 45 | 독점 5 | 위험 25 | 과시 20 | 지속 5 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],

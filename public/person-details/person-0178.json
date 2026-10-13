@@ -391,6 +391,150 @@
     "id": "K177",
     "personId": "person-0178"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "medicine-allocation",
+        "name": {
+          "ko": "약재 배분",
+          "en": "Medicine allocation"
+        },
+        "rating": 65
+      },
+      {
+        "id": "patient-triage",
+        "name": {
+          "ko": "환자 순서 조정",
+          "en": "Patient prioritization"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k177-disposition",
+        "name": {
+          "ko": "배급과 치료를 분리함",
+          "en": "Separating rations from treatment"
+        },
+        "description": {
+          "ko": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.",
+          "en": "He smelled freezer frostbite before track burns and tore up any note telling him to turn care order into apprentice-ration order. Mild in manner, he closed the warehouse care whenever the disinfectant ran out."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.",
+          "en": "Office. Rank: registrar. Title: Yongsan warehouse medic. He posted the patient roster and the medicine bundles at once and took house-column patients separately from the public columns."
+        },
+        "stress": {
+          "ko": "공포. 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
+          "en": "Fear. That the detained train's wounded would remain on a hostage roster alone and the infirmary would become a house prison."
+        },
+        "relationship": {
+          "ko": "관계. 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
+          "en": "Relations. Backed Isaac Walker's apprentice lodge with care, owed Ryu Eunbi warehouse herbs, and gave the detained train's passengers care first."
+        },
+        "effects": []
+      },
+      {
+        "id": "k177-choice",
+        "name": {
+          "ko": "소독 최저선",
+          "en": "Disinfection minimum"
+        },
+        "description": {
+          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, short of herbs, he halved the prescriptions and divided them among everyone. By this deed the signature of the Yongsan warehouse medic post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
+          "en": "Relations. Backed Isaac Walker's apprentice lodge with care, owed Ryu Eunbi warehouse herbs, and gave the detained train's passengers care first."
+        },
+        "stress": {
+          "ko": "공포. 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
+          "en": "Fear. That the detained train's wounded would remain on a hostage roster alone and the infirmary would become a house prison."
+        },
+        "relationship": {
+          "ko": "관계. 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
+          "en": "Relations. Backed Isaac Walker's apprentice lodge with care, owed Ryu Eunbi warehouse herbs, and gave the detained train's passengers care first."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "약 부족에도 모두에게 나누고 숙소 배급을 치료 순서로 바꾸라는 압박을 거절한다. 소독수 없이는 닫는 선택에 보호와 접근 제한의 긴장이 있다.",
+      "en": "He shares scarce medicine and rejects ration-based treatment priority. Closing without disinfectant creates tension between safety and access."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -835,7 +979,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.",
     "관계": "아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
@@ -843,7 +986,7 @@
     "공포": "억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
     "개입": "대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다."
   },
-  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

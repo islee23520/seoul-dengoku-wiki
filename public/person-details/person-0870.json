@@ -395,6 +395,142 @@
     "id": "K870",
     "personId": "person-0870"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "witness-confrontation",
+        "name": {
+          "ko": "공개 대질 진행",
+          "en": "Public witness confrontation"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "엇갈린 말 확인",
+          "en": "Checks conflicting accounts"
+        },
+        "description": {
+          "ko": "엇갈린 증언 두 건을 공개 대질로 다뤘다. 교구 교대 서명을 확인하지만 단일 일화 밖의 성과는 미확인이다.",
+          "en": "Addressed two conflicting testimonies through public confrontation. Checks diocesan shift signatures; achievement beyond the single anecdote is unconfirmed."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 엇갈린 말 확인을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "장부 서명이 사라지면 인수인계 확인에 집중할 수 있다.",
+          "en": "May focus on handover verification when ledger signatures disappear."
+        },
+        "relationship": {
+          "ko": "선배 당직과 기록을 인계한다. 이 선택을 모든 거래의 원칙으로 확대하지 않는다.",
+          "en": "Hands records to senior duty workers. This choice is not generalized to every transaction."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "선배 당직과 기록을 인계한다. 이 선택을 모든 거래의 원칙으로 확대하지 않는다.",
+          "en": "Hands records to senior duty workers. This choice is not generalized to every transaction."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "엇갈린 증언 두 건을 공개 대질로 다뤘다. 교구 교대 서명을 확인하지만 단일 일화 밖의 성과는 미확인이다.",
+      "en": "Addressed two conflicting testimonies through public confrontation. Checks diocesan shift signatures; achievement beyond the single anecdote is unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -806,7 +942,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -814,7 +949,7 @@
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "권바린은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −10 | 물질 40 | 공동 −15 | 원칙 −45 | 공개 −15 | 자격 0 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 −15 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "권바린은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −10 | 물질 40 | 공동 −15 | 원칙 −45 | 공개 −15 | 자격 0 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 −15 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-15"
   ],

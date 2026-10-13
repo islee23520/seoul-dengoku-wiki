@@ -47,7 +47,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 암사 경비 초소에서 자랐다. 강남역 북문 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.",
+            "summary": "2126년 세대. 암사 경비 초소에서 자랐다. 강남역 북문 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -393,6 +393,142 @@
   "gurps": {
     "id": "K738",
     "personId": "person-0738"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k738-night-intrusion-restraint",
+        "name": {
+          "ko": "야간 침입 제지",
+          "en": "Night intrusion restraint"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k738-priority",
+        "name": {
+          "ko": "접근 조건 갱신",
+          "en": "Renews access conditions"
+        },
+        "description": {
+          "ko": "구구희의 확인된 행동은 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다.  짧은 일화 밖의 경력과 반복 성과는 미확인이다.",
+          "en": "구구희: Anecdote. In 2125 he caught a night illegal crosser and reissued the guard code tags. By this deed the signature of the north gate patrol post rose into the ledger. Further career and repeated results remain unconfirmed."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: assistant manager. Title: north gate patrol. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "강남역 북문 순찰대 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.",
+          "en": "Fear. That the north gate patrol duty post would stand empty and the Group's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k738-accountability",
+        "name": {
+          "ko": "당직의 연속성",
+          "en": "Continuity of duty"
+        },
+        "description": {
+          "ko": "큰소리보다 기록을 믿고 자기 직위의 열쇠와 기록만 넘긴다.",
+          "en": "Trusts records over loud claims and hands over only the keys and records of the position."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 북문 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: assistant manager. Title: north gate patrol. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 강남역 북문 순찰대 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.",
+          "en": "Fear. That the north gate patrol duty post would stand empty and the Group's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "구구희의 확인된 행동은 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다.  짧은 일화 밖의 경력과 반복 성과는 미확인이다.",
+      "en": "구구희: Anecdote. In 2125 he caught a night illegal crosser and reissued the guard code tags. By this deed the signature of the north gate patrol post rose into the ledger. Further career and repeated results remain unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -827,7 +963,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 강남역 북문 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 사원. 직함은 강남역 북문 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 강남역 북문 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -835,7 +970,7 @@
     "공포": "강남역 북문 순찰대 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 강남역 북문 순찰 기록·열쇠 인계\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 강남역 북문 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 사원. 직함은 강남역 북문 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 강남역 북문 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 강남역 북문 순찰대 자리에서 성하그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 강남역 북문 순찰대 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −25 | 무력 0 | 물질 25 | 공동 20 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 −25 | 과시 25 | 지속 5 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 강남역 북문 순찰 기록·열쇠 인계\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 강남역 북문 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 북문 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 강남역 북문 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 강남역 북문 순찰대 자리에서 성하그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 강남역 북문 순찰대 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −25 | 무력 0 | 물질 25 | 공동 20 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 −25 | 과시 25 | 지속 5 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-11"
   ],

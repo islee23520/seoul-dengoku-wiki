@@ -288,6 +288,142 @@
     "id": "K382",
     "personId": "person-0383"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "intruder-restraint",
+        "name": {
+          "ko": "침입자 제지",
+          "en": "Intruder restraint"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "야간 흔적을 남김",
+          "en": "Leaves night records"
+        },
+        "description": {
+          "ko": "야간 무단 도꾼을 붙잡고 암호패를 교체했다. 야간 군량 수레를 기록하지만 전투나 부대 지휘 전반의 성과는 없다.",
+          "en": "Catches an unauthorized night thief and replaces password tags. Records military carts at night; broader combat and command success are unrecorded."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 야간 흔적을 남김을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "무단 접근 뒤 경비 확인이 엄격해질 수 있다.",
+          "en": "May tighten checks after unauthorized approaches."
+        },
+        "relationship": {
+          "ko": "라진우의 순번 지휘를 받고 원주온과 당직을 나눈다.",
+          "en": "Follows Ra Jinwoo’s rotation and shares duty with Won Juon."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "라진우의 순번 지휘를 받고 원주온과 당직을 나눈다.",
+          "en": "Follows Ra Jinwoo’s rotation and shares duty with Won Juon."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "야간 무단 도꾼을 붙잡고 암호패를 교체했다. 야간 군량 수레를 기록하지만 전투나 부대 지휘 전반의 성과는 없다.",
+      "en": "Catches an unauthorized night thief and replaces password tags. Records military carts at night; broader combat and command success are unrecorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -736,7 +872,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 명동역 교구청에서 선거함 야간 경비 부제 일을 맡았다.",
-    "무공": "수벽술.",
     "관직": "품계 부제. 직함은 선거함 야간 경비 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 선거함 야간 경비 부제의 기록에 당시의 증언을 남겼다.",
     "관계": "라진우의 창고 순번을 막대로 돌리는 지휘를 받고, 원주온의 기지 당직과 매듭 방향을 나눈다. 배우진의 동부 군량 수레가 야간 칸에 서면 분필로 남긴다.",
@@ -744,7 +879,7 @@
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "수한별은 선거함 야간 경비 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 선거함 야간 경비·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거함 야간 경비 부제\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 명동역 교구청에서 선거함 야간 경비 부제 일을 맡았다.\n**무공.** 수벽술.\n\n**관직.** 품계 부제. 직함은 선거함 야간 경비 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 선거함 야간 경비 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 라진우의 창고 순번을 막대로 돌리는 지휘를 받고, 원주온의 기지 당직과 매듭 방향을 나눈다. 배우진의 동부 군량 수레가 야간 칸에 서면 분필로 남긴다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 20 | 무력 5 | 물질 55 | 공동 −25 | 원칙 −30 | 공개 −25 | 자격 10 | 분산 10 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −15 | 위험 −30 | 과시 −10 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "수한별은 선거함 야간 경비 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 선거함 야간 경비·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거함 야간 경비 부제\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 명동역 교구청에서 선거함 야간 경비 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 선거함 야간 경비 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 선거함 야간 경비 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 라진우의 창고 순번을 막대로 돌리는 지휘를 받고, 원주온의 기지 당직과 매듭 방향을 나눈다. 배우진의 동부 군량 수레가 야간 칸에 서면 분필로 남긴다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 20 | 무력 5 | 물질 55 | 공동 −25 | 원칙 −30 | 공개 −25 | 자격 10 | 분산 10 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −15 | 위험 −30 | 과시 −10 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-15"
   ],

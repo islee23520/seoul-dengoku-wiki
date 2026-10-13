@@ -286,6 +286,150 @@
     "id": "K810",
     "personId": "person-0810"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "inventory",
+        "name": {
+          "ko": "종자 품목 목록 대조",
+          "en": "Seed-list reconciliation"
+        },
+        "rating": 55
+      },
+      {
+        "id": "copy",
+        "name": {
+          "ko": "문서 필사·보존",
+          "en": "Document copying and preservation"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "read-items-one-by-one",
+        "name": {
+          "ko": "품목 하나씩 낭독",
+          "en": "Read Items One by One"
+        },
+        "description": {
+          "ko": "곽강호는 목록의 일치를 품목별 낭독으로 드러내 확인하는 쪽이다.",
+          "en": "Gwak Gangho makes list agreement explicit by reading items aloud individually."
+        },
+        "behavior": {
+          "ko": "박진솔 앞에서 종자 기록과 공동기술원장용 목록의 품목을 하나씩 소리 내어 읽는다.",
+          "en": "They read the items in the seed records and the proposed joint technical register list aloud before Park Jinsol."
+        },
+        "stress": {
+          "ko": "목록 차이가 기록 연속성을 해칠 우려가 있으면 품목별 확인을 더 중시할 수 있다.",
+          "en": "If differences between lists threaten record continuity, they may place greater weight on item-by-item checking."
+        },
+        "relationship": {
+          "ko": "박진솔과 목록을 확인할 때 상대가 함께 들을 수 있는 낭독을 확인 방식으로 삼을 수 있다.",
+          "en": "When checking lists with Park Jinsol, they may favor reading aloud so both can follow the same items."
+        },
+        "effects": []
+      },
+      {
+        "id": "joint-list-checking",
+        "name": {
+          "ko": "공동 목록 대조",
+          "en": "Joint List Checking"
+        },
+        "description": {
+          "ko": "곽강호는 공동기술원장에 올릴 목록과 기존 종자 기록의 대응을 중시한다.",
+          "en": "Gwak Gangho values correspondence between a proposed joint technical register list and existing seed records."
+        },
+        "behavior": {
+          "ko": "두 목록의 품목을 맞춘 사본을 만들고 박진솔 앞에서 대조 내용을 확인한다.",
+          "en": "They prepare a copy aligning the two lists and verify its contents before Park Jinsol."
+        },
+        "stress": {
+          "ko": "새 시세 칸이 열려 기록 간 대응이 중요해지면 목록 불일치를 더 경계할 수 있다.",
+          "en": "When a new price column makes correspondence between records more consequential, they may become more alert to list discrepancies."
+        },
+        "relationship": {
+          "ko": "박진솔과 공동 기록을 맞출 때 대조 사본을 공유 근거로 삼을 수 있다.",
+          "en": "When aligning shared records with Park Jinsol, they may use the matched copy as a common reference."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "종자 목록 두 벌을 맞춰 사본을 만들고 품목을 소리 내어 확인했다. 구체적 대조는 확인되나 종자 가격 협상은 수행하지 않았다.",
+      "en": "He reconciled two seed lists, copied them, and read each item aloud. Specific checking is supported, not negotiating seed prices."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -635,7 +779,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "남윤경의 가격 원장에 종자 시세 칸이 열렸다는 소식이 보존고에 닿는다. 곽강호는 박진솔이 공동기술원장에 올리려는 종자 목록과 종자 기록의 품목을 맞춘 사본을 만들고, 박진솔 앞에서 두 목록의 품목을 하나씩 소리 내어 읽는다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -643,7 +786,7 @@
     "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 남윤경의 가격 원장에 종자 시세 칸이 열렸다는 소식이 보존고에 닿는다. 곽강호는 박진솔이 공동기술원장에 올리려는 종자 목록과 종자 기록의 품목을 맞춘 사본을 만들고, 박진솔 앞에서 두 목록의 품목을 하나씩 소리 내어 읽는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −25 | 물질 20 | 공동 −10 | 원칙 60 | 공개 50 | 자격 50 | 분산 15 | 변혁 0\n- 욕망: 갈망 −15 | 독점 −35 | 위험 −35 | 과시 −30 | 지속 20 | 지향 이성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 남윤경의 가격 원장에 종자 시세 칸이 열렸다는 소식이 보존고에 닿는다. 곽강호는 박진솔이 공동기술원장에 올리려는 종자 목록과 종자 기록의 품목을 맞춘 사본을 만들고, 박진솔 앞에서 두 목록의 품목을 하나씩 소리 내어 읽는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −25 | 물질 20 | 공동 −10 | 원칙 60 | 공개 50 | 자격 50 | 분산 15 | 변혁 0\n- 욕망: 갈망 −15 | 독점 −35 | 위험 −35 | 과시 −30 | 지속 20 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-03"
   ],

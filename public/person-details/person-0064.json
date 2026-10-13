@@ -396,6 +396,150 @@
     "id": "K064",
     "personId": "person-0064"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "water-test",
+        "name": {
+          "ko": "채수·시약 기록",
+          "en": "Sampling and reagent records"
+        },
+        "rating": 65
+      },
+      {
+        "id": "sample",
+        "name": {
+          "ko": "표본 기록 심사",
+          "en": "Sample-record review"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "one-pass-is-not-enough",
+        "name": {
+          "ko": "한 번의 합격 불신",
+          "en": "One Pass Is Not Enough"
+        },
+        "description": {
+          "ko": "장예린은 한 번의 합격 판정만으로 관로의 안전을 믿지 않는다.",
+          "en": "Jang Yerin does not trust a pipeline’s safety on the strength of one passing result."
+        },
+        "behavior": {
+          "ko": "채수 시각과 시약 로트를 기록하고 박누리의 영등포 표본과 교차검증한다.",
+          "en": "She records sampling times and reagent lots and cross-checks Yeongdeungpo samples with Park Nuri."
+        },
+        "stress": {
+          "ko": "검사 공백 사이에 탁수가 골목에 도착할 우려가 있다면 반복 검사와 교차검증을 더 중시할 수 있다.",
+          "en": "If turbid water might reach alleys during a testing gap, she may give greater weight to repeated testing and cross-checks."
+        },
+        "relationship": {
+          "ko": "검사 결과의 신뢰성을 높여야 한다면 박누리와의 표본 교차검증 동맹을 활용할 수 있다.",
+          "en": "She may draw on her sample-cross-checking alliance with Park Nuri when test reliability needs strengthening."
+        },
+        "effects": []
+      },
+      {
+        "id": "inspection-over-schedules",
+        "name": {
+          "ko": "일정보다 검사",
+          "en": "Inspection Over Schedules"
+        },
+        "description": {
+          "ko": "장예린은 정치 일정에 맞춘 검사 축소보다 검증 주기를 지키는 데 집요하다.",
+          "en": "Jang Yerin persistently protects testing cycles against reductions demanded by political schedules."
+        },
+        "behavior": {
+          "ko": "검사 주기 축소 쪽지를 찢고 기준 초과가 나오면 즉시 송수 중단을 권고한다.",
+          "en": "She tears up requests to shorten testing cycles and immediately recommends halting water delivery when limits are exceeded."
+        },
+        "stress": {
+          "ko": "검사망 정지가 군사 보호권의 개입으로 이어질 우려가 있다면 일정 압박에도 검증을 유지하려 할 수 있다.",
+          "en": "If a testing shutdown could invite military protection claims, she may seek to sustain verification despite scheduling pressure."
+        },
+        "relationship": {
+          "ko": "한소미의 센서 수리를 기다리는 상황이라면 검사망 유지에 필요한 협력을 중시할 수 있다.",
+          "en": "While awaiting Han Somi’s sensor repairs, she may prioritize cooperation needed to keep the testing network operating."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "채수 시각과 시약 로트를 기록하고 봉인 구역의 우회 검증을 설계했다. 반복 검사와 대안 설계가 강점이며 의사 경력은 없다.",
+      "en": "She records sampling times and reagent lots and designed alternate verification. Repeated testing and alternatives are strengths, not a medical career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -760,7 +904,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 마곡 시험동에서 자랐다. 서부 수질검사망 운영관 자리는 표본 이중 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 서부 수질검사망 운영관. 채수 시각과 시약 로트를 방송 가능한 원장에 남기고, 기준 초과가 나오면 송수 중단 권고를 평의회에 즉시 올린다.",
     "일화": "2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 서부 수질검사망 운영관 자리의 서명이 장부에 올랐다.",
     "관계": "박누리와 영등포 표본을 교차검증하는 동맹이고, 한소미의 펌프 공방이 검사 센서를 고치길 기다리며, 최지우에게 탁수 속보의 원본 숫자를 넘길지 망설인다.",
@@ -768,7 +911,7 @@
     "공포": "검사망이 멈추면 탁수가 먼저 골목에 도착하고, 그 공백을 군사 보호권이 메우는 것.",
     "개입": "센서 부품을 뚝섬에서 가져와 검사망을 복구하거나, 중단 권고를 숨기려는 쪽지를 폭로할 수 있다."
   },
-  "biography": "회의적이고 끈질기며 한 번의 합격 판정으로 관로를 믿지 않는다. 정치 일정에 맞춰 검사 주기를 줄이라는 쪽지를 찢어 버린다.\n\n- 소속: 태욱그룹\n- 생업: 수질 채수·검사\n- 품계: 대리\n- 직함: 서부 수질검사망 운영관\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 서부 수질검사망 운영관 자리는 표본 이중 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 서부 수질검사망 운영관. 채수 시각과 시약 로트를 방송 가능한 원장에 남기고, 기준 초과가 나오면 송수 중단 권고를 평의회에 즉시 올린다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 서부 수질검사망 운영관 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리와 영등포 표본을 교차검증하는 동맹이고, 한소미의 펌프 공방이 검사 센서를 고치길 기다리며, 최지우에게 탁수 속보의 원본 숫자를 넘길지 망설인다.\n\n**야망.** 수문국·뚝섬·마곡의 수질 검사 주기를 하나의 공개망으로 묶어 물·부품 공동규격의 과학 근거를 만든다.\n\n**공포.** 검사망이 멈추면 탁수가 먼저 골목에 도착하고, 그 공백을 군사 보호권이 메우는 것.\n\n**개입.** 센서 부품을 뚝섬에서 가져와 검사망을 복구하거나, 중단 권고를 숨기려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −35 | 물질 10 | 공동 −5 | 원칙 45 | 공개 40 | 자격 50 | 분산 20 | 변혁 10\n- 욕망: 갈망 5 | 독점 −30 | 위험 −30 | 과시 20 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "회의적이고 끈질기며 한 번의 합격 판정으로 관로를 믿지 않는다. 정치 일정에 맞춰 검사 주기를 줄이라는 쪽지를 찢어 버린다.\n\n- 소속: 태욱그룹\n- 생업: 수질 채수·검사\n- 품계: 대리\n- 직함: 서부 수질검사망 운영관\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 서부 수질검사망 운영관 자리는 표본 이중 봉인으로 열렸다.\n\n**관직.** 품계 대리. 직함은 서부 수질검사망 운영관. 채수 시각과 시약 로트를 방송 가능한 원장에 남기고, 기준 초과가 나오면 송수 중단 권고를 평의회에 즉시 올린다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 서부 수질검사망 운영관 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리와 영등포 표본을 교차검증하는 동맹이고, 한소미의 펌프 공방이 검사 센서를 고치길 기다리며, 최지우에게 탁수 속보의 원본 숫자를 넘길지 망설인다.\n\n**야망.** 수문국·뚝섬·마곡의 수질 검사 주기를 하나의 공개망으로 묶어 물·부품 공동규격의 과학 근거를 만든다.\n\n**공포.** 검사망이 멈추면 탁수가 먼저 골목에 도착하고, 그 공백을 군사 보호권이 메우는 것.\n\n**개입.** 센서 부품을 뚝섬에서 가져와 검사망을 복구하거나, 중단 권고를 숨기려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −35 | 물질 10 | 공동 −5 | 원칙 45 | 공개 40 | 자격 50 | 분산 20 | 변혁 10\n- 욕망: 갈망 5 | 독점 −30 | 위험 −30 | 과시 20 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

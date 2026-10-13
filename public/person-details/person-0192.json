@@ -392,6 +392,150 @@
     "id": "K191",
     "personId": "person-0192"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "delegate-boarding",
+        "name": {
+          "ko": "사절 탑승 안내",
+          "en": "Delegate boarding guidance"
+        },
+        "rating": 60
+      },
+      {
+        "id": "public-announcements",
+        "name": {
+          "ko": "안내 방송",
+          "en": "Public announcements"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k191-disposition",
+        "name": {
+          "ko": "회의 열차 우선",
+          "en": "Council trains first"
+        },
+        "description": {
+          "ko": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 안내 방송을 남에게 넘기지 않는다.",
+          "en": "She gauged envoy crowds by platform humidity and heard as an insult any order to pull great-power cars ahead of the lesser states' waiting line. Mild in manner, she handed the guidance broadcast to no one else."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.",
+          "en": "Office. Rank: registrar. Title: lesser-states council train guide. She published the envoy waiting lists and convoy cars daily and coupled munitions cars to the platform only after the council train had left."
+        },
+        "stress": {
+          "ko": "공포. 안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.",
+          "en": "Fear. That the guidance chalkboard would be covered with bought notes and the council train would change into an assassination route."
+        },
+        "relationship": {
+          "ko": "관계. 마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
+          "en": "Relations. Backed Mateusz Kowalski's concourse window as guidance, seated Jeong Yura's joint-negotiation envoys first, and moved Jang Sehwa's mutual convoy draft onto the platform chalkboard."
+        },
+        "effects": []
+      },
+      {
+        "id": "k191-choice",
+        "name": {
+          "ko": "증거를 봉인함",
+          "en": "Sealing evidence"
+        },
+        "description": {
+          "ko": "일화. 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 she took the counterfeit drug box off the auction floor and sealed it instead of burning it. By this deed the signature of the lesser-states council train guide post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
+          "en": "Relations. Backed Mateusz Kowalski's concourse window as guidance, seated Jeong Yura's joint-negotiation envoys first, and moved Jang Sehwa's mutual convoy draft onto the platform chalkboard."
+        },
+        "stress": {
+          "ko": "공포. 안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.",
+          "en": "Fear. That the guidance chalkboard would be covered with bought notes and the council train would change into an assassination route."
+        },
+        "relationship": {
+          "ko": "관계. 마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
+          "en": "Relations. Backed Mateusz Kowalski's concourse window as guidance, seated Jeong Yura's joint-negotiation envoys first, and moved Jang Sehwa's mutual convoy draft onto the platform chalkboard."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "가짜 약을 태우지 않고 봉인했고 사절 대기표와 호송 칸을 공개한다. 안내 실무가 교섭을 받치지만 사절의 협상 성과를 대신하지 않는다.",
+      "en": "She sealed counterfeit medicine instead of burning it and publishes delegate queues and convoy bays. Guidance supports negotiations without claiming delegates’ achievements."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -863,7 +1007,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다. 엘레나 모로조바는 2090년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 환적국 회의 열차 안내인 업무를 맡는다. 이반 모로조프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 엘레나 모로조바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.",
     "일화": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.",
     "관계": "마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
@@ -871,7 +1014,7 @@
     "공포": "안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.",
     "개입": "매수 쪽지를 칠판에서 떼거나, 사절 호송을 맡아 안내 시각표를 지킬 수 있다."
   },
-  "biography": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 안내 방송을 남에게 넘기지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 회의 열차 사절 대기표·호송 칸 안내\n- 직함: 환적국 회의 열차 안내인\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다. 엘레나 모로조바는 2090년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 환적국 회의 열차 안내인 업무를 맡는다. 이반 모로조프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 엘레나 모로조바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.\n\n**관계.** 마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.\n\n**야망.** 회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.\n\n**공포.** 안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.\n\n**개입.** 매수 쪽지를 칠판에서 떼거나, 사절 호송을 맡아 안내 시각표를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −20 | 물질 15 | 공동 −5 | 원칙 10 | 공개 −15 | 자격 25 | 분산 0 | 변혁 10\n- 욕망: 갈망 10 | 독점 −25 | 위험 −20 | 과시 5 | 지속 20 | 지향 이성 | 결합 없음\n:::",
+  "biography": "대합실 습기로 사절 인파를 가늠하고, 강국 화차를 환적국 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 안내 방송을 남에게 넘기지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 회의 열차 사절 대기표·호송 칸 안내\n- 직함: 환적국 회의 열차 안내인\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 환적국 회의 열차 안내인 자리는 가짜 약 봉인으로 열렸다. 엘레나 모로조바는 2090년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 환적국 회의 열차 안내인 업무를 맡는다. 이반 모로조프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 엘레나 모로조바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 환적국 회의 열차 안내인. 사절 대기표와 호송 칸을 매일 공개하고, 군수 화차는 회의 열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 환적국 회의 열차 안내인 자리의 서명이 장부에 올랐다.\n\n**관계.** 마테우시 코발스키의 대합실 창구를 안내로 받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.\n\n**야망.** 회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.\n\n**공포.** 안내 칠판이 매수 쪽지로 덮여 회의 열차가 암살 경로로 바뀌는 것.\n\n**개입.** 매수 쪽지를 칠판에서 떼거나, 사절 호송을 맡아 안내 시각표를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −20 | 물질 15 | 공동 −5 | 원칙 10 | 공개 −15 | 자격 25 | 분산 0 | 변혁 10\n- 욕망: 갈망 10 | 독점 −25 | 위험 −20 | 과시 5 | 지속 20 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],

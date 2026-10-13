@@ -392,6 +392,142 @@
     "id": "K406",
     "personId": "person-0407"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "care-queue-coordination",
+        "name": {
+          "ko": "진료 대기 조정",
+          "en": "Care queue coordination"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "전용 침상 거부",
+          "en": "Rejects exclusive beds"
+        },
+        "description": {
+          "ko": "중증도 표와 대기열을 맞추고 서로 다른 군사·급수안을 든 사절에게 전용 침상을 열지 않았다. 임상 성과는 기록되지 않았다.",
+          "en": "Coordinates severity boards and queues and refuses exclusive beds to envoys with competing military-water packages. Clinical outcomes are unrecorded."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 전용 침상 거부을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "특혜 요구 때 진료 창구를 보류할 수 있다.",
+          "en": "May withhold access when special treatment is demanded."
+        },
+        "relationship": {
+          "ko": "심유리의 중재실과 방마빛의 대기열을 연결한다.",
+          "en": "Links Sim Yuri’s mediation room with Bang Mabit’s waiting queue."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "시청역 조합원 총회 기간의 현장 진료를 공동교섭의 최저선으로 남겨 강국별 분할 복속이 병상을 사지 못하게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "의무소가 배우진의 군사 개입안과 한재목의 수문헌장 사이에서 들러리 창구가 되는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "심유리의 중재실과 방마빛의 대기열을 연결한다.",
+          "en": "Links Sim Yuri’s mediation room with Bang Mabit’s waiting queue."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "중증도 표와 대기열을 맞추고 서로 다른 군사·급수안을 든 사절에게 전용 침상을 열지 않았다. 임상 성과는 기록되지 않았다.",
+      "en": "Coordinates severity boards and queues and refuses exclusive beds to envoys with competing military-water packages. Clinical outcomes are unrecorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -953,7 +1089,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 협약 회의 의무소 거점 의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 협약 회의 의무소 거점 의무원. 쟁점을 급수·통행·의료·손실보상 네 칸으로 나눈 칠판 옆에 중증도 표를 붙이고, 한 칸이라도 서명자가 빠지면 회의 진료를 연기한다.",
     "일화": "시청역 조합원 총회 직전에 세 강국 사절이 각각 다른 군사·급수 패키지를 들고 들어오자 원새울은 사절 전용 침상을 열지 않았다.",
     "관계": "심유리의 중재실 옆 침상을 맡고, 방마빛의 대합실 대기와 줄을 나눈다. 류은비의 의료헌장 조항을 당직 원장에 올린다.",
@@ -961,7 +1096,7 @@
     "공포": "의무소가 배우진의 군사 개입안과 한재목의 수문헌장 사이에서 들러리 창구가 되는 것.",
     "개입": "사절 진료를 열어 회의를 붙잡거나, 한 강국 사절의 밀약을 폭로해 회의를 결렬시킬 수 있다."
   },
-  "biography": "양쪽 말을 끝까지 들은 뒤에야 한 문장으로 자르는 중재인의 침묵을 침상에서 지킨다. 힘의 중재를 수치의 진료로 바꾸려 한다.\n\n- 생업: 중증도 표 게시·회의 진료 조정\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 협약 회의 의무소 거점 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협약 회의 의무소 거점 의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 협약 회의 의무소 거점 의무원. 쟁점을 급수·통행·의료·손실보상 네 칸으로 나눈 칠판 옆에 중증도 표를 붙이고, 한 칸이라도 서명자가 빠지면 회의 진료를 연기한다.\n\n**일화.** 시청역 조합원 총회 직전에 세 강국 사절이 각각 다른 군사·급수 패키지를 들고 들어오자 원새울은 사절 전용 침상을 열지 않았다.\n\n**관계.** 심유리의 중재실 옆 침상을 맡고, 방마빛의 대합실 대기와 줄을 나눈다. 류은비의 의료헌장 조항을 당직 원장에 올린다.\n\n**야망.** 시청역 조합원 총회 기간의 현장 진료를 공동교섭의 최저선으로 남겨 강국별 분할 복속이 병상을 사지 못하게 한다.\n\n**공포.** 의무소가 배우진의 군사 개입안과 한재목의 수문헌장 사이에서 들러리 창구가 되는 것.\n\n**개입.** 사절 진료를 열어 회의를 붙잡거나, 한 강국 사절의 밀약을 폭로해 회의를 결렬시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −50 | 물질 0 | 공동 10 | 원칙 35 | 공개 25 | 자격 30 | 분산 45 | 변혁 20\n- 욕망: 갈망 40 | 독점 −10 | 위험 5 | 과시 15 | 지속 0 | 지향 동성 | 결합 다자\n:::",
+  "biography": "양쪽 말을 끝까지 들은 뒤에야 한 문장으로 자르는 중재인의 침묵을 침상에서 지킨다. 힘의 중재를 수치의 진료로 바꾸려 한다.\n\n- 생업: 중증도 표 게시·회의 진료 조정\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 협약 회의 의무소 거점 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협약 회의 의무소 거점 의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 협약 회의 의무소 거점 의무원. 쟁점을 급수·통행·의료·손실보상 네 칸으로 나눈 칠판 옆에 중증도 표를 붙이고, 한 칸이라도 서명자가 빠지면 회의 진료를 연기한다.\n\n**일화.** 시청역 조합원 총회 직전에 세 강국 사절이 각각 다른 군사·급수 패키지를 들고 들어오자 원새울은 사절 전용 침상을 열지 않았다.\n\n**관계.** 심유리의 중재실 옆 침상을 맡고, 방마빛의 대합실 대기와 줄을 나눈다. 류은비의 의료헌장 조항을 당직 원장에 올린다.\n\n**야망.** 시청역 조합원 총회 기간의 현장 진료를 공동교섭의 최저선으로 남겨 강국별 분할 복속이 병상을 사지 못하게 한다.\n\n**공포.** 의무소가 배우진의 군사 개입안과 한재목의 수문헌장 사이에서 들러리 창구가 되는 것.\n\n**개입.** 사절 진료를 열어 회의를 붙잡거나, 한 강국 사절의 밀약을 폭로해 회의를 결렬시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 30 | 무력 −50 | 물질 0 | 공동 10 | 원칙 35 | 공개 25 | 자격 30 | 분산 45 | 변혁 20\n- 욕망: 갈망 40 | 독점 −10 | 위험 5 | 과시 15 | 지속 0 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-16"
   ],

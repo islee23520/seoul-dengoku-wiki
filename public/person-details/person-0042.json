@@ -286,6 +286,150 @@
     "id": "K042",
     "personId": "person-0042"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k042-standard-message-delivery",
+        "name": {
+          "ko": "규격 전갈 전달",
+          "en": "Standard-message delivery"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k042-attack-register-salvage",
+        "name": {
+          "ko": "습격 장부 회수",
+          "en": "Attack register salvage"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k042-remeasurement-notice",
+        "name": {
+          "ko": "재측정 통지 먼저",
+          "en": "Remeasurement notice first"
+        },
+        "description": {
+          "ko": "통지가 없으면 비상 개정도 전달하지 않는다.",
+          "en": "Does not deliver emergency revisions without remeasurement notice."
+        },
+        "behavior": {
+          "ko": "통지가 없으면 비상 개정도 전달하지 않는다.",
+          "en": "Does not deliver emergency revisions without remeasurement notice."
+        },
+        "stress": {
+          "ko": "위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.",
+          "en": "That one forged gauging seal would void the whole Cheonwang ledger and the courier network would become the parts blockade's horn."
+        },
+        "relationship": {
+          "ko": "장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.",
+          "en": "A contract delivering Jang Wooseok's audit stamps in the field, guarding Jeong Siwoo's gauging seals with verification dispatches, and carrying Gang Minseo's exchange design only under seal."
+        },
+        "effects": []
+      },
+      {
+        "id": "k042-life-record-first",
+        "name": {
+          "ko": "인명 기록 먼저",
+          "en": "Life records first"
+        },
+        "description": {
+          "ko": "습격 중 화물보다 인명 장부를 챙긴다.",
+          "en": "Protects the life register before cargo during an attack."
+        },
+        "behavior": {
+          "ko": "습격 중 화물보다 인명 장부를 챙긴다.",
+          "en": "Protects the life register before cargo during an attack."
+        },
+        "stress": {
+          "ko": "위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.",
+          "en": "That one forged gauging seal would void the whole Cheonwang ledger and the courier network would become the parts blockade's horn."
+        },
+        "relationship": {
+          "ko": "장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.",
+          "en": "A contract delivering Jang Wooseok's audit stamps in the field, guarding Jeong Siwoo's gauging seals with verification dispatches, and carrying Gang Minseo's exchange design only under seal."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "규격 통지 전달과 습격 중 기록 보호가 근거다. 무장 호위 승리나 문서 저술 경력은 추가하지 않는다.",
+      "en": "Standard-notice delivery and record protection during attack are evidence. No armed escort victory or document-authoring career is added."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -820,7 +964,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 제작규격 전령. 규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 제작규격 전령 자리의 서명이 장부에 올랐다.",
     "관계": "장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.",
@@ -828,7 +971,7 @@
     "공포": "위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.",
     "개입": "결함 부품의 제조 공방을 추적하거나, 전갈 날인을 위조한 자를 잡아 전령망을 세울 수 있다."
   },
-  "biography": "규격 사본의 계측 숫자를 외우고, 구두로 합의한 호환을 원장에 올리지 않는 원로를 규격의 적으로 부른다. 봉인 끈이 젖으면 다시 떠난다.\n\n- 소속: 규격맹\n- 생업: 규격 문서 전달\n- 품계: 조합원\n- 직함: 제작규격 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 제작규격 전령. 규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 제작규격 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.\n\n**야망.** 규격맹의 모든 개정 통지를 자신이 날인하는 전령망에만 유효하게 해 군수 비상 핑계로 규격이 사라지지 않게 한다.\n\n**공포.** 위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.\n\n**개입.** 결함 부품의 제조 공방을 추적하거나, 전갈 날인을 위조한 자를 잡아 전령망을 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 25 | 무력 −5 | 물질 40 | 공동 45 | 원칙 10 | 공개 40 | 자격 55 | 분산 25 | 변혁 15\n- 욕망: 갈망 −10 | 독점 10 | 위험 20 | 과시 −30 | 지속 35 | 지향 양성 | 결합 없음\n:::",
+  "biography": "규격 사본의 계측 숫자를 외우고, 구두로 합의한 호환을 원장에 올리지 않는 원로를 규격의 적으로 부른다. 봉인 끈이 젖으면 다시 떠난다.\n\n- 소속: 규격맹\n- 생업: 규격 문서 전달\n- 품계: 조합원\n- 직함: 제작규격 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 제작규격 전령. 규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 제작규격 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.\n\n**야망.** 규격맹의 모든 개정 통지를 자신이 날인하는 전령망에만 유효하게 해 군수 비상 핑계로 규격이 사라지지 않게 한다.\n\n**공포.** 위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.\n\n**개입.** 결함 부품의 제조 공방을 추적하거나, 전갈 날인을 위조한 자를 잡아 전령망을 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 25 | 무력 −5 | 물질 40 | 공동 45 | 원칙 10 | 공개 40 | 자격 55 | 분산 25 | 변혁 15\n- 욕망: 갈망 −10 | 독점 10 | 위험 20 | 과시 −30 | 지속 35 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

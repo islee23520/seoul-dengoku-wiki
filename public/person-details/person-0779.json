@@ -409,6 +409,150 @@
     "id": "K779",
     "personId": "person-0779"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "save-register",
+        "name": {
+          "ko": "위기 인명 장부 보존",
+          "en": "Emergency preservation of personnel registers"
+        },
+        "rating": 45
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "save-ledgers-before-cargo",
+        "name": {
+          "ko": "화물보다 장부 구조",
+          "en": "Save Ledgers Before Cargo"
+        },
+        "description": {
+          "ko": "김아호는 화물보다 인명 장부의 보존을 우선하는 성향을 보인다.",
+          "en": "Kim Aho shows a disposition to prioritize preserving the register of people over cargo."
+        },
+        "behavior": {
+          "ko": "호송 중 습격을 받자 화물보다 인명 장부부터 챙겼다.",
+          "en": "When the convoy was attacked, he secured the register of people before the cargo."
+        },
+        "stress": {
+          "ko": "습격과 당직 단절의 우려가 겹치면 기록을 잃지 않는 선택에 더 무게를 둘 수 있다.",
+          "en": "If attack pressure coincides with fears of interrupted duty, he may give greater weight to preserving records."
+        },
+        "relationship": {
+          "ko": "선배 당직과의 인계에서는 화물보다 먼저 지킨 인명 기록의 연속성을 중시할 수 있다.",
+          "en": "In handovers with senior duty staff, he may emphasize continuity of the personal records he prioritized over cargo."
+        },
+        "effects": []
+      },
+      {
+        "id": "next-handover-accountability",
+        "name": {
+          "ko": "다음 인계 책임",
+          "en": "Next Handover Accountability"
+        },
+        "description": {
+          "ko": "김아호는 지켜낸 인명 장부를 다음 당직으로 이어 넘기는 책임을 중시한다.",
+          "en": "Kim Aho values responsibility for carrying the preserved register forward to the next duty shift."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 인계하며 장부가 끊기지 않도록 맡은 범위를 지킨다.",
+          "en": "He hands over only his position’s keys and records, staying within his remit to maintain ledger continuity."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행의 종속으로 이어질까 우려되면 다음 인계의 누락을 더 경계할 수 있다.",
+          "en": "If a duty gap could make passage dependent on a powerful state, he may become more alert to handover omissions."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과는 맡은 기록을 정확히 이어 주는 책임을 통해 신뢰를 쌓으려 할 수 있다.",
+          "en": "With senior duty staff in his community, he may seek trust through accountable transfer of the records in his care."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "호송 습격에서 인명 장부를 챙겼다. 기록을 선택한 행동이며 난입자를 제압했다고 쓰지 않았다.",
+      "en": "She preserved personnel registers during a convoy attack. The choice of records is supported; subduing attackers is not claimed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -866,7 +1010,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -874,7 +1017,7 @@
     "공포": "공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 호송·인명 장부 관리\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −15 | 물질 10 | 공동 35 | 원칙 20 | 공개 −10 | 자격 35 | 분산 10 | 변혁 0\n- 욕망: 갈망 20 | 독점 −35 | 위험 20 | 과시 −10 | 지속 5 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 호송·인명 장부 관리\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −15 | 물질 10 | 공동 35 | 원칙 20 | 공개 −10 | 자격 35 | 분산 10 | 변혁 0\n- 욕망: 갈망 20 | 독점 −35 | 위험 20 | 과시 −10 | 지속 5 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-04"
   ],

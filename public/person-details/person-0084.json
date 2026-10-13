@@ -393,6 +393,150 @@
     "id": "K084",
     "personId": "person-0084"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "mission",
+        "name": {
+          "ko": "공동조사 날인 확인",
+          "en": "Joint-investigation signature checks"
+        },
+        "rating": 60
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "wait-for-three-stamps",
+        "name": {
+          "ko": "세 날인 대기",
+          "en": "Wait for Three Stamps"
+        },
+        "description": {
+          "ko": "기서진은 전달의 신속함보다 세 검증 주체의 날인 완비를 출발 기준으로 삼는다.",
+          "en": "Gi Seojin makes complete approval from three validating bodies a departure condition rather than prioritizing delivery speed alone."
+        },
+        "behavior": {
+          "ko": "치료길드·안전심사·송신 검증의 날인이 모여야 출발하고 배차표 없는 열차의 무서명 출발을 막았다.",
+          "en": "Gi Seojin waits for treatment-guild, safety-review, and transmission-verification stamps and stopped an unsigned departure by a train without a dispatch schedule."
+        },
+        "stress": {
+          "ko": "전령로에서 표본 압수가 우려되면 출발을 재촉받아도 날인 조건을 유지할 수 있다.",
+          "en": "If samples risk seizure along the messenger route, Gi Seojin may retain stamp requirements despite pressure to depart."
+        },
+        "relationship": {
+          "ko": "최지우에게 도착 시각을 넘길 때도 세 날인이 갖춰진 출발이라는 조건을 우선할 수 있다.",
+          "en": "When reporting arrival times to Choi Jiu, Gi Seojin may still prioritize departure only after all three stamps are secured."
+        },
+        "effects": []
+      },
+      {
+        "id": "nonmilitary-investigations",
+        "name": {
+          "ko": "조사단 비군사성",
+          "en": "Nonmilitary Investigations"
+        },
+        "description": {
+          "ko": "기서진은 공동조사가 군사 호위나 보호권의 증거 수집으로 바뀌는 것을 거부한다.",
+          "en": "Gi Seojin rejects turning joint investigations into military escort operations or evidence collection for a protection regime."
+        },
+        "behavior": {
+          "ko": "조사단을 호위단으로 바꾸라는 쪽지를 찢고 군사 호위 칸이 적힌 경로를 되돌려 보낸다.",
+          "en": "Gi Seojin tears up requests to turn investigators into escorts and returns routes containing military-escort fields."
+        },
+        "stress": {
+          "ko": "순찰열차와 전령로가 겹쳐 표본이 압수될 우려가 있으면 비군사 경로 조건을 더욱 엄격히 볼 수 있다.",
+          "en": "If overlapping patrol-train and messenger routes threaten sample seizure, Gi Seojin may scrutinize nonmilitary route conditions more strictly."
+        },
+        "relationship": {
+          "ko": "류은비의 의료헌장에 표본 경로를 맞출 때 조사 전달이 군사 목적에 흡수되지 않도록 중시할 수 있다.",
+          "en": "When aligning sample routes with Ryu Eunbi's medical charter, Gi Seojin may emphasize preventing investigative delivery from serving military purposes."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "조사 문서의 세 날인을 확인하고 무표 열차를 세웠다. 전달 조건 집행을 평가하며 외교 대표 권한이나 무장 호위는 부여하지 않는다.",
+      "en": "He checks three signatures and stopped an undocumented train. Delivery-condition enforcement is supported, not diplomatic authority or armed escort expertise."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -806,7 +950,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 비군사 공동조사 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 비군사 공동조사 전령. 조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 비군사 공동조사 전령 자리의 서명이 장부에 올랐다.",
     "관계": "류은비의 의료헌장에 표본 경로를 맞추고, 최지우의 속보 협약에 도착 시각을 넘기며, 고초윤의 공개 검사표를 상자 겉면에 붙인다.",
@@ -814,7 +957,7 @@
     "공포": "전령로가 순찰열차와 겹쳐 표본이 압수되고, 공동조사가 동부 보호권의 증거 수집으로 둔갑하는 것.",
     "개입": "세 날인이 모인 쪽지를 호송해 조사를 성사시키거나, 압수된 표본의 행방을 밝혀 전령을 구하거나 실격시킬 수 있다."
   },
-  "biography": "표본 상자의 온도보다 호송 깃발의 색깔을 먼저 확인하고, 조사단을 호위단으로 바꾸라는 쪽지를 찢는다. 말은 적고 도착 시각은 지킨다.\n\n- 소속: 태욱그룹\n- 생업: 조사 문서 전달\n- 품계: 대리\n- 직함: 비군사 공동조사 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 비군사 공동조사 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 비군사 공동조사 전령. 조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 비군사 공동조사 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 류은비의 의료헌장에 표본 경로를 맞추고, 최지우의 속보 협약에 도착 시각을 넘기며, 고초윤의 공개 검사표를 상자 겉면에 붙인다.\n\n**야망.** 제기동·마곡·상암의 공동조사를 무력 없이 끝내는 공개 경로를 남겨, 가짜 약과 탁수가 한 강국의 보호 사건으로 흡수되지 않게 한다.\n\n**공포.** 전령로가 순찰열차와 겹쳐 표본이 압수되고, 공동조사가 동부 보호권의 증거 수집으로 둔갑하는 것.\n\n**개입.** 세 날인이 모인 쪽지를 호송해 조사를 성사시키거나, 압수된 표본의 행방을 밝혀 전령을 구하거나 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −40 | 물질 5 | 공동 5 | 원칙 45 | 공개 55 | 자격 40 | 분산 20 | 변혁 0\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 25 | 지속 5 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "표본 상자의 온도보다 호송 깃발의 색깔을 먼저 확인하고, 조사단을 호위단으로 바꾸라는 쪽지를 찢는다. 말은 적고 도착 시각은 지킨다.\n\n- 소속: 태욱그룹\n- 생업: 조사 문서 전달\n- 품계: 대리\n- 직함: 비군사 공동조사 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 비군사 공동조사 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 대리. 직함은 비군사 공동조사 전령. 조사 쪽지는 치료길드·안전심사·송신 검증의 세 날인이 모인 뒤에만 출발하고, 군사 호위 칸이 적힌 경로는 되돌려 보낸다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 비군사 공동조사 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 류은비의 의료헌장에 표본 경로를 맞추고, 최지우의 속보 협약에 도착 시각을 넘기며, 고초윤의 공개 검사표를 상자 겉면에 붙인다.\n\n**야망.** 제기동·마곡·상암의 공동조사를 무력 없이 끝내는 공개 경로를 남겨, 가짜 약과 탁수가 한 강국의 보호 사건으로 흡수되지 않게 한다.\n\n**공포.** 전령로가 순찰열차와 겹쳐 표본이 압수되고, 공동조사가 동부 보호권의 증거 수집으로 둔갑하는 것.\n\n**개입.** 세 날인이 모인 쪽지를 호송해 조사를 성사시키거나, 압수된 표본의 행방을 밝혀 전령을 구하거나 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −40 | 물질 5 | 공동 5 | 원칙 45 | 공개 55 | 자격 40 | 분산 20 | 변혁 0\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 25 | 지속 5 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

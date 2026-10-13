@@ -285,6 +285,142 @@
     "id": "K268",
     "personId": "person-0269"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "detour-return",
+        "name": {
+          "ko": "산길 우회 귀환",
+          "en": "Mountain detour return"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "detour-return-disposition",
+        "name": {
+          "ko": "서약보다 가족의 선",
+          "en": "Family boundary within loyalty"
+        },
+        "description": {
+          "ko": "생존 갈등에 침묵하다 가족 분리 철표 앞에서 행렬을 벗어난다.",
+          "en": "Falls silent over survival but leaves the line before family-separation tags."
+        },
+        "behavior": {
+          "ko": "생존 갈등에 침묵하다 가족 분리 철표 앞에서 행렬을 벗어난다.",
+          "en": "Falls silent over survival but leaves the line before family-separation tags."
+        },
+        "stress": {
+          "ko": "이탈이 반란으로 기록돼 숙영이 수색될 것을 두려워한다.",
+          "en": "Fears departure labeled rebellion and triggering camp searches."
+        },
+        "relationship": {
+          "ko": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
+          "en": "Conflicts with O Hangyeol’s oath without opening the store, returns through Bokmo’s detour and explains departure to Baek On’s family meeting."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "옆문을 열지 않음",
+          "en": "Leaves the side door closed"
+        },
+        "description": {
+          "ko": "서약과 충돌해 이탈했지만 창고 옆문은 열지 않았다.",
+          "en": "Left despite oath conflict but did not open the store side door."
+        },
+        "behavior": {
+          "ko": "서약과 충돌해 이탈했지만 창고 옆문은 열지 않았다.",
+          "en": "Left despite oath conflict but did not open the store side door."
+        },
+        "stress": {
+          "ko": "이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.",
+          "en": "Fears departure labeled rebellion and triggering camp searches."
+        },
+        "relationship": {
+          "ko": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
+          "en": "Conflicts with O Hangyeol’s oath without opening the store, returns through Bokmo’s detour and explains departure to Baek On’s family meeting."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "강제등록 줄에서 빠져 산길로 돌아갔으며 창고 옆문은 열지 않았다. 이탈은 호송 전투 승리나 새 권한을 뜻하지 않는다.",
+      "en": "Left the forced-registration line and returned by mountain paths without opening the store side door. Departure does not imply combat victory or new powers."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -654,7 +790,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.",
     "일화": "가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.",
     "관계": "오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.",
@@ -662,7 +797,7 @@
     "공포": "이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.",
     "개입": "이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다."
   },
-  "biography": "맹세와 생존이 충돌하면 오래 침묵한 뒤 행렬에서 한 걸음 빠진다. 충성스러우나 가족을 갈라놓는 철표 앞에서는 침묵을 깬다.\n\n- 생업: 강제등록 이탈 기록·교대 분리 증언\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 강제등록 이탈 행자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.\n\n**일화.** 가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.\n\n**관계.** 오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.\n\n**야망.** 강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 강국 용병이 되지 않게 한다.\n\n**공포.** 이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.\n\n**개입.** 이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 40 | 무력 −50 | 물질 −20 | 공동 60 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "맹세와 생존이 충돌하면 오래 침묵한 뒤 행렬에서 한 걸음 빠진다. 충성스러우나 가족을 갈라놓는 철표 앞에서는 침묵을 깬다.\n\n- 생업: 강제등록 이탈 기록·교대 분리 증언\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 강제등록 이탈 행자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 강제등록 이탈 행자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 행자. 직함은 강제등록 이탈 행자. 이탈 시각과 남은 신도 이름을 같은 쪽지에 적고, 무장 근무와 배급 근무를 같은 사람이 겸하지 못하게 증언한다.\n\n**일화.** 가을의 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 묶자 순지민은 강제등록 줄에서 빠져나와 산길로 되돌아갔다.\n\n**관계.** 오한결의 민병 서약과 충돌하면서도 창고 옆문은 열지 않았고, 복모의 우회로로 숙영을 우회하며, 백온에게 이탈의 이유를 가족 회의에서 바친다.\n\n**야망.** 강제등록 행렬에서 빠져나온 경로를 구출 사건으로 남겨 총림이 강국 용병이 되지 않게 한다.\n\n**공포.** 이탈이 반란으로만 기록되어 남은 숙영이 보복 수색을 받는 것.\n\n**개입.** 이탈자를 숨겨 구출 사건을 열거나, 보복 수색의 명단을 산중총회에 펼칠 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 40 | 무력 −50 | 물질 −20 | 공동 60 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 10 | 과시 10 | 지속 30 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-10"
   ],

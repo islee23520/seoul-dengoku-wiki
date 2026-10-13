@@ -392,6 +392,150 @@
     "id": "K074",
     "personId": "person-0074"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "dispatch",
+        "name": {
+          "ko": "화차 순서 조정",
+          "en": "Freight-car sequencing"
+        },
+        "rating": 60
+      },
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-on-conflicting-markings",
+        "name": {
+          "ko": "표시 충돌에 정지",
+          "en": "Stop on Conflicting Markings"
+        },
+        "description": {
+          "ko": "허미리는 화물의 표시와 봉인이 맞지 않으면 출발보다 확인을 우선한다.",
+          "en": "Heo Miri prioritizes verification over departure when cargo markings and seals conflict."
+        },
+        "behavior": {
+          "ko": "시료 칸의 봉인끈이 의료 표시와 겹치자 동부행 출발 호각을 끊었다.",
+          "en": "She stopped the eastbound departure whistle when a sample wagon’s sealing cord overlapped its medical marking."
+        },
+        "stress": {
+          "ko": "유치선이 군사 보호권의 창구로 변할 우려가 있다면 충돌하는 표시를 그대로 통과시키지 않으려 할 수 있다.",
+          "en": "If the sidings risk becoming a channel for military protection claims, she may resist letting conflicting markings pass unchecked."
+        },
+        "relationship": {
+          "ko": "화물 표시의 재확인이 필요하다면 허서겸의 재검색을 칸 앞에서 지원할 수 있다.",
+          "en": "She may support Heo Seogyeom’s reinspection at the wagon when cargo markings require verification."
+        },
+        "effects": []
+      },
+      {
+        "id": "fields-over-words",
+        "name": {
+          "ko": "말보다 칸 구분",
+          "en": "Fields Over Words"
+        },
+        "description": {
+          "ko": "허미리는 화물을 부르는 말보다 칸 번호와 분필 색의 용도 구분을 중시한다.",
+          "en": "Heo Miri trusts wagon numbers and chalk-coded uses more than verbal cargo labels."
+        },
+        "behavior": {
+          "ko": "칸 번호를 밤마다 다시 쓰고 병기를 연구 시료로 부르라는 전갈을 분필 옆에 붙이지 않는다.",
+          "en": "She rewrites wagon numbers nightly and refuses to place messages relabeling weapons as research samples beside the chalk markings."
+        },
+        "stress": {
+          "ko": "유치 분필이 보호권 매표 번호로 바뀔 위험이 있다면 인증 없는 화물을 유치 자갈에만 세우려 할 수 있다.",
+          "en": "If siding chalk risks becoming protection-ticket numbering, she may insist that uncertified cargo remain only on the gravel sidings."
+        },
+        "relationship": {
+          "ko": "김도하가 민가 칸을 앞세우라고 압박한다면 분필 색과 배차 집행을 둘러싸고 마찰이 생길 수 있다.",
+          "en": "Kim Doha’s pressure to advance household wagons may cause friction over chalk coding and dispatch enforcement."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "의료 표시와 봉인끈이 충돌한 칸의 출발을 멈췄다. 칸 구분과 이상 판단은 확인되지만 사법권이나 전투 경력은 없다.",
+      "en": "She halted a car with conflicting medical marks and seals. Classification and anomaly judgment are documented, not judicial authority or combat experience."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -835,7 +979,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 부장. 직함은 방화기지 유치 실무장. 분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다.",
     "일화": "서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다.",
     "관계": "유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고, 허서겸의 재검색을 칸 앞에서 받친다. 김도하의 민가 칸을 앞세우라는 압력과 분필 색을 다툰다.",
@@ -843,7 +986,7 @@
     "공포": "활주로 터가 숙영 깃발로 덮이면 유치 분필이 보호권 매표 창구의 번호가 되는 것.",
     "개입": "꼬리표가 없는 칸의 발주 쪽지를 유치 분필 옆에 붙이거나, 인증 없는 출고를 막은 손을 삼원 심의에 넘길 수 있다."
   },
-  "biography": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다. 칸 번호를 밤마다 다시 쓰느라 말을 아낀다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 화물 구분·배차\n- 품계: 부장\n- 직함: 방화기지 유치 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 부장. 직함은 방화기지 유치 실무장. 분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다.\n\n**일화.** 서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다.\n\n**관계.** 유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고, 허서겸의 재검색을 칸 앞에서 받친다. 김도하의 민가 칸을 앞세우라는 압력과 분필 색을 다툰다.\n\n**야망.** 인증 꼬리표가 없는 화물은 유치 자갈에만 세우게 해, 공동기술원장이 군수 줄에 목을 맡기지 않게 한다.\n\n**공포.** 활주로 터가 숙영 깃발로 덮이면 유치 분필이 보호권 매표 창구의 번호가 되는 것.\n\n**개입.** 꼬리표가 없는 칸의 발주 쪽지를 유치 분필 옆에 붙이거나, 인증 없는 출고를 막은 손을 삼원 심의에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −35 | 물질 5 | 공동 0 | 원칙 40 | 공개 50 | 자격 35 | 분산 10 | 변혁 15\n- 욕망: 갈망 −5 | 독점 0 | 위험 −20 | 과시 25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
+  "biography": "화물 칸의 기름 냄새로 위장 물자를 가리고, 병기를 연구 시료로 부르라는 전갈을 유치 분필 옆에 붙이지 않는다. 칸 번호를 밤마다 다시 쓰느라 말을 아낀다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 화물 구분·배차\n- 품계: 부장\n- 직함: 방화기지 유치 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 부장. 직함은 방화기지 유치 실무장. 분필 색으로 칸 용도를 나누고, 병기 냄새가 나는 칸은 꼬리표를 떼기 전에 유치선 자갈 쪽으로 민다.\n\n**일화.** 서부 외곽에서 온 시료 칸의 봉인끈이 의료 표시와 겹치자 허미리는 동부행 호각을 끊고 암사 칸 분필만 남겼다.\n\n**관계.** 유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고, 허서겸의 재검색을 칸 앞에서 받친다. 김도하의 민가 칸을 앞세우라는 압력과 분필 색을 다툰다.\n\n**야망.** 인증 꼬리표가 없는 화물은 유치 자갈에만 세우게 해, 공동기술원장이 군수 줄에 목을 맡기지 않게 한다.\n\n**공포.** 활주로 터가 숙영 깃발로 덮이면 유치 분필이 보호권 매표 창구의 번호가 되는 것.\n\n**개입.** 꼬리표가 없는 칸의 발주 쪽지를 유치 분필 옆에 붙이거나, 인증 없는 출고를 막은 손을 삼원 심의에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −35 | 물질 5 | 공동 0 | 원칙 40 | 공개 50 | 자격 35 | 분산 10 | 변혁 15\n- 욕망: 갈망 −5 | 독점 0 | 위험 −20 | 과시 25 | 지속 5 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

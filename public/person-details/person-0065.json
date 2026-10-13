@@ -286,6 +286,150 @@
     "id": "K065",
     "personId": "person-0065"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "audit",
+        "name": {
+          "ko": "열람증 발급 경로 감사",
+          "en": "Access-permit provenance audit"
+        },
+        "rating": 65
+      },
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-without-enough-witnesses",
+        "name": {
+          "ko": "증인 부족에 중지",
+          "en": "Stop Without Enough Witnesses"
+        },
+        "description": {
+          "ko": "임시온은 안전심사 날인만으로 열람을 허용하지 않고 독립 증인 두 명을 요구한다.",
+          "en": "Im Sion requires two independent witnesses rather than allowing access on a safety-review stamp alone."
+        },
+        "behavior": {
+          "ko": "증인이 한 명뿐인 열람을 멈추고 열람증의 발급 경로를 추적한다.",
+          "en": "He stops access supported by only one witness and traces the access permit’s issuance route."
+        },
+        "stress": {
+          "ko": "위조 열람증이 서고를 선전 자료로 바꿀 우려가 있다면 증인 요건과 발급 경로 확인을 더 엄격히 할 수 있다.",
+          "en": "If a forged permit could turn the archive into propaganda material, he may enforce witness requirements and issuance checks more strictly."
+        },
+        "relationship": {
+          "ko": "열람 요청이 증인 요건을 채우지 못한다면 정호준의 재현 기록 원칙을 공유하더라도 허용하지 않을 수 있다.",
+          "en": "He may refuse an access request lacking sufficient witnesses even when the requester shares Jeong Hojun’s reproducible-record principle."
+        },
+        "effects": []
+      },
+      {
+        "id": "independent-original-preservation",
+        "name": {
+          "ko": "원본 독립 보존",
+          "en": "Independent Original Preservation"
+        },
+        "description": {
+          "ko": "임시온은 검증 가능한 원본을 군사 감독과 선전 용도에서 분리해 보존하려 한다.",
+          "en": "Im Sion seeks to preserve verifiable originals separately from military oversight and propaganda uses."
+        },
+        "behavior": {
+          "ko": "군사 감독 문서를 서고 바깥 별치함으로 옮기고 감시 기록을 봉쇄 증거로 보관한다.",
+          "en": "He moves military oversight documents to an external separate box and retains monitoring records as blockade evidence."
+        },
+        "stress": {
+          "ko": "위조 문서가 지식의 검증 가능성을 무너뜨릴 위험이 있다면 원본 보존과 감사 가능한 대여 기록을 우선할 수 있다.",
+          "en": "If forged documents threaten the verifiability of knowledge, he may prioritize original preservation and auditable lending records."
+        },
+        "relationship": {
+          "ko": "공개 시점에 의견이 달라도 원본 보존이 위협받는다면 최지우와 협력할 수 있다.",
+          "en": "He may cooperate with Choi Jiwoo when original preservation is threatened despite differences over publication timing."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "증인이 부족한 열람을 중지하고 발급 경로를 조사했다. 기록 통제와 추적을 평가하며 암호 해독 능력은 추가하지 않는다.",
+      "en": "He stopped access with missing witnesses and traced permit issuance. Record controls and provenance checks are supported, not cryptanalysis."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -714,7 +858,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 연구기록·통신서고 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 연구기록·통신서고 감사관. 열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다.",
     "일화": "안전심사 날인은 찍혔으나 독립 증인이 한 명뿐인 열람증이 통신서고 창구에 들어온다. 임시온은 열람을 멈추고 열람증의 발급 경로를 거슬러 오르며, 함께 딸려 온 군사 감독 문서는 서고 바깥 별치함으로 옮긴다.",
     "관계": "정호준의 재현 기록 원칙을 원장으로 옮기는 계약이고, 최지우과 공개 시점만 다를 뿐 원본 보존에서는 동맹이며, 이봄결의 감시 기록을 봉쇄 증거로 보관한다.",
@@ -722,7 +865,7 @@
     "공포": "한 장의 위조 열람증이 서고 전체를 강국의 선전 자료로 만들고, 검증 가능한 지식이 무너지는 것.",
     "개입": "원본 키를 회수해 서고를 다시 열거나, 위조 열람증의 발급자를 밝혀 감사관을 흔들 수 있다."
   },
-  "biography": "냉정하고 암호 키의 대여 시각까지 기억한다. 기록되지 않은 기술 선물 교환을 외교가 아니라 절도로 부른다.\n\n- 소속: 태욱그룹\n- 생업: 연구기록 감사\n- 품계: 대리\n- 직함: 연구기록·통신서고 감사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 연구기록·통신서고 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 연구기록·통신서고 감사관. 열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다.\n\n**일화.** 안전심사 날인은 찍혔으나 독립 증인이 한 명뿐인 열람증이 통신서고 창구에 들어온다. 임시온은 열람을 멈추고 열람증의 발급 경로를 거슬러 오르며, 함께 딸려 온 군사 감독 문서는 서고 바깥 별치함으로 옮긴다.\n\n**관계.** 정호준의 재현 기록 원칙을 원장으로 옮기는 계약이고, 최지우과 공개 시점만 다를 뿐 원본 보존에서는 동맹이며, 이봄결의 감시 기록을 봉쇄 증거로 보관한다.\n\n**야망.** 연구자료 열람을 인질 교환이 아니라 감사 가능한 대여 원장으로 바꿔 공동기술원장의 서고를 연다.\n\n**공포.** 한 장의 위조 열람증이 서고 전체를 강국의 선전 자료로 만들고, 검증 가능한 지식이 무너지는 것.\n\n**개입.** 원본 키를 회수해 서고를 다시 열거나, 위조 열람증의 발급자를 밝혀 감사관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 −30 | 물질 5 | 공동 −5 | 원칙 70 | 공개 45 | 자격 35 | 분산 5 | 변혁 10\n- 욕망: 갈망 40 | 독점 −15 | 위험 −10 | 과시 0 | 지속 15 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "냉정하고 암호 키의 대여 시각까지 기억한다. 기록되지 않은 기술 선물 교환을 외교가 아니라 절도로 부른다.\n\n- 소속: 태욱그룹\n- 생업: 연구기록 감사\n- 품계: 대리\n- 직함: 연구기록·통신서고 감사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 연구기록·통신서고 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 연구기록·통신서고 감사관. 열람은 두 명의 독립 증인과 안전심사 날인이 있어야 하고, 군사 감독 문서는 서고 바깥 별치함으로 쫓아낸다.\n\n**일화.** 안전심사 날인은 찍혔으나 독립 증인이 한 명뿐인 열람증이 통신서고 창구에 들어온다. 임시온은 열람을 멈추고 열람증의 발급 경로를 거슬러 오르며, 함께 딸려 온 군사 감독 문서는 서고 바깥 별치함으로 옮긴다.\n\n**관계.** 정호준의 재현 기록 원칙을 원장으로 옮기는 계약이고, 최지우과 공개 시점만 다를 뿐 원본 보존에서는 동맹이며, 이봄결의 감시 기록을 봉쇄 증거로 보관한다.\n\n**야망.** 연구자료 열람을 인질 교환이 아니라 감사 가능한 대여 원장으로 바꿔 공동기술원장의 서고를 연다.\n\n**공포.** 한 장의 위조 열람증이 서고 전체를 강국의 선전 자료로 만들고, 검증 가능한 지식이 무너지는 것.\n\n**개입.** 원본 키를 회수해 서고를 다시 열거나, 위조 열람증의 발급자를 밝혀 감사관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 −30 | 물질 5 | 공동 −5 | 원칙 70 | 공개 45 | 자격 35 | 분산 5 | 변혁 10\n- 욕망: 갈망 40 | 독점 −15 | 위험 −10 | 과시 0 | 지속 15 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

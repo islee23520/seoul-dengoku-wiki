@@ -394,6 +394,150 @@
     "id": "K826",
     "personId": "person-0826"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "save-register",
+        "name": {
+          "ko": "위기 인명 장부 보존",
+          "en": "Emergency preservation of personnel registers"
+        },
+        "rating": 45
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "choose-records-amid-fire",
+        "name": {
+          "ko": "화재 속 기록 선택",
+          "en": "Choose Records Amid Fire"
+        },
+        "description": {
+          "ko": "장라원은 화재 속에서 인명 장부를 우선 보존하는 선택을 했다.",
+          "en": "Jang Rawon chose to preserve the people register first amid a fire."
+        },
+        "behavior": {
+          "ko": "역사 화재 때 인명 장부부터 꺼내 들고 밖으로 나왔다.",
+          "en": "They took the people register first and carried it out during the station fire."
+        },
+        "stress": {
+          "ko": "화재처럼 기록이 사라질 위험과 당직 공백 우려가 겹치면 장부 확보에 집중할 수 있다.",
+          "en": "When a risk of record destruction coincides with concern about a vacant shift, they may focus on securing the register."
+        },
+        "relationship": {
+          "ko": "위기 뒤 선배 당직에게 인계한다면 보존한 장부를 공동 확인의 출발점으로 삼을 수 있다.",
+          "en": "In a handover after a crisis, they may use the preserved register as the starting point for joint verification with a senior colleague."
+        },
+        "effects": []
+      },
+      {
+        "id": "hand-over-key-access-limits",
+        "name": {
+          "ko": "열쇠 범위 인계",
+          "en": "Hand Over Key Access Limits"
+        },
+        "description": {
+          "ko": "장라원은 인계할 열쇠와 기록을 자기 직위의 범위 안에 두는 원칙을 따른다.",
+          "en": "Jang Rawon follows the principle of limiting transferred keys and records to their own position."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 넘기고 없는 권한을 인계 내용에 보태지 않는다.",
+          "en": "They transfer only their own keys and records without adding authority they do not hold."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 위협하더라도 인계 권한의 경계를 지키려 할 수 있다.",
+          "en": "Even if a vacant shift threatens passage, they may seek to preserve the boundaries of their handover authority."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 넘길 수 있는 열쇠와 기록의 범위를 분명히 할 수 있다.",
+          "en": "In handovers with a senior duty colleague, they may clarify which keys and records they can transfer."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "화재 때 인명 장부를 먼저 꺼냈다. 제한된 위험 대응만 평가하며 수질 검사의 전문 숙련은 발급하지 않았다.",
+      "en": "She retrieved personnel registers first during a fire. Limited hazard response is reflected; specialist water-testing skill is not issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -743,7 +887,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -751,7 +894,7 @@
     "공포": "수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 55 | 공개 35 | 자격 45 | 분산 15 | 변혁 5\n- 욕망: 갈망 25 | 독점 −15 | 위험 5 | 과시 −5 | 지속 −20 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −20 | 물질 5 | 공동 10 | 원칙 55 | 공개 35 | 자격 45 | 분산 15 | 변혁 5\n- 욕망: 갈망 25 | 독점 −15 | 위험 5 | 과시 −5 | 지속 −20 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-03"
   ],

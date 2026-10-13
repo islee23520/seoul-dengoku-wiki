@@ -393,6 +393,142 @@
     "id": "K359",
     "personId": "person-0360"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "damage-coordinate-recording",
+        "name": {
+          "ko": "파손 좌표 기록",
+          "en": "Damage coordinate recording"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "목격만 공개한다",
+          "en": "Publishes observation only"
+        },
+        "description": {
+          "ko": "적대 보고가 퍼지자 추정 칸을 지우고 금 간 관만 공개했다. 정보 절제는 강점이며 실제 공격 원인을 확정한 것은 아니다.",
+          "en": "As hostile reports spread, inference was removed and only cracked pipes published. Information restraint is a strength, not proof of the cause."
+        },
+        "behavior": {
+          "ko": "목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 금이 간 관만 남긴다. 보고를 빨리 쓰되 해석을 보태는 상관의 버릇을 현장에서 깎는다.",
+          "en": "He had sightings and conjectures written in different inks, but in a crisis he erased the conjecture column and left only the cracked pipe. He pared down in the field a superior's habit of adding interpretation to fast reports."
+        },
+        "stress": {
+          "ko": "공포. 오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
+          "en": "Fear. That one mistaken solid line would spread into an eastern-bridge war and he would become its object of grudges."
+        },
+        "relationship": {
+          "ko": "관계. 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.",
+          "en": "Relations. An apprentice translating Sim Gaeun's reconnaissance reports into coordinates, he wrote An Giun's pier-crack names in the margin of the master plate. Exchanged transfer information with Jang Sehwa in dotted lines only."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.",
+          "en": "Office. Rank: sergeant. Title: bridge underside surveyor, duty officer of Sim Gaeun. He left unsurveyed damage only as dotted lines and moved no hostile-action clause onto the master plate before Go Seojun's direct report."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: bridge underside surveyor, duty officer of Sim Gaeun. He left unsurveyed damage only as dotted lines and moved no hostile-action clause onto the master plate before Go Seojun's direct report."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That one mistaken solid line would spread into an eastern-bridge war and he would become its object of grudges."
+        },
+        "relationship": {
+          "ko": "관계. 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.",
+          "en": "Relations. An apprentice translating Sim Gaeun's reconnaissance reports into coordinates, he wrote An Giun's pier-crack names in the margin of the master plate. Exchanged transfer information with Jang Sehwa in dotted lines only."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "적대 보고가 퍼지자 추정 칸을 지우고 금 간 관만 공개했다. 정보 절제는 강점이며 실제 공격 원인을 확정한 것은 아니다.",
+      "en": "As hostile reports spread, inference was removed and only cracked pipes published. Information restraint is a strength, not proof of the cause."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -841,7 +977,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 아관사 교량 하부 탐사원, 심가은의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.",
     "일화": "상수관 파손을 적대행위로 적은 척후 보고가 능선과 교량에 동시에 퍼지자 동새봄은 추정 칸을 지우고 금 간 관만 공개했다.",
     "관계": "심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.",
@@ -849,7 +984,7 @@
     "공포": "오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.",
     "개입": "추정 칸의 원본을 공개하거나, 오인 실선을 덮어 일방의 지휘권 확대를 가속할 수 있다."
   },
-  "biography": "목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 금이 간 관만 남긴다. 보고를 빨리 쓰되 해석을 보태는 상관의 버릇을 현장에서 깎는다.\n\n- 생업: 교량 하부 실측·적대 문장 대조\n- 소속: 아관사\n- 품계: 병장\n- 직함: 아관사 교량 하부 탐사원, 심가은의 실무 담당자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 아관사 교량 하부 탐사원, 심가은의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.\n\n**일화.** 상수관 파손을 적대행위로 적은 척후 보고가 능선과 교량에 동시에 퍼지자 동새봄은 추정 칸을 지우고 금 간 관만 공개했다.\n\n**관계.** 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.\n\n**야망.** 교량 하부와 상수관 파손 좌표를 공개 원판에 묶어 구의수비대의 정보 독점도 암사의 외부 간섭도 끊는다.\n\n**공포.** 오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.\n\n**개입.** 추정 칸의 원본을 공개하거나, 오인 실선을 덮어 일방의 지휘권 확대를 가속할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 0 | 공동 25 | 원칙 5 | 공개 −20 | 자격 0 | 분산 −10 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −25 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "목격과 추정을 다른 색 먹으로 적게 하지만, 위기 때는 추정 칸을 지우고 금이 간 관만 남긴다. 보고를 빨리 쓰되 해석을 보태는 상관의 버릇을 현장에서 깎는다.\n\n- 생업: 교량 하부 실측·적대 문장 대조\n- 소속: 아관사\n- 품계: 병장\n- 직함: 아관사 교량 하부 탐사원, 심가은의 실무 담당자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 아관사 교량 하부 탐사원, 심가은의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 아관사 교량 하부 탐사원, 심가은의 실무 담당자. 실측하지 않은 파손은 점선으로만 남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.\n\n**일화.** 상수관 파손을 적대행위로 적은 척후 보고가 능선과 교량에 동시에 퍼지자 동새봄은 추정 칸을 지우고 금 간 관만 공개했다.\n\n**관계.** 심가은의 척후 보고를 좌표로 번역하는 사제이고, 안기준의 교각 균열 이름을 원판 여백에 적는다. 장세화의 환승 정보를 점선으로만 맞교환한다.\n\n**야망.** 교량 하부와 상수관 파손 좌표를 공개 원판에 묶어 구의수비대의 정보 독점도 암사의 외부 간섭도 끊는다.\n\n**공포.** 오인 실선 한 줄이 동부 교량 전쟁으로 번져 자신이 원한의 대상이 되는 것.\n\n**개입.** 추정 칸의 원본을 공개하거나, 오인 실선을 덮어 일방의 지휘권 확대를 가속할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 0 | 공동 25 | 원칙 5 | 공개 −20 | 자격 0 | 분산 −10 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −25 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-14"
   ],

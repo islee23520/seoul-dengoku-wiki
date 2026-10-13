@@ -286,6 +286,142 @@
     "id": "K225",
     "personId": "person-0226"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "power-maintenance",
+        "name": {
+          "ko": "예비 전원 정비",
+          "en": "Backup power maintenance"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "power-maintenance-disposition",
+        "name": {
+          "ko": "대충 감은 선 거부",
+          "en": "Rejects careless wiring"
+        },
+        "description": {
+          "ko": "선이 대충 감겼으면 처음부터 다시 한다.",
+          "en": "Restarts work over careless wiring."
+        },
+        "behavior": {
+          "ko": "선이 대충 감겼으면 처음부터 다시 한다.",
+          "en": "Restarts work over careless wiring."
+        },
+        "stress": {
+          "ko": "정비 실수가 발행을 멈출 것을 두려워한다.",
+          "en": "Fears maintenance errors stopping issuance."
+        },
+        "relationship": {
+          "ko": "권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.",
+          "en": "Repairs the vault under Gwon Mirae, shares duty with Gambong and delays Bae Woojin’s shutoff demands."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "공백에서 중지",
+          "en": "Stops at gaps"
+        },
+        "description": {
+          "ko": "장부 두 줄이 비자 스위치를 봉인했다.",
+          "en": "Sealed the switch over two missing ledger lines."
+        },
+        "behavior": {
+          "ko": "장부 두 줄이 비자 스위치를 봉인했다.",
+          "en": "Sealed the switch over two missing ledger lines."
+        },
+        "stress": {
+          "ko": "정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.",
+          "en": "Fears maintenance errors stopping issuance."
+        },
+        "relationship": {
+          "ko": "권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.",
+          "en": "Repairs the vault under Gwon Mirae, shares duty with Gambong and delays Bae Woojin’s shutoff demands."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "매일 전원을 시험하며 빈 장부 두 줄에 스위치를 봉인했다. 정비 정확성과 위험 중지가 함께 확인된다.",
+      "en": "Tests power daily and sealed a switch over blank ledger lines, showing precision and hazard restraint."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -736,7 +872,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사, 권미래의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 서기. 직함은 금고 정비사, 권미래의 실무 담당자. 예비 전원을 매일 순환 시험하고, 금고 단독 개방은 출자 평의회의 승인 없이 연결하지 않는다.",
     "일화": "임하준 실종 전 장부에 빈 칸이 두 줄 나타나자 예비 전원 스위치를 봉인했다.",
     "관계": "권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.",
@@ -744,7 +879,7 @@
     "공포": "정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.",
     "개입": "봉인된 스위치를 함께 열거나, 예비 전원을 한 강국에 넘기려는 거래를 막을 수 있다."
   },
-  "biography": "밤이 깊을수록 손이 정확해지고, 예비 전원의 잡음을 사람 말보다 먼저 듣는다. 대충 감은 선을 보면 그날 일을 처음부터 다시 한다.\n\n- 생업: 금고 예비 전원 정비·순환 시험\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 정비사, 권미래의 실무 담당자\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사, 권미래의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 서기. 직함은 금고 정비사, 권미래의 실무 담당자. 예비 전원을 매일 순환 시험하고, 금고 단독 개방은 출자 평의회의 승인 없이 연결하지 않는다.\n\n**일화.** 임하준 실종 전 장부에 빈 칸이 두 줄 나타나자 예비 전원 스위치를 봉인했다.\n\n**관계.** 권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.\n\n**야망.** 여의도 금고의 예비 전원을 세 곳으로 나눠, 강국이 한 곳을 꺼도 공용 화폐의 발행이 남게 한다.\n\n**공포.** 정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.\n\n**개입.** 봉인된 스위치를 함께 열거나, 예비 전원을 한 강국에 넘기려는 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 20 | 무력 −25 | 물질 0 | 공동 0 | 원칙 30 | 공개 65 | 자격 35 | 분산 30 | 변혁 0\n- 욕망: 갈망 −5 | 독점 0 | 위험 30 | 과시 20 | 지속 −5 | 지향 유동 | 결합 비독점",
+  "biography": "밤이 깊을수록 손이 정확해지고, 예비 전원의 잡음을 사람 말보다 먼저 듣는다. 대충 감은 선을 보면 그날 일을 처음부터 다시 한다.\n\n- 생업: 금고 예비 전원 정비·순환 시험\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 정비사, 권미래의 실무 담당자\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 금고 정비사, 권미래의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 서기. 직함은 금고 정비사, 권미래의 실무 담당자. 예비 전원을 매일 순환 시험하고, 금고 단독 개방은 출자 평의회의 승인 없이 연결하지 않는다.\n\n**일화.** 임하준 실종 전 장부에 빈 칸이 두 줄 나타나자 예비 전원 스위치를 봉인했다.\n\n**관계.** 권미래의 지휘로 금고를 고치고, 감봉과 금고 당직을 나눈다. 배우진의 전원 차단 요구는 기술 장애로 미룬다.\n\n**야망.** 여의도 금고의 예비 전원을 세 곳으로 나눠, 강국이 한 곳을 꺼도 공용 화폐의 발행이 남게 한다.\n\n**공포.** 정비 실수로 금고가 한순간 닫혀 공용 화폐가 승자의 증서로 몰리는 것.\n\n**개입.** 봉인된 스위치를 함께 열거나, 예비 전원을 한 강국에 넘기려는 거래를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 20 | 무력 −25 | 물질 0 | 공동 0 | 원칙 30 | 공개 65 | 자격 35 | 분산 30 | 변혁 0\n- 욕망: 갈망 −5 | 독점 0 | 위험 30 | 과시 20 | 지속 −5 | 지향 유동 | 결합 비독점",
   "sources": [
     "Cast-State-09"
   ],

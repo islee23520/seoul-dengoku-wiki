@@ -287,6 +287,150 @@
     "id": "K714",
     "personId": "person-0714"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "accounts",
+        "name": {
+          "ko": "지급 장부 대조",
+          "en": "Payment ledger reconciliation"
+        },
+        "rating": 50
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "correct-duplicate-payments",
+        "name": {
+          "ko": "중복 지급 정정",
+          "en": "Correct Duplicate Payments"
+        },
+        "description": {
+          "ko": "서빛은은 이중 지급 기록을 대조해 중복된 한 줄을 바로잡는 편이다.",
+          "en": "Seo Biteun favors comparing duplicate-payment records and correcting the redundant entry."
+        },
+        "behavior": {
+          "ko": "이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다.",
+          "en": "Seo Biteun compared the duplicate-payment ledger, deleted one line, and left a signature."
+        },
+        "stress": {
+          "ko": "지급 기록의 중복이 장부의 연결을 흔들면 대조를 통해 정정할 줄을 확인하려 할 수 있다.",
+          "en": "If duplicate payment records disrupt ledger continuity, Seo Biteun may compare entries to identify the line needing correction."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 정정한 줄과 남긴 서명을 함께 확인하도록 할 수 있다.",
+          "en": "During handovers with senior duty staff, Seo Biteun may draw attention to both the corrected line and the signature."
+        },
+        "effects": []
+      },
+      {
+        "id": "leave-a-signature",
+        "name": {
+          "ko": "서명 남기기",
+          "en": "Leave a Signature"
+        },
+        "description": {
+          "ko": "서빛은은 장부 정정 뒤 자신의 처리 흔적을 서명으로 남기는 편이다.",
+          "en": "Seo Biteun favors leaving a signature as a trace of a ledger correction."
+        },
+        "behavior": {
+          "ko": "이중 지급 장부의 한 줄을 지운 뒤 서명을 남겼다.",
+          "en": "After deleting one line from the duplicate-payment ledger, Seo Biteun left a signature."
+        },
+        "stress": {
+          "ko": "정정으로 장부 내용이 달라질 때 누가 처리했는지 남기기 위해 서명을 중시할 수 있다.",
+          "en": "When a correction changes the ledger, Seo Biteun may value a signature that identifies who made the change."
+        },
+        "relationship": {
+          "ko": "선배 당직이 정정 내역을 넘겨받을 때 서명으로 처리 주체를 확인하게 하려 할 수 있다.",
+          "en": "When senior duty staff receive the correction, Seo Biteun may use the signature to make its author identifiable."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "이중 지급 한 줄을 지우고 서명했다. 장부 대조는 확인되지만 광범위 재정 통제권이나 종자 검증은 없다.",
+      "en": "He struck a duplicate payment and signed the correction. Reconciliation is supported, not broad financial authority or seed verification."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -656,7 +800,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -664,7 +807,7 @@
     "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −40 | 물질 20 | 공동 −5 | 원칙 55 | 공개 50 | 자격 40 | 분산 0 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 5 | 지속 0 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −40 | 물질 20 | 공동 −5 | 원칙 55 | 공개 50 | 자격 40 | 분산 0 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 5 | 지속 0 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

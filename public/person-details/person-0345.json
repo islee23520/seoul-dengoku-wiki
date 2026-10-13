@@ -392,6 +392,142 @@
     "id": "K344",
     "personId": "person-0345"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "displaced-patient-roster-reconciliation",
+        "name": {
+          "ko": "피난 환자 명부 대조",
+          "en": "Displaced patient roster reconciliation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "등록 없이 치료",
+          "en": "Care without registration"
+        },
+        "description": {
+          "ko": "행렬이 몰리자 강제등록 창구를 밖으로 밀고 중증도 표를 남겼다. 가족 명부와 들것 수를 맞추는 현장 운영을 반영한다.",
+          "en": "When arrivals crowded the clinic, they pushed compulsory registration outside and retained triage. Roster and stretcher reconciliation support field management."
+        },
+        "behavior": {
+          "ko": "들것 순서를 국적보다 앞에 두고, 복무 재등록을 진료 창구에 붙이라는 명령을 모욕으로 듣는다. 줄 선 얼굴을 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He put stretcher order ahead of nationality and heard as an insult any order to paste service re-registration on the care window. He remembered the faces in the queue for a long time."
+        },
+        "stress": {
+          "ko": "공포. 자신이 나눈 침상이 군사호적 미끼가 되어 진료소가 보호 창구로 찍히는 것.",
+          "en": "Fear. That the sickbeds he handed out would become military-registry bait and the clinic would be stamped a protection window."
+        },
+        "relationship": {
+          "ko": "관계. 은채윤의 병상을 피난 줄에 열고, 백온의 남하 가족 명부를 침상 발치에서 대조한다. 범온결의 통행 숫자와 들것 수를 맞춘다.",
+          "en": "Relations. Opened Eun Chaeyun's sickbeds to the refugee line and cross-checked Baek On's southward family roster at the foot of the beds. Matched stretcher counts with Beom Ongyeol's passage numbers."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 피난 환자 진료 수련의. 피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다.",
+          "en": "Office. Rank: member. Title: southward refugee patient representative. He posted the refugee patients and the contribution-labor table side by side and accepted priority care requests only after the guild council."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 피난 환자 진료 수련의. 피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: southward refugee patient representative. He posted the refugee patients and the contribution-labor table side by side and accepted priority care requests only after the guild council."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 자신이 나눈 침상이 군사호적 미끼가 되어 진료소가 보호 창구로 찍히는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the sickbeds he handed out would become military-registry bait and the clinic would be stamped a protection window."
+        },
+        "relationship": {
+          "ko": "관계. 은채윤의 병상을 피난 줄에 열고, 백온의 남하 가족 명부를 침상 발치에서 대조한다. 범온결의 통행 숫자와 들것 수를 맞춘다.",
+          "en": "Relations. Opened Eun Chaeyun's sickbeds to the refugee line and cross-checked Baek On's southward family roster at the foot of the beds. Matched stretcher counts with Beom Ongyeol's passage numbers."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "행렬이 몰리자 강제등록 창구를 밖으로 밀고 중증도 표를 남겼다. 가족 명부와 들것 수를 맞추는 현장 운영을 반영한다.",
+      "en": "When arrivals crowded the clinic, they pushed compulsory registration outside and retained triage. Roster and stretcher reconciliation support field management."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -835,7 +971,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 보국문 피난 막사에서 자랐다. 피난 환자 진료 수련의 자리는 고아 명부 시민권 줄로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 피난 환자 진료 수련의. 피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다.",
     "일화": "가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다.",
     "관계": "은채윤의 병상을 피난 줄에 열고, 백온의 남하 가족 명부를 침상 발치에서 대조한다. 범온결의 통행 숫자와 들것 수를 맞춘다.",
@@ -843,7 +978,7 @@
     "공포": "자신이 나눈 침상이 군사호적 미끼가 되어 진료소가 보호 창구로 찍히는 것.",
     "개입": "피난 원장을 지켜 치료를 이어가거나, 줄을 군호 창구로 넘길 수 있다."
   },
-  "biography": "들것 순서를 국적보다 앞에 두고, 복무 재등록을 진료 창구에 붙이라는 명령을 모욕으로 듣는다. 줄 선 얼굴을 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 피난 환자 중증도 게시\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 피난 환자 진료 수련의\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 피난 환자 진료 수련의 자리는 고아 명부 시민권 줄로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 피난 환자 진료 수련의. 피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다.\n\n**일화.** 가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다.\n\n**관계.** 은채윤의 병상을 피난 줄에 열고, 백온의 남하 가족 명부를 침상 발치에서 대조한다. 범온결의 통행 숫자와 들것 수를 맞춘다.\n\n**야망.** 북한산보국문에서 내려온 환자 가족을 중증도만의 원장으로 묶어 시민권 없는 치료가 끊기지 않게 한다.\n\n**공포.** 자신이 나눈 침상이 군사호적 미끼가 되어 진료소가 보호 창구로 찍히는 것.\n\n**개입.** 피난 원장을 지켜 치료를 이어가거나, 줄을 군호 창구로 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 55 | 무력 −65 | 물질 −25 | 공동 40 | 원칙 40 | 공개 25 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −20 | 과시 25 | 지속 50 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "들것 순서를 국적보다 앞에 두고, 복무 재등록을 진료 창구에 붙이라는 명령을 모욕으로 듣는다. 줄 선 얼굴을 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 피난 환자 중증도 게시\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 피난 환자 진료 수련의\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 피난 환자 진료 수련의 자리는 고아 명부 시민권 줄로 열렸다.\n\n**관직.** 품계 수련의. 직함은 피난 환자 진료 수련의. 피난 환자와 중증도 표를 나란히 게시하고, 우선 치료 요청은 담당 전문의의 임상 판단 뒤에만 받는다.\n\n**일화.** 가을의 북한산보국문 행렬이 제기동 진료소 앞을 메우자 석라온은 강제등록 창구를 문 밖으로 밀어내고 중증도 표만 남겼다.\n\n**관계.** 은채윤의 병상을 피난 줄에 열고, 백온의 남하 가족 명부를 침상 발치에서 대조한다. 범온결의 통행 숫자와 들것 수를 맞춘다.\n\n**야망.** 북한산보국문에서 내려온 환자 가족을 중증도만의 원장으로 묶어 시민권 없는 치료가 끊기지 않게 한다.\n\n**공포.** 자신이 나눈 침상이 군사호적 미끼가 되어 진료소가 보호 창구로 찍히는 것.\n\n**개입.** 피난 원장을 지켜 치료를 이어가거나, 줄을 군호 창구로 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 55 | 무력 −65 | 물질 −25 | 공동 40 | 원칙 40 | 공개 25 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −20 | 과시 25 | 지속 50 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-13"
   ],

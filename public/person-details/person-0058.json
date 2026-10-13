@@ -287,6 +287,150 @@
     "id": "K058",
     "personId": "person-0058"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "sample",
+        "name": {
+          "ko": "표본 기록 심사",
+          "en": "Sample-record review"
+        },
+        "rating": 65
+      },
+      {
+        "id": "save-register",
+        "name": {
+          "ko": "위기 인명 장부 보존",
+          "en": "Emergency preservation of personnel registers"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "reproducible-records-first",
+        "name": {
+          "ko": "재현 기록 우선",
+          "en": "Reproducible Records First"
+        },
+        "description": {
+          "ko": "정하린은 권위보다 재현 가능한 실험 기록을 안전 판단의 근거로 삼는다.",
+          "en": "Jeong Harin bases safety judgments on reproducible experimental records rather than authority."
+        },
+        "behavior": {
+          "ko": "모든 파견과 기술 인증에 재현 기록을 요구하고 긴급 회의에서도 표본 봉인을 먼저 확인한다.",
+          "en": "She requires reproducible records for every deployment and technical certification and checks sample seals even during urgent meetings."
+        },
+        "stress": {
+          "ko": "심사 기록이 군사 감독 문서로 바뀔 우려가 있다면 검증 기록과 안전심사의 독립성을 더 중시할 수 있다.",
+          "en": "If review records risk becoming military oversight documents, she may place greater weight on verifiable records and independent safety review."
+        },
+        "relationship": {
+          "ko": "수질 표본의 검증이 필요하다면 박누리와의 표본 교환을 활용할 수 있다.",
+          "en": "She may draw on her sample-exchange arrangement with Park Nuri when water samples need verification."
+        },
+        "effects": []
+      },
+      {
+        "id": "lock-down-removal-under-pressure",
+        "name": {
+          "ko": "독촉에 반출 잠금",
+          "en": "Lock Down Removal Under Pressure"
+        },
+        "description": {
+          "ko": "정하린은 책임자의 독촉보다 안전 기준과 반출 거부권을 우선한다.",
+          "en": "Jeong Harin places safety standards and removal vetoes above pressure from the research lead."
+        },
+        "behavior": {
+          "ko": "기준 미달이면 생명안전 연구책임자가 독촉해도 반출을 잠근다.",
+          "en": "She locks down removal when standards are unmet, even if the life-safety research lead presses her."
+        },
+        "stress": {
+          "ko": "보호를 명분으로 연구자를 인질화할 위험이 있다면 안전심사 거부권을 양보하지 않으려 할 수 있다.",
+          "en": "If protection is used to justify holding researchers hostage, she may resist surrendering the safety-review veto."
+        },
+        "relationship": {
+          "ko": "배우진이 군사감독을 요구한다면 정호준과의 거부권 집행 동맹을 바탕으로 반대할 수 있다.",
+          "en": "If Bae Ujin demands military oversight, she may oppose it through her veto-enforcement alliance with Jeong Hojun."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "재현 기록을 요구하고 화재 때 인명 장부를 보존했다. 반복 안전 판단을 반영하되 구조 전투나 연구 면허를 만들지 않는다.",
+      "en": "She requires reproducible records and preserved personnel registers during a fire. Safety judgment is supported, not combat rescue or an invented research license."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -673,7 +817,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 생명안전 심사관 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 생명안전 심사관. 모든 파견과 기술 인증에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 생명안전 심사관 자리의 서명이 장부에 올랐다.",
     "관계": "정호준의 거부권을 현장에서 집행하는 동맹이고, 영등포 감독 박누리와 수질 표본을 교환하는 계약이며, 배우진의 군사감독 요구에는 원한을 품는다.",
@@ -681,7 +824,7 @@
     "공포": "보호를 명분으로 심사 기록이 군사 감독 문서로 바뀌고, 연구자가 세습 직능 인질이 되는 것.",
     "개입": "오염 표본을 마곡 실험실까지 호송해 거부를 뒷받침하거나, 심사 기록 누락을 찾아 파견 거래를 성사시킬 수 있다."
   },
-  "biography": "원칙이 뼈보다 단단하고, 재현되지 않은 권위를 실험보다 위험하게 본다. 긴급 회의에서도 표본 봉인 스티커를 먼저 확인한다.\n\n- 소속: 태욱그룹\n- 생업: 안전 표본 심사\n- 품계: 대리\n- 직함: 생명안전 심사관\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 생명안전 심사관 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 생명안전 심사관. 모든 파견과 기술 인증에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 생명안전 심사관 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 거부권을 현장에서 집행하는 동맹이고, 영등포 감독 박누리와 수질 표본을 교환하는 계약이며, 배우진의 군사감독 요구에는 원한을 품는다.\n\n**야망.** 안전심사관의 거부권을 서울 공동기술원장의 첫 조항으로 올려 연구자를 인질로 쓰는 거래를 무효로 만든다.\n\n**공포.** 보호를 명분으로 심사 기록이 군사 감독 문서로 바뀌고, 연구자가 세습 직능 인질이 되는 것.\n\n**개입.** 오염 표본을 마곡 실험실까지 호송해 거부를 뒷받침하거나, 심사 기록 누락을 찾아 파견 거래를 성사시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −40 | 물질 10 | 공동 −5 | 원칙 55 | 공개 30 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 35 | 위험 −35 | 과시 −10 | 지속 35 | 지향 유동 | 결합 없음\n:::",
+  "biography": "원칙이 뼈보다 단단하고, 재현되지 않은 권위를 실험보다 위험하게 본다. 긴급 회의에서도 표본 봉인 스티커를 먼저 확인한다.\n\n- 소속: 태욱그룹\n- 생업: 안전 표본 심사\n- 품계: 대리\n- 직함: 생명안전 심사관\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 생명안전 심사관 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 생명안전 심사관. 모든 파견과 기술 인증에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 생명안전 심사관 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 거부권을 현장에서 집행하는 동맹이고, 영등포 감독 박누리와 수질 표본을 교환하는 계약이며, 배우진의 군사감독 요구에는 원한을 품는다.\n\n**야망.** 안전심사관의 거부권을 서울 공동기술원장의 첫 조항으로 올려 연구자를 인질로 쓰는 거래를 무효로 만든다.\n\n**공포.** 보호를 명분으로 심사 기록이 군사 감독 문서로 바뀌고, 연구자가 세습 직능 인질이 되는 것.\n\n**개입.** 오염 표본을 마곡 실험실까지 호송해 거부를 뒷받침하거나, 심사 기록 누락을 찾아 파견 거래를 성사시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −40 | 물질 10 | 공동 −5 | 원칙 55 | 공개 30 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 35 | 위험 −35 | 과시 −10 | 지속 35 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -392,6 +392,142 @@
     "id": "K267",
     "personId": "person-0268"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "meeting-support",
+        "name": {
+          "ko": "회의 문안·표결 게시",
+          "en": "Meeting draft and vote posting"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "meeting-support-disposition",
+        "name": {
+          "ko": "매수 쪽지를 남김",
+          "en": "Leaves bribery notes visible"
+        },
+        "description": {
+          "ko": "매수 쪽지를 지우지 않고 공개 게시한다.",
+          "en": "Publishes bribery notes rather than erasing them."
+        },
+        "behavior": {
+          "ko": "매수 쪽지를 지우지 않고 공개 게시한다.",
+          "en": "Publishes bribery notes rather than erasing them."
+        },
+        "stress": {
+          "ko": "회의 발언이 노동력 숫자로 바뀔 것을 두려워한다.",
+          "en": "Fears meeting statements reduced to labor numbers."
+        },
+        "relationship": {
+          "ko": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
+          "en": "Supports Baek On at meetings, places citizenship text at Jeong Yura’s seat and coordinates Sodu’s family-message route."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "두 곳의 같은 표결",
+          "en": "Same votes in two places"
+        },
+        "description": {
+          "ko": "숙영과 회의장에 표결 결과를 동시에 게시한다.",
+          "en": "Posts vote results simultaneously at camp and meeting."
+        },
+        "behavior": {
+          "ko": "숙영과 회의장에 표결 결과를 동시에 게시한다.",
+          "en": "Posts vote results simultaneously at camp and meeting."
+        },
+        "stress": {
+          "ko": "수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.",
+          "en": "Fears meeting statements reduced to labor numbers."
+        },
+        "relationship": {
+          "ko": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
+          "en": "Supports Baek On at meetings, places citizenship text at Jeong Yura’s seat and coordinates Sodu’s family-message route."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "수행 가방의 매수 쪽지를 공개하고 표결을 숙영과 회의장에 동시에 붙였다. 시민권 문안을 협의 좌석에 올린 행동이 근거다.",
+      "en": "Published a bribery note from the attendance bag and posted votes at camp and meeting together, then placed a citizenship draft at negotiations."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -761,7 +897,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 협의 수행 행자 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.",
     "일화": "협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.",
     "관계": "백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.",
@@ -769,7 +904,7 @@
     "공포": "수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.",
     "개입": "매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다."
   },
-  "biography": "구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌리고, 아이 이름을 숫자로 줄이는 기호를 쓰지 않는다. 따뜻하나 회의 쪽지는 차갑다.\n\n- 생업: 협의 문안·문중 표 결과 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 협의 수행 행자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협의 수행 행자 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.\n\n**일화.** 협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.\n\n**관계.** 백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.\n\n**야망.** 협의에서 신도 명부를 공동교섭의 조항으로 올려 강국별 분할 복속이 신도 명부를 갈라놓지 못하게 한다.\n\n**공포.** 수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −35 | 물질 −15 | 공동 80 | 원칙 35 | 공개 25 | 자격 35 | 분산 40 | 변혁 10\n- 욕망: 갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌리고, 아이 이름을 숫자로 줄이는 기호를 쓰지 않는다. 따뜻하나 회의 쪽지는 차갑다.\n\n- 생업: 협의 문안·문중 표 결과 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 협의 수행 행자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협의 수행 행자 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 행자. 직함은 협의 수행 행자. 문중 표 결과를 당일 숙영과 회의장에 동시에 붙이고, 매수 쪽지는 게시판에 그대로 남긴다.\n\n**일화.** 협의 자리에서 백온의 발언 차례 직전에 매수 쪽지 한 장이 수행 가방에 들어온다. 단유진은 쪽지를 게시판에 붙여 공개하고, 문중 표 결과를 숙영과 회의장에 동시에 게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.\n\n**관계.** 백온의 회의 발언을 수행으로 받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, 소두의 가족 회의 전령로와 줄을 맞춘다.\n\n**야망.** 협의에서 신도 명부를 공동교섭의 조항으로 올려 강국별 분할 복속이 신도 명부를 갈라놓지 못하게 한다.\n\n**공포.** 수행 가방이 군사호적 사본으로 바뀌어 회의 발언이 노동력 숫자로만 남는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 신도 명부 초안 증인을 회의장까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 75 | 무력 −35 | 물질 −15 | 공동 80 | 원칙 35 | 공개 25 | 자격 35 | 분산 40 | 변혁 10\n- 욕망: 갈망 −5 | 독점 0 | 위험 10 | 과시 10 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],

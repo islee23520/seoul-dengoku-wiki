@@ -288,6 +288,142 @@
     "id": "K385",
     "personId": "person-0386"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "ledger-transcription",
+        "name": {
+          "ko": "원장 필사",
+          "en": "Ledger transcription"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "확인 전 날인 보류",
+          "en": "Withholds stamps pending checks"
+        },
+        "description": {
+          "ko": "입고 확인 전에는 날인을 열지 않고 군량 낙찰 줄을 난외로 옮겼다. 원장 사본 공개 여부는 아직 저울질한다.",
+          "en": "Moves military awards into the margin and withholds stamping until intake is verified. Still weighs whether to disclose ledger copies."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 확인 전 날인 보류을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "미확인 입고 앞에서 서명을 늦출 수 있다.",
+          "en": "May delay signing when intake is unverified."
+        },
+        "relationship": {
+          "ko": "은태호의 호가와 선다솜의 전갈을 같은 원장에 둔다.",
+          "en": "Keeps Eun Taeho’s bids and Seon Dasom’s messages in one ledger."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "은태호의 호가와 선다솜의 전갈을 같은 원장에 둔다.",
+          "en": "Keeps Eun Taeho’s bids and Seon Dasom’s messages in one ledger."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "입고 확인 전에는 날인을 열지 않고 군량 낙찰 줄을 난외로 옮겼다. 원장 사본 공개 여부는 아직 저울질한다.",
+      "en": "Moves military awards into the margin and withholds stamping until intake is verified. Still weighs whether to disclose ledger copies."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -669,7 +805,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 선거 기록 부제 일을 맡았다.",
-    "무공": "한류공.",
     "관직": "품계 부제. 직함은 선거 기록 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
     "일화": "흉작 소문만으로 청과동이 폭등하자 영미결은 군량 명목의 낙찰 줄을 난외로 내리고 입고 확인이 끝나기 전에 날인을 열지 않았다. 선거 기록 부제의 기록에 당시의 증언을 남겼다.",
     "관계": "은태호의 호가를 원장으로 옮기는 사제이고, 선다솜의 낙찰 전갈을 같은 줄에 남긴다. 윤서린에게 배급 원장 사본을 넘길지 저울질한다.",
@@ -677,7 +812,7 @@
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "영미결은 선거 기록 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 선거 기록 필사·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거 기록 부제\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 선거 기록 부제 일을 맡았다.\n**무공.** 한류공.\n\n**관직.** 품계 부제. 직함은 선거 기록 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 흉작 소문만으로 청과동이 폭등하자 영미결은 군량 명목의 낙찰 줄을 난외로 내리고 입고 확인이 끝나기 전에 날인을 열지 않았다. 선거 기록 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 은태호의 호가를 원장으로 옮기는 사제이고, 선다솜의 낙찰 전갈을 같은 줄에 남긴다. 윤서린에게 배급 원장 사본을 넘길지 저울질한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −20 | 물질 75 | 공동 −30 | 원칙 −40 | 공개 −15 | 자격 5 | 분산 5 | 변혁 10\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −20 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "영미결은 선거 기록 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 선거 기록 필사·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 선거 기록 부제\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 선거 기록 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 선거 기록 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 흉작 소문만으로 청과동이 폭등하자 영미결은 군량 명목의 낙찰 줄을 난외로 내리고 입고 확인이 끝나기 전에 날인을 열지 않았다. 선거 기록 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 은태호의 호가를 원장으로 옮기는 사제이고, 선다솜의 낙찰 전갈을 같은 줄에 남긴다. 윤서린에게 배급 원장 사본을 넘길지 저울질한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −20 | 물질 75 | 공동 −30 | 원칙 −40 | 공개 −15 | 자격 5 | 분산 5 | 변혁 10\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −20 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-15"
   ],

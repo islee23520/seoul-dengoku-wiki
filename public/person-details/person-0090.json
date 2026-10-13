@@ -81,7 +81,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준이 망치의 반을 넘긴 것은 당회 후계가 아니라 기술 전수였다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
+            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Core-Characters.json",
@@ -724,6 +724,150 @@
     "id": "K089",
     "personId": "person-0090"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 55
+      },
+      {
+        "id": "parts",
+        "name": {
+          "ko": "불량 부품 출고 검사",
+          "en": "Defective-parts dispatch inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "insist-on-the-family-seal",
+        "name": {
+          "ko": "가문 도장 고수",
+          "en": "Insist on the Family Seal"
+        },
+        "description": {
+          "ko": "박세린은 평의회 계약보다 가문 도장과 공구 일련번호의 권위를 더 오래 신뢰한다.",
+          "en": "Park Serin places more enduring trust in family seals and tool serial numbers than in council contracts."
+        },
+        "behavior": {
+          "ko": "핵심 나사를 별도 창고에 두고 평의회 연서가 있어도 가문 원로의 도장 없이는 출고하지 않는다.",
+          "en": "Park stores core screws separately and refuses shipment without a family elder's seal even when council co-signatures are present."
+        },
+        "stress": {
+          "ko": "펌프 주권이 공동기술원장에 흡수될 우려가 커지면 가문 날인 조건을 더 완강히 지킬 수 있다.",
+          "en": "If pump sovereignty risks absorption into a shared technical ledger, Park may defend the family-seal condition more firmly."
+        },
+        "relationship": {
+          "ko": "한소미의 공방 동의 중심 구상과는 출고 승인과 후계 정당성을 두고 충돌할 수 있다.",
+          "en": "Park may clash with Han Somi's workshop-consent approach over shipment approval and succession legitimacy."
+        },
+        "effects": []
+      },
+      {
+        "id": "caution-toward-open-designs",
+        "name": {
+          "ko": "공개 설계 경계",
+          "en": "Caution Toward Open Designs"
+        },
+        "description": {
+          "ko": "박세린은 공개 설계를 가문 기술의 공유보다 도둑질에 가깝게 받아들인다.",
+          "en": "Park Serin views open designs as closer to theft than to sharing family technology."
+        },
+        "behavior": {
+          "ko": "가문 핵심 부품을 분리 보관하고 혈연 가까운 공정을 가문 원장으로 되찾으려 한다.",
+          "en": "Park keeps core family parts separate and seeks to reclaim bloodline-associated processes into the family ledger."
+        },
+        "stress": {
+          "ko": "임초원이 마곡의 제자로만 인정될 우려가 커지면 공동기술원장과 공개 설계에 대한 경계가 더 강해질 수 있다.",
+          "en": "If Im Chowon risks recognition only as Magok's disciple, Park may become more wary of shared technical ledgers and open designs."
+        },
+        "relationship": {
+          "ko": "배우진이 가문을 명목 후보로 부르면 가문 기술을 지킬 기회와 종속될 위험 사이에서 망설일 수 있다.",
+          "en": "If Bae Ujin invokes the family as a nominal candidate, Park may hesitate between protecting family technology and risking dependency."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "별도 부품 창고의 가문 날인을 지키고 차륜 결함을 찾아 세웠다. 보관·점검과 혈연 공정에 대한 집착을 함께 남기며 총관 권한은 없다.",
+      "en": "She requires family signatures for a separate parts store and found a wheel defect. Storage and inspection coexist with attachment to kinship processes; chief-engineer authority is not implied."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -1152,7 +1296,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.",
     "관계": "임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.",
@@ -1160,7 +1303,7 @@
     "공포": "임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 것.",
     "개입": "가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다."
   },
-  "biography": "신중하고 예의를 지키지만 가문의 공구 일련번호를 계약보다 오래 믿는다. 공개 설계를 도둑질로 부르는 버릇이 있다.\n\n- 소속: 명부교회\n- 생업: 펌프 부품 보관·출고 관리\n- 품계: 교사\n- 직함: 펌프기술가문 대행\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.\n\n**관계.** 임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.\n\n**야망.** 임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.\n\n**공포.** 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 것.\n\n**개입.** 가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 35 | 공동 20 | 원칙 5 | 공개 −20 | 자격 55 | 분산 30 | 변혁 5\n- 욕망: 갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "신중하고 예의를 지키지만 가문의 공구 일련번호를 계약보다 오래 믿는다. 공개 설계를 도둑질로 부르는 버릇이 있다.\n\n- 소속: 명부교회\n- 생업: 펌프 부품 보관·출고 관리\n- 품계: 교사\n- 직함: 펌프기술가문 대행\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 펌프기술가문 대행 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 펌프기술가문 대행. 가문 공방의 핵심 나사를 별도 창고에 두고, 평의회 연서가 있어도 가문 원로의 도장이 없으면 출고하지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 펌프기술가문 대행 자리의 서명이 장부에 올랐다.\n\n**관계.** 임하준의 친족 공정을 지키는 후견을 자처하고, 한소미와는 후계 원한이며, 배우진이 동방사 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀다.\n\n**야망.** 임하준의 혈연 가까운 공정을 가문 원장으로 되찾아, 양자가 아닌 기술가문이 다음 총관을 지명하게 한다.\n\n**공포.** 임초원이 마곡의 제자로만 인정받아 뚝섬의 펌프 주권이 공동기술원장에 흡수되는 것.\n\n**개입.** 가문 키의 진위를 감정해 대행의 해석권을 세우거나, 별도 창고의 밀반출을 폭로해 가문 지명을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 35 | 공동 20 | 원칙 5 | 공개 −20 | 자격 55 | 분산 30 | 변혁 5\n- 욕망: 갈망 −5 | 독점 −30 | 위험 −35 | 과시 −25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

@@ -392,6 +392,142 @@
     "id": "K234",
     "personId": "person-0235"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "exchange-record",
+        "name": {
+          "ko": "환전 로그·명부 대조",
+          "en": "Exchange log and roster comparison"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "exchange-record-disposition",
+        "name": {
+          "ko": "빈칸을 붙잡는 운영",
+          "en": "Blank-intolerant operation"
+        },
+        "description": {
+          "ko": "빈 환전 칸을 참지 못해 통과 상인을 오래 붙잡아 둔다.",
+          "en": "Keeps passing merchants waiting over blank exchange entries."
+        },
+        "behavior": {
+          "ko": "빈 환전 칸을 참지 못해 통과 상인을 오래 붙잡아 둔다.",
+          "en": "Keeps passing merchants waiting over blank exchange entries."
+        },
+        "stress": {
+          "ko": "지점이 검열 초소가 될 것을 두려워한다.",
+          "en": "Fears the branch becoming a censorship checkpoint."
+        },
+        "relationship": {
+          "ko": "복두모의 실측 좌표를 받고, 소감의 전령로를 영종지점에서 잇는다. 장세화의 의료 환전 협약을 우선으로 남긴다.",
+          "en": "Receives Bokdumo’s measurements, links Sogam’s messenger route and prioritizes Jang Sehwa’s medical exchange agreement."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "의료 환전 우선",
+          "en": "Medical exchange priority"
+        },
+        "description": {
+          "ko": "의료 환전 협약을 지점 기록에 우선 남긴다.",
+          "en": "Gives medical-exchange agreements priority in branch records."
+        },
+        "behavior": {
+          "ko": "의료 환전 협약을 지점 기록에 우선 남긴다.",
+          "en": "Gives medical-exchange agreements priority in branch records."
+        },
+        "stress": {
+          "ko": "영종지점이 검열 초소로 바뀌어 공동 환전이 막히는 것.",
+          "en": "Fears the branch becoming a censorship checkpoint."
+        },
+        "relationship": {
+          "ko": "복두모의 실측 좌표를 받고, 소감의 전령로를 영종지점에서 잇는다. 장세화의 의료 환전 협약을 우선으로 남긴다.",
+          "en": "Receives Bokdumo’s measurements, links Sogam’s messenger route and prioritizes Jang Sehwa’s medical exchange agreement."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "환전 로그와 통행 명부를 함께 게시하고 의료 환전 협약을 우선한다. 위조 각인 유출은 통제의 성공으로 바꾸어 쓰지 않는다.",
+      "en": "Posts exchange logs with passage rosters and prioritizes medical exchange. Leakage of a forged mark is not rewritten as successful control."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -849,7 +985,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 여의도 금고 당직에서 자랐다. 영종지점 환전 거점장 자리는 정전 사흘 금고 유지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 영종지점 환전 거점장. 환전 로그와 통행 명부를 같은 벽에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.",
     "일화": "위조 화폐와 같은 각인이 영종지점 환전에서 한 차례 새어 나갔다.",
     "관계": "복두모의 실측 좌표를 받고, 소감의 전령로를 영종지점에서 잇는다. 장세화의 의료 환전 협약을 우선으로 남긴다.",
@@ -857,7 +992,7 @@
     "공포": "영종지점이 검열 초소로 바뀌어 공동 환전이 막히는 것.",
     "개입": "새어 나간 위조 화폐의 원점을 막거나, 의료 환전 우선 조항을 지점 원장에 고정할 수 있다."
   },
-  "biography": "환전 장부의 빈칸을 참지 못하고, 통과만 하는 상인을 환전 원장에 오래 붙잡아 둔다. 좌표 없는 소문은 지점 밖으로 내보내지 않는다.\n\n- 생업: 영종지점 환전 로그·통행 명부 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 영종지점 환전 거점장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 영종지점 환전 거점장 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 영종지점 환전 거점장. 환전 로그와 통행 명부를 같은 벽에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.\n\n**일화.** 위조 화폐와 같은 각인이 영종지점 환전에서 한 차례 새어 나갔다.\n\n**관계.** 복두모의 실측 좌표를 받고, 소감의 전령로를 영종지점에서 잇는다. 장세화의 의료 환전 협약을 우선으로 남긴다.\n\n**야망.** 영종지점을 바깥 교역 대금 환전의 입구로 만들어 강국이 전원을 내려도 우회 환전이 남게 한다.\n\n**공포.** 영종지점이 검열 초소로 바뀌어 공동 환전이 막히는 것.\n\n**개입.** 새어 나간 위조 화폐의 원점을 막거나, 의료 환전 우선 조항을 지점 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −30 | 물질 −20 | 공동 10 | 원칙 20 | 공개 55 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 25 | 독점 0 | 위험 5 | 과시 −20 | 지속 35 | 지향 이성 | 결합 비독점",
+  "biography": "환전 장부의 빈칸을 참지 못하고, 통과만 하는 상인을 환전 원장에 오래 붙잡아 둔다. 좌표 없는 소문은 지점 밖으로 내보내지 않는다.\n\n- 생업: 영종지점 환전 로그·통행 명부 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 영종지점 환전 거점장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 영종지점 환전 거점장 자리는 정전 사흘 금고 유지로 열렸다.\n\n**관직.** 품계 서기. 직함은 영종지점 환전 거점장. 환전 로그와 통행 명부를 같은 벽에 붙이고, 단독 정정 시세는 다음 날 같은 길이에 반대 의견을 붙인다.\n\n**일화.** 위조 화폐와 같은 각인이 영종지점 환전에서 한 차례 새어 나갔다.\n\n**관계.** 복두모의 실측 좌표를 받고, 소감의 전령로를 영종지점에서 잇는다. 장세화의 의료 환전 협약을 우선으로 남긴다.\n\n**야망.** 영종지점을 바깥 교역 대금 환전의 입구로 만들어 강국이 전원을 내려도 우회 환전이 남게 한다.\n\n**공포.** 영종지점이 검열 초소로 바뀌어 공동 환전이 막히는 것.\n\n**개입.** 새어 나간 위조 화폐의 원점을 막거나, 의료 환전 우선 조항을 지점 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −30 | 물질 −20 | 공동 10 | 원칙 20 | 공개 55 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 25 | 독점 0 | 위험 5 | 과시 −20 | 지속 35 | 지향 이성 | 결합 비독점",
   "sources": [
     "Cast-State-09"
   ],

@@ -286,6 +286,142 @@
     "id": "K297",
     "personId": "person-0298"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k297-dispatch-personnel-allocation",
+        "name": {
+          "ko": "배차 인원 배치",
+          "en": "Dispatch personnel allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k297-priority",
+        "name": {
+          "ko": "빈 시각표를 메움",
+          "en": "Fills timetable gaps"
+        },
+        "description": {
+          "ko": "안도한은 시각표와 호송 인원을 공개하고 폭설 통로에서 부상자를 옮겼다. 배차조 단독 승인 야망은 의료조 견제와 충돌한다.",
+          "en": "An Dohan publishes timetables and escort numbers and moved casualties through snow. His sole dispatch approval ambition conflicts with medical oversight."
+        },
+        "behavior": {
+          "ko": "배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
+          "en": "Office. Rank: convoy hand. Title: transfer dispatch crew leader. He published the dispatch sheet and convoy personnel on one chalkboard, but honored the medical train's priority only when Jang Sehwa's departmental stamp stood on it."
+        },
+        "stress": {
+          "ko": "동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
+          "en": "Fear. That the northeast branch would be cut and the transfer city would fall into a freight yard that only passed between Changdong and Amsa."
+        },
+        "relationship": {
+          "ko": "장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
+          "en": "Relations. Held Jang Sehwa's dispatch work, contested the approval order with Jeon Miri at every seasonal rotation, and depended on I Hongwon for the northern wheel-exchange hours."
+        },
+        "effects": []
+      },
+      {
+        "id": "k297-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
+          "en": "Office. Rank: convoy hand. Title: transfer dispatch crew leader. He published the dispatch sheet and convoy personnel on one chalkboard, but honored the medical train's priority only when Jang Sehwa's departmental stamp stood on it."
+        },
+        "stress": {
+          "ko": "공포. 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
+          "en": "Fear. That the northeast branch would be cut and the transfer city would fall into a freight yard that only passed between Changdong and Amsa."
+        },
+        "relationship": {
+          "ko": "관계. 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
+          "en": "Relations. Held Jang Sehwa's dispatch work, contested the approval order with Jeon Miri at every seasonal rotation, and depended on I Hongwon for the northern wheel-exchange hours."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "안도한은 시각표와 호송 인원을 공개하고 폭설 통로에서 부상자를 옮겼다. 배차조 단독 승인 야망은 의료조 견제와 충돌한다.",
+      "en": "An Dohan publishes timetables and escort numbers and moved casualties through snow. His sole dispatch approval ambition conflicts with medical oversight."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -694,7 +830,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환승 배차조장 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환승 배차조장 자리의 서명이 장부에 올랐다.",
     "관계": "장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
@@ -702,7 +837,7 @@
     "공포": "동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
     "개입": "봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다."
   },
-  "biography": "시각표의 빈칸을 참지 못하고, 계절 교대 결재가 오기 전에 이미 칠판을 고쳐 둔다. 말단 노선의 지연을 모욕처럼 기억한다.\n\n- 생업: 배차표·호송 인원 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 배차조장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 배차조장 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환승 배차조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.\n\n**야망.** 신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 한다.\n\n**공포.** 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 45 | 무력 −25 | 물질 10 | 공동 25 | 원칙 0 | 공개 15 | 자격 20 | 분산 40 | 변혁 5\n- 욕망: 갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자\n:::",
+  "biography": "시각표의 빈칸을 참지 못하고, 계절 교대 결재가 오기 전에 이미 칠판을 고쳐 둔다. 말단 노선의 지연을 모욕처럼 기억한다.\n\n- 생업: 배차표·호송 인원 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 배차조장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 배차조장 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환승 배차조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.\n\n**야망.** 신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 한다.\n\n**공포.** 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 45 | 무력 −25 | 물질 10 | 공동 25 | 원칙 0 | 공개 15 | 자격 20 | 분산 40 | 변혁 5\n- 욕망: 갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],

@@ -285,6 +285,142 @@
     "id": "K616",
     "personId": "person-0616"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k616-pressure-total-crosscheck",
+        "name": {
+          "ko": "압력·합계 대조",
+          "en": "Pressure-total crosscheck"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k616-action-priority",
+        "name": {
+          "ko": "합계 옆의 압력",
+          "en": "Pressure beside totals"
+        },
+        "description": {
+          "ko": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
+          "en": "Word reaches the duty desk that the ration totals balance yet the water runs thin in alley after alley. Seong Dalhyeon walks the water-distribution duty round, writes the pressure at each tap beside the totals, marks the alleys where totals and pressure disagree, and shows them to I Seodam first."
+        },
+        "behavior": {
+          "ko": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
+          "en": "Word reaches the duty desk that the ration totals balance yet the water runs thin in alley after alley. Seong Dalhyeon walks the water-distribution duty round, writes the pressure at each tap beside the totals, marks the alleys where totals and pressure disagree, and shows them to I Seodam first."
+        },
+        "stress": {
+          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
+          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
+          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
+        },
+        "effects": []
+      },
+      {
+        "id": "k616-bounded-handover",
+        "name": {
+          "ko": "기록으로 잇는 당직",
+          "en": "Duty linked by records"
+        },
+        "description": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "behavior": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "stress": {
+          "ko": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
+          "en": "That the ration district clerk duty post would stand empty and the Compact's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
+          "en": "Serves as a ration clerk under I Seodam and manages the water allocation shift."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
+      "en": "Word reaches the duty desk that the ration totals balance yet the water runs thin in alley after alley. Seong Dalhyeon walks the water-distribution duty round, writes the pressure at each tap beside the totals, marks the alleys where totals and pressure disagree, and shows them to I Seodam first. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -698,7 +834,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.",
     "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
@@ -706,7 +841,7 @@
     "공포": "배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 배급구역 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 배급구역 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 배급 합계는 맞는데 골목마다 물줄기가 가늘다는 말이 당직에 들어온다. 성달현은 급수 배분 당직을 돌며 수도꼭지마다 나오는 압력을 합계 옆 칸에 적고, 합계와 압력이 어긋나는 골목에 표시를 달아 이서담에게 먼저 보인다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 배급구역 서기 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배급구역 서기 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −15 | 무력 5 | 물질 45 | 공동 20 | 원칙 15 | 공개 20 | 자격 10 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 0 | 독점 −10 | 위험 −5 | 과시 −5 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],

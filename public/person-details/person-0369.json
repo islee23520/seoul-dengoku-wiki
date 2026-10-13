@@ -394,6 +394,142 @@
     "id": "K368",
     "personId": "person-0369"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "leaking-joint-inspection",
+        "name": {
+          "ko": "누수 이음매 점검",
+          "en": "Leaking joint inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "만료와 잔량을 함께 읽는다",
+          "en": "Reads expiry alongside remaining supply"
+        },
+        "description": {
+          "ko": "시험에서 누수 세 곳을 찾아 게시했고 만료 시각과 잔량을 함께 둔다. 계약 증언과 실제 점검을 구분해 기록한다.",
+          "en": "Three leaks were found and posted during testing; expiry and remaining supply stay paired. Contract testimony is kept distinct from performed inspection."
+        },
+        "behavior": {
+          "ko": "만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.",
+          "en": "He counted expiry dates on his fingers and sent down from the witness stand any envoy who proposed testifying to a verbal protection extension. He trusted numbers but not blank clauses."
+        },
+        "stress": {
+          "ko": "공포. 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.",
+          "en": "Fear. That testimony he signed would become an indulgence for a collective cutoff."
+        },
+        "relationship": {
+          "ko": "관계. 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
+          "en": "Relations. Backed Gwak Minjae's water inspections from the witness stand and made the expiry marks Im Hajun left behind after his disappearance the frame of his testimony. He read Han Jaemok's western draft aloud but put off the stamp."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
+          "en": "Office. Rank: sergeant. Title: water contract expiry witness. He pasted the expiry hours and the residual-volume table in one book and struck from his testimony any copy taken before the stamps dried."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: water contract expiry witness. He pasted the expiry hours and the residual-volume table in one book and struck from his testimony any copy taken before the stamps dried."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That testimony he signed would become an indulgence for a collective cutoff."
+        },
+        "relationship": {
+          "ko": "관계. 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
+          "en": "Relations. Backed Gwak Minjae's water inspections from the witness stand and made the expiry marks Im Hajun left behind after his disappearance the frame of his testimony. He read Han Jaemok's western draft aloud but put off the stamp."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "시험에서 누수 세 곳을 찾아 게시했고 만료 시각과 잔량을 함께 둔다. 계약 증언과 실제 점검을 구분해 기록한다.",
+      "en": "Three leaks were found and posted during testing; expiry and remaining supply stay paired. Contract testimony is kept distinct from performed inspection."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -817,7 +953,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 양군 급수계약 만료 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 양군 급수계약 만료 증인 자리의 서명이 장부에 올랐다.",
     "관계": "곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.",
@@ -825,7 +960,7 @@
     "공포": "자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.",
     "개입": "단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다."
   },
-  "biography": "만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 만료 시각·잔량 표 대조\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 급수계약 만료 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 양군 급수계약 만료 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 양군 급수계약 만료 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.\n\n**야망.** 구의 제한 급수의 종료 조건을 공개 증언으로 고정해 세 강국이 서로 다른 문안으로 관문을 쪼개지 못하게 한다.\n\n**공포.** 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 10 | 공동 20 | 원칙 0 | 공개 −15 | 자격 −20 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "만료일을 손가락으로 세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 만료 시각·잔량 표 대조\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 급수계약 만료 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 양군 급수계약 만료 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 공동실무원. 직함은 양군 급수계약 만료 증인. 만료 시각과 잔량 표를 같은 책에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 양군 급수계약 만료 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 곽민재의 급수 점검을 증인석에서 받치고, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다. 한재목의 서부 문안을 읽어 주되 날인은 미룬다.\n\n**야망.** 구의 제한 급수의 종료 조건을 공개 증언으로 고정해 세 강국이 서로 다른 문안으로 관문을 쪼개지 못하게 한다.\n\n**공포.** 자신이 서명한 증언이 집단 단수의 면죄부가 되는 것.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −15 | 무력 35 | 물질 10 | 공동 20 | 원칙 0 | 공개 −15 | 자격 −20 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 40 | 독점 25 | 위험 −20 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-14"
   ],

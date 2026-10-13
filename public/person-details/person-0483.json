@@ -394,6 +394,142 @@
     "id": "K483",
     "personId": "person-0483"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 6,
+        "effective": 6
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "k483-public-witness-confrontation",
+        "name": {
+          "ko": "공개 대질 진행",
+          "en": "Public witness confrontation"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "k483-priority",
+        "name": {
+          "ko": "엇갈린 말 확인",
+          "en": "Checks conflicting testimony"
+        },
+        "description": {
+          "ko": "고숲호의 확인된 행동은 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다.  반복 성과와 구체적 전문 경력은 미확인이다.",
+          "en": "고숲호: Anecdote. In 2125, when the accounts of two witnesses split, he opened a public confrontation. By this deed the signature of the waiting-line surveyor post rose into the ledger. Repeated results and detailed professional experience remain unconfirmed."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: convoy hand. Title: waiting-line surveyor. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.",
+          "en": "Fear. That the waiting-line surveyor duty post would stand empty and the City's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k483-accountability",
+        "name": {
+          "ko": "당직의 연속성",
+          "en": "Continuity of duty"
+        },
+        "description": {
+          "ko": "큰소리보다 기록을 믿고 자기 직위의 열쇠와 기록만 넘긴다.",
+          "en": "Trusts records over loud claims and hands over only the keys and records of the position."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: convoy hand. Title: waiting-line surveyor. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.",
+          "en": "Fear. That the waiting-line surveyor duty post would stand empty and the City's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "고숲호의 확인된 행동은 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다.  반복 성과와 구체적 전문 경력은 미확인이다.",
+      "en": "고숲호: Anecdote. In 2125, when the accounts of two witnesses split, he opened a public confrontation. By this deed the signature of the waiting-line surveyor post rose into the ledger. Repeated results and detailed professional experience remain unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -817,7 +953,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 대기열 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -825,7 +960,7 @@
     "공포": "대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 대기열 탐사 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 대기열 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 대기열 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 대기열 탐사원 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −20 | 물질 0 | 공동 20 | 원칙 10 | 공개 20 | 자격 20 | 분산 35 | 변혁 20\n- 욕망: 갈망 25 | 독점 −30 | 위험 0 | 과시 25 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 대기열 탐사 기록·당직 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 대기열 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 대기열 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 호송원. 직함은 대기열 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 대기열 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 대기열 탐사원 자리에서 신내운수의 장부를 끊기지 않게 잇는다.\n\n**공포.** 대기열 탐사원 당직이 비면 신내운수의 통행이 노선 면허의 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −20 | 물질 0 | 공동 20 | 원칙 10 | 공개 20 | 자격 20 | 분산 35 | 변혁 20\n- 욕망: 갈망 25 | 독점 −30 | 위험 0 | 과시 25 | 지속 0 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-12"
   ],

@@ -1,0 +1,3722 @@
+{
+  "schema": "seoul-soul-duplicate-review.v1",
+  "status": "editorial-review-complete-with-unresolved-limits",
+  "visibility": "editorial-only",
+  "assignmentLedger": "lore/editorial/Soul-Assignments.json",
+  "candidateLedger": "lore/editorial/Soul-Candidates.json",
+  "reviewedOn": "2026-10-12",
+  "policy": "narrative-fit-first-minimize-duplicates",
+  "coverage": {
+    "people": 1022,
+    "soulSlots": 1024,
+    "candidates": 172,
+    "initiallyUnusedCandidates": 69,
+    "ownerConfirmedImmutable": 6,
+    "weakEvidenceAssignmentsRetained": 562,
+    "rangeReviews": [
+      {
+        "range": "K001-K250",
+        "people": 250,
+        "status": "complete",
+        "sourceQuotes": 1127,
+        "recommendedReplacements": 0
+      },
+      {
+        "range": "K251-K500",
+        "people": 250,
+        "status": "complete",
+        "sourceQuotes": 1031,
+        "recommendedReplacements": 0
+      },
+      {
+        "range": "K501-K750",
+        "people": 250,
+        "status": "complete",
+        "sourceQuotes": 940,
+        "recommendedReplacements": 0
+      },
+      {
+        "range": "K751-K1022",
+        "people": 272,
+        "status": "complete",
+        "weakEvidenceRows": 239,
+        "recommendedReplacements": 0,
+        "sourceQuoteVerification": "전체 4,251건 기준선 exact-match 검증을 참조한다."
+      }
+    ]
+  },
+  "method": [
+    "1,022개 배정의 빈도·근거 강도·원문 인용을 계산하고 172개 후보의 경력 개요와 비교축을 읽었다.",
+    "서로 겹치지 않는 네 구간에서 원문 카드와 미사용 후보를 대조했다. 고빈도는 전역 20회 이상으로 정의하여 16후보를 별도로 검토했다.",
+    "원문 행동과 관계에 동등하거나 더 직접적인 비교를 제공하는 경우에만 교체했다. 직함·성별·이름·순번·지역의 일치, 또는 사용량 평준화는 교체 근거로 쓰지 않았다.",
+    "각 역사 비교는 후보 원장의 2차 개요를 이용한 제한적 편집 해석이다. 후보의 경력 전체를 서울 인물에게 부여하지 않는다.",
+    "잔여 중복은 후보별 personId 목록과 각 배정의 원문 인용·서사 이유·반대근거에 연결한다. 묶음 단위의 기존 duplicateRationale 수치는 과거 검토 문맥이며 이 파일의 전역 히스토그램이 현재 집계다."
+  ],
+  "before": {
+    "candidatePool": 172,
+    "usedCandidates": 103,
+    "unusedCandidates": 69,
+    "soulSlots": 1024,
+    "repeatedSlotsBeyondFirst": 921,
+    "sameCandidatePairs": 11416,
+    "maximumFrequency": 63
+  },
+  "after": {
+    "candidatePool": 172,
+    "usedCandidates": 106,
+    "unusedCandidates": 66,
+    "soulSlots": 1024,
+    "repeatedSlotsBeyondFirst": 918,
+    "sameCandidatePairs": 11363,
+    "maximumFrequency": 63
+  },
+  "histogram": [
+    {
+      "candidateId": "oda-nobunaga",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "tokugawa-ieyasu",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "toyotomi-hideyoshi",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "shibata-katsuie",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "honda-tadakatsu",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "akechi-mitsuhide",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "ishida-mitsunari",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "candidateId": "otani-yoshitsugu",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "kuroda-kanbei",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "takenaka-shigeharu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "takeda-shingen",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "uesugi-kenshin",
+      "before": 5,
+      "after": 5
+    },
+    {
+      "candidateId": "mori-motonari",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "hojo-ujiyasu",
+      "before": 17,
+      "after": 17
+    },
+    {
+      "candidateId": "date-masamune",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "sanada-masayuki",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "sanada-nobushige",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "tachibana-ginchiyo",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "ii-naotora",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "hosokawa-gracia",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "nene",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "matsu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "sen-no-rikyu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "tsuda-sokyu",
+      "before": 8,
+      "after": 8
+    },
+    {
+      "candidateId": "imai-sokyu",
+      "before": 9,
+      "after": 9
+    },
+    {
+      "candidateId": "konishi-yukinaga",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "takayama-ukon",
+      "before": 8,
+      "after": 8
+    },
+    {
+      "candidateId": "honganji-kennyo",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "luis-frois",
+      "before": 25,
+      "after": 24
+    },
+    {
+      "candidateId": "gaspar-coelho",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "candidateId": "hasegawa-tohaku",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "kano-eitoku",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "manase-dosan",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "hosokawa-fujitaka",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "candidateId": "sakamoto-ryoma",
+      "before": 9,
+      "after": 9
+    },
+    {
+      "candidateId": "katsu-kaishu",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "candidateId": "saigo-takamori",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "okubo-toshimichi",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "candidateId": "kido-takayoshi",
+      "before": 3,
+      "after": 2
+    },
+    {
+      "candidateId": "ito-hirobumi",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "yamagata-aritomo",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "takasugi-shinsaku",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "yoshida-shoin",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "fukuzawa-yukichi",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "nakamura-masanao",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "nishi-amane",
+      "before": 5,
+      "after": 5
+    },
+    {
+      "candidateId": "ogata-koan",
+      "before": 7,
+      "after": 7
+    },
+    {
+      "candidateId": "kusumoto-ine",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "matsumoto-ryojun",
+      "before": 8,
+      "after": 8
+    },
+    {
+      "candidateId": "nagayo-sensai",
+      "before": 18,
+      "after": 18
+    },
+    {
+      "candidateId": "omura-masujiro",
+      "before": 7,
+      "after": 7
+    },
+    {
+      "candidateId": "tanaka-hisashige",
+      "before": 23,
+      "after": 23
+    },
+    {
+      "candidateId": "egawa-hidetatsu",
+      "before": 35,
+      "after": 35
+    },
+    {
+      "candidateId": "hashimoto-sanai",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "shibusawa-eiichi",
+      "before": 21,
+      "after": 21
+    },
+    {
+      "candidateId": "iwasaki-yataro",
+      "before": 5,
+      "after": 5
+    },
+    {
+      "candidateId": "godai-tomoatsu",
+      "before": 15,
+      "after": 15
+    },
+    {
+      "candidateId": "mutsu-munemitsu",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "enomoto-takeaki",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "nakahama-manjiro",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "ernest-satow",
+      "before": 4,
+      "after": 4
+    },
+    {
+      "candidateId": "harry-parkes",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "niijima-jo",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "tsuda-umeko",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "yamamoto-yaeko",
+      "before": 41,
+      "after": 41
+    },
+    {
+      "candidateId": "nakano-takeko",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "narasaki-ryo",
+      "before": 14,
+      "after": 14
+    },
+    {
+      "candidateId": "cao-cao",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "liu-bei",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "sun-quan",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "zhuge-liang",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "sima-yi",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "zhou-yu",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "lu-su",
+      "before": 13,
+      "after": 13
+    },
+    {
+      "candidateId": "lu-meng",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "candidateId": "lu-xun",
+      "before": 13,
+      "after": 13
+    },
+    {
+      "candidateId": "lu-bu",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "zhao-yun",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "guan-yu",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "zhang-fei",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "xun-yu",
+      "before": 15,
+      "after": 15
+    },
+    {
+      "candidateId": "xun-you",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "candidateId": "guo-jia",
+      "before": 23,
+      "after": 23
+    },
+    {
+      "candidateId": "jia-xu",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "chen-qun",
+      "before": 28,
+      "after": 27
+    },
+    {
+      "candidateId": "zhong-yao",
+      "before": 38,
+      "after": 38
+    },
+    {
+      "candidateId": "man-chong",
+      "before": 63,
+      "after": 63
+    },
+    {
+      "candidateId": "jiang-wan",
+      "before": 24,
+      "after": 24
+    },
+    {
+      "candidateId": "fei-yi",
+      "before": 21,
+      "after": 21
+    },
+    {
+      "candidateId": "dong-yun",
+      "before": 42,
+      "after": 42
+    },
+    {
+      "candidateId": "deng-zhi",
+      "before": 6,
+      "after": 6
+    },
+    {
+      "candidateId": "qin-mi",
+      "before": 36,
+      "after": 36
+    },
+    {
+      "candidateId": "hua-tuo",
+      "before": 9,
+      "after": 9
+    },
+    {
+      "candidateId": "zhang-zhongjing",
+      "before": 6,
+      "after": 6
+    },
+    {
+      "candidateId": "ma-jun",
+      "before": 38,
+      "after": 38
+    },
+    {
+      "candidateId": "zhuge-jin",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "bu-zhi",
+      "before": 9,
+      "after": 9
+    },
+    {
+      "candidateId": "zhang-zhao",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "cai-yan",
+      "before": 27,
+      "after": 27
+    },
+    {
+      "candidateId": "lady-sun",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "empress-guo",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "diaochan",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "wang-yun",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "mi-zhu",
+      "before": 19,
+      "after": 19
+    },
+    {
+      "candidateId": "sun-qian",
+      "before": 15,
+      "after": 15
+    },
+    {
+      "candidateId": "jian-yong",
+      "before": 19,
+      "after": 19
+    },
+    {
+      "candidateId": "yuan-shikai",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "duan-qirui",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "feng-guozhang",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "cao-kun",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "wu-peifu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "zhang-zuolin",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "zhang-xueliang",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "feng-yuxiang",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "yan-xishan",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "bai-chongxi",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "li-zongren",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "tang-jiyao",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "lu-rongting",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "chen-jiongming",
+      "before": 12,
+      "after": 12
+    },
+    {
+      "candidateId": "sun-yat-sen",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "tang-shaoyi",
+      "before": 4,
+      "after": 4
+    },
+    {
+      "candidateId": "wellington-koo",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "wang-zhengting",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "liang-shiyi",
+      "before": 14,
+      "after": 14
+    },
+    {
+      "candidateId": "zhang-jian",
+      "before": 6,
+      "after": 6
+    },
+    {
+      "candidateId": "zhan-tianyou",
+      "before": 29,
+      "after": 29
+    },
+    {
+      "candidateId": "wu-lien-teh",
+      "before": 12,
+      "after": 12
+    },
+    {
+      "candidateId": "mary-stone",
+      "before": 8,
+      "after": 8
+    },
+    {
+      "candidateId": "he-xiangning",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "song-qingling",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "cai-yuanpei",
+      "before": 4,
+      "after": 4
+    },
+    {
+      "candidateId": "hu-shih",
+      "before": 16,
+      "after": 16
+    },
+    {
+      "candidateId": "gwanggaeto",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "jangsu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "eulji-mundeok",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "candidateId": "yeon-gaesomun",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "ondal",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "kim-yusin",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "kim-chunchu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "seondeok",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "jindeok",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "jinheung",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "wonhyo",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "uisang",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "won-gwang",
+      "before": 2,
+      "after": 2
+    },
+    {
+      "candidateId": "gangsu",
+      "before": 19,
+      "after": 19
+    },
+    {
+      "candidateId": "isabu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "geebaek",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "heukchi-sangji",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "boksin",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "dochim",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "wang-in",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "damjing",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "candidateId": "wang-geon",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "gung-ye",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "gyeon-hwon",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "singeom",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "gyeongsun",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "sin-sunggyeom",
+      "before": 11,
+      "after": 11
+    },
+    {
+      "candidateId": "bok-jigyeom",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "bae-hyeongyeong",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "hong-yu",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "yu-geumpil",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "choe-eonwi",
+      "before": 10,
+      "after": 10
+    },
+    {
+      "candidateId": "doseon",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "choe-jiwon",
+      "before": 1,
+      "after": 1
+    },
+    {
+      "candidateId": "ajagae",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "queen-sinmyeong",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "queen-janghwa",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "queen-sinjeong",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "candidateId": "queen-sinhye",
+      "before": 0,
+      "after": 0
+    }
+  ],
+  "changes": [
+    {
+      "personId": "K145",
+      "name": "강예준",
+      "statusBefore": "narrative-assigned",
+      "statusAfter": "narrative-assigned",
+      "beforeSouls": [
+        {
+          "id": "chen-qun",
+          "name": "진군",
+          "period": "chinese-three-kingdoms",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "afterSouls": [
+        {
+          "id": "okubo-toshimichi",
+          "name": "오쿠보 도시미치",
+          "period": "meiji-restoration",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p3",
+          "quote": "관직. 품계 주사. 직함은 인준 심사관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 증인이 두 명 미만이면 인준을 보류한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p4",
+          "quote": "일화. 서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다."
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p5",
+          "quote": "관계. 윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다."
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p6",
+          "quote": "야망. 계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다."
+        }
+      ],
+      "whyEqualOrBetter": "인준 심사를 정지하고 공동교섭 청구를 고의로 늦추는 행동이 계승·조약 효력을 기록청에 집중하려는 야망과 이어진다. 진군의 인사 선발 제도보다 오쿠보 후보의 중앙집권과 제도 개편이 이 권한 집중의 구조에 더 직접 맞는다.",
+      "counterEvidence": "전국적 근대화·산업 정책을 시행한 경력은 없다. 오쿠보의 정책이나 정치적 최후를 부여하지 않으며, 기록청 독점은 아직 야망이다.",
+      "candidateComparison": {
+        "id": "okubo-toshimichi",
+        "name": "오쿠보 도시미치",
+        "period": "meiji-restoration",
+        "sourceKind": "historical-person",
+        "lockedExisting": false,
+        "researchStatus": "secondary-biography-reviewed-primary-unchecked",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Ōkubo_Toshimichi",
+            "sourceType": "tertiary-encyclopedia",
+            "accessMethod": "fetched",
+            "accessedOn": "2026-10-12"
+          }
+        ],
+        "careerSummary": "유신 정부의 지도자로 중앙집권과 근대화를 추진했다.",
+        "narrativeFit": "편집 해석: 제도 개편과 정치적 비용를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다.",
+        "roleTags": [],
+        "limitations": [
+          "조회한 백과·해설의 경력 개요를 기준으로 한 후보이며 1차 사료 원문과 독립 연구의 교차 검증은 완료하지 않았다.",
+          "막부 말기와 유신 직후의 연속선으로 분류했다. 이후 경력을 유신 당시의 능력이나 경험으로 소급하지 않는다."
+        ]
+      },
+      "decision": "accepted-editorial-comparison-not-owner-approval"
+    },
+    {
+      "personId": "K102",
+      "name": "제하율",
+      "statusBefore": "narrative-assigned",
+      "statusAfter": "narrative-assigned",
+      "beforeSouls": [
+        {
+          "id": "kido-takayoshi",
+          "name": "기도 다카요시",
+          "period": "meiji-restoration",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "afterSouls": [
+        {
+          "id": "ishida-mitsunari",
+          "name": "이시다 미쓰나리",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p1",
+          "quote": "마지막 조립 기록의 빈칸을 증오하고, 총관의 빈자리를 혈통으로 메우자는 말을 공방의 모욕으로 듣는다. 냉정하고 날짜를 대조한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p3",
+          "quote": "관직. 품계 교사. 직함은 공방 조립기록 실무관. 핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p4",
+          "quote": "일화. 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 공방 조립기록 실무관 자리의 서명이 장부에 올랐다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p5",
+          "quote": "관계. 정가온의 유언 원장을 조립 기록으로 교차검증하는 계약이고, 한소미의 공동통치안을 현장 숫자로 받치며, 박세린의 가문 원장과는 해석 경쟁이다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p6",
+          "quote": "야망. 핵심 공정의 조립 기록을 평의회 금고와 현장 원장에 동시에 올려 양자도 가문도 아닌 공방의 동의만으로 총관을 세우게 한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p7",
+          "quote": "공포. 세 장의 유언 중 가문 편이 진본으로 인준되어 조립 기록이 세습 직능의 하청 장부가 되는 것."
+        }
+      ],
+      "whyEqualOrBetter": "대표 연서로 총관의 빈 도장을 대행한다고 원장에 쓰고 한소미의 공동통치안을 현장 숫자로 뒷받침하며 박세린의 가문 원장과 해석 경쟁을 한다. 기도의 넓은 정치 연합·제도 설계와 동등하게, 행정 담당자가 정치 연합을 지탱한다는 이시다 후보의 비교축이 기록 실무와 후계 경쟁을 함께 설명한다.",
+      "counterEvidence": [
+        "서군을 조직하거나 전쟁에 참여한 경력은 없다. 공방 동의를 지키는 기록자의 비교이며 이시다의 전투·패배를 옮기지 않는다. 위조 도장을 들켰다는 일화는 위조의 주체를 명확히 밝히지 않으므로 원칙적인 위조 적발자로 미화하지 않는다."
+      ],
+      "candidateComparison": {
+        "id": "ishida-mitsunari",
+        "name": "이시다 미쓰나리",
+        "period": "japanese-sengoku",
+        "sourceKind": "historical-person",
+        "lockedExisting": false,
+        "researchStatus": "secondary-biography-reviewed-primary-unchecked",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Ishida_Mitsunari",
+            "sourceType": "tertiary-encyclopedia",
+            "accessMethod": "fetched",
+            "accessedOn": "2026-10-12"
+          }
+        ],
+        "careerSummary": "히데요시 정권의 행정 담당자였으며 세키가하라에서 서군을 이끌었다.",
+        "narrativeFit": "편집 해석: 행정가의 정치 연합를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다.",
+        "roleTags": [
+          "administrator"
+        ],
+        "limitations": [
+          "조회한 백과·해설의 경력 개요를 기준으로 한 후보이며 1차 사료 원문과 독립 연구의 교차 검증은 완료하지 않았다."
+        ]
+      },
+      "decision": "accepted-editorial-comparison-not-owner-approval"
+    },
+    {
+      "personId": "K377",
+      "name": "남시윤",
+      "statusBefore": "narrative-assigned",
+      "statusAfter": "narrative-assigned",
+      "beforeSouls": [
+        {
+          "id": "luis-frois",
+          "name": "루이스 프로이스",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "afterSouls": [
+        {
+          "id": "gaspar-coelho",
+          "name": "가스파르 코엘류",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p3",
+          "quote": "관직. 품계 신부. 직함은 교구 사제단 선거 사무 신부. 사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p4",
+          "quote": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 교구 사제단 선거 사무 신부의 기록에 당시의 증언을 남겼다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p5",
+          "quote": "관계. 남윤경과 품목 회의를 공유하고, 정유라의 공동교섭에 청과 조항을 넣으려 하며, 오해린의 수산 시세에 청과를 묶지 않으려 한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p6",
+          "quote": "야망. 사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p7",
+          "quote": "공포. 비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것."
+        }
+      ],
+      "whyEqualOrBetter": "화재에서 인명 장부를 구한 기록 행위뿐 아니라 비밀 투표의 개표 기록과 인준 부재 이의를 함께 보관하고 공동교섭에 청과 조항을 넣으려 한다. 외부 관찰자인 프로이스보다 종교 조직 운영과 외교를 함께 다루는 코엘류 후보가 내부 선거 유지와 바깥 교섭이라는 두 행동을 더 직접 설명한다.",
+      "counterEvidence": [
+        "포르투갈 선교·해외 선교 지도 경력은 없고 교황 없는 선거를 코엘류의 제도로 주장하지 않는다. 기록 담당자가 교구의 최고 권한을 가진다는 뜻도 아니다. 청과 거래 관계와 기존 반대근거의 낮은 원칙 성향을 지우지 않으며 선거 기록 보관을 불변 원칙주의로 일반화하지 않는다.",
+        "후보 원장은 백과 개요 조사본이며 1차 사료 교차검증이 끝나지 않았다. 역사 비교는 편집 해석이고 실존 인물의 성격 사실이 아니다.",
+        "가치 원장의 원칙 성향은 음수여서 이 절차 수호 행위를 불변 원칙주의로 일반화할 수 없다."
+      ],
+      "candidateComparison": {
+        "id": "gaspar-coelho",
+        "name": "가스파르 코엘류",
+        "period": "japanese-sengoku",
+        "sourceKind": "historical-person",
+        "lockedExisting": false,
+        "researchStatus": "secondary-biography-reviewed-primary-unchecked",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Gaspar_Coelho",
+            "sourceType": "tertiary-encyclopedia",
+            "accessMethod": "fetched",
+            "accessedOn": "2026-10-12"
+          }
+        ],
+        "careerSummary": "일본 예수회 선교를 이끈 포르투갈 선교사였다.",
+        "narrativeFit": "편집 해석: 외교와 종교 조직 운영를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다.",
+        "roleTags": [
+          "religious"
+        ],
+        "limitations": [
+          "조회한 백과·해설의 경력 개요를 기준으로 한 후보이며 1차 사료 원문과 독립 연구의 교차 검증은 완료하지 않았다."
+        ]
+      },
+      "decision": "accepted-editorial-comparison-not-owner-approval"
+    }
+  ],
+  "unusedCandidateReview": [
+    {
+      "group": "regime-overthrow-and-conquest",
+      "candidateIds": [
+        "akechi-mitsuhide",
+        "saigo-takamori",
+        "cao-cao",
+        "sima-yi",
+        "wang-yun",
+        "yuan-shikai",
+        "feng-guozhang",
+        "cao-kun",
+        "zhang-zuolin",
+        "feng-yuxiang",
+        "gwanggaeto",
+        "jangsu",
+        "yeon-gaesomun",
+        "jinheung",
+        "isabu",
+        "wang-geon",
+        "bok-jigyeom",
+        "bae-hyeongyeong",
+        "hong-yu",
+        "yu-geumpil"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "정변·창업·대규모 정복 또는 군사 권력 승계가 후보 경력의 핵심이다. 명부 검증·공개 절차·국지 방어를 그러한 생애로 확대하지 않는다. 기존 권한 집중 서사는 군제·인사·중앙집권의 더 직접적인 비교를 우선한다.",
+      "comparedPersonIds": [
+        "K115",
+        "K145",
+        "K272",
+        "K348",
+        "K1006"
+      ]
+    },
+    {
+      "group": "territorial-and-military-leadership",
+      "candidateIds": [
+        "takenaka-shigeharu",
+        "takeda-shingen",
+        "mori-motonari",
+        "date-masamune",
+        "sanada-nobushige",
+        "wu-peifu",
+        "bai-chongxi",
+        "li-zongren",
+        "tang-jiyao",
+        "lu-rongting",
+        "liu-bei",
+        "sun-yat-sen"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "주군 이동·영토 확장·군사 연합·유랑 창업이 실제 선택으로 확인되어야 기존 방어·자문·주민 대표와 동등한 대안이 된다. 순찰 직함이나 집단 통행만으로 전선 지휘와 창업을 만들지 않는다.",
+      "comparedPersonIds": [
+        "K003",
+        "K129",
+        "K143",
+        "K254",
+        "K305",
+        "K353",
+        "K1006"
+      ]
+    },
+    {
+      "group": "family-succession-and-marriage",
+      "candidateIds": [
+        "hosokawa-gracia",
+        "matsu",
+        "zhuge-jin",
+        "lady-sun",
+        "empress-guo",
+        "zhang-xueliang",
+        "ondal",
+        "kim-yusin",
+        "kim-chunchu",
+        "seondeok",
+        "jindeok",
+        "gyeon-hwon",
+        "ajagae",
+        "queen-sinmyeong",
+        "queen-janghwa",
+        "queen-sinjeong",
+        "queen-sinhye"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "가족 보호·가문 언급만으로 혼인 동맹·왕실 생존·가문 분열·외교를 통한 승계를 입증할 수 없다. 승인 잠금과 실제 승계 서사의 기존 더 직접적인 비교를 우선한다. 여성 후보는 인물 성별을 근거로 순환 배정하지 않는다.",
+      "comparedPersonIds": [
+        "K089",
+        "K170",
+        "K246",
+        "K398",
+        "K423",
+        "K1005"
+      ]
+    },
+    {
+      "group": "art-culture-and-education",
+      "candidateIds": [
+        "sen-no-rikyu",
+        "hasegawa-tohaku",
+        "kano-eitoku",
+        "yoshida-shoin",
+        "fukuzawa-yukichi",
+        "niijima-jo",
+        "tsuda-umeko",
+        "he-xiangning",
+        "uisang",
+        "wang-in"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "번역·기록·정비만으로 예술 제작·후원 갈등·학교 설립·해외 교육·종교 교육 전파를 만들지 않는다. 후보의 교육·문화 경력에 대응하는 구체 행동이 부족하다. 왕인의 전승 불확실성도 사실화하지 않는다.",
+      "comparedPersonIds": [
+        "K055",
+        "K057",
+        "K111",
+        "K245",
+        "K1011",
+        "K1015"
+      ]
+    },
+    {
+      "group": "religion-and-restoration",
+      "candidateIds": [
+        "konishi-yukinaga",
+        "boksin",
+        "dochim",
+        "gung-ye",
+        "doseon"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "신앙 소속이나 통치 이의만으로 침략·부흥 전쟁·종교 정치 동원·축출·풍수 전승을 부여할 수 없다. 종교 공동체의 실제 기록·구휼 행동과 후보의 동원 생애는 구별한다.",
+      "comparedPersonIds": [
+        "K245",
+        "K254",
+        "K373",
+        "K377",
+        "K390",
+        "K392"
+      ]
+    },
+    {
+      "group": "diplomatic-pressure",
+      "candidateIds": [
+        "harry-parkes"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "계약을 거절하고 언어를 중개하는 선택은 외교 강압과 동일하지 않다. 강대국의 외교 압력을 행사했다는 행동이 없는 통역·증언 인물에는 기존 중개 후보가 더 직접적이다.",
+      "comparedPersonIds": [
+        "K014",
+        "K366",
+        "K1011",
+        "K1013"
+      ]
+    },
+    {
+      "group": "long-term-state-strategy",
+      "candidateIds": [
+        "zhuge-liang"
+      ],
+      "decision": "not-assigned-in-this-review",
+      "reason": "일상 행정의 지속과 인수인계만으로 장기 국가 전략을 입증하지 않는다. 현재 남아 있는 운영 카드의 좁은 행위에는 장완 등 기존 행정 비교가 더 직접적이다.",
+      "comparedPersonIds": [
+        "K045",
+        "K262",
+        "K499"
+      ]
+    }
+  ],
+  "retainedDuplicates": [
+    {
+      "candidateId": "uesugi-kenshin",
+      "before": 5,
+      "weakRows": [
+        "K437",
+        "K677",
+        "K917"
+      ],
+      "specificRows": [
+        "K099",
+        "K261"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 권위와 전선 유지를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 5
+    },
+    {
+      "candidateId": "hojo-ujiyasu",
+      "before": 17,
+      "weakRows": [
+        "K412",
+        "K425",
+        "K485",
+        "K569",
+        "K619",
+        "K761",
+        "K805",
+        "K821",
+        "K949",
+        "K997",
+        "K1002"
+      ],
+      "specificRows": [
+        "K003",
+        "K069",
+        "K232",
+        "K301",
+        "K310",
+        "K362"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 지역 통치와 방어를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 17
+    },
+    {
+      "candidateId": "sanada-masayuki",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K256",
+        "K305"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 소세력의 생존 협상를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "ii-naotora",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K089",
+        "K246",
+        "K403"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 가문 생존과 후계 보호를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "tsuda-sokyu",
+      "before": 8,
+      "weakRows": [
+        "K379",
+        "K465",
+        "K609",
+        "K849"
+      ],
+      "specificRows": [
+        "K159",
+        "K184",
+        "K209",
+        "K355"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 상업망과 문화 중개를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 8
+    },
+    {
+      "candidateId": "imai-sokyu",
+      "before": 9,
+      "weakRows": [],
+      "specificRows": [
+        "K019",
+        "K105",
+        "K125",
+        "K198",
+        "K226",
+        "K278",
+        "K337",
+        "K373",
+        "K388"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 물자 조달과 상업 교섭를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 9
+    },
+    {
+      "candidateId": "takayama-ukon",
+      "before": 8,
+      "weakRows": [],
+      "specificRows": [
+        "K051",
+        "K123",
+        "K188",
+        "K264",
+        "K291",
+        "K346",
+        "K393",
+        "K420"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 신념과 생존 비용를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 8
+    },
+    {
+      "candidateId": "luis-frois",
+      "before": 25,
+      "weakRows": [
+        "K449",
+        "K534",
+        "K542",
+        "K576",
+        "K586",
+        "K720",
+        "K726",
+        "K768",
+        "K778",
+        "K782",
+        "K785",
+        "K826",
+        "K881",
+        "K888",
+        "K918",
+        "K970"
+      ],
+      "specificRows": [
+        "K022",
+        "K078",
+        "K109",
+        "K167",
+        "K212",
+        "K239",
+        "K341",
+        "K396"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 외부 관찰자와 기록자를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 24
+    },
+    {
+      "candidateId": "manase-dosan",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K152",
+        "K260",
+        "K347"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 치료와 지식 전수를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "hosokawa-fujitaka",
+      "before": 11,
+      "weakRows": [
+        "K476",
+        "K481",
+        "K673",
+        "K717",
+        "K721",
+        "K865",
+        "K908"
+      ],
+      "specificRows": [
+        "K026",
+        "K086",
+        "K158",
+        "K1014"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 정권 교체와 문화 보존를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 11
+    },
+    {
+      "candidateId": "sakamoto-ryoma",
+      "before": 9,
+      "weakRows": [],
+      "specificRows": [
+        "K011",
+        "K097",
+        "K169",
+        "K171",
+        "K252",
+        "K285",
+        "K303",
+        "K335",
+        "K405"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 세력 간 중개와 운송를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 9
+    },
+    {
+      "candidateId": "katsu-kaishu",
+      "before": 11,
+      "weakRows": [
+        "K407",
+        "K469",
+        "K661"
+      ],
+      "specificRows": [
+        "K062",
+        "K127",
+        "K193",
+        "K230",
+        "K292",
+        "K299",
+        "K342",
+        "K398"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 전환기 협상과 기술 수용를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 11
+    },
+    {
+      "candidateId": "kido-takayoshi",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K122",
+        "K235"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 정치 연합과 제도 설계를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "yamagata-aritomo",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K032",
+        "K115",
+        "K118"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 조직 재편과 군정를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "takasugi-shinsaku",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K029",
+        "K088",
+        "K272"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 새 조직의 창설를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "nishi-amane",
+      "before": 5,
+      "weakRows": [],
+      "specificRows": [
+        "K023",
+        "K035",
+        "K222",
+        "K410",
+        "K749"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 개념 번역과 제도 자문를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 5
+    },
+    {
+      "candidateId": "ogata-koan",
+      "before": 7,
+      "weakRows": [
+        "K756",
+        "K948"
+      ],
+      "specificRows": [
+        "K068",
+        "K160",
+        "K227",
+        "K313",
+        "K327"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 의료와 교육 공동체를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 7
+    },
+    {
+      "candidateId": "kusumoto-ine",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K172",
+        "K330"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 배제 속의 전문직 진입를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "matsumoto-ryojun",
+      "before": 8,
+      "weakRows": [
+        "K622"
+      ],
+      "specificRows": [
+        "K098",
+        "K147",
+        "K185",
+        "K279",
+        "K304",
+        "K326",
+        "K364"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 치료 체계와 정권 전환를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 8
+    },
+    {
+      "candidateId": "nagayo-sensai",
+      "before": 18,
+      "weakRows": [
+        "K497",
+        "K545",
+        "K641",
+        "K689",
+        "K960"
+      ],
+      "specificRows": [
+        "K012",
+        "K036",
+        "K079",
+        "K157",
+        "K177",
+        "K247",
+        "K286",
+        "K309",
+        "K325",
+        "K391",
+        "K691",
+        "K762",
+        "K932"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 예방과 보건 행정를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 18
+    },
+    {
+      "candidateId": "omura-masujiro",
+      "before": 7,
+      "weakRows": [],
+      "specificRows": [
+        "K034",
+        "K113",
+        "K192",
+        "K236",
+        "K273",
+        "K352",
+        "K404"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 전문 지식의 조직 개혁를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 7
+    },
+    {
+      "candidateId": "tanaka-hisashige",
+      "before": 23,
+      "weakRows": [
+        "K446",
+        "K466",
+        "K555",
+        "K656",
+        "K706",
+        "K800",
+        "K830",
+        "K939",
+        "K987",
+        "K992"
+      ],
+      "specificRows": [
+        "K021",
+        "K030",
+        "K077",
+        "K092",
+        "K135",
+        "K150",
+        "K208",
+        "K225",
+        "K284",
+        "K328",
+        "K354",
+        "K389",
+        "K1012"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 장인 기술과 산업 전환를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 23
+    },
+    {
+      "candidateId": "egawa-hidetatsu",
+      "before": 35,
+      "weakRows": [
+        "K413",
+        "K512",
+        "K527",
+        "K560",
+        "K590",
+        "K607",
+        "K610",
+        "K655",
+        "K658",
+        "K664",
+        "K699",
+        "K719",
+        "K732",
+        "K747",
+        "K780",
+        "K799",
+        "K802",
+        "K808",
+        "K850",
+        "K863",
+        "K891",
+        "K926",
+        "K991"
+      ],
+      "specificRows": [
+        "K018",
+        "K049",
+        "K071",
+        "K101",
+        "K132",
+        "K183",
+        "K220",
+        "K288",
+        "K302",
+        "K339",
+        "K365",
+        "K378"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 기술 도입과 지방 행정를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 35
+    },
+    {
+      "candidateId": "hashimoto-sanai",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K083",
+        "K237"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 전문직의 정치 참여를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "shibusawa-eiichi",
+      "before": 21,
+      "weakRows": [
+        "K454",
+        "K479",
+        "K502",
+        "K559",
+        "K623",
+        "K646",
+        "K671",
+        "K751",
+        "K815",
+        "K838",
+        "K847",
+        "K902",
+        "K943",
+        "K950"
+      ],
+      "specificRows": [
+        "K067",
+        "K151",
+        "K196",
+        "K216",
+        "K271",
+        "K295",
+        "K319"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 상업 제도와 투자 연합를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 21
+    },
+    {
+      "candidateId": "iwasaki-yataro",
+      "before": 5,
+      "weakRows": [],
+      "specificRows": [
+        "K006",
+        "K173",
+        "K297",
+        "K329",
+        "K1022"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 운송 사업과 자본 축적를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 5
+    },
+    {
+      "candidateId": "godai-tomoatsu",
+      "before": 15,
+      "weakRows": [
+        "K566",
+        "K657",
+        "K694",
+        "K758",
+        "K886",
+        "K897",
+        "K934"
+      ],
+      "specificRows": [
+        "K039",
+        "K095",
+        "K133",
+        "K195",
+        "K234",
+        "K311",
+        "K363",
+        "K374"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 상업망과 도시 산업를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 15
+    },
+    {
+      "candidateId": "mutsu-munemitsu",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K128",
+        "K294"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 현장 네트워크와 외교를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "nakahama-manjiro",
+      "before": 3,
+      "weakRows": [
+        "K409",
+        "K1010"
+      ],
+      "specificRows": [
+        "K015"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 경계 이동과 통역를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "ernest-satow",
+      "before": 4,
+      "weakRows": [
+        "K384"
+      ],
+      "specificRows": [
+        "K270",
+        "K366",
+        "K1011"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 언어 중개와 외부 관찰를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 4
+    },
+    {
+      "candidateId": "yamamoto-yaeko",
+      "before": 41,
+      "weakRows": [
+        "K432",
+        "K480",
+        "K491",
+        "K510",
+        "K528",
+        "K530",
+        "K554",
+        "K593",
+        "K613",
+        "K617",
+        "K624",
+        "K637",
+        "K659",
+        "K665",
+        "K683",
+        "K685",
+        "K702",
+        "K707",
+        "K722",
+        "K737",
+        "K794",
+        "K809",
+        "K816",
+        "K829",
+        "K851",
+        "K853",
+        "K864",
+        "K875",
+        "K877",
+        "K894",
+        "K899",
+        "K923",
+        "K929",
+        "K938",
+        "K962"
+      ],
+      "specificRows": [
+        "K025",
+        "K076",
+        "K266",
+        "K344",
+        "K356",
+        "K387"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 전쟁 경험과 돌봄를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 41
+    },
+    {
+      "candidateId": "narasaki-ryo",
+      "before": 14,
+      "weakRows": [
+        "K445",
+        "K462",
+        "K506",
+        "K544",
+        "K589",
+        "K602",
+        "K635",
+        "K654",
+        "K698",
+        "K746",
+        "K827",
+        "K973",
+        "K986"
+      ],
+      "specificRows": [
+        "K108"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 위험 전달과 현장 대응를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 14
+    },
+    {
+      "candidateId": "zhou-yu",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K197",
+        "K348"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 동맹 작전과 현장 지휘를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "lu-su",
+      "before": 13,
+      "weakRows": [
+        "K472",
+        "K492",
+        "K520",
+        "K568",
+        "K684",
+        "K712",
+        "K876",
+        "K952"
+      ],
+      "specificRows": [
+        "K008",
+        "K143",
+        "K217",
+        "K265",
+        "K1006"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 연합 외교를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 13
+    },
+    {
+      "candidateId": "lu-meng",
+      "before": 11,
+      "weakRows": [
+        "K519",
+        "K523",
+        "K581",
+        "K663",
+        "K711",
+        "K715",
+        "K773",
+        "K903",
+        "K907",
+        "K955",
+        "K965"
+      ],
+      "specificRows": [],
+      "reason": "후보 원장의 비교축: 편집 해석: 학습과 작전 전환를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 11
+    },
+    {
+      "candidateId": "lu-xun",
+      "before": 13,
+      "weakRows": [
+        "K467",
+        "K611",
+        "K629",
+        "K674",
+        "K866",
+        "K869",
+        "K914"
+      ],
+      "specificRows": [
+        "K041",
+        "K060",
+        "K119",
+        "K254",
+        "K275",
+        "K300"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 절제된 대응과 군정를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 13
+    },
+    {
+      "candidateId": "xun-yu",
+      "before": 15,
+      "weakRows": [
+        "K439",
+        "K531",
+        "K723",
+        "K771",
+        "K871",
+        "K963"
+      ],
+      "specificRows": [
+        "K054",
+        "K058",
+        "K136",
+        "K186",
+        "K194",
+        "K211",
+        "K290",
+        "K402",
+        "K889"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 인재 발굴과 원칙 충돌를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 15
+    },
+    {
+      "candidateId": "xun-you",
+      "before": 11,
+      "weakRows": [
+        "K537",
+        "K585",
+        "K639",
+        "K728",
+        "K729",
+        "K796",
+        "K892",
+        "K920",
+        "K921",
+        "K969"
+      ],
+      "specificRows": [
+        "K244"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 현장 전략 자문를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 11
+    },
+    {
+      "candidateId": "guo-jia",
+      "before": 23,
+      "weakRows": [
+        "K380",
+        "K440",
+        "K441",
+        "K475",
+        "K533",
+        "K584",
+        "K652",
+        "K690",
+        "K725",
+        "K776",
+        "K777",
+        "K811",
+        "K834",
+        "K859",
+        "K968",
+        "K988"
+      ],
+      "specificRows": [
+        "K129",
+        "K214",
+        "K242",
+        "K353",
+        "K421",
+        "K547",
+        "K616"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 정보 판단과 조언를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 23
+    },
+    {
+      "candidateId": "jia-xu",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K174",
+        "K1017"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 세력 교체와 생존 판단를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "chen-qun",
+      "before": 28,
+      "weakRows": [
+        "K430",
+        "K448",
+        "K515",
+        "K578",
+        "K736",
+        "K750",
+        "K755",
+        "K770",
+        "K784",
+        "K798",
+        "K803",
+        "K818",
+        "K928",
+        "K947",
+        "K990"
+      ],
+      "specificRows": [
+        "K007",
+        "K044",
+        "K052",
+        "K144",
+        "K321",
+        "K351",
+        "K397",
+        "K457",
+        "K570",
+        "K577",
+        "K599",
+        "K841"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 인사 제도와 행정를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 27
+    },
+    {
+      "candidateId": "zhong-yao",
+      "before": 38,
+      "weakRows": [
+        "K433",
+        "K452",
+        "K474",
+        "K478",
+        "K522",
+        "K595",
+        "K605",
+        "K644",
+        "K666",
+        "K697",
+        "K734",
+        "K745",
+        "K793",
+        "K814",
+        "K817",
+        "K835",
+        "K836",
+        "K884",
+        "K937",
+        "K941",
+        "K942",
+        "K961",
+        "K979",
+        "K985"
+      ],
+      "specificRows": [
+        "K072",
+        "K146",
+        "K156",
+        "K181",
+        "K231",
+        "K283",
+        "K334",
+        "K360",
+        "K375",
+        "K419",
+        "K424",
+        "K649",
+        "K883",
+        "K1019"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 행정과 기록 문화를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 38
+    },
+    {
+      "candidateId": "man-chong",
+      "before": 63,
+      "weakRows": [
+        "K427",
+        "K447",
+        "K450",
+        "K460",
+        "K488",
+        "K489",
+        "K495",
+        "K500",
+        "K508",
+        "K536",
+        "K539",
+        "K546",
+        "K548",
+        "K556",
+        "K571",
+        "K587",
+        "K604",
+        "K615",
+        "K632",
+        "K633",
+        "K642",
+        "K650",
+        "K667",
+        "K672",
+        "K680",
+        "K681",
+        "K687",
+        "K692",
+        "K700",
+        "K731",
+        "K738",
+        "K748",
+        "K759",
+        "K763",
+        "K783",
+        "K786",
+        "K824",
+        "K825",
+        "K831",
+        "K833",
+        "K844",
+        "K872",
+        "K873",
+        "K879",
+        "K882",
+        "K890",
+        "K912",
+        "K930",
+        "K940",
+        "K951",
+        "K977",
+        "K978"
+      ],
+      "specificRows": [
+        "K013",
+        "K074",
+        "K153",
+        "K178",
+        "K215",
+        "K224",
+        "K280",
+        "K312",
+        "K350",
+        "K382",
+        "K1016"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 법 집행과 방어 운영를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 63
+    },
+    {
+      "candidateId": "jiang-wan",
+      "before": 24,
+      "weakRows": [
+        "K386",
+        "K431",
+        "K461",
+        "K574",
+        "K596",
+        "K647",
+        "K653",
+        "K695",
+        "K714",
+        "K740",
+        "K767",
+        "K788",
+        "K839",
+        "K887",
+        "K895",
+        "K954",
+        "K980"
+      ],
+      "specificRows": [
+        "K045",
+        "K103",
+        "K182",
+        "K262",
+        "K499",
+        "K760",
+        "K797"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 후임 행정과 운영 유지를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 24
+    },
+    {
+      "candidateId": "fei-yi",
+      "before": 21,
+      "weakRows": [
+        "K483",
+        "K501",
+        "K524",
+        "K579",
+        "K627",
+        "K634",
+        "K668",
+        "K682",
+        "K693",
+        "K716",
+        "K772",
+        "K819",
+        "K874",
+        "K885"
+      ],
+      "specificRows": [
+        "K028",
+        "K056",
+        "K131",
+        "K191",
+        "K267",
+        "K401",
+        "K1021"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 교섭과 내부 조정를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 21
+    },
+    {
+      "candidateId": "dong-yun",
+      "before": 42,
+      "weakRows": [
+        "K428",
+        "K436",
+        "K451",
+        "K455",
+        "K490",
+        "K494",
+        "K529",
+        "K538",
+        "K549",
+        "K552",
+        "K572",
+        "K573",
+        "K580",
+        "K600",
+        "K628",
+        "K643",
+        "K686",
+        "K741",
+        "K744",
+        "K764",
+        "K820",
+        "K878",
+        "K913",
+        "K933",
+        "K935",
+        "K956",
+        "K957",
+        "K964",
+        "K983"
+      ],
+      "specificRows": [
+        "K017",
+        "K065",
+        "K164",
+        "K168",
+        "K233",
+        "K287",
+        "K308",
+        "K385",
+        "K400",
+        "K791",
+        "K906",
+        "K1001",
+        "K1020"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 권력 감시와 궁정 운영를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 42
+    },
+    {
+      "candidateId": "deng-zhi",
+      "before": 6,
+      "weakRows": [],
+      "specificRows": [
+        "K084",
+        "K166",
+        "K255",
+        "K358",
+        "K408",
+        "K1013"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 동맹 회복과 사절를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 6
+    },
+    {
+      "candidateId": "qin-mi",
+      "before": 36,
+      "weakRows": [
+        "K429",
+        "K442",
+        "K456",
+        "K486",
+        "K487",
+        "K535",
+        "K597",
+        "K620",
+        "K621",
+        "K631",
+        "K645",
+        "K648",
+        "K676",
+        "K678",
+        "K679",
+        "K727",
+        "K730",
+        "K774",
+        "K775",
+        "K789",
+        "K792",
+        "K812",
+        "K813",
+        "K837",
+        "K840",
+        "K860",
+        "K861",
+        "K870",
+        "K916",
+        "K919",
+        "K922",
+        "K981",
+        "K984"
+      ],
+      "specificRows": [
+        "K024",
+        "K243",
+        "K390"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 학문과 외교적 논변를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 36
+    },
+    {
+      "candidateId": "hua-tuo",
+      "before": 9,
+      "weakRows": [
+        "K516",
+        "K564",
+        "K708"
+      ],
+      "specificRows": [
+        "K048",
+        "K080",
+        "K138",
+        "K213",
+        "K338",
+        "K406"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 치료와 권력의 압박를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 9
+    },
+    {
+      "candidateId": "zhang-zhongjing",
+      "before": 6,
+      "weakRows": [
+        "K468",
+        "K612",
+        "K804"
+      ],
+      "specificRows": [
+        "K040",
+        "K106",
+        "K324"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 역병 대응과 의료 지식를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 6
+    },
+    {
+      "candidateId": "ma-jun",
+      "before": 38,
+      "weakRows": [
+        "K464",
+        "K507",
+        "K514",
+        "K540",
+        "K550",
+        "K562",
+        "K588",
+        "K598",
+        "K614",
+        "K651",
+        "K742",
+        "K754",
+        "K806",
+        "K848",
+        "K854",
+        "K856",
+        "K896",
+        "K898",
+        "K904",
+        "K946",
+        "K972",
+        "K994",
+        "K999"
+      ],
+      "specificRows": [
+        "K005",
+        "K010",
+        "K038",
+        "K050",
+        "K096",
+        "K107",
+        "K124",
+        "K161",
+        "K175",
+        "K200",
+        "K251",
+        "K277",
+        "K336",
+        "K368",
+        "K414"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 공학과 실용적 문제 해결를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 38
+    },
+    {
+      "candidateId": "bu-zhi",
+      "before": 9,
+      "weakRows": [
+        "K513",
+        "K557",
+        "K705",
+        "K845",
+        "K993"
+      ],
+      "specificRows": [
+        "K073",
+        "K207",
+        "K361",
+        "K989"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 지방 운영과 승진를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 9
+    },
+    {
+      "candidateId": "zhang-zhao",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K087",
+        "K093",
+        "K139"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 승계 보좌와 직언를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "cai-yan",
+      "before": 27,
+      "weakRows": [
+        "K395",
+        "K434",
+        "K435",
+        "K453",
+        "K477",
+        "K482",
+        "K484",
+        "K517",
+        "K525",
+        "K532",
+        "K563",
+        "K626",
+        "K669",
+        "K670",
+        "K675",
+        "K709",
+        "K724",
+        "K757",
+        "K862",
+        "K868",
+        "K901",
+        "K910",
+        "K995"
+      ],
+      "specificRows": [
+        "K241",
+        "K263",
+        "K320",
+        "K345"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 이산과 기록를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 27
+    },
+    {
+      "candidateId": "mi-zhu",
+      "before": 19,
+      "weakRows": [
+        "K463",
+        "K470",
+        "K511",
+        "K518",
+        "K575",
+        "K662",
+        "K703",
+        "K710",
+        "K790",
+        "K911",
+        "K959",
+        "K982"
+      ],
+      "specificRows": [
+        "K037",
+        "K047",
+        "K075",
+        "K176",
+        "K201",
+        "K269",
+        "K323"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 재산·후원과 연합를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 19
+    },
+    {
+      "candidateId": "sun-qian",
+      "before": 15,
+      "weakRows": [
+        "K521",
+        "K713",
+        "K905",
+        "K953"
+      ],
+      "specificRows": [
+        "K027",
+        "K053",
+        "K070",
+        "K112",
+        "K154",
+        "K179",
+        "K204",
+        "K229",
+        "K306",
+        "K332",
+        "K383"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 이동과 외교 연락를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 15
+    },
+    {
+      "candidateId": "jian-yong",
+      "before": 19,
+      "weakRows": [
+        "K438",
+        "K504",
+        "K582",
+        "K583",
+        "K630",
+        "K696",
+        "K765",
+        "K822",
+        "K823",
+        "K867",
+        "K909",
+        "K915",
+        "K936",
+        "K966",
+        "K967"
+      ],
+      "specificRows": [
+        "K033",
+        "K205",
+        "K259",
+        "K349"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 친분과 협상를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 19
+    },
+    {
+      "candidateId": "yan-xishan",
+      "before": 3,
+      "weakRows": [
+        "K496",
+        "K832",
+        "K880"
+      ],
+      "specificRows": [],
+      "reason": "후보 원장의 비교축: 편집 해석: 지역 운영과 생존를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "chen-jiongming",
+      "before": 12,
+      "weakRows": [
+        "K411"
+      ],
+      "specificRows": [
+        "K001",
+        "K002",
+        "K061",
+        "K094",
+        "K121",
+        "K189",
+        "K223",
+        "K274",
+        "K318",
+        "K369",
+        "K417"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 분권 구상과 동맹 결렬를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 12
+    },
+    {
+      "candidateId": "tang-shaoyi",
+      "before": 4,
+      "weakRows": [],
+      "specificRows": [
+        "K110",
+        "K117",
+        "K399",
+        "K422"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 협상과 행정 전환를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 4
+    },
+    {
+      "candidateId": "wellington-koo",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K190",
+        "K370",
+        "K418"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 국제 협상과 국가 대표를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "wang-zhengting",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K163",
+        "K416"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 대외 교섭과 제도 운영를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "liang-shiyi",
+      "before": 14,
+      "weakRows": [
+        "K493",
+        "K592",
+        "K640",
+        "K688",
+        "K733",
+        "K787",
+        "K925",
+        "K931",
+        "K976"
+      ],
+      "specificRows": [
+        "K016",
+        "K104",
+        "K199",
+        "K206",
+        "K739"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 재정망과 정치 후원를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 14
+    },
+    {
+      "candidateId": "zhang-jian",
+      "before": 6,
+      "weakRows": [
+        "K561",
+        "K753",
+        "K801",
+        "K945"
+      ],
+      "specificRows": [
+        "K063",
+        "K276"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 지역 산업과 교육 투자를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 6
+    },
+    {
+      "candidateId": "zhan-tianyou",
+      "before": 29,
+      "weakRows": [
+        "K444",
+        "K459",
+        "K526",
+        "K603",
+        "K608",
+        "K636",
+        "K704",
+        "K718",
+        "K752",
+        "K795",
+        "K828",
+        "K843",
+        "K924",
+        "K944",
+        "K958"
+      ],
+      "specificRows": [
+        "K009",
+        "K043",
+        "K046",
+        "K066",
+        "K091",
+        "K120",
+        "K155",
+        "K180",
+        "K282",
+        "K296",
+        "K307",
+        "K333",
+        "K367",
+        "K376"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 공학과 공공 기반 시설를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 29
+    },
+    {
+      "candidateId": "wu-lien-teh",
+      "before": 12,
+      "weakRows": [
+        "K660",
+        "K852",
+        "K900",
+        "K996"
+      ],
+      "specificRows": [
+        "K004",
+        "K064",
+        "K126",
+        "K202",
+        "K253",
+        "K316",
+        "K322",
+        "K331"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 역병 대응과 전문직 협력를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 12
+    },
+    {
+      "candidateId": "mary-stone",
+      "before": 8,
+      "weakRows": [
+        "K558",
+        "K766"
+      ],
+      "specificRows": [
+        "K020",
+        "K134",
+        "K210",
+        "K298",
+        "K340",
+        "K381"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 여성 의료와 교육를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 8
+    },
+    {
+      "candidateId": "song-qingling",
+      "before": 3,
+      "weakRows": [],
+      "specificRows": [
+        "K165",
+        "K293",
+        "K315"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 정치 유산과 독립적 선택를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "cai-yuanpei",
+      "before": 4,
+      "weakRows": [],
+      "specificRows": [
+        "K031",
+        "K057",
+        "K059",
+        "K240"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 학문 공동체와 제도 개혁를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 4
+    },
+    {
+      "candidateId": "hu-shih",
+      "before": 16,
+      "weakRows": [
+        "K498",
+        "K594",
+        "K638",
+        "K974"
+      ],
+      "specificRows": [
+        "K055",
+        "K085",
+        "K111",
+        "K142",
+        "K149",
+        "K162",
+        "K187",
+        "K219",
+        "K221",
+        "K289",
+        "K314",
+        "K359"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 언어 개혁과 비판적 학습를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 16
+    },
+    {
+      "candidateId": "eulji-mundeok",
+      "before": 11,
+      "weakRows": [
+        "K471",
+        "K543",
+        "K567",
+        "K591",
+        "K735",
+        "K807",
+        "K855",
+        "K927",
+        "K975",
+        "K1000"
+      ],
+      "specificRows": [
+        "K203"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 침공 대응과 기만를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 11
+    },
+    {
+      "candidateId": "won-gwang",
+      "before": 2,
+      "weakRows": [],
+      "specificRows": [
+        "K257",
+        "K769"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 윤리 교육과 사회 참여를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 2
+    },
+    {
+      "candidateId": "gangsu",
+      "before": 19,
+      "weakRows": [
+        "K426",
+        "K473",
+        "K618",
+        "K857",
+        "K858"
+      ],
+      "specificRows": [
+        "K014",
+        "K042",
+        "K137",
+        "K141",
+        "K218",
+        "K238",
+        "K281",
+        "K317",
+        "K343",
+        "K372",
+        "K394",
+        "K415",
+        "K625",
+        "K810"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 문서 작성과 외교를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 19
+    },
+    {
+      "candidateId": "damjing",
+      "before": 3,
+      "weakRows": [
+        "K509",
+        "K701",
+        "K893"
+      ],
+      "specificRows": [],
+      "reason": "후보 원장의 비교축: 편집 해석: 기술과 종교의 이동를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 3
+    },
+    {
+      "candidateId": "sin-sunggyeom",
+      "before": 11,
+      "weakRows": [
+        "K443",
+        "K458",
+        "K541",
+        "K606",
+        "K779",
+        "K781",
+        "K842",
+        "K846",
+        "K971"
+      ],
+      "specificRows": [
+        "K082",
+        "K228"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 정권 교체와 호위를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 11
+    },
+    {
+      "candidateId": "choe-eonwi",
+      "before": 10,
+      "weakRows": [
+        "K503",
+        "K551",
+        "K553",
+        "K601",
+        "K743"
+      ],
+      "specificRows": [
+        "K081",
+        "K100",
+        "K249",
+        "K371",
+        "K505"
+      ],
+      "reason": "후보 원장의 비교축: 편집 해석: 문서와 정권 전환를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다. 각 personId의 원문 인용·narrativeRationale·counterEvidence를 유지 판단의 개별 근거로 삼았다. 약한 반복 카드에 별도 생애를 보태거나 이름 순서로 후보를 회전시키지 않는다.",
+      "after": 10
+    }
+  ],
+  "limits": [
+    "전역 최솟값을 증명하지 않았다. 동일 적합성은 수학적으로 정의된 비용 함수가 아니라 원문 대조에 따른 편집 판단이다.",
+    "562개 약한 근거 행은 모두 그대로 남겼다. 반복되는 짧은 일화와 인수인계 문장만으로는 서로 다른 역사 생애를 정당화할 수 없다.",
+    "최다 만총 63회는 유지한다. 그중 52행은 약한 근거이며 나머지도 법 집행과 방어의 결합을 다른 전쟁 지휘 후보로 바꿀 동등 이상 근거가 부족하다.",
+    "미사용 후보 전원을 사용하는 것이 목표가 아니다. 남은 66명은 후보 원장의 구체 생애와 원문 사이에 없는 교육·혼인·정변·정복·창업 등을 요구했다.",
+    "역사 1차 사료 교차검증·서사 적합성 소유자 최종 승인·profile·역량 수치·공개 연결은 이 검토로 완료되지 않는다."
+  ],
+  "sourceFingerprints": [
+    {
+      "path": "lore/characters/Core-Characters.json",
+      "contentHash": "ace9134295d8a7159c2acf8e8ad3ca8c5e2c5029fe224eb1c1b3a0d6d6f9f8d8",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-01.json",
+      "contentHash": "e4cdd8025d96c83490ea6fae7e7860b1ca3013fef55d92bcfcad33407e44e3cb",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-02.json",
+      "contentHash": "5856d58f91a0e9153a697a3d6b192b42258471f3ecb3a6c10f882bdd047cdb45",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-03.json",
+      "contentHash": "9add429aa896ca0c8405a8bff34e3becd1b747d099a90ef49ce8fc2a0c205dc1",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-04.json",
+      "contentHash": "94f44e3769b0f9abe22faa2d2f2c51fa00e4b5736b63ff99acd4b9d986ba52e7",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-05.json",
+      "contentHash": "fb2735910d110a38cf9a4cdbdd607a0bca9c81c1f6c30bac293994b51f51cd32",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-06.json",
+      "contentHash": "b6a8dd1ded9ce4173fffa4e8775484c89bc690c5a15b71357b050814cf68a0a7",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-07.json",
+      "contentHash": "ae36860772ef929cd1402e47451d3ec958cefd68ae5745898a8ec52f2fef7cb4",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-08.json",
+      "contentHash": "2d73b015e77272c4d3f9c8eb0249462af20140454d131a86bafd0236db92f176",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-09.json",
+      "contentHash": "a982dedd5ab55919e079f9c2b800108cbada9328698ddab7b5f8ebffd6f7e1e0",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-10.json",
+      "contentHash": "d307b5d80b370827f6e43a17bd1f8078445ca2f2a07b1700db1108445d368fc6",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-11.json",
+      "contentHash": "ef0545ed8abf2c5d267b2a808fd2393345d7dfd1ec1d3bea1fe6181b5c8624b8",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-12.json",
+      "contentHash": "a7afb1376d0e1048a648fe5514dd004f417dc0265be279fca2510b06ee96fb27",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-13.json",
+      "contentHash": "1ec70e4c73a36d6f57466001ba3c4c80e3d9117f5ff1d13ebae276f167ebae44",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-14.json",
+      "contentHash": "56f22ca2393e923dc40e53352f2b0e51e225845ebe861af7320cb9de5d63accc",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-15.json",
+      "contentHash": "ea4f3002fa3f083afc87277aaebc4776cb64a47bce7d35dae8e7763b10d41022",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-State-16.json",
+      "contentHash": "02471d9ab7de657689af4273581d2b5445197c7a88a0a9b481694372bb996584",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/characters/Cast-Unaffiliated.json",
+      "contentHash": "83279641cfc55ea44bc3fd5e3d49932c2e0596167ed05c00554bec58c660dd1d",
+      "hashEncoding": "parsed-json-compact"
+    },
+    {
+      "path": "lore/factions/Diaspora-Corridors.json",
+      "contentHash": "365af2a5384b3263b31d9022f6594d58ada16b52807e3b215f142482a67bf5ee",
+      "hashEncoding": "parsed-json-compact"
+    }
+  ],
+  "candidateLedgerSha256": "564de5316ddd26920a344de8aaabe6d83a9a2bcbfb15688410b03155379b31a0",
+  "highFrequencyReview": [
+    {
+      "candidateId": "man-chong",
+      "before": 63,
+      "after": 63,
+      "weakEvidenceRows": 52,
+      "reason": "출입·무장 제지와 명부 재점검이 결합한다. 미사용 전쟁 지휘자의 정복·주군 이동을 추가하면 법 집행의 비교축을 잃는다."
+    },
+    {
+      "candidateId": "dong-yun",
+      "before": 42,
+      "after": 42,
+      "weakEvidenceRows": 29,
+      "reason": "소급 인준·단독 열람·외부 영장·군량 예외에 대한 내부 권한 견제가 중심이다. 정변으로 권력을 차지하는 후보는 견제를 탈취로 바꾼다."
+    },
+    {
+      "candidateId": "yamamoto-yaeko",
+      "before": 41,
+      "after": 41,
+      "weakEvidenceRows": 35,
+      "reason": "인명 기록 구조·위기 진료·피난 가족 돌봄이 중심이다. 미사용 여성 교육·혼인 후보의 성별이나 지위가 돌봄 행위를 대체하지 않는다."
+    },
+    {
+      "candidateId": "zhong-yao",
+      "before": 38,
+      "after": 38,
+      "weakEvidenceRows": 24,
+      "reason": "원본·필적·반출·호송칸 기록을 행정의 실제 효력과 연결한다. 화가·교육 전파자의 창작을 기록 검수와 같게 만들지 않는다."
+    },
+    {
+      "candidateId": "ma-jun",
+      "before": 38,
+      "after": 38,
+      "weakEvidenceRows": 23,
+      "reason": "마모 축·패킹·제동·전력·난로 등 구체 설비의 진단과 운용이다. 미사용 화가의 장인성이나 전략가의 일반적 문제 해결은 동등한 기술 비교가 아니다."
+    },
+    {
+      "candidateId": "qin-mi",
+      "before": 36,
+      "after": 36,
+      "weakEvidenceRows": 33,
+      "reason": "대질·반대 증언·논변의 근거 보존이다. 학교 설립·번역·해외 교육 경력이 없는 카드에 교육 사업자를 배정하지 않는다."
+    },
+    {
+      "candidateId": "egawa-hidetatsu",
+      "before": 35,
+      "after": 35,
+      "weakEvidenceRows": 23,
+      "reason": "설비 위험·기술 조건·방비·지방 행정의 접점이다. 군벌의 영토 확장과 정복을 기술 안전 운영에 덧붙이지 않는다."
+    },
+    {
+      "candidateId": "zhan-tianyou",
+      "before": 29,
+      "after": 29,
+      "weakEvidenceRows": 15,
+      "reason": "철도·관로·좌표·규격·운행 안전의 공공 기반 시설 행동이다. 단순 지역 편입이나 원정은 그 기술 책임을 보존하지 않는다."
+    },
+    {
+      "candidateId": "chen-qun",
+      "before": 28,
+      "after": 27,
+      "weakEvidenceRows": 15,
+      "reason": "자격·보상·인준·등록의 유효 조건을 제도로 확인한다. K145의 권한 집중은 오쿠보로 분리했고 나머지는 선발·행정 조건의 기존 비교가 더 직접적이다."
+    },
+    {
+      "candidateId": "cai-yan",
+      "before": 27,
+      "after": 27,
+      "weakEvidenceRows": 23,
+      "reason": "피난·이산 가족 이름과 기록의 보존이다. 미사용 왕비·정략혼인 후보는 기록에 없는 친족 정치의 조건을 요구한다."
+    },
+    {
+      "candidateId": "luis-frois",
+      "before": 25,
+      "after": 24,
+      "weakEvidenceRows": 16,
+      "reason": "목격·독립 증언·실종 공백·시각을 대조해 보존한다. K377의 종교 내부 운영은 코엘류로 분리했고 나머지 기록자에게 외교 압력이나 선교 지휘를 부여하지 않는다."
+    },
+    {
+      "candidateId": "jiang-wan",
+      "before": 24,
+      "after": 24,
+      "weakEvidenceRows": 17,
+      "reason": "운영·인수인계·급수·의무호송의 연속성이다. 제갈량의 장기 국가 전략이나 군주의 창업 경력을 일상 지속에서 추정하지 않는다."
+    },
+    {
+      "candidateId": "tanaka-hisashige",
+      "before": 23,
+      "after": 23,
+      "weakEvidenceRows": 10,
+      "reason": "장치 제작·정비·교대 운용과 노동 조건의 실제 선택이다. 예술 후원이나 문화 권위의 미사용 후보보다 기술 비교를 유지한다."
+    },
+    {
+      "candidateId": "guo-jia",
+      "before": 23,
+      "after": 23,
+      "weakEvidenceRows": 16,
+      "reason": "정보의 상충·최초 보고의 정정·각인과 시각 대조를 통한 자문이다. 주군 이동·북벌·권력 쟁탈이 없는 참모에게 그런 후보 생애를 보태지 않는다."
+    },
+    {
+      "candidateId": "shibusawa-eiichi",
+      "before": 21,
+      "after": 21,
+      "weakEvidenceRows": 14,
+      "reason": "공동 저울·실재고·입찰·운송 공개 조건이라는 거래 제도의 형성이다. 정치 정당성·문화 후원 후보의 추상적 조직 운영으로 옮기지 않는다."
+    },
+    {
+      "candidateId": "fei-yi",
+      "before": 21,
+      "after": 21,
+      "weakEvidenceRows": 14,
+      "reason": "출고·배급·교섭·시민창구에서 서로 다른 당사자의 조건을 조정한다. 친족 국가 중개와 전쟁 연합의 미사용 후보는 확인되지 않은 관계를 요구한다."
+    }
+  ],
+  "judgmentBoundary": {
+    "independentRangeReview": "네 읽기 전용 구간 K001-K250, K251-K500, K501-K750, K751-K1022에서 1,022명 전부를 검토했다. 각 검토자는 후보의 대표 생애까지 요구하는 엄격한 교체 기준에서 변경 0건을 권고했다. 최종 편집자는 아래 명시한 제한적 행동·관계 비교 기준으로 세 교체를 결정했다.",
+    "finalEditorialDecision": "최종 편집자는 계약의 제한적 비교 원칙에 따라 생애 전체의 재현을 요구하지 않고 원문 행동·관계에 동등하거나 더 직접적인 비교인지 판단했다. K102는 실제 공동통치안 지지와 가문 원장과의 경쟁, K145는 심사 정지와 청구 고의 지연을 통한 권한 집중, K377은 내부 선거 기록 유지와 공동교섭을 근거로 세 교체를 채택했다.",
+    "notConsensusApproval": true,
+    "reasonForNotRequiringWholeBiography": "기존 배정도 해당 역사 인물의 전투·왕권·학문·선교 생애 전체가 아니라 제한적 행동 구조를 비교한다. 미사용 후보에만 생애 전체의 재현을 요구하면 동등 비교 가능성을 부당하게 닫는다. 다만 직함뿐인 공통점이나 반복 일화만 있는 행에는 이 기준을 적용해 임의 분산하지 않았다."
+  },
+  "originalEvidence": {
+    "assignmentLedgerSha256": "a65cb56462ef9f93bb6748b69d396505a70ff174eecc4c87565549113aa8bc82",
+    "verifiedQuotes": 4251,
+    "verification": "인물 문서는 실제 anchor의 한국어 문장, 후보 경력은 candidates/<id>/careerSummary에서 exact substring을 확인했다. 기준선 불일치 0건.",
+    "concurrentSourceEdits": "부모 작업이 이 검토 이후 공개 인물 원천의 문장을 수정하고 있다. 배정의 원래 evidence는 삭제하거나 새 문구로 덮지 않았다. 아래 changedSourceNodes는 교체 판단 당시 한국어 원문을 보존한다. 현재 문구와의 차이는 원문 이력으로 취급하며 동시 수정의 승인을 의미하지 않는다.",
+    "changedSourceNodes": [
+      {
+        "personId": "K145",
+        "path": "lore/characters/Cast-State-06.json",
+        "anchor": "인물-강예준-p3",
+        "originalKoreanText": "관직. 품계 주사. 직함은 인준 심사관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 증인이 두 명 미만이면 인준을 보류한다.",
+        "quote": "관직. 품계 주사. 직함은 인준 심사관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 증인이 두 명 미만이면 인준을 보류한다."
+      },
+      {
+        "personId": "K145",
+        "path": "lore/characters/Cast-State-06.json",
+        "anchor": "인물-강예준-p4",
+        "originalKoreanText": "일화. 서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다.",
+        "quote": "일화. 서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다."
+      },
+      {
+        "personId": "K145",
+        "path": "lore/characters/Cast-State-06.json",
+        "anchor": "인물-강예준-p5",
+        "originalKoreanText": "관계. 윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다.",
+        "quote": "관계. 윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다."
+      },
+      {
+        "personId": "K145",
+        "path": "lore/characters/Cast-State-06.json",
+        "anchor": "인물-강예준-p6",
+        "originalKoreanText": "야망. 계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다.",
+        "quote": "야망. 계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다."
+      },
+      {
+        "personId": "K102",
+        "path": "lore/characters/Cast-State-04.json",
+        "anchor": "인물-제하율-p1",
+        "originalKoreanText": "마지막 조립 기록의 빈칸을 증오하고, 총관의 빈자리를 혈통으로 메우자는 말을 공방의 모욕으로 듣는다. 냉정하고 날짜를 대조한다.",
+        "quote": "마지막 조립 기록의 빈칸을 증오하고, 총관의 빈자리를 혈통으로 메우자는 말을 공방의 모욕으로 듣는다. 냉정하고 날짜를 대조한다."
+      },
+      {
+        "personId": "K102",
+        "path": "lore/characters/Cast-State-04.json",
+        "anchor": "인물-제하율-p3",
+        "originalKoreanText": "관직. 품계 교사. 직함은 공방 조립기록 실무관. 핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다.",
+        "quote": "관직. 품계 교사. 직함은 공방 조립기록 실무관. 핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+      },
+      {
+        "personId": "K102",
+        "path": "lore/characters/Cast-State-04.json",
+        "anchor": "인물-제하율-p4",
+        "originalKoreanText": "일화. 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 공방 조립기록 실무관 자리의 서명이 장부에 올랐다.",
+        "quote": "일화. 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 공방 조립기록 실무관 자리의 서명이 장부에 올랐다."
+      },
+      {
+        "personId": "K102",
+        "path": "lore/characters/Cast-State-04.json",
+        "anchor": "인물-제하율-p5",
+        "originalKoreanText": "관계. 정가온의 유언 원장을 조립 기록으로 교차검증하는 계약이고, 한소미의 공동통치안을 현장 숫자로 받치며, 박세린의 가문 원장과는 해석 경쟁이다.",
+        "quote": "관계. 정가온의 유언 원장을 조립 기록으로 교차검증하는 계약이고, 한소미의 공동통치안을 현장 숫자로 받치며, 박세린의 가문 원장과는 해석 경쟁이다."
+      },
+      {
+        "personId": "K102",
+        "path": "lore/characters/Cast-State-04.json",
+        "anchor": "인물-제하율-p6",
+        "originalKoreanText": "야망. 핵심 공정의 조립 기록을 평의회 금고와 현장 원장에 동시에 올려 양자도 가문도 아닌 공방의 동의만으로 총관을 세우게 한다.",
+        "quote": "야망. 핵심 공정의 조립 기록을 평의회 금고와 현장 원장에 동시에 올려 양자도 가문도 아닌 공방의 동의만으로 총관을 세우게 한다."
+      },
+      {
+        "personId": "K102",
+        "path": "lore/characters/Cast-State-04.json",
+        "anchor": "인물-제하율-p7",
+        "originalKoreanText": "공포. 세 장의 유언 중 가문 편이 진본으로 인준되어 조립 기록이 세습 직능의 하청 장부가 되는 것.",
+        "quote": "공포. 세 장의 유언 중 가문 편이 진본으로 인준되어 조립 기록이 세습 직능의 하청 장부가 되는 것."
+      },
+      {
+        "personId": "K377",
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-남시윤-p3",
+        "originalKoreanText": "관직. 품계 신부. 직함은 교구 사제단 선거 사무 신부. 사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다.",
+        "quote": "관직. 품계 신부. 직함은 교구 사제단 선거 사무 신부. 사제단의 대주교 비밀 투표에 참여하며 개표 기록과 교황 인준 부재에 대한 이의를 함께 보관한다."
+      },
+      {
+        "personId": "K377",
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-남시윤-p4",
+        "originalKoreanText": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 교구 사제단 선거 사무 신부의 기록에 당시의 증언을 남겼다.",
+        "quote": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 교구 사제단 선거 사무 신부의 기록에 당시의 증언을 남겼다."
+      },
+      {
+        "personId": "K377",
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-남시윤-p5",
+        "originalKoreanText": "관계. 남윤경과 품목 회의를 공유하고, 정유라의 공동교섭에 청과 조항을 넣으려 하며, 오해린의 수산 시세에 청과를 묶지 않으려 한다.",
+        "quote": "관계. 남윤경과 품목 회의를 공유하고, 정유라의 공동교섭에 청과 조항을 넣으려 하며, 오해린의 수산 시세에 청과를 묶지 않으려 한다."
+      },
+      {
+        "personId": "K377",
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-남시윤-p6",
+        "originalKoreanText": "야망. 사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다.",
+        "quote": "야망. 사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다."
+      },
+      {
+        "personId": "K377",
+        "path": "lore/characters/Cast-State-15.json",
+        "anchor": "인물-남시윤-p7",
+        "originalKoreanText": "공포. 비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+        "quote": "공포. 비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것."
+      }
+    ]
+  },
+  "baselineAssignments": [
+    {
+      "personId": "K145",
+      "name": "강예준",
+      "status": "narrative-assigned",
+      "souls": [
+        {
+          "id": "chen-qun",
+          "name": "진군",
+          "period": "chinese-three-kingdoms",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p3",
+          "quote": "관직. 품계 주사. 직함은 인준 심사관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 증인이 두 명 미만이면 인준을 보류한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p4",
+          "quote": "일화. 서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다."
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p5",
+          "quote": "관계. 윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다."
+        },
+        {
+          "path": "lore/characters/Cast-State-06.json",
+          "anchor": "인물-강예준-p6",
+          "quote": "야망. 계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다."
+        }
+      ],
+      "narrativeRationale": "세 유언장의 심사를 멈추고 필적 대조를 택한 선택과 계승 인준을 기록청 규칙 아래 고정하려는 야망을 인사·자격 제도 구축의 비교축으로 읽는다. 정유라의 청구를 고의로 늦추므로 중립 심사관으로 미화하지 않는다.",
+      "counterEvidence": "구품관인법이나 신분별 인사제를 채택했다는 뜻은 아니며 심사 권력 독점은 검증 원칙과 긴장한다.",
+      "evidenceStrength": "moderate-specific-choices-and-relationships",
+      "duplicateRationale": "이 묶음에서 단독 사용한다. 실제 선택과 관계의 비교축에 맞는 비잠금 후보를 택했다.",
+      "historicalComparison": {
+        "candidateLedger": "lore/editorial/Soul-Candidates.json",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Chen_Qun",
+            "sourceType": "tertiary-encyclopedia",
+            "accessMethod": "fetched",
+            "accessedOn": "2026-10-12"
+          }
+        ],
+        "careerSummary": "조위를 섬긴 관리로 구품관인법의 형성에 관여했다.",
+        "interpretationOnly": true,
+        "primarySourcesVerified": false,
+        "limitations": [
+          "조회한 백과·해설의 경력 개요를 기준으로 한 후보이며 1차 사료 원문과 독립 연구의 교차 검증은 완료하지 않았다.",
+          "후한 말에서 삼국 성립으로 이어지는 범위다. 연의·민간 신앙의 성격과 전투 묘사를 정사로 대체하지 않는다."
+        ]
+      }
+    },
+    {
+      "personId": "K102",
+      "name": "제하율",
+      "status": "narrative-assigned",
+      "souls": [
+        {
+          "id": "kido-takayoshi",
+          "name": "기도 다카요시",
+          "period": "meiji-restoration",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p1",
+          "quote": "마지막 조립 기록의 빈칸을 증오하고, 총관의 빈자리를 혈통으로 메우자는 말을 공방의 모욕으로 듣는다. 냉정하고 날짜를 대조한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p3",
+          "quote": "관직. 품계 교사. 직함은 공방 조립기록 실무관. 핵심 공정을 여러 공방에 나눈 기록을 남기고, 기술총관의 빈 도장은 대표 연서로만 대행한다고 원장에 쓴다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p4",
+          "quote": "일화. 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 공방 조립기록 실무관 자리의 서명이 장부에 올랐다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p5",
+          "quote": "관계. 정가온의 유언 원장을 조립 기록으로 교차검증하는 계약이고, 한소미의 공동통치안을 현장 숫자로 받치며, 박세린의 가문 원장과는 해석 경쟁이다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p6",
+          "quote": "야망. 핵심 공정의 조립 기록을 평의회 금고와 현장 원장에 동시에 올려 양자도 가문도 아닌 공방의 동의만으로 총관을 세우게 한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-04.json",
+          "anchor": "인물-제하율-p7",
+          "quote": "공포. 세 장의 유언 중 가문 편이 진본으로 인준되어 조립 기록이 세습 직능의 하청 장부가 되는 것."
+        }
+      ],
+      "narrativeRationale": "제하율의 위조 사본을 제거하고 공방 연서로 총관 권한을 정의하려는 정치 연합의 제도 설계를 비교한다. 관계와 야망·공포의 인용은 비교를 서울전국 인물의 선택에 묶기 위한 것이며 역사 인물의 성격을 사실로 단정하지 않는다.",
+      "historicalComparison": {
+        "path": "lore/editorial/Soul-Candidates.json",
+        "candidateId": "kido-takayoshi",
+        "careerSummary": "조슈의 정치 지도자로 유신과 초기 메이지 정부에 참여했다.",
+        "interpretiveScope": "편집 해석: 정치 연합과 제도 설계를 다루는 서사의 비교 후보이며, 경력·성격·능력을 자동 부여하지 않는다.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Kido_Takayoshi",
+            "sourceType": "tertiary-encyclopedia",
+            "accessMethod": "fetched",
+            "accessedOn": "2026-10-12"
+          }
+        ],
+        "limitations": [
+          "조회한 백과·해설의 경력 개요를 기준으로 한 후보이며 1차 사료 원문과 독립 연구의 교차 검증은 완료하지 않았다.",
+          "막부 말기와 유신 직후의 연속선으로 분류했다. 이후 경력을 유신 당시의 능력이나 경험으로 소급하지 않는다."
+        ]
+      },
+      "counterEvidence": [
+        "국가 정부의 헌법 설계는 아니다."
+      ],
+      "evidenceStrength": "moderate",
+      "duplicateRationale": "이 묶음에서 단독 사용한다. 다른 후보의 고유 경력보다 인용한 선택에 맞는 비교를 우선했다."
+    },
+    {
+      "personId": "K377",
+      "name": "남시윤",
+      "status": "narrative-assigned",
+      "souls": [
+        {
+          "id": "luis-frois",
+          "name": "루이스 프로이스",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p4",
+          "quote": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 교구 사제단 선거 사무 신부의 기록에 당시의 증언을 남겼다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p5",
+          "quote": "관계. 남윤경과 품목 회의를 공유하고, 정유라의 공동교섭에 청과 조항을 넣으려 하며, 오해린의 수산 시세에 청과를 묶지 않으려 한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p6",
+          "quote": "야망. 사제단 비밀 투표의 독립성을 지켜 교황 없는 대주교 선출을 둘러싼 이의에 개표 기록으로 답한다."
+        },
+        {
+          "path": "lore/characters/Cast-State-15.json",
+          "anchor": "인물-남시윤-p7",
+          "quote": "공포. 비밀 투표의 개표 기록이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것."
+        }
+      ],
+      "historicalSources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Luís_Fr%C3%B3is",
+          "sourceType": "tertiary-encyclopedia",
+          "accessMethod": "fetched",
+          "accessedOn": "2026-10-12"
+        }
+      ],
+      "narrativeRationale": "화재에서 인명 장부를 먼저 구조하고 증언을 남긴 선택을, 기록을 통한 종교 공동체 설명이라는 프로이스의 경력과 비교한다. 개표 기록으로 정당성 이의에 답하려는 야망이 연결된다.",
+      "counterEvidence": [
+        "프로이스는 선교 관찰자이며 내부 비밀 선거의 관리자였다는 근거는 없다. 청과 거래 관계와 낮은 원칙 성향도 순수 신앙 기록자로만 읽지 못하게 한다.",
+        "후보 원장은 백과 개요 조사본이며 1차 사료 교차검증이 끝나지 않았다. 역사 비교는 편집 해석이고 실존 인물의 성격 사실이 아니다.",
+        "가치 원장의 원칙 성향은 음수여서 이 절차 수호 행위를 불변 원칙주의로 일반화할 수 없다."
+      ],
+      "evidenceStrength": "moderate",
+      "duplicateRationale": "묶음 내 5명이 루이스 프로이스을 공유한다 (K396, K534, K726, K918). 이 인물의 근거는 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다 위 narrativeRationale의 행위 비교를 우선하며, 동일한 짧은 일화에 다른 역사 경력·성격을 발명해 중복만 줄이지 않는다. 각자의 관계·야망·공포 인용 범위 밖의 동일성을 주장하지 않는다."
+    }
+  ],
+  "lockedAssignmentSnapshot": [
+    {
+      "personId": "K998",
+      "name": "이일섭",
+      "souls": [
+        {
+          "id": "tokugawa-ieyasu",
+          "name": "도쿠가와 이에야스",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "approvalRef": "session:01a0e162-37d5-7c6d-a9bd-1832013901dd/message:620c9e2b",
+      "status": "owner-confirmed",
+      "assignmentSha256": "ef9405b709a676333eb10e7716e0ee4c30971289f9b45c4f53bf29d47c978b31"
+    },
+    {
+      "personId": "K1003",
+      "name": "조재표",
+      "souls": [
+        {
+          "id": "lu-bu",
+          "name": "여포",
+          "period": "chinese-three-kingdoms",
+          "sourceKind": "historical-person",
+          "interpretation": "높은 개인 전투력의 모티브. 역사 인물의 성격과 배신 행적을 자동 부여하지 않는다."
+        },
+        {
+          "id": "honda-tadakatsu",
+          "name": "혼다 타다카츠",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person",
+          "interpretation": "사용자가 지정한 높은 인격의 보완 모티브. 구체적 역사 해석은 사료 대조 전이다."
+        }
+      ],
+      "approvalRef": "session:01a0e162-37d5-7c6d-a9bd-1832013901dd/message:c9270e97;current-session:composite-souls-max-two",
+      "status": "owner-confirmed",
+      "assignmentSha256": "31156e73c9933f0df6d961eb0f7f0d53406a165496366d0126f9d22442413627"
+    },
+    {
+      "personId": "K1004",
+      "name": "이연",
+      "souls": [
+        {
+          "id": "zhao-yun",
+          "name": "조운",
+          "period": "chinese-three-kingdoms",
+          "sourceKind": "historical-person",
+          "interpretation": "호위·현장 판단·독립적인 원칙의 모티브. 사료 대조 전의 편집 해석이다."
+        },
+        {
+          "id": "diaochan",
+          "name": "초선",
+          "period": "chinese-three-kingdoms",
+          "sourceKind": "romance-character",
+          "interpretation": "아름다움의 모티브만 반영한다. 실존이나 계략·혼인 관계를 자동 부여하지 않는다."
+        }
+      ],
+      "approvalRef": "session:01a13087-20d0-74de-aa46-a7f95fc413c1/owner:조운+초선",
+      "status": "owner-confirmed",
+      "assignmentSha256": "fd4dd510d588ddd951c3f86a5d4e58c9706964f81abea65717d53616aca67520"
+    },
+    {
+      "personId": "K1007",
+      "name": "김연규",
+      "souls": [
+        {
+          "id": "oda-nobunaga",
+          "name": "오다 노부나가",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "approvalRef": "session:01a0e162-37d5-7c6d-a9bd-1832013901dd/message:620c9e2b",
+      "status": "owner-confirmed",
+      "assignmentSha256": "ea4fe134ca62a433af771da551800feed1e3023972629579a757086e413122b5"
+    },
+    {
+      "personId": "K1008",
+      "name": "민웅기",
+      "souls": [
+        {
+          "id": "toyotomi-hideyoshi",
+          "name": "도요토미 히데요시",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person"
+        }
+      ],
+      "approvalRef": "session:01a0e162-37d5-7c6d-a9bd-1832013901dd/message:620c9e2b",
+      "status": "owner-confirmed",
+      "assignmentSha256": "ebd12f99260db0b7cf39581e3b454bf33b3a5fcfae29fe6c1ac2a5f74ab46128"
+    },
+    {
+      "personId": "K1009",
+      "name": "신종목",
+      "souls": [
+        {
+          "id": "shibata-katsuie",
+          "name": "시바타 가쓰이에",
+          "period": "japanese-sengoku",
+          "sourceKind": "historical-person",
+          "interpretation": "전투·지휘 모티브와 기존 첩보·정보 경력을 구분한다. 역사 모티브에서 첩보 경력을 자동 생성하지 않는다."
+        }
+      ],
+      "approvalRef": "session:01a13087-20d0-74de-aa46-a7f95fc413c1/question:call_msbcekHNyA1oU7NjooKLco8x",
+      "status": "owner-confirmed",
+      "assignmentSha256": "bd3e202775cf17d7e8bcb7ab8379e09cf5ef920371117f774d1726c5788447df"
+    }
+  ],
+  "currentSourceComparison": {
+    "checkedOn": "2026-10-12",
+    "changedQuoteCount": 0,
+    "changes": [],
+    "meaning": "이 값은 검사 시점 관찰이며 부모 작업 이후 영구 일치를 보증하지 않는다. 원래 인용은 기준선에서 검증하고 보존했다."
+  },
+  "verification": {
+    "structuralAudit": {
+      "passed": true,
+      "identities": 1022,
+      "candidateSlots": 1024,
+      "immutableLocks": 6,
+      "untouchedAssignments": 1019,
+      "changedOriginalQuotes": 15,
+      "histogramMatches": true
+    },
+    "baselineAllEvidenceQuotes": {
+      "count": 4251,
+      "failures": 0
+    },
+    "weakEvidenceAssignmentsUnchanged": 562,
+    "approvalStatusUnchanged": true,
+    "assignmentDiagnostics": "No diagnostics found",
+    "assignmentDiffCheckExitCode": 0,
+    "completeValidator": {
+      "command": "node scripts/validate-soul-assignments.mjs --complete",
+      "exitCode": 0,
+      "output": "SOUL_ASSIGNMENTS_PASS: 1022/1022 people"
+    }
+  }
+}

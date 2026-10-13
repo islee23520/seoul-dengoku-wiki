@@ -392,6 +392,142 @@
     "id": "K371",
     "personId": "person-0372"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "authorization-date-comparison",
+        "name": {
+          "ko": "인준일 대조",
+          "en": "Authorization date comparison"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "소급 인준에 함을 잠근다",
+          "en": "Locks the chest against retroactive authorization"
+        },
+        "description": {
+          "ko": "다른 인준일을 발견해 함을 잠그고 당시 증인 서명으로 날짜를 가렸다. 문서 판단을 인준 권한의 확대와 구분한다.",
+          "en": "A conflicting date prompted locking the chest and checking contemporary witness signatures. Documentary judgment does not expand authorization powers."
+        },
+        "behavior": {
+          "ko": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 날짜를 고치는 손을 관문 위에서 용서하지 않는다.",
+          "en": "She remembered even the fold marks on charter copies and locked the box whenever someone proposed back-dating a late ratification. She never forgave, above the gate, a hand that changed a date."
+        },
+        "stress": {
+          "ko": "공포. 인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.",
+          "en": "Fear. That the ratification box would be painted over with a great power's protection clause and the gate charter would become a subcontract."
+        },
+        "relationship": {
+          "ko": "관계. 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.",
+          "en": "Relations. Kept the founding ratification box entrusted by Go Seojun and cross-checked Yun Seorin's Seoul Station ratification dates. Matched custody cycles with Sim Gaeun's joint-approval papers."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
+          "en": "Office. Rank: sergeant. Title: states gate ratification party. She wrote the banner ratification days on the ridge wall and accepted no after-the-fact countersignature unless the two witnesses of the day signed again."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: states gate ratification party. She wrote the banner ratification days on the ridge wall and accepted no after-the-fact countersignature unless the two witnesses of the day signed again."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the ratification box would be painted over with a great power's protection clause and the gate charter would become a subcontract."
+        },
+        "relationship": {
+          "ko": "관계. 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.",
+          "en": "Relations. Kept the founding ratification box entrusted by Go Seojun and cross-checked Yun Seorin's Seoul Station ratification dates. Matched custody cycles with Sim Gaeun's joint-approval papers."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "다른 인준일을 발견해 함을 잠그고 당시 증인 서명으로 날짜를 가렸다. 문서 판단을 인준 권한의 확대와 구분한다.",
+      "en": "A conflicting date prompted locking the chest and checking contemporary witness signatures. Documentary judgment does not expand authorization powers."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -741,7 +877,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 양군 각국 관문 인준 관계자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.",
     "일화": "고서준이 맡긴 건국 인준 함에서 한 깃발의 인준일이 윤서린의 서울역 날짜와 다르게 적혀 있다. 석주아는 함을 잠그고 능선 벽의 인준일 기록을 다시 읽으며, 심가은의 공동승인 문서를 꺼내 두 날짜 가운데 당시 증인의 서명과 맞는 쪽을 가린다.",
     "관계": "고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.",
@@ -749,7 +884,7 @@
     "공포": "인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.",
     "개입": "접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다."
   },
-  "biography": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 날짜를 고치는 손을 관문 위에서 용서하지 않는다.\n\n- 생업: 깃발 인준일 기록·사후 추인 증인 확인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 각국 관문 인준 관계자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 양군 각국 관문 인준 관계자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.\n\n**일화.** 고서준이 맡긴 건국 인준 함에서 한 깃발의 인준일이 윤서린의 서울역 날짜와 다르게 적혀 있다. 석주아는 함을 잠그고 능선 벽의 인준일 기록을 다시 읽으며, 심가은의 공동승인 문서를 꺼내 두 날짜 가운데 당시 증인의 서명과 맞는 쪽을 가린다.\n\n**관계.** 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.\n\n**야망.** 아관사 양군의 깃발 인준 원본을 구의 함에만 유효하게 남겨 명목 권위가 사후 날인으로 팔리지 않게 한다.\n\n**공포.** 인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.\n\n**개입.** 접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −20 | 무력 50 | 물질 20 | 공동 10 | 원칙 5 | 공개 −15 | 자격 −10 | 분산 −20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 35 | 위험 −20 | 과시 25 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "헌장 사본의 접힌 자국까지 기억하고, 늦게 온 인준을 소급하자고 하면 함을 잠근다. 날짜를 고치는 손을 관문 위에서 용서하지 않는다.\n\n- 생업: 깃발 인준일 기록·사후 추인 증인 확인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 각국 관문 인준 관계자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 양군 각국 관문 인준 관계자 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 공동실무원. 직함은 양군 각국 관문 인준 관계자. 깃발 인준일을 능선 벽에 적고, 사후 추인 청구는 당시 증인 두 명이 다시 서지 않으면 받지 않는다.\n\n**일화.** 고서준이 맡긴 건국 인준 함에서 한 깃발의 인준일이 윤서린의 서울역 날짜와 다르게 적혀 있다. 석주아는 함을 잠그고 능선 벽의 인준일 기록을 다시 읽으며, 심가은의 공동승인 문서를 꺼내 두 날짜 가운데 당시 증인의 서명과 맞는 쪽을 가린다.\n\n**관계.** 고서준이 맡긴 건국 인준 함을 지키고, 윤서린의 서울역 인준 날짜와 대조한다. 심가은의 공동승인 문서와 보관 주기를 맞춘다.\n\n**야망.** 아관사 양군의 깃발 인준 원본을 구의 함에만 유효하게 남겨 명목 권위가 사후 날인으로 팔리지 않게 한다.\n\n**공포.** 인준 함이 강국의 보호 문장으로 덧칠되어 관문 헌장이 하청 문서가 되는 것.\n\n**개입.** 접힌 목록을 공개해 빚을 드러내거나, 함이 덧칠되기 전에 원본을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −20 | 무력 50 | 물질 20 | 공동 10 | 원칙 5 | 공개 −15 | 자격 −10 | 분산 −20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 35 | 위험 −20 | 과시 25 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-14"
   ],

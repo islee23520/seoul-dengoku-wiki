@@ -394,6 +394,150 @@
     "id": "K794",
     "personId": "person-0794"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "rescue",
+        "name": {
+          "ko": "통로 개통·부상자 이송",
+          "en": "Passage clearance and casualty transfer"
+        },
+        "rating": 50
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "the-injured-first-on-snowbound-roads",
+        "name": {
+          "ko": "눈길 부상자 먼저",
+          "en": "The Injured First on Snowbound Roads"
+        },
+        "description": {
+          "ko": "황은아는 폭설로 이동이 막혔을 때 부상자의 이동을 우선한 사람이다.",
+          "en": "Hwang Euna prioritized moving injured people when heavy snow blocked passage."
+        },
+        "behavior": {
+          "ko": "막힌 환승 통로를 뚫고 부상자를 먼저 옮겼다.",
+          "en": "They cleared the blocked transfer passage and moved injured people first."
+        },
+        "stress": {
+          "ko": "통로 차단이 통행 중단으로 이어질 우려가 있으면 부상자의 이동 경로 확보를 서두를 수 있다.",
+          "en": "If a blocked passage threatens continued transit, they may press to secure a route for injured people."
+        },
+        "relationship": {
+          "ko": "이송 순서를 다른 당직과 조율해야 한다면 부상자 우선이라는 기준을 내세울 수 있다.",
+          "en": "When coordinating transport order with other duty staff, they may advocate prioritizing injured people."
+        },
+        "effects": []
+      },
+      {
+        "id": "verify-departure-grounds",
+        "name": {
+          "ko": "출발의 근거 확인",
+          "en": "Verify Departure Grounds"
+        },
+        "description": {
+          "ko": "황은아의 출발 근거 확인은 기록과 실제 통로 확보를 중시하는 제한적 성향으로 해석된다.",
+          "en": "Hwang Euna's concern for departure grounds is cautiously understood as valuing records and an actually cleared route."
+        },
+        "behavior": {
+          "ko": "폭설 때 통로를 먼저 확보한 행동과 장부를 믿는 원칙을 출발 판단의 근거로 연결한다.",
+          "en": "Their route-clearing action and preference for registers provide limited grounds for evidence-based departure decisions."
+        },
+        "stress": {
+          "ko": "통행 중단을 피해야 한다는 부담이 커지면 이동 경로와 기록의 근거를 더 확인하려 할 수 있다.",
+          "en": "Pressure to avoid interrupted passage may lead them to seek firmer grounds in route availability and records."
+        },
+        "relationship": {
+          "ko": "출발 판단을 인계 상대와 공유한다면 확보된 통로와 기록을 공통 근거로 삼을 수 있다.",
+          "en": "When sharing a departure decision with a handover partner, they may use the cleared route and records as common grounds."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "폭설 통로 개통과 부상자 이송을 수행했다. 이동 부담을 반영하며 의료 면허나 전투 경력은 만들지 않는다.",
+      "en": "She cleared a snowy passage and moved casualties. Physical transport is supported, not a medical license or combat history."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -755,7 +899,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -763,7 +906,7 @@
     "공포": "인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −30 | 물질 0 | 공동 −5 | 원칙 55 | 공개 45 | 자격 45 | 분산 15 | 변혁 0\n- 욕망: 갈망 30 | 독점 30 | 위험 40 | 과시 −25 | 지속 25 | 지향 유동 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 25 | 무력 −30 | 물질 0 | 공동 −5 | 원칙 55 | 공개 45 | 자격 45 | 분산 15 | 변혁 0\n- 욕망: 갈망 30 | 독점 30 | 위험 40 | 과시 −25 | 지속 25 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-03"
   ],

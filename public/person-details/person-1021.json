@@ -275,6 +275,118 @@
     "id": "K1021",
     "personId": "person-1021"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 13,
+        "effective": 13
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k1021-delegated-negotiation",
+        "name": {
+          "ko": "위임 교섭",
+          "en": "Delegated negotiation"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1021-trait-1",
+        "name": {
+          "ko": "집요하되 조정 가능",
+          "en": "Persistent yet adjustable"
+        },
+        "description": {
+          "ko": "조건을 끝까지 묻되 합의 가능한 요구는 조정한다.",
+          "en": "Questions terms persistently but adjusts demands within an agreement’s reach."
+        },
+        "behavior": {
+          "ko": "조건을 끝까지 묻되 합의 가능한 요구는 조정한다.",
+          "en": "Questions terms persistently but adjusts demands within an agreement’s reach."
+        },
+        "stress": {
+          "ko": "위기에서의 공포는 미정이며 확인된 조건 검토 범위만 반영한다.",
+          "en": "Her fear under crisis is unresolved; only established term review is reflected."
+        },
+        "relationship": {
+          "ko": "고예진을 인정하면서도 공개·책임 조건에는 이견을 유지한다.",
+          "en": "Respects Goh Yejin while keeping disagreements over disclosure and responsibility."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "상인들이 맡긴 범위 안에서 공통 계약 조건을 끝까지 묻고 합의 가능한 요구는 조정한다. 고예진의 능력을 인정하나 정보 공개와 책임 조건에서는 다툰다. 공적 감사권과 판결권은 없다.",
+      "en": "She questions common contract terms persistently within merchants’ delegation and adjusts demands where agreement is possible. She respects Goh Yejin’s ability but disputes disclosure and responsibility terms. She has no public audit or judicial authority."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S00",

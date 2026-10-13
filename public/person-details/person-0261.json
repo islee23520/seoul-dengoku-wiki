@@ -286,6 +286,142 @@
     "id": "K260",
     "personId": "person-0261"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "herb-drying",
+        "name": {
+          "ko": "약초 건조·봉인 검사",
+          "en": "Herb drying and seal inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "herb-drying-disposition",
+        "name": {
+          "ko": "습기와 봉인 경계",
+          "en": "Wary of moisture and seals"
+        },
+        "description": {
+          "ko": "덜 마른 뿌리를 숨기는 손을 제지하고 무봉인 상자를 격리한다.",
+          "en": "Checks concealed damp roots and isolates unsealed boxes."
+        },
+        "behavior": {
+          "ko": "덜 마른 뿌리를 숨기는 손을 제지하고 무봉인 상자를 격리한다.",
+          "en": "Checks concealed damp roots and isolates unsealed boxes."
+        },
+        "stress": {
+          "ko": "가짜 봉인이 아이 투약 명부를 오염시킬 것을 두려워한다.",
+          "en": "Fears false seals contaminating children’s medication records."
+        },
+        "relationship": {
+          "ko": "봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.",
+          "en": "Matches Bonggam’s medication roster to dry batches and supports Hwang Serin’s ration scale and Ryu Eunbi’s verification."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "부족분 나눔",
+          "en": "Shares shortage"
+        },
+        "description": {
+          "ko": "약재 부족에 처방량을 반으로 나눠 모두에게 배분했다.",
+          "en": "Halved doses to share scarce medicine among everyone."
+        },
+        "behavior": {
+          "ko": "약재 부족에 처방량을 반으로 나눠 모두에게 배분했다.",
+          "en": "Halved doses to share scarce medicine among everyone."
+        },
+        "stress": {
+          "ko": "가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.",
+          "en": "Fears false seals contaminating children’s medication records."
+        },
+        "relationship": {
+          "ko": "봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.",
+          "en": "Matches Bonggam’s medication roster to dry batches and supports Hwang Serin’s ration scale and Ryu Eunbi’s verification."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "건조 중량과 봉인을 매일 확인하고 부족한 약재를 나누었다. 약초 취급은 확인되나 치료 전반의 권능은 부여하지 않는다.",
+      "en": "Checks dry weights and seals daily and shared scarce medicine; herb handling does not establish broad medical powers."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -825,7 +961,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약초 건조장 수좌 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수좌. 직함은 약초 건조장 수좌. 건조 중량을 매일 벽에 적고, 봉인 없는 상자는 격리 칸으로 옮긴다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 약초 건조장 수좌 자리의 서명이 장부에 올랐다.",
     "관계": "봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.",
@@ -833,7 +968,7 @@
     "공포": "가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.",
     "개입": "로트를 격리하거나, 건조장 열쇠를 장경 필사 당직과 나눠 쥐게 할 수 있다."
   },
-  "biography": "습기를 사람 열보다 예민하게 읽고, 말리지 않은 뿌리를 상자 깊숙이 숨기는 손을 가혹하게 다룬다. 약 냄새와 가짜 봉인을 같은 코로 가른다.\n\n- 생업: 약초 건조 중량·봉인 검사\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 약초 건조장 수좌\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약초 건조장 수좌 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수좌. 직함은 약초 건조장 수좌. 건조 중량을 매일 벽에 적고, 봉인 없는 상자는 격리 칸으로 옮긴다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 약초 건조장 수좌 자리의 서명이 장부에 올랐다.\n\n**관계.** 봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.\n\n**야망.** 산악 약초 건조를 총림 공개 재고로 묶어 강국 구호 상자가 건조장 열쇠를 삼지 못하게 한다.\n\n**공포.** 가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.\n\n**개입.** 로트를 격리하거나, 건조장 열쇠를 장경 필사 당직과 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 50 | 무력 −35 | 물질 −30 | 공동 75 | 원칙 35 | 공개 40 | 자격 35 | 분산 50 | 변혁 0\n- 욕망: 갈망 15 | 독점 5 | 위험 35 | 과시 20 | 지속 20 | 지향 양성 | 결합 없음\n:::",
+  "biography": "습기를 사람 열보다 예민하게 읽고, 말리지 않은 뿌리를 상자 깊숙이 숨기는 손을 가혹하게 다룬다. 약 냄새와 가짜 봉인을 같은 코로 가른다.\n\n- 생업: 약초 건조 중량·봉인 검사\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 약초 건조장 수좌\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약초 건조장 수좌 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수좌. 직함은 약초 건조장 수좌. 건조 중량을 매일 벽에 적고, 봉인 없는 상자는 격리 칸으로 옮긴다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 약초 건조장 수좌 자리의 서명이 장부에 올랐다.\n\n**관계.** 봉감의 투약 명부와 건조 로트를 맞추고, 황세린의 배급 저울에 약초 몫을 올린다. 류은비의 약효 검증을 건조 표본으로 돕는다.\n\n**야망.** 산악 약초 건조를 총림 공개 재고로 묶어 강국 구호 상자가 건조장 열쇠를 삼지 못하게 한다.\n\n**공포.** 가짜 봉인 상자가 건조 선반에 섞여 아이 투약 명부가 오염되는 것.\n\n**개입.** 로트를 격리하거나, 건조장 열쇠를 장경 필사 당직과 나눠 쥐게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 50 | 무력 −35 | 물질 −30 | 공동 75 | 원칙 35 | 공개 40 | 자격 35 | 분산 50 | 변혁 0\n- 욕망: 갈망 15 | 독점 5 | 위험 35 | 과시 20 | 지속 20 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-10"
   ],

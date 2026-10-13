@@ -392,6 +392,150 @@
     "id": "K218",
     "personId": "person-0219"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "agreement-witness-review",
+        "name": {
+          "ko": "협약 증언 대조",
+          "en": "Agreement witness review"
+        },
+        "rating": 65
+      },
+      {
+        "id": "historical-weight-records",
+        "name": {
+          "ko": "당시 중량 기록",
+          "en": "Contemporaneous weight records"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k218-disposition",
+        "name": {
+          "ko": "영구권리 해석 경계",
+          "en": "Caution about permanent-right readings"
+        },
+        "description": {
+          "ko": "물과 부품이 서로 다른 권역에 흩어지던 첫해를 저울처럼 기억하고, 임시 협약을 영원한 권리라고 부르는 젊은 상인을 고쳐 준다. 말수는 적고 날짜는 정확하다.",
+          "en": "He remembered the first year, when water and parts lay scattered across different domains, like a scale, and corrected young merchants who called the interim accord an eternal right. Few of words, exact with dates."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 첫 급수협약 시장 증인. 협약 당시 교환 품목과 무게를 벽에 다시 쓰고, 후일 해석은 당시 증인 두 명의 재서명만 받는다.",
+          "en": "Office. Rank: lay instructor. Title: first Water Compact market witness. He rewrote the accord's exchanged items and weights on the wall and accepted later readings only with the two witnesses of the day signing again."
+        },
+        "stress": {
+          "ko": "공포. 자신의 기억이 수문동맹의 선전 문구로 잘려 시장이 보호국의 창구가 되는 것.",
+          "en": "Fear. That his memory would be clipped into the sluice alliance's propaganda phrasing and the market would become a protection state's window."
+        },
+        "relationship": {
+          "ko": "관계. 오해린의 중립시장 정통성에 첫해 증언을 보태고, 한재목의 물 교환을 시세로 기억하며, 임하준이 건넨 펌프 부품 상자의 무게를 아직도 손에 남긴다.",
+          "en": "Relations. Added first-year testimony to O Haerin's neutral-market legitimacy, remembered Han Jaemok's water exchange by its price, and still carried in his hand the weight of the pump-parts box Im Hajun had passed."
+        },
+        "effects": []
+      },
+      {
+        "id": "k218-choice",
+        "name": {
+          "ko": "기억을 재서명으로",
+          "en": "Memory through renewed signatures"
+        },
+        "description": {
+          "ko": "일화. 젊은 상인 하나가 첫 급수협약을 영원한 권리라고 적은 해석문을 노량진 원장에 올리려 한다. 어도윤은 협약 당시의 교환 품목과 무게를 벽에 다시 쓰고, 임하준이 건넨 펌프 부품 상자의 무게를 기준으로 당시 증인 두 명에게 재서명을 청한다.",
+          "en": "Anecdote. A young trader tries to enter into the Noryangjin ledger an interpretation calling the first water accord a permanent right. Eo Doyun rewrites on the wall the goods and weights exchanged at the time of the accord and, taking the weight of the pump-parts crate Im Hajun handed over as the reference, asks the two witnesses of that time to sign again."
+        },
+        "behavior": {
+          "ko": "관계. 오해린의 중립시장 정통성에 첫해 증언을 보태고, 한재목의 물 교환을 시세로 기억하며, 임하준이 건넨 펌프 부품 상자의 무게를 아직도 손에 남긴다.",
+          "en": "Relations. Added first-year testimony to O Haerin's neutral-market legitimacy, remembered Han Jaemok's water exchange by its price, and still carried in his hand the weight of the pump-parts box Im Hajun had passed."
+        },
+        "stress": {
+          "ko": "공포. 자신의 기억이 수문동맹의 선전 문구로 잘려 시장이 보호국의 창구가 되는 것.",
+          "en": "Fear. That his memory would be clipped into the sluice alliance's propaganda phrasing and the market would become a protection state's window."
+        },
+        "relationship": {
+          "ko": "관계. 오해린의 중립시장 정통성에 첫해 증언을 보태고, 한재목의 물 교환을 시세로 기억하며, 임하준이 건넨 펌프 부품 상자의 무게를 아직도 손에 남긴다.",
+          "en": "Relations. Added first-year testimony to O Haerin's neutral-market legitimacy, remembered Han Jaemok's water exchange by its price, and still carried in his hand the weight of the pump-parts box Im Hajun had passed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "교환 품목·무게를 다시 쓰고 두 증인의 재서명을 청한다. 정확한 날짜와 조건의 기억을 쓰지만 협약의 영구 효력을 확정하지 않는다.",
+      "en": "Rewrites exchanged items and weight and seeks two witnesses’ renewed signatures. Uses remembered dates and terms without declaring permanent agreement validity."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -773,7 +917,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 첫 급수협약 시장 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 교도. 직함은 첫 급수협약 시장 증인. 협약 당시 교환 품목과 무게를 벽에 다시 쓰고, 후일 해석은 당시 증인 두 명의 재서명만 받는다.",
     "일화": "젊은 상인 하나가 첫 급수협약을 영원한 권리라고 적은 해석문을 노량진 원장에 올리려 한다. 어도윤은 협약 당시의 교환 품목과 무게를 벽에 다시 쓰고, 임하준이 건넨 펌프 부품 상자의 무게를 기준으로 당시 증인 두 명에게 재서명을 청한다.",
     "관계": "오해린의 중립시장 정통성에 첫해 증언을 보태고, 한재목의 물 교환을 시세로 기억하며, 임하준이 건넨 펌프 부품 상자의 무게를 아직도 손에 남긴다.",
@@ -781,7 +924,7 @@
     "공포": "자신의 기억이 수문동맹의 선전 문구로 잘려 시장이 보호국의 창구가 되는 것.",
     "개입": "잘린 기억 문구를 되찾거나, 공공권리 해석의 증인을 호송할 수 있다."
   },
-  "biography": "물과 부품이 서로 다른 권역에 흩어지던 첫해를 저울처럼 기억하고, 임시 협약을 영원한 권리라고 부르는 젊은 상인을 고쳐 준다. 말수는 적고 날짜는 정확하다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 급수협약 교환 품목·무게 증언\n- 직함: 첫 급수협약 시장 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 첫 급수협약 시장 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 교도. 직함은 첫 급수협약 시장 증인. 협약 당시 교환 품목과 무게를 벽에 다시 쓰고, 후일 해석은 당시 증인 두 명의 재서명만 받는다.\n\n**일화.** 젊은 상인 하나가 첫 급수협약을 영원한 권리라고 적은 해석문을 노량진 원장에 올리려 한다. 어도윤은 협약 당시의 교환 품목과 무게를 벽에 다시 쓰고, 임하준이 건넨 펌프 부품 상자의 무게를 기준으로 당시 증인 두 명에게 재서명을 청한다.\n\n**관계.** 오해린의 중립시장 정통성에 첫해 증언을 보태고, 한재목의 물 교환을 시세로 기억하며, 임하준이 건넨 펌프 부품 상자의 무게를 아직도 손에 남긴다.\n\n**야망.** 첫 급수협약을 공공권리로 본 증언을 노량진 원장에 남겨 보호계약으로만 읽는 손이 시세를 독점하지 못하게 한다.\n\n**공포.** 자신의 기억이 수문동맹의 선전 문구로 잘려 시장이 보호국의 창구가 되는 것.\n\n**개입.** 잘린 기억 문구를 되찾거나, 공공권리 해석의 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −15 | 물질 50 | 공동 −25 | 원칙 −25 | 공개 30 | 자격 0 | 분산 15 | 변혁 20\n- 욕망: 갈망 −5 | 독점 35 | 위험 −15 | 과시 −30 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "물과 부품이 서로 다른 권역에 흩어지던 첫해를 저울처럼 기억하고, 임시 협약을 영원한 권리라고 부르는 젊은 상인을 고쳐 준다. 말수는 적고 날짜는 정확하다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 급수협약 교환 품목·무게 증언\n- 직함: 첫 급수협약 시장 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 첫 급수협약 시장 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 교도. 직함은 첫 급수협약 시장 증인. 협약 당시 교환 품목과 무게를 벽에 다시 쓰고, 후일 해석은 당시 증인 두 명의 재서명만 받는다.\n\n**일화.** 젊은 상인 하나가 첫 급수협약을 영원한 권리라고 적은 해석문을 노량진 원장에 올리려 한다. 어도윤은 협약 당시의 교환 품목과 무게를 벽에 다시 쓰고, 임하준이 건넨 펌프 부품 상자의 무게를 기준으로 당시 증인 두 명에게 재서명을 청한다.\n\n**관계.** 오해린의 중립시장 정통성에 첫해 증언을 보태고, 한재목의 물 교환을 시세로 기억하며, 임하준이 건넨 펌프 부품 상자의 무게를 아직도 손에 남긴다.\n\n**야망.** 첫 급수협약을 공공권리로 본 증언을 노량진 원장에 남겨 보호계약으로만 읽는 손이 시세를 독점하지 못하게 한다.\n\n**공포.** 자신의 기억이 수문동맹의 선전 문구로 잘려 시장이 보호국의 창구가 되는 것.\n\n**개입.** 잘린 기억 문구를 되찾거나, 공공권리 해석의 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −15 | 물질 50 | 공동 −25 | 원칙 −25 | 공개 30 | 자격 0 | 분산 15 | 변혁 20\n- 욕망: 갈망 −5 | 독점 35 | 위험 −15 | 과시 −30 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-08"
   ],

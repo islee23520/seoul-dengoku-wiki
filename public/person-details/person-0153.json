@@ -286,6 +286,150 @@
     "id": "K152",
     "personId": "person-0153"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k152-bed-allocation",
+        "name": {
+          "ko": "침상 배정",
+          "en": "Bed allocation"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k152-medicine-allocation",
+        "name": {
+          "ko": "약재 배분",
+          "en": "Medicine allocation"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k152-choice",
+        "name": {
+          "ko": "중증 앞의 유연함",
+          "en": "Flexibility for severe cases"
+        },
+        "description": {
+          "ko": "이름 없는 시신의 손목 표보다 호흡을 먼저 확인하고, 무기와 환자를 한 열차에 태우라는 쪽지를 찢는다. 원칙적이지만 중증 앞에서는 절차를 접는다.",
+          "en": "She checked breath before the wrist tag of a nameless body and tore up any note telling her to load weapons and patients onto one train. Principled, she folded procedure before severity."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, short of herbs, she halved the prescriptions and divided them among everyone. By this deed the signature of the Seoul Station infirmary medic post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the transfer lists would merge with military registries and the refugees would remain as troop numbers alone. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
+          "en": "Relations. Under command to execute Yun Jiyul's transfer ledger at the sickbed, she owed Ryu Eunbi bundles of medicine and left Baek On's family transfer in the priority sickbeds."
+        },
+        "effects": []
+      },
+      {
+        "id": "k152-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.",
+          "en": "Office. Rank: registrar. Title: Seoul Station infirmary medic. She published severity-order sickbeds and took patients with service contracts attached separately from the administrative roster."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.",
+          "en": "Office. Rank: registrar. Title: Seoul Station infirmary medic. She published severity-order sickbeds and took patients with service contracts attached separately from the administrative roster."
+        },
+        "stress": {
+          "ko": "공포. 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the transfer lists would merge with military registries and the refugees would remain as troop numbers alone. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
+          "en": "Relations. Under command to execute Yun Jiyul's transfer ledger at the sickbed, she owed Ryu Eunbi bundles of medicine and left Baek On's family transfer in the priority sickbeds."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "호흡을 먼저 확인하고 부족한 약재를 나눴다. 치료 접근을 지키는 선택이며 처방량 감소의 치료 성공은 미확인이다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Checks breathing first and shared scarce medicine. This protects access to care; treatment success after reduced doses is unconfirmed. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -800,7 +944,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.",
     "관계": "윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
@@ -808,7 +951,7 @@
     "공포": "이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.",
     "개입": "환자만 태운 열차를 호송하거나, 군사호적이 섞인 침상 명단을 분리해 줄 수 있다."
   },
-  "biography": "이름 없는 시신의 손목 표보다 호흡을 먼저 확인하고, 무기와 환자를 한 열차에 태우라는 쪽지를 찢는다. 원칙적이지만 중증 앞에서는 절차를 접는다.\n\n- 생업: 의무실 침상 배정·약재 배분\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 서울역 의무실 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.\n\n**야망.** 중앙 재난의료 조정망의 현장 진료를 기록청 인준 아래 두어 구급 열차가 군수로 돌지 못하게 한다.\n\n**공포.** 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.\n\n**개입.** 환자만 태운 열차를 호송하거나, 군사호적이 섞인 침상 명단을 분리해 줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −50 | 물질 −20 | 공동 0 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 50 | 독점 5 | 위험 25 | 과시 −5 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "이름 없는 시신의 손목 표보다 호흡을 먼저 확인하고, 무기와 환자를 한 열차에 태우라는 쪽지를 찢는다. 원칙적이지만 중증 앞에서는 절차를 접는다.\n\n- 생업: 의무실 침상 배정·약재 배분\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 서울역 의무실 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.\n\n**야망.** 중앙 재난의료 조정망의 현장 진료를 기록청 인준 아래 두어 구급 열차가 군수로 돌지 못하게 한다.\n\n**공포.** 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.\n\n**개입.** 환자만 태운 열차를 호송하거나, 군사호적이 섞인 침상 명단을 분리해 줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −50 | 물질 −20 | 공동 0 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 50 | 독점 5 | 위험 25 | 과시 −5 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-06"
   ],

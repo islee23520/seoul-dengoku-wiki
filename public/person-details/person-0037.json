@@ -393,6 +393,150 @@
     "id": "K037",
     "personId": "person-0037"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k037-food-loss-allocation",
+        "name": {
+          "ko": "손실 식량 배분",
+          "en": "At-risk food allocation"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k037-well-ration-posting",
+        "name": {
+          "ko": "우물·배급 게시",
+          "en": "Well and ration posting"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k037-full-pots-first",
+        "name": {
+          "ko": "출고보다 솥",
+          "en": "Pots before dispatch"
+        },
+        "description": {
+          "ko": "부품 출고를 자랑하는 날에도 솥과 저수조를 먼저 본다.",
+          "en": "Checks pots and reservoirs even on celebrated dispatch days."
+        },
+        "behavior": {
+          "ko": "부품 출고를 자랑하는 날에도 솥과 저수조를 먼저 본다.",
+          "en": "Checks pots and reservoirs even on celebrated dispatch days."
+        },
+        "stress": {
+          "ko": "한 계절의 흉작과 단수가 겹쳐 작업반이 군량 징발로 민가를 훑는 것.",
+          "en": "That one season's famine overlapped with a cutoff, and work squads would sweep civilian homes as ration requisitioners."
+        },
+        "relationship": {
+          "ko": "한재목의 서부 급수계약에 시민 최저선을 요구하는 빚을 졌고, 백온의 남하 행렬을 수용 동맹으로 맞으며, 박소언의 건물 저수조 봉인을 함께 감시한다.",
+          "en": "Owing a debt for demanding the citizens' minimum line in Han Jaemok's western water contract, meeting Baek On's southward column as an intake ally, and watching Park Soeon's building reservoir seals together."
+        },
+        "effects": []
+      },
+      {
+        "id": "k037-inclusive-convoy",
+        "name": {
+          "ko": "함께 타는 행렬",
+          "en": "Inclusive convoy"
+        },
+        "description": {
+          "ko": "조달 행렬에 조합 가족과 난민 명부를 함께 싣는다.",
+          "en": "Includes cooperative families and refugee records in supply convoys."
+        },
+        "behavior": {
+          "ko": "조달 행렬에 조합 가족과 난민 명부를 함께 싣는다.",
+          "en": "Includes cooperative families and refugee records in supply convoys."
+        },
+        "stress": {
+          "ko": "한 계절의 흉작과 단수가 겹쳐 작업반이 군량 징발로 민가를 훑는 것.",
+          "en": "That one season's famine overlapped with a cutoff, and work squads would sweep civilian homes as ration requisitioners."
+        },
+        "relationship": {
+          "ko": "한재목의 서부 급수계약에 시민 최저선을 요구하는 빚을 졌고, 백온의 남하 행렬을 수용 동맹으로 맞으며, 박소언의 건물 저수조 봉인을 함께 감시한다.",
+          "en": "Owing a debt for demanding the citizens' minimum line in Han Jaemok's western water contract, meeting Baek On's southward column as an intake ally, and watching Park Soeon's building reservoir seals together."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "부패하는 곡물의 배분과 수위·솥 공개가 운영 근거다. 수리 수출을 장기 공급과 묶는 제도는 아직 야망이다.",
+      "en": "Distributing spoiling grain and publishing pot and water levels support management. Linking repair exports to long-term supplies remains an ambition."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -885,7 +1029,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 금천 원수식량 시민대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 이사. 직함은 금천 원수식량 시민대표. 배급 솥과 우물 수위를 매일 공개하고, 외곽 조달 행렬에는 조합원 가족과 난민 명부를 함께 태운다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 금천 원수식량 시민대표 자리의 서명이 장부에 올랐다.",
     "관계": "한재목의 서부 급수계약에 시민 최저선을 요구하는 빚을 졌고, 백온의 남하 행렬을 수용 동맹으로 맞으며, 박소언의 건물 저수조 봉인을 함께 감시한다.",
@@ -893,7 +1036,7 @@
     "공포": "한 계절의 흉작과 단수가 겹쳐 작업반이 군량 징발로 민가를 훑는 것.",
     "개입": "조달 행렬을 호송해 솥을 채우거나, 군량 징발 밀지를 찾아 시민대표의 중지안을 통과시킬 수 있다."
   },
-  "biography": "자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다. 부품 출고를 자랑하는 날에도 저수조와 배급 솥을 먼저 확인한다.\n\n- 소속: 규격맹\n- 생업: 배급 당직\n- 품계: 이사\n- 직함: 금천 원수식량 시민대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 금천 원수식량 시민대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 이사. 직함은 금천 원수식량 시민대표. 배급 솥과 우물 수위를 매일 공개하고, 외곽 조달 행렬에는 조합원 가족과 난민 명부를 함께 태운다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 금천 원수식량 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 서부 급수계약에 시민 최저선을 요구하는 빚을 졌고, 백온의 남하 행렬을 수용 동맹으로 맞으며, 박소언의 건물 저수조 봉인을 함께 감시한다.\n\n**야망.** 규격맹의 수리 수출을 원수·식량 장기 계약과 강제로 묶어, 자체 생산이 없는 약점을 평의회 의결로 메운다.\n\n**공포.** 한 계절의 흉작과 단수가 겹쳐 작업반이 군량 징발로 민가를 훑는 것.\n\n**개입.** 조달 행렬을 호송해 솥을 채우거나, 군량 징발 밀지를 찾아 시민대표의 중지안을 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 5 | 무력 −15 | 물질 50 | 공동 35 | 원칙 10 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 45 | 독점 −10 | 위험 −10 | 과시 5 | 지속 5 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다. 부품 출고를 자랑하는 날에도 저수조와 배급 솥을 먼저 확인한다.\n\n- 소속: 규격맹\n- 생업: 배급 당직\n- 품계: 이사\n- 직함: 금천 원수식량 시민대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 금천 원수식량 시민대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 이사. 직함은 금천 원수식량 시민대표. 배급 솥과 우물 수위를 매일 공개하고, 외곽 조달 행렬에는 조합원 가족과 난민 명부를 함께 태운다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 금천 원수식량 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 서부 급수계약에 시민 최저선을 요구하는 빚을 졌고, 백온의 남하 행렬을 수용 동맹으로 맞으며, 박소언의 건물 저수조 봉인을 함께 감시한다.\n\n**야망.** 규격맹의 수리 수출을 원수·식량 장기 계약과 강제로 묶어, 자체 생산이 없는 약점을 평의회 의결로 메운다.\n\n**공포.** 한 계절의 흉작과 단수가 겹쳐 작업반이 군량 징발로 민가를 훑는 것.\n\n**개입.** 조달 행렬을 호송해 솥을 채우거나, 군량 징발 밀지를 찾아 시민대표의 중지안을 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 5 | 무력 −15 | 물질 50 | 공동 35 | 원칙 10 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 45 | 독점 −10 | 위험 −10 | 과시 5 | 지속 5 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-02"
   ],

@@ -409,6 +409,150 @@
     "id": "K507",
     "personId": "person-0507"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "pump",
+        "name": {
+          "ko": "펌프 분해·축 교체",
+          "en": "Pump disassembly and shaft replacement"
+        },
+        "rating": 55
+      },
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "replace-only-worn-axles",
+        "name": {
+          "ko": "마모 축만 교체",
+          "en": "Replace Only Worn Axles"
+        },
+        "description": {
+          "ko": "정바준은 확인된 마모 부위에 수리를 한정하는 실용적 성향을 보인다.",
+          "en": "Jeong Bajun shows a practical preference for repairing only the confirmed worn component."
+        },
+        "behavior": {
+          "ko": "멈춘 펌프를 분해해 마모 축 하나만 교체하고 다시 가동했다.",
+          "en": "He dismantled the stopped pump, replaced one worn axle, and restarted it."
+        },
+        "stress": {
+          "ko": "당직 공백으로 통행이 강국에 종속될 우려가 커지면 필요한 수리에 집중하려 할 수 있다.",
+          "en": "If a duty gap threatens to leave passage subject to a powerful state, he may focus on the necessary repair."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때는 교체한 축처럼 확인된 작업 내용을 중심으로 설명할 수 있다.",
+          "en": "When handing over to the senior duty holder, he may focus on verified work such as the replaced axle."
+        },
+        "effects": []
+      },
+      {
+        "id": "duty-continuity-through-maintenance",
+        "name": {
+          "ko": "정비로 당직 연결",
+          "en": "Duty Continuity Through Maintenance"
+        },
+        "description": {
+          "ko": "정바준은 구체적 정비를 당직과 장부의 연속성을 지키는 수단으로 여긴다.",
+          "en": "Jeong Bajun treats concrete maintenance as a means of sustaining duty and ledger continuity."
+        },
+        "behavior": {
+          "ko": "펌프를 재가동하는 수리로 중단을 해소하고 자기 직위의 열쇠와 기록을 넘긴다.",
+          "en": "He resolves an interruption by restarting the pump and passes on the keys and records belonging to his post."
+        },
+        "stress": {
+          "ko": "당직이 비어 통행이 강국의 볼모가 될 가능성을 느끼면 정비와 인계의 연결을 더 중시할 수 있다.",
+          "en": "If vacant duty could make passage hostage to a powerful state, he may place greater weight on connecting repairs with handover."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 수리 결과와 직위 기록을 이어 주는 인계를 통해 협력하려 할 수 있다.",
+          "en": "He may cooperate with the senior duty holder through handovers linking repair results to post records."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정지 펌프를 분해해 마모 축 하나를 갈았다. 구체적 정비 수행만 평가하며 제조·발명 전체 능력은 없다.",
+      "en": "He disassembled a stopped pump and replaced one worn shaft. Specific repair is supported, not comprehensive manufacture or invention."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -913,7 +1057,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -921,7 +1064,7 @@
     "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 0 | 무력 −30 | 물질 40 | 공동 40 | 원칙 −10 | 공개 −25 | 자격 25 | 분산 25 | 변혁 0\n- 욕망: 갈망 5 | 독점 40 | 위험 40 | 과시 10 | 지속 10 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 0 | 무력 −30 | 물질 40 | 공동 40 | 원칙 −10 | 공개 −25 | 자격 25 | 분산 25 | 변혁 0\n- 욕망: 갈망 5 | 독점 40 | 위험 40 | 과시 10 | 지속 10 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

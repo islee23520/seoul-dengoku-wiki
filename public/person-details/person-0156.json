@@ -289,6 +289,150 @@
     "id": "K155",
     "personId": "person-0156"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 11,
+        "effective": 11
+      }
+    },
+    "skills": [
+      {
+        "id": "k155-water-sampling",
+        "name": {
+          "ko": "배관 채수",
+          "en": "Pipe water sampling"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k155-bypass-opening",
+        "name": {
+          "ko": "우회 급수 개통",
+          "en": "Water bypass opening"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k155-choice",
+        "name": {
+          "ko": "실선의 책임",
+          "en": "Responsibility for solid lines"
+        },
+        "description": {
+          "ko": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.",
+          "en": "He read time from the cut pipes' water temperature and saw anyone who drew a single-source road as a solid line as close to murder. He counted a late survey a fault."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, instead of thawing the frozen pipes, he opened a bypass waterway. By this deed the signature of the northern purification pipeline surveyor post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the survey master plate would be bought up by great powers and the water-dispute zones printed as someone else's territory. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
+          "en": "Relations. An apprentice handing field coordinates to Seo Raon's master plate, he matched map-renewal times with Choi Jiwoo and split bridge underside surveys and bypass dotted lines with Ma Gilsang by contract."
+        },
+        "effects": []
+      },
+      {
+        "id": "k155-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.",
+          "en": "Office. Rank: registrar. Title: northern purification pipeline surveyor. He drew intake overlaid with transmission bulletins and left single-source sections only as dotted lines."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.",
+          "en": "Office. Rank: registrar. Title: northern purification pipeline surveyor. He drew intake overlaid with transmission bulletins and left single-source sections only as dotted lines."
+        },
+        "stress": {
+          "ko": "공포. 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the survey master plate would be bought up by great powers and the water-dispute zones printed as someone else's territory. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
+          "en": "Relations. An apprentice handing field coordinates to Seo Raon's master plate, he matched map-renewal times with Choi Jiwoo and split bridge underside surveys and bypass dotted lines with Ma Gilsang by contract."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "동파 관로 대신 우회 급수를 열고 채수와 속보를 대조한다. 경로의 확실성을 표시하지만 철도 건설 경력은 없다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Opened bypass supply rather than thawing frozen pipes and cross-checks samples with reports. Route certainty does not imply railway construction experience. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -845,7 +989,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
@@ -853,7 +996,7 @@
     "공포": "탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.",
     "개입": "실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다."
   },
-  "biography": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.\n\n- 생업: 북부 정수 배관 채수·우회 급수\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 북부 정수 배관 탐사원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.\n\n**공포.** 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.\n\n**개입.** 실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자\n:::",
+  "biography": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.\n\n- 생업: 북부 정수 배관 채수·우회 급수\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 북부 정수 배관 탐사원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.\n\n**공포.** 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.\n\n**개입.** 실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

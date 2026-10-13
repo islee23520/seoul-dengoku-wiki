@@ -285,6 +285,142 @@
     "id": "K420",
     "personId": "person-0421"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 12,
+        "effective": 12
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "crowd-attendance-matching",
+        "name": {
+          "ko": "인파 출석 대조",
+          "en": "Crowd attendance matching"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "사람을 징발 숫자로 두지 않음",
+          "en": "Refuses to reduce people to levy numbers"
+        },
+        "description": {
+          "ko": "징발 방송 뒤 출석을 대기표와 맞추고 공동교섭 선언까지 인파를 모아 뒀다. 자신의 대표 이름이 인질 명부에 오를 것을 두려워한다.",
+          "en": "Matches attendance to waiting tickets after a requisition broadcast and keeps the crowd together until the bargaining declaration. Fears becoming the first hostage name."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 사람을 징발 숫자로 두지 않음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "징발 압박 때 인파를 해산하지 않을 수 있다.",
+          "en": "May refuse to disperse the crowd under levy pressure."
+        },
+        "relationship": {
+          "ko": "방마빛과 줄을 나누고 배우진의 보호 징발을 거부한다.",
+          "en": "Coordinates queues with Bang Mabit and rejects Bae Ujin’s protective requisition."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "시청역 대합실의 징발 명단을 공개 거부 원장으로 묶어 계약 창구가 동원 창구로 바뀌지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "대표로 나선 자신의 이름이 인질 파견 명부의 맨 위가 되는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "방마빛과 줄을 나누고 배우진의 보호 징발을 거부한다.",
+          "en": "Coordinates queues with Bang Mabit and rejects Bae Ujin’s protective requisition."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "징발 방송 뒤 출석을 대기표와 맞추고 공동교섭 선언까지 인파를 모아 뒀다. 자신의 대표 이름이 인질 명부에 오를 것을 두려워한다.",
+      "en": "Matches attendance to waiting tickets after a requisition broadcast and keeps the crowd together until the bargaining declaration. Fears becoming the first hostage name."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -666,7 +802,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 보국문 피난 막사에서 자랐다. 징발 피난 인파 대표 자리는 고아 명부 조합원 자격 줄로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 징발 피난 인파 대표. 징발 쪽지와 실제 출석 인원을 저녁마다 대조하고, 정유라의 공동교섭 선언이 내려오기 전에는 인파를 해산시키지 않는다.",
     "일화": "시청역 대합실 방송이 투표 조합원을 외부 병력 선발 대상으로 부르고, 배우진의 보호 징발 문서가 방마빛의 창구에 붙는다. 창은찬은 대기표의 빈칸을 사람 수처럼 세어 출석 인원과 맞추고, 공동교섭 선언을 정유라가 내놓을 때까지 인파를 대합실에 모아 둔다.",
     "관계": "방마빛의 대합실 창구와 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 보호 징발을 원한으로 돌려보낸다.",
@@ -674,7 +809,7 @@
     "공포": "대표로 나선 자신의 이름이 인질 파견 명부의 맨 위가 되는 것.",
     "개입": "거부 원장을 정동노총 회의에 올리거나, 인파를 해산시켜 징발 열차를 통과시킬 수 있다."
   },
-  "biography": "대합실 대기표의 빈칸을 사람 수처럼 세고, 투표 조합원을 외부 병력 선발로 부르라는 방송을 모욕으로 듣는다. 줄이 길어질수록 목소리는 낮아진다.\n\n- 생업: 징발 쪽지·출석 인원 대조·공동교섭 확인\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 징발 피난 인파 대표\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 징발 피난 인파 대표 자리는 고아 명부 조합원 자격 줄로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 징발 피난 인파 대표. 징발 쪽지와 실제 출석 인원을 저녁마다 대조하고, 정유라의 공동교섭 선언이 내려오기 전에는 인파를 해산시키지 않는다.\n\n**일화.** 시청역 대합실 방송이 투표 조합원을 외부 병력 선발 대상으로 부르고, 배우진의 보호 징발 문서가 방마빛의 창구에 붙는다. 창은찬은 대기표의 빈칸을 사람 수처럼 세어 출석 인원과 맞추고, 공동교섭 선언을 정유라가 내놓을 때까지 인파를 대합실에 모아 둔다.\n\n**관계.** 방마빛의 대합실 창구와 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 보호 징발을 원한으로 돌려보낸다.\n\n**야망.** 시청역 대합실의 징발 명단을 공개 거부 원장으로 묶어 계약 창구가 동원 창구로 바뀌지 않게 한다.\n\n**공포.** 대표로 나선 자신의 이름이 인질 파견 명부의 맨 위가 되는 것.\n\n**개입.** 거부 원장을 정동노총 회의에 올리거나, 인파를 해산시켜 징발 열차를 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 60 | 무력 −25 | 물질 −10 | 공동 25 | 원칙 35 | 공개 25 | 자격 25 | 분산 45 | 변혁 15\n- 욕망: 갈망 20 | 독점 10 | 위험 10 | 과시 −10 | 지속 35 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "대합실 대기표의 빈칸을 사람 수처럼 세고, 투표 조합원을 외부 병력 선발로 부르라는 방송을 모욕으로 듣는다. 줄이 길어질수록 목소리는 낮아진다.\n\n- 생업: 징발 쪽지·출석 인원 대조·공동교섭 확인\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 징발 피난 인파 대표\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 징발 피난 인파 대표 자리는 고아 명부 조합원 자격 줄로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 징발 피난 인파 대표. 징발 쪽지와 실제 출석 인원을 저녁마다 대조하고, 정유라의 공동교섭 선언이 내려오기 전에는 인파를 해산시키지 않는다.\n\n**일화.** 시청역 대합실 방송이 투표 조합원을 외부 병력 선발 대상으로 부르고, 배우진의 보호 징발 문서가 방마빛의 창구에 붙는다. 창은찬은 대기표의 빈칸을 사람 수처럼 세어 출석 인원과 맞추고, 공동교섭 선언을 정유라가 내놓을 때까지 인파를 대합실에 모아 둔다.\n\n**관계.** 방마빛의 대합실 창구와 인파 줄을 나누고, 석봄우의 신내 거부 문구와 문장을 맞춘다. 배우진의 보호 징발을 원한으로 돌려보낸다.\n\n**야망.** 시청역 대합실의 징발 명단을 공개 거부 원장으로 묶어 계약 창구가 동원 창구로 바뀌지 않게 한다.\n\n**공포.** 대표로 나선 자신의 이름이 인질 파견 명부의 맨 위가 되는 것.\n\n**개입.** 거부 원장을 정동노총 회의에 올리거나, 인파를 해산시켜 징발 열차를 통과시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 60 | 무력 −25 | 물질 −10 | 공동 25 | 원칙 35 | 공개 25 | 자격 25 | 분산 45 | 변혁 15\n- 욕망: 갈망 20 | 독점 10 | 위험 10 | 과시 −10 | 지속 35 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-16"
   ],

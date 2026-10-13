@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.",
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -284,6 +284,142 @@
   "gurps": {
     "id": "K285",
     "personId": "person-0286"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k285-escort-connection-coordination",
+        "name": {
+          "ko": "호송 접속 조정",
+          "en": "Escort connection coordination"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k285-priority",
+        "name": {
+          "ko": "통행세 거부",
+          "en": "Rejects toll demands"
+        },
+        "description": {
+          "ko": "두국은 순찰 교대와 경량 호송 접속을 맞춘다. 통행세 요구를 거부하는 강경함이 있고 실제 빈 칸 화물은 미확인이다.",
+          "en": "Duguk coordinates patrol shifts and light escort connections. He firmly rejects toll demands, while the missing slot’s actual cargo remains unknown."
+        },
+        "behavior": {
+          "ko": "호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.",
+          "en": "Office. Rank: assistant manager. Title: north gate convoy outpost chief. He pasted the convoy personnel and the wheel check table on one chalkboard and recognized arms loading only with the Elder's and the auditor's stamps."
+        },
+        "stress": {
+          "ko": "북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.",
+          "en": "Fear. That the north gate would turn into a military convoy route and the rail cavalry would be absorbed into a residential militia."
+        },
+        "relationship": {
+          "ko": "권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.",
+          "en": "Relations. Received Gwon Doha's north gate patrol at the outpost and split the rotations and torches with Yong Mo. Matched the link hours with Ha Seon's light convoys."
+        },
+        "effects": []
+      },
+      {
+        "id": "k285-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.",
+          "en": "Office. Rank: assistant manager. Title: north gate convoy outpost chief. He pasted the convoy personnel and the wheel check table on one chalkboard and recognized arms loading only with the Elder's and the auditor's stamps."
+        },
+        "stress": {
+          "ko": "공포. 북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.",
+          "en": "Fear. That the north gate would turn into a military convoy route and the rail cavalry would be absorbed into a residential militia."
+        },
+        "relationship": {
+          "ko": "관계. 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.",
+          "en": "Relations. Received Gwon Doha's north gate patrol at the outpost and split the rotations and torches with Yong Mo. Matched the link hours with Ha Seon's light convoys."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "두국은 순찰 교대와 경량 호송 접속을 맞춘다. 통행세 요구를 거부하는 강경함이 있고 실제 빈 칸 화물은 미확인이다.",
+      "en": "Duguk coordinates patrol shifts and light escort connections. He firmly rejects toll demands, while the missing slot’s actual cargo remains unknown."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -829,7 +965,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.",
     "일화": "제동 불량 정차로 호송 시각이 어긋나자 북문 칠판의 한 칸이 비었다.",
     "관계": "권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.",
@@ -837,7 +972,7 @@
     "공포": "북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.",
     "개입": "빈 칸의 실제 화물을 확인하거나, 통행세 요구 쪽지를 원로 앞에 펼 수 있다."
   },
-  "biography": "호송 시각의 빈칸을 모욕처럼 기억하고, 통행세를 통행 조건으로 내미는 장교를 선로에서 내려보낸다. 제동 점검을 건너뛴 출고를 사고의 시작으로 본다.\n\n- 생업: 북문 호송 인원·차륜 점검표 게시\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 호송 거점장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.\n\n**일화.** 제동 불량 정차로 호송 시각이 어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.** 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.\n\n**야망.** 북문을 강남역 호송의 북문 거점으로 남겨 바깥 작업장 통행세 없이 성하전자 열차가 나가게 한다.\n\n**공포.** 북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.\n\n**개입.** 빈 칸의 실제 화물을 확인하거나, 통행세 요구 쪽지를 원로 앞에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 0 | 물질 35 | 공동 35 | 원칙 15 | 공개 10 | 자격 65 | 분산 20 | 변혁 −20\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 5 | 지속 −15 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "호송 시각의 빈칸을 모욕처럼 기억하고, 통행세를 통행 조건으로 내미는 장교를 선로에서 내려보낸다. 제동 점검을 건너뛴 출고를 사고의 시작으로 본다.\n\n- 생업: 북문 호송 인원·차륜 점검표 게시\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 호송 거점장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.\n\n**일화.** 제동 불량 정차로 호송 시각이 어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.** 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.\n\n**야망.** 북문을 강남역 호송의 북문 거점으로 남겨 바깥 작업장 통행세 없이 성하전자 열차가 나가게 한다.\n\n**공포.** 북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.\n\n**개입.** 빈 칸의 실제 화물을 확인하거나, 통행세 요구 쪽지를 원로 앞에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 0 | 물질 35 | 공동 35 | 원칙 15 | 공개 10 | 자격 65 | 분산 20 | 변혁 −20\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 5 | 지속 −15 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-11"
   ],

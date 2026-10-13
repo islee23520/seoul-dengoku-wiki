@@ -393,6 +393,142 @@
     "id": "K096",
     "personId": "person-0097"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "packing",
+        "name": {
+          "ko": "패킹 교체·누수 판단",
+          "en": "Packing replacement and leak assessment"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "manhole-repairs-first",
+        "name": {
+          "ko": "맨홀 수리 먼저",
+          "en": "Manhole Repairs First"
+        },
+        "description": {
+          "ko": "허겸은 열린 맨홀과 저수조 균열을 회의보다 먼저 처리할 현장 문제로 본다.",
+          "en": "Heo Gyeom treats open manholes and reservoir cracks as field problems to address before meetings."
+        },
+        "behavior": {
+          "ko": "패킹의 기름 냄새로 막힌 구간을 짚고 저수조 금이 보이면 다른 수리를 미룬다.",
+          "en": "Heo uses packing-oil smells to locate blocked sections and postpones other repairs when reservoir cracks appear."
+        },
+        "stress": {
+          "ko": "공구 회수로 골목이 마른 채 방치될 우려가 커지면 맨홀 수리의 연속성을 더 중시할 수 있다.",
+          "en": "If tool confiscation threatens to leave neighborhoods dry, Heo may place greater weight on keeping manhole repairs continuous."
+        },
+        "relationship": {
+          "ko": "최나래의 출동을 맨홀에서 이어 받고 임초원의 설계를 현장에 맞추며 장민재의 균열 보고를 우선할 수 있다.",
+          "en": "Heo may receive Choe Narae's deployments at manholes, fit Im Chowon's designs on site, and prioritize Jang Minjae's crack reports."
+        },
+        "effects": []
+      },
+      {
+        "id": "separate-tools-and-armbands",
+        "name": {
+          "ko": "공구와 완장 분리",
+          "en": "Separate Tools and Armbands"
+        },
+        "description": {
+          "ko": "허겸은 정비 공구를 쓰는 역할과 민병 완장을 차는 역할을 분리하려 한다.",
+          "en": "Heo Gyeom seeks to keep the tool-using maintenance role separate from the militia-armband role."
+        },
+        "behavior": {
+          "ko": "패킹 칼과 완장을 따로 보관하고 맨홀 빗장을 건 뒤에만 야간 무장 호출을 확인한다.",
+          "en": "Heo stores packing knives and armbands separately and checks armed night calls only after securing the manhole latch."
+        },
+        "stress": {
+          "ko": "패킹 칼이 회수되고 완장만 남을 우려가 커지면 수리 공구와 무장 호출의 분리를 더 고수할 수 있다.",
+          "en": "If packing knives risk being confiscated while only armbands remain, Heo may defend the separation of repair tools and armed calls more firmly."
+        },
+        "relationship": {
+          "ko": "최나래와 협력할 때 정비조가 무장 인력으로 바뀌지 않도록 수리 완료를 우선하는 기준을 공유할 수 있다.",
+          "en": "In working with Choe Narae, Heo may share a repair-first boundary against turning maintenance staff into armed personnel."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "패킹 냄새와 저수조 금을 확인하고 맨홀 아래에서 설계를 맞춘다. 실제 수리 선택을 반영하며 패킹 칼을 전투 장비로 취급하지 않는다.",
+      "en": "He checks packing odors and tank cracks and fits designs below manholes. Actual repair choices are supported; a packing knife is not treated as combat equipment."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -767,7 +903,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 성수 골목펌프 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 성수 골목펌프 정비사. 패킹 칼과 완장을 따로 함에 넣고, 야간 무장 호출은 맨홀 빗장이 걸린 뒤에만 연다.",
     "일화": "수질망이 멈추자 허겸은 칼을 들고 마곡 쪽 맨홀로 갈지, 성수 뚜껑을 지킬지를 반납 패가 아니라 칼 수로 정했다.",
     "관계": "최나래의 기동조 출동을 골목 맨홀에서 이어 받는 사제이고, 임초원의 공개 설계를 뚜껑 아래에서 맞춰 본다. 장민재의 저수조 금이 보이면 다른 수리를 미룬다.",
@@ -775,7 +910,7 @@
     "공포": "정비 손목이 완장만 남고 패킹 칼이 회수되어 골목이 마른 채로 방치되는 것.",
     "개입": "패킹 칼을 성수 맨홀에 내려보내거나, 완장이 공구함보다 먼저 열린 전갈을 골목 벽에 붙일 수 있다."
   },
-  "biography": "패킹에서 나는 기름 냄새로 막힌 구간을 짚고, 민병 완장을 공구 손목에 끼우라는 전갈을 접지 않는다. 맨홀 뚜껑이 열린 골목이면 회의 전에 내려간다.\n\n- 소속: 명부교회\n- 생업: 골목펌프 정비\n- 품계: 교사\n- 직함: 성수 골목펌프 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 성수 골목펌프 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 성수 골목펌프 정비사. 패킹 칼과 완장을 따로 함에 넣고, 야간 무장 호출은 맨홀 빗장이 걸린 뒤에만 연다.\n\n**일화.** 수질망이 멈추자 허겸은 칼을 들고 마곡 쪽 맨홀로 갈지, 성수 뚜껑을 지킬지를 반납 패가 아니라 칼 수로 정했다.\n\n**관계.** 최나래의 기동조 출동을 골목 맨홀에서 이어 받는 사제이고, 임초원의 공개 설계를 뚜껑 아래에서 맞춰 본다. 장민재의 저수조 금이 보이면 다른 수리를 미룬다.\n\n**야망.** 골목 펌프의 패킹 교체 날을 공동규격 순회 달력에 올려, 후계가 갈려도 맨홀이 며칠씩 열리지 않게 한다.\n\n**공포.** 정비 손목이 완장만 남고 패킹 칼이 회수되어 골목이 마른 채로 방치되는 것.\n\n**개입.** 패킹 칼을 성수 맨홀에 내려보내거나, 완장이 공구함보다 먼저 열린 전갈을 골목 벽에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 15 | 무력 −25 | 물질 35 | 공동 25 | 원칙 10 | 공개 −25 | 자격 55 | 분산 30 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 15 | 지속 15 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "패킹에서 나는 기름 냄새로 막힌 구간을 짚고, 민병 완장을 공구 손목에 끼우라는 전갈을 접지 않는다. 맨홀 뚜껑이 열린 골목이면 회의 전에 내려간다.\n\n- 소속: 명부교회\n- 생업: 골목펌프 정비\n- 품계: 교사\n- 직함: 성수 골목펌프 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 성수 골목펌프 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 성수 골목펌프 정비사. 패킹 칼과 완장을 따로 함에 넣고, 야간 무장 호출은 맨홀 빗장이 걸린 뒤에만 연다.\n\n**일화.** 수질망이 멈추자 허겸은 칼을 들고 마곡 쪽 맨홀로 갈지, 성수 뚜껑을 지킬지를 반납 패가 아니라 칼 수로 정했다.\n\n**관계.** 최나래의 기동조 출동을 골목 맨홀에서 이어 받는 사제이고, 임초원의 공개 설계를 뚜껑 아래에서 맞춰 본다. 장민재의 저수조 금이 보이면 다른 수리를 미룬다.\n\n**야망.** 골목 펌프의 패킹 교체 날을 공동규격 순회 달력에 올려, 후계가 갈려도 맨홀이 며칠씩 열리지 않게 한다.\n\n**공포.** 정비 손목이 완장만 남고 패킹 칼이 회수되어 골목이 마른 채로 방치되는 것.\n\n**개입.** 패킹 칼을 성수 맨홀에 내려보내거나, 완장이 공구함보다 먼저 열린 전갈을 골목 벽에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 15 | 무력 −25 | 물질 35 | 공동 25 | 원칙 10 | 공개 −25 | 자격 55 | 분산 30 | 변혁 −5\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 15 | 지속 15 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

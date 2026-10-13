@@ -394,6 +394,150 @@
     "id": "K858",
     "personId": "person-0858"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "copy",
+        "name": {
+          "ko": "문서 필사·보존",
+          "en": "Document copying and preservation"
+        },
+        "rating": 45
+      },
+      {
+        "id": "accounts",
+        "name": {
+          "ko": "지급 장부 대조",
+          "en": "Payment ledger reconciliation"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "dry-and-preserve-documents",
+        "name": {
+          "ko": "문서 말려 보존",
+          "en": "Dry and Preserve Documents"
+        },
+        "description": {
+          "ko": "박다은은 젖은 인준 문서를 말리고 필사본으로 남기는 보존 지향을 보인다.",
+          "en": "Park Daeun shows a preservation orientation by drying a wet approval document and retaining a handwritten copy."
+        },
+        "behavior": {
+          "ko": "승강장에서 물에 젖은 인준 문서를 말려 필사본을 만들었다.",
+          "en": "They dried the water-soaked approval document at the platform and made a handwritten copy."
+        },
+        "stress": {
+          "ko": "문서 손상이 장부의 연속성을 끊을 우려가 있으면 읽을 수 있는 사본 확보에 집중할 수 있다.",
+          "en": "If document damage threatens register continuity, they may focus on securing a readable copy."
+        },
+        "relationship": {
+          "ko": "선배 당직에게 손상 문서를 인계해야 한다면 남긴 필사본을 확인 근거로 삼을 수 있다.",
+          "en": "When handing over a damaged document to a senior duty colleague, they may use the retained copy as a reference."
+        },
+        "effects": []
+      },
+      {
+        "id": "maintain-correction-records",
+        "name": {
+          "ko": "정정 기록 잇기",
+          "en": "Maintain Correction Records"
+        },
+        "description": {
+          "ko": "박다은의 정정 기록 잇기는 제공된 서술의 정정 이력과 장부 연속성 지향에 한정된다.",
+          "en": "Park Daeun's maintenance of correction records is limited to the supplied narrative's correction history and aim of register continuity."
+        },
+        "behavior": {
+          "ko": "확인된 행동은 젖은 인준 문서를 필사본으로 남겨 기록의 내용을 이어 보존한 것이다.",
+          "en": "The documented action is preserving the content of a wet approval document through a handwritten copy."
+        },
+        "stress": {
+          "ko": "기록 손실이 당직 인계를 끊을 우려가 있으면 정정 내용을 이어 확인할 근거를 중시할 수 있다.",
+          "en": "If record loss threatens handover continuity, they may value evidence that allows corrections to remain traceable."
+        },
+        "relationship": {
+          "ko": "인계 상대가 정정 내용을 확인해야 한다면 남은 문서와 기록을 함께 근거로 삼을 수 있다.",
+          "en": "If a handover partner needs to verify corrections, they may rely on the surviving documents and records together."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "물에 젖은 인준 문서를 필사본으로 남겼다. 보존 실무와 장부 정정 이력을 평가하며 보존고 전체 운영을 추정하지 않는다.",
+      "en": "She copied a water-damaged approval document. Preservation and ledger correction are supported, not control of the whole storage facility."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -763,7 +907,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -771,7 +914,7 @@
     "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 25 | 무력 −30 | 물질 15 | 공동 0 | 원칙 60 | 공개 50 | 자격 45 | 분산 10 | 변혁 5\n- 욕망: 갈망 40 | 독점 −20 | 위험 30 | 과시 −40 | 지속 15 | 지향 양성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 25 | 무력 −30 | 물질 15 | 공동 0 | 원칙 60 | 공개 50 | 자격 45 | 분산 10 | 변혁 5\n- 욕망: 갈망 40 | 독점 −20 | 위험 30 | 과시 −40 | 지속 15 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

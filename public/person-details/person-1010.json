@@ -457,6 +457,109 @@
     "id": "K1010",
     "personId": "person-1010"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 1,
+        "effective": 1
+      },
+      "strategy": {
+        "base": 2,
+        "effective": 2
+      },
+      "negotiation": {
+        "base": 2,
+        "effective": 2
+      },
+      "management": {
+        "base": 2,
+        "effective": 2
+      },
+      "insight": {
+        "base": 5,
+        "effective": 5
+      },
+      "learning": {
+        "base": 5,
+        "effective": 5
+      },
+      "prowess": {
+        "base": 1,
+        "effective": 1
+      },
+      "endurance": {
+        "base": 4,
+        "effective": 4
+      }
+    },
+    "skills": [],
+    "traits": [
+      {
+        "id": "k1010-trait-1",
+        "name": {
+          "ko": "겹친 소리의 기억",
+          "en": "Memory in overlapping sounds"
+        },
+        "description": {
+          "ko": "겹친 방송·잡음·진동에 리듬과 경로 단편을 떠올린다.",
+          "en": "Recalls rhythm and route fragments through overlapping broadcasts, noise, and vibration."
+        },
+        "behavior": {
+          "ko": "겹친 방송·잡음·진동에 리듬과 경로 단편을 떠올린다.",
+          "en": "Recalls rhythm and route fragments through overlapping broadcasts, noise, and vibration."
+        },
+        "stress": {
+          "ko": "이 반응의 부담과 스트레스 양상은 미확인이다.",
+          "en": "The strain and stress pattern of this response are unassessed."
+        },
+        "relationship": {
+          "ko": "신종목이 반응을 대조하고 보호자가 돌보지만 그것은 아이의 성향 근거가 아니다.",
+          "en": "Shin Jongmok checks the response and guardians provide care; their actions are not evidence of the child’s disposition."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "열두 살 신준은 폐역 방송·무전 잡음·차량 진동이 겹치면 호출 리듬과 경로의 단편을 떠올린다. 기억 반응만 확인되며 그 정확성은 현장 기록과 대조가 필요하다. 아버지의 정찰·지휘·동의 확인 능력은 아이에게 이전하지 않는다.",
+      "en": "Twelve-year-old Shin Jun recalls fragments of call rhythms and routes when station broadcasts, radio noise, and vehicle vibration coincide. Only this response is established; its accuracy needs field comparison. His father’s reconnaissance, command, and consent practices are not transferred to him."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -748,12 +851,11 @@
   "sections": {
     "생애": "신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.",
     "관직": "품계 없음. 직함 없음.",
-    "무공": "폐역 방송·무전 잡음·차량 진동이 겹치면 옛 호출과 이동 경로의 일부를 떠올린다. 신종목이 그 기억을 현장 기록과 대조한다.",
     "일화": "신종목과 보호자는 신준의 동의와 휴식을 확인하고 돌봄을 교대한다.",
     "가문": "신종목의 아들이다.",
     "관계": "신종목의 아들."
   },
-  "biography": "소속: 아관사(S14). 신종목의 아들이다. 개막(2126) 시점에 열두 살이다.\n\n**생애.** 신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.\n\n**관직.** 품계 없음. 직함 없음.\n\n**무공.** 폐역 방송·무전 잡음·차량 진동이 겹치면 옛 호출과 이동 경로의 일부를 떠올린다. 신종목이 그 기억을 현장 기록과 대조한다.\n\n**일화.** 신종목과 보호자는 신준의 동의와 휴식을 확인하고 돌봄을 교대한다.\n\n**가문.** 신종목의 아들이다.\n\n**관계.** 신종목의 아들.",
+  "biography": "소속: 아관사(S14). 신종목의 아들이다. 개막(2126) 시점에 열두 살이다.\n\n**생애.** 신준은 신종목의 아들이다. 2120년 4월 아버지와 강남구청 생활권으로 옮겼다. 폐역 방송과 무전 잡음, 차량 진동이 겹치면 낡은 호출 리듬과 경로의 단편을 떠올린다. 신종목은 그 반응을 현장 기록과 대조하고 신준의 동의와 휴식을 확인한다.\n\n**관직.** 품계 없음. 직함 없음.\n\n**일화.** 신종목과 보호자는 신준의 동의와 휴식을 확인하고 돌봄을 교대한다.\n\n**가문.** 신종목의 아들이다.\n\n**관계.** 신종목의 아들.",
   "sources": [
     "Core-Characters"
   ],

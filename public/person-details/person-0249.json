@@ -285,6 +285,142 @@
     "id": "K248",
     "personId": "person-0249"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 6,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "corridor-recon",
+        "name": {
+          "ko": "회랑 정찰",
+          "en": "Corridor reconnaissance"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "corridor-recon-disposition",
+        "name": {
+          "ko": "가족을 가르지 않음",
+          "en": "Refuses family separation"
+        },
+        "description": {
+          "ko": "효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.",
+          "en": "Rejects orders separating families for efficiency."
+        },
+        "behavior": {
+          "ko": "효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.",
+          "en": "Rejects orders separating families for efficiency."
+        },
+        "stress": {
+          "ko": "회랑이 군사 호송로가 될 것을 두려워한다.",
+          "en": "Fears the corridor becoming a military escort route."
+        },
+        "relationship": {
+          "ko": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
+          "en": "Guards corridors under Baek On, opposes Bae Woojin’s patrol and coordinates torch signals with Song Hayul."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "총회 먼저 보고",
+          "en": "Assembly report first"
+        },
+        "description": {
+          "ko": "무장 통과 전에 정찰을 총회에 보고하고 신도 표를 확인한다.",
+          "en": "Reports reconnaissance to assembly and checks member passes before armed transit."
+        },
+        "behavior": {
+          "ko": "무장 통과 전에 정찰을 총회에 보고하고 신도 표를 확인한다.",
+          "en": "Reports reconnaissance to assembly and checks member passes before armed transit."
+        },
+        "stress": {
+          "ko": "회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
+          "en": "Fears the corridor becoming a military escort route."
+        },
+        "relationship": {
+          "ko": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
+          "en": "Guards corridors under Baek On, opposes Bae Woojin’s patrol and coordinates torch signals with Song Hayul."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정찰 보고를 총회에 먼저 올리고 신도 표 없는 무장 통과를 막는다. 지형 기억은 회랑 보호에 쓰이며 가족 분리 명령을 거부한다.",
+      "en": "Reports reconnaissance to the assembly first and requires member passes for armed transit. Terrain memory serves corridor protection and refusal of family separation."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -681,7 +817,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.",
     "일화": "암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.",
     "관계": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
@@ -689,7 +824,7 @@
     "공포": "회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
     "개입": "회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다."
   },
-  "biography": "과묵하고 지형을 사람 얼굴처럼 기억한다. 효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.\n\n- 생업: 회랑 정찰 보고·통행 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 회랑 정찰 주지\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.\n\n**일화.** 암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.\n\n**관계.** 백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.\n\n**야망.** 북한산·탕춘대 회랑을 독립 통행로로 남겨 동부 상수보호권의 순찰이 숙영지까지 올라오지 못하게 한다.\n\n**공포.** 회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.\n\n**개입.** 회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 60 | 무력 −40 | 물질 −20 | 공동 55 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "과묵하고 지형을 사람 얼굴처럼 기억한다. 효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.\n\n- 생업: 회랑 정찰 보고·통행 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 회랑 정찰 주지\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.\n\n**일화.** 암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.\n\n**관계.** 백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.\n\n**야망.** 북한산·탕춘대 회랑을 독립 통행로로 남겨 동부 상수보호권의 순찰이 숙영지까지 올라오지 못하게 한다.\n\n**공포.** 회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.\n\n**개입.** 회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 60 | 무력 −40 | 물질 −20 | 공동 55 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-10"
   ],

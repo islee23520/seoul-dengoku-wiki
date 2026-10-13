@@ -394,6 +394,150 @@
     "id": "K911",
     "personId": "person-0911"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "grain-distribution",
+        "name": {
+          "ko": "곡물 배분",
+          "en": "Grain distribution"
+        },
+        "rating": 45
+      },
+      {
+        "id": "loss-ledger-publication",
+        "name": {
+          "ko": "손실 장부 공개",
+          "en": "Loss ledger publication"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "k911-disposition",
+        "name": {
+          "ko": "손실보다 배분 먼저",
+          "en": "Distribution before loss accounting"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 경매 서기.",
+          "en": "Office. Rank: lay instructor. Title: auction clerk."
+        },
+        "stress": {
+          "ko": "공포. 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
+          "en": "Fear. That the auction clerk duty post would stand empty and the State's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k911-choice",
+        "name": {
+          "ko": "공개로 인계",
+          "en": "Public handoff"
+        },
+        "description": {
+          "ko": "일화. 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he distributed the grain that had begun to rot first and published the loss ledger. By this deed the signature of the auction clerk post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "stress": {
+          "ko": "공포. 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
+          "en": "Fear. That the auction clerk duty post would stand empty and the State's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "상하기 시작한 곡물의 배분과 손실 공개가 근거다. 그 일화를 경매 낙찰 기술로 옮기지 않았다.",
+      "en": "Grain distribution and disclosed loss are the evidence. The episode is not converted to auction-award expertise."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -785,7 +929,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 경매 서기.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -793,7 +936,7 @@
     "공포": "경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 상한 곡물 배분·손실 공개\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 경매 서기.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 경매 서기 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 45 | 무력 −20 | 물질 70 | 공동 −30 | 원칙 −40 | 공개 25 | 자격 0 | 분산 25 | 변혁 15\n- 욕망: 갈망 10 | 독점 30 | 위험 20 | 과시 10 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 상한 곡물 배분·손실 공개\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 교도. 직함은 경매 서기.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 경매 서기 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 45 | 무력 −20 | 물질 70 | 공동 −30 | 원칙 −40 | 공개 25 | 자격 0 | 분산 25 | 변혁 15\n- 욕망: 갈망 10 | 독점 30 | 위험 20 | 과시 10 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],

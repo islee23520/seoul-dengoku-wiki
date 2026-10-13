@@ -286,6 +286,150 @@
     "id": "K023",
     "personId": "person-0023"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k023-expiry-copying",
+        "name": {
+          "ko": "만료 조항 기록",
+          "en": "Expiry-clause recording"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k023-pressure-leak-check",
+        "name": {
+          "ko": "수압 누수 확인",
+          "en": "Pressure-leak check"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k023-signed-agreement",
+        "name": {
+          "ko": "날인된 합의",
+          "en": "Signed agreement"
+        },
+        "description": {
+          "ko": "좌석마다 잉크를 나누고 구두 연장을 계약으로 인정하지 않는다.",
+          "en": "Separates ink by seat and does not treat oral extensions as contracts."
+        },
+        "behavior": {
+          "ko": "좌석마다 잉크를 나누고 구두 연장을 계약으로 인정하지 않는다.",
+          "en": "Separates ink by seat and does not treat oral extensions as contracts."
+        },
+        "stress": {
+          "ko": "만료 시각이 지났는데도 봉인되지 않은 사본이 돌아 집단 단수가 사후 승인되는 것.",
+          "en": "That past the expiry hour, unsealed copies would circulate and the collective cutoff would be approved after the fact."
+        },
+        "relationship": {
+          "ko": "장필규의 감사 원장에 만료 문구를 맞추고, 한재목의 보호권 확대안을 서기석에서 늦추며, 뚝섬 쪽 배나경과 사본을 교환한다.",
+          "en": "Matching expiry wording onto Jang Pilgyu's audit ledger, delaying Han Jaemok's protection-power expansion plan from the clerk's bench, and exchanging copies with Bae Nagyeong of the Ttukseom side."
+        },
+        "effects": []
+      },
+      {
+        "id": "k023-delay-expansion",
+        "name": {
+          "ko": "확대안의 지연",
+          "en": "Delay expansion"
+        },
+        "description": {
+          "ko": "보호권 확대안을 서기석에서 늦춘다.",
+          "en": "Delays protection-rights expansion at the clerk’s desk."
+        },
+        "behavior": {
+          "ko": "보호권 확대안을 서기석에서 늦춘다.",
+          "en": "Delays protection-rights expansion at the clerk’s desk."
+        },
+        "stress": {
+          "ko": "만료 시각이 지났는데도 봉인되지 않은 사본이 돌아 집단 단수가 사후 승인되는 것.",
+          "en": "That past the expiry hour, unsealed copies would circulate and the collective cutoff would be approved after the fact."
+        },
+        "relationship": {
+          "ko": "장필규의 감사 원장에 만료 문구를 맞추고, 한재목의 보호권 확대안을 서기석에서 늦추며, 뚝섬 쪽 배나경과 사본을 교환한다.",
+          "en": "Matching expiry wording onto Jang Pilgyu's audit ledger, delaying Han Jaemok's protection-power expansion plan from the clerk's bench, and exchanging copies with Bae Nagyeong of the Ttukseom side."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "계약 만료 기록과 누수 확인 일화를 별도로 반영했다. 협상 전체의 승리를 주장하지 않고 문서 유효 조건에 집중했다.",
+      "en": "Reflects expiry records and a leak-check anecdote separately. Focuses on document validity rather than claiming overall negotiating victories."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -709,7 +853,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 만료 협상 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 급수계약 만료 협상 서기. 협상 좌석마다 잉크 색을 나누고, 날인 없는 구두 합의는 배급표 하단에도 적지 않는다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 급수계약 만료 협상 서기 자리의 서명이 장부에 올랐다.",
     "관계": "장필규의 감사 원장에 만료 문구를 맞추고, 한재목의 보호권 확대안을 서기석에서 늦추며, 뚝섬 쪽 배나경과 사본을 교환한다.",
@@ -717,7 +860,7 @@
     "공포": "만료 시각이 지났는데도 봉인되지 않은 사본이 돌아 집단 단수가 사후 승인되는 것.",
     "개입": "누락된 종료 조항 사본을 가져와 그의 봉인을 지키거나, 잉크가 다른 위조 원장을 폭로해 서기를 교체할 수 있다."
   },
-  "biography": "만료일 자정을 시계보다 관로 압력으로 읽고, 구두 연장을 계약이라 부르는 사람을 오래 기억한다. 잉크가 마르기 전에는 자리를 뜨지 않는다.\n\n- 소속: 수문국\n- 생업: 계약 기록\n- 품계: 주사\n- 직함: 급수계약 만료 협상 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 만료 협상 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 급수계약 만료 협상 서기. 협상 좌석마다 잉크 색을 나누고, 날인 없는 구두 합의는 배급표 하단에도 적지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 급수계약 만료 협상 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 장필규의 감사 원장에 만료 문구를 맞추고, 한재목의 보호권 확대안을 서기석에서 늦추며, 뚝섬 쪽 배나경과 사본을 교환한다.\n\n**야망.** 종료 조건과 비상 호송 조항을 한 장의 공개 원장에만 유효하게 남겨 서부 단수가 밀실에서 결정되지 않게 한다.\n\n**공포.** 만료 시각이 지났는데도 봉인되지 않은 사본이 돌아 집단 단수가 사후 승인되는 것.\n\n**개입.** 누락된 종료 조항 사본을 가져와 그의 봉인을 지키거나, 잉크가 다른 위조 원장을 폭로해 서기를 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 5 | 물질 25 | 공동 10 | 원칙 30 | 공개 5 | 자격 −5 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 15 | 독점 −10 | 위험 −25 | 과시 −5 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "만료일 자정을 시계보다 관로 압력으로 읽고, 구두 연장을 계약이라 부르는 사람을 오래 기억한다. 잉크가 마르기 전에는 자리를 뜨지 않는다.\n\n- 소속: 수문국\n- 생업: 계약 기록\n- 품계: 주사\n- 직함: 급수계약 만료 협상 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 만료 협상 서기 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 급수계약 만료 협상 서기. 협상 좌석마다 잉크 색을 나누고, 날인 없는 구두 합의는 배급표 하단에도 적지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 급수계약 만료 협상 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 장필규의 감사 원장에 만료 문구를 맞추고, 한재목의 보호권 확대안을 서기석에서 늦추며, 뚝섬 쪽 배나경과 사본을 교환한다.\n\n**야망.** 종료 조건과 비상 호송 조항을 한 장의 공개 원장에만 유효하게 남겨 서부 단수가 밀실에서 결정되지 않게 한다.\n\n**공포.** 만료 시각이 지났는데도 봉인되지 않은 사본이 돌아 집단 단수가 사후 승인되는 것.\n\n**개입.** 누락된 종료 조항 사본을 가져와 그의 봉인을 지키거나, 잉크가 다른 위조 원장을 폭로해 서기를 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 5 | 물질 25 | 공동 10 | 원칙 30 | 공개 5 | 자격 −5 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 15 | 독점 −10 | 위험 −25 | 과시 −5 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-01"
   ],

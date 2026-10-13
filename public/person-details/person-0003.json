@@ -286,6 +286,150 @@
     "id": "K003",
     "personId": "person-0003"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 12,
+        "effective": 12
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k003-sluice-access-control",
+        "name": {
+          "ko": "수문 출입 통제",
+          "en": "Sluice access control"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k003-leak-inspection",
+        "name": {
+          "ko": "누수 확인",
+          "en": "Leak inspection"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k003-cover-for-subordinates",
+        "name": {
+          "ko": "부하의 당직을 대신",
+          "en": "Cover subordinates’ shifts"
+        },
+        "description": {
+          "ko": "부하 급수표가 밀리면 야간 당직을 선다.",
+          "en": "Covers night duty when subordinates’ water rations are delayed."
+        },
+        "behavior": {
+          "ko": "부하 급수표가 밀리면 야간 당직을 선다.",
+          "en": "Covers night duty when subordinates’ water rations are delayed."
+        },
+        "stress": {
+          "ko": "규율에 기대 잠을 줄이며 경계를 유지한다.",
+          "en": "Sacrifices sleep to maintain disciplined vigilance."
+        },
+        "relationship": {
+          "ko": "부하의 배급을 지휘 책임으로 받아들인다.",
+          "en": "Treats subordinates’ water allocation as a command responsibility."
+        },
+        "effects": []
+      },
+      {
+        "id": "k003-suspect-unauthorized-crossing",
+        "name": {
+          "ko": "무단 도하 경계",
+          "en": "Watch unauthorized crossings"
+        },
+        "description": {
+          "ko": "나사의 녹보다 무단 도하를 먼저 의심한다.",
+          "en": "Suspects unauthorized crossings before rusted screws."
+        },
+        "behavior": {
+          "ko": "나사의 녹보다 무단 도하를 먼저 의심한다.",
+          "en": "Suspects unauthorized crossings before rusted screws."
+        },
+        "stress": {
+          "ko": "폭파나 무단 개방의 가능성에 암호패를 엄격히 요구한다.",
+          "en": "Strictly demands passcodes when sabotage or unauthorized opening is feared."
+        },
+        "relationship": {
+          "ko": "김우찬과 수문 전술을 놓고 경쟁한다.",
+          "en": "Competes with Kim Uchan over sluice tactics."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "누수 시험과 야간 당직 대행, 통행 통제가 근거다. 지휘와 경계에는 강점이 있지만 구체적 교전 성과가 없어 개인 기량은 제한했다.",
+      "en": "Leak tests, covering night duty, and access control are the evidence. Command and vigilance are strengths, while personal prowess remains limited by the absence of recorded engagements."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -750,7 +894,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.",
     "관계": "한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.",
@@ -758,7 +901,7 @@
     "공포": "수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.",
     "개입": "수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다."
   },
-  "biography": "규율에 기대 잠을 줄이고, 수문 나사의 녹보다 무단 도하를 먼저 의심한다. 부하의 급수표가 밀리면 자신이 야간 당직을 선다.\n\n- 소속: 수문국\n- 생업: 수문 경비\n- 품계: 주사\n- 직함: 수문경비대장\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.\n\n**야망.** 한강 서부 수문과 교량을 경비대 단일 지휘 아래 묶어 물 계약의 무력 보증인이 된다.\n\n**공포.** 수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.\n\n**개입.** 수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "규율에 기대 잠을 줄이고, 수문 나사의 녹보다 무단 도하를 먼저 의심한다. 부하의 급수표가 밀리면 자신이 야간 당직을 선다.\n\n- 소속: 수문국\n- 생업: 수문 경비\n- 품계: 주사\n- 직함: 수문경비대장\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 수문경비대장 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 수문경비대장. 개방·폐쇄 시각을 공개 칠판에 쓰지만, 야간 교량 통행은 경비대 암호패 없이는 통과시키지 않는다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 수문경비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한재목의 수문 지휘를 받으며, 최한결의 장갑 보수열차와 차단 부품을 계약으로 나누고, 암사 참모 김우찬과는 한강 수문 전술에서 경쟁한다.\n\n**야망.** 한강 서부 수문과 교량을 경비대 단일 지휘 아래 묶어 물 계약의 무력 보증인이 된다.\n\n**공포.** 수문 한 기가 폭파되거나 무단 개방되어 영등포 정수가 한순간에 오염되는 것.\n\n**개입.** 수문 폭파 위협의 진원을 밝혀 그의 경계를 풀거나, 암호패를 위조한 밀항 증거를 넘겨 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 30 | 공동 10 | 원칙 20 | 공개 10 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 15 | 독점 30 | 위험 −5 | 과시 25 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],

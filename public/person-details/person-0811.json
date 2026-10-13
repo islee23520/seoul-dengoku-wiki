@@ -287,6 +287,150 @@
     "id": "K811",
     "personId": "person-0811"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "scout",
+        "name": {
+          "ko": "매복 징후 관찰",
+          "en": "Ambush-sign observation"
+        },
+        "rating": 50
+      },
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "watch-for-ambush-traces",
+        "name": {
+          "ko": "매복 흔적 관찰",
+          "en": "Watch for Ambush Traces"
+        },
+        "description": {
+          "ko": "성숲현은 초계 중 매복의 흔적을 먼저 읽는 관찰 지향을 보인다.",
+          "en": "Seong Suphyeon shows an observational disposition toward recognizing ambush traces during patrol."
+        },
+        "behavior": {
+          "ko": "능선 초계에서 매복 흔적을 먼저 알아채 피해를 막았다.",
+          "en": "On a ridge patrol, he recognized ambush traces early and prevented harm."
+        },
+        "stress": {
+          "ko": "당직 공백으로 통행이 위협받을 우려가 커지면 초계의 위험 징후에 더 집중할 수 있다.",
+          "en": "If fears of a duty gap threatening passage intensify, he may focus more closely on patrol warning signs."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 자신이 읽은 매복 징후를 정확히 공유하려 할 수 있다.",
+          "en": "In handovers with senior duty staff, he may seek to share the ambush signs he recognized accurately."
+        },
+        "effects": []
+      },
+      {
+        "id": "prevent-patrol-casualties",
+        "name": {
+          "ko": "초계 피해 예방",
+          "en": "Prevent Patrol Casualties"
+        },
+        "description": {
+          "ko": "성숲현은 초계에서 위험 징후를 피해 예방으로 연결하려는 성향을 보인다.",
+          "en": "Seong Suphyeon shows a disposition to turn patrol warning signs into prevention of harm."
+        },
+        "behavior": {
+          "ko": "능선에서 읽은 매복 흔적을 바탕으로 초계 피해를 막았다.",
+          "en": "He used the ambush traces recognized on the ridge to prevent patrol harm."
+        },
+        "stress": {
+          "ko": "위험 노출과 당직 유지가 충돌하면 피해를 줄여 당직을 이어 가는 쪽을 택할 수 있다.",
+          "en": "If exposure to danger conflicts with maintaining duty, he may favor reducing harm to preserve continuity."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 피해 예방에 필요한 위험 정보를 이어 주는 일을 중시할 수 있다.",
+          "en": "With senior duty staff, he may value passing on risk information needed to prevent harm."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "능선 초계에서 매복 흔적을 먼저 읽었다. 징후 관찰과 위험 회피를 평가하며 적 격파나 작전 총괄은 없다.",
+      "en": "She saw ambush signs first on ridge patrol. Observation and avoidance are supported, not enemy defeat or overall command."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -710,7 +854,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -718,7 +861,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 0 | 무력 0 | 물질 20 | 공동 30 | 원칙 5 | 공개 −30 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 45 | 독점 30 | 위험 15 | 과시 −20 | 지속 0 | 지향 이성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 0 | 무력 0 | 물질 20 | 공동 30 | 원칙 5 | 공개 −30 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 45 | 독점 30 | 위험 15 | 과시 −20 | 지속 0 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-04"
   ],

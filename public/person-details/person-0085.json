@@ -296,6 +296,150 @@
     "id": "K085",
     "personId": "person-0085"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "measure",
+        "name": {
+          "ko": "측량 실측·도면 대조",
+          "en": "Survey and drawing comparison"
+        },
+        "rating": 60
+      },
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-guessed-distances",
+        "name": {
+          "ko": "추측 거리 배제",
+          "en": "No Guessed Distances"
+        },
+        "description": {
+          "ko": "송별하는 추측한 거리 대신 현장에서 확인한 측량 수치만 기록하려 한다.",
+          "en": "Song Byeolha seeks to record field-verified measurements rather than guessed distances."
+        },
+        "behavior": {
+          "ko": "측량 숫자를 현장에서 두 번 읽고 도면과 어긋나면 기록을 멈춘다.",
+          "en": "They read measurement figures twice on site and stop recording when the figures conflict with the drawing."
+        },
+        "stress": {
+          "ko": "잘못된 거리가 방재 경계로 확정될 우려가 커지면 불일치를 해소하기 전 기록을 멈추려 할 수 있다.",
+          "en": "If an incorrect distance risks becoming a disaster-prevention boundary, they may halt recording until the discrepancy is resolved."
+        },
+        "relationship": {
+          "ko": "정호준과 공개 원칙을 함께 지키더라도 측량 원본의 반출 요청에는 선을 그을 수 있다.",
+          "en": "Even while sharing Jeong Hojun's openness principle, they may draw a boundary against removing measurement originals."
+        },
+        "effects": []
+      },
+      {
+        "id": "reject-unmeasured-revisions",
+        "name": {
+          "ko": "실측 없는 수정 반려",
+          "en": "Reject Unmeasured Revisions"
+        },
+        "description": {
+          "ko": "송별하는 현장 실측이 없는 측량 기록 수정을 받아들이지 않는 쪽이다.",
+          "en": "Song Byeolha does not accept revisions to measurement records without on-site measurements."
+        },
+        "behavior": {
+          "ko": "실측 없는 수정 요청은 반려하고 그 사유만 난외에 남긴다.",
+          "en": "They reject revision requests lacking field measurements and leave only the reason in the margin."
+        },
+        "stress": {
+          "ko": "부정확한 수정이 실험동 봉인으로 이어질 우려가 있으면 실측 근거 요구를 더 엄격히 지킬 수 있다.",
+          "en": "If an inaccurate revision could lead to the experimental building being sealed, they may adhere more strictly to requiring measured grounds."
+        },
+        "relationship": {
+          "ko": "수정 요청자와 의견이 갈린다면 반려 사유를 남기고 원본을 교차검증할 수 있는 상태로 지키려 할 수 있다.",
+          "en": "If they disagree with a revision requester, they may document the rejection reason and preserve the original for cross-verification."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "측량 수치를 두 번 읽고 도면과 다르면 멈춘다. 실측 대조는 확인되나 원본 반출 금지를 비공개 연구 전체 권한으로 확대하지 않는다.",
+      "en": "She reads measured values twice and stops on disagreement with drawings. Survey checks are supported; restrictions on originals do not imply broader secret-research authority."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -697,7 +841,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 측량 기록 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 측량 기록 심사관. 현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 측량 기록 심사관 자리의 서명이 장부에 올랐다.",
     "관계": "정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.",
@@ -705,7 +848,7 @@
     "공포": "잘못된 거리가 방재 경계로 확정되어 실험동이 봉인되는 것.",
     "개입": "어긋난 벽의 원인을 열거나, 실험 재개를 서명할 수 있다."
   },
-  "biography": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다. 추측 거리는 적지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 측량 기록 대조\n- 품계: 대리\n- 직함: 측량 기록 심사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 측량 기록 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 측량 기록 심사관. 현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 측량 기록 심사관 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.\n\n**야망.** 마곡 밀폐실험동의 측량 원본을 생명안전 연구책임자 책상이 아니라 교차검증 서고에 둔다.\n\n**공포.** 잘못된 거리가 방재 경계로 확정되어 실험동이 봉인되는 것.\n\n**개입.** 어긋난 벽의 원인을 열거나, 실험 재개를 서명할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 10 | 원칙 60 | 공개 45 | 자격 50 | 분산 15 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 30 | 과시 −15 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다. 추측 거리는 적지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 측량 기록 대조\n- 품계: 대리\n- 직함: 측량 기록 심사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 측량 기록 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 측량 기록 심사관. 현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 측량 기록 심사관 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.\n\n**야망.** 마곡 밀폐실험동의 측량 원본을 생명안전 연구책임자 책상이 아니라 교차검증 서고에 둔다.\n\n**공포.** 잘못된 거리가 방재 경계로 확정되어 실험동이 봉인되는 것.\n\n**개입.** 어긋난 벽의 원인을 열거나, 실험 재개를 서명할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 10 | 원칙 60 | 공개 45 | 자격 50 | 분산 15 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 30 | 과시 −15 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

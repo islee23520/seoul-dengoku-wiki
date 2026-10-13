@@ -392,6 +392,142 @@
     "id": "K309",
     "personId": "person-0310"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k309-platform-queue-allocation",
+        "name": {
+          "ko": "승강장 줄 배치",
+          "en": "Platform queue allocation"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k309-priority",
+        "name": {
+          "ko": "사람 칸의 구분",
+          "en": "Distinguishes people queues"
+        },
+        "description": {
+          "ko": "용봉은 들것과 하역 순서를 승강장에서 나눈다. 무기 상자 소문은 실제 적재 확인으로 바꾸지 않는다.",
+          "en": "Yongbong separates stretcher and unloading order at the platform. Weapon-box rumors are not confirmed loading."
+        },
+        "behavior": {
+          "ko": "승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.",
+          "en": "Office. Rank: clerk. Title: Mangu transfer platform outpost chief. He pasted the platform queue and the severity table on one chalkboard and stood no armed waiting line without the examiner's attendance."
+        },
+        "stress": {
+          "ko": "북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.",
+          "en": "Fear. That the platform piled with the southward column of Bukhansan Bogukmun would be mistaken for munitions unloading."
+        },
+        "relationship": {
+          "ko": "전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.",
+          "en": "Relations. Received Jeon Miri's stretcher order at the platform and split the queue with Bok Bong's unloading order. Pasted Jang Sehwa's neutrality declaration on the platform wall."
+        },
+        "effects": []
+      },
+      {
+        "id": "k309-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.",
+          "en": "Office. Rank: clerk. Title: Mangu transfer platform outpost chief. He pasted the platform queue and the severity table on one chalkboard and stood no armed waiting line without the examiner's attendance."
+        },
+        "stress": {
+          "ko": "공포. 북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.",
+          "en": "Fear. That the platform piled with the southward column of Bukhansan Bogukmun would be mistaken for munitions unloading."
+        },
+        "relationship": {
+          "ko": "관계. 전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.",
+          "en": "Relations. Received Jeon Miri's stretcher order at the platform and split the queue with Bok Bong's unloading order. Pasted Jang Sehwa's neutrality declaration on the platform wall."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "용봉은 들것과 하역 순서를 승강장에서 나눈다. 무기 상자 소문은 실제 적재 확인으로 바꾸지 않는다.",
+      "en": "Yongbong separates stretcher and unloading order at the platform. Weapon-box rumors are not confirmed loading."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -773,7 +909,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 망우 환승 승강장 거점장 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.",
     "일화": "북한산보국문 남하 행렬이 신내 승강장에 쌓이자 망우 쪽 줄까지 무기가 든 상자처럼 소문이 퍼졌다.",
     "관계": "전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.",
@@ -781,7 +916,7 @@
     "공포": "북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.",
     "개입": "승강장 화물을 공개 검수하거나, 환자 줄을 군수 대기열과 분리할 수 있다."
   },
-  "biography": "말단 노선의 지연을 모욕처럼 기억하고, 승강장을 하역장으로 부르는 상인을 마이크 없이 내려보낸다. 환자 줄과 화물 줄을 한눈에 나눈다.\n\n- 생업: 승강장 대기열·중증도 표 게시\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 망우 환승 승강장 거점장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 망우 환승 승강장 거점장 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.\n\n**일화.** 북한산보국문 남하 행렬이 신내 승강장에 쌓이자 망우 쪽 줄까지 무기가 든 상자처럼 소문이 퍼졌다.\n\n**관계.** 전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.\n\n**야망.** 망우 승강장을 중립 환승의 얼굴로 남겨 노선 면허 밖의 호송료 창구를 승강장에 열지 못하게 한다.\n\n**공포.** 북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.\n\n**개입.** 승강장 화물을 공개 검수하거나, 환자 줄을 군수 대기열과 분리할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 35 | 무력 −25 | 물질 −5 | 공동 25 | 원칙 10 | 공개 20 | 자격 25 | 분산 40 | 변혁 5\n- 욕망: 갈망 10 | 독점 −10 | 위험 10 | 과시 −15 | 지속 −10 | 지향 유동 | 결합 다자\n:::",
+  "biography": "말단 노선의 지연을 모욕처럼 기억하고, 승강장을 하역장으로 부르는 상인을 마이크 없이 내려보낸다. 환자 줄과 화물 줄을 한눈에 나눈다.\n\n- 생업: 승강장 대기열·중증도 표 게시\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 망우 환승 승강장 거점장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 망우 환승 승강장 거점장 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 서기. 직함은 망우 환승 승강장 거점장. 승강장 줄과 중증도 표를 같은 칠판에 붙이고, 무장 대기열은 심사관 입회 없이 세우지 않는다.\n\n**일화.** 북한산보국문 남하 행렬이 신내 승강장에 쌓이자 망우 쪽 줄까지 무기가 든 상자처럼 소문이 퍼졌다.\n\n**관계.** 전미리의 들것 순서를 승강장에서 받고, 복봉의 하역 순서와 줄을 나눈다. 장세화의 중립 호송 지시를 승강장 벽에 붙인다.\n\n**야망.** 망우 승강장을 중립 환승의 얼굴로 남겨 노선 면허 밖의 호송료 창구를 승강장에 열지 못하게 한다.\n\n**공포.** 북한산보국문 남하 행렬이 쌓인 승강장이 군수 하역으로 오인되는 것.\n\n**개입.** 승강장 화물을 공개 검수하거나, 환자 줄을 군수 대기열과 분리할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 35 | 무력 −25 | 물질 −5 | 공동 25 | 원칙 10 | 공개 20 | 자격 25 | 분산 40 | 변혁 5\n- 욕망: 갈망 10 | 독점 −10 | 위험 10 | 과시 −15 | 지속 −10 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],

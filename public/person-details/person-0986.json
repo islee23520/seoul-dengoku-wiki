@@ -287,6 +287,150 @@
     "id": "K986",
     "personId": "person-0986"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "closure",
+        "name": {
+          "ko": "위험 구간 폐쇄",
+          "en": "Hazardous-route closure"
+        },
+        "rating": 45
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "close-hazardous-sections",
+        "name": {
+          "ko": "위험 구간 닫기",
+          "en": "Close Hazardous Sections"
+        },
+        "description": {
+          "ko": "류숲현은 침수 구간의 붕괴 위험에 지체 없이 폐쇄로 대응한 사람이다.",
+          "en": "Ryu Suphyeon responded to collapse danger in a flooded section by closing it without delay."
+        },
+        "behavior": {
+          "ko": "침수 구간 붕괴 보고를 미루지 않고 해당 구간을 당장 폐쇄했다.",
+          "en": "They did not delay the flooded-section collapse report and closed the section immediately."
+        },
+        "stress": {
+          "ko": "붕괴 위험과 통행 유지의 부담이 충돌하면 위험 구간의 폐쇄를 우선할 수 있다.",
+          "en": "If collapse danger conflicts with pressure to maintain passage, they may prioritize closing the hazardous section."
+        },
+        "relationship": {
+          "ko": "통행을 계속하려는 상대와 조율해야 한다면 붕괴 보고를 폐쇄 판단의 근거로 제시할 수 있다.",
+          "en": "When coordinating with someone seeking continued passage, they may cite the collapse report as grounds for closure."
+        },
+        "effects": []
+      },
+      {
+        "id": "explicit-departure-conditions",
+        "name": {
+          "ko": "명시된 출발 조건",
+          "en": "Explicit Departure Conditions"
+        },
+        "description": {
+          "ko": "류숲현의 출발 조건 중시는 보고된 위험과 구간의 개폐 상태를 분명히 하는 성향으로 해석된다.",
+          "en": "Ryu Suphyeon's concern for departure conditions is understood as keeping reported danger and section closure status explicit."
+        },
+        "behavior": {
+          "ko": "확인된 행동은 붕괴 보고를 미루지 않고 위험 구간을 폐쇄해 통행 가능 범위를 제한한 것이다.",
+          "en": "The documented action is promptly handling the collapse report and closing the section to restrict where passage could continue."
+        },
+        "stress": {
+          "ko": "통행 재개를 서둘러야 한다는 부담이 있어도 보고된 위험을 출발 판단에서 빼지 않으려 할 수 있다.",
+          "en": "Even under pressure to resume passage, they may resist excluding reported danger from departure decisions."
+        },
+        "relationship": {
+          "ko": "인계 상대와 이동 가능 여부를 확인한다면 폐쇄 구간과 보고 내용을 공유 기준으로 삼을 수 있다.",
+          "en": "When checking movement availability with a handover partner, they may use the closed section and report as shared criteria."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "붕괴 보고를 미루지 않고 구간을 폐쇄했다. 출발 조건과 위험 보고의 좁은 실적이며 전문 방재 지휘는 확인되지 않는다.",
+      "en": "She promptly closed a section on collapse reports. Departure safeguards and reporting are narrow achievements; professional disaster command is not established."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -636,7 +780,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -644,7 +787,7 @@
     "공포": "인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −25 | 물질 5 | 공동 −10 | 원칙 55 | 공개 55 | 자격 40 | 분산 10 | 변혁 0\n- 욕망: 갈망 −5 | 독점 35 | 위험 20 | 과시 30 | 지속 −10 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −25 | 물질 5 | 공동 −10 | 원칙 55 | 공개 55 | 자격 40 | 분산 10 | 변혁 0\n- 욕망: 갈망 −5 | 독점 35 | 위험 20 | 과시 30 | 지속 −10 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

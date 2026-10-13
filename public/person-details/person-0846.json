@@ -374,6 +374,142 @@
     "id": "K846",
     "personId": "person-0846"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "people-ledger-preservation",
+        "name": {
+          "ko": "인명 장부 보존",
+          "en": "People ledger preservation"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k846-disposition",
+        "name": {
+          "ko": "화물보다 사람 기록",
+          "en": "People records before cargo"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: convoy courier. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Jacob Thomas gives Park Taegyeom’s counter the personnel ledger protected during a convoy. Park checks arrivals and dispatch order so people are not omitted from cargo-only arrival records."
+        },
+        "effects": []
+      },
+      {
+        "id": "k846-choice",
+        "name": {
+          "ko": "도착 인수를 중시함",
+          "en": "Actual receipt matters"
+        },
+        "description": {
+          "ko": "일화. 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, meeting a raid mid-convoy, he secured the roster of lives before the freight. By this deed the signature of the convoy courier post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Jacob Thomas gives Park Taegyeom’s counter the personnel ledger protected during a convoy. Park checks arrivals and dispatch order so people are not omitted from cargo-only arrival records."
+        },
+        "stress": {
+          "ko": "공포. 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Jacob Thomas gives Park Taegyeom’s counter the personnel ledger protected during a convoy. Park checks arrivals and dispatch order so people are not omitted from cargo-only arrival records."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "습격 중 인명 장부를 지켜 박태겸에게 넘겼다. 사람의 도착을 잇는 선택만 확인되며 격투와 전사 경력은 없다.",
+      "en": "Saves the people ledger during an attack and hands it to Park Taegyeom. Arrival accountability is supported, not fighting or warrior experience."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -751,7 +887,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 제이컵 토머스는 2083년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 새뮤얼 토머스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 제이컵 토머스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다.",
@@ -759,7 +894,7 @@
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 호송 인명 장부 보호\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 제이컵 토머스는 2083년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 새뮤얼 토머스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 제이컵 토머스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −10 | 물질 25 | 공동 −15 | 원칙 10 | 공개 0 | 자격 25 | 분산 5 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −10 | 위험 5 | 과시 −10 | 지속 15 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 호송 인명 장부 보호\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 제이컵 토머스는 2083년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 새뮤얼 토머스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 제이컵 토머스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다. 박태겸은 도착 인원·배차 순서를 확인해 화물만 도착한 기록에 사람이 빠지지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −10 | 물질 25 | 공동 −15 | 원칙 10 | 공개 0 | 자격 25 | 분산 5 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −10 | 위험 5 | 과시 −10 | 지속 15 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],

@@ -392,6 +392,142 @@
     "id": "K417",
     "personId": "person-0418"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "draft-comparison",
+        "name": {
+          "ko": "통일안 문안 비교",
+          "en": "Unification draft comparison"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "경쟁 초안을 남김",
+          "en": "Preserves competing drafts"
+        },
+        "description": {
+          "ko": "초안 한 건만 남자 방송으로 알리고 경쟁 문안의 서명자와 거부권자를 다시 적었다. 권력 형식의 문장 차이를 읽는다.",
+          "en": "Broadcasts the loss of competing drafts and relists signatories and veto holders. Reads distinctions between political forms in the wording."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 경쟁 초안을 남김을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "한 초안만 남으면 직접 방송할 수 있다.",
+          "en": "May broadcast personally when only one draft remains."
+        },
+        "relationship": {
+          "ko": "윤서린의 연방안과 정유라의 협약을 나란히 둔다.",
+          "en": "Places Yun Seorin’s federation draft beside Jeong Yura’s agreement."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "통일안을 경쟁하는 공개 초안으로만 남겨 어느 강국도 시청역 서고를 단독 수도로 쓰지 못하게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "하나의 초안만 정서되어 자신이 패권 문서의 손이 되는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "윤서린의 연방안과 정유라의 협약을 나란히 둔다.",
+          "en": "Places Yun Seorin’s federation draft beside Jeong Yura’s agreement."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "초안 한 건만 남자 방송으로 알리고 경쟁 문안의 서명자와 거부권자를 다시 적었다. 권력 형식의 문장 차이를 읽는다.",
+      "en": "Broadcasts the loss of competing drafts and relists signatories and veto holders. Reads distinctions between political forms in the wording."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -761,7 +897,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 통일안 초안 관계자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 통일안 초안 관계자. 통일안별 서명자와 거부권자를 벽에 적고, 위원장 직접선거로 확인된 조합원 투표 출석과 집계가 없으면 채택을 받지 않는다.",
     "일화": "하서진의 초안함을 열자 통일안 초안 한 건만 남고 나머지 자리가 비어 있다. 매도한은 방송을 직접 잡아 빈 초안함을 알리고, 윤서린의 기록연방 문안과 정유라의 다국가협약을 벽에 나란히 붙인 뒤 서명자와 거부권자를 초안별로 다시 적는다.",
     "관계": "하서진의 초안함을 관계자 자격으로 열고, 윤서린의 기록연방 문안과 정유라의 다국가협약을 나란히 둔다. 선한솜의 지하 방어와 함 온도를 맞춘다.",
@@ -769,7 +904,7 @@
     "공포": "하나의 초안만 정서되어 자신이 패권 문서의 손이 되는 것.",
     "개입": "태운 서식의 재를 증거로 남기거나, 한 초안만 남겨 패권 서명을 밀 수 있다."
   },
-  "biography": "연방·동맹·보호국의 문장 차이를 읽는다. 초안 함이 비면 방송을 직접 잡는다.\n\n- 생업: 통일안 서명자·거부권자·투표 집계 기록\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 통일안 초안 관계자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 통일안 초안 관계자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 통일안 초안 관계자. 통일안별 서명자와 거부권자를 벽에 적고, 위원장 직접선거로 확인된 조합원 투표 출석과 집계가 없으면 채택을 받지 않는다.\n\n**일화.** 하서진의 초안함을 열자 통일안 초안 한 건만 남고 나머지 자리가 비어 있다. 매도한은 방송을 직접 잡아 빈 초안함을 알리고, 윤서린의 기록연방 문안과 정유라의 다국가협약을 벽에 나란히 붙인 뒤 서명자와 거부권자를 초안별로 다시 적는다.\n\n**관계.** 하서진의 초안함을 관계자 자격으로 열고, 윤서린의 기록연방 문안과 정유라의 다국가협약을 나란히 둔다. 선한솜의 지하 방어와 함 온도를 맞춘다.\n\n**야망.** 통일안을 경쟁하는 공개 초안으로만 남겨 어느 강국도 시청역 서고를 단독 수도로 쓰지 못하게 한다.\n\n**공포.** 하나의 초안만 정서되어 자신이 패권 문서의 손이 되는 것.\n\n**개입.** 태운 서식의 재를 증거로 남기거나, 한 초안만 남겨 패권 서명을 밀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 20 | 무력 −25 | 물질 −5 | 공동 20 | 원칙 30 | 공개 20 | 자격 10 | 분산 40 | 변혁 10\n- 욕망: 갈망 45 | 독점 30 | 위험 10 | 과시 5 | 지속 25 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "연방·동맹·보호국의 문장 차이를 읽는다. 초안 함이 비면 방송을 직접 잡는다.\n\n- 생업: 통일안 서명자·거부권자·투표 집계 기록\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 통일안 초안 관계자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 통일안 초안 관계자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 통일안 초안 관계자. 통일안별 서명자와 거부권자를 벽에 적고, 위원장 직접선거로 확인된 조합원 투표 출석과 집계가 없으면 채택을 받지 않는다.\n\n**일화.** 하서진의 초안함을 열자 통일안 초안 한 건만 남고 나머지 자리가 비어 있다. 매도한은 방송을 직접 잡아 빈 초안함을 알리고, 윤서린의 기록연방 문안과 정유라의 다국가협약을 벽에 나란히 붙인 뒤 서명자와 거부권자를 초안별로 다시 적는다.\n\n**관계.** 하서진의 초안함을 관계자 자격으로 열고, 윤서린의 기록연방 문안과 정유라의 다국가협약을 나란히 둔다. 선한솜의 지하 방어와 함 온도를 맞춘다.\n\n**야망.** 통일안을 경쟁하는 공개 초안으로만 남겨 어느 강국도 시청역 서고를 단독 수도로 쓰지 못하게 한다.\n\n**공포.** 하나의 초안만 정서되어 자신이 패권 문서의 손이 되는 것.\n\n**개입.** 태운 서식의 재를 증거로 남기거나, 한 초안만 남겨 패권 서명을 밀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 20 | 무력 −25 | 물질 −5 | 공동 20 | 원칙 30 | 공개 20 | 자격 10 | 분산 40 | 변혁 10\n- 욕망: 갈망 45 | 독점 30 | 위험 10 | 과시 5 | 지속 25 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-16"
   ],

@@ -14,6 +14,14 @@ import nameChanges from '../../scripts/person-sheet-name-changes.json'
 import preservationBaseline from '../../scripts/issued-preservation-baseline.json'
 
 type Relation = { from: string; type: string; to: string; basis: string }
+type ProfileText = { readonly ko: string; readonly en: string }
+type PublicCharacterProfile = {
+  readonly abilities: Readonly<Record<string, { readonly base: number; readonly effective: number }>>
+  readonly skills: readonly { readonly id: string; readonly name: ProfileText; readonly rating: number }[]
+  readonly traits: readonly { readonly id: string; readonly name: ProfileText; readonly description: ProfileText; readonly behavior: ProfileText; readonly stress: ProfileText; readonly relationship: ProfileText; readonly effects: readonly { readonly ability: string; readonly delta: number }[] }[]
+  readonly narrative: ProfileText
+  readonly health: { readonly status: string; readonly bodyParts: readonly { readonly id: string; readonly severity: string | null; readonly function: string | null }[]; readonly diseases: readonly { readonly id: string; readonly progression: string | null }[] }
+}
 type ConfirmedHolding = {
   readonly id: string
   readonly name: { readonly ko: string }
@@ -39,6 +47,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   retinueGroups?: readonly { id: string; name: { ko: string }; count: number; duties: readonly string[] }[]
   gurps: { readonly id: string; readonly personId: string }
   personSheet: unknown
+  characterProfile?: PublicCharacterProfile
   unit?: { type: string; size: number; quality: string; composition: string[]; note: string } | null
   territory?: { fief_name: string; type: string; station: string; state: string; settlement: { name: string; type: string; description: string }; note: string } | null
   wandering_force?: { type: string; size: number; current_location: string; camp: { name: string; type: string; description: string; facilities: string[]; pack_up_time: string }; note: string } | null
@@ -60,7 +69,7 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
   relations: { outgoing: Relation[]; incoming: Relation[] }
 }
 
-const sectionOrder = ['생애', '관직', '무공', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입']
+const sectionOrder = ['생애', '관직', '훈련', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입']
 
 export function PersonSections({ sections, feedback = false }: { sections: Record<string, string>; feedback?: boolean }): JSX.Element {
   return <>{sectionOrder.filter((label) => sections[label]).map((label) => (
@@ -75,6 +84,23 @@ function DataTable({ title, rows }: { title: string; rows: Array<Array<string | 
       <div className="wiki-table-wrap"><table className="person-data-table"><tbody>{rows.map((row, i) => <tr key={i}><th>{row[0]}</th><td>{row[1] === null || row[1] === undefined ? '—' : String(row[1])}</td></tr>)}</tbody></table></div>
     </section>
   )
+}
+
+const abilityLabels: Readonly<Record<string, string>> = { leadership: '통솔', strategy: '전략', negotiation: '교섭', management: '운영', insight: '통찰', learning: '학습', prowess: '기량', endurance: '체력' }
+const bodyLabels: Readonly<Record<string, string>> = { 'left-arm': '왼팔', 'right-arm': '오른팔', 'left-leg': '왼다리', 'right-leg': '오른다리', head: '머리', torso: '몸통' }
+
+export function CharacterProfile({ profile }: { readonly profile: PublicCharacterProfile }): JSX.Element {
+  return <section data-character-profile>
+    <h2>역량과 특성</h2>
+    <p>{profile.narrative.ko}</p>
+    <div className="wiki-table-wrap"><table className="person-data-table"><caption>기본 역량과 현재 최종 역량</caption><thead><tr><th scope="col">역량</th><th scope="col">기본</th><th scope="col">최종</th></tr></thead><tbody>{Object.entries(abilityLabels).map(([id, label]) => <tr key={id}><th scope="row">{label}</th><td>{profile.abilities[id].base}</td><td>{profile.abilities[id].effective}</td></tr>)}</tbody></table></div>
+    <p>기본 역량 10은 해당 분야 숙련자 수준입니다. 기본 상한은 20, 모든 효과를 반영한 최종 상한은 100입니다.</p>
+    <h3>행동 숙련</h3>
+    {profile.skills.length ? <div className="wiki-table-wrap"><table className="person-data-table"><thead><tr><th scope="col">숙련</th><th scope="col">수준</th></tr></thead><tbody>{profile.skills.map(skill => <tr key={skill.id}><th scope="row">{skill.name.ko}</th><td>{skill.rating.toFixed(1)}</td></tr>)}</tbody></table></div> : <p>확인된 행동 숙련이 없습니다. 미확인은 숙련 0과 다릅니다.</p>}
+    <h3>특성</h3>
+    {profile.traits.map(trait => <section key={trait.id}><h4>{trait.name.ko}</h4><p>{trait.description.ko}</p><dl><dt>행동</dt><dd>{trait.behavior.ko}</dd><dt>스트레스</dt><dd>{trait.stress.ko}</dd><dt>관계</dt><dd>{trait.relationship.ko}</dd></dl>{trait.effects.length > 0 && <p>{trait.effects.map(effect => `${abilityLabels[effect.ability]} ${effect.delta >= 0 ? '+' : ''}${effect.delta}`).join(' · ')}</p>}</section>)}
+    <details><summary>신체 상태</summary><p>{profile.health.status === 'unassessed' ? '신체 상태는 아직 평가되지 않았습니다.' : profile.health.status}</p><div className="wiki-table-wrap"><table className="person-data-table"><thead><tr><th scope="col">부위</th><th scope="col">손상 정도</th><th scope="col">기능 상태</th></tr></thead><tbody>{profile.health.bodyParts.map(part => <tr key={part.id}><th scope="row">{bodyLabels[part.id]}</th><td>{part.severity ?? '미평가'}</td><td>{part.function ?? '미평가'}</td></tr>)}</tbody></table></div><h4>질병 진행</h4>{profile.health.diseases.length ? <ul>{profile.health.diseases.map(disease => <li key={disease.id}>{disease.id} · {disease.progression ?? '미평가'}</li>)}</ul> : <p>확인된 질병 진행 기록이 없습니다. 기록 부재는 건강 판정이 아닙니다.</p>}</details>
+  </section>
 }
 
 const permissionLabels: Record<PermissionStatus, string> = {
@@ -323,7 +349,7 @@ export function PreservedPersonSheet({ payload, identity }: { readonly payload: 
   const selected = selectPreservedSheet(payload, identity, revision)
   return <section className="person-data-section" data-person-sheet>
     <h2>인물 시트</h2>
-    <p data-original-ratings="unassigned">새 규칙은 d10 대항 판정, 등급 0–12, 합산 보정 −4–+4입니다. 이 인물의 새 등급과 보정은 미배정입니다.</p>
+    <p data-original-ratings="historical">아래는 보존된 역사 시트입니다. 현재 역량·숙련·특성은 위의 새 인물 profile을 따르며, 역사 수치를 새 규칙으로 환산하지 않습니다.</p>
     <div className="people-filters">
       <label htmlFor={'sheet-revision-' + identity.personId}>역사 시트 리비전</label>
       <select id={'sheet-revision-' + identity.personId} value={revision} onChange={event => setRevision(event.currentTarget.value)}>
@@ -522,6 +548,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
           <h2>정본 상세</h2>
           {feedback ? <FeedbackSurface rootRef={proseRef} documentInfo={feedback} onBound={setFeedbackBound}>{canonicalProse}</FeedbackSurface> : <><PersonSections sections={detail.sections} /><details><summary>정본 카드 원문 전체</summary><ReactMarkdown remarkPlugins={[remarkGfm]}>{detail.biography}</ReactMarkdown></details></>}
 
+          {detail.characterProfile && <CharacterProfile profile={detail.characterProfile} />}
           <PreservedPersonSheet key={personId} payload={detail.personSheet} identity={{ id: detail.characterId, personId, name: detail.name, state: detail.state }} />
           {detail.unit && <section className="gurps-unit">
             <h2>부대</h2>

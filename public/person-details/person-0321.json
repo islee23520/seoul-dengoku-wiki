@@ -397,6 +397,142 @@
     "id": "K320",
     "personId": "person-0321"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k320-evacuation-record-review",
+        "name": {
+          "ko": "피난 기록 대조",
+          "en": "Evacuation record review"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k320-priority",
+        "name": {
+          "ko": "대표 발언의 보존",
+          "en": "Preserves representative speech"
+        },
+        "description": {
+          "ko": "흥지완은 피난 시각과 미반환 관할을 기록하고 재서명을 요구한다. 대정전 때 문을 연 것은 선대 흥승호이며 본인 구조 성과가 아니다.",
+          "en": "Heung Jiwan records evacuation times and unreturned jurisdiction and requires new signatures. His predecessor Heung Seungho opened the door in the blackout, not Jiwan."
+        },
+        "behavior": {
+          "ko": "피난 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
+          "en": "Office. Rank: convoy hand. Title: transfer refugee crowd representative. He wrote the refugee hours and the unreturned jurisdictions on one chalkboard and accepted later corrections only with the two duty hands of the day signing again."
+        },
+        "stress": {
+          "ko": "자신의 대표 발언이 한 나라의 개발 정통성 광고로 잘려 나가는 것.",
+          "en": "Fear. That his representative speech would be clipped into one great power's advertisement of development legitimacy."
+        },
+        "relationship": {
+          "ko": "안도한의 배차 칠판에서 피난 칸을 지키고, 국용의 의무실 들것과 줄을 나눈다. 윤서린의 교차검증에 대정전 일지를 바친다.",
+          "en": "Relations. Kept the refugee car at An Dohan's dispatch chalkboard and split the queue with Guk Yong's infirmary stretchers. Offered the Great Blackout logs to Yun Seorin's cross-verification."
+        },
+        "effects": []
+      },
+      {
+        "id": "k320-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 환승 피난 인파 대표. 피난 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
+          "en": "Office. Rank: convoy hand. Title: transfer refugee crowd representative. He wrote the refugee hours and the unreturned jurisdictions on one chalkboard and accepted later corrections only with the two duty hands of the day signing again."
+        },
+        "stress": {
+          "ko": "공포. 자신의 대표 발언이 한 나라의 개발 정통성 광고로 잘려 나가는 것.",
+          "en": "Fear. That his representative speech would be clipped into one great power's advertisement of development legitimacy."
+        },
+        "relationship": {
+          "ko": "관계. 안도한의 배차 칠판에서 피난 칸을 지키고, 국용의 의무실 들것과 줄을 나눈다. 윤서린의 교차검증에 대정전 일지를 바친다.",
+          "en": "Relations. Kept the refugee car at An Dohan's dispatch chalkboard and split the queue with Guk Yong's infirmary stretchers. Offered the Great Blackout logs to Yun Seorin's cross-verification."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "흥지완은 피난 시각과 미반환 관할을 기록하고 재서명을 요구한다. 대정전 때 문을 연 것은 선대 흥승호이며 본인 구조 성과가 아니다.",
+      "en": "Heung Jiwan records evacuation times and unreturned jurisdiction and requires new signatures. His predecessor Heung Seungho opened the door in the blackout, not Jiwan."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -746,7 +882,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환승 피난 인파 대표 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 환승 피난 인파 대표. 피난 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
     "가문": "붕괴 0년 대정전의 밤에 선대 흥승호는 공동 지휘망이 끊긴 신내 승강장에서 피난 인파를 대표해 문을 열었다.",
     "관계": "안도한의 배차 칠판에서 피난 칸을 지키고, 국용의 의무실 들것과 줄을 나눈다. 윤서린의 교차검증에 대정전 일지를 바친다.",
@@ -754,7 +889,7 @@
     "공포": "자신의 대표 발언이 한 나라의 개발 정통성 광고로 잘려 나가는 것.",
     "개입": "미반환 관할 목록을 공개하거나, 잘린 발언 조각을 되찾아 대표를 보호할 수 있다."
   },
-  "biography": "대정전 밤의 승강장 어둠을 아직도 손에 쥐고, 비상권한을 피난의 구실로 부르는 말을 참지 못한다. 침묵이 길수록 대표 발언은 짧다.\n\n- 생업: 피난 시각·관할 반환 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 피난 인파 대표\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 피난 인파 대표 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 환승 피난 인파 대표. 피난 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.\n\n**가문.** 붕괴 0년 대정전의 밤에 선대 흥승호는 공동 지휘망이 끊긴 신내 승강장에서 피난 인파를 대표해 문을 열었다.\n\n**관계.** 안도한의 배차 칠판에서 피난 칸을 지키고, 국용의 의무실 들것과 줄을 나눈다. 윤서린의 교차검증에 대정전 일지를 바친다.\n\n**야망.** 대정전의 밤에 환승에 갇힌 인파의 명단을 공개 원장으로 남겨 각국 정통 다툼이 피난민을 소모품으로 쓰지 못하게 한다.\n\n**공포.** 자신의 대표 발언이 한 나라의 개발 정통성 광고로 잘려 나가는 것.\n\n**개입.** 미반환 관할 목록을 공개하거나, 잘린 발언 조각을 되찾아 대표를 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −60 | 개방 50 | 무력 −40 | 물질 −10 | 공동 35 | 원칙 0 | 공개 20 | 자격 15 | 분산 50 | 변혁 5\n- 욕망: 갈망 10 | 독점 −25 | 위험 5 | 과시 30 | 지속 40 | 지향 이성 | 결합 다자\n:::",
+  "biography": "대정전 밤의 승강장 어둠을 아직도 손에 쥐고, 비상권한을 피난의 구실로 부르는 말을 참지 못한다. 침묵이 길수록 대표 발언은 짧다.\n\n- 생업: 피난 시각·관할 반환 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 피난 인파 대표\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 피난 인파 대표 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 호송원. 직함은 환승 피난 인파 대표. 피난 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.\n\n**가문.** 붕괴 0년 대정전의 밤에 선대 흥승호는 공동 지휘망이 끊긴 신내 승강장에서 피난 인파를 대표해 문을 열었다.\n\n**관계.** 안도한의 배차 칠판에서 피난 칸을 지키고, 국용의 의무실 들것과 줄을 나눈다. 윤서린의 교차검증에 대정전 일지를 바친다.\n\n**야망.** 대정전의 밤에 환승에 갇힌 인파의 명단을 공개 원장으로 남겨 각국 정통 다툼이 피난민을 소모품으로 쓰지 못하게 한다.\n\n**공포.** 자신의 대표 발언이 한 나라의 개발 정통성 광고로 잘려 나가는 것.\n\n**개입.** 미반환 관할 목록을 공개하거나, 잘린 발언 조각을 되찾아 대표를 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −60 | 개방 50 | 무력 −40 | 물질 −10 | 공동 35 | 원칙 0 | 공개 20 | 자격 15 | 분산 50 | 변혁 5\n- 욕망: 갈망 10 | 독점 −25 | 위험 5 | 과시 30 | 지속 40 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],

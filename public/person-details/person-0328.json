@@ -393,6 +393,142 @@
     "id": "K327",
     "personId": "person-0328"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "triage-care",
+        "name": {
+          "ko": "중증도 진료",
+          "en": "Triage care"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "진료권을 지키는 의사",
+          "en": "Defender of clinical judgment"
+        },
+        "description": {
+          "ko": "처방량을 나눠 치료 접근을 유지하고 진료 거부권을 중증도 원칙에 묶는다. 임상 판단과 배분은 확인되지만 전투 경력은 없다.",
+          "en": "Dividing scarce prescriptions preserves access while triage constrains refusal of care. Clinical judgment and allocation are supported; combat experience is not recorded."
+        },
+        "behavior": {
+          "ko": "목소리가 작아도 임상 판단에서 물러서지 않는다. 진료의 중립 원칙을 권리로 바꿔 말하길 좋아한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "Quiet of voice, he did not step back at a vote. He liked to recast the guild's charity as a right."
+        },
+        "stress": {
+          "ko": "공포. 자신이 강국의 꼭두각시 환자로 낙인찍혀 의료 지휘부에서 축출되는 것.",
+          "en": "Fear. That he would be branded a great power's puppet patient and expelled from the council."
+        },
+        "relationship": {
+          "ko": "관계. 류은비와 표결을 공유하고, 심달호의 선매를 감시하며, 백온에게 북한산보국문 병상 할당을 약속했다.",
+          "en": "Relations. Shared the vote with Ryu Eunbi, watched Sim Dalho's pre-buying, and promised Baek On the Bukhansan Bogukmun sickbed allocation."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 전문의. 직함은 중증도 진료 전문의. 병상 대기 명부를 시장 입구에 붙이고, 비공개 치료 계약은 담당 전문의와 단장의 임상 승인 없이 무효라고 선언한다.",
+          "en": "Office. Rank: section chief. Title: patients' council representative. He posted the sickbed waiting list at the market gate and declared every private care contract void without three trade stamps."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 중증도 진료 전문의. 병상 대기 명부를 시장 입구에 붙이고, 비공개 치료 계약은 담당 전문의와 단장의 임상 승인 없이 무효라고 선언한다.",
+          "en": "Recorded duty and limits: Office. Rank: section chief. Title: patients' council representative. He posted the sickbed waiting list at the market gate and declared every private care contract void without three trade stamps."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 자신이 강국의 꼭두각시 환자로 낙인찍혀 의료 지휘부에서 축출되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That he would be branded a great power's puppet patient and expelled from the council."
+        },
+        "relationship": {
+          "ko": "관계. 류은비와 표결을 공유하고, 심달호의 선매를 감시하며, 백온에게 북한산보국문 병상 할당을 약속했다.",
+          "en": "Relations. Shared the vote with Ryu Eunbi, watched Sim Dalho's pre-buying, and promised Baek On the Bukhansan Bogukmun sickbed allocation."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "처방량을 나눠 치료 접근을 유지하고 진료 거부권을 중증도 원칙에 묶는다. 임상 판단과 배분은 확인되지만 전투 경력은 없다.",
+      "en": "Dividing scarce prescriptions preserves access while triage constrains refusal of care. Clinical judgment and allocation are supported; combat experience is not recorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -814,7 +950,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 중증도 진료 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 전문의. 직함은 중증도 진료 전문의. 병상 대기 명부를 시장 입구에 붙이고, 비공개 치료 계약은 담당 전문의와 단장의 임상 승인 없이 무효라고 선언한다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 중증도 진료 전문의 자리의 서명이 장부에 올랐다.",
     "관계": "류은비와 표결을 공유하고, 심달호의 선매를 감시하며, 백온에게 북한산보국문 병상 할당을 약속했다.",
@@ -822,7 +957,7 @@
     "공포": "자신이 강국의 꼭두각시 환자로 낙인찍혀 의료 지휘부에서 축출되는 것.",
     "개입": "허위 동의서의 필적을 가리거나, 전솔의 진료 거부권을 공개 지지해 진료 지휘 혼선을 막을 수 있다."
   },
-  "biography": "목소리가 작아도 임상 판단에서 물러서지 않는다. 진료의 중립 원칙을 권리로 바꿔 말하길 좋아한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 병상 대기 명부·비공개 치료 계약 심사\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 중증도 진료 전문의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 중증도 진료 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 전문의. 직함은 중증도 진료 전문의. 병상 대기 명부를 시장 입구에 붙이고, 비공개 치료 계약은 담당 전문의와 단장의 임상 승인 없이 무효라고 선언한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 중증도 진료 전문의 자리의 서명이 장부에 올랐다.\n\n**관계.** 류은비와 표결을 공유하고, 심달호의 선매를 감시하며, 백온에게 북한산보국문 병상 할당을 약속했다.\n\n**야망.** 담당 전문의의 진료 거부권을 중증도 우선 원칙으로 남겨 강국 부상자를 밀어내는 밀약을 막는다.\n\n**공포.** 자신이 강국의 꼭두각시 환자로 낙인찍혀 의료 지휘부에서 축출되는 것.\n\n**개입.** 허위 동의서의 필적을 가리거나, 전솔의 진료 거부권을 공개 지지해 진료 지휘 혼선을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 35 | 무력 −70 | 물질 −25 | 공동 15 | 원칙 40 | 공개 15 | 자격 30 | 분산 30 | 변혁 −10\n- 욕망: 갈망 −10 | 독점 5 | 위험 −10 | 과시 25 | 지속 −5 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "목소리가 작아도 임상 판단에서 물러서지 않는다. 진료의 중립 원칙을 권리로 바꿔 말하길 좋아한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 병상 대기 명부·비공개 치료 계약 심사\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 중증도 진료 전문의\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 중증도 진료 전문의 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 전문의. 직함은 중증도 진료 전문의. 병상 대기 명부를 시장 입구에 붙이고, 비공개 치료 계약은 담당 전문의와 단장의 임상 승인 없이 무효라고 선언한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 중증도 진료 전문의 자리의 서명이 장부에 올랐다.\n\n**관계.** 류은비와 표결을 공유하고, 심달호의 선매를 감시하며, 백온에게 북한산보국문 병상 할당을 약속했다.\n\n**야망.** 담당 전문의의 진료 거부권을 중증도 우선 원칙으로 남겨 강국 부상자를 밀어내는 밀약을 막는다.\n\n**공포.** 자신이 강국의 꼭두각시 환자로 낙인찍혀 의료 지휘부에서 축출되는 것.\n\n**개입.** 허위 동의서의 필적을 가리거나, 전솔의 진료 거부권을 공개 지지해 진료 지휘 혼선을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 35 | 무력 −70 | 물질 −25 | 공동 15 | 원칙 40 | 공개 15 | 자격 30 | 분산 30 | 변혁 −10\n- 욕망: 갈망 −10 | 독점 5 | 위험 −10 | 과시 25 | 지속 −5 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

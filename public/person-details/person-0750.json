@@ -392,6 +392,142 @@
     "id": "K750",
     "personId": "person-0750"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "departure-check",
+        "name": {
+          "ko": "출발 확인",
+          "en": "Departure checking"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k750-disposition",
+        "name": {
+          "ko": "무표 호송 거부",
+          "en": "Refusing undocumented convoys"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "She chose the side that kept the duty line unbroken first. She trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: convoy courier. She handed over only the keys and records of her own post, and never made authority she did not hold."
+        },
+        "stress": {
+          "ko": "공포. 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Olena Melnyk reports a convoy missing its departure signature to Eva Nováková. Eva checks boarding certification and slot occupation so an unverified train is not released merely by adding a record."
+        },
+        "effects": []
+      },
+      {
+        "id": "k750-choice",
+        "name": {
+          "ko": "형식 보충에 멈추지 않음",
+          "en": "Beyond filling forms"
+        },
+        "description": {
+          "ko": "일화. 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 she stopped a dispatch-sheetless train and blocked an unsigned departure. By this deed the signature of the convoy courier post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Olena Melnyk reports a convoy missing its departure signature to Eva Nováková. Eva checks boarding certification and slot occupation so an unverified train is not released merely by adding a record."
+        },
+        "stress": {
+          "ko": "공포. 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Olena Melnyk reports a convoy missing its departure signature to Eva Nováková. Eva checks boarding certification and slot occupation so an unverified train is not released merely by adding a record."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "무표 출발을 세워 에바에게 알렸다. 서명 보충만으로 운행시키지 않으려 확인에 넘기지만 광범위한 배차 숙련은 없다.",
+      "en": "Stops an undocumented departure and notifies Eva. Refers it beyond mere signature completion without broad dispatch proficiency."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -737,7 +873,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 올레나 멜니크는 2092년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 미콜라 멜니크는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올레나 멜니크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.",
@@ -745,7 +880,7 @@
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 올레나 멜니크는 2092년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 미콜라 멜니크는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올레나 멜니크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 −5 | 물질 20 | 공동 −20 | 원칙 −5 | 공개 −5 | 자격 35 | 분산 5 | 변혁 −5\n- 욕망: 갈망 35 | 독점 20 | 위험 −10 | 과시 −5 | 지속 −5 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 무표 열차 출발·서명 확인\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 올레나 멜니크는 2092년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 미콜라 멜니크는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올레나 멜니크의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 올레나 멜니크는 출발 서명이 빠진 호송을 에바 노바코바에게 알린다. 에바 노바코바는 탑승 증명·창 점유를 확인해 기록만 보충하고 미확인 열차가 나가지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 30 | 무력 −5 | 물질 20 | 공동 −20 | 원칙 −5 | 공개 −5 | 자격 35 | 분산 5 | 변혁 −5\n- 욕망: 갈망 35 | 독점 20 | 위험 −10 | 과시 −5 | 지속 −5 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

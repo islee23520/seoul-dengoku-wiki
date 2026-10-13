@@ -413,6 +413,118 @@
     "id": "K144",
     "personId": "person-0145"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 12,
+        "effective": 12
+      },
+      "strategy": {
+        "base": 12,
+        "effective": 12
+      },
+      "negotiation": {
+        "base": 12,
+        "effective": 12
+      },
+      "management": {
+        "base": 15,
+        "effective": 15
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 13,
+        "effective": 13
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k144-ratification-review",
+        "name": {
+          "ko": "인준 검토",
+          "en": "Ratification review"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k144-trait-1",
+        "name": {
+          "ko": "확인과 인준 사이",
+          "en": "Checking before ratification"
+        },
+        "description": {
+          "ko": "봉인 확인을 인준으로 바꾸지 않는다.",
+          "en": "Does not turn a seal check into ratification."
+        },
+        "behavior": {
+          "ko": "봉인 확인을 인준으로 바꾸지 않는다.",
+          "en": "Does not turn a seal check into ratification."
+        },
+        "stress": {
+          "ko": "서부안의 빚과 거부권 손실 사이에서 결재를 보류한다.",
+          "en": "Holds approval between debt from blocking and lost veto rights from signing."
+        },
+        "relationship": {
+          "ko": "한재목·정유라와 효력 발급을 둘러싸고 다툰다.",
+          "en": "Disputes validation with Han Jaemok and Jeong Yura."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "세 유언을 접수하고 봉인은 확인했으나 인준하지 않았다. 기록의 지속과 계약 효력을 다루는 실무가 강점이다. 서부안을 막으면 빚이 늘고 찍으면 양천 거부권을 해칠 수 있다는 갈등이 남아 있다.",
+      "en": "She checked the seals of three received wills without ratifying them. Record continuity and contract validation are strengths. Blocking the western proposal adds debt, while stamping it threatens Yangcheon’s veto."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -5651,12 +5763,11 @@
   "sections": {
     "생애": "2126년 세대. 정부서울청사 본관 종로구 세종대로 209 등기 당직의 손. 기록 위조는 금지된다. 정부 도장이 없으면 도심의 급수계약은 효력이 없다. 윤서린이 대통령이 된 것은 북한산보국문기록가의 도장함을 끊기지 않게 지킨 뒤였다. 서울역기록법가의 도장함은 여리안의 것이다. 2126년 정부는 청와대에서 종로·중구의 주민 명부와 배급·인준을 맡았고, 정부서울청사 경비대는 도심 역을 지켰다. 한재목의 서부안을 멈추면 빚이 쌓이고, 찍으면 양천의 거부권이 죽는다.",
     "관직": "품계 대통령. 직함은 대한민국정부 대통령. 생업 별명은 기록청장.",
-    "무공": "없음. 생업만.",
     "일화": "세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.",
     "가문": "북한산보국문기록가(HC05). 관리인. 서울역기록법가(HP04) 관리인은 여리안이다.",
     "관계": "한재목과 인준권 분쟁. 남윤경과 배급 원장 교환. 정유라와 인준 경쟁.\n\n- 생업: 도장함 봉인·인준 보류 관리\n- 소속: 대한민국정부\n- 품계: 대통령\n- 직함: 대한민국정부 대통령\n\n기록청장 윤서린 곁에서 인준·공증·지도와 의료 이송 장부를 실제로 굴리는 실세다."
   },
-  "biography": "**생애.** 2126년 세대. 정부서울청사 본관 종로구 세종대로 209 등기 당직의 손. 기록 위조는 금지된다. 정부 도장이 없으면 도심의 급수계약은 효력이 없다. 윤서린이 대통령이 된 것은 북한산보국문기록가의 도장함을 끊기지 않게 지킨 뒤였다. 서울역기록법가의 도장함은 여리안의 것이다. 2126년 정부는 청와대에서 종로·중구의 주민 명부와 배급·인준을 맡았고, 정부서울청사 경비대는 도심 역을 지켰다. 한재목의 서부안을 멈추면 빚이 쌓이고, 찍으면 양천의 거부권이 죽는다.\n**관직.** 품계 대통령. 직함은 대한민국정부 대통령. 생업 별명은 기록청장.\n**무공.** 없음. 생업만.\n**일화.** 세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.\n**가문.** 북한산보국문기록가(HC05). 관리인. 서울역기록법가(HP04) 관리인은 여리안이다.\n**관계.** 한재목과 인준권 분쟁. 남윤경과 배급 원장 교환. 정유라와 인준 경쟁.\n\n- 생업: 도장함 봉인·인준 보류 관리\n- 소속: 대한민국정부\n- 품계: 대통령\n- 직함: 대한민국정부 대통령\n\n기록청장 윤서린 곁에서 인준·공증·지도와 의료 이송 장부를 실제로 굴리는 실세다.",
+  "biography": "**생애.** 2126년 세대. 정부서울청사 본관 종로구 세종대로 209 등기 당직의 손. 기록 위조는 금지된다. 정부 도장이 없으면 도심의 급수계약은 효력이 없다. 윤서린이 대통령이 된 것은 북한산보국문기록가의 도장함을 끊기지 않게 지킨 뒤였다. 서울역기록법가의 도장함은 여리안의 것이다. 2126년 정부는 청와대에서 종로·중구의 주민 명부와 배급·인준을 맡았고, 정부서울청사 경비대는 도심 역을 지켰다. 한재목의 서부안을 멈추면 빚이 쌓이고, 찍으면 양천의 거부권이 죽는다.\n**관직.** 품계 대통령. 직함은 대한민국정부 대통령. 생업 별명은 기록청장.\n**일화.** 세 유언이 접수됐을 때, 윤서린은 인준을 보류하고 함의 봉인만 확인했다.\n**가문.** 북한산보국문기록가(HC05). 관리인. 서울역기록법가(HP04) 관리인은 여리안이다.\n**관계.** 한재목과 인준권 분쟁. 남윤경과 배급 원장 교환. 정유라와 인준 경쟁.\n\n- 생업: 도장함 봉인·인준 보류 관리\n- 소속: 대한민국정부\n- 품계: 대통령\n- 직함: 대한민국정부 대통령\n\n기록청장 윤서린 곁에서 인준·공증·지도와 의료 이송 장부를 실제로 굴리는 실세다.",
   "sources": [
     "Cast-State-06",
     "Core-Characters"

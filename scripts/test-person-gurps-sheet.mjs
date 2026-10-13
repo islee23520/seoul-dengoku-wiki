@@ -133,7 +133,7 @@ test('mounted person selector shows preserved stats immediately and keeps both c
       assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, revision)
       assert.equal(host.querySelector('[data-legacy-operative]').dataset.legacyOperative, 'false')
       assert.deepEqual(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), source.get(revision).find(p => p.id === record.id))
-      assert.equal(host.querySelector('[data-original-ratings]').dataset.originalRatings, 'unassigned')
+      assert.equal(host.querySelector('[data-original-ratings]').dataset.originalRatings, 'historical')
       assert.equal(host.querySelector('input'), null)
     }
   } finally {

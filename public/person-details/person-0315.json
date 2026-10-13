@@ -286,6 +286,142 @@
     "id": "K314",
     "personId": "person-0315"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 3,
+        "effective": 3
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "k314-collision-timing-testimony",
+        "name": {
+          "ko": "충돌 시각 진술",
+          "en": "Collision timing testimony"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k314-priority",
+        "name": {
+          "ko": "당사자 진술 보존",
+          "en": "Preserves participant testimony"
+        },
+        "description": {
+          "ko": "탁미르는 자신이 탄 칸의 충돌 시각과 번호를 기록한다. 충돌 경험을 부상 정도나 신체 기능 추정으로 바꾸지 않는다.",
+          "en": "Tak Mireu records the time and number of the car he occupied during collision. The experience supplies no injury severity or function assessment."
+        },
+        "behavior": {
+          "ko": "충돌 시각과 칸 번호를 같은 칠판에 적고, 암사 문장이 찍힌 화물은 심사관 입회 없이 옮기지 않는다.",
+          "en": "Office. Rank: convoy hand. Title: transfer passage accident party. He wrote the collision hours and car numbers on one chalkboard and moved no freight stamped with the Amsa mark without the examiner's attendance."
+        },
+        "stress": {
+          "ko": "자신의 증언이 무기함 은폐의 면죄부가 되어 장세화의 중립이 내부에서 깨지는 것.",
+          "en": "Fear. That his testimony would become the indulgence that buried the weapons box and Jang Sehwa's neutrality would break from within."
+        },
+        "relationship": {
+          "ko": "문시온의 심사대에서 진술을 남기고, 곽태산의 수비 당직과 시각을 맞춘다. 장세화의 부서 날인이 없는 합의서는 거부해 왔다.",
+          "en": "Relations. Left a statement at Mun Sion's examination stand and matched the hours with Gwak Taesan's defense duty. He had refused any settlement without Jang Sehwa's departmental stamp."
+        },
+        "effects": []
+      },
+      {
+        "id": "k314-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 환승 통행 사고 당사자. 충돌 시각과 칸 번호를 같은 칠판에 적고, 암사 문장이 찍힌 화물은 심사관 입회 없이 옮기지 않는다.",
+          "en": "Office. Rank: convoy hand. Title: transfer passage accident party. He wrote the collision hours and car numbers on one chalkboard and moved no freight stamped with the Amsa mark without the examiner's attendance."
+        },
+        "stress": {
+          "ko": "공포. 자신의 증언이 무기함 은폐의 면죄부가 되어 장세화의 중립이 내부에서 깨지는 것.",
+          "en": "Fear. That his testimony would become the indulgence that buried the weapons box and Jang Sehwa's neutrality would break from within."
+        },
+        "relationship": {
+          "ko": "관계. 문시온의 심사대에서 진술을 남기고, 곽태산의 수비 당직과 시각을 맞춘다. 장세화의 부서 날인이 없는 합의서는 거부해 왔다.",
+          "en": "Relations. Left a statement at Mun Sion's examination stand and matched the hours with Gwak Taesan's defense duty. He had refused any settlement without Jang Sehwa's departmental stamp."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "탁미르는 자신이 탄 칸의 충돌 시각과 번호를 기록한다. 충돌 경험을 부상 정도나 신체 기능 추정으로 바꾸지 않는다.",
+      "en": "Tak Mireu records the time and number of the car he occupied during collision. The experience supplies no injury severity or function assessment."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -635,7 +771,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환승 통행 사고 당사자 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 환승 통행 사고 당사자. 충돌 시각과 칸 번호를 같은 칠판에 적고, 암사 문장이 찍힌 화물은 심사관 입회 없이 옮기지 않는다.",
     "일화": "겨울의 검은 배차표가 열리자 의료열차에서 암사제 무기가 발견되고 탁미르가 탄 환승칸이 그 열차와 이음매에서 부딪쳤다.",
     "관계": "문시온의 심사대에서 진술을 남기고, 곽태산의 수비 당직과 시각을 맞춘다. 장세화의 부서 날인이 없는 합의서는 거부해 왔다.",
@@ -643,7 +778,7 @@
     "공포": "자신의 증언이 무기함 은폐의 면죄부가 되어 장세화의 중립이 내부에서 깨지는 것.",
     "개입": "당사자 진술을 기록청까지 호송하거나, 충돌을 조작한 배차 쪽지를 찾아낼 수 있다."
   },
-  "biography": "승강장 이음매의 충격을 몸으로 기억하고, 빈 칸을 의료칸이라 우기는 쪽지를 찢는다. 말은 짧고 시각은 정확하다.\n\n- 생업: 환승 사고 시각·화물칸 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 통행 사고 당사자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 통행 사고 당사자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 환승 통행 사고 당사자. 충돌 시각과 칸 번호를 같은 칠판에 적고, 암사 문장이 찍힌 화물은 심사관 입회 없이 옮기지 않는다.\n\n**일화.** 겨울의 검은 배차표가 열리자 의료열차에서 암사제 무기가 발견되고 탁미르가 탄 환승칸이 그 열차와 이음매에서 부딪쳤다.\n\n**관계.** 문시온의 심사대에서 진술을 남기고, 곽태산의 수비 당직과 시각을 맞춘다. 장세화의 부서 날인이 없는 합의서는 거부해 왔다.\n\n**야망.** 망우 환승 충돌의 당사자 진술을 중립 호송 원장에 고정해 화물칸이 사람 칸을 다시 덮치지 못하게 한다.\n\n**공포.** 자신의 증언이 무기함 은폐의 면죄부가 되어 장세화의 중립이 내부에서 깨지는 것.\n\n**개입.** 당사자 진술을 기록청까지 호송하거나, 충돌을 조작한 배차 쪽지를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 45 | 무력 −30 | 물질 −10 | 공동 30 | 원칙 10 | 공개 20 | 자격 30 | 분산 35 | 변혁 0\n- 욕망: 갈망 −10 | 독점 5 | 위험 −20 | 과시 −15 | 지속 35 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "승강장 이음매의 충격을 몸으로 기억하고, 빈 칸을 의료칸이라 우기는 쪽지를 찢는다. 말은 짧고 시각은 정확하다.\n\n- 생업: 환승 사고 시각·화물칸 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 통행 사고 당사자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 통행 사고 당사자 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 호송원. 직함은 환승 통행 사고 당사자. 충돌 시각과 칸 번호를 같은 칠판에 적고, 암사 문장이 찍힌 화물은 심사관 입회 없이 옮기지 않는다.\n\n**일화.** 겨울의 검은 배차표가 열리자 의료열차에서 암사제 무기가 발견되고 탁미르가 탄 환승칸이 그 열차와 이음매에서 부딪쳤다.\n\n**관계.** 문시온의 심사대에서 진술을 남기고, 곽태산의 수비 당직과 시각을 맞춘다. 장세화의 부서 날인이 없는 합의서는 거부해 왔다.\n\n**야망.** 망우 환승 충돌의 당사자 진술을 중립 호송 원장에 고정해 화물칸이 사람 칸을 다시 덮치지 못하게 한다.\n\n**공포.** 자신의 증언이 무기함 은폐의 면죄부가 되어 장세화의 중립이 내부에서 깨지는 것.\n\n**개입.** 당사자 진술을 기록청까지 호송하거나, 충돌을 조작한 배차 쪽지를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 45 | 무력 −30 | 물질 −10 | 공동 30 | 원칙 10 | 공개 20 | 자격 30 | 분산 35 | 변혁 0\n- 욕망: 갈망 −10 | 독점 5 | 위험 −20 | 과시 −15 | 지속 35 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-12"
   ],

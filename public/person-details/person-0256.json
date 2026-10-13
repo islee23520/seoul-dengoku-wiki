@@ -392,6 +392,142 @@
     "id": "K255",
     "personId": "person-0256"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "assembly-messenger",
+        "name": {
+          "ko": "총회 전령·명부 확인",
+          "en": "Assembly messaging and roster checking"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "assembly-messenger-disposition",
+        "name": {
+          "ko": "이름 빠진 전달 거부",
+          "en": "Rejects delivery with missing names"
+        },
+        "description": {
+          "ko": "배급 전에 이름을 읽고 누락 때 전달을 멈춘다.",
+          "en": "Reads names before rations and stops delivery over omissions."
+        },
+        "behavior": {
+          "ko": "배급 전에 이름을 읽고 누락 때 전달을 멈춘다.",
+          "en": "Reads names before rations and stops delivery over omissions."
+        },
+        "stress": {
+          "ko": "가방이 군사호적 사본이 될 것을 두려워한다.",
+          "en": "Fears the bag becoming a military-register copy."
+        },
+        "relationship": {
+          "ko": "신보람의 가족 회의 통지를 나르고, 윤초아의 원장 필사를 숙영 게시판에 붙인다. 강민서의 시민권 문안을 전령 사본으로 옮긴다.",
+          "en": "Carries Sin Boram’s family notices, posts Yun Choa’s copies and conveys Kang Minseo’s citizenship text."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "구두 구호 기록",
+          "en": "Records oral relief"
+        },
+        "description": {
+          "ko": "구호 약속을 전령 원장에 옮기지 않으면 인정하지 않는다.",
+          "en": "Does not recognize relief promises before messenger recording."
+        },
+        "behavior": {
+          "ko": "구호 약속을 전령 원장에 옮기지 않으면 인정하지 않는다.",
+          "en": "Does not recognize relief promises before messenger recording."
+        },
+        "stress": {
+          "ko": "전령 가방이 강국 군사호적 사본으로 바뀌어 신도가 복무 숫자로만 남는 것.",
+          "en": "Fears the bag becoming a military-register copy."
+        },
+        "relationship": {
+          "ko": "신보람의 가족 회의 통지를 나르고, 윤초아의 원장 필사를 숙영 게시판에 붙인다. 강민서의 시민권 문안을 전령 사본으로 옮긴다.",
+          "en": "Carries Sin Boram’s family notices, posts Yun Choa’s copies and conveys Kang Minseo’s citizenship text."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "가족 회의 통지를 나르고 이름이 빠진 쪽지는 전달하지 않는다. 구두 구호를 전령 원장에 묶는 실무가 확인된다.",
+      "en": "Carries family meeting notices but stops notes with missing names. Binds oral relief promises to messenger records."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -788,7 +924,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 주지 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주지. 직함은 총회 전령 주지, 신보람의 실무 담당자. 저녁 배급 전에 명부를 소리 내어 읽고, 빠진 이름이 있으면 쪽지 전달을 멈춘다.",
     "일화": "암사 순찰대가 북한산보국문 가족 급수권을 복무계약과 묶는 철표를 숙영지에 붙였다.",
     "관계": "신보람의 가족 회의 통지를 나르고, 윤초아의 원장 필사를 숙영 게시판에 붙인다. 강민서의 시민권 문안을 전령 사본으로 옮긴다.",
@@ -796,7 +931,7 @@
     "공포": "전령 가방이 강국 군사호적 사본으로 바뀌어 신도가 복무 숫자로만 남는 것.",
     "개입": "신도 명부를 되찾거나, 자발 복무 헌장의 서명 증인을 전령로로 호송할 수 있다."
   },
-  "biography": "아이 이름을 빼먹은 쪽지를 찢어 본 적이 있고, 구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌린다. 따뜻하나 서명은 차갑다.\n\n- 생업: 총회 전령·명부 대조\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 총회 전령 주지, 신보람의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 주지 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주지. 직함은 총회 전령 주지, 신보람의 실무 담당자. 저녁 배급 전에 명부를 소리 내어 읽고, 빠진 이름이 있으면 쪽지 전달을 멈춘다.\n\n**일화.** 암사 순찰대가 북한산보국문 가족 급수권을 복무계약과 묶는 철표를 숙영지에 붙였다.\n\n**관계.** 신보람의 가족 회의 통지를 나르고, 윤초아의 원장 필사를 숙영 게시판에 붙인다. 강민서의 시민권 문안을 전령 사본으로 옮긴다.\n\n**야망.** 문중 표 결과를 당일 숙영마다 전령로로 붙여, 산중총회의 신도 명부를 먼저 현장에 심는다.\n\n**공포.** 전령 가방이 강국 군사호적 사본으로 바뀌어 신도가 복무 숫자로만 남는 것.\n\n**개입.** 신도 명부를 되찾거나, 자발 복무 헌장의 서명 증인을 전령로로 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 90 | 무력 −35 | 물질 −10 | 공동 75 | 원칙 25 | 공개 50 | 자격 40 | 분산 45 | 변혁 0\n- 욕망: 갈망 45 | 독점 −45 | 위험 0 | 과시 −25 | 지속 35 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "아이 이름을 빼먹은 쪽지를 찢어 본 적이 있고, 구두 구호 약속을 전령 원장에 옮기지 않으면 없던 일로 돌린다. 따뜻하나 서명은 차갑다.\n\n- 생업: 총회 전령·명부 대조\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 총회 전령 주지, 신보람의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 총회 전령 주지 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 주지. 직함은 총회 전령 주지, 신보람의 실무 담당자. 저녁 배급 전에 명부를 소리 내어 읽고, 빠진 이름이 있으면 쪽지 전달을 멈춘다.\n\n**일화.** 암사 순찰대가 북한산보국문 가족 급수권을 복무계약과 묶는 철표를 숙영지에 붙였다.\n\n**관계.** 신보람의 가족 회의 통지를 나르고, 윤초아의 원장 필사를 숙영 게시판에 붙인다. 강민서의 시민권 문안을 전령 사본으로 옮긴다.\n\n**야망.** 문중 표 결과를 당일 숙영마다 전령로로 붙여, 산중총회의 신도 명부를 먼저 현장에 심는다.\n\n**공포.** 전령 가방이 강국 군사호적 사본으로 바뀌어 신도가 복무 숫자로만 남는 것.\n\n**개입.** 신도 명부를 되찾거나, 자발 복무 헌장의 서명 증인을 전령로로 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 90 | 무력 −35 | 물질 −10 | 공동 75 | 원칙 25 | 공개 50 | 자격 40 | 분산 45 | 변혁 0\n- 욕망: 갈망 45 | 독점 −45 | 위험 0 | 과시 −25 | 지속 35 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],

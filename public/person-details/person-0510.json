@@ -374,6 +374,142 @@
     "id": "K510",
     "personId": "person-0510"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "snowbound-patient-transfer",
+        "name": {
+          "ko": "눈길 환자 이동",
+          "en": "Snowbound patient transfer"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k510-disposition",
+        "name": {
+          "ko": "부상자 먼저",
+          "en": "Injured people first"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "She chose the side that kept the duty line unbroken first. She trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: convoy courier. She handed over only the keys and records of her own post, and never made authority she did not hold."
+        },
+        "stress": {
+          "ko": "공포. 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Chiara Ricci hands injured people moved through a cleared passage to Noah Davis. Noah checks frostbite and burns so delayed movement does not become missed treatment."
+        },
+        "effects": []
+      },
+      {
+        "id": "k510-choice",
+        "name": {
+          "ko": "치료 인계까지 잇기",
+          "en": "Connecting to treatment handoff"
+        },
+        "description": {
+          "ko": "일화. 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 she broke open the snow-blocked transfer passage and moved the injured first. By this deed the signature of the convoy courier post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Chiara Ricci hands injured people moved through a cleared passage to Noah Davis. Noah checks frostbite and burns so delayed movement does not become missed treatment."
+        },
+        "stress": {
+          "ko": "공포. 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Chiara Ricci hands injured people moved through a cleared passage to Noah Davis. Noah checks frostbite and burns so delayed movement does not become missed treatment."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "폭설 통로를 뚫고 부상자를 노아에게 인계했다. 노동과 이동의 근거이며 동상 진료 숙련을 부여하지 않는다.",
+      "en": "Clears a snowy passage and hands injured people to Noah. Supports labor and movement, not frostbite treatment skill."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -753,7 +889,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 키아라 리치는 2083년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 안토니오 리치는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 키아라 리치의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.",
@@ -761,7 +896,7 @@
     "공포": "호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 키아라 리치는 2083년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 안토니오 리치는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 키아라 리치의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 −5 | 공개 −5 | 자격 40 | 분산 −5 | 변혁 5\n- 욕망: 갈망 35 | 독점 40 | 위험 −30 | 과시 20 | 지속 0 | 지향 양성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 전령 자리는 무표 출발 열차 저지로 열렸다. 키아라 리치는 2083년에 태어났다. 이탈리아계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 호송 전령 업무를 맡는다. 안토니오 리치는 2030년 용산·이태원에서 이태원 민간 식당·숙박과 용산 공급 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 키아라 리치의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 이탈리아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 키아라 리치는 제설한 통로에서 옮긴 부상자를 노아 데이비스에게 인계한다. 노아 데이비스는 동상·화상 상태를 확인해 이동 지연이 진료 누락으로 이어지지 않게 한다.\n\n**야망.** 호송 전령 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 호송 전령 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 25 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 −5 | 공개 −5 | 자격 40 | 분산 −5 | 변혁 5\n- 욕망: 갈망 35 | 독점 40 | 위험 −30 | 과시 20 | 지속 0 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],

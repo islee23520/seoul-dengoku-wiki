@@ -286,6 +286,150 @@
     "id": "K111",
     "personId": "person-0112"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "leak",
+        "name": {
+          "ko": "수압 시험 누수 점검",
+          "en": "Pressure-test leak inspection"
+        },
+        "rating": 60
+      },
+      {
+        "id": "evidence",
+        "name": {
+          "ko": "피해 표본·명부 보존",
+          "en": "Preserving victim samples and registers"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "seal-retrieved-boxes",
+        "name": {
+          "ko": "회수 상자 봉인",
+          "en": "Seal Retrieved Boxes"
+        },
+        "description": {
+          "ko": "류다인은 회수한 불량 부품과 피해 기록을 함께 봉인해 증거의 연결을 지키려 한다.",
+          "en": "Ryu Dain seeks to preserve the connection between defective retrieved parts and harm records by sealing them together."
+        },
+        "behavior": {
+          "ko": "회수 부품과 피해 명부를 같은 함에 넣고 골목펌프 정비사와 평의회 전령이 함께 볼 때만 감정을 위해 연다.",
+          "en": "They place retrieved parts and the affected-person register in one box and open it for appraisal only before both an alley-pump mechanic and council messenger."
+        },
+        "stress": {
+          "ko": "가짜 패킹으로 펌프가 멈추고 외부 주둔의 명분이 될 우려가 커지면 회수품의 봉인과 공동 확인을 더 중시할 수 있다.",
+          "en": "If fake packing threatens a pump shutdown that could justify outside stationing, they may emphasize sealing retrieved parts and joint inspection."
+        },
+        "relationship": {
+          "ko": "허겸과 평의회 전령에게 공동 확인을 기대하며 종마루의 증언과 회수 증거를 서로 대조하려 할 수 있다.",
+          "en": "They may expect joint verification from Heo Gyeom and the council messenger and compare Jong Maru's testimony with retrieved evidence."
+        },
+        "effects": []
+      },
+      {
+        "id": "no-shifting-defect-costs",
+        "name": {
+          "ko": "불량 비용 전가 거부",
+          "en": "No Shifting Defect Costs"
+        },
+        "description": {
+          "ko": "류다인은 불량 부품의 책임을 수습 비용이라는 말로 떠넘기는 중개인을 용납하지 않는다.",
+          "en": "Ryu Dain rejects intermediaries who disguise responsibility for defective parts as cleanup costs to be passed on."
+        },
+        "behavior": {
+          "ko": "불량 비용을 전가하는 중개인을 공방 밖으로 밀어내고 한소미에게 출고 중지를 요구하며 가짜 부품의 출고 공방 공개를 추진한다.",
+          "en": "They push cost-shifting intermediaries out of the workshop, ask Han Somi to halt shipments, and seek disclosure of the workshop that shipped fake parts."
+        },
+        "stress": {
+          "ko": "결함이 펌프 정지와 보호군 주둔으로 이어질 우려가 있으면 위조 도장보다 부품의 출처와 책임을 더 집요하게 물을 수 있다.",
+          "en": "If defects threaten pump shutdowns and protection-force stationing, they may press harder for origins and responsibility rather than accept forged stamps."
+        },
+        "relationship": {
+          "ko": "한소미에게 출고 중지의 응답을 기대하고 책임을 피해자에게 넘기는 중개인과는 협력하기 어려울 수 있다.",
+          "en": "They may expect Han Somi to respond to shipment-stop requests and find cooperation difficult with intermediaries who shift responsibility onto those affected."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "수압 시험에서 누수를 찾고 회수 부품과 명부를 함께 보관한다. 결함 증거와 검사에 한정하며 건강 손상을 추정하지 않는다.",
+      "en": "She found leaks in a pressure test and retains returned parts with victim registers. Defect evidence and inspection are supported; health damage is not inferred."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -699,7 +843,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 가짜 정수 부품 피해자 직공 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 교사. 직함은 가짜 정수 부품 피해자 직공. 회수 부품과 피해 명부를 같은 함에 넣고, 감정은 골목펌프 정비사와 평의회 전령이 함께 볼 때만 연다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 가짜 정수 부품 피해자 직공 자리의 서명이 장부에 올랐다.",
     "관계": "구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고, 허겸의 골목펌프 일지에 단내를 남기며, 한소미에게 출고 중지를 요구해 온 빚이 있다.",
@@ -707,7 +850,7 @@
     "공포": "가짜 패킹이 한 기 펌프를 죽이고, 그 정전을 암사 보호군이 구원으로 위장해 주둔하는 것.",
     "개입": "위조 도장 원판을 회수해 그의 라인 중지를 정당화하거나, 명부에 없는 공방을 끼워 넣은 자를 밝혀 직공을 고립시킬 수 있다."
   },
-  "biography": "패킹에서 나는 단내를 규격 도장보다 먼저 맡고, 불량을 수습 비용으로 넘기는 중개인을 공방 밖으로 밀어낸다. 손은 느려도 회수 상자는 봉인한다.\n\n- 소속: 명부교회\n- 생업: 회수 부품·피해 명부 관리\n- 품계: 교사\n- 직함: 가짜 정수 부품 피해자 직공\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 가짜 정수 부품 피해자 직공 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 교사. 직함은 가짜 정수 부품 피해자 직공. 회수 부품과 피해 명부를 같은 함에 넣고, 감정은 골목펌프 정비사와 평의회 전령이 함께 볼 때만 연다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 가짜 정수 부품 피해자 직공 자리의 서명이 장부에 올랐다.\n\n**관계.** 구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고, 허겸의 골목펌프 일지에 단내를 남기며, 한소미에게 출고 중지를 요구해 온 빚이 있다.\n\n**야망.** 뚝섬 펌프에 들어간 가짜 부품의 출고 공방을 공개해, 물·부품 공동규격이 위조 도장의 방패가 되지 않게 한다.\n\n**공포.** 가짜 패킹이 한 기 펌프를 죽이고, 그 정전을 암사 보호군이 구원으로 위장해 주둔하는 것.\n\n**개입.** 위조 도장 원판을 회수해 그의 라인 중지를 정당화하거나, 명부에 없는 공방을 끼워 넣은 자를 밝혀 직공을 고립시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −25 | 물질 10 | 공동 25 | 원칙 20 | 공개 −25 | 자격 40 | 분산 15 | 변혁 0\n- 욕망: 갈망 −5 | 독점 −30 | 위험 15 | 과시 10 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "패킹에서 나는 단내를 규격 도장보다 먼저 맡고, 불량을 수습 비용으로 넘기는 중개인을 공방 밖으로 밀어낸다. 손은 느려도 회수 상자는 봉인한다.\n\n- 소속: 명부교회\n- 생업: 회수 부품·피해 명부 관리\n- 품계: 교사\n- 직함: 가짜 정수 부품 피해자 직공\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 가짜 정수 부품 피해자 직공 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 교사. 직함은 가짜 정수 부품 피해자 직공. 회수 부품과 피해 명부를 같은 함에 넣고, 감정은 골목펌프 정비사와 평의회 전령이 함께 볼 때만 연다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 가짜 정수 부품 피해자 직공 자리의 서명이 장부에 올랐다.\n\n**관계.** 구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고, 허겸의 골목펌프 일지에 단내를 남기며, 한소미에게 출고 중지를 요구해 온 빚이 있다.\n\n**야망.** 뚝섬 펌프에 들어간 가짜 부품의 출고 공방을 공개해, 물·부품 공동규격이 위조 도장의 방패가 되지 않게 한다.\n\n**공포.** 가짜 패킹이 한 기 펌프를 죽이고, 그 정전을 암사 보호군이 구원으로 위장해 주둔하는 것.\n\n**개입.** 위조 도장 원판을 회수해 그의 라인 중지를 정당화하거나, 명부에 없는 공방을 끼워 넣은 자를 밝혀 직공을 고립시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −25 | 물질 10 | 공동 25 | 원칙 20 | 공개 −25 | 자격 40 | 분산 15 | 변혁 0\n- 욕망: 갈망 −5 | 독점 −30 | 위험 15 | 과시 10 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

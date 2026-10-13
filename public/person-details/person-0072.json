@@ -394,6 +394,150 @@
     "id": "K072",
     "personId": "person-0072"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 60
+      },
+      {
+        "id": "accounts",
+        "name": {
+          "ko": "지급 장부 대조",
+          "en": "Payment ledger reconciliation"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "persistent-date-checking",
+        "name": {
+          "ko": "날짜 집요한 대조",
+          "en": "Persistent Date Checking"
+        },
+        "description": {
+          "ko": "제라온은 말로 된 합의보다 원장에 남은 날짜와 기록의 일치를 중시한다.",
+          "en": "Jeraon values agreement between ledger dates and records over verbal assurances."
+        },
+        "behavior": {
+          "ko": "날짜를 집요하게 대조하고 구두 합의를 원장에 남기지 않는 행위를 비난한다.",
+          "en": "Jeraon persistently compares dates and condemns leaving verbal agreements out of the ledger."
+        },
+        "stress": {
+          "ko": "위조 열람증이 서고를 선전 자료로 바꿀 우려가 커지면 기록의 날짜 대조를 더욱 중시할 수 있다.",
+          "en": "Concern that a forged access pass could turn the archive into propaganda may heighten Jeraon's emphasis on checking dates."
+        },
+        "relationship": {
+          "ko": "최은재의 인증 범위를 옮길 때도 구두 신뢰보다 원장에 남기는 내용을 중시할 수 있다.",
+          "en": "When transferring Choi Eunjae's certification scope, Jeraon may prioritize ledger entries over verbal trust."
+        },
+        "effects": []
+      },
+      {
+        "id": "protect-original-fields",
+        "name": {
+          "ko": "원본 칸 지키기",
+          "en": "Protect Original Fields"
+        },
+        "description": {
+          "ko": "제라온은 위조가 드러난 사본보다 원본의 기록 칸을 지키는 쪽을 택한다.",
+          "en": "Jeraon favors preserving original record fields over retaining copies exposed as forged."
+        },
+        "behavior": {
+          "ko": "위조 도장이 드러난 사건에서 사본을 불사르고 원본 칸을 지켰다.",
+          "en": "In the forged-stamp incident, Jeraon burned the copies and protected the original fields."
+        },
+        "stress": {
+          "ko": "서고 기록이 강국의 선전에 이용될 우려가 생기면 원본 보존을 우선할 수 있다.",
+          "en": "If archive records risk serving a powerful nation's propaganda, Jeraon may prioritize preserving the originals."
+        },
+        "relationship": {
+          "ko": "임시온의 열람 잠금을 뒷받침할 때 원본 기록의 보존을 협력의 기준으로 삼을 수 있다.",
+          "en": "When supporting Im Sion's access restrictions, Jeraon may treat preservation of original records as a condition of cooperation."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "날짜를 대조하고 위조 도장이 드러난 사본을 버리며 원본 칸을 지켰다. 위조 사건의 책임은 불분명해 탐지 전문가로 확장하지 않는다.",
+      "en": "He compares dates and discarded a copy after a forged seal was exposed, preserving the original slot. Unclear responsibility prevents assuming a forgery-expert career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -743,7 +887,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 기술인증 사본 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 기술인증 사본 기록관. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 날인을 찍지 않는다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 기술인증 사본 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "최은재의 인증 범위를 원장으로 옮기는 사제에 가깝고, 임시온의 열람 잠금을 기록으로 받치며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.",
@@ -751,7 +894,7 @@
     "공포": "위조 열람증 한 장이 서고 전체를 강국의 선전 자료로 만드는 것.",
     "개입": "재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 폭로할 수 있다."
   },
-  "biography": "인증 도장을 흥정 밑천으로 쓰는 사람을 경멸하고, 구두 합의를 원장에 올리지 않는 평의원을 절도로 부른다. 냉정하고 날짜를 집요하게 대조한다.\n\n- 소속: 태욱그룹\n- 생업: 인증 사본 기록\n- 품계: 대리\n- 직함: 기술인증 사본 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 기술인증 사본 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 기술인증 사본 기록관. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 날인을 찍지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 기술인증 사본 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 최은재의 인증 범위를 원장으로 옮기는 사제에 가깝고, 임시온의 열람 잠금을 기록으로 받치며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증을 국가 소유가 아닌 공개 원장으로 옮겨 공동기술원장의 기록 창구가 된다.\n\n**공포.** 위조 열람증 한 장이 서고 전체를 강국의 선전 자료로 만드는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 −20 | 물질 15 | 공동 5 | 원칙 65 | 공개 40 | 자격 70 | 분산 0 | 변혁 0\n- 욕망: 갈망 30 | 독점 −5 | 위험 0 | 과시 0 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "인증 도장을 흥정 밑천으로 쓰는 사람을 경멸하고, 구두 합의를 원장에 올리지 않는 평의원을 절도로 부른다. 냉정하고 날짜를 집요하게 대조한다.\n\n- 소속: 태욱그룹\n- 생업: 인증 사본 기록\n- 품계: 대리\n- 직함: 기술인증 사본 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 기술인증 사본 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 기술인증 사본 기록관. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 날인을 찍지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 기술인증 사본 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 최은재의 인증 범위를 원장으로 옮기는 사제에 가깝고, 임시온의 열람 잠금을 기록으로 받치며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증을 국가 소유가 아닌 공개 원장으로 옮겨 공동기술원장의 기록 창구가 된다.\n\n**공포.** 위조 열람증 한 장이 서고 전체를 강국의 선전 자료로 만드는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 −20 | 물질 15 | 공동 5 | 원칙 65 | 공개 40 | 자격 70 | 분산 0 | 변혁 0\n- 욕망: 갈망 30 | 독점 −5 | 위험 0 | 과시 0 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -373,6 +373,150 @@
     "id": "K178",
     "personId": "person-0179"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "intruder-restraint",
+        "name": {
+          "ko": "난입자 제지",
+          "en": "Intruder restraint"
+        },
+        "rating": 60
+      },
+      {
+        "id": "rail-patrol",
+        "name": {
+          "ko": "선로 순찰",
+          "en": "Rail patrol"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k178-disposition",
+        "name": {
+          "ko": "공식 배차 우선",
+          "en": "Official dispatch first"
+        },
+        "description": {
+          "ko": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다. 부하의 배급이 끊기면 자신이 선로를 먼저 걷는다.",
+          "en": "He read unauthorized entry from the switch's iron sound and saw a one-way train as intent rather than accident. When his men's rations were cut, he walked the rails himself first."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 선로 봉쇄 순찰대 조장. 순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다.",
+          "en": "Office. Rank: registrar. Title: track blockade patrol squad leader. He wrote the patrol hours on the dispatch board but opened the switch only with Park Taegyeom's and Alexander Miller's keys together."
+        },
+        "stress": {
+          "ko": "공포. 사방 강국이 용산을 전쟁터로 쓰며 봉쇄대가 어느 편 사병이 되는 것.",
+          "en": "Fear. That the surrounding great powers would use Yongsan as a battlefield and the blockade squad would become some side's private soldiers."
+        },
+        "relationship": {
+          "ko": "관계. 알렉산더 밀러의 가문 봉쇄 지시를 현장에서 받되 박태겸의 공식 배차표를 우선하고, 마테우시 코발스키의 역 방송을 봉쇄 시각과 맞춘다.",
+          "en": "Relations. Took Alexander Miller's house blockade orders in the field but put Park Taegyeom's official dispatch sheet first, and matched Mateusz Kowalski's station broadcast to the blockade hours."
+        },
+        "effects": []
+      },
+      {
+        "id": "k178-choice",
+        "name": {
+          "ko": "부하 앞에 섬",
+          "en": "Going ahead of subordinates"
+        },
+        "description": {
+          "ko": "일화. 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 선로 봉쇄 순찰대 조장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he seized an armed intruder at the door and opened a roster recount. By this deed the signature of the track blockade patrol squad leader post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 알렉산더 밀러의 가문 봉쇄 지시를 현장에서 받되 박태겸의 공식 배차표를 우선하고, 마테우시 코발스키의 역 방송을 봉쇄 시각과 맞춘다.",
+          "en": "Relations. Took Alexander Miller's house blockade orders in the field but put Park Taegyeom's official dispatch sheet first, and matched Mateusz Kowalski's station broadcast to the blockade hours."
+        },
+        "stress": {
+          "ko": "공포. 사방 강국이 용산을 전쟁터로 쓰며 봉쇄대가 어느 편 사병이 되는 것.",
+          "en": "Fear. That the surrounding great powers would use Yongsan as a battlefield and the blockade squad would become some side's private soldiers."
+        },
+        "relationship": {
+          "ko": "관계. 알렉산더 밀러의 가문 봉쇄 지시를 현장에서 받되 박태겸의 공식 배차표를 우선하고, 마테우시 코발스키의 역 방송을 봉쇄 시각과 맞춘다.",
+          "en": "Relations. Took Alexander Miller's house blockade orders in the field but put Park Taegyeom's official dispatch sheet first, and matched Mateusz Kowalski's station broadcast to the blockade hours."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "무장 난입자를 붙들고 명부를 재점검했다. 부하 배급이 끊기면 먼저 걷고 두 키를 요구하지만 대규모 전투 승리는 없다.",
+      "en": "He restrained an armed intruder and reopened the register check. He walks first when subordinates lose rations and requires both keys; no major battle victory is recorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -822,7 +966,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 선로 봉쇄 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다. 마커스 윌슨은 2076년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 암사 경비 초소에서 자랐다. 2126년에는 선로 봉쇄 순찰대 조장 업무를 맡는다. 새뮤얼 윌슨은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 마커스 윌슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "수벽술.",
     "관직": "품계 주사. 직함은 선로 봉쇄 순찰대 조장. 순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다.",
     "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 선로 봉쇄 순찰대 조장 자리의 서명이 장부에 올랐다.",
     "관계": "알렉산더 밀러의 가문 봉쇄 지시를 현장에서 받되 박태겸의 공식 배차표를 우선하고, 마테우시 코발스키의 역 방송을 봉쇄 시각과 맞춘다.",
@@ -830,7 +973,7 @@
     "공포": "사방 강국이 용산을 전쟁터로 쓰며 봉쇄대가 어느 편 사병이 되는 것.",
     "개입": "전환기 열쇠를 어느 쪽에 넘길지 고르거나, 암호패 유출을 폭로해 조장을 교체하게 할 수 있다."
   },
-  "biography": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다. 부하의 배급이 끊기면 자신이 선로를 먼저 걷는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 봉쇄 순찰·전환기 열쇠 확인\n- 직함: 선로 봉쇄 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 선로 봉쇄 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다. 마커스 윌슨은 2076년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 암사 경비 초소에서 자랐다. 2126년에는 선로 봉쇄 순찰대 조장 업무를 맡는다. 새뮤얼 윌슨은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 마커스 윌슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 수벽술.\n\n**관직.** 품계 주사. 직함은 선로 봉쇄 순찰대 조장. 순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 선로 봉쇄 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 알렉산더 밀러의 가문 봉쇄 지시를 현장에서 받되 박태겸의 공식 배차표를 우선하고, 마테우시 코발스키의 역 방송을 봉쇄 시각과 맞춘다.\n\n**야망.** 선로 봉쇄를 후국회의 공개 암호패로만 움직여 가문 금고의 키가 단독으로 전환기를 잠그지 못하게 한다.\n\n**공포.** 사방 강국이 용산을 전쟁터로 쓰며 봉쇄대가 어느 편 사병이 되는 것.\n\n**개입.** 전환기 열쇠를 어느 쪽에 넘길지 고르거나, 암호패 유출을 폭로해 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 15 | 무력 5 | 물질 10 | 공동 −5 | 원칙 0 | 공개 −25 | 자격 30 | 분산 0 | 변혁 5\n- 욕망: 갈망 40 | 독점 25 | 위험 −10 | 과시 −5 | 지속 15 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "전환기 쇳소리로 무단 진입을 읽고, 편도만 온 열차를 사고보다 고의로 본다. 부하의 배급이 끊기면 자신이 선로를 먼저 걷는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 봉쇄 순찰·전환기 열쇠 확인\n- 직함: 선로 봉쇄 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 선로 봉쇄 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다. 마커스 윌슨은 2076년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 암사 경비 초소에서 자랐다. 2126년에는 선로 봉쇄 순찰대 조장 업무를 맡는다. 새뮤얼 윌슨은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 마커스 윌슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 선로 봉쇄 순찰대 조장. 순찰 시각을 배차판에 쓰되, 전환기는 박태겸과 알렉산더 밀러의 키가 동시에 있어야 연다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 선로 봉쇄 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 알렉산더 밀러의 가문 봉쇄 지시를 현장에서 받되 박태겸의 공식 배차표를 우선하고, 마테우시 코발스키의 역 방송을 봉쇄 시각과 맞춘다.\n\n**야망.** 선로 봉쇄를 후국회의 공개 암호패로만 움직여 가문 금고의 키가 단독으로 전환기를 잠그지 못하게 한다.\n\n**공포.** 사방 강국이 용산을 전쟁터로 쓰며 봉쇄대가 어느 편 사병이 되는 것.\n\n**개입.** 전환기 열쇠를 어느 쪽에 넘길지 고르거나, 암호패 유출을 폭로해 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 15 | 무력 5 | 물질 10 | 공동 −5 | 원칙 0 | 공개 −25 | 자격 30 | 분산 0 | 변혁 5\n- 욕망: 갈망 40 | 독점 25 | 위험 −10 | 과시 −5 | 지속 15 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],

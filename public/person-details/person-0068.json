@@ -288,6 +288,150 @@
     "id": "K068",
     "personId": "person-0068"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "dose",
+        "name": {
+          "ko": "부족 약재 배분",
+          "en": "Scarce-medicine allocation"
+        },
+        "rating": 60
+      },
+      {
+        "id": "sample",
+        "name": {
+          "ko": "표본 기록 심사",
+          "en": "Sample-record review"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "reproducible-prescriptions-first",
+        "name": {
+          "ko": "재현 처방 우선",
+          "en": "Reproducible Prescriptions First"
+        },
+        "description": {
+          "ko": "진채온은 재현되지 않은 처방보다 검증 기록과 시약 봉인을 신뢰한다.",
+          "en": "Jin Chaeon trusts verification records and reagent seals over unreproduced prescriptions."
+        },
+        "behavior": {
+          "ko": "파견 진료에 재현 가능한 실험 기록을 요구하고 기준 미달이면 독촉에도 반출을 잠근다.",
+          "en": "She requires reproducible experimental records for deployed care and locks removal despite pressure when standards are unmet."
+        },
+        "stress": {
+          "ko": "진료 기록이 군사 감독 문서로 바뀔 우려가 있다면 안전 확인과 진료 쪽 거부권을 더 중시할 수 있다.",
+          "en": "If care records risk becoming military oversight documents, she may give greater weight to safety checks and clinical veto enforcement."
+        },
+        "relationship": {
+          "ko": "약효의 검증이 필요하다면 류은비에게 실험동 표본을 보내고 정하린의 거부권을 진료에서 집행할 수 있다.",
+          "en": "When drug effects need verification, she may send laboratory samples to Ryu Eunbi and enforce Jeong Harin’s veto in care."
+        },
+        "effects": []
+      },
+      {
+        "id": "shared-shortfall-allocation",
+        "name": {
+          "ko": "부족분 공동 배분",
+          "en": "Shared Shortfall Allocation"
+        },
+        "description": {
+          "ko": "진채온은 약재 부족을 일부의 독점보다 모두가 나눠 감당하는 방식으로 처리했다.",
+          "en": "Jin Chaeon handled a medicine shortage by sharing the shortfall across everyone rather than reserving supplies for a few."
+        },
+        "behavior": {
+          "ko": "약재가 부족한 때 처방량을 반으로 나누어 모두에게 배분했다.",
+          "en": "During a medicine shortage, she halved prescription quantities and distributed them to everyone."
+        },
+        "stress": {
+          "ko": "진료가 연구자를 인질로 쓰는 거래에 묶일 우려가 있다면 배분을 거래 수단으로 삼는 데 경계할 수 있다.",
+          "en": "If care risks being tied to deals that hold researchers hostage, she may be wary of using allocation as bargaining leverage."
+        },
+        "relationship": {
+          "ko": "부족 약재를 배분해야 한다면 정하린과 공유하는 안전 기준 안에서 공동 배분을 택할 수 있다.",
+          "en": "If scarce medicine must be allocated, she may choose shared distribution within the safety standards she shares with Jeong Harin."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "재현 기록을 진료 조건으로 삼고 부족 약재를 나눴다. 처방 배분과 안전 확인에 한정하고 외과 수술이나 약품 제조는 없다.",
+      "en": "She requires reproducible records for care and shared scarce medicine. Allocation and safety checks are supported, not surgery or drug manufacture."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -694,7 +838,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 실험동 안전의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 실험동 안전의무원. 모든 파견 진료에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 실험동 안전의무원 자리의 서명이 장부에 올랐다.",
     "관계": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이고, 정호준의 안전심사 원칙을 사제로 배우며, 류은비의 약효 검증에 실험동 표본을 보낸다.",
@@ -702,7 +845,7 @@
     "공포": "보호를 명분으로 진료 기록이 군사 감독 문서로 바뀌고, 의무원이 세습 직능 인질이 되는 것.",
     "개입": "오염 표본을 실험동까지 호송해 거부를 뒷받침하거나, 진료 기록 누락을 찾아 파견 거래를 성사시킬 수 있다."
   },
-  "biography": "재현되지 않은 처방을 실험보다 위험하게 보고, 긴급 회의에서도 시약 봉인 스티커를 먼저 확인한다. 원칙이 뼈보다 단단하다.\n\n- 소속: 태욱그룹\n- 생업: 실험동 진료\n- 품계: 대리\n- 직함: 실험동 안전의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 실험동 안전의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 실험동 안전의무원. 모든 파견 진료에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 실험동 안전의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 정하린의 거부권을 진료 쪽에서 집행하는 동맹이고, 정호준의 안전심사 원칙을 사제로 배우며, 류은비의 약효 검증에 실험동 표본을 보낸다.\n\n**야망.** 연구자 파견 인원의 방역 기록을 공동기술원장의 첫 조항으로 올려 연구자를 인질로 쓰는 진료 거래를 무효로 만든다.\n\n**공포.** 보호를 명분으로 진료 기록이 군사 감독 문서로 바뀌고, 의무원이 세습 직능 인질이 되는 것.\n\n**개입.** 오염 표본을 실험동까지 호송해 거부를 뒷받침하거나, 진료 기록 누락을 찾아 파견 거래를 성사시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −40 | 물질 10 | 공동 5 | 원칙 70 | 공개 40 | 자격 45 | 분산 5 | 변혁 15\n- 욕망: 갈망 −5 | 독점 30 | 위험 0 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "재현되지 않은 처방을 실험보다 위험하게 보고, 긴급 회의에서도 시약 봉인 스티커를 먼저 확인한다. 원칙이 뼈보다 단단하다.\n\n- 소속: 태욱그룹\n- 생업: 실험동 진료\n- 품계: 대리\n- 직함: 실험동 안전의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 실험동 안전의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 대리. 직함은 실험동 안전의무원. 모든 파견 진료에 재현 가능한 실험 기록을 요구하고, 기준 미달이면 생명안전 연구책임자의 독촉이 있어도 반출을 잠근다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 실험동 안전의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 정하린의 거부권을 진료 쪽에서 집행하는 동맹이고, 정호준의 안전심사 원칙을 사제로 배우며, 류은비의 약효 검증에 실험동 표본을 보낸다.\n\n**야망.** 연구자 파견 인원의 방역 기록을 공동기술원장의 첫 조항으로 올려 연구자를 인질로 쓰는 진료 거래를 무효로 만든다.\n\n**공포.** 보호를 명분으로 진료 기록이 군사 감독 문서로 바뀌고, 의무원이 세습 직능 인질이 되는 것.\n\n**개입.** 오염 표본을 실험동까지 호송해 거부를 뒷받침하거나, 진료 기록 누락을 찾아 파견 거래를 성사시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −40 | 물질 10 | 공동 5 | 원칙 70 | 공개 40 | 자격 45 | 분산 5 | 변혁 15\n- 욕망: 갈망 −5 | 독점 30 | 위험 0 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -286,6 +286,142 @@
     "id": "K696",
     "personId": "person-0696"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k696-shift-negotiation",
+        "name": {
+          "ko": "교대 조건 협의",
+          "en": "Shift-condition negotiation"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k696-action-priority",
+        "name": {
+          "ko": "태업 뒤 협의",
+          "en": "Negotiate after slowdown"
+        },
+        "description": {
+          "ko": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다.",
+          "en": "In 2125 he shared terms with a slowdown work squad through the night and opened the next shift. By this deed the signature of the pipeline surveyor post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다.",
+          "en": "In 2125 he shared terms with a slowdown work squad through the night and opened the next shift. By this deed the signature of the pipeline surveyor post rose into the ledger."
+        },
+        "stress": {
+          "ko": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
+          "en": "That the pipeline surveyor duty post would stand empty and the Compact's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
+          "en": "Serves under Byeon Goun on concourse shifts and conduit surveys."
+        },
+        "effects": []
+      },
+      {
+        "id": "k696-bounded-handover",
+        "name": {
+          "ko": "기록으로 잇는 당직",
+          "en": "Duty linked by records"
+        },
+        "description": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "behavior": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "stress": {
+          "ko": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
+          "en": "That the pipeline surveyor duty post would stand empty and the Compact's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
+          "en": "Serves under Byeon Goun on concourse shifts and conduit surveys."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
+      "en": "In 2125 he shared terms with a slowdown work squad through the night and opened the next shift. By this deed the signature of the pipeline surveyor post rose into the ledger. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -699,7 +835,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 관로 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
@@ -707,7 +842,7 @@
     "공포": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 주사\n- 직함: 관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 관로 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.\n\n**야망.** 관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 10 | 물질 35 | 공동 25 | 원칙 25 | 공개 15 | 자격 0 | 분산 −50 | 변혁 0\n- 욕망: 갈망 10 | 독점 −10 | 위험 10 | 과시 10 | 지속 10 | 지향 동성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 주사\n- 직함: 관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 관로 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.\n\n**야망.** 관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 10 | 물질 35 | 공동 25 | 원칙 25 | 공개 15 | 자격 0 | 분산 −50 | 변혁 0\n- 욕망: 갈망 10 | 독점 −10 | 위험 10 | 과시 10 | 지속 10 | 지향 동성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-01"
   ],

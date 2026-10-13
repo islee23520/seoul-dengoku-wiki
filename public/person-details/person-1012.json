@@ -385,6 +385,126 @@
     "id": "K1012",
     "personId": "person-1012"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 13,
+        "effective": 13
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 13,
+        "effective": 13
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k1012-equipment-repair",
+        "name": {
+          "ko": "설비 정비",
+          "en": "Equipment repair"
+        },
+        "rating": 70
+      },
+      {
+        "id": "k1012-tool-return",
+        "name": {
+          "ko": "공구 반납 관리",
+          "en": "Tool-return tracking"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1012-trait-1",
+        "name": {
+          "ko": "볼트와 부절",
+          "en": "Bolts and attachments"
+        },
+        "description": {
+          "ko": "작업 조건이 자기 언어로 확인되기 전에는 설비를 죄지 않는다.",
+          "en": "Does not secure equipment before work terms are confirmed in his language."
+        },
+        "behavior": {
+          "ko": "작업 조건이 자기 언어로 확인되기 전에는 설비를 죄지 않는다.",
+          "en": "Does not secure equipment before work terms are confirmed in his language."
+        },
+        "stress": {
+          "ko": "차단 훈련에서 기숙사 대피가 빠지는 것을 경계한다.",
+          "en": "Guards against dormitory evacuation being omitted in gate drills."
+        },
+        "relationship": {
+          "ko": "린샤오메이와 식량을 계약하고 최일석과 하청을 두고 긴장한다.",
+          "en": "Contracts food with Lin Xiaomei and disputes subcontracting with Choe Ilseok."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "낡은 작업 기록을 설비와 대조해 수리를 익혔고 공구 반납과 교대 기록으로 동료의 신뢰를 얻었다. 베트남어 부절 없는 계약에는 볼트를 죄지 않으며 기숙사 대피가 빠지는 차단 훈련을 두려워한다.",
+      "en": "He learned repairs by comparing old work records with equipment and earned colleagues’ trust through tool returns and shift records. He will not tighten bolts on a contract lacking a Vietnamese attachment and fears drills omitting dormitory evacuation."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",

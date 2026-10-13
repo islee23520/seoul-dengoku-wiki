@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.",
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -391,6 +391,142 @@
   "gurps": {
     "id": "K282",
     "personId": "person-0283"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k282-track-surveying",
+        "name": {
+          "ko": "선로 실측",
+          "en": "Track surveying"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k282-priority",
+        "name": {
+          "ko": "직접 확인",
+          "en": "Direct verification"
+        },
+        "description": {
+          "ko": "복두는 실측 선과 미확인 점선을 구분해 북문 우회 정보를 넘긴다. 공백 선로의 발견은 우회 성공과 다르다.",
+          "en": "Bokdu separates surveyed tracks from unverified dotted lines and passes gate detour information. A blank track section is not proof of a successful detour."
+        },
+        "behavior": {
+          "ko": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
+          "en": "Office. Rank: assistant manager. Title: northern line surveyor. He left unsurveyed lines only as dotted lines and raised nothing onto the master plate with fewer than two independent sightings."
+        },
+        "stress": {
+          "ko": "위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
+          "en": "Fear. That a forged track map would be used as a defect train's convoy route and the train would enter under the residential shells."
+        },
+        "relationship": {
+          "ko": "권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
+          "en": "Relations. Handed the north gate bypasses to Gwon Doha and moved field measurements onto Du Guk's north gate chalkboard. Matched the track state to Jang Sehwa's joint convoy hours."
+        },
+        "effects": []
+      },
+      {
+        "id": "k282-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
+          "en": "Office. Rank: assistant manager. Title: northern line surveyor. He left unsurveyed lines only as dotted lines and raised nothing onto the master plate with fewer than two independent sightings."
+        },
+        "stress": {
+          "ko": "공포. 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
+          "en": "Fear. That a forged track map would be used as a defect train's convoy route and the train would enter under the residential shells."
+        },
+        "relationship": {
+          "ko": "관계. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
+          "en": "Relations. Handed the north gate bypasses to Gwon Doha and moved field measurements onto Du Guk's north gate chalkboard. Matched the track state to Jang Sehwa's joint convoy hours."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "복두는 실측 선과 미확인 점선을 구분해 북문 우회 정보를 넘긴다. 공백 선로의 발견은 우회 성공과 다르다.",
+      "en": "Bokdu separates surveyed tracks from unverified dotted lines and passes gate detour information. A blank track section is not proof of a successful detour."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -788,7 +924,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
     "일화": "제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.",
     "관계": "권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
@@ -796,7 +931,7 @@
     "공포": "위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
     "개입": "공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다."
   },
-  "biography": "닫힌 터널을 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 침수 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 바깥 선로 실측·목격 대조\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 바깥 작업장 선로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.\n\n**야망.** 북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.\n\n**공포.** 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "닫힌 터널을 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 침수 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 바깥 선로 실측·목격 대조\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 바깥 작업장 선로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.\n\n**야망.** 북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.\n\n**공포.** 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

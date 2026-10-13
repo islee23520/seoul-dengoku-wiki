@@ -394,6 +394,150 @@
     "id": "K763",
     "personId": "person-0763"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 55
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "detect-unauthorized-crossings",
+        "name": {
+          "ko": "무단 도하 적발",
+          "en": "Detect Unauthorized Crossings"
+        },
+        "description": {
+          "ko": "손바호는 야간 무단 도하를 놓치지 않고 당직의 통행 경계를 지키려는 성향을 보인다.",
+          "en": "Son Baho shows a disposition to uphold crossing controls, grounded in catching an unauthorized night crosser."
+        },
+        "behavior": {
+          "ko": "야간 무단 도하자를 붙잡아 통행 위반에 직접 대응했다.",
+          "en": "He directly addressed a crossing violation by catching the unauthorized night crosser."
+        },
+        "stress": {
+          "ko": "당직 공백으로 통행이 강국의 볼모가 될 우려가 커지면 도하 감시에 더 주의를 기울일 수 있다.",
+          "en": "If a duty gap threatens to leave passage hostage to a powerful state, he may become more attentive to crossings."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 통행 경계를 이어 맡을 책임을 중요하게 여길 수 있다.",
+          "en": "In handovers with senior duty staff, he may emphasize responsibility for maintaining crossing controls."
+        },
+        "effects": []
+      },
+      {
+        "id": "reissue-security-tokens",
+        "name": {
+          "ko": "보안패 재발급",
+          "en": "Reissue Security Tokens"
+        },
+        "description": {
+          "ko": "손바호는 통행 위반 뒤 경비 암호패를 바꾸어 보안 조건을 바로잡으려는 성향을 보인다.",
+          "en": "Son Baho shows a disposition to restore security conditions by changing guard tokens after a crossing violation."
+        },
+        "behavior": {
+          "ko": "무단 도하자를 붙잡은 뒤 경비 암호패를 교체했다.",
+          "en": "He replaced the guard password token after catching the unauthorized crosser."
+        },
+        "stress": {
+          "ko": "통행 통제가 흔들릴 우려가 생기면 자기 권한 안에서 보안패 갱신을 우선할 수 있다.",
+          "en": "If passage control appears threatened, he may prioritize token renewal within his actual authority."
+        },
+        "relationship": {
+          "ko": "선배 당직에게 열쇠와 기록을 넘길 때 암호패 변경 사실도 명확히 전달하려 할 수 있다.",
+          "en": "When handing over keys and records to senior duty staff, he may seek to clarify the token change."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "야간 도하자를 저지하고 암호패를 바꿨다. 실제 경비 경험은 있으나 지위만으로 병력이나 장비를 배정하지 않는다.",
+      "en": "He stopped a night crosser and changed security passes. Guard experience is supported; rank does not grant troops or equipment."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -817,7 +961,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -825,7 +968,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 10 | 무력 0 | 물질 25 | 공동 30 | 원칙 15 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 25 | 과시 −25 | 지속 20 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 10 | 무력 0 | 물질 25 | 공동 30 | 원칙 15 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 25 | 과시 −25 | 지속 20 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

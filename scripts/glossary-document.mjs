@@ -6,7 +6,6 @@ export const glossarySections = Object.freeze([
   { categories: ['organization'], ko: '가문 및 조직', en: 'Houses and organizations' },
   { categories: ['person_category'], ko: '인물 및 직책', en: 'People and posts' },
   { categories: ['technology', 'equipment'], ko: '기술 및 장비', en: 'Technology and equipment' },
-  { categories: ['martial_school'], ko: '무공 및 전술', en: 'Martial arts and tactics' },
   { categories: ['geography'], ko: '시설 및 지리', en: 'Facilities and geography' },
   { categories: ['event'], ko: '사건 및 연대', en: 'Events and eras' },
   { categories: ['ailment'], ko: '질병', en: 'Ailments' },

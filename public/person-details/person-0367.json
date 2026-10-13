@@ -392,6 +392,142 @@
     "id": "K366",
     "personId": "person-0367"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "beacon-testimony-recording",
+        "name": {
+          "ko": "봉화 증언 기록",
+          "en": "Beacon testimony recording"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "짧은 증언으로 시간을 남긴다",
+          "en": "Brief testimony preserves time"
+        },
+        "description": {
+          "ko": "오인 호송의 밤 봉화 색을 증인으로 남기고 당사자 진술과 시간을 맞춘다. 증언의 보존은 전투 해결을 뜻하지 않는다.",
+          "en": "Beacon colors from the misidentified transport night are retained and aligned with participant accounts. Preserving testimony is not resolving combat."
+        },
+        "behavior": {
+          "ko": "교량 통과증의 접힌 자국까지 기억하고, 군사 면제 칸을 증언으로 포장하는 사신을 내려보낸다. 침묵이 길수록 증언은 짧다.",
+          "en": "He remembered even the fold marks on bridge passage permits and sent down any envoy who dressed a military exemption column up as testimony. The longer the silence, the shorter the testimony."
+        },
+        "stress": {
+          "ko": "공포. 자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.",
+          "en": "Fear. That his testimony would become the blockade's indulgence and Go Seojun's joint rule would be left with one blade only."
+        },
+        "relationship": {
+          "ko": "관계. 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.",
+          "en": "Relations. Overlaid testimony with Go Seojun's bridge permit and matched the hours with Beom Choi's convoy accident statement. Made Ha Yunmok's passage ledger the frame of the witness stand."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.",
+          "en": "Office. Rank: sergeant. Title: gate passage witness. He wrote the passage hours and the beacon colors on one chalkboard and sealed any testimony stamped with an exemption clause until Ha Yunmok's ledger was posted."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: gate passage witness. He wrote the passage hours and the beacon colors on one chalkboard and sealed any testimony stamped with an exemption clause until Ha Yunmok's ledger was posted."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That his testimony would become the blockade's indulgence and Go Seojun's joint rule would be left with one blade only."
+        },
+        "relationship": {
+          "ko": "관계. 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.",
+          "en": "Relations. Overlaid testimony with Go Seojun's bridge permit and matched the hours with Beom Choi's convoy accident statement. Made Ha Yunmok's passage ledger the frame of the witness stand."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "오인 호송의 밤 봉화 색을 증인으로 남기고 당사자 진술과 시간을 맞춘다. 증언의 보존은 전투 해결을 뜻하지 않는다.",
+      "en": "Beacon colors from the misidentified transport night are retained and aligned with participant accounts. Preserving testimony is not resolving combat."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -793,7 +929,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 양군 관문 통행 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.",
     "일화": "겨울의 검은 배차표가 열리자 아차산 척후가 의무호송을 적대 이동으로 오인했고 매서담은 그 밤의 봉화 색을 증인으로 남겼다.",
     "관계": "고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.",
@@ -801,7 +936,7 @@
     "공포": "자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.",
     "개입": "봉화 일지를 공개해 오인을 풀거나, 증언을 봉쇄 구실로 넘길 수 있다."
   },
-  "biography": "교량 통과증의 접힌 자국까지 기억하고, 군사 면제 칸을 증언으로 포장하는 사신을 내려보낸다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 통과 시각·봉화 색 기록·면제 증언 봉인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 관문 통행 증인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 양군 관문 통행 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.\n\n**일화.** 겨울의 검은 배차표가 열리자 아차산 척후가 의무호송을 적대 이동으로 오인했고 매서담은 그 밤의 봉화 색을 증인으로 남겼다.\n\n**관계.** 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.\n\n**야망.** 동부 도하 통과의 실제 시각을 공개 증언으로 남겨 오인 봉화가 다시 의무호송을 적으로 찍지 못하게 한다.\n\n**공포.** 자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.\n\n**개입.** 봉화 일지를 공개해 오인을 풀거나, 증언을 봉쇄 구실로 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −10 | 무력 30 | 물질 5 | 공동 20 | 원칙 −10 | 공개 −10 | 자격 −10 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 10 | 위험 −10 | 과시 15 | 지속 −15 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "교량 통과증의 접힌 자국까지 기억하고, 군사 면제 칸을 증언으로 포장하는 사신을 내려보낸다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 통과 시각·봉화 색 기록·면제 증언 봉인\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 관문 통행 증인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 양군 관문 통행 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 공동실무원. 직함은 양군 관문 통행 증인. 통과 시각과 봉화 색을 같은 칠판에 적고, 면제 문장이 찍힌 증언은 하윤목의 원장 게시 전까지 봉한다.\n\n**일화.** 겨울의 검은 배차표가 열리자 아차산 척후가 의무호송을 적대 이동으로 오인했고 매서담은 그 밤의 봉화 색을 증인으로 남겼다.\n\n**관계.** 고서준의 교량 허가와 증언을 겹치고, 범초이의 호송 사고 진술과 시각을 맞춘다. 하윤목의 통과 원장을 증인석의 뼈대로 둔다.\n\n**야망.** 동부 도하 통과의 실제 시각을 공개 증언으로 남겨 오인 봉화가 다시 의무호송을 적으로 찍지 못하게 한다.\n\n**공포.** 자신의 증언이 봉쇄대의 면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.\n\n**개입.** 봉화 일지를 공개해 오인을 풀거나, 증언을 봉쇄 구실로 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −10 | 무력 30 | 물질 5 | 공동 20 | 원칙 −10 | 공개 −10 | 자격 −10 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 10 | 위험 −10 | 과시 15 | 지속 −15 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-14"
   ],

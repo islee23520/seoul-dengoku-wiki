@@ -373,6 +373,150 @@
     "id": "K182",
     "personId": "person-0183"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "queue-administration",
+        "name": {
+          "ko": "대기표 운영",
+          "en": "Queue administration"
+        },
+        "rating": 65
+      },
+      {
+        "id": "public-announcements",
+        "name": {
+          "ko": "역 방송",
+          "en": "Station announcements"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k182-disposition",
+        "name": {
+          "ko": "공개 창구 우선",
+          "en": "Public counter first"
+        },
+        "description": {
+          "ko": "승강장 습기로 환적인파를 가늠하고, 도제 대기열을 가문 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 억류 예고가 뜨면 방송을 직접 잡는다.",
+          "en": "He gauged transshipment crowds by platform humidity and heard as an insult any order to push the apprentice waiting line behind the house freight cars. Mild in manner, he took the broadcast himself whenever a detention warning rose."
+        },
+        "behavior": {
+          "ko": "관직. 품계 당직장. 직함은 용산역 대합실 역장. 대합실 환적 창구와 의무 대기표를 매일 공개하고, 장갑 화물차는 급수열차가 떠난 뒤에만 승강장에 붙인다.",
+          "en": "Office. Rank: duty chief. Title: Yongsan Station concourse stationmaster. He published the concourse transshipment window and the care waiting lists daily and coupled armored freight cars to the platform only after the water train had left."
+        },
+        "stress": {
+          "ko": "공포. 전쟁 소문만으로 대합실이 봉쇄되고 중계 인파가 강변 밀선으로 흩어지는 것.",
+          "en": "Fear. That war rumor alone would blockade the concourse and scatter the relay crowds into riverside smuggler boats."
+        },
+        "relationship": {
+          "ko": "관계. 가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고, 에바 노바코바의 배차 순서를 승강장에서 집행하며, 루카스 슈나이더의 창고 임대 순번을 칠판에 옮겨 적는다.",
+          "en": "Relations. An alliance announcing Gabriel Johnson's warehouse care lockdown by broadcast, he executed Eva Nováková's dispatch order at the platform and wrote Lukas Schneider's warehouse lease order onto the chalkboard."
+        },
+        "effects": []
+      },
+      {
+        "id": "k182-choice",
+        "name": {
+          "ko": "도제의 순서 보호",
+          "en": "Protecting apprentice queues"
+        },
+        "description": {
+          "ko": "일화. 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 용산역 대합실 역장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he sent a private petition back and passed it to the public window. By this deed the signature of the Yongsan Station concourse stationmaster post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고, 에바 노바코바의 배차 순서를 승강장에서 집행하며, 루카스 슈나이더의 창고 임대 순번을 칠판에 옮겨 적는다.",
+          "en": "Relations. An alliance announcing Gabriel Johnson's warehouse care lockdown by broadcast, he executed Eva Nováková's dispatch order at the platform and wrote Lukas Schneider's warehouse lease order onto the chalkboard."
+        },
+        "stress": {
+          "ko": "공포. 전쟁 소문만으로 대합실이 봉쇄되고 중계 인파가 강변 밀선으로 흩어지는 것.",
+          "en": "Fear. That war rumor alone would blockade the concourse and scatter the relay crowds into riverside smuggler boats."
+        },
+        "relationship": {
+          "ko": "관계. 가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고, 에바 노바코바의 배차 순서를 승강장에서 집행하며, 루카스 슈나이더의 창고 임대 순번을 칠판에 옮겨 적는다.",
+          "en": "Relations. An alliance announcing Gabriel Johnson's warehouse care lockdown by broadcast, he executed Eva Nováková's dispatch order at the platform and wrote Lukas Schneider's warehouse lease order onto the chalkboard."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "청탁을 공개 창구로 돌리고 진료 봉쇄를 방송한다. 환적·진료 순서를 잇는 운영이 강점이며 허브의 완성은 아직 목표다.",
+      "en": "He redirects favors to the public counter and announces clinic closures. His strength is linking queues, not an already completed hub."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -718,7 +862,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 용산역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다. 마테우시 코발스키는 2078년에 태어났다. 폴란드계 가계는 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산역 대합실 역장 업무를 맡는다. 스타니스와프 코발스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 마테우시 코발스키의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 폴란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 당직장. 직함은 용산역 대합실 역장. 대합실 환적 창구와 의무 대기표를 매일 공개하고, 장갑 화물차는 급수열차가 떠난 뒤에만 승강장에 붙인다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 용산역 대합실 역장 자리의 서명이 장부에 올랐다.",
     "관계": "가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고, 에바 노바코바의 배차 순서를 승강장에서 집행하며, 루카스 슈나이더의 창고 임대 순번을 칠판에 옮겨 적는다.",
@@ -726,7 +869,7 @@
     "공포": "전쟁 소문만으로 대합실이 봉쇄되고 중계 인파가 강변 밀선으로 흩어지는 것.",
     "개입": "대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다."
   },
-  "biography": "승강장 습기로 환적인파를 가늠하고, 도제 대기열을 가문 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 억류 예고가 뜨면 방송을 직접 잡는다.\n\n- 소속: 환적국\n- 품계: 당직장\n- 생업: 대합실 환적 창구·의무 대기표 운영\n- 직함: 용산역 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 용산역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다. 마테우시 코발스키는 2078년에 태어났다. 폴란드계 가계는 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산역 대합실 역장 업무를 맡는다. 스타니스와프 코발스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 마테우시 코발스키의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 폴란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 당직장. 직함은 용산역 대합실 역장. 대합실 환적 창구와 의무 대기표를 매일 공개하고, 장갑 화물차는 급수열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 용산역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고, 에바 노바코바의 배차 순서를 승강장에서 집행하며, 루카스 슈나이더의 창고 임대 순번을 칠판에 옮겨 적는다.\n\n**야망.** 용산 대합실을 배차·환적·진료가 한 지붕에서 서명되는 중계 허브로 만들어 후국의 대면 창구가 된다.\n\n**공포.** 전쟁 소문만으로 대합실이 봉쇄되고 중계 인파가 강변 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 −10 | 물질 25 | 공동 −10 | 원칙 −5 | 공개 −10 | 자격 20 | 분산 0 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 15 | 위험 30 | 과시 −20 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "승강장 습기로 환적인파를 가늠하고, 도제 대기열을 가문 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 억류 예고가 뜨면 방송을 직접 잡는다.\n\n- 소속: 환적국\n- 품계: 당직장\n- 생업: 대합실 환적 창구·의무 대기표 운영\n- 직함: 용산역 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 용산역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다. 마테우시 코발스키는 2078년에 태어났다. 폴란드계 가계는 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 용산역 대합실 역장 업무를 맡는다. 스타니스와프 코발스키는 2030년 동대문 중앙아시아 상권과 연결된 용산 민간 정비 가구에서 용산 화물창 민간 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 마테우시 코발스키의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 폴란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 당직장. 직함은 용산역 대합실 역장. 대합실 환적 창구와 의무 대기표를 매일 공개하고, 장갑 화물차는 급수열차가 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 용산역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고, 에바 노바코바의 배차 순서를 승강장에서 집행하며, 루카스 슈나이더의 창고 임대 순번을 칠판에 옮겨 적는다.\n\n**야망.** 용산 대합실을 배차·환적·진료가 한 지붕에서 서명되는 중계 허브로 만들어 후국의 대면 창구가 된다.\n\n**공포.** 전쟁 소문만으로 대합실이 봉쇄되고 중계 인파가 강변 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 −10 | 물질 25 | 공동 −10 | 원칙 −5 | 공개 −10 | 자격 20 | 분산 0 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 15 | 위험 30 | 과시 −20 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],

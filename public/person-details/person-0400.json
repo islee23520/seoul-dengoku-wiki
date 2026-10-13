@@ -286,6 +286,142 @@
     "id": "K399",
     "personId": "person-0400"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "treaty-drafting",
+        "name": {
+          "ko": "조약 문안 정서",
+          "en": "Treaty drafting"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "문구를 끝까지 확인",
+          "en": "Checks wording thoroughly"
+        },
+        "description": {
+          "ko": "종료일과 감사 조항부터 쓰고 표준 문장을 정서한다. 가짜 약 상자를 불태우지 않고 봉인했다.",
+          "en": "Writes expiry and audit clauses first and transcribes standard terms. Seals counterfeit medicine boxes instead of burning them."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 문구를 끝까지 확인을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "불명확한 문구를 끝내지 못하면 결정을 늦출 수 있다.",
+          "en": "May delay decisions over unresolved wording."
+        },
+        "relationship": {
+          "ko": "정유라의 표준문과 장세화의 호송 조항을 연결한다.",
+          "en": "Connects Jeong Yura’s standards to Jang Sehwa’s escort clauses."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "강국과의 교섭안의 종료조건·감사권·인질 대체 보증을 표준 서식으로 만들어 조합원이 같은 종이로 서명하게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "서기가 베낀 초안이 강국 한쪽의 대리 문서로 유통되어 공동교섭이 빈 껍데기가 되는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "정유라의 표준문과 장세화의 호송 조항을 연결한다.",
+          "en": "Connects Jeong Yura’s standards to Jang Sehwa’s escort clauses."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "종료일과 감사 조항부터 쓰고 표준 문장을 정서한다. 가짜 약 상자를 불태우지 않고 봉인했다.",
+      "en": "Writes expiry and audit clauses first and transcribes standard terms. Seals counterfeit medicine boxes instead of burning them."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -724,7 +860,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 계약 서기 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 계약 서기. 모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다.",
     "일화": "2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 계약 서기 자리의 서명이 장부에 올랐다.",
     "관계": "정유라의 표준 문장을 정서하고, 장세화의 공동호송 조항을 초안에 넣으며, 하윤목의 관문 원장을 부속 문서로 요구해 온 빚이 있다.",
@@ -732,7 +867,7 @@
     "공포": "서기가 베낀 초안이 강국 한쪽의 대리 문서로 유통되어 공동교섭이 빈 껍데기가 되는 것.",
     "개입": "세 초안을 한 장의 비교표로 만들거나, 특정 강국 문구만 남긴 위조 정서본을 유포할 수 있다."
   },
-  "biography": "문구의 마침표를 고치고 나서야 잠이 온다. 힘의 합의를 계약서에 못 박지 못하면 패배로 적는다.\n\n- 생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 계약 서기\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 계약 서기 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 계약 서기. 모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다.\n\n**일화.** 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 계약 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정유라의 표준 문장을 정서하고, 장세화의 공동호송 조항을 초안에 넣으며, 하윤목의 관문 원장을 부속 문서로 요구해 온 빚이 있다.\n\n**야망.** 강국과의 교섭안의 종료조건·감사권·인질 대체 보증을 표준 서식으로 만들어 조합원이 같은 종이로 서명하게 한다.\n\n**공포.** 서기가 베낀 초안이 강국 한쪽의 대리 문서로 유통되어 공동교섭이 빈 껍데기가 되는 것.\n\n**개입.** 세 초안을 한 장의 비교표로 만들거나, 특정 강국 문구만 남긴 위조 정서본을 유포할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 35 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 30 | 공개 25 | 자격 15 | 분산 50 | 변혁 15\n- 욕망: 갈망 45 | 독점 15 | 위험 30 | 과시 20 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "문구의 마침표를 고치고 나서야 잠이 온다. 힘의 합의를 계약서에 못 박지 못하면 패배로 적는다.\n\n- 생업: 조약 초안 종료일·감사 조항 기재·면제 칸 확인\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 계약 서기\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 계약 서기 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 계약 서기. 모든 조약 초안에 종료일과 감사 조항을 먼저 쓰고, 군사 면제 칸은 정유라의 빨간 인장이 있을 때만 연다.\n\n**일화.** 2125년 가짜 약 상자를 경매장에서 거둬 화형 대신 봉인했다. 이 일로 계약 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정유라의 표준 문장을 정서하고, 장세화의 공동호송 조항을 초안에 넣으며, 하윤목의 관문 원장을 부속 문서로 요구해 온 빚이 있다.\n\n**야망.** 강국과의 교섭안의 종료조건·감사권·인질 대체 보증을 표준 서식으로 만들어 조합원이 같은 종이로 서명하게 한다.\n\n**공포.** 서기가 베낀 초안이 강국 한쪽의 대리 문서로 유통되어 공동교섭이 빈 껍데기가 되는 것.\n\n**개입.** 세 초안을 한 장의 비교표로 만들거나, 특정 강국 문구만 남긴 위조 정서본을 유포할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 35 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 30 | 공개 25 | 자격 15 | 분산 50 | 변혁 15\n- 욕망: 갈망 45 | 독점 15 | 위험 30 | 과시 20 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-16"
   ],

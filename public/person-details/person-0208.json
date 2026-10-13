@@ -286,6 +286,150 @@
     "id": "K207",
     "personId": "person-0208"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "market-queue-management",
+        "name": {
+          "ko": "시장 대기표 운영",
+          "en": "Market queue administration"
+        },
+        "rating": 65
+      },
+      {
+        "id": "station-announcements",
+        "name": {
+          "ko": "역 방송",
+          "en": "Station announcements"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k207-disposition",
+        "name": {
+          "ko": "호송 대기열 보호",
+          "en": "Protecting convoy queues"
+        },
+        "description": {
+          "ko": "승강장 습기로 경매 인파를 가늠하고, 호송 대기열을 군수 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 정전 예고가 뜨면 방송을 직접 잡는다.",
+          "en": "She gauged auction crowds by platform humidity and heard as an insult any order to push the convoy waiting line behind the munitions cars. Mild in manner, she took the broadcast herself whenever a blackout warning rose."
+        },
+        "behavior": {
+          "ko": "관직. 품계 기사. 직함은 노량진역 대합실 역장. 대합실 경매 대기표와 의무 창구를 매일 공개하고, 군수 화차는 호송선단이 떠난 뒤에만 승강장에 붙인다.",
+          "en": "Office. Rank: temple student. Title: Noryangjin Station concourse stationmaster. She published the concourse auction waiting lists and the care window daily and coupled munitions cars to the platform only after the convoy fleet had left."
+        },
+        "stress": {
+          "ko": "공포. 흉작 소문만으로 대합실이 봉쇄되고 상인이 부두 밀선으로 흩어지는 것.",
+          "en": "Fear. That famine rumor alone would blockade the concourse and scatter the merchants into quay smuggler boats."
+        },
+        "relationship": {
+          "ko": "관계. 연가온의 의무소 봉쇄를 방송으로 알리는 동맹이고, 윤서하의 경매 순서를 승강장에서 집행하며, 신태산의 출항 시각을 칠판에 옮겨 적는다.",
+          "en": "Relations. An alliance announcing Yeon Gaon's clinic lockdown by broadcast, she executed Yun Seoha's auction order at the platform and wrote Sin Taesan's departure hours on the chalkboard."
+        },
+        "effects": []
+      },
+      {
+        "id": "k207-choice",
+        "name": {
+          "ko": "청탁은 공개 창구로",
+          "en": "Favors to the public counter"
+        },
+        "description": {
+          "ko": "일화. 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진역 대합실 역장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 she sent a private petition back and passed it to the public window. By this deed the signature of the Noryangjin Station concourse stationmaster post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 연가온의 의무소 봉쇄를 방송으로 알리는 동맹이고, 윤서하의 경매 순서를 승강장에서 집행하며, 신태산의 출항 시각을 칠판에 옮겨 적는다.",
+          "en": "Relations. An alliance announcing Yeon Gaon's clinic lockdown by broadcast, she executed Yun Seoha's auction order at the platform and wrote Sin Taesan's departure hours on the chalkboard."
+        },
+        "stress": {
+          "ko": "공포. 흉작 소문만으로 대합실이 봉쇄되고 상인이 부두 밀선으로 흩어지는 것.",
+          "en": "Fear. That famine rumor alone would blockade the concourse and scatter the merchants into quay smuggler boats."
+        },
+        "relationship": {
+          "ko": "관계. 연가온의 의무소 봉쇄를 방송으로 알리는 동맹이고, 윤서하의 경매 순서를 승강장에서 집행하며, 신태산의 출항 시각을 칠판에 옮겨 적는다.",
+          "en": "Relations. An alliance announcing Yeon Gaon's clinic lockdown by broadcast, she executed Yun Seoha's auction order at the platform and wrote Sin Taesan's departure hours on the chalkboard."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "청탁을 돌려보내고 의무 봉쇄를 방송하며 출항 순서를 공개한다. 남부 허브는 야망이고 군수 지휘 경력은 없다.",
+      "en": "Redirects favors, broadcasts clinic closure and publishes sailing order. The southern hub is an ambition, not military command experience."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -667,7 +811,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 노량진역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 기사. 직함은 노량진역 대합실 역장. 대합실 경매 대기표와 의무 창구를 매일 공개하고, 군수 화차는 호송선단이 떠난 뒤에만 승강장에 붙인다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진역 대합실 역장 자리의 서명이 장부에 올랐다.",
     "관계": "연가온의 의무소 봉쇄를 방송으로 알리는 동맹이고, 윤서하의 경매 순서를 승강장에서 집행하며, 신태산의 출항 시각을 칠판에 옮겨 적는다.",
@@ -675,7 +818,7 @@
     "공포": "흉작 소문만으로 대합실이 봉쇄되고 상인이 부두 밀선으로 흩어지는 것.",
     "개입": "대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다."
   },
-  "biography": "승강장 습기로 경매 인파를 가늠하고, 호송 대기열을 군수 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 정전 예고가 뜨면 방송을 직접 잡는다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 대합실 경매 대기표·의무 창구 운영\n- 직함: 노량진역 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 노량진역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 기사. 직함은 노량진역 대합실 역장. 대합실 경매 대기표와 의무 창구를 매일 공개하고, 군수 화차는 호송선단이 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연가온의 의무소 봉쇄를 방송으로 알리는 동맹이고, 윤서하의 경매 순서를 승강장에서 집행하며, 신태산의 출항 시각을 칠판에 옮겨 적는다.\n\n**야망.** 노량진 대합실을 경매·진료·호송이 한 지붕에서 서명되는 남부 허브로 만들어 중립시장의 대면 창구가 된다.\n\n**공포.** 흉작 소문만으로 대합실이 봉쇄되고 상인이 부두 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −15 | 물질 55 | 공동 −10 | 원칙 −40 | 공개 15 | 자격 5 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −20 | 위험 10 | 과시 30 | 지속 −5 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "승강장 습기로 경매 인파를 가늠하고, 호송 대기열을 군수 화차 뒤로 미루라는 명령을 모욕으로 듣는다. 온화하나 정전 예고가 뜨면 방송을 직접 잡는다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 대합실 경매 대기표·의무 창구 운영\n- 직함: 노량진역 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 노량진역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 기사. 직함은 노량진역 대합실 역장. 대합실 경매 대기표와 의무 창구를 매일 공개하고, 군수 화차는 호송선단이 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연가온의 의무소 봉쇄를 방송으로 알리는 동맹이고, 윤서하의 경매 순서를 승강장에서 집행하며, 신태산의 출항 시각을 칠판에 옮겨 적는다.\n\n**야망.** 노량진 대합실을 경매·진료·호송이 한 지붕에서 서명되는 남부 허브로 만들어 중립시장의 대면 창구가 된다.\n\n**공포.** 흉작 소문만으로 대합실이 봉쇄되고 상인이 부두 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −15 | 물질 55 | 공동 −10 | 원칙 −40 | 공개 15 | 자격 5 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −20 | 위험 10 | 과시 30 | 지속 −5 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],

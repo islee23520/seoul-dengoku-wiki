@@ -286,6 +286,142 @@
     "id": "K224",
     "personId": "person-0225"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 6,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "forgery-trace",
+        "name": {
+          "ko": "위조 화폐 추적",
+          "en": "Forgery tracing"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "forgery-trace-disposition",
+        "name": {
+          "ko": "사람부터 봉쇄",
+          "en": "Blocks people first"
+        },
+        "description": {
+          "ko": "출처를 찾으면 도구보다 사람을 먼저 막는다.",
+          "en": "Blocks people before tools at a forgery source."
+        },
+        "behavior": {
+          "ko": "출처를 찾으면 도구보다 사람을 먼저 막는다.",
+          "en": "Blocks people before tools at a forgery source."
+        },
+        "stress": {
+          "ko": "추적조의 검열화를 경계한다.",
+          "en": "Is wary of the tracing team becoming censorship."
+        },
+        "relationship": {
+          "ko": "권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.",
+          "en": "Protects Gwon Mirae’s vault and uses Hwang Jiho’s train ledger while tracing Bae Woojin’s forgery suspicion."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "로그 공개",
+          "en": "Public logs"
+        },
+        "description": {
+          "ko": "추적 로그를 매일 게시한다.",
+          "en": "Publishes tracing logs daily."
+        },
+        "behavior": {
+          "ko": "추적 로그를 매일 게시한다.",
+          "en": "Publishes tracing logs daily."
+        },
+        "stress": {
+          "ko": "추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.",
+          "en": "Is wary of the tracing team becoming censorship."
+        },
+        "relationship": {
+          "ko": "권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.",
+          "en": "Protects Gwon Mirae’s vault and uses Hwang Jiho’s train ledger while tracing Bae Woojin’s forgery suspicion."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "위조 화폐를 회수하고 로그를 게시한다. 사람부터 봉쇄하는 속도와 검열화 공포가 충돌한다.",
+      "en": "Recalls forgery and publishes logs; rapid personal blocking conflicts with fear of censorship."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -702,7 +838,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 위조 화폐 추적조 반장. 추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다.",
     "일화": "2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 위조 화폐 추적조 반장 자리의 서명이 장부에 올랐다.",
     "관계": "권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.",
@@ -710,7 +845,7 @@
     "공포": "추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.",
     "개입": "위조 화폐의 원점을 함께 찾거나, 추적조의 과잉 봉쇄를 출자 평의회에 고발할 수 있다."
   },
-  "biography": "직선적이고 소문에 빠르다. 위조 화폐의 출처를 찾으면 도구보다 사람을 먼저 봉쇄한다.\n\n- 생업: 위조 화폐 추적 로그·금고 접근 확인\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 위조 화폐 추적조 반장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 위조 화폐 추적조 반장. 추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 위조 화폐 추적조 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.\n\n**야망.** 위조 화폐와 군사 압류를 같은 죄로 기록해 공용 화폐의 신용을 금고 주권으로 남긴다.\n\n**공포.** 추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.\n\n**개입.** 위조 화폐의 원점을 함께 찾거나, 추적조의 과잉 봉쇄를 출자 평의회에 고발할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 30 | 공개 55 | 자격 5 | 분산 25 | 변혁 −10\n- 욕망: 갈망 50 | 독점 −25 | 위험 −10 | 과시 −25 | 지속 −10 | 지향 무성향 | 결합 계약동거",
+  "biography": "직선적이고 소문에 빠르다. 위조 화폐의 출처를 찾으면 도구보다 사람을 먼저 봉쇄한다.\n\n- 생업: 위조 화폐 추적 로그·금고 접근 확인\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 위조 화폐 추적조 반장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 위조 화폐 추적조 반장 자리는 정전 사흘 금고 유지로 열렸다.\n\n**관직.** 품계 서기. 직함은 위조 화폐 추적조 반장. 추적 로그를 매일 게시하고, 금고 접근은 두 조원의 동행만 허용한다.\n\n**일화.** 2125년 위조 화폐를 거두고 진짜 칸에 정정 시세를 붙였다. 이 일로 위조 화폐 추적조 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 권미래의 금고를 지키고 배우진의 위조 의혹을 추적한다. 황지호가 가져온 열차 장부를 증거로 삼는다.\n\n**야망.** 위조 화폐와 군사 압류를 같은 죄로 기록해 공용 화폐의 신용을 금고 주권으로 남긴다.\n\n**공포.** 추적조가 검열 기관으로 변해 최지우의 공용 화폐를 내부에서 멈추는 것.\n\n**개입.** 위조 화폐의 원점을 함께 찾거나, 추적조의 과잉 봉쇄를 출자 평의회에 고발할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 30 | 공개 55 | 자격 5 | 분산 25 | 변혁 −10\n- 욕망: 갈망 50 | 독점 −25 | 위험 −10 | 과시 −25 | 지속 −10 | 지향 무성향 | 결합 계약동거",
   "sources": [
     "Cast-State-09"
   ],

@@ -285,6 +285,150 @@
     "id": "K198",
     "personId": "person-0199"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "ice-weight-marking",
+        "name": {
+          "ko": "얼음 중량 각인",
+          "en": "Ice weight marking"
+        },
+        "rating": 65
+      },
+      {
+        "id": "ice-allocation",
+        "name": {
+          "ko": "얼음 배정",
+          "en": "Ice allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k198-disposition",
+        "name": {
+          "ko": "병든 아이 먼저",
+          "en": "Sick children first"
+        },
+        "description": {
+          "ko": "꼼꼼하고 인색해 보이지만 병든 아이에게는 얼음을 먼저 푼다. 온도보다 신용이 먼저 녹는다고 말한다.",
+          "en": "Meticulous and seeming stingy, she opened the ice first for a sick child. She said credit melted before temperature did."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.",
+          "en": "Office. Rank: lay instructor. Title: ice merchant. She engraved brick weight and production hour and sent out of the market any merchant who matched weight with melted ice."
+        },
+        "stress": {
+          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
+          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
+        },
+        "relationship": {
+          "ko": "관계. 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
+          "en": "Relations. Filled O Haerin's collateral warehouse and shared temperature records with Jo Minjae. Assigned infirmary ice as priority to Yun Jiyul."
+        },
+        "effects": []
+      },
+      {
+        "id": "k198-choice",
+        "name": {
+          "ko": "녹은 중량 거부",
+          "en": "Rejecting melted weight fraud"
+        },
+        "description": {
+          "ko": "일화. 정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.",
+          "en": "Anecdote. When the ice machines stopped on the first blackout day, merchants began cheating weights, refreezing melted water."
+        },
+        "behavior": {
+          "ko": "관계. 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
+          "en": "Relations. Filled O Haerin's collateral warehouse and shared temperature records with Jo Minjae. Assigned infirmary ice as priority to Yun Jiyul."
+        },
+        "stress": {
+          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
+          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
+        },
+        "relationship": {
+          "ko": "관계. 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
+          "en": "Relations. Filled O Haerin's collateral warehouse and shared temperature records with Jo Minjae. Assigned infirmary ice as priority to Yun Jiyul."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "얼음 제작 시각·무게를 새기고 병든 아이와 의무실에 먼저 배정한다. 얼음의 결제 단위 표준화는 아직 목표다.",
+      "en": "Marks ice production times and weight and gives priority to sick children and clinics. Standardization as a payment unit remains a goal."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -627,7 +771,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.",
     "일화": "정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.",
     "관계": "오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.",
@@ -635,7 +778,7 @@
     "공포": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
     "개입": "수동 제빙 도구를 들여오거나, 가짜 중량 벽돌을 경매 전에 깨 보일 수 있다."
   },
-  "biography": "꼼꼼하고 인색해 보이지만 병든 아이에게는 얼음을 먼저 푼다. 온도보다 신용이 먼저 녹는다고 말한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 얼음 벽돌 무게·제작 시각 각인\n- 직함: 얼음 상인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.\n\n**일화.** 정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.\n\n**관계.** 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.\n\n**야망.** 얼음 벽돌을 결제 단위로 표준화해 전력이 흔들려도 노량진 시세가 하루를 버티게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 가짜 중량 벽돌을 경매 전에 깨 보일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −20 | 물질 80 | 공동 −20 | 원칙 −50 | 공개 15 | 자격 −5 | 분산 20 | 변혁 20\n- 욕망: 갈망 35 | 독점 0 | 위험 −10 | 과시 50 | 지속 0 | 지향 유동 | 결합 없음\n:::",
+  "biography": "꼼꼼하고 인색해 보이지만 병든 아이에게는 얼음을 먼저 푼다. 온도보다 신용이 먼저 녹는다고 말한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 얼음 벽돌 무게·제작 시각 각인\n- 직함: 얼음 상인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 얼음 상인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교도. 직함은 얼음 상인. 벽돌 무게와 제작 시각을 각인하고, 녹은 얼음으로 중량을 맞춘 상인을 시장에서 내보낸다.\n\n**일화.** 정전 첫날 제빙기가 멈추자 상인들이 녹은 물을 다시 얼렸다며 중량을 속이기 시작했다.\n\n**관계.** 오해린의 담보 창고를 채우고 조민재와 온도 기록을 공유한다. 윤지율에게 의무실 얼음을 우선 배정한다.\n\n**야망.** 얼음 벽돌을 결제 단위로 표준화해 전력이 흔들려도 노량진 시세가 하루를 버티게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 가짜 중량 벽돌을 경매 전에 깨 보일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −20 | 물질 80 | 공동 −20 | 원칙 −50 | 공개 15 | 자격 −5 | 분산 20 | 변혁 20\n- 욕망: 갈망 35 | 독점 0 | 위험 −10 | 과시 50 | 지속 0 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-08"
   ],

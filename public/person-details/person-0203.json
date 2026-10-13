@@ -286,6 +286,150 @@
     "id": "K202",
     "personId": "person-0203"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "medicine-allocation",
+        "name": {
+          "ko": "약재 배분",
+          "en": "Medicine allocation"
+        },
+        "rating": 65
+      },
+      {
+        "id": "patient-triage",
+        "name": {
+          "ko": "환자 순서 조정",
+          "en": "Patient prioritization"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k202-disposition",
+        "name": {
+          "ko": "경매와 치료를 분리함",
+          "en": "Separating auctions from treatment"
+        },
+        "description": {
+          "ko": "식중독 냄새를 상처보다 먼저 맡고, 경매 순서를 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 얼음이 비면 시장 진료를 닫는다.",
+          "en": "He smelled food poisoning before wounds and tore up any note telling him to turn auction order into care order. Mild in manner, he closed the market clinic whenever the ice ran out."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 노량진시장 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 녹은 얼음으로 열을 내린 상인은 진료 대기에서 뺀다.",
+          "en": "Office. Rank: lay instructor. Title: Noryangjin market medic. He posted the patient roster and the medicine bundles at once and struck from the care waiting line any merchant who had run a fever down with melted ice."
+        },
+        "stress": {
+          "ko": "공포. 상한 재고가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 허위 재고의 면죄부가 되는 것.",
+          "en": "Fear. That medicine would arrive only after spoiled inventory spread through the alleys, and the clinic would become the indulgence of false inventory."
+        },
+        "relationship": {
+          "ko": "관계. 서나연의 의무실 얼음 우선 배정을 침상에서 집행하고, 윤지율에게 시장 환자를 이송으로 넘기며, 류은비에게 약재를 빚진다.",
+          "en": "Relations. Executed Seo Nayeon's infirmary ice priority at the sickbed, passed market patients to Yun Jiyul by transfer, and owed Ryu Eunbi herbs."
+        },
+        "effects": []
+      },
+      {
+        "id": "k202-choice",
+        "name": {
+          "ko": "얼음 없으면 진료 유보",
+          "en": "Holding care without ice"
+        },
+        "description": {
+          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 노량진시장 의무원 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, short of herbs, he halved the prescriptions and divided them among everyone. By this deed the signature of the Noryangjin market medic post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 서나연의 의무실 얼음 우선 배정을 침상에서 집행하고, 윤지율에게 시장 환자를 이송으로 넘기며, 류은비에게 약재를 빚진다.",
+          "en": "Relations. Executed Seo Nayeon's infirmary ice priority at the sickbed, passed market patients to Yun Jiyul by transfer, and owed Ryu Eunbi herbs."
+        },
+        "stress": {
+          "ko": "공포. 상한 재고가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 허위 재고의 면죄부가 되는 것.",
+          "en": "Fear. That medicine would arrive only after spoiled inventory spread through the alleys, and the clinic would become the indulgence of false inventory."
+        },
+        "relationship": {
+          "ko": "관계. 서나연의 의무실 얼음 우선 배정을 침상에서 집행하고, 윤지율에게 시장 환자를 이송으로 넘기며, 류은비에게 약재를 빚진다.",
+          "en": "Relations. Executed Seo Nayeon's infirmary ice priority at the sickbed, passed market patients to Yun Jiyul by transfer, and owed Ryu Eunbi herbs."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "약을 모두에게 나누고 경매 순서의 진료 전용을 거절한다. 얼음 부족에 진료를 닫는 판단은 안전과 접근의 긴장을 남긴다.",
+      "en": "Shares medicine with everyone and rejects auction order as treatment order. Closing care without ice preserves the safety-access tension."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -724,7 +868,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 노량진시장 의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 노량진시장 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 녹은 얼음으로 열을 내린 상인은 진료 대기에서 뺀다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 노량진시장 의무원 자리의 서명이 장부에 올랐다.",
     "관계": "서나연의 의무실 얼음 우선 배정을 침상에서 집행하고, 윤지율에게 시장 환자를 이송으로 넘기며, 류은비에게 약재를 빚진다.",
@@ -732,7 +875,7 @@
     "공포": "상한 재고가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 허위 재고의 면죄부가 되는 것.",
     "개입": "대체 시약을 호송해 봉쇄를 풀거나, 치료 순서를 경매표로 바꾼 쪽지를 폭로할 수 있다."
   },
-  "biography": "식중독 냄새를 상처보다 먼저 맡고, 경매 순서를 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 얼음이 비면 시장 진료를 닫는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 환자 명부·시약 게시\n- 직함: 노량진시장 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 노량진시장 의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 노량진시장 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 녹은 얼음으로 열을 내린 상인은 진료 대기에서 뺀다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 노량진시장 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 의무실 얼음 우선 배정을 침상에서 집행하고, 윤지율에게 시장 환자를 이송으로 넘기며, 류은비에게 약재를 빚진다.\n\n**야망.** 호송 대원과 선창 노동자의 방역 주기를 상회정 부칙으로 올려 중립시장에도 의무 최저선을 남긴다.\n\n**공포.** 상한 재고가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 허위 재고의 면죄부가 되는 것.\n\n**개입.** 대체 시약을 호송해 봉쇄를 풀거나, 치료 순서를 경매표로 바꾼 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 55 | 무력 −40 | 물질 65 | 공동 −15 | 원칙 −30 | 공개 15 | 자격 10 | 분산 20 | 변혁 10\n- 욕망: 갈망 20 | 독점 35 | 위험 −30 | 과시 15 | 지속 30 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "식중독 냄새를 상처보다 먼저 맡고, 경매 순서를 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 얼음이 비면 시장 진료를 닫는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 환자 명부·시약 게시\n- 직함: 노량진시장 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 노량진시장 의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 교도. 직함은 노량진시장 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 녹은 얼음으로 열을 내린 상인은 진료 대기에서 뺀다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 노량진시장 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 의무실 얼음 우선 배정을 침상에서 집행하고, 윤지율에게 시장 환자를 이송으로 넘기며, 류은비에게 약재를 빚진다.\n\n**야망.** 호송 대원과 선창 노동자의 방역 주기를 상회정 부칙으로 올려 중립시장에도 의무 최저선을 남긴다.\n\n**공포.** 상한 재고가 골목에 퍼진 뒤에야 약이 도착해, 의무소가 허위 재고의 면죄부가 되는 것.\n\n**개입.** 대체 시약을 호송해 봉쇄를 풀거나, 치료 순서를 경매표로 바꾼 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 55 | 무력 −40 | 물질 65 | 공동 −15 | 원칙 −30 | 공개 15 | 자격 10 | 분산 20 | 변혁 10\n- 욕망: 갈망 20 | 독점 35 | 위험 −30 | 과시 15 | 지속 30 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-08"
   ],

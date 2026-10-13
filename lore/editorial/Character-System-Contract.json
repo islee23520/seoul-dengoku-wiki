@@ -1,0 +1,79 @@
+{
+  "schema": "seoul-character-system-contract.v1",
+  "status": "owner-decisions-recorded-design-in-progress",
+  "approvalRef": "session:01a13087-20d0-74de-aa46-a7f95fc413c1/interview",
+  "abilities": [
+    { "id": "leadership", "name": { "ko": "통솔", "en": "Leadership" }, "scope": "사람을 조직하고 임무를 배분하며 집단을 움직인다. 충성이나 지휘권을 자동 부여하지 않는다." },
+    { "id": "strategy", "name": { "ko": "전략", "en": "Strategy" }, "scope": "목표·지형·병력·보급을 고려해 계획한다. 미확인 정보를 제공하지 않는다." },
+    { "id": "negotiation", "name": { "ko": "교섭", "en": "Negotiation" }, "scope": "이해관계를 조정하고 설득·거래·중재한다. 계약 권한을 대신하지 않는다." },
+    { "id": "management", "name": { "ko": "운영", "en": "Management" }, "scope": "인력·재정·물자·시설을 배분하고 지속적으로 관리한다. 실무 숙련과 소유권을 대신하지 않는다." },
+    { "id": "insight", "name": { "ko": "통찰", "en": "Insight" }, "scope": "상황·사람·정보의 징후와 의도를 파악한다. 전지적 지식을 주지 않는다." },
+    { "id": "learning", "name": { "ko": "학습", "en": "Learning" }, "scope": "지식과 기술을 이해하고 익힌다. 전문 기술 보유와 구분한다." },
+    { "id": "prowess", "name": { "ko": "기량", "en": "Prowess" }, "scope": "개인 전투의 판단과 수행을 나타낸다. 전략·통솔·장비 성능과 구분한다." },
+    { "id": "endurance", "name": { "ko": "체력", "en": "Endurance" }, "scope": "노동·이동·교전의 신체적 부담을 견딘다. 부위 손상이나 상실을 없애지 않는다." }
+  ],
+  "ratings": {
+    "base": { "minimum": 0, "maximum": 20, "integer": true },
+    "effective": { "minimum": 0, "maximum": 100, "integer": true, "capAfterAllEffects": true },
+    "baseSeparateFromEffects": true,
+    "baseReference": { "value": 10, "meaning": "해당 분야 숙련자" },
+    "openingEffectiveAboveTwenty": "allowed-with-narrative-evidence",
+    "sourcesOfEffects": ["traits", "items", "current-state"],
+    "bands": null,
+    "resolutionFormula": null,
+    "effectCompositionFormula": null,
+    "legacyConversion": "none"
+  },
+  "skills": {
+    "separateFromAbilities": true,
+    "requireNarrativeEvidence": true,
+    "grantFromTitleOrAffiliation": false,
+    "ratingScale": { "minimum": 0, "maximum": 99.9, "decimalPlaces": 1 },
+    "unknownDistinctFromZero": true,
+    "avoidDoubleCountingProwess": true
+  },
+  "traits": {
+    "affect": ["performance", "behavior", "stress", "relationships"],
+    "coreDispositionChangesSlowly": true,
+    "experienceChangesTraitsAndState": true,
+    "acquisition": ["events", "actions"],
+    "specialOpportunityEffects": "review-per-example",
+    "catalog": null
+  },
+  "health": {
+    "bodyParts": ["left-arm", "right-arm", "left-leg", "right-leg", "head", "torso"],
+    "separateInjurySeverityAndFunction": true,
+    "separateDiseaseProgressionAndPartInjury": true,
+    "sharedStateForCombatAndDisease": true,
+    "severityVocabulary": null,
+    "functionVocabulary": null
+  },
+  "soul": {
+    "minimumPerPerson": 1,
+    "maximumPerPerson": 2,
+    "visibility": "editorial-only",
+    "assignmentLedger": "lore/editorial/Soul-Assignments.json",
+    "additionalCandidatePeriods": ["korean-war", "world-war-ii"],
+    "narrativeFitBeforeDuplicateMinimization": true,
+    "compositeDoesNotAutomaticallySumRatings": true,
+    "historicalAndRomanceSourcesDistinct": true,
+    "existingNarrativeIdentityPreserved": true
+  },
+  "publication": {
+    "showRatingsSkillsTraitsAndNarrative": true,
+    "excludeSoulAndHistoricalMotifs": true,
+    "projectionPolicy": "explicit-public-field-selection"
+  },
+  "openingAllocation": {
+    "method": "individual-narrative-and-soul-evidence",
+    "copySameRatingsForSameSoul": false,
+    "recordEvidenceAndApprovalStatus": true
+  },
+  "scope": {
+    "removeMartialArtsAndWuxia": true,
+    "redesignWuxiaDependentOrganizations": true,
+    "allowHeroicCombatants": true,
+    "preserveSealedHistoricalRecords": true
+  },
+  "pending": "전원 soul·개막 profile 발급과 공개 투영은 완료했다. null은 미확정 설계이며 판정식·숙련 성장식·일반 특성 카탈로그·신체 상태 어휘와 런타임 구현은 아직 확정하지 않았다."
+}

@@ -285,6 +285,142 @@
     "id": "K421",
     "personId": "person-0422"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "dispatch-seal-testimony",
+        "name": {
+          "ko": "배차 봉인 증언",
+          "en": "Dispatch seal testimony"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "증언과 소문을 가름",
+          "en": "Separates testimony from rumor"
+        },
+        "description": {
+          "ko": "의료열차 무기와 화차의 같은 끈을 증언하고 두 독립 증인 미만이면 도장을 덮는다. 부품 조작 소문과 배차 조사를 구분한다.",
+          "en": "Testifies about matching cords on medical-train weapons and freight and withholds stamps without two independent witnesses. Separates parts-tampering rumors from dispatch inquiry."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 증언과 소문을 가름을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "누명이나 사후 승인 압박 때 도장을 덮을 수 있다.",
+          "en": "May withhold stamping under pressure for blame or retrospective approval."
+        },
+        "relationship": {
+          "ko": "원초온의 당직표와 박태겸의 조사를 맞추되 장교망 의혹은 보류한다.",
+          "en": "Matches Won Choon’s duty board with Park Taegyeom’s investigation while withholding officer-network allegations."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "시청역 조합 차량정비소에서 나간 열차의 공식 명령과 비밀 쪽지를 공개 증언으로 남겨 쿠데타 의혹이 계약 감사의 입에서 지워지지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "자신의 증언이 사후 승인의 면죄부나 제3자 누명 중 하나로만 잘리는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "원초온의 당직표와 박태겸의 조사를 맞추되 장교망 의혹은 보류한다.",
+          "en": "Matches Won Choon’s duty board with Park Taegyeom’s investigation while withholding officer-network allegations."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "의료열차 무기와 화차의 같은 끈을 증언하고 두 독립 증인 미만이면 도장을 덮는다. 부품 조작 소문과 배차 조사를 구분한다.",
+      "en": "Testifies about matching cords on medical-train weapons and freight and withholds stamps without two independent witnesses. Separates parts-tampering rumors from dispatch inquiry."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -654,7 +790,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 검은 배차 열차 조사 증인 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 검은 배차 열차 조사 증인. 출고 시각과 명령 문장을 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다.",
     "일화": "겨울의 검은 배차표가 열리자 초진솔은 의료열차 무기와 같은 봉인 끈이 수서 출고 화차에도 남아 있음을 증언했다.",
     "관계": "원초온의 기지 당직 칠판과 증언을 겹치고, 박태겸의 배차 조사와 이홍원의 후계시험 부품 조작 소문을 증인석에서 가른다. 배우진의 장교망을 의심하되 증인 없이 원장에 올리지 않는다.",
@@ -662,7 +797,7 @@
     "공포": "자신의 증언이 사후 승인의 면죄부나 제3자 누명 중 하나로만 잘리는 것.",
     "개입": "봉인 끈을 대조해 제3의 조작을 밝히거나, 증언을 사후 승인 구실로 넘길 수 있다."
   },
-  "biography": "계약호위대의 봉인 끈과 화차 번호를 한눈에 읽고, 비밀 장교망이 남부 열차를 움직였다는 소문을 증인석에서 먼저 가른다. 과묵하나 일지가 비면 도장을 덮는다.\n\n- 생업: 배차 열차 출고 시각·명령 문장 기록\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 검은 배차 열차 조사 증인\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 검은 배차 열차 조사 증인 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 검은 배차 열차 조사 증인. 출고 시각과 명령 문장을 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다.\n\n**일화.** 겨울의 검은 배차표가 열리자 초진솔은 의료열차 무기와 같은 봉인 끈이 수서 출고 화차에도 남아 있음을 증언했다.\n\n**관계.** 원초온의 기지 당직 칠판과 증언을 겹치고, 박태겸의 배차 조사와 이홍원의 후계시험 부품 조작 소문을 증인석에서 가른다. 배우진의 장교망을 의심하되 증인 없이 원장에 올리지 않는다.\n\n**야망.** 시청역 조합 차량정비소에서 나간 열차의 공식 명령과 비밀 쪽지를 공개 증언으로 남겨 쿠데타 의혹이 계약 감사의 입에서 지워지지 않게 한다.\n\n**공포.** 자신의 증언이 사후 승인의 면죄부나 제3자 누명 중 하나로만 잘리는 것.\n\n**개입.** 봉인 끈을 대조해 제3의 조작을 밝히거나, 증언을 사후 승인 구실로 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 25 | 공개 30 | 자격 10 | 분산 40 | 변혁 0\n- 욕망: 갈망 5 | 독점 −10 | 위험 −20 | 과시 −25 | 지속 15 | 지향 양성 | 결합 없음\n:::",
+  "biography": "계약호위대의 봉인 끈과 화차 번호를 한눈에 읽고, 비밀 장교망이 남부 열차를 움직였다는 소문을 증인석에서 먼저 가른다. 과묵하나 일지가 비면 도장을 덮는다.\n\n- 생업: 배차 열차 출고 시각·명령 문장 기록\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 검은 배차 열차 조사 증인\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 검은 배차 열차 조사 증인 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 검은 배차 열차 조사 증인. 출고 시각과 명령 문장을 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다.\n\n**일화.** 겨울의 검은 배차표가 열리자 초진솔은 의료열차 무기와 같은 봉인 끈이 수서 출고 화차에도 남아 있음을 증언했다.\n\n**관계.** 원초온의 기지 당직 칠판과 증언을 겹치고, 박태겸의 배차 조사와 이홍원의 후계시험 부품 조작 소문을 증인석에서 가른다. 배우진의 장교망을 의심하되 증인 없이 원장에 올리지 않는다.\n\n**야망.** 시청역 조합 차량정비소에서 나간 열차의 공식 명령과 비밀 쪽지를 공개 증언으로 남겨 쿠데타 의혹이 계약 감사의 입에서 지워지지 않게 한다.\n\n**공포.** 자신의 증언이 사후 승인의 면죄부나 제3자 누명 중 하나로만 잘리는 것.\n\n**개입.** 봉인 끈을 대조해 제3의 조작을 밝히거나, 증언을 사후 승인 구실로 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −25 | 물질 −5 | 공동 5 | 원칙 25 | 공개 30 | 자격 10 | 분산 40 | 변혁 0\n- 욕망: 갈망 5 | 독점 −10 | 위험 −20 | 과시 −25 | 지속 15 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-16"
   ],

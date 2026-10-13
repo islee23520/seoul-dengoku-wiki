@@ -286,6 +286,150 @@
     "id": "K093",
     "personId": "person-0094"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "will",
+        "name": {
+          "ko": "유언 날짜·사본 대조",
+          "en": "Will date and copy comparison"
+        },
+        "rating": 65
+      },
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "distrust-oral-wills",
+        "name": {
+          "ko": "구두 유언 불신",
+          "en": "Distrust Oral Wills"
+        },
+        "description": {
+          "ko": "정가온은 구두 유언을 진본처럼 취급하는 해석보다 날짜와 문구의 대조를 신뢰한다.",
+          "en": "Jeong Gaon trusts comparisons of dates and wording over interpretations that treat oral wills as authentic documents."
+        },
+        "behavior": {
+          "ko": "유언 문구의 날짜를 집요하게 대조하고 감사 날인 없는 단독 해석 방송을 무효로 선언한다.",
+          "en": "Jeong persistently compares dates in testamentary wording and declares unilateral interpretation broadcasts invalid without an audit seal."
+        },
+        "stress": {
+          "ko": "위조 유언이 진본으로 굳어질 우려가 커지면 구두 주장에 대한 문서 확인을 더 엄격히 요구할 수 있다.",
+          "en": "If a forged will risks being accepted as authentic, Jeong may demand stricter documentary checks on oral claims."
+        },
+        "relationship": {
+          "ko": "박세린의 가문 원장 해석과 충돌할 때 구두 권위보다 대조 가능한 문구를 요구할 수 있다.",
+          "en": "When clashing with Park Serin's family-ledger interpretation, Jeong may insist on comparable wording rather than oral authority."
+        },
+        "effects": []
+      },
+      {
+        "id": "send-copies-simultaneously",
+        "name": {
+          "ko": "사본 동시 송부",
+          "en": "Send Copies Simultaneously"
+        },
+        "description": {
+          "ko": "정가온은 유언 사본이 한 기관의 해석에만 묶이지 않도록 동시 공유를 중시한다.",
+          "en": "Jeong Gaon values simultaneous sharing so testamentary copies do not remain subject to one institution's interpretation alone."
+        },
+        "behavior": {
+          "ko": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고 관련 기록을 나란히 올리려 한다.",
+          "en": "Jeong seals testamentary copies for simultaneous delivery to the records office and council and seeks to place related records side by side."
+        },
+        "stress": {
+          "ko": "감사 직위가 후계 분쟁의 도구로 쓰일 우려가 커지면 양쪽 기관의 동시 접근을 더 고수할 수 있다.",
+          "en": "If the audit office risks becoming a succession tool, Jeong may insist more strongly on simultaneous access for both institutions."
+        },
+        "relationship": {
+          "ko": "윤서린과의 사본 전달 계약과 한소미와의 문구 조정 동맹에서는 같은 기록의 공유를 협력 기준으로 삼을 수 있다.",
+          "en": "In the copy-transfer contract with Yun Seorin and wording alliance with Han Somi, Jeong may make shared access to the same records a condition of cooperation."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "유언 날짜와 사본을 대조하고 두 기관에 봉인본을 보낸다. 감사·문구 조정이 중심이며 위조 사건의 모호한 책임을 무결한 경력으로 바꾸지 않는다.",
+      "en": "He compares will dates and copies and sends sealed versions to two institutions. Auditing and wording checks are central; ambiguous responsibility in a forgery episode is not treated as a spotless career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -682,7 +826,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 당회 기록감사 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 장로. 직함은 당회 기록감사. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.",
     "관계": "윤서린에게 유언 사본을 넘기는 계약이고, 한소미의 공동통치안 문구를 다듬는 동맹이며, 박세린의 가문 원장과는 해석 경쟁이다.",
@@ -690,7 +833,7 @@
     "공포": "위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 것.",
     "개입": "봉인 사본을 기록청까지 호송하거나, 감사 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다."
   },
-  "biography": "냉정하고 문구의 날짜를 집요하게 대조한다. 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다.\n\n- 소속: 명부교회\n- 생업: 유언 사본 봉인·기록 감사\n- 품계: 장로\n- 직함: 당회 기록감사\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 당회 기록감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 장로. 직함은 당회 기록감사. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤서린에게 유언 사본을 넘기는 계약이고, 한소미의 공동통치안 문구를 다듬는 동맹이며, 박세린의 가문 원장과는 해석 경쟁이다.\n\n**야망.** 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 올려, 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.\n\n**공포.** 위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 것.\n\n**개입.** 봉인 사본을 기록청까지 호송하거나, 감사 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 15 | 무력 −10 | 물질 15 | 공동 20 | 원칙 35 | 공개 −5 | 자격 30 | 분산 30 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −20 | 위험 30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "냉정하고 문구의 날짜를 집요하게 대조한다. 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다.\n\n- 소속: 명부교회\n- 생업: 유언 사본 봉인·기록 감사\n- 품계: 장로\n- 직함: 당회 기록감사\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 당회 기록감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 장로. 직함은 당회 기록감사. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤서린에게 유언 사본을 넘기는 계약이고, 한소미의 공동통치안 문구를 다듬는 동맹이며, 박세린의 가문 원장과는 해석 경쟁이다.\n\n**야망.** 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 올려, 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.\n\n**공포.** 위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 것.\n\n**개입.** 봉인 사본을 기록청까지 호송하거나, 감사 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 15 | 무력 −10 | 물질 15 | 공동 20 | 원칙 35 | 공개 −5 | 자격 30 | 분산 30 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −20 | 위험 30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

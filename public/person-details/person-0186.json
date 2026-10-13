@@ -392,6 +392,150 @@
     "id": "K185",
     "personId": "person-0186"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "mobile-patient-care",
+        "name": {
+          "ko": "이동 환자 진료",
+          "en": "Mobile patient care"
+        },
+        "rating": 65
+      },
+      {
+        "id": "medicine-allocation",
+        "name": {
+          "ko": "약재 배분",
+          "en": "Medicine allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k185-disposition",
+        "name": {
+          "ko": "가족 단위 접근",
+          "en": "Family-based access"
+        },
+        "description": {
+          "ko": "도제 숙소 난로가 꺼지면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 가문 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.",
+          "en": "When the apprentice lodge's stove went out he changed care order to family units and heard as an insult any word telling him to skip the house columns for efficiency. Mild in manner, he tied the medicine boxes' seal cords himself."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다.",
+          "en": "Office. Rank: registrar. Title: Yongsan warehouse mobile clinic van chief. He ran the lodge-by-lodge burn and frostbite boards and, whenever ration pressure rose, opened the care beside the lodge with Isaac Walker's maintenance-log joint signature."
+        },
+        "stress": {
+          "ko": "공포. 억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
+          "en": "Fear. That the detained train's wounded would remain on refugee rosters alone, be pushed toward Changdong, and the clinic vans would become convoy prisons."
+        },
+        "relationship": {
+          "ko": "관계. 가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.",
+          "en": "Relations. Received patients into the lodge whenever Gabriel Johnson's warehouse care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at the Yongsan warehouse, and exchanged Im Chowon's passenger list with mobile care."
+        },
+        "effects": []
+      },
+      {
+        "id": "k185-choice",
+        "name": {
+          "ko": "배제 효율 거부",
+          "en": "Rejecting exclusion for efficiency"
+        },
+        "description": {
+          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, short of herbs, he halved the prescriptions and divided them among everyone. By this deed the signature of the Yongsan warehouse mobile clinic van chief post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.",
+          "en": "Relations. Received patients into the lodge whenever Gabriel Johnson's warehouse care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at the Yongsan warehouse, and exchanged Im Chowon's passenger list with mobile care."
+        },
+        "stress": {
+          "ko": "공포. 억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
+          "en": "Fear. That the detained train's wounded would remain on refugee rosters alone, be pushed toward Changdong, and the clinic vans would become convoy prisons."
+        },
+        "relationship": {
+          "ko": "관계. 가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.",
+          "en": "Relations. Received patients into the lodge whenever Gabriel Johnson's warehouse care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at the Yongsan warehouse, and exchanged Im Chowon's passenger list with mobile care."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "약을 나누고 창 진료 봉쇄 때 숙소에서 환자를 받는다. 가족별 접근을 지키지만 숙소별 게시판을 의료 제도 완성으로 확대하지 않았다.",
+      "en": "He shares medicine and receives patients in lodgings during yard clinic closure. Family access is supported; a completed medical institution is not."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -757,7 +901,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다. 노아 데이비스는 2092년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 이동의무차 반장 업무를 맡는다. 에드워드 데이비스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 노아 데이비스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.",
     "관계": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.",
@@ -765,7 +908,7 @@
     "공포": "억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
     "개입": "시약 상자를 호송해 숙소 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다."
   },
-  "biography": "도제 숙소 난로가 꺼지면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 가문 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 이동의무차 화상·동상 진료 운영\n- 직함: 용산창 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다. 노아 데이비스는 2092년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 이동의무차 반장 업무를 맡는다. 에드워드 데이비스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 노아 데이비스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.\n\n**야망.** 배급이 끊긴 도제 숙소에도 이동 의무차가 들어가게 해 양자 승계의 의료 최저선을 후국회에 못 박는다.\n\n**공포.** 억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 숙소 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 25 | 무력 −30 | 물질 20 | 공동 −10 | 원칙 15 | 공개 −20 | 자격 40 | 분산 0 | 변혁 −10\n- 욕망: 갈망 30 | 독점 10 | 위험 35 | 과시 −15 | 지속 15 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "도제 숙소 난로가 꺼지면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 가문 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 이동의무차 화상·동상 진료 운영\n- 직함: 용산창 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다. 노아 데이비스는 2092년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 이동의무차 반장 업무를 맡는다. 에드워드 데이비스는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 노아 데이비스의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 용산창 이동의무차 반장. 숙소별 화상·동상 게시판을 운영하고, 배급 압박이 뜨면 아이작 워커의 정비 일지 연서로 숙소 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고, 장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며, 임초원의 탑승자 명단과 이동 진료를 교환한다.\n\n**야망.** 배급이 끊긴 도제 숙소에도 이동 의무차가 들어가게 해 양자 승계의 의료 최저선을 후국회에 못 박는다.\n\n**공포.** 억류 열차 부상자가 난민 명부로만 남아 창동으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 숙소 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 25 | 무력 −30 | 물질 20 | 공동 −10 | 원칙 15 | 공개 −20 | 자격 40 | 분산 0 | 변혁 −10\n- 욕망: 갈망 30 | 독점 10 | 위험 35 | 과시 −15 | 지속 15 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],
