@@ -13,6 +13,7 @@
     "blockIds": [
       "source.b1",
       "source.b2",
+      "source.current-model",
       "source.b3",
       "source.b5",
       "source.b6",
@@ -236,6 +237,16 @@
       ]
     },
     {
+      "id": "source.current-model",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-12 현재 인물 계약: 통솔·전략·교섭·운영·통찰·학습·기량·체력은 기본 정수 0–20, 최종 정수 0–100이다. 기본 10은 해당 분야 숙련자이며 특성·아이템·상태를 모두 적용한 최종값은 절대 100을 넘지 않는다. 서사 근거가 있는 개막 효과는 최종 20 초과를 허용한다. 행동 숙련은 역량과 별도 0–99.9이며 기량과 중복 계상하지 않는다. 특성은 수행·행동·스트레스·관계에 영향을 주고 사건·행동으로 획득한다. 신체는 왼팔·오른팔·왼다리·오른다리·머리·몸통의 손상 정도와 기능 상태, 별도 질병 진행을 기록하며 전투·역병이 같은 신체 기록을 사용한다. 판정식·효과 합성·숙련 성장식·개별 효과량·특성 목록·손상 및 기능 어휘는 미확정이다. 아래 GURPS CP·ST/DX/IQ/HT·HP/FP·비용표와 2026-10-08 대항 d10·0–12 기량·특성 범주·검증 사례는 명시적 과거/연구 판본에만 적용하며 새 profile의 필수 입력·산식·구현 증거가 아니다. 자동 환산과 미확인 값의 0 채움은 없다. 공개 profile은 승인된 공개 필드만 선택하고 비공개 모티브와 배정 원장을 포함하지 않는다."
+        }
+      ]
+    },
+    {
       "id": "source.b3",
       "kind": "paragraph",
       "inlines": [
@@ -310,7 +321,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "인물 기록의 독립 칸"
+          "text": "과거·원작 참조 인물 시트의 독립 칸"
         }
       ]
     },
@@ -413,7 +424,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "소유: D01. 근거: PDF18/B335 primary attributes."
+          "text": "과거·원작 연구 범위 전용; 현재 profile의 필수 입력이 아니다. 소유: D01. 근거: PDF18/B335 primary attributes."
         }
       ]
     },
@@ -489,7 +500,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "소유: D02. 근거: PDF18/B335 HP/FP CURRENT; D02 separation."
+          "text": "과거·원작 연구 범위 전용; 현재 profile의 필수 입력이 아니다. 소유: D02. 근거: PDF18/B335 HP/FP CURRENT; D02 separation."
         }
       ]
     },
@@ -577,7 +588,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "소유: D01. 근거: PDF18/B335 derived and defense slots."
+          "text": "과거·원작 연구 범위 전용; 현재 profile의 필수 입력이 아니다. 소유: D01. 근거: PDF18/B335 derived and defense slots."
         }
       ]
     },
@@ -677,7 +688,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "소유: D01. 근거: PDF18/B335 Languages/TL/Cultural Familiarities."
+          "text": "과거·원작 연구 범위 전용; 현재 profile의 필수 입력이 아니다. 소유: D01. 근거: PDF18/B335 Languages/TL/Cultural Familiarities."
         }
       ]
     },
@@ -729,7 +740,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "소유: D01. 근거: PDF18/B335 traits/reaction modifiers."
+          "text": "과거·원작 연구 범위 전용; 현재 profile의 필수 입력이 아니다. 소유: D01. 근거: PDF18/B335 traits/reaction modifiers."
         }
       ]
     },
@@ -793,7 +804,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "소유: D01. 근거: PDF18/B335 Skills Level Relative Level."
+          "text": "과거·원작 연구 범위 전용; 현재 profile의 필수 입력이 아니다. 소유: D01. 근거: PDF18/B335 Skills Level Relative Level."
         }
       ]
     },
@@ -2256,15 +2267,15 @@
       "rows": [
         [
           "D01 인물·능력·특성·시트",
-          "identity, attributes, mobility, languageCulture, traits, skills, CP; REF-BL, REF-INTRO-3D, REF-ROUND-COST",
-          "stable IDs preserve identity; names are search clues, not identity",
-          "Costs, derived bases, skill defaults and CP allocations"
+          "현재 8역량: 기본 정수 0–20·최종 정수 0–100; 숙련 별도 0–99.9; CP·REF 식은 과거/참조 전용",
+          "영구 신원·개별 승인·판본·사건 보존; 능력은 권한을 부여하지 않음",
+          "판정·효과 합성·개별 값·특성 목록 미정; CP 자동 환산 없음"
         ],
         [
           "D02 생활·욕구·건강·기분",
-          "health, traits; 수치 식 없음",
-          "current HP/FP separate from maximum; injury does not delete identity",
-          "Injury/shock/recovery, needs and fatigue coefficients"
+          "여섯 부위 손상 정도·기능 상태 및 별도 질병 진행; HP/FP는 과거/참조 전용",
+          "전투·역병 공유 신체 기록; 원인·효과 단일 정산; 부상은 신원 삭제가 아님",
+          "손상/기능 어휘·질병·회복·불능·사망 산식 미정"
         ],
         [
           "D03 행동·명령·권한·일정",
@@ -2334,9 +2345,9 @@
         ],
         [
           "D14 지식, 교육, 기술, 복구",
-          "skills, languageCulture; 수치 식 없음",
+          "접근·이해·연습 근거·획득 진척; 행동 숙련 별도 0–99.9",
           "record access or inheritance is not learned skill; actual accrued progress survives teacher death",
-          "Study duration/cost, skill-cost progression and qualification conversion"
+          "독립 숙련 성장식·기간·비용·교사 효과·인정·자격 절차 미정; CP 비용표는 과거/참조 전용"
         ],
         [
           "D15 전투, 지휘, 분대, 정원",

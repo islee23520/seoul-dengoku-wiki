@@ -13,6 +13,7 @@
     "blockIds": [
       "archify.b1",
       "archify.b2",
+      "archify.current-model",
       "archify.b3",
       "archify.b4",
       "archify.b5",
@@ -53,6 +54,16 @@
         {
           "kind": "text",
           "text": "이 페이지는 건강·욕구·부상·치료 도메인의 기계 입력, 검증 순서, 계약 계산, 상태·보존 경계, 오류·보류 경로를 구조 다이어그램으로 보여준다. 원천은 해당 메커니즘 계약과 2026-10-08 전환 지도며, 수치 승인 상태는 원문 계약을 따른다."
+        }
+      ]
+    },
+    {
+      "id": "archify.current-model",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "2026-10-12 현재 인물 계약: 통솔·전략·교섭·운영·통찰·학습·기량·체력은 기본 정수 0–20, 최종 정수 0–100이다. 기본 10은 해당 분야 숙련자이며 특성·아이템·상태를 모두 적용한 최종값은 절대 100을 넘지 않는다. 서사 근거가 있는 개막 효과는 최종 20 초과를 허용한다. 행동 숙련은 역량과 별도 0–99.9이며 기량과 중복 계상하지 않는다. 특성은 수행·행동·스트레스·관계에 영향을 주고 사건·행동으로 획득한다. 신체는 왼팔·오른팔·왼다리·오른다리·머리·몸통의 손상 정도와 기능 상태, 별도 질병 진행을 기록하며 전투·역병이 같은 신체 기록을 사용한다. 판정식·효과 합성·숙련 성장식·개별 효과량·특성 목록·손상 및 기능 어휘는 미확정이다. 아래 GURPS CP·ST/DX/IQ/HT·HP/FP·비용표와 2026-10-08 대항 d10·0–12 기량·특성 범주·검증 사례는 명시적 과거/연구 판본에만 적용하며 새 profile의 필수 입력·산식·구현 증거가 아니다. 자동 환산과 미확인 값의 0 채움은 없다. 공개 profile은 승인된 공개 필드만 선택하고 비공개 모티브와 배정 원장을 포함하지 않는다."
         }
       ]
     },
@@ -137,13 +148,13 @@
         [
           {
             "kind": "text",
-            "text": "currentHP,maxHP — integer|null (HP)"
+            "text": "[과거 필드·검증 fixture 전용; 현재 숙련 0–99.9와 별도] currentHP,maxHP — integer|null (HP)"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "currentFP,maxFP — integer|null (FP)"
+            "text": "[과거 필드·검증 fixture 전용; 현재 숙련 0–99.9와 별도] currentFP,maxFP — integer|null (FP)"
           }
         ],
         [
@@ -184,7 +195,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "자료 소유자는 D02 health and life state; D01 owns approved personal maxima; D04 owns fulfillment/labor; D15 owns attack resolution; D18 owns world time and save boundary, 유지 계약은 —다. 상태 소유 경계는 physiologyRef,burden,capacity,need fulfillments,thought effects,settled cause/effect keys,health revision. 커밋 규칙: Version-bound owner candidate; current grant/consent/receipt guards; preserve quantities/identities/consumed progress; atomic accepted receipt. Exact source contract referenced below."
+          "text": "자료 소유자는 D02의 여섯 부위 신체 상태·별도 질병 진행이다. 손상 정도와 기능 상태를 분리하고 전투·역병이 같은 기록을 사용한다. D04는 실제 이행·노동, D15는 공격 결과, D18은 세계 시간·저장 경계를 소유한다. 과거 D01 최대 HP/FP와 burden/capacity 후보는 현재 집계식이 아니다. 원인·효과 중복 정산을 금지하고 현재 개정·동의·권한·실제 치료 진척과 소비 보존 경계를 유지하며 미정 전이는 보류한다."
         }
       ]
     },
@@ -253,19 +264,19 @@
         [
           {
             "kind": "text",
-            "text": "approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] approved supplied numeric tick half-open lifetime only, not world lifecycle owner"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] pure safe integer margin/outcome and caller-authorized projection, no profile/rating/receipt authority"
           }
         ],
         [
           {
             "kind": "text",
-            "text": "caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
+            "text": "[2026-10-08 과거 도우미 범위·현재 자동 채택 없음] caller-supplied trusted boolean gates only; no provenance/authentication/world resolver, absent tag unsupported"
           }
         ]
       ]
@@ -276,7 +287,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "현재 범위 한계: Named helper only; no complete authoritative domain state owner/transaction/consumer workbook. 다음 구현 단위는 U-D02-health-cause-settlement(TOOL/tools/mechanisms/original-trpg/health-cause-settlement.mjs, TOOL/tools/mechanisms/original-trpg/health-cause-settlement.test.mjs). 인물·세계 수치 승인과 별개로, 이 아치파이는 계약 구조만을 보여준다."
+          "text": "현재 범위 한계: 아래 과거 모듈과 검증 fixture는 당시 계약의 증거다. 현재 8역량·0–99.9 숙련·여섯 신체 부위 체계의 구현 완료를 뜻하지 않는다. 판정·성장·피해·효과 산식 및 실제 인물 배정은 미확정이며 원천·승인·사건·보존 경계만 구분한다."
         }
       ]
     },
@@ -570,142 +581,142 @@
           "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].name",
           "\"currentHP,maxHP\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].type",
           "\"integer&#124;null\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].unit",
           "\"HP\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].null",
           "\"unknown; not zero\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].range",
           "\"max positive; current may be negative; no invented death floor\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].owner",
           "\"D01 maximum / D02 current\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].read[0]​",
           "\"approved D01 bodily snapshot\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].read[1]​",
           "\"D04 actual fulfillment records\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].read[2]​",
           "\"D03 treatment feasibility and reservations\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].read[3]​",
           "\"D15 unique injury result\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].read[4]​",
           "\"D18 revision/time boundary\""
         ],
         [
-          "운용 — 상태·정산 참조 동시 반영",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용 — 영구 신원·저장 경계",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].snapsho​t",
           "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
         ],
         [
-          "운용 — 상태·정산 참조 동시 반영",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[1].commitP​oint",
           "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].name",
           "\"currentFP,maxFP\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].type",
           "\"integer&#124;null\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].unit",
           "\"FP\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].null",
           "\"unknown; not zero\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].range",
           "\"max positive; lower-bound policy remains proposal\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].owner",
           "\"D01 maximum / D02 current\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].read[0]​",
           "\"approved D01 bodily snapshot\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].read[1]​",
           "\"D04 actual fulfillment records\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].read[2]​",
           "\"D03 treatment feasibility and reservations\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].read[3]​",
           "\"D15 unique injury result\""
         ],
         [
-          "운용 — 건강·치료 사건",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].read[4]​",
           "\"D18 revision/time boundary\""
         ],
         [
-          "운용 — 상태·정산 참조 동시 반영",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].write",
           "\"해당 입력의 원천 소유자만 변경한다. 이 도메인의 쓰기 범위는 writeSet을 따른다.\""
         ],
         [
-          "운용 — 영구 신원·저장 경계",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].snapsho​t",
           "\"All referenced source revisions belong to one consistent saved boundary; stale or mixed revision rejects atomically.\""
         ],
         [
-          "운용 — 상태·정산 참조 동시 반영",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.fields[2].commitP​oint",
           "\"One accepted D18 boundary commits state and cause/effect references together, after all exact transition guards pass; unresolved numeric transition yields E_PROPOSAL and no state writes.\""
         ],
@@ -1165,7 +1176,7 @@
           "\"L-secondary\""
         ],
         [
-          "역사 참조 — 운용 경로 제외",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.formulaSheet[0].e​xpression",
           "\"defaultMaxHP=ST; defaultMaxFP=HT\""
         ],
@@ -1305,12 +1316,12 @@
           "\"D18 continuous world boundary; no fixed tick or daily depletion cadence supplied by this task.\""
         ],
         [
-          "역사 참조 — 운용 경로 제외",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.rounding",
           "\"Only REF-INJURY floor and positive-penetration minimum1 are public anchors. No currentHP clamp to zero and no invented HP death/FP exhaustion threshold.\""
         ],
         [
-          "역사 참조 — 운용 경로 제외",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b9.clamps",
           "\"Only REF-INJURY floor and positive-penetration minimum1 are public anchors. No currentHP clamp to zero and no invented HP death/FP exhaustion threshold.\""
         ],
@@ -1745,7 +1756,7 @@
           "\"Conflicting historical hunger/inspiration/faith​/pain claims are not Seoul numeric rules.\""
         ],
         [
-          "운용 — 승인 전이 후보만 작성",
+          "과거 계약·참조/검증 fixture — 새 profile 운용 제외",
           "d02.b11.stateSheet.bodil​y",
           "\"Separate currentHP/maxHP/currentF​P/maxFP and injury records; an injury does not delete identity.\""
         ],
