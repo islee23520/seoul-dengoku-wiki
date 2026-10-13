@@ -81,12 +81,19 @@ export async function loadScopeInput({ root, baselinePath, fixture = false }) {
     if (context.geography !== null || context.facts !== null) return { error: inputError('/staging/geography') }
     const sources = {}
     for (const [kind, source] of Object.entries(STAGING_SOURCES)) {
-      const path = kind === 'membership' ? resolve(root, source.path)
+      const path = ['membership', 'spatial'].includes(kind) ? resolve(root, source.path)
         : resolve(dirname(baselinePath), 'task-2-source-audit', source.path.split('/').at(-1))
       const body = await readFile(path, 'utf8')
       if (sha256(body) !== source.sha256) return { error: { ok: false, errors: [{ code: 'E_SLOT_EDITION', path: source.path, id: kind }] } }
       sources[kind] = { ...source, body }
     }
+    const spatial = JSON.parse(sources.spatial.body)
+    if (await hashFile(resolve(root, spatial.geometry.path)) !== spatial.geometry.sha256) return { error: { ok: false, errors: [{ code: 'E_SCOPE_GEOMETRY', path: spatial.geometry.path, id: spatial.edition }] } }
+    const official = await json(resolve(root, spatial.geometry.path))
+    const features = official.features
+    const expected = [...spatial.dongs, ...spatial.counties, ...spatial.gu, spatial.city]
+    if (features.length !== expected.length || new Set(features.map(f => f.id)).size !== expected.length
+      || expected.some(row => !features.some(f => f.id === row.geometryId))) return { error: { ok: false, errors: [{ code: 'E_SLOT_COVERAGE', path: spatial.geometry.path, id: spatial.edition }] } }
     context.geography = JSON.parse(geographyBytes)
     if (context.geography.schema !== STAGING_GEOGRAPHY_SCHEMA) return { error: inputError('/staging/geography/schema') }
     context.facts = { schema: STAGING_GEOGRAPHY_SCHEMA, sources }
