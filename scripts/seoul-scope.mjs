@@ -2,6 +2,14 @@ import { createHash } from 'node:crypto'
 
 export const SEOUL_SCOPE_SCHEMA = 'seoul-scope.v1'
 export const BASELINE_SHA256 = '2a8af6a497839dcc5abb2059697ef8f504b061013a89cbc2bd812c89b2810223'
+export const STAGING_GEOGRAPHY_SCHEMA = 'seoul-geography-staging.v1'
+export const STAGING_GEOGRAPHY_PATH = 'lore/regions/seoul-electoral-titles.json'
+// Independently reviewed task-2 inputs, not a denominator computed from new definitions.
+export const STAGING_SOURCES = {
+  membership: { path: 'data/geography/elections/sources/seoul-constituency-membership.json', sha256: '5c082aad68af1145dca138d8bf048a9b16e5a13b8618aa7c8c2e79bfc3db74f1' },
+  census: { path: '.omo/private/seoul-migration/task-2-source-audit/correspondence-census.json', sha256: '6e278a5ba60ecb3660363bd9605dd436f17925f564fc943041954e5b4235ed94' },
+  rights: { path: '.omo/private/seoul-migration/task-2-source-audit/existing-rights-inventory.json', sha256: '23551e091a271b6873739fa059da8c20d98d4c20c4ea69df230dcd0628f215ac' },
+}
 export const RANKS = ['barony', 'county', 'duchy', 'kingdom', 'empire']
 export const ENTITY_SETS = ['persons', 'titles', 'holdings', 'grants', 'bindings', 'states', 'polities', 'events', 'relations', 'courts']
 export const sha256 = bytes => createHash('sha256').update(bytes).digest('hex')
@@ -54,6 +62,131 @@ function checkApproval(approval, kind, batchId, hash, path) {
   shape(approval, ['kind', 'batchId', 'bodySha256', 'messageRef'], path)
   requireValue(approval.kind === kind, 'E_APPROVAL_KIND', path, batchId)
   requireValue(approval.batchId === batchId && approval.bodySha256 === hash && digest(hash) && text(approval.messageRef), 'E_APPROVAL_BATCH', path, batchId)
+}
+
+// This version only represents private preparation. It has no ready/public state and
+// cannot supply an approved parent, official geometry or an active right by inference.
+export function stagingGeography(facts, baseline, boundary) {
+  shape(facts, ['schema', 'sources'], '/facts')
+  requireValue(facts.schema === STAGING_GEOGRAPHY_SCHEMA, 'E_SCOPE_SHAPE', '/facts/schema')
+  shape(facts.sources, ['membership', 'census', 'rights'], '/facts/sources')
+  const inputs = {}
+  const evidence = {}
+  for (const [kind, source] of Object.entries(facts.sources)) {
+    shape(source, ['path', 'sha256', 'body'], `/facts/sources/${kind}`)
+    requireValue(text(source.path) && digest(source.sha256) && typeof source.body === 'string'
+      && sha256(source.body) === source.sha256, 'E_SLOT_EDITION', `/facts/sources/${kind}`)
+    try { inputs[kind] = JSON.parse(source.body) }
+    catch { fail('E_SCOPE_SHAPE', `/facts/sources/${kind}/body`) }
+    evidence[kind] = { path: source.path, sha256: source.sha256 }
+  }
+  const { membership, census, rights } = inputs
+  requireValue(membership.schema === 'seoul-constituency-membership.v1'
+    && census.schema === 'task-2-seoul-correspondence-census.v1'
+    && rights.schema === 'task-2-existing-rights-audit.v1', 'E_SCOPE_SHAPE', '/facts/sources/schema')
+  const sourceIndex = unique(list(membership.sources, '/facts/membership/sources'), row => row.id, '/facts/membership/sources', 'E_SCOPE_REF')
+  for (const source of sourceIndex.values()) requireValue(digest(source.sha256) && text(source.role), 'E_SCOPE_SHAPE', '/facts/membership/sources', source.id)
+  // All source references, including edition/bridge references, resolve by exact ID.
+  function sourceRefs(value, key = '') {
+    if (key === 'sourceRefs' || key.endsWith('SourceRefs') || key.endsWith('SourceRef')) {
+      for (const id of Array.isArray(value) ? value : [value]) requireValue(sourceIndex.has(id), 'E_SCOPE_REF', '/facts/membership/sourceRefs', id)
+    } else if (value && typeof value === 'object') for (const [child, row] of Object.entries(value)) sourceRefs(row, child)
+  }
+  sourceRefs(membership)
+  const editions = membership.editions
+  const editionIds = Object.values(editions).map(row => row.id)
+  unique(editionIds, id => id, '/facts/editions', 'E_SLOT_EDITION')
+  const lookup = sourceIndex.get(editions.currentCorrespondence.codeAndNameSourceRef)
+  requireValue(lookup?.sha256 === boundary.sha256 && lookup.officialAuthority === false
+    && membership.geometryVerified === false, 'E_SCOPE_GEOMETRY', '/facts/candidateGeometry')
+  exact(membership.gu.map(g => JSON.stringify([g.guId, g.name, g.electoralDongCount, g.currentCorrespondenceCount])),
+    census.guCounts.map(g => JSON.stringify([g.guId, g.gu, g.electoralVintageDongs, g.geometryRows])), 'E_SLOT_COVERAGE', '/facts/gu')
+  const guIds = new Map(membership.gu.map(g => [g.name, g.guId]))
+  exact(membership.constituencies.map(c => c.name), census.constituencies.map(c => c.name), 'E_SLOT_COVERAGE', '/facts/counties')
+  exact(membership.constituencies.flatMap(c => c.electoralDongs.flatMap(d => d.currentCorrespondences.map(r =>
+    JSON.stringify([c.name, d.guId, d.sourceName, d.fragmentId, r.candidateAdminId, r.candidateName])))),
+  census.constituencies.flatMap(c => c.correspondences.flatMap(d => d.candidateAdminIds.map((id, i) =>
+    JSON.stringify([c.name, guIds.get(d.gu), d.officialDong, d.fragmentId, id, d.candidateNames[i]])))), 'E_SLOT_COVERAGE', '/facts/membership')
+  for (const set of ['titles', 'holdings', 'grants', 'bindings']) {
+    exact(rights[set].map(row => set === 'bindings' ? JSON.stringify([row.original.holdingId, row.original.titleId]) : row.original.id),
+      baseline.currentEntitySets[set], 'E_CENSUS_RIGHT', `/facts/rights/${set}`)
+  }
+  const rightIndex = unique([...rights.holdings, ...rights.grants], row => row.original.id, '/facts/rights', 'E_SCOPE_REF')
+  const rightSources = unique(rights.sources, row => row.path, '/facts/rights/sources', 'E_SCOPE_REF')
+  for (const right of rightIndex.values()) {
+    const original = baseline.files.find(file => file.path === right.source.path)
+    requireValue(original && rightSources.get(right.source.path)?.sha256 === original.sha256
+      && right.source.recordSha256 === sha256(JSON.stringify(right.original)), 'E_ARCHIVE_HASH', '/facts/rights/source', right.original.id)
+  }
+  const countyRights = unique(rights.counties, row => row.name, '/facts/rights/counties', 'E_SCOPE_REF')
+  exact([...countyRights.keys()], membership.constituencies.map(c => c.name), 'E_SLOT_COVERAGE', '/facts/rights/counties')
+  const definition = (titleId, rank, name, jurisdictionRefs, sourcePointer, sourceRefs) => ({
+    titleId, rank, name, jurisdictionRefs, sourcePointer, sourceRefs,
+    feudalParentTitleId: null, feudalParentStatus: rank === 'empire' ? 'not-applicable' : 'pending',
+  })
+  const titles = [definition('geography:empire:seoul', 'empire', '서울특별시', membership.gu.map(g => g.guId), '/gu', editions.currentLaw.sourceRefs),
+    ...membership.gu.map((g, i) => definition(`geography:duchy:${g.guId}`, 'duchy', g.name, [g.guId], `/gu/${i}`, g.sourceRefs))]
+  const countySlots = []
+  for (const [index, county] of membership.constituencies.entries()) {
+    requireValue(county.sourceEdition === editions.electoral.id && county.membershipConfidence === 'primary-confirmed'
+      && county.geometryVerified === false, 'E_SLOT_EDITION', '/facts/counties', county.constituencyId)
+    exact(county.jurisdictionGuRefs, [...new Set(county.electoralDongs.map(d => d.guId))], 'E_TITLE_HIERARCHY', '/facts/jurisdictionGuRefs')
+    const titleId = `geography:county:${county.constituencyId}`
+    titles.push(definition(titleId, 'county', county.name, county.jurisdictionGuRefs, `/constituencies/${index}`, county.sourceRefs))
+    const historic = countyRights.get(county.name)
+    exact(historic.jurisdictionGuRefs, county.jurisdictionGuRefs, 'E_TITLE_HIERARCHY', '/facts/rights/jurisdictionGuRefs')
+    const slots = county.electoralDongs.flatMap((dong, d) => dong.currentCorrespondences.map((row, r) => {
+      requireValue(row.sourceEdition === editions.currentCorrespondence.id && row.geometryVerified === false
+        && row.codeConfidence === 'dated-candidate-name-code-match' && dong.fragmentId === null,
+      'E_SLOT_EDITION', '/facts/correspondence', row.candidateAdminId)
+      const dongId = `region:${row.candidateAdminId}`
+      const past = historic.dongs.find(item => item.dongId === dongId && item.fragmentId === dong.fragmentId)
+      requireValue(past && past.officialElectoralDong === dong.sourceName, 'E_SCOPE_REF', '/facts/rights/dong', dongId)
+      const historicalHoldingRefs = past.holdingRefs.map(id => {
+        const right = rightIndex.get(id)
+        requireValue(right && right.audit.category === 'direct-admin-property'
+          && right.original.adminRefs.some(ref => ref.id.replace(/^region:/, '') === row.candidateAdminId), 'E_SCOPE_REF', '/facts/rights/holding', id)
+        return { id, sourcePath: right.source.path, jsonPointer: right.source.pointer,
+          sourceSha256: rightSources.get(right.source.path).sha256, recordSha256: right.source.recordSha256,
+          scopeKind: 'historical-direct-admin-property', status: 'pending-new-seoul-correspondence' }
+      })
+      unique(historicalHoldingRefs, ref => ref.id, '/facts/rights/holding', 'E_SCOPE_REF')
+      return { slotId: `slot:${dongId}`, dongId, name: row.candidateName, jurisdictionGuRef: dong.guId,
+        electoralDongId: dong.electoralDongId, fragmentId: null, sourceEdition: row.sourceEdition,
+        sourcePointer: `/constituencies/${index}/electoralDongs/${d}/currentCorrespondences/${r}`,
+        sourceRefs: row.membershipSourceRefs, candidateGeometryRefs: [dongId], geometryRefs: [], geometryVerified: false,
+        historicalHoldingRefs, holdingRefs: [], status: 'unassigned', holderPersonId: null }
+    }))
+    exact(historic.dongs.map(d => JSON.stringify([d.dongId, d.fragmentId])), slots.map(s => JSON.stringify([s.dongId, s.fragmentId])), 'E_SLOT_COVERAGE', '/facts/rights/dongs')
+    countySlots.push({ countyTitleId: titleId, slots })
+  }
+  unique(titles, t => t.titleId, '/facts/titles', 'E_TITLE_HIERARCHY')
+  unique(countySlots.flatMap(g => g.slots), s => s.slotId, '/facts/slots', 'E_SLOT_DUPLICATE')
+  return { schema: STAGING_GEOGRAPHY_SCHEMA, status: 'inspection-only', evidence, editions,
+    sourceRecords: membership.sources.map(({ id, sha256, role }) => ({ id, sha256, role })),
+    officialExtentStatus: 'unverified', kingdomStatus: 'pending', mapMinimumRank: 'county', mapTitleIds: [], titles, countySlots }
+}
+
+function checkStagingGeography(geography, facts, input, mode) {
+  requireValue(mode === 'inspection', 'E_SCOPE_PENDING', '/geography/status')
+  const expected = stagingGeography(facts, input.baseline, input.boundary)
+  // Exact nested shapes: no unchecked metadata, approval fields, invented parents or holders.
+  function compare(actual, source, path) {
+    if (Array.isArray(source)) {
+      list(actual, path)
+      requireValue(actual.length === source.length, 'E_SLOT_COVERAGE', path)
+      source.forEach((row, i) => compare(actual[i], row, `${path}/${i}`))
+    } else if (source && typeof source === 'object') {
+      shape(actual, Object.keys(source), path)
+      for (const key of Object.keys(source)) compare(actual[key], source[key], `${path}/${key}`)
+    } else requireValue(actual === source, 'E_SLOT_EDITION', path)
+  }
+  compare(geography, expected, '/geography')
+  for (const slot of geography.countySlots.flatMap(group => group.slots)) {
+    const ref = input.refs.find(row => row.id === slot.dongId)
+    requireValue(ref?.kind === 'region' && ref.inside === true && ref.boundarySha256 === input.boundary.sha256,
+      'E_SCOPE_REF', '/geography/candidateGeometryRefs', slot.dongId)
+  }
 }
 
 function checkGeography(geography, facts, resolveRef, final, people, resolveHolding) {
@@ -259,7 +392,8 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
       requireValue(right.holderPersonId === slot.holderPersonId && right.slotStatus === slot.status,
         'E_SCOPE_ADMISSION', '/geography/holderPersonId', id)
     }
-    if (geography !== null) checkGeography(geography, facts, resolveRef, mode === 'publication', personIds, resolveHolding)
+    if (geography?.schema === STAGING_GEOGRAPHY_SCHEMA) checkStagingGeography(geography, facts, input, mode)
+    else if (geography !== null) checkGeography(geography, facts, resolveRef, mode === 'publication', personIds, resolveHolding)
     else requireValue(mode === 'inspection', 'E_SCOPE_PENDING', '/geography')
     const requiredBatches = new Set([...contract.entities, ...contract.documents, ...contract.dispositions].filter(row => row.status === 'active').map(row => row.batchId))
     if (mode === 'migration') requiredBatches.add(batchId)
