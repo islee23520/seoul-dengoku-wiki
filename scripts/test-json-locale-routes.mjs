@@ -11,7 +11,7 @@ import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { pageFailures, privateLinkFailures } from './gate.mjs'
 
 const wikiRoot = resolve(import.meta.dirname, '..')
-const source = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/culture/Martial-Paths.json'), 'utf8'))
+const source = JSON.parse(readFileSync(resolve(wikiRoot, 'lore/culture/Food-Culture.json'), 'utf8'))
 const renderJson = (value, locale) => renderLoreMarkdown(value, locale, (_domain, slug) => `${slug}.md`)
 const titleFallback = (markdown, slug) => markdown.match(/^#\s+(.+)$/m)?.[1] ?? slug
 const fixtureDocument = ({ id, slug, domain = 'root', categories, sourceKind = 'computed' }) => ({
@@ -33,10 +33,10 @@ const fixtureDocument = ({ id, slug, domain = 'root', categories, sourceKind = '
 })
 
 test('one JSON source document produces an English route and keeps the Korean URL', () => {
-  const [ko, en, ...rest] = localizedDocuments({ domain: 'world', slug: 'Martial-Paths', json: source, renderJson, titleFallback })
+  const [ko, en, ...rest] = localizedDocuments({ domain: 'world', slug: 'Food-Culture', json: source, renderJson, titleFallback })
   assert.deepEqual(rest, [])
-  assert.equal(ko.route, '/world/Martial-Paths')
-  assert.equal(en.route, '/en/world/Martial-Paths')
+  assert.equal(ko.route, '/world/Food-Culture')
+  assert.equal(en.route, '/en/world/Food-Culture')
   assert.equal(ko.title, source.locales.ko.title)
   assert.equal(en.title, source.locales.en.title)
   assert.equal(ko.markdown, renderJson(source, 'ko'))
@@ -51,7 +51,7 @@ test('an unmigrated Markdown corpus keeps its single Korean path', () => {
 })
 
 test('one corpus is never published from both Markdown and JSON', () => {
-  assert.throws(() => localizedDocuments({ domain: 'world', slug: 'Martial-Paths', json: source, markdown: '# 무공\n', renderJson, titleFallback }), /E_DUAL_SOURCE:Martial-Paths/)
+  assert.throws(() => localizedDocuments({ domain: 'world', slug: 'Food-Culture', json: source, markdown: '# 무공\n', renderJson, titleFallback }), /E_DUAL_SOURCE:Food-Culture/)
 })
 
 test('an atlas JSON source and two JSON projections produce matching KO and EN route sets', async () => {
@@ -81,13 +81,16 @@ test('an atlas JSON source and two JSON projections produce matching KO and EN r
 
 test('the generated contract carries both locale routes of the JSON document', () => {
   const contract = JSON.parse(readFileSync(resolve(wikiRoot, 'public/wiki-contract.json'), 'utf8'))
-  assert.ok(contract.documents.some(({ route }) => route === '/world/Martial-Paths'))
-  assert.ok(contract.englishDocuments.some(({ route }) => route === '/en/world/Martial-Paths'))
+  assert.ok([...contract.documents, ...contract.englishDocuments].every(({ route }) => !route.endsWith('/Martial-Paths')))
+  assert.equal(existsSync(resolve(wikiRoot, 'src/generated/world/Martial-Paths.json')), false)
+  assert.equal(existsSync(resolve(wikiRoot, 'src/generated/world-en/Martial-Paths.json')), false)
+  assert.ok(contract.documents.some(({ route }) => route === '/world/Food-Culture'))
+  assert.ok(contract.englishDocuments.some(({ route }) => route === '/en/world/Food-Culture'))
   // The Glossary page is generated from lore/glossary.json, so it publishes both locales too.
   assert.ok(contract.documents.some(({ route, title }) => route === '/world/Glossary' && title === '용어 사전'))
   assert.ok(contract.englishDocuments.some(({ route, title }) => route === '/en/world/Glossary' && title === 'Glossary'))
-  const english = JSON.parse(readFileSync(resolve(wikiRoot, 'src/generated/world-en/Martial-Paths.json'), 'utf8'))
-  assert.equal(english.route, '/en/world/Martial-Paths')
+  const english = JSON.parse(readFileSync(resolve(wikiRoot, 'src/generated/world-en/Food-Culture.json'), 'utf8'))
+  assert.equal(english.route, '/en/world/Food-Culture')
 })
 
 const page = (url) => ({
@@ -95,7 +98,7 @@ const page = (url) => ({
   reviewText: 'Body',
   blocks: [{ type: 'paragraph', children: [{ type: 'link', url, children: [{ type: 'text', value: 'link' }] }] }],
 })
-const routes = new Set(['/world/Martial-Paths', '/en/world/Martial-Paths'])
+const routes = new Set(['/world/Food-Culture', '/en/world/Food-Culture'])
 
 test('a private-document link fails the gate in every locale and link form', () => {
   for (const href of [
@@ -103,15 +106,15 @@ test('a private-document link fails the gate in every locale and link form', () 
     '/world/Cast-Profile-Contract#section',
     'https://github.com/islee23520/seoul-kenshi/blob/main/lore/characters/Cast-Profile-Contract.md',
   ]) {
-    const failures = pageFailures(page(href), 'src/generated/world-en/Martial-Paths.json', routes)
-    assert.ok(failures.includes(`FAIL private-link: src/generated/world-en/Martial-Paths.json -> ${href}`), href)
+    const failures = pageFailures(page(href), 'src/generated/world-en/Food-Culture.json', routes)
+    assert.ok(failures.includes(`FAIL private-link: src/generated/world-en/Food-Culture.json -> ${href}`), href)
   }
-  assert.deepEqual(privateLinkFailures('/en/world/Martial-Paths', 'fixture'), [])
+  assert.deepEqual(privateLinkFailures('/en/world/Food-Culture', 'fixture'), [])
 })
 
 test('a published English route passes and a missing English route fails the gate', () => {
-  assert.deepEqual(pageFailures(page('/en/world/Martial-Paths'), 'src/generated/world-en/Martial-Paths.json', routes), [])
-  assert.deepEqual(pageFailures(page('/en/world/Missing'), 'src/generated/world-en/Martial-Paths.json', routes), [
-    'FAIL broken-link: src/generated/world-en/Martial-Paths.json -> /en/world/Missing',
+  assert.deepEqual(pageFailures(page('/en/world/Food-Culture'), 'src/generated/world-en/Food-Culture.json', routes), [])
+  assert.deepEqual(pageFailures(page('/en/world/Missing'), 'src/generated/world-en/Food-Culture.json', routes), [
+    'FAIL broken-link: src/generated/world-en/Food-Culture.json -> /en/world/Missing',
   ])
 })

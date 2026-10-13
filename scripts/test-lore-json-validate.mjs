@@ -219,8 +219,8 @@ test('default mode checks changed files plus the migration ledger; strict mode f
 })
 
 test('a Markdown file next to its JSON authoring document fails in default and strict mode', () => {
-  const twin = join(root, 'lore/culture/Martial-Paths.md')
-  assert.ok(!existsSync(twin), 'Martial-Paths.md must not be committed next to its JSON source')
+  const twin = join(root, 'lore/culture/Food-Culture.md')
+  assert.ok(!existsSync(twin), 'Food-Culture.md must not be committed next to its JSON source')
   const clean = run()
   assert.equal(clean.status, 0, clean.stderr)
   // Data JSON beside a task 10c Markdown file (for example the naming ledger) is not an authoring source.
@@ -229,7 +229,7 @@ test('a Markdown file next to its JSON authoring document fails in default and s
   try {
     for (const result of [run(), run('--strict')]) {
       assert.equal(result.status, 1, result.stdout)
-      assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Martial-Paths\.md: /mu)
+      assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Food-Culture\.md: /mu)
     }
   } finally {
     rmSync(twin)
