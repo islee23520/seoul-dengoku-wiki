@@ -93,7 +93,7 @@ function stagingFixture() {
       membershipConfidence: 'primary-confirmed', geometryVerified: false,
       electoralDongs: ['A', 'B'].map((gu, i) => ({ guId: `gu:${gu}`, sourceName: `Dong ${i}`, electoralDongId: `electoral:${i}`, fragmentId: null,
         currentCorrespondences: [{ candidateAdminId: `${i}`, candidateName: `Dong ${i}`, sourceEdition: 'current', geometryVerified: false,
-          codeConfidence: 'dated-candidate-name-code-match', membershipSourceRefs: [source.id] }] })) }],
+          codeConfidence: 'dated-candidate-name-code-match', membershipSourceRefs: [source.id] }], membershipSourceRefs: [source.id] })) }],
   }
   // Independent two-gu/two-dong denominator; never read it back from geography slots.
   const census = { schema: 'task-2-seoul-correspondence-census.v1',
@@ -184,6 +184,92 @@ test('staging checks membership against the independently retained census, not i
   changed.constituencies[0].electoralDongs[0].currentCorrespondences[0].candidateAdminId = 'invented'
   source.body = JSON.stringify(changed); source.sha256 = sha256(source.body)
   assert.equal(code(validateSeoulScope(input, { mode: 'inspection' })), 'E_SLOT_COVERAGE')
+})
+
+function spatialFixture() {
+  const input = stagingFixture()
+  const membership = JSON.parse(input.facts.sources.membership.body)
+  const spatial = {
+    schema: 'seoul-sgis-spatial-edition.v1', edition: 'sgis-20250630', baseDate: '2025-06-30',
+    authority: 'official-SGIS-statistical-boundary', legalSurveyCertification: false, current2026Geometry: false,
+    membership: { sha256: input.facts.sources.membership.sha256 }, archive: { sha256: sha256('official fixture archive') },
+    geometry: { path: 'official.json', sha256: sha256('official fixture geometry'), crs: 'OGC:CRS84' },
+    gu: [{ guId: 'gu:A' }, { guId: 'gu:B' }],
+    dongs: [{ electoralDongId: 'electoral:0', dongId: 'region:0', guId: 'gu:A', officialName: 'Dong 0', officialCode: '0',
+      geometryId: 'official:0', countyTitleId: 'geography:county:twoGu' },
+    { electoralDongId: 'electoral:1', dongId: 'region:1', guId: 'gu:B', officialName: 'Dong 1', officialCode: '1',
+      geometryId: 'official:1', countyTitleId: 'geography:county:twoGu' }],
+    counties: [{ geometryId: 'geography:county:twoGu', jurisdictionGuRefs: ['gu:A', 'gu:B'], officialDongCodes: ['0', '1'] }],
+  }
+  assert.equal(membership.constituencies[0].electoralDongs.length, 2)
+  const body = JSON.stringify(spatial)
+  input.facts.sources.spatial = { path: 'fixture:spatial', sha256: sha256(body), body }
+  input.geography = stagingGeography(input.facts, input.baseline, input.boundary)
+  bindBatch(input)
+  return input
+}
+
+test('pinned spatial slots preserve current correspondence rights and pending two-gu parent without publication admission', () => {
+  const input = spatialFixture()
+  const before = clone(input)
+  assert.equal(validateSeoulScope(input, { mode: 'inspection' }).ok, true)
+  assert.equal(input.geography.countySlots.length, 1)
+  assert.deepEqual(input.geography.currentCorrespondenceSlots, stagingFixture().geography.countySlots)
+  const slot = input.geography.countySlots[0].slots[0]
+  assert.equal(slot.sourceEdition, 'sgis-20250630')
+  assert.equal(slot.geometryVerified, true)
+  assert.deepEqual(slot.historicalHoldingRefs, [])
+  assert.deepEqual(slot.holdingRefs, [])
+  assert.equal(slot.holderPersonId, null)
+  assert.equal(input.geography.titles.at(-1).feudalParentTitleId, null)
+  assert.equal(code(validateSeoulScope(input)), 'E_SCOPE_PENDING')
+  assert.equal(code(validateSeoulScope(input, { mode: 'migration', batchId: 'batch:a' })), 'E_SCOPE_PENDING')
+  assert.deepEqual(input, before)
+})
+
+for (const [name, mutate, expected] of [
+  ['missing spatial slot', i => i.geography.countySlots[0].slots.pop(), 'E_SLOT_COVERAGE'],
+  ['missing retained current right', i => i.geography.currentCorrespondenceSlots[0].slots[0].historicalHoldingRefs.pop(), 'E_SLOT_COVERAGE'],
+  ['current derivative promoted', i => { i.geography.countySlots[0].slots[0].geometryRefs[0] = 'region:0' }, 'E_SLOT_EDITION'],
+  ['new spatial grant', i => { i.geography.countySlots[0].slots[0].holdingRefs.push('holding:old') }, 'E_SLOT_COVERAGE'],
+  ['invented spatial parent', i => { i.geography.titles.at(-1).feudalParentTitleId = 'geography:empire:seoul' }, 'E_SLOT_EDITION'],
+  ['stale spatial body', i => { i.facts.sources.spatial.body += ' ' }, 'E_SLOT_EDITION'],
+]) test(`official spatial staging rejects ${name}`, () => {
+  const input = spatialFixture()
+  mutate(input); bindBatch(input)
+  assert.equal(code(validateSeoulScope(input, { mode: 'inspection' })), expected)
+})
+
+test('independent spatial edition cannot omit or reassign an electoral dong', () => {
+  for (const mutate of [s => s.dongs.pop(), s => { s.dongs[0].countyTitleId = 'wrong' }]) {
+    const input = spatialFixture()
+    const spatial = JSON.parse(input.facts.sources.spatial.body)
+    mutate(spatial)
+    const body = JSON.stringify(spatial)
+    input.facts.sources.spatial = { path: 'fixture:spatial', sha256: sha256(body), body }
+    assert.equal(code(validateSeoulScope(input, { mode: 'inspection' })), spatial.dongs.length === 1 ? 'E_SLOT_COVERAGE' : 'E_SLOT_EDITION')
+  }
+})
+
+test('retained real spatial edition uses old Yongsin while preserving both current stable slots and source hashes', async () => {
+  const root = fileURLToPath(new URL('../', import.meta.url))
+  const load = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'))
+  const membership = await load('data/geography/elections/sources/seoul-constituency-membership.json')
+  const spatial = await load('data/geography/elections/sources/seoul-sgis-20250630.json')
+  const geography = await load('lore/regions/seoul-electoral-titles.json')
+  const officialSlots = geography.countySlots.flatMap(c => c.slots)
+  const currentSlots = geography.currentCorrespondenceSlots.flatMap(c => c.slots)
+  assert.equal(officialSlots.length, spatial.dongs.length)
+  assert.equal(currentSlots.length, membership.constituencies.flatMap(c => c.electoralDongs.flatMap(d => d.currentCorrespondences)).length)
+  assert.equal(currentSlots.length, officialSlots.length + 1)
+  const yongsin = officialSlots.find(s => s.name === '용신동')
+  assert.equal(yongsin.electoralDongId, 'electoral-dong:22:11230:용신동')
+  assert.deepEqual(yongsin.currentCorrespondenceSlotIds, ['slot:region:1123051500', 'slot:region:1123053300'])
+  assert.deepEqual(yongsin.geometryRefs, ['sgis:20250630:dong:11060810'])
+  for (const id of yongsin.currentCorrespondenceSlotIds) assert.ok(currentSlots.some(s => s.slotId === id && s.geometryVerified === false))
+  assert.ok(officialSlots.every(s => s.holderPersonId === null && s.holdingRefs.length === 0 && s.historicalHoldingRefs.length === 0))
+  assert.equal(sha256(await readFile(resolve(root, spatial.geometry.path))), spatial.geometry.sha256)
+  assert.equal(sha256(await readFile(resolve(root, geography.evidence.spatial.path))), geography.evidence.spatial.sha256)
 })
 
 test('complete independent Seoul fixture validates without mutation; seven source dongs yield seven slots', () => {
@@ -403,6 +489,13 @@ test('real CLI fixture-root commands return exact exit codes and machine errors;
       assert.equal(result.status, status, result.stdout)
       assert.equal(code(JSON.parse(result.stdout)), status ? 'E_SCOPE_PENDING' : undefined)
       console.log(`CLI staged ${args.join(' ') || 'publication'} exit=${status}`)
+    }
+    await writeFixture(root, spatialFixture())
+    for (const [args, status] of [[['--inspection'], 0], [[], 1], [['--migration-batch', 'batch:a'], 1]]) {
+      const result = await runCli(['--fixture-root', root, ...args])
+      assert.equal(result.status, status, result.stdout)
+      assert.equal(code(JSON.parse(result.stdout)), status ? 'E_SCOPE_PENDING' : undefined)
+      console.log(`CLI spatial ${args.join(' ') || 'publication'} exit=${status}`)
     }
     for (const [name, mutate, args, expected] of [
       ['pending-source', input => { Object.assign(input.contract.documents[0], { status: 'pending', batchId: 'batch:b', basis: null, reviewReceipt: null }) }, ['--migration-batch', 'batch:a'], 'E_SCOPE_PENDING'],

@@ -9,6 +9,7 @@ export const STAGING_SOURCES = {
   membership: { path: 'data/geography/elections/sources/seoul-constituency-membership.json', sha256: '5c082aad68af1145dca138d8bf048a9b16e5a13b8618aa7c8c2e79bfc3db74f1' },
   census: { path: '.omo/private/seoul-migration/task-2-source-audit/correspondence-census.json', sha256: '6e278a5ba60ecb3660363bd9605dd436f17925f564fc943041954e5b4235ed94' },
   rights: { path: '.omo/private/seoul-migration/task-2-source-audit/existing-rights-inventory.json', sha256: '23551e091a271b6873739fa059da8c20d98d4c20c4ea69df230dcd0628f215ac' },
+  spatial: { path: 'data/geography/elections/sources/seoul-sgis-20250630.json', sha256: '389b1eabee54cddc965dd523c3b831cdc60ea72d180cab908295c3359a8045ad' },
 }
 export const RANKS = ['barony', 'county', 'duchy', 'kingdom', 'empire']
 export const ENTITY_SETS = ['persons', 'titles', 'holdings', 'grants', 'bindings', 'states', 'polities', 'events', 'relations', 'courts']
@@ -65,11 +66,13 @@ function checkApproval(approval, kind, batchId, hash, path) {
 }
 
 // This version only represents private preparation. It has no ready/public state and
-// cannot supply an approved parent, official geometry or an active right by inference.
+// cannot supply an approved parent or an active right by inference. A pinned official
+// spatial edition is separate from current correspondence and final publication.
 export function stagingGeography(facts, baseline, boundary) {
   shape(facts, ['schema', 'sources'], '/facts')
   requireValue(facts.schema === STAGING_GEOGRAPHY_SCHEMA, 'E_SCOPE_SHAPE', '/facts/schema')
-  shape(facts.sources, ['membership', 'census', 'rights'], '/facts/sources')
+  const hasSpatial = Object.hasOwn(facts.sources, 'spatial')
+  shape(facts.sources, ['membership', 'census', 'rights', ...(hasSpatial ? ['spatial'] : [])], '/facts/sources')
   const inputs = {}
   const evidence = {}
   for (const [kind, source] of Object.entries(facts.sources)) {
@@ -162,9 +165,48 @@ export function stagingGeography(facts, baseline, boundary) {
   }
   unique(titles, t => t.titleId, '/facts/titles', 'E_TITLE_HIERARCHY')
   unique(countySlots.flatMap(g => g.slots), s => s.slotId, '/facts/slots', 'E_SLOT_DUPLICATE')
-  return { schema: STAGING_GEOGRAPHY_SCHEMA, status: 'inspection-only', evidence, editions,
+  const geography = { schema: STAGING_GEOGRAPHY_SCHEMA, status: 'inspection-only', evidence, editions,
     sourceRecords: membership.sources.map(({ id, sha256, role }) => ({ id, sha256, role })),
     officialExtentStatus: 'unverified', kingdomStatus: 'pending', mapMinimumRank: 'county', mapTitleIds: [], titles, countySlots }
+  if (hasSpatial) {
+    const spatial = inputs.spatial
+    requireValue(spatial.schema === 'seoul-sgis-spatial-edition.v1' && spatial.edition === 'sgis-20250630'
+      && spatial.baseDate === '2025-06-30' && spatial.authority === 'official-SGIS-statistical-boundary'
+      && spatial.legalSurveyCertification === false && spatial.current2026Geometry === false
+      && spatial.membership.sha256 === evidence.membership.sha256
+      && spatial.geometry.crs === 'OGC:CRS84' && digest(spatial.geometry.sha256), 'E_SLOT_EDITION', '/facts/spatial')
+    const official = unique(spatial.dongs, row => row.electoralDongId, '/facts/spatial/dongs', 'E_SLOT_DUPLICATE')
+    const officialCounties = unique(spatial.counties, row => row.geometryId, '/facts/spatial/counties', 'E_SLOT_DUPLICATE')
+    exact([...official.keys()], membership.constituencies.flatMap(c => c.electoralDongs.map(d => d.electoralDongId)), 'E_SLOT_COVERAGE', '/facts/spatial/dongs')
+    exact([...officialCounties.keys()], countySlots.map(c => c.countyTitleId), 'E_SLOT_COVERAGE', '/facts/spatial/counties')
+    exact(spatial.gu.map(g => g.guId), membership.gu.map(g => g.guId), 'E_SLOT_COVERAGE', '/facts/spatial/gu')
+    geography.spatialSource = { edition: spatial.edition, baseDate: spatial.baseDate,
+      authority: spatial.authority, legalSurveyCertification: false, current2026Geometry: false,
+      geometry: spatial.geometry, archiveSha256: spatial.archive.sha256 }
+    geography.officialExtentStatus = 'verified-for-pinned-spatial-edition'
+    geography.currentCorrespondenceSlots = countySlots
+    geography.countySlots = membership.constituencies.map((county, index) => {
+      const countyTitleId = `geography:county:${county.constituencyId}`
+      const officialCounty = officialCounties.get(countyTitleId)
+      exact(officialCounty.jurisdictionGuRefs, county.jurisdictionGuRefs, 'E_TITLE_HIERARCHY', '/facts/spatial/counties')
+      const slots = county.electoralDongs.map((dong, d) => {
+        const row = official.get(dong.electoralDongId)
+        const dongId = dong.currentCorrespondences.length === 1 ? `region:${dong.currentCorrespondences[0].candidateAdminId}` : dong.electoralDongId
+        requireValue(row.guId === dong.guId && row.dongId === dongId && row.countyTitleId === countyTitleId,
+          'E_SLOT_EDITION', '/facts/spatial/dong', dong.electoralDongId)
+        return { slotId: `slot:${dongId}`, dongId, name: row.officialName, jurisdictionGuRef: dong.guId,
+          electoralDongId: dong.electoralDongId, fragmentId: null, sourceEdition: spatial.edition,
+          sourcePointer: `/constituencies/${index}/electoralDongs/${d}`, sourceRefs: dong.membershipSourceRefs,
+          geometryRefs: [row.geometryId], geometryVerified: true,
+          currentCorrespondenceSlotIds: dong.currentCorrespondences.map(r => `slot:region:${r.candidateAdminId}`),
+          historicalHoldingRefs: [], holdingRefs: [], status: 'unassigned', holderPersonId: null }
+      })
+      exact(officialCounty.officialDongCodes, county.electoralDongs.map(d => official.get(d.electoralDongId).officialCode), 'E_SLOT_COVERAGE', '/facts/spatial/county')
+      return { countyTitleId, slots }
+    })
+    unique(geography.countySlots.flatMap(c => c.slots), s => s.slotId, '/facts/spatial/slots', 'E_SLOT_DUPLICATE')
+  }
+  return geography
 }
 
 function checkStagingGeography(geography, facts, input, mode) {
@@ -182,7 +224,7 @@ function checkStagingGeography(geography, facts, input, mode) {
     } else requireValue(actual === source, 'E_SLOT_EDITION', path)
   }
   compare(geography, expected, '/geography')
-  for (const slot of geography.countySlots.flatMap(group => group.slots)) {
+  for (const slot of (geography.currentCorrespondenceSlots ?? geography.countySlots).flatMap(group => group.slots)) {
     const ref = input.refs.find(row => row.id === slot.dongId)
     requireValue(ref?.kind === 'region' && ref.inside === true && ref.boundarySha256 === input.boundary.sha256,
       'E_SCOPE_REF', '/geography/candidateGeometryRefs', slot.dongId)
