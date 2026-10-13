@@ -1,0 +1,741 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/owner-approved-batch-d.md",
+    "lineStart": 1,
+    "lineEnd": 130,
+    "sha256": "c83ff68114516454abb529940a9e3e9ca4d7b49d1840f72505f33b9e7ef10ff2"
+  },
+  "document": {
+    "id": "doc.owner-approved-batch-d",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b49",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54",
+      "source.b55",
+      "source.b56",
+      "source.b57",
+      "source.b58",
+      "source.b59",
+      "source.b60",
+      "source.b61",
+      "source.b62",
+      "source.b63",
+      "source.b64",
+      "source.b65"
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인된 제안 — SQ-01·IND-01·RUL-01·CARE-01·CAP-01·ROG-01·ECO-01"
+        }
+      ],
+      "id": "source.b1"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "소유자가 2026-10-10에 승인한 제안 묶음이다(켬). ECO-01은 승인된 저장 상한(보관 400, 창고 +400)과 지정 우선순위 확장만 해당한다. 정본 반영 전이라 제안 문서로만 올린다."
+        }
+      ],
+      "id": "source.b2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "SQ-01 병사 분대 정원 산식"
+        }
+      ],
+      "id": "source.b3"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b4"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: RBATTLE-06은 분대 정원을 지휘관 능력치·국가 수준·정착지 수준으로 정하되 산식은 미정이라고 한다. — 근거 경로: rules-battle-clauses.json RBATTLE-06"
+        }
+      ],
+      "id": "source.b5"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 정원 = clamp(6 + floor(무력 기량/2) + 국가 수준(군주 2·봉신 1·그 밖 0) + floor(R/40), 6, 14). 공통 상한은 두지 않되 안전 범위만 둔다. 영웅은 병사 수와 별도."
+        }
+      ],
+      "id": "source.b6"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3 지휘관 능력이 병력 효율에, 영지 규모가 소집 규모에 영향을 준다."
+        }
+      ],
+      "id": "source.b7"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 기본 인물은 6~8명 분대, 군주·고R 인물은 최대 14명."
+        }
+      ],
+      "id": "source.b8"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: src/engine/battle.ts squadCap 계수"
+        }
+      ],
+      "id": "source.b9"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 한 분대 10명 고정(현행)."
+        }
+      ],
+      "id": "source.b10"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔(10명 고정)"
+        }
+      ],
+      "id": "source.b11"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "IND-01 독립 건국(무소속 인물의 영지 취득)"
+        }
+      ],
+      "id": "source.b12"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b13"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: RWARFARE-37은 무소속 인물이 스스로 영지를 취득하면 독립 국가가 선다고 하나 취득 방법·조건이 없다. — 근거 경로: rules-factions-warfare-clauses.json RWARFARE-37·04"
+        }
+      ],
+      "id": "source.b14"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 무소속(S00) 인물이 정통성 L 35 미만으로 무너진 나라의 칸(수도·마지막 6칸 제외)에 자금 60·평판 30을 걸고 자리를 잡으면 독립 국가가 선다. 식별자는 X-해시8(시드·창건자·칸)으로 영구이며 국명·순서는 식별자가 아니다. 새 나라의 정통성은 20(현지 신규 주장), 세력 15."
+        }
+      ],
+      "id": "source.b15"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3 무소속 모험가가 약해진 영주의 땅을 떼어 내 독립 영지를 연다."
+        }
+      ],
+      "id": "source.b16"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 자금 60과 정통성 붕괴가 필요해 흔치 않다."
+        }
+      ],
+      "id": "source.b17"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: src/engine/world.ts foundState 값"
+        }
+      ],
+      "id": "source.b18"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 무소속은 영지를 얻을 수 없다(현행 GDD)."
+        }
+      ],
+      "id": "source.b19"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔"
+        }
+      ],
+      "id": "source.b20"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RUL-01 수장의 죽음·공석·대행·후임(D09 3.2~3.4)"
+        }
+      ],
+      "id": "source.b21"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b22"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: D09는 수장이 죽거나 직위를 잃을 때 직위와 조직이 따로 움직인다고 하나 사망 위험·공석 기간·후임 순서가 없다. — 근거 경로: mechanism-design-index-d09.json 3.2~3.4"
+        }
+      ],
+      "id": "source.b23"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: NPC 수장은 나이 55세부터 주당 (나이−54)×0.00005(상한 2%)로 죽는다. 죽으면 직위가 비고(정통성 −3) 같은 나라 위계 1위가 대행하며 세력·영지·관계는 남는다. 4주 뒤 같은 가문(clan) 위키 인물 → 같은 나라 위계순으로 잇는다. 정변으로 밀려난 전 수장은 살아 있는 채 직위만 잃는다."
+        }
+      ],
+      "id": "source.b24"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3: 통치자 사망 → 계승 법에 따른 후임, 섭정 기간."
+        }
+      ],
+      "id": "source.b25"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 70세 수장은 해마다 약 5% 죽는다."
+        }
+      ],
+      "id": "source.b26"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: world.ts RUL 값"
+        }
+      ],
+      "id": "source.b27"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 수장은 죽지 않는다(현행)."
+        }
+      ],
+      "id": "source.b28"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔"
+        }
+      ],
+      "id": "source.b29"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CARE-01 치료 요청(D02 예 1·3)"
+        }
+      ],
+      "id": "source.b30"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b31"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: D02는 치료 요청이 장소·자원 검사를 통과해야 성립하고 같은 원인의 재전송은 새 결과를 만들지 않는다고 하나, 치료비·회복량이 없다. — 근거 경로: mechanism-design-index-d02.json 예 1·3"
+        }
+      ],
+      "id": "source.b32"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 다친 인물(건강 60 미만 또는 상태 이상)이 집에서 자금 3을 내면 건강 +12. 같은 원인 키는 한 번만 처리한다. 집을 떠나 있거나 자금이 모자라면 요청은 성립하지 않는다."
+        }
+      ],
+      "id": "source.b33"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3: 치료·의술 행동은 비용을 쓰고 건강을 올린다."
+        }
+      ],
+      "id": "source.b34"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 건강 12는 약 2주 휴식에 해당."
+        }
+      ],
+      "id": "source.b35"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: care.ts CARE"
+        }
+      ],
+      "id": "source.b36"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 치료 요청 없음(현행 전)."
+        }
+      ],
+      "id": "source.b37"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔"
+        }
+      ],
+      "id": "source.b38"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "CAP-01 패전 뒤 구금과 몸값(D02 예 2 · RBATTLE-09)"
+        }
+      ],
+      "id": "source.b39"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b40"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: RBATTLE-09는 포획을 인물별 구금 결과로 두지만 확률·기간·풀려나는 법이 없다. — 근거 경로: mechanism-design-index-d02.json 예 2 · rules-battle RBATTLE-09"
+        }
+      ],
+      "id": "source.b41"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 전투가 패배로 끝나면 25%로 구금된다(4주). 구금 중에는 이동·약속 참석이 막히고(면담·편지·교섭은 별도 요청), 기간이 지나거나 몸값 30을 내면 풀린다. 인물·식별자는 유지."
+        }
+      ],
+      "id": "source.b42"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3: 패전 군주는 포로가 되고 몸값으로 풀려난다."
+        }
+      ],
+      "id": "source.b43"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 한 번의 패전이 4주를 막는다."
+        }
+      ],
+      "id": "source.b44"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: care.ts CARE"
+        }
+      ],
+      "id": "source.b45"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 포획 없음."
+        }
+      ],
+      "id": "source.b46"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔"
+        }
+      ],
+      "id": "source.b47"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "ROG-01 독단 공격과 수장의 판결(RWARFARE-35)"
+        }
+      ],
+      "id": "source.b48"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b49"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: RWARFARE-35는 수장이 처벌·배상하거나 사후 승인한다고 하나 독단 공격이 언제 일어나는지 없다. — 근거 경로: rules-factions-warfare-clauses.json RWARFARE-35"
+        }
+      ],
+      "id": "source.b50"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 긴장 55 이상인 이웃(전쟁·동맹 아님)에 대해 수장이 있는 나라의 군령관(위계 3~4)이 주당 1.5%로 독단 공격. 수장의 야망이 확장형이고 전력이 1.1배 이상이면 사후 승인(긴장을 선전 문턱 70으로), 아니면 처벌·배상(긴장 −15, 전력 −1). 어느 쪽도 전쟁을 직접 열지 않는다."
+        }
+      ],
+      "id": "source.b51"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: CK3: 가신의 독단은 군주의 판결 대상이다."
+        }
+      ],
+      "id": "source.b52"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 약 1.1년에 한 번꼴."
+        }
+      ],
+      "id": "source.b53"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: world.ts rogueWeek"
+        }
+      ],
+      "id": "source.b54"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 독단 공격 없음."
+        }
+      ],
+      "id": "source.b55"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔"
+        }
+      ],
+      "id": "source.b56"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "ECO-01 다중 시설 경제(인력·전력·능력 태그·영수증)"
+        }
+      ],
+      "id": "source.b57"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안(소유자 승인 2026-10-10, 병합 전)."
+        }
+      ],
+      "id": "source.b58"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD가 비운 것: GDD는 시설별 인력·전력 배정 순서와 영 요구 생산식만 정하고, 거점에 어떤 시설이 몇 개 있고 어떻게 일하는지의 월드 상태가 없다. — 근거 경로: rules-economy-logistics-clauses.json RECON-05·10·11·21·23·24"
+        }
+      ],
+      "id": "source.b59"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제안 규칙: 거점 시설 = 직업 태그에서 읽은 주요 시설 최대 2개 + 전동 시설이 있으면 보조 발전. 하루 정산: 인력 W=max(1, floor(식구×0.6)−(건강<40?1:0))을 정책 우선순위(발전 1·급수 2·의무 3·공방 4·시장 5·창고 6)로 시설에 배정, 동순위는 시설 ID→인력 ID. 채움 fill=min(인력비, 전력비), 산출=기본 100×시설 상태 R/100×fill(요구가 0이면 fill=1 → 상태 80%에서 80). 정전이면 발전 외 전동 시설 0. 의약·수리·전력 태그는 서로 대체하지 않고, 인력이 모자라면 부분 완료. 주간 효과: 시장 산출 100당 +1.2 자금/일, 의무 산출이 병자를 돌봄(건강 +최대 2), 공방 산출이 시설 상태 보정(상한 +15, 방치하면 −0.25/주). 확장(소유자 승인 2026-10-10): 산출·저장 단계는 저장 예약(빈 자리)이 있어야 하며 없으면 이전 완료 단계에서 대기한다. 보관 상한 기본 400, 창고 시설이 있으면 +400. 지정 우선순위(RECON-05)를 플레이어가 정할 수 있다."
+        }
+      ],
+      "id": "source.b60"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "장르 근거: Nowland는 건물마다 노동자·입력·산출을 표로 두고 인력 우선순위 UI를 준다. CK3 영지 건물은 건설·유지만 있고 가동 개념이 없어 이 규칙이 Nowland 쪽을 따른다."
+        }
+      ],
+      "id": "source.b61"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "균형 영향: 한 가구(식구 3~5)는 시설 1~2개를 겨우 돌린다. 시장 최대 +8.4 자금/주로 월 소득(약 9×30)의 약 12%."
+        }
+      ],
+      "id": "source.b62"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "지금 코드의 임시값: src/engine/facilities.ts SPEC·src/engine/eco.ts ecoWeek"
+        }
+      ],
+      "id": "source.b63"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "대안: 월 단위 합산 산출만 쓰고 영수증을 쓰지 않는다."
+        }
+      ],
+      "id": "source.b64"
+    },
+    {
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "코드 연결: 켬(권장) / 끔(GDD 원문대로)"
+        }
+      ],
+      "id": "source.b65"
+    }
+  ]
+}
