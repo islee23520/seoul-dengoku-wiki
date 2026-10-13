@@ -15,7 +15,7 @@ test('entity paths create nested branches while preserving document registration
 })
 
 test('canonical entities retain source identities and omit faith and candidate equipment', async () => {
-  const paths = ['World-Narrative-Atlas', 'culture/Martial-Paths', 'technology/Lost-Technology-Lineage']
+  const paths = ['World-Narrative-Atlas', 'culture/Food-Culture', 'technology/Lost-Technology-Lineage']
   const pages = await Promise.all(paths.map(async (path) => ({ path: `lore/${path}.json`, slug: path.split('/').at(-1), value: JSON.parse(await readFile(new URL(`../lore/${path}.json`, import.meta.url), 'utf8')) })))
   const documents = [...pages.map((page) => ({ slug: page.slug, route: `/world/${page.slug}` })), ...Array.from({ length: 26 }, (_, i) => ({ slug: `Hostile-Group-G${String(i + 1).padStart(2, '0')}`, route: `/world/Hostile-Group-G${String(i + 1).padStart(2, '0')}` }))]
   const entities = categoryEntities(pages, documents)
@@ -175,10 +175,10 @@ test('the generated index covers all published documents, including projections'
 
 test('categories declared on an existing page must remain in the known registry', async () => {
   const registry = await loadCategoryRegistry(registryPath)
-  const page = JSON.parse(await readFile(join(root, 'lore/culture/Martial-Paths.json'), 'utf8'))
+  const page = JSON.parse(await readFile(join(root, 'lore/culture/Food-Culture.json'), 'utf8'))
   assert.deepEqual(page.categories, ['culture'])
-  assert.deepEqual(registrationErrors(page, registry, 'Martial-Paths.json'), [])
-  assert.deepEqual(registrationErrors({ ...page, categories: ['unregistered'] }, registry, 'Martial-Paths.json'), [
-    'E_CATEGORY_UNKNOWN:Martial-Paths.json:unregistered',
+  assert.deepEqual(registrationErrors(page, registry, 'Food-Culture.json'), [])
+  assert.deepEqual(registrationErrors({ ...page, categories: ['unregistered'] }, registry, 'Food-Culture.json'), [
+    'E_CATEGORY_UNKNOWN:Food-Culture.json:unregistered',
   ])
 })

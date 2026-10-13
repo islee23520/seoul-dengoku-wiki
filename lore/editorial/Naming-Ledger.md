@@ -5,7 +5,7 @@
 ## 표기 원칙
 
 - 한국어 정본의 확정된 이름을 그대로 쓴다. 외래어·한자어 표기는 확인된 정본 표기만 사용하며 미정 칸을 추측으로 채우지 않는다. 근거: [Writing-Rules](Writing-Rules.md), [용어 사전](/world/Glossary).
-- 공식 직함은 국가별 관직표의 티어를 따르고 무공 품계·생업 별칭과 섞지 않는다. 근거: [관직](../offices/Offices-and-Ranks.md#국가별-관직표), [무공](../culture/Martial-Paths.md#전투와의-관계).
+- 공식 직함은 국가별 관직표의 티어를 따르고 무공 품계·생업 별칭과 섞지 않는다. 근거: [관직](../offices/Offices-and-Ranks.md#국가별-관직표).
 - 실존 이름은 사실명으로만 기록하고 상표·기관명을 창작 권리로 주장하지 않는다. 창작명은 출처를 연결하고, 출처·권리 확인이 필요한 이름은 보류한다. 폐기형은 공개 현행 표기로 쓰지 않는다. 근거: [Writing-Rules](Writing-Rules.md), [로어 작업 규칙](../AGENTS.md).
 
 ## 십육국
@@ -28,21 +28,6 @@
 | S11 | 성하그룹 | [국가](../factions/Sixteen-States.json) |
 | S08 | 중앙정보부 | [국가](../factions/Sixteen-States.json) |
 | S16 | 정동노총 | [국가](../factions/Sixteen-States.json) |
-
-## 무공
-
-| 정식명 | 한자 표기 | 정본 |
-|---|---|---|
-| 수문호흡법 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 차륜강체공 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 강단호명법 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 호위철벽진 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 죽검연환법 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 연각권법 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 총검술 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-| 감응조준법 | 미정 | [무공](../culture/Martial-Paths.md#무공-체계) |
-
-한자 원문은 현재 정본에 없으므로 미정이다. 개방 무공은 유파가 아닌 강호 갈래이며 정식 유파명은 미정이다. 근거: [무공](../culture/Martial-Paths.md#개방-무공).
 
 ## 관직·품계
 
