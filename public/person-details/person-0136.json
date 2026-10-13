@@ -286,6 +286,142 @@
     "id": "K135",
     "personId": "person-0136"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k135-generator-output",
+        "name": {
+          "ko": "발전 출력 운전",
+          "en": "Generator output operation"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k135-choice",
+        "name": {
+          "ko": "은폐 배전 거부",
+          "en": "Rejects concealed allocation"
+        },
+        "description": {
+          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 전동기보다 훈련장 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.",
+          "en": "Sensitive to the smell of fuel, she hated verbal power routing. She took the political pressure to divert power from the purification motors to the training-ground lighting as an insult."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he felt out a wheel defect just short of a siding derailment and stopped the train. By this deed the signature of the Godeok depot emergency generator operator post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That on a night when the fuel ran dry the water gates would turn by hand alone, and the protection force's dispatch would fill the gap. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Backed Yang Giseok's siding power distribution from the generation side, matched output to Yang Pilho's trials, and had obeyed Bae Woojin's restoration-record disclosure but refused concealed power routing."
+        },
+        "effects": []
+      },
+      {
+        "id": "k135-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.",
+          "en": "Office. Rank: company commander. Title: Godeok depot emergency generator operator. Every shift she sealed the fuel remainder and output logs and sent them to Yang Giseok, and below minimum output she cut the munitions power even under the commander's urging."
+        },
+        "behavior": {
+          "ko": "관직. 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.",
+          "en": "Office. Rank: company commander. Title: Godeok depot emergency generator operator. Every shift she sealed the fuel remainder and output logs and sent them to Yang Giseok, and below minimum output she cut the munitions power even under the commander's urging."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That on a night when the fuel ran dry the water gates would turn by hand alone, and the protection force's dispatch would fill the gap. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Backed Yang Giseok's siding power distribution from the generation side, matched output to Yang Pilho's trials, and had obeyed Bae Woojin's restoration-record disclosure but refused concealed power routing."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125 he felt out a wheel defect just short of a siding derailment and stopped the train. By this deed the signature of the Godeok depot emergency generator operator post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -709,7 +845,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다.",
     "관계": "양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
@@ -717,7 +852,7 @@
     "공포": "연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 전동기보다 훈련장 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 동방사\n- 생업: 비상발전 연료·출력 운전\n- 품계: 중대장\n- 직함: 고덕기지 비상발전 운전장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 고덕 비상 발전과 암사 펌프 전력을 하나의 공개 배전망으로 묶어 동부 원수의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −35 | 무력 50 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −40 | 자격 −30 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 30 | 독점 −30 | 위험 −25 | 과시 10 | 지속 5 | 지향 동성 | 결합 없음\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 전동기보다 훈련장 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 동방사\n- 생업: 비상발전 연료·출력 운전\n- 품계: 중대장\n- 직함: 고덕기지 비상발전 운전장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 고덕기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 중대장. 직함은 고덕기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 양기석에게 보내고, 최저 출력 이하면 사령의 독촉이 있어도 군수 배전을 끊는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 고덕기지 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 양기석의 유치선 전력 배분을 발전 쪽에서 받치고, 양필호의 시운전에 출력을 맞추며, 배우진의 복구 실적 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 고덕 비상 발전과 암사 펌프 전력을 하나의 공개 배전망으로 묶어 동부 원수의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 보호군 파견이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −35 | 무력 50 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −40 | 자격 −30 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 30 | 독점 −30 | 위험 −25 | 과시 10 | 지속 5 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-05"
   ],

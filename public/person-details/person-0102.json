@@ -394,6 +394,150 @@
     "id": "K101",
     "personId": "person-0102"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "tunnel",
+        "name": {
+          "ko": "수심·진동 기록",
+          "en": "Depth and vibration records"
+        },
+        "rating": 65
+      },
+      {
+        "id": "save-register",
+        "name": {
+          "ko": "위기 인명 장부 보존",
+          "en": "Emergency preservation of personnel registers"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "beware-late-reports",
+        "name": {
+          "ko": "늦은 보고 경계",
+          "en": "Beware Late Reports"
+        },
+        "description": {
+          "ko": "명강산은 침수 탐사에서 보고 지연을 기록 책임의 중대한 위반으로 여긴다.",
+          "en": "Myeong Gangsan regards delayed flood-survey reports as a serious failure of recordkeeping responsibility."
+        },
+        "behavior": {
+          "ko": "수심과 펌프 진동을 같은 원장에 남기고 붕괴 구간 표시에 공방과 수비대의 공동 서명을 요구한다.",
+          "en": "They record water depth and pump vibration in one ledger and require workshop and garrison signatures to mark collapse sections."
+        },
+        "stress": {
+          "ko": "탐사 경로가 침투로로 팔릴 우려가 커지면 보고의 신속성과 경로 공개의 안전성을 함께 따지려 할 수 있다.",
+          "en": "If survey routes risk being sold as infiltration routes, they may weigh prompt reporting against the safety of disclosing those routes."
+        },
+        "relationship": {
+          "ko": "협력자가 보고를 늦춘다면 이를 단순한 일정 문제가 아니라 공동 정비 책임의 문제로 받아들일 수 있다.",
+          "en": "If collaborators delay reports, they may treat this as a shared maintenance responsibility issue rather than a scheduling problem."
+        },
+        "effects": []
+      },
+      {
+        "id": "share-detour-coordinates",
+        "name": {
+          "ko": "우회 좌표 공유",
+          "en": "Share Detour Coordinates"
+        },
+        "description": {
+          "ko": "명강산은 침수 우회 정보를 개인의 발견 자랑보다 공동 정비에 쓰일 자료로 여긴다.",
+          "en": "Myeong Gangsan treats flood-detour information as material for shared maintenance rather than personal discovery credit."
+        },
+        "behavior": {
+          "ko": "이준택에게 우회 좌표를 넘기고 허겸에게 침수 표본을 보내며 검사망이 멈추면 단독 채수로 기록을 잇는다.",
+          "en": "They send detour coordinates to Lee Juntaek and flood samples to Heo Gyeom, continuing records through solo sampling when the inspection network stops."
+        },
+        "stress": {
+          "ko": "좌표가 외부 침투에 이용될 가능성이 보이면 공개 해도라는 목표와 정비 주권 보호 사이에서 전달 범위를 재검토할 수 있다.",
+          "en": "If coordinates could enable outside infiltration, they may reconsider sharing scope against their goals of public charts and maintenance autonomy."
+        },
+        "relationship": {
+          "ko": "이준택과 허겸에게는 좌표와 표본을 실제 정비에 연결하는 상호 책임을 기대할 수 있다.",
+          "en": "They may expect Lee Juntaek and Heo Gyeom to share responsibility for turning coordinates and samples into practical maintenance."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "수심·진동을 기록하고 우회 좌표와 표본을 보낸다. 침수 탐사의 부담과 판단을 반영하며 수온 비유로 붕괴 시각의 확정 예측을 만들지 않는다.",
+      "en": "He records depth and vibration and shares alternate coordinates and samples. Survey demands and judgment are supported; water-temperature imagery does not predict collapse with certainty."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -765,7 +909,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 군자-성수 침수터널 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 군자-성수 침수터널 탐사원. 수심과 펌프 진동을 같은 원장에 남기고, 붕괴 구간은 공방과 수비대가 동시에 서명해야 표시한다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 군자-성수 침수터널 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "이준택의 군자 보수차에 우회 좌표를 넘기는 계약이고, 허겸의 골목 펌프 정비에 침수 표본을 보내며, 장예린의 검사망이 멈추면 단독 채수로 숫자를 잇는다.",
@@ -773,7 +916,7 @@
     "공포": "탐사 경로가 동부 순찰열차의 침투로로 팔려 정비 주권이 보호계약 아래로 들어가는 것.",
     "개입": "우회 터널 호위를 맡아 전용 묶기를 풀거나, 침투로 표시를 폭로할 수 있다."
   },
-  "biography": "터널 수온으로 붕괴 시각을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 명부교회\n- 생업: 침수터널 수심·진동 기록\n- 품계: 교사\n- 직함: 군자-성수 침수터널 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 군자-성수 침수터널 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 군자-성수 침수터널 탐사원. 수심과 펌프 진동을 같은 원장에 남기고, 붕괴 구간은 공방과 수비대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 군자-성수 침수터널 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 이준택의 군자 보수차에 우회 좌표를 넘기는 계약이고, 허겸의 골목 펌프 정비에 침수 표본을 보내며, 장예린의 검사망이 멈추면 단독 채수로 숫자를 잇는다.\n\n**야망.** 군자 유치선과 뚝섬 펌프를 잇는 침수 우회 터널을 공개 해도로 그려 물·부품 공동규격이 선로 아래에서도 작동하게 한다.\n\n**공포.** 탐사 경로가 동부 순찰열차의 침투로로 팔려 정비 주권이 보호계약 아래로 들어가는 것.\n\n**개입.** 우회 터널 호위를 맡아 전용 묶기를 풀거나, 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 20 | 공개 −20 | 자격 35 | 분산 25 | 변혁 5\n- 욕망: 갈망 50 | 독점 10 | 위험 −15 | 과시 30 | 지속 −10 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "터널 수온으로 붕괴 시각을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 명부교회\n- 생업: 침수터널 수심·진동 기록\n- 품계: 교사\n- 직함: 군자-성수 침수터널 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 군자-성수 침수터널 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교사. 직함은 군자-성수 침수터널 탐사원. 수심과 펌프 진동을 같은 원장에 남기고, 붕괴 구간은 공방과 수비대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 군자-성수 침수터널 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 이준택의 군자 보수차에 우회 좌표를 넘기는 계약이고, 허겸의 골목 펌프 정비에 침수 표본을 보내며, 장예린의 검사망이 멈추면 단독 채수로 숫자를 잇는다.\n\n**야망.** 군자 유치선과 뚝섬 펌프를 잇는 침수 우회 터널을 공개 해도로 그려 물·부품 공동규격이 선로 아래에서도 작동하게 한다.\n\n**공포.** 탐사 경로가 동부 순찰열차의 침투로로 팔려 정비 주권이 보호계약 아래로 들어가는 것.\n\n**개입.** 우회 터널 호위를 맡아 전용 묶기를 풀거나, 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 20 | 공개 −20 | 자격 35 | 분산 25 | 변혁 5\n- 욕망: 갈망 50 | 독점 10 | 위험 −15 | 과시 30 | 지속 −10 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.",
+            "summary": "2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -284,6 +284,142 @@
   "gurps": {
     "id": "K295",
     "personId": "person-0296"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k295-specification-and-weight-verification",
+        "name": {
+          "ko": "규격·중량 확인",
+          "en": "Specification and weight verification"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k295-priority",
+        "name": {
+          "ko": "교환의 증인",
+          "en": "Witness to exchange"
+        },
+        "description": {
+          "ko": "순하준은 수명이 다한 부품 상자를 저울에 올리고 규격 도장을 확인했다. 보증인 실종 뒤 증언이 군수 출고 근거로 바뀌는 것을 두려워한다.",
+          "en": "Sun Hajun weighed exhausted parts and checked specification seals. He fears his testimony will justify military shipments after the guarantor disappears."
+        },
+        "behavior": {
+          "ko": "입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
+          "en": "Office. Rank: assistant manager. Title: water contract wheel exchange witness. Two witnesses reported intake weights, and he blocked the release of any order stamped with a house seal before the seniority council's ratification."
+        },
+        "stress": {
+          "ko": "보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
+          "en": "Fear. That after the guarantor vanished, the exchange testimony would be cited only as grounds for munitions-only releases."
+        },
+        "relationship": {
+          "ko": "황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
+          "en": "Relations. Overlaid the treaty tonnage on Hwang Noeul's salvage scales, pointed to the same box as Choo Hangyeol's Yongsan transshipment testimony, and witnessed the Changdong-side release of the parts column Im Hajun had guaranteed."
+        },
+        "effects": []
+      },
+      {
+        "id": "k295-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
+          "en": "Office. Rank: assistant manager. Title: water contract wheel exchange witness. Two witnesses reported intake weights, and he blocked the release of any order stamped with a house seal before the seniority council's ratification."
+        },
+        "stress": {
+          "ko": "공포. 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
+          "en": "Fear. That after the guarantor vanished, the exchange testimony would be cited only as grounds for munitions-only releases."
+        },
+        "relationship": {
+          "ko": "관계. 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
+          "en": "Relations. Overlaid the treaty tonnage on Hwang Noeul's salvage scales, pointed to the same box as Choo Hangyeol's Yongsan transshipment testimony, and witnessed the Changdong-side release of the parts column Im Hajun had guaranteed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "순하준은 수명이 다한 부품 상자를 저울에 올리고 규격 도장을 확인했다. 보증인 실종 뒤 증언이 군수 출고 근거로 바뀌는 것을 두려워한다.",
+      "en": "Sun Hajun weighed exhausted parts and checked specification seals. He fears his testimony will justify military shipments after the guarantor disappears."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -698,7 +834,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.",
     "일화": "급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.",
     "관계": "황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
@@ -706,7 +841,7 @@
     "공포": "보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.",
     "개입": "철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다."
   },
-  "biography": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. 시세보다 공개 저울을 믿는다.\n\n- 생업: 차륜 입고 중량·출고 증언\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 교환 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.\n\n**일화.** 급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.\n\n**관계.** 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.\n\n**야망.** 급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 바깥 작업장이 부품을 볼모로 후계를 흔들지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −10 | 물질 35 | 공동 10 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −20\n- 욕망: 갈망 −10 | 독점 10 | 위험 30 | 과시 20 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. 시세보다 공개 저울을 믿는다.\n\n- 생업: 차륜 입고 중량·출고 증언\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 교환 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 성하전자 차륜 교환 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 교환 증인. 입고 중량을 두 증인이 보고, 가문 문장이 찍힌 주문서는 회장실 인준 전 출고를 막는다.\n\n**일화.** 급수 계약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 성하전자 저울에 올리고 규격 도장을 확인했다.\n\n**관계.** 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.\n\n**야망.** 급수 계약의 열차 부품 교환을 성하전자 표준 재고 원장에 남겨 바깥 작업장이 부품을 볼모로 후계를 흔들지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 교환 증언이 군수 전용 출고의 근거로만 인용되는 것.\n\n**개입.** 철재 로트를 회수하거나, 가문 쪽 출고를 회장실에서 정지시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −10 | 물질 35 | 공동 10 | 원칙 10 | 공개 −5 | 자격 55 | 분산 10 | 변혁 −20\n- 욕망: 갈망 −10 | 독점 10 | 위험 30 | 과시 20 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

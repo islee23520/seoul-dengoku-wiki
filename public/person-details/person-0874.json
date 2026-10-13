@@ -287,6 +287,150 @@
     "id": "K874",
     "personId": "person-0874"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "bargain",
+        "name": {
+          "ko": "교대 조건 조정",
+          "en": "Shift-condition mediation"
+        },
+        "rating": 50
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "direct-crew-consultation",
+        "name": {
+          "ko": "작업반과 직접 협의",
+          "en": "Direct Crew Consultation"
+        },
+        "description": {
+          "ko": "홍자원은 태업 작업반과 조건을 직접 나누며 교대의 길을 찾는 쪽이다.",
+          "en": "Hong Jawon seeks a way to resume shifts by discussing conditions directly with a work-to-rule crew."
+        },
+        "behavior": {
+          "ko": "태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다.",
+          "en": "They discussed conditions with the crew through the night and enabled the next shift."
+        },
+        "stress": {
+          "ko": "태업이 당직 공백으로 이어질 우려가 있으면 조건 협의를 지속하려 할 수 있다.",
+          "en": "If the slowdown threatens a gap in duty coverage, they may persist with discussions of conditions."
+        },
+        "relationship": {
+          "ko": "작업반과 갈등이 생긴다면 일방적 지시보다 조건을 직접 주고받는 방식을 택할 수 있다.",
+          "en": "If conflict arises with the crew, they may choose direct discussion of conditions over unilateral instructions."
+        },
+        "effects": []
+      },
+      {
+        "id": "connect-the-next-duty-shift",
+        "name": {
+          "ko": "다음 당직 연결",
+          "en": "Connect the Next Duty Shift"
+        },
+        "description": {
+          "ko": "홍자원은 현재의 갈등을 다음 교대가 열리는 방향으로 풀려는 성향을 보인다.",
+          "en": "Hong Jawon shows a tendency to address present conflict toward enabling the next shift."
+        },
+        "behavior": {
+          "ko": "밤샘 협의를 이어 실제로 다음 교대가 시작될 수 있게 했다.",
+          "en": "They sustained overnight discussions until the next shift could begin."
+        },
+        "stress": {
+          "ko": "당직 공백이 태욱그룹의 통행을 강국에 종속시킬 우려가 커지면 교대 재개를 더 중시할 수 있다.",
+          "en": "Fear that a vacant shift could make Taewook Group's passage dependent on a powerful state may heighten their focus on resuming shifts."
+        },
+        "relationship": {
+          "ko": "작업반과 선배 당직 사이를 조율해야 한다면 다음 교대의 성립을 공통 목표로 삼을 수 있다.",
+          "en": "When coordinating between the crew and senior duty staff, they may use the next shift's resumption as a shared goal."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "태업 조건을 밤새 나눠 교대를 열었다. 협의와 인내의 좁은 강점을 평가하고 수질 전문 기술은 추가하지 않는다.",
+      "en": "He spent the night mediating work-to-rule conditions to open a shift. Bargaining and persistence are narrow strengths; water expertise is not added."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -678,7 +822,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -686,7 +829,7 @@
     "공포": "수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 20 | 무력 −30 | 물질 5 | 공동 −10 | 원칙 55 | 공개 40 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 30 | 독점 0 | 위험 −10 | 과시 −25 | 지속 −20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 20 | 무력 −30 | 물질 5 | 공동 −10 | 원칙 55 | 공개 40 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 30 | 독점 0 | 위험 −10 | 과시 −25 | 지속 −20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

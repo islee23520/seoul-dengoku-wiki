@@ -278,6 +278,126 @@
     "id": "K1018",
     "personId": "person-1018"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 13,
+        "effective": 13
+      },
+      "negotiation": {
+        "base": 16,
+        "effective": 16
+      },
+      "management": {
+        "base": 13,
+        "effective": 13
+      },
+      "insight": {
+        "base": 16,
+        "effective": 16
+      },
+      "learning": {
+        "base": 15,
+        "effective": 15
+      },
+      "prowess": {
+        "base": 11,
+        "effective": 11
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k1018-contract-advice",
+        "name": {
+          "ko": "계약 자문",
+          "en": "Contract advice"
+        },
+        "rating": 75
+      },
+      {
+        "id": "k1018-pistol-training",
+        "name": {
+          "ko": "권총 사격",
+          "en": "Pistol shooting"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1018-trait-1",
+        "name": {
+          "ko": "근거 앞의 수정",
+          "en": "Revision when evidence changes"
+        },
+        "description": {
+          "ko": "오류를 확인하면 판단과 계획을 고친다.",
+          "en": "Revises judgment and plans when an error is established."
+        },
+        "behavior": {
+          "ko": "오류를 확인하면 판단과 계획을 고친다.",
+          "en": "Revises judgment and plans when an error is established."
+        },
+        "stress": {
+          "ko": "지루함을 피해도 회수 대책 없는 자산 위험은 택하지 않는다.",
+          "en": "Does not choose unrecoverable asset risks just to avoid boredom."
+        },
+        "relationship": {
+          "ko": "거절을 인정하지만 감정으로 바뀐 입장은 예측하기 어렵다.",
+          "en": "Accepts refusal but struggles to predict positions changed by emotion."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "진술·몸짓·기록의 모순을 대조하고 손익·권한·책임을 확인한다. 근거가 바뀌면 판단을 고치며 상대의 거절을 인정한다. 감정 변화는 추론해도 정서적으로 공유하지 못해 예측이 빗나갈 수 있다.",
+      "en": "She compares statements, gestures, and records, then checks costs, authority, and responsibility. She revises judgments when evidence changes and accepts refusal. She infers emotions without sharing them, so emotional changes can defeat predictions."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",

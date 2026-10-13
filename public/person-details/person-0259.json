@@ -392,6 +392,142 @@
     "id": "K258",
     "personId": "person-0259"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "camp-duty",
+        "name": {
+          "ko": "숙영 명부·출입 확인",
+          "en": "Camp-roster and access checking"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "camp-duty-disposition",
+        "name": {
+          "ko": "잠든 아이의 불빛",
+          "en": "Light for sleeping children"
+        },
+        "description": {
+          "ko": "아이들이 잠든 뒤 불빛을 줄이고 빈 자리를 효율로 메우지 않는다.",
+          "en": "Dims light after children sleep and does not fill vacancies for efficiency."
+        },
+        "behavior": {
+          "ko": "아이들이 잠든 뒤 불빛을 줄이고 빈 자리를 효율로 메우지 않는다.",
+          "en": "Dims light after children sleep and does not fill vacancies for efficiency."
+        },
+        "stress": {
+          "ko": "숙영이 당직 승려의 병영이 될 것을 두려워한다.",
+          "en": "Fears the camp becoming barracks for duty monks."
+        },
+        "relationship": {
+          "ko": "신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.",
+          "en": "Hosts Sin Boram’s family meeting, posts Dugam’s checks and leaves Baek On’s ration copies at tents."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "누락에 출입 중지",
+          "en": "Stops access over omissions"
+        },
+        "description": {
+          "ko": "이름이 빠지면 배급과 출입을 함께 멈춘다.",
+          "en": "Stops both rations and access over a missing name."
+        },
+        "behavior": {
+          "ko": "이름이 빠지면 배급과 출입을 함께 멈춘다.",
+          "en": "Stops both rations and access over a missing name."
+        },
+        "stress": {
+          "ko": "난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.",
+          "en": "Fears the camp becoming barracks for duty monks."
+        },
+        "relationship": {
+          "ko": "신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.",
+          "en": "Hosts Sin Boram’s family meeting, posts Dugam’s checks and leaves Baek On’s ration copies at tents."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "천막 줄을 고치고 저녁 명부를 읽으며 누락 때 배급과 출입을 멈춘다. 자진 철수 압력 앞에서 숙영의 가족회의를 잇는다.",
+      "en": "Repairs tent lines, reads evening rosters and stops rations and access over omissions, maintaining family meetings amid voluntary departures."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -877,7 +1013,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 자리는 고아 명부 줄로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주지. 직함은 숙영 당직 주지. 저녁 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급과 출입을 함께 멈춘다.",
     "일화": "급수권 철표가 숙영 게시판에 붙자 일부 천막이 자진 철수를 준비하기 시작했다.",
     "관계": "신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.",
@@ -885,7 +1020,7 @@
     "공포": "난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.",
     "개입": "철수 행렬을 하루 붙잡거나, 철표를 떼고 신도 명부를 다시 읽게 할 수 있다."
   },
-  "biography": "텐트 줄을 고치는 손과 명부를 읽는 입이 같고, 빈 자리를 효율로 메우라는 말을 듣지 않는다. 아이들이 잠든 뒤에는 불빛부터 줄인다.\n\n- 생업: 숙영 명부·출입 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 숙영 당직 주지\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 자리는 고아 명부 줄로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주지. 직함은 숙영 당직 주지. 저녁 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급과 출입을 함께 멈춘다.\n\n**일화.** 급수권 철표가 숙영 게시판에 붙자 일부 천막이 자진 철수를 준비하기 시작했다.\n\n**관계.** 신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.\n\n**야망.** 숙영지를 문중 표의 현장으로 남겨 강국의 군사호적이 천막 기둥에 못 박히지 않게 한다.\n\n**공포.** 난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.\n\n**개입.** 철수 행렬을 하루 붙잡거나, 철표를 떼고 신도 명부를 다시 읽게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 70 | 무력 −40 | 물질 −20 | 공동 85 | 원칙 25 | 공개 35 | 자격 35 | 분산 55 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −50 | 위험 −25 | 과시 −5 | 지속 0 | 지향 유동 | 결합 없음\n:::",
+  "biography": "텐트 줄을 고치는 손과 명부를 읽는 입이 같고, 빈 자리를 효율로 메우라는 말을 듣지 않는다. 아이들이 잠든 뒤에는 불빛부터 줄인다.\n\n- 생업: 숙영 명부·출입 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 숙영 당직 주지\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 숙영 당직 주지 자리는 고아 명부 줄로 열렸다.\n\n**관직.** 품계 주지. 직함은 숙영 당직 주지. 저녁 명부를 소리 내어 읽고, 빠진 이름이 있으면 배급과 출입을 함께 멈춘다.\n\n**일화.** 급수권 철표가 숙영 게시판에 붙자 일부 천막이 자진 철수를 준비하기 시작했다.\n\n**관계.** 신보람의 가족 회의를 숙영 중앙에서 열고, 두감의 난로 점검표를 기둥에 붙인다. 백온의 공개 배급표를 천막마다 사본으로 남긴다.\n\n**야망.** 숙영지를 문중 표의 현장으로 남겨 강국의 군사호적이 천막 기둥에 못 박히지 않게 한다.\n\n**공포.** 난방이 떨어진 밤에 숙영이 당직 승려의 병영으로 바뀌는 것.\n\n**개입.** 철수 행렬을 하루 붙잡거나, 철표를 떼고 신도 명부를 다시 읽게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −55 | 개방 70 | 무력 −40 | 물질 −20 | 공동 85 | 원칙 25 | 공개 35 | 자격 35 | 분산 55 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −50 | 위험 −25 | 과시 −5 | 지속 0 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-10"
   ],

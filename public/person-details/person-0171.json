@@ -287,6 +287,142 @@
     "id": "K170",
     "personId": "person-0171"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 12,
+        "effective": 12
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "switch-control",
+        "name": {
+          "ko": "전환기 통제",
+          "en": "Switch control"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k170-disposition",
+        "name": {
+          "ko": "혈통 거부권",
+          "en": "Hereditary veto"
+        },
+        "description": {
+          "ko": "가문의 궤도를 혈통으로 보고 양자를 손님으로 대한다. 겉으로는 예의를 지키지만 배차 거부권만은 절대 놓지 않는다.",
+          "en": "He saw the house's rails as bloodline and treated the adopted child as a guest. Outwardly he kept his manners, but he never let go of the dispatch veto."
+        },
+        "behavior": {
+          "ko": "관직. 품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.",
+          "en": "Office. Rank: bureau chief. Title: track house elder. He allowed track blockades only in the house council and pressed the Coordinator by cutting the apprentice lodge's rations."
+        },
+        "stress": {
+          "ko": "공포. 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.",
+          "en": "Fear. That the surrounding great powers would use Yongsan as a battlefield and strip even the house warehouse's transshipment monopoly."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
+          "en": "Relations. Contested the succession with Park Taegyeom and detained Im Chowon's return train. Used Clara Bennett as the house-side dispatcher and set the Changdong wheel supply as a condition for Hwang Noeul."
+        },
+        "effects": []
+      },
+      {
+        "id": "k170-choice",
+        "name": {
+          "ko": "배급을 지렛대로",
+          "en": "Ration leverage"
+        },
+        "description": {
+          "ko": "일화. 임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.",
+          "en": "Anecdote. When the train carrying Im Chowon entered the Yongsan warehouse, he locked the track switch and convened the Post-State Council."
+        },
+        "behavior": {
+          "ko": "관계. 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
+          "en": "Relations. Contested the succession with Park Taegyeom and detained Im Chowon's return train. Used Clara Bennett as the house-side dispatcher and set the Changdong wheel supply as a condition for Hwang Noeul."
+        },
+        "stress": {
+          "ko": "공포. 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.",
+          "en": "Fear. That the surrounding great powers would use Yongsan as a battlefield and strip even the house warehouse's transshipment monopoly."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
+          "en": "Relations. Contested the succession with Park Taegyeom and detained Im Chowon's return train. Used Clara Bennett as the house-side dispatcher and set the Changdong wheel supply as a condition for Hwang Noeul."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "전환기를 잠그고 회의를 소집했다. 후계 경쟁에서 배급과 부품 공급을 압박 수단으로 쓰지만 전장 지휘의 근거는 없다.",
+      "en": "He locked the switch and summoned the council. He uses rations and parts in the succession dispute; battlefield command is not established."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -669,7 +805,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 선로 가문 원로 자리는 교대 무단 결근 대체 당직으로 열렸다. 알렉산더 밀러는 2059년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 가문 원로 업무를 맡는다. 제임스 밀러는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 알렉산더 밀러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.",
     "일화": "임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.",
     "관계": "박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.",
@@ -677,7 +812,7 @@
     "공포": "사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.",
     "개입": "전환기 열쇠를 훔치거나, 가문회의에서 양자 승계를 공개 지지할 수 있다."
   },
-  "biography": "가문의 궤도를 혈통으로 보고 양자를 손님으로 대한다. 겉으로는 예의를 지키지만 배차 거부권만은 절대 놓지 않는다.\n\n- 소속: 환적국\n- 품계: 본부장\n- 생업: 선로 봉쇄 승인·전환기 통제\n- 직함: 선로 가문 원로\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 선로 가문 원로 자리는 교대 무단 결근 대체 당직으로 열렸다. 알렉산더 밀러는 2059년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 가문 원로 업무를 맡는다. 제임스 밀러는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 알렉산더 밀러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.\n\n**일화.** 임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.\n\n**관계.** 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.\n\n**야망.** 박태겸의 도제 승계를 무효로 돌리고 선로 가문이 후국회의의 최종 거부권을 세습하게 한다.\n\n**공포.** 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.\n\n**개입.** 전환기 열쇠를 훔치거나, 가문회의에서 양자 승계를 공개 지지할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −10 | 물질 20 | 공동 0 | 원칙 0 | 공개 −15 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −15 | 위험 −25 | 과시 −15 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "가문의 궤도를 혈통으로 보고 양자를 손님으로 대한다. 겉으로는 예의를 지키지만 배차 거부권만은 절대 놓지 않는다.\n\n- 소속: 환적국\n- 품계: 본부장\n- 생업: 선로 봉쇄 승인·전환기 통제\n- 직함: 선로 가문 원로\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 선로 가문 원로 자리는 교대 무단 결근 대체 당직으로 열렸다. 알렉산더 밀러는 2059년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 대합실 당직에서 자랐다. 2126년에는 선로 가문 원로 업무를 맡는다. 제임스 밀러는 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 알렉산더 밀러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 본부장. 직함은 선로 가문 원로. 가문 회의에서만 선로 봉쇄를 승인하고, 도제 숙소의 배급을 끊는 방식으로 조정관을 압박한다.\n\n**일화.** 임초원을 태운 열차가 용산 창에 들어오자 선로 전환기를 잠그고 후국회의를 소집했다.\n\n**관계.** 박태겸과 후계를 놓고 경쟁하며 임초원의 귀환 열차를 억류했다. 클라라 베넷을 가문 측 배차로 부리고, 황노을에게는 창동 차륜 공급을 조건으로 건다.\n\n**야망.** 박태겸의 도제 승계를 무효로 돌리고 선로 가문이 후국회의의 최종 거부권을 세습하게 한다.\n\n**공포.** 사방 강국이 용산을 전쟁터로 쓰면서 가문 창고의 환적 독점까지 빼앗기는 것.\n\n**개입.** 전환기 열쇠를 훔치거나, 가문회의에서 양자 승계를 공개 지지할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −10 | 물질 20 | 공동 0 | 원칙 0 | 공개 −15 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −15 | 위험 −25 | 과시 −15 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-07"
   ],

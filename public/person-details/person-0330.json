@@ -285,6 +285,142 @@
     "id": "K329",
     "personId": "person-0330"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "shipment-weight-reconciliation",
+        "name": {
+          "ko": "운송 중량 대조",
+          "en": "Shipment weight reconciliation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "구두 운임을 인정하지 않는다",
+          "en": "No verbal freight rates"
+        },
+        "description": {
+          "ko": "두 증인 앞에서 입고 중량을 확인하고 날인 없는 송장을 싣지 않는다. 무게 공백의 원인 규명은 아직 없다.",
+          "en": "Receiving weight is checked before two witnesses and unsealed invoices are not loaded. The cause of missing weights is not established."
+        },
+        "behavior": {
+          "ko": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He put box weights and drying dates on the same scales and did not admit as a guest any envoy who arrived with pre-buying receipts alone. He cut bargains short and honored no verbal freight."
+        },
+        "stress": {
+          "ko": "공포. 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.",
+          "en": "Fear. That a munitions clause would mix into febrifuge invoices and lay the market floor bare for a season."
+        },
+        "relationship": {
+          "ko": "관계. 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
+          "en": "Relations. Held a transport contract with Sim Dalho and matched weights on Dong Juha's market scales. Wrote the exchange ratio between Eun Taeho's Garak food and herbs into the invoice tail."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
+          "en": "Office. Rank: member. Title: herb transport logistics merchant. Two witnesses reported intake weights, and he loaded no bulk pre-buying invoice before the stamps of Sim Dalho and Jeon Sol."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: herb transport logistics merchant. Two witnesses reported intake weights, and he loaded no bulk pre-buying invoice before the stamps of Sim Dalho and Jeon Sol."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That a munitions clause would mix into febrifuge invoices and lay the market floor bare for a season."
+        },
+        "relationship": {
+          "ko": "관계. 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
+          "en": "Relations. Held a transport contract with Sim Dalho and matched weights on Dong Juha's market scales. Wrote the exchange ratio between Eun Taeho's Garak food and herbs into the invoice tail."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "두 증인 앞에서 입고 중량을 확인하고 날인 없는 송장을 싣지 않는다. 무게 공백의 원인 규명은 아직 없다.",
+      "en": "Receiving weight is checked before two witnesses and unsealed invoices are not loaded. The cause of missing weights is not established."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -723,7 +859,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 운송 수련의 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
     "일화": "선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.",
     "관계": "심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
@@ -731,7 +866,7 @@
     "공포": "군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.",
     "개입": "공백 송장을 공개하거나, 강국 구매 대리인의 마차를 저울 앞에서 세울 수 있다."
   },
-  "biography": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 입고 중량·출고 송장 확인\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 운송 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 운송 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.\n\n**일화.** 선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.\n\n**관계.** 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.\n\n**야망.** 제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 강국 독점 입찰이 마차를 사지 못하게 한다.\n\n**공포.** 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.\n\n**개입.** 공백 송장을 공개하거나, 강국 구매 대리인의 마차를 저울 앞에서 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 입고 중량·출고 송장 확인\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 운송 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 운송 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.\n\n**일화.** 선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.\n\n**관계.** 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.\n\n**야망.** 제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 강국 독점 입찰이 마차를 사지 못하게 한다.\n\n**공포.** 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.\n\n**개입.** 공백 송장을 공개하거나, 강국 구매 대리인의 마차를 저울 앞에서 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-13"
   ],

@@ -90,7 +90,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준이 망치의 반을 넘긴 것은 당회 후계가 아니라 기술 전수였다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
+            "summary": "2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Core-Characters.json",
@@ -411,6 +411,118 @@
   "gurps": {
     "id": "K086",
     "personId": "person-0086"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 14,
+        "effective": 14
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 14,
+        "effective": 14
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k086-pump-maintenance",
+        "name": {
+          "ko": "펌프 정비",
+          "en": "Pump maintenance"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k086-trait-1",
+        "name": {
+          "ko": "닫힌 사본 함",
+          "en": "Sealed process copies"
+        },
+        "description": {
+          "ko": "공정 사본의 접근 경계를 봉인으로 남겼다.",
+          "en": "Left an access boundary around process copies through a seal."
+        },
+        "behavior": {
+          "ko": "공정 사본의 접근 경계를 봉인으로 남겼다.",
+          "en": "Left an access boundary around process copies through a seal."
+        },
+        "stress": {
+          "ko": "실종 전날의 봉인 이외 위기 반응은 확인되지 않았다.",
+          "en": "No crisis response beyond the seal before his disappearance is established."
+        },
+        "relationship": {
+          "ko": "임초원에게 기술을 가르쳤으나 당회 후계권을 주지는 않았다.",
+          "en": "Taught Im Chowon maintenance without granting church succession."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "섭정으로 당회 업무를 맡았고 펌프 규격을 익혀 임초원에게 정비를 가르쳤으나 교육을 마치지 못했다. 실종 전날 공정 사본을 봉인했다. 실종 이유와 유언 내용은 미정이다.",
+      "en": "He handled church affairs as regent and learned pump standards, then taught Im Chowon maintenance without completing the instruction. He sealed process copies the night before disappearing. The reason for his disappearance and the wills’ contents remain unknown."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -1117,14 +1229,13 @@
   },
   "fields": {},
   "sections": {
-    "생애": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
+    "생애": "2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 그는 양자 임초원에게 펌프 정비를 가르쳤으나 교육을 마치지 못했다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.",
     "관직": "품계 당회장. 직함은 전 명부교회 당회장. 생업 별명은 펌프기술 총관. 2125년 겨울 이후 자리가 비어 있다.",
-    "무공": "단철공. 전수는 양자 임초원에게 반만 넘어갔다.",
     "일화": "실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠가 유언 3장과 같이 접수되었다.",
     "가문": "뚝섬열원가(HC04)의 전 수장 줄. 관리인은 박누리다. 실종 뒤에 키가 갈렸다.",
     "관계": "임초원의 양부. 오경재의 섭정이었다. 한재목·배우진·강민서의 급수 삼각의 한 점."
   },
-  "biography": "명부교회 전 당회장. 2125년 겨울 실종. 섭정으로 앉아 있던 사람.\n\n**생애.** 2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 손은 양자 임초원에게 그 기술의 절반만 넘겼다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.\n\n**관직.** 품계 당회장. 직함은 전 명부교회 당회장. 생업 별명은 펌프기술 총관. 2125년 겨울 이후 자리가 비어 있다.\n\n**무공.** 단철공. 전수는 양자 임초원에게 반만 넘어갔다.\n\n**일화.** 실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠가 유언 3장과 같이 접수되었다.\n\n**가문.** 뚝섬열원가(HC04)의 전 수장 줄. 관리인은 박누리다. 실종 뒤에 키가 갈렸다.\n\n**관계.** 임초원의 양부. 오경재의 섭정이었다. 한재목·배우진·강민서의 급수 삼각의 한 점.",
+  "biography": "명부교회 전 당회장. 2125년 겨울 실종. 섭정으로 앉아 있던 사람.\n\n**생애.** 2126년 세대. 2119년 오씨 적장자 오경재가 미성년이었다. 장로들은 인준 투표로 임하준을 당회장에 앉혔다. 뚝섬 열원 당직에서 펌프 규격을 익힌 그는 양자 임초원에게 펌프 정비를 가르쳤으나 교육을 마치지 못했다. 2125년 겨울 임하준이 실종되었다. 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 유언 3장과 함께 장로회에 접수되었다. 임시 관리인은 박누리가 맡았다. 실종의 경위와 유언 3장의 내용은 정해지지 않았다.\n\n**관직.** 품계 당회장. 직함은 전 명부교회 당회장. 생업 별명은 펌프기술 총관. 2125년 겨울 이후 자리가 비어 있다.\n\n**일화.** 실종 전날 밤, 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠가 유언 3장과 같이 접수되었다.\n\n**가문.** 뚝섬열원가(HC04)의 전 수장 줄. 관리인은 박누리다. 실종 뒤에 키가 갈렸다.\n\n**관계.** 임초원의 양부. 오경재의 섭정이었다. 한재목·배우진·강민서의 급수 삼각의 한 점.",
   "sources": [
     "Core-Characters"
   ],

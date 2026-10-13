@@ -392,6 +392,150 @@
     "id": "K049",
     "personId": "person-0049"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k049-frequency-load-control",
+        "name": {
+          "ko": "주파수·부하 조정",
+          "en": "Frequency and load control"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k049-load-chart-recording",
+        "name": {
+          "ko": "부하표 기록",
+          "en": "Load-chart recording"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k049-civilian-pump-line",
+        "name": {
+          "ko": "민가 펌프 먼저",
+          "en": "Civilian pumps first"
+        },
+        "description": {
+          "ko": "펌프 바늘이 안정된 뒤 군수 회로를 올린다.",
+          "en": "Raises military circuits only after civilian pump needles stabilize."
+        },
+        "behavior": {
+          "ko": "펌프 바늘이 안정된 뒤 군수 회로를 올린다.",
+          "en": "Raises military circuits only after civilian pump needles stabilize."
+        },
+        "stress": {
+          "ko": "빨간 실 아래의 주파수가 사흘을 넘기면 발전 손잡이가 수문국 창구의 담보 번호가 되는 것.",
+          "en": "That frequency below the red thread past three days would turn the generator handle into the water contract window's collateral number."
+        },
+        "relationship": {
+          "ko": "박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받고, 허다온의 시운전에 심야 주파수만 빌려 준다. 이강묵의 야간 편성이 민가 회로를 빼면 손잡이를 내린다.",
+          "en": "Under command to execute Park Soeon's bid results by circuit color, lending Heo Daon only the night frequency. Whenever I Gangmuk's night formations drained a civilian circuit, she lowered the handle."
+        },
+        "effects": []
+      },
+      {
+        "id": "k049-visible-limit",
+        "name": {
+          "ko": "보이는 최저선",
+          "en": "Visible minimum"
+        },
+        "description": {
+          "ko": "주파수 바늘이 빨간 실 아래로 떨어지면 손잡이를 내린다.",
+          "en": "Lowers the handle when frequency falls below the red thread."
+        },
+        "behavior": {
+          "ko": "주파수 바늘이 빨간 실 아래로 떨어지면 손잡이를 내린다.",
+          "en": "Lowers the handle when frequency falls below the red thread."
+        },
+        "stress": {
+          "ko": "빨간 실 아래의 주파수가 사흘을 넘기면 발전 손잡이가 수문국 창구의 담보 번호가 되는 것.",
+          "en": "That frequency below the red thread past three days would turn the generator handle into the water contract window's collateral number."
+        },
+        "relationship": {
+          "ko": "박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받고, 허다온의 시운전에 심야 주파수만 빌려 준다. 이강묵의 야간 편성이 민가 회로를 빼면 손잡이를 내린다.",
+          "en": "Under command to execute Park Soeon's bid results by circuit color, lending Heo Daon only the night frequency. Whenever I Gangmuk's night formations drained a civilian circuit, she lowered the handle."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "군수 회로를 내리고 부하표를 창구에 가져간 행동이 강점의 근거다. 발전 설비를 창안하거나 소유했다고 주장하지 않는다.",
+      "en": "Lowering military circuits and taking the load chart to the counter support the strengths. No generator invention or ownership is claimed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -817,7 +961,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 전력간선 발전운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 감사. 직함은 구로 전력간선 발전운전장. 주파수 최저선을 빨간 실로 계기판에 표시하고, 군수 회로는 민가 펌프 바늘이 안정된 뒤에만 올린다.",
     "일화": "주파수 바늘이 빨간 실 아래로 떨어지자 변주아는 군수 회로를 내리고 배급 창구에 부하표를 들고 갔다.",
     "관계": "박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받고, 허다온의 시운전에 심야 주파수만 빌려 준다. 이강묵의 야간 편성이 민가 회로를 빼면 손잡이를 내린다.",
@@ -825,7 +968,7 @@
     "공포": "빨간 실 아래의 주파수가 사흘을 넘기면 발전 손잡이가 수문국 창구의 담보 번호가 되는 것.",
     "개입": "민가 펌프 바늘이 안정될 회로를 빌려 오거나, 부하표에 숨은 군수 줄을 창구에 펼 수 있다."
   },
-  "biography": "주파수 바늘이 한 칸만 내려가도 말을 멈추고 차단기 손잡이를 잡는다. 군수 작업반의 심야 청을 부하표 바깥에 적지 않는다.\n\n- 소속: 규격맹\n- 생업: 발전 설비 운전\n- 품계: 감사\n- 직함: 구로 전력간선 발전운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 전력간선 발전운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 감사. 직함은 구로 전력간선 발전운전장. 주파수 최저선을 빨간 실로 계기판에 표시하고, 군수 회로는 민가 펌프 바늘이 안정된 뒤에만 올린다.\n\n**일화.** 주파수 바늘이 빨간 실 아래로 떨어지자 변주아는 군수 회로를 내리고 배급 창구에 부하표를 들고 갔다.\n\n**관계.** 박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받고, 허다온의 시운전에 심야 주파수만 빌려 준다. 이강묵의 야간 편성이 민가 회로를 빼면 손잡이를 내린다.\n\n**야망.** 주파수 최저선을 빨간 실로 나눠 공방과 쉘이 같은 밤에 멈추지 않게 하고, 군수 회로가 민가 펌프를 삼키지 못하게 한다.\n\n**공포.** 빨간 실 아래의 주파수가 사흘을 넘기면 발전 손잡이가 수문국 창구의 담보 번호가 되는 것.\n\n**개입.** 민가 펌프 바늘이 안정될 회로를 빌려 오거나, 부하표에 숨은 군수 줄을 창구에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 15 | 무력 −5 | 물질 50 | 공동 35 | 원칙 20 | 공개 25 | 자격 55 | 분산 30 | 변혁 25\n- 욕망: 갈망 0 | 독점 10 | 위험 30 | 과시 −25 | 지속 −5 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "주파수 바늘이 한 칸만 내려가도 말을 멈추고 차단기 손잡이를 잡는다. 군수 작업반의 심야 청을 부하표 바깥에 적지 않는다.\n\n- 소속: 규격맹\n- 생업: 발전 설비 운전\n- 품계: 감사\n- 직함: 구로 전력간선 발전운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 전력간선 발전운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 감사. 직함은 구로 전력간선 발전운전장. 주파수 최저선을 빨간 실로 계기판에 표시하고, 군수 회로는 민가 펌프 바늘이 안정된 뒤에만 올린다.\n\n**일화.** 주파수 바늘이 빨간 실 아래로 떨어지자 변주아는 군수 회로를 내리고 배급 창구에 부하표를 들고 갔다.\n\n**관계.** 박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받고, 허다온의 시운전에 심야 주파수만 빌려 준다. 이강묵의 야간 편성이 민가 회로를 빼면 손잡이를 내린다.\n\n**야망.** 주파수 최저선을 빨간 실로 나눠 공방과 쉘이 같은 밤에 멈추지 않게 하고, 군수 회로가 민가 펌프를 삼키지 못하게 한다.\n\n**공포.** 빨간 실 아래의 주파수가 사흘을 넘기면 발전 손잡이가 수문국 창구의 담보 번호가 되는 것.\n\n**개입.** 민가 펌프 바늘이 안정될 회로를 빌려 오거나, 부하표에 숨은 군수 줄을 창구에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 15 | 무력 −5 | 물질 50 | 공동 35 | 원칙 20 | 공개 25 | 자격 55 | 분산 30 | 변혁 25\n- 욕망: 갈망 0 | 독점 10 | 위험 30 | 과시 −25 | 지속 −5 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

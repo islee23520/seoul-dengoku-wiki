@@ -287,6 +287,150 @@
     "id": "K955",
     "personId": "person-0955"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "review",
+        "name": {
+          "ko": "훈련 보고 재검토",
+          "en": "Exercise report review"
+        },
+        "rating": 50
+      },
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "distrust-initial-reports",
+        "name": {
+          "ko": "최초 보고 불신",
+          "en": "Distrust Initial Reports"
+        },
+        "description": {
+          "ko": "백아래는 오류가 드러난 최초 보고를 그대로 확정하지 않는 신중함을 보인다.",
+          "en": "Baek Arae shows caution against treating an initial report as final once an error is revealed."
+        },
+        "behavior": {
+          "ko": "교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다.",
+          "en": "When the initial report in a bridge-attack drill proved wrong, he reopened the observation section."
+        },
+        "stress": {
+          "ko": "기록 오류가 당직 연속성을 흔들 우려가 있으면 최초 보고를 다시 확인하려 할 수 있다.",
+          "en": "If a record error threatens duty continuity, he may seek to check the initial report again."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 오류가 확인된 보고를 무조건 받아들이기보다 재검토 필요를 나누려 할 수 있다.",
+          "en": "With senior duty staff, he may share the need for review rather than unconditionally accept a report known to be wrong."
+        },
+        "effects": []
+      },
+      {
+        "id": "resume-observation",
+        "name": {
+          "ko": "참관 재개",
+          "en": "Resume Observation"
+        },
+        "description": {
+          "ko": "백아래는 잘못된 보고 뒤 관찰을 다시 열어 판단을 검토 가능하게 두는 성향을 보인다.",
+          "en": "Baek Arae shows a disposition to keep judgment open to review by resuming observation after a faulty report."
+        },
+        "behavior": {
+          "ko": "교량 습격 훈련의 보고 오류에 대응해 참관 칸을 재개방했다.",
+          "en": "He reopened the observation section in response to the bridge-attack drill’s reporting error."
+        },
+        "stress": {
+          "ko": "틀린 정보로 당직을 이어 갈 우려가 생기면 다시 살필 기회를 확보하려 할 수 있다.",
+          "en": "If he risks carrying duty forward on incorrect information, he may seek another opportunity to observe."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 참관을 다시 열었다는 사실과 재검토 필요를 함께 전하려 할 수 있다.",
+          "en": "During handover to senior duty staff, he may convey both the resumed observation and the need for review."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "틀린 최초 보고를 받아 참관 칸을 열었다. 검토와 경비 생업을 평가하며 사격·대규모 통솔은 발급하지 않는다.",
+      "en": "He reopened observer access after a wrong initial report. Review and guard livelihood are supported; marksmanship and large-unit command are not issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -710,7 +854,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -718,7 +861,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 10 | 물질 15 | 공동 30 | 원칙 15 | 공개 −20 | 자격 35 | 분산 25 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 20 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 10 | 물질 15 | 공동 30 | 원칙 15 | 공개 −20 | 자격 35 | 분산 25 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 20 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

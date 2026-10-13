@@ -287,6 +287,150 @@
     "id": "K939",
     "personId": "person-0939"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "brake",
+        "name": {
+          "ko": "제동 정비",
+          "en": "Brake repair"
+        },
+        "rating": 55
+      },
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "sustained-brake-repairs",
+        "name": {
+          "ko": "제동 수리 지속",
+          "en": "Sustained Brake Repairs"
+        },
+        "description": {
+          "ko": "윤름율은 다음 교대가 이어지도록 제동 수리를 끝까지 지속하는 성향을 보인다.",
+          "en": "Yun Reumyul shows a disposition to persist with brake repairs so the next shift can proceed."
+        },
+        "behavior": {
+          "ko": "고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다.",
+          "en": "He repaired the failed brakes through the night and preserved the next shift’s dispatch."
+        },
+        "stress": {
+          "ko": "제동 고장이 당직 연결을 위협하면 수리를 마무리하는 데 더 힘을 쏟을 수 있다.",
+          "en": "If brake failure threatens duty continuity, he may devote more effort to completing the repair."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 다음 배차를 가능하게 한 수리 사실을 분명히 이어 주려 할 수 있다.",
+          "en": "With senior duty staff, he may seek to clearly pass on the repair that enabled the next dispatch."
+        },
+        "effects": []
+      },
+      {
+        "id": "preserve-shift-dispatches",
+        "name": {
+          "ko": "교대 배차 보존",
+          "en": "Preserve Shift Dispatches"
+        },
+        "description": {
+          "ko": "윤름율은 현재의 수리를 다음 교대 배차의 연속성과 연결해 책임지는 성향을 보인다.",
+          "en": "Yun Reumyul shows a disposition to connect present repairs with responsibility for the next shift’s dispatch continuity."
+        },
+        "behavior": {
+          "ko": "밤새 제동을 고쳐 다음 교대의 배차가 이어지도록 했다.",
+          "en": "He repaired the brakes overnight so the next shift’s dispatch could continue."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 강국의 볼모로 만들까 우려되면 다음 배차를 지키는 데 더 무게를 둘 수 있다.",
+          "en": "If he fears a duty gap could leave passage hostage to a powerful state, he may place more weight on preserving the next dispatch."
+        },
+        "relationship": {
+          "ko": "선배 당직과의 인계에서는 다음 교대가 이어질 수 있는 수리 상태를 중요하게 전하려 할 수 있다.",
+          "en": "In handovers with senior duty staff, he may emphasize the repair status that allows the next shift to proceed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "밤새 제동을 고쳐 다음 교대를 지켰다. 정비 지속력이 근거이며 신체 손상이 없었다는 건강 판정은 아니다.",
+      "en": "She repaired brakes overnight to preserve the next shift. Repair persistence is supported; this is not a finding of injury-free health."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -722,7 +866,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -730,7 +873,7 @@
     "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −30 | 물질 40 | 공동 25 | 원칙 −5 | 공개 −15 | 자격 30 | 분산 10 | 변혁 5\n- 욕망: 갈망 35 | 독점 −5 | 위험 −30 | 과시 −10 | 지속 35 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 −30 | 물질 40 | 공동 25 | 원칙 −5 | 공개 −15 | 자격 30 | 분산 10 | 변혁 5\n- 욕망: 갈망 35 | 독점 −5 | 위험 −30 | 과시 −10 | 지속 35 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

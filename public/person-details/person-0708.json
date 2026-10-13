@@ -287,6 +287,142 @@
     "id": "K708",
     "personId": "person-0708"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "surgical-procedure",
+        "name": {
+          "ko": "수술 수행",
+          "en": "Surgical procedure"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "불빛을 바꿔 치료를 잇는다",
+          "en": "Changes the light and continues care"
+        },
+        "description": {
+          "ko": "정전 중 휴대전화 불빛으로 수술을 이어갔다. 실제 손의 수행은 인정하지만 완결된 전문의 경력이나 성과는 만들지 않는다.",
+          "en": "Phone light allowed surgery to continue during an outage. The performed work is recognized without inventing a full specialist career or outcomes."
+        },
+        "behavior": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "stress": {
+          "ko": "공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
+          "en": "Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: herb logistics merchant. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the herb logistics merchant duty post would stand empty and the League's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정전 중 휴대전화 불빛으로 수술을 이어갔다. 실제 손의 수행은 인정하지만 완결된 전문의 경력이나 성과는 만들지 않는다.",
+      "en": "Phone light allowed surgery to continue during an outage. The performed work is recognized without inventing a full specialist career or outcomes."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -730,7 +866,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -738,7 +873,7 @@
     "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 관리 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −50 | 물질 0 | 공동 20 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 15 | 지속 35 | 지향 유동 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 관리 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −50 | 물질 0 | 공동 20 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 15 | 지속 35 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

@@ -1,0 +1,17 @@
+{
+  "schema": "seoul-opening-profile-sample.v1",
+  "status": "owner-approved-starting-point",
+  "approvalRef": "question:call_FJbOXUAvGMWvQzKGjJtpB9GB",
+  "visibility": "editorial-only",
+  "abilityOrder": ["leadership", "strategy", "negotiation", "management", "insight", "learning", "prowess", "endurance"],
+  "people": [
+    { "personId": "K1007", "name": "김연규", "base": [17, 17, 15, 18, 17, 20, 8, 9], "skills": [{ "name": "기록 대조", "rating": 85.0 }, { "name": "조약 문서 분석", "rating": 80.0 }], "traits": [{ "name": "통합 구상", "ability": "strategy", "delta": 4 }, { "name": "기록에 충실함" }], "evidenceNote": "기록·조약·국가 연속성의 서사가 근거다. 전략 17은 soul 잠재 역량 제안이며 실제 지휘 경력으로 주장하지 않는다." },
+    { "personId": "K1003", "name": "조재표", "base": [18, 17, 12, 11, 17, 13, 20, 19], "skills": [{ "name": "호위 지휘", "rating": 90.0 }, { "name": "철수로 확보", "rating": 90.0 }, { "name": "근접전", "rating": 95.0 }], "traits": [{ "name": "탁월한 전투원", "ability": "prowess", "delta": 8 }, { "name": "철수선 중시" }], "evidenceNote": "기존 강자 지정과 현장 호위 지휘를 반영한다. 민간인이 남은 문을 닫으라는 명령과 보호 원칙의 충돌을 보존한다." },
+    { "personId": "K998", "name": "이일섭", "base": [13, 17, 14, 19, 16, 18, 8, 12], "skills": [{ "name": "재고 관리", "rating": 85.0 }, { "name": "배급 계획", "rating": 80.0 }], "traits": [{ "name": "장기 준비", "ability": "management", "delta": 4 }, { "name": "결정 지연" }], "evidenceNote": "재고 재확인·종자 대금 제안·겨울 배급 계획을 반영한다. 신중함과 느린 결정을 모두 남긴다." },
+    { "personId": "K1008", "name": "민웅기", "base": [16, 16, 19, 19, 18, 20, 13, 12], "skills": [{ "name": "통신 정비", "rating": 90.0 }, { "name": "주민 교섭", "rating": 85.0 }, { "name": "유도", "rating": 65.0 }], "traits": [{ "name": "현장 조정가", "ability": "negotiation", "delta": 4 }, { "name": "생존자 기록 중시" }], "evidenceNote": "통신 정비·주민 협의·생존자 기록·농업 물자 배분을 반영한다. 유도를 군사 지휘 경력으로 확대하지 않는다." },
+    { "personId": "K1009", "name": "신종목", "base": [18, 18, 14, 14, 20, 17, 19, 17], "skills": [{ "name": "정찰", "rating": 95.0 }, { "name": "호위", "rating": 90.0 }, { "name": "총검 훈련", "rating": 85.0 }, { "name": "무전 운용", "rating": 80.0 }], "traits": [{ "name": "정보 판단에 능함", "ability": "insight", "delta": 5 }, { "name": "민간인 보호" }], "evidenceNote": "공작원 경력·피난민 귀환·호위 탐사·무전·주민 동의·돌봄을 반영한다. 모티브에서 추가 복무나 장비를 만들지 않는다." },
+    { "personId": "K1004", "name": "이연", "base": [14, 14, 17, 12, 19, 18, 17, 15], "skills": [{ "name": "전령", "rating": 90.0 }, { "name": "정찰", "rating": 85.0 }, { "name": "호위", "rating": 80.0 }], "traits": [{ "name": "기민한 수행자", "ability": "insight", "delta": 3 }, { "name": "독립적 판단" }, { "name": "빼어난 외모", "effectProposal": "관계 반응 중심. 모든 교섭에 자동 보정하지 않는다." }], "evidenceNote": "명령 해석·전령·정찰·호위와 안전 우선·독립 판단을 반영한다. 외모는 전략·학습·통찰의 자동 근거가 아니다." }
+  ],
+  "reviewQuestions": ["six_rating_sample", "trait_bonus_sample"],
+  "pending": "소유자가 기본·숙련 견본의 출발점과 특성 보정을 채택했다. 약한 근거는 보강하고 전원 개별 배정 기준으로 사용한다. 특성의 행동·스트레스·관계 조건과 판정·성장 산식은 별도 설계다."
+}

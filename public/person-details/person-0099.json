@@ -394,6 +394,150 @@
     "id": "K098",
     "personId": "person-0099"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "treatment",
+        "name": {
+          "ko": "정비조 부상 치료",
+          "en": "Treatment of repair-team injuries"
+        },
+        "rating": 55
+      },
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "link-care-to-shift-safety",
+        "name": {
+          "ko": "교대 안전에 진료 연동",
+          "en": "Link Care to Shift Safety"
+        },
+        "description": {
+          "ko": "진모래는 펌프실 진료를 교대 상태와 현장 안전 확인에 연결한다.",
+          "en": "Jin Morae links pump-room care to shift conditions and on-site safety checks."
+        },
+        "behavior": {
+          "ko": "펌프실 진동이 바뀌면 진료를 중단하고 교대 명부 공유와 야간 이중 출입 확인을 따른다.",
+          "en": "Jin pauses care when pump-room vibration changes and follows roster sharing and dual nighttime entry checks."
+        },
+        "stress": {
+          "ko": "점검 공백이 외부군의 의무소 주둔 명분이 될 우려가 커지면 교대와 출입 확인에 더 신중해질 수 있다.",
+          "en": "If inspection gaps risk justifying outside occupation of the medical station, Jin may become more cautious about shift and entry verification."
+        },
+        "relationship": {
+          "ko": "김보람의 야간 봉쇄를 의무 쪽에서 지원하되 진료도 펌프실 안전 조건에 맞춰 조정할 수 있다.",
+          "en": "Jin may support Kim Boram's night closures medically while adjusting care to pump-room safety conditions."
+        },
+        "effects": []
+      },
+      {
+        "id": "on-site-injuries-first",
+        "name": {
+          "ko": "현장 부상 우선",
+          "en": "On-Site Injuries First"
+        },
+        "description": {
+          "ko": "진모래는 기동 정비조의 현장 부상을 우선 치료 대상으로 삼는다.",
+          "en": "Jin Morae gives priority to the mobile maintenance team's on-site injuries."
+        },
+        "behavior": {
+          "ko": "최나래의 기동 정비조 부상을 우선 치료하며 펌프 노동자의 방역 주기를 수비 절차와 연결하려 한다.",
+          "en": "Jin prioritizes injuries in Choe Narae's team and seeks to link pump workers' disease-prevention cycles with guard procedures."
+        },
+        "stress": {
+          "ko": "외부 보호군이 의무소에 들어올 우려가 커지면 현장 노동자와 정비조의 진료 접근을 더 중시할 수 있다.",
+          "en": "If outside protection forces risk entering the medical station, Jin may place greater weight on care access for local workers and maintenance staff."
+        },
+        "relationship": {
+          "ko": "최나래와는 부상 치료로 협력하되 김보람의 봉쇄와 진료 접근을 함께 고려할 필요가 생길 수 있다.",
+          "en": "Jin may cooperate with Choe Narae through injury care while needing to balance Kim Boram's closures with access to treatment."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정비조 부상을 치료하고 차륜 결함을 확인한 일화가 있다. 원문 생업과 진료 행동을 구분하며 외과·의약 제조 전체를 부여하지 않는다.",
+      "en": "She treats repair-team injuries and has a wheel-defect episode. Livelihood and care actions are kept distinct; surgery and drug manufacture are not added."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -790,7 +934,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프실 의무원 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 뚝섬 펌프실 의무원. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프실 의무원 자리의 서명이 장부에 올랐다.",
     "관계": "김보람의 야간 봉쇄를 의무 쪽에서 받치고, 최나래의 기동 정비조 부상을 우선 치료하며, 임하준 실종을 자신의 당직 실패로 여긴다.",
@@ -798,7 +941,7 @@
     "공포": "암사 보호군이 점검 공백을 구원으로 위장해 펌프실 의무소에 주둔하는 것.",
     "개입": "외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 의무소를 다시 열 수 있다."
   },
-  "biography": "펌프실의 진동이 바뀌면 진료를 중단시키고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다. 신의가 강하고 직선적이다.\n\n- 소속: 명부교회\n- 생업: 차륜 결함 점검\n- 품계: 교사\n- 직함: 뚝섬 펌프실 의무원\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프실 의무원 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 뚝섬 펌프실 의무원. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프실 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 야간 봉쇄를 의무 쪽에서 받치고, 최나래의 기동 정비조 부상을 우선 치료하며, 임하준 실종을 자신의 당직 실패로 여긴다.\n\n**야망.** 정수 펌프 노동자의 방역 주기를 수비대 봉쇄권과 함께 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 암사 보호군이 점검 공백을 구원으로 위장해 펌프실 의무소에 주둔하는 것.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 의무소를 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −30 | 물질 20 | 공동 35 | 원칙 25 | 공개 −25 | 자격 50 | 분산 20 | 변혁 5\n- 욕망: 갈망 45 | 독점 −15 | 위험 30 | 과시 −5 | 지속 −10 | 지향 이성 | 결합 없음\n:::",
+  "biography": "펌프실의 진동이 바뀌면 진료를 중단시키고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다. 신의가 강하고 직선적이다.\n\n- 소속: 명부교회\n- 생업: 차륜 결함 점검\n- 품계: 교사\n- 직함: 뚝섬 펌프실 의무원\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프실 의무원 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 뚝섬 펌프실 의무원. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프실 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 야간 봉쇄를 의무 쪽에서 받치고, 최나래의 기동 정비조 부상을 우선 치료하며, 임하준 실종을 자신의 당직 실패로 여긴다.\n\n**야망.** 정수 펌프 노동자의 방역 주기를 수비대 봉쇄권과 함께 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 암사 보호군이 점검 공백을 구원으로 위장해 펌프실 의무소에 주둔하는 것.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 의무소를 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −30 | 물질 20 | 공동 35 | 원칙 25 | 공개 −25 | 자격 50 | 분산 20 | 변혁 5\n- 욕망: 갈망 45 | 독점 −15 | 위험 30 | 과시 −5 | 지속 −10 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

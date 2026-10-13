@@ -286,6 +286,150 @@
     "id": "K203",
     "personId": "person-0204"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 10,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "ambush-trace-reading",
+        "name": {
+          "ko": "매복 흔적 판독",
+          "en": "Ambush trace reading"
+        },
+        "rating": 70
+      },
+      {
+        "id": "dock-patrol",
+        "name": {
+          "ko": "부두 순찰",
+          "en": "Dock patrol"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k203-disposition",
+        "name": {
+          "ko": "출발까지 경로 비공개",
+          "en": "Routes private until departure"
+        },
+        "description": {
+          "ko": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다. 신의가 강하고 출발 직전까지 경로를 입 밖에 내지 않는다.",
+          "en": "He read unauthorized unloading from the quay rope sounds and struck out that same day any member who had opened freight mid-convoy. Strong of faith, he spoke the route aloud only just before departure."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
+          "en": "Office. Rank: lay instructor. Title: market vigilante patrol squad leader. He announced routes and arms only just before departure, and when arrival tonnage differed from departure he shaved the whole squad's rations."
+        },
+        "stress": {
+          "ko": "공포. 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
+          "en": "Fear. That a convoy train would carry munitions and the neutral market's legitimacy would fall in one day."
+        },
+        "relationship": {
+          "ko": "관계. 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.",
+          "en": "Relations. Under command to execute Sin Taesan's convoy contract at the quay, he matched Seol Choa's station broadcast to departure hours and reviewed Jang Sehwa's joint convoy draft against field standards."
+        },
+        "effects": []
+      },
+      {
+        "id": "k203-choice",
+        "name": {
+          "ko": "검사에 엄격함",
+          "en": "Strict inspection"
+        },
+        "description": {
+          "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the market vigilante patrol squad leader post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.",
+          "en": "Relations. Under command to execute Sin Taesan's convoy contract at the quay, he matched Seol Choa's station broadcast to departure hours and reviewed Jang Sehwa's joint convoy draft against field standards."
+        },
+        "stress": {
+          "ko": "공포. 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
+          "en": "Fear. That a convoy train would carry munitions and the neutral market's legitimacy would fall in one day."
+        },
+        "relationship": {
+          "ko": "관계. 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.",
+          "en": "Relations. Under command to execute Sin Taesan's convoy contract at the quay, he matched Seol Choa's station broadcast to departure hours and reviewed Jang Sehwa's joint convoy draft against field standards."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "초계에서 매복 흔적을 읽어 피해를 막았다. 호송 집행과 출항 방송 조율이 있지만 대군 지휘나 전투 승리로 확대하지 않았다.",
+      "en": "Reads ambush traces to prevent harm. Convoy enforcement and sailing coordination do not establish army command or battle victory."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -734,7 +878,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.",
     "관계": "신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.",
@@ -742,7 +885,7 @@
     "공포": "호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
     "개입": "밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다."
   },
-  "biography": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다. 신의가 강하고 출발 직전까지 경로를 입 밖에 내지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 시장 순찰·화물 검사\n- 직함: 시장 자경 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.\n\n**야망.** 노량진 자경과 호송선단을 공동호송의 현장 뼈대로 키워 강국의 보호비를 시장 순찰로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 5 | 물질 55 | 공동 −10 | 원칙 −30 | 공개 15 | 자격 0 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −30 | 위험 −20 | 과시 5 | 지속 10 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다. 신의가 강하고 출발 직전까지 경로를 입 밖에 내지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 시장 순찰·화물 검사\n- 직함: 시장 자경 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.\n\n**야망.** 노량진 자경과 호송선단을 공동호송의 현장 뼈대로 키워 강국의 보호비를 시장 순찰로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 5 | 물질 55 | 공동 −10 | 원칙 −30 | 공개 15 | 자격 0 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −30 | 위험 −20 | 과시 5 | 지속 10 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],

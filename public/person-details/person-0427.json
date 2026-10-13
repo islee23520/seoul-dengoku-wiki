@@ -394,6 +394,150 @@
     "id": "K427",
     "personId": "person-0427"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 55
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-unauthorized-intruders",
+        "name": {
+          "ko": "무단 침입자 저지",
+          "en": "Stop Unauthorized Intruders"
+        },
+        "description": {
+          "ko": "정예은은 확인된 야간 무단 도하 사례에서 경계 침범을 넘기지 않은 태도를 보였다.",
+          "en": "Jeong Yeeun showed unwillingness to overlook a boundary breach in the documented nighttime unauthorized-crossing incident."
+        },
+        "behavior": {
+          "ko": "야간 무단 도하자를 붙잡은 뒤 경비 암호패를 교체했다.",
+          "en": "They caught an unauthorized nighttime crosser and then replaced the security code token."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 외부 세력의 볼모로 만들 우려가 있으면 경계의 연속성을 더 중시할 수 있다.",
+          "en": "If a duty gap threatens to leave passage hostage to outside powers, they may place greater weight on continuous watch."
+        },
+        "relationship": {
+          "ko": "선배 당직과의 인수인계에서는 확인한 침입과 교체한 암호패를 기록으로 전달하려 할 수 있다.",
+          "en": "In handovers with the senior duty holder, they may seek to document the confirmed intrusion and replaced code token."
+        },
+        "effects": []
+      },
+      {
+        "id": "replace-code-tokens-immediately",
+        "name": {
+          "ko": "암호패 즉시 교체",
+          "en": "Replace Code Tokens Immediately"
+        },
+        "description": {
+          "ko": "정예은은 확인된 침입 뒤 기존 경비 암호패를 그대로 두지 않는 대응을 보였다.",
+          "en": "Jeong Yeeun showed a response of not leaving the existing security code token unchanged after a confirmed intrusion."
+        },
+        "behavior": {
+          "ko": "무단 도하자를 붙잡은 사건에서 경비 암호패를 갈아 후속 경계 조치를 취했다.",
+          "en": "In the unauthorized-crossing incident, they replaced the security code token as a follow-up security measure."
+        },
+        "stress": {
+          "ko": "통행이 당직 공백 때문에 외부 통제에 놓일 우려가 커지면 암호패 갱신과 인계 누락을 더 경계할 수 있다.",
+          "en": "If duty gaps risk placing passage under outside control, they may be more wary of missed token updates and handovers."
+        },
+        "relationship": {
+          "ko": "선배 당직에게 새 암호패와 관련 기록을 자기 직위의 인계 범위 안에서 정확히 넘기려 할 수 있다.",
+          "en": "They may seek to pass the new token and related records accurately to the senior duty holder within their role's handover limits."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "야간 무단 도하자를 붙잡고 암호패를 바꿨다. 경비 수행은 확인되지만 부대 지휘나 무장 보유는 근거가 없다.",
+      "en": "She caught an unauthorized night crosser and replaced passes. Guard work is supported, not unit command or weapon ownership."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -817,7 +961,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -825,7 +968,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 5 | 물질 20 | 공동 35 | 원칙 5 | 공개 −15 | 자격 25 | 분산 15 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −30 | 위험 −35 | 과시 −5 | 지속 −10 | 지향 유동 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 5 | 물질 20 | 공동 35 | 원칙 5 | 공개 −15 | 자격 25 | 분산 15 | 변혁 −10\n- 욕망: 갈망 0 | 독점 −30 | 위험 −35 | 과시 −5 | 지속 −10 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-04"
   ],

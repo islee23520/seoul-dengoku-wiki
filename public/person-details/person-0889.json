@@ -393,6 +393,142 @@
     "id": "K889",
     "personId": "person-0889"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k889-guard-visit-recording",
+        "name": {
+          "ko": "경비 방문 기록",
+          "en": "Guard-visit recording"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k889-action-priority",
+        "name": {
+          "ko": "명단을 잠근다",
+          "en": "Lock the names away"
+        },
+        "description": {
+          "ko": "경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.",
+          "en": "The guard force walks into the workshop and demands the list of restoration-service registrants. Cha Donghwan locks the list away with the records-duty key, copies into the registry record the hour the guard came and how many came, and sends it to Gang Minseo."
+        },
+        "behavior": {
+          "ko": "경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.",
+          "en": "The guard force walks into the workshop and demands the list of restoration-service registrants. Cha Donghwan locks the list away with the records-duty key, copies into the registry record the hour the guard came and how many came, and sends it to Gang Minseo."
+        },
+        "stress": {
+          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
+          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k889-bounded-handover",
+        "name": {
+          "ko": "기록으로 잇는 당직",
+          "en": "Duty linked by records"
+        },
+        "description": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "behavior": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "stress": {
+          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
+          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
+      "en": "The guard force walks into the workshop and demands the list of restoration-service registrants. Cha Donghwan locks the list away with the records-duty key, copies into the registry record the hour the guard came and how many came, and sends it to Gang Minseo. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -742,7 +878,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -750,7 +885,7 @@
     "공포": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 0 | 무력 −5 | 물질 45 | 공동 50 | 원칙 30 | 공개 35 | 자격 50 | 분산 30 | 변혁 20\n- 욕망: 갈망 −10 | 독점 −15 | 위험 −35 | 과시 0 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 0 | 무력 −5 | 물질 45 | 공동 50 | 원칙 30 | 공개 35 | 자격 50 | 분산 30 | 변혁 20\n- 욕망: 갈망 −10 | 독점 −15 | 위험 −35 | 과시 0 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

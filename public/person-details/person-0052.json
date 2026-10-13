@@ -291,6 +291,150 @@
     "id": "K052",
     "personId": "person-0052"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k052-reward-ledger",
+        "name": {
+          "ko": "보상 원장 기록",
+          "en": "Reward-ledger recording"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k052-witness-confrontation",
+        "name": {
+          "ko": "증언 대질",
+          "en": "Witness confrontation"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k052-temporary-reward",
+        "name": {
+          "ko": "한시 보상",
+          "en": "Temporary rewards"
+        },
+        "description": {
+          "ko": "보상을 세습 관직으로 본문에 올리지 않는다.",
+          "en": "Does not enter hereditary offices as rewards in the main text."
+        },
+        "behavior": {
+          "ko": "보상을 세습 관직으로 본문에 올리지 않는다.",
+          "en": "Does not enter hereditary offices as rewards in the main text."
+        },
+        "stress": {
+          "ko": "과도한 세습권이 길드 평의회를 쪼개고, 그 공백을 경비대가 군수독재로 메우는 것.",
+          "en": "That excessive hereditary rights would split the council, and the guards would fill that gap with a munitions dictatorship."
+        },
+        "relationship": {
+          "ko": "정시우의 원로 권한을 보상과 분리하고, 장우석의 규격 원장과 배급 칸을 맞추며, 한소미의 공방 보상 요구를 참고하되 세습은 거절한다.",
+          "en": "Separating Jeong Siwoo's elder authority from compensation, matching ration columns with Jang Wooseok's standards ledger, and consulting Han Somi's workshop compensation demands while refusing heredity."
+        },
+        "effects": []
+      },
+      {
+        "id": "k052-three-party-seal",
+        "name": {
+          "ko": "삼자의 날인",
+          "en": "Three-party seal"
+        },
+        "description": {
+          "ko": "노동·건물·경비의 동시 날인을 요구한다.",
+          "en": "Requires labor, building, and guard seals together."
+        },
+        "behavior": {
+          "ko": "노동·건물·경비의 동시 날인을 요구한다.",
+          "en": "Requires labor, building, and guard seals together."
+        },
+        "stress": {
+          "ko": "과도한 세습권이 길드 평의회를 쪼개고, 그 공백을 경비대가 군수독재로 메우는 것.",
+          "en": "That excessive hereditary rights would split the council, and the guards would fill that gap with a munitions dictatorship."
+        },
+        "relationship": {
+          "ko": "정시우의 원로 권한을 보상과 분리하고, 장우석의 규격 원장과 배급 칸을 맞추며, 한소미의 공방 보상 요구를 참고하되 세습은 거절한다.",
+          "en": "Separating Jeong Siwoo's elder authority from compensation, matching ration columns with Jang Wooseok's standards ledger, and consulting Han Somi's workshop compensation demands while refusing heredity."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "공로·물자 분리 기록과 대질이 근거다. 원로 권한과 보상을 나누지만 세습 폐지 완료를 주장하지 않는다.",
+      "en": "Separate merit and material records and witness confrontation support the profile. Distinguishing elder powers from rewards does not establish completed abolition of heredity."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -863,7 +1007,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 공신 보상 원장 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 공신 보상 원장 서기. 보상 원장은 노동·건물·경비 삼자가 동시에 날인해야 유효하고, 세습 문구는 난외에만 적힌 채 본문에 올리지 않는다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 공신 보상 원장 서기 자리의 서명이 장부에 올랐다.",
     "관계": "정시우의 원로 권한을 보상과 분리하고, 장우석의 규격 원장과 배급 칸을 맞추며, 한소미의 공방 보상 요구를 참고하되 세습은 거절한다.",
@@ -871,7 +1014,7 @@
     "공포": "과도한 세습권이 길드 평의회를 쪼개고, 그 공백을 경비대가 군수독재로 메우는 것.",
     "개입": "숙련 점수 장부를 가져와 한시 배급안을 통과시키거나, 숨겨진 세습 난외를 폭로해 원장 서기를 끌어내릴 수 있다."
   },
-  "biography": "창건 직후의 배급권 요구를 공로와 물자로 나눠 적고, 세습 칸이 비어 있으면 줄을 그어 지운다. 보상 잔치를 일의 끝으로 보지 않는다.\n\n- 소속: 규격맹\n- 생업: 보상 원장 기록\n- 품계: 조합원\n- 직함: 공신 보상 원장 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 공신 보상 원장 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 공신 보상 원장 서기. 보상 원장은 노동·건물·경비 삼자가 동시에 날인해야 유효하고, 세습 문구는 난외에만 적힌 채 본문에 올리지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 공신 보상 원장 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우의 원로 권한을 보상과 분리하고, 장우석의 규격 원장과 배급 칸을 맞추며, 한소미의 공방 보상 요구를 참고하되 세습은 거절한다.\n\n**야망.** 공신 보상을 관직이 아니라 숙련 점수와 한시 배급으로만 남게 해, 규격맹이 창건자 친위국이 되지 않게 한다.\n\n**공포.** 과도한 세습권이 길드 평의회를 쪼개고, 그 공백을 경비대가 군수독재로 메우는 것.\n\n**개입.** 숙련 점수 장부를 가져와 한시 배급안을 통과시키거나, 숨겨진 세습 난외를 폭로해 원장 서기를 끌어내릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 15 | 무력 −5 | 물질 45 | 공동 30 | 원칙 35 | 공개 40 | 자격 45 | 분산 20 | 변혁 20\n- 욕망: 갈망 30 | 독점 −25 | 위험 −30 | 과시 −15 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "창건 직후의 배급권 요구를 공로와 물자로 나눠 적고, 세습 칸이 비어 있으면 줄을 그어 지운다. 보상 잔치를 일의 끝으로 보지 않는다.\n\n- 소속: 규격맹\n- 생업: 보상 원장 기록\n- 품계: 조합원\n- 직함: 공신 보상 원장 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 공신 보상 원장 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 공신 보상 원장 서기. 보상 원장은 노동·건물·경비 삼자가 동시에 날인해야 유효하고, 세습 문구는 난외에만 적힌 채 본문에 올리지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 공신 보상 원장 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우의 원로 권한을 보상과 분리하고, 장우석의 규격 원장과 배급 칸을 맞추며, 한소미의 공방 보상 요구를 참고하되 세습은 거절한다.\n\n**야망.** 공신 보상을 관직이 아니라 숙련 점수와 한시 배급으로만 남게 해, 규격맹이 창건자 친위국이 되지 않게 한다.\n\n**공포.** 과도한 세습권이 길드 평의회를 쪼개고, 그 공백을 경비대가 군수독재로 메우는 것.\n\n**개입.** 숙련 점수 장부를 가져와 한시 배급안을 통과시키거나, 숨겨진 세습 난외를 폭로해 원장 서기를 끌어내릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 15 | 무력 −5 | 물질 45 | 공동 30 | 원칙 35 | 공개 40 | 자격 45 | 분산 20 | 변혁 20\n- 욕망: 갈망 30 | 독점 −25 | 위험 −30 | 과시 −15 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-02"
   ],

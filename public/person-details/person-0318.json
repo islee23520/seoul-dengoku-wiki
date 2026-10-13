@@ -285,6 +285,142 @@
     "id": "K317",
     "personId": "person-0318"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "k317-agreement-transcription-review",
+        "name": {
+          "ko": "약정 정서 대조",
+          "en": "Agreement transcription review"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k317-priority",
+        "name": {
+          "ko": "빈 조항에 멈춤",
+          "en": "Stops at missing clauses"
+        },
+        "description": {
+          "ko": "초나루는 인장 하나와 빈 조항 번호를 보고 함을 잠근 뒤 다른 서명 원장과 대조했다. 성립하지 않은 초안의 효력을 만들지 않는다.",
+          "en": "Cho Naru locked a draft with one seal and a blank clause, then compared another signature ledger. No validity is granted to the incomplete draft."
+        },
+        "behavior": {
+          "ko": "서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.",
+          "en": "Office. Rank: convoy hand. Title: joint convoy treaty signing clerk. He wrote the signing hour and the witness names on one line and locked the box with fewer than two stamps."
+        },
+        "stress": {
+          "ko": "위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.",
+          "en": "Fear. That one forged fair copy would go out first and he would become the procession of partition."
+        },
+        "relationship": {
+          "ko": "장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.",
+          "en": "Relations. Drafted Jang Sehwa's joint convoy plan and matched the articles with Geun Juha's Suseo signature ledger. Unfolded Jung Yura's Lesser States Council notice only under seal."
+        },
+        "effects": []
+      },
+      {
+        "id": "k317-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.",
+          "en": "Office. Rank: convoy hand. Title: joint convoy treaty signing clerk. He wrote the signing hour and the witness names on one line and locked the box with fewer than two stamps."
+        },
+        "stress": {
+          "ko": "공포. 위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.",
+          "en": "Fear. That one forged fair copy would go out first and he would become the procession of partition."
+        },
+        "relationship": {
+          "ko": "관계. 장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.",
+          "en": "Relations. Drafted Jang Sehwa's joint convoy plan and matched the articles with Geun Juha's Suseo signature ledger. Unfolded Jung Yura's Lesser States Council notice only under seal."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "초나루는 인장 하나와 빈 조항 번호를 보고 함을 잠근 뒤 다른 서명 원장과 대조했다. 성립하지 않은 초안의 효력을 만들지 않는다.",
+      "en": "Cho Naru locked a draft with one seal and a blank clause, then compared another signature ledger. No validity is granted to the incomplete draft."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -686,7 +822,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 중립 호송 약정 서명 서기 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.",
     "일화": "장세화의 중립 호송 초안 정서본이 인장 하나만 받고 조항 번호 한 칸을 공란으로 남긴 채 돌아온다. 초나루는 붓을 내려놓고 함을 잠근 뒤, 근주하의 수서 서명 원장을 가져와 빈 번호를 대조한다.",
     "관계": "장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.",
@@ -694,7 +829,7 @@
     "공포": "위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.",
     "개입": "잠긴 쪽지를 폭로하거나, 서명 증인을 호송해 서기 원장을 지킬 수 있다."
   },
-  "biography": "먹물이 마르기 전의 구두 합의를 서기로 치지 않는다. 조용하나 조항 번호가 비면 붓을 내려놓는다.\n\n- 생업: 중립 호송 서명·증인 대조\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 중립 호송 약정 서명 서기\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 중립 호송 약정 서명 서기 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.\n\n**일화.** 장세화의 중립 호송 초안 정서본이 인장 하나만 받고 조항 번호 한 칸을 공란으로 남긴 채 돌아온다. 초나루는 붓을 내려놓고 함을 잠근 뒤, 근주하의 수서 서명 원장을 가져와 빈 번호를 대조한다.\n\n**관계.** 장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.\n\n**야망.** 중립 호송 문안을 신내 서기 원장에만 유효하게 남겨 노선 면허 밖의 호송료가 서명란을 사지 못하게 한다.\n\n**공포.** 위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.\n\n**개입.** 잠긴 쪽지를 폭로하거나, 서명 증인을 호송해 서기 원장을 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −30 | 물질 −5 | 공동 30 | 원칙 0 | 공개 25 | 자격 20 | 분산 30 | 변혁 5\n- 욕망: 갈망 25 | 독점 10 | 위험 −30 | 과시 −15 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "먹물이 마르기 전의 구두 합의를 서기로 치지 않는다. 조용하나 조항 번호가 비면 붓을 내려놓는다.\n\n- 생업: 중립 호송 서명·증인 대조\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 중립 호송 약정 서명 서기\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 중립 호송 약정 서명 서기 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 호송원. 직함은 중립 호송 약정 서명 서기. 서명 시각과 증인 이름을 같은 줄에 적고, 인장이 둘 미만이면 함을 잠근다.\n\n**일화.** 장세화의 중립 호송 초안 정서본이 인장 하나만 받고 조항 번호 한 칸을 공란으로 남긴 채 돌아온다. 초나루는 붓을 내려놓고 함을 잠근 뒤, 근주하의 수서 서명 원장을 가져와 빈 번호를 대조한다.\n\n**관계.** 장세화의 중립 호송 초안을 정서하고, 근주하의 수서 서명 원장과 조항을 맞춘다. 정유라의 회의 통지를 봉인 상태로만 펼친다.\n\n**야망.** 중립 호송 문안을 신내 서기 원장에만 유효하게 남겨 노선 면허 밖의 호송료가 서명란을 사지 못하게 한다.\n\n**공포.** 위조 정서본 한 장이 먼저 나가 자신이 노선 분할의 들러리가 되는 것.\n\n**개입.** 잠긴 쪽지를 폭로하거나, 서명 증인을 호송해 서기 원장을 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −30 | 물질 −5 | 공동 30 | 원칙 0 | 공개 25 | 자격 20 | 분산 30 | 변혁 5\n- 욕망: 갈망 25 | 독점 10 | 위험 −30 | 과시 −15 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-12"
   ],

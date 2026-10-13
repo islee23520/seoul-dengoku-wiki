@@ -393,6 +393,142 @@
     "id": "K129",
     "personId": "person-0130"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k129-bridge-sampling",
+        "name": {
+          "ko": "교량 채수 조사",
+          "en": "Bridge water sampling"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k129-choice",
+        "name": {
+          "ko": "적대 판정 유보",
+          "en": "Withholds hostile attribution"
+        },
+        "description": {
+          "ko": "교량 아래 상수관 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.",
+          "en": "He read time from the water temperature under the bridge and took no pride in a manhole missing from the map. He counted a late report a fault."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 동부 교량 하부 탐사원 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, when the first report of a bridge-raid exercise proved wrong, he reopened the observation column. By this deed the signature of the eastern bridge underside surveyor post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 탐사 경로가 군사 비밀로 봉인되어 상수관 지도가 보호권의 침투로로 팔리는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the survey routes would be sealed as military secrets and the water-main maps would be sold as the protection zone's infiltration routes. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고, 고서준의 능선 정찰과 통행 좌표를 경쟁하며, 서라온의 공개 지도에 우회 점선을 계약으로 보낸다.",
+          "en": "Relations. Under command to hand surveys to I Yunseo's blockade clock, competing with Go Seojun's ridge reconnaissance over passage coordinates, and sending bypass dotted lines to Seo Raon's public map by contract."
+        },
+        "effects": []
+      },
+      {
+        "id": "k129-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 동부 교량 하부 탐사원. 채수와 진동을 같은 원장에 남기고, 파손 구간은 이윤서와 정소율이 동시에 서명해야 적대행위로 표시한다.",
+          "en": "Office. Rank: sergeant. Title: eastern bridge underside surveyor. He left intake and vibration in the same ledger, and a damaged section was marked hostile action only when I Yunseo and Jeong Soyul signed together."
+        },
+        "behavior": {
+          "ko": "관직. 품계 병장. 직함은 동부 교량 하부 탐사원. 채수와 진동을 같은 원장에 남기고, 파손 구간은 이윤서와 정소율이 동시에 서명해야 적대행위로 표시한다.",
+          "en": "Office. Rank: sergeant. Title: eastern bridge underside surveyor. He left intake and vibration in the same ledger, and a damaged section was marked hostile action only when I Yunseo and Jeong Soyul signed together."
+        },
+        "stress": {
+          "ko": "공포. 탐사 경로가 군사 비밀로 봉인되어 상수관 지도가 보호권의 침투로로 팔리는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the survey routes would be sealed as military secrets and the water-main maps would be sold as the protection zone's infiltration routes. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고, 고서준의 능선 정찰과 통행 좌표를 경쟁하며, 서라온의 공개 지도에 우회 점선을 계약으로 보낸다.",
+          "en": "Relations. Under command to hand surveys to I Yunseo's blockade clock, competing with Go Seojun's ridge reconnaissance over passage coordinates, and sending bypass dotted lines to Seo Raon's public map by contract."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 동부 교량 하부 탐사원 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125, when the first report of a bridge-raid exercise proved wrong, he reopened the observation column. By this deed the signature of the eastern bridge underside surveyor post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -828,7 +964,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 교량 하부 탐사원 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 병장. 직함은 동부 교량 하부 탐사원. 채수와 진동을 같은 원장에 남기고, 파손 구간은 이윤서와 정소율이 동시에 서명해야 적대행위로 표시한다.",
     "일화": "2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 동부 교량 하부 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고, 고서준의 능선 정찰과 통행 좌표를 경쟁하며, 서라온의 공개 지도에 우회 점선을 계약으로 보낸다.",
@@ -836,7 +971,7 @@
     "공포": "탐사 경로가 군사 비밀로 봉인되어 상수관 지도가 보호권의 침투로로 팔리는 것.",
     "개입": "잠수 호위를 맡아 파손 원인을 밝히거나, 비밀 침투로 표시를 폭로할 수 있다."
   },
-  "biography": "교량 아래 상수관 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 동방사\n- 생업: 교량 하부 채수·진동 조사\n- 품계: 병장\n- 직함: 동부 교량 하부 탐사원\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 교량 하부 탐사원 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 병장. 직함은 동부 교량 하부 탐사원. 채수와 진동을 같은 원장에 남기고, 파손 구간은 이윤서와 정소율이 동시에 서명해야 적대행위로 표시한다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 동부 교량 하부 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고, 고서준의 능선 정찰과 통행 좌표를 경쟁하며, 서라온의 공개 지도에 우회 점선을 계약으로 보낸다.\n\n**야망.** 동부 한강 교량과 외곽 진입로의 침수 우회를 한 장의 공개 해도로 그려 봉쇄대가 오인 사격을 멈추게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 상수관 지도가 보호권의 침투로로 팔리는 것.\n\n**개입.** 잠수 호위를 맡아 파손 원인을 밝히거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −30 | 무력 50 | 물질 20 | 공동 25 | 원칙 −10 | 공개 −45 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 −5 | 독점 20 | 위험 0 | 과시 −5 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "교량 아래 상수관 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 동방사\n- 생업: 교량 하부 채수·진동 조사\n- 품계: 병장\n- 직함: 동부 교량 하부 탐사원\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 교량 하부 탐사원 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 동부 교량 하부 탐사원. 채수와 진동을 같은 원장에 남기고, 파손 구간은 이윤서와 정소율이 동시에 서명해야 적대행위로 표시한다.\n\n**일화.** 2125년 교량 습격 훈련에서 최초 보고가 틀리자 참관 칸을 다시 열었다. 이 일로 동부 교량 하부 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고, 고서준의 능선 정찰과 통행 좌표를 경쟁하며, 서라온의 공개 지도에 우회 점선을 계약으로 보낸다.\n\n**야망.** 동부 한강 교량과 외곽 진입로의 침수 우회를 한 장의 공개 해도로 그려 봉쇄대가 오인 사격을 멈추게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 상수관 지도가 보호권의 침투로로 팔리는 것.\n\n**개입.** 잠수 호위를 맡아 파손 원인을 밝히거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −30 | 무력 50 | 물질 20 | 공동 25 | 원칙 −10 | 공개 −45 | 자격 −10 | 분산 −50 | 변혁 −20\n- 욕망: 갈망 −5 | 독점 20 | 위험 0 | 과시 −5 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-05"
   ],

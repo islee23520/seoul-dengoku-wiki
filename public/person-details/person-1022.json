@@ -275,6 +275,118 @@
     "id": "K1022",
     "personId": "person-1022"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 14,
+        "effective": 14
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k1022-cargo-handoff",
+        "name": {
+          "ko": "화물 대조·인계",
+          "en": "Cargo comparison and handoff"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1022-trait-1",
+        "name": {
+          "ko": "연락까지 잇는 인계",
+          "en": "Handoffs that include contact"
+        },
+        "description": {
+          "ko": "화물과 다음 상대의 연락을 함께 잇는다.",
+          "en": "Connects cargo with the next recipient’s contact."
+        },
+        "behavior": {
+          "ko": "화물과 다음 상대의 연락을 함께 잇는다.",
+          "en": "Connects cargo with the next recipient’s contact."
+        },
+        "stress": {
+          "ko": "계약을 놓친 뒤 다른 물량과 후속 기회를 찾는다.",
+          "en": "Seeks other cargo and follow-up opportunities after losing a contract."
+        },
+        "relationship": {
+          "ko": "지연희에게 전달 내용을 맡기고 그 연락으로 운송 공백을 확인한다.",
+          "en": "Entrusts messages to Ji Yeonhee and uses her contacts to check transport gaps."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "입고 화물을 대조·분류해 임시 보관하고 다음 운송 구간에 넘긴다. 용산 계약을 놓친 뒤 후속 물량을 찾으며 지연희의 연락으로 인계 공백을 확인한다. 임차 공간의 운영은 국가 배차권이나 토지 소유와 다르다.",
+      "en": "He compares, sorts, and temporarily stores incoming cargo before handing it to the next transport segment. After losing a Yongsan contract, he seeks follow-up cargo and uses Ji Yeonhee’s contacts to identify handoff gaps. Operating rented space is distinct from state scheduling authority or land ownership."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",

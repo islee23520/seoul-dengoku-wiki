@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 의료열차 북문 정비원 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.",
+            "summary": "2126년 세대. 강남역 차량기지에서 자랐다. 강남역 의료열차 북문 정비원 자리는 탈선 직전 결함 보고로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -284,6 +284,142 @@
   "gurps": {
     "id": "K291",
     "personId": "person-0292"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k291-brake-maintenance",
+        "name": {
+          "ko": "제동 정비",
+          "en": "Brake maintenance"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k291-priority",
+        "name": {
+          "ko": "무단 출고 거부",
+          "en": "Refuses unauthorized departure"
+        },
+        "description": {
+          "ko": "란진아는 의료열차에 무기가 실리자 제동을 잠그고 출고를 거부했다. 병상 칸 우선 정비를 전투 숙련으로 환산하지 않는다.",
+          "en": "Ran Jina locked the brakes and refused departure after weapons were loaded aboard the medical train. Priority repair of patient cars is not combat proficiency."
+        },
+        "behavior": {
+          "ko": "출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
+          "en": "Office. Rank: assistant manager. Title: medical train north gate mechanic. She made the pre-sortie inspection mandatory and allowed arms loading only with the joint stamp of the Elder and the auditor."
+        },
+        "stress": {
+          "ko": "제동 불량 한 대가 정비 서명으로 나가 북문 호송 전체가 멈추는 것.",
+          "en": "Fear. That one car with bad brakes would go out under the maintenance signature and the whole north gate convoy would stop."
+        },
+        "relationship": {
+          "ko": "권도하의 북문 순찰차에 제동을 맞추고, 순가온의 의료칸 발견 시각에 정차 일지를 겹치며, 장세화의 의료호송이 강남역에 설 때 병상 칸의 제동만 우선 고친다.",
+          "en": "Relations. Matched brakes to Gwon Doha's north gate patrol cars, overlaid the stop logs on the discovery hour of Soon Gaon's medical car, and repaired the sickbed cars' brakes first whenever Jang Sehwa's medical convoy stopped at Changdong."
+        },
+        "effects": []
+      },
+      {
+        "id": "k291-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 의료열차 북문 정비원. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
+          "en": "Office. Rank: assistant manager. Title: medical train north gate mechanic. She made the pre-sortie inspection mandatory and allowed arms loading only with the joint stamp of the Elder and the auditor."
+        },
+        "stress": {
+          "ko": "공포. 제동 불량 한 대가 정비 서명으로 나가 북문 호송 전체가 멈추는 것.",
+          "en": "Fear. That one car with bad brakes would go out under the maintenance signature and the whole north gate convoy would stop."
+        },
+        "relationship": {
+          "ko": "관계. 권도하의 북문 순찰차에 제동을 맞추고, 순가온의 의료칸 발견 시각에 정차 일지를 겹치며, 장세화의 의료호송이 강남역에 설 때 병상 칸의 제동만 우선 고친다.",
+          "en": "Relations. Matched brakes to Gwon Doha's north gate patrol cars, overlaid the stop logs on the discovery hour of Soon Gaon's medical car, and repaired the sickbed cars' brakes first whenever Jang Sehwa's medical convoy stopped at Changdong."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "란진아는 의료열차에 무기가 실리자 제동을 잠그고 출고를 거부했다. 병상 칸 우선 정비를 전투 숙련으로 환산하지 않는다.",
+      "en": "Ran Jina locked the brakes and refused departure after weapons were loaded aboard the medical train. Priority repair of patient cars is not combat proficiency."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -686,7 +822,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 강남역 차량기지에서 자랐다. 강남역 의료열차 북문 정비원 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 사원. 직함은 강남역 의료열차 북문 정비원. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
     "일화": "겨울의 검은 배차표에서 의료열차에 무기가 실리자 란진아는 북문에서 제동을 잠그고 출고를 거부했다.",
     "관계": "권도하의 북문 순찰차에 제동을 맞추고, 순가온의 의료칸 발견 시각에 정차 일지를 겹치며, 장세화의 의료호송이 강남역에 설 때 병상 칸의 제동만 우선 고친다.",
@@ -694,7 +829,7 @@
     "공포": "제동 불량 한 대가 정비 서명으로 나가 북문 호송 전체가 멈추는 것.",
     "개입": "제동을 현장에서 갈아 끼우거나, 무단 무장을 회장실에 보고할 수 있다."
   },
-  "biography": "출격 전 차륜을 보지 않은 기병을 빈 칸으로 돌리고, 제동 점검을 건너뛴 출고를 사고의 시작으로 본다. 규율을 좋아하고 선로 위의 침묵을 정비의 일부로 여긴다.\n\n- 생업: 의료열차 출격 전 정비 점검\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 의료열차 북문 정비원\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 의료열차 북문 정비원 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 사원. 직함은 강남역 의료열차 북문 정비원. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.\n\n**일화.** 겨울의 검은 배차표에서 의료열차에 무기가 실리자 란진아는 북문에서 제동을 잠그고 출고를 거부했다.\n\n**관계.** 권도하의 북문 순찰차에 제동을 맞추고, 순가온의 의료칸 발견 시각에 정차 일지를 겹치며, 장세화의 의료호송이 강남역에 설 때 병상 칸의 제동만 우선 고친다.\n\n**야망.** 의료열차의 북문 제동을 강남역 호송의 북부 날개로 묶어 바깥 작업장 통행세 없이 성하전자 열차가 나가게 한다.\n\n**공포.** 제동 불량 한 대가 정비 서명으로 나가 북문 호송 전체가 멈추는 것.\n\n**개입.** 제동을 현장에서 갈아 끼우거나, 무단 무장을 회장실에 보고할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 0 | 물질 25 | 공동 10 | 원칙 15 | 공개 5 | 자격 80 | 분산 15 | 변혁 −25\n- 욕망: 갈망 40 | 독점 10 | 위험 −25 | 과시 25 | 지속 −15 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "출격 전 차륜을 보지 않은 기병을 빈 칸으로 돌리고, 제동 점검을 건너뛴 출고를 사고의 시작으로 본다. 규율을 좋아하고 선로 위의 침묵을 정비의 일부로 여긴다.\n\n- 생업: 의료열차 출격 전 정비 점검\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 의료열차 북문 정비원\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 의료열차 북문 정비원 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 의료열차 북문 정비원. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.\n\n**일화.** 겨울의 검은 배차표에서 의료열차에 무기가 실리자 란진아는 북문에서 제동을 잠그고 출고를 거부했다.\n\n**관계.** 권도하의 북문 순찰차에 제동을 맞추고, 순가온의 의료칸 발견 시각에 정차 일지를 겹치며, 장세화의 의료호송이 강남역에 설 때 병상 칸의 제동만 우선 고친다.\n\n**야망.** 의료열차의 북문 제동을 강남역 호송의 북부 날개로 묶어 바깥 작업장 통행세 없이 성하전자 열차가 나가게 한다.\n\n**공포.** 제동 불량 한 대가 정비 서명으로 나가 북문 호송 전체가 멈추는 것.\n\n**개입.** 제동을 현장에서 갈아 끼우거나, 무단 무장을 회장실에 보고할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 0 | 물질 25 | 공동 10 | 원칙 15 | 공개 5 | 자격 80 | 분산 15 | 변혁 −25\n- 욕망: 갈망 40 | 독점 10 | 위험 −25 | 과시 25 | 지속 −15 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-11"
   ],

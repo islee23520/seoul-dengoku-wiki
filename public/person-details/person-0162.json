@@ -393,6 +393,150 @@
     "id": "K161",
     "personId": "person-0162"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k161-generator-operation",
+        "name": {
+          "ko": "발전 출력 운전",
+          "en": "Generator output operation"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k161-document-copying",
+        "name": {
+          "ko": "젖은 문서 필사",
+          "en": "Copying wet documents"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k161-choice",
+        "name": {
+          "ko": "필수 출력 우선",
+          "en": "Essential output first"
+        },
+        "description": {
+          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.",
+          "en": "Sensitive to the smell of fuel, she hated verbal power routing. She took the political pressure to divert power from the dehumidifiers to the protocol lighting as an insult."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he dried ratification papers soaked on the platform and left a hand copy. By this deed the signature of the archive emergency generator operator post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That on a night when the fuel ran dry the boxes would open by hand alone, and the eastern protection zone would fill the gap. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Matched output to Ji Seoyun's dehumidifiers, backed Ji Hansol's box temperature from the generation side, and had obeyed Yun Seorin's cross-verification but refused concealed power routing."
+        },
+        "effects": []
+      },
+      {
+        "id": "k161-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.",
+          "en": "Office. Rank: bureau director. Title: archive emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Ji Hansol, and below minimum output he cut the protocol power even under the bureau chief's urging."
+        },
+        "behavior": {
+          "ko": "관직. 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.",
+          "en": "Office. Rank: bureau director. Title: archive emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Ji Hansol, and below minimum output he cut the protocol power even under the bureau chief's urging."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That on a night when the fuel ran dry the boxes would open by hand alone, and the eastern protection zone would fill the gap. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Matched output to Ji Seoyun's dehumidifiers, backed Ji Hansol's box temperature from the generation side, and had obeyed Yun Seorin's cross-verification but refused concealed power routing."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "최저 출력에서 의전 배전을 끊고 젖은 인준 문서를 필사로 남겼다. 발전망 통합은 목표이며 발명 경력으로 보지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Cuts ceremonial power at minimum output and preserved wet approval papers through copying. A unified power network is a goal, not an invention. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -875,7 +1019,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.",
     "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.",
     "관계": "지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
@@ -883,7 +1026,7 @@
     "공포": "연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 생업: 문서고 발전 연료·출력 운전\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 문서고 비상발전 운전장\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40\n- 욕망: 갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 생업: 문서고 발전 연료·출력 운전\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 문서고 비상발전 운전장\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40\n- 욕망: 갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

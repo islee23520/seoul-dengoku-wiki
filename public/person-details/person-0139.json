@@ -394,6 +394,142 @@
     "id": "K138",
     "personId": "person-0139"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 6,
+        "effective": 6
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k138-blackout-surgery",
+        "name": {
+          "ko": "정전 중 수술",
+          "en": "Surgery during blackout"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k138-choice",
+        "name": {
+          "ko": "명령을 알리바이로 삼지 않음",
+          "en": "Does not use orders as an alibi"
+        },
+        "description": {
+          "ko": "포승 자국보다 화물칸의 기름때를 먼저 기억하고, 장교 명령망을 자신의 알리바이로 대지 않는다. 침묵하되 화물 기호는 정확히 말한다.",
+          "en": "He remembered the grease on freight cars before rope marks and never used the officer order network as his alibi. Silent, he spoke the freight symbols exactly."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 의료열차 적발 포로 증인 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, when the power failed mid-surgery, he kept the blade going under a hand lamp. By this deed the signature of the medical train captured-prisoner witness post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 증언이 사후 승인의 재료가 되어 동부 보호전쟁이 열리고, 포로 증인이 그 전쟁의 첫 명분이 되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the testimony would become material for after-the-fact approval, the eastern protection war would open, and the prisoner witness would become that war's first pretext. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 한보라의 순찰열차 배차와 화물 기호를 대조하고, 배우진의 장교 처벌 여부를 증언의 조건으로 보며, 여서하의 조사 서기와 쪽수를 맞춘다.",
+          "en": "Relations. Comparing Han Bora's patrol dispatches with the freight symbols, reading Bae Woojin's officer punishment as the testimony's condition, and matching page counts with Yeo Seoha the investigation clerk."
+        },
+        "effects": []
+      },
+      {
+        "id": "k138-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 의료열차 적발 포로 증인. 증언은 상수행정과 동방사 참모가 동시에 들을 때만 하고, 단독 심문에는 응하지 않는다.",
+          "en": "Office. Rank: sergeant. Title: medical train captured-prisoner witness. He testified only when the water administration and the escort's chief of staff heard together, and answered no solo interrogation."
+        },
+        "behavior": {
+          "ko": "관직. 품계 병장. 직함은 의료열차 적발 포로 증인. 증언은 상수행정과 동방사 참모가 동시에 들을 때만 하고, 단독 심문에는 응하지 않는다.",
+          "en": "Office. Rank: sergeant. Title: medical train captured-prisoner witness. He testified only when the water administration and the escort's chief of staff heard together, and answered no solo interrogation."
+        },
+        "stress": {
+          "ko": "공포. 증언이 사후 승인의 재료가 되어 동부 보호전쟁이 열리고, 포로 증인이 그 전쟁의 첫 명분이 되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the testimony would become material for after-the-fact approval, the eastern protection war would open, and the prisoner witness would become that war's first pretext. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 한보라의 순찰열차 배차와 화물 기호를 대조하고, 배우진의 장교 처벌 여부를 증언의 조건으로 보며, 여서하의 조사 서기와 쪽수를 맞춘다.",
+          "en": "Relations. Comparing Han Bora's patrol dispatches with the freight symbols, reading Bae Woojin's officer punishment as the testimony's condition, and matching page counts with Yeo Seoha the investigation clerk."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 의료열차 적발 포로 증인 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125, when the power failed mid-surgery, he kept the blade going under a hand lamp. By this deed the signature of the medical train captured-prisoner witness post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -775,7 +911,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의료열차 적발 포로 증인 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 병장. 직함은 의료열차 적발 포로 증인. 증언은 상수행정과 동방사 참모가 동시에 들을 때만 하고, 단독 심문에는 응하지 않는다.",
     "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 의료열차 적발 포로 증인 자리의 서명이 장부에 올랐다.",
     "관계": "한보라의 순찰열차 배차와 화물 기호를 대조하고, 배우진의 장교 처벌 여부를 증언의 조건으로 보며, 여서하의 조사 서기와 쪽수를 맞춘다.",
@@ -783,7 +918,7 @@
     "공포": "증언이 사후 승인의 재료가 되어 동부 보호전쟁이 열리고, 포로 증인이 그 전쟁의 첫 명분이 되는 것.",
     "개입": "출고 기호와 같은 봉인 상자를 회수해 그의 증언을 세우거나, 조작된 기호를 찾아 포로를 교환하거나 침묵시킬 수 있다."
   },
-  "biography": "포승 자국보다 화물칸의 기름때를 먼저 기억하고, 장교 명령망을 자신의 알리바이로 대지 않는다. 침묵하되 화물 기호는 정확히 말한다.\n\n- 소속: 동방사\n- 생업: 응급 수술·의료 증언\n- 품계: 병장\n- 직함: 의료열차 적발 포로 증인\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료열차 적발 포로 증인 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 병장. 직함은 의료열차 적발 포로 증인. 증언은 상수행정과 동방사 참모가 동시에 들을 때만 하고, 단독 심문에는 응하지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 의료열차 적발 포로 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 한보라의 순찰열차 배차와 화물 기호를 대조하고, 배우진의 장교 처벌 여부를 증언의 조건으로 보며, 여서하의 조사 서기와 쪽수를 맞춘다.\n\n**야망.** 의료열차에 실린 암사제 무기의 출고 기호를 공개 원장에 올려, 비밀 장교망이 공식 호위로 위장하지 못하게 한다.\n\n**공포.** 증언이 사후 승인의 재료가 되어 동부 보호전쟁이 열리고, 포로 증인이 그 전쟁의 첫 명분이 되는 것.\n\n**개입.** 출고 기호와 같은 봉인 상자를 회수해 그의 증언을 세우거나, 조작된 기호를 찾아 포로를 교환하거나 침묵시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −35 | 무력 70 | 물질 10 | 공동 40 | 원칙 −15 | 공개 −35 | 자격 −25 | 분산 −45 | 변혁 −40\n- 욕망: 갈망 5 | 독점 −40 | 위험 −10 | 과시 −25 | 지속 −15 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "포승 자국보다 화물칸의 기름때를 먼저 기억하고, 장교 명령망을 자신의 알리바이로 대지 않는다. 침묵하되 화물 기호는 정확히 말한다.\n\n- 소속: 동방사\n- 생업: 응급 수술·의료 증언\n- 품계: 병장\n- 직함: 의료열차 적발 포로 증인\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의료열차 적발 포로 증인 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 병장. 직함은 의료열차 적발 포로 증인. 증언은 상수행정과 동방사 참모가 동시에 들을 때만 하고, 단독 심문에는 응하지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 의료열차 적발 포로 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 한보라의 순찰열차 배차와 화물 기호를 대조하고, 배우진의 장교 처벌 여부를 증언의 조건으로 보며, 여서하의 조사 서기와 쪽수를 맞춘다.\n\n**야망.** 의료열차에 실린 암사제 무기의 출고 기호를 공개 원장에 올려, 비밀 장교망이 공식 호위로 위장하지 못하게 한다.\n\n**공포.** 증언이 사후 승인의 재료가 되어 동부 보호전쟁이 열리고, 포로 증인이 그 전쟁의 첫 명분이 되는 것.\n\n**개입.** 출고 기호와 같은 봉인 상자를 회수해 그의 증언을 세우거나, 조작된 기호를 찾아 포로를 교환하거나 침묵시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −35 | 무력 70 | 물질 10 | 공동 40 | 원칙 −15 | 공개 −35 | 자격 −25 | 분산 −45 | 변혁 −40\n- 욕망: 갈망 5 | 독점 −40 | 위험 −10 | 과시 −25 | 지속 −15 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-05"
   ],

@@ -402,6 +402,142 @@
     "id": "K321",
     "personId": "person-0322"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k321-transfer-roster-reconciliation",
+        "name": {
+          "ko": "이송 명부 대조",
+          "en": "Transfer roster reconciliation"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k321-priority",
+        "name": {
+          "ko": "이름 없는 이송 거부",
+          "en": "Refuses unnamed transfers"
+        },
+        "description": {
+          "ko": "서온결은 이름 없는 요청을 돌려보낸 시각을 적고 배차·당직 명부에서 이름을 찾았다. 환자를 찾는 확인 절차와 치료는 구분한다.",
+          "en": "Seo Ongyeol recorded the time he returned an unnamed request and searched dispatch and duty lists for the name. Patient identification is distinct from treatment."
+        },
+        "behavior": {
+          "ko": "이름 없는 이송은 받지 않고, 명부 두 장이 맞을 때만 문을 연다.",
+          "en": "Office. Rank: convoy hand. Title: medical transfer duty officer. He took no unnamed transfer and opened the door only when two rosters matched."
+        },
+        "stress": {
+          "ko": "환자 호송이 검역 대기와 한 줄로 섞여 시간이 지워지는 것.",
+          "en": "Fear. That patient transport would mix into one line with quarantine waiting and the hours would be erased."
+        },
+        "relationship": {
+          "ko": "장세화의 배차 의무와 맞물리되, 들것 열쇠는 당직함에서만 꺼낸다.",
+          "en": "Relations. Meshed with Jang Sehwa's dispatch medical work, but drew the stretcher keys only from the duty box."
+        },
+        "effects": []
+      },
+      {
+        "id": "k321-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 의무 이송 당직관. 이름 없는 이송은 받지 않고, 명부 두 장이 맞을 때만 문을 연다.",
+          "en": "Office. Rank: convoy hand. Title: medical transfer duty officer. He took no unnamed transfer and opened the door only when two rosters matched."
+        },
+        "stress": {
+          "ko": "공포. 환자 호송이 검역 대기와 한 줄로 섞여 시간이 지워지는 것.",
+          "en": "Fear. That patient transport would mix into one line with quarantine waiting and the hours would be erased."
+        },
+        "relationship": {
+          "ko": "관계. 장세화의 배차 의무와 맞물리되, 들것 열쇠는 당직함에서만 꺼낸다.",
+          "en": "Relations. Meshed with Jang Sehwa's dispatch medical work, but drew the stretcher keys only from the duty box."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "서온결은 이름 없는 요청을 돌려보낸 시각을 적고 배차·당직 명부에서 이름을 찾았다. 환자를 찾는 확인 절차와 치료는 구분한다.",
+      "en": "Seo Ongyeol recorded the time he returned an unnamed request and searched dispatch and duty lists for the name. Patient identification is distinct from treatment."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -823,7 +959,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의무 이송 당직관 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 의무 이송 당직관. 이름 없는 이송은 받지 않고, 명부 두 장이 맞을 때만 문을 연다.",
     "일화": "이름 칸이 빈 이송 요청이 검역 대기 줄 끝에 붙어 들것을 청한다. 서온결은 요청을 돌려보낸 시각을 분 단위로 적고, 장세화의 배차 명부와 당직 명부 두 장을 맞대 그 환자의 이름을 찾는다.",
     "관계": "장세화의 배차 의무와 맞물리되, 들것 열쇠는 당직함에서만 꺼낸다.",
@@ -831,7 +966,7 @@
     "공포": "환자 호송이 검역 대기와 한 줄로 섞여 시간이 지워지는 것.",
     "개입": "돌려보낸 환자의 명부를 찾거나, 단독 차로를 열 수 있다."
   },
-  "biography": "이송 시각을 분 단위로 적고, 빈 들것은 다음 창 전까지 역에 두지 않는다. 말은 짧게, 기록은 길게.\n\n- 생업: 의무 이송 명부 대조·문 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 의무 이송 당직관\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무 이송 당직관 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 의무 이송 당직관. 이름 없는 이송은 받지 않고, 명부 두 장이 맞을 때만 문을 연다.\n\n**일화.** 이름 칸이 빈 이송 요청이 검역 대기 줄 끝에 붙어 들것을 청한다. 서온결은 요청을 돌려보낸 시각을 분 단위로 적고, 장세화의 배차 명부와 당직 명부 두 장을 맞대 그 환자의 이름을 찾는다.\n\n**관계.** 장세화의 배차 의무와 맞물리되, 들것 열쇠는 당직함에서만 꺼낸다.\n\n**야망.** 의무 이송 당직을 환승 창구의 대기열과 분리된 단독 차로로 남긴다.\n\n**공포.** 환자 호송이 검역 대기와 한 줄로 섞여 시간이 지워지는 것.\n\n**개입.** 돌려보낸 환자의 명부를 찾거나, 단독 차로를 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 55 | 무력 −40 | 물질 −10 | 공동 20 | 원칙 10 | 공개 25 | 자격 30 | 분산 30 | 변혁 −10\n- 욕망: 갈망 30 | 독점 30 | 위험 5 | 과시 15 | 지속 5 | 지향 이성 | 결합 다자\n:::",
+  "biography": "이송 시각을 분 단위로 적고, 빈 들것은 다음 창 전까지 역에 두지 않는다. 말은 짧게, 기록은 길게.\n\n- 생업: 의무 이송 명부 대조·문 열쇠 인계\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 의무 이송 당직관\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무 이송 당직관 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 호송원. 직함은 의무 이송 당직관. 이름 없는 이송은 받지 않고, 명부 두 장이 맞을 때만 문을 연다.\n\n**일화.** 이름 칸이 빈 이송 요청이 검역 대기 줄 끝에 붙어 들것을 청한다. 서온결은 요청을 돌려보낸 시각을 분 단위로 적고, 장세화의 배차 명부와 당직 명부 두 장을 맞대 그 환자의 이름을 찾는다.\n\n**관계.** 장세화의 배차 의무와 맞물리되, 들것 열쇠는 당직함에서만 꺼낸다.\n\n**야망.** 의무 이송 당직을 환승 창구의 대기열과 분리된 단독 차로로 남긴다.\n\n**공포.** 환자 호송이 검역 대기와 한 줄로 섞여 시간이 지워지는 것.\n\n**개입.** 돌려보낸 환자의 명부를 찾거나, 단독 차로를 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 55 | 무력 −40 | 물질 −10 | 공동 20 | 원칙 10 | 공개 25 | 자격 30 | 분산 30 | 변혁 −10\n- 욕망: 갈망 30 | 독점 30 | 위험 5 | 과시 15 | 지속 5 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],

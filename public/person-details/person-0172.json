@@ -372,6 +372,150 @@
     "id": "K171",
     "personId": "person-0172"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "train-dispatch",
+        "name": {
+          "ko": "열차 배차",
+          "en": "Train dispatch"
+        },
+        "rating": 70
+      },
+      {
+        "id": "boarding-verification",
+        "name": {
+          "ko": "탑승 증명 확인",
+          "en": "Boarding verification"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k171-disposition",
+        "name": {
+          "ko": "시간 준수에 엄격함",
+          "en": "Strict about timing"
+        },
+        "description": {
+          "ko": "실리적이나 시각표를 어기는 사람을 가혹하게 다룬다. 어느 진영 열차든 시간을 지키면 얼굴을 가리지 않는다.",
+          "en": "Pragmatic, she dealt harshly with anyone who broke the timetable. Any faction's train, if it kept its hour, she took without asking its face."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.",
+          "en": "Office. Rank: registrar. Title: train dispatcher. She took apprentice boarding instead of mutual hostages as proof and held one-way trains at the warehouse for a day."
+        },
+        "stress": {
+          "ko": "공포. 한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.",
+          "en": "Fear. That Han Jaemok's rail contract would turn into a monopoly clause and the dispatch authority would be sucked under the water gates."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.",
+          "en": "Relations. Ran Han Jaemok's western rail contract under Park Taegyeom's command. Left the contract notarization to Oh Seoyul and split the warehouse transshipment order with Lukas Schneider."
+        },
+        "effects": []
+      },
+      {
+        "id": "k171-choice",
+        "name": {
+          "ko": "진영보다 운행 조건",
+          "en": "Operating terms before faction"
+        },
+        "description": {
+          "ko": "일화. 뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.",
+          "en": "Anecdote. When the news of the Ttukseom water contract's expiry was pasted on the Yongsan dispatch board, the western water train demanded one more day of warehouse occupation."
+        },
+        "behavior": {
+          "ko": "관계. 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.",
+          "en": "Relations. Ran Han Jaemok's western rail contract under Park Taegyeom's command. Left the contract notarization to Oh Seoyul and split the warehouse transshipment order with Lukas Schneider."
+        },
+        "stress": {
+          "ko": "공포. 한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.",
+          "en": "Fear. That Han Jaemok's rail contract would turn into a monopoly clause and the dispatch authority would be sucked under the water gates."
+        },
+        "relationship": {
+          "ko": "관계. 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.",
+          "en": "Relations. Ran Han Jaemok's western rail contract under Park Taegyeom's command. Left the contract notarization to Oh Seoyul and split the warehouse transshipment order with Lukas Schneider."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "탑승 증명을 인질 대신 받고 편도 열차를 묶는다. 계약과 환적 순서를 운용하지만 창 점유 요구를 해결한 성과는 미확인이다.",
+      "en": "She accepts boarding proof instead of hostages and holds one-way trains. She administers contract and transfer order; resolution of the siding claim is unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -710,7 +854,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다. 에바 노바코바는 2076년에 태어났다. 체코계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 열차 배차원 업무를 맡는다. 카렐 노바크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 에바 노바코바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 체코어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.",
     "일화": "뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.",
     "관계": "박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.",
@@ -718,7 +861,7 @@
     "공포": "한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.",
     "개입": "급수열차의 창 점유를 중재하거나, 독점 배차 밀약을 기록청에 넘길 수 있다."
   },
-  "biography": "실리적이나 시각표를 어기는 사람을 가혹하게 다룬다. 어느 진영 열차든 시간을 지키면 얼굴을 가리지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 열차 탑승 증명·창 점유 배차\n- 직함: 열차 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다. 에바 노바코바는 2076년에 태어났다. 체코계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 열차 배차원 업무를 맡는다. 카렐 노바크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 에바 노바코바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 체코어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.\n\n**일화.** 뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.\n\n**관계.** 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.\n\n**야망.** 서부 급수열차와 동부 군수열차를 같은 배차표에 묶어 용산을 수문헌장 밖의 필수 중계로 남긴다.\n\n**공포.** 한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.\n\n**개입.** 급수열차의 창 점유를 중재하거나, 독점 배차 밀약을 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 0 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −15 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −20 | 위험 25 | 과시 25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "실리적이나 시각표를 어기는 사람을 가혹하게 다룬다. 어느 진영 열차든 시간을 지키면 얼굴을 가리지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 열차 탑승 증명·창 점유 배차\n- 직함: 열차 배차원\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 열차 배차원 자리는 무표 출발 열차 저지로 열렸다. 에바 노바코바는 2076년에 태어났다. 체코계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 열차 배차원 업무를 맡는다. 카렐 노바크는 2030년 용산·이태원에서 이태원 숙박·민간 기술 용역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 에바 노바코바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 체코어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 열차 배차원. 상호 인질 대신 도제 탑승을 증명으로 받고, 편도만 온 열차는 창에서 하루를 묶는다.\n\n**일화.** 뚝섬 급수계약 만료 소식이 용산 배차판에 붙자 서부 급수열차가 창 점유를 하루 더 요구했다.\n\n**관계.** 박태겸의 지휘로 한재목의 서부 철도계약을 운용한다. 오서율에게 계약 공증을 맡기고, 루카스 슈나이더와 창고 환적 순서를 나눈다.\n\n**야망.** 서부 급수열차와 동부 군수열차를 같은 배차표에 묶어 용산을 수문헌장 밖의 필수 중계로 남긴다.\n\n**공포.** 한재목의 철도계약이 독점 조항으로 바뀌어 배차권이 수문 아래로 빨려 들어가는 것.\n\n**개입.** 급수열차의 창 점유를 중재하거나, 독점 배차 밀약을 기록청에 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 0 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −15 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 30 | 독점 −20 | 위험 25 | 과시 25 | 지속 0 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

@@ -397,6 +397,158 @@
     "id": "K004",
     "personId": "person-0004"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 13,
+        "effective": 13
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k004-pump-cleaning",
+        "name": {
+          "ko": "펌프 세정",
+          "en": "Pump cleaning"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k004-water-sample-sealing",
+        "name": {
+          "ko": "수질 표본 봉인",
+          "en": "Water-sample sealing"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k004-water-bypass",
+        "name": {
+          "ko": "우회 급수",
+          "en": "Bypass water supply"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k004-verified-water-only",
+        "name": {
+          "ko": "검증된 원수",
+          "en": "Verified water only"
+        },
+        "description": {
+          "ko": "기준 미달이면 송수 밸브를 잠근다.",
+          "en": "Closes supply valves when water fails standards."
+        },
+        "behavior": {
+          "ko": "기준 미달이면 송수 밸브를 잠근다.",
+          "en": "Closes supply valves when water fails standards."
+        },
+        "stress": {
+          "ko": "검증 안 된 원수를 받으라는 압박을 모욕으로 느낀다.",
+          "en": "Takes pressure to accept untested water as an insult."
+        },
+        "relationship": {
+          "ko": "일정에는 복종하지만 한재목의 은폐에는 저항한다.",
+          "en": "Follows schedules but resists Han Jaemok’s concealment."
+        },
+        "effects": []
+      },
+      {
+        "id": "k004-sealed-proof",
+        "name": {
+          "ko": "봉인된 근거",
+          "en": "Sealed proof"
+        },
+        "description": {
+          "ko": "구두 보고보다 봉인 표본을 남긴다.",
+          "en": "Keeps sealed samples rather than relying on oral reports."
+        },
+        "behavior": {
+          "ko": "구두 보고보다 봉인 표본을 남긴다.",
+          "en": "Keeps sealed samples rather than relying on oral reports."
+        },
+        "stress": {
+          "ko": "오염 뒤 공개되는 검사를 두려워한다.",
+          "en": "Fears results being released only after contamination."
+        },
+        "relationship": {
+          "ko": "정하린과 표본을 교환한다.",
+          "en": "Exchanges samples with Jeong Harin."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "배운 세정 공정과 교대 표본 관리, 동파 우회 급수의 실제 선택을 반영했다. 안전 판단과 운영에 집중하고 의학이나 개인 전투 능력으로 확대하지 않는다.",
+      "en": "Ratings reflect learned cleaning procedures, shift sample handling, and a water bypass during freezing. Strength lies in safe operations, not inferred medicine or personal combat."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -839,7 +991,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 당직장. 직함은 영등포 정수공정 감독. 매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 영등포 정수공정 감독 자리의 서명이 장부에 올랐다.",
     "관계": "실종된 임하준에게 펌프 세정 공정을 사제로 배웠고, 마곡의 정하린과 수질 표본을 동맹처럼 교환하며, 한재목의 급수 일정에는 복종하되 탁수 은폐에는 저항한다.",
@@ -847,7 +998,7 @@
     "공포": "탁수가 배급 구역에 퍼진 뒤에야 검사 결과가 공개되어, 정수 기능 자체가 정치 협상물로 전락하는 것.",
     "개입": "봉인 표본을 마곡까지 호송해 그의 잠금 결정을 정당화하거나, 표본을 바꿔치기한 자를 찾아 감독직을 위태롭게 할 수 있다."
   },
-  "biography": "시약 냄새에 예민하고 구두 보고를 싫어한다. 검증되지 않은 원수를 받으라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 수문국\n- 생업: 수질 검사\n- 품계: 당직장\n- 직함: 영등포 정수공정 감독\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 당직장. 직함은 영등포 정수공정 감독. 매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 영등포 정수공정 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 실종된 임하준에게 펌프 세정 공정을 사제로 배웠고, 마곡의 정하린과 수질 표본을 동맹처럼 교환하며, 한재목의 급수 일정에는 복종하되 탁수 은폐에는 저항한다.\n\n**야망.** 영등포 정수와 뚝섬 펌프의 점검 주기를 하나의 공개 공정표로 묶어 서부 원수의 품질 주권을 지킨다.\n\n**공포.** 탁수가 배급 구역에 퍼진 뒤에야 검사 결과가 공개되어, 정수 기능 자체가 정치 협상물로 전락하는 것.\n\n**개입.** 봉인 표본을 마곡까지 호송해 그의 잠금 결정을 정당화하거나, 표본을 바꿔치기한 자를 찾아 감독직을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 35 | 공동 20 | 원칙 20 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 5 | 독점 10 | 위험 −40 | 과시 −25 | 지속 30 | 지향 동성 | 결합 없음\n:::",
+  "biography": "시약 냄새에 예민하고 구두 보고를 싫어한다. 검증되지 않은 원수를 받으라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 수문국\n- 생업: 수질 검사\n- 품계: 당직장\n- 직함: 영등포 정수공정 감독\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 당직장. 직함은 영등포 정수공정 감독. 매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 영등포 정수공정 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 실종된 임하준에게 펌프 세정 공정을 사제로 배웠고, 마곡의 정하린과 수질 표본을 동맹처럼 교환하며, 한재목의 급수 일정에는 복종하되 탁수 은폐에는 저항한다.\n\n**야망.** 영등포 정수와 뚝섬 펌프의 점검 주기를 하나의 공개 공정표로 묶어 서부 원수의 품질 주권을 지킨다.\n\n**공포.** 탁수가 배급 구역에 퍼진 뒤에야 검사 결과가 공개되어, 정수 기능 자체가 정치 협상물로 전락하는 것.\n\n**개입.** 봉인 표본을 마곡까지 호송해 그의 잠금 결정을 정당화하거나, 표본을 바꿔치기한 자를 찾아 감독직을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 35 | 공동 20 | 원칙 20 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 5 | 독점 10 | 위험 −40 | 과시 −25 | 지속 30 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-01"
   ],

@@ -394,6 +394,150 @@
     "id": "K005",
     "personId": "person-0005"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 13,
+        "effective": 13
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k005-pump-shaft-replacement",
+        "name": {
+          "ko": "펌프 축 교체",
+          "en": "Pump-shaft replacement"
+        },
+        "rating": 70
+      },
+      {
+        "id": "k005-repair-sequencing",
+        "name": {
+          "ko": "정비 순서 배치",
+          "en": "Repair sequencing"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k005-test-before-words",
+        "name": {
+          "ko": "말보다 시험",
+          "en": "Tests before words"
+        },
+        "description": {
+          "ko": "차륜과 제동 시험으로 사람을 평가한다.",
+          "en": "Judges people by wheel and brake tests."
+        },
+        "behavior": {
+          "ko": "차륜과 제동 시험으로 사람을 평가한다.",
+          "en": "Judges people by wheel and brake tests."
+        },
+        "stress": {
+          "ko": "출고 약속을 어긴 조합을 오래 기억한다.",
+          "en": "Long remembers cooperatives that miss promised dispatch times."
+        },
+        "relationship": {
+          "ko": "정시우와 규격을 맞추며 강민서와 부품을 거래한다.",
+          "en": "Coordinates standards with Jeong Siu and parts with Gang Minseo."
+        },
+        "effects": []
+      },
+      {
+        "id": "k005-targeted-repair",
+        "name": {
+          "ko": "마모부터 고친다",
+          "en": "Repair the worn part"
+        },
+        "description": {
+          "ko": "고장 난 펌프에서 마모 축만 갈아 재가동한다.",
+          "en": "Restarts a failed pump by replacing only its worn shaft."
+        },
+        "behavior": {
+          "ko": "고장 난 펌프에서 마모 축만 갈아 재가동한다.",
+          "en": "Restarts a failed pump by replacing only its worn shaft."
+        },
+        "stress": {
+          "ko": "부품 단절로 수리망이 멈출 상황을 두려워한다.",
+          "en": "Fears the repair network stopping when parts are cut off."
+        },
+        "relationship": {
+          "ko": "계약 위반 국가의 부품은 따로 봉쇄한다.",
+          "en": "Separately blocks parts belonging to contract-breaking states."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "축 하나를 교체한 진단과 정비 순서 운영이 기술·운영의 근거다. 부품 봉쇄의 강경함을 보존하되 장갑열차라는 이름으로 전투 숙련을 주지 않았다.",
+      "en": "A targeted shaft replacement and repair scheduling support technical and management strengths. The harsh parts embargo remains part of the character without granting combat skill from an armored-train title."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -836,7 +980,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 장갑보수열차장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 주사. 직함은 신정기지 장갑보수열차장. 정비 순서를 공개 배차판에 올리되, 계약 위반 국가의 부품은 신정 창고에서 따로 봉쇄한다.",
     "일화": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 신정기지 장갑보수열차장 자리의 서명이 장부에 올랐다.",
     "관계": "강민서와 펌프·차륜 부품 계약을 맺고, 천왕 원로 정시우와는 규격 동맹이며, 박태겸에게 서부 보수열차 배차 창구를 빌려 준다.",
@@ -844,7 +987,7 @@
     "공포": "천왕 쪽 부품 규격이 막히면 장갑열차가 정차한 채 수문 파손을 구경만 하게 되는 것.",
     "개입": "대체 차륜을 구해 그의 순환 정비망을 살리거나, 봉쇄 창고의 밀반출 장부를 폭로할 수 있다."
   },
-  "biography": "공구 소리를 대화처럼 읽고, 약속한 출고 시각을 어기는 조합을 오래 기억한다. 말보다 차륜과 제동 시험으로 사람을 평가한다.\n\n- 소속: 수문국\n- 생업: 차량·펌프 정비\n- 품계: 주사\n- 직함: 신정기지 장갑보수열차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 장갑보수열차장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 주사. 직함은 신정기지 장갑보수열차장. 정비 순서를 공개 배차판에 올리되, 계약 위반 국가의 부품은 신정 창고에서 따로 봉쇄한다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 신정기지 장갑보수열차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서와 펌프·차륜 부품 계약을 맺고, 천왕 원로 정시우와는 규격 동맹이며, 박태겸에게 서부 보수열차 배차 창구를 빌려 준다.\n\n**야망.** 서부 수문과 신정 유치선을 보수열차가 하루 안에 오가는 순환 정비망을 만들어 물 계약의 물리적 뼈대가 된다.\n\n**공포.** 천왕 쪽 부품 규격이 막히면 장갑열차가 정차한 채 수문 파손을 구경만 하게 되는 것.\n\n**개입.** 대체 차륜을 구해 그의 순환 정비망을 살리거나, 봉쇄 창고의 밀반출 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 5 | 물질 20 | 공동 20 | 원칙 25 | 공개 10 | 자격 10 | 분산 −40 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −15 | 위험 5 | 과시 5 | 지속 10 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "공구 소리를 대화처럼 읽고, 약속한 출고 시각을 어기는 조합을 오래 기억한다. 말보다 차륜과 제동 시험으로 사람을 평가한다.\n\n- 소속: 수문국\n- 생업: 차량·펌프 정비\n- 품계: 주사\n- 직함: 신정기지 장갑보수열차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 장갑보수열차장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 주사. 직함은 신정기지 장갑보수열차장. 정비 순서를 공개 배차판에 올리되, 계약 위반 국가의 부품은 신정 창고에서 따로 봉쇄한다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 신정기지 장갑보수열차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서와 펌프·차륜 부품 계약을 맺고, 천왕 원로 정시우와는 규격 동맹이며, 박태겸에게 서부 보수열차 배차 창구를 빌려 준다.\n\n**야망.** 서부 수문과 신정 유치선을 보수열차가 하루 안에 오가는 순환 정비망을 만들어 물 계약의 물리적 뼈대가 된다.\n\n**공포.** 천왕 쪽 부품 규격이 막히면 장갑열차가 정차한 채 수문 파손을 구경만 하게 되는 것.\n\n**개입.** 대체 차륜을 구해 그의 순환 정비망을 살리거나, 봉쇄 창고의 밀반출 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 0 | 무력 5 | 물질 20 | 공동 20 | 원칙 25 | 공개 10 | 자격 10 | 분산 −40 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −15 | 위험 5 | 과시 5 | 지속 10 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

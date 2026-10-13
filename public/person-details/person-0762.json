@@ -286,6 +286,150 @@
     "id": "K762",
     "personId": "person-0762"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "log-gap",
+        "name": {
+          "ko": "온습도 기록 공백 대조",
+          "en": "Temperature-log gap reconciliation"
+        },
+        "rating": 55
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "check-gaps-against-shifts",
+        "name": {
+          "ko": "공백을 교대와 대조",
+          "en": "Check Gaps Against Shifts"
+        },
+        "description": {
+          "ko": "양름태는 온습도 기록의 빈칸을 교대 시각과 맞춰 추적하는 쪽이다.",
+          "en": "Yang Reumtae traces gaps in temperature and humidity records against shift times."
+        },
+        "behavior": {
+          "ko": "빈칸 앞뒤 기록과 교대 시각을 대조해 기록이 끊긴 구간을 표시한다.",
+          "en": "They compare entries surrounding a gap with shift times and mark the interrupted interval."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행의 종속으로 이어질 우려가 커지면 끊긴 구간의 확인을 더 중시할 수 있다.",
+          "en": "Concern that an unattended shift could compromise the group's passage may heighten their attention to interrupted records."
+        },
+        "relationship": {
+          "ko": "교대 상대와 기록 공백을 공유해야 한다면 표시된 구간을 설명의 근거로 삼을 수 있다.",
+          "en": "When explaining record gaps to a shift partner, they may rely on the marked intervals."
+        },
+        "effects": []
+      },
+      {
+        "id": "hand-over-box-numbers",
+        "name": {
+          "ko": "상자 번호 인계",
+          "en": "Hand Over Box Numbers"
+        },
+        "description": {
+          "ko": "양름태는 기록 공백에 관련된 상자를 번호로 특정해 인계하는 쪽이다.",
+          "en": "Yang Reumtae identifies boxes associated with a record gap by number for handover."
+        },
+        "behavior": {
+          "ko": "끊긴 구간에 있던 상자 번호를 열쇠 인계 기록지에 옮겨 박진솔에게 넘긴다.",
+          "en": "They copy the affected box numbers onto the key handover sheet and pass it to Park Jinsol."
+        },
+        "stress": {
+          "ko": "당직이 비어 통행이 위태로워질 우려가 있으면 관련 상자 번호의 누락을 더 경계할 수 있다.",
+          "en": "If a vacant shift threatens passage, they may become especially wary of omitting affected box numbers."
+        },
+        "relationship": {
+          "ko": "박진솔과 인계 내용을 확인할 때 권한을 넓히기보다 번호와 기록을 공유하는 데 집중할 수 있다.",
+          "en": "When checking the handover with Park Jinsol, they may focus on sharing numbers and records rather than extending their authority."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "전력 불안 때 온습도 공백을 교대와 대조하고 관련 상자 번호를 넘겼다. 기록 추적이 강점이며 종자 생물학은 추가하지 않는다.",
+      "en": "She matched temperature-log gaps to shift times during unstable power and passed affected box numbers. Record tracing is supported, not seed biology."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -655,7 +799,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "밤사이 전력이 흔들려 냉온고 온습도 기록에 빈칸이 생긴다. 양름태는 빈칸 앞뒤의 기록을 교대 시각과 맞춰 끊긴 구간을 표시하고, 그 구간에 들어 있던 상자 번호를 열쇠를 넘기는 기록지에 옮겨 박진솔에게 넘긴다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -663,7 +806,7 @@
     "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 밤사이 전력이 흔들려 냉온고 온습도 기록에 빈칸이 생긴다. 양름태는 빈칸 앞뒤의 기록을 교대 시각과 맞춰 끊긴 구간을 표시하고, 그 구간에 들어 있던 상자 번호를 열쇠를 넘기는 기록지에 옮겨 박진솔에게 넘긴다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −40 | 물질 0 | 공동 0 | 원칙 75 | 공개 35 | 자격 35 | 분산 5 | 변혁 15\n- 욕망: 갈망 40 | 독점 −5 | 위험 −40 | 과시 5 | 지속 40 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 밤사이 전력이 흔들려 냉온고 온습도 기록에 빈칸이 생긴다. 양름태는 빈칸 앞뒤의 기록을 교대 시각과 맞춰 끊긴 구간을 표시하고, 그 구간에 들어 있던 상자 번호를 열쇠를 넘기는 기록지에 옮겨 박진솔에게 넘긴다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 20 | 무력 −40 | 물질 0 | 공동 0 | 원칙 75 | 공개 35 | 자격 35 | 분산 5 | 변혁 15\n- 욕망: 갈망 40 | 독점 −5 | 위험 −40 | 과시 5 | 지속 40 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

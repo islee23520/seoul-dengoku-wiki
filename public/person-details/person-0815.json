@@ -287,6 +287,142 @@
     "id": "K815",
     "personId": "person-0815"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "communal-scale-substitution",
+        "name": {
+          "ko": "공동 저울 교체",
+          "en": "Communal scale substitution"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k815-disposition",
+        "name": {
+          "ko": "부정 저울 불관용",
+          "en": "Intolerance of dishonest scales"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 경매 서기.",
+          "en": "Office. Rank: lay instructor. Title: auction clerk."
+        },
+        "stress": {
+          "ko": "공포. 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
+          "en": "Fear. That the auction clerk duty post would stand empty and the State's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k815-choice",
+        "name": {
+          "ko": "같은 기준으로 거래",
+          "en": "Trading by one standard"
+        },
+        "description": {
+          "ko": "일화. 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he took a dishonest scale off the auction floor and replaced it with a common scale. By this deed the signature of the auction clerk post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "stress": {
+          "ko": "공포. 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
+          "en": "Fear. That the auction clerk duty post would stand empty and the State's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "경매장의 저울을 공동 저울로 바꿨다. 계량 기준을 지킨 일화 외에 가격 중재 성과는 없다.",
+      "en": "Changes the auction scale to a communal one. Beyond protecting measurement standards, price-mediation results are not recorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -657,7 +793,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 경매 서기.",
     "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -665,7 +800,7 @@
     "공포": "경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 경매 저울 교체·공동 계량\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 경매 서기.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 경매 서기 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −25 | 물질 90 | 공동 −20 | 원칙 −45 | 공개 15 | 자격 10 | 분산 30 | 변혁 10\n- 욕망: 갈망 −5 | 독점 −30 | 위험 35 | 과시 −10 | 지속 −15 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 경매 저울 교체·공동 계량\n- 직함: 경매 서기\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 교도. 직함은 경매 서기.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 경매 서기 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 경매 서기 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −25 | 물질 90 | 공동 −20 | 원칙 −45 | 공개 15 | 자격 10 | 분산 30 | 변혁 10\n- 욕망: 갈망 −5 | 독점 −30 | 위험 35 | 과시 −10 | 지속 −15 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],

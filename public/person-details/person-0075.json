@@ -286,6 +286,150 @@
     "id": "K075",
     "personId": "person-0075"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "grain",
+        "name": {
+          "ko": "곡물 손실 공개·배분",
+          "en": "Grain allocation and loss disclosure"
+        },
+        "rating": 60
+      },
+      {
+        "id": "trade",
+        "name": {
+          "ko": "공개 조건 물류 거래",
+          "en": "Logistics under disclosed terms"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "transparent-losses",
+        "name": {
+          "ko": "손실 공개",
+          "en": "Transparent Losses"
+        },
+        "description": {
+          "ko": "구선율은 식량 손실을 감추기보다 주민에게 드러내는 태도를 보인다.",
+          "en": "Gu Seonyul favors making food losses visible to residents rather than concealing them."
+        },
+        "behavior": {
+          "ko": "썩기 시작한 곡물을 먼저 나눠 주고 그 손실 장부를 공개했다.",
+          "en": "Gu Seonyul distributed grain that had begun to spoil and disclosed the loss ledger."
+        },
+        "stress": {
+          "ko": "식량 손실과 급수계약의 위험이 겹치면 주민이 확인할 수 있는 기록을 더욱 중시할 수 있다.",
+          "en": "If food losses coincide with risky water contracts, Gu Seonyul may place greater weight on records residents can inspect."
+        },
+        "relationship": {
+          "ko": "김도하의 주민대표 연서를 집행할 때 손실을 공개하는 방식으로 주민에게 설명하려 할 수 있다.",
+          "en": "When implementing Kim Doha's residents' petition, Gu Seonyul may seek to explain losses through open records."
+        },
+        "effects": []
+      },
+      {
+        "id": "no-auctions-without-rations",
+        "name": {
+          "ko": "배급 없는 경매 중단",
+          "en": "No Auctions Without Rations"
+        },
+        "description": {
+          "ko": "구선율은 시장 거래보다 원수와 식량의 최저선을 우선한다.",
+          "en": "Gu Seonyul places minimum raw-water and food provision ahead of market transactions."
+        },
+        "behavior": {
+          "ko": "원수 배급표가 비면 경매를 중단하고 연구 파견 인원보다 배급 솥 숫자를 먼저 표결에 올린다.",
+          "en": "Gu Seonyul halts auctions when the raw-water ration sheet is empty and puts ration-pot counts to a vote before research staffing."
+        },
+        "stress": {
+          "ko": "급수계약이 주민 명부를 넘길 위험이 있으면 배급을 거래 조건보다 앞세울 수 있다.",
+          "en": "If a water contract threatens to surrender the residents' register, Gu Seonyul may put ration safeguards ahead of deal terms."
+        },
+        "relationship": {
+          "ko": "한지온과 식량을 교환할 때도 주민의 원수·식량 최저선이 지켜지는지를 중시할 수 있다.",
+          "en": "In food exchanges with Han Jion, Gu Seonyul may prioritize maintaining residents' minimum water and food provision."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "썩는 곡물을 먼저 배분하고 손실을 공개했다. 식량 거래와 부패 대응을 평가하며 종자 연구 숙련은 없다.",
+      "en": "She distributed spoiling grain first and disclosed losses. Food exchange and spoilage response are supported, not seed research."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -677,7 +821,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 노량진 선창에서 자랐다. 방화 주민시장 중개인 자리는 저울 재점검 공개로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 방화 주민시장 중개인. 대피 경로와 우물 수위를 시장 칠판에 공개하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결에 올린다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 방화 주민시장 중개인 자리의 서명이 장부에 올랐다.",
     "관계": "김도하의 주민대표 연서를 시장에서 집행하고, 박진솔의 종자 출고를 이중 날인 없이 경매에 올리지 않으며, 한지온의 조달 행렬과 식량을 교환한다.",
@@ -685,7 +828,7 @@
     "공포": "급수계약 한 줄에 주민 명부가 통째로 넘어가는 것.",
     "개입": "대체 식량 호송을 성사시켜 경매를 열거나, 명부 양도 밀약을 찾아 시장 거부권을 강화할 수 있다."
   },
-  "biography": "실험동 소음보다 솥 숫자를 먼저 묻고, 종자를 군량 협상물로 부르는 사람을 도둑으로 본다. 온화하나 원수 배급표가 비면 경매를 중단시킨다.\n\n- 소속: 태욱그룹\n- 생업: 시장 식량 중개\n- 품계: 대리\n- 직함: 방화 주민시장 중개인\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 방화 주민시장 중개인 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 방화 주민시장 중개인. 대피 경로와 우물 수위를 시장 칠판에 공개하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결에 올린다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 방화 주민시장 중개인 자리의 서명이 장부에 올랐다.\n\n**관계.** 김도하의 주민대표 연서를 시장에서 집행하고, 박진솔의 종자 출고를 이중 날인 없이 경매에 올리지 않으며, 한지온의 조달 행렬과 식량을 교환한다.\n\n**야망.** 삼원 심의에서 시장 거부권을 원수·식량 최저선에 고정해 연구시설이 생산을 못 해도 관문 마을이 볼모가 되지 않게 한다.\n\n**공포.** 급수계약 한 줄에 주민 명부가 통째로 넘어가는 것.\n\n**개입.** 대체 식량 호송을 성사시켜 경매를 열거나, 명부 양도 밀약을 찾아 시장 거부권을 강화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −35 | 물질 0 | 공동 10 | 원칙 60 | 공개 35 | 자격 45 | 분산 15 | 변혁 5\n- 욕망: 갈망 50 | 독점 −30 | 위험 −40 | 과시 −5 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "실험동 소음보다 솥 숫자를 먼저 묻고, 종자를 군량 협상물로 부르는 사람을 도둑으로 본다. 온화하나 원수 배급표가 비면 경매를 중단시킨다.\n\n- 소속: 태욱그룹\n- 생업: 시장 식량 중개\n- 품계: 대리\n- 직함: 방화 주민시장 중개인\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 방화 주민시장 중개인 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 대리. 직함은 방화 주민시장 중개인. 대피 경로와 우물 수위를 시장 칠판에 공개하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결에 올린다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 방화 주민시장 중개인 자리의 서명이 장부에 올랐다.\n\n**관계.** 김도하의 주민대표 연서를 시장에서 집행하고, 박진솔의 종자 출고를 이중 날인 없이 경매에 올리지 않으며, 한지온의 조달 행렬과 식량을 교환한다.\n\n**야망.** 삼원 심의에서 시장 거부권을 원수·식량 최저선에 고정해 연구시설이 생산을 못 해도 관문 마을이 볼모가 되지 않게 한다.\n\n**공포.** 급수계약 한 줄에 주민 명부가 통째로 넘어가는 것.\n\n**개입.** 대체 식량 호송을 성사시켜 경매를 열거나, 명부 양도 밀약을 찾아 시장 거부권을 강화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −35 | 물질 0 | 공동 10 | 원칙 60 | 공개 35 | 자격 45 | 분산 15 | 변혁 5\n- 욕망: 갈망 50 | 독점 −30 | 위험 −40 | 과시 −5 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

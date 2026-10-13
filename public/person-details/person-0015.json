@@ -287,6 +287,150 @@
     "id": "K015",
     "personId": "person-0015"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k015-water-depth-record",
+        "name": {
+          "ko": "채수·수심 기록",
+          "en": "Water and depth recording"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k015-witness-hearing",
+        "name": {
+          "ko": "증언 대질",
+          "en": "Witness hearing"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k015-prompt-report",
+        "name": {
+          "ko": "보고 지연 거부",
+          "en": "Reject delayed reports"
+        },
+        "description": {
+          "ko": "늦은 보고를 잘못으로 보고 표본과 좌표를 보낸다.",
+          "en": "Treats late reporting as a fault and sends samples and coordinates."
+        },
+        "behavior": {
+          "ko": "늦은 보고를 잘못으로 보고 표본과 좌표를 보낸다.",
+          "en": "Treats late reporting as a fault and sends samples and coordinates."
+        },
+        "stress": {
+          "ko": "탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.",
+          "en": "That the survey routes would be sealed as military secrets and the pipeline maps would be sold as the protection zone's infiltration routes."
+        },
+        "relationship": {
+          "ko": "박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.",
+          "en": "An alliance passing flood specimens to Park Nuri, dividing manhole access by command with Chae Ongyeol's night patrol, and sending bypass coordinates by contract to Jang Yerin's western inspection network."
+        },
+        "effects": []
+      },
+      {
+        "id": "k015-joint-map",
+        "name": {
+          "ko": "공동 확인 지도",
+          "en": "Jointly checked map"
+        },
+        "description": {
+          "ko": "붕괴 표시에 주민과 경비의 동시 서명을 요구한다.",
+          "en": "Requires both resident and guard signatures for collapse markings."
+        },
+        "behavior": {
+          "ko": "붕괴 표시에 주민과 경비의 동시 서명을 요구한다.",
+          "en": "Requires both resident and guard signatures for collapse markings."
+        },
+        "stress": {
+          "ko": "탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.",
+          "en": "That the survey routes would be sealed as military secrets and the pipeline maps would be sold as the protection zone's infiltration routes."
+        },
+        "relationship": {
+          "ko": "박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.",
+          "en": "An alliance passing flood specimens to Park Nuri, dividing manhole access by command with Chae Ongyeol's night patrol, and sending bypass coordinates by contract to Jang Yerin's western inspection network."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "채수·수심 기록과 공개 대질이 확인된다. 우회 해도는 목표이며 해외 항해나 통역 경력은 없다.",
+      "en": "Water-depth records and public witness confrontation are confirmed. A bypass chart remains a goal, with no overseas navigation or interpreting career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -715,7 +859,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 한강 침수관로 탐사원. 채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 한강 침수관로 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.",
@@ -723,7 +866,7 @@
     "공포": "탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.",
     "개입": "잠수 호위를 맡아 우회 급수를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다."
   },
-  "biography": "침수 터널의 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 수문국\n- 생업: 침수관로 실측\n- 품계: 주사\n- 직함: 한강 침수관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 한강 침수관로 탐사원. 채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 한강 침수관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.\n\n**야망.** 여의도·영등포·양천의 침수 우회 관로를 하나의 공개 해도로 그려 물 계약이 단수 없이도 우회 급수하게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.\n\n**개입.** 잠수 호위를 맡아 우회 급수를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 10 | 물질 40 | 공동 10 | 원칙 25 | 공개 0 | 자격 0 | 분산 −45 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −30 | 위험 30 | 과시 10 | 지속 −5 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "침수 터널의 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 수문국\n- 생업: 침수관로 실측\n- 품계: 주사\n- 직함: 한강 침수관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 한강 침수관로 탐사원. 채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 한강 침수관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.\n\n**야망.** 여의도·영등포·양천의 침수 우회 관로를 하나의 공개 해도로 그려 물 계약이 단수 없이도 우회 급수하게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.\n\n**개입.** 잠수 호위를 맡아 우회 급수를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 10 | 물질 40 | 공동 10 | 원칙 25 | 공개 0 | 자격 0 | 분산 −45 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −30 | 위험 30 | 과시 10 | 지속 −5 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],

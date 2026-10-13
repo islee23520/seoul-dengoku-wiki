@@ -287,6 +287,142 @@
     "id": "K063",
     "personId": "person-0063"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "seed",
+        "name": {
+          "ko": "온습도·종자 출고 확인",
+          "en": "Temperature and seed-release checks"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-record-gaps",
+        "name": {
+          "ko": "기록 공백 불허",
+          "en": "No Record Gaps"
+        },
+        "description": {
+          "ko": "박진솔은 종자 보존의 온습도 기록에 한 칸의 공백도 허용하지 않는다.",
+          "en": "Park Jinsol tolerates no gaps in seed-preservation temperature and humidity records."
+        },
+        "behavior": {
+          "ko": "온도 로그가 끊긴 상자는 전시 징발 문서가 있어도 손대지 않고 출고에는 이중 날인을 요구한다.",
+          "en": "She leaves boxes with interrupted temperature logs untouched even under wartime requisition and requires two approvals for release."
+        },
+        "stress": {
+          "ko": "전력 단절이 보존고를 약탈 창고로 만들 우려가 있다면 온도 로그와 반출 조건을 더 엄격히 지킬 수 있다.",
+          "en": "If power loss threatens to turn the repository into a plunder storehouse, she may enforce temperature logs and release conditions more strictly."
+        },
+        "relationship": {
+          "ko": "정하린이 반출을 잠근다면 이중 날인 원칙에 따라 그 결정을 따를 수 있다.",
+          "en": "If Jeong Harin locks down removal, she may follow that decision in accordance with the dual-approval rule."
+        },
+        "effects": []
+      },
+      {
+        "id": "no-seed-trading",
+        "name": {
+          "ko": "종자 거래 거부",
+          "en": "No Seed Trading"
+        },
+        "description": {
+          "ko": "박진솔은 종자를 군량 협상물이나 보호비가 아닌 공동의 보존 자산으로 본다.",
+          "en": "Park Jinsol views seeds as a shared preservation asset rather than military bargaining stock or protection payments."
+        },
+        "behavior": {
+          "ko": "씨앗을 군량 협상물로 부르는 태도를 배척하고 종자 원장을 공개 자산으로 올리려 한다.",
+          "en": "She rejects treating seeds as military bargaining stock and seeks to establish the seed ledger as a public asset."
+        },
+        "stress": {
+          "ko": "냉온고 정지로 종자가 보호비로 흩어질 위험이 있다면 거래보다 보존 통제를 우선할 수 있다.",
+          "en": "If storage failure risks dispersing seeds as protection payments, she may prioritize preservation controls over trade."
+        },
+        "relationship": {
+          "ko": "남윤경의 가격 원장이 종자 시세를 매기기 시작한다면 적대적으로 돌아설 수 있다.",
+          "en": "She may turn hostile if Nam Yungyeong’s price ledger begins assigning market prices to seeds."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "온습도 로그와 이중 날인으로 종자 반출을 관리한다. 보존 업무를 평가하며 관로 대장 일화를 공학 전체 숙련으로 확대하지 않는다.",
+      "en": "He controls seed release through temperature logs and dual signatures. Preservation work is supported; a pipeline-register episode does not establish broad engineering."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -703,7 +839,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 종자보존고 책임자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자보존고 책임자. 출고는 주민대표와 안전심사의 이중 날인만 인정하고, 전시 징발 문서라도 온도 로그가 끊긴 상자에는 손을 대지 않는다.",
     "일화": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 종자보존고 책임자 자리의 서명이 장부에 올랐다.",
     "관계": "정호준의 지식 공유 맹세를 종자 쪽에서 지키고, 정하린의 반출 잠금에 복종하며, 남윤경의 가격 원장이 종자 시세를 매기기 시작하면 원한으로 돌아선다.",
@@ -711,7 +846,7 @@
     "공포": "전력 단절로 냉온고가 죽으면 보존고가 약탈 창고로 바뀌고 종자가 보호비로 흩어지는 것.",
     "개입": "비상 발전 부품을 구해 냉온고를 살리거나, 밀반출된 종자 상자를 회수해 그의 봉인을 정당화할 수 있다."
   },
-  "biography": "인내심이 길고 온습도 기록의 한 칸 빈칸도 용납하지 않는다. 씨앗을 군량 협상물로 부르는 사람을 도둑으로 본다.\n\n- 소속: 태욱그룹\n- 생업: 종자 보존·온습도 기록\n- 품계: 대리\n- 직함: 종자보존고 책임자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 종자보존고 책임자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자보존고 책임자. 출고는 주민대표와 안전심사의 이중 날인만 인정하고, 전시 징발 문서라도 온도 로그가 끊긴 상자에는 손을 대지 않는다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 종자보존고 책임자 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 지식 공유 맹세를 종자 쪽에서 지키고, 정하린의 반출 잠금에 복종하며, 남윤경의 가격 원장이 종자 시세를 매기기 시작하면 원한으로 돌아선다.\n\n**야망.** 종자 원장을 공동기술원장의 공개 자산으로 올려, 어느 강국도 한 해 농사의 유전자를 독점하지 못하게 한다.\n\n**공포.** 전력 단절로 냉온고가 죽으면 보존고가 약탈 창고로 바뀌고 종자가 보호비로 흩어지는 것.\n\n**개입.** 비상 발전 부품을 구해 냉온고를 살리거나, 밀반출된 종자 상자를 회수해 그의 봉인을 정당화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 0 | 공동 0 | 원칙 55 | 공개 30 | 자격 45 | 분산 0 | 변혁 15\n- 욕망: 갈망 45 | 독점 −20 | 위험 30 | 과시 15 | 지속 −5 | 지향 양성 | 결합 없음\n:::",
+  "biography": "인내심이 길고 온습도 기록의 한 칸 빈칸도 용납하지 않는다. 씨앗을 군량 협상물로 부르는 사람을 도둑으로 본다.\n\n- 소속: 태욱그룹\n- 생업: 종자 보존·온습도 기록\n- 품계: 대리\n- 직함: 종자보존고 책임자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 종자보존고 책임자 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자보존고 책임자. 출고는 주민대표와 안전심사의 이중 날인만 인정하고, 전시 징발 문서라도 온도 로그가 끊긴 상자에는 손을 대지 않는다.\n\n**일화.** 2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다. 이 일로 종자보존고 책임자 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 지식 공유 맹세를 종자 쪽에서 지키고, 정하린의 반출 잠금에 복종하며, 남윤경의 가격 원장이 종자 시세를 매기기 시작하면 원한으로 돌아선다.\n\n**야망.** 종자 원장을 공동기술원장의 공개 자산으로 올려, 어느 강국도 한 해 농사의 유전자를 독점하지 못하게 한다.\n\n**공포.** 전력 단절로 냉온고가 죽으면 보존고가 약탈 창고로 바뀌고 종자가 보호비로 흩어지는 것.\n\n**개입.** 비상 발전 부품을 구해 냉온고를 살리거나, 밀반출된 종자 상자를 회수해 그의 봉인을 정당화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 0 | 공동 0 | 원칙 55 | 공개 30 | 자격 45 | 분산 0 | 변혁 15\n- 욕망: 갈망 45 | 독점 −20 | 위험 30 | 과시 15 | 지속 −5 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

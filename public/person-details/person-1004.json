@@ -223,6 +223,187 @@
     "id": "K1004",
     "personId": "person-1004"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 14,
+        "effective": 14
+      },
+      "strategy": {
+        "base": 14,
+        "effective": 14
+      },
+      "negotiation": {
+        "base": 17,
+        "effective": 17
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 19,
+        "effective": 22
+      },
+      "learning": {
+        "base": 18,
+        "effective": 18
+      },
+      "prowess": {
+        "base": 17,
+        "effective": 17
+      },
+      "endurance": {
+        "base": 15,
+        "effective": 15
+      }
+    },
+    "skills": [
+      {
+        "id": "k1004-skill-1",
+        "name": {
+          "ko": "전령",
+          "en": "Courier work"
+        },
+        "rating": 90
+      },
+      {
+        "id": "k1004-skill-2",
+        "name": {
+          "ko": "정찰",
+          "en": "Reconnaissance"
+        },
+        "rating": 85
+      },
+      {
+        "id": "k1004-skill-3",
+        "name": {
+          "ko": "호위",
+          "en": "Escort"
+        },
+        "rating": 80
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1004-trait-1",
+        "name": {
+          "ko": "기민한 수행자",
+          "en": "Alert attendant"
+        },
+        "description": {
+          "ko": "위험이 달라지면 명령을 다시 판단한다.",
+          "en": "Reassesses an order when danger changes."
+        },
+        "behavior": {
+          "ko": "위험이 달라지면 명령을 다시 판단한다.",
+          "en": "Reassesses an order when danger changes."
+        },
+        "stress": {
+          "ko": "민간인이 남은 문을 닫으라는 명령에 이의를 제기한다.",
+          "en": "Objects to closing a gate while civilians remain."
+        },
+        "relationship": {
+          "ko": "조재표의 수행자이되 자기 판단에 자기 이름으로 서명한다.",
+          "en": "Serves Jo Jaepyo but signs her judgments in her own name."
+        },
+        "effects": [
+          {
+            "ability": "insight",
+            "delta": 3
+          }
+        ]
+      },
+      {
+        "id": "k1004-trait-2",
+        "name": {
+          "ko": "독립적 판단",
+          "en": "Independent judgment"
+        },
+        "description": {
+          "ko": "복종만으로 충성을 기록하지 않으려 한다.",
+          "en": "Does not accept obedience as the sole record of loyalty."
+        },
+        "behavior": {
+          "ko": "복종만으로 충성을 기록하지 않으려 한다.",
+          "en": "Does not accept obedience as the sole record of loyalty."
+        },
+        "stress": {
+          "ko": "민간인 희생과 귀환로 폐쇄 명령을 거부한다.",
+          "en": "Refuses orders sacrificing civilians or closing return routes."
+        },
+        "relationship": {
+          "ko": "조재표와 협력하면서도 명령의 모순을 공개한다.",
+          "en": "Cooperates with Jo Jaepyo while naming contradictions in his orders."
+        },
+        "effects": []
+      },
+      {
+        "id": "k1004-trait-3",
+        "name": {
+          "ko": "빼어난 외모",
+          "en": "Striking appearance"
+        },
+        "description": {
+          "ko": "눈에 띄는 아름다움은 확인되지만 교섭 성공을 보장하지 않는다.",
+          "en": "Her striking beauty is established but does not guarantee negotiation success."
+        },
+        "behavior": {
+          "ko": "눈에 띄는 아름다움은 확인되지만 교섭 성공을 보장하지 않는다.",
+          "en": "Her striking beauty is established but does not guarantee negotiation success."
+        },
+        "stress": {
+          "ko": "압박 때도 애교보다 사실·안전을 우선한다.",
+          "en": "Prioritizes fact and safety over charm under pressure."
+        },
+        "relationship": {
+          "ko": "상대 반응은 관계와 상황에 달려 있으며 자동 수치 보정은 없다.",
+          "en": "Others’ reactions depend on the relationship and situation, without an automatic modifier."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "명령을 짧게 재확인하고 위험이 달라지면 이의를 제기하는 수행 전령이다. 조재표의 문 폐쇄 명령을 민간인이 남아 있다는 이유로 공개 거부한다. 아름다운 외형보다 안전·정확성과 자기 이름의 판단 기록을 우선한다.",
+      "en": "She briefly reconfirms orders and objects when risks change. She publicly refuses Jo Jaepyo’s gate-closing order because civilians remain. Safety, accuracy, and a record in her own name take priority over her striking appearance."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S00",

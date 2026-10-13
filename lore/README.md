@@ -45,7 +45,7 @@
 
 ## 11. 문화
 - [신앙과 문화의 분열](culture/Faith-Culture-Schism.md)
-- [무공](culture/Martial-Paths.md)
+- [훈련과 상호부조](culture/Martial-Paths.md)
 - [식문화](culture/Food-Culture.md)
 - [이야기](culture/Oral-Stories.md)
 - [가치관과 정책 척도](culture/Values-and-Policy-Scales.md)

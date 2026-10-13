@@ -275,6 +275,118 @@
     "id": "K1020",
     "personId": "person-1020"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k1020-guarantee-review",
+        "name": {
+          "ko": "계약·보증 검토",
+          "en": "Contract and guarantee review"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1020-trait-1",
+        "name": {
+          "ko": "책임을 묻는 검토",
+          "en": "Review that asks who is responsible"
+        },
+        "description": {
+          "ko": "모호한 지시의 책임 범위를 확인한다.",
+          "en": "Clarifies the responsibility behind a vague instruction."
+        },
+        "behavior": {
+          "ko": "모호한 지시의 책임 범위를 확인한다.",
+          "en": "Clarifies the responsibility behind a vague instruction."
+        },
+        "stress": {
+          "ko": "압박 반응은 미확인이지만 지시를 그대로 넘기지 않는 기준은 확인된다.",
+          "en": "Stress response is unconfirmed, but the rule against passing on vague instructions is established."
+        },
+        "relationship": {
+          "ko": "고예진의 장부·채무 인수 과정에서 함께 일한다.",
+          "en": "Works with Goh Yejin during ledger and debt handover."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "모호한 지시를 그대로 넘기지 않고 책임 범위를 확인한다. 위임 안에서 계약·보증을 검토하고 정산·채권을 기록한다. 본인의 공포·언어·무장은 미정이며 자문 동료의 역량을 복사하지 않는다.",
+      "en": "She does not pass along vague instructions without clarifying responsibility. Within delegated scope she reviews contracts and guarantees and records settlements and claims. Her fears, language, and arms are unresolved; her colleague’s abilities are not copied."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",

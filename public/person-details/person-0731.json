@@ -394,6 +394,150 @@
     "id": "K731",
     "personId": "person-0731"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 50
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-unmarked-trains",
+        "name": {
+          "ko": "무표 열차 세우기",
+          "en": "Stop Unmarked Trains"
+        },
+        "description": {
+          "ko": "노바아는 배차표가 없는 열차의 출발을 허용하지 않는 확인 중심 성향을 보인다.",
+          "en": "No Baa shows a verification-centered reluctance to permit a train to depart without a dispatch sheet."
+        },
+        "behavior": {
+          "ko": "배차표 없는 열차를 세워 서명 없는 출발을 막았다.",
+          "en": "He stopped a train without a dispatch sheet and prevented an unsigned departure."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 강국의 볼모로 만들까 우려되면 출발 확인 자료의 누락에 더 주의할 수 있다.",
+          "en": "If a duty gap could make passage hostage to a powerful state, he may pay closer attention to missing departure documentation."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 배차표와 서명이 없어 출발을 세운 사실을 분명히 넘기려 할 수 있다.",
+          "en": "He may clearly tell the senior duty holder that departure was stopped because the dispatch sheet and signature were missing."
+        },
+        "effects": []
+      },
+      {
+        "id": "respect-explicit-authority",
+        "name": {
+          "ko": "명시 권한 준수",
+          "en": "Respect Explicit Authority"
+        },
+        "description": {
+          "ko": "노바아는 자기 직위에 명시된 열쇠와 기록의 범위를 지키고 없는 권한을 만들지 않는다.",
+          "en": "No Baa respects the scope of his post's keys and records and does not invent authority."
+        },
+        "behavior": {
+          "ko": "배차표와 서명의 확인 조건을 집행하면서 인계는 자기 직위의 열쇠와 기록에 한정한다.",
+          "en": "He enforces dispatch-sheet and signature checks while limiting handover to his post's keys and records."
+        },
+        "stress": {
+          "ko": "당직 공백으로 통행이 위태로워져도 확인 조건과 명시된 직위 범위에 기대려 할 수 있다.",
+          "en": "Even if a duty gap threatens passage, he may rely on verification requirements and his explicitly defined post scope."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 넘길 기록과 열쇠를 명확히 하며 권한의 경계를 유지하려 할 수 있다.",
+          "en": "He may keep authority boundaries clear with the senior duty holder by specifying the records and keys being transferred."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "배차표가 없는 열차의 출발을 세웠다. 확인 조건 집행만 근거이며 전령의 전투 기량은 미확인이다.",
+      "en": "He halted a train departing without a dispatch sheet. Conditional enforcement is supported; messenger combat ability is unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -743,7 +887,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -751,7 +894,7 @@
     "공포": "공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 배차표·출발 확인\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 40 | 원칙 20 | 공개 −15 | 자격 20 | 분산 30 | 변혁 0\n- 욕망: 갈망 45 | 독점 40 | 위험 5 | 과시 5 | 지속 5 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 배차표·출발 확인\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 40 | 원칙 20 | 공개 −15 | 자격 20 | 분산 30 | 변혁 0\n- 욕망: 갈망 45 | 독점 40 | 위험 5 | 과시 5 | 지속 5 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

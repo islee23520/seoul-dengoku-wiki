@@ -45,7 +45,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.",
+            "summary": "2126년 세대. 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -391,6 +391,142 @@
   "gurps": {
     "id": "K275",
     "personId": "person-0276"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 7,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k275-escort-timing-coordination",
+        "name": {
+          "ko": "호송 시각 조정",
+          "en": "Escort timing coordination"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k275-priority",
+        "name": {
+          "ko": "돌격보다 규율",
+          "en": "Discipline before charges"
+        },
+        "description": {
+          "ko": "권도하는 북문 순찰과 북부 호송의 시각·신호를 맞춘다. 돌격 규율은 강경하지만 전투 승리 근거는 없다.",
+          "en": "Gwon Doha coordinates northern gate patrol and escort timings and signals. His strict charge discipline does not establish battlefield victories."
+        },
+        "behavior": {
+          "ko": "출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.",
+          "en": "Office. Rank: assistant manager. Title: rail cavalry squad leader. He made wheel checks mandatory before sorties and required the Elder's and the auditor's signatures together for arms loading."
+        },
+        "stress": {
+          "ko": "궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
+          "en": "Fear. That the rail cavalry would be absorbed into a residential militia and the base would become a barracks."
+        },
+        "relationship": {
+          "ko": "이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.",
+          "en": "Relations. Held I Hongwon's north gate patrol and matched the northern convoys with Jang Sehwa. Shared the corridor signals with Kang Taesan."
+        },
+        "effects": []
+      },
+      {
+        "id": "k275-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.",
+          "en": "Office. Rank: assistant manager. Title: rail cavalry squad leader. He made wheel checks mandatory before sorties and required the Elder's and the auditor's signatures together for arms loading."
+        },
+        "stress": {
+          "ko": "공포. 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
+          "en": "Fear. That the rail cavalry would be absorbed into a residential militia and the base would become a barracks."
+        },
+        "relationship": {
+          "ko": "관계. 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.",
+          "en": "Relations. Held I Hongwon's north gate patrol and matched the northern convoys with Jang Sehwa. Shared the corridor signals with Kang Taesan."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "권도하는 북문 순찰과 북부 호송의 시각·신호를 맞춘다. 돌격 규율은 강경하지만 전투 승리 근거는 없다.",
+      "en": "Gwon Doha coordinates northern gate patrol and escort timings and signals. His strict charge discipline does not establish battlefield victories."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -788,7 +924,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.",
     "일화": "시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.",
     "관계": "이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.",
@@ -796,7 +931,7 @@
     "공포": "궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.",
     "개입": "제동 장치를 현장에서 교체하거나, 궤도기병의 무단 무장을 회장실에 보고할 수 있다."
   },
-  "biography": "규율을 좋아하고 선로 위의 침묵을 전투의 일부로 본다. 숙련 없는 돌격은 배신에 가깝다고 말한다.\n\n- 생업: 차륜 점검·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 궤도기병 반장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.\n\n**일화.** 시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.\n\n**야망.** 북문 순찰을 강남역 호송의 북문로 묶어 바깥 작업장의 통행세 없이 성하전자 열차를 움직인다.\n\n**공포.** 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.\n\n**개입.** 제동 장치를 현장에서 교체하거나, 궤도기병의 무단 무장을 회장실에 보고할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 5 | 물질 40 | 공동 30 | 원칙 15 | 공개 −5 | 자격 70 | 분산 20 | 변혁 −25\n- 욕망: 갈망 35 | 독점 15 | 위험 10 | 과시 30 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "규율을 좋아하고 선로 위의 침묵을 전투의 일부로 본다. 숙련 없는 돌격은 배신에 가깝다고 말한다.\n\n- 생업: 차륜 점검·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 궤도기병 반장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 강남역 궤도기병 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 궤도기병 반장. 출격 전에 차륜 점검을 의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다.\n\n**일화.** 시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다. 강태산과 회랑 신호를 공유한다.\n\n**야망.** 북문 순찰을 강남역 호송의 북문로 묶어 바깥 작업장의 통행세 없이 성하전자 열차를 움직인다.\n\n**공포.** 궤도기병이 사택 민병으로 흡수되어 기지가 병영이 되는 것.\n\n**개입.** 제동 장치를 현장에서 교체하거나, 궤도기병의 무단 무장을 회장실에 보고할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 5 | 물질 40 | 공동 30 | 원칙 15 | 공개 −5 | 자격 70 | 분산 20 | 변혁 −25\n- 욕망: 갈망 35 | 독점 15 | 위험 10 | 과시 30 | 지속 30 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-11"
   ],

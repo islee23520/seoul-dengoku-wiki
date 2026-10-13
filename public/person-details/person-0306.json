@@ -285,6 +285,142 @@
     "id": "K305",
     "personId": "person-0306"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 7,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k305-escort-patrol-allocation",
+        "name": {
+          "ko": "호송 순찰 배치",
+          "en": "Escort patrol allocation"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k305-priority",
+        "name": {
+          "ko": "발포 자랑 거부",
+          "en": "Rejects boasts about firing"
+        },
+        "description": {
+          "ko": "감국은 칸별 인원을 나누고 봉인 명령 전 발포를 막는다. 순찰열차와 마주친 일화는 교전을 이겼다는 뜻이 아니다.",
+          "en": "Gamguk distributes personnel by car and blocks fire before sealed orders. Meeting a patrol train does not mean winning a fight."
+        },
+        "behavior": {
+          "ko": "호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
+          "en": "Office. Rank: convoy hand. Title: northeast outer-road patrol, duty officer of Ha Seon. He mixed convoy personnel into the medical cars and the freight cars and granted firing authority only before Jang Sehwa's sealed order."
+        },
+        "stress": {
+          "ko": "순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
+          "en": "Fear. That the patrol would meet the Amsa patrol train and one exchange of fire would turn neutrality into war."
+        },
+        "relationship": {
+          "ko": "하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
+          "en": "Relations. Rounded the outer road under Ha Seon's command and confirmed Mun Sion's examination-stand seals on the road. He left none of Bae Woojin's protection searches in the patrol ledger."
+        },
+        "effects": []
+      },
+      {
+        "id": "k305-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
+          "en": "Office. Rank: convoy hand. Title: northeast outer-road patrol, duty officer of Ha Seon. He mixed convoy personnel into the medical cars and the freight cars and granted firing authority only before Jang Sehwa's sealed order."
+        },
+        "stress": {
+          "ko": "공포. 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
+          "en": "Fear. That the patrol would meet the Amsa patrol train and one exchange of fire would turn neutrality into war."
+        },
+        "relationship": {
+          "ko": "관계. 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
+          "en": "Relations. Rounded the outer road under Ha Seon's command and confirmed Mun Sion's examination-stand seals on the road. He left none of Bae Woojin's protection searches in the patrol ledger."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "감국은 칸별 인원을 나누고 봉인 명령 전 발포를 막는다. 순찰열차와 마주친 일화는 교전을 이겼다는 뜻이 아니다.",
+      "en": "Gamguk distributes personnel by car and blocks fire before sealed orders. Meeting a patrol train does not mean winning a fight."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -691,7 +827,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.",
     "일화": "겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.",
     "관계": "하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.",
@@ -699,7 +834,7 @@
     "공포": "순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
     "개입": "교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다."
   },
-  "biography": "낙관적인 상관의 공백을 현장에서 메우고, 적은 병력으로 긴 열차를 지키는 침묵을 안다. 발포를 자랑하는 사람을 호송에서 내린다.\n\n- 생업: 외곽 호송 인원·발포 권한 확인\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 동북 외곽로 순찰대, 하세온의 실무 담당자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.\n\n**일화.** 겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.\n\n**관계.** 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.\n\n**야망.** 중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명한다.\n\n**공포.** 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.\n\n**개입.** 교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −15 | 물질 5 | 공동 20 | 원칙 0 | 공개 25 | 자격 20 | 분산 45 | 변혁 −5\n- 욕망: 갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "낙관적인 상관의 공백을 현장에서 메우고, 적은 병력으로 긴 열차를 지키는 침묵을 안다. 발포를 자랑하는 사람을 호송에서 내린다.\n\n- 생업: 외곽 호송 인원·발포 권한 확인\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 동북 외곽로 순찰대, 하세온의 실무 담당자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동북 외곽로 순찰대, 하세온의 실무 담당자 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 호송원. 직함은 동북 외곽로 순찰대, 하세온의 실무 담당자. 호송 인원을 의료칸과 화물칸에 섞어 두고, 발포 권한은 장세화의 봉인된 명령 전에는 주지 않는다.\n\n**일화.** 겨울 배차 조사 중 호송대가 암사 순찰열차와 망우 외곽에서 정면으로 마주쳤다.\n\n**관계.** 하세온의 지휘로 외곽로를 돌고, 문시온의 심사대 봉인을 길에서 확인한다. 배우진의 보호 검색을 순찰 원장에 남기지 않는다.\n\n**야망.** 중립 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명한다.\n\n**공포.** 순찰이 암사 순찰열차와 마주쳐 교전 한 방으로 중립이 전쟁으로 바뀌는 것.\n\n**개입.** 교전을 피하도록 신호기를 전달하거나, 발포 명령을 위조한 쪽을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 35 | 무력 −15 | 물질 5 | 공동 20 | 원칙 0 | 공개 25 | 자격 20 | 분산 45 | 변혁 −5\n- 욕망: 갈망 40 | 독점 −15 | 위험 −35 | 과시 20 | 지속 40 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-12"
   ],

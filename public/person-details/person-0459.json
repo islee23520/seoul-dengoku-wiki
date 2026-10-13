@@ -394,6 +394,150 @@
     "id": "K459",
     "personId": "person-0459"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 50
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-defective-trains",
+        "name": {
+          "ko": "결함 열차 정지",
+          "en": "Stop Defective Trains"
+        },
+        "description": {
+          "ko": "우경민은 확인된 차륜 결함 앞에서 운행 지속보다 열차 정지를 택했다.",
+          "en": "Woo Gyeongmin chose stopping the train over continued movement when a wheel defect was confirmed."
+        },
+        "behavior": {
+          "ko": "유치선 탈선 직전 바퀴 결함을 손으로 확인해 열차를 세웠다.",
+          "en": "They detected a wheel defect by touch and stopped the train just before a siding derailment."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 외부 세력의 볼모로 만들 우려가 있어도 확인된 결함을 무시해 운행을 잇지는 않으려 할 수 있다.",
+          "en": "Even if duty gaps threaten passage autonomy, they may resist maintaining movement by ignoring a confirmed defect."
+        },
+        "relationship": {
+          "ko": "선배 당직에게 정지 사유와 확인한 결함을 기록으로 넘겨 다음 판단의 근거를 공유하려 할 수 있다.",
+          "en": "They may share the stopping reason and confirmed defect in handover records so the senior duty holder has a basis for the next decision."
+        },
+        "effects": []
+      },
+      {
+        "id": "respect-handover-limits",
+        "name": {
+          "ko": "인계 범위 지키기",
+          "en": "Respect Handover Limits"
+        },
+        "description": {
+          "ko": "우경민은 당직을 이어도 자기 직위에 없는 권한까지 만들어 넘기지 않는 태도를 지닌다.",
+          "en": "Woo Gyeongmin maintains duty continuity without inventing authority beyond their role."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 인계하고 확인한 차륜 결함과 열차 정지 사실을 그 기록 범위에서 전달한다.",
+          "en": "They hand over only their role's keys and records, conveying the confirmed wheel defect and train stop within that record scope."
+        },
+        "stress": {
+          "ko": "물류 당직 공백으로 통행이 위협받으면 맡은 인계를 완결하려 하되 없는 권한으로 공백을 메우는 일에는 신중할 수 있다.",
+          "en": "If a logistics duty gap threatens passage, they may complete their handover while remaining cautious about filling gaps with authority they do not hold."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 인계할 열쇠와 기록의 경계를 분명히 해 책임을 나누려 할 수 있다.",
+          "en": "They may share responsibility with the senior duty holder by clarifying the boundaries of keys and records being handed over."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "차륜 결함을 만져 확인해 열차를 세웠다. 좁은 점검 실적이며 물류 직함에서 가격 협상이나 차량 제조를 추정하지 않는다.",
+      "en": "She felt a wheel defect and stopped the train. Narrow inspection is supported, not price negotiation or vehicle manufacture inferred from a logistics title."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -908,7 +1052,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -916,7 +1059,7 @@
     "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −15 | 물질 30 | 공동 20 | 원칙 −5 | 공개 −15 | 자격 25 | 분산 30 | 변혁 −5\n- 욕망: 갈망 50 | 독점 10 | 위험 35 | 과시 15 | 지속 30 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 0 | 무력 −15 | 물질 30 | 공동 20 | 원칙 −5 | 공개 −15 | 자격 25 | 분산 30 | 변혁 −5\n- 욕망: 갈망 50 | 독점 10 | 위험 35 | 과시 15 | 지속 30 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

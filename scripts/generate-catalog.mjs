@@ -34,11 +34,14 @@ import { projectOutsideOccupation } from './outside-occupation.mjs'
 import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
 import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
+import { loadCharacterProfiles } from './validate-character-profiles.mjs'
+import { publicCharacterProfile } from './character-profile.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = projectRoot
 // Fail before touching generated output when either revision is unbound or invalid.
 const preservedSheets = loadPreservedPersonSheets()
+const characterProfiles = await loadCharacterProfiles(projectRoot)
 const worldJsonRoot = resolve(projectRoot, 'src/generated/world')
 const worldEnJsonRoot = resolve(projectRoot, 'src/generated/world-en')
 const generatedRoot = resolve(projectRoot, 'src/generated')
@@ -1085,6 +1088,7 @@ for (const person of peopleCatalog) {
     household: householdsById.get(issuedId),
     ...(personRightsPermissions.has(issuedId) ? { rightsPermissions: personRightsPermissions.get(issuedId) } : {}),
     gurps: { id: issuedId, personId: person.id },
+    characterProfile: publicCharacterProfile(characterProfiles.get(issuedId)),
     personSheet: projectPreservedPersonSheet(preservedSheets, {
       id: issuedId, personId: person.id, name: person.name, state: person.state, url: person.detailRoute,
     }),

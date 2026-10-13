@@ -285,6 +285,150 @@
     "id": "K097",
     "personId": "person-0098"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "boat",
+        "name": {
+          "ko": "패킹 우회 수송",
+          "en": "Packing rerouting by boat"
+        },
+        "rating": 65
+      },
+      {
+        "id": "trade",
+        "name": {
+          "ko": "공개 조건 물류 거래",
+          "en": "Logistics under disclosed terms"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "civilian-boxes-first",
+        "name": {
+          "ko": "민수 상자 먼저",
+          "en": "Civilian Boxes First"
+        },
+        "description": {
+          "ko": "구도영은 군수 상자보다 민수용 패킹의 선적 자리를 먼저 확보한다.",
+          "en": "Gu Doyeong secures loading space for civilian packing before military boxes."
+        },
+        "behavior": {
+          "ko": "민수 패킹을 같은 배에 한 줄 실은 뒤에만 군수 상자를 태운다.",
+          "en": "Gu loads military boxes only after a row of civilian packing is aboard the same boat."
+        },
+        "stress": {
+          "ko": "군화만 배에 오르고 민수 패킹이 선창에서 썩을 우려가 커지면 민수 선적 조건을 더 엄격히 지킬 수 있다.",
+          "en": "If only boots risk being shipped while civilian packing rots at the wharf, Gu may enforce the civilian-loading condition more strictly."
+        },
+        "relationship": {
+          "ko": "임채원과 선창을 다투더라도 필터 패킹을 함께 실을 수 있다면 제한된 협력을 유지할 수 있다.",
+          "en": "Despite competing with Im Chaewon for wharf space, Gu may maintain limited cooperation when filter packing can travel together."
+        },
+        "effects": []
+      },
+      {
+        "id": "bypass-tolls",
+        "name": {
+          "ko": "통행세 우회",
+          "en": "Bypass Tolls"
+        },
+        "description": {
+          "ko": "구도영은 통행세가 패킹 운송을 막으면 민수 화물을 다른 수송 경로로 돌리려 한다.",
+          "en": "Gu Doyeong favors rerouting civilian cargo when tolls obstruct packing transport."
+        },
+        "behavior": {
+          "ko": "동부 교량 통행세가 붙자 패킹 끈을 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 남겼다.",
+          "en": "When eastern bridge tolls were imposed, Gu rerouted packing straps to a Guui-side ferry and left boots at the Seongsu wharf."
+        },
+        "stress": {
+          "ko": "민수 패킹이 선창에 묶일 우려가 커지면 군수 화물과 분리한 우회 수송을 더 고려할 수 있다.",
+          "en": "If civilian packing risks being stranded at the wharf, Gu may give greater consideration to rerouting it separately from military cargo."
+        },
+        "relationship": {
+          "ko": "유하은의 가죽 마감 시각과 계약을 지키기 위해 경로가 바뀌면 선적 일정을 다시 맞출 수 있다.",
+          "en": "Gu may readjust loading schedules after route changes to honor Yu Haeun's leather-finishing times and contract."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "통행세 때 패킹을 다른 나룻배로 돌리고 군화는 선창에 남겼다. 수송 대안과 민수 우선이 근거이며 군사 동맹 체결 경력은 없다.",
+      "en": "He rerouted packing by boat under a toll while leaving boots at the wharf. Transport alternatives and civilian priorities are supported, not military alliance-making."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -767,7 +911,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.",
     "일화": "동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.",
     "관계": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.",
@@ -775,7 +918,7 @@
     "공포": "군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 것.",
     "개입": "통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다."
   },
-  "biography": "상자 끈의 매듭이 공방마다 다르면 출처를 묻지 않고 되돌려 보낸다. 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 앞에서는 웃지 않는다.\n\n- 소속: 명부교회\n- 생업: 패킹 수상 운송\n- 품계: 교사\n- 직함: 성수 패킹운송 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.\n\n**일화.** 동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.\n\n**관계.** 유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.\n\n**야망.** 끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.\n\n**공포.** 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 것.\n\n**개입.** 통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −30 | 물질 50 | 공동 30 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
+  "biography": "상자 끈의 매듭이 공방마다 다르면 출처를 묻지 않고 되돌려 보낸다. 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 앞에서는 웃지 않는다.\n\n- 소속: 명부교회\n- 생업: 패킹 수상 운송\n- 품계: 교사\n- 직함: 성수 패킹운송 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 성수 패킹운송 물류상 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 교사. 직함은 성수 패킹운송 물류상. 끈 매듭과 나룻배 시각을 선창 칠판에 적고, 군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 태운다.\n\n**일화.** 동부 교량 통행세가 가죽 상자에 붙자 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화는 성수 선창에 쌓아 두었다.\n\n**관계.** 유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고, 한소미의 공정 분할에서 패킹 끈 색을 나눈다. 임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 싣는다.\n\n**야망.** 끈 색이 다른 상자를 한 배에 태워, 물과 나사가 선창을 서로 붙잡지 못하게 한다.\n\n**공포.** 군화 상자만 나룻배에 오르고 민수 패킹이 성수 선창에서 썩는 것.\n\n**개입.** 통행세 없는 우회 배를 열거나, 선창에 쌓인 군화의 발주 쪽지를 칠판에 붙일 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −30 | 물질 50 | 공동 30 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −5 | 위험 35 | 과시 10 | 지속 20 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

@@ -287,6 +287,150 @@
     "id": "K079",
     "personId": "person-0079"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "disclose",
+        "name": {
+          "ko": "검사표 공개 입회",
+          "en": "Witnessing inspection disclosure"
+        },
+        "rating": 60
+      },
+      {
+        "id": "sample",
+        "name": {
+          "ko": "표본 기록 심사",
+          "en": "Sample-record review"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "resist-disclosure-delays",
+        "name": {
+          "ko": "공개 지연 불복",
+          "en": "Resist Disclosure Delays"
+        },
+        "description": {
+          "ko": "고초윤은 혼란 방지를 명분으로 검사 공개를 늦추는 것을 정치적 개입으로 본다.",
+          "en": "Go Choyun regards delaying inspection disclosure to prevent unrest as political interference."
+        },
+        "behavior": {
+          "ko": "지연 명령서는 받은 시각만 기록하고 집행하지 않으며 공개 시각을 흥정하지 않는다.",
+          "en": "Go Choyun records only the receipt time of delay orders, does not execute them, and refuses to bargain over disclosure timing."
+        },
+        "stress": {
+          "ko": "은폐가 급수와 냉동재고를 함께 무너뜨릴 우려가 커지면 지연 명령에 더욱 단호할 수 있다.",
+          "en": "If concealment threatens both water supplies and frozen stocks, Go Choyun may become firmer against delay orders."
+        },
+        "relationship": {
+          "ko": "정호준의 즉시 공개론을 따르면서도 봉인 해제에는 주민대표와 안전심사의 동시 날인을 요구할 수 있다.",
+          "en": "Go Choyun may follow Jeong Hojun's immediate-disclosure position while still requiring simultaneous resident and safety-review stamps for unsealing."
+        },
+        "effects": []
+      },
+      {
+        "id": "no-missing-inspection-figures",
+        "name": {
+          "ko": "검사 숫자 공백 거부",
+          "en": "No Missing Inspection Figures"
+        },
+        "description": {
+          "ko": "고초윤은 탁도 수치 한 칸의 누락도 검사 공개의 결함으로 여긴다.",
+          "en": "Go Choyun treats even one missing turbidity figure as a defect in inspection disclosure."
+        },
+        "behavior": {
+          "ko": "탁도 숫자의 빈칸을 용납하지 않으며 봉인 구역 진입 허가를 거절한 사건에서는 우회 검증을 설계했다.",
+          "en": "Go Choyun rejects blank turbidity entries and designed alternative verification in the incident involving refusal of sealed-zone entry permission."
+        },
+        "stress": {
+          "ko": "은폐의 책임이 연구자에게 전가될 우려가 있으면 검사 수치의 공백을 더욱 경계할 수 있다.",
+          "en": "If researchers risk being blamed for concealment, Go Choyun may be especially wary of gaps in inspection figures."
+        },
+        "relationship": {
+          "ko": "장예린의 검사망을 증언으로 뒷받침할 때도 수치가 빠지지 않은 공개 기록을 중시할 수 있다.",
+          "en": "When supporting Jang Yerin's inspection network through testimony, Go Choyun may emphasize complete public numerical records."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "검사표의 이중 날인을 확인하고 우회 검증을 설계했다. 공개 입회와 검증 설계를 평가하며 검사망 전체 운영을 복사하지 않는다.",
+      "en": "He checks dual signatures and designed alternate verification. Disclosure witnessing is supported without copying control of the entire inspection network."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -668,7 +812,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 마곡 시험동에서 자랐다. 수질 검사 공개 증인 자리는 표본 이중 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 검사 공개 증인. 검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다.",
     "일화": "2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 수질 검사 공개 증인 자리의 서명이 장부에 올랐다.",
     "관계": "장예린의 검사망 운영을 증언으로 받치고, 정호준의 즉시 공개론을 따르며, 여의도의 엄새울에게 탁수 표본의 공개본을 돌려준다.",
@@ -676,7 +819,7 @@
     "공포": "하루의 은폐가 노량진 냉동재고와 서부 급수를 동시에 무너뜨리고, 그 책임을 연구자가 뒤집어쓰는 것.",
     "개입": "봉인 표본을 지켜 그의 게시를 확정하거나, 숫자 칸을 고친 흔적을 찾아 증인을 실격시킬 수 있다."
   },
-  "biography": "탁도 숫자 한 칸의 빈칸도 용납하지 않고, 혼란 방지를 위한 지연을 과학이 아니라 정치로 부른다. 공개 시각을 흥정 거리로 삼지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 수질 검사 공개 입회\n- 품계: 대리\n- 직함: 수질 검사 공개 증인\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 수질 검사 공개 증인 자리는 표본 이중 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 검사 공개 증인. 검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 수질 검사 공개 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 장예린의 검사망 운영을 증언으로 받치고, 정호준의 즉시 공개론을 따르며, 여의도의 엄새울에게 탁수 표본의 공개본을 돌려준다.\n\n**야망.** 기준 초과 즉시 공개를 공동기술원장의 거부할 수 없는 조항으로 올려, 선출 군주의 공급 유지 지시가 검사를 삼키지 못하게 한다.\n\n**공포.** 하루의 은폐가 노량진 냉동재고와 서부 급수를 동시에 무너뜨리고, 그 책임을 연구자가 뒤집어쓰는 것.\n\n**개입.** 봉인 표본을 지켜 그의 게시를 확정하거나, 숫자 칸을 고친 흔적을 찾아 증인을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 10 | 공동 −10 | 원칙 40 | 공개 30 | 자격 50 | 분산 5 | 변혁 5\n- 욕망: 갈망 10 | 독점 10 | 위험 −10 | 과시 0 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "탁도 숫자 한 칸의 빈칸도 용납하지 않고, 혼란 방지를 위한 지연을 과학이 아니라 정치로 부른다. 공개 시각을 흥정 거리로 삼지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 수질 검사 공개 입회\n- 품계: 대리\n- 직함: 수질 검사 공개 증인\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 수질 검사 공개 증인 자리는 표본 이중 봉인으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 검사 공개 증인. 검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 수질 검사 공개 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 장예린의 검사망 운영을 증언으로 받치고, 정호준의 즉시 공개론을 따르며, 여의도의 엄새울에게 탁수 표본의 공개본을 돌려준다.\n\n**야망.** 기준 초과 즉시 공개를 공동기술원장의 거부할 수 없는 조항으로 올려, 선출 군주의 공급 유지 지시가 검사를 삼키지 못하게 한다.\n\n**공포.** 하루의 은폐가 노량진 냉동재고와 서부 급수를 동시에 무너뜨리고, 그 책임을 연구자가 뒤집어쓰는 것.\n\n**개입.** 봉인 표본을 지켜 그의 게시를 확정하거나, 숫자 칸을 고친 흔적을 찾아 증인을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 10 | 공동 −10 | 원칙 40 | 공개 30 | 자격 50 | 분산 5 | 변혁 5\n- 욕망: 갈망 10 | 독점 10 | 위험 −10 | 과시 0 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

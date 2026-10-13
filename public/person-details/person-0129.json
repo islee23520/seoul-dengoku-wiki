@@ -286,6 +286,142 @@
     "id": "K128",
     "personId": "person-0129"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 7,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 11,
+        "effective": 11
+      }
+    },
+    "skills": [
+      {
+        "id": "k128-sealed-delivery",
+        "name": {
+          "ko": "봉함 전달",
+          "en": "Sealed delivery"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k128-choice",
+        "name": {
+          "ko": "두 날인 확인",
+          "en": "Checks both approvals"
+        },
+        "description": {
+          "ko": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 원장에 올리지 않는 사신을 위조로 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.",
+          "en": "She refused departure whenever a seal cord sat loose and read any envoy who did not put verbal dispatches into the ledger as a forger. Short of breath or not, she held two copies in one hand."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he caught a night illegal crosser and reissued the guard code tags. By this deed the signature of the water-supply escort courier post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That one forged water dispatch would trigger a collective blockade and the courier network would become the coup's horn. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
+          "en": "Relations. Under command to carry Kim Woochan's operations table only under seal, held a contract delivering Im Gyeore's deadline clause to the lesser states, and weighed each time whether to pass ratification copies to Yun Seorin."
+        },
+        "effects": []
+      },
+      {
+        "id": "k128-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.",
+          "en": "Office. Rank: sergeant. Title: water-supply escort courier. He sent the dispatches to the administration bureau and the escort at once, and a dispatch formation ran only with both Jeong Soyul's rehearing stamp and Kim Woochan's operations table."
+        },
+        "behavior": {
+          "ko": "관직. 품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.",
+          "en": "Office. Rank: sergeant. Title: water-supply escort courier. He sent the dispatches to the administration bureau and the escort at once, and a dispatch formation ran only with both Jeong Soyul's rehearing stamp and Kim Woochan's operations table."
+        },
+        "stress": {
+          "ko": "공포. 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That one forged water dispatch would trigger a collective blockade and the courier network would become the coup's horn. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
+          "en": "Relations. Under command to carry Kim Woochan's operations table only under seal, held a contract delivering Im Gyeore's deadline clause to the lesser states, and weighed each time whether to pass ratification copies to Yun Seorin."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125 he caught a night illegal crosser and reissued the guard code tags. By this deed the signature of the water-supply escort courier post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -746,7 +882,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다.",
     "관계": "김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
@@ -754,7 +889,7 @@
     "공포": "위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 파견안을 무력화할 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 원장에 올리지 않는 사신을 위조로 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 동방사\n- 생업: 행정·군사 전갈 봉함 전달\n- 품계: 병장\n- 직함: 동방사 전령\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.\n\n**야망.** 동부 보호군 파견과 비상감독 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 파견안을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −50 | 무력 80 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −30 | 자격 −20 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 30 | 위험 25 | 과시 −25 | 지속 −15 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 원장에 올리지 않는 사신을 위조로 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 동방사\n- 생업: 행정·군사 전갈 봉함 전달\n- 품계: 병장\n- 직함: 동방사 전령\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.\n\n**야망.** 동부 보호군 파견과 비상감독 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 파견안을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −50 | 무력 80 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −30 | 자격 −20 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 30 | 위험 25 | 과시 −25 | 지속 −15 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-05"
   ],

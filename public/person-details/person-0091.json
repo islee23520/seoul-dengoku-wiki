@@ -287,6 +287,150 @@
     "id": "K090",
     "personId": "person-0091"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 7,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "bridge",
+        "name": {
+          "ko": "교량 출입 통제",
+          "en": "Bridge entry control"
+        },
+        "rating": 60
+      },
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "undivided-night-command",
+        "name": {
+          "ko": "야간 지휘 불분할",
+          "en": "Undivided Night Command"
+        },
+        "description": {
+          "ko": "김보람은 주간 협의와 달리 야간 펌프수비 지휘를 나누지 않으려 한다.",
+          "en": "Kim Boram resists dividing nighttime pump-defense command despite accepting daytime consultation."
+        },
+        "behavior": {
+          "ko": "주간 교대 명부는 당회와 공유하지만 야간 출입은 암호패와 공정 감독의 이중 확인으로 제한한다.",
+          "en": "Kim shares daytime shift rosters with the assembly but restricts night entry through code tokens and process-supervisor confirmation."
+        },
+        "stress": {
+          "ko": "점검 공백이 보호군 주둔 명분이 될 우려가 커지면 야간 지휘와 출입 통제를 더 고수할 수 있다.",
+          "en": "If inspection gaps risk becoming a pretext for protection-force occupation, Kim may hold more firmly to nighttime command and access control."
+        },
+        "relationship": {
+          "ko": "한소미의 연서를 주간에는 따르더라도 야간 지휘를 나누자는 요구에는 선을 그을 수 있다.",
+          "en": "Kim may follow Han Somi's co-signatures by day while drawing a boundary against sharing night command."
+        },
+        "effects": []
+      },
+      {
+        "id": "no-outsourced-defense",
+        "name": {
+          "ko": "수비 외주 거부",
+          "en": "No Outsourced Defense"
+        },
+        "description": {
+          "ko": "김보람은 보호군 명목으로 펌프 수비를 넘기는 일을 배신으로 여긴다.",
+          "en": "Kim Boram regards handing pump defense to a protection force as betrayal."
+        },
+        "behavior": {
+          "ko": "펌프와 동부 교량 접근을 수비대의 단독 봉쇄권으로 묶으려 한다.",
+          "en": "Kim seeks to place pumps and eastern bridge approaches under the guards' exclusive closure authority."
+        },
+        "stress": {
+          "ko": "암사 보호군이 점검 공백을 구원으로 포장하면 외부 수비 이양을 더 강하게 거부할 수 있다.",
+          "en": "If Amsa's protection force presents inspection gaps as a rescue opportunity, Kim may resist transferring defense even more strongly."
+        },
+        "relationship": {
+          "ko": "최나래와 교량 순찰을 협력하더라도 급수 창구를 닫는 봉쇄는 장민재와 변오름의 반발을 부를 수 있다.",
+          "en": "Even while sharing bridge patrols with Choe Narae, Kim's counter-closing blockades may provoke resistance from Jang Minjae and Byeon Oreum."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "교대 명부와 이중 출입 확인을 운영하고 결함 열차를 세웠다. 수비 조직 근거는 있으나 장수의 전투 실적이나 무장은 가져오지 않았다.",
+      "en": "He manages shifts and dual entry checks and stopped a defective train. Defense organization is supported, not a general’s combat record or weapons."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -1061,7 +1205,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프수비대장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 뚝섬 펌프수비대장. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.",
     "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.",
     "관계": "한소미의 평의회 연서를 주간에 따르지만 야간 지휘는 나누지 않고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 임하준 실종을 자신의 경비 실패로 여긴다.",
@@ -1069,7 +1212,7 @@
     "공포": "암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 것.",
     "개입": "외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 대장을 교체하게 할 수 있다."
   },
-  "biography": "신의가 강하고 직선적이며 펌프실의 진동이 바뀌면 회의를 중단시킨다. 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다.\n\n- 소속: 명부교회\n- 생업: 펌프실 경비·출입 통제\n- 품계: 교사\n- 직함: 뚝섬 펌프수비대장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프수비대장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 뚝섬 펌프수비대장. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 평의회 연서를 주간에 따르지만 야간 지휘는 나누지 않고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 임하준 실종을 자신의 경비 실패로 여긴다.\n\n**야망.** 정수 펌프와 동부 교량 접근을 수비대 단독 봉쇄권으로 묶어, 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 것.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 −10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 5 | 공개 −20 | 자격 50 | 분산 15 | 변혁 5\n- 욕망: 갈망 0 | 독점 5 | 위험 55 | 과시 25 | 지속 −5 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "신의가 강하고 직선적이며 펌프실의 진동이 바뀌면 회의를 중단시킨다. 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다.\n\n- 소속: 명부교회\n- 생업: 펌프실 경비·출입 통제\n- 품계: 교사\n- 직함: 뚝섬 펌프수비대장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 뚝섬 펌프수비대장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 뚝섬 펌프수비대장. 주간은 당회와 교대 명부를 공유하고, 야간 펌프실 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 뚝섬 펌프수비대장 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 평의회 연서를 주간에 따르지만 야간 지휘는 나누지 않고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 임하준 실종을 자신의 경비 실패로 여긴다.\n\n**야망.** 정수 펌프와 동부 교량 접근을 수비대 단독 봉쇄권으로 묶어, 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 것.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 수비대 암호패 유출을 밝혀 대장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 −10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 5 | 공개 −20 | 자격 50 | 분산 15 | 변혁 5\n- 욕망: 갈망 0 | 독점 5 | 위험 55 | 과시 25 | 지속 −5 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

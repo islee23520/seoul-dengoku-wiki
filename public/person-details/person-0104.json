@@ -394,6 +394,150 @@
     "id": "K103",
     "personId": "person-0104"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "water-board",
+        "name": {
+          "ko": "급수 게시판 운영",
+          "en": "Water-supply notice management"
+        },
+        "rating": 60
+      },
+      {
+        "id": "referral",
+        "name": {
+          "ko": "공개 창구 안내",
+          "en": "Public-channel referral"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "water-supply-channels-first",
+        "name": {
+          "ko": "급수 창구 우선",
+          "en": "Water Supply Channels First"
+        },
+        "description": {
+          "ko": "변오름은 대합실 운영에서 군수 화차보다 주민의 급수 창구를 먼저 지킨다.",
+          "en": "Byeon Oreum prioritizes residents' water-service counters over military freight cars in waiting-hall operations."
+        },
+        "behavior": {
+          "ko": "수압 게시판을 대합실로 옮기고 군수 화차를 급수 창구 앞에 두지 않는다.",
+          "en": "Byeon brings water-pressure boards into the waiting hall and keeps military freight cars away from water-service counters."
+        },
+        "stress": {
+          "ko": "계약 만료가 집단 단수로 번질 우려가 커지면 대합실의 급수 정보와 창구 접근을 더 중시할 수 있다.",
+          "en": "If contract expiry threatens collective water cutoffs, Byeon may place greater emphasis on waiting-hall supply information and counter access."
+        },
+        "relationship": {
+          "ko": "장민재의 급수권을 창구에서 집행하되 김보람의 봉쇄가 창구를 닫으면 충돌할 수 있다.",
+          "en": "Byeon may enforce Jang Minjae's water rights at the counter while clashing with Kim Boram if closures shut it."
+        },
+        "effects": []
+      },
+      {
+        "id": "turn-away-favor-requests",
+        "name": {
+          "ko": "청탁 돌려보내기",
+          "en": "Turn Away Favor Requests"
+        },
+        "description": {
+          "ko": "변오름은 사적 청탁보다 누구나 이용하는 공개 창구를 통한 처리를 선호한다.",
+          "en": "Byeon Oreum favors handling requests through publicly accessible counters rather than private favors."
+        },
+        "behavior": {
+          "ko": "2125년 사적 청탁을 받아들이지 않고 요청자를 공개 창구로 보냈다.",
+          "en": "In 2125, Byeon turned away a private favor request and directed the requester to the public counter."
+        },
+        "stress": {
+          "ko": "단수 위험으로 창구의 중요성이 커지면 사적 요청보다 공개 절차를 지키려 할 수 있다.",
+          "en": "As cutoff risks make the counter more important, Byeon may try to preserve public procedures over private requests."
+        },
+        "relationship": {
+          "ko": "한소미와 협력하더라도 생활 복구 공약을 공개 방송으로 감시하는 태도를 유지할 수 있다.",
+          "en": "Even when cooperating with Han Somi, Byeon may retain a public-broadcast approach to monitoring recovery promises."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "수압 게시판을 대합실로 옮기고 공개 창구로 청탁을 보낸다. 주민 권리의 방송 집행이 중심이며 시민대표의 모든 역량을 복사하지 않았다.",
+      "en": "He brings pressure notices into the concourse and redirects favor requests. Broadcast enforcement of resident rights is central, without copying every ability of the citizen representative."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -797,7 +941,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 성수 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 집사. 직함은 성수 대합실 역장. 골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 성수 대합실 역장 자리의 서명이 장부에 올랐다.",
     "관계": "장민재의 시민 급수권을 대합실 창구에서 집행하고, 한소미의 생활 복구 공약을 승강장 방송으로 감시하며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.",
@@ -805,7 +948,7 @@
     "공포": "총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.",
     "개입": "수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 역장 연서를 무효로 만들 수 있다."
   },
-  "biography": "골목 수도꼭지가 마르면 공방 회의를 사치로 여기고, 후계자 이름보다 저수조 수위를 먼저 묻는다. 온화하나 군수 화차를 급수 창구 앞에 두지 않는다.\n\n- 소속: 명부교회\n- 생업: 대합실 급수 창구 당직\n- 품계: 집사\n- 직함: 성수 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 성수 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 집사. 직함은 성수 대합실 역장. 골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 성수 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장민재의 시민 급수권을 대합실 창구에서 집행하고, 한소미의 생활 복구 공약을 승강장 방송으로 감시하며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.\n\n**야망.** 성수 대합실을 급수 최저선과 공방 출고가 한 지붕에서 서명되는 중앙권역 허브로 만들어 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.\n\n**개입.** 수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 역장 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 −15 | 물질 20 | 공동 25 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 5\n- 욕망: 갈망 0 | 독점 −30 | 위험 40 | 과시 5 | 지속 5 | 지향 유동 | 결합 없음\n:::",
+  "biography": "골목 수도꼭지가 마르면 공방 회의를 사치로 여기고, 후계자 이름보다 저수조 수위를 먼저 묻는다. 온화하나 군수 화차를 급수 창구 앞에 두지 않는다.\n\n- 소속: 명부교회\n- 생업: 대합실 급수 창구 당직\n- 품계: 집사\n- 직함: 성수 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 성수 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 집사. 직함은 성수 대합실 역장. 골목별 수압 게시판을 대합실에도 옮기고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 성수 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장민재의 시민 급수권을 대합실 창구에서 집행하고, 한소미의 생활 복구 공약을 승강장 방송으로 감시하며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.\n\n**야망.** 성수 대합실을 급수 최저선과 공방 출고가 한 지붕에서 서명되는 중앙권역 허브로 만들어 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.\n\n**개입.** 수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 역장 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 10 | 무력 −15 | 물질 20 | 공동 25 | 원칙 5 | 공개 −15 | 자격 40 | 분산 15 | 변혁 5\n- 욕망: 갈망 0 | 독점 −30 | 위험 40 | 과시 5 | 지속 5 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

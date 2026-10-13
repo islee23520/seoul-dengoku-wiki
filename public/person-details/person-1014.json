@@ -397,6 +397,118 @@
     "id": "K1014",
     "personId": "person-1014"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k1014-warehouse-translation",
+        "name": {
+          "ko": "창고 열람 통역",
+          "en": "Warehouse-access interpretation"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1014-trait-1",
+        "name": {
+          "ko": "번호로 말하는 창고",
+          "en": "A warehouse described by numbers"
+        },
+        "description": {
+          "ko": "군 이름 대신 층수와 상자 번호를 사용한다.",
+          "en": "Uses floor and box numbers instead of military names."
+        },
+        "behavior": {
+          "ko": "군 이름 대신 층수와 상자 번호를 사용한다.",
+          "en": "Uses floor and box numbers instead of military names."
+        },
+        "stress": {
+          "ko": "고유 군 명칭이 들어간 문서는 번역하지 않고 돌려보낸다.",
+          "en": "Returns documents with specific military names without translating them."
+        },
+        "relationship": {
+          "ko": "아미라와 협력하되 박태겸과는 열람 권한을 다툰다.",
+          "en": "Cooperates with Amira but disputes access rights with Park Taegyeom."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "창고 열람에서 층수와 상자 번호를 말하며 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다. 창고 기억의 정식 열람을 바라지만 문장이 점령 표지로 읽힐 위험을 경계한다.",
+      "en": "She uses floor and box numbers for warehouse access and returns documents bearing specific military names untranslated. She seeks formal access to warehouse memory but guards against insignia being read as an occupation claim."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",

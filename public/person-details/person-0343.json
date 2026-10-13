@@ -285,6 +285,142 @@
     "id": "K342",
     "personId": "person-0343"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "medical-transport-handover",
+        "name": {
+          "ko": "의무호송 인계",
+          "en": "Medical transport handover"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "환자 칸 열쇠를 지킨다",
+          "en": "Keeps the patient carriage key"
+        },
+        "description": {
+          "ko": "적대 이동으로 오인된 호송에서 열쇠를 품고 정차했다. 현장 인계와 긴장 감내를 반영하되 교전 승리를 만들지 않는다.",
+          "en": "When transport was mistaken for hostile movement, they stopped while keeping the key. Field handover and endurance under pressure do not imply a combat victory."
+        },
+        "behavior": {
+          "ko": "교량 위 정차의 흔들림을 몸으로 기억하고, 치료 칸을 군수 칸으로 부르라는 쪽지를 태운다. 과묵하나 호송증 무게가 비면 문을 잠근다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He remembered the tremor of a stop on the bridge with his body and burned any note that told him to call the care cars munitions cars. Taciturn, he locked the door whenever the convoy pass came up light."
+        },
+        "stress": {
+          "ko": "공포. 환자 칸이 적대 이동으로 찍혀 호송대 전체가 무장 해제를 당하는 것.",
+          "en": "Fear. That the patient cars would be stamped hostile movement and the whole convoy squad would be disarmed."
+        },
+        "relationship": {
+          "ko": "관계. 남호성의 호송 명령 아래 칸에 탔고, 매서담의 관문 증언과 시각을 맞춘다. 고서준의 교량 통과 허가가 늦자 진술을 멈췄다.",
+          "en": "Relations. He rode the car under Nam Hoseong's convoy orders and matched the hours with Mae Seodam's gate testimony. When Go Seojun's bridge permit ran late, he halted the statement."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 의무호송 수련의. 호송증에 환자 수와 약재 무게만 적고, 목적지 국호는 출고 직전 칠판에만 쓴다.",
+          "en": "Office. Rank: member. Title: medical convoy accident party. He wrote only patient counts and herb weights on the convoy pass and wrote the destination's state name only on the release chalkboard."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 의무호송 수련의. 호송증에 환자 수와 약재 무게만 적고, 목적지 국호는 출고 직전 칠판에만 쓴다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: medical convoy accident party. He wrote only patient counts and herb weights on the convoy pass and wrote the destination's state name only on the release chalkboard."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 환자 칸이 적대 이동으로 찍혀 호송대 전체가 무장 해제를 당하는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the patient cars would be stamped hostile movement and the whole convoy squad would be disarmed."
+        },
+        "relationship": {
+          "ko": "관계. 남호성의 호송 명령 아래 칸에 탔고, 매서담의 관문 증언과 시각을 맞춘다. 고서준의 교량 통과 허가가 늦자 진술을 멈췄다.",
+          "en": "Relations. He rode the car under Nam Hoseong's convoy orders and matched the hours with Mae Seodam's gate testimony. When Go Seojun's bridge permit ran late, he halted the statement."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "적대 이동으로 오인된 호송에서 열쇠를 품고 정차했다. 현장 인계와 긴장 감내를 반영하되 교전 승리를 만들지 않는다.",
+      "en": "When transport was mistaken for hostile movement, they stopped while keeping the key. Field handover and endurance under pressure do not imply a combat victory."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -755,7 +891,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의무호송 수련의 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 의무호송 수련의. 호송증에 환자 수와 약재 무게만 적고, 목적지 국호는 출고 직전 칠판에만 쓴다.",
     "일화": "겨울의 검은 배차표 조사 중 의무호송이 아차산 교량에서 적대 이동으로 오인되자 범초이는 치료 칸 열쇠를 품고 정차했다.",
     "관계": "남호성의 호송 명령 아래 칸에 탔고, 매서담의 관문 증언과 시각을 맞춘다. 고서준의 교량 통과 허가가 늦자 진술을 멈췄다.",
@@ -763,7 +898,7 @@
     "공포": "환자 칸이 적대 이동으로 찍혀 호송대 전체가 무장 해제를 당하는 것.",
     "개입": "당사자 진술로 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다."
   },
-  "biography": "교량 위 정차의 흔들림을 몸으로 기억하고, 치료 칸을 군수 칸으로 부르라는 쪽지를 태운다. 과묵하나 호송증 무게가 비면 문을 잠근다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의무호송 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무호송 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 의무호송 수련의. 호송증에 환자 수와 약재 무게만 적고, 목적지 국호는 출고 직전 칠판에만 쓴다.\n\n**일화.** 겨울의 검은 배차표 조사 중 의무호송이 아차산 교량에서 적대 이동으로 오인되자 범초이는 치료 칸 열쇠를 품고 정차했다.\n\n**관계.** 남호성의 호송 명령 아래 칸에 탔고, 매서담의 관문 증언과 시각을 맞춘다. 고서준의 교량 통과 허가가 늦자 진술을 멈췄다.\n\n**야망.** 구의 교량에서 막힌 호송의 당사자 진술을 공동호송 조항의 실무로 남겨 오인 발포가 다시 나지 않게 한다.\n\n**공포.** 환자 칸이 적대 이동으로 찍혀 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 당사자 진술로 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −70 | 물질 −30 | 공동 25 | 원칙 50 | 공개 15 | 자격 10 | 분산 15 | 변혁 0\n- 욕망: 갈망 10 | 독점 10 | 위험 35 | 과시 −15 | 지속 −20 | 지향 유동 | 결합 없음\n:::",
+  "biography": "교량 위 정차의 흔들림을 몸으로 기억하고, 치료 칸을 군수 칸으로 부르라는 쪽지를 태운다. 과묵하나 호송증 무게가 비면 문을 잠근다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의무호송 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무호송 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 의무호송 수련의. 호송증에 환자 수와 약재 무게만 적고, 목적지 국호는 출고 직전 칠판에만 쓴다.\n\n**일화.** 겨울의 검은 배차표 조사 중 의무호송이 아차산 교량에서 적대 이동으로 오인되자 범초이는 치료 칸 열쇠를 품고 정차했다.\n\n**관계.** 남호성의 호송 명령 아래 칸에 탔고, 매서담의 관문 증언과 시각을 맞춘다. 고서준의 교량 통과 허가가 늦자 진술을 멈췄다.\n\n**야망.** 구의 교량에서 막힌 호송의 당사자 진술을 공동호송 조항의 실무로 남겨 오인 발포가 다시 나지 않게 한다.\n\n**공포.** 환자 칸이 적대 이동으로 찍혀 호송대 전체가 무장 해제를 당하는 것.\n\n**개입.** 당사자 진술로 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −70 | 물질 −30 | 공동 25 | 원칙 50 | 공개 15 | 자격 10 | 분산 15 | 변혁 0\n- 욕망: 갈망 10 | 독점 10 | 위험 35 | 과시 −15 | 지속 −20 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

@@ -392,6 +392,150 @@
     "id": "K213",
     "personId": "person-0214"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "auction-claim-documentation",
+        "name": {
+          "ko": "낙찰 피해 기록",
+          "en": "Auction harm documentation"
+        },
+        "rating": 55
+      },
+      {
+        "id": "invalid-award-claim",
+        "name": {
+          "ko": "낙찰 무효 요구",
+          "en": "Invalid award claim"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k213-disposition",
+        "name": {
+          "ko": "봉인보다 출처",
+          "en": "Provenance before seals"
+        },
+        "description": {
+          "ko": "낙찰 봉투를 열기 전에 약 냄새를 맡고, 봉인만 번지르르한 상자를 고가에 받은 아침을 잊지 못한다. 목소리가 갈라져도 시작가는 다시 묻는다.",
+          "en": "She smelled the medicine before opening the award envelope and could not forget the morning she took a box with a glossy seal alone at a high price. Even with her voice cracking, she asked the opening bid again."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.",
+          "en": "Office. Rank: lay instructor. Title: counterfeit drug auction victim. She pasted the award copies and the dosing accidents on one wall and blocked any drug without a seal origin from rising to re-auction."
+        },
+        "stress": {
+          "ko": "공포. 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.",
+          "en": "Fear. That the harm statement would be buried under price-stability pretexts and the same box would go out in the next session."
+        },
+        "relationship": {
+          "ko": "관계. 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
+          "en": "Relations. Recorded the harm at Yeon Gaon's market clinic, claimed drug-efficacy verification from Ryu Eunbi, and carried a debt demanding that O Haerin's common settlement right never swallow the counterfeit drug payments."
+        },
+        "effects": []
+      },
+      {
+        "id": "k213-choice",
+        "name": {
+          "ko": "피해 침묵 거부",
+          "en": "Refusing silence about harm"
+        },
+        "description": {
+          "ko": "일화. 여름의 탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.",
+          "en": "Anecdote. When the summer's turbid water and counterfeit drugs circulated, Pyeong Seoa broke open one box bought on the Noryangjin auction floor and cried the award void."
+        },
+        "behavior": {
+          "ko": "관계. 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
+          "en": "Relations. Recorded the harm at Yeon Gaon's market clinic, claimed drug-efficacy verification from Ryu Eunbi, and carried a debt demanding that O Haerin's common settlement right never swallow the counterfeit drug payments."
+        },
+        "stress": {
+          "ko": "공포. 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.",
+          "en": "Fear. That the harm statement would be buried under price-stability pretexts and the same box would go out in the next session."
+        },
+        "relationship": {
+          "ko": "관계. 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
+          "en": "Relations. Recorded the harm at Yeon Gaon's market clinic, claimed drug-efficacy verification from Ryu Eunbi, and carried a debt demanding that O Haerin's common settlement right never swallow the counterfeit drug payments."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "가짜 약 상자를 깨고 낙찰 무효와 약효 검증을 요구했다. 피해 기록·주장은 확인되지만 약효 판정과 의술은 부여하지 않는다.",
+      "en": "Breaks the counterfeit medicine box and demands award cancellation and efficacy checks. Harm documentation is supported; pharmacological judgment and medicine are not granted."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -825,7 +969,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 경매 피해자 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.",
     "일화": "여름의 탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.",
     "관계": "연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.",
@@ -833,7 +976,7 @@
     "공포": "피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.",
     "개입": "깨진 표본을 마곡까지 호송하거나, 시세 안정 명분의 은폐 쪽지를 폭로할 수 있다."
   },
-  "biography": "낙찰 봉투를 열기 전에 약 냄새를 맡고, 봉인만 번지르르한 상자를 고가에 받은 아침을 잊지 못한다. 목소리가 갈라져도 시작가는 다시 묻는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 약품 낙찰 사본·투약 사고 기록\n- 직함: 가짜 약품 경매 피해자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 경매 피해자 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.\n\n**일화.** 여름의 탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.\n\n**관계.** 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.\n\n**야망.** 가짜 약이 섞인 낙찰을 무효로 돌려 노량진 경매가 의료 신뢰의 하청 시장이 되지 않게 한다.\n\n**공포.** 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.\n\n**개입.** 깨진 표본을 마곡까지 호송하거나, 시세 안정 명분의 은폐 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 75 | 공동 −15 | 원칙 −45 | 공개 10 | 자격 10 | 분산 30 | 변혁 5\n- 욕망: 갈망 40 | 독점 −30 | 위험 20 | 과시 35 | 지속 5 | 지향 유동 | 결합 없음\n:::",
+  "biography": "낙찰 봉투를 열기 전에 약 냄새를 맡고, 봉인만 번지르르한 상자를 고가에 받은 아침을 잊지 못한다. 목소리가 갈라져도 시작가는 다시 묻는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 약품 낙찰 사본·투약 사고 기록\n- 직함: 가짜 약품 경매 피해자\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 가짜 약품 경매 피해자 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 교도. 직함은 가짜 약품 경매 피해자. 낙찰 사본과 투약 사고를 같은 벽에 붙이고, 봉인 출처가 없는 약은 재경매에 올리지 못하게 막는다.\n\n**일화.** 여름의 탁수와 가짜 약이 유통되자 평서아는 노량진 경매판에서 산 상자 하나를 깨 보이고 낙찰 무효를 외쳤다.\n\n**관계.** 연가온의 시장 의무소에서 피해를 기록하고, 류은비에게 약효 검증을 청구하며, 오해린의 공통 결제권이 가짜 약 대금까지 삼키지 않기를 요구해 온 빚이 있다.\n\n**야망.** 가짜 약이 섞인 낙찰을 무효로 돌려 노량진 경매가 의료 신뢰의 하청 시장이 되지 않게 한다.\n\n**공포.** 피해 진술이 시세 안정 명분으로 묻혀 다음 회로 같은 상자가 나가는 것.\n\n**개입.** 깨진 표본을 마곡까지 호송하거나, 시세 안정 명분의 은폐 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 75 | 공동 −15 | 원칙 −45 | 공개 10 | 자격 10 | 분산 30 | 변혁 5\n- 욕망: 갈망 40 | 독점 −30 | 위험 20 | 과시 35 | 지속 5 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-08"
   ],

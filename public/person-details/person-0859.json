@@ -394,6 +394,150 @@
     "id": "K859",
     "personId": "person-0859"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "scout",
+        "name": {
+          "ko": "매복 징후 관찰",
+          "en": "Ambush-sign observation"
+        },
+        "rating": 50
+      },
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "patrol-signs-first",
+        "name": {
+          "ko": "초계 징후 먼저",
+          "en": "Patrol Signs First"
+        },
+        "description": {
+          "ko": "최바아는 초계에서 위험의 흔적을 먼저 읽는 데 주의를 두는 성향을 보인다.",
+          "en": "Choe Baa shows a disposition to attend first to traces of danger during patrol."
+        },
+        "behavior": {
+          "ko": "능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
+          "en": "During a ridge patrol, he read ambush traces early and prevented harm."
+        },
+        "stress": {
+          "ko": "당직 단절로 통행이 위협받을까 우려되면 눈앞의 초계 징후를 더 신중히 살필 수 있다.",
+          "en": "If he fears interrupted duty will threaten passage, he may examine immediate patrol signs more carefully."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 직접 읽은 매복 흔적을 공유하는 데 무게를 둘 수 있다.",
+          "en": "In handovers with senior duty staff, he may emphasize sharing the ambush traces he personally recognized."
+        },
+        "effects": []
+      },
+      {
+        "id": "avoid-verified-hazards",
+        "name": {
+          "ko": "확인된 위험 회피",
+          "en": "Avoid Verified Hazards"
+        },
+        "description": {
+          "ko": "최바아는 읽어 낸 매복 징후를 근거로 피해를 피하는 판단을 중시하는 성향을 보인다.",
+          "en": "Choe Baa shows a disposition to base harm avoidance on the ambush signs he has recognized."
+        },
+        "behavior": {
+          "ko": "능선의 매복 흔적을 알아챈 뒤 그 위험으로 인한 피해를 막았다.",
+          "en": "After recognizing ambush traces on the ridge, he prevented harm from that danger."
+        },
+        "stress": {
+          "ko": "초계를 이어 가는 일과 매복 위험이 충돌하면 확인한 징후에 근거해 피해 회피를 우선할 수 있다.",
+          "en": "If continuing patrol conflicts with ambush danger, he may prioritize avoiding harm on the basis of observed signs."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 위험 판단의 근거가 된 흔적을 함께 전달하려 할 수 있다.",
+          "en": "He may seek to pass senior duty staff the traces that supported his risk judgment."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "능선의 매복 흔적으로 피해를 막았다. 관찰 강점은 있으나 정보망 소유나 전투 승전은 없다.",
+      "en": "He prevented harm through ridge ambush signs. Observation is a strength, not ownership of an intelligence network or combat victories."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -817,7 +961,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -825,7 +968,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −5 | 물질 20 | 공동 25 | 원칙 0 | 공개 −15 | 자격 40 | 분산 25 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 5 | 과시 10 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −5 | 물질 20 | 공동 25 | 원칙 0 | 공개 −15 | 자격 40 | 분산 25 | 변혁 5\n- 욕망: 갈망 0 | 독점 25 | 위험 5 | 과시 10 | 지속 5 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

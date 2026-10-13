@@ -287,6 +287,150 @@
     "id": "K938",
     "personId": "person-0938"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "rescue",
+        "name": {
+          "ko": "통로 개통·부상자 이송",
+          "en": "Passage clearance and casualty transfer"
+        },
+        "rating": 50
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "clear-the-passage-first",
+        "name": {
+          "ko": "통로 먼저 열기",
+          "en": "Clear the Passage First"
+        },
+        "description": {
+          "ko": "조달원은 폭설로 막힌 이동 경로를 먼저 여는 실무적 대응을 보였다.",
+          "en": "Jo Dalwon showed a practical response by first opening a route blocked by heavy snow."
+        },
+        "behavior": {
+          "ko": "막힌 환승 통로를 뚫어 부상자를 옮길 길을 만들었다.",
+          "en": "They cleared the blocked transfer passage to create a route for moving injured people."
+        },
+        "stress": {
+          "ko": "통로 차단이 이송과 통행을 막는다면 이동 경로 확보에 노력을 집중할 수 있다.",
+          "en": "If a blocked passage prevents transport and transit, they may concentrate their effort on reopening the route."
+        },
+        "relationship": {
+          "ko": "다른 당직과 이송을 조율해야 한다면 먼저 통로가 열려야 한다는 실무 조건을 강조할 수 있다.",
+          "en": "When coordinating transport with other duty staff, they may emphasize that the passage must first be open."
+        },
+        "effects": []
+      },
+      {
+        "id": "transport-the-injured-first",
+        "name": {
+          "ko": "부상자 우선 이송",
+          "en": "Transport the Injured First"
+        },
+        "description": {
+          "ko": "조달원은 통로가 열린 뒤 부상자를 먼저 옮기는 우선순위를 보였다.",
+          "en": "Jo Dalwon prioritized moving injured people once the passage was opened."
+        },
+        "behavior": {
+          "ko": "폭설에 막힌 환승 통로를 뚫은 뒤 부상자를 우선 이송했다.",
+          "en": "After clearing the snow-blocked transfer passage, they transported injured people first."
+        },
+        "stress": {
+          "ko": "이동이 제한된 상황에서는 부상자의 이송 순서를 먼저 확보하려 할 수 있다.",
+          "en": "When movement is constrained, they may seek to secure priority transport for injured people."
+        },
+        "relationship": {
+          "ko": "이송 순서를 놓고 조율이 필요하다면 부상자 우선을 공통 기준으로 제안할 수 있다.",
+          "en": "If transport order needs coordination, they may propose prioritizing injured people as the shared criterion."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "폭설 통로를 뚫고 부상자를 옮겼다. 노동 지속력과 이송을 평가하며 개인 전투나 임상 치료는 부여하지 않는다.",
+      "en": "He cleared a snowy passage and moved casualties. Physical persistence and transport are reflected, not personal combat or clinical care."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -648,7 +792,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -656,7 +799,7 @@
     "공포": "인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −40 | 물질 5 | 공동 −5 | 원칙 45 | 공개 55 | 자격 40 | 분산 20 | 변혁 15\n- 욕망: 갈망 35 | 독점 15 | 위험 −30 | 과시 −5 | 지속 0 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 40 | 무력 −40 | 물질 5 | 공동 −5 | 원칙 45 | 공개 55 | 자격 40 | 분산 20 | 변혁 15\n- 욕망: 갈망 35 | 독점 15 | 위험 −30 | 과시 −5 | 지속 0 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

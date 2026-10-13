@@ -393,6 +393,150 @@
     "id": "K211",
     "personId": "person-0212"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "emergency-generation",
+        "name": {
+          "ko": "비상발전 운전",
+          "en": "Emergency generation"
+        },
+        "rating": 70
+      },
+      {
+        "id": "fuel-output-logging",
+        "name": {
+          "ko": "연료 출력 기록",
+          "en": "Fuel and output logging"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k211-disposition",
+        "name": {
+          "ko": "경매 조명보다 제빙",
+          "en": "Ice-making before auction lights"
+        },
+        "description": {
+          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제빙기보다 경매 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.",
+          "en": "Sensitive to the smell of fuel, she hated verbal power routing. She took the political pressure to divert power from the ice machines to the auction lighting as an insult."
+        },
+        "behavior": {
+          "ko": "관직. 품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.",
+          "en": "Office. Rank: temple student. Title: Noryangjin ice-making emergency generator operator. Every shift she sealed the fuel remainder and output logs and sent them to Ji Maru, and below minimum output she cut the auction power even under the representative's urging."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.",
+          "en": "Fear. That on a night when the fuel ran dry the cold storage would thaw, and the water-gate protection zone would fill the gap."
+        },
+        "relationship": {
+          "ko": "관계. 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Backed Ji Maru's cold-storage depot power distribution from the generation side, matched output to Ji Yunjae's trials, and had obeyed O Haerin's inventory disclosure but refused concealed power routing."
+        },
+        "effects": []
+      },
+      {
+        "id": "k211-choice",
+        "name": {
+          "ko": "은폐 배전 거부",
+          "en": "Rejecting concealed power allocation"
+        },
+        "description": {
+          "ko": "일화. 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 she sent a private petition back and passed it to the public window. By this deed the signature of the Noryangjin ice-making emergency generator operator post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Backed Ji Maru's cold-storage depot power distribution from the generation side, matched output to Ji Yunjae's trials, and had obeyed O Haerin's inventory disclosure but refused concealed power routing."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.",
+          "en": "Fear. That on a night when the fuel ran dry the cold storage would thaw, and the water-gate protection zone would fill the gap."
+        },
+        "relationship": {
+          "ko": "관계. 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Backed Ji Maru's cold-storage depot power distribution from the generation side, matched output to Ji Yunjae's trials, and had obeyed O Haerin's inventory disclosure but refused concealed power routing."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "교대 연료·출력을 기록하고 최저선 아래 경매 배전을 끊는다. 오해린에게 복종하면서도 은폐 배전을 거부하는 경계가 있다.",
+      "en": "Logs fuel and output each shift and cuts auction supply below the minimum. Obedience to Oh Haerin has a limit at concealed allocation."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -774,7 +918,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 노량진 제빙 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.",
     "관계": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
@@ -782,7 +925,7 @@
     "공포": "연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제빙기보다 경매 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 제빙 비상발전 연료·출력 기록\n- 직함: 노량진 제빙 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 노량진 제빙 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 노량진 비상 발전과 제빙 전력을 하나의 공개 배전망으로 묶어 얼음 원장의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 70 | 공동 −20 | 원칙 −35 | 공개 10 | 자격 −10 | 분산 15 | 변혁 0\n- 욕망: 갈망 45 | 독점 40 | 위험 −10 | 과시 −15 | 지속 40 | 지향 유동 | 결합 없음\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제빙기보다 경매 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 제빙 비상발전 연료·출력 기록\n- 직함: 노량진 제빙 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 노량진 제빙 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 기사. 직함은 노량진 제빙 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지마루에게 보내고, 최저 출력 이하면 대표의 독촉이 있어도 경매 배전을 끊는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 노량진 제빙 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고, 지윤재의 시운전에 출력을 맞추며, 오해린의 재고 공개에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 노량진 비상 발전과 제빙 전력을 하나의 공개 배전망으로 묶어 얼음 원장의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 냉동이 녹고, 그 공백을 수문 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 70 | 공동 −20 | 원칙 −35 | 공개 10 | 자격 −10 | 분산 15 | 변혁 0\n- 욕망: 갈망 45 | 독점 40 | 위험 −10 | 과시 −15 | 지속 40 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-08"
   ],

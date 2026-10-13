@@ -393,6 +393,150 @@
     "id": "K083",
     "personId": "person-0083"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "sharing",
+        "name": {
+          "ko": "기술공유 사본 작성",
+          "en": "Technical-sharing copy preparation"
+        },
+        "rating": 60
+      },
+      {
+        "id": "surgery",
+        "name": {
+          "ko": "정전 중 수술 지속",
+          "en": "Surgery during a blackout"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-for-missing-pages",
+        "name": {
+          "ko": "쪽수 빠지면 중지",
+          "en": "Stop for Missing Pages"
+        },
+        "description": {
+          "ko": "여다솜은 인증 사본의 완전성을 회의 진행보다 앞세운다.",
+          "en": "Yeo Dasom places the completeness of certification copies ahead of meeting progress."
+        },
+        "behavior": {
+          "ko": "인증 사본의 쪽수가 빠지면 필기를 멈추고 인질 대체 칸이 빈 초안은 철하지 않는다.",
+          "en": "Yeo Dasom stops writing when certification pages are missing and refuses to file drafts with blank hostage-alternative fields."
+        },
+        "stress": {
+          "ko": "연구자 명단이 분할 복속의 할당표가 될 우려가 있으면 불완전한 문서를 남기는 데 더욱 신중할 수 있다.",
+          "en": "If researcher lists risk becoming allocation tables for divided subjugation, Yeo Dasom may be especially cautious about recording incomplete documents."
+        },
+        "relationship": {
+          "ko": "정호준의 초안을 옮기고 정유라의 종료조건을 묶을 때도 필요한 문서가 빠지지 않는지를 중시할 수 있다.",
+          "en": "When transcribing Jeong Hojun's draft and bundling Jeong Yura's termination clauses, Yeo Dasom may emphasize that required documents are not omitted."
+        },
+        "effects": []
+      },
+      {
+        "id": "smaller-nations-review-first",
+        "name": {
+          "ko": "약소국 열람 먼저",
+          "en": "Smaller Nations Review First"
+        },
+        "description": {
+          "ko": "여다솜은 기술공유 자료에서 약소국 대표의 선행 열람을 중시한다.",
+          "en": "Yeo Dasom prioritizes smaller nations' representatives reviewing technical-sharing materials first."
+        },
+        "behavior": {
+          "ko": "약소국 대표가 기술공유 사본을 열람한 뒤에만 강국 자리에 올린다.",
+          "en": "Yeo Dasom places technical-sharing copies before powerful nations only after smaller nations' representatives have reviewed them."
+        },
+        "stress": {
+          "ko": "기술원장이 강국 급수계약의 부록으로 밀릴 우려가 있으면 선행 열람 순서를 더욱 고수할 수 있다.",
+          "en": "If the technical ledger risks being reduced to an appendix of a powerful nation's water contract, Yeo Dasom may insist more firmly on that review order."
+        },
+        "relationship": {
+          "ko": "우오름과 급수 최저선 사본을 교환할 때도 자료 접근이 강국의 조건에 종속되지 않도록 중시할 수 있다.",
+          "en": "In exchanging minimum-water copies with U Oreum, Yeo Dasom may seek to keep access independent of powerful nations' conditions."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "공유 사본과 종료조건을 기록하고 정전 중 수술을 지속했다. 이례적 일화는 제한 숙련으로 남기며 의료 경력 전반이나 조약 체결권은 만들지 않는다.",
+      "en": "She records sharing copies and termination clauses and continued surgery during a blackout. That episode supports limited skill, not a full medical career or treaty authority."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -784,7 +928,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 협의 기술공유 서기 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 협의 기술공유 서기. 기술공유 사본은 약소국 대표가 열람한 뒤에만 강국 자리에 올리고, 인질 대체 칸이 빈 초안은 철하지 않는다.",
     "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 협의 기술공유 서기 자리의 서명이 장부에 올랐다.",
     "관계": "정호준의 공동기술원 초안을 서기로 옮기고, 정유라의 종료조건 문구를 같은 묶음에 넣으며, 여의도의 우오름과 급수 최저선 사본을 교환한다.",
@@ -792,7 +935,7 @@
     "공포": "회의가 결렬되면 연구자 명단이 분할 복속의 할당표가 되고, 서기가 그 표의 필적이 되는 것.",
     "개입": "인질 대체 보증 문구를 채워 그의 철을 끝내거나, 명단 사본이 강국에 먼저 간 경로를 폭로해 서기를 퇴장시킬 수 있다."
   },
-  "biography": "인증 사본의 쪽수가 빠지면 회의 물보다 먼저 펜을 멈추고, 지식을 보호비 조항 뒤에 숨기는 문구를 보면 자리를 뜬다. 숫자는 크게, 해석은 짧게 적는다.\n\n- 소속: 태욱그룹\n- 생업: 기술공유 문서 기록\n- 품계: 대리\n- 직함: 협의 기술공유 서기\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협의 기술공유 서기 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 협의 기술공유 서기. 기술공유 사본은 약소국 대표가 열람한 뒤에만 강국 자리에 올리고, 인질 대체 칸이 빈 초안은 철하지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 협의 기술공유 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공동기술원 초안을 서기로 옮기고, 정유라의 종료조건 문구를 같은 묶음에 넣으며, 여의도의 우오름과 급수 최저선 사본을 교환한다.\n\n**야망.** 검증 자료 공유를 공동교섭의 독립 조항으로 올려, 기술원장이 강국 급수계약의 부록으로 떨어지지 않게 한다.\n\n**공포.** 회의가 결렬되면 연구자 명단이 분할 복속의 할당표가 되고, 서기가 그 표의 필적이 되는 것.\n\n**개입.** 인질 대체 보증 문구를 채워 그의 철을 끝내거나, 명단 사본이 강국에 먼저 간 경로를 폭로해 서기를 퇴장시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −35 | 물질 10 | 공동 0 | 원칙 40 | 공개 30 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 10 | 위험 15 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "인증 사본의 쪽수가 빠지면 회의 물보다 먼저 펜을 멈추고, 지식을 보호비 조항 뒤에 숨기는 문구를 보면 자리를 뜬다. 숫자는 크게, 해석은 짧게 적는다.\n\n- 소속: 태욱그룹\n- 생업: 기술공유 문서 기록\n- 품계: 대리\n- 직함: 협의 기술공유 서기\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 협의 기술공유 서기 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 대리. 직함은 협의 기술공유 서기. 기술공유 사본은 약소국 대표가 열람한 뒤에만 강국 자리에 올리고, 인질 대체 칸이 빈 초안은 철하지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 협의 기술공유 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공동기술원 초안을 서기로 옮기고, 정유라의 종료조건 문구를 같은 묶음에 넣으며, 여의도의 우오름과 급수 최저선 사본을 교환한다.\n\n**야망.** 검증 자료 공유를 공동교섭의 독립 조항으로 올려, 기술원장이 강국 급수계약의 부록으로 떨어지지 않게 한다.\n\n**공포.** 회의가 결렬되면 연구자 명단이 분할 복속의 할당표가 되고, 서기가 그 표의 필적이 되는 것.\n\n**개입.** 인질 대체 보증 문구를 채워 그의 철을 끝내거나, 명단 사본이 강국에 먼저 간 경로를 폭로해 서기를 퇴장시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −35 | 물질 10 | 공동 0 | 원칙 40 | 공개 30 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 10 | 위험 15 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

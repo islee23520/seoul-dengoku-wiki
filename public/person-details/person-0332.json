@@ -392,6 +392,142 @@
     "id": "K331",
     "personId": "person-0332"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "sanitation-patrol",
+        "name": {
+          "ko": "방역 순찰",
+          "en": "Sanitation patrol"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "해제보다 확인",
+          "en": "Checks before reopening"
+        },
+        "description": {
+          "ko": "설사병 확산 뒤 동측 봉쇄 말목을 먼저 박고 도장을 이중 확인한다. 현장 차단 판단을 전면적인 방역 전문성으로 확대하지 않는다.",
+          "en": "They placed eastern closure markers after diarrheal spread and double-check entry seals. Field closure judgment is not expanded into comprehensive public health expertise."
+        },
+        "behavior": {
+          "ko": "소문보다 격리 일수를 믿고, 정치적 봉쇄 해제를 사고 원인으로 순찰 일지에 적는다. 출입 도장이 흐리면 골목을 되돌아간다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "She trusted isolation days over rumor and wrote a political blockade lift into the patrol log as a cause of accidents. When an entry stamp ran faint, she turned back at the alley."
+        },
+        "stress": {
+          "ko": "공포. 탁수와 가짜 약이 같은 주에 퍼져 순찰대가 급수국과 시장 사이에서 잘리는 것.",
+          "en": "Fear. That turbid water and counterfeit drugs would spread in the same week and the patrol squad would be cut apart between the water state and the market."
+        },
+        "relationship": {
+          "ko": "관계. 라세영의 지휘로 동측 골목을 돌고, 하윤목의 아차산 검역 통과증을 길에서 대조한다. 선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다.",
+          "en": "Relations. Rounded the east-side alleys under Ra Seyeong's command and checked Ha Yunmok's Achasan quarantine passes on the road. He pulled no inspection post before Seon Nahwi's blockade dispatch arrived."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 제기동 방역 수련의. 격리 막과 출입 도장을 이중으로 확인하고, 해제 순찰은 정호준의 수질·약효 기록이 도착한 뒤에만 돈다.",
+          "en": "Office. Rank: member. Title: Jegi-dong east-side quarantine patrol, duty officer of Ra Seyeong. He checked the isolation curtain and entry stamps doubly and ran the lift patrol only after Jeong Hojun's water-quality and drug-efficacy records arrived."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 제기동 방역 수련의. 격리 막과 출입 도장을 이중으로 확인하고, 해제 순찰은 정호준의 수질·약효 기록이 도착한 뒤에만 돈다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: Jegi-dong east-side quarantine patrol, duty officer of Ra Seyeong. He checked the isolation curtain and entry stamps doubly and ran the lift patrol only after Jeong Hojun's water-quality and drug-efficacy records arrived."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 탁수와 가짜 약이 같은 주에 퍼져 순찰대가 급수국과 시장 사이에서 잘리는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That turbid water and counterfeit drugs would spread in the same week and the patrol squad would be cut apart between the water state and the market."
+        },
+        "relationship": {
+          "ko": "관계. 라세영의 지휘로 동측 골목을 돌고, 하윤목의 아차산 검역 통과증을 길에서 대조한다. 선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다.",
+          "en": "Relations. Rounded the east-side alleys under Ra Seyeong's command and checked Ha Yunmok's Achasan quarantine passes on the road. He pulled no inspection post before Seon Nahwi's blockade dispatch arrived."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "설사병 확산 뒤 동측 봉쇄 말목을 먼저 박고 도장을 이중 확인한다. 현장 차단 판단을 전면적인 방역 전문성으로 확대하지 않는다.",
+      "en": "They placed eastern closure markers after diarrheal spread and double-check entry seals. Field closure judgment is not expanded into comprehensive public health expertise."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -879,7 +1015,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 제기동 방역 수련의 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 수련의. 직함은 제기동 방역 수련의. 격리 막과 출입 도장을 이중으로 확인하고, 해제 순찰은 정호준의 수질·약효 기록이 도착한 뒤에만 돈다.",
     "일화": "폭우 뒤 구의 제한 급수 구간에서 설사병이 번지자 제기동시장 동측을 사흘 봉쇄하는 말목을 수초롱이 먼저 박았다.",
     "관계": "라세영의 지휘로 동측 골목을 돌고, 하윤목의 아차산 검역 통과증을 길에서 대조한다. 선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다.",
@@ -887,7 +1022,7 @@
     "공포": "탁수와 가짜 약이 같은 주에 퍼져 순찰대가 급수국과 시장 사이에서 잘리는 것.",
     "개입": "오염원 표본을 마곡으로 나르거나, 봉쇄 말목을 뽑아 약재 출하를 재개시킬 수 있다."
   },
-  "biography": "소문보다 격리 일수를 믿고, 정치적 봉쇄 해제를 사고 원인으로 순찰 일지에 적는다. 출입 도장이 흐리면 골목을 되돌아간다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 격리 확인·해제 순찰\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 제기동 방역 수련의\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 제기동 방역 수련의 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 수련의. 직함은 제기동 방역 수련의. 격리 막과 출입 도장을 이중으로 확인하고, 해제 순찰은 정호준의 수질·약효 기록이 도착한 뒤에만 돈다.\n\n**일화.** 폭우 뒤 구의 제한 급수 구간에서 설사병이 번지자 제기동시장 동측을 사흘 봉쇄하는 말목을 수초롱이 먼저 박았다.\n\n**관계.** 라세영의 지휘로 동측 골목을 돌고, 하윤목의 아차산 검역 통과증을 길에서 대조한다. 선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다.\n\n**야망.** 동대문·청량리 방역 봉쇄의 현장 발동을 순찰대가 단독으로 걸어 비의료적 해제를 막는다.\n\n**공포.** 탁수와 가짜 약이 같은 주에 퍼져 순찰대가 급수국과 시장 사이에서 잘리는 것.\n\n**개입.** 오염원 표본을 마곡으로 나르거나, 봉쇄 말목을 뽑아 약재 출하를 재개시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 30 | 무력 −45 | 물질 −20 | 공동 30 | 원칙 45 | 공개 15 | 자격 20 | 분산 20 | 변혁 −5\n- 욕망: 갈망 40 | 독점 0 | 위험 −20 | 과시 −20 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "소문보다 격리 일수를 믿고, 정치적 봉쇄 해제를 사고 원인으로 순찰 일지에 적는다. 출입 도장이 흐리면 골목을 되돌아간다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 격리 확인·해제 순찰\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 제기동 방역 수련의\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 제기동 방역 수련의 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 수련의. 직함은 제기동 방역 수련의. 격리 막과 출입 도장을 이중으로 확인하고, 해제 순찰은 정호준의 수질·약효 기록이 도착한 뒤에만 돈다.\n\n**일화.** 폭우 뒤 구의 제한 급수 구간에서 설사병이 번지자 제기동시장 동측을 사흘 봉쇄하는 말목을 수초롱이 먼저 박았다.\n\n**관계.** 라세영의 지휘로 동측 골목을 돌고, 하윤목의 아차산 검역 통과증을 길에서 대조한다. 선나휘의 봉쇄 전갈이 오기 전에는 말목을 뽑지 않는다.\n\n**야망.** 동대문·청량리 방역 봉쇄의 현장 발동을 순찰대가 단독으로 걸어 비의료적 해제를 막는다.\n\n**공포.** 탁수와 가짜 약이 같은 주에 퍼져 순찰대가 급수국과 시장 사이에서 잘리는 것.\n\n**개입.** 오염원 표본을 마곡으로 나르거나, 봉쇄 말목을 뽑아 약재 출하를 재개시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 30 | 무력 −45 | 물질 −20 | 공동 30 | 원칙 45 | 공개 15 | 자격 20 | 분산 20 | 변혁 −5\n- 욕망: 갈망 40 | 독점 0 | 위험 −20 | 과시 −20 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-13"
   ],

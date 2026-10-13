@@ -393,6 +393,150 @@
     "id": "K062",
     "personId": "person-0062"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "dispatch",
+        "name": {
+          "ko": "화차 순서 조정",
+          "en": "Freight-car sequencing"
+        },
+        "rating": 65
+      },
+      {
+        "id": "parts",
+        "name": {
+          "ko": "불량 부품 출고 검사",
+          "en": "Defective-parts dispatch inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-disguised-cargo",
+        "name": {
+          "ko": "위장 화물 거부",
+          "en": "No Disguised Cargo"
+        },
+        "description": {
+          "ko": "유민호는 연구 물자를 군수 화차로 위장하는 지시를 용납하지 않는다.",
+          "en": "Yu Minho rejects orders to disguise research materials as military cargo."
+        },
+        "behavior": {
+          "ko": "무기가 의심되는 화차는 인증 도장과 심사 봉인이 모두 없으면 출고하지 않는다.",
+          "en": "He withholds suspected weapons wagons unless both certification stamps and review seals are present."
+        },
+        "stress": {
+          "ko": "기지가 군사 집결지로 전용될 조짐이 있다면 화물 인증과 출고 제한을 더 엄격히 지킬 수 있다.",
+          "en": "If the depot appears at risk of becoming a military assembly site, he may enforce cargo certification and shipment restrictions more strictly."
+        },
+        "relationship": {
+          "ko": "화물의 중립성을 지킬 수 있다면 최은재의 인증에 배차를 묶는 협력을 유지할 수 있다.",
+          "en": "He may maintain certification-linked dispatch cooperation with Choi Eunjae when it safeguards cargo neutrality."
+        },
+        "effects": []
+      },
+      {
+        "id": "transparent-dispatch",
+        "name": {
+          "ko": "배차 공개",
+          "en": "Transparent Dispatch"
+        },
+        "description": {
+          "ko": "유민호는 연구·방재·주민 화물의 순서를 공개해 배차를 검증 가능하게 한다.",
+          "en": "Yu Minho makes dispatch reviewable by publishing the order of research, disaster-response, and resident cargo."
+        },
+        "behavior": {
+          "ko": "화물 순서를 매일 공개하고 출고 직전 확인된 불량 부품 상자를 되돌려 보낸다.",
+          "en": "He publishes cargo order daily and returned a defective-parts box identified just before shipment."
+        },
+        "stress": {
+          "ko": "배차망이 군사 보호권의 발판이 될 우려가 있다면 공개 순서와 인증 기준을 유지하려 할 수 있다.",
+          "en": "If the dispatch network risks becoming a foothold for military protection claims, he may seek to preserve published priorities and certification standards."
+        },
+        "relationship": {
+          "ko": "김도하가 민가 배급 화차의 우선을 요구한다면 공개 배차 순서를 둘러싼 긴장이 생길 수 있다.",
+          "en": "Kim Doha’s demands to prioritize household-ration wagons may create tension over the published dispatch order."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "화물 순서를 매일 공개하고 불량 상자를 반송했다. 선로 진동 비유를 초감각으로 읽지 않고 실제 배차와 점검만 평가한다.",
+      "en": "He publishes freight order and returns defective boxes. Track vibration imagery is not supernatural perception; dispatch and inspection are supported."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -831,7 +975,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치·배차장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 방화기지 유치·배차장 자리의 서명이 장부에 올랐다.",
     "관계": "최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 중계 창구와 외곽 열차를 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.",
@@ -839,7 +982,7 @@
     "공포": "항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.",
     "개입": "위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다."
   },
-  "biography": "과묵하고 선로 진동으로 열차의 거짓을 읽는다. 연구 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 배차\n- 품계: 부장\n- 직함: 방화기지 유치·배차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치·배차장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 방화기지 유치·배차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 중계 창구와 외곽 열차를 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.\n\n**야망.** 서부 외곽 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.\n\n**공포.** 항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.\n\n**개입.** 위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "과묵하고 선로 진동으로 열차의 거짓을 읽는다. 연구 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 배차\n- 품계: 부장\n- 직함: 방화기지 유치·배차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치·배차장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 방화기지 유치·배차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 중계 창구와 외곽 열차를 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.\n\n**야망.** 서부 외곽 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.\n\n**공포.** 항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.\n\n**개입.** 위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

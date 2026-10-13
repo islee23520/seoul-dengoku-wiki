@@ -287,6 +287,150 @@
     "id": "K635",
     "personId": "person-0635"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "closure",
+        "name": {
+          "ko": "위험 구간 폐쇄",
+          "en": "Hazardous-route closure"
+        },
+        "rating": 45
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "close-immediately-on-collapse-reports",
+        "name": {
+          "ko": "붕괴 보고 즉시 폐쇄",
+          "en": "Close Immediately on Collapse Reports"
+        },
+        "description": {
+          "ko": "서아서는 침수 구간의 붕괴 보고를 미루지 않고 통행 제한으로 반영하는 성향을 보인다.",
+          "en": "Seo Aseo shows a tendency to act promptly on a collapse report by restricting passage through a flooded section."
+        },
+        "behavior": {
+          "ko": "침수 구간 붕괴 보고를 받고 해당 구간을 즉시 폐쇄했다.",
+          "en": "He received a collapse report for a flooded section and closed that section immediately."
+        },
+        "stress": {
+          "ko": "당직 공백과 통행 종속을 우려하더라도 붕괴 보고가 있으면 위험 구간을 닫는 쪽을 택할 수 있다.",
+          "en": "Even when concerned about duty gaps and dependent passage, he may choose closure when a collapse is reported."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 폐쇄의 근거가 된 붕괴 보고와 조치를 분명히 인계하려 할 수 있다.",
+          "en": "He may clearly hand over the collapse report underlying the closure and the action taken to the senior duty holder."
+        },
+        "effects": []
+      },
+      {
+        "id": "maintain-duty-limits",
+        "name": {
+          "ko": "당직 범위 유지",
+          "en": "Maintain Duty Limits"
+        },
+        "description": {
+          "ko": "서아서는 안전 조치를 취하되 자기 직위에 없는 권한을 만들지 않는 성향이다.",
+          "en": "Seo Aseo takes safety action while avoiding claims to authority absent from his post."
+        },
+        "behavior": {
+          "ko": "붕괴 보고에 따라 구간을 닫고 인계에서는 자기 직위의 열쇠와 기록만 넘긴다.",
+          "en": "He closes the section on the collapse report and limits handover to his post's keys and records."
+        },
+        "stress": {
+          "ko": "당직 공백으로 통행이 위태로워져도 확인된 보고와 맡은 범위 안에서 대응하려 할 수 있다.",
+          "en": "Even if a duty gap threatens passage, he may respond within his assigned scope and the verified report."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 폐쇄 조치와 직위 기록을 넘기되 없는 권한까지 인계하지 않으려 할 수 있다.",
+          "en": "He may transfer the closure action and post records to the senior duty holder without implying authority he does not have."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "침수 구간 붕괴 보고를 받고 즉시 닫았다. 통행 안전 판단은 있으나 전문 구조·군 지휘는 없다.",
+      "en": "He promptly closed a flooded section after collapse reports. Route-safety judgment is supported, not professional rescue or military command."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -636,7 +780,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -644,7 +787,7 @@
     "공포": "공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 침수 구간 보고·폐쇄\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −10 | 물질 20 | 공동 20 | 원칙 5 | 공개 −10 | 자격 30 | 분산 20 | 변혁 −5\n- 욕망: 갈망 15 | 독점 20 | 위험 10 | 과시 5 | 지속 −5 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 침수 구간 보고·폐쇄\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −10 | 물질 20 | 공동 20 | 원칙 5 | 공개 −10 | 자격 30 | 분산 20 | 변혁 −5\n- 욕망: 갈망 15 | 독점 20 | 위험 10 | 과시 5 | 지속 −5 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

@@ -393,6 +393,142 @@
     "id": "K123",
     "personId": "person-0124"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 12,
+        "effective": 12
+      }
+    },
+    "skills": [
+      {
+        "id": "k123-wagon-check",
+        "name": {
+          "ko": "순찰열차 화차 확인",
+          "en": "Patrol train wagon checking"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k123-choice",
+        "name": {
+          "ko": "중립 위반 배차 거부",
+          "en": "Rejects neutrality-breaking dispatch"
+        },
+        "description": {
+          "ko": "대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.",
+          "en": "Bold, she endured the night rails' silence better than people. She tore up any note telling her to couple munitions freight cars disguised as a medical train to her own train."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, on a ridge patrol, she read the ambush traces first and prevented the harm. By this deed the signature of the eastern patrol train master post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That her train would become the carrier of the black dispatch sheet, break medical neutrality, and strike the first spark of a protection war. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
+          "en": "Relations. A contract binding her train to Park Hayul's release order, a debt trying not to dodge Jang Sehwa's medical convoy on the rails, and a command conflict refusing Kim Woochan's secret dispatch notes."
+        },
+        "effects": []
+      },
+      {
+        "id": "k123-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.",
+          "en": "Office. Rank: sergeant. Title: eastern patrol train master. She put the release hours and freight lists on the Godeok board and coupled no car suspected of arms without the maintenance chief's and the auditor's double check."
+        },
+        "behavior": {
+          "ko": "관직. 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.",
+          "en": "Office. Rank: sergeant. Title: eastern patrol train master. She put the release hours and freight lists on the Godeok board and coupled no car suspected of arms without the maintenance chief's and the auditor's double check."
+        },
+        "stress": {
+          "ko": "공포. 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That her train would become the carrier of the black dispatch sheet, break medical neutrality, and strike the first spark of a protection war. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
+          "en": "Relations. A contract binding her train to Park Hayul's release order, a debt trying not to dodge Jang Sehwa's medical convoy on the rails, and a command conflict refusing Kim Woochan's secret dispatch notes."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In 2125, on a ridge patrol, she read the ambush traces first and prevented the harm. By this deed the signature of the eastern patrol train master post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -841,7 +977,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.",
     "관계": "박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
@@ -849,7 +984,7 @@
     "공포": "자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것.",
     "개입": "밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다."
   },
-  "biography": "대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.\n\n- 소속: 동방사\n- 생업: 순찰열차 출고·화차 확인\n- 품계: 병장\n- 직함: 동부 순찰열차장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.\n\n**야망.** 동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n**공포.** 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것.\n\n**개입.** 밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −55 | 무력 75 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −30 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자\n:::",
+  "biography": "대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.\n\n- 소속: 동방사\n- 생업: 순찰열차 출고·화차 확인\n- 품계: 병장\n- 직함: 동부 순찰열차장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.\n\n**야망.** 동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n**공포.** 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것.\n\n**개입.** 밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −55 | 무력 75 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −30 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-05"
   ],

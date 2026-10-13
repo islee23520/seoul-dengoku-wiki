@@ -285,6 +285,150 @@
     "id": "K148",
     "personId": "person-0149"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "k148-clause-checking",
+        "name": {
+          "ko": "종료 조항 점검",
+          "en": "Termination clause checking"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k148-notarial-copy",
+        "name": {
+          "ko": "공증 사본 확인",
+          "en": "Notarial copy checking"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k148-choice",
+        "name": {
+          "ko": "빈 조항을 거부",
+          "en": "Rejects empty clauses"
+        },
+        "description": {
+          "ko": "계산이 빠르고 문구의 빈칸을 싫어한다. 구두 약속은 약속이 아니라고 반복한다.",
+          "en": "Quick of arithmetic, he hated blanks in wording. He repeated that a verbal promise was not a promise."
+        },
+        "behavior": {
+          "ko": "일화. 뚝섬 급수계약 만료일이 공증 원장에 빨갛게 표시된 채 세 강국의 서로 다른 문안이 동시에 들어왔다.",
+          "en": "Anecdote. With the Ttukseom water contract's expiry day marked red on the notary ledger, three great powers' different drafts arrived at once."
+        },
+        "stress": {
+          "ko": "공포. 집단 단수 조항을 공증한 뒤 그 물이 서울역 자체에 꺼지는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That after he notarized a collective cutoff clause, that water would stop at Seoul Station itself. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 윤서린에게 공증 권한을 위임받았고 한재목의 서부 급수문안을 심사 중이다. 권시온과는 용산 철도계약 공증을 거래한다.",
+          "en": "Relations. Received notary authority delegated from Yun Seorin and was reviewing Han Jaemok's western water draft. Traded the notarization of the Yongsan rail contract with Gwon Sion."
+        },
+        "effects": []
+      },
+      {
+        "id": "k148-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 계약 공증관. 조항마다 종료 조건과 증인란을 강제하고, 인장이 마른 뒤에만 사본을 내준다.",
+          "en": "Office. Rank: registrar. Title: contract notary. He forced exit conditions and witness lines into every clause and gave out copies only after the stamps dried."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 계약 공증관. 조항마다 종료 조건과 증인란을 강제하고, 인장이 마른 뒤에만 사본을 내준다.",
+          "en": "Office. Rank: registrar. Title: contract notary. He forced exit conditions and witness lines into every clause and gave out copies only after the stamps dried."
+        },
+        "stress": {
+          "ko": "공포. 집단 단수 조항을 공증한 뒤 그 물이 서울역 자체에 꺼지는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That after he notarized a collective cutoff clause, that water would stop at Seoul Station itself. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 윤서린에게 공증 권한을 위임받았고 한재목의 서부 급수문안을 심사 중이다. 권시온과는 용산 철도계약 공증을 거래한다.",
+          "en": "Relations. Received notary authority delegated from Yun Seorin and was reviewing Han Jaemok's western water draft. Traded the notarization of the Yongsan rail contract with Gwon Sion."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "종료 조건과 증인란을 요구하고 마른 인장 뒤에 사본을 내준다. 세 문안 접수는 교섭 타결이나 헌법 제정의 성과가 아니다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Requires termination conditions and witnesses before releasing sealed copies. Receiving three drafts is not a negotiated settlement or constitution-making. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -788,7 +932,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 계약 공증관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 계약 공증관. 조항마다 종료 조건과 증인란을 강제하고, 인장이 마른 뒤에만 사본을 내준다.",
     "일화": "뚝섬 급수계약 만료일이 공증 원장에 빨갛게 표시된 채 세 강국의 서로 다른 문안이 동시에 들어왔다.",
     "관계": "윤서린에게 공증 권한을 위임받았고 한재목의 서부 급수문안을 심사 중이다. 권시온과는 용산 철도계약 공증을 거래한다.",
@@ -796,7 +939,7 @@
     "공포": "집단 단수 조항을 공증한 뒤 그 물이 서울역 자체에 꺼지는 것.",
     "개입": "단수 조항을 빼는 수정본을 들고 오거나, 공증관이 받은 급수 뇌물을 원장에 올릴 수 있다."
   },
-  "biography": "계산이 빠르고 문구의 빈칸을 싫어한다. 구두 약속은 약속이 아니라고 반복한다.\n\n- 생업: 계약 종료 조건·증인란 공증\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 계약 공증관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 계약 공증관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 계약 공증관. 조항마다 종료 조건과 증인란을 강제하고, 인장이 마른 뒤에만 사본을 내준다.\n\n**일화.** 뚝섬 급수계약 만료일이 공증 원장에 빨갛게 표시된 채 세 강국의 서로 다른 문안이 동시에 들어왔다.\n\n**관계.** 윤서린에게 공증 권한을 위임받았고 한재목의 서부 급수문안을 심사 중이다. 권시온과는 용산 철도계약 공증을 거래한다.\n\n**야망.** 한재목의 수문헌장과 대한민국정부 공동교섭문을 모두 서울역 공증으로 묶어 급수 감사권을 기록청이 쥐게 한다.\n\n**공포.** 집단 단수 조항을 공증한 뒤 그 물이 서울역 자체에 꺼지는 것.\n\n**개입.** 단수 조항을 빼는 수정본을 들고 오거나, 공증관이 받은 급수 뇌물을 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −15 | 무력 −25 | 물질 −25 | 공동 20 | 원칙 45 | 공개 −25 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 25 | 독점 25 | 위험 35 | 과시 25 | 지속 −15 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "계산이 빠르고 문구의 빈칸을 싫어한다. 구두 약속은 약속이 아니라고 반복한다.\n\n- 생업: 계약 종료 조건·증인란 공증\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 계약 공증관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 계약 공증관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 계약 공증관. 조항마다 종료 조건과 증인란을 강제하고, 인장이 마른 뒤에만 사본을 내준다.\n\n**일화.** 뚝섬 급수계약 만료일이 공증 원장에 빨갛게 표시된 채 세 강국의 서로 다른 문안이 동시에 들어왔다.\n\n**관계.** 윤서린에게 공증 권한을 위임받았고 한재목의 서부 급수문안을 심사 중이다. 권시온과는 용산 철도계약 공증을 거래한다.\n\n**야망.** 한재목의 수문헌장과 대한민국정부 공동교섭문을 모두 서울역 공증으로 묶어 급수 감사권을 기록청이 쥐게 한다.\n\n**공포.** 집단 단수 조항을 공증한 뒤 그 물이 서울역 자체에 꺼지는 것.\n\n**개입.** 단수 조항을 빼는 수정본을 들고 오거나, 공증관이 받은 급수 뇌물을 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −15 | 무력 −25 | 물질 −25 | 공동 20 | 원칙 45 | 공개 −25 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 25 | 독점 25 | 위험 35 | 과시 25 | 지속 −15 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-06"
   ],

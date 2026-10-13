@@ -285,6 +285,142 @@
     "id": "K167",
     "personId": "person-0168"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k167-authority-return-log",
+        "name": {
+          "ko": "비상권한 반환 기록",
+          "en": "Emergency authority return logging"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k167-choice",
+        "name": {
+          "ko": "증언의 맥락 보전",
+          "en": "Preserves testimony context"
+        },
+        "description": {
+          "ko": "대정전 밤의 도장 소리를 아직도 듣고, 반환하지 않은 비상권한을 법통이라고 부르는 말을 참지 못한다. 침묵이 길수록 증언은 짧다.",
+          "en": "He still heard the stamp sounds of the Great Blackout night and could not bear speech that called unreturned emergency powers legitimacy. The longer the silence, the shorter the testimony."
+        },
+        "behavior": {
+          "ko": "일화. 붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다.",
+          "en": "Anecdote. On the night of collapse year zero's Great Blackout, Pyeong Yejun saw, from the archive threshold, the purification, rail, and record chiefs each seize emergency powers."
+        },
+        "stress": {
+          "ko": "공포. 자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That his testimony would be clipped into one great power's advertisement of development legitimacy. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.",
+          "en": "Relations. Offered the Great Blackout logs to Yun Seorin's cross-verification, matched hours with Na Bomgyeol's emergency generation logs, and made Ji Hansol's box sealing hour the anchor of his testimony."
+        },
+        "effects": []
+      },
+      {
+        "id": "k167-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
+          "en": "Office. Rank: registrar. Title: emergency power return witness. He wrote the return hours and the unreturned jurisdictions on one chalkboard and accepted later corrections only with the two duty hands of the day signing again."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
+          "en": "Office. Rank: registrar. Title: emergency power return witness. He wrote the return hours and the unreturned jurisdictions on one chalkboard and accepted later corrections only with the two duty hands of the day signing again."
+        },
+        "stress": {
+          "ko": "공포. 자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That his testimony would be clipped into one great power's advertisement of development legitimacy. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.",
+          "en": "Relations. Offered the Great Blackout logs to Yun Seorin's cross-verification, matched hours with Na Bomgyeol's emergency generation logs, and made Ji Hansol's box sealing hour the anchor of his testimony."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. On the night of collapse year zero's Great Blackout, Pyeong Yejun saw, from the archive threshold, the purification, rail, and record chiefs each seize emergency powers. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -710,7 +846,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
     "일화": "붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다.",
     "관계": "윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.",
@@ -718,7 +853,7 @@
     "공포": "자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것.",
     "개입": "미반환 관할 목록을 공개하거나, 잘린 증언 조각을 되찾아 증인을 보호할 수 있다."
   },
-  "biography": "대정전 밤의 도장 소리를 아직도 듣고, 반환하지 않은 비상권한을 법통이라고 부르는 말을 참지 못한다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 비상권한 반환 시각·관할 기록\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 비상권한 반환 증인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.\n\n**일화.** 붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다.\n\n**관계.** 윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.\n\n**야망.** 붕괴 당일 누가 비상권한을 돌려놓았는지를 공개 증언으로 남겨 각국의 법통 다툼이 소문으로만 커지지 않게 한다.\n\n**공포.** 자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것.\n\n**개입.** 미반환 관할 목록을 공개하거나, 잘린 증언 조각을 되찾아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −30 | 공동 0 | 원칙 50 | 공개 −25 | 자격 10 | 분산 −40 | 변혁 −45\n- 욕망: 갈망 25 | 독점 35 | 위험 40 | 과시 20 | 지속 0 | 지향 양성 | 결합 다자\n:::",
+  "biography": "대정전 밤의 도장 소리를 아직도 듣고, 반환하지 않은 비상권한을 법통이라고 부르는 말을 참지 못한다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 비상권한 반환 시각·관할 기록\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 비상권한 반환 증인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.\n\n**일화.** 붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다.\n\n**관계.** 윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.\n\n**야망.** 붕괴 당일 누가 비상권한을 돌려놓았는지를 공개 증언으로 남겨 각국의 법통 다툼이 소문으로만 커지지 않게 한다.\n\n**공포.** 자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것.\n\n**개입.** 미반환 관할 목록을 공개하거나, 잘린 증언 조각을 되찾아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −30 | 공동 0 | 원칙 50 | 공개 −25 | 자격 10 | 분산 −40 | 변혁 −45\n- 욕망: 갈망 25 | 독점 35 | 위험 40 | 과시 20 | 지속 0 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

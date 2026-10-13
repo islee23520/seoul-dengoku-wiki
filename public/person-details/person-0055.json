@@ -286,6 +286,150 @@
     "id": "K055",
     "personId": "person-0055"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 11,
+        "effective": 11
+      }
+    },
+    "skills": [
+      {
+        "id": "k055-charter-delivery",
+        "name": {
+          "ko": "헌장 사본 전달",
+          "en": "Charter-copy delivery"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k055-snow-passage-clearing",
+        "name": {
+          "ko": "폭설 통로 개방",
+          "en": "Snow-blocked passage clearing"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k055-three-copies",
+        "name": {
+          "ko": "세 장의 사본",
+          "en": "Three copies"
+        },
+        "description": {
+          "ko": "한 장만 남은 전달은 출발하지 않는다.",
+          "en": "Does not start delivery with only one copy."
+        },
+        "behavior": {
+          "ko": "한 장만 남은 전달은 출발하지 않는다.",
+          "en": "Does not start delivery with only one copy."
+        },
+        "stress": {
+          "ko": "인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.",
+          "en": "That the charter copies would be withdrawn with ratification as bait, and the council would fall to Seoul Station politics' subordinate work squad."
+        },
+        "relationship": {
+          "ko": "표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.",
+          "en": "Splitting routes with Pyo Gangho's standards courier line, pasting Gang Minseo's Fabrication Council declaration in the Guro alleys, and taking Yun Seorin's ratification demands only after posting."
+        },
+        "effects": []
+      },
+      {
+        "id": "k055-practice-before-declaration",
+        "name": {
+          "ko": "규칙과 맞는 선언",
+          "en": "Declarations matching practice"
+        },
+        "description": {
+          "ko": "선언이 작업장 규칙과 다르면 전달을 미룬다.",
+          "en": "Delays delivery when declarations contradict workshop rules."
+        },
+        "behavior": {
+          "ko": "선언이 작업장 규칙과 다르면 전달을 미룬다.",
+          "en": "Delays delivery when declarations contradict workshop rules."
+        },
+        "stress": {
+          "ko": "인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.",
+          "en": "That the charter copies would be withdrawn with ratification as bait, and the council would fall to Seoul Station politics' subordinate work squad."
+        },
+        "relationship": {
+          "ko": "표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.",
+          "en": "Splitting routes with Pyo Gangho's standards courier line, pasting Gang Minseo's Fabrication Council declaration in the Guro alleys, and taking Yun Seorin's ratification demands only after posting."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "폭설 통로를 뚫어 부상자를 먼저 옮기고 헌장 사본을 배달했다. 인준 전 게시의 목표와 실제 전달을 구분했다.",
+      "en": "Cleared a snow-blocked passage to move injured people first and delivered charter copies. Distinguishes the goal of publication before ratification from performed deliveries."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -758,7 +902,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 제작헌장 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 제작헌장 전령. 사본은 노동조합·건물조합·경비대가 각각 한 장씩 받고, 한 장만 남은 전달은 출발하지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 제작헌장 전령 자리의 서명이 장부에 올랐다.",
     "관계": "표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.",
@@ -766,7 +909,7 @@
     "공포": "인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.",
     "개입": "회수된 사본을 되찾아 게시를 끝내거나, 세 장의 문구가 서로 다름을 밝혀 전령을 교체할 수 있다."
   },
-  "biography": "깃발보다 헌장 사본을 믿고, 선언 문구가 작업장 규칙과 어긋나면 전달을 하루 미룬다. 경로는 공개하고 가방 속 순서는 숨기지 않는다.\n\n- 소속: 규격맹\n- 생업: 헌장 사본 전달\n- 품계: 조합원\n- 직함: 제작헌장 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작헌장 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 제작헌장 전령. 사본은 노동조합·건물조합·경비대가 각각 한 장씩 받고, 한 장만 남은 전달은 출발하지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 제작헌장 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.\n\n**야망.** 독자 헌장의 수리 규격과 복구 노동 시민권을 기록청 인준 이전에 조합 게시판에 붙여, 법통 빚이 생산 규칙을 삼키지 못하게 한다.\n\n**공포.** 인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.\n\n**개입.** 회수된 사본을 되찾아 게시를 끝내거나, 세 장의 문구가 서로 다름을 밝혀 전령을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 20 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 55 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 −40 | 위험 10 | 과시 −5 | 지속 0 | 지향 동성 | 결합 없음\n:::",
+  "biography": "깃발보다 헌장 사본을 믿고, 선언 문구가 작업장 규칙과 어긋나면 전달을 하루 미룬다. 경로는 공개하고 가방 속 순서는 숨기지 않는다.\n\n- 소속: 규격맹\n- 생업: 헌장 사본 전달\n- 품계: 조합원\n- 직함: 제작헌장 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작헌장 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 제작헌장 전령. 사본은 노동조합·건물조합·경비대가 각각 한 장씩 받고, 한 장만 남은 전달은 출발하지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 제작헌장 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 표강호의 규격 전령로와 경로를 나누고, 강민서의 길드 평의회 선언을 구로 골목에 붙이며, 윤서린의 인준 요구를 게시 이후에만 받는다.\n\n**야망.** 독자 헌장의 수리 규격과 복구 노동 시민권을 기록청 인준 이전에 조합 게시판에 붙여, 법통 빚이 생산 규칙을 삼키지 못하게 한다.\n\n**공포.** 인준을 미끼로 헌장 사본이 회수되고, 길드 평의회가 서울역 정치의 하위 작업반으로 떨어지는 것.\n\n**개입.** 회수된 사본을 되찾아 게시를 끝내거나, 세 장의 문구가 서로 다름을 밝혀 전령을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 20 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 55 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 −40 | 위험 10 | 과시 −5 | 지속 0 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

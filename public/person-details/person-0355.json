@@ -286,6 +286,142 @@
     "id": "K354",
     "personId": "person-0355"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "pump-wear-inspection",
+        "name": {
+          "ko": "펌프 마모 점검",
+          "en": "Pump wear inspection"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "승인 전에는 키를 남긴다",
+          "en": "Keeps keys until approval"
+        },
+        "description": {
+          "ko": "마모와 패킹을 읽고 파손 직후 키 요구에도 시각만 기록했다. 정비 관찰은 확인되지만 광범위한 기계 발명은 없다.",
+          "en": "They read wear and packing conditions and recorded the failure time without releasing a demanded key. Maintenance observation does not imply invention."
+        },
+        "behavior": {
+          "ko": "임펠러 이빨의 마모를 손가락으로 읽고, 구두 개폐는 키 걸이못에 걸지 않는다. 교각 금속음을 패킹 교체 순서로 외운다.",
+          "en": "He read impeller-tooth wear with his fingers and hung no verbal open-close on the key hook. He knew the pier's metal sound by heart as a packing-replacement order."
+        },
+        "stress": {
+          "ko": "공포. 능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.",
+          "en": "Fear. That a ridge sentry would empty the hook with a whistle and the purification log would become blank for a night."
+        },
+        "relationship": {
+          "ko": "관계. 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.",
+          "en": "Relations. An apprentice fitting Gwak Minjae's residual-pressure formula to the impeller teeth, he matched the open-close hours before Mun Hayul's ridge watch froze the pipes. When Go Seojun's gate repairs borrowed the pump-room key, he left a blank in the wear table."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.",
+          "en": "Office. Rank: sergeant. Title: Guui pump-room mechanic, duty officer of Gwak Minjae. He hung the wear table and the packing schedule on the wall, and the defense squad's solitary open-close was possible only while the maintenance key stayed on the hook."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: Guui pump-room mechanic, duty officer of Gwak Minjae. He hung the wear table and the packing schedule on the wall, and the defense squad's solitary open-close was possible only while the maintenance key stayed on the hook."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That a ridge sentry would empty the hook with a whistle and the purification log would become blank for a night."
+        },
+        "relationship": {
+          "ko": "관계. 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.",
+          "en": "Relations. An apprentice fitting Gwak Minjae's residual-pressure formula to the impeller teeth, he matched the open-close hours before Mun Hayul's ridge watch froze the pipes. When Go Seojun's gate repairs borrowed the pump-room key, he left a blank in the wear table."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "마모와 패킹을 읽고 파손 직후 키 요구에도 시각만 기록했다. 정비 관찰은 확인되지만 광범위한 기계 발명은 없다.",
+      "en": "They read wear and packing conditions and recorded the failure time without releasing a demanded key. Maintenance observation does not imply invention."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -734,7 +870,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.",
     "일화": "상수관이 터진 직후 수비대가 키를 요구하자 선솔우는 걸이못을 비우지 않고 마모표에 파손 시각만 적었다.",
     "관계": "곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.",
@@ -742,7 +877,7 @@
     "공포": "능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.",
     "개입": "이빨 마모표를 파손 시각과 겹쳐 읽거나, 걸이못의 키를 양군이 함께 정한 걸이못에 걸지 정할 수 있다."
   },
-  "biography": "임펠러 이빨의 마모를 손가락으로 읽고, 구두 개폐는 키 걸이못에 걸지 않는다. 교각 금속음을 패킹 교체 순서로 외운다.\n\n- 생업: 펌프실 마모표·정비 키 관리\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.\n\n**일화.** 상수관이 터진 직후 수비대가 키를 요구하자 선솔우는 걸이못을 비우지 않고 마모표에 파손 시각만 적었다.\n\n**관계.** 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.\n\n**야망.** 펌프 패킹과 임펠러 교체 주기를 관문 공개 마모표로 고정해, 능선이 열쇠를 가져가도 급수 품질이 숫자로 남게 한다.\n\n**공포.** 능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.\n\n**개입.** 이빨 마모표를 파손 시각과 겹쳐 읽거나, 걸이못의 키를 양군이 함께 정한 걸이못에 걸지 정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −20 | 무력 45 | 물질 10 | 공동 15 | 원칙 0 | 공개 −5 | 자격 10 | 분산 −15 | 변혁 −10\n- 욕망: 갈망 30 | 독점 −30 | 위험 25 | 과시 −20 | 지속 25 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "임펠러 이빨의 마모를 손가락으로 읽고, 구두 개폐는 키 걸이못에 걸지 않는다. 교각 금속음을 패킹 교체 순서로 외운다.\n\n- 생업: 펌프실 마모표·정비 키 관리\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자. 마모표와 패킹 날을 벽에 걸고, 아관사의 단독 개폐를 막고 정비 키는 양군 승인 때만 걸이못에서 꺼낸다.\n\n**일화.** 상수관이 터진 직후 수비대가 키를 요구하자 선솔우는 걸이못을 비우지 않고 마모표에 파손 시각만 적었다.\n\n**관계.** 곽민재의 잔압 식을 임펠러 이빨에 맞추는 사제이고, 문하율의 능선 감시가 배관을 얼리기 전에 개폐 시각을 맞춘다. 고서준의 관문 수리가 펌프실 키를 빌려 가면 마모표에 빈칸을 남긴다.\n\n**야망.** 펌프 패킹과 임펠러 교체 주기를 관문 공개 마모표로 고정해, 능선이 열쇠를 가져가도 급수 품질이 숫자로 남게 한다.\n\n**공포.** 능선 초병이 걸이못을 호각으로 비워 정수 일지가 한 밤에 공백이 되는 것.\n\n**개입.** 이빨 마모표를 파손 시각과 겹쳐 읽거나, 걸이못의 키를 양군이 함께 정한 걸이못에 걸지 정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −20 | 무력 45 | 물질 10 | 공동 15 | 원칙 0 | 공개 −5 | 자격 10 | 분산 −15 | 변혁 −10\n- 욕망: 갈망 30 | 독점 −30 | 위험 25 | 과시 −20 | 지속 25 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-14"
   ],

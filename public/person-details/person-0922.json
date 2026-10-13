@@ -394,6 +394,150 @@
     "id": "K922",
     "personId": "person-0922"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "hearing",
+        "name": {
+          "ko": "증인 대질 진행",
+          "en": "Witness confrontation"
+        },
+        "rating": 45
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "confront-conflicting-accounts",
+        "name": {
+          "ko": "엇갈린 말 대질",
+          "en": "Confront Conflicting Accounts"
+        },
+        "description": {
+          "ko": "노하호는 증언이 갈릴 때 공개적으로 서로 맞대어 확인하는 쪽이다.",
+          "en": "No Haho responds to conflicting testimony by bringing the accounts together for public examination."
+        },
+        "behavior": {
+          "ko": "두 증인의 말이 갈라지자 공개 대질을 열었다.",
+          "en": "They arranged a public confrontation when two witnesses' accounts diverged."
+        },
+        "stress": {
+          "ko": "상반된 증언이 확인을 막는다면 공개 대질로 쟁점을 드러내려 할 수 있다.",
+          "en": "If contradictory testimony obstructs verification, they may seek to expose the disputed points through public confrontation."
+        },
+        "relationship": {
+          "ko": "말이 엇갈리는 두 사람 사이에서는 한쪽 말만 따르기보다 함께 확인하는 자리를 마련할 수 있다.",
+          "en": "Between two people giving conflicting accounts, they may arrange joint examination rather than simply accept one side."
+        },
+        "effects": []
+      },
+      {
+        "id": "trust-duty-records",
+        "name": {
+          "ko": "당직 기록 신뢰",
+          "en": "Trust Duty Records"
+        },
+        "description": {
+          "ko": "노하호는 큰소리보다 장부 기록을 믿고 당직의 연속성을 중시한다.",
+          "en": "No Haho trusts register entries over loud assertions and values continuous duty coverage."
+        },
+        "behavior": {
+          "ko": "자기 직위의 기록을 인계하고 상반된 말은 공개 대질로 확인한다.",
+          "en": "They hand over their position's records and examine conflicting accounts through public confrontation."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 위태롭게 할 우려가 있으면 말의 강도보다 남은 기록을 더 중시할 수 있다.",
+          "en": "If a vacant shift threatens passage, they may give surviving records more weight than forceful claims."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계 내용을 확인할 때 장부를 공통 기준으로 삼을 수 있다.",
+          "en": "When checking handover contents with a senior duty colleague, they may use the register as a common standard."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "두 증인의 공개 대질을 열었다. 사람 사이 확인의 근거는 있으나 수질 계측을 실제로 수행한 장면은 없다.",
+      "en": "She opened a public confrontation between two witnesses. Interpersonal verification is supported; actual water measurement is not shown."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -785,7 +929,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -793,7 +936,7 @@
     "공포": "수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −30 | 물질 15 | 공동 10 | 원칙 55 | 공개 35 | 자격 40 | 분산 5 | 변혁 10\n- 욕망: 갈망 5 | 독점 −40 | 위험 20 | 과시 −25 | 지속 5 | 지향 양성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −30 | 물질 15 | 공동 10 | 원칙 55 | 공개 35 | 자격 40 | 분산 5 | 변혁 10\n- 욕망: 갈망 5 | 독점 −40 | 위험 20 | 과시 −25 | 지속 5 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -394,6 +394,150 @@
     "id": "K458",
     "personId": "person-0458"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "save-register",
+        "name": {
+          "ko": "위기 인명 장부 보존",
+          "en": "Emergency preservation of personnel registers"
+        },
+        "rating": 45
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "people-records-over-cargo",
+        "name": {
+          "ko": "화물보다 인명 기록",
+          "en": "People Records Over Cargo"
+        },
+        "description": {
+          "ko": "주다인은 위기에서 화물보다 사람을 식별하는 장부를 우선하는 태도를 보인다.",
+          "en": "Ju Dain shows a preference for preserving records identifying people over cargo in a crisis."
+        },
+        "behavior": {
+          "ko": "호송 도중 습격을 만나자 화물보다 인명 장부부터 챙겼다.",
+          "en": "When attacked during transport, Ju Dain secured the people register before the cargo."
+        },
+        "stress": {
+          "ko": "호송 위기가 기록과 통행의 연속성을 위협하면 인명 장부를 우선 보전할 수 있다.",
+          "en": "If a transport crisis threatens record and passage continuity, Ju Dain may prioritize safeguarding the people register."
+        },
+        "relationship": {
+          "ko": "선배 당직자와 인수인계할 때도 화물 내역보다 인명 장부의 전달을 중시할 수 있다.",
+          "en": "In handovers with senior duty staff, Ju Dain may give particular weight to passing on the people register rather than cargo details."
+        },
+        "effects": []
+      },
+      {
+        "id": "check-departure-conditions",
+        "name": {
+          "ko": "출발 조건 확인",
+          "en": "Check Departure Conditions"
+        },
+        "description": {
+          "ko": "주다인은 무표 출발을 그대로 허용하지 않고 출발 조건을 확인하는 태도를 보인다.",
+          "en": "Ju Dain shows a disposition to check departure conditions rather than allow departures without the required schedule."
+        },
+        "behavior": {
+          "ko": "제공된 서사에서 무표 출발을 저지한 이력이 제시된다.",
+          "en": "The supplied narrative credits Ju Dain with stopping a departure lacking its required schedule."
+        },
+        "stress": {
+          "ko": "당직 공백이 태욱그룹의 통행을 위협하면 불확실한 출발을 허용하는 데 더욱 신중할 수 있다.",
+          "en": "If a duty gap threatens Taeuk Group's passage, Ju Dain may become more cautious about allowing an uncertain departure."
+        },
+        "relationship": {
+          "ko": "선배 당직자와는 자기 직위의 기록을 넘겨 출발 조건 확인이 끊기지 않도록 협력할 수 있다.",
+          "en": "Ju Dain may work with senior duty staff to keep departure checks continuous by handing over the position's records."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "습격 때 화물보다 인명 장부를 챙겼고 무표 출발 저지 이력이 있다. 호송 생업은 있어도 전투 승리 근거는 없다.",
+      "en": "She saved personnel records over freight during an attack and has an undocumented-departure stop recorded. Escort livelihood does not prove combat victories."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -775,7 +919,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -783,7 +926,7 @@
     "공포": "인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록 인수인계·호송\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 40 | 무력 −30 | 물질 0 | 공동 10 | 원칙 40 | 공개 55 | 자격 40 | 분산 20 | 변혁 10\n- 욕망: 갈망 0 | 독점 −40 | 위험 30 | 과시 30 | 지속 30 | 지향 동성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록 인수인계·호송\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 40 | 무력 −30 | 물질 0 | 공동 10 | 원칙 40 | 공개 55 | 자격 40 | 분산 20 | 변혁 10\n- 욕망: 갈망 0 | 독점 −40 | 위험 30 | 과시 30 | 지속 30 | 지향 동성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

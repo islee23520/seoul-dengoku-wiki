@@ -285,6 +285,142 @@
     "id": "K104",
     "personId": "person-0105"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "dispatch",
+        "name": {
+          "ko": "화차 순서 조정",
+          "en": "Freight-car sequencing"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stop-at-unchalked-compartments",
+        "name": {
+          "ko": "분필 없는 칸 정지",
+          "en": "Stop at Unchalked Compartments"
+        },
+        "description": {
+          "ko": "표누리는 분필과 배정 줄이 없는 유치 칸을 출고 가능한 자리로 인정하지 않는다.",
+          "en": "Pyo Nuri does not treat unchalked or unassigned holding compartments as ready for dispatch."
+        },
+        "behavior": {
+          "ko": "호각 전에 공방과 수비 분필을 다시 긋고 줄이 없는 개조칸은 자갈에 세운다.",
+          "en": "Pyo redraws workshop and guard chalk marks before the whistle and holds modified compartments without allocation lines on the gravel."
+        },
+        "stress": {
+          "ko": "빈 칸이 숙영 천막으로 바뀔 우려가 커지면 칸 배정 표시와 출고 정지를 더 엄격히 적용할 수 있다.",
+          "en": "If empty compartments risk becoming encampments, Pyo may enforce allocation marks and dispatch stops more strictly."
+        },
+        "relationship": {
+          "ko": "이준택의 정비 완료 도장을 받아도 유치 칸의 배정 확인을 거쳐 호각으로 이어갈 수 있다.",
+          "en": "Even after receiving Lee Juntaek's maintenance-completion stamp, Pyo may verify holding allocation before sounding the whistle."
+        },
+        "effects": []
+      },
+      {
+        "id": "synchronize-pump-room-clocks",
+        "name": {
+          "ko": "펌프실 시각 맞춤",
+          "en": "Synchronize Pump-Room Clocks"
+        },
+        "description": {
+          "ko": "표누리는 유치 칠판의 전용줄과 펌프실 호각을 같은 출고 시각에 맞추려 한다.",
+          "en": "Pyo Nuri seeks to align the dedicated line on the holding board with the pump-room whistle at one dispatch time."
+        },
+        "behavior": {
+          "ko": "부품 연장이 끊긴 날 전용줄을 고정하고 암사행 칸의 호각을 보류했다.",
+          "en": "When the parts extension was cut off, Pyo fixed the dedicated line and withheld the whistle for Amsa-bound compartments."
+        },
+        "stress": {
+          "ko": "군자 호각이 보호 방송에 종속될 우려가 커지면 칠판 배정에 따른 시각 통제를 더 고수할 수 있다.",
+          "en": "If Gunja's whistle risks being subordinated to protection broadcasts, Pyo may hold more firmly to board-based timing control."
+        },
+        "relationship": {
+          "ko": "한소미의 제동 부품이 늦으면 전용줄을 미루며 공급 일정에 맞춰 출고를 조정할 수 있다.",
+          "en": "If Han Somi's brake parts arrive late, Pyo may postpone the dedicated line and adjust dispatch to the supply schedule."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "전용줄을 고정하고 부품 연장이 끊긴 날 호각을 울리지 않았다. 칸 배정과 출고 시각 조정이 강점이며 차량 정비는 추가하지 않는다.",
+      "en": "She fixed the dedicated car line and withheld the whistle when parts supply lapsed. Car allocation and timing are strengths, not vehicle maintenance."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -644,7 +780,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 군자기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 집사. 직함은 군자기지 유치 실무장. 호각 전에 공방 분필과 수비 분필을 칸마다 다시 긋고, 줄이 없는 개조칸은 자갈에 세운다.",
     "일화": "중앙 부품 연장이 끊긴 날 표누리는 펌프실 전용줄을 유치 칠판에 고정하고 암사행 칸의 호각을 울리지 않았다.",
     "관계": "이준택의 정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고, 정시우의 천왕 차륜 호환을 칸 줄에서 확인한다. 한소미의 소형 제동 부품이 늦게 오면 전용줄을 하루 미룬다.",
@@ -652,7 +787,7 @@
     "공포": "빈 유치 칸이 숙영 천막으로 바뀌면 군자 호각이 보호 방송 아래로 내려가는 것.",
     "개입": "펌프실 전용줄이 지워진 칸에 제동 상자를 올리거나, 자갈 위 개조칸의 쪽지를 유치 칠판에 옮길 수 있다."
   },
-  "biography": "유치선 칸 분필이 지워진 자리를 빈 사람으로 보고, 후계 회의 전갈보다 출고 호각이 늦은 쪽을 먼저 부른다. 칸이 겹치면 말보다 줄을 친다.\n\n- 소속: 명부교회\n- 생업: 유치선 칸 배정·출고 관리\n- 품계: 집사\n- 직함: 군자기지 유치 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 군자기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 집사. 직함은 군자기지 유치 실무장. 호각 전에 공방 분필과 수비 분필을 칸마다 다시 긋고, 줄이 없는 개조칸은 자갈에 세운다.\n\n**일화.** 중앙 부품 연장이 끊긴 날 표누리는 펌프실 전용줄을 유치 칠판에 고정하고 암사행 칸의 호각을 울리지 않았다.\n\n**관계.** 이준택의 정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고, 정시우의 천왕 차륜 호환을 칸 줄에서 확인한다. 한소미의 소형 제동 부품이 늦게 오면 전용줄을 하루 미룬다.\n\n**야망.** 유치 칠판의 전용줄을 펌프실 호각과 한 시각에 맞춰, 중앙권역 출고가 군자 칸의 분필을 따르게 한다.\n\n**공포.** 빈 유치 칸이 숙영 천막으로 바뀌면 군자 호각이 보호 방송 아래로 내려가는 것.\n\n**개입.** 펌프실 전용줄이 지워진 칸에 제동 상자를 올리거나, 자갈 위 개조칸의 쪽지를 유치 칠판에 옮길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −20 | 물질 10 | 공동 25 | 원칙 10 | 공개 −25 | 자격 35 | 분산 15 | 변혁 5\n- 욕망: 갈망 45 | 독점 40 | 위험 10 | 과시 25 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "유치선 칸 분필이 지워진 자리를 빈 사람으로 보고, 후계 회의 전갈보다 출고 호각이 늦은 쪽을 먼저 부른다. 칸이 겹치면 말보다 줄을 친다.\n\n- 소속: 명부교회\n- 생업: 유치선 칸 배정·출고 관리\n- 품계: 집사\n- 직함: 군자기지 유치 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 군자기지 유치 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 집사. 직함은 군자기지 유치 실무장. 호각 전에 공방 분필과 수비 분필을 칸마다 다시 긋고, 줄이 없는 개조칸은 자갈에 세운다.\n\n**일화.** 중앙 부품 연장이 끊긴 날 표누리는 펌프실 전용줄을 유치 칠판에 고정하고 암사행 칸의 호각을 울리지 않았다.\n\n**관계.** 이준택의 정비 완료 도장을 유치 칸에서 호각으로 바꾸는 지휘를 받고, 정시우의 천왕 차륜 호환을 칸 줄에서 확인한다. 한소미의 소형 제동 부품이 늦게 오면 전용줄을 하루 미룬다.\n\n**야망.** 유치 칠판의 전용줄을 펌프실 호각과 한 시각에 맞춰, 중앙권역 출고가 군자 칸의 분필을 따르게 한다.\n\n**공포.** 빈 유치 칸이 숙영 천막으로 바뀌면 군자 호각이 보호 방송 아래로 내려가는 것.\n\n**개입.** 펌프실 전용줄이 지워진 칸에 제동 상자를 올리거나, 자갈 위 개조칸의 쪽지를 유치 칠판에 옮길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −20 | 물질 10 | 공동 25 | 원칙 10 | 공개 −25 | 자격 35 | 분산 15 | 변혁 5\n- 욕망: 갈망 45 | 독점 40 | 위험 10 | 과시 25 | 지속 40 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

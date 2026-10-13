@@ -285,6 +285,142 @@
     "id": "K236",
     "personId": "person-0237"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "relay-seals",
+        "name": {
+          "ko": "중계 봉인·조각 배분",
+          "en": "Relay sealing and piece distribution"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "relay-seals-disposition",
+        "name": {
+          "ko": "해독 호기심 경계",
+          "en": "Guards against decoding curiosity"
+        },
+        "description": {
+          "ko": "조각의 무게를 기억하고 부스의 침묵을 해독보다 중히 지킨다.",
+          "en": "Remembers piece weights and values booth silence over decoding."
+        },
+        "behavior": {
+          "ko": "조각의 무게를 기억하고 부스의 침묵을 해독보다 중히 지킨다.",
+          "en": "Remembers piece weights and values booth silence over decoding."
+        },
+        "stress": {
+          "ko": "부스 키가 군사 측에 넘어갈 것을 두려워한다.",
+          "en": "Fears booth keys reaching military hands."
+        },
+        "relationship": {
+          "ko": "송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.",
+          "en": "Runs the booth under Song Jaemin, matches seals with Duyong and relays only Jeong Hojun’s public data."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "공개 자료만 중계",
+          "en": "Relays only public data"
+        },
+        "description": {
+          "ko": "정호준의 공개 자료만 중계 대상으로 올린다.",
+          "en": "Relays only Jeong Hojun’s public data."
+        },
+        "behavior": {
+          "ko": "정호준의 공개 자료만 중계 대상으로 올린다.",
+          "en": "Relays only Jeong Hojun’s public data."
+        },
+        "stress": {
+          "ko": "부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.",
+          "en": "Fears booth keys reaching military hands."
+        },
+        "relationship": {
+          "ko": "송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.",
+          "en": "Runs the booth under Song Jaemin, matches seals with Duyong and relays only Jeong Hojun’s public data."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "키 조각을 분산하고 공개 자료만 중계한다. 봉인 장부의 빈 줄은 무단 접근의 미해결 단서다.",
+      "en": "Distributes key pieces and relays only public data. A blank seal-ledger line remains an unresolved access clue."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -612,7 +748,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자. 키 조각을 송재민·두용·외부 증인에게 나누고, 단독 해독을 금지한다.",
     "일화": "마곡이 금고 키 중계를 조건으로 연구자 파견을 제안하자 부스 봉인 장부에 빈 줄이 생겼다.",
     "관계": "송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.",
@@ -620,7 +755,7 @@
     "공포": "부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.",
     "개입": "빈 줄을 채울 증인을 데려오거나, 요구된 뒷문을 폭로할 수 있다."
   },
-  "biography": "열쇠 조각의 무게를 손가락으로 기억하고, 해독 호기심을 죄로 본다. 중계 부스 안의 침묵을 암호보다 중히 지킨다.\n\n- 생업: 금고 키 중계 부스 봉인·조각 배분\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자. 키 조각을 송재민·두용·외부 증인에게 나누고, 단독 해독을 금지한다.\n\n**일화.** 마곡이 금고 키 중계를 조건으로 연구자 파견을 제안하자 부스 봉인 장부에 빈 줄이 생겼다.\n\n**관계.** 송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.\n\n**야망.** 검증 자료를 금고 키 중계로 옮기되 키를 쪼개, 연구자를 인질 삼는 거래를 기술적으로 끊는다.\n\n**공포.** 부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.\n\n**개입.** 빈 줄을 채울 증인을 데려오거나, 요구된 뒷문을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 10 | 무력 −35 | 물질 −5 | 공동 5 | 원칙 15 | 공개 40 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점",
+  "biography": "열쇠 조각의 무게를 손가락으로 기억하고, 해독 호기심을 죄로 본다. 중계 부스 안의 침묵을 암호보다 중히 지킨다.\n\n- 생업: 금고 키 중계 부스 봉인·조각 배분\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.\n\n**관직.** 품계 서기. 직함은 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자. 키 조각을 송재민·두용·외부 증인에게 나누고, 단독 해독을 금지한다.\n\n**일화.** 마곡이 금고 키 중계를 조건으로 연구자 파견을 제안하자 부스 봉인 장부에 빈 줄이 생겼다.\n\n**관계.** 송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.\n\n**야망.** 검증 자료를 금고 키 중계로 옮기되 키를 쪼개, 연구자를 인질 삼는 거래를 기술적으로 끊는다.\n\n**공포.** 부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.\n\n**개입.** 빈 줄을 채울 증인을 데려오거나, 요구된 뒷문을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 10 | 무력 −35 | 물질 −5 | 공동 5 | 원칙 15 | 공개 40 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점",
   "sources": [
     "Cast-State-09"
   ],

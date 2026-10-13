@@ -394,6 +394,150 @@
     "id": "K682",
     "personId": "person-0682"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "bargain",
+        "name": {
+          "ko": "교대 조건 조정",
+          "en": "Shift-condition mediation"
+        },
+        "rating": 50
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "adjust-slowdown-conditions",
+        "name": {
+          "ko": "태업 조건 조정",
+          "en": "Adjust Slowdown Conditions"
+        },
+        "description": {
+          "ko": "홍가훈은 태업 작업반과 조건을 나누어 교대 재개의 접점을 찾는 편이다.",
+          "en": "Hong Gahun favors working through conditions with a slowdown crew to find grounds for resuming shifts."
+        },
+        "behavior": {
+          "ko": "태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다.",
+          "en": "Hong Gahun worked through conditions with the slowdown crew overnight and opened the next shift."
+        },
+        "stress": {
+          "ko": "태업으로 교대가 막힌다면 조건별 협의를 이어가며 재개 가능성을 찾을 수 있다.",
+          "en": "If a slowdown blocks the next shift, Hong Gahun may continue discussing individual conditions to seek a way to resume it."
+        },
+        "relationship": {
+          "ko": "작업반과 갈등이 생기면 구체적인 조건을 나누어 직접 협의하려 할 수 있다.",
+          "en": "In conflict with a crew, Hong Gahun may negotiate directly by separating concrete conditions."
+        },
+        "effects": []
+      },
+      {
+        "id": "guard-against-duty-gaps",
+        "name": {
+          "ko": "당직 공백 경계",
+          "en": "Guard Against Duty Gaps"
+        },
+        "description": {
+          "ko": "홍가훈은 당직 공백이 통행의 의존으로 이어질 가능성을 경계한다.",
+          "en": "Hong Gahun is wary that a duty gap could make passage dependent on a powerful state."
+        },
+        "behavior": {
+          "ko": "당직이 이어지는 쪽을 먼저 고르고 밤샘 협의로 다음 교대를 열었다.",
+          "en": "Hong Gahun prioritizes uninterrupted duty and opened the next shift through overnight negotiation."
+        },
+        "stress": {
+          "ko": "교대 중단이 통행을 볼모로 만들까 우려하면 재개를 위한 협의를 더 오래 이어갈 수 있다.",
+          "en": "Fear that a halted shift could leave passage hostage may sustain longer negotiations for resumption."
+        },
+        "relationship": {
+          "ko": "작업반과 선배 당직을 대할 때 다음 교대로 이어지는 조건을 중시할 수 있다.",
+          "en": "With the crew and senior duty staff, Hong Gahun may emphasize conditions that carry work into the next shift."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "밤샘 조건 협의로 교대를 재개했다. 협의 행동을 평가하며 직함만으로 계측 기기 운용을 추가하지 않는다.",
+      "en": "He restored a shift through overnight negotiations. Bargaining action is supported; instrument operation is not added from a title."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -785,7 +929,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -793,7 +936,7 @@
     "공포": "수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −40 | 물질 0 | 공동 −5 | 원칙 55 | 공개 30 | 자격 35 | 분산 0 | 변혁 15\n- 욕망: 갈망 45 | 독점 30 | 위험 −10 | 과시 30 | 지속 30 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 10 | 무력 −40 | 물질 0 | 공동 −5 | 원칙 55 | 공개 30 | 자격 35 | 분산 0 | 변혁 15\n- 욕망: 갈망 45 | 독점 30 | 위험 −10 | 과시 30 | 지속 30 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-03"
   ],

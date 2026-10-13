@@ -392,6 +392,142 @@
     "id": "K069",
     "personId": "person-0069"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "patrol",
+        "name": {
+          "ko": "등잔·깃발 순찰 조정",
+          "en": "Lamp and flag patrol coordination"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "wait-for-the-flag-s-return",
+        "name": {
+          "ko": "깃발 귀환 대기",
+          "en": "Wait for the Flag's Return"
+        },
+        "description": {
+          "ko": "채봄은 주민 깃발의 귀환을 관문 개방보다 앞선 확인 조건으로 삼는다.",
+          "en": "Chae Bom treats the resident flag’s return as a prerequisite for opening the gate."
+        },
+        "behavior": {
+          "ko": "깃발이 골목 입구로 돌아온 뒤에만 관문 개방 호각을 분다.",
+          "en": "She sounds the gate-opening whistle only after the flag returns to the alley entrance."
+        },
+        "stress": {
+          "ko": "깃발이 돌아오기 전에 연구동 빗장이 안에서 걸릴 우려가 있다면 귀환 확인 없이 개방하지 않으려 할 수 있다.",
+          "en": "If the research building might be bolted from inside before the flag returns, she may resist opening without confirmed return."
+        },
+        "relationship": {
+          "ko": "김도하의 깃발이 아직 골목에 있다면 그와의 맹세에 따라 호각을 참을 수 있다.",
+          "en": "If Kim Doha’s flag remains in the alley, she may withhold the whistle in keeping with her pledge to him."
+        },
+        "effects": []
+      },
+      {
+        "id": "check-the-wick-first",
+        "name": {
+          "ko": "심지부터 점검",
+          "en": "Check the Wick First"
+        },
+        "description": {
+          "ko": "채봄은 대담한 대응보다 등잔 심지와 조명 상태를 먼저 챙긴다.",
+          "en": "Chae Bom attends to lamp wicks and lighting conditions before bold intervention."
+        },
+        "behavior": {
+          "ko": "기름 높이로 순찰 간격을 정하고 꺼진 구간을 다시 재며 위협 때 등잔을 모두 밝혔다.",
+          "en": "She sets patrol intervals by oil level, remeasures dark sections, and lit every lamp during a threat."
+        },
+        "stress": {
+          "ko": "어두운 골목에서 깃발이 돌아오지 못할 우려가 있다면 등잔 상태와 순찰 간격을 더 세밀히 확인할 수 있다.",
+          "en": "If darkness threatens the flag’s return from an alley, she may check lamp conditions and patrol spacing more closely."
+        },
+        "relationship": {
+          "ko": "이봄결의 봉쇄를 관문에서 이어야 한다면 등잔 심지를 관리하되 임시온의 봉함 쪽지 전에는 등잔 줄을 늘리지 않을 수 있다.",
+          "en": "When extending Lee Bomgyeol’s blockade at the gate, she may maintain the wicks without lengthening the lamp line before Im Sion’s sealed note arrives."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "등잔과 주민 깃발로 순찰과 관문 개방을 조정했다. 위협 때의 경계 행동은 확인되나 전투 승리나 무장 보유는 확인되지 않는다.",
+      "en": "She coordinates patrols and gate opening through lamps and flags. Vigilance under threat is documented, not battle victories or weapon ownership."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -830,7 +966,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 방화 관문 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 대리. 직함은 방화 관문 순찰대 조장. 등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다.",
     "일화": "울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.",
     "관계": "이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고, 김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다. 임시온의 봉함 쪽지가 관문에 닿기 전에는 등잔 줄을 늘리지 않는다.",
@@ -838,7 +973,7 @@
     "공포": "등잔이 꺼진 골목에서 깃발이 돌아오기 전에 연구동 빗장이 안에서 걸리는 것.",
     "개입": "울타리 바퀴 자국을 등잔 간격과 겹쳐 읽거나, 안에서 걸린 빗장의 순찰 줄을 주민 깃발 쪽에 펼 수 있다."
   },
-  "biography": "관문 등잔의 기름 높이로 순찰 간격을 정하고, 주민 깃발이 안 보이는 골목을 사고 구간으로 부른다. 대담함보다 등잔 심지를 먼저 깎는다.\n\n- 소속: 태욱그룹\n- 생업: 관문 순찰\n- 품계: 대리\n- 직함: 방화 관문 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 방화 관문 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 대리. 직함은 방화 관문 순찰대 조장. 등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다.\n\n**일화.** 울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.\n\n**관계.** 이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고, 김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다. 임시온의 봉함 쪽지가 관문에 닿기 전에는 등잔 줄을 늘리지 않는다.\n\n**야망.** 등잔 간격으로 관문과 연구동 사이를 메워, 납치 수레가 깃발 사이로 새지 않게 한다.\n\n**공포.** 등잔이 꺼진 골목에서 깃발이 돌아오기 전에 연구동 빗장이 안에서 걸리는 것.\n\n**개입.** 울타리 바퀴 자국을 등잔 간격과 겹쳐 읽거나, 안에서 걸린 빗장의 순찰 줄을 주민 깃발 쪽에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 5 | 무력 −5 | 물질 15 | 공동 0 | 원칙 50 | 공개 45 | 자격 35 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 40 | 위험 10 | 과시 −10 | 지속 5 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "관문 등잔의 기름 높이로 순찰 간격을 정하고, 주민 깃발이 안 보이는 골목을 사고 구간으로 부른다. 대담함보다 등잔 심지를 먼저 깎는다.\n\n- 소속: 태욱그룹\n- 생업: 관문 순찰\n- 품계: 대리\n- 직함: 방화 관문 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 방화 관문 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 대리. 직함은 방화 관문 순찰대 조장. 등잔이 꺼진 구간은 순찰 줄자로 다시 재고, 관문을 여는 호각은 깃발이 골목 입구로 돌아온 뒤에만 분다.\n\n**일화.** 울타리 밖 수레가 연구 칸을 노리자 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.\n\n**관계.** 이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고, 김도하의 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한다. 임시온의 봉함 쪽지가 관문에 닿기 전에는 등잔 줄을 늘리지 않는다.\n\n**야망.** 등잔 간격으로 관문과 연구동 사이를 메워, 납치 수레가 깃발 사이로 새지 않게 한다.\n\n**공포.** 등잔이 꺼진 골목에서 깃발이 돌아오기 전에 연구동 빗장이 안에서 걸리는 것.\n\n**개입.** 울타리 바퀴 자국을 등잔 간격과 겹쳐 읽거나, 안에서 걸린 빗장의 순찰 줄을 주민 깃발 쪽에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 5 | 무력 −5 | 물질 15 | 공동 0 | 원칙 50 | 공개 45 | 자격 35 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 40 | 위험 10 | 과시 −10 | 지속 5 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-03"
   ],

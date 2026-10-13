@@ -285,6 +285,142 @@
     "id": "K229",
     "personId": "person-0230"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "notice-delivery",
+        "name": {
+          "ko": "순번·증언 전달",
+          "en": "Turn and testimony delivery"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "notice-delivery-disposition",
+        "name": {
+          "ko": "기록된 약속 신뢰",
+          "en": "Trusts recorded promises"
+        },
+        "description": {
+          "ko": "구두 약속은 원장에 옮기기 전 믿지 않는다.",
+          "en": "Distrusts promises before recording."
+        },
+        "behavior": {
+          "ko": "구두 약속은 원장에 옮기기 전 믿지 않는다.",
+          "en": "Distrusts promises before recording."
+        },
+        "stress": {
+          "ko": "가방이 광고 쪽지로 바뀔 것을 경계한다.",
+          "en": "Fears the bag becoming an advertising channel."
+        },
+        "relationship": {
+          "ko": "오하늘의 평의회 통지를 나르고, 봉용의 서기실 칠판을 맞춘다. 윤서린에게 보류 사유의 사본을 전한다.",
+          "en": "Carries O Haneul’s notices, checks Bongyong’s board and sends deferral copies to Yun Seorin."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "매수 흔적 공개",
+          "en": "Publishes bribery traces"
+        },
+        "description": {
+          "ko": "매수 쪽지를 평의회 게시판에 그대로 붙인다.",
+          "en": "Posts bribery notes unchanged to the council board."
+        },
+        "behavior": {
+          "ko": "매수 쪽지를 평의회 게시판에 그대로 붙인다.",
+          "en": "Posts bribery notes unchanged to the council board."
+        },
+        "stress": {
+          "ko": "전령 가방이 광고와 보호비 쪽지로 바뀌어 출자 순번이 승자의 시간표가 되는 것.",
+          "en": "Fears the bag becoming an advertising channel."
+        },
+        "relationship": {
+          "ko": "오하늘의 평의회 통지를 나르고, 봉용의 서기실 칠판을 맞춘다. 윤서린에게 보류 사유의 사본을 전한다.",
+          "en": "Carries O Haneul’s notices, checks Bongyong’s board and sends deferral copies to Yun Seorin."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "순번과 증언 이송을 같은 원장에 적고 장부에 없는 시각을 대조한다.",
+      "en": "Records turns and testimony transport together and compares unrecorded times."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -691,7 +827,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 출자 전령, 오하늘의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 출자 전령, 오하늘의 실무 담당자. 순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다.",
     "일화": "서기 일부가 수수료를 받고 발언 순번을 팔자 전령 원장에 없는 시각이 두 칸 생겼다.",
     "관계": "오하늘의 평의회 통지를 나르고, 봉용의 서기실 칠판을 맞춘다. 윤서린에게 보류 사유의 사본을 전한다.",
@@ -699,7 +834,7 @@
     "공포": "전령 가방이 광고와 보호비 쪽지로 바뀌어 출자 순번이 승자의 시간표가 되는 것.",
     "개입": "매수 쪽지를 공개하거나, 공동 시간을 전령로에 고정할 수 있다."
   },
-  "biography": "시간을 분 단위로 기억하고, 한 출자 가문이 발언 시간을 넘기면 쪽지를 의장 앞에 밀어 넣는다. 구두 약속은 전령 원장에 옮기기 전에 믿지 않는다.\n\n- 생업: 평의회 순번 통지·증언 이송\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 출자 전령, 오하늘의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 출자 전령, 오하늘의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 출자 전령, 오하늘의 실무 담당자. 순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다.\n\n**일화.** 서기 일부가 수수료를 받고 발언 순번을 팔자 전령 원장에 없는 시각이 두 칸 생겼다.\n\n**관계.** 오하늘의 평의회 통지를 나르고, 봉용의 서기실 칠판을 맞춘다. 윤서린에게 보류 사유의 사본을 전한다.\n\n**야망.** 공동 시간과 교차 감정 이송을 고정 전령로로 만들어 검열 없는 출자 순번을 권리로 박는다.\n\n**공포.** 전령 가방이 광고와 보호비 쪽지로 바뀌어 출자 순번이 승자의 시간표가 되는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 공동 시간을 전령로에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 25 | 무력 −20 | 물질 −15 | 공동 0 | 원칙 20 | 공개 60 | 자격 10 | 분산 10 | 변혁 −10\n- 욕망: 갈망 0 | 독점 35 | 위험 −10 | 과시 −25 | 지속 10 | 지향 양성 | 결합 계약동거",
+  "biography": "시간을 분 단위로 기억하고, 한 출자 가문이 발언 시간을 넘기면 쪽지를 의장 앞에 밀어 넣는다. 구두 약속은 전령 원장에 옮기기 전에 믿지 않는다.\n\n- 생업: 평의회 순번 통지·증언 이송\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 출자 전령, 오하늘의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 출자 전령, 오하늘의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 서기. 직함은 출자 전령, 오하늘의 실무 담당자. 순번 통지와 증언 이송을 같은 원장에 적고, 매수된 쪽지는 평의회 게시판에 그대로 붙인다.\n\n**일화.** 서기 일부가 수수료를 받고 발언 순번을 팔자 전령 원장에 없는 시각이 두 칸 생겼다.\n\n**관계.** 오하늘의 평의회 통지를 나르고, 봉용의 서기실 칠판을 맞춘다. 윤서린에게 보류 사유의 사본을 전한다.\n\n**야망.** 공동 시간과 교차 감정 이송을 고정 전령로로 만들어 검열 없는 출자 순번을 권리로 박는다.\n\n**공포.** 전령 가방이 광고와 보호비 쪽지로 바뀌어 출자 순번이 승자의 시간표가 되는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 공동 시간을 전령로에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 25 | 무력 −20 | 물질 −15 | 공동 0 | 원칙 20 | 공개 60 | 자격 10 | 분산 10 | 변혁 −10\n- 욕망: 갈망 0 | 독점 35 | 위험 −10 | 과시 −25 | 지속 10 | 지향 양성 | 결합 계약동거",
   "sources": [
     "Cast-State-09"
   ],

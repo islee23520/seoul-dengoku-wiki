@@ -289,6 +289,150 @@
     "id": "K108",
     "personId": "person-0109"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "leak",
+        "name": {
+          "ko": "수압 시험 누수 점검",
+          "en": "Pressure-test leak inspection"
+        },
+        "rating": 55
+      },
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-verbal-unloading-orders",
+        "name": {
+          "ko": "구두 하차 거부",
+          "en": "No Verbal Unloading Orders"
+        },
+        "description": {
+          "ko": "종나솔은 장교의 동행이나 암호패가 있어도 구두 하차 명령만으로 절차를 바꾸지 않는다.",
+          "en": "Jong Nasol does not alter unloading procedures on verbal orders alone, even with an accompanying officer or code token."
+        },
+        "behavior": {
+          "ko": "출입 명부와 펌프 점검 봉인을 같은 시각에 찍고 출입문 진동이 바뀌면 하차 벨을 울리지 않는다.",
+          "en": "They timestamp access registers and pump-inspection seals together and withhold the unloading bell when door vibration changes."
+        },
+        "stress": {
+          "ko": "잠근 문이 납치 증거로 해석될 우려가 생기면 구두 설명보다 명부와 봉인 시각을 더 의지할 수 있다.",
+          "en": "If a locked door risks being construed as kidnapping evidence, they may rely more on registers and seal times than verbal explanations."
+        },
+        "relationship": {
+          "ko": "장교의 요구에도 하차 조건을 지키고 변석훈과는 전력 일지의 시각을 맞추는 확인 관계를 중시할 수 있다.",
+          "en": "They may uphold unloading conditions despite officers' demands and value timestamp verification with Byeon Seokhun's power log."
+        },
+        "effects": []
+      },
+      {
+        "id": "read-blank-fields-aloud",
+        "name": {
+          "ko": "빈칸 소리 내어 읽기",
+          "en": "Read Blank Fields Aloud"
+        },
+        "description": {
+          "ko": "종나솔은 과묵하지만 명부의 빈칸을 조용히 넘기지 않는 확인 성향을 보인다.",
+          "en": "Jong Nasol is taciturn but does not silently pass over blank register entries."
+        },
+        "behavior": {
+          "ko": "명부 빈칸을 소리 내어 읽고 자신이 본 야간 점검 동선을 다른 일지의 시각과 맞춘다.",
+          "en": "They read blank register fields aloud and compare the night-inspection route they witnessed with other log times."
+        },
+        "stress": {
+          "ko": "실종 구간의 빈 좌석이 보호군의 구원 이야기로 채워질 우려가 있으면 관찰한 사실과 미확인 부분을 더 분명히 나눌 수 있다.",
+          "en": "If an empty seat in the disappearance section risks being filled by a protection-force rescue story, they may distinguish observations from unknowns more explicitly."
+        },
+        "relationship": {
+          "ko": "고늘결의 반대편 목격과 변석훈의 일지를 대조하되 협력자에게 빈칸을 추측으로 메우지 않길 요구할 수 있다.",
+          "en": "They may compare Go Neulgyeol's opposite-door observations with Byeon Seokhun's log while asking collaborators not to fill gaps with speculation."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "누수 이음매 세 곳을 찾고 출입 명부와 봉인 시각을 맞춘다. 목격과 확인이 중심이며 실종의 원인을 알고 있었다고 단정하지 않는다.",
+      "en": "He found three leaking joints and synchronizes manifests and seals. Observation and checks are central; knowledge of the disappearance’s cause is not assumed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -1031,7 +1175,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 뚝섬-신정 급수호송 열차 승무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.",
     "관계": "여의도의 고늘결과 같은 열차의 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.",
@@ -1039,7 +1182,7 @@
     "공포": "자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 것.",
     "개입": "반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다."
   },
-  "biography": "펌프실 쪽 출입문의 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 본다. 과묵하되 명부 빈칸은 소리 내어 읽는다.\n\n- 소속: 명부교회\n- 생업: 급수호송 승무·봉인 확인\n- 품계: 교사\n- 직함: 뚝섬-신정 급수호송 열차 승무원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 뚝섬-신정 급수호송 열차 승무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 여의도의 고늘결과 같은 열차의 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.\n\n**야망.** 총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.\n\n**공포.** 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 것.\n\n**개입.** 반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 5 | 무력 −25 | 물질 25 | 공동 35 | 원칙 10 | 공개 −15 | 자격 40 | 분산 25 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "펌프실 쪽 출입문의 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 본다. 과묵하되 명부 빈칸은 소리 내어 읽는다.\n\n- 소속: 명부교회\n- 생업: 급수호송 승무·봉인 확인\n- 품계: 교사\n- 직함: 뚝섬-신정 급수호송 열차 승무원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 뚝섬-신정 급수호송 열차 승무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 여의도의 고늘결과 같은 열차의 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.\n\n**야망.** 총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.\n\n**공포.** 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 것.\n\n**개입.** 반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 5 | 무력 −25 | 물질 25 | 공동 35 | 원칙 10 | 공개 −15 | 자격 40 | 분산 25 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

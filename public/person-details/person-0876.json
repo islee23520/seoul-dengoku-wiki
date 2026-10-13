@@ -394,6 +394,142 @@
     "id": "K876",
     "personId": "person-0876"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k876-reservoir-negotiation",
+        "name": {
+          "ko": "방류량 협의",
+          "en": "Reservoir release discussion"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k876-choice",
+        "name": {
+          "ko": "가뭄에도 협의",
+          "en": "Consults even during drought"
+        },
+        "description": {
+          "ko": "일화. 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다. 이 선택을 넘어선 지속 성향은 미확인이다.",
+          "en": "Anecdote. In the 2125 drought he shared the upstream reservoir release volume with the ration representative through the night. By this deed the signature of the water-supply courier post rose into the ledger. A lasting disposition beyond this choice is unconfirmed."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In the 2125 drought he shared the upstream reservoir release volume with the ration representative through the night. By this deed the signature of the water-supply courier post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the water-supply courier duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k876-boundary",
+        "name": {
+          "ko": "당직 연속성을 중시",
+          "en": "Values duty continuity"
+        },
+        "description": {
+          "ko": "당직 공백을 피하고 기록을 믿는 원문 성향이다. 반복 문구이므로 개인의 특별한 장점으로 확대하지 않는다.",
+          "en": "The source favors unbroken shifts and written records. Repeated wording does not establish a distinctive exceptional virtue."
+        },
+        "behavior": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
+        },
+        "stress": {
+          "ko": "공포. 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the water-supply courier duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다. 단일 일화와 반복 당직 문구만 있어 장기 성향·광범위 경력·후속 결과는 미확인이다.",
+      "en": "Anecdote. In the 2125 drought he shared the upstream reservoir release volume with the ration representative through the night. By this deed the signature of the water-supply courier post rose into the ledger. Only one anecdote and repeated duty wording are available; enduring disposition, broader experience, and later results remain unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -796,7 +932,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 병장. 직함은 급수 전령.",
     "일화": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -804,7 +939,7 @@
     "공포": "급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 저수지 방류·배급량 조정\n- 품계: 병장\n- 직함: 급수 전령\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 병장. 직함은 급수 전령.\n\n**일화.** 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −35 | 무력 50 | 물질 30 | 공동 30 | 원칙 −25 | 공개 −35 | 자격 −25 | 분산 −45 | 변혁 −35\n- 욕망: 갈망 50 | 독점 30 | 위험 5 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 저수지 방류·배급량 조정\n- 품계: 병장\n- 직함: 급수 전령\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 병장. 직함은 급수 전령.\n\n**일화.** 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −35 | 무력 50 | 물질 30 | 공동 30 | 원칙 −25 | 공개 −35 | 자격 −25 | 분산 −45 | 변혁 −35\n- 욕망: 갈망 50 | 독점 30 | 위험 5 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-05"
   ],

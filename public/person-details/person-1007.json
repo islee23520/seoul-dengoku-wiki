@@ -429,6 +429,155 @@
     "id": "K1007",
     "personId": "person-1007"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 17,
+        "effective": 17
+      },
+      "strategy": {
+        "base": 17,
+        "effective": 21
+      },
+      "negotiation": {
+        "base": 15,
+        "effective": 15
+      },
+      "management": {
+        "base": 18,
+        "effective": 18
+      },
+      "insight": {
+        "base": 17,
+        "effective": 17
+      },
+      "learning": {
+        "base": 20,
+        "effective": 20
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k1007-skill-1",
+        "name": {
+          "ko": "기록 대조",
+          "en": "Record comparison"
+        },
+        "rating": 85
+      },
+      {
+        "id": "k1007-skill-2",
+        "name": {
+          "ko": "조약 문서 분석",
+          "en": "Treaty-document analysis"
+        },
+        "rating": 80
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1007-trait-1",
+        "name": {
+          "ko": "통합 구상",
+          "en": "Unification design"
+        },
+        "description": {
+          "ko": "분리된 기록과 조약으로 국가 연속성을 남기려 한다.",
+          "en": "Seeks continuity through separate records and treaties."
+        },
+        "behavior": {
+          "ko": "분리된 기록과 조약으로 국가 연속성을 남기려 한다.",
+          "en": "Seeks continuity through separate records and treaties."
+        },
+        "stress": {
+          "ko": "인준이 없어도 등재를 인준처럼 주장하지 않는다.",
+          "en": "Does not claim registration as ratification when approval is absent."
+        },
+        "relationship": {
+          "ko": "윤서린에게 인준을 구하고 민웅기의 선배로 남는다.",
+          "en": "Seeks Yun Seorin’s ratification and remains Min Woonggi’s senior."
+        },
+        "effects": [
+          {
+            "ability": "strategy",
+            "delta": 4
+          }
+        ]
+      },
+      {
+        "id": "k1007-trait-2",
+        "name": {
+          "ko": "기록에 충실함",
+          "en": "Faithful to records"
+        },
+        "description": {
+          "ko": "문서에 남은 효력과 바라는 효력을 구분한다.",
+          "en": "Distinguishes documented validity from the validity he seeks."
+        },
+        "behavior": {
+          "ko": "문서에 남은 효력과 바라는 효력을 구분한다.",
+          "en": "Distinguishes documented validity from the validity he seeks."
+        },
+        "stress": {
+          "ko": "인준 보류를 문서 등재 성공으로 덮지 않는다.",
+          "en": "Does not hide withheld ratification behind successful registration."
+        },
+        "relationship": {
+          "ko": "온민의 사본 관리는 박성수에게 맡긴다.",
+          "en": "Entrusts Onminui copy management to Park Seongsu."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "온민의 기록과 조약을 모아 대한민국의 연속성을 남기려 한다. 윤서린의 문서 등재 허락을 인준으로 내세우지 않고 별도 인준을 받으려 한다. 높은 전략 견본은 실제 군 지휘 경력을 뜻하지 않는다.",
+      "en": "He collects Onminui records and treaties to preserve continuity of the Republic. He does not present Yun Seorin’s permission to register documents as ratification and seeks that separately. His high strategy sample does not establish military command experience."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -1261,13 +1410,12 @@
   "sections": {
     "생애": "2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.",
     "관직": "품계 장관. 직함은 온민의 수장. 소속은 대한민국정부. 생업 별명은 기록 당직·문서 등재.",
-    "무공": "없음. 생업만.",
     "일화": "윤서린은 온민의의 문서 등재를 허락하였다. 인준은 하지 않았다.",
     "가문": "대한민국정부 당직 가문.",
     "관계": "윤서린은 문서 등재만 허락하고 인준은 하지 않는다. 김연규는 민웅기의 선배다.",
     "야망": "개막에 김연규는 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모아 대한민국이 이어져 있음을 남기려 한다. 윤서린은 온민의의 문서 등재만 허락하고 인준은 하지 않았다. 김연규는 등재를 인준으로 내세우지 않고 인준을 받으려 한다."
   },
-  "biography": "대한민국정부 온민의 수장. 서울 1통과 온전한 대한민국을 기록으로 남기려 하는 사람.\n\n- 기여자: [code-yeongyu](https://github.com/code-yeongyu)\n\n**생애.** 2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.\n\n**관직.** 품계 장관. 직함은 온민의 수장. 소속은 대한민국정부. 생업 별명은 기록 당직·문서 등재.\n\n**무공.** 없음. 생업만.\n\n**일화.** 윤서린은 온민의의 문서 등재를 허락하였다. 인준은 하지 않았다.\n\n**가문.** 대한민국정부 당직 가문.\n\n**관계.** 윤서린은 문서 등재만 허락하고 인준은 하지 않는다. 김연규는 민웅기의 선배다.\n\n**야망.** 개막에 김연규는 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모아 대한민국이 이어져 있음을 남기려 한다. 윤서린은 온민의의 문서 등재만 허락하고 인준은 하지 않았다. 김연규는 등재를 인준으로 내세우지 않고 인준을 받으려 한다.",
+  "biography": "대한민국정부 온민의 수장. 서울 1통과 온전한 대한민국을 기록으로 남기려 하는 사람.\n\n- 기여자: [code-yeongyu](https://github.com/code-yeongyu)\n\n**생애.** 2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.\n\n**관직.** 품계 장관. 직함은 온민의 수장. 소속은 대한민국정부. 생업 별명은 기록 당직·문서 등재.\n\n**일화.** 윤서린은 온민의의 문서 등재를 허락하였다. 인준은 하지 않았다.\n\n**가문.** 대한민국정부 당직 가문.\n\n**관계.** 윤서린은 문서 등재만 허락하고 인준은 하지 않는다. 김연규는 민웅기의 선배다.\n\n**야망.** 개막에 김연규는 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모아 대한민국이 이어져 있음을 남기려 한다. 윤서린은 온민의의 문서 등재만 허락하고 인준은 하지 않았다. 김연규는 등재를 인준으로 내세우지 않고 인준을 받으려 한다.",
   "sources": [
     "Core-Characters"
   ],

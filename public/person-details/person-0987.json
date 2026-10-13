@@ -394,6 +394,150 @@
     "id": "K987",
     "personId": "person-0987"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "brake",
+        "name": {
+          "ko": "제동 정비",
+          "en": "Brake repair"
+        },
+        "rating": 55
+      },
+      {
+        "id": "wheel",
+        "name": {
+          "ko": "차륜 결함 점검",
+          "en": "Wheel-defect inspection"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "complete-overnight-repairs",
+        "name": {
+          "ko": "밤샘 수리 완수",
+          "en": "Complete Overnight Repairs"
+        },
+        "description": {
+          "ko": "홍람원은 다음 배차를 위해 고장 난 제동의 수리를 밤새 마무리하는 지속성을 보인다.",
+          "en": "Hong Ramwon shows persistence in completing failed-brake repairs overnight for the next dispatch."
+        },
+        "behavior": {
+          "ko": "고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다.",
+          "en": "He repaired the failed brakes through the night and preserved the next shift’s dispatch."
+        },
+        "stress": {
+          "ko": "제동 고장이 당직 단절로 이어질 우려가 커지면 구체적인 수리 완수에 더 집중할 수 있다.",
+          "en": "If brake failure threatens to interrupt duty, he may focus more strongly on completing the specific repair."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 다음 배차를 지킨 제동 수리의 완료 사실을 명확히 전하려 할 수 있다.",
+          "en": "He may seek to clearly tell senior duty staff that the brake repair preserving the next dispatch was completed."
+        },
+        "effects": []
+      },
+      {
+        "id": "connect-the-next-duty-shift",
+        "name": {
+          "ko": "다음 당직 연결",
+          "en": "Connect the Next Duty Shift"
+        },
+        "description": {
+          "ko": "홍람원은 자신의 수리와 기록을 다음 당직이 이어질 조건으로 여기는 성향을 보인다.",
+          "en": "Hong Ramwon shows a disposition to treat his repairs and records as conditions for the next duty shift to continue."
+        },
+        "behavior": {
+          "ko": "제동 수리로 다음 교대 배차를 지키고 자기 직위의 열쇠와 기록을 이어 넘긴다.",
+          "en": "He preserves the next shift’s dispatch through brake repair and passes onward his position’s keys and records."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 강국의 볼모로 만들까 우려되면 다음 교대로 이어지는 연결을 더 중시할 수 있다.",
+          "en": "If he fears a duty gap could leave passage hostage to a powerful state, he may place greater importance on connecting to the next shift."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과는 다음 교대가 이어지도록 수리 사실과 기록을 넘기는 책임을 중시할 수 있다.",
+          "en": "With senior duty staff in his community, he may emphasize passing on repair facts and records so the next shift can proceed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "고장 제동을 밤새 고쳐 다음 배차를 지켰다. 구체적 수리와 지속력에 한정하며 물류 상인의 폭넓은 거래 능력은 없다.",
+      "en": "He repaired brakes overnight to preserve dispatch. Specific repair and persistence are supported, not broad trade ability inferred from a logistics title."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -829,7 +973,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -837,7 +980,7 @@
     "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 5 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −15 | 자격 30 | 분산 25 | 변혁 0\n- 욕망: 갈망 20 | 독점 −10 | 위험 −15 | 과시 20 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 5 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −15 | 자격 30 | 분산 25 | 변혁 0\n- 욕망: 갈망 20 | 독점 −10 | 위험 −15 | 과시 20 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

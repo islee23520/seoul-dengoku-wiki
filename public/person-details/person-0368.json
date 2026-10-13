@@ -285,6 +285,142 @@
     "id": "K367",
     "personId": "person-0368"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "accident-log-reconciliation",
+        "name": {
+          "ko": "사고 일지 대조",
+          "en": "Accident log reconciliation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "사고를 군수로 바꾸지 않는다",
+          "en": "Will not recast accidents as military supply"
+        },
+        "description": {
+          "ko": "급수 호스를 군수 줄로 바꾸라는 쪽지를 태우고 충돌 시각과 잔압을 펌프 일지에 맞췄다. 사고 경험에서 손상 상태를 추정하지 않는다.",
+          "en": "A note recasting a water hose as military supply was burned; collision time and pressure were checked against pump logs. Accident experience does not establish injury status."
+        },
+        "behavior": {
+          "ko": "난간 충격의 각도를 몸으로 기억하고, 급수 호스를 군수 줄로 바꾸라는 쪽지를 태운다. 말은 짧고 발자국은 정확하다.",
+          "en": "He remembered the angle of a railing strike with his body and burned any note that told him to turn the water hose into a munitions line. His words were short and his footfalls exact."
+        },
+        "stress": {
+          "ko": "공포. 사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.",
+          "en": "Fear. That the accident car would be stamped the foothold of a protection force's entry and become the pretext of a war he never owned."
+        },
+        "relationship": {
+          "ko": "관계. 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.",
+          "en": "Relations. Matched residual pressure with Seon Solwoo's pump logs and split the accident line with Yeong Hanmoe's clinic stretchers. Read Han Jaemok's water-extension offer only after the accident."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.",
+          "en": "Office. Rank: sergeant. Title: bridge passage accident party. He wrote the collision hour and the residual-pressure figures in the same log and struck armed outside approach from his testimony unless Go Seojun stood by."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: bridge passage accident party. He wrote the collision hour and the residual-pressure figures in the same log and struck armed outside approach from his testimony unless Go Seojun stood by."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the accident car would be stamped the foothold of a protection force's entry and become the pretext of a war he never owned."
+        },
+        "relationship": {
+          "ko": "관계. 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.",
+          "en": "Relations. Matched residual pressure with Seon Solwoo's pump logs and split the accident line with Yeong Hanmoe's clinic stretchers. Read Han Jaemok's water-extension offer only after the accident."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "급수 호스를 군수 줄로 바꾸라는 쪽지를 태우고 충돌 시각과 잔압을 펌프 일지에 맞췄다. 사고 경험에서 손상 상태를 추정하지 않는다.",
+      "en": "A note recasting a water hose as military supply was burned; collision time and pressure were checked against pump logs. Accident experience does not establish injury status."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -666,7 +802,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 양군 교량 통행 사고 당사자 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.",
     "일화": "구의 교량 난간 충돌 직후, 급수 호스를 군수 줄로 바꾸라는 쪽지가 탁윤재에게 건네진다. 탁윤재는 쪽지를 태우고 충돌 시각과 잔압 수치를 한 일지에 옮기고, 선솔우의 펌프 일지와 수치를 맞추러 간다.",
     "관계": "선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.",
@@ -674,7 +809,7 @@
     "공포": "사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.",
     "개입": "당사자 진술로 잔압 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다."
   },
-  "biography": "난간 충격의 각도를 몸으로 기억하고, 급수 호스를 군수 줄로 바꾸라는 쪽지를 태운다. 말은 짧고 발자국은 정확하다.\n\n- 생업: 충돌 시각·잔압 수치 일지 기록\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 교량 통행 사고 당사자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 양군 교량 통행 사고 당사자 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.\n\n**일화.** 구의 교량 난간 충돌 직후, 급수 호스를 군수 줄로 바꾸라는 쪽지가 탁윤재에게 건네진다. 탁윤재는 쪽지를 태우고 충돌 시각과 잔압 수치를 한 일지에 옮기고, 선솔우의 펌프 일지와 수치를 맞추러 간다.\n\n**관계.** 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.\n\n**야망.** 구의 교량 충돌의 당사자 진술을 관문 원장에 고정해 제한 급수 주민의 하루치가 빈 상자가 되지 않게 한다.\n\n**공포.** 사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.\n\n**개입.** 당사자 진술로 잔압 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 35 | 물질 5 | 공동 25 | 원칙 5 | 공개 −10 | 자격 −5 | 분산 −15 | 변혁 −5\n- 욕망: 갈망 20 | 독점 30 | 위험 20 | 과시 −25 | 지속 −5 | 지향 양성 | 결합 다자\n:::",
+  "biography": "난간 충격의 각도를 몸으로 기억하고, 급수 호스를 군수 줄로 바꾸라는 쪽지를 태운다. 말은 짧고 발자국은 정확하다.\n\n- 생업: 충돌 시각·잔압 수치 일지 기록\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 교량 통행 사고 당사자\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 양군 교량 통행 사고 당사자 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 공동실무원. 직함은 양군 교량 통행 사고 당사자. 충돌 시각과 잔압 수치를 같은 일지에 적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.\n\n**일화.** 구의 교량 난간 충돌 직후, 급수 호스를 군수 줄로 바꾸라는 쪽지가 탁윤재에게 건네진다. 탁윤재는 쪽지를 태우고 충돌 시각과 잔압 수치를 한 일지에 옮기고, 선솔우의 펌프 일지와 수치를 맞추러 간다.\n\n**관계.** 선솔우의 펌프 일지와 잔압을 맞추고, 영한뫼의 의무소 들것과 사고 줄을 나눈다. 한재목의 급수 연장 제의를 사고 뒤에만 읽는다.\n\n**야망.** 구의 교량 충돌의 당사자 진술을 관문 원장에 고정해 제한 급수 주민의 하루치가 빈 상자가 되지 않게 한다.\n\n**공포.** 사고 칸이 일방의 무장 진입의 발판으로 찍혀 자신이 없는 전쟁의 구실이 되는 것.\n\n**개입.** 당사자 진술로 잔압 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −25 | 무력 35 | 물질 5 | 공동 25 | 원칙 5 | 공개 −10 | 자격 −5 | 분산 −15 | 변혁 −5\n- 욕망: 갈망 20 | 독점 30 | 위험 20 | 과시 −25 | 지속 −5 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-14"
   ],

@@ -47,7 +47,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.",
+            "summary": "2126년 세대. 신내 환승 당직에서 자랐다. 강남역 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -393,6 +393,142 @@
   "gurps": {
     "id": "K434",
     "personId": "person-0434"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 3,
+        "effective": 3
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k434-personnel-ledger-preservation",
+        "name": {
+          "ko": "인명 장부 보전",
+          "en": "Personnel ledger preservation"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "k434-priority",
+        "name": {
+          "ko": "인명 기록 우선",
+          "en": "People records first"
+        },
+        "description": {
+          "ko": "오윤서의 확인된 행동은 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다.  짧은 일화 밖의 경력과 반복 성과는 미확인이다.",
+          "en": "오윤서: Anecdote. In 2125, meeting a raid mid-convoy, he secured the roster of lives before the freight. By this deed the signature of the convoy courier post rose into the ledger. Further career and repeated results remain unconfirmed."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: assistant manager. Title: convoy courier. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "강남역 호송 전령 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the Group's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k434-accountability",
+        "name": {
+          "ko": "당직의 연속성",
+          "en": "Continuity of duty"
+        },
+        "description": {
+          "ko": "큰소리보다 기록을 믿고 자기 직위의 열쇠와 기록만 넘긴다.",
+          "en": "Trusts records over loud claims and hands over only the keys and records of the position."
+        },
+        "behavior": {
+          "ko": "관직. 품계 사원. 직함은 강남역 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: assistant manager. Title: convoy courier. He handed over only the keys and records of his own post, and never made authority he did not hold."
+        },
+        "stress": {
+          "ko": "공포. 강남역 호송 전령 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.",
+          "en": "Fear. That the convoy courier duty post would stand empty and the Group's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "오윤서의 확인된 행동은 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다.  짧은 일화 밖의 경력과 반복 성과는 미확인이다.",
+      "en": "오윤서: Anecdote. In 2125, meeting a raid mid-convoy, he secured the roster of lives before the freight. By this deed the signature of the convoy courier post rose into the ledger. Further career and repeated results remain unconfirmed."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -775,7 +911,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 강남역 호송 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 사원. 직함은 강남역 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 강남역 호송 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -783,7 +918,7 @@
     "공포": "강남역 호송 전령 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 강남역 호송 기록·열쇠 인계\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 사원. 직함은 강남역 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 강남역 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 강남역 호송 전령 자리에서 성하그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 강남역 호송 전령 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 5 | 무력 −20 | 물질 20 | 공동 15 | 원칙 15 | 공개 25 | 자격 55 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 20 | 위험 35 | 과시 20 | 지속 5 | 지향 이성 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 강남역 호송 기록·열쇠 인계\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 호송 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 호송 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 호송 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 강남역 호송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 강남역 호송 전령 자리에서 성하그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 강남역 호송 전령 당직이 비면 성하전자의 바깥 작업장 두 곳이 강남역 본사와 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 5 | 무력 −20 | 물질 20 | 공동 15 | 원칙 15 | 공개 25 | 자격 55 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 20 | 위험 35 | 과시 20 | 지속 5 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-11"
   ],

@@ -287,6 +287,150 @@
     "id": "K538",
     "personId": "person-0538"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 6,
+        "effective": 6
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "referral",
+        "name": {
+          "ko": "공개 창구 안내",
+          "en": "Public-channel referral"
+        },
+        "rating": 45
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "turn-back-private-requests",
+        "name": {
+          "ko": "사적 요청 되돌리기",
+          "en": "Turn Back Private Requests"
+        },
+        "description": {
+          "ko": "주우석은 사적 청탁을 별도로 받아들이기보다 공개 창구로 돌리는 편이다.",
+          "en": "Ju Useok favors redirecting private requests to a public channel rather than handling them separately."
+        },
+        "behavior": {
+          "ko": "사적 청탁을 돌려보내고 공개 창구로 보냈다.",
+          "en": "Ju Useok turned back a private request and directed it to the public channel."
+        },
+        "stress": {
+          "ko": "사적 청탁이 당직 절차와 충돌한다면 공개 창구를 유지하려 할 수 있다.",
+          "en": "If a private request conflicts with duty procedures, Ju Useok may try to preserve the public channel."
+        },
+        "relationship": {
+          "ko": "청탁하는 상대에게 개인적 응답 대신 공개 창구를 안내하려 할 수 있다.",
+          "en": "Ju Useok may direct a requester to the public channel instead of offering a personal arrangement."
+        },
+        "effects": []
+      },
+      {
+        "id": "duty-records-first",
+        "name": {
+          "ko": "당직 기록 우선",
+          "en": "Duty Records First"
+        },
+        "description": {
+          "ko": "주우석은 사적 요구보다 장부와 끊기지 않는 당직을 판단의 기준으로 삼는 편이다.",
+          "en": "Ju Useok favors ledger records and uninterrupted duty over private demands as guides for decisions."
+        },
+        "behavior": {
+          "ko": "청탁을 공개 창구로 돌리고 자기 직위의 열쇠와 기록만 인계한다.",
+          "en": "Ju Useok redirects requests to the public channel and hands over only the position's keys and records."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 볼모로 만들까 우려할 때 장부의 연속성을 더 중시할 수 있다.",
+          "en": "Fear that a duty gap could leave passage hostage may heighten concern for ledger continuity."
+        },
+        "relationship": {
+          "ko": "선배 당직과의 관계에서는 사적 약속보다 기록에 근거한 인계를 중시할 수 있다.",
+          "en": "With senior duty staff, Ju Useok may favor record-based handovers over private assurances."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "사적 청탁을 공적 창구로 돌린 행동을 반영했다. 물 계측이나 넓은 외교 경력은 제목에서 끌어오지 않았다.",
+      "en": "She returned private requests to a public channel. Water metrology and broad diplomacy are not inferred from her title."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -636,7 +780,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -644,7 +787,7 @@
     "공포": "수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −30 | 물질 15 | 공동 5 | 원칙 40 | 공개 50 | 자격 35 | 분산 10 | 변혁 0\n- 욕망: 갈망 5 | 독점 20 | 위험 −25 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 당직 기록 인수인계\n- 품계: 대리\n- 직함: 수질 계측원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 수질 계측원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 계측원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 수질 계측원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 수질 계측원 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 수질 계측원 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 30 | 무력 −30 | 물질 15 | 공동 5 | 원칙 40 | 공개 50 | 자격 35 | 분산 10 | 변혁 0\n- 욕망: 갈망 5 | 독점 20 | 위험 −25 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

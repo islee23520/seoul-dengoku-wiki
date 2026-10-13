@@ -387,6 +387,118 @@
     "id": "K1016",
     "personId": "person-1016"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 6,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "k1016-service-record-check",
+        "name": {
+          "ko": "복무 기록 대조",
+          "en": "Service-record comparison"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1016-trait-1",
+        "name": {
+          "ko": "명부와 열쇠를 따로",
+          "en": "Rosters apart from keys"
+        },
+        "description": {
+          "ko": "명부와 열쇠를 같은 자리에 두지 않는다.",
+          "en": "Does not keep the roster and key in the same place."
+        },
+        "behavior": {
+          "ko": "명부와 열쇠를 같은 자리에 두지 않는다.",
+          "en": "Does not keep the roster and key in the same place."
+        },
+        "stress": {
+          "ko": "탈영 소대의 사병화 시도에 명부를 지키려 한다.",
+          "en": "Seeks to protect the roster against deserters’ private-army claims."
+        },
+        "relationship": {
+          "ko": "팜반득과 하청을 교섭하고 린샤오메이의 통행을 검사한다.",
+          "en": "Negotiates subcontracting with Pham Van Duc and checks Lin Xiaomei’s passage."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "복무를 마친 뒤 실제 복무·반납과 현재 교대 명부를 대조했다. 열쇠와 명부를 따로 보관하며 명부가 사병 조직의 근거로 쓰이는 것을 경계한다. 선조의 피난 행동은 본인의 경력으로 옮기지 않는다.",
+      "en": "After completing service, he checked actual service and return records against current shifts. He stores keys apart from rosters and guards against the roster becoming a private army’s charter. His ancestors’ evacuation actions are not his career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",

@@ -329,6 +329,142 @@
     "id": "K081",
     "personId": "person-0081"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "emergency-log",
+        "name": {
+          "ko": "비상권한 반환 기록",
+          "en": "Emergency-authority return records"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "return-timing-matters",
+        "name": {
+          "ko": "반환 시점 중시",
+          "en": "Return Timing Matters"
+        },
+        "description": {
+          "ko": "류하늘은 비상권한의 정당성을 권한 반환 시점이 기록되어 있는지로 살피려 한다.",
+          "en": "Ryu Haneul looks to recorded return times when assessing the legitimacy of emergency authority."
+        },
+        "behavior": {
+          "ko": "통신이 끊긴 마지막 시각을 적고 비상권한이 반환되지 않은 칸에 붉은 줄을 남긴다.",
+          "en": "Ryu Haneul records the last communication time and marks unreturned emergency-authority fields with red lines."
+        },
+        "stress": {
+          "ko": "반환 기록의 소실이 군사 감독을 부를 우려가 있으면 반환 시점 칸의 보존을 더욱 중시할 수 있다.",
+          "en": "If lost return records threaten renewed military oversight, Ryu Haneul may place greater emphasis on preserving return-time fields."
+        },
+        "relationship": {
+          "ko": "윤서린이 인준에 반환 시점 칸을 요구하면 이를 권한의 정당성을 확인하는 조건으로 받아들일 수 있다.",
+          "en": "When Yun Seorin requires a return-time field for ratification, Ryu Haneul may accept it as a check on authority's legitimacy."
+        },
+        "effects": []
+      },
+      {
+        "id": "stop-for-missing-copies",
+        "name": {
+          "ko": "누락 사본에 중지",
+          "en": "Stop for Missing Copies"
+        },
+        "description": {
+          "ko": "류하늘은 비상 일지의 분산 보관이 온전해야 열람을 허용한다.",
+          "en": "Ryu Haneul permits access only when distributed copies of the emergency log remain complete."
+        },
+        "behavior": {
+          "ko": "연구책임자·안전심사·주민대표가 보관할 일지 중 한 부라도 비면 열람을 전면 중지한다.",
+          "en": "Ryu Haneul suspends all access if any log copy held by the research lead, safety review, or resident representative is missing."
+        },
+        "stress": {
+          "ko": "반환 기록이 사라질 위험이 커지면 불완전한 사본 상태에서 열람을 재개하기 어려울 수 있다.",
+          "en": "If return records risk disappearing, Ryu Haneul may be reluctant to resume access while copies remain incomplete."
+        },
+        "relationship": {
+          "ko": "임시온의 서고에 반환 일지를 맞출 때도 각 보관 주체의 사본이 유지되는지를 중시할 수 있다.",
+          "en": "When aligning return logs with Im Sion's archive, Ryu Haneul may emphasize retention of each custodian's copy."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "통신 단절 시각과 반환 칸을 기록한다. 선대의 대정전 기록은 본인의 현장 경력이 아니며 현재 보존 업무만 반영했다.",
+      "en": "He records interruption times and authority-return slots. His ancestor’s blackout records are not his field experience; current archival work is reflected."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -678,7 +814,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 대정전 비상권한 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 대정전 비상권한 서기. 비상 일지는 생명안전 연구책임자·안전심사·주민대표가 각각 한 부씩 보관하고, 한 부가 비면 열람을 전면 중지한다.",
     "가문": "붕괴 0년 대정전 때 광역 전력과 통신이 멈추자, 선대 류원택은 마곡 비상위원회의 권한 행사와 반환 시각을 분 단위로 적었다.",
     "관계": "임시온의 연구기록 서고에 반환 일지를 맞추고, 정호준의 삼원 심의를 비상 조항의 기준으로 삼으며, 윤서린의 인준이 반환 시점 칸을 요구하면 응한다.",
@@ -686,7 +821,7 @@
     "공포": "반환 기록이 사라지면 군사 감독이 연구동을 비상시설로 재지정하고, 안전심사가 장교의 하위 직이 되는 것.",
     "개입": "분실된 반환 일지 한 부를 되찾아 법통을 세우거나, 붉은 줄 칸의 조작을 폭로해 서기를 교체할 수 있다."
   },
-  "biography": "끊긴 통신의 마지막 시각을 사람 기억보다 먼저 적고, 비상권한을 반환하지 않은 칸을 붉은 줄로 남긴다. 과거의 침묵을 지금 권위의 재료로 쓰지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 비상권한 일지 기록\n- 품계: 대리\n- 직함: 대정전 비상권한 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 대정전 비상권한 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 대정전 비상권한 서기. 비상 일지는 생명안전 연구책임자·안전심사·주민대표가 각각 한 부씩 보관하고, 한 부가 비면 열람을 전면 중지한다.\n\n**가문.** 붕괴 0년 대정전 때 광역 전력과 통신이 멈추자, 선대 류원택은 마곡 비상위원회의 권한 행사와 반환 시각을 분 단위로 적었다.\n\n**관계.** 임시온의 연구기록 서고에 반환 일지를 맞추고, 정호준의 삼원 심의를 비상 조항의 기준으로 삼으며, 윤서린의 인준이 반환 시점 칸을 요구하면 응한다.\n\n**야망.** 대정전 당시 누가 비상권한을 언제까지 쥐었는지를 공개 원장에 고정해, 연구평의회의 법통이 반환 시점으로 증명되게 한다.\n\n**공포.** 반환 기록이 사라지면 군사 감독이 연구동을 비상시설로 재지정하고, 안전심사가 장교의 하위 직이 되는 것.\n\n**개입.** 분실된 반환 일지 한 부를 되찾아 법통을 세우거나, 붉은 줄 칸의 조작을 폭로해 서기를 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −35 | 물질 0 | 공동 −10 | 원칙 45 | 공개 45 | 자격 40 | 분산 10 | 변혁 0\n- 욕망: 갈망 45 | 독점 0 | 위험 −15 | 과시 −20 | 지속 −15 | 지향 유동 | 결합 없음\n:::",
+  "biography": "끊긴 통신의 마지막 시각을 사람 기억보다 먼저 적고, 비상권한을 반환하지 않은 칸을 붉은 줄로 남긴다. 과거의 침묵을 지금 권위의 재료로 쓰지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 비상권한 일지 기록\n- 품계: 대리\n- 직함: 대정전 비상권한 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 대정전 비상권한 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 대정전 비상권한 서기. 비상 일지는 생명안전 연구책임자·안전심사·주민대표가 각각 한 부씩 보관하고, 한 부가 비면 열람을 전면 중지한다.\n\n**가문.** 붕괴 0년 대정전 때 광역 전력과 통신이 멈추자, 선대 류원택은 마곡 비상위원회의 권한 행사와 반환 시각을 분 단위로 적었다.\n\n**관계.** 임시온의 연구기록 서고에 반환 일지를 맞추고, 정호준의 삼원 심의를 비상 조항의 기준으로 삼으며, 윤서린의 인준이 반환 시점 칸을 요구하면 응한다.\n\n**야망.** 대정전 당시 누가 비상권한을 언제까지 쥐었는지를 공개 원장에 고정해, 연구평의회의 법통이 반환 시점으로 증명되게 한다.\n\n**공포.** 반환 기록이 사라지면 군사 감독이 연구동을 비상시설로 재지정하고, 안전심사가 장교의 하위 직이 되는 것.\n\n**개입.** 분실된 반환 일지 한 부를 되찾아 법통을 세우거나, 붉은 줄 칸의 조작을 폭로해 서기를 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 25 | 무력 −35 | 물질 0 | 공동 −10 | 원칙 45 | 공개 45 | 자격 40 | 분산 10 | 변혁 0\n- 욕망: 갈망 45 | 독점 0 | 위험 −15 | 과시 −20 | 지속 −15 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

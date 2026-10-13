@@ -287,6 +287,150 @@
     "id": "K094",
     "personId": "person-0095"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 10,
+        "effective": 10
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "water-board",
+        "name": {
+          "ko": "급수 게시판 운영",
+          "en": "Water-supply notice management"
+        },
+        "rating": 65
+      },
+      {
+        "id": "closure",
+        "name": {
+          "ko": "위험 구간 폐쇄",
+          "en": "Hazardous-route closure"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "reservoirs-first",
+        "name": {
+          "ko": "저수조 먼저",
+          "en": "Reservoirs First"
+        },
+        "description": {
+          "ko": "장민재는 후계 논의보다 골목 수도와 저수조의 실제 상태를 먼저 살핀다.",
+          "en": "Jang Minjae puts the actual condition of neighborhood taps and reservoirs before succession discussions."
+        },
+        "behavior": {
+          "ko": "후계자 이름보다 저수조 수위를 먼저 묻고 동파 관로에는 우회 급수로로 대응했다.",
+          "en": "Jang asks about reservoir levels before successor names and responded to frozen pipes by opening a bypass supply route."
+        },
+        "stress": {
+          "ko": "계약 만료가 집단 단수로 번질 조짐이 보이면 회의보다 현장 급수 확보를 더 급하게 여길 수 있다.",
+          "en": "If contract expiry appears likely to cause collective water cutoffs, Jang may treat securing local supply as more urgent than meetings."
+        },
+        "relationship": {
+          "ko": "한소미와 동맹을 유지하더라도 생활 복구 공약이 현장 급수로 이어지는지 계속 확인할 수 있다.",
+          "en": "Even while allied with Han Somi, Jang may keep checking whether recovery promises produce actual neighborhood water supply."
+        },
+        "effects": []
+      },
+      {
+        "id": "minimum-water-supply",
+        "name": {
+          "ko": "급수 최저선",
+          "en": "Minimum Water Supply"
+        },
+        "description": {
+          "ko": "장민재는 후계 공백과 거래 조건에도 주민의 최소 급수가 유지되어야 한다고 본다.",
+          "en": "Jang Minjae holds that residents' minimum water supply must survive succession vacancies and bargaining terms."
+        },
+        "behavior": {
+          "ko": "골목별 수압을 공개하고 펌프가 군수나 가문 창고로만 향하면 시민 연서로 평의회 소집을 요구한다.",
+          "en": "Jang publishes neighborhood water pressure and uses citizen co-signatures to call the council when pumps go only to military or family warehouses."
+        },
+        "stress": {
+          "ko": "집단 단수가 노동자의 이주로 이어질 우려가 커지면 급수 최저선의 헌장 명시를 더 강하게 요구할 수 있다.",
+          "en": "If collective cutoffs threaten to displace workers, Jang may press harder to enshrine the supply minimum in the workshop charter."
+        },
+        "relationship": {
+          "ko": "임바다와 최저선 문구를 함께 다듬되 김보람의 야간 봉쇄가 급수 창구를 닫으면 충돌할 수 있다.",
+          "en": "Jang may collaborate with Im Bada on minimum-supply wording but clash with Kim Boram when night closures shut water-service counters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "수압 게시판을 운영하고 동파 때 우회 급수로를 열었다. 생활 급수와 시민 연서가 근거이며 후계 정치의 전권은 없다.",
+      "en": "He maintains pressure notices and opened an alternate supply route during freezing. Household supply and citizen petitions are supported, not full control of succession politics."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -858,7 +1002,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 성수·성동 급수 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 권사. 직함은 성수·성동 급수 시민대표. 골목별 수압 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 성수·성동 급수 시민대표 자리의 서명이 장부에 올랐다.",
     "관계": "한소미의 생활 복구 공약을 현장에서 감시하는 동맹이고, 임바다의 시민 급수권과 최저선 문구를 나누며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.",
@@ -866,7 +1009,7 @@
     "공포": "총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.",
     "개입": "수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 대표 연서를 무효로 만들 수 있다."
   },
-  "biography": "온화하나 골목 수도꼭지가 마르면 공방 회의를 사치로 여긴다. 후계자 이름보다 저수조 수위를 먼저 묻는다.\n\n- 소속: 명부교회\n- 생업: 골목 급수·수압 게시\n- 품계: 권사\n- 직함: 성수·성동 급수 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 성수·성동 급수 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 권사. 직함은 성수·성동 급수 시민대표. 골목별 수압 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 성수·성동 급수 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 생활 복구 공약을 현장에서 감시하는 동맹이고, 임바다의 시민 급수권과 최저선 문구를 나누며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.\n\n**야망.** 후계가 공백이어도 성동 급수의 최저선을 공방헌장에 못 박아, 중앙권역 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.\n\n**개입.** 수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 대표 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 20 | 무력 −10 | 물질 10 | 공동 25 | 원칙 10 | 공개 −30 | 자격 25 | 분산 35 | 변혁 0\n- 욕망: 갈망 25 | 독점 10 | 위험 30 | 과시 20 | 지속 −15 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "온화하나 골목 수도꼭지가 마르면 공방 회의를 사치로 여긴다. 후계자 이름보다 저수조 수위를 먼저 묻는다.\n\n- 소속: 명부교회\n- 생업: 골목 급수·수압 게시\n- 품계: 권사\n- 직함: 성수·성동 급수 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 성수·성동 급수 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 권사. 직함은 성수·성동 급수 시민대표. 골목별 수압 게시판을 운영하고, 펌프 출고가 군수나 가문 창고로만 가면 시민 연서로 평의회를 소집한다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 성수·성동 급수 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 한소미의 생활 복구 공약을 현장에서 감시하는 동맹이고, 임바다의 시민 급수권과 최저선 문구를 나누며, 김보람의 야간 봉쇄가 급수 창구를 닫을 때 충돌한다.\n\n**야망.** 후계가 공백이어도 성동 급수의 최저선을 공방헌장에 못 박아, 중앙권역 주민이 강국 거래의 숫자가 되지 않게 한다.\n\n**공포.** 총관 실종 뒤의 계약 만료가 집단 단수로 번져 성수 공방 노동자가 난민 명부로 떠밀리는 것.\n\n**개입.** 수압 실측표를 가져와 최저선을 관철하거나, 게시판 조작을 밝혀 대표 연서를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 20 | 무력 −10 | 물질 10 | 공동 25 | 원칙 10 | 공개 −30 | 자격 25 | 분산 35 | 변혁 0\n- 욕망: 갈망 25 | 독점 10 | 위험 30 | 과시 20 | 지속 −15 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

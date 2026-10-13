@@ -402,6 +402,142 @@
     "id": "K168",
     "personId": "person-0169"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k168-hash-comparison",
+        "name": {
+          "ko": "원본 해시 대조",
+          "en": "Original hash comparison"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k168-choice",
+        "name": {
+          "ko": "독립 날인 유지",
+          "en": "Maintains independent certification"
+        },
+        "description": {
+          "ko": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.",
+          "en": "He passed no spot where a notary stamp's ink had smudged. He guarded one original's hash over any grand ratification."
+        },
+        "behavior": {
+          "ko": "일화. 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.",
+          "en": "Anecdote. A copy with a smudged notarial stamp comes to the audit desk carrying two original hashes. Jo Irok holds the copy until it is confirmed which hash points to the original, and meanwhile leaves blank the notarial box kept apart from Yun Seorin's seal."
+        },
+        "stress": {
+          "ko": "공포. 번진 도장이 유효한 인준처럼 유통되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That smudged stamps would circulate as valid ratifications. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
+          "en": "Relations. Overlapped with Yun Seorin's seal authority, but kept the notary stamp separate."
+        },
+        "effects": []
+      },
+      {
+        "id": "k168-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.",
+          "en": "Office. Rank: registrar. Title: record notarization auditor. He sent out no copy notarization before the original's hash was confirmed."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.",
+          "en": "Office. Rank: registrar. Title: record notarization auditor. He sent out no copy notarization before the original's hash was confirmed."
+        },
+        "stress": {
+          "ko": "공포. 번진 도장이 유효한 인준처럼 유통되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That smudged stamps would circulate as valid ratifications. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
+          "en": "Relations. Overlapped with Yun Seorin's seal authority, but kept the notary stamp separate."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. A copy with a smudged notarial stamp comes to the audit desk carrying two original hashes. Jo Irok holds the copy until it is confirmed which hash points to the original, and meanwhile leaves blank the notarial box kept apart from Yun Seorin's seal. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -864,7 +1000,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.",
     "일화": "잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.",
     "관계": "윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.",
@@ -872,7 +1007,7 @@
     "공포": "번진 도장이 유효한 인준처럼 유통되는 것.",
     "개입": "잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다."
   },
-  "biography": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.\n\n- 생업: 원본 해시 확인·사본 공증 감사\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 기록 공증 감사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.\n\n**일화.** 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.\n\n**관계.** 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.\n\n**야망.** 기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.\n\n**공포.** 번진 도장이 유효한 인준처럼 유통되는 것.\n\n**개입.** 잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "공증 도장의 잉크가 번진 자리는 통과시키지 않는다. 큰 인준보다 한 장의 원본 해시를 지킨다.\n\n- 생업: 원본 해시 확인·사본 공증 감사\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 기록 공증 감사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 기록 공증 감사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 기록 공증 감사관. 사본 공증은 원본 해시가 확인되기 전에 내보내지 않는다.\n\n**일화.** 잉크가 번진 공증 도장을 단 사본이 원본 해시 두 개를 달고 감사대에 오른다. 조이록은 어느 해시가 원본을 가리키는지 확인할 때까지 사본을 붙들어 두고, 윤서린의 봉인과 따로 두는 공증 날인 칸을 그동안 비워 둔다.\n\n**관계.** 윤서린의 봉인 권한과 겹치지만, 공증 날인은 따로 둔다.\n\n**야망.** 기록 공증을 청장 단독 서명이 아니라 감사·서기 교차 날인으로 고정한다.\n\n**공포.** 번진 도장이 유효한 인준처럼 유통되는 것.\n\n**개입.** 잠긴 두 해시 중 원본을 가리키거나, 열람 범위를 넓힐 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −5 | 무력 −30 | 물질 −40 | 공동 15 | 원칙 60 | 공개 −15 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 25 | 위험 35 | 과시 −45 | 지속 −15 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

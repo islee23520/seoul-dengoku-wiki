@@ -394,6 +394,150 @@
     "id": "K475",
     "personId": "person-0475"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "scout",
+        "name": {
+          "ko": "매복 징후 관찰",
+          "en": "Ambush-sign observation"
+        },
+        "rating": 50
+      },
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "ambush-signs-first",
+        "name": {
+          "ko": "매복 징후 먼저",
+          "en": "Ambush Signs First"
+        },
+        "description": {
+          "ko": "서다은은 확인된 능선 초계에서 매복 흔적을 먼저 읽어 피해를 막은 관찰 강점을 보였다.",
+          "en": "Seo Daeun showed observational strength by reading ambush traces early enough to prevent harm during the documented ridge patrol."
+        },
+        "behavior": {
+          "ko": "능선 초계 중 매복 흔적을 먼저 알아차려 피해가 나기 전에 대응했다.",
+          "en": "During the ridge patrol, they recognized ambush traces and acted before harm occurred."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행을 외부 세력의 볼모로 만들 우려가 있으면 순찰을 잇는 동시에 관찰한 위험 흔적을 더 중시할 수 있다.",
+          "en": "If a duty gap threatens passage autonomy, they may value observed danger signs while maintaining patrol continuity."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 매복을 격파했다는 주장보다 실제로 읽은 흔적을 인계하려 할 수 있다.",
+          "en": "They may hand over the traces actually observed rather than claim to have defeated an ambush."
+        },
+        "effects": []
+      },
+      {
+        "id": "verification-based-patrols",
+        "name": {
+          "ko": "확인으로 순찰",
+          "en": "Verification-Based Patrols"
+        },
+        "description": {
+          "ko": "서다은은 큰소리보다 기록과 관찰한 흔적에 기대어 순찰을 판단하는 성향을 보인다.",
+          "en": "Seo Daeun shows a tendency to judge patrol conditions through records and observed traces rather than loud claims."
+        },
+        "behavior": {
+          "ko": "매복 흔적을 읽어 피해를 막은 확인 경험을 바탕으로 당직 기록과 자기 직위의 인계 범위를 중시한다.",
+          "en": "Drawing on the verified ambush-trace incident, they value duty records and their role's handover limits."
+        },
+        "stress": {
+          "ko": "순찰 당직이 비어 통행이 위협받으면 근거 없는 안심보다 확인 가능한 흔적과 인계 기록을 찾으려 할 수 있다.",
+          "en": "If a patrol duty gap threatens passage, they may seek verifiable traces and handover records rather than unsupported reassurance."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 관찰 내용과 기록을 명확히 넘기는 방식으로 순찰의 연속성을 지키려 할 수 있다.",
+          "en": "They may maintain patrol continuity with the senior duty holder through clear transfers of observations and records."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "초계 중 매복 흔적을 읽어 피해를 막았다. 관찰의 강점은 있으나 전투 격파나 군사 전략 전반은 없다.",
+      "en": "He detected ambush signs on patrol and prevented harm. Observation is a strength, not a combat victory or broad military strategy."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -817,7 +961,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -825,7 +968,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 −5 | 물질 15 | 공동 40 | 원칙 5 | 공개 −10 | 자격 35 | 분산 20 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −20 | 위험 30 | 과시 −10 | 지속 5 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 −5 | 물질 15 | 공동 40 | 원칙 5 | 공개 −10 | 자격 35 | 분산 20 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −20 | 위험 30 | 과시 −10 | 지속 5 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-04"
   ],

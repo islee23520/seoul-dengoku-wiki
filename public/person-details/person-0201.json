@@ -394,6 +394,150 @@
     "id": "K200",
     "personId": "person-0201"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "ice-machine-inspection",
+        "name": {
+          "ko": "제빙기 점검",
+          "en": "Ice machine inspection"
+        },
+        "rating": 70
+      },
+      {
+        "id": "seal-standard-review",
+        "name": {
+          "ko": "밀봉 규격 검수",
+          "en": "Seal standard review"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k200-disposition",
+        "name": {
+          "ko": "도장 없는 부품 거부",
+          "en": "Rejecting unmarked parts"
+        },
+        "description": {
+          "ko": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.",
+          "en": "He read ice-making cycles from the compressor's vibration and struck from the rotation any assistant who left tools on the ice. Few of words, he answered with trial-run noise."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.",
+          "en": "Office. Rank: lay instructor. Title: Noryangjin ice-machine mechanic. Each rotation he wrote compression temperature and brick weight on the chalkboard and fitted no part without the merchants' council stamp."
+        },
+        "stress": {
+          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
+          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
+        },
+        "relationship": {
+          "ko": "관계. 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
+          "en": "Relations. An apprentice backing Seo Nayeon's brick engravings in the field, he matched ice-making power to Na Ruhui's generation and inspected Gang Minseo's sealing standards."
+        },
+        "effects": []
+      },
+      {
+        "id": "k200-choice",
+        "name": {
+          "ko": "공구 보관 규율",
+          "en": "Tool storage discipline"
+        },
+        "description": {
+          "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Noryangjin ice-machine mechanic post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
+          "en": "Relations. An apprentice backing Seo Nayeon's brick engravings in the field, he matched ice-making power to Na Ruhui's generation and inspected Gang Minseo's sealing standards."
+        },
+        "stress": {
+          "ko": "공포. 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
+          "en": "Fear. That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper."
+        },
+        "relationship": {
+          "ko": "관계. 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
+          "en": "Relations. An apprentice backing Seo Nayeon's brick engravings in the field, he matched ice-making power to Na Ruhui's generation and inspected Gang Minseo's sealing standards."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "압축 진동과 온도를 확인하고 불량 부품을 돌려보낸다. 밀봉·출력을 맞추는 반복 실무가 근거이며 제빙기 발명 경력은 없다.",
+      "en": "Checks compression vibration and temperature and returns faulty parts. Repeated seal and output coordination is supported, not ice-machine invention."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -832,7 +976,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.",
     "관계": "서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
@@ -840,7 +983,7 @@
     "공포": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
     "개입": "수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다."
   },
-  "biography": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 제빙기 압축 온도·부품 점검\n- 직함: 노량진 제빙기 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.\n\n**야망.** 제빙기와 냉동 압축 주기를 공개 정비표로 묶어 전력이 흔들려도 하루치 얼음이 남게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −25 | 물질 75 | 공동 −20 | 원칙 −30 | 공개 15 | 자격 25 | 분산 25 | 변혁 5\n- 욕망: 갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자\n:::",
+  "biography": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 제빙기 압축 온도·부품 점검\n- 직함: 노량진 제빙기 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.\n\n**야망.** 제빙기와 냉동 압축 주기를 공개 정비표로 묶어 전력이 흔들려도 하루치 얼음이 남게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −25 | 물질 75 | 공동 −20 | 원칙 −30 | 공개 15 | 자격 25 | 분산 25 | 변혁 5\n- 욕망: 갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

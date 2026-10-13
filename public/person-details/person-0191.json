@@ -372,6 +372,150 @@
     "id": "K190",
     "personId": "person-0191"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "cargo-weight-verification",
+        "name": {
+          "ko": "화물 중량 대조",
+          "en": "Cargo weight verification"
+        },
+        "rating": 65
+      },
+      {
+        "id": "release-condition-review",
+        "name": {
+          "ko": "출고 조건 확인",
+          "en": "Release condition review"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k190-disposition",
+        "name": {
+          "ko": "종료 조건 없는 출고 거부",
+          "en": "Refusing release without end terms"
+        },
+        "description": {
+          "ko": "펌프 부품 상자의 무게가 장부와 다르면 즉시 저울을 갈아 끼우고, 임시 협약의 수명이 다한 밤을 아직도 센다. 사교적이나 빈 상자를 가득하다고 적지는 않는다.",
+          "en": "When a pump-parts box's weight differed from the ledger he swapped the scales at once, and he still counted the nights since the interim accord's lifespan ran out. Sociable, but he never recorded an empty box as full."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 급수 계약 환적 증인. 규격 도장과 중량을 출고 전에 소리 내어 읽고, 호송 종료 조건이 빈 칸이면 상자를 내주지 않는다.",
+          "en": "Office. Rank: registrar. Title: water contract transshipment witness. He read the standards stamps and tonnage aloud before release and gave out no box whose convoy exit conditions stood blank."
+        },
+        "stress": {
+          "ko": "공포. 보증인이 사라진 뒤 환적 증언이 보호조항의 군사 개입 근거로만 인용되는 것.",
+          "en": "Fear. That after the guarantor vanished, the transshipment testimony would be cited only as grounds for the protection clause's military intervention."
+        },
+        "relationship": {
+          "ko": "관계. 루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고, 한재목의 물 공급 최저선을 환적 순서로 받치며, 임하준이 보증한 부품 칸의 마지막 출고를 증언한다.",
+          "en": "Relations. Overlaid the treaty tonnage on Lukas Schneider's warehouse lease ledger, backed Han Jaemok's water-supply minimum line with the transshipment order, and witnessed the last release of the parts column Im Hajun had guaranteed."
+        },
+        "effects": []
+      },
+      {
+        "id": "k190-choice",
+        "name": {
+          "ko": "중량을 다시 맞춤",
+          "en": "Rechecking weight"
+        },
+        "description": {
+          "ko": "일화. 호송 종료 조건 칸이 빈 급수 계약 화물이 용산 환적장에서 출고를 기다린다. 필리프 뮐러는 규격 도장과 중량을 소리 내어 읽은 다음 상자를 환적장에 붙들어 두고, 루카스 슈나이더의 창고 임대 장부에 적힌 협약 중량과 무게를 다시 맞춘다.",
+          "en": "Anecdote. Water-contract cargo whose escort end-condition box is blank waits for release at the Yongsan transshipment yard. Philipp Müller reads the gauge stamp and weight aloud, then holds the crates in the yard and matches their weight again against the accord weight in Lukas Schneider's warehouse lease ledger."
+        },
+        "behavior": {
+          "ko": "관계. 루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고, 한재목의 물 공급 최저선을 환적 순서로 받치며, 임하준이 보증한 부품 칸의 마지막 출고를 증언한다.",
+          "en": "Relations. Overlaid the treaty tonnage on Lukas Schneider's warehouse lease ledger, backed Han Jaemok's water-supply minimum line with the transshipment order, and witnessed the last release of the parts column Im Hajun had guaranteed."
+        },
+        "stress": {
+          "ko": "공포. 보증인이 사라진 뒤 환적 증언이 보호조항의 군사 개입 근거로만 인용되는 것.",
+          "en": "Fear. That after the guarantor vanished, the transshipment testimony would be cited only as grounds for the protection clause's military intervention."
+        },
+        "relationship": {
+          "ko": "관계. 루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고, 한재목의 물 공급 최저선을 환적 순서로 받치며, 임하준이 보증한 부품 칸의 마지막 출고를 증언한다.",
+          "en": "Relations. Overlaid the treaty tonnage on Lukas Schneider's warehouse lease ledger, backed Han Jaemok's water-supply minimum line with the transshipment order, and witnessed the last release of the parts column Im Hajun had guaranteed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "종료 조건이 빈 화물을 붙들고 규격·중량을 협약 장부와 대조했다. 계약 경계를 지키는 실무이며 새 외교 권한을 뜻하지 않는다.",
+      "en": "He held cargo with missing end terms and compared its standards and weight to agreement records. This protects release conditions without granting new diplomatic authority."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -781,7 +925,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 환적 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 필리프 뮐러는 2086년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수 계약 환적 증인 업무를 맡는다. 카를 뮐러는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 필리프 뮐러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 급수 계약 환적 증인. 규격 도장과 중량을 출고 전에 소리 내어 읽고, 호송 종료 조건이 빈 칸이면 상자를 내주지 않는다.",
     "일화": "호송 종료 조건 칸이 빈 급수 계약 화물이 용산 환적장에서 출고를 기다린다. 필리프 뮐러는 규격 도장과 중량을 소리 내어 읽은 다음 상자를 환적장에 붙들어 두고, 루카스 슈나이더의 창고 임대 장부에 적힌 협약 중량과 무게를 다시 맞춘다.",
     "관계": "루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고, 한재목의 물 공급 최저선을 환적 순서로 받치며, 임하준이 보증한 부품 칸의 마지막 출고를 증언한다.",
@@ -789,7 +932,7 @@
     "공포": "보증인이 사라진 뒤 환적 증언이 보호조항의 군사 개입 근거로만 인용되는 것.",
     "개입": "규격 표본을 호송해 증언을 지키거나, 보호조항만 남긴 인용을 폭로할 수 있다."
   },
-  "biography": "펌프 부품 상자의 무게가 장부와 다르면 즉시 저울을 갈아 끼우고, 임시 협약의 수명이 다한 밤을 아직도 센다. 사교적이나 빈 상자를 가득하다고 적지는 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 급수 계약 화물 도장·중량 검수\n- 직함: 급수 계약 환적 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 환적 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 필리프 뮐러는 2086년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수 계약 환적 증인 업무를 맡는다. 카를 뮐러는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 필리프 뮐러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 급수 계약 환적 증인. 규격 도장과 중량을 출고 전에 소리 내어 읽고, 호송 종료 조건이 빈 칸이면 상자를 내주지 않는다.\n\n**일화.** 호송 종료 조건 칸이 빈 급수 계약 화물이 용산 환적장에서 출고를 기다린다. 필리프 뮐러는 규격 도장과 중량을 소리 내어 읽은 다음 상자를 환적장에 붙들어 두고, 루카스 슈나이더의 창고 임대 장부에 적힌 협약 중량과 무게를 다시 맞춘다.\n\n**관계.** 루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고, 한재목의 물 공급 최저선을 환적 순서로 받치며, 임하준이 보증한 부품 칸의 마지막 출고를 증언한다.\n\n**야망.** 급수 계약의 부품 규격과 비상 호송 조건을 용산 환적 원장에 남겨 어느 강국도 생명선을 혼자 끊지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 환적 증언이 보호조항의 군사 개입 근거로만 인용되는 것.\n\n**개입.** 규격 표본을 호송해 증언을 지키거나, 보호조항만 남긴 인용을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −20 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −20 | 자격 40 | 분산 10 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 −15 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "펌프 부품 상자의 무게가 장부와 다르면 즉시 저울을 갈아 끼우고, 임시 협약의 수명이 다한 밤을 아직도 센다. 사교적이나 빈 상자를 가득하다고 적지는 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 급수 계약 화물 도장·중량 검수\n- 직함: 급수 계약 환적 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 환적 증인 자리는 탁수 밤의 밸브 서명으로 열렸다. 필리프 뮐러는 2086년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 영등포 정수 당직에서 자랐다. 2126년에는 급수 계약 환적 증인 업무를 맡는다. 카를 뮐러는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 필리프 뮐러의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 급수 계약 환적 증인. 규격 도장과 중량을 출고 전에 소리 내어 읽고, 호송 종료 조건이 빈 칸이면 상자를 내주지 않는다.\n\n**일화.** 호송 종료 조건 칸이 빈 급수 계약 화물이 용산 환적장에서 출고를 기다린다. 필리프 뮐러는 규격 도장과 중량을 소리 내어 읽은 다음 상자를 환적장에 붙들어 두고, 루카스 슈나이더의 창고 임대 장부에 적힌 협약 중량과 무게를 다시 맞춘다.\n\n**관계.** 루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고, 한재목의 물 공급 최저선을 환적 순서로 받치며, 임하준이 보증한 부품 칸의 마지막 출고를 증언한다.\n\n**야망.** 급수 계약의 부품 규격과 비상 호송 조건을 용산 환적 원장에 남겨 어느 강국도 생명선을 혼자 끊지 못하게 한다.\n\n**공포.** 보증인이 사라진 뒤 환적 증언이 보호조항의 군사 개입 근거로만 인용되는 것.\n\n**개입.** 규격 표본을 호송해 증언을 지키거나, 보호조항만 남긴 인용을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −20 | 물질 25 | 공동 −5 | 원칙 −5 | 공개 −20 | 자격 40 | 분산 10 | 변혁 10\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 −15 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],

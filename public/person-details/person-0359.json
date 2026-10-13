@@ -392,6 +392,142 @@
     "id": "K358",
     "personId": "person-0359"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 6,
+        "effective": 6
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "approval-notice-delivery",
+        "name": {
+          "ko": "승인 전갈 전달",
+          "en": "Approval notice delivery"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "진본 전갈만 나른다",
+          "en": "Carries verified notices"
+        },
+        "description": {
+          "ko": "서로 다른 면제 전갈을 잠그고 진본 대조를 요구했다. 봉인 운송과 문서 분별은 확인되지만 최종 진위 판정은 없다.",
+          "en": "Conflicting exemption notices were locked away pending authenticity comparison. Sealed delivery and scrutiny are supported, not a final authenticity finding."
+        },
+        "behavior": {
+          "ko": "봉인 끈이 느슨하면 출발을 거부하고, 빈 면제 칸이 찍힌 전갈을 사고 원인으로 본다. 숫자와 인장을 사람 말보다 믿는다.",
+          "en": "She refused departure whenever a seal cord sat loose and read a dispatch stamped with an empty exemption column as a cause of accidents. She trusted numbers and stamps over people's words."
+        },
+        "stress": {
+          "ko": "공포. 세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.",
+          "en": "Fear. That three great powers' different exemption dispatches, pasted in the same week, would stamp the customs officer a protection-money collector."
+        },
+        "relationship": {
+          "ko": "관계. 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.",
+          "en": "Relations. Under command to carry Ha Yunmok's gate ledger only under seal, he shared order with Yeong Hanmoe's passage ledger. Sought to move Jeong Yura's loss-compensation clause into the tail of the dispatches."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.",
+          "en": "Office. Rank: sergeant. Title: gate joint-approval courier, duty officer of Ha Yunmok. He wrote the passage items and the water-supply hours on the same dispatch and delivered military exemptions only on passage permits bearing an audit clause."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.",
+          "en": "Recorded duty and limits: Office. Rank: sergeant. Title: gate joint-approval courier, duty officer of Ha Yunmok. He wrote the passage items and the water-supply hours on the same dispatch and delivered military exemptions only on passage permits bearing an audit clause."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That three great powers' different exemption dispatches, pasted in the same week, would stamp the customs officer a protection-money collector."
+        },
+        "relationship": {
+          "ko": "관계. 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.",
+          "en": "Relations. Under command to carry Ha Yunmok's gate ledger only under seal, he shared order with Yeong Hanmoe's passage ledger. Sought to move Jeong Yura's loss-compensation clause into the tail of the dispatches."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "서로 다른 면제 전갈을 잠그고 진본 대조를 요구했다. 봉인 운송과 문서 분별은 확인되지만 최종 진위 판정은 없다.",
+      "en": "Conflicting exemption notices were locked away pending authenticity comparison. Sealed delivery and scrutiny are supported, not a final authenticity finding."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -778,7 +914,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 양군 승인 전령, 하윤목의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.",
     "일화": "세 강국이 서로 다른 급수·통과 면제 문서를 같은 주에 들이밀자 천초윤은 면제 전갈을 가방에 잠그고 진본 대조를 요구했다.",
     "관계": "하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.",
@@ -786,7 +921,7 @@
     "공포": "세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.",
     "개입": "면제 문서의 진본을 가리거나, 관문 원장을 수서 협약 초안에 실어 나를 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 빈 면제 칸이 찍힌 전갈을 사고 원인으로 본다. 숫자와 인장을 사람 말보다 믿는다.\n\n- 생업: 통과 전갈·면제 통행증 배달\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 승인 전령, 하윤목의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 양군 승인 전령, 하윤목의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.\n\n**일화.** 세 강국이 서로 다른 급수·통과 면제 문서를 같은 주에 들이밀자 천초윤은 면제 전갈을 가방에 잠그고 진본 대조를 요구했다.\n\n**관계.** 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.\n\n**야망.** 교량 통과세와 제한 급수 분담금 통지를 자신이 날인하는 전령 원장에만 유효하게 해 공동교섭의 동부 창구를 지킨다.\n\n**공포.** 세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.\n\n**개입.** 면제 문서의 진본을 가리거나, 관문 원장을 수서 협약 초안에 실어 나를 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −10 | 무력 35 | 물질 10 | 공동 10 | 원칙 10 | 공개 10 | 자격 −5 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 25 | 독점 35 | 위험 −15 | 과시 −20 | 지속 −15 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 빈 면제 칸이 찍힌 전갈을 사고 원인으로 본다. 숫자와 인장을 사람 말보다 믿는다.\n\n- 생업: 통과 전갈·면제 통행증 배달\n- 소속: 아관사 양군 공동실무\n- 품계: 공동실무원\n- 직함: 양군 승인 전령, 하윤목의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 양군 승인 전령, 하윤목의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 공동실무원. 직함은 양군 승인 전령, 하윤목의 실무 담당자. 통과 품목과 급수 시간을 같은 전갈에 적고, 군사 면제는 양군 결재와 계약감사 문구가 있는 통행증만 배달한다.\n\n**일화.** 세 강국이 서로 다른 급수·통과 면제 문서를 같은 주에 들이밀자 천초윤은 면제 전갈을 가방에 잠그고 진본 대조를 요구했다.\n\n**관계.** 하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고, 영한뫼의 통과 원장과 순번을 나눈다. 정유라의 손실보상 조항을 전갈 말미에 옮기려 한다.\n\n**야망.** 교량 통과세와 제한 급수 분담금 통지를 자신이 날인하는 전령 원장에만 유효하게 해 공동교섭의 동부 창구를 지킨다.\n\n**공포.** 세 강국의 서로 다른 면제 전갈이 같은 주에 붙어 세리가 일방의 군사 비용 징수원으로 찍히는 것.\n\n**개입.** 면제 문서의 진본을 가리거나, 관문 원장을 수서 협약 초안에 실어 나를 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −10 | 무력 35 | 물질 10 | 공동 10 | 원칙 10 | 공개 10 | 자격 −5 | 분산 −15 | 변혁 −15\n- 욕망: 갈망 25 | 독점 35 | 위험 −15 | 과시 −20 | 지속 −15 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-14"
   ],

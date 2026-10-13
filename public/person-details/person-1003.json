@@ -413,6 +413,163 @@
     "id": "K1003",
     "personId": "person-1003"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 18,
+        "effective": 18
+      },
+      "strategy": {
+        "base": 17,
+        "effective": 17
+      },
+      "negotiation": {
+        "base": 12,
+        "effective": 12
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 17,
+        "effective": 17
+      },
+      "learning": {
+        "base": 13,
+        "effective": 13
+      },
+      "prowess": {
+        "base": 20,
+        "effective": 28
+      },
+      "endurance": {
+        "base": 19,
+        "effective": 19
+      }
+    },
+    "skills": [
+      {
+        "id": "k1003-skill-1",
+        "name": {
+          "ko": "호위 지휘",
+          "en": "Escort command"
+        },
+        "rating": 90
+      },
+      {
+        "id": "k1003-skill-2",
+        "name": {
+          "ko": "철수로 확보",
+          "en": "Securing withdrawal routes"
+        },
+        "rating": 90
+      },
+      {
+        "id": "k1003-skill-3",
+        "name": {
+          "ko": "근접전",
+          "en": "Close combat"
+        },
+        "rating": 95
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1003-trait-1",
+        "name": {
+          "ko": "탁월한 전투원",
+          "en": "Exceptional combatant"
+        },
+        "description": {
+          "ko": "강자 지정과 현장 호위 수행을 반영한다.",
+          "en": "Reflects the established strong-combatant designation and field escort work."
+        },
+        "behavior": {
+          "ko": "강자 지정과 현장 호위 수행을 반영한다.",
+          "en": "Reflects the established strong-combatant designation and field escort work."
+        },
+        "stress": {
+          "ko": "추격을 끊는 판단이 민간인 퇴로와 충돌할 수 있다.",
+          "en": "A decision to break pursuit may conflict with civilians’ escape."
+        },
+        "relationship": {
+          "ko": "부하의 철수선을 중시하나 이연의 공개 거부를 마주한다.",
+          "en": "Values subordinates’ withdrawal lines yet faces Iyen’s public refusal."
+        },
+        "effects": [
+          {
+            "ability": "prowess",
+            "delta": 8
+          }
+        ]
+      },
+      {
+        "id": "k1003-trait-2",
+        "name": {
+          "ko": "철수선 중시",
+          "en": "Withdrawal lines matter"
+        },
+        "description": {
+          "ko": "구두 충성보다 돌아올 경로를 보장하려 한다.",
+          "en": "Seeks a return route rather than verbal loyalty."
+        },
+        "behavior": {
+          "ko": "구두 충성보다 돌아올 경로를 보장하려 한다.",
+          "en": "Seeks a return route rather than verbal loyalty."
+        },
+        "stress": {
+          "ko": "쫓기는 상황에서도 일행의 퇴로를 계산한다.",
+          "en": "Calculates the company’s exit even under pursuit."
+        },
+        "relationship": {
+          "ko": "계약 상대에게 철수 조건을 먼저 밝힌다.",
+          "en": "Discloses withdrawal terms to contracting partners first."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "위험·대가·철수 조건을 먼저 밝히고 민간인과 일행의 퇴로를 지키는 대열을 가르친다. 추격을 끊으려 문 폐쇄를 명령했을 때 민간인이 남아 있어 보호 원칙과 명령이 충돌한다.",
+      "en": "He discloses risks, costs, and withdrawal terms and teaches a formation protecting civilians and the company. His order to shut a gate against pursuit conflicts with that principle when civilians remain."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S00",

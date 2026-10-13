@@ -287,6 +287,150 @@
     "id": "K666",
     "personId": "person-0666"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 4,
+        "effective": 4
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 5,
+        "effective": 5
+      }
+    },
+    "skills": [
+      {
+        "id": "seal",
+        "name": {
+          "ko": "봉인·사본 대조",
+          "en": "Seal and copy comparison"
+        },
+        "rating": 45
+      },
+      {
+        "id": "accounts",
+        "name": {
+          "ko": "지급 장부 대조",
+          "en": "Payment ledger reconciliation"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "separate-copies-and-originals",
+        "name": {
+          "ko": "사본과 원본 분리",
+          "en": "Separate Copies and Originals"
+        },
+        "description": {
+          "ko": "최구아는 위조 도장 사건에서 사본과 원본 칸을 다르게 처리했다.",
+          "en": "Choe Gua treated copies and the original-record slot differently in the forged-seal episode."
+        },
+        "behavior": {
+          "ko": "위조 도장이 드러나자 사본을 불사르고 원본 칸은 지켰다.",
+          "en": "When the forged seal was exposed, Choe Gua burned the copies while protecting the original-record slot."
+        },
+        "stress": {
+          "ko": "위조 문제로 기록을 정리해야 한다면 사본 폐기와 원본 칸 보전을 구분하려 할 수 있다.",
+          "en": "If forgery requires records to be addressed, Choe Gua may distinguish discarding copies from preserving the original-record slot."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 남은 원본 칸과 폐기한 사본을 구별해 설명하려 할 수 있다.",
+          "en": "During handovers with senior duty staff, Choe Gua may distinguish the retained original-record slot from discarded copies."
+        },
+        "effects": []
+      },
+      {
+        "id": "limited-duty-authority",
+        "name": {
+          "ko": "당직 권한 한정",
+          "en": "Limited Duty Authority"
+        },
+        "description": {
+          "ko": "최구아는 당직 인계를 자기 직위에 속한 열쇠와 기록으로 한정한다.",
+          "en": "Choe Gua limits duty handovers to the keys and records belonging to the position."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 넘기고 없는 권한은 만들지 않는다.",
+          "en": "Choe Gua transfers only the position's keys and records without inventing authority."
+        },
+        "stress": {
+          "ko": "당직 공백으로 통행이 볼모가 될까 우려해도 권한을 임의로 넓히지 않으려 할 수 있다.",
+          "en": "Even when fearing that a duty gap could leave passage hostage, Choe Gua may avoid arbitrarily expanding authority."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 인계 가능한 기록과 열쇠의 범위 안에서 책임을 이어가려 할 수 있다.",
+          "en": "With senior duty staff, Choe Gua may continue responsibility within the scope of transferable records and keys."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "위조 도장 사건에서 사본을 태우고 원본 칸을 지켰다. 반복 당직 문구를 종자 관리 전체 전문성으로 부풀리지 않았다.",
+      "en": "She burned a copy after a forged-seal episode and kept the original slot. Repeated duty prose is not inflated into comprehensive seed-management expertise."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -636,7 +780,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -644,7 +787,7 @@
     "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −25 | 물질 15 | 공동 0 | 원칙 70 | 공개 45 | 자격 45 | 분산 10 | 변혁 0\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −20 | 과시 −5 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −25 | 물질 15 | 공동 0 | 원칙 70 | 공개 45 | 자격 45 | 분산 10 | 변혁 0\n- 욕망: 갈망 −10 | 독점 −30 | 위험 −20 | 과시 −5 | 지속 −20 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -287,6 +287,150 @@
     "id": "K923",
     "personId": "person-0923"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 7,
+        "effective": 7
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "rescue",
+        "name": {
+          "ko": "통로 개통·부상자 이송",
+          "en": "Passage clearance and casualty transfer"
+        },
+        "rating": 50
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "the-injured-move-first",
+        "name": {
+          "ko": "부상자 먼저 이동",
+          "en": "The Injured Move First"
+        },
+        "description": {
+          "ko": "하동재는 막힌 통로를 연 뒤 부상자의 이동을 우선하는 성향을 보인다.",
+          "en": "Ha Dongjae shows a disposition to prioritize moving injured people after opening a blocked passage."
+        },
+        "behavior": {
+          "ko": "폭설로 막힌 환승 통로를 뚫고 부상자를 먼저 이송했다.",
+          "en": "He cleared a transfer passage blocked by heavy snow and transported the injured first."
+        },
+        "stress": {
+          "ko": "폭설로 이동이 막힌 상황에서는 통행을 되살리면서 부상자 우선순위를 지키려 할 수 있다.",
+          "en": "When heavy snow blocks movement, he may seek to restore passage while preserving priority for the injured."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 부상자 우선 이송 사실을 빠뜨리지 않으려 할 수 있다.",
+          "en": "In handovers with senior duty staff, he may seek to avoid omitting the injured-first transport."
+        },
+        "effects": []
+      },
+      {
+        "id": "open-heavy-snow-routes",
+        "name": {
+          "ko": "폭설 경로 열기",
+          "en": "Open Heavy-Snow Routes"
+        },
+        "description": {
+          "ko": "하동재는 폭설로 끊긴 환승 경로를 직접 열어 이동을 가능하게 하려는 성향을 보인다.",
+          "en": "Ha Dongjae shows a disposition to restore movement by directly opening a transfer route blocked by heavy snow."
+        },
+        "behavior": {
+          "ko": "폭설에 막힌 환승 통로를 뚫어 부상자를 옮길 수 있게 했다.",
+          "en": "He cleared the snow-blocked transfer passage so injured people could be moved."
+        },
+        "stress": {
+          "ko": "경로 단절이 당직과 통행의 연속성을 위협하면 통로 개방에 더 주의를 쏟을 수 있다.",
+          "en": "If a severed route threatens duty and passage continuity, he may devote more attention to reopening it."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 통로를 열었다는 사실과 그 경로에서 이뤄진 이송을 함께 전하려 할 수 있다.",
+          "en": "He may seek to tell senior duty staff both that the passage was opened and that transport occurred through it."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "막힌 환승 통로를 뚫고 부상자를 우선 이송했다. 한정된 구호 행동이며 전문 임상 진료는 확인되지 않는다.",
+      "en": "He cleared a blocked transfer passage and prioritized casualties. Limited relief work is supported, not professional clinical care."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -670,7 +814,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -678,7 +821,7 @@
     "공포": "공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 환승 통로 개통·부상자 이송\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −15 | 물질 20 | 공동 40 | 원칙 5 | 공개 −5 | 자격 25 | 분산 20 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 40 | 과시 −10 | 지속 15 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 환승 통로 개통·부상자 이송\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −15 | 물질 20 | 공동 40 | 원칙 5 | 공개 −5 | 자격 25 | 분산 20 | 변혁 5\n- 욕망: 갈망 30 | 독점 5 | 위험 40 | 과시 −10 | 지속 15 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

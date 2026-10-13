@@ -392,6 +392,150 @@
     "id": "K216",
     "personId": "person-0217"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "water-auction-stock-check",
+        "name": {
+          "ko": "급수 경매 재고 확인",
+          "en": "Water auction stock checking"
+        },
+        "rating": 65
+      },
+      {
+        "id": "price-issuance-comparison",
+        "name": {
+          "ko": "시세 발행 속도 대조",
+          "en": "Price and issuance comparison"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k216-disposition",
+        "name": {
+          "ko": "실재고 없는 물 유보",
+          "en": "Holding water without real stock"
+        },
+        "description": {
+          "ko": "물값이 뛰는 아침의 빈 상자를 흉작 소문보다 먼저 읽고, 눈짓으로 낙찰을 바꾸는 입찰자를 자리에서 뺀다. 계산은 빠르고 잔인할 만큼 공정하다.",
+          "en": "He read the empty boxes of a water-price morning faster than famine rumor and struck out any bidder who changed awards with glances. Quick of arithmetic and fair to the point of cruelty."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 급수 시세 폭등 상인. 시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다.",
+          "en": "Office. Rank: lay instructor. Title: water price surge merchant. He wrote the opening and winning bids on the wall and postponed water without actual inventory to the next session."
+        },
+        "stress": {
+          "ko": "공포. 자신이 올린 시작가가 군량 입찰의 신호등처럼 읽히는 것.",
+          "en": "Fear. That the opening bid he raised would read like a signal lamp for ration bids."
+        },
+        "relationship": {
+          "ko": "관계. 윤서하의 경매 규칙을 물가 품목에서 집행하고, 오해린의 결제권 발행 속도를 시세로 견제하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
+          "en": "Relations. Executed Yun Seoha's auction rules on the waterway items, checked the speed of O Haerin's settlement-right issuance with prices, and sent Nam Yungyeong's emergency price offer back as a grudge."
+        },
+        "effects": []
+      },
+      {
+        "id": "k216-choice",
+        "name": {
+          "ko": "눈짓 입찰 거부",
+          "en": "Rejecting wink bids"
+        },
+        "description": {
+          "ko": "일화. 물값이 뛴 아침, 실재고 없는 물이 시작가를 달고 노량진 경매판에 오른다. 홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다.",
+          "en": "Anecdote. On a morning when water prices jump, water with no stock behind it goes up on the Noryangjin auction board with an opening price. Hong Jihun defers it to the next round and, beside the opening and winning prices on the wall, notes the pace at which O Haerin is issuing payment rights."
+        },
+        "behavior": {
+          "ko": "관계. 윤서하의 경매 규칙을 물가 품목에서 집행하고, 오해린의 결제권 발행 속도를 시세로 견제하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
+          "en": "Relations. Executed Yun Seoha's auction rules on the waterway items, checked the speed of O Haerin's settlement-right issuance with prices, and sent Nam Yungyeong's emergency price offer back as a grudge."
+        },
+        "stress": {
+          "ko": "공포. 자신이 올린 시작가가 군량 입찰의 신호등처럼 읽히는 것.",
+          "en": "Fear. That the opening bid he raised would read like a signal lamp for ration bids."
+        },
+        "relationship": {
+          "ko": "관계. 윤서하의 경매 규칙을 물가 품목에서 집행하고, 오해린의 결제권 발행 속도를 시세로 견제하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
+          "en": "Relations. Executed Yun Seoha's auction rules on the waterway items, checked the speed of O Haerin's settlement-right issuance with prices, and sent Nam Yungyeong's emergency price offer back as a grudge."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "실재고 없는 물 경매를 미루고 가격 옆에 발행 속도를 적었다. 시장 규칙 집행은 확인되나 발행권 통제를 얻었다고 쓰지 않는다.",
+      "en": "Defers water bidding without real stock and records issuance speed beside prices. Rule enforcement does not establish control of issuance authority."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -825,7 +969,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 시세 폭등 상인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 교도. 직함은 급수 시세 폭등 상인. 시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다.",
     "일화": "물값이 뛴 아침, 실재고 없는 물이 시작가를 달고 노량진 경매판에 오른다. 홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다.",
     "관계": "윤서하의 경매 규칙을 물가 품목에서 집행하고, 오해린의 결제권 발행 속도를 시세로 견제하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
@@ -833,7 +976,7 @@
     "공포": "자신이 올린 시작가가 군량 입찰의 신호등처럼 읽히는 것.",
     "개입": "실제 재고를 경매 전에 공개하거나, 특정 후계자에게 군량 입찰을 몰아주려는 쪽지를 찢을 수 있다."
   },
-  "biography": "물값이 뛰는 아침의 빈 상자를 흉작 소문보다 먼저 읽고, 눈짓으로 낙찰을 바꾸는 입찰자를 자리에서 뺀다. 계산은 빠르고 잔인할 만큼 공정하다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 급수 시작가·실재고 대조\n- 직함: 급수 시세 폭등 상인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 시세 폭등 상인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 교도. 직함은 급수 시세 폭등 상인. 시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다.\n\n**일화.** 물값이 뛴 아침, 실재고 없는 물이 시작가를 달고 노량진 경매판에 오른다. 홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다.\n\n**관계.** 윤서하의 경매 규칙을 물가 품목에서 집행하고, 오해린의 결제권 발행 속도를 시세로 견제하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.\n\n**야망.** 물가 폭등을 공개 시세로만 교환하게 만들어 강국의 비공개 직거래가 노량진 경매판을 빈 의자로 만들지 못하게 한다.\n\n**공포.** 자신이 올린 시작가가 군량 입찰의 신호등처럼 읽히는 것.\n\n**개입.** 실제 재고를 경매 전에 공개하거나, 특정 후계자에게 군량 입찰을 몰아주려는 쪽지를 찢을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −10 | 물질 90 | 공동 −10 | 원칙 −35 | 공개 20 | 자격 0 | 분산 15 | 변혁 0\n- 욕망: 갈망 −5 | 독점 −15 | 위험 −5 | 과시 5 | 지속 15 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "물값이 뛰는 아침의 빈 상자를 흉작 소문보다 먼저 읽고, 눈짓으로 낙찰을 바꾸는 입찰자를 자리에서 뺀다. 계산은 빠르고 잔인할 만큼 공정하다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 급수 시작가·실재고 대조\n- 직함: 급수 시세 폭등 상인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 시세 폭등 상인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 교도. 직함은 급수 시세 폭등 상인. 시작가와 낙찰가를 벽에 쓰고, 실재고 없는 물은 다음 회로 미룬다.\n\n**일화.** 물값이 뛴 아침, 실재고 없는 물이 시작가를 달고 노량진 경매판에 오른다. 홍지훈은 그 물을 다음 회로 미루고, 벽에 적은 시작가와 낙찰가 옆에 오해린의 결제권 발행 속도를 함께 적어 둔다.\n\n**관계.** 윤서하의 경매 규칙을 물가 품목에서 집행하고, 오해린의 결제권 발행 속도를 시세로 견제하며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.\n\n**야망.** 물가 폭등을 공개 시세로만 교환하게 만들어 강국의 비공개 직거래가 노량진 경매판을 빈 의자로 만들지 못하게 한다.\n\n**공포.** 자신이 올린 시작가가 군량 입찰의 신호등처럼 읽히는 것.\n\n**개입.** 실제 재고를 경매 전에 공개하거나, 특정 후계자에게 군량 입찰을 몰아주려는 쪽지를 찢을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −10 | 물질 90 | 공동 −10 | 원칙 −35 | 공개 20 | 자격 0 | 분산 15 | 변혁 0\n- 욕망: 갈망 −5 | 독점 −15 | 위험 −5 | 과시 5 | 지속 15 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-08"
   ],

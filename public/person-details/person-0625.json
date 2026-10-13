@@ -286,6 +286,142 @@
     "id": "K625",
     "personId": "person-0625"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "provenance-copy",
+        "name": {
+          "ko": "구호 출처 필사",
+          "en": "Relief-provenance transcription"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "provenance-copy-disposition",
+        "name": {
+          "ko": "구두 약속 분리",
+          "en": "Separates oral promises"
+        },
+        "description": {
+          "ko": "출처 기록과 구두 약속을 다른 칸에 모은다.",
+          "en": "Collects provenance records and oral promises separately."
+        },
+        "behavior": {
+          "ko": "출처 기록과 구두 약속을 다른 칸에 모은다.",
+          "en": "Collects provenance records and oral promises separately."
+        },
+        "stress": {
+          "ko": "미확인 약속이 필사본을 대신할 것을 경계한다.",
+          "en": "Is wary of unconfirmed promises replacing copied records."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Maintains handover ties with senior duty workers of the same living area."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "구두 약속 보고",
+          "en": "Reports oral promises"
+        },
+        "description": {
+          "ko": "여백의 구두 구호 약속을 윤초아에게 올린다.",
+          "en": "Submits oral relief promises in the margin to Yun Choa."
+        },
+        "behavior": {
+          "ko": "여백의 구두 구호 약속을 윤초아에게 올린다.",
+          "en": "Submits oral relief promises in the margin to Yun Choa."
+        },
+        "stress": {
+          "ko": "장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
+          "en": "Is wary of unconfirmed promises replacing copied records."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Maintains handover ties with senior duty workers of the same living area."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "출처 빈 구호 상자의 출처 칸을 필사하면서 말로만 전해진 약속은 여백에 따로 모아 올렸다. 확인된 출처와 구두 약속을 섞지 않는다.",
+      "en": "Copied provenance fields for relief boxes while collecting oral promises separately in the margin. Does not mix confirmed provenance with oral promises."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -635,7 +771,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.",
     "일화": "출처가 비어 있는 구호 물자 상자가 숙영지로 들어온다. 박금은은 윤초아가 상자마다 적는 출처 칸을 필사본에 옮기면서, 말로만 전해진 구호 약속을 필사본 여백에 따로 모아 윤초아에게 올린다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -643,7 +778,7 @@
     "공포": "장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 출처가 비어 있는 구호 물자 상자가 숙영지로 들어온다. 박금은은 윤초아가 상자마다 적는 출처 칸을 필사본에 옮기면서, 말로만 전해진 구호 약속을 필사본 여백에 따로 모아 윤초아에게 올린다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 60 | 무력 −50 | 물질 −15 | 공동 90 | 원칙 40 | 공개 45 | 자격 40 | 분산 45 | 변혁 −10\n- 욕망: 갈망 35 | 독점 −5 | 위험 −20 | 과시 −10 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 장경 필사본·당직 열쇠 인계\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 장경 필사 행자\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 장경 필사 행자 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 행자. 직함은 장경 필사 행자. 자기 당직의 열쇠와 필사본만 넘기고, 없는 권한은 만들지 않는다. 표는 산중총회에서만 던진다.\n\n**일화.** 출처가 비어 있는 구호 물자 상자가 숙영지로 들어온다. 박금은은 윤초아가 상자마다 적는 출처 칸을 필사본에 옮기면서, 말로만 전해진 구호 약속을 필사본 여백에 따로 모아 윤초아에게 올린다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 장경 필사 행자 자리에서 안국총림의 경전과 장부를 끊기지 않게 필사하고, 산중총회의 표가 그 필사본과 어긋나지 않게 한다.\n\n**공포.** 장경 필사 행자 당직이 비면 안국총림의 필사본이 끊기고 문중 표가 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 60 | 무력 −50 | 물질 −15 | 공동 90 | 원칙 40 | 공개 45 | 자격 40 | 분산 45 | 변혁 −10\n- 욕망: 갈망 35 | 독점 −5 | 위험 −20 | 과시 −10 | 지속 25 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],

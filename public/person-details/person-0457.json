@@ -393,6 +393,142 @@
     "id": "K457",
     "personId": "person-0457"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k457-citizenship-register-check",
+        "name": {
+          "ko": "시민권 등기 대조",
+          "en": "Citizenship-registration crosscheck"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k457-action-priority",
+        "name": {
+          "ko": "원본과 이름 대조",
+          "en": "Compare names with originals"
+        },
+        "description": {
+          "ko": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.",
+          "en": "The Guro Station guild council opens again the citizenship line it took as the ground for Gang Minseo's chair. Cha Yewon matches, in order against the registry originals, the names that entered that line by refusing restoration-service registration, and signs the end of the copy bound for the council with the signature of the duty."
+        },
+        "behavior": {
+          "ko": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.",
+          "en": "The Guro Station guild council opens again the citizenship line it took as the ground for Gang Minseo's chair. Cha Yewon matches, in order against the registry originals, the names that entered that line by refusing restoration-service registration, and signs the end of the copy bound for the council with the signature of the duty."
+        },
+        "stress": {
+          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
+          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k457-bounded-handover",
+        "name": {
+          "ko": "기록으로 잇는 당직",
+          "en": "Duty linked by records"
+        },
+        "description": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "behavior": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "stress": {
+          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
+          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
+      "en": "The Guro Station guild council opens again the citizenship line it took as the ground for Gang Minseo's chair. Cha Yewon matches, in order against the registry originals, the names that entered that line by refusing restoration-service registration, and signs the end of the copy bound for the council with the signature of the duty. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -883,7 +1019,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -891,7 +1026,7 @@
     "공포": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 45 | 자격 50 | 분산 30 | 변혁 25\n- 욕망: 갈망 −20 | 독점 −30 | 위험 30 | 과시 −45 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 구로역 길드 평의회가 강민서의 위원장 자리 근거로 삼은 시민권 줄을 다시 펼친다. 차예원은 복구복무자 등록을 거부해 그 줄에 오른 이름을 등기 원본과 차례로 맞추고, 평의회로 보낼 사본 끝에 자기 당직의 서명을 단다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 45 | 자격 50 | 분산 30 | 변혁 25\n- 욕망: 갈망 −20 | 독점 −30 | 위험 30 | 과시 −45 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],

@@ -393,6 +393,142 @@
     "id": "K336",
     "personId": "person-0337"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "pump-shaft-replacement",
+        "name": {
+          "ko": "펌프 축 교체",
+          "en": "Pump shaft replacement"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "치료 칸과 무장을 분리",
+          "en": "Separates care from weapons"
+        },
+        "description": {
+          "ko": "마모 축 하나를 바꿔 펌프를 재가동했고 호송 출고를 확인한다. 확인된 수리를 의료호송 전투 경력으로 바꾸지 않는다.",
+          "en": "Replacing one worn shaft restarted a pump; dispatch checks accompany transport duty. The repair does not become medical escort combat experience."
+        },
+        "behavior": {
+          "ko": "호송 경로를 미리 말하지 않는 상관의 침묵을 현장에서 지킨다. 치료 칸에 무장 수비를 들이라는 쪽지를 태운다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He kept in the field a superior's silence that never announced convoy routes. He burned any note that told him to bring armed guards into the care cars."
+        },
+        "stress": {
+          "ko": "공포. 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.",
+          "en": "Fear. That a convoy out of the base would be stopped on the Guui bridge and the patient cars stamped munitions cars."
+        },
+        "relationship": {
+          "ko": "관계. 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.",
+          "en": "Relations. Held the release duty under Nam Hoseong's command and confirmed Go Seojun's bridge passage permit before release. Matched hours with Pan Handeul's concourse stops."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.",
+          "en": "Office. Rank: member. Title: medical convoy base duty chief, duty officer of Nam Hoseong. He wrote only patient counts and herb weights on the convoy pass and wrote the destination's state name on the chalkboard just before release. He kept armed guards separate from the care-car keys."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: medical convoy base duty chief, duty officer of Nam Hoseong. He wrote only patient counts and herb weights on the convoy pass and wrote the destination's state name on the chalkboard just before release. He kept armed guards separate from the care-car keys."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That a convoy out of the base would be stopped on the Guui bridge and the patient cars stamped munitions cars."
+        },
+        "relationship": {
+          "ko": "관계. 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.",
+          "en": "Relations. Held the release duty under Nam Hoseong's command and confirmed Go Seojun's bridge passage permit before release. Matched hours with Pan Handeul's concourse stops."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "마모 축 하나를 바꿔 펌프를 재가동했고 호송 출고를 확인한다. 확인된 수리를 의료호송 전투 경력으로 바꾸지 않는다.",
+      "en": "Replacing one worn shaft restarted a pump; dispatch checks accompany transport duty. The repair does not become medical escort combat experience."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -922,7 +1058,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 의무호송 당직 수련의 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.",
     "일화": "2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 의무호송 당직 수련의 자리의 서명이 장부에 올랐다.",
     "관계": "남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.",
@@ -930,7 +1065,7 @@
     "공포": "기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.",
     "개입": "오인 신호를 기지 칠판에서 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다."
   },
-  "biography": "호송 경로를 미리 말하지 않는 상관의 침묵을 현장에서 지킨다. 치료 칸에 무장 수비를 들이라는 쪽지를 태운다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의무호송 당직 수련의\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 의무호송 당직 수련의 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 의무호송 당직 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송의 기지 출고를 공동호송조약의 첫 조항 실무로 남겨 군수 열차 오인을 끊는다.\n\n**공포.** 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.\n\n**개입.** 오인 신호를 기지 칠판에서 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −80 | 물질 −10 | 공동 30 | 원칙 50 | 공개 15 | 자격 25 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −15 | 위험 −20 | 과시 15 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
+  "biography": "호송 경로를 미리 말하지 않는 상관의 침묵을 현장에서 지킨다. 치료 칸에 무장 수비를 들이라는 쪽지를 태운다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의무호송 당직 수련의\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 의무호송 당직 수련의 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 수련의. 직함은 의무호송 당직 수련의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 출고 직전에 칠판에 쓴다. 무장 수비는 치료 칸 열쇠와 분리한다.\n\n**일화.** 2125년 정지했던 펌프를 분해해 마모 축 하나만 갈아 다시 돌렸다. 이 일로 의무호송 당직 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 남호성의 지휘로 출고 당직을 맡고, 고서준의 교량 통과 허가를 출고 전에 확인한다. 판한들의 대합실 정차와 시각을 맞춘다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송의 기지 출고를 공동호송조약의 첫 조항 실무로 남겨 군수 열차 오인을 끊는다.\n\n**공포.** 기지에서 나간 호송이 구의 교량에서 막혀 환자 칸이 군수 칸으로 찍히는 것.\n\n**개입.** 오인 신호를 기지 칠판에서 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −80 | 물질 −10 | 공동 30 | 원칙 50 | 공개 15 | 자격 25 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −15 | 위험 −20 | 과시 15 | 지속 −15 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-13"
   ],

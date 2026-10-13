@@ -393,6 +393,150 @@
     "id": "K208",
     "personId": "person-0209"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "cold-base-power-allocation",
+        "name": {
+          "ko": "냉동 전력 배분",
+          "en": "Cold-base power allocation"
+        },
+        "rating": 70
+      },
+      {
+        "id": "defective-part-inspection",
+        "name": {
+          "ko": "불량 부품 검사",
+          "en": "Defective-part inspection"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k208-disposition",
+        "name": {
+          "ko": "시민 얼음 최저선",
+          "en": "Minimum civilian ice"
+        },
+        "description": {
+          "ko": "압축기 진동으로 과부하를 읽고, 시민 얼음보다 군량 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.",
+          "en": "He read overload from the compressor's vibration and burned any note telling him to give a column to military-ration charging over citizens' ice. Taciturn, he shaved no rotation log."
+        },
+        "behavior": {
+          "ko": "관직. 품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.",
+          "en": "Office. Rank: temple student. Title: Noryangjin cold-storage depot supervisor. He left the power distribution on the public gauge board and allowed military charging only when the brick inventory crossed the minimum line."
+        },
+        "stress": {
+          "ko": "공포. 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.",
+          "en": "Fear. That one over-discharge would kill the Samho warehouse, and the sluice government would press that blackout as a passage toll."
+        },
+        "relationship": {
+          "ko": "관계. 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
+          "en": "Relations. Under command to power Jo Minjae's temperature disclosure, he matched output to Ji Yunjae's ice-machine trials and disliked Han Jaemok's power and water contracts on the depot side."
+        },
+        "effects": []
+      },
+      {
+        "id": "k208-choice",
+        "name": {
+          "ko": "군량 쪽지 거부",
+          "en": "Rejecting military-grain pressure"
+        },
+        "description": {
+          "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Noryangjin cold-storage depot supervisor post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
+          "en": "Relations. Under command to power Jo Minjae's temperature disclosure, he matched output to Ji Yunjae's ice-machine trials and disliked Han Jaemok's power and water contracts on the depot side."
+        },
+        "stress": {
+          "ko": "공포. 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.",
+          "en": "Fear. That one over-discharge would kill the Samho warehouse, and the sluice government would press that blackout as a passage toll."
+        },
+        "relationship": {
+          "ko": "관계. 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
+          "en": "Relations. Under command to power Jo Minjae's temperature disclosure, he matched output to Ji Yunjae's ice-machine trials and disliked Han Jaemok's power and water contracts on the depot side."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "압축기 진동을 읽고 불량 부품을 반송하며 제빙 시운전에 출력을 맞춘다. 기술 운용을 새로운 기계 발명으로 확대하지 않는다.",
+      "en": "Reads compressor vibration, returns defective parts and matches output to ice trials. Technical operation does not establish new-machine invention."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -858,7 +1002,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.",
     "관계": "조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.",
@@ -866,7 +1009,7 @@
     "공포": "한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.",
     "개입": "대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다."
   },
-  "biography": "압축기 진동으로 과부하를 읽고, 시민 얼음보다 군량 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 냉동기지 전력 배분·충전 점검\n- 직함: 노량진 냉동기지 감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.\n\n**야망.** 노량진 냉동기지의 비상 전력을 제빙·식량 칸 전용으로 고정해 상회 신용의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 35 | 무력 −25 | 물질 60 | 공동 −30 | 원칙 −35 | 공개 25 | 자격 −5 | 분산 10 | 변혁 10\n- 욕망: 갈망 30 | 독점 15 | 위험 −10 | 과시 −20 | 지속 10 | 지향 이성 | 결합 다자\n:::",
+  "biography": "압축기 진동으로 과부하를 읽고, 시민 얼음보다 군량 충전에 칸을 내주라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 기사\n- 생업: 냉동기지 전력 배분·충전 점검\n- 직함: 노량진 냉동기지 감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 냉동기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 기사. 직함은 노량진 냉동기지 감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 벽돌 재고가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 냉동기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조민재의 온도 공개에 전력을 대는 지휘를 받고, 지윤재의 제빙 시운전에 출력을 맞추며, 한재목의 전력·물 계약을 기지 쪽에서 꺼린다.\n\n**야망.** 노량진 냉동기지의 비상 전력을 제빙·식량 칸 전용으로 고정해 상회 신용의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 삼호 창고가 죽고, 그 정전을 수문 정부가 통행세로 압박하는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 35 | 무력 −25 | 물질 60 | 공동 −30 | 원칙 −35 | 공개 25 | 자격 −5 | 분산 10 | 변혁 10\n- 욕망: 갈망 30 | 독점 15 | 위험 −10 | 과시 −20 | 지속 10 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

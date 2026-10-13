@@ -5,7 +5,37 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
-import { PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
+import { CharacterProfile, PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
+
+test('current profile renders separate base, effective, proficiency and unassessed body values', () => {
+  const profile = {
+    abilities: Object.fromEntries(['leadership', 'strategy', 'negotiation', 'management', 'insight', 'learning', 'prowess', 'endurance'].map(id => [id, { base: 10, effective: id === 'prowess' ? 28 : 10 }])),
+    skills: [{ id: 'escort', name: { ko: '호위', en: 'Escort' }, rating: 85.5 }],
+    traits: [], narrative: { ko: '철수로를 확보한다.', en: 'Keeps a withdrawal route open.' },
+    health: { status: 'unassessed', bodyParts: ['left-arm', 'right-arm', 'left-leg', 'right-leg', 'head', 'torso'].map(id => ({ id, severity: null, function: null })), diseases: [] },
+  }
+  const html = renderToStaticMarkup(createElement(CharacterProfile, { profile }))
+  assert.equal((html.match(/scope="row"/g) ?? []).length, 15)
+  assert.ok(html.includes('<td>28</td>'))
+  assert.ok(html.includes('<td>85.5</td>'))
+  assert.equal((html.match(/<td>미평가<\/td>/g) ?? []).length, 12)
+})
+
+test('every public person profile matches the validated editorial projection without private fields', async () => {
+  const { loadCharacterProfiles } = await import('./validate-character-profiles.mjs')
+  const { publicCharacterProfile } = await import('./character-profile.mjs')
+  const root = new URL('../', import.meta.url).pathname
+  const profiles = await loadCharacterProfiles(root)
+  const files = (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))
+  assert.equal(files.length, profiles.size)
+  for (const file of files) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    const expected = publicCharacterProfile(profiles.get(detail.characterId))
+    assert.deepEqual(detail.characterProfile, expected, detail.characterId)
+    assert.equal(Object.hasOwn(detail.characterProfile, 'souls'), false, detail.characterId)
+    assert.equal(Object.hasOwn(detail.characterProfile, 'evidence'), false, detail.characterId)
+  }
+})
 
 test('existing prose contacts bind both generated identities to the same source record', async () => {
   const ledger = JSON.parse(await readFile(new URL('../lore/name-pools/cast-prose-contacts.json', import.meta.url), 'utf8'))
@@ -67,7 +97,7 @@ const selectedCard = async (name) => {
   assert.ok(candidates.length > 0, name)
   return candidates.find((card) => card.primary) ?? candidates.sort((a, b) => b.body.trim().length - a.body.trim().length)[0]
 }
-const assertMartialSource = async (detail, id) => {
+const assertCanonicalSource = async (detail, id) => {
   const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
     .persons.find((person) => person.id === id || person.name === id)
   assert.equal(detail.name, issued?.name, id)
@@ -75,9 +105,10 @@ const assertMartialSource = async (detail, id) => {
   const anchor = card.slug === 'Core-Characters' ? issued.name : `인물-${issued.name}`
   assert.equal(detail.sourceRoute, `/world/${card.slug}#${anchor}`, id)
   assert.equal(detail.biography, card.body.trim(), id)
-  const martial = card.body.match(/\*\*무공\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
-  assert.ok(martial, id)
-  assert.equal(detail.sections['무공'], martial, id)
+  assert.doesNotMatch(card.body, /\*\*무공\.\*\*/u, id)
+  assert.equal(Object.hasOwn(detail.sections, '무공'), false, id)
+  const training = card.body.match(/\*\*훈련\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
+  assert.equal(detail.sections['훈련'], training, id)
 }
 
 test('S01 court projection retains exact approved direct lieges and owner memberships', async () => {
@@ -390,7 +421,7 @@ test('Oh Haerin keeps the owner-confirmed female identity', async () => {
   assert.equal(gender.user_locked, true)
 })
 
-test('S01 issued cards retain an explicit occupation and martial state in person details', async () => {
+test('S01 issued cards retain an explicit occupation and canonical source in person details', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-01.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const issued = new Set(registry.persons.map((person) => person.name))
@@ -415,11 +446,11 @@ test('S01 issued cards retain an explicit occupation and martial state in person
     assert.ok(detail, heading.name)
     assert.equal(detail.occupation, occupation, heading.name)
     if (detail.sourceRoute.startsWith('/world/Cast-State-01#')) assert.equal(detail.fields['생업'], occupation, heading.name)
-    await assertMartialSource(detail, heading.name)
+    await assertCanonicalSource(detail, heading.name)
   }
 })
 
-test('S02 issued cards retain distinct bilingual livelihoods and their martial state', async () => {
+test('S02 issued cards retain distinct bilingual livelihoods and their canonical source', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-02.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
@@ -444,11 +475,11 @@ test('S02 issued cards retain distinct bilingual livelihoods and their martial s
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
-    await assertMartialSource(detail, heading.name)
+    await assertCanonicalSource(detail, heading.name)
   }
 })
 
-test('all currently issued S03 cards retain bilingual livelihoods distinct from office and martial path', async () => {
+test('all currently issued S03 cards retain bilingual livelihoods distinct from office and canonical source', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-03.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const idByName = new Map(registry.persons.map((person) => [person.name, person.id]))
@@ -474,11 +505,11 @@ test('all currently issued S03 cards retain bilingual livelihoods distinct from 
     assert.equal(detail.name, heading.name)
     assert.equal(detail.occupation, livelihood, heading.name)
     assert.equal(detail.fields['생업'], livelihood, heading.name)
-    await assertMartialSource(detail, heading.name)
+    await assertCanonicalSource(detail, heading.name)
   }
 })
 
-test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and martial paths', async () => {
+test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-04.json', import.meta.url), 'utf8'))
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
@@ -516,11 +547,11 @@ test('all 64 issued S04 K IDs retain sourced bilingual livelihoods and martial p
     assert.equal(detail.occupation, ko, id)
     assert.equal(detail.fields['생업'], ko, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-04#'), id)
-    await assertMartialSource(detail, id)
+    await assertCanonicalSource(detail, id)
   }
 })
 
-test('all 65 issued S05 cards retain bilingual livelihoods and their original martial declarations', async () => {
+test('all 65 issued S05 cards retain bilingual livelihoods and their canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-05.json', import.meta.url), 'utf8'))
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
@@ -531,10 +562,13 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
   const baeDetail = JSON.parse(await readFile(new URL('../public/person-details/person-0116.json', import.meta.url), 'utf8'))
   assert.equal(baeDetail.sourceRoute, '/world/Cast-State-05#인물-배우진')
   assert.equal(baeDetail.fields['생업'], '복구복무 명부·부품 대가 조정')
-  await assertMartialSource(baeDetail, 'K115')
-  await assert.rejects(assertMartialSource({ ...baeDetail, sections: { ...baeDetail.sections, 무공: '' } }, 'K115'), /K115/)
-  await assert.rejects(assertMartialSource({ ...baeDetail, name: '정소율' }, 'K115'), /K115/)
-  await assert.rejects(assertMartialSource({ ...baeDetail, sections: { ...baeDetail.sections, 무공: '단철공.' } }, 'K115'), /K115/)
+  await assertCanonicalSource(baeDetail, 'K115')
+  await assert.rejects(assertCanonicalSource({ ...baeDetail, sections: { ...baeDetail.sections, 무공: '' } }, 'K115'), /K115/)
+  await assert.rejects(assertCanonicalSource({ ...baeDetail, name: '정소율' }, 'K115'), /K115/)
+  await assert.rejects(assertCanonicalSource({ ...baeDetail, sourceRoute: '/world/Core-Characters#배우진' }, 'K115'), /K115/)
+  await assert.rejects(assertCanonicalSource({ ...baeDetail, biography: `${baeDetail.biography}\n변경` }, 'K115'), /K115/)
+  await assert.rejects(assertCanonicalSource({ ...baeDetail, sections: { ...baeDetail.sections, 훈련: '총검술.' } }, 'K115'), /K115/)
+  await assert.rejects(assertCanonicalSource({ ...baeDetail, sections: { ...baeDetail.sections, 무공: '단철공.' } }, 'K115'), /K115/)
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }]
     : [])
@@ -563,13 +597,13 @@ test('all 65 issued S05 cards retain bilingual livelihoods and their original ma
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-05#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 65)
 })
 
-test('all 61 issued S06 cards retain bilingual livelihoods and their original martial declarations', async () => {
+test('all 61 issued S06 cards retain bilingual livelihoods and their canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-06.json', import.meta.url), 'utf8'))
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
@@ -606,12 +640,12 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their original ma
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-06#'), id)
-    await assertMartialSource(detail, id)
+    await assertCanonicalSource(detail, id)
   }
   assert.equal(seen.size, 61)
 })
 
-test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original martial states', async () => {
+test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-07.json', import.meta.url), 'utf8'))
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
@@ -648,12 +682,12 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and original 
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-07#'), id)
-    await assertMartialSource(detail, id)
+    await assertCanonicalSource(detail, id)
   }
   assert.equal(seen.size, 61)
 })
 
-test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original martial states', async () => {
+test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-08.json', import.meta.url), 'utf8'))
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
@@ -690,13 +724,13 @@ test('all 61 issued S08 K IDs retain sourced bilingual livelihoods and original 
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-08#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 61)
 })
 
-test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and original martial states', async () => {
+test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-09.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -731,15 +765,22 @@ test('all 62 issued S09 K IDs retain card-backed bilingual livelihoods and origi
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.state, 'S09', id)
     assert.equal(detail.occupation, occupation, id)
-    assert.equal(detail.fields['생업'], occupation, id)
-    assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-09#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    if (id === 'K219') {
+      assert.equal(detail.sourceRoute, '/world/Core-Characters#최지우', id)
+      const core = sourcePages.get('Core-Characters')?.document
+        ?? JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
+      assert.ok(core.data.primary_detail_names.includes(heading.name), id)
+    } else {
+      assert.equal(detail.fields['생업'], occupation, id)
+      assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-09#'), id)
+    }
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 62)
 })
 
-test('S10 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S10 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-10.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -767,13 +808,13 @@ test('S10 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-10#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 62)
 })
 
-test('S11 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S11 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-11.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -801,13 +842,13 @@ test('S11 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-11#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 61)
 })
 
-test('S12 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S12 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-12.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -835,13 +876,13 @@ test('S12 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-12#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 62)
 })
 
-test('S13 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S13 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-13.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -869,13 +910,13 @@ test('S13 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-13#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 62)
 })
 
-test('S14 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S14 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-14.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -903,8 +944,8 @@ test('S14 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-14#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 61)
   const core = JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
@@ -913,10 +954,10 @@ test('S14 issued cards retain card-backed bilingual livelihoods and original mar
   const takDetail = JSON.parse(await readFile(new URL('../public/person-details/person-1006.json', import.meta.url), 'utf8'))
   assert.equal(takDetail.name, '탁서윤')
   assert.equal(takDetail.occupation, plain(coreTak.text.ko).match(/생업 별명은 ([^.]+)\./u)[1])
-  await assertMartialSource(takDetail, 'K1006')
+  await assertCanonicalSource(takDetail, 'K1006')
 })
 
-test('S15 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S15 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-15.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -944,13 +985,13 @@ test('S15 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-15#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 61)
 })
 
-test('S16 issued cards retain card-backed bilingual livelihoods and original martial states', async () => {
+test('S16 issued cards retain card-backed bilingual livelihoods and canonical sources', async () => {
   const document = JSON.parse(await readFile(new URL('../lore/characters/Cast-State-16.json', import.meta.url), 'utf8'))
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
@@ -978,14 +1019,14 @@ test('S16 issued cards retain card-backed bilingual livelihoods and original mar
     assert.equal(detail.occupation, livelihood, id)
     assert.equal(detail.fields['생업'], livelihood, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-16#'), id)
-    await assertMartialSource(detail, id)
-    assert.doesNotMatch(detail.sections['무공'], /생업:/u, id)
+    await assertCanonicalSource(detail, id)
+    assert.doesNotMatch(detail.sections['훈련'] ?? '', /생업:/u, id)
   }
   assert.equal(seen.size, 61)
 })
 
 test('person detail page renders tables and the canonical prose sections', async () => {
-  const supported = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
+  const supported = ['생애', '관직', '훈련', '일화', '가문', '관계', '야망', '공포', '개입']
   const details = await Promise.all(['person-0001', 'person-0002', 'person-1009'].map(async (id) =>
     JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))))
   assert.deepEqual(new Set(details.flatMap((detail) => Object.keys(detail.sections))), new Set(supported))
@@ -1003,8 +1044,9 @@ test('person detail page renders tables and the canonical prose sections', async
   }
   const missing = renderToStaticMarkup(createElement(MemoryRouter, null,
     createElement(PersonDetailContent, {
-      detail: { ...details[0], sections: { 무공: '', 야망: '목표' } }, personId: details[0].id,
+      detail: { ...details[0], sections: { 훈련: '', 무공: '삭제된 무공', 야망: '목표' } }, personId: details[0].id,
     })))
+  assert.ok(!missing.includes('<h3>훈련</h3>'))
   assert.ok(!missing.includes('<h3>무공</h3>'))
   assert.ok(missing.includes('<h3>야망</h3>'))
 
@@ -1043,9 +1085,10 @@ test('Lee Yeon has the escort formation without invented firearm access or servi
 test('Min Woonggi practices judo separately from his repair trade', async () => {
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1008.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '민웅기')
-  assert.match(detail.sections['무공'], /^유도\./u)
-  assert.doesNotMatch(detail.sections['무공'], /징집 이력|무기·탄약 접근/u)
-  assert.doesNotMatch(detail.sections['무공'], /공동 서사|조재표와 이연/u)
+  assert.match(detail.sections['훈련'], /^유도\./u)
+  assert.doesNotMatch(detail.sections['훈련'], /징집 이력|무기·탄약 접근/u)
+  assert.doesNotMatch(detail.sections['훈련'], /공동 서사|조재표와 이연/u)
+  await assertCanonicalSource(detail, 'K1008')
   assert.doesNotMatch(detail.biography, /공동 서사|왜 따르는가/u)
   assert.equal(detail.sourceRoute, '/world/Cast-Unaffiliated#인물-민웅기')
 })
@@ -1059,14 +1102,14 @@ test('Shin Jongmok has an opening objective grounded in his return-net work', as
 
 test('Shin Jongmok exposes the directed bayonet skill without inferred equipment or rank', async () => {
   const source = JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
-  const martial = source.content.find((block) => block.anchor === '신종목-p4')
-  assert.equal(martial.text.ko.map((run) => run.text).join(''), '무공. 총검술.')
-  assert.equal(martial.text.en.map((run) => run.text).join(''), 'Martial path. Bayonet fighting.')
+  const training = source.content.find((block) => block.anchor === '신종목-p4')
+  assert.equal(training.text.ko.map((run) => run.text).join(''), '훈련. 총검술.')
+  assert.equal(training.text.en.map((run) => run.text).join(''), 'Training. Bayonet fighting.')
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1009.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '신종목')
-  assert.equal(detail.sections['무공'], '총검술.')
-  assert.match(detail.biography, /\*\*무공\.\*\* 총검술\./u)
-  assert.doesNotMatch(detail.biography, /\*\*무공\.\*\* 없음\. 생업만\./u)
+  assert.equal(detail.sections['훈련'], '총검술.')
+  assert.match(detail.biography, /\*\*훈련\.\*\* 총검술\./u)
+  await assertCanonicalSource(detail, 'K1009')
   assert.equal(detail.sourceRoute, '/world/Core-Characters#신종목')
 })
 

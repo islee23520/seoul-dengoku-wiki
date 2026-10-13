@@ -391,6 +391,118 @@
     "id": "K1011",
     "personId": "person-1011"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 14,
+        "effective": 14
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k1011-bilingual-contract",
+        "name": {
+          "ko": "이중언어 계약 대조",
+          "en": "Bilingual-contract comparison"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1011-trait-1",
+        "name": {
+          "ko": "두 장의 계약",
+          "en": "Two contract sheets"
+        },
+        "description": {
+          "ko": "한 언어로만 된 계약을 받아들이지 않는다.",
+          "en": "Does not accept a contract in just one language."
+        },
+        "behavior": {
+          "ko": "한 언어로만 된 계약을 받아들이지 않는다.",
+          "en": "Does not accept a contract in just one language."
+        },
+        "stress": {
+          "ko": "장부 압수 위험에도 서명 전에 언어 조건을 확인한다.",
+          "en": "Checks language terms before signing despite ledger-seizure risk."
+        },
+        "relationship": {
+          "ko": "팜반득과 식량 계약을 맺고 통행 검사 담당과 긴장한다.",
+          "en": "Contracts for food with Pham Van Duc and faces tense access inspections."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "가격 전에 상대의 말부터 듣고 한 언어 계약에는 서명하지 않는다. 팜반득과 부품·식량을 교환하며 중국어 장부가 압수되어 숙소가 지워질 위험에 맞선다.",
+      "en": "She listens to a counterpart’s language before discussing price and refuses a single-language contract. She exchanges parts and food with Pham Van Duc and resists the risk that seizure of Chinese ledgers erases lodging records."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",

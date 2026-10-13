@@ -394,6 +394,150 @@
     "id": "K602",
     "personId": "person-0602"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 7,
+        "effective": 7
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "closure",
+        "name": {
+          "ko": "위험 구간 폐쇄",
+          "en": "Hazardous-route closure"
+        },
+        "rating": 45
+      },
+      {
+        "id": "departure",
+        "name": {
+          "ko": "배차표·출발 확인",
+          "en": "Departure and dispatch checks"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-delayed-closures",
+        "name": {
+          "ko": "폐쇄를 미루지 않음",
+          "en": "No Delayed Closures"
+        },
+        "description": {
+          "ko": "홍북원은 침수 구간의 붕괴 위험을 보고하고 폐쇄를 지체하지 않는 편이다.",
+          "en": "Hong Bugwon favors reporting collapse danger in a flooded section and closing it without delay."
+        },
+        "behavior": {
+          "ko": "침수 구간의 붕괴 보고를 미루지 않고 당장 폐쇄했다.",
+          "en": "Hong Bugwon did not delay the collapse report and immediately closed the flooded section."
+        },
+        "stress": {
+          "ko": "위험 구간의 통행과 폐쇄가 충돌한다면 확인된 붕괴 위험에 대한 폐쇄를 우선할 수 있다.",
+          "en": "If passage through a hazardous section conflicts with closure, Hong Bugwon may prioritize closing it in response to the reported collapse."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때 폐쇄된 구간을 기록으로 분명히 전달하려 할 수 있다.",
+          "en": "In handovers with senior duty staff, Hong Bugwon may clearly convey the closed section through records."
+        },
+        "effects": []
+      },
+      {
+        "id": "hand-over-authority-limits",
+        "name": {
+          "ko": "권한 범위 인계",
+          "en": "Hand Over Authority Limits"
+        },
+        "description": {
+          "ko": "홍북원은 인계를 자기 직위의 열쇠와 기록 범위 안에 두는 편이다.",
+          "en": "Hong Bugwon keeps handovers within the scope of the position's keys and records."
+        },
+        "behavior": {
+          "ko": "자기 직위의 열쇠와 기록만 넘기며 없는 권한은 만들지 않는다.",
+          "en": "Hong Bugwon hands over only the position's keys and records without inventing authority."
+        },
+        "stress": {
+          "ko": "당직 공백에 대한 두려움이 커져도 인계를 위해 없는 권한을 만들지 않으려 할 수 있다.",
+          "en": "Even if fear of a duty gap grows, Hong Bugwon may resist inventing authority to complete a handover."
+        },
+        "relationship": {
+          "ko": "선배 당직과는 넘길 수 있는 열쇠와 기록의 범위를 분명히 하려 할 수 있다.",
+          "en": "With senior duty staff, Hong Bugwon may clarify the scope of keys and records that can be transferred."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "침수 붕괴 구간을 당장 닫았다. 즉각적인 경로 판단을 평가하고 지역 방재 지휘는 추정하지 않는다.",
+      "en": "She promptly shut a flood-collapse section. Immediate route judgment is reflected, not regional disaster command."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -743,7 +887,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -751,7 +894,7 @@
     "공포": "인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −35 | 물질 5 | 공동 0 | 원칙 45 | 공개 50 | 자격 50 | 분산 20 | 변혁 5\n- 욕망: 갈망 40 | 독점 15 | 위험 5 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 인증 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 인증 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 대리. 직함은 인증 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 인증 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인증 전령 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인증 전령 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −35 | 물질 5 | 공동 0 | 원칙 45 | 공개 50 | 자격 50 | 분산 20 | 변혁 5\n- 욕망: 갈망 40 | 독점 15 | 위험 5 | 과시 −10 | 지속 20 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

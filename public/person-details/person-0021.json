@@ -393,6 +393,158 @@
     "id": "K021",
     "personId": "person-0021"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 10,
+        "effective": 10
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k021-generator-output-matching",
+        "name": {
+          "ko": "발전 출력 조정",
+          "en": "Generator output matching"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k021-brake-repair",
+        "name": {
+          "ko": "제동 수리",
+          "en": "Brake repair"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k021-fuel-output-log",
+        "name": {
+          "ko": "연료·출력 기록",
+          "en": "Fuel and output logging"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k021-documented-distribution",
+        "name": {
+          "ko": "기록된 배전",
+          "en": "Documented distribution"
+        },
+        "description": {
+          "ko": "구두 배전보다 출력 일지를 남긴다.",
+          "en": "Uses output logs rather than oral distribution orders."
+        },
+        "behavior": {
+          "ko": "구두 배전보다 출력 일지를 남긴다.",
+          "en": "Uses output logs rather than oral distribution orders."
+        },
+        "stress": {
+          "ko": "정치적 압박으로 수문 전력을 빼는 일을 모욕으로 느낀다.",
+          "en": "Resents political pressure to divert gate-motor power."
+        },
+        "relationship": {
+          "ko": "허은찬의 배분을 발전 쪽에서 받친다.",
+          "en": "Supports Heo Eunchan’s allocation from the generator side."
+        },
+        "effects": []
+      },
+      {
+        "id": "k021-finish-the-shift",
+        "name": {
+          "ko": "다음 교대까지",
+          "en": "Through the next shift"
+        },
+        "description": {
+          "ko": "제동 고장을 밤새 고쳐 교대를 이어 간다.",
+          "en": "Repairs brakes overnight to maintain the next shift."
+        },
+        "behavior": {
+          "ko": "제동 고장을 밤새 고쳐 교대를 이어 간다.",
+          "en": "Repairs brakes overnight to maintain the next shift."
+        },
+        "stress": {
+          "ko": "연료 고갈의 밤에 수문이 멈출 것을 두려워한다.",
+          "en": "Fears gates becoming unusable on a fuel-starved night."
+        },
+        "relationship": {
+          "ko": "공급 지시에는 따르되 은폐 배전은 거부한다.",
+          "en": "Obeys supply instructions but refuses concealed power distribution."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "제동 수리의 밤샘과 펌프 시운전 출력 조정을 별도로 반영했다. 연료·출력 관리는 확인되며 새로운 기계 발명은 발급하지 않는다.",
+      "en": "Overnight brake repair and pump-test output adjustment support separate practical strengths. Fuel and output management are confirmed; machine invention is not granted."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S01",
@@ -828,7 +980,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 당직장. 직함은 신정기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 허은찬에게 보내고, 최저 출력 이하면 선출 군주의 독촉이 있어도 군수 배전을 끊는다.",
     "일화": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 신정기지 비상발전 운전장 자리의 서명이 장부에 올랐다.",
     "관계": "허은찬의 유치선 전력 배분을 발전 쪽에서 받치고, 허도담의 펌프 시운전에 출력을 맞추며, 한재목의 공급 유지 지시에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
@@ -836,7 +987,7 @@
     "공포": "연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 동부 보호권이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 수문 전동기보다 선창 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 수문국\n- 생업: 비상 발전 운전\n- 품계: 당직장\n- 직함: 신정기지 비상발전 운전장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 당직장. 직함은 신정기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 허은찬에게 보내고, 최저 출력 이하면 선출 군주의 독촉이 있어도 군수 배전을 끊는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 신정기지 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 허은찬의 유치선 전력 배분을 발전 쪽에서 받치고, 허도담의 펌프 시운전에 출력을 맞추며, 한재목의 공급 유지 지시에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 신정 비상 발전과 영등포 펌프 전력을 하나의 공개 배전망으로 묶어 서부 원수의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −5 | 무력 5 | 물질 30 | 공동 20 | 원칙 25 | 공개 0 | 자격 −10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 30 | 독점 0 | 위험 35 | 과시 −25 | 지속 40 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 수문 전동기보다 선창 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 수문국\n- 생업: 비상 발전 운전\n- 품계: 당직장\n- 직함: 신정기지 비상발전 운전장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 당직장. 직함은 신정기지 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 허은찬에게 보내고, 최저 출력 이하면 선출 군주의 독촉이 있어도 군수 배전을 끊는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 신정기지 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 허은찬의 유치선 전력 배분을 발전 쪽에서 받치고, 허도담의 펌프 시운전에 출력을 맞추며, 한재목의 공급 유지 지시에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 신정 비상 발전과 영등포 펌프 전력을 하나의 공개 배전망으로 묶어 서부 원수의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 수문이 수동으로만 돌아가고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −5 | 무력 5 | 물질 30 | 공동 20 | 원칙 25 | 공개 0 | 자격 −10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 30 | 독점 0 | 위험 35 | 과시 −25 | 지속 40 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

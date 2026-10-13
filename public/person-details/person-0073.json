@@ -393,6 +393,158 @@
     "id": "K073",
     "personId": "person-0073"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "water-board",
+        "name": {
+          "ko": "급수 게시판 운영",
+          "en": "Water-supply notice management"
+        },
+        "rating": 60
+      },
+      {
+        "id": "dispatch",
+        "name": {
+          "ko": "화차 순서 조정",
+          "en": "Freight-car sequencing"
+        },
+        "rating": 55
+      },
+      {
+        "id": "referral",
+        "name": {
+          "ko": "공개 창구 안내",
+          "en": "Public-channel referral"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "water-trains-first",
+        "name": {
+          "ko": "급수열차 우선",
+          "en": "Water Trains First"
+        },
+        "description": {
+          "ko": "변태온은 연구 화물보다 주민 급수와 배급을 앞세운다.",
+          "en": "Byeon Taeon places residents’ water and ration deliveries ahead of research cargo."
+        },
+        "behavior": {
+          "ko": "인증 화차를 급수열차 뒤에 붙이고 원수 배급표가 비면 방송을 중단한다.",
+          "en": "He places certified wagons behind water trains and stops broadcasts when raw-water ration sheets are empty."
+        },
+        "stress": {
+          "ko": "급수계약이 대합실 명부를 넘길 위험이 있다면 주민 최저선과 거부권 집행을 더 중시할 수 있다.",
+          "en": "If a water contract threatens to surrender the waiting-room register, he may give greater weight to residents’ minimum supplies and veto enforcement."
+        },
+        "relationship": {
+          "ko": "인증 화물이 급수 우선순위와 충돌한다면 구연재의 화차를 급수열차 뒤에 두는 원칙을 지키려 할 수 있다.",
+          "en": "If certified cargo conflicts with water priorities, he may uphold the placement of Gu Yeonjae’s wagons behind water trains."
+        },
+        "effects": []
+      },
+      {
+        "id": "face-to-face-transparency",
+        "name": {
+          "ko": "대면 공개",
+          "en": "Face-to-Face Transparency"
+        },
+        "description": {
+          "ko": "변태온은 대합실을 주민 권리가 공개적으로 집행되는 대면 창구로 본다.",
+          "en": "Byeon Taeon treats the waiting room as a face-to-face channel for openly enforcing residents’ rights."
+        },
+        "behavior": {
+          "ko": "사적 청탁을 공개 창구로 보내고 대피 경로와 우물 수위를 게시한다.",
+          "en": "He sends private requests to public channels and posts evacuation routes and well levels."
+        },
+        "stress": {
+          "ko": "외부 급수 의존이 명부 통제권을 위협한다면 공개 창구에서 주민 거부권을 확인하려 할 수 있다.",
+          "en": "If dependence on external water threatens control of the register, he may seek to reaffirm residents’ veto rights through the public counter."
+        },
+        "relationship": {
+          "ko": "김도하의 주민 거부권을 현장에서 집행할 수 있다면 대합실 창구를 통한 협력을 유지할 수 있다.",
+          "en": "He may sustain cooperation through the waiting-room counter when he can enforce Kim Doha’s resident veto on site."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "급수열차 뒤에 인증 화차를 붙이고 청탁을 공개 창구로 보낸다. 주민 권리의 창구 집행을 평가하며 대표의 교섭력을 복사하지 않는다.",
+      "en": "He places certified freight after water trains and redirects favors to public counters. Counter enforcement is supported without copying the representative’s bargaining ability."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -764,7 +916,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 마곡 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 부장. 직함은 마곡 대합실 역장. 대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 마곡 대합실 역장 자리의 서명이 장부에 올랐다.",
     "관계": "김도하의 주민 거부권을 대합실에서 집행하고, 구연재의 인증 화차를 급수열차 뒤에 붙이며, 한지온의 원수 조달 행렬을 마곡 승강장에서 받는다.",
@@ -772,7 +923,7 @@
     "공포": "대량 식량과 원수를 외부에 의존하다가 급수계약 한 줄에 대합실 명부가 통째로 넘어가는 것.",
     "개입": "대체 식량 호송을 성사시켜 창구 동결을 풀거나, 명부 양도 밀약을 찾아 주민 거부권을 강화할 수 있다."
   },
-  "biography": "실험동 소음보다 부엌 수돗물을 먼저 묻고, 지식을 자랑하는 날에도 원수 배급표가 비면 방송을 중단시킨다. 실리를 말하되 연구 화차를 민가 배급보다 앞에 두지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 대합실 당직\n- 품계: 부장\n- 직함: 마곡 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 마곡 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 부장. 직함은 마곡 대합실 역장. 대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 마곡 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김도하의 주민 거부권을 대합실에서 집행하고, 구연재의 인증 화차를 급수열차 뒤에 붙이며, 한지온의 원수 조달 행렬을 마곡 승강장에서 받는다.\n\n**야망.** 마곡 대합실을 원수·식량 최저선과 기술 인증이 한 지붕에서 서명되는 관문 허브로 만들어 주민 거부권의 대면 창구가 된다.\n\n**공포.** 대량 식량과 원수를 외부에 의존하다가 급수계약 한 줄에 대합실 명부가 통째로 넘어가는 것.\n\n**개입.** 대체 식량 호송을 성사시켜 창구 동결을 풀거나, 명부 양도 밀약을 찾아 주민 거부권을 강화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −30 | 물질 15 | 공동 10 | 원칙 60 | 공개 30 | 자격 45 | 분산 5 | 변혁 20\n- 욕망: 갈망 45 | 독점 −35 | 위험 −30 | 과시 0 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "실험동 소음보다 부엌 수돗물을 먼저 묻고, 지식을 자랑하는 날에도 원수 배급표가 비면 방송을 중단시킨다. 실리를 말하되 연구 화차를 민가 배급보다 앞에 두지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 대합실 당직\n- 품계: 부장\n- 직함: 마곡 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 마곡 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 부장. 직함은 마곡 대합실 역장. 대피 경로와 우물 수위를 공개 게시하고, 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 마곡 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김도하의 주민 거부권을 대합실에서 집행하고, 구연재의 인증 화차를 급수열차 뒤에 붙이며, 한지온의 원수 조달 행렬을 마곡 승강장에서 받는다.\n\n**야망.** 마곡 대합실을 원수·식량 최저선과 기술 인증이 한 지붕에서 서명되는 관문 허브로 만들어 주민 거부권의 대면 창구가 된다.\n\n**공포.** 대량 식량과 원수를 외부에 의존하다가 급수계약 한 줄에 대합실 명부가 통째로 넘어가는 것.\n\n**개입.** 대체 식량 호송을 성사시켜 창구 동결을 풀거나, 명부 양도 밀약을 찾아 주민 거부권을 강화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 15 | 무력 −30 | 물질 15 | 공동 10 | 원칙 60 | 공개 30 | 자격 45 | 분산 5 | 변혁 20\n- 욕망: 갈망 45 | 독점 −35 | 위험 −30 | 과시 0 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

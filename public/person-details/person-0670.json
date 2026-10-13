@@ -392,6 +392,142 @@
     "id": "K670",
     "personId": "person-0670"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "convoy-person-records",
+        "name": {
+          "ko": "호송 인명 기록",
+          "en": "Convoy people records"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "k670-disposition",
+        "name": {
+          "ko": "미도착자를 지우지 않음",
+          "en": "Not erasing absent arrivals"
+        },
+        "description": {
+          "ko": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.",
+          "en": "She chose the side that kept the duty line unbroken first. She trusted one line of the ledger more than a loud voice."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+          "en": "Office. Rank: registrar. Title: dispatch clerk. She handed over only the keys and records of her own post, and never made authority she did not hold."
+        },
+        "stress": {
+          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Hannah Weber gives Eva Nováková protected convoy personnel records. Eva checks boarding certification and slot occupation so people not yet arrived are not entered as departed."
+        },
+        "effects": []
+      },
+      {
+        "id": "k670-choice",
+        "name": {
+          "ko": "인명 장부 우선",
+          "en": "People ledger first"
+        },
+        "description": {
+          "ko": "일화. 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, meeting a raid mid-convoy, she secured the roster of lives before the freight. By this deed the signature of the dispatch clerk post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Hannah Weber gives Eva Nováková protected convoy personnel records. Eva checks boarding certification and slot occupation so people not yet arrived are not entered as departed."
+        },
+        "stress": {
+          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+        },
+        "relationship": {
+          "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.",
+          "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Hannah Weber gives Eva Nováková protected convoy personnel records. Eva checks boarding certification and slot occupation so people not yet arrived are not entered as departed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "습격 때 인명 기록을 지켜 에바에게 넘긴다. 미도착자 확인을 받치는 기록 책임이지 전투 숙련은 아니다.",
+      "en": "Protects people records during an attack and hands them to Eva. Supports absent-arrival checking, not combat skill."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S07",
@@ -769,7 +905,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 한나 베버는 2098년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 카를 베버는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 한나 베버의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.",
@@ -777,7 +912,7 @@
     "공포": "배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 호송 인명 장부 보호\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 한나 베버는 2098년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 카를 베버는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 한나 베버의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −15 | 물질 20 | 공동 −15 | 원칙 5 | 공개 −25 | 자격 30 | 분산 10 | 변혁 5\n- 욕망: 갈망 20 | 독점 35 | 위험 −10 | 과시 25 | 지속 −20 | 지향 유동 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 호송 인명 장부 보호\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 한나 베버는 2098년에 태어났다. 독일계 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 카를 베버는 2030년 용산·이태원에서 용산 화물·민간 기계 정비 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 한나 베버의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 독일어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 한나 베버는 보호한 호송 인명 기록을 에바 노바코바에게 넘긴다. 에바 노바코바는 탑승 증명과 창 점유를 확인해 아직 도착하지 않은 사람이 출발 완료로 적히지 않게 한다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 30 | 무력 −15 | 물질 20 | 공동 −15 | 원칙 5 | 공개 −25 | 자격 30 | 분산 10 | 변혁 5\n- 욕망: 갈망 20 | 독점 35 | 위험 −10 | 과시 25 | 지속 −20 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],

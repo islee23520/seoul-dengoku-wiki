@@ -287,6 +287,142 @@
     "id": "K117",
     "personId": "person-0118"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k117-water-ledger",
+        "name": {
+          "ko": "급수 원장 관리",
+          "en": "Water ledger management"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k117-choice",
+        "name": {
+          "ko": "군사 압박 속 재심",
+          "en": "Review under military pressure"
+        },
+        "description": {
+          "ko": "계산적이고 문구를 지키려 하나, 군화가 회의실에 들어오면 목소리가 낮아지는 자신을 혐오한다. 급수 의무를 치안 실적과 바꾸는 거래를 모욕으로 본다.",
+          "en": "Calculating and word-keeping, she hated the self that lowered her voice when army boots entered the meeting room. She saw trades that exchanged water duty for policing records as insults."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 상수행정청장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In the 2125 station fire she carried out the roster of lives first. By this deed the signature of the water-supply administration bureau chief post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 군사조직이 상수행정을 완전히 장악해 쿠데타와 강제복무가 정식 급수 절차가 되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the military organization would seize the water administration completely, and coup and forced service would become the official water procedure. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 배우진의 비상감독을 법적으로 받아 안는 계약이자 원한이고, 한재목의 수문헌장 문구를 동부 원장에 끌어들이려 하며, 최도윤의 시민 명부를 행정 쪽에 숨기려 한다.",
+          "en": "Relations. A contract and a grudge, receiving Bae Woojin's emergency supervision legally, she sought to pull Han Jaemok's Sluice Charter wording into the eastern ledger and tried to hide Choi Doyun's civil roster on the administrative side."
+        },
+        "effects": []
+      },
+      {
+        "id": "k117-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 대대장. 직함은 상수행정청장. 급수 구역과 관문세를 공개 원장에 올리지만, 동방사의 비상 도장이 찍힌 전표는 사흘 안의 행정 재심을 요구한다.",
+          "en": "Office. Rank: battalion commander. Title: water-supply administration bureau chief. She put the water districts and gate tolls on the public ledger but demanded an administrative rehearing within three days for any slip stamped with the escort's emergency seal."
+        },
+        "behavior": {
+          "ko": "관직. 품계 대대장. 직함은 상수행정청장. 급수 구역과 관문세를 공개 원장에 올리지만, 동방사의 비상 도장이 찍힌 전표는 사흘 안의 행정 재심을 요구한다.",
+          "en": "Office. Rank: battalion commander. Title: water-supply administration bureau chief. She put the water districts and gate tolls on the public ledger but demanded an administrative rehearing within three days for any slip stamped with the escort's emergency seal."
+        },
+        "stress": {
+          "ko": "공포. 군사조직이 상수행정을 완전히 장악해 쿠데타와 강제복무가 정식 급수 절차가 되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the military organization would seize the water administration completely, and coup and forced service would become the official water procedure. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 배우진의 비상감독을 법적으로 받아 안는 계약이자 원한이고, 한재목의 수문헌장 문구를 동부 원장에 끌어들이려 하며, 최도윤의 시민 명부를 행정 쪽에 숨기려 한다.",
+          "en": "Relations. A contract and a grudge, receiving Bae Woojin's emergency supervision legally, she sought to pull Han Jaemok's Sluice Charter wording into the eastern ledger and tried to hide Choi Doyun's civil roster on the administrative side."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "일화. 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 상수행정청장 자리의 서명이 장부에 올랐다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Anecdote. In the 2125 station fire she carried out the roster of lives first. By this deed the signature of the water-supply administration bureau chief post rose into the ledger. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S05",
@@ -629,7 +765,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 상수행정청장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대대장. 직함은 상수행정청장. 급수 구역과 관문세를 공개 원장에 올리지만, 동방사의 비상 도장이 찍힌 전표는 사흘 안의 행정 재심을 요구한다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 상수행정청장 자리의 서명이 장부에 올랐다.",
     "관계": "배우진의 비상감독을 법적으로 받아 안는 계약이자 원한이고, 한재목의 수문헌장 문구를 동부 원장에 끌어들이려 하며, 최도윤의 시민 명부를 행정 쪽에 숨기려 한다.",
@@ -637,7 +772,7 @@
     "공포": "군사조직이 상수행정을 완전히 장악해 쿠데타와 강제복무가 정식 급수 절차가 되는 것.",
     "개입": "재심 전표를 호송해 청장의 기한 조항을 살리거나, 날인 보류를 배신으로 몰아 행정청을 장교 대행으로 바꿀 수 있다."
   },
-  "biography": "계산적이고 문구를 지키려 하나, 군화가 회의실에 들어오면 목소리가 낮아지는 자신을 혐오한다. 급수 의무를 치안 실적과 바꾸는 거래를 모욕으로 본다.\n\n- 소속: 동방사\n- 생업: 급수 구역·관문세 원장 관리\n- 품계: 대대장\n- 직함: 상수행정청장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 상수행정청장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대대장. 직함은 상수행정청장. 급수 구역과 관문세를 공개 원장에 올리지만, 동방사의 비상 도장이 찍힌 전표는 사흘 안의 행정 재심을 요구한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 상수행정청장 자리의 서명이 장부에 올랐다.\n\n**관계.** 배우진의 비상감독을 법적으로 받아 안는 계약이자 원한이고, 한재목의 수문헌장 문구를 동부 원장에 끌어들이려 하며, 최도윤의 시민 명부를 행정 쪽에 숨기려 한다.\n\n**야망.** 비상감독의 기한을 행정 감사로 못 박고, 동부 급수를 장교가 아니라 계약 원장이 움직이게 되돌린다.\n\n**공포.** 군사조직이 상수행정을 완전히 장악해 쿠데타와 강제복무가 정식 급수 절차가 되는 것.\n\n**개입.** 재심 전표를 호송해 청장의 기한 조항을 살리거나, 날인 보류를 배신으로 몰아 행정청을 장교 대행으로 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 80 | 개방 −35 | 무력 65 | 물질 20 | 공동 35 | 원칙 −10 | 공개 −40 | 자격 −20 | 분산 −70 | 변혁 −40\n- 욕망: 갈망 5 | 독점 −30 | 위험 35 | 과시 5 | 지속 −10 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "계산적이고 문구를 지키려 하나, 군화가 회의실에 들어오면 목소리가 낮아지는 자신을 혐오한다. 급수 의무를 치안 실적과 바꾸는 거래를 모욕으로 본다.\n\n- 소속: 동방사\n- 생업: 급수 구역·관문세 원장 관리\n- 품계: 대대장\n- 직함: 상수행정청장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 상수행정청장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대대장. 직함은 상수행정청장. 급수 구역과 관문세를 공개 원장에 올리지만, 동방사의 비상 도장이 찍힌 전표는 사흘 안의 행정 재심을 요구한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 상수행정청장 자리의 서명이 장부에 올랐다.\n\n**관계.** 배우진의 비상감독을 법적으로 받아 안는 계약이자 원한이고, 한재목의 수문헌장 문구를 동부 원장에 끌어들이려 하며, 최도윤의 시민 명부를 행정 쪽에 숨기려 한다.\n\n**야망.** 비상감독의 기한을 행정 감사로 못 박고, 동부 급수를 장교가 아니라 계약 원장이 움직이게 되돌린다.\n\n**공포.** 군사조직이 상수행정을 완전히 장악해 쿠데타와 강제복무가 정식 급수 절차가 되는 것.\n\n**개입.** 재심 전표를 호송해 청장의 기한 조항을 살리거나, 날인 보류를 배신으로 몰아 행정청을 장교 대행으로 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 80 | 개방 −35 | 무력 65 | 물질 20 | 공동 35 | 원칙 −10 | 공개 −40 | 자격 −20 | 분산 −70 | 변혁 −40\n- 욕망: 갈망 5 | 독점 −30 | 위험 35 | 과시 5 | 지속 −10 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-05"
   ],

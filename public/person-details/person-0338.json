@@ -392,6 +392,142 @@
     "id": "K337",
     "personId": "person-0338"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 11,
+        "effective": 11
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "herbal-cargo-inspection",
+        "name": {
+          "ko": "약재 검수",
+          "en": "Herbal cargo inspection"
+        },
+        "rating": 70
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "저울 앞의 거절",
+          "en": "Refusal at the scales"
+        },
+        "description": {
+          "ko": "출처와 중량을 읽고 진료 배정 날인 전 출고를 막는다. 봉쇄 중 사라진 장부를 되찾았다는 근거는 없다.",
+          "en": "Reading provenance and weight supports withholding shipments pending clinical seals. Recovery of ledgers lost during closure is not established."
+        },
+        "behavior": {
+          "ko": "원산지 말목과 상자 무게를 한눈에 읽고, 선매를 권하는 사신을 저울 앞에서 돌려보낸다. 외상 장부를 사람 얼굴보다 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "He read origin inspection posts and box weights at a glance and sent away from the scales any envoy who recommended pre-buying. He remembered credit ledgers longer than faces."
+        },
+        "stress": {
+          "ko": "공포. 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.",
+          "en": "Fear. That counterfeit drugs would flow, together with the scale marks, toward Bukhansan Bogukmun and the market would be sealed for a season."
+        },
+        "relationship": {
+          "ko": "관계. 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.",
+          "en": "Relations. Executed Sim Dalho's auction rules at the scales and matched Dong Neulsol's transport weights on the same graduation. Pasted Jeon Sol's patient allocation onto the release order."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.",
+          "en": "Office. Rank: supervisor. Title: Jegi-dong market scales outpost chief. She hung origin and drying dates on the inspection posts and opened the scales for bulk pre-buying only with the stamps of Ryu Eunbi and Jeon Sol."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.",
+          "en": "Recorded duty and limits: Office. Rank: supervisor. Title: Jegi-dong market scales outpost chief. She hung origin and drying dates on the inspection posts and opened the scales for bulk pre-buying only with the stamps of Ryu Eunbi and Jeon Sol."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That counterfeit drugs would flow, together with the scale marks, toward Bukhansan Bogukmun and the market would be sealed for a season."
+        },
+        "relationship": {
+          "ko": "관계. 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.",
+          "en": "Relations. Executed Sim Dalho's auction rules at the scales and matched Dong Neulsol's transport weights on the same graduation. Pasted Jeon Sol's patient allocation onto the release order."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "출처와 중량을 읽고 진료 배정 날인 전 출고를 막는다. 봉쇄 중 사라진 장부를 되찾았다는 근거는 없다.",
+      "en": "Reading provenance and weight supports withholding shipments pending clinical seals. Recovery of ledgers lost during closure is not established."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -963,7 +1099,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 노량진 선창에서 자랐다. 제기동 약재 검수 전문의 자리는 저울 재점검 공개로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.",
     "일화": "여름 가짜 약이 북한산보국문으로 흘러가자 약재동이 자체 봉쇄되고 선매 장부와 저울 봉인이 함께 사라졌다.",
     "관계": "심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.",
@@ -971,7 +1106,7 @@
     "공포": "가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.",
     "개입": "저울 봉인을 되찾거나, 강국 구매 대리인을 경매장에서 공개할 수 있다."
   },
-  "biography": "원산지 말목과 상자 무게를 한눈에 읽고, 선매를 권하는 사신을 저울 앞에서 돌려보낸다. 외상 장부를 사람 얼굴보다 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 원산지·건조 일자 검수\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 제기동 약재 검수 전문의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 제기동 약재 검수 전문의 자리는 저울 재점검 공개로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.\n\n**일화.** 여름 가짜 약이 북한산보국문으로 흘러가자 약재동이 자체 봉쇄되고 선매 장부와 저울 봉인이 함께 사라졌다.\n\n**관계.** 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.\n\n**야망.** 제기동시장 경매 저울을 의료 지휘부 중증도 배정의 얼굴로 남겨 강국 독점 입찰이 바닥 시세를 사지 못하게 한다.\n\n**공포.** 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.\n\n**개입.** 저울 봉인을 되찾거나, 강국 구매 대리인을 경매장에서 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −45 | 물질 −25 | 공동 40 | 원칙 35 | 공개 25 | 자격 10 | 분산 15 | 변혁 −5\n- 욕망: 갈망 0 | 독점 −10 | 위험 −10 | 과시 −25 | 지속 20 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "원산지 말목과 상자 무게를 한눈에 읽고, 선매를 권하는 사신을 저울 앞에서 돌려보낸다. 외상 장부를 사람 얼굴보다 오래 기억한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 원산지·건조 일자 검수\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 제기동 약재 검수 전문의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 제기동 약재 검수 전문의 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 전문의. 직함은 제기동 약재 검수 전문의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의와 단장의 진료 배정 날인이 있어야 저울을 연다.\n\n**일화.** 여름 가짜 약이 북한산보국문으로 흘러가자 약재동이 자체 봉쇄되고 선매 장부와 저울 봉인이 함께 사라졌다.\n\n**관계.** 심달호의 경매 규칙을 저울에서 집행하고, 동늘솔의 운송 무게를 같은 눈금에 맞춘다. 전솔의 환자 할당을 출하 순서로 붙인다.\n\n**야망.** 제기동시장 경매 저울을 의료 지휘부 중증도 배정의 얼굴로 남겨 강국 독점 입찰이 바닥 시세를 사지 못하게 한다.\n\n**공포.** 가짜 약이 저울 눈금과 함께 북한산보국문으로 흘러 시장이 한 계절에 봉쇄되는 것.\n\n**개입.** 저울 봉인을 되찾거나, 강국 구매 대리인을 경매장에서 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −45 | 물질 −25 | 공동 40 | 원칙 35 | 공개 25 | 자격 10 | 분산 15 | 변혁 −5\n- 욕망: 갈망 0 | 독점 −10 | 위험 −10 | 과시 −25 | 지속 20 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-13"
   ],

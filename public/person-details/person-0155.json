@@ -392,6 +392,150 @@
     "id": "K154",
     "personId": "person-0155"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "k154-sealed-delivery",
+        "name": {
+          "ko": "봉인 전갈 전달",
+          "en": "Sealed dispatch delivery"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k154-delivery-order",
+        "name": {
+          "ko": "전갈 순서 판단",
+          "en": "Dispatch sequencing"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k154-choice",
+        "name": {
+          "ko": "확인을 받은 뒤 출발",
+          "en": "Departs after confirmation"
+        },
+        "description": {
+          "ko": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.",
+          "en": "She refused departure whenever a seal cord sat loose and read any envoy who did not record verbal dispatches as a potential forger. Short of breath or not, she held two copies in one hand."
+        },
+        "behavior": {
+          "ko": "일화. 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.",
+          "en": "Anecdote. Gang Yejun's suspension of review and Ji Mokhyeon's eastern dispatch message end up in the courier bag on the same day. Yang Haeon first obtains Jo Harin's custody confirmation to post the ratification hold, then weighs the ratification timing to decide which message goes into the archive first."
+        },
+        "stress": {
+          "ko": "공포. 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That one forged ratification dispatch would pass a testament and the courier network would sink into a great power's subcontract. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
+          "en": "Relations. Under command to carry Gang Yejun's examination-suspension declaration only under seal, split boxes and order with Ma Dohan by contract, and weighed ratification timing against Ji Mokhyeon's eastern dispatches."
+        },
+        "effects": []
+      },
+      {
+        "id": "k154-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.",
+          "en": "Office. Rank: registrar. Title: ratification examination courier. He sent the dispatches to the examiner and the archive at once, and a ratification hold ran only with both Gang Yejun's stamp and Jo Harin's custody confirmation."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.",
+          "en": "Office. Rank: registrar. Title: ratification examination courier. He sent the dispatches to the examiner and the archive at once, and a ratification hold ran only with both Gang Yejun's stamp and Jo Harin's custody confirmation."
+        },
+        "stress": {
+          "ko": "공포. 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That one forged ratification dispatch would pass a testament and the courier network would sink into a great power's subcontract. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
+          "en": "Relations. Under command to carry Gang Yejun's examination-suspension declaration only under seal, split boxes and order with Ma Dohan by contract, and weighed ratification timing against Ji Mokhyeon's eastern dispatches."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "보관 확인을 먼저 받아 보류 통지를 달고 인준 시점을 따져 전갈 순서를 정한다. 전달 판단을 독립 외교권으로 바꾸지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Obtains custody confirmation before a suspension notice and orders messages around approval timing. Delivery judgment is not independent diplomatic authority. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -864,7 +1008,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.",
     "일화": "강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.",
     "관계": "강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
@@ -872,7 +1015,7 @@
     "공포": "위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 생업: 인준 보류 전갈·보관 확인 전달\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 심사 전령\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.\n\n**일화.** 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.\n\n**관계.** 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.\n\n**야망.** 계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 생업: 인준 보류 전갈·보관 확인 전달\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 심사 전령\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.\n\n**일화.** 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.\n\n**관계.** 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.\n\n**야망.** 계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],

@@ -393,6 +393,150 @@
     "id": "K158",
     "personId": "person-0159"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k158-archive-monitoring",
+        "name": {
+          "ko": "서고 함 점검",
+          "en": "Archive case monitoring"
+        },
+        "rating": 65
+      },
+      {
+        "id": "k158-parts-rejection",
+        "name": {
+          "ko": "부품 검수",
+          "en": "Parts inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k158-choice",
+        "name": {
+          "ko": "보관 목적을 지킴",
+          "en": "Defends the purpose of storage"
+        },
+        "description": {
+          "ko": "철제 함의 온도로 과부하를 읽고, 유언함보다 군수 보관에 칸을 내주라는 쪽지를 태운다. 과묵하고 반출 일지를 깎지 않는다.",
+          "en": "He read overload from the iron box's temperature and burned any note telling him to give a column to munitions storage over the testament box. Taciturn, he shaved no removal log."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125 he turned back a box of defective parts just before release. By this deed the signature of the Seoul Station archive-depot supervisor post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That on a power-less night the boxes would open, and the protection zone would use that gap as occupation storage. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.",
+          "en": "Relations. Under command to guard Jo Harin's three-copy box at the depot, he matched Ji Seoyun's dehumidification cycles with the box temperature and backed Na Seonjae's lockdown from inside."
+        },
+        "effects": []
+      },
+      {
+        "id": "k158-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.",
+          "en": "Office. Rank: bureau director. Title: Seoul Station archive-depot supervisor. He left the box temperature and key rotations on the public chalkboard and allowed munitions storage only when the medical transfer inventory crossed the minimum line."
+        },
+        "behavior": {
+          "ko": "관직. 품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.",
+          "en": "Office. Rank: bureau director. Title: Seoul Station archive-depot supervisor. He left the box temperature and key rotations on the public chalkboard and allowed munitions storage only when the medical transfer inventory crossed the minimum line."
+        },
+        "stress": {
+          "ko": "공포. 전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That on a power-less night the boxes would open, and the protection zone would use that gap as occupation storage. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.",
+          "en": "Relations. Under command to guard Jo Harin's three-copy box at the depot, he matched Ji Seoyun's dehumidification cycles with the box temperature and backed Na Seonjae's lockdown from inside."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "불량 부품을 되돌리고 함 온도와 열쇠 교대를 남긴다. 기록 전용 보관을 지키지만 문화 창작이나 전투 경력은 없다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Rejected parts and recorded case temperatures and key shifts support careful storage. They establish neither artistic nor combat expertise. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -897,7 +1041,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.",
     "관계": "조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.",
@@ -905,7 +1048,7 @@
     "공포": "전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.",
     "개입": "대체 축전지를 구해 함 온도를 지키거나, 일지 조작을 폭로해 감독을 교체할 수 있다."
   },
-  "biography": "철제 함의 온도로 과부하를 읽고, 유언함보다 군수 보관에 칸을 내주라는 쪽지를 태운다. 과묵하고 반출 일지를 깎지 않는다.\n\n- 생업: 서고 함 온도·열쇠 교대 감독\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 서울역 서고기지 감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.\n\n**야망.** 서고기지의 함과 예비 용지를 기록 전용으로 고정해 서울역이 강국의 창고가 되지 않게 한다.\n\n**공포.** 전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 함 온도를 지키거나, 일지 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 −40 | 물질 −20 | 공동 10 | 원칙 50 | 공개 −30 | 자격 5 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 −5 | 독점 20 | 위험 −15 | 과시 25 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "철제 함의 온도로 과부하를 읽고, 유언함보다 군수 보관에 칸을 내주라는 쪽지를 태운다. 과묵하고 반출 일지를 깎지 않는다.\n\n- 생업: 서고 함 온도·열쇠 교대 감독\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 서울역 서고기지 감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 서울역 서고기지 감독 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 국장. 직함은 서울역 서고기지 감독. 함 온도와 열쇠 교대를 공개 칠판에 남기고, 군수 보관은 의료 이송 재고가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 서울역 서고기지 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 조하린의 삼본 함을 기지에서 지키는 지휘를 받고, 지서윤의 제습 주기와 함 온도를 맞추며, 나선재의 봉쇄를 내부에서 받친다.\n\n**야망.** 서고기지의 함과 예비 용지를 기록 전용으로 고정해 서울역이 강국의 창고가 되지 않게 한다.\n\n**공포.** 전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 함 온도를 지키거나, 일지 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 0 | 무력 −40 | 물질 −20 | 공동 10 | 원칙 50 | 공개 −30 | 자격 5 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 −5 | 독점 20 | 위험 −15 | 과시 25 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

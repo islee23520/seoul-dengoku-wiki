@@ -382,6 +382,118 @@
     "id": "K1015",
     "personId": "person-1015"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 12,
+        "effective": 12
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k1015-bilingual-roster",
+        "name": {
+          "ko": "두 말 명부 전달",
+          "en": "Bilingual-roster delivery"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k1015-trait-1",
+        "name": {
+          "ko": "읽을 수 있는 이름",
+          "en": "Names that can be read"
+        },
+        "description": {
+          "ko": "두 언어의 줄이 있어야 읽힌 명부로 본다.",
+          "en": "Treats the roster as read only when both language lines are present."
+        },
+        "behavior": {
+          "ko": "두 언어의 줄이 있어야 읽힌 명부로 본다.",
+          "en": "Treats the roster as read only when both language lines are present."
+        },
+        "stress": {
+          "ko": "이중 명부가 거부돼도 한글 전용 줄에는 서명하지 않는다.",
+          "en": "Does not sign Korean-only lines when bilingual rosters are rejected."
+        },
+        "relationship": {
+          "ko": "백온과 협력하며 뚝섬 정비조와 숙소 계약을 맺는다.",
+          "en": "Cooperates with Baek On and contracts lodging with the Ttukseom repair team."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "두 말의 피난 명부를 나르고 한글만 적힌 줄에는 서명하지 않는다. 러시아어 줄을 공식 칸으로 남기려는 목표는 하숙 주민이 미등록 외국으로 묶이는 위험과 맞닿아 있다.",
+      "en": "He carries bilingual refugee rosters and refuses to sign Korean-only entries. His goal of making Russian lines official responds to the risk of lodging residents being classified as unregistered foreigners."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",

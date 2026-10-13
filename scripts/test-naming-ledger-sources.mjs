@@ -38,8 +38,6 @@ export function sourceFailures(source, terms = []) {
 function ledgerSources() {
   return [
     ...ledger.states.flatMap(({ name, sources }) => sources.map((source) => [source, [name]])),
-    ...ledger.martialSchools.map(({ formalName, source }) => [source, [formalName]]),
-    [ledger.martialBranch.source, [ledger.martialBranch.name]],
     ...ledger.offices.map(({ state, tiers, source }) => [source, [state, ...tiers]]),
     ...ledger.seriesTitles.map(({ form, source }) => [source, [form]]),
     ...ledger.retiredPublicForms.map(({ form, source }) => [source, [form]]),
@@ -48,8 +46,6 @@ function ledgerSources() {
 
 function sourceEntryCount() {
   return ledger.states.reduce((count, { sources }) => count + sources.length, 0)
-    + ledger.martialSchools.length
-    + 1
     + ledger.offices.length
     + ledger.seriesTitles.length
     + ledger.retiredPublicForms.length
@@ -96,10 +92,24 @@ test('a missing source file, missing pointer or absent term fails', () => {
   assert.equal(sourceFailures('lore/factions/Sixteen-States.json#/content/7/rows/1', ['규격맹']).length, 1)
 })
 
-test('schema rejects an entry without a source', () => {
-  const broken = structuredClone(ledger)
-  delete broken.martialSchools[0].source
-  assert.ok(schemaFailures(broken, schema, '').some((failure) => failure.includes('missing source')))
+test('schema rejects remaining naming categories without their sources', () => {
+  for (const category of ['states', 'offices', 'seriesTitles', 'retiredPublicForms']) {
+    const broken = structuredClone(ledger)
+    delete broken[category][0][category === 'states' ? 'sources' : 'source']
+    assert.ok(schemaFailures(broken, schema, '').some((failure) => failure.includes('missing source')), category)
+  }
+})
+
+test('live naming contract needs neither martial page nor historical entries', () => {
+  const live = structuredClone(ledger)
+  delete live.historicalMartialSchools
+  delete live.historicalMartialBranch
+  assert.deepEqual(schemaFailures(live, schema, ''), [])
+  assert.ok(ledgerSources().every(([source]) => !source.includes('Martial-Paths') && !source.includes('Martial-Concept-Design')))
+  for (const category of ['martialSchools', 'martialBranch']) {
+    const broken = { ...live, [category]: [] }
+    assert.ok(schemaFailures(broken, schema, '').some((failure) => failure.includes(`unexpected ${category}`)))
+  }
 })
 
 test('retired branch provenance cannot become an active public transmission', () => {
@@ -110,7 +120,7 @@ test('retired branch provenance cannot become an active public transmission', ()
     (branch) => { branch.formalName = branch.name },
   ]) {
     const broken = structuredClone(ledger)
-    mutate(broken.martialBranch)
+    mutate(broken.historicalMartialBranch)
     assert.ok(schemaFailures(broken, schema, '').length > 0)
   }
 })

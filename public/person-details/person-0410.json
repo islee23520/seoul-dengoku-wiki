@@ -392,6 +392,142 @@
     "id": "K409",
     "personId": "person-0410"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "route-survey",
+        "name": {
+          "ko": "외곽 실측",
+          "en": "Outlying route survey"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "소문으로 길을 그리지 않음",
+          "en": "Does not map by rumor"
+        },
+        "description": {
+          "ko": "실측하지 않은 선은 점선으로 남기고 오래된 봉인 자국에는 지도를 다시 그린다. 후문 실측을 넘기지만 빈 흔적 원인은 미확인이다.",
+          "en": "Leaves unmeasured routes dotted and redraws maps after seals age. Shares rear-gate measurements without a confirmed explanation for missing traces."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 소문으로 길을 그리지 않음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "지도와 봉인이 어긋나면 재측정할 수 있다.",
+          "en": "May remeasure when maps and seals diverge."
+        },
+        "relationship": {
+          "ko": "영마온에게 실측을 넘기고 원초온의 칠판에 좌표를 붙인다.",
+          "en": "Passes measurements to Yeong Maon and posts coordinates on Won Choon’s board."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "시청역 조합 차량정비소와 남부 외곽 우회로를 공개 원판에 묶어 강국 사절이 심사대를 건너뛰지 못하게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "위조 우회로가 서고 후문으로 연결되어 공동교섭이 빈 문구가 되는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "영마온에게 실측을 넘기고 원초온의 칠판에 좌표를 붙인다.",
+          "en": "Passes measurements to Yeong Maon and posts coordinates on Won Choon’s board."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "실측하지 않은 선은 점선으로 남기고 오래된 봉인 자국에는 지도를 다시 그린다. 후문 실측을 넘기지만 빈 흔적 원인은 미확인이다.",
+      "en": "Leaves unmeasured routes dotted and redraws maps after seals age. Shares rear-gate measurements without a confirmed explanation for missing traces."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -820,7 +956,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 시청역 외곽 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 시청역 외곽 탐사원. 실측하지 않은 선은 점선으로만 남기고, 강국 문장의 검색 영장은 지도 여백에 옮기지 않는다.",
     "일화": "세 강국 사절이 서로 다른 급수계약서를 들고 온 주, 기지 후문 흔적이 봉인 장부와 지도에서 동시에 비었다.",
     "관계": "영마온에게 후문 실측을 넘기고, 원초온의 서고 칠판에 좌표를 붙인다. 정유라의 표준 서식을 원판 제목으로 남긴다.",
@@ -828,7 +963,7 @@
     "공포": "위조 우회로가 서고 후문으로 연결되어 공동교섭이 빈 문구가 되는 것.",
     "개입": "후문 좌표를 복원하거나, 위조 우회로를 의회 앞에서 폐기할 수 있다."
   },
-  "biography": "닫힌 남부 연결로를 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 봉인 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 외곽 실측·검색 영장 대조\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 시청역 외곽 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 시청역 외곽 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 시청역 외곽 탐사원. 실측하지 않은 선은 점선으로만 남기고, 강국 문장의 검색 영장은 지도 여백에 옮기지 않는다.\n\n**일화.** 세 강국 사절이 서로 다른 급수계약서를 들고 온 주, 기지 후문 흔적이 봉인 장부와 지도에서 동시에 비었다.\n\n**관계.** 영마온에게 후문 실측을 넘기고, 원초온의 서고 칠판에 좌표를 붙인다. 정유라의 표준 서식을 원판 제목으로 남긴다.\n\n**야망.** 시청역 조합 차량정비소와 남부 외곽 우회로를 공개 원판에 묶어 강국 사절이 심사대를 건너뛰지 못하게 한다.\n\n**공포.** 위조 우회로가 서고 후문으로 연결되어 공동교섭이 빈 문구가 되는 것.\n\n**개입.** 후문 좌표를 복원하거나, 위조 우회로를 의회 앞에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 35 | 무력 −30 | 물질 −5 | 공동 5 | 원칙 30 | 공개 35 | 자격 25 | 분산 40 | 변혁 15\n- 욕망: 갈망 20 | 독점 35 | 위험 20 | 과시 0 | 지속 5 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "닫힌 남부 연결로를 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 봉인 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 외곽 실측·검색 영장 대조\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 시청역 외곽 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 시청역 외곽 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 시청역 외곽 탐사원. 실측하지 않은 선은 점선으로만 남기고, 강국 문장의 검색 영장은 지도 여백에 옮기지 않는다.\n\n**일화.** 세 강국 사절이 서로 다른 급수계약서를 들고 온 주, 기지 후문 흔적이 봉인 장부와 지도에서 동시에 비었다.\n\n**관계.** 영마온에게 후문 실측을 넘기고, 원초온의 서고 칠판에 좌표를 붙인다. 정유라의 표준 서식을 원판 제목으로 남긴다.\n\n**야망.** 시청역 조합 차량정비소와 남부 외곽 우회로를 공개 원판에 묶어 강국 사절이 심사대를 건너뛰지 못하게 한다.\n\n**공포.** 위조 우회로가 서고 후문으로 연결되어 공동교섭이 빈 문구가 되는 것.\n\n**개입.** 후문 좌표를 복원하거나, 위조 우회로를 의회 앞에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 35 | 무력 −30 | 물질 −5 | 공동 5 | 원칙 30 | 공개 35 | 자격 25 | 분산 40 | 변혁 15\n- 욕망: 갈망 20 | 독점 35 | 위험 20 | 과시 0 | 지속 5 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-16"
   ],

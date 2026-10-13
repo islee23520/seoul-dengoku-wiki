@@ -286,6 +286,150 @@
     "id": "K114",
     "personId": "person-0115"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 6,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "militia",
+        "name": {
+          "ko": "민병 교대·숙영 차단",
+          "en": "Militia shifts and billeting refusal"
+        },
+        "rating": 60
+      },
+      {
+        "id": "hearing",
+        "name": {
+          "ko": "증인 대질 진행",
+          "en": "Witness confrontation"
+        },
+        "rating": 45
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-outside-encampments",
+        "name": {
+          "ko": "외부 숙영 거부",
+          "en": "No Outside Encampments"
+        },
+        "description": {
+          "ko": "기하겸은 외부 장교의 숙영과 지휘를 구원이 아니라 지역 수비의 통제 문제로 본다.",
+          "en": "Gi Hagyeom sees outside officers' encampment and command as questions of local defense control rather than rescue."
+        },
+        "behavior": {
+          "ko": "평의회 거부가 붙은 칸에서 외부 장교의 충전과 숙영을 막고 통과 요청은 기록한 뒤 돌려보낸다.",
+          "en": "They block outside officers' charging and encampment under council-veto entries and record passage requests before turning them back."
+        },
+        "stress": {
+          "ko": "교량 한 번의 개방이 보호구역 지정으로 이어질 우려가 있으면 분노를 드러내기보다 차단 조건을 유지하려 할 수 있다.",
+          "en": "If opening the bridge once could lead to protection-zone designation, they may maintain blocking conditions rather than display anger."
+        },
+        "relationship": {
+          "ko": "김보람의 펌프수비 지휘에는 교대를 맞추되 배우진과 류가온의 외부 진입 요구에는 거부선을 지킬 수 있다.",
+          "en": "They may align shifts with Kim Boram's pump-defense command while maintaining refusal boundaries against Bae Ujin's and Ryu Gaon's outside-entry requests."
+        },
+        "effects": []
+      },
+      {
+        "id": "mobilize-citizens-by-lottery",
+        "name": {
+          "ko": "시민 추첨 동원",
+          "en": "Mobilize Citizens by Lottery"
+        },
+        "description": {
+          "ko": "기하겸은 민병 동원을 외부 지휘자의 요구가 아니라 시민대표의 공개된 추첨 조건에 묶는다.",
+          "en": "Gi Hagyeom ties militia mobilization to citizen representatives' public lottery conditions rather than outside commanders' demands."
+        },
+        "behavior": {
+          "ko": "민병 동원은 시민대표의 낮 추첨으로만 열고 김보람의 펌프수비 교대와 맞춘다.",
+          "en": "They initiate militia mobilization only through citizen representatives' daytime lottery and align it with Kim Boram's pump-defense shifts."
+        },
+        "stress": {
+          "ko": "거부 조장이 반란 수괴로 기록될 우려가 커지면 개인 명령보다 시민 추첨과 공개 확인의 근거를 더 중시할 수 있다.",
+          "en": "If the refusing squad leader risks being recorded as a rebellion ringleader, they may emphasize citizen lottery and public verification over personal orders."
+        },
+        "relationship": {
+          "ko": "시민대표와 김보람에게 동원 절차의 공동 책임을 기대하며 말이 갈리는 경우 공개 확인을 선호할 수 있다.",
+          "en": "They may expect citizen representatives and Kim Boram to share responsibility for mobilization procedures and favor public verification when accounts conflict."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "외부 장교의 숙영을 막고 시민 추첨으로 민병 교대를 연다. 조직과 거부 조건은 확인되지만 사격·전투 승리는 확인되지 않는다.",
+      "en": "He blocks external officers’ billeting and uses citizen draws for militia shifts. Organization and refusal conditions are supported, not marksmanship or victories."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -657,7 +801,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 보호군 파견 거부 민병 조장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교사. 직함은 보호군 파견 거부 민병 조장. 외부 장교의 충전과 숙영은 평의회 거부가 붙은 칸에서 막고, 민병 동원은 시민대표의 낮 추첨으로만 연다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.",
     "관계": "김보람의 펌프수비 지휘 아래 민병 교대를 맞추고, 배우진의 보호군 파견안을 교량에서 거절하며, 암사 호송책 류가온의 통과 요청을 기록만 남기고 되돌린다.",
@@ -665,7 +808,7 @@
     "공포": "한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 것.",
     "개입": "민병 식량과 차단 물자를 구해 그의 거부를 유지하거나, 교량 사격의 선제 증거를 찾아 조장을 교체할 수 있다."
   },
-  "biography": "교량 쪽 장교 깃발을 구원으로 부르는 전령을 돌려보내고, 펌프수비의 야간 교대를 외부 지휘에 넘기지 않는다. 분노를 숨기되 차단 바리케이드는 거두지 않는다.\n\n- 소속: 명부교회\n- 생업: 민병 당직·숙영 차단\n- 품계: 교사\n- 직함: 보호군 파견 거부 민병 조장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 보호군 파견 거부 민병 조장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교사. 직함은 보호군 파견 거부 민병 조장. 외부 장교의 충전과 숙영은 평의회 거부가 붙은 칸에서 막고, 민병 동원은 시민대표의 낮 추첨으로만 연다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘 아래 민병 교대를 맞추고, 배우진의 보호군 파견안을 교량에서 거절하며, 암사 호송책 류가온의 통과 요청을 기록만 남기고 되돌린다.\n\n**야망.** 뚝섬 수비를 공방 민병과 펌프수비대의 이중 거부로 남겨, 동방사가 명목 후보를 앞세워 주둔하지 못하게 한다.\n\n**공포.** 한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 것.\n\n**개입.** 민병 식량과 차단 물자를 구해 그의 거부를 유지하거나, 교량 사격의 선제 증거를 찾아 조장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −25 | 물질 10 | 공동 35 | 원칙 10 | 공개 −30 | 자격 25 | 분산 20 | 변혁 0\n- 욕망: 갈망 0 | 독점 −25 | 위험 0 | 과시 10 | 지속 20 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "교량 쪽 장교 깃발을 구원으로 부르는 전령을 돌려보내고, 펌프수비의 야간 교대를 외부 지휘에 넘기지 않는다. 분노를 숨기되 차단 바리케이드는 거두지 않는다.\n\n- 소속: 명부교회\n- 생업: 민병 당직·숙영 차단\n- 품계: 교사\n- 직함: 보호군 파견 거부 민병 조장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 보호군 파견 거부 민병 조장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교사. 직함은 보호군 파견 거부 민병 조장. 외부 장교의 충전과 숙영은 평의회 거부가 붙은 칸에서 막고, 민병 동원은 시민대표의 낮 추첨으로만 연다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 보호군 파견 거부 민병 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘 아래 민병 교대를 맞추고, 배우진의 보호군 파견안을 교량에서 거절하며, 암사 호송책 류가온의 통과 요청을 기록만 남기고 되돌린다.\n\n**야망.** 뚝섬 수비를 공방 민병과 펌프수비대의 이중 거부로 남겨, 동방사가 명목 후보를 앞세워 주둔하지 못하게 한다.\n\n**공포.** 한 번의 교량 개방이 성수 공방을 보호구역으로 바꾸고, 거부 조장이 반란 수괴로 호적에 오르는 것.\n\n**개입.** 민병 식량과 차단 물자를 구해 그의 거부를 유지하거나, 교량 사격의 선제 증거를 찾아 조장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 10 | 무력 −25 | 물질 10 | 공동 35 | 원칙 10 | 공개 −30 | 자격 25 | 분산 20 | 변혁 0\n- 욕망: 갈망 0 | 독점 −25 | 위험 0 | 과시 10 | 지속 20 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

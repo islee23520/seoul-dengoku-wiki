@@ -288,6 +288,142 @@
     "id": "K376",
     "personId": "person-0377"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "water-routing",
+        "name": {
+          "ko": "우회 급수로 운용",
+          "en": "Alternate water routing"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "대체 경로를 찾음",
+          "en": "Seeks alternate routes"
+        },
+        "description": {
+          "ko": "동파 관로를 억지로 녹이지 않고 우회 급수를 열었다. 비밀 군량에 반대하고 피난 가족에게 임시표를 줬다.",
+          "en": "Opens alternate water access rather than forcing frozen pipes to thaw. Opposes hidden military rations and issues temporary tickets to displaced families."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 대체 경로를 찾음을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "공급이 막히면 원래 경로보다 우회에 집중할 수 있다.",
+          "en": "May focus on alternatives rather than the original route when supply fails."
+        },
+        "relationship": {
+          "ko": "윤서린에게 사본을 넘기고 남윤경의 비밀 군량을 거스른다.",
+          "en": "Passes copies to Yun Seorin and resists Nam Yungyeong’s hidden military rations."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "윤서린에게 사본을 넘기고 남윤경의 비밀 군량을 거스른다.",
+          "en": "Passes copies to Yun Seorin and resists Nam Yungyeong’s hidden military rations."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "동파 관로를 억지로 녹이지 않고 우회 급수를 열었다. 비밀 군량에 반대하고 피난 가족에게 임시표를 줬다.",
+      "en": "Opens alternate water access rather than forcing frozen pipes to thaw. Opposes hidden military rations and issues temporary tickets to displaced families."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S15",
@@ -726,7 +862,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.",
-    "무공": "한류공.",
     "관직": "품계 부제. 직함은 명동역 구휼 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 명동역 구휼 부제의 기록에 당시의 증언을 남겼다.",
     "관계": "윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.",
@@ -734,7 +869,7 @@
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "전나경은 명동역 구휼 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 구휼 물자 배분·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 부제\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.\n**무공.** 한류공.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 명동역 구휼 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −20 | 자격 −10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "전나경은 명동역 구휼 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 구휼 물자 배분·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 부제\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 명동역 구휼 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −20 | 자격 −10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],

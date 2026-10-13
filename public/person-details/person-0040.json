@@ -287,6 +287,150 @@
     "id": "K040",
     "personId": "person-0040"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 9,
+        "effective": 9
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k040-medicine-distribution",
+        "name": {
+          "ko": "약재 분배",
+          "en": "Medicine distribution"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k040-filter-clinic-allocation",
+        "name": {
+          "ko": "필터·진료 배분",
+          "en": "Filter and clinic allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k040-care-before-spoils",
+        "name": {
+          "ko": "전리품보다 진료",
+          "en": "Care before spoils"
+        },
+        "description": {
+          "ko": "필터를 쌓아 두는 장교를 피하고 배급이 비면 의무 배식을 연다.",
+          "en": "Avoids filter-hoarding officers and opens medical meals when rations run out."
+        },
+        "behavior": {
+          "ko": "필터를 쌓아 두는 장교를 피하고 배급이 비면 의무 배식을 연다.",
+          "en": "Avoids filter-hoarding officers and opens medical meals when rations run out."
+        },
+        "stress": {
+          "ko": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
+          "en": "That filter fabric would be bound to the eastern protection contract, and the Geumcheon work squads would be left in turbid water and dust."
+        },
+        "relationship": {
+          "ko": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
+          "en": "Near an apprentice applying Im Chaewon's filter standards to care, opening duty meals whenever Han Jion's ration pot ran empty, and locking releases whenever Choi Eunjae's filter certification stamp lapsed."
+        },
+        "effects": []
+      },
+      {
+        "id": "k040-certified-release",
+        "name": {
+          "ko": "인증 뒤 출고",
+          "en": "Release after certification"
+        },
+        "description": {
+          "ko": "인증 도장이 없으면 필터 출고를 잠근다.",
+          "en": "Blocks filter release without certification seals."
+        },
+        "behavior": {
+          "ko": "인증 도장이 없으면 필터 출고를 잠근다.",
+          "en": "Blocks filter release without certification seals."
+        },
+        "stress": {
+          "ko": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
+          "en": "That filter fabric would be bound to the eastern protection contract, and the Geumcheon work squads would be left in turbid water and dust."
+        },
+        "relationship": {
+          "ko": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
+          "en": "Near an apprentice applying Im Chaewon's filter standards to care, opening duty meals whenever Han Jion's ration pot ran empty, and locking releases whenever Choi Eunjae's filter certification stamp lapsed."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "약재 배분과 필터 규격 적용이 확인된다. 분진 기침 관찰을 고난도 수술이나 전문 연구 숙련으로 환산하지 않는다.",
+      "en": "Medicine allocation and applying filter standards are confirmed. Observing dust coughs does not grant advanced surgery or research proficiency."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -930,7 +1074,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.",
     "관계": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
@@ -938,7 +1081,7 @@
     "공포": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
     "개입": "대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다."
   },
-  "biography": "분진 기침을 용접 불꽃보다 먼저 듣고, 방호 필터를 전리품처럼 쌓는 장교를 재앙처럼 피한다. 자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다.\n\n- 소속: 규격맹\n- 생업: 공방 진료\n- 품계: 조합원\n- 직함: 금천 공방의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.\n\n**야망.** 방호 필터와 공방 진료를 복구복무자의 시민권 조건으로 묶어 규격맹이 군복이 아니어도 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
+  "biography": "분진 기침을 용접 불꽃보다 먼저 듣고, 방호 필터를 전리품처럼 쌓는 장교를 재앙처럼 피한다. 자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다.\n\n- 소속: 규격맹\n- 생업: 공방 진료\n- 품계: 조합원\n- 직함: 금천 공방의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.\n\n**야망.** 방호 필터와 공방 진료를 복구복무자의 시민권 조건으로 묶어 규격맹이 군복이 아니어도 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

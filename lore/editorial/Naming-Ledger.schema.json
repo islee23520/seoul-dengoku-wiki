@@ -7,8 +7,6 @@
   "required": [
     "version",
     "states",
-    "martialSchools",
-    "martialBranch",
     "offices",
     "seriesTitles",
     "retiredPublicForms"
@@ -50,7 +48,8 @@
         }
       }
     },
-    "martialSchools": {
+    "historicalMartialSchools": {
+      "description": "Retired naming evidence only; source pointers identify the former publication and are not live source dependencies.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -87,7 +86,8 @@
         }
       }
     },
-    "martialBranch": {
+    "historicalMartialBranch": {
+      "description": "Optional retired branch provenance, never an active public transmission.",
       "type": "object",
       "required": [
         "name",

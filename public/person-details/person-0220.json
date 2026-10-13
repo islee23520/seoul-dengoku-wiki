@@ -11,7 +11,7 @@
   "stage": "주요",
   "state": "S09",
   "stateName": "여의도출자연합회",
-  "sourceRoute": "/world/Cast-State-09#인물-최지우",
+  "sourceRoute": "/world/Core-Characters#최지우",
   "detailRoute": "/people/person-0220",
   "birthDate": "2099-01-28",
   "birthday": "01-28",
@@ -404,6 +404,118 @@
   "gurps": {
     "id": "K219",
     "personId": "person-0220"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 11,
+        "effective": 11
+      },
+      "strategy": {
+        "base": 11,
+        "effective": 11
+      },
+      "negotiation": {
+        "base": 12,
+        "effective": 12
+      },
+      "management": {
+        "base": 13,
+        "effective": 13
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k219-roster-transmission",
+        "name": {
+          "ko": "명부 송신",
+          "en": "Roster transmission"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k219-trait-1",
+        "name": {
+          "ko": "명부만 송신",
+          "en": "Transmit the roster alone"
+        },
+        "description": {
+          "ko": "전달할 내용에서 속보와 명부를 구분한다.",
+          "en": "Separates bulletin claims from roster content."
+        },
+        "behavior": {
+          "ko": "전달할 내용에서 속보와 명부를 구분한다.",
+          "en": "Separates bulletin claims from roster content."
+        },
+        "stress": {
+          "ko": "행렬이 내려오기 전에도 속보를 잘라 낸다.",
+          "en": "Cuts the bulletin even before the procession arrives."
+        },
+        "relationship": {
+          "ko": "윤서린과 전달 속도·인준 효력을 두고 경쟁한다.",
+          "en": "Competes with Yun Seorin over transmission speed and ratification."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "출자 가문 평의회가 뽑은 여의도출자연합회 의장이다. 행렬이 내려오기 전 속보를 자르고 명부 칸만 송신했다. 빠른 목소리의 정치적 효력과 검증 사이에서 움직이며 국가 인준권을 가진 것은 아니다.",
+      "en": "She chairs the Yeouido investment council through its contributing houses. Before the procession descended, she cut the bulletin and transmitted only roster fields. She works between the political force of speed and verification without holding state ratification authority."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -897,21 +1009,15 @@
     "지향": "동성",
     "결합": "계약동거"
   },
-  "fields": {
-    "생업": "송신 당직·출자 장부 보전",
-    "소속": "여의도출자연합회",
-    "품계": "의장",
-    "직함": "여의도출자연합회 의장"
-  },
+  "fields": {},
   "sections": {
-    "생애": "2126년 세대. 여의대로 24 여의도 회관 송신 당직의 손. 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 최지우가 의장이 된 것은 마곡종자가의 송신 당직과 그 출자 장부를 끊기지 않게 지킨 뒤였다. 디지털미디어시티신탁가의 당직은 최은재의 것이다. 거짓 속보는 형조가 아니라 채널 길드가 먼저 자른다. 여의도출자연합회는 약국이다. 공용 화폐와 여의도 금고는 이 회가 쥐고, 속국은 영종지점 하나다. 윤서린의 도장보다 목소리가 빠르면, 인준은 사본이 된다.",
+    "생애": "2126년 세대. 여의대로 24 여의도 회관 송신 당직의 손. 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 최지우가 의장이 된 것은 마곡종자가의 송신 당직과 그 출자 장부를 끊기지 않게 지킨 뒤였다. 디지털미디어시티신탁가의 당직은 최은재의 것이다. 거짓 속보는 형조가 아니라 채널 길드가 먼저 자른다. 윤서린의 도장보다 목소리가 빠르면, 인준은 사본이 된다.",
     "관직": "품계 의장. 직함은 여의도출자연합회 의장. 생업은 출자 가문 평의회가 뽑은 의장.",
-    "무공": "벽력호명.",
     "일화": "북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다. 잘린 속보가 백온의 시민권 줄보다 하루 늦었다.",
     "가문": "마곡종자가(HC10). 관리인. 디지털미디어시티신탁가(HP09) 관리인은 최은재다.",
-    "관계": "윤서린의 인준과 속도 경쟁.\n\n- 생업: 송신 당직·출자 장부 보전\n- 소속: 여의도출자연합회\n- 품계: 의장\n- 직함: 여의도출자연합회 의장\n\n의장 최지우 곁에서 금고·감정·출자 장부를 쥐는 실세다."
+    "관계": "윤서린의 인준과 속도 경쟁."
   },
-  "biography": "**생애.** 2126년 세대. 여의대로 24 여의도 회관 송신 당직의 손. 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 최지우가 의장이 된 것은 마곡종자가의 송신 당직과 그 출자 장부를 끊기지 않게 지킨 뒤였다. 디지털미디어시티신탁가의 당직은 최은재의 것이다. 거짓 속보는 형조가 아니라 채널 길드가 먼저 자른다. 여의도출자연합회는 약국이다. 공용 화폐와 여의도 금고는 이 회가 쥐고, 속국은 영종지점 하나다. 윤서린의 도장보다 목소리가 빠르면, 인준은 사본이 된다.\n**관직.** 품계 의장. 직함은 여의도출자연합회 의장. 생업은 출자 가문 평의회가 뽑은 의장.\n**무공.** 벽력호명.\n**일화.** 북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다. 잘린 속보가 백온의 시민권 줄보다 하루 늦었다.\n**가문.** 마곡종자가(HC10). 관리인. 디지털미디어시티신탁가(HP09) 관리인은 최은재다.\n**관계.** 윤서린의 인준과 속도 경쟁.\n\n- 생업: 송신 당직·출자 장부 보전\n- 소속: 여의도출자연합회\n- 품계: 의장\n- 직함: 여의도출자연합회 의장\n\n의장 최지우 곁에서 금고·감정·출자 장부를 쥐는 실세다.",
+  "biography": "여의도출자연합회 의장. 목소리가 인준보다 빠르다고 믿는 사람.\n\n**생애.** 2126년 세대. 여의대로 24 여의도 회관 송신 당직의 손. 회관의 비상위원회가 계열 출자 장부를 냉각·키 당직으로 바꿨다. 최지우가 의장이 된 것은 마곡종자가의 송신 당직과 그 출자 장부를 끊기지 않게 지킨 뒤였다. 디지털미디어시티신탁가의 당직은 최은재의 것이다. 거짓 속보는 형조가 아니라 채널 길드가 먼저 자른다. 윤서린의 도장보다 목소리가 빠르면, 인준은 사본이 된다.\n\n**관직.** 품계 의장. 직함은 여의도출자연합회 의장. 생업은 출자 가문 평의회가 뽑은 의장.\n\n**일화.** 북한산보국문 행렬이 내려오기 전날, 최지우는 속보를 자르고 명부 칸만 내보냈다. 잘린 속보가 백온의 시민권 줄보다 하루 늦었다.\n\n**가문.** 마곡종자가(HC10). 관리인. 디지털미디어시티신탁가(HP09) 관리인은 최은재다.\n\n**관계.** 윤서린의 인준과 속도 경쟁.",
   "sources": [
     "Cast-State-09",
     "Core-Characters"

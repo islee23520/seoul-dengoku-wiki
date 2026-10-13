@@ -393,6 +393,150 @@
     "id": "K210",
     "personId": "person-0211"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 11,
+        "effective": 11
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "mobile-patient-care",
+        "name": {
+          "ko": "이동 환자 진료",
+          "en": "Mobile patient care"
+        },
+        "rating": 65
+      },
+      {
+        "id": "medicine-allocation",
+        "name": {
+          "ko": "약재 배분",
+          "en": "Medicine allocation"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k210-disposition",
+        "name": {
+          "ko": "가족 단위 진료",
+          "en": "Family-based care"
+        },
+        "description": {
+          "ko": "부두 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 선주 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.",
+          "en": "When the quay taps ran dry he changed care order to family units and heard as an insult any word telling him to skip shipowner columns for efficiency. Mild in manner, he tied the medicine boxes' seal cords himself."
+        },
+        "behavior": {
+          "ko": "관직. 품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.",
+          "en": "Office. Rank: lay instructor. Title: southern medical-access mobile clinic van chief. He ran the alley-by-alley food-poisoning boards and, whenever a blackout warning rose, opened the care beside the quay with Seo Nayeon's ice-priority joint signature."
+        },
+        "stress": {
+          "ko": "공포. 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
+          "en": "Fear. That patients of spoiled inventory would remain on refugee rosters alone, be pushed toward Bukhansan Bogukmun, and the clinic vans would become convoy prisons."
+        },
+        "relationship": {
+          "ko": "관계. 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+          "en": "Relations. Received patients into the alleys whenever Yeon Gaon's market care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at Noryangjin, and exchanged Baek On's family roster with the mobile care list."
+        },
+        "effects": []
+      },
+      {
+        "id": "k210-choice",
+        "name": {
+          "ko": "봉쇄 밖 접근 유지",
+          "en": "Maintaining access outside closure"
+        },
+        "description": {
+          "ko": "일화. 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, short of herbs, he halved the prescriptions and divided them among everyone. By this deed the signature of the southern medical-access mobile clinic van chief post rose into the ledger."
+        },
+        "behavior": {
+          "ko": "관계. 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+          "en": "Relations. Received patients into the alleys whenever Yeon Gaon's market care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at Noryangjin, and exchanged Baek On's family roster with the mobile care list."
+        },
+        "stress": {
+          "ko": "공포. 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
+          "en": "Fear. That patients of spoiled inventory would remain on refugee rosters alone, be pushed toward Bukhansan Bogukmun, and the clinic vans would become convoy prisons."
+        },
+        "relationship": {
+          "ko": "관계. 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+          "en": "Relations. Received patients into the alleys whenever Yeon Gaon's market care locked down, owed a debt to avoid dodging Jang Sehwa's medical convoy at Noryangjin, and exchanged Baek On's family roster with the mobile care list."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "약을 모두에게 나누고 봉쇄 때 골목에서 환자를 받으며 가족 명부와 연결한다. 의료 최저선 제도화는 야망으로 남긴다.",
+      "en": "Shares medicine, receives patients in alleys during closure and links family lists to care. Institutionalizing minimum access remains an ambition."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S08",
@@ -794,7 +938,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 남부 의료접근 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.",
     "관계": "연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
@@ -802,7 +945,7 @@
     "공포": "상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.",
     "개입": "시약 상자를 호송해 부두 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다."
   },
-  "biography": "부두 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 선주 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 식중독 게시·이동 진료 운영\n- 직함: 남부 의료접근 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 남부 의료접근 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.\n\n**야망.** 정전 골목에도 이동 의무차가 들어가게 해 중립시장의 의료 최저선을 상회정에 못 박는다.\n\n**공포.** 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 부두 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −50 | 물질 65 | 공동 −10 | 원칙 −15 | 공개 25 | 자격 −5 | 분산 15 | 변혁 5\n- 욕망: 갈망 45 | 독점 −10 | 위험 −30 | 과시 5 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "부두 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고, 효율을 이유로 선주 칸만 건너뛰라는 말을 모욕으로 듣는다. 온화하나 약품 상자의 봉인 끈은 직접 묶는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 식중독 게시·이동 진료 운영\n- 직함: 남부 의료접근 이동의무차 반장\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 남부 의료접근 이동의무차 반장 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 교도. 직함은 남부 의료접근 이동의무차 반장. 골목별 식중독 게시판을 운영하고, 정전 예고가 뜨면 서나연의 얼음 우선 배정 연서로 부두 옆 진료를 연다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 남부 의료접근 이동의무차 반장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연가온의 시장 진료가 봉쇄되면 환자를 골목으로 받고, 장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.\n\n**야망.** 정전 골목에도 이동 의무차가 들어가게 해 중립시장의 의료 최저선을 상회정에 못 박는다.\n\n**공포.** 상한 재고 환자가 난민 명부로만 남아 북한산보국문으로 떠밀리고 의무차가 호송 감옥이 되는 것.\n\n**개입.** 시약 상자를 호송해 부두 진료를 유지하거나, 명부 양도 밀약을 찾아 반장을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −50 | 물질 65 | 공동 −10 | 원칙 −15 | 공개 25 | 자격 −5 | 분산 15 | 변혁 5\n- 욕망: 갈망 45 | 독점 −10 | 위험 −30 | 과시 5 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],

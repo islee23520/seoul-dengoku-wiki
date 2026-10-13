@@ -285,6 +285,142 @@
     "id": "K306",
     "personId": "person-0307"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 6,
+        "effective": 6
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 9,
+        "effective": 9
+      },
+      "learning": {
+        "base": 7,
+        "effective": 7
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "k306-shift-notice-recording",
+        "name": {
+          "ko": "교대 통지 기록",
+          "en": "Shift notice recording"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "k306-priority",
+        "name": {
+          "ko": "승인 순서 보존",
+          "en": "Preserves approval order"
+        },
+        "description": {
+          "ko": "두복은 교대 날인을 양쪽 칠판에 동시에 붙이고 심사 거부를 사본으로 남긴다. 없는 시각 두 칸의 실제 이동은 미확인이다.",
+          "en": "Dubok posts shift seals to both boards simultaneously and preserves inspection refusals. Actual movements for the missing two times remain unknown."
+        },
+        "behavior": {
+          "ko": "교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.",
+          "en": "Office. Rank: convoy hand. Title: seasonal rotation courier, duty officer of Jeon Miri. He wrote the rotation notices and the patient vital table in the same ledger and pasted bought notes on the duty-room door."
+        },
+        "stress": {
+          "ko": "전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.",
+          "en": "Fear. That the courier bag would turn into an arms-loading notice and the rotation decree would become a protection force's timetable."
+        },
+        "relationship": {
+          "ko": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.",
+          "en": "Relations. Carried the approval-order dispute between Jeon Miri and An Dohan by note and pasted Jang Sehwa's seasonal rotation stamp on both chalkboards at once. Left Mun Sion's examination refusal as courier copies."
+        },
+        "effects": []
+      },
+      {
+        "id": "k306-accountability",
+        "name": {
+          "ko": "절차를 통한 책임",
+          "en": "Procedural accountability"
+        },
+        "description": {
+          "ko": "확인·기록·입회 조건으로 맡은 업무의 책임을 남긴다.",
+          "en": "Makes responsibility traceable through the documented checks, records, and attendance conditions."
+        },
+        "behavior": {
+          "ko": "관직. 품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.",
+          "en": "Office. Rank: convoy hand. Title: seasonal rotation courier, duty officer of Jeon Miri. He wrote the rotation notices and the patient vital table in the same ledger and pasted bought notes on the duty-room door."
+        },
+        "stress": {
+          "ko": "공포. 전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.",
+          "en": "Fear. That the courier bag would turn into an arms-loading notice and the rotation decree would become a protection force's timetable."
+        },
+        "relationship": {
+          "ko": "관계. 전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.",
+          "en": "Relations. Carried the approval-order dispute between Jeon Miri and An Dohan by note and pasted Jang Sehwa's seasonal rotation stamp on both chalkboards at once. Left Mun Sion's examination refusal as courier copies."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "두복은 교대 날인을 양쪽 칠판에 동시에 붙이고 심사 거부를 사본으로 남긴다. 없는 시각 두 칸의 실제 이동은 미확인이다.",
+      "en": "Dubok posts shift seals to both boards simultaneously and preserves inspection refusals. Actual movements for the missing two times remain unknown."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S12",
@@ -649,7 +785,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 계절 교대 전령, 전미리의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.",
     "일화": "의료열차 무기 발견 직후 교대 쪽지에 없는 시각이 두 칸 생겼다.",
     "관계": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.",
@@ -657,7 +792,7 @@
     "공포": "전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.",
     "개입": "매수 쪽지를 공개하거나, 의료조 우선 교대를 전령로에 고정할 수 있다."
   },
-  "biography": "결재 교대 쪽지를 분 단위로 기억하고, 구두 승인을 전령 원장에 옮기기 전에 배차표를 고치지 않는다. 의료조와 배차조의 순서를 한 장에 몰면 분필을 꺾는다.\n\n- 생업: 계절 교대 통지·환자 활력 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 계절 교대 전령, 전미리의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 계절 교대 전령, 전미리의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.\n\n**일화.** 의료열차 무기 발견 직후 교대 쪽지에 없는 시각이 두 칸 생겼다.\n\n**관계.** 전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.\n\n**야망.** 배차조와 의료조의 계절 교대를 고정 전령로로 남겨 노선 면허 밖의 호송료가 결재 순서를 사지 못하게 한다.\n\n**공포.** 전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 의료조 우선 교대를 전령로에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 5 | 공동 20 | 원칙 5 | 공개 25 | 자격 25 | 분산 45 | 변혁 5\n- 욕망: 갈망 30 | 독점 −10 | 위험 35 | 과시 5 | 지속 0 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "결재 교대 쪽지를 분 단위로 기억하고, 구두 승인을 전령 원장에 옮기기 전에 배차표를 고치지 않는다. 의료조와 배차조의 순서를 한 장에 몰면 분필을 꺾는다.\n\n- 생업: 계절 교대 통지·환자 활력 기록\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 계절 교대 전령, 전미리의 실무 담당자\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 계절 교대 전령, 전미리의 실무 담당자 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 호송원. 직함은 계절 교대 전령, 전미리의 실무 담당자. 교대 통지와 환자 활력 표를 같은 원장에 적고, 매수된 쪽지는 당직실 문에 붙인다.\n\n**일화.** 의료열차 무기 발견 직후 교대 쪽지에 없는 시각이 두 칸 생겼다.\n\n**관계.** 전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고, 장세화의 계절 교대 날인을 양쪽 칠판에 동시에 붙인다. 문시온의 심사 거부를 전령 사본으로 남긴다.\n\n**야망.** 배차조와 의료조의 계절 교대를 고정 전령로로 남겨 노선 면허 밖의 호송료가 결재 순서를 사지 못하게 한다.\n\n**공포.** 전령 가방이 무기 적재 통지로 바뀌어 교대 결재가 외부 호위 시간표가 되는 것.\n\n**개입.** 매수 쪽지를 공개하거나, 의료조 우선 교대를 전령로에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 5 | 공동 20 | 원칙 5 | 공개 25 | 자격 25 | 분산 45 | 변혁 5\n- 욕망: 갈망 30 | 독점 −10 | 위험 35 | 과시 5 | 지속 0 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-12"
   ],

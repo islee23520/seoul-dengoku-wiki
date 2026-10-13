@@ -286,6 +286,142 @@
     "id": "K505",
     "personId": "person-0505"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "k505-sealed-record-linking",
+        "name": {
+          "ko": "봉인·등기 기록 연결",
+          "en": "Linking seal and registry records"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "k505-action-priority",
+        "name": {
+          "ko": "봉인과 빚의 줄",
+          "en": "Seal records and debt entries"
+        },
+        "description": {
+          "ko": "동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.",
+          "en": "A copy of the restoration-service roster that the Eastern Command once offered in place of the pump-parts crates reaches the records duty. Park Haeun pins the seal record of the crates Gang Minseo sent back sealed beside the copy, and writes out in registry order the line from which the debt between Han Jaemok's western water supply and Bae Woojin's military bureau begins."
+        },
+        "behavior": {
+          "ko": "동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.",
+          "en": "A copy of the restoration-service roster that the Eastern Command once offered in place of the pump-parts crates reaches the records duty. Park Haeun pins the seal record of the crates Gang Minseo sent back sealed beside the copy, and writes out in registry order the line from which the debt between Han Jaemok's western water supply and Bae Woojin's military bureau begins."
+        },
+        "stress": {
+          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
+          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      },
+      {
+        "id": "k505-bounded-handover",
+        "name": {
+          "ko": "기록으로 잇는 당직",
+          "en": "Duty linked by records"
+        },
+        "description": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "behavior": {
+          "ko": "열쇠와 기록을 다음 당직에 넘기며 권한을 늘리지 않는다.",
+          "en": "Passes keys and records to the next shift without enlarging authority."
+        },
+        "stress": {
+          "ko": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
+          "en": "That the restoration service registrar duty post would stand empty and the Alliance's passage would become a hostage of the great powers."
+        },
+        "relationship": {
+          "ko": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+          "en": "Bound by handover to the senior duty line of the same living quarters."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다. 짧은 행위와 인수인계가 근거여서 다른 분야의 숙련이나 보정은 발급하지 않았다.",
+      "en": "A copy of the restoration-service roster that the Eastern Command once offered in place of the pump-parts crates reaches the records duty. Park Haeun pins the seal record of the crates Gang Minseo sent back sealed beside the copy, and writes out in registry order the line from which the debt between Han Jaemok's western water supply and Bae Woojin's military bureau begins. The brief action and handover support only limited strengths; no unrelated proficiency or numeric trait bonus is issued."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S02",
@@ -635,7 +771,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -643,7 +778,7 @@
     "공포": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 0 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 25 | 자격 55 | 분산 30 | 변혁 30\n- 욕망: 갈망 −15 | 독점 −10 | 위험 20 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 동방사가 펌프 부품 상자 대신 내밀었던 복구복무자 명부의 사본이 기록관 당직에 들어온다. 박하은은 강민서가 봉한 채 돌려보낸 상자의 봉인 기록을 사본 옆에 붙이고, 한재목의 서부 급수와 배우진의 병조 사이에 남은 빚이 어느 줄에서 비롯하는지 등기 순서대로 적는다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 0 | 무력 −10 | 물질 35 | 공동 30 | 원칙 20 | 공개 25 | 자격 55 | 분산 30 | 변혁 30\n- 욕망: 갈망 −15 | 독점 −10 | 위험 20 | 과시 −20 | 지속 −15 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],

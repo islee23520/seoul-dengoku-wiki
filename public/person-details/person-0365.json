@@ -285,6 +285,142 @@
     "id": "K364",
     "personId": "person-0365"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "aid-station-bed-coordination",
+        "name": {
+          "ko": "의무소 병상 조정",
+          "en": "Aid station bed coordination"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "무장 대기를 병상 밖으로",
+          "en": "Armed waiting outside beds"
+        },
+        "description": {
+          "ko": "들것 순서를 국적보다 앞에 놓고 무장 대기를 침상에 들이지 않는다. 빠진 당직자 문제를 수습한 결과는 없다.",
+          "en": "Stretcher order precedes nationality and armed queues stay out of bedside space. Resolution of the absent duty entry is not recorded."
+        },
+        "behavior": {
+          "ko": "들것 순서를 국적보다 앞에 두고, 봉쇄대의 무장 대기를 침상 앞으로 들이라는 쪽지를 찢는다. 온화하나 상수관 파손 소문이 뜨면 문을 직접 잠근다.",
+          "en": "He put stretcher order ahead of nationality and tore up any note that told him to bring the blockade's armed wait up to the sickbeds. Mild in manner, he locked the door himself whenever a water-main break rumor rose."
+        },
+        "stress": {
+          "ko": "공포. 의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.",
+          "en": "Fear. That the clinic would be mistaken for a waiting room of hostile movement and the whole convoy would be disarmed."
+        },
+        "relationship": {
+          "ko": "관계. 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.",
+          "en": "Relations. Shared sickbeds with Yeong Seokon's duty line and matched the queue with Su Jiwan's concourse wait. Used Nam Hoseong's medical convoy for arrival confirmation."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.",
+          "en": "Office. Rank: company commander. Title: bridge clinic outpost chief. He posted the severity table and the water-supply hours on the door and opened the weapons-box seal only under passage-inspection attendance."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: company commander. Title: bridge clinic outpost chief. He posted the severity table and the water-supply hours on the door and opened the weapons-box seal only under passage-inspection attendance."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the clinic would be mistaken for a waiting room of hostile movement and the whole convoy would be disarmed."
+        },
+        "relationship": {
+          "ko": "관계. 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.",
+          "en": "Relations. Shared sickbeds with Yeong Seokon's duty line and matched the queue with Su Jiwan's concourse wait. Used Nam Hoseong's medical convoy for arrival confirmation."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "들것 순서를 국적보다 앞에 놓고 무장 대기를 침상에 들이지 않는다. 빠진 당직자 문제를 수습한 결과는 없다.",
+      "en": "Stretcher order precedes nationality and armed queues stay out of bedside space. Resolution of the absent duty entry is not recorded."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -698,7 +834,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 교량 의무소 거점장 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.",
     "일화": "상수관 파손을 적대행위로 적은 보고가 퍼진 밤, 의무소 당직 명단이 한 줄 빠져 있었다.",
     "관계": "영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.",
@@ -706,7 +841,7 @@
     "공포": "의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.",
     "개입": "빠진 당직자를 찾거나, 의무소를 개방 진료로 되돌려 봉쇄를 흔들 수 있다."
   },
-  "biography": "들것 순서를 국적보다 앞에 두고, 봉쇄대의 무장 대기를 침상 앞으로 들이라는 쪽지를 찢는다. 온화하나 상수관 파손 소문이 뜨면 문을 직접 잠근다.\n\n- 생업: 중증도 표·급수 시간 게시\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 교량 의무소 거점장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 교량 의무소 거점장 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.\n\n**일화.** 상수관 파손을 적대행위로 적은 보고가 퍼진 밤, 의무소 당직 명단이 한 줄 빠져 있었다.\n\n**관계.** 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.\n\n**야망.** 교량 의무소를 아관사 양군 공동 진료 거점으로 남겨 강국 호위병이 병상 옆에 서는 관행을 없앤다.\n\n**공포.** 의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.\n\n**개입.** 빠진 당직자를 찾거나, 의무소를 개방 진료로 되돌려 봉쇄를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 30 | 물질 10 | 공동 25 | 원칙 20 | 공개 −20 | 자격 −15 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 5 | 독점 −40 | 위험 −25 | 과시 0 | 지속 15 | 지향 이성 | 결합 다자\n:::",
+  "biography": "들것 순서를 국적보다 앞에 두고, 봉쇄대의 무장 대기를 침상 앞으로 들이라는 쪽지를 찢는다. 온화하나 상수관 파손 소문이 뜨면 문을 직접 잠근다.\n\n- 생업: 중증도 표·급수 시간 게시\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 교량 의무소 거점장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 구의수비대 교량 의무소 거점장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 교량 의무소 거점장. 중증도 표와 급수 시간을 문에 붙이고, 무기함 봉인은 통행 심사 입회 없이 열지 않는다.\n\n**일화.** 상수관 파손을 적대행위로 적은 보고가 퍼진 밤, 의무소 당직 명단이 한 줄 빠져 있었다.\n\n**관계.** 영석온의 당직 침상과 병상을 나누고, 수지완의 대합실 대기와 줄을 맞춘다. 남호성의 의무호송을 도착 확인에 쓴다.\n\n**야망.** 교량 의무소를 아관사 양군 공동 진료 거점으로 남겨 강국 호위병이 병상 옆에 서는 관행을 없앤다.\n\n**공포.** 의무소가 적대 이동의 대기실로 오인되어 호송 전체가 무장 해제를 당하는 것.\n\n**개입.** 빠진 당직자를 찾거나, 의무소를 개방 진료로 되돌려 봉쇄를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 30 | 물질 10 | 공동 25 | 원칙 20 | 공개 −20 | 자격 −15 | 분산 −15 | 변혁 −20\n- 욕망: 갈망 5 | 독점 −40 | 위험 −25 | 과시 0 | 지속 15 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-14"
   ],

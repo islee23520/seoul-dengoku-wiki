@@ -393,6 +393,142 @@
     "id": "K264",
     "personId": "person-0265"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "contract-check",
+        "name": {
+          "ko": "복무계약 서명 확인",
+          "en": "Service-contract signature checking"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "contract-check-disposition",
+        "name": {
+          "ko": "침묵 뒤 서명 거부",
+          "en": "Refuses after silence"
+        },
+        "description": {
+          "ko": "오래 침묵한 뒤 가족 단위 등록 서명을 돌려준다.",
+          "en": "Returns family-registration signatures after long silence."
+        },
+        "behavior": {
+          "ko": "오래 침묵한 뒤 가족 단위 등록 서명을 돌려준다.",
+          "en": "Returns family-registration signatures after long silence."
+        },
+        "stress": {
+          "ko": "거부가 탈주 명부로 바뀌어 가족을 볼모 삼을 것을 두려워한다.",
+          "en": "Fears refusal entered as desertion with families held hostage."
+        },
+        "relationship": {
+          "ko": "백온의 강제복무 반대를 가족 회의에서 대변하고, 강민서의 자발적 성인 복구복무 문안을 참고하며, 배우진의 장교망이 숙영 명부를 가져가지 못하게 막는다.",
+          "en": "Represents Baek On’s opposition to forced service, consults Kang Minseo’s voluntary adult-service text and keeps the roster from Bae Woojin’s officers."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "거부와 당일 게시",
+          "en": "Refusal with same-day posting"
+        },
+        "description": {
+          "ko": "서명을 거부한 뒤 그날 표결 결과를 게시한다.",
+          "en": "Posts that day’s votes after refusing signature."
+        },
+        "behavior": {
+          "ko": "서명을 거부한 뒤 그날 표결 결과를 게시한다.",
+          "en": "Posts that day’s votes after refusing signature."
+        },
+        "stress": {
+          "ko": "거부가 탈주 명부로 옮겨져 남은 가족이 볼모가 되는 것.",
+          "en": "Fears refusal entered as desertion with families held hostage."
+        },
+        "relationship": {
+          "ko": "백온의 강제복무 반대를 가족 회의에서 대변하고, 강민서의 자발적 성인 복구복무 문안을 참고하며, 배우진의 장교망이 숙영 명부를 가져가지 못하게 막는다.",
+          "en": "Represents Baek On’s opposition to forced service, consults Kang Minseo’s voluntary adult-service text and keeps the roster from Bae Woojin’s officers."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "급수권과 묶인 복무계약의 서명란을 접어 돌려주고 당일 표결을 게시했다. 거부 선례는 원문의 선택에 한정한다.",
+      "en": "Folded back the signature section of a service contract bundled with water rights and posted votes that day. The refusal precedent is limited to the recorded choice."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S10",
@@ -762,7 +898,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 보국문 피난 막사에서 자랐다. 복무 서명 거부 행자 자리는 고아 명부 줄로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 행자. 직함은 복무 서명 거부 행자. 문중 표 결과를 당일 게시하고, 복무계약서가 급수권과 같은 끈이면 서명을 거부한다.",
     "일화": "급수권과 같은 끈으로 묶인 복무계약서가 가족 단위 등록안과 함께 숙영에 들어온다. 란민준은 오래 침묵한 뒤 서명란을 접어 돌려주고, 그날의 문중 표 결과를 게시하며 숙영 명부를 배우진의 장교망 밖에 둔다.",
     "관계": "백온의 강제복무 반대를 가족 회의에서 대변하고, 강민서의 자발적 성인 복구복무 문안을 참고하며, 배우진의 장교망이 숙영 명부를 가져가지 못하게 막는다.",
@@ -770,7 +905,7 @@
     "공포": "거부가 탈주 명부로 옮겨져 남은 가족이 볼모가 되는 것.",
     "개입": "거부 선례를 서울역까지 호송하거나, 볼모로 잡힌 이름을 명부에서 구출할 수 있다."
   },
-  "biography": "가족 단위 복무등록을 안정이라고 부르는 장교 앞에서 오래 침묵한 뒤, 서명란을 접어 돌려준다. 따뜻하나 서명은 차갑다.\n\n- 생업: 복무계약 서명 확인·문중 표 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 복무 서명 거부 행자\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 복무 서명 거부 행자 자리는 고아 명부 줄로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 행자. 직함은 복무 서명 거부 행자. 문중 표 결과를 당일 게시하고, 복무계약서가 급수권과 같은 끈이면 서명을 거부한다.\n\n**일화.** 급수권과 같은 끈으로 묶인 복무계약서가 가족 단위 등록안과 함께 숙영에 들어온다. 란민준은 오래 침묵한 뒤 서명란을 접어 돌려주고, 그날의 문중 표 결과를 게시하며 숙영 명부를 배우진의 장교망 밖에 둔다.\n\n**관계.** 백온의 강제복무 반대를 가족 회의에서 대변하고, 강민서의 자발적 성인 복구복무 문안을 참고하며, 배우진의 장교망이 숙영 명부를 가져가지 못하게 막는다.\n\n**야망.** 군사호적 거부를 총림 선례로 남겨 강제등록이 신도 명부의 값이 되지 않게 한다.\n\n**공포.** 거부가 탈주 명부로 옮겨져 남은 가족이 볼모가 되는 것.\n\n**개입.** 거부 선례를 서울역까지 호송하거나, 볼모로 잡힌 이름을 명부에서 구출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 80 | 무력 −40 | 물질 −15 | 공동 70 | 원칙 25 | 공개 25 | 자격 40 | 분산 45 | 변혁 0\n- 욕망: 갈망 0 | 독점 −10 | 위험 30 | 과시 −25 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "가족 단위 복무등록을 안정이라고 부르는 장교 앞에서 오래 침묵한 뒤, 서명란을 접어 돌려준다. 따뜻하나 서명은 차갑다.\n\n- 생업: 복무계약 서명 확인·문중 표 게시\n- 소속: 안국총림\n- 품계: 행자\n- 직함: 복무 서명 거부 행자\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 복무 서명 거부 행자 자리는 고아 명부 줄로 열렸다.\n\n**관직.** 품계 행자. 직함은 복무 서명 거부 행자. 문중 표 결과를 당일 게시하고, 복무계약서가 급수권과 같은 끈이면 서명을 거부한다.\n\n**일화.** 급수권과 같은 끈으로 묶인 복무계약서가 가족 단위 등록안과 함께 숙영에 들어온다. 란민준은 오래 침묵한 뒤 서명란을 접어 돌려주고, 그날의 문중 표 결과를 게시하며 숙영 명부를 배우진의 장교망 밖에 둔다.\n\n**관계.** 백온의 강제복무 반대를 가족 회의에서 대변하고, 강민서의 자발적 성인 복구복무 문안을 참고하며, 배우진의 장교망이 숙영 명부를 가져가지 못하게 막는다.\n\n**야망.** 군사호적 거부를 총림 선례로 남겨 강제등록이 신도 명부의 값이 되지 않게 한다.\n\n**공포.** 거부가 탈주 명부로 옮겨져 남은 가족이 볼모가 되는 것.\n\n**개입.** 거부 선례를 서울역까지 호송하거나, 볼모로 잡힌 이름을 명부에서 구출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −65 | 개방 80 | 무력 −40 | 물질 −15 | 공동 70 | 원칙 25 | 공개 25 | 자격 40 | 분산 45 | 변혁 0\n- 욕망: 갈망 0 | 독점 −10 | 위험 30 | 과시 −25 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-10"
   ],

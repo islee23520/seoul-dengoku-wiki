@@ -392,6 +392,142 @@
     "id": "K418",
     "personId": "person-0419"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 8,
+        "effective": 8
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "contract-testimony",
+        "name": {
+          "ko": "계약 서명 증언",
+          "en": "Contract signature testimony"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "물 공급과 군사 근거 분리",
+          "en": "Separates water rights from military grounds"
+        },
+        "description": {
+          "ko": "군사 개입과 최소 급수권을 한 줄에 넣으라는 사신을 내려보냈다. 종료 조건과 감사표 날짜를 사본 증언에 맞췄다.",
+          "en": "Rejects an envoy seeking to combine military intervention with minimum water rights. Aligns expiry terms and audit dates with signature testimony."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 물 공급과 군사 근거 분리을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "증언을 잘라 쓰려 할 때 말을 좁힐 수 있다.",
+          "en": "May narrow testimony when others try to excerpt it."
+        },
+        "relationship": {
+          "ko": "임하준의 종료 조건과 흥미리의 날짜를 증언에 맞춘다.",
+          "en": "Aligns Im Hajun’s termination terms with Heung Miri’s dates in testimony."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "물 공급 최저선과 계약 종료 조건을 공개 증언으로 남겨 조합원 지지와 군사 개입 근거가 한 장에서 섞이지 않게 한다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "자신의 증언이 배우진의 군사 개입 근거로만 잘리는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "임하준의 종료 조건과 흥미리의 날짜를 증언에 맞춘다.",
+          "en": "Aligns Im Hajun’s termination terms with Heung Miri’s dates in testimony."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "군사 개입과 최소 급수권을 한 줄에 넣으라는 사신을 내려보냈다. 종료 조건과 감사표 날짜를 사본 증언에 맞췄다.",
+      "en": "Rejects an envoy seeking to combine military intervention with minimum water rights. Aligns expiry terms and audit dates with signature testimony."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -773,7 +909,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 서명 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 급수 계약 서명 증인. 서명 사본과 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 구두 추가는 증언에서 뺀다.",
     "일화": "군사 개입 조항을 최소 급수권과 한 줄에 적어 달라는 사신이 증인석까지 올라온다. 탁세온은 사신을 내려보내고, 임하준이 보증한 둘째 협약의 종료 조건을 읽은 다음 흥미리의 감사표와 날짜를 맞춰 서명 사본 옆에 증인 진술을 붙인다.",
     "관계": "임하준이 보증한 둘째 협약의 종료 조건을 증언의 뼈대로 삼고, 흥미리의 감사표와 날짜를 맞춘다. 강민서의 부품 규격 문안을 증인석에서 읽는다.",
@@ -781,7 +916,7 @@
     "공포": "자신의 증언이 배우진의 군사 개입 근거로만 잘리는 것.",
     "개입": "섞인 줄을 분리한 수정본을 올리거나, 군사 개입 조항만 남긴 증언을 유출할 수 있다."
   },
-  "biography": "부품 수명과 호송 조건을 조항 번호로 외우고, 군사 개입 조항을 최소 급수권과 같은 줄에 쓰라는 사신을 증인석에서 내려보낸다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 급수계약 서명 사본·증인 진술 대조\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 급수 계약 서명 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 서명 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 급수 계약 서명 증인. 서명 사본과 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 구두 추가는 증언에서 뺀다.\n\n**일화.** 군사 개입 조항을 최소 급수권과 한 줄에 적어 달라는 사신이 증인석까지 올라온다. 탁세온은 사신을 내려보내고, 임하준이 보증한 둘째 협약의 종료 조건을 읽은 다음 흥미리의 감사표와 날짜를 맞춰 서명 사본 옆에 증인 진술을 붙인다.\n\n**관계.** 임하준이 보증한 둘째 협약의 종료 조건을 증언의 뼈대로 삼고, 흥미리의 감사표와 날짜를 맞춘다. 강민서의 부품 규격 문안을 증인석에서 읽는다.\n\n**야망.** 물 공급 최저선과 계약 종료 조건을 공개 증언으로 남겨 조합원 지지와 군사 개입 근거가 한 장에서 섞이지 않게 한다.\n\n**공포.** 자신의 증언이 배우진의 군사 개입 근거로만 잘리는 것.\n\n**개입.** 섞인 줄을 분리한 수정본을 올리거나, 군사 개입 조항만 남긴 증언을 유출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −20 | 물질 10 | 공동 15 | 원칙 20 | 공개 20 | 자격 25 | 분산 35 | 변혁 20\n- 욕망: 갈망 −10 | 독점 30 | 위험 35 | 과시 0 | 지속 25 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "부품 수명과 호송 조건을 조항 번호로 외우고, 군사 개입 조항을 최소 급수권과 같은 줄에 쓰라는 사신을 증인석에서 내려보낸다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 급수계약 서명 사본·증인 진술 대조\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 급수 계약 서명 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 계약 서명 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 급수 계약 서명 증인. 서명 사본과 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 구두 추가는 증언에서 뺀다.\n\n**일화.** 군사 개입 조항을 최소 급수권과 한 줄에 적어 달라는 사신이 증인석까지 올라온다. 탁세온은 사신을 내려보내고, 임하준이 보증한 둘째 협약의 종료 조건을 읽은 다음 흥미리의 감사표와 날짜를 맞춰 서명 사본 옆에 증인 진술을 붙인다.\n\n**관계.** 임하준이 보증한 둘째 협약의 종료 조건을 증언의 뼈대로 삼고, 흥미리의 감사표와 날짜를 맞춘다. 강민서의 부품 규격 문안을 증인석에서 읽는다.\n\n**야망.** 물 공급 최저선과 계약 종료 조건을 공개 증언으로 남겨 조합원 지지와 군사 개입 근거가 한 장에서 섞이지 않게 한다.\n\n**공포.** 자신의 증언이 배우진의 군사 개입 근거로만 잘리는 것.\n\n**개입.** 섞인 줄을 분리한 수정본을 올리거나, 군사 개입 조항만 남긴 증언을 유출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −20 | 물질 10 | 공동 15 | 원칙 20 | 공개 20 | 자격 25 | 분산 35 | 변혁 20\n- 욕망: 갈망 −10 | 독점 30 | 위험 35 | 과시 0 | 지속 25 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-16"
   ],

@@ -392,6 +392,142 @@
     "id": "K232",
     "personId": "person-0233"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 5,
+        "effective": 5
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 8,
+        "effective": 8
+      },
+      "prowess": {
+        "base": 5,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 10,
+        "effective": 10
+      }
+    },
+    "skills": [
+      {
+        "id": "duty-roster",
+        "name": {
+          "ko": "당직·풍속 기록",
+          "en": "Duty and wind recording"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "duty-roster-disposition",
+        "name": {
+          "ko": "교대 시각 엄수",
+          "en": "Strict shift timing"
+        },
+        "description": {
+          "ko": "교대를 어긴 사람을 이름 대신 시각으로 부르고 강풍 때 창구 축소를 요구한다.",
+          "en": "Calls shift violators by time and asks to reduce windows in strong wind."
+        },
+        "behavior": {
+          "ko": "교대를 어긴 사람을 이름 대신 시각으로 부르고 강풍 때 창구 축소를 요구한다.",
+          "en": "Calls shift violators by time and asks to reduce windows in strong wind."
+        },
+        "stress": {
+          "ko": "당직이 군사 압류의 발판이 될 것을 두려워한다.",
+          "en": "Fears duty becoming a foothold for military seizure."
+        },
+        "relationship": {
+          "ko": "두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.",
+          "en": "Shares maintenance windows with Dubong, receives Yongbok’s patrol routes and guards Choi Jiwoo’s issuance trials."
+        },
+        "effects": []
+      },
+      {
+        "id": "recorded-boundary",
+        "name": {
+          "ko": "강풍의 창구 축소",
+          "en": "Reduces windows in wind"
+        },
+        "description": {
+          "ko": "바람이 심하면 창구를 줄이라고 먼저 말한다.",
+          "en": "First asks to reduce service windows in strong wind."
+        },
+        "behavior": {
+          "ko": "바람이 심하면 창구를 줄이라고 먼저 말한다.",
+          "en": "First asks to reduce service windows in strong wind."
+        },
+        "stress": {
+          "ko": "금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.",
+          "en": "Fears duty becoming a foothold for military seizure."
+        },
+        "relationship": {
+          "ko": "두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.",
+          "en": "Shares maintenance windows with Dubong, receives Yongbok’s patrol routes and guards Choi Jiwoo’s issuance trials."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정전 사흘 유지 경력 뒤 당직명과 풍속을 같은 칠판에 붙인다. 비어 있는 당직과 열린 잠금의 사고는 감독 범위의 한계를 드러낸다.",
+      "en": "After three-day blackout duty, posts names and wind speeds together. A vacant duty and open lock reveal limits of supervision."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S09",
@@ -741,7 +877,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 서기. 직함은 여의도 금고 당직장. 당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다.",
     "일화": "위조 화폐가 잡힌 시각에 당직 한 줄이 비어 있고 금고 잠금이 열려 있었다.",
     "관계": "두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.",
@@ -749,7 +884,7 @@
     "공포": "금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.",
     "개입": "빈 당직을 찾거나, 금고 잠금을 이중 열쇠로 바꿀 수 있다."
   },
-  "biography": "금고 아래를 집처럼 여기고, 당직 교대를 어기는 사람을 이름 대신 시각으로 부른다. 바람이 심하면 창구를 줄이라고 먼저 말한다.\n\n- 생업: 금고 당직 교대·풍속 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 여의도 금고 당직장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 서기. 직함은 여의도 금고 당직장. 당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다.\n\n**일화.** 위조 화폐가 잡힌 시각에 당직 한 줄이 비어 있고 금고 잠금이 열려 있었다.\n\n**관계.** 두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.\n\n**야망.** 여의도 금고를 공용 화폐의 거점 주권으로 남겨 강국 경비병이 금고 발치에 서는 관행을 끊는다.\n\n**공포.** 금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.\n\n**개입.** 빈 당직을 찾거나, 금고 잠금을 이중 열쇠로 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −40 | 물질 −15 | 공동 15 | 원칙 25 | 공개 60 | 자격 5 | 분산 30 | 변혁 10\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼",
+  "biography": "금고 아래를 집처럼 여기고, 당직 교대를 어기는 사람을 이름 대신 시각으로 부른다. 바람이 심하면 창구를 줄이라고 먼저 말한다.\n\n- 생업: 금고 당직 교대·풍속 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 여의도 금고 당직장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.\n\n**관직.** 품계 서기. 직함은 여의도 금고 당직장. 당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다.\n\n**일화.** 위조 화폐가 잡힌 시각에 당직 한 줄이 비어 있고 금고 잠금이 열려 있었다.\n\n**관계.** 두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.\n\n**야망.** 여의도 금고를 공용 화폐의 거점 주권으로 남겨 강국 경비병이 금고 발치에 서는 관행을 끊는다.\n\n**공포.** 금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.\n\n**개입.** 빈 당직을 찾거나, 금고 잠금을 이중 열쇠로 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −40 | 물질 −15 | 공동 15 | 원칙 25 | 공개 60 | 자격 5 | 분산 30 | 변혁 10\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼",
   "sources": [
     "Cast-State-09"
   ],

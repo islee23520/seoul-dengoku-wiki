@@ -287,6 +287,150 @@
     "id": "K163",
     "personId": "person-0164"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 9,
+        "effective": 9
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 2,
+        "effective": 2
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k163-claim-testimony",
+        "name": {
+          "ko": "청구서 증언 대조",
+          "en": "Claim and testimony comparison"
+        },
+        "rating": 60
+      },
+      {
+        "id": "k163-bypass-operation",
+        "name": {
+          "ko": "우회 급수 개통",
+          "en": "Bypass supply opening"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "k163-choice",
+        "name": {
+          "ko": "구두 연장을 거부",
+          "en": "Rejects verbal extensions"
+        },
+        "description": {
+          "ko": "만료일을 손가락으로 세고, 구두로 연장하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.",
+          "en": "She counted expiry days on her fingers and sent down from the witness stand any envoy who proposed a verbal extension. She trusted numbers but not blank clauses."
+        },
+        "behavior": {
+          "ko": "일화. 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수계약 인준 청구 증인 자리의 서명이 장부에 올랐다.",
+          "en": "Anecdote. In 2125, instead of thawing the frozen pipes, she opened a bypass waterway. By this deed the signature of the water contract ratification claim witness post rose into the ledger."
+        },
+        "stress": {
+          "ko": "공포. 자신이 서명한 증언이 집단 단수 조항의 면죄부가 되는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That testimony she signed would become the indulgence of a collective cutoff clause. Changes in behavior or state effects are unconfirmed."
+        },
+        "relationship": {
+          "ko": "관계. 오서율의 공증 청구를 증인석에서 받치고, 한재목의 서부 문안을 읽어 주며, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다.",
+          "en": "Relations. Backed O Seoyul's notarization claim from the witness stand, read Han Jaemok's western draft aloud, and made the expiry marks Im Hajun left behind after his disappearance the frame of her testimony."
+        },
+        "effects": []
+      },
+      {
+        "id": "k163-boundary",
+        "name": {
+          "ko": "업무 경계를 지킴",
+          "en": "Maintains work boundaries"
+        },
+        "description": {
+          "ko": "관직. 품계 주사. 직함은 급수계약 인준 청구 증인. 청구서와 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
+          "en": "Office. Rank: registrar. Title: water contract ratification claim witness. She pasted the claims and witness statements at the same hour and struck copies taken before the stamps dried from her testimony."
+        },
+        "behavior": {
+          "ko": "관직. 품계 주사. 직함은 급수계약 인준 청구 증인. 청구서와 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
+          "en": "Office. Rank: registrar. Title: water contract ratification claim witness. She pasted the claims and witness statements at the same hour and struck copies taken before the stamps dried from her testimony."
+        },
+        "stress": {
+          "ko": "공포. 자신이 서명한 증언이 집단 단수 조항의 면죄부가 되는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That testimony she signed would become the indulgence of a collective cutoff clause. The actual response is not yet recorded."
+        },
+        "relationship": {
+          "ko": "관계. 오서율의 공증 청구를 증인석에서 받치고, 한재목의 서부 문안을 읽어 주며, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다.",
+          "en": "Relations. Backed O Seoyul's notarization claim from the witness stand, read Han Jaemok's western draft aloud, and made the expiry marks Im Hajun left behind after his disappearance the frame of her testimony."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "청구서와 증언의 시각을 맞추고 구두 연장을 배제한다. 우회 급수 경험은 있지만 조약 체결이나 분쟁 해결 결과는 없다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+      "en": "Aligns claims with testimony timing and rejects verbal extensions. Bypass experience is recorded, but treaty authority and dispute resolution are not. Titles and ambitions are not treated as accomplished authority or results."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S06",
@@ -771,7 +915,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 인준 청구 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "무공": "한류공.",
     "관직": "품계 주사. 직함은 급수계약 인준 청구 증인. 청구서와 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수계약 인준 청구 증인 자리의 서명이 장부에 올랐다.",
     "관계": "오서율의 공증 청구를 증인석에서 받치고, 한재목의 서부 문안을 읽어 주며, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다.",
@@ -779,7 +922,7 @@
     "공포": "자신이 서명한 증언이 집단 단수 조항의 면죄부가 되는 것.",
     "개입": "단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다."
   },
-  "biography": "만료일을 손가락으로 세고, 구두로 연장하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 청구서·증언 대조\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 급수계약 인준 청구 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 인준 청구 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n**무공.** 한류공.\n\n**관직.** 품계 주사. 직함은 급수계약 인준 청구 증인. 청구서와 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수계약 인준 청구 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 오서율의 공증 청구를 증인석에서 받치고, 한재목의 서부 문안을 읽어 주며, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다.\n\n**야망.** 세 번째 급수계약의 종료 조건을 공개 증언으로 고정해 강국이 서로 다른 문안으로 도장을 쪼개지 못하게 한다.\n\n**공포.** 자신이 서명한 증언이 집단 단수 조항의 면죄부가 되는 것.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −30 | 물질 −20 | 공동 10 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −20 | 변혁 −45\n- 욕망: 갈망 5 | 독점 40 | 위험 40 | 과시 20 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "만료일을 손가락으로 세고, 구두로 연장하자는 사신을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 조항은 믿지 않는다.\n\n- 생업: 급수계약 청구서·증언 대조\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 급수계약 인준 청구 증인\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수계약 인준 청구 증인 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 급수계약 인준 청구 증인. 청구서와 증인 진술을 같은 시각에 붙이고, 인장이 마르기 전의 사본은 증언에서 뺀다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 급수계약 인준 청구 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 오서율의 공증 청구를 증인석에서 받치고, 한재목의 서부 문안을 읽어 주며, 임하준의 실종 뒤에 남은 만료 표시를 증언의 뼈대로 삼는다.\n\n**야망.** 세 번째 급수계약의 종료 조건을 공개 증언으로 고정해 강국이 서로 다른 문안으로 도장을 쪼개지 못하게 한다.\n\n**공포.** 자신이 서명한 증언이 집단 단수 조항의 면죄부가 되는 것.\n\n**개입.** 단수 조항을 뺀 수정본을 증인석에 올리거나, 증인이 받은 급수 사례를 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −30 | 물질 −20 | 공동 10 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −20 | 변혁 −45\n- 욕망: 갈망 5 | 독점 40 | 위험 40 | 과시 20 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],

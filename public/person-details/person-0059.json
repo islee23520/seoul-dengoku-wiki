@@ -394,6 +394,150 @@
     "id": "K059",
     "personId": "person-0059"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 10,
+        "effective": 10
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 12,
+        "effective": 12
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "certify",
+        "name": {
+          "ko": "인증 조항 검토",
+          "en": "Certification-clause review"
+        },
+        "rating": 65
+      },
+      {
+        "id": "referral",
+        "name": {
+          "ko": "공개 창구 안내",
+          "en": "Public-channel referral"
+        },
+        "rating": 50
+      }
+    ],
+    "traits": [
+      {
+        "id": "no-secret-clauses",
+        "name": {
+          "ko": "비공개 조항 거부",
+          "en": "No Secret Clauses"
+        },
+        "description": {
+          "ko": "최은재는 인증을 흥정 수단이 아니라 공개 조건에 묶인 절차로 본다.",
+          "en": "Choi Eunjae treats certification as a process bound to open terms rather than a bargaining asset."
+        },
+        "behavior": {
+          "ko": "인증 사본을 신청국과 마곡 서고에 함께 남기고 비공개 성능 조항이 있으면 날인을 거부한다.",
+          "en": "She leaves certification copies with both the applicant country and Magok archive and refuses to stamp secret performance clauses."
+        },
+        "stress": {
+          "ko": "폐쇄 연구파가 인증을 보호비로 팔 우려가 있다면 공개 원장과 조건 공개를 더 엄격히 지킬 수 있다.",
+          "en": "If a closed research faction might sell certification as protection payments, she may enforce open ledgers and disclosed terms more strictly."
+        },
+        "relationship": {
+          "ko": "계약의 공개 범위를 넓힐 수 있다면 정호준과 협력하고 정유라의 기술공유 문장을 인증 조항에 반영할 수 있다.",
+          "en": "She may cooperate with Jeong Hojun and incorporate Jeong Yura’s technology-sharing language when this broadens contract transparency."
+        },
+        "effects": []
+      },
+      {
+        "id": "attention-to-on-site-faults",
+        "name": {
+          "ko": "현장 고장 관심",
+          "en": "Attention to On-Site Faults"
+        },
+        "description": {
+          "ko": "최은재의 호기심은 성능표의 빈칸보다 현장에서 고장 난 펌프에 더 오래 머문다.",
+          "en": "Choi Eunjae’s curiosity lingers longer on a broken on-site pump than on gaps in a performance sheet."
+        },
+        "behavior": {
+          "ko": "고장 난 펌프를 오래 살피고 임채원의 필터 검증을 맡는다.",
+          "en": "She spends time examining broken pumps and undertakes filter verification for Im Chaewon."
+        },
+        "stress": {
+          "ko": "인증이 보호비 거래로 변할 우려가 있다면 현장 상태를 외면하는 인증에 더 경계할 수 있다.",
+          "en": "If certification risks becoming a protection-payment trade, she may be more wary of certification that ignores actual site conditions."
+        },
+        "relationship": {
+          "ko": "필터의 실제 성능을 확인해야 한다면 임채원과의 검증 동맹을 활용할 수 있다.",
+          "en": "She may rely on her verification alliance with Im Chaewon when a filter’s actual performance needs checking."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "공개 계약 범위를 설계하고 인증 사본을 양쪽에 남긴다. 고장 펌프를 살피는 호기심은 반영하나 수리 숙련은 부여하지 않는다.",
+      "en": "He designs disclosure boundaries and retains certification copies on both sides. Interest in broken pumps supports curiosity, not repair skill."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S03",
@@ -758,7 +902,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 대합실 당직에서 자랐다. 기술인증 평의원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 대리. 직함은 기술인증 평의원. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 도장을 찍지 않는다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 기술인증 평의원 자리의 서명이 장부에 올랐다.",
     "관계": "정호준과 공개 계약 범위를 설계하는 사제에 가깝고, 서남 방호 대표 임채원의 필터 검증을 동맹으로 맡으며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.",
@@ -766,7 +909,7 @@
     "공포": "인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 기술자가 다시 인질 시세표에 오르는 것.",
     "개입": "재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 설득·폭로할 수 있다."
   },
-  "biography": "호기심이 많으나 인증 도장을 흥정 밑천으로 쓰는 사람을 경멸한다. 성능표의 빈칸보다 현장의 고장난 펌프를 더 오래 본다.\n\n- 소속: 태욱그룹\n- 생업: 기술 인증·검증\n- 품계: 대리\n- 직함: 기술인증 평의원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 기술인증 평의원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 대리. 직함은 기술인증 평의원. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 도장을 찍지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 기술인증 평의원 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준과 공개 계약 범위를 설계하는 사제에 가깝고, 서남 방호 대표 임채원의 필터 검증을 동맹으로 맡으며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증을 국가 소유가 아닌 공개 원장으로 옮겨 공동기술원장의 실무 창구가 된다.\n\n**공포.** 인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 기술자가 다시 인질 시세표에 오르는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 설득·폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −40 | 물질 10 | 공동 5 | 원칙 50 | 공개 50 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 35 | 독점 −15 | 위험 0 | 과시 −5 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "호기심이 많으나 인증 도장을 흥정 밑천으로 쓰는 사람을 경멸한다. 성능표의 빈칸보다 현장의 고장난 펌프를 더 오래 본다.\n\n- 소속: 태욱그룹\n- 생업: 기술 인증·검증\n- 품계: 대리\n- 직함: 기술인증 평의원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 기술인증 평의원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 기술인증 평의원. 인증 사본을 신청국과 마곡 서고에 동시에 남기고, 비공개 성능 조항이 있으면 도장을 찍지 않는다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 기술인증 평의원 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준과 공개 계약 범위를 설계하는 사제에 가깝고, 서남 방호 대표 임채원의 필터 검증을 동맹으로 맡으며, 정유라의 기술공유 문장을 인증 조항에 끌어들인다.\n\n**야망.** 의약·통신·펌프 인증을 국가 소유가 아닌 공개 원장으로 옮겨 공동기술원장의 실무 창구가 된다.\n\n**공포.** 인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 기술자가 다시 인질 시세표에 오르는 것.\n\n**개입.** 재현 실험의 원본 기록을 가져와 인증을 복구하거나, 비공개 조항을 숨긴 평의원을 설득·폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −40 | 물질 10 | 공동 5 | 원칙 50 | 공개 50 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 35 | 독점 −15 | 위험 0 | 과시 −5 | 지속 −15 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-03"
   ],

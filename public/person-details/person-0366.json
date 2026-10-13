@@ -392,6 +392,142 @@
     "id": "K365",
     "personId": "person-0366"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 8,
+        "effective": 8
+      },
+      "strategy": {
+        "base": 9,
+        "effective": 9
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 12,
+        "effective": 12
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "emergency-power-allocation",
+        "name": {
+          "ko": "비상 배전",
+          "en": "Emergency power allocation"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "펌프와 의무소 우선",
+          "en": "Pumps and care first"
+        },
+        "description": {
+          "ko": "정전 때 펌프와 의무소 전력을 남기고 능선 조명을 껐다. 지휘에 복종하되 은폐 배전은 거부하는 긴장을 보존한다.",
+          "en": "An outage left power for pumps and care while ridge lights went dark. Obedience to command coexists with refusal of concealed allocation."
+        },
+        "behavior": {
+          "ko": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 펌프보다 능선 조명에 전력을 돌리라는 압박을 모욕으로 여긴다.",
+          "en": "Sensitive to the smell of fuel, he hated verbal power routing. He took the pressure to divert power from the purification pumps to the ridge lighting as an insult."
+        },
+        "stress": {
+          "ko": "공포. 연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.",
+          "en": "Fear. That on a night when the fuel ran dry the residual pressure would fall, and the Amsa protection zone would fill the gap."
+        },
+        "relationship": {
+          "ko": "관계. 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Matched output to Seon Solwoo's pumps and kept Yeong Hanmoe's clinic power on the same log. He had obeyed Go Seojun's wartime command but refused concealed power routing."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.",
+          "en": "Office. Rank: company commander. Title: Guui pump-room emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Seon Solwoo, and below minimum output he cut the beacon power even under the defense chief's urging."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.",
+          "en": "Recorded duty and limits: Office. Rank: company commander. Title: Guui pump-room emergency generator operator. Every shift he sealed the fuel remainder and output logs and sent them to Seon Solwoo, and below minimum output he cut the beacon power even under the defense chief's urging."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That on a night when the fuel ran dry the residual pressure would fall, and the Amsa protection zone would fill the gap."
+        },
+        "relationship": {
+          "ko": "관계. 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
+          "en": "Relations. Matched output to Seon Solwoo's pumps and kept Yeong Hanmoe's clinic power on the same log. He had obeyed Go Seojun's wartime command but refused concealed power routing."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "정전 때 펌프와 의무소 전력을 남기고 능선 조명을 껐다. 지휘에 복종하되 은폐 배전은 거부하는 긴장을 보존한다.",
+      "en": "An outage left power for pumps and care while ridge lights went dark. Obedience to command coexists with refusal of concealed allocation."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S14",
@@ -815,7 +951,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.",
     "일화": "상수관 파손과 정전이 겹치자 판초담은 비상 발전을 펌프와 의무소에 잠그고 능선 조명을 껐다.",
     "관계": "선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
@@ -823,7 +958,7 @@
     "공포": "연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 펌프보다 능선 조명에 전력을 돌리라는 압박을 모욕으로 여긴다.\n\n- 생업: 펌프실 연료 잔량·출력 일지 봉인\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 구의 펌프실 비상발전 운전장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.\n\n**일화.** 상수관 파손과 정전이 겹치자 판초담은 비상 발전을 펌프와 의무소에 잠그고 능선 조명을 껐다.\n\n**관계.** 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 펌프실과 의무소 전력을 하나의 공개 배전망으로 묶어 제한 급수의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 40 | 물질 15 | 공동 20 | 원칙 5 | 공개 −15 | 자격 5 | 분산 −20 | 변혁 −10\n- 욕망: 갈망 25 | 독점 15 | 위험 40 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 정수 펌프보다 능선 조명에 전력을 돌리라는 압박을 모욕으로 여긴다.\n\n- 생업: 펌프실 연료 잔량·출력 일지 봉인\n- 소속: 구의수비대\n- 품계: 현장책임자\n- 직함: 구의수비대 구의 펌프실 비상발전 운전장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 구의수비대 구의 펌프실 비상발전 운전장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 현장책임자. 직함은 구의수비대 구의 펌프실 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 선솔우에게 보내고, 최저 출력 이하면 수비대장의 독촉이 있어도 봉화 배전을 끊는다.\n\n**일화.** 상수관 파손과 정전이 겹치자 판초담은 비상 발전을 펌프와 의무소에 잠그고 능선 조명을 껐다.\n\n**관계.** 선솔우의 펌프에 출력을 맞추고, 영한뫼의 의무소 전력을 같은 일지에 남긴다. 고서준의 전시 지휘에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 펌프실과 의무소 전력을 하나의 공개 배전망으로 묶어 제한 급수의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −10 | 무력 40 | 물질 15 | 공동 20 | 원칙 5 | 공개 −15 | 자격 5 | 분산 −20 | 변혁 −10\n- 욕망: 갈망 25 | 독점 15 | 위험 40 | 과시 −20 | 지속 −15 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-14"
   ],

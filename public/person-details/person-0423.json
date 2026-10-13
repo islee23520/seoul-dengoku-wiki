@@ -296,6 +296,142 @@
     "id": "K422",
     "personId": "person-0423"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 4,
+        "effective": 4
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 6,
+        "effective": 6
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 12,
+        "effective": 12
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 6,
+        "effective": 6
+      }
+    },
+    "skills": [
+      {
+        "id": "contract-date-check",
+        "name": {
+          "ko": "계약 날짜 대조",
+          "en": "Contract date check"
+        },
+        "rating": 60
+      }
+    ],
+    "traits": [
+      {
+        "id": "evidenced-choice",
+        "name": {
+          "ko": "유효기간을 먼저 확인",
+          "en": "Checks validity first"
+        },
+        "description": {
+          "ko": "계약 사본에서 지워진 날짜를 찾고 열람을 잠갔다. 도장 없는 사본은 반출하지 않고 교차검증으로 감사 서명을 남기려 한다. 확인된 행동 범위를 넘는 권한과 성과는 부여하지 않는다.",
+          "en": "Finds erased dates in a contract copy and locks access. Withholds unstamped copies from removal and seeks cross-checked audit signatures. No authority or achievement beyond these actions is granted."
+        },
+        "behavior": {
+          "ko": "확인된 선택에서는 유효기간을 먼저 확인을 드러낸다. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+          "en": "The recorded choice shows this disposition within its context; it is not established for every situation."
+        },
+        "stress": {
+          "ko": "교대가 막히거나 기록이 사라지면 원본과 인계를 재확인할 수 있다.",
+          "en": "May recheck originals and handovers when shifts are blocked or records disappear."
+        },
+        "relationship": {
+          "ko": "다음 당직에게 열쇠와 기록을 넘기며 파벌의 인계 방해를 경계한다.",
+          "en": "Hands keys and records to the next duty worker and watches for factional obstruction."
+        },
+        "effects": []
+      },
+      {
+        "id": "handover-continuity",
+        "name": {
+          "ko": "기록 단절 경계",
+          "en": "Concern for record continuity"
+        },
+        "description": {
+          "ko": "시청역 공동교섭의 감사 서명을 감사관 한 명이 아니라 서기 교차검증으로 바꾼다.",
+          "en": "Seeks continuity of the specific records entrusted to this person, rather than new authority."
+        },
+        "behavior": {
+          "ko": "맡은 기록과 서명의 연결을 확인하려 한다.",
+          "en": "Seeks to check the continuity of assigned records and signatures."
+        },
+        "stress": {
+          "ko": "만료된 조항이 살아 있는 것처럼 다시 찍혀 나가는 것.",
+          "en": "Loss of the assigned records or a blocked handover may heighten concern about accountability."
+        },
+        "relationship": {
+          "ko": "다음 당직에게 열쇠와 기록을 넘기며 파벌의 인계 방해를 경계한다.",
+          "en": "Hands keys and records to the next duty worker and watches for factional obstruction."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "계약 사본에서 지워진 날짜를 찾고 열람을 잠갔다. 도장 없는 사본은 반출하지 않고 교차검증으로 감사 서명을 남기려 한다. 확인된 행동 범위를 넘는 권한과 성과는 부여하지 않는다.",
+      "en": "Finds erased dates in a contract copy and locks access. Withholds unstamped copies from removal and seeks cross-checked audit signatures. No authority or achievement beyond these actions is granted."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S16",
@@ -655,7 +791,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 서울역 등기소에서 자랐다. 계약 감사 서기 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 계약 감사 서기. 도장이 없는 사본은 열람만 허용하고 반출은 막는다.",
     "일화": "세 번째 급수계약 사본에서 날짜가 지워진 칸을 발견하고 열람을 잠갔다.",
     "관계": "정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.",
@@ -663,7 +798,7 @@
     "공포": "만료된 조항이 살아 있는 것처럼 다시 찍혀 나가는 것.",
     "개입": "지워진 날짜의 원본을 찾거나, 사본 유통을 막을 수 있다."
   },
-  "biography": "계약서의 난외를 먼저 읽고, 본문 숫자는 소리 내어 확인한다. 큰 합의보다 한 줄의 유효기간을 지킨다.\n\n- 생업: 계약 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 계약 감사 서기\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 계약 감사 서기 자리는 이중 장부 한 줄 삭제로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 계약 감사 서기. 도장이 없는 사본은 열람만 허용하고 반출은 막는다.\n\n**일화.** 세 번째 급수계약 사본에서 날짜가 지워진 칸을 발견하고 열람을 잠갔다.\n\n**관계.** 정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.\n\n**야망.** 시청역 공동교섭의 감사 서명을 감사관 한 명이 아니라 서기 교차검증으로 바꾼다.\n\n**공포.** 만료된 조항이 살아 있는 것처럼 다시 찍혀 나가는 것.\n\n**개입.** 지워진 날짜의 원본을 찾거나, 사본 유통을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 30 | 무력 −25 | 물질 5 | 공동 5 | 원칙 50 | 공개 40 | 자격 15 | 분산 30 | 변혁 20\n- 욕망: 갈망 30 | 독점 −5 | 위험 −25 | 과시 −50 | 지속 10 | 지향 양성 | 결합 비독점\n:::",
+  "biography": "계약서의 난외를 먼저 읽고, 본문 숫자는 소리 내어 확인한다. 큰 합의보다 한 줄의 유효기간을 지킨다.\n\n- 생업: 계약 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 계약 감사 서기\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 계약 감사 서기 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 시청역 조합 작업장에서 맡은 업무는 조합원 전원의 위원장 직접선거와 파벌 간 공개 표결에 따른다. 품계 조합원. 직함은 계약 감사 서기. 도장이 없는 사본은 열람만 허용하고 반출은 막는다.\n\n**일화.** 세 번째 급수계약 사본에서 날짜가 지워진 칸을 발견하고 열람을 잠갔다.\n\n**관계.** 정유라의 감사 방향과 맞되, 서고 열쇠는 따로 둔다.\n\n**야망.** 시청역 공동교섭의 감사 서명을 감사관 한 명이 아니라 서기 교차검증으로 바꾼다.\n\n**공포.** 만료된 조항이 살아 있는 것처럼 다시 찍혀 나가는 것.\n\n**개입.** 지워진 날짜의 원본을 찾거나, 사본 유통을 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 30 | 무력 −25 | 물질 5 | 공동 5 | 원칙 50 | 공개 40 | 자격 15 | 분산 30 | 변혁 20\n- 욕망: 갈망 30 | 독점 −5 | 위험 −25 | 과시 −50 | 지속 10 | 지향 양성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-16"
   ],

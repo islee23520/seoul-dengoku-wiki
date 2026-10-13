@@ -394,6 +394,142 @@
     "id": "K330",
     "personId": "person-0331"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 7,
+        "effective": 7
+      },
+      "strategy": {
+        "base": 7,
+        "effective": 7
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 10,
+        "effective": 10
+      },
+      "insight": {
+        "base": 10,
+        "effective": 10
+      },
+      "learning": {
+        "base": 9,
+        "effective": 9
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 7,
+        "effective": 7
+      }
+    },
+    "skills": [
+      {
+        "id": "bed-order-administration",
+        "name": {
+          "ko": "병상 순서 집행",
+          "en": "Bed order administration"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "stated-priority",
+        "name": {
+          "ko": "우선 치료 압박을 멈춘다",
+          "en": "Stops priority pressure"
+        },
+        "description": {
+          "ko": "담당 전문의의 승인 전 우선 요청을 막고 침상 순서를 집행한다. 선반 약의 발견이 감별 성공을 뜻하지 않는다.",
+          "en": "Priority requests wait for the supervising clinician and bed order is enforced. Discovery of medicine on a shelf does not establish successful identification."
+        },
+        "behavior": {
+          "ko": "손놀림은 조용하나 치료 순서를 바꾸라는 쪽지를 받으면 침상을 잠근다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.",
+          "en": "Quiet of hand, he locked the sickbeds whenever he received a note to change the care order. An enemy's wound stood in the same line before the severity table."
+        },
+        "stress": {
+          "ko": "공포. 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.",
+          "en": "Fear. That the care room would become a war-booty sorting hall and the severity table he stamped would become scrap paper in a season."
+        },
+        "relationship": {
+          "ko": "관계. 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.",
+          "en": "Relations. An apprentice executing the sickbed order as Eun Chaeyun's apprentice, he shared sickbeds with Bang Misan's clinic. Put Ryu Eunbi's care principles at the top of the duty ledger."
+        },
+        "effects": []
+      },
+      {
+        "id": "bounded-duty",
+        "name": {
+          "ko": "자기 당직의 경계",
+          "en": "Boundaries of personal duty"
+        },
+        "description": {
+          "ko": "관직. 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.",
+          "en": "Office. Rank: member. Title: severity ward medic, duty officer of Eun Chaeyun. He pasted the severity table and contribution labor side by side and accepted no great-power officer's priority care note before the guild posted it."
+        },
+        "behavior": {
+          "ko": "확인된 당직 수행과 제한: 관직. 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.",
+          "en": "Recorded duty and limits: Office. Rank: member. Title: severity ward medic, duty officer of Eun Chaeyun. He pasted the severity table and contribution labor side by side and accepted no great-power officer's priority care note before the guild posted it."
+        },
+        "stress": {
+          "ko": "이 경계가 흔들릴 때 카드에 명시된 우려: 공포. 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.",
+          "en": "The card states this concern when those boundaries fail: Fear. That the care room would become a war-booty sorting hall and the severity table he stamped would become scrap paper in a season."
+        },
+        "relationship": {
+          "ko": "관계. 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.",
+          "en": "Relations. An apprentice executing the sickbed order as Eun Chaeyun's apprentice, he shared sickbeds with Bang Misan's clinic. Put Ryu Eunbi's care principles at the top of the duty ledger."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "담당 전문의의 승인 전 우선 요청을 막고 침상 순서를 집행한다. 선반 약의 발견이 감별 성공을 뜻하지 않는다.",
+      "en": "Priority requests wait for the supervising clinician and bed order is enforced. Discovery of medicine on a shelf does not establish successful identification."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S13",
@@ -842,7 +978,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 제기동 의무소에서 자랐다. 중증도 진료 수련의 자리는 가짜 약 봉인으로 열렸다.",
-    "무공": "없음. 생업만.",
     "관직": "품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.",
     "일화": "가짜 해열제가 북한산보국문 어린이에게 쓰인 뒤, 같은 캡슐 모양의 약이 진료소 선반에서 한 통 더 나왔다.",
     "관계": "은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.",
@@ -850,7 +985,7 @@
     "공포": "진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.",
     "개입": "선반 약을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다."
   },
-  "biography": "손놀림은 조용하나 치료 순서를 바꾸라는 쪽지를 받으면 침상을 잠근다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 중증도 표·진료 소견 게시\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 중증도 진료 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 중증도 진료 수련의 자리는 가짜 약 봉인으로 열렸다.\n**무공.** 없음. 생업만.\n\n**관직.** 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.\n\n**일화.** 가짜 해열제가 북한산보국문 어린이에게 쓰인 뒤, 같은 캡슐 모양의 약이 진료소 선반에서 한 통 더 나왔다.\n\n**관계.** 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.\n\n**야망.** 적군 부상자도 중증도만으로 받는 진료 기록을 의료 지휘부 헌장 부칙의 현장 원본으로 남긴다.\n\n**공포.** 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.\n\n**개입.** 선반 약을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 40 | 무력 −60 | 물질 −15 | 공동 15 | 원칙 60 | 공개 30 | 자격 30 | 분산 15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 −40 | 위험 −10 | 과시 5 | 지속 40 | 지향 양성 | 결합 없음\n:::",
+  "biography": "손놀림은 조용하나 치료 순서를 바꾸라는 쪽지를 받으면 침상을 잠근다. 적의 부상도 중증도 표 앞에서는 같은 줄로 본다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 중증도 표·진료 소견 게시\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 중증도 진료 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 중증도 진료 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 중증도 진료 수련의. 중증도 표와 진료 소견을 나란히 붙이고, 강국 장교의 우선 치료 쪽지는 담당 전문의의 승인 전까지 받지 않는다.\n\n**일화.** 가짜 해열제가 북한산보국문 어린이에게 쓰인 뒤, 같은 캡슐 모양의 약이 진료소 선반에서 한 통 더 나왔다.\n\n**관계.** 은채윤의 도제로서 침상 순서를 집행하는 사제이고, 방미산의 진료소 병상을 나눈다. 류은비의 치료 원칙을 당직 원장 맨 위에 둔다.\n\n**야망.** 적군 부상자도 중증도만으로 받는 진료 기록을 의료 지휘부 헌장 부칙의 현장 원본으로 남긴다.\n\n**공포.** 진료실이 전리품 분류장이 되어 자신이 찍은 중증도 표가 한 계절에 휴지가 되는 것.\n\n**개입.** 선반 약을 대조하거나, 적군 부상자를 숨겨 헌장 위반 누명을 씌울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 40 | 무력 −60 | 물질 −15 | 공동 15 | 원칙 60 | 공개 30 | 자격 30 | 분산 15 | 변혁 −15\n- 욕망: 갈망 0 | 독점 −40 | 위험 −10 | 과시 5 | 지속 40 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

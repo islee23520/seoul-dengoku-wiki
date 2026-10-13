@@ -287,6 +287,150 @@
     "id": "K092",
     "personId": "person-0093"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 9,
+        "effective": 9
+      },
+      "strategy": {
+        "base": 8,
+        "effective": 8
+      },
+      "negotiation": {
+        "base": 7,
+        "effective": 7
+      },
+      "management": {
+        "base": 11,
+        "effective": 11
+      },
+      "insight": {
+        "base": 11,
+        "effective": 11
+      },
+      "learning": {
+        "base": 10,
+        "effective": 10
+      },
+      "prowess": {
+        "base": 3,
+        "effective": 3
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "packing",
+        "name": {
+          "ko": "패킹 교체·누수 판단",
+          "en": "Packing replacement and leak assessment"
+        },
+        "rating": 60
+      },
+      {
+        "id": "parts",
+        "name": {
+          "ko": "불량 부품 출고 검사",
+          "en": "Defective-parts dispatch inspection"
+        },
+        "rating": 55
+      }
+    ],
+    "traits": [
+      {
+        "id": "leak-sites-first",
+        "name": {
+          "ko": "누수 현장 우선",
+          "en": "Leak Sites First"
+        },
+        "description": {
+          "ko": "최나래는 도면 검토보다 현장의 누수 소리와 골목 급수 문제를 먼저 살핀다.",
+          "en": "Choe Narae prioritizes on-site leak sounds and neighborhood water problems over drawing review."
+        },
+        "behavior": {
+          "ko": "누수 현장으로 달려가 공개 설계를 시험하고 장민재의 골목 저수조 수리를 최우선에 둔다.",
+          "en": "Choe rushes to leaks, tests open designs on site, and gives first priority to Jang Minjae's neighborhood reservoir repairs."
+        },
+        "stress": {
+          "ko": "정비조가 민병으로만 차출될 우려가 커지면 골목 펌프 수리를 본래 임무로 더 강조할 수 있다.",
+          "en": "If the maintenance team risks being called out only as militia, Choe may stress neighborhood pump repair more strongly as its core task."
+        },
+        "relationship": {
+          "ko": "임초원의 공개 설계와 장민재의 급수 요구를 현장 시험과 수리 우선순위로 연결할 수 있다.",
+          "en": "Choe may connect Im Chowon's open designs and Jang Minjae's supply demands through field testing and repair priorities."
+        },
+        "effects": []
+      },
+      {
+        "id": "guard-against-militarized-maintenance",
+        "name": {
+          "ko": "정비조 군사화 경계",
+          "en": "Guard Against Militarized Maintenance"
+        },
+        "description": {
+          "ko": "최나래는 무장 호위가 정비 인원으로 섞여 정비조의 역할을 바꾸는 일을 경계한다.",
+          "en": "Choe Narae is wary of armed escorts being inserted as maintenance personnel and changing the team's role."
+        },
+        "behavior": {
+          "ko": "출동 명부에 세 대표의 서명을 요구하고 야간 무장 차출은 공구 반납 뒤에만 따른다.",
+          "en": "Choe requires three representatives' signatures on deployment rosters and follows armed night call-ups only after tool return."
+        },
+        "stress": {
+          "ko": "공구 대신 차단봉을 들게 될 위험이 커지면 정비 출동과 무장 차출의 절차를 더 분명히 나눌 수 있다.",
+          "en": "If the team risks carrying barriers instead of tools, Choe may separate maintenance deployments from armed call-ups more clearly."
+        },
+        "relationship": {
+          "ko": "김보람과 순찰을 나누더라도 정비 인원을 무장 호위로 취급하는 요구에는 경계를 세울 수 있다.",
+          "en": "Even while sharing patrol duties with Kim Boram, Choe may set limits against treating maintenance workers as armed escorts."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "누수에 출동하고 공개 설계를 현장에서 시험하며 불량 부품을 돌려보냈다. 정비 조정과 실행이 중심이며 민병 경력을 부여하지 않는다.",
+      "en": "She responds to leaks, tests open designs in the field, and returns faulty parts. Repair coordination and execution are central, not a militia career."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -715,7 +859,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 신정 차량기지에서 자랐다. 공방 기동정비조장 자리는 탈선 직전 결함 보고로 열렸다.",
-    "무공": "단철공.",
     "관직": "품계 교사. 직함은 공방 기동정비조장. 출동 명부에 공방·수비·시민 대표의 세 서명을 요구하고, 야간 무장 차출은 공구 반납이 끝난 뒤에만 따른다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 공방 기동정비조장 자리의 서명이 장부에 올랐다.",
     "관계": "김보람과 교량 순찰을 맹세로 나누고, 임초원의 공개 설계를 현장에서 시험하는 사제에 가까우며, 장민재의 골목 저수조 수리를 최우선으로 둔다.",
@@ -723,7 +866,7 @@
     "공포": "정비조가 민병으로만 불려 나가 공구 대신 차단봉을 들게 되는 것.",
     "개입": "센서 부품을 호송해 출동을 성사시키거나, 민병 차출 밀지를 폭로해 정비조를 공구 쪽으로 되돌릴 수 있다."
   },
-  "biography": "낙관적이고 현장으로 달려가며, 도면보다 먼저 누수 소리를 듣는다. 무장 호위를 정비 인원으로 끼워 넣는 명령을 싫어한다.\n\n- 소속: 명부교회\n- 생업: 기동 정비·출동 명부 관리\n- 품계: 교사\n- 직함: 공방 기동정비조장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 공방 기동정비조장 자리는 탈선 직전 결함 보고로 열렸다.\n**무공.** 단철공.\n\n**관직.** 품계 교사. 직함은 공방 기동정비조장. 출동 명부에 공방·수비·시민 대표의 세 서명을 요구하고, 야간 무장 차출은 공구 반납이 끝난 뒤에만 따른다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 공방 기동정비조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람과 교량 순찰을 맹세로 나누고, 임초원의 공개 설계를 현장에서 시험하는 사제에 가까우며, 장민재의 골목 저수조 수리를 최우선으로 둔다.\n\n**야망.** 기동 정비조를 물·부품 공동규격의 순회 설치반으로 키워, 어느 후계자가 이기든 골목 펌프가 멈추지 않게 한다.\n\n**공포.** 정비조가 민병으로만 불려 나가 공구 대신 차단봉을 들게 되는 것.\n\n**개입.** 센서 부품을 호송해 출동을 성사시키거나, 민병 차출 밀지를 폭로해 정비조를 공구 쪽으로 되돌릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 −20 | 물질 35 | 공동 20 | 원칙 20 | 공개 −15 | 자격 40 | 분산 15 | 변혁 5\n- 욕망: 갈망 40 | 독점 −35 | 위험 30 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "낙관적이고 현장으로 달려가며, 도면보다 먼저 누수 소리를 듣는다. 무장 호위를 정비 인원으로 끼워 넣는 명령을 싫어한다.\n\n- 소속: 명부교회\n- 생업: 기동 정비·출동 명부 관리\n- 품계: 교사\n- 직함: 공방 기동정비조장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 공방 기동정비조장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 공방 기동정비조장. 출동 명부에 공방·수비·시민 대표의 세 서명을 요구하고, 야간 무장 차출은 공구 반납이 끝난 뒤에만 따른다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 공방 기동정비조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람과 교량 순찰을 맹세로 나누고, 임초원의 공개 설계를 현장에서 시험하는 사제에 가까우며, 장민재의 골목 저수조 수리를 최우선으로 둔다.\n\n**야망.** 기동 정비조를 물·부품 공동규격의 순회 설치반으로 키워, 어느 후계자가 이기든 골목 펌프가 멈추지 않게 한다.\n\n**공포.** 정비조가 민병으로만 불려 나가 공구 대신 차단봉을 들게 되는 것.\n\n**개입.** 센서 부품을 호송해 출동을 성사시키거나, 민병 차출 밀지를 폭로해 정비조를 공구 쪽으로 되돌릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 −20 | 물질 35 | 공동 20 | 원칙 20 | 공개 −15 | 자격 40 | 분산 15 | 변혁 5\n- 욕망: 갈망 40 | 독점 −35 | 위험 30 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

@@ -287,6 +287,150 @@
     "id": "K667",
     "personId": "person-0667"
   },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 5,
+        "effective": 5
+      },
+      "strategy": {
+        "base": 5,
+        "effective": 5
+      },
+      "negotiation": {
+        "base": 4,
+        "effective": 4
+      },
+      "management": {
+        "base": 8,
+        "effective": 8
+      },
+      "insight": {
+        "base": 8,
+        "effective": 8
+      },
+      "learning": {
+        "base": 6,
+        "effective": 6
+      },
+      "prowess": {
+        "base": 8,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 9,
+        "effective": 9
+      }
+    },
+    "skills": [
+      {
+        "id": "guard",
+        "name": {
+          "ko": "출입 저지·암호패 교체",
+          "en": "Entry control and pass replacement"
+        },
+        "rating": 55
+      },
+      {
+        "id": "handover",
+        "name": {
+          "ko": "기록·열쇠 인수인계",
+          "en": "Record and key handover"
+        },
+        "rating": 40
+      }
+    ],
+    "traits": [
+      {
+        "id": "act-on-detected-crossings",
+        "name": {
+          "ko": "도하 적발 실행",
+          "en": "Act on Detected Crossings"
+        },
+        "description": {
+          "ko": "정강은은 야간 무단 도하를 발견하는 데 그치지 않고 직접 저지하는 성향을 보인다.",
+          "en": "Jeong Gangeun shows a tendency to act directly against an unauthorized night crossing rather than merely note it."
+        },
+        "behavior": {
+          "ko": "야간 무단 도하자를 붙잡고 경비 암호패를 바꿨다.",
+          "en": "She caught an unauthorized night crosser and changed the guard code tokens."
+        },
+        "stress": {
+          "ko": "당직 공백이 통행 종속으로 이어질까 우려되면 적발한 무단 도하에 직접 대응하려 할 수 있다.",
+          "en": "If a duty gap could lead to dependent passage, she may favor direct action on a detected unauthorized crossing."
+        },
+        "relationship": {
+          "ko": "선배 당직에게는 직접 저지한 일과 뒤따른 암호패 변경을 함께 넘기려 할 수 있다.",
+          "en": "She may hand over both the direct interception and the subsequent code-token change to the senior duty holder."
+        },
+        "effects": []
+      },
+      {
+        "id": "change-guard-code-tokens",
+        "name": {
+          "ko": "경비 암호패 변경",
+          "en": "Change Guard Code Tokens"
+        },
+        "description": {
+          "ko": "정강은은 무단 도하 저지 뒤 경비 확인 수단을 바꾸는 후속 조치 성향을 보인다.",
+          "en": "Jeong Gangeun shows a follow-through disposition by changing guard verification tokens after stopping an unauthorized crossing."
+        },
+        "behavior": {
+          "ko": "야간 도하자를 붙잡은 사건에서 경비 암호패를 변경했다.",
+          "en": "In the night-crossing incident, she changed the guard code tokens after catching the crosser."
+        },
+        "stress": {
+          "ko": "당직의 빈틈이 통행을 위태롭게 할까 우려되면 저지 후 암호패 변경 같은 후속 조치를 중시할 수 있다.",
+          "en": "If a duty gap threatens passage, she may place weight on follow-up measures such as changing code tokens after interception."
+        },
+        "relationship": {
+          "ko": "선배 당직과 인계할 때는 암호패 변경 사실이 누락되지 않도록 주의할 수 있다.",
+          "en": "During handover, she may take care that the senior duty holder is informed of the code-token change."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "야간 침입자를 붙잡고 암호패를 변경했다. 실무 경비에 한정하고 넓은 작전 설계는 부여하지 않았다.",
+      "en": "He restrained a night intruder and changed passes. Practical guard work is supported, not broad operational planning."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
+  },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
     "currentState": "S04",
@@ -710,7 +854,6 @@
   },
   "sections": {
     "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "무공": "수벽술.",
     "관직": "품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -718,7 +861,7 @@
     "공포": "유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n**무공.** 수벽술.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 0 | 공개 −10 | 자격 25 | 분산 30 | 변혁 0\n- 욕망: 갈망 40 | 독점 −35 | 위험 40 | 과시 5 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 경비·순찰\n- 품계: 교사\n- 직함: 유치선 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 유치선 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 유치선 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 유치선 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 유치선 순찰대 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 유치선 순찰대 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −10 | 물질 30 | 공동 30 | 원칙 0 | 공개 −10 | 자격 25 | 분산 30 | 변혁 0\n- 욕망: 갈망 40 | 독점 −35 | 위험 40 | 과시 5 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

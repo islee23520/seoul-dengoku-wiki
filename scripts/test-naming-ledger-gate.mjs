@@ -4,36 +4,33 @@ import test from 'node:test'
 
 const ledger = JSON.parse(await readFile(new URL('../lore/editorial/Naming-Ledger.json', import.meta.url), 'utf8'))
 
-test('martial schools carry formal names and hanja', () => {
-  const schools = ledger.martialSchools || []
-  assert.ok(schools.length >= 38, `expected at least 38 schools, got ${schools.length}`)
-  for (const school of schools) {
-    assert.ok(school.formalName, 'formalName required')
-    assert.ok(school.hanja, `hanja required for ${school.formalName}`)
-  }
-  const names = schools.map(s => s.formalName)
-  assert.equal(new Set(names).size, names.length, 'school names must be unique')
+test('live naming categories have unique state identities and nonempty office and title names', () => {
+  assert.equal(ledger.states.length, 16)
+  assert.equal(new Set(ledger.states.map(({ id }) => id)).size, 16)
+  assert.equal(new Set(ledger.states.map(({ name }) => name)).size, 16)
+  assert.ok(ledger.offices.every(({ state, tiers }) => state && tiers.length && tiers.every(Boolean)))
+  assert.ok(ledger.seriesTitles.every(({ form }) => form))
 })
 
-test('retired public forms do not reappear as formal names or aliases', () => {
+test('retired public forms do not reappear in live naming categories', () => {
   const retired = ledger.retiredPublicForms || []
-  const names = new Set()
-  for (const s of ledger.martialSchools || []) {
-    names.add(s.formalName)
-    if (s.alias) names.add(s.alias)
-  }
+  const names = new Set([
+    ...ledger.states.map(({ name }) => name),
+    ...ledger.offices.flatMap(({ state, tiers }) => [state, ...tiers]),
+    ...ledger.seriesTitles.map(({ form }) => form),
+  ])
   for (const r of retired) {
     const form = typeof r === 'string' ? r : r.form || r.name
-    assert.ok(!names.has(form), `retired form "${form}" must not appear as a school name`)
+    assert.ok(!names.has(form), `retired form "${form}" must not appear as a live name`)
   }
 })
 
 test('retired branch preserves private provenance outside the active name registry', () => {
-  const mb = ledger.martialBranch
-  assert.ok(mb, 'martialBranch entry required')
-  assert.ok(mb.name, 'martialBranch name required')
+  const mb = ledger.historicalMartialBranch
+  assert.ok(mb.name)
   assert.equal(mb.rightsStatus, 'retired')
   assert.equal(mb.formalName, null)
   assert.match(mb.source, /^lore\/editorial\/[^#]+\.json#\//u)
-  assert.ok(!ledger.martialSchools.some(({ formalName }) => formalName === mb.name))
+  assert.ok(!Object.hasOwn(ledger, 'martialSchools'))
+  assert.ok(!Object.hasOwn(ledger, 'martialBranch'))
 })

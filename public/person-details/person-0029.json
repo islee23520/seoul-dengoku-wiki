@@ -49,7 +49,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 단철공의 사제는 규격 없는 개조를 내치는 원로였다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
+            "summary": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 공방의 원로는 규격 없는 개조를 내쳤다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-02.json",
@@ -288,6 +288,118 @@
   "gurps": {
     "id": "K029",
     "personId": "person-0029"
+  },
+  "characterProfile": {
+    "abilities": {
+      "leadership": {
+        "base": 14,
+        "effective": 14
+      },
+      "strategy": {
+        "base": 12,
+        "effective": 12
+      },
+      "negotiation": {
+        "base": 14,
+        "effective": 14
+      },
+      "management": {
+        "base": 14,
+        "effective": 14
+      },
+      "insight": {
+        "base": 13,
+        "effective": 13
+      },
+      "learning": {
+        "base": 13,
+        "effective": 13
+      },
+      "prowess": {
+        "base": 4,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 8,
+        "effective": 8
+      }
+    },
+    "skills": [
+      {
+        "id": "k029-parts-terms",
+        "name": {
+          "ko": "부품 조건 검토",
+          "en": "Parts-terms review"
+        },
+        "rating": 65
+      }
+    ],
+    "traits": [
+      {
+        "id": "k029-trait-1",
+        "name": {
+          "ko": "등록보다 시민권",
+          "en": "Citizenship before registration"
+        },
+        "description": {
+          "ko": "수리하는 손을 복무 조건에 종속시키지 않으려 한다.",
+          "en": "Resists subordinating repairing hands to service terms."
+        },
+        "behavior": {
+          "ko": "수리하는 손을 복무 조건에 종속시키지 않으려 한다.",
+          "en": "Resists subordinating repairing hands to service terms."
+        },
+        "stress": {
+          "ko": "부품이 막혀도 등록 조건의 상자를 되돌린다.",
+          "en": "Returns the box even when parts access is at stake."
+        },
+        "relationship": {
+          "ko": "한재목과 공급 동맹을 유지하면서 배우진의 조건에 맞선다.",
+          "en": "Maintains supply ties with Han Jaemok while opposing Bae Woojin’s terms."
+        },
+        "effects": []
+      }
+    ],
+    "narrative": {
+      "ko": "복구복무자 등록을 거부한 사람을 시민권 줄에 올렸고 등록 명부가 부품의 대가로 제시되자 상자를 봉해 돌려보냈다. 공방의 자율성을 지키는 선택은 서부 급수에 남긴 빚과 분리되지 않는다.",
+      "en": "She placed people refusing restoration-service registration on the citizenship line and returned a sealed parts box when registration was demanded as its price. Protecting workshop autonomy also left a debt to western water supply."
+    },
+    "health": {
+      "status": "unassessed",
+      "bodyParts": [
+        {
+          "id": "left-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-arm",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "left-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "right-leg",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "head",
+          "severity": null,
+          "function": null
+        },
+        {
+          "id": "torso",
+          "severity": null,
+          "function": null
+        }
+      ],
+      "diseases": []
+    }
   },
   "personSheet": {
     "schema": "wiki-person-sheet.v1",
@@ -3643,14 +3755,13 @@
     "직함": "규격맹 위원장"
   },
   "sections": {
-    "생애": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 단철공의 사제는 규격 없는 개조를 내치는 원로였다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
+    "생애": "2126년 세대. 구로·금천 공단 조합에서 자랐다. 공방 원로들은 규격 없는 개조를 내치며 가르쳤다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.",
     "관직": "품계 위원장. 직함은 규격맹 위원장. 생업 별명은 제작평의회 중재자.",
-    "무공": "단철공. 규격 없는 개조는 내친다.",
     "일화": "동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다. 그 봉인이 한재목의 서부 급수와 배우진의 병조 사이에 빚으로 남았다.",
     "가문": "구로합금가(HC07). 관리인. 규격 도면함이 이 가문의 키다.",
     "관계": "한재목에게 펌프 부품을 댄다. 정호준과 기술 공개 범위를 다툰다. 백온의 난민 시민권을 지지한다.\n\n- 소속: 규격맹\n- 생업: 공방 제작 조정\n- 품계: 위원장\n- 직함: 규격맹 위원장"
   },
-  "biography": "**생애.** 2126년 세대. 구로·금천 공단 조합에서 자랐다. 단철공의 사제는 규격 없는 개조를 내치는 원로였다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.\n**관직.** 품계 위원장. 직함은 규격맹 위원장. 생업 별명은 제작평의회 중재자.\n**무공.** 단철공. 규격 없는 개조는 내친다.\n**일화.** 동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다. 그 봉인이 한재목의 서부 급수와 배우진의 병조 사이에 빚으로 남았다.\n**가문.** 구로합금가(HC07). 관리인. 규격 도면함이 이 가문의 키다.\n**관계.** 한재목에게 펌프 부품을 댄다. 정호준과 기술 공개 범위를 다툰다. 백온의 난민 시민권을 지지한다.\n\n- 소속: 규격맹\n- 생업: 공방 제작 조정\n- 품계: 위원장\n- 직함: 규격맹 위원장",
+  "biography": "**생애.** 2126년 세대. 구로·금천 공단 조합에서 자랐다. 공방 원로들은 규격 없는 개조를 내치며 가르쳤다. 동방사가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다. 공방 장인 우두머리들이 구로역 길드 평의회에서 그 줄을 위원장 자리의 근거로 삼았다. 경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다. 강민서가 백온의 명부를 지지하는 까닭이 거기 있다.\n**관직.** 품계 위원장. 직함은 규격맹 위원장. 생업 별명은 제작평의회 중재자.\n**일화.** 동방사가 펌프 부품 상자 대신 복구복무자 명부를 내밀었을 때, 강민서는 상자를 봉한 채 돌려보냈다. 그 봉인이 한재목의 서부 급수와 배우진의 병조 사이에 빚으로 남았다.\n**가문.** 구로합금가(HC07). 관리인. 규격 도면함이 이 가문의 키다.\n**관계.** 한재목에게 펌프 부품을 댄다. 정호준과 기술 공개 범위를 다툰다. 백온의 난민 시민권을 지지한다.\n\n- 소속: 규격맹\n- 생업: 공방 제작 조정\n- 품계: 위원장\n- 직함: 규격맹 위원장",
   "sources": [
     "Cast-State-02",
     "Core-Characters"
