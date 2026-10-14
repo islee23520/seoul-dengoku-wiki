@@ -62,7 +62,7 @@ export function createCharacterServer({ versionStore } = {}) {
       const revision = explicitRevision(url.searchParams.get('revision'))
       if (!versionStore) throw new ApiError(503, 'E_VERSION_STORE_BINDING')
       const { people } = versionStore.read(revision)
-      const envelope = { schema: 'original-character-api.v1', revision, audience: 'author-private',
+      const envelope = { schema: 'original-character-api.v2', revision, audience: 'author-private',
         rulesVersion: RULES_VERSION, profile: PROFILE, operativeRatings: null, legacyOperative: false }
       if (settlementRoute) {
         if (req.method === 'GET' && settlementRoute[2] === 'npcs') return send(200, { ...envelope, contract: apiContract().settlement })
@@ -83,7 +83,7 @@ export function createCharacterServer({ versionStore } = {}) {
       if (id && !person) throw new ApiError(404, 'E_CHARACTER')
       if (req.method === 'GET' && id) return send(200, { ...envelope, id: person.id,
         personId: person.personId ?? person.url?.split('/').pop(), url: person.url, name: person.name,
-        legacy: person, originalRatings: null })
+        legacy: person, originalProfile: null })
       if ((!id && req.method === 'POST') || (id && !sheet && ['PATCH', 'PUT'].includes(req.method))) {
         const proposal = candidate(await readBody(req), revision, people, person)
         return send(id ? 200 : 201, { ...envelope, candidate: proposal, created: false, updated: false, persisted: false })

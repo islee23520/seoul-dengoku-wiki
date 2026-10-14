@@ -3,7 +3,8 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import { LEGACY_REVISIONS, ORIGINAL_CAPABILITIES, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
 import { characterDraftExport, draftPersonalContext, draftProblems, emptyCharacterDraft, legacyRevision, projectedDraftLegacy } from './characterDraftExport'
-import type { Assessment, LegacyStore, PersonalKey } from './characterDraftExport'
+import type { LegacyStore, PersonalKey } from './characterDraftExport'
+import { parseDraftProfile } from '../../scripts/character-profile-draft.mjs'
 import './CharacterDraftPage.css'
 
 export default function CharacterDraftPage({ legacyStore }: { readonly legacyStore?: LegacyStore } = {}) {
@@ -16,9 +17,11 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
   const [loading, setLoading] = useState(false)
   const [loadError, setLoadError] = useState('')
   const [exportError, setExportError] = useState('')
+  const [profileError, setProfileError] = useState('')
+  const [profileText, setProfileText] = useState('')
   const selectionKey = `${revision}:${selectedCharId}`
   const problems = draftProblems(sheet)
-  const canExport = Boolean(revision) && !loading && (!selectedCharId || loadedSelection === selectionKey) && problems.length === 0
+  const canExport = Boolean(revision) && !loading && !profileError && (!selectedCharId || loadedSelection === selectionKey) && problems.length === 0
   const characters = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
     return peopleCatalog.filter(person => !q || person.name.toLowerCase().includes(q) || person.stateName.toLowerCase().includes(q))
@@ -31,7 +34,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
 
   useEffect(() => {
     const controller = new AbortController()
-    setLoadedSelection(''); setLoadError(''); setExportError(''); setSheet(emptyCharacterDraft())
+    setLoadedSelection(''); setLoadError(''); setExportError(''); setProfileError(''); setProfileText(''); setSheet(emptyCharacterDraft())
     if (!selectedCharId || !revision) { setLoading(false); return () => controller.abort() }
     setLoading(true)
     void (async () => {
@@ -59,8 +62,19 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
   function setPersonal(key: PersonalKey, value: string) {
     setSheet(previous => ({ ...previous, [key]: value }))
   }
-  function setRating(index: number, patch: Partial<Omit<Assessment, 'capabilityId' | 'reviewState'>>) {
-    setSheet(previous => ({ ...previous, originalRatings: previous.originalRatings.map((item, i) => i === index ? { ...item, ...patch } : item) }))
+  function editProfile(raw: string) {
+    setProfileText(raw)
+    try {
+      const value: unknown = JSON.parse(raw)
+      const result = parseDraftProfile(value)
+      if (!result.profile) { setProfileError(result.failures.join(', ')); return }
+      const characterProfile = result.profile
+      setSheet(previous => ({ ...previous, characterProfile }))
+      setProfileError('')
+    } catch (error) {
+      if (!(error instanceof SyntaxError)) throw error
+      setProfileError('JSON 형식을 확인하세요.')
+    }
   }
   function download() {
     if (!canExport) return
@@ -75,9 +89,9 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
   }
 
   return <main className="wiki-prose">
-    <h1>오리지널 TRPG 캐릭터 초안</h1>
+    <h1>캐릭터 profile 초안</h1>
     <p className="draft-hint">검토 제안입니다. 저장하여도 정본은 바뀌지 않았습니다. 인물 선택은 새 평가의 승인이 아닙니다.</p>
-    <p>규칙 {ORIGINAL_RULES_VERSION} · 대항 d10 · 평가 0–12 · 합산 보정 −4–4</p>
+    <p>규칙 {ORIGINAL_RULES_VERSION} · 기본 역량 0–20 · 최종 역량 0–100 · 행동 숙련 0–99.9</p>
     {selectedCharId && <p><Link to={`/tools/character-art?person=${encodeURIComponent(selectedCharId)}`}>선택 인물의 아트 작업 도구</Link></p>}
 
     <section className="draft-charselect">
@@ -117,21 +131,25 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
       </section>
 
       <section className="draft-attrs">
-        <h2>새 기량 평가 · 미승인 제안</h2>
-        <p>미설정은 0이 아닙니다. 아래 7개 분야는 보편 능력치가 아니며, 값을 입력할 때 세부 분야·평가 기준 버전·근거가 모두 필요합니다.</p>
-        {sheet.originalRatings.map((item, index) => <fieldset key={item.capabilityId}>
-          <legend>{ORIGINAL_CAPABILITIES.find(option => option.id === item.capabilityId)?.label} · {item.capabilityId}</legend>
+        <h2>여덟 역량 · 미승인 제안</h2>
+        <p>미설정은 0이 아닙니다. 기본 역량 10은 해당 분야 숙련자 수준입니다. 직위·소속·과거 CP에서 값을 만들지 않습니다.</p>
+        {ORIGINAL_CAPABILITIES.map(({ id, label }) => <fieldset key={id}>
+          <legend>{label}</legend>
           <div className="form-grid">
-            <label>세부 분야<input aria-label={`${item.capabilityId} 세부 분야`} value={item.subdomain} onChange={event => setRating(index, { subdomain: event.target.value })} /></label>
-            <label>평가 (0–12)<input type="number" min="0" max="12" step="1" aria-label={`${item.capabilityId} 평가`} value={item.value ?? ''} placeholder="미설정" onChange={event => setRating(index, { value: event.target.value === '' ? null : event.target.valueAsNumber })} /></label>
-            <label>평가 기준 버전<input aria-label={`${item.capabilityId} 기준`} value={item.rubricVersion} onChange={event => setRating(index, { rubricVersion: event.target.value })} /></label>
-            <label>근거 참조<input aria-label={`${item.capabilityId} 근거`} value={item.evidenceRef} onChange={event => setRating(index, { evidenceRef: event.target.value })} /></label>
+            {(['base', 'effective'] as const).map(key => <label key={key}>{key === 'base' ? '기본 (0–20)' : '최종 (0–100)'}
+              <input type="number" min="0" max={key === 'base' ? 20 : 100} step="1" aria-label={`${id} ${key}`} value={sheet.characterProfile.abilities[id][key] ?? ''} placeholder="미설정" onChange={event => {
+                const value = event.target.value === '' ? null : event.target.valueAsNumber
+                setProfileText('')
+                setProfileError('')
+                setSheet(previous => ({ ...previous, characterProfile: { ...previous.characterProfile, abilities: { ...previous.characterProfile.abilities, [id]: { ...previous.characterProfile.abilities[id], [key]: value } } } }))
+              }} />
+            </label>)}
           </div>
         </fieldset>)}
-        <div className="form-grid">
-          <label>합산 보정 (−4–4)<input aria-label="합산 보정" type="number" min="-4" max="4" step="1" placeholder="미설정" value={sheet.combinedModifier ?? ''} onChange={event => setSheet(previous => ({ ...previous, combinedModifier: event.target.value === '' ? null : event.target.valueAsNumber }))} /></label>
-          <label>보정 근거 참조<input aria-label="보정 근거" value={sheet.modifierEvidenceRef} onChange={event => setSheet(previous => ({ ...previous, modifierEvidenceRef: event.target.value }))} /></label>
-        </div>
+        <label>profile 근거 참조<input aria-label="profile 근거" value={sheet.profileEvidenceRef} onChange={event => setSheet(previous => ({ ...previous, profileEvidenceRef: event.target.value }))} /></label>
+        <p>행동 숙련, 특성의 행동·스트레스·관계·효과, 서사와 여섯 신체 부위는 아래 정본 구조로 작성합니다. 숙련은 0–99.9이며 소수 첫째 자리까지입니다. 미평가 신체와 미정 효과는 null로 남깁니다. 판정식·효과 합성식·숙련 성장식은 미확정이며 자동 계산하지 않습니다.</p>
+        <label>profile JSON<textarea aria-label="profile JSON" rows={18} value={profileText || JSON.stringify(sheet.characterProfile, null, 2)} onChange={event => editProfile(event.target.value)} /></label>
+        {profileError && <p role="alert">{profileError}</p>}
       </section>
 
       {TRAIT_FIELDS.map(({ key, label }) => <section key={key} className="draft-select">
@@ -144,7 +162,7 @@ export default function CharacterDraftPage({ legacyStore }: { readonly legacySto
         <button type="button" onClick={() => setSheet(previous => ({ ...previous, [key]: [...previous[key], { description: '', reference: '' }] }))}>{label} 추가</button>
       </section>)}
     </fieldset>
-    {problems.length > 0 && <p role="alert">평가 범위와 세부 분야·기준 버전·근거, 특성 서술·참조를 확인하세요. {problems.join(', ')}</p>}
+    {problems.length > 0 && <p role="alert">역량·숙련 범위와 profile 구조·근거, 특성 서술·참조를 확인하세요. {problems.join(', ')}</p>}
     {exportError && <p role="alert">{exportError}</p>}
     <section className="draft-actions">
       <button type="button" disabled={!canExport} onClick={download}>초안 내보내기</button>

@@ -1,20 +1,13 @@
 import nameChanges from '../../scripts/person-sheet-name-changes.json'
-import { LEGACY_REVISIONS, ORIGINAL_CAPABILITIES, ORIGINAL_PROFILE_ID, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
+import { HISTORICAL_RULES_VERSION, LEGACY_REVISIONS, ORIGINAL_PROFILE_ID, ORIGINAL_RULES_VERSION, PERSONAL_FIELDS, TRAIT_FIELDS } from '../data/original-trpg-options'
+import { draftProfileFailures, emptyDraftProfile, pendingFormulas } from '../../scripts/character-profile-draft.mjs'
+import type { DraftProfile } from '../../scripts/character-profile-draft.mjs'
 
 export type Json = null | boolean | number | string | readonly Json[] | { readonly [key: string]: Json }
 type JsonRecord = { readonly [key: string]: Json }
 export type LegacyRevision = typeof LEGACY_REVISIONS[number]['revision']
-export type CapabilityId = typeof ORIGINAL_CAPABILITIES[number]['id']
 export type PersonalKey = typeof PERSONAL_FIELDS[number]['key']
 type TraitKey = typeof TRAIT_FIELDS[number]['key']
-export type Assessment = {
-  readonly capabilityId: CapabilityId
-  readonly subdomain: string
-  readonly value: number | null
-  readonly rubricVersion: string
-  readonly evidenceRef: string
-  readonly reviewState: 'proposal'
-}
 export type TraitDescription = { readonly description: string; readonly reference: string }
 export type LegacySelection = {
   readonly revision: LegacyRevision
@@ -26,9 +19,8 @@ export type LegacySelection = {
 }
 export type DraftSheet = Readonly<Record<PersonalKey, string>> & Readonly<Record<TraitKey, readonly TraitDescription[]>> & {
   readonly legacy: LegacySelection | null
-  readonly originalRatings: readonly Assessment[]
-  readonly combinedModifier: number | null
-  readonly modifierEvidenceRef: string
+  readonly characterProfile: DraftProfile
+  readonly profileEvidenceRef: string
 }
 export type LegacyStore = { readonly read: (revision: LegacyRevision, personId: string) => LegacySelection }
 
@@ -104,7 +96,7 @@ export function projectedDraftLegacy(detail: unknown, revision: string): LegacyS
     if (!record(variant) || variant.ledgerSha256 !== seal.sha256 || !record(variant.legacy) ||
         variant.legacy.operative !== false || !record(variant.legacy.record)) throw new DraftContractError('E_PERSON_SHEET_LEGACY')
     const rules = variant.rules
-    if (!record(rules) || rules.sourceRevision !== seal.revision || rules.rulesVersion !== ORIGINAL_RULES_VERSION ||
+    if (!record(rules) || rules.sourceRevision !== seal.revision || rules.rulesVersion !== HISTORICAL_RULES_VERSION ||
         rules.resolution !== 'opposed-d10' || rules.numericAdoption !== false || rules.originalRatings !== null ||
         rules.legacyValues !== 'immutable-not-d10-ratings') throw new DraftContractError('E_PERSON_SHEET_RULES')
     const person = variant.legacy.record
@@ -124,8 +116,7 @@ export function emptyCharacterDraft(): DraftSheet {
     name: '', state: '', position: '', rank: '', occupation: '', gender: '', birth: '', bongwan: '', tier: '',
     selectedBackground: '', selectedAppearance: '', selectedAmbition: '',
     selectedAdvantages: [], selectedDisadvantages: [], selectedQuirks: [], legacy: null,
-    originalRatings: ORIGINAL_CAPABILITIES.map(({ id }) => ({ capabilityId: id, subdomain: '', value: null, rubricVersion: '', evidenceRef: '', reviewState: 'proposal' })),
-    combinedModifier: null, modifierEvidenceRef: '',
+    characterProfile: emptyDraftProfile(), profileEvidenceRef: '',
   }
 }
 
@@ -143,19 +134,16 @@ export function draftPersonalContext(value: unknown): Readonly<Record<PersonalKe
 }
 
 export function draftProblems(sheet: DraftSheet): readonly string[] {
-  const problems: string[] = []
-  if (sheet.originalRatings.length !== ORIGINAL_CAPABILITIES.length || ORIGINAL_CAPABILITIES.some(({ id }) => sheet.originalRatings.filter(item => item.capabilityId === id).length !== 1)) problems.push('E_CAPABILITY_NAMESPACE')
-  for (const item of sheet.originalRatings) {
-    if (item.reviewState !== 'proposal') problems.push('E_RATING_REVIEW')
-    if (item.value !== null) {
-      if (!Number.isInteger(item.value) || item.value < 0 || item.value > 12 || Object.is(item.value, -0)) problems.push('E_RATING_RANGE')
-      if (!item.subdomain.trim() || !item.rubricVersion.trim() || !item.evidenceRef.trim()) problems.push('E_RATING_EVIDENCE')
-    }
-  }
-  if (sheet.combinedModifier !== null) {
-    if (!Number.isInteger(sheet.combinedModifier) || Math.abs(sheet.combinedModifier) > 4 || Object.is(sheet.combinedModifier, -0)) problems.push('E_MODIFIER_RANGE')
-    if (!sheet.modifierEvidenceRef.trim()) problems.push('E_MODIFIER_EVIDENCE')
-  }
+  const problems = [...draftProfileFailures(sheet.characterProfile)]
+  const profile = sheet.characterProfile
+  const authoredProfile = problems.length === 0 && (
+    Object.values(profile.abilities).some(({ base, effective }) => base !== null || effective !== null) ||
+    profile.skills.length > 0 || profile.traits.length > 0 ||
+    Boolean(profile.narrative.ko.trim() || profile.narrative.en.trim()) ||
+    profile.health.status !== 'unassessed' || profile.health.diseases.length > 0 ||
+    profile.health.bodyParts.some(({ severity, function: functionality }) => severity !== null || functionality !== null)
+  )
+  if (authoredProfile && !sheet.profileEvidenceRef.trim()) problems.push('E_PROFILE_EVIDENCE')
   for (const { key } of TRAIT_FIELDS) if (sheet[key].some(item => !item.description.trim() || !item.reference.trim())) problems.push('E_TRAIT_EVIDENCE')
   return [...new Set(problems)]
 }
@@ -172,13 +160,11 @@ export function characterDraftExport(sheet: DraftSheet, selection: { readonly pe
   const personal = Object.fromEntries(PERSONAL_FIELDS.map(({ key }) => [key, sheet[key]]))
   const traits = Object.fromEntries(TRAIT_FIELDS.map(({ key }) => [key, sheet[key].map(({ description, reference }) => ({ description, reference }))]))
   return structuredClone({
-    schema: 'original-character-draft.v2', schemaVersion: 2, revision, rulesVersion: ORIGINAL_RULES_VERSION, profileId: ORIGINAL_PROFILE_ID,
+    schema: 'original-character-draft.v3', schemaVersion: 3, revision, rulesVersion: ORIGINAL_RULES_VERSION, profileId: ORIGINAL_PROFILE_ID,
     audience: 'author-private', reviewState: 'proposal', operative: false, persisted: false,
     personId: selection.personId || null, personal, traits, legacy: sheet.legacy,
-    originalRatings: sheet.originalRatings.map(({ capabilityId, subdomain, value, rubricVersion, evidenceRef }) => ({
-      capabilityId, subdomain, value, unit: 'opposed-rating-point', rubricVersion, evidenceRefs: evidenceRef.trim() ? [evidenceRef] : [],
-      sourceRevision: revision, reviewState: 'proposal', decisionRef: null,
-    })),
-    combinedModifier: { value: sheet.combinedModifier, evidenceRefs: sheet.modifierEvidenceRef.trim() ? [sheet.modifierEvidenceRef] : [], reviewState: 'proposal' },
+    characterProfile: sheet.characterProfile,
+    profileSource: { sourceRevision: revision, evidenceRefs: sheet.profileEvidenceRef.trim() ? [sheet.profileEvidenceRef] : [], reviewState: 'proposal', decisionRef: null },
+    formulas: pendingFormulas,
   })
 }
