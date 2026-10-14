@@ -7,6 +7,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { BASELINE_SHA256, STAGING_GEOGRAPHY_PATH, STAGING_GEOGRAPHY_SCHEMA, STAGING_SOURCES, baselineDocuments, sha256, validateSeoulScope } from './seoul-scope.mjs'
+import { CENSUS_PATHS, loadAndValidateCensus } from './seoul-census.mjs'
 
 const json = async path => JSON.parse(await readFile(path, 'utf8'))
 const hashFile = async path => {
@@ -16,7 +17,7 @@ const hashFile = async path => {
 }
 const inputError = (path, id = '') => ({ ok: false, errors: [{ code: 'E_SCOPE_INPUT', path, id }] })
 
-export async function loadScopeInput({ root, baselinePath, fixture = false }) {
+export async function loadScopeInput({ root, baselinePath, fixture = false, mode = 'publication', batchId = null }) {
   const baselineBytes = await readFile(baselinePath)
   const baseline = JSON.parse(baselineBytes)
   if (!fixture && sha256(baselineBytes) !== BASELINE_SHA256) return { error: { ok: false, errors: [{ code: 'E_ARCHIVE_HASH', path: baselinePath, id: '' }] } }
@@ -47,7 +48,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false }) {
     for (const entry of await readdir(resolve(root, directory), { withFileTypes: true })) {
       const path = `${directory}/${entry.name}`
       if (entry.isDirectory()) await discover(path)
-      else if (entry.isFile() && !documentPaths.includes(path) && !['lore/editorial/Seoul-Scope-Contract.json', STAGING_GEOGRAPHY_PATH].includes(path)) documentPaths.push(path)
+      else if (entry.isFile() && !documentPaths.includes(path) && !['lore/editorial/Seoul-Scope-Contract.json', STAGING_GEOGRAPHY_PATH, ...CENSUS_PATHS].includes(path)) documentPaths.push(path)
     }
   }
   for (const directory of ['lore', 'docs', 'scripts/data', 'snapshots/build-inputs', 'vendor/issued-history']) await discover(directory)
@@ -101,8 +102,12 @@ export async function loadScopeInput({ root, baselinePath, fixture = false }) {
   const rights = [...holdings.holdings, ...allocation.grants].map(row => ({
     id: row.id, holderPersonId: row.holderPersonId, slotStatus: row.slotStatus ?? null,
   }))
+  // Exclusion above is conditional on this mandatory strict consumer. Neither a
+  // private scope-input override nor inspection mode can supply its denominator.
+  const census = await loadAndValidateCensus({ root, baseline, baselineSha256: sha256(baselineBytes), contract, batches: context.batches, review: context.review, mode, batchId })
+  if (!census.ok) return { error: census }
   return { contract, baseline, baselineSha256: sha256(baselineBytes), current: { entitySets, documentPaths, rights }, boundary,
-    archiveHashes, sourceHashes, ...context }
+    archiveHashes, sourceHashes, ...context, dependencyReport: census.dependencyReport }
 }
 
 export async function runScopeCli(argv) {
@@ -136,8 +141,11 @@ export async function runScopeCli(argv) {
       options.root = stage
     }
     const input = await loadScopeInput(options)
-    return input.error ?? validateSeoulScope(input, { mode: options.mode, batchId: options.batchId })
+    const { dependencyReport, ...scopeInput } = input
+    const result = input.error ?? validateSeoulScope(scopeInput, { mode: options.mode, batchId: options.batchId })
+    return result.ok && dependencyReport ? { ...result, dependencyReport } : result
   } catch (error) {
+    if (error.code?.startsWith('E_')) return { ok: false, errors: [{ code: error.code, path: error.path, id: error.id ?? '' }] }
     return inputError(error.path ?? '/input', error.code ?? error.name)
   }
 }

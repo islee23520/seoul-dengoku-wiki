@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { spawn } from 'node:child_process'
 import { test } from 'vitest'
 import { ENTITY_SETS, STAGING_GEOGRAPHY_SCHEMA, baselineDocuments, canonicalProposal, proposalHash, sha256, stagingGeography, validateSeoulScope } from './seoul-scope.mjs'
+import { compareCensusCategories, createDependencyResolver, dependencyDispositions, extractDependencies, extractCurrentCategories, validateCensusProducts, validateDependencyClosure, validateIndependentReview, walkCensus } from './seoul-census.mjs'
 
 const sourcePath = 'lore/current.json'
 const sealedPath = 'vendor/issued-history/old.json'
@@ -422,7 +423,408 @@ test('proposal serialization is deterministic across key and ID ordering, withou
   assert.deepEqual(baselineDocuments(fixture().baseline), [sourcePath, sealedPath])
 })
 
+function censusFixture() {
+  // This denominator is declared before and independently of the mutable product.
+  const original = { leaves: [['lore/unpublished.json', '/content/0/text/ko', 'dialogue', 'ko', sha256('대사')],
+    ['lore/unpublished.json', '/content/0/text/en', 'dialogue', 'en', sha256('Dialogue')]],
+  blocks: [{ sourcePath: 'lore/unpublished.json', jsonPointer: '/content/0', anchor: 'dialogue', locale: 'neutral', originalSha256: sha256('block') }],
+  cards: [{ sourcePath: 'lore/duplicate.json', jsonPointer: '/content/3', anchor: 'duplicate', locale: 'en', originalSha256: sha256('duplicate card') }] }
+  const current = clone(original)
+  const index = compareCensusCategories(original, current)
+  const docs = [...new Set(index.original.map(r => r.sourcePath))].map(sourcePath => ({ sourcePath, currentSha256: sha256(sourcePath), classification: 'current-pending',
+    originalIndex: index.original.filter(r => r.sourcePath === sourcePath), currentIndex: index.current.filter(r => r.sourcePath === sourcePath) }))
+  docs.push({ sourcePath: sealedPath, currentSha256: sha256(sealedBody), classification: 'sealed-history', originalIndex: [], currentIndex: [] })
+  const ledger = { schema: 'seoul-relocation-census.v1', binding: { baselineSha256: sha256('independent') },
+    people: ['K001', 'K002'].map(personId => ({ personId, status: 'pending', batchId: null, approval: null, proposedLocationRefs: [], proposedHoldingRefs: [], titleChanges: [], narrativeChanges: [], preservedFacts: [], changedFacts: [] })),
+    originalRights: [{ set: 'holdings', id: 'right:original' }],
+    cardOccurrences: [{ originalKey: 'duplicate-en-card', currentHash: sha256('duplicate card') }], connectedGroups: [{ personIds: ['K001', 'K002'] }], sharedSourceGroups: [{ personIds: ['K001', 'K002'] }] }
+  const review = { schema: 'seoul-narrative-census.v1', binding: clone(ledger.binding), documents: docs, mapping: index, receipts: [], approvals: [] }
+  const expected = { ledger, review, dependencies: [{ fromKey: 'K001', toKey: 'K002', kind: 'family' }] }
+  return { expected, actual: clone(expected), original, current }
+}
+
+test('independent complete census admits pending extraction without semantic approval', () => {
+  const { actual, expected } = censusFixture()
+  assert.deepEqual(validateCensusProducts(actual, expected), { ok: true, errors: [] })
+  assert.equal(actual.ledger.people.every(row => row.approval === null), true)
+})
+
+for (const [name, mutate, error] of [
+  ['missing issued person', a => a.ledger.people.pop(), 'E_CENSUS_PERSON'],
+  ['missing original right', a => a.ledger.originalRights.pop(), 'E_CENSUS_RIGHT'],
+  ['missing duplicate card', a => a.ledger.cardOccurrences.pop(), 'E_REVIEW_COVERAGE'],
+  ['missing unpublished block', a => { const doc = a.review.documents.find(d => d.sourcePath === 'lore/unpublished.json'); doc.originalIndex = doc.originalIndex.filter(r => r.category !== 'blocks') }, 'E_REVIEW_COVERAGE'],
+  ['missing EN leaf', a => { a.review.documents.find(d => d.sourcePath === 'lore/unpublished.json').currentIndex.find(r => r.category === 'leaves').count -= 1 }, 'E_REVIEW_COVERAGE'],
+  ['stale independently bound leaf hash', a => { a.review.documents[0].currentIndex[0].sha256 = sha256('stale') }, 'E_REVIEW_HASH'],
+  ['stale card', a => { a.ledger.cardOccurrences[0].currentHash = sha256('stale') }, 'E_REVIEW_HASH'],
+  ['sealed promotion', a => { a.review.documents.at(-1).classification = 'current-pending' }, 'E_SCOPE_ADMISSION'],
+  ['wrong approval kind', a => { a.ledger.people[0].approval = { kind: 'article-style' } }, 'E_APPROVAL_KIND'],
+  ['invented owner approval', a => { a.ledger.people[0].approval = { kind: 'batch-allocation' } }, 'E_APPROVAL_BATCH'],
+  ['omitted relation dependency', a => a.dependencies.pop(), 'E_REVIEW_COVERAGE'],
+  ['unreviewed applied row', a => { a.ledger.people[0].status = 'applied' }, 'E_SCOPE_PENDING'],
+  ['unknown unchecked metadata', a => { a.review.approved = true }, 'E_SCOPE_SHAPE'],
+]) test(`census rejects ${name}`, () => {
+  const { actual, expected } = censusFixture()
+  mutate(actual)
+  assert.equal(code(validateCensusProducts(actual, expected)), error)
+})
+
+test('recursive census includes escaped pointers, nearest anchor, EN dialogue and all kind objects', () => {
+  const input = { anchor: 'root', source: { kind: 'original-fiction' }, content: [{ kind: 'list', anchor: 'nested', items: [{ ko: '대사', en: 'Dialogue' }] }], data: { 'a/b~c': { en: 'Unpublished' } } }
+  const result = walkCensus(input, 'lore/unpublished.json')
+  assert.equal(result.blocks.length, 2)
+  assert.deepEqual(result.leaves.find(r => r[1] === '/data/a~1b~0c/en'), ['lore/unpublished.json', '/data/a~1b~0c/en', 'root', 'en', sha256('Unpublished')])
+  assert.equal(result.leaves.find(r => r[1] === '/content/0/items/0/en')[2], 'nested')
+})
+
+test('independent review rejects caller shrinking or forging the current denominator', () => {
+  const { original, current } = censusFixture()
+  const doc = [{ sourcePath: 'lore/unpublished.json', batchId: 'a' }, { sourcePath: 'lore/duplicate.json', batchId: 'a' }]
+  const rows = cats => Object.values(cats).flat().map(raw => {
+    const [sourcePath, jsonPointer, , locale, originalSha256] = Array.isArray(raw) ? raw : [raw.sourcePath, raw.jsonPointer, raw.anchor, raw.locale, raw.originalSha256]
+    return { key: JSON.stringify([sourcePath, jsonPointer, locale, originalSha256]), sha256: originalSha256, batchId: 'a' }
+  })
+  const review = { originalKeys: rows(original).map(({ key, batchId }) => ({ key, batchId })), currentKeys: rows(current), receipts: [] }
+  assert.doesNotThrow(() => validateIndependentReview(review, original, current, doc))
+  const missing = clone(review); missing.originalKeys.pop()
+  assert.throws(() => validateIndependentReview(missing, original, current, doc), { code: 'E_REVIEW_COVERAGE' })
+  const stale = clone(review); stale.currentKeys[0].sha256 = sha256('stale')
+  assert.throws(() => validateIndependentReview(stale, original, current, doc), { code: 'E_REVIEW_HASH' })
+  const batch = clone(review); batch.currentKeys[0].batchId = 'other'
+  assert.throws(() => validateIndependentReview(batch, original, current, doc), { code: 'E_APPROVAL_BATCH' })
+})
+
+test('current card body boundaries come from actual headings, not archived span end', () => {
+  const document = { content: [{ kind: 'heading', depth: 3, anchor: 'card', text: { ko: '인물 A', en: 'Person A' } }, { kind: 'paragraph', text: { ko: '새 대사', en: 'New dialogue' } }, { kind: 'heading', depth: 3 }] }
+  const row = { sourcePath, jsonPointer: '/content/0', anchor: 'card', locale: 'en', startBlock: 0, endBlockExclusive: 1, originalSha256: sha256('old') }
+  const categories = { leaves: [], blocks: [], headings: [], cards: [row], markdown: [], lines: [] }
+  const current = extractCurrentCategories(new Map([[sourcePath, { value: document }]]), categories)
+  assert.equal(current.cards[0].endBlockExclusive, 2)
+  assert.equal(current.cards[0].originalSha256, sha256(JSON.stringify(document.content.slice(0, 2))))
+})
+
+test('shared source dependencies cannot be divided into independently approved person batches', () => {
+  const input = fixture()
+  const dependencies = { sharedSourceGroups: [{ personIds: ['K001', 'K002'], nodes: ['K001', 'K002', `file:${sourcePath}`] }] }
+  assert.doesNotThrow(() => validateDependencyClosure(input.contract, input.batches, dependencies))
+  input.contract.entities[1].status = 'pending'
+  assert.throws(() => validateDependencyClosure(input.contract, input.batches, dependencies), { code: 'E_SCOPE_PENDING' })
+  input.contract.entities[1].status = 'active'; input.contract.entities[1].batchId = 'batch:b'
+  assert.throws(() => validateDependencyClosure(input.contract, input.batches, dependencies), { code: 'E_APPROVAL_BATCH' })
+  bindBatch(input); bindBatch(input, 'batch:b')
+  input.batches[0].dependencyBatchIds = ['batch:b']; input.batches[1].dependencyBatchIds = ['batch:a']
+  assert.doesNotThrow(() => validateDependencyClosure(input.contract, input.batches, dependencies))
+  input.contract.documents[0].status = 'pending'
+  assert.throws(() => validateDependencyClosure(input.contract, input.batches, dependencies), { code: 'E_SCOPE_PENDING' })
+})
+
+test('large source traversal is not bounded by the engine function argument limit', () => {
+  const value = { content: Array.from({ length: 140000 }, (_, i) => `dialogue:${i}`) }
+  const original = { leaves: [], blocks: [], headings: [], cards: [], markdown: [], lines: [] }
+  const actual = extractCurrentCategories(new Map([[sourcePath, { value }]]), original)
+  assert.equal(actual.leaves.length, value.content.length)
+  assert.equal(actual.leaves.at(-1)[4], sha256('dialogue:139999'))
+})
+
 const cli = resolve(fileURLToPath(new URL('./check-seoul-scope.mjs', import.meta.url)))
+function dependencyFixture() {
+  const documents = {
+    'lore/characters/Cast-Relations.json': { content: [] },
+    'lore/name-pools/cast-family-trees.json': { nodes: [{ id: 'FH-A' }], edges: [] },
+    'lore/relations/relations.json': { courts: [], directRetainers: [], ownerLieges: { edges: [] }, courtMemberships: { memberships: [] } },
+    'lore/name-pools/cast-household-relations.json': { people: [] },
+    'lore/name-pools/cast-prose-contacts.json': { records: [] },
+    'lore/relations/personal-holdings.json': { holdings: [{ id: 'h', facilityRef: {
+      sourcePath: 'lore/regions/station-interiors.json', stationName: 'A', stationIdentity: { district: 'D', lat: 1, lon: 2 }, layerId: 'concourse',
+      siteSourcePath: 'lore/regions/content/site.json', siteAnchor: 'osm:node:1',
+    } }] },
+    'lore/regions/station-interiors.json': { stations: [{ name: 'A', district: 'D', lat: 1, lon: 2, layers: [{ id: 'concourse' }] }] },
+    'lore/regions/content/site.json': { regions: [{ content: { buildings: [{ anchor_ref: 'osm:node:1' }] } }] },
+    'lore/relations/opening-feudal-allocation.json': { titles: [{ id: 'child', parentTitleId: 'parent' }], existingTitleBindings: [{ holdingId: 'h', titleId: 'child' }] },
+    'lore/relations/opening-office-appointments.json': { appointments: [{ personId: 'K001', stateId: 'S01' }] },
+    'lore/name-pools/diaspora-family-lineages.json': { lineages: [{ key: 'family', members: [{ key: 'ancestor' }, { key: 'child', parentKeys: ['ancestor'] }] }] },
+    'lore/editorial/Soul-Candidates.json': { candidates: [{ id: 'candidate', careerSummary: { ko: 'career' } }] },
+    'lore/target.json': { content: [{ kind: 'heading', anchor: 'block', publicAnchors: ['alias'], text: { ko: '제목', en: 'Natural Heading' } }] },
+    'lore/consumer.json': { refs: [
+      { path: 'lore/name-pools/cast-family-trees.json', anchor: 'FH-A' },
+      { path: 'lore/editorial/Soul-Candidates.json', anchor: 'candidates/candidate/careerSummary' },
+      { path: 'lore/name-pools/diaspora-family-lineages.json', anchor: 'family/child' },
+      { text: 'linked', link: { domain: 'root', slug: 'target', anchor: 'natural-heading' } },
+      'GDD/canon/source.json#unknown', { repository: 'external', path: 'source.json', commit: 'revision', sha256: sha256('unread') },
+      'lore/target.json#/content/99',
+    ] },
+  }
+  return new Map(Object.entries(documents).map(([path, value]) => { const bytes = Buffer.from(JSON.stringify(value)); return [path, { value, bytes, sha256: sha256(bytes) }] }))
+}
+
+test('typed facility pairs resolve station layer and site independently, never a crossed anchor', () => {
+  const sources = dependencyFixture()
+  const graph = extractDependencies(sources, [{ id: 'K001', name: 'A' }], {})
+  const refs = graph.references.filter(r => r.source.jsonPointer === '/holdings/0/facilityRef')
+  assert.deepEqual(refs.map(r => [r.vocabulary, r.targets[0].sourcePath, r.targets[0].jsonPointer]), [
+    ['station-layer', 'lore/regions/station-interiors.json', '/stations/0/layers/0'],
+    ['site', 'lore/regions/content/site.json', '/regions/0/content/buildings/0/anchor_ref'],
+  ])
+  const value = sources.get('lore/relations/personal-holdings.json').value.holdings[0].facilityRef
+  ;[value.sourcePath, value.siteSourcePath] = [value.siteSourcePath, value.sourcePath]
+  const wrong = extractDependencies(sources, [{ id: 'K001', name: 'A' }], {})
+  assert.equal(wrong.unresolved.filter(r => ['station-layer', 'site'].includes(r.vocabulary)).length, 2)
+})
+
+test('source contracts resolve keyed candidates, family and lineage without accepting duplicates', () => {
+  const sources = dependencyFixture(); const resolveRef = createDependencyResolver(sources)
+  for (const [path, selector, pointer] of [
+    ['lore/editorial/Soul-Candidates.json', 'candidates/candidate', '/candidates/0'],
+    ['lore/editorial/Soul-Candidates.json', 'candidates/candidate/careerSummary', '/candidates/0/careerSummary'],
+    ['lore/name-pools/cast-family-trees.json', 'FH-A', '/nodes/0'],
+    ['lore/name-pools/diaspora-family-lineages.json', 'family/child', '/lineages/0/members/1'],
+  ]) assert.equal(resolveRef(path, 'lore/consumer.json', selector).targets[0].jsonPointer, pointer)
+  sources.get('lore/name-pools/cast-family-trees.json').value.nodes.push({ id: 'FH-A' })
+  assert.equal(createDependencyResolver(sources)('lore/name-pools/cast-family-trees.json', '', 'FH-A').reason, 'selector-not-unique')
+})
+
+test('renderer natural headings and aliases retain record targets while missing fragments and external evidence stay unresolved', () => {
+  const sources = dependencyFixture(); const graph = extractDependencies(sources, [{ id: 'K001', name: 'A' }], {})
+  const link = graph.references.find(r => r.vocabulary === 'renderer')
+  assert.equal(link.status, 'resolved'); assert.equal(link.targets[0].jsonPointer, '/content/0')
+  assert.equal(createDependencyResolver(sources)('lore/target.json', '', 'alias', 'renderer').status, 'resolved')
+  assert.ok(graph.unresolved.some(r => r.target === 'lore/target.json#/content/99'))
+  const external = graph.unresolved.filter(r => r.external)
+  assert.equal(external.length, 2); assert.equal(external[1].external.revision, 'revision')
+  assert.equal(external[1].external.targetSha256, sha256('unread'))
+})
+
+test('schema edges retain separate title, holding, state and lineage namespaces', () => {
+  const graph = extractDependencies(dependencyFixture(), [{ id: 'K001', name: 'A' }], {})
+  for (const [kind, fromKey, toKey] of [
+    ['title-parent', 'entity:titles:child', 'entity:titles:parent'],
+    ['holding-title-binding', 'entity:holdings:h', 'entity:titles:child'],
+    ['appointment-person-state', 'identity:K001', 'entity:states:S01'],
+    ['lineage-parent', 'lineage:family:ancestor', 'lineage:family:child'],
+  ]) {
+    const edge = graph.edges.find(e => e.kind === kind)
+    assert.equal(edge.fromKey, fromKey); assert.equal(edge.toKey, toKey)
+    const { actual, expected } = censusFixture()
+    actual.dependencies = clone(graph); expected.dependencies = graph
+    actual.dependencies.edges = actual.dependencies.edges.filter(e => e.kind !== kind)
+    assert.equal(code(validateCensusProducts(actual, expected)), 'E_REVIEW_COVERAGE')
+  }
+})
+
+test('original diagnostic dispositions reject stale source bytes and keep raw targets', () => {
+  const sources = dependencyFixture(); const path = 'lore/consumer.json'; const value = sources.get(path).value.refs[0]
+  const original = { sourcePath: path, jsonPointer: '/refs/0', sourceSha256: sources.get(path).sha256,
+    recordSha256: sha256(JSON.stringify(value)), target: `${value.path}#${value.anchor}`, reviewStatus: 'not-reviewed' }
+  const row = { key: JSON.stringify([path, '/refs/0', original.target, original.recordSha256]), original,
+    classification: 'parser-vocabulary', currentResolution: 'family-node-id' }
+  const result = dependencyDispositions(sources, [row], createDependencyResolver(sources))
+  assert.deepEqual(result[0].original, original); assert.equal(result[0].status, 'resolved')
+  const { actual, expected } = censusFixture(); actual.dependencies = clone(result); expected.dependencies = result
+  actual.dependencies.pop()
+  assert.equal(code(validateCensusProducts(actual, expected)), 'E_REVIEW_COVERAGE')
+  sources.get(path).sha256 = sha256('changed')
+  assert.throws(() => dependencyDispositions(sources, [row], createDependencyResolver(sources)), { code: 'E_REVIEW_HASH' })
+})
+
+test('required unresolved evidence is visible in inspection but blocks publication and an approved batch', () => {
+  const input = fixture(); input.contract.entities.forEach(e => { e.status = 'pending' })
+  input.contract.documents[0].status = 'pending'; input.batches = []
+  const dependencies = { unresolved: [{ sourcePath, jsonPointer: '/missing', required: true }], sharedSourceGroups: [] }
+  assert.doesNotThrow(() => validateDependencyClosure(input.contract, [], dependencies, { mode: 'inspection' }))
+  assert.throws(() => validateDependencyClosure(input.contract, [], dependencies, { mode: 'publication' }), { code: 'E_DEPENDENCY_UNRESOLVED' })
+  bindBatch(input)
+  assert.throws(() => validateDependencyClosure(input.contract, input.batches, dependencies, { mode: 'inspection' }), { code: 'E_DEPENDENCY_UNRESOLVED' })
+  assert.throws(() => validateDependencyClosure(input.contract, input.batches, dependencies, { mode: 'migration', batchId: 'batch:a' }), { code: 'E_DEPENDENCY_UNRESOLVED' })
+})
+
+function profileCitationFixture(field = 'skills') {
+  const sources = dependencyFixture()
+  const path = `lore/editorial/profile-batches/state-${field === 'skills' ? '09-10' : '15-16'}.json`
+  const target = `lore/characters/Cast-State-${field === 'skills' ? '09' : '15'}.json`
+  const anchor = `인물-A-p${field === 'skills' ? '3' : '4'}`
+  const basis = field === 'skills' ? `${target}#${anchor}, 인물-A-p4; 근거.` : `${target}#${anchor}와 관계·가치 기록. 근거.`
+  const put = (path, value) => { const bytes = Buffer.from(JSON.stringify(value)); sources.set(path, { value, bytes, sha256: sha256(bytes) }) }
+  put(target, { content: [{ kind: 'paragraph', anchor, text: { ko: [{ text: '실제 기록' }], en: 'Actual record' } },
+    ...(field === 'skills' ? [{ kind: 'paragraph', anchor: '인물-A-p4', text: { ko: '별도 일화' } }] : [])] })
+  put(path, { profiles: [{ [field]: [{ basis }], evidence: [{ path: target, anchor, quote: '실제 기록' }] }] })
+  return { sources, path, target, field, anchor, basis, put }
+}
+
+for (const field of ['skills', 'traits']) test(`profile ${field} delimiters preserve raw diagnostics and exact quoted target hashes`, () => {
+  const input = profileCitationFixture(field)
+  const graph = extractDependencies(input.sources, [], {})
+  const row = graph.profileCitationDispositions[0]
+  assert.equal(graph.profileCitationDispositions.length, 1)
+  assert.equal(row.status, 'supported-correspondence')
+  assert.equal(row.original.target, `${input.target}#${input.anchor}${field === 'skills' ? ',' : '와'}`)
+  assert.equal(row.original.reason, 'selector-missing')
+  assert.equal(row.original.recordSha256, sha256(JSON.stringify(input.basis)))
+  assert.equal(row.original.sourceSha256, input.sources.get(input.path).sha256)
+  assert.equal(row.original.required, true)
+  assert.equal(row.reviewStatus, 'not-reviewed')
+  assert.equal(row.targets.length, field === 'skills' ? 2 : 1)
+  for (const [i, target] of row.targets.entries()) {
+    assert.equal(target.jsonPointer, `/content/${i}`)
+    assert.equal(target.sourceSha256, input.sources.get(input.target).sha256)
+    assert.equal(target.recordSha256, sha256(JSON.stringify(input.sources.get(input.target).value.content[i])))
+  }
+  const reference = graph.references.find(r => r.source.jsonPointer === `/profiles/0/${field}/0/basis`)
+  assert.equal(reference.raw, row.original.target)
+  assert.deepEqual(reference.targets, row.targets)
+  assert.ok(graph.unresolved.some(r => r.target === 'lore/target.json#/content/99'))
+})
+
+for (const [name, field, mutate] of [
+  ['missing intended anchor', 'skills', i => { i.sources.get(i.target).value.content[0].anchor = 'absent' }],
+  ['duplicate intended anchor', 'traits', i => { i.sources.get(i.target).value.content.push(clone(i.sources.get(i.target).value.content[0])) }],
+  ['missing second list anchor', 'skills', i => { i.sources.get(i.target).value.content.pop() }],
+  ['non-delimiter comma', 'skills', i => { i.sources.get(i.path).value.profiles[0].skills[0].basis = `${i.target}#${i.anchor},suffix` }],
+  ['non-delimiter conjunction', 'traits', i => { i.sources.get(i.path).value.profiles[0].traits[0].basis = `${i.target}#${i.anchor}와붙은문자` }],
+  ['unquoted evidence', 'traits', i => { i.sources.get(i.path).value.profiles[0].evidence[0].quote = '다른 기록' }],
+  ['duplicate corroboration', 'skills', i => { i.sources.get(i.path).value.profiles[0].evidence.push(clone(i.sources.get(i.path).value.profiles[0].evidence[0])) }],
+  ['generic consumer', 'skills', i => { i.put('lore/consumer.json', i.sources.get(i.path).value); i.sources.delete(i.path) }],
+]) test(`profile delimiter correspondence rejects ${name}`, () => {
+  const input = profileCitationFixture(field); mutate(input)
+  const graph = extractDependencies(input.sources, [], {})
+  assert.equal(graph.profileCitationDispositions.length, 0)
+  assert.ok(graph.unresolved.some(r => r.jsonPointer === `/profiles/0/${field}/0/basis` && r.required))
+})
+
+for (const field of ['skills', 'traits']) test(`literal ${field === 'skills' ? 'comma' : '와'} anchor wins over profile delimiter interpretation`, () => {
+  const input = profileCitationFixture(field)
+  const literal = `${input.anchor}${field === 'skills' ? ',' : '와'}`
+  input.sources.get(input.target).value.content.push({ kind: 'paragraph', anchor: literal, text: { ko: '실제 앵커' } })
+  const graph = extractDependencies(input.sources, [], {})
+  const reference = graph.references.find(r => r.source.jsonPointer === `/profiles/0/${field}/0/basis`)
+  assert.equal(graph.profileCitationDispositions.length, 0)
+  assert.equal(reference.status, 'resolved')
+  assert.equal(reference.targets[0].jsonPointer, field === 'skills' ? '/content/2' : '/content/1')
+})
+
+let localProvenanceInputs
+async function localProvenanceFixture() {
+  const sources = dependencyFixture()
+  const comparisonPath = 'data/geography/seoul-20260830/boundaries-kostat-2013/seoul_municipalities_geo.json'
+  const paths = ['lore/regions/sources/selection.json', 'scripts/data/admin-territorial-catalog.json',
+    'snapshots/build-inputs/creative-name-normalization.json', 'snapshots/build-inputs/source-manifest.json',
+    'snapshots/build-inputs/SeoulWorldGraph.json', comparisonPath]
+  localProvenanceInputs ??= Promise.all(paths.map(async path => [path, await readFile(new URL('../' + path, import.meta.url))]))
+  const provenanceSources = new Map()
+  for (const [path, bytes] of await localProvenanceInputs) {
+    const record = { bytes: Buffer.from(bytes), value: JSON.parse(bytes), sha256: sha256(bytes) }
+    ;(path === comparisonPath ? provenanceSources : sources).set(path, record)
+  }
+  const rebind = path => {
+    const source = sources.get(path) ?? provenanceSources.get(path)
+    source.bytes = Buffer.from(JSON.stringify(source.value)); source.sha256 = sha256(source.bytes)
+  }
+  const graph = () => extractDependencies(sources, [], {}, [], provenanceSources)
+  return { sources, provenanceSources, comparisonPath, rebind, graph }
+}
+
+for (const [path, jsonPointer, targetCount] of [
+  ['lore/regions/sources/selection.json', '/comparison_boundary', 1],
+  ['scripts/data/admin-territorial-catalog.json', '/sourceRef', 1],
+  ['snapshots/build-inputs/creative-name-normalization.json', '/references/2', 3],
+]) test('local provenance keeps exact original diagnostic at ' + path + jsonPointer, async () => {
+  const input = await localProvenanceFixture(); const graph = input.graph()
+  const row = graph.localProvenanceDispositions.find(r => r.original.sourcePath === path)
+  assert.equal(graph.localProvenanceDispositions.length, 3)
+  assert.equal(row.original.jsonPointer, jsonPointer)
+  assert.equal(row.original.sourceSha256, input.sources.get(path).sha256)
+  assert.equal(row.original.required, true)
+  assert.equal(row.original.reviewStatus, 'not-reviewed')
+  assert.equal(row.reviewStatus, 'not-reviewed')
+  assert.equal(row.status, 'provenance-correspondence')
+  assert.equal(row.targets.length, targetCount)
+  for (const ref of row.targets) {
+    const source = input.sources.get(ref.sourcePath) ?? input.provenanceSources.get(ref.sourcePath)
+    const value = ref.jsonPointer === '' ? source.value : ref.jsonPointer.slice(1).split('/').reduce((v, k) => v[k], source.value)
+    assert.equal(ref.sourceSha256, sha256(source.bytes))
+    assert.equal(ref.recordSha256, sha256(JSON.stringify(value)))
+  }
+  const reference = graph.references.find(r => r.source.sourcePath === path && r.source.jsonPointer === jsonPointer)
+  assert.equal(reference.raw, row.original.target)
+  assert.deepEqual(reference.targets, row.targets)
+  assert.equal(graph.unresolved.some(r => r.sourcePath === path && r.jsonPointer === jsonPointer), false)
+  if (jsonPointer === '/comparison_boundary') assert.equal(row.provenanceBoundary.currentBoundary, false)
+  if (jsonPointer === '/references/2') {
+    assert.equal(row.original.target, 'Game/Assets/Janseon/Data/Content/SeoulWorldGraph.json')
+    assert.equal(row.provenanceBoundary.canonicalPath, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json')
+    assert.equal(row.provenanceBoundary.currentRuntime, false)
+  }
+})
+
+for (const [name, path, jsonPointer, mutate] of [
+  ['comparison declared hash mismatch', 'lore/regions/sources/selection.json', '/comparison_boundary', i => {
+    i.sources.get('lore/regions/sources/selection.json').value.comparison_boundary.sha256 = sha256('other'); i.rebind('lore/regions/sources/selection.json')
+  }],
+  ['comparison source bytes mismatch', 'lore/regions/sources/selection.json', '/comparison_boundary', i => {
+    i.provenanceSources.get(i.comparisonPath).bytes = Buffer.from('{}')
+  }],
+  ['comparison cannot be current geometry', 'lore/regions/sources/selection.json', '/comparison_boundary', i => {
+    i.sources.get('lore/regions/sources/selection.json').value.comparison_boundary.current_boundary = true; i.rebind('lore/regions/sources/selection.json')
+  }],
+  ['comparison wrong source root', 'lore/regions/sources/selection.json', '/comparison_boundary', i => {
+    i.sources.get('lore/regions/sources/selection.json').value.comparison_boundary.source_root = '../other'; i.rebind('lore/regions/sources/selection.json')
+  }],
+  ['admin hash mismatch', 'scripts/data/admin-territorial-catalog.json', '/sourceRef', i => {
+    i.sources.get('scripts/data/admin-territorial-catalog.json').value.sourceSha256 = sha256('other'); i.rebind('scripts/data/admin-territorial-catalog.json')
+  }],
+  ['missing top-level member despite generic anchor', 'scripts/data/admin-territorial-catalog.json', '/sourceRef', i => {
+    const value = i.sources.get('lore/regions/sources/selection.json').value
+    delete value.selected_boundary; value.content = [{ anchor: 'selected_boundary' }]; i.rebind('lore/regions/sources/selection.json')
+  }],
+  ['duplicate top-level source contract', 'scripts/data/admin-territorial-catalog.json', '/sourceRef', i => {
+    const source = i.sources.get('lore/regions/sources/selection.json')
+    source.bytes = Buffer.from('{"selected_boundary":' + JSON.stringify(source.value.selected_boundary) + ',' + source.bytes.toString().slice(1))
+    source.value = JSON.parse(source.bytes); source.sha256 = sha256(source.bytes)
+  }],
+  ['missing manifest', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => i.sources.delete('snapshots/build-inputs/source-manifest.json')],
+  ['missing manifest file member', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/source-manifest.json').value.files.shift(); i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+  ['duplicate manifest file contract', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    const files = i.sources.get('snapshots/build-inputs/source-manifest.json').value.files
+    files.push(clone(files[0])); i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+  ['snapshot hash mismatch', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/SeoulWorldGraph.json').bytes = Buffer.from('{}')
+  }],
+  ['manifest snapshot hash mismatch', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/source-manifest.json').value.files[0].sha256 = sha256('other'); i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+  ['wrong repository', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/source-manifest.json').value.producer.game.repository = 'other/repository'; i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+  ['wrong revision', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/source-manifest.json').value.producer.game.commit = '0'.repeat(40); i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+  ['noncanonical Game producer path', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/source-manifest.json').value.producer.game.path = 'Game/Assets/Janseon/Data/Content/SeoulWorldGraph.json'; i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+  ['unbound originating import', 'snapshots/build-inputs/creative-name-normalization.json', '/references/2', i => {
+    i.sources.get('snapshots/build-inputs/source-manifest.json').value.files[2].sha256 = sha256('other'); i.rebind('snapshots/build-inputs/source-manifest.json')
+  }],
+]) test('local provenance rejects ' + name, async () => {
+  const input = await localProvenanceFixture(); mutate(input)
+  const graph = input.graph()
+  assert.equal(graph.localProvenanceDispositions.some(r => r.original.sourcePath === path && r.original.jsonPointer === jsonPointer), false)
+  assert.ok(graph.unresolved.some(r => r.sourcePath === path && r.jsonPointer === jsonPointer && r.required && r.reviewStatus === 'not-reviewed'))
+})
+
+test('local provenance is not a generic member or missing-path fallback', async () => {
+  const input = await localProvenanceFixture()
+  const value = { refs: [input.sources.get('scripts/data/admin-territorial-catalog.json').value.sourceRef,
+    { path: 'Game/Assets/Janseon/Data/Content/SeoulWorldGraph.json' },
+    { path: 'boundaries-kostat-2013/seoul_municipalities_geo.json' }] }
+  const bytes = Buffer.from(JSON.stringify(value))
+  input.sources.set('lore/unauthorized.json', { value, bytes, sha256: sha256(bytes) })
+  const graph = input.graph()
+  assert.equal(graph.unresolved.filter(r => r.sourcePath === 'lore/unauthorized.json').length, 3)
+  assert.equal(graph.localProvenanceDispositions.length, 3)
+})
+
 async function runCli(args) {
   // Subscribe before triggering process execution; no sleeps, polling or success-log inference.
   return new Promise((resolveResult, reject) => {
