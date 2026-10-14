@@ -1,14 +1,15 @@
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
+import { characterRulesVersion, draftAbilityIds, draftBodyPartIds, draftProfileFailures, pendingFormulas, emptyDraftProfile } from './character-profile-draft.mjs'
 
 // Private authoring contract, not a game-observer projection. Never mount this
 // store or its responses in public exports. No legacy value is an original rating.
 const baseline = JSON.parse(readFileSync(new URL('./issued-preservation-baseline.json', import.meta.url), 'utf8'))
 export const REVISIONS = Object.freeze(Object.keys(baseline.revisions))
-export const RULES_VERSION = 'seoul.opposed-d10.v1'
-export const PROFILE = Object.freeze({ resolution: 'opposed-d10', ratingMin: 0, ratingMax: 12,
-  combinedModifierMin: -4, combinedModifierMax: 4, reviewState: 'approved',
-  approvalRef: 'call_KEbyFRfpYhPcDagvgygW6RRA' })
+export const RULES_VERSION = characterRulesVersion
+export const PROFILE = Object.freeze({ abilities: draftAbilityIds, base: { minimum: 0, maximum: 20, integer: true },
+  effective: { minimum: 0, maximum: 100, integer: true }, skills: { minimum: 0, maximum: 99.9, decimalPlaces: 1 },
+  bodyParts: draftBodyPartIds, formulas: pendingFormulas, reviewState: 'design-in-progress', legacyConversion: 'none' })
 
 export class ApiError extends Error {
   constructor(status, code) { super(code); this.status = status }
@@ -57,26 +58,19 @@ export function sourceReference(source, revision) {
 
 // Candidate values are authored explicitly and never adopted into operative
 // gameplay. null means unassigned; zero is a real authored rating, not a default.
-export function originalRatings(value, revision) {
-  exactFields(value, ['rulesVersion', 'reviewState', 'source', 'ratings', 'combinedModifier'], 'E_ORIGINAL_RATINGS')
+export function originalProfile(value, revision) {
+  exactFields(value, ['rulesVersion', 'reviewState', 'source', 'profile'], 'E_ORIGINAL_PROFILE')
   if (value.rulesVersion !== RULES_VERSION || value.reviewState !== 'unreviewed') reject('E_ORIGINAL_REVIEW')
   sourceReference(value.source, revision)
-  if (!record(value.ratings)) reject('E_RATINGS')
-  for (const [key, rating] of Object.entries(value.ratings)) {
-    if (!/^original\.[a-z][a-z0-9-]*$/u.test(key)) reject('E_RATING_NAMESPACE')
-    exactFields(rating, ['value', 'source', 'reviewState'], 'E_RATING')
-    if (rating.value !== null && (!Number.isInteger(rating.value) || rating.value < 0 || rating.value > 12)) reject('E_RATING_RANGE')
-    if (rating.reviewState !== 'unreviewed') reject('E_RATING_REVIEW')
-    sourceReference(rating.source, revision)
-  }
-  if (value.combinedModifier !== null && (!Number.isInteger(value.combinedModifier) || Math.abs(value.combinedModifier) > 4)) reject('E_MODIFIER_RANGE')
+  const failures = draftProfileFailures(value.profile)
+  if (failures.length) reject(failures.join(';'))
   return structuredClone(value)
 }
 
 export function candidate(payload, revision, people, existing) {
   explicitRevision(revision)
-  exactFields(payload, ['schema', 'revision', 'audience', 'identity', 'source', 'originalRatings'], 'E_CANDIDATE_ENVELOPE')
-  if (payload.schema !== 'original-character-candidate.v1' || payload.revision !== revision || payload.audience !== 'author-private') reject('E_CANDIDATE_ENVELOPE')
+  exactFields(payload, ['schema', 'revision', 'audience', 'identity', 'source', 'originalProfile'], 'E_CANDIDATE_ENVELOPE')
+  if (payload.schema !== 'original-character-candidate.v2' || payload.revision !== revision || payload.audience !== 'author-private') reject('E_CANDIDATE_ENVELOPE')
   sourceReference(payload.source, revision)
   exactFields(payload.identity, ['id', 'name'], 'E_IDENTITY')
   if (!text(payload.identity.name)) reject('E_IDENTITY')
@@ -86,24 +80,28 @@ export function candidate(payload, revision, people, existing) {
     if (!/^candidate:[a-z0-9][a-z0-9-]*$/u.test(payload.identity.id)) reject('E_CANDIDATE_ID')
     if (people.some(person => matchesCharacter(person, payload.identity.id) || person.name === payload.identity.name)) throw new ApiError(409, 'E_EXISTING_IDENTITY')
   }
-  const ratings = originalRatings(payload.originalRatings, revision)
-  const draft = { ...structuredClone(payload), originalRatings: ratings, reviewState: 'unreviewed', operative: false, persisted: false }
+  const profile = originalProfile(payload.originalProfile, revision)
+  const draft = { ...structuredClone(payload), originalProfile: profile, formulas: pendingFormulas, reviewState: 'unreviewed', operative: false, persisted: false }
   return { candidateId: 'sha256:' + hash(JSON.stringify(draft)), ...draft }
 }
 
 // This machine-readable contract is served by /mcp/tools. The full POST/PATCH/PUT
 // envelope is required; PATCH does NOT merge fields or replace the historical sheet.
 export function apiContract() {
-  return { schema: 'original-character-api.v1', audience: 'author-private', observerProjection: false,
+  return { schema: 'original-character-api.v2', audience: 'author-private', observerProjection: false,
     revisions: REVISIONS, revisionSelector: 'exactly one ?revision=<sealed revision> on every data request',
     versionStore: 'injected createVersionStore(Map<revision, Buffer>); standalone requires CHARACTER_PARENT_PIN_SOURCE and CHARACTER_POPULATED_SOURCE sealed files before listen; unbound embedded routes return 503',
     profile: PROFILE, rulesVersion: RULES_VERSION, operativeRatings: null,
-    candidate: { schema: 'original-character-candidate.v1', revision: 'explicit selected revision', audience: 'author-private',
+    candidate: { schema: 'original-character-candidate.v2', revision: 'explicit selected revision', audience: 'author-private',
       identity: { id: 'existing K ID for update; candidate:<local-id> for create', name: 'explicit name; existing name immutable' },
       source: { revision: 'same selected revision', ref: 'nonempty author source reference; assertion not approval', reviewState: 'unreviewed' },
-      originalRatings: { rulesVersion: RULES_VERSION, reviewState: 'unreviewed', source: 'same source shape',
-        ratings: { 'original.<authored-key>': { value: 'integer 0..12 or null', source: 'same source shape', reviewState: 'unreviewed' } },
-        combinedModifier: 'integer -4..4 or null; combined total, never clamped' } },
+      originalProfile: { rulesVersion: RULES_VERSION, reviewState: 'unreviewed', source: 'same source shape; authored narrative evidence, not title or CP conversion',
+        profile: emptyDraftProfile() } },
+    profileFields: { abilities: 'exact eight IDs; base integer 0..20 or null; effective integer 0..100 or null',
+      skills: 'id, ko/en name, rating 0..99.9 to one decimal or null',
+      traits: 'id, ko/en name, description, behavior, stress, relationship; effects [{ ability, delta: integer or null }]',
+      narrative: 'ko/en text; empty pair means unassigned',
+      health: 'status; exact six bodyParts [{ id, severity, function }]; diseases [{ id, progression }]; unknown state is null' },
     writes: 'returns content-addressed unreviewed candidate; caller retains it; no persistence, approval, numeric mapping or legacy ledger writes',
     sheet: 'legacy contains the complete unchanged historical person, including every number and citation; operative false',
     export: 'public and observer audiences are rejected; deployment/authentication and public projection are not provided here',
