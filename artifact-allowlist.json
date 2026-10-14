@@ -1,5 +1,6 @@
 {
   "rootFiles": [
+    "seoul-observed-geography.json",
     "admin-territorial-scale.json",
     "confirmed-person-holdings.json",
     "portrait-style-original-c3a7e481.json",
@@ -35,6 +36,7 @@
     "pattern": "^(.+)-[A-Za-z0-9_-]{8}\\.(?:js|css)$",
     "libraryDirectory": "lib",
     "appChunks": [
+      "GeographyPage",
       "CategoriesPage",
       "CharacterDraftPage",
       "CharacterArtToolPage",
@@ -68,6 +70,7 @@
     { "path": "/states", "disposition": "page" },
     { "path": "/states/:stateSlug", "disposition": "page" },
     { "path": "/updates", "disposition": "page" },
+    { "path": "/geography", "disposition": "page" },
     { "path": "/feedback", "disposition": "page" },
     { "path": "/license", "disposition": "page" },
     { "path": "/people", "disposition": "page" },
