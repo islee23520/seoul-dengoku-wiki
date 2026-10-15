@@ -1,0 +1,9 @@
+when:
+  - event: [manual, push]
+steps:
+  build:
+    image: node:22-bookworm-slim
+    commands:
+      - npm ci
+      - npm run generate --if-present
+      - npm run build --if-present
