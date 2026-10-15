@@ -14,6 +14,8 @@ import gurpsCast from '../vendor/issued-history/5f34d92d54ca56b1f6c8f117cc6cbe8e
 import { createDraftLegacyStore } from '../src/pages/characterDraftExport'
 import { LEGACY_REVISIONS } from '../src/data/original-trpg-options'
 
+import { emptyDraftProfile } from './character-profile-draft.mjs'
+
 const repo = (name) => name === 'src/generated/peopleCatalog.ts' && process.env.DRAFT_GENERATED_CATALOG
   ? new URL('file://' + process.env.DRAFT_GENERATED_CATALOG)
   : new URL('../' + name, import.meta.url)
@@ -66,7 +68,7 @@ test.each(LEGACY_REVISIONS)('default mounted page loads and exports actual gener
     assert.equal(exported.revision, revision)
     assert.deepEqual(exported.legacy.person, variant.legacy.record)
     assert.deepEqual(exported.legacy.projection, variant)
-    assert.deepEqual(exported.originalRatings.map(item => item.value), [null, null, null, null, null, null, null])
+    assert.deepEqual(exported.characterProfile, emptyDraftProfile())
     assert.deepEqual(requests, [{ url: `${import.meta.env.BASE_URL}person-details/${detail.id}.json`, method: 'GET' }])
   } finally {
     await act(async () => root.unmount())
@@ -169,15 +171,12 @@ test('mounted draft export downloads the edit without canon writes or id issuanc
       valueSetter.call(input, value)
       await act(async () => input.dispatchEvent(new Event('input', { bubbles: true })))
     }
-    await enter('original.weapon 평가', '12')
+    await enter('prowess base', '20')
     assert.equal(exportButton.disabled, true)
-    await enter('original.weapon 세부 분야', 'authored weapon subdomain')
-    await enter('original.weapon 기준', 'rubric:v1')
-    await enter('original.weapon 근거', 'source:authored-assessment')
-    await enter('합산 보정', '5')
-    await enter('보정 근거', 'source:combined-effects')
+    await enter('profile 근거', 'source:authored-assessment')
+    await enter('prowess effective', '101')
     assert.equal(exportButton.disabled, true)
-    await enter('합산 보정', '-4')
+    await enter('prowess effective', '100')
     await enter('배경', 'edited personal background')
     assert.equal(exportButton.disabled, false)
     await act(async () => {
@@ -198,12 +197,13 @@ test('mounted draft export downloads the edit without canon writes or id issuanc
     assert.equal(exported.personal.name, '초안 수정 이름')
     assert.deepEqual(exported.legacy.person, seeded)
     assert.equal(exported.revision, revision)
-    assert.equal(exported.rulesVersion, 'seoul.opposed-d10.v1')
-    assert.deepEqual(exported.originalRatings.map(item => item.value), [null, null, null, null, null, null, 12])
-    assert.equal(exported.originalRatings[6].subdomain, 'authored weapon subdomain')
-    assert.deepEqual(exported.originalRatings[6].evidenceRefs, ['source:authored-assessment'])
+    assert.equal(exported.rulesVersion, 'seoul-character-system-contract.v1')
+    assert.deepEqual(exported.characterProfile.abilities.prowess, { base: 20, effective: 100 })
+    assert.deepEqual(exported.characterProfile.abilities.leadership, { base: null, effective: null })
+    assert.deepEqual(exported.profileSource.evidenceRefs, ['source:authored-assessment'])
+    assert.equal(exported.profileSource.decisionRef, null)
     assert.equal(exported.personal.selectedBackground, 'edited personal background')
-    assert.equal(exported.combinedModifier.value, -4)
+    assert.deepEqual(exported.formulas, { resolution: null, effectComposition: null, skillGrowth: null })
     assert.equal(exported.reviewState, 'proposal')
     for (const field of ['aiKey', 'aiModel', 'aiGenerating', 'aiMessage']) assert.equal(Object.hasOwn(exported, field), false)
     assert.deepEqual(writes, [])

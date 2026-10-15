@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate": "node scripts/generate-clan-crests.mjs && node scripts/generate-catalog.mjs",
+    "generate": "node scripts/generate-clan-crests.mjs && node scripts/generate-catalog.mjs && node scripts/seoul-observed-geography.mjs",
     "build": "npm run generate && tsc -b && vite build",
     "preview": "vite preview",
     "test": "npm run generate && vitest run scripts/test-standalone-snapshot.mjs && node --test scripts/test-clan-crests.mjs",

@@ -1,0 +1,23 @@
+.geography-page { min-inline-size: 0; overflow-wrap: anywhere; }
+.geography-introduction { margin-block-end: 1.5rem; }
+.geography-controls { display: grid; gap: 0.5rem; margin-block: 1.5rem; }
+.geography-controls select, .geography-error button { min-block-size: 44px; max-inline-size: 100%; padding: 0.5rem 0.75rem; border: 1px solid var(--wiki-muted); background: var(--wiki-paper); color: var(--wiki-text); font: inherit; }
+.geography-controls select { inline-size: 100%; min-inline-size: 0; }
+.geography-controls select:focus-visible, .geography-map path:focus-visible { outline: 2px solid var(--wiki-accent-dark); outline-offset: 2px; }
+.geography-error button:hover, .geography-error button:active { background: var(--wiki-toc); }
+.geography-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 2rem; align-items: start; }
+.geography-map { margin: 0; min-inline-size: 0; border: 1px solid var(--wiki-line); background: var(--wiki-paper); }
+.geography-map svg { display: block; inline-size: 100%; aspect-ratio: 1; }
+.geography-map path { fill: var(--wiki-line); stroke: var(--wiki-text); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+.geography-map path:hover, .geography-map path:focus-visible { fill: var(--wiki-toc); }
+.geography-map path[aria-pressed="true"] { fill: var(--wiki-accent); }
+.geography-map figcaption { padding: 0.75rem; border-block-start: 1px solid var(--wiki-line); font-size: 0.8rem; color: var(--wiki-muted); }
+.geography-detail { min-inline-size: 0; }
+.geography-detail h2 { margin-block-start: 0; }
+.geography-detail li, .geography-sources li { padding-block: 0.75rem; border-block-end: 1px solid var(--wiki-line); }
+.geography-detail details, .geography-sources details { font-size: 0.8rem; }
+.geography-detail summary, .geography-sources summary { cursor: pointer; min-block-size: 44px; padding-block: 0.5rem; }
+.geography-detail dd { margin-inline-start: 0; margin-block-end: 0.5rem; }
+.geography-sources { margin-block-start: 2rem; }
+.geography-sources code { overflow-wrap: anywhere; }
+@media (max-width: 1023px) { .geography-grid { grid-template-columns: minmax(0, 1fr); } }
