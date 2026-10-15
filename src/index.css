@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+@config "../tailwind.config.js";
+
+@utility flex-shrink-0 {
+  flex-shrink: 0;
+}
 
 :root {
   --wiki-canvas: #f7f7f4;
