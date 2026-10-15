@@ -4,6 +4,6 @@ steps:
   build:
     image: node:22-bookworm-slim
     commands:
-      - npm ci
+      - npm install --no-audit --no-fund
       - npm run generate --if-present
       - npm run build --if-present
