@@ -1,0 +1,32 @@
+✔ two squads: every walking member limits budget, including attached hero (2.253709ms)
+✔ roads, explicit transfer and underground have hand-calculated costs (2.788459ms)
+✔ exact budget succeeds; one unit short rejects without prefix execution (0.186291ms)
+✔ ZOC endpoint preserves accounting remainder; transit/start reject (0.224083ms)
+✔ blockade, permission, layer and adjacency are illegal, with global check precedence (0.34075ms)
+✔ forced march restriction survives a stance change; stopped and camp cannot move (0.2115ms)
+✔ encumbrance exact boundaries, overload and immobile member (0.16625ms)
+✔ missing, negative, fractional, unsafe inputs and duplicate identities reject (0.854291ms)
+✔ BigInt intermediates do not silently overflow; output overflow rejects (0.184584ms)
+✔ soldier cap and empty squads; budget does not hide missing inputs (0.178792ms)
+✔ canonical hash ignores collection order but preserves path/cost meaning (1.606084ms)
+✔ replay identity excludes submission, host and translation metadata at every entity level (1.024166ms)
+✔ two synthetic squad rates cross explicit road/transfer distances (2.752791ms)
+✔ elapsed partitions preserve exact carry, including arrival with no banked distance (2.318208ms)
+✔ empty world pauses authoritative time; battle lock advances world but not squad (0.368792ms)
+✔ invalid path/access/numbers reject without changing caller state (0.581084ms)
+✔ time/work dimensions: two hand examples, forced march and horizon nodes (3.070167ms)
+✔ all five stances use explicit rates; action restrictions are separate (0.366875ms)
+✔ mid-edge replacement preserves exact fractional position and accepted revision (0.5855ms)
+✔ blocked, unauthorized, invalid cost and revision failures never change state or old order (1.35225ms)
+✔ ZOC endpoint stops, transit and new ordinary orders from ZOC reject (0.154ms)
+✔ AI and player use the identical command path; replay is stable and cost-sensitive (2.757417ms)
+✔ cost ceil, event partition and pause/battle locking preserve exact state (0.133334ms)
+✔ nested display metadata cannot change paused replay or retained-prefix acceptance (0.53675ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108.103458

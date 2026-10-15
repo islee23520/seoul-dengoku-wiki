@@ -1,0 +1,8 @@
+Focused RED: Janseon.Foundation.Tests.RealtimeCardSettlementTests
+Unity exit: 2
+Result: Failed(Child), total 23, passed 20, failed 3, skipped 0
+Failures:
+- Catalog_HasSixCards_AndPreservesOriginalIds: expected 6, was 5.
+- MobilityRegroup_InvalidDeadBlockedAndOutOfBoundsTargets_AreZeroMutation: expected CardInvalidTarget, got CardOutOfRadius because the card did not exist.
+- MobilityRegroup_RepositionsOneLivingPlayerUnit_AndConsumesRecharge: expected success, got BattleRejection because the card did not exist.
+Raw evidence: sixth-card-red.xml, sixth-card-red.log, sixth-card-red.exit.

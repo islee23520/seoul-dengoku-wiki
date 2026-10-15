@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-09-28T13:38:09.439Z",
+  "expected": "Anonymous campaign WebGL permits real turn, combat, settlement and return",
+  "scenarios": [
+    {
+      "route": "tripothon",
+      "requestedUrl": "https://seoul-dengoku.linalab.io/tripothon/",
+      "initialHttpStatus": 302,
+      "redirect": "https://linalab.cloudflareaccess.com/cdn-cgi/access/login/seoul-dengoku.linalab.io",
+      "observed": {
+        "title": "",
+        "origin": "null",
+        "path": "blank",
+        "text": "",
+        "canvasCount": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "snapshot": "",
+      "screenshot": null,
+      "result": "NEEDS_GAMEPLAY_VERIFICATION",
+      "screenshotError": "Error: page.screenshot: browser CDP command timed out while capturing viewport screenshot before the requested 10000ms page.screenshot timeout completed"
+    },
+    {
+      "route": "play",
+      "requestedUrl": "https://seoul-dengoku.linalab.io/play/",
+      "initialHttpStatus": 302,
+      "redirect": "https://linalab.cloudflareaccess.com/cdn-cgi/access/login/seoul-dengoku.linalab.io",
+      "observed": {
+        "title": "",
+        "origin": "null",
+        "path": "blank",
+        "text": "",
+        "canvasCount": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "snapshot": "",
+      "screenshot": null,
+      "result": "NEEDS_GAMEPLAY_VERIFICATION",
+      "screenshotError": "Error: page.screenshot: browser CDP command timed out while capturing viewport screenshot before the requested 10000ms page.screenshot timeout completed"
+    }
+  ],
+  "cleanup": "Owned browser closed; task-created temporary profile removed. User browser untouched."
+}

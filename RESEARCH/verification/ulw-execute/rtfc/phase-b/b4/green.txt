@@ -1,0 +1,4 @@
+total=132 passed=130 failed=2 skipped=0
+실패 2건: Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets, Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head — 기준 명시 2건과 이름 일치
+RealtimeBattleSimTests 12/12 Passed, BattleSrpgTests 9/9 Passed
+b0 테스트 2건 자기모순 본문 교정 승인 기록: 모순 단정 원문은 b4/b4d 실행 XML의 <failure> 참조

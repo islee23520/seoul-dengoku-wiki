@@ -1,0 +1,29 @@
+Unity batchmode RED evidence
+command=Unity -batchmode -nographics -projectPath Game -runTests -testPlatform EditMode -testFilter Janseon.Foundation.Tests.RealtimeBattleSimTests
+exit=1
+
+[compiler errors from /tmp/rtfc-b0.log]
+1870:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(3,20): error CS0234: The type or namespace name 'Battle' does not exist in the namespace 'Janseon.Core' (are you missing an assembly reference?)
+1871:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(4,20): error CS0234: The type or namespace name 'Battle' does not exist in the namespace 'Janseon.Core' (are you missing an assembly reference?)
+1872:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(12,16): error CS0246: The type or namespace name 'BattleSetup' could not be found (are you missing a using directive or an assembly reference?)
+1873:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,72): error CS0246: The type or namespace name 'BattleTickCommandKind' could not be found (are you missing a using directive or an assembly reference?)
+1874:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,16): error CS0246: The type or namespace name 'BattleTickCommand' could not be found (are you missing a using directive or an assembly reference?)
+1883:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(3,20): error CS0234: The type or namespace name 'Battle' does not exist in the namespace 'Janseon.Core' (are you missing an assembly reference?)
+1884:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(4,20): error CS0234: The type or namespace name 'Battle' does not exist in the namespace 'Janseon.Core' (are you missing an assembly reference?)
+1885:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(12,16): error CS0246: The type or namespace name 'BattleSetup' could not be found (are you missing a using directive or an assembly reference?)
+1886:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,72): error CS0246: The type or namespace name 'BattleTickCommandKind' could not be found (are you missing a using directive or an assembly reference?)
+1887:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,16): error CS0246: The type or namespace name 'BattleTickCommand' could not be found (are you missing a using directive or an assembly reference?)
+1893:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(3,20): error CS0234: The type or namespace name 'Battle' does not exist in the namespace 'Janseon.Core' (are you missing an assembly reference?)
+1894:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(4,20): error CS0234: The type or namespace name 'Battle' does not exist in the namespace 'Janseon.Core' (are you missing an assembly reference?)
+1895:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(12,16): error CS0246: The type or namespace name 'BattleSetup' could not be found (are you missing a using directive or an assembly reference?)
+1896:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,72): error CS0246: The type or namespace name 'BattleTickCommandKind' could not be found (are you missing a using directive or an assembly reference?)
+1897:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,16): error CS0246: The type or namespace name 'BattleTickCommand' could not be found (are you missing a using directive or an assembly reference?)
+1923:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(12,16): error CS0246: The type or namespace name 'BattleSetup' could not be found (are you missing a using directive or an assembly reference?)
+1924:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,72): error CS0246: The type or namespace name 'BattleTickCommandKind' could not be found (are you missing a using directive or an assembly reference?)
+1925:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,16): error CS0246: The type or namespace name 'BattleTickCommand' could not be found (are you missing a using directive or an assembly reference?)
+1926:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(12,16): error CS0246: The type or namespace name 'BattleSetup' could not be found (are you missing a using directive or an assembly reference?)
+1927:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,72): error CS0246: The type or namespace name 'BattleTickCommandKind' could not be found (are you missing a using directive or an assembly reference?)
+1928:Assets/Tests/EditMode/RealtimeBattleSimTests.cs(19,16): error CS0246: The type or namespace name 'BattleTickCommand' could not be found (are you missing a using directive or an assembly reference?)
+
+[result XML]
+no XML produced because compilation failed

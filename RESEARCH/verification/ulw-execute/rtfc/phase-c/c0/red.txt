@@ -1,0 +1,7 @@
+# Phase C RED capture
+
+- Command: Unity 6000.7.0a5 EditMode filter `Janseon.Foundation.Tests.RealtimeCardSettlementTests`
+- Result: RED before execution; Unity exited with code 1 during script compilation.
+- Evidence: `/tmp/rtfc-c0c.log`
+- Primary contract failures: `CardCatalog`/`CardKind` are not defined, `BattleTickCommand.StrongholdCards` is absent, and the settlement tests reference the new BattleResult-to-EncounterResult/domain-swap APIs not present in the current implementation. Unity also reported type ambiguity between legacy and realtime battle contract types and missing campaign fixture helpers.
+- This is intentional: tests are contract-first and implementation was not added in Phase C.
