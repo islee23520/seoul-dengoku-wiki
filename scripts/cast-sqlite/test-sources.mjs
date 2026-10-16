@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, writeFile, rm, symlink } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, rm, symlink, utimes } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
@@ -134,6 +134,22 @@ test('source revision covers reference, engine-private and excluded inputs', asy
     await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
     execFileSync('git', ['-C', root, 'restore', '--', source]);
   }
+});
+
+test('source revision rejects same-size content hidden by Git stat cache', async (t) => {
+  const root = await fixture(t);
+  const source = 'lore/name-pools/values-cast.json';
+  const path = join(root, source);
+  const fixedTime = new Date('2020-01-01T00:00:00Z');
+  execFileSync('git', ['-C', root, 'config', '--local', 'core.trustctime', 'false']);
+  await writeFile(path, '{"x":0}');
+  await utimes(path, fixedTime, fixedTime);
+  execFileSync('git', ['-C', root, 'add', '--', source]);
+  commitFixture(root);
+  await writeFile(path, '{"x":1}');
+  await utimes(path, fixedTime, fixedTime);
+  assert.equal(execFileSync('git', ['-C', root, 'status', '--porcelain=v1', '--', source], { encoding: 'utf8' }), '');
+  await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
 });
 
 test('official source errors are returned without a domain-validation exception', async (t) => {

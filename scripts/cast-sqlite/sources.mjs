@@ -148,9 +148,30 @@ async function verifySnapshot(root, files) {
   }
 }
 
-function verifyGitInputs(root, files) {
+async function verifyGitInputs(root, files, sourceRevision) {
   const paths = [...new Set(files.map((file) => file.logical_path))].sort();
   const pathspecs = paths.map((path) => `:(literal)${path}`);
+  const objectFormat = sourceRevision.length === 40 ? 'sha1' : sourceRevision.length === 64 ? 'sha256' : null;
+  if (!objectFormat) fail('E_SOURCE_DIRTY', 'cannot determine Git object format');
+  let tree;
+  try { tree = run('git', ['-C', root, 'ls-tree', '-r', '-z', sourceRevision, '--', ...pathspecs], root); }
+  catch { fail('E_SOURCE_DIRTY', 'cannot read required source objects from Git HEAD'); }
+  const headObjects = new Map();
+  for (const entry of tree.stdout.split('\0').filter(Boolean)) {
+    const match = /^100(?:644|755) blob ([a-f0-9]{40,64})\t(.+)$/u.exec(entry);
+    if (!match || headObjects.has(match[2])) fail('E_SOURCE_DIRTY', 'invalid required source in Git HEAD');
+    headObjects.set(match[2], match[1]);
+  }
+  if (tree.exitCode !== 0 || headObjects.size !== paths.length || paths.some((path) => !headObjects.has(path))) {
+    fail('E_SOURCE_DIRTY', 'required source is absent from Git HEAD');
+  }
+  for (const file of files) {
+    const path = await resolveTrustedSourcePath(root, file.logical_path);
+    const bytes = await readFile(path);
+    if (sha256(bytes) !== file.sha256) fail('E_SOURCE_CHANGED', file.logical_path);
+    const objectId = createHash(objectFormat).update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
+    if (objectId !== headObjects.get(file.logical_path)) fail('E_SOURCE_DIRTY', 'required source bytes differ from Git HEAD');
+  }
   let tracked;
   try { tracked = run('git', ['-C', root, 'ls-files', '-v', '-z', '--', ...pathspecs], root); }
   catch { fail('E_SOURCE_DIRTY', 'cannot verify required source tracking against Git HEAD'); }
@@ -233,7 +254,7 @@ export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true })
   const excludedFiles = await loadExcludedSourceFiles({ sourceRoot: root, resolveTrustedSourcePath, sha256 });
   const allInputs = [...files, ...referenceFiles, ...engineFiles, ...excludedFiles];
   await verifySnapshot(root, allInputs);
-  verifyGitInputs(root, allInputs);
+  await verifyGitInputs(root, allInputs, sourceRevision);
   const sourceSetSha256 = sha256([...files, ...referenceFiles, ...excludedFiles].sort((a, b) => a.logical_path.localeCompare(b.logical_path)).map((file) => `${file.logical_path}\0${file.sha256}\n`).join(''));
   const officialChecks = [];
   const gurpsSchema = files.find((file) => file.logical_path === 'lore/name-pools/gurps-cast.json').document.schema;
@@ -243,7 +264,7 @@ export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true })
     officialChecks.push(Object.freeze({ checkName: 'gurps-cast', ...run(process.execPath, [script, '--check', '--revision', sourceRevision], root) }));
   }
   await verifySnapshot(root, allInputs);
-  verifyGitInputs(root, allInputs);
+  await verifyGitInputs(root, allInputs, sourceRevision);
   if (run('git', ['-C', root, 'rev-parse', 'HEAD'], root).stdout.trim() !== sourceRevision) fail('E_SOURCE_CHANGED', 'Git HEAD changed while loading');
   return Object.freeze({ sourceRevision, sourceSetSha256, files: Object.freeze(files), records: Object.freeze(records), referenceFiles, engineFiles, excludedFiles, officialChecks: Object.freeze(officialChecks) });
 }
