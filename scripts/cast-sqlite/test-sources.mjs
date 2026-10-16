@@ -152,6 +152,21 @@ test('source revision rejects same-size content hidden by Git stat cache', async
   await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
 });
 
+test('source revision rejects a replacement commit masking modified inputs', async (t) => {
+  const root = await fixture(t);
+  const source = 'lore/name-pools/values-cast.json';
+  const original = execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  await writeFile(join(root, source), '{"forged":true}');
+  execFileSync('git', ['-C', root, 'add', '--', source]);
+  commitFixture(root);
+  const replacement = execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  execFileSync('git', ['-C', root, 'update-ref', 'HEAD', original]);
+  execFileSync('git', ['-C', root, 'replace', original, replacement]);
+  assert.equal(execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(), original);
+  assert.equal(execFileSync('git', ['-C', root, 'status', '--porcelain=v1', '--', source], { encoding: 'utf8' }), '');
+  await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
+});
+
 test('official source errors are returned without a domain-validation exception', async (t) => {
   const root = await fixture(t);
   const bundle = await loadSourceBundle({ sourceRoot: root, runOfficialChecks: true });

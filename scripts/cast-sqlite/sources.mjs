@@ -24,7 +24,7 @@ export const RETIRED_HISTORICAL_REFERENCE_PATHS = Object.freeze(['lore/culture/M
 export const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
 const escapePointer = (key) => key.replace(/~/g, '~0').replace(/\//g, '~1');
-const environment = () => Object.fromEntries(Object.entries(process.env).filter(([key]) => /^(PATH|SYSTEMROOT|WINDIR|TEMP|TMP|HOME|USERPROFILE|LANG|LC_ALL)$/i.test(key)));
+const environment = () => ({ ...Object.fromEntries(Object.entries(process.env).filter(([key]) => /^(PATH|SYSTEMROOT|WINDIR|TEMP|TMP|HOME|USERPROFILE|LANG|LC_ALL)$/i.test(key))), GIT_NO_REPLACE_OBJECTS: '1' });
 
 export async function resolveTrustedSourceRoot(sourceRoot) {
   if (typeof sourceRoot !== 'string' || !isAbsolute(sourceRoot)) fail('E_SOURCE_ROOT', 'sourceRoot must be an absolute WIKI directory');
