@@ -38,6 +38,8 @@ $castOtherDb = Join-Path $castOut 'wiki-cast-other.sqlite'
 npm run cast:build -- --source-root 'D:/trusted/seoul-dengoku-wiki' --output "$castOtherDb"
 ```
 
+빌드와 원천 포함 검증은 실제로 읽는 모든 입력 파일이 해당 위키 checkout의 Git HEAD와 일치해야 합니다. 필요한 원천이 미커밋 상태이거나 Git 추적에서 제외되면 `E_SOURCE_DIRTY`로 거부합니다. 관련 없는 파일의 수정은 검사 범위에 포함하지 않습니다.
+
 ## 검증 상태를 읽는 법
 
 원천을 지정한 verify는 DB 무결성, source revision·해시, 원천 보존 또는 projection 계보, 현재 profile 재계산을 확인하는 전체 원천 검증입니다. 공식 검사기가 현재 원천 schema를 지원하지 않으면 이를 실행한 것처럼 표시하지 않고 `not_checked`로 기록합니다. full verify는 원천 checkout의 Git HEAD도 비교합니다. DB를 만든 뒤 커밋이 바뀌면 JSON 내용이 같더라도 이전 DB의 full verify는 최신 스냅숏으로 인정되지 않으므로 새 DB를 빌드해야 합니다. `--source-root`를 생략하면 DB 내부 구조와 저장된 계보만 확인하는 offline(오프라인) 부분 검증이며, 원천 최신성·현재 renderer·공식 검사를 보장하지 않습니다.

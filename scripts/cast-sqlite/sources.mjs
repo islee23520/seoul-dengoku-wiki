@@ -148,6 +148,23 @@ async function verifySnapshot(root, files) {
   }
 }
 
+function verifyGitInputs(root, files) {
+  const paths = [...new Set(files.map((file) => file.logical_path))].sort();
+  const pathspecs = paths.map((path) => `:(literal)${path}`);
+  let tracked;
+  try { tracked = run('git', ['-C', root, 'ls-files', '-v', '-z', '--', ...pathspecs], root); }
+  catch { fail('E_SOURCE_DIRTY', 'cannot verify required source tracking against Git HEAD'); }
+  const entries = tracked.stdout.split('\0').filter(Boolean);
+  if (tracked.exitCode !== 0 || entries.length !== paths.length
+    || entries.some((entry, index) => entry !== `H ${paths[index]}`)) {
+    fail('E_SOURCE_DIRTY', 'required source is not a normally tracked Git HEAD input');
+  }
+  let status;
+  try { status = run('git', ['-C', root, '-c', 'core.fsmonitor=false', 'status', '--porcelain=v1', '-z', '--untracked-files=all', '--', ...pathspecs], root); }
+  catch { fail('E_SOURCE_DIRTY', 'cannot verify required source state against Git HEAD'); }
+  if (status.exitCode !== 0 || status.stdout.length) fail('E_SOURCE_DIRTY', 'required source differs from Git HEAD');
+}
+
 async function loadPrivateEngineFiles(root) {
   return Promise.all(ENGINE_PRIVATE_SOURCE_PATHS.map(async (logical_path) => {
     const path = await resolveTrustedSourcePath(root, logical_path);
@@ -214,15 +231,19 @@ export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true })
   const referenceFiles = Object.freeze(await loadReferenceFiles(root));
   const engineFiles = Object.freeze(await loadPrivateEngineFiles(root));
   const excludedFiles = await loadExcludedSourceFiles({ sourceRoot: root, resolveTrustedSourcePath, sha256 });
+  const allInputs = [...files, ...referenceFiles, ...engineFiles, ...excludedFiles];
+  await verifySnapshot(root, allInputs);
+  verifyGitInputs(root, allInputs);
   const sourceSetSha256 = sha256([...files, ...referenceFiles, ...excludedFiles].sort((a, b) => a.logical_path.localeCompare(b.logical_path)).map((file) => `${file.logical_path}\0${file.sha256}\n`).join(''));
   const officialChecks = [];
   const gurpsSchema = files.find((file) => file.logical_path === 'lore/name-pools/gurps-cast.json').document.schema;
   if (runOfficialChecks && gurpsSchema !== 'wiki-gurps-cast.v1') {
     const script = await resolveTrustedSourcePath(root, 'scripts/gurps-cast.mjs');
-    await verifySnapshot(root, [...files, ...referenceFiles, ...engineFiles, ...excludedFiles]);
+    await verifySnapshot(root, allInputs);
     officialChecks.push(Object.freeze({ checkName: 'gurps-cast', ...run(process.execPath, [script, '--check', '--revision', sourceRevision], root) }));
   }
-  await verifySnapshot(root, [...files, ...referenceFiles, ...engineFiles, ...excludedFiles]);
+  await verifySnapshot(root, allInputs);
+  verifyGitInputs(root, allInputs);
   if (run('git', ['-C', root, 'rev-parse', 'HEAD'], root).stdout.trim() !== sourceRevision) fail('E_SOURCE_CHANGED', 'Git HEAD changed while loading');
   return Object.freeze({ sourceRevision, sourceSetSha256, files: Object.freeze(files), records: Object.freeze(records), referenceFiles, engineFiles, excludedFiles, officialChecks: Object.freeze(officialChecks) });
 }

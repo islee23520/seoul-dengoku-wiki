@@ -34,8 +34,13 @@ async function fixture(t) {
   await writeFile(join(root, 'scripts/lore-json-render.mjs'), 'export const renderLoreMarkdown = (document, locale) => document[locale];\n');
   await writeFile(join(root, 'scripts/gurps-cast.mjs'), 'console.error("FAIL: fixture source issue"); process.exitCode = 1;\n');
   execFileSync('git', ['init', '--quiet', root]);
-  execFileSync('git', ['-C', root, '-c', 'user.name=fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--allow-empty', '--quiet', '-m', 'fixture']);
+  execFileSync('git', ['-C', root, 'add', '--', ...new Set([...REQUIRED_SOURCE_PATHS, ...ENGINE_PRIVATE_SOURCE_PATHS, ...EXCLUDED_SOURCE_PATHS, ...REFERENCE_TARGET_PATHS])]);
+  commitFixture(root);
   return root;
+}
+
+function commitFixture(root) {
+  execFileSync('git', ['-C', root, '-c', 'user.name=fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '-m', 'fixture']);
 }
 
 test('manifest separates all fixed data sources and executable provenance', () => {
@@ -75,6 +80,8 @@ test('bundle retains exact UTF8 bytes and source key order, deterministic hashes
   const path = 'lore/name-pools/values-cast.json';
   const raw = Buffer.from('{\r\n "10": "한글", "2": null, "real": 1.0, "exp": 1e2, "bool": false\r\n}\r\n');
   await writeFile(join(root, path), raw);
+  execFileSync('git', ['-C', root, 'add', '--', path]);
+  commitFixture(root);
   const first = await loadSourceBundle({ sourceRoot: root, runOfficialChecks: false });
   const second = await loadSourceBundle({ sourceRoot: root, runOfficialChecks: false });
   const file = first.files.find((f) => f.logical_path === path);
@@ -99,6 +106,34 @@ test('bundle retains exact UTF8 bytes and source key order, deterministic hashes
   assert.equal(renderer.renderLoreMarkdown({ ko: '원문' }, 'ko'), '원문');
   await writeFile(join(root, 'scripts/lore-json-render.mjs'), 'throw new Error("must not execute");');
   await assert.rejects(loadTrustedRenderer({ sourceRoot: root, bundle: first }), { code: 'E_SOURCE_CHANGED' });
+});
+
+test('source revision rejects modified required inputs while allowing unrelated changes', async (t) => {
+  const root = await fixture(t);
+  const source = 'lore/name-pools/values-cast.json';
+  const revision = execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  await writeFile(join(root, 'unrelated.txt'), 'unrelated change');
+  assert.equal((await loadSourceBundle({ sourceRoot: root, runOfficialChecks: false })).sourceRevision, revision);
+  await writeFile(join(root, source), '{"changed":true}');
+  assert.equal(execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(), revision);
+  await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
+  execFileSync('git', ['-C', root, 'add', '--', source]);
+  await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
+  execFileSync('git', ['-C', root, 'rm', '--cached', '--quiet', '--', source]);
+  await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
+});
+
+test('source revision covers reference, engine-private and excluded inputs', async (t) => {
+  const root = await fixture(t);
+  for (const source of [
+    REFERENCE_TARGET_PATHS.find((path) => !REQUIRED_SOURCE_PATHS.includes(path)),
+    ENGINE_PRIVATE_SOURCE_PATHS[0],
+    EXCLUDED_SOURCE_PATHS[0],
+  ]) {
+    await writeFile(join(root, source), '{"changed":true}');
+    await assert.rejects(loadSourceBundle({ sourceRoot: root, runOfficialChecks: false }), { code: 'E_SOURCE_DIRTY' });
+    execFileSync('git', ['-C', root, 'restore', '--', source]);
+  }
 });
 
 test('official source errors are returned without a domain-validation exception', async (t) => {
