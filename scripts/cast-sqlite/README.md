@@ -1,6 +1,6 @@
 # 위키 저장소 전용 인물 SQLite 사용 안내
 
-이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 기존 DB를 갱신하거나 원천 JSON을 고치지 않습니다.
+이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 원천 JSON은 고치지 않습니다. 저장소 정본 DB만 같은 경로로 다시 빌드할 때 교체합니다.
 
 영문 용어는 다음 뜻으로 사용합니다.
 
@@ -11,6 +11,14 @@
 - **allowlist projection (허용 목록 투영본)**: 비공개 원천에서 공개가 허용된 필드만 골라 만든 값입니다.
 
 이 DB의 생성·복사는 공개, 배포, 게임 구현, owner approval(소유자 승인)을 뜻하지 않습니다.
+
+## 저장소 정본
+
+텍스트 원천을 정규화한 추적 파일은 `data/canonical/wiki-cast.sqlite`입니다. 인물 JSON은 집필 원천으로 남고, 이 파일이 로컬에서 조회하는 정규화 저장본입니다. 호스팅 데이터베이스로 옮기기 전까지 이 파일을 Git에 둡니다. 이 경로로 다시 빌드하면 그 파일만 교체하며, 이전 바이트는 Git 이력에 남습니다. 다른 저장소 안 경로는 계속 거부합니다.
+
+```powershell
+npm run cast:build -- --output "data/canonical/wiki-cast.sqlite"
+```
 
 ## 준비와 단독 실행
 
@@ -29,7 +37,7 @@ npm run cast:build -- --output "$castDb"
 npm run cast:verify -- --db "$castDb" --source-root "$castSource" --receipt "$castReceipt"
 ```
 
-`--output`과 `--receipt`는 존재하지 않는 새 경로여야 합니다. 같은 경로를 다시 쓰면 `E_OUTPUT_EXISTS` 또는 `E_RECEIPT_EXISTS`로 실패하며 기존 파일의 바이트는 보존됩니다. DB는 원천 checkout **밖**의 로컬 경로에 두어야 합니다. 위 예시는 운영체제 임시 디렉터리를 사용하며 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않습니다.
+`--output`과 `--receipt`는 존재하지 않는 새 경로여야 합니다. 같은 경로를 다시 쓰면 `E_OUTPUT_EXISTS` 또는 `E_RECEIPT_EXISTS`로 실패하며 기존 파일의 바이트는 보존됩니다. 저장소 안에 둔 수 있는 DB는 `data/canonical/wiki-cast.sqlite` 하나입니다. 위 예시처럼 임시 복사본은 checkout 밖에 두며, 검증 영수와 임시 복사본은 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않습니다.
 
 다른 신뢰할 수 있는 위키 checkout을 명시적으로 읽어야 할 때만 `build`에도 절대 경로를 지정합니다.
 

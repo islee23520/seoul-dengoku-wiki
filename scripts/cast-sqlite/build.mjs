@@ -1,5 +1,5 @@
 import { randomBytes } from 'node:crypto';
-import { link, lstat, readFile, realpath, unlink } from 'node:fs/promises';
+import { link, lstat, mkdir, readFile, realpath, rename, unlink } from 'node:fs/promises';
 import { basename, dirname, isAbsolute, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DATA_SOURCE_PATHS, SCRIPT_SOURCE_PATHS, loadSourceBundle, loadTrustedRenderer, resolveTrustedSourcePath, sha256 } from './sources.mjs';
@@ -18,6 +18,12 @@ import { EXCLUDED_SOURCE_TABLE_COLUMNS, mapExcludedSourceDomains } from './exclu
 
 export const GENERATOR_VERSION = '1.0.0';
 export const DEFAULT_SOURCE_ROOT = resolve(fileURLToPath(new URL('../..', import.meta.url)));
+export const CANONICAL_CAST_DATABASE = 'data/canonical/wiki-cast.sqlite';
+
+export function isCanonicalCastOutput(sourceRoot, outputPath) {
+  return typeof sourceRoot === 'string' && isAbsolute(sourceRoot) && typeof outputPath === 'string'
+    && resolve(outputPath) === resolve(sourceRoot, CANONICAL_CAST_DATABASE);
+}
 const INCLUDED_DOMAINS = Object.freeze(['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance']);
 const EXCLUDED_DOMAINS = Object.freeze(['synthetics', 'bestiary', 'organizations', 'authoring-examples', 'roster-100', 'cast-backfill-draft']);
 
@@ -94,7 +100,9 @@ async function requireAbsent(path) {
 async function preflightOutput(sourceRoot, outputPath) {
   if (typeof outputPath !== 'string' || outputPath.trim() === '') fail('E_BUILD_OPTIONS', 'outputPath가 필요합니다.');
   const output = resolve(outputPath);
-  await requireAbsent(output);
+  const canonical = isCanonicalCastOutput(sourceRoot, output);
+  if (!canonical) await requireAbsent(output);
+  if (canonical) await mkdir(dirname(output), { recursive: true });
   let directory;
   try {
     directory = await realpath(dirname(output));
@@ -103,7 +111,7 @@ async function preflightOutput(sourceRoot, outputPath) {
     if (cause.code === 'E_OUTPUT_DIRECTORY') throw cause;
     fail('E_OUTPUT_DIRECTORY', '출력 디렉터리가 존재해야 합니다.', cause);
   }
-  if (typeof sourceRoot === 'string' && isAbsolute(sourceRoot)) {
+  if (!canonical && typeof sourceRoot === 'string' && isAbsolute(sourceRoot)) {
     const source = await realpath(sourceRoot).catch(() => resolve(sourceRoot));
     const inside = relative(source, directory);
     if (inside === '' || (!inside.startsWith('..') && !isAbsolute(inside))) fail('E_OUTPUT_SOURCE_ROOT', '읽기 전용 정본 디렉터리 안에 출력할 수 없습니다.');
@@ -253,7 +261,8 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
   const degraded = officialIssueCount > 0 || importerIssueCount > 0 || tables.source_check_run.some((run) => run.exit_code !== 0);
   if (requireClean && (degraded || bundle.officialChecks.length === 0)) fail('E_SOURCE_QUALITY', `공식 검사 ${bundle.officialChecks.length === 0 ? '미실행(현재 스키마 미지원)' : officialIssueCount + '건'}, importer 검사 ${importerIssueCount}건(참조 앵커 미확인 ${sourceReferenceUnresolvedCount}건 포함)입니다.`);
   await assertSnapshot(effectiveSourceRoot, bundle);
-  await requireAbsent(output);
+  const canonical = isCanonicalCastOutput(effectiveSourceRoot, output);
+  if (!canonical) await requireAbsent(output);
   const temp = resolve(dirname(output), `.${basename(output)}.build-${randomBytes(16).toString('hex')}.tmp`);
   let db;
   let ownsTemp = false;
@@ -277,7 +286,8 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
     await assertSnapshot(effectiveSourceRoot, bundle);
     const bytes = await readFile(temp);
     const digest = sha256(bytes);
-    try { await link(temp, output); }
+    if (canonical) await rename(temp, output);
+    else try { await link(temp, output); }
     catch (cause) {
       if (cause.code === 'EEXIST') fail('E_OUTPUT_EXISTS', '게시 직전에 출력 경로가 생성되었습니다. 기존 파일을 보존했습니다.', cause);
       fail('E_OUTPUT_PUBLISH', '배타적 hard-link 게시에 실패했습니다.', cause);
