@@ -18,6 +18,7 @@ steps:
     commands:
       - apk add --no-cache openssh-client >/dev/null
       - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-      - printf '%s\n' "$GDD_DEPLOY_KEY" > ~/.ssh/id_ed25519 && chmod 600 ~/.ssh/id_ed25519
+      - printf '%s' "$GDD_DEPLOY_KEY_B64" | base64 -d > ~/.ssh/id_ed25519 && chmod 600 ~/.ssh/id_ed25519
+      - wc -c ~/.ssh/id_ed25519
       - ssh-keyscan -p 22 100.0.0.0 >> ~/.ssh/known_hosts 2>/dev/null
       - tar -C viewer/dist -cf - . | ssh -i ~/.ssh/id_ed25519 -o BatchMode=yes oliver@100.0.0.0 "rm -rf /e/git/seoul-dengoku-web/site/gdd.next && mkdir -p /e/git/seoul-dengoku-web/site/gdd.next && tar -C /e/git/seoul-dengoku-web/site/gdd.next -xf - && rm -rf /e/git/seoul-dengoku-web/site/gdd.prev && mv /e/git/seoul-dengoku-web/site/gdd /e/git/seoul-dengoku-web/site/gdd.prev && mv /e/git/seoul-dengoku-web/site/gdd.next /e/git/seoul-dengoku-web/site/gdd && echo DEPLOY_DONE"
