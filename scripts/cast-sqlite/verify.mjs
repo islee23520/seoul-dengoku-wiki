@@ -1,3 +1,5 @@
+import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { readFile, lstat, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -48,6 +50,13 @@ const METADATA_KEYS = ['schema_version', 'generator_version', 'node_version', 's
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
 const equal = (left, right) => JSON.stringify(left) === JSON.stringify(right);
 const quote = (identifier) => `"${identifier.replaceAll('"', '""')}"`;
+const gitEnvironment = () => ({ ...Object.fromEntries(Object.entries(process.env).filter(([key]) => /^(PATH|SYSTEMROOT|WINDIR|TEMP|TMP|HOME|USERPROFILE|LANG|LC_ALL)$/i.test(key))), GIT_NO_REPLACE_OBJECTS: '1' });
+
+function git(root, args) {
+  const result = spawnSync('git', ['-C', root, ...args], { cwd: root, shell: false, windowsHide: true, env: gitEnvironment(), timeout: 120_000, maxBuffer: 16 * 1024 * 1024 });
+  if (result.error || result.signal || result.status === null) fail('E_SOURCE_EXECUTION', result.error?.code ?? result.signal ?? 'missing exit status');
+  return { exitCode: result.status, stdout: result.stdout.toString('utf8') };
+}
 
 async function absent(path, code) {
   try { await lstat(path); } catch (error) { if (error.code === 'ENOENT') return; throw error; }
@@ -142,10 +151,41 @@ async function currentBundle(sourceRoot, stored, metadata) {
     if (bytes.length !== file.byte_length || sha256(bytes) !== file.sha256) fail('E_SOURCE_STALE', file.logical_path);
   }
   const bundle = await loadSourceBundle({ sourceRoot: root });
-  if (bundle.sourceRevision !== metadata.source_git_commit) fail('E_SOURCE_REVISION', '현재 WIKI Git HEAD가 저장된 source_git_commit과 다릅니다.');
   if (bundle.sourceSetSha256 !== stored.sourceSetSha256) fail('E_SOURCE_STALE', '검증 도중 원천 파일 집합이 변경되었습니다.');
+  await checkSourceRevision(root, bundle, metadata.source_git_commit);
   const { renderLoreMarkdown } = await loadTrustedRenderer({ sourceRoot: root, bundle });
   return { bundle, renderLoreMarkdown };
+}
+
+/**
+ * Provenance contract for the stored source_git_commit. loadSourceBundle has already proven that every input
+ * in the working tree is byte-identical to the current Git HEAD; this check ties that state to the recorded revision:
+ * it must be a commit object in HEAD's own history (HEAD or an ancestor), and every input the DB was built from must
+ * hash to the blob recorded in that commit's tree. Descendant commits that touch no input (for example the commit that
+ * tracks the DB artifact itself) therefore verify, while a revision outside the history, a non-commit object, or any
+ * input blob drift between the recorded commit and the current inputs is rejected.
+ */
+async function checkSourceRevision(root, bundle, sourceRevision) {
+  const head = bundle.sourceRevision;
+  if (sourceRevision.length !== head.length) fail('E_SOURCE_REVISION', '저장된 source_git_commit의 객체 형식이 원천 저장소와 다릅니다.');
+  const objectFormat = head.length === 40 ? 'sha1' : 'sha256';
+  const type = git(root, ['cat-file', '-t', sourceRevision]);
+  if (type.exitCode !== 0 || type.stdout.trim() !== 'commit') fail('E_SOURCE_REVISION', '저장된 source_git_commit이 원천 저장소에 있는 커밋이 아닙니다.');
+  if (git(root, ['merge-base', '--is-ancestor', sourceRevision, head]).exitCode !== 0) fail('E_SOURCE_REVISION', '저장된 source_git_commit이 현재 WIKI Git HEAD의 이력에 없습니다.');
+  const paths = [...new Set([...bundle.files, ...bundle.referenceFiles, ...bundle.engineFiles, ...bundle.excludedFiles].map((file) => file.logical_path))].sort();
+  const tree = git(root, ['ls-tree', '-r', '-z', sourceRevision, '--', ...paths.map((path) => `:(literal)${path}`)]);
+  const objects = new Map();
+  for (const entry of tree.stdout.split('\0').filter(Boolean)) {
+    const match = /^100(?:644|755) blob ([a-f0-9]{40,64})\t(.+)$/u.exec(entry);
+    if (!match || objects.has(match[2])) fail('E_SOURCE_REVISION', '저장된 source_git_commit의 원천 객체가 유효하지 않습니다.');
+    objects.set(match[2], match[1]);
+  }
+  if (tree.exitCode !== 0 || objects.size !== paths.length || paths.some((path) => !objects.has(path))) fail('E_SOURCE_REVISION', '저장된 source_git_commit에 필요한 원천 파일이 없습니다.');
+  for (const path of paths) {
+    const bytes = await readFile(await resolveTrustedSourcePath(root, path));
+    const objectId = createHash(objectFormat).update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
+    if (objectId !== objects.get(path)) fail('E_SOURCE_REVISION', `저장된 source_git_commit의 원천 바이트가 현재 원천과 다릅니다: ${path}`);
+  }
 }
 
 function compareMapped(db, result, mapping) {
@@ -287,7 +327,7 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
         : sourceReferenceUnresolvedCount ? 'stored-hashes-only-with-unresolved-anchors' : 'stored-hashes-only',
       source_reference_unresolved_count: sourceReferenceUnresolvedCount,
       ...integrity,
-      counts, coverage, source_git_commit: metadata.source_git_commit, source_set_sha256: metadata.source_set_sha256,
+      counts, coverage, source_git_commit: metadata.source_git_commit, source_git_head: complete ? bundle.sourceRevision : null, source_set_sha256: metadata.source_set_sha256,
       sha256: before, included_domains: INCLUDED, excluded_domains: EXCLUDED,
     };
   } catch (error) {

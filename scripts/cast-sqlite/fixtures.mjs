@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { copyFile, mkdir, mkdtemp, readFile, rm } from 'node:fs/promises';
+import { copyFile, mkdir, mkdtemp, readFile, realpath, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, isAbsolute, join, relative, resolve } from 'node:path';
 import { DATA_SOURCE_PATHS, REQUIRED_SOURCE_PATHS, parseDocument, sha256 } from './sources.mjs';
@@ -48,9 +48,10 @@ export function makeCorpus(mutate = () => {}) {
 }
 
 export async function sandbox(t) {
-  const root = await mkdtemp(join(tmpdir(), 'cast-adversarial-'));
+  const temp = await realpath(tmpdir());
+  const root = await mkdtemp(join(temp, 'cast-adversarial-'));
   t.after(async () => {
-    const child = relative(resolve(tmpdir()), resolve(root));
+    const child = relative(temp, resolve(root));
     assert.ok(child && !isAbsolute(child) && !child.startsWith('..') && child.startsWith('cast-adversarial-'));
     await rm(root, { recursive: true });
   });
@@ -67,13 +68,15 @@ export async function snapshotActualCorpus(t) {
   const originalDigests = await sourceDigests(approvedRoot);
   const root = await sandbox(t);
   const sourceRoot = join(root, 'WIKI');
-  for (const logicalPath of new Set([...REQUIRED_SOURCE_PATHS, ...REFERENCE_TARGET_PATHS, ...ENGINE_PRIVATE_SOURCE_PATHS, ...EXCLUDED_SOURCE_PATHS])) {
+  const inputPaths = [...new Set([...REQUIRED_SOURCE_PATHS, ...REFERENCE_TARGET_PATHS, ...ENGINE_PRIVATE_SOURCE_PATHS, ...EXCLUDED_SOURCE_PATHS])];
+  for (const logicalPath of inputPaths) {
     const target = join(sourceRoot, logicalPath);
     await mkdir(dirname(target), { recursive: true });
     await copyFile(join(approvedRoot, logicalPath), target);
   }
   assert.deepEqual(await sourceDigests(sourceRoot), originalDigests);
   execFileSync('git', ['init', '--quiet', sourceRoot], { windowsHide: true, shell: false });
-  execFileSync('git', ['-C', sourceRoot, '-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '--allow-empty', '-m', 'Ephemeral fixture revision'], { windowsHide: true, shell: false });
+  execFileSync('git', ['-C', sourceRoot, 'add', '--', ...inputPaths], { windowsHide: true, shell: false });
+  execFileSync('git', ['-C', sourceRoot, '-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '-m', 'Ephemeral fixture revision'], { windowsHide: true, shell: false });
   return { root, sourceRoot, outputPath: join(root, 'artifact.sqlite'), originalDigests };
 }
