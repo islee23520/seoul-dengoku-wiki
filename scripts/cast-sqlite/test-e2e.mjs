@@ -6,7 +6,7 @@ import { DatabaseSync } from 'node:sqlite';
 import test from 'node:test';
 import { buildCastDatabase, DEFAULT_SOURCE_ROOT } from './build.mjs';
 import { verifyCastDatabase } from './verify.mjs';
-import { sha256 } from './sources.mjs';
+import { DATA_SOURCE_PATHS, sha256 } from './sources.mjs';
 
 const count = (db, table) => db.prepare(`SELECT count(*) AS n FROM ${table}`).get().n;
 const readJson = async (logicalPath) => JSON.parse(await readFile(join(DEFAULT_SOURCE_ROOT, logicalPath), 'utf8'));
@@ -38,6 +38,43 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   const familyNodeIds = new Set(family.nodes.map((node) => node.id));
   const supplementalNodes = diasporaMembers.filter((member) => !familyNodeIds.has(member.key)).length;
   const supplementalEdges = diasporaMembers.reduce((total, member) => total + member.parentKeys.length, 0);
+  const sourceTexts = new Map(await Promise.all(DATA_SOURCE_PATHS.map(async (path) => [path, await readFile(join(DEFAULT_SOURCE_ROOT, path), 'utf8')])));
+  const expectedGurpsIssues = [];
+  // Compute citation failures from source bytes, independently of the importer and receipt.
+  const inspectEvidence = (value, pointer, personId) => {
+    if (value === null || typeof value !== 'object') return;
+    for (const [key, child] of Object.entries(value)) {
+      const childPointer = `${pointer}/${key.replaceAll('~', '~0').replaceAll('/', '~1')}`;
+      if (key === 'evidence') child.forEach((item, ordinal) => {
+        let status = 'match';
+        if (Object.hasOwn(item, 'note')) status = 'uncited';
+        else if (!sourceTexts.has(item.path)) status = 'missing-source';
+        else {
+          let text = sourceTexts.get(item.path);
+          if (item.pointer !== undefined) {
+            let target = item.path.endsWith('.json') ? JSON.parse(text) : undefined;
+            const tokens = item.pointer === '' ? [] : item.pointer.startsWith('/') && !/~(?:[^01]|$)/u.test(item.pointer)
+              ? item.pointer.slice(1).split('/').map(token => token.replaceAll('~1', '/').replaceAll('~0', '~')) : null;
+            if (tokens === null) target = undefined;
+            for (const token of tokens ?? []) {
+              target = target !== null && typeof target === 'object' && Object.hasOwn(target, token)
+                && (!Array.isArray(target) || /^(?:0|[1-9][0-9]*)$/u.test(token)) ? target[token] : undefined;
+            }
+            if (target === undefined) status = 'missing-pointer';
+            text = typeof target === 'string' ? target : Array.isArray(target) && target.every(run => typeof run?.text === 'string')
+              ? target.map(run => run.text).join('') : undefined;
+          }
+          if (status === 'match' && (!item.quote || typeof text !== 'string' || !text.includes(item.quote))) status = 'mismatch';
+        }
+        if (status !== 'match') expectedGurpsIssues.push({
+          person_id: personId, json_pointer: `${childPointer}/${ordinal}`,
+          code: `E_GURPS_EVIDENCE_${status.replaceAll('-', '_').toUpperCase()}`, observed_value: JSON.stringify(item),
+        });
+      });
+      else inspectEvidence(child, childPointer, personId);
+    }
+  };
+  gurps.people.forEach((person, ordinal) => inspectEvidence(person, `/people/${ordinal}`, person.id));
 
   const built = await buildCastDatabase({ sourceRoot: DEFAULT_SOURCE_ROOT, outputPath: dbPath });
   const originalSha256 = sha256(await readFile(dbPath));
@@ -74,6 +111,8 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
       'json-pointer-unresolved': 11,
     });
     assert.equal(db.prepare("SELECT count(*) AS n FROM quality_issue WHERE dataset='reference' AND code='E_REFERENCE_ANCHOR'").get().n, 11);
+    assert.deepEqual(Object.fromEntries(db.prepare("SELECT person_id,json_pointer,code,observed_value FROM quality_issue WHERE dataset='gurps'").all()
+      .map(row => [row.json_pointer, { ...row }])), Object.fromEntries(expectedGurpsIssues.map(row => [row.json_pointer, row])));
     assert.ok(count(db, 'index_person') > 0);
     assert.equal(count(db, 'historical_source_scope'), 3);
   } finally { db.close(); }
@@ -93,7 +132,7 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   assert.equal(full.current_import_integrity, 'ok');
   assert.equal(full.current_approval_readiness, 'unreviewed');
   assert.equal(full.source_quality, 'degraded');
-  assert.equal(full.importer_issue_count, 442);
+  assert.equal(full.importer_issue_count, expectedGurpsIssues.length + full.source_reference_unresolved_count);
   assert.deepEqual({
     holding_current: full.current_source_alignment.holding_current,
     holding_superseded: full.current_source_alignment.holding_superseded,

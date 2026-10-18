@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { dirname, join, relative, resolve } from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
-import { buildCastDatabase, DEFAULT_SOURCE_ROOT } from './build.mjs';
+import { buildCastDatabase, CANONICAL_CAST_DATABASE, DEFAULT_SOURCE_ROOT, isCanonicalCastOutput } from './build.mjs';
 
 test('existing output wins over missing source and preserves exact bytes', async (t) => {
   const root = await mkdtemp(join(tmpdir(), 'cast-build-preflight-'));
@@ -23,6 +23,11 @@ test('existing output wins over missing source and preserves exact bytes', async
 test('output in the read-only source tree is rejected before writing', async () => {
   await assert.rejects(buildCastDatabase({ sourceRoot: DEFAULT_SOURCE_ROOT,
     outputPath: join(DEFAULT_SOURCE_ROOT, 'forbidden-cast-test.sqlite') }), { code: 'E_OUTPUT_SOURCE_ROOT' });
+});
+
+test('only the canonical database path is allowed inside the source tree', () => {
+  assert.equal(isCanonicalCastOutput(DEFAULT_SOURCE_ROOT, join(DEFAULT_SOURCE_ROOT, CANONICAL_CAST_DATABASE)), true);
+  assert.equal(isCanonicalCastOutput(DEFAULT_SOURCE_ROOT, join(DEFAULT_SOURCE_ROOT, 'forbidden-cast-test.sqlite')), false);
 });
 
 test('runtime preflight rejects unsupported Node before source access', () => {

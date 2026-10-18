@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, writeFile, rm, symlink, utimes } from 'node:fs/promises';
+import { mkdtemp, mkdir, realpath, writeFile, rm, symlink, utimes } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
@@ -13,7 +13,7 @@ import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
 
 async function fixture(t) {
-  const root = await mkdtemp(join(tmpdir(), 'cast-source-'));
+  const root = await mkdtemp(join(await realpath(tmpdir()), 'cast-source-'));
   t.after(() => rm(root, { recursive: true, force: true }));
   for (const path of REQUIRED_SOURCE_PATHS) {
     await mkdir(dirname(join(root, path)), { recursive: true });

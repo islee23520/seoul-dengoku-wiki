@@ -1,6 +1,6 @@
 # 위키 저장소 전용 인물 SQLite 사용 안내
 
-이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 기존 DB를 갱신하거나 원천 JSON을 고치지 않습니다.
+이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 원천 JSON은 고치지 않습니다. 저장소 정본 DB만 같은 경로로 다시 빌드할 때 교체합니다.
 
 영문 용어는 다음 뜻으로 사용합니다.
 
@@ -11,6 +11,14 @@
 - **allowlist projection (허용 목록 투영본)**: 비공개 원천에서 공개가 허용된 필드만 골라 만든 값입니다.
 
 이 DB의 생성·복사는 공개, 배포, 게임 구현, owner approval(소유자 승인)을 뜻하지 않습니다.
+
+## 저장소 정본
+
+텍스트 원천을 정규화한 추적 파일은 `data/canonical/wiki-cast.sqlite`입니다. 인물 JSON은 집필 원천으로 남고, 이 파일이 로컬에서 조회하는 정규화 저장본입니다. 호스팅 데이터베이스로 옮기기 전까지 이 파일을 Git에 둡니다. 이 경로로 다시 빌드하면 그 파일만 교체하며, 이전 바이트는 Git 이력에 남습니다. 다른 저장소 안 경로는 계속 거부합니다. DB는 빌드 시점의 HEAD를 `source_git_commit`으로 기록하고, 그 DB를 추적하는 커밋은 입력 파일을 바꾸지 않으므로 커밋 뒤에도 full verify를 그대로 통과합니다.
+
+```powershell
+npm run cast:build -- --output "data/canonical/wiki-cast.sqlite"
+```
 
 ## 준비와 단독 실행
 
@@ -29,7 +37,7 @@ npm run cast:build -- --output "$castDb"
 npm run cast:verify -- --db "$castDb" --source-root "$castSource" --receipt "$castReceipt"
 ```
 
-`--output`과 `--receipt`는 존재하지 않는 새 경로여야 합니다. 같은 경로를 다시 쓰면 `E_OUTPUT_EXISTS` 또는 `E_RECEIPT_EXISTS`로 실패하며 기존 파일의 바이트는 보존됩니다. DB는 원천 checkout **밖**의 로컬 경로에 두어야 합니다. 위 예시는 운영체제 임시 디렉터리를 사용하며 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않습니다.
+`--output`과 `--receipt`는 존재하지 않는 새 경로여야 합니다. 같은 경로를 다시 쓰면 `E_OUTPUT_EXISTS` 또는 `E_RECEIPT_EXISTS`로 실패하며 기존 파일의 바이트는 보존됩니다. 저장소 안에 둔 수 있는 DB는 `data/canonical/wiki-cast.sqlite` 하나입니다. 위 예시처럼 임시 복사본은 checkout 밖에 두며, 검증 영수와 임시 복사본은 Git, `public/`, `dist/`, 생성 카탈로그에 넣지 않습니다.
 
 다른 신뢰할 수 있는 위키 checkout을 명시적으로 읽어야 할 때만 `build`에도 절대 경로를 지정합니다.
 
@@ -42,7 +50,7 @@ npm run cast:build -- --source-root 'D:/trusted/seoul-dengoku-wiki' --output "$c
 
 ## 검증 상태를 읽는 법
 
-원천을 지정한 verify는 DB 무결성, source revision·해시, 원천 보존 또는 projection 계보, 현재 profile 재계산을 확인하는 전체 원천 검증입니다. 공식 검사기가 현재 원천 schema를 지원하지 않으면 이를 실행한 것처럼 표시하지 않고 `not_checked`로 기록합니다. full verify는 원천 checkout의 Git HEAD도 비교합니다. DB를 만든 뒤 커밋이 바뀌면 JSON 내용이 같더라도 이전 DB의 full verify는 최신 스냅숏으로 인정되지 않으므로 새 DB를 빌드해야 합니다. `--source-root`를 생략하면 DB 내부 구조와 저장된 계보만 확인하는 offline(오프라인) 부분 검증이며, 원천 최신성·현재 renderer·공식 검사를 보장하지 않습니다.
+원천을 지정한 verify는 DB 무결성, source revision·해시, 원천 보존 또는 projection 계보, 현재 profile 재계산을 확인하는 전체 원천 검증입니다. 공식 검사기가 현재 원천 schema를 지원하지 않으면 이를 실행한 것처럼 표시하지 않고 `not_checked`로 기록합니다. full verify는 DB에 기록된 `source_git_commit`이 원천 checkout의 현재 HEAD이거나 그 조상 커밋인지 확인하고, DB가 읽은 모든 입력 파일의 현재 바이트를 그 커밋에 기록된 Git blob과 직접 대조합니다. 현재 HEAD와 같을 필요는 없으므로 정본 DB를 커밋하는 것처럼 입력 파일을 바꾸지 않은 후속 커밋이 있어도 이전 DB는 그대로 통과하며, receipt의 `source_git_head`가 실제로 대조한 HEAD를 보여 줍니다. 입력 파일이 바뀐 커밋 뒤에는 `E_SOURCE_STALE`로, 기록된 커밋이 이 이력에 없거나 커밋 객체가 아니거나 그 커밋의 입력 blob이 현재 원천과 다르면 `E_SOURCE_REVISION`으로 거부하므로 새 DB를 빌드해야 합니다. `--source-root`를 생략하면 DB 내부 구조와 저장된 계보만 확인하는 offline(오프라인) 부분 검증이며, 원천 최신성·현재 renderer·공식 검사를 보장하지 않습니다.
 
 ```powershell
 # 닫힌 DB 파일만 받은 소비자의 부분 검증
@@ -61,7 +69,7 @@ receipt와 JSON 출력은 다음 판단을 분리합니다.
 | historical GURPS quality (역사 GURPS 품질) | 공식 검사 상태와 독립 importer 검사 결과를 분리. 공식 검사가 불가능하면 `unverified` | current engine·owner approval과 독립 |
 | approval readiness / unconfirmed (승인 준비도·미확인) | 공개 projection의 `source_present`·`issued`와 별개로 승인 근거가 확인되지 않은 상태 | `source_present`, `issued`, clean 결과는 owner approval이 아님 |
 
-현재 `wiki-gurps-cast.v1`에는 기존 공식 historical GURPS 검사기가 대응하지 않습니다. 따라서 현재 원천 receipt의 `official_check_status`는 `not_checked`, `official_check_reason`은 `unsupported-current-schema`, `historical_gurps_quality`는 `unverified`입니다. 공식 검사 issue 0건은 '문제 없음'이 아니라 '검사하지 못함'을 뜻합니다. 독립 importer 검사에서는 현재 스냅숏의 역사적 근거·형식 품질 문제를 별도로 찾습니다. 실제 `importer_issue_count`는 매 실행 receipt에서 확인하며 구 138건이나 새 관측치를 코드의 고정 기대값으로 쓰지 않습니다. 두 검사 결과를 합산해 독립 결함 수로 표현하지 않습니다. 현재 스냅숏의 독립 importer issue는 442건으로, 역사 GURPS 관련 431건과 확인되지 않은 참조 Pointer 11건입니다. 이 수는 데이터가 바뀌면 달라지므로 매번 receipt를 다시 확인해야 합니다.
+현재 `wiki-gurps-cast.v1`에는 기존 공식 historical GURPS 검사기가 대응하지 않습니다. 따라서 현재 원천 receipt의 `official_check_status`는 `not_checked`, `official_check_reason`은 `unsupported-current-schema`, `historical_gurps_quality`는 `unverified`입니다. 공식 검사 issue 0건은 '문제 없음'이 아니라 '검사하지 못함'을 뜻합니다. 독립 importer 검사에서는 현재 스냅숏의 역사적 근거·형식 품질 문제를 별도로 찾습니다. 실제 `importer_issue_count`는 매 실행 receipt에서 확인하며 구 138건이나 새 관측치를 코드의 고정 기대값으로 쓰지 않습니다. 두 검사 결과를 합산해 독립 결함 수로 표현하지 않습니다. 현재 스냅숏의 건수는 매 실행 receipt의 `importer_issue_count`와 `source_reference_unresolved_count`에서 확인합니다.
 
 현재 원천 스냅숏에는 경로와 인용문이 없는 GURPS 속성 근거 메모가 12행 있습니다(K998·K1007·K1008 각 4행). 원문 메모는 `uncited-note`로 보존하고 `E_GURPS_EVIDENCE_UNCITED` 품질 이슈로 드러냅니다. 이를 검증된 인용 근거로 바꾸거나 빌드 중 조용히 버리지 않습니다. 향후 원천이 바뀔 수 있으므로 검사 코드는 이 수를 고정 상수로 취급하지 않습니다.
 
