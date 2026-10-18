@@ -148,8 +148,30 @@ test('actual source snapshot exercises build, read-only query and freshness defe
   const sourceBefore = await fixtures.sourceDigests(f.sourceRoot);
   const receipt = await buildCastDatabase(f);
   assert.equal(receipt.status, 'PASS_WITH_SOURCE_ISSUES');
-  assert.equal(receipt.official_issue_count, 138);
   const baseline = { hash: sha256(await readFile(f.outputPath)), mtime: (await stat(f.outputPath)).mtimeMs };
+  await t.test('current GURPS schema remains explicitly unchecked, never a clean zero-issue check', async () => {
+    // Pin this corpus contract rather than comparing the receipt to its own checker output.
+    // The former 138-issue expectation belonged to the legacy checker, not this schema.
+    const gurpsSource = JSON.parse(await readFile(join(f.sourceRoot, pool('gurps-cast')), 'utf8'));
+    assert.equal(gurpsSource.schema, 'wiki-gurps-cast.v1');
+    const db = openReadOnly(f.outputPath);
+    try {
+      assert.equal(db.prepare('SELECT count(*) AS n FROM source_check_run').get().n, 0);
+      assert.equal(db.prepare('SELECT count(*) AS n FROM source_check_issue').get().n, 0);
+    } finally { db.close(); }
+    const full = await verifyCastDatabase({ dbPath: f.outputPath, sourceRoot: f.sourceRoot });
+    const offline = await verifyCastDatabase({ dbPath: f.outputPath, sourceRoot: null });
+    for (const result of [receipt, full, offline]) {
+      assert.equal(result.official_check_status, 'not_checked');
+      assert.equal(result.official_check_reason, 'unsupported-current-schema');
+      assert.equal(result.official_issue_count, 0);
+      assert.equal(result.historical_gurps_quality, 'unverified');
+    }
+    await assert.rejects(buildCastDatabase({ sourceRoot: f.sourceRoot, outputPath: join(f.root, 'require-clean.sqlite'), requireClean: true }),
+      { code: 'E_SOURCE_QUALITY' });
+    await assert.rejects(verifyCastDatabase({ dbPath: f.outputPath, sourceRoot: f.sourceRoot, requireClean: true }),
+      { code: 'E_SOURCE_QUALITY' });
+  });
   await t.test('runtime queries bind hostile parameters and preserve artifact/source bytes', async () => {
     assert.equal(queryPerson({ dbPath: f.outputPath, id: 'K088' }).person.public_route, '/people/person-0089');
     for (const id of ["K088' OR 1=1--", "K088'; DROP TABLE person;--"]) assert.throws(() => queryPerson({ dbPath: f.outputPath, id }), { code: 'E_PERSON_NOT_FOUND' });

@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
 import { loadExcludedSourceFiles } from './excluded-sources.mjs';
+import { TEXT_SOURCE_PATHS } from './text-corpus-manifest.mjs';
 
 export const DATA_SOURCE_PATHS = Object.freeze([
   ...['person-id-registry', 'values-cast', 'gender-cast', 'cast-hangnyeol', 'clan-hangnyeol-tables', 'gurps-cast'].map((name) => `lore/name-pools/${name}.json`),
@@ -19,7 +20,7 @@ export const DATA_SOURCE_PATHS = Object.freeze([
   'lore/chronology/Scenario-Timeline.json',
 ].sort());
 export const SCRIPT_SOURCE_PATHS = Object.freeze(['scripts/gurps-cast.mjs', 'scripts/lore-json-render.mjs']);
-export const REQUIRED_SOURCE_PATHS = Object.freeze([...DATA_SOURCE_PATHS, ...SCRIPT_SOURCE_PATHS].sort());
+export const REQUIRED_SOURCE_PATHS = Object.freeze([...new Set([...DATA_SOURCE_PATHS, ...SCRIPT_SOURCE_PATHS, ...TEXT_SOURCE_PATHS, 'lore/authoring.shared.schema.json'])].sort());
 export const RETIRED_HISTORICAL_REFERENCE_PATHS = Object.freeze(['lore/culture/Martial-Paths.json']);
 export const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
@@ -244,7 +245,7 @@ export async function loadSourceBundle({ sourceRoot, runOfficialChecks = true })
     try { text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(raw_bytes); } catch { fail('E_SOURCE_UTF8', logical_path); }
     const parsed = logical_path.endsWith('.json') ? parseDocument(text) : { document: null, records: [] };
     const source_id = files.length + 1;
-    const media_type = logical_path.endsWith('.json') ? 'application/json' : logical_path.endsWith('.md') ? 'text/markdown' : 'text/javascript';
+    const media_type = logical_path.endsWith('.json') ? 'application/json' : logical_path.endsWith('.md') ? 'text/markdown' : logical_path.endsWith('.csv') ? 'text/csv' : 'text/javascript';
     files.push(Object.freeze({ source_id, logical_path, media_type, sha256: sha256(raw_bytes), byte_length: raw_bytes.length, raw_bytes, document: parsed.document }));
     for (const row of parsed.records) records.push(Object.freeze({ source_id, ...row }));
   }

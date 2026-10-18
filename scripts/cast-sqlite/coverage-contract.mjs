@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { DATA_SOURCE_PATHS, REQUIRED_SOURCE_PATHS, SCRIPT_SOURCE_PATHS } from './sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
+import { TEXT_SOURCE_PATHS } from './text-corpus-manifest.mjs';
 
 const hash = (value) => createHash('sha256').update(value).digest('hex');
 const fail = (code, detail) => { throw Object.assign(new Error(`${code}: ${detail}`), { code }); };
@@ -437,12 +438,12 @@ export function auditCoverageContract({ bundle, tables }) {
     || REQUIRED_SOURCE_PATHS.some((path) => !bundle.files.some((file) => file.logical_path === path))) {
     fail('E_COVERAGE_SOURCE_SET', '정책 문서와 스크립트를 포함한 필수 원천 목록');
   }
-  const nonJson = bundle.files.filter((file) => !file.logical_path.endsWith('.json'));
+  const nonJson = bundle.files.filter((file) => !file.logical_path.endsWith('.json') && (!TEXT_SOURCE_PATHS.includes(file.logical_path) || Object.hasOwn(NON_JSON_SOURCE_SCOPE, file.logical_path)));
   if (nonJson.length !== Object.keys(NON_JSON_SOURCE_SCOPE).length
     || nonJson.some((file) => !Object.hasOwn(NON_JSON_SOURCE_SCOPE, file.logical_path))) {
     fail('E_COVERAGE_SOURCE_SET', '비 JSON 원천 분류');
   }
-  const jsonFiles = bundle.files.filter((file) => file.logical_path.endsWith('.json'));
+  const jsonFiles = bundle.files.filter((file) => Object.hasOwn(COVERAGE_CONTRACT, file.logical_path));
   const expected = DATA_SOURCE_PATHS.filter((path) => path.endsWith('.json'));
   if (jsonFiles.length !== expected.length || expected.some((path) => !jsonFiles.some((file) => file.logical_path === path))) fail('E_COVERAGE_SOURCE_SET', '포함 JSON 원천 목록');
   if (Object.keys(COVERAGE_CONTRACT).length !== expected.length || expected.some((path) => !COVERAGE_CONTRACT[path])) fail('E_COVERAGE_CONTRACT_SET', '필드 계약 목록');

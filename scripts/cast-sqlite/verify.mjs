@@ -19,6 +19,7 @@ import { COVERAGE_CONTRACT, auditCoverageContract, fieldCoverageManifest } from 
 import { SOURCE_CLOSURE_TABLE_COLUMNS, mapSourceClosureDomains } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_PATHS, EXCLUDED_SOURCE_TABLE_COLUMNS, mapExcludedSourceDomains } from './excluded-sources.mjs';
 import { mapReferenceAnchorIssues } from './build.mjs';
+import { TEXT_CORPUS_TABLE_COLUMNS, mapTextCorpus, auditTextCorpus } from './text-corpus.mjs';
 
 const IDENTITY_TABLES = {
   states: 'state', stateLabels: 'state_label', people: 'person', aliases: 'person_alias',
@@ -44,8 +45,8 @@ const HISTORICAL_CONTEXT_TABLES = Object.fromEntries(Object.keys(HISTORICAL_CONT
 const IDENTITY_PROVENANCE_TABLES = Object.fromEntries(Object.keys(IDENTITY_PROVENANCE_TABLE_COLUMNS).map((table) => [table, table]));
 const SOURCE_CLOSURE_TABLES = Object.fromEntries(Object.keys(SOURCE_CLOSURE_TABLE_COLUMNS).map((table) => [table, table]));
 const EXCLUDED_SOURCE_TABLES = Object.fromEntries(Object.keys(EXCLUDED_SOURCE_TABLE_COLUMNS).map((table) => [table, table]));
-const INCLUDED = ['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance'];
-const EXCLUDED = ['synthetics', 'bestiary', 'organizations', 'authoring-examples', 'roster-100', 'cast-backfill-draft'];
+const INCLUDED = ['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance', 'text-corpus'];
+const EXCLUDED = ['synthetics-domain-data', 'bestiary-domain-data', 'organizations-domain-data', 'authoring-examples-domain-data', 'roster-100', 'cast-backfill-draft'];
 const METADATA_KEYS = ['schema_version', 'generator_version', 'node_version', 'sqlite_version', 'source_git_commit', 'source_set_sha256', 'included_domains', 'excluded_domains', 'expected_counts'];
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
 const equal = (left, right) => JSON.stringify(left) === JSON.stringify(right);
@@ -114,7 +115,7 @@ function storedBundle(db, metadata) {
   if (!equal(files.map((file) => file.logical_path), REQUIRED_SOURCE_PATHS)) fail('E_SOURCE_MANIFEST', '고정 원천 파일 집합이 다릅니다.');
   const records = [];
   files.forEach((file, index) => {
-    const expectedType = file.logical_path.endsWith('.json') ? 'application/json' : file.logical_path.endsWith('.md') ? 'text/markdown' : 'text/javascript';
+    const expectedType = file.logical_path.endsWith('.json') ? 'application/json' : file.logical_path.endsWith('.md') ? 'text/markdown' : file.logical_path.endsWith('.csv') ? 'text/csv' : 'text/javascript';
     file.raw_bytes = Buffer.from(file.raw_bytes);
     if (file.source_id !== index + 1 || file.media_type !== expectedType || file.byte_length !== file.raw_bytes.length || sha256(file.raw_bytes) !== file.sha256) fail('E_SOURCE_RAW', file.logical_path);
     try {
@@ -266,6 +267,9 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
     const stored = storedBundle(db, metadata);
     const complete = sourceRoot !== undefined && sourceRoot !== null;
     const { bundle, renderLoreMarkdown } = complete ? await currentBundle(sourceRoot, stored, metadata) : { bundle: stored, renderLoreMarkdown: () => '' };
+    const textTables = mapTextCorpus({ bundle });
+    compareMapped(db, textTables, Object.fromEntries(Object.keys(TEXT_CORPUS_TABLE_COLUMNS).map((table) => [table, table])));
+    const textCorpus = auditTextCorpus({ bundle, tables: textTables });
     const identity = mapIdentityDomains(bundle);
     compareMapped(db, identity, IDENTITY_TABLES);
     compareMapped(db, mapRelations({ bundle, identity }), { relationTypes: 'relation_type', relations: 'relation' });
@@ -290,7 +294,7 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
     const sourceReferenceUnresolvedCount = references.filter((row) => row.anchor_verification === 'json-pointer-unresolved').length;
     const coverageTableNames = complete ? new Set([
       ...Object.values(COVERAGE_CONTRACT).flatMap((contract) => contract.mappings.map((mapping) => mapping.table)),
-      ...bundle.files.filter((file) => file.document !== null).flatMap((file) =>
+      ...bundle.files.filter((file) => Object.hasOwn(COVERAGE_CONTRACT, file.logical_path)).flatMap((file) =>
         fieldCoverageManifest(file.logical_path, file.document).flatMap((row) => row.normalized_targets.map((target) => target.split('.')[0]))),
       'current_engine_source',
       'current_profile',
@@ -314,7 +318,7 @@ export async function verifyCastDatabase({ dbPath, sourceRoot, requireClean = fa
       current_import_integrity: 'ok', current_approval_readiness: 'unreviewed',
       current_source_alignment: currentSourceAlignment,
       excluded_source_count: bundle.excludedFiles.length,
-      coverage_contract_status: complete ? 'verified' : 'unchecked',
+      coverage_contract_status: complete ? 'verified' : 'unchecked', text_corpus: textCorpus,
       coverage_contract: coverageContract === null ? null : { source_count: coverageContract.sourceCount, leaf_pattern_count: coverageContract.leafPatternCount,
         private_source_count: coverageContract.privateSourceCount, private_leaf_pattern_count: coverageContract.privateLeafPatternCount,
         sha256: sha256(JSON.stringify(coverageContract)) },
