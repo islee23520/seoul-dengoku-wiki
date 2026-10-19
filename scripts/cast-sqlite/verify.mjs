@@ -45,8 +45,8 @@ const HISTORICAL_CONTEXT_TABLES = Object.fromEntries(Object.keys(HISTORICAL_CONT
 const IDENTITY_PROVENANCE_TABLES = Object.fromEntries(Object.keys(IDENTITY_PROVENANCE_TABLE_COLUMNS).map((table) => [table, table]));
 const SOURCE_CLOSURE_TABLES = Object.fromEntries(Object.keys(SOURCE_CLOSURE_TABLE_COLUMNS).map((table) => [table, table]));
 const EXCLUDED_SOURCE_TABLES = Object.fromEntries(Object.keys(EXCLUDED_SOURCE_TABLE_COLUMNS).map((table) => [table, table]));
-const INCLUDED = ['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance', 'text-corpus'];
-const EXCLUDED = ['synthetics-domain-data', 'bestiary-domain-data', 'organizations-domain-data', 'authoring-examples-domain-data', 'roster-100', 'cast-backfill-draft'];
+const INCLUDED = ['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance', 'text-corpus', 'text-data-domains'];
+const EXCLUDED = ['synthetics-domain-data', 'organizations-domain-data', 'roster-100', 'cast-backfill-draft'];
 const METADATA_KEYS = ['schema_version', 'generator_version', 'node_version', 'sqlite_version', 'source_git_commit', 'source_set_sha256', 'included_domains', 'excluded_domains', 'expected_counts'];
 const fail = (code, message) => { throw Object.assign(new Error(`${code}: ${message}`), { code }); };
 const equal = (left, right) => JSON.stringify(left) === JSON.stringify(right);

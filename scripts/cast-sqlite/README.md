@@ -1,6 +1,6 @@
 # 위키 저장소 전용 인물 SQLite 사용 안내
 
-## Local text corpus (schema version 3)
+## Local text corpus (schema version 4)
 
 The immutable `text-corpus-manifest.mjs` enumerates non-private renderer envelopes and Markdown/CSV authoring sources. Build adds their exact bytes to `source_file` and JSON pointers to `source_record`; no runtime directory discovery widens the input set. The existing Git HEAD byte, tracking, symlink, snapshot and recorded-revision checks apply to every added source.
 
@@ -8,11 +8,11 @@ The immutable `text-corpus-manifest.mjs` enumerates non-private renderer envelop
 
 The document mapper requires `content_policy: 'local-corpus'`, not `public`. Draft, approved and excluded statuses remain literal authored values. `corpus_kind` separates current-source, historical and example documents; links never resolve across those corpora. Here current-source means the source snapshot, not satisfaction of the Seoul approval policy. The anchor column `published` means renderer-visible anchor only, not publication admission. No source is promoted to canon by storage or link resolution. Editorial/soul files remain outside both raw and normalized text tables; their existing hash-only/projection contracts are unchanged.
 
-Build and offline/full verify return `text_corpus`: document, line-document, physical-line, missing-source, authored-status and corpus counts. Counts derive from the enumerated manifest, independently checked against tracked source documents by tests. Verify remaps all fifteen tables from stored bytes and rejects tampered text even offline. `publication_admission: 'not-evaluated'` and `domain_sidecar_normalization: 'incomplete'` are deliberate: nonempty document `/data` paths are reported as potential sidecar gaps, not claimed normalized by preserving raw records. Other JSON domain sidecars, generated catalogues, geography/LFS binaries and private editorial documents are outside this text increment. The existing person/family/engine field-coverage contract remains separate from text coverage.
+Build and offline/full verify return `text_corpus`: document, line-document, physical-line, missing-source, authored-status and corpus counts. Counts derive from the enumerated manifest, independently checked against tracked source documents by tests. Verify remaps all text and domain tables from stored bytes and rejects tampered rows even offline. `text-data.mjs` reconstructs every document `/data` from explicit typed domain columns and ordered child tables; the 52 nonempty payloads compare exactly with the source JSON. `domain_sidecar_normalization: complete` is limited to these renderer envelopes, while `publication_admission: not-evaluated` remains separate. Other standalone JSON domains, generated catalogues, geography/LFS binaries and private editorial documents remain outside this text increment. The existing person/family/engine field-coverage contract remains independent.
 
-Current-Seoul integration still requires approved clean source changes, corresponding field-contract/mapper changes, current location/right validation and a new clean-input build; this corpus import does not supply those approvals or mappings. Schema version 2 artifacts are not migrated in place. Rebuild into a new artifact to use version 3.
+Current-Seoul integration still requires approved clean source changes, corresponding field-contract/mapper changes, current location/right validation and a new clean-input build; this corpus import does not supply those approvals or mappings. Schema versions 2 and 3 are not migrated in place. Rebuild into a new artifact to use version 4.
 
-The exact 52 remaining `/data` document paths and keys, current-Seoul mapping gaps, and source-quality limitations are listed in [TEXT-CORPUS-GAPS.md](TEXT-CORPUS-GAPS.md).
+The domain/table map, uninterpreted source fields, current-Seoul mapping gaps, and source-quality limitations are listed in [TEXT-CORPUS-GAPS.md](TEXT-CORPUS-GAPS.md).
 
 이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 원천 JSON은 고치지 않습니다. 저장소 정본 DB만 같은 경로로 다시 빌드할 때 교체합니다.
 

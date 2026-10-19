@@ -1,10 +1,31 @@
-# 텍스트 코퍼스 이관의 남은 범위
+# 텍스트 코퍼스 도메인 정규화와 남은 범위
 
-이 목록은 2026-10-19 `auditTextCorpus().domain_sidecar_gap_paths`와 각 문서의 `/data` 키를 대조한 결과다. 52개 문서의 원문 바이트와 JSON pointer는 `source_file`·`source_record`에 보존되지만, 아래 도메인 필드의 전용 관계형 테이블·외래 키·도메인 검증을 제공하지 않는다. 범용 JSON pointer 보존을 도메인 정규화 완료로 세지 않는다.
+2026-10-19 스키마 4는 아래 52개 문서의 `/data`를 전용 STRICT 관계형 테이블로 이관한다. `source_file`의 원본 바이트 SHA-256과 `source_record`의 JSON pointer를 외래 키로 연결하며, 원문 JSON을 변경하지 않는다. `text-data.mjs`의 재구성은 원문·범용 pointer 값을 읽지 않고 도메인 행만 사용한다. build 및 offline/full verify는 문서별 원래 `/data`와 깊은 JSON 동등성을 검사한다. `domain_sidecar_gap_paths`는 빈 배열이며, 새 키나 손실은 감사 실패다.
 
-현재 텍스트 mapper는 공통 envelope와 content의 렌더 구조만 정규화한다. 아래 필드에는 atlas, ecology, integration, governance 등 서로 다른 도메인 계약과 authoring example이 섞여 있어 기존 공통 텍스트 스키마의 기계적 확장만으로 의미·참조 무결성을 보장할 수 없다. 각 도메인별 매핑 계약과 테스트가 필요하므로 이번 통합에서 새 의미를 추정하지 않았다.
+| 도메인 | 관계형 테이블 |
+| --- | --- |
+| atlas·root registry | `text_atlas`·`text_atlas_*` 92개와 `text_registry`·`text_registry_entry`·`text_registry_entry_relations` |
+| 생태·통합 출처 | `text_ecology_data`, `text_ecology`, `text_ecology_description`, `text_ecology_description_run`, `text_ecology_variant`, `text_integration`, `text_integration_excluded` |
+| 정치 소속·통치 | `text_affiliation`, `text_affiliation_hegemon`, `text_affiliation_member`, `text_affiliation_state`, `text_affiliation_neutral`, `text_governance` |
+| 영토 규모 원천 계약 | `text_territorial`·`text_territorial_*` 7개 |
+| 역 별칭·관측 노선 | `text_station_catalog`, `text_station`, `text_station_alias`, `text_station_line_name`, `text_station_line` |
+| 대표 인물·연대기·이름 풀 | `text_simple_collection`, `text_primary_detail`, `text_chronology_event`, `text_name_pool_example_entry` |
+| 인물 authoring 예제 | `text_character_example`·`text_character_example_*` 9개 |
+| 단순 authoring 예제 | `text_ailments_example`, `text_culture_example`, `text_economy_example`, `text_goods_example`, `text_offices_example`, `text_overview_example`, `text_people_and_machines_example`, `text_places_example`, `text_regions_example`, `text_structures_example`, `text_technology_example` |
 
-| 문서 | 아직 전용 정규화하지 않은 `/data` 키 |
+원천 문서 ID와 파일 source ID, 원래 엔티티 ID 및 배열 ordinal이 키를 구성한다. 배열 순서·중복·빈 배열, 동적 map 키, 생략과 null, 두 언어의 텍스트와 runs를 구분한다. 정치 state와 대표 인물은 기존 `state`·`person`에 연결한다. atlas의 정확히 일치하는 기존 인물·state 참조도 연결한다. 예제는 `corpus_kind=example`로 유지하고 실제 인물·국가를 만들지 않는다.
+
+## 의미를 추정하지 않은 값
+
+- atlas의 관계 종류, 장면·권리·작위·소속 문장, 경로·source anchor·검증 상태 문자열은 원천의 타입과 문구를 보존한다. 과거 atlas의 외부 지역·권리 서술을 현재 서울 사실로 승격하지 않는다.
+- 생태 variant ID와 `source_batch`, integration의 외부 `TOOL` manifest 및 제외 항목 ID는 별도 로컬 엔티티가 없는 출처 식별자다. 정확한 로컬 문서 ID가 있을 때만 target FK를 채우고 나머지는 원래 문자열과 null 참조를 남긴다.
+- `territorialScale`의 구 행정 계층과 `governance`는 현재 승인된 영지 계층의 판정기가 아니라 원천 계약 기록이다. 역·시설 ID·노선명은 자체 문맥의 문자열이며 기존 `context_place`의 다른 ID 체계와 이름으로 억지 결합하지 않는다.
+- `symptom`, `transmission`, `exchange`, `supply`, `tier`, `consequence`, `dependency`, `layer`, `opening_state`, `function`, `constraint`의 `__EXAMPLE__` 값은 TEXT로 보존하는 집필 예제이며 실행 효과가 아니다. 인물 예제의 unknown·undecided·not-applicable은 구별한다.
+- 연대기의 `order`와 배열 순서, 날짜의 status·value·reason을 따로 보존한다. `EVENT:Y2026` ID와 날짜 2030처럼 이름과 값이 다른 경우도 고치거나 유추하지 않는다.
+
+## 이관한 52개 문서
+
+| 문서 | 전용 정규화한 `/data` 키 |
 | --- | --- |
 | `lore/World-Narrative-Atlas.json` | `atlas` |
 | `lore/ailments/authoring.example.json` | `symptom` |

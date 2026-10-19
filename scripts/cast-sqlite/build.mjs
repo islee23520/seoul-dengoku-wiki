@@ -25,8 +25,8 @@ export function isCanonicalCastOutput(sourceRoot, outputPath) {
   return typeof sourceRoot === 'string' && isAbsolute(sourceRoot) && typeof outputPath === 'string'
     && resolve(outputPath) === resolve(sourceRoot, CANONICAL_CAST_DATABASE);
 }
-const INCLUDED_DOMAINS = Object.freeze(['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance', 'text-corpus']);
-const EXCLUDED_DOMAINS = Object.freeze(['synthetics-domain-data', 'bestiary-domain-data', 'organizations-domain-data', 'authoring-examples-domain-data', 'roster-100', 'cast-backfill-draft']);
+const INCLUDED_DOMAINS = Object.freeze(['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance', 'text-corpus', 'text-data-domains']);
+const EXCLUDED_DOMAINS = Object.freeze(['synthetics-domain-data', 'organizations-domain-data', 'roster-100', 'cast-backfill-draft']);
 
 const CORE_TABLE_COLUMNS = Object.freeze(Object.fromEntries(Object.entries({
   build_metadata: 'key value',

@@ -2,7 +2,7 @@ import { closeSync, openSync, readFileSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 export const APPLICATION_ID = 0x57435351;
 const schemaPaths = Object.freeze([
   new URL('./schema.sql', import.meta.url),
@@ -16,6 +16,11 @@ const schemaPaths = Object.freeze([
   new URL('./source-closure.sql', import.meta.url),
   new URL('./text-corpus-documents.sql', import.meta.url),
   new URL('./text-corpus-lines.sql', import.meta.url),
+  new URL('./text-data-simple.sql', import.meta.url),
+  new URL('./text-data-atlas.sql', import.meta.url),
+  new URL('./text-data-bestiary.sql', import.meta.url),
+  new URL('./text-data-geography.sql', import.meta.url),
+  new URL('./text-data-character-example.sql', import.meta.url),
 ]);
 
 function failure(code, message, cause) {
