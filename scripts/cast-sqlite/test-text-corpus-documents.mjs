@@ -173,7 +173,7 @@ test('STRICT tables insert into a temporary base-schema DB and enforce provenanc
     }
     assert.deepEqual(db.prepare('PRAGMA foreign_key_check').all(), []);
     assert.equal(db.prepare('PRAGMA integrity_check').get().integrity_check, 'ok');
-    assert.equal(db.prepare("SELECT text FROM text_document_run WHERE source_id=1 AND json_pointer='/content/2/text/ko/1'").get().text, '\u0000');
+    assert.equal(db.prepare("SELECT hex(text) AS bytes FROM text_document_run WHERE source_id=1 AND json_pointer='/content/2/text/ko/1'").get().bytes, '00');
     const rejects = [
       "UPDATE text_document SET source_id=99 WHERE source_id=1",
       "UPDATE text_document_locale SET json_pointer='/missing' WHERE source_id=1",
