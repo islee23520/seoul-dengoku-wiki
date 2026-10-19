@@ -21,8 +21,8 @@ steps:
       SEOUL_DEPLOY_TOKEN:
         from_secret: seoul_deploy_token
     commands:
-      - node --test deploy/test-call-owner.mjs
+      - node --test deploy/test-*.mjs
       - npm ci --ignore-scripts
       - node scripts/generate-catalog.mjs
       - node deploy/call-owner.mjs
-      - node deploy/check-live-contract.mjs https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts
+      - node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts
