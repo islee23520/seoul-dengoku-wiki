@@ -8,6 +8,7 @@ import { TEXT_CORPUS_TABLE_COLUMNS, mapTextCorpus, auditTextCorpus } from './tex
 import { loadSourceBundle, REQUIRED_SOURCE_PATHS } from './sources.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
+import { TEXT_DATA_TABLE_COLUMNS, reconstructTextData } from './text-data.mjs';
 
 const root = resolve(new URL('../..', import.meta.url).pathname);
 test('manifest equals independently discovered committed non-private renderer envelopes and text sources', () => {
@@ -33,11 +34,17 @@ test('integrated corpus covers every manifest source and fails when normalized r
   assert.equal(result.line_document_count, TEXT_LINE_SOURCE_PATHS.length + 2);
   assert.equal(result.missing_text_source_count, 0);
   assert.equal(result.publication_admission, 'not-evaluated');
-  assert.equal(result.domain_sidecar_normalization, 'incomplete');
-  assert.ok(result.domain_sidecar_gap_paths.length > 0);
-  assert.equal(Object.keys(TEXT_CORPUS_TABLE_COLUMNS).length, 15);
+  assert.equal(result.domain_sidecar_normalization, 'complete');
+  assert.equal(result.domain_sidecar_document_count, 52);
+  assert.deepEqual(result.domain_sidecar_gap_paths, []);
+  assert.equal(Object.keys(TEXT_CORPUS_TABLE_COLUMNS).length, 15 + Object.keys(TEXT_DATA_TABLE_COLUMNS).length);
+  for (const document of tables.text_document) {
+    const source = bundle.files.find((file) => file.source_id === document.source_id);
+    assert.deepEqual(reconstructTextData({ tables, source_id: source.source_id }), source.document.data, source.logical_path);
+  }
   assert.throws(() => auditTextCorpus({ bundle, tables: { ...tables, text_document_slot: [] } }), { code: 'E_TEXT_CORPUS_MANIFEST' });
   assert.throws(() => auditTextCorpus({ bundle, tables: { ...tables, text_line: [] } }), { code: 'E_TEXT_CORPUS_MANIFEST' });
+  assert.throws(() => auditTextCorpus({ bundle, tables: { ...tables, text_chronology_event: [] } }), { code: 'E_TEXT_CORPUS_MANIFEST' });
   for (const metadata of tables.text_line_document) {
     const file = bundle.files.find((file) => file.source_id === metadata.source_id);
     const restored = tables.text_line.filter((row) => row.source_id === metadata.source_id).map((row) => row.text).join('\n') + (metadata.ends_with_newline ? '\n' : '');

@@ -7,6 +7,7 @@ import test from 'node:test';
 import { buildCastDatabase, DEFAULT_SOURCE_ROOT } from './build.mjs';
 import { verifyCastDatabase } from './verify.mjs';
 import { DATA_SOURCE_PATHS, sha256 } from './sources.mjs';
+import { TEXT_DATA_TABLE_COLUMNS, reconstructTextData } from './text-data.mjs';
 
 const count = (db, table) => db.prepare(`SELECT count(*) AS n FROM ${table}`).get().n;
 const readJson = async (logicalPath) => JSON.parse(await readFile(join(DEFAULT_SOURCE_ROOT, logicalPath), 'utf8'));
@@ -87,6 +88,14 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   assert.equal(sha256(await readFile(secondPath)), originalSha256, 'same source snapshot must generate identical SQLite bytes');
   const db = new DatabaseSync(dbPath, { readOnly: true });
   try {
+    const dataTables = Object.fromEntries(Object.keys(TEXT_DATA_TABLE_COLUMNS).map((table) => [table, db.prepare(`SELECT * FROM ${table}`).all()]));
+    let domainDocuments = 0;
+    for (const source of db.prepare('SELECT f.source_id,f.logical_path,f.raw_bytes FROM source_file f JOIN text_document d USING(source_id)').all()) {
+      const expected = JSON.parse(Buffer.from(source.raw_bytes).toString('utf8')).data;
+      assert.deepEqual(reconstructTextData({ tables: dataTables, source_id: source.source_id }), expected, source.logical_path);
+      if (Object.keys(expected).length) domainDocuments++;
+    }
+    assert.equal(domainDocuments, 52);
     assert.throws(() => db.exec('CREATE TABLE e2e_readonly_probe(value INTEGER) STRICT'), (error) => error.errcode === 8);
     for (const table of ['person', 'person_gender', 'person_lineage', 'gurps_profile', 'family_birthday', 'current_profile', 'health', 'narrative']) {
       assert.equal(count(db, table), expectedPeople, `${table} must cover every registered person`);
@@ -154,6 +163,7 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
     ['reference-quality', "UPDATE quality_issue SET observed_value='tampered' WHERE issue_id=(SELECT issue_id FROM quality_issue WHERE dataset='reference' AND code='E_REFERENCE_ANCHOR' LIMIT 1)", 'E_SOURCE_FIDELITY'],
     ['text-slot', "UPDATE text_document_slot SET text='tampered' WHERE rowid=(SELECT rowid FROM text_document_slot LIMIT 1)", 'E_SOURCE_FIDELITY'],
     ['text-line', "UPDATE text_line SET text='tampered' WHERE rowid=(SELECT rowid FROM text_line LIMIT 1)", 'E_SOURCE_FIDELITY'],
+    ['text-data', "UPDATE text_chronology_event SET date_value='tampered' WHERE rowid=(SELECT rowid FROM text_chronology_event WHERE date_value IS NOT NULL LIMIT 1)", 'E_SOURCE_FIDELITY'],
     ['schema', 'CREATE TABLE rogue(value TEXT) STRICT', 'E_SCHEMA_MISMATCH'],
   ]) {
     const copy = join(root, `${name}.sqlite`);
