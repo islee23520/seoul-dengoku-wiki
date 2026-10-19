@@ -12,6 +12,8 @@ Build and offline/full verify return `text_corpus`: document, line-document, phy
 
 Current-Seoul integration still requires approved clean source changes, corresponding field-contract/mapper changes, current location/right validation and a new clean-input build; this corpus import does not supply those approvals or mappings. Schema version 2 artifacts are not migrated in place. Rebuild into a new artifact to use version 3.
 
+The exact 52 remaining `/data` document paths and keys, current-Seoul mapping gaps, and source-quality limitations are listed in [TEXT-CORPUS-GAPS.md](TEXT-CORPUS-GAPS.md).
+
 이 도구는 이 저장소의 인물 원천을 서버 없이 SQLite 파일 하나로 생성, 조회, 검증합니다. `build`는 현재 checkout의 원천을 읽어 새 DB를 만들고, `query`는 DB만 읽으며, `verify`는 DB 단독의 부분 검증 또는 원천을 포함한 전체 검증을 수행합니다. 원천 JSON은 고치지 않습니다. 저장소 정본 DB만 같은 경로로 다시 빌드할 때 교체합니다.
 
 영문 용어는 다음 뜻으로 사용합니다.
