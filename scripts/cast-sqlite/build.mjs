@@ -15,6 +15,7 @@ import { IDENTITY_PROVENANCE_TABLE_COLUMNS, mapIdentityProvenance } from './curr
 import { auditCoverageContract } from './coverage-contract.mjs';
 import { SOURCE_CLOSURE_TABLE_COLUMNS, mapSourceClosureDomains } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_TABLE_COLUMNS, mapExcludedSourceDomains } from './excluded-sources.mjs';
+import { TEXT_CORPUS_TABLE_COLUMNS, mapTextCorpus, auditTextCorpus } from './text-corpus.mjs';
 
 export const GENERATOR_VERSION = '1.0.0';
 export const DEFAULT_SOURCE_ROOT = resolve(fileURLToPath(new URL('../..', import.meta.url)));
@@ -24,8 +25,8 @@ export function isCanonicalCastOutput(sourceRoot, outputPath) {
   return typeof sourceRoot === 'string' && isAbsolute(sourceRoot) && typeof outputPath === 'string'
     && resolve(outputPath) === resolve(sourceRoot, CANONICAL_CAST_DATABASE);
 }
-const INCLUDED_DOMAINS = Object.freeze(['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance']);
-const EXCLUDED_DOMAINS = Object.freeze(['synthetics', 'bestiary', 'organizations', 'authoring-examples', 'roster-100', 'cast-backfill-draft']);
+const INCLUDED_DOMAINS = Object.freeze(['people', 'values', 'desires', 'gender', 'lineage', 'profiles', 'narrative-relations', 'historical-gurps', 'historical-rights', 'family', 'household', 'current-context', 'current-engine', 'draft-index', 'source-closure', 'provenance', 'text-corpus']);
+const EXCLUDED_DOMAINS = Object.freeze(['synthetics-domain-data', 'bestiary-domain-data', 'organizations-domain-data', 'authoring-examples-domain-data', 'roster-100', 'cast-backfill-draft']);
 
 const CORE_TABLE_COLUMNS = Object.freeze(Object.fromEntries(Object.entries({
   build_metadata: 'key value',
@@ -73,7 +74,7 @@ const CORE_TABLE_COLUMNS = Object.freeze(Object.fromEntries(Object.entries({
   source_check_issue: 'check_name ordinal category person_id raw_line',
   quality_issue: 'issue_id dataset code severity person_id source_id json_pointer message observed_value',
 }).map(([table, columns]) => [table, Object.freeze(columns.split(' '))])));
-const TABLE_COLUMNS = Object.freeze({ ...CORE_TABLE_COLUMNS, ...FAMILY_TABLE_COLUMNS, ...ENGINE_TABLE_COLUMNS, ...CONTEXT_TABLE_COLUMNS, ...INDEX_TABLE_COLUMNS, ...HISTORICAL_CONTEXT_TABLE_COLUMNS, ...IDENTITY_PROVENANCE_TABLE_COLUMNS, ...SOURCE_CLOSURE_TABLE_COLUMNS, ...EXCLUDED_SOURCE_TABLE_COLUMNS });
+const TABLE_COLUMNS = Object.freeze({ ...CORE_TABLE_COLUMNS, ...FAMILY_TABLE_COLUMNS, ...ENGINE_TABLE_COLUMNS, ...CONTEXT_TABLE_COLUMNS, ...INDEX_TABLE_COLUMNS, ...HISTORICAL_CONTEXT_TABLE_COLUMNS, ...IDENTITY_PROVENANCE_TABLE_COLUMNS, ...SOURCE_CLOSURE_TABLE_COLUMNS, ...EXCLUDED_SOURCE_TABLE_COLUMNS, ...TEXT_CORPUS_TABLE_COLUMNS });
 
 function fail(code, message, cause) {
   throw Object.assign(new Error(`${code}: ${message}`, cause === undefined ? undefined : { cause }), { code });
@@ -164,6 +165,7 @@ function mappedTables(bundle, identity, profiles, relations, gurps, family, engi
     ...identityProvenance,
     ...closure,
     ...excluded,
+    ...mapTextCorpus({ bundle }),
   };
 }
 
@@ -254,6 +256,7 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
   const tables = mappedTables(bundle, identity, profiles, relations, gurps, family, engine, context, index, historical, identityProvenance, closure, excluded);
   validateRows(tables);
   const coverageContract = auditCoverageContract({ bundle, tables });
+  const textCorpus = auditTextCorpus({ bundle, tables });
   const officialIssueCount = tables.source_check_issue.length;
   const importerIssueCount = tables.quality_issue.length;
   const sourceReferenceUnresolvedCount = closure.source_reference.filter((row) => row.anchor_verification === 'json-pointer-unresolved').length;
@@ -299,7 +302,7 @@ export async function buildCastDatabase({ sourceRoot, outputPath, requireClean =
       official_check_reason: bundle.officialChecks.length === 0 ? 'unsupported-current-schema' : null,
       current_import_integrity: 'ok', current_approval_readiness: 'unreviewed',
       current_source_alignment: currentSourceAlignment,
-      coverage_contract_status: 'verified',
+      coverage_contract_status: 'verified', text_corpus: textCorpus,
       excluded_source_count: tables.excluded_source.length,
       coverage_contract: { source_count: coverageContract.sourceCount, leaf_pattern_count: coverageContract.leafPatternCount,
         private_source_count: coverageContract.privateSourceCount, private_leaf_pattern_count: coverageContract.privateLeafPatternCount,

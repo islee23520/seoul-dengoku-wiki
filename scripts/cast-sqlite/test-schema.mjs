@@ -14,9 +14,10 @@ import { HISTORICAL_CONTEXT_TABLE_COLUMNS } from './historical-context.mjs';
 import { IDENTITY_PROVENANCE_TABLE_COLUMNS } from './current-identity-provenance.mjs';
 import { SOURCE_CLOSURE_TABLE_COLUMNS } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_TABLE_COLUMNS } from './excluded-sources.mjs';
+import { TEXT_CORPUS_TABLE_COLUMNS } from './text-corpus.mjs';
 
 const evidenceRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../../.omo/evidence/sqlite');
-const tableNames = ['build_metadata', 'source_file', 'source_record', 'state', 'state_label', 'person', 'person_alias', 'value_axis', 'person_value', 'desire_axis', 'person_desire', 'person_gender', 'clan', 'clan_source', 'clan_hangnyeol_row', 'person_lineage', 'person_lineage_source_clan', 'lineage_node', 'lineage_parent', 'lineage_founder_sesu', 'lineage_clan_assignment', 'profile', 'profile_node', 'profile_field', 'relation_type', 'relation', 'gurps_profile', 'gurps_attribute', 'gurps_secondary', 'gurps_trait', 'gurps_trait_application_boundary', 'gurps_skill', 'gurps_language', 'gurps_advantage', 'gurps_disadvantage', 'gurps_territory', 'gurps_unit', 'gurps_unit_composition', 'gurps_wandering_force', 'gurps_wandering_facility', 'evidence', 'source_check_run', 'source_check_issue', 'quality_issue', ...Object.keys(FAMILY_TABLE_COLUMNS), ...Object.keys(ENGINE_TABLE_COLUMNS), ...Object.keys(CONTEXT_TABLE_COLUMNS), ...Object.keys(INDEX_TABLE_COLUMNS), ...Object.keys(HISTORICAL_CONTEXT_TABLE_COLUMNS), ...Object.keys(IDENTITY_PROVENANCE_TABLE_COLUMNS), ...Object.keys(SOURCE_CLOSURE_TABLE_COLUMNS), ...Object.keys(EXCLUDED_SOURCE_TABLE_COLUMNS)];
+const tableNames = ['build_metadata', 'source_file', 'source_record', 'state', 'state_label', 'person', 'person_alias', 'value_axis', 'person_value', 'desire_axis', 'person_desire', 'person_gender', 'clan', 'clan_source', 'clan_hangnyeol_row', 'person_lineage', 'person_lineage_source_clan', 'lineage_node', 'lineage_parent', 'lineage_founder_sesu', 'lineage_clan_assignment', 'profile', 'profile_node', 'profile_field', 'relation_type', 'relation', 'gurps_profile', 'gurps_attribute', 'gurps_secondary', 'gurps_trait', 'gurps_trait_application_boundary', 'gurps_skill', 'gurps_language', 'gurps_advantage', 'gurps_disadvantage', 'gurps_territory', 'gurps_unit', 'gurps_unit_composition', 'gurps_wandering_force', 'gurps_wandering_facility', 'evidence', 'source_check_run', 'source_check_issue', 'quality_issue', ...Object.keys(FAMILY_TABLE_COLUMNS), ...Object.keys(ENGINE_TABLE_COLUMNS), ...Object.keys(CONTEXT_TABLE_COLUMNS), ...Object.keys(INDEX_TABLE_COLUMNS), ...Object.keys(HISTORICAL_CONTEXT_TABLE_COLUMNS), ...Object.keys(IDENTITY_PROVENANCE_TABLE_COLUMNS), ...Object.keys(SOURCE_CLOSURE_TABLE_COLUMNS), ...Object.keys(EXCLUDED_SOURCE_TABLE_COLUMNS), ...Object.keys(TEXT_CORPUS_TABLE_COLUMNS)];
 function fixture(t) {
   mkdirSync(evidenceRoot, { recursive: true });
   const directory = mkdtempSync(join(evidenceRoot, 'task-1-temp-'));
@@ -44,7 +45,7 @@ function addSource(db) {
 
 test('creates every STRICT table with required indexes and connection pragmas', (t) => {
   const { db } = fixture(t);
-  assert.equal(SCHEMA_VERSION, 2);
+  assert.equal(SCHEMA_VERSION, 3);
   assert.equal(db.prepare('PRAGMA user_version').get().user_version, SCHEMA_VERSION);
   assert.equal(db.prepare('PRAGMA application_id').get().application_id, APPLICATION_ID);
   assert.equal(db.prepare('PRAGMA foreign_keys').get().foreign_keys, 1);

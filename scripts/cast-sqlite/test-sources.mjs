@@ -11,6 +11,7 @@ import {
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 import { REFERENCE_TARGET_PATHS } from './source-closure.mjs';
 import { EXCLUDED_SOURCE_PATHS } from './excluded-sources.mjs';
+import { TEXT_SOURCE_PATHS } from './text-corpus-manifest.mjs';
 
 async function fixture(t) {
   const root = await mkdtemp(join(await realpath(tmpdir()), 'cast-source-'));
@@ -46,8 +47,8 @@ function commitFixture(root) {
 test('manifest separates all fixed data sources and executable provenance', () => {
   assert.equal(DATA_SOURCE_PATHS.length, 48);
   assert.equal(SCRIPT_SOURCE_PATHS.length, 2);
-  assert.equal(REQUIRED_SOURCE_PATHS.length, 50);
-  assert.equal(new Set(REQUIRED_SOURCE_PATHS).size, 50);
+  assert.deepEqual(REQUIRED_SOURCE_PATHS, [...new Set([...DATA_SOURCE_PATHS, ...SCRIPT_SOURCE_PATHS, ...TEXT_SOURCE_PATHS, 'lore/authoring.shared.schema.json'])].sort());
+  assert.equal(new Set(REQUIRED_SOURCE_PATHS).size, REQUIRED_SOURCE_PATHS.length);
   assert.deepEqual(REQUIRED_SOURCE_PATHS, [...REQUIRED_SOURCE_PATHS].sort());
   assert.ok(DATA_SOURCE_PATHS.includes('lore/name-pools/clan-hangnyeol-tables.json'));
   for (const name of ['cast-birthdays', 'cast-birth-cohorts', 'cast-family-trees', 'cast-family-parent-status', 'cast-family-role-decisions', 'cast-household-relations', 'diaspora-family-lineages', 'household-humanoid-policy']) {

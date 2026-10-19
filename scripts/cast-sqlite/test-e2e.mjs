@@ -130,6 +130,9 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
   assert.equal(full.reference_closure, 'verified-with-unresolved-anchors');
   assert.equal(full.source_reference_unresolved_count, 11);
   assert.equal(full.current_import_integrity, 'ok');
+  assert.equal(full.text_corpus.missing_text_source_count, 0);
+  assert.deepEqual(full.text_corpus, built.text_corpus);
+  assert.deepEqual(offline.text_corpus, built.text_corpus);
   assert.equal(full.current_approval_readiness, 'unreviewed');
   assert.equal(full.source_quality, 'degraded');
   assert.equal(full.importer_issue_count, expectedGurpsIssues.length + full.source_reference_unresolved_count);
@@ -149,6 +152,8 @@ test('the complete wiki corpus builds and verifies as an independent read-only S
     ['raw', "UPDATE source_file SET raw_bytes=zeroblob(byte_length) WHERE logical_path='WORLD_BUILDING_GUIDE.md'", 'E_SOURCE_RAW'],
     ['identity', "UPDATE person_value SET value=CASE WHEN value=0 THEN 1 ELSE 0 END WHERE person_id=(SELECT person_id FROM person_value LIMIT 1) AND axis_name=(SELECT axis_name FROM person_value LIMIT 1)", 'E_SOURCE_FIDELITY'],
     ['reference-quality', "UPDATE quality_issue SET observed_value='tampered' WHERE issue_id=(SELECT issue_id FROM quality_issue WHERE dataset='reference' AND code='E_REFERENCE_ANCHOR' LIMIT 1)", 'E_SOURCE_FIDELITY'],
+    ['text-slot', "UPDATE text_document_slot SET text='tampered' WHERE rowid=(SELECT rowid FROM text_document_slot LIMIT 1)", 'E_SOURCE_FIDELITY'],
+    ['text-line', "UPDATE text_line SET text='tampered' WHERE rowid=(SELECT rowid FROM text_line LIMIT 1)", 'E_SOURCE_FIDELITY'],
     ['schema', 'CREATE TABLE rogue(value TEXT) STRICT', 'E_SCHEMA_MISMATCH'],
   ]) {
     const copy = join(root, `${name}.sqlite`);

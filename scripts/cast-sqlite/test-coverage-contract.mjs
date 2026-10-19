@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
-import { assertDocumentShape, auditCoverageContract, auditEngineDocumentShape, COVERAGE_CONTRACT, fieldCoverageManifest, NON_JSON_SOURCE_SCOPE } from './coverage-contract.mjs';
+import { assertDocumentShape, auditCoverageContract, auditEngineDocumentShape, COVERAGE_CONTRACT, fieldCoverageManifest } from './coverage-contract.mjs';
+import { REQUIRED_SOURCE_PATHS } from './sources.mjs';
 import { ENGINE_PRIVATE_SOURCE_PATHS } from './current-engine.mjs';
 
 const source = (path) => JSON.parse(readFileSync(new URL(`../../${path}`, import.meta.url), 'utf8'));
@@ -65,12 +66,12 @@ test('복합 인물 원천의 leaf는 해당 도메인 테이블만 가리킨다
 });
 
 test('필수 정규화 테이블이 사라지면 원문 보존만으로 통과하지 않는다', () => {
-  const files = [...Object.keys(COVERAGE_CONTRACT), ...Object.keys(NON_JSON_SOURCE_SCOPE)]
+  const files = REQUIRED_SOURCE_PATHS
     .map((logical_path, ordinal) => ({ source_id: ordinal + 1, logical_path,
-      document: logical_path.endsWith('.json') ? source(logical_path) : null }));
+      document: Object.hasOwn(COVERAGE_CONTRACT, logical_path) ? source(logical_path) : null }));
   const engineFiles = ENGINE_PRIVATE_SOURCE_PATHS.map((logical_path) => ({ logical_path, document: source(logical_path) }));
   const tables = {};
-  for (const file of files.filter((item) => item.document !== null)) for (const mapping of COVERAGE_CONTRACT[file.logical_path].mappings) {
+  for (const file of files.filter((item) => Object.hasOwn(COVERAGE_CONTRACT, item.logical_path))) for (const mapping of COVERAGE_CONTRACT[file.logical_path].mappings) {
     (tables[mapping.table] ??= []).push({ source_id: file.source_id, [mapping.column]: 'evidence' });
   }
   tables.current_profile = engineFiles.map((_, index) => ({ engine_source_id: index + 1, person_id: `K${index + 1}` }));
