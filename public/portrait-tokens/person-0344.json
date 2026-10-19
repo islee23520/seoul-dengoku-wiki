@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0344",
+  "characterId": "K343",
+  "name": "창해온",
+  "stateId": "S13",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "여성",
+    "genderUserLocked": false,
+    "role": "의료헌장 서기 수련의"
+  },
+  "artProposal": {
+    "face": "Adult woman with a calm, restrained expression, faint expression lines",
+    "hair": "long hair tied in a low ponytail",
+    "upper": "cream buttoned linen work coat over a turtleneck",
+    "outfit": "cream buttoned linen work coat over a turtleneck",
+    "palette": [
+      "cream",
+      "forest green",
+      "sand beige"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "lower": "forest green A-line mid-calf wool skirt over thick stockings",
+    "footwear": "laced leather walking shoes",
+    "accessories": "canvas medical satchel without markings"
+  },
+  "style": {
+    "styleId": "derived-cast-default-20261019",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": null,
+  "references": null,
+  "variantId": null,
+  "imageReview": null,
+  "identity": {
+    "characterId": "K343",
+    "name": "창해온",
+    "ethnicity": {
+      "value": "unconfirmed; art default East Asian appearance",
+      "status": "derived-proposal",
+      "source": "derived-20261019:art-default-origin-unconfirmed",
+      "derived": true
+    },
+    "origin": {
+      "value": "unconfirmed",
+      "status": "unknown",
+      "source": null
+    },
+    "gender": "여성",
+    "ageCategory": "adult",
+    "age": 36,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult woman with a calm, restrained expression, faint expression lines",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "oval",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "monolid almond",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "angled",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "muted red",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "thin straight lips",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "straight bridge with a soft tip",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "long hair tied in a low ponytail",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "long hair tied in a low ponytail",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "long",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "slim",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult female height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "modest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "light olive",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "upper": {
+        "value": "cream buttoned linen work coat over a turtleneck",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "lower": {
+        "value": "forest green A-line mid-calf wool skirt over thick stockings",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "laced leather walking shoes",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "open coat collar over a rolled sweater neck",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "canvas medical satchel without markings",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(medic)",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat rectangular satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(medic)",
+        "derived": true
+      },
+      "color": {
+        "value": "undyed canvas and brown leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(medic)",
+        "derived": true
+      },
+      "material": {
+        "value": "canvas, leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(medic)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "strap across the shoulder",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(medic)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 창해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: slim; skin: light olive. upper garment: cream buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 창해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: slim; skin: light olive; average adult female height. upper garment: cream buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 창해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: slim; skin: light olive; average adult female height. upper garment: cream buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 창해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: slim; skin: light olive; average adult female height. upper garment: cream buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 창해온, an East Asian woman, in her thirties. Adult woman with a calm, restrained expression, faint expression lines; face shape: oval; monolid almond dark brown eyes; angled eyebrows; nose: straight bridge with a soft tip; mouth: thin straight lips; muted red lips. long hair tied in a low ponytail; black hair; long length. build: slim; skin: light olive; average adult female height. upper garment: cream buttoned linen work coat over a turtleneck; neckline: open coat collar over a rolled sweater neck; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: laced leather walking shoes. accessories: canvas medical satchel without markings; worn as strap across the shoulder. color palette: cream, forest green, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}

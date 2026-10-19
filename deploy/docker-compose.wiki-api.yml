@@ -1,0 +1,28 @@
+name: seoul-dengoku-wiki-api
+services:
+  wiki-api:
+    image: node:22-alpine
+    container_name: seoul-dengoku-wiki-api
+    restart: unless-stopped
+    working_dir: /app
+    command: node server/wiki-api.mjs
+    environment:
+      PORT: "8787"
+      DATA_DIR: /data
+      PUBLIC_ORIGIN: https://sss.linalab.io
+    volumes:
+      - ./wiki-api/server:/app/server:ro
+      - ./wiki-api/data:/data:ro
+    ports:
+      - "127.0.0.1:8787:8787"
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:8787/wiki/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+    networks:
+      web:
+        aliases: [wiki-api]
+networks:
+  web:
+    name: seoul-dengoku-web_default
+    external: true
