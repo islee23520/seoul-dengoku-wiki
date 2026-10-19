@@ -193,7 +193,7 @@ for (const file of detailFiles) {
     name: detail.name,
     stateId: detail.state === 'S00' ? null : detail.state,
     approval: 'art-proposal',
-    facts: { gender: detail.gender, genderUserLocked: gender?.user_locked ?? false, role: detail.position },
+    facts: { gender: detail.gender, genderUserLocked: gender?.user_locked ?? false, role: detail.position?.trim() || null },
     artProposal: {},
     style: { styleId: `derived-cast-default-${DERIVED_DATE}`, referenceSha256: null, portraitShotId: 'medium-close-up-119', crop: 'head, both shoulders and upper chest', referenceRole: 'technique-only' },
     image: null,
@@ -221,7 +221,7 @@ for (const file of detailFiles) {
   }
   // Older tokens predate the identity, slots or generationContract sections; add only what is absent.
   const token = previous ? { ...template, ...previous, identity: { ...template.identity, ...previous.identity }, slots: previous.slots ?? {} } : template
-  token.facts.role = detail.position
+  token.facts.role = detail.position?.trim() || null
   token.identity.age = typeof detail.age === 'number' ? detail.age : null
   token.identity.ageAsOf = detail.ageAsOf ?? null
   const proposal = token.artProposal
