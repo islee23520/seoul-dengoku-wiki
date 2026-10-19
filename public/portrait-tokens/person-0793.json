@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0793",
+  "characterId": "K793",
+  "name": "권파윤",
+  "stateId": "S02",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "여성",
+    "genderUserLocked": false,
+    "role": "복구복무 기록관"
+  },
+  "artProposal": {
+    "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
+    "hair": "long hair tied in a low ponytail",
+    "upper": "olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "outfit": "olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+    "palette": [
+      "olive drab",
+      "sand beige",
+      "oxblood"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "lower": "sand beige straight wool trousers",
+    "footwear": "laced leather walking shoes",
+    "accessories": "brass key ring and a small ledger satchel"
+  },
+  "style": {
+    "styleId": "derived-cast-default-20261019",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": null,
+  "references": null,
+  "variantId": null,
+  "imageReview": null,
+  "identity": {
+    "characterId": "K793",
+    "name": "권파윤",
+    "ethnicity": {
+      "value": "unconfirmed; art default East Asian appearance",
+      "status": "derived-proposal",
+      "source": "derived-20261019:art-default-origin-unconfirmed",
+      "derived": true
+    },
+    "origin": {
+      "value": "unconfirmed",
+      "status": "unknown",
+      "source": null
+    },
+    "gender": "여성",
+    "ageCategory": "adult",
+    "age": 55,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "rectangular",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "narrow almond",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "angled",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "dusty rose",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "closed mouth with a fuller lower lip",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "straight narrow bridge",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "long hair tied in a low ponytail",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "long hair tied in a low ponytail",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black streaked with grey",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "long",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "average with narrow shoulders",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult female height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "average",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "medium warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "upper": {
+        "value": "olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "lower": {
+        "value": "sand beige straight wool trousers",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "laced leather walking shoes",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "buttoned shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "brass key ring and a small ledger satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "shape": {
+        "value": "key ring and flat satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "color": {
+        "value": "aged brass and brown leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "material": {
+        "value": "brass, leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "key ring at the belt, satchel across the shoulder",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 권파윤, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: average with narrow shoulders; skin: medium warm beige. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, sand beige, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 권파윤, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, sand beige, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 권파윤, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, sand beige, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 권파윤, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, sand beige, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 권파윤, an East Asian woman, in her fifties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: rectangular; narrow almond dark brown eyes; angled eyebrows; nose: straight narrow bridge; mouth: closed mouth with a fuller lower lip; dusty rose lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: average with narrow shoulders; skin: medium warm beige; average adult female height. upper garment: olive drab wool cardigan over a collared shirt with sleeve garters, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige straight wool trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: olive drab, sand beige, oxblood. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}

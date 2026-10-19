@@ -16,7 +16,15 @@
     "upper": "화재로부터 몸을 보호하는 용도의 재킷형 외투. 시안에서는 어두운 회색으로 표현했으며 소재·보호 등급·색상은 정본 미확정이다.",
     "lower": "각선미가 드러나는 짧은 바지",
     "footwear": "군화",
-    "approvalNote": "초상화 등록 PR의 대상인 2D 시안이다. 미확정 색상과 의복 세부를 인물 정본으로 승격하지 않는다."
+    "approvalNote": "초상화 등록 PR의 대상인 2D 시안이다. 미확정 색상과 의복 세부를 인물 정본으로 승격하지 않는다.",
+    "outfit": "cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold",
+    "palette": [
+      "cream",
+      "slate blue",
+      "charcoal"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "accessories": "leather dispatch satchel"
   },
   "style": {
     "styleId": "yokoyama-text-only-study-20261001",
@@ -38,10 +46,257 @@
     "imageText": "none",
     "reviewStatus": "registration-requested"
   },
+  "variantId": null,
   "imageReview": {
     "record": "/portrait-reviews/person-1017.json",
     "imageSha256": "2c3ffca99a0944e7b0af992110a32f4606fc9c82dfc91b25513b9045306a1685",
     "verdict": "pass",
     "scope": "exact image registration PR only; no appearance or equipment canon promotion"
+  },
+  "identity": {
+    "characterId": "K1017",
+    "name": "지연희",
+    "ethnicity": {
+      "value": "unconfirmed; art default East Asian appearance",
+      "status": "derived-proposal",
+      "source": "derived-20261019:art-default-origin-unconfirmed",
+      "derived": true
+    },
+    "origin": {
+      "value": "unconfirmed",
+      "status": "unknown",
+      "source": null
+    },
+    "gender": "여성",
+    "ageCategory": "adult",
+    "age": 26,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "outfit": {
+      "lower": {
+        "value": "각선미가 드러나는 짧은 바지",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1017.json"
+      },
+      "footwear": {
+        "value": "군화",
+        "status": "art-proposal",
+        "source": "portrait-tokens/person-1017.json"
+      },
+      "headwear": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:approved-portrait-consistency",
+        "derived": true
+      },
+      "upper": {
+        "value": "cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "turned-up jacket collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "face": {
+      "description": {
+        "value": "Adult woman with a calm, restrained expression, youthful smooth skin",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "diamond-shaped with high cheekbones",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "upturned almond",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "straight and thick",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "dusty rose",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "wide closed mouth",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "low broad bridge",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "chin-length bob with soft waves",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "chin-length bob with soft waves",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "short",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "soft rounded",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult female height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "average",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "fair with a neutral undertone",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "leather dispatch satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(messenger)",
+        "derived": true
+      },
+      "shape": {
+        "value": "flat flap satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(messenger)",
+        "derived": true
+      },
+      "color": {
+        "value": "worn brown leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(messenger)",
+        "derived": true
+      },
+      "material": {
+        "value": "leather, brass buckle",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(messenger)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "strap across the chest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(messenger)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 지연희, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: soft rounded; skin: fair with a neutral undertone. upper garment: cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, slate blue, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 지연희, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: 각선미가 드러나는 짧은 바지; footwear: 군화. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, slate blue, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 지연희, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: 각선미가 드러나는 짧은 바지; footwear: 군화. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, slate blue, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 지연희, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: 각선미가 드러나는 짧은 바지; footwear: 군화. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, slate blue, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 지연희, an East Asian woman, in her twenties. Adult woman with a calm, restrained expression, youthful smooth skin; face shape: diamond-shaped with high cheekbones; upturned almond dark brown eyes; straight and thick eyebrows; nose: low broad bridge; mouth: wide closed mouth; dusty rose lips. chin-length bob with soft waves; black hair; short length. build: soft rounded; skin: fair with a neutral undertone; average adult female height. upper garment: cream zip-front canvas windbreaker over a knit sweater, under a heavy wool greatcoat with a raised collar for surface cold; neckline: turned-up jacket collar; lower garment: 각선미가 드러나는 짧은 바지; footwear: 군화. accessories: leather dispatch satchel; worn as strap across the chest. color palette: cream, slate blue, charcoal. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
   }
 }

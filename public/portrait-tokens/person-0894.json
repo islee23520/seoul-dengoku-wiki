@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0894",
+  "characterId": "K894",
+  "name": "세바스티안 브라운",
+  "stateId": "S07",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "호송 전령"
+  },
+  "artProposal": {
+    "face": "Adult man with a calm, restrained expression, youthful smooth skin",
+    "hair": "short hair slicked back with a side part",
+    "upper": "rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "outfit": "rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+    "palette": [
+      "rust brown",
+      "sand beige"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "lower": "sand beige wool trousers bloused over boots",
+    "footwear": "thick-soled leather winter boots with wool socks",
+    "accessories": "small hand lamp clipped to a leather belt"
+  },
+  "style": {
+    "styleId": "derived-cast-default-20261019",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": null,
+  "references": null,
+  "variantId": null,
+  "imageReview": null,
+  "identity": {
+    "characterId": "K894",
+    "name": "세바스티안 브라운",
+    "ethnicity": {
+      "value": "European heritage",
+      "status": "derived-proposal",
+      "source": "derived-20261019:nonKoreanFamilyCatalog.surname-lineage",
+      "derived": true
+    },
+    "origin": {
+      "value": "European heritage",
+      "status": "derived-proposal",
+      "source": "derived-20261019:nonKoreanFamilyCatalog.surname-lineage",
+      "derived": true
+    },
+    "gender": "남성",
+    "ageCategory": "adult",
+    "age": 25,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult man with a calm, restrained expression, youthful smooth skin",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "square with a firm jaw",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "deep-set",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "low and heavy",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "natural muted rose",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "thin straight lips",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "short rounded tip",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "neatly trimmed mustache",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "short hair slicked back with a side part",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "short hair slicked back with a side part",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "short",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "stocky",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "fair with pink undertone",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "fur-lined ear-flap cap",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "upper": {
+        "value": "rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "lower": {
+        "value": "sand beige wool trousers bloused over boots",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "thick-soled leather winter boots with wool socks",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "closed turn-down collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "small hand lamp clipped to a leather belt",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
+      },
+      "shape": {
+        "value": "compact cylindrical lamp",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
+      },
+      "color": {
+        "value": "dull steel and dark brown leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
+      },
+      "material": {
+        "value": "steel, leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "clipped at the belt",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 세바스티안 브라운, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; deep-set brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: stocky; skin: fair with pink undertone. headwear: fur-lined ear-flap cap; upper garment: rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 세바스티안 브라운, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; deep-set brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: stocky; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: sand beige wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 세바스티안 브라운, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; deep-set brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: stocky; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: sand beige wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 세바스티안 브라운, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; deep-set brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: stocky; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: sand beige wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 세바스티안 브라운, an European heritage man, in his twenties. Adult man with a calm, restrained expression, youthful smooth skin; face shape: square with a firm jaw; deep-set brown eyes; low and heavy eyebrows; nose: short rounded tip; mouth: thin straight lips; natural muted rose lips; facial hair: neatly trimmed mustache. short hair slicked back with a side part; black hair; short length. build: stocky; skin: fair with pink undertone; average adult male height. headwear: fur-lined ear-flap cap; upper garment: rust brown wool service tunic without insignia, cinched by a leather belt, under a heavy wool greatcoat with a raised collar for surface cold; neckline: closed turn-down collar; lower garment: sand beige wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: rust brown, sand beige. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0906",
+  "characterId": "K906",
+  "name": "서돌서",
+  "stateId": "S03",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "남성",
+    "genderUserLocked": false,
+    "role": "종자 기록관"
+  },
+  "artProposal": {
+    "face": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
+    "hair": "short wavy hair",
+    "upper": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "outfit": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+    "palette": [
+      "cream",
+      "sand beige",
+      "burgundy"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "lower": "sand beige high-waisted pleated trousers",
+    "footwear": "laced leather walking shoes",
+    "accessories": "brass key ring and a small ledger satchel"
+  },
+  "style": {
+    "styleId": "derived-cast-default-20261019",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": null,
+  "references": null,
+  "variantId": null,
+  "imageReview": null,
+  "identity": {
+    "characterId": "K906",
+    "name": "서돌서",
+    "ethnicity": {
+      "value": "unconfirmed; art default East Asian appearance",
+      "status": "derived-proposal",
+      "source": "derived-20261019:art-default-origin-unconfirmed",
+      "derived": true
+    },
+    "origin": {
+      "value": "unconfirmed",
+      "status": "unknown",
+      "source": null
+    },
+    "gender": "남성",
+    "ageCategory": "adult",
+    "age": 62,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult man with a calm, restrained expression, visible crow's feet and forehead lines",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "square with a firm jaw",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "gently hooded",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "low and heavy",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "natural muted rose",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "wide closed mouth",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "low broad bridge",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "clean shaven",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "short wavy hair",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "short wavy hair",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black streaked with grey",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "short",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "lean",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "flat chest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "medium warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "upper": {
+        "value": "cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "lower": {
+        "value": "sand beige high-waisted pleated trousers",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "laced leather walking shoes",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "buttoned shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "brass key ring and a small ledger satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "shape": {
+        "value": "key ring and flat satchel",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "color": {
+        "value": "aged brass and brown leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "material": {
+        "value": "brass, leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "key ring at the belt, satchel across the shoulder",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(records)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 서돌서, an East Asian man, in his sixties. Adult man with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; gently hooded dark brown eyes; low and heavy eyebrows; nose: low broad bridge; mouth: wide closed mouth; natural muted rose lips; facial hair: clean shaven. short wavy hair; black streaked with grey hair; short length. build: lean; skin: medium warm beige; average adult male height. upper garment: cream plain single-breasted clerk's jacket with cotton oversleeves, with a thick knitted scarf and an extra padded layer; neckline: buttoned shirt collar; lower garment: sand beige high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: brass key ring and a small ledger satchel; worn as key ring at the belt, satchel across the shoulder. color palette: cream, sand beige, burgundy. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}

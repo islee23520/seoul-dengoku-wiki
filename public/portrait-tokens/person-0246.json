@@ -19,9 +19,16 @@
     "face": "차분하고 온화한 얼굴",
     "hair": "짧게 다듬은 희끗한 머리",
     "upper": "종교 복장 아닌 탁한 흙갈색 민간 겉옷",
-    "lower": null,
-    "footwear": null,
-    "accessories": null
+    "lower": "oxblood straight wool trousers",
+    "footwear": "polished leather knee boots",
+    "accessories": "plain brass pocket watch on a short chain",
+    "outfit": "종교 복장 아닌 탁한 흙갈색 민간 겉옷",
+    "palette": [
+      "cream",
+      "oxblood",
+      "slate blue"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred"
   },
   "style": {
     "styleId": "owner-gender-reference-20261002",
@@ -36,6 +43,8 @@
     "width": 1160,
     "height": 1355
   },
+  "references": null,
+  "variantId": null,
   "imageReview": {
     "record": "/portrait-reviews/person-0246.json",
     "imageSha256": "cb8149a705bc229362922e0a1a2493f169cc92120889602fe5ebece3169fdd4a",
@@ -56,7 +65,9 @@
       "source": "owner-directive-20261002"
     },
     "gender": "남성",
-    "ageCategory": "adult"
+    "ageCategory": "adult",
+    "age": 24,
+    "ageAsOf": "2126-12-31"
   },
   "slots": {
     "face": {
@@ -135,33 +146,38 @@
         "source": "portrait-tokens/person-0246.json"
       },
       "weight": {
-        "value": null,
-        "status": "unknown",
-        "source": null,
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
         "unit": null
       },
       "height": {
-        "value": null,
-        "status": "unknown",
-        "source": null,
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
         "unit": null
       },
       "bustSize": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "flat chest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
       },
       "skin": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "light warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
       }
     },
     "outfit": {
       "headwear": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:approved-portrait-consistency",
+        "derived": true
       },
       "upper": {
         "value": "종교 복장 아닌 탁한 흙갈색 민간 겉옷",
@@ -169,51 +185,60 @@
         "source": "portrait-tokens/person-0246.json"
       },
       "lower": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "oxblood straight wool trousers",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
       },
       "footwear": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "polished leather knee boots",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
       },
       "marks": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
       },
       "neckline": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "buttoned high shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "plain brass pocket watch on a short chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
       },
       "shape": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "round watch with a fine chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
       },
       "color": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "aged brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
       },
       "material": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
       },
       "mounting": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "chain clipped to the waistcoat or jacket buttonhole",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
       }
     }
   },
@@ -225,5 +250,37 @@
     "styleReferenceRole": "technique-only",
     "model": "gpt-image-2.5",
     "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 백온, a Korean man, in his twenties. 차분하고 온화한 얼굴; face shape: broad oval with an angular jaw; almond-shaped, slightly hooded dark brown eyes; thick, mostly straight with a slight angle eyebrows; nose: straight bridge, broad rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted brown lips; facial hair: sparse short stubble along the cheeks and jaw. 짧게 다듬은 희끗한 머리; dark charcoal with gray streaks hair; short length. build: average build with broad shoulders; skin: light warm beige. upper garment: 종교 복장 아닌 탁한 흙갈색 민간 겉옷; neckline: buttoned high shirt collar. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: cream, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 백온, a Korean man, in his twenties. 차분하고 온화한 얼굴; face shape: broad oval with an angular jaw; almond-shaped, slightly hooded dark brown eyes; thick, mostly straight with a slight angle eyebrows; nose: straight bridge, broad rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted brown lips; facial hair: sparse short stubble along the cheeks and jaw. 짧게 다듬은 희끗한 머리; dark charcoal with gray streaks hair; short length. build: average build with broad shoulders; skin: light warm beige; average adult male height. upper garment: 종교 복장 아닌 탁한 흙갈색 민간 겉옷; neckline: buttoned high shirt collar; lower garment: oxblood straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: cream, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 백온, a Korean man, in his twenties. 차분하고 온화한 얼굴; face shape: broad oval with an angular jaw; almond-shaped, slightly hooded dark brown eyes; thick, mostly straight with a slight angle eyebrows; nose: straight bridge, broad rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted brown lips; facial hair: sparse short stubble along the cheeks and jaw. 짧게 다듬은 희끗한 머리; dark charcoal with gray streaks hair; short length. build: average build with broad shoulders; skin: light warm beige; average adult male height. upper garment: 종교 복장 아닌 탁한 흙갈색 민간 겉옷; neckline: buttoned high shirt collar; lower garment: oxblood straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: cream, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 백온, a Korean man, in his twenties. 차분하고 온화한 얼굴; face shape: broad oval with an angular jaw; almond-shaped, slightly hooded dark brown eyes; thick, mostly straight with a slight angle eyebrows; nose: straight bridge, broad rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted brown lips; facial hair: sparse short stubble along the cheeks and jaw. 짧게 다듬은 희끗한 머리; dark charcoal with gray streaks hair; short length. build: average build with broad shoulders; skin: light warm beige; average adult male height. upper garment: 종교 복장 아닌 탁한 흙갈색 민간 겉옷; neckline: buttoned high shirt collar; lower garment: oxblood straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: cream, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 백온, a Korean man, in his twenties. 차분하고 온화한 얼굴; face shape: broad oval with an angular jaw; almond-shaped, slightly hooded dark brown eyes; thick, mostly straight with a slight angle eyebrows; nose: straight bridge, broad rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted brown lips; facial hair: sparse short stubble along the cheeks and jaw. 짧게 다듬은 희끗한 머리; dark charcoal with gray streaks hair; short length. build: average build with broad shoulders; skin: light warm beige; average adult male height. upper garment: 종교 복장 아닌 탁한 흙갈색 민간 겉옷; neckline: buttoned high shirt collar; lower garment: oxblood straight wool trousers; footwear: polished leather knee boots. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: cream, oxblood, slate blue. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
   }
 }
