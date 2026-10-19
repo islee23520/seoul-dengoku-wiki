@@ -2,7 +2,7 @@
 
 `.woodpecker/deploy.yaml` runs only for pushes to `main`, after `ci` succeeds.
 The Node 22 step sends the commit to the deployment owner, then checks the public
-site with `check-live-contract.mjs`. The owner performs the release and rollback;
+site with `check-live-contract.mjs --public-edge`. The owner performs the release and rollback;
 this repository does not hold deployment host credentials.
 
 Configure the Woodpecker secret `seoul_deploy_token`. `SEOUL_DEPLOY_URL` currently
@@ -28,11 +28,23 @@ lore and checked-in build snapshots. No full Vite build, crest generation, or
 observed-geography generation is needed for the HTTP check. The check command is:
 
 ```sh
-node deploy/check-live-contract.mjs https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts
+node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts
 ```
 
-Run caller tests without credentials or an external owner:
+Public-edge mode requires HTTP 200 and the React entry marker on every catalog
+wiki route, compatibility wiki route, `/wiki/`, and `/wiki/states`. It does not
+follow redirects. `/system-design/regions`, `/system-design/regions/`, and `/gdd/`
+must return HTTP 302 to the HTTPS `linalab.cloudflareaccess.com` login path for
+the checked host. HTTP 200 or 308 fails: either would bypass the Access boundary.
+Access Location query values are never included in the result.
+
+Without `--public-edge`, the checker remains the origin contract (default
+`http://127.0.0.1:8080`), including the region redirects' HTTP 308 and destination.
+The deployment owner runs that contract against the origin during promotion;
+the public check does not replace it.
+
+Run deploy tests without credentials or an external owner:
 
 ```sh
-node --test deploy/test-call-owner.mjs
+node --test deploy/test-*.mjs
 ```
