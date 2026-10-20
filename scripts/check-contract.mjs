@@ -7,8 +7,12 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
 import { personRouteFailures } from './person-publication-contract.mjs'
+import { requireSeoulPublication } from './check-seoul-scope.mjs'
+import { buildAdminTerritorialScale, validateAdminTerritorialScale } from './admin-territorial-scale.mjs'
+import { validatePublishedGeographyMap } from './published-geography-map.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const publicationReview = await requireSeoulPublication(projectRoot)
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(projectRoot, 'lore'))
 const domains = ['world']
 const outputArg = process.argv.indexOf('--json')
@@ -49,7 +53,20 @@ try {
 }
 
 const failures = []
-const approved = publishedDocuments(await approvedDocuments(loreRoot))
+const offices = JSON.parse(await readFile(resolve(loreRoot, 'offices/Offices-and-Ranks.json'), 'utf8'))
+const geographyBytes = await readFile(resolve(loreRoot, 'regions/seoul-electoral-titles.json'))
+try {
+  const descriptor = offices.data.territorialScale
+  const geographicScale = buildAdminTerritorialScale({ geographyBytes, territorialScale: descriptor })
+  validateAdminTerritorialScale(geographicScale, { geographyBytes, territorialScale: descriptor })
+  const publishedDescriptor = JSON.parse(await readFile(resolve(projectRoot, 'public/territorial-scale.json'), 'utf8'))
+  if (JSON.stringify(publishedDescriptor) !== JSON.stringify(descriptor)) failures.push('territorial-scale-descriptor-drift')
+  const map = JSON.parse(await readFile(resolve(projectRoot, 'public/opening-territories.json'), 'utf8')).geography
+  validatePublishedGeographyMap(map, JSON.parse(geographyBytes.toString()), geographicScale)
+} catch (error) {
+  failures.push('territorial-scale-contract:' + error.message)
+}
+const approved = publishedDocuments(await approvedDocuments(loreRoot), publicationReview)
 const peopleSource = await readFile(resolve(projectRoot, 'src/generated/peopleCatalog.ts'), 'utf8')
 const people = JSON.parse(peopleSource.split('export const peopleCatalog = ')[1].split(' as const')[0])
 const sourcePeople = JSON.parse(await readFile(resolve(loreRoot, 'name-pools/values-cast.json'), 'utf8')).people

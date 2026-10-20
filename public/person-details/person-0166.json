@@ -2,9 +2,9 @@
   "id": "person-0166",
   "name": "란지호",
   "title": "공신 보상 명부 당사자",
-  "position": "공신 보상 명부 당사자 · 남양주시 영주",
+  "position": "공신 보상 명부 당사자",
   "characterId": "K165",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "공신 보상 사본·배급표 대조",
   "gender": "남성",
@@ -555,52 +555,23 @@
             "name": "란지호",
             "url": "/people/person-0166",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공신 보상 사본·배급표 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/226/items/0/ko",
-                  "quote": "생업: 공신 보상 사본·배급표 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "보상 사본과 실제 배급표를 저녁마다 대조하고, 세습 추가는 본인 출석 없이 적지 못하게 막는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -608,78 +579,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/226/items/0/ko",
-                    "quote": "생업: 공신 보상 사본·배급표 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "보상 사본과 실제 배급표를 저녁마다 대조하고, 세습 추가는 본인 출석 없이 적지 못하게 막는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "안국",
-              "type": "초소 영지",
-              "station": "안국",
-              "state": "S06",
-              "settlement": {
-                "name": "안국 정착지",
-                "type": "정착지",
-                "description": "안국 일대 고정 거점"
-              },
-              "note": "S06 안국 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -703,52 +624,23 @@
             "name": "란지호",
             "url": "/people/person-0166",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공신 보상 사본·배급표 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/226/items/0/ko",
-                  "quote": "생업: 공신 보상 사본·배급표 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "보상 사본과 실제 배급표를 저녁마다 대조하고, 세습 추가는 본인 출석 없이 적지 못하게 막는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -756,201 +648,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/226/items/0/ko",
-                    "quote": "생업: 공신 보상 사본·배급표 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "보상 사본과 실제 배급표를 저녁마다 대조하고, 세습 추가는 본인 출석 없이 적지 못하게 막는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/228/text/ko",
-                    "quote": "란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "안국",
-              "type": "초소 영지",
-              "station": "안국",
-              "state": "S06",
-              "settlement": {
-                "name": "안국 정착지",
-                "type": "정착지",
-                "description": "안국 일대 고정 거점"
-              },
-              "note": "S06 안국 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41360-S06",
-      "name": {
-        "ko": "남양주시 공작령 직영지"
-      },
-      "holderPersonId": "K165",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4136025000",
-          "name": "경기도 남양주시 와부읍"
-        },
-        {
-          "id": "4136025300",
-          "name": "경기도 남양주시 진접읍"
-        },
-        {
-          "id": "4136025600",
-          "name": "경기도 남양주시 화도읍"
-        },
-        {
-          "id": "4136025900",
-          "name": "경기도 남양주시 진건읍"
-        },
-        {
-          "id": "4136026200",
-          "name": "경기도 남양주시 오남읍"
-        },
-        {
-          "id": "4136026500",
-          "name": "경기도 남양주시 퇴계원읍"
-        },
-        {
-          "id": "4136031000",
-          "name": "경기도 남양주시 별내면"
-        },
-        {
-          "id": "4136034000",
-          "name": "경기도 남양주시 수동면"
-        },
-        {
-          "id": "4136036000",
-          "name": "경기도 남양주시 조안면"
-        },
-        {
-          "id": "4136051000",
-          "name": "경기도 남양주시 호평동"
-        },
-        {
-          "id": "4136052000",
-          "name": "경기도 남양주시 평내동"
-        },
-        {
-          "id": "4136053000",
-          "name": "경기도 남양주시 금곡동"
-        },
-        {
-          "id": "4136054000",
-          "name": "경기도 남양주시 양정동"
-        },
-        {
-          "id": "4136054500",
-          "name": "경기도 남양주시 다산1동"
-        },
-        {
-          "id": "4136056500",
-          "name": "경기도 남양주시 다산2동"
-        },
-        {
-          "id": "4136057000",
-          "name": "경기도 남양주시 별내동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41360-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41360-S06",
-      "name": "남양주시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K165",
-      "basis": "개막 행정 규모 그룹 41360(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "4136025000",
-        "4136025300",
-        "4136025600",
-        "4136025900",
-        "4136026200",
-        "4136026500",
-        "4136031000",
-        "4136034000",
-        "4136036000",
-        "4136051000",
-        "4136052000",
-        "4136053000",
-        "4136054000",
-        "4136054500",
-        "4136056500",
-        "4136057000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41360-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -964,18 +707,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "안국",
-    "type": "초소 영지",
-    "station": "안국",
-    "state": "S06",
-    "settlement": {
-      "name": "안국 정착지",
-      "type": "정착지",
-      "description": "안국 일대 고정 거점"
-    },
-    "note": "S06 안국 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1009,22 +740,22 @@
   },
   "fields": {
     "생업": "공신 보상 사본·배급표 대조",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "공신 보상 명부 당사자",
+    "지위": "기능·생업 역할(정부 임용 아님)",
+    "공무원 직위·직급": "없음",
+    "생업 역할": "공신 보상 명부 당사자",
     "가치관": "권위 25 | 개방 −15 | 무력 −20 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −15 | 자격 10 | 분산 −25 | 변혁 −45",
     "욕망": "갈망 45 | 독점 −10 | 위험 −30 | 과시 20 | 지속 −15 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 보국문 피난 막사에서 자랐다. 공신 보상 명부 당사자 자리는 고아 명부 시민권 줄로 열렸다.",
-    "관직": "품계 주사. 직함은 공신 보상 명부 당사자. 보상 사본과 실제 배급표를 저녁마다 대조하고, 세습 추가는 본인 출석 없이 적지 못하게 막는다.",
+    "생애": "보국문 피난 막사에서 자랐다. 공신 보상 명부 당사자 자리는 고아 명부 시민권 줄로 열렸다.\n- 란지호의 공신 보상 사본과 배급표를 대조하는 일은 회현동의 업무와 이어진다.",
+    "기능·생업 역할": "공신 보상 명부 당사자. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.",
     "일화": "저녁 대조에서 공신 보상 사본의 세습 칸에 본인 출석 없이 이름 하나가 더해진 것이 드러난다. 란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다.",
     "관계": "윤서린의 공신록 보관에 이의를 남기고, 마은결의 사본 경매에서 자신의 관작이 물건이 되지 않기를 바라며, 설다흰의 대합실 창구에 이름을 다시 올리려 한다.",
     "야망": "공신 보상에 깎인 배급 칸을 기록청 원장에서 되찾아 창건 보상이 친위 몫으로만 남지 않게 한다.",
     "공포": "명부에서 이름이 지워진 뒤에도 도장이 남아 자신이 없는 관작의 보증인이 되는 것.",
     "개입": "빈 명부 칸을 채울 증인을 데려오거나, 세습 칸을 지워 당사자를 원장에서 구출할 수 있다."
   },
-  "biography": "관직과 배급권을 한 줄에 적힌 채 받은 겨울을 잊지 못하고, 세습 칸이 비면 목소리를 낮추지 않는다. 자비와 분노를 한 호흡에 낸다.\n\n- 생업: 공신 보상 사본·배급표 대조\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 공신 보상 명부 당사자\n**생애.** 2126년 세대. 보국문 피난 막사에서 자랐다. 공신 보상 명부 당사자 자리는 고아 명부 시민권 줄로 열렸다.\n\n**관직.** 품계 주사. 직함은 공신 보상 명부 당사자. 보상 사본과 실제 배급표를 저녁마다 대조하고, 세습 추가는 본인 출석 없이 적지 못하게 막는다.\n\n**일화.** 저녁 대조에서 공신 보상 사본의 세습 칸에 본인 출석 없이 이름 하나가 더해진 것이 드러난다. 란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다.\n\n**관계.** 윤서린의 공신록 보관에 이의를 남기고, 마은결의 사본 경매에서 자신의 관작이 물건이 되지 않기를 바라며, 설다흰의 대합실 창구에 이름을 다시 올리려 한다.\n\n**야망.** 공신 보상에 깎인 배급 칸을 기록청 원장에서 되찾아 창건 보상이 친위 몫으로만 남지 않게 한다.\n\n**공포.** 명부에서 이름이 지워진 뒤에도 도장이 남아 자신이 없는 관작의 보증인이 되는 것.\n\n**개입.** 빈 명부 칸을 채울 증인을 데려오거나, 세습 칸을 지워 당사자를 원장에서 구출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −15 | 무력 −20 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −15 | 자격 10 | 분산 −25 | 변혁 −45\n- 욕망: 갈망 45 | 독점 −10 | 위험 −30 | 과시 20 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
+  "biography": "관직과 배급권을 한 줄에 적힌 채 받은 겨울을 잊지 못하고, 세습 칸이 비면 목소리를 낮추지 않는다. 자비와 분노를 한 호흡에 낸다.\n\n- 생업: 공신 보상 사본·배급표 대조\n- 지위: 기능·생업 역할(정부 임용 아님)\n- 공무원 직위·직급: 없음\n- 생업 역할: 공신 보상 명부 당사자\n**생애.** 보국문 피난 막사에서 자랐다. 공신 보상 명부 당사자 자리는 고아 명부 시민권 줄로 열렸다.\n- 란지호의 공신 보상 사본과 배급표를 대조하는 일은 회현동의 업무와 이어진다.\n\n**기능·생업 역할.** 공신 보상 명부 당사자. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.\n\n**일화.** 저녁 대조에서 공신 보상 사본의 세습 칸에 본인 출석 없이 이름 하나가 더해진 것이 드러난다. 란지호는 윤서린의 공신록 보관에 이의를 적어 올리고, 그 사본이 마은결의 경매대에 오르기 전에 설다흰의 대합실 창구에서 자기 이름을 다시 확인한다.\n\n**관계.** 윤서린의 공신록 보관에 이의를 남기고, 마은결의 사본 경매에서 자신의 관작이 물건이 되지 않기를 바라며, 설다흰의 대합실 창구에 이름을 다시 올리려 한다.\n\n**야망.** 공신 보상에 깎인 배급 칸을 기록청 원장에서 되찾아 창건 보상이 친위 몫으로만 남지 않게 한다.\n\n**공포.** 명부에서 이름이 지워진 뒤에도 도장이 남아 자신이 없는 관작의 보증인이 되는 것.\n\n**개입.** 빈 명부 칸을 채울 증인을 데려오거나, 세습 칸을 지워 당사자를 원장에서 구출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 −15 | 무력 −20 | 물질 −25 | 공동 15 | 원칙 55 | 공개 −15 | 자격 10 | 분산 −25 | 변혁 −45\n- 욕망: 갈망 45 | 독점 −10 | 위험 −30 | 과시 20 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

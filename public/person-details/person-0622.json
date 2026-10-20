@@ -435,8 +435,8 @@
           "en": "Office. Rank: registrar. Title: dispatch clerk. He handed over only the keys and records of his own post, and never made authority he did not hold."
         },
         "stress": {
-          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
-          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+          "ko": "공포. 배차 서기 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty, interrupting dispatch and transshipment handovers in Yongsan and passing unverified completion records to water-supply, medical-care and goods handover counterparts within Seoul."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
@@ -459,8 +459,8 @@
           "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Mihai Ionescu informs Noah Davis of injured arrivals moved first through a passage. Noah checks their condition in the mobile medical car, connecting patients obscured by dispatch delays with care."
         },
         "stress": {
-          "ko": "공포. 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
-          "en": "Fear. That the dispatch clerk duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+          "ko": "공포. 배차 서기 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
+          "en": "Fear. That the dispatch clerk duty post would stand empty, interrupting dispatch and transshipment handovers in Yongsan and passing unverified completion records to water-supply, medical-care and goods handover counterparts within Seoul."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
@@ -533,53 +533,23 @@
             "name": "미하이 이오네스쿠",
             "url": "/people/person-0622",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 통로 제설·부상자 이송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/391/items/2/ko",
-                  "quote": "생업: 환승 통로 제설·부상자 이송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/393/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -587,84 +557,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "First Aid/TL?",
                 "ko": "응급 처치·환자 이송",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/391/items/2/ko",
-                    "quote": "생업: 환승 통로 제설·부상자 이송"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "가산디지털단지",
-              "type": "초소 영지",
-              "station": "가산디지털단지",
-              "state": "S07",
-              "settlement": {
-                "name": "가산디지털단지 정착지",
-                "type": "정착지",
-                "description": "가산디지털단지 일대 고정 거점"
-              },
-              "note": "S07 가산디지털단지 일대 관할 영지"
+              "unspent": 29
             }
           }
         }
@@ -688,53 +608,23 @@
             "name": "미하이 이오네스쿠",
             "url": "/people/person-0622",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 통로 제설·부상자 이송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/391/items/2/ko",
-                  "quote": "생업: 환승 통로 제설·부상자 이송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/393/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -742,84 +632,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "First Aid/TL?",
                 "ko": "응급 처치·환자 이송",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/391/items/2/ko",
-                    "quote": "생업: 환승 통로 제설·부상자 이송"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "가산디지털단지",
-              "type": "초소 영지",
-              "station": "가산디지털단지",
-              "state": "S07",
-              "settlement": {
-                "name": "가산디지털단지 정착지",
-                "type": "정착지",
-                "description": "가산디지털단지 일대 고정 거점"
-              },
-              "note": "S07 가산디지털단지 일대 관할 영지"
+              "unspent": 29
             }
           }
         }
@@ -840,18 +680,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "가산디지털단지",
-    "type": "초소 영지",
-    "station": "가산디지털단지",
-    "state": "S07",
-    "settlement": {
-      "name": "가산디지털단지 정착지",
-      "type": "정착지",
-      "description": "가산디지털단지 일대 고정 거점"
-    },
-    "note": "S07 가산디지털단지 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": null,
@@ -888,15 +716,15 @@
     "욕망": "갈망 45 | 독점 −15 | 위험 −5 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 미하이 이오네스쿠는 2073년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 니콜라에 이오네스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미하이 이오네스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
-    "야망": "배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
-    "공포": "배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2073년생인 미하이 이오네스쿠는 2126년 개막기에 배차 서기 업무를 맡는다. 신내 환승 당직에서 자랐다. 배차 서기 업무는 무표 출발 열차 저지를 계기로 시작됐다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 니콜라에 이오네스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미하이 이오네스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 미하이 이오네스쿠의 환승 통로 제설·부상자 이송 업무는 한강로동과 연결된다.",
+    "관직": "품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 인계하며, 없는 권한은 만들어 내지 않는다.",
+    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 행동을 계기로 배차 서기 자리의 서명이 장부에 올랐다.",
+    "관계": "미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.",
+    "야망": "배차 서기 업무의 환승 통로 제설·부상자 이송 기록을 환적국 장부와 이어, 다음 당직이 같은 기록을 확인하게 한다.",
+    "공포": "배차 서기 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
+    "개입": "당직 인수에 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 배차 서기\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 배차 서기 자리는 무표 출발 열차 저지로 열렸다. 미하이 이오네스쿠는 2073년에 태어났다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 배차 서기 업무를 맡는다. 니콜라에 이오네스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미하이 이오네스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.\n\n**야망.** 배차 서기 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 배차 서기 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 15 | 공동 −10 | 원칙 −10 | 공개 −30 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 45 | 독점 −15 | 위험 −5 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "미하이 이오네스쿠는 환승 통로 제설·부상자 이송 업무를 맡는다. 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환승 통로 제설·부상자 이송\n- 직함: 배차 서기\n**생애.** 2073년생인 미하이 이오네스쿠는 2126년 개막기에 배차 서기 업무를 맡는다. 신내 환승 당직에서 자랐다. 배차 서기 업무는 무표 출발 열차 저지를 계기로 시작됐다. 루마니아계 가계는 동대문·용산 생활권에 뿌리를 두고 있다. 니콜라에 이오네스쿠는 2030년 동대문·용산에서 동대문 민간 봉제·화물 중개 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 미하이 이오네스쿠의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 루마니아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 미하이 이오네스쿠의 환승 통로 제설·부상자 이송 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 배차 서기. 자기 직위의 열쇠와 기록만 인계하며, 없는 권한은 만들어 내지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 행동을 계기로 배차 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 미하이 이오네스쿠는 통로에서 먼저 옮긴 부상자의 도착을 노아 데이비스에게 알린다. 노아 데이비스는 이동의무차에서 상태를 확인해 배차 지연에 묻힌 환자를 진료로 잇는다.\n\n**야망.** 배차 서기 업무의 환승 통로 제설·부상자 이송 기록을 환적국 장부와 이어, 다음 당직이 같은 기록을 확인하게 한다.\n\n**공포.** 배차 서기 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.\n\n**개입.** 당직 인수에 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 25 | 무력 −15 | 물질 15 | 공동 −10 | 원칙 −10 | 공개 −30 | 자격 40 | 분산 −5 | 변혁 0\n- 욕망: 갈망 45 | 독점 −15 | 위험 −5 | 과시 −30 | 지속 −10 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],

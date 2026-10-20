@@ -2,9 +2,9 @@
   "id": "person-0157",
   "name": "차세온",
   "title": "유언 필적 기록관",
-  "position": "유언 필적 기록관 · 홍천군 영주",
+  "position": "유언 필적 기록관",
   "characterId": "K156",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "유언 필적·증언 대조 기록",
   "gender": "여성",
@@ -553,52 +553,23 @@
             "name": "차세온",
             "url": "/people/person-0157",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언 필적·증언 대조 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/160/items/0/ko",
-                  "quote": "생업: 유언 필적·증언 대조 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "글씨 기울기로 필적을 가늠하고, 증인 두 명이 차지 않은 인준을 빈칸으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -606,94 +577,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/160/items/0/ko",
-                    "quote": "생업: 유언 필적·증언 대조 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/160/items/0/ko",
-                    "quote": "생업: 유언 필적·증언 대조 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "글씨 기울기로 필적을 가늠하고, 증인 두 명이 차지 않은 인준을 빈칸으로 본다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "광화문",
-              "type": "초소 영지",
-              "station": "광화문",
-              "state": "S06",
-              "settlement": {
-                "name": "광화문 정착지",
-                "type": "정착지",
-                "description": "광화문 일대 고정 거점"
-              },
-              "note": "S06 광화문 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -717,52 +628,23 @@
             "name": "차세온",
             "url": "/people/person-0157",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언 필적·증언 대조 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/160/items/0/ko",
-                  "quote": "생업: 유언 필적·증언 대조 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "글씨 기울기로 필적을 가늠하고, 증인 두 명이 차지 않은 인준을 빈칸으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -770,187 +652,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/160/items/0/ko",
-                    "quote": "생업: 유언 필적·증언 대조 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "숫자는 공개하되 해석은 난외에 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/160/items/0/ko",
-                    "quote": "생업: 유언 필적·증언 대조 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "글씨 기울기로 필적을 가늠하고, 증인 두 명이 차지 않은 인준을 빈칸으로 본다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "광화문",
-              "type": "초소 영지",
-              "station": "광화문",
-              "state": "S06",
-              "settlement": {
-                "name": "광화문 정착지",
-                "type": "정착지",
-                "description": "광화문 일대 고정 거점"
-              },
-              "note": "S06 광화문 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51720-S06",
-      "name": {
-        "ko": "홍천군 공작령 직영지"
-      },
-      "holderPersonId": "K156",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5172025000",
-          "name": "강원특별자치도 홍천군 홍천읍"
-        },
-        {
-          "id": "5172031000",
-          "name": "강원특별자치도 홍천군 화촌면"
-        },
-        {
-          "id": "5172032000",
-          "name": "강원특별자치도 홍천군 두촌면"
-        },
-        {
-          "id": "5172033000",
-          "name": "강원특별자치도 홍천군 내촌면"
-        },
-        {
-          "id": "5172034000",
-          "name": "강원특별자치도 홍천군 서석면"
-        },
-        {
-          "id": "5172035200",
-          "name": "강원특별자치도 홍천군 영귀미면"
-        },
-        {
-          "id": "5172036000",
-          "name": "강원특별자치도 홍천군 남면"
-        },
-        {
-          "id": "5172037000",
-          "name": "강원특별자치도 홍천군 서면"
-        },
-        {
-          "id": "5172038000",
-          "name": "강원특별자치도 홍천군 북방면"
-        },
-        {
-          "id": "5172039000",
-          "name": "강원특별자치도 홍천군 내면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51720-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51720-S06",
-      "name": "홍천군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K156",
-      "basis": "개막 행정 규모 그룹 51720(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5172025000",
-        "5172031000",
-        "5172032000",
-        "5172033000",
-        "5172034000",
-        "5172035200",
-        "5172036000",
-        "5172037000",
-        "5172038000",
-        "5172039000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51720-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -964,18 +717,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "광화문",
-    "type": "초소 영지",
-    "station": "광화문",
-    "state": "S06",
-    "settlement": {
-      "name": "광화문 정착지",
-      "type": "정착지",
-      "description": "광화문 일대 고정 거점"
-    },
-    "note": "S06 광화문 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1009,22 +750,22 @@
   },
   "fields": {
     "생업": "유언 필적·증언 대조 기록",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "유언 필적 기록관",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
+    "담당 업무": "유언 필적 기록관",
     "가치관": "권위 30 | 개방 0 | 무력 −20 | 물질 −30 | 공동 15 | 원칙 65 | 공개 −10 | 자격 10 | 분산 −30 | 변혁 −50",
     "욕망": "갈망 20 | 독점 −40 | 위험 5 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 유언 필적 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 유언 필적 기록관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 먹지가 들러붙은 장은 대조에서 제외한다.",
+    "생애": "서울역 등기소에서 자랐다. 유언 필적 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 차세온의 유언 필적과 증언을 대조해 기록하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 유언 필적 기록관.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 유언 필적 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "강예준의 필적 대조를 원장으로 옮기는 사제이고, 조하린의 철제 함에서 삼본을 꺼내 받으며, 임하준의 실종 전 정비일지 글씨를 기준으로 삼는다.",
     "야망": "총관 유언과 수문헌장 초안을 자신이 감수한 필적 원장에만 유효하게 해 서울역을 서울 기록의 최종 보관소로 만든다.",
     "공포": "네 번째 필적이 몰래 통과되어 기록청이 위조의 공범이 되는 것.",
     "개입": "숨긴 네 번째 필적을 찾아 인준을 강제하거나, 난외 노트를 폭로해 기록관을 교체하게 할 수 있다."
   },
-  "biography": "글씨 기울기로 필적을 가늠하고, 증인 두 명이 차지 않은 인준을 빈칸으로 본다. 숫자는 공개하되 해석은 난외에 남긴다.\n\n- 생업: 유언 필적·증언 대조 기록\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 유언 필적 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 유언 필적 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 유언 필적 기록관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 먹지가 들러붙은 장은 대조에서 제외한다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 유언 필적 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 강예준의 필적 대조를 원장으로 옮기는 사제이고, 조하린의 철제 함에서 삼본을 꺼내 받으며, 임하준의 실종 전 정비일지 글씨를 기준으로 삼는다.\n\n**야망.** 총관 유언과 수문헌장 초안을 자신이 감수한 필적 원장에만 유효하게 해 서울역을 서울 기록의 최종 보관소로 만든다.\n\n**공포.** 네 번째 필적이 몰래 통과되어 기록청이 위조의 공범이 되는 것.\n\n**개입.** 숨긴 네 번째 필적을 찾아 인준을 강제하거나, 난외 노트를 폭로해 기록관을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 0 | 무력 −20 | 물질 −30 | 공동 15 | 원칙 65 | 공개 −10 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 −40 | 위험 5 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
+  "biography": "글씨 기울기로 필적을 가늠하고, 증인 두 명이 차지 않은 인준을 빈칸으로 본다. 숫자는 공개하되 해석은 난외에 남긴다.\n\n- 생업: 유언 필적·증언 대조 기록\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 유언 필적 기록관\n**생애.** 서울역 등기소에서 자랐다. 유언 필적 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 차세온의 유언 필적과 증언을 대조해 기록하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 유언 필적 기록관.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 유언 필적 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 강예준의 필적 대조를 원장으로 옮기는 사제이고, 조하린의 철제 함에서 삼본을 꺼내 받으며, 임하준의 실종 전 정비일지 글씨를 기준으로 삼는다.\n\n**야망.** 총관 유언과 수문헌장 초안을 자신이 감수한 필적 원장에만 유효하게 해 서울역을 서울 기록의 최종 보관소로 만든다.\n\n**공포.** 네 번째 필적이 몰래 통과되어 기록청이 위조의 공범이 되는 것.\n\n**개입.** 숨긴 네 번째 필적을 찾아 인준을 강제하거나, 난외 노트를 폭로해 기록관을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 0 | 무력 −20 | 물질 −30 | 공동 15 | 원칙 65 | 공개 −10 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 20 | 독점 −40 | 위험 5 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

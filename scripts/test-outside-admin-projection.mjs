@@ -1,10 +1,17 @@
 import assert from 'node:assert/strict'
+import { execFileSync } from 'node:child_process'
+import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { geometryPath, selectedSource, preservationInput, projectOutsideUnits, validateOutsideUnits } from './project-outside-admin-units.mjs'
 
-const map = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url)))
-const outside = JSON.parse(await readFile(new URL('../public/outside-admin-units.json', import.meta.url)))
+// Original projection inputs are historical, independent of current Seoul output.
+const mapBytes = execFileSync('git', ['-C', new URL('../', import.meta.url).pathname, 'show', '377f98d3ef40dea6ec2ce7c73a4cbe5f6da36701:public/opening-territories.json'], { maxBuffer: 20_000_000 })
+assert.equal(createHash('sha256').update(mapBytes).digest('hex'), '8f8cbfe7b7f671fcdd90a511151e06464bbca6d0f014e0dfc2139c3519f723d7')
+const map = JSON.parse(mapBytes)
+const outsideBytes = await readFile(new URL('./historical-inputs/outside-admin-units.json', import.meta.url))
+assert.equal(createHash('sha256').update(outsideBytes).digest('hex'), 'dd23944da5f558e9d772a4b2d41963f46de555680677f1e838e73447497556c6')
+const outside = JSON.parse(outsideBytes)
 const previous = preservationInput()
 
 test('generated outside output preserves every previous object and appends source-identity geographic units only', () => {

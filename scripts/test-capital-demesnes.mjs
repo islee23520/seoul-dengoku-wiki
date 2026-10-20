@@ -5,25 +5,39 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { JSDOM } from 'jsdom'
-import { runInNewContext } from 'node:vm'
+import { loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogOutsideOccupation } from './person-detail-inputs.mjs'
+import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 import HoldingSelectionPanel from '../src/components/HoldingSelectionPanel.tsx'
 
 const read = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'))
 
-test('the producer rejects both self and other registered lieges on capital station holdings', () => {
-  const source = readFileSync(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
-  const start = source.indexOf('for (const holding of personalHoldings.holdings) {')
-  const end = source.indexOf('  if (holding.facilityRef) {', start)
-  assert.ok(start >= 0 && end > start)
-  const producer = source.slice(start, end) + '\n}'
+test('the producer rejects both self and other registered lieges on capital station holdings', async () => {
   const holdings = read('../lore/relations/personal-holdings.json')
   const map = read('../public/opening-territories.json')
   const registry = read('../lore/name-pools/person-id-registry.json')
+  const { historical } = await loadApprovedRightsHistory()
+  const control = await projectCatalogOutsideOccupation(read('../lore/regions/outside-control-2126.json'),
+    historical.outside, read('../lore/regions/outside-island-occupation.json'))
+  const args = { people: read('../lore/name-pools/gurps-cast.json').people, seoul: map, control,
+    outside: { ...historical.outside, islands: [] }, existing: holdings,
+    allocation: read('../lore/relations/opening-feudal-allocation.json'),
+    affiliation: read('../lore/factions/Sixteen-States.json').data.currentAffiliation,
+    geographicScale: buildAdminTerritorialScale({
+      geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+      territorialScale: read('../lore/offices/Offices-and-Ranks.json').data.territorialScale,
+    }) }
+  const context = { issuedById: new Map(registry.persons.map(person => [person.id, person])),
+    territoryStates: map.states, openingTerritories: map, projectedLandmarks: map.landmarks,
+    stationInteriors: read('../lore/regions/station-interiors.json'), seoulGraph: read('../snapshots/build-inputs/SeoulWorldGraph.json'),
+    outsideGeometry: historical.outside, repoRoot: new URL('../', import.meta.url).pathname,
+    geography: read('../lore/regions/seoul-electoral-titles.json') }
   const original = holdings.holdings.find(holding => holding.stationRef)
-  const context = (holding) => ({ personalHoldings: { holdings: [holding], polities: holdings.polities }, territoryStates: map.states, openingTerritories: map, issuedById: new Map(registry.persons.map(person => [person.id, person])) })
-  assert.doesNotThrow(() => runInNewContext(producer, context(original)))
+  assert.ok(original)
+  await assert.doesNotReject(projectCatalogCurrentHoldings(args, context))
   for (const liege of [original.holderPersonId, 'K029']) {
-    assert.throws(() => runInNewContext(producer, context({ ...original, directLiegePersonId: liege })), /E_CAPITAL_HOLDING/)
+    const mutated = structuredClone(args)
+    mutated.existing.holdings.find(holding => holding.id === original.id).directLiegePersonId = liege
+    await assert.rejects(projectCatalogCurrentHoldings(mutated, context), /E_CAPITAL_HOLDING/)
   }
 })
 

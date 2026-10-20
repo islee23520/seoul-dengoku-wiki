@@ -4,7 +4,7 @@
   "title": "문서고 비상발전 운전장",
   "position": "문서고 비상발전 운전장",
   "characterId": "K161",
-  "rank": "국장",
+  "rank": "미등록",
   "commonTier": "T4",
   "occupation": "문서고 발전 연료·출력 운전",
   "gender": "남성",
@@ -560,52 +560,23 @@
             "name": "나봄결",
             "url": "/people/person-0162",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "문서고 발전 연료·출력 운전",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/28/items/0/ko",
-                  "quote": "생업: 문서고 발전 연료·출력 운전"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,94 +584,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 문서고 발전 연료·출력 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Electrician/TL?",
                 "ko": "전력 설비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 문서고 발전 연료·출력 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "시청",
-              "type": "초소 영지",
-              "station": "시청",
-              "state": "S06",
-              "settlement": {
-                "name": "시청 정착지",
-                "type": "정착지",
-                "description": "시청 일대 고정 거점"
-              },
-              "note": "S06 시청 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -724,52 +635,23 @@
             "name": "나봄결",
             "url": "/people/person-0162",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "문서고 발전 연료·출력 운전",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/28/items/0/ko",
-                  "quote": "생업: 문서고 발전 연료·출력 운전"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -777,182 +659,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 문서고 발전 연료·출력 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/30/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Electrician/TL?",
                 "ko": "전력 설비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 문서고 발전 연료·출력 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "시청",
-              "type": "초소 영지",
-              "station": "시청",
-              "state": "S06",
-              "settlement": {
-                "name": "시청 정착지",
-                "type": "정착지",
-                "description": "시청 일대 고정 거점"
-              },
-              "note": "S06 시청 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51770-S06",
-      "name": {
-        "ko": "정선군 공작령 직영지"
-      },
-      "holderPersonId": "K161",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5177025000",
-          "name": "강원특별자치도 정선군 정선읍"
-        },
-        {
-          "id": "5177025300",
-          "name": "강원특별자치도 정선군 고한읍"
-        },
-        {
-          "id": "5177025600",
-          "name": "강원특별자치도 정선군 사북읍"
-        },
-        {
-          "id": "5177025900",
-          "name": "강원특별자치도 정선군 신동읍"
-        },
-        {
-          "id": "5177032000",
-          "name": "강원특별자치도 정선군 남면"
-        },
-        {
-          "id": "5177034000",
-          "name": "강원특별자치도 정선군 북평면"
-        },
-        {
-          "id": "5177035000",
-          "name": "강원특별자치도 정선군 임계면"
-        },
-        {
-          "id": "5177036000",
-          "name": "강원특별자치도 정선군 화암면"
-        },
-        {
-          "id": "5177037000",
-          "name": "강원특별자치도 정선군 여량면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51770-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51770-S06",
-      "name": "정선군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K161",
-      "basis": "개막 행정 규모 그룹 51770(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5177025000",
-        "5177025300",
-        "5177025600",
-        "5177025900",
-        "5177032000",
-        "5177034000",
-        "5177035000",
-        "5177036000",
-        "5177037000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51770-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -966,18 +724,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "시청",
-    "type": "초소 영지",
-    "station": "시청",
-    "state": "S06",
-    "settlement": {
-      "name": "시청 정착지",
-      "type": "정착지",
-      "description": "시청 일대 고정 거점"
-    },
-    "note": "S06 시청 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1011,22 +757,22 @@
   },
   "fields": {
     "생업": "문서고 발전 연료·출력 운전",
-    "소속": "대한민국정부",
-    "품계": "국장",
-    "직함": "문서고 비상발전 운전장",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급",
+    "담당 업무": "문서고 비상발전 운전장",
     "가치관": "권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40",
     "욕망": "갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.",
+    "생애": "서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 나봄결의 문서고 발전 연료와 출력을 운전하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급. 담당 업무: 문서고 비상발전 운전장.",
     "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.",
     "관계": "지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.",
     "야망": "문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.",
     "공포": "연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.",
     "개입": "대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다."
   },
-  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 생업: 문서고 발전 연료·출력 운전\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 문서고 비상발전 운전장\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 국장. 직함은 문서고 비상발전 운전장. 매 교대 연료 잔량과 출력 일지를 봉인해 지한솔에게 보내고, 최저 출력 이하면 청장의 독촉이 있어도 의전 배전을 끊는다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40\n- 욕망: 갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "연료 냄새에 예민하고 구두 배전을 싫어한다. 제습기보다 의전 조명에 전력을 돌리라는 정치적 압박을 모욕으로 여긴다.\n\n- 생업: 문서고 발전 연료·출력 운전\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급\n- 담당 업무: 문서고 비상발전 운전장\n**생애.** 서울역 등기소에서 자랐다. 문서고 비상발전 운전장 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 나봄결의 문서고 발전 연료와 출력을 운전하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울특별시 사업소 보직에 맞는 직급. 담당 업무: 문서고 비상발전 운전장.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 문서고 비상발전 운전장 자리의 서명이 장부에 올랐다.\n\n**관계.** 지서윤의 제습기에 출력을 맞추고, 지한솔의 함 온도를 발전 쪽에서 받치며, 윤서린의 교차검증에는 복종해 왔지만 은폐 배전은 거부해 왔다.\n\n**야망.** 문서고 비상 발전과 의무실 전력을 하나의 공개 배전망으로 묶어 기록과 진료의 품질 주권을 지킨다.\n\n**공포.** 연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.\n\n**개입.** 대체 연료를 구해 이중 배전을 열거나, 출력 일지 조작을 밝혀 운전장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −15 | 무력 −30 | 물질 −35 | 공동 15 | 원칙 60 | 공개 −25 | 자격 5 | 분산 −25 | 변혁 −40\n- 욕망: 갈망 0 | 독점 −15 | 위험 −35 | 과시 5 | 지속 25 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

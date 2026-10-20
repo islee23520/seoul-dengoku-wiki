@@ -8,7 +8,10 @@ export default defineConfig({
   resolve: {
     alias: { '@': path.resolve(__dirname, 'src') },
   },
-  server: { port: 5174 },
+  server: {
+    port: 5174,
+    watch: { ignored: ['**/.omo/**'] },
+  },
   build: {
     rolldownOptions: {
       output: {

@@ -461,52 +461,23 @@
             "name": "정모란",
             "url": "/people/person-0006",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수상 운송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/105/items/1/ko",
-                  "quote": "생업: 수상 운송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -514,106 +485,41 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Boating/TL? (Unpowered)",
                 "ko": "수상 운송",
-                "attr": "DX",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/105/items/1/ko",
-                    "quote": "생업: 수상 운송"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "정모란 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -636,52 +542,23 @@
             "name": "정모란",
             "url": "/people/person-0006",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수상 운송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/105/items/1/ko",
-                  "quote": "생업: 수상 운송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -689,106 +566,41 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Boating/TL? (Unpowered)",
                 "ko": "수상 운송",
-                "attr": "DX",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/105/items/1/ko",
-                    "quote": "생업: 수상 운송"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "정모란 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -809,7 +621,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -861,11 +672,12 @@
     "생업": "수상 운송",
     "품계": "주사",
     "직함": "여의도 수상운송 조합장",
+    "업무 위치": "여의동. 여의동 선창에서 정모란은 선석 순번을 공개 추첨하고 썩기 시작한 곡물을 먼저 나눠 준 뒤 손실 장부를 선주들에게 펼친다.",
     "가치관": "권위 60 | 개방 −20 | 무력 15 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 0 | 분산 −45 | 변혁 −30",
     "욕망": "갈망 50 | 독점 10 | 위험 35 | 과시 −5 | 지속 25 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 여의도 수상운송 조합장 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 여의도 수상운송 조합장 자리는 저울 재점검 공개로 열렸다.\n- 업무 위치: 여의동. 여의동 선창에서 정모란은 선석 순번을 공개 추첨하고 썩기 시작한 곡물을 먼저 나눠 준 뒤 손실 장부를 선주들에게 펼친다.",
     "관직": "품계 주사. 직함은 여의도 수상운송 조합장. 선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 여의도 수상운송 조합장 자리의 서명이 장부에 올랐다.",
     "관계": "오해린과는 수상 운임과 냉동 호송을 둘러싼 경쟁이고, 이서담과는 양천 급수 바지선 계약이며, 한재목에게 수문 통과 허가를 의존한다.",
@@ -873,7 +685,7 @@
     "공포": "노량진 냉동 신용이 선석 대금까지 삼켜 여의도 바지선이 공선으로 남는 것.",
     "개입": "밀선 화물을 적발해 조합 허가를 강화하거나, 선석 추첨 조작을 밝혀 운송권을 다른 선주에게 넘길 수 있다."
   },
-  "biography": "흥정을 노래처럼 하지만 선창 저울을 속이는 선주에게는 즉시 선석을 빼앗는다. 강바람보다 소문 가격을 더 빨리 읽는다.\n\n- 소속: 수문국\n- 생업: 수상 운송\n- 품계: 주사\n- 직함: 여의도 수상운송 조합장\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 여의도 수상운송 조합장 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 주사. 직함은 여의도 수상운송 조합장. 선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 여의도 수상운송 조합장 자리의 서명이 장부에 올랐다.\n\n**관계.** 오해린과는 수상 운임과 냉동 호송을 둘러싼 경쟁이고, 이서담과는 양천 급수 바지선 계약이며, 한재목에게 수문 통과 허가를 의존한다.\n\n**야망.** 한강 서부 선석과 급수 바지선을 조합 허가제로 묶어, 물 운송을 철도 통행세와 대등한 수문 수입원으로 만든다.\n\n**공포.** 노량진 냉동 신용이 선석 대금까지 삼켜 여의도 바지선이 공선으로 남는 것.\n\n**개입.** 밀선 화물을 적발해 조합 허가를 강화하거나, 선석 추첨 조작을 밝혀 운송권을 다른 선주에게 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −20 | 무력 15 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 0 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 50 | 독점 10 | 위험 35 | 과시 −5 | 지속 25 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "흥정을 노래처럼 하지만 선창 저울을 속이는 선주에게는 즉시 선석을 빼앗는다. 강바람보다 소문 가격을 더 빨리 읽는다.\n\n- 소속: 수문국\n- 생업: 수상 운송\n- 품계: 주사\n- 직함: 여의도 수상운송 조합장\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 여의도 수상운송 조합장 자리는 저울 재점검 공개로 열렸다.\n- 업무 위치: 여의동. 여의동 선창에서 정모란은 선석 순번을 공개 추첨하고 썩기 시작한 곡물을 먼저 나눠 준 뒤 손실 장부를 선주들에게 펼친다.\n\n**관직.** 품계 주사. 직함은 여의도 수상운송 조합장. 선석 순번을 아침마다 공개 추첨하고, 급수 바지선만은 배급구역 대표의 봉인이 있어야 출항시킨다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 여의도 수상운송 조합장 자리의 서명이 장부에 올랐다.\n\n**관계.** 오해린과는 수상 운임과 냉동 호송을 둘러싼 경쟁이고, 이서담과는 양천 급수 바지선 계약이며, 한재목에게 수문 통과 허가를 의존한다.\n\n**야망.** 한강 서부 선석과 급수 바지선을 조합 허가제로 묶어, 물 운송을 철도 통행세와 대등한 수문 수입원으로 만든다.\n\n**공포.** 노량진 냉동 신용이 선석 대금까지 삼켜 여의도 바지선이 공선으로 남는 것.\n\n**개입.** 밀선 화물을 적발해 조합 허가를 강화하거나, 선석 추첨 조작을 밝혀 운송권을 다른 선주에게 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −20 | 무력 15 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 0 | 분산 −45 | 변혁 −30\n- 욕망: 갈망 50 | 독점 10 | 위험 35 | 과시 −5 | 지속 25 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-01"
   ],

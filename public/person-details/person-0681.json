@@ -553,52 +553,23 @@
             "name": "류바현",
             "url": "/people/person-0681",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/478/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/479/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/480/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -606,105 +577,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/479/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/478/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/480/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/478/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "소사",
-              "type": "초소 영지",
-              "station": "소사",
-              "state": "S02",
-              "settlement": {
-                "name": "소사 정착지",
-                "type": "정착지",
-                "description": "소사 일대 고정 거점"
-              },
-              "note": "S02 소사 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -728,52 +634,23 @@
             "name": "류바현",
             "url": "/people/person-0681",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경비·순찰",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/478/items/1/ko",
-                  "quote": "생업: 경비·순찰"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/479/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/480/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -781,105 +658,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/479/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/478/items/1/ko",
-                    "quote": "생업: 경비·순찰"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/480/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/478/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "소사",
-              "type": "초소 영지",
-              "station": "소사",
-              "state": "S02",
-              "settlement": {
-                "name": "소사 정착지",
-                "type": "정착지",
-                "description": "소사 일대 고정 거점"
-              },
-              "note": "S02 소사 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -900,18 +712,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "소사",
-    "type": "초소 영지",
-    "station": "소사",
-    "state": "S02",
-    "settlement": {
-      "name": "소사 정착지",
-      "type": "정착지",
-      "description": "소사 일대 고정 거점"
-    },
-    "note": "S02 소사 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -948,19 +748,20 @@
     "생업": "경비·순찰",
     "품계": "조합원",
     "직함": "전력장치 순찰대",
+    "업무 위치": "구로3동. 류바현은 구로3동 전력장치 앞에서 명부를 빼앗으려는 무장 난입자를 문밖에 붙든다. 변주아에게 필요한 회로 점검만 요청하고 김나율에게는 명부를 다시 셀 수 있도록 출입 기록을 보낸다.",
     "가치관": "권위 −20 | 개방 −5 | 무력 15 | 물질 50 | 공동 30 | 원칙 5 | 공개 25 | 자격 55 | 분산 15 | 변혁 15",
     "욕망": "갈망 40 | 독점 −30 | 위험 35 | 과시 −10 | 지속 0 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 구로3동. 류바현은 구로3동 전력장치 앞에서 명부를 빼앗으려는 무장 난입자를 문밖에 붙든다. 변주아에게 필요한 회로 점검만 요청하고 김나율에게는 명부를 다시 셀 수 있도록 출입 기록을 보낸다.",
+    "관직": "품계 조합원. 직함은 전력장치 순찰대. 변주아에게 필요한 회로 점검만 요청하고 김나율에게는 명부를 다시 셀 수 있도록 출입 기록을 보낸다.",
     "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "류바현은 전력장치 주변 난입을 제지하고 채리울에게 출입 기록을 알린다. 채리울은 공방 순찰 경로를 확인해 장치 경비와 공구 창고의 인수인계 사이에 빈 구간이 생겼는지 살핀다.",
+    "야망": "류바현은 전력장치 앞의 난입을 막고 출입 기록을 넘겨 장치 경비와 창고 인계 사이의 빈 구간을 드러내려 한다.",
+    "공포": "전력장치 문밖의 난입 기록이 채리울의 공방 순찰에 닿지 않아 창고 경비가 비는 것.",
+    "개입": "플레이어는 류바현과 문 밖 난입을 제지하고 출입 기록을 채리울에게 전하거나 변주아에게 필요한 회로 점검만 요청할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 전력장치 순찰대 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 전력장치 순찰대 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 −5 | 무력 15 | 물질 50 | 공동 30 | 원칙 5 | 공개 25 | 자격 55 | 분산 15 | 변혁 15\n- 욕망: 갈망 40 | 독점 −30 | 위험 35 | 과시 −10 | 지속 0 | 지향 양성 | 결합 다자\n:::",
+  "biography": "류바현은 문밖의 난입만 막고 끝내면 공구 창고로 이어지는 순찰 공백을 놓친다고 본다.\n\n- 소속: 규격맹\n- 생업: 경비·순찰\n- 품계: 조합원\n- 직함: 전력장치 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 전력장치 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 구로3동. 류바현은 구로3동 전력장치 앞에서 명부를 빼앗으려는 무장 난입자를 문밖에 붙든다. 변주아에게 필요한 회로 점검만 요청하고 김나율에게는 명부를 다시 셀 수 있도록 출입 기록을 보낸다.\n\n**관직.** 품계 조합원. 직함은 전력장치 순찰대. 변주아에게 필요한 회로 점검만 요청하고 김나율에게는 명부를 다시 셀 수 있도록 출입 기록을 보낸다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 전력장치 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 류바현은 전력장치 주변 난입을 제지하고 채리울에게 출입 기록을 알린다. 채리울은 공방 순찰 경로를 확인해 장치 경비와 공구 창고의 인수인계 사이에 빈 구간이 생겼는지 살핀다.\n\n**야망.** 류바현은 전력장치 앞의 난입을 막고 출입 기록을 넘겨 장치 경비와 창고 인계 사이의 빈 구간을 드러내려 한다.\n\n**공포.** 전력장치 문밖의 난입 기록이 채리울의 공방 순찰에 닿지 않아 창고 경비가 비는 것.\n\n**개입.** 플레이어는 류바현과 문 밖 난입을 제지하고 출입 기록을 채리울에게 전하거나 변주아에게 필요한 회로 점검만 요청할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 −5 | 무력 15 | 물질 50 | 공동 30 | 원칙 5 | 공개 25 | 자격 55 | 분산 15 | 변혁 15\n- 욕망: 갈망 40 | 독점 −30 | 위험 35 | 과시 −10 | 지속 0 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-02"
   ],

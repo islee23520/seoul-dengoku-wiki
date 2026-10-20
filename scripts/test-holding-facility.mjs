@@ -43,6 +43,21 @@ test('중복 역 후보를 자동 병합하지 않는다', async () => {
   await assert.rejects(validateHoldingFacility(holding, duplicate, root), /E_HOLDING_SITE_REF/)
 })
 
+test('호텔 시설에 역 identity를 복사해도 철도 층 보유로 승인하지 않는다', async () => {
+  assert.equal(interiors.stations.find(row => row.name === '메트로호텔').facilityKind, 'hotel')
+  const disguised = structuredClone(interiors)
+  const station = disguised.stations.find(row => row.name === holding.facilityRef.stationName)
+  station.facilityKind = 'hotel'
+  await assert.rejects(validateHoldingFacility(holding, disguised, root), /E_HOLDING_SITE_REF/)
+  station.facilityKind = 'unknown'
+  await assert.rejects(validateHoldingFacility(holding, disguised, root), /E_HOLDING_SITE_REF/)
+  delete station.facilityKind
+  station.network = ''
+  await assert.rejects(validateHoldingFacility(holding, disguised, root), /E_HOLDING_SITE_REF/)
+  assert.equal(interiors.stations[250].observationCandidates[0].observed_levels.above, 6)
+  assert.equal(interiors.stations[250].observed_levels, null)
+})
+
 test('지역 원천 root 밖으로 나가는 symlink를 거부한다', async () => {
   const scratch = resolve(root, '.omo/evidence/holding-path-tests')
   await mkdir(scratch, { recursive: true })

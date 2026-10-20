@@ -453,8 +453,8 @@
           "en": "Office. Rank: registrar. Title: relay duty. He handed over only the keys and records of his own post, and never made authority he did not hold."
         },
         "stress": {
-          "ko": "공포. 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
-          "en": "Fear. That the relay duty duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+          "ko": "공포. 중계 당직 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
+          "en": "Fear. That the relay duty duty post would stand empty, interrupting dispatch and transshipment handovers in Yongsan and passing unverified completion records to water-supply, medical-care and goods handover counterparts within Seoul."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.",
@@ -477,8 +477,8 @@
           "en": "Relations. Bound by handover to the senior duty line of the same living quarters. Christopher Scott gives Léa Martin records verifying transmission gaps. Léa checks times on posted dispatch copies rather than marking changes not transmitted during the gap as posted."
         },
         "stress": {
-          "ko": "공포. 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
-          "en": "Fear. That the relay duty duty post would stand empty and the State's passage would stops the Yongsan transshipment and the vassal lines to Incheon and Paju."
+          "ko": "공포. 중계 당직 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
+          "en": "Fear. That the relay duty duty post would stand empty, interrupting dispatch and transshipment handovers in Yongsan and passing unverified completion records to water-supply, medical-care and goods handover counterparts within Seoul."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.",
@@ -551,52 +551,23 @@
             "name": "크리스토퍼 스콧",
             "url": "/people/person-0734",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "송신 편집 공백 이중 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/468/items/2/ko",
-                  "quote": "생업: 송신 편집 공백 이중 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/469/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/470/text/ko",
-                    "quote": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -604,105 +575,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/468/items/2/ko",
-                    "quote": "생업: 송신 편집 공백 이중 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/469/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Electronics Operation/TL? (Communications)",
                 "ko": "통신 운용",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/468/items/2/ko",
-                    "quote": "생업: 송신 편집 공백 이중 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Leadership",
                 "ko": "지휘",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/470/text/ko",
-                    "quote": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "금천구청",
-              "type": "초소 영지",
-              "station": "금천구청",
-              "state": "S07",
-              "settlement": {
-                "name": "금천구청 정착지",
-                "type": "정착지",
-                "description": "금천구청 일대 고정 거점"
-              },
-              "note": "S07 금천구청 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -726,52 +632,23 @@
             "name": "크리스토퍼 스콧",
             "url": "/people/person-0734",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "송신 편집 공백 이중 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/468/items/2/ko",
-                  "quote": "생업: 송신 편집 공백 이중 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/469/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/470/text/ko",
-                    "quote": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -779,105 +656,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/468/items/2/ko",
-                    "quote": "생업: 송신 편집 공백 이중 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/469/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Electronics Operation/TL? (Communications)",
                 "ko": "통신 운용",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/468/items/2/ko",
-                    "quote": "생업: 송신 편집 공백 이중 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Leadership",
                 "ko": "지휘",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/470/text/ko",
-                    "quote": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "금천구청",
-              "type": "초소 영지",
-              "station": "금천구청",
-              "state": "S07",
-              "settlement": {
-                "name": "금천구청 정착지",
-                "type": "정착지",
-                "description": "금천구청 일대 고정 거점"
-              },
-              "note": "S07 금천구청 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -898,18 +710,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "금천구청",
-    "type": "초소 영지",
-    "station": "금천구청",
-    "state": "S07",
-    "settlement": {
-      "name": "금천구청 정착지",
-      "type": "정착지",
-      "description": "금천구청 일대 고정 거점"
-    },
-    "note": "S07 금천구청 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": null,
@@ -946,15 +746,15 @@
     "욕망": "갈망 −10 | 독점 −20 | 위험 −35 | 과시 0 | 지속 40 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 크리스토퍼 스콧은 2091년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 에드워드 스콧은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 크리스토퍼 스콧의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "관직": "품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.",
-    "야망": "중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.",
-    "공포": "중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2091년생인 크리스토퍼 스콧은 2126년 개막기에 중계 당직 업무를 맡는다. 상암 송신실에서 자랐다. 중계 당직 업무는 정전 사흘 송신 유지를 계기로 시작됐다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 에드워드 스콧은 2030년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 크리스토퍼 스콧의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 크리스토퍼 스콧의 송신 편집 공백 이중 확인 업무는 한강로동과 연결된다.\n- 크리스토퍼 스콧의 송신 편집 공백 이중 확인 업무는 상암동과 연결된다.",
+    "관직": "품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 인계하며, 없는 권한은 만들어 내지 않는다.",
+    "일화": "2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 행동을 계기로 중계 당직 자리의 서명이 장부에 올랐다.",
+    "관계": "크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.",
+    "야망": "중계 당직 업무의 송신 편집 공백 이중 확인 기록을 환적국 장부와 이어, 다음 당직이 같은 기록을 확인하게 한다.",
+    "공포": "중계 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.",
+    "개입": "당직 인수에 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 송신 편집 공백 이중 확인\n- 직함: 중계 당직\n**생애.** 2126년 세대. 상암 송신실에서 자랐다. 중계 당직 자리는 정전 사흘 송신 유지로 열렸다. 크리스토퍼 스콧은 2091년에 태어났다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 상암 송신실에서 자랐다. 2126년에는 중계 당직 업무를 맡는다. 에드워드 스콧은 2026년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 크리스토퍼 스콧의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 일로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.\n\n**야망.** 중계 당직 자리에서 환적국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 중계 당직 당직이 비면 용산의 환적과 인천·파주 속국 노선이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 15 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 5 | 공개 −15 | 자격 40 | 분산 5 | 변혁 0\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −35 | 과시 0 | 지속 40 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "크리스토퍼 스콧은 송신 편집 공백 이중 확인 업무를 맡는다. 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 송신 편집 공백 이중 확인\n- 직함: 중계 당직\n**생애.** 2091년생인 크리스토퍼 스콧은 2126년 개막기에 중계 당직 업무를 맡는다. 상암 송신실에서 자랐다. 중계 당직 업무는 정전 사흘 송신 유지를 계기로 시작됐다. 유럽계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 에드워드 스콧은 2030년 용산·이태원에서 미 육군 보급 업무를 맡다가 연락망 단절을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 크리스토퍼 스콧의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 크리스토퍼 스콧의 송신 편집 공백 이중 확인 업무는 한강로동과 연결된다.\n- 크리스토퍼 스콧의 송신 편집 공백 이중 확인 업무는 상암동과 연결된다.\n\n**관직.** 품계 주사. 직함은 중계 당직. 자기 직위의 열쇠와 기록만 인계하며, 없는 권한은 만들어 내지 않는다.\n\n**일화.** 2125년 편집 공백이 발견된 밤에 당직 두 명을 세워 이중 확인을 만들었다. 이 행동을 계기로 중계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 크리스토퍼 스콧은 송신 공백의 확인 기록을 레아 마르탱에게 넘긴다. 레아 마르탱은 게시된 배차 사본의 시각을 확인해 공백 동안 전해지지 않은 변경을 완료 게시로 남기지 않는다.\n\n**야망.** 중계 당직 업무의 송신 편집 공백 이중 확인 기록을 환적국 장부와 이어, 다음 당직이 같은 기록을 확인하게 한다.\n\n**공포.** 중계 당직이 비면 용산의 배차·환적 인계가 끊기고, 서울 안의 급수·진료·물품 인계 상대에게 확인되지 않은 완료 기록이 넘어가는 것.\n\n**개입.** 당직 인수에 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 15 | 무력 −20 | 물질 15 | 공동 −10 | 원칙 5 | 공개 −15 | 자격 40 | 분산 5 | 변혁 0\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −35 | 과시 0 | 지속 40 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-07"
   ],

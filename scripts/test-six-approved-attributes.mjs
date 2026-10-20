@@ -1,4 +1,5 @@
 import { preservedSheetSources } from './preserved-person-sheet.mjs'
+import { assertPublicSheetRecord } from './public-sheet-test-expectation.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
@@ -32,7 +33,7 @@ const selectApproved = (detail) => {
   const selected = selectPreservedSheet(detail.personSheet, { id: detail.characterId, personId: detail.id, name: detail.name, state: detail.state }, revision)
   assert.ok(selected.ok, JSON.stringify(selected))
   assert.equal(selected.revision, revision)
-  assert.deepEqual(selected.record, record)
+  assertPublicSheetRecord(selected.record, record)
   return selected.sheet
 }
 

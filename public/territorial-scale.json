@@ -1,68 +1,96 @@
 {
-  "schema": "territorial-scale.v1",
-  "regularRegions": {
-    "provinceCodes": [
-      "41",
-      "43",
-      "44",
-      "51"
-    ],
-    "province": "kingdom",
-    "city": "duchy",
-    "county": "duchy",
-    "district": "barony",
-    "directMunicipalEupMyeonDong": "barony",
-    "eupMyeonDongWithinGu": "component",
-    "componentImpliesLowerTitle": false
+  "schema": "territorial-scale.v2",
+  "scope": "seoul-only",
+  "geographicSource": {
+    "path": "lore/regions/seoul-electoral-titles.json",
+    "sha256": "372734e77019d0e544ded29f90e1b35b8a8c3a3cfff305c295c2bd83a6b64eef",
+    "schema": "seoul-geography-staging.v1"
   },
-  "specialCities": [
-    {
-      "name": "서울특별시",
-      "englishName": "Seoul Special City",
-      "city": "kingdom",
-      "district": "duchy",
-      "dong": "barony"
-    },
-    {
-      "name": "대전광역시",
-      "englishName": "Daejeon Metropolitan City",
-      "city": "kingdom",
-      "district": "duchy",
-      "dong": "barony"
-    },
-    {
-      "name": "인천광역시",
-      "englishName": "Incheon Metropolitan City",
-      "city": "kingdom",
-      "district": "duchy",
-      "dong": "barony"
-    }
+  "geographicEmpireId": "geography:empire:seoul",
+  "rankOrder": [
+    "empire",
+    "kingdom",
+    "duchy",
+    "county",
+    "barony"
   ],
+  "levels": {
+    "empire": {
+      "sourcePointer": "/titles",
+      "rank": "empire",
+      "count": 1
+    },
+    "kingdom": {
+      "sourcePointer": "/titles",
+      "rank": "kingdom",
+      "count": 6,
+      "partitionSha256": "0b2327e3f5e23a4dff539272a747357f4909970ec4fa9234a2386b4faec1ddf5"
+    },
+    "duchy": {
+      "sourcePointer": "/titles",
+      "rank": "duchy",
+      "count": 25
+    },
+    "county": {
+      "sourcePointer": "/titles",
+      "rank": "county",
+      "count": 48
+    },
+    "barony": {
+      "representation": "county-detail-slot",
+      "idField": "slotId",
+      "parentField": "countyTitleId"
+    }
+  },
+  "map": {
+    "minimumPolygonRank": "county",
+    "selectableRanks": [
+      "county",
+      "duchy",
+      "kingdom",
+      "empire"
+    ],
+    "baronyPolygon": false
+  },
+  "slotEditions": {
+    "dated": {
+      "sourcePointer": "/countySlots",
+      "edition": "sgis-20250630",
+      "baseDate": "2025-06-30",
+      "count": 426,
+      "geometryVerified": true,
+      "currentBoundaryCertification": false
+    },
+    "currentCorrespondence": {
+      "sourcePointer": "/currentCorrespondenceSlots",
+      "edition": "seoul-dong-correspondence-20260701-checked20261013",
+      "administrativeCandidateDate": "2026-07-01",
+      "checkedAt": "2026-10-13T15:21:47.014Z",
+      "count": 427,
+      "geometryVerified": false
+    }
+  },
+  "geographicParent": {
+    "sourceField": "feudalParentTitleId",
+    "meaning": "geographic-only",
+    "politicalLiegeInference": false,
+    "crossDistrictExceptions": [
+      {
+        "titleId": "geography:county:seoul-constituency:중구성동구을선거구",
+        "parentTitleId": "geography:empire:seoul",
+        "mapKingdomTitleId": "geography:kingdom:seoul:01",
+        "kind": "cross-district-empire-direct"
+      }
+    ]
+  },
+  "politicalAxis": {
+    "currentCenters": 3,
+    "geographicKingdomEquivalence": false,
+    "preserveStablePoliticalIdentities": true,
+    "preserveNonterritorialKingship": true
+  },
   "scaleImpliesPersonalOwnership": false,
   "scaleImpliesTitleRank": false,
-  "seoulControl": {
-    "majorPolities": 16,
-    "wholeKingdomControlledByOnePolity": false
-  },
-  "separateKingdomContainers": [
-    {
-      "provinceCode": "43",
-      "name": "충청북도"
-    },
-    {
-      "provinceCode": "44",
-      "name": "충청남도"
-    }
-  ],
-  "sejong": {
-    "provinceCode": "36",
-    "name": "세종특별자치시",
-    "englishName": "Sejong Special Self-Governing City",
-    "geographicContainerId": "admin:36",
-    "city": "kingdom",
-    "directEupMyeonDong": "barony",
-    "sourceAliases": [
-      "admin-city:36:세종시"
-    ]
-  }
+  "scaleImpliesFacilityAccess": false,
+  "slotExistenceImpliesGrant": false
 }

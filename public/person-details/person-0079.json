@@ -454,47 +454,23 @@
             "name": "고초윤",
             "url": "/people/person-0079",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수질 검사 공개 입회",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/236/items/1/ko",
-                  "quote": "생업: 수질 검사 공개 입회"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/237/text/ko",
-                    "quote": "검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -502,89 +478,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/236/items/1/ko",
-                    "quote": "생업: 수질 검사 공개 입회"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/237/text/ko",
-                    "quote": "검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/236/items/1/ko",
-                    "quote": "생업: 수질 검사 공개 입회"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "녹천",
-              "type": "초소 영지",
-              "station": "녹천",
-              "state": "S03",
-              "settlement": {
-                "name": "녹천 정착지",
-                "type": "정착지",
-                "description": "녹천 일대 고정 거점"
-              },
-              "note": "S03 녹천 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -608,47 +529,23 @@
             "name": "고초윤",
             "url": "/people/person-0079",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수질 검사 공개 입회",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/236/items/1/ko",
-                  "quote": "생업: 수질 검사 공개 입회"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/237/text/ko",
-                    "quote": "검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -656,89 +553,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/236/items/1/ko",
-                    "quote": "생업: 수질 검사 공개 입회"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/237/text/ko",
-                    "quote": "검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/236/items/1/ko",
-                    "quote": "생업: 수질 검사 공개 입회"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "녹천",
-              "type": "초소 영지",
-              "station": "녹천",
-              "state": "S03",
-              "settlement": {
-                "name": "녹천 정착지",
-                "type": "정착지",
-                "description": "녹천 일대 고정 거점"
-              },
-              "note": "S03 녹천 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -759,18 +601,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "녹천",
-    "type": "초소 영지",
-    "station": "녹천",
-    "state": "S03",
-    "settlement": {
-      "name": "녹천 정착지",
-      "type": "정착지",
-      "description": "녹천 일대 고정 거점"
-    },
-    "note": "S03 녹천 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -807,19 +637,20 @@
     "생업": "수질 검사 공개 입회",
     "품계": "대리",
     "직함": "수질 검사 공개 증인",
+    "업무": "가양1동. 고초윤은 마곡의 수질 검사표와 표본 봉인을 대조하고 주민대표와 안전심사의 날인 전에는 검사 결과를 풀지 않는다.",
     "가치관": "권위 −5 | 개방 20 | 무력 −30 | 물질 10 | 공동 −10 | 원칙 40 | 공개 30 | 자격 50 | 분산 5 | 변혁 5",
     "욕망": "갈망 10 | 독점 10 | 위험 −10 | 과시 0 | 지속 15 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 마곡 시험동에서 자랐다. 수질 검사 공개 증인 자리는 표본 이중 봉인으로 열렸다.",
+    "생애": "2126년 세대. 마곡 시험동에서 자랐다. 고초윤은 마곡의 수질 검사표와 표본 봉인을 대조하고 주민대표와 안전심사의 날인 전에는 검사 결과를 풀지 않는다.\n- 업무: 가양1동. 고초윤은 마곡의 수질 검사표와 표본 봉인을 대조하고 주민대표와 안전심사의 날인 전에는 검사 결과를 풀지 않는다.",
     "관직": "품계 대리. 직함은 수질 검사 공개 증인. 검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다.",
-    "일화": "2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 수질 검사 공개 증인 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다.",
     "관계": "장예린의 검사망 운영을 증언으로 받치고, 정호준의 즉시 공개론을 따르며, 여의도의 엄새울에게 탁수 표본의 공개본을 돌려준다.",
     "야망": "기준 초과 즉시 공개를 공동기술원장의 거부할 수 없는 조항으로 올려, 선출 군주의 공급 유지 지시가 검사를 삼키지 못하게 한다.",
     "공포": "하루의 은폐가 노량진 냉동재고와 서부 급수를 동시에 무너뜨리고, 그 책임을 연구자가 뒤집어쓰는 것.",
-    "개입": "봉인 표본을 지켜 그의 게시를 확정하거나, 숫자 칸을 고친 흔적을 찾아 증인을 실격시킬 수 있다."
+    "개입": "고초윤의 검사표 게시 시각을 봉인 표본으로 확인하거나 숫자 칸의 정정 흔적을 대조할 수 있다."
   },
-  "biography": "탁도 숫자 한 칸의 빈칸도 용납하지 않고, 혼란 방지를 위한 지연을 과학이 아니라 정치로 부른다. 공개 시각을 흥정 거리로 삼지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 수질 검사 공개 입회\n- 품계: 대리\n- 직함: 수질 검사 공개 증인\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 수질 검사 공개 증인 자리는 표본 이중 봉인으로 열렸다.\n\n**관직.** 품계 대리. 직함은 수질 검사 공개 증인. 검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다. 이 일로 수질 검사 공개 증인 자리의 서명이 장부에 올랐다.\n\n**관계.** 장예린의 검사망 운영을 증언으로 받치고, 정호준의 즉시 공개론을 따르며, 여의도의 엄새울에게 탁수 표본의 공개본을 돌려준다.\n\n**야망.** 기준 초과 즉시 공개를 공동기술원장의 거부할 수 없는 조항으로 올려, 선출 군주의 공급 유지 지시가 검사를 삼키지 못하게 한다.\n\n**공포.** 하루의 은폐가 노량진 냉동재고와 서부 급수를 동시에 무너뜨리고, 그 책임을 연구자가 뒤집어쓰는 것.\n\n**개입.** 봉인 표본을 지켜 그의 게시를 확정하거나, 숫자 칸을 고친 흔적을 찾아 증인을 실격시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 10 | 공동 −10 | 원칙 40 | 공개 30 | 자격 50 | 분산 5 | 변혁 5\n- 욕망: 갈망 10 | 독점 10 | 위험 −10 | 과시 0 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "탁도 숫자 한 칸의 빈칸도 용납하지 않고, 혼란 방지를 위한 지연을 과학이 아니라 정치로 부른다. 공개 시각을 흥정 거리로 삼지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 수질 검사 공개 입회\n- 품계: 대리\n- 직함: 수질 검사 공개 증인\n**생애.** 2126년 세대. 마곡 시험동에서 자랐다. 고초윤은 마곡의 수질 검사표와 표본 봉인을 대조하고 주민대표와 안전심사의 날인 전에는 검사 결과를 풀지 않는다.\n- 업무: 가양1동. 고초윤은 마곡의 수질 검사표와 표본 봉인을 대조하고 주민대표와 안전심사의 날인 전에는 검사 결과를 풀지 않는다.\n\n**관직.** 품계 대리. 직함은 수질 검사 공개 증인. 검사표는 주민대표와 안전심사가 동시에 날인해야 봉인이 풀리고, 지연 명령서는 받은 시각만 기록한 채 집행하지 않는다.\n\n**일화.** 2125년 봉인 구역 진입 허가를 거절하고 우회 검증을 설계했다.\n\n**관계.** 장예린의 검사망 운영을 증언으로 받치고, 정호준의 즉시 공개론을 따르며, 여의도의 엄새울에게 탁수 표본의 공개본을 돌려준다.\n\n**야망.** 기준 초과 즉시 공개를 공동기술원장의 거부할 수 없는 조항으로 올려, 선출 군주의 공급 유지 지시가 검사를 삼키지 못하게 한다.\n\n**공포.** 하루의 은폐가 노량진 냉동재고와 서부 급수를 동시에 무너뜨리고, 그 책임을 연구자가 뒤집어쓰는 것.\n\n**개입.** 고초윤의 검사표 게시 시각을 봉인 표본으로 확인하거나 숫자 칸의 정정 흔적을 대조할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −30 | 물질 10 | 공동 −10 | 원칙 40 | 공개 30 | 자격 50 | 분산 5 | 변혁 5\n- 욕망: 갈망 10 | 독점 10 | 위험 −10 | 과시 0 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

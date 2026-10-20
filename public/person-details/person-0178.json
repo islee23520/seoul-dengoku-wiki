@@ -558,52 +558,23 @@
             "name": "가브리엘 존슨",
             "url": "/people/person-0178",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환자 명부·시약 관리와 처방 배분",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/105/items/2/ko",
-                  "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -611,116 +582,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/105/items/2/ko",
-                    "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/105/items/2/ko",
-                    "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/105/items/2/ko",
-                    "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "가브리엘 존슨 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -743,52 +639,23 @@
             "name": "가브리엘 존슨",
             "url": "/people/person-0178",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환자 명부·시약 관리와 처방 배분",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/105/items/2/ko",
-                  "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -796,116 +663,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/105/items/2/ko",
-                    "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/105/items/2/ko",
-                    "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/107/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/105/items/2/ko",
-                    "quote": "생업: 환자 명부·시약 관리와 처방 배분"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "가브리엘 존슨 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -926,7 +718,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -978,15 +769,15 @@
     "욕망": "갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
+    "생애": "2089년생인 가브리엘 존슨은 2126년 개막기에 용산창 의무원 업무를 맡는다. 제기동 의무소에서 자랐다. 용산창 의무원 업무는 가짜 약 봉인을 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 가브리엘 존슨의 환자 명부·시약 관리와 처방 배분 업무는 한강로동과 연결된다.",
     "관직": "품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 행동을 계기로 용산창 의무원 자리의 서명이 장부에 올랐다.",
     "관계": "아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.",
     "야망": "선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.",
     "공포": "억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.",
     "개입": "대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다."
   },
-  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 용산창 의무원 자리는 가짜 약 봉인으로 열렸다. 가브리엘 존슨은 2089년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 제기동 의무소에서 자랐다. 2126년에는 용산창 의무원 업무를 맡는다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "선로 화상보다 냉동 칸 동상을 먼저 맡고, 도제 숙소 배급을 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 창 진료를 닫는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 환자 명부·시약 관리와 처방 배분\n- 직함: 용산창 의무원\n**생애.** 2089년생인 가브리엘 존슨은 2126년 개막기에 용산창 의무원 업무를 맡는다. 제기동 의무소에서 자랐다. 용산창 의무원 업무는 가짜 약 봉인을 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 존슨은 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 가브리엘 존슨의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 가브리엘 존슨의 환자 명부·시약 관리와 처방 배분 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 용산창 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가문 칸 환자는 공공 칸과 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 행동을 계기로 용산창 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 아이작 워커의 도제 숙소를 진료로 받치고, 류은비에게 창 약재를 빚지며, 임초원의 억류 열차 탑승자 진료를 우선한다.\n\n**야망.** 선로 가문과 도제 노동자의 방역 주기를 후국회의 부칙으로 올려 배급 압박에도 의무 최저선을 남긴다.\n\n**공포.** 억류 열차의 부상자가 인질 명부로만 남아 의무실이 가문 감옥이 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 인질 명단을 가문에 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 20 | 무력 −20 | 물질 15 | 공동 −20 | 원칙 10 | 공개 −20 | 자격 30 | 분산 5 | 변혁 0\n- 욕망: 갈망 10 | 독점 35 | 위험 −10 | 과시 5 | 지속 15 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

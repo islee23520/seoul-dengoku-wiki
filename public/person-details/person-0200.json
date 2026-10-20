@@ -441,8 +441,8 @@
           "en": "Office. Rank: senior engineer. Title: shipping owners' council. Before departure he published fuel and ice remainder and suspended the quay use of shipowners whose unredeemed notes piled up."
         },
         "stress": {
-          "ko": "공포. 외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.",
-          "en": "Fear. That after the outside catch was cut off, shipowners who had bought notes on false inventory would go bankrupt at once."
+          "ko": "공포. 서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.",
+          "en": "Fear. That after unloading and food handovers on the Han River within Seoul stop, false inventory notes would exceed actual stocks and destroy the fleet and settlement credit."
         },
         "relationship": {
           "ko": "관계. 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
@@ -465,8 +465,8 @@
           "en": "Relations. Traded the merchants' council notes with O Haerin and disliked Han Jaemok's waterway transport toll. Carried Sin Taesan's convoy squad on the fleet."
         },
         "stress": {
-          "ko": "공포. 외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.",
-          "en": "Fear. That after the outside catch was cut off, shipowners who had bought notes on false inventory would go bankrupt at once."
+          "ko": "공포. 서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.",
+          "en": "Fear. That after unloading and food handovers on the Han River within Seoul stop, false inventory notes would exceed actual stocks and destroy the fleet and settlement credit."
         },
         "relationship": {
           "ko": "관계. 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
@@ -539,47 +539,23 @@
             "name": "피터 얀센",
             "url": "/people/person-0200",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "출항 연료·얼음 잔량 공개",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/6/items/2/ko",
-                  "quote": "생업: 출항 연료·얼음 잔량 공개"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -587,79 +563,29 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/6/items/2/ko",
-                    "quote": "생업: 출항 연료·얼음 잔량 공개"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "피터 얀센 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       },
@@ -682,47 +608,23 @@
             "name": "피터 얀센",
             "url": "/people/person-0200",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "출항 연료·얼음 잔량 공개",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/6/items/2/ko",
-                  "quote": "생업: 출항 연료·얼음 잔량 공개"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -730,79 +632,29 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/6/items/2/ko",
-                    "quote": "생업: 출항 연료·얼음 잔량 공개"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "피터 얀센 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       }
@@ -823,7 +675,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -875,15 +726,15 @@
     "욕망": "갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 피터 얀센은 노량진1동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.\n- 피터 얀센은 한강로동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.",
     "관직": "품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.",
     "일화": "전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.",
     "관계": "오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.",
     "야망": "상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.",
-    "공포": "외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.",
+    "공포": "서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.",
     "개입": "선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다."
   },
-  "biography": "표정을 잘 숨기고 표를 물건처럼 옮긴다. 손실을 나중으로 미루는 사람을 가장 경멸한다.\n\n- 소속: 중앙정보부\n- 품계: 수석기사\n- 생업: 출항 연료·얼음 잔량 공개\n- 직함: 운송선주 평의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.\n\n**일화.** 전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.\n\n**관계.** 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.\n\n**야망.** 상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.\n\n**공포.** 외부 어획이 끊긴 뒤에도 허위 재고로 표를 산 선주들이 한꺼번에 파산하는 것.\n\n**개입.** 선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 0\n- 욕망: 갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "표정을 잘 숨기고 표를 물건처럼 옮긴다. 손실을 나중으로 미루는 사람을 가장 경멸한다.\n\n- 소속: 중앙정보부\n- 품계: 수석기사\n- 생업: 출항 연료·얼음 잔량 공개\n- 직함: 운송선주 평의\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 운송선주 평의 자리는 저울 재점검 공개로 열렸다.\n피터 얀센은 2072년에 태어났다. 네덜란드계 가계는 용산 북안 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 운송선주 평의 업무를 맡는다. 헨드릭 얀센은 2030년 용산 북안에서 용산 강변의 민간 하역·창고 업무 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 피터 얀센의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 네덜란드어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 피터 얀센은 노량진1동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.\n- 피터 얀센은 한강로동에서 출항 연료·얼음 잔량 공개 업무를 맡는다.\n\n**관직.** 품계 수석기사. 직함은 운송선주 평의. 출항 전에 연료와 얼음 잔량을 공개하고, 미상환 표가 쌓인 선주의 부두 사용을 정지한다.\n\n**일화.** 전력 단절과 함께 부두 잔여 어획이 하루치로 줄자 선주들이 결제권 발행을 앞당기라고 압박했다.\n\n**관계.** 오해린과 상회정 표를 거래하고 한재목의 수상 운송 통행세를 꺼린다. 신태산의 호송 반을 선단에 태운다.\n\n**야망.** 상회정의 표를 선주 쪽으로 모아 오해린의 결제권 발행을 선박·호송 지분으로 묶는다.\n\n**공포.** 서울 안 한강 하역·식량 인계가 끊긴 뒤 허위 재고 표가 실제 잔량을 넘겨 선단과 결제 신용을 무너뜨리는 것.\n\n**개입.** 선주 표를 모아 발행을 통과시키거나, 허위 재고로 산 표를 무효로 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −30 | 물질 70 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 0\n- 욕망: 갈망 15 | 독점 10 | 위험 −30 | 과시 10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-08"
   ],

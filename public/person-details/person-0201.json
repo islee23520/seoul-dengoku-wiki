@@ -561,52 +561,23 @@
             "name": "지윤재",
             "url": "/people/person-0201",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "제빙기 압축 온도·부품 점검",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/94/items/2/ko",
-                  "quote": "생업: 제빙기 압축 온도·부품 점검"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -614,111 +585,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/94/items/2/ko",
-                    "quote": "생업: 제빙기 압축 온도·부품 점검"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/94/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "지윤재 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -741,52 +642,23 @@
             "name": "지윤재",
             "url": "/people/person-0201",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "제빙기 압축 온도·부품 점검",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/94/items/2/ko",
-                  "quote": "생업: 제빙기 압축 온도·부품 점검"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -794,111 +666,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/94/items/2/ko",
-                    "quote": "생업: 제빙기 압축 온도·부품 점검"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/94/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "지윤재 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -919,7 +721,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -975,7 +776,7 @@
     "욕망": "갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 지윤재는 노량진1동에서 제빙기 압축 온도·부품 점검 업무를 맡는다.",
     "관직": "품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.",
     "관계": "서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.",
@@ -983,7 +784,7 @@
     "공포": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
     "개입": "수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다."
   },
-  "biography": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 제빙기 압축 온도·부품 점검\n- 직함: 노량진 제빙기 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.\n\n**야망.** 제빙기와 냉동 압축 주기를 공개 정비표로 묶어 전력이 흔들려도 하루치 얼음이 남게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −25 | 물질 75 | 공동 −20 | 원칙 −30 | 공개 15 | 자격 25 | 분산 25 | 변혁 5\n- 욕망: 갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자\n:::",
+  "biography": "압축기 진동으로 제빙 주기를 읽고, 공구를 얼음 위에 두는 조수를 교대에서 뺀다. 말수는 적고 시운전 소음으로 대답한다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 제빙기 압축 온도·부품 점검\n- 직함: 노량진 제빙기 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 노량진 제빙기 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 지윤재는 노량진1동에서 제빙기 압축 온도·부품 점검 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 노량진 제빙기 정비사. 교대마다 압축 온도와 벽돌 무게를 칠판에 쓰고, 상회 도장 없는 부품은 달지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 노량진 제빙기 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 벽돌 각인을 현장에서 받치는 사제이고, 나루희의 발전에 제빙 전력을 맞추며, 강민서의 밀봉 규격을 검수한다.\n\n**야망.** 제빙기와 냉동 압축 주기를 공개 정비표로 묶어 전력이 흔들려도 하루치 얼음이 남게 한다.\n\n**공포.** 한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.\n\n**개입.** 수동 제빙 도구를 들여오거나, 도장 없는 개조의 발주자를 밝혀 정비사를 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 45 | 무력 −25 | 물질 75 | 공동 −20 | 원칙 −30 | 공개 15 | 자격 25 | 분산 25 | 변혁 5\n- 욕망: 갈망 5 | 독점 35 | 위험 −10 | 과시 20 | 지속 20 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

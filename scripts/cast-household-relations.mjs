@@ -124,7 +124,7 @@ export function validateCastHouseholdRelations(ledger, documents) {
   const seenActors = new Set()
   for (const row of ledger.existingHumanoidContext) {
     const actor = atlas.synthetics.find(actor => actor.id === row.actorId && actor.cls === 'H')
-    if (!actor || seenActors.has(row.actorId) || row.custodianPersonId !== actor.relations.find(ref => ref.kind === 'custodian')?.target || row.stewardHouseId !== actor.house_id || row.scope !== 'facility-maintenance' || row.assignmentAction !== 'preserve' || !row.sourceRefs.some(ref => resolveRef(ref, documents).id === actor.id)) fail('E_HOUSEHOLD_H_CUSTODY', row.actorId)
+    if (!actor || seenActors.has(row.actorId) || row.custodianPersonId !== actor.relations.find(ref => ['custodian', 'historical_custodian'].includes(ref.kind))?.target || row.stewardHouseId !== actor.house_id || row.scope !== 'facility-maintenance' || row.assignmentAction !== 'preserve' || !row.sourceRefs.some(ref => resolveRef(ref, documents).id === actor.id)) fail('E_HOUSEHOLD_H_CUSTODY', row.actorId)
     seenActors.add(row.actorId)
   }
   if (seenActors.size !== atlas.synthetics.filter(actor => actor.cls === 'H').length) fail('E_HOUSEHOLD_H_COVERAGE')

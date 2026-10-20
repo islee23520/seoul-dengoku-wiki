@@ -123,7 +123,7 @@
         "timeline": [
           {
             "year": 2076,
-            "summary": "권승솔은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "권승솔은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-15.json",
@@ -554,57 +554,23 @@
             "name": "권바린",
             "url": "/people/person-0870",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인준 명부 인수인계 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/556/items/0/ko",
-                  "quote": "생업: 인준 명부 인수인계 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/557/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -612,94 +578,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/556/items/0/ko",
-                    "quote": "생업: 인준 명부 인수인계 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/557/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "갈월",
-              "type": "초소 영지",
-              "station": "갈월",
-              "state": "S15",
-              "settlement": {
-                "name": "갈월 정착지",
-                "type": "정착지",
-                "description": "갈월 일대 고정 거점"
-              },
-              "note": "S15 갈월 일대 관할 영지"
+              "unspent": 3
             }
           }
         }
@@ -723,57 +629,23 @@
             "name": "권바린",
             "url": "/people/person-0870",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인준 명부 인수인계 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/556/items/0/ko",
-                  "quote": "생업: 인준 명부 인수인계 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/557/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -781,94 +653,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/556/items/0/ko",
-                    "quote": "생업: 인준 명부 인수인계 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/557/text/ko",
-                    "quote": "사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/558/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "갈월",
-              "type": "초소 영지",
-              "station": "갈월",
-              "state": "S15",
-              "settlement": {
-                "name": "갈월 정착지",
-                "type": "정착지",
-                "description": "갈월 일대 고정 거점"
-              },
-              "note": "S15 갈월 일대 관할 영지"
+              "unspent": 3
             }
           }
         }
@@ -889,18 +701,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "갈월",
-    "type": "초소 영지",
-    "station": "갈월",
-    "state": "S15",
-    "settlement": {
-      "name": "갈월 정착지",
-      "type": "정착지",
-      "description": "갈월 일대 고정 거점"
-    },
-    "note": "S15 갈월 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -941,15 +741,15 @@
     "욕망": "갈망 25 | 독점 −30 | 위험 −40 | 과시 −15 | 지속 15 | 지향 유동 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.",
-    "관직": "품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.",
-    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.",
+    "생애": "2098-06-03에 태어난 권바린은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 당직 일을 맡는다. 인준 명부 인수인계 기록 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 권바린은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 당직 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 교우. 직함은 명동역 인준 명부 당직. 인준 명부 인수인계 기록 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
+    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
     "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
     "야망": "교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.",
     "공포": "다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.",
     "개입": "명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다."
   },
-  "biography": "권바린은 명동역 인준 명부 당직 일을 맡는다. 명동역 교구의 장부가 끊기지 않도록 교대마다 서명을 확인한다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명동역 교구청에서 명동역 인준 명부 당직 일을 맡았다.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 사제단의 비밀 선거에 표를 던지지 않고 명동역 교구의 인수인계만 기록한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 명동역 인준 명부 당직의 기록에 당시의 증언을 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −10 | 물질 40 | 공동 −15 | 원칙 −45 | 공개 −15 | 자격 0 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 −15 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "권바린은 명동역 인준 명부 당직 업무에서 인준 명부 인수인계 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 인준 명부 인수인계 기록\n- 소속: 명동대교구 (명동역)\n- 품계: 교우\n- 직함: 명동역 인준 명부 당직\n**생애.** 2098-06-03에 태어난 권바린은 영구 겨울의 명동역 교구청에서 명동역 인준 명부 당직 일을 맡는다. 인준 명부 인수인계 기록 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 권바린은 명동 행정동의 명동역 교구청에서 명동역 인준 명부 당직 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 교우. 직함은 명동역 인준 명부 당직. 인준 명부 인수인계 기록 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 교구 인수인계 장부를 지켜 교황 없는 선거를 둘러싼 다툼에도 명동역의 인준이 이어지게 한다.\n\n**공포.** 다음 대주교 선거의 혼란 속에 자신이 맡은 명동역 인준 명부 당직 장부의 서명이 사라지는 것.\n\n**개입.** 명동역 인준 명부 당직의 빠진 서명을 찾아 선거 증인에게 제출할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 40 | 무력 −10 | 물질 40 | 공동 −15 | 원칙 −45 | 공개 −15 | 자격 0 | 분산 0 | 변혁 0\n- 욕망: 갈망 25 | 독점 −30 | 위험 −40 | 과시 −15 | 지속 15 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-15"
   ],

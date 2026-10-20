@@ -3,7 +3,9 @@ import { existsSync } from 'node:fs'
 import { readFile, readdir } from 'node:fs/promises'
 import { basename, join, resolve } from 'node:path'
 import { test } from 'vitest'
-import { categoryEntities, categoryIndex, loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
+import { categoryEntities, categoryIndex, loadCategoryRegistry, publishedRegistrationErrors, registeredCategories, registrationErrors } from './category-registration.mjs'
+import { approvedDocuments, publishedDocuments } from './catalog-admission.mjs'
+import { requireSeoulPublication } from './check-seoul-scope.mjs'
 
 test('entity paths create nested branches while preserving document registration', async () => {
   const registry = await loadCategoryRegistry(new URL('./category-registry.json', import.meta.url))
@@ -104,6 +106,16 @@ test('unknown domains and categories cannot publish', async () => {
   assert.deepEqual(registrationErrors(document(['culture', 'culture']), registry, 'Bad.json'), ['E_CATEGORY_DUPLICATE:Bad.json'])
 })
 
+test('only published documents must register; a held-back root source does not block generation', async () => {
+  const registry = await loadCategoryRegistry(registryPath)
+  const held = { slug: 'Research-Sources', name: 'Research-Sources.json', value: { ...document(['overview']), domain: 'root', status: 'draft', categories: undefined } }
+  const published = { slug: 'World-Narrative-Atlas', name: 'World-Narrative-Atlas.json', value: { ...document(['overview']), domain: 'root' } }
+  assert.deepEqual(publishedRegistrationErrors([held, published], new Set(['/world/World-Narrative-Atlas']), registry), [])
+  assert.deepEqual(publishedRegistrationErrors([held, published], new Set(['/world/World-Narrative-Atlas', '/world/Research-Sources']), registry), [
+    'E_CATEGORY_SHAPE:Research-Sources.json',
+  ])
+})
+
 test('root atlas documents register under explicit known reader categories', async () => {
   const registry = await loadCategoryRegistry(registryPath)
   const page = { ...document(['overview']), domain: 'root', slug: 'World-Narrative-Atlas' }
@@ -138,8 +150,10 @@ test('the private category template enforces source, locale, and content shape',
   assert.deepEqual(registrationErrors({ ...places, content: [...places.content, { kind: 'table' }] }, registry, 'Bad.json'), [])
 })
 
-test('all current authored JSON documents satisfy their category templates', async () => {
+test('all authenticated published JSON documents satisfy their category templates', async () => {
   const registry = await loadCategoryRegistry(registryPath)
+  const published = publishedDocuments(await approvedDocuments(join(root, 'lore')), await requireSeoulPublication(root))
+  const publishedSources = new Set(published.map(document => resolve(root, document.source)))
   const ignored = new Set(['name-pools', 'regions', 'editorial', 'sources'])
   const walk = async (dir) => {
     const pages = []
@@ -154,7 +168,7 @@ test('all current authored JSON documents satisfy their category templates', asy
     }
     return pages
   }
-  const pages = await walk(join(root, 'lore'))
+  const pages = (await walk(join(root, 'lore'))).filter(({ path }) => publishedSources.has(path))
   assert.ok(pages.length > 0)
   for (const { path, page } of pages) {
     assert.deepEqual(registrationErrors(page, registry, basename(path)), [], path)

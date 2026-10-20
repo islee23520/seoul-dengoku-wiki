@@ -553,47 +553,23 @@
             "name": "이산민",
             "url": "/people/person-0857",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/599/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/600/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -601,84 +577,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/600/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/599/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "갈산",
-              "type": "초소 영지",
-              "station": "갈산",
-              "state": "S02",
-              "settlement": {
-                "name": "갈산 정착지",
-                "type": "정착지",
-                "description": "갈산 일대 고정 거점"
-              },
-              "note": "S02 갈산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -702,47 +628,23 @@
             "name": "이산민",
             "url": "/people/person-0857",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/599/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/600/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -750,84 +652,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/600/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/599/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "갈산",
-              "type": "초소 영지",
-              "station": "갈산",
-              "state": "S02",
-              "settlement": {
-                "name": "갈산 정착지",
-                "type": "정착지",
-                "description": "갈산 일대 고정 거점"
-              },
-              "note": "S02 갈산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -848,18 +700,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "갈산",
-    "type": "초소 영지",
-    "station": "갈산",
-    "state": "S02",
-    "settlement": {
-      "name": "갈산 정착지",
-      "type": "정착지",
-      "description": "갈산 일대 고정 거점"
-    },
-    "note": "S02 갈산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -896,19 +736,20 @@
     "생업": "환승 전갈 전달",
     "품계": "조합원",
     "직함": "작업반 전령",
+    "업무 위치": "구로5동. 이산민은 구로5동으로 갈 배차표 없는 작업반 전갈을 싣지 않는다. 변시람의 공개 출고 창구에서 수령 서명을 확인한 뒤에야 다음 열차의 교대 전령에게 쪽지를 건넨다.",
     "가치관": "권위 −30 | 개방 20 | 무력 −5 | 물질 45 | 공동 50 | 원칙 15 | 공개 35 | 자격 50 | 분산 30 | 변혁 20",
     "욕망": "갈망 25 | 독점 −30 | 위험 −30 | 과시 5 | 지속 20 | 지향 무성향 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "관직": "품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 이산민은 구로5동으로 갈 배차표 없는 작업반 전갈을 싣지 않는다. 변시람의 공개 출고 창구에서 수령 서명을 확인한 뒤에야 다음 열차의 교대 전령에게 쪽지를 건넨다.",
+    "관직": "품계 조합원. 직함은 작업반 전령. 변시람의 공개 출고 창구에서 수령 서명을 확인한 뒤에야 다음 열차의 교대 전령에게 쪽지를 건넨다.",
     "일화": "2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "이산민은 작업반 전갈의 배차표·서명 누락을 표예담에게 알린다. 표예담은 유치선 출고 순서를 확인해 미확인 이동이 정비·공병·배급 순서에 끼어들지 않게 한다.",
+    "야망": "이산민은 배차표와 수령 서명이 없는 전갈을 싣지 않아 미확인 이동이 공개 출고 순서에 끼어들지 않게 하려 한다.",
+    "공포": "배차표 없는 전갈이 확인된 열차인 양 유치선의 정비·배급 출고에 끼어드는 것.",
+    "개입": "플레이어는 이산민과 배차표를 확인해 전갈의 탑재를 보류하거나 변시람의 출고 창구에서 수령 서명을 찾을 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 20 | 무력 −5 | 물질 45 | 공동 50 | 원칙 15 | 공개 35 | 자격 50 | 분산 30 | 변혁 20\n- 욕망: 갈망 25 | 독점 −30 | 위험 −30 | 과시 5 | 지속 20 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "이산민은 배차표 없는 전갈을 서명된 출고로 받아들이지 않는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 이산민은 구로5동으로 갈 배차표 없는 작업반 전갈을 싣지 않는다. 변시람의 공개 출고 창구에서 수령 서명을 확인한 뒤에야 다음 열차의 교대 전령에게 쪽지를 건넨다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 변시람의 공개 출고 창구에서 수령 서명을 확인한 뒤에야 다음 열차의 교대 전령에게 쪽지를 건넨다.\n\n**일화.** 2125년 배차표 없는 열차를 세워 서명 없는 출발을 막았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 이산민은 작업반 전갈의 배차표·서명 누락을 표예담에게 알린다. 표예담은 유치선 출고 순서를 확인해 미확인 이동이 정비·공병·배급 순서에 끼어들지 않게 한다.\n\n**야망.** 이산민은 배차표와 수령 서명이 없는 전갈을 싣지 않아 미확인 이동이 공개 출고 순서에 끼어들지 않게 하려 한다.\n\n**공포.** 배차표 없는 전갈이 확인된 열차인 양 유치선의 정비·배급 출고에 끼어드는 것.\n\n**개입.** 플레이어는 이산민과 배차표를 확인해 전갈의 탑재를 보류하거나 변시람의 출고 창구에서 수령 서명을 찾을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 20 | 무력 −5 | 물질 45 | 공동 50 | 원칙 15 | 공개 35 | 자격 50 | 분산 30 | 변혁 20\n- 욕망: 갈망 25 | 독점 −30 | 위험 −30 | 과시 5 | 지속 20 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

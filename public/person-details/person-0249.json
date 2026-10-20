@@ -444,47 +444,23 @@
             "name": "강태산",
             "url": "/people/person-0249",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "회랑 정찰 보고·통행 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/72/items/0/ko",
-                  "quote": "생업: 회랑 정찰 보고·통행 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/73/text/ko",
-                    "quote": "정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,95 +468,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 회랑 정찰 보고·통행 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/73/text/ko",
-                    "quote": "정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 회랑 정찰 보고·통행 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "강태산 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S10 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -603,47 +519,23 @@
             "name": "강태산",
             "url": "/people/person-0249",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "회랑 정찰 보고·통행 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/72/items/0/ko",
-                  "quote": "생업: 회랑 정찰 보고·통행 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/73/text/ko",
-                    "quote": "정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -651,95 +543,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 회랑 정찰 보고·통행 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/73/text/ko",
-                    "quote": "정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 회랑 정찰 보고·통행 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "강태산 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S10 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
@@ -760,7 +592,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -816,15 +647,15 @@
     "욕망": "갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2077-12-20 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 회랑 정찰 주지 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
     "관직": "품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.",
     "일화": "암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.",
     "관계": "백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.",
-    "야망": "북한산·탕춘대 회랑을 독립 통행로로 남겨 동부 상수보호권의 순찰이 숙영지까지 올라오지 못하게 한다.",
+    "야망": "북한산·탕춘대 회랑을 독립 통행로로 남겨 암사 순찰이 숙영지까지 올라오지 못하게 한다.",
     "공포": "회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.",
     "개입": "회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다."
   },
-  "biography": "과묵하고 지형을 사람 얼굴처럼 기억한다. 효율을 이유로 가족을 갈라놓는 명령을 듣지 않는다.\n\n- 생업: 회랑 정찰 보고·통행 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 회랑 정찰 주지\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 회랑 정찰 주지 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.\n\n**일화.** 암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.\n\n**관계.** 백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.\n\n**야망.** 북한산·탕춘대 회랑을 독립 통행로로 남겨 동부 상수보호권의 순찰이 숙영지까지 올라오지 못하게 한다.\n\n**공포.** 회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.\n\n**개입.** 회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 60 | 무력 −40 | 물질 −20 | 공동 55 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "과묵하고 지형을 사람 얼굴처럼 기억한다. 가족을 갈라놓는 명령을 거부한다.\n\n- 생업: 회랑 정찰 보고·통행 확인\n- 소속: 안국총림\n- 품계: 주지\n- 직함: 회랑 정찰 주지\n**생애.** 2077-12-20 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 회랑 정찰 주지 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 평창동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n- 강태산의 회랑 정찰 보고·통행 확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 주지. 직함은 회랑 정찰 주지. 정찰 보고를 산중총회에 먼저 올리고, 무장 통과는 신도 명부 주지의 표가 있어야 연다.\n\n**일화.** 암사 순찰대가 급수 철표를 들고 회랑 입구까지 올라와 가족 숙영을 인원 조사하겠다고 통보했다.\n\n**관계.** 백온의 지휘로 회랑을 지키며 배우진의 순찰대와 원한에 가깝다. 송하율의 북문 순찰과 횃불 신호를 맞춘다.\n\n**야망.** 북한산·탕춘대 회랑을 독립 통행로로 남겨 암사 순찰이 숙영지까지 올라오지 못하게 한다.\n\n**공포.** 회랑이 군사 호송로로 바뀌어 피난 장부가 지도에서 지워지는 것.\n\n**개입.** 회랑을 하루 닫거나, 순찰대와 정찰대의 충돌을 증언으로 기록할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −40 | 개방 60 | 무력 −40 | 물질 −20 | 공동 55 | 원칙 35 | 공개 35 | 자격 35 | 분산 50 | 변혁 5\n- 욕망: 갈망 25 | 독점 15 | 위험 −10 | 과시 20 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-10"
   ],

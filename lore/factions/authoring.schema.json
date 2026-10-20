@@ -46,6 +46,7 @@
                           "kind",
                           "stateId",
                           "name",
+                          "centerRegion",
                           "memberStateIds",
                           "aiPosition",
                           "color"
@@ -62,6 +63,11 @@
                           "name": {
                             "type": "string",
                             "minLength": 1
+                          },
+                          "centerRegion": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
                           },
                           "memberStateIds": {
                             "type": "array",
@@ -87,6 +93,7 @@
                         "required": [
                           "kind",
                           "name",
+                          "centerRegion",
                           "memberStateIds",
                           "aiPosition",
                           "color"
@@ -99,6 +106,11 @@
                           "name": {
                             "type": "string",
                             "minLength": 1
+                          },
+                          "centerRegion": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
                           },
                           "memberStateIds": {
                             "type": "array",

@@ -2,9 +2,9 @@
   "id": "person-0106",
   "name": "명우솔",
   "title": "성수 공방시장 경매사",
-  "position": "성수 공방시장 경매사 · 하남시 영주",
+  "position": "성수 공방시장 경매사",
   "characterId": "K105",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "공방시장 출고·배급 기록",
   "gender": "남성",
@@ -454,52 +454,23 @@
             "name": "명우솔",
             "url": "/people/person-0106",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공방시장 출고·배급 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/203/items/1/ko",
-                  "quote": "생업: 공방시장 출고·배급 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/204/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,94 +478,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/203/items/1/ko",
-                    "quote": "생업: 공방시장 출고·배급 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/204/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/203/items/1/ko",
-                    "quote": "생업: 공방시장 출고·배급 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "왕십리",
-              "type": "초소 영지",
-              "station": "왕십리",
-              "state": "S04",
-              "settlement": {
-                "name": "왕십리 정착지",
-                "type": "정착지",
-                "description": "왕십리 일대 고정 거점"
-              },
-              "note": "S04 왕십리 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -618,52 +529,23 @@
             "name": "명우솔",
             "url": "/people/person-0106",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공방시장 출고·배급 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/203/items/1/ko",
-                  "quote": "생업: 공방시장 출고·배급 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/204/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -671,207 +553,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/203/items/1/ko",
-                    "quote": "생업: 공방시장 출고·배급 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/204/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/203/items/1/ko",
-                    "quote": "생업: 공방시장 출고·배급 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "왕십리",
-              "type": "초소 영지",
-              "station": "왕십리",
-              "state": "S04",
-              "settlement": {
-                "name": "왕십리 정착지",
-                "type": "정착지",
-                "description": "왕십리 일대 고정 거점"
-              },
-              "note": "S04 왕십리 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41450-S04",
-      "name": {
-        "ko": "하남시 공작령 직영지"
-      },
-      "holderPersonId": "K105",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4145051000",
-          "name": "경기도 하남시 천현동"
-        },
-        {
-          "id": "4145052000",
-          "name": "경기도 하남시 신장1동"
-        },
-        {
-          "id": "4145053000",
-          "name": "경기도 하남시 신장2동"
-        },
-        {
-          "id": "4145054000",
-          "name": "경기도 하남시 덕풍1동"
-        },
-        {
-          "id": "4145055000",
-          "name": "경기도 하남시 덕풍2동"
-        },
-        {
-          "id": "4145056000",
-          "name": "경기도 하남시 덕풍3동"
-        },
-        {
-          "id": "4145058000",
-          "name": "경기도 하남시 감북동"
-        },
-        {
-          "id": "4145058200",
-          "name": "경기도 하남시 감일동"
-        },
-        {
-          "id": "4145058500",
-          "name": "경기도 하남시 위례동"
-        },
-        {
-          "id": "4145059000",
-          "name": "경기도 하남시 춘궁동"
-        },
-        {
-          "id": "4145060000",
-          "name": "경기도 하남시 초이동"
-        },
-        {
-          "id": "4145061000",
-          "name": "경기도 하남시 미사1동"
-        },
-        {
-          "id": "4145062000",
-          "name": "경기도 하남시 미사2동"
-        },
-        {
-          "id": "4145063000",
-          "name": "경기도 하남시 미사3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41450-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41450-S04",
-      "name": "하남시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K105",
-      "basis": "개막 행정 규모 그룹 41450(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4145051000",
-        "4145052000",
-        "4145053000",
-        "4145054000",
-        "4145055000",
-        "4145056000",
-        "4145058000",
-        "4145058200",
-        "4145058500",
-        "4145059000",
-        "4145060000",
-        "4145061000",
-        "4145062000",
-        "4145063000"
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41450-S04",
+          "directLiegePersonId": "K423"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -885,18 +618,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "왕십리",
-    "type": "초소 영지",
-    "station": "왕십리",
-    "state": "S04",
-    "settlement": {
-      "name": "왕십리 정착지",
-      "type": "정착지",
-      "description": "왕십리 일대 고정 거점"
-    },
-    "note": "S04 왕십리 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -937,15 +658,15 @@
     "욕망": "갈망 25 | 독점 25 | 위험 −20 | 과시 40 | 지속 30 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 성수 공방시장 경매사 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 명우솔은 노량진 선창에서 자랐다. 명우솔은 저울 재점검 공개로 성수 공방시장 경매사 자리를 맡았다.\n- 명우솔의 성수 공방시장 경매사 업무는 성수2가1동과 연결된다.",
     "관직": "품계 교사. 직함은 성수 공방시장 경매사. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.",
-    "일화": "2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 성수 공방시장 경매사 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 명우솔은 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 성수 공방시장 경매사 자리의 서명이 장부에 올랐다.",
     "관계": "유하은의 직능 칠판을 경매로 집행하고, 구도영의 패킹 운송과 순번을 나누며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.",
     "야망": "가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 경매에 올려 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.",
-    "공포": "동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 것.",
+    "공포": "명우솔은 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 상황을 두려워한다.",
     "개입": "대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 경매 잠금을 풀 수 있다."
   },
-  "biography": "원단과 기어의 출처를 숨기는 공방을 추궁하고, 신발 한 켤레의 시세가 방호보다 먼저 사람을 살린다고 믿는다. 흥정을 즐기되 군화 우선 낙찰은 거부한다.\n\n- 소속: 명부교회\n- 생업: 공방시장 출고·배급 기록\n- 품계: 교사\n- 직함: 성수 공방시장 경매사\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 성수 공방시장 경매사 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 교사. 직함은 성수 공방시장 경매사. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.\n\n**일화.** 2125년 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 성수 공방시장 경매사 자리의 서명이 장부에 올랐다.\n\n**관계.** 유하은의 직능 칠판을 경매로 집행하고, 구도영의 패킹 운송과 순번을 나누며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.\n\n**야망.** 가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 경매에 올려 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.\n\n**공포.** 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 것.\n\n**개입.** 대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 경매 잠금을 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 15 | 무력 −30 | 물질 30 | 공동 25 | 원칙 −5 | 공개 −20 | 자격 35 | 분산 15 | 변혁 −5\n- 욕망: 갈망 25 | 독점 25 | 위험 −20 | 과시 40 | 지속 30 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "원단과 기어의 출처를 숨기는 공방을 추궁하고, 신발 한 켤레의 시세가 방호보다 먼저 사람을 살린다고 믿는다. 흥정을 즐기되 군화 우선 낙찰은 거부한다.\n\n- 소속: 명부교회\n- 생업: 공방시장 출고·배급 기록\n- 품계: 교사\n- 직함: 성수 공방시장 경매사\n**생애.** 2126년 세대. 명우솔은 노량진 선창에서 자랐다. 명우솔은 저울 재점검 공개로 성수 공방시장 경매사 자리를 맡았다.\n- 명우솔의 성수 공방시장 경매사 업무는 성수2가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 성수 공방시장 경매사. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.\n\n**일화.** 2125년 명우솔은 흉작 소문에 창고 봉쇄를 풀고 비상배급표를 공개했다. 이 일로 성수 공방시장 경매사 자리의 서명이 장부에 올랐다.\n\n**관계.** 유하은의 직능 칠판을 경매로 집행하고, 구도영의 패킹 운송과 순번을 나누며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.\n\n**야망.** 가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 경매에 올려 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.\n\n**공포.** 명우솔은 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 상황을 두려워한다.\n\n**개입.** 대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 경매 잠금을 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 15 | 무력 −30 | 물질 30 | 공동 25 | 원칙 −5 | 공개 −20 | 자격 35 | 분산 15 | 변혁 −5\n- 욕망: 갈망 25 | 독점 25 | 위험 −20 | 과시 40 | 지속 30 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-04"
   ],

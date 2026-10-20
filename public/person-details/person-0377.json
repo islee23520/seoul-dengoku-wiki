@@ -447,52 +447,23 @@
             "name": "전나경",
             "url": "/people/person-0377",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "구휼 물자 배분·선거 보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/83/items/0/ko",
-                  "quote": "생업: 구휼 물자 배분·선거 보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "명동역 구휼 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -500,111 +471,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 구휼 물자 배분·선거 보좌"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "명동역 구휼 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/83/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "전나경 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S15 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       },
@@ -627,52 +528,23 @@
             "name": "전나경",
             "url": "/people/person-0377",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "구휼 물자 배분·선거 보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/83/items/0/ko",
-                  "quote": "생업: 구휼 물자 배분·선거 보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "명동역 구휼 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -680,111 +552,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 구휼 물자 배분·선거 보좌"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "명동역 구휼 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/83/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "전나경 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S15 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       }
@@ -805,7 +607,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -861,15 +662,15 @@
     "욕망": "갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.",
-    "관직": "품계 부제. 직함은 명동역 구휼 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
-    "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 명동역 구휼 부제의 기록에 당시의 증언을 남겼다.",
+    "생애": "2075-07-04에 태어난 전나경은 영구 겨울의 명동역 교구청에서 명동역 구휼 부제 일을 맡는다. 구휼 물자 배분·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 전나경은 명동 행정동의 명동역 교구청에서 명동역 구휼 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 부제. 직함은 명동역 구휼 부제. 구휼 물자 배분·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
+    "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
     "관계": "윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.",
     "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "전나경은 명동역 구휼 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 구휼 물자 배분·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 부제\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 명동역 교구청에서 명동역 구휼 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 명동역 구휼 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −20 | 자격 −10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "전나경은 명동역 구휼 부제 업무에서 구휼 물자 배분·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 구휼 물자 배분·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 구휼 부제\n**생애.** 2075-07-04에 태어난 전나경은 영구 겨울의 명동역 교구청에서 명동역 구휼 부제 일을 맡는다. 구휼 물자 배분·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 전나경은 명동 행정동의 명동역 교구청에서 명동역 구휼 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 명동역 구휼 부제. 구휼 물자 배분·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 윤서린에게 배급 원장 사본을 넘기고, 남윤경의 비밀 군량을 거스르며, 백온의 남하 가족에게 임시표를 준다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 35 | 무력 −15 | 물질 65 | 공동 −30 | 원칙 −50 | 공개 −20 | 자격 −10 | 분산 −5 | 변혁 −5\n- 욕망: 갈망 0 | 독점 15 | 위험 −15 | 과시 10 | 지속 −15 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-15"
   ],

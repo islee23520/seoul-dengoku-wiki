@@ -454,47 +454,23 @@
             "name": "홍나원",
             "url": "/people/person-0522",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록·열쇠 인수인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/368/items/1/ko",
-                  "quote": "생업: 기록·열쇠 인수인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/369/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -502,73 +478,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/368/items/1/ko",
-                    "quote": "생업: 기록·열쇠 인수인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/369/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "노원",
-              "type": "초소 영지",
-              "station": "노원",
-              "state": "S03",
-              "settlement": {
-                "name": "노원 정착지",
-                "type": "정착지",
-                "description": "노원 일대 고정 거점"
-              },
-              "note": "S03 노원 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -592,47 +523,23 @@
             "name": "홍나원",
             "url": "/people/person-0522",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록·열쇠 인수인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/368/items/1/ko",
-                  "quote": "생업: 기록·열쇠 인수인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/369/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -640,73 +547,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/368/items/1/ko",
-                    "quote": "생업: 기록·열쇠 인수인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/369/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "노원",
-              "type": "초소 영지",
-              "station": "노원",
-              "state": "S03",
-              "settlement": {
-                "name": "노원 정착지",
-                "type": "정착지",
-                "description": "노원 일대 고정 거점"
-              },
-              "note": "S03 노원 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -727,18 +589,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "노원",
-    "type": "초소 영지",
-    "station": "노원",
-    "state": "S03",
-    "settlement": {
-      "name": "노원 정착지",
-      "type": "정착지",
-      "description": "노원 일대 고정 거점"
-    },
-    "note": "S03 노원 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -775,19 +625,20 @@
     "생업": "기록·열쇠 인수인계",
     "품계": "대리",
     "직함": "종자 기록관",
+    "업무": "가양1동. 홍나원은 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
     "가치관": "권위 −5 | 개방 15 | 무력 −30 | 물질 10 | 공동 5 | 원칙 70 | 공개 45 | 자격 40 | 분산 5 | 변혁 5",
     "욕망": "갈망 0 | 독점 10 | 위험 −10 | 과시 −45 | 지속 35 | 지향 동성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.",
-    "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 홍나원은 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 홍나원은 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
+    "관직": "품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.",
+    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다.",
+    "관계": "홍나원은 종자 기록 원본을 박진솔에게 인계하며 의심스러운 사본의 날인을 알린다. 박진솔은 온습도 기록과 출고 이중 날인을 확인해, 위조된 사본 때문에 보존 종자가 반출되는 일을 경계한다.",
+    "야망": "홍나원은 의심스러운 날인이 붙은 사본을 종자 원본과 구별해 박진솔의 이중 출고 날인 전에 확인받으려 한다.",
+    "공포": "원본과 다른 사본의 도장이 보존 종자 반출의 두 번째 날인으로 세어지는 것.",
+    "개입": "플레이어는 홍나원이 표시한 사본과 원본 서명을 대조해 위조 의심 칸을 출고 판단에서 분리할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −30 | 물질 10 | 공동 5 | 원칙 70 | 공개 45 | 자격 40 | 분산 5 | 변혁 5\n- 욕망: 갈망 0 | 독점 10 | 위험 −10 | 과시 −45 | 지속 35 | 지향 동성 | 결합 단혼\n:::",
+  "biography": "가양1동에서 홍나원은 종자 원본의 빠진 줄을 먼저 살핀다. 보존고 출고를 재촉받아도 인수 기록과 온습도 장부를 맞춘 뒤 박진솔에게 넘긴다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 홍나원은 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 홍나원은 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다.\n\n**관계.** 홍나원은 종자 기록 원본을 박진솔에게 인계하며 의심스러운 사본의 날인을 알린다. 박진솔은 온습도 기록과 출고 이중 날인을 확인해, 위조된 사본 때문에 보존 종자가 반출되는 일을 경계한다.\n\n**야망.** 홍나원은 의심스러운 날인이 붙은 사본을 종자 원본과 구별해 박진솔의 이중 출고 날인 전에 확인받으려 한다.\n\n**공포.** 원본과 다른 사본의 도장이 보존 종자 반출의 두 번째 날인으로 세어지는 것.\n\n**개입.** 플레이어는 홍나원이 표시한 사본과 원본 서명을 대조해 위조 의심 칸을 출고 판단에서 분리할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 15 | 무력 −30 | 물질 10 | 공동 5 | 원칙 70 | 공개 45 | 자격 40 | 분산 5 | 변혁 5\n- 욕망: 갈망 0 | 독점 10 | 위험 −10 | 과시 −45 | 지속 35 | 지향 동성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

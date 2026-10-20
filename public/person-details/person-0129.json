@@ -445,52 +445,23 @@
             "name": "지목현",
             "url": "/people/person-0129",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "행정·군사 전갈 봉함 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 행정·군사 전갈 봉함 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -498,122 +469,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 행정·군사 전갈 봉함 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/170/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "지목현 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -636,52 +532,23 @@
             "name": "지목현",
             "url": "/people/person-0129",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "행정·군사 전갈 봉함 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 행정·군사 전갈 봉함 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -689,122 +556,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 행정·군사 전갈 봉함 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/170/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "지목현 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -825,7 +617,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -881,15 +672,12 @@
     "욕망": "갈망 45 | 독점 30 | 위험 25 | 과시 −25 | 지속 −15 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.",
-    "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다.",
+    "관직": "품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.\n\n일화. 지목현은 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다.",
     "관계": "김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.",
-    "야망": "동부 보호군 파견과 비상감독 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.",
-    "공포": "위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것.",
+    "야망": "동부 보호군 파견과 비상감독 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n공포. 지목현은 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 일을 두려워한다.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 파견안을 무력화할 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 원장에 올리지 않는 사신을 위조로 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 동방사\n- 생업: 행정·군사 전갈 봉함 전달\n- 품계: 병장\n- 직함: 동방사 전령\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 동방사 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.\n\n**야망.** 동부 보호군 파견과 비상감독 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 파견안을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −50 | 무력 80 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −30 | 자격 −20 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 30 | 위험 25 | 과시 −25 | 지속 −15 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "지목현은 봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 원장에 올리지 않는 사신을 위조로 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 소속: 동방사\n- 생업: 행정·군사 전갈 봉함 전달\n- 품계: 병장\n- 직함: 동방사 전령\n생애. 지목현은 3세대에 태어났다. 지목현은 암사 경비 초소에서 자랐다. 지목현의 동방사 전령 자리는 야간 무단 도하 적발로 열렸다.\n- 지목현은 암사2동과 연결된 업무에서 행정·군사 전갈을 함께 봉하고 재심 날인과 작전표를 모두 요구한다.\n\n**관직.** 품계 병장. 직함은 동방사 전령. 전갈을 행정청과 동방사에 동시에 보내고, 파견 편성은 정소율의 재심 날인과 김우찬의 작전표가 둘 다 있어야 달린다.\n\n일화. 지목현은 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다.\n\n**관계.** 김우찬의 작전표를 봉인 상태로만 나르는 지휘이고, 임겨레의 기한 조항을 약소국에 배달하는 계약이며, 윤서린에게 인준 사본을 넘길지 매번 저울질한다.\n\n**야망.** 동부 보호군 파견과 비상감독 종료 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n공포. 지목현은 위조 급수 전갈 한 장이 집단 봉쇄를 발동시켜 전령망이 쿠데타의 나팔이 되는 일을 두려워한다.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 파견안을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 70 | 개방 −50 | 무력 80 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −30 | 자격 −20 | 분산 −45 | 변혁 −25\n- 욕망: 갈망 45 | 독점 30 | 위험 25 | 과시 −25 | 지속 −15 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-05"
   ],

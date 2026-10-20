@@ -2,7 +2,7 @@
   "id": "person-0324",
   "name": "심달호",
   "title": "약재상",
-  "position": "약재 감별 수련의",
+  "position": "약재상",
   "characterId": "K323",
   "rank": "수련의",
   "commonTier": "T3",
@@ -445,57 +445,23 @@
             "name": "심달호",
             "url": "/people/person-0324",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 원산지·출고 날인 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/61/items/0/ko",
-                  "quote": "생업: 약재 원산지·출고 날인 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/60/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -503,110 +469,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/61/items/0/ko",
-                    "quote": "생업: 약재 원산지·출고 날인 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/60/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/61/items/0/ko",
-                    "quote": "생업: 약재 원산지·출고 날인 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 84,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 84,
-              "unspent": 0,
-              "total": 84
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회기",
-              "type": "초소 영지",
-              "station": "회기",
-              "state": "S13",
-              "settlement": {
-                "name": "회기 정착지",
-                "type": "정착지",
-                "description": "회기 일대 고정 거점"
-              },
-              "note": "S13 회기 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -630,57 +526,23 @@
             "name": "심달호",
             "url": "/people/person-0324",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 원산지·출고 날인 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/61/items/0/ko",
-                  "quote": "생업: 약재 원산지·출고 날인 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/60/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -688,110 +550,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/61/items/0/ko",
-                    "quote": "생업: 약재 원산지·출고 날인 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/60/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/61/items/0/ko",
-                    "quote": "생업: 약재 원산지·출고 날인 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 84,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 84,
-              "unspent": 0,
-              "total": 84
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회기",
-              "type": "초소 영지",
-              "station": "회기",
-              "state": "S13",
-              "settlement": {
-                "name": "회기 정착지",
-                "type": "정착지",
-                "description": "회기 일대 고정 거점"
-              },
-              "note": "S13 회기 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -812,18 +604,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "회기",
-    "type": "초소 영지",
-    "station": "회기",
-    "state": "S13",
-    "settlement": {
-      "name": "회기 정착지",
-      "type": "정착지",
-      "description": "회기 일대 고정 거점"
-    },
-    "note": "S13 회기 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -859,20 +639,20 @@
     "생업": "약재 원산지·출고 날인 대조",
     "소속": "흰십자단",
     "품계": "수련의",
-    "직함": "약재 감별 수련의",
+    "직함": "약재상",
     "가치관": "권위 −25 | 개방 30 | 무력 −45 | 물질 −25 | 공동 25 | 원칙 40 | 공개 20 | 자격 20 | 분산 30 | 변혁 −10",
     "욕망": "갈망 25 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 감별 수련의 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2085-09-30에 태어났다. 2126년 개막 현재 약재상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 원산지·출고 날인 대조 창구가 심달호의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
     "관직": "품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 약재 감별 수련의 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
     "관계": "류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.",
-    "야망": "청량리 약재 경매를 강국 독점 입찰에서 떼어내 의료 지휘부 중증도 배정으로 바꾼다.",
-    "공포": "암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 것.",
-    "개입": "선매 장부를 되찾거나, 강국 구매 대리인을 경매장에서 공개할 수 있다."
+    "야망": "청량리 약재 경매를 비공개 독점 입찰에서 떼어내 의료 지휘부 중증도 배정으로 바꾼다.",
+    "공포": "암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 일을 두려워한다.",
+    "개입": "선매 장부를 되찾거나, 비공개 선매 대리인을 경매장에서 공개할 수 있다."
   },
-  "biography": "저울눈만큼 말을 아끼고, 외상 장부를 사람 얼굴보다 오래 기억한다. 선매를 권하는 사신을 손님으로 보지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 원산지·출고 날인 대조\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 감별 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 감별 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 약재 감별 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.\n\n**야망.** 청량리 약재 경매를 강국 독점 입찰에서 떼어내 의료 지휘부 중증도 배정으로 바꾼다.\n\n**공포.** 암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 것.\n\n**개입.** 선매 장부를 되찾거나, 강국 구매 대리인을 경매장에서 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −45 | 물질 −25 | 공동 25 | 원칙 40 | 공개 20 | 자격 20 | 분산 30 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
+  "biography": "저울눈만큼 말을 아끼고, 외상 장부를 사람 얼굴보다 오래 기억한다. 선매를 권하는 사신을 손님으로 보지 않는다.\n\n- 생업: 약재 원산지·출고 날인 대조\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재상\n**생애.** 2085-09-30에 태어났다. 2126년 개막 현재 약재상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 원산지·출고 날인 대조 창구가 심달호의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 감별 수련의. 원산지와 건조 일자를 말목에 걸고, 대량 출고는 담당 전문의 전솔과 단장의 진료 배정 날인이 있어야 성립시킨다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 류은비의 치료 물자를 대고, 전솔의 환자 할당을 따르며, 은태호의 가락 가격과 약재 교환 비율을 거래한다.\n\n**야망.** 청량리 약재 경매를 비공개 독점 입찰에서 떼어내 의료 지휘부 중증도 배정으로 바꾼다.\n\n**공포.** 암사나 여의신이 항생제와 해열 생약을 선매해 시장 바닥이 드러나는 일을 두려워한다.\n\n**개입.** 선매 장부를 되찾거나, 비공개 선매 대리인을 경매장에서 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −45 | 물질 −25 | 공동 25 | 원칙 40 | 공개 20 | 자격 20 | 분산 30 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −20 | 위험 −20 | 과시 −10 | 지속 35 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-13"
   ],

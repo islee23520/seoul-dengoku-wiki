@@ -552,52 +552,23 @@
             "name": "임달나",
             "url": "/people/person-0904",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수 배분 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/633/items/1/ko",
-                  "quote": "생업: 급수 배분 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/634/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/635/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,121 +576,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/633/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/634/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/633/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/635/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/633/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청명",
-              "type": "초소 영지",
-              "station": "청명",
-              "state": "S01",
-              "settlement": {
-                "name": "청명 정착지",
-                "type": "정착지",
-                "description": "청명 일대 고정 거점"
-              },
-              "note": "S01 청명 일대 관할 영지"
+              "unspent": 11
             }
           }
         }
@@ -743,52 +639,23 @@
             "name": "임달나",
             "url": "/people/person-0904",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수 배분 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/633/items/1/ko",
-                  "quote": "생업: 급수 배분 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/634/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/635/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -796,121 +663,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/633/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/634/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/633/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/635/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/633/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청명",
-              "type": "초소 영지",
-              "station": "청명",
-              "state": "S01",
-              "settlement": {
-                "name": "청명 정착지",
-                "type": "정착지",
-                "description": "청명 일대 고정 거점"
-              },
-              "note": "S01 청명 일대 관할 영지"
+              "unspent": 11
             }
           }
         }
@@ -931,18 +723,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "청명",
-    "type": "초소 영지",
-    "station": "청명",
-    "state": "S01",
-    "settlement": {
-      "name": "청명 정착지",
-      "type": "정착지",
-      "description": "청명 일대 고정 거점"
-    },
-    "note": "S01 청명 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -979,11 +759,12 @@
     "생업": "급수 배분 당직",
     "품계": "주사",
     "직함": "배급구역 서기",
+    "업무 위치": "신정2동. 임달나는 2125년 수압 시험에서 새는 이음매 세 곳을 표시판에 올렸고, 지금은 신정2동 이서담의 급수 당직 인계에 그 표시 기록을 전달한다.",
     "가치관": "권위 45 | 개방 −20 | 무력 15 | 물질 50 | 공동 10 | 원칙 20 | 공개 20 | 자격 10 | 분산 −55 | 변혁 −15",
     "욕망": "갈망 15 | 독점 0 | 위험 −10 | 과시 5 | 지속 15 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다.\n- 업무 위치: 신정2동. 임달나는 2125년 수압 시험에서 새는 이음매 세 곳을 표시판에 올렸고, 지금은 신정2동 이서담의 급수 당직 인계에 그 표시 기록을 전달한다.",
     "관직": "품계는 주사이고 직함은 배급구역 서기다. 자기 직위의 열쇠와 기록만 넘긴다.",
     "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다.",
     "관계": "이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.",
@@ -991,7 +772,7 @@
     "공포": "배급구역 서기 당직이 비는 것.",
     "개입": "당직 인수 증인을 세울 수 있다."
   },
-  "biography": "임달나는 급수 배분 당직을 맡는 수문국의 배급구역 서기다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다.\n\n**관직.** 품계는 주사이고 직함은 배급구역 서기다. 자기 직위의 열쇠와 기록만 넘긴다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 급수 배분 당직을 중단 없이 운영하는 것.\n\n**공포.** 배급구역 서기 당직이 비는 것.\n\n**개입.** 당직 인수 증인을 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −20 | 무력 15 | 물질 50 | 공동 10 | 원칙 20 | 공개 20 | 자격 10 | 분산 −55 | 변혁 −15\n- 욕망: 갈망 15 | 독점 0 | 위험 −10 | 과시 5 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "임달나는 급수 배분 당직을 맡는 수문국의 배급구역 서기다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 주사\n- 직함: 배급구역 서기\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다.\n- 업무 위치: 신정2동. 임달나는 2125년 수압 시험에서 새는 이음매 세 곳을 표시판에 올렸고, 지금은 신정2동 이서담의 급수 당직 인계에 그 표시 기록을 전달한다.\n\n**관직.** 품계는 주사이고 직함은 배급구역 서기다. 자기 직위의 열쇠와 기록만 넘긴다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다.\n\n**관계.** 이서담의 배급구역 서기로 일하며 급수 배분 당직을 맡는다.\n\n**야망.** 급수 배분 당직을 중단 없이 운영하는 것.\n\n**공포.** 배급구역 서기 당직이 비는 것.\n\n**개입.** 당직 인수 증인을 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −20 | 무력 15 | 물질 50 | 공동 10 | 원칙 20 | 공개 20 | 자격 10 | 분산 −55 | 변혁 −15\n- 욕망: 갈망 15 | 독점 0 | 위험 −10 | 과시 5 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

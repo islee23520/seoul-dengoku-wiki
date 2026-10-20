@@ -2,9 +2,9 @@
   "id": "person-0555",
   "name": "서구서",
   "title": "부품 물류상",
-  "position": "부품 물류상 · 영동군 영주",
+  "position": "부품 물류상",
   "characterId": "K555",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "차륜·펌프 정비",
   "gender": "남성",
@@ -454,58 +454,23 @@
             "name": "서구서",
             "url": "/people/person-0555",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜·펌프 정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/390/items/1/ko",
-                  "quote": "생업: 차륜·펌프 정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/391/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 10
               }
             },
             "traits": [],
@@ -513,105 +478,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/391/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/390/items/1/ko",
-                    "quote": "생업: 차륜·펌프 정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/390/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 11,
               "Will": 12,
               "Per": 12,
-              "FP": 11,
               "BasicSpeed": 5.25,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 50,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 70,
-              "unspent": 5,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "왕십리",
-              "type": "초소 영지",
-              "station": "왕십리",
-              "state": "S04",
-              "settlement": {
-                "name": "왕십리 정착지",
-                "type": "정착지",
-                "description": "왕십리 일대 고정 거점"
-              },
-              "note": "S04 왕십리 일대 관할 영지"
+              "unspent": 5
             }
           }
         }
@@ -635,58 +535,23 @@
             "name": "서구서",
             "url": "/people/person-0555",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜·펌프 정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/390/items/1/ko",
-                  "quote": "생업: 차륜·펌프 정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/391/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 10
               }
             },
             "traits": [],
@@ -694,203 +559,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/391/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/390/items/1/ko",
-                    "quote": "생업: 차륜·펌프 정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/392/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/390/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 11,
               "Will": 12,
               "Per": 12,
-              "FP": 11,
               "BasicSpeed": 5.25,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 50,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 70,
-              "unspent": 5,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "왕십리",
-              "type": "초소 영지",
-              "station": "왕십리",
-              "state": "S04",
-              "settlement": {
-                "name": "왕십리 정착지",
-                "type": "정착지",
-                "description": "왕십리 일대 고정 거점"
-              },
-              "note": "S04 왕십리 일대 관할 영지"
+              "unspent": 5
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-43740-S04",
-      "name": {
-        "ko": "영동군 공작령 직영지"
-      },
-      "holderPersonId": "K555",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4374025000",
-          "name": "충청북도 영동군 영동읍"
-        },
-        {
-          "id": "4374031000",
-          "name": "충청북도 영동군 용산면"
-        },
-        {
-          "id": "4374032000",
-          "name": "충청북도 영동군 황간면"
-        },
-        {
-          "id": "4374033500",
-          "name": "충청북도 영동군 추풍령면"
-        },
-        {
-          "id": "4374034000",
-          "name": "충청북도 영동군 매곡면"
-        },
-        {
-          "id": "4374035000",
-          "name": "충청북도 영동군 상촌면"
-        },
-        {
-          "id": "4374036000",
-          "name": "충청북도 영동군 양강면"
-        },
-        {
-          "id": "4374037000",
-          "name": "충청북도 영동군 용화면"
-        },
-        {
-          "id": "4374038000",
-          "name": "충청북도 영동군 학산면"
-        },
-        {
-          "id": "4374039000",
-          "name": "충청북도 영동군 양산면"
-        },
-        {
-          "id": "4374040000",
-          "name": "충청북도 영동군 심천면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43740-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-43740-S04",
-      "name": "영동군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K555",
-      "basis": "개막 행정 규모 그룹 43740(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4374025000",
-        "4374031000",
-        "4374032000",
-        "4374033500",
-        "4374034000",
-        "4374035000",
-        "4374036000",
-        "4374037000",
-        "4374038000",
-        "4374039000",
-        "4374040000"
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-43740-S04",
+          "directLiegePersonId": "K423"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -904,18 +630,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "왕십리",
-    "type": "초소 영지",
-    "station": "왕십리",
-    "state": "S04",
-    "settlement": {
-      "name": "왕십리 정착지",
-      "type": "정착지",
-      "description": "왕십리 일대 고정 거점"
-    },
-    "note": "S04 왕십리 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -956,15 +670,15 @@
     "욕망": "갈망 −5 | 독점 10 | 위험 30 | 과시 −20 | 지속 25 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.",
-    "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 서구서는 신정 차량기지에서 자랐다. 서구서는 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 서구서의 부품 물류상 업무는 성수2가1동과 연결된다.",
+    "관직": "서구서는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
+    "일화": "2125년 서구서는 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
+    "관계": "서구서는 같은 생활권 선배 당직자와 인수인계로 묶인다.",
+    "야망": "서구서는 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
+    "공포": "서구서는 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
+    "개입": "서구서는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 −5 | 독점 10 | 위험 30 | 과시 −20 | 지속 25 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "서구서는 당직을 끊지 않는 쪽을 먼저 고른다. 서구서는 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 서구서는 신정 차량기지에서 자랐다. 서구서는 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 서구서의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 서구서는 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 서구서는 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 서구서는 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 서구서는 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 서구서는 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 서구서는 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −20 | 자격 25 | 분산 25 | 변혁 10\n- 욕망: 갈망 −5 | 독점 10 | 위험 30 | 과시 −20 | 지속 25 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

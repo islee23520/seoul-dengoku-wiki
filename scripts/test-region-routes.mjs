@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFile, readdir } from 'node:fs/promises'
 import { test } from 'vitest'
 import ts from 'typescript'
+import { projectGeographicTitles, resolveGeographicSelection } from '../src/components/geographicTitleMap.mjs'
 
 const source = await readFile(new URL('../src/wikiRouting.ts', import.meta.url), 'utf8')
 const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText
@@ -49,7 +50,29 @@ test('legacy region URL forms lead to the map with the requested dong selected',
   assert.match(app, /path="\/regions\/\*"/)
   assert.match(app, /path="\/world\/regions\/\*"/)
   assert.match(article, /resolveLegacyRegionRoute\(pathname\)/)
-  assert.match(mapComponent, /resolveRegionSelection\(data\.regions, requestedRegion\)/)
+  const tree = ts.createSourceFile('OpeningTerritoryMap.tsx', mapComponent, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
+  let queryEffect
+  const visit = node => {
+    if (ts.isCallExpression(node) && node.expression.getText(tree) === 'useEffect'
+      && node.arguments[1]?.getText(tree) === '[data, requestedRegion]') queryEffect = node.arguments[0]
+    ts.forEachChild(node, visit)
+  }
+  visit(tree)
+  assert.ok(queryEffect, 'the map query selection effect exists')
+  const staging = JSON.parse(await readFile(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)))
+  const boundaries = JSON.parse(await readFile(new URL('../data/geography/boundaries/seoul-sgis-20250630.geojson', import.meta.url)))
+  const geography = projectGeographicTitles(staging, boundaries, (x, y) => [x, y])
+  const callback = new Function('data', 'requestedRegion', 'resolveGeographicSelection', 'setTitleId', 'setRank', 'setDetailOpen', `return (${queryEffect.getText(tree)})()`)
+  const selected = []
+  const slot = geography.titles.find(title => title.rank === 'county').currentSlots[0]
+  for (const oldPath of [`/regions/${slot.dongId}`, `/world/regions/${encodeURIComponent(slot.name)}`]) {
+    const target = resolveLegacyRegionRoute(oldPath)
+    const requested = new URL(target, 'https://example.test').searchParams.get('region')
+    callback({ geography }, requested, resolveGeographicSelection, id => selected.push(id), () => {}, () => {})
+    assert.equal(selected.pop(), resolveGeographicSelection(geography, slot.dongId)?.id)
+  }
+  callback({ geography }, 'region:4113164000', resolveGeographicSelection, id => selected.push(id), () => {}, () => {})
+  assert.equal(selected.pop(), null)
   assert.match(nginx, /location \/regions\/ \{/)
   assert.match(nginx, /location \/world\/regions\/ \{/)
 })

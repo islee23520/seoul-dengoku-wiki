@@ -1,10 +1,10 @@
 {
   "id": "person-0056",
   "name": "기필호",
-  "title": "패권전 제작 병참",
-  "position": "제작 병참 · 청양군 영주",
+  "title": "제작 병참",
+  "position": "제작 병참",
   "characterId": "K056",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "대합실 당직",
   "gender": "남성",
@@ -559,52 +559,23 @@
             "name": "기필호",
             "url": "/people/person-0056",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/291/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/292/text/ko",
-                    "quote": "병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -612,89 +583,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/292/text/ko",
-                    "quote": "병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/291/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "부평",
-              "type": "초소 영지",
-              "station": "부평",
-              "state": "S02",
-              "settlement": {
-                "name": "부평 정착지",
-                "type": "정착지",
-                "description": "부평 일대 고정 거점"
-              },
-              "note": "S02 부평 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -718,52 +634,23 @@
             "name": "기필호",
             "url": "/people/person-0056",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/291/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/292/text/ko",
-                    "quote": "병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -771,182 +658,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/292/text/ko",
-                    "quote": "병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/293/text/ko",
-                    "quote": "기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/291/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "부평",
-              "type": "초소 영지",
-              "station": "부평",
-              "state": "S02",
-              "settlement": {
-                "name": "부평 정착지",
-                "type": "정착지",
-                "description": "부평 일대 고정 거점"
-              },
-              "note": "S02 부평 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-44790-S02",
-      "name": {
-        "ko": "청양군 공작령 직영지"
-      },
-      "holderPersonId": "K056",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4479025000",
-          "name": "충청남도 청양군 청양읍"
-        },
-        {
-          "id": "4479031000",
-          "name": "충청남도 청양군 운곡면"
-        },
-        {
-          "id": "4479032000",
-          "name": "충청남도 청양군 대치면"
-        },
-        {
-          "id": "4479033000",
-          "name": "충청남도 청양군 정산면"
-        },
-        {
-          "id": "4479034000",
-          "name": "충청남도 청양군 목면"
-        },
-        {
-          "id": "4479035000",
-          "name": "충청남도 청양군 청남면"
-        },
-        {
-          "id": "4479036000",
-          "name": "충청남도 청양군 장평면"
-        },
-        {
-          "id": "4479037000",
-          "name": "충청남도 청양군 남양면"
-        },
-        {
-          "id": "4479038000",
-          "name": "충청남도 청양군 화성면"
-        },
-        {
-          "id": "4479039000",
-          "name": "충청남도 청양군 비봉면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-44790-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-44790-S02",
-      "name": "청양군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K056",
-      "basis": "개막 행정 규모 그룹 44790(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4479025000",
-        "4479031000",
-        "4479032000",
-        "4479033000",
-        "4479034000",
-        "4479035000",
-        "4479036000",
-        "4479037000",
-        "4479038000",
-        "4479039000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-44790-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -960,18 +723,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "부평",
-    "type": "초소 영지",
-    "station": "부평",
-    "state": "S02",
-    "settlement": {
-      "name": "부평 정착지",
-      "type": "정착지",
-      "description": "부평 일대 고정 거점"
-    },
-    "note": "S02 부평 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1008,11 +759,12 @@
     "생업": "대합실 당직",
     "품계": "조합원",
     "직함": "제작 병참",
+    "업무 위치": "구로3동. 기필호는 구로3동 병참 칠판에 민가 전력과 숙련공 교대에 필요한 겨울 부품을 먼저 적는다. 최다인의 공병 작업반이 추첨 전에 출고를 요구하면 숙련점수 게시를 기다리고 기바름과 교환할 부품 칸을 따로 봉한다.",
     "가치관": "권위 −20 | 개방 15 | 무력 −10 | 물질 40 | 공동 50 | 원칙 10 | 공개 40 | 자격 50 | 분산 30 | 변혁 15",
     "욕망": "갈망 40 | 독점 10 | 위험 0 | 과시 −10 | 지속 −15 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 기필호는 구로3동 병참 칠판에 민가 전력과 숙련공 교대에 필요한 겨울 부품을 먼저 적는다. 최다인의 공병 작업반이 추첨 전에 출고를 요구하면 숙련점수 게시를 기다리고 기바름과 교환할 부품 칸을 따로 봉한다.",
     "관직": "품계 조합원. 직함은 제작 병참. 병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다.",
     "일화": "최다인의 공병 작업반이 길드 평의회 추첨보다 먼저 병참 출고를 요구한다. 기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다.",
     "관계": "최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.",
@@ -1020,7 +772,7 @@
     "공포": "병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.",
     "개입": "상호 수리권 물자를 채워 그의 봉인을 정당화하거나, 숨겨진 탄약칸을 폭로해 병참을 교체할 수 있다."
   },
-  "biography": "공구 상자 수보다 숙련공의 교대 시간을 먼저 세고, 통일안의 이름을 군량 딱지로 붙이는 사람을 경계한다. 실리를 말하되 민가 전력을 병참으로 빼지 않는다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 조합원\n- 직함: 제작 병참\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 제작 병참. 병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다.\n\n**일화.** 최다인의 공병 작업반이 길드 평의회 추첨보다 먼저 병참 출고를 요구한다. 기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다.\n\n**관계.** 최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.\n\n**야망.** 수리 규격 통일안이 무력 정복이 아니라 상호 수리권의 물자표로 남게 해, 작업반이 공병대로만 전환되지 않게 한다.\n\n**공포.** 병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.\n\n**개입.** 상호 수리권 물자를 채워 그의 봉인을 정당화하거나, 숨겨진 탄약칸을 폭로해 병참을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −10 | 물질 40 | 공동 50 | 원칙 10 | 공개 40 | 자격 50 | 분산 30 | 변혁 15\n- 욕망: 갈망 40 | 독점 10 | 위험 0 | 과시 −10 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "공구 상자 수보다 숙련공의 교대 시간을 먼저 세고, 통일안의 이름을 군량 딱지로 붙이는 사람을 경계한다. 실리를 말하되 민가 전력을 병참으로 빼지 않는다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 조합원\n- 직함: 제작 병참\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 제작 병참 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 기필호는 구로3동 병참 칠판에 민가 전력과 숙련공 교대에 필요한 겨울 부품을 먼저 적는다. 최다인의 공병 작업반이 추첨 전에 출고를 요구하면 숙련점수 게시를 기다리고 기바름과 교환할 부품 칸을 따로 봉한다.\n\n**관직.** 품계 조합원. 직함은 제작 병참. 병참 출고는 길드 평의회 추첨과 숙련 점수 공개 뒤에만 하고, 비밀 군수 칸은 발전 출력과 함께 잠근다.\n\n**일화.** 최다인의 공병 작업반이 길드 평의회 추첨보다 먼저 병참 출고를 요구한다. 기필호는 숙련 점수를 게시한 뒤에야 출고 순서를 정하고, 비밀 군수 칸은 발전 출력과 함께 잠가 둔 채 기바름과 바꿀 부품 칸을 물자표에 옮긴다.\n\n**관계.** 최다인의 공병 작업반과 출고 순서를 다투고, 강민서의 규격맹 통일안을 물자표로 옮기며, 서부 호송의 기바름과 부품 칸을 교환한다.\n\n**야망.** 수리 규격 통일안이 무력 정복이 아니라 상호 수리권의 물자표로 남게 해, 작업반이 공병대로만 전환되지 않게 한다.\n\n**공포.** 병참 열차가 차단문 전투조의 탄약칸으로 바뀌고, 규격맹이 부품 봉쇄의 다른 이름이 되는 것.\n\n**개입.** 상호 수리권 물자를 채워 그의 봉인을 정당화하거나, 숨겨진 탄약칸을 폭로해 병참을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −10 | 물질 40 | 공동 50 | 원칙 10 | 공개 40 | 자격 50 | 분산 30 | 변혁 15\n- 욕망: 갈망 40 | 독점 10 | 위험 0 | 과시 −10 | 지속 −15 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-02"
   ],

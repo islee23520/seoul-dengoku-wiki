@@ -1,10 +1,10 @@
 {
   "id": "person-0177",
   "name": "나탈리야 소콜로바",
-  "title": "환적창고 물류상",
-  "position": "연평·장봉·덕적 해상 영주",
+  "title": "",
+  "position": "",
   "characterId": "K176",
-  "rank": "해상 영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "창고 온도·재고 확인과 손실 장부 공개",
   "gender": "여성",
@@ -452,52 +452,23 @@
             "name": "나탈리야 소콜로바",
             "url": "/people/person-0177",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "창고 온도·재고 확인과 손실 장부 공개",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/94/items/2/ko",
-                  "quote": "생업: 창고 온도·재고 확인과 손실 장부 공개"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -505,84 +476,29 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/94/items/2/ko",
-                    "quote": "생업: 창고 온도·재고 확인과 손실 장부 공개"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "나탈리야 소콜로바 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 27
+            }
           }
         }
       },
@@ -605,52 +521,23 @@
             "name": "나탈리야 소콜로바",
             "url": "/people/person-0177",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "창고 온도·재고 확인과 손실 장부 공개",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/94/items/2/ko",
-                  "quote": "생업: 창고 온도·재고 확인과 손실 장부 공개"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -658,304 +545,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/94/items/2/ko",
-                    "quote": "생업: 창고 온도·재고 확인과 손실 장부 공개"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "나탈리야 소콜로바 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S07 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 27
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:sea-K176",
-      "name": {
-        "ko": "연평·장봉·덕적 해상 직영지"
-      },
-      "holderPersonId": "K176",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [],
-      "componentRefs": [
-        {
-          "unitId": "2872031000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 7
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 8
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 9
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 10
-        },
-        {
-          "unitId": "2872031000",
-          "componentIndex": 11
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 7
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 8
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 9
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 10
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 11
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 12
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 13
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 14
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 15
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 16
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 17
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 18
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 19
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 20
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 21
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 22
-        },
-        {
-          "unitId": "2872035000",
-          "componentIndex": 23
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 0
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 1
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 2
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 3
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 4
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 5
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 6
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 7
-        },
-        {
-          "unitId": "2872038000",
-          "componentIndex": 8
-        }
-      ],
-      "titleId": "title:barony-K176-sea",
-      "geometrySource": "lore/regions/outside-island-occupation.json",
-      "territorialScale": null,
-      "formalTitleRank": "barony"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:barony-K176-sea",
-      "name": "연평·장봉·덕적 해상 남작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K176",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [],
-      "basis": "owner:call_wFGQ0sW3jxjHivoeN4XA1oom:sea_vassal_named_appointments 승인 (분할 단위는 componentRef로만 수여)",
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:sea-K176",
+          "directLiegePersonId": "K144"
+        }
+      ],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -970,7 +605,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1015,22 +649,22 @@
   },
   "fields": {
     "소속": "환적국",
-    "품계": "주사",
+    "현재 관직": "미임명",
     "생업": "창고 온도·재고 확인과 손실 장부 공개",
-    "직함": "환적창고 물류상",
+    "역할": "환적창고 물류상",
     "가치관": "권위 15 | 개방 20 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −15 | 공개 −15 | 자격 20 | 분산 −10 | 변혁 0",
     "욕망": "갈망 40 | 독점 15 | 위험 20 | 과시 15 | 지속 5 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다. 나탈리야 소콜로바는 2066년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 환적창고 물류상 업무를 맡는다. 알렉세이 소콜로프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나탈리야 소콜로바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
-    "관직": "품계 주사. 직함은 환적창고 물류상. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.",
-    "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 환적창고 물류상 자리의 서명이 장부에 올랐다.",
+    "생애": "2066년생인 나탈리야 소콜로바는 2126년 개막기에는 환적창고 물류상으로 일한다. 노량진 선창에서 자랐다. 환적창고 물류상 업무는 저울 재점검 공개를 계기로 시작됐다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 알렉세이 소콜로프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나탈리야 소콜로바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 나탈리야 소콜로바의 창고 온도·재고 확인과 손실 장부 공개 업무는 한강로동과 연결된다.",
+    "생업": "환적창고 물류상 나탈리야 소콜로바는 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.",
+    "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 행동을 계기로 환적창고 물류상 자리의 서명이 장부에 올랐다.",
     "관계": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.",
     "야망": "냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 현장화한다.",
     "공포": "전력 없는 밤에 냉동 화물이 녹아 중계 신용이 하루 만에 무너지는 것.",
     "개입": "얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다."
   },
-  "biography": "빈 상자를 가득 찬 것처럼 적는 사람을 원수로 보고, 온도가 흔들리면 표정이 굳는다. 창고 열쇠는 몸에서 떼지 않는다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 창고 온도·재고 확인과 손실 장부 공개\n- 직함: 환적창고 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 환적창고 물류상 자리는 저울 재점검 공개로 열렸다. 나탈리야 소콜로바는 2066년에 태어났다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 노량진 선창에서 자랐다. 2126년에는 환적창고 물류상 업무를 맡는다. 알렉세이 소콜로프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나탈리야 소콜로바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 환적창고 물류상. 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 환적창고 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 현장화한다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 20 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −15 | 공개 −15 | 자격 20 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 20 | 과시 15 | 지속 5 | 지향 유동 | 결합 다자\n:::",
+  "biography": "빈 상자를 가득 찬 것처럼 적는 사람을 원수로 보고, 온도가 흔들리면 표정이 굳는다. 창고 열쇠는 몸에서 떼지 않는다.\n\n- 소속: 환적국\n- 현재 관직: 미임명\n- 생업: 창고 온도·재고 확인과 손실 장부 공개\n- 역할: 환적창고 물류상\n**생애.** 2066년생인 나탈리야 소콜로바는 2126년 개막기에는 환적창고 물류상으로 일한다. 노량진 선창에서 자랐다. 환적창고 물류상 업무는 저울 재점검 공개를 계기로 시작됐다. 러시아계 가계는 동대문·용산 민간 화물 생활권에 뿌리를 두고 있다. 알렉세이 소콜로프는 2030년 동대문·용산 민간 화물 생활권에서 동대문 화물 중개와 이태원 숙박 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 나탈리야 소콜로바의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 러시아어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 나탈리야 소콜로바의 창고 온도·재고 확인과 손실 장부 공개 업무는 한강로동과 연결된다.\n\n**생업.** 환적창고 물류상 나탈리야 소콜로바는 창고 온도를 두 시간에 한 번 소리 내어 읽고, 허위 재고가 나오면 해당 가문 칸을 봉쇄한다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 행동을 계기로 환적창고 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고, 서나연의 얼음 벽돌을 인계하며, 신태산의 호송 도착 시각을 맞춘다.\n\n**야망.** 냉동 화물과 폐전자 회수를 용산 창고 신용으로 묶어 오해린의 결제권과 별개인 환적 원장을 현장화한다.\n\n**공포.** 전력 없는 밤에 냉동 화물이 녹아 중계 신용이 하루 만에 무너지는 것.\n\n**개입.** 얼음과 축전지를 보급하거나, 녹은 재고를 숨긴 칸을 봉인해 공개할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 20 | 무력 −5 | 물질 45 | 공동 −15 | 원칙 −15 | 공개 −15 | 자격 20 | 분산 −10 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 20 | 과시 15 | 지속 5 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-07"
   ],

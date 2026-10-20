@@ -2,19 +2,28 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { regularLineGraph } from './regular-line-graph.mjs'
+import { outsideStationIds, STATION_BOUNDARY_PATH } from './station-catalog-geography.mjs'
 
 const station = (code) => ({ code, name: code })
 
 test('generated Seoul segments equal the complete mapped official adjacent pairs', async () => {
   const source = JSON.parse(await readFile(new URL('../lore/places/regular-line-adjacency.json', import.meta.url), 'utf8'))
   const map = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
+  const original = JSON.parse(await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url), 'utf8'))
+  const approvedNames = new Set(catalog.content.filter(block => block.kind === 'table').flatMap(block => block.rows.map(row => row[0].ko)))
+  const canonicalId = new Map(catalog.data.station_aliases.flatMap(entry => [entry.id, ...entry.aliases].map(id => [id, entry.id])))
+  const approvedIds = new Set(original.stations.filter(station => approvedNames.has(station.nameKo)).map(station => canonicalId.get(station.id) ?? station.id))
+  assert.deepEqual(new Set(map.stations.map(station => station.id)), approvedIds)
+  assert.equal(approvedIds.has('석수'), false)
+  assert.equal(approvedIds.has('광명사거리'), false)
   const expected = new Map()
   for (const line of source.lines) {
     const lineId = line.id === '1-GA-1' ? '1-GA' : line.id
     for (const path of line.paths) {
       for (let index = 1; index < path.length; index += 1) {
         const endpoints = [source.stationIdsByCode[path[index - 1].code], source.stationIdsByCode[path[index].code]]
-        if (endpoints.some((id) => !id) || endpoints[0] === endpoints[1]) continue
+        if (endpoints.some((id) => !approvedIds.has(id)) || endpoints[0] === endpoints[1]) continue
         const key = endpoints.sort().join('~')
         if (!expected.has(key)) expected.set(key, new Set())
         expected.get(key).add(lineId)
@@ -59,6 +68,17 @@ test('ordinary adjacency never skips an unmapped intermediate station', () => {
   assert.equal(result.omitted.length, 2)
 })
 
+test('explicit outside exclusions never connect Seoul endpoints across the removed intermediate', () => {
+  const source = { stationIdsByCode: { a: 'A', x: 'X', b: 'B' }, lines: [{ id: '9', paths: [[station('a'), station('x'), station('b')]] }] }
+  assert.throws(() => regularLineGraph(source, ['A', 'B']), /E_REGULAR_LINE_STATION:X:x/)
+  const result = regularLineGraph(source, ['A', 'B'], { excludedStationIds: ['X'] })
+  assert.deepEqual(result.edges, [])
+  assert.deepEqual(result.omitted.map(pair => pair.codes), [['a', 'x'], ['x', 'b']])
+  assert.deepEqual([...result.linesByStation.keys()], ['A', 'B'])
+  assert.throws(() => regularLineGraph(source, ['A', 'B'], { excludedStationIds: ['B', 'X'] }), /E_REGULAR_LINE_EXCLUSION:B/)
+  assert.throws(() => regularLineGraph(source, ['A'], { excludedStationIds: ['X'] }), /E_REGULAR_LINE_STATION:B:b/)
+})
+
 test('branch paths do not connect their endpoints and duplicate segments merge by line', () => {
   const source = { stationIdsByCode: { a: 'A', b: 'B', c: 'C', d: 'D' }, lines: [
     { id: '2', paths: [[station('a'), station('b')], [station('c'), station('d')]] },
@@ -80,4 +100,15 @@ test('exact station codes keep namesakes separate and unify confirmed interchang
   assert.deepEqual([...result.linesByStation.get('Sinchon-K')], ['K'])
   assert.deepEqual([...result.linesByStation.get('Transfer')], ['2', 'K'])
   assert.throws(() => regularLineGraph(source, ['Sinchon-2', 'Transfer']), /E_REGULAR_LINE_STATION/)
+})
+
+test('outside exclusions authenticate both archive and Seoul boundary rather than missing allowed membership', async () => {
+  const archiveBytes = await readFile(new URL('../snapshots/build-inputs/SeoulWorldGraph.json', import.meta.url))
+  const boundaryBytes = await readFile(new URL('../' + STATION_BOUNDARY_PATH, import.meta.url))
+  const catalog = JSON.parse(await readFile(new URL('../lore/places/Seoul-Station-Catalog.json', import.meta.url), 'utf8'))
+  const aliases = catalog.data.station_aliases
+  assert.deepEqual(outsideStationIds(archiveBytes, boundaryBytes, aliases).sort(), ['광명사거리', '석수'])
+  assert.throws(() => outsideStationIds(Buffer.concat([archiveBytes, Buffer.from(' ')]), boundaryBytes, aliases), /E_STATION_ARCHIVE_HASH/)
+  assert.throws(() => outsideStationIds(archiveBytes, Buffer.concat([boundaryBytes, Buffer.from(' ')]), aliases), /E_STATION_BOUNDARY/)
+  assert.throws(() => outsideStationIds(archiveBytes, boundaryBytes, [...aliases, { id: '석수', aliases: ['신촌'] }]), /E_STATION_ALIAS_BOUNDARY/)
 })

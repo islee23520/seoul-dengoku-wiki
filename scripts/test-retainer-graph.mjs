@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises'
 import { test } from 'vitest'
 import { retainerGraph } from '../src/generated/retainerGraph.ts'
 import { loadDataset, validate } from '../lore/relations/validate.mjs'
+import { loadApprovedRightsHistory } from './person-detail-inputs.mjs'
 
 const assertGraphCountries = (nodes, catalog, registry, values) => {
   const names = new Map(registry.persons.map((person) => [person.id, person.name]))
@@ -27,8 +28,17 @@ test('generated court graph resolves approved direct retainers to actual detail 
   const values = new Map(dataset.sources.values.people.map((person) => [person.name, person]))
   assertGraphCountries(retainerGraph.nodes, catalog, dataset.sources.registry, dataset.sources.values)
   const expectedIds = new Set(dataset.config.courts.map((court) => court.ownerPersonId))
-  const holdings = JSON.parse(await readFile(new URL('../lore/relations/personal-holdings.json', import.meta.url), 'utf8'))
-  for (const holding of holdings.holdings) expectedIds.add(holding.holderPersonId)
+  const { historical, transition } = await loadApprovedRightsHistory()
+  // Independently reconstruct current holders from authenticated approval records,
+  // including retained grants rather than only the base holdings ledger.
+  for (const set of ['holdings', 'grants']) {
+    const originals = set === 'holdings' ? historical.existing.holdings : historical.allocation.grants
+    for (const original of originals) {
+      const approval = transition.records.find(row => row.set === set && row.oldId === original.id)
+      assert.ok(approval, original.id)
+      if (approval.disposition !== 'retired-current') expectedIds.add((approval.current ?? original).holderPersonId)
+    }
+  }
   for (const edge of dataset.config.directRetainers) {
     expectedIds.add(edge.personId)
     expectedIds.add(edge.liegePersonId)

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
-import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
+import { loadPreservedPersonSheets, projectPreservedPersonSheet, projectPublicHistoricalRecord } from './preserved-person-sheet.mjs'
 import { selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
 import { projectedDraftLegacy } from '../src/pages/characterDraftExport.ts'
 
@@ -22,8 +22,8 @@ test('PR549 approved K719 rename preserves historical name and current portrait 
     assert.equal(original.name, '송라지')
     const selected = selectPreservedSheet(detail.personSheet, identity, version.revision)
     assert.equal(selected.ok, true)
-    assert.deepEqual(selected.record, original)
-    assert.deepEqual(projectedDraftLegacy(detail, version.revision).person, original)
+    assert.deepEqual(selected.record, projectPublicHistoricalRecord(original))
+    assert.deepEqual(projectedDraftLegacy(detail, version.revision).person, projectPublicHistoricalRecord(original))
     for (const name of ['송다현', '다른 인물']) {
       assert.throws(() => projectPreservedPersonSheet(versions, { ...identity, name }), /E_PERSON_SHEET_IDENTITY/)
       assert.equal(selectPreservedSheet(detail.personSheet, { ...identity, name }, version.revision).ok, false)

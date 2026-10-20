@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 import { test } from 'vitest'
 import { readRendered } from '../../scripts/lore-read-rendered.mjs'
 import { regularLineGraph } from '../../scripts/regular-line-graph.mjs'
+import { loadOutsideStationIds } from '../../scripts/station-catalog-geography.mjs'
 
 const places = import.meta.dirname
 const candidate = JSON.parse(readFileSync(resolve(places, 'Station-Alias-Candidates.json'), 'utf8'))
@@ -12,10 +13,11 @@ const interiors = JSON.parse(readFileSync(resolve(places, '../regions/station-in
 const projected = JSON.parse(readFileSync(resolve(places, '../../public/opening-territories.json'), 'utf8'))
 const catalog = readRendered(resolve(places, '..'), 'places', 'Seoul-Station-Catalog')
 const rows = [...catalog.matchAll(/^\| ([^|]+) \| [^|]* \| 37\.[^|]* \| 12[^|]* \|[^|]*\|$/gmu)].map((match) => match[1])
+const approvedNames = new Set(catalogData.content.filter(block => block.kind === 'table').flatMap(block => block.rows.map(row => row[0].ko)))
 
-test('the candidate classifies every same-base pair without altering the 334-row roster', () => {
+test('the candidate classifies every same-base pair while preserving the approved Seoul roster and archived observations', () => {
   assert.equal(candidate.status, 'approved-alias-only')
-  assert.equal(rows.length, 334)
+  assert.deepEqual(rows.slice().sort(), [...approvedNames].sort())
   assert.equal(interiors.stations.length, 334)
   const grouped = Map.groupBy(rows, (name) => name.replace(/\s*\(.*\)$/u, ''))
   const pairs = [...grouped.values()].filter((names) => names.length > 1)
@@ -104,11 +106,15 @@ test('four reviewed subtitle pairs preserve their observed platforms in one map 
   }
 })
 
-test('all approved subtitles project one node without losing observed lines or movement neighbors', () => {
+test('all approved subtitles project one node without losing observed lines or movement neighbors', async () => {
   const canonicalId = new Map(catalogData.data.station_aliases.flatMap((entry) => [entry.id, ...entry.aliases].map((id) => [id, entry.id])))
   const original = JSON.parse(readFileSync(resolve(places, '../../snapshots/build-inputs/SeoulWorldGraph.json'), 'utf8'))
   const physicalSource = JSON.parse(readFileSync(resolve(places, 'regular-line-adjacency.json'), 'utf8'))
-  const physical = regularLineGraph(physicalSource, original.stations.map((station) => canonicalId.get(station.id) ?? station.id))
+  const approvedStationIds = new Set(original.stations.filter(station => approvedNames.has(station.nameKo)).map(station => canonicalId.get(station.id) ?? station.id))
+  const excludedStationIds = await loadOutsideStationIds(resolve(places, '../..'), { stationAliases: catalogData.data.station_aliases })
+  assert.deepEqual(excludedStationIds.slice().sort(), ['광명사거리', '석수'])
+  const physical = regularLineGraph(physicalSource, approvedStationIds, { excludedStationIds })
+  assert.deepEqual(new Set(projected.stations.map(station => station.id)), approvedStationIds)
   const projectedEdges = new Set(projected.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
   for (const entry of catalogData.data.station_aliases) {
     assert.deepEqual(projected.stations.filter((station) => station.id === entry.id).map((station) => station.memberIds), [[entry.id, ...entry.aliases]])
@@ -121,7 +127,13 @@ test('all approved subtitles project one node without losing observed lines or m
   }
   const sourceEdges = new Set(physical.edges.flatMap((edge) => edge.lineIds.map((line) => `${[edge.a, edge.b].sort().join('|')}/${line}`)))
   assert.deepEqual(projectedEdges, sourceEdges)
-  assert.equal(physical.edges.length, 383)
+  const expectedPairs = new Set(physicalSource.lines.flatMap(line => line.paths.flatMap(path => path.slice(1).flatMap((station, index) => {
+    const a = physicalSource.stationIdsByCode[path[index].code]
+    const b = physicalSource.stationIdsByCode[station.code]
+    return approvedStationIds.has(a) && approvedStationIds.has(b) && a !== b ? [[a, b].sort().join('|')] : []
+  }))))
+  assert.deepEqual(new Set(physical.edges.map(edge => [edge.a, edge.b].sort().join('|'))), expectedPairs)
+  assert.equal(physical.edges.length, expectedPairs.size)
   assert.deepEqual(projected.stations.filter((station) => station.id.startsWith('신촌')).map((station) => station.id), ['신촌', '신촌(지하)'])
 })
 

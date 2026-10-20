@@ -98,10 +98,13 @@ test('standalone entities remain atomic full-token segments', () => {
 })
 
 test('actual scalar person entity keeps canonical base offsets and CommonMark replacement semantics', async () => {
- const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-11.json'),'utf8')),detail=JSON.parse(await readFile(resolve('public/person-details/person-0273.json'),'utf8')),original=detail.sections['생애'],source=envelope.content[28].items[3].ko
- envelope.content[28].items[3].ko=source.replace(original,'😀 &amp; B');detail.sections['생애']='😀 & B'
+ const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-11.json'),'utf8')),detail=JSON.parse(await readFile(resolve('public/person-details/person-0273.json'),'utf8'))
+ const index=envelope.content.findIndex(block=>block.anchor==='인물-송하율-list2'),item=envelope.content[index].items.findIndex(value=>typeof value.ko==='string'&&value.ko.includes('**생애.** ')),source=envelope.content[index].items[item].ko
+ const marker='**생애.** ',start=source.indexOf(marker)+marker.length,sourceBase=Array.from(source.slice(0,start)).length
+ assert.ok(start>=marker.length);assert.equal(source.slice(start),detail.sections['생애'].split('\n')[0])
+ envelope.content[index].items[item].ko=source.slice(0,start)+'😀 &amp; B';detail.sections['생애']='😀 & B'
  const record=personFeedbackRecord({envelope,personId:detail.id,route:detail.detailRoute,headingText:`인물 ${detail.name}`,locale:'ko',sections:detail.sections}),leaf=record.leaves.find((value)=>value.leafId==='section:생애:paragraph:0')
- assert.deepEqual(leaf.sourceSegments.map(({kind,start,end,textStart,textEnd})=>({kind,start,end,textStart,textEnd})),[{kind:'literal',start:26,end:28,textStart:0,textEnd:2},{kind:'entity',start:28,end:33,textStart:2,textEnd:3},{kind:'literal',start:33,end:35,textStart:3,textEnd:5}]);assert.equal(leaf.sourceSegments[1].sourceToken,'&amp;')
+ assert.deepEqual(leaf.sourceSegments.map(({path,kind,start,end,textStart,textEnd})=>({path,kind,start,end,textStart,textEnd})),[{kind:'literal',start:sourceBase,end:sourceBase+2,textStart:0,textEnd:2},{kind:'entity',start:sourceBase+2,end:sourceBase+7,textStart:2,textEnd:3},{kind:'literal',start:sourceBase+7,end:sourceBase+9,textStart:3,textEnd:5}].map(segment=>({path:`/content/${index}/items/${item}/ko`,...segment})));assert.equal(leaf.sourceSegments[1].sourceToken,'&amp;')
  const replacement={id:'DOC:replacement',domain:'root',locales:{ko:{title:'Replacement',summary:'',tense:'present'}},content:[{kind:'heading',anchor:'root',depth:1,text:{ko:'Replacement'}},{kind:'paragraph',anchor:'p',text:{ko:'&#128;'}}]},replacementLeaf=articleFeedbackRecord({envelope:replacement,route:'/world/replacement',locale:'ko'}).leaves[0];assert.equal(replacementLeaf.text,'�');assert.equal(replacementLeaf.sourceSegments[0].sourceToken,'&#128;')
 })
 
@@ -120,6 +123,52 @@ test('person authority uses the canonical source envelope and stable heading seg
   assert.ok(person.leaves.some((leaf) => leaf.blockAnchor === 'section:생애' && leaf.text === '같은 문장.'))
   assert.ok(person.leaves.some((leaf) => leaf.blockKind === 'person-biography-list-item'))
   assert.equal(person.leaves.filter((leaf) => leaf.text === '중복').length, 2)
+})
+
+test('plain training section retains exact source offsets', () => {
+ const envelope = { id: 'DOC:plain', content: [
+  { kind: 'heading', anchor: 'person', depth: 2, text: { ko: '인물 시험' } },
+  { kind: 'paragraph', anchor: 'training', text: { ko: '훈련. 유도.' } },
+ ] }
+ const record = personFeedbackRecord({ envelope, personId: 'person-plain', route: '/people/person-plain', headingAnchor: 'person', locale: 'ko', sections: { 훈련: '유도.' } })
+ const leaf = record.leaves.find(row => row.blockAnchor === 'section:훈련')
+ assert.equal(leaf.text, '유도.')
+ assert.equal(leaf.sourceSegments[0].start, 4)
+})
+
+test('person section spans adjacent rich-text runs with exact code-point provenance', () => {
+ const envelope={id:'DOC:runs',content:[
+  {kind:'heading',anchor:'person',depth:2,text:{ko:'인물 시험'}},
+  {kind:'paragraph',anchor:'office',text:{ko:[{text:'관직.',strong:true},{text:' 품계 없음. 😀'},{text:' 직함 없음. [연락](x)'}]}},
+  {kind:'paragraph',anchor:'anecdote',text:{ko:[{text:'일화.',strong:true},{text:' 다른 기록.'}]}},
+  {kind:'heading',anchor:'next',depth:2,text:{ko:'다음 인물'}},
+  {kind:'paragraph',anchor:'other',text:{ko:'관직. 품계 없음. 😀 직함 없음. 연락'}},
+ ]}
+ const options={envelope,personId:'person-runs',route:'/people/person-runs',headingAnchor:'person',locale:'ko'}
+ const section='품계 없음. 😀 직함 없음. 연락'
+ const office=personFeedbackRecord({...options,sections:{관직:section}}).leaves.find(leaf=>leaf.blockAnchor==='section:관직')
+ assert.equal(office.text,section)
+ assert.deepEqual(office.sourceSegments.map(({path,start,end,textStart,textEnd})=>({path,start,end,textStart,textEnd})),[
+  {path:'/content/1/text/ko/1/text',start:1,end:9,textStart:0,textEnd:8},
+  {path:'/content/1/text/ko/2/text',start:0,end:8,textStart:8,textEnd:16},
+  {path:'/content/1/text/ko/2/text',start:9,end:11,textStart:16,textEnd:18},
+ ])
+ for(const sections of [{관직:'품계 없음. 😀 직함 없음. 연락 변경'},{관직:'품계 없음. 😀 직함 없음. 연락 다른 기록.'},{관직:'다른 기록.'}])assert.throws(()=>personFeedbackRecord({...options,sections}),/E_PERSON_SECTION_SOURCE:person-runs:관직/)
+ const duplicate=structuredClone(envelope)
+ duplicate.content[1].text.ko.push({text:' 품계 없음. 😀 직함 없음. 연락'})
+ const selected=personFeedbackRecord({...options,envelope:duplicate,sections:{관직:section}}).leaves.find(leaf=>leaf.blockAnchor==='section:관직')
+ assert.deepEqual(selected.sourceSegments.map(span=>span.path),office.sourceSegments.map(span=>span.path))
+})
+
+test('actual Shin Jun office section preserves current canonical rich-text runs in source order', async () => {
+ const envelope=JSON.parse(await readFile(resolve('lore/characters/Core-Characters.json'),'utf8'))
+ const index=envelope.content.findIndex(block=>block.anchor==='신준-p3'),office=envelope.content[index].text.ko
+ const section=office.slice(1).map(run=>run.text).join('').trim()
+ const leaf=personFeedbackRecord({envelope,personId:'person-1010',route:'/people/person-1010',headingAnchor:'신준',locale:'ko',sections:{관직:section}}).leaves.find(value=>value.blockAnchor==='section:관직')
+ assert.equal(leaf.text,section)
+ let textStart=0
+ const expected=office.slice(1).map((run,offset)=>{const start=offset===0?Array.from(run.text).length-Array.from(run.text.trimStart()).length:0,end=Array.from(offset===office.length-2?run.text.trimEnd():run.text).length,segment={kind:'literal',path:`/content/${index}/text/ko/${offset+1}/text`,start,end,unit:'unicode-code-point',textStart,textEnd:textStart+end-start};textStart=segment.textEnd;return segment})
+ assert.deepEqual(leaf.sourceSegments,expected)
 })
 
 
@@ -174,24 +223,32 @@ test('actual person order, hidden-section filtering and duplicate source provena
  const detail=JSON.parse(await readFile(resolve('public/person-details/person-0002.json'),'utf8'))
  assert.deepEqual(sections,PERSON_SECTION_ORDER.filter((label)=>detail.sections[label]))
  const hidden=catalog.documents['PERSON:person-0998'],hiddenLeaves=hidden.revisions[hidden.currentRevision].leaves;assert.equal(hiddenLeaves.some((leaf)=>leaf.blockAnchor==='section:신념'),false)
- const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-01.json'),'utf8')),mutatedDetail=structuredClone(detail);envelope.content[6].text.ko[1].text=` ${detail.sections['생애']}`;mutatedDetail.sections['관직']=detail.sections['생애']
+ const envelope=JSON.parse(await readFile(resolve('lore/characters/Cast-State-01.json'),'utf8')),mutatedDetail=structuredClone(detail),listIndex=envelope.content.findIndex(block=>block.anchor==='인물-이서담-list2'),officeIndex=envelope.content.findIndex(block=>block.anchor==='인물-이서담-p3'),lifeItem=envelope.content[listIndex].items.findIndex(item=>Array.isArray(item.ko)&&item.ko.some(run=>run.strong&&run.text==='생애.')),lifeRun=envelope.content[listIndex].items[lifeItem].ko.findIndex(run=>run.strong&&run.text==='생애.')+1,lifeText=envelope.content[listIndex].items[lifeItem].ko[lifeRun].text.trim()
+ assert.equal(lifeText,detail.sections['생애'].split('\n')[0]);envelope.content[officeIndex].text.ko[1].text=` ${lifeText}`;mutatedDetail.sections['관직']=lifeText
  const duplicate=personFeedbackRecord({envelope,personId:detail.id,route:detail.detailRoute,headingText:`인물 ${detail.name}`,locale:'ko',sections:mutatedDetail.sections}),life=duplicate.leaves.find((leaf)=>leaf.leafId==='section:생애:paragraph:0'),office=duplicate.leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')
- assert.equal(life.sourceSegments[0].path,'/content/5/items/3/ko/2/text');assert.equal(office.sourceSegments[0].path,'/content/6/text/ko/1/text')
+ assert.equal(life.text,office.text);assert.equal(life.sourceSegments[0].path,`/content/${listIndex}/items/${lifeItem}/ko/${lifeRun}/text`);assert.equal(office.sourceSegments[0].path,`/content/${officeIndex}/text/ko/1/text`)
 })
 
 test('actual reader-order multi-section selection passes df9 and reverse order fails', async (t) => {
  const catalogPath=resolve('src/generated-private/feedback-selectable-views.ko.json'),catalog=JSON.parse(await readFile(catalogPath,'utf8')),document=catalog.documents['PERSON:person-0002'],leaves=document.revisions[document.currentRevision].leaves
  const make=(leaf)=>({blockAnchor:leaf.blockAnchor,blockKind:leaf.blockKind,leafId:leaf.leafId,exactQuote:leaf.text,prefix:'',suffix:'',range:{start:0,end:Array.from(leaf.text).length,unit:'unicode-code-point'},sourceSpans:leaf.sourceSegments.map(({path,start,end,unit})=>({path,start,end,unit}))})
  const office=make(leaves.find((leaf)=>leaf.leafId==='section:관직:paragraph:0')),anecdote=make(leaves.find((leaf)=>leaf.leafId==='section:일화:paragraph:0')),base={schemaVersion:'feedback-anchor.v1',documentId:document.documentId,route:document.route,locale:'ko',sourceRevision:document.currentRevision}
- const root=await mkdtemp(join(tmpdir(),'feedback-person-order-'));t.onTestFinished(()=>rm(root,{recursive:true,force:true}));const service=process.env.FEEDBACK_SERVICE_ROOT??'/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-service-u3/TOOL/feedback-service',child=spawn(process.execPath,[resolve(service,'src/server.mjs')],{env:{...process.env,NODE_ENV:'test',FEEDBACK_AUTH_PROVIDER:'test',FEEDBACK_DB_PATH:join(root,'feedback.sqlite'),FEEDBACK_REDACTION_JOURNAL_PATH:join(root,'authority/redactions.jsonl'),FEEDBACK_SELECTABLE_VIEW_PATH:catalogPath,FEEDBACK_SESSION_SECRET:'o'.repeat(48),FEEDBACK_REVIEWER_IDS:'900',FEEDBACK_PORT:'0'},stdio:['ignore','pipe','pipe']});t.onTestFinished(()=>{if(child.exitCode===null)child.kill('SIGTERM')});const ready=await waitLine(child.stdout,'FEEDBACK_READY '),url=ready.slice(15).replace('/api/feedback/health',''),auth=await fetch(`${url}/api/feedback/auth/test-session`,{method:'POST',headers:{'x-test-github-id':'100','x-test-login':'order'}}),authBody=await auth.json(),cookie=auth.headers.get('set-cookie').split(';')[0];const submit=(selections,key)=>fetch(`${url}/api/feedback/submissions`,{method:'POST',headers:{cookie,'x-csrf-token':authBody.csrfToken,'idempotency-key':key,'content-type':'application/json'},body:JSON.stringify({anchor:{...base,selections},body:'person order',reason:'기타'})});assert.equal((await submit([office,anecdote],'reader-order')).status,201);assert.equal((await submit([anecdote,office],'reverse-order')).status,422)
+ const root=await mkdtemp(join(tmpdir(),'feedback-person-order-'));t.onTestFinished(()=>rm(root,{recursive:true,force:true}));const service=process.env.FEEDBACK_SERVICE_ROOT??'/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-service-u3/TOOL/feedback-service';const ready=await startService(service,{NODE_ENV:'test',FEEDBACK_AUTH_PROVIDER:'test',FEEDBACK_DB_PATH:join(root,'feedback.sqlite'),FEEDBACK_REDACTION_JOURNAL_PATH:join(root,'authority/redactions.jsonl'),FEEDBACK_SELECTABLE_VIEW_PATH:catalogPath,FEEDBACK_SESSION_SECRET:'o'.repeat(48),FEEDBACK_REVIEWER_IDS:'900',FEEDBACK_PORT:'0'},t),url=ready.slice(15).replace('/api/feedback/health',''),auth=await fetch(`${url}/api/feedback/auth/test-session`,{method:'POST',headers:{'x-test-github-id':'100','x-test-login':'order'}}),authBody=await auth.json(),cookie=auth.headers.get('set-cookie').split(';')[0];const submit=(selections,key)=>fetch(`${url}/api/feedback/submissions`,{method:'POST',headers:{cookie,'x-csrf-token':authBody.csrfToken,'idempotency-key':key,'content-type':'application/json'},body:JSON.stringify({anchor:{...base,selections},body:'person order',reason:'기타'})});assert.equal((await submit([office,anecdote],'reader-order')).status,201);assert.equal((await submit([anecdote,office],'reverse-order')).status,422)
 })
 
-const waitLine = (stream, prefix) => new Promise((resolve, reject) => {
-  let text = ''
-  const onData = (chunk) => { text += chunk; const line = text.split('\n').find((candidate) => candidate.startsWith(prefix)); if (line) { cleanup(); resolve(line) } }
-  const onEnd = () => { cleanup(); reject(new Error(`missing ${prefix}: ${text}`)) }
-  const cleanup = () => { stream.off('data', onData); stream.off('end', onEnd) }
-  stream.on('data', onData); stream.on('end', onEnd)
+const startService = (service, env, t) => new Promise((resolveReady, reject) => {
+  let text = '', stderr = '', child
+  const cleanup = () => { clearTimeout(timeout); child.stdout.off('data', onData); child.stderr.off('data', onStderr); child.off('error', onError); child.off('close', onClose) }
+  const fail = (message) => { cleanup(); reject(new Error(`${message}\nstdout: ${text}\nstderr: ${stderr}`)) }
+  const onData = (chunk) => { text += chunk; const line = text.split('\n').find((candidate) => candidate.startsWith('FEEDBACK_READY ')); if (line) { cleanup(); resolveReady(line) } }
+  const onStderr = (chunk) => { stderr += chunk }
+  const onError = (error) => fail(`feedback service startup error: ${error.message}`)
+  const onClose = (code, signal) => fail(`feedback service exited before readiness: code=${code} signal=${signal}`)
+  const timeout = setTimeout(() => fail('feedback service readiness timed out'), 10000)
+  child = spawn(process.execPath, ['--input-type=module', '-e', "process.stdin.once('end', () => import(process.argv[1])); process.stdin.resume()", resolve(service, 'src/server.mjs')], { env: { ...process.env, ...env }, stdio: ['pipe', 'pipe', 'pipe'] })
+  child.stdout.on('data', onData); child.stderr.on('data', onStderr); child.once('error', onError); child.once('close', onClose)
+  t.onTestFinished(() => { if (child.exitCode === null) child.kill('SIGTERM') })
+  child.stdin.end()
 })
 
 test('actual generated private catalog validates through the confirmed U3 HTTP process', async (t) => {
@@ -208,9 +265,7 @@ test('actual generated private catalog validates through the confirmed U3 HTTP p
   const root = await mkdtemp(join(tmpdir(), 'feedback-catalog-http-'))
   t.onTestFinished(() => rm(root, { recursive: true, force: true }))
   const service = process.env.FEEDBACK_SERVICE_ROOT ?? '/Volumes/gameWorkspace/worktrees/seoul-kenshi/wiki-reader-quality-feedback-service-u3/TOOL/feedback-service'
-  const child = spawn(process.execPath, [resolve(service, 'src/server.mjs')], { env: { ...process.env, NODE_ENV: 'test', FEEDBACK_AUTH_PROVIDER: 'test', FEEDBACK_DB_PATH: join(root, 'feedback.sqlite'), FEEDBACK_REDACTION_JOURNAL_PATH: join(root, 'authority/redactions.jsonl'), FEEDBACK_SELECTABLE_VIEW_PATH: catalogPath, FEEDBACK_SESSION_SECRET: 'c'.repeat(48), FEEDBACK_REVIEWER_IDS: '900', FEEDBACK_PORT: '0' }, stdio: ['ignore', 'pipe', 'pipe'] })
-  t.onTestFinished(() => { if (child.exitCode === null) child.kill('SIGTERM') })
-  const ready = await waitLine(child.stdout, 'FEEDBACK_READY ')
+  const ready = await startService(service, { NODE_ENV: 'test', FEEDBACK_AUTH_PROVIDER: 'test', FEEDBACK_DB_PATH: join(root, 'feedback.sqlite'), FEEDBACK_REDACTION_JOURNAL_PATH: join(root, 'authority/redactions.jsonl'), FEEDBACK_SELECTABLE_VIEW_PATH: catalogPath, FEEDBACK_SESSION_SECRET: 'c'.repeat(48), FEEDBACK_REVIEWER_IDS: '900', FEEDBACK_PORT: '0' }, t)
   const base = ready.slice('FEEDBACK_READY '.length).replace('/api/feedback/health', '')
   const authResponse = await fetch(`${base}/api/feedback/auth/test-session`, { method: 'POST', headers: { 'x-test-github-id': '100', 'x-test-login': 'catalog-test' } })
   const authBody = await authResponse.json(); const cookie = authResponse.headers.get('set-cookie').split(';')[0]

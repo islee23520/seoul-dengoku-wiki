@@ -1149,7 +1149,6 @@
         "inference",
         "original_fiction",
         "states",
-        "japan_bridge_removable",
         "routes",
         "scenario_chains",
         "prose",
@@ -1206,8 +1205,22 @@
             "$ref": "#/$defs/stateId"
           }
         },
+        "record_status": {
+          "const": "historical-provenance"
+        },
+        "current_operational_claim": {
+          "const": false
+        },
+        "projection_display_name": {
+          "$ref": "#/$defs/localized"
+        },
+        "historical_display_name": {
+          "$ref": "#/$defs/localized"
+        },
         "japan_bridge_removable": {
-          "type": "boolean"
+          "type": "boolean",
+          "deprecated": true,
+          "description": "Historical import metadata only; it is not a current-world schema obligation."
         },
         "routes": {
           "$ref": "#/$defs/routes"
@@ -1281,6 +1294,8 @@
         "kind": {
           "enum": [
             "custodian",
+            "historical_custodian",
+            "record_handover_contact",
             "steward_house",
             "work_peer"
           ]
@@ -1943,6 +1958,7 @@
             "operates_in",
             "pressures",
             "custodied_by",
+            "historically_custodied_by",
             "supply-rivalry",
             "supply-partner",
             "platform-rivalry",
@@ -1960,6 +1976,22 @@
         },
         "to_label": {
           "$ref": "#/$defs/localized"
+        },
+        "endpoint_display": {
+          "type": "object",
+          "required": [
+            "from",
+            "to"
+          ],
+          "properties": {
+            "from": {
+              "$ref": "#/$defs/localized"
+            },
+            "to": {
+              "$ref": "#/$defs/localized"
+            }
+          },
+          "additionalProperties": false
         },
         "reason": {
           "$ref": "#/$defs/localized"
@@ -2050,7 +2082,6 @@
         "humans",
         "additional_people",
         "houses",
-        "theaters",
         "synthetics",
         "hostile_groups",
         "monster_batches",
@@ -2107,6 +2138,7 @@
         },
         "theaters": {
           "type": "array",
+          "description": "Optional historical-provenance registry. Entries cannot assert a current operational theater outside Seoul.",
           "items": {
             "$ref": "#/$defs/theater"
           }

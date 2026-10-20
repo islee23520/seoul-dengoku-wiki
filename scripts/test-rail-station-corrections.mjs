@@ -4,18 +4,24 @@ import { test } from 'vitest'
 import { correctedRailStations } from '../src/components/railStationCorrections.ts'
 
 test('every sourced regional interchange has one marker and retains its exact official line set', async () => {
-  const rail = JSON.parse(await readFile(new URL('../public/regional-rail.json', import.meta.url), 'utf8'))
   const source = JSON.parse(await readFile(new URL('../lore/places/rail-station-identities.json', import.meta.url), 'utf8'))
-  const result = correctedRailStations(rail.stations)
+  const corrections = JSON.parse(await readFile(new URL('../lore/places/rail-station-corrections.json', import.meta.url), 'utf8'))
+  // Exercise every approved observed member, not the retired, already-corrected
+  // public rail output. Empty incoming memberships must be replaced by identity.
+  const stations = source.groups.flatMap(identity => identity.members.map(member => ({ name: identity.name, ...member, lineIds: [] })))
+  stations.push(...corrections.corrections.map(({ name, east, north, lineIds }) => ({ name, east, north, lineIds: [...lineIds] })))
+  const original = structuredClone(stations)
+  const result = correctedRailStations(stations)
   for (const identity of source.groups) {
     const matches = result.filter((station) => station.name === identity.name && identity.members.some((member) => member.east === station.east && member.north === station.north))
     assert.equal(matches.length, 1, identity.name)
     assert.deepEqual(new Set(matches[0].lineIds), new Set(identity.lineIds), identity.name)
   }
-  for (const station of rail.stations) {
+  for (const station of stations) {
     const member = source.groups.some((identity) => identity.name === station.name && identity.members.some((point) => point.east === station.east && point.north === station.north))
     if (!member) assert.ok(result.some((entry) => entry.name === station.name && entry.east === station.east && entry.north === station.north), station.name)
   }
+  assert.deepEqual(stations, original)
 })
 
 test('rail correction removes namesake line only from its exact observed point', () => {

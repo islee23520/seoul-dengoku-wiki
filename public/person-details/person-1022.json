@@ -4,7 +4,7 @@
   "title": "환적·인계 상단주",
   "position": "환적·인계 상단주",
   "characterId": "K1022",
-  "rank": "해당 없음 — 국가 관직을 맡지 않는다.",
+  "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 물류상 / 부 기록관",
   "gender": "남성",
@@ -19,7 +19,7 @@
   "ageAsOf": "2126-12-31",
   "sourceStatus": "owner-authored",
   "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/40"
+    "lore/characters/Cast-Unaffiliated.json#/content/62"
   ],
   "familyTree": {
     "personId": "K1022",
@@ -76,7 +76,7 @@
         "timeline": [
           {
             "year": 2088,
-            "summary": "문현경은 용산 생활권에 업무 거점을 둔다에서 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
+            "summary": "문현경은 오래된 물건이 자주 고장 나자 버릴 것과 고칠 것을 가려 자녀와 함께 살림 도구를 수선한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-Unaffiliated.json",
@@ -144,7 +144,7 @@
         "timeline": [
           {
             "year": 2088,
-            "summary": "최서완은 용산 생활권에 업무 거점을 둔다에서 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
+            "summary": "최서완은 물자를 옮기다 분실을 겪자 짐을 묶기 전에 목록을 읽고 가족이 각자 맡은 것을 확인한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-Unaffiliated.json",
@@ -347,8 +347,8 @@
       }
     ],
     "narrative": {
-      "ko": "입고 화물을 대조·분류해 임시 보관하고 다음 운송 구간에 넘긴다. 용산 계약을 놓친 뒤 후속 물량을 찾으며 지연희의 연락으로 인계 공백을 확인한다. 임차 공간의 운영은 국가 배차권이나 토지 소유와 다르다.",
-      "en": "He compares, sorts, and temporarily stores incoming cargo before handing it to the next transport segment. After losing a Yongsan contract, he seeks follow-up cargo and uses Ji Yeonhee’s contacts to identify handoff gaps. Operating rented space is distinct from state scheduling authority or land ownership."
+      "ko": "용산역 대합실에서 입고 화물을 대조·분류해 예약 화물 창고에 임시 보관하고, 대합실이 열리는 야간에 서울 안의 다음 운송 구간에 넘긴다. 용산 계약을 놓친 뒤 후속 물량을 찾으며 지연희의 연락으로 인계 공백을 확인한다. 임차 공간의 운영은 국가 배차권이나 토지 소유와 다르다.",
+      "en": "He compares and sorts incoming cargo in the Yongsan Station concourse, temporarily stores it in reserved-cargo storage, and hands it to the next transport segment within Seoul at night when the concourse is open. After losing a Yongsan contract, he seeks follow-up cargo and uses Ji Yeonhee’s contacts to identify handoff gaps. Operating rented space is distinct from state scheduling authority or land ownership."
     },
     "health": {
       "status": "unassessed",
@@ -410,41 +410,23 @@
             "name": "문도현",
             "url": "/people/person-1022",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "주 물류상 / 부 기록관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-Unaffiliated.json",
-                  "pointer": "/content/40/items/5/ko",
-                  "quote": "생업: 주 물류상 / 부 기록관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -452,58 +434,35 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/40/items/5/ko",
-                    "quote": "생업: 주 물류상 / 부 기록관"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/40/items/5/ko",
-                    "quote": "생업: 주 물류상 / 부 기록관"
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false
+              "unspent": 63
+            }
           }
         }
       },
@@ -526,41 +485,23 @@
             "name": "문도현",
             "url": "/people/person-1022",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "주 물류상 / 부 기록관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-Unaffiliated.json",
-                  "pointer": "/content/40/items/5/ko",
-                  "quote": "생업: 주 물류상 / 부 기록관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -568,58 +509,35 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/40/items/5/ko",
-                    "quote": "생업: 주 물류상 / 부 기록관"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/40/items/5/ko",
-                    "quote": "생업: 주 물류상 / 부 기록관"
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false
+              "unspent": 63
+            }
           }
         }
       }
@@ -655,25 +573,27 @@
   "fields": {
     "성명": "문도현 (Mun Dohyeon)",
     "캐릭터 ID": "K1022",
-    "출신 공동체": "용산 생활권에 업무 거점을 둔다. 출생지·성장지는 미정이다.",
-    "세대와 출생": "개막 세대. 출생연은 미정이다.",
+    "출신 공동체": "한강로동의 용산역에 업무 거점을 두고, 한강로동의 임차 거처에서 산다. 출생지·성장지는 미정이다.",
+    "생년월일": "2080-12-20",
     "언어": "미정",
     "생업": "주 물류상 / 부 기록관",
     "소속": "환적국(S07). 독립 상단",
-    "품계": "해당 없음 — 국가 관직을 맡지 않는다.",
-    "직위": "환적·인계 상단주",
+    "봉건 품계": "없음. 대한민국 정부가 수여한 관직도 없다.",
+    "민간·공동체 직무": "환적·인계 상단주 대한민국 정부 관직이나 봉건 품계가 아니다.",
     "징집 이력": "미정",
     "무장 접근": "미정",
     "성격": "거래 구조를 이해하는 실무형이며 독립성을 중시한다.",
     "개인 야망": "자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다.",
     "공포": "미정",
-    "통치 방식": "입고 화물을 대조·분류하고 임시 보관한 뒤 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용한다.",
+    "통치 방식": "용산역 대합실에서 입고 화물을 대조·분류하고 예약 화물 창고에 임시 보관한 뒤 서울 안의 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용하며, 대합실이 열리는 야간에 인계한다.",
     "관계": "화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다.",
     "촉발 사건": "2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다.",
-    "플레이어 개입": "다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다."
+    "플레이어 개입": "다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다.",
+    "거주지": "한강로동 임차 거처",
+    "업무 위치": "용산역 대합실과 예약 화물 창고의 계약 사용"
   },
   "sections": {},
-  "biography": "- 성명: 문도현 (Mun Dohyeon)\n- 캐릭터 ID: K1022\n- 출신 공동체: 용산 생활권에 업무 거점을 둔다. 출생지·성장지는 미정이다.\n- 세대와 출생: 개막 세대. 출생연은 미정이다.\n- 언어: 미정\n- 생업: 주 물류상 / 부 기록관\n- 소속: 환적국(S07). 독립 상단\n- 품계: 해당 없음 — 국가 관직을 맡지 않는다.\n- 직위: 환적·인계 상단주\n- 징집 이력: 미정\n- 무장 접근: 미정\n- 성격: 거래 구조를 이해하는 실무형이며 독립성을 중시한다.\n- 개인 야망: 자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다.\n- 공포: 미정\n- 통치 방식: 입고 화물을 대조·분류하고 임시 보관한 뒤 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용한다.\n- 관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다.\n- 촉발 사건: 2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다.\n- 플레이어 개입: 다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다.\n\n<a id=\"연계-의뢰-지연희-도입\"></a>",
+  "biography": "- 성명: 문도현 (Mun Dohyeon)\n- 캐릭터 ID: K1022\n- 출신 공동체: 한강로동의 용산역에 업무 거점을 두고, 한강로동의 임차 거처에서 산다. 출생지·성장지는 미정이다.\n- 생년월일: 2080-12-20\n- 언어: 미정\n- 생업: 주 물류상 / 부 기록관\n- 소속: 환적국(S07). 독립 상단\n- 봉건 품계: 없음. 대한민국 정부가 수여한 관직도 없다.\n- 민간·공동체 직무: 환적·인계 상단주 대한민국 정부 관직이나 봉건 품계가 아니다.\n- 징집 이력: 미정\n- 무장 접근: 미정\n- 성격: 거래 구조를 이해하는 실무형이며 독립성을 중시한다.\n- 개인 야망: 자기 통제 아래의 거래 기반을 마련하고 인력에게 안정적인 일을 제공하며 약속한 운송을 이행하려 한다.\n- 공포: 미정\n- 통치 방식: 용산역 대합실에서 입고 화물을 대조·분류하고 예약 화물 창고에 임시 보관한 뒤 서울 안의 다음 운송 구간에 인계한다. 공간은 임차하거나 계약에 따라 사용하며, 대합실이 열리는 야간에 인계한다.\n- 관계: 화주들과 다음 운송 구간의 거래 상대를 연결한다. 문도현은 분류해 임시 보관한 화물의 다음 인계 상대와 전달 내용을 지연희에게 맡긴다. 지연희는 독립 전령으로 인수·전달 소식을 이어 문도현이 약속한 운송의 연락 공백을 확인하게 한다.\n- 촉발 사건: 2125년 3월 용산 계약을 놓친 뒤 후속 운송 기회를 찾으며 조사를 의뢰한다.\n- 플레이어 개입: 다른 상인의 물량을 모아 새 운송 계약을 연결할 수 있다.\n- 거주지: 한강로동 임차 거처\n- 업무 위치: 용산역 대합실과 예약 화물 창고의 계약 사용\n\n<a id=\"연계-의뢰-지연희-도입\"></a>",
   "sources": [
     "Cast-Unaffiliated"
   ],

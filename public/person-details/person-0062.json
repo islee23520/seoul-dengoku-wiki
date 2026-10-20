@@ -560,52 +560,23 @@
             "name": "유민호",
             "url": "/people/person-0062",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유치선 배차",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 유치선 배차"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,111 +584,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 유치선 배차"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/16/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "유민호 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       },
@@ -740,52 +641,23 @@
             "name": "유민호",
             "url": "/people/person-0062",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유치선 배차",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 유치선 배차"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -793,111 +665,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 유치선 배차"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/16/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "유민호 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S03 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       }
@@ -918,7 +720,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -970,19 +771,20 @@
     "생업": "유치선 배차",
     "품계": "부장",
     "직함": "방화기지 유치·배차장",
+    "업무": "방화3동. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.",
     "가치관": "권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15",
     "욕망": "갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치·배차장 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.\n- 업무: 방화3동. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.",
     "관직": "품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.",
-    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 방화기지 유치·배차장 자리의 서명이 장부에 올랐다.",
-    "관계": "최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 중계 창구와 외곽 열차를 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.",
-    "야망": "서부 외곽 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.",
+    "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다.",
+    "관계": "최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 서울 중계 창구와 배차 시간을 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.",
+    "야망": "서울 서부 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.",
     "공포": "항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.",
     "개입": "위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다."
   },
-  "biography": "과묵하고 선로 진동으로 열차의 거짓을 읽는다. 연구 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 배차\n- 품계: 부장\n- 직함: 방화기지 유치·배차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 방화기지 유치·배차장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 방화기지 유치·배차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 중계 창구와 외곽 열차를 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.\n\n**야망.** 서부 외곽 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.\n\n**공포.** 항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.\n\n**개입.** 위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "과묵하고 선로 진동으로 열차의 거짓을 읽는다. 연구 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다.\n\n- 소속: 태욱그룹\n- 생업: 유치선 배차\n- 품계: 부장\n- 직함: 방화기지 유치·배차장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.\n- 업무: 방화3동. 유민호는 방화기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.\n\n**관직.** 품계 부장. 직함은 방화기지 유치·배차장. 연구·방재·주민 화물의 순서를 매일 공개하고, 무기 의심 화차는 인증 도장과 심사 봉인이 둘 다 없으면 출고하지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다.\n\n**관계.** 최은재의 인증 도장에 배차를 묶는 계약이고, 박태겸의 서울 중계 창구와 배차 시간을 나누며, 김도하의 민가 배급 화차를 우선하라는 압력과 경쟁한다.\n\n**야망.** 서울 서부 교통과 방화 유치선을 기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.\n\n**공포.** 항공 접근의 기억만 남은 활주로 터가 군사 집결지가 되어 기지가 보호권의 발판으로 팔리는 것.\n\n**개입.** 위장 화차의 실화주를 밝히거나, 중립 배차망 조항에 서명할 증인을 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 25 | 무력 −35 | 물질 20 | 공동 5 | 원칙 45 | 공개 30 | 자격 30 | 분산 10 | 변혁 15\n- 욕망: 갈망 0 | 독점 −40 | 위험 5 | 과시 5 | 지속 −15 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

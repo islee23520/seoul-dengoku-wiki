@@ -1,7 +1,7 @@
 {
   "id": "person-0286",
   "name": "두국",
-  "title": "북문 호송 거점장",
+  "title": "강남역 북문 호송 거점장 · 노원구 영주",
   "position": "강남역 북문 호송 거점장 · 노원구 영주",
   "characterId": "K285",
   "rank": "영주",
@@ -444,47 +444,23 @@
             "name": "두국",
             "url": "/people/person-0286",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "북문 호송 인원·차륜 점검표 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/171/items/0/ko",
-                  "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,105 +468,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/171/items/0/ko",
-                    "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/171/items/0/ko",
-                    "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/171/items/0/ko",
-                    "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "잠실나루",
-              "type": "초소 영지",
-              "station": "잠실나루",
-              "state": "S11",
-              "settlement": {
-                "name": "잠실나루 정착지",
-                "type": "정착지",
-                "description": "잠실나루 일대 고정 거점"
-              },
-              "note": "S11 잠실나루 일대 관할 영지"
+              "unspent": 31
             }
           }
         }
@@ -614,47 +525,23 @@
             "name": "두국",
             "url": "/people/person-0286",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "북문 호송 인원·차륜 점검표 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/171/items/0/ko",
-                  "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -662,105 +549,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/171/items/0/ko",
-                    "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/171/items/0/ko",
-                    "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/171/items/0/ko",
-                    "quote": "생업: 북문 호송 인원·차륜 점검표 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "잠실나루",
-              "type": "초소 영지",
-              "station": "잠실나루",
-              "state": "S11",
-              "settlement": {
-                "name": "잠실나루 정착지",
-                "type": "정착지",
-                "description": "잠실나루 일대 고정 거점"
-              },
-              "note": "S11 잠실나루 일대 관할 영지"
+              "unspent": 31
             }
           }
         }
@@ -913,18 +735,6 @@
       "factor": 1.2
     }
   },
-  "territory": {
-    "fief_name": "잠실나루",
-    "type": "초소 영지",
-    "station": "잠실나루",
-    "state": "S11",
-    "settlement": {
-      "name": "잠실나루 정착지",
-      "type": "정착지",
-      "description": "잠실나루 일대 고정 거점"
-    },
-    "note": "S11 잠실나루 일대 관할 영지"
-  },
   "wandering_force": null,
   "clan": {
     "id": "b450-b450-b989",
@@ -964,15 +774,15 @@
     "욕망": "갈망 0 | 독점 25 | 위험 −10 | 과시 5 | 지속 −15 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.\n- 두국은 서초4동에서 북문 호송 인원·차륜 점검표 게시 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다",
     "관직": "품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.",
     "일화": "제동 불량 정차로 호송 시각이 어긋나자 북문 칠판의 한 칸이 비었다.",
     "관계": "권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.",
-    "야망": "북문을 강남역 호송의 북문 거점으로 남겨 바깥 작업장 통행세 없이 성하전자 열차가 나가게 한다.",
+    "야망": "북문을 강남역 호송의 북문 거점으로 남겨 별도 통행세 없이 성하전자 열차가 나가게 한다.",
     "공포": "북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.",
     "개입": "빈 칸의 실제 화물을 확인하거나, 통행세 요구 쪽지를 원로 앞에 펼 수 있다."
   },
-  "biography": "호송 시각의 빈칸을 모욕처럼 기억하고, 통행세를 통행 조건으로 내미는 장교를 선로에서 내려보낸다. 제동 점검을 건너뛴 출고를 사고의 시작으로 본다.\n\n- 생업: 북문 호송 인원·차륜 점검표 게시\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 호송 거점장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.\n\n**일화.** 제동 불량 정차로 호송 시각이 어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.** 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.\n\n**야망.** 북문을 강남역 호송의 북문 거점으로 남겨 바깥 작업장 통행세 없이 성하전자 열차가 나가게 한다.\n\n**공포.** 북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.\n\n**개입.** 빈 칸의 실제 화물을 확인하거나, 통행세 요구 쪽지를 원로 앞에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 0 | 물질 35 | 공동 35 | 원칙 15 | 공개 10 | 자격 65 | 분산 20 | 변혁 −20\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 5 | 지속 −15 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "호송 시각의 빈칸을 모욕처럼 기억하고, 통행세를 통행 조건으로 내미는 장교를 선로에서 내려보낸다. 제동 점검을 건너뛴 출고를 사고의 시작으로 본다.\n\n- 생업: 북문 호송 인원·차륜 점검표 게시\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 북문 호송 거점장\n**생애.** 신내 환승 당직에서 자랐다. 강남역 북문 호송 거점장 자리는 무표 출발 열차 저지로 열렸다.\n- 두국은 서초4동에서 북문 호송 인원·차륜 점검표 게시 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다\n\n**관직.** 품계 사원. 직함은 강남역 북문 호송 거점장. 호송 인원과 차륜 점검표를 같은 칠판에 붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다.\n\n**일화.** 제동 불량 정차로 호송 시각이 어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.** 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다. 하세온의 경량 호송과 접속 시각을 맞춘다.\n\n**야망.** 북문을 강남역 호송의 북문 거점으로 남겨 별도 통행세 없이 성하전자 열차가 나가게 한다.\n\n**공포.** 북문이 군사 호송로로 바뀌어 궤도기병이 사택 민병으로 흡수되는 것.\n\n**개입.** 빈 칸의 실제 화물을 확인하거나, 통행세 요구 쪽지를 원로 앞에 펼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 0 | 물질 35 | 공동 35 | 원칙 15 | 공개 10 | 자격 65 | 분산 20 | 변혁 −20\n- 욕망: 갈망 0 | 독점 25 | 위험 −10 | 과시 5 | 지속 −15 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-11"
   ],

@@ -445,53 +445,23 @@
             "name": "안도한",
             "url": "/people/person-0298",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "배차표·호송 인원 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 배차표·호송 인원 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/52/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -499,95 +469,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 배차표·호송 인원 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 배차표·호송 인원 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "안도한 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 29
+            }
           }
         }
       },
@@ -610,53 +520,23 @@
             "name": "안도한",
             "url": "/people/person-0298",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "배차표·호송 인원 게시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 배차표·호송 인원 게시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/52/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -664,95 +544,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 배차표·호송 인원 게시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 배차표·호송 인원 게시"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "안도한 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S12 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 29
+            }
           }
         }
       }
@@ -773,7 +593,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -829,15 +648,15 @@
     "욕망": "갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 환승 배차조장 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2082-02-01에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 환승 배차조장 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 안도한의 배차표·호송 인원 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.",
-    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환승 배차조장 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 그 기록은 다음 당직의 대조 근거로 남았다.",
     "관계": "장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.",
-    "야망": "신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 한다.",
+    "야망": "신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 하려 한다.",
     "공포": "동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.",
     "개입": "봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다."
   },
-  "biography": "시각표의 빈칸을 참지 못하고, 계절 교대 결재가 오기 전에 이미 칠판을 고쳐 둔다. 말단 노선의 지연을 모욕처럼 기억한다.\n\n- 생업: 배차표·호송 인원 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 배차조장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 환승 배차조장 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 환승 배차조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.\n\n**야망.** 신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 한다.\n\n**공포.** 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 45 | 무력 −25 | 물질 10 | 공동 25 | 원칙 0 | 공개 15 | 자격 20 | 분산 40 | 변혁 5\n- 욕망: 갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자\n:::",
+  "biography": "2082-02-01생인 안도한은 시각표의 빈칸을 참지 못하고, 계절 교대 결재가 오기 전에 이미 칠판을 고쳐 둔다. 말단 노선의 지연을 모욕처럼 기억한다.\n\n- 생업: 배차표·호송 인원 게시\n- 소속: 신내운수\n- 품계: 호송원\n- 직함: 환승 배차조장\n**생애.** 2082-02-01에 태어났다. 신내 환승 당직에서 자랐다. 2126년 개막에는 환승 배차조장 당직을 맡으며, 직위 인수 기록에는 무표 출발 열차 저지로 열렸다이 남아 있다.\n- 신내1동의 배차·교대·정비·통행 심사·들것 인계·당직 열쇠 기록대가 안도한의 배차표·호송 인원 게시 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 호송원. 직함은 환승 배차조장. 배차표와 호송 인원을 같은 칠판에 공개하되, 의료열차 우선권은 장세화의 부서 날인이 있을 때만 인정한다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 그 기록은 다음 당직의 대조 근거로 남았다.\n\n**관계.** 장세화의 배차 실무를 맡았고, 전미리와는 계절 교대마다 승인 순서를 다투며, 이홍원에게 북부 차륜 교환 시각을 의존한다.\n\n**야망.** 신내 기지 배차권을 배차조 단독 승인으로 고정해 중립 호송 약정의 실제 시각표를 자신이 쥐려 하려 한다.\n\n**공포.** 동북 말단이 막혀 신내운수가 창동과 암사 사이를 통과만 하는 하역장이 되는 것.\n\n**개입.** 봉쇄된 유치선의 실제 화물을 확인하거나, 배차조 단독 승인안을 의료조 앞에서 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 45 | 무력 −25 | 물질 10 | 공동 25 | 원칙 0 | 공개 15 | 자격 20 | 분산 40 | 변혁 5\n- 욕망: 갈망 0 | 독점 35 | 위험 −20 | 과시 25 | 지속 0 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],

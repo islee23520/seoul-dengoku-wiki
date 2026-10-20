@@ -2,9 +2,9 @@
   "id": "person-0168",
   "name": "평예준",
   "title": "비상권한 반환 증인",
-  "position": "비상권한 반환 증인 · 동두천시 영주",
+  "position": "비상권한 반환 증인",
   "characterId": "K167",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "비상권한 반환 시각·관할 기록",
   "gender": "남성",
@@ -444,47 +444,23 @@
             "name": "평예준",
             "url": "/people/person-0168",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "비상권한 반환 시각·관할 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/248/items/0/ko",
-                  "quote": "생업: 비상권한 반환 시각·관할 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,73 +468,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 비상권한 반환 시각·관할 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "서울역",
-              "type": "초소 영지",
-              "station": "서울역",
-              "state": "S06",
-              "settlement": {
-                "name": "서울역 정착지",
-                "type": "정착지",
-                "description": "서울역 일대 고정 거점"
-              },
-              "note": "S06 서울역 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -582,47 +513,23 @@
             "name": "평예준",
             "url": "/people/person-0168",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "비상권한 반환 시각·관할 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/248/items/0/ko",
-                  "quote": "생업: 비상권한 반환 시각·관할 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -630,156 +537,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/248/items/0/ko",
-                    "quote": "생업: 비상권한 반환 시각·관할 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "서울역",
-              "type": "초소 영지",
-              "station": "서울역",
-              "state": "S06",
-              "settlement": {
-                "name": "서울역 정착지",
-                "type": "정착지",
-                "description": "서울역 일대 고정 거점"
-              },
-              "note": "S06 서울역 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41250-S06",
-      "name": {
-        "ko": "동두천시 공작령 직영지"
-      },
-      "holderPersonId": "K167",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4125051000",
-          "name": "경기도 동두천시 생연1동"
-        },
-        {
-          "id": "4125052000",
-          "name": "경기도 동두천시 생연2동"
-        },
-        {
-          "id": "4125053500",
-          "name": "경기도 동두천시 중앙동"
-        },
-        {
-          "id": "4125055000",
-          "name": "경기도 동두천시 보산동"
-        },
-        {
-          "id": "4125056500",
-          "name": "경기도 동두천시 불현동"
-        },
-        {
-          "id": "4125056600",
-          "name": "경기도 동두천시 송내동"
-        },
-        {
-          "id": "4125058000",
-          "name": "경기도 동두천시 소요동"
-        },
-        {
-          "id": "4125060000",
-          "name": "경기도 동두천시 상패동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41250-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41250-S06",
-      "name": "동두천시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K167",
-      "basis": "개막 행정 규모 그룹 41250(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "4125051000",
-        "4125052000",
-        "4125053500",
-        "4125055000",
-        "4125056500",
-        "4125056600",
-        "4125058000",
-        "4125060000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41250-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -793,18 +596,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "서울역",
-    "type": "초소 영지",
-    "station": "서울역",
-    "state": "S06",
-    "settlement": {
-      "name": "서울역 정착지",
-      "type": "정착지",
-      "description": "서울역 일대 고정 거점"
-    },
-    "note": "S06 서울역 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -838,22 +629,22 @@
   },
   "fields": {
     "생업": "비상권한 반환 시각·관할 기록",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "비상권한 반환 증인",
+    "지위": "기능·생업 역할(정부 임용 아님)",
+    "공무원 직위·직급": "없음",
+    "생업 역할": "비상권한 반환 증인",
     "가치관": "권위 20 | 개방 −10 | 무력 −35 | 물질 −30 | 공동 0 | 원칙 50 | 공개 −25 | 자격 10 | 분산 −40 | 변혁 −45",
     "욕망": "갈망 25 | 독점 35 | 위험 40 | 과시 20 | 지속 0 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.",
-    "일화": "붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다.",
+    "생애": "대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 평예준의 비상권한 반환 시각과 미반환 관할을 기록하는 일은 회현동의 업무와 이어진다.",
+    "기능·생업 역할": "비상권한 반환 증인. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.",
+    "일화": "붕괴 0년 대정전의 밤에 정수·철도·기록 책임자는 각자 비상권한을 쥐었다.",
     "관계": "윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.",
     "야망": "붕괴 당일 누가 비상권한을 돌려놓았는지를 공개 증언으로 남겨 각국의 법통 다툼이 소문으로만 커지지 않게 한다.",
     "공포": "자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것.",
     "개입": "미반환 관할 목록을 공개하거나, 잘린 증언 조각을 되찾아 증인을 보호할 수 있다."
   },
-  "biography": "대정전 밤의 도장 소리를 아직도 듣고, 반환하지 않은 비상권한을 법통이라고 부르는 말을 참지 못한다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 비상권한 반환 시각·관할 기록\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 비상권한 반환 증인\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 비상권한 반환 증인. 반환 시각과 미반환 관할을 같은 칠판에 적고, 후일 수정은 당시 당직 두 명의 재서명만 받는다.\n\n**일화.** 붕괴 0년 대정전의 밤에 평예준은 정수·철도·기록 책임자가 각자 비상권한을 쥐는 장면을 서고 문턱에서 보았다.\n\n**관계.** 윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.\n\n**야망.** 붕괴 당일 누가 비상권한을 돌려놓았는지를 공개 증언으로 남겨 각국의 법통 다툼이 소문으로만 커지지 않게 한다.\n\n**공포.** 자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것.\n\n**개입.** 미반환 관할 목록을 공개하거나, 잘린 증언 조각을 되찾아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −30 | 공동 0 | 원칙 50 | 공개 −25 | 자격 10 | 분산 −40 | 변혁 −45\n- 욕망: 갈망 25 | 독점 35 | 위험 40 | 과시 20 | 지속 0 | 지향 양성 | 결합 다자\n:::",
+  "biography": "반환하지 않은 비상권한을 법통이라고 부르는 말을 참지 못한다. 침묵이 길수록 증언은 짧다.\n\n- 생업: 비상권한 반환 시각·관할 기록\n- 지위: 기능·생업 역할(정부 임용 아님)\n- 공무원 직위·직급: 없음\n- 생업 역할: 비상권한 반환 증인\n**생애.** 대합실 당직에서 자랐다. 비상권한 반환 증인 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 평예준의 비상권한 반환 시각과 미반환 관할을 기록하는 일은 회현동의 업무와 이어진다.\n\n**기능·생업 역할.** 비상권한 반환 증인. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.\n\n**일화.** 붕괴 0년 대정전의 밤에 정수·철도·기록 책임자는 각자 비상권한을 쥐었다.\n\n**관계.** 윤서린의 교차검증에 대정전 일지를 바치고, 나봄결의 비상 발전 일지와 시각을 맞추며, 지한솔의 함 봉인 시각을 증언의 닻으로 삼는다.\n\n**야망.** 붕괴 당일 누가 비상권한을 돌려놓았는지를 공개 증언으로 남겨 각국의 법통 다툼이 소문으로만 커지지 않게 한다.\n\n**공포.** 자신의 증언이 한 강국의 개발 정통성 광고로 잘려 나가는 것.\n\n**개입.** 미반환 관할 목록을 공개하거나, 잘린 증언 조각을 되찾아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −30 | 공동 0 | 원칙 50 | 공개 −25 | 자격 10 | 분산 −40 | 변혁 −45\n- 욕망: 갈망 25 | 독점 35 | 위험 40 | 과시 20 | 지속 0 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

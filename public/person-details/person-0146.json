@@ -2,9 +2,9 @@
   "id": "person-0146",
   "name": "강예준",
   "title": "인준 심사관",
-  "position": "인준 심사관 · 연천군 영주",
+  "position": "인준 심사관",
   "characterId": "K145",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "유언장 필적 대조·인준 심사",
   "gender": "남성",
@@ -452,41 +452,23 @@
             "name": "강예준",
             "url": "/people/person-0146",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언장 필적 대조·인준 심사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/39/items/0/ko",
-                  "quote": "생업: 유언장 필적 대조·인준 심사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -494,90 +476,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/39/items/0/ko",
-                    "quote": "생업: 유언장 필적 대조·인준 심사"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/39/items/0/ko",
-                    "quote": "생업: 유언장 필적 대조·인준 심사"
-                  }
-                ],
-                "cp": 8,
-                "level": 11
+                "level": 11,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "강예준 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 59
+            }
           }
         }
       },
@@ -600,41 +527,23 @@
             "name": "강예준",
             "url": "/people/person-0146",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언장 필적 대조·인준 심사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/39/items/0/ko",
-                  "quote": "생업: 유언장 필적 대조·인준 심사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -642,182 +551,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/39/items/0/ko",
-                    "quote": "생업: 유언장 필적 대조·인준 심사"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/39/items/0/ko",
-                    "quote": "생업: 유언장 필적 대조·인준 심사"
-                  }
-                ],
-                "cp": 8,
-                "level": 11
+                "level": 11,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "강예준 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 59
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41800-S06",
-      "name": {
-        "ko": "연천군 공작령 직영지"
-      },
-      "holderPersonId": "K145",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4180025000",
-          "name": "경기도 연천군 연천읍"
-        },
-        {
-          "id": "4180025300",
-          "name": "경기도 연천군 전곡읍"
-        },
-        {
-          "id": "4180031000",
-          "name": "경기도 연천군 군남면"
-        },
-        {
-          "id": "4180032000",
-          "name": "경기도 연천군 청산면"
-        },
-        {
-          "id": "4180033000",
-          "name": "경기도 연천군 백학면"
-        },
-        {
-          "id": "4180034000",
-          "name": "경기도 연천군 미산면"
-        },
-        {
-          "id": "4180035000",
-          "name": "경기도 연천군 왕징면"
-        },
-        {
-          "id": "4180036000",
-          "name": "경기도 연천군 신서면"
-        },
-        {
-          "id": "4180037000",
-          "name": "경기도 연천군 중면"
-        },
-        {
-          "id": "4180038000",
-          "name": "경기도 연천군 장남면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41800-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41800-S06",
-      "name": "연천군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K145",
-      "basis": "개막 행정 규모 그룹 41800(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "4180025000",
-        "4180025300",
-        "4180031000",
-        "4180032000",
-        "4180033000",
-        "4180034000",
-        "4180035000",
-        "4180036000",
-        "4180037000",
-        "4180038000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41800-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -832,7 +617,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -881,22 +665,22 @@
   },
   "fields": {
     "생업": "유언장 필적 대조·인준 심사",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "인준 심사관",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
+    "담당 업무": "인준 심사관",
     "가치관": "권위 20 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 10 | 원칙 60 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35",
     "욕망": "갈망 10 | 독점 0 | 위험 −30 | 과시 10 | 지속 0 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 인준 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 인준 심사관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 증인이 두 명 미만이면 인준을 보류한다.",
+    "생애": "서울역 등기소에서 자랐다. 인준 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 강예준의 유언장 필적을 대조하고 인준을 심사하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 심사관.",
     "일화": "서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다.",
     "관계": "윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다.",
     "야망": "계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다.",
     "공포": "위조 유언장 한 장이 통과돼 서울역이 강국의 도장 하청으로 전락하는 것.",
     "개입": "증인을 문서고까지 호송하거나, 심사관이 숨긴 네 번째 필적을 찾아 인준을 강제할 수 있다."
   },
-  "biography": "말수를 아끼고 사람보다 도장을 먼저 따진다. 한 번 찍은 인준을 번복하면 서울역 전체가 흔들린다고 믿는다.\n\n- 생업: 유언장 필적 대조·인준 심사\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 심사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 인준 심사관. 공개 원본과 비공개 증언을 같은 책상에 펼치고, 증인이 두 명 미만이면 인준을 보류한다.\n\n**일화.** 서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다.\n\n**관계.** 윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다.\n\n**야망.** 계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다.\n\n**공포.** 위조 유언장 한 장이 통과돼 서울역이 강국의 도장 하청으로 전락하는 것.\n\n**개입.** 증인을 문서고까지 호송하거나, 심사관이 숨긴 네 번째 필적을 찾아 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 10 | 원칙 60 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35\n- 욕망: 갈망 10 | 독점 0 | 위험 −30 | 과시 10 | 지속 0 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "말수를 아끼고 사람보다 도장을 먼저 따진다. 한 번 찍은 인준을 번복하면 서울역 전체가 흔들린다고 믿는다.\n\n- 생업: 유언장 필적 대조·인준 심사\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 인준 심사관\n**생애.** 서울역 등기소에서 자랐다. 인준 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 강예준의 유언장 필적을 대조하고 인준을 심사하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 심사관.\n\n**일화.** 서로 다른 세 장의 임하준 유언장이 같은 날 접수되자 인준 심사를 정지하고 필적 대조를 선언했다.\n\n**관계.** 윤서린의 지휘를 받으며 임초원의 총관 계승 인준을 심사한다. 황은설과 음성·문서 교차검증을 약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다.\n\n**야망.** 계승과 급수·수리 조약을 기록청 인준 없이는 효력이 없게 만들어 윤서린의 인준 거부권을 기록청 안에 고정한다.\n\n**공포.** 위조 유언장 한 장이 통과돼 서울역이 강국의 도장 하청으로 전락하는 것.\n\n**개입.** 증인을 문서고까지 호송하거나, 심사관이 숨긴 네 번째 필적을 찾아 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −5 | 무력 −35 | 물질 −30 | 공동 10 | 원칙 60 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −35\n- 욕망: 갈망 10 | 독점 0 | 위험 −30 | 과시 10 | 지속 0 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-06"
   ],

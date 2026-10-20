@@ -2,7 +2,7 @@
   "id": "person-0333",
   "name": "선나휘",
   "title": "의정회 표결 전령, 전솔의 실무 담당자",
-  "position": "의료 지침 전령 수련의",
+  "position": "의정회 표결 전령, 전솔의 실무 담당자",
   "characterId": "K332",
   "rank": "수련의",
   "commonTier": "T3",
@@ -444,57 +444,23 @@
             "name": "선나휘",
             "url": "/people/person-0333",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "의료 전갈·계약 통지 배달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/149/items/0/ko",
-                  "quote": "생업: 의료 전갈·계약 통지 배달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/148/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "강국 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -502,110 +468,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/149/items/0/ko",
-                    "quote": "생업: 의료 전갈·계약 통지 배달"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "강국 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/148/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/149/items/0/ko",
-                    "quote": "생업: 의료 전갈·계약 통지 배달"
-                  }
-                ],
-                "cp": 8,
-                "level": 16
+                "level": 16,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 84,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 84,
-              "unspent": 0,
-              "total": 84
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청량리",
-              "type": "초소 영지",
-              "station": "청량리",
-              "state": "S13",
-              "settlement": {
-                "name": "청량리 정착지",
-                "type": "정착지",
-                "description": "청량리 일대 고정 거점"
-              },
-              "note": "S13 청량리 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -629,57 +525,23 @@
             "name": "선나휘",
             "url": "/people/person-0333",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "의료 전갈·계약 통지 배달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/149/items/0/ko",
-                  "quote": "생업: 의료 전갈·계약 통지 배달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/148/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "강국 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -687,110 +549,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/149/items/0/ko",
-                    "quote": "생업: 의료 전갈·계약 통지 배달"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "강국 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/148/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/149/items/0/ko",
-                    "quote": "생업: 의료 전갈·계약 통지 배달"
-                  }
-                ],
-                "cp": 8,
-                "level": 16
+                "level": 16,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 84,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 84,
-              "unspent": 0,
-              "total": 84
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청량리",
-              "type": "초소 영지",
-              "station": "청량리",
-              "state": "S13",
-              "settlement": {
-                "name": "청량리 정착지",
-                "type": "정착지",
-                "description": "청량리 일대 고정 거점"
-              },
-              "note": "S13 청량리 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -811,18 +603,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "청량리",
-    "type": "초소 영지",
-    "station": "청량리",
-    "state": "S13",
-    "settlement": {
-      "name": "청량리 정착지",
-      "type": "정착지",
-      "description": "청량리 일대 고정 거점"
-    },
-    "note": "S13 청량리 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -858,20 +638,20 @@
     "생업": "의료 전갈·계약 통지 배달",
     "소속": "흰십자단",
     "품계": "수련의",
-    "직함": "의료 지침 전령 수련의",
+    "직함": "의정회 표결 전령, 전솔의 실무 담당자",
     "가치관": "권위 −25 | 개방 30 | 무력 −50 | 물질 −30 | 공동 10 | 원칙 35 | 공개 40 | 자격 20 | 분산 30 | 변혁 −10",
     "욕망": "갈망 10 | 독점 10 | 위험 −30 | 과시 −5 | 지속 10 | 지향 이성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 의료 지침 전령 수련의 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2071-05-13에 태어났다. 2126년 개막 현재 의정회 표결 전령, 전솔의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 무표 출발 열차 저지로 열렸다.\n- 제기동의 의료 전갈·계약 통지 배달 창구가 선나휘의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
     "관직": "품계 수련의. 직함은 의료 지침 전령 수련의. 전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다.",
-    "일화": "강국 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다.",
+    "일화": "서울 내부 후원 세력 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다.",
     "관계": "전솔의 표결 쪽지를 봉인 상태로만 나르는 지휘를 받고, 영늘빛의 의정 원장과 순번을 나눈다. 심달호의 선매 무효를 시장 입구에 붙인다.",
     "야망": "담당 전문의의 진료 거부권과 선매 무효 통지를 자신이 날인하는 전령 원장에만 유효하게 만들어 허위 동의서를 길에서 죽인다.",
-    "공포": "위조 동의 전갈 한 장이 강국 부상자를 밀어내는 밀약을 통과시켜 전령망이 꼭두각시 나팔이 되는 것.",
+    "공포": "위조 동의 전갈 한 장이 후원 문장이 붙은 부상자를 밀어내는 밀약을 통과시켜 전령망이 꼭두각시 나팔이 되는 일을 두려워한다.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 진료 거부권을 무력화할 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 담당 전문의 명의의 구두 동의를 전갈로 인정하지 않는다. 숨이 차도 사본 두 장을 한 손에 쥔다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의료 전갈·계약 통지 배달\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의료 지침 전령 수련의\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 의료 지침 전령 수련의 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 수련의. 직함은 의료 지침 전령 수련의. 전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다.\n\n**일화.** 강국 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다.\n\n**관계.** 전솔의 표결 쪽지를 봉인 상태로만 나르는 지휘를 받고, 영늘빛의 의정 원장과 순번을 나눈다. 심달호의 선매 무효를 시장 입구에 붙인다.\n\n**야망.** 담당 전문의의 진료 거부권과 선매 무효 통지를 자신이 날인하는 전령 원장에만 유효하게 만들어 허위 동의서를 길에서 죽인다.\n\n**공포.** 위조 동의 전갈 한 장이 강국 부상자를 밀어내는 밀약을 통과시켜 전령망이 꼭두각시 나팔이 되는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 진료 거부권을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −50 | 물질 −30 | 공동 10 | 원칙 35 | 공개 40 | 자격 20 | 분산 30 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 −30 | 과시 −5 | 지속 10 | 지향 이성 | 결합 다자\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 담당 전문의 명의의 구두 동의를 전갈로 인정하지 않는다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 생업: 의료 전갈·계약 통지 배달\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 의정회 표결 전령, 전솔의 실무 담당자\n**생애.** 2071-05-13에 태어났다. 2126년 개막 현재 의정회 표결 전령, 전솔의 실무 담당자 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 무표 출발 열차 저지로 열렸다.\n- 제기동의 의료 전갈·계약 통지 배달 창구가 선나휘의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 의료 지침 전령 수련의. 전갈을 진료 당직 게시판과 진료 대기 명부에 동시에 붙이고, 비공개 치료 계약 통지는 담당 전문의와 단장의 날인 없이 가방에 잠근다.\n\n**일화.** 서울 내부 후원 세력 보호를 받는 제조자가 담당 전문의 명의의 허위 동의서를 들고 나타나자 선나휘는 동의 전갈을 필적 대조가 끝날 때까지 잠갔다.\n\n**관계.** 전솔의 표결 쪽지를 봉인 상태로만 나르는 지휘를 받고, 영늘빛의 의정 원장과 순번을 나눈다. 심달호의 선매 무효를 시장 입구에 붙인다.\n\n**야망.** 담당 전문의의 진료 거부권과 선매 무효 통지를 자신이 날인하는 전령 원장에만 유효하게 만들어 허위 동의서를 길에서 죽인다.\n\n**공포.** 위조 동의 전갈 한 장이 후원 문장이 붙은 부상자를 밀어내는 밀약을 통과시켜 전령망이 꼭두각시 나팔이 되는 일을 두려워한다.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 진료 거부권을 무력화할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 −50 | 물질 −30 | 공동 10 | 원칙 35 | 공개 40 | 자격 20 | 분산 30 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 −30 | 과시 −5 | 지속 10 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-13"
   ],

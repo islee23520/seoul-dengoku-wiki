@@ -1,10 +1,10 @@
 {
   "id": "person-0038",
   "name": "허다온",
-  "title": "천왕기지 차륜 정비사",
-  "position": "대전 대덕구 영주",
+  "title": "강동구 보유 변경 통지 수령·비구속 원장 정정 요청 담당",
+  "position": "강동구 보유 변경 통지 수령·비구속 원장 정정 요청 담당",
   "characterId": "K038",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "차륜 정비",
   "gender": "남성",
@@ -454,57 +454,23 @@
             "name": "허다온",
             "url": "/people/person-0038",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜 정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/126/items/1/ko",
-                  "quote": "생업: 차륜 정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/125/text/ko",
-                    "quote": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -512,105 +478,35 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/126/items/1/ko",
-                    "quote": "생업: 차륜 정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/125/text/ko",
-                    "quote": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/126/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "허다온 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 3
+            }
           }
         }
       },
@@ -633,57 +529,23 @@
             "name": "허다온",
             "url": "/people/person-0038",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜 정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/126/items/1/ko",
-                  "quote": "생업: 차륜 정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/125/text/ko",
-                    "quote": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -691,204 +553,90 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/126/items/1/ko",
-                    "quote": "생업: 차륜 정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/125/text/ko",
-                    "quote": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/127/text/ko",
-                    "quote": "출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/128/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/126/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "허다온 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 3
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
+  "confirmedHoldings": [],
+  "superiorJurisdictions": [
     {
       "id": "holding:daejeon-daedeok",
+      "kind": "superior-jurisdiction",
       "name": {
-        "ko": "대전 대덕구 영지"
+        "ko": "강동구 상위 관할권"
       },
       "holderPersonId": "K038",
-      "directLiegePersonId": "K1008",
       "stateId": "polity:daejeon",
-      "adminRefs": [
-        {
-          "id": "3023051000",
-          "name": "대전광역시 대덕구 오정동"
-        },
-        {
-          "id": "3023052000",
-          "name": "대전광역시 대덕구 대화동"
-        },
-        {
-          "id": "3023052500",
-          "name": "대전광역시 대덕구 회덕동"
-        },
-        {
-          "id": "3023053300",
-          "name": "대전광역시 대덕구 비래동"
-        },
-        {
-          "id": "3023054300",
-          "name": "대전광역시 대덕구 송촌동"
-        },
-        {
-          "id": "3023054600",
-          "name": "대전광역시 대덕구 중리동"
-        },
-        {
-          "id": "3023055000",
-          "name": "대전광역시 대덕구 신탄진동"
-        },
-        {
-          "id": "3023056000",
-          "name": "대전광역시 대덕구 석봉동"
-        },
-        {
-          "id": "3023057000",
-          "name": "대전광역시 대덕구 덕암동"
-        },
-        {
-          "id": "3023058000",
-          "name": "대전광역시 대덕구 목상동"
-        },
-        {
-          "id": "3023060000",
-          "name": "대전광역시 대덕구 법1동"
-        },
-        {
-          "id": "3023061000",
-          "name": "대전광역시 대덕구 법2동"
-        }
-      ],
-      "geometrySource": "outside-admin-units.units",
+      "directLiegePersonId": "K1008",
+      "liegeRelationshipKind": "preserved-personal-service",
+      "titleId": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
+      "geographicScope": {
+        "duchyTitleId": "geography:duchy:11740",
+        "guRef": "11740",
+        "countyTitleIds": [
+          "geography:county:seoul-constituency:강동구갑선거구",
+          "geography:county:seoul-constituency:강동구을선거구"
+        ],
+        "geographicKingdomId": "proposal:kingdom:seoul:06",
+        "geographicEmpireId": "geography:empire:seoul"
+      },
       "territorialScale": "duchy",
       "formalTitleRank": null,
-      "titleId": "title:duchy-gu-30230-polity-daejeon"
+      "adminRefs": [],
+      "geometrySource": null,
+      "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+      "directOwnership": false,
+      "powers": [
+        "receive-holding-change-notice",
+        "lodge-nonbinding-registry-objection"
+      ]
     }
   ],
-  "subordinateHoldings": [],
   "openingTitles": [
     {
-      "id": "title:duchy-gu-30230-polity-daejeon",
-      "name": "대덕구 공작령",
+      "id": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
+      "name": "강동구 상위 관할",
       "rank": "duchy",
       "holderPersonId": "K038",
-      "basis": "기존 보유 권리 결속: holding:daejeon-daedeok",
       "stateId": "polity:daejeon",
-      "parentTitleId": "title:kingdom-daejeon",
-      "jurisdictionRefs": [
-        "3023051000",
-        "3023052000",
-        "3023052500",
-        "3023053300",
-        "3023054300",
-        "3023054600",
-        "3023055000",
-        "3023056000",
-        "3023057000",
-        "3023058000",
-        "3023060000",
-        "3023061000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-daejeon",
-        "name": "대전선",
-        "holderPersonId": "K1008"
-      }
+      "geographicTitleId": "geography:duchy:11740",
+      "geographicParentTitleId": "proposal:kingdom:seoul:06",
+      "politicalParentTitleId": "title:kingdom-daejeon",
+      "personalLiegePersonId": "K1008",
+      "kind": "superior-jurisdiction",
+      "directOwnership": false,
+      "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
+      "parentTitle": null
     }
   ],
   "unit": {
@@ -905,7 +653,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -957,12 +704,12 @@
     "생업": "차륜 정비",
     "품계": "조합원",
     "직함": "천왕기지 차륜 정비사",
-    "영지": "대전 대덕구. 직속 주군은 민웅기다.",
+    "거주·업무 위치": "오류2동 행정동 범위 거주, 천왕역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.",
     "가치관": "권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 45 | 원칙 10 | 공개 40 | 자격 60 | 분산 30 | 변혁 30",
     "욕망": "갈망 0 | 독점 20 | 위험 30 | 과시 −25 | 지속 5 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 영지: 대전 대덕구. 직속 주군은 민웅기다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 신정 차량기지에서 자란 허다온은 천왕 생활권의 차륜 정비사다. 2125년 출고 직전 불량 부품을 돌려보낸 일과 계측 도장 없는 개조품을 거부하는 원칙을 보존한다. 서울 내부 정비표·최다인·최한결과의 계약을 이어 간다. 대덕구 영지 서술은 분리하고 민웅기 직속 관계는 유지한다.\n- 거주·업무 위치: 오류2동 행정동 범위 거주, 천왕역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.",
     "관직": "품계 조합원. 직함은 천왕기지 차륜 정비사. 출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 차륜 정비사 자리의 서명이 장부에 올랐다.",
     "관계": "정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.",
@@ -970,7 +717,7 @@
     "공포": "경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.",
     "개입": "봉인 나사의 실측 공차를 가져와 봉인을 풀거나, 군수 전용 나사의 숨은 도면을 찾아 규격 분열을 폭로할 수 있다."
   },
-  "biography": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다. 말수는 적고 제동 시험으로 대답한다.\n\n- 소속: 중립 대전\n- 생업: 차륜 정비\n- 품계: 조합원\n- 직함: 천왕기지 차륜 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 영지: 대전 대덕구. 직속 주군은 민웅기다.\n\n**관직.** 품계 조합원. 직함은 천왕기지 차륜 정비사. 출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 차륜 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.\n\n**야망.** 서울 전역 차륜 나사의 호환 실측을 천왕 정비표로 고정해 규격맹의 손끝이 된다.\n\n**공포.** 경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.\n\n**개입.** 봉인 나사의 실측 공차를 가져와 봉인을 풀거나, 군수 전용 나사의 숨은 도면을 찾아 규격 분열을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 45 | 원칙 10 | 공개 40 | 자격 60 | 분산 30 | 변혁 30\n- 욕망: 갈망 0 | 독점 20 | 위험 30 | 과시 −25 | 지속 5 | 지향 유동 | 결합 다자\n:::",
+  "biography": "공차로 사람을 기억하고, 규격서에 없는 임시 깎기를 사고의 씨앗으로 본다. 말수는 적고 제동 시험으로 대답한다.\n\n- 소속: 중립 대전\n- 생업: 차륜 정비\n- 품계: 조합원\n- 직함: 천왕기지 차륜 정비사\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 차륜 정비사 자리는 탈선 직전 결함 보고로 열렸다.\n- 신정 차량기지에서 자란 허다온은 천왕 생활권의 차륜 정비사다. 2125년 출고 직전 불량 부품을 돌려보낸 일과 계측 도장 없는 개조품을 거부하는 원칙을 보존한다. 서울 내부 정비표·최다인·최한결과의 계약을 이어 간다. 대덕구 영지 서술은 분리하고 민웅기 직속 관계는 유지한다.\n- 거주·업무 위치: 오류2동 행정동 범위 거주, 천왕역 대합실의 생활 화물 인계·배급 창구 업무. 주택·침상 권리와 독점 점유를 부여하지 않으며 서울 작위·영지 수여나 무토지 확정이 아니다.\n\n**관직.** 품계 조합원. 직함은 천왕기지 차륜 정비사. 출고 차륜마다 계측 도장을 찍고, 도장 없는 개조품은 유치선에 들이지 않는다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 차륜 정비사 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우에게 공차 사제로 묶여 있고, 최다인의 공병 작업반에 차륜을 대며, 최한결의 신정 보수열차와 밀봉·차륜을 계약으로 나눈다.\n\n**야망.** 서울 전역 차륜 나사의 호환 실측을 천왕 정비표로 고정해 규격맹의 손끝이 된다.\n\n**공포.** 경비대가 군수 전용 나사를 따로 깎아 민간 수리망이 하루아침에 호환 불능이 되는 것.\n\n**개입.** 봉인 나사의 실측 공차를 가져와 봉인을 풀거나, 군수 전용 나사의 숨은 도면을 찾아 규격 분열을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 45 | 원칙 10 | 공개 40 | 자격 60 | 분산 30 | 변혁 30\n- 욕망: 갈망 0 | 독점 20 | 위험 30 | 과시 −25 | 지속 5 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-02"
   ],

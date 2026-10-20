@@ -552,52 +552,23 @@
             "name": "한보라",
             "url": "/people/person-0124",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "순찰열차 출고·화차 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/115/items/1/ko",
-                  "quote": "생업: 순찰열차 출고·화차 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/116/text/ko",
-                    "quote": "출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,116 +576,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/115/items/1/ko",
-                    "quote": "생업: 순찰열차 출고·화차 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/116/text/ko",
-                    "quote": "출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/115/items/1/ko",
-                    "quote": "생업: 순찰열차 출고·화차 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/115/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "한보라 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -737,52 +633,23 @@
             "name": "한보라",
             "url": "/people/person-0124",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "순찰열차 출고·화차 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/115/items/1/ko",
-                  "quote": "생업: 순찰열차 출고·화차 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/116/text/ko",
-                    "quote": "출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -790,116 +657,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/115/items/1/ko",
-                    "quote": "생업: 순찰열차 출고·화차 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/116/text/ko",
-                    "quote": "출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/115/items/1/ko",
-                    "quote": "생업: 순찰열차 출고·화차 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/115/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "한보라 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -920,7 +712,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -976,15 +767,12 @@
     "욕망": "갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.",
-    "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.",
+    "관직": "품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n일화. 한보라는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.",
     "관계": "박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.",
-    "야망": "동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.",
-    "공포": "자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것.",
+    "야망": "동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n공포. 한보라는 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 일을 두려워한다.",
     "개입": "밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다."
   },
-  "biography": "대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.\n\n- 소속: 동방사\n- 생업: 순찰열차 출고·화차 확인\n- 품계: 병장\n- 직함: 동부 순찰열차장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰열차장 자리의 서명이 장부에 올랐다.\n\n**관계.** 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.\n\n**야망.** 동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n**공포.** 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 것.\n\n**개입.** 밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −55 | 무력 75 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −30 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자\n:::",
+  "biography": "한보라는 대담하고 야간 선로의 침묵을 사람보다 잘 견딘다. 의료열차로 위장한 군수 화차를 자기 열차에 붙이라는 쪽지를 찢어 버린다.\n\n- 소속: 동방사\n- 생업: 순찰열차 출고·화차 확인\n- 품계: 병장\n- 직함: 동부 순찰열차장\n생애. 한보라는 4세대에 태어났다. 한보라는 암사 경비 초소에서 자랐다. 한보라의 동부 순찰열차장 자리는 야간 무단 도하 적발로 열렸다.\n- 한보라는 고덕2동과 연결된 업무에서 출고 게시판을 맡고 무기 의심 화차를 이중 확인하며 비밀 배차를 거부한다.\n\n**관직.** 품계 병장. 직함은 동부 순찰열차장. 출고 시각과 화차 목록을 고덕 게시판에 올리고, 무기 의심 화차는 정비장과 감사관의 이중 확인 없이 연결하지 않는다.\n\n일화. 한보라는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.\n\n**관계.** 박하율의 출고 순서에 열차를 묶는 계약이고, 장세화의 의료호송을 선로에서 피하려는 빚이며, 김우찬의 비밀 배차 쪽지를 거부해 지휘 갈등이 있다.\n\n**야망.** 동부 순찰열차를 공식 명령망의 공개 배차로만 움직여, 비밀 장교망이 선로를 빼앗지 못하게 한다.\n\n공포. 한보라는 자기 열차가 검은 배차표의 운반자가 되어 의료중립을 깨고 보호전쟁을 첫 불씨로 지피는 일을 두려워한다.\n\n**개입.** 밀수 화차의 실화주를 밝히거나, 검은 배차표를 열차장 몰래 연결해 중립 붕괴의 불씨를 만들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −55 | 무력 75 | 물질 20 | 공동 35 | 원칙 −20 | 공개 −35 | 자격 −30 | 분산 −60 | 변혁 −25\n- 욕망: 갈망 50 | 독점 −25 | 위험 10 | 과시 −15 | 지속 0 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-05"
   ],

@@ -2,7 +2,7 @@
   "id": "person-0341",
   "name": "매하루",
   "title": "약재 오염 피해자 대표",
-  "position": "약재 오염 진료 수련의",
+  "position": "약재 오염 피해자 대표",
   "characterId": "K340",
   "rank": "수련의",
   "commonTier": "T3",
@@ -445,57 +445,23 @@
             "name": "매하루",
             "url": "/people/person-0341",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 오염 복용·열 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/204/items/0/ko",
-                  "quote": "생업: 약재 오염 복용·열 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/203/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -503,121 +469,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 약재 오염 복용·열 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/203/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 약재 오염 복용·열 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 88,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 28,
               "spent": 88,
-              "unspent": 0,
-              "total": 88
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "양정",
-              "type": "초소 영지",
-              "station": "양정",
-              "state": "S13",
-              "settlement": {
-                "name": "양정 정착지",
-                "type": "정착지",
-                "description": "양정 일대 고정 거점"
-              },
-              "note": "S13 양정 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -641,57 +532,23 @@
             "name": "매하루",
             "url": "/people/person-0341",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 오염 복용·열 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/204/items/0/ko",
-                  "quote": "생업: 약재 오염 복용·열 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/203/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -699,121 +556,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 약재 오염 복용·열 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/203/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 약재 오염 복용·열 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다."
-                  }
-                ],
-                "cp": 4,
-                "level": 14
+                "level": 14,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 88,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 28,
               "spent": 88,
-              "unspent": 0,
-              "total": 88
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "양정",
-              "type": "초소 영지",
-              "station": "양정",
-              "state": "S13",
-              "settlement": {
-                "name": "양정 정착지",
-                "type": "정착지",
-                "description": "양정 일대 고정 거점"
-              },
-              "note": "S13 양정 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -834,18 +616,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "양정",
-    "type": "초소 영지",
-    "station": "양정",
-    "state": "S13",
-    "settlement": {
-      "name": "양정 정착지",
-      "type": "정착지",
-      "description": "양정 일대 고정 거점"
-    },
-    "note": "S13 양정 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -881,20 +651,20 @@
     "생업": "약재 오염 복용·열 기록",
     "소속": "흰십자단",
     "품계": "수련의",
-    "직함": "약재 오염 진료 수련의",
+    "직함": "약재 오염 피해자 대표",
     "가치관": "권위 −35 | 개방 35 | 무력 −55 | 물질 −15 | 공동 25 | 원칙 45 | 공개 20 | 자격 25 | 분산 35 | 변혁 0",
     "욕망": "갈망 5 | 독점 25 | 위험 −25 | 과시 25 | 지속 10 | 지향 이성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 오염 진료 수련의 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2082-03-21에 태어났다. 2126년 개막 현재 약재 오염 피해자 대표 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 오염 복용·열 기록 창구가 매하루의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
     "관직": "품계 수련의. 직함은 약재 오염 진료 수련의. 복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다.",
     "일화": "여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다.",
     "관계": "창다흰의 이송 피해자 명단과 이름을 맞추고, 방미산의 진료소 봉인 끈을 함께 본다. 류은비의 치료 원칙을 피해 원장의 뼈대로 삼는다.",
-    "야망": "오염 약 피해 명단을 의료 지휘부 공개 원장으로 묶어 강국 독점 구매가 품질 사고를 덮지 못하게 한다.",
-    "공포": "진료 인장이 보호창고 하청 계약의 들러리가 되는 것.",
+    "야망": "오염 약 피해 명단을 의료 지휘부 공개 원장으로 묶어 서울 내부 후원 세력 독점 구매가 품질 사고를 덮지 못하게 하려 한다.",
+    "공포": "진료 인장이 보호창고 하청 계약의 들러리가 되는 일을 두려워한다.",
     "개입": "피해 원장을 마곡 검사망에 넘기거나, 담당자를 매수해 봉쇄를 풀 수 있다."
   },
-  "biography": "쓴 가루의 입자까지 기억하고, 포장 문장만 깨끗한 상자를 치료 칸에 들이지 않는다. 자비와 분노가 함께 있다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 오염 복용·열 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 오염 진료 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 오염 진료 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 약재 오염 진료 수련의. 복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다.\n\n**일화.** 여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다.\n\n**관계.** 창다흰의 이송 피해자 명단과 이름을 맞추고, 방미산의 진료소 봉인 끈을 함께 본다. 류은비의 치료 원칙을 피해 원장의 뼈대로 삼는다.\n\n**야망.** 오염 약 피해 명단을 의료 지휘부 공개 원장으로 묶어 강국 독점 구매가 품질 사고를 덮지 못하게 한다.\n\n**공포.** 진료 인장이 보호창고 하청 계약의 들러리가 되는 것.\n\n**개입.** 피해 원장을 마곡 검사망에 넘기거나, 담당자를 매수해 봉쇄를 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 35 | 무력 −55 | 물질 −15 | 공동 25 | 원칙 45 | 공개 20 | 자격 25 | 분산 35 | 변혁 0\n- 욕망: 갈망 5 | 독점 25 | 위험 −25 | 과시 25 | 지속 10 | 지향 이성 | 결합 다자\n:::",
+  "biography": "쓴 가루의 입자까지 기억하고, 포장 문장만 깨끗한 상자를 치료 칸에 들이지 않는다. 자비와 분노가 함께 있다.\n\n- 생업: 약재 오염 복용·열 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 오염 피해자 대표\n**생애.** 2082-03-21에 태어났다. 2126년 개막 현재 약재 오염 피해자 대표 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 오염 복용·열 기록 창구가 매하루의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 오염 진료 수련의. 복용 기록과 열 곡선을 침상 발치에 붙이고, 원산지가 빈 상자는 류은비의 날인 없이 열지 않는다.\n\n**일화.** 여름의 탁수와 가짜 약이 북한산보국문으로 흘러가자 매하루는 약재동 앞에서 피해자 줄을 세우고 선매 저울을 멈추게 했다.\n\n**관계.** 창다흰의 이송 피해자 명단과 이름을 맞추고, 방미산의 진료소 봉인 끈을 함께 본다. 류은비의 치료 원칙을 피해 원장의 뼈대로 삼는다.\n\n**야망.** 오염 약 피해 명단을 의료 지휘부 공개 원장으로 묶어 서울 내부 후원 세력 독점 구매가 품질 사고를 덮지 못하게 하려 한다.\n\n**공포.** 진료 인장이 보호창고 하청 계약의 들러리가 되는 일을 두려워한다.\n\n**개입.** 피해 원장을 마곡 검사망에 넘기거나, 담당자를 매수해 봉쇄를 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 35 | 무력 −55 | 물질 −15 | 공동 25 | 원칙 45 | 공개 20 | 자격 25 | 분산 35 | 변혁 0\n- 욕망: 갈망 5 | 독점 25 | 위험 −25 | 과시 25 | 지속 10 | 지향 이성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-13"
   ],

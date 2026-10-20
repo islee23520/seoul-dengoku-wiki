@@ -20,7 +20,7 @@
   "sourceStatus": "owner-authored",
   "sourceRefs": [
     "lore/characters/Core-Characters.json#/content/165",
-    "lore/characters/Core-Characters.json#/content/170",
+    "lore/characters/Core-Characters.json#/content/149",
     "lore/chronology/Century-Annals.json#/content/524",
     "lore/chronology/Century-Annals.json#/content/526",
     "lore/chronology/Century-Annals.json#/content/575",
@@ -601,218 +601,77 @@
             "name": "김연규",
             "url": "/people/person-1007",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록 당직·문서 등재",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/166/text/ko",
-                  "quote": "생업 별명은 기록 당직·문서 등재."
-                }
-              ]
-            },
+            "band": "주역·강자",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "삼영걸 대비 분석 — 혁신·공격성 프로파일"
-                  }
-                ]
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "전투·혁신 역량 기반 배분"
-                  }
-                ]
+                "cp": 0
               },
               "IQ": {
                 "value": 20,
-                "cp": 200,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "전략 혁신 역량 기반 배분"
-                  }
-                ]
+                "cp": 200
               },
               "HT": {
                 "value": 11,
-                "cp": 10,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "전사 경험 기반 배분"
-                  }
-                ]
+                "cp": 10
               }
             },
             "traits": [],
             "skills": [
               {
                 "name": "전략",
-                "attr": "IQ",
                 "level": 17,
-                "difficulty": "상",
-                "cp": 16,
-                "effect": "부대 전체 행동 보정"
+                "cp": 16
               },
               {
                 "name": "전술",
-                "attr": "IQ",
                 "level": 16,
-                "difficulty": "중",
-                "cp": 32,
-                "effect": "소부대 교전 보정"
+                "cp": 32
               },
               {
                 "name": "협박",
-                "attr": "Will",
                 "level": 16,
-                "difficulty": "중",
-                "cp": 8,
-                "effect": "공포 부여·복종 유도"
+                "cp": 8
               },
               {
                 "name": "지휘",
-                "attr": "IQ",
                 "level": 16,
-                "difficulty": "중",
-                "cp": 16,
-                "effect": "부대 사기·통제"
+                "cp": 16
               },
               {
                 "name": "창술",
-                "attr": "DX",
                 "level": 14,
-                "difficulty": "중",
-                "cp": 8,
-                "effect": "장창 찌르기"
+                "cp": 8
               },
               {
                 "name": "역사",
-                "attr": "IQ",
                 "level": 13,
-                "difficulty": "중",
-                "cp": 3,
-                "effect": "세계관 지식"
+                "cp": 3
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 11,
               "Will": 20,
               "Per": 20,
-              "FP": 11,
               "BasicSpeed": 5.25,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 9
             },
             "cp": {
+              "total": 338,
               "attributes": 210,
               "advantages": 75,
               "disadvantages": -30,
               "skills": 83,
               "spent": 338,
-              "unspent": 0,
-              "total": 338
-            },
-            "band": "주역·강자",
-            "baseline": false,
-            "unit": {
-              "size": 45,
-              "quality": "정예",
-              "composition": [
-                "친위병",
-                "경비병"
-              ],
-              "note": "온민 수장 직속 친위부대",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "서울역",
-              "type": "거점",
-              "station": "서울역",
-              "state": "S06",
-              "settlement": {
-                "name": "서울역 정착지",
-                "type": "정착지",
-                "description": "서울역 일대 고정 거점"
-              },
-              "note": "S06 서울역 일대 관할 영지"
-            },
-            "advantages": [
-              {
-                "name": "Combat Reflexes",
-                "cp": 15,
-                "effect": "전투 반응 +1, 선제 행동"
-              },
-              {
-                "name": "Fearlessness +3",
-                "cp": 6,
-                "effect": "공포 판정 +3"
-              },
-              {
-                "name": "Strong Will +3",
-                "cp": 15,
-                "effect": "의지 판정 +3"
-              },
-              {
-                "name": "High Pain Threshold",
-                "cp": 10,
-                "effect": "통증 페널티 무시"
-              },
-              {
-                "name": "Ambidexterity",
-                "cp": 5,
-                "effect": "양손 사용 가능"
-              },
-              {
-                "name": "Contacts (Extensive)",
-                "cp": 20,
-                "effect": "광범위 인맥"
-              },
-              {
-                "name": "Leadership 보정",
-                "cp": 4,
-                "effect": "지휘력 우수"
-              }
-            ],
-            "disadvantages": [
-              {
-                "name": "Bad Temper",
-                "cp": -10,
-                "effect": "화내기 쉬움 — 자제 판정"
-              },
-              {
-                "name": "Bloodlust",
-                "cp": -10,
-                "effect": "적을 죽이려는 충동"
-              },
-              {
-                "name": "Overconfidence",
-                "cp": -5,
-                "effect": "과신 — 위험 감수"
-              },
-              {
-                "name": "Enemies (경쟁 세력)",
-                "cp": -5,
-                "effect": "적대 세력 존재"
-              }
-            ]
+              "unspent": 0
+            }
           }
         }
       },
@@ -835,518 +694,95 @@
             "name": "김연규",
             "url": "/people/person-1007",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록 당직·문서 등재",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/166/text/ko",
-                  "quote": "생업 별명은 기록 당직·문서 등재."
-                }
-              ]
-            },
+            "band": "주역·강자",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "삼영걸 대비 분석 — 혁신·공격성 프로파일"
-                  }
-                ]
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "전투·혁신 역량 기반 배분"
-                  }
-                ]
+                "cp": 0
               },
               "IQ": {
                 "value": 20,
-                "cp": 200,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "전략 혁신 역량 기반 배분"
-                  }
-                ]
+                "cp": 200
               },
               "HT": {
                 "value": 11,
-                "cp": 10,
-                "rule": "samyeonggeol-profile",
-                "evidence": [
-                  {
-                    "note": "전사 경험 기반 배분"
-                  }
-                ]
+                "cp": 10
               }
             },
             "traits": [],
             "skills": [
               {
                 "name": "전략",
-                "attr": "IQ",
                 "level": 17,
-                "difficulty": "상",
-                "cp": 16,
-                "effect": "부대 전체 행동 보정"
+                "cp": 16
               },
               {
                 "name": "전술",
-                "attr": "IQ",
                 "level": 16,
-                "difficulty": "중",
-                "cp": 32,
-                "effect": "소부대 교전 보정"
+                "cp": 32
               },
               {
                 "name": "협박",
-                "attr": "Will",
                 "level": 16,
-                "difficulty": "중",
-                "cp": 8,
-                "effect": "공포 부여·복종 유도"
+                "cp": 8
               },
               {
                 "name": "지휘",
-                "attr": "IQ",
                 "level": 16,
-                "difficulty": "중",
-                "cp": 16,
-                "effect": "부대 사기·통제"
+                "cp": 16
               },
               {
                 "name": "창술",
-                "attr": "DX",
                 "level": 14,
-                "difficulty": "중",
-                "cp": 8,
-                "effect": "장창 찌르기"
+                "cp": 8
               },
               {
                 "name": "역사",
-                "attr": "IQ",
                 "level": 13,
-                "difficulty": "중",
-                "cp": 3,
-                "effect": "세계관 지식"
+                "cp": 3
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 11,
               "Will": 20,
               "Per": 20,
-              "FP": 11,
               "BasicSpeed": 5.25,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 9
             },
             "cp": {
+              "total": 338,
               "attributes": 210,
               "advantages": 75,
               "disadvantages": -30,
               "skills": 83,
               "spent": 338,
-              "unspent": 0,
-              "total": 338
-            },
-            "band": "주역·강자",
-            "baseline": false,
-            "unit": {
-              "size": 45,
-              "quality": "정예",
-              "composition": [
-                "친위병",
-                "경비병"
-              ],
-              "note": "온민 수장 직속 친위부대",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "서울역",
-              "type": "거점",
-              "station": "서울역",
-              "state": "S06",
-              "settlement": {
-                "name": "서울역 정착지",
-                "type": "정착지",
-                "description": "서울역 일대 고정 거점"
-              },
-              "note": "S06 서울역 일대 관할 영지"
-            },
-            "advantages": [
-              {
-                "name": "Combat Reflexes",
-                "cp": 15,
-                "effect": "전투 반응 +1, 선제 행동"
-              },
-              {
-                "name": "Fearlessness +3",
-                "cp": 6,
-                "effect": "공포 판정 +3"
-              },
-              {
-                "name": "Strong Will +3",
-                "cp": 15,
-                "effect": "의지 판정 +3"
-              },
-              {
-                "name": "High Pain Threshold",
-                "cp": 10,
-                "effect": "통증 페널티 무시"
-              },
-              {
-                "name": "Ambidexterity",
-                "cp": 5,
-                "effect": "양손 사용 가능"
-              },
-              {
-                "name": "Contacts (Extensive)",
-                "cp": 20,
-                "effect": "광범위 인맥"
-              },
-              {
-                "name": "Leadership 보정",
-                "cp": 4,
-                "effect": "지휘력 우수"
-              }
-            ],
-            "disadvantages": [
-              {
-                "name": "Bad Temper",
-                "cp": -10,
-                "effect": "화내기 쉬움 — 자제 판정"
-              },
-              {
-                "name": "Bloodlust",
-                "cp": -10,
-                "effect": "적을 죽이려는 충동"
-              },
-              {
-                "name": "Overconfidence",
-                "cp": -5,
-                "effect": "과신 — 위험 감수"
-              },
-              {
-                "name": "Enemies (경쟁 세력)",
-                "cp": -5,
-                "effect": "적대 세력 존재"
-              }
-            ]
+              "unspent": 0
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-41281-S06",
-      "name": {
-        "ko": "덕양구 남작령 직영지"
-      },
-      "holderPersonId": "K637",
-      "directLiegePersonId": "K1007",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4128151000",
-          "name": "경기도 고양시덕양구 주교동"
-        },
-        {
-          "id": "4128152000",
-          "name": "경기도 고양시덕양구 원신동"
-        },
-        {
-          "id": "4128153000",
-          "name": "경기도 고양시덕양구 흥도동"
-        },
-        {
-          "id": "4128154000",
-          "name": "경기도 고양시덕양구 성사1동"
-        },
-        {
-          "id": "4128155000",
-          "name": "경기도 고양시덕양구 성사2동"
-        },
-        {
-          "id": "4128156000",
-          "name": "경기도 고양시덕양구 효자동"
-        },
-        {
-          "id": "4128157600",
-          "name": "경기도 고양시덕양구 삼송1동"
-        },
-        {
-          "id": "4128157700",
-          "name": "경기도 고양시덕양구 삼송2동"
-        },
-        {
-          "id": "4128158000",
-          "name": "경기도 고양시덕양구 창릉동"
-        },
-        {
-          "id": "4128159000",
-          "name": "경기도 고양시덕양구 고양동"
-        },
-        {
-          "id": "4128160000",
-          "name": "경기도 고양시덕양구 관산동"
-        },
-        {
-          "id": "4128161000",
-          "name": "경기도 고양시덕양구 능곡동"
-        },
-        {
-          "id": "4128162100",
-          "name": "경기도 고양시덕양구 화정1동"
-        },
-        {
-          "id": "4128162200",
-          "name": "경기도 고양시덕양구 화정2동"
-        },
-        {
-          "id": "4128163000",
-          "name": "경기도 고양시덕양구 행주동"
-        },
-        {
-          "id": "4128164000",
-          "name": "경기도 고양시덕양구 행신1동"
-        },
-        {
-          "id": "4128165000",
-          "name": "경기도 고양시덕양구 행신2동"
-        },
-        {
-          "id": "4128165500",
-          "name": "경기도 고양시덕양구 행신3동"
-        },
-        {
-          "id": "4128165600",
-          "name": "경기도 고양시덕양구 행신4동"
-        },
-        {
-          "id": "4128166000",
-          "name": "경기도 고양시덕양구 화전동"
-        },
-        {
-          "id": "4128167000",
-          "name": "경기도 고양시덕양구 대덕동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41281-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "권하린",
-      "holderRoute": "/people/person-0637"
-    },
-    {
-      "id": "holding:opening-barony-gu-41285-S06",
-      "name": {
-        "ko": "일산동구 남작령 직영지"
-      },
-      "holderPersonId": "K637",
-      "directLiegePersonId": "K1007",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4128551000",
-          "name": "경기도 고양시일산동구 식사동"
-        },
-        {
-          "id": "4128552500",
-          "name": "경기도 고양시일산동구 중산1동"
-        },
-        {
-          "id": "4128552600",
-          "name": "경기도 고양시일산동구 중산2동"
-        },
-        {
-          "id": "4128553000",
-          "name": "경기도 고양시일산동구 정발산동"
-        },
-        {
-          "id": "4128554000",
-          "name": "경기도 고양시일산동구 풍산동"
-        },
-        {
-          "id": "4128555100",
-          "name": "경기도 고양시일산동구 백석1동"
-        },
-        {
-          "id": "4128555200",
-          "name": "경기도 고양시일산동구 백석2동"
-        },
-        {
-          "id": "4128556000",
-          "name": "경기도 고양시일산동구 마두1동"
-        },
-        {
-          "id": "4128557000",
-          "name": "경기도 고양시일산동구 마두2동"
-        },
-        {
-          "id": "4128558000",
-          "name": "경기도 고양시일산동구 장항1동"
-        },
-        {
-          "id": "4128559000",
-          "name": "경기도 고양시일산동구 장항2동"
-        },
-        {
-          "id": "4128560000",
-          "name": "경기도 고양시일산동구 고봉동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41285-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "권하린",
-      "holderRoute": "/people/person-0637"
-    },
-    {
-      "id": "holding:opening-barony-gu-41287-S06",
-      "name": {
-        "ko": "일산서구 남작령 직영지"
-      },
-      "holderPersonId": "K637",
-      "directLiegePersonId": "K1007",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "4128751000",
-          "name": "경기도 고양시일산서구 일산1동"
-        },
-        {
-          "id": "4128752000",
-          "name": "경기도 고양시일산서구 일산2동"
-        },
-        {
-          "id": "4128753000",
-          "name": "경기도 고양시일산서구 일산3동"
-        },
-        {
-          "id": "4128754500",
-          "name": "경기도 고양시일산서구 탄현1동"
-        },
-        {
-          "id": "4128754600",
-          "name": "경기도 고양시일산서구 탄현2동"
-        },
-        {
-          "id": "4128755000",
-          "name": "경기도 고양시일산서구 주엽1동"
-        },
-        {
-          "id": "4128756000",
-          "name": "경기도 고양시일산서구 주엽2동"
-        },
-        {
-          "id": "4128757000",
-          "name": "경기도 고양시일산서구 대화동"
-        },
-        {
-          "id": "4128758000",
-          "name": "경기도 고양시일산서구 송포동"
-        },
-        {
-          "id": "4128760000",
-          "name": "경기도 고양시일산서구 덕이동"
-        },
-        {
-          "id": "4128761000",
-          "name": "경기도 고양시일산서구 가좌동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41287-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "권하린",
-      "holderRoute": "/people/person-0637"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41280-S06",
-      "name": "고양시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K1007",
-      "basis": "개막 행정 규모 그룹 41280(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "4128151000",
-        "4128152000",
-        "4128153000",
-        "4128154000",
-        "4128155000",
-        "4128156000",
-        "4128157600",
-        "4128157700",
-        "4128158000",
-        "4128159000",
-        "4128160000",
-        "4128161000",
-        "4128162100",
-        "4128162200",
-        "4128163000",
-        "4128164000",
-        "4128165000",
-        "4128165500",
-        "4128165600",
-        "4128166000",
-        "4128167000",
-        "4128551000",
-        "4128552500",
-        "4128552600",
-        "4128553000",
-        "4128554000",
-        "4128555100",
-        "4128555200",
-        "4128556000",
-        "4128557000",
-        "4128558000",
-        "4128559000",
-        "4128560000",
-        "4128751000",
-        "4128752000",
-        "4128753000",
-        "4128754500",
-        "4128754600",
-        "4128755000",
-        "4128756000",
-        "4128757000",
-        "4128758000",
-        "4128760000",
-        "4128761000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "size": 45,
     "quality": "정예",
@@ -1360,18 +796,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "서울역",
-    "type": "거점",
-    "station": "서울역",
-    "state": "S06",
-    "settlement": {
-      "name": "서울역 정착지",
-      "type": "정착지",
-      "description": "서울역 일대 고정 거점"
-    },
-    "note": "S06 서울역 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1405,7 +829,8 @@
     "결합": "계약동거"
   },
   "fields": {
-    "기여자": "[code-yeongyu](https://github.com/code-yeongyu)"
+    "기여자": "[code-yeongyu](https://github.com/code-yeongyu)",
+    "업무 위치": "사직동 행정동 범위. 온민의 문서 등재와 인준 미허가 구분·윤서린 관계·기록 수집 야망 보존; 청사 기록 인계 기준점 제안, 개인 청사 주소 확정 아님. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다."
   },
   "sections": {
     "생애": "2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.",
@@ -1415,7 +840,7 @@
     "관계": "윤서린은 문서 등재만 허락하고 인준은 하지 않는다. 김연규는 민웅기의 선배다.",
     "야망": "개막에 김연규는 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모아 대한민국이 이어져 있음을 남기려 한다. 윤서린은 온민의의 문서 등재만 허락하고 인준은 하지 않았다. 김연규는 등재를 인준으로 내세우지 않고 인준을 받으려 한다."
   },
-  "biography": "대한민국정부 온민의 수장. 서울 1통과 온전한 대한민국을 기록으로 남기려 하는 사람.\n\n- 기여자: [code-yeongyu](https://github.com/code-yeongyu)\n\n**생애.** 2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.\n\n**관직.** 품계 장관. 직함은 온민의 수장. 소속은 대한민국정부. 생업 별명은 기록 당직·문서 등재.\n\n**일화.** 윤서린은 온민의의 문서 등재를 허락하였다. 인준은 하지 않았다.\n\n**가문.** 대한민국정부 당직 가문.\n\n**관계.** 윤서린은 문서 등재만 허락하고 인준은 하지 않는다. 김연규는 민웅기의 선배다.\n\n**야망.** 개막에 김연규는 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모아 대한민국이 이어져 있음을 남기려 한다. 윤서린은 온민의의 문서 등재만 허락하고 인준은 하지 않았다. 김연규는 등재를 인준으로 내세우지 않고 인준을 받으려 한다.",
+  "biography": "대한민국정부 온민의 수장. 서울 1통과 온전한 대한민국을 기록으로 남기려 하는 사람.\n\n- 기여자: [code-yeongyu](https://github.com/code-yeongyu)\n- 업무 위치: 사직동 행정동 범위. 온민의 문서 등재와 인준 미허가 구분·윤서린 관계·기록 수집 야망 보존; 청사 기록 인계 기준점 제안, 개인 청사 주소 확정 아님. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n**생애.** 2126년 세대. 대한민국정부 당직 가문 소속 기록 당직자다.\n\n**관직.** 품계 장관. 직함은 온민의 수장. 소속은 대한민국정부. 생업 별명은 기록 당직·문서 등재.\n\n**일화.** 윤서린은 온민의의 문서 등재를 허락하였다. 인준은 하지 않았다.\n\n**가문.** 대한민국정부 당직 가문.\n\n**관계.** 윤서린은 문서 등재만 허락하고 인준은 하지 않는다. 김연규는 민웅기의 선배다.\n\n**야망.** 개막에 김연규는 온민의의 기록과 정부를 보좌하는 나라들의 조약을 모아 대한민국이 이어져 있음을 남기려 한다. 윤서린은 온민의의 문서 등재만 허락하고 인준은 하지 않았다. 김연규는 등재를 인준으로 내세우지 않고 인준을 받으려 한다.",
   "sources": [
     "Core-Characters"
   ],

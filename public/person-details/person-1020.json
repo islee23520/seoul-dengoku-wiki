@@ -4,7 +4,7 @@
   "title": "계약 검토 담당",
   "position": "계약 검토 담당",
   "characterId": "K1020",
-  "rank": "해당 없음 — 국가 관직을 맡지 않는다.",
+  "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 기록관 / 부 물류상",
   "gender": "여성",
@@ -19,7 +19,7 @@
   "ageAsOf": "2126-12-31",
   "sourceStatus": "owner-authored",
   "sourceRefs": [
-    "lore/characters/Cast-Unaffiliated.json#/content/36"
+    "lore/characters/Cast-Unaffiliated.json#/content/58"
   ],
   "familyTree": {
     "personId": "K1020",
@@ -76,7 +76,7 @@
         "timeline": [
           {
             "year": 2091,
-            "summary": "한민빈은 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다에서 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
+            "summary": "한민빈은 배급이 늦어지는 날을 겪은 뒤 남겨 둘 식량을 먼저 헤아려 다음 세대의 생활을 지탱한다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-Unaffiliated.json",
@@ -144,7 +144,7 @@
         "timeline": [
           {
             "year": 2091,
-            "summary": "박서정은 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다에서 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
+            "summary": "박서정은 겨울 식량이 줄어들자 말린 음식과 남은 곡식을 나누어 두고 자녀에게 저장 방법을 알려 준다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-Unaffiliated.json",
@@ -410,41 +410,23 @@
             "name": "한서경",
             "url": "/people/person-1020",
             "state": "S16",
-            "method": "card-lexicon",
-            "role": {
-              "display": "주 기록관 / 부 물류상",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-Unaffiliated.json",
-                  "pointer": "/content/36/items/5/ko",
-                  "quote": "생업: 주 기록관 / 부 물류상"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -452,58 +434,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/36/items/5/ko",
-                    "quote": "생업: 주 기록관 / 부 물류상"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/36/items/5/ko",
-                    "quote": "생업: 주 기록관 / 부 물류상"
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false
+              "unspent": 63
+            }
           }
         }
       },
@@ -526,41 +485,23 @@
             "name": "한서경",
             "url": "/people/person-1020",
             "state": "S16",
-            "method": "card-lexicon",
-            "role": {
-              "display": "주 기록관 / 부 물류상",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-Unaffiliated.json",
-                  "pointer": "/content/36/items/5/ko",
-                  "quote": "생업: 주 기록관 / 부 물류상"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -568,58 +509,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/36/items/5/ko",
-                    "quote": "생업: 주 기록관 / 부 물류상"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Unaffiliated.json",
-                    "pointer": "/content/36/items/5/ko",
-                    "quote": "생업: 주 기록관 / 부 물류상"
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false
+              "unspent": 63
+            }
           }
         }
       }
@@ -656,12 +574,12 @@
     "성명": "한서경 (Han Seogyeong)",
     "캐릭터 ID": "K1020",
     "출신 공동체": "출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다.",
-    "세대와 출생": "개막 세대. 출생연은 미정이다.",
+    "생년월일": "2083-12-12",
     "언어": "미정",
     "생업": "주 기록관 / 부 물류상",
     "소속": "정동노총(S16). 계약 실무자",
-    "품계": "해당 없음 — 국가 관직을 맡지 않는다.",
-    "직위": "계약 검토 담당",
+    "봉건 품계": "없음. 대한민국 정부가 수여한 관직도 없다.",
+    "민간·공동체 직무": "계약 검토 담당 대한민국 정부 관직이나 봉건 품계가 아니다.",
     "징집 이력": "미정",
     "무장 접근": "미정",
     "성격": "차분하고 꼼꼼하다. 모호한 지시는 그대로 넘기지 않고 책임 범위를 확인한다.",
@@ -670,10 +588,12 @@
     "통치 방식": "위임 범위 안에서 계약과 보증을 검토하고 정산·채권을 기록한다.",
     "관계": "고예진이 장부와 채무를 인수하는 과정에서 함께 일하기 시작하였다.",
     "촉발 사건": "계약 지시의 책임 범위를 확인할 필요가 생긴다.",
-    "플레이어 개입": "인계 기록과 계약 조건을 대조할 수 있다."
+    "플레이어 개입": "인계 기록과 계약 조건을 대조할 수 있다.",
+    "거주지": "수서동 역 밖 개별 거처(제안); 세 인물의 동거·임차권·소유권을 가정하지 않는다.",
+    "업무 위치": "수서동 역 밖 자문 기록 대조 공간에서 위임된 계약·보증·정산·채권 검토. 수서역 대합실의 생활 화물 인계·배급과 예약 화물 창고는 업무 수요 근거다. 역 시설 사용권·감사권·배차권·결제권·선로 보행권은 부여하지 않는다."
   },
   "sections": {},
-  "biography": "- 성명: 한서경 (Han Seogyeong)\n- 캐릭터 ID: K1020\n- 출신 공동체: 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다.\n- 세대와 출생: 개막 세대. 출생연은 미정이다.\n- 언어: 미정\n- 생업: 주 기록관 / 부 물류상\n- 소속: 정동노총(S16). 계약 실무자\n- 품계: 해당 없음 — 국가 관직을 맡지 않는다.\n- 직위: 계약 검토 담당\n- 징집 이력: 미정\n- 무장 접근: 미정\n- 성격: 차분하고 꼼꼼하다. 모호한 지시는 그대로 넘기지 않고 책임 범위를 확인한다.\n- 개인 야망: 보수와 책임이 분명하고 자기 판단이 존중되는 일을 계속하려 한다.\n- 공포: 미정\n- 통치 방식: 위임 범위 안에서 계약과 보증을 검토하고 정산·채권을 기록한다.\n- 관계: 고예진이 장부와 채무를 인수하는 과정에서 함께 일하기 시작하였다.\n- 촉발 사건: 계약 지시의 책임 범위를 확인할 필요가 생긴다.\n- 플레이어 개입: 인계 기록과 계약 조건을 대조할 수 있다.",
+  "biography": "- 성명: 한서경 (Han Seogyeong)\n- 캐릭터 ID: K1020\n- 출신 공동체: 출생지·성장지는 미정이며 수서의 고예진 자문 업무와 함께 일한다.\n- 생년월일: 2083-12-12\n- 언어: 미정\n- 생업: 주 기록관 / 부 물류상\n- 소속: 정동노총(S16). 계약 실무자\n- 봉건 품계: 없음. 대한민국 정부가 수여한 관직도 없다.\n- 민간·공동체 직무: 계약 검토 담당 대한민국 정부 관직이나 봉건 품계가 아니다.\n- 징집 이력: 미정\n- 무장 접근: 미정\n- 성격: 차분하고 꼼꼼하다. 모호한 지시는 그대로 넘기지 않고 책임 범위를 확인한다.\n- 개인 야망: 보수와 책임이 분명하고 자기 판단이 존중되는 일을 계속하려 한다.\n- 공포: 미정\n- 통치 방식: 위임 범위 안에서 계약과 보증을 검토하고 정산·채권을 기록한다.\n- 관계: 고예진이 장부와 채무를 인수하는 과정에서 함께 일하기 시작하였다.\n- 촉발 사건: 계약 지시의 책임 범위를 확인할 필요가 생긴다.\n- 플레이어 개입: 인계 기록과 계약 조건을 대조할 수 있다.\n- 거주지: 수서동 역 밖 개별 거처(제안); 세 인물의 동거·임차권·소유권을 가정하지 않는다.\n- 업무 위치: 수서동 역 밖 자문 기록 대조 공간에서 위임된 계약·보증·정산·채권 검토. 수서역 대합실의 생활 화물 인계·배급과 예약 화물 창고는 업무 수요 근거다. 역 시설 사용권·감사권·배차권·결제권·선로 보행권은 부여하지 않는다.\n- 한서경은 수서동의 역 밖 거처에 머물며 고예진의 자문 업무에서 계약과 보증, 정산·채권 기록을 위임 범위 안에서 검토한다. 모호한 지시에는 보수와 책임, 자기 판단의 범위를 확인한다. 출생지·성장지와 공포는 미정으로 둔다.",
   "sources": [
     "Cast-Unaffiliated"
   ],

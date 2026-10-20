@@ -2,9 +2,9 @@
   "id": "person-1002",
   "name": "성라현",
   "title": "작업반 전령",
-  "position": "작업반 전령 · 홍성군 영주",
+  "position": "작업반 전령",
   "characterId": "K1002",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "환승 전갈 전달",
   "gender": "여성",
@@ -553,47 +553,23 @@
             "name": "성라현",
             "url": "/people/person-1002",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/698/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -601,84 +577,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/698/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "부천",
-              "type": "초소 영지",
-              "station": "부천",
-              "state": "S02",
-              "settlement": {
-                "name": "부천 정착지",
-                "type": "정착지",
-                "description": "부천 일대 고정 거점"
-              },
-              "note": "S02 부천 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -702,47 +628,23 @@
             "name": "성라현",
             "url": "/people/person-1002",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/698/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -750,182 +652,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/698/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "부천",
-              "type": "초소 영지",
-              "station": "부천",
-              "state": "S02",
-              "settlement": {
-                "name": "부천 정착지",
-                "type": "정착지",
-                "description": "부천 일대 고정 거점"
-              },
-              "note": "S02 부천 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-44800-S02",
-      "name": {
-        "ko": "홍성군 공작령 직영지"
-      },
-      "holderPersonId": "K1002",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4480025000",
-          "name": "충청남도 홍성군 홍성읍"
-        },
-        {
-          "id": "4480025300",
-          "name": "충청남도 홍성군 광천읍"
-        },
-        {
-          "id": "4480025600",
-          "name": "충청남도 홍성군 홍북읍"
-        },
-        {
-          "id": "4480032000",
-          "name": "충청남도 홍성군 금마면"
-        },
-        {
-          "id": "4480033000",
-          "name": "충청남도 홍성군 홍동면"
-        },
-        {
-          "id": "4480034000",
-          "name": "충청남도 홍성군 장곡면"
-        },
-        {
-          "id": "4480035000",
-          "name": "충청남도 홍성군 은하면"
-        },
-        {
-          "id": "4480036000",
-          "name": "충청남도 홍성군 결성면"
-        },
-        {
-          "id": "4480037000",
-          "name": "충청남도 홍성군 서부면"
-        },
-        {
-          "id": "4480038000",
-          "name": "충청남도 홍성군 갈산면"
-        },
-        {
-          "id": "4480039000",
-          "name": "충청남도 홍성군 구항면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-44800-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-44800-S02",
-      "name": "홍성군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K1002",
-      "basis": "개막 행정 규모 그룹 44800(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4480025000",
-        "4480025300",
-        "4480025600",
-        "4480032000",
-        "4480033000",
-        "4480034000",
-        "4480035000",
-        "4480036000",
-        "4480037000",
-        "4480038000",
-        "4480039000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-44800-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -939,18 +717,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "부천",
-    "type": "초소 영지",
-    "station": "부천",
-    "state": "S02",
-    "settlement": {
-      "name": "부천 정착지",
-      "type": "정착지",
-      "description": "부천 일대 고정 거점"
-    },
-    "note": "S02 부천 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -987,19 +753,20 @@
     "생업": "환승 전갈 전달",
     "품계": "조합원",
     "직함": "작업반 전령",
+    "업무 위치": "구로5동. 성라현은 구로5동 평의회로 가는 작업반 전갈에 침수 선로의 폐쇄 쪽지를 붙인다. 붕괴 보고를 받은 시각을 변시람에게 알리고 다음 전령에게 출고 재개 확인을 맡긴다.",
     "가치관": "권위 −25 | 개방 30 | 무력 0 | 물질 30 | 공동 50 | 원칙 5 | 공개 45 | 자격 40 | 분산 15 | 변혁 30",
     "욕망": "갈망 40 | 독점 −40 | 위험 30 | 과시 −10 | 지속 0 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "관직": "품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 성라현은 구로5동 평의회로 가는 작업반 전갈에 침수 선로의 폐쇄 쪽지를 붙인다. 붕괴 보고를 받은 시각을 변시람에게 알리고 다음 전령에게 출고 재개 확인을 맡긴다.",
+    "관직": "품계 조합원. 직함은 작업반 전령. 붕괴 보고를 받은 시각을 변시람에게 알리고 다음 전령에게 출고 재개 확인을 맡긴다.",
+    "일화": "2125년 구로5동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
+    "관계": "성라현은 침수 폐쇄로 전갈이 멈춘 위치를 명소이에게 알린다. 명소이는 선로·침목을 조사해 우회 가능 여부를 확인하고 작업반이 미확인 길로 가지 않게 한다.",
+    "야망": "성라현은 침수 폐쇄 쪽지와 보고 시각을 빠짐없이 전달해 확인되지 않은 선로로 작업반 전갈이 떠나지 않게 하려 한다.",
+    "공포": "명소이가 침목을 확인하기 전에 침수 구간의 전갈을 우회로로 보내 작업반이 미확인 선로에 들어가는 것.",
+    "개입": "플레이어는 성라현과 붕괴 보고 시각을 대조해 폐쇄 쪽지를 변시람에게 전하거나, 다음 전령의 출고 재개 확인을 기다릴 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 0 | 물질 30 | 공동 50 | 원칙 5 | 공개 45 | 자격 40 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 −40 | 위험 30 | 과시 −10 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "성라현은 침목 확인 전에는 우회로가 열렸다고 전하지 않기로 한다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 성라현은 구로5동 평의회로 가는 작업반 전갈에 침수 선로의 폐쇄 쪽지를 붙인다. 붕괴 보고를 받은 시각을 변시람에게 알리고 다음 전령에게 출고 재개 확인을 맡긴다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 붕괴 보고를 받은 시각을 변시람에게 알리고 다음 전령에게 출고 재개 확인을 맡긴다.\n\n**일화.** 2125년 구로5동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 성라현은 침수 폐쇄로 전갈이 멈춘 위치를 명소이에게 알린다. 명소이는 선로·침목을 조사해 우회 가능 여부를 확인하고 작업반이 미확인 길로 가지 않게 한다.\n\n**야망.** 성라현은 침수 폐쇄 쪽지와 보고 시각을 빠짐없이 전달해 확인되지 않은 선로로 작업반 전갈이 떠나지 않게 하려 한다.\n\n**공포.** 명소이가 침목을 확인하기 전에 침수 구간의 전갈을 우회로로 보내 작업반이 미확인 선로에 들어가는 것.\n\n**개입.** 플레이어는 성라현과 붕괴 보고 시각을 대조해 폐쇄 쪽지를 변시람에게 전하거나, 다음 전령의 출고 재개 확인을 기다릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 30 | 무력 0 | 물질 30 | 공동 50 | 원칙 5 | 공개 45 | 자격 40 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 −40 | 위험 30 | 과시 −10 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

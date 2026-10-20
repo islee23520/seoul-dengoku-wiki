@@ -370,6 +370,32 @@ function htmlLinks(html) {
   return hrefs
 }
 
+function javascriptRetiredFormFailures(source, rel) {
+  const ast = ts.createSourceFile(rel, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.JS)
+  if (ast.parseDiagnostics.length) throw new Error(`E_ASSET_AST:${rel}`)
+  const failures = new Set()
+  function visit(node) {
+    if (ts.isStringLiteralLike(node) || ts.isTemplateHead(node) || ts.isTemplateMiddle(node) || ts.isTemplateTail(node)) {
+      const parent = node.parent
+      const moduleSpecifier = (ts.isImportDeclaration(parent) || ts.isExportDeclaration(parent)) && parent.moduleSpecifier === node
+        || ts.isCallExpression(parent) && parent.expression.kind === ts.SyntaxKind.ImportKeyword && parent.arguments[0] === node
+      // Vite's preload map stores module filenames, not reader copy. Only exempt actual
+      // emitted dependencies inside its generated map; the same string in a tooltip fails.
+      let declaration = parent
+      while (declaration && !ts.isVariableDeclaration(declaration)) declaration = declaration.parent
+      const preloadDependency = ts.isArrayLiteralExpression(parent)
+        && declaration && ts.isIdentifier(declaration.name) && declaration.name.text === '__vite__mapDeps'
+        && /^assets\/[\w./-]+\.(?:js|css)$/.test(node.text) && existsSync(join(distDir, node.text))
+      if (!moduleSpecifier && !preloadDependency) {
+        for (const failure of retiredFormFailures(node.text, rel)) failures.add(failure)
+      }
+    }
+    ts.forEachChild(node, visit)
+  }
+  visit(ast)
+  return [...failures]
+}
+
 function main() {
   const failures = []
   if (!existsSync(distDir) || !statSync(distDir).isDirectory()) {
@@ -418,7 +444,7 @@ function main() {
     const source = readFileSync(file, 'utf8')
     const rel = posixRel(wikiRoot, file)
     failures.push(...coinedPhraseFailures(source, rel))
-    failures.push(...retiredFormFailures(source, rel))
+    failures.push(...javascriptRetiredFormFailures(source, rel))
     failures.push(...ravelenExclusionFailures(source, rel))
   }
   for (const file of listFiles(join(wikiRoot, 'public')).filter((file) => file.endsWith('.json'))) {

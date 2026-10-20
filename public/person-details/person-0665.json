@@ -446,53 +446,23 @@
             "name": "박솔윤",
             "url": "/people/person-0665",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/467/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/469/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/468/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -500,84 +470,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/468/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/467/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 29
             }
           }
         }
@@ -601,53 +521,23 @@
             "name": "박솔윤",
             "url": "/people/person-0665",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/467/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/469/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/468/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -655,84 +545,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/468/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/467/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 29
             }
           }
         }
@@ -753,18 +593,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "삼산",
-    "type": "초소 영지",
-    "station": "삼산",
-    "state": "S02",
-    "settlement": {
-      "name": "삼산 정착지",
-      "type": "정착지",
-      "description": "삼산 일대 고정 거점"
-    },
-    "note": "S02 삼산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -801,19 +629,20 @@
     "생업": "환승 전갈 전달",
     "품계": "조합원",
     "직함": "작업반 전령",
+    "업무 위치": "구로5동. 박솔윤은 구로5동 평의회 전갈을 들고 눈에 막힌 환승 통로에서 부상자를 먼저 인계한다. 표강호의 규격 사본을 젖지 않게 따로 묶고 지연 시각을 길드 평의회 수령 칸에 적는다.",
     "가치관": "권위 −35 | 개방 15 | 무력 −5 | 물질 50 | 공동 40 | 원칙 15 | 공개 40 | 자격 55 | 분산 15 | 변혁 30",
     "욕망": "갈망 40 | 독점 35 | 위험 −30 | 과시 15 | 지속 0 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "관직": "품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 박솔윤은 구로5동 평의회 전갈을 들고 눈에 막힌 환승 통로에서 부상자를 먼저 인계한다. 표강호의 규격 사본을 젖지 않게 따로 묶고 지연 시각을 길드 평의회 수령 칸에 적는다.",
+    "관직": "품계 조합원. 직함은 작업반 전령. 표강호의 규격 사본을 젖지 않게 따로 묶고 지연 시각을 길드 평의회 수령 칸에 적는다.",
     "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "박솔윤은 작업반 전갈을 나르며 부상자 이송이 생기면 진우람에게 인원과 상태를 알린다. 진우람은 공방 진료에서 중증도를 확인하고 처방을 나눠 다음 교대에 필요한 진료를 잇는다.",
+    "야망": "박솔윤은 눈 막힌 통로에서 부상자를 먼저 인계하면서 젖지 않은 규격 사본과 전갈의 수령 시각도 남기려 한다.",
+    "공포": "눈에 막힌 통로에서 부상자 인계가 지연되고 진우람에게 상태가 전해지지 않는 것.",
+    "개입": "플레이어는 박솔윤과 부상자의 상태를 진우람에게 전하거나 규격 사본을 따로 묶어 평의회 수령 칸에 지연 시각을 남길 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −5 | 물질 50 | 공동 40 | 원칙 15 | 공개 40 | 자격 55 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 35 | 위험 −30 | 과시 15 | 지속 0 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "박솔윤은 부상자를 먼저 인계하면서도 규격 사본을 젖지 않게 지키고 전갈의 시각을 남긴다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 박솔윤은 구로5동 평의회 전갈을 들고 눈에 막힌 환승 통로에서 부상자를 먼저 인계한다. 표강호의 규격 사본을 젖지 않게 따로 묶고 지연 시각을 길드 평의회 수령 칸에 적는다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 표강호의 규격 사본을 젖지 않게 따로 묶고 지연 시각을 길드 평의회 수령 칸에 적는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박솔윤은 작업반 전갈을 나르며 부상자 이송이 생기면 진우람에게 인원과 상태를 알린다. 진우람은 공방 진료에서 중증도를 확인하고 처방을 나눠 다음 교대에 필요한 진료를 잇는다.\n\n**야망.** 박솔윤은 눈 막힌 통로에서 부상자를 먼저 인계하면서 젖지 않은 규격 사본과 전갈의 수령 시각도 남기려 한다.\n\n**공포.** 눈에 막힌 통로에서 부상자 인계가 지연되고 진우람에게 상태가 전해지지 않는 것.\n\n**개입.** 플레이어는 박솔윤과 부상자의 상태를 진우람에게 전하거나 규격 사본을 따로 묶어 평의회 수령 칸에 지연 시각을 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −5 | 물질 50 | 공동 40 | 원칙 15 | 공개 40 | 자격 55 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 35 | 위험 −30 | 과시 15 | 지속 0 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

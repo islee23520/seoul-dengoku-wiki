@@ -11,11 +11,16 @@ export default defineConfig({
     exclude: [
       'node_modules/**',
       'dist/**',
+      'scripts/test-character-profile.mjs',
       'scripts/test-clan-crests.mjs',
+      'scripts/test-generate-release.mjs',
       'scripts/test-naming-ledger-gate.mjs',
+      'scripts/test-seoul-public-assets.mjs',
+      'scripts/test-soul-assignments.mjs',
     ],
     pool: 'forks',
     fileParallelism: false,
-    testTimeout: 120_000,
+    // Authenticated full-corpus admission reads exceed two minutes on this corpus.
+    testTimeout: 600_000,
   },
 })

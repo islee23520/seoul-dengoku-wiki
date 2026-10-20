@@ -198,7 +198,7 @@
         "timeline": [
           {
             "year": 2103,
-            "summary": "윤승준은 영등포 정수 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "윤승준은 영등포 정수 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-01.json",
@@ -572,52 +572,23 @@
             "name": "박누리",
             "url": "/people/person-0004",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수질 검사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/39/items/1/ko",
-                  "quote": "생업: 수질 검사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/41/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -625,111 +596,41 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/39/items/1/ko",
-                    "quote": "생업: 수질 검사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/41/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/39/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "박누리 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       },
@@ -752,52 +653,23 @@
             "name": "박누리",
             "url": "/people/person-0004",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "수질 검사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/39/items/1/ko",
-                  "quote": "생업: 수질 검사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/41/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -805,111 +677,41 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/39/items/1/ko",
-                    "quote": "생업: 수질 검사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/41/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/39/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "박누리 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       }
@@ -934,7 +736,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -986,11 +787,12 @@
     "생업": "수질 검사",
     "품계": "당직장",
     "직함": "영등포 정수공정 감독",
+    "업무 위치": "가양2동. 가양2동에서 교대 표본을 봉인해 보내는 박누리는 영등포 정수공정의 탁도가 기준을 넘자 송수 밸브를 잠가 한재목의 공급 지시를 보류시킨다.",
     "가치관": "권위 55 | 개방 −15 | 무력 10 | 물질 35 | 공동 20 | 원칙 20 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25",
     "욕망": "갈망 5 | 독점 10 | 위험 −40 | 과시 −25 | 지속 30 | 지향 동성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 가양2동. 가양2동에서 교대 표본을 봉인해 보내는 박누리는 영등포 정수공정의 탁도가 기준을 넘자 송수 밸브를 잠가 한재목의 공급 지시를 보류시킨다.",
     "관직": "품계 당직장. 직함은 영등포 정수공정 감독. 매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 영등포 정수공정 감독 자리의 서명이 장부에 올랐다.",
     "관계": "실종된 임하준에게 펌프 세정 공정을 사제로 배웠고, 마곡의 정하린과 수질 표본을 동맹처럼 교환하며, 한재목의 급수 일정에는 복종하되 탁수 은폐에는 저항한다.",
@@ -998,7 +800,7 @@
     "공포": "탁수가 배급 구역에 퍼진 뒤에야 검사 결과가 공개되어, 정수 기능 자체가 정치 협상물로 전락하는 것.",
     "개입": "봉인 표본을 마곡까지 호송해 그의 잠금 결정을 정당화하거나, 표본을 바꿔치기한 자를 찾아 감독직을 위태롭게 할 수 있다."
   },
-  "biography": "시약 냄새에 예민하고 구두 보고를 싫어한다. 검증되지 않은 원수를 받으라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 수문국\n- 생업: 수질 검사\n- 품계: 당직장\n- 직함: 영등포 정수공정 감독\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 당직장. 직함은 영등포 정수공정 감독. 매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 영등포 정수공정 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 실종된 임하준에게 펌프 세정 공정을 사제로 배웠고, 마곡의 정하린과 수질 표본을 동맹처럼 교환하며, 한재목의 급수 일정에는 복종하되 탁수 은폐에는 저항한다.\n\n**야망.** 영등포 정수와 뚝섬 펌프의 점검 주기를 하나의 공개 공정표로 묶어 서부 원수의 품질 주권을 지킨다.\n\n**공포.** 탁수가 배급 구역에 퍼진 뒤에야 검사 결과가 공개되어, 정수 기능 자체가 정치 협상물로 전락하는 것.\n\n**개입.** 봉인 표본을 마곡까지 호송해 그의 잠금 결정을 정당화하거나, 표본을 바꿔치기한 자를 찾아 감독직을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 35 | 공동 20 | 원칙 20 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 5 | 독점 10 | 위험 −40 | 과시 −25 | 지속 30 | 지향 동성 | 결합 없음\n:::",
+  "biography": "시약 냄새에 예민하고 구두 보고를 싫어한다. 검증되지 않은 원수를 받으라는 정치적 압박을 모욕으로 여긴다.\n\n- 소속: 수문국\n- 생업: 수질 검사\n- 품계: 당직장\n- 직함: 영등포 정수공정 감독\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 영등포 정수공정 감독 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 가양2동. 가양2동에서 교대 표본을 봉인해 보내는 박누리는 영등포 정수공정의 탁도가 기준을 넘자 송수 밸브를 잠가 한재목의 공급 지시를 보류시킨다.\n\n**관직.** 품계 당직장. 직함은 영등포 정수공정 감독. 매 교대 수질 표본을 봉인해 안전심사 쪽으로 보내고, 기준 미달이면 선출 군주의 독촉이 있어도 송수 밸브를 잠근다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 영등포 정수공정 감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 실종된 임하준에게 펌프 세정 공정을 사제로 배웠고, 마곡의 정하린과 수질 표본을 동맹처럼 교환하며, 한재목의 급수 일정에는 복종하되 탁수 은폐에는 저항한다.\n\n**야망.** 영등포 정수와 뚝섬 펌프의 점검 주기를 하나의 공개 공정표로 묶어 서부 원수의 품질 주권을 지킨다.\n\n**공포.** 탁수가 배급 구역에 퍼진 뒤에야 검사 결과가 공개되어, 정수 기능 자체가 정치 협상물로 전락하는 것.\n\n**개입.** 봉인 표본을 마곡까지 호송해 그의 잠금 결정을 정당화하거나, 표본을 바꿔치기한 자를 찾아 감독직을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −15 | 무력 10 | 물질 35 | 공동 20 | 원칙 20 | 공개 20 | 자격 10 | 분산 −50 | 변혁 −25\n- 욕망: 갈망 5 | 독점 10 | 위험 −40 | 과시 −25 | 지속 30 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-01"
   ],

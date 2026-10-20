@@ -446,47 +446,23 @@
             "name": "차서환",
             "url": "/people/person-0735",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "능선 초계·매복 흔적 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/479/items/2/ko",
-                  "quote": "생업: 능선 초계·매복 흔적 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/481/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -494,105 +470,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/479/items/2/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/479/items/2/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/481/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/479/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "보문",
-              "type": "초소 영지",
-              "station": "보문",
-              "state": "S08",
-              "settlement": {
-                "name": "보문 정착지",
-                "type": "정착지",
-                "description": "보문 일대 고정 거점"
-              },
-              "note": "S08 보문 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -616,52 +527,23 @@
             "name": "차서환",
             "url": "/people/person-0735",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "능선 초계·매복 흔적 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/479/items/2/ko",
-                  "quote": "생업: 능선 초계·매복 흔적 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/480/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/481/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -669,110 +551,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/479/items/2/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/480/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/479/items/2/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/481/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/479/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "보문",
-              "type": "초소 영지",
-              "station": "보문",
-              "state": "S08",
-              "settlement": {
-                "name": "보문 정착지",
-                "type": "정착지",
-                "description": "보문 일대 고정 거점"
-              },
-              "note": "S08 보문 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -793,18 +605,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "보문",
-    "type": "초소 영지",
-    "station": "보문",
-    "state": "S08",
-    "settlement": {
-      "name": "보문 정착지",
-      "type": "정착지",
-      "description": "보문 일대 고정 거점"
-    },
-    "note": "S08 보문 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -845,15 +645,15 @@
     "욕망": "갈망 30 | 독점 −35 | 위험 5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 교도. 직함은 시장 순찰대.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 차서환은 노량진1동에서 능선 초계·매복 흔적 확인 업무를 맡는다.",
+    "관직": "품계 교도. 직함은 시장 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "매복 흔적 보고를 자기 직위의 인계 기록에 남겨 다음 당직으로 잇는다.",
     "야망": "시장 순찰대 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.",
     "공포": "시장 순찰대 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 능선 초계·매복 흔적 확인\n- 직함: 시장 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교도. 직함은 시장 순찰대.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 시장 순찰대 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 시장 순찰대 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 25 | 무력 5 | 물질 65 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 10\n- 욕망: 갈망 30 | 독점 −35 | 위험 5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 능선 초계·매복 흔적 확인\n- 직함: 시장 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 차서환은 노량진1동에서 능선 초계·매복 흔적 확인 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 시장 순찰대. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 매복 흔적 보고를 자기 직위의 인계 기록에 남겨 다음 당직으로 잇는다.\n\n**야망.** 시장 순찰대 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 시장 순찰대 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 25 | 무력 5 | 물질 65 | 공동 −20 | 원칙 −40 | 공개 15 | 자격 5 | 분산 30 | 변혁 10\n- 욕망: 갈망 30 | 독점 −35 | 위험 5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

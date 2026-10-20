@@ -2,9 +2,9 @@
   "id": "person-0525",
   "name": "양카태",
   "title": "증언 탐사원",
-  "position": "증언 탐사원 · 연수구 영주",
+  "position": "증언 탐사원",
   "characterId": "K525",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "인명 장부 구조·보관",
   "gender": "남성",
@@ -446,47 +446,23 @@
             "name": "양카태",
             "url": "/people/person-0525",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인명 장부 구조·보관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/325/items/0/ko",
-                  "quote": "생업: 인명 장부 구조·보관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/326/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -494,73 +470,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/325/items/0/ko",
-                    "quote": "생업: 인명 장부 구조·보관"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/326/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "안국",
-              "type": "초소 영지",
-              "station": "안국",
-              "state": "S06",
-              "settlement": {
-                "name": "안국 정착지",
-                "type": "정착지",
-                "description": "안국 일대 고정 거점"
-              },
-              "note": "S06 안국 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -584,47 +515,23 @@
             "name": "양카태",
             "url": "/people/person-0525",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인명 장부 구조·보관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/325/items/0/ko",
-                  "quote": "생업: 인명 장부 구조·보관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/326/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -632,191 +539,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/325/items/0/ko",
-                    "quote": "생업: 인명 장부 구조·보관"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/326/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "안국",
-              "type": "초소 영지",
-              "station": "안국",
-              "state": "S06",
-              "settlement": {
-                "name": "안국 정착지",
-                "type": "정착지",
-                "description": "안국 일대 고정 거점"
-              },
-              "note": "S06 안국 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-28185-S06",
-      "name": {
-        "ko": "연수구 공작령 직영지"
-      },
-      "holderPersonId": "K525",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "2818563000",
-          "name": "인천광역시 연수구 옥련1동"
-        },
-        {
-          "id": "2818564000",
-          "name": "인천광역시 연수구 옥련2동"
-        },
-        {
-          "id": "2818575000",
-          "name": "인천광역시 연수구 선학동"
-        },
-        {
-          "id": "2818576100",
-          "name": "인천광역시 연수구 연수1동"
-        },
-        {
-          "id": "2818576200",
-          "name": "인천광역시 연수구 연수2동"
-        },
-        {
-          "id": "2818576300",
-          "name": "인천광역시 연수구 연수3동"
-        },
-        {
-          "id": "2818576600",
-          "name": "인천광역시 연수구 청학동"
-        },
-        {
-          "id": "2818578000",
-          "name": "인천광역시 연수구 동춘1동"
-        },
-        {
-          "id": "2818579000",
-          "name": "인천광역시 연수구 동춘2동"
-        },
-        {
-          "id": "2818579500",
-          "name": "인천광역시 연수구 동춘3동"
-        },
-        {
-          "id": "2818582000",
-          "name": "인천광역시 연수구 송도1동"
-        },
-        {
-          "id": "2818583000",
-          "name": "인천광역시 연수구 송도2동"
-        },
-        {
-          "id": "2818584000",
-          "name": "인천광역시 연수구 송도3동"
-        },
-        {
-          "id": "2818585000",
-          "name": "인천광역시 연수구 송도4동"
-        },
-        {
-          "id": "2818586000",
-          "name": "인천광역시 연수구 송도5동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-28185-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-gu-28185-S06",
-      "name": "연수구 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K525",
-      "basis": "개막 행정 규모 그룹 gu:28185(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "2818563000",
-        "2818564000",
-        "2818575000",
-        "2818576100",
-        "2818576200",
-        "2818576300",
-        "2818576600",
-        "2818578000",
-        "2818579000",
-        "2818579500",
-        "2818582000",
-        "2818583000",
-        "2818584000",
-        "2818585000",
-        "2818586000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-gu-28185-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -830,18 +598,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "안국",
-    "type": "초소 영지",
-    "station": "안국",
-    "state": "S06",
-    "settlement": {
-      "name": "안국 정착지",
-      "type": "정착지",
-      "description": "안국 일대 고정 거점"
-    },
-    "note": "S06 안국 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -875,22 +631,22 @@
   },
   "fields": {
     "생업": "인명 장부 구조·보관",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "증언 탐사원",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
+    "담당 업무": "증언 탐사원",
     "가치관": "권위 15 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 5 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −20",
     "욕망": "갈망 40 | 독점 −10 | 위험 −20 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 주사. 직함은 증언 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 양카태의 인명 장부 구조·보관 업무는 종로1·2·3·4가동과 이어진다.",
+    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "증언 탐사원 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.",
-    "공포": "증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "인명 장부 구조·보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
+    "야망": "증언 탐사원 자리에서 인명 장부 구조·보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
+    "공포": "증언 탐사원 당직이 비어 인명 장부 구조·보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
+    "개입": "인명 장부 구조·보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 인명 장부 구조·보관\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 증언 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 증언 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 증언 탐사원 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 증언 탐사원 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 5 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −20\n- 욕망: 갈망 40 | 독점 −10 | 위험 −20 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자\n:::",
+  "biography": "역사 화재에서 꺼낸 인명 장부처럼 당직 기록도 먼저 챙긴다. 장부를 남기는 쪽으로 판단한다.\n\n- 생업: 인명 장부 구조·보관\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 증언 탐사원\n**생애.** 대합실 당직에서 자랐다. 증언 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 양카태의 인명 장부 구조·보관 업무는 종로1·2·3·4가동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 증언 탐사원.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 증언 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 인명 장부 구조·보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 증언 탐사원 자리에서 인명 장부 구조·보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 증언 탐사원 당직이 비어 인명 장부 구조·보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 인명 장부 구조·보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −35 | 물질 −30 | 공동 5 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −20\n- 욕망: 갈망 40 | 독점 −10 | 위험 −20 | 과시 30 | 지속 5 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

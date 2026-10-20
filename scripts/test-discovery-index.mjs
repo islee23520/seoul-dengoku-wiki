@@ -35,7 +35,9 @@ test('editorial writing rules stay outside the current published route set', asy
   const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
   const generated = (await readdir(new URL('../src/generated/world/', import.meta.url))).filter((name) => name.endsWith('.json'))
   const { approvedDocuments, publishedDocuments } = await import('./catalog-admission.mjs')
-  const expected = publishedDocuments(await approvedDocuments(new URL('../lore/', import.meta.url).pathname))
+  const { requireSeoulPublication } = await import('./check-seoul-scope.mjs')
+  const expected = publishedDocuments(await approvedDocuments(new URL('../lore/', import.meta.url).pathname),
+    await requireSeoulPublication(new URL('../', import.meta.url).pathname))
   assert.deepEqual(contract.documents.map((document) => document.route).sort(), expected.map((document) => document.route).sort())
   assert.equal(generated.length, expected.length)
   assert.ok(contract.documents.every(({ route }) => !route.includes('Writing-Rules')))

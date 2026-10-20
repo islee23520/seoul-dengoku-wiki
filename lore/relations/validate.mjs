@@ -29,6 +29,43 @@ export function resolveRelations(relationSource, people) {
   return { relations, errors };
 }
 
+export function resolveVassals(stateSource, states) {
+  const stateByName = new Map(states.map((state) => [state.name, state.id]));
+  // The approved Q2 ledger names operating parties, not present-day owners.
+  const historicalWork = new Map([
+    [1, ["수문국", "2097년 물길", "S01"]],
+    [7, ["동방사", "2098년 경비", "S05"]],
+    [10, ["태욱그룹", "2101년 공장", "S03"]],
+  ]);
+  const errors = [];
+  const rows = stateSource.content.find((block) => block.kind === "table" && block.anchor === "table-2").rows;
+  const vassals = rows.map((row, index) => {
+    const id = `V${String(index + 1).padStart(2, "0")}`;
+    const relation = ko(row[1]);
+    const vassal = { id, name: ko(row[0]), parentStateId: null, sourceAnchor: "table-2", sourceRow: index };
+    if (stateByName.has(relation) || relation === "종교 연합") {
+      vassal.parentStateId = stateByName.get(relation) ?? "union:religious";
+      vassal.relationKind = "current-vassal";
+    } else {
+      const historical = /^(.+?)의 (2097년 물길|2098년 경비|2101년 공장) 업무; 종교 연합은 후대 장부 분류$/.exec(relation);
+      const internal = /^(.+?) 내부 지점$/.exec(relation);
+      if (historical && historicalWork.get(index)?.[0] === historical[1] &&
+          historicalWork.get(index)?.[1] === historical[2] && historicalWork.get(index)?.[2] === stateByName.get(historical[1])) {
+        vassal.relationKind = "historical-work-later-ledger";
+        vassal.operatingStateId = stateByName.get(historical[1]);
+        vassal.laterLedgerClassificationId = "union:religious";
+      } else if (index === 12 && internal && internal[1] === "여의도출자연합회" && stateByName.get(internal[1]) === "S09") {
+        vassal.relationKind = "internal-branch";
+        vassal.operatingStateId = "S09";
+      } else {
+        errors.push(`${id}: unrecognized present relation or original operating party ${relation}`);
+      }
+    }
+    return vassal;
+  });
+  return { vassals, errors };
+}
+
 export function loadDataset() {
   const config = JSON.parse(readFileSync(path.join(HERE, "relations.json"), "utf8"));
   const stateSource = source("factions/Sixteen-States.json");
@@ -42,27 +79,33 @@ export function loadDataset() {
     id: ko(row[0]), name: ko(row[1]).split("(")[0],
     tier: ko(row[3]).split(",")[0], sourceAnchor: "table",
   }));
-  const stateByName = new Map(states.map((row) => [row.name, row.id]));
-  const vassals = table(stateSource, "table-2").rows.map((row, index) => ({
-    id: `V${String(index + 1).padStart(2, "0")}`,
-    name: ko(row[0]), parentStateId: stateByName.get(ko(row[1])) ?? (ko(row[1]) === "종교 연합" ? "union:religious" : undefined),
-    sourceAnchor: "table-2", sourceRow: index,
-  }));
+  const { vassals, errors: vassalErrors } = resolveVassals(stateSource, states);
   const people = [...registry.persons, ...config.provisionalPeople];
   const { relations, errors: relationErrors } = resolveRelations(relationSource, people);
   // Only paragraphs that begin with an explicit year are independently dated.
   // Undated paragraphs are deliberately not assigned a date from their chapter.
+  // An archived event keeps its identity when its paragraph survives with the
+  // same anchor, even if an approved revision no longer opens with the date.
+  const archivedEvents = (() => {
+    try {
+      const eventIds = JSON.parse(readFileSync(path.join(HERE, "..", "editorial", "seoul-narrative-census-events.json"), "utf8")).eventIds ?? [];
+      if (!Array.isArray(eventIds)) throw new TypeError("eventIds must be an array");
+      return eventIds;
+    } catch (error) {
+      if (error?.code === "ENOENT") return [];
+      throw new Error(`corrupt archived-event ledger: ${error.message}`, { cause: error });
+    }
+  })();
   const events = chronicle.content.filter((block) => block.kind === "paragraph")
     .flatMap((block) => {
       const match = /^(\d{4})년(?: (\d{1,2})월(?: (\d{1,2})일)?)?/.exec(block.text.ko);
-      if (!match) return [];
-      const date = [match[1], match[2], match[3]].filter(Boolean).map((part, index) =>
+      if (!match) return archivedEvents.includes(`E:${block.anchor}`) ? [{ id: `E:${block.anchor}`, date: null, sourceAnchor: block.anchor }] : [];      const date = [match[1], match[2], match[3]].filter(Boolean).map((part, index) =>
         index ? part.padStart(2, "0") : part).join("-");
       return [{ id: `E:${block.anchor}`, date, sourceAnchor: block.anchor }];
     });
   return {
     config, states, vassals, people, organizations: config.organizations,
-    relations, relationErrors, events, eventLinks: config.eventLinks,
+    relations, relationErrors, vassalErrors, events, eventLinks: config.eventLinks,
     sources: { stateSource, relationSource, castIndex, registry, values, chronicle },
   };
 }
@@ -71,6 +114,7 @@ export function validate(dataset) {
   const errors = [];
   const { config, states, vassals, people, organizations, relations, events, eventLinks, sources } = dataset;
   errors.push(...(dataset.relationErrors || []));
+  errors.push(...(dataset.vassalErrors || []));
   const unique = (rows, label) => {
     const ids = new Set();
     for (const row of rows) {
@@ -99,8 +143,20 @@ export function validate(dataset) {
   }
   for (const state of states) fk(state.sourceAnchor, stateAnchors, "state anchor");
   if (vassals.length !== 13) errors.push("vassals: expected 13");
+  const expectedVassals = resolveVassals(sources.stateSource, states);
+  errors.push(...expectedVassals.errors);
   for (const row of vassals) {
-    fk(row.parentStateId, polityIds, row.id);
+    const sourceRow = sources.stateSource.content.find((block) => block.anchor === row.sourceAnchor)?.rows[row.sourceRow];
+    if (!sourceRow || row.name !== ko(sourceRow[0]) || row.id !== `V${String(row.sourceRow + 1).padStart(2, "0")}`)
+      errors.push(`${row.id}: source vassal row mismatch`);
+    const expected = expectedVassals.vassals[row.sourceRow];
+    if (!expected || ["id", "name", "parentStateId", "relationKind", "operatingStateId", "laterLedgerClassificationId", "sourceAnchor", "sourceRow"]
+      .some((field) => row[field] !== expected[field])) errors.push(`${row.id}: source relation mismatch`);
+    if (row.relationKind === "current-vassal") fk(row.parentStateId, polityIds, row.id);
+    else if (row.parentStateId !== null || !["historical-work-later-ledger", "internal-branch"].includes(row.relationKind))
+      errors.push(`${row.id}: invalid current relation classification`);
+    if (row.operatingStateId !== undefined) fk(row.operatingStateId, stateIds, `${row.id}.operatingStateId`);
+    if (row.laterLedgerClassificationId !== undefined) fk(row.laterLedgerClassificationId, polityIds, `${row.id}.laterLedgerClassificationId`);
     fk(row.sourceAnchor, stateAnchors, row.id);
   }
   if (sources.registry.totalPeople !== 1022 || sources.registry.persons.length !== 1022 ||
@@ -204,6 +260,7 @@ export function validate(dataset) {
     if (!block) errors.push(`${row.id}: missing organization source anchor`);
   }
   for (const row of events) {
+    if (row.date === null) continue;
     fk(row.sourceAnchor, eventAnchors, row.id);
     if (!/^\d{4}(?:-\d{2}(?:-\d{2})?)?$/.test(row.date)) errors.push(`${row.id}: invalid date`);
   }
@@ -225,5 +282,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const dataset = loadDataset();
   const errors = validate(dataset);
   if (errors.length) { console.error(errors.join("\n")); process.exitCode = 1; }
-  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=1019 provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} courts=${dataset.config.courts.length} directRetainers=${dataset.config.directRetainers.length} ownerLieges=${dataset.config.ownerLieges?.edges?.length ?? 0} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
+  else console.log(`PASS states=${dataset.states.length} tiers=6/4/6 vassals=${dataset.vassals.length} approvedPeople=${dataset.sources.registry.persons.length} provisionalPeople=${dataset.config.provisionalPeople.length} organizations=${dataset.organizations.length} relations=${dataset.relations.length} courts=${dataset.config.courts.length} directRetainers=${dataset.config.directRetainers.length} ownerLieges=${dataset.config.ownerLieges?.edges?.length ?? 0} datedEvents=${dataset.events.length} eventLinks=${dataset.eventLinks.length}`);
 }

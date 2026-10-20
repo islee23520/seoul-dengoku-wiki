@@ -2,9 +2,9 @@
   "id": "person-0054",
   "name": "엄누리",
   "title": "후계시험 부품 감정 직공",
-  "position": "후계시험 부품 감정 직공 · 부여군 영주",
+  "position": "후계시험 부품 감정 직공",
   "characterId": "K054",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "부품 감정",
   "gender": "남성",
@@ -123,7 +123,7 @@
         "timeline": [
           {
             "year": 2078,
-            "summary": "엄승원은 신정 차량기지에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "엄승원은 신정 차량기지에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-02.json",
@@ -562,47 +562,23 @@
             "name": "엄누리",
             "url": "/people/person-0054",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "부품 감정",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/269/items/1/ko",
-                  "quote": "생업: 부품 감정"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/271/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -610,105 +586,40 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/269/items/1/ko",
-                    "quote": "생업: 부품 감정"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/271/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/269/items/1/ko",
-                    "quote": "생업: 부품 감정"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/269/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "상동",
-              "type": "초소 영지",
-              "station": "상동",
-              "state": "S02",
-              "settlement": {
-                "name": "상동 정착지",
-                "type": "정착지",
-                "description": "상동 일대 고정 거점"
-              },
-              "note": "S02 상동 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -732,47 +643,23 @@
             "name": "엄누리",
             "url": "/people/person-0054",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "부품 감정",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/269/items/1/ko",
-                  "quote": "생업: 부품 감정"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/271/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -780,228 +667,64 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/269/items/1/ko",
-                    "quote": "생업: 부품 감정"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/271/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/269/items/1/ko",
-                    "quote": "생업: 부품 감정"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/269/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "상동",
-              "type": "초소 영지",
-              "station": "상동",
-              "state": "S02",
-              "settlement": {
-                "name": "상동 정착지",
-                "type": "정착지",
-                "description": "상동 일대 고정 거점"
-              },
-              "note": "S02 상동 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-44760-S02",
-      "name": {
-        "ko": "부여군 공작령 직영지"
-      },
-      "holderPersonId": "K054",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4476025000",
-          "name": "충청남도 부여군 부여읍"
-        },
-        {
-          "id": "4476031000",
-          "name": "충청남도 부여군 규암면"
-        },
-        {
-          "id": "4476032000",
-          "name": "충청남도 부여군 은산면"
-        },
-        {
-          "id": "4476033000",
-          "name": "충청남도 부여군 외산면"
-        },
-        {
-          "id": "4476034000",
-          "name": "충청남도 부여군 내산면"
-        },
-        {
-          "id": "4476035000",
-          "name": "충청남도 부여군 구룡면"
-        },
-        {
-          "id": "4476036000",
-          "name": "충청남도 부여군 홍산면"
-        },
-        {
-          "id": "4476037000",
-          "name": "충청남도 부여군 옥산면"
-        },
-        {
-          "id": "4476038000",
-          "name": "충청남도 부여군 남면"
-        },
-        {
-          "id": "4476039000",
-          "name": "충청남도 부여군 충화면"
-        },
-        {
-          "id": "4476040000",
-          "name": "충청남도 부여군 양화면"
-        },
-        {
-          "id": "4476041000",
-          "name": "충청남도 부여군 임천면"
-        },
-        {
-          "id": "4476042000",
-          "name": "충청남도 부여군 장암면"
-        },
-        {
-          "id": "4476043000",
-          "name": "충청남도 부여군 세도면"
-        },
-        {
-          "id": "4476044000",
-          "name": "충청남도 부여군 석성면"
-        },
-        {
-          "id": "4476045000",
-          "name": "충청남도 부여군 초촌면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-44760-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-44760-S02",
-      "name": "부여군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K054",
-      "basis": "개막 행정 규모 그룹 44760(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4476025000",
-        "4476031000",
-        "4476032000",
-        "4476033000",
-        "4476034000",
-        "4476035000",
-        "4476036000",
-        "4476037000",
-        "4476038000",
-        "4476039000",
-        "4476040000",
-        "4476041000",
-        "4476042000",
-        "4476043000",
-        "4476044000",
-        "4476045000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-44760-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1015,18 +738,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "상동",
-    "type": "초소 영지",
-    "station": "상동",
-    "state": "S02",
-    "settlement": {
-      "name": "상동 정착지",
-      "type": "정착지",
-      "description": "상동 일대 고정 거점"
-    },
-    "note": "S02 상동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1063,11 +774,12 @@
     "생업": "부품 감정",
     "품계": "조합원",
     "직함": "후계시험 부품 감정 직공",
+    "업무 위치": "오류2동. 엄누리는 오류2동 천왕기지에서 허다온의 차륜 일지에 적힌 균열 부위를 실측한다. 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.",
     "가치관": "권위 −35 | 개방 15 | 무력 −10 | 물질 55 | 공동 40 | 원칙 10 | 공개 35 | 자격 65 | 분산 15 | 변혁 30",
     "욕망": "갈망 40 | 독점 10 | 위험 −30 | 과시 −30 | 지속 20 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 엄누리는 오류2동 천왕기지에서 허다온의 차륜 일지에 적힌 균열 부위를 실측한다. 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.",
     "관직": "품계 조합원. 직함은 후계시험 부품 감정 직공. 감정은 두 직공이 교차로 하고, 야간 단독 출고는 유치선 감독의 요청이어도 거부한다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 후계시험 부품 감정 직공 자리의 서명이 장부에 올랐다.",
     "관계": "허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.",
@@ -1075,7 +787,7 @@
     "공포": "조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.",
     "개입": "균열 부품을 창동까지 호송해 그의 감정을 확정하거나, 야간 출고 일지를 위조한 자를 찾아 직공을 고립시킬 수 있다."
   },
-  "biography": "시험 차륜의 미세 균열을 눈으로 먼저 찾고, 합격 도장을 밤에 찍으라는 속삭임을 배신으로 본다. 침묵하되 불량품은 작업대 위에 남겨 둔다.\n\n- 소속: 규격맹\n- 생업: 부품 감정\n- 품계: 조합원\n- 직함: 후계시험 부품 감정 직공\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 조합원. 직함은 후계시험 부품 감정 직공. 감정은 두 직공이 교차로 하고, 야간 단독 출고는 유치선 감독의 요청이어도 거부한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 후계시험 부품 감정 직공 자리의 서명이 장부에 올랐다.\n\n**관계.** 허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.\n\n**야망.** 북부 후계시험 부품의 조작 흔적을 규격 원장에 공개해, 숙련 승계가 비밀 장교망의 손에서 벗어나게 한다.\n\n**공포.** 조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.\n\n**개입.** 균열 부품을 창동까지 호송해 그의 감정을 확정하거나, 야간 출고 일지를 위조한 자를 찾아 직공을 고립시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −10 | 물질 55 | 공동 40 | 원칙 10 | 공개 35 | 자격 65 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 −30 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "시험 차륜의 미세 균열을 눈으로 먼저 찾고, 합격 도장을 밤에 찍으라는 속삭임을 배신으로 본다. 침묵하되 불량품은 작업대 위에 남겨 둔다.\n\n- 소속: 규격맹\n- 생업: 부품 감정\n- 품계: 조합원\n- 직함: 후계시험 부품 감정 직공\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 엄누리는 오류2동 천왕기지에서 허다온의 차륜 일지에 적힌 균열 부위를 실측한다. 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.\n\n**관직.** 품계 조합원. 직함은 후계시험 부품 감정 직공. 감정은 두 직공이 교차로 하고, 야간 단독 출고는 유치선 감독의 요청이어도 거부한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 후계시험 부품 감정 직공 자리의 서명이 장부에 올랐다.\n\n**관계.** 허다온의 차륜 정비 일지에 균열을 옮기고, 이홍원의 공개 기술시험을 지키려 하며, 박태겸의 양자 승계안이 시험 조작과 겹치는지 의심한다.\n\n**야망.** 북부 후계시험 부품의 조작 흔적을 규격 원장에 공개해, 숙련 승계가 비밀 장교망의 손에서 벗어나게 한다.\n\n**공포.** 조작된 부품이 창동 시험에 들어가 원로 자리가 바뀌고, 그 결과가 용산 배차표의 검은 칸과 하나로 묶이는 것.\n\n**개입.** 균열 부품을 창동까지 호송해 그의 감정을 확정하거나, 야간 출고 일지를 위조한 자를 찾아 직공을 고립시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −10 | 물질 55 | 공동 40 | 원칙 10 | 공개 35 | 자격 65 | 분산 15 | 변혁 30\n- 욕망: 갈망 40 | 독점 10 | 위험 −30 | 과시 −30 | 지속 20 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],

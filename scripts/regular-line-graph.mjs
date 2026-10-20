@@ -1,5 +1,9 @@
-export function regularLineGraph(source, stationIds) {
+export function regularLineGraph(source, stationIds, { excludedStationIds = [] } = {}) {
   const allowed = new Set(stationIds)
+  const excluded = new Set(excludedStationIds)
+  for (const id of excluded) {
+    if (allowed.has(id)) throw new Error(`E_REGULAR_LINE_EXCLUSION:${id}`)
+  }
   const linesByStation = new Map()
   const edges = new Map()
   const omitted = []
@@ -9,7 +13,10 @@ export function regularLineGraph(source, stationIds) {
       for (const station of path) {
         const id = source.stationIdsByCode[station.code]
         if (!id) continue
-        if (!allowed.has(id)) throw new Error(`E_REGULAR_LINE_STATION:${station.code}:${id}`)
+        if (!allowed.has(id)) {
+          if (excluded.has(id)) continue
+          throw new Error(`E_REGULAR_LINE_STATION:${id}:${station.code}`)
+        }
         if (!linesByStation.has(id)) linesByStation.set(id, new Set())
         linesByStation.get(id).add(lineId)
       }
@@ -18,7 +25,7 @@ export function regularLineGraph(source, stationIds) {
         const current = path[index]
         const a = source.stationIdsByCode[previous.code]
         const b = source.stationIdsByCode[current.code]
-        if (!a || !b) {
+        if (!a || !b || !allowed.has(a) || !allowed.has(b)) {
           omitted.push({ lineId, codes: [previous.code, current.code], names: [previous.name, current.name] })
           continue
         }

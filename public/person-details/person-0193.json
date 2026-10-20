@@ -451,57 +451,23 @@
             "name": "올렉산드르 셰우첸코",
             "url": "/people/person-0193",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "후계시험 부품 표본·환적 로트 봉인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/248/items/2/ko",
-                  "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/247/text/ko",
-                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -509,110 +475,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/248/items/2/ko",
-                    "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/247/text/ko",
-                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/248/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 80,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 80,
-              "unspent": 0,
-              "total": 80
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "가산디지털단지",
-              "type": "초소 영지",
-              "station": "가산디지털단지",
-              "state": "S07",
-              "settlement": {
-                "name": "가산디지털단지 정착지",
-                "type": "정착지",
-                "description": "가산디지털단지 일대 고정 거점"
-              },
-              "note": "S07 가산디지털단지 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -636,57 +532,23 @@
             "name": "올렉산드르 셰우첸코",
             "url": "/people/person-0193",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "후계시험 부품 표본·환적 로트 봉인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/248/items/2/ko",
-                  "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/247/text/ko",
-                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -694,110 +556,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/249/text/ko",
-                    "quote": "깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/250/text/ko",
-                    "quote": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/248/items/2/ko",
-                    "quote": "생업: 후계시험 부품 표본·환적 로트 봉인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/247/text/ko",
-                    "quote": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/248/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 80,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 80,
-              "unspent": 0,
-              "total": 80
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "가산디지털단지",
-              "type": "초소 영지",
-              "station": "가산디지털단지",
-              "state": "S07",
-              "settlement": {
-                "name": "가산디지털단지 정착지",
-                "type": "정착지",
-                "description": "가산디지털단지 일대 고정 거점"
-              },
-              "note": "S07 가산디지털단지 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -818,18 +610,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "가산디지털단지",
-    "type": "초소 영지",
-    "station": "가산디지털단지",
-    "state": "S07",
-    "settlement": {
-      "name": "가산디지털단지 정착지",
-      "type": "정착지",
-      "description": "가산디지털단지 일대 고정 거점"
-    },
-    "note": "S07 가산디지털단지 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": null,
@@ -866,7 +646,7 @@
     "욕망": "갈망 45 | 독점 −40 | 위험 −5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다. 올렉산드르 셰우첸코는 2064년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신정 차량기지에서 자랐다. 2126년에는 후계시험 부품 고발 보조 업무를 맡는다. 이반 셰우첸코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올렉산드르 셰우첸코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
+    "생애": "2064년생인 올렉산드르 셰우첸코는 2126년 개막기에 후계시험 부품 고발 보조 업무를 맡는다. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 업무는 탈선 직전 결함 보고를 계기로 시작됐다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 이반 셰우첸코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올렉산드르 셰우첸코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 올렉산드르 셰우첸코의 후계시험 부품 표본·환적 로트 봉인 업무는 한강로동과 연결된다.",
     "관직": "품계 주사. 직함은 후계시험 부품 고발 보조. 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.",
     "일화": "겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.",
     "관계": "아이작 워커의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 마르틴 호라크의 열람 청구에 표본 번호를 붙인다.",
@@ -874,7 +654,7 @@
     "공포": "고발 보조의 서명이 조작된 증거의 공범란에 남는 것.",
     "개입": "봉인 표본을 창동까지 호송하거나, 공범란에 이름을 넣으려는 쪽지를 폭로할 수 있다."
   },
-  "biography": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다. 침착하나 표본을 숨기는 반장을 참지 못한다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후계시험 부품 표본·환적 로트 봉인\n- 직함: 후계시험 부품 고발 보조\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 자리는 탈선 직전 결함 보고로 열렸다. 올렉산드르 셰우첸코는 2064년에 태어났다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 신정 차량기지에서 자랐다. 2126년에는 후계시험 부품 고발 보조 업무를 맡는다. 이반 셰우첸코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올렉산드르 셰우첸코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 후계시험 부품 고발 보조. 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.\n\n**일화.** 겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.\n\n**관계.** 아이작 워커의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 마르틴 호라크의 열람 청구에 표본 번호를 붙인다.\n\n**야망.** 북부 후계시험 부품 조작을 용산 환적 일지와 창동 시험 원장에 동시에 올려 제3의 전쟁 유도자를 이름 있는 줄로 남긴다.\n\n**공포.** 고발 보조의 서명이 조작된 증거의 공범란에 남는 것.\n\n**개입.** 봉인 표본을 창동까지 호송하거나, 공범란에 이름을 넣으려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 15 | 공동 −5 | 원칙 0 | 공개 −30 | 자격 60 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −40 | 위험 −5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "제동 마모와 깎인 베어링을 같은 손으로 가늠하고, 가문 구두 지시를 문장으로 다시 받지 않으면 고발을 올리지 않는다. 침착하나 표본을 숨기는 반장을 참지 못한다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 후계시험 부품 표본·환적 로트 봉인\n- 직함: 후계시험 부품 고발 보조\n**생애.** 2064년생인 올렉산드르 셰우첸코는 2126년 개막기에 후계시험 부품 고발 보조 업무를 맡는다. 신정 차량기지에서 자랐다. 후계시험 부품 고발 보조 업무는 탈선 직전 결함 보고를 계기로 시작됐다. 우크라이나계 가계는 동대문·용산 민간 운송 생활권에 뿌리를 두고 있다. 이반 셰우첸코는 2030년 동대문·용산 민간 운송 생활권에서 동대문 야간 공임과 용산 화물 인계 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 올렉산드르 셰우첸코의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 우크라이나어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 올렉산드르 셰우첸코의 후계시험 부품 표본·환적 로트 봉인 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 후계시험 부품 고발 보조. 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.\n\n**일화.** 겨울의 검은 배차표가 북부 후계시험 부품 조작을 드러내자 올렉산드르 셰우첸코는 용산에서 환적된 같은 로트를 봉인해 고발서에 붙였다.\n\n**관계.** 아이작 워커의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 마르틴 호라크의 열람 청구에 표본 번호를 붙인다.\n\n**야망.** 북부 후계시험 부품 조작을 용산 환적 일지와 창동 시험 원장에 동시에 올려 제3의 전쟁 유도자를 이름 있는 줄로 남긴다.\n\n**공포.** 고발 보조의 서명이 조작된 증거의 공범란에 남는 것.\n\n**개입.** 봉인 표본을 창동까지 호송하거나, 공범란에 이름을 넣으려는 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −10 | 물질 15 | 공동 −5 | 원칙 0 | 공개 −30 | 자격 60 | 분산 10 | 변혁 −5\n- 욕망: 갈망 45 | 독점 −40 | 위험 −5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-07"
   ],

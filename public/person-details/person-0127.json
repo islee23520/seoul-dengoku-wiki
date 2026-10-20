@@ -445,52 +445,23 @@
             "name": "차나루",
             "url": "/people/person-0127",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "정수구역 진료·시약 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/148/items/1/ko",
-                  "quote": "생업: 정수구역 진료·시약 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -498,143 +469,53 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 정수구역 진료·시약 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 정수구역 진료·시약 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 정수구역 진료·시약 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 32,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "차나루 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 3
+            }
           }
         }
       },
@@ -657,52 +538,23 @@
             "name": "차나루",
             "url": "/people/person-0127",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "정수구역 진료·시약 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/148/items/1/ko",
-                  "quote": "생업: 정수구역 진료·시약 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -710,143 +562,53 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 정수구역 진료·시약 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 정수구역 진료·시약 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 정수구역 진료·시약 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/148/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 32,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "차나루 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S05 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 3
+            }
           }
         }
       }
@@ -867,7 +629,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -923,15 +684,12 @@
     "욕망": "갈망 25 | 독점 −5 | 위험 −35 | 과시 5 | 지속 10 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 암사 정수 의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "관직": "품계 병장. 직함은 암사 정수 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다.",
-    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 암사 정수 의무원 자리의 서명이 장부에 올랐다.",
+    "관직": "품계 병장. 직함은 암사 정수 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다.\n\n일화. 차나루는 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다.",
     "관계": "최도윤의 시민 명부를 진료 쪽에서 받치는 보호체류에 가깝고, 정소율의 급수표와 치료 순서를 계약으로 나누며, 류은비에게 약재 호송을 빚진다.",
-    "야망": "동방사과 급수구역 노동자의 방역 주기를 보호계약 부칙으로 올려 강제복무 등록소에도 의무 최저선을 남긴다.",
-    "공포": "북한산보국문으로 도망친 가족의 빈 배급표가 환자 명부까지 지워, 의무소가 복무 거부의 낙인 창구가 되는 것.",
+    "야망": "동방사과 급수구역 노동자의 방역 주기를 보호계약 부칙으로 올려 강제복무 등록소에도 의무 최저선을 남긴다.\n\n공포. 차나루는 북한산보국문으로 도망친 가족의 빈 배급표가 환자 명부까지 지워, 의무소가 복무 거부의 낙인 창구가 되는 일을 두려워한다.",
     "개입": "대체 시약을 호송해 진료를 유지하거나, 거부 명단을 장교에게 넘겨 의무원을 위태롭게 할 수 있다."
   },
-  "biography": "탁수 설사 냄새를 상처보다 먼저 맡고, 급수표를 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 정수장 진료를 닫는다.\n\n- 소속: 동방사\n- 생업: 정수구역 진료·시약 관리\n- 품계: 병장\n- 직함: 암사 정수 의무원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 암사 정수 의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 병장. 직함은 암사 정수 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 암사 정수 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 최도윤의 시민 명부를 진료 쪽에서 받치는 보호체류에 가깝고, 정소율의 급수표와 치료 순서를 계약으로 나누며, 류은비에게 약재 호송을 빚진다.\n\n**야망.** 동방사과 급수구역 노동자의 방역 주기를 보호계약 부칙으로 올려 강제복무 등록소에도 의무 최저선을 남긴다.\n\n**공포.** 북한산보국문으로 도망친 가족의 빈 배급표가 환자 명부까지 지워, 의무소가 복무 거부의 낙인 창구가 되는 것.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 거부 명단을 장교에게 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −20 | 무력 30 | 물질 20 | 공동 25 | 원칙 −15 | 공개 −35 | 자격 −15 | 분산 −55 | 변혁 −20\n- 욕망: 갈망 25 | 독점 −5 | 위험 −35 | 과시 5 | 지속 10 | 지향 양성 | 결합 다자\n:::",
+  "biography": "차나루는 탁수 설사 냄새를 상처보다 먼저 맡고, 급수표를 치료 순서로 바꾸라는 쪽지를 찢는다. 온화하나 소독수가 비면 정수장 진료를 닫는다.\n\n- 소속: 동방사\n- 생업: 정수구역 진료·시약 관리\n- 품계: 병장\n- 직함: 암사 정수 의무원\n생애. 차나루는 3세대에 태어났다. 차나루는 영등포 정수 당직에서 자랐다. 차나루의 암사 정수 의무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 차나루는 암사3동과 연결된 업무에서 정수 진료·시약을 맡고 등록 거부 명부를 따로 둔다. 암사역과 정수센터는 다른 시설이다.\n\n**관직.** 품계 병장. 직함은 암사 정수 의무원. 환자 명부와 시약 묶음을 동시에 게시하고, 가족 단위 등록 거부자를 장교 수첩과 분리해 행정청에만 넘긴다.\n\n일화. 차나루는 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다.\n\n**관계.** 최도윤의 시민 명부를 진료 쪽에서 받치는 보호체류에 가깝고, 정소율의 급수표와 치료 순서를 계약으로 나누며, 류은비에게 약재 호송을 빚진다.\n\n**야망.** 동방사과 급수구역 노동자의 방역 주기를 보호계약 부칙으로 올려 강제복무 등록소에도 의무 최저선을 남긴다.\n\n공포. 차나루는 북한산보국문으로 도망친 가족의 빈 배급표가 환자 명부까지 지워, 의무소가 복무 거부의 낙인 창구가 되는 일을 두려워한다.\n\n**개입.** 대체 시약을 호송해 진료를 유지하거나, 거부 명단을 장교에게 넘겨 의무원을 위태롭게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −20 | 무력 30 | 물질 20 | 공동 25 | 원칙 −15 | 공개 −35 | 자격 −15 | 분산 −55 | 변혁 −20\n- 욕망: 갈망 25 | 독점 −5 | 위험 −35 | 과시 5 | 지속 10 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-05"
   ],

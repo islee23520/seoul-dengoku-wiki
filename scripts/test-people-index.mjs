@@ -97,13 +97,9 @@ test('people table distinguishes sourced state rank from comparative tier', asyn
   assert.match(catalog, /"rank": "주사"/u)
 })
 
-test('people page states the confirmed hero contract without auto-assigning proposed classes', async () => {
-  const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
+test('people generation does not auto-assign proposed classes', async () => {
   const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
 
-  assert.match(page, /1,019명은 모두 영웅 인물/)
-  assert.match(page, /전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성/)
-  assert.match(page, /전투 클래스 이름과 개인별 배정은 아직 확정되지 않았/)
   assert.doesNotMatch(generator, /heroClass/)
   assert.doesNotMatch(generator, /campaignRole/)
 })

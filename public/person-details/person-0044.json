@@ -2,9 +2,9 @@
   "id": "person-0044",
   "name": "제하온",
   "title": "숙련점수 원장 기록관",
-  "position": "숙련점수 원장 기록관 · 광명시 영주",
+  "position": "숙련점수 원장 기록관",
   "characterId": "K044",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "숙련점수 기록",
   "gender": "여성",
@@ -552,41 +552,23 @@
             "name": "제하온",
             "url": "/people/person-0044",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "숙련점수 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/192/items/1/ko",
-                  "quote": "생업: 숙련점수 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -594,68 +576,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/192/items/1/ko",
-                    "quote": "생업: 숙련점수 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 8,
-              "unspent": 67,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "상동",
-              "type": "초소 영지",
-              "station": "상동",
-              "state": "S02",
-              "settlement": {
-                "name": "상동 정착지",
-                "type": "정착지",
-                "description": "상동 일대 고정 거점"
-              },
-              "note": "S02 상동 일대 관할 영지"
+              "unspent": 67
             }
           }
         }
@@ -679,41 +621,23 @@
             "name": "제하온",
             "url": "/people/person-0044",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "숙련점수 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/192/items/1/ko",
-                  "quote": "생업: 숙련점수 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -721,206 +645,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/192/items/1/ko",
-                    "quote": "생업: 숙련점수 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 8,
-              "unspent": 67,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "상동",
-              "type": "초소 영지",
-              "station": "상동",
-              "state": "S02",
-              "settlement": {
-                "name": "상동 정착지",
-                "type": "정착지",
-                "description": "상동 일대 고정 거점"
-              },
-              "note": "S02 상동 일대 관할 영지"
+              "unspent": 67
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41210-S02",
-      "name": {
-        "ko": "광명시 공작령 직영지"
-      },
-      "holderPersonId": "K044",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4121051000",
-          "name": "경기도 광명시 광명1동"
-        },
-        {
-          "id": "4121052000",
-          "name": "경기도 광명시 광명2동"
-        },
-        {
-          "id": "4121054000",
-          "name": "경기도 광명시 광명3동"
-        },
-        {
-          "id": "4121055000",
-          "name": "경기도 광명시 광명4동"
-        },
-        {
-          "id": "4121056000",
-          "name": "경기도 광명시 광명5동"
-        },
-        {
-          "id": "4121057000",
-          "name": "경기도 광명시 광명6동"
-        },
-        {
-          "id": "4121058000",
-          "name": "경기도 광명시 광명7동"
-        },
-        {
-          "id": "4121059000",
-          "name": "경기도 광명시 철산1동"
-        },
-        {
-          "id": "4121060000",
-          "name": "경기도 광명시 철산2동"
-        },
-        {
-          "id": "4121061000",
-          "name": "경기도 광명시 철산3동"
-        },
-        {
-          "id": "4121062000",
-          "name": "경기도 광명시 철산4동"
-        },
-        {
-          "id": "4121063100",
-          "name": "경기도 광명시 하안1동"
-        },
-        {
-          "id": "4121063200",
-          "name": "경기도 광명시 하안2동"
-        },
-        {
-          "id": "4121063300",
-          "name": "경기도 광명시 하안3동"
-        },
-        {
-          "id": "4121063400",
-          "name": "경기도 광명시 하안4동"
-        },
-        {
-          "id": "4121064000",
-          "name": "경기도 광명시 소하1동"
-        },
-        {
-          "id": "4121065000",
-          "name": "경기도 광명시 소하2동"
-        },
-        {
-          "id": "4121065500",
-          "name": "경기도 광명시 일직동"
-        },
-        {
-          "id": "4121066000",
-          "name": "경기도 광명시 학온동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41210-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41210-S02",
-      "name": "광명시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K044",
-      "basis": "개막 행정 규모 그룹 41210(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4121051000",
-        "4121052000",
-        "4121054000",
-        "4121055000",
-        "4121056000",
-        "4121057000",
-        "4121058000",
-        "4121059000",
-        "4121060000",
-        "4121061000",
-        "4121062000",
-        "4121063100",
-        "4121063200",
-        "4121063300",
-        "4121063400",
-        "4121064000",
-        "4121065000",
-        "4121065500",
-        "4121066000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41210-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -934,18 +704,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "상동",
-    "type": "초소 영지",
-    "station": "상동",
-    "state": "S02",
-    "settlement": {
-      "name": "상동 정착지",
-      "type": "정착지",
-      "description": "상동 일대 고정 거점"
-    },
-    "note": "S02 상동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -982,11 +740,12 @@
     "생업": "숙련점수 기록",
     "품계": "조합원",
     "직함": "숙련점수 원장 기록관",
+    "업무 위치": "구로2동. 제하온은 구로2동에서 김나율의 교대·시민권 명부를 숙련점수 원장과 나란히 펼친다. 위조 도장이 발견되면 원본 칸을 보존하고 장우석의 규격 날인과 대조한 결과를 백온의 명단을 맡은 당직으로 보낸다.",
     "가치관": "권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30",
     "욕망": "갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 제하온은 구로2동에서 김나율의 교대·시민권 명부를 숙련점수 원장과 나란히 펼친다. 위조 도장이 발견되면 원본 칸을 보존하고 장우석의 규격 날인과 대조한 결과를 백온의 명단을 맡은 당직으로 보낸다.",
     "관직": "품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.",
     "관계": "김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.",
@@ -994,7 +753,7 @@
     "공포": "경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
     "개입": "숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다."
   },
-  "biography": "원칙적이고 문장의 빈칸을 증오한다. 태업 명단을 밤새 대조하는 서기의 숫자를 원장 밖으로 밀어내지 않는다.\n\n- 소속: 규격맹\n- 생업: 숙련점수 기록\n- 품계: 조합원\n- 직함: 숙련점수 원장 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.\n\n**야망.** 복구복무자의 시민권과 숙련 점수를 같은 원장에 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30\n- 욕망: 갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "원칙적이고 문장의 빈칸을 증오한다. 태업 명단을 밤새 대조하는 서기의 숫자를 원장 밖으로 밀어내지 않는다.\n\n- 소속: 규격맹\n- 생업: 숙련점수 기록\n- 품계: 조합원\n- 직함: 숙련점수 원장 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 숙련점수 원장 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 제하온은 구로2동에서 김나율의 교대·시민권 명부를 숙련점수 원장과 나란히 펼친다. 위조 도장이 발견되면 원본 칸을 보존하고 장우석의 규격 날인과 대조한 결과를 백온의 명단을 맡은 당직으로 보낸다.\n\n**관직.** 품계 조합원. 직함은 숙련점수 원장 기록관. 작업반 교대와 숙련 점수를 공개 칠판에 옮기고, 시민권 미등록 노동은 길드 평의회 안건 원장에 올리지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 숙련점수 원장 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 김나율의 서기 명부를 원장으로 고정하는 계약이고, 장우석의 규격 날인과 숙련 점수를 교차검증하며, 백온의 난민 시민권 요구를 기록으로 지지한다.\n\n**야망.** 복구복무자의 시민권과 숙련 점수를 같은 원장에 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 숙련 명부를 지켜 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 기록관을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −20 | 물질 40 | 공동 45 | 원칙 35 | 공개 30 | 자격 50 | 분산 15 | 변혁 30\n- 욕망: 갈망 30 | 독점 −35 | 위험 −10 | 과시 0 | 지속 −20 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

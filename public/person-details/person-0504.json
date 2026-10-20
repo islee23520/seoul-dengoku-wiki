@@ -552,52 +552,23 @@
             "name": "이늘민",
             "url": "/people/person-0504",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/358/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/359/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,100 +576,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/359/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/358/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청명",
-              "type": "초소 영지",
-              "station": "청명",
-              "state": "S01",
-              "settlement": {
-                "name": "청명 정착지",
-                "type": "정착지",
-                "description": "청명 일대 고정 거점"
-              },
-              "note": "S01 청명 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -722,52 +633,23 @@
             "name": "이늘민",
             "url": "/people/person-0504",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/358/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/359/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -775,100 +657,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/359/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/358/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "청명",
-              "type": "초소 영지",
-              "station": "청명",
-              "state": "S01",
-              "settlement": {
-                "name": "청명 정착지",
-                "type": "정착지",
-                "description": "청명 일대 고정 거점"
-              },
-              "note": "S01 청명 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -889,18 +711,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "청명",
-    "type": "초소 영지",
-    "station": "청명",
-    "state": "S01",
-    "settlement": {
-      "name": "청명 정착지",
-      "type": "정착지",
-      "description": "청명 일대 고정 거점"
-    },
-    "note": "S01 청명 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -937,19 +747,20 @@
     "생업": "대합실 당직",
     "품계": "주사",
     "직함": "관로 탐사원",
+    "업무 위치": "영등포본동. 이늘민은 태업 작업반과 다음 교대 조건을 밤새 나누고 합의한 교대 기록을 영등포본동 대합실의 변고운에게 건넨다.",
     "가치관": "권위 40 | 개방 −10 | 무력 20 | 물질 30 | 공동 25 | 원칙 10 | 공개 0 | 자격 0 | 분산 −40 | 변혁 −10",
     "욕망": "갈망 25 | 독점 −30 | 위험 −5 | 과시 10 | 지속 40 | 지향 양성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 주사. 직함은 관로 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포본동. 이늘민은 태업 작업반과 다음 교대 조건을 밤새 나누고 합의한 교대 기록을 영등포본동 대합실의 변고운에게 건넨다.",
+    "관직": "품계 주사. 직함은 관로 탐사원이다. 이늘민은 태업 작업반과 다음 교대 조건을 밤새 나누고 합의한 교대 기록을 영등포본동 대합실의 변고운에게 건넨다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.",
     "야망": "관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
     "공포": "관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 주사\n- 직함: 관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 관로 탐사원. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.\n\n**야망.** 관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −10 | 무력 20 | 물질 30 | 공동 25 | 원칙 10 | 공개 0 | 자격 0 | 분산 −40 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −30 | 위험 −5 | 과시 10 | 지속 40 | 지향 양성 | 결합 단혼\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 대합실 당직\n- 품계: 주사\n- 직함: 관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 영등포본동. 이늘민은 태업 작업반과 다음 교대 조건을 밤새 나누고 합의한 교대 기록을 영등포본동 대합실의 변고운에게 건넨다.\n\n**관직.** 품계 주사. 직함은 관로 탐사원이다. 이늘민은 태업 작업반과 다음 교대 조건을 밤새 나누고 합의한 교대 기록을 영등포본동 대합실의 변고운에게 건넨다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 변고운의 지휘 아래 대합실 교대와 관로 탐사를 맡는다.\n\n**야망.** 관로 탐사원 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 관로 탐사원 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 40 | 개방 −10 | 무력 20 | 물질 30 | 공동 25 | 원칙 10 | 공개 0 | 자격 0 | 분산 −40 | 변혁 −10\n- 욕망: 갈망 25 | 독점 −30 | 위험 −5 | 과시 10 | 지속 40 | 지향 양성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-01"
   ],

@@ -2,11 +2,11 @@
   "id": "person-0283",
   "name": "복두",
   "title": "북부 선로 탐사원",
-  "position": "바깥 작업장 선로 탐사원",
+  "position": "북부 선로 탐사원",
   "characterId": "K282",
   "rank": "사원",
   "commonTier": "T5",
-  "occupation": "바깥 선로 실측·목격 대조",
+  "occupation": "서울 북부 선로 실측·목격 대조",
   "gender": "남성",
   "stage": "S2",
   "state": "S11",
@@ -120,7 +120,7 @@
         "timeline": [
           {
             "year": 2068,
-            "summary": "복승영은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "복승영은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -551,47 +551,23 @@
             "name": "복두",
             "url": "/people/person-0283",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "바깥 선로 실측·목격 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 바깥 선로 실측·목격 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,95 +575,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 바깥 선로 실측·목격 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 바깥 선로 실측·목격 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "복두 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -710,47 +626,23 @@
             "name": "복두",
             "url": "/people/person-0283",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "바깥 선로 실측·목격 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 바깥 선로 실측·목격 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -758,95 +650,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 바깥 선로 실측·목격 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 바깥 선로 실측·목격 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "복두 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
@@ -867,7 +699,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -915,23 +746,23 @@
     "결합": "단혼"
   },
   "fields": {
-    "생업": "바깥 선로 실측·목격 대조",
+    "생업": "서울 북부 선로 실측·목격 대조",
     "소속": "성하그룹",
     "품계": "사원",
-    "직함": "바깥 작업장 선로 탐사원",
+    "직함": "북부 선로 탐사원",
     "가치관": "권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0",
     "욕망": "갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
+    "생애": "대합실 당직에서 자랐다. 북부 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 복두는 역삼1동에서 서울 북부 선로 실측·목격 대조 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다",
+    "관직": "품계 사원. 직함은 북부 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
     "일화": "제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.",
     "관계": "권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.",
     "야망": "북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.",
     "공포": "위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.",
     "개입": "공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다."
   },
-  "biography": "닫힌 터널을 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 침수 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 바깥 선로 실측·목격 대조\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 바깥 작업장 선로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 바깥 작업장 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 사원. 직함은 바깥 작업장 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.\n\n**야망.** 북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.\n\n**공포.** 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "닫힌 터널을 보면 발부터 향하고, 소문만으로 우회로를 그리는 일을 경멸한다. 침수 자국이 하루만 낡아도 지도를 다시 그린다.\n\n- 생업: 서울 북부 선로 실측·목격 대조\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 북부 선로 탐사원\n**생애.** 대합실 당직에서 자랐다. 북부 선로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 복두는 역삼1동에서 서울 북부 선로 실측·목격 대조 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다\n\n**관직.** 품계 사원. 직함은 북부 선로 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 제동 불량 정차 구간의 선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다.\n\n**야망.** 북부 철도의 우회로를 공개 원판에 묶어 사택 점거나 급수 불안이 기지 출고를 막지 못하게 한다.\n\n**공포.** 위조 선로도가 시험 차륜 호송로로 쓰여 결함 열차가 강남역 사택 아래로 들어가는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 회장실에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −15 | 무력 −20 | 물질 30 | 공동 20 | 원칙 15 | 공개 5 | 자격 60 | 분산 15 | 변혁 0\n- 욕망: 갈망 0 | 독점 −30 | 위험 −10 | 과시 15 | 지속 5 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

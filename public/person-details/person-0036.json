@@ -560,52 +560,23 @@
             "name": "임채원",
             "url": "/people/person-0036",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/27/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/28/text/ko",
-                    "quote": "출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,106 +584,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/28/text/ko",
-                    "quote": "출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/27/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "임채원 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -735,52 +641,23 @@
             "name": "임채원",
             "url": "/people/person-0036",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/27/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/28/text/ko",
-                    "quote": "출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -788,371 +665,59 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/28/text/ko",
-                    "quote": "출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/27/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "임채원 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-41192-S02",
-      "name": {
-        "ko": "원미구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K036",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4119251000",
-          "name": "경기도 부천시원미구 심곡1동"
-        },
-        {
-          "id": "4119252000",
-          "name": "경기도 부천시원미구 심곡2동"
-        },
-        {
-          "id": "4119253000",
-          "name": "경기도 부천시원미구 심곡3동"
-        },
-        {
-          "id": "4119254000",
-          "name": "경기도 부천시원미구 원미1동"
-        },
-        {
-          "id": "4119255000",
-          "name": "경기도 부천시원미구 원미2동"
-        },
-        {
-          "id": "4119256000",
-          "name": "경기도 부천시원미구 소사동"
-        },
-        {
-          "id": "4119257000",
-          "name": "경기도 부천시원미구 역곡1동"
-        },
-        {
-          "id": "4119258000",
-          "name": "경기도 부천시원미구 역곡2동"
-        },
-        {
-          "id": "4119259000",
-          "name": "경기도 부천시원미구 춘의동"
-        },
-        {
-          "id": "4119260000",
-          "name": "경기도 부천시원미구 도당동"
-        },
-        {
-          "id": "4119261000",
-          "name": "경기도 부천시원미구 약대동"
-        },
-        {
-          "id": "4119262000",
-          "name": "경기도 부천시원미구 중동"
-        },
-        {
-          "id": "4119263000",
-          "name": "경기도 부천시원미구 중1동"
-        },
-        {
-          "id": "4119264000",
-          "name": "경기도 부천시원미구 중2동"
-        },
-        {
-          "id": "4119265000",
-          "name": "경기도 부천시원미구 중3동"
-        },
-        {
-          "id": "4119266000",
-          "name": "경기도 부천시원미구 중4동"
-        },
-        {
-          "id": "4119267000",
-          "name": "경기도 부천시원미구 상동"
-        },
-        {
-          "id": "4119268000",
-          "name": "경기도 부천시원미구 상1동"
-        },
-        {
-          "id": "4119269000",
-          "name": "경기도 부천시원미구 상2동"
-        },
-        {
-          "id": "4119270000",
-          "name": "경기도 부천시원미구 상3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41192-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    },
-    {
-      "id": "holding:opening-barony-gu-41194-S02",
-      "name": {
-        "ko": "소사구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K036",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4119451000",
-          "name": "경기도 부천시소사구 심곡본1동"
-        },
-        {
-          "id": "4119452000",
-          "name": "경기도 부천시소사구 심곡본동"
-        },
-        {
-          "id": "4119453000",
-          "name": "경기도 부천시소사구 소사본동"
-        },
-        {
-          "id": "4119454000",
-          "name": "경기도 부천시소사구 소사본1동"
-        },
-        {
-          "id": "4119455000",
-          "name": "경기도 부천시소사구 범박동"
-        },
-        {
-          "id": "4119456000",
-          "name": "경기도 부천시소사구 옥길동"
-        },
-        {
-          "id": "4119457000",
-          "name": "경기도 부천시소사구 괴안동"
-        },
-        {
-          "id": "4119458000",
-          "name": "경기도 부천시소사구 역곡3동"
-        },
-        {
-          "id": "4119459000",
-          "name": "경기도 부천시소사구 송내1동"
-        },
-        {
-          "id": "4119460000",
-          "name": "경기도 부천시소사구 송내2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41194-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    },
-    {
-      "id": "holding:opening-barony-gu-41196-S02",
-      "name": {
-        "ko": "오정구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K036",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4119651000",
-          "name": "경기도 부천시오정구 성곡동"
-        },
-        {
-          "id": "4119652000",
-          "name": "경기도 부천시오정구 원종1동"
-        },
-        {
-          "id": "4119653000",
-          "name": "경기도 부천시오정구 원종2동"
-        },
-        {
-          "id": "4119654000",
-          "name": "경기도 부천시오정구 고강본동"
-        },
-        {
-          "id": "4119655000",
-          "name": "경기도 부천시오정구 고강1동"
-        },
-        {
-          "id": "4119656000",
-          "name": "경기도 부천시오정구 오정동"
-        },
-        {
-          "id": "4119657000",
-          "name": "경기도 부천시오정구 신흥동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41196-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41190-S02",
-      "name": "부천시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K036",
-      "basis": "개막 행정 규모 그룹 41190(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4119251000",
-        "4119252000",
-        "4119253000",
-        "4119254000",
-        "4119255000",
-        "4119256000",
-        "4119257000",
-        "4119258000",
-        "4119259000",
-        "4119260000",
-        "4119261000",
-        "4119262000",
-        "4119263000",
-        "4119264000",
-        "4119265000",
-        "4119266000",
-        "4119267000",
-        "4119268000",
-        "4119269000",
-        "4119270000",
-        "4119451000",
-        "4119452000",
-        "4119453000",
-        "4119454000",
-        "4119455000",
-        "4119456000",
-        "4119457000",
-        "4119458000",
-        "4119459000",
-        "4119460000",
-        "4119651000",
-        "4119652000",
-        "4119653000",
-        "4119654000",
-        "4119655000",
-        "4119656000",
-        "4119657000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1167,7 +732,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1219,11 +783,12 @@
     "생업": "대합실 당직",
     "품계": "이사",
     "직함": "방호복 직능 대표",
+    "업무 위치": "구로3동. 임채원은 구로3동 방호복 직능 칠판에 겨울 방호복의 봉합 상태와 출고 수량을 적는다. 최은재의 필터 검증 표본이 기준을 넘은 때에만 군수 우선 배정을 기록하고, 진우람에게 진료용 출고분을 따로 인계한다.",
     "가치관": "권위 −45 | 개방 10 | 무력 −20 | 물질 50 | 공동 35 | 원칙 5 | 공개 30 | 자격 55 | 분산 25 | 변혁 25",
     "욕망": "갈망 15 | 독점 −10 | 위험 −5 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 임채원은 구로3동 방호복 직능 칠판에 겨울 방호복의 봉합 상태와 출고 수량을 적는다. 최은재의 필터 검증 표본이 기준을 넘은 때에만 군수 우선 배정을 기록하고, 진우람에게 진료용 출고분을 따로 인계한다.",
     "관직": "품계 이사. 직함은 방호복 직능 대표. 출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 방호복 직능 대표 자리의 서명이 장부에 올랐다.",
     "관계": "마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.",
@@ -1231,7 +796,7 @@
     "공포": "필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.",
     "개입": "대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 직능 투표의 방향을 바꿀 수 있다."
   },
-  "biography": "실용적이고 바느질 간격으로 위험을 가늠한다. 방호복을 전리품처럼 쌓아 두는 장교를 재앙처럼 피한다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 이사\n- 직함: 방호복 직능 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 이사. 직함은 방호복 직능 대표. 출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 방호복 직능 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.\n\n**야망.** 방호복과 필터 규격을 의료·정수 작업반까지 열어, 복구복무자가 군복이 아니어도 시민으로 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 직능 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 10 | 무력 −20 | 물질 50 | 공동 35 | 원칙 5 | 공개 30 | 자격 55 | 분산 25 | 변혁 25\n- 욕망: 갈망 15 | 독점 −10 | 위험 −5 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "실용적이고 바느질 간격으로 위험을 가늠한다. 방호복을 전리품처럼 쌓아 두는 장교를 재앙처럼 피한다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 이사\n- 직함: 방호복 직능 대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 방호복 직능 대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로3동. 임채원은 구로3동 방호복 직능 칠판에 겨울 방호복의 봉합 상태와 출고 수량을 적는다. 최은재의 필터 검증 표본이 기준을 넘은 때에만 군수 우선 배정을 기록하고, 진우람에게 진료용 출고분을 따로 인계한다.\n\n**관직.** 품계 이사. 직함은 방호복 직능 대표. 출고 수량을 조합 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 방호복 직능 대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 마곡 인증관 최은재와 필터 성능 검증을 동맹으로 나누고, 강민서의 공정 분할에서 방호 공정을 맡으며, 한소미의 가죽 공방과 원자재 교환을 경쟁한다.\n\n**야망.** 방호복과 필터 규격을 의료·정수 작업반까지 열어, 복구복무자가 군복이 아니어도 시민으로 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 구로 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 직능 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 10 | 무력 −20 | 물질 50 | 공동 35 | 원칙 5 | 공개 30 | 자격 55 | 분산 25 | 변혁 25\n- 욕망: 갈망 15 | 독점 −10 | 위험 −5 | 과시 −20 | 지속 −5 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],

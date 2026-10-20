@@ -552,52 +552,23 @@
             "name": "어예린",
             "url": "/people/person-0291",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시험 차륜 결함 표본·사고 서명 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/204/items/0/ko",
-                  "quote": "생업: 시험 차륜 결함 표본·사고 서명 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,110 +576,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 시험 차륜 결함 표본·사고 서명 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 시험 차륜 결함 표본·사고 서명 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/204/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "군자",
-              "type": "초소 영지",
-              "station": "군자",
-              "state": "S11",
-              "settlement": {
-                "name": "군자 정착지",
-                "type": "정착지",
-                "description": "군자 일대 고정 거점"
-              },
-              "note": "S11 군자 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -732,52 +633,23 @@
             "name": "어예린",
             "url": "/people/person-0291",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시험 차륜 결함 표본·사고 서명 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/204/items/0/ko",
-                  "quote": "생업: 시험 차륜 결함 표본·사고 서명 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -785,110 +657,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 시험 차륜 결함 표본·사고 서명 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/205/text/ko",
-                    "quote": "사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 시험 차륜 결함 표본·사고 서명 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/204/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "군자",
-              "type": "초소 영지",
-              "station": "군자",
-              "state": "S11",
-              "settlement": {
-                "name": "군자 정착지",
-                "type": "정착지",
-                "description": "군자 일대 고정 거점"
-              },
-              "note": "S11 군자 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -909,18 +711,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "군자",
-    "type": "초소 영지",
-    "station": "군자",
-    "state": "S11",
-    "settlement": {
-      "name": "군자 정착지",
-      "type": "정착지",
-      "description": "군자 일대 고정 거점"
-    },
-    "note": "S11 군자 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -961,7 +751,7 @@
     "욕망": "갈망 30 | 독점 30 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.\n- 어예린은 역삼1동에서 시험 차륜 결함 표본·사고 서명 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다",
     "관직": "품계 사원. 직함은 성하전자 시험 차륜 결함 증인. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.",
     "일화": "겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다.",
     "관계": "조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
@@ -969,7 +759,7 @@
     "공포": "증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.",
     "개입": "어긋난 줄을 공개하거나, 시험 감독을 맡아 증인을 보호할 수 있다."
   },
-  "biography": "사고 책임을 날짜까지 기억하고, 서명 없는 일지를 없던 일로 돌린다. 회의보다 차륜 아래의 필적을 믿는다.\n\n- 생업: 시험 차륜 결함 표본·사고 서명 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 시험 차륜 결함 증인\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 사원. 직함은 성하전자 시험 차륜 결함 증인. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.\n\n**일화.** 겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다.\n\n**관계.** 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.\n\n**야망.** 유력 후계자의 시험 차륜 결함을 증언으로 고정해 이씨 가문 승계가 승계 시험을 삼키지 못하게 한다.\n\n**공포.** 증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.\n\n**개입.** 어긋난 줄을 공개하거나, 시험 감독을 맡아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −5 | 물질 30 | 공동 25 | 원칙 15 | 공개 −5 | 자격 80 | 분산 5 | 변혁 −25\n- 욕망: 갈망 30 | 독점 30 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 다자\n:::",
+  "biography": "사고 책임을 날짜까지 기억하고, 서명 없는 일지를 없던 일로 돌린다. 회의보다 차륜 아래의 필적을 믿는다.\n\n- 생업: 시험 차륜 결함 표본·사고 서명 확인\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 시험 차륜 결함 증인\n**생애.** 강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.\n- 어예린은 역삼1동에서 시험 차륜 결함 표본·사고 서명 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다\n\n**관직.** 품계 사원. 직함은 성하전자 시험 차륜 결함 증인. 사고 한 건에 반장과 도제의 서명을 함께 요구하고, 불량 표본 번호를 같은 줄에 적는다.\n\n**일화.** 겨울의 검은 배차표와 같은 주, 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 어예린은 증인란에 이름을 올렸다.\n\n**관계.** 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.\n\n**야망.** 유력 후계자의 시험 차륜 결함을 증언으로 고정해 이씨 가문 승계가 승계 시험을 삼키지 못하게 한다.\n\n**공포.** 증언이 사택 대표의 기지 점거 명분이 되어 자신이 인구 분쟁의 들러리가 되는 것.\n\n**개입.** 어긋난 줄을 공개하거나, 시험 감독을 맡아 증인을 보호할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −5 | 물질 30 | 공동 25 | 원칙 15 | 공개 −5 | 자격 80 | 분산 5 | 변혁 −25\n- 욕망: 갈망 30 | 독점 30 | 위험 5 | 과시 −10 | 지속 30 | 지향 무성향 | 결합 다자\n:::",
   "sources": [
     "Cast-State-11"
   ],

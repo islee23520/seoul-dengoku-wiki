@@ -11,6 +11,38 @@ const run = (file) => spawnSync(process.execPath, [join(root, 'scripts/lore-json
 const leaf = { en: 'Example', ko: '예시' }
 const node = (kind, fields) => ({ kind, anchor: 'extra-block', ...fields })
 
+test('hegemon center regions are required nonblank strings and unknown keys stay rejected', () => {
+  mkdirSync(evidence, { recursive: true })
+  const dir = mkdtempSync(join(evidence, 'center-region-'))
+  try {
+    const document = load('factions')
+    document.data.currentAffiliation = JSON.parse(readFileSync(join(root, 'lore/factions/Sixteen-States.json'), 'utf8')).data.currentAffiliation
+    const file = join(dir, 'authoring.example.json')
+    writeFileSync(file, JSON.stringify(document))
+    const valid = run(file)
+    assert.equal(valid.status, 0, `${valid.stdout} ${valid.stderr}`)
+    for (let index = 0; index < document.data.currentAffiliation.hegemons.length; index++) {
+      for (const mutate of [
+        hegemon => { delete hegemon.centerRegion },
+        hegemon => { hegemon.centerRegion = '' },
+        hegemon => { hegemon.centerRegion = ' \t\n' },
+        hegemon => { hegemon.centerRegion = null },
+        hegemon => { hegemon.centerRegion = 1 },
+        hegemon => { hegemon.unrecognizedRegion = 'unknown' },
+      ]) {
+        const draft = structuredClone(document)
+        mutate(draft.data.currentAffiliation.hegemons[index])
+        writeFileSync(file, JSON.stringify(draft))
+        const invalid = run(file)
+        assert.equal(invalid.status, 1, `${index}: ${invalid.stdout} ${invalid.stderr}`)
+        assert.ok(invalid.stderr.includes(`E_SCHEMA: $.data.currentAffiliation.hegemons[${index}]:`), invalid.stderr)
+      }
+    }
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
+})
+
 const cases = [
   ['character score range', 'characters', (d) => { d.data.values.authority.value = 101 }, /E_SCHEMA: \$\.data\.values\.authority:/],
   ['character rank tier', 'characters', (d) => { d.data.rank.common_tier = 'T6' }, /E_SCHEMA: \$\.data\.rank\.common_tier:/],

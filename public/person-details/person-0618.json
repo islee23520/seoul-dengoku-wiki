@@ -454,52 +454,23 @@
             "name": "주바인",
             "url": "/people/person-0618",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록·열쇠 인수인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/434/items/1/ko",
-                  "quote": "생업: 기록·열쇠 인수인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/435/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,78 +478,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/434/items/1/ko",
-                    "quote": "생업: 기록·열쇠 인수인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/435/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "창동",
-              "type": "초소 영지",
-              "station": "창동",
-              "state": "S03",
-              "settlement": {
-                "name": "창동 정착지",
-                "type": "정착지",
-                "description": "창동 일대 고정 거점"
-              },
-              "note": "S03 창동 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -602,52 +523,23 @@
             "name": "주바인",
             "url": "/people/person-0618",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록·열쇠 인수인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/434/items/1/ko",
-                  "quote": "생업: 기록·열쇠 인수인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/435/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -655,78 +547,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/434/items/1/ko",
-                    "quote": "생업: 기록·열쇠 인수인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/435/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/436/text/ko",
-                    "quote": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "창동",
-              "type": "초소 영지",
-              "station": "창동",
-              "state": "S03",
-              "settlement": {
-                "name": "창동 정착지",
-                "type": "정착지",
-                "description": "창동 일대 고정 거점"
-              },
-              "note": "S03 창동 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -747,18 +589,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "창동",
-    "type": "초소 영지",
-    "station": "창동",
-    "state": "S03",
-    "settlement": {
-      "name": "창동 정착지",
-      "type": "정착지",
-      "description": "창동 일대 고정 거점"
-    },
-    "note": "S03 창동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -795,19 +625,20 @@
     "생업": "기록·열쇠 인수인계",
     "품계": "대리",
     "직함": "종자 기록관",
+    "업무": "가양1동. 주바인은 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
     "가치관": "권위 −20 | 개방 15 | 무력 −30 | 물질 10 | 공동 5 | 원칙 75 | 공개 50 | 자격 35 | 분산 5 | 변혁 0",
     "욕망": "갈망 35 | 독점 30 | 위험 20 | 과시 0 | 지속 −10 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.",
-    "공포": "종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 주바인은 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 주바인은 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.",
+    "관직": "품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.",
+    "일화": "2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다.",
+    "관계": "주바인은 종자 기록과 인수인계 서명을 박진솔에게 넘긴다. 박진솔은 온습도 기록과 출고 날인을 확인해 젖거나 읽히지 않는 기록이 확인된 출고로 취급되지 않게 한다.",
+    "야망": "주바인은 젖은 인준 문서의 필사와 종자 인수 서명을 구분해 읽히지 않는 줄을 확인 전 출고에서 빼려 한다.",
+    "공포": "말려 남긴 필사본이 원본 서명의 빈자리를 차지해 박진솔의 이중 날인 확인을 흐리는 것.",
+    "개입": "플레이어는 주바인의 필사 줄과 원본 인수 서명을 구별해 확인할 수 없는 줄을 박진솔에게 알릴 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 종자 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다. 이 일로 종자 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 종자 기록관 자리에서 태욱그룹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 종자 기록관 당직이 비면 태욱그룹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −30 | 물질 10 | 공동 5 | 원칙 75 | 공개 50 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 35 | 독점 30 | 위험 20 | 과시 0 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "가양1동에서 주바인은 종자 원본의 빠진 줄을 먼저 살핀다. 보존고 출고를 재촉받아도 인수 기록과 온습도 장부를 맞춘 뒤 박진솔에게 넘긴다.\n\n- 소속: 태욱그룹\n- 생업: 기록·열쇠 인수인계\n- 품계: 대리\n- 직함: 종자 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 주바인은 종자 기록과 보존고 인수 기록을 맞추는 일을 맡는다.\n- 업무: 가양1동. 주바인은 가양1동에서 종자 기록과 인수 서명을 원본에 맞춰 다음 당직에 넘긴다. 온습도 기록이 끊긴 상자는 번호를 따로 적어 박진솔에게 알린다.\n\n**관직.** 품계 대리. 직함은 종자 기록관. 원본과 인수 서명을 대조하고, 기록이 끊긴 상자는 번호를 표시해 박진솔의 출고 판단에 올린다.\n\n**일화.** 2125년 승강장에서 물에 젖은 인준 문서를 말려 필사본으로 남겼다.\n\n**관계.** 주바인은 종자 기록과 인수인계 서명을 박진솔에게 넘긴다. 박진솔은 온습도 기록과 출고 날인을 확인해 젖거나 읽히지 않는 기록이 확인된 출고로 취급되지 않게 한다.\n\n**야망.** 주바인은 젖은 인준 문서의 필사와 종자 인수 서명을 구분해 읽히지 않는 줄을 확인 전 출고에서 빼려 한다.\n\n**공포.** 말려 남긴 필사본이 원본 서명의 빈자리를 차지해 박진솔의 이중 날인 확인을 흐리는 것.\n\n**개입.** 플레이어는 주바인의 필사 줄과 원본 인수 서명을 구별해 확인할 수 없는 줄을 박진솔에게 알릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 15 | 무력 −30 | 물질 10 | 공동 5 | 원칙 75 | 공개 50 | 자격 35 | 분산 5 | 변혁 0\n- 욕망: 갈망 35 | 독점 30 | 위험 20 | 과시 0 | 지속 −10 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-03"
   ],

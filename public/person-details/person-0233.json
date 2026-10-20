@@ -551,47 +551,23 @@
             "name": "감봉",
             "url": "/people/person-0233",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "금고 당직 교대·풍속 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 금고 당직 교대·풍속 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,73 +575,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 금고 당직 교대·풍속 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "여의나루",
-              "type": "초소 영지",
-              "station": "여의나루",
-              "state": "S09",
-              "settlement": {
-                "name": "여의나루 정착지",
-                "type": "정착지",
-                "description": "여의나루 일대 고정 거점"
-              },
-              "note": "S09 여의나루 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -689,47 +620,23 @@
             "name": "감봉",
             "url": "/people/person-0233",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "금고 당직 교대·풍속 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 금고 당직 교대·풍속 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -737,73 +644,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 금고 당직 교대·풍속 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "여의나루",
-              "type": "초소 영지",
-              "station": "여의나루",
-              "state": "S09",
-              "settlement": {
-                "name": "여의나루 정착지",
-                "type": "정착지",
-                "description": "여의나루 일대 고정 거점"
-              },
-              "note": "S09 여의나루 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -824,18 +686,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "여의나루",
-    "type": "초소 영지",
-    "station": "여의나루",
-    "state": "S09",
-    "settlement": {
-      "name": "여의나루 정착지",
-      "type": "정착지",
-      "description": "여의나루 일대 고정 거점"
-    },
-    "note": "S09 여의나루 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -876,7 +726,7 @@
     "욕망": "갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.",
+    "생애": "2095-12-30 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.\n- 감봉은 여의동을 업무동으로 삼아 금고 당직 교대·풍속 기록 업무를 맡는다.",
     "관직": "품계 서기. 직함은 여의도 금고 당직장. 당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다.",
     "일화": "위조 화폐가 잡힌 시각에 당직 한 줄이 비어 있고 금고 잠금이 열려 있었다.",
     "관계": "두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.",
@@ -884,7 +734,7 @@
     "공포": "금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.",
     "개입": "빈 당직을 찾거나, 금고 잠금을 이중 열쇠로 바꿀 수 있다."
   },
-  "biography": "금고 아래를 집처럼 여기고, 당직 교대를 어기는 사람을 이름 대신 시각으로 부른다. 바람이 심하면 창구를 줄이라고 먼저 말한다.\n\n- 생업: 금고 당직 교대·풍속 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 여의도 금고 당직장\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.\n\n**관직.** 품계 서기. 직함은 여의도 금고 당직장. 당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다.\n\n**일화.** 위조 화폐가 잡힌 시각에 당직 한 줄이 비어 있고 금고 잠금이 열려 있었다.\n\n**관계.** 두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.\n\n**야망.** 여의도 금고를 공용 화폐의 거점 주권으로 남겨 강국 경비병이 금고 발치에 서는 관행을 끊는다.\n\n**공포.** 금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.\n\n**개입.** 빈 당직을 찾거나, 금고 잠금을 이중 열쇠로 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −40 | 물질 −15 | 공동 15 | 원칙 25 | 공개 60 | 자격 5 | 분산 30 | 변혁 10\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼",
+  "biography": "금고 아래를 집처럼 여기고, 당직 교대를 어기는 사람을 이름 대신 시각으로 부른다. 바람이 심하면 창구를 줄이라고 먼저 말한다.\n\n- 생업: 금고 당직 교대·풍속 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 여의도 금고 당직장\n**생애.** 2095-12-30 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 여의도 금고 당직장 자리는 정전 사흘 금고 유지로 열렸다.\n- 감봉은 여의동을 업무동으로 삼아 금고 당직 교대·풍속 기록 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 여의도 금고 당직장. 당직 명과 풍속 기록을 같은 칠판에 붙이고, 외부 무장 접근은 조은우의 동행 없이 막는다.\n\n**일화.** 위조 화폐가 잡힌 시각에 당직 한 줄이 비어 있고 금고 잠금이 열려 있었다.\n\n**관계.** 두봉과 정비 창을 나누고, 용복의 순찰 경로를 금고 밑에서 받는다. 최지우의 발행 시험 날을 지킨다.\n\n**야망.** 여의도 금고를 공용 화폐의 거점 주권으로 남겨 강국 경비병이 금고 발치에 서는 관행을 끊는다.\n\n**공포.** 금고 당직이 군사 압류의 발판이 되어 최지우의 공용 화폐가 한 밤에 멈추는 것.\n\n**개입.** 빈 당직을 찾거나, 금고 잠금을 이중 열쇠로 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −40 | 물질 −15 | 공동 15 | 원칙 25 | 공개 60 | 자격 5 | 분산 30 | 변혁 10\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼",
   "sources": [
     "Cast-State-09"
   ],

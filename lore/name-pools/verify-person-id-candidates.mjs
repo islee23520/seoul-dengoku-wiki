@@ -24,6 +24,7 @@ import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { readRendered } from "../../scripts/lore-read-rendered.mjs";
+import { personIdValuesHash } from "./person-id-values-successor.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
@@ -39,6 +40,10 @@ export const FROZEN = { existingK: 422, candidates: 600, total: 1022 };
 
 export function sha256Hex(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
+}
+
+export function extractStableCharacterId(block) {
+  return block.match(/^- 캐릭터 ID: ([^\s.,;:!?…]+)/mu)?.[1] ?? null;
 }
 
 // 정본 텍스트에서 "key": [ ... ] JSON 배열을 정확히 한 번 추출한다 (따옴표 안 괄호는 무시).
@@ -84,9 +89,8 @@ export function loadContext() {
   const unaffiliated = [];
   for (const block of unaffText.split(/^### /m).slice(1)) {
     const nameMatch = block.match(/^인물 (.+)$/m);
-    const idMatch = block.match(/^- 캐릭터 ID: (\S+)/m);
     if (nameMatch) {
-      unaffiliated.push({ name: nameMatch[1].trim(), characterId: idMatch ? idMatch[1] : null });
+      unaffiliated.push({ name: nameMatch[1].trim(), characterId: extractStableCharacterId(block) });
     }
   }
   const corridorsText = readCharacters("Cast-Corridors-Index");
@@ -168,7 +172,7 @@ export function buildTable(ctx, baseCommit) {
 
   return {
     schema: SCHEMA,
-    inputSha256: sha256Hex(ctx.valuesBytes),
+    inputSha256: personIdValuesHash(ctx.valuesBytes),
     baseCommit,
     totalPeople: people.length,
     existingKCount: ctx.humans.length,
@@ -189,7 +193,12 @@ export function validateTable(table, ctx) {
   const people = ctx.valuesJson.people;
   if (table.schema !== SCHEMA) v.push(`schema가 ${SCHEMA}이 아니다`);
   if (!/^[0-9a-f]{40}$/.test(table.baseCommit || "")) v.push("baseCommit이 40자리 16진수가 아니다");
-  const actualSha = sha256Hex(ctx.valuesBytes);
+  let actualSha = sha256Hex(ctx.valuesBytes);
+  try {
+    actualSha = personIdValuesHash(ctx.valuesBytes);
+  } catch {
+    v.push("values-cast successor 증명이 유효하지 않다");
+  }
   if (table.inputSha256 !== actualSha) v.push(`inputSha256(${table.inputSha256})이 실제 값(${actualSha})과 다르다`);
   if (table.totalPeople !== people.length) v.push(`totalPeople(${table.totalPeople})이 people 길이(${people.length})과 다르다`);
   if (table.existingKCount !== ctx.humans.length) v.push(`existingKCount(${table.existingKCount})이 등록부 길이(${ctx.humans.length})과 다르다`);
@@ -278,8 +287,13 @@ if (!CLI_WRITE) {
     assert.deepEqual(committed.candidates.map((c) => c.ordinal), committed.candidates.map((_, i) => i + 1));
   });
 
-test("(e) inputSha256이 values-cast 최종 파일 해시와 같다", () => {
-    assert.equal(committed.inputSha256, sha256Hex(ctx.valuesBytes));
+test("(e) inputSha256이 인증된 values-cast 발급 선행본 해시와 같다", () => {
+    assert.equal(committed.inputSha256, personIdValuesHash(ctx.valuesBytes));
+  });
+
+  test("무소속 카드의 안정 ID 뒤 문장부호를 별칭에 포함하지 않는다", () => {
+    assert.equal(extractStableCharacterId("- 캐릭터 ID: iyen. 영구 인물 ID K1004"), "iyen");
+    assert.equal(extractStableCharacterId("- 캐릭터 ID: unaffiliated-jaepyo-jo, 영구 인물 ID K1003"), "unaffiliated-jaepyo-jo");
   });
 
   // 파괴 검사(RED-provable): 규칙이 살아 있으면 변이를 잡아내고, 규칙이 없으면 이 테스트가 실패한다.
@@ -309,6 +323,18 @@ test("(e) inputSha256이 values-cast 최종 파일 해시와 같다", () => {
     const mutated = structuredClone(committed);
     mutated.inputSha256 = "0".repeat(64);
     assert.notEqual(validateTable(mutated, ctx).length, 0);
+  });
+
+  test("변이 5 — note successor와 함께 명부나 note를 바꾸면 거부한다", () => {
+    for (const mutate of [
+      (values) => { values.note += " "; },
+      (values) => { values.people[0].name += "x"; },
+    ]) {
+      const valuesJson = structuredClone(ctx.valuesJson);
+      mutate(valuesJson);
+      const valuesBytes = Buffer.from(JSON.stringify(valuesJson, null, 2) + "\n");
+      assert.notEqual(validateTable(committed, { ...ctx, valuesJson, valuesBytes }).length, 0);
+    }
   });
 }
 

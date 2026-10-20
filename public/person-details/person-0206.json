@@ -561,47 +561,23 @@
             "name": "주나경",
             "url": "/people/person-0206",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "한강 채수·탁도 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/149/items/2/ko",
-                  "quote": "생업: 한강 채수·탁도 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -609,106 +585,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/149/items/2/ko",
-                    "quote": "생업: 한강 채수·탁도 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/149/items/2/ko",
-                    "quote": "생업: 한강 채수·탁도 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "주나경 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 35
+            }
           }
         }
       },
@@ -731,47 +642,23 @@
             "name": "주나경",
             "url": "/people/person-0206",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "한강 채수·탁도 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/149/items/2/ko",
-                  "quote": "생업: 한강 채수·탁도 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -779,106 +666,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/149/items/2/ko",
-                    "quote": "생업: 한강 채수·탁도 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/149/items/2/ko",
-                    "quote": "생업: 한강 채수·탁도 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "주나경 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 35
+            }
           }
         }
       }
@@ -899,7 +721,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -955,7 +776,7 @@
     "욕망": "갈망 40 | 독점 30 | 위험 40 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 주나경은 노량진1동에서 한강 채수·탁도 기록 업무를 맡는다.",
     "관직": "품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.",
@@ -963,7 +784,7 @@
     "공포": "탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.",
     "개입": "취수 호위를 맡아 우회를 성사시키거나, 비밀 잠금 표시를 폭로할 수 있다."
   },
-  "biography": "취수구 수온으로 시간을 읽고, 지도에 없는 취수 우회를 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 한강 채수·탁도 기록\n- 직함: 한강 취수 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.\n\n**야망.** 노량진 취수와 제빙 원수를 한 장의 공개 해도로 그려 전력이 흔들려도 얼음 원장이 하루를 버티게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.\n\n**개입.** 취수 호위를 맡아 우회를 성사시키거나, 비밀 잠금 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 60 | 공동 −15 | 원칙 −20 | 공개 15 | 자격 5 | 분산 10 | 변혁 25\n- 욕망: 갈망 40 | 독점 30 | 위험 40 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자\n:::",
+  "biography": "취수구 수온으로 시간을 읽고, 지도에 없는 취수 우회를 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 한강 채수·탁도 기록\n- 직함: 한강 취수 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 취수 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 주나경은 노량진1동에서 한강 채수·탁도 기록 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 한강 취수 탐사원. 채수와 탁도를 같은 원장에 남기고, 붕괴 구간은 서나연과 오해린이 동시에 서명해야 표시한다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 한강 취수 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서나연의 제빙 원수를 현장에서 측량하는 사제이고, 한재목의 수상 통행세를 꺼리며, 마길상의 교량 하부 채수와 우회 점선을 계약으로 나눈다.\n\n**야망.** 노량진 취수와 제빙 원수를 한 장의 공개 해도로 그려 전력이 흔들려도 얼음 원장이 하루를 버티게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 취수구가 수문 보호권의 잠금으로 팔리는 것.\n\n**개입.** 취수 호위를 맡아 우회를 성사시키거나, 비밀 잠금 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 50 | 무력 −15 | 물질 60 | 공동 −15 | 원칙 −20 | 공개 15 | 자격 5 | 분산 10 | 변혁 25\n- 욕망: 갈망 40 | 독점 30 | 위험 40 | 과시 −10 | 지속 20 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

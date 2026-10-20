@@ -11,7 +11,7 @@ import { createRoot } from 'react-dom/client'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { GurpsSheet, parseGurpsSheet, PreservedPersonSheet, selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
 import { build, REVISIONS, numericFields } from './gurps-cast.mjs'
-import { loadPreservedPersonSheets, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
+import { loadPreservedPersonSheets, projectPreservedPersonSheet, projectPublicHistoricalRecord } from './preserved-person-sheet.mjs'
 
 const roots = preservedSheetSources
 const versions = loadPreservedPersonSheets(roots)
@@ -56,14 +56,14 @@ for (const revision of REVISIONS) {
       ident.state = detail.state
       const selected = selectPreservedSheet(detail.personSheet, ident, revision)
       assert.ok(selected.ok, record.id + ':' + JSON.stringify(selected))
-      assert.deepEqual(selected.record, record)
+      assert.deepEqual(selected.record, projectPublicHistoricalRecord(record))
       assert.deepEqual(selected.sheet.secondary, record.secondary)
       assert.deepEqual(selected.sheet.cp, record.cp)
       return selected.record
     })
     assert.equal(actual.length, 1022)
-    assert.deepEqual(numericFields(actual), numericFields(expected))
-    assert.equal(numericFields(actual).length, baseline.revisions[revision].numericFieldCount)
+    assert.deepEqual(numericFields(actual), numericFields(expected.map(projectPublicHistoricalRecord)))
+    assert.equal(numericFields(produced).length, baseline.revisions[revision].numericFieldCount)
   })
 }
 
@@ -75,7 +75,25 @@ test('projection snapshots input and guards K ID, name, state and stable route i
     assert.throws(() => projectPreservedPersonSheet(versions, { ...ident, ...mutant }), /E_PERSON_SHEET_(IDENTITY|ROUTE)/)
   const projected = sheetFor(record)
   projected.variants[0].legacy.record.secondary.BasicMove = -100
-  assert.deepEqual(sheetFor(record).variants[0].legacy.record, record)
+  assert.deepEqual(sheetFor(record).variants[0].legacy.record, projectPublicHistoricalRecord(record))
+  assert.deepEqual(versions[0].people.get(record.id), record)
+})
+
+test('public projection excludes source-only fields for every person without mutating sealed originals', () => {
+  for (const version of versions) {
+    const originalBytes = readFileSync(roots[version.revision].ledgerPath)
+    const before = structuredClone([...version.people.values()])
+    assert.equal(before.length, 1022)
+    for (const record of before) {
+      const projected = sheetFor(record).variants.find(row => row.revision === version.revision).legacy.record
+      assert.deepEqual(projected, projectPublicHistoricalRecord(record))
+      for (const field of ['unit', 'territory', 'wandering_force', 'evidence']) assert.equal(Object.hasOwn(projected, field), false)
+      assert.deepEqual(parse(projected), parse(record))
+    }
+    assert.deepEqual([...version.people.values()], before)
+    assert.deepEqual(readFileSync(roots[version.revision].ledgerPath), originalBytes)
+    assert.deepEqual(before, source.get(version.revision))
+  }
 })
 
 test('runtime selector rejects wrong identities, ambiguous revisions and operative adoption', () => {
@@ -132,7 +150,7 @@ test('mounted person selector shows preserved stats immediately and keeps both c
       await act(async () => { select.value = revision; select.dispatchEvent(new browser.window.Event('change', { bubbles: true })) })
       assert.equal(host.querySelector('[data-selected-revision]').dataset.selectedRevision, revision)
       assert.equal(host.querySelector('[data-legacy-operative]').dataset.legacyOperative, 'false')
-      assert.deepEqual(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), source.get(revision).find(p => p.id === record.id))
+      assert.deepEqual(JSON.parse(host.querySelector('[data-legacy-record] pre').textContent), projectPublicHistoricalRecord(source.get(revision).find(p => p.id === record.id)))
       assert.equal(host.querySelector('[data-original-ratings]').dataset.originalRatings, 'historical')
       assert.equal(host.querySelector('input'), null)
     }

@@ -470,8 +470,8 @@
           "en": "Anecdote. In the 2125 pressure test he found three leaking joints and raised them onto the mark board. By this deed the signature of the water-supply courier post rose into the ledger."
         },
         "stress": {
-          "ko": "공포. 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the water-supply courier duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. Changes in behavior or state effects are unconfirmed."
+          "ko": "공포. 급수 전령 당직이 비면 암사·고덕의 관문 통행과 급수 인계가 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the water-supply courier duty post would stand empty and passage through the Amsa and Godeok gates and water-supply handovers would be interrupted. Changes in behavior or state effects are unconfirmed."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -494,8 +494,8 @@
           "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
         },
         "stress": {
-          "ko": "공포. 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the water-supply courier duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. The actual response is not yet recorded."
+          "ko": "공포. 급수 전령 당직이 비면 암사·고덕의 관문 통행과 급수 인계가 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the water-supply courier duty post would stand empty and passage through the Amsa and Godeok gates and water-supply handovers would be interrupted. The actual response is not yet recorded."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -568,47 +568,23 @@
             "name": "박늘은",
             "url": "/people/person-0972",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "관로 누수 점검·표시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/676/items/1/ko",
-                  "quote": "생업: 관로 누수 점검·표시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/678/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -616,89 +592,34 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/676/items/1/ko",
-                    "quote": "생업: 관로 누수 점검·표시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/678/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/676/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "역곡",
-              "type": "초소 영지",
-              "station": "역곡",
-              "state": "S05",
-              "settlement": {
-                "name": "역곡 정착지",
-                "type": "정착지",
-                "description": "역곡 일대 고정 거점"
-              },
-              "note": "S05 역곡 일대 관할 영지"
+              "unspent": 43
             }
           }
         }
@@ -722,52 +643,23 @@
             "name": "박늘은",
             "url": "/people/person-0972",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "관로 누수 점검·표시",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/676/items/1/ko",
-                  "quote": "생업: 관로 누수 점검·표시"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/677/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/678/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -775,105 +667,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/677/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/676/items/1/ko",
-                    "quote": "생업: 관로 누수 점검·표시"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/678/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/676/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "역곡",
-              "type": "초소 영지",
-              "station": "역곡",
-              "state": "S05",
-              "settlement": {
-                "name": "역곡 정착지",
-                "type": "정착지",
-                "description": "역곡 일대 고정 거점"
-              },
-              "note": "S05 역곡 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -894,18 +721,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "역곡",
-    "type": "초소 영지",
-    "station": "역곡",
-    "state": "S05",
-    "settlement": {
-      "name": "역곡 정착지",
-      "type": "정착지",
-      "description": "역곡 일대 고정 거점"
-    },
-    "note": "S05 역곡 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -945,16 +760,8 @@
     "가치관": "권위 60 | 개방 −30 | 무력 65 | 물질 15 | 공동 40 | 원칙 −25 | 공개 −20 | 자격 −25 | 분산 −40 | 변혁 −30",
     "욕망": "갈망 −5 | 독점 −10 | 위험 −30 | 과시 −25 | 지속 −10 | 지향 동성 | 결합 비독점"
   },
-  "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "관직": "품계 병장. 직함은 급수 전령.",
-    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.",
-    "공포": "급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 관로 누수 점검·표시\n- 품계: 병장\n- 직함: 급수 전령\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 병장. 직함은 급수 전령.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 급수 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 급수 전령 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −30 | 무력 65 | 물질 15 | 공동 40 | 원칙 −25 | 공개 −20 | 자격 −25 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 −5 | 독점 −10 | 위험 −30 | 과시 −25 | 지속 −10 | 지향 동성 | 결합 비독점\n:::",
+  "sections": {},
+  "biography": "박늘은은 당직을 끊지 않고 장부로 인수인계를 확인한다.\n\n- 소속: 동방사\n- 생업: 관로 누수 점검·표시\n- 품계: 병장\n- 직함: 급수 전령\n생애. 박늘은은 4세대에 태어났다. 박늘은은 영등포 정수 당직에서 자랐다. 박늘은의 급수 전령 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 박늘은은 암사1동과 연결된 업무에서 관로 누수를 점검하고 표시해 당직에 인계한다.\n\n관직. 품계 병장. 직함은 급수 전령. 박늘은은 자신의 직위에 맡겨진 열쇠와 기록만 다음 당직자에게 넘기며 맡지 않은 권한은 행사하지 않는다.\n\n일화. 박늘은은 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다.\n\n관계. 박늘은은 같은 생활권 선배 당직과 인수인계로 이어져 있다.\n\n야망. 박늘은은 급수 전령 자리에서 동방사의 장부를 끊기지 않게 잇고자 한다.\n\n공포. 박늘은은 급수 전령 당직이 비어 암사·고덕의 관문 통행과 급수 인계가 끊길까 두려워한다.\n\n개입. 당직 인수 증인을 세우거나 빈 열쇠를 폭로하여 박늘은의 당직 인수인계에 개입할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 60 | 개방 −30 | 무력 65 | 물질 15 | 공동 40 | 원칙 −25 | 공개 −20 | 자격 −25 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 −5 | 독점 −10 | 위험 −30 | 과시 −25 | 지속 −10 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-05"
   ],

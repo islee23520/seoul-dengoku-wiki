@@ -454,47 +454,23 @@
             "name": "유하은",
             "url": "/people/person-0096",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "가죽 공정·출고 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/38/items/1/ko",
-                  "quote": "생업: 가죽 공정·출고 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/39/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -502,95 +478,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/38/items/1/ko",
-                    "quote": "생업: 가죽 공정·출고 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/39/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Leatherworking",
                 "ko": "가죽 공정",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/38/items/1/ko",
-                    "quote": "생업: 가죽 공정·출고 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "유하은 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -613,47 +529,23 @@
             "name": "유하은",
             "url": "/people/person-0096",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "가죽 공정·출고 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/38/items/1/ko",
-                  "quote": "생업: 가죽 공정·출고 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/39/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -661,217 +553,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/38/items/1/ko",
-                    "quote": "생업: 가죽 공정·출고 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/39/text/ko",
-                    "quote": "출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Leatherworking",
                 "ko": "가죽 공정",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/38/items/1/ko",
-                    "quote": "생업: 가죽 공정·출고 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "유하은 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41610-S04",
-      "name": {
-        "ko": "광주시 공작령 직영지"
-      },
-      "holderPersonId": "K095",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4161025300",
-          "name": "경기도 광주시 초월읍"
-        },
-        {
-          "id": "4161025900",
-          "name": "경기도 광주시 곤지암읍"
-        },
-        {
-          "id": "4161033000",
-          "name": "경기도 광주시 도척면"
-        },
-        {
-          "id": "4161034000",
-          "name": "경기도 광주시 퇴촌면"
-        },
-        {
-          "id": "4161035000",
-          "name": "경기도 광주시 남종면"
-        },
-        {
-          "id": "4161037000",
-          "name": "경기도 광주시 남한산성면"
-        },
-        {
-          "id": "4161051000",
-          "name": "경기도 광주시 경안동"
-        },
-        {
-          "id": "4161052000",
-          "name": "경기도 광주시 송정동"
-        },
-        {
-          "id": "4161054000",
-          "name": "경기도 광주시 쌍령동"
-        },
-        {
-          "id": "4161055000",
-          "name": "경기도 광주시 탄벌동"
-        },
-        {
-          "id": "4161056000",
-          "name": "경기도 광주시 광남1동"
-        },
-        {
-          "id": "4161057000",
-          "name": "경기도 광주시 광남2동"
-        },
-        {
-          "id": "4161058000",
-          "name": "경기도 광주시 오포1동"
-        },
-        {
-          "id": "4161059000",
-          "name": "경기도 광주시 오포2동"
-        },
-        {
-          "id": "4161060000",
-          "name": "경기도 광주시 신현동"
-        },
-        {
-          "id": "4161061000",
-          "name": "경기도 광주시 능평동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41610-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41610-S04",
-      "name": "광주시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K095",
-      "basis": "개막 행정 규모 그룹 41610(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4161025300",
-        "4161025900",
-        "4161033000",
-        "4161034000",
-        "4161035000",
-        "4161037000",
-        "4161051000",
-        "4161052000",
-        "4161054000",
-        "4161055000",
-        "4161056000",
-        "4161057000",
-        "4161058000",
-        "4161059000",
-        "4161060000",
-        "4161061000"
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41610-S04",
+          "directLiegePersonId": "K423"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -886,7 +619,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -942,15 +674,15 @@
     "욕망": "갈망 25 | 독점 −10 | 위험 10 | 과시 25 | 지속 0 | 지향 이성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 성수 가죽·소형기계 직능대표 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 유하은은 대합실 당직에서 자랐다. 유하은은 교대 무단 결근 대체 당직으로 성수 가죽·소형기계 직능대표 자리를 맡았다.\n- 유하은의 성수 가죽·소형기계 직능대표 업무는 성수2가1동과 연결된다.",
     "관직": "품계 권사. 직함은 성수 가죽·소형기계 직능대표. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.",
-    "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 성수 가죽·소형기계 직능대표 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 유하은은 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 성수 가죽·소형기계 직능대표 자리의 서명이 장부에 올랐다.",
     "관계": "임채원의 방호 원단과 원자재를 놓고 경쟁하면서도 필터 패킹은 교환하고, 한소미의 공정 분할에서 가죽 공정을 맡으며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.",
     "야망": "가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 올려, 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.",
-    "공포": "동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 것.",
+    "공포": "유하은은 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 상황을 두려워한다.",
     "개입": "대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 직능 잠금을 풀 수 있다."
   },
-  "biography": "재치 있지만 원단과 기어의 출처를 숨기는 공방을 잔인하게 추궁한다. 신발 한 켤레의 바느질이 방호보다 먼저 사람을 살린다고 믿는다.\n\n- 소속: 명부교회\n- 생업: 가죽 공정·출고 기록\n- 품계: 권사\n- 직함: 성수 가죽·소형기계 직능대표\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 성수 가죽·소형기계 직능대표 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 권사. 직함은 성수 가죽·소형기계 직능대표. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 성수 가죽·소형기계 직능대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 방호 원단과 원자재를 놓고 경쟁하면서도 필터 패킹은 교환하고, 한소미의 공정 분할에서 가죽 공정을 맡으며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.\n\n**야망.** 가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 올려, 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.\n\n**공포.** 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 것.\n\n**개입.** 대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 직능 잠금을 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 5 | 무력 −20 | 물질 20 | 공동 20 | 원칙 20 | 공개 −15 | 자격 35 | 분산 35 | 변혁 10\n- 욕망: 갈망 25 | 독점 −10 | 위험 10 | 과시 25 | 지속 0 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "재치 있지만 원단과 기어의 출처를 숨기는 공방을 잔인하게 추궁한다. 신발 한 켤레의 바느질이 방호보다 먼저 사람을 살린다고 믿는다.\n\n- 소속: 명부교회\n- 생업: 가죽 공정·출고 기록\n- 품계: 권사\n- 직함: 성수 가죽·소형기계 직능대표\n**생애.** 2126년 세대. 유하은은 대합실 당직에서 자랐다. 유하은은 교대 무단 결근 대체 당직으로 성수 가죽·소형기계 직능대표 자리를 맡았다.\n- 유하은의 성수 가죽·소형기계 직능대표 업무는 성수2가1동과 연결된다.\n\n**관직.** 품계 권사. 직함은 성수 가죽·소형기계 직능대표. 출고 수량을 직능 칠판에 공개하고, 군수 우선은 수비대의 누수 경보가 있을 때만 허용한다.\n\n**일화.** 2125년 유하은은 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 성수 가죽·소형기계 직능대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 방호 원단과 원자재를 놓고 경쟁하면서도 필터 패킹은 교환하고, 한소미의 공정 분할에서 가죽 공정을 맡으며, 남윤경의 가격 원장이 성수 시세를 가로채면 원한으로 돌아선다.\n\n**야망.** 가죽·펌프 패킹·소형 기어를 공동규격의 필수 품목으로 올려, 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.\n\n**공포.** 유하은은 동부 보호계약이 성수 원단을 군화 우선으로 묶고 민수용 펌프 패킹이 사라지는 상황을 두려워한다.\n\n**개입.** 대체 원단을 구하거나, 군화 창고의 숨은 발주를 폭로해 직능 잠금을 풀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 5 | 무력 −20 | 물질 20 | 공동 20 | 원칙 20 | 공개 −15 | 자격 35 | 분산 35 | 변혁 10\n- 욕망: 갈망 25 | 독점 −10 | 위험 10 | 과시 25 | 지속 0 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

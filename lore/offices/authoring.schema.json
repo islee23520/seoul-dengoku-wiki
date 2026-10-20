@@ -34,11 +34,14 @@
       "if": {
         "properties": {
           "id": {
-            "pattern": "^(?:DOC:|__EXAMPLE__)"
+            "pattern": "^DOC:(?!Offices-and-Ranks$)"
           }
-        }
+        },
+        "required": [
+          "id"
+        ]
       },
-      "else": {
+      "then": {
         "properties": {
           "data": {
             "required": [
@@ -54,140 +57,368 @@
       "type": "object",
       "properties": {
         "schema": {
-          "const": "territorial-scale.v1"
+          "const": "territorial-scale.v2"
         },
-        "regularRegions": {
+        "scope": {
+          "const": "seoul-only"
+        },
+        "geographicSource": {
           "type": "object",
           "properties": {
-            "provinceCodes": {
+            "path": {
+              "const": "lore/regions/seoul-electoral-titles.json"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "schema": {
+              "const": "seoul-geography-staging.v1"
+            }
+          },
+          "required": [
+            "path",
+            "sha256",
+            "schema"
+          ],
+          "additionalProperties": false
+        },
+        "geographicEmpireId": {
+          "const": "geography:empire:seoul"
+        },
+        "rankOrder": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "empire"
+            },
+            {
+              "const": "kingdom"
+            },
+            {
+              "const": "duchy"
+            },
+            {
+              "const": "county"
+            },
+            {
+              "const": "barony"
+            }
+          ],
+          "items": false,
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "levels": {
+          "type": "object",
+          "properties": {
+            "empire": {
+              "type": "object",
+              "properties": {
+                "sourcePointer": {
+                  "const": "/titles"
+                },
+                "rank": {
+                  "const": "empire"
+                },
+                "count": {
+                  "const": 1
+                }
+              },
+              "required": [
+                "sourcePointer",
+                "rank",
+                "count"
+              ],
+              "additionalProperties": false
+            },
+            "kingdom": {
+              "type": "object",
+              "properties": {
+                "sourcePointer": {
+                  "const": "/titles"
+                },
+                "rank": {
+                  "const": "kingdom"
+                },
+                "count": {
+                  "const": 6
+                },
+                "partitionSha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "sourcePointer",
+                "rank",
+                "count",
+                "partitionSha256"
+              ],
+              "additionalProperties": false
+            },
+            "duchy": {
+              "type": "object",
+              "properties": {
+                "sourcePointer": {
+                  "const": "/titles"
+                },
+                "rank": {
+                  "const": "duchy"
+                },
+                "count": {
+                  "const": 25
+                }
+              },
+              "required": [
+                "sourcePointer",
+                "rank",
+                "count"
+              ],
+              "additionalProperties": false
+            },
+            "county": {
+              "type": "object",
+              "properties": {
+                "sourcePointer": {
+                  "const": "/titles"
+                },
+                "rank": {
+                  "const": "county"
+                },
+                "count": {
+                  "const": 48
+                }
+              },
+              "required": [
+                "sourcePointer",
+                "rank",
+                "count"
+              ],
+              "additionalProperties": false
+            },
+            "barony": {
+              "type": "object",
+              "properties": {
+                "representation": {
+                  "const": "county-detail-slot"
+                },
+                "idField": {
+                  "const": "slotId"
+                },
+                "parentField": {
+                  "const": "countyTitleId"
+                }
+              },
+              "required": [
+                "representation",
+                "idField",
+                "parentField"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "empire",
+            "kingdom",
+            "duchy",
+            "county",
+            "barony"
+          ],
+          "additionalProperties": false
+        },
+        "map": {
+          "type": "object",
+          "properties": {
+            "minimumPolygonRank": {
+              "const": "county"
+            },
+            "selectableRanks": {
               "type": "array",
               "prefixItems": [
                 {
-                  "const": "41"
+                  "const": "county"
                 },
                 {
-                  "const": "43"
+                  "const": "duchy"
                 },
                 {
-                  "const": "44"
+                  "const": "kingdom"
                 },
                 {
-                  "const": "51"
+                  "const": "empire"
                 }
               ],
               "items": false,
               "minItems": 4,
-              "maxItems": 4
+              "maxItems": 4,
+              "uniqueItems": true
             },
-            "province": {
-              "const": "kingdom"
-            },
-            "city": {
-              "const": "duchy"
-            },
-            "county": {
-              "const": "duchy"
-            },
-            "district": {
-              "const": "barony"
-            },
-            "directMunicipalEupMyeonDong": {
-              "const": "barony"
-            },
-            "eupMyeonDongWithinGu": {
-              "const": "component"
-            },
-            "componentImpliesLowerTitle": {
+            "baronyPolygon": {
               "const": false
             }
           },
           "required": [
-            "provinceCodes",
-            "province",
-            "city",
-            "county",
-            "district",
-            "directMunicipalEupMyeonDong",
-            "eupMyeonDongWithinGu",
-            "componentImpliesLowerTitle"
+            "minimumPolygonRank",
+            "selectableRanks",
+            "baronyPolygon"
           ],
           "additionalProperties": false
         },
-        "specialCities": {
-          "type": "array",
-          "prefixItems": [
-            {
+        "slotEditions": {
+          "type": "object",
+          "properties": {
+            "dated": {
               "type": "object",
               "properties": {
-                "name": {
-                  "const": "서울특별시"
+                "sourcePointer": {
+                  "const": "/countySlots"
                 },
-                "englishName": {
-                  "const": "Seoul Special City"
+                "edition": {
+                  "const": "sgis-20250630"
                 },
-                "city": {
-                  "const": "kingdom"
+                "baseDate": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
                 },
-                "district": {
-                  "const": "duchy"
+                "count": {
+                  "const": 426
                 },
-                "dong": {
-                  "const": "barony"
+                "geometryVerified": {
+                  "const": true
+                },
+                "currentBoundaryCertification": {
+                  "const": false
                 }
               },
               "required": [
-                "name",
-                "englishName",
-                "city",
-                "district",
-                "dong"
+                "sourcePointer",
+                "edition",
+                "baseDate",
+                "count",
+                "geometryVerified",
+                "currentBoundaryCertification"
               ],
               "additionalProperties": false
             },
-            {
+            "currentCorrespondence": {
               "type": "object",
               "properties": {
-                "name": {
-                  "const": "대전광역시"
+                "sourcePointer": {
+                  "const": "/currentCorrespondenceSlots"
                 },
-                "englishName": {
-                  "const": "Daejeon Metropolitan City"
+                "edition": {
+                  "const": "seoul-dong-correspondence-20260701-checked20261013"
                 },
-                "city": {
-                  "const": "kingdom"
+                "administrativeCandidateDate": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
                 },
-                "district": {
-                  "const": "duchy"
+                "checkedAt": {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}T.*Z$"
                 },
-                "dong": {
-                  "const": "barony"
+                "count": {
+                  "const": 427
+                },
+                "geometryVerified": {
+                  "const": false
                 }
               },
               "required": [
-                "name",
-                "englishName",
-                "city",
-                "district",
-                "dong"
+                "sourcePointer",
+                "edition",
+                "administrativeCandidateDate",
+                "checkedAt",
+                "count",
+                "geometryVerified"
               ],
-              "additionalProperties": false
-            },
-            {
-              "type": "object",
-              "properties": {
-                "name": { "const": "인천광역시" },
-                "englishName": { "const": "Incheon Metropolitan City" },
-                "city": { "const": "kingdom" },
-                "district": { "const": "duchy" },
-                "dong": { "const": "barony" }
-              },
-              "required": ["name", "englishName", "city", "district", "dong"],
               "additionalProperties": false
             }
+          },
+          "required": [
+            "dated",
+            "currentCorrespondence"
           ],
-          "items": false,
-          "minItems": 3,
-          "maxItems": 3
+          "additionalProperties": false
+        },
+        "geographicParent": {
+          "type": "object",
+          "properties": {
+            "sourceField": {
+              "const": "feudalParentTitleId"
+            },
+            "meaning": {
+              "const": "geographic-only"
+            },
+            "politicalLiegeInference": {
+              "const": false
+            },
+            "crossDistrictExceptions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "titleId": {
+                    "const": "geography:county:seoul-constituency:중구성동구을선거구"
+                  },
+                  "parentTitleId": {
+                    "const": "geography:empire:seoul"
+                  },
+                  "mapKingdomTitleId": {
+                    "const": "geography:kingdom:seoul:01"
+                  },
+                  "kind": {
+                    "const": "cross-district-empire-direct"
+                  }
+                },
+                "required": [
+                  "titleId",
+                  "parentTitleId",
+                  "mapKingdomTitleId",
+                  "kind"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "sourceField",
+            "meaning",
+            "politicalLiegeInference",
+            "crossDistrictExceptions"
+          ],
+          "additionalProperties": false
+        },
+        "politicalAxis": {
+          "type": "object",
+          "properties": {
+            "currentCenters": {
+              "const": 3
+            },
+            "geographicKingdomEquivalence": {
+              "const": false
+            },
+            "preserveStablePoliticalIdentities": {
+              "const": true
+            },
+            "preserveNonterritorialKingship": {
+              "const": true
+            }
+          },
+          "required": [
+            "currentCenters",
+            "geographicKingdomEquivalence",
+            "preserveStablePoliticalIdentities",
+            "preserveNonterritorialKingship"
+          ],
+          "additionalProperties": false
         },
         "scaleImpliesPersonalOwnership": {
           "const": false
@@ -195,116 +426,28 @@
         "scaleImpliesTitleRank": {
           "const": false
         },
-        "seoulControl": {
-          "type": "object",
-          "properties": {
-            "majorPolities": {
-              "const": 16
-            },
-            "wholeKingdomControlledByOnePolity": {
-              "const": false
-            }
-          },
-          "required": [
-            "majorPolities",
-            "wholeKingdomControlledByOnePolity"
-          ],
-          "additionalProperties": false
+        "scaleImpliesFacilityAccess": {
+          "const": false
         },
-        "separateKingdomContainers": {
-          "type": "array",
-          "prefixItems": [
-            {
-              "type": "object",
-              "properties": {
-                "provinceCode": {
-                  "const": "43"
-                },
-                "name": {
-                  "const": "충청북도"
-                }
-              },
-              "required": [
-                "provinceCode",
-                "name"
-              ],
-              "additionalProperties": false
-            },
-            {
-              "type": "object",
-              "properties": {
-                "provinceCode": {
-                  "const": "44"
-                },
-                "name": {
-                  "const": "충청남도"
-                }
-              },
-              "required": [
-                "provinceCode",
-                "name"
-              ],
-              "additionalProperties": false
-            }
-          ],
-          "items": false,
-          "minItems": 2,
-          "maxItems": 2
-        },
-        "sejong": {
-          "type": "object",
-          "properties": {
-            "provinceCode": {
-              "const": "36"
-            },
-            "name": {
-              "const": "세종특별자치시"
-            },
-            "englishName": {
-              "const": "Sejong Special Self-Governing City"
-            },
-            "geographicContainerId": {
-              "const": "admin:36"
-            },
-            "city": {
-              "const": "kingdom"
-            },
-            "directEupMyeonDong": {
-              "const": "barony"
-            },
-            "sourceAliases": {
-              "type": "array",
-              "prefixItems": [
-                {
-                  "const": "admin-city:36:세종시"
-                }
-              ],
-              "items": false,
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "provinceCode",
-            "name",
-            "englishName",
-            "geographicContainerId",
-            "city",
-            "directEupMyeonDong",
-            "sourceAliases"
-          ],
-          "additionalProperties": false
+        "slotExistenceImpliesGrant": {
+          "const": false
         }
       },
       "required": [
         "schema",
-        "regularRegions",
-        "specialCities",
+        "scope",
+        "geographicSource",
+        "geographicEmpireId",
+        "rankOrder",
+        "levels",
+        "map",
+        "slotEditions",
+        "geographicParent",
+        "politicalAxis",
         "scaleImpliesPersonalOwnership",
         "scaleImpliesTitleRank",
-        "seoulControl",
-        "separateKingdomContainers",
-        "sejong"
+        "scaleImpliesFacilityAccess",
+        "slotExistenceImpliesGrant"
       ],
       "additionalProperties": false
     }

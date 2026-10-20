@@ -453,52 +453,23 @@
             "name": "구하온",
             "url": "/people/person-0019",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "선창 경매",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/215/items/1/ko",
-                  "quote": "생업: 선창 경매"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,100 +477,40 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/215/items/1/ko",
-                    "quote": "생업: 선창 경매"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "어천",
-              "type": "초소 영지",
-              "station": "어천",
-              "state": "S01",
-              "settlement": {
-                "name": "어천 정착지",
-                "type": "정착지",
-                "description": "어천 일대 고정 거점"
-              },
-              "note": "S01 어천 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -623,52 +534,23 @@
             "name": "구하온",
             "url": "/people/person-0019",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "선창 경매",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/215/items/1/ko",
-                  "quote": "생업: 선창 경매"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -676,100 +558,40 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/215/items/1/ko",
-                    "quote": "생업: 선창 경매"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/217/text/ko",
-                    "quote": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "어천",
-              "type": "초소 영지",
-              "station": "어천",
-              "state": "S01",
-              "settlement": {
-                "name": "어천 정착지",
-                "type": "정착지",
-                "description": "어천 일대 고정 거점"
-              },
-              "note": "S01 어천 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -790,18 +612,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "어천",
-    "type": "초소 영지",
-    "station": "어천",
-    "state": "S01",
-    "settlement": {
-      "name": "어천 정착지",
-      "type": "정착지",
-      "description": "어천 일대 고정 거점"
-    },
-    "note": "S01 어천 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -838,11 +648,12 @@
     "생업": "선창 경매",
     "품계": "주사",
     "직함": "여의도 선창시장 경매사",
+    "업무 위치": "여의동. 여의동 선창 경매에 앞서 구하온은 수질 표본 스티커와 구태윤의 수통 봉인을 확인하고 정모란의 선석 추첨 순서에 맞춰 낙찰품을 올린다.",
     "가치관": "권위 55 | 개방 −5 | 무력 20 | 물질 50 | 공동 20 | 원칙 20 | 공개 15 | 자격 −10 | 분산 −40 | 변혁 −25",
     "욕망": "갈망 −10 | 독점 −5 | 위험 35 | 과시 10 | 지속 5 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 여의도 선창시장 경매사 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 여의도 선창시장 경매사 자리는 저울 재점검 공개로 열렸다.\n- 업무 위치: 여의동. 여의동 선창 경매에 앞서 구하온은 수질 표본 스티커와 구태윤의 수통 봉인을 확인하고 정모란의 선석 추첨 순서에 맞춰 낙찰품을 올린다.",
     "관직": "품계 주사. 직함은 여의도 선창시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.",
     "일화": "2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 여의도 선창시장 경매사 자리의 서명이 장부에 올랐다.",
     "관계": "정모란의 선석 추첨을 경매로 집행하는 계약이고, 구태윤의 양천 수통과 순번을 나누며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.",
@@ -850,7 +661,7 @@
     "공포": "가락의 가격 원장이 여의도 선석까지 삼켜 서부 식수가 동부 시세로 팔리는 것.",
     "개입": "밀선 낙찰 장부를 폭로하거나, 봉인 표본을 호송해 그의 공개 경매를 지킬 수 있다."
   },
-  "biography": "강바람보다 수통 시세를 빨리 읽고, 저울을 속이는 선주를 아침 추첨에서 즉시 뺀다. 흥정을 노래처럼 하지만 단수 골목의 가격은 올리지 않는다.\n\n- 소속: 수문국\n- 생업: 선창 경매\n- 품계: 주사\n- 직함: 여의도 선창시장 경매사\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 여의도 선창시장 경매사 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 주사. 직함은 여의도 선창시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 여의도 선창시장 경매사 자리의 서명이 장부에 올랐다.\n\n**관계.** 정모란의 선석 추첨을 경매로 집행하는 계약이고, 구태윤의 양천 수통과 순번을 나누며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.\n\n**야망.** 급수 바지선 경매를 배급구역 대표의 봉인과 함께만 열어 물 시세가 물 계약의 공개 장부가 되게 한다.\n\n**공포.** 가락의 가격 원장이 여의도 선석까지 삼켜 서부 식수가 동부 시세로 팔리는 것.\n\n**개입.** 밀선 낙찰 장부를 폭로하거나, 봉인 표본을 호송해 그의 공개 경매를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 20 | 물질 50 | 공동 20 | 원칙 20 | 공개 15 | 자격 −10 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 −10 | 독점 −5 | 위험 35 | 과시 10 | 지속 5 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "강바람보다 수통 시세를 빨리 읽고, 저울을 속이는 선주를 아침 추첨에서 즉시 뺀다. 흥정을 노래처럼 하지만 단수 골목의 가격은 올리지 않는다.\n\n- 소속: 수문국\n- 생업: 선창 경매\n- 품계: 주사\n- 직함: 여의도 선창시장 경매사\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 여의도 선창시장 경매사 자리는 저울 재점검 공개로 열렸다.\n- 업무 위치: 여의동. 여의동 선창 경매에 앞서 구하온은 수질 표본 스티커와 구태윤의 수통 봉인을 확인하고 정모란의 선석 추첨 순서에 맞춰 낙찰품을 올린다.\n\n**관직.** 품계 주사. 직함은 여의도 선창시장 경매사. 경매 시작 전 수질 표본 스티커를 확인하고, 기준 미달 원수는 낙찰이 되어도 출항시키지 않는다.\n\n**일화.** 2125년 썩기 시작한 곡물을 먼저 나눠 주고 손실 장부를 공개했다. 이 일로 여의도 선창시장 경매사 자리의 서명이 장부에 올랐다.\n\n**관계.** 정모란의 선석 추첨을 경매로 집행하는 계약이고, 구태윤의 양천 수통과 순번을 나누며, 남윤경의 비상 시세 제의를 원한으로 돌려보낸다.\n\n**야망.** 급수 바지선 경매를 배급구역 대표의 봉인과 함께만 열어 물 시세가 물 계약의 공개 장부가 되게 한다.\n\n**공포.** 가락의 가격 원장이 여의도 선석까지 삼켜 서부 식수가 동부 시세로 팔리는 것.\n\n**개입.** 밀선 낙찰 장부를 폭로하거나, 봉인 표본을 호송해 그의 공개 경매를 지킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 20 | 물질 50 | 공동 20 | 원칙 20 | 공개 15 | 자격 −10 | 분산 −40 | 변혁 −25\n- 욕망: 갈망 −10 | 독점 −5 | 위험 35 | 과시 10 | 지속 5 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

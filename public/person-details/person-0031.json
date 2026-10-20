@@ -2,9 +2,9 @@
   "id": "person-0031",
   "name": "김나율",
   "title": "구로 노동조합 서기",
-  "position": "구로 노동조합 서기 · 시흥시 영주",
+  "position": "구로 노동조합 서기",
   "characterId": "K031",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "교대 기록",
   "gender": "여성",
@@ -228,7 +228,7 @@
         "timeline": [
           {
             "year": 2068,
-            "summary": "오승원은 대합실 당직에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "오승원은 대합실 당직에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-02.json",
@@ -560,47 +560,23 @@
             "name": "김나율",
             "url": "/people/person-0031",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교대 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/82/items/1/ko",
-                  "quote": "생업: 교대 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/83/text/ko",
-                    "quote": "작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -608,79 +584,29 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/82/items/1/ko",
-                    "quote": "생업: 교대 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/83/text/ko",
-                    "quote": "작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "김나율 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       },
@@ -703,47 +629,23 @@
             "name": "김나율",
             "url": "/people/person-0031",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교대 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/82/items/1/ko",
-                  "quote": "생업: 교대 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/83/text/ko",
-                    "quote": "작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -751,221 +653,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/82/items/1/ko",
-                    "quote": "생업: 교대 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/83/text/ko",
-                    "quote": "작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "김나율 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41390-S02",
-      "name": {
-        "ko": "시흥시 공작령 직영지"
-      },
-      "holderPersonId": "K031",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4139051000",
-          "name": "경기도 시흥시 대야동"
-        },
-        {
-          "id": "4139052000",
-          "name": "경기도 시흥시 신천동"
-        },
-        {
-          "id": "4139053100",
-          "name": "경기도 시흥시 신현동"
-        },
-        {
-          "id": "4139054000",
-          "name": "경기도 시흥시 은행동"
-        },
-        {
-          "id": "4139055000",
-          "name": "경기도 시흥시 매화동"
-        },
-        {
-          "id": "4139057000",
-          "name": "경기도 시흥시 목감동"
-        },
-        {
-          "id": "4139058100",
-          "name": "경기도 시흥시 군자동"
-        },
-        {
-          "id": "4139058200",
-          "name": "경기도 시흥시 월곶동"
-        },
-        {
-          "id": "4139058900",
-          "name": "경기도 시흥시 정왕본동"
-        },
-        {
-          "id": "4139059100",
-          "name": "경기도 시흥시 정왕1동"
-        },
-        {
-          "id": "4139059200",
-          "name": "경기도 시흥시 정왕2동"
-        },
-        {
-          "id": "4139059300",
-          "name": "경기도 시흥시 정왕3동"
-        },
-        {
-          "id": "4139059400",
-          "name": "경기도 시흥시 정왕4동"
-        },
-        {
-          "id": "4139059600",
-          "name": "경기도 시흥시 배곧1동"
-        },
-        {
-          "id": "4139059700",
-          "name": "경기도 시흥시 배곧2동"
-        },
-        {
-          "id": "4139062100",
-          "name": "경기도 시흥시 과림동"
-        },
-        {
-          "id": "4139063000",
-          "name": "경기도 시흥시 연성동"
-        },
-        {
-          "id": "4139063100",
-          "name": "경기도 시흥시 장곡동"
-        },
-        {
-          "id": "4139064000",
-          "name": "경기도 시흥시 능곡동"
-        },
-        {
-          "id": "4139065000",
-          "name": "경기도 시흥시 거북섬동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41390-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41390-S02",
-      "name": "시흥시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K031",
-      "basis": "개막 행정 규모 그룹 41390(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4139051000",
-        "4139052000",
-        "4139053100",
-        "4139054000",
-        "4139055000",
-        "4139057000",
-        "4139058100",
-        "4139058200",
-        "4139058900",
-        "4139059100",
-        "4139059200",
-        "4139059300",
-        "4139059400",
-        "4139059600",
-        "4139059700",
-        "4139062100",
-        "4139063000",
-        "4139063100",
-        "4139064000",
-        "4139065000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41390-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -980,7 +713,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1032,19 +764,20 @@
     "생업": "교대 기록",
     "품계": "조합원",
     "직함": "구로 노동조합 서기",
+    "업무 위치": "구로2동. 김나율은 구로2동 노동조합 칠판에서 교대 명부와 백온의 시민권 명단을 대조한다. 강민서가 복구복무 등록을 거부한 작업자의 줄을 올리면 서명된 교대표를 제하온의 원장 대조 당직으로 넘긴다.",
     "가치관": "권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 40 | 원칙 5 | 공개 30 | 자격 60 | 분산 20 | 변혁 20",
     "욕망": "갈망 −5 | 독점 −20 | 위험 −5 | 과시 20 | 지속 −15 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 노동조합 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 노동조합 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로2동. 김나율은 구로2동 노동조합 칠판에서 교대 명부와 백온의 시민권 명단을 대조한다. 강민서가 복구복무 등록을 거부한 작업자의 줄을 올리면 서명된 교대표를 제하온의 원장 대조 당직으로 넘긴다.",
     "관직": "품계 조합원. 직함은 구로 노동조합 서기. 작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다.",
     "일화": "2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 구로 노동조합 서기 자리의 서명이 장부에 올랐다.",
     "관계": "강민서의 교환 설계를 현장에서 집행하는 동맹이고, 백온의 난민 시민권 요구를 조합 표로 지지하며, 이강묵의 강경 동원령에는 원한을 품는다.",
     "야망": "복구복무자의 시민권을 조합 명부에 먼저 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.",
     "공포": "경비대가 파업 공방을 차단문으로 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.",
-    "개입": "파업 공방의 숙련 명부를 지켜 그의 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 서기직을 흔들 수 있다."
+    "개입": "파업 공방의 숙련 명부를 지켜 김나율의 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 서기직을 흔들 수 있다."
   },
-  "biography": "토론에서는 온화하나 합의 뒤의 태업 명단을 밤새 대조한다. 숙련 점수를 숨기는 반장을 조합의 적으로 본다.\n\n- 소속: 규격맹\n- 생업: 교대 기록\n- 품계: 조합원\n- 직함: 구로 노동조합 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 노동조합 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 구로 노동조합 서기. 작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 구로 노동조합 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서의 교환 설계를 현장에서 집행하는 동맹이고, 백온의 난민 시민권 요구를 조합 표로 지지하며, 이강묵의 강경 동원령에는 원한을 품는다.\n\n**야망.** 복구복무자의 시민권을 조합 명부에 먼저 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 차단문으로 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 파업 공방의 숙련 명부를 지켜 그의 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 서기직을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 40 | 원칙 5 | 공개 30 | 자격 60 | 분산 20 | 변혁 20\n- 욕망: 갈망 −5 | 독점 −20 | 위험 −5 | 과시 20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "토론에서는 온화하나 합의 뒤의 태업 명단을 밤새 대조한다. 숙련 점수를 숨기는 반장을 조합의 적으로 본다.\n\n- 소속: 규격맹\n- 생업: 교대 기록\n- 품계: 조합원\n- 직함: 구로 노동조합 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 노동조합 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로2동. 김나율은 구로2동 노동조합 칠판에서 교대 명부와 백온의 시민권 명단을 대조한다. 강민서가 복구복무 등록을 거부한 작업자의 줄을 올리면 서명된 교대표를 제하온의 원장 대조 당직으로 넘긴다.\n\n**관직.** 품계 조합원. 직함은 구로 노동조합 서기. 작업반 교대와 숙련 점수를 공개 칠판에 쓰고, 시민권 미등록 노동은 길드 평의회 안건으로 올리지 않는다.\n\n**일화.** 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 구로 노동조합 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 강민서의 교환 설계를 현장에서 집행하는 동맹이고, 백온의 난민 시민권 요구를 조합 표로 지지하며, 이강묵의 강경 동원령에는 원한을 품는다.\n\n**야망.** 복구복무자의 시민권을 조합 명부에 먼저 올려 규격맹이 군수가 아니라 노동 이동권으로 퍼지게 한다.\n\n**공포.** 경비대가 파업 공방을 차단문으로 가두고 조합 명부를 군사호적으로 바꿔 쓰는 것.\n\n**개입.** 파업 공방의 숙련 명부를 지켜 김나율의 시민권안을 통과시키거나, 태업 명단 조작을 밝혀 서기직을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 10 | 무력 −15 | 물질 45 | 공동 40 | 원칙 5 | 공개 30 | 자격 60 | 분산 20 | 변혁 20\n- 욕망: 갈망 −5 | 독점 −20 | 위험 −5 | 과시 20 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],

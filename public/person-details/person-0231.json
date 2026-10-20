@@ -458,8 +458,8 @@
           "en": "Fears forged coordinates causing civilian blockades."
         },
         "relationship": {
-          "ko": "권미래에게 금고 좌표를 넘기고, 모국의 영종지점 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.",
-          "en": "Shares coordinates with Gwon Mirae and Moguk and waits for Choi Jiwoo’s cross-appraisal."
+          "ko": "권미래에게 금고 좌표를 넘기고, 모국의 여의동 금고와 영등포동 인계 창구 사이 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.",
+          "en": "Handed the tower coordinates to Gwon Mirae and split exchange and field measurement between the Yeouido-dong vault and the Yeongdeungpo-dong handover counter with Mo Guk. Fixed no coordinates before Choi Jiwoo's cross-verification."
         },
         "effects": []
       },
@@ -482,8 +482,8 @@
           "en": "Fears forged coordinates causing civilian blockades."
         },
         "relationship": {
-          "ko": "권미래에게 금고 좌표를 넘기고, 모국의 영종지점 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.",
-          "en": "Shares coordinates with Gwon Mirae and Moguk and waits for Choi Jiwoo’s cross-appraisal."
+          "ko": "권미래에게 금고 좌표를 넘기고, 모국의 여의동 금고와 영등포동 인계 창구 사이 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.",
+          "en": "Handed the tower coordinates to Gwon Mirae and split exchange and field measurement between the Yeouido-dong vault and the Yeongdeungpo-dong handover counter with Mo Guk. Fixed no coordinates before Choi Jiwoo's cross-verification."
         },
         "effects": []
       }
@@ -552,52 +552,23 @@
             "name": "복두모",
             "url": "/people/person-0231",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환전로 실측 좌표·갱신 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/116/items/0/ko",
-                  "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -605,127 +576,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 28,
               "spent": 68,
-              "unspent": 7,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "복두모 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 7
+            }
           }
         }
       },
@@ -748,52 +639,23 @@
             "name": "복두모",
             "url": "/people/person-0231",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환전로 실측 좌표·갱신 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/116/items/0/ko",
-                  "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -801,127 +663,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 환전로 실측 좌표·갱신 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 28,
               "spent": 68,
-              "unspent": 7,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "복두모 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 7
+            }
           }
         }
       }
@@ -942,7 +724,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -998,15 +779,15 @@
     "욕망": "갈망 35 | 독점 25 | 위험 −30 | 과시 25 | 지속 0 | 지향 동성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 환전로 갱신 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2090-10-16 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 환전로 갱신 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 복두모는 영등포동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전로 실측 좌표·갱신 기록을 맡는다.\n- 복두모는 여의동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전로 실측 좌표·갱신 기록을 맡는다.",
     "관직": "품계 서기. 직함은 환전로 갱신 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.",
     "일화": "2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 환전로 갱신 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "권미래에게 금고 좌표를 넘기고, 모국의 영종지점 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.",
-    "야망": "영종지점과 여의도 금고의 환전로를 공개 원판에 묶어, 강국이 전원을 내려도 우회 환전로가 보이게 한다.",
+    "관계": "권미래에게 금고 좌표를 넘기고, 모국의 여의동 금고와 영등포동 인계 창구 사이 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.",
+    "야망": "영등포동 인계 창구와 여의동 금고의 환전로를 공개 원판에 묶어, 강국이 전원을 내려도 우회 환전로가 보이게 한다.",
     "공포": "위조 좌표 한 장이 공식 원판에 올라 추적조가 민간 골목을 봉쇄하는 것.",
     "개입": "공백 구간을 함께 실측하거나, 위조 원판을 출자 평의회에서 폐기할 수 있다."
   },
-  "biography": "닫힌 환기구를 보면 발걸음이 먼저 향하고, 소문만으로 선을 긋는 일을 경멸한다. 좌표가 하루만 낡아도 지도를 찢고 다시 그린다.\n\n- 생업: 환전로 실측 좌표·갱신 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 환전로 갱신 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 환전로 갱신 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 서기. 직함은 환전로 갱신 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 환전로 갱신 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 권미래에게 금고 좌표를 넘기고, 모국의 영종지점 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.\n\n**야망.** 영종지점과 여의도 금고의 환전로를 공개 원판에 묶어, 강국이 전원을 내려도 우회 환전로가 보이게 한다.\n\n**공포.** 위조 좌표 한 장이 공식 원판에 올라 추적조가 민간 골목을 봉쇄하는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 출자 평의회에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 −15 | 공동 −10 | 원칙 20 | 공개 55 | 자격 15 | 분산 15 | 변혁 15\n- 욕망: 갈망 35 | 독점 25 | 위험 −30 | 과시 25 | 지속 0 | 지향 동성 | 결합 없음",
+  "biography": "닫힌 환기구를 보면 발걸음이 먼저 향하고, 소문만으로 선을 긋는 일을 경멸한다. 좌표가 하루만 낡아도 지도를 찢고 다시 그린다.\n\n- 생업: 환전로 실측 좌표·갱신 기록\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 환전로 갱신 탐사원\n**생애.** 2090-10-16 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 환전로 갱신 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 복두모는 영등포동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전로 실측 좌표·갱신 기록을 맡는다.\n- 복두모는 여의동을 업무동으로 삼아 여의동 금고와 영등포동 인계 창구 사이의 환전로 실측 좌표·갱신 기록을 맡는다.\n\n**관직.** 품계 서기. 직함은 환전로 갱신 탐사원. 실측하지 않은 선은 점선으로만 남기고, 독립 목격이 둘 미만이면 원판에 올리지 않는다.\n\n**일화.** 2125년 태업 작업반과 밤새 조건을 나눠 다음 교대를 열었다. 이 일로 환전로 갱신 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 권미래에게 금고 좌표를 넘기고, 모국의 여의동 금고와 영등포동 인계 창구 사이 환전과 실측을 나눈다. 최지우의 교차 감정 전에 좌표를 확정하지 않는다.\n\n**야망.** 영등포동 인계 창구와 여의동 금고의 환전로를 공개 원판에 묶어, 강국이 전원을 내려도 우회 환전로가 보이게 한다.\n\n**공포.** 위조 좌표 한 장이 공식 원판에 올라 추적조가 민간 골목을 봉쇄하는 것.\n\n**개입.** 공백 구간을 함께 실측하거나, 위조 원판을 출자 평의회에서 폐기할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 10 | 무력 −20 | 물질 −15 | 공동 −10 | 원칙 20 | 공개 55 | 자격 15 | 분산 15 | 변혁 15\n- 욕망: 갈망 35 | 독점 25 | 위험 −30 | 과시 25 | 지속 0 | 지향 동성 | 결합 없음",
   "sources": [
     "Cast-State-09"
   ],

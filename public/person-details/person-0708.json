@@ -2,7 +2,7 @@
   "id": "person-0708",
   "name": "조아원",
   "title": "약재 물류상",
-  "position": "약재 관리 수련의",
+  "position": "약재 물류상",
   "characterId": "K708",
   "rank": "수련의",
   "commonTier": "T3",
@@ -446,57 +446,23 @@
             "name": "조아원",
             "url": "/people/person-0708",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 관리 기록·당직 열쇠 인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/457/items/0/ko",
-                  "quote": "생업: 약재 관리 기록·당직 열쇠 인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/456/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/458/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/459/text/ko",
-                    "quote": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -504,110 +470,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/457/items/0/ko",
-                    "quote": "생업: 약재 관리 기록·당직 열쇠 인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/458/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/456/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/459/text/ko",
-                    "quote": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/457/items/0/ko",
-                    "quote": "생업: 약재 관리 기록·당직 열쇠 인계"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 84,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 84,
-              "unspent": 0,
-              "total": 84
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "구리",
-              "type": "초소 영지",
-              "station": "구리",
-              "state": "S13",
-              "settlement": {
-                "name": "구리 정착지",
-                "type": "정착지",
-                "description": "구리 일대 고정 거점"
-              },
-              "note": "S13 구리 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -631,57 +527,23 @@
             "name": "조아원",
             "url": "/people/person-0708",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 관리 기록·당직 열쇠 인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/457/items/0/ko",
-                  "quote": "생업: 약재 관리 기록·당직 열쇠 인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/456/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/458/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/459/text/ko",
-                    "quote": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -689,110 +551,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/457/items/0/ko",
-                    "quote": "생업: 약재 관리 기록·당직 열쇠 인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/458/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/456/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/459/text/ko",
-                    "quote": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/457/items/0/ko",
-                    "quote": "생업: 약재 관리 기록·당직 열쇠 인계"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 84,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 84,
-              "unspent": 0,
-              "total": 84
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "구리",
-              "type": "초소 영지",
-              "station": "구리",
-              "state": "S13",
-              "settlement": {
-                "name": "구리 정착지",
-                "type": "정착지",
-                "description": "구리 일대 고정 거점"
-              },
-              "note": "S13 구리 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -813,18 +605,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "구리",
-    "type": "초소 영지",
-    "station": "구리",
-    "state": "S13",
-    "settlement": {
-      "name": "구리 정착지",
-      "type": "정착지",
-      "description": "구리 일대 고정 거점"
-    },
-    "note": "S13 구리 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -860,20 +640,20 @@
     "생업": "약재 관리 기록·당직 열쇠 인계",
     "소속": "흰십자단",
     "품계": "수련의",
-    "직함": "약재 관리 수련의",
+    "직함": "약재 물류상",
     "가치관": "권위 −20 | 개방 25 | 무력 −50 | 물질 0 | 공동 20 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −15",
     "욕망": "갈망 45 | 독점 −5 | 위험 40 | 과시 15 | 지속 35 | 지향 유동 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.",
-    "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "생애": "2064-06-25에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구를 조아원의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
+    "관직": "품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.",
+    "일화": "2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
+    "관계": "조아원은 관리하는 약재의 상태와 진료 중 필요한 양을 수효은에게 알린다. 수효은은 건조실·진료소 출력 일지를 확인해 보관 전력 공백이 약재 손상으로 이어진 곳을 찾는다.",
     "야망": "약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.",
-    "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.",
+    "공포": "약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 관리 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 관리 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 이 일로 약재 관리 수련의 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −50 | 물질 0 | 공동 20 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 15 | 지속 35 | 지향 유동 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 약재 관리 기록·당직 열쇠 인계\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 물류상\n**생애.** 2064-06-25에 태어났다. 2126년 개막 현재 약재 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 관리 기록·당직 열쇠 인계 창구를 조아원의 업무 기준점으로 한다. 이 배치는 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 관리 수련의. 자기 직위의 열쇠와 기록만 넘기고, 인계한 열쇠와 기록의 수령 시각을 장부에 적는다.\n\n**일화.** 2125년 수술 중 정전이 되자 손전화 아래에서 칼을 계속했다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 조아원은 관리하는 약재의 상태와 진료 중 필요한 양을 수효은에게 알린다. 수효은은 건조실·진료소 출력 일지를 확인해 보관 전력 공백이 약재 손상으로 이어진 곳을 찾는다.\n\n**야망.** 약재 관리 수련의 자리에서 흰십자단의 장부를 끊기지 않게 잇는다.\n\n**공포.** 약재 관리 수련의 당직이 비면 흰십자단의 통행이 서울 내부 후원 세력 볼모가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 25 | 무력 −50 | 물질 0 | 공동 20 | 원칙 40 | 공개 15 | 자격 25 | 분산 20 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −5 | 위험 40 | 과시 15 | 지속 35 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

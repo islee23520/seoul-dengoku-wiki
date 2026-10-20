@@ -309,7 +309,7 @@
         "sourceRefs": [
           {
             "path": "lore/characters/Core-Characters.json",
-            "anchor": "/content/40"
+            "anchor": "임하준-p2"
           }
         ]
       },
@@ -550,41 +550,23 @@
             "name": "임초원",
             "url": "/people/person-0087",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프기술자",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/52/text/ko",
-                  "quote": "생업 별명은 펌프기술자."
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -592,90 +574,35 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/52/text/ko",
-                    "quote": "생업 별명은 펌프기술자."
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/53/text/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "임초원 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       },
@@ -698,41 +625,23 @@
             "name": "임초원",
             "url": "/people/person-0087",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "펌프기술자",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/52/text/ko",
-                  "quote": "생업 별명은 펌프기술자."
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -740,90 +649,35 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/52/text/ko",
-                    "quote": "생업 별명은 펌프기술자."
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/53/text/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "임초원 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       }
@@ -844,7 +698,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -900,7 +753,7 @@
     "가문": "뚝섬열원가(HC04)의 양자 줄. 관리인은 박누리다. 키는 반만 넘어왔다.",
     "관계": "임하준의 양자. 오경재와 펌프 기술 동맹. 한소미와 총관 후계를 두고 경쟁한다."
   },
-  "biography": "펌프기술자. 실종된 당회장의 양자.\n\n**생애.** 2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.\n\n**관직.** 품계 교사. 직함 없음. 생업 별명은 펌프기술자.\n\n**일화.** 실종 다음 교대, 임초원은 사본 함을 열지 않았다. 원본 함의 봉인만 확인하였다. 그 확인이 유언 3장의 증인 칸에 기재되었다.\n\n**가문.** 뚝섬열원가(HC04)의 양자 줄. 관리인은 박누리다. 키는 반만 넘어왔다.\n\n**관계.** 임하준의 양자. 오경재와 펌프 기술 동맹. 한소미와 총관 후계를 두고 경쟁한다.",
+  "biography": "펌프기술자 임초원은 실종된 임하준의 양자다. 성수1가2동에서 펌프 정비 기록을 인계하고, 실종 다음 교대에 확인한 원본 함의 봉인을 장로회 기록과 대조한다. 임하준에게 배운 정비 교육은 끝나지 않았다.\n\n**생애.** 2126년 세대. 펌프 곁에서 자랐다. 임하준에게 배운 것은 당회 후계가 아니라 펌프 정비 기술이었다. 품계는 교사다. 2125년 겨울 실종 다음 교대에 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다. 2126년 당회장 자리는 오경재가 앉았다. 임초원은 개막에 펌프기술자로 남는다.\n\n**관직.** 품계 교사. 직함 없음. 생업 별명은 펌프기술자.\n\n**일화.** 실종 다음 교대, 임초원은 사본 함을 열지 않았다. 원본 함의 봉인만 확인하였다. 그 확인이 유언 3장의 증인 칸에 기재되었다.\n\n**가문.** 뚝섬열원가(HC04)의 양자 줄. 관리인은 박누리다. 키는 반만 넘어왔다.\n\n**관계.** 임하준의 양자. 오경재와 펌프 기술 동맹. 한소미와 총관 후계를 두고 경쟁한다.",
   "sources": [
     "Core-Characters"
   ],
@@ -911,7 +764,7 @@
         "from": "오경재",
         "type": "계약",
         "to": "임초원",
-        "basis": "총회 인준으로 펌프 기술 동맹을 맺어 망치 전수를 완성"
+        "basis": "총회 인준으로 펌프 기술 동맹을 맺음"
       },
       {
         "from": "한소미",

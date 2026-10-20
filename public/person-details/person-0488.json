@@ -445,52 +445,23 @@
             "name": "백미래",
             "url": "/people/person-0488",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교량 경비 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/347/items/1/ko",
-                  "quote": "생업: 교량 경비 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/348/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/349/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -498,105 +469,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/348/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/347/items/1/ko",
-                    "quote": "생업: 교량 경비 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/349/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/347/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "오천",
-              "type": "초소 영지",
-              "station": "오천",
-              "state": "S01",
-              "settlement": {
-                "name": "오천 정착지",
-                "type": "정착지",
-                "description": "오천 일대 고정 거점"
-              },
-              "note": "S01 오천 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -620,52 +526,23 @@
             "name": "백미래",
             "url": "/people/person-0488",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교량 경비 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/347/items/1/ko",
-                  "quote": "생업: 교량 경비 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/348/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/349/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -673,105 +550,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/348/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/347/items/1/ko",
-                    "quote": "생업: 교량 경비 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/349/text/ko",
-                    "quote": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/347/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "오천",
-              "type": "초소 영지",
-              "station": "오천",
-              "state": "S01",
-              "settlement": {
-                "name": "오천 정착지",
-                "type": "정착지",
-                "description": "오천 일대 고정 거점"
-              },
-              "note": "S01 오천 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -792,18 +604,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "오천",
-    "type": "초소 영지",
-    "station": "오천",
-    "state": "S01",
-    "settlement": {
-      "name": "오천 정착지",
-      "type": "정착지",
-      "description": "오천 일대 고정 거점"
-    },
-    "note": "S01 오천 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -840,19 +640,20 @@
     "생업": "교량 경비 당직",
     "품계": "주사",
     "직함": "교량 통행 전령",
+    "업무 위치": "당산2동. 백미래는 야간 무단 도하자를 붙든 뒤 암호패 교체 내역을 당산2동 교량 기록에 적어 김태운의 다음 경비 교대에 보낸다.",
     "가치관": "권위 55 | 개방 −5 | 무력 0 | 물질 25 | 공동 15 | 원칙 25 | 공개 30 | 자격 10 | 분산 −50 | 변혁 −30",
     "욕망": "갈망 25 | 독점 5 | 위험 −40 | 과시 −30 | 지속 −10 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 교량 통행 전령 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 주사. 직함은 교량 통행 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 교량 통행 전령 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 당산2동. 백미래는 야간 무단 도하자를 붙든 뒤 암호패 교체 내역을 당산2동 교량 기록에 적어 김태운의 다음 경비 교대에 보낸다.",
+    "관직": "품계 주사. 직함은 교량 통행 전령이다. 백미래는 야간 무단 도하자를 붙든 뒤 암호패 교체 내역을 당산2동 교량 기록에 적어 김태운의 다음 경비 교대에 보낸다.",
     "일화": "2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 교량 통행 전령 자리의 서명이 장부에 올랐다.",
     "관계": "김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.",
     "야망": "교량 통행 전령 자리에서 수문국의 장부를 끊기지 않게 잇는다.",
     "공포": "교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 교량 경비 당직\n- 품계: 주사\n- 직함: 교량 통행 전령\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 교량 통행 전령 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 주사. 직함은 교량 통행 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 교량 통행 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.\n\n**야망.** 교량 통행 전령 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 0 | 물질 25 | 공동 15 | 원칙 25 | 공개 30 | 자격 10 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 25 | 독점 5 | 위험 −40 | 과시 −30 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 수문국\n- 생업: 교량 경비 당직\n- 품계: 주사\n- 직함: 교량 통행 전령\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 교량 통행 전령 자리는 야간 무단 도하 적발로 열렸다.\n- 업무 위치: 당산2동. 백미래는 야간 무단 도하자를 붙든 뒤 암호패 교체 내역을 당산2동 교량 기록에 적어 김태운의 다음 경비 교대에 보낸다.\n\n**관직.** 품계 주사. 직함은 교량 통행 전령이다. 백미래는 야간 무단 도하자를 붙든 뒤 암호패 교체 내역을 당산2동 교량 기록에 적어 김태운의 다음 경비 교대에 보낸다.\n\n**일화.** 2125년 야간 무단 도꾼을 붙잡아 경비 암호패를 갈았다. 이 일로 교량 통행 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 김태운의 지휘 아래 교량 통행과 야간 도하 보고를 맡는다.\n\n**야망.** 교량 통행 전령 자리에서 수문국의 장부를 끊기지 않게 잇는다.\n\n**공포.** 교량 통행 전령 당직이 비면 수문국의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 0 | 물질 25 | 공동 15 | 원칙 25 | 공개 30 | 자격 10 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 25 | 독점 5 | 위험 −40 | 과시 −30 | 지속 −10 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

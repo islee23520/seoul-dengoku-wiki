@@ -455,8 +455,8 @@
           "en": "Anecdote. In 2125, on a ridge patrol, he read the ambush traces first and prevented the harm. By this deed the signature of the eastern patrol post rose into the ledger."
         },
         "stress": {
-          "ko": "공포. 동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
-          "en": "Fear. That the eastern patrol duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. Changes in behavior or state effects are unconfirmed."
+          "ko": "공포. 동부 순찰대 당직이 비면 암사·고덕의 관문 통행과 급수 인계가 끊기는 것. 행동 변화나 상태 효과는 미확정이다.",
+          "en": "Fear. That the eastern patrol duty post would stand empty and passage through the Amsa and Godeok gates and water-supply handovers would be interrupted. Changes in behavior or state effects are unconfirmed."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -479,8 +479,8 @@
           "en": "He chose the side that kept the duty line unbroken first. He trusted one line of the ledger more than a loud voice."
         },
         "stress": {
-          "ko": "공포. 동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
-          "en": "Fear. That the eastern patrol duty post would stand empty and the State's passage would cuts the eastern gates and the vassal roads to Hanam, Namyangju, Uijeongbu and Yeoncheon. The actual response is not yet recorded."
+          "ko": "공포. 동부 순찰대 당직이 비면 암사·고덕의 관문 통행과 급수 인계가 끊기는 것. 실제 반응은 아직 기록되지 않았다.",
+          "en": "Fear. That the eastern patrol duty post would stand empty and passage through the Amsa and Godeok gates and water-supply handovers would be interrupted. The actual response is not yet recorded."
         },
         "relationship": {
           "ko": "관계. 같은 생활권 선배 당직과 인수인계로 묶인다.",
@@ -553,47 +553,23 @@
             "name": "구빛희",
             "url": "/people/person-0892",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "능선 초계·매복 흔적 조사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/621/items/1/ko",
-                  "quote": "생업: 능선 초계·매복 흔적 조사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/623/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -601,105 +577,40 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/621/items/1/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 조사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/623/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/621/items/1/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 조사"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/621/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "역곡",
-              "type": "초소 영지",
-              "station": "역곡",
-              "state": "S05",
-              "settlement": {
-                "name": "역곡 정착지",
-                "type": "정착지",
-                "description": "역곡 일대 고정 거점"
-              },
-              "note": "S05 역곡 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -723,52 +634,23 @@
             "name": "구빛희",
             "url": "/people/person-0892",
             "state": "S05",
-            "method": "card-lexicon",
-            "role": {
-              "display": "능선 초계·매복 흔적 조사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-05.json",
-                  "pointer": "/content/621/items/1/ko",
-                  "quote": "생업: 능선 초계·매복 흔적 조사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/622/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/623/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -776,121 +658,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/622/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/621/items/1/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 조사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/623/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/621/items/1/ko",
-                    "quote": "생업: 능선 초계·매복 흔적 조사"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-05.json",
-                    "pointer": "/content/621/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 28,
               "spent": 68,
-              "unspent": 7,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 동방사 규모",
-              "faction_scale": {
-                "state": "S05",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "역곡",
-              "type": "초소 영지",
-              "station": "역곡",
-              "state": "S05",
-              "settlement": {
-                "name": "역곡 정착지",
-                "type": "정착지",
-                "description": "역곡 일대 고정 거점"
-              },
-              "note": "S05 역곡 일대 관할 영지"
+              "unspent": 7
             }
           }
         }
@@ -911,18 +718,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "역곡",
-    "type": "초소 영지",
-    "station": "역곡",
-    "state": "S05",
-    "settlement": {
-      "name": "역곡 정착지",
-      "type": "정착지",
-      "description": "역곡 일대 고정 거점"
-    },
-    "note": "S05 역곡 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -962,16 +757,8 @@
     "가치관": "권위 65 | 개방 −40 | 무력 90 | 물질 25 | 공동 25 | 원칙 −25 | 공개 −35 | 자격 −10 | 분산 −55 | 변혁 −30",
     "욕망": "갈망 45 | 독점 15 | 위험 50 | 과시 −25 | 지속 35 | 지향 동성 | 결합 계약동거"
   },
-  "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.",
-    "관직": "품계 병장. 직함은 동부 순찰대.",
-    "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰대 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "동부 순찰대 자리에서 동방사의 장부를 끊기지 않게 잇는다.",
-    "공포": "동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
-  },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 동방사\n- 생업: 능선 초계·매복 흔적 조사\n- 품계: 병장\n- 직함: 동부 순찰대\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 병장. 직함은 동부 순찰대.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 동부 순찰대 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 동부 순찰대 자리에서 동방사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 동부 순찰대 당직이 비면 동부 관문과 하남·남양주·의정부·연천의 속국 통행이 끊기는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −40 | 무력 90 | 물질 25 | 공동 25 | 원칙 −25 | 공개 −35 | 자격 −10 | 분산 −55 | 변혁 −30\n- 욕망: 갈망 45 | 독점 15 | 위험 50 | 과시 −25 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
+  "sections": {},
+  "biography": "구빛희는 당직을 끊지 않고 장부로 인수인계를 확인한다.\n\n- 소속: 동방사\n- 생업: 능선 초계·매복 흔적 조사\n- 품계: 병장\n- 직함: 동부 순찰대\n생애. 구빛희는 4세대에 태어났다. 구빛희는 암사 경비 초소에서 자랐다. 구빛희의 동부 순찰대 자리는 야간 무단 도하 적발로 열렸다.\n- 구빛희는 암사2동과 연결된 업무에서 능선 초계와 매복 흔적 조사 결과를 당직에 인계한다.\n\n관직. 품계 병장. 직함은 동부 순찰대. 구빛희는 자신의 직위에 맡겨진 열쇠와 기록만 다음 당직자에게 넘기며 맡지 않은 권한은 행사하지 않는다.\n\n일화. 구빛희는 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다.\n\n관계. 구빛희는 같은 생활권 선배 당직과 인수인계로 이어져 있다.\n\n야망. 구빛희는 동부 순찰대 자리에서 동방사의 장부를 끊기지 않게 잇고자 한다.\n\n공포. 구빛희는 동부 순찰대 당직이 비어 암사·고덕의 관문 통행과 급수 인계가 끊길까 두려워한다.\n\n개입. 당직 인수 증인을 세우거나 빈 열쇠를 폭로하여 구빛희의 당직 인수인계에 개입할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 65 | 개방 −40 | 무력 90 | 물질 25 | 공동 25 | 원칙 −25 | 공개 −35 | 자격 −10 | 분산 −55 | 변혁 −30\n- 욕망: 갈망 45 | 독점 15 | 위험 50 | 과시 −25 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-05"
   ],

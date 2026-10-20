@@ -228,7 +228,7 @@
         "timeline": [
           {
             "year": 2068,
-            "summary": "오승아는 신정 차량기지에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "오승아는 신정 차량기지에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-04.json",
@@ -560,47 +560,23 @@
             "name": "이준택",
             "url": "/people/person-0092",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차량 제동 시험·정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/104/items/1/ko",
-                  "quote": "생업: 차량 제동 시험·정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -608,95 +584,35 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/104/items/1/ko",
-                    "quote": "생업: 차량 제동 시험·정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/104/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "이준택 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 43
+            }
           }
         }
       },
@@ -719,47 +635,23 @@
             "name": "이준택",
             "url": "/people/person-0092",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차량 제동 시험·정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/104/items/1/ko",
-                  "quote": "생업: 차량 제동 시험·정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -767,95 +659,35 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/104/items/1/ko",
-                    "quote": "생업: 차량 제동 시험·정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/106/text/ko",
-                    "quote": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/104/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "이준택 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 43
+            }
           }
         }
       }
@@ -876,7 +708,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -932,15 +763,15 @@
     "욕망": "갈망 15 | 독점 −30 | 위험 −40 | 과시 30 | 지속 −5 | 지향 유동 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 군자기지 차량정비장 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 이준택은 신정 차량기지에서 자랐다. 이준택은 탈선 직전 결함 보고로 군자기지 차량정비장 자리를 맡았다.\n- 이준택의 군자기지 차량정비장 업무는 용답동과 연결된다.",
     "관직": "품계 교사. 직함은 군자기지 차량정비장. 출고 차량마다 공방과 수비대의 도장을 함께 받고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.",
-    "일화": "2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 군자기지 차량정비장 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 이준택은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 군자기지 차량정비장 자리의 서명이 장부에 올랐다.",
     "관계": "정시우의 천왕 호환표와 차륜 계약을 맺고, 한소미의 소형 기계 공방에 제동 부품을 의존하며, 고덕 정비장 박하율과는 동부 표준을 놓고 경쟁한다.",
     "야망": "군자 유치선의 차량 보수 규격을 뚝섬 펌프 나사와 같은 원장에 올려 중앙권역의 사실상 정비 표준국을 만든다.",
-    "공포": "고덕 기지가 동부 순찰열차로 군자 유치선을 밀어 정비 주권이 보호계약 아래로 들어가는 것.",
+    "공포": "이준택은 고덕 기지가 동부 순찰열차로 군자 유치선을 밀어 정비 주권이 보호계약 아래로 들어가는 상황을 두려워한다.",
     "개입": "대체 제동 부품을 구해 전용 묶기를 풀거나, 군수 개조 화차의 숨은 발주자를 추적할 수 있다."
   },
-  "biography": "실용적이고 차대 번호로 사람을 기억한다. 정치 후계 회의보다 제동 시험 불합격을 먼저 호통친다.\n\n- 소속: 명부교회\n- 생업: 차량 제동 시험·정비\n- 품계: 교사\n- 직함: 군자기지 차량정비장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 군자기지 차량정비장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 군자기지 차량정비장. 출고 차량마다 공방과 수비대의 도장을 함께 받고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.\n\n**일화.** 2125년 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 군자기지 차량정비장 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우의 천왕 호환표와 차륜 계약을 맺고, 한소미의 소형 기계 공방에 제동 부품을 의존하며, 고덕 정비장 박하율과는 동부 표준을 놓고 경쟁한다.\n\n**야망.** 군자 유치선의 차량 보수 규격을 뚝섬 펌프 나사와 같은 원장에 올려 중앙권역의 사실상 정비 표준국을 만든다.\n\n**공포.** 고덕 기지가 동부 순찰열차로 군자 유치선을 밀어 정비 주권이 보호계약 아래로 들어가는 것.\n\n**개입.** 대체 제동 부품을 구해 전용 묶기를 풀거나, 군수 개조 화차의 숨은 발주자를 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 0 | 무력 −25 | 물질 25 | 공동 25 | 원칙 10 | 공개 −20 | 자격 55 | 분산 15 | 변혁 5\n- 욕망: 갈망 15 | 독점 −30 | 위험 −40 | 과시 30 | 지속 −5 | 지향 유동 | 결합 계약동거\n:::",
+  "biography": "실용적이고 차대 번호로 사람을 기억한다. 정치 후계 회의보다 제동 시험 불합격을 먼저 호통친다.\n\n- 소속: 명부교회\n- 생업: 차량 제동 시험·정비\n- 품계: 교사\n- 직함: 군자기지 차량정비장\n**생애.** 2126년 세대. 이준택은 신정 차량기지에서 자랐다. 이준택은 탈선 직전 결함 보고로 군자기지 차량정비장 자리를 맡았다.\n- 이준택의 군자기지 차량정비장 업무는 용답동과 연결된다.\n\n**관직.** 품계 교사. 직함은 군자기지 차량정비장. 출고 차량마다 공방과 수비대의 도장을 함께 받고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.\n\n**일화.** 2125년 이준택은 유치선 탈선 직전 바퀴 결함을 만져내 열차를 세웠다. 이 일로 군자기지 차량정비장 자리의 서명이 장부에 올랐다.\n\n**관계.** 정시우의 천왕 호환표와 차륜 계약을 맺고, 한소미의 소형 기계 공방에 제동 부품을 의존하며, 고덕 정비장 박하율과는 동부 표준을 놓고 경쟁한다.\n\n**야망.** 군자 유치선의 차량 보수 규격을 뚝섬 펌프 나사와 같은 원장에 올려 중앙권역의 사실상 정비 표준국을 만든다.\n\n**공포.** 이준택은 고덕 기지가 동부 순찰열차로 군자 유치선을 밀어 정비 주권이 보호계약 아래로 들어가는 상황을 두려워한다.\n\n**개입.** 대체 제동 부품을 구해 전용 묶기를 풀거나, 군수 개조 화차의 숨은 발주자를 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 0 | 무력 −25 | 물질 25 | 공동 25 | 원칙 10 | 공개 −20 | 자격 55 | 분산 15 | 변혁 5\n- 욕망: 갈망 15 | 독점 −30 | 위험 −40 | 과시 30 | 지속 −5 | 지향 유동 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

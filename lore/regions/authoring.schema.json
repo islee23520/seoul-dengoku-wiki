@@ -27,6 +27,6 @@
         }
       }
     },
-    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["opening_state"]}}}}
+    {"if": {"properties": {"id": {"const": "__EXAMPLE__:regions"}}}, "else": {"properties": {"data": {"required": ["opening_state"]}}}}
   ]
 }

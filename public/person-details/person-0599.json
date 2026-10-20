@@ -4,7 +4,7 @@
   "title": "감사 기록관",
   "position": "감사 기록관",
   "characterId": "K599",
-  "rank": "조합원",
+  "rank": "미등록",
   "commonTier": "T5",
   "occupation": "감사 기록·당직 열쇠 인계",
   "gender": "남성",
@@ -445,52 +445,23 @@
             "name": "안카민",
             "url": "/people/person-0599",
             "state": "S16",
-            "method": "card-lexicon",
-            "role": {
-              "display": "감사 기록·당직 열쇠 인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-16.json",
-                  "pointer": "/content/369/items/0/ko",
-                  "quote": "생업: 감사 기록·당직 열쇠 인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/370/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/371/text/ko",
-                    "quote": "안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -498,94 +469,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/369/items/0/ko",
-                    "quote": "생업: 감사 기록·당직 열쇠 인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/370/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/371/text/ko",
-                    "quote": "안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/369/items/0/ko",
-                    "quote": "생업: 감사 기록·당직 열쇠 인계"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 정동노총 규모",
-              "faction_scale": {
-                "state": "S16",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "경복궁",
-              "type": "초소 영지",
-              "station": "경복궁",
-              "state": "S16",
-              "settlement": {
-                "name": "경복궁 정착지",
-                "type": "정착지",
-                "description": "경복궁 일대 고정 거점"
-              },
-              "note": "S16 경복궁 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -609,52 +520,23 @@
             "name": "안카민",
             "url": "/people/person-0599",
             "state": "S16",
-            "method": "card-lexicon",
-            "role": {
-              "display": "감사 기록·당직 열쇠 인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-16.json",
-                  "pointer": "/content/369/items/0/ko",
-                  "quote": "생업: 감사 기록·당직 열쇠 인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/370/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/371/text/ko",
-                    "quote": "안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -662,94 +544,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/369/items/0/ko",
-                    "quote": "생업: 감사 기록·당직 열쇠 인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/370/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/371/text/ko",
-                    "quote": "안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-16.json",
-                    "pointer": "/content/369/items/0/ko",
-                    "quote": "생업: 감사 기록·당직 열쇠 인계"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 정동노총 규모",
-              "faction_scale": {
-                "state": "S16",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "경복궁",
-              "type": "초소 영지",
-              "station": "경복궁",
-              "state": "S16",
-              "settlement": {
-                "name": "경복궁 정착지",
-                "type": "정착지",
-                "description": "경복궁 일대 고정 거점"
-              },
-              "note": "S16 경복궁 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -770,18 +592,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "경복궁",
-    "type": "초소 영지",
-    "station": "경복궁",
-    "state": "S16",
-    "settlement": {
-      "name": "경복궁 정착지",
-      "type": "정착지",
-      "description": "경복궁 일대 고정 거점"
-    },
-    "note": "S16 경복궁 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -816,21 +626,21 @@
   "fields": {
     "생업": "감사 기록·당직 열쇠 인계",
     "소속": "정동노총",
-    "품계": "조합원",
-    "직함": "감사 기록관",
+    "공동체 역할": "조합원",
+    "직무": "감사 기록관",
     "가치관": "권위 −25 | 개방 20 | 무력 −35 | 물질 0 | 공동 15 | 원칙 40 | 공개 30 | 자격 15 | 분산 45 | 변혁 5",
     "욕망": "갈망 20 | 독점 30 | 위험 30 | 과시 −30 | 지속 −20 | 지향 무성향 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 조합원. 직함은 감사 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2073-09-21에 태어난 안카민은 영구 겨울의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 안카민은 소공동의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "직무": "공동체 역할은 조합원이며 직무는 감사 기록관이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.",
     "일화": "위원장 직접선거를 앞두고 작업장 파벌과 노선 파벌이 서로 다른 조합원 명단을 감사 당직에 낸다. 안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "감사 기록관 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.",
-    "공포": "감사 기록관 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "안카민의 기존 관계 기록은 다음과 같다. 같은 업무·생활권 선배 당직과 인수인계로 묶인다.",
+    "목표": "안카민은 감사 기록관 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
+    "공포": "감사 기록관 업무의 서명이나 인계 기록이 바뀌어 안카민의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
+    "개입": "안카민은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 품계: 조합원\n- 직함: 감사 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 감사 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 감사 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 위원장 직접선거를 앞두고 작업장 파벌과 노선 파벌이 서로 다른 조합원 명단을 감사 당직에 낸다. 안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 감사 기록관 자리에서 시청역 조합 장부를 끊기지 않게 잇고, 작업장 파벌이 갈려도 조합원 전원의 위원장 직접선거 결과를 지킨다.\n\n**공포.** 감사 기록관 당직이 비고 선거 파벌이 인수인계를 가로막아 정동노총의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 20 | 무력 −35 | 물질 0 | 공동 15 | 원칙 40 | 공개 30 | 자격 15 | 분산 45 | 변혁 5\n- 욕망: 갈망 20 | 독점 30 | 위험 30 | 과시 −30 | 지속 −20 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "안카민은 영구 겨울의 시청역 조합 작업장에서 감사 기록관 업무 기록과 공개 표결 서명을 먼저 대조한다. 급수·통행·계약 일정이 겹치는 날에는 접수 시각과 인계 순서를 같은 장부에 남긴다.\n\n- 생업: 감사 기록·당직 열쇠 인계\n- 소속: 정동노총\n- 공동체 역할: 조합원\n- 직무: 감사 기록관\n**생애.** 2073-09-21에 태어난 안카민은 영구 겨울의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.\n- 안카민은 소공동의 시청역 조합 작업장에서 감사 기록관 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**직무.** 공동체 역할은 조합원이며 직무는 감사 기록관이다. 이 직무는 정동노총 내부 기능이고 대한민국 정부 공무원 관직이나 봉건 품계가 아니다.\n\n**일화.** 위원장 직접선거를 앞두고 작업장 파벌과 노선 파벌이 서로 다른 조합원 명단을 감사 당직에 낸다. 안카민은 두 명단을 조합원 명부 원본과 이름마다 대조해 겹친 이름과 빠진 이름을 나누어 적고, 그 대조표와 당직 열쇠를 다음 감사 당직에게 건넨다.\n\n**관계.** 안카민의 기존 관계 기록은 다음과 같다. 같은 업무·생활권 선배 당직과 인수인계로 묶인다.\n\n**목표.** 안카민은 감사 기록관 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.\n\n**공포.** 감사 기록관 업무의 서명이나 인계 기록이 바뀌어 안카민의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.\n\n**개입.** 안카민은 관련 서명과 인계 시각을 대조하고 기록을 공개할 수 있지만 새 관직·품계·권리·영지를 부여할 수는 없다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 20 | 무력 −35 | 물질 0 | 공동 15 | 원칙 40 | 공개 30 | 자격 15 | 분산 45 | 변혁 5\n- 욕망: 갈망 20 | 독점 30 | 위험 30 | 과시 −30 | 지속 −20 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-16"
   ],

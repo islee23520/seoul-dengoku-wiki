@@ -1,4 +1,5 @@
 import { preservedSheetSources } from './preserved-person-sheet.mjs'
+import { assertPublicSheetRecord } from './public-sheet-test-expectation.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
@@ -38,7 +39,7 @@ for (const [id, values, attributeCP, total] of approved) {
     const selected = selectPreservedSheet(detail.personSheet, { id: detail.characterId, personId: id, name: detail.name, state: detail.state }, revision)
     assert.ok(selected.ok, JSON.stringify(selected))
     assert.equal(selected.revision, revision)
-    assert.deepEqual(selected.record, record)
+    assertPublicSheetRecord(selected.record, record)
     const attributes = ['ST', 'DX', 'IQ', 'HT'].map((name) => selected.sheet.attributes[name])
     assert.deepEqual(attributes.map(({ value }) => value), values)
     assert.deepEqual(attributes.map(({ cp }) => cp), values.map((value, index) => (value - 10) * ([0, 3].includes(index) ? 10 : 20)))

@@ -2,9 +2,9 @@
   "id": "person-0042",
   "name": "표강호",
   "title": "제작규격 전령",
-  "position": "제작규격 전령 · 공주시 영주",
+  "position": "제작규격 전령",
   "characterId": "K042",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "규격 문서 전달",
   "gender": "여성",
@@ -453,47 +453,23 @@
             "name": "표강호",
             "url": "/people/person-0042",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "규격 문서 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 규격 문서 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -501,106 +477,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 규격 문서 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 규격 문서 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "표강호 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 31
+            }
           }
         }
       },
@@ -623,47 +534,23 @@
             "name": "표강호",
             "url": "/people/person-0042",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "규격 문서 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 규격 문서 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -671,228 +558,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 규격 문서 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 규격 문서 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "표강호 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 31
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-44150-S02",
-      "name": {
-        "ko": "공주시 공작령 직영지"
-      },
-      "holderPersonId": "K042",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4415025000",
-          "name": "충청남도 공주시 유구읍"
-        },
-        {
-          "id": "4415031000",
-          "name": "충청남도 공주시 이인면"
-        },
-        {
-          "id": "4415032000",
-          "name": "충청남도 공주시 탄천면"
-        },
-        {
-          "id": "4415033000",
-          "name": "충청남도 공주시 계룡면"
-        },
-        {
-          "id": "4415034000",
-          "name": "충청남도 공주시 반포면"
-        },
-        {
-          "id": "4415036000",
-          "name": "충청남도 공주시 의당면"
-        },
-        {
-          "id": "4415037000",
-          "name": "충청남도 공주시 정안면"
-        },
-        {
-          "id": "4415038000",
-          "name": "충청남도 공주시 우성면"
-        },
-        {
-          "id": "4415039000",
-          "name": "충청남도 공주시 사곡면"
-        },
-        {
-          "id": "4415040000",
-          "name": "충청남도 공주시 신풍면"
-        },
-        {
-          "id": "4415051000",
-          "name": "충청남도 공주시 중학동"
-        },
-        {
-          "id": "4415054000",
-          "name": "충청남도 공주시 웅진동"
-        },
-        {
-          "id": "4415055000",
-          "name": "충청남도 공주시 금학동"
-        },
-        {
-          "id": "4415056000",
-          "name": "충청남도 공주시 옥룡동"
-        },
-        {
-          "id": "4415057000",
-          "name": "충청남도 공주시 신관동"
-        },
-        {
-          "id": "4415059000",
-          "name": "충청남도 공주시 월송동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-44150-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-44150-S02",
-      "name": "공주시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K042",
-      "basis": "개막 행정 규모 그룹 44150(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4415025000",
-        "4415031000",
-        "4415032000",
-        "4415033000",
-        "4415034000",
-        "4415036000",
-        "4415037000",
-        "4415038000",
-        "4415039000",
-        "4415040000",
-        "4415051000",
-        "4415054000",
-        "4415055000",
-        "4415056000",
-        "4415057000",
-        "4415059000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-44150-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -907,7 +630,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -959,11 +681,12 @@
     "생업": "규격 문서 전달",
     "품계": "조합원",
     "직함": "제작규격 전령",
+    "업무 위치": "구로5동. 표강호는 구로5동 길드 평의회로 가져갈 규격 사본의 봉인 번호를 센다. 장우석의 감사 날인과 정시우의 계측 도장이 어긋나면 강민서의 교환 설계 사본을 풀지 않고 확인 전갈을 되돌린다.",
     "가치관": "권위 −35 | 개방 25 | 무력 −5 | 물질 40 | 공동 45 | 원칙 10 | 공개 40 | 자격 55 | 분산 25 | 변혁 15",
     "욕망": "갈망 −10 | 독점 10 | 위험 20 | 과시 −30 | 지속 35 | 지향 양성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 표강호는 구로5동 길드 평의회로 가져갈 규격 사본의 봉인 번호를 센다. 장우석의 감사 날인과 정시우의 계측 도장이 어긋나면 강민서의 교환 설계 사본을 풀지 않고 확인 전갈을 되돌린다.",
     "관직": "품계 조합원. 직함은 제작규격 전령. 규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다.",
     "일화": "2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 제작규격 전령 자리의 서명이 장부에 올랐다.",
     "관계": "장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.",
@@ -971,7 +694,7 @@
     "공포": "위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.",
     "개입": "결함 부품의 제조 공방을 추적하거나, 전갈 날인을 위조한 자를 잡아 전령망을 세울 수 있다."
   },
-  "biography": "규격 사본의 계측 숫자를 외우고, 구두로 합의한 호환을 원장에 올리지 않는 원로를 규격의 적으로 부른다. 봉인 끈이 젖으면 다시 떠난다.\n\n- 소속: 규격맹\n- 생업: 규격 문서 전달\n- 품계: 조합원\n- 직함: 제작규격 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 제작규격 전령. 규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 제작규격 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.\n\n**야망.** 규격맹의 모든 개정 통지를 자신이 날인하는 전령망에만 유효하게 해 군수 비상 핑계로 규격이 사라지지 않게 한다.\n\n**공포.** 위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.\n\n**개입.** 결함 부품의 제조 공방을 추적하거나, 전갈 날인을 위조한 자를 잡아 전령망을 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 25 | 무력 −5 | 물질 40 | 공동 45 | 원칙 10 | 공개 40 | 자격 55 | 분산 25 | 변혁 15\n- 욕망: 갈망 −10 | 독점 10 | 위험 20 | 과시 −30 | 지속 35 | 지향 양성 | 결합 없음\n:::",
+  "biography": "규격 사본의 계측 숫자를 외우고, 구두로 합의한 호환을 원장에 올리지 않는 원로를 규격의 적으로 부른다. 봉인 끈이 젖으면 다시 떠난다.\n\n- 소속: 규격맹\n- 생업: 규격 문서 전달\n- 품계: 조합원\n- 직함: 제작규격 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 제작규격 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 구로5동. 표강호는 구로5동 길드 평의회로 가져갈 규격 사본의 봉인 번호를 센다. 장우석의 감사 날인과 정시우의 계측 도장이 어긋나면 강민서의 교환 설계 사본을 풀지 않고 확인 전갈을 되돌린다.\n\n**관직.** 품계 조합원. 직함은 제작규격 전령. 규격 사본을 길드 평의회와 공방에 동시에 배달하고, 비상 개정도 사흘 안의 재측정 통지가 없으면 달리지 않는다.\n\n**일화.** 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다. 이 일로 제작규격 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 장우석의 감사 날인을 현장에서 배달하는 계약이고, 정시우의 계측 도장을 검증 전갈로 지키며, 강민서의 교환 설계를 봉인 상태로만 나른다.\n\n**야망.** 규격맹의 모든 개정 통지를 자신이 날인하는 전령망에만 유효하게 해 군수 비상 핑계로 규격이 사라지지 않게 한다.\n\n**공포.** 위조 계측 도장 하나가 천왕 원장 전체를 무효로 만들어 전령망이 부품 봉쇄의 나팔이 되는 것.\n\n**개입.** 결함 부품의 제조 공방을 추적하거나, 전갈 날인을 위조한 자를 잡아 전령망을 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 25 | 무력 −5 | 물질 40 | 공동 45 | 원칙 10 | 공개 40 | 자격 55 | 분산 25 | 변혁 15\n- 욕망: 갈망 −10 | 독점 10 | 위험 20 | 과시 −30 | 지속 35 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],
