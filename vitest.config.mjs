@@ -17,6 +17,7 @@ export default defineConfig({
       'scripts/test-naming-ledger-gate.mjs',
       'scripts/test-seoul-public-assets.mjs',
       'scripts/test-soul-assignments.mjs',
+      'scripts/test-wiki-api-seoul.mjs',
     ],
     pool: 'forks',
     fileParallelism: false,
