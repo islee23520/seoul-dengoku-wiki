@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "proposal",
+  "source": {
+    "path": "proposals/Station-Interior-Design.md",
+    "lineStart": 1,
+    "lineEnd": 82,
+    "sha256": "d61ea5116320ae06adacb0f5264788f1ef4ab553d99f4da367aea6a7f997aeaf"
+  },
+  "document": {
+    "id": "doc.Station-Interior-Design",
+    "blockIds": [
+      "title",
+      "status",
+      "scope",
+      "scope-body",
+      "currentness",
+      "authority",
+      "authority-body",
+      "accepted",
+      "entities",
+      "entities-table",
+      "evidence",
+      "evidence-body",
+      "rights",
+      "absence",
+      "adaptation",
+      "adaptation-body",
+      "metric",
+      "living",
+      "living-body",
+      "living-table",
+      "living-end",
+      "state",
+      "state-body",
+      "holding",
+      "reimport",
+      "reimport-body",
+      "reimport-commit",
+      "review",
+      "review-body",
+      "review-end",
+      "sources",
+      "sources-body"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "title",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "역·지하 시설·정착지 건물 내부 설계 기준 제안"
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "상태: 제안. 승인된 거점·경제 규칙의 변경이나 런타임 구현을 뜻하지 않는다. 시설별 실측·상업 각색 권리·개막 설정의 수용 여부는 별도 검토한다."
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "범위와 미확인 자료의 처리"
+        }
+      ]
+    },
+    {
+      "id": "scope-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 서울 행정 경계 안의 여객 철도 시설을 후보 합집합으로 조사하고, 기존 위키의 정착지 활용 건물과 명시 선정한 주요 지하 건물을 함께 다룬다. 학교·의료·주민센터·행정·물류·정비 건물은 실제 존재 공간과 선정 범위를 확인한다. 옛 서울 밖 확장 문구를 현재 활동 공간의 근거로 사용하지 않는다. 기존 334개 게임 역 ID나 427동 원장은 현실 시설 전수와 같지 않으며 삭제·재번호하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "currentness",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현행 경계와 최신 형상이 확인되지 않았어도 후보 조사와 자료 기반 중립 설계 초안은 진행한다. 경계 판본·효력일·해시·현행성 공백과 취득 대상을 기록하고, 날짜가 다른 공식판과 공동체판을 섞지 않는다. 미확인을 현행 인증으로 바꾸지 않으며 후속 자료 갱신으로 대응할 수 있게 한다. 현실 조사일, 원자료 기준일·개정일, 경계 효력일, 시설 준공·영업개시일, 허구 개막일은 각각 별도 값이다."
+        }
+      ]
+    },
+    {
+      "id": "authority",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정본 소유와 승인된 규칙"
+        }
+      ]
+    },
+    {
+      "id": "authority-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GDD는 의미·자료형·관계·제약과 결정 상태를 소유한다. 현재 Wiki 원천은 시설 정체·관측 참조와 승인된 개막 사실을, 외부 자산 원천은 원형 기하·편집 상태·각색 손실과 권리 근거를 소유한다. GAME은 후속 승인된 투영만 소비한다. GDD snapshot을 현재 Wiki 대신 사용하지 않는다. 이 제안은 새 소유자·작위·인물·연대·시설가격·폭·층고·정원·생산량·연료식을 부여하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "accepted",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "[거점과 영토 규칙](../rules/Rules-Strongholds.md)의 RSTRONGHOLDS-11 시설 슬롯과 RSTRONGHOLDS-25 점유 단위, [경제와 물류 규칙](../rules/Rules-EconomyLogistics.md)의 필수 소비 선예약·실제 노동과 도구·재료 소비·주문과 병목·교육 계약을 참조한다. [게임 데이터 원장과 스키마 계약](../Data-Catalog-and-Schema.md)의 안정 ID·원천 해시·생성 영수증·이동 그래프와 지표 경계 분리를 유지한다. 이 문서의 제안은 이들 accepted 문서를 덮어쓰지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "entities",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시설·동·층·공간·연결의 제안 자료형"
+        }
+      ]
+    },
+    {
+      "id": "entities-table",
+      "kind": "table",
+      "header": [
+        "개체",
+        "제안 필드·자료형",
+        "의미와 제약"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "원천 행",
+          "sourceRowRef: {provider, namespace, code, revision}",
+          "원본 행을 보존한다. 별칭이나 같은 이름은 동일 시설 증거가 아니다."
+        ],
+        [
+          "시설",
+          "facilityId: 영구 문자열; facilityType: 분류; complexId·buildingId·wikiAnchorRefs: 참조",
+          "station, underground-shopping, underground-public, mixed-complex, school, medical, civic, logistics, workshop, other를 구분한다. 환승 complex·노선 정차·게임 node는 시설과 별도 ID이며 다대다 교차표로 연결한다."
+        ],
+        [
+          "동·증축부",
+          "wingId: 선택 영구 문자열; facilityRef: 참조",
+          "실제 구분된 동이 있을 때만 둔다. 미확인인 경우와 해당 없음은 다르며 가상의 동을 자동 생성하지 않는다."
+        ],
+        [
+          "실제 층",
+          "levelId: 영구 문자열; facilityRef·wingRef: 참조; label: 문자열; z·verticalDatum: 값 또는 미확인",
+          "B2 같은 표기와 실제 높이는 별도다. 같은 층명·다른 높이·반층을 허용하고 층번호에 상수를 곱해 높이를 만들지 않는다."
+        ],
+        [
+          "공간",
+          "spaceId: 영구 문자열; levelRef: 참조; sourceFeatureRefs: 참조 배열; shape·quantity: 근거별 값",
+          "방·복도·홀·설비·위생·창고·하역 공간과 문·벽·기둥·출입구를 원천에 대응한다. 면적 하나로 가로세로나 방 개수를 생성하지 않는다."
+        ],
+        [
+          "연결 후보·검증된 연결",
+          "assertedConnection: 시설 수준 연결 문구·facilityRefs·evidenceRefs; pendingEndpoint: 확인된 참조와 미확인 항목·사유; VERIFIED connector: connectorId, from·to {facilityRef, levelRef, spaceRef, anchorRef}, type·direction·intermediateStops·evidenceRefs",
+          "시설 수준 연결 주장은 assertedConnection으로 보존하고 양끝 중 미확인 부분은 pendingEndpoint로 남긴다. 가짜 공간·방·좌표를 채우지 않는다. VERIFIED connector만 양쪽 실제 시설·층·공간·anchor와 연결 근거, 필요한 층간·고도 대응 근거가 확인된 뒤 통행용 그래프에 수용한다. 인접 footprint, 같은 Bn, 선로 노선도만으로 실내 통로를 만들지 않는다."
+        ],
+        [
+          "공유부",
+          "shared spaceRef·connectorRef: 단일 물리 ID; facilityRefs: 참조 배열",
+          "역·상가·다른 건물이 같은 공용부를 참조한다. 면적을 이중 합산하지 않고 관리 주체·통행권·작동 상태는 별도 관계로 둔다."
+        ]
+      ]
+    },
+    {
+      "id": "evidence",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "측정·위상·권리를 독립 판정한다"
+        }
+      ]
+    },
+    {
+      "id": "evidence-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정체, metric 형상, topology 연결, 날짜·현행성, 원자료 이용권리를 각각 검토한다. feature별 measured·inferred·topological·authored·unknown과 측정 방법·단위·오차·출처 판본·페이지·SHA-256을 보존한다. 비축척 안내도는 위상 근거이지 실측 평면이 아니다. 시설 수준 연결 주장이나 위상 확인에 metric 실측을 강제하지 않으며, VERIFIED connector의 실제 양끝과 필요한 층간 대응도 위상 근거로 확인할 수 있다. metric 승격에는 별도 측정 근거를, 상업 제작 승격에는 별도 이용권리를 요구한다. OSM layer·level·level:ref·building:levels는 다른 원값이며 layer를 층수로 바꾸지 않는다. 한 축의 확인이 다른 축의 통과를 대신하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "rights",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "원자료의 권리자·허락 범위·면허·출처 표시·상업 각색 검토는 허구 세계의 소유권·관리권·점유·통행권과 별개다. 공개 열람 가능이나 실제 시설 소유자의 존재만으로 도면 재사용 권리를 확정하지 않는다. 측정 자료가 있어도 이용권리 미확인이면 해당 원천의 각색 승격은 미결이다. 자료 없음, 비공개·가림 부분을 추정 복원하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "absence",
+      "kind": "table",
+      "header": [
+        "값",
+        "뜻",
+        "혼동하면 안 되는 값"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "unknown",
+          "자료·판단 근거가 미확인. 수치라면 null과 미확인 사유로 표현한다.",
+          "0, 없음, 통행 가능, 무주지"
+        ],
+        [
+          "none",
+          "해당 대상이 없음을 확인했다. 부재 근거를 남긴다.",
+          "미조사·자료 누락"
+        ],
+        [
+          "unclaimed",
+          "허구 권리 기록에서 무주지가 확인된 상태다.",
+          "소유자 미확인, 실제 자료의 권리자 없음"
+        ],
+        [
+          "not-applicable",
+          "이 항목이 그 개체에 적용되지 않으며 이유가 있다.",
+          "선택 필드를 생략했으므로 없다고 단정"
+        ]
+      ]
+    },
+    {
+      "id": "adaptation",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 층·생활 기능·추상 슬롯을 분리한다"
+        }
+      ]
+    },
+    {
+      "id": "adaptation-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 층은 건축 구조, 기능 구역은 그 공간의 사용 계획, 시설 슬롯은 승인된 거점 규칙의 추상 용량이다. 일반 역 기본 슬롯 2와 환승역 기본 슬롯 3을 방 수나 층 수로 읽지 않는다. 기존 4기능층을 4실층으로, 전역 침수 템플릿을 역별 관측으로 승격하지 않는다. 지상역에 심층을 추가하거나 학교·병원에 지하실을 자동 생성하지 않는다. 미확인 공간은 원형에서 미확인으로 남기며 schematic 각색은 창작임을 표시한다."
+        }
+      ]
+    },
+    {
+      "id": "metric",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "metric 원형에는 좌표계·원점·축·수직 기준·sourceFeatureId와 사선·곡선·경사·연결을 보존한다. 마프츠쿠리 각색은 별도 mapId·geometryHash·층과 구획 참조·객체 대응표를 가지며 m/cell과 px/cell을 구분한다. crop 원점·변환·구획 경계 연결·치수 변위·손실·manualEditRevision·편집 상태와 export 해시를 남긴다. 설계상 변위는 측정 오차와 다르며 직교 각색을 역변환해 실측 원형으로 만들지 않는다. PNG·dd2vtt 출력은 3D 구현 완료가 아니다."
+        }
+      ]
+    },
+    {
+      "id": "living",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "겨울 생활 기능은 시설마다 질문한다"
+        }
+      ]
+    },
+    {
+      "id": "living-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "기존 형상 재사용을 먼저 검토하되 신축 허용이나 비용 규칙은 여기서 확정하지 않는다. Wiki의 영원한 겨울 설정을 유지하고 실제 출입구의 한랭 노출·방풍·난방 구획·환기를 검토한다. 생활권 기본 기온과 실제 공간의 관측·난방·외기 유입은 구분하며 같은 층의 미터 깊이나 현재 기온이 같다고 하지 않는다. 전력과 축전이 있다는 이유만으로 난방이 해결됐다고 하지 않는다. 우기·침수 템플릿을 검증 없는 역별 사실로 복사하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "living-table",
+      "kind": "table",
+      "header": [
+        "검토 기능",
+        "공간에 물을 질문",
+        "기록할 경계"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "잠자리·배급·의료·교육",
+          "어느 실제 공간을 누가 쓰며 대기·이동·피난 동선과 어떻게 분리되는가?",
+          "공간 참조, 행동 주체의 기존 근거, 이용 제약. 정원·교육 효과·새 인물을 만들지 않는다."
+        ],
+        [
+          "급수·취사·위생·폐기물",
+          "식수·취사용수와 사육·오염수, 배수·폐기물 경로를 어떻게 분리하는가?",
+          "원천·입력·출력·처리 제약의 확인 상태. 새 소비량·처리량을 만들지 않는다."
+        ],
+        [
+          "보관·물류·하역·정비",
+          "반입구와 연결 폭·높이·층간 운반, 도구·자재·보관 공간의 근거가 있는가?",
+          "미확인 유효폭·높이·적재량은 null. 미확인 통로를 물류 가능으로 통과시키지 않는다."
+        ],
+        [
+          "전력·축전·난방·환기",
+          "설비 공간과 연료·배기·열 손실·안전 분리의 실제 제약은 무엇인가?",
+          "설비 존재, 개막 작동 여부, 운영 중 상태를 나누고 난방·발전 수식을 발명하지 않는다."
+        ],
+        [
+          "검문·방어·피난",
+          "확인된 출구·계단·문을 어떤 기능에 쓰고 막히면 어느 동선이 영향을 받는가?",
+          "물리 연결, 통행권, 개막 봉쇄, runtime 변경을 분리한다."
+        ]
+      ]
+    },
+    {
+      "id": "living-end",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "후보 기능 전부를 모든 시설의 필수 목록으로 만들지 않는다. 역·상가·학교·의료·주민센터의 근거와 제약에 따라 채택·미채택·미결 이유를 남긴다. 기술 기록 발견을 즉시 기술 해금으로, 현대 기관의 용도를 붕괴 후 운영 지속으로, 실제 기관명·직원을 허구 범죄 주체로 바꾸지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "정의·개막 seed·진행 상태를 분리한다"
+        }
+      ]
+    },
+    {
+      "id": "state-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "immutable definition은 designId·definitionRevision·sourceEditionRefs와 각 원천 해시·geometryHash·안정 시설/공간/연결 ID를 묶는다. 개막 seed는 그 definition을 참조해 승인된 초기 소유·점유·봉쇄·시설 작동 상태만 제공한다. 진행 중 campaign delta는 원인 사건·시점·대상 ID와 기반 definition/seed 판본을 참조한다. 자산 sidecar에 인물·작위·실시간 운영을 복제하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "holding",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "부분 보유·시설 관리·통행권·건물 전체 점유·행정동 슬롯권·지역구 작위는 별도 관계다. 서로를 자동 수여하지 않는다. 무주지는 유효하며 근거 없는 영주·인구·정치 배치를 생성하지 않는다. 물리적 문과 통로의 존재는 열림·작동·접근 허가를 뜻하지 않는다. 초기값 재수입으로 현재 소유·봉쇄·운영·손상 상태를 덮어쓰지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "reimport",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "자료 갱신과 수동 수정 충돌"
+        }
+      ]
+    },
+    {
+      "id": "reimport-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "재수입은 기존 accepted definition을 수정하지 않고 새 source edition과 입력 해시를 동결한 후보를 prepare한다. sourceFeature 변경·삭제·분할·병합을 안정 ID 교차표와 함께 비교하고, 기반 geometryHash와 manualEditRevision이 현재 편집본과 같은지 확인한다. 관측 원값·수동 각색·편집 이력은 보존한다. 같은 이름이라는 이유로 ID를 합치지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "reimport-commit",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "stale source hash, 깨진 공간 참조, 미확인 연결의 확정 처리, 같은 mapId의 다른 편집 판본, 원천 변경과 수동 수정의 겹침은 충돌 보고 후 후보 승격을 거부한다. 검증 실패·승인 미결 때 마지막 accepted definition·관측값·편집본·campaign delta 바이트를 보존한다. 충돌 조정은 변경 근거와 별도 수동 revision으로 남기며 명시 검증·수용 뒤 새 immutable definition을 참조한다. 원천에 역방향 쓰기나 fill 재생성을 하지 않는다. 새 seed 적용과 진행 캠페인 전환은 별도 후속 GAME 수용 문제이며 이 문서가 자동 마이그레이션을 허용하지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "검토와 후속 수용의 경계"
+        }
+      ]
+    },
+    {
+      "id": "review-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시설별 대상 분모, 정체·metric·위상·권리·현행성·각색·생활 기능 검토 상태와 사유를 따로 보고한다. 미실측 시설을 분모에서 버리지 않고 후보 처리율을 전수 실측률로 부르지 않는다. assertedConnection과 pendingEndpoint는 유효한 partial 조사 기록이며 조사 패키지 완료를 일괄 차단하지 않는다. 다만 pending은 통행용 그래프와 confirmed 연결 비율의 분자에서 제외하고 미확인 목록에 보존한다. 예를 들어 아워갤러리–시민청 연결 문구는 보존하되 시민청측 실제 끝점이 미확인이면 방이나 좌표를 만들지 않고 pendingEndpoint로 남긴다. 양끝과 필요한 층간 대응을 검증하기 전에는 VERIFIED connector로 승격하지 않는다. 원천·권리·해시·양끝 참조 대사와 실제 렌더 본문 검토는 별개로 수행한다. 슬롯을 방 수로 치환, 없는 층 생성, 고정 영주 부여, 겨울에 우기 템플릿 복사, 공용 통로 중복 면적, 같은 B2 자동 접합은 불합격 후보로 남기고 정본에 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "id": "review-end",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 제안은 시설별 도면·실측 수치·개막 설정·새 검증기·게임 기능을 제공하지 않는다. 세부 원형과 권리의 미확인은 후속 조사 항목이며 초안을 막는 조건이 아니다. 배포 정본 반영은 해당 범위의 실제 승인·검증을, Unity 소비는 별도 import·직렬화·실행·저장 검증을 요구한다."
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "검토 근거"
+        }
+      ]
+    },
+    {
+      "id": "sources-body",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "승인 규칙과 데이터 계약은 위 링크의 현재 canon을 읽는다. 세계관 기준은 Wiki 소유 원천의 WORLD_BUILDING_GUIDE.md 전체와 World-and-Subway-Layers이며 GDD snapshot이 아니다. 이번 제안은 서울 내부 범위와 겨울 생활, 부분 점유·무주지, 미정 값 보존을 따른다. 현실 시설별 자료와 이용권리는 외부 원천 원장에서 판본·URL·해시와 함께 별도로 검토한다."
+        }
+      ]
+    }
+  ]
+}
