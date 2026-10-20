@@ -1,0 +1,28 @@
+when:
+  - event: push
+    branch: main
+
+depends_on: [ci]
+
+labels:
+  platform: linux/amd64
+
+clone:
+  git:
+    image: woodpeckerci/plugin-git:2
+    settings:
+      lfs: false
+
+steps:
+  - name: deploy
+    image: node:22-bookworm-slim
+    environment:
+      SEOUL_DEPLOY_URL: http://172.28.0.4:8080/api/deployments/seoul-wiki
+      SEOUL_DEPLOY_TOKEN:
+        from_secret: seoul_deploy_token
+    commands:
+      - node --test deploy/test-*.mjs
+      - npm ci --ignore-scripts
+      - node scripts/generate-catalog.mjs
+      - node deploy/call-owner.mjs
+      - node deploy/check-live-contract.mjs --public-edge https://sss.linalab.io live-http-green.json src/generated/wikiCatalog.ts

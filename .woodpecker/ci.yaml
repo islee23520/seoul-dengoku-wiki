@@ -1,0 +1,23 @@
+when:
+  - event: [push, manual, pull_request]
+
+labels:
+  platform: linux/amd64
+
+clone:
+  git:
+    image: woodpeckerci/plugin-git:2
+    settings:
+      lfs: false
+
+steps:
+  - name: lore-json
+    image: node:22-bookworm-slim
+    commands:
+      - apt-get update
+      - apt-get install -y --no-install-recommends python3 python3-pip ca-certificates git
+      - python3 -m pip install --break-system-packages jsonschema
+      - npm ci --ignore-scripts
+      - git fetch --no-tags --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+      - npm run test:lore-json
+      - node scripts/lore-json-validate.mjs

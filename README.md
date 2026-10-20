@@ -58,6 +58,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the CI details.
 
 서울전국 공식 위키의 세계관 원천과 위키 앱을 관리하는 저장소입니다. 공개 본문은 `lore/`의 JSON 한 벌에 한국어와 영어를 함께 적고, 생성물은 손으로 고치지 않습니다. 편집 전에 [세계관 편집 지침](WORLD_BUILDING_GUIDE.md)을 끝까지 읽어 주세요.
 
+인물 자료를 서버 없이 SQLite 파일로 생성·조회·검증하려면 [위키 인물 SQLite 사용 안내](scripts/cast-sqlite/README.md)를 참고하세요. 이 도구는 이 위키 저장소 안에서 독립 실행되며 Node.js 24.15.0 이상이 필요합니다. 생성 DB는 로컬 검토용으로 두고 저장소나 공개 번들에 포함하지 않습니다.
+
 ## License
 
 [소프트웨어 MIT 허락과 위키 소유 콘텐츠의 별도 이용 조건](LICENSE). 외부 자료와 기여자 권리는 해당 문서의 적용 범위를 확인하세요.
