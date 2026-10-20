@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { peopleCatalog } from '../generated/peopleCatalog'
 import portraitCatalog from '../../portrait-catalog.json'
+import { portraitPromptApiUrl, portraitTokenApiUrl } from '../portraitTokenApi'
 import FeedbackComposer from '../components/FeedbackComposer'
 import { FeedbackSurface } from '../components/FeedbackSurface'
 import { useFeedbackDocument } from '../hooks/useFeedbackDocument'
@@ -527,7 +528,7 @@ export function PersonDetailContent({ detail, personId, feedback = null, feedbac
         </div>
         <span className="wiki-canon-badge">정본</span>
       </header>
-      <p><Link to={`/tools/character-art?person=${encodeURIComponent(detail.id)}`}>이 인물의 아트 작업 도구 열기</Link></p>
+      <p><Link to={`/tools/character-art?person=${encodeURIComponent(detail.id)}`}>이 인물의 아트 작업 도구 열기</Link> · <a href={portraitTokenApiUrl(detail.id)}>디자인 토큰 API</a> · <a href={portraitPromptApiUrl(detail.id, 'portrait', 'text')}>텍스트 투 이미지 프롬프트</a></p>
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
           {portraitCatalog.entries.some((entry) => entry.personId === detail.id && entry.name === detail.name) && <figure>

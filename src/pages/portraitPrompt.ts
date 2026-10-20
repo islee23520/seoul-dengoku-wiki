@@ -3,9 +3,10 @@ export type PortraitToken = {
   characterId: string
   name: string
   approval: string
-  facts: { gender: string; role: string }
+  facts: { gender: string; role: string | null }
   artProposal: { face: string; hair: string; upper: string; lower: string | null; footwear: string | null }
   style: { referenceSha256: string | null; portraitShotId: string }
+  textToImage?: { model: string; views: Partial<Record<string, { size: string; prompt: string; negativePrompt: string }>> }
 }
 
 export type PromptOverrides = { gender?: string; ageCategory?: string; mood?: string; hair?: string; upper?: string; lower?: string; footwear?: string; variantId?: string }
