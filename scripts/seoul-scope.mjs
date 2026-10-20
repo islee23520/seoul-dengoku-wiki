@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import { isAuthenticatedPublicationReview } from './seoul-census.mjs'
 import { validateNationalDressDocuments } from './national-dress-admission-successor.mjs'
+import { MAIN_DOC_ROWS, validateMainDocDocuments } from './main-doc-admission-successor.mjs'
 
 export const SEOUL_SCOPE_SCHEMA = 'seoul-scope.v1'
 export const BASELINE_SHA256 = '2a8af6a497839dcc5abb2059697ef8f504b061013a89cbc2bd812c89b2810223'
@@ -872,8 +873,10 @@ export function validateSeoulScope(input, { mode = 'publication', batchId = null
       'E_SCOPE_PENDING', '/current/createdDocuments', row.sourcePath)
     }
     const technical = validateTechnicalDocumentCoverage(current, sourceHashes)
-    const successors = validateNationalDressDocuments(current.successorDocuments ?? [], sourceHashes,
-      [...docs, ...created.map(row => row.sourcePath), ...technical.map(row => row.sourcePath)])
+    const occupied = [...docs, ...created.map(row => row.sourcePath), ...technical.map(row => row.sourcePath)]
+    const mainRows = (current.successorDocuments ?? []).filter(row => MAIN_DOC_ROWS.some(expected => expected.sourcePath === row.sourcePath))
+    const successors = [...validateNationalDressDocuments((current.successorDocuments ?? []).filter(row => !mainRows.includes(row)), sourceHashes, occupied),
+      ...validateMainDocDocuments(mainRows, sourceHashes, occupied)]
     exact(current.documentPaths, [...docs, ...created.map(row => row.sourcePath), ...technical.map(row => row.sourcePath), ...successors.map(row => row.sourcePath)], 'E_REVIEW_COVERAGE', '/current/documents')
     list(contract.documents, '/documents').forEach(row => shape(row, ['sourcePath', 'status', 'reviewReceipt', 'batchId', 'basis'], '/documents'))
     exact(contract.documents.map(row => row.sourcePath), docs, 'E_REVIEW_COVERAGE', '/documents')

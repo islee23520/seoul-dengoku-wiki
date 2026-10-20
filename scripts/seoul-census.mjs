@@ -9,6 +9,7 @@ import { BASELINE_SHA256, ENTITY_SETS, KINGDOM_SUCCESSOR_BINDING, TECHNICAL_DOCU
 import { headingId, renderLoreMarkdown } from './lore-json-render.mjs'
 import { materializePersonReviewReconciliation } from './seoul-person-review-reconciliation.mjs'
 import { authenticateNationalDressAdmission, NATIONAL_DRESS_PATH, NATIONAL_DRESS_DIRECTORY, nationalDressPreservationReceipt, validateNationalDressExtraction } from './national-dress-admission-successor.mjs'
+import { authenticateMainDocAdmission, mainDocPreservationReceipt, validateMainDocExtraction } from './main-doc-admission-successor.mjs'
 import { BATCH_ID as DOC247_BATCH_ID, RECEIPT_PATH as DOC247_RECEIPT_PATH, RECEIPT_SHA256 as DOC247_RECEIPT_SHA256, authenticateClosureReceipt } from '../.omo/private/seoul-migration/doc247-mechanical-20261019/materialize.mjs'
 import { BATCH_ID as DOC247_RECEIPT_WAVE_BATCH_ID, RECEIPTS_PATH as DOC247_RECEIPT_WAVE_PATH, authenticateReceiptWave } from '../.omo/private/seoul-migration/doc247-receipt-wave-20261019/materialize.mjs'
 import { BATCH_ID as PROJECTION_REFRESH_BATCH_ID, DIRECTORY as PROJECTION_REFRESH_DIRECTORY,
@@ -816,7 +817,8 @@ const replacements = new Map(appliedBatches.filter(batch => batch.approvalModel 
     sources.set(path, { bytes, sha256: sha256(bytes), value: path.endsWith('.json') ? JSON.parse(bytes) : null })
   }
   for (const successor of successorDocuments) {
-    nationalDressPreservationReceipt(successor)
+    if (successor.row.sourcePath === NATIONAL_DRESS_PATH) nationalDressPreservationReceipt(successor)
+    else mainDocPreservationReceipt(successor)
     check(!sources.has(successor.row.sourcePath), 'E_REVIEW_COVERAGE', '/census/successorDocuments')
     const bytes = Buffer.from(await readBytes(successor.row.sourcePath))
     check(sha256(bytes) === successor.source.sha256, 'E_REVIEW_HASH', successor.row.sourcePath)
@@ -2046,7 +2048,7 @@ export function extractDependencies(sources, people, entityRecords, triage = [],
     policy: 'Bidirectional closure includes incoming and outgoing evidence consumers. Groups are dependency components, not approved batches. Unresolved narrative/anchor references require later full-body review; shared files have one writer and serialized application.' }
 }
 
-export function buildCensusProducts({ baseline, immutable, sources, task2Binding, triage = [], provenanceSources = new Map(), appliedBatches = [], requiredProvenance = new Map(), nationalDress = null }) {
+export function buildCensusProducts({ baseline, immutable, sources, task2Binding, triage = [], provenanceSources = new Map(), appliedBatches = [], requiredProvenance = new Map(), nationalDress = null, mainDocs = [] }) {
   // Unchanged rows are provenance-only (see loadAppliedBatches): they must
   // not supersede a file. Keep the earliest changed before-hash (what legacy
   // references pin) and roll the after-hash forward across later batches;
@@ -2125,6 +2127,17 @@ export function buildCensusProducts({ baseline, immutable, sources, task2Binding
     locales: source.value?.locales ? Object.keys(source.value.locales) : [],
     originalIndex: mapping.original.filter(r => r.sourcePath === sourcePath), currentIndex: mapping.current.filter(r => r.sourcePath === sourcePath) }))
   for (const document of documents.filter(row => row.originalSha256 === null)) {
+    const mainDoc = mainDocs.find(admission => admission.row.sourcePath === document.sourcePath)
+    if (mainDoc) {
+      const receipt = mainDocPreservationReceipt(mainDoc)
+      validateMainDocExtraction(mainDoc, current, original, coverageKey)
+      Object.assign(document, { sourceKind: 'post-baseline-source-registration', classification: 'excluded-document',
+        disposition: 'preserved', revisedByBatch: mainDoc.row.batchId, reviewedAt: receipt.reviewedAt,
+        receipt, semanticReview: 'not-approved-for-publication' })
+      Object.assign(ledger.sourceFileOwnership.find(row => row.sourcePath === document.sourcePath),
+        { writer: mainDoc.registration.registrar, batchId: mainDoc.row.batchId })
+      continue
+    }
     if (nationalDress && document.sourcePath === NATIONAL_DRESS_PATH) {
       const receipt = nationalDressPreservationReceipt(nationalDress)
       validateNationalDressExtraction(nationalDress, current, original, coverageKey)
@@ -9448,9 +9461,9 @@ export async function loadAndValidateCensus({ root, baseline, baselineSha256, co
   if (!result.ok) return result
   // Authenticate the predecessor products first. The successor is replayed from
   // exact source bytes, never written into the old census or its receipts.
-  const admitted = await extractCensusSources(baseline, path => readBytes(resolve(root, path)), appliedBatches, [nationalDress])
-  const successor = buildCensusProducts({ baseline, immutable, sources: admitted, task2Binding: binding, triage, provenanceSources, appliedBatches, requiredProvenance, nationalDress })
-  const effectiveContract = { ...contract, documents: [...contract.documents, nationalDress.row] }
+  let admitted = await extractCensusSources(baseline, path => readBytes(resolve(root, path)), appliedBatches, [nationalDress])
+  let successor = buildCensusProducts({ baseline, immutable, sources: admitted, task2Binding: binding, triage, provenanceSources, appliedBatches, requiredProvenance, nationalDress })
+  let effectiveContract = { ...contract, documents: [...contract.documents, nationalDress.row] }
   const effective = await materializePersonReviewReconciliation({ root, contract: effectiveContract, ledger: successor.ledger, review: successor.review, readBytes, appliedBatches })
   successor.ledger = effective.ledger
   successor.review = effective.review
@@ -9474,6 +9487,16 @@ export async function loadAndValidateCensus({ root, baseline, baselineSha256, co
     && eq(JSON.parse(dependencyBytes), overlay), 'E_REVIEW_HASH', successorArtifactPath)
   dependencies = successor.dependencies
   artifact = nationalDress.manifest.dependencies
+  // Validate the unchanged national-dress overlay above before layering this
+  // closed operational-doc registration. Neither predecessor is rewritten.
+  const mainDocs = await authenticateMainDocAdmission(root, baseline, readBytes)
+  admitted = await extractCensusSources(baseline, path => readBytes(resolve(root, path)), appliedBatches, [nationalDress, ...mainDocs])
+  successor = buildCensusProducts({ baseline, immutable, sources: admitted, task2Binding: binding, triage, provenanceSources, appliedBatches, requiredProvenance, nationalDress, mainDocs })
+  effectiveContract = { ...contract, documents: [...contract.documents, nationalDress.row, ...mainDocs.map(admission => admission.row)] }
+  const mainEffective = await materializePersonReviewReconciliation({ root, contract: effectiveContract, ledger: successor.ledger, review: successor.review, readBytes, appliedBatches })
+  successor.ledger = mainEffective.ledger
+  successor.review = mainEffective.review
+  dependencies = successor.dependencies
   successor.review.dependencyInventory = nationalDress.manifest.dependencies
   validateDependencyClosure(effectiveContract, batches, dependencies, { mode, batchId })
   const publicationReview = await loadDocumentPublicationReview(root, readBytes, admitted, successor, effectiveContract.documents, reconciled.publicationDecisions, appliedBatches)
@@ -9481,9 +9504,9 @@ export async function loadAndValidateCensus({ root, baseline, baselineSha256, co
   // review is derived from this same extraction and the authenticated receipts;
   // either way it must match the independent denominator exactly.
   const independentReview = machineReview ?? materializeIndependentReview({ original: successor.original, current: successor.current, documents: effectiveContract.documents, sources: admitted,
-    receipts: [...documentReviewReceipts({ documents: contract.documents, publicationReview, createdDocuments, baseline, evidence: reviewEvidence }), nationalDressPreservationReceipt(nationalDress)] })
+    receipts: [...documentReviewReceipts({ documents: contract.documents, publicationReview, createdDocuments, baseline, evidence: reviewEvidence }), nationalDressPreservationReceipt(nationalDress), ...mainDocs.map(mainDocPreservationReceipt)] })
   validateIndependentReview(independentReview, successor.original, successor.current, effectiveContract.documents)
-  return { ...result, review: independentReview, rightsTransition, createdDocuments, successorDocuments: [nationalDress.row], dependencies, publicationReview, dependencyReport: { originalDispositions: dependencies.dispositions.length,
+  return { ...result, review: independentReview, rightsTransition, createdDocuments, successorDocuments: [nationalDress.row, ...mainDocs.map(admission => admission.row)], dependencies, publicationReview, dependencyReport: { originalDispositions: dependencies.dispositions.length,
     profileCitationDispositions: dependencies.profileCitationDispositions.length,
     localProvenanceDispositions: dependencies.localProvenanceDispositions.length,
     references: dependencies.references.length, unresolved: dependencies.unresolved.length,

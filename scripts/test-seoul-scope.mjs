@@ -67,7 +67,11 @@ test('complete new-source inventory has only the exact excluded issuer helper an
     }
   }
   for (const directory of ['lore', 'docs', 'scripts/data', 'snapshots/build-inputs', 'vendor/issued-history']) await visit(directory)
-  assert.deepEqual(added.sort(), [NATIONAL_DRESS_PATH, TECHNICAL_DOCUMENT.sourcePath].sort())
+  assert.deepEqual(added.sort(), [NATIONAL_DRESS_PATH, TECHNICAL_DOCUMENT.sourcePath, 'docs/wiki-cast-sqlite-plan.md'].sort())
+  const { authenticateMainDocAdmission } = await import('./main-doc-admission-successor.mjs')
+  const mainDocs = await authenticateMainDocAdmission(root, baseline)
+  assert.ok(mainDocs.some(admission => admission.row.sourcePath === 'docs/wiki-cast-sqlite-plan.md'
+    && admission.row.status === 'excluded' && admission.row.reviewReceipt === null))
   const dress = await authenticateNationalDressAdmission(root, baseline)
   assert.equal(dress.row.status, 'excluded')
   const sourceHashes = { [TECHNICAL_DOCUMENT.sourcePath]: sha256(await readFile(resolve(root, TECHNICAL_DOCUMENT.sourcePath))) }

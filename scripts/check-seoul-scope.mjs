@@ -15,6 +15,7 @@ import { refreshK176PublicationReview, refreshReviewWordingPublicationReview, re
 import { authenticateClimateLinkSuccessor, CLIMATE_SOURCE, CLIMATE_BEFORE, CLIMATE_AFTER, CLIMATE_RECEIPT } from './climate-link-successor.mjs'
 import { authenticateTimelineWharfSuccessor, TIMELINE_SOURCE, TIMELINE_BEFORE, TIMELINE_AFTER, TIMELINE_RECEIPT } from './timeline-wharf-successor.mjs'
 import { authenticateNationalDressAdmission } from './national-dress-admission-successor.mjs'
+import { authenticateMainDocAdmission } from './main-doc-admission-successor.mjs'
 import { BASELINE_SHA256, RELATION_COURT_BULK_RETIREMENT, RELATION_COURT_DISPOSITION, STAGING_GEOGRAPHY_PATH, STAGING_GEOGRAPHY_SCHEMA, STAGING_SOURCES, TECHNICAL_DOCUMENT, baselineDocuments, materializeRelationCourtBulkRetirement, materializeRelationCourtDispositions, materializeRetiredRightsDispositions, proposalHash, sha256, validateSeoulScope } from './seoul-scope.mjs'
 import { materializePersonReviewReconciliation } from './seoul-person-review-reconciliation.mjs'
 import { CENSUS_PATHS, loadAndValidateCensus, loadAppliedBatches, validatorPredecessorReader } from './seoul-census.mjs'
@@ -76,6 +77,7 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
   const baseline = JSON.parse(baselineBytes)
   if (!fixture && sha256(baselineBytes) !== BASELINE_SHA256) return { error: { ok: false, errors: [{ code: 'E_ARCHIVE_HASH', path: baselinePath, id: '' }] } }
   const nationalDress = fixture ? null : await authenticateNationalDressAdmission(root, baseline, diskRead)
+  const mainDocs = fixture ? [] : await authenticateMainDocAdmission(root, baseline, diskRead)
   const contract = await json(resolve(root, 'lore/editorial/Seoul-Scope-Contract.json'))
   // Synthetic CLI fixtures validate the pure contract, not repository-owned
   // doc247 receipts. Real publication always authenticates the receipts below.
@@ -135,6 +137,10 @@ export async function loadScopeInput({ root, baselinePath, fixture = false, mode
     events: dataset.events.map(row => row.id), relations: dataset.relations.map(row => row.id), courts: dataset.config.courts.map(row => row.id),
   }
   const documentPaths = Object.keys(sourceHashes)
+  for (const admission of mainDocs) {
+    sourceHashes[admission.row.sourcePath] = admission.source.sha256
+    documentPaths.push(admission.row.sourcePath)
+  }
   // A new authored file is not silently admitted. The contract itself is metadata, not a lore document.
   async function discover(directory) {
     for (const entry of await readdir(resolve(root, directory), { withFileTypes: true })) {
