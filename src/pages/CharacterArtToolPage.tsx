@@ -134,12 +134,6 @@ export default function CharacterArtToolPage() {
     <nav aria-label="현재 위치" className="wiki-breadcrumbs"><Link to="/people">등장인물 전체</Link><span aria-hidden="true">›</span><strong>인물 아트 도구</strong></nav>
     <header className="wiki-article-header"><div><p className="wiki-domain-label">서울:전국 공식 위키 · 인물</p><h1>인물 아트 도구</h1></div></header>
     <div className="wiki-prose">
-      <section aria-labelledby="grooming-guide">
-        <h2 id="grooming-guide">외형 참고와 보존</h2>
-        <p><Link to="/world/National-Dress-and-Grooming">국가별 복식과 꾸밈</Link>에서 머리 모양·화장·장신구의 유행을 살펴볼 수 있습니다. 개인의 확정 외형과 보유품을 먼저 확인하고, 소속·생업·취향에 맞는 선택지를 참고하세요.</p>
-        <p>사연이 있는 물건은 현재 확정된 형태·색·소재·착용 방식과 기능을 보존합니다. 승인된 얼굴과 고유 특징을 유지하고, 비밀 소속을 드러내는 표식을 추가하지 않습니다. 방한과 작업 보호 기능은 <Link to="/world/Characters-Factions-and-Professions#깊이와-생업에-따른-옷차림">생업과 환경에 따른 의복 기준</Link>을 따릅니다.</p>
-        <p>인물별 변경을 준비할 때는 <a href="https://github.com/islee23520/seoul-dengoku-wiki/blob/main/lore/characters/Cast-Profile-Contract.md" rel="external">기여자 인물 작성 기준</a>도 확인하세요. 이 안내가 기존 인물 기록이나 초상화를 자동으로 바꾸지는 않습니다.</p>
-      </section>
       <StyleDownloadPanel source={originalStyleExport} />
       <label className="people-search"><span>인물 선택</span><select value={selected?.id ?? ''} onChange={(event) => setParams(event.target.value ? { person: event.target.value } : {})}>
         <option value="">인물을 선택하세요</option>
