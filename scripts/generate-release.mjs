@@ -335,6 +335,7 @@ export async function runRelease({ root, gate = requireGenerationPublication, st
         await run([process.execPath, 'scripts/generate-clan-crests.mjs'], env)
         await checkpoint('crest')
         await run([process.execPath, 'scripts/generate-catalog.mjs'], env)
+        await run([process.execPath, 'scripts/generate-portrait-tokens.mjs'], env)
       }
       const records = await readFile(join(transaction, 'outputs.jsonl'), 'utf8').catch(absent)
       for (const line of (records ?? '').split('\n').filter(Boolean)) written.add(outputPath(JSON.parse(line)))

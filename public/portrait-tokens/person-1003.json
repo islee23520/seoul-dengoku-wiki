@@ -21,9 +21,9 @@
     ],
     "carriedWeapons": "none depicted; no ownership inferred",
     "upper": "Weathered charcoal field jacket, warm-gray shirt",
-    "lower": null,
-    "footwear": null,
-    "accessories": null
+    "lower": "warm gray wool trousers bloused over boots",
+    "footwear": "thick-soled leather winter boots with wool socks",
+    "accessories": "small hand lamp clipped to a leather belt"
   },
   "style": {
     "styleId": "owner-gender-reference-20261002",
@@ -48,6 +48,7 @@
     "originalIdentityRole": "owner-reference",
     "identitySelectionNote": "Existing preserved portrait used for identity; original owner reference hash retained separately, original source file not recovered"
   },
+  "variantId": null,
   "imageReview": {
     "record": "/portrait-reviews/person-1003.json",
     "imageSha256": "7b7f311b11ffcea5f9e8e3a257a8745093ba2b322bd8e4aa3892c86bd5caeed8",
@@ -68,7 +69,9 @@
       "source": "owner-directive-20261002"
     },
     "gender": "남성",
-    "ageCategory": "adult"
+    "ageCategory": "adult",
+    "age": 37,
+    "ageAsOf": "2126-12-31"
   },
   "slots": {
     "face": {
@@ -147,33 +150,38 @@
         "source": "portrait-tokens/person-1003.json"
       },
       "weight": {
-        "value": null,
-        "status": "unknown",
-        "source": null,
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
         "unit": null
       },
       "height": {
-        "value": null,
-        "status": "unknown",
-        "source": null,
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
         "unit": null
       },
       "bustSize": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "flat chest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
       },
       "skin": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "light warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
       }
     },
     "outfit": {
       "headwear": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:approved-portrait-consistency",
+        "derived": true
       },
       "upper": {
         "value": "Weathered charcoal field jacket, warm-gray shirt",
@@ -181,51 +189,60 @@
         "source": "portrait-tokens/person-1003.json"
       },
       "lower": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "warm gray wool trousers bloused over boots",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
       },
       "footwear": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "thick-soled leather winter boots with wool socks",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
       },
       "marks": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
       },
       "neckline": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "closed turn-down collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(surface)+1940s-winter-baseline",
+        "derived": true
       }
     },
     "accessories": {
       "description": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "small hand lamp clipped to a leather belt",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
       },
       "shape": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "compact cylindrical lamp",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
       },
       "color": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "dull steel and dark brown leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
       },
       "material": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "steel, leather",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
       },
       "mounting": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "clipped at the belt",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(guard)",
+        "derived": true
       }
     }
   },
@@ -237,5 +254,37 @@
     "styleReferenceRole": "technique-only",
     "model": "gpt-image-2.5",
     "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 조재표, a Korean man, in his thirties. Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference; face shape: long oval with an angular jaw; narrow almond-shaped dark brown eyes; thick, mostly straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted tan-pink lips. Long wavy black hair reaching the shoulders; black hair; past the neck, near shoulder length length. build: broad-shouldered; skin: light warm beige. upper garment: Weathered charcoal field jacket, warm-gray shirt; neckline: closed turn-down collar. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, warm gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 조재표, a Korean man, in his thirties. Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference; face shape: long oval with an angular jaw; narrow almond-shaped dark brown eyes; thick, mostly straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted tan-pink lips. Long wavy black hair reaching the shoulders; black hair; past the neck, near shoulder length length. build: broad-shouldered; skin: light warm beige; average adult male height. upper garment: Weathered charcoal field jacket, warm-gray shirt; neckline: closed turn-down collar; lower garment: warm gray wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, warm gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 조재표, a Korean man, in his thirties. Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference; face shape: long oval with an angular jaw; narrow almond-shaped dark brown eyes; thick, mostly straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted tan-pink lips. Long wavy black hair reaching the shoulders; black hair; past the neck, near shoulder length length. build: broad-shouldered; skin: light warm beige; average adult male height. upper garment: Weathered charcoal field jacket, warm-gray shirt; neckline: closed turn-down collar; lower garment: warm gray wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, warm gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 조재표, a Korean man, in his thirties. Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference; face shape: long oval with an angular jaw; narrow almond-shaped dark brown eyes; thick, mostly straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted tan-pink lips. Long wavy black hair reaching the shoulders; black hair; past the neck, near shoulder length length. build: broad-shouldered; skin: light warm beige; average adult male height. upper garment: Weathered charcoal field jacket, warm-gray shirt; neckline: closed turn-down collar; lower garment: warm gray wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, warm gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 조재표, a Korean man, in his thirties. Handsome masculine face, strong jaw, no beard or glasses; owner-provided illustrated likeness reference; face shape: long oval with an angular jaw; narrow almond-shaped dark brown eyes; thick, mostly straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight with slightly downturned corners; muted tan-pink lips. Long wavy black hair reaching the shoulders; black hair; past the neck, near shoulder length length. build: broad-shouldered; skin: light warm beige; average adult male height. upper garment: Weathered charcoal field jacket, warm-gray shirt; neckline: closed turn-down collar; lower garment: warm gray wool trousers bloused over boots; footwear: thick-soled leather winter boots with wool socks. accessories: small hand lamp clipped to a leather belt; worn as clipped at the belt. color palette: charcoal, warm gray, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
   }
 }

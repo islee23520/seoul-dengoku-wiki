@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "personId": "person-0089",
+  "characterId": "K088",
+  "name": "한소미",
+  "stateId": "S04",
+  "approval": "art-proposal",
+  "facts": {
+    "gender": "여성",
+    "genderUserLocked": false,
+    "role": "성수 당회 장로"
+  },
+  "artProposal": {
+    "face": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
+    "hair": "long hair tied in a low ponytail",
+    "upper": "navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric",
+    "outfit": "navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric",
+    "palette": [
+      "navy",
+      "forest green",
+      "mustard ochre"
+    ],
+    "carriedWeapons": "none depicted; no ownership inferred",
+    "lower": "forest green A-line mid-calf wool skirt over thick stockings",
+    "footwear": "polished leather oxford shoes",
+    "accessories": "plain brass pocket watch on a short chain"
+  },
+  "style": {
+    "styleId": "derived-cast-default-20261019",
+    "referenceSha256": null,
+    "portraitShotId": "medium-close-up-119",
+    "crop": "head, both shoulders and upper chest",
+    "referenceRole": "technique-only"
+  },
+  "image": null,
+  "references": null,
+  "variantId": null,
+  "imageReview": null,
+  "identity": {
+    "characterId": "K088",
+    "name": "한소미",
+    "ethnicity": {
+      "value": "unconfirmed; art default East Asian appearance",
+      "status": "derived-proposal",
+      "source": "derived-20261019:art-default-origin-unconfirmed",
+      "derived": true
+    },
+    "origin": {
+      "value": "unconfirmed",
+      "status": "unknown",
+      "source": null
+    },
+    "gender": "여성",
+    "ageCategory": "adult",
+    "age": 61,
+    "ageAsOf": "2126-12-31"
+  },
+  "slots": {
+    "face": {
+      "description": {
+        "value": "Adult woman with a calm, restrained expression, visible crow's feet and forehead lines",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      },
+      "faceShape": {
+        "value": "square with a firm jaw",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyeColor": {
+        "value": "dark brown",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      },
+      "eyeShape": {
+        "value": "upturned almond",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "eyebrowShape": {
+        "value": "straight and thin",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "lipColor": {
+        "value": "muted red",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "mouthShape": {
+        "value": "closed mouth with a fuller lower lip",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "noseShape": {
+        "value": "low broad bridge",
+        "status": "derived-proposal",
+        "source": "derived-20261019:art-default-variation",
+        "derived": true
+      },
+      "beardShape": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:age+gender",
+        "derived": true
+      }
+    },
+    "hair": {
+      "description": {
+        "value": "long hair tied in a low ponytail",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "shape": {
+        "value": "long hair tied in a low ponytail",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      },
+      "color": {
+        "value": "black streaked with grey",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage+age",
+        "derived": true
+      },
+      "length": {
+        "value": "long",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender+1940s-hairstyle",
+        "derived": true
+      }
+    },
+    "body": {
+      "build": {
+        "value": "soft rounded",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation",
+        "derived": true
+      },
+      "weight": {
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "height": {
+        "value": "average adult female height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
+        "unit": null
+      },
+      "bustSize": {
+        "value": "modest",
+        "status": "derived-proposal",
+        "source": "derived-20261019:gender",
+        "derived": true
+      },
+      "skin": {
+        "value": "tan warm beige",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
+      }
+    },
+    "outfit": {
+      "headwear": {
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "upper": {
+        "value": "navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "lower": {
+        "value": "forest green A-line mid-calf wool skirt over thick stockings",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "footwear": {
+        "value": "polished leather oxford shoes",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      },
+      "marks": {
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
+      },
+      "neckline": {
+        "value": "buttoned high shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
+      }
+    },
+    "accessories": {
+      "description": {
+        "value": "plain brass pocket watch on a short chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "shape": {
+        "value": "round watch with a fine chain",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "color": {
+        "value": "aged brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "material": {
+        "value": "brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      },
+      "mounting": {
+        "value": "chain clipped to the waistcoat or jacket buttonhole",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(leader)",
+        "derived": true
+      }
+    }
+  },
+  "generationContract": {
+    "portraitShotId": "medium-close-up-119",
+    "direction": "viewer-right",
+    "camera": "eye-level three-quarter medium close-up; full head, both shoulders and upper chest; same scale across recipients",
+    "pose": "neutral still bust; shoulders level; head and torso turned slightly viewer-right; no head tilt or gestures",
+    "styleReferenceRole": "technique-only",
+    "model": "gpt-image-2.5",
+    "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 한소미, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: soft rounded; skin: tan warm beige. upper garment: navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric; neckline: buttoned high shirt collar. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: navy, forest green, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 한소미, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: navy, forest green, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 한소미, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: navy, forest green, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 한소미, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: navy, forest green, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 한소미, an East Asian woman, in her sixties. Adult woman with a calm, restrained expression, visible crow's feet and forehead lines; face shape: square with a firm jaw; upturned almond dark brown eyes; straight and thin eyebrows; nose: low broad bridge; mouth: closed mouth with a fuller lower lip; muted red lips. long hair tied in a low ponytail; black streaked with grey hair; long length. build: soft rounded; skin: tan warm beige; average adult female height. upper garment: navy fitted 1940s wool skirt-suit jacket with padded shoulders over a silk blouse, in thin fine-weave fabric; neckline: buttoned high shirt collar; lower garment: forest green A-line mid-calf wool skirt over thick stockings; footwear: polished leather oxford shoes. accessories: plain brass pocket watch on a short chain; worn as chain clipped to the waistcoat or jacket buttonhole. color palette: navy, forest green, mustard ochre. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
+  }
+}

@@ -21,8 +21,8 @@
     ],
     "carriedWeapons": "none depicted; bayonet-fighting skill does not imply possession",
     "upper": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
-    "lower": null,
-    "footwear": null,
+    "lower": "mustard high-waisted pleated trousers",
+    "footwear": "laced leather walking shoes",
     "accessories": "tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil"
   },
   "style": {
@@ -48,6 +48,7 @@
     "originalIdentityRole": "owner-reference",
     "identitySelectionNote": "Current original reference selected and hash verified"
   },
+  "variantId": null,
   "imageReview": {
     "record": "/portrait-reviews/person-1009.json",
     "imageSha256": "712e8dc2031a76f340be6556c53efd0b0b521f1bf17f7bd49c6552b9a10fec00",
@@ -68,7 +69,9 @@
       "source": "owner-directive-20261002"
     },
     "gender": "남성",
-    "ageCategory": "adult"
+    "ageCategory": "adult",
+    "age": 39,
+    "ageAsOf": "2126-12-31"
   },
   "slots": {
     "face": {
@@ -147,15 +150,17 @@
         "source": "portrait-tokens/person-1009.json"
       },
       "weight": {
-        "value": null,
-        "status": "unknown",
-        "source": null,
+        "value": "average for build",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
         "unit": null
       },
       "height": {
-        "value": null,
-        "status": "unknown",
-        "source": null,
+        "value": "average adult male height",
+        "status": "derived-proposal",
+        "source": "derived-20261019:coarse-default",
+        "derived": true,
         "unit": null
       },
       "bustSize": {
@@ -164,16 +169,18 @@
         "source": "portrait-tokens/person-1009.json"
       },
       "skin": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "fair with a neutral undertone",
+        "status": "derived-proposal",
+        "source": "derived-20261019:heritage",
+        "derived": true
       }
     },
     "outfit": {
       "headwear": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "none",
+        "status": "derived-proposal",
+        "source": "derived-20261019:approved-portrait-consistency",
+        "derived": true
       },
       "upper": {
         "value": "Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio",
@@ -181,24 +188,28 @@
         "source": "portrait-tokens/person-1009.json"
       },
       "lower": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "mustard high-waisted pleated trousers",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
       },
       "footwear": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "laced leather walking shoes",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
       },
       "marks": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "none visible",
+        "status": "derived-proposal",
+        "source": "derived-20261019:no-insignia-rule",
+        "derived": true
       },
       "neckline": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "buttoned shirt collar",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation+commonTier+surface-exposure(underground)+1940s-winter-baseline",
+        "derived": true
       }
     },
     "accessories": {
@@ -208,24 +219,28 @@
         "source": "portrait-tokens/person-1009.json"
       },
       "shape": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "small cylindrical whistle",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(duty)",
+        "derived": true
       },
       "color": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "dull brass",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(duty)",
+        "derived": true
       },
       "material": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "brass, cord",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(duty)",
+        "derived": true
       },
       "mounting": {
-        "value": null,
-        "status": "unknown",
-        "source": null
+        "value": "lanyard around the neck",
+        "status": "derived-proposal",
+        "source": "derived-20261019:occupation(duty)",
+        "derived": true
       }
     }
   },
@@ -237,5 +252,37 @@
     "styleReferenceRole": "technique-only",
     "model": "gpt-image-2.5",
     "background": "transparent RGBA; alpha0 background"
+  },
+  "textToImage": {
+    "schemaVersion": 1,
+    "model": "gpt-image-2.5",
+    "defaultStyle": "yokoyama-b",
+    "views": {
+      "portrait": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 신종목, a Korean man, in his thirties. Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait; face shape: angular oval with a defined jaw; narrow, almond-shaped dark brown eyes; thick, straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight; muted peach-brown lips; facial hair: sparse short stubble along the jaw, chin, and upper lip. Short dark hair from the existing Tripo character portrait; black hair; short length. build: broad-shouldered; skin: fair with a neutral undertone. upper garment: Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio; neckline: buttoned shirt collar. accessories: tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil; worn as lanyard around the neck. color palette: dark teal-green, mustard, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. eye-level three-quarter medium close-up: full head, both shoulders and upper chest, no waist; head and torso turned slightly viewer-right; neutral still bust, shoulders level, no head tilt or gestures. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "front": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 신종목, a Korean man, in his thirties. Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait; face shape: angular oval with a defined jaw; narrow, almond-shaped dark brown eyes; thick, straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight; muted peach-brown lips; facial hair: sparse short stubble along the jaw, chin, and upper lip. Short dark hair from the existing Tripo character portrait; black hair; short length. build: broad-shouldered; skin: fair with a neutral undertone; average adult male height. upper garment: Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio; neckline: buttoned shirt collar; lower garment: mustard high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil; worn as lanyard around the neck. color palette: dark teal-green, mustard, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact front view, neutral standing pose, arms relaxed at the sides. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "profile": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 신종목, a Korean man, in his thirties. Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait; face shape: angular oval with a defined jaw; narrow, almond-shaped dark brown eyes; thick, straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight; muted peach-brown lips; facial hair: sparse short stubble along the jaw, chin, and upper lip. Short dark hair from the existing Tripo character portrait; black hair; short length. build: broad-shouldered; skin: fair with a neutral undertone; average adult male height. upper garment: Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio; neckline: buttoned shirt collar; lower garment: mustard high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil; worn as lanyard around the neck. color palette: dark teal-green, mustard, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact side profile facing viewer-right, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "side": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 신종목, a Korean man, in his thirties. Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait; face shape: angular oval with a defined jaw; narrow, almond-shaped dark brown eyes; thick, straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight; muted peach-brown lips; facial hair: sparse short stubble along the jaw, chin, and upper lip. Short dark hair from the existing Tripo character portrait; black hair; short length. build: broad-shouldered; skin: fair with a neutral undertone; average adult male height. upper garment: Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio; neckline: buttoned shirt collar; lower garment: mustard high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil; worn as lanyard around the neck. color palette: dark teal-green, mustard, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, oblique three-quarter side view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      },
+      "back": {
+        "size": "1024x1536",
+        "prompt": "Character design sheet illustration of 신종목, a Korean man, in his thirties. Weathered face with calm tired eyes and light stubble, preserving the existing Tripo Shin Jongmok portrait; face shape: angular oval with a defined jaw; narrow, almond-shaped dark brown eyes; thick, straight with slight arches eyebrows; nose: straight bridge with a rounded tip; mouth: closed, nearly straight; muted peach-brown lips; facial hair: sparse short stubble along the jaw, chin, and upper lip. Short dark hair from the existing Tripo character portrait; black hair; short length. build: broad-shouldered; skin: fair with a neutral undertone; average adult male height. upper garment: Dark teal-green high-collar work jacket with mustard inner collar, webbing straps and field radio; neckline: buttoned shirt collar; lower garment: mustard high-waisted pleated trousers; footwear: laced leather walking shoes. accessories: tan woven straps over both shoulders; a black, rounded-rectangular speaker microphone with horizontal grille slots clipped to the strap on the image's right, with a cord extending downward into a coil; worn as lanyard around the neck. color palette: dark teal-green, mustard, muted skin. clothing silhouettes based on 1940s Second World War era civilian and work wear; calm restrained expression. full-body shot head to toe, exact back view, neutral standing pose. Japanese historical manga illustration, anime manga style: 橫山光輝; firm ink linework, broad flat shadow planes, low-saturation muted colors; the same rendering rules for every cast member. isolated figure on a fully transparent background, no scenery.",
+        "negativePrompt": "text, letters, captions, watermark, signature, logo, emblem, insignia, flags, weapons, firearms, blades, modern 21st-century fashion, sci-fi armor, background scenery, props on the ground, extra people, cropped head, extra fingers, deformed hands, distorted face"
+      }
+    }
   }
 }

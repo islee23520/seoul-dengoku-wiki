@@ -863,8 +863,11 @@ for (const file of await readdir(resolve(publicRoot, 'portrait-tokens'))) {
   const token = JSON.parse(await readFile(path, 'utf8'))
   const person = peopleCatalog.find(person => person.id === token.personId)
   if (!person || person.name !== token.name) throw new Error('E_PORTRAIT_CANON_IDENTITY:' + file)
-  if (typeof person.position !== 'string' || !person.position.trim()) throw new Error('E_PORTRAIT_CANON_ROLE:' + file)
-  token.facts.role = person.position
+  // Approved portraits must carry a canonical role; derived art-proposal tokens may have none yet.
+  if (typeof person.position !== 'string' || !person.position.trim()) {
+    if (token.image) throw new Error('E_PORTRAIT_CANON_ROLE:' + file)
+    token.facts.role = null
+  } else token.facts.role = person.position
   await writeFile(path, JSON.stringify(token, null, 2) + '\n')
 }
 await publishPublicAssets({ publicRoot, manifestPath: publicAssetsManifestPath,
