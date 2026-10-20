@@ -1,0 +1,121 @@
+{
+  "schema": "approved-daejeon-nonowning-rights.v1",
+  "approval": {
+    "messageRef": "question:call_G2tKEPA6XnqJui2NjwD0KkVD",
+    "proposalSha256": "1bc989e8a7cbf39723d8bd4dd5c83e54479e617e8161892fea62116bd72f0b7e",
+    "receiptSha256": "7dcf7d3222b25c52a4cde3005051fe0930d1b95a3cb748877a004f66771244ee"
+  },
+  "contract": {
+    "schema": "opening-nonowning-rights.v1",
+    "approvalRef": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
+    "proposalSha256": "1bc989e8a7cbf39723d8bd4dd5c83e54479e617e8161892fea62116bd72f0b7e",
+    "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+    "politicalTitle": {
+      "id": "title:kingdom-daejeon",
+      "holderPersonId": "K1008",
+      "stateId": "polity:daejeon"
+    },
+    "rights": [
+      {
+        "holdingId": "holding:daejeon-dong",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-dong",
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "personalLiegePersonId": null,
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11680",
+          "guRef": "11680",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:강남구갑선거구",
+            "geography:county:seoul-constituency:강남구을선거구",
+            "geography:county:seoul-constituency:강남구병선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        }
+      },
+      {
+        "holdingId": "holding:daejeon-yuseong",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "personalLiegePersonId": null,
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11650",
+          "guRef": "11650",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:서초구갑선거구",
+            "geography:county:seoul-constituency:서초구을선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        }
+      },
+      {
+        "holdingId": "holding:daejeon-jung",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-jung",
+        "holderPersonId": "K035",
+        "stateId": "polity:daejeon",
+        "personalLiegePersonId": "K1008",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11215",
+          "guRef": "11215",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:광진구갑선거구",
+            "geography:county:seoul-constituency:광진구을선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        }
+      },
+      {
+        "holdingId": "holding:daejeon-seo",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-seo",
+        "holderPersonId": "K039",
+        "stateId": "polity:daejeon",
+        "personalLiegePersonId": "K1008",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11710",
+          "guRef": "11710",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:송파구갑선거구",
+            "geography:county:seoul-constituency:송파구을선거구",
+            "geography:county:seoul-constituency:송파구병선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        }
+      },
+      {
+        "holdingId": "holding:daejeon-daedeok",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
+        "holderPersonId": "K038",
+        "stateId": "polity:daejeon",
+        "personalLiegePersonId": "K1008",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11740",
+          "guRef": "11740",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:강동구갑선거구",
+            "geography:county:seoul-constituency:강동구을선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        }
+      }
+    ]
+  },
+  "powers": [
+    "receive-holding-change-notice",
+    "lodge-nonbinding-registry-objection"
+  ],
+  "activeRecordPolicy": {
+    "status": "absent",
+    "activationDecisionIds": "absent"
+  }
+}

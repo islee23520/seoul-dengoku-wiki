@@ -445,52 +445,23 @@
             "name": "두모",
             "url": "/people/person-0278",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜 정비 일지·불량 부품 표본 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/83/items/0/ko",
-                  "quote": "생업: 차륜 정비 일지·불량 부품 표본 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -498,116 +469,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/83/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "두모 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -630,52 +526,23 @@
             "name": "두모",
             "url": "/people/person-0278",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜 정비 일지·불량 부품 표본 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/83/items/0/ko",
-                  "quote": "생업: 차륜 정비 일지·불량 부품 표본 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -683,116 +550,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/85/text/ko",
-                    "quote": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 차륜 정비 일지·불량 부품 표본 관리"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/83/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "두모 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -813,7 +605,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -869,7 +660,7 @@
     "욕망": "갈망 40 | 독점 −10 | 위험 −10 | 과시 10 | 지속 −15 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n- 두모는 역삼1동에서 차륜 정비 일지·불량 부품 표본 관리 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다",
     "관직": "품계 사원. 직함은 성하전자 차륜 정비사, 송하율의 실무 담당자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
     "일화": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다.",
     "관계": "송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.",
@@ -877,7 +668,7 @@
     "공포": "시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.",
     "개입": "봉인된 공구함을 함께 열거나, 결함 부품의 출처 자국을 추적할 수 있다."
   },
-  "biography": "손이 빠르고 말이 적으며, 남의 공구를 빼돌리는 일을 시험 부정과 같은 죄로 본다. 결함 표본을 자르지 않고 넘기는 반장을 참지 못한다.\n\n- 생업: 차륜 정비 일지·불량 부품 표본 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 정비사, 송하율의 실무 담당자\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 정비사, 송하율의 실무 담당자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다.\n\n**관계.** 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.\n\n**야망.** 공개 승계 시험의 차륜을 자기 서명으로 완성해 이씨 가문 승계를 끊는 이홍원의 길을 현장 정비로 증명한다.\n\n**공포.** 시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.\n\n**개입.** 봉인된 공구함을 함께 열거나, 결함 부품의 출처 자국을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −20 | 물질 30 | 공동 10 | 원칙 10 | 공개 0 | 자격 90 | 분산 0 | 변혁 −25\n- 욕망: 갈망 40 | 독점 −10 | 위험 −10 | 과시 10 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
+  "biography": "손이 빠르고 말이 적으며, 남의 공구를 빼돌리는 일을 시험 부정과 같은 죄로 본다. 결함 표본을 자르지 않고 넘기는 반장을 참지 못한다.\n\n- 생업: 차륜 정비 일지·불량 부품 표본 관리\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 성하전자 차륜 정비사, 송하율의 실무 담당자\n**생애.** 강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.\n- 두모는 역삼1동에서 차륜 정비 일지·불량 부품 표본 관리 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다\n\n**관직.** 품계 사원. 직함은 성하전자 차륜 정비사, 송하율의 실무 담당자. 정비 일지를 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.\n\n**일화.** 유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 자기 공구함을 봉인했다.\n\n**관계.** 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다.\n\n**야망.** 공개 승계 시험의 차륜을 자기 서명으로 완성해 이씨 가문 승계를 끊는 이홍원의 길을 현장 정비로 증명한다.\n\n**공포.** 시험 차륜의 숨은 결함이 자기 공구 자국으로 남아 사택 대표에게 기지를 내주는 명분이 되는 것.\n\n**개입.** 봉인된 공구함을 함께 열거나, 결함 부품의 출처 자국을 추적할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −20 | 물질 30 | 공동 10 | 원칙 10 | 공개 0 | 자격 90 | 분산 0 | 변혁 −25\n- 욕망: 갈망 40 | 독점 −10 | 위험 −10 | 과시 10 | 지속 −15 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-11"
   ],

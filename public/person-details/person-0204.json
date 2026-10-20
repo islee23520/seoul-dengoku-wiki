@@ -453,52 +453,23 @@
             "name": "나태경",
             "url": "/people/person-0204",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시장 순찰·화물 검사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/127/items/2/ko",
-                  "quote": "생업: 시장 순찰·화물 검사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/126/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/129/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,116 +477,41 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/127/items/2/ko",
-                    "quote": "생업: 시장 순찰·화물 검사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/126/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/129/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/127/items/2/ko",
-                    "quote": "생업: 시장 순찰·화물 검사"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/127/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "나태경 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -638,52 +534,23 @@
             "name": "나태경",
             "url": "/people/person-0204",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시장 순찰·화물 검사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/127/items/2/ko",
-                  "quote": "생업: 시장 순찰·화물 검사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/126/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/129/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -691,116 +558,41 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/127/items/2/ko",
-                    "quote": "생업: 시장 순찰·화물 검사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/126/text/ko",
-                    "quote": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/129/text/ko",
-                    "quote": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/127/items/2/ko",
-                    "quote": "생업: 시장 순찰·화물 검사"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/127/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "고가도로 밑",
-              "camp": {
-                "name": "나태경 고가도로 하부 야영지",
-                "type": "야영지",
-                "description": "고가도로 밑에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -821,7 +613,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -877,7 +668,7 @@
     "욕망": "갈망 10 | 독점 −30 | 위험 −20 | 과시 5 | 지속 10 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
+    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n- 나태경은 노량진1동에서 시장 순찰·화물 검사 업무를 맡는다.",
     "관직": "품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
     "일화": "2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.",
     "관계": "신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.",
@@ -885,7 +676,7 @@
     "공포": "호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
     "개입": "밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다."
   },
-  "biography": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다. 신의가 강하고 출발 직전까지 경로를 입 밖에 내지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 시장 순찰·화물 검사\n- 직함: 시장 자경 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.\n\n**야망.** 노량진 자경과 호송선단을 공동호송의 현장 뼈대로 키워 강국의 보호비를 시장 순찰로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 5 | 물질 55 | 공동 −10 | 원칙 −30 | 공개 15 | 자격 0 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −30 | 위험 −20 | 과시 5 | 지속 10 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "부두 밧줄 소리로 무단 하역을 읽고, 호송 중 화물을 연 대원을 그날로 뺀다. 신의가 강하고 출발 직전까지 경로를 입 밖에 내지 않는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 시장 순찰·화물 검사\n- 직함: 시장 자경 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 시장 자경 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n- 나태경은 노량진1동에서 시장 순찰·화물 검사 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 시장 자경 순찰대 조장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 2125년 능선 초계 중 매복 흔적을 먼저 읽어 피해를 막았다. 이 일로 시장 자경 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 신태산의 호송 계약을 부두에서 집행하는 지휘를 받고, 설초아의 역 방송을 출항 시각과 맞추며, 장세화의 공동호송 초안을 현장 기준으로 검토한다.\n\n**야망.** 노량진 자경과 호송선단을 공동호송의 현장 뼈대로 키워 강국의 보호비를 시장 순찰로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 20 | 무력 5 | 물질 55 | 공동 −10 | 원칙 −30 | 공개 15 | 자격 0 | 분산 10 | 변혁 5\n- 욕망: 갈망 10 | 독점 −30 | 위험 −20 | 과시 5 | 지속 10 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-08"
   ],

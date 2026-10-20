@@ -444,41 +444,23 @@
             "name": "용소",
             "url": "/people/person-0237",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "금고 키 중계 부스 봉인·조각 배분",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/182/items/0/ko",
-                  "quote": "생업: 금고 키 중계 부스 봉인·조각 배분"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -486,68 +468,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 금고 키 중계 부스 봉인·조각 배분"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 8,
-              "unspent": 67,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "구반포",
-              "type": "초소 영지",
-              "station": "구반포",
-              "state": "S09",
-              "settlement": {
-                "name": "구반포 정착지",
-                "type": "정착지",
-                "description": "구반포 일대 고정 거점"
-              },
-              "note": "S09 구반포 일대 관할 영지"
+              "unspent": 67
             }
           }
         }
@@ -571,41 +513,23 @@
             "name": "용소",
             "url": "/people/person-0237",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "금고 키 중계 부스 봉인·조각 배분",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/182/items/0/ko",
-                  "quote": "생업: 금고 키 중계 부스 봉인·조각 배분"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,68 +537,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 금고 키 중계 부스 봉인·조각 배분"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 8,
-              "unspent": 67,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "구반포",
-              "type": "초소 영지",
-              "station": "구반포",
-              "state": "S09",
-              "settlement": {
-                "name": "구반포 정착지",
-                "type": "정착지",
-                "description": "구반포 일대 고정 거점"
-              },
-              "note": "S09 구반포 일대 관할 영지"
+              "unspent": 67
             }
           }
         }
@@ -695,18 +579,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "구반포",
-    "type": "초소 영지",
-    "station": "구반포",
-    "state": "S09",
-    "settlement": {
-      "name": "구반포 정착지",
-      "type": "정착지",
-      "description": "구반포 일대 고정 거점"
-    },
-    "note": "S09 구반포 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -747,7 +619,7 @@
     "욕망": "갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.",
+    "생애": "2071-06-23 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.\n- 용소는 여의동을 업무동으로 삼아 금고 키 중계 부스 봉인·조각 배분 업무를 맡는다.",
     "관직": "품계 서기. 직함은 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자. 키 조각을 송재민·두용·외부 증인에게 나누고, 단독 해독을 금지한다.",
     "일화": "마곡이 금고 키 중계를 조건으로 연구자 파견을 제안하자 부스 봉인 장부에 빈 줄이 생겼다.",
     "관계": "송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.",
@@ -755,7 +627,7 @@
     "공포": "부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.",
     "개입": "빈 줄을 채울 증인을 데려오거나, 요구된 뒷문을 폭로할 수 있다."
   },
-  "biography": "열쇠 조각의 무게를 손가락으로 기억하고, 해독 호기심을 죄로 본다. 중계 부스 안의 침묵을 암호보다 중히 지킨다.\n\n- 생업: 금고 키 중계 부스 봉인·조각 배분\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자\n**생애.** 2126년 세대. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.\n\n**관직.** 품계 서기. 직함은 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자. 키 조각을 송재민·두용·외부 증인에게 나누고, 단독 해독을 금지한다.\n\n**일화.** 마곡이 금고 키 중계를 조건으로 연구자 파견을 제안하자 부스 봉인 장부에 빈 줄이 생겼다.\n\n**관계.** 송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.\n\n**야망.** 검증 자료를 금고 키 중계로 옮기되 키를 쪼개, 연구자를 인질 삼는 거래를 기술적으로 끊는다.\n\n**공포.** 부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.\n\n**개입.** 빈 줄을 채울 증인을 데려오거나, 요구된 뒷문을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 10 | 무력 −35 | 물질 −5 | 공동 5 | 원칙 15 | 공개 40 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점",
+  "biography": "열쇠 조각의 무게를 손가락으로 기억하고, 해독 호기심을 죄로 본다. 중계 부스 안의 침묵을 암호보다 중히 지킨다.\n\n- 생업: 금고 키 중계 부스 봉인·조각 배분\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자\n**생애.** 2071-06-23 출생으로 승인된 출생군은 3군이다. 2126년 개막에 활동했다. 여의도 금고 당직에서 자랐다. 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자 자리는 정전 사흘 금고 유지로 열렸다.\n- 용소는 여의동을 업무동으로 삼아 금고 키 중계 부스 봉인·조각 배분 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 금고 키 중계 부스 실무 담당자, 송재민의 실무 담당자. 키 조각을 송재민·두용·외부 증인에게 나누고, 단독 해독을 금지한다.\n\n**일화.** 마곡이 금고 키 중계를 조건으로 연구자 파견을 제안하자 부스 봉인 장부에 빈 줄이 생겼다.\n\n**관계.** 송재민의 지휘로 부스를 돌리고, 두용의 저장소 함과 봉인을 맞춘다. 정호준의 공개 자료만 중계 대상으로 올린다.\n\n**야망.** 검증 자료를 금고 키 중계로 옮기되 키를 쪼개, 연구자를 인질 삼는 거래를 기술적으로 끊는다.\n\n**공포.** 부스 키가 군사 측에 넘어가 여의도 금고가 배우진의 비밀 창고가 되는 것.\n\n**개입.** 빈 줄을 채울 증인을 데려오거나, 요구된 뒷문을 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 10 | 무력 −35 | 물질 −5 | 공동 5 | 원칙 15 | 공개 40 | 자격 10 | 분산 20 | 변혁 −5\n- 욕망: 갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점",
   "sources": [
     "Cast-State-09"
   ],

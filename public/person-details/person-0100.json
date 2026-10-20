@@ -1,7 +1,7 @@
 {
   "id": "person-0100",
   "name": "채구름",
-  "title": "성동 교량 순찰대 조장",
+  "title": "성동 교량 순찰대 조장 · 성동구 영주",
   "position": "성동 교량 순찰대 조장 · 성동구 영주",
   "characterId": "K099",
   "rank": "영주",
@@ -453,47 +453,23 @@
             "name": "채구름",
             "url": "/people/person-0100",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교량 경비·출입 통제",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/159/items/1/ko",
-                  "quote": "생업: 교량 경비·출입 통제"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/161/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -501,111 +477,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/159/items/1/ko",
-                    "quote": "생업: 교량 경비·출입 통제"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/159/items/1/ko",
-                    "quote": "생업: 교량 경비·출입 통제"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/161/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/159/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "채구름 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 35
+            }
           }
         }
       },
@@ -628,47 +534,23 @@
             "name": "채구름",
             "url": "/people/person-0100",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교량 경비·출입 통제",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/159/items/1/ko",
-                  "quote": "생업: 교량 경비·출입 통제"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/161/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -676,111 +558,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/159/items/1/ko",
-                    "quote": "생업: 교량 경비·출입 통제"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/159/items/1/ko",
-                    "quote": "생업: 교량 경비·출입 통제"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/161/text/ko",
-                    "quote": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/159/items/3/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "채구름 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 35
+            }
           }
         }
       }
@@ -922,7 +734,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -978,15 +789,15 @@
     "욕망": "갈망 10 | 독점 0 | 위험 −15 | 과시 25 | 지속 −10 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 암사 경비 초소에서 자랐다. 성동 교량 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.",
+    "생애": "2126년 세대. 채구름은 암사 경비 초소에서 자랐다. 채구름은 야간 무단 도하 적발로 성동 교량 순찰대 조장 자리를 맡았다.\n- 채구름의 성동 교량 순찰대 조장 업무는 성수1가1동과 연결된다.",
     "관직": "품계 교사. 직함은 성동 교량 순찰대 조장. 주간은 당회와 교대 명부를 공유하고, 야간 교량 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.",
-    "일화": "2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 성동 교량 순찰대 조장 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 채구름은 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 성동 교량 순찰대 조장 자리의 서명이 장부에 올랐다.",
     "관계": "김보람의 펌프수비 지휘를 교량에서 집행하고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 장민재의 급수 창구가 야간 봉쇄로 닫힐 때 충돌한다.",
     "야망": "동부 교량 접근을 순찰대 단독 봉쇄권으로 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.",
-    "공포": "암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 것.",
+    "공포": "채구름은 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 상황을 두려워한다.",
     "개입": "외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 암호패 유출을 밝혀 조장을 교체하게 할 수 있다."
   },
-  "biography": "교량 밑 수위로 침투를 읽고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다. 직선적이며 야간 암호패를 부하에게 맡기지 않는다.\n\n- 소속: 명부교회\n- 생업: 교량 경비·출입 통제\n- 품계: 교사\n- 직함: 성동 교량 순찰대 조장\n**생애.** 2126년 세대. 암사 경비 초소에서 자랐다. 성동 교량 순찰대 조장 자리는 야간 무단 도하 적발로 열렸다.\n\n**관직.** 품계 교사. 직함은 성동 교량 순찰대 조장. 주간은 당회와 교대 명부를 공유하고, 야간 교량 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 성동 교량 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘를 교량에서 집행하고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 장민재의 급수 창구가 야간 봉쇄로 닫힐 때 충돌한다.\n\n**야망.** 동부 교량 접근을 순찰대 단독 봉쇄권으로 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 것.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 암호패 유출을 밝혀 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −5 | 물질 30 | 공동 30 | 원칙 5 | 공개 −10 | 자격 25 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 −15 | 과시 25 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "교량 밑 수위로 침투를 읽고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다. 직선적이며 야간 암호패를 부하에게 맡기지 않는다.\n\n- 소속: 명부교회\n- 생업: 교량 경비·출입 통제\n- 품계: 교사\n- 직함: 성동 교량 순찰대 조장\n**생애.** 2126년 세대. 채구름은 암사 경비 초소에서 자랐다. 채구름은 야간 무단 도하 적발로 성동 교량 순찰대 조장 자리를 맡았다.\n- 채구름의 성동 교량 순찰대 조장 업무는 성수1가1동과 연결된다.\n\n**관직.** 품계 교사. 직함은 성동 교량 순찰대 조장. 주간은 당회와 교대 명부를 공유하고, 야간 교량 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용한다.\n\n**일화.** 2125년 채구름은 무장 난입자를 문 밖에서 붙들어 명부 재점검을 열었다. 이 일로 성동 교량 순찰대 조장 자리의 서명이 장부에 올랐다.\n\n**관계.** 김보람의 펌프수비 지휘를 교량에서 집행하고, 최나래의 기동 정비조와 교량 순찰을 맹세로 나누며, 장민재의 급수 창구가 야간 봉쇄로 닫힐 때 충돌한다.\n\n**야망.** 동부 교량 접근을 순찰대 단독 봉쇄권으로 묶어 후계가 누가 되든 물이 무력의 볼모가 되지 않게 한다.\n\n**공포.** 채구름은 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 상황을 두려워한다.\n\n**개입.** 외부 장교의 출입 시도 증거를 가져와 봉쇄를 정당화하거나, 암호패 유출을 밝혀 조장을 교체하게 할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −5 | 물질 30 | 공동 30 | 원칙 5 | 공개 −10 | 자격 25 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 0 | 위험 −15 | 과시 25 | 지속 −10 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

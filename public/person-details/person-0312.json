@@ -551,47 +551,23 @@
             "name": "복용",
             "url": "/people/person-0312",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시장 시세·재고 게시·출고 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/28/items/0/ko",
-                  "quote": "생업: 시장 시세·재고 게시·출고 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,89 +575,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 시장 시세·재고 게시·출고 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 시장 시세·재고 게시·출고 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "신내",
-              "type": "초소 영지",
-              "station": "신내",
-              "state": "S12",
-              "settlement": {
-                "name": "신내 정착지",
-                "type": "정착지",
-                "description": "신내 일대 고정 거점"
-              },
-              "note": "S12 신내 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -705,47 +626,23 @@
             "name": "복용",
             "url": "/people/person-0312",
             "state": "S12",
-            "method": "card-lexicon",
-            "role": {
-              "display": "시장 시세·재고 게시·출고 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-12.json",
-                  "pointer": "/content/28/items/0/ko",
-                  "quote": "생업: 시장 시세·재고 게시·출고 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -753,89 +650,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 시장 시세·재고 게시·출고 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/29/text/ko",
-                    "quote": "시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-12.json",
-                    "pointer": "/content/28/items/0/ko",
-                    "quote": "생업: 시장 시세·재고 게시·출고 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 신내운수 규모",
-              "faction_scale": {
-                "state": "S12",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "신내",
-              "type": "초소 영지",
-              "station": "신내",
-              "state": "S12",
-              "settlement": {
-                "name": "신내 정착지",
-                "type": "정착지",
-                "description": "신내 일대 고정 거점"
-              },
-              "note": "S12 신내 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -973,18 +815,6 @@
       "factor": 1.2
     }
   },
-  "territory": {
-    "fief_name": "신내",
-    "type": "초소 영지",
-    "station": "신내",
-    "state": "S12",
-    "settlement": {
-      "name": "신내 정착지",
-      "type": "정착지",
-      "description": "신내 일대 고정 거점"
-    },
-    "note": "S12 신내 일대 관할 영지"
-  },
   "wandering_force": null,
   "clan": {
     "id": "bcf5-ba74-cc9c",
@@ -1024,15 +854,15 @@
     "욕망": "갈망 35 | 독점 10 | 위험 −15 | 과시 −20 | 지속 −5 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 북동부 중립시장 거점장 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2090-10-28에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 북동부 중립시장 거점장 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 복용의 시장 시세·재고 게시·출고 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.",
     "관직": "품계 서기. 직함은 북동부 중립시장 거점장. 시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.",
     "일화": "무기 발견 직후 시장 저울에 군수 문장 주문서가 한 장 끼어 있었다.",
     "관계": "복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.",
-    "야망": "중립시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 한다.",
+    "야망": "중립시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 하려 한다.",
     "공포": "시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.",
     "개입": "주문서를 공개하거나, 응급 물자 우선 칸을 시장 원장에 고정할 수 있다."
   },
-  "biography": "가격을 숨기는 상인을 가장 잔인하게 몰아붙이고, 환자 이송 칸을 경매에 올리는 말을 시장에서 쫓아낸다. 공개 저울을 신용으로 본다.\n\n- 생업: 시장 시세·재고 게시·출고 확인\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 북동부 중립시장 거점장\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 북동부 중립시장 거점장 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 서기. 직함은 북동부 중립시장 거점장. 시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.\n\n**일화.** 무기 발견 직후 시장 저울에 군수 문장 주문서가 한 장 끼어 있었다.\n\n**관계.** 복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.\n\n**야망.** 중립시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 한다.\n\n**공포.** 시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.\n\n**개입.** 주문서를 공개하거나, 응급 물자 우선 칸을 시장 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 45 | 무력 −25 | 물질 −5 | 공동 30 | 원칙 15 | 공개 15 | 자격 25 | 분산 40 | 변혁 −5\n- 욕망: 갈망 35 | 독점 10 | 위험 −15 | 과시 −20 | 지속 −5 | 지향 유동 | 결합 다자\n:::",
+  "biography": "2090-10-28생인 복용은 가격을 숨기는 상인을 가장 잔인하게 몰아붙이고, 환자 이송 칸을 경매에 올리는 말을 시장에서 쫓아낸다. 공개 저울을 신용으로 본다.\n\n- 생업: 시장 시세·재고 게시·출고 확인\n- 소속: 신내운수\n- 품계: 서기\n- 직함: 북동부 중립시장 거점장\n**생애.** 2090-10-28에 태어났다. 노량진 선창에서 자랐다. 2126년 개막에는 북동부 중립시장 거점장 당직을 맡으며, 직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.\n- 상봉1동의 망우 환승 대기열·환자·화물 구분·중량·송장·시세·공개 증언 기록대가 복용의 시장 시세·재고 게시·출고 확인 근무 기준점으로 제안되어 있다. 영구 겨울의 인계 기록을 대조하는 제안이며 운행 열차·새 설비·무장·통행세·시장 독점권·거주·정확한 시설 경계·작위·영지·점유권은 확정하지 않는다.\n\n**관직.** 품계 서기. 직함은 북동부 중립시장 거점장. 시세와 재고를 벽에 적고, 무기 문장이 찍힌 주문서는 의료조 게시 전까지 출고를 막는다.\n\n**일화.** 무기 발견 직후 시장 저울에 군수 문장 주문서가 한 장 끼어 있었다.\n\n**관계.** 복봉의 중계 송장과 시세를 맞추고, 국용의 당직 의무실에 응급 물자를 우선 댄다. 오해린의 시세 방송을 시장 시간에만 참고한다.\n\n**야망.** 중립시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 하려 한다.\n\n**공포.** 시장 재고가 군수 전용으로 빠져 의료열차 보급이 멈추는 것.\n\n**개입.** 주문서를 공개하거나, 응급 물자 우선 칸을 시장 원장에 고정할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 45 | 무력 −25 | 물질 −5 | 공동 30 | 원칙 15 | 공개 15 | 자격 25 | 분산 40 | 변혁 −5\n- 욕망: 갈망 35 | 독점 10 | 위험 −15 | 과시 −20 | 지속 −5 | 지향 유동 | 결합 다자\n:::",
   "sources": [
     "Cast-State-12"
   ],

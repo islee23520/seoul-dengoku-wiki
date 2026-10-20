@@ -1,7 +1,7 @@
 {
   "id": "person-0287",
   "name": "모복",
-  "title": "주거 쉘 급수 거점장, 서진아의 실무 담당자",
+  "title": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
   "position": "강남역 사택 급수 거점장, 서진아의 실무 담당자 · 서초구 영주",
   "characterId": "K286",
   "rank": "영주",
@@ -553,41 +553,23 @@
             "name": "모복",
             "url": "/people/person-0287",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "사택 급수 수위 확인·개폐 조정",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/182/items/0/ko",
-                  "quote": "생업: 사택 급수 수위 확인·개폐 조정"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -595,100 +577,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 사택 급수 수위 확인·개폐 조정"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 사택 급수 수위 확인·개폐 조정"
-                  }
-                ],
-                "cp": 8,
-                "level": 11
+                "level": 11,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/182/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 20,
-              "unspent": 55,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "몽촌토성",
-              "type": "초소 영지",
-              "station": "몽촌토성",
-              "state": "S11",
-              "settlement": {
-                "name": "몽촌토성 정착지",
-                "type": "정착지",
-                "description": "몽촌토성 일대 고정 거점"
-              },
-              "note": "S11 몽촌토성 일대 관할 영지"
+              "unspent": 55
             }
           }
         }
@@ -712,41 +634,23 @@
             "name": "모복",
             "url": "/people/person-0287",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "사택 급수 수위 확인·개폐 조정",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/182/items/0/ko",
-                  "quote": "생업: 사택 급수 수위 확인·개폐 조정"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -754,100 +658,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 사택 급수 수위 확인·개폐 조정"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 사택 급수 수위 확인·개폐 조정"
-                  }
-                ],
-                "cp": 8,
-                "level": 11
+                "level": 11,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/182/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 20,
-              "unspent": 55,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "몽촌토성",
-              "type": "초소 영지",
-              "station": "몽촌토성",
-              "state": "S11",
-              "settlement": {
-                "name": "몽촌토성 정착지",
-                "type": "정착지",
-                "description": "몽촌토성 일대 고정 거점"
-              },
-              "note": "S11 몽촌토성 일대 관할 영지"
+              "unspent": 55
             }
           }
         }
@@ -920,18 +764,6 @@
       "factor": 1.2
     }
   },
-  "territory": {
-    "fief_name": "몽촌토성",
-    "type": "초소 영지",
-    "station": "몽촌토성",
-    "state": "S11",
-    "settlement": {
-      "name": "몽촌토성 정착지",
-      "type": "정착지",
-      "description": "몽촌토성 일대 고정 거점"
-    },
-    "note": "S11 몽촌토성 일대 관할 영지"
-  },
   "wandering_force": null,
   "clan": {
     "id": "baa8-d568-d3c9",
@@ -971,7 +803,7 @@
     "욕망": "갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 모복은 서초2동에서 사택 급수 수위 확인·개폐 조정 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다",
     "관직": "품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.",
     "일화": "북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.",
     "관계": "서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.",
@@ -979,7 +811,7 @@
     "공포": "거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.",
     "개입": "대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다."
   },
-  "biography": "양동 줄의 길이로 밤 수위를 읽고, 기술 탓에 주전자가 비는 순간을 거점의 실패로 적는다. 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n- 생업: 사택 급수 수위 확인·개폐 조정\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 급수 거점장, 서진아의 실무 담당자\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.\n\n**일화.** 북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.\n\n**관계.** 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.\n\n**야망.** 양동 줄이 흩어지기 전에 거점 밸브를 회장실 게시와 같은 시각에만 돌린다.\n\n**공포.** 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.\n\n**개입.** 대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −15 | 물질 25 | 공동 20 | 원칙 0 | 공개 0 | 자격 60 | 분산 15 | 변혁 −30\n- 욕망: 갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "양동 줄의 길이로 밤 수위를 읽고, 기술 탓에 주전자가 비는 순간을 거점의 실패로 적는다. 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n- 생업: 사택 급수 수위 확인·개폐 조정\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 급수 거점장, 서진아의 실무 담당자\n**생애.** 영등포 정수 당직에서 자랐다. 강남역 사택 급수 거점장, 서진아의 실무 담당자 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 모복은 서초2동에서 사택 급수 수위 확인·개폐 조정 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다\n\n**관직.** 품계 사원. 직함은 강남역 사택 급수 거점장, 서진아의 실무 담당자. 수위 막대가 최저 눈금에 닿으면 양동 줄을 둘로 나누고, 핸들 페인트가 마른 뒤에만 다음 개폐를 허용한다.\n\n**일화.** 북부 배관 압력이 떨어졌다는 종이만 먼저 도착하자 모복은 양동 줄을 둘로 나누고 승계 시험 연기를 거점 벽에는 적지 않았다.\n\n**관계.** 서진아의 사택 감사를 거점 핸들에서 집행하는 지휘를 받고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂는다. 한재목의 물 협상 시각을 쉘 쪽에서 막대에 옮긴다.\n\n**야망.** 양동 줄이 흩어지기 전에 거점 밸브를 회장실 게시와 같은 시각에만 돌린다.\n\n**공포.** 거점 밸브가 승계 시험 일정에 묶여 사택 주전자가 식기 전에 핸들이 페인트째 빠지는 것.\n\n**개입.** 대체 수위 막대를 구해 줄을 하나로 되돌리거나, 핸들 페인트를 지운 손을 밝혀 거점장을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −10 | 무력 −15 | 물질 25 | 공동 20 | 원칙 0 | 공개 0 | 자격 60 | 분산 15 | 변혁 −30\n- 욕망: 갈망 30 | 독점 −10 | 위험 30 | 과시 20 | 지속 −20 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

@@ -553,52 +553,23 @@
             "name": "정카준",
             "url": "/people/person-0745",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "등기·기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/522/items/1/ko",
-                  "quote": "생업: 등기·기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -606,78 +577,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/522/items/1/ko",
-                    "quote": "생업: 등기·기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -701,52 +622,23 @@
             "name": "정카준",
             "url": "/people/person-0745",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "등기·기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/522/items/1/ko",
-                  "quote": "생업: 등기·기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -754,78 +646,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/522/items/1/ko",
-                    "quote": "생업: 등기·기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/523/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/524/text/ko",
-                    "quote": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -846,18 +688,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "삼산",
-    "type": "초소 영지",
-    "station": "삼산",
-    "state": "S02",
-    "settlement": {
-      "name": "삼산 정착지",
-      "type": "정착지",
-      "description": "삼산 일대 고정 거점"
-    },
-    "note": "S02 삼산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -894,19 +724,20 @@
     "생업": "등기·기록",
     "품계": "조합원",
     "직함": "복구복무 기록관",
+    "업무 위치": "구로2동. 정카준은 구로2동에서 이중 지급 장부 한 줄과 복구복무 등록 원본을 나란히 놓는다. 지운 이유와 서명 시각을 김나율의 교대 명부에 맞추어 적고 다음 기록관이 재확인할 사본을 남긴다.",
     "가치관": "권위 −20 | 개방 0 | 무력 −10 | 물질 50 | 공동 45 | 원칙 25 | 공개 45 | 자격 55 | 분산 10 | 변혁 15",
     "욕망": "갈망 −5 | 독점 −10 | 위험 −15 | 과시 −40 | 지속 5 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 정카준은 구로2동에서 이중 지급 장부 한 줄과 복구복무 등록 원본을 나란히 놓는다. 지운 이유와 서명 시각을 김나율의 교대 명부에 맞추어 적고 다음 기록관이 재확인할 사본을 남긴다.",
+    "관직": "품계 조합원. 직함은 복구복무 기록관. 지운 이유와 서명 시각을 김나율의 교대 명부에 맞추어 적고 다음 기록관이 재확인할 사본을 남긴다.",
     "일화": "2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 복구복무 기록관 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "정카준은 복구복무 기록의 이중 지급 정정을 김나율에게 전한다. 김나율은 실제 작업반 교대와 등록을 확인해 노동 인원과 중복 지급을 구분한다.",
+    "야망": "정카준은 지운 이중 지급 줄의 이유와 서명 시각을 남겨 다음 기록관이 원본으로 재확인하게 하려 한다.",
+    "공포": "이중 지급 장부의 지운 이유를 기록하지 않아 김나율의 실제 교대 인원을 잘못 세는 것.",
+    "개입": "플레이어는 정카준과 복구복무 원본을 이중 지급 장부에 대조하거나 서명 시각이 보이는 사본을 다음 기록관에게 넘길 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 복구복무 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 복구복무 기록관 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 복구복무 기록관 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 0 | 무력 −10 | 물질 50 | 공동 45 | 원칙 25 | 공개 45 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 −5 | 독점 −10 | 위험 −15 | 과시 −40 | 지속 5 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "정카준은 이중 지급을 지울 때 이유와 서명 시각을 남겨 다음 당직이 원본을 다시 보게 한다.\n\n- 소속: 규격맹\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 정카준은 구로2동에서 이중 지급 장부 한 줄과 복구복무 등록 원본을 나란히 놓는다. 지운 이유와 서명 시각을 김나율의 교대 명부에 맞추어 적고 다음 기록관이 재확인할 사본을 남긴다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 지운 이유와 서명 시각을 김나율의 교대 명부에 맞추어 적고 다음 기록관이 재확인할 사본을 남긴다.\n\n**일화.** 2125년 이중 지급 장부를 대조해 한 줄을 지우고 서명을 남겼다. 이 일로 복구복무 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 정카준은 복구복무 기록의 이중 지급 정정을 김나율에게 전한다. 김나율은 실제 작업반 교대와 등록을 확인해 노동 인원과 중복 지급을 구분한다.\n\n**야망.** 정카준은 지운 이중 지급 줄의 이유와 서명 시각을 남겨 다음 기록관이 원본으로 재확인하게 하려 한다.\n\n**공포.** 이중 지급 장부의 지운 이유를 기록하지 않아 김나율의 실제 교대 인원을 잘못 세는 것.\n\n**개입.** 플레이어는 정카준과 복구복무 원본을 이중 지급 장부에 대조하거나 서명 시각이 보이는 사본을 다음 기록관에게 넘길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 0 | 무력 −10 | 물질 50 | 공동 45 | 원칙 25 | 공개 45 | 자격 55 | 분산 10 | 변혁 15\n- 욕망: 갈망 −5 | 독점 −10 | 위험 −15 | 과시 −40 | 지속 5 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

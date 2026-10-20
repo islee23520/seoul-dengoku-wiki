@@ -128,15 +128,35 @@ function personSegment(envelope, headingAnchor) {
 }
 function localizedFragments(segment,locale){
  const bySection=new Map();let currentSection=null
+ const hasStrongLabels = segment.some(({ block }) => [block.text, ...(block.items ?? [])].some(value => {
+  const valueAtLocale = value && selected(value, locale)
+  return Array.isArray(valueAtLocale) && valueAtLocale.some(run => run.strong && /^[^\n.]+\./u.test(run.text))
+ }))
  const add=(section,text,path,sourceBase=0)=>{if(!section||!text)return;const visible=visibleMarkdown(text,path);visible.sourceSegments=visible.sourceSegments.map((segment)=>({...segment,start:segment.start+sourceBase,end:segment.end+sourceBase}));const rows=bySection.get(section)??[];rows.push({text,path,visible});bySection.set(section,rows)}
  const processValue=(value,path)=>{
   const localized=selected(value,locale)
+  const plainLabel = /^(생애|관직|일화|관계|야망|공포|개입|가문|신념|목표|훈련|호위 대열|호위와 철수|전령과 호위|계약과 권한|특성|신체)\.\s*/u
+  if (!hasStrongLabels && typeof localized === 'string') {
+   const label = localized.match(plainLabel)
+   if (label) { currentSection = label[1]; add(currentSection, localized.slice(label[0].length), path, length(label[0])); return }
+  }
   if(Array.isArray(localized)){
+   if (!hasStrongLabels && localized.length === 1 && !localized[0].strong) {
+    const label = localized[0].text.match(plainLabel)
+    if (label) { currentSection = label[1]; add(currentSection, localized[0].text.slice(label[0].length), `${path}/0/text`, length(label[0])); return }
+   }
+   let start=0
+   const flush=(end)=>{
+    if(!currentSection||start===end)return
+    const visible=visibleValue({[locale]:localized.slice(start,end)},path,locale,'paragraph')
+    visible.sourceSegments=visible.sourceSegments.map((segment)=>({...segment,path:segment.path.replace(/\/(\d+)\/text$/u,(_,index)=>`/${start+Number(index)}/text`)}))
+    const rows=bySection.get(currentSection)??[];rows.push({visible});bySection.set(currentSection,rows)
+   }
    for(const [runIndex,run] of localized.entries()){
     const name=run.strong?run.text.match(/^([^\n.]+)\./u)?.[1]?.trim():null
-    if(name){currentSection=name;continue}
-    add(currentSection,run.text,`${path}/${runIndex}/text`)
+    if(name){flush(runIndex);currentSection=name;start=runIndex+1}
    }
+   flush(localized.length)
    return
   }
   const root=fromMarkdown(localized,{extensions:[gfm()],mdastExtensions:[gfmFromMarkdown()]})

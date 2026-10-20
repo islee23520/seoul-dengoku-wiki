@@ -27,6 +27,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { readRendered } from "../../scripts/lore-read-rendered.mjs";
+import { personIdValuesHash } from "./person-id-values-successor.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
@@ -57,7 +58,13 @@ export function assertApprovedHashes({ valuesBytes, candidatesBytes }) {
   const v = [];
   const vi = sha256Hex(valuesBytes);
   const ci = sha256Hex(candidatesBytes);
-  if (vi !== APPROVED.inputSha256) {
+  let approvedValues = false;
+  try {
+    approvedValues = personIdValuesHash(valuesBytes) === APPROVED.inputSha256;
+  } catch {
+    // Missing or altered successor evidence closes issuance just like altered source bytes.
+  }
+  if (!approvedValues) {
     v.push(`values-cast.json 해시(${vi})가 승인각(${APPROVED.inputSha256})과 다르다`);
   }
   if (ci !== APPROVED.candidatesSha256) {
@@ -71,7 +78,7 @@ export function loadStableNonKIds(text) {
   const map = new Map();
   for (const block of text.split(/^### /m).slice(1)) {
     const nameMatch = block.match(/^인물 (.+)$/m);
-    const idMatch = block.match(/^- 캐릭터 ID: (\S+)/m);
+    const idMatch = block.match(/^- 캐릭터 ID: ([^\s.,;:!?…]+)/mu);
     if (nameMatch && idMatch && !/^K\d+$/u.test(idMatch[1])) map.set(nameMatch[1].trim(), idMatch[1]);
   }
   return map;

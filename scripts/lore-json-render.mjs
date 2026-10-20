@@ -45,7 +45,8 @@ function renderNode(node, locale, context) {
     case 'paragraph':
       return renderLeaf(node.text[locale], context)
     case 'quote':
-      return renderLeaf(node.text[locale], context).split('\n').map((line) => `> ${line}`).join('\n')
+      return renderLeaf(node.text[locale], context).split('\n')
+        .map((line) => `> ${line.replace(/^(\s*\d{1,9})([.)])(?=\s)/u, '$1\\$2')}`).join('\n')
     case 'rule':
       return '---'
     case 'list': {

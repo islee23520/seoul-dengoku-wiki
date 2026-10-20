@@ -1,0 +1,3636 @@
+{
+  "schema": "approved-seoul-rights-transition.v1",
+  "approvalRef": "owner:seoul-only-rights-20261015",
+  "approvalReceiptSha256": "7dcf7d3222b25c52a4cde3005051fe0930d1b95a3cb748877a004f66771244ee",
+  "nonowningPackageSha256": "44a49cbb8341d87214ebeef9d9e303cb5591f7c9c50327016516a7627b5eb2b8",
+  "originalSources": {
+    "existing": {
+      "path": "scripts/historical-inputs/personal-holdings.json",
+      "sha256": "8c0662452209932051a19f530defa62355b4810556abaa6ca590f04cd5800873"
+    },
+    "allocation": {
+      "path": "scripts/historical-inputs/opening-feudal-allocation.json",
+      "sha256": "bacce5fd916a5fc22fa1a0b811880703c7d2ddea389d41fa6609b1b3ea6e78dd"
+    }
+  },
+  "records": [
+    {
+      "set": "titles",
+      "oldId": "title:barony-K151-sea",
+      "sourceValueSha256": "6ee713cfea26fb146fab218d555c9e53c8278d01aed06e3bad88819c1d362a24",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-K176-sea",
+      "sourceValueSha256": "1ecca0bfdbe8b8b0c7ddeee645abb2cc45f1bb0e443107f399823b11ecfa5e12",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-K355-sea",
+      "sourceValueSha256": "5791ccdd5a3a1b44f8730ddb9d70cd83c0da6e0d2263e02b6d3f517df52b6922",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41111-S02",
+      "sourceValueSha256": "120511447a6ae4899349ca44f089f5138507a8aeafc4a149e128bb1ee66a5c28",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41113-S02",
+      "sourceValueSha256": "dd233d5bd568f0be2daa9b0742093481e4268528c36165dbcbad98211f973254",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41115-S02",
+      "sourceValueSha256": "8c4c9598a71fffe79ade51e0d83e54b0fa4536fe33cb2500fc62e0c86eaf3ebc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41117-S02",
+      "sourceValueSha256": "0156f848975b5e0a2ac90b4f8ac22d6bb9cc5db858ab0f24c8f20c5c767d6951",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41131-S04",
+      "sourceValueSha256": "573bd65c5f0f720499234b18c010658b1c65cbded7db2077e8a2bc0209ee8f2f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41133-S04",
+      "sourceValueSha256": "e1387cec6ac24dc987dbf07661f65fc8a1ab6bd2ba5f828dd127d1dc9a05b15f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41135-S04",
+      "sourceValueSha256": "e290ee44bbb66f5075c8b442acd287929a57bfb051437683a1efcf87445cc4bc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41171-S02",
+      "sourceValueSha256": "0f8e230466e9b8cf4a769f86c1743e13a4aac8462d64af22941aafab393d8646",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41173-S02",
+      "sourceValueSha256": "7bb4d3d87c72379ecdb9db63cfc93aa3ef6a28c566b9a710f5d45bad0b85372d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41192-S02",
+      "sourceValueSha256": "2dc5fcabeed945efccd97fb03ebfc7efc090c8956852f35acaf39df8491dc498",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41194-S02",
+      "sourceValueSha256": "79b111ed2f832189d349dbc049e36da579f73a84d4933eddf318776b86555919",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41196-S02",
+      "sourceValueSha256": "ae1dde957e79deadd35d9d8923d2ee14b5849103eba3dddbb38e69e735d11031",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41271-S02",
+      "sourceValueSha256": "409722df95be5b2673350fd8a76deee2c68abcbd0f1b48230c56b16fa39b142f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41273-S02",
+      "sourceValueSha256": "0abd412ac0a8c153c241bada46be7abc6206841973022cfaab9cf89218b83929",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41281-S06",
+      "sourceValueSha256": "78e32dad3f7f72bdfaec809eac1cb2d2bb0b054f2b2a85e5a414d04d5ddde771",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41285-S06",
+      "sourceValueSha256": "5a28c38c6b28436775703856b9a5eeb8d4a2975d385ec4a41081723a670016a1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41287-S06",
+      "sourceValueSha256": "b0a6068dcc0214d528e0114054b8247e4af02d0b861cf33e65f784cac19f9cf6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41461-S04",
+      "sourceValueSha256": "8c4f3bfc59f54c6f303d8a3e3cdd443602c9cd54e7dcfe86162b7b3035623fd0",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41463-S04",
+      "sourceValueSha256": "d584cd01a9120c0ac766ff4d9fdfbc723e4a7583151b5f14ca10c1d5d233057e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41465-S04",
+      "sourceValueSha256": "0233a09a1342b1f3f37bd943a454edf4f71682adf0e81d3a965cff64b10c828b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41591-S02",
+      "sourceValueSha256": "e9244dc78d6b997817a88c2f0e3fd32f9dcab22a1c0e7d9aa5e6208282c53fa6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41593-S02",
+      "sourceValueSha256": "a883a23fbf058283ec8397a6280d464c0d7effc551526a9e77a5c012b2687508",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41595-S02",
+      "sourceValueSha256": "29b7bea2590793801a157a3b23978f3f0612ed09fafc4e33362cc279890136f1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-41597-S02",
+      "sourceValueSha256": "f5a15a97756ef0c7dbe66999d74f960fe684d94b0bd3c231be8c09cc0d377440",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-43111-S04",
+      "sourceValueSha256": "5808b3733f1186a5c2415ab2c10409db0360128201fd3f42d3b1002e6290dee5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-43112-S04",
+      "sourceValueSha256": "caecb5bf45f27938ee2c640a78745842211b680b84f68f1e0a3db1fdc6855385",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-43113-S04",
+      "sourceValueSha256": "caf3e0ca2d8074299cc5fc23d004001971555eafabb8f3d9543ad274c2c7fb04",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-43114-S04",
+      "sourceValueSha256": "7628f46b73c9f425daba7edd13ea5718b45421f8b45201e2cda8731389557d8c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-44131-S02",
+      "sourceValueSha256": "96d1f59419434f1636d1a629eca86ba745607c1b4f58b119aa979b63d3b2b41a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-gu-44133-S02",
+      "sourceValueSha256": "f17ddec273a54b6487146ce0dc994288598f619d6ea1e3771173897d00d08673",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-holding-yangpyeong2-S01",
+      "sourceValueSha256": "3761490a44483fbed2b72088b660fa12c6f9a0b420c23c6e97dd7997154f9cc9",
+      "disposition": "retained-current",
+      "currentId": "title:barony-holding-yangpyeong2-S01"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-28710-S06",
+      "sourceValueSha256": "bcf2cc5c6a6506f07c02d792edb64083d244633bd12e8d41ae3ea410ec8f62c4",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41110-S02",
+      "sourceValueSha256": "34cf286840bd844a76962b620937476b9e57fc2e722e15917947ee6e8f29311a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41130-S04",
+      "sourceValueSha256": "58263cab8a5cdb4c74ed0c1b6d3f725244073ceec22710d6a3e8854d6826e1f1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41150-S06",
+      "sourceValueSha256": "91302111d71dfeb14b366a86edb8e8268f325cc5710320d6f3bfe0a3185a41fc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41170-S02",
+      "sourceValueSha256": "6d8ab24c504909a558ddd89a9d819cc3c0cec18222d2d197c6028b31d1cb1766",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41190-S02",
+      "sourceValueSha256": "c5961dcb9bb9e2bcd2d01c48a34afa15174e2272283f60d54fa4ee29954fa472",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41210-S02",
+      "sourceValueSha256": "5ffa881f931e2993de48adfed2d782312d82a7a235842ee4576e5784003aebb9",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41220-S02",
+      "sourceValueSha256": "bcef96d39c34e9587305675fb21acb3f868ea1ffdcf39d21c484c11a56eae7ca",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41250-S06",
+      "sourceValueSha256": "42ec40aaed43c36c3beaf3685f9645276c9e862670a8ab392d7a069d930669e6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41270-S02",
+      "sourceValueSha256": "b38a9e8889b384c36caef4e9700095a9d34347632a83f2875194aa0d9e22a455",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41280-S06",
+      "sourceValueSha256": "20b7e4d9b90a4c2d0010e1c048b15736111df3d35ee26541bb6e3f9dc6253929",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41290-S02",
+      "sourceValueSha256": "d5d0380090447ee31c86bbc13a79ed8397fd4a5baec8d9d8a46842b5046627ec",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41310-S06",
+      "sourceValueSha256": "4e6ddf855b9b6e7dea08c7607cfed20567ec0e029d9aedfb9845ce12bb68bab5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41360-S06",
+      "sourceValueSha256": "f88f287b1e1b1ea8e8435a7f7ac2265b276eacbae62818dbc69d21ca98a571ab",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41370-S02",
+      "sourceValueSha256": "282ccbabf23520fe19afc9bc3edcd3c0a69161776eb44b37bc7ec1f4a3c61d9e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41390-S02",
+      "sourceValueSha256": "3af1e7a9aada8cbadb51011743e635228d0d889ff25060ec848f8cfa9ebcdb3b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41410-S02",
+      "sourceValueSha256": "b63d2e494ce2e749a9350440bcd5ef4d218f02c04ea3c1ff7fe7fb4a93f7950a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41430-S02",
+      "sourceValueSha256": "8adbe51ad185664532c26bd961fa3cc9ea204d08fd074eb5a03aae3df76d05ed",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41450-S04",
+      "sourceValueSha256": "1324d046630b9028fd24345a3b3d5626195ca1a3e71c9c599e039796d16ec8a4",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41460-S04",
+      "sourceValueSha256": "fd96a9302941d2afdae1afae415ca18184916ad882f4f6b714bcfccbbfe3165f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41480-S06",
+      "sourceValueSha256": "90040de041e95fcbde14e14920cd0d21b5d6a8f4d2a829afa02f3941968491be",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41500-S04",
+      "sourceValueSha256": "2543db47e5c16244564f8ab0f29eb0b0fa022647ae2ec866be728d01d5aa48b2",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41550-S04",
+      "sourceValueSha256": "add880caeedc6a7a12af4987ca1777a82a9e305b4284259f2f4de865ba34e375",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41570-S06",
+      "sourceValueSha256": "d7d576d3bb8e1a60a8738e46315466c171cc647adbb6a548c21fd8e440583581",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41590-S02",
+      "sourceValueSha256": "ef9dce5ba05b6fcb36c20aae7efe64247745ec0152046fb03c1ce49c96a80829",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41610-S04",
+      "sourceValueSha256": "bffb84cb6094f450f8afc9b9d475fe5e1ee0dbbaf07d61e572ce8909c88d2834",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41630-S06",
+      "sourceValueSha256": "03065b140e69f7c19c0082941b0cd66813cc1659b1886bd1ad5e283f28b28898",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41650-S06",
+      "sourceValueSha256": "1436211ba5926d1ebf5004620c197fe2dd1ab2c5f62a7df0bec8c42dcc4435fe",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41670-S04",
+      "sourceValueSha256": "0f3569f1037bd83380f10c38e21581d38a02978216ea6480636b6e6a4716f74a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41800-S06",
+      "sourceValueSha256": "dff34072cdde39004035380b93dc5049ed0d0b8746297ae1d34295ac331c0d26",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41820-S06",
+      "sourceValueSha256": "8e3f556619a0acff8a57bda960d8ee1dbe06b93dd8f79be43879ca358ce8770c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-41830-S04",
+      "sourceValueSha256": "ae0c5c4c71683bd71faf19951048546ee519177734fee898b6174827f82f174e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43110-S04",
+      "sourceValueSha256": "561cc9f5874d22bc0770f5db192cfabd9ae962b45529554960a74861bb375979",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43130-S04",
+      "sourceValueSha256": "1b183281e0fce5b23363861306dd0075f72bb80bce0c36167dfe39cd9c7af65d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43150-S04",
+      "sourceValueSha256": "ea58e10e5051cbe707ca5b47b50bc2e80a8d936cdcf9ef53cb3da9593e26cace",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43720-S04",
+      "sourceValueSha256": "ad4d86064f204b73b9fcdb138d09f5f52d828e1eae935c355c95caf991c0ff9d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43730-S04",
+      "sourceValueSha256": "9a71c2dedff788b65747a781754f76ea2fc49c7782caabcefefd6890b40d1e18",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43740-S04",
+      "sourceValueSha256": "0dcd4565158e69a12897535899c21bf9f16ce1dc4c44b9211588b7734535de1f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43745-S04",
+      "sourceValueSha256": "c8cc83e35ce03e8f7364b12d00c592f00b189508b58cb61a325059cc74358214",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43750-S04",
+      "sourceValueSha256": "bf16d3f27d60be2a46d0773eba2fca76fa6b170155e7156c821ec4afb77af41f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43760-S04",
+      "sourceValueSha256": "70c1b42208fbcb901144ebe82f3df2bdb48cf74127a1fee6f9937c73421b6f20",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43770-S04",
+      "sourceValueSha256": "fe1ca996718dadaa6eece59d2781f884eceb364de99ae901a598f9db46744e54",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-43800-S04",
+      "sourceValueSha256": "cc2f2add54538c69431e821b7f39a69aa0f8f51d202064dd06c3d4e5387e072b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44150-S02",
+      "sourceValueSha256": "8307fddc7123d0c2c6d693d7a6ff1dca5bb9a94cfb958516b5fc158683d64825",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44180-S02",
+      "sourceValueSha256": "9a2631ef2005e2485639b23723b71c96ab152b50b00965e2209879fe75539f98",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44210-S02",
+      "sourceValueSha256": "c1f71dd5c6986f9695bb686aa82deea6b9456005983243b3ba2be2c4df8ab402",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44230-S02",
+      "sourceValueSha256": "ba5d23d1ca4992068bf6b27588c4d465e60062a34093ac28b1f0f25d35d98ee3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44250-S02",
+      "sourceValueSha256": "7031707b03ed698f3cc0ab2a90dc7c9740c0fe166cf350281155d7b4568197f6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44270-S02",
+      "sourceValueSha256": "b8a45d632ba3ec9ef3a21969723854391c1a230c2884982ef454195151adb612",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44710-S02",
+      "sourceValueSha256": "3ecd11e1a0ff295d2fdf4dffad9444b65a95b03da199a6d903c4910aca055c6e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44760-S02",
+      "sourceValueSha256": "3d1165da8d0dabcb586bd3ede92d79e239118ad7ff3fe55e8965e33f9bdac88d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44770-S02",
+      "sourceValueSha256": "62f46fec74e5d82c2ca3cb2536b4d62ce61ce1ae794f71fcdfafc6927270b70d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44790-S02",
+      "sourceValueSha256": "815cfabe98c353eed50fd08d19ffc99737afd8bbeb4da0d08f15e32b362f0a7c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44800-S02",
+      "sourceValueSha256": "817e974f52647ac3bf920294f71d2a34e916a3f3ba0fd71d7abd442ec191f3ed",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44810-S02",
+      "sourceValueSha256": "a2eff9a5a57e5bc3dbb784ed2f7c18e6d58ac361be4f61a0937935422b8f26ec",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-44825-S02",
+      "sourceValueSha256": "edbfd35a7c43474c3701a4a178d47a25a292c5a5a611c6119544cfa4bd5b5612",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51110-S06",
+      "sourceValueSha256": "aeb35f2a4dc993b27e5ec8adb089d75203d1878969f69be4990701ac4d033f77",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51130-S06",
+      "sourceValueSha256": "5fc4e872d39619b0f146f4fa2dd86ade422d898354ba8c11c2dd916e4b3595e2",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51150-S06",
+      "sourceValueSha256": "3b99994374954848001ecb4b8e257fba3b20bda83db1d375da8d70e0584b5135",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51170-S06",
+      "sourceValueSha256": "e0cf06421757ab34d1e24035f9851e1385acbc0d6d433c02bc3c502bffea3599",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51190-S06",
+      "sourceValueSha256": "76496e0423376fb66ada358a3f90f54ed55dfc214547f3743742ee73e679449c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51210-S06",
+      "sourceValueSha256": "bbc09b60d216b5a297a45162edf5226068346dda18476162ad0807895662a4ec",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51230-S06",
+      "sourceValueSha256": "8d4b4a4752984c4769a886e2d4ffe32e0b63f71763113f79d16d70f86fedefae",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51720-S06",
+      "sourceValueSha256": "fab83ee355b8184df637dfdf4c4493530a89195c9df4760750d434c0a3c07686",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51730-S06",
+      "sourceValueSha256": "31b332bc23e36d4560bb10a358e1f52e00cd12324f830ee8072eb9d9c5bb9af8",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51750-S06",
+      "sourceValueSha256": "5ca31d2876df9462e21443a11731bfd1a91f44c5c21a25f38a8e756a282c5664",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51760-S06",
+      "sourceValueSha256": "a5293cf375e68e93e0422cd404effbde13bc07b701181596f7a4ecb2ca158bb6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51770-S06",
+      "sourceValueSha256": "71de309ef8441c0c30eabbacda6ac4890ec74e6cb4664cd4e9e273006f966ed0",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51780-S06",
+      "sourceValueSha256": "769b11bfb84f70eae0679f56ac5a55ed2c5797da20ecf58809fca619e861afdf",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51790-S06",
+      "sourceValueSha256": "949a843641e94489660f672d23ec643380b507d5eef1544c609e8a94ab90f97f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51800-S06",
+      "sourceValueSha256": "3386ab0dd5535e8c7446a53e5e8d05f28144cb568a06bb977b8da20d1ea47a7b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51810-S06",
+      "sourceValueSha256": "453efdc8c41a70e1370a0932ab29273da235cabf843ec8134ccd1b7d3c0162fc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51820-S06",
+      "sourceValueSha256": "f61fdb6621ad0ead42e026c2313cf0b7d9ba9ac409540c7136e863b942e447d3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-51830-S06",
+      "sourceValueSha256": "bfef5c6803bd55892b1680e30496bf94fbfd5428cab1a8a1781331bc9f1dddfb",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11110-S06",
+      "sourceValueSha256": "cac6ad591365266ae9317b86b8dde3beeb2ddc1b9f37af7821ebdeb667ad3369",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11110-S06"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11140-S06",
+      "sourceValueSha256": "50fb77723bb76f8115e8ed317943244c356e22c9b1da2c8e101516e0eff3236f",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11140-S06"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11170-S07",
+      "sourceValueSha256": "03ee54b5917ffddd018123ea6df84b092db984d246a300afa6759f0c75d411f7",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11170-S07"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11200-S04",
+      "sourceValueSha256": "d79e2e2efb248cb255d809c07a1f69b78a97b37948c9b2a777230b6211746b07",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11200-S04"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11215-S14",
+      "sourceValueSha256": "c4e5d168b56de2b892a0276374d405aa3d6ed180b1451d6024c61fce045b9fcc",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11215-S14"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11230-S13",
+      "sourceValueSha256": "2273d333475f85bea24b1eb1e030fafd138b2e9de5732ba6140237da444f7acf",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11230-S13"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11260-S12",
+      "sourceValueSha256": "46792d06f3da2d6fcd1bfbab2d74c4ac77fc64aa57ecc2447ada9f8c2eef94fd",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11260-S12"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11290-S10",
+      "sourceValueSha256": "65a8ca845d188fcde13312f27277aaab612032bcb5c2c4d1f85e5f9ff98e7dcb",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11290-S10"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11305-S10",
+      "sourceValueSha256": "db337e651a2484d2ffd6ce347d9dc4fb91703c2f8a6d2c2c37a739b5a626345e",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11305-S10"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11320-S11",
+      "sourceValueSha256": "e0dfc7edfda76110b999e828017028ef3a1fd891502b4c71f8337530bc3690fa",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11320-S11"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11350-S11",
+      "sourceValueSha256": "d5fc61f366538dcfa2dcb6ceb4589fa06052d83aa088b1716bacf1e2fab8c63c",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11350-S11"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11380-S10",
+      "sourceValueSha256": "8c46e7e86b00b19fed56582b3ca484c1bf16a3e0611e730d01e575bcf02d48ac",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11380-S10"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11410-S06",
+      "sourceValueSha256": "32128f015bb72d7435d7f104b6c9ed4f7fa6db65096983a08a1daea2c5a94ee3",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11410-S06"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11410-S09",
+      "sourceValueSha256": "b6a031e3c96fecf963bbd2d6eda18cd99a18b7998a9919d547cf9f5116f7740c",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11410-S09"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11410-S10",
+      "sourceValueSha256": "0735c9cdeb82505d6292d385ed9a206dbb3f143fff9b6a9290885f03f8459ac4",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11410-S10"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11440-S09",
+      "sourceValueSha256": "7db6ed83237b34551071917dd7c663bf22db4b30283dc051ec149b21b3ed078e",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11440-S09"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11470-S01",
+      "sourceValueSha256": "b08409632d33c56127cdcd90041a7c072fc17126d1a7126f53a34e86383ec92f",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11470-S01"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11500-S03",
+      "sourceValueSha256": "e4231934326e452aca7d45a0e063443673c8e8f327d6c347cc41f51a4631e636",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11500-S03"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11530-S02",
+      "sourceValueSha256": "a91fc7b3d2125e4e588f305bfe3fe2e84f40a043321ac07294c04da31449638b",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11530-S02"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11545-S02",
+      "sourceValueSha256": "48e5e89d3b37450e55f57df50705bb79cbbfc3f2b6e5e0e7e8efaed5bbe19a6d",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11545-S02"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11560-S01",
+      "sourceValueSha256": "5ad1ed848227cc3a4cff5c3f38417690fe84096127747be30e116c6c635e23e1",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11560-S01"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11560-S09",
+      "sourceValueSha256": "62d6d0af9274c98f51c7c80f4a488b694a3b1fe1ccad9dc83d6a349e9b557791",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11560-S09"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11590-S02",
+      "sourceValueSha256": "a8ddd3dd7dedc6157a737099c0090baf7b30fe97a1b1eafc1628fb238e7010c6",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11590-S02"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11620-S02",
+      "sourceValueSha256": "299218bc24ba7c433d90c12ed94161454ff6daaa80b1f3ff7b4e964d64000d74",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11620-S02"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11650-S03",
+      "sourceValueSha256": "600d90e61029f65014cbc0250000cf5af6499954e95956860dd8547474f88d7f",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11650-S03"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11650-S11",
+      "sourceValueSha256": "f355a93afee01fb14aa159d37193656ea581a4a8c29ead44302d25f0836a8a67",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11650-S11"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11650-S16",
+      "sourceValueSha256": "e7d34aadaadb1b6c3db031906b24841f8235524c10bc2429d6dae5c01aa8af2e",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11650-S16"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11680-S04",
+      "sourceValueSha256": "34797b7969afab184af59793e18961cbb694baa025f869f50ee75c2726d6ac0a",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11680-S04"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11680-S16",
+      "sourceValueSha256": "634f79256e9b17dc0007d0e70b46e0adb6358aa8c2e82c2cc8b7ca5934d09d1c",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11680-S16"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11710-S15",
+      "sourceValueSha256": "cd020696106b6448f9aaf71e20e9d0c439aeb0362c595735a591fbbecaf3a4e9",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11710-S15"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-11740-S05",
+      "sourceValueSha256": "06cac7eb6a1dbd5e262a27f811ea40338e2f95034ea903674b8a34fe853a2bfd",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-gu-11740-S05"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28125-S06",
+      "sourceValueSha256": "d77a024e2b4ad7cafe603c01fa1a384f32d469e270d7fd902ce6ddf0ee4e04db",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28155-S06",
+      "sourceValueSha256": "337187746d40e61eb52dfe44b2bebeca73e1d8f2dfdaa769464adb85474dbfcc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28177-S06",
+      "sourceValueSha256": "ce50a53f9e0ed9dcf5f7a00cdcba55e26d06f0a80d397537cb508c86f9fdc443",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28185-S06",
+      "sourceValueSha256": "1bc2b7d863e7d7058a83f33502deff3f6b5e3a0769d3b4d53984d9d418615a50",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28200-S06",
+      "sourceValueSha256": "b00f4c8be23cb38e88e7738d411b891713828edcb6573f9cdb5eb1deb62d0d51",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28237-S06",
+      "sourceValueSha256": "70ac9d4da4deec74d70616beca5774c6251ea96c2e7be18f57b35e0440a642b5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28245-S06",
+      "sourceValueSha256": "e7712ac3ee8d745949573216a62ed7f69a663534552fda3a567efdbcd97aefb8",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28275-S06",
+      "sourceValueSha256": "969658c83eb4b26ba68f35b007059dcabd64aded145819ce3eb9bd20c1bd387a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-28290-S06",
+      "sourceValueSha256": "4a92599f392d8bf6f785b3921678c0522a2c40820c7ab1a4a770eb71cc1abd96",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-30110-polity-daejeon",
+      "sourceValueSha256": "a3b9a92dc5a6b76be56db781d708b2c04418aef69331372fafe2bf015b9f7c80",
+      "disposition": "approved-nonowning",
+      "currentId": "proposal:superior-jurisdiction:seoul:daejeon-dong",
+      "current": {
+        "id": "proposal:superior-jurisdiction:seoul:daejeon-dong",
+        "name": "강남구 상위 관할",
+        "rank": "duchy",
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "geographicTitleId": "geography:duchy:11680",
+        "geographicParentTitleId": "proposal:kingdom:seoul:06",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "personalLiegePersonId": null,
+        "kind": "superior-jurisdiction",
+        "directOwnership": false,
+        "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-30140-polity-daejeon",
+      "sourceValueSha256": "dd69b2bb4df574970c6cefc90832fce96594c2ad5140c9998e5ae35aee918f0e",
+      "disposition": "approved-nonowning",
+      "currentId": "proposal:superior-jurisdiction:seoul:daejeon-jung",
+      "current": {
+        "id": "proposal:superior-jurisdiction:seoul:daejeon-jung",
+        "name": "광진구 상위 관할",
+        "rank": "duchy",
+        "holderPersonId": "K035",
+        "stateId": "polity:daejeon",
+        "geographicTitleId": "geography:duchy:11215",
+        "geographicParentTitleId": "proposal:kingdom:seoul:06",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "personalLiegePersonId": "K1008",
+        "kind": "superior-jurisdiction",
+        "directOwnership": false,
+        "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-30170-polity-daejeon",
+      "sourceValueSha256": "83861db459b794280eed10f01b323aab982f97b40bf99ebc92be13d397a65453",
+      "disposition": "approved-nonowning",
+      "currentId": "proposal:superior-jurisdiction:seoul:daejeon-seo",
+      "current": {
+        "id": "proposal:superior-jurisdiction:seoul:daejeon-seo",
+        "name": "송파구 상위 관할",
+        "rank": "duchy",
+        "holderPersonId": "K039",
+        "stateId": "polity:daejeon",
+        "geographicTitleId": "geography:duchy:11710",
+        "geographicParentTitleId": "proposal:kingdom:seoul:06",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "personalLiegePersonId": "K1008",
+        "kind": "superior-jurisdiction",
+        "directOwnership": false,
+        "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-30200-polity-daejeon",
+      "sourceValueSha256": "61ed7c433c126b97578fe842fa9882a6f34d8b7d18a1f38dfa76efb2b9072610",
+      "disposition": "approved-nonowning",
+      "currentId": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
+      "current": {
+        "id": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
+        "name": "서초구 상위 관할",
+        "rank": "duchy",
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "geographicTitleId": "geography:duchy:11650",
+        "geographicParentTitleId": "proposal:kingdom:seoul:06",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "personalLiegePersonId": null,
+        "kind": "superior-jurisdiction",
+        "directOwnership": false,
+        "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-gu-30230-polity-daejeon",
+      "sourceValueSha256": "3c3f07c2c5bda6f9cd65b1cfc24a792817b1c52ba7fef627d28a5ce5b1213908",
+      "disposition": "approved-nonowning",
+      "currentId": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
+      "current": {
+        "id": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
+        "name": "강동구 상위 관할",
+        "rank": "duchy",
+        "holderPersonId": "K038",
+        "stateId": "polity:daejeon",
+        "geographicTitleId": "geography:duchy:11740",
+        "geographicParentTitleId": "proposal:kingdom:seoul:06",
+        "politicalParentTitleId": "title:kingdom-daejeon",
+        "personalLiegePersonId": "K1008",
+        "kind": "superior-jurisdiction",
+        "directOwnership": false,
+        "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-s08",
+      "sourceValueSha256": "40b12f4ae69c1cd35d7cbda01498c75593c9d1cd51fa19dcd27402fd772f1290",
+      "disposition": "retained-current",
+      "currentId": "title:duchy-s08"
+    },
+    {
+      "set": "titles",
+      "oldId": "title:kingdom-daejeon",
+      "sourceValueSha256": "fb3bd1349742acbe2531ebc7f863f673061920e916c5130296f4658e822b338e",
+      "disposition": "approved-nonowning",
+      "currentId": "title:kingdom-daejeon",
+      "current": {
+        "id": "title:kingdom-daejeon",
+        "name": "대전선",
+        "rank": "kingdom",
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "basis": "owner:call_G2tKEPA6XnqJui2NjwD0KkVD",
+        "kind": "nonterritorial-political-title",
+        "directOwnership": false,
+        "politicalParentTitleId": null,
+        "personalLiegePersonId": null
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:kingdom-s02",
+      "sourceValueSha256": "5a2ce9823067419e5e1ebbc747948a15b1ff64fa8fb68abe0f99668560c08a2d",
+      "disposition": "seoul-jurisdiction-only",
+      "currentId": "title:kingdom-s02",
+      "current": {
+        "id": "title:kingdom-s02",
+        "name": "규격맹 왕국",
+        "rank": "kingdom",
+        "holderPersonId": "K029",
+        "stateId": "S02",
+        "parentTitleId": null,
+        "jurisdictionRefs": [
+          "region:1141058500",
+          "region:1141061500",
+          "region:1141062000",
+          "region:1141064000",
+          "region:1141069000",
+          "region:1141070000",
+          "region:1141071000",
+          "region:1141072000",
+          "region:1144055500",
+          "region:1144056500",
+          "region:1144058500",
+          "region:1144059000",
+          "region:1144060000",
+          "region:1144061000",
+          "region:1144063000",
+          "region:1144065500",
+          "region:1144066000",
+          "region:1144068000",
+          "region:1144069000",
+          "region:1144070000",
+          "region:1144071000",
+          "region:1144072000",
+          "region:1144073000",
+          "region:1144074000",
+          "region:1147051000",
+          "region:1147052000",
+          "region:1147053000",
+          "region:1147054000",
+          "region:1147055000",
+          "region:1147056000",
+          "region:1147057000",
+          "region:1147058000",
+          "region:1147059000",
+          "region:1147060000",
+          "region:1147061000",
+          "region:1147061100",
+          "region:1147062000",
+          "region:1147063000",
+          "region:1147064000",
+          "region:1147065000",
+          "region:1147067000",
+          "region:1147068000",
+          "region:1150051000",
+          "region:1150052000",
+          "region:1150053000",
+          "region:1150053500",
+          "region:1150054000",
+          "region:1150055000",
+          "region:1150056000",
+          "region:1150057000",
+          "region:1150059000",
+          "region:1150059100",
+          "region:1150059300",
+          "region:1150060300",
+          "region:1150060400",
+          "region:1150060500",
+          "region:1150061100",
+          "region:1150061500",
+          "region:1150062000",
+          "region:1150063000",
+          "region:1150064000",
+          "region:1150064100",
+          "region:1153051000",
+          "region:1153052000",
+          "region:1153053000",
+          "region:1153054000",
+          "region:1153055000",
+          "region:1153056000",
+          "region:1153059500",
+          "region:1153072000",
+          "region:1153073000",
+          "region:1153074000",
+          "region:1153075000",
+          "region:1153076000",
+          "region:1153077000",
+          "region:1153078000",
+          "region:1153079000",
+          "region:1153080000",
+          "region:1154551000",
+          "region:1154561000",
+          "region:1154562000",
+          "region:1154563000",
+          "region:1154564000",
+          "region:1154567000",
+          "region:1154568000",
+          "region:1154569000",
+          "region:1154570000",
+          "region:1154571000",
+          "region:1156051500",
+          "region:1156053500",
+          "region:1156054000",
+          "region:1156055000",
+          "region:1156056000",
+          "region:1156058500",
+          "region:1156060500",
+          "region:1156061000",
+          "region:1156062000",
+          "region:1156063000",
+          "region:1156065000",
+          "region:1156066000",
+          "region:1156067000",
+          "region:1156068000",
+          "region:1156069000",
+          "region:1156070000",
+          "region:1156071000",
+          "region:1156072000",
+          "region:1159051000",
+          "region:1159052000",
+          "region:1159053000",
+          "region:1159054000",
+          "region:1159055000",
+          "region:1159056000",
+          "region:1159060500",
+          "region:1159062000",
+          "region:1159063000",
+          "region:1159064000",
+          "region:1159065000",
+          "region:1159065100",
+          "region:1159066000",
+          "region:1159067000",
+          "region:1159068000",
+          "region:1162052500",
+          "region:1162054500",
+          "region:1162056500",
+          "region:1162057500",
+          "region:1162058500",
+          "region:1162059500",
+          "region:1162060500",
+          "region:1162061500",
+          "region:1162062500",
+          "region:1162063000",
+          "region:1162064500",
+          "region:1162065500",
+          "region:1162066500",
+          "region:1162068500",
+          "region:1162069500",
+          "region:1162071500",
+          "region:1162072500",
+          "region:1162073500",
+          "region:1162074500",
+          "region:1162076500",
+          "region:1162077500",
+          "region:1165052000",
+          "region:1165065100"
+        ],
+        "basis": "개막 왕국 루트 결정(2026-10-11 사용자 승인)"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:kingdom-s04",
+      "sourceValueSha256": "26ef1b8f716f022b677701f96bef55f9f767f3cb2d8ace8a7ac8f1537c485620",
+      "disposition": "seoul-jurisdiction-only",
+      "currentId": "title:kingdom-s04",
+      "current": {
+        "id": "title:kingdom-s04",
+        "name": "종교 연합 왕국",
+        "rank": "kingdom",
+        "holderPersonId": "K423",
+        "stateId": "S04",
+        "parentTitleId": null,
+        "jurisdictionRefs": [
+          "region:1120052000",
+          "region:1120053500",
+          "region:1120054000",
+          "region:1120055000",
+          "region:1120056000",
+          "region:1120057000",
+          "region:1120058000",
+          "region:1120059000",
+          "region:1120061500",
+          "region:1120062000",
+          "region:1120064500",
+          "region:1120065000",
+          "region:1120066000",
+          "region:1120067000",
+          "region:1120069000",
+          "region:1120072000",
+          "region:1120079000",
+          "region:1165054000",
+          "region:1165055000",
+          "region:1165056000",
+          "region:1165057000",
+          "region:1165058000",
+          "region:1165058100",
+          "region:1165059000",
+          "region:1165060000",
+          "region:1165061000",
+          "region:1165062000",
+          "region:1165062100",
+          "region:1165065200",
+          "region:1165066000",
+          "region:1168051000",
+          "region:1168052100",
+          "region:1168053100",
+          "region:1168054500",
+          "region:1168056500",
+          "region:1168058000",
+          "region:1168059000",
+          "region:1168060000",
+          "region:1168061000",
+          "region:1168063000",
+          "region:1168064000",
+          "region:1168065000",
+          "region:1168065500",
+          "region:1168065600",
+          "region:1168066000",
+          "region:1168067000",
+          "region:1168067500",
+          "region:1168069000",
+          "region:1168070000",
+          "region:1168072000",
+          "region:1168073000",
+          "region:1168075000",
+          "region:1171051000",
+          "region:1171052000",
+          "region:1171053100",
+          "region:1171053200",
+          "region:1171054000",
+          "region:1171055000",
+          "region:1171056100",
+          "region:1171056200",
+          "region:1171056600",
+          "region:1171057000",
+          "region:1171058000",
+          "region:1171059000",
+          "region:1171060000",
+          "region:1171061000",
+          "region:1171062000",
+          "region:1171063100",
+          "region:1171063200",
+          "region:1171064100",
+          "region:1171064200",
+          "region:1171064600",
+          "region:1171064700",
+          "region:1171065000",
+          "region:1171067000",
+          "region:1171068000",
+          "region:1171069000",
+          "region:1171071000",
+          "region:1171072000"
+        ],
+        "basis": "owner:call_3UEeOQxXrDzuYt8E1BFfhRqe:religious_title_root 승인(정치 종류는 연합 유지)"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:kingdom-s06",
+      "sourceValueSha256": "07ceeebd31929295f7115095e78d032f4de70aa6c525c0a12203026bc8ae9141",
+      "disposition": "seoul-jurisdiction-only",
+      "currentId": "title:kingdom-s06",
+      "current": {
+        "id": "title:kingdom-s06",
+        "name": "대한민국정부 왕국",
+        "rank": "kingdom",
+        "holderPersonId": "K144",
+        "stateId": "S06",
+        "parentTitleId": null,
+        "jurisdictionRefs": [
+          "region:1111051500",
+          "region:1111053000",
+          "region:1111054000",
+          "region:1111055000",
+          "region:1111056000",
+          "region:1111057000",
+          "region:1111058000",
+          "region:1111060000",
+          "region:1111061500",
+          "region:1111063000",
+          "region:1111064000",
+          "region:1111065000",
+          "region:1111067000",
+          "region:1111068000",
+          "region:1111069000",
+          "region:1111070000",
+          "region:1111071000",
+          "region:1114052000",
+          "region:1114054000",
+          "region:1114055000",
+          "region:1114057000",
+          "region:1114058000",
+          "region:1114059000",
+          "region:1114060500",
+          "region:1114061500",
+          "region:1114062500",
+          "region:1114063500",
+          "region:1114064500",
+          "region:1114065000",
+          "region:1114066500",
+          "region:1114067000",
+          "region:1114068000",
+          "region:1117053000",
+          "region:1117055500",
+          "region:1117056000",
+          "region:1117057000",
+          "region:1117058000",
+          "region:1117059000",
+          "region:1117062500",
+          "region:1117063000",
+          "region:1117064000",
+          "region:1117065000",
+          "region:1117068500",
+          "region:1117069000",
+          "region:1117070000",
+          "region:1121571000",
+          "region:1121573000",
+          "region:1121574000",
+          "region:1121575000",
+          "region:1121576000",
+          "region:1121577000",
+          "region:1121578000",
+          "region:1121581000",
+          "region:1121582000",
+          "region:1121583000",
+          "region:1121584000",
+          "region:1121584700",
+          "region:1121585000",
+          "region:1121586000",
+          "region:1121587000",
+          "region:1123051500",
+          "region:1123053300",
+          "region:1123054500",
+          "region:1123056000",
+          "region:1123057000",
+          "region:1123060000",
+          "region:1123061000",
+          "region:1123065000",
+          "region:1123066000",
+          "region:1123070500",
+          "region:1123071000",
+          "region:1123072000",
+          "region:1123073000",
+          "region:1123074000",
+          "region:1123075000",
+          "region:1126052000",
+          "region:1126054000",
+          "region:1126055000",
+          "region:1126056500",
+          "region:1126057000",
+          "region:1126057500",
+          "region:1126058000",
+          "region:1126059000",
+          "region:1126060000",
+          "region:1126061000",
+          "region:1126062000",
+          "region:1126063000",
+          "region:1126065500",
+          "region:1126066000",
+          "region:1126068000",
+          "region:1126069000",
+          "region:1129052500",
+          "region:1129055500",
+          "region:1129057500",
+          "region:1129058000",
+          "region:1129059000",
+          "region:1129060000",
+          "region:1129061000",
+          "region:1129062000",
+          "region:1129063000",
+          "region:1129064000",
+          "region:1129065000",
+          "region:1129066000",
+          "region:1129068500",
+          "region:1129070500",
+          "region:1129071500",
+          "region:1129072500",
+          "region:1129076000",
+          "region:1129077000",
+          "region:1129078000",
+          "region:1129081000",
+          "region:1130553400",
+          "region:1130553500",
+          "region:1130554500",
+          "region:1130555500",
+          "region:1130557500",
+          "region:1130559500",
+          "region:1130560300",
+          "region:1130560800",
+          "region:1130561500",
+          "region:1130562500",
+          "region:1130563500",
+          "region:1130564500",
+          "region:1130566000",
+          "region:1132051100",
+          "region:1132051200",
+          "region:1132051300",
+          "region:1132051400",
+          "region:1132051500",
+          "region:1132052100",
+          "region:1132052200",
+          "region:1132066000",
+          "region:1132067000",
+          "region:1132068000",
+          "region:1132068100",
+          "region:1132069000",
+          "region:1132070000",
+          "region:1132071000",
+          "region:1135056000",
+          "region:1135057000",
+          "region:1135058000",
+          "region:1135059500",
+          "region:1135060000",
+          "region:1135061100",
+          "region:1135061200",
+          "region:1135061900",
+          "region:1135062100",
+          "region:1135062400",
+          "region:1135062500",
+          "region:1135063000",
+          "region:1135064000",
+          "region:1135066500",
+          "region:1135067000",
+          "region:1135069500",
+          "region:1135070000",
+          "region:1135071000",
+          "region:1135072000",
+          "region:1138051000",
+          "region:1138052000",
+          "region:1138053000",
+          "region:1138055100",
+          "region:1138055200",
+          "region:1138056000",
+          "region:1138057000",
+          "region:1138058000",
+          "region:1138059000",
+          "region:1138060000",
+          "region:1138062500",
+          "region:1138063100",
+          "region:1138063200",
+          "region:1138064000",
+          "region:1138065000",
+          "region:1138069000",
+          "region:1141052000",
+          "region:1141055500",
+          "region:1141056500",
+          "region:1141065500",
+          "region:1141066000",
+          "region:1141068500",
+          "region:1165051000",
+          "region:1165053000",
+          "region:1165053100",
+          "region:1174051500",
+          "region:1174052500",
+          "region:1174052600",
+          "region:1174053000",
+          "region:1174054000",
+          "region:1174055000",
+          "region:1174056000",
+          "region:1174057000",
+          "region:1174058000",
+          "region:1174059000",
+          "region:1174060000",
+          "region:1174061000",
+          "region:1174062000",
+          "region:1174064000",
+          "region:1174065000",
+          "region:1174066000",
+          "region:1174068500",
+          "region:1174069000",
+          "region:1174070000"
+        ],
+        "basis": "개막 왕국 루트 결정(2026-10-11 사용자 승인)"
+      }
+    },
+    {
+      "set": "titles",
+      "oldId": "title:duchy-chungcheong-k998",
+      "sourceValueSha256": "f525adef17c9f7ee185842450e134ae9508710f3ccd9ca55587869c9c6f9f470",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611025000",
+      "sourceValueSha256": "103a5b11bdd935461305e454dd6b22017a139c93d6faa1318ffb296456387ccc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611031000",
+      "sourceValueSha256": "9e0f5082d5d96d5072a237531b3b08fd4a9a24c9db134ad7db5df4106e7de26f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611032000",
+      "sourceValueSha256": "e6eaf6289756ecf3160489b0c2089e2def9d4f261bb3bce3ca2c7d18f54925eb",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611033000",
+      "sourceValueSha256": "f3918c14dc82461f029516a86fc29a1ffc597b3f2520bdf723735a0a83e6982f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611034000",
+      "sourceValueSha256": "31bba28e78aa1cab5603078632b8dde97630d489b66f4c39f04ab2b6feae1c9c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611035000",
+      "sourceValueSha256": "8aa48be610c36141e7becf816c275104ae1887a2e85e3a85ec889f6d58914e7f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611036000",
+      "sourceValueSha256": "36915399b2a572f6eafce7bd5e007c85b5ab34fc8d74671d0575248a7e24c153",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611037000",
+      "sourceValueSha256": "d4aee867b624e90aa9dc600217d7e3fe9445fa752e08a8ada3800cdf052555bc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611038000",
+      "sourceValueSha256": "9c1b20d817f110ecedc249bcfff415847d8c2354a3c5abf84a811a7ae6a53c88",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611039000",
+      "sourceValueSha256": "021254db1bb2ee61142ea7ce850a1abea8a3b19babc4860a8d61332841c0d111",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611051000",
+      "sourceValueSha256": "d86aea85aae1d0e5e697c12119b15f97bec020ec8eef1d9e4d5a2c985b3e4093",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611051500",
+      "sourceValueSha256": "20dc3db9bd203bf97c794be3312b6a5ce9e11237fc8c873656a616969eeabbba",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611051800",
+      "sourceValueSha256": "671401e89749bca41cfabe0d057430acc81ba374b8100350751468b4eabdac22",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611052000",
+      "sourceValueSha256": "a8689ecf4f45336a030e5dea5505c2aed07b84a641dd2571f02d31c5c9ad132a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611052300",
+      "sourceValueSha256": "693d5778ac7187138b7f77b71514d243bf070d5ca3b1c0982f6fe051dea92577",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611052500",
+      "sourceValueSha256": "acf592936b8682ac1374666da1b7dde0aed8e28f991d87ba8317df4624a7495b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611053000",
+      "sourceValueSha256": "21b9a0800b36813be02d7ad1ebfaa62884179b4a54d188f8bb7d73a56ff27acf",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611054000",
+      "sourceValueSha256": "0ac8ea75daca2b2cdfe1474e0338e1ce5568fd616bf7f4cfebefc99f6aa92022",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611055000",
+      "sourceValueSha256": "f9241623ea06c756f3645a94bce3d848b7c804260814a01d2f597d6970de3678",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611055500",
+      "sourceValueSha256": "73d3e5521e8fe0b47e5da89f54c5b27f6762dd8142a38bed069f4c4c3f161742",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611055600",
+      "sourceValueSha256": "9a5989e8978068183b659613ce89e9482de4d56736094e4d93d84152b2c94241",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611056000",
+      "sourceValueSha256": "f7582dc9d5db80bddc3a02df8bbe1954408ca39fac5096d335e28a6a7b405b69",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611057000",
+      "sourceValueSha256": "9a3857b8137a3377166d17005c429bea38514b08c7183a9948f3c1f4c8a83929",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-3611058000",
+      "sourceValueSha256": "bcc1ac4bb4ac67e0c5a48570d6812e1eb6cc28ec7e99e3888b37547cef1f562d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420025000",
+      "sourceValueSha256": "a267f09b09b5a42d4053d5a4adef4cbca2f4fcef3e218de2acc22335f7fe533b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420025300",
+      "sourceValueSha256": "da9eee2116a20fb8f3b2d554ef17383d41712cac8a4791b35d02ff7fda4b6523",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420031000",
+      "sourceValueSha256": "2fbc62358b33e54feb0a3bdd819a5dcd123b3cce003e36c12ea73c11a04a5e59",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420033000",
+      "sourceValueSha256": "c835d54c91f5aa14d81bc4331c94acee017b7352afc6386910c33e87cd4f4950",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420035000",
+      "sourceValueSha256": "6e9ac75142687374c26c9f17a4922fa56e214f027eb50422f05a00b1c699d919",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420036000",
+      "sourceValueSha256": "97de4078e5af3108cfb274055bb470c2a0120525c736959e32582125d6952a51",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420037000",
+      "sourceValueSha256": "d51b15c6fd94ea76cb945007f446f6d8caefab611c2b4d80eba60c16bb260eb3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420038000",
+      "sourceValueSha256": "e2fc42ae4ee8b5005330705e01e0a012fe8b56272f7eae3647168774ae363eed",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420039000",
+      "sourceValueSha256": "5b898904c4185cbe7806231632c5cc3d493cbf135d5835ae16a7c3cbd1332076",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420040000",
+      "sourceValueSha256": "abe5df8c4f97f19f5b43e14b2dab69489f476228fa577bd469cb42ce64b1ada8",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420041000",
+      "sourceValueSha256": "4a638544677798965fe1af5c544254edb79d7131fa83c41e46f0346f1d535c92",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420057000",
+      "sourceValueSha256": "cc65800bf16e7aabdaa4795b055cb3ef183d4597b3ec796e12542b30ded8a0af",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420058000",
+      "sourceValueSha256": "46a810a95ffb111f53de290152ef587b178ef15f1f06031d74d9144ef3fd222b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420059000",
+      "sourceValueSha256": "95dffb45b2b1218c7f711d54f7ba94ba34da65f77e2ef5d2f0690e6914addab1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420060000",
+      "sourceValueSha256": "b049c106060bcf67b3d88e79eec6750363311be71537a8812227475f1d601a6c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420061000",
+      "sourceValueSha256": "6d836412499b61801b497aa751290933666c7df6719c89233c5f659c5405630f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "titles",
+      "oldId": "title:barony-chungcheong-4420062000",
+      "sourceValueSha256": "2dfd8f3fc4e3e01e3ed8e9a893e0d01f1870b2400095b850d3a032d7f8ce2b7f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41111-S02",
+      "sourceValueSha256": "4419325e4267c9db4eabdd7618a6276db4f15c8ab992c05eb425d5ad1f93fc89",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41113-S02",
+      "sourceValueSha256": "d3a0369c05ee5ee379129a97276ea445804d9bb02a1b55f6444e9e2f9c5b4907",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41115-S02",
+      "sourceValueSha256": "06c5d7e1a33f0e7b957a5573eefef7ad1926ec56b10385f3632050eb162cc9de",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41117-S02",
+      "sourceValueSha256": "67fa08796d78417dd21fbed7ece46f98d72290bcfe799a0163a7d17e916fdebd",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41131-S04",
+      "sourceValueSha256": "41d9b680c863679b2bd9c917225e9e28b9b1738d437bc1840a957dc1863b32fb",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41133-S04",
+      "sourceValueSha256": "8c712f4b1726fd1aed3db39d09496c6a96d15613486cd0998b438d5bc56957fa",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41135-S04",
+      "sourceValueSha256": "98bafb9f823b5cabd8274bdca0828f17eefa931221d2901822c1479ef6024075",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41171-S02",
+      "sourceValueSha256": "1505d09bd335daae1b5feb6e8aca3425b76b62f88111fe076bdb075468ff295f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41173-S02",
+      "sourceValueSha256": "c3d8c52b26f516346c6b1b1f93df983b7a049dc9818b53e86fd0c81adc5d37a3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41192-S02",
+      "sourceValueSha256": "ff9f1e0985891a051bc6ebe548b3bc6f9629113ce04dd9ed34c1814251925fa2",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41194-S02",
+      "sourceValueSha256": "f8303f49c652cf1fd1f4bd4bf1d20741c8a3737476f2e5cc05fd8b1247874db9",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41196-S02",
+      "sourceValueSha256": "f57ce8f3703eaf0e8a2008050f9494586dd3330c4e588559261a667b131b5381",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41271-S02",
+      "sourceValueSha256": "a9a433f7a03a1513d4b03c6f44276ba7ad079b4a2b3c3501d66ea07449a9d960",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41273-S02",
+      "sourceValueSha256": "6ff101a1625429404bdb1b622044a2a8a2cf46701ad7ea06fd851776ec5695c8",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41281-S06",
+      "sourceValueSha256": "3bbd269f1d8d13b9ef2c6054da54a3da5579849dc70661d1d52c5b1e9e82471e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41285-S06",
+      "sourceValueSha256": "7529de935c50b51086b3fca14a9f72c2d0398fb7d190a5405c4efbe51130d4e2",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41287-S06",
+      "sourceValueSha256": "23cd7347a714f62025c63c5f056251c3f30d2a6b6f45183144e24bded7a10077",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41461-S04",
+      "sourceValueSha256": "bd47468a4e430e69a752bc62f7b3c0228beb74015dbfe490e3021345cdeb737d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41463-S04",
+      "sourceValueSha256": "48d5daf531704afcc93f74dcc2f15dd22c56c96a76229dd88516972970c05d92",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41465-S04",
+      "sourceValueSha256": "7fc63469e5cb8253f1d603f24ac5598225366d91033151c712bb958db85f926b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41591-S02",
+      "sourceValueSha256": "8218ce08dc3f61a93a5deaf85986ed18c464d9ebe5813683dc2b3a02b83f28c8",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41593-S02",
+      "sourceValueSha256": "e7e286e766ba285cea234e37b8005b4233b8465ce4af166e802ae43cf798e421",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41595-S02",
+      "sourceValueSha256": "20f31eafd3f896a6f2cef41d02bcdc0cd3e2d5c13125b500763d8d97c31883a1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-41597-S02",
+      "sourceValueSha256": "508bc382676d12b90971aa16034aed59b5d912b4d086c175d339729b356272dc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-43111-S04",
+      "sourceValueSha256": "aaa937cb1f52b6171a597de68ac3c4dcfe6ab3cfd35600ca8cf113bcb6c0182a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-43112-S04",
+      "sourceValueSha256": "83a48569d237b9b912bad9dfb37275f297710b18f011cf9301bc189a703be76c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-43113-S04",
+      "sourceValueSha256": "9d08d59cbe4fab252e39f54a2bf5516d35a251ae3b4aa13be7b63e52fba38a24",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-43114-S04",
+      "sourceValueSha256": "b0b73df648c9d62569d7f3c78e0cdd34f4a5e6d81c673b0c6e43f82bcb01a686",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-44131-S02",
+      "sourceValueSha256": "273eef10e9506254d674a4fcbd82952bea36c1fa0d95b7bec7a99d9ebe1e8519",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-barony-gu-44133-S02",
+      "sourceValueSha256": "e877970d9c3c76aa60847694befa7bb1b1c27085a0ca7048b358c5bf03a46ce1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-28710-S06",
+      "sourceValueSha256": "dce9a7c0232a3e155a973dd8e3ed94707c65d436eb8efe8cc317879574155fbd",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41150-S06",
+      "sourceValueSha256": "0d4b7d63558ce4cf115906a09ac4ed9c253e14601c9b67ba7516c705a3978e55",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41210-S02",
+      "sourceValueSha256": "4448e9d3c42d3fac26d8f1645120b74378dac7e99c49afaa4dfc47b2eb45daaf",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41220-S02",
+      "sourceValueSha256": "5f647601461e87ef5ba5ba8ad3dce469036de8d6d355db735966eeaced14be98",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41250-S06",
+      "sourceValueSha256": "1fb120379505dd68d29affab4e300e47465f653e9ed47c777d626c7b9b3acf1c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41290-S02",
+      "sourceValueSha256": "43b991397423920cb300a7d58fab9e57dc1b306ce864b163693837d492c0a636",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41310-S06",
+      "sourceValueSha256": "eb05c6affe283a87635c6b905f244ea95a429ef07826bdcf4002295ed459d71d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41360-S06",
+      "sourceValueSha256": "8588b6e7c43149f04b980b55781e57e4ec5c954006ce8b75e843ed493ebb60db",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41370-S02",
+      "sourceValueSha256": "a229f7b891767d136cb1fc44f3ae1141149cc99eaf080b2ff9df43ebb1233207",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41390-S02",
+      "sourceValueSha256": "bed5b8adf722c0880e22535bc9bbd1d9e189fba5a579bf5ac364f8f2141c80a1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41410-S02",
+      "sourceValueSha256": "47f76b2d517d9b7e80e4adafe47dc39a86cc895f2352582eedb16ffb0bac2f25",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41430-S02",
+      "sourceValueSha256": "440f3792ed9e3d4cac5ac0f79a57270f882df4ab688a3643f05a878a5c0e6168",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41450-S04",
+      "sourceValueSha256": "793ce3cac2685da109cfbd71038f4b947d5ae9d536efc67ea6a7b070ffa5222a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41480-S06",
+      "sourceValueSha256": "c338f048ecb820f59919ee91dae9bb2d21163ddc59aa5858135406b12737dd95",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41500-S04",
+      "sourceValueSha256": "a7cf4905e5c6aa67e93e37dcc8ef73f88805badbcf28f2b90f160f67ef9b75d7",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41550-S04",
+      "sourceValueSha256": "0ddfda963ff4cceebb1530b4db81c203e4c09a3d21d038b6485b47d143745334",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41570-S06",
+      "sourceValueSha256": "6a8f7ffb19d293483cb614de7ee5d727ef53b29bcc391fb27ae790a8e0093c1b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41610-S04",
+      "sourceValueSha256": "20068277297e29f4d0a8158290891194c8ad4941092167527d80a0def2dbe69e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41630-S06",
+      "sourceValueSha256": "263fbe1902892320372f0daf84a1291f40404ef75995d032c25070ec9fb9ae6e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41650-S06",
+      "sourceValueSha256": "407a49a07ace0966132761da3a33cb55f8037143241b47a4e36c5923470fd328",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41670-S04",
+      "sourceValueSha256": "cefedc2e2b66132632376c22c1b2bdfa10442946fdcd79c229111898e722ea74",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41800-S06",
+      "sourceValueSha256": "f420ac89fa1831c5124c43acbc0f73b362f0fb48eef94dc7e6bf719cd9303442",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41820-S06",
+      "sourceValueSha256": "adf6276ce0372b9f94b8226213eb04830533e145e7cb7f36db8666fd3230e276",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-41830-S04",
+      "sourceValueSha256": "891275d3b1fa1ac99eeafadac42fb22b5ad238880846cdb43472629a5083bd04",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43130-S04",
+      "sourceValueSha256": "71ec7496586f3d034b62ca98e84709fcb2a92b3af2be72b752dbc2ce33502319",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43150-S04",
+      "sourceValueSha256": "10c44164a4772265a5de009c1e39cbaf7213b5afdd4f3d6e33f45fbccd633956",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43720-S04",
+      "sourceValueSha256": "84a61db61b9f625dad349eb406d2b3e5623cd99fc1486bf60297b91682b6264d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43730-S04",
+      "sourceValueSha256": "bf1723730197418612d9feb8d49a620c9acbd3ca73454f626f7413432c9f6c46",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43740-S04",
+      "sourceValueSha256": "df3f8eeecbe87bed492c259fb56e69d67f880ecf6aaf96b5d5118fc83b4218a3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43745-S04",
+      "sourceValueSha256": "a562cd987bd3a28afbe41a093894f15a4dc9f803577ded57fea6b32b2b97a4de",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43750-S04",
+      "sourceValueSha256": "3a2edce394b18602b41fa48776af60577207b2690a9da95e2600f599f3c130ec",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43760-S04",
+      "sourceValueSha256": "1c45a39a77f86c5a851133e432d7df57c2f7807c875a71690ea4727807fb65c5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43770-S04",
+      "sourceValueSha256": "98c3202e565a8b14d36329318b526dc4817ca18b9462cb9d5a171271328d7245",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-43800-S04",
+      "sourceValueSha256": "49fb392caf9f2c7683d3fad4cb4706a42b7e70c8cfc542d26baf5ae1a73b915f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44150-S02",
+      "sourceValueSha256": "ec965d6fce5941f82ca4906f2a7c96a852b5ea4e7a8eadbf3e36a2cee2c66be0",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44180-S02",
+      "sourceValueSha256": "70f16b0587e6e486cafb436e211bd624019c60c52521e4cc74bb8714de7264e4",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44210-S02",
+      "sourceValueSha256": "1add90301dbe3c6ce94482a6d8653b59e9dff1069444a8c4cbe9755db645f0ee",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44230-S02",
+      "sourceValueSha256": "6f875276d5154257f5ded79da251fc54b9ab04dc53f39127cc2468d93c08c58b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44250-S02",
+      "sourceValueSha256": "1ffc4a01b426735e3360f390e621528fd4b17f4e6960b24b2ab209e2ecf57343",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44270-S02",
+      "sourceValueSha256": "204d40a96d2b312ec862e870f550b2dee8d38325e4f1ab20a0e8ad81b3ec2630",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44710-S02",
+      "sourceValueSha256": "cd5c47e15f71717a48d4d0ac5e1b476d2db47e8cfadb99f60410479df5cee8f5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44760-S02",
+      "sourceValueSha256": "bcdde2407cc8e3be45e4c1fd448874681ab5329c18ee9f6a692a8076b0cafc06",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44770-S02",
+      "sourceValueSha256": "8688056f688b06f046bb01dfb0ff26ab016b82f8d02f0cd6783591e1e7b69321",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44790-S02",
+      "sourceValueSha256": "4f3534e341d5dfe1397b258eb1f9f0de5840792a068cacf6b94a1be8ce5b2a3e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44800-S02",
+      "sourceValueSha256": "96f33a3d27ac7256fc83c1fc0002bc7f0755bcf62cc4856043faf97c0a788f9a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44810-S02",
+      "sourceValueSha256": "2094fa174e43bb427f018eed1347438160f1227f9e0acbd2423368861c0b8491",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-44825-S02",
+      "sourceValueSha256": "aa787bc0d2306748377411a3db45b4d08735d5b16cbc7902f845d145dea9187b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51110-S06",
+      "sourceValueSha256": "7fb1cc89a2f3b8695acadad8da17bd2c13abe5d413321781e327dfbc3d428ea1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51130-S06",
+      "sourceValueSha256": "b42c1bbd98caf6f95babc295bbbaddce6cd997e5c380719bc49c9cb4e7c8ce7a",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51150-S06",
+      "sourceValueSha256": "677dffeafd1e6e63187453010452f6fa0e22a57113300f9bddc96559633c0796",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51170-S06",
+      "sourceValueSha256": "6bf74f41093fbfe8c39a7086df08637fb681b7637dd1b884666f4c6a13d192f0",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51190-S06",
+      "sourceValueSha256": "c4aa00f9e431b632afe27900871e11c698bf123fad1ebd6aeb8f30b68e32b8ca",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51210-S06",
+      "sourceValueSha256": "59e181fab59655d3da0e67df238b14ac17036aa85c20113c9d0379322cfee648",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51230-S06",
+      "sourceValueSha256": "9e4df6ef7839c9bf2c9a3bb39b550939efb844dd9de6d0d02708738127833105",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51720-S06",
+      "sourceValueSha256": "047ff26656eefe469fa3e81e870d2c7ce68765c8ea958dbc1a669d1cc68d44ab",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51730-S06",
+      "sourceValueSha256": "39d70bce12abeb8b904d0c61838b29ccdebe0011aeff24d10cc8ffda048fdbc9",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51750-S06",
+      "sourceValueSha256": "b38b88437bcd2c924ff6c37601400c711a0d48fd9e3db2f17789b8907f71ed55",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51760-S06",
+      "sourceValueSha256": "c2c8aecb89e848d6d48f0b545de1aaeb4dd19ffab5d5d20050d696d7e1e14011",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51770-S06",
+      "sourceValueSha256": "3bb15423bf366b465240c722b0ffc88a8dd071b9e582e8bd93a715bacef80ad4",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51780-S06",
+      "sourceValueSha256": "717536ab4119c01548724ca101ea2229ebfd3a1e03fe1390447ee4395b75897b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51790-S06",
+      "sourceValueSha256": "70e862870b4c9172a8dfd96432484750ff23c3828272cc3b504e2437ca4c2049",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51800-S06",
+      "sourceValueSha256": "a5f1df1fdde81748f061b452ce707ac146ded1e1f88721bc7cc726f80527cc83",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51810-S06",
+      "sourceValueSha256": "93485d5a29596d483d027701f24ae9dee168885a6c90655d0c2e3e2a18770e9f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51820-S06",
+      "sourceValueSha256": "2f826f7b12fce02f98a9251ff2680967be54b7fa64dc089d048d7164a5811ef0",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-51830-S06",
+      "sourceValueSha256": "c540f060f8777decab5443b08fbbbb59b26a28b1d705c6d75e848c6ec0779c20",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11110-S06",
+      "sourceValueSha256": "3bd51a47a25ff11bec67591a1f2ea3b7d8fb78e98d6cb109cff562f649c27b60",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11110-S06"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11140-S06",
+      "sourceValueSha256": "9d716d921f12678520ca3c47dfce6105084d7ce0526c2a86c6d53d12b5695a40",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11140-S06"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11170-S07",
+      "sourceValueSha256": "a7f3f4bc54f0393cae2095bf160672771338ebcdd56b7bb6b03abb8f00c83cf3",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11170-S07"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11200-S04",
+      "sourceValueSha256": "e14bd61084d16ac69374c74a5f7657988d78fbc53d34d194951011cda35024c1",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11200-S04"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11215-S14",
+      "sourceValueSha256": "05d400f1e38be92a9b0f959c31c93f86876d41ec0cba8cec097f3c0a9af99ec0",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11215-S14"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11230-S13",
+      "sourceValueSha256": "24fadd53c06600cffb9d94833eba47b531d8cbea4fe87a00edba109bd696207d",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11230-S13"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11260-S12",
+      "sourceValueSha256": "59b07fe87fbaa229c0f172b28570e76446fca4a9536ad2c4c1447f5613191a38",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11260-S12"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11290-S10",
+      "sourceValueSha256": "c5ed2dd717e8cb201e330de5aaeb6880edc5923dbda68ca0d5f8fcb805b9a202",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11290-S10"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11305-S10",
+      "sourceValueSha256": "06dee89bac5e1ca75d8dcdf879fb658a6697ca437d10fb655e2ab6f26734bb22",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11305-S10"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11320-S11",
+      "sourceValueSha256": "5529601d35f691bf1a957c4d4ded5a9e38f3bf2f0cc267a3294005837d92233c",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11320-S11"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11350-S11",
+      "sourceValueSha256": "058d8c518ffb258f1cf050e2f58a1419002b04321e60ac3c7eb860b59e83f67b",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11350-S11"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11380-S10",
+      "sourceValueSha256": "dcbbb26f407c5e6ed58c6df0f8510ea655f2de87f43459ae239a6225d6bfc341",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11380-S10"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11410-S06",
+      "sourceValueSha256": "379c8456714cdc7184e9c86e68429c3570ac7dfbd007a3d4878b9c2e1e5b666b",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11410-S06"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11410-S09",
+      "sourceValueSha256": "e87197f9fd92d966009ad5d36ee63d0b835bed899607668b30c3552e72ffc81d",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11410-S09"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11410-S10",
+      "sourceValueSha256": "30fd76c5afbfe5432ef6dde54b33befd8e1e0a988daa866d0aea08b734977cda",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11410-S10"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11440-S09",
+      "sourceValueSha256": "b52ac9ceda7239c834371ee7a64ee8396346c3c0e6d42b6ce9c2d1fc32d6eafa",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11440-S09"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11500-S03",
+      "sourceValueSha256": "cb0c06bcc9eb6e54b4c4bafb555b4f9db85e94af334de43da458f6bea3bd9285",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11500-S03"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11530-S02",
+      "sourceValueSha256": "39fcb2ee5a5bbad25ea6b4c13da841fbab9df70afeadb4e2f1a35328bade4b06",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11530-S02"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11545-S02",
+      "sourceValueSha256": "1369d3373858606cbda1c85c9e99bc3ea6fb5e1d6dc7cf7db2d92b1783f4c988",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11545-S02"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11560-S01",
+      "sourceValueSha256": "b511d5cedc903baf9f43ff1933c67aa8e49820f84196b6eee6b29bbecdc41211",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11560-S01"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11560-S09",
+      "sourceValueSha256": "a97a8fa3a578d991e59f35539e5d4ed2ca067b44b9e074f58cd8e41df7e170ef",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11560-S09"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11590-S02",
+      "sourceValueSha256": "39011e2d4b80759d3ca32e10f6137dcbd5fd966220fa7c287b0f6c72acdf2f3e",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11590-S02"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11620-S02",
+      "sourceValueSha256": "66a7178ff0c949fc870de22a883ecbd88f2236764eb90ed3ea876fa21a82a285",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11620-S02"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11650-S03",
+      "sourceValueSha256": "6b9ce63e82f981f655bd7cee74177f71c6cd6b7fd5433d9f8dfcf08d32213ef3",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11650-S03"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11650-S11",
+      "sourceValueSha256": "3d9b14c3c74499679066ba633d0cfb3a3e520e36f7850f2e7c7eb94757fa3528",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11650-S11"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11650-S16",
+      "sourceValueSha256": "1087af1e734478adf504010282b617620442fe99453598cbc238144c2219b90b",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11650-S16"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11680-S04",
+      "sourceValueSha256": "26b43687a27f3753223673420d9853530b2eee46db0ba1006e0910f7e838bb6e",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11680-S04"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11680-S16",
+      "sourceValueSha256": "dbfd5fab75289247acaad4d253e4882665df1cfa0456f50a451130c63298968a",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11680-S16"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11710-S15",
+      "sourceValueSha256": "fcebee00c85a930945b379f1d57253d034232f8de555509d2c06e7b54a180c06",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11710-S15"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-11740-S05",
+      "sourceValueSha256": "134946302d57a6e90d313b1b0f5be11a0631ca0ce19626c607754509c82689fc",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-gu-11740-S05"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28125-S06",
+      "sourceValueSha256": "c44009907cf5d111a04f071a65f24e781048610d112950677595ac017911e372",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28155-S06",
+      "sourceValueSha256": "50db2de1ac46b56d6875d8466886813744371426a379c2de340ae14f64d00010",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28177-S06",
+      "sourceValueSha256": "9ccdd6ff21db36d55531dd3e573a962ce01d49ce1615a8274e009050b329824b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28185-S06",
+      "sourceValueSha256": "82a0257297086e570a042648fa33424aeb758c105b545a0bf53893862d0cce11",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28200-S06",
+      "sourceValueSha256": "93e075dced51b327ee56aeda41ef8e4acc091a8be3d1e93bf1f200e9f5fce7ef",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28237-S06",
+      "sourceValueSha256": "b9d77805ff390e7738b327ae0fcce6245eed212a03e80789282294820846359c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28245-S06",
+      "sourceValueSha256": "08220f17c48f2affe8fe758e12e7d84f975b529913b7e5a99639e305a65376a8",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28275-S06",
+      "sourceValueSha256": "cf90af3e8f006f381d8e4367b2ad47e8f8e77c6d20fbc09913193359e7d5040f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-gu-28290-S06",
+      "sourceValueSha256": "5047958ce16d6376e15101fdf93ed05e99a8933cc2107a188f7890c506dfbab2",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:opening-duchy-s08-demesne",
+      "sourceValueSha256": "6467a0a6a41fba079d5cca4eae33b46bcd629bb9e0f5022eec023c431b127af5",
+      "disposition": "retained-current",
+      "currentId": "holding:opening-duchy-s08-demesne"
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:sea-K151",
+      "sourceValueSha256": "3cd626153662f13dc28e398618ccf88303bb89e9af6f5f52af1874a9b92d4ef6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:sea-K176",
+      "sourceValueSha256": "469e8655ed13de6d810245d94409404312bf9d8b3d23f894ee31857f1f6b1f15",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:sea-K355",
+      "sourceValueSha256": "e66f394bc39062a54ed890b0957de7152373ca57110b66fc08461018a2b5cf7e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611025000",
+      "sourceValueSha256": "1b5b9f0cb488c427fe3ba1f23c89860812cc3e2ac17ecadabef7a431a06dc470",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611031000",
+      "sourceValueSha256": "782411f349425e90d4d08e4e35a38081392a015ee7808d64fb5f837587014a4f",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611032000",
+      "sourceValueSha256": "704c43b3c2222e526a48e257a74990f0d9e02dcb6d22b661ed65817e8622e490",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611033000",
+      "sourceValueSha256": "e61a51bfe745d7b0a9a7e2061f85c55ee230ecea2b02249e0bddd626f3f4b996",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611034000",
+      "sourceValueSha256": "714ad6d1545f1f2202d717af3892f49511ad6e09202926ece740f6ffc5db2dd6",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611035000",
+      "sourceValueSha256": "1d6ddc992b4f2b8c5b78f8e8409e12f3f74f298da923fbd180d2b7fe911ac704",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611036000",
+      "sourceValueSha256": "362156c498c3fe7e1503407139091fa924cf50acb8c7af889918335b294572c2",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611037000",
+      "sourceValueSha256": "319fd1eee93577ffa6c214dd26f6dc15fe4f51e0ae73c058ba9c50985753d1c1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611038000",
+      "sourceValueSha256": "0f8cef64e7c7f5ee394f4fa4bb603cb47ae126c677774a6cd37148a597d4537b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611039000",
+      "sourceValueSha256": "7ba620e63391dc83eb9c2579093d8dc1a1bfbde438980ed87d5fe654688e3588",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611051000",
+      "sourceValueSha256": "a7bfe8028ea39a96f727e04b3369a4e7c2d114003df14e99ec6d44e11ad178cb",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611051500",
+      "sourceValueSha256": "938117a7940b33644c7ca31ba41cbc3744a341d8869b04e2438b63ece6c479d4",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611051800",
+      "sourceValueSha256": "d809b4b181b25e2b5dfb39007818055da4b8e4310a637de33e55fc0a1fdff19d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611052000",
+      "sourceValueSha256": "fca793f84ad1378e6bd54cc7876cf9c4b172514af9994821e5436ca3c34986f5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611052300",
+      "sourceValueSha256": "defe709c6280f1e1acce9913597e8b03a983dddcdccf8ff734a8379ae2b9f3bc",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611052500",
+      "sourceValueSha256": "2a0211b0beceb7222a9406008e3bab57d250575da2bc679229f767982c6686d3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611053000",
+      "sourceValueSha256": "d2f0824c47e66d874df5f2ba743eef5f43e0ac844ce17bb6b9c961690a2a4a49",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611054000",
+      "sourceValueSha256": "6549cf36dc20298c2a33547ff2e6da7fcec439aa3ec4c826ca7b7bec0fc581cb",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611055000",
+      "sourceValueSha256": "70ced5b582c91270fe39b9e1393dbc12480d9134263491b26f9a7d1f30997a81",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611055500",
+      "sourceValueSha256": "982a628c7bd000b078b9a1f9d5204424559ef6a3887d9d1dee9b586166324362",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611055600",
+      "sourceValueSha256": "78a00691204aabf3679ab99a18ca76aceefb2f4785476e89c05063023c344c17",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611056000",
+      "sourceValueSha256": "b406c1bc22e7a580c93c43366f3c1bf7dc1f25ed5605110b34667f74629e2575",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611057000",
+      "sourceValueSha256": "ab21077c7d19ea1acad6191d9cc76f436fdde0fbbe87dcace5ca25e3af60839c",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-3611058000",
+      "sourceValueSha256": "0db56044e08b85dcf32c67f703b54e6192302cc18145d1fd79823c7333d01175",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420025000",
+      "sourceValueSha256": "31c8c88a99354c94c3466d38f8f06e93ed95f54387b3d880adc22984542b4119",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420025300",
+      "sourceValueSha256": "b6df8be6e85ec3a7a44433f51de4ed68811bf02c77fe7930ae903e082bee09a5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420031000",
+      "sourceValueSha256": "3f067895f619ef581fd1407d1361082748bd5832451d59893932eac78f4c87c1",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420033000",
+      "sourceValueSha256": "46ae037108d34643ca1916e1f28e4ec5c8543c7497926348af6b423b7caac09b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420035000",
+      "sourceValueSha256": "42a5bf72896383927f33bfce4025530c727886070ce393eb6c59cdd06252d1b5",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420036000",
+      "sourceValueSha256": "17f98948bf5987b68d92f000c5a9c9a61e2ba0c089253d2deb469c1bfc7f56fd",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420037000",
+      "sourceValueSha256": "5a79b9649558ff53a6a6973a3a7b383752b76f91467269776ddf67f667ef3352",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420038000",
+      "sourceValueSha256": "b865bf71f5b09580914d411dd76da271554163277131e93c7aac4382c3219c7d",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420039000",
+      "sourceValueSha256": "90910868770bc4d01d4cc058d568e1349f5b5c5988a506c9c73d5b67d98dcc68",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420040000",
+      "sourceValueSha256": "06839118843a86a33a00c26e7eaa1b29250bc05d6e9315603f3f487191318d5b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420041000",
+      "sourceValueSha256": "33c6074f045da05b69b38b1989834fcf8968e361b4c1916483d3ad564346d3b4",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420057000",
+      "sourceValueSha256": "dd905205090f16bab10f36e5e09e3d8e29ca28d65dbc5d7578d5aabf210b6fdd",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420058000",
+      "sourceValueSha256": "517216d9b3a3bf8b91a0232448dc7f18be49676ce7a871133474763e2344129b",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420059000",
+      "sourceValueSha256": "819f546a7968982ce57315fe87c3c57c748eee4cc035a10bf3b8c8c7a972177e",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420060000",
+      "sourceValueSha256": "d70a283e6ca7f77cf2468df7c4d3a6fafecbd9c6128a711fb227488ca942abdf",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420061000",
+      "sourceValueSha256": "b338333988a829f0bb359b462b0c36454160fb04486f59fc5349d4d6608204a3",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "grants",
+      "oldId": "holding:chungcheong-4420062000",
+      "sourceValueSha256": "fbea22dad0ff76f5ae272b8822be637d6716c7921f9bfb7a4013cee6231a1191",
+      "disposition": "retired-current",
+      "currentId": null
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s01",
+      "sourceValueSha256": "1589c14fbad2bd51b51193cf9788bd517db3e04288fcbf193c8a4710c9174e96",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s01"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s02",
+      "sourceValueSha256": "881dfd41ee993f2b4fc562fbcc8a82e95d8ceb6963f9e32724c58e792c28031c",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s02"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s03",
+      "sourceValueSha256": "b6297b23372c1b7d08fa82d7d89526836aaa7b1116546933c80a95f97fb12159",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s03"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s04",
+      "sourceValueSha256": "c9b6886b9f101d25b23eca3e79fd3aabcab096c94d8036de7fd8c2a0052fe9a2",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s04"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s05",
+      "sourceValueSha256": "4592fe5a6798f460a04ba5609db609cf84069f32bbdb3546e6b68b453a6818ff",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s05"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s06",
+      "sourceValueSha256": "a11ed704fe932b7f142b7e19797cf1bdbfd1ccb7e04601520595681bc7c65589",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s06"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s07",
+      "sourceValueSha256": "4503a07fcd42e92be68c01cef7826b151c46c3768b5ee31b308fd8ed60ceedfd",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s07"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s08",
+      "sourceValueSha256": "fba2e0e3476a335ea580fd1ba0f037cc975f2f095a7f08c9c517d8c4c78a14a4",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s08"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s09",
+      "sourceValueSha256": "a0833cc924ae698ec495f8e32c97d1c83cea304aeebf03e5fe2a079929e2cd1b",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s09"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s10",
+      "sourceValueSha256": "710328896a670705d469b4aaacd76569f2487a5c8b83510d7f50bbc1726dc3dc",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s10"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s11",
+      "sourceValueSha256": "661672126598908ae5ae3c5a4d7956767bd6e84baad4ae01cdbe16b8f4577de7",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s11"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s12",
+      "sourceValueSha256": "13a176e462590965c4b6b1c5b6c2f9d6b66e89e9caedf7a1b6ec416237ec082d",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s12"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s13",
+      "sourceValueSha256": "0de50befc58dd9effbdff33129e36a1b679cf459f6d1ae6021ff94d14ab67a14",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s13"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s14",
+      "sourceValueSha256": "2ced4da9aa60b56b880a96659a9942539cd91f37c3581ea6f41c8220b12039b9",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s14"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s15",
+      "sourceValueSha256": "c9b153b34e8950180b3038fbb1ab986777d5fd80e9ef89e667ddbbbb449cbf80",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s15"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:capital-s16",
+      "sourceValueSha256": "766d0fd3a642b27309948a6551d8a6bc5f40fcee19614fcaeb19af7966c6f86b",
+      "disposition": "retained-current",
+      "currentId": "holding:capital-s16"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:yangpyeong2",
+      "sourceValueSha256": "881fa0d9fe07455980231a87707d33afa0723d89b42e61ba8e30224fd0161588",
+      "disposition": "retained-current",
+      "currentId": "holding:yangpyeong2"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:yeongdeungpo-concourse",
+      "sourceValueSha256": "b9fa275a05333538aa73aed8629603077872ed4f7e8ff622880290f1c2a660f8",
+      "disposition": "retained-current",
+      "currentId": "holding:yeongdeungpo-concourse"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:yangcheon",
+      "sourceValueSha256": "61241eb8df10aba129d544e04e79c948ff96db4c19c4e090df0274bf8809171f",
+      "disposition": "retained-current",
+      "currentId": "holding:yangcheon"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:saetgang-concourse",
+      "sourceValueSha256": "99ced29926ea5253db20478c3071a95c910fedf525c3859f44829dea8d107e7e",
+      "disposition": "retained-current",
+      "currentId": "holding:saetgang-concourse"
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:daejeon-dong",
+      "sourceValueSha256": "6ca78450eb389b5f9731fc8d763333333157d8a2e354f314e9d7afc56ef8798a",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-dong",
+      "current": {
+        "id": "holding:daejeon-dong",
+        "kind": "superior-jurisdiction",
+        "name": {
+          "ko": "강남구 상위 관할권"
+        },
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "directLiegePersonId": null,
+        "liegeRelationshipKind": "preserved-personal-service",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-dong",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11680",
+          "guRef": "11680",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:강남구갑선거구",
+            "geography:county:seoul-constituency:강남구을선거구",
+            "geography:county:seoul-constituency:강남구병선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        },
+        "territorialScale": "duchy",
+        "formalTitleRank": null,
+        "adminRefs": [],
+        "geometrySource": null,
+        "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+        "directOwnership": false,
+        "powers": [
+          "receive-holding-change-notice",
+          "lodge-nonbinding-registry-objection"
+        ]
+      }
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:daejeon-yuseong",
+      "sourceValueSha256": "95ecdfad0863e4220e3b29c843b83d46f0e665194de5093f8955dd5d4ea7646f",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-yuseong",
+      "current": {
+        "id": "holding:daejeon-yuseong",
+        "kind": "superior-jurisdiction",
+        "name": {
+          "ko": "서초구 상위 관할권"
+        },
+        "holderPersonId": "K1008",
+        "stateId": "polity:daejeon",
+        "directLiegePersonId": null,
+        "liegeRelationshipKind": "preserved-personal-service",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-yuseong",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11650",
+          "guRef": "11650",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:서초구갑선거구",
+            "geography:county:seoul-constituency:서초구을선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        },
+        "territorialScale": "duchy",
+        "formalTitleRank": null,
+        "adminRefs": [],
+        "geometrySource": null,
+        "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+        "directOwnership": false,
+        "powers": [
+          "receive-holding-change-notice",
+          "lodge-nonbinding-registry-objection"
+        ]
+      }
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:daejeon-jung",
+      "sourceValueSha256": "c696dfbb9c9e88e3bc182d77668d700a0f64e0c85c2c5611ebd72a9aaa6d708f",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-jung",
+      "current": {
+        "id": "holding:daejeon-jung",
+        "kind": "superior-jurisdiction",
+        "name": {
+          "ko": "광진구 상위 관할권"
+        },
+        "holderPersonId": "K035",
+        "stateId": "polity:daejeon",
+        "directLiegePersonId": "K1008",
+        "liegeRelationshipKind": "preserved-personal-service",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-jung",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11215",
+          "guRef": "11215",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:광진구갑선거구",
+            "geography:county:seoul-constituency:광진구을선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        },
+        "territorialScale": "duchy",
+        "formalTitleRank": null,
+        "adminRefs": [],
+        "geometrySource": null,
+        "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+        "directOwnership": false,
+        "powers": [
+          "receive-holding-change-notice",
+          "lodge-nonbinding-registry-objection"
+        ]
+      }
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:daejeon-seo",
+      "sourceValueSha256": "2a4b9c39754614622412fbd64a60dd1d195080f8eff7f71a40cb90b77b7d826d",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-seo",
+      "current": {
+        "id": "holding:daejeon-seo",
+        "kind": "superior-jurisdiction",
+        "name": {
+          "ko": "송파구 상위 관할권"
+        },
+        "holderPersonId": "K039",
+        "stateId": "polity:daejeon",
+        "directLiegePersonId": "K1008",
+        "liegeRelationshipKind": "preserved-personal-service",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-seo",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11710",
+          "guRef": "11710",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:송파구갑선거구",
+            "geography:county:seoul-constituency:송파구을선거구",
+            "geography:county:seoul-constituency:송파구병선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        },
+        "territorialScale": "duchy",
+        "formalTitleRank": null,
+        "adminRefs": [],
+        "geometrySource": null,
+        "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+        "directOwnership": false,
+        "powers": [
+          "receive-holding-change-notice",
+          "lodge-nonbinding-registry-objection"
+        ]
+      }
+    },
+    {
+      "set": "holdings",
+      "oldId": "holding:daejeon-daedeok",
+      "sourceValueSha256": "441b5054b5bb0695378977abbb98813108b03e5db35ef772290e2f8e80fa53af",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-daedeok",
+      "current": {
+        "id": "holding:daejeon-daedeok",
+        "kind": "superior-jurisdiction",
+        "name": {
+          "ko": "강동구 상위 관할권"
+        },
+        "holderPersonId": "K038",
+        "stateId": "polity:daejeon",
+        "directLiegePersonId": "K1008",
+        "liegeRelationshipKind": "preserved-personal-service",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-daedeok",
+        "geographicScope": {
+          "duchyTitleId": "geography:duchy:11740",
+          "guRef": "11740",
+          "countyTitleIds": [
+            "geography:county:seoul-constituency:강동구갑선거구",
+            "geography:county:seoul-constituency:강동구을선거구"
+          ],
+          "geographicKingdomId": "proposal:kingdom:seoul:06",
+          "geographicEmpireId": "geography:empire:seoul"
+        },
+        "territorialScale": "duchy",
+        "formalTitleRank": null,
+        "adminRefs": [],
+        "geometrySource": null,
+        "capabilityPackageId": "proposal:registry-notice-and-objection-v1",
+        "directOwnership": false,
+        "powers": [
+          "receive-holding-change-notice",
+          "lodge-nonbinding-registry-objection"
+        ]
+      }
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:daejeon-daedeok",
+      "sourceValueSha256": "70cb7930087ae20c3998708102f4fded69b510890107b27a0e9f4dd29e52307b",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-daedeok",
+      "current": {
+        "holdingId": "holding:daejeon-daedeok",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-daedeok"
+      }
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:daejeon-dong",
+      "sourceValueSha256": "3b37a75fbe8588b31e63f9541e2b613bde7496f42737718b88ac7fe9880e52b4",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-dong",
+      "current": {
+        "holdingId": "holding:daejeon-dong",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-dong"
+      }
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:daejeon-jung",
+      "sourceValueSha256": "5adaa58b9947a7ea2bbd8cc2e0161a923747cb9d986017108af02b9431e89037",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-jung",
+      "current": {
+        "holdingId": "holding:daejeon-jung",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-jung"
+      }
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:daejeon-seo",
+      "sourceValueSha256": "cca35716904a3f93d2933f088ace0c5dc69f7c77901eb717b8941d9185bc6f17",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-seo",
+      "current": {
+        "holdingId": "holding:daejeon-seo",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-seo"
+      }
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:daejeon-yuseong",
+      "sourceValueSha256": "3e8f4bd1843e00ad69e3506f17d155ad8b26fcfe28dca69c9b229089d5bd3488",
+      "disposition": "approved-nonowning",
+      "currentId": "holding:daejeon-yuseong",
+      "current": {
+        "holdingId": "holding:daejeon-yuseong",
+        "titleId": "proposal:superior-jurisdiction:seoul:daejeon-yuseong"
+      }
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:yangcheon",
+      "sourceValueSha256": "e4538af5a15716fcb0419de9024884a28a97a0662c98b8504e2d77f48509e432",
+      "disposition": "retained-current",
+      "currentId": "holding:yangcheon"
+    },
+    {
+      "set": "existingTitleBindings",
+      "oldId": "holding:yangpyeong2",
+      "sourceValueSha256": "679a63b6e1713ca147ad42aeb5faf18b07a4e1b5d3e2112c1b0fe9cb30030162",
+      "disposition": "retained-current",
+      "currentId": "holding:yangpyeong2"
+    }
+  ],
+  "polities": [
+    {
+      "id": "polity:daejeon",
+      "name": {
+        "ko": "대전",
+        "en": "Daejeon"
+      },
+      "sovereignPersonId": "K1008",
+      "territorialScale": null,
+      "formalTitle": "대전선",
+      "formalTitleRank": "왕격",
+      "office": "대전 군주",
+      "authority": {
+        "kind": "neutral",
+        "name": "대전"
+      },
+      "directOwnership": false,
+      "politicalTitleId": "title:kingdom-daejeon"
+    }
+  ]
+}

@@ -23,6 +23,7 @@ import {
   validateRegistry,
 } from "./issue-person-ids.mjs";
 import path from "node:path";
+import { personIdValuesHash } from "./person-id-values-successor.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REGISTRY_PATH = path.join(HERE, "person-id-registry.json");
@@ -114,7 +115,7 @@ test("(g) approvalRef가 최종 파일 승인각(소유자 승인)을 그대로 
   assert.equal(committed.approvalRef.approvedBy, "owner");
   assert.equal(committed.approvalRef.approvedAt, APPROVED.approvedAt);
   assert.equal(committed.approvalRef.ownerRef, APPROVED.ownerRef);
-  assert.equal(committed.approvalRef.inputSha256, sha256Hex(ctx.valuesBytes));
+  assert.equal(committed.approvalRef.inputSha256, personIdValuesHash(ctx.valuesBytes));
   assert.equal(committed.approvalRef.candidatesSha256, sha256Hex(ctx.candidatesBytes));
   assert.equal(committed.schema, SCHEMA);
 });
@@ -126,6 +127,58 @@ test("fail closed — values-cast.json 해시가 승인각과 다르면 거부�
   const problems = assertApprovedHashes({ valuesBytes: tampered, candidatesBytes: ctx.candidatesBytes });
   assert.equal(problems.length, 1);
   assert.match(problems[0], /values-cast\.json 해시\([0-9a-f]{64}\)가 승인각\([0-9a-f]{64}\)과 다르다/);
+});
+
+test("인증된 note successor는 기존 승인각과 인물 신원을 보존한다", () => {
+  assert.notEqual(sha256Hex(ctx.valuesBytes), APPROVED.inputSha256);
+  assert.equal(personIdValuesHash(ctx.valuesBytes), APPROVED.inputSha256);
+  assert.deepEqual(assertApprovedHashes(ctx), []);
+  assert.deepEqual(buildRegistry(ctx).persons, committed.persons);
+});
+
+test("fail closed — successor note 또는 명부의 추가 변이는 거부한다", () => {
+  for (const mutate of [
+    (values) => { values.note += " "; },
+    (values) => { values.people[0].name += "x"; },
+    (values) => { values.people.reverse(); },
+  ]) {
+    const values = JSON.parse(ctx.valuesBytes);
+    mutate(values);
+    const valuesBytes = Buffer.from(JSON.stringify(values, null, 2) + "\n");
+    assert.notEqual(personIdValuesHash(valuesBytes), APPROVED.inputSha256);
+    assert.notEqual(assertApprovedHashes({ ...ctx, valuesBytes }).length, 0);
+  }
+});
+
+test("fail closed — successor 증명의 변조·누락·등록 삭제를 거부한다", () => {
+  const root = path.resolve(HERE, "../..");
+  const readProof = (relative) => readFileSync(path.join(root, relative));
+  const visited = [];
+  personIdValuesHash(ctx.valuesBytes, (relative) => {
+    visited.push(relative);
+    return readProof(relative);
+  });
+  for (const target of visited) {
+    assert.throws(() => personIdValuesHash(ctx.valuesBytes, (relative) => {
+      const bytes = readProof(relative);
+      if (relative !== target) return bytes;
+      if (relative.endsWith("applied-batches.json")) {
+        const data = JSON.parse(bytes);
+        data.batches = data.batches.filter((row) => row.batchId !== "owner-recommendations-records");
+        return Buffer.from(JSON.stringify(data));
+      }
+      if (relative.endsWith("source-before-after.json")) {
+        const data = JSON.parse(bytes);
+        data.sources.find((row) => row.sourcePath === "lore/name-pools/values-cast.json").beforeSha256 = "0".repeat(64);
+        return Buffer.from(JSON.stringify(data));
+      }
+      return Buffer.concat([bytes, Buffer.from(" ")]);
+    }), target);
+    assert.throws(() => personIdValuesHash(ctx.valuesBytes, (relative) => {
+      if (relative === target) throw new Error("missing proof");
+      return readProof(relative);
+    }), target);
+  }
 });
 
 test("fail closed — 승인된 title 밖의 수정은 거부한다", () => {

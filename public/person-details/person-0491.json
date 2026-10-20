@@ -561,53 +561,23 @@
             "name": "남재원",
             "url": "/people/person-0491",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 통로 개통·부상자 이송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/346/items/1/ko",
-                  "quote": "생업: 환승 통로 개통·부상자 이송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/348/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/347/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -615,84 +585,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/347/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "First Aid/TL?",
                 "ko": "응급 처치·환자 이송",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/346/items/1/ko",
-                    "quote": "생업: 환승 통로 개통·부상자 이송"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "동대문",
-              "type": "초소 영지",
-              "station": "동대문",
-              "state": "S04",
-              "settlement": {
-                "name": "동대문 정착지",
-                "type": "정착지",
-                "description": "동대문 일대 고정 거점"
-              },
-              "note": "S04 동대문 일대 관할 영지"
+              "unspent": 29
             }
           }
         }
@@ -716,53 +636,23 @@
             "name": "남재원",
             "url": "/people/person-0491",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 통로 개통·부상자 이송",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/346/items/1/ko",
-                  "quote": "생업: 환승 통로 개통·부상자 이송"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/348/text/ko",
-                    "quote": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다."
-                  }
-                ]
+                "cp": 10
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/347/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -770,84 +660,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/347/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "First Aid/TL?",
                 "ko": "응급 처치·환자 이송",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/346/items/1/ko",
-                    "quote": "생업: 환승 통로 개통·부상자 이송"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 11,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 24,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 30,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 46,
-              "unspent": 29,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "동대문",
-              "type": "초소 영지",
-              "station": "동대문",
-              "state": "S04",
-              "settlement": {
-                "name": "동대문 정착지",
-                "type": "정착지",
-                "description": "동대문 일대 고정 거점"
-              },
-              "note": "S04 동대문 일대 관할 영지"
+              "unspent": 29
             }
           }
         }
@@ -868,18 +708,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "동대문",
-    "type": "초소 영지",
-    "station": "동대문",
-    "state": "S04",
-    "settlement": {
-      "name": "동대문 정착지",
-      "type": "정착지",
-      "description": "동대문 일대 고정 거점"
-    },
-    "note": "S04 동대문 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -920,15 +748,15 @@
     "욕망": "갈망 −10 | 독점 35 | 위험 −35 | 과시 −10 | 지속 −5 | 지향 유동 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "관직": "품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.",
-    "공포": "공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 남재원은 신내 환승 당직에서 자랐다. 남재원은 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 남재원의 공방 전령 업무는 성수2가3동과 연결된다.",
+    "관직": "남재원은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
+    "일화": "2125년 남재원은 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.",
+    "관계": "남재원은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
+    "야망": "남재원은 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
+    "공포": "남재원은 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
+    "개입": "남재원은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 환승 통로 개통·부상자 이송\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 공방 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교사. 직함은 공방 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 공방 전령 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 15 | 무력 −20 | 물질 10 | 공동 25 | 원칙 10 | 공개 −10 | 자격 20 | 분산 10 | 변혁 0\n- 욕망: 갈망 −10 | 독점 35 | 위험 −35 | 과시 −10 | 지속 −5 | 지향 유동 | 결합 단혼\n:::",
+  "biography": "남재원은 당직을 끊지 않는 쪽을 먼저 고른다. 남재원은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 환승 통로 개통·부상자 이송\n- 품계: 교사\n- 직함: 공방 전령\n**생애.** 2126년 세대. 남재원은 신내 환승 당직에서 자랐다. 남재원은 무표 출발 열차 저지로 공방 전령 자리를 맡았다.\n- 남재원의 공방 전령 업무는 성수2가3동과 연결된다.\n\n**관직.** 남재원은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 남재원은 폭설에 막힌 환승 통로를 뚫어 부상자를 먼저 옮겼다. 이 일로 공방 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 남재원은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 남재원은 공방 전령 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 남재원은 공방 전령 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 남재원은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 15 | 무력 −20 | 물질 10 | 공동 25 | 원칙 10 | 공개 −10 | 자격 20 | 분산 10 | 변혁 0\n- 욕망: 갈망 −10 | 독점 35 | 위험 −35 | 과시 −10 | 지속 −5 | 지향 유동 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

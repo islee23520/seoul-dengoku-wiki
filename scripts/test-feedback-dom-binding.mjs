@@ -126,12 +126,18 @@ test('every nonempty renderer-selected person section has ordered source-bound t
 })
 
 test.each([
-  ['person-1003', 'K1003', 4, 46],
-  ['person-1004', 'K1004', 7, 66],
-])('full reader sections and biography bind distinct guard occurrences for %s', async (id, issuedId, blockIndex, sourceEnd) => {
+  ['person-1003', 'K1003', '인물-조재표-p1-expanded-4'],
+  ['person-1004', 'K1004', '인물-이연-p1-expanded-5'],
+])('full reader sections and biography bind distinct guard occurrences for %s', async (id, issuedId, blockAnchor) => {
   const envelope = JSON.parse(await readFile('lore/characters/Cast-Unaffiliated.json', 'utf8'))
   const detail = JSON.parse(await readFile(`public/person-details/${id}.json`, 'utf8'))
   assert.equal(detail.gurps.id, issuedId)
+  const blockIndex = envelope.content.findIndex((block) => block.anchor === blockAnchor)
+  const source = envelope.content[blockIndex].text.ko, prefix = '호위 대열. '
+  assert.equal(typeof source, 'string')
+  assert.ok(source.startsWith(prefix))
+  assert.equal(source.slice(prefix.length), detail.sections['호위 대열'])
+  const sourceStart = Array.from(prefix).length, sourceEnd = Array.from(source).length
   const record = personFeedbackRecord({ envelope, personId: id, route: detail.detailRoute, headingText: `인물 ${detail.name}`, locale: 'ko', sections: detail.sections })
   const root = document.createElement('div')
   root.innerHTML = renderToStaticMarkup(createElement(MemoryRouter, null, createElement(PersonDetailContent, { detail, personId: id, feedback: record })))
@@ -143,9 +149,9 @@ test.each([
   const biography = record.leaves.find((leaf) => leaf.leafId === `biography:${envelope.content[blockIndex].anchor}:text`)
   assert.ok(guard && biography)
   assert.notEqual(guard.leafId, biography.leafId)
-  const path = `/content/${blockIndex}/text/ko/1/text`
-  assert.deepEqual(guard.sourceSegments, [{ kind: 'literal', path, start: 1, end: sourceEnd, unit: 'unicode-code-point', textStart: 0, textEnd: sourceEnd - 1 }])
-  assert.ok(biography.sourceSegments.some((segment) => segment.path === path))
+  const path = `/content/${blockIndex}/text/ko`
+  assert.deepEqual(guard.sourceSegments, [{ kind: 'literal', path, start: sourceStart, end: sourceEnd, unit: 'unicode-code-point', textStart: 0, textEnd: sourceEnd - sourceStart }])
+  assert.deepEqual(biography.sourceSegments, [{ kind: 'literal', path, start: 0, end: sourceEnd, unit: 'unicode-code-point', textStart: 0, textEnd: sourceEnd }])
   for (const leaf of [guard, biography]) for (const segment of leaf.sourceSegments) {
     const source = segment.path.split('/').slice(1).reduce((value, part) => value[part.replaceAll('~1', '/').replaceAll('~0', '~')], envelope)
     assert.equal(segment.unit, 'unicode-code-point')
@@ -156,7 +162,7 @@ test.each([
   const range = document.createRange(); range.selectNodeContents(guardElement)
   const anchor = captureFeedbackAnchor(root, record, detail.detailRoute, 'ko', { rangeCount: 1, isCollapsed: false, getRangeAt: () => range })
   assert.equal(anchor.selections[0].leafId, guard.leafId)
-  assert.deepEqual(anchor.selections[0].sourceSpans, [{ path, start: 1, end: sourceEnd, unit: 'unicode-code-point' }])
+  assert.deepEqual(anchor.selections[0].sourceSpans, [{ path, start: sourceStart, end: sourceEnd, unit: 'unicode-code-point' }])
   assert.equal(bindFeedbackLeaves(root, record.selector, record.leaves.filter((leaf) => leaf !== guard)), null)
   const reversed = [...record.leaves]; [reversed[0], reversed[1]] = [reversed[1], reversed[0]]
   assert.equal(bindFeedbackLeaves(root, record.selector, reversed), null)

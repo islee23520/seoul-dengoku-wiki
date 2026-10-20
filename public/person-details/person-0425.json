@@ -2,9 +2,9 @@
   "id": "person-0425",
   "name": "박도윤",
   "title": "작업반 전령",
-  "position": "작업반 전령 · 태안군 영주 · 세종 하위 영지 영주",
+  "position": "작업반 전령",
   "characterId": "K425",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "환승 전갈 전달",
   "gender": "남성",
@@ -446,47 +446,23 @@
             "name": "박도윤",
             "url": "/people/person-0425",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/302/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/303/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -494,84 +470,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/303/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/302/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -595,47 +521,23 @@
             "name": "박도윤",
             "url": "/people/person-0425",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "환승 전갈 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/302/items/1/ko",
-                  "quote": "생업: 환승 전갈 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/303/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -643,1018 +545,403 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/303/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/302/items/1/ko",
-                    "quote": "생업: 환승 전갈 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-44825-S02",
-      "name": {
-        "ko": "태안군 공작령 직영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4482525000",
-          "name": "충청남도 태안군 태안읍"
-        },
-        {
-          "id": "4482525300",
-          "name": "충청남도 태안군 안면읍"
-        },
-        {
-          "id": "4482531000",
-          "name": "충청남도 태안군 고남면"
-        },
-        {
-          "id": "4482532000",
-          "name": "충청남도 태안군 남면"
-        },
-        {
-          "id": "4482533000",
-          "name": "충청남도 태안군 근흥면"
-        },
-        {
-          "id": "4482534000",
-          "name": "충청남도 태안군 소원면"
-        },
-        {
-          "id": "4482535000",
-          "name": "충청남도 태안군 원북면"
-        },
-        {
-          "id": "4482536000",
-          "name": "충청남도 태안군 이원면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-44825-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    },
-    {
-      "id": "holding:chungcheong-3611031000",
-      "name": {
-        "ko": "세종특별자치시 세종시 연기면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611031000",
-          "name": "세종특별자치시 세종시 연기면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611031000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611032000",
-      "name": {
-        "ko": "세종특별자치시 세종시 연동면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611032000",
-          "name": "세종특별자치시 세종시 연동면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611032000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611033000",
-      "name": {
-        "ko": "세종특별자치시 세종시 부강면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611033000",
-          "name": "세종특별자치시 세종시 부강면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611033000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611034000",
-      "name": {
-        "ko": "세종특별자치시 세종시 금남면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611034000",
-          "name": "세종특별자치시 세종시 금남면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611034000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611035000",
-      "name": {
-        "ko": "세종특별자치시 세종시 장군면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611035000",
-          "name": "세종특별자치시 세종시 장군면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611035000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611036000",
-      "name": {
-        "ko": "세종특별자치시 세종시 연서면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611036000",
-          "name": "세종특별자치시 세종시 연서면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611036000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611037000",
-      "name": {
-        "ko": "세종특별자치시 세종시 전의면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611037000",
-          "name": "세종특별자치시 세종시 전의면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611037000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611038000",
-      "name": {
-        "ko": "세종특별자치시 세종시 전동면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611038000",
-          "name": "세종특별자치시 세종시 전동면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611038000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611039000",
-      "name": {
-        "ko": "세종특별자치시 세종시 소정면 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611039000",
-          "name": "세종특별자치시 세종시 소정면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611039000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611051000",
-      "name": {
-        "ko": "세종특별자치시 세종시 한솔동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611051000",
-          "name": "세종특별자치시 세종시 한솔동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611051000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611051500",
-      "name": {
-        "ko": "세종특별자치시 세종시 새롬동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611051500",
-          "name": "세종특별자치시 세종시 새롬동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611051500",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611051800",
-      "name": {
-        "ko": "세종특별자치시 세종시 나성동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611051800",
-          "name": "세종특별자치시 세종시 나성동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611051800",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611052000",
-      "name": {
-        "ko": "세종특별자치시 세종시 도담동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611052000",
-          "name": "세종특별자치시 세종시 도담동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611052000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611052300",
-      "name": {
-        "ko": "세종특별자치시 세종시 어진동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611052300",
-          "name": "세종특별자치시 세종시 어진동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611052300",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611052500",
-      "name": {
-        "ko": "세종특별자치시 세종시 해밀동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611052500",
-          "name": "세종특별자치시 세종시 해밀동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611052500",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611053000",
-      "name": {
-        "ko": "세종특별자치시 세종시 아름동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611053000",
-          "name": "세종특별자치시 세종시 아름동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611053000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611054000",
-      "name": {
-        "ko": "세종특별자치시 세종시 종촌동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611054000",
-          "name": "세종특별자치시 세종시 종촌동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611054000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611055000",
-      "name": {
-        "ko": "세종특별자치시 세종시 고운동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611055000",
-          "name": "세종특별자치시 세종시 고운동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611055000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611055500",
-      "name": {
-        "ko": "세종특별자치시 세종시 소담동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611055500",
-          "name": "세종특별자치시 세종시 소담동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611055500",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611055600",
-      "name": {
-        "ko": "세종특별자치시 세종시 반곡동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611055600",
-          "name": "세종특별자치시 세종시 반곡동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611055600",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611056000",
-      "name": {
-        "ko": "세종특별자치시 세종시 보람동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611056000",
-          "name": "세종특별자치시 세종시 보람동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611056000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611057000",
-      "name": {
-        "ko": "세종특별자치시 세종시 대평동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611057000",
-          "name": "세종특별자치시 세종시 대평동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611057000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    },
-    {
-      "id": "holding:chungcheong-3611058000",
-      "name": {
-        "ko": "세종특별자치시 세종시 다정동 봉신 영지"
-      },
-      "holderPersonId": "K425",
-      "directLiegePersonId": "K998",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "3611058000",
-          "name": "세종특별자치시 세종시 다정동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-chungcheong-3611058000",
-      "geometrySource": "outside-admin-units.units",
-      "territorialScale": "barony",
-      "formalTitleRank": "barony"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-44825-S02",
-      "name": "태안군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K425",
-      "basis": "개막 행정 규모 그룹 44825(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4482525000",
-        "4482525300",
-        "4482531000",
-        "4482532000",
-        "4482533000",
-        "4482534000",
-        "4482535000",
-        "4482536000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-44825-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611031000",
-      "name": "세종특별자치시 세종시 연기면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611031000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611031000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611032000",
-      "name": "세종특별자치시 세종시 연동면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611032000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611032000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611033000",
-      "name": "세종특별자치시 세종시 부강면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611033000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611033000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611034000",
-      "name": "세종특별자치시 세종시 금남면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611034000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611034000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611035000",
-      "name": "세종특별자치시 세종시 장군면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611035000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611035000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611036000",
-      "name": "세종특별자치시 세종시 연서면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611036000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611036000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611037000",
-      "name": "세종특별자치시 세종시 전의면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611037000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611037000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611038000",
-      "name": "세종특별자치시 세종시 전동면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611038000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611038000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611039000",
-      "name": "세종특별자치시 세종시 소정면 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611039000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611039000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611051000",
-      "name": "세종특별자치시 세종시 한솔동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611051000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611051000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611051500",
-      "name": "세종특별자치시 세종시 새롬동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611051500"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611051500",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611051800",
-      "name": "세종특별자치시 세종시 나성동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611051800"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611051800",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611052000",
-      "name": "세종특별자치시 세종시 도담동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611052000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611052000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611052300",
-      "name": "세종특별자치시 세종시 어진동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611052300"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611052300",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611052500",
-      "name": "세종특별자치시 세종시 해밀동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611052500"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611052500",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611053000",
-      "name": "세종특별자치시 세종시 아름동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611053000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611053000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611054000",
-      "name": "세종특별자치시 세종시 종촌동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611054000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611054000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611055000",
-      "name": "세종특별자치시 세종시 고운동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611055000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611055000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611055500",
-      "name": "세종특별자치시 세종시 소담동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611055500"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611055500",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611055600",
-      "name": "세종특별자치시 세종시 반곡동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611055600"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611055600",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611056000",
-      "name": "세종특별자치시 세종시 보람동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611056000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611056000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611057000",
-      "name": "세종특별자치시 세종시 대평동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611057000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611057000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     },
     {
       "id": "title:barony-chungcheong-3611058000",
-      "name": "세종특별자치시 세종시 다정동 영지",
+      "kind": "nonterritorial-political-identity",
       "rank": "barony",
       "holderPersonId": "K425",
       "stateId": "S02",
-      "parentTitleId": "title:duchy-chungcheong-k998",
-      "jurisdictionRefs": [
-        "3611058000"
+      "politicalParentTitleId": "title:duchy-chungcheong-k998",
+      "personalLieges": [
+        {
+          "holdingId": "holding:chungcheong-3611058000",
+          "directLiegePersonId": "K998"
+        }
       ],
-      "basis": "2026-10-11 사용자 승인: 핵심 거점만 공작 직영, 나머지는 기존 궁정 인물에게 읍면동별 하위 영지 수여",
-      "parentTitle": {
-        "id": "title:duchy-chungcheong-k998",
-        "name": "충청권 공작령",
-        "holderPersonId": "K998"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1668,18 +955,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "삼산",
-    "type": "초소 영지",
-    "station": "삼산",
-    "state": "S02",
-    "settlement": {
-      "name": "삼산 정착지",
-      "type": "정착지",
-      "description": "삼산 일대 고정 거점"
-    },
-    "note": "S02 삼산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1716,19 +991,20 @@
     "생업": "환승 전갈 전달",
     "품계": "조합원",
     "직함": "작업반 전령",
+    "업무 위치": "오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
     "가치관": "권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15",
     "욕망": "갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.",
-    "관직": "품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.",
-    "공포": "작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
+    "관직": "품계 조합원. 직함은 작업반 전령. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
+    "일화": "2125년 오류2동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.",
+    "관계": "박도윤은 이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음.",
+    "야망": "박도윤은 이일섭의 종자 대금 제안서가 평의회 수령 장부에 시각까지 남도록 전갈을 끝까지 확인하려 한다.",
+    "공포": "종자 대금 제안서의 수령 시각이 빠져 이일섭의 평의회 인계가 끊기는 것.",
+    "개입": "플레이어는 박도윤과 제안서 수령 칸을 대조하거나 결빙 통로에서 늦어진 전갈의 시각을 다음 교대 장부에 함께 남길 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 침수 구간 붕괴 보고를 미루지 않고 당장 폐쇄했다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 작업반 전령 자리에서 규격맹의 장부를 끊기지 않게 잇는다.\n\n**공포.** 작업반 전령 당직이 비면 규격맹의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음\n:::",
+  "biography": "박도윤은 전갈이 늦어도 수령 시각을 지워 제안서의 인계를 앞당기지 않는다.\n\n- 소속: 규격맹\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.\n\n**일화.** 2125년 오류2동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박도윤은 이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음.\n\n**야망.** 박도윤은 이일섭의 종자 대금 제안서가 평의회 수령 장부에 시각까지 남도록 전갈을 끝까지 확인하려 한다.\n\n**공포.** 종자 대금 제안서의 수령 시각이 빠져 이일섭의 평의회 인계가 끊기는 것.\n\n**개입.** 플레이어는 박도윤과 제안서 수령 칸을 대조하거나 결빙 통로에서 늦어진 전갈의 시각을 다음 교대 장부에 함께 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

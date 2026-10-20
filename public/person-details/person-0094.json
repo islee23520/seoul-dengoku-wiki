@@ -453,47 +453,23 @@
             "name": "정가온",
             "url": "/people/person-0094",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언 사본 봉인·기록 감사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 유언 사본 봉인·기록 감사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -501,95 +477,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 유언 사본 봉인·기록 감사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 유언 사본 봉인·기록 감사"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "정가온 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -612,47 +528,23 @@
             "name": "정가온",
             "url": "/people/person-0094",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유언 사본 봉인·기록 감사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/16/items/1/ko",
-                  "quote": "생업: 유언 사본 봉인·기록 감사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -660,95 +552,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 유언 사본 봉인·기록 감사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/17/text/ko",
-                    "quote": "유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/16/items/1/ko",
-                    "quote": "생업: 유언 사본 봉인·기록 감사"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "정가온 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S04 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
@@ -769,7 +601,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -825,15 +656,15 @@
     "욕망": "갈망 30 | 독점 −20 | 위험 30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 당회 기록감사 자리는 이중 장부 한 줄 삭제로 열렸다.",
+    "생애": "2126년 세대. 정가온은 서울역 등기소에서 자랐다. 정가온은 이중 장부 한 줄 삭제로 당회 기록감사 자리를 맡았다.\n- 정가온의 당회 기록감사 업무는 성수2가3동과 연결된다.",
     "관직": "품계 장로. 직함은 당회 기록감사. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.",
-    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 정가온은 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.",
     "관계": "윤서린에게 유언 사본을 넘기는 계약이고, 한소미의 공동통치안 문구를 다듬는 동맹이며, 박세린의 가문 원장과는 해석 경쟁이다.",
     "야망": "세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 올려, 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.",
-    "공포": "위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 것.",
+    "공포": "정가온은 위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 상황을 두려워한다.",
     "개입": "봉인 사본을 기록청까지 호송하거나, 감사 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다."
   },
-  "biography": "냉정하고 문구의 날짜를 집요하게 대조한다. 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다.\n\n- 소속: 명부교회\n- 생업: 유언 사본 봉인·기록 감사\n- 품계: 장로\n- 직함: 당회 기록감사\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 당회 기록감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 장로. 직함은 당회 기록감사. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤서린에게 유언 사본을 넘기는 계약이고, 한소미의 공동통치안 문구를 다듬는 동맹이며, 박세린의 가문 원장과는 해석 경쟁이다.\n\n**야망.** 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 올려, 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.\n\n**공포.** 위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 것.\n\n**개입.** 봉인 사본을 기록청까지 호송하거나, 감사 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 15 | 무력 −10 | 물질 15 | 공동 20 | 원칙 35 | 공개 −5 | 자격 30 | 분산 30 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −20 | 위험 30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 단혼\n:::",
+  "biography": "냉정하고 문구의 날짜를 집요하게 대조한다. 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다.\n\n- 소속: 명부교회\n- 생업: 유언 사본 봉인·기록 감사\n- 품계: 장로\n- 직함: 당회 기록감사\n**생애.** 2126년 세대. 정가온은 서울역 등기소에서 자랐다. 정가온은 이중 장부 한 줄 삭제로 당회 기록감사 자리를 맡았다.\n- 정가온의 당회 기록감사 업무는 성수2가3동과 연결된다.\n\n**관직.** 품계 장로. 직함은 당회 기록감사. 유언 사본을 봉인해 기록청과 평의회에 동시에 보내고, 단독 해석 방송은 감사 날인 없이 무효라고 선언한다.\n\n**일화.** 2125년 정가온은 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 당회 기록감사 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤서린에게 유언 사본을 넘기는 계약이고, 한소미의 공동통치안 문구를 다듬는 동맹이며, 박세린의 가문 원장과는 해석 경쟁이다.\n\n**야망.** 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 올려, 기록청 인준 이전에도 공방이 해석의 주체가 되게 한다.\n\n**공포.** 정가온은 위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁 도구로 팔리는 상황을 두려워한다.\n\n**개입.** 봉인 사본을 기록청까지 호송하거나, 감사 날인을 위조한 자를 잡아 해석권을 한쪽에 몰아줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 15 | 무력 −10 | 물질 15 | 공동 20 | 원칙 35 | 공개 −5 | 자격 30 | 분산 30 | 변혁 −5\n- 욕망: 갈망 30 | 독점 −20 | 위험 30 | 과시 −25 | 지속 5 | 지향 무성향 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-04"
   ],

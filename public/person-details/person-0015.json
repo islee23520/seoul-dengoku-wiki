@@ -454,52 +454,23 @@
             "name": "명우재",
             "url": "/people/person-0015",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "침수관로 실측",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/193/items/1/ko",
-                  "quote": "생업: 침수관로 실측"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/194/text/ko",
-                    "quote": "채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/195/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,106 +478,41 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/194/text/ko",
-                    "quote": "채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/193/items/1/ko",
-                    "quote": "생업: 침수관로 실측"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/195/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "명우재 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -629,52 +535,23 @@
             "name": "명우재",
             "url": "/people/person-0015",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "침수관로 실측",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/193/items/1/ko",
-                  "quote": "생업: 침수관로 실측"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/194/text/ko",
-                    "quote": "채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/195/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -682,106 +559,41 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/194/text/ko",
-                    "quote": "채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/193/items/1/ko",
-                    "quote": "생업: 침수관로 실측"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/195/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "명우재 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
@@ -802,7 +614,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -854,11 +665,12 @@
     "생업": "침수관로 실측",
     "품계": "주사",
     "직함": "한강 침수관로 탐사원",
+    "업무 위치": "여의동. 여의동 표본 인계에서 명우재는 채수·수심 원장을 박누리에게 넘기고 채온결과 맨홀 출입 시각을 맞추며 여의도·영등포·양천의 관로를 순회한다.",
     "가치관": "권위 50 | 개방 −5 | 무력 10 | 물질 40 | 공동 10 | 원칙 25 | 공개 0 | 자격 0 | 분산 −45 | 변혁 −15",
     "욕망": "갈망 45 | 독점 −30 | 위험 30 | 과시 10 | 지속 −5 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 여의동. 여의동 표본 인계에서 명우재는 채수·수심 원장을 박누리에게 넘기고 채온결과 맨홀 출입 시각을 맞추며 여의도·영등포·양천의 관로를 순회한다.",
     "관직": "품계 주사. 직함은 한강 침수관로 탐사원. 채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다.",
     "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 한강 침수관로 탐사원 자리의 서명이 장부에 올랐다.",
     "관계": "박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.",
@@ -866,7 +678,7 @@
     "공포": "탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.",
     "개입": "잠수 호위를 맡아 우회 급수를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다."
   },
-  "biography": "침수 터널의 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 수문국\n- 생업: 침수관로 실측\n- 품계: 주사\n- 직함: 한강 침수관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 한강 침수관로 탐사원. 채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 한강 침수관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.\n\n**야망.** 여의도·영등포·양천의 침수 우회 관로를 하나의 공개 해도로 그려 물 계약이 단수 없이도 우회 급수하게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.\n\n**개입.** 잠수 호위를 맡아 우회 급수를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 10 | 물질 40 | 공동 10 | 원칙 25 | 공개 0 | 자격 0 | 분산 −45 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −30 | 위험 30 | 과시 10 | 지속 −5 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "침수 터널의 수온으로 시간을 읽고, 지도에 없는 맨홀을 자랑으로 여기지 않는다. 늦은 보고를 죄로 본다.\n\n- 소속: 수문국\n- 생업: 침수관로 실측\n- 품계: 주사\n- 직함: 한강 침수관로 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 한강 침수관로 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 여의동. 여의동 표본 인계에서 명우재는 채수·수심 원장을 박누리에게 넘기고 채온결과 맨홀 출입 시각을 맞추며 여의도·영등포·양천의 관로를 순회한다.\n\n**관직.** 품계 주사. 직함은 한강 침수관로 탐사원. 채수와 수심을 같은 원장에 남기고, 붕괴 구간은 주민대표와 경비대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 한강 침수관로 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 박누리에게 침수 표본을 넘기는 동맹이고, 채온결의 야간 순찰과 맨홀 출입을 지휘로 나누며, 장예린의 서부 검사망에 우회 좌표를 계약으로 보낸다.\n\n**야망.** 여의도·영등포·양천의 침수 우회 관로를 하나의 공개 해도로 그려 물 계약이 단수 없이도 우회 급수하게 한다.\n\n**공포.** 탐사 경로가 군사 비밀로 봉인되어 관로 지도가 보호권의 침투로로 팔리는 것.\n\n**개입.** 잠수 호위를 맡아 우회 급수를 성사시키거나, 비밀 침투로 표시를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 10 | 물질 40 | 공동 10 | 원칙 25 | 공개 0 | 자격 0 | 분산 −45 | 변혁 −15\n- 욕망: 갈망 45 | 독점 −30 | 위험 30 | 과시 10 | 지속 −5 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-01"
   ],

@@ -560,52 +560,23 @@
             "name": "임바다",
             "url": "/people/person-0008",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수 배분 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/17/items/1/ko",
-                  "quote": "생업: 급수 배분 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -613,127 +584,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/17/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/17/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/17/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "임바다 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -756,52 +647,23 @@
             "name": "임바다",
             "url": "/people/person-0008",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수 배분 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/17/items/1/ko",
-                  "quote": "생업: 급수 배분 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -809,127 +671,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/17/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/17/items/1/ko",
-                    "quote": "생업: 급수 배분 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/19/text/ko",
-                    "quote": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/17/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "임바다 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S01 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -950,7 +732,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1002,19 +783,20 @@
     "생업": "급수 배분 당직",
     "품계": "구역장",
     "직함": "서부 급수권 시민대표",
+    "업무 위치": "신정2동. 신정2동 골목에서 임바다는 가족별 배급 대기표를 게시한다. 단수 예고가 나오면 배급 대표들의 연서를 모아 저수조 개방을 요구하고, 구역의 거부권을 가진 이서담에게 협조를 구한다.",
     "가치관": "권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10",
     "욕망": "갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 신정2동 골목에서 임바다는 가족별 배급 대기표를 게시한다. 단수 예고가 나오면 배급 대표들의 연서를 모아 저수조 개방을 요구하고, 구역의 거부권을 가진 이서담에게 협조를 구한다.",
     "관직": "품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.",
-    "일화": "2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 서부 급수권 시민대표 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 가뭄에 임바다는 신정동 골목 저수조의 남은 물을 세어 배급 대표들과 가족별 최소 배분량을 밤새 협의했다.",
     "관계": "백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.",
     "야망": "집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.",
     "공포": "재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.",
     "개입": "단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다."
   },
-  "biography": "온화하나 가족 단위 배급이 끊기는 순간 타협을 멈춘다. 효율을 이유로 한 골목을 희생하자는 말을 모욕으로 듣는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 구역장\n- 직함: 서부 급수권 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.\n\n**일화.** 2125년 가뭄에 상류 저수지 방류량을 두고 배급 대표와 밤새 나눴다. 이 일로 서부 급수권 시민대표 자리의 서명이 장부에 올랐다.\n\n**관계.** 백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.\n\n**야망.** 집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.\n\n**개입.** 단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "온화하나 가족 단위 배급이 끊기는 순간 타협을 멈춘다. 효율을 이유로 한 골목을 희생하자는 말을 모욕으로 듣는다.\n\n- 소속: 수문국\n- 생업: 급수 배분 당직\n- 품계: 구역장\n- 직함: 서부 급수권 시민대표\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 서부 급수권 시민대표 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 업무 위치: 신정2동. 신정2동 골목에서 임바다는 가족별 배급 대기표를 게시한다. 단수 예고가 나오면 배급 대표들의 연서를 모아 저수조 개방을 요구하고, 구역의 거부권을 가진 이서담에게 협조를 구한다.\n\n**관직.** 품계 구역장. 직함은 서부 급수권 시민대표. 골목별 배급 대기표를 공개 게시하고, 단수 예고가 뜨면 대표 연서로 저수조 개방을 요구한다.\n\n**일화.** 2125년 가뭄에 임바다는 신정동 골목 저수조의 남은 물을 세어 배급 대표들과 가족별 최소 배분량을 밤새 협의했다.\n\n**관계.** 백온과 이동 급수권 동맹을 맺었고, 한재목의 집단 단수 제재에는 깊은 원한이 있으며, 이서담의 구역 거부권을 후견처럼 따른다.\n\n**야망.** 집단 단수 대상이 되어도 식수 최저선을 남기는 시민 급수권을 물 계약에 못 박는다.\n\n**공포.** 재난 구역 주민이 급수 의무의 숫자로만 남아 난민 명부로 떠밀리는 것.\n\n**개입.** 단수 예고의 피해 골목을 실측해 최저선을 관철하거나, 대기표 조작을 밝혀 대표 자격을 박탈할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 35 | 개방 −5 | 무력 20 | 물질 20 | 공동 20 | 원칙 15 | 공개 15 | 자격 0 | 분산 −45 | 변혁 −10\n- 욕망: 갈망 40 | 독점 −40 | 위험 10 | 과시 −25 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

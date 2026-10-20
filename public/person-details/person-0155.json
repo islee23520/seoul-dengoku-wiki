@@ -2,9 +2,9 @@
   "id": "person-0155",
   "name": "양해온",
   "title": "인준 심사 전령",
-  "position": "인준 심사 전령 · 속초시 영주",
+  "position": "인준 심사 전령",
   "characterId": "K154",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "인준 보류 전갈·보관 확인 전달",
   "gender": "여성",
@@ -559,47 +559,23 @@
             "name": "양해온",
             "url": "/people/person-0155",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인준 보류 전갈·보관 확인 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 인준 보류 전갈·보관 확인 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -607,95 +583,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 인준 보류 전갈·보관 확인 전달"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 인준 보류 전갈·보관 확인 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "양해온 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -718,47 +634,23 @@
             "name": "양해온",
             "url": "/people/person-0155",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "인준 보류 전갈·보관 확인 전달",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/138/items/0/ko",
-                  "quote": "생업: 인준 보류 전갈·보관 확인 전달"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -766,177 +658,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 인준 보류 전갈·보관 확인 전달"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/139/text/ko",
-                    "quote": "전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/138/items/0/ko",
-                    "quote": "생업: 인준 보류 전갈·보관 확인 전달"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "지하 보도",
-              "camp": {
-                "name": "양해온 지하도 야영지",
-                "type": "야영지",
-                "description": "지하 보도에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51210-S06",
-      "name": {
-        "ko": "속초시 공작령 직영지"
-      },
-      "holderPersonId": "K154",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5121051000",
-          "name": "강원특별자치도 속초시 영랑동"
-        },
-        {
-          "id": "5121052000",
-          "name": "강원특별자치도 속초시 동명동"
-        },
-        {
-          "id": "5121054000",
-          "name": "강원특별자치도 속초시 금호동"
-        },
-        {
-          "id": "5121056000",
-          "name": "강원특별자치도 속초시 교동"
-        },
-        {
-          "id": "5121057000",
-          "name": "강원특별자치도 속초시 노학동"
-        },
-        {
-          "id": "5121058000",
-          "name": "강원특별자치도 속초시 조양동"
-        },
-        {
-          "id": "5121059000",
-          "name": "강원특별자치도 속초시 청호동"
-        },
-        {
-          "id": "5121060000",
-          "name": "강원특별자치도 속초시 대포동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51210-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51210-S06",
-      "name": "속초시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K154",
-      "basis": "개막 행정 규모 그룹 51210(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5121051000",
-        "5121052000",
-        "5121054000",
-        "5121056000",
-        "5121057000",
-        "5121058000",
-        "5121059000",
-        "5121060000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51210-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -951,7 +724,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1000,22 +772,22 @@
   },
   "fields": {
     "생업": "인준 보류 전갈·보관 확인 전달",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "인준 심사 전령",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
+    "담당 업무": "인준 심사 전령",
     "가치관": "권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40",
     "욕망": "갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.",
+    "생애": "서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 양해온의 인준 보류 전갈과 보관 확인을 전하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 심사 전령.",
     "일화": "강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.",
     "관계": "강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.",
     "야망": "계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.",
     "공포": "위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.",
     "개입": "위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다."
   },
-  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 생업: 인준 보류 전갈·보관 확인 전달\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 심사 전령\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 인준 심사 전령. 전갈을 심사관과 문서고에 동시에 보내고, 인준 보류는 강예준의 날인과 조하린의 보관 확인이 둘 다 있어야 달린다.\n\n**일화.** 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.\n\n**관계.** 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.\n\n**야망.** 계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "봉인 끈이 느슨하면 출발을 거부하고, 구두 전갈을 기록하지 않는 사신을 위조일 수 있다고 본다. 숨이 차도 사본 두 장을 한 손에 쥔다.\n\n- 생업: 인준 보류 전갈·보관 확인 전달\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 인준 심사 전령\n**생애.** 서울역 등기소에서 자랐다. 인준 심사 전령 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 양해온의 인준 보류 전갈과 보관 확인을 전하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 심사 전령.\n\n**일화.** 강예준의 심사 정지 선언과 지목현의 동부 파견 전갈이 같은 날 전령 가방에 함께 든다. 양해온은 조하린의 보관 확인을 먼저 받아 인준 보류를 달고, 두 전갈 가운데 어느 쪽을 먼저 문서고에 넣을지 인준 시점을 따져 정한다.\n\n**관계.** 강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고, 마도한의 사본 상자와 순번을 계약으로 나누며, 지목현의 동부 파견 전갈과 인준 시점을 저울질한다.\n\n**야망.** 계승과 급수·수리 조약의 인준 통지를 자신이 날인하는 전령 원장에만 유효하게 만든다.\n\n**공포.** 위조 인준 전갈 한 장이 유언을 통과시켜 전령망이 강국 하청으로 몰락하는 것.\n\n**개입.** 위조 전갈을 찾아 봉인을 지키거나, 가방 속 보류 문서를 폭로해 인준을 강제할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 10 | 무력 −35 | 물질 −30 | 공동 20 | 원칙 60 | 공개 −10 | 자격 0 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −10 | 위험 25 | 과시 10 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],

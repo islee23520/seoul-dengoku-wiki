@@ -1,24 +1,28 @@
 # 성씨·본관·항렬 데이터 계약
 
-이 문서는 `name-pools/` 아래 네 파일의 필수 칸과 검사 규칙을 정한다. 기계 검사는
-`Tool/tools/wiki/verify-hangnyeol.mjs`이며, 여기 적힌 규칙과 코드가 어긋나면 코드가 정본이다.
+이 문서는 `name-pools/` 아래 네 파일의 필수 칸과 검사 규칙을 정한다.
+현재 작업트리에는 옛 검사기 `TOOL/tools/wiki/verify-hangnyeol.mjs`가 없다. 아래 데이터 계약은
+저작·검토 기준이며, 검사기와 근거 원자료가 다시 제공되기 전에는 기계 검증 완료를 주장하지 않는다.
 
 검사 실행:
 
 ```bash
-node Tool/tools/wiki/verify-hangnyeol.mjs            # 데이터 계약
-node Tool/tools/wiki/verify-hangnyeol.mjs --cast     # 인물 적용까지
-node Tool/tools/wiki/test-verify-hangnyeol.mjs       # 검사기 단위 테스트
+# 현재 작업트리에서는 실행할 수 없음:
+# node TOOL/tools/wiki/verify-hangnyeol.mjs
+# node TOOL/tools/wiki/verify-hangnyeol.mjs --cast
+# node TOOL/tools/wiki/test-verify-hangnyeol.mjs
 ```
 
 ## 공통 규칙
 
 - 모든 파일은 `{ "id", "schema", "note", "sources": [...] }` 를 가진다.
-- `sources[]` 한 항목은 `{ "id", "url", "accessed", "quote", "evidence", "live_check" }` 전부를 채운다.
+- `sources[]` 한 항목은 `{ "id", "url", "accessed", "quote", "evidence", "live_check", "license", "attribution", "revision" }` 전부를 채운다.
   - `url`은 실제로 연 주소, `accessed`는 `YYYY-MM-DD`.
   - `quote`는 그 주소에서 **그대로 복사한** 문장이다. 요약·번역·재작성은 인용이 아니다.
-  - `evidence`는 저장소 안 원자료 경로(`Research/verification/hangnyeol/raw/*.md`)다.
-    검사기는 그 파일을 열어 `quote`가 실제로 들어 있는지 대조한다(공백만 정규화).
+  - `evidence`는 저장소 안 원자료 경로(`RESEARCH/verification/hangnyeol/raw/*.md`)다. 현재 작업트리에 그 원자료가 없으면 경로를 임의로 바꾸지 않고 `live_check: "unchecked"`와 미확인 사유를 남긴다.
+  - `license`는 원자료의 재사용 조건 또는 `unknown`을 명시한다. 라이선스를 확인하지 못한 자료를 공개 사용 가능으로 간주하지 않는다.
+  - `attribution`은 저작자·기관명과 공개 시 유지할 출처표시 문구를 적는다. 해당 사항이 없다고 판단하면 그 근거를 함께 적는다.
+  - `revision`은 확인한 판본·게시일·최종수정일·문서 식별자 중 원자료를 다시 특정할 수 있는 값을 적는다. 확인할 수 없으면 `unknown`과 확인일을 기록한다.
 - 출처가 필요한 행은 `sources: ["<source id>"]`로 참조한다. 참조가 풀리지 않으면 실패한다.
 - `id`는 파일 안에서 유일하다.
 
@@ -34,7 +38,7 @@ node Tool/tools/wiki/test-verify-hangnyeol.mjs       # 검사기 단위 테스�
 | `artifact_corrected` | 재대조 결과가 `MISMATCH`였고, 그 차이가 공백·둥근따옴표·NBSP·표 행 분리 같은 표기 차이였다. 보고가 적어 둔 실제 본문을 인용으로 쓴다 | `record_id`, `live_check_ref` |
 | `unchecked` | 아직 재대조하지 않았다 | 없음 |
 
-- `live_check_ref`는 재대조 보고 경로(`Research/verification/hangnyeol/raw/_verify-*.md`)다.
+- `live_check_ref`는 재대조 보고 경로(`RESEARCH/verification/hangnyeol/raw/_verify-*.md`)다.
 - `record_id`는 그 보고의 표에 있는 수확 레코드 id다. 검사기는 보고에서 그 id 칸을 찾아
   판정 토큰(`VERBATIM_OK` / `MISMATCH`)이 선언과 맞는지 확인한다. **부분 문자열이 아니라
   표의 한 칸이 정확히 같아야 한다.**

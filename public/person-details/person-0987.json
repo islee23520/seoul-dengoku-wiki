@@ -561,58 +561,23 @@
             "name": "홍람원",
             "url": "/people/person-0987",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜·펌프 정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/687/items/1/ko",
-                  "quote": "생업: 차륜·펌프 정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/688/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/689/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/689/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 10
               }
             },
             "traits": [],
@@ -620,105 +585,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/688/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/687/items/1/ko",
-                    "quote": "생업: 차륜·펌프 정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/689/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/687/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 11,
               "Will": 12,
               "Per": 12,
-              "FP": 11,
               "BasicSpeed": 5.25,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 50,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 70,
-              "unspent": 5,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "건대입구",
-              "type": "초소 영지",
-              "station": "건대입구",
-              "state": "S04",
-              "settlement": {
-                "name": "건대입구 정착지",
-                "type": "정착지",
-                "description": "건대입구 일대 고정 거점"
-              },
-              "note": "S04 건대입구 일대 관할 영지"
+              "unspent": 5
             }
           }
         }
@@ -742,58 +642,23 @@
             "name": "홍람원",
             "url": "/people/person-0987",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "차륜·펌프 정비",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/687/items/1/ko",
-                  "quote": "생업: 차륜·펌프 정비"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/688/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/689/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 11,
-                "cp": 10,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/689/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ]
+                "cp": 10
               }
             },
             "traits": [],
@@ -801,105 +666,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/688/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/687/items/1/ko",
-                    "quote": "생업: 차륜·펌프 정비"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/689/text/ko",
-                    "quote": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/687/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 11
+                "level": 11,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 11,
               "Will": 12,
               "Per": 12,
-              "FP": 11,
               "BasicSpeed": 5.25,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 50,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 70,
-              "unspent": 5,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "건대입구",
-              "type": "초소 영지",
-              "station": "건대입구",
-              "state": "S04",
-              "settlement": {
-                "name": "건대입구 정착지",
-                "type": "정착지",
-                "description": "건대입구 일대 고정 거점"
-              },
-              "note": "S04 건대입구 일대 관할 영지"
+              "unspent": 5
             }
           }
         }
@@ -920,18 +720,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "건대입구",
-    "type": "초소 영지",
-    "station": "건대입구",
-    "state": "S04",
-    "settlement": {
-      "name": "건대입구 정착지",
-      "type": "정착지",
-      "description": "건대입구 일대 고정 거점"
-    },
-    "note": "S04 건대입구 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -972,15 +760,15 @@
     "욕망": "갈망 20 | 독점 −10 | 위험 −15 | 과시 20 | 지속 10 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
-    "관직": "품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
-    "일화": "2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.",
-    "공포": "부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2126년 세대. 홍람원은 신정 차량기지에서 자랐다. 홍람원은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 홍람원의 부품 물류상 업무는 성수2가1동과 연결된다.",
+    "관직": "홍람원은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.",
+    "일화": "2125년 홍람원은 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.",
+    "관계": "홍람원은 같은 생활권 선배 당직자와 인수인계로 묶인다.",
+    "야망": "홍람원은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.",
+    "공포": "홍람원은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.",
+    "개입": "홍람원은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 부품 물류상 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 교사. 직함은 부품 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 부품 물류상 자리에서 명부교회의 장부를 끊기지 않게 잇는다.\n\n**공포.** 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 5 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −15 | 자격 30 | 분산 25 | 변혁 0\n- 욕망: 갈망 20 | 독점 −10 | 위험 −15 | 과시 20 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "홍람원은 당직을 끊지 않는 쪽을 먼저 고른다. 홍람원은 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 명부교회\n- 생업: 차륜·펌프 정비\n- 품계: 교사\n- 직함: 부품 물류상\n**생애.** 2126년 세대. 홍람원은 신정 차량기지에서 자랐다. 홍람원은 탈선 직전 결함 보고로 부품 물류상 자리를 맡았다.\n- 홍람원의 부품 물류상 업무는 성수2가1동과 연결된다.\n\n**관직.** 홍람원은 자신의 직위에 딸린 열쇠와 기록만 인계한다. 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 홍람원은 고장 난 제동을 밤새 고쳐 다음 교대 배차를 지켰다. 이 일로 부품 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 홍람원은 같은 생활권 선배 당직자와 인수인계로 묶인다.\n\n**야망.** 홍람원은 부품 물류상 당직에서 명부교회의 장부를 끊기지 않게 잇고자 한다.\n\n**공포.** 홍람원은 부품 물류상 당직이 비면 명부교회의 통행이 강국 볼모가 되는 상황을 두려워한다.\n\n**개입.** 홍람원은 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 5 | 무력 −20 | 물질 40 | 공동 30 | 원칙 5 | 공개 −15 | 자격 30 | 분산 25 | 변혁 0\n- 욕망: 갈망 20 | 독점 −10 | 위험 −15 | 과시 20 | 지속 10 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-04"
   ],

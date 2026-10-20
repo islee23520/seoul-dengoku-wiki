@@ -2,7 +2,7 @@
   "id": "person-0330",
   "name": "동늘솔",
   "title": "약재 운송 물류상",
-  "position": "약재 운송 수련의",
+  "position": "약재 운송 물류상",
   "characterId": "K329",
   "rank": "수련의",
   "commonTier": "T3",
@@ -444,52 +444,23 @@
             "name": "동늘솔",
             "url": "/people/person-0330",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 입고 중량·출고 송장 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/116/items/0/ko",
-                  "quote": "생업: 약재 입고 중량·출고 송장 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -497,111 +468,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 약재 입고 중량·출고 송장 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 약재 입고 중량·출고 송장 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "동늘솔 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -624,52 +525,23 @@
             "name": "동늘솔",
             "url": "/people/person-0330",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "약재 입고 중량·출고 송장 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/116/items/0/ko",
-                  "quote": "생업: 약재 입고 중량·출고 송장 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -677,111 +549,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 약재 입고 중량·출고 송장 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/115/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 약재 입고 중량·출고 송장 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "동늘솔 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -802,7 +604,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -853,20 +654,20 @@
     "생업": "약재 입고 중량·출고 송장 확인",
     "소속": "흰십자단",
     "품계": "수련의",
-    "직함": "약재 운송 수련의",
+    "직함": "약재 운송 물류상",
     "가치관": "권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10",
     "욕망": "갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 약재 운송 수련의 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2075-03-13에 태어났다. 2126년 개막 현재 약재 운송 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 입고 중량·출고 송장 확인 창구가 동늘솔의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
     "관직": "품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.",
     "일화": "선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.",
     "관계": "심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.",
-    "야망": "제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 강국 독점 입찰이 마차를 사지 못하게 한다.",
-    "공포": "군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.",
-    "개입": "공백 송장을 공개하거나, 강국 구매 대리인의 마차를 저울 앞에서 세울 수 있다."
+    "야망": "제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 비공개 독점 입찰이 마차를 사지 못하게 하려 한다.",
+    "공포": "군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 일을 두려워한다.",
+    "개입": "공백 송장을 공개하거나, 비공개 선매 대리인의 마차를 저울 앞에서 세울 수 있다."
   },
-  "biography": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 약재 입고 중량·출고 송장 확인\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 운송 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 약재 운송 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.\n\n**일화.** 선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.\n\n**관계.** 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.\n\n**야망.** 제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 강국 독점 입찰이 마차를 사지 못하게 한다.\n\n**공포.** 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 것.\n\n**개입.** 공백 송장을 공개하거나, 강국 구매 대리인의 마차를 저울 앞에서 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
+  "biography": "상자 무게와 건조 일자를 같은 저울에 올리고, 선매 영수증만 들고 온 사신을 손님으로 들이지 않는다. 흥정은 짧게 끝내고 구두 운임을 인정하지 않는다.\n\n- 생업: 약재 입고 중량·출고 송장 확인\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 약재 운송 물류상\n**생애.** 2075-03-13에 태어났다. 2126년 개막 현재 약재 운송 물류상 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 약재 입고 중량·출고 송장 확인 창구가 동늘솔의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 약재 운송 수련의. 입고 중량을 두 증인이 보고, 대량 출고 송장은 담당 전문의와 단장의 진료 배정 날인이 있기 전에는 싣지 않는다.\n\n**일화.** 선매 장부가 사라진 날, 같은 시각의 운송 송장에 무게 공백이 세 칸 있었다.\n\n**관계.** 심달호와 운송 계약을 맺고, 동주하의 시장 저울에 무게를 맞춘다. 은태호의 가락 식량과 약재 교환 비율을 송장 말미에 적는다.\n\n**야망.** 제기동·청량리 약재 운송을 공개 시세와 중증도 배정 무게로만 열어 비공개 독점 입찰이 마차를 사지 못하게 하려 한다.\n\n**공포.** 군수 문장이 해열 생약 송장에 섞여 시장 바닥이 한 계절에 드러나는 일을 두려워한다.\n\n**개입.** 공백 송장을 공개하거나, 비공개 선매 대리인의 마차를 저울 앞에서 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −25 | 개방 35 | 무력 −45 | 물질 5 | 공동 15 | 원칙 40 | 공개 30 | 자격 20 | 분산 15 | 변혁 −10\n- 욕망: 갈망 10 | 독점 10 | 위험 10 | 과시 −10 | 지속 40 | 지향 유동 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-13"
   ],

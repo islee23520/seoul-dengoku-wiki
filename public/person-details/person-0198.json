@@ -453,41 +453,23 @@
             "name": "신태산",
             "url": "/people/person-0198",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "호송 경로·도착 중량 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/72/items/2/ko",
-                  "quote": "생업: 호송 경로·도착 중량 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -495,90 +477,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/72/items/2/ko",
-                    "quote": "생업: 호송 경로·도착 중량 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/72/items/2/ko",
-                    "quote": "생업: 호송 경로·도착 중량 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "신태산 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 59
+            }
           }
         }
       },
@@ -601,41 +528,23 @@
             "name": "신태산",
             "url": "/people/person-0198",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "호송 경로·도착 중량 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/72/items/2/ko",
-                  "quote": "생업: 호송 경로·도착 중량 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -643,90 +552,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/72/items/2/ko",
-                    "quote": "생업: 호송 경로·도착 중량 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/72/items/2/ko",
-                    "quote": "생업: 호송 경로·도착 중량 대조"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "신태산 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S08 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 59
+            }
           }
         }
       }
@@ -747,7 +601,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -803,7 +656,7 @@
     "욕망": "갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.",
+    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n- 신태산은 노량진1동에서 호송 경로·도착 중량 대조 업무를 맡는다.\n- 신태산은 한강로동에서 호송 경로·도착 중량 대조 업무를 맡는다.",
     "관직": "품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.",
     "일화": "한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.",
     "관계": "오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.",
@@ -811,7 +664,7 @@
     "공포": "호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
     "개입": "밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다."
   },
-  "biography": "과묵하고 신의가 강하다. 호송 중에 화물을 열어본 대원은 그날로 자경대에서 뺀다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 호송 경로·도착 중량 대조\n- 직함: 호송 반장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n\n**관직.** 품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.\n\n**관계.** 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.\n\n**야망.** 노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 60 | 공동 −15 | 원칙 −25 | 공개 25 | 자격 0 | 분산 30 | 변혁 10\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자\n:::",
+  "biography": "과묵하고 신의가 강하다. 호송 중에 화물을 열어본 대원은 그날로 자경대에서 뺀다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 호송 경로·도착 중량 대조\n- 직함: 호송 반장\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 호송 반장 자리는 무표 출발 열차 저지로 열렸다.\n- 신태산은 노량진1동에서 호송 경로·도착 중량 대조 업무를 맡는다.\n- 신태산은 한강로동에서 호송 경로·도착 중량 대조 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 호송 반장. 경로와 무장은 출발 직전에만 알리고, 도착 중량이 출발과 다르면 전 대원 배급을 깎는다.\n\n**일화.** 한 호송칸에서 암사제 봉인 상자가 나와 시장 자경대가 선단 출항을 막았다.\n\n**관계.** 오해린과 호송 계약을 맺고 송이든의 환적 창에서 인계한다. 장세화의 공동호송 초안을 현장 기준으로 검토 중이다.\n\n**야망.** 노량진 호송선단을 공동호송의 실무 뼈대로 키워 강국의 보호비를 시장 자경으로 대체한다.\n\n**공포.** 호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.\n\n**개입.** 밀수 상자의 출처를 밝히거나, 호송을 강행해 노량진의 중립을 시험할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 5 | 개방 35 | 무력 −25 | 물질 60 | 공동 −15 | 원칙 −25 | 공개 25 | 자격 0 | 분산 30 | 변혁 10\n- 욕망: 갈망 −10 | 독점 −20 | 위험 −30 | 과시 −5 | 지속 15 | 지향 동성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-08"
   ],

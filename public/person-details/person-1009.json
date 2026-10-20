@@ -6,7 +6,7 @@
   "characterId": "K1009",
   "rank": "없음",
   "commonTier": "T5",
-  "occupation": "호위·탐사 계약·무전 송신",
+  "occupation": "미등록",
   "gender": "남성",
   "stage": "S1",
   "state": "S14",
@@ -19,9 +19,9 @@
   "ageAsOf": "2126-12-31",
   "sourceStatus": "owner-authored",
   "sourceRefs": [
-    "lore/characters/Core-Characters.json#/content/174",
-    "lore/characters/Core-Characters.json#/content/178",
-    "lore/characters/Core-Characters.json#/content/179",
+    "lore/characters/Core-Characters.json#/content/153",
+    "vendor/issued-history/corpus/lore/name-pools/cast-birthdays.json#/people/1008",
+    "lore/characters/Core-Characters.json#/content/158",
     "lore/chronology/Century-Annals.json#/content/468",
     "lore/chronology/Century-Annals.json#/content/483",
     "lore/chronology/Century-Annals.json#/content/485",
@@ -103,7 +103,7 @@
             },
             {
               "path": "lore/characters/Core-Characters.json",
-              "anchor": "/content/181"
+              "anchor": "신준-p2"
             }
           ]
         },
@@ -601,8 +601,8 @@
       }
     ],
     "narrative": {
-      "ko": "명부 밖 피난민을 데리고 귀환한 뒤 특수회수반에서 물러났다. 호위·탐사와 무전을 이어 가면서 중계기 도입 때 현장 회수와 주민 동의를 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 동행시키지 않는다.",
-      "en": "He returned with unrostered refugees and later left the special recovery unit. He continues escort, exploration, and radio work, handling recovery and resident consent for new relays. He does not take Shin Jun into work that compromises his consent or rest."
+      "ko": "명부 밖 피난민을 데리고 귀환한 뒤 특수회수반에서 물러났다. 호위·탐사와 무전을 이어 가면서 중계기 도입 때 현장 회수와 주민 동의를 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 동행시키지 않는다. 폐쇄 통신창고에서 송수신부를 회수하려 할 때는 같은 부품으로 생활 전력을 유지하는 주민과 회수 수량을 협의한다.",
+      "en": "He returned with unrostered refugees and later left the special recovery unit. He continues escort, exploration, and radio work, handling recovery and resident consent for new relays. He does not take Shin Jun into work that compromises his consent or rest. If he attempts to recover transmitter-receiver parts from the closed communications depot, he negotiates the quantity with residents who need the same parts for household power."
     },
     "health": {
       "status": "unassessed",
@@ -664,408 +664,107 @@
             "name": "신종목",
             "url": "/people/person-1009",
             "state": "S14",
-            "method": "pilot-approved",
-            "role": {
-              "display": "호위·탐사 계약·무전 송신",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/175/text/ko",
-                  "quote": "생업 별명은 호위·탐사 계약·무전 송신."
-                }
-              ]
-            },
+            "band": "주역·강자",
             "attributes": {
               "ST": {
                 "value": 13,
-                "cp": 30,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "조재표와 신종목은 높은 전투력의 주역·강자 구간에서 먼저 검토한다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/176/text/ko",
-                    "quote": "무공. 총검술."
-                  },
-                  {
-                    "path": "lore/culture/Martial-Paths.json",
-                    "pointer": "/content/11/rows/3/1/ko",
-                    "quote": "총검술"
-                  }
-                ]
+                "cp": 30
               },
               "DX": {
                 "value": 15,
-                "cp": 100,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "신종목의 DX는 13이고 총검술(Spear)은 12 CP다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/176/text/ko",
-                    "quote": "무공. 총검술."
-                  }
-                ]
+                "cp": 100
               },
               "IQ": {
                 "value": 15,
-                "cp": 100,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/173/text/ko",
-                    "quote": "호출부호는 백야다. 동방사 특수회수반의 선임 공작원이었다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "수리한 무전기로 옛 호출부호를 송신했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2121년 1월 의무원·주민·보호자의 응답을 기록했다."
-                  }
-                ]
+                "cp": 100
               },
               "HT": {
                 "value": 14,
-                "cp": 40,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  }
-                ]
+                "cp": 40
               }
             },
             "traits": [
               {
                 "name": "Combat Reflexes",
                 "kind": "advantage",
-                "rule": "combat-reflexes",
                 "cp": 15,
-                "page": "B43",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "조재표와 신종목에게 Combat Reflexes [15]를 둔다."
-                  }
-                ]
+                "rule": "combat-reflexes"
               }
             ],
             "skills": [
               {
                 "name": "Spear (fixed bayonet)",
                 "ko": "총검술",
-                "attr": "DX",
-                "diff": "A",
-                "tier": "A",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/176/text/ko",
-                    "quote": "무공. 총검술."
-                  },
-                  {
-                    "path": "WORLD_BUILDING_GUIDE.md",
-                    "quote": "최소 문구는 `무공: 총검술` 또는 `신종목은 총검술을 익혔다.`다."
-                  },
-                  {
-                    "path": "lore/culture/Martial-Paths.json",
-                    "pointer": "/content/11/rows/3/1/ko",
-                    "quote": "총검술"
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "조재표와 신종목은 높은 전투력의 주역·강자 구간에서 먼저 검토한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "신종목의 DX는 13이고 총검술(Spear)은 12 CP다."
-                  }
-                ],
-                "cp": 12,
-                "level": 16
+                "level": 16,
+                "cp": 12
               },
               {
                 "name": "Electronics Operation/TL? (Communications)",
                 "ko": "무전 운용",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "수리한 무전기로 옛 호출부호를 송신했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/175/text/ko",
-                    "quote": "생업 별명은 호위·탐사 계약·무전 송신."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/177/text/ko",
-                    "quote": "귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다."
-                  },
-                  {
-                    "path": "lore/chronology/Century-Annals.json",
-                    "pointer": "/content/483/text/ko",
-                    "quote": "2120년부터 신종목은 수리한 무전기로 특수회수반의 호출부호를 송신하였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (강남구청 생활권·귀환망 12곳)",
                 "ko": "지역 지식",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다."
-                  },
-                  {
-                    "path": "lore/chronology/Scenario-Timeline.json",
-                    "pointer": "/content/12/text/ko",
-                    "quote": "2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었으며 신종목이 그 명단을 기록하였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Scrounging",
                 "ko": "현장 회수",
-                "attr": "Per",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/177/text/ko",
-                    "quote": "귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/179/text/ko",
-                    "quote": "새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Relations.json",
-                    "pointer": "/content/1/rows/195/3/ko",
-                    "quote": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음"
-                  },
-                  {
-                    "path": "lore/chronology/Scenario-Timeline.json",
-                    "pointer": "/content/20/text/ko",
-                    "quote": "귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면 신종목과 같은 부품으로 생활 전력을 유지하는 주민이 회수 수량을 두고 협의한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭(주민 동의)",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/177/text/ko",
-                    "quote": "귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/179/text/ko",
-                    "quote": "새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Relations.json",
-                    "pointer": "/content/1/rows/195/3/ko",
-                    "quote": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음"
-                  },
-                  {
-                    "path": "lore/chronology/Scenario-Timeline.json",
-                    "pointer": "/content/20/text/ko",
-                    "quote": "귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면 신종목과 같은 부품으로 생활 전력을 유지하는 주민이 회수 수량을 두고 협의한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Navigation/TL? (Land)",
                 "ko": "길찾기(지상)",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/175/text/ko",
-                    "quote": "생업 별명은 호위·탐사 계약·무전 송신."
-                  },
-                  {
-                    "path": "lore/chronology/Century-Annals.json",
-                    "pointer": "/content/485/text/ko",
-                    "quote": "아이 신준과 함께 강남구청 생활권으로 거처를 옮긴 뒤 호위·탐사 계약을 맡았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Leadership",
                 "ko": "지휘(피난민 귀환)",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다."
-                  },
-                  {
-                    "path": "lore/chronology/Century-Annals.json",
-                    "pointer": "/content/468/text/ko",
-                    "quote": "마지막 회수 작전에서 명부 밖 피난민을 데리고 귀환하였다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Observation",
                 "ko": "관찰(호위)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Hiking",
                 "ko": "장거리 도보",
-                "attr": "HT",
-                "diff": "A",
-                "tier": "D",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  }
-                ],
-                "cp": 2,
-                "level": 12
+                "level": 12,
+                "cp": 2
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 13,
+              "FP": 14,
               "Will": 15,
               "Per": 15,
-              "FP": 14,
               "BasicSpeed": 7.25,
               "BasicMove": 7,
               "BasicLift": 34,
               "Dodge": 11
             },
             "cp": {
+              "total": 347,
               "attributes": 270,
               "advantages": 15,
               "disadvantages": 0,
               "skills": 62,
               "spent": 347,
-              "unspent": 0,
-              "total": 347
-            },
-            "band": "주역·강자",
-            "baseline": false,
-            "unit": {
-              "type": "신종목 인솔대",
-              "size": 25,
-              "quality": "정예",
-              "composition": [
-                "총검병",
-                "경비병"
-              ],
-              "note": "신종목 인솔 전투부대",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "명동",
-              "type": "역 영지",
-              "station": "명동",
-              "state": "S06",
-              "settlement": {
-                "name": "명동 정착지",
-                "type": "정착지",
-                "description": "명동 일대 고정 거점"
-              },
-              "note": "S06 명동 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -1089,408 +788,107 @@
             "name": "신종목",
             "url": "/people/person-1009",
             "state": "S14",
-            "method": "pilot-approved",
-            "role": {
-              "display": "호위·탐사 계약·무전 송신",
-              "evidence": [
-                {
-                  "path": "lore/characters/Core-Characters.json",
-                  "pointer": "/content/175/text/ko",
-                  "quote": "생업 별명은 호위·탐사 계약·무전 송신."
-                }
-              ]
-            },
+            "band": "주역·강자",
             "attributes": {
               "ST": {
                 "value": 13,
-                "cp": 30,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "조재표와 신종목은 높은 전투력의 주역·강자 구간에서 먼저 검토한다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/176/text/ko",
-                    "quote": "무공. 총검술."
-                  },
-                  {
-                    "path": "lore/culture/Martial-Paths.json",
-                    "pointer": "/content/11/rows/3/1/ko",
-                    "quote": "총검술"
-                  }
-                ]
+                "cp": 30
               },
               "DX": {
                 "value": 15,
-                "cp": 100,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "신종목의 DX는 13이고 총검술(Spear)은 12 CP다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/176/text/ko",
-                    "quote": "무공. 총검술."
-                  }
-                ]
+                "cp": 100
               },
               "IQ": {
                 "value": 15,
-                "cp": 100,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/173/text/ko",
-                    "quote": "호출부호는 백야다. 동방사 특수회수반의 선임 공작원이었다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "수리한 무전기로 옛 호출부호를 송신했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2121년 1월 의무원·주민·보호자의 응답을 기록했다."
-                  }
-                ]
+                "cp": 100
               },
               "HT": {
                 "value": 14,
-                "cp": 40,
-                "rule": "pilot-approved",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "G1 견본은 소유자가 견본값으로 승인했다(2026-09-28)."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  }
-                ]
+                "cp": 40
               }
             },
             "traits": [
               {
                 "name": "Combat Reflexes",
                 "kind": "advantage",
-                "rule": "combat-reflexes",
                 "cp": 15,
-                "page": "B43",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "조재표와 신종목에게 Combat Reflexes [15]를 둔다."
-                  }
-                ]
+                "rule": "combat-reflexes"
               }
             ],
             "skills": [
               {
                 "name": "Spear (fixed bayonet)",
                 "ko": "총검술",
-                "attr": "DX",
-                "diff": "A",
-                "tier": "A",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/176/text/ko",
-                    "quote": "무공. 총검술."
-                  },
-                  {
-                    "path": "WORLD_BUILDING_GUIDE.md",
-                    "quote": "최소 문구는 `무공: 총검술` 또는 `신종목은 총검술을 익혔다.`다."
-                  },
-                  {
-                    "path": "lore/culture/Martial-Paths.json",
-                    "pointer": "/content/11/rows/3/1/ko",
-                    "quote": "총검술"
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "조재표와 신종목은 높은 전투력의 주역·강자 구간에서 먼저 검토한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Profile-Contract.md",
-                    "quote": "신종목의 DX는 13이고 총검술(Spear)은 12 CP다."
-                  }
-                ],
-                "cp": 12,
-                "level": 16
+                "level": 16,
+                "cp": 12
               },
               {
                 "name": "Electronics Operation/TL? (Communications)",
                 "ko": "무전 운용",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "수리한 무전기로 옛 호출부호를 송신했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/175/text/ko",
-                    "quote": "생업 별명은 호위·탐사 계약·무전 송신."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/177/text/ko",
-                    "quote": "귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다."
-                  },
-                  {
-                    "path": "lore/chronology/Century-Annals.json",
-                    "pointer": "/content/483/text/ko",
-                    "quote": "2120년부터 신종목은 수리한 무전기로 특수회수반의 호출부호를 송신하였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (강남구청 생활권·귀환망 12곳)",
                 "ko": "지역 지식",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다."
-                  },
-                  {
-                    "path": "lore/chronology/Scenario-Timeline.json",
-                    "pointer": "/content/12/text/ko",
-                    "quote": "2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었으며 신종목이 그 명단을 기록하였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Scrounging",
                 "ko": "현장 회수",
-                "attr": "Per",
-                "diff": "E",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/177/text/ko",
-                    "quote": "귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/179/text/ko",
-                    "quote": "새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Relations.json",
-                    "pointer": "/content/1/rows/195/3/ko",
-                    "quote": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음"
-                  },
-                  {
-                    "path": "lore/chronology/Scenario-Timeline.json",
-                    "pointer": "/content/20/text/ko",
-                    "quote": "귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면 신종목과 같은 부품으로 생활 전력을 유지하는 주민이 회수 수량을 두고 협의한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭(주민 동의)",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/177/text/ko",
-                    "quote": "귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/179/text/ko",
-                    "quote": "새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-Relations.json",
-                    "pointer": "/content/1/rows/195/3/ko",
-                    "quote": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음"
-                  },
-                  {
-                    "path": "lore/chronology/Scenario-Timeline.json",
-                    "pointer": "/content/20/text/ko",
-                    "quote": "귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면 신종목과 같은 부품으로 생활 전력을 유지하는 주민이 회수 수량을 두고 협의한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Navigation/TL? (Land)",
                 "ko": "길찾기(지상)",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/175/text/ko",
-                    "quote": "생업 별명은 호위·탐사 계약·무전 송신."
-                  },
-                  {
-                    "path": "lore/chronology/Century-Annals.json",
-                    "pointer": "/content/485/text/ko",
-                    "quote": "아이 신준과 함께 강남구청 생활권으로 거처를 옮긴 뒤 호위·탐사 계약을 맡았다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Leadership",
                 "ko": "지휘(피난민 귀환)",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다."
-                  },
-                  {
-                    "path": "lore/chronology/Century-Annals.json",
-                    "pointer": "/content/468/text/ko",
-                    "quote": "마지막 회수 작전에서 명부 밖 피난민을 데리고 귀환하였다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Observation",
                 "ko": "관찰(호위)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Hiking",
                 "ko": "장거리 도보",
-                "attr": "HT",
-                "diff": "A",
-                "tier": "D",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/174/text/ko",
-                    "quote": "그는 호위·탐사 계약을 맡고"
-                  }
-                ],
-                "cp": 2,
-                "level": 12
+                "level": 12,
+                "cp": 2
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 13,
+              "FP": 14,
               "Will": 15,
               "Per": 15,
-              "FP": 14,
               "BasicSpeed": 7.25,
               "BasicMove": 7,
               "BasicLift": 34,
               "Dodge": 11
             },
             "cp": {
+              "total": 347,
               "attributes": 270,
               "advantages": 15,
               "disadvantages": 0,
               "skills": 62,
               "spent": 347,
-              "unspent": 0,
-              "total": 347
-            },
-            "band": "주역·강자",
-            "baseline": false,
-            "unit": {
-              "type": "신종목 인솔대",
-              "size": 25,
-              "quality": "정예",
-              "composition": [
-                "총검병",
-                "경비병"
-              ],
-              "note": "신종목 인솔 전투부대",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "명동",
-              "type": "역 영지",
-              "station": "명동",
-              "state": "S06",
-              "settlement": {
-                "name": "명동 정착지",
-                "type": "정착지",
-                "description": "명동 일대 고정 거점"
-              },
-              "note": "S06 명동 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -1512,18 +910,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "명동",
-    "type": "역 영지",
-    "station": "명동",
-    "state": "S06",
-    "settlement": {
-      "name": "명동 정착지",
-      "type": "정착지",
-      "description": "명동 일대 고정 거점"
-    },
-    "note": "S06 명동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1558,14 +944,14 @@
   },
   "fields": {},
   "sections": {
-    "생애": "2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.",
-    "관직": "품계 없음. 귀환망의 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업 별명은 호위·탐사 계약·무전 송신. 호출부호는 백야다.",
-    "훈련": "총검술.",
-    "일화": "수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다.",
-    "관계": "아들 신준을 돌본다. 배우진의 동방사에서 물러났고 민웅기와 귀환합성국의 현장 운용을 나누었다. 민웅기는 개막에 대전으로 옮겼다.",
-    "야망": "개막에 신종목은 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 동방사의 지휘 아래로 주민의 연락 기록과 중계기를 넘기지 않고, 새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 그를 데려가지 않는다."
+    "생애": "2087-09-18에 태어났다. 2119년 11월 동방사 특수회수반 선임 공작원으로 명부 밖 피난민의 귀환을 맡았고, 보고서에는 명령 불복종·지급품 손실·퇴로를 지킨 반원의 실종 처리가 남았다. 2120년 4월 특수회수반에서 물러난 뒤 아들 신준과 강남구청 인근 생활권에서 지냈다. 이는 강남구 공무원 임용이나 직급을 뜻하지 않는다. 2126년 개막 현재 수리한 무전기로 옛 호출부호를 송신하며 귀환망 당직을 잇는다.",
+    "관직": "품계 없음. 귀환망 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업은 호위·탐사 계약·무전 송신이고 호출부호는 백야다.",
+    "훈련": "확인된 총검 훈련 기록이 있다.",
+    "일화": "수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 이동식 중계 장비를 들일 때 현장 회수 기록과 주민 동의서를 같은 인계철에 묶는다.",
+    "관계": "아들 신준을 돌보고 배우진의 동방사에서 물러난 기록을 보존한다. 민웅기와는 서울 내부 귀환합성국의 정비 기록·대체 경로·현장 회수·주민 동의를 나누어 맡는다.",
+    "야망": "귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 주민 연락 기록과 중계기의 인계는 현장 회수 기록·주민 동의와 함께 묶고, 신준의 동의와 휴식을 해치는 당직에는 아들을 참여시키지 않으려 한다."
   },
-  "biography": "소속: 아관사(S14). 귀환망의 사람. 호출부호는 백야다. 동방사 특수회수반의 선임 공작원이었다.\n\n**생애.** 2119년 11월 동방사 특수회수반 선임 공작원 신종목은 명부 밖 피난민을 데리고 귀환했다. 반의 보고서는 명령 불복종과 지급품 손실을 기록했고, 퇴로를 지킨 반원 일부를 실종으로 처리했다. 2120년 4월 신종목은 특수회수반에서 물러나 아들 신준과 강남구청 생활권으로 옮겼다. 그는 호위·탐사 계약을 맡고 수리한 무전기로 옛 호출부호를 송신했다. 2121년 1월 의무원·주민·보호자의 응답을 기록했다. 귀환망은 2124년 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.\n\n**관직.** 품계 없음. 귀환망의 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업 별명은 호위·탐사 계약·무전 송신. 호출부호는 백야다.\n\n**훈련.** 총검술.\n\n**일화.** 수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 귀환합성국의 이동식 중계 장비를 위해 현장 회수와 주민 동의를 맡는다.\n\n**관계.** 아들 신준을 돌본다. 배우진의 동방사에서 물러났고 민웅기와 귀환합성국의 현장 운용을 나누었다. 민웅기는 개막에 대전으로 옮겼다.\n\n**야망.** 개막에 신종목은 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 동방사의 지휘 아래로 주민의 연락 기록과 중계기를 넘기지 않고, 새 중계기를 들일 때마다 현장 회수와 주민 동의를 직접 맡는다. 아들 신준의 동의와 휴식을 해치는 일에는 그를 데려가지 않는다.",
+  "biography": "소속은 아관사(S14)다. 신종목의 논현2동 호위·탐사 계약·무전 송신 창구가 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다. 호출부호 백야로 선정릉·수서 연락을 잇고, 서울 내부에서 민웅기와 귀환합성국의 현장 회수·주민 동의·정비 기록·대체 경로를 나눈다.\n\n**생애.** 2087-09-18에 태어났다. 2119년 11월 동방사 특수회수반 선임 공작원으로 명부 밖 피난민의 귀환을 맡았고, 보고서에는 명령 불복종·지급품 손실·퇴로를 지킨 반원의 실종 처리가 남았다. 2120년 4월 특수회수반에서 물러난 뒤 아들 신준과 강남구청 인근 생활권에서 지냈다. 이는 강남구 공무원 임용이나 직급을 뜻하지 않는다. 2126년 개막 현재 수리한 무전기로 옛 호출부호를 송신하며 귀환망 당직을 잇는다.\n\n**관직.** 품계 없음. 귀환망 현장 계약자이며 전직은 동방사 특수회수반 선임 공작원이다. 생업은 호위·탐사 계약·무전 송신이고 호출부호는 백야다.\n\n**훈련.** 확인된 총검 훈련 기록이 있다.\n\n**일화.** 수리한 무전기로 옛 호출부호를 송신하며 미귀환자 연락을 기다리는 주민과 당직을 나눈다. 이동식 중계 장비를 들일 때 현장 회수 기록과 주민 동의서를 같은 인계철에 묶는다.\n\n**관계.** 아들 신준을 돌보고 배우진의 동방사에서 물러난 기록을 보존한다. 민웅기와는 서울 내부 귀환합성국의 정비 기록·대체 경로·현장 회수·주민 동의를 나누어 맡는다.\n\n**야망.** 귀환망을 넓혀 미귀환자의 응답을 받으려 한다. 주민 연락 기록과 중계기의 인계는 현장 회수 기록·주민 동의와 함께 묶고, 신준의 동의와 휴식을 해치는 당직에는 아들을 참여시키지 않으려 한다.",
   "sources": [
     "Core-Characters"
   ],
@@ -1587,7 +973,7 @@
         "from": "신종목",
         "type": "계약",
         "to": "민웅기",
-        "basis": "민웅기가 떠난 뒤 귀환합성국의 현장 회수와 주민 동의를 맡음"
+        "basis": "민웅기와 신종목은 서울 내부에서 귀환합성국의 정비 기록·대체 경로와 현장 회수·주민 동의를 나눈다. 떠남·낙향을 분업의 원인으로 삼지 않는다."
       }
     ],
     "incoming": [
@@ -1601,7 +987,7 @@
         "from": "민웅기",
         "type": "계약",
         "to": "신종목",
-        "basis": "대전으로 옮기기 전 귀환합성국의 정비와 대체 경로를 기록함"
+        "basis": "민웅기와 신종목은 서울 내부에서 귀환합성국의 정비 기록·대체 경로와 현장 회수·주민 동의를 나눈다. 떠남·낙향을 분업의 원인으로 삼지 않는다."
       }
     ]
   }

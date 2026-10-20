@@ -3,10 +3,14 @@
 // 모든 점유·규모 판정은 호출자가 넘긴 control/outside/scale 입력의 현재 상태만 따른다.
 // 어떤 지역 수·요소 수도 이 모듈에 두지 않는다.
 
+import { createHash } from 'node:crypto'
+import { isDeepStrictEqual } from 'node:util'
+
 const RANK_WEIGHT = { barony: 1, duchy: 2, kingdom: 3 }
 export const OPENING_FEUDAL_ALLOCATION_SCHEMA = 'opening-feudal-allocation.v1'
 const EXISTING_LEDGER_SCHEMA = 'confirmed-person-holdings.v1'
 const KING_DIRECT_SAMEHOLDER_DUCHY_CAP = 2
+const NONOWNING_POWERS = ['receive-holding-change-notice', 'lodge-nonbinding-registry-objection']
 
 const fail = message => { throw new Error(message) }
 
@@ -150,6 +154,39 @@ function buildScaleRows(scale) {
   return byAdminId
 }
 
+function buildGeographicIndex(geographicScale) {
+  if (geographicScale?.schema !== 'admin-territorial-scale.v2') fail('E_GEOGRAPHIC_SCALE_SCHEMA')
+  const titles = requireArray(geographicScale.titles, 'E_GEOGRAPHIC_SCALE_SHAPE')
+  const dated = requireArray(geographicScale.slotEditions?.dated?.rows, 'E_GEOGRAPHIC_SCALE_SHAPE')
+  const current = requireArray(geographicScale.slotEditions?.currentCorrespondence?.rows, 'E_GEOGRAPHIC_SCALE_SHAPE')
+  if (titles.length !== 80 || dated.length !== 426 || current.length !== 427
+    || geographicScale.slotEditions.currentCorrespondence.geometryVerified !== false) fail('E_GEOGRAPHIC_SCALE_SHAPE')
+  const byId = new Map(titles.map(title => [title.titleId, title]))
+  const slots = new Map(dated.map(slot => [slot.slotId, slot]))
+  if (byId.size !== titles.length || slots.size !== dated.length
+    || new Set(current.map(slot => slot.slotId)).size !== current.length) fail('E_GEOGRAPHIC_SCALE_SHAPE')
+  return { byId, slots }
+}
+
+function validateGeographicBinding(record, ctx) {
+  if (!ctx.geographic) return
+  const code = 'E_RIGHT_GEOGRAPHY:' + record.id
+  if (record.geographicTitleId !== undefined) {
+    if (ctx.geographic.byId.get(record.geographicTitleId)?.rank !== record.rank) fail(code)
+  }
+  if (record.geographicScope !== undefined) {
+    const scope = requireObject(record.geographicScope, code)
+    const duchy = ctx.geographic.byId.get(scope.duchyTitleId)
+    if (duchy?.rank !== 'duchy' || !duchy.jurisdictionRefs.includes(scope.guRef)
+      || ctx.geographic.byId.get(scope.geographicEmpireId)?.rank !== 'empire'
+      || !Array.isArray(scope.countyTitleIds) || scope.countyTitleIds.some(id => {
+        const county = ctx.geographic.byId.get(id)
+        return county?.rank !== 'county' || !county.jurisdictionRefs.includes(scope.guRef)
+      })) fail(code)
+  }
+  if (record.slotId !== undefined && !ctx.geographic.slots.has(record.slotId)) fail(code)
+}
+
 function buildLandlessPeople(existing) {
   const landless = new Set()
   for (const row of requireArray(existing.openingDispositions ?? [], 'E_EXISTING_SHAPE')) {
@@ -158,6 +195,125 @@ function buildLandlessPeople(existing) {
     landless.add(requireString(row.personId, 'E_EXISTING_SHAPE'))
   }
   return landless
+}
+
+function recordKind(record, title = false) {
+  const kind = record.kind === undefined ? 'direct-property' : record.kind
+  if (kind !== 'direct-property' && kind !== 'superior-jurisdiction'
+    && !(title && kind === 'nonterritorial-political-title')) fail('E_RIGHT_KIND:' + record.id)
+  if (kind === 'direct-property' && ['geographicScope', 'geographicTitleId', 'geographicParentTitleId',
+    'politicalParentTitleId', 'capabilityPackageId', 'powers'].some(key => record[key] !== undefined)) fail('E_RIGHT_KIND:' + record.id)
+  if (kind === 'direct-property' && record.directOwnership === false) fail('E_RIGHT_KIND:' + record.id)
+  return kind
+}
+
+// 승인 데이터는 호출자가 승인 원본/영수와 대조하여 넘기는 신뢰 경계다. 이 모듈은 승인 자체를 발급하지 않는다.
+function buildNonowningRights(contract) {
+  if (contract === undefined) return null
+  requireObject(contract, 'E_NONOWNING_CONTRACT')
+  if (contract.schema !== 'opening-nonowning-rights.v1') fail('E_NONOWNING_CONTRACT')
+  requireString(contract.approvalRef, 'E_NONOWNING_CONTRACT')
+  if (!/^[a-f0-9]{64}$/.test(contract.proposalSha256)) fail('E_NONOWNING_CONTRACT')
+  requireString(contract.capabilityPackageId, 'E_NONOWNING_CONTRACT')
+  const royal = requireObject(contract.politicalTitle, 'E_NONOWNING_CONTRACT')
+  for (const field of ['id', 'holderPersonId', 'stateId']) requireString(royal[field], 'E_NONOWNING_CONTRACT')
+  const byHolding = new Map()
+  const byTitle = new Map()
+  for (const row of requireArray(contract.rights, 'E_NONOWNING_CONTRACT')) {
+    requireObject(row, 'E_NONOWNING_CONTRACT')
+    for (const field of ['holdingId', 'titleId', 'holderPersonId', 'stateId']) requireString(row[field], 'E_NONOWNING_CONTRACT')
+    if (row.personalLiegePersonId !== null) requireString(row.personalLiegePersonId, 'E_NONOWNING_CONTRACT')
+    if (row.politicalParentTitleId !== royal.id || row.stateId !== royal.stateId) fail('E_NONOWNING_CONTRACT')
+    const scope = requireObject(row.geographicScope, 'E_NONOWNING_CONTRACT')
+    if (!/^11\d{3}$/.test(scope.guRef) || scope.duchyTitleId !== 'geography:duchy:' + scope.guRef
+      || scope.geographicEmpireId !== 'geography:empire:seoul') fail('E_NONOWNING_GEOGRAPHY:' + row.holdingId)
+    requireString(scope.geographicKingdomId, 'E_NONOWNING_CONTRACT')
+    const counties = requireArray(scope.countyTitleIds, 'E_NONOWNING_CONTRACT')
+    if (!counties.length || new Set(counties).size !== counties.length
+      || counties.some(id => typeof id !== 'string' || !id.startsWith('geography:county:seoul-constituency:'))) fail('E_NONOWNING_GEOGRAPHY:' + row.holdingId)
+    if (byHolding.has(row.holdingId) || byTitle.has(row.titleId) || row.titleId === royal.id) fail('E_NONOWNING_CONTRACT')
+    byHolding.set(row.holdingId, row)
+    byTitle.set(row.titleId, row)
+  }
+  return { ...contract, byHolding, byTitle }
+}
+
+function checkNonowningProperty(record) {
+  const fields = ['id', 'kind', 'name', 'holderPersonId', 'stateId', 'directOwnership', 'adminRefs',
+    'componentRefs', 'jurisdictionRefs', 'geometrySource', 'parentTitleId', 'stationRef', 'facilityRef', 'landmarkRef',
+    'rank', 'basis', 'personalLiegePersonId', 'politicalParentTitleId', 'geographicParentTitleId', 'geographicTitleId',
+    'geographicScope', 'titleId', 'directLiegePersonId', 'liegeRelationshipKind', 'territorialScale', 'formalTitleRank',
+    'powers', 'capabilityPackageId', 'status', 'activationDecisionIds']
+  if (Object.keys(record).some(key => !fields.includes(key))) fail('E_NONOWNING_FIELD:' + record.id)
+  const code = 'E_NONOWNING_OWNERSHIP:' + record.id
+  if (record.directOwnership !== false || record.geometrySource != null
+    || record.stationRef != null || record.facilityRef != null || record.landmarkRef != null) fail(code)
+  for (const field of ['adminRefs', 'componentRefs', 'jurisdictionRefs']) {
+    if (requireArray(record[field] ?? [], code).length) fail(code)
+  }
+  if (record.parentTitleId != null) fail('E_NONOWNING_PARENT:' + record.id)
+}
+
+function checkNonowningIdentity(record, approved, ctx, personalLiege) {
+  if (record.holderPersonId !== approved.holderPersonId || record.stateId !== approved.stateId
+    || !ctx.peopleById.has(record.holderPersonId)) fail('E_NONOWNING_HOLDER:' + record.id)
+  checkRealmMembership(ctx.membership, ctx.peopleById.get(record.holderPersonId), record.stateId, 'E_NONOWNING_HOLDER:' + record.id)
+  if (personalLiege !== approved.personalLiegePersonId
+    || personalLiege !== null && !ctx.peopleById.has(personalLiege)) fail('E_NONOWNING_LIEGE:' + record.id)
+}
+
+function validateNonowningTitle(title, ctx) {
+  const contract = ctx.nonowningRights
+  if (!contract) fail('E_NONOWNING_APPROVAL:' + title.id)
+  checkNonowningProperty(title)
+  if (['directLiegePersonId', 'titleId', 'liegeRelationshipKind', 'territorialScale', 'formalTitleRank']
+    .some(key => title[key] !== undefined)) fail('E_NONOWNING_FIELD:' + title.id)
+  if (title.powers !== undefined || title.capabilityPackageId !== undefined) fail('E_NONOWNING_POWERS:' + title.id)
+  if (title.kind === 'nonterritorial-political-title') {
+    const royal = contract.politicalTitle
+    if (title.id !== royal.id || title.rank !== 'kingdom') fail('E_NONOWNING_TITLE:' + title.id)
+    checkNonowningIdentity(title, { ...royal, personalLiegePersonId: null }, ctx, title.personalLiegePersonId)
+    if (title.politicalParentTitleId !== null || title.geographicParentTitleId != null
+      || title.geographicTitleId != null || title.geographicScope != null) fail('E_NONOWNING_PARENT:' + title.id)
+    return
+  }
+  const approved = contract.byTitle.get(title.id)
+  if (!approved || title.rank !== 'duchy') fail('E_NONOWNING_TITLE:' + title.id)
+  checkNonowningIdentity(title, approved, ctx, title.personalLiegePersonId)
+  if (title.politicalParentTitleId !== approved.politicalParentTitleId) fail('E_NONOWNING_PARENT:' + title.id)
+  if (title.geographicTitleId !== approved.geographicScope.duchyTitleId
+    || title.geographicParentTitleId !== approved.geographicScope.geographicKingdomId
+    || title.geographicScope != null) fail('E_NONOWNING_GEOGRAPHY:' + title.id)
+  validateGeographicBinding(title, ctx)
+}
+
+function validateExistingNonowningRights(ctx) {
+  for (const holding of ctx.existing.holdings) {
+    if (recordKind(holding) === 'direct-property') continue
+    if (ctx.existing.holdings.filter(row => row.id === holding.id).length !== 1) fail('E_HOLDING_DUPLICATE:' + holding.id)
+    const approved = ctx.nonowningRights?.byHolding.get(holding.id)
+    if (!approved) fail('E_NONOWNING_APPROVAL:' + holding.id)
+    checkNonowningProperty(holding)
+    if (['rank', 'personalLiegePersonId', 'geographicTitleId'].some(key => holding[key] !== undefined)) fail('E_NONOWNING_FIELD:' + holding.id)
+    checkNonowningIdentity(holding, approved, ctx, holding.directLiegePersonId)
+    const title = ctx.titlesById.get(holding.titleId)
+    if (holding.titleId !== approved.titleId || title?.kind !== 'superior-jurisdiction') fail('E_NONOWNING_TITLE:' + holding.id)
+    if (holding.liegeRelationshipKind !== 'preserved-personal-service') fail('E_NONOWNING_LIEGE:' + holding.id)
+    const scope = requireObject(holding.geographicScope, 'E_NONOWNING_GEOGRAPHY:' + holding.id)
+    const expected = approved.geographicScope
+    if (Object.keys(scope).length !== Object.keys(expected).length
+      || Object.keys(expected).some(key => key === 'countyTitleIds'
+        ? !Array.isArray(scope[key]) || scope[key].length !== expected[key].length
+          || new Set(scope[key]).size !== scope[key].length || scope[key].some(id => !expected[key].includes(id))
+        : scope[key] !== expected[key])) fail('E_NONOWNING_GEOGRAPHY:' + holding.id)
+    const powers = requireArray(holding.powers, 'E_NONOWNING_POWERS:' + holding.id)
+    if (holding.capabilityPackageId !== ctx.nonowningRights.capabilityPackageId
+      || powers.length !== NONOWNING_POWERS.length || new Set(powers).size !== powers.length
+      || powers.some(power => !NONOWNING_POWERS.includes(power))) fail('E_NONOWNING_POWERS:' + holding.id)
+    if (holding.politicalParentTitleId !== undefined || holding.geographicParentTitleId !== undefined
+      || holding.territorialScale !== 'duchy' || holding.formalTitleRank !== null) fail('E_NONOWNING_TITLE:' + holding.id)
+    validateGeographicBinding(holding, ctx)
+  }
 }
 
 function validateTitles(allocation, ctx) {
@@ -176,6 +332,12 @@ function validateTitles(allocation, ctx) {
     const stateId = requireString(title.stateId, 'E_TITLE_SHAPE:' + id)
     requireString(title.basis, 'E_TITLE_BASIS:' + id)
     checkRealmMembership(ctx.membership, holder, stateId, 'E_TITLE_MEMBERSHIP:' + id)
+    if (recordKind(title, true) !== 'direct-property') {
+      validateNonowningTitle(title, ctx)
+      byId.set(id, title)
+      continue
+    }
+    validateGeographicBinding(title, ctx)
     if (title.parentTitleId != null) requireString(title.parentTitleId, 'E_TITLE_SHAPE:' + id)
     const jurisdictionRefs = requireArray(title.jurisdictionRefs ?? [], 'E_TITLE_JURISDICTION:' + id)
     const seenRefs = new Set()
@@ -199,8 +361,11 @@ function validateTitles(allocation, ctx) {
     byId.set(id, title)
   }
   for (const title of titles) {
+    if (title.kind === 'superior-jurisdiction'
+      && byId.get(title.politicalParentTitleId)?.kind !== 'nonterritorial-political-title') fail('E_NONOWNING_PARENT:' + title.id)
     if (title.parentTitleId == null) continue
     if (!byId.has(title.parentTitleId)) fail('E_TITLE_PARENT:' + title.id + '|' + title.parentTitleId)
+    if (recordKind(byId.get(title.parentTitleId), true) !== 'direct-property') fail('E_TITLE_PARENT_KIND:' + title.id)
   }
   for (const title of titles) {
     const visited = new Set([title.id])
@@ -235,6 +400,7 @@ function validateTitles(allocation, ctx) {
 function validateGrantTitleRelation(grant, id, titlesById) {
   if (grant.titleId == null) return
   const title = titlesById.get(grant.titleId)
+  if (recordKind(title, true) !== 'direct-property') fail('E_GRANT_TITLE_KIND:' + id)
   for (const ref of grant.adminRefs ?? []) {
     if (!(title.jurisdictionRefs ?? []).includes(ref.id)) fail('E_GRANT_TITLE_JURISDICTION:' + id + '|' + ref.id)
   }
@@ -250,6 +416,7 @@ function validateGrants(allocation, ctx) {
   const claimedAdmin = new Map()
   const claimedComponents = new Map()
   for (const holding of ctx.existing.holdings) {
+    if (holding.kind === 'superior-jurisdiction') continue
     for (const ref of holding.adminRefs ?? []) {
       if (claimedAdmin.has(ref.id)) fail('E_GRANT_ADMINREF_OVERLAP:' + holding.id + '|' + ref.id)
       claimedAdmin.set(ref.id, holding.id)
@@ -264,6 +431,7 @@ function validateGrants(allocation, ctx) {
   for (const grant of grants) {
     requireObject(grant, 'E_GRANT_SHAPE')
     const id = requireString(grant.id, 'E_GRANT_SHAPE')
+    if (recordKind(grant) !== 'direct-property') fail('E_NONOWNING_GRANT:' + id)
     if (ctx.existingHoldingIds.has(id) || newIds.has(id)) fail('E_HOLDING_DUPLICATE:' + id)
     newIds.add(id)
     requireObject(grant.name, 'E_GRANT_NAME:' + id)
@@ -280,6 +448,7 @@ function validateGrants(allocation, ctx) {
     if (grant.geometrySource != null) requireString(grant.geometrySource, 'E_GRANT_SHAPE:' + id)
     if (grant.territorialScale != null) requireString(grant.territorialScale, 'E_GRANT_SHAPE:' + id)
     if (grant.formalTitleRank != null && !RANK_WEIGHT[grant.formalTitleRank]) fail('E_GRANT_SHAPE:' + id)
+    validateGeographicBinding(grant, ctx)
     const adminRefs = requireArray(grant.adminRefs ?? [], 'E_GRANT_SHAPE:' + id)
     const componentRefs = requireArray(grant.componentRefs ?? [], 'E_GRANT_SHAPE:' + id)
     for (const ref of adminRefs) {
@@ -318,7 +487,7 @@ function validateGrants(allocation, ctx) {
     }
     if (grant.territorialScale != null) {
       for (const ref of adminRefs) {
-        const row = ctx.scaleRows.get(ref.id)
+        const row = ctx.historicalScaleRows?.get(ref.id)
         if (row?.status === 'HOLD') fail('E_GRANT_SCALE_HOLD:' + id + '|' + ref.id)
       }
     }
@@ -338,8 +507,11 @@ function validateBindings(allocation, ctx) {
     if (!holding) fail('E_BINDING_HOLDING:' + holdingId)
     const title = ctx.titlesById.get(titleId)
     if (!title) fail('E_BINDING_TITLE:' + titleId)
+    if (recordKind(holding) !== recordKind(title, true)) fail('E_BINDING_KIND:' + holdingId)
+    if (holding.kind === 'superior-jurisdiction' && holding.titleId !== titleId) fail('E_NONOWNING_TITLE:' + holdingId)
     if (holding.holderPersonId !== title.holderPersonId) fail('E_BINDING_HOLDER:' + holdingId)
-    const parent = title.parentTitleId ? ctx.titlesById.get(title.parentTitleId) : null
+    const parentId = title.kind === 'superior-jurisdiction' ? title.politicalParentTitleId : title.parentTitleId
+    const parent = parentId ? ctx.titlesById.get(parentId) : null
     if (holding.directLiegePersonId && parent?.holderPersonId !== holding.directLiegePersonId) {
       if (binding.liegeRelationshipKind !== 'preserved-personal-service' || !binding.basis?.trim()) fail('E_BINDING_LIEGE:' + holdingId)
     }
@@ -354,6 +526,7 @@ function checkCoverage(ctx) {
   const counts = new Map()
   const bump = key => counts.set(key, (counts.get(key) ?? 0) + 1)
   for (const holding of ctx.existing.holdings) {
+    if (holding.kind === 'superior-jurisdiction') continue
     for (const ref of holding.adminRefs ?? []) bump(ref.id)
     for (const ref of holding.componentRefs ?? []) bump(componentKey(ref.unitId, ref.componentIndex))
   }
@@ -374,8 +547,97 @@ function checkCoverage(ctx) {
   ctx.coveredEntitlements = required.length
 }
 
+// Historical validation is deliberately complete and runs before current disposition.
+// The caller authenticates historical bytes and the exact owner-approved package.
+export function validateApprovedRightsTransition(current, historical, transition) {
+  const historicalProjection = projectHistoricalOpeningFeudalAllocation(historical)
+  if (transition.schema !== 'approved-seoul-rights-transition.v1') fail('E_TRANSITION_SCHEMA')
+  const equal = (actual, expected, code) => { if (!isDeepStrictEqual(actual, expected)) fail(code) }
+  const sets = ['titles', 'grants', 'holdings', 'existingTitleBindings']
+  const source = (args, set) => set === 'holdings' ? args.existing[set] : args.allocation[set]
+  const identity = (set, row) => set === 'existingTitleBindings' ? row.holdingId : row.id
+  const key = (set, id) => JSON.stringify([set, id])
+  const records = requireArray(transition.records, 'E_TRANSITION_RECORDS')
+  const mappings = new Map(records.map(row => [key(row.set, row.oldId), row]))
+  const originalCount = sets.reduce((sum, set) => sum + source(historical, set).length, 0)
+  if (records.length !== originalCount || mappings.size !== originalCount) fail('E_TRANSITION_COVERAGE')
+  const expected = { existing: structuredClone(historical.existing), allocation: structuredClone(historical.allocation) }
+  const seoulIds = new Set(current.seoul.regions.map(row => row.id))
+  if ([...seoulIds].some(id => !/^region:11\d{8}$/.test(id))) fail('E_TRANSITION_SEOUL_SCOPE')
+  const retiredTitles = []
+  for (const set of sets) {
+    const rows = []
+    for (const original of source(historical, set)) {
+      const id = identity(set, original)
+      const mapping = mappings.get(key(set, id))
+      if (!mapping) fail('E_TRANSITION_MISSING:' + key(set, id))
+      if (mapping.sourceValueSha256 !== createHash('sha256').update(JSON.stringify(original)).digest('hex')) fail('E_TRANSITION_SOURCE_HASH:' + id)
+      let row
+      if (mapping.disposition === 'retired-current') {
+        if (!['titles', 'grants'].includes(set) || mapping.currentId !== null || mapping.current !== undefined) fail('E_TRANSITION_RETIREMENT:' + id)
+        const refs = set === 'titles' ? original.jurisdictionRefs : original.adminRefs.map(ref => ref.id)
+        if (refs.some(ref => seoulIds.has(ref))) fail('E_TRANSITION_SEOUL_RETIREMENT:' + id)
+        if (set === 'titles') retiredTitles.push(original)
+        continue
+      }
+      if (mapping.disposition === 'retained-current') {
+        if (mapping.current !== undefined) fail('E_TRANSITION_RETAINED:' + id)
+        row = original
+      } else if (mapping.disposition === 'seoul-jurisdiction-only') {
+        if (set !== 'titles') fail('E_TRANSITION_MIXED:' + id)
+        row = { ...original, jurisdictionRefs: original.jurisdictionRefs.filter(ref => seoulIds.has(ref)) }
+        if (!row.jurisdictionRefs.length || row.jurisdictionRefs.length === original.jurisdictionRefs.length) fail('E_TRANSITION_MIXED:' + id)
+        equal(mapping.current, row, 'E_TRANSITION_MIXED:' + id)
+      } else if (mapping.disposition === 'approved-nonowning') {
+        if (set === 'grants') fail('E_TRANSITION_NEW_GRANT:' + id)
+        row = requireObject(mapping.current, 'E_TRANSITION_SUCCESSOR:' + id)
+        for (const field of ['holderPersonId', 'stateId', 'directLiegePersonId']) {
+          if (Object.hasOwn(original, field) && row[field] !== original[field]) fail('E_TRANSITION_IDENTITY:' + id)
+        }
+      } else fail('E_TRANSITION_DISPOSITION:' + id)
+      if (mapping.currentId !== identity(set, row)) fail('E_TRANSITION_KEY:' + id)
+      rows.push(row)
+    }
+    if (new Set(rows.map(row => identity(set, row))).size !== rows.length) fail('E_TRANSITION_DUPLICATE:' + set)
+    if (set === 'holdings') expected.existing.holdings = rows
+    else expected.allocation[set] = rows
+  }
+  expected.existing.polities = transition.polities
+  expected.allocation.politicalIdentities = retiredTitles.map(title => ({
+    id: title.id, kind: 'nonterritorial-political-identity', rank: title.rank,
+    holderPersonId: title.holderPersonId, stateId: title.stateId,
+    politicalParentTitleId: title.parentTitleId ?? null,
+    personalLieges: historical.allocation.grants.filter(grant => grant.titleId === title.id)
+      .map(grant => ({ holdingId: grant.id, directLiegePersonId: grant.directLiegePersonId })),
+    directOwnership: false,
+  }))
+  equal(current.existing, expected.existing, 'E_TRANSITION_CURRENT_EXISTING')
+  equal(current.allocation, expected.allocation, 'E_TRANSITION_CURRENT_ALLOCATION')
+  equal(current.people, historical.people, 'E_TRANSITION_PEOPLE')
+  if (current.control.assignments.length || (current.outside.islands ?? []).length) fail('E_TRANSITION_CURRENT_OUTSIDE_CONTROL')
+  for (const row of [...current.allocation.titles, ...current.allocation.grants, ...current.existing.holdings]) {
+    if ((row.jurisdictionRefs ?? []).some(ref => !seoulIds.has(ref))
+      || (row.adminRefs ?? []).some(ref => !seoulIds.has(ref.id))
+      || (row.componentRefs ?? []).length || row.geometrySource === 'outside-admin-units.units') fail('E_TRANSITION_CURRENT_OUTSIDE_RIGHT:' + row.id)
+  }
+  return historicalProjection.summary
+}
+
+export function projectHistoricalOpeningFeudalAllocation(args) {
+  if (args?.geographicScale !== undefined) fail('E_HISTORICAL_SCALE_SCHEMA')
+  return projectRightsAllocation(args, buildScaleRows(args?.scale))
+}
+
 export function projectOpeningFeudalAllocation(args) {
-  const { allocation, existing, people, seoul, outside, control, affiliation, scale } = requireObject(args, 'E_ARGS_SHAPE')
+  if (args?.scale !== undefined) fail('E_GEOGRAPHIC_SCALE_SCHEMA')
+  const geographic = buildGeographicIndex(args?.geographicScale)
+  return projectRightsAllocation(args, null, geographic)
+}
+
+function projectRightsAllocation(args, historicalScaleRows, geographic = null) {
+  const { allocation, existing, people, seoul, outside, control, affiliation } = requireObject(args, 'E_ARGS_SHAPE')
+  if (args.rightsTransition !== undefined) validateApprovedRightsTransition(args, args.historicalRights, args.rightsTransition)
+  else if (allocation?.politicalIdentities !== undefined && !historicalScaleRows) fail('E_TRANSITION_REQUIRED')
   requireObject(allocation, 'E_ALLOCATION_SHAPE')
   if (allocation.schema !== OPENING_FEUDAL_ALLOCATION_SCHEMA) fail('E_ALLOCATION_SCHEMA:' + allocation.schema)
   requireObject(existing, 'E_EXISTING_SHAPE')
@@ -384,6 +646,9 @@ export function projectOpeningFeudalAllocation(args) {
 
   const ctx = {
     existing,
+    geographic,
+    historicalScaleRows,
+    nonowningRights: buildNonowningRights(args.nonowningRights),
     peopleById: buildPeopleIndex(people),
     membership: buildHegemonMembership(affiliation),
     geometry: buildGeometry(seoul, outside),
@@ -391,8 +656,8 @@ export function projectOpeningFeudalAllocation(args) {
     existingHoldingIds: new Set(existing.holdings.map(holding => requireString(holding.id, 'E_EXISTING_SHAPE'))),
   }
   ctx.control = buildControl(control, ctx.geometry)
-  ctx.scaleRows = buildScaleRows(scale)
   ctx.titlesById = validateTitles(allocation, ctx)
+  validateExistingNonowningRights(ctx)
   ctx.grants = validateGrants(allocation, ctx)
   const bindings = validateBindings(allocation, ctx)
   checkCoverage(ctx)
@@ -402,13 +667,15 @@ export function projectOpeningFeudalAllocation(args) {
     const holding = output.holdings.find(row => row.id === binding.holdingId)
     holding.titleId = binding.titleId
     const title = ctx.titlesById.get(binding.titleId)
-    const parent = title.parentTitleId ? ctx.titlesById.get(title.parentTitleId) : null
+    const parentId = title.kind === 'superior-jurisdiction' ? title.politicalParentTitleId : title.parentTitleId
+    const parent = parentId ? ctx.titlesById.get(parentId) : null
     if (holding.directLiegePersonId && parent?.holderPersonId !== holding.directLiegePersonId) {
       holding.liegeRelationshipKind = binding.liegeRelationshipKind
     }
   }
   for (const grant of ctx.grants) output.holdings.push(structuredClone(grant))
   output.titles = structuredClone(allocation.titles)
+  if (allocation.politicalIdentities) output.politicalIdentities = structuredClone(allocation.politicalIdentities)
   output.summary = {
     existingHoldings: existing.holdings.length,
     newGrants: ctx.grants.length,

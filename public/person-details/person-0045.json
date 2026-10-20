@@ -453,47 +453,23 @@
             "name": "변시람",
             "url": "/people/person-0045",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/49/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/50/text/ko",
-                    "quote": "대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -501,84 +477,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/50/text/ko",
-                    "quote": "대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/49/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -602,47 +528,23 @@
             "name": "변시람",
             "url": "/people/person-0045",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 당직",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/49/items/1/ko",
-                  "quote": "생업: 대합실 당직"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/50/text/ko",
-                    "quote": "대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -650,84 +552,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/50/text/ko",
-                    "quote": "대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/49/items/1/ko",
-                    "quote": "생업: 대합실 당직"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "삼산",
-              "type": "초소 영지",
-              "station": "삼산",
-              "state": "S02",
-              "settlement": {
-                "name": "삼산 정착지",
-                "type": "정착지",
-                "description": "삼산 일대 고정 거점"
-              },
-              "note": "S02 삼산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -748,18 +600,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "삼산",
-    "type": "초소 영지",
-    "station": "삼산",
-    "state": "S02",
-    "settlement": {
-      "name": "삼산 정착지",
-      "type": "정착지",
-      "description": "삼산 일대 고정 거점"
-    },
-    "note": "S02 삼산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -796,11 +636,12 @@
     "생업": "대합실 당직",
     "품계": "감사",
     "직함": "구로 대합실 역장",
+    "업무 위치": "구로5동. 변시람은 구로5동 대합실에서 구찬솔의 공구 화차를 공개 승강장 순번에 올린다. 한지온의 배급솥과 유세진의 급수열차가 겹치면 겨울 출고 칸을 나누어 다음 창구 당직에 넘기고 사적 청탁은 공개 접수로 돌린다.",
     "가치관": "권위 −35 | 개방 5 | 무력 −5 | 물질 40 | 공동 35 | 원칙 20 | 공개 25 | 자격 45 | 분산 15 | 변혁 20",
     "욕망": "갈망 30 | 독점 20 | 위험 −15 | 과시 20 | 지속 −10 | 지향 이성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로5동. 변시람은 구로5동 대합실에서 구찬솔의 공구 화차를 공개 승강장 순번에 올린다. 한지온의 배급솥과 유세진의 급수열차가 겹치면 겨울 출고 칸을 나누어 다음 창구 당직에 넘기고 사적 청탁은 공개 접수로 돌린다.",
     "관직": "품계 감사. 직함은 구로 대합실 역장. 대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구로 대합실 역장 자리의 서명이 장부에 올랐다.",
     "관계": "구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.",
@@ -808,7 +649,7 @@
     "공포": "자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.",
     "개입": "대체 저수 펌프를 구해 봉인을 풀거나, 창구 담합 장부를 폭로해 역 추첨을 다시 열 수 있다."
   },
-  "biography": "승강장 분진으로 작업반 규모를 읽고, 급수열차를 정치 순위로 미루는 명령을 참지 못한다. 시간표의 빈칸을 사람보다 먼저 메운다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 감사\n- 직함: 구로 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 감사. 직함은 구로 대합실 역장. 대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구로 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.\n\n**야망.** 구로 대합실을 부품 출고·시민권 등록·배급 솥이 한 지붕에서 서명되는 규격맹의 대면 창구로 만든다.\n\n**공포.** 자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.\n\n**개입.** 대체 저수 펌프를 구해 봉인을 풀거나, 창구 담합 장부를 폭로해 역 추첨을 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 5 | 무력 −5 | 물질 40 | 공동 35 | 원칙 20 | 공개 25 | 자격 45 | 분산 15 | 변혁 20\n- 욕망: 갈망 30 | 독점 20 | 위험 −15 | 과시 20 | 지속 −10 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "승강장 분진으로 작업반 규모를 읽고, 급수열차를 정치 순위로 미루는 명령을 참지 못한다. 시간표의 빈칸을 사람보다 먼저 메운다.\n\n- 소속: 규격맹\n- 생업: 대합실 당직\n- 품계: 감사\n- 직함: 구로 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구로 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 업무 위치: 구로5동. 변시람은 구로5동 대합실에서 구찬솔의 공구 화차를 공개 승강장 순번에 올린다. 한지온의 배급솥과 유세진의 급수열차가 겹치면 겨울 출고 칸을 나누어 다음 창구 당직에 넘기고 사적 청탁은 공개 접수로 돌린다.\n\n**관직.** 품계 감사. 직함은 구로 대합실 역장. 대합실 배급과 출고 창구를 매일 공개하고, 군수 화차는 시민권 등록 창구가 닫힌 뒤에만 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 구로 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 구찬솔의 공구 화차를 승강장 순번에 올리고, 한지온의 배급 솥을 대합실 한쪽에 두며, 유세진의 서부 급수열차 우회를 구로에서 받는다.\n\n**야망.** 구로 대합실을 부품 출고·시민권 등록·배급 솥이 한 지붕에서 서명되는 규격맹의 대면 창구로 만든다.\n\n**공포.** 자체 원수가 끊겨 대합실 저수조가 마르면 역 대기열이 수문국 급수계약의 인질이 되는 것.\n\n**개입.** 대체 저수 펌프를 구해 봉인을 풀거나, 창구 담합 장부를 폭로해 역 추첨을 다시 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 5 | 무력 −5 | 물질 40 | 공동 35 | 원칙 20 | 공개 25 | 자격 45 | 분산 15 | 변혁 20\n- 욕망: 갈망 30 | 독점 20 | 위험 −15 | 과시 20 | 지속 −10 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-02"
   ],

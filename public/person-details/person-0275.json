@@ -552,47 +552,23 @@
             "name": "서진아",
             "url": "/people/person-0275",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "사택 청원·급수 잔량 감사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 사택 청원·급수 잔량 감사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -600,95 +576,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 사택 청원·급수 잔량 감사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 사택 청원·급수 잔량 감사"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "서진아 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       },
@@ -711,47 +627,23 @@
             "name": "서진아",
             "url": "/people/person-0275",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "사택 청원·급수 잔량 감사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/50/items/0/ko",
-                  "quote": "생업: 사택 청원·급수 잔량 감사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -759,95 +651,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 사택 청원·급수 잔량 감사"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/51/text/ko",
-                    "quote": "사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Accounting",
                 "ko": "회계·감사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/50/items/0/ko",
-                    "quote": "생업: 사택 청원·급수 잔량 감사"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "한강 둔치",
-              "camp": {
-                "name": "서진아 한강변 야영지",
-                "type": "야영지",
-                "description": "한강 둔치에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 39
+            }
           }
         }
       }
@@ -868,7 +700,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -924,15 +755,15 @@
     "욕망": "갈망 −15 | 독점 −10 | 위험 5 | 과시 −25 | 지속 15 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.",
+    "생애": "서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 서진아는 서초2동에서 사택 청원·급수 잔량 감사 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 사택 주민의 등록을 대조한다",
     "관직": "품계 사원. 직함은 강남역 사택 감사. 사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.",
     "일화": "북부 급수 배관 압력 저하가 공지되자 사택 대표들이 승계 시험을 연기하라고 회장실를 압박했다.",
-    "관계": "이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 이주민을 올리려 한다.",
+    "관계": "이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장과 강남역 사택 주민 등록을 대조한다.",
     "야망": "물 계약이 흔들려도 강남역 사택이 비지 않도록 급수 감사권을 회장실와 공유하는 이중 승인을 만든다.",
     "공포": "한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.",
     "개입": "비상 급수 계약을 사택 조항과 함께 가져오거나, 단수 위협을 빌미로 한 기지 점거를 막을 수 있다."
   },
-  "biography": "논리적이고 표를 세는 데 능하다. 기술 탓에 사람이 굶는 순간을 개인적 패배로 여긴다.\n\n- 생업: 사택 청원·급수 잔량 감사\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 감사\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 사원. 직함은 강남역 사택 감사. 사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.\n\n**일화.** 북부 급수 배관 압력 저하가 공지되자 사택 대표들이 승계 시험을 연기하라고 회장실를 압박했다.\n\n**관계.** 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 이주민을 올리려 한다.\n\n**야망.** 물 계약이 흔들려도 강남역 사택이 비지 않도록 급수 감사권을 회장실와 공유하는 이중 승인을 만든다.\n\n**공포.** 한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.\n\n**개입.** 비상 급수 계약을 사택 조항과 함께 가져오거나, 단수 위협을 빌미로 한 기지 점거를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −5 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 50 | 분산 15 | 변혁 −20\n- 욕망: 갈망 −15 | 독점 −10 | 위험 5 | 과시 −25 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "논리적이고 표를 세는 데 능하다. 기술 탓에 사람이 굶는 순간을 개인적 패배로 여긴다.\n\n- 생업: 사택 청원·급수 잔량 감사\n- 소속: 성하그룹\n- 품계: 사원\n- 직함: 강남역 사택 감사\n**생애.** 서울역 등기소에서 자랐다. 강남역 사택 감사 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 서진아는 서초2동에서 사택 청원·급수 잔량 감사 업무를 맡는다. 강남역 사택의 청원·급수 잔량·수위·사고 기록 업무를 서초2동 생활권 근무 참조로 제안한다. 기존 감사·반장·도제 서명 조건을 보존하고 개인 거주·숙소 소유는 추정하지 않는다. 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장에 강남역 사택 주민의 등록을 대조한다\n\n**관직.** 품계 사원. 직함은 강남역 사택 감사. 사택 청원 결과와 급수 잔량을 같은 게시판에 붙이고, 야간 단수는 감사 입회 없이 금지한다.\n\n**일화.** 북부 급수 배관 압력 저하가 공지되자 사택 대표들이 승계 시험을 연기하라고 회장실를 압박했다.\n\n**관계.** 이홍원과 사택·기술 혼합 통치를 다투며 한재목의 물 공급 협상을 사택 측에서 감시한다. 윤초아의 시민권 원장과 강남역 사택 주민 등록을 대조한다.\n\n**야망.** 물 계약이 흔들려도 강남역 사택이 비지 않도록 급수 감사권을 회장실와 공유하는 이중 승인을 만든다.\n\n**공포.** 한재목의 집단 단수 조항이 강남역 사택 인구를 하룻밤에 흩어 놓는 것.\n\n**개입.** 비상 급수 계약을 사택 조항과 함께 가져오거나, 단수 위협을 빌미로 한 기지 점거를 막을 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 −20 | 무력 −5 | 물질 20 | 공동 20 | 원칙 30 | 공개 5 | 자격 50 | 분산 15 | 변혁 −20\n- 욕망: 갈망 −15 | 독점 −10 | 위험 5 | 과시 −25 | 지속 15 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-11"
   ],

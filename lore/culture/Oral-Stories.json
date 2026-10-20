@@ -6,7 +6,7 @@
   "categories": [
     "culture"
   ],
-  "status": "draft",
+  "status": "approved",
   "tense": {
     "en": "past",
     "ko": "past"
@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "The Stories",
-      "summary": "After the blackout of October 14, 2030, the Yeongdeungpo waterworks log and Yeouido vault inventory recorded water and parts exchanges.",
+      "summary": "After the blackout of October 14, 2030, the Yeongdeungpo waterworks log and Yeouido vault inventory each recorded the November 6, 2030 handover of two emergency-generator parts. The daily 06:00–12:00 valve duty toward Yeouido was a separate 2026 record.",
       "tense": "past"
     },
     "ko": {
       "title": "이야기",
-      "summary": "2030년 10월 14일 대정전 뒤 영등포 정수센터의 운전일지와 여의도 금고층 목록에 물과 부품 거래가 남았다.",
+      "summary": "2030년 10월 14일 대정전 뒤 영등포 정수센터의 운전일지와 여의도 금고층 목록에는 2030년 11월 6일 비상발전기 부품 2개의 인계가 각각 기록되었다. 여의도 방향의 매일 06:00~12:00 밸브 당직은 별도의 2026년 기록이다.",
       "tense": "past"
     }
   },
@@ -128,18 +128,18 @@
       ],
       "depth": 2,
       "text": {
-        "en": "The 2026 Water and Parts Exchange",
-        "ko": "2026년 물과 부품 거래"
+        "en": "The 2030 Parts Handover and 2026 Water Duty",
+        "ko": "2030년 부품 인계와 2026년 급수 당직"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "첫-급수협약-p1-label",
       "text": {
-        "en": "A. November 6 exchange",
+        "en": "A. November 6 parts handover",
         "ko": [
           {
-            "text": "가. 11월 6일 거래",
+            "text": "가. 11월 6일 부품 인계",
             "strong": true
           }
         ]
@@ -149,8 +149,8 @@
       "kind": "paragraph",
       "anchor": "첫-급수협약-p1",
       "text": {
-        "en": "On November 6, 2026, two Yeouido vault representatives visited the Yeongdeungpo waterworks. Han Jeonghun agreed to open the valve toward Yeouido from 06:00 to 12:00 daily in exchange for two emergency generator parts.",
-        "ko": "2026년 11월 6일 여의도 금고층 대표 2명이 영등포아리수정수센터를 찾아갔다. 한정훈은 비상발전기 부품 2개를 받는 대가로 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다."
+        "en": "The daily 06:00–12:00 duty to open the water-pipe valve toward Yeouido was recorded in 2026. Remote control failed at Yeongdeungpo waterworks on October 14, 2030. On November 6 of that year, two Yeouido vault representatives brought two emergency-generator parts to the waterworks, and Han Jeonghun received them.",
+        "ko": "2026년에는 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 여는 당직이 기록되었다. 2030년 10월 14일 영등포아리수정수센터의 원격 제어가 끊겼다. 그해 11월 6일 여의도 금고층 대표 2명이 정수센터를 찾아가 비상발전기 부품 2개를 건넸고 한정훈이 받았다."
       }
     },
     {
@@ -170,8 +170,8 @@
       "kind": "paragraph",
       "anchor": "첫-급수협약-p2",
       "text": {
-        "en": "Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.",
-        "ko": "한정훈은 거래 내용을 운전일지에 적었다. 여의도 금고층에서도 같은 날짜로 부품과 물의 거래를 목록에 기재하였다."
+        "en": "Han Jeonghun entered the November 6, 2030 handover of two emergency-generator parts in the waterworks operations log. The Yeouido vault entered the parts handover under the same date in its inventory.",
+        "ko": "한정훈은 2030년 11월 6일 비상발전기 부품 2개의 인계를 정수센터 운전일지에 적었다. 여의도 금고층도 같은 날짜의 부품 인계를 자체 목록에 기재하였다."
       }
     },
     {
@@ -254,8 +254,8 @@
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p1",
       "text": {
-        "en": "In June 2097, Sumunguk contracted with waterway workers in Yangpyeong and Chuncheon. They were entered in the Yangpyeong Station ration register in return for managing the waterways.",
-        "ko": "2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 체결하였다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다."
+        "en": "In June 2097, the Sluice contracted with waterway workers at Yangpyeong Station. The workers were entered in the Yangpyeong Station ration register in return for managing the waterways.",
+        "ko": "2097년 6월 수문국은 양평역의 물길 관리 인원과 계약을 체결하였다. 이들은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 등재되었다."
       }
     },
     {
@@ -338,7 +338,7 @@
       "kind": "paragraph",
       "anchor": "같은-창세의-다른-제목-p5",
       "text": {
-        "en": "In November 2125, the records office compiled a power ranking of sixteen states.",
+        "en": "In November 2125, the records office compiled a power ranking of predecessor states and vassals within the three states.",
         "ko": "2125년 11월 기록청은 세 국가 안에 존속한 십육국의 전신국·봉신별 강약 장부를 작성하였다."
       }
     },
@@ -358,7 +358,7 @@
         {
           "ko": [
             {
-              "text": "서울전국 연표 2026–2126",
+              "text": "서울전국 연표 2030–2126",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals"
@@ -367,50 +367,10 @@
           ],
           "en": [
             {
-              "text": "Seoul Subway States Timeline 2026–2126",
+              "text": "Seoul Subway States Timeline 2030–2126",
               "link": {
                 "domain": "chronology",
                 "slug": "Century-Annals"
-              }
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "시나리오 타임라인",
-              "link": {
-                "domain": "chronology",
-                "slug": "Scenario-Timeline"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Scenario Timeline",
-              "link": {
-                "domain": "chronology",
-                "slug": "Scenario-Timeline"
-              }
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "신앙과 문화의 분열",
-              "link": {
-                "domain": "culture",
-                "slug": "Faith-Culture-Schism"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "The Faith-and-Culture Schism",
-              "link": {
-                "domain": "culture",
-                "slug": "Faith-Culture-Schism"
               }
             }
           ]
@@ -451,26 +411,6 @@
               "link": {
                 "domain": "factions",
                 "slug": "Sixteen-States"
-              }
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "대정전",
-              "link": {
-                "domain": "overview",
-                "slug": "World-Unbinding"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "The Great Blackout",
-              "link": {
-                "domain": "overview",
-                "slug": "World-Unbinding"
               }
             }
           ]

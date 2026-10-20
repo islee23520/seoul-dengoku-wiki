@@ -2,9 +2,9 @@
   "id": "person-0109",
   "name": "종나솔",
   "title": "뚝섬-신정 급수호송 열차 승무원",
-  "position": "뚝섬-신정 급수호송 열차 승무원 · 청주시 영주",
+  "position": "뚝섬-신정 급수호송 열차 승무원",
   "characterId": "K108",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "급수호송 승무·봉인 확인",
   "gender": "여성",
@@ -456,47 +456,23 @@
             "name": "종나솔",
             "url": "/people/person-0109",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수호송 승무·봉인 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/225/items/1/ko",
-                  "quote": "생업: 급수호송 승무·봉인 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -504,116 +480,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/225/items/1/ko",
-                    "quote": "생업: 급수호송 승무·봉인 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/225/items/1/ko",
-                    "quote": "생업: 급수호송 승무·봉인 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/225/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "구의",
-              "type": "초소 영지",
-              "station": "구의",
-              "state": "S04",
-              "settlement": {
-                "name": "구의 정착지",
-                "type": "정착지",
-                "description": "구의 일대 고정 거점"
-              },
-              "note": "S04 구의 일대 관할 영지"
+              "unspent": 31
             }
           }
         }
@@ -637,47 +543,23 @@
             "name": "종나솔",
             "url": "/people/person-0109",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "급수호송 승무·봉인 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/225/items/1/ko",
-                  "quote": "생업: 급수호송 승무·봉인 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -685,430 +567,65 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/225/items/1/ko",
-                    "quote": "생업: 급수호송 승무·봉인 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/225/items/1/ko",
-                    "quote": "생업: 급수호송 승무·봉인 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/227/text/ko",
-                    "quote": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/225/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 44,
-              "unspent": 31,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "구의",
-              "type": "초소 영지",
-              "station": "구의",
-              "state": "S04",
-              "settlement": {
-                "name": "구의 정착지",
-                "type": "정착지",
-                "description": "구의 일대 고정 거점"
-              },
-              "note": "S04 구의 일대 관할 영지"
+              "unspent": 31
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-43111-S04",
-      "name": {
-        "ko": "상당구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K108",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4311131000",
-          "name": "충청북도 청주시상당구 낭성면"
-        },
-        {
-          "id": "4311132000",
-          "name": "충청북도 청주시상당구 미원면"
-        },
-        {
-          "id": "4311133000",
-          "name": "충청북도 청주시상당구 가덕면"
-        },
-        {
-          "id": "4311134000",
-          "name": "충청북도 청주시상당구 남일면"
-        },
-        {
-          "id": "4311135000",
-          "name": "충청북도 청주시상당구 문의면"
-        },
-        {
-          "id": "4311152500",
-          "name": "충청북도 청주시상당구 중앙동"
-        },
-        {
-          "id": "4311154500",
-          "name": "충청북도 청주시상당구 성안동"
-        },
-        {
-          "id": "4311162000",
-          "name": "충청북도 청주시상당구 탑·대성동"
-        },
-        {
-          "id": "4311167000",
-          "name": "충청북도 청주시상당구 영운동"
-        },
-        {
-          "id": "4311168000",
-          "name": "충청북도 청주시상당구 금천동"
-        },
-        {
-          "id": "4311169000",
-          "name": "충청북도 청주시상당구 용담·명암·산성동"
-        },
-        {
-          "id": "4311172000",
-          "name": "충청북도 청주시상당구 용암1동"
-        },
-        {
-          "id": "4311173000",
-          "name": "충청북도 청주시상당구 용암2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-43111-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-43112-S04",
-      "name": {
-        "ko": "서원구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K108",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4311231000",
-          "name": "충청북도 청주시서원구 남이면"
-        },
-        {
-          "id": "4311232000",
-          "name": "충청북도 청주시서원구 현도면"
-        },
-        {
-          "id": "4311251000",
-          "name": "충청북도 청주시서원구 사직1동"
-        },
-        {
-          "id": "4311252000",
-          "name": "충청북도 청주시서원구 사직2동"
-        },
-        {
-          "id": "4311253000",
-          "name": "충청북도 청주시서원구 사창동"
-        },
-        {
-          "id": "4311254000",
-          "name": "충청북도 청주시서원구 모충동"
-        },
-        {
-          "id": "4311255000",
-          "name": "충청북도 청주시서원구 산남동"
-        },
-        {
-          "id": "4311256000",
-          "name": "충청북도 청주시서원구 분평동"
-        },
-        {
-          "id": "4311257000",
-          "name": "충청북도 청주시서원구 수곡1동"
-        },
-        {
-          "id": "4311258000",
-          "name": "충청북도 청주시서원구 수곡2동"
-        },
-        {
-          "id": "4311259000",
-          "name": "충청북도 청주시서원구 성화·개신·죽림동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-43112-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-43113-S04",
-      "name": {
-        "ko": "흥덕구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K108",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4311325000",
-          "name": "충청북도 청주시흥덕구 오송읍"
-        },
-        {
-          "id": "4311331000",
-          "name": "충청북도 청주시흥덕구 강내면"
-        },
-        {
-          "id": "4311332000",
-          "name": "충청북도 청주시흥덕구 옥산면"
-        },
-        {
-          "id": "4311370000",
-          "name": "충청북도 청주시흥덕구 운천·신봉동"
-        },
-        {
-          "id": "4311374100",
-          "name": "충청북도 청주시흥덕구 복대1동"
-        },
-        {
-          "id": "4311374200",
-          "name": "충청북도 청주시흥덕구 복대2동"
-        },
-        {
-          "id": "4311374700",
-          "name": "충청북도 청주시흥덕구 가경동"
-        },
-        {
-          "id": "4311375100",
-          "name": "충청북도 청주시흥덕구 봉명1동"
-        },
-        {
-          "id": "4311375600",
-          "name": "충청북도 청주시흥덕구 봉명2·송정동"
-        },
-        {
-          "id": "4311376000",
-          "name": "충청북도 청주시흥덕구 강서1동"
-        },
-        {
-          "id": "4311377000",
-          "name": "충청북도 청주시흥덕구 강서2동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-43113-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    },
-    {
-      "id": "holding:opening-barony-gu-43114-S04",
-      "name": {
-        "ko": "청원구 남작령 직영지"
-      },
-      "holderPersonId": "K795",
-      "directLiegePersonId": "K108",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4311425000",
-          "name": "충청북도 청주시청원구 내수읍"
-        },
-        {
-          "id": "4311425300",
-          "name": "충청북도 청주시청원구 오창읍"
-        },
-        {
-          "id": "4311431000",
-          "name": "충청북도 청주시청원구 북이면"
-        },
-        {
-          "id": "4311451000",
-          "name": "충청북도 청주시청원구 우암동"
-        },
-        {
-          "id": "4311452000",
-          "name": "충청북도 청주시청원구 내덕1동"
-        },
-        {
-          "id": "4311453000",
-          "name": "충청북도 청주시청원구 내덕2동"
-        },
-        {
-          "id": "4311454000",
-          "name": "충청북도 청주시청원구 율량·사천동"
-        },
-        {
-          "id": "4311455000",
-          "name": "충청북도 청주시청원구 오근장동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-43114-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "안남늘",
-      "holderRoute": "/people/person-0795"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-43110-S04",
-      "name": "청주시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K108",
-      "basis": "개막 행정 규모 그룹 43110(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S04",
-      "parentTitleId": "title:kingdom-s04",
-      "jurisdictionRefs": [
-        "4311131000",
-        "4311132000",
-        "4311133000",
-        "4311134000",
-        "4311135000",
-        "4311152500",
-        "4311154500",
-        "4311162000",
-        "4311167000",
-        "4311168000",
-        "4311169000",
-        "4311172000",
-        "4311173000",
-        "4311231000",
-        "4311232000",
-        "4311251000",
-        "4311252000",
-        "4311253000",
-        "4311254000",
-        "4311255000",
-        "4311256000",
-        "4311257000",
-        "4311258000",
-        "4311259000",
-        "4311325000",
-        "4311331000",
-        "4311332000",
-        "4311370000",
-        "4311374100",
-        "4311374200",
-        "4311374700",
-        "4311375100",
-        "4311375600",
-        "4311376000",
-        "4311377000",
-        "4311425000",
-        "4311425300",
-        "4311431000",
-        "4311451000",
-        "4311452000",
-        "4311453000",
-        "4311454000",
-        "4311455000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s04",
-        "name": "종교 연합 왕국",
-        "holderPersonId": "K423"
-      }
+      "politicalParentTitleId": "title:kingdom-s04",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1122,18 +639,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "구의",
-    "type": "초소 영지",
-    "station": "구의",
-    "state": "S04",
-    "settlement": {
-      "name": "구의 정착지",
-      "type": "정착지",
-      "description": "구의 일대 고정 거점"
-    },
-    "note": "S04 구의 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1174,15 +679,15 @@
     "욕망": "갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 뚝섬-신정 급수호송 열차 승무원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
+    "생애": "2126년 세대. 종나솔은 영등포 정수 당직에서 자랐다. 종나솔은 탁수 밤의 밸브 서명으로 뚝섬-신정 급수호송 열차 승무원 자리를 맡았다.\n- 종나솔의 뚝섬-신정 급수호송 열차 승무원 업무는 성수1가2동과 연결된다.\n- 종나솔의 신정·뚝섬 급수호송 기록 대조 업무는 신정3동과 연결된다.",
     "관직": "품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.",
-    "일화": "2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 종나솔은 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.",
     "관계": "여의도의 고늘결과 같은 열차의 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.",
     "야망": "총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.",
-    "공포": "자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 것.",
+    "공포": "종나솔은 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 상황을 두려워한다.",
     "개입": "반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다."
   },
-  "biography": "펌프실 쪽 출입문의 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 본다. 과묵하되 명부 빈칸은 소리 내어 읽는다.\n\n- 소속: 명부교회\n- 생업: 급수호송 승무·봉인 확인\n- 품계: 교사\n- 직함: 뚝섬-신정 급수호송 열차 승무원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 뚝섬-신정 급수호송 열차 승무원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.\n\n**일화.** 2125년 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 여의도의 고늘결과 같은 열차의 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.\n\n**야망.** 총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.\n\n**공포.** 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 것.\n\n**개입.** 반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 5 | 무력 −25 | 물질 25 | 공동 35 | 원칙 10 | 공개 −15 | 자격 40 | 분산 25 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
+  "biography": "펌프실 쪽 출입문의 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 본다. 과묵하되 명부 빈칸은 소리 내어 읽는다.\n\n- 소속: 명부교회\n- 생업: 급수호송 승무·봉인 확인\n- 품계: 교사\n- 직함: 뚝섬-신정 급수호송 열차 승무원\n**생애.** 2126년 세대. 종나솔은 영등포 정수 당직에서 자랐다. 종나솔은 탁수 밤의 밸브 서명으로 뚝섬-신정 급수호송 열차 승무원 자리를 맡았다.\n- 종나솔의 뚝섬-신정 급수호송 열차 승무원 업무는 성수1가2동과 연결된다.\n- 종나솔의 신정·뚝섬 급수호송 기록 대조 업무는 신정3동과 연결된다.\n\n**관직.** 품계 교사. 직함은 뚝섬-신정 급수호송 열차 승무원. 출입 명부와 펌프 점검 봉인을 같은 시각에 찍고, 장교 동행의 구두 하차는 수비대 암호패가 있어도 거부한다.\n\n**일화.** 2125년 종나솔은 수압 시험에서 새는 이음매 세 곳을 찾아내 표시판에 올렸다. 이 일로 뚝섬-신정 급수호송 열차 승무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 여의도의 고늘결과 같은 열차의 반대편 문을 지켰고, 임하준의 야간 점검 동선을 마지막까지 봤으며, 변석훈의 펌프실 전력 일지와 시각을 맞춘다.\n\n**야망.** 총관 실종 구간의 반대편 목격을 당회 원장에 올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.\n\n**공포.** 종나솔은 자신이 잠근 문이 납치의 증거로 읽히고, 군자 유치선이 암사 대기선으로 바뀌는 상황을 두려워한다.\n\n**개입.** 반대편 승무 일지를 맞춰 실종 구간을 좁히거나, 문 잠금이 안에서 열린 증거를 찾아 그의 증언을 흔들 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 5 | 무력 −25 | 물질 25 | 공동 35 | 원칙 10 | 공개 −15 | 자격 40 | 분산 25 | 변혁 −5\n- 욕망: 갈망 35 | 독점 −25 | 위험 10 | 과시 5 | 지속 35 | 지향 동성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-04"
   ],

@@ -34,7 +34,11 @@ export const resolveLegacyRegionRoute = (pathname: string): string | undefined =
   const selection = match?.[1] ?? (decodedDong && /(?:동|region:[0-9]+|[0-9]{10})$/u.test(decodedDong) ? directDong : undefined)
   if (!match && !selection) return undefined
   if (!selection) return worldRegionMapRoute
-  try { return `${worldRegionMapRoute}?region=${encodeURIComponent(decodeURIComponent(selection))}` } catch { return worldRegionMapRoute }
+  try {
+    const decoded = decodeURIComponent(selection)
+    if (/^(?:region:)?(?!11)\d{10}$/u.test(decoded)) return worldRegionMapRoute
+    return `${worldRegionMapRoute}?region=${encodeURIComponent(decoded)}`
+  } catch { return worldRegionMapRoute }
 }
 
 export const legacyWorldRoutes: Readonly<Record<string, string>> = {

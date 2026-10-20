@@ -2,9 +2,9 @@
   "id": "person-0150",
   "name": "서라온",
   "title": "지도 복구 사서",
-  "position": "지도 복구 사서 · 강릉시 영주",
+  "position": "지도 복구 사서",
   "characterId": "K149",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "현장 측량·급수지도 복구",
   "gender": "남성",
@@ -352,8 +352,8 @@
           "en": "Curious, she could not stand people losing their way. She saw distributing a wrong map as close to murder."
         },
         "behavior": {
-          "ko": "일화. 강북 정수가 시외로 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.",
-          "en": "Anecdote. After the northern purification line was cut outside the city, maps still printed with the old water-supply districts spread over the Sangam airwaves."
+          "ko": "일화. 도심 북부 급수 인계가 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.",
+          "en": "Anecdote. After water-supply handovers in the northern city center were interrupted, maps still printed with the old water-supply districts spread over the Sangam airwaves."
         },
         "stress": {
           "ko": "공포. 강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것. 행동 변화나 상태 효과는 미확정이다.",
@@ -454,47 +454,23 @@
             "name": "서라온",
             "url": "/people/person-0150",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "현장 측량·급수지도 복구",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/83/items/0/ko",
-                  "quote": "생업: 현장 측량·급수지도 복구"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -502,79 +478,29 @@
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 현장 측량·급수지도 복구"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "서라온 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       },
@@ -597,47 +523,23 @@
             "name": "서라온",
             "url": "/people/person-0150",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "현장 측량·급수지도 복구",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/83/items/0/ko",
-                  "quote": "생업: 현장 측량·급수지도 복구"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -645,226 +547,52 @@
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/83/items/0/ko",
-                    "quote": "생업: 현장 측량·급수지도 복구"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/84/text/ko",
-                    "quote": "현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐컨테이너 적치장",
-              "camp": {
-                "name": "서라온 컨테이너 야영지",
-                "type": "야영지",
-                "description": "폐컨테이너 적치장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 47
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51150-S06",
-      "name": {
-        "ko": "강릉시 공작령 직영지"
-      },
-      "holderPersonId": "K149",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5115025000",
-          "name": "강원특별자치도 강릉시 주문진읍"
-        },
-        {
-          "id": "5115031000",
-          "name": "강원특별자치도 강릉시 성산면"
-        },
-        {
-          "id": "5115032000",
-          "name": "강원특별자치도 강릉시 왕산면"
-        },
-        {
-          "id": "5115033000",
-          "name": "강원특별자치도 강릉시 구정면"
-        },
-        {
-          "id": "5115034000",
-          "name": "강원특별자치도 강릉시 강동면"
-        },
-        {
-          "id": "5115035000",
-          "name": "강원특별자치도 강릉시 옥계면"
-        },
-        {
-          "id": "5115036000",
-          "name": "강원특별자치도 강릉시 사천면"
-        },
-        {
-          "id": "5115037000",
-          "name": "강원특별자치도 강릉시 연곡면"
-        },
-        {
-          "id": "5115051000",
-          "name": "강원특별자치도 강릉시 홍제동"
-        },
-        {
-          "id": "5115052000",
-          "name": "강원특별자치도 강릉시 중앙동"
-        },
-        {
-          "id": "5115054000",
-          "name": "강원특별자치도 강릉시 옥천동"
-        },
-        {
-          "id": "5115055000",
-          "name": "강원특별자치도 강릉시 교1동"
-        },
-        {
-          "id": "5115056000",
-          "name": "강원특별자치도 강릉시 교2동"
-        },
-        {
-          "id": "5115057100",
-          "name": "강원특별자치도 강릉시 포남1동"
-        },
-        {
-          "id": "5115057200",
-          "name": "강원특별자치도 강릉시 포남2동"
-        },
-        {
-          "id": "5115058000",
-          "name": "강원특별자치도 강릉시 초당동"
-        },
-        {
-          "id": "5115059000",
-          "name": "강원특별자치도 강릉시 송정동"
-        },
-        {
-          "id": "5115060000",
-          "name": "강원특별자치도 강릉시 내곡동"
-        },
-        {
-          "id": "5115061500",
-          "name": "강원특별자치도 강릉시 강남동"
-        },
-        {
-          "id": "5115064500",
-          "name": "강원특별자치도 강릉시 성덕동"
-        },
-        {
-          "id": "5115066500",
-          "name": "강원특별자치도 강릉시 경포동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51150-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51150-S06",
-      "name": "강릉시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K149",
-      "basis": "개막 행정 규모 그룹 51150(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5115025000",
-        "5115031000",
-        "5115032000",
-        "5115033000",
-        "5115034000",
-        "5115035000",
-        "5115036000",
-        "5115037000",
-        "5115051000",
-        "5115052000",
-        "5115054000",
-        "5115055000",
-        "5115056000",
-        "5115057100",
-        "5115057200",
-        "5115058000",
-        "5115059000",
-        "5115060000",
-        "5115061500",
-        "5115064500",
-        "5115066500"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51150-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -879,7 +607,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -928,22 +655,22 @@
   },
   "fields": {
     "생업": "현장 측량·급수지도 복구",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "지도 복구 사서",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급",
+    "담당 업무": "지도 복구 사서",
     "가치관": "권위 20 | 개방 −10 | 무력 −35 | 물질 −40 | 공동 5 | 원칙 55 | 공개 −10 | 자격 20 | 분산 −40 | 변혁 −50",
     "욕망": "갈망 0 | 독점 −20 | 위험 −35 | 과시 30 | 지속 −15 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 주사. 직함은 지도 복구 사서. 현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다.",
-    "일화": "강북 정수가 시외로 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.",
-    "관계": "최지우과 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.",
+    "생애": "대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 서라온의 현장 측량을 급수지도에 맞추는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 지도 복구 사서.",
+    "일화": "도심 북부 급수 인계가 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.",
+    "관계": "최지우와 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.",
     "야망": "끊긴 북부 정수와 살아있는 배관을 한 장의 공개 지도로 모아 공동기술원장의 검증 자료로 바친다.",
     "공포": "강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것.",
     "개입": "실제 배관 측량을 가져오거나, 위조 지도 원판의 인쇄소를 찾아낼 수 있다."
   },
-  "biography": "호기심이 많고 길을 잃는 사람을 참지 못한다. 틀린 지도를 배포하는 일을 살인에 가깝다고 여긴다.\n\n- 생업: 현장 측량·급수지도 복구\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 지도 복구 사서\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 주사. 직함은 지도 복구 사서. 현장 측량과 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 도로는 점선으로만 남긴다.\n\n**일화.** 강북 정수가 시외로 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.\n\n**관계.** 최지우과 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 한 장의 공개 지도로 모아 공동기술원장의 검증 자료로 바친다.\n\n**공포.** 강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것.\n\n**개입.** 실제 배관 측량을 가져오거나, 위조 지도 원판의 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −40 | 공동 5 | 원칙 55 | 공개 −10 | 자격 20 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 0 | 독점 −20 | 위험 −35 | 과시 30 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "호기심이 많고 길을 잃는 사람을 참지 못한다. 틀린 지도를 배포하는 일을 살인에 가깝다고 여긴다.\n\n- 생업: 현장 측량·급수지도 복구\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급\n- 담당 업무: 지도 복구 사서\n**생애.** 대합실 당직에서 자랐다. 지도 복구 사서 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 서라온의 현장 측량을 급수지도에 맞추는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방기록연구사 또는 지방행정주사·지방행정주사보 중 서울특별시 기록관리 보직에 맞는 직급. 담당 업무: 지도 복구 사서.\n\n**일화.** 도심 북부 급수 인계가 끊긴 뒤에도 옛 급수구역이 인쇄된 지도가 상암 전파로 퍼졌다.\n\n**관계.** 최지우와 지도 갱신 시각을 맞추고 권미래에게 송신탑 좌표를 받는다. 윤서린은 그의 원판을 인준 첨부물로 쓴다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 한 장의 공개 지도로 모아 공동기술원장의 검증 자료로 바친다.\n\n**공포.** 강국이 지도 원판을 사들여 급수 분쟁 구간을 자기 영토로 인쇄하는 것.\n\n**개입.** 실제 배관 측량을 가져오거나, 위조 지도 원판의 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 −10 | 무력 −35 | 물질 −40 | 공동 5 | 원칙 55 | 공개 −10 | 자격 20 | 분산 −40 | 변혁 −50\n- 욕망: 갈망 0 | 독점 −20 | 위험 −35 | 과시 30 | 지속 −15 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],

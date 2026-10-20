@@ -229,7 +229,7 @@
         "timeline": [
           {
             "year": 2079,
-            "summary": "오준아는 노량진 선창에서 대정전으로 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
+            "summary": "오준아는 노량진 선창에서 통신이 끊기자 이웃의 안부와 거처를 종이에 적어 흩어진 가족을 찾는다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-15.json",
@@ -553,52 +553,23 @@
             "name": "매리울",
             "url": "/people/person-0392",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교구 물자 검수·보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/204/items/0/ko",
-                  "quote": "생업: 교구 물자 검수·보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "교구 물자 검수 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -606,100 +577,40 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 교구 물자 검수·보좌"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "교구 물자 검수 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "명동",
-              "type": "초소 영지",
-              "station": "명동",
-              "state": "S15",
-              "settlement": {
-                "name": "명동 정착지",
-                "type": "정착지",
-                "description": "명동 일대 고정 거점"
-              },
-              "note": "S15 명동 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -723,52 +634,23 @@
             "name": "매리울",
             "url": "/people/person-0392",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "교구 물자 검수·보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/204/items/0/ko",
-                  "quote": "생업: 교구 물자 검수·보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "교구 물자 검수 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -776,100 +658,40 @@
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/204/items/0/ko",
-                    "quote": "생업: 교구 물자 검수·보좌"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "교구 물자 검수 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/206/text/ko",
-                    "quote": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "명동",
-              "type": "초소 영지",
-              "station": "명동",
-              "state": "S15",
-              "settlement": {
-                "name": "명동 정착지",
-                "type": "정착지",
-                "description": "명동 일대 고정 거점"
-              },
-              "note": "S15 명동 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -890,18 +712,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "명동",
-    "type": "초소 영지",
-    "station": "명동",
-    "state": "S15",
-    "settlement": {
-      "name": "명동 정착지",
-      "type": "정착지",
-      "description": "명동 일대 고정 거점"
-    },
-    "note": "S15 명동 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -942,15 +752,15 @@
     "욕망": "갈망 45 | 독점 20 | 위험 −35 | 과시 30 | 지속 −20 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 물자 검수 부제 일을 맡았다.",
-    "관직": "품계 부제. 직함은 교구 물자 검수 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
-    "일화": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 교구 물자 검수 부제의 기록에 당시의 증언을 남겼다.",
+    "생애": "2101-06-10에 태어난 매리울은 영구 겨울의 명동역 교구청에서 교구 물자 검수 부제 일을 맡는다. 교구 물자 검수·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 매리울은 명동 행정동의 명동역 교구청에서 교구 물자 검수 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 부제. 직함은 교구 물자 검수 부제. 교구 물자 검수·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
+    "일화": "여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
     "관계": "동예솔의 청과 저울과 냉동 칸을 나누고, 매하루의 오염 약 명단이 가락 상자에 섞이지 않기를 바란다. 오해린의 시장 방송을 경매 시간에만 참고한다.",
     "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "매리울은 교구 물자 검수 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 교구 물자 검수·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 교구 물자 검수 부제\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 명동역 교구청에서 교구 물자 검수 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 교구 물자 검수 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 교구 물자 검수 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 동예솔의 청과 저울과 냉동 칸을 나누고, 매하루의 오염 약 명단이 가락 상자에 섞이지 않기를 바란다. 오해린의 시장 방송을 경매 시간에만 참고한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −15 | 물질 60 | 공동 −30 | 원칙 −50 | 공개 −15 | 자격 −10 | 분산 5 | 변혁 0\n- 욕망: 갈망 45 | 독점 20 | 위험 −35 | 과시 30 | 지속 −20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "매리울은 교구 물자 검수 부제 업무에서 교구 물자 검수·보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 교구 물자 검수·보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 교구 물자 검수 부제\n**생애.** 2101-06-10에 태어난 매리울은 영구 겨울의 명동역 교구청에서 교구 물자 검수 부제 일을 맡는다. 교구 물자 검수·보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 매리울은 명동 행정동의 명동역 교구청에서 교구 물자 검수 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 교구 물자 검수 부제. 교구 물자 검수·보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 매리울은 녹기 시작한 냉동재고 경매를 유찰시키고 칸 열쇠를 품에 넣었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 동예솔의 청과 저울과 냉동 칸을 나누고, 매하루의 오염 약 명단이 가락 상자에 섞이지 않기를 바란다. 오해린의 시장 방송을 경매 시간에만 참고한다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 20 | 무력 −15 | 물질 60 | 공동 −30 | 원칙 −50 | 공개 −15 | 자격 −10 | 분산 5 | 변혁 0\n- 욕망: 갈망 45 | 독점 20 | 위험 −35 | 과시 30 | 지속 −20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-15"
   ],

@@ -446,47 +446,23 @@
             "name": "안나늘",
             "url": "/people/person-0559",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경매 저울 교체·공동 계량",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/358/items/2/ko",
-                  "quote": "생업: 경매 저울 교체·공동 계량"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -494,73 +470,28 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/358/items/2/ko",
-                    "quote": "생업: 경매 저울 교체·공동 계량"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "응봉",
-              "type": "초소 영지",
-              "station": "응봉",
-              "state": "S08",
-              "settlement": {
-                "name": "응봉 정착지",
-                "type": "정착지",
-                "description": "응봉 일대 고정 거점"
-              },
-              "note": "S08 응봉 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -584,52 +515,23 @@
             "name": "안나늘",
             "url": "/people/person-0559",
             "state": "S08",
-            "method": "card-lexicon",
-            "role": {
-              "display": "경매 저울 교체·공동 계량",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-08.json",
-                  "pointer": "/content/358/items/2/ko",
-                  "quote": "생업: 경매 저울 교체·공동 계량"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/359/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -637,89 +539,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/359/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/358/items/2/ko",
-                    "quote": "생업: 경매 저울 교체·공동 계량"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-08.json",
-                    "pointer": "/content/360/text/ko",
-                    "quote": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 중앙기술보존원 규모",
-              "faction_scale": {
-                "state": "S08",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "응봉",
-              "type": "초소 영지",
-              "station": "응봉",
-              "state": "S08",
-              "settlement": {
-                "name": "응봉 정착지",
-                "type": "정착지",
-                "description": "응봉 일대 고정 거점"
-              },
-              "note": "S08 응봉 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -740,18 +587,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "응봉",
-    "type": "초소 영지",
-    "station": "응봉",
-    "state": "S08",
-    "settlement": {
-      "name": "응봉 정착지",
-      "type": "정착지",
-      "description": "응봉 일대 고정 거점"
-    },
-    "note": "S08 응봉 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -792,15 +627,15 @@
     "욕망": "갈망 15 | 독점 0 | 위험 20 | 과시 30 | 지속 15 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.",
-    "관직": "품계 교도. 직함은 얼음 물류상.",
+    "생애": "2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.\n- 안나늘은 노량진1동에서 경매 저울 교체·공동 계량 업무를 맡는다.",
+    "관직": "품계 교도. 직함은 얼음 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
     "일화": "2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 얼음 물류상 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
+    "관계": "공동 저울 계량 기록을 자기 직위의 인계 기록에 남겨 다음 당직으로 잇는다.",
     "야망": "얼음 물류상 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.",
     "공포": "얼음 물류상 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.",
     "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 경매 저울 교체·공동 계량\n- 직함: 얼음 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 교도. 직함은 얼음 물류상.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 얼음 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 얼음 물류상 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 얼음 물류상 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −20 | 물질 75 | 공동 −25 | 원칙 −30 | 공개 25 | 자격 5 | 분산 20 | 변혁 20\n- 욕망: 갈망 15 | 독점 0 | 위험 20 | 과시 30 | 지속 15 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 중앙정보부\n- 품계: 교도\n- 생업: 경매 저울 교체·공동 계량\n- 직함: 얼음 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 얼음 물류상 자리는 저울 재점검 공개로 열렸다.\n- 안나늘은 노량진1동에서 경매 저울 교체·공동 계량 업무를 맡는다.\n\n**관직.** 품계 교도. 직함은 얼음 물류상. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 파렴치한 저울을 경매장에서 걷어 공동 저울로 바꿨다. 이 일로 얼음 물류상 자리의 서명이 장부에 올랐다.\n\n**관계.** 공동 저울 계량 기록을 자기 직위의 인계 기록에 남겨 다음 당직으로 잇는다.\n\n**야망.** 얼음 물류상 자리에서 중앙정보부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 얼음 물류상 당직이 비면 중앙정보부의 문서와 부품이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 10 | 개방 40 | 무력 −20 | 물질 75 | 공동 −25 | 원칙 −30 | 공개 25 | 자격 5 | 분산 20 | 변혁 20\n- 욕망: 갈망 15 | 독점 0 | 위험 20 | 과시 30 | 지속 15 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-08"
   ],

@@ -2,7 +2,7 @@
   "id": "person-0342",
   "name": "탁은솔",
   "title": "가짜 약 유통 증인",
-  "position": "위조약 감별 수련의",
+  "position": "가짜 약 유통 증인",
   "characterId": "K341",
   "rank": "수련의",
   "commonTier": "T3",
@@ -551,52 +551,23 @@
             "name": "탁은솔",
             "url": "/people/person-0342",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "위조약 유통 시각·증인 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 위조약 유통 시각·증인 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -604,127 +575,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 위조약 유통 시각·증인 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 위조약 유통 시각·증인 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 위조약 유통 시각·증인 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 32,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "탁은솔 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 3
+            }
           }
         }
       },
@@ -747,52 +638,23 @@
             "name": "탁은솔",
             "url": "/people/person-0342",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "위조약 유통 시각·증인 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/215/items/0/ko",
-                  "quote": "생업: 위조약 유통 시각·증인 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -800,127 +662,47 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 위조약 유통 시각·증인 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/214/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 위조약 유통 시각·증인 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/215/items/0/ko",
-                    "quote": "생업: 위조약 유통 시각·증인 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 32,
               "spent": 72,
-              "unspent": 3,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "탁은솔 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S13 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 3
+            }
           }
         }
       }
@@ -941,7 +723,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -992,20 +773,20 @@
     "생업": "위조약 유통 시각·증인 기록",
     "소속": "흰십자단",
     "품계": "수련의",
-    "직함": "위조약 감별 수련의",
+    "직함": "가짜 약 유통 증인",
     "가치관": "권위 −15 | 개방 35 | 무력 −50 | 물질 −20 | 공동 30 | 원칙 30 | 공개 20 | 자격 20 | 분산 20 | 변혁 −5",
     "욕망": "갈망 40 | 독점 40 | 위험 5 | 과시 25 | 지속 0 | 지향 무성향 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 위조약 감별 수련의 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2090-08-29에 태어났다. 2126년 개막 현재 가짜 약 유통 증인 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 위조약 유통 시각·증인 기록 창구가 탁은솔의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.",
     "관직": "품계 수련의. 직함은 위조약 감별 수련의. 유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다.",
     "일화": "여름의 탁수와 가짜 약이 퍼진 주간에 탁은솔은 보호창고 인장과 같은 캡슐을 경매장 뒤칸에서 보았다.",
     "관계": "동주하의 저울 봉인과 증언을 겹치고, 정호준의 수질·약재 공개 검사를 증인석의 기준으로 둔다. 최지우의 폭로 시점을 증언 뒤에만 허용한다.",
-    "야망": "가짜 약 유통 경로를 공개 증언으로 고정해 제조 문장이 강국 보호창고와 같다는 사실을 지우지 못하게 한다.",
-    "공포": "자신의 증언이 한 장의 방송으로 잘려 시장 봉쇄의 구실만 남는 것.",
+    "야망": "가짜 약 유통 경로를 공개 증언으로 고정해 제조 문장이 서울 내부 보호창고와 같다는 사실을 지우지 못하게 하려 한다.",
+    "공포": "자신의 증언이 한 장의 방송으로 잘려 시장 봉쇄의 구실만 남는 일을 두려워한다.",
     "개입": "두 번째 증인을 호송하거나, 증언을 먼저 방송해 봉쇄 폭동을 열 수 있다."
   },
-  "biography": "캡슐 이음매의 어긋남을 한눈에 읽고, 구두로 원산지를 바꾸자는 중개인을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 문장은 믿지 않는다. 제기동의 중립 의료국 흰십자단에서 담당 전문의의 도제로 배우며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 위조약 유통 시각·증인 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 위조약 감별 수련의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 위조약 감별 수련의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 수련의. 직함은 위조약 감별 수련의. 유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 탁은솔은 보호창고 인장과 같은 캡슐을 경매장 뒤칸에서 보았다.\n\n**관계.** 동주하의 저울 봉인과 증언을 겹치고, 정호준의 수질·약재 공개 검사를 증인석의 기준으로 둔다. 최지우의 폭로 시점을 증언 뒤에만 허용한다.\n\n**야망.** 가짜 약 유통 경로를 공개 증언으로 고정해 제조 문장이 강국 보호창고와 같다는 사실을 지우지 못하게 한다.\n\n**공포.** 자신의 증언이 한 장의 방송으로 잘려 시장 봉쇄의 구실만 남는 것.\n\n**개입.** 두 번째 증인을 호송하거나, 증언을 먼저 방송해 봉쇄 폭동을 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −50 | 물질 −20 | 공동 30 | 원칙 30 | 공개 20 | 자격 20 | 분산 20 | 변혁 −5\n- 욕망: 갈망 40 | 독점 40 | 위험 5 | 과시 25 | 지속 0 | 지향 무성향 | 결합 비독점\n:::",
+  "biography": "캡슐 이음매의 어긋남을 한눈에 읽고, 구두로 원산지를 바꾸자는 중개인을 증인석에서 내려보낸다. 숫자는 믿되 빈칸 문장은 믿지 않는다.\n\n- 생업: 위조약 유통 시각·증인 기록\n- 소속: 흰십자단\n- 품계: 수련의\n- 직함: 가짜 약 유통 증인\n**생애.** 2090-08-29에 태어났다. 2126년 개막 현재 가짜 약 유통 증인 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 제기동의 위조약 유통 시각·증인 기록 창구가 탁은솔의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 확정하지 않는다.\n\n**관직.** 품계 수련의. 직함은 위조약 감별 수련의. 유통 시각과 상자 무게를 같은 책에 적고, 독립 증인이 둘 미만이면 도장을 덮는다.\n\n**일화.** 여름의 탁수와 가짜 약이 퍼진 주간에 탁은솔은 보호창고 인장과 같은 캡슐을 경매장 뒤칸에서 보았다.\n\n**관계.** 동주하의 저울 봉인과 증언을 겹치고, 정호준의 수질·약재 공개 검사를 증인석의 기준으로 둔다. 최지우의 폭로 시점을 증언 뒤에만 허용한다.\n\n**야망.** 가짜 약 유통 경로를 공개 증언으로 고정해 제조 문장이 서울 내부 보호창고와 같다는 사실을 지우지 못하게 하려 한다.\n\n**공포.** 자신의 증언이 한 장의 방송으로 잘려 시장 봉쇄의 구실만 남는 일을 두려워한다.\n\n**개입.** 두 번째 증인을 호송하거나, 증언을 먼저 방송해 봉쇄 폭동을 열 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 35 | 무력 −50 | 물질 −20 | 공동 30 | 원칙 30 | 공개 20 | 자격 20 | 분산 20 | 변혁 −5\n- 욕망: 갈망 40 | 독점 40 | 위험 5 | 과시 25 | 지속 0 | 지향 무성향 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-13"
   ],

@@ -2,9 +2,9 @@
   "id": "person-0040",
   "name": "진우람",
   "title": "금천 공방의무원",
-  "position": "금천 공방의무원 · 화성시 영주",
+  "position": "금천 공방의무원",
   "characterId": "K040",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "공방 진료",
   "gender": "여성",
@@ -454,52 +454,23 @@
             "name": "진우람",
             "url": "/people/person-0040",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공방 진료",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/148/items/1/ko",
-                  "quote": "생업: 공방 진료"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,95 +478,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 공방 진료"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "진우람 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       },
@@ -618,52 +529,23 @@
             "name": "진우람",
             "url": "/people/person-0040",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "공방 진료",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/148/items/1/ko",
-                  "quote": "생업: 공방 진료"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -671,338 +553,53 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/149/text/ko",
-                    "quote": "진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/148/items/1/ko",
-                    "quote": "생업: 공방 진료"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "폐건물 옥상",
-              "camp": {
-                "name": "진우람 옥상 야영지",
-                "type": "야영지",
-                "description": "폐건물 옥상에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S02 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 19
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [],
-  "subordinateHoldings": [
-    {
-      "id": "holding:opening-barony-gu-41591-S02",
-      "name": {
-        "ko": "만세구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K040",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4159125000",
-          "name": "경기도 화성시만세구 우정읍"
-        },
-        {
-          "id": "4159125300",
-          "name": "경기도 화성시만세구 향남읍"
-        },
-        {
-          "id": "4159125600",
-          "name": "경기도 화성시만세구 남양읍"
-        },
-        {
-          "id": "4159131000",
-          "name": "경기도 화성시만세구 마도면"
-        },
-        {
-          "id": "4159132000",
-          "name": "경기도 화성시만세구 송산면"
-        },
-        {
-          "id": "4159133000",
-          "name": "경기도 화성시만세구 서신면"
-        },
-        {
-          "id": "4159134000",
-          "name": "경기도 화성시만세구 팔탄면"
-        },
-        {
-          "id": "4159135000",
-          "name": "경기도 화성시만세구 장안면"
-        },
-        {
-          "id": "4159136000",
-          "name": "경기도 화성시만세구 양감면"
-        },
-        {
-          "id": "4159151000",
-          "name": "경기도 화성시만세구 새솔동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41591-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    },
-    {
-      "id": "holding:opening-barony-gu-41593-S02",
-      "name": {
-        "ko": "효행구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K040",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4159325000",
-          "name": "경기도 화성시효행구 봉담읍"
-        },
-        {
-          "id": "4159331000",
-          "name": "경기도 화성시효행구 매송면"
-        },
-        {
-          "id": "4159332000",
-          "name": "경기도 화성시효행구 비봉면"
-        },
-        {
-          "id": "4159333000",
-          "name": "경기도 화성시효행구 정남면"
-        },
-        {
-          "id": "4159351000",
-          "name": "경기도 화성시효행구 기배동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41593-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    },
-    {
-      "id": "holding:opening-barony-gu-41595-S02",
-      "name": {
-        "ko": "병점구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K040",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4159551000",
-          "name": "경기도 화성시병점구 진안동"
-        },
-        {
-          "id": "4159552000",
-          "name": "경기도 화성시병점구 병점1동"
-        },
-        {
-          "id": "4159553000",
-          "name": "경기도 화성시병점구 병점2동"
-        },
-        {
-          "id": "4159554000",
-          "name": "경기도 화성시병점구 반월동"
-        },
-        {
-          "id": "4159555000",
-          "name": "경기도 화성시병점구 화산동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41595-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    },
-    {
-      "id": "holding:opening-barony-gu-41597-S02",
-      "name": {
-        "ko": "동탄구 남작령 직영지"
-      },
-      "holderPersonId": "K473",
-      "directLiegePersonId": "K040",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4159751000",
-          "name": "경기도 화성시동탄구 동탄1동"
-        },
-        {
-          "id": "4159752000",
-          "name": "경기도 화성시동탄구 동탄2동"
-        },
-        {
-          "id": "4159753000",
-          "name": "경기도 화성시동탄구 동탄3동"
-        },
-        {
-          "id": "4159754000",
-          "name": "경기도 화성시동탄구 동탄4동"
-        },
-        {
-          "id": "4159755000",
-          "name": "경기도 화성시동탄구 동탄5동"
-        },
-        {
-          "id": "4159756000",
-          "name": "경기도 화성시동탄구 동탄6동"
-        },
-        {
-          "id": "4159757000",
-          "name": "경기도 화성시동탄구 동탄7동"
-        },
-        {
-          "id": "4159758000",
-          "name": "경기도 화성시동탄구 동탄8동"
-        },
-        {
-          "id": "4159759000",
-          "name": "경기도 화성시동탄구 동탄9동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:barony-gu-41597-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "barony",
-      "holderName": "한현우",
-      "holderRoute": "/people/person-0473"
-    }
-  ],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41590-S02",
-      "name": "화성시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K040",
-      "basis": "개막 행정 규모 그룹 41590(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4159125000",
-        "4159125300",
-        "4159125600",
-        "4159131000",
-        "4159132000",
-        "4159133000",
-        "4159134000",
-        "4159135000",
-        "4159136000",
-        "4159151000",
-        "4159325000",
-        "4159331000",
-        "4159332000",
-        "4159333000",
-        "4159351000",
-        "4159551000",
-        "4159552000",
-        "4159553000",
-        "4159554000",
-        "4159555000",
-        "4159751000",
-        "4159752000",
-        "4159753000",
-        "4159754000",
-        "4159755000",
-        "4159756000",
-        "4159757000",
-        "4159758000",
-        "4159759000"
-      ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [],
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -1017,7 +614,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1069,11 +665,12 @@
     "생업": "공방 진료",
     "품계": "조합원",
     "직함": "금천 공방의무원",
+    "업무 위치": "가산동. 진우람은 가산동 공방 진료 당직에서 분진 환자의 방호복 필터 번호를 확인한다. 임채원의 출고표와 최은재의 인증 도장이 맞지 않으면 그 물량을 보류하고, 한지온의 배급솥이 비는 날의 의무 배식 수를 적는다.",
     "가치관": "권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15",
     "욕망": "갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 가산동. 진우람은 가산동 공방 진료 당직에서 분진 환자의 방호복 필터 번호를 확인한다. 임채원의 출고표와 최은재의 인증 도장이 맞지 않으면 그 물량을 보류하고, 한지온의 배급솥이 비는 날의 의무 배식 수를 적는다.",
     "관직": "품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.",
     "관계": "임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.",
@@ -1081,7 +678,7 @@
     "공포": "필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.",
     "개입": "대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다."
   },
-  "biography": "분진 기침을 용접 불꽃보다 먼저 듣고, 방호 필터를 전리품처럼 쌓는 장교를 재앙처럼 피한다. 자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다.\n\n- 소속: 규격맹\n- 생업: 공방 진료\n- 품계: 조합원\n- 직함: 금천 공방의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.\n\n**야망.** 방호 필터와 공방 진료를 복구복무자의 시민권 조건으로 묶어 규격맹이 군복이 아니어도 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
+  "biography": "분진 기침을 용접 불꽃보다 먼저 듣고, 방호 필터를 전리품처럼 쌓는 장교를 재앙처럼 피한다. 자비롭지만 공복 상태의 숫자 놀음을 용서하지 않는다.\n\n- 소속: 규격맹\n- 생업: 공방 진료\n- 품계: 조합원\n- 직함: 금천 공방의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 금천 공방의무원 자리는 가짜 약 봉인으로 열렸다.\n- 업무 위치: 가산동. 진우람은 가산동 공방 진료 당직에서 분진 환자의 방호복 필터 번호를 확인한다. 임채원의 출고표와 최은재의 인증 도장이 맞지 않으면 그 물량을 보류하고, 한지온의 배급솥이 비는 날의 의무 배식 수를 적는다.\n\n**관직.** 품계 조합원. 직함은 금천 공방의무원. 진료 인원과 필터 출고를 같은 칠판에 쓰고, 군수 우선 배정은 방재 표본이 기준을 넘을 때만 허용한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 금천 공방의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 임채원의 필터 규격을 진료에 적용하는 사제에 가깝고, 한지온의 배급 솥이 비면 의무 배식을 열며, 최은재의 필터 인증 도장이 떨어지면 출고를 잠근다.\n\n**야망.** 방호 필터와 공방 진료를 복구복무자의 시민권 조건으로 묶어 규격맹이 군복이 아니어도 숨 쉬게 한다.\n\n**공포.** 필터 원단이 동부 보호계약에 묶여 금천 작업반이 탁수와 분진 속에 방치되는 것.\n\n**개입.** 대체 원단을 구하거나, 군수 창고에 숨긴 필터를 폭로해 투표의 방향을 바꿀 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −40 | 물질 30 | 공동 35 | 원칙 20 | 공개 30 | 자격 45 | 분산 25 | 변혁 15\n- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −5 | 지속 −10 | 지향 동성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-02"
   ],

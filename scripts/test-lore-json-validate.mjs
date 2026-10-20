@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
-import { chmodSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { chmodSync, copyFileSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { spawn, spawnSync } from 'node:child_process'
+import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { test } from 'vitest'
 
@@ -10,6 +11,23 @@ const example = JSON.parse(readFileSync(join(root, 'lore/ailments/authoring.exam
 const rootExample = JSON.parse(readFileSync(join(root, 'lore/authoring.example.json'), 'utf8'))
 const chronologyExample = JSON.parse(readFileSync(join(root, 'lore/chronology/authoring.example.json'), 'utf8'))
 const run = (...files) => spawnSync(process.execPath, [join(root, 'scripts/lore-json-validate.mjs'), ...files], { cwd: root, encoding: 'utf8' })
+function isolatedFixture() {
+  const isolatedRoot = mkdtempSync(join(tmpdir(), 'isolated-lore-'))
+  const tracked = spawnSync('git', ['ls-files', '-z', '--', 'lore'], { cwd: root, encoding: 'utf8' })
+  assert.equal(tracked.status, 0, tracked.stderr)
+  const paths = [...tracked.stdout.split('\0').filter(Boolean), 'scripts/lore-json-schema.py']
+  for (const path of paths) {
+    mkdirSync(join(isolatedRoot, path, '..'), { recursive: true })
+    copyFileSync(join(root, path), join(isolatedRoot, path))
+  }
+  const initialized = spawnSync('git', ['init', '-q', isolatedRoot], { encoding: 'utf8' })
+  assert.equal(initialized.status, 0, initialized.stderr)
+  const staged = spawnSync('git', ['add', '--', 'lore'], { cwd: isolatedRoot, encoding: 'utf8' })
+  assert.equal(staged.status, 0, staged.stderr)
+  const tree = spawnSync('git', ['write-tree'], { cwd: isolatedRoot, encoding: 'utf8' })
+  assert.equal(tree.status, 0, tree.stderr)
+  return { isolatedRoot, run: (...files) => run('--root', isolatedRoot, '--base', tree.stdout.trim(), ...files) }
+}
 
 function atlasDocument() {
   const document = structuredClone(rootExample)
@@ -42,6 +60,44 @@ test('WNA-001 accepts the closed world-narrative-atlas.v3 contract', () => {
     writeFileSync(file, JSON.stringify(atlasDocument()))
     const result = run(file)
     assert.equal(result.status, 0, result.stderr)
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
+})
+
+test('atlas accepts temporal synthetic relations and rejects unknown kinds', () => {
+  mkdirSync(evidence, { recursive: true })
+  const dir = mkdtempSync(join(evidence, 'atlas-temporal-'))
+  try {
+    const document = atlasDocument()
+    const localized = { en: 'Example', ko: '예시' }
+    for (const id of ['K086', 'K087']) {
+      document.data.atlas.humans.push({ id, name: localized, role: localized, stage: '주요', state_id: '__EXAMPLE__:state', state_name: localized, source_anchor: '__EXAMPLE__:source' })
+    }
+    const synthetic = (id, kind, target) => ({
+      id, display_name: localized, callsign: localized, cls: id[0],
+      owner: '__EXAMPLE__:owner', source_kind: 'original-fiction', source_anchors: ['__EXAMPLE__:source'], revision: 1, projection_targets: [],
+      state_id: '__EXAMPLE__:state', house_id: '__EXAMPLE__:house',
+      body_platform: localized, custody_legal: localized, memory_continuity: localized, energy_parts: localized,
+      maintenance: localized, network_safety: localized, emergent_goal: localized, divergence_recovery: localized,
+      relations: [{ target, kind, reason: localized }],
+      prose: [{ kind: 'paragraph', anchor: `synthetic-${id.toLowerCase()}`, text: localized }],
+    })
+    document.data.atlas.synthetics.push(synthetic('H04', 'historical_custodian', 'K086'))
+    document.data.atlas.synthetics.push(synthetic('F04', 'record_handover_contact', 'K087'))
+    document.data.atlas.relations.push({ from: 'H04', kind: 'historically_custodied_by', to: 'K086', reason: localized })
+    const file = join(dir, 'World-Narrative-Atlas.json')
+    const validate = () => { writeFileSync(file, JSON.stringify(document)); return run(file) }
+    const accepted = validate()
+    assert.equal(accepted.status, 0, accepted.stderr)
+    for (const relation of [document.data.atlas.synthetics[0].relations[0], document.data.atlas.synthetics[1].relations[0], document.data.atlas.relations[0]]) {
+      const kind = relation.kind
+      relation.kind = 'arbitrary-kind'
+      const rejected = validate()
+      assert.equal(rejected.status, 1, rejected.stderr)
+      assert.match(rejected.stderr, /E_SCHEMA/)
+      relation.kind = kind
+    }
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }
@@ -207,32 +263,34 @@ test('default mode checks changed files plus the migration ledger; strict mode f
   }
   assert.ok(!strict.stderr.includes('E_UNMIGRATED: lore/Glossary.md:'))
   // The exception list names files; a new Markdown file anywhere under lore is still reported.
-  const stray = join(root, 'lore/editorial/Unlisted-Note.md')
-  writeFileSync(stray, '# note\n')
+  const { isolatedRoot, run: runIsolated } = isolatedFixture()
+  const stray = join(isolatedRoot, 'lore/editorial/Unlisted-Note.md')
   try {
-    const stricter = run('--strict')
-    assert.equal(stricter.status, 1, stricter.stdout)
-    assert.match(stricter.stderr, /^E_UNMIGRATED: lore\/editorial\/Unlisted-Note\.md: /mu)
+    writeFileSync(stray, '# note\n')
+    const stricter = runIsolated('--strict')
+    assert.equal(stricter.status, 1, stricter.stderr || stricter.stdout)
+    assert.match(stricter.stderr, /^E_UNMIGRATED: lore\/editorial\/Unlisted-Note\.md: /mu, stricter.stderr)
   } finally {
-    rmSync(stray)
+    rmSync(isolatedRoot, { recursive: true, force: true })
   }
 })
 
 test('a Markdown file next to its JSON authoring document fails in default and strict mode', () => {
-  const twin = join(root, 'lore/culture/Food-Culture.md')
-  assert.ok(!existsSync(twin), 'Food-Culture.md must not be committed next to its JSON source')
   const clean = run()
   assert.equal(clean.status, 0, clean.stderr)
   // Data JSON beside a task 10c Markdown file (for example the naming ledger) is not an authoring source.
   assert.doesNotMatch(run('--strict').stderr, /E_MARKDOWN_TWIN/u)
-  writeFileSync(twin, '# twin\n')
+  const { isolatedRoot, run: runIsolated } = isolatedFixture()
+  const twin = join(isolatedRoot, 'lore/culture/Food-Culture.md')
   try {
-    for (const result of [run(), run('--strict')]) {
-      assert.equal(result.status, 1, result.stdout)
-      assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Food-Culture\.md: /mu)
+    assert.ok(!existsSync(twin), 'Food-Culture.md must not be committed next to its JSON source')
+    writeFileSync(twin, '# twin\n')
+    for (const result of [runIsolated(), runIsolated('--strict')]) {
+      assert.equal(result.status, 1, result.stderr || result.stdout)
+      assert.match(result.stderr, /^E_MARKDOWN_TWIN: lore\/culture\/Food-Culture\.md: /mu, result.stderr)
     }
   } finally {
-    rmSync(twin)
+    rmSync(isolatedRoot, { recursive: true, force: true })
   }
 })
 

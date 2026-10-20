@@ -2,9 +2,9 @@
   "id": "person-0156",
   "name": "주리안",
   "title": "북부 정수 배관 탐사원",
-  "position": "북부 정수 배관 탐사원 · 삼척시 영주",
+  "position": "북부 정수 배관 탐사원",
   "characterId": "K155",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "북부 정수 배관 채수·우회 급수",
   "gender": "남성",
@@ -456,52 +456,23 @@
             "name": "주리안",
             "url": "/people/person-0156",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "북부 정수 배관 채수·우회 급수",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/149/items/0/ko",
-                  "quote": "생업: 북부 정수 배관 채수·우회 급수"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -509,122 +480,47 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/149/items/0/ko",
-                    "quote": "생업: 북부 정수 배관 채수·우회 급수"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/149/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "주리안 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -647,52 +543,23 @@
             "name": "주리안",
             "url": "/people/person-0156",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "북부 정수 배관 채수·우회 급수",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/149/items/0/ko",
-                  "quote": "생업: 북부 정수 배관 채수·우회 급수"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -700,224 +567,70 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/149/items/0/ko",
-                    "quote": "생업: 북부 정수 배관 채수·우회 급수"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/150/text/ko",
-                    "quote": "채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/151/text/ko",
-                    "quote": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/149/items/3/ko",
-                    "quote": "한류공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "주리안 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51230-S06",
-      "name": {
-        "ko": "삼척시 공작령 직영지"
-      },
-      "holderPersonId": "K155",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5123025000",
-          "name": "강원특별자치도 삼척시 도계읍"
-        },
-        {
-          "id": "5123025300",
-          "name": "강원특별자치도 삼척시 원덕읍"
-        },
-        {
-          "id": "5123031000",
-          "name": "강원특별자치도 삼척시 근덕면"
-        },
-        {
-          "id": "5123032000",
-          "name": "강원특별자치도 삼척시 하장면"
-        },
-        {
-          "id": "5123033000",
-          "name": "강원특별자치도 삼척시 노곡면"
-        },
-        {
-          "id": "5123034000",
-          "name": "강원특별자치도 삼척시 미로면"
-        },
-        {
-          "id": "5123035000",
-          "name": "강원특별자치도 삼척시 가곡면"
-        },
-        {
-          "id": "5123036000",
-          "name": "강원특별자치도 삼척시 신기면"
-        },
-        {
-          "id": "5123051000",
-          "name": "강원특별자치도 삼척시 남양동"
-        },
-        {
-          "id": "5123053000",
-          "name": "강원특별자치도 삼척시 교동"
-        },
-        {
-          "id": "5123054000",
-          "name": "강원특별자치도 삼척시 정라동"
-        },
-        {
-          "id": "5123057000",
-          "name": "강원특별자치도 삼척시 성내동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51230-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51230-S06",
-      "name": "삼척시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K155",
-      "basis": "개막 행정 규모 그룹 51230(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5123025000",
-        "5123025300",
-        "5123031000",
-        "5123032000",
-        "5123033000",
-        "5123034000",
-        "5123035000",
-        "5123036000",
-        "5123051000",
-        "5123053000",
-        "5123054000",
-        "5123057000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51230-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -932,7 +645,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -981,22 +693,22 @@
   },
   "fields": {
     "생업": "북부 정수 배관 채수·우회 급수",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "북부 정수 배관 탐사원",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급",
+    "담당 업무": "북부 정수 배관 탐사원",
     "가치관": "권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30",
     "욕망": "갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.",
-    "관직": "품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.",
+    "생애": "영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 주리안의 배관 채수와 우회 급수 측량 기록을 인계하는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급. 담당 업무: 북부 정수 배관 탐사원.",
     "일화": "2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.",
-    "관계": "서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
+    "관계": "서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우와 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.",
     "야망": "끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.",
     "공포": "탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.",
     "개입": "실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다."
   },
-  "biography": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.\n\n- 생업: 북부 정수 배관 채수·우회 급수\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 북부 정수 배관 탐사원\n**생애.** 2126년 세대. 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n\n**관직.** 품계 주사. 직함은 북부 정수 배관 탐사원. 채수와 송신 속보를 겹쳐 그리고, 출처가 하나뿐인 구간은 점선으로만 남긴다.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우과 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.\n\n**공포.** 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.\n\n**개입.** 실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자\n:::",
+  "biography": "끊긴 배관의 수온으로 시간을 읽고, 출처가 하나뿐인 도로를 실선으로 그리는 사람을 살인에 가깝다고 여긴다. 늦은 측량을 죄로 본다.\n\n- 생업: 북부 정수 배관 채수·우회 급수\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급\n- 담당 업무: 북부 정수 배관 탐사원\n**생애.** 영등포 정수 당직에서 자랐다. 북부 정수 배관 탐사원 자리는 탁수 밤의 밸브 서명으로 열렸다.\n- 주리안의 배관 채수와 우회 급수 측량 기록을 인계하는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방공업주사·지방공업주사보 또는 지방시설주사·지방시설주사보 중 서울아리수본부 상수도 사업소 보직에 맞는 직급. 담당 업무: 북부 정수 배관 탐사원.\n\n**일화.** 2125년 동파 관로를 녹이는 대신 우회 급수로를 열었다. 이 일로 북부 정수 배관 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 서라온의 원판에 현장 좌표를 넘기는 사제이고, 최지우와 지도 갱신 시각을 맞추며, 마길상의 교량 하부 측량과 우회 점선을 계약으로 나눈다.\n\n**야망.** 끊긴 북부 정수와 살아있는 배관을 현장 측량으로 모아 공동기술원장의 검증 자료가 되게 한다.\n\n**공포.** 탐사 원판이 강국에 사들여져 급수 분쟁 구간이 남의 영토로 인쇄되는 것.\n\n**개입.** 실제 배관 호위를 맡아 원판을 지키거나, 위조 실선 인쇄소를 찾아낼 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 0 | 무력 −25 | 물질 −30 | 공동 0 | 원칙 45 | 공개 −15 | 자격 20 | 분산 −40 | 변혁 −30\n- 욕망: 갈망 30 | 독점 15 | 위험 0 | 과시 −25 | 지속 25 | 지향 양성 | 결합 다자\n:::",
   "sources": [
     "Cast-State-06"
   ],

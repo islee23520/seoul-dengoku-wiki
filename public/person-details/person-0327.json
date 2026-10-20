@@ -2,7 +2,7 @@
   "id": "person-0327",
   "name": "남호성",
   "title": "의무호송대장",
-  "position": "의무호송 전문의",
+  "position": "의무호송대장",
   "characterId": "K326",
   "rank": "전문의",
   "commonTier": "T2",
@@ -552,57 +552,23 @@
             "name": "남호성",
             "url": "/people/person-0327",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "의무호송증 환자·약재 중량 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/94/items/0/ko",
-                  "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/93/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -610,126 +576,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/94/items/0/ko",
-                    "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/94/items/0/ko",
-                    "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/93/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/94/items/0/ko",
-                    "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 92,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 32,
               "spent": 92,
-              "unspent": 0,
-              "total": 92
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "망우",
-              "type": "초소 영지",
-              "station": "망우",
-              "state": "S13",
-              "settlement": {
-                "name": "망우 정착지",
-                "type": "정착지",
-                "description": "망우 일대 고정 거점"
-              },
-              "note": "S13 망우 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -753,57 +639,23 @@
             "name": "남호성",
             "url": "/people/person-0327",
             "state": "S13",
-            "method": "card-lexicon",
-            "role": {
-              "display": "의무호송증 환자·약재 중량 기록",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-13.json",
-                  "pointer": "/content/94/items/0/ko",
-                  "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 13,
-                "cp": 60,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/93/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 60
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -811,126 +663,46 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/94/items/0/ko",
-                    "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/95/text/ko",
-                    "quote": "호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/94/items/0/ko",
-                    "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 15
+                "level": 15,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/93/text/ko",
-                    "quote": "제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/96/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-13.json",
-                    "pointer": "/content/94/items/0/ko",
-                    "quote": "생업: 의무호송증 환자·약재 중량 기록"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 13,
               "Per": 13,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 92,
               "attributes": 60,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 32,
               "spent": 92,
-              "unspent": 0,
-              "total": 92
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 흰십자단 규모",
-              "faction_scale": {
-                "state": "S13",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "망우",
-              "type": "초소 영지",
-              "station": "망우",
-              "state": "S13",
-              "settlement": {
-                "name": "망우 정착지",
-                "type": "정착지",
-                "description": "망우 일대 고정 거점"
-              },
-              "note": "S13 망우 일대 관할 영지"
+              "unspent": 0
             }
           }
         }
@@ -951,18 +723,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "망우",
-    "type": "초소 영지",
-    "station": "망우",
-    "state": "S13",
-    "settlement": {
-      "name": "망우 정착지",
-      "type": "정착지",
-      "description": "망우 일대 고정 거점"
-    },
-    "note": "S13 망우 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -998,20 +758,20 @@
     "생업": "의무호송증 환자·약재 중량 기록",
     "소속": "흰십자단",
     "품계": "전문의",
-    "직함": "의무호송 전문의",
+    "직함": "의무호송대장",
     "가치관": "권위 −10 | 개방 50 | 무력 −65 | 물질 −25 | 공동 15 | 원칙 60 | 공개 25 | 자격 25 | 분산 20 | 변혁 −10",
     "욕망": "갈망 45 | 독점 −5 | 위험 15 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 의무호송 전문의 자리는 가짜 약 봉인으로 열렸다.",
+    "생애": "2089-11-08에 태어났다. 2126년 개막 현재 의무호송대장 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 청량리동의 의무호송증 환자·약재 중량 기록 창구가 남호성의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
     "관직": "품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.",
-    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의무호송 전문의 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.",
     "관계": "장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.",
     "야망": "신내·제기동·아차산 삼각 의무호송을 공동호송조약의 첫 조항으로 못 박는다.",
-    "공포": "호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.",
+    "공포": "호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 일을 두려워한다.",
     "개입": "오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다."
   },
-  "biography": "신의가 강하지만 호송 경로를 미리 말하지 않는다. 무장 호위를 치료 칸에 들이는 것을 거부한다. 제기동의 중립 의료국 흰십자단에서 수련의를 지도하고 후계자를 지정하며, 적아 구분 없이 중증도만으로 치료한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 의무호송 전문의\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 의무호송 전문의 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 의무호송 전문의 자리의 서명이 장부에 올랐다.\n\n**관계.** 장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송을 공동호송조약의 첫 조항으로 못 박는다.\n\n**공포.** 호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 것.\n\n**개입.** 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 50 | 무력 −65 | 물질 −25 | 공동 15 | 원칙 60 | 공개 25 | 자격 25 | 분산 20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 −5 | 위험 15 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 없음\n:::",
+  "biography": "신의가 강하지만 호송 경로를 미리 말하지 않는다. 무장 호위를 치료 칸에 들이는 것을 거부한다.\n\n- 생업: 의무호송증 환자·약재 중량 기록\n- 소속: 흰십자단\n- 품계: 전문의\n- 직함: 의무호송대장\n**생애.** 2089-11-08에 태어났다. 2126년 개막 현재 의무호송대장 직무를 맡아 기존 당직과 기록을 잇는다. 그 직무의 승계 기록에는 가짜 약 봉인으로 열렸다.\n- 청량리동의 의무호송증 환자·약재 중량 기록 창구가 남호성의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 전문의. 직함은 의무호송 전문의. 호송증에 환자 수와 약재 무게만 적고 목적지 국호는 도착 직전에 공개한다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 그날의 기록은 다음 당직이 확인할 인계 근거로 남았다.\n\n**관계.** 장세화와 의료호송을 나누고, 하세온과 구간 교대를 하며, 고서준의 교량 통과 허가를 매번 새로 받는다.\n\n**야망.** 신내·제기동·아차산 삼각 의무호송을 공동호송조약의 첫 조항으로 못 박는다.\n\n**공포.** 호송 열차가 군수 열차로 오인되어 구의 교량에서 막히는 일을 두려워한다.\n\n**개입.** 오인 신호를 바로잡거나, 호송을 우회시켜 관문국의 분열을 키울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 50 | 무력 −65 | 물질 −25 | 공동 15 | 원칙 60 | 공개 25 | 자격 25 | 분산 20 | 변혁 −10\n- 욕망: 갈망 45 | 독점 −5 | 위험 15 | 과시 −25 | 지속 −10 | 지향 양성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-13"
   ],

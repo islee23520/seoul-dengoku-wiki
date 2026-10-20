@@ -4,7 +4,7 @@
   "title": "서울역 대합실 역장",
   "position": "서울역 대합실 역장",
   "characterId": "K157",
-  "rank": "국장",
+  "rank": "미등록",
   "commonTier": "T4",
   "occupation": "대합실 의무 대기표·공증 창구 운영",
   "gender": "남성",
@@ -453,47 +453,23 @@
             "name": "설다흰",
             "url": "/people/person-0158",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 의무 대기표·공증 창구 운영",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/6/items/0/ko",
-                  "quote": "생업: 대합실 의무 대기표·공증 창구 운영"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -501,73 +477,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/6/items/0/ko",
-                    "quote": "생업: 대합실 의무 대기표·공증 창구 운영"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "서울역",
-              "type": "초소 영지",
-              "station": "서울역",
-              "state": "S06",
-              "settlement": {
-                "name": "서울역 정착지",
-                "type": "정착지",
-                "description": "서울역 일대 고정 거점"
-              },
-              "note": "S06 서울역 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -591,47 +522,23 @@
             "name": "설다흰",
             "url": "/people/person-0158",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "대합실 의무 대기표·공증 창구 운영",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/6/items/0/ko",
-                  "quote": "생업: 대합실 의무 대기표·공증 창구 운영"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -639,161 +546,52 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/6/items/0/ko",
-                    "quote": "생업: 대합실 의무 대기표·공증 창구 운영"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/7/text/ko",
-                    "quote": "대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "서울역",
-              "type": "초소 영지",
-              "station": "서울역",
-              "state": "S06",
-              "settlement": {
-                "name": "서울역 정착지",
-                "type": "정착지",
-                "description": "서울역 일대 고정 거점"
-              },
-              "note": "S06 서울역 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51730-S06",
-      "name": {
-        "ko": "횡성군 공작령 직영지"
-      },
-      "holderPersonId": "K157",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5173025000",
-          "name": "강원특별자치도 횡성군 횡성읍"
-        },
-        {
-          "id": "5173031000",
-          "name": "강원특별자치도 횡성군 우천면"
-        },
-        {
-          "id": "5173032000",
-          "name": "강원특별자치도 횡성군 안흥면"
-        },
-        {
-          "id": "5173033000",
-          "name": "강원특별자치도 횡성군 둔내면"
-        },
-        {
-          "id": "5173034000",
-          "name": "강원특별자치도 횡성군 갑천면"
-        },
-        {
-          "id": "5173035000",
-          "name": "강원특별자치도 횡성군 청일면"
-        },
-        {
-          "id": "5173036000",
-          "name": "강원특별자치도 횡성군 공근면"
-        },
-        {
-          "id": "5173037000",
-          "name": "강원특별자치도 횡성군 서원면"
-        },
-        {
-          "id": "5173038000",
-          "name": "강원특별자치도 횡성군 강림면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51730-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51730-S06",
-      "name": "횡성군 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K157",
-      "basis": "개막 행정 규모 그룹 51730(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5173025000",
-        "5173031000",
-        "5173032000",
-        "5173033000",
-        "5173034000",
-        "5173035000",
-        "5173036000",
-        "5173037000",
-        "5173038000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51730-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -807,18 +605,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "서울역",
-    "type": "초소 영지",
-    "station": "서울역",
-    "state": "S06",
-    "settlement": {
-      "name": "서울역 정착지",
-      "type": "정착지",
-      "description": "서울역 일대 고정 거점"
-    },
-    "note": "S06 서울역 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -852,22 +638,22 @@
   },
   "fields": {
     "생업": "대합실 의무 대기표·공증 창구 운영",
-    "소속": "대한민국정부",
-    "품계": "국장",
-    "직함": "서울역 대합실 역장",
+    "지위": "기능·생업 역할(정부 임용 아님)",
+    "공무원 직위·직급": "없음",
+    "생업 역할": "서울역 대합실 역장",
     "가치관": "권위 15 | 개방 −15 | 무력 −35 | 물질 −40 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −40",
     "욕망": "갈망 30 | 독점 −25 | 위험 35 | 과시 30 | 지속 −10 | 지향 이성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 국장. 직함은 서울역 대합실 역장. 대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다.",
+    "생애": "대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 설다흰이 맡는 대합실의 의무 대기표와 공증 창구를 운영하는 일은 회현동의 업무와 이어진다.",
+    "기능·생업 역할": "서울역 대합실 역장. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.",
     "일화": "2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 서울역 대합실 역장 자리의 서명이 장부에 올랐다.",
     "관계": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.",
     "야망": "서울역 대합실을 인준·진료·공증이 한 지붕에서 서명되는 서울역 허브로 만들어 도심 인준의 대면 창구가 된다.",
     "공포": "탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것.",
     "개입": "대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다."
   },
-  "biography": "승강장 습기로 인파를 가늠하고, 의전 열차를 환자 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 이송 취소가 뜨면 방송을 직접 잡는다.\n\n- 생업: 대합실 의무 대기표·공증 창구 운영\n- 소속: 대한민국정부\n- 품계: 국장\n- 직함: 서울역 대합실 역장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 국장. 직함은 서울역 대합실 역장. 대합실 의무 대기표와 공증 창구를 매일 공개하고, 군수 화차는 의료 이송이 떠난 뒤에만 승강장에 붙인다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 서울역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.\n\n**야망.** 서울역 대합실을 인준·진료·공증이 한 지붕에서 서명되는 서울역 허브로 만들어 도심 인준의 대면 창구가 된다.\n\n**공포.** 탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −35 | 물질 −40 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −25 | 위험 35 | 과시 30 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
+  "biography": "승강장 습기로 인파를 가늠하고, 의전 열차를 환자 대기열 앞으로 끌어오라는 명령을 모욕으로 듣는다. 온화하나 이송 취소가 뜨면 방송을 직접 잡는다.\n\n- 생업: 대합실 의무 대기표·공증 창구 운영\n- 지위: 기능·생업 역할(정부 임용 아님)\n- 공무원 직위·직급: 없음\n- 생업 역할: 서울역 대합실 역장\n**생애.** 대합실 당직에서 자랐다. 서울역 대합실 역장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n- 설다흰이 맡는 대합실의 의무 대기표와 공증 창구를 운영하는 일은 회현동의 업무와 이어진다.\n\n**기능·생업 역할.** 서울역 대합실 역장. 대한민국정부 또는 서울특별시 공무원 관직·직위·직급이 아니다.\n\n**일화.** 2125년 사적 청탁을 돌려보내고 공개 창구로 보냈다. 이 일로 서울역 대합실 역장 자리의 서명이 장부에 올랐다.\n\n**관계.** 연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고, 윤지율의 배차 취소를 승강장에서 집행하며, 마도한의 사본 상자를 대합실 봉인 칸에 둔다.\n\n**야망.** 서울역 대합실을 인준·진료·공증이 한 지붕에서 서명되는 서울역 허브로 만들어 도심 인준의 대면 창구가 된다.\n\n**공포.** 탁수와 복무 소문만으로 대합실이 봉쇄되고 피난민이 밀선으로 흩어지는 것.\n\n**개입.** 대합실 봉쇄 명령을 막아 창구를 지키거나, 대기표 조작을 밝혀 역장을 강등시킬 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −15 | 무력 −35 | 물질 −40 | 공동 15 | 원칙 50 | 공개 −20 | 자격 15 | 분산 −35 | 변혁 −40\n- 욕망: 갈망 30 | 독점 −25 | 위험 35 | 과시 30 | 지속 −10 | 지향 이성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-06"
   ],

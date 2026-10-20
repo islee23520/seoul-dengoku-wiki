@@ -551,47 +551,23 @@
             "name": "용두봉",
             "url": "/people/person-0289",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "궤도기병 출격 전 정비·무장 탑재 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/17/items/0/ko",
-                  "quote": "생업: 궤도기병 출격 전 정비·무장 탑재 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -599,105 +575,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/17/items/0/ko",
-                    "quote": "생업: 궤도기병 출격 전 정비·무장 탑재 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/17/items/0/ko",
-                    "quote": "생업: 궤도기병 출격 전 정비·무장 탑재 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/17/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "천호",
-              "type": "초소 영지",
-              "station": "천호",
-              "state": "S11",
-              "settlement": {
-                "name": "천호 정착지",
-                "type": "정착지",
-                "description": "천호 일대 고정 거점"
-              },
-              "note": "S11 천호 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -721,47 +632,23 @@
             "name": "용두봉",
             "url": "/people/person-0289",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "궤도기병 출격 전 정비·무장 탑재 확인",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/17/items/0/ko",
-                  "quote": "생업: 궤도기병 출격 전 정비·무장 탑재 확인"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -769,105 +656,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/17/items/0/ko",
-                    "quote": "생업: 궤도기병 출격 전 정비·무장 탑재 확인"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/17/items/0/ko",
-                    "quote": "생업: 궤도기병 출격 전 정비·무장 탑재 확인"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/18/text/ko",
-                    "quote": "출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/17/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 40,
-              "unspent": 35,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "천호",
-              "type": "초소 영지",
-              "station": "천호",
-              "state": "S11",
-              "settlement": {
-                "name": "천호 정착지",
-                "type": "정착지",
-                "description": "천호 일대 고정 거점"
-              },
-              "note": "S11 천호 일대 관할 영지"
+              "unspent": 35
             }
           }
         }
@@ -888,18 +710,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "천호",
-    "type": "초소 영지",
-    "station": "천호",
-    "state": "S11",
-    "settlement": {
-      "name": "천호 정착지",
-      "type": "정착지",
-      "description": "천호 일대 고정 거점"
-    },
-    "note": "S11 천호 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -940,7 +750,7 @@
     "욕망": "갈망 35 | 독점 30 | 위험 −30 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.\n- 용두봉은 서초4동에서 궤도기병 출격 전 정비·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다",
     "관직": "품계 상무. 직함은 강남역 궤도기병 정비창 거점장. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
     "일화": "시험 차륜 결함 직후 같은 로트의 제동이 정비창 대기열에 남아 있었다.",
     "관계": "권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.",
@@ -948,7 +758,7 @@
     "공포": "제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.",
     "개입": "대기열 제동을 현장에서 갈아 끼우거나, 무단 무장을 정비창 원장에 올릴 수 있다."
   },
-  "biography": "출격 전 차륜을 보지 않은 기병을 빈 칸으로 돌리고, 숙련 없는 무장 탑재를 사고로 기록한다. 정비창의 침묵을 전투의 일부로 본다.\n\n- 생업: 궤도기병 출격 전 정비·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 상무\n- 직함: 강남역 궤도기병 정비창 거점장\n**생애.** 2126년 세대. 강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 상무. 직함은 강남역 궤도기병 정비창 거점장. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.\n\n**일화.** 시험 차륜 결함 직후 같은 로트의 제동이 정비창 대기열에 남아 있었다.\n\n**관계.** 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.\n\n**야망.** 궤도기병 정비창을 기지 고유 직능으로 남겨 사택 민병이 공구를 집어 병영을 만들지 못하게 한다.\n\n**공포.** 제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.\n\n**개입.** 대기열 제동을 현장에서 갈아 끼우거나, 무단 무장을 정비창 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −30 | 무력 20 | 물질 35 | 공동 20 | 원칙 10 | 공개 0 | 자격 75 | 분산 0 | 변혁 −10\n- 욕망: 갈망 35 | 독점 30 | 위험 −30 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
+  "biography": "출격 전 차륜을 보지 않은 기병을 빈 칸으로 돌리고, 숙련 없는 무장 탑재를 사고로 기록한다. 정비창의 침묵을 전투의 일부로 본다.\n\n- 생업: 궤도기병 출격 전 정비·무장 탑재 확인\n- 소속: 성하그룹\n- 품계: 상무\n- 직함: 강남역 궤도기병 정비창 거점장\n**생애.** 강남역 차량기지에서 자랐다. 강남역 궤도기병 정비창 거점장 자리는 탈선 직전 결함 보고로 열렸다.\n- 용두봉은 서초4동에서 궤도기병 출격 전 정비·무장 탑재 확인 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다. 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다\n\n**관직.** 품계 상무. 직함은 강남역 궤도기병 정비창 거점장. 출격 전 점검을 의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다.\n\n**일화.** 시험 차륜 결함 직후 같은 로트의 제동이 정비창 대기열에 남아 있었다.\n\n**관계.** 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다. 용모의 북문 순찰차만 우선 고친다.\n\n**야망.** 궤도기병 정비창을 기지 고유 직능으로 남겨 사택 민병이 공구를 집어 병영을 만들지 못하게 한다.\n\n**공포.** 제동 불량 한 대가 정비창 서명으로 나가 북문 호송 전체가 멈추는 것.\n\n**개입.** 대기열 제동을 현장에서 갈아 끼우거나, 무단 무장을 정비창 원장에 올릴 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −30 | 무력 20 | 물질 35 | 공동 20 | 원칙 10 | 공개 0 | 자격 75 | 분산 0 | 변혁 −10\n- 욕망: 갈망 35 | 독점 30 | 위험 −30 | 과시 5 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-11"
   ],

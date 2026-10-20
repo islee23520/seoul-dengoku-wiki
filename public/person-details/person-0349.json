@@ -531,52 +531,23 @@
             "name": "고서준",
             "url": "/people/person-0349",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "능선수비대장",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-14.json",
-                  "pointer": "/content/2/items/0/ko",
-                  "quote": "생업: 능선수비대장"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/123/text/ko",
-                    "quote": "대치 때 처음으로 같은 명령서에 함께 서명하였다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -584,157 +555,47 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/2/items/0/ko",
-                    "quote": "생업: 능선수비대장"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/124/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Leadership",
                 "ko": "지휘",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/2/items/0/ko",
-                    "quote": "생업: 능선수비대장"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/124/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/123/text/ko",
-                    "quote": "대치 때 처음으로 같은 명령서에 함께 서명하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/126/text/ko",
-                    "quote": "고서준은 능선 통행을 허가제로 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "수벽술."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/125/text/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 아관사 규모",
-              "faction_scale": {
-                "state": "S14",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "고서준 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S14 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       },
@@ -757,52 +618,23 @@
             "name": "고서준",
             "url": "/people/person-0349",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "능선수비대장",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-14.json",
-                  "pointer": "/content/2/items/0/ko",
-                  "quote": "생업: 능선수비대장"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/123/text/ko",
-                    "quote": "대치 때 처음으로 같은 명령서에 함께 서명하였다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -810,157 +642,47 @@
               {
                 "name": "Observation",
                 "ko": "관찰(경비·순찰)",
-                "attr": "Per",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/2/items/0/ko",
-                    "quote": "생업: 능선수비대장"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/124/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Leadership",
                 "ko": "지휘",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/2/items/0/ko",
-                    "quote": "생업: 능선수비대장"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/124/text/ko",
-                    "quote": "생업 별명은 능선수비대장."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/123/text/ko",
-                    "quote": "대치 때 처음으로 같은 명령서에 함께 서명하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/126/text/ko",
-                    "quote": "고서준은 능선 통행을 허가제로 올렸다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Shield",
                 "ko": "방패술",
-                "attr": "DX",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "수벽술."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/125/text/ko",
-                    "quote": "수벽술."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 24,
               "spent": 64,
-              "unspent": 11,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 아관사 규모",
-              "faction_scale": {
-                "state": "S14",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "고서준 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S14 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 11
+            }
           }
         }
       }
@@ -999,7 +721,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -1051,16 +772,13 @@
     "생업": "능선수비대장",
     "소속": "아관사",
     "품계": "사령관",
-    "직함": "아관사 사령관"
+    "직함": "아관사 사령관",
+    "업무 위치": "구의1동 행정동 범위. 생업: 능선수비대장; 구의 대합실의 급수 게시·통행 대기·송장·면제 심사·증언·공동호송 서명의 근무 기준점이다. 역점·시설 실제 경계나 동 전체 소유를 확정하지 않는다. 관계. 배우진과 호위. 한재목과 수문 전술. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다."
   },
   "sections": {
-    "생애": "2126년 세대. 능선 수비. 아관사와 구의수비대는 각자 병력에서 지휘관을 뽑고 서로 다른 지휘권을 유지한다. 고서준이 아관사 사령관으로 선출된 것은 한강진교량공회의 능선 통행을 끊기지 않게 지킨 뒤였다. 구의수비대의 결재가 늦어도 전쟁과 급수는 단독으로 결정하지 못한다. 두 지휘부는 서로를 계속 감시한다. 가문 키는 교량이다. 건대 고려인 회랑이 이 나라 가장자리에 얹힌다. 한재목의 수문은 하구에서 이 교량과 만난다.",
-    "관직": "품계 사령관. 직함은 아관사 사령관. 생업 별명은 능선수비대장. 전쟁과 급수는 아관사와 구의수비대가 각각 병력에서 뽑은 지휘관의 공동 승인을 거치며, 양군은 서로의 결재를 계속 감시한다.",
-    "일화": "북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다. 허가제가 한재목의 수문 칠판보다 먼저였다.",
-    "가문": "한강진교량공회(HP07). 관리인. 능선 통행이 이 가문의 키다.",
-    "관계": "배우진과 호위. 한재목과 수문 전술.\n\n- 생업: 능선수비대장\n- 소속: 아관사\n- 품계: 사령관\n- 직함: 아관사 사령관\n\n아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다. 전쟁과 급수는 두 지휘부가 함께 승인하고 서로를 상시 견제하며, 어느 한쪽도 단독으로 강국이 될 수 없다."
+    "생애": "2126년 세대. 아관사와 구의수비대는 각자의 병력에서 지휘관을 뽑고 지휘권을 나눈다. 고서준은 한강진교량공회의 능선 통행을 지킨 뒤 아관사 사령관으로 선출되었다. 구의수비대장 탁서윤과 전쟁·급수 명령에 함께 결재하고 서로의 결재를 감시한다. 건대 고려인 회랑은 이 나라의 가장자리에 있고 한재목의 수문 기록은 교량 통행 기록과 맞물린다.\n관직. 품계 사령관. 직함은 아관사 사령관. 생업 별명은 능선수비대장. 전쟁과 급수에는 양군 지휘관의 공동 승인이 필요하다.\n일화. 영구 겨울 추위에 구의 급수관 잔압 기록과 능선 통행 기록이 어긋나자 고서준은 교량 허가 명부를 대조하고 탁서윤과 급수 기록을 함께 확인하였다. 두 지휘관의 확인 뒤 허가 시각이 한재목의 수문 칠판에 옮겨졌다.\n가문. 한강진교량공회(HP07). 관리인. 능선 통행이 가문의 키다.\n관계. 탁서윤과 이원 지휘. 배우진과 호위. 한재목과 수문 전술.\n\n- 생업: 능선수비대장\n- 소속: 아관사\n- 품계: 사령관\n- 직함: 아관사 사령관\n- 업무 위치: 구의1동 행정동 범위. 생업: 능선수비대장; 구의 대합실의 급수 게시·통행 대기·송장·면제 심사·증언·공동호송 서명의 근무 기준점이다. 역점·시설 실제 경계나 동 전체 소유를 확정하지 않는다. 관계. 배우진과 호위. 한재목과 수문 전술. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다. 전쟁과 급수는 두 지휘부가 함께 승인하고 서로를 상시 견제하며, 어느 한쪽도 단독으로 강국이 될 수 없다."
   },
-  "biography": "**생애.** 2126년 세대. 능선 수비. 아관사와 구의수비대는 각자 병력에서 지휘관을 뽑고 서로 다른 지휘권을 유지한다. 고서준이 아관사 사령관으로 선출된 것은 한강진교량공회의 능선 통행을 끊기지 않게 지킨 뒤였다. 구의수비대의 결재가 늦어도 전쟁과 급수는 단독으로 결정하지 못한다. 두 지휘부는 서로를 계속 감시한다. 가문 키는 교량이다. 건대 고려인 회랑이 이 나라 가장자리에 얹힌다. 한재목의 수문은 하구에서 이 교량과 만난다.\n**관직.** 품계 사령관. 직함은 아관사 사령관. 생업 별명은 능선수비대장. 전쟁과 급수는 아관사와 구의수비대가 각각 병력에서 뽑은 지휘관의 공동 승인을 거치며, 양군은 서로의 결재를 계속 감시한다.\n**일화.** 북부 정수가 시외에서 끊겼다는 소문이 돌았을 때, 고서준은 능선 통행을 허가제로 올렸다. 허가제가 한재목의 수문 칠판보다 먼저였다.\n**가문.** 한강진교량공회(HP07). 관리인. 능선 통행이 이 가문의 키다.\n**관계.** 배우진과 호위. 한재목과 수문 전술.\n\n- 생업: 능선수비대장\n- 소속: 아관사\n- 품계: 사령관\n- 직함: 아관사 사령관\n\n아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다. 전쟁과 급수는 두 지휘부가 함께 승인하고 서로를 상시 견제하며, 어느 한쪽도 단독으로 강국이 될 수 없다.",
+  "biography": "**생애.** 2126년 세대. 아관사와 구의수비대는 각자의 병력에서 지휘관을 뽑고 지휘권을 나눈다. 고서준은 한강진교량공회의 능선 통행을 지킨 뒤 아관사 사령관으로 선출되었다. 구의수비대장 탁서윤과 전쟁·급수 명령에 함께 결재하고 서로의 결재를 감시한다. 건대 고려인 회랑은 이 나라의 가장자리에 있고 한재목의 수문 기록은 교량 통행 기록과 맞물린다.\n관직. 품계 사령관. 직함은 아관사 사령관. 생업 별명은 능선수비대장. 전쟁과 급수에는 양군 지휘관의 공동 승인이 필요하다.\n일화. 영구 겨울 추위에 구의 급수관 잔압 기록과 능선 통행 기록이 어긋나자 고서준은 교량 허가 명부를 대조하고 탁서윤과 급수 기록을 함께 확인하였다. 두 지휘관의 확인 뒤 허가 시각이 한재목의 수문 칠판에 옮겨졌다.\n가문. 한강진교량공회(HP07). 관리인. 능선 통행이 가문의 키다.\n관계. 탁서윤과 이원 지휘. 배우진과 호위. 한재목과 수문 전술.\n\n- 생업: 능선수비대장\n- 소속: 아관사\n- 품계: 사령관\n- 직함: 아관사 사령관\n- 업무 위치: 구의1동 행정동 범위. 생업: 능선수비대장; 구의 대합실의 급수 게시·통행 대기·송장·면제 심사·증언·공동호송 서명의 근무 기준점이다. 역점·시설 실제 경계나 동 전체 소유를 확정하지 않는다. 관계. 배우진과 호위. 한재목과 수문 전술. 거주지나 정확한 시설 경계를 확정하지 않으며 새 작위·영지·점유권을 부여하지 않는다.\n\n아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다. 전쟁과 급수는 두 지휘부가 함께 승인하고 서로를 상시 견제하며, 어느 한쪽도 단독으로 강국이 될 수 없다.",
   "sources": [
     "Cast-State-14",
     "Core-Characters"

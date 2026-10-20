@@ -454,52 +454,23 @@
             "name": "명해솔",
             "url": "/people/person-0071",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "외곽 좌표·균열 조사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 외곽 좌표·균열 조사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,100 +478,40 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 외곽 좌표·균열 조사"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "태릉입구",
-              "type": "초소 영지",
-              "station": "태릉입구",
-              "state": "S03",
-              "settlement": {
-                "name": "태릉입구 정착지",
-                "type": "정착지",
-                "description": "태릉입구 일대 고정 거점"
-              },
-              "note": "S03 태릉입구 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -624,52 +535,23 @@
             "name": "명해솔",
             "url": "/people/person-0071",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "외곽 좌표·균열 조사",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/170/items/1/ko",
-                  "quote": "생업: 외곽 좌표·균열 조사"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -677,100 +559,40 @@
               {
                 "name": "Chemistry/TL?",
                 "ko": "수질·시료 검사",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/171/text/ko",
-                    "quote": "채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/170/items/1/ko",
-                    "quote": "생업: 외곽 좌표·균열 조사"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/172/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "태릉입구",
-              "type": "초소 영지",
-              "station": "태릉입구",
-              "state": "S03",
-              "settlement": {
-                "name": "태릉입구 정착지",
-                "type": "정착지",
-                "description": "태릉입구 일대 고정 거점"
-              },
-              "note": "S03 태릉입구 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -791,18 +613,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "태릉입구",
-    "type": "초소 영지",
-    "station": "태릉입구",
-    "state": "S03",
-    "settlement": {
-      "name": "태릉입구 정착지",
-      "type": "정착지",
-      "description": "태릉입구 일대 고정 거점"
-    },
-    "note": "S03 태릉입구 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -839,19 +649,20 @@
     "생업": "외곽 좌표·균열 조사",
     "품계": "대리",
     "직함": "서부 외곽 활주로터 탐사원",
+    "업무": "공항동. 명해솔은 옛 항공 접근로의 균열과 채수 좌표를 같은 조사 일지에 적어 장예린의 검사망과 이봄결의 출동 기록에 보낸다.",
     "가치관": "권위 −5 | 개방 20 | 무력 −35 | 물질 5 | 공동 5 | 원칙 60 | 공개 30 | 자격 45 | 분산 20 | 변혁 15",
     "욕망": "갈망 20 | 독점 20 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 서부 외곽 활주로터 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 명해솔은 옛 항공 접근로의 균열과 채수 좌표를 같은 조사 일지에 적어 장예린의 검사망과 이봄결의 출동 기록에 보낸다.\n- 업무: 공항동. 명해솔은 옛 항공 접근로의 균열과 채수 좌표를 같은 조사 일지에 적어 장예린의 검사망과 이봄결의 출동 기록에 보낸다.",
     "관직": "품계 대리. 직함은 서부 외곽 활주로터 탐사원. 채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다.",
-    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 서부 외곽 활주로터 탐사원 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다.",
     "관계": "이봄결의 외곽 출동에 좌표를 넘기는 지휘를 받고, 장예린의 수질 검사망에 외곽 우물 표본을 보내며, 유민호의 유치선 안전을 탐사로 지킨다.",
     "야망": "방화 외곽과 옛 항공 접근로의 붕괴 지도를 공개 원장에 올려 공동기술원장이 보호권의 발판으로 팔리지 않게 한다.",
-    "공포": "탐사 경로가 군사 집결 비밀로 바뀌어 기지가 동부 상수보호권의 서부 창구가 되는 것.",
+    "공포": "탐사 경로가 군사 집결 비밀로 바뀌어 기지가 서울 안의 군사 집결지로 취급되는 것.",
     "개입": "집결 흔적의 실측을 호송해 공개를 지키거나, 비밀 봉인 쪽지를 폭로할 수 있다."
   },
-  "biography": "활주로 콘크리트의 균열로 집결 흔적을 읽고, 지도를 군사 비밀로 봉인하라는 쪽지를 찢어 버린다. 회의적이고 끈질기다.\n\n- 소속: 태욱그룹\n- 생업: 외곽 좌표·균열 조사\n- 품계: 대리\n- 직함: 서부 외곽 활주로터 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 서부 외곽 활주로터 탐사원 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 서부 외곽 활주로터 탐사원. 채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 서부 외곽 활주로터 탐사원 자리의 서명이 장부에 올랐다.\n\n**관계.** 이봄결의 외곽 출동에 좌표를 넘기는 지휘를 받고, 장예린의 수질 검사망에 외곽 우물 표본을 보내며, 유민호의 유치선 안전을 탐사로 지킨다.\n\n**야망.** 방화 외곽과 옛 항공 접근로의 붕괴 지도를 공개 원장에 올려 공동기술원장이 보호권의 발판으로 팔리지 않게 한다.\n\n**공포.** 탐사 경로가 군사 집결 비밀로 바뀌어 기지가 동부 상수보호권의 서부 창구가 되는 것.\n\n**개입.** 집결 흔적의 실측을 호송해 공개를 지키거나, 비밀 봉인 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −35 | 물질 5 | 공동 5 | 원칙 60 | 공개 30 | 자격 45 | 분산 20 | 변혁 15\n- 욕망: 갈망 20 | 독점 20 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "활주로 콘크리트의 균열로 집결 흔적을 읽고, 지도를 군사 비밀로 봉인하라는 쪽지를 찢어 버린다. 회의적이고 끈질기다.\n\n- 소속: 태욱그룹\n- 생업: 외곽 좌표·균열 조사\n- 품계: 대리\n- 직함: 서부 외곽 활주로터 탐사원\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 명해솔은 옛 항공 접근로의 균열과 채수 좌표를 같은 조사 일지에 적어 장예린의 검사망과 이봄결의 출동 기록에 보낸다.\n- 업무: 공항동. 명해솔은 옛 항공 접근로의 균열과 채수 좌표를 같은 조사 일지에 적어 장예린의 검사망과 이봄결의 출동 기록에 보낸다.\n\n**관직.** 품계 대리. 직함은 서부 외곽 활주로터 탐사원. 채수·균열·무인 감시기 좌표를 같은 원장에 남기고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시한다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다.\n\n**관계.** 이봄결의 외곽 출동에 좌표를 넘기는 지휘를 받고, 장예린의 수질 검사망에 외곽 우물 표본을 보내며, 유민호의 유치선 안전을 탐사로 지킨다.\n\n**야망.** 방화 외곽과 옛 항공 접근로의 붕괴 지도를 공개 원장에 올려 공동기술원장이 보호권의 발판으로 팔리지 않게 한다.\n\n**공포.** 탐사 경로가 군사 집결 비밀로 바뀌어 기지가 서울 안의 군사 집결지로 취급되는 것.\n\n**개입.** 집결 흔적의 실측을 호송해 공개를 지키거나, 비밀 봉인 쪽지를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −35 | 물질 5 | 공동 5 | 원칙 60 | 공개 30 | 자격 45 | 분산 20 | 변혁 15\n- 욕망: 갈망 20 | 독점 20 | 위험 0 | 과시 −20 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

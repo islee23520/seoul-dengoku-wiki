@@ -469,8 +469,8 @@
       }
     ],
     "narrative": {
-      "ko": "창고 열람에서 층수와 상자 번호를 말하며 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다. 창고 기억의 정식 열람을 바라지만 문장이 점령 표지로 읽힐 위험을 경계한다.",
-      "en": "She uses floor and box numbers for warehouse access and returns documents bearing specific military names untranslated. She seeks formal access to warehouse memory but guards against insignia being read as an occupation claim."
+      "ko": "창고 열람에서 층수와 상자 번호를 말하며 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다. 창고 기억의 정식 열람을 바라지만 문장이 점령 표지로 읽힐 위험을 경계한다. 문장 재현 시도 때 봉인하는 열람은 용산역 대합실 예약 화물 창고의 해당 열람이며, 모든 창고의 지배권이나 군사 점령권을 주장하지 않는다.",
+      "en": "She uses floor and box numbers for warehouse access and returns documents bearing specific military names untranslated. She seeks formal access to warehouse memory but guards against insignia being read as an occupation claim. An attempt to reproduce insignia seals only the affected access at the reserved-cargo warehouse in the Yongsan Station concourse, without a claim over all warehouses or military occupation rights."
     },
     "health": {
       "status": "unassessed",
@@ -532,41 +532,23 @@
             "name": "조엘 박",
             "url": "/people/person-1014",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록관 (주), 전령 (부)",
-              "evidence": [
-                {
-                  "path": "lore/factions/Diaspora-Corridors.json",
-                  "pointer": "/content/14/items/9/ko",
-                  "quote": "생업: 기록관 (주), 전령 (부)"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -574,115 +556,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/9/ko",
-                    "quote": "생업: 기록관 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/9/ko",
-                    "quote": "생업: 기록관 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 4,
-                "level": 12
-              }
-            ],
-            "languages": [
-              {
-                "name": "영어",
-                "level": "Native",
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/8/ko",
-                    "quote": "언어: 영어·한국어. 군 용어 잔존"
-                  }
-                ]
-              },
-              {
-                "name": "한국어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/8/ko",
-                    "quote": "언어: 영어·한국어. 군 용어 잔존"
-                  }
-                ]
+                "level": 12,
+                "cp": 4
               }
             ],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "북부 유동 야영지",
-              "camp": {
-                "name": "조엘 박 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       },
@@ -705,41 +607,23 @@
             "name": "조엘 박",
             "url": "/people/person-1014",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "기록관 (주), 전령 (부)",
-              "evidence": [
-                {
-                  "path": "lore/factions/Diaspora-Corridors.json",
-                  "pointer": "/content/14/items/9/ko",
-                  "quote": "생업: 기록관 (주), 전령 (부)"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -747,115 +631,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/9/ko",
-                    "quote": "생업: 기록관 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/9/ko",
-                    "quote": "생업: 기록관 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 4,
-                "level": 12
-              }
-            ],
-            "languages": [
-              {
-                "name": "영어",
-                "level": "Native",
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/8/ko",
-                    "quote": "언어: 영어·한국어. 군 용어 잔존"
-                  }
-                ]
-              },
-              {
-                "name": "한국어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/14/items/8/ko",
-                    "quote": "언어: 영어·한국어. 군 용어 잔존"
-                  }
-                ]
+                "level": 12,
+                "cp": 4
               }
             ],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "북부 유동 야영지",
-              "camp": {
-                "name": "조엘 박 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       }
@@ -876,7 +680,6 @@
       "factor": 0.7
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 2,
@@ -944,10 +747,11 @@
     "공포": "누군가가 문장을 그려 넣어 울타리를 「점령」으로 읽는 것",
     "통치·교섭 방식": "고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다",
     "주요 관계": "아미라와 통행 협력. 박태겸과는 열람 권한을 두고 계약 경쟁",
-    "촉발 사건": "문장 재현 시도가 있으면 창고 열람이 봉인된다"
+    "거주지": "한강로동 용산역 주변 용역 가구의 임시 숙소. 위치 참조이며 소유권을 부여하지 않는다.",
+    "업무 위치": "용산역 대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다."
   },
   "sections": {},
-  "biography": "- 성명: 조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘\n- 캐릭터 ID: K1014\n- 출생지: 용산\n- 성별: 여성\n- 품계: 없음\n- 가치관: 권위 10 | 개방 10 | 무력 −20 | 물질 −10 | 공동 0 | 원칙 40 | 공개 −40 | 자격 0 | 분산 0 | 변혁 −20\n- 욕망: 갈망 50 | 독점 30 | 위험 0 | 과시 −10 | 지속 20 | 지향 양성 | 결합 단혼\n- 출신 공동체: 용산 울타리 용역. 한국 국적, 영어 일상. 붕괴 전 주둔지 하청 통역. 조엘 박은 2082년 용산에서 태어났다. 한국계 박씨 가구와 아프리카계 미국인 카터 가구를 양친으로 두고 영어와 한국어를 사용한다. 한국 국적을 지니고 한국 병역을 마쳤으며, 용산 울타리 용역 장부를 맡아 창고 열람을 통역한다. 박윤석은 2030년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 조엘 박의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 영어·한국어. 군 용어 잔존\n- 생업: 기록관 (주), 전령 (부)\n- 소속: 환적국(S07). 울타리 용역 장부. 환적국에 창고 기억으로 등록\n- 직위: 울타리 안 창고 열람 통역\n- 징집 이력: 한국 병역 필. 예비군 명부는 용산 잔편 쪽에 찢겨 있다\n- 무장 접근: 없음. 열쇠만. 제식 소화기는 울타리 안 봉인\n- 성격: 외국 군 이름을 입 밖에 내지 않는다. 층수와 상자 번호만 말한다\n- 개인 야망: 창고 기억을 후국회의 정식 열람으로 올려 문장 없는 열쇠를 남긴다\n- 공포: 누군가가 문장을 그려 넣어 울타리를 「점령」으로 읽는 것\n- 통치·교섭 방식: 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다\n- 주요 관계: 아미라와 통행 협력. 박태겸과는 열람 권한을 두고 계약 경쟁\n- 촉발 사건: 문장 재현 시도가 있으면 창고 열람이 봉인된다",
+  "biography": "- 성명: 조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘\n- 캐릭터 ID: K1014\n- 출생지: 용산\n- 성별: 여성\n- 품계: 없음\n- 가치관: 권위 10 | 개방 10 | 무력 −20 | 물질 −10 | 공동 0 | 원칙 40 | 공개 −40 | 자격 0 | 분산 0 | 변혁 −20\n- 욕망: 갈망 50 | 독점 30 | 위험 0 | 과시 −10 | 지속 20 | 지향 양성 | 결합 단혼\n- 출신 공동체: 용산 울타리 용역. 한국 국적, 영어 일상. 붕괴 전 주둔지 하청 통역. 조엘 박은 2082년 용산에서 태어났다. 한국계 박씨 가구와 아프리카계 미국인 카터 가구를 양친으로 두고 영어와 한국어를 사용한다. 한국 국적을 지니고 한국 병역을 마쳤으며, 용산 울타리 용역 장부를 맡아 창고 열람을 통역한다. 박윤석은 2030년 용산 울타리 용역에서 용산 주둔지의 민간 하청 통역을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 조엘 박의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 영어·한국어. 군 용어 잔존\n- 생업: 기록관 (주), 전령 (부)\n- 소속: 환적국(S07). 울타리 용역 장부. 환적국에 창고 기억으로 등록\n- 직위: 울타리 안 창고 열람 통역\n- 징집 이력: 한국 병역 필. 예비군 명부는 용산 잔편 쪽에 찢겨 있다\n- 무장 접근: 없음. 열쇠만. 제식 소화기는 울타리 안 봉인\n- 성격: 외국 군 이름을 입 밖에 내지 않는다. 층수와 상자 번호만 말한다\n- 개인 야망: 창고 기억을 후국회의 정식 열람으로 올려 문장 없는 열쇠를 남긴다\n- 공포: 누군가가 문장을 그려 넣어 울타리를 「점령」으로 읽는 것\n- 통치·교섭 방식: 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다\n- 주요 관계: 아미라와 통행 협력. 박태겸과는 열람 권한을 두고 계약 경쟁\n- 문장 재현 시도가 있으면 용산역 대합실 예약 화물 창고의 해당 열람을 봉인한다. 조엘은 군 고유 명칭 문서를 돌려보내고 아미라는 인계 대상 통행증의 언어를 대조한다. 모든 창고의 지배권이나 군사 점령권을 주장하지 않는다.\n- 거주지: 한강로동 용산역 주변 용역 가구의 임시 숙소. 위치 참조이며 소유권을 부여하지 않는다.\n- 업무 위치: 용산역 대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다.",
   "sources": [
     "Diaspora-Corridors"
   ],

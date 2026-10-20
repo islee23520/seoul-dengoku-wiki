@@ -446,47 +446,23 @@
             "name": "판효담",
             "url": "/people/person-0387",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "보관함 당직·선거 보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/182/items/0/ko",
-                  "quote": "생업: 보관함 당직·선거 보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/184/text/ko",
-                    "quote": "명동역 보관함 당직 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -494,89 +470,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 보관함 당직·선거 보좌"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/184/text/ko",
-                    "quote": "명동역 보관함 당직 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/182/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "봉래문",
-              "type": "초소 영지",
-              "station": "봉래문",
-              "state": "S15",
-              "settlement": {
-                "name": "봉래문 정착지",
-                "type": "정착지",
-                "description": "봉래문 일대 고정 거점"
-              },
-              "note": "S15 봉래문 일대 관할 영지"
+              "unspent": 43
             }
           }
         }
@@ -600,47 +521,23 @@
             "name": "판효담",
             "url": "/people/person-0387",
             "state": "S15",
-            "method": "card-lexicon",
-            "role": {
-              "display": "보관함 당직·선거 보좌",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-15.json",
-                  "pointer": "/content/182/items/0/ko",
-                  "quote": "생업: 보관함 당직·선거 보좌"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/184/text/ko",
-                    "quote": "명동역 보관함 당직 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -648,89 +545,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/182/items/0/ko",
-                    "quote": "생업: 보관함 당직·선거 보좌"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/184/text/ko",
-                    "quote": "명동역 보관함 당직 부제의 기록에 당시의 증언을 남겼다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-15.json",
-                    "pointer": "/content/182/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명동대교구 규모",
-              "faction_scale": {
-                "state": "S15",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "봉래문",
-              "type": "초소 영지",
-              "station": "봉래문",
-              "state": "S15",
-              "settlement": {
-                "name": "봉래문 정착지",
-                "type": "정착지",
-                "description": "봉래문 일대 고정 거점"
-              },
-              "note": "S15 봉래문 일대 관할 영지"
+              "unspent": 43
             }
           }
         }
@@ -751,18 +593,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "봉래문",
-    "type": "초소 영지",
-    "station": "봉래문",
-    "state": "S15",
-    "settlement": {
-      "name": "봉래문 정착지",
-      "type": "정착지",
-      "description": "봉래문 일대 고정 거점"
-    },
-    "note": "S15 봉래문 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -803,15 +633,15 @@
     "욕망": "갈망 45 | 독점 15 | 위험 −40 | 과시 −20 | 지속 35 | 지향 동성 | 결합 단혼"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡았다.",
-    "관직": "품계 부제. 직함은 명동역 보관함 당직 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.",
-    "일화": "상인들이 창고를 봉쇄한 밤, 군량 칸의 봉인만 안쪽에서 열리고 기지 당직 명단이 한 줄 빠져 있었다. 명동역 보관함 당직 부제의 기록에 당시의 증언을 남겼다.",
+    "생애": "2086-01-15에 태어난 판효담은 영구 겨울의 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡는다. 보관함 당직·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 판효담은 명동 행정동의 명동역 교구청에서 명동역 보관함 당직 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 부제. 직함은 명동역 보관함 당직 부제. 보관함 당직·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.",
+    "일화": "상인들이 창고를 봉쇄한 밤, 군량 칸의 봉인만 안쪽에서 열리고 기지 당직 명단이 한 줄 빠져 있었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.",
     "관계": "라진우의 재고 원장을 기지에서 집행하고, 수한별의 순찰과 자물쇠를 나눈다. 전나경의 비상 배급 마차를 출고 맨 위에 둔다.",
     "야망": "교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.",
     "공포": "교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.",
     "개입": "교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다."
   },
-  "biography": "판효담은 명동역 보관함 당직 부제 일을 맡는다. 교구 명부와 선거 봉인에 남은 누락을 먼저 살핀다.\n\n- 생업: 보관함 당직·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 보관함 당직 부제\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡았다.\n\n**관직.** 품계 부제. 직함은 명동역 보관함 당직 부제. 사제단의 대주교 비밀 선거를 보좌하되 투표권은 신부에게만 있다.\n\n**일화.** 상인들이 창고를 봉쇄한 밤, 군량 칸의 봉인만 안쪽에서 열리고 기지 당직 명단이 한 줄 빠져 있었다. 명동역 보관함 당직 부제의 기록에 당시의 증언을 남겼다.\n\n**관계.** 라진우의 재고 원장을 기지에서 집행하고, 수한별의 순찰과 자물쇠를 나눈다. 전나경의 비상 배급 마차를 출고 맨 위에 둔다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 40 | 공동 −15 | 원칙 −40 | 공개 −30 | 자격 0 | 분산 0 | 변혁 10\n- 욕망: 갈망 45 | 독점 15 | 위험 −40 | 과시 −20 | 지속 35 | 지향 동성 | 결합 단혼\n:::",
+  "biography": "판효담은 명동역 보관함 당직 부제 업무에서 보관함 당직·선거 보좌 기록을 먼저 대조한다. 영구 겨울의 명동역 구휼·선거·인준 업무가 겹칠 때도 서명 순서와 공개 시각을 장부에 남긴다.\n\n- 생업: 보관함 당직·선거 보좌\n- 소속: 명동대교구 (명동역)\n- 품계: 부제\n- 직함: 명동역 보관함 당직 부제\n**생애.** 2086-01-15에 태어난 판효담은 영구 겨울의 명동역 교구청에서 명동역 보관함 당직 부제 일을 맡는다. 보관함 당직·선거 보좌 업무로 교구 명부와 선거 봉인의 서명을 대조하며, 대주교 비밀 선거의 투표권과 자신의 보좌 권한을 구분한다.\n- 판효담은 명동 행정동의 명동역 교구청에서 명동역 보관함 당직 부제 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 부제. 직함은 명동역 보관함 당직 부제. 보관함 당직·선거 보좌 업무를 맡으며, 사제단 비밀 선거에서는 자신의 증언·보좌 범위만 행사한다.\n\n**일화.** 상인들이 창고를 봉쇄한 밤, 군량 칸의 봉인만 안쪽에서 열리고 기지 당직 명단이 한 줄 빠져 있었다. 그날의 조치와 증언을 교구 장부의 해당 줄에 함께 남겼다.\n\n**관계.** 라진우의 재고 원장을 기지에서 집행하고, 수한별의 순찰과 자물쇠를 나눈다. 전나경의 비상 배급 마차를 출고 맨 위에 둔다.\n\n**야망.** 교구 명부와 선거 봉인을 지켜 다음 대주교 비밀 선거의 절차와 명동역 인준이 끊기지 않게 한다.\n\n**공포.** 교구 명부와 선거 봉인이 지워져 교황 없는 선출의 정당성 논쟁에서 자신의 서명이 의심받는 것.\n\n**개입.** 교구 명부와 선거 봉인의 서명을 대조해 선거 절차에 관한 이의를 증언할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 20 | 개방 25 | 무력 −5 | 물질 40 | 공동 −15 | 원칙 −40 | 공개 −30 | 자격 0 | 분산 0 | 변혁 10\n- 욕망: 갈망 45 | 독점 15 | 위험 −40 | 과시 −20 | 지속 35 | 지향 동성 | 결합 단혼\n:::",
   "sources": [
     "Cast-State-15"
   ],

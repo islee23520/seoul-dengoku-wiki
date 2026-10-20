@@ -453,52 +453,23 @@
             "name": "허은찬",
             "url": "/people/person-0018",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "전력 설비 운전",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/61/items/1/ko",
-                  "quote": "생업: 전력 설비 운전"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,105 +477,40 @@
               {
                 "name": "Electrician/TL?",
                 "ko": "전력 설비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/61/items/1/ko",
-                    "quote": "생업: 전력 설비 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/61/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "오천",
-              "type": "초소 영지",
-              "station": "오천",
-              "state": "S01",
-              "settlement": {
-                "name": "오천 정착지",
-                "type": "정착지",
-                "description": "오천 일대 고정 거점"
-              },
-              "note": "S01 오천 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -628,52 +534,23 @@
             "name": "허은찬",
             "url": "/people/person-0018",
             "state": "S01",
-            "method": "card-lexicon",
-            "role": {
-              "display": "전력 설비 운전",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-01.json",
-                  "pointer": "/content/61/items/1/ko",
-                  "quote": "생업: 전력 설비 운전"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -681,105 +558,40 @@
               {
                 "name": "Electrician/TL?",
                 "ko": "전력 설비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/61/items/1/ko",
-                    "quote": "생업: 전력 설비 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/63/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-01.json",
-                    "pointer": "/content/61/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 수문국 규모",
-              "faction_scale": {
-                "state": "S01",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "오천",
-              "type": "초소 영지",
-              "station": "오천",
-              "state": "S01",
-              "settlement": {
-                "name": "오천 정착지",
-                "type": "정착지",
-                "description": "오천 일대 고정 거점"
-              },
-              "note": "S01 오천 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -800,18 +612,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "오천",
-    "type": "초소 영지",
-    "station": "오천",
-    "state": "S01",
-    "settlement": {
-      "name": "오천 정착지",
-      "type": "정착지",
-      "description": "오천 일대 고정 거점"
-    },
-    "note": "S01 오천 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -848,11 +648,12 @@
     "생업": "전력 설비 운전",
     "품계": "당직장",
     "직함": "신정기지 유치선 전력감독",
+    "업무 위치": "신정3동. 신정3동 유치선에서 허은찬은 저수조 수위와 전력 계기판을 대조하고 오해린의 냉동 충전 요청보다 급수펌프를 먼저 배전한다.",
     "가치관": "권위 50 | 개방 −5 | 무력 0 | 물질 35 | 공동 10 | 원칙 25 | 공개 5 | 자격 −5 | 분산 −55 | 변혁 −20",
     "욕망": "갈망 10 | 독점 −20 | 위험 30 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 신정3동. 신정3동 유치선에서 허은찬은 저수조 수위와 전력 계기판을 대조하고 오해린의 냉동 충전 요청보다 급수펌프를 먼저 배전한다.",
     "관직": "품계 당직장. 직함은 신정기지 유치선 전력감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 신정기지 유치선 전력감독 자리의 서명이 장부에 올랐다.",
     "관계": "최한결의 보수열차 출고에 전력을 대는 지휘를 받고, 제윤의 통행 원장에 전력 사용량을 계약으로 붙이며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.",
@@ -860,7 +661,7 @@
     "공포": "한 번의 과방전으로 수문 전동기가 죽고, 그 정전을 냉동 상회가 결제권 압박으로 쓰는 것.",
     "개입": "대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다."
   },
-  "biography": "변압기 진동으로 과부하를 읽고, 급수펌프보다 군수 충전을 앞세우라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 수문국\n- 생업: 전력 설비 운전\n- 품계: 당직장\n- 직함: 신정기지 유치선 전력감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 당직장. 직함은 신정기지 유치선 전력감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 신정기지 유치선 전력감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 최한결의 보수열차 출고에 전력을 대는 지휘를 받고, 제윤의 통행 원장에 전력 사용량을 계약으로 붙이며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 신정 유치선의 비상 전력을 급수·보수 열차 전용으로 고정해 물 계약의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 수문 전동기가 죽고, 그 정전을 냉동 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 0 | 물질 35 | 공동 10 | 원칙 25 | 공개 5 | 자격 −5 | 분산 −55 | 변혁 −20\n- 욕망: 갈망 10 | 독점 −20 | 위험 30 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "변압기 진동으로 과부하를 읽고, 급수펌프보다 군수 충전을 앞세우라는 쪽지를 태운다. 과묵하고 교대 일지를 깎지 않는다.\n\n- 소속: 수문국\n- 생업: 전력 설비 운전\n- 품계: 당직장\n- 직함: 신정기지 유치선 전력감독\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 신정기지 유치선 전력감독 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 신정3동. 신정3동 유치선에서 허은찬은 저수조 수위와 전력 계기판을 대조하고 오해린의 냉동 충전 요청보다 급수펌프를 먼저 배전한다.\n\n**관직.** 품계 당직장. 직함은 신정기지 유치선 전력감독. 전력 배분을 공개 계기판에 남기고, 군수 충전은 저수조 수위가 최저선을 넘을 때만 허용한다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 신정기지 유치선 전력감독 자리의 서명이 장부에 올랐다.\n\n**관계.** 최한결의 보수열차 출고에 전력을 대는 지휘를 받고, 제윤의 통행 원장에 전력 사용량을 계약으로 붙이며, 오해린의 냉동 충전 요청을 거절한 빚이 있다.\n\n**야망.** 신정 유치선의 비상 전력을 급수·보수 열차 전용으로 고정해 물 계약의 심야 동맥이 된다.\n\n**공포.** 한 번의 과방전으로 수문 전동기가 죽고, 그 정전을 냉동 상회가 결제권 압박으로 쓰는 것.\n\n**개입.** 대체 축전지를 구해 이중 공급을 열거나, 계기판 조작을 폭로해 감독을 교체할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 50 | 개방 −5 | 무력 0 | 물질 35 | 공동 10 | 원칙 25 | 공개 5 | 자격 −5 | 분산 −55 | 변혁 −20\n- 욕망: 갈망 10 | 독점 −20 | 위험 30 | 과시 −20 | 지속 30 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-01"
   ],

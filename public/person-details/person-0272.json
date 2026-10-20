@@ -51,7 +51,7 @@
         "timeline": [
           {
             "year": 2126,
-            "summary": "2126년 세대. 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 서울 밖 작업장 두 곳이 성하전자의 부품과 노동을 댄다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
+            "summary": "2126년 세대. 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
             "sourceRefs": [
               {
                 "path": "lore/characters/Cast-State-11.json",
@@ -426,47 +426,23 @@
             "name": "이홍원",
             "url": "/people/person-0272",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "성하전자 원로",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/2/items/0/ko",
-                  "quote": "생업: 성하전자 원로"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/102/text/ko",
-                    "quote": "승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -474,105 +450,35 @@
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "단철공."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "원로 사제."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/101/text/ko",
-                    "quote": "단철공."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/101/text/ko",
-                    "quote": "원로 사제."
-                  }
-                ],
-                "cp": 8,
-                "level": 11
+                "level": 11,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/102/text/ko",
-                    "quote": "승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "이홍원 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 43
+            }
           }
         }
       },
@@ -595,47 +501,23 @@
             "name": "이홍원",
             "url": "/people/person-0272",
             "state": "S11",
-            "method": "card-lexicon",
-            "role": {
-              "display": "성하전자 원로",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-11.json",
-                  "pointer": "/content/2/items/0/ko",
-                  "quote": "생업: 성하전자 원로"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/102/text/ko",
-                    "quote": "승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -643,105 +525,35 @@
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "단철공."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-11.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "원로 사제."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/101/text/ko",
-                    "quote": "단철공."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/101/text/ko",
-                    "quote": "원로 사제."
-                  }
-                ],
-                "cp": 8,
-                "level": 11
+                "level": 11,
+                "cp": 8
               },
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/102/text/ko",
-                    "quote": "승계 시험 전날, 이홍원은 주거 공동체의 표를 시험장 밖으로 내보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 32,
-              "unspent": 43,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 성하그룹 규모",
-              "faction_scale": {
-                "state": "S11",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "중단된 공사장",
-              "camp": {
-                "name": "이홍원 공사장 야영지",
-                "type": "야영지",
-                "description": "중단된 공사장에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S11 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 43
+            }
           }
         }
       }
@@ -780,7 +592,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -835,13 +646,13 @@
     "직함": "성하그룹 회장, 이씨 가문 세습"
   },
   "sections": {
-    "생애": "2126년 세대. 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 서울 밖 작업장 두 곳이 성하전자의 부품과 노동을 댄다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
+    "생애": "강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
     "관직": "품계 회장. 직함은 성하그룹 회장, 이씨 가문 세습. 생업 별명은 성하전자 원로.",
     "일화": "승계 시험 전날, 이홍원은 강남역 사택의 표를 시험장 밖으로 내보냈다. 표가 연공 함과 섞이지 않았다.",
     "가문": "이씨 가문. 관리인. 신정차륜가(HC02) 관리인은 유세진이다.",
-    "관계": "박태겸과 차륜. 강민서와 규격. 배우진과 차단문.\n\n- 생업: 성하전자 원로\n- 소속: 성하그룹\n- 품계: 회장\n- 직함: 성하그룹 회장, 이씨 가문 세습\n\n성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다."
+    "관계": "박태겸과 차륜. 강민서와 규격. 배우진과 차단문.\n\n- 생업: 성하전자 원로\n- 소속: 성하그룹\n- 품계: 회장\n- 직함: 성하그룹 회장, 이씨 가문 세습\n- 이홍원은 서초4동에서 성하전자 원로 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다\n\n성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다."
   },
-  "biography": "**생애.** 2126년 세대. 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 서울 밖 작업장 두 곳이 성하전자의 부품과 노동을 댄다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.\n**관직.** 품계 회장. 직함은 성하그룹 회장, 이씨 가문 세습. 생업 별명은 성하전자 원로.\n**일화.** 승계 시험 전날, 이홍원은 강남역 사택의 표를 시험장 밖으로 내보냈다. 표가 연공 함과 섞이지 않았다.\n**가문.** 이씨 가문. 관리인. 신정차륜가(HC02) 관리인은 유세진이다.\n**관계.** 박태겸과 차륜. 강민서와 규격. 배우진과 차단문.\n\n- 생업: 성하전자 원로\n- 소속: 성하그룹\n- 품계: 회장\n- 직함: 성하그룹 회장, 이씨 가문 세습\n\n성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다.",
+  "biography": "**생애.** 강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 회장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 성전총회를 국가 신앙으로 후원한다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.\n**관직.** 품계 회장. 직함은 성하그룹 회장, 이씨 가문 세습. 생업 별명은 성하전자 원로.\n**일화.** 승계 시험 전날, 이홍원은 강남역 사택의 표를 시험장 밖으로 내보냈다. 표가 연공 함과 섞이지 않았다.\n**가문.** 이씨 가문. 관리인. 신정차륜가(HC02) 관리인은 유세진이다.\n**관계.** 박태겸과 차륜. 강민서와 규격. 배우진과 차단문.\n\n- 생업: 성하전자 원로\n- 소속: 성하그룹\n- 품계: 회장\n- 직함: 성하그룹 회장, 이씨 가문 세습\n- 이홍원은 서초4동에서 성하전자 원로 업무를 맡는다. 강남역 본사·회장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다\n\n성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다.",
   "sources": [
     "Cast-State-11",
     "Core-Characters"

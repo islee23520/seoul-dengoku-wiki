@@ -124,6 +124,15 @@ export function registeredCategories(document, registry) {
   return document.categories
 }
 
+// The publication review decides which lore documents readers see. Only those
+// must register; a held-back source (draft, pending review) is not an article
+// and contributes nothing to the index, so it cannot block a release.
+export function publishedRegistrationErrors(pages, publishedRoutes, registry) {
+  return pages
+    .filter((page) => publishedRoutes.has(`/world/${page.slug === 'index' ? '' : page.slug}`))
+    .flatMap((page) => registrationErrors(page.value, registry, page.name ?? page.slug))
+}
+
 export function registrationErrors(document, registry, sourceName) {
   const name = sourceName ?? document.slug ?? 'document'
   const known = new Set(registry.categories.map((category) => category.id))

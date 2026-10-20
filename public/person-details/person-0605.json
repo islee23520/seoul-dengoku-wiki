@@ -2,9 +2,9 @@
   "id": "person-0605",
   "name": "양산태",
   "title": "인준 기록관",
-  "position": "인준 기록관 · 서해구 영주",
+  "position": "인준 기록관",
   "characterId": "K605",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "위조 사본 폐기·원본 보관",
   "gender": "여성",
@@ -553,47 +553,23 @@
             "name": "양산태",
             "url": "/people/person-0605",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "위조 사본 폐기·원본 보관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/380/items/0/ko",
-                  "quote": "생업: 위조 사본 폐기·원본 보관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -601,89 +577,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/380/items/0/ko",
-                    "quote": "생업: 위조 사본 폐기·원본 보관"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/380/items/0/ko",
-                    "quote": "생업: 위조 사본 폐기·원본 보관"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "안국",
-              "type": "초소 영지",
-              "station": "안국",
-              "state": "S06",
-              "settlement": {
-                "name": "안국 정착지",
-                "type": "정착지",
-                "description": "안국 일대 고정 거점"
-              },
-              "note": "S06 안국 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -707,47 +628,23 @@
             "name": "양산태",
             "url": "/people/person-0605",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "위조 사본 폐기·원본 보관",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/380/items/0/ko",
-                  "quote": "생업: 위조 사본 폐기·원본 보관"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -755,212 +652,58 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/380/items/0/ko",
-                    "quote": "생업: 위조 사본 폐기·원본 보관"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/381/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Forgery/TL?",
                 "ko": "위조 감별",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/380/items/0/ko",
-                    "quote": "생업: 위조 사본 폐기·원본 보관"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "안국",
-              "type": "초소 영지",
-              "station": "안국",
-              "state": "S06",
-              "settlement": {
-                "name": "안국 정착지",
-                "type": "정착지",
-                "description": "안국 일대 고정 거점"
-              },
-              "note": "S06 안국 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-gu-28275-S06",
-      "name": {
-        "ko": "서해구 공작령 직영지"
-      },
-      "holderPersonId": "K605",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "2827551500",
-          "name": "인천광역시 서해구 검암경서동"
-        },
-        {
-          "id": "2827553000",
-          "name": "인천광역시 서해구 연희동"
-        },
-        {
-          "id": "2827553600",
-          "name": "인천광역시 서해구 청라1동"
-        },
-        {
-          "id": "2827553700",
-          "name": "인천광역시 서해구 청라2동"
-        },
-        {
-          "id": "2827553900",
-          "name": "인천광역시 서해구 청라3동"
-        },
-        {
-          "id": "2827554200",
-          "name": "인천광역시 서해구 가정1동"
-        },
-        {
-          "id": "2827554300",
-          "name": "인천광역시 서해구 가정2동"
-        },
-        {
-          "id": "2827554400",
-          "name": "인천광역시 서해구 가정3동"
-        },
-        {
-          "id": "2827555000",
-          "name": "인천광역시 서해구 석남1동"
-        },
-        {
-          "id": "2827556000",
-          "name": "인천광역시 서해구 석남2동"
-        },
-        {
-          "id": "2827556100",
-          "name": "인천광역시 서해구 석남3동"
-        },
-        {
-          "id": "2827557500",
-          "name": "인천광역시 서해구 신현원창동"
-        },
-        {
-          "id": "2827558000",
-          "name": "인천광역시 서해구 가좌1동"
-        },
-        {
-          "id": "2827559000",
-          "name": "인천광역시 서해구 가좌2동"
-        },
-        {
-          "id": "2827560000",
-          "name": "인천광역시 서해구 가좌3동"
-        },
-        {
-          "id": "2827561000",
-          "name": "인천광역시 서해구 가좌4동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-gu-28275-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-gu-28275-S06",
-      "name": "서해구 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K605",
-      "basis": "개막 행정 규모 그룹 gu:28275(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "2827551500",
-        "2827553000",
-        "2827553600",
-        "2827553700",
-        "2827553900",
-        "2827554200",
-        "2827554300",
-        "2827554400",
-        "2827555000",
-        "2827556000",
-        "2827556100",
-        "2827557500",
-        "2827558000",
-        "2827559000",
-        "2827560000",
-        "2827561000"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-gu-28275-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -974,18 +717,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "안국",
-    "type": "초소 영지",
-    "station": "안국",
-    "state": "S06",
-    "settlement": {
-      "name": "안국 정착지",
-      "type": "정착지",
-      "description": "안국 일대 고정 거점"
-    },
-    "note": "S06 안국 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -1019,22 +750,22 @@
   },
   "fields": {
     "생업": "위조 사본 폐기·원본 보관",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "인준 기록관",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급",
+    "담당 업무": "인준 기록관",
     "가치관": "권위 15 | 개방 −10 | 무력 −20 | 물질 −40 | 공동 10 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −25 | 변혁 −30",
     "욕망": "갈망 30 | 독점 10 | 위험 −15 | 과시 −25 | 지속 20 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
-    "관직": "품계 주사. 직함은 인준 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.",
+    "생애": "서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 양산태의 위조 사본 폐기·원본 보관 업무는 회현동과 이어진다.",
+    "공무원 직위·직급": "지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 기록관.",
     "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "인준 기록관 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.",
-    "공포": "인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "관계": "위조 사본 폐기·원본 보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.",
+    "야망": "인준 기록관 자리에서 위조 사본 폐기·원본 보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
+    "공포": "인준 기록관 당직이 비어 위조 사본 폐기·원본 보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.",
+    "개입": "위조 사본 폐기·원본 보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 위조 사본 폐기·원본 보관\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 인준 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 주사. 직함은 인준 기록관. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 인준 기록관 자리에서 대한민국정부의 장부를 끊기지 않게 잇는다.\n\n**공포.** 인준 기록관 당직이 비면 도심 통행의 도장과 명부가 끊겨 질서 계열 여덟 나라의 인준이 멈추는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −20 | 물질 −40 | 공동 10 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −25 | 변혁 −30\n- 욕망: 갈망 30 | 독점 10 | 위험 −15 | 과시 −25 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "위조 사본보다 원본 칸을 지키는 쪽을 택한다. 당직이 바뀌어도 원본 기록이 끊기는 일을 경계한다.\n\n- 생업: 위조 사본 폐기·원본 보관\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급\n- 담당 업무: 인준 기록관\n**생애.** 서울역 등기소에서 자랐다. 인준 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 양산태의 위조 사본 폐기·원본 보관 업무는 회현동과 이어진다.\n\n**공무원 직위·직급.** 지방행정사무관(5급)·지방행정주사(6급)·지방행정주사보(7급)·지방행정서기(8급)·지방행정서기보(9급) 중 서울특별시 본부·사업소 보직에 맞는 직급. 담당 업무: 인준 기록관.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 인준 기록관 자리의 서명이 장부에 올랐다.\n\n**관계.** 위조 사본 폐기·원본 보관 업무의 인수인계를 통해 같은 생활권의 선배 당직과 이어진다.\n\n**야망.** 인준 기록관 자리에서 위조 사본 폐기·원본 보관 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n**공포.** 인준 기록관 당직이 비어 위조 사본 폐기·원본 보관 업무와 연결된 도심 통행의 도장·명부가 끊기고, 그 기록에 기대는 서울특별시 지방공무원 조직 구성 세력의 인준까지 멈추는 것.\n\n**개입.** 위조 사본 폐기·원본 보관 업무의 당직 인수 증인을 세우거나, 그 직위의 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 15 | 개방 −10 | 무력 −20 | 물질 −40 | 공동 10 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −25 | 변혁 −30\n- 욕망: 갈망 30 | 독점 10 | 위험 −15 | 과시 −25 | 지속 20 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-06"
   ],

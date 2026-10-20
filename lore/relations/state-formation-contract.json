@@ -1,5 +1,5 @@
 {
-  "schema": "state-formation-contract.v1",
+  "schema": "state-formation-contract.v2",
   "contractId": "state-formation-independent-land-acquisition",
   "scope": "transition-rules-only",
   "independentAcquisitionCreatesState": true,
@@ -47,20 +47,40 @@
     "storageRelationship": "independent; this contract binds transition semantics and does not merge state, membership, or holding records"
   },
   "sourceScope": {
-    "openingStates": {
+    "historicalPoliticalIdentities": {
       "count": 16,
       "range": "S01-S16",
       "approvalRef": "owner-confirmed opening states; GDD r2.rwarfare-37.body"
     },
-    "wholeKingdomAtOpening": true,
-    "approvalRef": "owner:tasks57-67:2026-10-09 대전은 민웅기의 중립 왕국급 강역",
-    "openingIndependentPolities": [
+    "currentPoliticalFactions": [
+      {
+        "name": "규격맹",
+        "centerRegion": "한강 이남 서부"
+      },
+      {
+        "name": "대한민국정부",
+        "centerRegion": "청와대를 중심으로 한 강북"
+      },
+      {
+        "name": "종교 연합",
+        "centerRegion": "한강 이남 강남지역"
+      }
+    ],
+    "centersConferExclusiveGeographicOwnership": false,
+    "currentIndependentPoliticalIdentities": [
       {
         "id": "polity:daejeon",
         "name": "대전",
         "sovereignPersonId": "K1008",
+        "kind": "nonterritorial-political-identity",
+        "rank": "kingdom",
+        "confersWholeGeographicKingdomOwnership": false,
         "approvalRef": "owner:tasks57-67:2026-10-09"
       }
-    ]
+    ],
+    "geographicKingdoms": {
+      "partitionCount": 6,
+      "ownershipDeterminedByThisContract": false
+    }
   }
 }

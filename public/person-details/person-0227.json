@@ -477,8 +477,8 @@
           "en": "Holds military orders until council posting."
         },
         "stress": {
-          "ko": "부품 한 상자가 군수 칸으로 빠져 영종지점 환전이 멈추는 것.",
-          "en": "Fears diversion of parts to military use."
+          "ko": "부품 한 상자가 군수 칸으로 빠져 여의동 금고와 영등포동 인계 창구 사이의 환전이 멈추는 것.",
+          "en": "That one box of parts would leave into a munitions column and exchange between the Yeouido-dong vault and the Yeongdeungpo-dong handover counter would stop."
         },
         "relationship": {
           "ko": "두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.",
@@ -551,41 +551,23 @@
             "name": "모봉용",
             "url": "/people/person-0227",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "보증 부품 입고 중량·출고 검증",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/72/items/0/ko",
-                  "quote": "생업: 보증 부품 입고 중량·출고 검증"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -593,90 +575,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 보증 부품 입고 중량·출고 검증"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 보증 부품 입고 중량·출고 검증"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "모봉용 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 59
+            }
           }
         }
       },
@@ -699,41 +626,23 @@
             "name": "모봉용",
             "url": "/people/person-0227",
             "state": "S09",
-            "method": "card-lexicon",
-            "role": {
-              "display": "보증 부품 입고 중량·출고 검증",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-09.json",
-                  "pointer": "/content/72/items/0/ko",
-                  "quote": "생업: 보증 부품 입고 중량·출고 검증"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -741,90 +650,35 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 보증 부품 입고 중량·출고 검증"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-09.json",
-                    "pointer": "/content/72/items/0/ko",
-                    "quote": "생업: 보증 부품 입고 중량·출고 검증"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 16,
-              "unspent": 59,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 여의도출자연합회 규모",
-              "faction_scale": {
-                "state": "S09",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "외곽 산지",
-              "camp": {
-                "name": "모봉용 산림 야영지",
-                "type": "야영지",
-                "description": "외곽 산지에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S09 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 59
+            }
           }
         }
       }
@@ -845,7 +699,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -901,15 +754,15 @@
     "욕망": "갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자"
   },
   "sections": {
-    "생애": "2126년 세대. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.",
+    "생애": "2088-07-05 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.\n- 모봉용은 여의동을 업무동으로 삼아 보증 부품 입고 중량·출고 검증 업무를 맡는다.",
     "관직": "품계 서기. 직함은 보증 부품 물류상. 입고 중량을 두 증인이 보고, 군수 문장이 찍힌 주문서는 출자 평의회의 게시 전까지 출고를 막는다.",
     "일화": "암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다.",
     "관계": "두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.",
     "야망": "보증 부품과 예비전지를 여의도 공개 시세로 고정해, 금고 키 중계와 환전로 갱신이 강국 보호비에 묶이지 않게 한다.",
-    "공포": "부품 한 상자가 군수 칸으로 빠져 영종지점 환전이 멈추는 것.",
-    "개입": "섞인 대금을 공개하거나, 예비전지 한 짐을 영종지점까지 호송할 수 있다."
+    "공포": "부품 한 상자가 군수 칸으로 빠져 여의동 금고와 영등포동 인계 창구 사이의 환전이 멈추는 것.",
+    "개입": "섞인 대금을 공개하거나, 예비전지 한 짐을 여의동 금고에서 영등포동 인계 창구까지 호송할 수 있다."
   },
-  "biography": "무게를 속이는 장부를 보면 웃음을 거두고, 약속한 시각에 전선이 안 오면 계약을 그 자리에서 찢는다. 소문보다 송장 숫자를 믿는다.\n\n- 생업: 보증 부품 입고 중량·출고 검증\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 보증 부품 물류상\n**생애.** 2126년 세대. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.\n\n**관직.** 품계 서기. 직함은 보증 부품 물류상. 입고 중량을 두 증인이 보고, 군수 문장이 찍힌 주문서는 출자 평의회의 게시 전까지 출고를 막는다.\n\n**일화.** 암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다.\n\n**관계.** 두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.\n\n**야망.** 보증 부품과 예비전지를 여의도 공개 시세로 고정해, 금고 키 중계와 환전로 갱신이 강국 보호비에 묶이지 않게 한다.\n\n**공포.** 부품 한 상자가 군수 칸으로 빠져 영종지점 환전이 멈추는 것.\n\n**개입.** 섞인 대금을 공개하거나, 예비전지 한 짐을 영종지점까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −35 | 물질 5 | 공동 10 | 원칙 15 | 공개 55 | 자격 15 | 분산 30 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자",
+  "biography": "무게를 속이는 장부를 보면 웃음을 거두고, 약속한 시각에 전선이 안 오면 계약을 그 자리에서 찢는다. 소문보다 송장 숫자를 믿는다.\n\n- 생업: 보증 부품 입고 중량·출고 검증\n- 소속: 여의도출자연합회\n- 품계: 서기\n- 직함: 보증 부품 물류상\n**생애.** 2088-07-05 출생으로 승인된 출생군은 4군이다. 2126년 개막에 활동했다. 노량진 선창에서 자랐다. 보증 부품 물류상 자리는 저울 재점검 공개로 열렸다.\n- 모봉용은 여의동을 업무동으로 삼아 보증 부품 입고 중량·출고 검증 업무를 맡는다.\n\n**관직.** 품계 서기. 직함은 보증 부품 물류상. 입고 중량을 두 증인이 보고, 군수 문장이 찍힌 주문서는 출자 평의회의 게시 전까지 출고를 막는다.\n\n**일화.** 암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다.\n\n**관계.** 두봉에게 정비용 부품을 대고, 모봉의 산악 운송과 짐을 맞춘다. 오해린의 시세를 평의회 시간에 참고한다.\n\n**야망.** 보증 부품과 예비전지를 여의도 공개 시세로 고정해, 금고 키 중계와 환전로 갱신이 강국 보호비에 묶이지 않게 한다.\n\n**공포.** 부품 한 상자가 군수 칸으로 빠져 여의동 금고와 영등포동 인계 창구 사이의 환전이 멈추는 것.\n\n**개입.** 섞인 대금을 공개하거나, 예비전지 한 짐을 여의동 금고에서 영등포동 인계 창구까지 호송할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 0 | 개방 10 | 무력 −35 | 물질 5 | 공동 10 | 원칙 15 | 공개 55 | 자격 15 | 분산 30 | 변혁 −5\n- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자",
   "sources": [
     "Cast-State-09"
   ],

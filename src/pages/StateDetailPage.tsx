@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { stateCatalog } from '../generated/stateCatalog'
-import { worldRegionMapRoute } from '../wikiRouting'
 
 type StateDetails = { currentExclusiveDistrictCount: number; id: string; relation: string | null; religion: string; vassals: string; foreignRelations: string; chronology: Array<{ year: number; text: string; sourceRoute: string }> }
-type Vassal = { name: string; city: string; suzerain: string; founded: string; duty: string }
-type Territory = { states: StateDetails[]; vassals: Vassal[]; regions: Array<{ polities: string[] }> }
+type Territory = { states: StateDetails[]; regions: Array<{ polities: string[] }> }
 
 export default function StateDetailPage() {
   const { stateSlug } = useParams()
@@ -23,7 +21,6 @@ export default function StateDetailPage() {
   }, [])
   if (!state) return <Navigate to="/states" replace />
   const details = territory?.states.find((entry) => entry.id === state.id)
-  const vassals = territory?.vassals.filter((entry) => entry.suzerain === state.id) ?? []
   const seoulRegions = territory?.regions.filter((region) => region.polities.includes(state.id)).length
 
   return (
@@ -44,7 +41,7 @@ export default function StateDetailPage() {
         <div><dt>수도역</dt><dd>{state.capitalName}</dd></div>
         <div><dt>정부 형태</dt><dd>{state.government}</dd></div>
         <div><dt>국력</dt><dd>{state.power}</dd></div>
-        {details && <><div><dt>정부와의 관계</dt><dd>{details.relation ?? '해당 없음'}</dd></div><div><dt>국교</dt><dd>{details.religion}</dd></div><div><dt>직접 관할</dt><dd>{seoulRegions}개 동</dd></div></>}
+        {details && <><div><dt>지표 배정 기록</dt><dd>{seoulRegions}개 동</dd></div><div><dt>정부와의 관계</dt><dd>{details.relation ?? '해당 없음'}</dd></div><div><dt>국교</dt><dd>{details.religion}</dd></div></>}
       </dl>
       <section className="wiki-prose">
         <h2 id="형성-인과">주요 관계</h2>
@@ -52,11 +49,8 @@ export default function StateDetailPage() {
         {failed && <p role="alert">국가 영토와 연대기 자료를 불러오지 못했습니다.</p>}
         {!failed && !details && <p role="status">국가 영토와 연대기를 불러오고 있습니다.</p>}
         {details && <>
-          <h2>현재 소속과 관할</h2><p>{state.name}의 종주 소속은 {state.currentHegemon.name}이다. 현재 독점 관할은 {details.currentExclusiveDistrictCount}개 동이다.</p>
+          <h2>현재 소속과 지표 배정</h2><p>{state.name}의 종주 소속은 {state.currentHegemon.name}이다. 단독 지표 배정 기록은 {details.currentExclusiveDistrictCount}개 동이다. 이 수치는 지표 보유 세력 기록에서 해당 국가만 적힌 동을 센 것으로, 백작령 작위나 남작령 슬롯의 보유·독점 소유를 뜻하지 않는다.</p>
           <h2>국가 간 관계</h2><p>{details.foreignRelations}</p>
-          <h2>서울 밖 속국</h2>
-          {vassals.length ? <ul>{vassals.map((vassal) => <li key={vassal.name}>{vassal.name} · {vassal.city} · {vassal.founded} · {vassal.duty}</li>)}</ul> : <p>등록된 속국 없음</p>}
-          <p><Link to={worldRegionMapRoute}>지상 영토와 속국 소재지 보기</Link></p>
           <h2>형성 연대기</h2><ol>{details.chronology.map((event, index) => <li key={`${event.year}-${index}`}><Link to={event.sourceRoute}>{event.year}년</Link> · {event.text}</li>)}</ol>
         </>}
         <p><Link to="/world/Sixteen-States">서울 십육국 정본 전체 읽기</Link></p>

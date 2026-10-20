@@ -549,47 +549,23 @@
             "name": "케빈 화이트",
             "url": "/people/person-0194",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "선로 배차 이의 서면 접수·중재",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/655/items/2/ko",
-                  "quote": "생업: 선로 배차 이의 서면 접수·중재"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -597,89 +573,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/655/items/2/ko",
-                    "quote": "생업: 선로 배차 이의 서면 접수·중재"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/655/items/2/ko",
-                    "quote": "생업: 선로 배차 이의 서면 접수·중재"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "독산",
-              "type": "초소 영지",
-              "station": "독산",
-              "state": "S07",
-              "settlement": {
-                "name": "독산 정착지",
-                "type": "정착지",
-                "description": "독산 일대 고정 거점"
-              },
-              "note": "S07 독산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -703,47 +624,23 @@
             "name": "케빈 화이트",
             "url": "/people/person-0194",
             "state": "S07",
-            "method": "card-lexicon",
-            "role": {
-              "display": "선로 배차 이의 서면 접수·중재",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-07.json",
-                  "pointer": "/content/655/items/2/ko",
-                  "quote": "생업: 선로 배차 이의 서면 접수·중재"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -751,89 +648,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/655/items/2/ko",
-                    "quote": "생업: 선로 배차 이의 서면 접수·중재"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/656/text/ko",
-                    "quote": "배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-07.json",
-                    "pointer": "/content/655/items/2/ko",
-                    "quote": "생업: 선로 배차 이의 서면 접수·중재"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 36,
-              "unspent": 39,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 환적국 규모",
-              "faction_scale": {
-                "state": "S07",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "독산",
-              "type": "초소 영지",
-              "station": "독산",
-              "state": "S07",
-              "settlement": {
-                "name": "독산 정착지",
-                "type": "정착지",
-                "description": "독산 일대 고정 거점"
-              },
-              "note": "S07 독산 일대 관할 영지"
+              "unspent": 39
             }
           }
         }
@@ -854,18 +696,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "독산",
-    "type": "초소 영지",
-    "station": "독산",
-    "state": "S07",
-    "settlement": {
-      "name": "독산 정착지",
-      "type": "정착지",
-      "description": "독산 일대 고정 거점"
-    },
-    "note": "S07 독산 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": null,
@@ -902,7 +732,7 @@
     "욕망": "갈망 35 | 독점 25 | 위험 −30 | 과시 10 | 지속 10 | 지향 이성 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 신내 환승 당직에서 자랐다. 선로 배차 중재역 자리는 무표 출발 열차 저지로 열렸다. 케빈 화이트는 2069년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 선로 배차 중재역 업무를 맡는다. 새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 케빈 화이트의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.",
+    "생애": "2069년생인 케빈 화이트는 2126년 개막기에 선로 배차 중재역 업무를 맡는다. 신내 환승 당직에서 자랐다. 선로 배차 중재역 업무는 무표 출발 열차 저지를 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 케빈 화이트의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 케빈 화이트의 선로 배차 이의 서면 접수·중재 업무는 한강로동과 연결된다.",
     "관직": "품계 주사. 직함은 선로 배차 중재역. 배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다.",
     "일화": "박태겸의 조정안을 앞세운 구두 압박이 중재석에 들어와 선로 열쇠를 청한다. 케빈 화이트는 압박을 다음 창으로 미루고 서면 이의만 배차표에 올리며, 작은 호송 열차가 제시간에 빠졌는지부터 확인한다.",
     "관계": "박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.",
@@ -910,7 +740,7 @@
     "공포": "중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.",
     "개입": "중재 증인을 세우거나, 숨긴 대기 열차를 폭로할 수 있다."
   },
-  "biography": "배차표의 빈칸을 먼저 보고, 큰 열차보다 작은 호송이 제시간에 빠지는지를 따진다. 중재석에 앉아도 목소리는 낮게 둔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 배차 이의 서면 접수·중재\n- 직함: 선로 배차 중재역\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 선로 배차 중재역 자리는 무표 출발 열차 저지로 열렸다. 케빈 화이트는 2069년에 태어났다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 신내 환승 당직에서 자랐다. 2126년에는 선로 배차 중재역 업무를 맡는다. 새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 케빈 화이트의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n\n**관직.** 품계 주사. 직함은 선로 배차 중재역. 배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다.\n\n**일화.** 박태겸의 조정안을 앞세운 구두 압박이 중재석에 들어와 선로 열쇠를 청한다. 케빈 화이트는 압박을 다음 창으로 미루고 서면 이의만 배차표에 올리며, 작은 호송 열차가 제시간에 빠졌는지부터 확인한다.\n\n**관계.** 박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.\n\n**야망.** 선로 배차 중재를 강국 세 장의 합의서가 아니라 후국 단독 시간표로 고정한다.\n\n**공포.** 중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.\n\n**개입.** 중재 증인을 세우거나, 숨긴 대기 열차를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −10 | 자격 20 | 분산 5 | 변혁 0\n- 욕망: 갈망 35 | 독점 25 | 위험 −30 | 과시 10 | 지속 10 | 지향 이성 | 결합 없음\n:::",
+  "biography": "배차표의 빈칸을 먼저 보고, 큰 열차보다 작은 호송이 제시간에 빠지는지를 따진다. 중재석에 앉아도 목소리는 낮게 둔다.\n\n- 소속: 환적국\n- 품계: 주사\n- 생업: 선로 배차 이의 서면 접수·중재\n- 직함: 선로 배차 중재역\n**생애.** 2069년생인 케빈 화이트는 2126년 개막기에 선로 배차 중재역 업무를 맡는다. 신내 환승 당직에서 자랐다. 선로 배차 중재역 업무는 무표 출발 열차 저지를 계기로 시작됐다. 아프리카계 미국인 가계는 용산·이태원 생활권에 뿌리를 두고 있다. 새뮤얼 화이트는 2030년 용산·이태원에서 이태원 숙박업과 민간 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 케빈 화이트의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다. 집에서는 영어를 쓰고 일상과 업무에서는 한국어를 쓴다.\n- 케빈 화이트의 선로 배차 이의 서면 접수·중재 업무는 한강로동과 연결된다.\n\n**관직.** 품계 주사. 직함은 선로 배차 중재역. 배차 이의는 서면만 받고, 구두 압박은 다음 창으로 미룬다.\n\n**일화.** 박태겸의 조정안을 앞세운 구두 압박이 중재석에 들어와 선로 열쇠를 청한다. 케빈 화이트는 압박을 다음 창으로 미루고 서면 이의만 배차표에 올리며, 작은 호송 열차가 제시간에 빠졌는지부터 확인한다.\n\n**관계.** 박태겸의 조정안을 현장에 옮기되, 선로 열쇠는 넘기지 않는다.\n\n**야망.** 선로 배차 중재를 강국 세 장의 합의서가 아니라 후국 단독 시간표로 고정한다.\n\n**공포.** 중재 공백이 생기면 용산 회차선이 암사 호송의 대기열이 되는 것.\n\n**개입.** 중재 증인을 세우거나, 숨긴 대기 열차를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 20 | 무력 0 | 물질 25 | 공동 0 | 원칙 −5 | 공개 −10 | 자격 20 | 분산 5 | 변혁 0\n- 욕망: 갈망 35 | 독점 25 | 위험 −30 | 과시 10 | 지속 10 | 지향 이성 | 결합 없음\n:::",
   "sources": [
     "Cast-State-07"
   ],

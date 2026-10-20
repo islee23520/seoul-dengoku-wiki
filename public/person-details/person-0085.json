@@ -463,52 +463,23 @@
             "name": "송별하",
             "url": "/people/person-0085",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "측량 기록 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/698/items/1/ko",
-                  "quote": "생업: 측량 기록 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/697/text/ko",
-                    "quote": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -516,94 +487,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/698/items/1/ko",
-                    "quote": "생업: 측량 기록 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/698/items/1/ko",
-                    "quote": "생업: 측량 기록 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/697/text/ko",
-                    "quote": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "당고개",
-              "type": "초소 영지",
-              "station": "당고개",
-              "state": "S03",
-              "settlement": {
-                "name": "당고개 정착지",
-                "type": "정착지",
-                "description": "당고개 일대 고정 거점"
-              },
-              "note": "S03 당고개 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -627,52 +538,23 @@
             "name": "송별하",
             "url": "/people/person-0085",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "측량 기록 대조",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/698/items/1/ko",
-                  "quote": "생업: 측량 기록 대조"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/697/text/ko",
-                    "quote": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -680,94 +562,34 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/698/items/1/ko",
-                    "quote": "생업: 측량 기록 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/699/text/ko",
-                    "quote": "현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Cartography/TL?",
                 "ko": "실측·지도",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/698/items/1/ko",
-                    "quote": "생업: 측량 기록 대조"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/697/text/ko",
-                    "quote": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "당고개",
-              "type": "초소 영지",
-              "station": "당고개",
-              "state": "S03",
-              "settlement": {
-                "name": "당고개 정착지",
-                "type": "정착지",
-                "description": "당고개 일대 고정 거점"
-              },
-              "note": "S03 당고개 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -788,18 +610,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "당고개",
-    "type": "초소 영지",
-    "station": "당고개",
-    "state": "S03",
-    "settlement": {
-      "name": "당고개 정착지",
-      "type": "정착지",
-      "description": "당고개 일대 고정 거점"
-    },
-    "note": "S03 당고개 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -836,19 +646,20 @@
     "생업": "측량 기록 대조",
     "품계": "대리",
     "직함": "측량 기록 심사관",
+    "업무": "가양1동. 송별하는 마곡 밀폐실험동의 실측과 도면을 맞춰 어긋난 줄은 난외에 남기고 교차검증 전에는 원본을 옮기지 않는다.",
     "가치관": "권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 10 | 원칙 60 | 공개 45 | 자격 50 | 분산 15 | 변혁 0",
     "욕망": "갈망 40 | 독점 15 | 위험 30 | 과시 −15 | 지속 0 | 지향 무성향 | 결합 없음"
   },
   "sections": {
-    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 측량 기록 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+    "생애": "2126년 세대. 서울역 등기소에서 자랐다. 송별하는 마곡 밀폐실험동의 실측과 도면을 맞춰 어긋난 줄은 난외에 남기고 교차검증 전에는 원본을 옮기지 않는다.\n- 업무: 가양1동. 송별하는 마곡 밀폐실험동의 실측과 도면을 맞춰 어긋난 줄은 난외에 남기고 교차검증 전에는 원본을 옮기지 않는다.",
     "관직": "품계 대리. 직함은 측량 기록 심사관. 현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다.",
-    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 측량 기록 심사관 자리의 서명이 장부에 올랐다.",
+    "일화": "2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다.",
     "관계": "정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.",
     "야망": "마곡 밀폐실험동의 측량 원본을 생명안전 연구책임자 책상이 아니라 교차검증 서고에 둔다.",
     "공포": "잘못된 거리가 방재 경계로 확정되어 실험동이 봉인되는 것.",
-    "개입": "어긋난 벽의 원인을 열거나, 실험 재개를 서명할 수 있다."
+    "개입": "송별하의 현장 실측과 도면이 어긋난 줄을 대조하고 원본 보관 기록을 확인할 수 있다."
   },
-  "biography": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다. 추측 거리는 적지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 측량 기록 대조\n- 품계: 대리\n- 직함: 측량 기록 심사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 측량 기록 심사관 자리는 이중 장부 한 줄 삭제로 열렸다.\n\n**관직.** 품계 대리. 직함은 측량 기록 심사관. 현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다. 이 일로 측량 기록 심사관 자리의 서명이 장부에 올랐다.\n\n**관계.** 정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.\n\n**야망.** 마곡 밀폐실험동의 측량 원본을 생명안전 연구책임자 책상이 아니라 교차검증 서고에 둔다.\n\n**공포.** 잘못된 거리가 방재 경계로 확정되어 실험동이 봉인되는 것.\n\n**개입.** 어긋난 벽의 원인을 열거나, 실험 재개를 서명할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 10 | 원칙 60 | 공개 45 | 자격 50 | 분산 15 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 30 | 과시 −15 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
+  "biography": "측량 숫자를 현장에서 두 번 읽고, 도면과 어긋나면 연필을 멈춘다. 추측 거리는 적지 않는다.\n\n- 소속: 태욱그룹\n- 생업: 측량 기록 대조\n- 품계: 대리\n- 직함: 측량 기록 심사관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 송별하는 마곡 밀폐실험동의 실측과 도면을 맞춰 어긋난 줄은 난외에 남기고 교차검증 전에는 원본을 옮기지 않는다.\n- 업무: 가양1동. 송별하는 마곡 밀폐실험동의 실측과 도면을 맞춰 어긋난 줄은 난외에 남기고 교차검증 전에는 원본을 옮기지 않는다.\n\n**관직.** 품계 대리. 직함은 측량 기록 심사관. 현장 실측이 없는 수정 요청은 반려하고, 사유만 난외에 남긴다.\n\n**일화.** 2125년 위조 도장을 들켜 사본을 불사르고 원본 칸을 지켰다.\n\n**관계.** 정호준의 공개 원칙과 맞되, 측량 원본의 반출은 막는다.\n\n**야망.** 마곡 밀폐실험동의 측량 원본을 생명안전 연구책임자 책상이 아니라 교차검증 서고에 둔다.\n\n**공포.** 잘못된 거리가 방재 경계로 확정되어 실험동이 봉인되는 것.\n\n**개입.** 송별하의 현장 실측과 도면이 어긋난 줄을 대조하고 원본 보관 기록을 확인할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −5 | 개방 20 | 무력 −20 | 물질 10 | 공동 10 | 원칙 60 | 공개 45 | 자격 50 | 분산 15 | 변혁 0\n- 욕망: 갈망 40 | 독점 15 | 위험 30 | 과시 −15 | 지속 0 | 지향 무성향 | 결합 없음\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -20,7 +20,8 @@ export async function validateHoldingFacility(holding, stationInteriors, repoRoo
     station.name === ref.stationName && station.district === ref.stationIdentity.district &&
     station.lat === ref.stationIdentity.lat && station.lon === ref.stationIdentity.lon)
   if (sites.length !== 1 || sites[0].name !== ref.stationName || sites[0].observed_use !== '역' ||
-      source.district_name !== ref.stationIdentity.district || stations.length !== 1)
+      source.district_name !== ref.stationIdentity.district || stations.length !== 1 ||
+      (stations[0].facilityKind !== undefined && stations[0].facilityKind !== 'station') || !stations[0].network)
     throw new Error('E_HOLDING_SITE_REF:' + holding.id)
   const layers = stations[0].layers.filter(layer => layer.id === ref.layerId)
   if (ref.sourcePath !== 'lore/regions/station-interiors.json' || layers.length !== 1 ||

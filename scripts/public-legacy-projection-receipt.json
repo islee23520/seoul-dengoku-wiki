@@ -1,0 +1,16 @@
+{
+  "schema": "public-legacy-projection-successor.v1",
+  "approvalRef": "parent-session:01a15065-f003-7060-b6c8-1fcfb76f63ef:confirmed-public-legacy-sheet-leak-fix",
+  "scope": "/personSheet/variants/*/legacy/record",
+  "privateOriginals": "unchanged-complete-issued-records",
+  "publicFields": ["id", "name", "url", "state", "personId", "band", "attributes", "traits", "skills", "secondary", "cp"],
+  "attributes": ["ST", "DX", "IQ", "HT"],
+  "attributeFields": ["value", "cp"],
+  "traitFields": ["name", "kind", "cp", "rule"],
+  "skillFields": ["name", "ko", "level", "cp"],
+  "secondaryFields": ["HP", "FP", "Will", "Per", "BasicSpeed", "BasicMove", "BasicLift", "Dodge"],
+  "cpFields": ["total", "attributes", "advantages", "disadvantages", "skills", "spent", "unspent"],
+  "omission": "All other historical source fields, including unit, territory, wandering_force and evidence, are private only. Current top-level fields are unaffected.",
+  "people": 1022,
+  "revisions": 2
+}

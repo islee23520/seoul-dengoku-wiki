@@ -3,7 +3,7 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'vitest'
-import { loadPreservedPersonSheets, preservedSheetSources, projectPreservedPersonSheet } from './preserved-person-sheet.mjs'
+import { loadPreservedPersonSheets, preservedSheetSources, projectPreservedPersonSheet, projectPublicHistoricalRecord } from './preserved-person-sheet.mjs'
 import { selectPreservedSheet } from '../src/pages/PersonDetailPage.tsx'
 import { projectedDraftLegacy, draftPersonalContext, characterDraftExport, emptyCharacterDraft } from '../src/pages/characterDraftExport.ts'
 
@@ -22,11 +22,11 @@ for (const id of ['K035', 'K038', 'K039', 'K1008']) test(`${id}: current Daejeon
     assert.equal(original.state, 'S02')
     const selected = selectPreservedSheet(produced, identity, version.revision)
     assert.equal(selected.ok, true)
-    assert.deepEqual(selected.record, original)
+    assert.deepEqual(selected.record, projectPublicHistoricalRecord(original))
     const legacy = projectedDraftLegacy(detail, version.revision)
     const draft = characterDraftExport({ ...emptyCharacterDraft(), ...draftPersonalContext(detail), legacy }, { personId, revision: version.revision })
     assert.equal(draft.personal.state, 'polity:daejeon')
-    assert.deepEqual(draft.legacy.person, original)
+    assert.deepEqual(draft.legacy.person, projectPublicHistoricalRecord(original))
     assert.equal(draft.legacy.projection.historicalState, 'S02')
     for (const mutate of [
       value => { value.currentState = 'S02' },

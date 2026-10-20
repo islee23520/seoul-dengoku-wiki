@@ -6,6 +6,35 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router-dom'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 import { CharacterProfile, PersonDetailContent } from '../src/pages/PersonDetailPage.tsx'
+import { externalToponymHits } from './current-person-geography.mjs'
+
+test('public current locations and holdings contain no external vocabulary after Seoul names are excluded', async () => {
+  const { vocabulary } = JSON.parse(await readFile(new URL('../.omo/evidence/seoul-lock/task-4-narrowed.json', import.meta.url), 'utf8'))
+  assert.ok(vocabulary.internal.length > 0 && vocabulary.external.length > 0)
+  const hits = []
+  const files = (await readdir(new URL('../public/person-details/', import.meta.url))).filter(name => name.endsWith('.json'))
+  assert.equal(files.length, 1022)
+  for (const file of files) {
+    const detail = JSON.parse(await readFile(new URL(`../public/person-details/${file}`, import.meta.url), 'utf8'))
+    assert.equal(Object.hasOwn(detail, 'territory'), false, detail.characterId)
+    hits.push(...externalToponymHits(detail, vocabulary))
+  }
+  assert.deepEqual(hits, [])
+})
+
+test('current geography sweep rejects place tokens without confusing explicit non-geographic homonyms', () => {
+  const vocabulary = { internal: ['양천구'], external: ['영주', '부여', '구리', '동인천', '수원', '대전', '원주'] }
+  const detail = { characterId: 'K001', name: '원주온', fields: { '업무 위치': '양천구. 권리를 부여하지 않는다.' },
+    confirmedHoldings: [{ name: { ko: '양천구' }, designation: { ko: '양천구 영주' } }],
+    wandering_force: { camp: { name: '원주온 한강변 야영지' } },
+    openingTitles: [{ kind: 'nonterritorial-political-title', name: '대전' }] }
+  assert.deepEqual(externalToponymHits(detail, vocabulary), [])
+  for (const place of ['영주', '부여', '구리', '동인천', '수원', '대전', '원주']) {
+    const changed = structuredClone(detail)
+    changed.fields['업무 위치'] = `${place}역`
+    assert.ok(externalToponymHits(changed, vocabulary).some(hit => hit.term === place), place)
+  }
+})
 
 test('current profile renders separate base, effective, proficiency and unassessed body values', () => {
   const profile = {
@@ -95,7 +124,9 @@ const selectedCard = async (name) => {
     candidates.push({ slug, body, primary: source.primary.includes(name) })
   }
   assert.ok(candidates.length > 0, name)
-  return candidates.find((card) => card.primary) ?? candidates.sort((a, b) => b.body.trim().length - a.body.trim().length)[0]
+  return candidates.find((card) => card.primary)
+    ?? candidates.find((card) => /^Cast-State-\d{2}$/.test(card.slug))
+    ?? candidates.sort((a, b) => b.body.trim().length - a.body.trim().length)[0]
 }
 const assertCanonicalSource = async (detail, id) => {
   const issued = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
@@ -107,7 +138,7 @@ const assertCanonicalSource = async (detail, id) => {
   assert.equal(detail.biography, card.body.trim(), id)
   assert.doesNotMatch(card.body, /\*\*무공\.\*\*/u, id)
   assert.equal(Object.hasOwn(detail.sections, '무공'), false, id)
-  const training = card.body.match(/\*\*훈련\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
+  const training = card.body.match(/(?:\*\*훈련\.\*\*|^훈련\.)\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n[가-힣 ]+\.\s|\n\s*:::|$)/um)?.[1]?.trim()
   assert.equal(detail.sections['훈련'], training, id)
 }
 
@@ -363,8 +394,16 @@ test('all canonical people expose unique detail routes and structured data', asy
       assert.equal(detail.position, '', name)
       assert.equal(detail.desire.지향, null, name)
       assert.equal(detail.desire.결합, null, name)
-    } else assert.ok(detail.position.length > 0, name)
-    assert.ok(detail.rank.length > 0, name)
+    } else {
+      const offices = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url)))
+      const current = offices.appointments.find(row => row.personId === detail.characterId)?.current
+      if (current?.status === 'unappointed') assert.equal(detail.position, '', name)
+      else assert.ok(detail.position.length > 0, name)
+    }
+    const appointment = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+      .appointments.find(row => row.personId === detail.characterId)
+    if (appointment?.current.rank === null) assert.equal(detail.rank, '', name)
+    else assert.ok(detail.rank.length > 0, name)
     assert.ok(detail.occupation.length > 0, name)
   }
 })
@@ -608,6 +647,9 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their canonical s
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const { currentOfficeAppointments } = await import('./person-detail-inputs.mjs')
+  const officeSource = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+  const appointments = currentOfficeAppointments(officeSource, new Map(registry.persons.map(person => [person.id, person])))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -627,8 +669,9 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their canonical s
     const occupation = plain(occupations[0].ko).slice(4)
     assert.ok(occupation && occupation !== '미등록', id)
     const field = (prefix) => fields.find((item) => plain(item.ko).startsWith(prefix))
-    assert.notEqual(occupation, plain(field('품계: ').ko).slice(4), id)
-    assert.notEqual(occupation, plain(field('직함: ').ko).slice(4), id)
+    const appointment = appointments.get(id)
+    if (appointment?.position) assert.notEqual(occupation, appointment.position, id)
+    if (appointment?.rank) assert.notEqual(occupation, appointment.rank, id)
     const detailMatches = values.flatMap((person, valueIndex) => person.name === heading.name && person.state === 'S06'
       ? [valueIndex + 1] : [])
     assert.equal(detailMatches.length, 1, id)
@@ -639,6 +682,16 @@ test('all 61 issued S06 cards retain bilingual livelihoods and their canonical s
     assert.equal(detail.state, 'S06', id)
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
+    if (appointment) {
+      assert.equal(detail.position, appointment.position, id)
+      assert.equal(detail.rank, appointment.rank, id)
+      assert.equal(detail.commonTier, appointment.commonTier, id)
+    } else {
+      // Missing appointment is not an unappointed decision: preserve the actual card projection.
+      const position = field('직함: ') ?? field('직위: ')
+      if (position) assert.equal(detail.position, plain(position.ko).slice(4), id)
+      assert.ok(detail.position.length > 0, id)
+    }
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-06#'), id)
     await assertCanonicalSource(detail, id)
   }
@@ -650,6 +703,9 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical
   const markdown = renderLoreMarkdown(document, 'ko')
   const registry = JSON.parse(await readFile(new URL('../lore/name-pools/person-id-registry.json', import.meta.url), 'utf8'))
   const values = JSON.parse(await readFile(new URL('../lore/name-pools/values-cast.json', import.meta.url), 'utf8')).people
+  const { currentOfficeAppointments } = await import('./person-detail-inputs.mjs')
+  const officeSource = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url), 'utf8'))
+  const appointments = currentOfficeAppointments(officeSource, new Map(registry.persons.map(person => [person.id, person])))
   const plain = (value) => typeof value === 'string' ? value : value.map((run) => run.text).join('')
   const headings = document.content.flatMap((block, index) => block.kind === 'heading' && block.depth === 3
     ? [{ name: plain(block.text.ko).replace(/^인물 /u, ''), index }] : [])
@@ -669,8 +725,9 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical
     assert.ok(occupation && occupation !== '미등록', id)
     assert.ok(fields.some((item) => /(?:^|\n)-?\s*Livelihood: \S/u.test(plain(item.en))), id)
     const field = (prefix) => fields.find((item) => plain(item.ko).startsWith(prefix))
-    assert.notEqual(occupation, plain(field('품계: ').ko).slice(4), id)
-    assert.notEqual(occupation, plain(field('직함: ').ko).slice(4), id)
+    const appointment = appointments.get(id)
+    if (appointment?.rank) assert.notEqual(occupation, appointment.rank, id)
+    if (appointment?.position) assert.notEqual(occupation, appointment.position, id)
     const detailMatches = values.flatMap((person, valueIndex) => person.name === heading.name && person.state === 'S07'
       ? [valueIndex + 1] : [])
     assert.equal(detailMatches.length, 1, id)
@@ -679,6 +736,11 @@ test('all 61 issued S07 K IDs retain sourced bilingual livelihoods and canonical
     assert.equal(detail.id, detailId, id)
     assert.equal(detail.name, heading.name, id)
     assert.equal(detail.state, 'S07', id)
+    if (appointment) {
+      assert.equal(detail.position, appointment.position, id)
+      assert.equal(detail.rank, appointment.rank, id)
+      assert.equal(detail.commonTier, appointment.commonTier, id)
+    }
     assert.equal(detail.occupation, occupation, id)
     assert.equal(detail.fields['생업'], occupation, id)
     assert.ok(detail.sourceRoute.startsWith('/world/Cast-State-07#'), id)
@@ -1053,7 +1115,7 @@ test('person detail page renders tables and the canonical prose sections', async
   for (const [id, name] of [['person-1003', '조재표'], ['person-1004', '이연']]) {
     const detail = JSON.parse(await readFile(new URL(`../public/person-details/${id}.json`, import.meta.url), 'utf8'))
     const card = await selectedCard(name)
-    const formation = card.body.match(/\*\*호위 대열\.\*\*\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n\s*:::|$)/u)?.[1]?.trim()
+    const formation = card.body.match(/(?:\*\*호위 대열\.\*\*|^호위 대열\.)\s*([\s\S]*?)(?=\n\s*\*\*[^*]+?\.\*\*|\n[가-힣 ]+\.\s|\n\s*:::|$)/um)?.[1]?.trim()
     assert.ok(formation, id)
     assert.equal(detail.sections['호위 대열'], formation, id)
     const html = renderToStaticMarkup(createElement(MemoryRouter, null,
@@ -1103,12 +1165,17 @@ test('Shin Jongmok has an opening objective grounded in his return-net work', as
 test('Shin Jongmok exposes the directed bayonet skill without inferred equipment or rank', async () => {
   const source = JSON.parse(await readFile(new URL('../lore/characters/Core-Characters.json', import.meta.url), 'utf8'))
   const training = source.content.find((block) => block.anchor === '신종목-p4')
-  assert.equal(training.text.ko.map((run) => run.text).join(''), '훈련. 총검술.')
-  assert.equal(training.text.en.map((run) => run.text).join(''), 'Training. Bayonet fighting.')
+  assert.ok(training && training.anchor === '신종목-p4')
   const detail = JSON.parse(await readFile(new URL('../public/person-details/person-1009.json', import.meta.url), 'utf8'))
   assert.equal(detail.name, '신종목')
-  assert.equal(detail.sections['훈련'], '총검술.')
-  assert.match(detail.biography, /\*\*훈련\.\*\* 총검술\./u)
+  const sourceTraining = training.text.ko.slice(1).map(run => run.text).join('').trim()
+  assert.equal(detail.sections['훈련'], sourceTraining)
+  assert.doesNotMatch(detail.sections['훈련'], /총기 접근|탄약 접근|복무 이력|계급 부여/u)
+  const officeSource = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url)))
+  const office = officeSource.appointments.find(row => row.personId === 'K1009')
+  if (office) assert.equal(detail.rank, office.current.rank?.ko ?? '')
+  else assert.match(detail.rank, /^(?:없음|미등록)$/u)
+  assert.equal(detail.characterProfile.skills.some(skill => /총검/u.test(skill.name.ko)), true)
   await assertCanonicalSource(detail, 'K1009')
   assert.equal(detail.sourceRoute, '/world/Core-Characters#신종목')
 })
@@ -1125,10 +1192,16 @@ test('K998 keeps his detail route after relocation to the First Branch Workshop'
   assert.equal(detail.name, '이일섭')
   assert.equal(detail.state, 'S02')
   assert.equal(detail.title, '제1분공방 이씨 가문 후계')
-  assert.equal(detail.rank, '공작')
-  assert.ok(detail.openingTitles.some(title => title.id === 'title:duchy-chungcheong-k998' && title.jurisdictionRefs.length === 72))
+  const offices = JSON.parse(await readFile(new URL('../lore/relations/opening-office-appointments.json', import.meta.url)))
+  const appointment = offices.appointments.find(row => row.personId === 'K998')
+  assert.equal(appointment.current.rank, null)
+  assert.equal(detail.rank, '')
+  assert.equal((detail.openingTitles ?? []).some(title => title.id === 'title:duchy-chungcheong-k998'), false)
+  const identities = JSON.parse(await readFile(new URL('../public/confirmed-person-holdings.json', import.meta.url)))
+  assert.ok(identities.politicalIdentities.some(title => title.id === 'title:duchy-chungcheong-k998' && title.directOwnership === false))
   assert.equal(detail.commonTier, 'T3')
-  assert.equal(detail.occupation, '제1분공방 차량기지 밭 경작·곡물 재고 관리')
+  assert.equal(detail.occupation, detail.fields['생업'])
+  assert.match(detail.occupation, /오류2동.*밭 경작·곡물 재고 관리/u)
   assert.equal(detail.sourceRoute, '/world/Cast-State-02#인물-이일섭')
   assert.equal(detail.fields.기여자, '[islee23520](https://github.com/islee23520)')
   assert.deepEqual(detail.relations.outgoing.map(row => [row.to, row.type]), [

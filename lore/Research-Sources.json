@@ -1,0 +1,867 @@
+{
+  "version": 1,
+  "domain": "root",
+  "id": "DOC:Research-Sources",
+  "slug": "Research-Sources",
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "lore/Research-Sources.md",
+    "original_hash": "25d2e35d381da6393d4430b218280ba1a9393fbc91f238bdc27c131eeaa32ca6",
+    "history": [
+      "2026-10-15: This bibliography was newly authored for the wildlife-source-authoring migration; it was not part of the immutable pre-migration corpus.",
+      "2026-10-15: Migrated the 8531-byte Korean Markdown authoring source (SHA-256 25d2e35d381da6393d4430b218280ba1a9393fbc91f238bdc27c131eeaa32ca6) to lore/Research-Sources.json. DOC:Research-Sources is the permanent document identity; the Research-Sources slug and all nine SRC-NEW public anchors are retained. The Markdown source is replaced, not retained as duplicate authoring.",
+      "2026-10-15: English text translates the corresponding Korean research records and quotations; it is not an independently verified English source. External official publications support only the stated bibliographic claims, not current fictional authority or publication approval."
+    ]
+  },
+  "source": {
+    "kind": "source-fact",
+    "refs": [
+      "https://news.seoul.go.kr/env/archives/527301",
+      "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do",
+      "https://news.seoul.go.kr/env/archives/569372",
+      "https://news.seoul.go.kr/env/archives/567576",
+      "https://parks.seoul.go.kr/content.do?key=2605160001",
+      "https://news.seoul.go.kr/env/archives/518510",
+      "https://hangang.seoul.go.kr/www/contents/874.do?mid=868",
+      "https://hangang.seoul.go.kr/www/contents/875.do?mid=870"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "New wildlife evidence bibliography — proposal before application",
+      "summary": "Nine claim-scoped official research anchors; not authority for fictional events or powers.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "새 야생동물 근거 목록 — 적용 전 제안",
+      "summary": "아홉 개 공식 조사 근거의 제한된 지원 범위이며 창작 사건·권능의 근거가 아니다.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "research-sources-title",
+      "depth": 1,
+      "text": {
+        "en": "New wildlife evidence bibliography — proposal before application",
+        "ko": "새 야생동물 근거 목록 — 적용 전 제안"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-sources-scope",
+      "text": {
+        "en": "Checked on 2026-10-15. This text records the scope of newly researched material. It does not claim to restore the original sources of previously missing IDs. External geography cited here is research publication provenance and adds no current-world facts outside Seoul. Each ID supports only a limited fact at one occurrence; the corresponding group retains source_kind original-fiction.",
+        "ko": "확인일: 2026-10-15. 이 본문은 새 조사 자료의 범위를 기록한다. 과거 누락 ID의 원출처를 복구했다는 주장이 아니다. 본문에 인용된 외부 지리는 연구 출판물의 provenance이며 서울 밖 현재 세계의 사실을 추가하지 않는다. 각 ID는 한 발생 위치의 제한된 사실만 지원하며 해당 그룹의 source_kind는 original-fiction이다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-1",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-BOAR-RESPONSE-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-BOAR-RESPONSE-20261015",
+        "ko": "SRC-NEW-SEOUL-BOAR-RESPONSE-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-1-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Seoul mobilizes safety measures to prevent wild boar damage",
+          "ko": "제목: 서울시, 멧돼지 피해예방 위해 안전대책 마련에 총력"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/527301",
+              "href": "https://news.seoul.go.kr/env/archives/527301"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/527301",
+              "href": "https://news.seoul.go.kr/env/archives/527301"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2023-10-29T12:19:09+09:00",
+          "ko": "발행일: 2023-10-29T12:19:09+09:00"
+        },
+        {
+          "en": "Modified: 2024-03-19T16:24:02+09:00",
+          "ko": "수정일: 2024-03-19T16:24:02+09:00"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: opening response paragraphs",
+          "ko": "구간: opening response paragraphs"
+        },
+        {
+          "en": "Narrow support: barriers on major movement routes to prevent entry into urban Seoul, and actual capture responsibilities",
+          "ko": "좁은 지원 범위: 서울 도심 진입 방지를 위한 주요 이동 경로 차단시설 및 실제 포획 책임분담"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-1-quote",
+      "text": {
+        "en": "At the scene, capture is led by the wild boar mobile capture team under police control.",
+        "ko": "현장에서는 경찰 통제하에 멧돼지 기동포획단 주도로 포획하며"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-1-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-2",
+      "publicAnchors": [
+        "SRC-NEW-NIBR-BOAR-HABITAT-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-NIBR-BOAR-HABITAT-20261015",
+        "ko": "SRC-NEW-NIBR-BOAR-HABITAT-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-2-metadata",
+      "items": [
+        {
+          "en": "Institution: National Institute of Biological Resources",
+          "ko": "기관: 국립생물자원관"
+        },
+        {
+          "en": "Title: Wild boar and raccoon dog occurrence areas at a glance",
+          "ko": "제목: 야생 멧돼지·너구리 출몰 지역 한눈에 본다"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do",
+              "href": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do",
+              "href": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2026-02-26",
+          "ko": "발행일: 2026-02-26"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: Bukhansan wild boar analysis results",
+          "ko": "구간: 북한산 멧돼지 분석 결과"
+        },
+        {
+          "en": "Narrow support: the Bukhansan study reports wild boar resting areas and feeding around vegetable plots and temples",
+          "ko": "좁은 지원 범위: 북한산 연구의 멧돼지 휴식지 및 텃밭·사찰 주변 먹이활동 보고"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-2-quote",
+      "text": {
+        "en": "The results confirmed that wild boars mainly rest in south-facing, steep areas with dense shrubs, and prefer vegetable plots and temple surroundings as feeding areas.",
+        "ko": "그 결과 멧돼지는 남향에 경사가 가파르고 관목이 울창한 지역을 주로 휴식 공간으로 하고 텃밭 및 사찰 주변을 먹이활동 공간으로 선호하는 것이 확인됐다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-2-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-3",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-CROW-OFFSPRING-DEFENSE-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-CROW-OFFSPRING-DEFENSE-20261015",
+        "ko": "SRC-NEW-SEOUL-CROW-OFFSPRING-DEFENSE-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-3-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Beware of large-billed crows until July while they protect their young: how to respond",
+          "ko": "제목: 새끼 보호 시기 7월까지 큰부리까마귀 주의, 이렇게 대처하세요!"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/569372",
+              "href": "https://news.seoul.go.kr/env/archives/569372"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/569372",
+              "href": "https://news.seoul.go.kr/env/archives/569372"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2026-05-22T17:57:28+09:00",
+          "ko": "발행일: 2026-05-22T17:57:28+09:00"
+        },
+        {
+          "en": "Modified: 2026-05-22T17:59:17+09:00",
+          "ko": "수정일: 2026-05-22T17:59:17+09:00"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: opening paragraph",
+          "ko": "구간: opening paragraph"
+        },
+        {
+          "en": "Narrow support: guidance on breeding-season defense of young by large-billed crows; excludes breeding-pair territory boundaries and radii",
+          "ko": "좁은 지원 범위: 큰부리까마귀의 번식기 새끼 방어 안내; 번식쌍 영역 경계·반경은 제외"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-3-quote",
+      "text": {
+        "en": "Head-pecking by large-billed crows may mainly occur as defensive behavior to protect their young during the March–July breeding season, and may become more frequent during May–July fledging, when the young become independent.",
+        "ko": "큰부리까마귀가 머리를 쪼는 일은 주로 번식기인 3월~7월에 새끼를 지키려는 방어행동 때문에 나타날 수 있는데, 특히 새끼가 독립하는 5월~7월 이소기에 더 잦아질 수 있습니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-3-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-4",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-CROW-REPORTING-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-CROW-REPORTING-20261015",
+        "ko": "SRC-NEW-SEOUL-CROW-REPORTING-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-4-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Beware of large-billed crows until July while they protect their young: how to respond",
+          "ko": "제목: 새끼 보호 시기 7월까지 큰부리까마귀 주의, 이렇게 대처하세요!"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/569372",
+              "href": "https://news.seoul.go.kr/env/archives/569372"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/569372",
+              "href": "https://news.seoul.go.kr/env/archives/569372"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2026-05-22T17:57:28+09:00",
+          "ko": "발행일: 2026-05-22T17:57:28+09:00"
+        },
+        {
+          "en": "Modified: 2026-05-22T17:59:17+09:00",
+          "ko": "수정일: 2026-05-22T17:59:17+09:00"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: reporting heading",
+          "ko": "구간: reporting heading"
+        },
+        {
+          "en": "Narrow support: reporting guidance for injuries, nests and young large-billed crows; not species-specific rescue statistics",
+          "ko": "좁은 지원 범위: 큰부리까마귀 피해·둥지·새끼 발견 시 제보 안내; 종별 구조 실적 아님"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-4-quote",
+      "text": {
+        "en": "Please report injuries to 119, and nests or young birds to 02-120 or the district parks and green space department (wildlife management).",
+        "ko": "부상 피해 발생 시 119에, 둥지나 새끼를 발견하였을 시 02-120 또는 구청 공원녹지부서(야생동물 관리)에 제보해주세요."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-4-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-5",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-FERAL-DOG-CARE-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-FERAL-DOG-CARE-20261015",
+        "ko": "SRC-NEW-SEOUL-FERAL-DOG-CARE-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-5-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Improving public safety through intensive rescue of feral abandoned dogs around Bukhansan and Gwanaksan",
+          "ko": "제목: 북한산·관악산 등 야생화된 유기견 집중 구조로 시민 안전 강화"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/567576",
+              "href": "https://news.seoul.go.kr/env/archives/567576"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/567576",
+              "href": "https://news.seoul.go.kr/env/archives/567576"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2026-02-26T15:16:26+09:00",
+          "ko": "발행일: 2026-02-26T15:16:26+09:00"
+        },
+        {
+          "en": "Modified: 2026-02-26T15:16:26+09:00",
+          "ko": "수정일: 2026-02-26T15:16:26+09:00"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: capture and protection paragraphs",
+          "ko": "구간: capture and protection paragraphs"
+        },
+        {
+          "en": "Narrow support: separate rescue, protection and adoption of feral abandoned dogs; distinct from collar UHF and 2 m reading",
+          "ko": "좁은 지원 범위: 야생화된 유기견의 별도 구조·보호·입양; 목걸이 UHF·2m 판독과 구분"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-5-quote",
+      "text": {
+        "en": "Rescued abandoned dogs receive protection equivalent to that for abandoned animals at district-designated animal protection centers, and adopters are sought after a public notice.",
+        "ko": "구조된 유기견은 자치구 지정 동물보호센터에서 유기 동물에 준한 보호조치를 하며, 유기동물 공고 이후 입양자를 찾게 된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-5-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-6",
+      "publicAnchors": [
+        "SRC-NEW-NIBR-SEOUL-RACCOON-DOG-OCCURRENCE-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-NIBR-SEOUL-RACCOON-DOG-OCCURRENCE-20261015",
+        "ko": "SRC-NEW-NIBR-SEOUL-RACCOON-DOG-OCCURRENCE-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-6-metadata",
+      "items": [
+        {
+          "en": "Institution: National Institute of Biological Resources",
+          "ko": "기관: 국립생물자원관"
+        },
+        {
+          "en": "Title: Wild boar and raccoon dog occurrence areas at a glance",
+          "ko": "제목: 야생 멧돼지·너구리 출몰 지역 한눈에 본다"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do",
+              "href": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do",
+              "href": "https://www.nibr.go.kr/cmn/board/SYSTEM_DEFAULT000004/67182bbsDetail.do"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2026-02-26",
+          "ko": "발행일: 2026-02-26"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: analysis of major raccoon dog occurrence areas",
+          "ko": "구간: 너구리 주요 출몰 지역 분석"
+        },
+        {
+          "en": "Narrow support: a study including 36 Seoul locations reports possible raccoon dog contact along rivers, adjacent urban parks and green spaces; specific conduits and coordinates are unverified",
+          "ko": "좁은 지원 범위: 서울 36곳을 포함한 연구에서 하천·인접 도시공원·녹지의 너구리 접촉 가능성 보고; 특정 관로나 좌표 미검증"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-6-quote",
+      "text": {
+        "en": "These areas contain rivers, adjacent urban parks and green spaces, which appears to explain frequent contact between wildlife and people walking or enjoying leisure activities.",
+        "ko": "해당 지역들은 하천과 이에 인접한 도시공원 및 녹지 공간이 형성되어 있어 산책이나 여가 활동을 즐기는 시민들이 야생동물과 접촉이 잦은 이유인 것으로 보인다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-6-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-7",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-RACCOON-DOG-RESCUE-SCOPE-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-RACCOON-DOG-RESCUE-SCOPE-20261015",
+        "ko": "SRC-NEW-SEOUL-RACCOON-DOG-RESCUE-SCOPE-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-7-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Seoul ecological information - wildlife",
+          "ko": "제목: 서울의 생태정보 - 야생생물"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://parks.seoul.go.kr/content.do?key=2605160001",
+              "href": "https://parks.seoul.go.kr/content.do?key=2605160001"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://parks.seoul.go.kr/content.do?key=2605160001",
+              "href": "https://parks.seoul.go.kr/content.do?key=2605160001"
+            }
+          ]
+        },
+        {
+          "en": "Published: not found in the body",
+          "ko": "발행일: 본문에서 확인하지 못함"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: injured wildlife rescue guidance / current reporting and rescue system",
+          "ko": "구간: 부상 야생동물 구조요령 / 현행 신고 및 구조 체계"
+        },
+        {
+          "en": "Narrow support: the page’s raccoon dog rescue caption and general professional rescue system for injured animals; the caption is not independent verification of an actual image or rescue record",
+          "ko": "좁은 지원 범위: 페이지의 너구리 구조 캡션과 일반 부상동물 전문 구조체계; 캡션은 실제 이미지·실적의 독립 검증 아님"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-7-quote",
+      "text": {
+        "en": "Raccoon dog rescue",
+        "ko": "너구리 구조"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-7-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-8",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-PROTECTED-WETLAND-LOCATIONS-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-PROTECTED-WETLAND-LOCATIONS-20261015",
+        "ko": "SRC-NEW-SEOUL-PROTECTED-WETLAND-LOCATIONS-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-8-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Nature and ecology protection status (as of January 2026)",
+          "ko": "제목: 자연생태 보호 현황(2026. 1월 기준)"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/518510",
+              "href": "https://news.seoul.go.kr/env/archives/518510"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://news.seoul.go.kr/env/archives/518510",
+              "href": "https://news.seoul.go.kr/env/archives/518510"
+            }
+          ]
+        },
+        {
+          "en": "Published: 2022-04-29T09:15:03+09:00",
+          "ko": "발행일: 2022-04-29T09:15:03+09:00"
+        },
+        {
+          "en": "Modified: 2026-03-29T11:18:14+09:00",
+          "ko": "수정일: 2026-03-29T11:18:14+09:00"
+        },
+        {
+          "en": "Reference edition: 2026.1",
+          "ko": "기준 판본: 2026.1"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: ecological landscape conservation areas / wildlife habitat protection area tables",
+          "ko": "구간: 생태경관보전지역 / 야생생물 서식지 등 보호구역 tables"
+        },
+        {
+          "en": "Narrow support: distinguishes Hangang Bamseom and Amsa-dong conservation areas from the amphibian and reptile protection area in Nanji Hangang Park; does not designate all of Nanji as a migratory bird protection area",
+          "ko": "좁은 지원 범위: 한강밤섬·암사동 보전지역 및 난지 한강공원 양서·파충류 보호구역의 구별; 난지 전체 철새보호구역 아님"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-8-quote",
+      "text": {
+        "en": "(Amphibian and reptile habitat)",
+        "ko": "(양서ㆍ파충류 서식지)"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-8-bamseom",
+      "text": {
+        "en": [
+          {
+            "text": "Supplementary material: "
+          },
+          {
+            "text": "Bamseom",
+            "href": "https://hangang.seoul.go.kr/www/contents/874.do?mid=868"
+          },
+          {
+            "text": ", registered 2022-12-28, modified 2025-07-11, Ramsar wetland designation."
+          }
+        ],
+        "ko": [
+          {
+            "text": "보조 자료: "
+          },
+          {
+            "text": "밤섬",
+            "href": "https://hangang.seoul.go.kr/www/contents/874.do?mid=868"
+          },
+          {
+            "text": ", 등록 2022-12-28, 수정 2025-07-11, 람사르 습지 지정."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-8-bamseom-quote",
+      "text": {
+        "en": "2012. 6. 21. (first in Seoul, eighteenth nationally)",
+        "ko": "2012. 6. 21.(서울시 최초, 국내 18번째)"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-8-amsa",
+      "text": {
+        "en": [
+          {
+            "text": "Supplementary material: "
+          },
+          {
+            "text": "Amsa-dong",
+            "href": "https://hangang.seoul.go.kr/www/contents/875.do?mid=870"
+          },
+          {
+            "text": ", registered 2022-12-28, modified 2025-07-09, location."
+          }
+        ],
+        "ko": [
+          {
+            "text": "보조 자료: "
+          },
+          {
+            "text": "암사동",
+            "href": "https://hangang.seoul.go.kr/www/contents/875.do?mid=870"
+          },
+          {
+            "text": ", 등록 2022-12-28, 수정 2025-07-09, 위치."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-8-amsa-quote",
+      "text": {
+        "en": "Around 624-1 Amsa-dong, Gangdong-gu, Seoul (Amsa Ecological Park and its surroundings)",
+        "ko": "서울시 강동구 암사동 624-1 일대 (암사생태공원 및 그 일대)"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-8-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "research-source-9",
+      "publicAnchors": [
+        "SRC-NEW-SEOUL-BIRD-RESCUE-TRANSPORT-20261015"
+      ],
+      "depth": 2,
+      "text": {
+        "en": "SRC-NEW-SEOUL-BIRD-RESCUE-TRANSPORT-20261015",
+        "ko": "SRC-NEW-SEOUL-BIRD-RESCUE-TRANSPORT-20261015"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "research-source-9-metadata",
+      "items": [
+        {
+          "en": "Institution: Seoul Metropolitan Government",
+          "ko": "기관: 서울특별시"
+        },
+        {
+          "en": "Title: Seoul ecological information - wildlife",
+          "ko": "제목: 서울의 생태정보 - 야생생물"
+        },
+        {
+          "en": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://parks.seoul.go.kr/content.do?key=2605160001",
+              "href": "https://parks.seoul.go.kr/content.do?key=2605160001"
+            }
+          ],
+          "ko": [
+            {
+              "text": "URL: "
+            },
+            {
+              "text": "https://parks.seoul.go.kr/content.do?key=2605160001",
+              "href": "https://parks.seoul.go.kr/content.do?key=2605160001"
+            }
+          ]
+        },
+        {
+          "en": "Published: not found in the body",
+          "ko": "발행일: 본문에서 확인하지 못함"
+        },
+        {
+          "en": "Actually checked: 2026-10-15",
+          "ko": "실제 확인일: 2026-10-15"
+        },
+        {
+          "en": "Section: wildlife rescue treatment / injured wildlife rescue guidance / safe storage and transport guidance",
+          "ko": "구간: 야생동물 구조치료 / 부상 야생동물 구조요령 / 안전한 보관과 운반 요령"
+        },
+        {
+          "en": "Narrow support: general bird transport caption, goshawk rescue caption and eastern spot-billed duck release caption; not evidence for mixed-group negotiation or joint rescue",
+          "ko": "좁은 지원 범위: 일반 조류 운반 캡션 및 참매 구조·흰뺨검둥오리 방사 캡션; 혼합군 협상·공동 구조의 근거 아님"
+        }
+      ]
+    },
+    {
+      "kind": "quote",
+      "anchor": "research-source-9-quote",
+      "text": {
+        "en": "Appropriate: for birds, a cardboard box is safest",
+        "ko": "적절:조류의 경우 종이박스가 가장 안전"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "research-source-9-boundary",
+      "text": {
+        "en": "This evidence does not establish the group’s post-collapse events, techniques, powers, behavioral rules, numerical values, negotiation or management effects, or misconduct by actual institutions.",
+        "ko": "이 근거는 해당 그룹의 붕괴 후 사건·기술·권능·행동 규칙·수치·협상·관리 효과나 실제 기관의 과실을 입증하지 않는다."
+      }
+    }
+  ],
+  "data": {}
+}

@@ -43,6 +43,6 @@
         }
       }
     },
-    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["layer"]}}}}
+    {"if": {"properties": {"id": {"pattern": "^DOC:(?!(?:Building-Reuse-Geography|Seoul-Station-Catalog|Station-Interior-Construction|World-Map-Construction|World-and-Subway-Layers)$)"}}, "required": ["id"]}, "then": {"properties": {"data": {"required": ["layer"]}}}}
   ]
 }

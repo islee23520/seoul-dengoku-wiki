@@ -6,7 +6,7 @@
   "categories": [
     "characters"
   ],
-  "status": "draft",
+  "status": "approved",
   "tense": {
     "en": "present",
     "ko": "present"
@@ -29,12 +29,12 @@
   "locales": {
     "en": {
       "title": "Corridor Cast Index",
-      "summary": "These are the named people outside the Sixteen States registers, listed in the Diaspora Corridors and the Conscription Remnants.",
+      "summary": "These six named people are listed by their Seoul corridors and conscription records; the index does not determine their political membership.",
       "tense": "present"
     },
     "ko": {
       "title": "회랑 인물 총람",
-      "summary": "16국 명부 바깥, 이주민 회랑과 징집 잔존에 이름이 있는 인물이다.",
+      "summary": "서울의 이주민 회랑과 징집 잔존에 이름이 있는 여섯 인물을 생활권과 징집 이력으로 살핀다. 이 목록만으로 정치적 소속을 정하지 않는다.",
       "tense": "present"
     }
   },
@@ -52,8 +52,8 @@
       "kind": "paragraph",
       "anchor": "회랑-인물-총람-p1",
       "text": {
-        "en": "Migrant and service workers outside the sixteen state ledgers lived in Daerim and Garibong, Itaewon, Dongdaemun, Guro and Gasan, and Yongsan.",
-        "ko": "대림·가리봉, 이태원, 동대문, 구로·가산, 용산 생활권에는 십육국 명부 바깥의 이주민과 용역 인물이 있다."
+        "en": "Migrant and service workers live and work along the Daerim–Garibong, Itaewon, Dongdaemun, Guro–Gasan, and Yongsan corridors of Seoul. Their work in these corridors does not exclude membership in a current faction or surviving vassal.",
+        "ko": "대림·가리봉, 이태원, 동대문, 구로·가산, 용산 생활권에는 이주민과 용역 인물이 있다. 회랑의 생업은 현행 세력이나 존속 봉신의 소속 여부를 가르지 않는다."
       }
     },
     {
@@ -111,7 +111,7 @@
           },
           {
             "en": "Guro and Gasan corridor",
-            "ko": "구로·가산 조선족 생활권"
+            "ko": "구로·가산 생활권"
           },
           {
             "en": "night maintenance crew chief",
@@ -198,7 +198,7 @@
             "ko": "최일석"
           },
           {
-            "en": "Sinjeong-Bupyeong mobilization remnant",
+            "en": "Guro–Geumcheon mobilization remnant",
             "ko": "구로·금천 동원잔존"
           },
           {
@@ -245,26 +245,6 @@
               "link": {
                 "domain": "gdd",
                 "slug": "rules/Rules-FactionsWarfare"
-              }
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "이주민 회랑",
-              "link": {
-                "domain": "factions",
-                "slug": "Diaspora-Corridors"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Diaspora Corridors",
-              "link": {
-                "domain": "factions",
-                "slug": "Diaspora-Corridors"
               }
             }
           ]

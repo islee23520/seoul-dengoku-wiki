@@ -2,9 +2,9 @@
   "id": "person-1011",
   "name": "린샤오메이",
   "title": "대림 이중장부 중개",
-  "position": "대림 이중장부 중개 · 과천시 영주",
+  "position": "대림 이중장부 중개",
   "characterId": "K1011",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "물류상 (주), 전령 (부)",
   "gender": "여성",
@@ -526,41 +526,23 @@
             "name": "린샤오메이",
             "url": "/people/person-1011",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "물류상 (주), 전령 (부)",
-              "evidence": [
-                {
-                  "path": "lore/factions/Diaspora-Corridors.json",
-                  "pointer": "/content/6/items/9/ko",
-                  "quote": "생업: 물류상 (주), 전령 (부)"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -568,115 +550,35 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/9/ko",
-                    "quote": "생업: 물류상 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/9/ko",
-                    "quote": "생업: 물류상 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 4,
-                "level": 12
-              }
-            ],
-            "languages": [
-              {
-                "name": "북경 관화",
-                "level": "Native",
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/8/ko",
-                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
-                  }
-                ]
-              },
-              {
-                "name": "한국어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/8/ko",
-                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
-                  }
-                ]
+                "level": 12,
+                "cp": 4
               }
             ],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "남부 유동 야영지",
-              "camp": {
-                "name": "린샤오메이 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       },
@@ -699,41 +601,23 @@
             "name": "린샤오메이",
             "url": "/people/person-1011",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "물류상 (주), 전령 (부)",
-              "evidence": [
-                {
-                  "path": "lore/factions/Diaspora-Corridors.json",
-                  "pointer": "/content/6/items/9/ko",
-                  "quote": "생업: 물류상 (주), 전령 (부)"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -741,192 +625,58 @@
               {
                 "name": "Merchant",
                 "ko": "거래·경매",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/9/ko",
-                    "quote": "생업: 물류상 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 8,
-                "level": 12
+                "level": 12,
+                "cp": 8
               },
               {
                 "name": "Area Knowledge (근무 구역)",
                 "ko": "지역 지식(전령·전달)",
-                "attr": "IQ",
-                "diff": "E",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/9/ko",
-                    "quote": "생업: 물류상 (주), 전령 (부)"
-                  }
-                ],
-                "cp": 4,
-                "level": 12
-              }
-            ],
-            "languages": [
-              {
-                "name": "북경 관화",
-                "level": "Native",
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/8/ko",
-                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
-                  }
-                ]
-              },
-              {
-                "name": "한국어",
-                "level": null,
-                "cp": 0,
-                "evidence": [
-                  {
-                    "path": "lore/factions/Diaspora-Corridors.json",
-                    "pointer": "/content/6/items/8/ko",
-                    "quote": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
-                  }
-                ]
+                "level": 12,
+                "cp": 4
               }
             ],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 10,
               "Per": 10,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 0,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 12,
               "spent": 12,
-              "unspent": 63,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 2,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 소세력 S00 규모",
-              "faction_scale": {
-                "state": "S00",
-                "tier": "소세력",
-                "factor": 0.7
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 2,
-              "current_location": "남부 유동 야영지",
-              "camp": {
-                "name": "린샤오메이 야영지",
-                "type": "야영지",
-                "description": "영지 없이 야영지만으로 활동하는 무소속 부대의 거점",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "무소속 — 고정 영지 없음, 야영지만 보유"
-            },
-            "territory": null
+              "unspent": 63
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-41290-S02",
-      "name": {
-        "ko": "과천시 공작령 직영지"
-      },
-      "holderPersonId": "K1011",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4129051000",
-          "name": "경기도 과천시 중앙동"
-        },
-        {
-          "id": "4129051500",
-          "name": "경기도 과천시 원문동"
-        },
-        {
-          "id": "4129052000",
-          "name": "경기도 과천시 갈현동"
-        },
-        {
-          "id": "4129053000",
-          "name": "경기도 과천시 별양동"
-        },
-        {
-          "id": "4129054000",
-          "name": "경기도 과천시 부림동"
-        },
-        {
-          "id": "4129055000",
-          "name": "경기도 과천시 과천동"
-        },
-        {
-          "id": "4129056000",
-          "name": "경기도 과천시 문원동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41290-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-41290-S02",
-      "name": "과천시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K1011",
-      "basis": "개막 행정 규모 그룹 41290(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4129051000",
-        "4129051500",
-        "4129052000",
-        "4129053000",
-        "4129054000",
-        "4129055000",
-        "4129056000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-41290-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 2,
@@ -941,7 +691,6 @@
       "factor": 0.7
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 2,
@@ -1009,10 +758,11 @@
     "공포": "중국어 장부가 「외국 장부」로 압수되어 대림 숙소가 통째로 지워지는 것",
     "통치·교섭 방식": "한쪽 언어 계약만 오면 서명을 거부하고 통역료를 먼저 받는다",
     "주요 관계": "구로공단 기숙의 팜반득과 부품 대 식량 계약. 서남 경비대와는 원한에 가까운 통행 검사",
-    "촉발 사건": "이중장부 압수령이 떨어지면 구로 차단문 안쪽 거래가 멈춘다"
+    "촉발 사건": "이중장부 압수령이 떨어지면 구로 차단문 안쪽 거래가 멈춘다",
+    "업무 위치": "대림2동. 린샤오메이는 대림2동 당직에서 숙소의 물품 인계 기록을 가족의 두 언어 장부와 대조한다. 구로 차단문 쪽 거래가 멈추면 가리봉동 통역시장에 누락된 이름과 수량을 돌려 계약 두 장을 다시 맞춘다."
   },
   "sections": {},
-  "biography": "- 성명: 린샤오메이. 장부 한글 임소매. 대림에서는 샤오메이\n- 캐릭터 ID: K1011\n- 출생지: 대림\n- 성별: 여성\n- 품계: 없음\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 30 | 공동 30 | 원칙 30 | 공개 −20 | 자격 0 | 분산 50 | 변혁 30\n- 욕망: 갈망 30 | 독점 −20 | 위험 −20 | 과시 −20 | 지속 40 | 지향 양성\n- 출신 공동체: 대림·가리봉 통역시장. 붕괴 전 한국 체류 중국동포 상점 가계. 린샤오메이는 2075년에 태어났다. 중국동포 가계는 대림·가리봉 생활권에 뿌리를 두고 있다. 2126년에는 대림 이중장부 중개 업무를 맡는다. 린청하오는 2030년 대림·가리봉에서 대림·가리봉 중국동포 상점과 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 린샤오메이의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 일상 북경 관화·한국어. 계약서는 두 장\n- 생업: 물류상 (주), 전령 (부)\n- 소속: 규격맹(S02). 통역시장 장부. 규격맹 시장 창구에 통역으로만 등록\n- 직위: 대림 이중장부 중개\n- 징집 이력: 없음. 한국 병역 의무 없음\n- 무장 접근: 생업 공구. 저울과 장부. 제식 없음\n- 성격: 가격을 말하기 전에 상대가 어느 말로 욕하는지를 듣는다\n- 개인 야망: 환전 창구를 서남 규격맹 평의회 도장이 아니라 통역시장 도장으로 연다\n- 공포: 중국어 장부가 「외국 장부」로 압수되어 대림 숙소가 통째로 지워지는 것\n- 통치·교섭 방식: 한쪽 언어 계약만 오면 서명을 거부하고 통역료를 먼저 받는다\n- 주요 관계: 구로공단 기숙의 팜반득과 부품 대 식량 계약. 서남 경비대와는 원한에 가까운 통행 검사\n- 촉발 사건: 이중장부 압수령이 떨어지면 구로 차단문 안쪽 거래가 멈춘다\n\n<a id=\"인물-팜반득-phm-vn-c-범반득\"></a>",
+  "biography": "- 성명: 린샤오메이. 장부 한글 임소매. 대림에서는 샤오메이\n- 캐릭터 ID: K1011\n- 출생지: 대림\n- 성별: 여성\n- 품계: 없음\n- 가치관: 권위 −20 | 개방 40 | 무력 −30 | 물질 30 | 공동 30 | 원칙 30 | 공개 −20 | 자격 0 | 분산 50 | 변혁 30\n- 욕망: 갈망 30 | 독점 −20 | 위험 −20 | 과시 −20 | 지속 40 | 지향 양성\n- 출신 공동체: 대림·가리봉 통역시장. 붕괴 전 한국 체류 중국동포 상점 가계. 린샤오메이는 2075년에 태어났다. 중국동포 가계는 대림·가리봉 생활권에 뿌리를 두고 있다. 2126년에는 대림 이중장부 중개 업무를 맡는다. 린청하오는 2030년 대림·가리봉에서 대림·가리봉 중국동포 상점과 통역 일을 하며 대정전을 겪었다. 가족은 거처와 물품 인계 기록을 다음 세대에 전했고, 린샤오메이의 부모 세대는 그 기록을 당대의 생활 장부와 대조했다.\n- 언어: 일상 북경 관화·한국어. 계약서는 두 장\n- 생업: 물류상 (주), 전령 (부)\n- 소속: 규격맹(S02). 통역시장 장부. 규격맹 시장 창구에 통역으로만 등록\n- 직위: 대림 이중장부 중개\n- 징집 이력: 없음. 한국 병역 의무 없음\n- 무장 접근: 생업 공구. 저울과 장부. 제식 없음\n- 성격: 가격을 말하기 전에 상대가 어느 말로 욕하는지를 듣는다\n- 개인 야망: 환전 창구를 서남 규격맹 평의회 도장이 아니라 통역시장 도장으로 연다\n- 공포: 중국어 장부가 「외국 장부」로 압수되어 대림 숙소가 통째로 지워지는 것\n- 통치·교섭 방식: 한쪽 언어 계약만 오면 서명을 거부하고 통역료를 먼저 받는다\n- 주요 관계: 구로공단 기숙의 팜반득과 부품 대 식량 계약. 서남 경비대와는 원한에 가까운 통행 검사\n- 촉발 사건: 이중장부 압수령이 떨어지면 구로 차단문 안쪽 거래가 멈춘다\n- 업무 위치: 가리봉동. 린샤오메이는 가리봉동 통역시장 창구에서 한국어·중국어 계약 두 장의 물품 수와 통역료를 맞춘다. 한쪽 장부만 압수하겠다는 통행 검사에는 서명을 멈추고 팜반득에게 겨울 부품 대 식량 계약의 두 사본 상태를 알린다.\n- 업무 위치: 대림2동. 린샤오메이는 대림2동 당직에서 숙소의 물품 인계 기록을 가족의 두 언어 장부와 대조한다. 구로 차단문 쪽 거래가 멈추면 가리봉동 통역시장에 누락된 이름과 수량을 돌려 계약 두 장을 다시 맞춘다.\n\n<a id=\"인물-팜반득-phm-vn-c-범반득\"></a>",
   "sources": [
     "Diaspora-Corridors"
   ],

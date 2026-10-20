@@ -27,8 +27,10 @@ test('every published WIKI document adapts without dropping an unsupported node'
 })
 
 test('rendered links keep WIKI routes, hub routes, and fragments', async () => {
-  const html = render(await blocks('Ailments.json'))
-  assert.match(html, /href="\/wiki\/world\/World-Unbinding"/)
+  const html = render(fromMarkdown('[article](/world/Other.md#section) [hub](/gdd/rules/War) [year](#2126년)').children)
+  const document = new JSDOM(html).window.document
+  assert.deepEqual([...document.querySelectorAll('a')].map(link => link.getAttribute('href')),
+    ['/wiki/world/Other#section', '/gdd/rules/War', '#2126년'])
   assert.equal(resolveWikiContentHref('/world/Other.md#section'), '/wiki/world/Other#section')
   assert.equal(resolveWikiContentHref('/gdd/rules/War'), '/gdd/rules/War')
   assert.equal(resolveWikiContentHref('#2126년'), '#2126년')

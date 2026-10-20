@@ -446,52 +446,23 @@
             "name": "한가서",
             "url": "/people/person-0789",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "검역 기록·당직 열쇠 인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-14.json",
-                  "pointer": "/content/512/items/0/ko",
-                  "quote": "생업: 검역 기록·당직 열쇠 인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/513/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/514/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -499,105 +470,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/512/items/0/ko",
-                    "quote": "생업: 검역 기록·당직 열쇠 인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/513/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Hazardous Materials/TL? (Biological)",
                 "ko": "검역·방역",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/512/items/0/ko",
-                    "quote": "생업: 검역 기록·당직 열쇠 인계"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/514/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 아관사 규모",
-              "faction_scale": {
-                "state": "S14",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "방배",
-              "type": "초소 영지",
-              "station": "방배",
-              "state": "S14",
-              "settlement": {
-                "name": "방배 정착지",
-                "type": "정착지",
-                "description": "방배 일대 고정 거점"
-              },
-              "note": "S14 방배 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -621,52 +527,23 @@
             "name": "한가서",
             "url": "/people/person-0789",
             "state": "S14",
-            "method": "card-lexicon",
-            "role": {
-              "display": "검역 기록·당직 열쇠 인계",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-14.json",
-                  "pointer": "/content/512/items/0/ko",
-                  "quote": "생업: 검역 기록·당직 열쇠 인계"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/513/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/514/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -674,105 +551,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/512/items/0/ko",
-                    "quote": "생업: 검역 기록·당직 열쇠 인계"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/513/text/ko",
-                    "quote": "자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Hazardous Materials/TL? (Biological)",
                 "ko": "검역·방역",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/512/items/0/ko",
-                    "quote": "생업: 검역 기록·당직 열쇠 인계"
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Interrogation",
                 "ko": "증인 대질",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-14.json",
-                    "pointer": "/content/514/text/ko",
-                    "quote": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 아관사 규모",
-              "faction_scale": {
-                "state": "S14",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "방배",
-              "type": "초소 영지",
-              "station": "방배",
-              "state": "S14",
-              "settlement": {
-                "name": "방배 정착지",
-                "type": "정착지",
-                "description": "방배 일대 고정 거점"
-              },
-              "note": "S14 방배 일대 관할 영지"
+              "unspent": 15
             }
           }
         }
@@ -793,18 +605,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "방배",
-    "type": "초소 영지",
-    "station": "방배",
-    "state": "S14",
-    "settlement": {
-      "name": "방배 정착지",
-      "type": "정착지",
-      "description": "방배 일대 고정 거점"
-    },
-    "note": "S14 방배 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -845,15 +645,15 @@
     "욕망": "갈망 25 | 독점 −40 | 위험 −25 | 과시 10 | 지속 −20 | 지향 동성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
-    "관직": "품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.",
-    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.",
-    "관계": "같은 생활권 선배 당직과 인수인계로 묶인다.",
-    "야망": "검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.",
-    "공포": "검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.",
-    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다."
+    "생애": "2076-03-26에 태어났다. 2126년 개막 현재 구의수비대 검역 서기 직무를 맡아 검역 기록·당직 열쇠 인계 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 검역 기록·당직 열쇠 인계 창구가 한가서의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.",
+    "관직": "품계 수비대원. 직함은 구의수비대 검역 서기. 검역 기록·당직 열쇠 인계 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.",
+    "일화": "2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
+    "관계": "같은 생활·업무권역 선배 당직과 인수인계로 묶인다.",
+    "야망": "한가서는 검역 서기 직무에서 검역 기록·당직 열쇠 인계 기록을 공개 인계표와 맞물리고, 2076-03-26 생일 표식이 있는 개인 당직철의 확인 순서를 다음 교대에 남기려 한다.",
+    "공포": "구의수비대 검역 서기 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.",
+    "개입": "당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다. 한가서의 검역 기록·당직 열쇠 인계 원장을 대조해 다음 인계의 증거를 세울 수 있다."
   },
-  "biography": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 생업: 검역 기록·당직 열쇠 인계\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 검역 서기\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 구의수비대 검역 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 검역 서기. 자기 직위의 열쇠와 기록만 넘기고, 전쟁과 급수의 양군 승인 없이 한쪽 군령만으로 권한을 만들지 않는다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 구의수비대 검역 서기 자리의 서명이 장부에 올랐다.\n\n**관계.** 같은 생활권 선배 당직과 인수인계로 묶인다.\n\n**야망.** 검역 서기 자리에서 아관사의 장부를 끊기지 않게 잇는다.\n\n**공포.** 검역 서기 당직이 비면 아관사의 통행이 강국 볼모가 되는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −25 | 무력 40 | 물질 15 | 공동 15 | 원칙 −5 | 공개 −10 | 자격 0 | 분산 −20 | 변혁 −20\n- 욕망: 갈망 25 | 독점 −40 | 위험 −25 | 과시 10 | 지속 −20 | 지향 동성 | 결합 비독점\n:::",
+  "biography": "한가서는 검역 기록·당직 열쇠 인계 기록을 손에 익힌 구의수비대 인물이다. 겨울 당직의 빈칸보다 인계 장부 한 줄을 먼저 살핀다.\n\n- 생업: 검역 기록·당직 열쇠 인계\n- 소속: 구의수비대\n- 품계: 수비대원\n- 직함: 구의수비대 검역 서기\n**생애.** 2076-03-26에 태어났다. 2126년 개막 현재 구의수비대 검역 서기 직무를 맡아 검역 기록·당직 열쇠 인계 기록을 잇는다. 직무의 기존 선발·인계 경위는 현재 원장에 보존한다.\n- 구의1동의 검역 기록·당직 열쇠 인계 창구가 한가서의 업무 기준점이다. 이 업무 기준점은 거주지·정확한 시설 경계·작위·영지·점유권을 정하지 않는다.\n\n**관직.** 품계 수비대원. 직함은 구의수비대 검역 서기. 검역 기록·당직 열쇠 인계 기록과 당직 인계를 현재 직무 범위 안에서 다룬다.\n\n**일화.** 2125년 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n**관계.** 같은 생활·업무권역 선배 당직과 인수인계로 묶인다.\n\n**야망.** 한가서는 검역 서기 직무에서 검역 기록·당직 열쇠 인계 기록을 공개 인계표와 맞물리고, 2076-03-26 생일 표식이 있는 개인 당직철의 확인 순서를 다음 교대에 남기려 한다.\n\n**공포.** 구의수비대 검역 서기 당직의 기록 공백이 후원 문장이 붙은 단독 명령의 통행로가 되는 일을 두려워한다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다. 한가서의 검역 기록·당직 열쇠 인계 원장을 대조해 다음 인계의 증거를 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 30 | 개방 −25 | 무력 40 | 물질 15 | 공동 15 | 원칙 −5 | 공개 −10 | 자격 0 | 분산 −20 | 변혁 −20\n- 욕망: 갈망 25 | 독점 −40 | 위험 −25 | 과시 10 | 지속 −20 | 지향 동성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-14"
   ],

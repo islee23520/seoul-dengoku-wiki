@@ -444,52 +444,23 @@
             "name": "채무진",
             "url": "/people/person-0077",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "비상 발전 운전",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/214/items/1/ko",
-                  "quote": "생업: 비상 발전 운전"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/215/text/ko",
-                    "quote": "교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -497,78 +468,28 @@
               {
                 "name": "Electrician/TL?",
                 "ko": "전력 설비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/214/items/1/ko",
-                    "quote": "생업: 비상 발전 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/215/text/ko",
-                    "quote": "교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "쌍문",
-              "type": "초소 영지",
-              "station": "쌍문",
-              "state": "S03",
-              "settlement": {
-                "name": "쌍문 정착지",
-                "type": "정착지",
-                "description": "쌍문 일대 고정 거점"
-              },
-              "note": "S03 쌍문 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -592,52 +513,23 @@
             "name": "채무진",
             "url": "/people/person-0077",
             "state": "S03",
-            "method": "card-lexicon",
-            "role": {
-              "display": "비상 발전 운전",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-03.json",
-                  "pointer": "/content/214/items/1/ko",
-                  "quote": "생업: 비상 발전 운전"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/215/text/ko",
-                    "quote": "교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -645,78 +537,28 @@
               {
                 "name": "Electrician/TL?",
                 "ko": "전력 설비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/214/items/1/ko",
-                    "quote": "생업: 비상 발전 운전"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/215/text/ko",
-                    "quote": "교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-03.json",
-                    "pointer": "/content/216/text/ko",
-                    "quote": "흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 48,
-              "unspent": 27,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 태욱그룹 규모",
-              "faction_scale": {
-                "state": "S03",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "쌍문",
-              "type": "초소 영지",
-              "station": "쌍문",
-              "state": "S03",
-              "settlement": {
-                "name": "쌍문 정착지",
-                "type": "정착지",
-                "description": "쌍문 일대 고정 거점"
-              },
-              "note": "S03 쌍문 일대 관할 영지"
+              "unspent": 27
             }
           }
         }
@@ -737,18 +579,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "쌍문",
-    "type": "초소 영지",
-    "station": "쌍문",
-    "state": "S03",
-    "settlement": {
-      "name": "쌍문 정착지",
-      "type": "정착지",
-      "description": "쌍문 일대 고정 거점"
-    },
-    "note": "S03 쌍문 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -785,11 +615,12 @@
     "생업": "비상 발전 운전",
     "품계": "대리",
     "직함": "종자보존고 비상발전 운전장",
+    "업무": "가양1동. 채무진은 보존고 전압표를 문에 붙이고 최저선 아래로 떨어지면 반출 스위치를 빼 박진솔의 봉인 기록에 남긴다.",
     "가치관": "권위 −15 | 개방 30 | 무력 −25 | 물질 15 | 공동 0 | 원칙 50 | 공개 35 | 자격 30 | 분산 5 | 변혁 20",
     "욕망": "갈망 30 | 독점 10 | 위험 5 | 과시 30 | 지속 35 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 종자보존고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2126년 세대. 대합실 당직에서 자랐다. 채무진은 보존고 전압표를 문에 붙이고 최저선 아래로 떨어지면 반출 스위치를 빼 박진솔의 봉인 기록에 남긴다.\n- 업무: 가양1동. 채무진은 보존고 전압표를 문에 붙이고 최저선 아래로 떨어지면 반출 스위치를 빼 박진솔의 봉인 기록에 남긴다.",
     "관직": "품계 대리. 직함은 종자보존고 비상발전 운전장. 교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다.",
     "일화": "흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다.",
     "관계": "박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약이고, 정하린의 잠금이 내려가면 스위치를 뽑는다. 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.",
@@ -797,7 +628,7 @@
     "공포": "연료가 마른 밤에 전압이 죽어 보존고 문이 약탈 손잡이로만 남는 것.",
     "개입": "연료 눈금이 흔들린 밤에 스위치를 뽑거나, 담에 닿은 입찰 전령보다 먼저 전압표를 문에 남길 수 있다."
   },
-  "biography": "연료 눈금의 흔들림을 빈칸보다 먼저 고치고, 씨앗을 군량 담보로 부르는 목소리를 발전기 곁에서 끊는다. 전압 일지의 숫자를 깎아 달라는 쪽지를 태운다.\n\n- 소속: 태욱그룹\n- 생업: 비상 발전 운전\n- 품계: 대리\n- 직함: 종자보존고 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 종자보존고 비상발전 운전장 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 대리. 직함은 종자보존고 비상발전 운전장. 교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다.\n\n**일화.** 흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다.\n\n**관계.** 박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약이고, 정하린의 잠금이 내려가면 스위치를 뽑는다. 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.\n\n**야망.** 전압표를 보존고 문에 공개해, 연료를 끊는 협박이 한 해 씨앗을 흔들지 못하게 한다.\n\n**공포.** 연료가 마른 밤에 전압이 죽어 보존고 문이 약탈 손잡이로만 남는 것.\n\n**개입.** 연료 눈금이 흔들린 밤에 스위치를 뽑거나, 담에 닿은 입찰 전령보다 먼저 전압표를 문에 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −25 | 물질 15 | 공동 0 | 원칙 50 | 공개 35 | 자격 30 | 분산 5 | 변혁 20\n- 욕망: 갈망 30 | 독점 10 | 위험 5 | 과시 30 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "연료 눈금의 흔들림을 빈칸보다 먼저 고치고, 씨앗을 군량 담보로 부르는 목소리를 발전기 곁에서 끊는다. 전압 일지의 숫자를 깎아 달라는 쪽지를 태운다.\n\n- 소속: 태욱그룹\n- 생업: 비상 발전 운전\n- 품계: 대리\n- 직함: 종자보존고 비상발전 운전장\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 채무진은 보존고 전압표를 문에 붙이고 최저선 아래로 떨어지면 반출 스위치를 빼 박진솔의 봉인 기록에 남긴다.\n- 업무: 가양1동. 채무진은 보존고 전압표를 문에 붙이고 최저선 아래로 떨어지면 반출 스위치를 빼 박진솔의 봉인 기록에 남긴다.\n\n**관직.** 품계 대리. 직함은 종자보존고 비상발전 운전장. 교대마다 연료 냄새와 노크 소리를 일지에 남기고, 전압이 최저선 아래면 반출 스위치를 물리적으로 빼 둔다.\n\n**일화.** 흉작 소문만으로 가락 입찰 전령이 보존고 담에 닿자 채무진은 비상 발전을 냉온고에만 묶고 전압표를 문에 붙였다.\n\n**관계.** 박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약이고, 정하린의 잠금이 내려가면 스위치를 뽑는다. 남윤경이 씨앗 시세를 부르면 연료 문을 잠근다.\n\n**야망.** 전압표를 보존고 문에 공개해, 연료를 끊는 협박이 한 해 씨앗을 흔들지 못하게 한다.\n\n**공포.** 연료가 마른 밤에 전압이 죽어 보존고 문이 약탈 손잡이로만 남는 것.\n\n**개입.** 연료 눈금이 흔들린 밤에 스위치를 뽑거나, 담에 닿은 입찰 전령보다 먼저 전압표를 문에 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −15 | 개방 30 | 무력 −25 | 물질 15 | 공동 0 | 원칙 50 | 공개 35 | 자격 30 | 분산 5 | 변혁 20\n- 욕망: 갈망 30 | 독점 10 | 위험 5 | 과시 30 | 지속 35 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-03"
   ],

@@ -1,32 +1,45 @@
 // opening-feudal-allocation.v1 배분 검증 계약 테스트 — 작은 고정 fixture만 사용한다.
 // 입력 점유·규모 상태는 전부 fixture가 넘겨주는 값이며 모듈이 개수를 알고 있지 않음을 함께 확인한다.
 import assert from 'node:assert/strict'
-import { readFileSync, readdirSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 import { test } from 'vitest'
-import { projectOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { projectHistoricalOpeningFeudalAllocation as projectOpeningFeudalAllocation,
+  projectOpeningFeudalAllocation as projectCurrentOpeningFeudalAllocation } from './opening-feudal-allocation.mjs'
+import { loadApprovedRightsHistory, projectCatalogCurrentHoldings, projectCatalogOutsideOccupation } from './generate-catalog.mjs'
+import { buildAdminTerritorialScale } from './admin-territorial-scale.mjs'
 
-test('canonical allocation reproduces every published holding and person title', () => {
-  const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
-  const people = readdirSync(new URL('../public/person-details/', import.meta.url)).filter(file => file.endsWith('.json')).map(file => json('public/person-details/' + file))
-  const control = json('public/outside-control-2126.json')
-  const projected = projectOpeningFeudalAllocation({
-    allocation: json('lore/relations/opening-feudal-allocation.json'),
-    existing: json('lore/relations/personal-holdings.json'),
-    people: people.map(person => ({ id: person.characterId, name: person.name, state: person.state })),
-    seoul: json('public/opening-territories.json'),
-    outside: { ...json('public/outside-admin-units.json'), islands: control.assignments.filter(unit => unit.components).map(unit => ({ unitId: unit.unitId, components: unit.components })) },
-    control, affiliation: json('lore/factions/Sixteen-States.json').data.currentAffiliation,
-    scale: json('public/admin-territorial-scale.json'),
-  })
-  assert.deepEqual(projected, json('public/confirmed-person-holdings.json'))
-  for (const person of people) {
-    assert.deepEqual(person.confirmedHoldings, projected.holdings.filter(holding => holding.holderPersonId === person.characterId), person.characterId)
-    assert.deepEqual((person.openingTitles ?? []).map(title => title.id), projected.titles.filter(title => title.holderPersonId === person.characterId).map(title => title.id), person.characterId)
-  }
+const activeScale = () => buildAdminTerritorialScale({
+  geographyBytes: readFileSync(new URL('../lore/regions/seoul-electoral-titles.json', import.meta.url)),
+  territorialScale: JSON.parse(readFileSync(new URL('../lore/offices/Offices-and-Ranks.json', import.meta.url), 'utf8')).data.territorialScale,
 })
 
-test('owner-directed Chungcheong duchy belongs to K998 across all three cities', () => {
-  const allocation = JSON.parse(readFileSync(new URL('../lore/relations/opening-feudal-allocation.json', import.meta.url), 'utf8'))
+test('canonical allocation reproduces every published holding and person title', async () => {
+  const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+  const seoul = json('public/opening-territories.json')
+  const geometry = (await loadApprovedRightsHistory()).historical.outside
+  const issued = json('lore/name-pools/gurps-cast.json').people
+  const control = await projectCatalogOutsideOccupation(json('lore/regions/outside-control-2126.json'), geometry, json('lore/regions/outside-island-occupation.json'))
+  const projected = await projectCatalogCurrentHoldings({
+    allocation: json('lore/relations/opening-feudal-allocation.json'),
+    existing: json('lore/relations/personal-holdings.json'),
+    people: issued, seoul, outside: { ...geometry, islands: [] },
+    control, affiliation: json('lore/factions/Sixteen-States.json').data.currentAffiliation,
+    geographicScale: activeScale(),
+  }, { issuedById: new Map(issued.map(person => [person.id, person])), territoryStates: seoul.states,
+    openingTerritories: seoul, projectedLandmarks: seoul.landmarks, stationInteriors: json('lore/regions/station-interiors.json'),
+    seoulGraph: json('snapshots/build-inputs/SeoulWorldGraph.json'), outsideGeometry: geometry,
+    repoRoot: new URL('../', import.meta.url).pathname, geography: json('lore/regions/seoul-electoral-titles.json') })
+  assert.equal(projected.schema, 'confirmed-person-holdings.v1')
+  assert.equal(projected.holdings.length, json('lore/relations/personal-holdings.json').holdings.length + json('lore/relations/opening-feudal-allocation.json').grants.length)
+  assert.ok(projected.holdings.every(holding => holding.kind !== 'direct-property' || holding.geographicTitleId === undefined))
+  assert.ok(projected.titles.filter(title => title.kind === 'nonterritorial-political-title').every(title => title.geographicTitleId === undefined))
+  assert.equal(projected.holdings.filter(row => row.kind === 'superior-jurisdiction').length, 5)
+  assert.equal(projected.titles.some(row => row.kind === 'nonterritorial-political-title' && row.holderPersonId === 'K1008'), true)
+})
+
+test('authenticated historical Chungcheong duchy retains the original owner-directed three-city contract', async () => {
+  const { historical } = await loadApprovedRightsHistory()
+  const allocation = historical.allocation
   const title = allocation.titles.find(row => row.id === 'title:duchy-chungcheong-k998')
   assert.equal(title.holderPersonId, 'K998')
   assert.equal(title.rank, 'duchy')
@@ -47,7 +60,74 @@ test('owner-directed Chungcheong duchy belongs to K998 across all three cities',
   assert.equal(new Set(grants.flatMap(grant => grant.adminRefs.map(ref => ref.id))).size, 72)
 })
 
+test('sealed historical scale bytes reject tampering at the caller hash boundary', async () => {
+  const scale = readFileSync(new URL('./historical-inputs/admin-territorial-scale.json', import.meta.url))
+  const bytes = {
+    approval: readFileSync(new URL('./approved-seoul-rights-transition.json', import.meta.url)),
+    existing: readFileSync(new URL('./historical-inputs/personal-holdings.json', import.meta.url)),
+    allocation: readFileSync(new URL('./historical-inputs/opening-feudal-allocation.json', import.meta.url)),
+    control: readFileSync(new URL('./historical-inputs/outside-control-2126.json', import.meta.url)),
+    islands: readFileSync(new URL('./historical-inputs/outside-island-occupation.json', import.meta.url)),
+    geometry: readFileSync(new URL('./historical-inputs/outside-admin-units.json', import.meta.url)),
+    scale: Buffer.concat([scale, Buffer.from(' ')]),
+  }
+  await assert.rejects(loadApprovedRightsHistory(bytes), /E_CATALOG_RIGHTS_HASH:scale/)
+})
+
+test('current accepts v2 and rejects v1 or legacy scale without inferring property grants', () => {
+  const args = fixture()
+  const historical = projectOpeningFeudalAllocation(args)
+  const { scale: historicalScale, ...current } = args
+  current.geographicScale = activeScale()
+  assert.deepEqual(projectCurrentOpeningFeudalAllocation(current), historical)
+  assert.throws(() => projectCurrentOpeningFeudalAllocation({ ...current, geographicScale: historicalScale }), /E_GEOGRAPHIC_SCALE_SCHEMA/)
+  assert.throws(() => projectCurrentOpeningFeudalAllocation({ ...current, scale: historicalScale }), /E_GEOGRAPHIC_SCALE_SCHEMA/)
+  assert.throws(() => projectCurrentOpeningFeudalAllocation({ ...current, geographicScale: { ...current.geographicScale, schema: 'admin-territorial-scale.v1' } }), /E_GEOGRAPHIC_SCALE_SCHEMA/)
+  assert.ok(historical.holdings.every(row => row.geographicTitleId === undefined && row.slotId === undefined))
+})
+
 const heldAuthority = { kind: 'state', stateId: 'S01', name: '한강왕국' }
+test('authenticated historical rights retain exact Daejeon neutrality and island component grants', async () => {
+  const json = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'))
+  const { historical } = await loadApprovedRightsHistory()
+  const geometry = historical.outside
+  const projected = projectOpeningFeudalAllocation({ ...historical,
+    people: json('lore/name-pools/gurps-cast.json').people, seoul: json('public/opening-territories.json'),
+    affiliation: json('lore/factions/Sixteen-States.json').data.currentAffiliation,
+  })
+  const control = historical.control
+  assert.equal(control.assignments.length, geometry.units.length)
+  assert.equal(new Set(control.assignments.map(row => row.unitId)).size, geometry.units.length)
+  const daejeonUnits = geometry.units.filter(unit => unit.province === '대전광역시')
+  assert.equal(daejeonUnits.length, 82)
+  for (const unit of daejeonUnits) {
+    const row = control.assignments.find(row => row.unitId === unit.id)
+    assert.equal(row.authority.kind, 'neutral')
+    assert.equal(row.authority.name, '대전')
+    assert.ok(['K1008', 'K035', 'K038', 'K039'].includes(row.holderPersonId))
+  }
+  const daejeonRefs = new Set(projected.holdings.filter(row => row.stateId === 'polity:daejeon').flatMap(row => row.adminRefs.map(ref => ref.id)))
+  assert.equal(daejeonRefs.size, daejeonUnits.length)
+  for (const unit of daejeonUnits) assert.ok(daejeonRefs.has(unit.id))
+  for (const row of control.assignments) {
+    if (row.authority?.kind === 'neutral') assert.equal(geometry.units.find(unit => unit.id === row.unitId).province, '대전광역시')
+    if (row.directLiegePersonId) assert.equal(row.directLiegePersonId, 'K1008')
+  }
+  const islands = control.assignments.filter(row => row.components)
+  assert.equal(islands.length, 11)
+  const personalRefs = new Set(projected.holdings.flatMap(row => row.adminRefs.map(ref => ref.id)))
+  for (const unit of islands) {
+    assert.equal(personalRefs.has(unit.unitId), false)
+    for (const component of unit.components) {
+      const grants = projected.holdings.filter(row => row.componentRefs?.some(ref => ref.unitId === unit.unitId && ref.componentIndex === component.componentIndex))
+      assert.equal(grants.length, 1)
+      assert.ok(['K151', 'K176', 'K355'].includes(grants[0].holderPersonId))
+    }
+  }
+  assert.deepEqual(projected.polities.map(polity => [polity.id, polity.sovereignPersonId, polity.formalTitle, polity.formalTitleRank, polity.office, polity.territorialScale]),
+    [['polity:daejeon', 'K1008', '대전선', '왕격', '대전 군주', 'kingdom']])
+})
+
 const hegemons = { hegemons: [{ kind: 'state', name: '한강왕국', stateId: 'S01', memberStateIds: ['S01', 'S02'] }] }
 const people = [
   { id: 'K001', name: '왕 인물', state: 'S01' },
@@ -320,4 +400,143 @@ test('scale status stays authoritative in the passed input and HOLD rows forbid 
   confirmed.allocation.grants[1].territorialScale = 'duchy'
   const result = projectOpeningFeudalAllocation(confirmed)
   assert.equal(result.holdings.find(row => row.id === 'holding:fixture-royal').territorialScale, 'duchy')
+})
+
+const nonowningFixture = () => {
+  const args = fixture()
+  const royalId = 'title:kingdom-daejeon'
+  const stateId = 'polity:daejeon'
+  const capabilityPackageId = 'proposal:registry-notice-and-objection-v1'
+  const powers = ['receive-holding-change-notice', 'lodge-nonbinding-registry-objection']
+  const rows = [
+    ['dong', 'K1008', '11680', '강남구', ['갑', '을', '병']],
+    ['yuseong', 'K1008', '11650', '서초구', ['갑', '을']],
+    ['jung', 'K035', '11215', '광진구', ['갑', '을']],
+    ['seo', 'K039', '11710', '송파구', ['갑', '을', '병']],
+    ['daedeok', 'K038', '11740', '강동구', ['갑', '을']],
+  ]
+  args.people.push(...['K1008', 'K035', 'K039', 'K038'].map(id => ({ id, name: id, state: stateId })))
+  args.nonowningRights = {
+    schema: 'opening-nonowning-rights.v1', approvalRef: 'owner:fixture:approved-nonowning',
+    proposalSha256: '1bc989e8a7cbf39723d8bd4dd5c83e54479e617e8161892fea62116bd72f0b7e',
+    capabilityPackageId, politicalTitle: { id: royalId, holderPersonId: 'K1008', stateId },
+    rights: rows.map(([suffix, holderPersonId, guRef, guName, constituencies]) => ({
+      holdingId: 'holding:daejeon-' + suffix,
+      titleId: 'proposal:superior-jurisdiction:seoul:daejeon-' + suffix,
+      holderPersonId, stateId, personalLiegePersonId: holderPersonId === 'K1008' ? null : 'K1008',
+      politicalParentTitleId: royalId,
+      geographicScope: {
+        duchyTitleId: 'geography:duchy:' + guRef, guRef,
+        countyTitleIds: constituencies.map(part => 'geography:county:seoul-constituency:' + guName + part + '선거구'),
+        geographicKingdomId: 'proposal:kingdom:seoul:06', geographicEmpireId: 'geography:empire:seoul',
+      },
+    })),
+  }
+  args.allocation.titles.push({
+    id: royalId, kind: 'nonterritorial-political-title', name: '대전선', rank: 'kingdom',
+    holderPersonId: 'K1008', stateId, basis: 'fixture approved independent political identity',
+    politicalParentTitleId: null, personalLiegePersonId: null, directOwnership: false, jurisdictionRefs: [],
+  })
+  for (const row of args.nonowningRights.rights) {
+    args.existing.holdings.push({
+      id: row.holdingId, kind: 'superior-jurisdiction', name: { ko: row.holdingId },
+      holderPersonId: row.holderPersonId, stateId, directLiegePersonId: row.personalLiegePersonId,
+      liegeRelationshipKind: 'preserved-personal-service', titleId: row.titleId,
+      geographicScope: structuredClone(row.geographicScope), territorialScale: 'duchy', formalTitleRank: null,
+      adminRefs: [], geometrySource: null, directOwnership: false, capabilityPackageId, powers: [...powers],
+    })
+    args.allocation.titles.push({
+      id: row.titleId, kind: 'superior-jurisdiction', name: row.titleId, rank: 'duchy',
+      holderPersonId: row.holderPersonId, stateId, basis: 'fixture approved registry jurisdiction',
+      directOwnership: false, geographicTitleId: row.geographicScope.duchyTitleId,
+      geographicParentTitleId: row.geographicScope.geographicKingdomId,
+      politicalParentTitleId: royalId, personalLiegePersonId: row.personalLiegePersonId,
+    })
+    args.allocation.existingTitleBindings.push({ holdingId: row.holdingId, titleId: row.titleId })
+  }
+  return args
+}
+
+const nonowningThrows = (mutate, message) => {
+  const args = nonowningFixture()
+  mutate(args)
+  assert.throws(() => projectOpeningFeudalAllocation(args), { message })
+}
+
+test('approved five nonowning jurisdictions preserve direct ownership and independent royal identity', () => {
+  const args = nonowningFixture()
+  const before = structuredClone(args)
+  const direct = projectOpeningFeudalAllocation(fixture())
+  const result = projectOpeningFeudalAllocation(args)
+  assert.deepEqual(args, before)
+  assert.deepEqual(result.holdings.filter(row => row.kind !== 'superior-jurisdiction'), direct.holdings)
+  assert.deepEqual(result.titles.filter(row => row.kind === undefined), direct.titles)
+  assert.equal(result.summary.coveredEntitlements, direct.summary.coveredEntitlements)
+  assert.equal(result.summary.newGrants, direct.summary.newGrants)
+  assert.deepEqual(result.polities, direct.polities)
+  assert.deepEqual(result.retinue, direct.retinue)
+  assert.deepEqual(result.holdings.filter(row => row.kind === 'superior-jurisdiction'), args.existing.holdings.slice(1))
+  const royal = result.titles.find(row => row.kind === 'nonterritorial-political-title')
+  assert.equal(royal.politicalParentTitleId, null)
+  assert.deepEqual(royal.jurisdictionRefs, [])
+  assert.equal(royal.geographicTitleId, undefined)
+  const rights = result.titles.filter(row => row.kind === 'superior-jurisdiction')
+  assert.equal(rights.length, 5)
+  assert.ok(rights.every(row => row.geographicParentTitleId !== row.politicalParentTitleId))
+  assert.ok(rights.every(row => row.politicalParentTitleId === royal.id))
+})
+
+test('nonowning approval fixes holders, existing personal service, scope and exactly two powers', () => {
+  const id = 'holding:daejeon-dong'
+  nonowningThrows(args => { delete args.nonowningRights }, 'E_NONOWNING_APPROVAL:title:kingdom-daejeon')
+  nonowningThrows(args => { args.existing.holdings[1].holderPersonId = 'K035' }, 'E_NONOWNING_HOLDER:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].directLiegePersonId = 'K001' }, 'E_NONOWNING_LIEGE:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].geographicScope.guRef = '30110' }, 'E_NONOWNING_GEOGRAPHY:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].geographicScope.countyTitleIds.push('geography:county:seoul-constituency:종로구선거구') }, 'E_NONOWNING_GEOGRAPHY:' + id)
+  nonowningThrows(args => { args.nonowningRights.rights[0].geographicScope.guRef = '30110' }, 'E_NONOWNING_GEOGRAPHY:' + id)
+  for (const power of ['tax-or-rent', 'judicial-authority', 'military-command-or-levy', 'station-or-facility-occupation', 'personal-vassalage', 'veto-or-compulsory-disclosure']) {
+    nonowningThrows(args => { args.existing.holdings[1].powers.push(power) }, 'E_NONOWNING_POWERS:' + id)
+  }
+  nonowningThrows(args => { args.existing.holdings[1].powers.pop() }, 'E_NONOWNING_POWERS:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].powers[1] = args.existing.holdings[1].powers[0] }, 'E_NONOWNING_POWERS:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].capabilityPackageId = 'other' }, 'E_NONOWNING_POWERS:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].taxAuthority = true }, 'E_NONOWNING_FIELD:' + id)
+})
+
+test('nonowning records cannot aggregate property or satisfy missing direct coverage', () => {
+  const id = 'holding:daejeon-dong'
+  nonowningThrows(args => { args.existing.holdings[1].adminRefs = args.allocation.grants[0].adminRefs }, 'E_NONOWNING_OWNERSHIP:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].componentRefs = args.allocation.grants[2].componentRefs }, 'E_NONOWNING_OWNERSHIP:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].stationRef = { stationId: 'sinmun' } }, 'E_NONOWNING_OWNERSHIP:' + id)
+  nonowningThrows(args => { args.existing.holdings[1].directOwnership = true }, 'E_NONOWNING_OWNERSHIP:' + id)
+  nonowningThrows(args => { args.allocation.grants[0].adminRefs = [] }, 'E_COVERAGE_MISSING:region:1111051500')
+  nonowningThrows(args => { args.existing.holdings.push(structuredClone(args.existing.holdings[1])) }, 'E_HOLDING_DUPLICATE:' + id)
+  nonowningThrows(args => { args.allocation.grants.push(args.existing.holdings.pop()) }, 'E_NONOWNING_GRANT:holding:daejeon-daedeok')
+})
+
+test('geographic and political parents never create ownership or new vassalage', () => {
+  const id = 'proposal:superior-jurisdiction:seoul:daejeon-dong'
+  nonowningThrows(args => { args.allocation.titles[5].politicalParentTitleId = 'proposal:kingdom:seoul:06' }, 'E_NONOWNING_PARENT:' + id)
+  nonowningThrows(args => { args.allocation.titles[5].geographicParentTitleId = 'title:kingdom-daejeon' }, 'E_NONOWNING_GEOGRAPHY:' + id)
+  nonowningThrows(args => { args.allocation.titles[5].parentTitleId = 'title:kingdom-han' }, 'E_NONOWNING_PARENT:' + id)
+  nonowningThrows(args => { args.allocation.titles[5].personalLiegePersonId = 'K001' }, 'E_NONOWNING_LIEGE:' + id)
+  nonowningThrows(args => { args.allocation.titles[5].directLiegePersonId = 'K001' }, 'E_NONOWNING_FIELD:' + id)
+  nonowningThrows(args => { args.allocation.titles[4].politicalParentTitleId = 'title:kingdom-han' }, 'E_NONOWNING_PARENT:title:kingdom-daejeon')
+  nonowningThrows(args => { args.allocation.titles[4].jurisdictionRefs = ['region:1111051500'] }, 'E_NONOWNING_OWNERSHIP:title:kingdom-daejeon')
+  nonowningThrows(args => { args.allocation.titles[1].parentTitleId = 'title:kingdom-daejeon' }, 'E_TITLE_PARENT_KIND:title:duchy-jemulpo')
+  nonowningThrows(args => { args.allocation.grants[0].titleId = id }, 'E_GRANT_TITLE_KIND:holding:fixture-jemulpo')
+  nonowningThrows(args => { args.allocation.existingTitleBindings[0].titleId = id }, 'E_BINDING_KIND:holding:fixture-ex1')
+  nonowningThrows(args => { args.allocation.titles.splice(4, 1) }, 'E_NONOWNING_PARENT:' + id)
+})
+
+test('legacy and explicit direct-property fixtures keep the same strict checks', () => {
+  const args = fixture()
+  for (const row of [...args.existing.holdings, ...args.allocation.titles, ...args.allocation.grants]) row.kind = 'direct-property'
+  assert.equal(projectOpeningFeudalAllocation(args).summary.coveredEntitlements, 5)
+  args.allocation.grants[0].directLiegePersonId = null
+  assert.throws(() => projectOpeningFeudalAllocation(args), { message: 'E_GRANT_LIEGE:holding:fixture-jemulpo' })
+  nonowningThrows(args => { args.allocation.grants[0].adminRefs = args.existing.holdings[0].adminRefs }, 'E_GRANT_ADMINREF_OVERLAP:holding:fixture-jemulpo|region:1111053000')
+  nonowningThrows(args => { args.allocation.grants[2].directLiegePersonId = 'K1008' }, 'E_GRANT_LIEGE:holding:fixture-ganghwa')
+  nonowningThrows(args => { args.allocation.titles[1].kind = 'unknown' }, 'E_RIGHT_KIND:title:duchy-jemulpo')
+  nonowningThrows(args => { delete args.existing.holdings[1].kind }, 'E_RIGHT_KIND:holding:daejeon-dong')
 })

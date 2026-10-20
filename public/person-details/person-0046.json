@@ -454,52 +454,23 @@
             "name": "표예담",
             "url": "/people/person-0046",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유치선 배차",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/60/items/1/ko",
-                  "quote": "생업: 유치선 배차"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/61/text/ko",
-                    "quote": "정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -507,105 +478,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/60/items/1/ko",
-                    "quote": "생업: 유치선 배차"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/61/text/ko",
-                    "quote": "정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/60/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "부평",
-              "type": "초소 영지",
-              "station": "부평",
-              "state": "S02",
-              "settlement": {
-                "name": "부평 정착지",
-                "type": "정착지",
-                "description": "부평 일대 고정 거점"
-              },
-              "note": "S02 부평 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -629,52 +535,23 @@
             "name": "표예담",
             "url": "/people/person-0046",
             "state": "S02",
-            "method": "card-lexicon",
-            "role": {
-              "display": "유치선 배차",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-02.json",
-                  "pointer": "/content/60/items/1/ko",
-                  "quote": "생업: 유치선 배차"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/61/text/ko",
-                    "quote": "정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -682,223 +559,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/60/items/1/ko",
-                    "quote": "생업: 유치선 배차"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/61/text/ko",
-                    "quote": "정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Mechanic/TL?",
                 "ko": "기계 정비",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/62/text/ko",
-                    "quote": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다."
-                  }
-                ],
-                "cp": 4,
-                "level": 13
+                "level": 13,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-02.json",
-                    "pointer": "/content/60/items/3/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 규격맹 규모",
-              "faction_scale": {
-                "state": "S02",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "부평",
-              "type": "초소 영지",
-              "station": "부평",
-              "state": "S02",
-              "settlement": {
-                "name": "부평 정착지",
-                "type": "정착지",
-                "description": "부평 일대 고정 거점"
-              },
-              "note": "S02 부평 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-44210-S02",
-      "name": {
-        "ko": "서산시 공작령 직영지"
-      },
-      "holderPersonId": "K046",
-      "directLiegePersonId": "K029",
-      "stateId": "S02",
-      "adminRefs": [
-        {
-          "id": "4421025000",
-          "name": "충청남도 서산시 대산읍"
-        },
-        {
-          "id": "4421031000",
-          "name": "충청남도 서산시 인지면"
-        },
-        {
-          "id": "4421032000",
-          "name": "충청남도 서산시 부석면"
-        },
-        {
-          "id": "4421033000",
-          "name": "충청남도 서산시 팔봉면"
-        },
-        {
-          "id": "4421034000",
-          "name": "충청남도 서산시 지곡면"
-        },
-        {
-          "id": "4421036000",
-          "name": "충청남도 서산시 성연면"
-        },
-        {
-          "id": "4421037000",
-          "name": "충청남도 서산시 음암면"
-        },
-        {
-          "id": "4421038000",
-          "name": "충청남도 서산시 운산면"
-        },
-        {
-          "id": "4421039000",
-          "name": "충청남도 서산시 해미면"
-        },
-        {
-          "id": "4421040000",
-          "name": "충청남도 서산시 고북면"
-        },
-        {
-          "id": "4421051000",
-          "name": "충청남도 서산시 부춘동"
-        },
-        {
-          "id": "4421052500",
-          "name": "충청남도 서산시 동문1동"
-        },
-        {
-          "id": "4421053500",
-          "name": "충청남도 서산시 동문2동"
-        },
-        {
-          "id": "4421054000",
-          "name": "충청남도 서산시 수석동"
-        },
-        {
-          "id": "4421055000",
-          "name": "충청남도 서산시 석남동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-44210-S02",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-44210-S02",
-      "name": "서산시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K046",
-      "basis": "개막 행정 규모 그룹 44210(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S02",
-      "parentTitleId": "title:kingdom-s02",
-      "jurisdictionRefs": [
-        "4421025000",
-        "4421031000",
-        "4421032000",
-        "4421033000",
-        "4421034000",
-        "4421036000",
-        "4421037000",
-        "4421038000",
-        "4421039000",
-        "4421040000",
-        "4421051000",
-        "4421052500",
-        "4421053500",
-        "4421054000",
-        "4421055000"
+      "politicalParentTitleId": "title:kingdom-s02",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-44210-S02",
+          "directLiegePersonId": "K029"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s02",
-        "name": "규격맹 왕국",
-        "holderPersonId": "K029"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -912,18 +630,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "부평",
-    "type": "초소 영지",
-    "station": "부평",
-    "state": "S02",
-    "settlement": {
-      "name": "부평 정착지",
-      "type": "정착지",
-      "description": "부평 일대 고정 거점"
-    },
-    "note": "S02 부평 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -960,11 +666,12 @@
     "생업": "유치선 배차",
     "품계": "감사",
     "직함": "천왕기지 유치배차 실무장",
+    "업무 위치": "오류2동. 표예담은 오류2동 천왕기지 유치선 배차판에 허다온의 차륜 출고와 결빙 선로 점검 시각을 함께 적는다. 정시우의 계측 도장이 빠진 상자는 출고 직전에 되돌리고 박태겸의 중계 창구에 수정된 배차표를 보낸다.",
     "가치관": "권위 −35 | 개방 15 | 무력 −5 | 물질 35 | 공동 35 | 원칙 15 | 공개 40 | 자격 50 | 분산 30 | 변혁 25",
     "욕망": "갈망 0 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 35 | 지향 무성향 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.",
+    "생애": "2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 표예담은 오류2동 천왕기지 유치선 배차판에 허다온의 차륜 출고와 결빙 선로 점검 시각을 함께 적는다. 정시우의 계측 도장이 빠진 상자는 출고 직전에 되돌리고 박태겸의 중계 창구에 수정된 배차표를 보낸다.",
     "관직": "품계 감사. 직함은 천왕기지 유치배차 실무장. 정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.",
     "일화": "2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 유치배차 실무장 자리의 서명이 장부에 올랐다.",
     "관계": "허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.",
@@ -972,7 +679,7 @@
     "공포": "용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.",
     "개입": "대체 차륜을 구해 순환 배차를 살리거나, 봉쇄 유치선의 밀반출 장부를 폭로할 수 있다."
   },
-  "biography": "선로 진동으로 열차의 거짓을 읽고, 수리 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다. 과묵하고 출고 시각을 어기는 조합을 오래 기억한다.\n\n- 소속: 규격맹\n- 생업: 유치선 배차\n- 품계: 감사\n- 직함: 천왕기지 유치배차 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n\n**관직.** 품계 감사. 직함은 천왕기지 유치배차 실무장. 정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 유치배차 실무장 자리의 서명이 장부에 올랐다.\n\n**관계.** 허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.\n\n**야망.** 천왕 유치선을 규격 도장 화물만 오가는 순환 배차망으로 만들어 규격맹의 동맥이 된다.\n\n**공포.** 용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.\n\n**개입.** 대체 차륜을 구해 순환 배차를 살리거나, 봉쇄 유치선의 밀반출 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −5 | 물질 35 | 공동 35 | 원칙 15 | 공개 40 | 자격 50 | 분산 30 | 변혁 25\n- 욕망: 갈망 0 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 35 | 지향 무성향 | 결합 계약동거\n:::",
+  "biography": "선로 진동으로 열차의 거짓을 읽고, 수리 물자를 군수 화차로 위장하는 명령을 모욕으로 듣는다. 과묵하고 출고 시각을 어기는 조합을 오래 기억한다.\n\n- 소속: 규격맹\n- 생업: 유치선 배차\n- 품계: 감사\n- 직함: 천왕기지 유치배차 실무장\n**생애.** 2126년 세대. 신정 차량기지에서 자랐다. 천왕기지 유치배차 실무장 자리는 탈선 직전 결함 보고로 열렸다.\n- 업무 위치: 오류2동. 표예담은 오류2동 천왕기지 유치선 배차판에 허다온의 차륜 출고와 결빙 선로 점검 시각을 함께 적는다. 정시우의 계측 도장이 빠진 상자는 출고 직전에 되돌리고 박태겸의 중계 창구에 수정된 배차표를 보낸다.\n\n**관직.** 품계 감사. 직함은 천왕기지 유치배차 실무장. 정비·공병·배급 순서를 매일 공개하고, 도장 없는 군수 개조는 유치선 바깥으로 밀어낸다.\n\n**일화.** 2125년 불량 부품 상자를 출고 직전에 되돌려 보냈다. 이 일로 천왕기지 유치배차 실무장 자리의 서명이 장부에 올랐다.\n\n**관계.** 허다온의 차륜 출고를 배차판에서 보증하고, 정시우의 계측 도장에 배차를 묶으며, 박태겸의 중계 창구와 외곽 열차를 나눈다.\n\n**야망.** 천왕 유치선을 규격 도장 화물만 오가는 순환 배차망으로 만들어 규격맹의 동맥이 된다.\n\n**공포.** 용산 중계가 막히면 천왕 유치선이 가득 차 공병열차와 급수열차가 동시에 갇히는 것.\n\n**개입.** 대체 차륜을 구해 순환 배차를 살리거나, 봉쇄 유치선의 밀반출 장부를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −35 | 개방 15 | 무력 −5 | 물질 35 | 공동 35 | 원칙 15 | 공개 40 | 자격 50 | 분산 30 | 변혁 25\n- 욕망: 갈망 0 | 독점 −10 | 위험 −25 | 과시 −25 | 지속 35 | 지향 무성향 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-02"
   ],

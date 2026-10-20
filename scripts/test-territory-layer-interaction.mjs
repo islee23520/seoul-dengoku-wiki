@@ -6,464 +6,226 @@ import { createRoot } from 'react-dom/client'
 import { test, vi } from 'vitest'
 import { MemoryRouter } from 'react-router-dom'
 import OpeningTerritoryMap from '../src/components/OpeningTerritoryMap.tsx'
+import { projectGeographicTitles } from '../src/components/geographicTitleMap.mjs'
+import { geographicTitleColor } from '../src/components/geographicTitleMap.mjs'
 
-vi.mock('three', async (importOriginal) => {
-  const actual = await importOriginal()
-  return { ...actual, WebGLRenderer: class {
-    domElement = document.createElement('canvas')
-    setPixelRatio() {} setSize() {} render() {} dispose() {}
-  } }
-})
-
-test.each(['island partial occupation', 'three hegemon surface', 'label fallback', 'switch layers', 'keep active layer', 'choose ShinCHON', 'choose ShinCHON underground', 'select facility by stable station ID', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'])('selected segment interaction: %s', async (scenario) => {
-  const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
-  const edges = data.edges.filter((edge) => ['segment:신촌~이대', 'segment:동묘앞~신설동'].includes(edge.id))
-  const duplicateStation = { ...data.stations.find((station) => station.id === '신촌'), id: 'fixture-overlap', name: '겹침 검증역', memberIds: ['fixture-overlap'] }
-  const overlapEdge = { ...edges.find((edge) => edge.id === 'segment:신촌~이대'), id: 'segment:fixture-overlap~이대', a: 'fixture-overlap', b: '이대' }
-  edges.push(overlapEdge)
-  const stationIds = new Set(edges.flatMap((edge) => [edge.a, edge.b]))
-  stationIds.add('Yeongdeungpo')
-  const surface = ['island partial occupation', 'three hegemon surface', 'overlay-only zoom', 'pointer drag', 'pointer cancel', 'touch pinch'].includes(scenario)
-  const mapData = surface ? data : { ...data, hegemons: scenario === 'label fallback' ? data.hegemons : [], edges, stations: [...data.stations.filter((station) => stationIds.has(station.id)), duplicateStation], states: [], regions: [], landmarks: [], vassals: [], majorStationIds: [] }
-  const terrain = { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [data.projection.minEast, data.projection.minNorth, data.projection.maxEast, data.projection.maxNorth] }], farWaterFile: 'water.json', attribution: '' }
-  const assets = { 'opening-territories.json': mapData, 'regional-terrain.json': terrain, 'regional-boundaries.json': [], 'outside-admin-units.json': { units: [] }, 'outside-control-2126.json': { assignments: [] }, 'water.json': { features: [] } }
-  if (scenario === 'island partial occupation') {
-    assets['outside-admin-units.json'] = JSON.parse(await readFile('public/outside-admin-units.json', 'utf8'))
-    assets['outside-control-2126.json'] = JSON.parse(await readFile('public/outside-control-2126.json', 'utf8'))
-  }
-  assets['confirmed-person-holdings.json'] = JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8'))
-  const host = document.createElement('div')
-  document.body.appendChild(host)
-  const root = createRoot(host)
-  const canvasContext = { createImageData: () => ({ data: new Uint8ClampedArray(4) }), putImageData() {}, measureText: () => ({ width: 1 }), strokeText() {}, fillText() {}, getImageData: () => ({ data: new Uint8ClampedArray(4) }) }
-  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
-  vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} })
-  vi.stubGlobal('fetch', async (url) => ({ ok: true, json: async () => assets[String(url).split('/').at(-1)], arrayBuffer: async () => new Uint16Array([500, 0]).buffer }))
-  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(canvasContext)
-  vi.spyOn(HTMLCanvasElement.prototype, 'toDataURL').mockReturnValue('data:image/png;base64,')
-  try {
-    // Mock only graphics and offline asset transport; selection handlers and React
-    // state transitions are the actual component behavior under test.
-    await act(async () => { root.render(React.createElement(MemoryRouter, null, React.createElement(OpeningTerritoryMap))) })
-    if (scenario === 'island partial occupation') {
-      const frame = [...host.querySelectorAll('button')].find(button => button.textContent === '한반도 보기')
-      await act(async () => frame.click())
-      const components = [...host.querySelectorAll('[data-outside-unit="2872031000"]')]
-      assert.equal(components.length, 12)
-      assert.equal(components.filter(part => part.dataset.controlStatus === 'held').length, 3)
-      const jangbong = host.querySelector('[data-island-component="2872031000:11"]')
-      assert.equal(jangbong.dataset.controlStatus, 'unassigned')
-      assert.notEqual(jangbong.getAttribute('fill'), host.querySelector('[data-island-component="2872031000:7"]').getAttribute('fill'))
-      await act(async () => jangbong.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })))
-      assert.equal(host.querySelector('[data-island-detail="2872031000:11"] td:last-child').textContent, '미배정')
-      assert.equal(host.querySelector('[data-island-detail="2872031000:7"] td:last-child').textContent, '대한민국정부')
-      return
+test('each rank spreads its title hues around the palette without sequential ID collisions', async () => {
+  const source = JSON.parse(await readFile('lore/regions/seoul-electoral-titles.json', 'utf8'))
+  for (const rank of ['county', 'duchy', 'kingdom']) {
+    const ids = source.titles.filter(title => title.rank === rank).map(title => title.titleId)
+    const hues = ids.map(id => Number(geographicTitleColor(id, ids).match(/hsl\((\d+)/u)[1]))
+    for (let i = 0; i < hues.length; i++) for (let j = i + 1; j < hues.length; j++) {
+      const delta = Math.abs(hues[i] - hues[j])
+      assert.ok(Math.min(delta, 360 - delta) >= Math.floor(360 / ids.length), rank)
     }
-    if (scenario === 'label fallback') {
-      assert.equal(host.querySelector('[data-hegemon-label-fallback]').textContent, data.hegemons.map(item => item.name).join(' · '))
-      return
-    }
-    if (scenario === 'pointer drag' || scenario === 'pointer cancel' || scenario === 'touch pinch') {
-      const svg = host.querySelector('.territory-flat-svg')
-      svg.getBoundingClientRect = () => ({ x: 0, y: 0, left: 0, top: 0, width: 1200, height: 980, right: 1200, bottom: 980 })
-      const frames = []
-      vi.stubGlobal('requestAnimationFrame', callback => { frames.push(callback); return frames.length })
-      const pointer = (type, id, x, y) => {
-        const event = new MouseEvent(type, { bubbles: true, clientX: x, clientY: y })
-        Object.defineProperties(event, { pointerId: { value: id }, pointerType: { value: 'touch' } })
-        svg.dispatchEvent(event)
-      }
-      const initial = svg.getAttribute('viewBox').split(' ').map(Number)
-      await act(async () => {
-        pointer('pointerdown', 1, 400, 400)
-        if (scenario === 'touch pinch') { pointer('pointermove', 1, 350, 400); pointer('pointerdown', 2, 600, 400) }
-        pointer('pointermove', 1, 300, 450)
-        if (scenario === 'touch pinch') pointer('pointermove', 2, 700, 350)
-        while (frames.length) frames.shift()(0)
-        const release = new MouseEvent(scenario === 'pointer cancel' ? 'pointercancel' : 'pointerup', { bubbles: true }); Object.defineProperty(release, 'pointerId', { value: 1 }); window.dispatchEvent(release)
-        if (scenario === 'touch pinch') pointer('pointerup', 2, 700, 350)
-      })
-      const changed = svg.getAttribute('viewBox').split(' ').map(Number)
-      assert.deepEqual(changed.slice(2), initial.slice(2))
-      if (scenario !== 'touch pinch') assert.notDeepEqual(changed.slice(0, 2), initial.slice(0, 2))
-      else assert.deepEqual(changed, initial)
-      await act(async () => { pointer('pointermove', 1, 900, 900); while (frames.length) frames.shift()(0) })
-      assert.deepEqual(svg.getAttribute('viewBox').split(' ').map(Number), changed)
-      return
-    }
-    if (scenario === 'overlay-only zoom') {
-      const svg = host.querySelector('.territory-flat-svg')
-      const initial = svg.getAttribute('viewBox')
-      for (const ctrlKey of [false, true]) {
-        await act(async () => svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, deltaY: -200, ctrlKey })))
-        assert.equal(svg.getAttribute('viewBox'), initial)
-      }
-      await act(async () => host.querySelector('[aria-label="지도 확대"]').click())
-      assert.notEqual(svg.getAttribute('viewBox'), initial)
-      const enlarged = svg.getAttribute('viewBox')
-      await act(async () => host.querySelector('[aria-label="지도 축소"]').click())
-      assert.notEqual(svg.getAttribute('viewBox'), enlarged)
-      await act(async () => [...host.querySelectorAll('button')].find(button => button.textContent === '초기화').click())
-      assert.equal(svg.getAttribute('viewBox'), initial)
-      return
-    }
-    if (surface) {
-      const regions = [...host.querySelectorAll('[data-region-id]')]
-      assert.equal(regions.length, 427)
-      assert.equal(new Set(regions.map(region => region.getAttribute('fill'))).size, 4)
-      for (const region of regions) {
-        const source = data.regions.find(item => item.id === region.getAttribute('data-region-id'))
-        assert.equal(region.getAttribute('data-hegemon'), source.currentHegemons[0].name)
-      }
-      assert.deepEqual(new Set(host.querySelector('[data-hegemon-labels]').dataset.hegemonLabels.split('|')), new Set(data.hegemons.map(item => item.name)))
-      assert.ok(host.querySelector('.territory-national-borders').getAttribute('d'))
-      assert.ok(host.querySelector('.territory-subordinate-borders').getAttribute('d'))
-      const select = [...host.querySelectorAll('select')].find(element => element.querySelector('optgroup'))
-      assert.equal(select.querySelectorAll('optgroup').length, 3)
-      for (const hegemon of data.hegemons) {
-        await act(async () => { select.value = 'hegemon:' + hegemon.name; select.dispatchEvent(new Event('change', { bubbles: true })) })
-        for (const region of host.querySelectorAll('[data-region-id]')) assert.equal(Number(region.getAttribute('fill-opacity')), region.getAttribute('data-hegemon') === hegemon.name ? 0.72 : 0.24)
-      }
-      await act(async () => { select.value = 'S01'; select.dispatchEvent(new Event('change', { bubbles: true })) })
-      const capitalRegionId = data.states.find(state => state.id === 'S01').capitalRegionId
-      for (const region of host.querySelectorAll('[data-region-id]')) assert.equal(Number(region.getAttribute('fill-opacity')), region.getAttribute('data-region-id') === capitalRegionId ? 0.95 : region.getAttribute('data-state-id') === 'S01' ? 0.72 : 0.24)
-      const region = host.querySelector('[data-state-id="S01"]')
-      await act(async () => { region.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-      const detail = [...host.querySelectorAll('#territory-detail-panel dl')].find(element => element.querySelector('dt')?.textContent === '직속 보유')
-      assert.ok(detail.textContent.includes('S01 ' + data.states.find(state => state.id === 'S01').name))
-      assert.ok(detail.textContent.includes(data.hegemons.find(item => item.memberStateIds.includes('S01')).name))
-      assert.equal(host.querySelectorAll('.territory-flat-capital').length, 16)
-      assert.equal(host.querySelectorAll('[data-vassal-marker]').length, 13)
-      return
-    }
-    if (scenario === 'select facility by stable station ID') {
-      const select = [...host.querySelectorAll('select')].find(element => [...element.options].some(option => option.value === 'holding:yeongdeungpo-concourse'))
-      await act(async () => {
-        select.value = 'holding:yeongdeungpo-concourse'
-        select.dispatchEvent(new Event('change', { bubbles: true }))
-      })
-      const panel = host.querySelector('[data-selected-holding="holding:yeongdeungpo-concourse"]')
-      assert.ok(panel)
-      assert.equal(panel.querySelector('a').getAttribute('href'), '/people/person-0017')
-      assert.equal(host.querySelectorAll('[data-holding-region]').length, 0)
-      return
-    }
-    const layerButton = (name) => [...host.querySelectorAll('.territory-layer-toggle button')].find((button) => button.textContent === name)
-    await act(async () => { layerButton('지하 영토').click() })
-    const segment = host.querySelector('[data-underground-segment="segment:신촌~이대"]')
-    if (scenario.startsWith('choose ')) {
-      // jsdom has no SVG geometry; provide only the graphics boundary in screen pixels.
-      vi.stubGlobal('DOMPoint', class {
-        constructor(x, y) { this.x = x; this.y = y }
-        matrixTransform() { return { x: this.x, y: this.y } }
-      })
-      for (const line of host.querySelectorAll('line[data-underground-segment]')) {
-        for (const key of ['x1', 'y1', 'x2', 'y2']) Object.defineProperty(line, key, { configurable: true, value: { baseVal: { value: Number(line.getAttribute(key)) } } })
-        line.getScreenCTM = () => ({ a: 1, b: 0, c: 0, d: 1 })
-        line.getCTM = () => ({ a: 1, b: 0, c: 0, d: 1 })
-      }
-      const originalComputedStyle = window.getComputedStyle.bind(window)
-      vi.spyOn(window, 'getComputedStyle').mockImplementation((element) => element.matches('line[data-underground-segment]')
-        ? { strokeWidth: element.getAttribute('stroke-width'), vectorEffect: 'non-scaling-stroke', display: 'inline', visibility: 'visible', opacity: '1', strokeOpacity: '1', stroke: '#fff' }
-        : originalComputedStyle(element))
-      const x = (Number(segment.getAttribute('x1')) + Number(segment.getAttribute('x2'))) / 2
-      const y = (Number(segment.getAttribute('y1')) + Number(segment.getAttribute('y2'))) / 2
-      // Select first so opening a chooser must survive unchanged prior selection state.
-      await act(async () => { segment.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-      await act(async () => { segment.dispatchEvent(new MouseEvent('click', { bubbles: true, detail: 1, clientX: x, clientY: y })) })
-      assert.equal(host.querySelectorAll('[data-segment-choice]').length, 2)
-      const id = scenario === 'choose ShinCHON' ? 'segment:신촌~이대' : 'segment:fixture-overlap~이대'
-      await act(async () => { host.querySelector(`[data-segment-choice="${id}"]`).click() })
-      assert.equal(host.querySelector('#territory-detail-panel h3')?.textContent, scenario === 'choose ShinCHON' ? '신촌–이대' : '겹침 검증역–이대')
-      assert.equal(host.querySelectorAll('[data-segment-choice]').length, 0)
-      return
-    }
-    await act(async () => { segment.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    assert.equal(host.querySelector('#territory-detail-panel h3')?.textContent, '신촌–이대')
-    if (scenario === 'keep active layer') {
-      await act(async () => { layerButton('지하 영토').click() })
-      assert.equal(host.querySelector('#territory-detail-panel h3')?.textContent, '신촌–이대')
-      return
-    }
-    await act(async () => { layerButton('지상 영토').click() })
-    assert.equal(host.querySelector('#territory-detail-panel') === null, true)
-    await act(async () => { layerButton('지하 영토').click() })
-    assert.equal(host.querySelector('#territory-detail-panel') === null, true)
-    await act(async () => { host.querySelector('[data-underground-segment="segment:동묘앞~신설동"]').dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    assert.equal(host.querySelector('#territory-detail-panel h3')?.textContent, '동묘앞–신설동')
-  } finally {
-    await act(async () => root.unmount())
-    host.remove()
-    vi.restoreAllMocks()
-    vi.unstubAllGlobals()
   }
 })
 
-
-async function mountFullMap() {
-  const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
-  const assets = {
-    'opening-territories.json': data,
-    'regional-terrain.json': { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [data.projection.minEast - 40000, data.projection.minNorth - 30000, data.projection.maxEast + 40000, data.projection.maxNorth + 30000] }], farWaterFile: 'water.json', attribution: '' },
-    'regional-boundaries.json': [],
-    'outside-admin-units.json': JSON.parse(await readFile('public/outside-admin-units.json', 'utf8')),
-    'outside-control-2126.json': JSON.parse(await readFile('public/outside-control-2126.json', 'utf8')),
-    'water.json': { features: [] },
-    'confirmed-person-holdings.json': JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8')),
-  }
-  const host = document.createElement('div')
-  document.body.appendChild(host)
-  const root = createRoot(host)
-  const canvasContext = { createImageData: () => ({ data: new Uint8ClampedArray(4) }), putImageData() {}, measureText: () => ({ width: 1 }), strokeText() {}, fillText() {}, getImageData: () => ({ data: new Uint8ClampedArray(4) }) }
-  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
-  vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} })
-  vi.stubGlobal('fetch', async (url) => ({ ok: true, json: async () => assets[String(url).split('/').at(-1)], arrayBuffer: async () => new Uint16Array([500, 0]).buffer }))
-  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(canvasContext)
-  vi.spyOn(HTMLCanvasElement.prototype, 'toDataURL').mockReturnValue('data:image/png;base64,')
-  await act(async () => { root.render(React.createElement(MemoryRouter, null, React.createElement(OpeningTerritoryMap))) })
-  await act(async () => { })
-  const unmount = async () => { await act(async () => root.unmount()); host.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals() }
-  return { assets, host, unmount }
-}
-
-function expectedTitleModel(assets) {
-  const controlByUnit = new Map(assets['outside-control-2126.json'].assignments.map((row) => [row.unitId, row]))
-  const holdingByRef = new Map(assets['confirmed-person-holdings.json'].holdings.flatMap((holding) => holding.adminRefs.map((ref) => [ref.id, holding])))
-  const relationOf = (id) => {
-    const holding = holdingByRef.get(id)
-    if (holding) return holding.directLiegePersonId === null ? 'direct' : 'vassal'
-    const row = controlByUnit.get(id)
-    return row?.authority ? 'state' : 'unassigned'
-  }
-  const regionRelationOf = (id) => {
-    const holding = holdingByRef.get(id)
-    if (holding) return holding.directLiegePersonId === null ? 'direct' : 'vassal'
-    return 'state'
-  }
-  const componentRows = assets['outside-control-2126.json'].assignments.flatMap((row) => row.components ?? [{ id: row.unitId, authority: row.authority, status: row.status ?? 'unassigned', unitId: row.unitId }])
-  const componentCount = componentRows.length
-  const outside = { direct: 0, vassal: 0, state: 0, unassigned: 0 }
-  for (const unit of assets['outside-admin-units.json'].units) outside[relationOf(unit.id)] += 1
-  const regions = { direct: 0, vassal: 0, state: 0, unassigned: 0 }
-  for (const region of assets['opening-territories.json'].regions) regions[regionRelationOf(region.id)] += 1
-  const markers = assets['confirmed-person-holdings.json'].holdings.filter((holding) => holding.stationRef || holding.facilityRef || holding.landmarkRef).length
-  const domainCounts = (root) => {
-    const entries = assets['confirmed-person-holdings.json'].holdings.filter((holding) => (holding.directLiegePersonId ?? holding.holderPersonId) === root)
-    return { direct: entries.filter((holding) => holding.directLiegePersonId === null).reduce((sum, holding) => sum + holding.adminRefs.length, 0), vassal: entries.filter((holding) => holding.directLiegePersonId !== null).reduce((sum, holding) => sum + holding.adminRefs.length, 0) }
-  }
-  return { controlByUnit, holdingByRef, relationOf, outside, regions, markers, domainCounts, componentRows, componentCount }
-}
-
-test('three-state default entry renders every outside unit with Seoul parity', async () => {
-  const { assets, host, unmount } = await mountFullMap()
+test('map buttons and arrow keys pan within Seoul bounds and Escape closes detail', async () => {
+  const { host, data, unmount } = await mountMap()
   try {
-    const data = assets['opening-territories.json']
-    const model = expectedTitleModel(assets)
-    const controls = [...host.querySelectorAll('.territory-flat-controls button')]
-    assert.equal(controls.find((button) => button.textContent === '한반도 보기')?.getAttribute('aria-pressed'), 'true')
-    assert.equal(controls.find((button) => button.textContent === '서울 전체')?.getAttribute('aria-pressed'), 'false')
-    assert.equal([...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '정치 지도')?.getAttribute('aria-pressed'), 'true')
     const svg = host.querySelector('.territory-flat-svg')
-    const spanEast = data.projection.maxEast - data.projection.minEast
-    const spanNorth = data.projection.maxNorth - data.projection.minNorth
-    const expected = [-40000 / spanEast * data.width, -30000 / spanNorth * data.height, data.width + 80000 / spanEast * data.width, data.height + 60000 / spanNorth * data.height]
-    const viewBox = svg.getAttribute('viewBox').split(' ').map(Number)
-    assert.ok(viewBox.every((value, index) => Math.abs(value - expected[index]) < 1e-6), viewBox.join(' '))
-    const seoulButton = controls.find((button) => button.textContent === '서울 전체')
-    const peninsulaButton = controls.find((button) => button.textContent === '한반도 보기')
-    await act(async () => { seoulButton.click() })
-    assert.equal(seoulButton.getAttribute('aria-pressed'), 'true')
-    assert.equal(peninsulaButton.getAttribute('aria-pressed'), 'false')
-    assert.equal(svg.getAttribute('viewBox'), `0 0 ${data.width} ${data.height}`)
-    await act(async () => { peninsulaButton.click() })
-    assert.equal(peninsulaButton.getAttribute('aria-pressed'), 'true')
-    assert.equal(seoulButton.getAttribute('aria-pressed'), 'false')
-    assert.ok(svg.getAttribute('viewBox').split(' ').map(Number).every((value, index) => Math.abs(value - expected[index]) < 1e-6))
-    const outsidePaths = [...host.querySelectorAll('[data-outside-unit]')]
-    assert.equal(outsidePaths.length, model.componentCount)
-    const hegemonColor = new Map(data.hegemons.map((hegemon) => [hegemon.name, hegemon.color]))
-    const componentByPath = new Map(model.componentRows.map((component) => [component.id, component]))
-    for (const path of outsidePaths) {
-      const component = componentByPath.get(path.getAttribute('data-island-component'))
-      const expectedFill = component?.authority ? hegemonColor.get(component.authority.name) ?? '#8a969b' : '#8a969b'
-      assert.equal(path.getAttribute('fill'), expectedFill, path.getAttribute('data-island-component'))
-      const expectedOpacity = component?.authority ? 0.72 : 0.1
-      assert.equal(Number(path.getAttribute('fill-opacity')), expectedOpacity, path.getAttribute('data-island-component'))
-      assert.equal(path.getAttribute('stroke'), '#35434b')
-    }
-    const select = [...host.querySelectorAll('select')].find((element) => element.querySelector('optgroup'))
-    const hegemon = data.hegemons[0]
-    await act(async () => { select.value = 'hegemon:' + hegemon.name; select.dispatchEvent(new Event('change', { bubbles: true })) })
-    for (const path of outsidePaths) {
-      const component = componentByPath.get(path.getAttribute('data-island-component'))
-      assert.equal(Number(path.getAttribute('fill-opacity')), component?.authority?.name === hegemon.name ? 0.72 : component?.authority ? 0.24 : 0.1, path.getAttribute('data-island-component'))
-    }
-    await act(async () => { select.value = 'all'; select.dispatchEvent(new Event('change', { bubbles: true })) })
-    const daejeonUnit = outsidePaths.find((path) => path.getAttribute('data-outside-unit') === '3011051500')
-    await act(async () => { daejeonUnit.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    assert.ok([...host.querySelectorAll('#territory-detail-panel h3')].some((heading) => heading.textContent === '대전광역시 동구 중앙동'))
-    assert.ok(host.querySelector('[data-selected-holding="holding:daejeon-dong"]'))
-    assert.ok(host.querySelector('[data-selected-holding="holding:daejeon-dong"] a[href="/people/person-1008"]'))
-  } finally { await unmount() }
-})
-
-test('titles mode shows evidence-backed lords and never invents missing ones', async () => {
-  const { assets, host, unmount } = await mountFullMap()
-  try {
-    const model = expectedTitleModel(assets)
-    await act(async () => { })
-    assert.equal(host.querySelector('[data-title-legend]'), null)
-    await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '작위·영주 지도').click() })
-    assert.equal([...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '작위·영주 지도')?.getAttribute('aria-pressed'), 'true')
-    const outsidePaths = [...host.querySelectorAll('[data-outside-unit]')]
-    const relationPath = (id) => outsidePaths.find((path) => path.getAttribute('data-outside-unit') === id)
-    for (const relation of ['direct', 'vassal', 'state', 'unassigned']) {
-      const expected = relation === 'direct' || relation === 'vassal' ? model.outside[relation] : model.componentRows.filter((component) => (relation === 'state' ? component.authority : !component.authority) && !model.holdingByRef.has(component.unitId)).length
-      assert.equal(outsidePaths.filter((path) => path.getAttribute('data-title-relation') === relation).length, expected, 'outside ' + relation)
-    }
-    const regionPaths = [...host.querySelectorAll('[data-region-id]')]
-    for (const relation of ['direct', 'vassal', 'state', 'unassigned']) {
-      assert.equal(regionPaths.filter((path) => path.getAttribute('data-title-relation') === relation).length, model.regions[relation], 'region ' + relation)
-    }
-    const directDaejeon = relationPath('3011051500')
-    const vassalJung = relationPath('3014053500')
-    const islandBaengnyeong = relationPath('2872033000')
-    assert.equal(directDaejeon.getAttribute('data-title-relation'), 'direct')
-    assert.equal(Number(directDaejeon.getAttribute('fill-opacity')), 0.72)
-    assert.equal(directDaejeon.getAttribute('stroke-dasharray'), null)
-    assert.equal(vassalJung.getAttribute('data-title-relation'), 'vassal')
-    assert.equal(Number(vassalJung.getAttribute('fill-opacity')), 0.45)
-    assert.equal(vassalJung.getAttribute('stroke-dasharray'), '3 2')
-    assert.equal(directDaejeon.getAttribute('fill'), vassalJung.getAttribute('fill'))
-    assert.notEqual(directDaejeon.getAttribute('fill'), '#8a969b')
-    const islandRelation = model.relationOf('2872033000')
-    assert.equal(islandBaengnyeong.getAttribute('data-title-relation'), islandRelation)
-    assert.equal(Number(islandBaengnyeong.getAttribute('fill-opacity')), islandRelation === 'unassigned' ? 0.1 : islandRelation === 'state' ? 0.18 : islandRelation === 'vassal' ? 0.45 : 0.72)
-    const polityChip = host.querySelector('[data-title-polity="polity:daejeon"]')
-    assert.match(polityChip.textContent, /대전/u)
-    assert.match(polityChip.textContent, /대전선\(왕격\)/u)
-    assert.match(polityChip.textContent, /대전 군주/u)
-    assert.match(polityChip.textContent, /민웅기/u)
-    const daejeonDomain = model.domainCounts('K1008')
-    assert.match(host.querySelector('[data-title-domain="K1008"]').textContent, new RegExp('직영 ' + daejeonDomain.direct + ' · 봉신 ' + daejeonDomain.vassal))
-    const seoulDomain = model.domainCounts('K001')
-    assert.match(host.querySelector('[data-title-domain="K001"]').textContent, new RegExp('직영 ' + seoulDomain.direct + ' · 봉신 ' + seoulDomain.vassal))
-    assert.ok(host.querySelector('[data-title-state-direct]'))
-    const unassignedChip = host.querySelector('[data-title-unassigned]')
-    assert.ok(unassignedChip)
-    assert.match(unassignedChip.textContent, new RegExp(`미배정 \\(${model.componentRows.filter((component) => !component.authority).length}개 경로\\)`))
-    assert.equal(host.querySelectorAll('[data-title-holding-marker]').length, model.markers)
-    await act(async () => { vassalJung.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    const panel = host.querySelector('#territory-detail-panel')
-    const estateRow = [...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '개인 영지')
-    assert.match(estateRow.textContent, /대전 중구 영지 · 장우석 · 직속 민웅기/u)
-    assert.equal([...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '작위')?.querySelector('td').textContent, '대전선')
-    assert.equal([...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '작위 등급')?.querySelector('td').textContent, '왕격')
-    assert.ok(panel.querySelector('a[href="/people/person-1008"]'))
-    await act(async () => { islandBaengnyeong.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    const islandPanel = host.querySelector('#territory-detail-panel')
-    const islandEstate = [...islandPanel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '개인 영지')
-    const islandRow = model.controlByUnit.get('2872033000')
-    const expectedEstate = islandRow?.authority ? '기록 없음 · ' + islandRow.authority.name + ' 직할' : '기록 없음'
-    assert.equal(islandEstate.querySelector('td').textContent, expectedEstate)
-    assert.equal([...islandPanel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '작위'), undefined)
-    const svg = host.querySelector('.territory-flat-svg')
+    await act(async () => host.querySelector('[aria-label="지도 확대"]').click())
     const before = svg.getAttribute('viewBox')
-    await act(async () => { svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, deltaY: -200 })) })
-    assert.equal(svg.getAttribute('viewBox'), before)
+    await act(async () => host.querySelector('[aria-label="지도 오른쪽 이동"]').click())
+    assert.notEqual(svg.getAttribute('viewBox'), before)
+    await act(async () => { for (let i = 0; i < 20; i++) svg.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true })) })
+    const [x, , width] = svg.getAttribute('viewBox').split(' ').map(Number)
+    assert.ok(x >= 0 && x + width <= data.width)
+    await act(async () => host.querySelector('[data-title-rank="county"]').dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })))
+    assert.ok(host.querySelector('#territory-detail-panel'))
+    await act(async () => svg.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })))
+    assert.equal(host.querySelector('#territory-detail-panel'), null)
+    assert.equal([...host.querySelectorAll('button')].filter(button => button.textContent === '초기화').length, 0)
   } finally { await unmount() }
 })
 
-
-test('v3 control rows: null authority and island-level components render honestly', async () => {
+async function mountMap(initialEntries = ['/'], mutate = () => {}) {
   const data = JSON.parse(await readFile('public/opening-territories.json', 'utf8'))
-  const control = JSON.parse(await readFile('public/outside-control-2126.json', 'utf8'))
-  void control
+  const staging = JSON.parse(await readFile('lore/regions/seoul-electoral-titles.json', 'utf8'))
+  const boundaries = JSON.parse(await readFile('data/geography/boundaries/seoul-sgis-20250630.geojson', 'utf8'))
+  const geography = projectGeographicTitles(staging, boundaries, (longitude, latitude) => {
+    const x = (longitude - data.projection.minEast) / (data.projection.maxEast - data.projection.minEast) * data.width
+    const y = (data.projection.maxNorth - latitude) / (data.projection.maxNorth - data.projection.minNorth) * data.height
+    return [x, y]
+  })
   const assets = {
-    'opening-territories.json': data,
-    'regional-terrain.json': { layers: [{ name: 'peninsula', file: 'fixture.bin', width: 1, height: 1, bboxEPSG5179: [data.projection.minEast, data.projection.minNorth, data.projection.maxEast, data.projection.maxNorth] }], farWaterFile: 'water.json', attribution: '' },
-    'regional-boundaries.json': [],
-    'outside-admin-units.json': { units: [
-      { id: '9000000001', name: '테스트군 섬일면', province: '테스트도', district: '섬일면', path: 'M0,0 L30,0 L30,20 L0,20 Z', holder2126: null },
-      { id: '9000000002', name: '테스트도 무주면', province: '테스트도', district: '무주면', path: 'M40,0 L70,0 L70,20 L40,20 Z', holder2126: null },
-      { id: '9000000003', name: '테스트도 유주면', province: '테스트도', district: '유주면', path: 'M80,0 L110,0 L110,20 L80,20 Z', holder2126: null },
-      { id: '9000000004', name: '테스트도 유주면', province: '테스트도', district: '유주면', path: 'M120,0 L150,0 L150,20 L120,20 Z', holder2126: null },
-    ] },
-    'outside-control-2126.json': { schema: 'outside-control-2126.v3', assignments: [
-      { unitId: '9000000001', authority: null, status: 'partial', components: [
-        { componentIndex: 0, name: '다리섬', location: [126.5, 37.5], connection: 'mainland-bridge', sources: ['https://example.com/a'], authority: { kind: 'state', stateId: 'S06', name: '대한민국정부' }, id: '9000000001:0', path: 'M0,0 L14,0 L14,20 L0,20 Z', status: 'held' },
-        { componentIndex: 1, name: '외딴섬', location: [126.6, 37.6], connection: 'no-mainland-bridge', sources: ['https://example.com/b'], authority: null, id: '9000000001:1', path: 'M16,0 L30,0 L30,20 L16,20 Z', status: 'unassigned' },
-      ] },
-      { unitId: '9000000002', authority: null, status: 'unassigned' },
-      { unitId: '9000000003', authority: { kind: 'union', name: '종교 연합' }, status: 'held' },
-      { unitId: '9000000004', authority: { kind: 'state', stateId: 'S06', name: '대한민국정부' }, status: 'held', vassal: '경기도' },
-    ] },
-    'water.json': { features: [] },
+    'opening-territories.json': { ...data, geography },
     'confirmed-person-holdings.json': JSON.parse(await readFile('public/confirmed-person-holdings.json', 'utf8')),
+    'underground-detail.json': JSON.parse(await readFile('public/underground-detail.json', 'utf8')),
   }
+  mutate(assets)
   const host = document.createElement('div')
   document.body.appendChild(host)
   const root = createRoot(host)
-  const canvasContext = { createImageData: () => ({ data: new Uint8ClampedArray(4) }), putImageData() {}, measureText: () => ({ width: 1 }), strokeText() {}, fillText() {}, getImageData: () => ({ data: new Uint8ClampedArray(4) }) }
   vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true)
-  vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} })
-  vi.stubGlobal('fetch', async (url) => ({ ok: true, json: async () => assets[String(url).split('/').at(-1)], arrayBuffer: async () => new Uint16Array([500, 0]).buffer }))
-  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(canvasContext)
-  vi.spyOn(HTMLCanvasElement.prototype, 'toDataURL').mockReturnValue('data:image/png;base64,')
-  try {
-    await act(async () => { root.render(React.createElement(MemoryRouter, null, React.createElement(OpeningTerritoryMap))) })
-    await act(async () => { })
-    const bridges = [...host.querySelectorAll('[data-island-component="9000000001:0"]')]
-    assert.equal(bridges.length, 1)
-    const outer = [...host.querySelectorAll('[data-island-component="9000000001:1"]')]
-    assert.equal(outer.length, 1)
-    assert.equal(bridges[0].getAttribute('fill'), '#426f99')
-    assert.equal(bridges[0].getAttribute('data-control-status'), 'held')
-    assert.ok(Number(bridges[0].getAttribute('fill-opacity')) >= 0.5)
-    assert.equal(outer[0].getAttribute('data-control-status'), 'unassigned')
-    assert.ok(Number(outer[0].getAttribute('fill-opacity')) <= 0.2)
-    const whole = [...host.querySelectorAll('[data-island-component="9000000002"]')]
-    assert.equal(whole.length, 1)
-    assert.equal(whole[0].getAttribute('data-control-status'), 'unassigned')
-    assert.ok(Number(whole[0].getAttribute('fill-opacity')) <= 0.2)
-    const held = [...host.querySelectorAll('[data-island-component="9000000003"]')]
-    assert.equal(held.length, 1)
-    assert.equal(held[0].getAttribute('fill'), '#b54b4b')
-    await act(async () => { bridges[0].dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    const panel = host.querySelector('#territory-detail-panel')
-    const estate = [...panel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '2126 지배')
-    assert.match(estate.textContent, /섬별 부분 점유/u)
-    assert.ok(panel.querySelector('[data-island-detail="9000000001:0"]'))
-    assert.match(panel.querySelector('[data-island-detail="9000000001:0"]').textContent, /다리섬.*대한민국정부/u)
-    assert.match(panel.querySelector('[data-island-detail="9000000001:1"]').textContent, /외딴섬.*미배정/u)
-    await act(async () => { whole[0].dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
-    const nullPanel = host.querySelector('#territory-detail-panel')
-    const nullEstate = [...nullPanel.querySelectorAll('tr')].find((row) => row.querySelector('th')?.textContent === '2126 지배')
-    assert.match(nullEstate.textContent, /미배정/u)
-    const heldPath = host.querySelector('[data-island-component="9000000003"]')
-    assert.equal(heldPath.getAttribute('aria-label'), '테스트도 유주면 · 종교 연합')
-    const vassalPath = host.querySelector('[data-island-component="9000000004"]')
-    assert.ok(vassalPath)
-    assert.match(vassalPath.getAttribute('aria-label'), /^테스트도 유주면 · 경기도 \/ 대한민국정부$/u)
-    assert.equal((vassalPath.getAttribute('aria-label').match(/테스트도 유주면/gu) ?? []).length, 1)
-    assert.equal(bridges[0].getAttribute('aria-label'), '테스트군 섬일면 · 다리섬 · 대한민국정부')
-    assert.equal(outer[0].getAttribute('aria-label'), '테스트군 섬일면 · 외딴섬 · 섬별 부분 점유')
-    await act(async () => { bridges[0].dispatchEvent(new MouseEvent('click', { bubbles: true })) })
-    for (const island of [bridges[0], outer[0]]) {
-      assert.equal(island.getAttribute('stroke'), '#ffe18c')
-      assert.equal(island.getAttribute('stroke-width'), '1.8')
-      assert.equal(Number(island.getAttribute('fill-opacity')), 0.95)
-    }
-    assert.equal(outer[0].getAttribute('fill'), '#8a969b')
-    assert.equal(outer[0].getAttribute('data-control-status'), 'unassigned')
-    await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find((button) => button.textContent === '작위·영주 지도').click() })
-    assert.equal(host.querySelectorAll('[data-island-component="9000000001:0"]')[0].getAttribute('data-title-relation'), 'state')
-    assert.equal(host.querySelectorAll('[data-island-component="9000000001:1"]')[0].getAttribute('data-title-relation'), 'unassigned')
-    assert.equal(host.querySelectorAll('[data-island-component="9000000002"]')[0].getAttribute('data-title-relation'), 'unassigned')
-  } finally {
-    await act(async () => root.unmount())
-    host.remove()
-    vi.restoreAllMocks()
-    vi.unstubAllGlobals()
+  vi.stubGlobal('requestAnimationFrame', callback => { callback(0); return 1 })
+  vi.stubGlobal('cancelAnimationFrame', () => {})
+  vi.stubGlobal('fetch', async url => ({ ok: Boolean(assets[String(url).split('/').at(-1)]), json: async () => assets[String(url).split('/').at(-1)] }))
+  await act(async () => { root.render(React.createElement(MemoryRouter, { initialEntries }, React.createElement(OpeningTerritoryMap))) })
+  await act(async () => {})
+  return {
+    host,
+    data: assets['opening-territories.json'],
+    holdings: assets['confirmed-person-holdings.json'],
+    unmount: async () => { await act(async () => root.unmount()); host.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals() },
   }
+}
+
+test('pointer cancellation and multi-pointer gestures do not leave an active drag', async () => {
+  const { host, unmount } = await mountMap()
+  try {
+    const svg = host.querySelector('.territory-flat-svg')
+    await act(async () => host.querySelector('[aria-label="지도 확대"]').click())
+    const before = svg.getAttribute('viewBox')
+    const pointer = (type, id, x) => {
+      const event = new MouseEvent(type, { clientX: x, clientY: 50, bubbles: true })
+      Object.defineProperty(event, 'pointerId', { value: id })
+      svg.dispatchEvent(event)
+    }
+    await act(async () => { pointer('pointerdown', 1, 50); pointer('pointercancel', 1, 50); pointer('pointermove', 1, 100) })
+    assert.equal(svg.getAttribute('viewBox'), before)
+    await act(async () => {
+      pointer('pointerdown', 1, 50); pointer('pointerdown', 2, 60)
+      pointer('pointermove', 1, 100); pointer('pointerup', 2, 60); pointer('pointermove', 1, 120); pointer('pointerup', 1, 120)
+    })
+    assert.equal(svg.getAttribute('viewBox'), before)
+    await act(async () => host.querySelector('[aria-label="지도 오른쪽 이동"]').click())
+    assert.notEqual(svg.getAttribute('viewBox'), before)
+  } finally { await unmount() }
 })
+
+test('political mode exposes only 48 Seoul counties and the three factions plus neutral', async () => {
+  const { host, unmount } = await mountMap()
+  try {
+    const counties = [...host.querySelectorAll('[data-title-rank="county"]')]
+    assert.equal(counties.length, 48)
+    assert.equal(host.querySelectorAll('[data-vassal-marker], [data-outside-unit], .territory-faction-flag').length, 0)
+    assert.deepEqual(new Set(counties.map(path => path.getAttribute('data-political-affiliation'))), new Set(['규격맹', '대한민국정부', '종교 연합', '중립']))
+    assert.deepEqual([...host.querySelectorAll('[aria-label="서울 정치 권역 범례"] > span > span:last-child')].map(node => node.textContent), ['규격맹', '대한민국정부', '종교 연합', '중립'])
+    assert.equal(host.querySelector('[aria-label="지리 작위 등급"]'), null)
+  } finally { await unmount() }
+})
+
+test('title mode changes rank by title ID and county detail keeps baronies as slots', async () => {
+  const { host, data, unmount } = await mountMap()
+  try {
+    await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find(button => button.textContent === '작위·영주 지도').click() })
+    const rank = [...host.querySelectorAll('label.territory-filter')].find(label => label.textContent.includes('지리 작위 등급')).querySelector('select')
+    assert.equal(host.querySelectorAll('[data-title-rank="county"]').length, 48)
+    await act(async () => { rank.value = 'duchy'; rank.dispatchEvent(new Event('change', { bubbles: true })) })
+    assert.equal(host.querySelectorAll('[data-title-rank="duchy"]').length, 25)
+    await act(async () => { rank.value = 'county'; rank.dispatchEvent(new Event('change', { bubbles: true })) })
+    const county = data.geography.titles.find(title => title.rank === 'county')
+    await act(async () => { host.querySelector(`[data-title-id="${county.id}"]`).dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    assert.equal(host.querySelector(`[data-geographic-detail="${county.id}"] h3`).textContent, county.name)
+    assert.equal(host.querySelectorAll('[data-barony-slot]').length, county.datedSlots.length + county.currentSlots.length)
+    assert.equal(host.querySelectorAll('[data-title-rank="barony"]').length, 0)
+  } finally { await unmount() }
+})
+
+test('outside query cannot select geometry and subway renders only published physical hops', async () => {
+  const { host, data, unmount } = await mountMap(['/?region=region%3A4113164000'])
+  try {
+    assert.equal(host.querySelector('#territory-detail-panel'), null)
+    await act(async () => { [...host.querySelectorAll('.territory-layer-toggle button')].find(button => button.textContent === '지하 영토').click() })
+    assert.equal(host.querySelectorAll('[data-underground-segment]').length, data.edges.length)
+    assert.equal(host.querySelectorAll('[data-station-area]').length, data.stations.length)
+    const edge = data.edges[0]
+    await act(async () => { host.querySelector(`[data-underground-segment="${edge.id}"]`).dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    assert.ok(host.querySelector('#territory-detail-panel h3').textContent.includes('–'))
+  } finally { await unmount() }
+})
+
+test('administrative holding survives same-layer selection but clears on another county', async () => {
+  const { host, unmount } = await mountMap()
+  try {
+    const select = [...host.querySelectorAll('label.territory-filter')].find(label => label.textContent.includes('개인 영지')).querySelector('select')
+    await act(async () => { select.value = 'holding:yangpyeong2'; select.dispatchEvent(new Event('change', { bubbles: true })) })
+    assert.equal(select.value, 'holding:yangpyeong2')
+    assert.ok(host.querySelector('[data-holding-id="holding:yangpyeong2"]'))
+    assert.ok(host.querySelector('#territory-detail-panel').textContent.includes('K001'))
+    await act(async () => host.querySelector('.territory-layer-toggle button:first-child').click())
+    assert.equal(select.value, 'holding:yangpyeong2')
+    await act(async () => host.querySelector('[data-title-rank="county"]').dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })))
+    assert.equal(select.value, '')
+    assert.equal(host.querySelector('[data-holding-id]'), null)
+    assert.equal(host.querySelectorAll('[data-title-id][aria-pressed="true"]').length, 1)
+  } finally { await unmount() }
+})
+
+test('personal holding selector excludes outside and component geometry', async () => {
+  const { host, holdings, unmount } = await mountMap()
+  try {
+    const select = [...host.querySelectorAll('label.territory-filter')].find(label => label.textContent.includes('개인 영지')).querySelector('select')
+    const optionIds = new Set([...select.options].map(option => option.value))
+    assert.equal(optionIds.has('holding:daejeon-dong'), false)
+    assert.equal(optionIds.has('holding:daejeon-yuseong'), false)
+    for (const holding of holdings.holdings.filter(row => row.componentRefs?.length)) assert.equal(optionIds.has(holding.id), false)
+    assert.ok([...optionIds].some(Boolean))
+  } finally { await unmount() }
+})
+
+test('barony-independent map payload fails closed with no selectable fallback', async () => {
+  const { host, unmount } = await mountMap(['/'], assets => {
+    const geography = assets['opening-territories.json'].geography
+    geography.titles.push({ ...geography.titles.find(title => title.rank === 'county'), id: 'geography:barony:fixture', rank: 'barony' })
+  })
+  try {
+    assert.equal(host.querySelectorAll('[data-title-id], [data-station-id], select').length, 0)
+    assert.ok(host.textContent.includes('불러오지 못했습니다'))
+  } finally { await unmount() }
+})
+
+test('external title payload fails closed even when valid county counts remain', async () => {
+  const { host, unmount } = await mountMap(['/?region=geography%3Aduchy%3A41131'], assets => {
+    const geography = assets['opening-territories.json'].geography
+    geography.titles.push({ ...geography.titles.find(title => title.rank === 'duchy'), id: 'geography:duchy:41131' })
+  })
+  try {
+    assert.equal(host.querySelectorAll('[data-title-id], [tabindex="0"]').length, 0)
+  } finally { await unmount() }
+})
+
+test('county slot fields match independent source facts through all four rank stages', async () => {
+  const { host, unmount } = await mountMap()
+  try {
+    const source = JSON.parse(await readFile('lore/regions/seoul-electoral-titles.json', 'utf8'))
+    const county = source.countySlots[0]
+    await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find(button => button.textContent === '작위·영주 지도').click() })
+    await act(async () => { host.querySelector(`[data-title-id="${county.countyTitleId}"]`).dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+    const current = source.currentCorrespondenceSlots.find(row => row.countyTitleId === county.countyTitleId)
+    for (const slot of [...county.slots, ...current.slots]) {
+      const rendered = host.querySelector(`[data-barony-slot="${slot.slotId}"]`)
+      assert.ok(rendered)
+      assert.ok(rendered.textContent.includes(slot.name))
+      assert.equal(rendered.dataset.slotStatus, slot.status)
+      assert.ok(rendered.textContent.includes(slot.holderPersonId ?? '소유 미확인'))
+    }
+    const rank = host.querySelector('[aria-label="지리 작위 등급"]') ?? [...host.querySelectorAll('label.territory-filter')].find(label => label.textContent.includes('지리 작위 등급')).querySelector('select')
+    for (const [value, count] of [['duchy', 25], ['kingdom', 6], ['empire', 1], ['county', 48]]) {
+      await act(async () => { rank.value = value; rank.dispatchEvent(new Event('change', { bubbles: true })) })
+      assert.equal(host.querySelectorAll(`[data-title-rank="${value}"]`).length, count)
+      assert.equal(host.querySelectorAll('[data-title-rank="barony"]').length, 0)
+    }
+    await act(async () => { [...host.querySelectorAll('.territory-mode-toggle button')].find(button => button.textContent === '정치 지도').click() })
+    assert.equal(host.querySelectorAll('[data-title-rank="county"]').length, 48)
+  } finally { await unmount() }
+})
+
+for (const [route, labels] of [['/', ['직할', '봉신', '미배정']], ['/en/world/World-and-Subway-Layers', ['Direct rule', 'Vassal', 'Unassigned']]]) {
+  test(`slot statuses are localized and machine values stay in attributes: ${route}`, async () => {
+    const { host, unmount } = await mountMap([route], assets => {
+      const county = assets['opening-territories.json'].geography.titles.find(title => title.rank === 'county')
+      county.currentSlots.slice(0, 3).forEach((slot, index) => { slot.status = ['direct', 'vassal', 'unassigned'][index] })
+    })
+    try {
+      await act(async () => { host.querySelector('.territory-mode-toggle button:last-child').click() })
+      await act(async () => { host.querySelector('[data-title-rank="county"]').dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })) })
+      const rows = [...host.querySelectorAll('[data-barony-slot]')].slice(-17, -14)
+      assert.deepEqual(rows.map(row => row.dataset.slotStatus), ['direct', 'vassal', 'unassigned'])
+      rows.forEach((row, index) => assert.ok(row.textContent.includes(labels[index])))
+      assert.ok(rows.every(row => !/ · (direct|vassal|unassigned) · /u.test(row.textContent)))
+    } finally { await unmount() }
+  })
+}

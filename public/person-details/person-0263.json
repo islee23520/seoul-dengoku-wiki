@@ -444,47 +444,23 @@
             "name": "용두",
             "url": "/people/person-0263",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "연료 출고 분리·야간 열쇠 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/39/items/0/ko",
-                  "quote": "생업: 연료 출고 분리·야간 열쇠 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -492,73 +468,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/39/items/0/ko",
-                    "quote": "생업: 연료 출고 분리·야간 열쇠 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "종로3가",
-              "type": "초소 영지",
-              "station": "종로3가",
-              "state": "S10",
-              "settlement": {
-                "name": "종로3가 정착지",
-                "type": "정착지",
-                "description": "종로3가 일대 고정 거점"
-              },
-              "note": "S10 종로3가 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -582,47 +513,23 @@
             "name": "용두",
             "url": "/people/person-0263",
             "state": "S10",
-            "method": "card-lexicon",
-            "role": {
-              "display": "연료 출고 분리·야간 열쇠 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-10.json",
-                  "pointer": "/content/39/items/0/ko",
-                  "quote": "생업: 연료 출고 분리·야간 열쇠 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 11,
-                "cp": 20,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다."
-                  }
-                ]
+                "cp": 20
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -630,73 +537,28 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/39/items/0/ko",
-                    "quote": "생업: 연료 출고 분리·야간 열쇠 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-10.json",
-                    "pointer": "/content/40/text/ko",
-                    "quote": "무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다."
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 11,
               "Per": 11,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 20,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 8,
               "spent": 28,
-              "unspent": 47,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 안국총림 규모",
-              "faction_scale": {
-                "state": "S10",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "종로3가",
-              "type": "초소 영지",
-              "station": "종로3가",
-              "state": "S10",
-              "settlement": {
-                "name": "종로3가 정착지",
-                "type": "정착지",
-                "description": "종로3가 일대 고정 거점"
-              },
-              "note": "S10 종로3가 일대 관할 영지"
+              "unspent": 47
             }
           }
         }
@@ -717,18 +579,6 @@
       "tier": "강세력",
       "factor": 1.2
     }
-  },
-  "territory": {
-    "fief_name": "종로3가",
-    "type": "초소 영지",
-    "station": "종로3가",
-    "state": "S10",
-    "settlement": {
-      "name": "종로3가 정착지",
-      "type": "정착지",
-      "description": "종로3가 일대 고정 거점"
-    },
-    "note": "S10 종로3가 일대 관할 영지"
   },
   "wandering_force": null,
   "clan": {
@@ -769,7 +619,7 @@
     "욕망": "갈망 −5 | 독점 30 | 위험 30 | 과시 −25 | 지속 20 | 지향 양성 | 결합 계약동거"
   },
   "sections": {
-    "생애": "2126년 세대. 대합실 당직에서 자랐다. 연료고 수좌 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+    "생애": "2071-03-11 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 연료고 수좌 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 용두의 연료 출고 분리·야간 열쇠 관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
     "관직": "품계 수좌. 직함은 연료고 수좌, 오한결의 실무 담당자. 무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다.",
     "일화": "난방 연료가 사흘치로 줄자 옆문을 열자는 속삭임이 연료고 벽에 분필로 남았다.",
     "관계": "오한결의 지휘로 연료고를 지키고, 두감의 난로 점검표에 출고량을 적는다. 황세린의 배급 감시와 잔량을 맞춘다.",
@@ -777,7 +627,7 @@
     "공포": "사흘치 연료가 당직 승려 몫으로만 나가 숙영 난로가 꺼지는 것.",
     "개입": "연료를 들여와 옆문을 봉하거나, 분필 글씨를 남긴 승려를 산중총회에 세울 수 있다."
   },
-  "biography": "충성스러우나 배고픈 대원의 손을 막지 못할 때가 있어 저울을 두 번 본다. 맹세와 생존이 충돌하면 열쇠를 몸에서 떼지 않는다.\n\n- 생업: 연료 출고 분리·야간 열쇠 관리\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 연료고 수좌, 오한결의 실무 담당자\n**생애.** 2126년 세대. 대합실 당직에서 자랐다. 연료고 수좌 자리는 교대 무단 결근 대체 당직으로 열렸다.\n\n**관직.** 품계 수좌. 직함은 연료고 수좌, 오한결의 실무 담당자. 무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다.\n\n**일화.** 난방 연료가 사흘치로 줄자 옆문을 열자는 속삭임이 연료고 벽에 분필로 남았다.\n\n**관계.** 오한결의 지휘로 연료고를 지키고, 두감의 난로 점검표에 출고량을 적는다. 황세린의 배급 감시와 잔량을 맞춘다.\n\n**야망.** 연료고를 장경 필사 당직의 열쇠 아래에 묶어 당직 승려가 창고를 열고 피난 장부를 스스로 깨지 않게 한다.\n\n**공포.** 사흘치 연료가 당직 승려 몫으로만 나가 숙영 난로가 꺼지는 것.\n\n**개입.** 연료를 들여와 옆문을 봉하거나, 분필 글씨를 남긴 승려를 산중총회에 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 55 | 무력 −30 | 물질 −30 | 공동 75 | 원칙 25 | 공개 30 | 자격 40 | 분산 55 | 변혁 5\n- 욕망: 갈망 −5 | 독점 30 | 위험 30 | 과시 −25 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
+  "biography": "충성스러우나 배고픈 대원의 손을 막지 못할 때가 있어 저울을 두 번 본다. 맹세와 생존이 충돌하면 열쇠를 몸에서 떼지 않는다.\n\n- 생업: 연료 출고 분리·야간 열쇠 관리\n- 소속: 안국총림\n- 품계: 수좌\n- 직함: 연료고 수좌, 오한결의 실무 담당자\n**생애.** 2071-03-11 출생, 2126년 개막에 활동했다. 대합실 당직에서 자랐다. 연료고 수좌 당직 기록에는 교대 무단 결근 뒤 대체 당직을 맡은 일이 남아 있다.\n- 용두의 연료 출고 분리·야간 열쇠 관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.\n\n**관직.** 품계 수좌. 직함은 연료고 수좌, 오한결의 실무 담당자. 무장 근무와 연료 출고를 같은 사람이 겸하지 못하게 하고, 야간 열쇠는 윤초아의 필사 당직에만 둔다.\n\n**일화.** 난방 연료가 사흘치로 줄자 옆문을 열자는 속삭임이 연료고 벽에 분필로 남았다.\n\n**관계.** 오한결의 지휘로 연료고를 지키고, 두감의 난로 점검표에 출고량을 적는다. 황세린의 배급 감시와 잔량을 맞춘다.\n\n**야망.** 연료고를 장경 필사 당직의 열쇠 아래에 묶어 당직 승려가 창고를 열고 피난 장부를 스스로 깨지 않게 한다.\n\n**공포.** 사흘치 연료가 당직 승려 몫으로만 나가 숙영 난로가 꺼지는 것.\n\n**개입.** 연료를 들여와 옆문을 봉하거나, 분필 글씨를 남긴 승려를 산중총회에 세울 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −45 | 개방 55 | 무력 −30 | 물질 −30 | 공동 75 | 원칙 25 | 공개 30 | 자격 40 | 분산 55 | 변혁 5\n- 욕망: 갈망 −5 | 독점 30 | 위험 30 | 과시 −25 | 지속 20 | 지향 양성 | 결합 계약동거\n:::",
   "sources": [
     "Cast-State-10"
   ],

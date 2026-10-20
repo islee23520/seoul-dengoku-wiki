@@ -2,9 +2,9 @@
   "id": "person-0153",
   "name": "연지우",
   "title": "서울역 의무실 의무원",
-  "position": "서울역 의무실 의무원 · 태백시 영주",
+  "position": "서울역 의무실 의무원",
   "characterId": "K152",
-  "rank": "영주",
+  "rank": "",
   "commonTier": "T3",
   "occupation": "의무실 침상 배정·약재 배분",
   "gender": "여성",
@@ -453,52 +453,23 @@
             "name": "연지우",
             "url": "/people/person-0153",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "의무실 침상 배정·약재 배분",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/116/items/0/ko",
-                  "quote": "생업: 의무실 침상 배정·약재 배분"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -506,111 +477,41 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 의무실 침상 배정·약재 배분"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 의무실 침상 배정·약재 배분"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "연지우 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       },
@@ -633,52 +534,23 @@
             "name": "연지우",
             "url": "/people/person-0153",
             "state": "S06",
-            "method": "card-lexicon",
-            "role": {
-              "display": "의무실 침상 배정·약재 배분",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-06.json",
-                  "pointer": "/content/116/items/0/ko",
-                  "quote": "생업: 의무실 침상 배정·약재 배분"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -686,193 +558,64 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 의무실 침상 배정·약재 배분"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/117/text/ko",
-                    "quote": "중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Pharmacy/TL? (Herbal)",
                 "ko": "약재",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/116/items/0/ko",
-                    "quote": "생업: 의무실 침상 배정·약재 배분"
-                  }
-                ],
-                "cp": 8,
-                "level": 13
+                "level": 13,
+                "cp": 8
               },
               {
                 "name": "Physician/TL?",
                 "ko": "진료",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-06.json",
-                    "pointer": "/content/118/text/ko",
-                    "quote": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 20,
               "spent": 60,
-              "unspent": 15,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 대한민국정부 규모",
-              "faction_scale": {
-                "state": "S06",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": {
-              "type": "무소속 유랑 부대",
-              "size": 4,
-              "current_location": "운행 중단 역사",
-              "camp": {
-                "name": "연지우 폐역 야영지",
-                "type": "야영지",
-                "description": "운행 중단 역사에 설치한 개인 야영지. 고정 영지 없이 부대와 함께 이동한다.",
-                "facilities": [
-                  "야전 숙소",
-                  "취사 시설",
-                  "무기 보관소"
-                ],
-                "pack_up_time": "반나절"
-              },
-              "note": "S06 출신이나 현재 무소속 — 야영지 기반 유랑 활동"
-            },
-            "territory": null
+              "unspent": 15
+            }
           }
         }
       }
     ]
   },
-  "confirmedHoldings": [
-    {
-      "id": "holding:opening-duchy-51190-S06",
-      "name": {
-        "ko": "태백시 공작령 직영지"
-      },
-      "holderPersonId": "K152",
-      "directLiegePersonId": "K144",
-      "stateId": "S06",
-      "adminRefs": [
-        {
-          "id": "5119051500",
-          "name": "강원특별자치도 태백시 황지동"
-        },
-        {
-          "id": "5119052500",
-          "name": "강원특별자치도 태백시 황연동"
-        },
-        {
-          "id": "5119053500",
-          "name": "강원특별자치도 태백시 삼수동"
-        },
-        {
-          "id": "5119054000",
-          "name": "강원특별자치도 태백시 상장동"
-        },
-        {
-          "id": "5119058500",
-          "name": "강원특별자치도 태백시 문곡소도동"
-        },
-        {
-          "id": "5119059500",
-          "name": "강원특별자치도 태백시 장성동"
-        },
-        {
-          "id": "5119060500",
-          "name": "강원특별자치도 태백시 구문소동"
-        },
-        {
-          "id": "5119061500",
-          "name": "강원특별자치도 태백시 철암동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-51190-S06",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy"
-    }
-  ],
-  "subordinateHoldings": [],
-  "openingTitles": [
+  "politicalIdentities": [
     {
       "id": "title:duchy-51190-S06",
-      "name": "태백시 공작령",
+      "kind": "nonterritorial-political-identity",
       "rank": "duchy",
       "holderPersonId": "K152",
-      "basis": "개막 행정 규모 그룹 51190(duchy) 배분 · 결정적 후보 선정",
       "stateId": "S06",
-      "parentTitleId": "title:kingdom-s06",
-      "jurisdictionRefs": [
-        "5119051500",
-        "5119052500",
-        "5119053500",
-        "5119054000",
-        "5119058500",
-        "5119059500",
-        "5119060500",
-        "5119061500"
+      "politicalParentTitleId": "title:kingdom-s06",
+      "personalLieges": [
+        {
+          "holdingId": "holding:opening-duchy-51190-S06",
+          "directLiegePersonId": "K144"
+        }
       ],
-      "parentTitle": {
-        "id": "title:kingdom-s06",
-        "name": "대한민국정부 왕국",
-        "holderPersonId": "K144"
-      }
+      "directOwnership": false
     }
   ],
+  "confirmedHoldings": [],
   "unit": {
     "type": "수행원",
     "size": 4,
@@ -887,7 +630,6 @@
       "factor": 1.2
     }
   },
-  "territory": null,
   "wandering_force": {
     "type": "무소속 유랑 부대",
     "size": 4,
@@ -936,22 +678,22 @@
   },
   "fields": {
     "생업": "의무실 침상 배정·약재 배분",
-    "소속": "대한민국정부",
-    "품계": "주사",
-    "직함": "서울역 의무실 의무원",
+    "소속": "서울특별시 지방공무원 조직",
+    "직위·직급": "지방보건계",
+    "담당 업무": "서울역 의무실 의무원",
     "가치관": "권위 25 | 개방 0 | 무력 −50 | 물질 −20 | 공동 0 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −50",
     "욕망": "갈망 50 | 독점 5 | 위험 25 | 과시 −5 | 지속 10 | 지향 이성 | 결합 비독점"
   },
   "sections": {
-    "생애": "2126년 세대. 제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.",
-    "관직": "품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.",
+    "생애": "제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.\n- 연지우의 의무실 침상을 배정하고 약재를 나누는 일은 회현동의 업무와 이어진다.",
+    "공무원 직위·직급": "지방보건계. 담당 업무: 서울역 의무실 의무원.",
     "일화": "2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.",
     "관계": "윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
     "야망": "중앙 재난의료 조정망의 현장 진료를 기록청 인준 아래 두어 구급 열차가 군수로 돌지 못하게 한다.",
     "공포": "이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.",
     "개입": "환자만 태운 열차를 호송하거나, 군사호적이 섞인 침상 명단을 분리해 줄 수 있다."
   },
-  "biography": "이름 없는 시신의 손목 표보다 호흡을 먼저 확인하고, 무기와 환자를 한 열차에 태우라는 쪽지를 찢는다. 원칙적이지만 중증 앞에서는 절차를 접는다.\n\n- 생업: 의무실 침상 배정·약재 배분\n- 소속: 대한민국정부\n- 품계: 주사\n- 직함: 서울역 의무실 의무원\n**생애.** 2126년 세대. 제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.\n\n**관직.** 품계 주사. 직함은 서울역 의무실 의무원. 중증도 순 침상을 공개하고, 복무계약서가 붙은 환자는 행정 명부와 분리해 받는다.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.\n\n**야망.** 중앙 재난의료 조정망의 현장 진료를 기록청 인준 아래 두어 구급 열차가 군수로 돌지 못하게 한다.\n\n**공포.** 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.\n\n**개입.** 환자만 태운 열차를 호송하거나, 군사호적이 섞인 침상 명단을 분리해 줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −50 | 물질 −20 | 공동 0 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 50 | 독점 5 | 위험 25 | 과시 −5 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
+  "biography": "이름 없는 시신의 손목 표보다 호흡을 먼저 확인하고, 무기와 환자를 한 열차에 태우라는 쪽지를 찢는다. 원칙적이지만 중증 앞에서는 절차를 접는다.\n\n- 생업: 의무실 침상 배정·약재 배분\n- 소속: 서울특별시 지방공무원 조직\n- 직위·직급: 지방보건계\n- 담당 업무: 서울역 의무실 의무원\n**생애.** 제기동 의무소에서 자랐다. 서울역 의무실 의무원 자리는 가짜 약 봉인으로 열렸다.\n- 연지우의 의무실 침상을 배정하고 약재를 나누는 일은 회현동의 업무와 이어진다.\n\n**공무원 직위·직급.** 지방보건계. 담당 업무: 서울역 의무실 의무원.\n\n**일화.** 2125년 약재 부족으로 처방량을 반으로 나눠 모두에게 나눴다. 이 일로 서울역 의무실 의무원 자리의 서명이 장부에 올랐다.\n\n**관계.** 윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고, 류은비에게 약품 묶음을 빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.\n\n**야망.** 중앙 재난의료 조정망의 현장 진료를 기록청 인준 아래 두어 구급 열차가 군수로 돌지 못하게 한다.\n\n**공포.** 이송 명단이 군사호적과 합쳐져 피난민이 병력 숫자로만 남는 것.\n\n**개입.** 환자만 태운 열차를 호송하거나, 군사호적이 섞인 침상 명단을 분리해 줄 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 25 | 개방 0 | 무력 −50 | 물질 −20 | 공동 0 | 원칙 70 | 공개 −20 | 자격 10 | 분산 −30 | 변혁 −50\n- 욕망: 갈망 50 | 독점 5 | 위험 25 | 과시 −5 | 지속 10 | 지향 이성 | 결합 비독점\n:::",
   "sources": [
     "Cast-State-06"
   ],

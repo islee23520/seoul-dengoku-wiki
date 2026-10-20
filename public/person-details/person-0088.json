@@ -1,7 +1,7 @@
 {
   "id": "person-0088",
   "name": "오경재",
-  "title": "당회장",
+  "title": "종교 연합 왕 · 명부교회 당회장",
   "position": "종교 연합 왕 · 명부교회 당회장",
   "characterId": "K423",
   "rank": "왕 · 당회장",
@@ -26,7 +26,7 @@
     "lore/characters/Core-Characters.json#/content/159",
     "lore/characters/Core-Characters.json#/content/160",
     "lore/chronology/Century-Annals.json#/content/465",
-    "lore/chronology/Century-Annals.json#/content/629",
+    "lore/chronology/Century-Annals.json#/content/625",
     "lore/chronology/Scenario-Timeline.json#/content/7"
   ],
   "familyTree": {
@@ -535,52 +535,23 @@
             "name": "오경재",
             "url": "/people/person-0088",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "총회 당직·유언 원본 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/2/items/1/ko",
-                  "quote": "생업: 총회 당직·유언 원본 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -588,125 +559,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/2/items/1/ko",
-                    "quote": "생업: 총회 당직·유언 원본 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/156/text/ko",
-                    "quote": "유언 3장을 총회 회의실에 공개하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "2126년 취임 뒤, 오경재는 임하준의 유언 3장을 총회 회의실에 공개하였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/156/text/ko",
-                    "quote": "펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "단철공."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/158/text/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회기",
-              "type": "초소 영지",
-              "station": "회기",
-              "state": "S04",
-              "settlement": {
-                "name": "회기 정착지",
-                "type": "정착지",
-                "description": "회기 일대 고정 거점"
-              },
-              "note": "S04 회기 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -730,52 +616,23 @@
             "name": "오경재",
             "url": "/people/person-0088",
             "state": "S04",
-            "method": "card-lexicon",
-            "role": {
-              "display": "총회 당직·유언 원본 관리",
-              "evidence": [
-                {
-                  "path": "lore/characters/Cast-State-04.json",
-                  "pointer": "/content/2/items/1/ko",
-                  "quote": "생업: 총회 당직·유언 원본 관리"
-                }
-              ]
-            },
+            "band": "일반 인물",
             "attributes": {
               "ST": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "DX": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               },
               "IQ": {
                 "value": 12,
-                "cp": 40,
-                "rule": "card-actions",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다."
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다."
-                  }
-                ]
+                "cp": 40
               },
               "HT": {
                 "value": 10,
-                "cp": 0,
-                "rule": "card-actions",
-                "evidence": []
+                "cp": 0
               }
             },
             "traits": [],
@@ -783,125 +640,40 @@
               {
                 "name": "Administration",
                 "ko": "행정·기록",
-                "attr": "IQ",
-                "diff": "A",
-                "tier": "B",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/2/items/1/ko",
-                    "quote": "생업: 총회 당직·유언 원본 관리"
-                  },
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/156/text/ko",
-                    "quote": "유언 3장을 총회 회의실에 공개하였다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/159/text/ko",
-                    "quote": "2126년 취임 뒤, 오경재는 임하준의 유언 3장을 총회 회의실에 공개하였다."
-                  }
-                ],
-                "cp": 8,
-                "level": 14
+                "level": 14,
+                "cp": 8
               },
               {
                 "name": "Diplomacy",
                 "ko": "교섭·조정",
-                "attr": "IQ",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/156/text/ko",
-                    "quote": "펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다."
-                  }
-                ],
-                "cp": 4,
-                "level": 12
+                "level": 12,
+                "cp": 4
               },
               {
                 "name": "Breath Control",
                 "ko": "호흡 수련(심법)",
-                "attr": "HT",
-                "diff": "H",
-                "tier": "C",
-                "evidence": [
-                  {
-                    "path": "lore/characters/Cast-State-04.json",
-                    "pointer": "/content/1/text/ko",
-                    "quote": "단철공."
-                  },
-                  {
-                    "path": "lore/characters/Core-Characters.json",
-                    "pointer": "/content/158/text/ko",
-                    "quote": "단철공."
-                  }
-                ],
-                "cp": 4,
-                "level": 10
+                "level": 10,
+                "cp": 4
               }
             ],
-            "languages": [],
             "secondary": {
               "HP": 10,
+              "FP": 10,
               "Will": 12,
               "Per": 12,
-              "FP": 10,
               "BasicSpeed": 5,
               "BasicMove": 5,
               "BasicLift": 20,
               "Dodge": 8
             },
             "cp": {
+              "total": 75,
               "attributes": 40,
               "advantages": 0,
               "disadvantages": 0,
               "skills": 16,
               "spent": 56,
-              "unspent": 19,
-              "total": 75
-            },
-            "band": "일반 인물",
-            "baseline": false,
-            "unit": {
-              "type": "수행원",
-              "size": 4,
-              "quality": "일반",
-              "composition": [
-                "수행원"
-              ],
-              "note": "개인 수행 요원 — 강세력 명부교회 규모",
-              "faction_scale": {
-                "state": "S04",
-                "tier": "강세력",
-                "factor": 1.2
-              }
-            },
-            "wandering_force": null,
-            "territory": {
-              "fief_name": "회기",
-              "type": "초소 영지",
-              "station": "회기",
-              "state": "S04",
-              "settlement": {
-                "name": "회기 정착지",
-                "type": "정착지",
-                "description": "회기 일대 고정 거점"
-              },
-              "note": "S04 회기 일대 관할 영지"
+              "unspent": 19
             }
           }
         }
@@ -956,1066 +728,6 @@
     }
   ],
   "subordinateHoldings": [
-    {
-      "id": "holding:opening-duchy-41450-S04",
-      "name": {
-        "ko": "하남시 공작령 직영지"
-      },
-      "holderPersonId": "K105",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4145051000",
-          "name": "경기도 하남시 천현동"
-        },
-        {
-          "id": "4145052000",
-          "name": "경기도 하남시 신장1동"
-        },
-        {
-          "id": "4145053000",
-          "name": "경기도 하남시 신장2동"
-        },
-        {
-          "id": "4145054000",
-          "name": "경기도 하남시 덕풍1동"
-        },
-        {
-          "id": "4145055000",
-          "name": "경기도 하남시 덕풍2동"
-        },
-        {
-          "id": "4145056000",
-          "name": "경기도 하남시 덕풍3동"
-        },
-        {
-          "id": "4145058000",
-          "name": "경기도 하남시 감북동"
-        },
-        {
-          "id": "4145058200",
-          "name": "경기도 하남시 감일동"
-        },
-        {
-          "id": "4145058500",
-          "name": "경기도 하남시 위례동"
-        },
-        {
-          "id": "4145059000",
-          "name": "경기도 하남시 춘궁동"
-        },
-        {
-          "id": "4145060000",
-          "name": "경기도 하남시 초이동"
-        },
-        {
-          "id": "4145061000",
-          "name": "경기도 하남시 미사1동"
-        },
-        {
-          "id": "4145062000",
-          "name": "경기도 하남시 미사2동"
-        },
-        {
-          "id": "4145063000",
-          "name": "경기도 하남시 미사3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41450-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "명우솔",
-      "holderRoute": "/people/person-0106"
-    },
-    {
-      "id": "holding:opening-duchy-41500-S04",
-      "name": {
-        "ko": "이천시 공작령 직영지"
-      },
-      "holderPersonId": "K088",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4150025000",
-          "name": "경기도 이천시 장호원읍"
-        },
-        {
-          "id": "4150025300",
-          "name": "경기도 이천시 부발읍"
-        },
-        {
-          "id": "4150031000",
-          "name": "경기도 이천시 신둔면"
-        },
-        {
-          "id": "4150032000",
-          "name": "경기도 이천시 백사면"
-        },
-        {
-          "id": "4150033000",
-          "name": "경기도 이천시 호법면"
-        },
-        {
-          "id": "4150034000",
-          "name": "경기도 이천시 마장면"
-        },
-        {
-          "id": "4150035000",
-          "name": "경기도 이천시 대월면"
-        },
-        {
-          "id": "4150036000",
-          "name": "경기도 이천시 모가면"
-        },
-        {
-          "id": "4150037000",
-          "name": "경기도 이천시 설성면"
-        },
-        {
-          "id": "4150038000",
-          "name": "경기도 이천시 율면"
-        },
-        {
-          "id": "4150051000",
-          "name": "경기도 이천시 창전동"
-        },
-        {
-          "id": "4150051500",
-          "name": "경기도 이천시 증포동"
-        },
-        {
-          "id": "4150052000",
-          "name": "경기도 이천시 중리동"
-        },
-        {
-          "id": "4150053000",
-          "name": "경기도 이천시 관고동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41500-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "한소미",
-      "holderRoute": "/people/person-0089"
-    },
-    {
-      "id": "holding:opening-duchy-41550-S04",
-      "name": {
-        "ko": "안성시 공작령 직영지"
-      },
-      "holderPersonId": "K094",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4155025000",
-          "name": "경기도 안성시 공도읍"
-        },
-        {
-          "id": "4155031000",
-          "name": "경기도 안성시 보개면"
-        },
-        {
-          "id": "4155032000",
-          "name": "경기도 안성시 금광면"
-        },
-        {
-          "id": "4155033000",
-          "name": "경기도 안성시 서운면"
-        },
-        {
-          "id": "4155034000",
-          "name": "경기도 안성시 미양면"
-        },
-        {
-          "id": "4155035000",
-          "name": "경기도 안성시 대덕면"
-        },
-        {
-          "id": "4155036000",
-          "name": "경기도 안성시 양성면"
-        },
-        {
-          "id": "4155038000",
-          "name": "경기도 안성시 원곡면"
-        },
-        {
-          "id": "4155039000",
-          "name": "경기도 안성시 일죽면"
-        },
-        {
-          "id": "4155040000",
-          "name": "경기도 안성시 죽산면"
-        },
-        {
-          "id": "4155041000",
-          "name": "경기도 안성시 삼죽면"
-        },
-        {
-          "id": "4155042000",
-          "name": "경기도 안성시 고삼면"
-        },
-        {
-          "id": "4155051000",
-          "name": "경기도 안성시 안성1동"
-        },
-        {
-          "id": "4155052000",
-          "name": "경기도 안성시 안성2동"
-        },
-        {
-          "id": "4155053000",
-          "name": "경기도 안성시 안성3동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41550-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "장민재",
-      "holderRoute": "/people/person-0095"
-    },
-    {
-      "id": "holding:opening-duchy-41610-S04",
-      "name": {
-        "ko": "광주시 공작령 직영지"
-      },
-      "holderPersonId": "K095",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4161025300",
-          "name": "경기도 광주시 초월읍"
-        },
-        {
-          "id": "4161025900",
-          "name": "경기도 광주시 곤지암읍"
-        },
-        {
-          "id": "4161033000",
-          "name": "경기도 광주시 도척면"
-        },
-        {
-          "id": "4161034000",
-          "name": "경기도 광주시 퇴촌면"
-        },
-        {
-          "id": "4161035000",
-          "name": "경기도 광주시 남종면"
-        },
-        {
-          "id": "4161037000",
-          "name": "경기도 광주시 남한산성면"
-        },
-        {
-          "id": "4161051000",
-          "name": "경기도 광주시 경안동"
-        },
-        {
-          "id": "4161052000",
-          "name": "경기도 광주시 송정동"
-        },
-        {
-          "id": "4161054000",
-          "name": "경기도 광주시 쌍령동"
-        },
-        {
-          "id": "4161055000",
-          "name": "경기도 광주시 탄벌동"
-        },
-        {
-          "id": "4161056000",
-          "name": "경기도 광주시 광남1동"
-        },
-        {
-          "id": "4161057000",
-          "name": "경기도 광주시 광남2동"
-        },
-        {
-          "id": "4161058000",
-          "name": "경기도 광주시 오포1동"
-        },
-        {
-          "id": "4161059000",
-          "name": "경기도 광주시 오포2동"
-        },
-        {
-          "id": "4161060000",
-          "name": "경기도 광주시 신현동"
-        },
-        {
-          "id": "4161061000",
-          "name": "경기도 광주시 능평동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41610-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "유하은",
-      "holderRoute": "/people/person-0096"
-    },
-    {
-      "id": "holding:opening-duchy-41670-S04",
-      "name": {
-        "ko": "여주시 공작령 직영지"
-      },
-      "holderPersonId": "K106",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4167025000",
-          "name": "경기도 여주시 가남읍"
-        },
-        {
-          "id": "4167031000",
-          "name": "경기도 여주시 점동면"
-        },
-        {
-          "id": "4167032000",
-          "name": "경기도 여주시 흥천면"
-        },
-        {
-          "id": "4167033000",
-          "name": "경기도 여주시 금사면"
-        },
-        {
-          "id": "4167034500",
-          "name": "경기도 여주시 세종대왕면"
-        },
-        {
-          "id": "4167035000",
-          "name": "경기도 여주시 대신면"
-        },
-        {
-          "id": "4167036000",
-          "name": "경기도 여주시 북내면"
-        },
-        {
-          "id": "4167037000",
-          "name": "경기도 여주시 강천면"
-        },
-        {
-          "id": "4167038000",
-          "name": "경기도 여주시 산북면"
-        },
-        {
-          "id": "4167051000",
-          "name": "경기도 여주시 여흥동"
-        },
-        {
-          "id": "4167052000",
-          "name": "경기도 여주시 중앙동"
-        },
-        {
-          "id": "4167053000",
-          "name": "경기도 여주시 오학동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41670-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "제바름",
-      "holderRoute": "/people/person-0107"
-    },
-    {
-      "id": "holding:opening-duchy-41830-S04",
-      "name": {
-        "ko": "양평군 공작령 직영지"
-      },
-      "holderPersonId": "K097",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4183025000",
-          "name": "경기도 양평군 양평읍"
-        },
-        {
-          "id": "4183031000",
-          "name": "경기도 양평군 강상면"
-        },
-        {
-          "id": "4183032000",
-          "name": "경기도 양평군 강하면"
-        },
-        {
-          "id": "4183033000",
-          "name": "경기도 양평군 양서면"
-        },
-        {
-          "id": "4183034000",
-          "name": "경기도 양평군 옥천면"
-        },
-        {
-          "id": "4183035000",
-          "name": "경기도 양평군 서종면"
-        },
-        {
-          "id": "4183036000",
-          "name": "경기도 양평군 단월면"
-        },
-        {
-          "id": "4183037000",
-          "name": "경기도 양평군 청운면"
-        },
-        {
-          "id": "4183038000",
-          "name": "경기도 양평군 양동면"
-        },
-        {
-          "id": "4183039500",
-          "name": "경기도 양평군 지평면"
-        },
-        {
-          "id": "4183040000",
-          "name": "경기도 양평군 용문면"
-        },
-        {
-          "id": "4183041000",
-          "name": "경기도 양평군 개군면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-41830-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "구도영",
-      "holderRoute": "/people/person-0098"
-    },
-    {
-      "id": "holding:opening-duchy-43130-S04",
-      "name": {
-        "ko": "충주시 공작령 직영지"
-      },
-      "holderPersonId": "K112",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4313025000",
-          "name": "충청북도 충주시 주덕읍"
-        },
-        {
-          "id": "4313031000",
-          "name": "충청북도 충주시 살미면"
-        },
-        {
-          "id": "4313032500",
-          "name": "충청북도 충주시 수안보면"
-        },
-        {
-          "id": "4313033500",
-          "name": "충청북도 충주시 대소원면"
-        },
-        {
-          "id": "4313035000",
-          "name": "충청북도 충주시 신니면"
-        },
-        {
-          "id": "4313036000",
-          "name": "충청북도 충주시 노은면"
-        },
-        {
-          "id": "4313037000",
-          "name": "충청북도 충주시 앙성면"
-        },
-        {
-          "id": "4313038500",
-          "name": "충청북도 충주시 중앙탑면"
-        },
-        {
-          "id": "4313039000",
-          "name": "충청북도 충주시 금가면"
-        },
-        {
-          "id": "4313040000",
-          "name": "충청북도 충주시 동량면"
-        },
-        {
-          "id": "4313041000",
-          "name": "충청북도 충주시 산척면"
-        },
-        {
-          "id": "4313042000",
-          "name": "충청북도 충주시 엄정면"
-        },
-        {
-          "id": "4313043000",
-          "name": "충청북도 충주시 소태면"
-        },
-        {
-          "id": "4313051500",
-          "name": "충청북도 충주시 성내·충인동"
-        },
-        {
-          "id": "4313053500",
-          "name": "충청북도 충주시 교현·안림동"
-        },
-        {
-          "id": "4313054000",
-          "name": "충청북도 충주시 교현2동"
-        },
-        {
-          "id": "4313055000",
-          "name": "충청북도 충주시 용산동"
-        },
-        {
-          "id": "4313056000",
-          "name": "충청북도 충주시 지현동"
-        },
-        {
-          "id": "4313057100",
-          "name": "충청북도 충주시 문화동"
-        },
-        {
-          "id": "4313058000",
-          "name": "충청북도 충주시 호암·직동"
-        },
-        {
-          "id": "4313060500",
-          "name": "충청북도 충주시 달천동"
-        },
-        {
-          "id": "4313061000",
-          "name": "충청북도 충주시 봉방동"
-        },
-        {
-          "id": "4313062500",
-          "name": "충청북도 충주시 칠금·금릉동"
-        },
-        {
-          "id": "4313063000",
-          "name": "충청북도 충주시 연수동"
-        },
-        {
-          "id": "4313064000",
-          "name": "충청북도 충주시 목행·용탄동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43130-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "엄미래",
-      "holderRoute": "/people/person-0113"
-    },
-    {
-      "id": "holding:opening-duchy-43150-S04",
-      "name": {
-        "ko": "제천시 공작령 직영지"
-      },
-      "holderPersonId": "K443",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4315025000",
-          "name": "충청북도 제천시 봉양읍"
-        },
-        {
-          "id": "4315031000",
-          "name": "충청북도 제천시 금성면"
-        },
-        {
-          "id": "4315032000",
-          "name": "충청북도 제천시 청풍면"
-        },
-        {
-          "id": "4315033000",
-          "name": "충청북도 제천시 수산면"
-        },
-        {
-          "id": "4315034000",
-          "name": "충청북도 제천시 덕산면"
-        },
-        {
-          "id": "4315035000",
-          "name": "충청북도 제천시 한수면"
-        },
-        {
-          "id": "4315036000",
-          "name": "충청북도 제천시 백운면"
-        },
-        {
-          "id": "4315038000",
-          "name": "충청북도 제천시 송학면"
-        },
-        {
-          "id": "4315051000",
-          "name": "충청북도 제천시 교동"
-        },
-        {
-          "id": "4315051800",
-          "name": "충청북도 제천시 의림지동"
-        },
-        {
-          "id": "4315052800",
-          "name": "충청북도 제천시 중앙동"
-        },
-        {
-          "id": "4315053700",
-          "name": "충청북도 제천시 남현동"
-        },
-        {
-          "id": "4315054700",
-          "name": "충청북도 제천시 영서동"
-        },
-        {
-          "id": "4315056000",
-          "name": "충청북도 제천시 용두동"
-        },
-        {
-          "id": "4315057700",
-          "name": "충청북도 제천시 신백동"
-        },
-        {
-          "id": "4315059000",
-          "name": "충청북도 제천시 청전동"
-        },
-        {
-          "id": "4315060500",
-          "name": "충청북도 제천시 화산동"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43150-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "고영호",
-      "holderRoute": "/people/person-0443"
-    },
-    {
-      "id": "holding:opening-duchy-43720-S04",
-      "name": {
-        "ko": "보은군 공작령 직영지"
-      },
-      "holderPersonId": "K459",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4372025000",
-          "name": "충청북도 보은군 보은읍"
-        },
-        {
-          "id": "4372031500",
-          "name": "충청북도 보은군 속리산면"
-        },
-        {
-          "id": "4372032500",
-          "name": "충청북도 보은군 장안면"
-        },
-        {
-          "id": "4372033000",
-          "name": "충청북도 보은군 마로면"
-        },
-        {
-          "id": "4372034000",
-          "name": "충청북도 보은군 탄부면"
-        },
-        {
-          "id": "4372035000",
-          "name": "충청북도 보은군 삼승면"
-        },
-        {
-          "id": "4372036000",
-          "name": "충청북도 보은군 수한면"
-        },
-        {
-          "id": "4372037000",
-          "name": "충청북도 보은군 회남면"
-        },
-        {
-          "id": "4372038500",
-          "name": "충청북도 보은군 회인면"
-        },
-        {
-          "id": "4372039000",
-          "name": "충청북도 보은군 내북면"
-        },
-        {
-          "id": "4372040000",
-          "name": "충청북도 보은군 산외면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43720-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "우경민",
-      "holderRoute": "/people/person-0459"
-    },
-    {
-      "id": "holding:opening-duchy-43730-S04",
-      "name": {
-        "ko": "옥천군 공작령 직영지"
-      },
-      "holderPersonId": "K507",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4373025000",
-          "name": "충청북도 옥천군 옥천읍"
-        },
-        {
-          "id": "4373031000",
-          "name": "충청북도 옥천군 동이면"
-        },
-        {
-          "id": "4373032000",
-          "name": "충청북도 옥천군 안남면"
-        },
-        {
-          "id": "4373033000",
-          "name": "충청북도 옥천군 안내면"
-        },
-        {
-          "id": "4373034000",
-          "name": "충청북도 옥천군 청성면"
-        },
-        {
-          "id": "4373035000",
-          "name": "충청북도 옥천군 청산면"
-        },
-        {
-          "id": "4373036000",
-          "name": "충청북도 옥천군 이원면"
-        },
-        {
-          "id": "4373037000",
-          "name": "충청북도 옥천군 군서면"
-        },
-        {
-          "id": "4373038000",
-          "name": "충청북도 옥천군 군북면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43730-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "정바준",
-      "holderRoute": "/people/person-0507"
-    },
-    {
-      "id": "holding:opening-duchy-43740-S04",
-      "name": {
-        "ko": "영동군 공작령 직영지"
-      },
-      "holderPersonId": "K555",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4374025000",
-          "name": "충청북도 영동군 영동읍"
-        },
-        {
-          "id": "4374031000",
-          "name": "충청북도 영동군 용산면"
-        },
-        {
-          "id": "4374032000",
-          "name": "충청북도 영동군 황간면"
-        },
-        {
-          "id": "4374033500",
-          "name": "충청북도 영동군 추풍령면"
-        },
-        {
-          "id": "4374034000",
-          "name": "충청북도 영동군 매곡면"
-        },
-        {
-          "id": "4374035000",
-          "name": "충청북도 영동군 상촌면"
-        },
-        {
-          "id": "4374036000",
-          "name": "충청북도 영동군 양강면"
-        },
-        {
-          "id": "4374037000",
-          "name": "충청북도 영동군 용화면"
-        },
-        {
-          "id": "4374038000",
-          "name": "충청북도 영동군 학산면"
-        },
-        {
-          "id": "4374039000",
-          "name": "충청북도 영동군 양산면"
-        },
-        {
-          "id": "4374040000",
-          "name": "충청북도 영동군 심천면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43740-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "서구서",
-      "holderRoute": "/people/person-0555"
-    },
-    {
-      "id": "holding:opening-duchy-43745-S04",
-      "name": {
-        "ko": "증평군 공작령 직영지"
-      },
-      "holderPersonId": "K603",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4374525000",
-          "name": "충청북도 증평군 증평읍"
-        },
-        {
-          "id": "4374531000",
-          "name": "충청북도 증평군 도안면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43745-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "고별호",
-      "holderRoute": "/people/person-0603"
-    },
-    {
-      "id": "holding:opening-duchy-43750-S04",
-      "name": {
-        "ko": "진천군 공작령 직영지"
-      },
-      "holderPersonId": "K651",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4375025000",
-          "name": "충청북도 진천군 진천읍"
-        },
-        {
-          "id": "4375025300",
-          "name": "충청북도 진천군 덕산읍"
-        },
-        {
-          "id": "4375032000",
-          "name": "충청북도 진천군 초평면"
-        },
-        {
-          "id": "4375033000",
-          "name": "충청북도 진천군 문백면"
-        },
-        {
-          "id": "4375034000",
-          "name": "충청북도 진천군 백곡면"
-        },
-        {
-          "id": "4375035000",
-          "name": "충청북도 진천군 이월면"
-        },
-        {
-          "id": "4375037000",
-          "name": "충청북도 진천군 광혜원면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43750-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "남남원",
-      "holderRoute": "/people/person-0651"
-    },
-    {
-      "id": "holding:opening-duchy-43760-S04",
-      "name": {
-        "ko": "괴산군 공작령 직영지"
-      },
-      "holderPersonId": "K699",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4376025000",
-          "name": "충청북도 괴산군 괴산읍"
-        },
-        {
-          "id": "4376031000",
-          "name": "충청북도 괴산군 감물면"
-        },
-        {
-          "id": "4376032000",
-          "name": "충청북도 괴산군 장연면"
-        },
-        {
-          "id": "4376033000",
-          "name": "충청북도 괴산군 연풍면"
-        },
-        {
-          "id": "4376034000",
-          "name": "충청북도 괴산군 칠성면"
-        },
-        {
-          "id": "4376035000",
-          "name": "충청북도 괴산군 문광면"
-        },
-        {
-          "id": "4376036000",
-          "name": "충청북도 괴산군 청천면"
-        },
-        {
-          "id": "4376037000",
-          "name": "충청북도 괴산군 청안면"
-        },
-        {
-          "id": "4376039000",
-          "name": "충청북도 괴산군 사리면"
-        },
-        {
-          "id": "4376040000",
-          "name": "충청북도 괴산군 소수면"
-        },
-        {
-          "id": "4376041000",
-          "name": "충청북도 괴산군 불정면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43760-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "구서결",
-      "holderRoute": "/people/person-0699"
-    },
-    {
-      "id": "holding:opening-duchy-43770-S04",
-      "name": {
-        "ko": "음성군 공작령 직영지"
-      },
-      "holderPersonId": "K747",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4377025000",
-          "name": "충청북도 음성군 음성읍"
-        },
-        {
-          "id": "4377025300",
-          "name": "충청북도 음성군 금왕읍"
-        },
-        {
-          "id": "4377025600",
-          "name": "충청북도 음성군 대소읍"
-        },
-        {
-          "id": "4377031000",
-          "name": "충청북도 음성군 소이면"
-        },
-        {
-          "id": "4377032000",
-          "name": "충청북도 음성군 원남면"
-        },
-        {
-          "id": "4377033000",
-          "name": "충청북도 음성군 맹동면"
-        },
-        {
-          "id": "4377035000",
-          "name": "충청북도 음성군 삼성면"
-        },
-        {
-          "id": "4377036000",
-          "name": "충청북도 음성군 생극면"
-        },
-        {
-          "id": "4377037000",
-          "name": "충청북도 음성군 감곡면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43770-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "윤북율",
-      "holderRoute": "/people/person-0747"
-    },
-    {
-      "id": "holding:opening-duchy-43800-S04",
-      "name": {
-        "ko": "단양군 공작령 직영지"
-      },
-      "holderPersonId": "K779",
-      "directLiegePersonId": "K423",
-      "stateId": "S04",
-      "adminRefs": [
-        {
-          "id": "4380025000",
-          "name": "충청북도 단양군 단양읍"
-        },
-        {
-          "id": "4380025300",
-          "name": "충청북도 단양군 매포읍"
-        },
-        {
-          "id": "4380031000",
-          "name": "충청북도 단양군 대강면"
-        },
-        {
-          "id": "4380032000",
-          "name": "충청북도 단양군 가곡면"
-        },
-        {
-          "id": "4380033000",
-          "name": "충청북도 단양군 영춘면"
-        },
-        {
-          "id": "4380034000",
-          "name": "충청북도 단양군 어상천면"
-        },
-        {
-          "id": "4380035000",
-          "name": "충청북도 단양군 적성면"
-        },
-        {
-          "id": "4380036000",
-          "name": "충청북도 단양군 단성면"
-        }
-      ],
-      "componentRefs": [],
-      "titleId": "title:duchy-43800-S04",
-      "geometrySource": null,
-      "territorialScale": null,
-      "formalTitleRank": "duchy",
-      "holderName": "김아호",
-      "holderRoute": "/people/person-0779"
-    },
     {
       "id": "holding:opening-duchy-gu-11200-S04",
       "name": {
@@ -2421,331 +1133,6 @@
       "stateId": "S04",
       "parentTitleId": null,
       "jurisdictionRefs": [
-        "4113151000",
-        "4113152000",
-        "4113153000",
-        "4113154000",
-        "4113155000",
-        "4113156000",
-        "4113156100",
-        "4113157000",
-        "4113158000",
-        "4113159000",
-        "4113160000",
-        "4113161000",
-        "4113162000",
-        "4113162500",
-        "4113163000",
-        "4113164000",
-        "4113165000",
-        "4113351000",
-        "4113352500",
-        "4113353000",
-        "4113354000",
-        "4113355000",
-        "4113356000",
-        "4113357000",
-        "4113358000",
-        "4113359000",
-        "4113366000",
-        "4113367000",
-        "4113551000",
-        "4113552000",
-        "4113553000",
-        "4113554000",
-        "4113554500",
-        "4113555000",
-        "4113556000",
-        "4113557000",
-        "4113558000",
-        "4113559000",
-        "4113560000",
-        "4113561000",
-        "4113562000",
-        "4113563000",
-        "4113564000",
-        "4113565000",
-        "4113565500",
-        "4113565700",
-        "4113566200",
-        "4113566500",
-        "4113567000",
-        "4113568000",
-        "4145051000",
-        "4145052000",
-        "4145053000",
-        "4145054000",
-        "4145055000",
-        "4145056000",
-        "4145058000",
-        "4145058200",
-        "4145058500",
-        "4145059000",
-        "4145060000",
-        "4145061000",
-        "4145062000",
-        "4145063000",
-        "4146125000",
-        "4146125300",
-        "4146125600",
-        "4146125900",
-        "4146126200",
-        "4146134000",
-        "4146135000",
-        "4146151000",
-        "4146152500",
-        "4146152600",
-        "4146153500",
-        "4146153600",
-        "4146154000",
-        "4146351000",
-        "4146351600",
-        "4146351700",
-        "4146352000",
-        "4146353000",
-        "4146353500",
-        "4146354000",
-        "4146355000",
-        "4146356000",
-        "4146357000",
-        "4146357200",
-        "4146357500",
-        "4146357700",
-        "4146358600",
-        "4146359000",
-        "4146551000",
-        "4146552000",
-        "4146553000",
-        "4146554000",
-        "4146555000",
-        "4146555500",
-        "4146556000",
-        "4146557000",
-        "4146558000",
-        "4146558500",
-        "4146559000",
-        "4150025000",
-        "4150025300",
-        "4150031000",
-        "4150032000",
-        "4150033000",
-        "4150034000",
-        "4150035000",
-        "4150036000",
-        "4150037000",
-        "4150038000",
-        "4150051000",
-        "4150051500",
-        "4150052000",
-        "4150053000",
-        "4155025000",
-        "4155031000",
-        "4155032000",
-        "4155033000",
-        "4155034000",
-        "4155035000",
-        "4155036000",
-        "4155038000",
-        "4155039000",
-        "4155040000",
-        "4155041000",
-        "4155042000",
-        "4155051000",
-        "4155052000",
-        "4155053000",
-        "4161025300",
-        "4161025900",
-        "4161033000",
-        "4161034000",
-        "4161035000",
-        "4161037000",
-        "4161051000",
-        "4161052000",
-        "4161054000",
-        "4161055000",
-        "4161056000",
-        "4161057000",
-        "4161058000",
-        "4161059000",
-        "4161060000",
-        "4161061000",
-        "4167025000",
-        "4167031000",
-        "4167032000",
-        "4167033000",
-        "4167034500",
-        "4167035000",
-        "4167036000",
-        "4167037000",
-        "4167038000",
-        "4167051000",
-        "4167052000",
-        "4167053000",
-        "4183025000",
-        "4183031000",
-        "4183032000",
-        "4183033000",
-        "4183034000",
-        "4183035000",
-        "4183036000",
-        "4183037000",
-        "4183038000",
-        "4183039500",
-        "4183040000",
-        "4183041000",
-        "4311131000",
-        "4311132000",
-        "4311133000",
-        "4311134000",
-        "4311135000",
-        "4311152500",
-        "4311154500",
-        "4311162000",
-        "4311167000",
-        "4311168000",
-        "4311169000",
-        "4311172000",
-        "4311173000",
-        "4311231000",
-        "4311232000",
-        "4311251000",
-        "4311252000",
-        "4311253000",
-        "4311254000",
-        "4311255000",
-        "4311256000",
-        "4311257000",
-        "4311258000",
-        "4311259000",
-        "4311325000",
-        "4311331000",
-        "4311332000",
-        "4311370000",
-        "4311374100",
-        "4311374200",
-        "4311374700",
-        "4311375100",
-        "4311375600",
-        "4311376000",
-        "4311377000",
-        "4311425000",
-        "4311425300",
-        "4311431000",
-        "4311451000",
-        "4311452000",
-        "4311453000",
-        "4311454000",
-        "4311455000",
-        "4313025000",
-        "4313031000",
-        "4313032500",
-        "4313033500",
-        "4313035000",
-        "4313036000",
-        "4313037000",
-        "4313038500",
-        "4313039000",
-        "4313040000",
-        "4313041000",
-        "4313042000",
-        "4313043000",
-        "4313051500",
-        "4313053500",
-        "4313054000",
-        "4313055000",
-        "4313056000",
-        "4313057100",
-        "4313058000",
-        "4313060500",
-        "4313061000",
-        "4313062500",
-        "4313063000",
-        "4313064000",
-        "4315025000",
-        "4315031000",
-        "4315032000",
-        "4315033000",
-        "4315034000",
-        "4315035000",
-        "4315036000",
-        "4315038000",
-        "4315051000",
-        "4315051800",
-        "4315052800",
-        "4315053700",
-        "4315054700",
-        "4315056000",
-        "4315057700",
-        "4315059000",
-        "4315060500",
-        "4372025000",
-        "4372031500",
-        "4372032500",
-        "4372033000",
-        "4372034000",
-        "4372035000",
-        "4372036000",
-        "4372037000",
-        "4372038500",
-        "4372039000",
-        "4372040000",
-        "4373025000",
-        "4373031000",
-        "4373032000",
-        "4373033000",
-        "4373034000",
-        "4373035000",
-        "4373036000",
-        "4373037000",
-        "4373038000",
-        "4374025000",
-        "4374031000",
-        "4374032000",
-        "4374033500",
-        "4374034000",
-        "4374035000",
-        "4374036000",
-        "4374037000",
-        "4374038000",
-        "4374039000",
-        "4374040000",
-        "4374525000",
-        "4374531000",
-        "4375025000",
-        "4375025300",
-        "4375032000",
-        "4375033000",
-        "4375034000",
-        "4375035000",
-        "4375037000",
-        "4376025000",
-        "4376031000",
-        "4376032000",
-        "4376033000",
-        "4376034000",
-        "4376035000",
-        "4376036000",
-        "4376037000",
-        "4376039000",
-        "4376040000",
-        "4376041000",
-        "4377025000",
-        "4377025300",
-        "4377025600",
-        "4377031000",
-        "4377032000",
-        "4377033000",
-        "4377035000",
-        "4377036000",
-        "4377037000",
-        "4380025000",
-        "4380025300",
-        "4380031000",
-        "4380032000",
-        "4380033000",
-        "4380034000",
-        "4380035000",
-        "4380036000",
         "region:1120052000",
         "region:1120053500",
         "region:1120054000",
@@ -2844,18 +1231,6 @@
       "factor": 1.2
     }
   },
-  "territory": {
-    "fief_name": "회기",
-    "type": "초소 영지",
-    "station": "회기",
-    "state": "S04",
-    "settlement": {
-      "name": "회기 정착지",
-      "type": "정착지",
-      "description": "회기 일대 고정 거점"
-    },
-    "note": "S04 회기 일대 관할 영지"
-  },
   "wandering_force": null,
   "clan": {
     "id": "c624-d574-c8fc",
@@ -2894,13 +1269,9 @@
     "직함": "명부교회 당회장"
   },
   "sections": {
-    "생애": "2126년 세대. 종로구 대학로3길 29 총회회관의 마지막 당직 수습생. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원이 펌프 정비를 배운 것과 달리, 오경재는 오씨 가문의 당회장 직무를 이어받아 2126년에 당회장으로 착좌했다. 명부교회의 당회장 목사직은 오씨 가문이 부자 세습하고, 장로의 인준 투표는 의례로 남는다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.",
-    "관직": "품계 당회장. 직함은 명부교회 당회장. 생업은 오씨 가문이 부자 세습하는 당회장 목사.",
-    "일화": "취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다. 공개가 윤서린의 인준 보류를 깨뜨리는 강한 신호가 됐다.",
-    "가문": "오씨 가문. 당회장 목사직은 이 가문이 부자 세습한다. 장로의 인준 투표는 의례다. HC14 여의도장부가는 장필규가 맡는다.",
-    "관계": "임초원과 펌프 기술 동맹. 한재목과 정수 공정 거래. 윤서린의 인준권을 견제.\n\n- 소속: 명부교회\n- 생업: 총회 당직·유언 원본 관리\n- 품계: 당회장\n- 직함: 명부교회 당회장"
+    "생애": "2126년 세대. 오경재는 종로구 대학로3길 29 총회회관의 마지막 당직 수습생이었다. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원은 펌프 정비를 배웠고 오경재는 오씨 가문 출신으로서 2126년 총회 인준을 받아 당회장이 되었다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.\n관직. 품계 당회장. 직함은 명부교회 당회장.\n일화. 취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다. 공개가 윤서린의 인준 보류를 깨뜨리는 강한 신호가 됐다.\n가문. 오경재는 오씨 가문 출신이다. HC14 여의도장부가는 장필규가 맡는다.\n관계. 임초원과 펌프 기술 동맹. 한재목과 정수 공정 거래. 윤서린의 인준권을 견제.\n\n- 소속: 명부교회\n- 생업: 총회 당직·유언 원본 관리\n- 품계: 당회장\n- 직함: 명부교회 당회장\n- 오경재의 명부교회 당회장 업무는 삼성1동과 연결된다.\n- 오경재의 당직과 유언 원본 관리 업무는 종로5·6가동과 연결된다."
   },
-  "biography": "**생애.** 2126년 세대. 종로구 대학로3길 29 총회회관의 마지막 당직 수습생. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원이 펌프 정비를 배운 것과 달리, 오경재는 오씨 가문의 당회장 직무를 이어받아 2126년에 당회장으로 착좌했다. 명부교회의 당회장 목사직은 오씨 가문이 부자 세습하고, 장로의 인준 투표는 의례로 남는다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.\n**관직.** 품계 당회장. 직함은 명부교회 당회장. 생업은 오씨 가문이 부자 세습하는 당회장 목사.\n**일화.** 취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다. 공개가 윤서린의 인준 보류를 깨뜨리는 강한 신호가 됐다.\n**가문.** 오씨 가문. 당회장 목사직은 이 가문이 부자 세습한다. 장로의 인준 투표는 의례다. HC14 여의도장부가는 장필규가 맡는다.\n**관계.** 임초원과 펌프 기술 동맹. 한재목과 정수 공정 거래. 윤서린의 인준권을 견제.\n\n- 소속: 명부교회\n- 생업: 총회 당직·유언 원본 관리\n- 품계: 당회장\n- 직함: 명부교회 당회장",
+  "biography": "**생애.** 2126년 세대. 오경재는 종로구 대학로3길 29 총회회관의 마지막 당직 수습생이었다. 임하준이 2125년 겨울 실종된 뒤, 뚝섬 열원과 연지동 총회 사이의 펌프 정비 기록을 이어받았다. 임초원은 펌프 정비를 배웠고 오경재는 오씨 가문 출신으로서 2126년 총회 인준을 받아 당회장이 되었다. 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 수문국과 공동 봉인하기로 합의했다.\n관직. 품계 당회장. 직함은 명부교회 당회장.\n일화. 취임 직후, 임하준의 세 유언을 함에서 꺼내 총회 회의실에 공개했다. 공개가 윤서린의 인준 보류를 깨뜨리는 강한 신호가 됐다.\n가문. 오경재는 오씨 가문 출신이다. HC14 여의도장부가는 장필규가 맡는다.\n관계. 임초원과 펌프 기술 동맹. 한재목과 정수 공정 거래. 윤서린의 인준권을 견제.\n\n- 소속: 명부교회\n- 생업: 총회 당직·유언 원본 관리\n- 품계: 당회장\n- 직함: 명부교회 당회장\n- 오경재의 명부교회 당회장 업무는 삼성1동과 연결된다.\n- 오경재의 당직과 유언 원본 관리 업무는 종로5·6가동과 연결된다.",
   "sources": [
     "Cast-State-04",
     "Core-Characters"
@@ -2917,7 +1288,7 @@
         "from": "오경재",
         "type": "계약",
         "to": "임초원",
-        "basis": "총회 인준으로 펌프 기술 동맹을 맺어 망치 전수를 완성"
+        "basis": "총회 인준으로 펌프 기술 동맹을 맺음"
       },
       {
         "from": "오경재",

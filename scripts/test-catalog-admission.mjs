@@ -4,16 +4,20 @@ import { access, mkdir, mkdtemp, readdir, readFile, writeFile } from 'node:fs/pr
 import { basename, resolve } from 'node:path'
 import { test } from 'vitest'
 import { tmpdir } from 'node:os'
-import { approvedDocuments, publishedDocuments, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { approvedDocuments, publishedDocuments, publicationEligible, catalogFields, readerFields, unknownFields } from './catalog-admission.mjs'
+import { sha256 } from './seoul-scope.mjs'
 import { loadCategoryRegistry, registeredCategories, registrationErrors } from './category-registration.mjs'
 import { validatePublicationManifest } from './publication-manifest.mjs'
 import { personRouteFailures } from './person-publication-contract.mjs'
+import { requireSeoulPublication } from './check-seoul-scope.mjs'
 
 const wikiRoot = resolve(import.meta.dirname, '..')
 const loreRoot = resolve(process.env.WIKI_LORE_ROOT ?? resolve(wikiRoot, 'lore'))
 const worldRoot = resolve(wikiRoot, 'src/generated/world')
 const englishWorldRoot = resolve(wikiRoot, 'src/generated/world-en')
 const localized = (en, ko) => ({ en, ko })
+let publicationReview
+const currentPublicationReview = () => publicationReview ??= requireSeoulPublication(wikiRoot)
 
 const content = (title) => [{
   kind: 'heading', anchor: `${title.toLowerCase()}-heading`, depth: 1,
@@ -60,7 +64,7 @@ async function syntheticAtlasRoot() {
 }
 
 test('the generated catalog admits exactly the current lore publish set', async () => {
-  const approved = publishedDocuments(await approvedDocuments(loreRoot))
+  const approved = publishedDocuments(await approvedDocuments(loreRoot), await currentPublicationReview())
   const expected = approved.map(({ route }) => route)
   const expectedEnglish = approved.filter(({ source }) => source.endsWith('.json')).map(({ route }) => `/en${route}`)
   const source = await readFile(resolve(wikiRoot, 'src/generated/wikiCatalog.ts'), 'utf8')
@@ -100,7 +104,8 @@ test('the generated catalog admits exactly the current lore publish set', async 
 
 test('cast authoring sources remain available but their articles retire from both public locales', async () => {
   const authored = await approvedDocuments(loreRoot)
-  const published = publishedDocuments(authored)
+  const review = await currentPublicationReview()
+  const published = publishedDocuments(authored, review)
   const retired = authored.filter((document) => !published.includes(document))
   assert.ok(retired.some(({ route }) => route === '/world/Cast-State-08'))
   assert.ok(retired.some(({ route }) => route === '/world/Core-Characters'))
@@ -114,7 +119,8 @@ test('cast authoring sources remain available but their articles retire from bot
     assert.ok(!contract.documents.some((document) => document.route === route), route)
     assert.ok(!contract.englishDocuments.some((document) => document.route === `/en${route}`), route)
   }
-  assert.deepEqual(publishedDocuments([...published, { route: '/world/Cast-State-99' }]), published)
+  assert.throws(() => publishedDocuments([...published, { route: '/world/Cast-State-99' }], review),
+    { code: 'E_PUBLICATION_DISCOVERY' })
 })
 
 test('each consolidated person route resolves to its own generated detail', async () => {
@@ -156,7 +162,7 @@ test('the private naming ledger stays outside the published catalog', async () =
 
 test('the publication manifest matches admitted identities, generated readers and category membership', async () => {
   const manifest = JSON.parse(await readFile(resolve(wikiRoot, 'src/generated/publication-manifest.json'), 'utf8'))
-  const expected = publishedDocuments(await approvedDocuments(loreRoot))
+  const expected = publishedDocuments(await approvedDocuments(loreRoot), await currentPublicationReview())
   validatePublicationManifest(manifest, expected)
   assert.equal(manifest.site, 'wiki')
   assert.deepEqual(manifest.documents.map(({ source, id, route }) => ({ source, id, route })), expected)
@@ -220,6 +226,15 @@ test('a new draft JSON fixture registers while private and non-document fixtures
   const admitted = await approvedDocuments(root, { checkAtlas: async () => {}, includeWorldIndex: false })
   assert.ok(!admitted.some(({ route }) => /Hidden|Dataset/.test(route)))
   assert.ok(admitted.some(({ source, id, route }) => source === 'lore/culture/Added.json' && id === page.id && route === '/world/Added'))
+  assert.throws(() => publishedDocuments(admitted), { code: 'E_PUBLICATION_REVIEW_AUTHORITY' })
+  // A receipt-shaped object never promotes an arbitrary draft into publication.
+  const draft = admitted.find(row => row.route === '/world/Added')
+  const decision = { sourcePath: draft.source, currentSha256: sha256(await readFile(resolve(root, 'culture/Added.json'))),
+    eligible: true, classification: 'current-reviewed', reason: 'approved-exact-review', receipt: {} }
+  assert.equal(publicationEligible(draft, { documents: [decision] }), false)
+  assert.equal(publicationEligible(draft, { documents: [{ ...decision, eligible: false }] }), false)
+  assert.throws(() => publishedDocuments([draft], { complete: true, semanticReview: 'reviewed', documents: [decision] }),
+    { code: 'E_PUBLICATION_REVIEW_AUTHORITY' })
   const registry = await loadCategoryRegistry(new URL('./category-registry.json', import.meta.url))
   assert.deepEqual(registrationErrors(page, registry), [])
   assert.deepEqual(registeredCategories(page, registry), ['culture'])
