@@ -6,7 +6,7 @@
   "categories": [
     "goods"
   ],
-  "status": "draft",
+  "status": "approved",
   "tense": {
     "en": "past",
     "ko": "past"
@@ -274,8 +274,8 @@
             "ko": "탄약·탄창·부품·보관 상태가 별도 병목"
           },
           {
-            "en": "An empty gun could be used for bayonet fighting; with rounds present it followed the military-remnant rules",
-            "ko": "빈 총은 총검술에 쓸 수 있으나 탄이 있으면 군용 잔존 규칙을 따른다"
+            "en": "Bayonet practice with an unloaded rifle is actual training. Ammunition access requires separate supply and custody evidence; training alone grants neither rifle ownership nor a proficiency score",
+            "ko": "빈 소총으로 하는 총검 훈련은 실제 훈련이다. 탄약 접근은 별도 보급·관리 근거가 있어야 하며 훈련만으로 소총 소유나 숙련 수치를 부여하지 않는다"
           },
           {
             "en": [
@@ -434,8 +434,8 @@
             "ko": "탄약 소모가 큼. 수리 공구·냉각·총열은 거점 정비"
           },
           {
-            "en": "Guro warlord-scale remnants, stronghold defense. No orphans or drifters",
-            "ko": "구로 군벌급 잔존, 거점 방어. 고아·떠돌이 없음"
+            "en": "Equipment candidate for reviewing Guro stronghold defense only. Holder, acquisition, ammunition, maintenance, and deployment need separate evidence; not starting gear for orphans or drifters",
+            "ko": "구로 거점 방어를 검토할 장비 후보일 뿐이다. 보유자·획득·탄약·정비·배치는 별도 근거가 필요하며 고아·떠돌이의 시작 장비가 아니다"
           },
           {
             "en": [
@@ -891,10 +891,10 @@
                 "text": "Concept: "
               },
               {
-                "text": "Lost Technology",
+                "text": "The Arms and Technology of This Era",
                 "link": {
-                  "domain": "technology",
-                  "slug": "Lost-Technology-Lineage"
+                  "domain": "goods",
+                  "slug": "Era-Arms-and-Tech-Level"
                 }
               },
               {
@@ -906,10 +906,10 @@
                 "text": "개념은 "
               },
               {
-                "text": "잃어버린 기술",
+                "text": "이 시대의 기술과 무구",
                 "link": {
-                  "domain": "technology",
-                  "slug": "Lost-Technology-Lineage"
+                  "domain": "goods",
+                  "slug": "Era-Arms-and-Tech-Level"
                 }
               },
               {
@@ -940,8 +940,8 @@
             "ko": "연료·윤활·타이어·배터리. 발전기 ≠ 축전 모듈"
           },
           {
-            "en": "Stationmasters, sixteen-state military (engineers, rail cavalry). No drifters",
-            "ko": "역장·십육국 군사(공병·궤도). 떠돌이 없음"
+            "en": "Vehicle and generator candidates for attested station or present three-faction and surviving-vassal operators. Historical sixteen-state military labels grant neither possession nor command; not drifter starting gear",
+            "ko": "역장 또는 현행 세 세력·존속 봉신의 확인된 운영 조직에서 검토할 차량·발전기 후보. 옛 십육국 군사 명칭만으로 보유·지휘를 정하지 않으며 떠돌이 시작 장비가 아니다"
           },
           {
             "en": [
@@ -994,7 +994,7 @@
           {
             "en": [
               {
-                "text": "The four remnant groups, sixteen-state facility military. "
+                "text": "Heavy-weapon candidates for the four remnant groups and attested facility-defense organizations of the present three factions and surviving vassals. Historical sixteen-state labels grant neither possession nor command. "
               },
               {
                 "text": "Conscription Remnants",
@@ -1006,7 +1006,7 @@
             ],
             "ko": [
               {
-                "text": "4 잔존 그룹·십육국 시설 군사. "
+                "text": "네 잔존 그룹과 현행 세 세력·존속 봉신의 확인된 시설 방어 조직에서 검토할 중화기 후보. 옛 십육국 명칭만으로 보유·지휘를 정하지 않는다. "
               },
               {
                 "text": "징집 잔존",
@@ -1203,26 +1203,6 @@
             {
               "text": "PlayStation",
               "href": "https://www.playstation.com/en-us/games/horizon-forbidden-west/"
-            }
-          ]
-        },
-        {
-          "ko": [
-            {
-              "text": "적대 생태 색인",
-              "link": {
-                "domain": "bestiary",
-                "slug": "Hostile-Ecology-Index"
-              }
-            }
-          ],
-          "en": [
-            {
-              "text": "Hostile ecology index",
-              "link": {
-                "domain": "bestiary",
-                "slug": "Hostile-Ecology-Index"
-              }
             }
           ]
         },

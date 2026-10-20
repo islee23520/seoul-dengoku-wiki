@@ -6,7 +6,7 @@
   "categories": [
     "factions"
   ],
-  "status": "draft",
+  "status": "approved",
   "tense": {
     "en": "past",
     "ko": "past"
@@ -29,7 +29,7 @@
   "locales": {
     "en": {
       "title": "The Sixteen States of Seoul",
-      "summary": "In the Seoul of 2126 there were sixteen states.",
+      "summary": "The sixteen states founded in 2076 continued as predecessor states and vassals within the three states established in 2116.",
       "tense": "past"
     },
     "ko": {
@@ -52,7 +52,7 @@
       "kind": "paragraph",
       "anchor": "p",
       "text": {
-        "en": "In 2126 Seoul had sixteen states. In November 2125, the records office listed six major powers, four lever states, and six minor states.",
+        "en": "The sixteen states of Seoul were founded in 2076. In 2116, the Gauge, the Government of the Republic of Korea, and the religious union were established as three states; the earlier states’ leaders and offices continued as vassals. In November 2125, the records office entered the relative strengths of the predecessor states and vassals continuing within the three states in its ledger.",
         "ko": "2076년 서울의 십육국이 건국되었다. 2116년 규격맹·대한민국정부·종교 연합의 세 국가가 성립하였고, 기존 나라의 수장과 관직은 봉신으로 존속하였다. 2125년 11월 기록청은 세 국가 안에 존속한 전신국·봉신의 강약을 장부에 기재하였다."
       }
     },
@@ -76,8 +76,8 @@
       "kind": "paragraph",
       "anchor": "current-s08",
       "text": {
-        "ko": "중앙정보부는 2030년부터 독립된 중립 조직으로 활동하였다. 중앙정보부 AI가 계속 조직을 이끌었으며 아바타만 교체하였다. 현재 아바타는 오해린이다. 본래 첩보 조직이었던 중앙정보부만이 진정한 대한민국과 세종 대통령실 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다. 중앙정보부는 이들을 되살려 정통성 있는 조직을 복원하려 한다. 중앙정보부는 남산타워와 용산2가동·후암동·이태원2동을 다스리며 수도역은 녹사평이다. 동작·관악의 36개 동과 23개 역은 규격맹이 직접 보유한다.",
-        "en": "The Central Intelligence Bureau has operated as a separate neutral organization since 2030. The Central Intelligence Bureau AI has continuously led it, changing only its avatar. O Haerin is its current avatar. Originally an espionage organization, the bureau alone knows of the true Republic of Korea and the actual ROK government figures hibernating in the Sejong presidential-office cryoshelter. It seeks to revive them and restore a legitimate organization. The bureau holds N Seoul Tower, Yongsan 2-ga, Huam and Itaewon 2 dong, with Noksapyeong as its capital station. The Gauge directly holds the 36 dong and 23 stations in Dongjak and Gwanak."
+        "ko": "중앙정보부는 2030년부터 독립된 중립 조직으로 활동하였다. 중앙정보부 AI가 계속 조직을 이끌었으며 아바타만 교체하였다. 현재 아바타는 오해린이다. 본래 첩보 조직이었던 중앙정보부만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다. 중앙정보부는 이들을 되살려 정통성 있는 조직을 복원하려 한다. 중앙정보부는 남산타워와 용산2가동·후암동·이태원2동을 다스리며 수도역은 녹사평이다. 동작·관악의 36개 동과 23개 역은 규격맹이 직접 보유한다.",
+        "en": "The Central Intelligence Bureau has operated as a separate neutral organization since 2030. The Central Intelligence Bureau AI has continuously led it, changing only its avatar. O Haerin is its current avatar. Originally an espionage organization, the bureau alone knows of the true Republic of Korea and the actual ROK government figures hibernating in the underground cryoshelter within the Cheong Wa Dae facility. It seeks to revive them and restore a legitimate organization. The bureau holds N Seoul Tower, Yongsan 2-ga, Huam and Itaewon 2 dong, with Noksapyeong as its capital station. The Gauge directly holds the 36 dong and 23 stations in Dongjak and Gwanak."
       }
     },
     {
@@ -114,8 +114,8 @@
           "ko": "수도역"
         },
         {
-          "en": "Rank",
-          "ko": "등급"
+          "en": "November 2125 ledger rank",
+          "ko": "2125년 11월 강약 장부 등급"
         },
         {
           "en": "Government and succession",
@@ -157,8 +157,8 @@
             "en": "A president chosen by the election rite of the duty families of the Government Complex Seoul"
           },
           {
-            "ko": "경기도(고양)·제2종착(파주)·제2경비지구(남양주)·제3경비지구(의정부·연천)·제이수문(춘천)·제1종착(인천)·영종지점(영종)",
-            "en": "Gyeonggi (Goyang); Second Terminus (Paju); Second Guard District (Namyangju); Third Guard District (Uijeongbu and Yeoncheon); Second Sluice (Chuncheon); First Terminus (Incheon); Yeongjong branch (Yeongjong)"
+            "ko": "행정 당직소·제2종착·제2경비지구·제3경비지구·제이수문·제1종착(현재 일곱 봉신 중 이름이 확인된 여섯)",
+            "en": "Administrative duty office; Second Terminus; Second Guard District; Third Guard District; Second Sluice; First Terminus (six named among seven current vassals)"
           },
           {
             "en": "None",
@@ -225,8 +225,8 @@
             "ko": "공방 장인 길드 평의회, 스승에서 제자로 잇는 도제 계승"
           },
           {
-            "ko": "제1분공방(천안·아산, 이씨)·제2분공방(시흥)·태욱중공업 수원사업장",
-            "en": "First Branch Workshop (Cheonan and Asan, the Lee house); Second Branch Workshop (Siheung); Taeuk Heavy Industries Suwon works"
+            "ko": "제1분공방(이씨)·제2분공방·태욱중공업 제2사업장",
+            "en": "First Branch Workshop (Lee house); Second Branch Workshop; Taeuk Heavy Industries Second Works"
           },
           {
             "en": "Sutra School",
@@ -655,7 +655,7 @@
             "ko": "정동노총"
           },
           {
-            "en": "City Hall",
+            "en": "Suseo",
             "ko": "수서"
           },
           {
@@ -686,16 +686,16 @@
       "anchor": "강국과-약국과-소국",
       "depth": 2,
       "text": {
-        "en": "Major Powers, Lever Powers, and Minor Powers",
-        "ko": "강국과 약국과 소국"
+        "en": "The November 2125 Ledger of Major, Lever, and Minor Powers",
+        "ko": "2125년 강국·약국·소국 장부"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "p-4",
       "text": {
-        "en": "In November 2125 the records office classified the states by vassals, control of essential services, and standing forces.",
-        "ko": "2125년 11월 기록청은 세 국가 안에 존속한 전신국·봉신의 속국·중심 기능·상비 무력을 살펴 강국·약국·소국을 장부에 기재하였다."
+        "en": "In November 2125, the records office entered the relative strengths of the Sixteen States' predecessor states and vassals continuing within the three states as major, lever, and minor powers, considering their dependencies, essential functions, and standing forces.",
+        "ko": "2125년 11월 기록청은 세 국가 안에 존속한 십육국의 전신국·봉신의 속국·중심 기능·상비 무력을 살펴 강국·약국·소국의 강약을 장부에 기재하였다."
       }
     },
     {
@@ -703,16 +703,16 @@
       "anchor": "list-2",
       "items": [
         {
-          "en": "A major power had two or more vassals or ruled a district block directly, held a monopoly on a core function, and kept a standing armed force.",
-          "ko": "강국은 속국이 둘 이상이거나 구 단위 블록을 직접 다스리고, 중심 기능을 독점하며, 상비 무력을 둔 나라다."
+          "en": "In 2125 the records office weighed two or more vassals or direct administration of a district block, an essential function, and a standing force when ranking major powers. Its district-scale assessment does not determine present holders of districts, counties, or barony slots.",
+          "ko": "2125년 기록청은 봉신 둘 이상이나 구 단위 블록의 직접 관할, 중심 기능과 상비 무력을 강국의 강약 판단 기준으로 삼았다. 당시의 구 단위 관할 평가는 현재의 자치구·백작령·남작령 보유권을 정하지 않는다."
         },
         {
           "en": "A lever power had at most one vassal but held an irreplaceable lever, such as currency, medicine, the Achasan gate and the Guui water, or the neutral convoy.",
           "ko": "약국은 속국이 하나 이하이나 통화·의약·아차산 관문과 구의 물·중립 호송처럼 대신할 수 없는 수단이 있는 나라다."
         },
         {
-          "en": "A minor power kept one station and one institution, with neither vassals nor an independent force.",
-          "ko": "소국은 속국도 독립 무력도 없이 수도역과 기관을 중심으로 유지되는 나라다. 별도의 수장 거주 요새가 있다고 독립 무력을 갖춘 것은 아니다."
+          "en": "A minor power continued around its capital station and institution without vassals or an independent force. A separate fortress where its leader resided did not itself confer an independent force.",
+          "ko": "소국은 수도역과 기관을 중심으로 나라를 유지한다. 수장은 거주 요새를 두기도 하며, 별도의 속국과 독립 무력은 두지 않는다."
         }
       ]
     },
@@ -720,8 +720,8 @@
       "kind": "paragraph",
       "anchor": "p-5",
       "text": {
-        "en": "There were six major powers.",
-        "ko": "강국은 여섯이다."
+        "en": "The November 2125 ledger listed six predecessor states and vassals as major powers.",
+        "ko": "2125년 11월 강국 장부에는 전신국·봉신 여섯이 올랐다."
       }
     },
     {
@@ -729,16 +729,16 @@
       "anchor": "list-3",
       "items": [
         {
-          "en": "The Government of the Republic of Korea (S06) was first. It held one vassal, Gyeonggi (Goyang), and ruled the downtown block of Jongno and Jung-gu directly. It monopolized the downtown ration, the rolls, the seal, and the stamp tax, and kept the office guard as a standing force.",
-          "ko": "대한민국정부(S06)는 첫째다. 경기도(고양) 한 속국을 거느리면서 종로·중구의 도심 블록을 직접 다스린다. 도심 배급과 명부와 도장과 인지세를 독점하고 청사 경비대를 상비로 둔다."
+          "en": "The Government of the Republic of Korea (S06) ranks first. It has seven vassals within Seoul. The six named in the present records are the administrative duty office, First Terminus, Second Terminus, Second Guard District, Third Guard District, and Second Sluice. It handles rations, rolls, seals, and stamp tax at its attested facilities and windows at Cheong Wa Dae and around Gwanghwamun, and keeps the government-complex guard as a standing force.",
+          "ko": "대한민국정부(S06)는 첫째다. 서울 안에서 일곱 봉신을 거느린다. 현재 장부에 이름이 적힌 봉신은 행정 당직소·제1종착·제2종착·제2경비지구·제3경비지구·제이수문 여섯이다. 청와대와 광화문 일대의 확인된 시설·창구에서 배급·명부·도장·인지세 업무를 맡고 청사 경비대를 상비로 둔다."
         },
         {
           "en": "The Sluice (S01) monopolizes the western water supply and maintains a sluice guard.",
           "ko": "수문국(S01)은 서부 급수를 독점하며 수문 경비를 상비로 둔다."
         },
         {
-          "en": "The Gauge (S02) held two vassals, the First Branch Workshop and the Second Branch Workshop, monopolized the bolt gauge, and kept a workshop guard as a standing force.",
-          "ko": "규격맹(S02)은 제1분공방과 제2분공방 두 속국을 거느리고 볼트 규격을 독점하며 공방 경비를 상비로 둔다."
+          "en": "The Gauge (S02) has three vassals within Seoul: the First Branch Workshop (Lee house), Second Branch Workshop, and Taeuk Heavy Industries Second Works. It monopolizes the bolt gauge and keeps a standing workshop guard. The First Branch Workshop handles fabrication and stock work in Oryu-2-dong; the Second Branch Workshop makes parts within Seoul and sends them to Guro. Second Works originated in Taeuk Group factory fabrication and repair work at Yangjae.",
+          "ko": "규격맹(S02)은 서울 안의 제1분공방(이씨)·제2분공방·태욱중공업 제2사업장 세 봉신을 거느리고 볼트 규격을 독점하며 공방 경비를 상비로 둔다. 제1분공방은 오류2동에서 제작·재고 업무를 맡고, 제2분공방은 서울 안에서 부품을 만들어 구로에 보낸다. 제2사업장의 제작·수리 업무는 양재의 태욱그룹 공장 업무에서 시작되었다."
         },
         {
           "en": "The Junction (S07) monopolizes Yongsan transshipment and maintains a track guard.",
@@ -758,8 +758,8 @@
       "kind": "paragraph",
       "anchor": "p-6",
       "text": {
-        "en": "There were four lever powers.",
-        "ko": "약국은 넷이다."
+        "en": "The same ledger listed four predecessor states and vassals as lever powers.",
+        "ko": "같은 장부의 약국에는 전신국·봉신 넷이 올랐다."
       }
     },
     {
@@ -767,8 +767,8 @@
       "anchor": "list-4",
       "items": [
         {
-          "en": "The Yeouido Investors' Association (S09) held one vassal, the Yeongjong branch, and monopolized the issue of the common currency.",
-          "ko": "여의도출자연합회(S09)는 영종지점 한 속국을 거느리고 공용 화폐의 발행을 독점한다."
+          "en": "The Yeouido Investors’ Association (S09) operates an internal Exchange Branch at Yeouido Hall and monopolizes issue of the common currency.",
+          "ko": "여의도출자연합회(S09)는 여의도 회관의 내부 환전지점을 운영하며 공용 화폐의 발행을 독점한다."
         },
         {
           "en": "The White Cross (S13) had no vassal and monopolized medicine.",
@@ -788,8 +788,8 @@
       "kind": "paragraph",
       "anchor": "p-7",
       "text": {
-        "en": "There were six minor powers.",
-        "ko": "소국은 여섯이다."
+        "en": "The same ledger listed six predecessor states and vassals as minor powers.",
+        "ko": "같은 장부의 소국에는 전신국·봉신 여섯이 올랐다."
       }
     },
     {
@@ -801,7 +801,7 @@
           "ko": "명부교회(S04)는 삼성 예배당 하나를 지키며 속국도 독립 무력도 없다."
         },
         {
-          "en": "The Myeongdong Archdiocese (S15) kept the one cathedral at Myeongdong and had neither vassals nor an independent force.",
+          "en": "The Myeongdong Archdiocese (S15) kept its capital at Myeongdong Station and worship and administration at Myeongdong Cathedral. Lotte World Tower was its core fortress, where Archbishop Nam Yungyeong (K373) resided. It had neither vassals nor an independent force.",
           "ko": "명동대교구(S15)는 수도를 명동역에, 예식과 행정을 명동성당에 둔다. 롯데월드타워는 대주교 남윤경(K373)이 거주하는 핵심 요새다. 속국도 독립 무력도 없다."
         },
         {
@@ -817,8 +817,8 @@
           "en": "The Central Intelligence Bureau (S08) has been a separate neutral organization since 2030, based at Namsan Tower. Its AI has continuously led the bureau through changing avatars; the current avatar is O Haerin."
         },
         {
-          "en": "The Jeongdong Federation (S16) kept its capital and strike roll at City Hall Station. The Government Complex Seoul guard took priority for security and passage there. The station was shared by S06 and S16, while the surrounding dong remained under S06. S16 had neither vassals nor an independent force.",
-          "ko": "정동노총(S16)은 수서역에 수도와 파업 명부를 두었다. 시청역의 경비와 통행증 업무는 대한민국정부 청사 경비대가 우선 맡았다. 시청역에는 S06과 S16이 함께 있었고 주변 동은 S06이 다스렸다. S16에는 속국도 독립 무력도 없었다."
+          "en": "The Jeongdong Federation (S16) kept its capital and strike roll at Suseo Station. S06 and S16 both used City Hall Station, where the Government Complex Seoul guard took priority for security and passage permits. Holdings in the surrounding dong are separate from their shared station use. S16 had neither vassals nor an independent force.",
+          "ko": "정동노총(S16)은 수서역에 수도와 파업 명부를 두었다. 시청역에는 S06과 S16이 함께 있었고, 시청역의 경비와 통행증 업무는 대한민국정부 청사 경비대가 우선 맡았다. 주변 동의 보유권은 역의 공동 사용과 별개다. S16에는 속국도 독립 무력도 없었다."
         }
       ]
     },
@@ -835,8 +835,8 @@
       "kind": "paragraph",
       "anchor": "p-8",
       "text": {
-        "ko": "대한민국정부는 첫 번째 강국이다. 기술 자산과 전투 병력을 많이 가졌고 종로·중구, 광화문 일대의 도심을 직접 다스린다. 그 힘은 네 가지에 선다.",
-        "en": "The Government of the Republic of Korea was the first power. It held many technical assets and combat troops and ruled downtown Jongno and Jung-gu, around Gwanghwamun, directly. That strength stood on four grounds."
+        "ko": "2125년 11월 장부에서 대한민국정부는 첫 번째 강국이었다. 기술 자산과 전투 병력을 많이 가졌고 청와대와 광화문 일대의 확인된 시설·창구와 경비를 운영하였다. 그 힘은 네 가지에 선다.",
+        "en": "The Government of the Republic of Korea ranked first among the major powers in the November 2125 ledger. It held many technical assets and combat troops and operated its attested facilities, windows, and guard posts at Cheong Wa Dae and around Gwanghwamun. That strength stood on four grounds."
       }
     },
     {
@@ -848,16 +848,16 @@
           "en": "The authority of the emergency order. The Eastern Command and the Achasan Gate were subject to the government in the form of registering successions and treaties with the records office. The Sluice, the Junction, the Sinnae Transport, the Gauge, and the White Cross also registered successions and treaties there. A succession not registered was not recognized as a state within the order lineage."
         },
         {
-          "en": "The downtown ration and rolls. The government ran the resident rolls and the ration windows of Jongno and Jung-gu. A person absent from the rolls received no ration downtown.",
-          "ko": "도심 배급과 명부다. 종로·중구의 주민 명부와 배급 창구를 정부가 돌린다. 명부에 없는 사람은 도심에서 배급을 받지 못한다."
+          "en": "Downtown rations and rolls. The government ran its attested rolls and ration windows at Cheong Wa Dae and around Gwanghwamun. Those windows did not issue rations to people absent from their rolls.",
+          "ko": "도심 배급과 명부다. 정부는 청와대와 광화문 일대에서 확인된 명부·배급 창구를 운영하였다. 그 창구에서는 명부에 없는 사람에게 배급하지 않았다."
         },
         {
-          "en": "The seal and the stamp tax. Passage, trade, and contracts downtown stood only with a government seal and paid the stamp tax. A document without the seal was waste paper downtown.",
-          "ko": "도장과 인지세다. 도심의 통행과 거래와 계약은 정부 도장이 있어야 성립하고 인지세를 낸다. 도장 없는 문서는 도심에서 휴지가 된다."
+          "en": "The seal and stamp tax. At its attested windows at Cheong Wa Dae and around Gwanghwamun, the government handled seals and stamp-tax paperwork for passage, trade, and contracts. Those windows did not accept documents without the seal.",
+          "ko": "도장과 인지세다. 정부는 확인된 청와대·광화문 일대 창구에서 통행·거래·계약 문서의 도장과 인지세 업무를 맡았다. 그 창구에 내는 문서는 도장이 없으면 접수되지 않았다."
         },
         {
-          "en": "The office guard. A standing guard with muster rolls held the downtown stations. The guard kept the office, the ration windows, and the seal windows at once.",
-          "ko": "청사 경비대다. 소집 명부를 쥔 상비 경비가 도심 역을 지킨다. 경비대는 청사와 배급 창구와 도장 창구를 동시에 맡는다."
+          "en": "The government-complex guard. Its standing guard kept muster rolls and handled the complex, attested station security and passage at Gwanghwamun, Jongno 3-ga and Euljiro 1-ga, and the ration and seal windows.",
+          "ko": "청사 경비대다. 소집 명부를 쥔 상비 경비는 청사와 광화문·종로3가·을지로입구의 확인된 역 경비·통행 업무, 배급·도장 창구를 맡았다."
         }
       ]
     },
@@ -889,8 +889,8 @@
       "kind": "paragraph",
       "anchor": "p-12",
       "text": {
-        "ko": "환적국·안국총림·성하그룹·신내운수·흰십자단은 대한민국정부에 속한다. 규격맹과 종교 연합은 각각 별도의 종주권을 가지며 중앙정보부와 대전은 중립이다.",
-        "en": "Junction, Anguk Order, Seongha Group, Sinnae Transport and White Cross belong to the Government. The Gauge and religious union have separate sovereignty; the Central Intelligence Bureau and Daejeon are neutral."
+        "ko": "환적국·안국총림·성하그룹·신내운수·흰십자단은 대한민국정부에 속한다. 규격맹과 종교 연합은 각각 별도의 종주권을 가지며 중앙정보부와 대전은 중립이다. 아래 관계 표의 독립·복속은 종전 관계 장부의 표기이며, 현재 세 국가의 소속은 앞의 소속 명부에 따른다.",
+        "en": "Junction, Anguk Order, Seongha Group, Sinnae Transport and White Cross belong to the Government. The Gauge and religious union have separate sovereignty; the Central Intelligence Bureau and Daejeon are neutral. Independent and subordinate in the following relations table are labels in an earlier relations ledger; current membership follows the affiliation roster above."
       }
     },
     {
@@ -1064,16 +1064,16 @@
       "anchor": "속국",
       "depth": 2,
       "text": {
-        "en": "Vassals",
-        "ko": "속국"
+        "en": "Vassal Relations and Work Ledger",
+        "ko": "봉신 관계와 업무 장부"
       }
     },
     {
       "kind": "paragraph",
       "anchor": "속국-수와-분포-p1",
       "text": {
-        "ko": "서울 밖의 열세 조직은 각 소재지의 정치 관할에 속한다. 인천의 육지와 육지로 이어진 섬·김포·강원과 경기 북부는 대한민국정부, 충청남도·세종과 김포를 제외한 경기 서남부는 규격맹, 충청북도와 경기 동남부는 종교 연합이 다스린다. 대전은 민웅기가 다스리는 중립 영지다.",
-        "en": "The thirteen external organizations fall under their locations’ political authority. The Government rules mainland Incheon and its mainland-connected islands, Gimpo, Gangwon and north Gyeonggi; the Gauge rules Chungnam, Sejong and southwest Gyeonggi except Gimpo; the religious union rules Chungbuk and southeast Gyeonggi. Daejeon is neutral under Min Woonggi."
+        "ko": "규격맹·대한민국정부·종교 연합의 현재 중심 권역은 서울 안에 있다. 대한민국정부는 청와대를 중심으로 한 강북, 규격맹은 한강 이남 서부, 종교 연합은 한강 이남 강남지역을 중심으로 한다. 대전은 서울 내부에 보존하는 중립 정치 정체성으로, 민웅기의 군주·대전선·왕격을 유지한다. 중심 권역은 독점 영토나 새 수여를 뜻하지 않는다.",
+        "en": "The current centers of the Gauge, the Government of the Republic of Korea and the Religious Alliance are within Seoul. The Government centers on Gangbuk around Cheong Wa Dae, the Gauge on the western area south of the Han River, and the Religious Alliance on the Gangnam area south of the Han River. Daejeon is a preserved neutral political identity within Seoul under Min Woonggi, retaining his lordship, Daejeon-seon and royal grade. These centers do not establish exclusive territory or new grants."
       }
     },
     {
@@ -1081,16 +1081,16 @@
       "anchor": "table-2",
       "columns": [
         {
-          "en": "Vassals",
-          "ko": "속국"
+          "en": "Recorded unit",
+          "ko": "기록된 기관"
         },
         {
-          "en": "Overlord",
-          "ko": "본국"
+          "en": "Present relation and original operating party",
+          "ko": "현재 관계·당시 업무 주체"
         },
         {
-          "en": "Year pledged",
-          "ko": "선 해"
+          "en": "Work established or ledger month",
+          "ko": "업무 성립·장부 연월"
         },
         {
           "en": "Function",
@@ -1100,8 +1100,8 @@
       "rows": [
         [
           {
-            "en": "Gyeonggi (Goyang)",
-            "ko": "경기도(고양)"
+            "en": "administrative duty office",
+            "ko": "행정 당직소"
           },
           {
             "ko": "대한민국정부",
@@ -1118,26 +1118,26 @@
         ],
         [
           {
-            "en": "First Sluice (Yangpyeong)",
-            "ko": "제일수문(양평)"
+            "en": "First Sluice",
+            "ko": "제일수문"
           },
           {
-            "ko": "종교 연합",
-            "en": "Religious union"
+            "ko": "수문국의 2097년 물길 업무; 종교 연합은 후대 장부 분류",
+            "en": "S01 waterway work in 2097; religious union is a later ledger classification"
           },
           {
             "en": "2097. 6.",
             "ko": "2097. 6."
           },
           {
-            "en": "Managed upper Han River waterways",
-            "ko": "한강 상류 물길 관리"
+            "en": "Manages waterways within the Seoul section of the Han River",
+            "ko": "서울 안 한강 구간의 물길 관리"
           }
         ],
         [
           {
-            "en": "Second Sluice (Chuncheon)",
-            "ko": "제이수문(춘천)"
+            "en": "Second Sluice",
+            "ko": "제이수문"
           },
           {
             "ko": "대한민국정부",
@@ -1148,14 +1148,14 @@
             "ko": "2097. 6."
           },
           {
-            "en": "Managed North Han River waterways",
-            "ko": "북한강 물길 관리"
+            "en": "Manages waterways within the Seoul section of the Han River",
+            "ko": "서울 안 한강 구간의 물길 관리"
           }
         ],
         [
           {
-            "en": "First Branch Workshop (Cheonan and Asan, the Lee house)",
-            "ko": "제1분공방(천안·아산, 이씨)"
+            "en": "First Branch Workshop (Lee house)",
+            "ko": "제1분공방(이씨)"
           },
           {
             "ko": "규격맹",
@@ -1172,8 +1172,8 @@
         ],
         [
           {
-            "en": "Second Branch Workshop (Siheung)",
-            "ko": "제2분공방(시흥)"
+            "en": "Second Branch Workshop",
+            "ko": "제2분공방"
           },
           {
             "ko": "규격맹",
@@ -1190,8 +1190,8 @@
         ],
         [
           {
-            "en": "First Terminus (Incheon)",
-            "ko": "제1종착(인천)"
+            "en": "First Terminus",
+            "ko": "제1종착"
           },
           {
             "ko": "대한민국정부",
@@ -1208,8 +1208,8 @@
         ],
         [
           {
-            "en": "Second Terminus (Paju)",
-            "ko": "제2종착(파주)"
+            "en": "Second Terminus",
+            "ko": "제2종착"
           },
           {
             "ko": "대한민국정부",
@@ -1226,12 +1226,12 @@
         ],
         [
           {
-            "en": "First Guard District (Hanam)",
-            "ko": "제1경비지구(하남)"
+            "en": "First Guard District",
+            "ko": "제1경비지구"
           },
           {
-            "ko": "종교 연합",
-            "en": "Religious union"
+            "ko": "동방사의 2098년 경비 업무; 종교 연합은 후대 장부 분류",
+            "en": "S05 guard work in 2098; religious union is a later ledger classification"
           },
           {
             "en": "2098. 9.",
@@ -1244,8 +1244,8 @@
         ],
         [
           {
-            "en": "Second Guard District (Namyangju)",
-            "ko": "제2경비지구(남양주)"
+            "en": "Second Guard District",
+            "ko": "제2경비지구"
           },
           {
             "ko": "대한민국정부",
@@ -1262,8 +1262,8 @@
         ],
         [
           {
-            "en": "Third Guard District (Uijeongbu and Yeoncheon)",
-            "ko": "제3경비지구(의정부·연천)"
+            "en": "Third Guard District",
+            "ko": "제3경비지구"
           },
           {
             "ko": "대한민국정부",
@@ -1280,12 +1280,12 @@
         ],
         [
           {
-            "en": "Taeuk Heavy Industries Seongnam works",
-            "ko": "태욱중공업 성남사업장"
+            "en": "Taeuk Heavy Industries First Works",
+            "ko": "태욱중공업 제1사업장"
           },
           {
-            "ko": "종교 연합",
-            "en": "Religious union"
+            "ko": "태욱그룹의 2101년 공장 업무; 종교 연합은 후대 장부 분류",
+            "en": "S03 factory work in 2101; religious union is a later ledger classification"
           },
           {
             "en": "2101. 3.",
@@ -1298,8 +1298,8 @@
         ],
         [
           {
-            "en": "Taeuk Heavy Industries Suwon works",
-            "ko": "태욱중공업 수원사업장"
+            "en": "Taeuk Heavy Industries Second Works",
+            "ko": "태욱중공업 제2사업장"
           },
           {
             "ko": "규격맹",
@@ -1310,26 +1310,26 @@
             "ko": "2101. 3."
           },
           {
-            "en": "Parts and labor",
-            "ko": "부품과 노동"
+            "en": "Parts and labor originating in Taeuk Group fabrication and repair work at Yangjae",
+            "ko": "양재의 태욱그룹 제작·수리 업무에서 시작한 부품과 노동"
           }
         ],
         [
           {
-            "en": "Yeongjong branch (Yeongjong)",
-            "ko": "영종지점(영종)"
+            "en": "Exchange Branch",
+            "ko": "환전지점"
           },
           {
-            "ko": "대한민국정부",
-            "en": "Government of the Republic of Korea"
+            "ko": "여의도출자연합회 내부 지점",
+            "en": "Internal branch of the Yeouido Investors’ Association"
           },
           {
             "en": "2104. 10.",
             "ko": "2104. 10."
           },
           {
-            "en": "Exchanged payment for outside trade; fee of three percent",
-            "ko": "외부 교역 대금 환전, 수수료 100분의 3"
+            "en": "Exchanges payments for trade within Seoul; commission of three percent",
+            "ko": "서울 안 교역 대금 환전, 수수료 100분의 3"
           }
         ]
       ]
@@ -1338,8 +1338,8 @@
       "kind": "paragraph",
       "anchor": "p-13",
       "text": {
-        "en": "The other nine states had no vassals: the White Cross, the Achasan Gate, Sinnae Transport, the Myeongbu Church, the Myeongdong Archdiocese, the Anguk Order, the Seongha Group, the Central Intelligence Bureau, and the Jeongdong Federation.",
-        "ko": "나머지 아홉 나라는 속국이 없다. 흰십자단·아관사·신내운수·명부교회·명동대교구·안국총림·성하그룹·중앙정보부·정동노총이다."
+        "en": "The vassal ledger records a count of zero for the Yeouido Investors’ Association and each of nine other states: the White Cross, Achasan Gate, Sinnae Transport, Myeongbu Church, Myeongdong Archdiocese, Anguk Order, Seongha Group, Central Intelligence Bureau, and Jeongdong Federation.",
+        "ko": "봉신 관계 장부는 여의도출자연합회와 흰십자단·아관사·신내운수·명부교회·명동대교구·안국총림·성하그룹·중앙정보부·정동노총의 봉신 수를 각각 영으로 집계한다."
       }
     },
     {
@@ -1554,7 +1554,7 @@
           "ko": "권역"
         },
         {
-          "en": "The sixteen states were not a flat partition of Seoul. Waterworks, rail yards, headquarters, assemblies, transfers, and the fortress corridors were read together as living zones. This placement was the creative control at the opening, and only the locations of public facilities were marked as measured. A capital was a subway station, and a state name was not a station name.",
+          "en": "State",
           "ko": "나라"
         },
         {
@@ -1569,7 +1569,7 @@
             "ko": "서부 수변"
           },
           {
-            "en": "First Sluice (Yangpyeong)",
+            "en": "The Sluice",
             "ko": "수문국"
           },
           {
@@ -1583,7 +1583,7 @@
             "ko": "서부 수변"
           },
           {
-            "en": "First Branch Workshop (Cheonan and Asan, the Lee house)",
+            "en": "The Gauge",
             "ko": "규격맹"
           },
           {
@@ -1597,7 +1597,7 @@
             "ko": "서부 수변"
           },
           {
-            "en": "The Suwon works",
+            "en": "Yeouido Investors’ Association",
             "ko": "여의도출자연합회"
           },
           {
@@ -1611,7 +1611,7 @@
             "ko": "중앙"
           },
           {
-            "en": "Function",
+            "en": "Government of the Republic of Korea",
             "ko": "대한민국정부"
           },
           {
@@ -1629,7 +1629,7 @@
             "ko": "정동노총"
           },
           {
-            "en": "City Hall",
+            "en": "Suseo",
             "ko": "수서"
           }
         ],
@@ -1667,7 +1667,7 @@
             "ko": "중앙"
           },
           {
-            "en": "First Terminus (Incheon)",
+            "en": "The Junction",
             "ko": "환적국"
           },
           {
@@ -1695,7 +1695,7 @@
             "ko": "동부"
           },
           {
-            "en": "First Guard District (Hanam)",
+            "en": "Eastern Command",
             "ko": "동방사"
           },
           {
@@ -1765,7 +1765,7 @@
             "ko": "남부"
           },
           {
-            "en": "Taeuk Heavy Industries Seongnam works",
+            "en": "Taeuk Group",
             "ko": "태욱그룹"
           },
           {
@@ -1810,8 +1810,8 @@
       "kind": "paragraph",
       "anchor": "영지-취득과-새-나라-p2",
       "text": {
-        "en": "Land without a station can also be a fief. Subway, conventional rail and KTX stations are strategic strongholds; station kind and grade are separate from ownership of surrounding land. Players can acquire fiefs throughout Seoul, Gyeonggi, Gangwon, North and South Chungcheong, Daejeon and Sejong. That extent does not establish who held land at the opening, how far the current map shows it or which routes were passable.",
-        "ko": "역이 없는 땅도 영지가 될 수 있다. 지하철역·일반 철도역·KTX역은 전략 거점이며, 역의 종류와 거점 등급은 주변 땅의 소유와 별개다. 플레이어는 서울·경기·강원·충북·충남·대전·세종 전역에서 영지를 취할 수 있다. 이 범위만으로 개막 당시의 보유자, 현재 지도에 표시된 범위나 통행 경로가 정해지지는 않는다."
+        "en": "Land without a station can also be a fief. Subway, conventional rail and KTX stations are strategic strongholds; station kind and grade are separate from ownership of surrounding land. Players can acquire fiefs only within Seoul's approved administrative boundary and edition. Eligibility does not establish opening holdings, the extent shown on the current map, personal ownership or passable routes.",
+        "ko": "역이 없는 땅도 영지가 될 수 있다. 지하철역·일반 철도역·KTX역은 전략 거점이며, 역의 종류와 거점 등급은 주변 땅의 소유와 별개다. 플레이어는 승인된 행정 경계·판본의 서울 안에서만 영지를 취할 수 있다. 취득 가능 범위만으로 개막 당시의 보유자, 현재 지도에 표시된 범위, 개인 소유나 통행 경로가 정해지지는 않는다."
       }
     },
     {
@@ -1827,7 +1827,7 @@
       "kind": "paragraph",
       "anchor": "p-20",
       "text": {
-        "en": "In 2126, Sangam transmission and the Bukhansan Bogungmun refuge route were not capitals of the sixteen states.",
+        "en": "In 2126, the Sangam transmission site and Bukhansan Bogungmun refuge route were not among the capitals of the predecessor states and vassals continuing within the three states.",
         "ko": "2126년 상암 송신과 북한산보국문 피난로는 세 국가 안에 존속한 전신국·봉신의 수도에 포함되지 않았다."
       }
     },
@@ -1884,7 +1884,7 @@
             "ko": "대림"
           },
           {
-            "en": "First Branch Workshop (Cheonan and Asan, the Lee house)",
+            "en": "The Gauge",
             "ko": "규격맹"
           }
         ],
@@ -1902,7 +1902,7 @@
             "ko": "이태원"
           },
           {
-            "en": "First Terminus (Incheon)",
+            "en": "The Junction",
             "ko": "환적국"
           }
         ],
@@ -1920,7 +1920,7 @@
             "ko": "동대문"
           },
           {
-            "en": "Function",
+            "en": "Government of the Republic of Korea",
             "ko": "대한민국정부"
           }
         ],
@@ -1938,7 +1938,7 @@
             "ko": "구로"
           },
           {
-            "en": "First Branch Workshop (Cheonan and Asan, the Lee house)",
+            "en": "The Gauge",
             "ko": "규격맹"
           }
         ],
@@ -1956,7 +1956,7 @@
             "ko": "남구로"
           },
           {
-            "en": "First Branch Workshop (Cheonan and Asan, the Lee house)",
+            "en": "The Gauge",
             "ko": "규격맹"
           }
         ]
@@ -1983,8 +1983,8 @@
       "kind": "paragraph",
       "anchor": "청와대-정부-중심-p1",
       "text": {
-        "ko": "2126년 대한민국정부는 핵심 요새인 청와대에서 대통령 윤서린(K144)의 집무와 거처, 기록·배급·인준 업무를 맡았다. 정부서울청사 본관은 전방 행정·방어 거점으로서 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 조계사와 명동성당, 정동노총 사무실은 정부가 다스리는 동 안에서 각 나라가 맡은 시설이다. 수도역 직영지는 수장 거주 요새와 별개다.",
-        "en": "In 2126, the Government of the Republic of Korea conducted the president’s office and residence, records, distribution, and approvals at Cheong Wa Dae. The Government Complex Seoul main building handled security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. Jogyesa, Myeongdong Cathedral, and the Jeongdong union office were facilities held by their respective states inside Government-held dong."
+        "ko": "2126년 대한민국정부는 핵심 요새인 청와대에서 대통령 윤서린(K144)의 집무와 거처, 기록·배급·인준 업무를 맡았다. 정부서울청사 본관은 전방 행정·방어 거점으로서 광화문·종로3가·을지로입구의 경비와 통행을 맡았다. 조계사와 명동성당, 정동노총 사무실에서는 각 나라가 맡은 시설 업무를 이어 갔다. 수도역 직영지는 수장 거주 요새와 별개다.",
+        "en": "In 2126, the Government of the Republic of Korea conducted President Yun Seorin (K144)’s office and residence, records, distribution, and approvals at its Cheong Wa Dae core fortress. The Government Complex Seoul main building served as a forward administrative and defensive post for security and passage at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga. Anguk Order, Myeongdong Archdiocese, and Jeongdong Federation continued their respective facility work at Jogyesa, Myeongdong Cathedral, and the Jeongdong office. Direct holdings at a capital station remained separate from a leader’s residence fortress."
       }
     },
     {
@@ -2019,7 +2019,7 @@
             "ko": "종로구 세종대로 209"
           },
           {
-            "en": "Function",
+            "en": "Government of the Republic of Korea",
             "ko": "대한민국정부"
           },
           {
@@ -2037,12 +2037,12 @@
             "ko": "여의대로 24"
           },
           {
-            "en": "The Suwon works",
+            "en": "Yeouido Investors’ Association",
             "ko": "여의도출자연합회"
           },
           {
             "ko": "국회의사당을 핵심 거점으로 둔 회의·출자 장부 보조 거점.",
-            "en": "Meeting and investment-ledger center."
+            "en": "Auxiliary post for meetings and investment ledgers, with the National Assembly building as the primary post."
           }
         ],
         [
@@ -2114,7 +2114,7 @@
           },
           {
             "ko": "대통령 윤서린(K144)의 집무·거처와 기록·배급·인준의 중심지이자 S06의 핵심 요새.",
-            "en": "Center for the president’s office, residence, records, distribution, and approvals."
+            "en": "President Yun Seorin (K144)’s office and residence, the center for records, distribution and approvals, and S06’s core fortress."
           }
         ],
         [
@@ -2132,7 +2132,7 @@
           },
           {
             "ko": "대주교 남윤경(K373)이 거주하는 S15의 지상·지하 핵심 요새. 타워와 몰 지하를 사용하며 잠실역 연결 통로로 통행한다. 수도 명동역과 명동성당의 예식·행정 기능은 유지한다.",
-            "en": "Surface and underground defensive post. Passage uses the connection to Jamsil Station."
+            "en": "S15’s surface and underground core fortress, where Archbishop Nam Yungyeong (K373) resides. It uses the tower and the underground levels of the mall, with passage through the connecting corridor to Jamsil Station. The ceremonial and administrative functions of the capital, Myeongdong Station, and Myeongdong Cathedral are retained."
           }
         ],
         [
@@ -2164,11 +2164,11 @@
           },
           {
             "ko": "여의도출자연합회",
-            "en": "Yeouido Investment Federation"
+            "en": "Yeouido Investors’ Association"
           },
           {
             "ko": "의장 최지우(K219)가 거주하는 S09의 최우선 핵심 요새. 옛 본회의장은 출자국 대표 회의장으로 쓴다.",
-            "en": "Meeting hall for representatives of the investing states."
+            "en": "S09’s primary core fortress, where Chair Choi Jiwoo (K219) resides. The former plenary chamber serves as the meeting hall for representatives of the investing states."
           }
         ],
         [
@@ -2204,7 +2204,7 @@
       "kind": "paragraph",
       "anchor": "p-23",
       "text": {
-        "en": "In November 2125, the records office wrote the ledger of the sixteen states’ strengths.",
+        "en": "In November 2125, the records office prepared a ledger of the relative strengths of the Sixteen States' predecessor states and vassals continuing within the three states.",
         "ko": "2125년 11월 기록청은 세 국가 안에 존속한 십육국의 전신국·봉신별 강약 장부를 작성하였다."
       }
     }
@@ -2216,6 +2216,7 @@
           "kind": "state",
           "stateId": "S02",
           "name": "규격맹",
+          "centerRegion": "한강 이남 서부",
           "memberStateIds": [
             "S01",
             "S02",
@@ -2229,6 +2230,7 @@
           "kind": "state",
           "stateId": "S06",
           "name": "대한민국정부",
+          "centerRegion": "청와대를 중심으로 한 강북",
           "memberStateIds": [
             "S05",
             "S06",
@@ -2245,6 +2247,7 @@
         {
           "kind": "union",
           "name": "종교 연합",
+          "centerRegion": "한강 이남 강남지역",
           "memberStateIds": [
             "S04",
             "S15",
@@ -2309,9 +2312,9 @@
           "stateId": "S06",
           "currentName": "대한민국정부",
           "currentBase": {
-            "kind": "station",
-            "stationId": "광화문",
-            "name": "광화문"
+            "kind": "facility",
+            "landmarkId": "cheong-wa-dae",
+            "name": "청와대"
           },
           "currentExclusiveDistricts": "immediate-holdings"
         },
@@ -2420,6 +2423,6 @@
         "S08"
       ]
     },
-    "governance": "영지 획득 가능 행정 권역: 2026-07-01 행정동 경계 adm_cd2의 sido 11(서울), 41(경기), 51(강원), 43(충북), 44(충남), 30(대전), 36(세종). 기준: lore/regions/sources/selection.json의 admdongkor-20260701-7360288, SHA-256 c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f. 획득 가능 범위는 2126 점유·개인 소유·역 연결과 별개다. 무소속 인물의 독립 취득은 새 국가 성립이며 기존 국가의 영지 수여에는 선행 국가 소속이 필요하다. 개막 S01–S16을 보존하고 이후 국가의 세이브별 영구 식별자는 저장·불러오기 동안 유지하며 국명·성립 순서와 구분한다."
+    "governance": "현재 영지 획득 가능 행정 권역은 승인된 서울 행정 경계·판본 안으로 한정한다. 2026-07-01 행정동 경계 adm_cd2의 sido 11(서울)만 해당한다. 기준: lore/regions/sources/selection.json의 admdongkor-20260701-7360288, SHA-256 c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f. 획득 가능 범위는 2126 점유·개인 소유·역 연결과 별개다. 무소속 인물의 독립 취득은 새 국가 성립이며 기존 국가의 영지 수여에는 선행 국가 소속이 필요하다. 개막 S01–S16을 보존하고 이후 국가의 세이브별 영구 식별자는 저장·불러오기 동안 유지하며 국명·성립 순서와 구분한다."
   }
 }
